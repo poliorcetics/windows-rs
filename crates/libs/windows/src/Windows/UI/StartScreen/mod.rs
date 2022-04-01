@@ -20,6 +20,7 @@ impl ::core::default::Default for ForegroundText {
 }
 unsafe impl ::windows::core::Abi for ForegroundText {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ForegroundText {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -28,7 +29,6 @@ impl ::core::fmt::Debug for ForegroundText {
 }
 unsafe impl ::windows::core::RuntimeType for ForegroundText {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.StartScreen.ForegroundText;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -36,6 +36,11 @@ unsafe impl ::windows::core::RuntimeType for ForegroundText {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IJumpList(::windows::core::IUnknown);
+impl ::core::clone::Clone for IJumpList {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IJumpList {
     type Vtable = IJumpList_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb0234c3e_cd6f_4cb6_a611_61fd505f3ed1);
@@ -58,6 +63,11 @@ pub struct IJumpList_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IJumpListItem(::windows::core::IUnknown);
+impl ::core::clone::Clone for IJumpListItem {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IJumpListItem {
     type Vtable = IJumpListItem_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x7adb6717_8b5d_4820_995b_9b418dbe48b0);
@@ -87,6 +97,11 @@ pub struct IJumpListItem_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IJumpListItemStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IJumpListItemStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IJumpListItemStatics {
     type Vtable = IJumpListItemStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf1bfc4e8_c7aa_49cb_8dde_ecfccd7ad7e4);
@@ -101,6 +116,11 @@ pub struct IJumpListItemStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IJumpListStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IJumpListStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IJumpListStatics {
     type Vtable = IJumpListStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa7e0c681_e67e_4b74_8250_3f322c4d92c3);
@@ -118,6 +138,11 @@ pub struct IJumpListStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISecondaryTile(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISecondaryTile {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISecondaryTile {
     type Vtable = ISecondaryTile_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9e9e51e0_2bb5_4bc0_bb8d_42b23abcc88d);
@@ -238,6 +263,11 @@ pub struct ISecondaryTile_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISecondaryTile2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISecondaryTile2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISecondaryTile2 {
     type Vtable = ISecondaryTile2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb2f6cc35_3250_4990_923c_294ab4b694dd);
@@ -263,6 +293,11 @@ pub struct ISecondaryTile2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISecondaryTileFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISecondaryTileFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISecondaryTileFactory {
     type Vtable = ISecondaryTileFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x57f52ca0_51bc_4abf_8ebf_627a0398b05a);
@@ -284,6 +319,11 @@ pub struct ISecondaryTileFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISecondaryTileFactory2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISecondaryTileFactory2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISecondaryTileFactory2 {
     type Vtable = ISecondaryTileFactory2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x274b8a3b_522d_448e_9eb2_d0672ab345c8);
@@ -300,6 +340,11 @@ pub struct ISecondaryTileFactory2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISecondaryTileStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISecondaryTileStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISecondaryTileStatics {
     type Vtable = ISecondaryTileStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x99908dae_d051_4676_87fe_9ec242d83c74);
@@ -325,6 +370,11 @@ pub struct ISecondaryTileStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISecondaryTileVisualElements(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISecondaryTileVisualElements {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISecondaryTileVisualElements {
     type Vtable = ISecondaryTileVisualElements_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1d8df333_815e_413f_9f50_a81da70a96b2);
@@ -387,6 +437,11 @@ pub struct ISecondaryTileVisualElements_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISecondaryTileVisualElements2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISecondaryTileVisualElements2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISecondaryTileVisualElements2 {
     type Vtable = ISecondaryTileVisualElements2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xfd2e31d0_57dc_4794_8ecf_5682f5f3e6ef);
@@ -407,6 +462,11 @@ pub struct ISecondaryTileVisualElements2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISecondaryTileVisualElements3(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISecondaryTileVisualElements3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISecondaryTileVisualElements3 {
     type Vtable = ISecondaryTileVisualElements3_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x56b55ad6_d15c_40f4_81e7_57ffd8f8a4e9);
@@ -427,6 +487,11 @@ pub struct ISecondaryTileVisualElements3_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISecondaryTileVisualElements4(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISecondaryTileVisualElements4 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISecondaryTileVisualElements4 {
     type Vtable = ISecondaryTileVisualElements4_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x66566117_b544_40d2_8d12_74d4ec24d04c);
@@ -440,6 +505,11 @@ pub struct ISecondaryTileVisualElements4_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IStartScreenManager(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStartScreenManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IStartScreenManager {
     type Vtable = IStartScreenManager_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x4a1dcbcb_26e9_4eb4_8933_859eb6ecdb29);
@@ -468,6 +538,11 @@ pub struct IStartScreenManager_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IStartScreenManager2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStartScreenManager2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IStartScreenManager2 {
     type Vtable = IStartScreenManager2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x08a716b6_316b_4ad9_acb8_fe9cf00bd608);
@@ -488,6 +563,11 @@ pub struct IStartScreenManager2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IStartScreenManagerStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStartScreenManagerStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IStartScreenManagerStatics {
     type Vtable = IStartScreenManagerStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x7865ef0f_b585_464e_8993_34e8f8738d48);
@@ -505,6 +585,11 @@ pub struct IStartScreenManagerStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ITileMixedRealityModel(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITileMixedRealityModel {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ITileMixedRealityModel {
     type Vtable = ITileMixedRealityModel_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb0764e5b_887d_4242_9a19_3d0a4ea78031);
@@ -533,6 +618,11 @@ pub struct ITileMixedRealityModel_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ITileMixedRealityModel2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITileMixedRealityModel2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ITileMixedRealityModel2 {
     type Vtable = ITileMixedRealityModel2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x439470b2_d7c5_410b_8319_9486a27b6c67);
@@ -547,6 +637,11 @@ pub struct ITileMixedRealityModel2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IVisualElementsRequest(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVisualElementsRequest {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IVisualElementsRequest {
     type Vtable = IVisualElementsRequest_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc138333a_9308_4072_88cc_d068db347c68);
@@ -569,6 +664,11 @@ pub struct IVisualElementsRequest_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IVisualElementsRequestDeferral(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVisualElementsRequestDeferral {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IVisualElementsRequestDeferral {
     type Vtable = IVisualElementsRequestDeferral_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa1656eb0_0126_4357_8204_bd82bb2a046d);
@@ -582,6 +682,11 @@ pub struct IVisualElementsRequestDeferral_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IVisualElementsRequestedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVisualElementsRequestedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IVisualElementsRequestedEventArgs {
     type Vtable = IVisualElementsRequestedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x7b6fc982_3a0d_4ece_af96_cd17e1b00b2d);
@@ -648,11 +753,6 @@ impl JumpList {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for JumpList {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for JumpList {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -666,7 +766,6 @@ impl ::core::fmt::Debug for JumpList {
 }
 unsafe impl ::windows::core::RuntimeType for JumpList {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.StartScreen.JumpList;{b0234c3e-cd6f-4cb6-a611-61fd505f3ed1})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -822,11 +921,6 @@ impl JumpListItem {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for JumpListItem {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for JumpListItem {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -840,7 +934,6 @@ impl ::core::fmt::Debug for JumpListItem {
 }
 unsafe impl ::windows::core::RuntimeType for JumpListItem {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.StartScreen.JumpListItem;{7adb6717-8b5d-4820-995b-9b418dbe48b0})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -915,6 +1008,7 @@ impl ::core::default::Default for JumpListItemKind {
 }
 unsafe impl ::windows::core::Abi for JumpListItemKind {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for JumpListItemKind {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -923,7 +1017,6 @@ impl ::core::fmt::Debug for JumpListItemKind {
 }
 unsafe impl ::windows::core::RuntimeType for JumpListItemKind {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.StartScreen.JumpListItemKind;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -950,6 +1043,7 @@ impl ::core::default::Default for JumpListSystemGroupKind {
 }
 unsafe impl ::windows::core::Abi for JumpListSystemGroupKind {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for JumpListSystemGroupKind {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -958,7 +1052,6 @@ impl ::core::fmt::Debug for JumpListSystemGroupKind {
 }
 unsafe impl ::windows::core::RuntimeType for JumpListSystemGroupKind {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.StartScreen.JumpListSystemGroupKind;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1354,11 +1447,6 @@ impl SecondaryTile {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for SecondaryTile {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SecondaryTile {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1372,7 +1460,6 @@ impl ::core::fmt::Debug for SecondaryTile {
 }
 unsafe impl ::windows::core::RuntimeType for SecondaryTile {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.StartScreen.SecondaryTile;{9e9e51e0-2bb5-4bc0-bb8d-42b23abcc88d})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1609,11 +1696,6 @@ impl SecondaryTileVisualElements {
         }
     }
 }
-impl ::core::clone::Clone for SecondaryTileVisualElements {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SecondaryTileVisualElements {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1627,7 +1709,6 @@ impl ::core::fmt::Debug for SecondaryTileVisualElements {
 }
 unsafe impl ::windows::core::RuntimeType for SecondaryTileVisualElements {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.StartScreen.SecondaryTileVisualElements;{1d8df333-815e-413f-9f50-a81da70a96b2})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1760,11 +1841,6 @@ impl StartScreenManager {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for StartScreenManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for StartScreenManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1778,7 +1854,6 @@ impl ::core::fmt::Debug for StartScreenManager {
 }
 unsafe impl ::windows::core::RuntimeType for StartScreenManager {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.StartScreen.StartScreenManager;{4a1dcbcb-26e9-4eb4-8933-859eb6ecdb29})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1880,11 +1955,6 @@ impl TileMixedRealityModel {
         }
     }
 }
-impl ::core::clone::Clone for TileMixedRealityModel {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for TileMixedRealityModel {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1898,7 +1968,6 @@ impl ::core::fmt::Debug for TileMixedRealityModel {
 }
 unsafe impl ::windows::core::RuntimeType for TileMixedRealityModel {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.StartScreen.TileMixedRealityModel;{b0764e5b-887d-4242-9a19-3d0a4ea78031})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1973,6 +2042,7 @@ impl ::core::default::Default for TileMixedRealityModelActivationBehavior {
 }
 unsafe impl ::windows::core::Abi for TileMixedRealityModelActivationBehavior {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TileMixedRealityModelActivationBehavior {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1981,7 +2051,6 @@ impl ::core::fmt::Debug for TileMixedRealityModelActivationBehavior {
 }
 unsafe impl ::windows::core::RuntimeType for TileMixedRealityModelActivationBehavior {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.StartScreen.TileMixedRealityModelActivationBehavior;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2009,6 +2078,7 @@ impl ::core::default::Default for TileOptions {
 }
 unsafe impl ::windows::core::Abi for TileOptions {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TileOptions {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2045,7 +2115,6 @@ impl ::core::ops::Not for TileOptions {
 }
 unsafe impl ::windows::core::RuntimeType for TileOptions {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.StartScreen.TileOptions;u4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2077,6 +2146,7 @@ impl ::core::default::Default for TileSize {
 }
 unsafe impl ::windows::core::Abi for TileSize {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TileSize {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2085,7 +2155,6 @@ impl ::core::fmt::Debug for TileSize {
 }
 unsafe impl ::windows::core::RuntimeType for TileSize {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.StartScreen.TileSize;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2129,11 +2198,6 @@ impl VisualElementsRequest {
         }
     }
 }
-impl ::core::clone::Clone for VisualElementsRequest {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for VisualElementsRequest {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2147,7 +2211,6 @@ impl ::core::fmt::Debug for VisualElementsRequest {
 }
 unsafe impl ::windows::core::RuntimeType for VisualElementsRequest {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.StartScreen.VisualElementsRequest;{c138333a-9308-4072-88cc-d068db347c68})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2211,11 +2274,6 @@ impl VisualElementsRequestDeferral {
         unsafe { (::windows::core::Interface::vtable(this).Complete)(::core::mem::transmute_copy(this)).ok() }
     }
 }
-impl ::core::clone::Clone for VisualElementsRequestDeferral {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for VisualElementsRequestDeferral {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2229,7 +2287,6 @@ impl ::core::fmt::Debug for VisualElementsRequestDeferral {
 }
 unsafe impl ::windows::core::RuntimeType for VisualElementsRequestDeferral {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.StartScreen.VisualElementsRequestDeferral;{a1656eb0-0126-4357-8204-bd82bb2a046d})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2296,11 +2353,6 @@ impl VisualElementsRequestedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for VisualElementsRequestedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for VisualElementsRequestedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2314,7 +2366,6 @@ impl ::core::fmt::Debug for VisualElementsRequestedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for VisualElementsRequestedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.StartScreen.VisualElementsRequestedEventArgs;{7b6fc982-3a0d-4ece-af96-cd17e1b00b2d})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

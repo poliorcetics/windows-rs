@@ -33,6 +33,7 @@ impl ::core::clone::Clone for AsnAny {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for AsnAny {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for AsnAny {
@@ -76,6 +77,7 @@ impl ::core::clone::Clone for AsnAny_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for AsnAny_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for AsnAny_0 {
@@ -105,6 +107,7 @@ impl ::core::clone::Clone for AsnObjectIdentifier {
 }
 unsafe impl ::windows::core::Abi for AsnObjectIdentifier {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for AsnObjectIdentifier {
     fn eq(&self, other: &Self) -> bool {
@@ -136,6 +139,7 @@ impl ::core::clone::Clone for AsnOctetString {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for AsnOctetString {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for AsnOctetString {
@@ -309,6 +313,7 @@ impl ::core::default::Default for SNMP_API_TRANSLATE_MODE {
 }
 unsafe impl ::windows::core::Abi for SNMP_API_TRANSLATE_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SNMP_API_TRANSLATE_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -386,6 +391,7 @@ impl ::core::default::Default for SNMP_ERROR {
 }
 unsafe impl ::windows::core::Abi for SNMP_ERROR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SNMP_ERROR {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -447,6 +453,7 @@ impl ::core::default::Default for SNMP_ERROR_STATUS {
 }
 unsafe impl ::windows::core::Abi for SNMP_ERROR_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SNMP_ERROR_STATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -482,6 +489,7 @@ impl ::core::default::Default for SNMP_EXTENSION_REQUEST_TYPE {
 }
 unsafe impl ::windows::core::Abi for SNMP_EXTENSION_REQUEST_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SNMP_EXTENSION_REQUEST_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -519,6 +527,7 @@ impl ::core::default::Default for SNMP_GENERICTRAP {
 }
 unsafe impl ::windows::core::Abi for SNMP_GENERICTRAP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SNMP_GENERICTRAP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -554,6 +563,7 @@ impl ::core::default::Default for SNMP_LOG {
 }
 unsafe impl ::windows::core::Abi for SNMP_LOG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SNMP_LOG {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -605,6 +615,7 @@ impl ::core::default::Default for SNMP_OUTPUT_LOG_TYPE {
 }
 unsafe impl ::windows::core::Abi for SNMP_OUTPUT_LOG_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SNMP_OUTPUT_LOG_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -648,6 +659,7 @@ impl ::core::default::Default for SNMP_PDU_TYPE {
 }
 unsafe impl ::windows::core::Abi for SNMP_PDU_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SNMP_PDU_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -675,6 +687,7 @@ impl ::core::default::Default for SNMP_STATUS {
 }
 unsafe impl ::windows::core::Abi for SNMP_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SNMP_STATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1911,6 +1924,7 @@ impl ::core::clone::Clone for SnmpVarBind {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SnmpVarBind {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for SnmpVarBind {
@@ -1944,6 +1958,7 @@ impl ::core::clone::Clone for SnmpVarBindList {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SnmpVarBindList {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for SnmpVarBindList {
@@ -1978,6 +1993,7 @@ impl ::core::fmt::Debug for smiCNTR64 {
 }
 unsafe impl ::windows::core::Abi for smiCNTR64 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for smiCNTR64 {
     fn eq(&self, other: &Self) -> bool {
@@ -2009,6 +2025,7 @@ impl ::core::fmt::Debug for smiOCTETS {
 }
 unsafe impl ::windows::core::Abi for smiOCTETS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for smiOCTETS {
     fn eq(&self, other: &Self) -> bool {
@@ -2040,6 +2057,7 @@ impl ::core::fmt::Debug for smiOID {
 }
 unsafe impl ::windows::core::Abi for smiOID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for smiOID {
     fn eq(&self, other: &Self) -> bool {
@@ -2066,6 +2084,7 @@ impl ::core::clone::Clone for smiVALUE {
 }
 unsafe impl ::windows::core::Abi for smiVALUE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for smiVALUE {
     fn eq(&self, other: &Self) -> bool {
@@ -2096,6 +2115,7 @@ impl ::core::clone::Clone for smiVALUE_0 {
 }
 unsafe impl ::windows::core::Abi for smiVALUE_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for smiVALUE_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -2135,6 +2155,7 @@ impl ::core::fmt::Debug for smiVENDORINFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for smiVENDORINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for smiVENDORINFO {

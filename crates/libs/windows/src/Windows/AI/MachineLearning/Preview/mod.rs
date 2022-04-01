@@ -40,6 +40,7 @@ impl ::core::default::Default for FeatureElementKindPreview {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Abi for FeatureElementKindPreview {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "deprecated")]
 impl ::core::fmt::Debug for FeatureElementKindPreview {
@@ -50,7 +51,6 @@ impl ::core::fmt::Debug for FeatureElementKindPreview {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for FeatureElementKindPreview {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.AI.MachineLearning.Preview.FeatureElementKindPreview;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -59,6 +59,12 @@ unsafe impl ::windows::core::RuntimeType for FeatureElementKindPreview {
 #[cfg(feature = "deprecated")]
 #[repr(transparent)]
 pub struct IImageVariableDescriptorPreview(::windows::core::IUnknown);
+#[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for IImageVariableDescriptorPreview {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for IImageVariableDescriptorPreview {
     type Vtable = IImageVariableDescriptorPreview_Vtbl;
@@ -86,6 +92,12 @@ pub struct IImageVariableDescriptorPreview_Vtbl {
 #[cfg(feature = "deprecated")]
 #[repr(transparent)]
 pub struct IInferencingOptionsPreview(::windows::core::IUnknown);
+#[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for IInferencingOptionsPreview {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for IInferencingOptionsPreview {
     type Vtable = IInferencingOptionsPreview_Vtbl;
@@ -142,6 +154,12 @@ pub struct IInferencingOptionsPreview_Vtbl {
 #[repr(transparent)]
 pub struct ILearningModelBindingPreview(::windows::core::IUnknown);
 #[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for ILearningModelBindingPreview {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for ILearningModelBindingPreview {
     type Vtable = ILearningModelBindingPreview_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x93c901e8_6c78_4b4f_aec1_a6bb9e691624);
@@ -169,6 +187,12 @@ pub struct ILearningModelBindingPreview_Vtbl {
 #[repr(transparent)]
 pub struct ILearningModelBindingPreviewFactory(::windows::core::IUnknown);
 #[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for ILearningModelBindingPreviewFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for ILearningModelBindingPreviewFactory {
     type Vtable = ILearningModelBindingPreviewFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x48b8219f_1e51_4d77_ae50_3ec164ad3480);
@@ -187,6 +211,12 @@ pub struct ILearningModelBindingPreviewFactory_Vtbl {
 #[cfg(feature = "deprecated")]
 #[repr(transparent)]
 pub struct ILearningModelDescriptionPreview(::windows::core::IUnknown);
+#[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for ILearningModelDescriptionPreview {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for ILearningModelDescriptionPreview {
     type Vtable = ILearningModelDescriptionPreview_Vtbl;
@@ -235,6 +265,12 @@ pub struct ILearningModelDescriptionPreview_Vtbl {
 #[repr(transparent)]
 pub struct ILearningModelEvaluationResultPreview(::windows::core::IUnknown);
 #[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for ILearningModelEvaluationResultPreview {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for ILearningModelEvaluationResultPreview {
     type Vtable = ILearningModelEvaluationResultPreview_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xdf25ea9f_9863_4088_8498_87a1f4686f92);
@@ -257,6 +293,12 @@ pub struct ILearningModelEvaluationResultPreview_Vtbl {
 #[cfg(feature = "deprecated")]
 #[repr(transparent)]
 pub struct ILearningModelPreview(::windows::core::IUnknown);
+#[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for ILearningModelPreview {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for ILearningModelPreview {
     type Vtable = ILearningModelPreview_Vtbl;
@@ -293,6 +335,12 @@ pub struct ILearningModelPreview_Vtbl {
 #[repr(transparent)]
 pub struct ILearningModelPreviewStatics(::windows::core::IUnknown);
 #[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for ILearningModelPreviewStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for ILearningModelPreviewStatics {
     type Vtable = ILearningModelPreviewStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x164bbb60_8465_4786_8b93_2c16a89289d7);
@@ -315,6 +363,12 @@ pub struct ILearningModelPreviewStatics_Vtbl {
 #[cfg(feature = "deprecated")]
 #[repr(transparent)]
 pub struct ILearningModelVariableDescriptorPreview(::windows::core::IUnknown);
+#[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for ILearningModelVariableDescriptorPreview {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "deprecated")]
 impl ILearningModelVariableDescriptorPreview {
     #[doc = "*Required features: `\"AI_MachineLearning_Preview\"`, `\"deprecated\"`*"]
@@ -403,12 +457,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for ILearningModelVariableDescriptorPreview {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for ILearningModelVariableDescriptorPreview {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -425,7 +473,6 @@ impl ::core::fmt::Debug for ILearningModelVariableDescriptorPreview {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for ILearningModelVariableDescriptorPreview {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{b13df682-fc30-492b-8ea0-ed1f53c0b038}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -462,6 +509,12 @@ pub struct ILearningModelVariableDescriptorPreview_Vtbl {
 #[repr(transparent)]
 pub struct IMapVariableDescriptorPreview(::windows::core::IUnknown);
 #[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for IMapVariableDescriptorPreview {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for IMapVariableDescriptorPreview {
     type Vtable = IMapVariableDescriptorPreview_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x3cb38370_c02b_4236_b3e8_6bdca49c3129);
@@ -493,6 +546,12 @@ pub struct IMapVariableDescriptorPreview_Vtbl {
 #[repr(transparent)]
 pub struct ISequenceVariableDescriptorPreview(::windows::core::IUnknown);
 #[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for ISequenceVariableDescriptorPreview {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for ISequenceVariableDescriptorPreview {
     type Vtable = ISequenceVariableDescriptorPreview_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9cd8f292_98b2_4530_a1b6_2ded5fecbc26);
@@ -511,6 +570,12 @@ pub struct ISequenceVariableDescriptorPreview_Vtbl {
 #[cfg(feature = "deprecated")]
 #[repr(transparent)]
 pub struct ITensorVariableDescriptorPreview(::windows::core::IUnknown);
+#[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for ITensorVariableDescriptorPreview {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for ITensorVariableDescriptorPreview {
     type Vtable = ITensorVariableDescriptorPreview_Vtbl;
@@ -601,12 +666,6 @@ impl ImageVariableDescriptorPreview {
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for ImageVariableDescriptorPreview {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for ImageVariableDescriptorPreview {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -623,7 +682,6 @@ impl ::core::fmt::Debug for ImageVariableDescriptorPreview {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for ImageVariableDescriptorPreview {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.AI.MachineLearning.Preview.ImageVariableDescriptorPreview;{7ae1fa72-029e-4dc5-a2f8-5fb763154150})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -794,12 +852,6 @@ impl InferencingOptionsPreview {
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for InferencingOptionsPreview {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for InferencingOptionsPreview {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -816,7 +868,6 @@ impl ::core::fmt::Debug for InferencingOptionsPreview {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for InferencingOptionsPreview {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.AI.MachineLearning.Preview.InferencingOptionsPreview;{47bc8205-4d36-47a9-8f68-ffcb339dd0fc})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -960,12 +1011,6 @@ impl LearningModelBindingPreview {
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for LearningModelBindingPreview {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for LearningModelBindingPreview {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -982,7 +1027,6 @@ impl ::core::fmt::Debug for LearningModelBindingPreview {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for LearningModelBindingPreview {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.AI.MachineLearning.Preview.LearningModelBindingPreview;{93c901e8-6c78-4b4f-aec1-a6bb9e691624})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1192,12 +1236,6 @@ impl LearningModelDescriptionPreview {
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for LearningModelDescriptionPreview {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for LearningModelDescriptionPreview {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1214,7 +1252,6 @@ impl ::core::fmt::Debug for LearningModelDescriptionPreview {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for LearningModelDescriptionPreview {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.AI.MachineLearning.Preview.LearningModelDescriptionPreview;{f52c09c6-8611-40ad-8e59-de3fd7030a40})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1307,6 +1344,7 @@ impl ::core::default::Default for LearningModelDeviceKindPreview {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Abi for LearningModelDeviceKindPreview {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "deprecated")]
 impl ::core::fmt::Debug for LearningModelDeviceKindPreview {
@@ -1317,7 +1355,6 @@ impl ::core::fmt::Debug for LearningModelDeviceKindPreview {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for LearningModelDeviceKindPreview {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.AI.MachineLearning.Preview.LearningModelDeviceKindPreview;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1348,12 +1385,6 @@ impl LearningModelEvaluationResultPreview {
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for LearningModelEvaluationResultPreview {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for LearningModelEvaluationResultPreview {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1370,7 +1401,6 @@ impl ::core::fmt::Debug for LearningModelEvaluationResultPreview {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for LearningModelEvaluationResultPreview {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.AI.MachineLearning.Preview.LearningModelEvaluationResultPreview;{df25ea9f-9863-4088-8498-87a1f4686f92})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1462,6 +1492,7 @@ impl ::core::default::Default for LearningModelFeatureKindPreview {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Abi for LearningModelFeatureKindPreview {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "deprecated")]
 impl ::core::fmt::Debug for LearningModelFeatureKindPreview {
@@ -1472,7 +1503,6 @@ impl ::core::fmt::Debug for LearningModelFeatureKindPreview {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for LearningModelFeatureKindPreview {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.AI.MachineLearning.Preview.LearningModelFeatureKindPreview;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1549,12 +1579,6 @@ impl LearningModelPreview {
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for LearningModelPreview {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for LearningModelPreview {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1571,7 +1595,6 @@ impl ::core::fmt::Debug for LearningModelPreview {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for LearningModelPreview {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.AI.MachineLearning.Preview.LearningModelPreview;{049c266a-93b4-478c-aeb8-70157bf0ff94})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1677,12 +1700,6 @@ impl LearningModelVariableDescriptorPreview {
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for LearningModelVariableDescriptorPreview {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for LearningModelVariableDescriptorPreview {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1699,7 +1716,6 @@ impl ::core::fmt::Debug for LearningModelVariableDescriptorPreview {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for LearningModelVariableDescriptorPreview {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.AI.MachineLearning.Preview.LearningModelVariableDescriptorPreview;{b13df682-fc30-492b-8ea0-ed1f53c0b038})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1867,12 +1883,6 @@ impl MapVariableDescriptorPreview {
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for MapVariableDescriptorPreview {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for MapVariableDescriptorPreview {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1889,7 +1899,6 @@ impl ::core::fmt::Debug for MapVariableDescriptorPreview {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for MapVariableDescriptorPreview {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.AI.MachineLearning.Preview.MapVariableDescriptorPreview;{3cb38370-c02b-4236-b3e8-6bdca49c3129})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2030,12 +2039,6 @@ impl SequenceVariableDescriptorPreview {
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for SequenceVariableDescriptorPreview {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for SequenceVariableDescriptorPreview {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2052,7 +2055,6 @@ impl ::core::fmt::Debug for SequenceVariableDescriptorPreview {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for SequenceVariableDescriptorPreview {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.AI.MachineLearning.Preview.SequenceVariableDescriptorPreview;{9cd8f292-98b2-4530-a1b6-2ded5fecbc26})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2202,12 +2204,6 @@ impl TensorVariableDescriptorPreview {
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for TensorVariableDescriptorPreview {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for TensorVariableDescriptorPreview {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2224,7 +2220,6 @@ impl ::core::fmt::Debug for TensorVariableDescriptorPreview {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for TensorVariableDescriptorPreview {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.AI.MachineLearning.Preview.TensorVariableDescriptorPreview;{a80f501a-9aac-4233-9784-aceaf92510b5})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

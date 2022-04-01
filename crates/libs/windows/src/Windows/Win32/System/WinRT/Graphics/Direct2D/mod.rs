@@ -38,6 +38,7 @@ impl ::core::default::Default for GRAPHICS_EFFECT_PROPERTY_MAPPING {
 }
 unsafe impl ::windows::core::Abi for GRAPHICS_EFFECT_PROPERTY_MAPPING {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GRAPHICS_EFFECT_PROPERTY_MAPPING {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -47,6 +48,11 @@ impl ::core::fmt::Debug for GRAPHICS_EFFECT_PROPERTY_MAPPING {
 #[doc = "*Required features: `\"Win32_System_WinRT_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct IGeometrySource2DInterop(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGeometrySource2DInterop {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IGeometrySource2DInterop {
     #[doc = "*Required features: `\"Win32_System_WinRT_Graphics_Direct2D\"`, `\"Win32_Graphics_Direct2D\"`*"]
     #[cfg(feature = "Win32_Graphics_Direct2D")]
@@ -81,11 +87,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IGeom
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IGeometrySource2DInterop {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IGeometrySource2DInterop {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -117,6 +118,11 @@ pub struct IGeometrySource2DInterop_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct IGraphicsEffectD2D1Interop(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGraphicsEffectD2D1Interop {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IGraphicsEffectD2D1Interop {
     #[doc = "*Required features: `\"Win32_System_WinRT_Graphics_Direct2D\"`*"]
     pub unsafe fn GetEffectId(&self) -> ::windows::core::Result<::windows::core::GUID> {
@@ -168,11 +174,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IGraphics
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IGraphicsEffectD2D1Interop {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IGraphicsEffectD2D1Interop {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IGraphicsEffectD2D1Interop {

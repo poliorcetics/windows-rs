@@ -114,6 +114,7 @@ impl ::core::fmt::Debug for WLX_CLIENT_CREDENTIALS_INFO_V1_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WLX_CLIENT_CREDENTIALS_INFO_V1_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WLX_CLIENT_CREDENTIALS_INFO_V1_0 {
@@ -157,6 +158,7 @@ impl ::core::fmt::Debug for WLX_CLIENT_CREDENTIALS_INFO_V2_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WLX_CLIENT_CREDENTIALS_INFO_V2_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WLX_CLIENT_CREDENTIALS_INFO_V2_0 {
@@ -251,6 +253,7 @@ impl ::core::fmt::Debug for WLX_CONSOLESWITCH_CREDENTIALS_INFO_V1_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WLX_CONSOLESWITCH_CREDENTIALS_INFO_V1_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WLX_CONSOLESWITCH_CREDENTIALS_INFO_V1_0 {
@@ -302,6 +305,7 @@ impl ::core::fmt::Debug for WLX_DESKTOP {
 #[cfg(feature = "Win32_System_StationsAndDesktops")]
 unsafe impl ::windows::core::Abi for WLX_DESKTOP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_System_StationsAndDesktops")]
 impl ::core::cmp::PartialEq for WLX_DESKTOP {
@@ -372,6 +376,7 @@ impl ::core::fmt::Debug for WLX_DISPATCH_VERSION_1_0 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_UI_WindowsAndMessaging"))]
 unsafe impl ::windows::core::Abi for WLX_DISPATCH_VERSION_1_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_UI_WindowsAndMessaging"))]
 impl ::core::cmp::PartialEq for WLX_DISPATCH_VERSION_1_0 {
@@ -444,6 +449,7 @@ impl ::core::fmt::Debug for WLX_DISPATCH_VERSION_1_1 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_StationsAndDesktops", feature = "Win32_UI_WindowsAndMessaging"))]
 unsafe impl ::windows::core::Abi for WLX_DISPATCH_VERSION_1_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_StationsAndDesktops", feature = "Win32_UI_WindowsAndMessaging"))]
 impl ::core::cmp::PartialEq for WLX_DISPATCH_VERSION_1_1 {
@@ -518,6 +524,7 @@ impl ::core::fmt::Debug for WLX_DISPATCH_VERSION_1_2 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_StationsAndDesktops", feature = "Win32_UI_WindowsAndMessaging"))]
 unsafe impl ::windows::core::Abi for WLX_DISPATCH_VERSION_1_2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_StationsAndDesktops", feature = "Win32_UI_WindowsAndMessaging"))]
 impl ::core::cmp::PartialEq for WLX_DISPATCH_VERSION_1_2 {
@@ -606,6 +613,7 @@ impl ::core::fmt::Debug for WLX_DISPATCH_VERSION_1_3 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_StationsAndDesktops", feature = "Win32_UI_WindowsAndMessaging"))]
 unsafe impl ::windows::core::Abi for WLX_DISPATCH_VERSION_1_3 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_StationsAndDesktops", feature = "Win32_UI_WindowsAndMessaging"))]
 impl ::core::cmp::PartialEq for WLX_DISPATCH_VERSION_1_3 {
@@ -698,6 +706,7 @@ impl ::core::fmt::Debug for WLX_DISPATCH_VERSION_1_4 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_StationsAndDesktops", feature = "Win32_UI_WindowsAndMessaging"))]
 unsafe impl ::windows::core::Abi for WLX_DISPATCH_VERSION_1_4 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_StationsAndDesktops", feature = "Win32_UI_WindowsAndMessaging"))]
 impl ::core::cmp::PartialEq for WLX_DISPATCH_VERSION_1_4 {
@@ -744,6 +753,7 @@ impl ::core::fmt::Debug for WLX_MPR_NOTIFY_INFO {
 }
 unsafe impl ::windows::core::Abi for WLX_MPR_NOTIFY_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WLX_MPR_NOTIFY_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -786,6 +796,7 @@ impl ::core::fmt::Debug for WLX_NOTIFICATION_INFO {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_StationsAndDesktops"))]
 unsafe impl ::windows::core::Abi for WLX_NOTIFICATION_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_StationsAndDesktops"))]
 impl ::core::cmp::PartialEq for WLX_NOTIFICATION_INFO {
@@ -842,6 +853,7 @@ impl ::core::fmt::Debug for WLX_PROFILE_V1_0 {
 }
 unsafe impl ::windows::core::Abi for WLX_PROFILE_V1_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WLX_PROFILE_V1_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -877,6 +889,7 @@ impl ::core::fmt::Debug for WLX_PROFILE_V2_0 {
 }
 unsafe impl ::windows::core::Abi for WLX_PROFILE_V2_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WLX_PROFILE_V2_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -962,6 +975,7 @@ impl ::core::fmt::Debug for WLX_SC_NOTIFICATION_INFO {
 }
 unsafe impl ::windows::core::Abi for WLX_SC_NOTIFICATION_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WLX_SC_NOTIFICATION_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -997,6 +1011,7 @@ impl ::core::default::Default for WLX_SHUTDOWN_TYPE {
 }
 unsafe impl ::windows::core::Abi for WLX_SHUTDOWN_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WLX_SHUTDOWN_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1023,6 +1038,7 @@ impl ::core::fmt::Debug for WLX_TERMINAL_SERVICES_DATA {
 }
 unsafe impl ::windows::core::Abi for WLX_TERMINAL_SERVICES_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WLX_TERMINAL_SERVICES_DATA {
     fn eq(&self, other: &Self) -> bool {

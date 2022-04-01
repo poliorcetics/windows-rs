@@ -23,6 +23,7 @@ impl ::core::default::Default for SpeechRecognitionUIStatus {
 }
 unsafe impl ::windows::core::Abi for SpeechRecognitionUIStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SpeechRecognitionUIStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -31,7 +32,6 @@ impl ::core::fmt::Debug for SpeechRecognitionUIStatus {
 }
 unsafe impl ::windows::core::RuntimeType for SpeechRecognitionUIStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Phone.Speech.Recognition.SpeechRecognitionUIStatus;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }

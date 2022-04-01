@@ -8,6 +8,11 @@ pub mod UserProfile;
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISystemProtectionStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISystemProtectionStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISystemProtectionStatics {
     type Vtable = ISystemProtectionStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x49c36560_97e1_4d99_8bfb_befeaa6ace6d);
@@ -21,6 +26,11 @@ pub struct ISystemProtectionStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISystemProtectionUnlockStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISystemProtectionUnlockStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISystemProtectionUnlockStatics {
     type Vtable = ISystemProtectionUnlockStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x0692fa3f_8f11_4c4b_aa0d_87d7af7b1779);

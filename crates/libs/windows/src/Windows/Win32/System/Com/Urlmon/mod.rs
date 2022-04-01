@@ -22,6 +22,7 @@ impl ::core::default::Default for AUTHENTICATEF {
 }
 unsafe impl ::windows::core::Abi for AUTHENTICATEF {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AUTHENTICATEF {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -107,6 +108,7 @@ impl ::core::default::Default for BINDF {
 }
 unsafe impl ::windows::core::Abi for BINDF {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for BINDF {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -192,6 +194,7 @@ impl ::core::default::Default for BINDF2 {
 }
 unsafe impl ::windows::core::Abi for BINDF2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for BINDF2 {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -221,6 +224,7 @@ impl ::core::default::Default for BINDHANDLETYPES {
 }
 unsafe impl ::windows::core::Abi for BINDHANDLETYPES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for BINDHANDLETYPES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -274,6 +278,7 @@ impl ::core::default::Default for BINDINFO_OPTIONS {
 }
 unsafe impl ::windows::core::Abi for BINDINFO_OPTIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for BINDINFO_OPTIONS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -455,6 +460,7 @@ impl ::core::default::Default for BINDSTATUS {
 }
 unsafe impl ::windows::core::Abi for BINDSTATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for BINDSTATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -530,6 +536,7 @@ impl ::core::default::Default for BINDSTRING {
 }
 unsafe impl ::windows::core::Abi for BINDSTRING {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for BINDSTRING {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -563,6 +570,7 @@ impl ::core::default::Default for BINDVERB {
 }
 unsafe impl ::windows::core::Abi for BINDVERB {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for BINDVERB {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -600,6 +608,7 @@ impl ::core::default::Default for BSCF {
 }
 unsafe impl ::windows::core::Abi for BSCF {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for BSCF {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -645,6 +654,7 @@ impl ::core::default::Default for CIP_STATUS {
 }
 unsafe impl ::windows::core::Abi for CIP_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CIP_STATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -674,6 +684,7 @@ impl ::core::fmt::Debug for CODEBASEHOLD {
 }
 unsafe impl ::windows::core::Abi for CODEBASEHOLD {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CODEBASEHOLD {
     fn eq(&self, other: &Self) -> bool {
@@ -705,6 +716,7 @@ impl ::core::fmt::Debug for CONFIRMSAFETY {
 }
 unsafe impl ::windows::core::Abi for CONFIRMSAFETY {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CONFIRMSAFETY {
     fn eq(&self, other: &Self) -> bool {
@@ -1154,6 +1166,7 @@ impl ::core::fmt::Debug for DATAINFO {
 }
 unsafe impl ::windows::core::Abi for DATAINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DATAINFO {
     fn eq(&self, other: &Self) -> bool {
@@ -1355,6 +1368,7 @@ impl ::core::fmt::Debug for HIT_LOGGING_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for HIT_LOGGING_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for HIT_LOGGING_INFO {
@@ -1457,6 +1471,11 @@ pub unsafe fn HlinkSimpleNavigateToString<'a, Param0: ::windows::core::IntoParam
 #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`*"]
 #[repr(transparent)]
 pub struct IBindCallbackRedirect(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBindCallbackRedirect {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IBindCallbackRedirect {
     #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`*"]
     pub unsafe fn Redirect<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, lpcurl: Param0) -> ::windows::core::Result<i16> {
@@ -1484,11 +1503,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IBind
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IBindCallbackRedirect {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IBindCallbackRedirect {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1513,6 +1527,11 @@ pub struct IBindCallbackRedirect_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`*"]
 #[repr(transparent)]
 pub struct IBindHttpSecurity(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBindHttpSecurity {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IBindHttpSecurity {
     #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`*"]
     pub unsafe fn GetIgnoreCertMask(&self) -> ::windows::core::Result<u32> {
@@ -1540,11 +1559,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IBind
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IBindHttpSecurity {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IBindHttpSecurity {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1569,6 +1583,11 @@ pub struct IBindHttpSecurity_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`*"]
 #[repr(transparent)]
 pub struct IBindProtocol(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBindProtocol {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IBindProtocol {
     #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`*"]
     pub unsafe fn CreateBinding<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param1: ::windows::core::IntoParam<'a, super::IBindCtx>>(&self, szurl: Param0, pbc: Param1) -> ::windows::core::Result<super::IBinding> {
@@ -1596,11 +1615,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IBind
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IBindProtocol {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IBindProtocol {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1625,6 +1639,11 @@ pub struct IBindProtocol_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`*"]
 #[repr(transparent)]
 pub struct ICatalogFileInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICatalogFileInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ICatalogFileInfo {
     #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`*"]
     pub unsafe fn GetCatalogFile(&self) -> ::windows::core::Result<::windows::core::PSTR> {
@@ -1656,11 +1675,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ICata
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ICatalogFileInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ICatalogFileInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1686,6 +1700,11 @@ pub struct ICatalogFileInfo_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`*"]
 #[repr(transparent)]
 pub struct ICodeInstall(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICodeInstall {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ICodeInstall {
     #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -1738,11 +1757,6 @@ impl<'a> ::windows::core::IntoParam<'a, IWindowForBindingUI> for &'a ICodeInstal
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ICodeInstall {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ICodeInstall {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1767,6 +1781,11 @@ pub struct ICodeInstall_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`*"]
 #[repr(transparent)]
 pub struct IDataFilter(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDataFilter {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDataFilter {
     #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`*"]
     pub unsafe fn DoEncode(&self, dwflags: u32, pbinbuffer: &[u8], pboutbuffer: &mut [u8], linbytesavailable: i32, plinbytesread: *mut i32, ploutbyteswritten: *mut i32, dwreserved: u32) -> ::windows::core::Result<()> {
@@ -1799,11 +1818,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IDataFilt
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDataFilter {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IDataFilter {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IDataFilter {
@@ -1891,6 +1905,7 @@ impl ::core::default::Default for IEObjectType {
 }
 unsafe impl ::windows::core::Abi for IEObjectType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for IEObjectType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1900,6 +1915,11 @@ impl ::core::fmt::Debug for IEObjectType {
 #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`*"]
 #[repr(transparent)]
 pub struct IEncodingFilterFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEncodingFilterFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEncodingFilterFactory {
     #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`*"]
     pub unsafe fn FindBestFilter<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param1: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param2: ::windows::core::IntoParam<'a, DATAINFO>>(&self, pwzcodein: Param0, pwzcodeout: Param1, info: Param2) -> ::windows::core::Result<IDataFilter> {
@@ -1932,11 +1952,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnco
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEncodingFilterFactory {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEncodingFilterFactory {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1962,6 +1977,11 @@ pub struct IEncodingFilterFactory_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`*"]
 #[repr(transparent)]
 pub struct IGetBindHandle(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGetBindHandle {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IGetBindHandle {
     #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -1988,11 +2008,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IGetBindH
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IGetBindHandle {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IGetBindHandle {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IGetBindHandle {
@@ -2022,6 +2037,11 @@ pub struct IGetBindHandle_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`*"]
 #[repr(transparent)]
 pub struct IHttpNegotiate(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpNegotiate {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IHttpNegotiate {
     #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`*"]
     pub unsafe fn BeginningTransaction<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param1: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, szurl: Param0, szheaders: Param1, dwreserved: u32) -> ::windows::core::Result<::windows::core::PWSTR> {
@@ -2054,11 +2074,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IHttp
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IHttpNegotiate {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IHttpNegotiate {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2084,6 +2099,11 @@ pub struct IHttpNegotiate_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`*"]
 #[repr(transparent)]
 pub struct IHttpNegotiate2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpNegotiate2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IHttpNegotiate2 {
     #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`*"]
     pub unsafe fn BeginningTransaction<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param1: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, szurl: Param0, szheaders: Param1, dwreserved: u32) -> ::windows::core::Result<::windows::core::PWSTR> {
@@ -2140,11 +2160,6 @@ impl<'a> ::windows::core::IntoParam<'a, IHttpNegotiate> for &'a IHttpNegotiate2 
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IHttpNegotiate2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IHttpNegotiate2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2169,6 +2184,11 @@ pub struct IHttpNegotiate2_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`*"]
 #[repr(transparent)]
 pub struct IHttpNegotiate3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpNegotiate3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IHttpNegotiate3 {
     #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`*"]
     pub unsafe fn BeginningTransaction<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param1: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, szurl: Param0, szheaders: Param1, dwreserved: u32) -> ::windows::core::Result<::windows::core::PWSTR> {
@@ -2249,11 +2269,6 @@ impl<'a> ::windows::core::IntoParam<'a, IHttpNegotiate2> for &'a IHttpNegotiate3
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IHttpNegotiate3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IHttpNegotiate3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2278,6 +2293,11 @@ pub struct IHttpNegotiate3_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`*"]
 #[repr(transparent)]
 pub struct IHttpSecurity(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpSecurity {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IHttpSecurity {
     #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -2330,11 +2350,6 @@ impl<'a> ::windows::core::IntoParam<'a, IWindowForBindingUI> for &'a IHttpSecuri
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IHttpSecurity {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IHttpSecurity {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2359,6 +2374,11 @@ pub struct IHttpSecurity_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`*"]
 #[repr(transparent)]
 pub struct IInternet(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInternet {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IInternet {}
 impl ::core::convert::From<IInternet> for ::windows::core::IUnknown {
     fn from(value: IInternet) -> Self {
@@ -2378,11 +2398,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IInternet
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IInternet {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IInternet {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IInternet {
@@ -2408,6 +2423,11 @@ pub struct IInternet_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`*"]
 #[repr(transparent)]
 pub struct IInternetBindInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInternetBindInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IInternetBindInfo {
     #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`, `\"Win32_Foundation\"`, `\"Win32_Graphics_Gdi\"`, `\"Win32_Security\"`, `\"Win32_System_Com_StructuredStorage\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_Security", feature = "Win32_System_Com_StructuredStorage"))]
@@ -2439,11 +2459,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IInte
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IInternetBindInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IInternetBindInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2472,6 +2487,11 @@ pub struct IInternetBindInfo_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`*"]
 #[repr(transparent)]
 pub struct IInternetBindInfoEx(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInternetBindInfoEx {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IInternetBindInfoEx {
     #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`, `\"Win32_Foundation\"`, `\"Win32_Graphics_Gdi\"`, `\"Win32_Security\"`, `\"Win32_System_Com_StructuredStorage\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_Security", feature = "Win32_System_Com_StructuredStorage"))]
@@ -2528,11 +2548,6 @@ impl<'a> ::windows::core::IntoParam<'a, IInternetBindInfo> for &'a IInternetBind
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IInternetBindInfoEx {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IInternetBindInfoEx {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2560,6 +2575,11 @@ pub struct IInternetBindInfoEx_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`*"]
 #[repr(transparent)]
 pub struct IInternetHostSecurityManager(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInternetHostSecurityManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IInternetHostSecurityManager {
     #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`*"]
     pub unsafe fn GetSecurityId(&self, pbsecurityid: *mut u8, pcbsecurityid: *mut u32, dwreserved: usize) -> ::windows::core::Result<()> {
@@ -2594,11 +2614,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IInte
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IInternetHostSecurityManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IInternetHostSecurityManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2625,6 +2640,11 @@ pub struct IInternetHostSecurityManager_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`*"]
 #[repr(transparent)]
 pub struct IInternetPriority(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInternetPriority {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IInternetPriority {
     #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`*"]
     pub unsafe fn SetPriority(&self, npriority: i32) -> ::windows::core::Result<()> {
@@ -2656,11 +2676,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IInte
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IInternetPriority {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IInternetPriority {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2686,6 +2701,11 @@ pub struct IInternetPriority_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`*"]
 #[repr(transparent)]
 pub struct IInternetProtocol(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInternetProtocol {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IInternetProtocol {
     #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -2770,11 +2790,6 @@ impl<'a> ::windows::core::IntoParam<'a, IInternetProtocolRoot> for &'a IInternet
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IInternetProtocol {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IInternetProtocol {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2802,6 +2817,11 @@ pub struct IInternetProtocol_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`*"]
 #[repr(transparent)]
 pub struct IInternetProtocolEx(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInternetProtocolEx {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IInternetProtocolEx {
     #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -2911,11 +2931,6 @@ impl<'a> ::windows::core::IntoParam<'a, IInternetProtocol> for &'a IInternetProt
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IInternetProtocolEx {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IInternetProtocolEx {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2943,6 +2958,11 @@ pub struct IInternetProtocolEx_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`*"]
 #[repr(transparent)]
 pub struct IInternetProtocolInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInternetProtocolInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IInternetProtocolInfo {
     #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`*"]
     pub unsafe fn ParseUrl<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, pwzurl: Param0, parseaction: PARSEACTION, dwparseflags: u32, pwzresult: ::windows::core::PWSTR, cchresult: u32, pcchresult: *mut u32, dwreserved: u32) -> ::windows::core::Result<()> {
@@ -2981,11 +3001,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IInte
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IInternetProtocolInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IInternetProtocolInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3013,6 +3028,11 @@ pub struct IInternetProtocolInfo_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`*"]
 #[repr(transparent)]
 pub struct IInternetProtocolRoot(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInternetProtocolRoot {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IInternetProtocolRoot {
     #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -3060,11 +3080,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IInte
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IInternetProtocolRoot {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IInternetProtocolRoot {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3097,6 +3112,11 @@ pub struct IInternetProtocolRoot_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`*"]
 #[repr(transparent)]
 pub struct IInternetProtocolSink(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInternetProtocolSink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IInternetProtocolSink {
     #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`*"]
     pub unsafe fn Switch(&self, pprotocoldata: *const PROTOCOLDATA) -> ::windows::core::Result<()> {
@@ -3135,11 +3155,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IInte
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IInternetProtocolSink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IInternetProtocolSink {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3167,6 +3182,11 @@ pub struct IInternetProtocolSink_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`*"]
 #[repr(transparent)]
 pub struct IInternetProtocolSinkStackable(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInternetProtocolSinkStackable {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IInternetProtocolSinkStackable {
     #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`*"]
     pub unsafe fn SwitchSink<'a, Param0: ::windows::core::IntoParam<'a, IInternetProtocolSink>>(&self, poiprotsink: Param0) -> ::windows::core::Result<()> {
@@ -3201,11 +3221,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IInte
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IInternetProtocolSinkStackable {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IInternetProtocolSinkStackable {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3232,6 +3247,11 @@ pub struct IInternetProtocolSinkStackable_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`*"]
 #[repr(transparent)]
 pub struct IInternetSecurityManager(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInternetSecurityManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IInternetSecurityManager {
     #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`*"]
     pub unsafe fn SetSecuritySite<'a, Param0: ::windows::core::IntoParam<'a, IInternetSecurityMgrSite>>(&self, psite: Param0) -> ::windows::core::Result<()> {
@@ -3287,11 +3307,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IInte
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IInternetSecurityManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IInternetSecurityManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3323,6 +3338,11 @@ pub struct IInternetSecurityManager_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`*"]
 #[repr(transparent)]
 pub struct IInternetSecurityManagerEx(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInternetSecurityManagerEx {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IInternetSecurityManagerEx {
     #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`*"]
     pub unsafe fn SetSecuritySite<'a, Param0: ::windows::core::IntoParam<'a, IInternetSecurityMgrSite>>(&self, psite: Param0) -> ::windows::core::Result<()> {
@@ -3402,11 +3422,6 @@ impl<'a> ::windows::core::IntoParam<'a, IInternetSecurityManager> for &'a IInter
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IInternetSecurityManagerEx {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IInternetSecurityManagerEx {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3431,6 +3446,11 @@ pub struct IInternetSecurityManagerEx_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`*"]
 #[repr(transparent)]
 pub struct IInternetSecurityManagerEx2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInternetSecurityManagerEx2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IInternetSecurityManagerEx2 {
     #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`*"]
     pub unsafe fn SetSecuritySite<'a, Param0: ::windows::core::IntoParam<'a, IInternetSecurityMgrSite>>(&self, psite: Param0) -> ::windows::core::Result<()> {
@@ -3546,11 +3566,6 @@ impl<'a> ::windows::core::IntoParam<'a, IInternetSecurityManagerEx> for &'a IInt
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IInternetSecurityManagerEx2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IInternetSecurityManagerEx2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3578,6 +3593,11 @@ pub struct IInternetSecurityManagerEx2_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`*"]
 #[repr(transparent)]
 pub struct IInternetSecurityMgrSite(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInternetSecurityMgrSite {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IInternetSecurityMgrSite {
     #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -3611,11 +3631,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IInte
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IInternetSecurityMgrSite {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IInternetSecurityMgrSite {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3647,6 +3662,11 @@ pub struct IInternetSecurityMgrSite_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`*"]
 #[repr(transparent)]
 pub struct IInternetSession(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInternetSession {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IInternetSession {
     #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`*"]
     pub unsafe fn RegisterNameSpace<'a, Param0: ::windows::core::IntoParam<'a, super::IClassFactory>, Param2: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, pcf: Param0, rclsid: *const ::windows::core::GUID, pwzprotocol: Param2, cpatterns: u32, ppwzpatterns: *const ::windows::core::PWSTR, dwreserved: u32) -> ::windows::core::Result<()> {
@@ -3697,11 +3717,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IInte
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IInternetSession {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IInternetSession {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3732,6 +3747,11 @@ pub struct IInternetSession_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`*"]
 #[repr(transparent)]
 pub struct IInternetThreadSwitch(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInternetThreadSwitch {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IInternetThreadSwitch {
     #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`*"]
     pub unsafe fn Prepare(&self) -> ::windows::core::Result<()> {
@@ -3762,11 +3782,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IInte
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IInternetThreadSwitch {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IInternetThreadSwitch {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3792,6 +3807,11 @@ pub struct IInternetThreadSwitch_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`*"]
 #[repr(transparent)]
 pub struct IInternetZoneManager(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInternetZoneManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IInternetZoneManager {
     #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`*"]
     pub unsafe fn GetZoneAttributes(&self, dwzone: u32, pzoneattributes: *mut ZONEATTRIBUTES) -> ::windows::core::Result<()> {
@@ -3864,11 +3884,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IInte
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IInternetZoneManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IInternetZoneManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3907,6 +3922,11 @@ pub struct IInternetZoneManager_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`*"]
 #[repr(transparent)]
 pub struct IInternetZoneManagerEx(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInternetZoneManagerEx {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IInternetZoneManagerEx {
     #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`*"]
     pub unsafe fn GetZoneAttributes(&self, dwzone: u32, pzoneattributes: *mut ZONEATTRIBUTES) -> ::windows::core::Result<()> {
@@ -4007,11 +4027,6 @@ impl<'a> ::windows::core::IntoParam<'a, IInternetZoneManager> for &'a IInternetZ
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IInternetZoneManagerEx {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IInternetZoneManagerEx {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4037,6 +4052,11 @@ pub struct IInternetZoneManagerEx_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`*"]
 #[repr(transparent)]
 pub struct IInternetZoneManagerEx2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInternetZoneManagerEx2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IInternetZoneManagerEx2 {
     #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`*"]
     pub unsafe fn GetZoneAttributes(&self, dwzone: u32, pzoneattributes: *mut ZONEATTRIBUTES) -> ::windows::core::Result<()> {
@@ -4175,11 +4195,6 @@ impl<'a> ::windows::core::IntoParam<'a, IInternetZoneManagerEx> for &'a IInterne
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IInternetZoneManagerEx2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IInternetZoneManagerEx2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4213,6 +4228,11 @@ pub struct IInternetZoneManagerEx2_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`*"]
 #[repr(transparent)]
 pub struct IMonikerProp(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMonikerProp {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMonikerProp {
     #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`*"]
     pub unsafe fn PutProperty<'a, Param1: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, mkp: MONIKERPROPERTY, val: Param1) -> ::windows::core::Result<()> {
@@ -4237,11 +4257,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IMonikerP
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMonikerProp {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IMonikerProp {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IMonikerProp {
@@ -4386,6 +4401,7 @@ impl ::core::default::Default for INET_ZONE_MANAGER_CONSTANTS {
 }
 unsafe impl ::windows::core::Abi for INET_ZONE_MANAGER_CONSTANTS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for INET_ZONE_MANAGER_CONSTANTS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4467,6 +4483,7 @@ impl ::core::default::Default for INTERNETFEATURELIST {
 }
 unsafe impl ::windows::core::Abi for INTERNETFEATURELIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for INTERNETFEATURELIST {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4476,6 +4493,11 @@ impl ::core::fmt::Debug for INTERNETFEATURELIST {
 #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`*"]
 #[repr(transparent)]
 pub struct IPersistMoniker(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPersistMoniker {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPersistMoniker {
     #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`*"]
     pub unsafe fn GetClassID(&self) -> ::windows::core::Result<::windows::core::GUID> {
@@ -4526,11 +4548,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPers
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPersistMoniker {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPersistMoniker {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4566,6 +4583,11 @@ pub struct IPersistMoniker_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`*"]
 #[repr(transparent)]
 pub struct ISoftDistExt(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISoftDistExt {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISoftDistExt {
     #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`, `\"Win32_Data_Xml_MsXml\"`*"]
     #[cfg(feature = "Win32_Data_Xml_MsXml")]
@@ -4605,11 +4627,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISoft
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISoftDistExt {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISoftDistExt {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4640,6 +4657,11 @@ pub struct ISoftDistExt_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`*"]
 #[repr(transparent)]
 pub struct IUriBuilderFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUriBuilderFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUriBuilderFactory {
     #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`*"]
     pub unsafe fn CreateIUriBuilder(&self, dwflags: u32, dwreserved: usize) -> ::windows::core::Result<super::IUriBuilder> {
@@ -4672,11 +4694,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUriB
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUriBuilderFactory {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUriBuilderFactory {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4702,6 +4719,11 @@ pub struct IUriBuilderFactory_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`*"]
 #[repr(transparent)]
 pub struct IUriContainer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUriContainer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUriContainer {
     #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`*"]
     pub unsafe fn GetIUri(&self) -> ::windows::core::Result<super::IUri> {
@@ -4729,11 +4751,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUriC
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUriContainer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUriContainer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4758,6 +4775,11 @@ pub struct IUriContainer_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`*"]
 #[repr(transparent)]
 pub struct IWinInetCacheHints(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWinInetCacheHints {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWinInetCacheHints {
     #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`*"]
     pub unsafe fn SetCacheExtension<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, pwzext: Param0, pszcachefile: *mut ::core::ffi::c_void, pcbcachefile: *mut u32, pdwwinineterror: *mut u32, pdwreserved: *mut u32) -> ::windows::core::Result<()> {
@@ -4784,11 +4806,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWinI
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWinInetCacheHints {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWinInetCacheHints {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4813,6 +4830,11 @@ pub struct IWinInetCacheHints_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`*"]
 #[repr(transparent)]
 pub struct IWinInetCacheHints2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWinInetCacheHints2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWinInetCacheHints2 {
     #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`*"]
     pub unsafe fn SetCacheExtension<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, pwzext: Param0, pszcachefile: *mut ::core::ffi::c_void, pcbcachefile: *mut u32, pdwwinineterror: *mut u32, pdwreserved: *mut u32) -> ::windows::core::Result<()> {
@@ -4863,11 +4885,6 @@ impl<'a> ::windows::core::IntoParam<'a, IWinInetCacheHints> for &'a IWinInetCach
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWinInetCacheHints2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWinInetCacheHints2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4892,6 +4909,11 @@ pub struct IWinInetCacheHints2_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`*"]
 #[repr(transparent)]
 pub struct IWinInetFileStream(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWinInetFileStream {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWinInetFileStream {
     #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`*"]
     pub unsafe fn SetHandleForUnlock(&self, hwininetlockhandle: usize, dwreserved: usize) -> ::windows::core::Result<()> {
@@ -4922,11 +4944,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWinI
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWinInetFileStream {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWinInetFileStream {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4952,6 +4969,11 @@ pub struct IWinInetFileStream_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`*"]
 #[repr(transparent)]
 pub struct IWinInetHttpInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWinInetHttpInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWinInetHttpInfo {
     #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`*"]
     pub unsafe fn QueryOption(&self, dwoption: u32, pbuffer: *mut ::core::ffi::c_void, pcbbuf: *mut u32) -> ::windows::core::Result<()> {
@@ -5002,11 +5024,6 @@ impl<'a> ::windows::core::IntoParam<'a, IWinInetInfo> for &'a IWinInetHttpInfo {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWinInetHttpInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWinInetHttpInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5031,6 +5048,11 @@ pub struct IWinInetHttpInfo_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`*"]
 #[repr(transparent)]
 pub struct IWinInetHttpTimeouts(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWinInetHttpTimeouts {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWinInetHttpTimeouts {
     #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`*"]
     pub unsafe fn GetRequestTimeouts(&self, pdwconnecttimeout: *mut u32, pdwsendtimeout: *mut u32, pdwreceivetimeout: *mut u32) -> ::windows::core::Result<()> {
@@ -5057,11 +5079,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWinI
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWinInetHttpTimeouts {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWinInetHttpTimeouts {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5086,6 +5103,11 @@ pub struct IWinInetHttpTimeouts_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`*"]
 #[repr(transparent)]
 pub struct IWinInetInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWinInetInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWinInetInfo {
     #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`*"]
     pub unsafe fn QueryOption(&self, dwoption: u32, pbuffer: *mut ::core::ffi::c_void, pcbbuf: *mut u32) -> ::windows::core::Result<()> {
@@ -5112,11 +5134,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWinI
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWinInetInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWinInetInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5141,6 +5158,11 @@ pub struct IWinInetInfo_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`*"]
 #[repr(transparent)]
 pub struct IWindowForBindingUI(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWindowForBindingUI {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWindowForBindingUI {
     #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -5167,11 +5189,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IWindowFo
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWindowForBindingUI {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IWindowForBindingUI {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IWindowForBindingUI {
@@ -5201,6 +5218,11 @@ pub struct IWindowForBindingUI_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`*"]
 #[repr(transparent)]
 pub struct IWrappedProtocol(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWrappedProtocol {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWrappedProtocol {
     #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`*"]
     pub unsafe fn GetWrapperCode(&self, pncode: *mut i32, dwreserved: usize) -> ::windows::core::Result<()> {
@@ -5227,11 +5249,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWrap
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWrappedProtocol {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWrappedProtocol {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5256,6 +5273,11 @@ pub struct IWrappedProtocol_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`*"]
 #[repr(transparent)]
 pub struct IZoneIdentifier(::windows::core::IUnknown);
+impl ::core::clone::Clone for IZoneIdentifier {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IZoneIdentifier {
     #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`*"]
     pub unsafe fn GetId(&self) -> ::windows::core::Result<u32> {
@@ -5291,11 +5313,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IZone
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IZoneIdentifier {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IZoneIdentifier {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5322,6 +5339,11 @@ pub struct IZoneIdentifier_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`*"]
 #[repr(transparent)]
 pub struct IZoneIdentifier2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IZoneIdentifier2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IZoneIdentifier2 {
     #[doc = "*Required features: `\"Win32_System_Com_Urlmon\"`*"]
     pub unsafe fn GetId(&self) -> ::windows::core::Result<u32> {
@@ -5401,11 +5423,6 @@ impl<'a> ::windows::core::IntoParam<'a, IZoneIdentifier> for IZoneIdentifier2 {
 impl<'a> ::windows::core::IntoParam<'a, IZoneIdentifier> for &'a IZoneIdentifier2 {
     fn into_param(self) -> ::windows::core::Param<'a, IZoneIdentifier> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IZoneIdentifier2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IZoneIdentifier2 {
@@ -5525,6 +5542,7 @@ impl ::core::default::Default for MONIKERPROPERTY {
 }
 unsafe impl ::windows::core::Abi for MONIKERPROPERTY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MONIKERPROPERTY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5586,6 +5604,7 @@ impl ::core::default::Default for OIBDG_FLAGS {
 }
 unsafe impl ::windows::core::Abi for OIBDG_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for OIBDG_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5661,6 +5680,7 @@ impl ::core::default::Default for PARSEACTION {
 }
 unsafe impl ::windows::core::Abi for PARSEACTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PARSEACTION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5714,6 +5734,7 @@ impl ::core::default::Default for PI_FLAGS {
 }
 unsafe impl ::windows::core::Abi for PI_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PI_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5741,6 +5762,7 @@ impl ::core::fmt::Debug for PROTOCOLDATA {
 }
 unsafe impl ::windows::core::Abi for PROTOCOLDATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROTOCOLDATA {
     fn eq(&self, other: &Self) -> bool {
@@ -5780,6 +5802,7 @@ impl ::core::fmt::Debug for PROTOCOLFILTERDATA {
 }
 unsafe impl ::windows::core::Abi for PROTOCOLFILTERDATA {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROTOCOLFILTERDATA {
     fn eq(&self, other: &Self) -> bool {
@@ -5813,6 +5836,7 @@ impl ::core::fmt::Debug for PROTOCOL_ARGUMENT {
 }
 unsafe impl ::windows::core::Abi for PROTOCOL_ARGUMENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROTOCOL_ARGUMENT {
     fn eq(&self, other: &Self) -> bool {
@@ -5846,6 +5870,7 @@ impl ::core::default::Default for PSUACTION {
 }
 unsafe impl ::windows::core::Abi for PSUACTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PSUACTION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5911,6 +5936,7 @@ impl ::core::default::Default for PUAF {
 }
 unsafe impl ::windows::core::Abi for PUAF {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PUAF {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5938,6 +5964,7 @@ impl ::core::default::Default for PUAFOUT {
 }
 unsafe impl ::windows::core::Abi for PUAFOUT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PUAFOUT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5993,6 +6020,7 @@ impl ::core::default::Default for QUERYOPTION {
 }
 unsafe impl ::windows::core::Abi for QUERYOPTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for QUERYOPTION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6024,6 +6052,7 @@ impl ::core::fmt::Debug for REMSECURITY_ATTRIBUTES {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for REMSECURITY_ATTRIBUTES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for REMSECURITY_ATTRIBUTES {
@@ -6171,6 +6200,7 @@ impl ::core::fmt::Debug for RemBINDINFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for RemBINDINFO {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for RemBINDINFO {
@@ -6208,6 +6238,7 @@ impl ::core::fmt::Debug for RemFORMATETC {
 }
 unsafe impl ::windows::core::Abi for RemFORMATETC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RemFORMATETC {
     fn eq(&self, other: &Self) -> bool {
@@ -6312,6 +6343,7 @@ impl ::core::fmt::Debug for SOFTDISTINFO {
 }
 unsafe impl ::windows::core::Abi for SOFTDISTINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SOFTDISTINFO {
     fn eq(&self, other: &Self) -> bool {
@@ -6361,6 +6393,7 @@ impl ::core::default::Default for SZM_FLAGS {
 }
 unsafe impl ::windows::core::Abi for SZM_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SZM_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6417,6 +6450,7 @@ impl ::core::fmt::Debug for StartParam {
 }
 unsafe impl ::windows::core::Abi for StartParam {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for StartParam {
     fn eq(&self, other: &Self) -> bool {
@@ -6956,6 +6990,7 @@ impl ::core::default::Default for URLTEMPLATE {
 }
 unsafe impl ::windows::core::Abi for URLTEMPLATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for URLTEMPLATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6999,6 +7034,7 @@ impl ::core::default::Default for URLZONE {
 }
 unsafe impl ::windows::core::Abi for URLZONE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for URLZONE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7028,6 +7064,7 @@ impl ::core::default::Default for URLZONEREG {
 }
 unsafe impl ::windows::core::Abi for URLZONEREG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for URLZONEREG {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7059,6 +7096,7 @@ impl ::core::default::Default for URL_ENCODING {
 }
 unsafe impl ::windows::core::Abi for URL_ENCODING {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for URL_ENCODING {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7120,6 +7158,7 @@ impl ::core::default::Default for Uri_HOST_TYPE {
 }
 unsafe impl ::windows::core::Abi for Uri_HOST_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for Uri_HOST_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7214,6 +7253,7 @@ impl ::core::default::Default for ZAFLAGS {
 }
 unsafe impl ::windows::core::Abi for ZAFLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ZAFLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7245,6 +7285,7 @@ impl ::core::fmt::Debug for ZONEATTRIBUTES {
 }
 unsafe impl ::windows::core::Abi for ZONEATTRIBUTES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ZONEATTRIBUTES {
     fn eq(&self, other: &Self) -> bool {

@@ -2,6 +2,11 @@
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IRequestingFocusOnKeyboardInputEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRequestingFocusOnKeyboardInputEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IRequestingFocusOnKeyboardInputEventArgs {
     type Vtable = IRequestingFocusOnKeyboardInputEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa1195f27_b1a7_41a2_879d_6a68687e5985);
@@ -14,6 +19,11 @@ pub struct IRequestingFocusOnKeyboardInputEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISearchSuggestion(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISearchSuggestion {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISearchSuggestion {
     type Vtable = ISearchSuggestion_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x5b5554b0_1527_437b_95c5_8d18d2b8af55);
@@ -35,6 +45,11 @@ pub struct ISearchSuggestion_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISearchSuggestionManager(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISearchSuggestionManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISearchSuggestionManager {
     type Vtable = ISearchSuggestionManager_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x3f0c50a1_cb9d_497b_b500_3c04ac959ad2);
@@ -78,6 +93,11 @@ pub struct ISearchSuggestionManager_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISearchSuggestionsRequestedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISearchSuggestionsRequestedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISearchSuggestionsRequestedEventArgs {
     type Vtable = ISearchSuggestionsRequestedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x6fd519e5_9e7e_4ab4_8be3_c76b1bd4344a);
@@ -95,11 +115,6 @@ pub struct ISearchSuggestionsRequestedEventArgs_Vtbl {
 #[repr(transparent)]
 pub struct RequestingFocusOnKeyboardInputEventArgs(::windows::core::IUnknown);
 impl RequestingFocusOnKeyboardInputEventArgs {}
-impl ::core::clone::Clone for RequestingFocusOnKeyboardInputEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for RequestingFocusOnKeyboardInputEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -113,7 +128,6 @@ impl ::core::fmt::Debug for RequestingFocusOnKeyboardInputEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for RequestingFocusOnKeyboardInputEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Search.Core.RequestingFocusOnKeyboardInputEventArgs;{a1195f27-b1a7-41a2-879d-6a68687e5985})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -221,11 +235,6 @@ impl SearchSuggestion {
         }
     }
 }
-impl ::core::clone::Clone for SearchSuggestion {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SearchSuggestion {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -239,7 +248,6 @@ impl ::core::fmt::Debug for SearchSuggestion {
 }
 unsafe impl ::windows::core::RuntimeType for SearchSuggestion {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Search.Core.SearchSuggestion;{5b5554b0-1527-437b-95c5-8d18d2b8af55})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -313,6 +321,7 @@ impl ::core::default::Default for SearchSuggestionKind {
 }
 unsafe impl ::windows::core::Abi for SearchSuggestionKind {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SearchSuggestionKind {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -321,7 +330,6 @@ impl ::core::fmt::Debug for SearchSuggestionKind {
 }
 unsafe impl ::windows::core::RuntimeType for SearchSuggestionKind {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.Search.Core.SearchSuggestionKind;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -438,11 +446,6 @@ impl SearchSuggestionManager {
         unsafe { (::windows::core::Interface::vtable(this).RemoveRequestingFocusOnKeyboardInput)(::core::mem::transmute_copy(this), token.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for SearchSuggestionManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SearchSuggestionManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -456,7 +459,6 @@ impl ::core::fmt::Debug for SearchSuggestionManager {
 }
 unsafe impl ::windows::core::RuntimeType for SearchSuggestionManager {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Search.Core.SearchSuggestionManager;{3f0c50a1-cb9d-497b-b500-3c04ac959ad2})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -545,11 +547,6 @@ impl SearchSuggestionsRequestedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for SearchSuggestionsRequestedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SearchSuggestionsRequestedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -563,7 +560,6 @@ impl ::core::fmt::Debug for SearchSuggestionsRequestedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for SearchSuggestionsRequestedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Search.Core.SearchSuggestionsRequestedEventArgs;{6fd519e5-9e7e-4ab4-8be3-c76b1bd4344a})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

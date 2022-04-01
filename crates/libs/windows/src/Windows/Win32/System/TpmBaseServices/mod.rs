@@ -56,6 +56,7 @@ impl ::core::default::Default for TBS_COMMAND_LOCALITY {
 }
 unsafe impl ::windows::core::Abi for TBS_COMMAND_LOCALITY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TBS_COMMAND_LOCALITY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -89,6 +90,7 @@ impl ::core::default::Default for TBS_COMMAND_PRIORITY {
 }
 unsafe impl ::windows::core::Abi for TBS_COMMAND_PRIORITY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TBS_COMMAND_PRIORITY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -113,6 +115,7 @@ impl ::core::fmt::Debug for TBS_CONTEXT_PARAMS {
 }
 unsafe impl ::windows::core::Abi for TBS_CONTEXT_PARAMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TBS_CONTEXT_PARAMS {
     fn eq(&self, other: &Self) -> bool {
@@ -139,6 +142,7 @@ impl ::core::clone::Clone for TBS_CONTEXT_PARAMS2 {
 }
 unsafe impl ::windows::core::Abi for TBS_CONTEXT_PARAMS2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TBS_CONTEXT_PARAMS2 {
     fn eq(&self, other: &Self) -> bool {
@@ -165,6 +169,7 @@ impl ::core::clone::Clone for TBS_CONTEXT_PARAMS2_0 {
 }
 unsafe impl ::windows::core::Abi for TBS_CONTEXT_PARAMS2_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TBS_CONTEXT_PARAMS2_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -195,6 +200,7 @@ impl ::core::fmt::Debug for TBS_CONTEXT_PARAMS2_0_0 {
 }
 unsafe impl ::windows::core::Abi for TBS_CONTEXT_PARAMS2_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TBS_CONTEXT_PARAMS2_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -258,6 +264,7 @@ impl ::core::fmt::Debug for TPM_DEVICE_INFO {
 }
 unsafe impl ::windows::core::Abi for TPM_DEVICE_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TPM_DEVICE_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -467,6 +474,7 @@ impl ::core::fmt::Debug for tdTPM_WNF_PROVISIONING {
 }
 unsafe impl ::windows::core::Abi for tdTPM_WNF_PROVISIONING {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for tdTPM_WNF_PROVISIONING {
     fn eq(&self, other: &Self) -> bool {

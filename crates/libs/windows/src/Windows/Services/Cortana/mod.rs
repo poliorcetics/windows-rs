@@ -101,12 +101,6 @@ impl CortanaActionableInsights {
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for CortanaActionableInsights {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for CortanaActionableInsights {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -123,7 +117,6 @@ impl ::core::fmt::Debug for CortanaActionableInsights {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for CortanaActionableInsights {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Services.Cortana.CortanaActionableInsights;{951ec6b1-fc83-586d-8b84-2452c8981625})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -234,12 +227,6 @@ impl CortanaActionableInsightsOptions {
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for CortanaActionableInsightsOptions {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for CortanaActionableInsightsOptions {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -256,7 +243,6 @@ impl ::core::fmt::Debug for CortanaActionableInsightsOptions {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for CortanaActionableInsightsOptions {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Services.Cortana.CortanaActionableInsightsOptions;{aac2bbcf-9782-5420-b81e-7ae56af31815})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -358,6 +344,7 @@ impl ::core::default::Default for CortanaPermission {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Abi for CortanaPermission {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "deprecated")]
 impl ::core::fmt::Debug for CortanaPermission {
@@ -368,7 +355,6 @@ impl ::core::fmt::Debug for CortanaPermission {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for CortanaPermission {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Services.Cortana.CortanaPermission;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -401,6 +387,7 @@ impl ::core::default::Default for CortanaPermissionsChangeResult {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Abi for CortanaPermissionsChangeResult {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "deprecated")]
 impl ::core::fmt::Debug for CortanaPermissionsChangeResult {
@@ -411,7 +398,6 @@ impl ::core::fmt::Debug for CortanaPermissionsChangeResult {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for CortanaPermissionsChangeResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Services.Cortana.CortanaPermissionsChangeResult;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -474,12 +460,6 @@ impl CortanaPermissionsManager {
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for CortanaPermissionsManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for CortanaPermissionsManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -496,7 +476,6 @@ impl ::core::fmt::Debug for CortanaPermissionsManager {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for CortanaPermissionsManager {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Services.Cortana.CortanaPermissionsManager;{191330e0-8695-438a-9545-3da4e822ddb4})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -616,12 +595,6 @@ impl CortanaSettings {
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for CortanaSettings {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for CortanaSettings {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -638,7 +611,6 @@ impl ::core::fmt::Debug for CortanaSettings {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for CortanaSettings {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Services.Cortana.CortanaSettings;{54d571a7-8062-40f4-abe7-dedfd697b019})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -709,6 +681,12 @@ unsafe impl ::core::marker::Sync for CortanaSettings {}
 #[repr(transparent)]
 pub struct ICortanaActionableInsights(::windows::core::IUnknown);
 #[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for ICortanaActionableInsights {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for ICortanaActionableInsights {
     type Vtable = ICortanaActionableInsights_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x951ec6b1_fc83_586d_8b84_2452c8981625);
@@ -756,6 +734,12 @@ pub struct ICortanaActionableInsights_Vtbl {
 #[repr(transparent)]
 pub struct ICortanaActionableInsightsOptions(::windows::core::IUnknown);
 #[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for ICortanaActionableInsightsOptions {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for ICortanaActionableInsightsOptions {
     type Vtable = ICortanaActionableInsightsOptions_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xaac2bbcf_9782_5420_b81e_7ae56af31815);
@@ -787,6 +771,12 @@ pub struct ICortanaActionableInsightsOptions_Vtbl {
 #[repr(transparent)]
 pub struct ICortanaActionableInsightsStatics(::windows::core::IUnknown);
 #[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for ICortanaActionableInsightsStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for ICortanaActionableInsightsStatics {
     type Vtable = ICortanaActionableInsightsStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb5ded412_9d2f_5cb5_9b05_356a0b836c10);
@@ -809,6 +799,12 @@ pub struct ICortanaActionableInsightsStatics_Vtbl {
 #[cfg(feature = "deprecated")]
 #[repr(transparent)]
 pub struct ICortanaPermissionsManager(::windows::core::IUnknown);
+#[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for ICortanaPermissionsManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for ICortanaPermissionsManager {
     type Vtable = ICortanaPermissionsManager_Vtbl;
@@ -841,6 +837,12 @@ pub struct ICortanaPermissionsManager_Vtbl {
 #[repr(transparent)]
 pub struct ICortanaPermissionsManagerStatics(::windows::core::IUnknown);
 #[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for ICortanaPermissionsManagerStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for ICortanaPermissionsManagerStatics {
     type Vtable = ICortanaPermissionsManagerStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x76b1e67a_b045_4414_9d6d_2ad3a5fe3a7e);
@@ -859,6 +861,12 @@ pub struct ICortanaPermissionsManagerStatics_Vtbl {
 #[cfg(feature = "deprecated")]
 #[repr(transparent)]
 pub struct ICortanaSettings(::windows::core::IUnknown);
+#[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for ICortanaSettings {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for ICortanaSettings {
     type Vtable = ICortanaSettings_Vtbl;
@@ -886,6 +894,12 @@ pub struct ICortanaSettings_Vtbl {
 #[cfg(feature = "deprecated")]
 #[repr(transparent)]
 pub struct ICortanaSettingsStatics(::windows::core::IUnknown);
+#[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for ICortanaSettingsStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for ICortanaSettingsStatics {
     type Vtable = ICortanaSettingsStatics_Vtbl;

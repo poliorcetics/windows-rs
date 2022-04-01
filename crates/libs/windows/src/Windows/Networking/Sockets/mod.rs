@@ -22,10 +22,10 @@ impl ::core::fmt::Debug for BandwidthStatistics {
 }
 unsafe impl ::windows::core::Abi for BandwidthStatistics {
     type Abi = Self;
+    type DefaultType = Self;
 }
 unsafe impl ::windows::core::RuntimeType for BandwidthStatistics {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"struct(Windows.Networking.Sockets.BandwidthStatistics;u8;u8;u8;u8;b1;b1)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -157,11 +157,6 @@ impl ControlChannelTrigger {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for ControlChannelTrigger {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ControlChannelTrigger {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -175,7 +170,6 @@ impl ::core::fmt::Debug for ControlChannelTrigger {
 }
 unsafe impl ::windows::core::RuntimeType for ControlChannelTrigger {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.Sockets.ControlChannelTrigger;{7d1431a7-ee96-40e8-a199-8703cd969ec3})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -278,6 +272,7 @@ impl ::core::default::Default for ControlChannelTriggerResetReason {
 }
 unsafe impl ::windows::core::Abi for ControlChannelTriggerResetReason {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ControlChannelTriggerResetReason {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -286,7 +281,6 @@ impl ::core::fmt::Debug for ControlChannelTriggerResetReason {
 }
 unsafe impl ::windows::core::RuntimeType for ControlChannelTriggerResetReason {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Networking.Sockets.ControlChannelTriggerResetReason;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -312,6 +306,7 @@ impl ::core::default::Default for ControlChannelTriggerResourceType {
 }
 unsafe impl ::windows::core::Abi for ControlChannelTriggerResourceType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ControlChannelTriggerResourceType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -320,7 +315,6 @@ impl ::core::fmt::Debug for ControlChannelTriggerResourceType {
 }
 unsafe impl ::windows::core::RuntimeType for ControlChannelTriggerResourceType {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Networking.Sockets.ControlChannelTriggerResourceType;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -351,6 +345,7 @@ impl ::core::default::Default for ControlChannelTriggerStatus {
 }
 unsafe impl ::windows::core::Abi for ControlChannelTriggerStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ControlChannelTriggerStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -359,7 +354,6 @@ impl ::core::fmt::Debug for ControlChannelTriggerStatus {
 }
 unsafe impl ::windows::core::RuntimeType for ControlChannelTriggerStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Networking.Sockets.ControlChannelTriggerStatus;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -546,11 +540,6 @@ impl DatagramSocket {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for DatagramSocket {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DatagramSocket {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -564,7 +553,6 @@ impl ::core::fmt::Debug for DatagramSocket {
 }
 unsafe impl ::windows::core::RuntimeType for DatagramSocket {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.Sockets.DatagramSocket;{7fe25bbb-c3bc-4677-8446-ca28a465a3af})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -714,11 +702,6 @@ impl DatagramSocketControl {
         unsafe { (::windows::core::Interface::vtable(this).SetMulticastOnly)(::core::mem::transmute_copy(this), value).ok() }
     }
 }
-impl ::core::clone::Clone for DatagramSocketControl {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DatagramSocketControl {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -732,7 +715,6 @@ impl ::core::fmt::Debug for DatagramSocketControl {
 }
 unsafe impl ::windows::core::RuntimeType for DatagramSocketControl {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.Sockets.DatagramSocketControl;{52ac3f2e-349a-4135-bb58-b79b2647d390})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -823,11 +805,6 @@ impl DatagramSocketInformation {
         }
     }
 }
-impl ::core::clone::Clone for DatagramSocketInformation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DatagramSocketInformation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -841,7 +818,6 @@ impl ::core::fmt::Debug for DatagramSocketInformation {
 }
 unsafe impl ::windows::core::RuntimeType for DatagramSocketInformation {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.Sockets.DatagramSocketInformation;{5f1a569a-55fb-48cd-9706-7a974f7b1585})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -942,11 +918,6 @@ impl DatagramSocketMessageReceivedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for DatagramSocketMessageReceivedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DatagramSocketMessageReceivedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -960,7 +931,6 @@ impl ::core::fmt::Debug for DatagramSocketMessageReceivedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for DatagramSocketMessageReceivedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.Sockets.DatagramSocketMessageReceivedEventArgs;{9e2ddca2-1712-4ce4-b179-8c652c6d107e})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1017,6 +987,11 @@ unsafe impl ::core::marker::Sync for DatagramSocketMessageReceivedEventArgs {}
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IControlChannelTrigger(::windows::core::IUnknown);
+impl ::core::clone::Clone for IControlChannelTrigger {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IControlChannelTrigger {
     type Vtable = IControlChannelTrigger_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x7d1431a7_ee96_40e8_a199_8703cd969ec3);
@@ -1046,6 +1021,11 @@ pub struct IControlChannelTrigger_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IControlChannelTrigger2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IControlChannelTrigger2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IControlChannelTrigger2 {
     type Vtable = IControlChannelTrigger2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xaf00d237_51be_4514_9725_3556e1879580);
@@ -1059,6 +1039,11 @@ pub struct IControlChannelTrigger2_Vtbl {
 #[doc = "*Required features: `\"Networking_Sockets\"`*"]
 #[repr(transparent)]
 pub struct IControlChannelTriggerEventDetails(::windows::core::IUnknown);
+impl ::core::clone::Clone for IControlChannelTriggerEventDetails {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IControlChannelTriggerEventDetails {
     #[doc = "*Required features: `\"Networking_Sockets\"`*"]
     pub fn ControlChannelTrigger(&self) -> ::windows::core::Result<ControlChannelTrigger> {
@@ -1109,11 +1094,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IControlChannelTriggerEventDetails {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IControlChannelTriggerEventDetails {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1127,7 +1107,6 @@ impl ::core::fmt::Debug for IControlChannelTriggerEventDetails {
 }
 unsafe impl ::windows::core::RuntimeType for IControlChannelTriggerEventDetails {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{1b36e047-89bb-4236-96ac-71d012bb4869}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1145,6 +1124,11 @@ pub struct IControlChannelTriggerEventDetails_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IControlChannelTriggerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IControlChannelTriggerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IControlChannelTriggerFactory {
     type Vtable = IControlChannelTriggerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xda4b7cf0_8d71_446f_88c3_b95184a2d6cd);
@@ -1159,6 +1143,11 @@ pub struct IControlChannelTriggerFactory_Vtbl {
 #[doc = "*Required features: `\"Networking_Sockets\"`*"]
 #[repr(transparent)]
 pub struct IControlChannelTriggerResetEventDetails(::windows::core::IUnknown);
+impl ::core::clone::Clone for IControlChannelTriggerResetEventDetails {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IControlChannelTriggerResetEventDetails {
     #[doc = "*Required features: `\"Networking_Sockets\"`*"]
     pub fn ResetReason(&self) -> ::windows::core::Result<ControlChannelTriggerResetReason> {
@@ -1225,11 +1214,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IControlChannelTriggerResetEventDetails {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IControlChannelTriggerResetEventDetails {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1243,7 +1227,6 @@ impl ::core::fmt::Debug for IControlChannelTriggerResetEventDetails {
 }
 unsafe impl ::windows::core::RuntimeType for IControlChannelTriggerResetEventDetails {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{6851038e-8ec4-42fe-9bb2-21e91b7bfcb1}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1263,6 +1246,11 @@ pub struct IControlChannelTriggerResetEventDetails_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDatagramSocket(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDatagramSocket {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDatagramSocket {
     type Vtable = IDatagramSocket_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x7fe25bbb_c3bc_4677_8446_ca28a465a3af);
@@ -1314,6 +1302,11 @@ pub struct IDatagramSocket_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDatagramSocket2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDatagramSocket2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDatagramSocket2 {
     type Vtable = IDatagramSocket2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd83ba354_9a9d_4185_a20a_1424c9c2a7cd);
@@ -1330,6 +1323,11 @@ pub struct IDatagramSocket2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDatagramSocket3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDatagramSocket3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDatagramSocket3 {
     type Vtable = IDatagramSocket3_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x37544f09_ab92_4306_9ac1_0c381283d9c6);
@@ -1354,6 +1352,11 @@ pub struct IDatagramSocket3_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDatagramSocketControl(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDatagramSocketControl {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDatagramSocketControl {
     type Vtable = IDatagramSocketControl_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x52ac3f2e_349a_4135_bb58_b79b2647d390);
@@ -1370,6 +1373,11 @@ pub struct IDatagramSocketControl_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDatagramSocketControl2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDatagramSocketControl2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDatagramSocketControl2 {
     type Vtable = IDatagramSocketControl2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x33ead5c2_979c_4415_82a1_3cfaf646c192);
@@ -1386,6 +1394,11 @@ pub struct IDatagramSocketControl2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDatagramSocketControl3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDatagramSocketControl3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDatagramSocketControl3 {
     type Vtable = IDatagramSocketControl3_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd4eb8256_1f6d_4598_9b57_d42a001df349);
@@ -1400,6 +1413,11 @@ pub struct IDatagramSocketControl3_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDatagramSocketInformation(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDatagramSocketInformation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDatagramSocketInformation {
     type Vtable = IDatagramSocketInformation_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x5f1a569a_55fb_48cd_9706_7a974f7b1585);
@@ -1416,6 +1434,11 @@ pub struct IDatagramSocketInformation_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDatagramSocketMessageReceivedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDatagramSocketMessageReceivedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDatagramSocketMessageReceivedEventArgs {
     type Vtable = IDatagramSocketMessageReceivedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9e2ddca2_1712_4ce4_b179_8c652c6d107e);
@@ -1439,6 +1462,11 @@ pub struct IDatagramSocketMessageReceivedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDatagramSocketStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDatagramSocketStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDatagramSocketStatics {
     type Vtable = IDatagramSocketStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe9c62aee_1494_4a21_bb7e_8589fc751d9d);
@@ -1459,6 +1487,11 @@ pub struct IDatagramSocketStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMessageWebSocket(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMessageWebSocket {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMessageWebSocket {
     type Vtable = IMessageWebSocket_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x33727d08_34d5_4746_ad7b_8dde5bc2ef88);
@@ -1481,6 +1514,11 @@ pub struct IMessageWebSocket_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMessageWebSocket2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMessageWebSocket2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMessageWebSocket2 {
     type Vtable = IMessageWebSocket2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xbed0cee7_f9c8_440a_9ad5_737281d9742e);
@@ -1501,6 +1539,11 @@ pub struct IMessageWebSocket2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMessageWebSocket3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMessageWebSocket3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMessageWebSocket3 {
     type Vtable = IMessageWebSocket3_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x59d9defb_71af_4349_8487_911fcf681597);
@@ -1521,6 +1564,11 @@ pub struct IMessageWebSocket3_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMessageWebSocketControl(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMessageWebSocketControl {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMessageWebSocketControl {
     type Vtable = IMessageWebSocketControl_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x8118388a_c629_4f0a_80fb_81fc05538862);
@@ -1537,6 +1585,11 @@ pub struct IMessageWebSocketControl_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMessageWebSocketControl2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMessageWebSocketControl2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMessageWebSocketControl2 {
     type Vtable = IMessageWebSocketControl2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe30fd791_080c_400a_a712_27dfa9e744d8);
@@ -1571,6 +1624,11 @@ pub struct IMessageWebSocketControl2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMessageWebSocketMessageReceivedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMessageWebSocketMessageReceivedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMessageWebSocketMessageReceivedEventArgs {
     type Vtable = IMessageWebSocketMessageReceivedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x478c22ac_4c4b_42ed_9ed7_1ef9f94fa3d5);
@@ -1592,6 +1650,11 @@ pub struct IMessageWebSocketMessageReceivedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMessageWebSocketMessageReceivedEventArgs2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMessageWebSocketMessageReceivedEventArgs2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMessageWebSocketMessageReceivedEventArgs2 {
     type Vtable = IMessageWebSocketMessageReceivedEventArgs2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x89ce06fd_dd6f_4a07_87f9_f9eb4d89d83d);
@@ -1605,6 +1668,11 @@ pub struct IMessageWebSocketMessageReceivedEventArgs2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IServerMessageWebSocket(::windows::core::IUnknown);
+impl ::core::clone::Clone for IServerMessageWebSocket {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IServerMessageWebSocket {
     type Vtable = IServerMessageWebSocket_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe3ac9240_813b_5efd_7e11_ae2305fc77f1);
@@ -1640,6 +1708,11 @@ pub struct IServerMessageWebSocket_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IServerMessageWebSocketControl(::windows::core::IUnknown);
+impl ::core::clone::Clone for IServerMessageWebSocketControl {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IServerMessageWebSocketControl {
     type Vtable = IServerMessageWebSocketControl_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x69c2f051_1c1f_587a_4519_2181610192b7);
@@ -1654,6 +1727,11 @@ pub struct IServerMessageWebSocketControl_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IServerMessageWebSocketInformation(::windows::core::IUnknown);
+impl ::core::clone::Clone for IServerMessageWebSocketInformation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IServerMessageWebSocketInformation {
     type Vtable = IServerMessageWebSocketInformation_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xfc32b45f_4448_5505_6cc9_09afa8915f5d);
@@ -1669,6 +1747,11 @@ pub struct IServerMessageWebSocketInformation_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IServerStreamWebSocket(::windows::core::IUnknown);
+impl ::core::clone::Clone for IServerStreamWebSocket {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IServerStreamWebSocket {
     type Vtable = IServerStreamWebSocket_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x2ced5bbf_74f6_55e4_79df_9132680dfee8);
@@ -1699,6 +1782,11 @@ pub struct IServerStreamWebSocket_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IServerStreamWebSocketInformation(::windows::core::IUnknown);
+impl ::core::clone::Clone for IServerStreamWebSocketInformation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IServerStreamWebSocketInformation {
     type Vtable = IServerStreamWebSocketInformation_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xfc32b45f_4448_5505_6cc9_09aba8915f5d);
@@ -1714,6 +1802,11 @@ pub struct IServerStreamWebSocketInformation_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISocketActivityContext(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISocketActivityContext {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISocketActivityContext {
     type Vtable = ISocketActivityContext_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x43b04d64_4c85_4396_a637_1d973f6ebd49);
@@ -1730,6 +1823,11 @@ pub struct ISocketActivityContext_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISocketActivityContextFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISocketActivityContextFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISocketActivityContextFactory {
     type Vtable = ISocketActivityContextFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb99fc3c3_088c_4388_83ae_2525138e049a);
@@ -1746,6 +1844,11 @@ pub struct ISocketActivityContextFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISocketActivityInformation(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISocketActivityInformation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISocketActivityInformation {
     type Vtable = ISocketActivityInformation_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x8d8a42e4_a87e_4b74_9968_185b2511defe);
@@ -1765,6 +1868,11 @@ pub struct ISocketActivityInformation_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISocketActivityInformationStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISocketActivityInformationStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISocketActivityInformationStatics {
     type Vtable = ISocketActivityInformationStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x8570b47a_7e7d_4736_8041_1327a6543c56);
@@ -1781,6 +1889,11 @@ pub struct ISocketActivityInformationStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISocketActivityTriggerDetails(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISocketActivityTriggerDetails {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISocketActivityTriggerDetails {
     type Vtable = ISocketActivityTriggerDetails_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x45f406a7_fc9f_4f81_acad_355fef51e67b);
@@ -1795,6 +1908,11 @@ pub struct ISocketActivityTriggerDetails_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISocketErrorStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISocketErrorStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISocketErrorStatics {
     type Vtable = ISocketErrorStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x828337f4_7d56_4d8e_b7b4_a07dd7c1bca9);
@@ -1808,6 +1926,11 @@ pub struct ISocketErrorStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IStreamSocket(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStreamSocket {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IStreamSocket {
     type Vtable = IStreamSocket_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x69a22cf3_fc7b_4857_af38_f6e7de6a5b49);
@@ -1850,6 +1973,11 @@ pub struct IStreamSocket_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IStreamSocket2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStreamSocket2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IStreamSocket2 {
     type Vtable = IStreamSocket2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x29d0e575_f314_4d09_adf0_0fbd967fbd9f);
@@ -1866,6 +1994,11 @@ pub struct IStreamSocket2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IStreamSocket3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStreamSocket3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IStreamSocket3 {
     type Vtable = IStreamSocket3_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x3f430b00_9d28_4854_bac3_2301941ec223);
@@ -1890,6 +2023,11 @@ pub struct IStreamSocket3_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IStreamSocketControl(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStreamSocketControl {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IStreamSocketControl {
     type Vtable = IStreamSocketControl_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xfe25adf1_92ab_4af3_9992_0f4c85e36cc4);
@@ -1912,6 +2050,11 @@ pub struct IStreamSocketControl_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IStreamSocketControl2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStreamSocketControl2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IStreamSocketControl2 {
     type Vtable = IStreamSocketControl2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc2d09a56_060f_44c1_b8e2_1fbf60bd62c5);
@@ -1928,6 +2071,11 @@ pub struct IStreamSocketControl2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IStreamSocketControl3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStreamSocketControl3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IStreamSocketControl3 {
     type Vtable = IStreamSocketControl3_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc56a444c_4e74_403e_894c_b31cae5c7342);
@@ -1950,6 +2098,11 @@ pub struct IStreamSocketControl3_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IStreamSocketControl4(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStreamSocketControl4 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IStreamSocketControl4 {
     type Vtable = IStreamSocketControl4_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x964e2b3d_ec27_4888_b3ce_c74b418423ad);
@@ -1964,6 +2117,11 @@ pub struct IStreamSocketControl4_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IStreamSocketInformation(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStreamSocketInformation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IStreamSocketInformation {
     type Vtable = IStreamSocketInformation_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x3b80ae30_5e68_4205_88f0_dc85d2e25ded);
@@ -1989,6 +2147,11 @@ pub struct IStreamSocketInformation_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IStreamSocketInformation2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStreamSocketInformation2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IStreamSocketInformation2 {
     type Vtable = IStreamSocketInformation2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x12c28452_4bdc_4ee4_976a_cf130e9d92e3);
@@ -2014,6 +2177,11 @@ pub struct IStreamSocketInformation2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IStreamSocketListener(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStreamSocketListener {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IStreamSocketListener {
     type Vtable = IStreamSocketListener_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xff513437_df9f_4df0_bf82_0ec5d7b35aae);
@@ -2044,6 +2212,11 @@ pub struct IStreamSocketListener_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IStreamSocketListener2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStreamSocketListener2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IStreamSocketListener2 {
     type Vtable = IStreamSocketListener2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x658dc13e_bb3e_4458_b232_ed1088694b98);
@@ -2064,6 +2237,11 @@ pub struct IStreamSocketListener2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IStreamSocketListener3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStreamSocketListener3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IStreamSocketListener3 {
     type Vtable = IStreamSocketListener3_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x4798201c_bdf8_4919_8542_28d450e74507);
@@ -2084,6 +2262,11 @@ pub struct IStreamSocketListener3_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IStreamSocketListenerConnectionReceivedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStreamSocketListenerConnectionReceivedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IStreamSocketListenerConnectionReceivedEventArgs {
     type Vtable = IStreamSocketListenerConnectionReceivedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x0c472ea9_373f_447b_85b1_ddd4548803ba);
@@ -2097,6 +2280,11 @@ pub struct IStreamSocketListenerConnectionReceivedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IStreamSocketListenerControl(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStreamSocketListenerControl {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IStreamSocketListenerControl {
     type Vtable = IStreamSocketListenerControl_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x20d8c576_8d8a_4dba_9722_a16c4d984980);
@@ -2111,6 +2299,11 @@ pub struct IStreamSocketListenerControl_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IStreamSocketListenerControl2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStreamSocketListenerControl2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IStreamSocketListenerControl2 {
     type Vtable = IStreamSocketListenerControl2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x948bb665_2c3e_404b_b8b0_8eb249a2b0a1);
@@ -2131,6 +2324,11 @@ pub struct IStreamSocketListenerControl2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IStreamSocketListenerInformation(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStreamSocketListenerInformation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IStreamSocketListenerInformation {
     type Vtable = IStreamSocketListenerInformation_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe62ba82f_a63a_430b_bf62_29e93e5633b4);
@@ -2144,6 +2342,11 @@ pub struct IStreamSocketListenerInformation_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IStreamSocketStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStreamSocketStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IStreamSocketStatics {
     type Vtable = IStreamSocketStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa420bc4a_6e2e_4af5_b556_355ae0cd4f29);
@@ -2164,6 +2367,11 @@ pub struct IStreamSocketStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IStreamWebSocket(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStreamWebSocket {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IStreamWebSocket {
     type Vtable = IStreamWebSocket_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xbd4a49d8_b289_45bb_97eb_c7525205a843);
@@ -2182,6 +2390,11 @@ pub struct IStreamWebSocket_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IStreamWebSocket2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStreamWebSocket2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IStreamWebSocket2 {
     type Vtable = IStreamWebSocket2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xaa4d08cb_93f5_4678_8236_57cce5417ed5);
@@ -2202,6 +2415,11 @@ pub struct IStreamWebSocket2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IStreamWebSocketControl(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStreamWebSocketControl {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IStreamWebSocketControl {
     type Vtable = IStreamWebSocketControl_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb4f478b1_a45a_48db_953a_645b7d964c07);
@@ -2216,6 +2434,11 @@ pub struct IStreamWebSocketControl_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IStreamWebSocketControl2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStreamWebSocketControl2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IStreamWebSocketControl2 {
     type Vtable = IStreamWebSocketControl2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x215d9f7e_fa58_40da_9f11_a48dafe95037);
@@ -2248,6 +2471,11 @@ pub struct IStreamWebSocketControl2_Vtbl {
 #[doc = "*Required features: `\"Networking_Sockets\"`*"]
 #[repr(transparent)]
 pub struct IWebSocket(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWebSocket {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWebSocket {
     #[doc = "*Required features: `\"Networking_Sockets\"`, `\"Storage_Streams\"`*"]
     #[cfg(feature = "Storage_Streams")]
@@ -2365,11 +2593,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::Foundation::IClosable> for
         ::core::convert::TryInto::<super::super::Foundation::IClosable>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IWebSocket {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWebSocket {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2383,7 +2606,6 @@ impl ::core::fmt::Debug for IWebSocket {
 }
 unsafe impl ::windows::core::RuntimeType for IWebSocket {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{f877396f-99b1-4e18-bc08-850c9adf156e}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2418,6 +2640,11 @@ pub struct IWebSocket_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWebSocketClosedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWebSocketClosedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWebSocketClosedEventArgs {
     type Vtable = IWebSocketClosedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xceb78d07_d0a8_4703_a091_c8c2c0915bc3);
@@ -2432,6 +2659,11 @@ pub struct IWebSocketClosedEventArgs_Vtbl {
 #[doc = "*Required features: `\"Networking_Sockets\"`*"]
 #[repr(transparent)]
 pub struct IWebSocketControl(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWebSocketControl {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWebSocketControl {
     #[doc = "*Required features: `\"Networking_Sockets\"`*"]
     pub fn OutboundBufferSizeInBytes(&self) -> ::windows::core::Result<u32> {
@@ -2526,11 +2758,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWebSocketControl {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWebSocketControl {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2544,7 +2771,6 @@ impl ::core::fmt::Debug for IWebSocketControl {
 }
 unsafe impl ::windows::core::RuntimeType for IWebSocketControl {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{2ec4bdc3-d9a5-455a-9811-de24d45337e9}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2583,6 +2809,11 @@ pub struct IWebSocketControl_Vtbl {
 #[doc = "*Required features: `\"Networking_Sockets\"`*"]
 #[repr(transparent)]
 pub struct IWebSocketControl2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWebSocketControl2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWebSocketControl2 {
     #[doc = "*Required features: `\"Networking_Sockets\"`, `\"Foundation_Collections\"`, `\"Security_Cryptography_Certificates\"`*"]
     #[cfg(all(feature = "Foundation_Collections", feature = "Security_Cryptography_Certificates"))]
@@ -2708,11 +2939,6 @@ impl<'a> ::windows::core::IntoParam<'a, IWebSocketControl> for &IWebSocketContro
         ::core::convert::TryInto::<IWebSocketControl>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IWebSocketControl2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWebSocketControl2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2726,7 +2952,6 @@ impl ::core::fmt::Debug for IWebSocketControl2 {
 }
 unsafe impl ::windows::core::RuntimeType for IWebSocketControl2 {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{79c3be03-f2ca-461e-af4e-9665bc2d0620}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2747,6 +2972,11 @@ pub struct IWebSocketControl2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWebSocketErrorStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWebSocketErrorStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWebSocketErrorStatics {
     type Vtable = IWebSocketErrorStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x27cdf35b_1f61_4709_8e02_61283ada4e9d);
@@ -2763,6 +2993,11 @@ pub struct IWebSocketErrorStatics_Vtbl {
 #[doc = "*Required features: `\"Networking_Sockets\"`*"]
 #[repr(transparent)]
 pub struct IWebSocketInformation(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWebSocketInformation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWebSocketInformation {
     #[doc = "*Required features: `\"Networking_Sockets\"`*"]
     pub fn LocalAddress(&self) -> ::windows::core::Result<super::HostName> {
@@ -2829,11 +3064,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWebSocketInformation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWebSocketInformation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2847,7 +3077,6 @@ impl ::core::fmt::Debug for IWebSocketInformation {
 }
 unsafe impl ::windows::core::RuntimeType for IWebSocketInformation {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{5e01e316-c92a-47a5-b25f-07847639d181}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2867,6 +3096,11 @@ pub struct IWebSocketInformation_Vtbl {
 #[doc = "*Required features: `\"Networking_Sockets\"`*"]
 #[repr(transparent)]
 pub struct IWebSocketInformation2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWebSocketInformation2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWebSocketInformation2 {
     #[doc = "*Required features: `\"Networking_Sockets\"`, `\"Security_Cryptography_Certificates\"`*"]
     #[cfg(feature = "Security_Cryptography_Certificates")]
@@ -2990,11 +3224,6 @@ impl<'a> ::windows::core::IntoParam<'a, IWebSocketInformation> for &IWebSocketIn
         ::core::convert::TryInto::<IWebSocketInformation>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IWebSocketInformation2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWebSocketInformation2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3008,7 +3237,6 @@ impl ::core::fmt::Debug for IWebSocketInformation2 {
 }
 unsafe impl ::windows::core::RuntimeType for IWebSocketInformation2 {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{ce1d39ce-a1b7-4d43-8269-8d5b981bd47a}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3038,6 +3266,11 @@ pub struct IWebSocketInformation2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWebSocketServerCustomValidationRequestedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWebSocketServerCustomValidationRequestedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWebSocketServerCustomValidationRequestedEventArgs {
     type Vtable = IWebSocketServerCustomValidationRequestedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xffeffe48_022a_4ab7_8b36_e10af4640e6b);
@@ -3190,11 +3423,6 @@ impl MessageWebSocket {
         unsafe { (::windows::core::Interface::vtable(this).CloseWithStatus)(::core::mem::transmute_copy(this), code, reason.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for MessageWebSocket {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MessageWebSocket {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3208,7 +3436,6 @@ impl ::core::fmt::Debug for MessageWebSocket {
 }
 unsafe impl ::windows::core::RuntimeType for MessageWebSocket {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.Sockets.MessageWebSocket;{33727d08-34d5-4746-ad7b-8dde5bc2ef88})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3454,11 +3681,6 @@ impl MessageWebSocketControl {
         }
     }
 }
-impl ::core::clone::Clone for MessageWebSocketControl {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MessageWebSocketControl {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3472,7 +3694,6 @@ impl ::core::fmt::Debug for MessageWebSocketControl {
 }
 unsafe impl ::windows::core::RuntimeType for MessageWebSocketControl {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.Sockets.MessageWebSocketControl;{8118388a-c629-4f0a-80fb-81fc05538862})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3634,11 +3855,6 @@ impl MessageWebSocketInformation {
         }
     }
 }
-impl ::core::clone::Clone for MessageWebSocketInformation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MessageWebSocketInformation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3652,7 +3868,6 @@ impl ::core::fmt::Debug for MessageWebSocketInformation {
 }
 unsafe impl ::windows::core::RuntimeType for MessageWebSocketInformation {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.Sockets.MessageWebSocketInformation;{5e01e316-c92a-47a5-b25f-07847639d181})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3789,11 +4004,6 @@ impl MessageWebSocketMessageReceivedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for MessageWebSocketMessageReceivedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MessageWebSocketMessageReceivedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3807,7 +4017,6 @@ impl ::core::fmt::Debug for MessageWebSocketMessageReceivedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for MessageWebSocketMessageReceivedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.Sockets.MessageWebSocketMessageReceivedEventArgs;{478c22ac-4c4b-42ed-9ed7-1ef9f94fa3d5})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3882,6 +4091,7 @@ impl ::core::default::Default for MessageWebSocketReceiveMode {
 }
 unsafe impl ::windows::core::Abi for MessageWebSocketReceiveMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MessageWebSocketReceiveMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3890,7 +4100,6 @@ impl ::core::fmt::Debug for MessageWebSocketReceiveMode {
 }
 unsafe impl ::windows::core::RuntimeType for MessageWebSocketReceiveMode {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Networking.Sockets.MessageWebSocketReceiveMode;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -3916,10 +4125,10 @@ impl ::core::fmt::Debug for RoundTripTimeStatistics {
 }
 unsafe impl ::windows::core::Abi for RoundTripTimeStatistics {
     type Abi = Self;
+    type DefaultType = Self;
 }
 unsafe impl ::windows::core::RuntimeType for RoundTripTimeStatistics {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"struct(Windows.Networking.Sockets.RoundTripTimeStatistics;u4;u4;u4;u4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -4006,11 +4215,6 @@ impl ServerMessageWebSocket {
         unsafe { (::windows::core::Interface::vtable(this).CloseWithStatus)(::core::mem::transmute_copy(this), code, reason.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for ServerMessageWebSocket {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ServerMessageWebSocket {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4024,7 +4228,6 @@ impl ::core::fmt::Debug for ServerMessageWebSocket {
 }
 unsafe impl ::windows::core::RuntimeType for ServerMessageWebSocket {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.Sockets.ServerMessageWebSocket;{e3ac9240-813b-5efd-7e11-ae2305fc77f1})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4122,11 +4325,6 @@ impl ServerMessageWebSocketControl {
         unsafe { (::windows::core::Interface::vtable(this).SetMessageType)(::core::mem::transmute_copy(this), value).ok() }
     }
 }
-impl ::core::clone::Clone for ServerMessageWebSocketControl {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ServerMessageWebSocketControl {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4140,7 +4338,6 @@ impl ::core::fmt::Debug for ServerMessageWebSocketControl {
 }
 unsafe impl ::windows::core::RuntimeType for ServerMessageWebSocketControl {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.Sockets.ServerMessageWebSocketControl;{69c2f051-1c1f-587a-4519-2181610192b7})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4223,11 +4420,6 @@ impl ServerMessageWebSocketInformation {
         }
     }
 }
-impl ::core::clone::Clone for ServerMessageWebSocketInformation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ServerMessageWebSocketInformation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4241,7 +4433,6 @@ impl ::core::fmt::Debug for ServerMessageWebSocketInformation {
 }
 unsafe impl ::windows::core::RuntimeType for ServerMessageWebSocketInformation {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.Sockets.ServerMessageWebSocketInformation;{fc32b45f-4448-5505-6cc9-09afa8915f5d})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4352,11 +4543,6 @@ impl ServerStreamWebSocket {
         unsafe { (::windows::core::Interface::vtable(this).CloseWithStatus)(::core::mem::transmute_copy(this), code, reason.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for ServerStreamWebSocket {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ServerStreamWebSocket {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4370,7 +4556,6 @@ impl ::core::fmt::Debug for ServerStreamWebSocket {
 }
 unsafe impl ::windows::core::RuntimeType for ServerStreamWebSocket {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.Sockets.ServerStreamWebSocket;{2ced5bbf-74f6-55e4-79df-9132680dfee8})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4479,11 +4664,6 @@ impl ServerStreamWebSocketInformation {
         }
     }
 }
-impl ::core::clone::Clone for ServerStreamWebSocketInformation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ServerStreamWebSocketInformation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4497,7 +4677,6 @@ impl ::core::fmt::Debug for ServerStreamWebSocketInformation {
 }
 unsafe impl ::windows::core::RuntimeType for ServerStreamWebSocketInformation {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.Sockets.ServerStreamWebSocketInformation;{fc32b45f-4448-5505-6cc9-09aba8915f5d})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4572,6 +4751,7 @@ impl ::core::default::Default for SocketActivityConnectedStandbyAction {
 }
 unsafe impl ::windows::core::Abi for SocketActivityConnectedStandbyAction {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SocketActivityConnectedStandbyAction {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4580,7 +4760,6 @@ impl ::core::fmt::Debug for SocketActivityConnectedStandbyAction {
 }
 unsafe impl ::windows::core::RuntimeType for SocketActivityConnectedStandbyAction {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Networking.Sockets.SocketActivityConnectedStandbyAction;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -4612,11 +4791,6 @@ impl SocketActivityContext {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for SocketActivityContext {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SocketActivityContext {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4630,7 +4804,6 @@ impl ::core::fmt::Debug for SocketActivityContext {
 }
 unsafe impl ::windows::core::RuntimeType for SocketActivityContext {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.Sockets.SocketActivityContext;{43b04d64-4c85-4396-a637-1d973f6ebd49})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4758,11 +4931,6 @@ impl SocketActivityInformation {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for SocketActivityInformation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SocketActivityInformation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4776,7 +4944,6 @@ impl ::core::fmt::Debug for SocketActivityInformation {
 }
 unsafe impl ::windows::core::RuntimeType for SocketActivityInformation {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.Sockets.SocketActivityInformation;{8d8a42e4-a87e-4b74-9968-185b2511defe})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4853,6 +5020,7 @@ impl ::core::default::Default for SocketActivityKind {
 }
 unsafe impl ::windows::core::Abi for SocketActivityKind {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SocketActivityKind {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4861,7 +5029,6 @@ impl ::core::fmt::Debug for SocketActivityKind {
 }
 unsafe impl ::windows::core::RuntimeType for SocketActivityKind {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Networking.Sockets.SocketActivityKind;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -4887,11 +5054,6 @@ impl SocketActivityTriggerDetails {
         }
     }
 }
-impl ::core::clone::Clone for SocketActivityTriggerDetails {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SocketActivityTriggerDetails {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4905,7 +5067,6 @@ impl ::core::fmt::Debug for SocketActivityTriggerDetails {
 }
 unsafe impl ::windows::core::RuntimeType for SocketActivityTriggerDetails {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.Sockets.SocketActivityTriggerDetails;{45f406a7-fc9f-4f81-acad-355fef51e67b})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4983,6 +5144,7 @@ impl ::core::default::Default for SocketActivityTriggerReason {
 }
 unsafe impl ::windows::core::Abi for SocketActivityTriggerReason {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SocketActivityTriggerReason {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4991,7 +5153,6 @@ impl ::core::fmt::Debug for SocketActivityTriggerReason {
 }
 unsafe impl ::windows::core::RuntimeType for SocketActivityTriggerReason {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Networking.Sockets.SocketActivityTriggerReason;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -5065,6 +5226,7 @@ impl ::core::default::Default for SocketErrorStatus {
 }
 unsafe impl ::windows::core::Abi for SocketErrorStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SocketErrorStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5073,7 +5235,6 @@ impl ::core::fmt::Debug for SocketErrorStatus {
 }
 unsafe impl ::windows::core::RuntimeType for SocketErrorStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Networking.Sockets.SocketErrorStatus;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -5099,6 +5260,7 @@ impl ::core::default::Default for SocketMessageType {
 }
 unsafe impl ::windows::core::Abi for SocketMessageType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SocketMessageType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5107,7 +5269,6 @@ impl ::core::fmt::Debug for SocketMessageType {
 }
 unsafe impl ::windows::core::RuntimeType for SocketMessageType {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Networking.Sockets.SocketMessageType;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -5141,6 +5302,7 @@ impl ::core::default::Default for SocketProtectionLevel {
 }
 unsafe impl ::windows::core::Abi for SocketProtectionLevel {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SocketProtectionLevel {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5149,7 +5311,6 @@ impl ::core::fmt::Debug for SocketProtectionLevel {
 }
 unsafe impl ::windows::core::RuntimeType for SocketProtectionLevel {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Networking.Sockets.SocketProtectionLevel;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -5175,6 +5336,7 @@ impl ::core::default::Default for SocketQualityOfService {
 }
 unsafe impl ::windows::core::Abi for SocketQualityOfService {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SocketQualityOfService {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5183,7 +5345,6 @@ impl ::core::fmt::Debug for SocketQualityOfService {
 }
 unsafe impl ::windows::core::RuntimeType for SocketQualityOfService {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Networking.Sockets.SocketQualityOfService;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -5210,6 +5371,7 @@ impl ::core::default::Default for SocketSslErrorSeverity {
 }
 unsafe impl ::windows::core::Abi for SocketSslErrorSeverity {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SocketSslErrorSeverity {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5218,7 +5380,6 @@ impl ::core::fmt::Debug for SocketSslErrorSeverity {
 }
 unsafe impl ::windows::core::RuntimeType for SocketSslErrorSeverity {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Networking.Sockets.SocketSslErrorSeverity;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -5385,11 +5546,6 @@ impl StreamSocket {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for StreamSocket {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for StreamSocket {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5403,7 +5559,6 @@ impl ::core::fmt::Debug for StreamSocket {
 }
 unsafe impl ::windows::core::RuntimeType for StreamSocket {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.Sockets.StreamSocket;{69a22cf3-fc7b-4857-af38-f6e7de6a5b49})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -5603,11 +5758,6 @@ impl StreamSocketControl {
         unsafe { (::windows::core::Interface::vtable(this).SetMinProtectionLevel)(::core::mem::transmute_copy(this), value).ok() }
     }
 }
-impl ::core::clone::Clone for StreamSocketControl {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for StreamSocketControl {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5621,7 +5771,6 @@ impl ::core::fmt::Debug for StreamSocketControl {
 }
 unsafe impl ::windows::core::RuntimeType for StreamSocketControl {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.Sockets.StreamSocketControl;{fe25adf1-92ab-4af3-9992-0f4c85e36cc4})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -5796,11 +5945,6 @@ impl StreamSocketInformation {
         }
     }
 }
-impl ::core::clone::Clone for StreamSocketInformation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for StreamSocketInformation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5814,7 +5958,6 @@ impl ::core::fmt::Debug for StreamSocketInformation {
 }
 unsafe impl ::windows::core::RuntimeType for StreamSocketInformation {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.Sockets.StreamSocketInformation;{3b80ae30-5e68-4205-88f0-dc85d2e25ded})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -5982,11 +6125,6 @@ impl StreamSocketListener {
         unsafe { (::windows::core::Interface::vtable(this).TransferOwnershipWithContext)(::core::mem::transmute_copy(this), socketid.into_param().abi(), data.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for StreamSocketListener {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for StreamSocketListener {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6000,7 +6138,6 @@ impl ::core::fmt::Debug for StreamSocketListener {
 }
 unsafe impl ::windows::core::RuntimeType for StreamSocketListener {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.Sockets.StreamSocketListener;{ff513437-df9f-4df0-bf82-0ec5d7b35aae})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -6093,11 +6230,6 @@ impl StreamSocketListenerConnectionReceivedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for StreamSocketListenerConnectionReceivedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for StreamSocketListenerConnectionReceivedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6111,7 +6243,6 @@ impl ::core::fmt::Debug for StreamSocketListenerConnectionReceivedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for StreamSocketListenerConnectionReceivedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.Sockets.StreamSocketListenerConnectionReceivedEventArgs;{0c472ea9-373f-447b-85b1-ddd4548803ba})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -6235,11 +6366,6 @@ impl StreamSocketListenerControl {
         unsafe { (::windows::core::Interface::vtable(this).SetOutboundUnicastHopLimit)(::core::mem::transmute_copy(this), value).ok() }
     }
 }
-impl ::core::clone::Clone for StreamSocketListenerControl {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for StreamSocketListenerControl {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6253,7 +6379,6 @@ impl ::core::fmt::Debug for StreamSocketListenerControl {
 }
 unsafe impl ::windows::core::RuntimeType for StreamSocketListenerControl {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.Sockets.StreamSocketListenerControl;{20d8c576-8d8a-4dba-9722-a16c4d984980})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -6320,11 +6445,6 @@ impl StreamSocketListenerInformation {
         }
     }
 }
-impl ::core::clone::Clone for StreamSocketListenerInformation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for StreamSocketListenerInformation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6338,7 +6458,6 @@ impl ::core::fmt::Debug for StreamSocketListenerInformation {
 }
 unsafe impl ::windows::core::RuntimeType for StreamSocketListenerInformation {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.Sockets.StreamSocketListenerInformation;{e62ba82f-a63a-430b-bf62-29e93e5633b4})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -6493,11 +6612,6 @@ impl StreamWebSocket {
         unsafe { (::windows::core::Interface::vtable(this).CloseWithStatus)(::core::mem::transmute_copy(this), code, reason.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for StreamWebSocket {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for StreamWebSocket {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6511,7 +6625,6 @@ impl ::core::fmt::Debug for StreamWebSocket {
 }
 unsafe impl ::windows::core::RuntimeType for StreamWebSocket {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.Sockets.StreamWebSocket;{bd4a49d8-b289-45bb-97eb-c7525205a843})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -6731,11 +6844,6 @@ impl StreamWebSocketControl {
         }
     }
 }
-impl ::core::clone::Clone for StreamWebSocketControl {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for StreamWebSocketControl {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6749,7 +6857,6 @@ impl ::core::fmt::Debug for StreamWebSocketControl {
 }
 unsafe impl ::windows::core::RuntimeType for StreamWebSocketControl {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.Sockets.StreamWebSocketControl;{b4f478b1-a45a-48db-953a-645b7d964c07})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -6911,11 +7018,6 @@ impl StreamWebSocketInformation {
         }
     }
 }
-impl ::core::clone::Clone for StreamWebSocketInformation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for StreamWebSocketInformation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6929,7 +7031,6 @@ impl ::core::fmt::Debug for StreamWebSocketInformation {
 }
 unsafe impl ::windows::core::RuntimeType for StreamWebSocketInformation {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.Sockets.StreamWebSocketInformation;{5e01e316-c92a-47a5-b25f-07847639d181})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -7048,11 +7149,6 @@ impl WebSocketClosedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for WebSocketClosedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for WebSocketClosedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7066,7 +7162,6 @@ impl ::core::fmt::Debug for WebSocketClosedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for WebSocketClosedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.Sockets.WebSocketClosedEventArgs;{ceb78d07-d0a8-4703-a091-c8c2c0915bc3})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -7161,12 +7256,6 @@ impl WebSocketKeepAlive {
     }
 }
 #[cfg(feature = "ApplicationModel_Background")]
-impl ::core::clone::Clone for WebSocketKeepAlive {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "ApplicationModel_Background")]
 impl ::core::cmp::PartialEq for WebSocketKeepAlive {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7183,7 +7272,6 @@ impl ::core::fmt::Debug for WebSocketKeepAlive {
 #[cfg(feature = "ApplicationModel_Background")]
 unsafe impl ::windows::core::RuntimeType for WebSocketKeepAlive {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.Sockets.WebSocketKeepAlive;{7d13d534-fd12-43ce-8c22-ea1ff13c06df})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -7329,11 +7417,6 @@ impl WebSocketServerCustomValidationRequestedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for WebSocketServerCustomValidationRequestedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for WebSocketServerCustomValidationRequestedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7347,7 +7430,6 @@ impl ::core::fmt::Debug for WebSocketServerCustomValidationRequestedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for WebSocketServerCustomValidationRequestedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.Sockets.WebSocketServerCustomValidationRequestedEventArgs;{ffeffe48-022a-4ab7-8b36-e10af4640e6b})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

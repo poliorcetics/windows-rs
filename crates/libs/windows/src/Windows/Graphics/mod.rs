@@ -34,10 +34,10 @@ impl ::core::fmt::Debug for DisplayAdapterId {
 }
 unsafe impl ::windows::core::Abi for DisplayAdapterId {
     type Abi = Self;
+    type DefaultType = Self;
 }
 unsafe impl ::windows::core::RuntimeType for DisplayAdapterId {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"struct(Windows.Graphics.DisplayAdapterId;u4;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -71,10 +71,10 @@ impl ::core::fmt::Debug for DisplayId {
 }
 unsafe impl ::windows::core::Abi for DisplayId {
     type Abi = Self;
+    type DefaultType = Self;
 }
 unsafe impl ::windows::core::RuntimeType for DisplayId {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"struct(Windows.Graphics.DisplayId;u8)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -93,6 +93,11 @@ impl ::core::default::Default for DisplayId {
 #[doc = "*Required features: `\"Graphics\"`*"]
 #[repr(transparent)]
 pub struct IGeometrySource2D(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGeometrySource2D {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IGeometrySource2D {}
 impl ::core::convert::From<IGeometrySource2D> for ::windows::core::IUnknown {
     fn from(value: IGeometrySource2D) -> Self {
@@ -134,11 +139,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IGeometrySource2D {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IGeometrySource2D {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -152,7 +152,6 @@ impl ::core::fmt::Debug for IGeometrySource2D {
 }
 unsafe impl ::windows::core::RuntimeType for IGeometrySource2D {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{caff7902-670c-4181-a624-da977203b845}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -185,10 +184,10 @@ impl ::core::fmt::Debug for PointInt32 {
 }
 unsafe impl ::windows::core::Abi for PointInt32 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 unsafe impl ::windows::core::RuntimeType for PointInt32 {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"struct(Windows.Graphics.PointInt32;i4;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -225,10 +224,10 @@ impl ::core::fmt::Debug for RectInt32 {
 }
 unsafe impl ::windows::core::Abi for RectInt32 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 unsafe impl ::windows::core::RuntimeType for RectInt32 {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"struct(Windows.Graphics.RectInt32;i4;i4;i4;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -263,10 +262,10 @@ impl ::core::fmt::Debug for SizeInt32 {
 }
 unsafe impl ::windows::core::Abi for SizeInt32 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 unsafe impl ::windows::core::RuntimeType for SizeInt32 {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"struct(Windows.Graphics.SizeInt32;i4;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }

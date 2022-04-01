@@ -24,6 +24,7 @@ impl ::core::default::Default for ENTERPRISE_DATA_POLICIES {
 }
 unsafe impl ::windows::core::Abi for ENTERPRISE_DATA_POLICIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ENTERPRISE_DATA_POLICIES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -76,6 +77,7 @@ impl ::core::fmt::Debug for FILE_UNPROTECT_OPTIONS {
 }
 unsafe impl ::windows::core::Abi for FILE_UNPROTECT_OPTIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for FILE_UNPROTECT_OPTIONS {
     fn eq(&self, other: &Self) -> bool {
@@ -112,6 +114,7 @@ impl ::core::fmt::Debug for HTHREAD_NETWORK_CONTEXT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for HTHREAD_NETWORK_CONTEXT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for HTHREAD_NETWORK_CONTEXT {
@@ -130,6 +133,11 @@ impl ::core::default::Default for HTHREAD_NETWORK_CONTEXT {
 #[doc = "*Required features: `\"Win32_Security_EnterpriseData\"`*"]
 #[repr(transparent)]
 pub struct IProtectionPolicyManagerInterop(::windows::core::IUnknown);
+impl ::core::clone::Clone for IProtectionPolicyManagerInterop {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IProtectionPolicyManagerInterop {
     #[doc = "*Required features: `\"Win32_Security_EnterpriseData\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -184,11 +192,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IProtectionPolicyManagerInterop {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IProtectionPolicyManagerInterop {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -220,6 +223,11 @@ pub struct IProtectionPolicyManagerInterop_Vtbl {
 #[doc = "*Required features: `\"Win32_Security_EnterpriseData\"`*"]
 #[repr(transparent)]
 pub struct IProtectionPolicyManagerInterop2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IProtectionPolicyManagerInterop2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IProtectionPolicyManagerInterop2 {
     #[doc = "*Required features: `\"Win32_Security_EnterpriseData\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -292,11 +300,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IProtectionPolicyManagerInterop2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IProtectionPolicyManagerInterop2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -340,6 +343,11 @@ pub struct IProtectionPolicyManagerInterop2_Vtbl {
 #[doc = "*Required features: `\"Win32_Security_EnterpriseData\"`*"]
 #[repr(transparent)]
 pub struct IProtectionPolicyManagerInterop3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IProtectionPolicyManagerInterop3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IProtectionPolicyManagerInterop3 {
     #[doc = "*Required features: `\"Win32_Security_EnterpriseData\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -416,11 +424,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for IProt
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a IProtectionPolicyManagerInterop3 {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IInspectable> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IProtectionPolicyManagerInterop3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IProtectionPolicyManagerInterop3 {
@@ -504,6 +507,7 @@ impl ::core::default::Default for SRPHOSTING_TYPE {
 }
 unsafe impl ::windows::core::Abi for SRPHOSTING_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SRPHOSTING_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -529,6 +533,7 @@ impl ::core::default::Default for SRPHOSTING_VERSION {
 }
 unsafe impl ::windows::core::Abi for SRPHOSTING_VERSION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SRPHOSTING_VERSION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

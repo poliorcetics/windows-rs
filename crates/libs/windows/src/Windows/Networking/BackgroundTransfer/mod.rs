@@ -21,10 +21,10 @@ impl ::core::fmt::Debug for BackgroundDownloadProgress {
 }
 unsafe impl ::windows::core::Abi for BackgroundDownloadProgress {
     type Abi = Self;
+    type DefaultType = Self;
 }
 unsafe impl ::windows::core::RuntimeType for BackgroundDownloadProgress {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"struct(Windows.Networking.BackgroundTransfer.BackgroundDownloadProgress;u8;u8;enum(Windows.Networking.BackgroundTransfer.BackgroundTransferStatus;i4);b1;b1)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -296,11 +296,6 @@ impl BackgroundDownloader {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for BackgroundDownloader {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for BackgroundDownloader {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -314,7 +309,6 @@ impl ::core::fmt::Debug for BackgroundDownloader {
 }
 unsafe impl ::windows::core::RuntimeType for BackgroundDownloader {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.BackgroundTransfer.BackgroundDownloader;{c1c79333-6649-4b1d-a826-a4b3dd234d0b})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -411,6 +405,7 @@ impl ::core::default::Default for BackgroundTransferBehavior {
 }
 unsafe impl ::windows::core::Abi for BackgroundTransferBehavior {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for BackgroundTransferBehavior {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -419,7 +414,6 @@ impl ::core::fmt::Debug for BackgroundTransferBehavior {
 }
 unsafe impl ::windows::core::RuntimeType for BackgroundTransferBehavior {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Networking.BackgroundTransfer.BackgroundTransferBehavior;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -458,11 +452,6 @@ impl BackgroundTransferCompletionGroup {
         unsafe { (::windows::core::Interface::vtable(this).Enable)(::core::mem::transmute_copy(this)).ok() }
     }
 }
-impl ::core::clone::Clone for BackgroundTransferCompletionGroup {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for BackgroundTransferCompletionGroup {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -476,7 +465,6 @@ impl ::core::fmt::Debug for BackgroundTransferCompletionGroup {
 }
 unsafe impl ::windows::core::RuntimeType for BackgroundTransferCompletionGroup {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.BackgroundTransfer.BackgroundTransferCompletionGroup;{2d930225-986b-574d-7950-0add47f5d706})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -553,11 +541,6 @@ impl BackgroundTransferCompletionGroupTriggerDetails {
         }
     }
 }
-impl ::core::clone::Clone for BackgroundTransferCompletionGroupTriggerDetails {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for BackgroundTransferCompletionGroupTriggerDetails {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -571,7 +554,6 @@ impl ::core::fmt::Debug for BackgroundTransferCompletionGroupTriggerDetails {
 }
 unsafe impl ::windows::core::RuntimeType for BackgroundTransferCompletionGroupTriggerDetails {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.BackgroundTransfer.BackgroundTransferCompletionGroupTriggerDetails;{7b6be286-6e47-5136-7fcb-fa4389f46f5b})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -672,11 +654,6 @@ impl BackgroundTransferContentPart {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for BackgroundTransferContentPart {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for BackgroundTransferContentPart {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -690,7 +667,6 @@ impl ::core::fmt::Debug for BackgroundTransferContentPart {
 }
 unsafe impl ::windows::core::RuntimeType for BackgroundTransferContentPart {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.BackgroundTransfer.BackgroundTransferContentPart;{e8e15657-d7d1-4ed8-838e-674ac217ace6})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -766,6 +742,7 @@ impl ::core::default::Default for BackgroundTransferCostPolicy {
 }
 unsafe impl ::windows::core::Abi for BackgroundTransferCostPolicy {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for BackgroundTransferCostPolicy {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -774,7 +751,6 @@ impl ::core::fmt::Debug for BackgroundTransferCostPolicy {
 }
 unsafe impl ::windows::core::RuntimeType for BackgroundTransferCostPolicy {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Networking.BackgroundTransfer.BackgroundTransferCostPolicy;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -818,10 +794,10 @@ impl ::core::fmt::Debug for BackgroundTransferFileRange {
 }
 unsafe impl ::windows::core::Abi for BackgroundTransferFileRange {
     type Abi = Self;
+    type DefaultType = Self;
 }
 unsafe impl ::windows::core::RuntimeType for BackgroundTransferFileRange {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"struct(Windows.Networking.BackgroundTransfer.BackgroundTransferFileRange;u8;u8)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -875,11 +851,6 @@ impl BackgroundTransferGroup {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for BackgroundTransferGroup {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for BackgroundTransferGroup {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -893,7 +864,6 @@ impl ::core::fmt::Debug for BackgroundTransferGroup {
 }
 unsafe impl ::windows::core::RuntimeType for BackgroundTransferGroup {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.BackgroundTransfer.BackgroundTransferGroup;{d8c3e3e4-6459-4540-85eb-aaa1c8903677})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -969,6 +939,7 @@ impl ::core::default::Default for BackgroundTransferPriority {
 }
 unsafe impl ::windows::core::Abi for BackgroundTransferPriority {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for BackgroundTransferPriority {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -977,7 +948,6 @@ impl ::core::fmt::Debug for BackgroundTransferPriority {
 }
 unsafe impl ::windows::core::RuntimeType for BackgroundTransferPriority {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Networking.BackgroundTransfer.BackgroundTransferPriority;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1013,11 +983,6 @@ impl BackgroundTransferRangesDownloadedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for BackgroundTransferRangesDownloadedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for BackgroundTransferRangesDownloadedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1031,7 +996,6 @@ impl ::core::fmt::Debug for BackgroundTransferRangesDownloadedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for BackgroundTransferRangesDownloadedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.BackgroundTransfer.BackgroundTransferRangesDownloadedEventArgs;{3ebc7453-bf48-4a88-9248-b0c165184f5c})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1114,6 +1078,7 @@ impl ::core::default::Default for BackgroundTransferStatus {
 }
 unsafe impl ::windows::core::Abi for BackgroundTransferStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for BackgroundTransferStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1122,7 +1087,6 @@ impl ::core::fmt::Debug for BackgroundTransferStatus {
 }
 unsafe impl ::windows::core::RuntimeType for BackgroundTransferStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Networking.BackgroundTransfer.BackgroundTransferStatus;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1151,10 +1115,10 @@ impl ::core::fmt::Debug for BackgroundUploadProgress {
 }
 unsafe impl ::windows::core::Abi for BackgroundUploadProgress {
     type Abi = Self;
+    type DefaultType = Self;
 }
 unsafe impl ::windows::core::RuntimeType for BackgroundUploadProgress {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"struct(Windows.Networking.BackgroundTransfer.BackgroundUploadProgress;u8;u8;u8;u8;enum(Windows.Networking.BackgroundTransfer.BackgroundTransferStatus;i4);b1;b1)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1444,11 +1408,6 @@ impl BackgroundUploader {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for BackgroundUploader {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for BackgroundUploader {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1462,7 +1421,6 @@ impl ::core::fmt::Debug for BackgroundUploader {
 }
 unsafe impl ::windows::core::RuntimeType for BackgroundUploader {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.BackgroundTransfer.BackgroundUploader;{c595c9ae-cead-465b-8801-c55ac90a01ce})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1804,11 +1762,6 @@ impl DownloadOperation {
         unsafe { (::windows::core::Interface::vtable(this).RemoveRequestHeader)(::core::mem::transmute_copy(this), headername.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for DownloadOperation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DownloadOperation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1822,7 +1775,6 @@ impl ::core::fmt::Debug for DownloadOperation {
 }
 unsafe impl ::windows::core::RuntimeType for DownloadOperation {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.BackgroundTransfer.DownloadOperation;{bd87ebb0-5714-4e09-ba68-bef73903b0d7})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1923,6 +1875,11 @@ unsafe impl ::core::marker::Sync for DownloadOperation {}
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBackgroundDownloader(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBackgroundDownloader {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBackgroundDownloader {
     type Vtable = IBackgroundDownloader_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc1c79333_6649_4b1d_a826_a4b3dd234d0b);
@@ -1947,6 +1904,11 @@ pub struct IBackgroundDownloader_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBackgroundDownloader2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBackgroundDownloader2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBackgroundDownloader2 {
     type Vtable = IBackgroundDownloader2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa94a5847_348d_4a35_890e_8a1ef3798479);
@@ -1993,6 +1955,11 @@ pub struct IBackgroundDownloader2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBackgroundDownloader3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBackgroundDownloader3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBackgroundDownloader3 {
     type Vtable = IBackgroundDownloader3_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd11a8c48_86e8_48e2_b615_6976aabf861d);
@@ -2006,6 +1973,11 @@ pub struct IBackgroundDownloader3_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBackgroundDownloaderFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBackgroundDownloaderFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBackgroundDownloaderFactory {
     type Vtable = IBackgroundDownloaderFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x26836c24_d89e_46f4_a29a_4f4d4f144155);
@@ -2019,6 +1991,11 @@ pub struct IBackgroundDownloaderFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBackgroundDownloaderStaticMethods(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBackgroundDownloaderStaticMethods {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBackgroundDownloaderStaticMethods {
     type Vtable = IBackgroundDownloaderStaticMethods_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x52a65a35_c64e_426c_9919_540d0d21a650);
@@ -2039,6 +2016,11 @@ pub struct IBackgroundDownloaderStaticMethods_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBackgroundDownloaderStaticMethods2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBackgroundDownloaderStaticMethods2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBackgroundDownloaderStaticMethods2 {
     type Vtable = IBackgroundDownloaderStaticMethods2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x2faa1327_1ad4_4ca5_b2cd_08dbf0746afe);
@@ -2057,6 +2039,12 @@ pub struct IBackgroundDownloaderStaticMethods2_Vtbl {
 #[repr(transparent)]
 pub struct IBackgroundDownloaderUserConsent(::windows::core::IUnknown);
 #[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for IBackgroundDownloaderUserConsent {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for IBackgroundDownloaderUserConsent {
     type Vtable = IBackgroundDownloaderUserConsent_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x5d14e906_9266_4808_bd71_5925f2a3130a);
@@ -2074,6 +2062,11 @@ pub struct IBackgroundDownloaderUserConsent_Vtbl {
 #[doc = "*Required features: `\"Networking_BackgroundTransfer\"`*"]
 #[repr(transparent)]
 pub struct IBackgroundTransferBase(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBackgroundTransferBase {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IBackgroundTransferBase {
     #[doc = "*Required features: `\"Networking_BackgroundTransfer\"`*"]
     pub fn SetRequestHeader<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::HSTRING>, Param1: ::windows::core::IntoParam<'a, ::windows::core::HSTRING>>(&self, headername: Param0, headervalue: Param1) -> ::windows::core::Result<()> {
@@ -2192,11 +2185,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IBackgroundTransferBase {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IBackgroundTransferBase {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2210,7 +2198,6 @@ impl ::core::fmt::Debug for IBackgroundTransferBase {
 }
 unsafe impl ::windows::core::RuntimeType for IBackgroundTransferBase {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{2a9da250-c769-458c-afe8-feb8d4d3b2ef}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2256,6 +2243,11 @@ pub struct IBackgroundTransferBase_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBackgroundTransferCompletionGroup(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBackgroundTransferCompletionGroup {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBackgroundTransferCompletionGroup {
     type Vtable = IBackgroundTransferCompletionGroup_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x2d930225_986b_574d_7950_0add47f5d706);
@@ -2274,6 +2266,11 @@ pub struct IBackgroundTransferCompletionGroup_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBackgroundTransferCompletionGroupTriggerDetails(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBackgroundTransferCompletionGroupTriggerDetails {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBackgroundTransferCompletionGroupTriggerDetails {
     type Vtable = IBackgroundTransferCompletionGroupTriggerDetails_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x7b6be286_6e47_5136_7fcb_fa4389f46f5b);
@@ -2294,6 +2291,11 @@ pub struct IBackgroundTransferCompletionGroupTriggerDetails_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBackgroundTransferContentPart(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBackgroundTransferContentPart {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBackgroundTransferContentPart {
     type Vtable = IBackgroundTransferContentPart_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe8e15657_d7d1_4ed8_838e_674ac217ace6);
@@ -2312,6 +2314,11 @@ pub struct IBackgroundTransferContentPart_Vtbl {
 #[doc = "*Required features: `\"Networking_BackgroundTransfer\"`*"]
 #[repr(transparent)]
 pub struct IBackgroundTransferContentPartFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBackgroundTransferContentPartFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IBackgroundTransferContentPartFactory {
     #[doc = "*Required features: `\"Networking_BackgroundTransfer\"`*"]
     pub fn CreateWithName<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::HSTRING>>(&self, name: Param0) -> ::windows::core::Result<BackgroundTransferContentPart> {
@@ -2370,11 +2377,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IBackgroundTransferContentPartFactory {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IBackgroundTransferContentPartFactory {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2388,7 +2390,6 @@ impl ::core::fmt::Debug for IBackgroundTransferContentPartFactory {
 }
 unsafe impl ::windows::core::RuntimeType for IBackgroundTransferContentPartFactory {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{90ef98a9-7a01-4a0b-9f80-a0b0bb370f8d}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2407,6 +2408,11 @@ pub struct IBackgroundTransferContentPartFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBackgroundTransferErrorStaticMethods(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBackgroundTransferErrorStaticMethods {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBackgroundTransferErrorStaticMethods {
     type Vtable = IBackgroundTransferErrorStaticMethods_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xaad33b04_1192_4bf4_8b68_39c5add244e2);
@@ -2423,6 +2429,11 @@ pub struct IBackgroundTransferErrorStaticMethods_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBackgroundTransferGroup(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBackgroundTransferGroup {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBackgroundTransferGroup {
     type Vtable = IBackgroundTransferGroup_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd8c3e3e4_6459_4540_85eb_aaa1c8903677);
@@ -2438,6 +2449,11 @@ pub struct IBackgroundTransferGroup_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBackgroundTransferGroupStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBackgroundTransferGroupStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBackgroundTransferGroupStatics {
     type Vtable = IBackgroundTransferGroupStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x02ec50b2_7d18_495b_aa22_32a97d45d3e2);
@@ -2451,6 +2467,11 @@ pub struct IBackgroundTransferGroupStatics_Vtbl {
 #[doc = "*Required features: `\"Networking_BackgroundTransfer\"`*"]
 #[repr(transparent)]
 pub struct IBackgroundTransferOperation(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBackgroundTransferOperation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IBackgroundTransferOperation {
     #[doc = "*Required features: `\"Networking_BackgroundTransfer\"`*"]
     pub fn Guid(&self) -> ::windows::core::Result<::windows::core::GUID> {
@@ -2557,11 +2578,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IBackgroundTransferOperation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IBackgroundTransferOperation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2575,7 +2591,6 @@ impl ::core::fmt::Debug for IBackgroundTransferOperation {
 }
 unsafe impl ::windows::core::RuntimeType for IBackgroundTransferOperation {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{ded06846-90ca-44fb-8fb1-124154c0d539}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2609,6 +2624,11 @@ pub struct IBackgroundTransferOperation_Vtbl {
 #[doc = "*Required features: `\"Networking_BackgroundTransfer\"`*"]
 #[repr(transparent)]
 pub struct IBackgroundTransferOperationPriority(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBackgroundTransferOperationPriority {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IBackgroundTransferOperationPriority {
     #[doc = "*Required features: `\"Networking_BackgroundTransfer\"`*"]
     pub fn Priority(&self) -> ::windows::core::Result<BackgroundTransferPriority> {
@@ -2664,11 +2684,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IBackgroundTransferOperationPriority {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IBackgroundTransferOperationPriority {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2682,7 +2697,6 @@ impl ::core::fmt::Debug for IBackgroundTransferOperationPriority {
 }
 unsafe impl ::windows::core::RuntimeType for IBackgroundTransferOperationPriority {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{04854327-5254-4b3a-915e-0aa49275c0f9}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2701,6 +2715,11 @@ pub struct IBackgroundTransferOperationPriority_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBackgroundTransferRangesDownloadedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBackgroundTransferRangesDownloadedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBackgroundTransferRangesDownloadedEventArgs {
     type Vtable = IBackgroundTransferRangesDownloadedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x3ebc7453_bf48_4a88_9248_b0c165184f5c);
@@ -2722,6 +2741,11 @@ pub struct IBackgroundTransferRangesDownloadedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBackgroundUploader(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBackgroundUploader {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBackgroundUploader {
     type Vtable = IBackgroundUploader_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc595c9ae_cead_465b_8801_c55ac90a01ce);
@@ -2754,6 +2778,11 @@ pub struct IBackgroundUploader_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBackgroundUploader2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBackgroundUploader2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBackgroundUploader2 {
     type Vtable = IBackgroundUploader2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x8e0612ce_0c34_4463_807f_198a1b8bd4ad);
@@ -2800,6 +2829,11 @@ pub struct IBackgroundUploader2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBackgroundUploader3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBackgroundUploader3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBackgroundUploader3 {
     type Vtable = IBackgroundUploader3_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb95e9439_5bf0_4b3a_8c47_2c6199a854b9);
@@ -2813,6 +2847,11 @@ pub struct IBackgroundUploader3_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBackgroundUploaderFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBackgroundUploaderFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBackgroundUploaderFactory {
     type Vtable = IBackgroundUploaderFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x736203c7_10e7_48a0_ac3c_1ac71095ec57);
@@ -2826,6 +2865,11 @@ pub struct IBackgroundUploaderFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBackgroundUploaderStaticMethods(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBackgroundUploaderStaticMethods {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBackgroundUploaderStaticMethods {
     type Vtable = IBackgroundUploaderStaticMethods_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf2875cfb_9b05_4741_9121_740a83e247df);
@@ -2846,6 +2890,11 @@ pub struct IBackgroundUploaderStaticMethods_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBackgroundUploaderStaticMethods2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBackgroundUploaderStaticMethods2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBackgroundUploaderStaticMethods2 {
     type Vtable = IBackgroundUploaderStaticMethods2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe919ac62_ea08_42f0_a2ac_07e467549080);
@@ -2864,6 +2913,12 @@ pub struct IBackgroundUploaderStaticMethods2_Vtbl {
 #[repr(transparent)]
 pub struct IBackgroundUploaderUserConsent(::windows::core::IUnknown);
 #[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for IBackgroundUploaderUserConsent {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for IBackgroundUploaderUserConsent {
     type Vtable = IBackgroundUploaderUserConsent_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x3bb384cb_0760_461d_907f_5138f84d44c1);
@@ -2881,6 +2936,11 @@ pub struct IBackgroundUploaderUserConsent_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IContentPrefetcher(::windows::core::IUnknown);
+impl ::core::clone::Clone for IContentPrefetcher {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IContentPrefetcher {
     type Vtable = IContentPrefetcher_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa8d6f754_7dc1_4cd9_8810_2a6aa9417e11);
@@ -2905,6 +2965,11 @@ pub struct IContentPrefetcher_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IContentPrefetcherTime(::windows::core::IUnknown);
+impl ::core::clone::Clone for IContentPrefetcherTime {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IContentPrefetcherTime {
     type Vtable = IContentPrefetcherTime_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe361fd08_132a_4fde_a7cc_fcb0e66523af);
@@ -2921,6 +2986,11 @@ pub struct IContentPrefetcherTime_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDownloadOperation(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDownloadOperation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDownloadOperation {
     type Vtable = IDownloadOperation_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xbd87ebb0_5714_4e09_ba68_bef73903b0d7);
@@ -2948,6 +3018,11 @@ pub struct IDownloadOperation_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDownloadOperation2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDownloadOperation2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDownloadOperation2 {
     type Vtable = IDownloadOperation2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa3cced40_8f9c_4353_9cd4_290dee387c38);
@@ -2961,6 +3036,11 @@ pub struct IDownloadOperation2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDownloadOperation3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDownloadOperation3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDownloadOperation3 {
     type Vtable = IDownloadOperation3_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x5027351c_7d5e_4adc_b8d3_df5c6031b9cc);
@@ -3003,6 +3083,11 @@ pub struct IDownloadOperation3_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDownloadOperation4(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDownloadOperation4 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDownloadOperation4 {
     type Vtable = IDownloadOperation4_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x0cdaaef4_8cef_404a_966d_f058400bed80);
@@ -3016,6 +3101,11 @@ pub struct IDownloadOperation4_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDownloadOperation5(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDownloadOperation5 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDownloadOperation5 {
     type Vtable = IDownloadOperation5_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa699a86f_5590_463a_b8d6_1e491a2760a5);
@@ -3030,6 +3120,11 @@ pub struct IDownloadOperation5_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IResponseInformation(::windows::core::IUnknown);
+impl ::core::clone::Clone for IResponseInformation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IResponseInformation {
     type Vtable = IResponseInformation_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf8bb9a12_f713_4792_8b68_d9d297f91d2e);
@@ -3054,6 +3149,12 @@ pub struct IResponseInformation_Vtbl {
 #[repr(transparent)]
 pub struct IUnconstrainedTransferRequestResult(::windows::core::IUnknown);
 #[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for IUnconstrainedTransferRequestResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for IUnconstrainedTransferRequestResult {
     type Vtable = IUnconstrainedTransferRequestResult_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x4c24b81f_d944_4112_a98e_6a69522b7ebb);
@@ -3071,6 +3172,11 @@ pub struct IUnconstrainedTransferRequestResult_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IUploadOperation(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUploadOperation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IUploadOperation {
     type Vtable = IUploadOperation_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x3e5624e0_7389_434c_8b35_427fd36bbdae);
@@ -3096,6 +3202,11 @@ pub struct IUploadOperation_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IUploadOperation2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUploadOperation2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IUploadOperation2 {
     type Vtable = IUploadOperation2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x556189f2_2774_4df6_9fa5_209f2bfb12f7);
@@ -3109,6 +3220,11 @@ pub struct IUploadOperation2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IUploadOperation3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUploadOperation3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IUploadOperation3 {
     type Vtable = IUploadOperation3_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x42c92ca3_de39_4546_bc62_3774b4294de3);
@@ -3122,6 +3238,11 @@ pub struct IUploadOperation3_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IUploadOperation4(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUploadOperation4 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IUploadOperation4 {
     type Vtable = IUploadOperation4_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x50edef31_fac5_41ee_b030_dc77caee9faa);
@@ -3172,11 +3293,6 @@ impl ResponseInformation {
         }
     }
 }
-impl ::core::clone::Clone for ResponseInformation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ResponseInformation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3190,7 +3306,6 @@ impl ::core::fmt::Debug for ResponseInformation {
 }
 unsafe impl ::windows::core::RuntimeType for ResponseInformation {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.BackgroundTransfer.ResponseInformation;{f8bb9a12-f713-4792-8b68-d9d297f91d2e})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3261,12 +3376,6 @@ impl UnconstrainedTransferRequestResult {
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for UnconstrainedTransferRequestResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for UnconstrainedTransferRequestResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3283,7 +3392,6 @@ impl ::core::fmt::Debug for UnconstrainedTransferRequestResult {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for UnconstrainedTransferRequestResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.BackgroundTransfer.UnconstrainedTransferRequestResult;{4c24b81f-d944-4112-a98e-6a69522b7ebb})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3489,11 +3597,6 @@ impl UploadOperation {
         unsafe { (::windows::core::Interface::vtable(this).RemoveRequestHeader)(::core::mem::transmute_copy(this), headername.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for UploadOperation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for UploadOperation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3507,7 +3610,6 @@ impl ::core::fmt::Debug for UploadOperation {
 }
 unsafe impl ::windows::core::RuntimeType for UploadOperation {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.BackgroundTransfer.UploadOperation;{3e5624e0-7389-434c-8b35-427fd36bbdae})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

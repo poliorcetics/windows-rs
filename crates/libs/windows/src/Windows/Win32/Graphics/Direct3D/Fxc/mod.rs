@@ -32,6 +32,7 @@ impl ::core::default::Default for D3DCOMPILER_STRIP_FLAGS {
 }
 unsafe impl ::windows::core::Abi for D3DCOMPILER_STRIP_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3DCOMPILER_STRIP_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -541,6 +542,7 @@ impl ::core::default::Default for D3D_BLOB_PART {
 }
 unsafe impl ::windows::core::Abi for D3D_BLOB_PART {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D_BLOB_PART {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -588,6 +590,7 @@ impl ::core::fmt::Debug for D3D_SHADER_DATA {
 }
 unsafe impl ::windows::core::Abi for D3D_SHADER_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D_SHADER_DATA {
     fn eq(&self, other: &Self) -> bool {

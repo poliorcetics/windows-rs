@@ -22,6 +22,7 @@ impl ::core::default::Default for ALT_BREAKS {
 }
 unsafe impl ::windows::core::Abi for ALT_BREAKS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ALT_BREAKS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -113,6 +114,7 @@ impl ::core::default::Default for AppearanceConstants {
 }
 unsafe impl ::windows::core::Abi for AppearanceConstants {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AppearanceConstants {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -142,6 +144,7 @@ impl ::core::default::Default for BorderStyleConstants {
 }
 unsafe impl ::windows::core::Abi for BorderStyleConstants {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for BorderStyleConstants {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -173,6 +176,7 @@ impl ::core::fmt::Debug for CHARACTER_RANGE {
 }
 unsafe impl ::windows::core::Abi for CHARACTER_RANGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CHARACTER_RANGE {
     fn eq(&self, other: &Self) -> bool {
@@ -208,6 +212,7 @@ impl ::core::default::Default for CONFIDENCE_LEVEL {
 }
 unsafe impl ::windows::core::Abi for CONFIDENCE_LEVEL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CONFIDENCE_LEVEL {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -239,6 +244,7 @@ impl ::core::default::Default for CorrectionMode {
 }
 unsafe impl ::windows::core::Abi for CorrectionMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CorrectionMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -268,6 +274,7 @@ impl ::core::default::Default for CorrectionPosition {
 }
 unsafe impl ::windows::core::Abi for CorrectionPosition {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CorrectionPosition {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -369,6 +376,7 @@ impl ::core::default::Default for DISPID_Ink {
 }
 unsafe impl ::windows::core::Abi for DISPID_Ink {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DISPID_Ink {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -470,6 +478,7 @@ impl ::core::default::Default for DISPID_InkCollector {
 }
 unsafe impl ::windows::core::Abi for DISPID_InkCollector {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DISPID_InkCollector {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -575,6 +584,7 @@ impl ::core::default::Default for DISPID_InkCollectorEvent {
 }
 unsafe impl ::windows::core::Abi for DISPID_InkCollectorEvent {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DISPID_InkCollectorEvent {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -610,6 +620,7 @@ impl ::core::default::Default for DISPID_InkCursor {
 }
 unsafe impl ::windows::core::Abi for DISPID_InkCursor {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DISPID_InkCursor {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -639,6 +650,7 @@ impl ::core::default::Default for DISPID_InkCursorButton {
 }
 unsafe impl ::windows::core::Abi for DISPID_InkCursorButton {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DISPID_InkCursorButton {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -668,6 +680,7 @@ impl ::core::default::Default for DISPID_InkCursorButtons {
 }
 unsafe impl ::windows::core::Abi for DISPID_InkCursorButtons {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DISPID_InkCursorButtons {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -697,6 +710,7 @@ impl ::core::default::Default for DISPID_InkCursors {
 }
 unsafe impl ::windows::core::Abi for DISPID_InkCursors {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DISPID_InkCursors {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -732,6 +746,7 @@ impl ::core::default::Default for DISPID_InkCustomStrokes {
 }
 unsafe impl ::windows::core::Abi for DISPID_InkCustomStrokes {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DISPID_InkCustomStrokes {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -763,6 +778,7 @@ impl ::core::default::Default for DISPID_InkDivider {
 }
 unsafe impl ::windows::core::Abi for DISPID_InkDivider {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DISPID_InkDivider {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -790,6 +806,7 @@ impl ::core::default::Default for DISPID_InkDivisionResult {
 }
 unsafe impl ::windows::core::Abi for DISPID_InkDivisionResult {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DISPID_InkDivisionResult {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -821,6 +838,7 @@ impl ::core::default::Default for DISPID_InkDivisionUnit {
 }
 unsafe impl ::windows::core::Abi for DISPID_InkDivisionUnit {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DISPID_InkDivisionUnit {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -850,6 +868,7 @@ impl ::core::default::Default for DISPID_InkDivisionUnits {
 }
 unsafe impl ::windows::core::Abi for DISPID_InkDivisionUnits {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DISPID_InkDivisionUnits {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -895,6 +914,7 @@ impl ::core::default::Default for DISPID_InkDrawingAttributes {
 }
 unsafe impl ::windows::core::Abi for DISPID_InkDrawingAttributes {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DISPID_InkDrawingAttributes {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -990,6 +1010,7 @@ impl ::core::default::Default for DISPID_InkEdit {
 }
 unsafe impl ::windows::core::Abi for DISPID_InkEdit {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DISPID_InkEdit {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1041,6 +1062,7 @@ impl ::core::default::Default for DISPID_InkEditEvents {
 }
 unsafe impl ::windows::core::Abi for DISPID_InkEditEvents {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DISPID_InkEditEvents {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1068,6 +1090,7 @@ impl ::core::default::Default for DISPID_InkEvent {
 }
 unsafe impl ::windows::core::Abi for DISPID_InkEvent {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DISPID_InkEvent {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1105,6 +1128,7 @@ impl ::core::default::Default for DISPID_InkExtendedProperties {
 }
 unsafe impl ::windows::core::Abi for DISPID_InkExtendedProperties {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DISPID_InkExtendedProperties {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1132,6 +1156,7 @@ impl ::core::default::Default for DISPID_InkExtendedProperty {
 }
 unsafe impl ::windows::core::Abi for DISPID_InkExtendedProperty {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DISPID_InkExtendedProperty {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1161,6 +1186,7 @@ impl ::core::default::Default for DISPID_InkGesture {
 }
 unsafe impl ::windows::core::Abi for DISPID_InkGesture {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DISPID_InkGesture {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1214,6 +1240,7 @@ impl ::core::default::Default for DISPID_InkRecoAlternate {
 }
 unsafe impl ::windows::core::Abi for DISPID_InkRecoAlternate {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DISPID_InkRecoAlternate {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1271,6 +1298,7 @@ impl ::core::default::Default for DISPID_InkRecoContext {
 }
 unsafe impl ::windows::core::Abi for DISPID_InkRecoContext {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DISPID_InkRecoContext {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1296,6 +1324,7 @@ impl ::core::default::Default for DISPID_InkRecoContext2 {
 }
 unsafe impl ::windows::core::Abi for DISPID_InkRecoContext2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DISPID_InkRecoContext2 {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1327,6 +1356,7 @@ impl ::core::default::Default for DISPID_InkRecognitionAlternates {
 }
 unsafe impl ::windows::core::Abi for DISPID_InkRecognitionAlternates {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DISPID_InkRecognitionAlternates {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1354,6 +1384,7 @@ impl ::core::default::Default for DISPID_InkRecognitionEvent {
 }
 unsafe impl ::windows::core::Abi for DISPID_InkRecognitionEvent {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DISPID_InkRecognitionEvent {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1391,6 +1422,7 @@ impl ::core::default::Default for DISPID_InkRecognitionResult {
 }
 unsafe impl ::windows::core::Abi for DISPID_InkRecognitionResult {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DISPID_InkRecognitionResult {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1430,6 +1462,7 @@ impl ::core::default::Default for DISPID_InkRecognizer {
 }
 unsafe impl ::windows::core::Abi for DISPID_InkRecognizer {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DISPID_InkRecognizer {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1457,6 +1490,7 @@ impl ::core::default::Default for DISPID_InkRecognizer2 {
 }
 unsafe impl ::windows::core::Abi for DISPID_InkRecognizer2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DISPID_InkRecognizer2 {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1492,6 +1526,7 @@ impl ::core::default::Default for DISPID_InkRecognizerGuide {
 }
 unsafe impl ::windows::core::Abi for DISPID_InkRecognizerGuide {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DISPID_InkRecognizerGuide {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1523,6 +1558,7 @@ impl ::core::default::Default for DISPID_InkRecognizers {
 }
 unsafe impl ::windows::core::Abi for DISPID_InkRecognizers {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DISPID_InkRecognizers {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1560,6 +1596,7 @@ impl ::core::default::Default for DISPID_InkRectangle {
 }
 unsafe impl ::windows::core::Abi for DISPID_InkRectangle {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DISPID_InkRectangle {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1613,6 +1650,7 @@ impl ::core::default::Default for DISPID_InkRenderer {
 }
 unsafe impl ::windows::core::Abi for DISPID_InkRenderer {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DISPID_InkRenderer {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1702,6 +1740,7 @@ impl ::core::default::Default for DISPID_InkStrokeDisp {
 }
 unsafe impl ::windows::core::Abi for DISPID_InkStrokeDisp {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DISPID_InkStrokeDisp {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1767,6 +1806,7 @@ impl ::core::default::Default for DISPID_InkStrokes {
 }
 unsafe impl ::windows::core::Abi for DISPID_InkStrokes {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DISPID_InkStrokes {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1802,6 +1842,7 @@ impl ::core::default::Default for DISPID_InkTablet {
 }
 unsafe impl ::windows::core::Abi for DISPID_InkTablet {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DISPID_InkTablet {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1827,6 +1868,7 @@ impl ::core::default::Default for DISPID_InkTablet2 {
 }
 unsafe impl ::windows::core::Abi for DISPID_InkTablet2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DISPID_InkTablet2 {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1854,6 +1896,7 @@ impl ::core::default::Default for DISPID_InkTablet3 {
 }
 unsafe impl ::windows::core::Abi for DISPID_InkTablet3 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DISPID_InkTablet3 {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1887,6 +1930,7 @@ impl ::core::default::Default for DISPID_InkTablets {
 }
 unsafe impl ::windows::core::Abi for DISPID_InkTablets {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DISPID_InkTablets {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1940,6 +1984,7 @@ impl ::core::default::Default for DISPID_InkTransform {
 }
 unsafe impl ::windows::core::Abi for DISPID_InkTransform {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DISPID_InkTransform {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1969,6 +2014,7 @@ impl ::core::default::Default for DISPID_InkWordList {
 }
 unsafe impl ::windows::core::Abi for DISPID_InkWordList {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DISPID_InkWordList {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1994,6 +2040,7 @@ impl ::core::default::Default for DISPID_InkWordList2 {
 }
 unsafe impl ::windows::core::Abi for DISPID_InkWordList2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DISPID_InkWordList2 {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2025,6 +2072,7 @@ impl ::core::default::Default for DISPID_MathInputControlEvents {
 }
 unsafe impl ::windows::core::Abi for DISPID_MathInputControlEvents {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DISPID_MathInputControlEvents {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2082,6 +2130,7 @@ impl ::core::default::Default for DISPID_PenInputPanel {
 }
 unsafe impl ::windows::core::Abi for DISPID_PenInputPanel {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DISPID_PenInputPanel {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2113,6 +2162,7 @@ impl ::core::default::Default for DISPID_PenInputPanelEvents {
 }
 unsafe impl ::windows::core::Abi for DISPID_PenInputPanelEvents {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DISPID_PenInputPanelEvents {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2140,6 +2190,7 @@ impl ::core::default::Default for DISPID_StrokeEvent {
 }
 unsafe impl ::windows::core::Abi for DISPID_StrokeEvent {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DISPID_StrokeEvent {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2164,6 +2215,7 @@ impl ::core::fmt::Debug for DYNAMIC_RENDERER_CACHED_DATA {
 }
 unsafe impl ::windows::core::Abi for DYNAMIC_RENDERER_CACHED_DATA {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DYNAMIC_RENDERER_CACHED_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -2328,6 +2380,7 @@ impl ::core::default::Default for EventMask {
 }
 unsafe impl ::windows::core::Abi for EventMask {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EventMask {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2427,6 +2480,7 @@ impl ::core::default::Default for FLICKACTION_COMMANDCODE {
 }
 unsafe impl ::windows::core::Abi for FLICKACTION_COMMANDCODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FLICKACTION_COMMANDCODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2470,6 +2524,7 @@ impl ::core::default::Default for FLICKDIRECTION {
 }
 unsafe impl ::windows::core::Abi for FLICKDIRECTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FLICKDIRECTION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2505,6 +2560,7 @@ impl ::core::default::Default for FLICKMODE {
 }
 unsafe impl ::windows::core::Abi for FLICKMODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FLICKMODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2529,6 +2585,7 @@ impl ::core::fmt::Debug for FLICK_DATA {
 }
 unsafe impl ::windows::core::Abi for FLICK_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for FLICK_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -2559,6 +2616,7 @@ impl ::core::fmt::Debug for FLICK_POINT {
 }
 unsafe impl ::windows::core::Abi for FLICK_POINT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for FLICK_POINT {
     fn eq(&self, other: &Self) -> bool {
@@ -2651,6 +2709,7 @@ impl ::core::fmt::Debug for GESTURE_DATA {
 }
 unsafe impl ::windows::core::Abi for GESTURE_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for GESTURE_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -3035,6 +3094,7 @@ impl ::core::fmt::Debug for HRECOALT {
 }
 unsafe impl ::windows::core::Abi for HRECOALT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[repr(transparent)]
 #[derive(:: core :: cmp :: PartialEq, :: core :: cmp :: Eq)]
@@ -3062,6 +3122,7 @@ impl ::core::fmt::Debug for HRECOCONTEXT {
 }
 unsafe impl ::windows::core::Abi for HRECOCONTEXT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[repr(transparent)]
 #[derive(:: core :: cmp :: PartialEq, :: core :: cmp :: Eq)]
@@ -3089,6 +3150,7 @@ impl ::core::fmt::Debug for HRECOGNIZER {
 }
 unsafe impl ::windows::core::Abi for HRECOGNIZER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[repr(transparent)]
 #[derive(:: core :: cmp :: PartialEq, :: core :: cmp :: Eq)]
@@ -3116,6 +3178,7 @@ impl ::core::fmt::Debug for HRECOLATTICE {
 }
 unsafe impl ::windows::core::Abi for HRECOLATTICE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[repr(transparent)]
 #[derive(:: core :: cmp :: PartialEq, :: core :: cmp :: Eq)]
@@ -3143,11 +3206,17 @@ impl ::core::fmt::Debug for HRECOWORDLIST {
 }
 unsafe impl ::windows::core::Abi for HRECOWORDLIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 pub const HandwrittenTextInsertion: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9f074ee2_e6e9_4d8a_a047_eb5b5c3c55da);
 #[doc = "*Required features: `\"Win32_UI_TabletPC\"`*"]
 #[repr(transparent)]
 pub struct IDynamicRenderer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDynamicRenderer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDynamicRenderer {
     #[doc = "*Required features: `\"Win32_UI_TabletPC\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -3247,11 +3316,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IDynamicR
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDynamicRenderer {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IDynamicRenderer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IDynamicRenderer {
@@ -3354,6 +3418,7 @@ impl ::core::clone::Clone for IEC_GESTUREINFO {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com", feature = "Win32_System_Ole", feature = "Win32_UI_Controls"))]
 unsafe impl ::windows::core::Abi for IEC_GESTUREINFO {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com", feature = "Win32_System_Ole", feature = "Win32_UI_Controls"))]
 impl ::core::cmp::PartialEq for IEC_GESTUREINFO {
@@ -3391,6 +3456,7 @@ impl ::core::fmt::Debug for IEC_RECOGNITIONRESULTINFO {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com", feature = "Win32_UI_Controls"))]
 unsafe impl ::windows::core::Abi for IEC_RECOGNITIONRESULTINFO {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com", feature = "Win32_UI_Controls"))]
 impl ::core::cmp::PartialEq for IEC_RECOGNITIONRESULTINFO {
@@ -3429,6 +3495,7 @@ impl ::core::fmt::Debug for IEC_STROKEINFO {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com", feature = "Win32_UI_Controls"))]
 unsafe impl ::windows::core::Abi for IEC_STROKEINFO {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com", feature = "Win32_UI_Controls"))]
 impl ::core::cmp::PartialEq for IEC_STROKEINFO {
@@ -3449,6 +3516,11 @@ pub const IEC__BASE: u32 = 1536u32;
 #[doc = "*Required features: `\"Win32_UI_TabletPC\"`*"]
 #[repr(transparent)]
 pub struct IGestureRecognizer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGestureRecognizer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IGestureRecognizer {
     #[doc = "*Required features: `\"Win32_UI_TabletPC\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -3499,11 +3571,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IGest
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IGestureRecognizer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IGestureRecognizer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3539,6 +3606,11 @@ pub struct IGestureRecognizer_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TabletPC\"`*"]
 #[repr(transparent)]
 pub struct IHandwrittenTextInsertion(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHandwrittenTextInsertion {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IHandwrittenTextInsertion {
     #[doc = "*Required features: `\"Win32_UI_TabletPC\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com"))]
@@ -3569,11 +3641,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IHandwrit
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IHandwrittenTextInsertion {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IHandwrittenTextInsertion {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IHandwrittenTextInsertion {
@@ -3608,6 +3675,12 @@ pub struct IHandwrittenTextInsertion_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IInk(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IInk {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IInk {}
 #[cfg(feature = "Win32_System_Com")]
@@ -3659,12 +3732,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IInk {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IInk {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3693,6 +3760,12 @@ pub struct IInk_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IInkCollector(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IInkCollector {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IInkCollector {
     #[doc = "*Required features: `\"Win32_UI_TabletPC\"`*"]
@@ -3940,12 +4013,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IInkCollector {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IInkCollector {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4063,6 +4130,12 @@ pub struct IInkCollector_Vtbl {
 #[repr(transparent)]
 pub struct IInkCursor(::windows::core::IUnknown);
 #[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IInkCursor {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "Win32_System_Com")]
 impl IInkCursor {
     #[doc = "*Required features: `\"Win32_UI_TabletPC\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -4153,12 +4226,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IInkCursor {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IInkCursor {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4209,6 +4276,12 @@ pub struct IInkCursor_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IInkCursorButton(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IInkCursorButton {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IInkCursorButton {
     #[doc = "*Required features: `\"Win32_UI_TabletPC\"`, `\"Win32_Foundation\"`*"]
@@ -4278,12 +4351,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IInkCursorButton {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IInkCursorButton {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4321,6 +4388,12 @@ pub struct IInkCursorButton_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IInkCursorButtons(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IInkCursorButtons {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IInkCursorButtons {
     #[doc = "*Required features: `\"Win32_UI_TabletPC\"`*"]
@@ -4389,12 +4462,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IInkCursorButtons {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IInkCursorButtons {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4429,6 +4496,12 @@ pub struct IInkCursorButtons_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IInkCursors(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IInkCursors {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IInkCursors {
     #[doc = "*Required features: `\"Win32_UI_TabletPC\"`*"]
@@ -4497,12 +4570,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IInkCursors {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IInkCursors {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4537,6 +4604,12 @@ pub struct IInkCursors_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IInkCustomStrokes(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IInkCustomStrokes {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IInkCustomStrokes {
     #[doc = "*Required features: `\"Win32_UI_TabletPC\"`*"]
@@ -4619,12 +4692,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IInkCustomStrokes {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IInkCustomStrokes {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4668,6 +4735,12 @@ pub struct IInkCustomStrokes_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IInkDisp(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IInkDisp {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IInkDisp {
     #[doc = "*Required features: `\"Win32_UI_TabletPC\"`, `\"Win32_System_Com\"`*"]
@@ -4860,12 +4933,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IInkDisp {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IInkDisp {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4989,6 +5056,12 @@ pub struct IInkDisp_Vtbl {
 #[repr(transparent)]
 pub struct IInkDivider(::windows::core::IUnknown);
 #[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IInkDivider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "Win32_System_Com")]
 impl IInkDivider {
     #[doc = "*Required features: `\"Win32_UI_TabletPC\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -5077,12 +5150,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IInkDivider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IInkDivider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5133,6 +5200,12 @@ pub struct IInkDivider_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IInkDivisionResult(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IInkDivisionResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IInkDivisionResult {
     #[doc = "*Required features: `\"Win32_UI_TabletPC\"`, `\"Win32_System_Com\"`*"]
@@ -5197,12 +5270,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IInkDivisionResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IInkDivisionResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5239,6 +5306,12 @@ pub struct IInkDivisionResult_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IInkDivisionUnit(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IInkDivisionUnit {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IInkDivisionUnit {
     #[doc = "*Required features: `\"Win32_UI_TabletPC\"`, `\"Win32_System_Com\"`*"]
@@ -5314,12 +5387,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IInkDivisionUnit {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IInkDivisionUnit {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5361,6 +5428,12 @@ pub struct IInkDivisionUnit_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IInkDivisionUnits(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IInkDivisionUnits {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IInkDivisionUnits {
     #[doc = "*Required features: `\"Win32_UI_TabletPC\"`*"]
@@ -5429,12 +5502,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IInkDivisionUnits {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IInkDivisionUnits {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5469,6 +5536,12 @@ pub struct IInkDivisionUnits_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IInkDrawingAttributes(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IInkDrawingAttributes {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IInkDrawingAttributes {
     #[doc = "*Required features: `\"Win32_UI_TabletPC\"`*"]
@@ -5614,12 +5687,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IInkDrawingAttributes {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IInkDrawingAttributes {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5674,6 +5741,12 @@ pub struct IInkDrawingAttributes_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IInkEdit(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IInkEdit {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IInkEdit {
     #[doc = "*Required features: `\"Win32_UI_TabletPC\"`*"]
@@ -6109,12 +6182,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IInkEdit {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IInkEdit {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6332,6 +6399,12 @@ pub struct IInkEdit_Vtbl {
 #[repr(transparent)]
 pub struct IInkExtendedProperties(::windows::core::IUnknown);
 #[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IInkExtendedProperties {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "Win32_System_Com")]
 impl IInkExtendedProperties {
     #[doc = "*Required features: `\"Win32_UI_TabletPC\"`*"]
     pub unsafe fn Count(&self) -> ::windows::core::Result<i32> {
@@ -6420,12 +6493,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IInkExtendedProperties {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IInkExtendedProperties {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6473,6 +6540,12 @@ pub struct IInkExtendedProperties_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IInkExtendedProperty(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IInkExtendedProperty {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IInkExtendedProperty {
     #[doc = "*Required features: `\"Win32_UI_TabletPC\"`, `\"Win32_Foundation\"`*"]
@@ -6542,12 +6615,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IInkExtendedProperty {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IInkExtendedProperty {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6588,6 +6655,12 @@ pub struct IInkExtendedProperty_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IInkGesture(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IInkGesture {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IInkGesture {
     #[doc = "*Required features: `\"Win32_UI_TabletPC\"`*"]
@@ -6654,12 +6727,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IInkGesture {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IInkGesture {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6690,6 +6757,11 @@ pub struct IInkGesture_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TabletPC\"`*"]
 #[repr(transparent)]
 pub struct IInkLineInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInkLineInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IInkLineInfo {
     #[doc = "*Required features: `\"Win32_UI_TabletPC\"`*"]
     pub unsafe fn SetFormat(&self, pim: *const INKMETRIC) -> ::windows::core::Result<()> {
@@ -6736,11 +6808,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IInkL
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IInkLineInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IInkLineInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6771,6 +6838,12 @@ pub struct IInkLineInfo_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IInkOverlay(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IInkOverlay {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IInkOverlay {
     #[doc = "*Required features: `\"Win32_UI_TabletPC\"`*"]
@@ -7084,12 +7157,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IInkOverlay {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IInkOverlay {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7229,6 +7296,12 @@ pub struct IInkOverlay_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IInkPicture(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IInkPicture {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IInkPicture {
     #[doc = "*Required features: `\"Win32_UI_TabletPC\"`*"]
@@ -7567,12 +7640,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IInkPicture {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IInkPicture {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7724,6 +7791,12 @@ pub struct IInkPicture_Vtbl {
 #[repr(transparent)]
 pub struct IInkRecognitionAlternate(::windows::core::IUnknown);
 #[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IInkRecognitionAlternate {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "Win32_System_Com")]
 impl IInkRecognitionAlternate {
     #[doc = "*Required features: `\"Win32_UI_TabletPC\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -7861,12 +7934,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IInkRecognitionAlternate {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IInkRecognitionAlternate {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7950,6 +8017,12 @@ pub struct IInkRecognitionAlternate_Vtbl {
 #[repr(transparent)]
 pub struct IInkRecognitionAlternates(::windows::core::IUnknown);
 #[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IInkRecognitionAlternates {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "Win32_System_Com")]
 impl IInkRecognitionAlternates {
     #[doc = "*Required features: `\"Win32_UI_TabletPC\"`*"]
     pub unsafe fn Count(&self) -> ::windows::core::Result<i32> {
@@ -8023,12 +8096,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IInkRecognitionAlternates {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IInkRecognitionAlternates {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8067,6 +8134,12 @@ pub struct IInkRecognitionAlternates_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IInkRecognitionResult(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IInkRecognitionResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IInkRecognitionResult {
     #[doc = "*Required features: `\"Win32_UI_TabletPC\"`, `\"Win32_Foundation\"`*"]
@@ -8157,12 +8230,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IInkRecognitionResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IInkRecognitionResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8213,6 +8280,12 @@ pub struct IInkRecognitionResult_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IInkRecognizer(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IInkRecognizer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IInkRecognizer {
     #[doc = "*Required features: `\"Win32_UI_TabletPC\"`, `\"Win32_Foundation\"`*"]
@@ -8306,12 +8379,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IInkRecognizer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IInkRecognizer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8365,6 +8432,12 @@ pub struct IInkRecognizer_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IInkRecognizer2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IInkRecognizer2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IInkRecognizer2 {
     #[doc = "*Required features: `\"Win32_UI_TabletPC\"`, `\"Win32_Foundation\"`*"]
@@ -8429,12 +8502,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IInkRecognizer2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IInkRecognizer2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8471,6 +8538,12 @@ pub struct IInkRecognizer2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IInkRecognizerContext(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IInkRecognizerContext {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IInkRecognizerContext {
     #[doc = "*Required features: `\"Win32_UI_TabletPC\"`, `\"Win32_System_Com\"`*"]
@@ -8648,12 +8721,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IInkRecognizerContext {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IInkRecognizerContext {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8761,6 +8828,12 @@ pub struct IInkRecognizerContext_Vtbl {
 #[repr(transparent)]
 pub struct IInkRecognizerContext2(::windows::core::IUnknown);
 #[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IInkRecognizerContext2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "Win32_System_Com")]
 impl IInkRecognizerContext2 {
     #[doc = "*Required features: `\"Win32_UI_TabletPC\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com", feature = "Win32_System_Ole"))]
@@ -8823,12 +8896,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IInkRecognizerContext2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IInkRecognizerContext2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8865,6 +8932,12 @@ pub struct IInkRecognizerContext2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IInkRecognizerGuide(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IInkRecognizerGuide {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IInkRecognizerGuide {
     #[doc = "*Required features: `\"Win32_UI_TabletPC\"`, `\"Win32_System_Com\"`*"]
@@ -8977,12 +9050,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IInkRecognizerGuide {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IInkRecognizerGuide {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9041,6 +9108,12 @@ pub struct IInkRecognizerGuide_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IInkRecognizers(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IInkRecognizers {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IInkRecognizers {
     #[doc = "*Required features: `\"Win32_UI_TabletPC\"`*"]
@@ -9115,12 +9188,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IInkRecognizers {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IInkRecognizers {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9159,6 +9226,12 @@ pub struct IInkRecognizers_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IInkRectangle(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IInkRectangle {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IInkRectangle {
     #[doc = "*Required features: `\"Win32_UI_TabletPC\"`*"]
@@ -9266,12 +9339,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IInkRectangle {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IInkRectangle {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9318,6 +9385,12 @@ pub struct IInkRectangle_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IInkRenderer(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IInkRenderer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IInkRenderer {
     #[doc = "*Required features: `\"Win32_UI_TabletPC\"`, `\"Win32_System_Com\"`*"]
@@ -9442,12 +9515,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IInkRenderer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IInkRenderer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9521,6 +9588,12 @@ pub struct IInkRenderer_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IInkStrokeDisp(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IInkStrokeDisp {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IInkStrokeDisp {
     #[doc = "*Required features: `\"Win32_UI_TabletPC\"`*"]
@@ -9751,12 +9824,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IInkStrokeDisp {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IInkStrokeDisp {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9887,6 +9954,12 @@ pub struct IInkStrokeDisp_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IInkStrokes(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IInkStrokes {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IInkStrokes {
     #[doc = "*Required features: `\"Win32_UI_TabletPC\"`*"]
@@ -10039,12 +10112,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IInkStrokes {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IInkStrokes {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10133,6 +10200,12 @@ pub struct IInkStrokes_Vtbl {
 #[repr(transparent)]
 pub struct IInkTablet(::windows::core::IUnknown);
 #[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IInkTablet {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "Win32_System_Com")]
 impl IInkTablet {
     #[doc = "*Required features: `\"Win32_UI_TabletPC\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -10218,12 +10291,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IInkTablet {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IInkTablet {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10273,6 +10340,12 @@ pub struct IInkTablet_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IInkTablet2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IInkTablet2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IInkTablet2 {
     #[doc = "*Required features: `\"Win32_UI_TabletPC\"`*"]
@@ -10330,12 +10403,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IInkTablet2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IInkTablet2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10365,6 +10432,12 @@ pub struct IInkTablet2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IInkTablet3(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IInkTablet3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IInkTablet3 {
     #[doc = "*Required features: `\"Win32_UI_TabletPC\"`*"]
@@ -10427,12 +10500,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IInkTablet3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IInkTablet3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10463,6 +10530,12 @@ pub struct IInkTablet3_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IInkTablets(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IInkTablets {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IInkTablets {
     #[doc = "*Required features: `\"Win32_UI_TabletPC\"`*"]
@@ -10543,12 +10616,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IInkTablets {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IInkTablets {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10591,6 +10658,12 @@ pub struct IInkTablets_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IInkTransform(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IInkTransform {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IInkTransform {
     #[doc = "*Required features: `\"Win32_UI_TabletPC\"`*"]
@@ -10740,12 +10813,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IInkTransform {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IInkTransform {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10802,6 +10869,12 @@ pub struct IInkTransform_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IInkWordList(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IInkWordList {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IInkWordList {
     #[doc = "*Required features: `\"Win32_UI_TabletPC\"`, `\"Win32_Foundation\"`*"]
@@ -10869,12 +10942,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IInkWordList {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IInkWordList {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10915,6 +10982,12 @@ pub struct IInkWordList_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IInkWordList2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IInkWordList2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IInkWordList2 {
     #[doc = "*Required features: `\"Win32_UI_TabletPC\"`, `\"Win32_Foundation\"`*"]
@@ -10972,12 +11045,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IInkWordList2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IInkWordList2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11009,6 +11076,11 @@ pub struct IInkWordList2_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TabletPC\"`*"]
 #[repr(transparent)]
 pub struct IInputPanelWindowHandle(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInputPanelWindowHandle {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IInputPanelWindowHandle {
     #[doc = "*Required features: `\"Win32_UI_TabletPC\"`*"]
     pub unsafe fn AttachedEditWindow32(&self) -> ::windows::core::Result<i32> {
@@ -11049,11 +11121,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IInpu
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IInputPanelWindowHandle {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IInputPanelWindowHandle {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11082,6 +11149,12 @@ pub struct IInputPanelWindowHandle_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IMathInputControl(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IMathInputControl {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IMathInputControl {
     #[doc = "*Required features: `\"Win32_UI_TabletPC\"`*"]
@@ -11210,12 +11283,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IMathInputControl {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IMathInputControl {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11298,6 +11365,7 @@ impl ::core::fmt::Debug for INKMETRIC {
 }
 unsafe impl ::windows::core::Abi for INKMETRIC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for INKMETRIC {
     fn eq(&self, other: &Self) -> bool {
@@ -11338,6 +11406,12 @@ pub const IP_MARGIN: u32 = 4u32;
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IPenInputPanel(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IPenInputPanel {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IPenInputPanel {
     #[doc = "*Required features: `\"Win32_UI_TabletPC\"`*"]
@@ -11505,12 +11579,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IPenInputPanel {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IPenInputPanel {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11569,6 +11637,11 @@ pub struct IPenInputPanel_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TabletPC\"`*"]
 #[repr(transparent)]
 pub struct IRealTimeStylus(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRealTimeStylus {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRealTimeStylus {
     #[doc = "*Required features: `\"Win32_UI_TabletPC\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -11741,11 +11814,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IReal
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IRealTimeStylus {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IRealTimeStylus {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11839,6 +11907,11 @@ pub struct IRealTimeStylus_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TabletPC\"`*"]
 #[repr(transparent)]
 pub struct IRealTimeStylus2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRealTimeStylus2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRealTimeStylus2 {
     #[doc = "*Required features: `\"Win32_UI_TabletPC\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -11872,11 +11945,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IReal
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IRealTimeStylus2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IRealTimeStylus2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11908,6 +11976,11 @@ pub struct IRealTimeStylus2_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TabletPC\"`*"]
 #[repr(transparent)]
 pub struct IRealTimeStylus3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRealTimeStylus3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRealTimeStylus3 {
     #[doc = "*Required features: `\"Win32_UI_TabletPC\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -11941,11 +12014,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IReal
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IRealTimeStylus3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IRealTimeStylus3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11977,6 +12045,11 @@ pub struct IRealTimeStylus3_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TabletPC\"`*"]
 #[repr(transparent)]
 pub struct IRealTimeStylusSynchronization(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRealTimeStylusSynchronization {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRealTimeStylusSynchronization {
     #[doc = "*Required features: `\"Win32_UI_TabletPC\"`*"]
     pub unsafe fn AcquireLock(&self, lock: RealTimeStylusLockType) -> ::windows::core::Result<()> {
@@ -12007,11 +12080,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IReal
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IRealTimeStylusSynchronization {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IRealTimeStylusSynchronization {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12038,6 +12106,12 @@ pub struct IRealTimeStylusSynchronization_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ISketchInk(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ISketchInk {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ISketchInk {}
 #[cfg(feature = "Win32_System_Com")]
@@ -12089,12 +12163,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ISketchInk {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ISketchInk {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12122,6 +12190,11 @@ pub struct ISketchInk_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TabletPC\"`*"]
 #[repr(transparent)]
 pub struct IStrokeBuilder(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStrokeBuilder {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IStrokeBuilder {
     #[doc = "*Required features: `\"Win32_UI_TabletPC\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -12174,11 +12247,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IStro
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IStrokeBuilder {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IStrokeBuilder {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12223,6 +12291,11 @@ pub struct IStrokeBuilder_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TabletPC\"`*"]
 #[repr(transparent)]
 pub struct IStylusAsyncPlugin(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStylusAsyncPlugin {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IStylusAsyncPlugin {
     #[doc = "*Required features: `\"Win32_UI_TabletPC\"`*"]
     pub unsafe fn RealTimeStylusEnabled<'a, Param0: ::windows::core::IntoParam<'a, IRealTimeStylus>>(&self, pirtssrc: Param0, ptcids: &[u32]) -> ::windows::core::Result<()> {
@@ -12341,11 +12414,6 @@ impl<'a> ::windows::core::IntoParam<'a, IStylusPlugin> for &'a IStylusAsyncPlugi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IStylusAsyncPlugin {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IStylusAsyncPlugin {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12369,6 +12437,11 @@ pub struct IStylusAsyncPlugin_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TabletPC\"`*"]
 #[repr(transparent)]
 pub struct IStylusPlugin(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStylusPlugin {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IStylusPlugin {
     #[doc = "*Required features: `\"Win32_UI_TabletPC\"`*"]
     pub unsafe fn RealTimeStylusEnabled<'a, Param0: ::windows::core::IntoParam<'a, IRealTimeStylus>>(&self, pirtssrc: Param0, ptcids: &[u32]) -> ::windows::core::Result<()> {
@@ -12467,11 +12540,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IStyl
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IStylusPlugin {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IStylusPlugin {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12533,6 +12601,11 @@ pub struct IStylusPlugin_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TabletPC\"`*"]
 #[repr(transparent)]
 pub struct IStylusSyncPlugin(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStylusSyncPlugin {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IStylusSyncPlugin {
     #[doc = "*Required features: `\"Win32_UI_TabletPC\"`*"]
     pub unsafe fn RealTimeStylusEnabled<'a, Param0: ::windows::core::IntoParam<'a, IRealTimeStylus>>(&self, pirtssrc: Param0, ptcids: &[u32]) -> ::windows::core::Result<()> {
@@ -12651,11 +12724,6 @@ impl<'a> ::windows::core::IntoParam<'a, IStylusPlugin> for &'a IStylusSyncPlugin
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IStylusSyncPlugin {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IStylusSyncPlugin {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12679,6 +12747,11 @@ pub struct IStylusSyncPlugin_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TabletPC\"`*"]
 #[repr(transparent)]
 pub struct ITextInputPanel(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITextInputPanel {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITextInputPanel {
     #[doc = "*Required features: `\"Win32_UI_TabletPC\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -12822,11 +12895,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IText
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITextInputPanel {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITextInputPanel {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12899,6 +12967,11 @@ pub struct ITextInputPanel_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TabletPC\"`*"]
 #[repr(transparent)]
 pub struct ITextInputPanelEventSink(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITextInputPanelEventSink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITextInputPanelEventSink {
     #[doc = "*Required features: `\"Win32_UI_TabletPC\"`*"]
     pub unsafe fn InPlaceStateChanging(&self, oldinplacestate: InPlaceState, newinplacestate: InPlaceState) -> ::windows::core::Result<()> {
@@ -12975,11 +13048,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IText
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITextInputPanelEventSink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITextInputPanelEventSink {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13033,6 +13101,11 @@ pub struct ITextInputPanelEventSink_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TabletPC\"`*"]
 #[repr(transparent)]
 pub struct ITextInputPanelRunInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITextInputPanelRunInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITextInputPanelRunInfo {
     #[doc = "*Required features: `\"Win32_UI_TabletPC\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -13059,11 +13132,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for ITextInpu
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITextInputPanelRunInfo {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for ITextInputPanelRunInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for ITextInputPanelRunInfo {
@@ -13093,6 +13161,11 @@ pub struct ITextInputPanelRunInfo_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TabletPC\"`*"]
 #[repr(transparent)]
 pub struct ITipAutoCompleteClient(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITipAutoCompleteClient {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITipAutoCompleteClient {
     #[doc = "*Required features: `\"Win32_UI_TabletPC\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -13140,11 +13213,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITipA
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITipAutoCompleteClient {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITipAutoCompleteClient {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13185,6 +13253,11 @@ pub struct ITipAutoCompleteClient_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TabletPC\"`*"]
 #[repr(transparent)]
 pub struct ITipAutoCompleteProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITipAutoCompleteProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITipAutoCompleteProvider {
     #[doc = "*Required features: `\"Win32_UI_TabletPC\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -13215,11 +13288,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for ITipAutoC
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITipAutoCompleteProvider {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for ITipAutoCompleteProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for ITipAutoCompleteProvider {
@@ -13273,6 +13341,7 @@ impl ::core::default::Default for InPlaceDirection {
 }
 unsafe impl ::windows::core::Abi for InPlaceDirection {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for InPlaceDirection {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13302,6 +13371,7 @@ impl ::core::default::Default for InPlaceState {
 }
 unsafe impl ::windows::core::Abi for InPlaceState {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for InPlaceState {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13414,6 +13484,7 @@ impl ::core::default::Default for InkApplicationGesture {
 }
 unsafe impl ::windows::core::Abi for InkApplicationGesture {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for InkApplicationGesture {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13447,6 +13518,7 @@ impl ::core::default::Default for InkBoundingBoxMode {
 }
 unsafe impl ::windows::core::Abi for InkBoundingBoxMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for InkBoundingBoxMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13490,6 +13562,7 @@ impl ::core::default::Default for InkClipboardFormats {
 }
 unsafe impl ::windows::core::Abi for InkClipboardFormats {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for InkClipboardFormats {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13523,6 +13596,7 @@ impl ::core::default::Default for InkClipboardModes {
 }
 unsafe impl ::windows::core::Abi for InkClipboardModes {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for InkClipboardModes {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13552,6 +13626,7 @@ impl ::core::default::Default for InkCollectionMode {
 }
 unsafe impl ::windows::core::Abi for InkCollectionMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for InkCollectionMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13616,6 +13691,7 @@ impl ::core::default::Default for InkCollectorEventInterest {
 }
 unsafe impl ::windows::core::Abi for InkCollectorEventInterest {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for InkCollectorEventInterest {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13645,6 +13721,7 @@ impl ::core::default::Default for InkCursorButtonState {
 }
 unsafe impl ::windows::core::Abi for InkCursorButtonState {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for InkCursorButtonState {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13673,6 +13750,7 @@ impl ::core::default::Default for InkDisplayMode {
 }
 unsafe impl ::windows::core::Abi for InkDisplayMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for InkDisplayMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13705,6 +13783,7 @@ impl ::core::default::Default for InkDivisionType {
 }
 unsafe impl ::windows::core::Abi for InkDivisionType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for InkDivisionType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13736,6 +13815,7 @@ impl ::core::default::Default for InkEditStatus {
 }
 unsafe impl ::windows::core::Abi for InkEditStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for InkEditStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13765,6 +13845,7 @@ impl ::core::default::Default for InkExtractFlags {
 }
 unsafe impl ::windows::core::Abi for InkExtractFlags {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for InkExtractFlags {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13792,6 +13873,7 @@ impl ::core::default::Default for InkInsertMode {
 }
 unsafe impl ::windows::core::Abi for InkInsertMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for InkInsertMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13825,6 +13907,7 @@ impl ::core::default::Default for InkMode {
 }
 unsafe impl ::windows::core::Abi for InkMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for InkMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13854,6 +13937,7 @@ impl ::core::default::Default for InkMouseButton {
 }
 unsafe impl ::windows::core::Abi for InkMouseButton {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for InkMouseButton {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13909,6 +13993,7 @@ impl ::core::default::Default for InkMousePointer {
 }
 unsafe impl ::windows::core::Abi for InkMousePointer {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for InkMousePointer {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13937,6 +14022,7 @@ impl ::core::default::Default for InkOverlayAttachMode {
 }
 unsafe impl ::windows::core::Abi for InkOverlayAttachMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for InkOverlayAttachMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13966,6 +14052,7 @@ impl ::core::default::Default for InkOverlayEditingMode {
 }
 unsafe impl ::windows::core::Abi for InkOverlayEditingMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for InkOverlayEditingMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13993,6 +14080,7 @@ impl ::core::default::Default for InkOverlayEraserMode {
 }
 unsafe impl ::windows::core::Abi for InkOverlayEraserMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for InkOverlayEraserMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14020,6 +14108,7 @@ impl ::core::default::Default for InkPenTip {
 }
 unsafe impl ::windows::core::Abi for InkPenTip {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for InkPenTip {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14049,6 +14138,7 @@ impl ::core::default::Default for InkPersistenceCompressionMode {
 }
 unsafe impl ::windows::core::Abi for InkPersistenceCompressionMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for InkPersistenceCompressionMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14080,6 +14170,7 @@ impl ::core::default::Default for InkPersistenceFormat {
 }
 unsafe impl ::windows::core::Abi for InkPersistenceFormat {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for InkPersistenceFormat {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14112,6 +14203,7 @@ impl ::core::default::Default for InkPictureSizeMode {
 }
 unsafe impl ::windows::core::Abi for InkPictureSizeMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for InkPictureSizeMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14167,6 +14259,7 @@ impl ::core::default::Default for InkRasterOperation {
 }
 unsafe impl ::windows::core::Abi for InkRasterOperation {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for InkRasterOperation {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14200,6 +14293,7 @@ impl ::core::fmt::Debug for InkRecoGuide {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for InkRecoGuide {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for InkRecoGuide {
@@ -14238,6 +14332,7 @@ impl ::core::default::Default for InkRecognitionAlternatesSelection {
 }
 unsafe impl ::windows::core::Abi for InkRecognitionAlternatesSelection {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for InkRecognitionAlternatesSelection {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14267,6 +14362,7 @@ impl ::core::default::Default for InkRecognitionConfidence {
 }
 unsafe impl ::windows::core::Abi for InkRecognitionConfidence {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for InkRecognitionConfidence {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14308,6 +14404,7 @@ impl ::core::default::Default for InkRecognitionModes {
 }
 unsafe impl ::windows::core::Abi for InkRecognitionModes {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for InkRecognitionModes {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14353,6 +14450,7 @@ impl ::core::default::Default for InkRecognitionStatus {
 }
 unsafe impl ::windows::core::Abi for InkRecognitionStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for InkRecognitionStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14420,6 +14518,7 @@ impl ::core::default::Default for InkRecognizerCapabilities {
 }
 unsafe impl ::windows::core::Abi for InkRecognizerCapabilities {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for InkRecognizerCapabilities {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14449,6 +14548,7 @@ impl ::core::default::Default for InkRecognizerCharacterAutoCompletionMode {
 }
 unsafe impl ::windows::core::Abi for InkRecognizerCharacterAutoCompletionMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for InkRecognizerCharacterAutoCompletionMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14481,6 +14581,7 @@ impl ::core::default::Default for InkSelectionConstants {
 }
 unsafe impl ::windows::core::Abi for InkSelectionConstants {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for InkSelectionConstants {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14510,6 +14611,7 @@ impl ::core::default::Default for InkShiftKeyModifierFlags {
 }
 unsafe impl ::windows::core::Abi for InkShiftKeyModifierFlags {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for InkShiftKeyModifierFlags {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14554,6 +14656,7 @@ impl ::core::default::Default for InkSystemGesture {
 }
 unsafe impl ::windows::core::Abi for InkSystemGesture {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for InkSystemGesture {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14588,6 +14691,7 @@ impl ::core::default::Default for InteractionMode {
 }
 unsafe impl ::windows::core::Abi for InteractionMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for InteractionMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14637,6 +14741,7 @@ impl ::core::default::Default for KEYMODIFIER {
 }
 unsafe impl ::windows::core::Abi for KEYMODIFIER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KEYMODIFIER {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14667,6 +14772,7 @@ impl ::core::fmt::Debug for LATTICE_METRICS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for LATTICE_METRICS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for LATTICE_METRICS {
@@ -14707,6 +14813,7 @@ impl ::core::default::Default for LINE_METRICS {
 }
 unsafe impl ::windows::core::Abi for LINE_METRICS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for LINE_METRICS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14737,6 +14844,7 @@ impl ::core::fmt::Debug for LINE_SEGMENT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for LINE_SEGMENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for LINE_SEGMENT {
@@ -14823,6 +14931,7 @@ impl ::core::default::Default for MICUIELEMENT {
 }
 unsafe impl ::windows::core::Abi for MICUIELEMENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MICUIELEMENT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14854,6 +14963,7 @@ impl ::core::default::Default for MICUIELEMENTSTATE {
 }
 unsafe impl ::windows::core::Abi for MICUIELEMENTSTATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MICUIELEMENTSTATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14900,6 +15010,7 @@ impl ::core::default::Default for MouseButton {
 }
 unsafe impl ::windows::core::Abi for MouseButton {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MouseButton {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14930,6 +15041,7 @@ impl ::core::fmt::Debug for PACKET_DESCRIPTION {
 }
 unsafe impl ::windows::core::Abi for PACKET_DESCRIPTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PACKET_DESCRIPTION {
     fn eq(&self, other: &Self) -> bool {
@@ -14961,6 +15073,7 @@ impl ::core::fmt::Debug for PACKET_PROPERTY {
 }
 unsafe impl ::windows::core::Abi for PACKET_PROPERTY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PACKET_PROPERTY {
     fn eq(&self, other: &Self) -> bool {
@@ -14994,6 +15107,7 @@ impl ::core::fmt::Debug for PROPERTY_METRICS {
 }
 unsafe impl ::windows::core::Abi for PROPERTY_METRICS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROPERTY_METRICS {
     fn eq(&self, other: &Self) -> bool {
@@ -15057,6 +15171,7 @@ impl ::core::default::Default for PROPERTY_UNITS {
 }
 unsafe impl ::windows::core::Abi for PROPERTY_UNITS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PROPERTY_UNITS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -15088,6 +15203,7 @@ impl ::core::default::Default for PanelInputArea {
 }
 unsafe impl ::windows::core::Abi for PanelInputArea {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PanelInputArea {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -15119,6 +15235,7 @@ impl ::core::default::Default for PanelType {
 }
 unsafe impl ::windows::core::Abi for PanelType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PanelType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -15187,6 +15304,7 @@ impl ::core::fmt::Debug for RECO_ATTRS {
 }
 unsafe impl ::windows::core::Abi for RECO_ATTRS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RECO_ATTRS {
     fn eq(&self, other: &Self) -> bool {
@@ -15225,6 +15343,7 @@ impl ::core::fmt::Debug for RECO_GUIDE {
 }
 unsafe impl ::windows::core::Abi for RECO_GUIDE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RECO_GUIDE {
     fn eq(&self, other: &Self) -> bool {
@@ -15261,6 +15380,7 @@ impl ::core::fmt::Debug for RECO_LATTICE {
 }
 unsafe impl ::windows::core::Abi for RECO_LATTICE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RECO_LATTICE {
     fn eq(&self, other: &Self) -> bool {
@@ -15296,6 +15416,7 @@ impl ::core::fmt::Debug for RECO_LATTICE_COLUMN {
 }
 unsafe impl ::windows::core::Abi for RECO_LATTICE_COLUMN {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RECO_LATTICE_COLUMN {
     fn eq(&self, other: &Self) -> bool {
@@ -15331,6 +15452,7 @@ impl ::core::fmt::Debug for RECO_LATTICE_ELEMENT {
 }
 unsafe impl ::windows::core::Abi for RECO_LATTICE_ELEMENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RECO_LATTICE_ELEMENT {
     fn eq(&self, other: &Self) -> bool {
@@ -15362,6 +15484,7 @@ impl ::core::fmt::Debug for RECO_LATTICE_PROPERTIES {
 }
 unsafe impl ::windows::core::Abi for RECO_LATTICE_PROPERTIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RECO_LATTICE_PROPERTIES {
     fn eq(&self, other: &Self) -> bool {
@@ -15394,6 +15517,7 @@ impl ::core::fmt::Debug for RECO_LATTICE_PROPERTY {
 }
 unsafe impl ::windows::core::Abi for RECO_LATTICE_PROPERTY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RECO_LATTICE_PROPERTY {
     fn eq(&self, other: &Self) -> bool {
@@ -15425,6 +15549,7 @@ impl ::core::fmt::Debug for RECO_RANGE {
 }
 unsafe impl ::windows::core::Abi for RECO_RANGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RECO_RANGE {
     fn eq(&self, other: &Self) -> bool {
@@ -15529,6 +15654,7 @@ impl ::core::default::Default for RealTimeStylusDataInterest {
 }
 unsafe impl ::windows::core::Abi for RealTimeStylusDataInterest {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RealTimeStylusDataInterest {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -15564,6 +15690,7 @@ impl ::core::default::Default for RealTimeStylusLockType {
 }
 unsafe impl ::windows::core::Abi for RealTimeStylusLockType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RealTimeStylusLockType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -15593,6 +15720,7 @@ impl ::core::default::Default for SCROLLDIRECTION {
 }
 unsafe impl ::windows::core::Abi for SCROLLDIRECTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SCROLLDIRECTION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -15618,6 +15746,7 @@ impl ::core::fmt::Debug for STROKE_RANGE {
 }
 unsafe impl ::windows::core::Abi for STROKE_RANGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for STROKE_RANGE {
     fn eq(&self, other: &Self) -> bool {
@@ -15695,6 +15824,7 @@ impl ::core::fmt::Debug for SYSTEM_EVENT_DATA {
 }
 unsafe impl ::windows::core::Abi for SYSTEM_EVENT_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SYSTEM_EVENT_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -15732,6 +15862,7 @@ impl ::core::default::Default for ScrollBarsConstants {
 }
 unsafe impl ::windows::core::Abi for ScrollBarsConstants {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ScrollBarsConstants {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -15761,6 +15892,7 @@ impl ::core::default::Default for SelAlignmentConstants {
 }
 unsafe impl ::windows::core::Abi for SelAlignmentConstants {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SelAlignmentConstants {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -15804,6 +15936,7 @@ impl ::core::default::Default for SelectionHitResult {
 }
 unsafe impl ::windows::core::Abi for SelectionHitResult {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SelectionHitResult {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -15921,6 +16054,7 @@ impl ::core::fmt::Debug for StylusInfo {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for StylusInfo {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for StylusInfo {
@@ -15959,6 +16093,7 @@ impl ::core::default::Default for StylusQueue {
 }
 unsafe impl ::windows::core::Abi for StylusQueue {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for StylusQueue {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -16012,6 +16147,7 @@ impl ::core::default::Default for TabletDeviceKind {
 }
 unsafe impl ::windows::core::Abi for TabletDeviceKind {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TabletDeviceKind {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -16043,6 +16179,7 @@ impl ::core::default::Default for TabletHardwareCapabilities {
 }
 unsafe impl ::windows::core::Abi for TabletHardwareCapabilities {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TabletHardwareCapabilities {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -16082,6 +16219,7 @@ impl ::core::default::Default for TabletPropertyMetricUnit {
 }
 unsafe impl ::windows::core::Abi for TabletPropertyMetricUnit {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TabletPropertyMetricUnit {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -16117,6 +16255,7 @@ impl ::core::default::Default for VisualState {
 }
 unsafe impl ::windows::core::Abi for VisualState {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VisualState {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -16139,6 +16278,12 @@ pub const WM_TABLET_QUERYSYSTEMGESTURESTATUS: u32 = 716u32;
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct _IInkCollectorEvents(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for _IInkCollectorEvents {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl _IInkCollectorEvents {}
 #[cfg(feature = "Win32_System_Com")]
@@ -16190,12 +16335,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for _IInkCollectorEvents {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for _IInkCollectorEvents {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -16224,6 +16363,12 @@ pub struct _IInkCollectorEvents_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct _IInkEditEvents(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for _IInkEditEvents {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl _IInkEditEvents {}
 #[cfg(feature = "Win32_System_Com")]
@@ -16275,12 +16420,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for _IInkEditEvents {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for _IInkEditEvents {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -16309,6 +16448,12 @@ pub struct _IInkEditEvents_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct _IInkEvents(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for _IInkEvents {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl _IInkEvents {}
 #[cfg(feature = "Win32_System_Com")]
@@ -16360,12 +16505,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for _IInkEvents {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for _IInkEvents {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -16394,6 +16533,12 @@ pub struct _IInkEvents_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct _IInkOverlayEvents(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for _IInkOverlayEvents {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl _IInkOverlayEvents {}
 #[cfg(feature = "Win32_System_Com")]
@@ -16445,12 +16590,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for _IInkOverlayEvents {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for _IInkOverlayEvents {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -16479,6 +16618,12 @@ pub struct _IInkOverlayEvents_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct _IInkPictureEvents(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for _IInkPictureEvents {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl _IInkPictureEvents {}
 #[cfg(feature = "Win32_System_Com")]
@@ -16530,12 +16675,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for _IInkPictureEvents {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for _IInkPictureEvents {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -16564,6 +16703,12 @@ pub struct _IInkPictureEvents_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct _IInkRecognitionEvents(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for _IInkRecognitionEvents {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl _IInkRecognitionEvents {}
 #[cfg(feature = "Win32_System_Com")]
@@ -16615,12 +16760,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for _IInkRecognitionEvents {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for _IInkRecognitionEvents {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -16649,6 +16788,12 @@ pub struct _IInkRecognitionEvents_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct _IInkStrokesEvents(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for _IInkStrokesEvents {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl _IInkStrokesEvents {}
 #[cfg(feature = "Win32_System_Com")]
@@ -16700,12 +16845,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for _IInkStrokesEvents {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for _IInkStrokesEvents {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -16734,6 +16873,12 @@ pub struct _IInkStrokesEvents_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct _IMathInputControlEvents(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for _IMathInputControlEvents {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl _IMathInputControlEvents {}
 #[cfg(feature = "Win32_System_Com")]
@@ -16785,12 +16930,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for _IMathInputControlEvents {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for _IMathInputControlEvents {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -16819,6 +16958,12 @@ pub struct _IMathInputControlEvents_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct _IPenInputPanelEvents(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for _IPenInputPanelEvents {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl _IPenInputPanelEvents {}
 #[cfg(feature = "Win32_System_Com")]
@@ -16870,12 +17015,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for _IPenInputPanelEvents {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for _IPenInputPanelEvents {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -16921,6 +17060,7 @@ impl ::core::default::Default for enumGetCandidateFlags {
 }
 unsafe impl ::windows::core::Abi for enumGetCandidateFlags {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for enumGetCandidateFlags {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -16950,6 +17090,7 @@ impl ::core::default::Default for enumINKMETRIC_FLAGS {
 }
 unsafe impl ::windows::core::Abi for enumINKMETRIC_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for enumINKMETRIC_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -16977,6 +17118,7 @@ impl ::core::default::Default for enumRECO_TYPE {
 }
 unsafe impl ::windows::core::Abi for enumRECO_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for enumRECO_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

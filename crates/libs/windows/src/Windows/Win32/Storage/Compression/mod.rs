@@ -25,6 +25,7 @@ impl ::core::fmt::Debug for COMPRESSOR_HANDLE {
 }
 unsafe impl ::windows::core::Abi for COMPRESSOR_HANDLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[doc = "*Required features: `\"Win32_Storage_Compression\"`*"]
 #[repr(transparent)]
@@ -51,6 +52,7 @@ impl ::core::default::Default for COMPRESS_ALGORITHM {
 }
 unsafe impl ::windows::core::Abi for COMPRESS_ALGORITHM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for COMPRESS_ALGORITHM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -83,6 +85,7 @@ impl ::core::fmt::Debug for COMPRESS_ALLOCATION_ROUTINES {
 }
 unsafe impl ::windows::core::Abi for COMPRESS_ALLOCATION_ROUTINES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for COMPRESS_ALLOCATION_ROUTINES {
     fn eq(&self, other: &Self) -> bool {
@@ -118,6 +121,7 @@ impl ::core::default::Default for COMPRESS_INFORMATION_CLASS {
 }
 unsafe impl ::windows::core::Abi for COMPRESS_INFORMATION_CLASS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for COMPRESS_INFORMATION_CLASS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

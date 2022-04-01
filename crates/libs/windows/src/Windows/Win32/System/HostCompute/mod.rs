@@ -25,6 +25,7 @@ impl ::core::fmt::Debug for HCS_CALLBACK {
 }
 unsafe impl ::windows::core::Abi for HCS_CALLBACK {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "implement")]
 ::core::include!("impl.rs");

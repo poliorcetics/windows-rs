@@ -20,6 +20,7 @@ impl ::core::default::Default for BitmapCreateOptions {
 }
 unsafe impl ::windows::core::Abi for BitmapCreateOptions {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for BitmapCreateOptions {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -56,7 +57,6 @@ impl ::core::ops::Not for BitmapCreateOptions {
 }
 unsafe impl ::windows::core::RuntimeType for BitmapCreateOptions {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Xaml.Media.Imaging.BitmapCreateOptions;u4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -308,11 +308,6 @@ impl BitmapImage {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for BitmapImage {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for BitmapImage {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -326,7 +321,6 @@ impl ::core::fmt::Debug for BitmapImage {
 }
 unsafe impl ::windows::core::RuntimeType for BitmapImage {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Imaging.BitmapImage;{31af3271-e3b4-442d-a341-4c0226b2725b})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -495,11 +489,6 @@ impl BitmapSource {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for BitmapSource {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for BitmapSource {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -513,7 +502,6 @@ impl ::core::fmt::Debug for BitmapSource {
 }
 unsafe impl ::windows::core::RuntimeType for BitmapSource {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Imaging.BitmapSource;{23d86411-202f-41b2-8c5b-a8a3b333800b})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -628,6 +616,7 @@ impl ::core::default::Default for DecodePixelType {
 }
 unsafe impl ::windows::core::Abi for DecodePixelType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DecodePixelType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -636,7 +625,6 @@ impl ::core::fmt::Debug for DecodePixelType {
 }
 unsafe impl ::windows::core::RuntimeType for DecodePixelType {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Xaml.Media.Imaging.DecodePixelType;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -659,11 +647,6 @@ impl DownloadProgressEventArgs {
         unsafe { (::windows::core::Interface::vtable(this).SetProgress)(::core::mem::transmute_copy(this), value).ok() }
     }
 }
-impl ::core::clone::Clone for DownloadProgressEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DownloadProgressEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -677,7 +660,6 @@ impl ::core::fmt::Debug for DownloadProgressEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for DownloadProgressEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Imaging.DownloadProgressEventArgs;{7311e0d4-fe94-4e70-9b90-cdd47ac23afb})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -783,11 +765,6 @@ impl<F: FnMut(&::core::option::Option<::windows::core::IInspectable>, &::core::o
         ((*this).invoke)(::core::mem::transmute(&sender), ::core::mem::transmute(&e)).into()
     }
 }
-impl ::core::clone::Clone for DownloadProgressEventHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DownloadProgressEventHandler {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -805,7 +782,6 @@ unsafe impl ::windows::core::Interface for DownloadProgressEventHandler {
 }
 unsafe impl ::windows::core::RuntimeType for DownloadProgressEventHandler {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{1abaee23-74ee-4cc7-99ba-b171e3cda61e}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -819,6 +795,11 @@ pub struct DownloadProgressEventHandler_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBitmapImage(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBitmapImage {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBitmapImage {
     type Vtable = IBitmapImage_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x31af3271_e3b4_442d_a341_4c0226b2725b);
@@ -869,6 +850,11 @@ pub struct IBitmapImage_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBitmapImage2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBitmapImage2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBitmapImage2 {
     type Vtable = IBitmapImage2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1069c1b6_8c9b_4762_be3d_759f5698f2b3);
@@ -883,6 +869,11 @@ pub struct IBitmapImage2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBitmapImage3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBitmapImage3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBitmapImage3 {
     type Vtable = IBitmapImage3_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf1de6f26_3c73_453f_a7ba_9b85c18b3733);
@@ -901,6 +892,11 @@ pub struct IBitmapImage3_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBitmapImageFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBitmapImageFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBitmapImageFactory {
     type Vtable = IBitmapImageFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc9132978_4810_4e5e_8087_03671ee60d85);
@@ -917,6 +913,11 @@ pub struct IBitmapImageFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBitmapImageStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBitmapImageStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBitmapImageStatics {
     type Vtable = IBitmapImageStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9e282143_70e8_437c_9fa4_2cbf295cff84);
@@ -933,6 +934,11 @@ pub struct IBitmapImageStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBitmapImageStatics2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBitmapImageStatics2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBitmapImageStatics2 {
     type Vtable = IBitmapImageStatics2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc5f5576a_75af_41a4_b893_8fe91fee2882);
@@ -946,6 +952,11 @@ pub struct IBitmapImageStatics2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBitmapImageStatics3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBitmapImageStatics3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBitmapImageStatics3 {
     type Vtable = IBitmapImageStatics3_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x2b44e30d_f6d5_4411_a8cd_bf7603c4faa0);
@@ -961,6 +972,11 @@ pub struct IBitmapImageStatics3_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBitmapSource(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBitmapSource {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBitmapSource {
     type Vtable = IBitmapSource_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x23d86411_202f_41b2_8c5b_a8a3b333800b);
@@ -983,6 +999,11 @@ pub struct IBitmapSource_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBitmapSourceFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBitmapSourceFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBitmapSourceFactory {
     type Vtable = IBitmapSourceFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe240420e_d4a7_49a4_a0b4_a59fdd77e508);
@@ -996,6 +1017,11 @@ pub struct IBitmapSourceFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBitmapSourceStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBitmapSourceStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBitmapSourceStatics {
     type Vtable = IBitmapSourceStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9a9c9981_827b_4e51_891b_8a15b511842d);
@@ -1010,6 +1036,11 @@ pub struct IBitmapSourceStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDownloadProgressEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDownloadProgressEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDownloadProgressEventArgs {
     type Vtable = IDownloadProgressEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x7311e0d4_fe94_4e70_9b90_cdd47ac23afb);
@@ -1024,6 +1055,11 @@ pub struct IDownloadProgressEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IRenderTargetBitmap(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRenderTargetBitmap {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IRenderTargetBitmap {
     type Vtable = IRenderTargetBitmap_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x500dee81_893c_4c0a_8fec_4678ac717589);
@@ -1050,6 +1086,11 @@ pub struct IRenderTargetBitmap_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IRenderTargetBitmapStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRenderTargetBitmapStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IRenderTargetBitmapStatics {
     type Vtable = IRenderTargetBitmapStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf0a1efee_c131_4d40_9c47_f7d7cf2b077f);
@@ -1064,6 +1105,11 @@ pub struct IRenderTargetBitmapStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISoftwareBitmapSource(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISoftwareBitmapSource {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISoftwareBitmapSource {
     type Vtable = ISoftwareBitmapSource_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd2dd9ed0_d3c5_4056_91b5_b7c1d1e8130e);
@@ -1080,6 +1126,11 @@ pub struct ISoftwareBitmapSource_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISurfaceImageSource(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISurfaceImageSource {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISurfaceImageSource {
     type Vtable = ISurfaceImageSource_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x62f7d416_c714_4c4c_8273_f839bc58135c);
@@ -1092,6 +1143,11 @@ pub struct ISurfaceImageSource_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISurfaceImageSourceFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISurfaceImageSourceFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISurfaceImageSourceFactory {
     type Vtable = ISurfaceImageSourceFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x3ab2212a_ef65_4a5f_bfac_73993e8c12c9);
@@ -1106,6 +1162,11 @@ pub struct ISurfaceImageSourceFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISvgImageSource(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISvgImageSource {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISvgImageSource {
     type Vtable = ISvgImageSource_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x03e1cec3_0ca8_4a4e_8d7c_c808a0838586);
@@ -1150,6 +1211,11 @@ pub struct ISvgImageSource_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISvgImageSourceFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISvgImageSourceFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISvgImageSourceFactory {
     type Vtable = ISvgImageSourceFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc794e9e7_cf23_4d72_bf1a_dfaa16d8ea52);
@@ -1167,6 +1233,11 @@ pub struct ISvgImageSourceFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISvgImageSourceFailedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISvgImageSourceFailedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISvgImageSourceFailedEventArgs {
     type Vtable = ISvgImageSourceFailedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x68bb3170_3ccc_4035_ac01_9834543d744e);
@@ -1180,6 +1251,11 @@ pub struct ISvgImageSourceFailedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISvgImageSourceOpenedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISvgImageSourceOpenedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISvgImageSourceOpenedEventArgs {
     type Vtable = ISvgImageSourceOpenedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x85ef4c16_748e_4008_95c7_6a23dd7316db);
@@ -1192,6 +1268,11 @@ pub struct ISvgImageSourceOpenedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISvgImageSourceStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISvgImageSourceStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISvgImageSourceStatics {
     type Vtable = ISvgImageSourceStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9c6638ce_bed1_4aab_acbb_d3e2185d315a);
@@ -1207,6 +1288,11 @@ pub struct ISvgImageSourceStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IVirtualSurfaceImageSource(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVirtualSurfaceImageSource {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IVirtualSurfaceImageSource {
     type Vtable = IVirtualSurfaceImageSource_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x4a711fea_bfac_11e0_a06a_9de44724019b);
@@ -1219,6 +1305,11 @@ pub struct IVirtualSurfaceImageSource_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IVirtualSurfaceImageSourceFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVirtualSurfaceImageSourceFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IVirtualSurfaceImageSourceFactory {
     type Vtable = IVirtualSurfaceImageSourceFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x3ab2212a_bfac_11e0_8a92_69e44724019b);
@@ -1233,6 +1324,11 @@ pub struct IVirtualSurfaceImageSourceFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWriteableBitmap(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWriteableBitmap {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWriteableBitmap {
     type Vtable = IWriteableBitmap_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xbf0b7e6f_df7c_4a85_8413_a1216285835c);
@@ -1250,6 +1346,11 @@ pub struct IWriteableBitmap_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWriteableBitmapFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWriteableBitmapFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWriteableBitmapFactory {
     type Vtable = IWriteableBitmapFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x5563ebb1_3ef2_42c5_9c6d_1cf5dcc041ff);
@@ -1263,6 +1364,11 @@ pub struct IWriteableBitmapFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IXamlRenderingBackgroundTask(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXamlRenderingBackgroundTask {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IXamlRenderingBackgroundTask {
     type Vtable = IXamlRenderingBackgroundTask_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x5d5fe9aa_533e_44b8_a975_fc5f1e3bff52);
@@ -1275,6 +1381,11 @@ pub struct IXamlRenderingBackgroundTask_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IXamlRenderingBackgroundTaskFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXamlRenderingBackgroundTaskFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IXamlRenderingBackgroundTaskFactory {
     type Vtable = IXamlRenderingBackgroundTaskFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa3d1bb63_38f8_4da3_9fca_fd8128a2cbf9);
@@ -1288,6 +1399,11 @@ pub struct IXamlRenderingBackgroundTaskFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IXamlRenderingBackgroundTaskOverrides(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXamlRenderingBackgroundTaskOverrides {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IXamlRenderingBackgroundTaskOverrides {
     type Vtable = IXamlRenderingBackgroundTaskOverrides_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9c2a6997_a908_4711_b4b2_a960db3d8e5a);
@@ -1375,11 +1491,6 @@ impl RenderTargetBitmap {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for RenderTargetBitmap {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for RenderTargetBitmap {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1393,7 +1504,6 @@ impl ::core::fmt::Debug for RenderTargetBitmap {
 }
 unsafe impl ::windows::core::RuntimeType for RenderTargetBitmap {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Imaging.RenderTargetBitmap;{500dee81-893c-4c0a-8fec-4678ac717589})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1514,11 +1624,6 @@ impl SoftwareBitmapSource {
         }
     }
 }
-impl ::core::clone::Clone for SoftwareBitmapSource {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SoftwareBitmapSource {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1532,7 +1637,6 @@ impl ::core::fmt::Debug for SoftwareBitmapSource {
 }
 unsafe impl ::windows::core::RuntimeType for SoftwareBitmapSource {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Imaging.SoftwareBitmapSource;{d2dd9ed0-d3c5-4056-91b5-b7c1d1e8130e})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1692,11 +1796,6 @@ impl SurfaceImageSource {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for SurfaceImageSource {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SurfaceImageSource {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1710,7 +1809,6 @@ impl ::core::fmt::Debug for SurfaceImageSource {
 }
 unsafe impl ::windows::core::RuntimeType for SurfaceImageSource {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Imaging.SurfaceImageSource;{62f7d416-c714-4c4c-8273-f839bc58135c})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1952,11 +2050,6 @@ impl SvgImageSource {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for SvgImageSource {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SvgImageSource {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1970,7 +2063,6 @@ impl ::core::fmt::Debug for SvgImageSource {
 }
 unsafe impl ::windows::core::RuntimeType for SvgImageSource {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Imaging.SvgImageSource;{03e1cec3-0ca8-4a4e-8d7c-c808a0838586})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2077,11 +2169,6 @@ impl SvgImageSourceFailedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for SvgImageSourceFailedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SvgImageSourceFailedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2095,7 +2182,6 @@ impl ::core::fmt::Debug for SvgImageSourceFailedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for SvgImageSourceFailedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Imaging.SvgImageSourceFailedEventArgs;{68bb3170-3ccc-4035-ac01-9834543d744e})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2172,6 +2258,7 @@ impl ::core::default::Default for SvgImageSourceLoadStatus {
 }
 unsafe impl ::windows::core::Abi for SvgImageSourceLoadStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SvgImageSourceLoadStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2180,7 +2267,6 @@ impl ::core::fmt::Debug for SvgImageSourceLoadStatus {
 }
 unsafe impl ::windows::core::RuntimeType for SvgImageSourceLoadStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Xaml.Media.Imaging.SvgImageSourceLoadStatus;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2189,11 +2275,6 @@ unsafe impl ::windows::core::RuntimeType for SvgImageSourceLoadStatus {
 #[repr(transparent)]
 pub struct SvgImageSourceOpenedEventArgs(::windows::core::IUnknown);
 impl SvgImageSourceOpenedEventArgs {}
-impl ::core::clone::Clone for SvgImageSourceOpenedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SvgImageSourceOpenedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2207,7 +2288,6 @@ impl ::core::fmt::Debug for SvgImageSourceOpenedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for SvgImageSourceOpenedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Imaging.SvgImageSourceOpenedEventArgs;{85ef4c16-748e-4008-95c7-6a23dd7316db})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2285,11 +2365,6 @@ impl VirtualSurfaceImageSource {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for VirtualSurfaceImageSource {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for VirtualSurfaceImageSource {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2303,7 +2378,6 @@ impl ::core::fmt::Debug for VirtualSurfaceImageSource {
 }
 unsafe impl ::windows::core::RuntimeType for VirtualSurfaceImageSource {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Imaging.VirtualSurfaceImageSource;{4a711fea-bfac-11e0-a06a-9de44724019b})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2448,11 +2522,6 @@ impl WriteableBitmap {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for WriteableBitmap {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for WriteableBitmap {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2466,7 +2535,6 @@ impl ::core::fmt::Debug for WriteableBitmap {
 }
 unsafe impl ::windows::core::RuntimeType for WriteableBitmap {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Imaging.WriteableBitmap;{bf0b7e6f-df7c-4a85-8413-a1216285835c})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2584,11 +2652,6 @@ unsafe impl ::core::marker::Sync for WriteableBitmap {}
 #[repr(transparent)]
 pub struct XamlRenderingBackgroundTask(::windows::core::IUnknown);
 impl XamlRenderingBackgroundTask {}
-impl ::core::clone::Clone for XamlRenderingBackgroundTask {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for XamlRenderingBackgroundTask {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2602,7 +2665,6 @@ impl ::core::fmt::Debug for XamlRenderingBackgroundTask {
 }
 unsafe impl ::windows::core::RuntimeType for XamlRenderingBackgroundTask {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Imaging.XamlRenderingBackgroundTask;{5d5fe9aa-533e-44b8-a975-fc5f1e3bff52})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

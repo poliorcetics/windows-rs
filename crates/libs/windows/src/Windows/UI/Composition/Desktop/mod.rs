@@ -124,11 +124,6 @@ impl DesktopWindowTarget {
         }
     }
 }
-impl ::core::clone::Clone for DesktopWindowTarget {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DesktopWindowTarget {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -142,7 +137,6 @@ impl ::core::fmt::Debug for DesktopWindowTarget {
 }
 unsafe impl ::windows::core::RuntimeType for DesktopWindowTarget {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Composition.Desktop.DesktopWindowTarget;{6329d6ca-3366-490e-9db3-25312929ac51})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -287,6 +281,11 @@ unsafe impl ::core::marker::Sync for DesktopWindowTarget {}
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDesktopWindowTarget(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDesktopWindowTarget {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDesktopWindowTarget {
     type Vtable = IDesktopWindowTarget_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x6329d6ca_3366_490e_9db3_25312929ac51);

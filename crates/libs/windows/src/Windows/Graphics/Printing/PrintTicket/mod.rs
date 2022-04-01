@@ -2,6 +2,11 @@
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrintTicketCapabilities(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrintTicketCapabilities {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrintTicketCapabilities {
     type Vtable = IPrintTicketCapabilities_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x8c45508b_bbdc_4256_a142_2fd615ecb416);
@@ -37,6 +42,11 @@ pub struct IPrintTicketCapabilities_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrintTicketFeature(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrintTicketFeature {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrintTicketFeature {
     type Vtable = IPrintTicketFeature_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe7607d6a_59f5_4103_8858_b97710963d39);
@@ -64,6 +74,11 @@ pub struct IPrintTicketFeature_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrintTicketOption(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrintTicketOption {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrintTicketOption {
     type Vtable = IPrintTicketOption_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb086cf90_b367_4e4b_bd48_9c78a0bb31ce);
@@ -93,6 +108,11 @@ pub struct IPrintTicketOption_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrintTicketParameterDefinition(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrintTicketParameterDefinition {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrintTicketParameterDefinition {
     type Vtable = IPrintTicketParameterDefinition_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd6bab4e4_2962_4c01_b7f3_9a9294eb8335);
@@ -115,6 +135,11 @@ pub struct IPrintTicketParameterDefinition_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrintTicketParameterInitializer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrintTicketParameterInitializer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrintTicketParameterInitializer {
     type Vtable = IPrintTicketParameterInitializer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x5e3335bb_a0a5_48b1_9d5c_07116ddc597a);
@@ -135,6 +160,11 @@ pub struct IPrintTicketParameterInitializer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrintTicketValue(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrintTicketValue {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrintTicketValue {
     type Vtable = IPrintTicketValue_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x66b30a32_244d_4e22_a98b_bb3cf1f2dd91);
@@ -150,6 +180,11 @@ pub struct IPrintTicketValue_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWorkflowPrintTicket(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWorkflowPrintTicket {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWorkflowPrintTicket {
     type Vtable = IWorkflowPrintTicket_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x41d52285_35e8_448e_a8c5_e4b6a2cf826c);
@@ -197,6 +232,11 @@ pub struct IWorkflowPrintTicket_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWorkflowPrintTicketValidationResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWorkflowPrintTicketValidationResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWorkflowPrintTicketValidationResult {
     type Vtable = IWorkflowPrintTicketValidationResult_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x0ad1f392_da7b_4a36_bf36_6a99a62e2059);
@@ -374,11 +414,6 @@ impl PrintTicketCapabilities {
         }
     }
 }
-impl ::core::clone::Clone for PrintTicketCapabilities {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PrintTicketCapabilities {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -392,7 +427,6 @@ impl ::core::fmt::Debug for PrintTicketCapabilities {
 }
 unsafe impl ::windows::core::RuntimeType for PrintTicketCapabilities {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Printing.PrintTicket.PrintTicketCapabilities;{8c45508b-bbdc-4256-a142-2fd615ecb416})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -522,11 +556,6 @@ impl PrintTicketFeature {
         }
     }
 }
-impl ::core::clone::Clone for PrintTicketFeature {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PrintTicketFeature {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -540,7 +569,6 @@ impl ::core::fmt::Debug for PrintTicketFeature {
 }
 unsafe impl ::windows::core::RuntimeType for PrintTicketFeature {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Printing.PrintTicket.PrintTicketFeature;{e7607d6a-59f5-4103-8858-b97710963d39})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -615,6 +643,7 @@ impl ::core::default::Default for PrintTicketFeatureSelectionType {
 }
 unsafe impl ::windows::core::Abi for PrintTicketFeatureSelectionType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PrintTicketFeatureSelectionType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -623,7 +652,6 @@ impl ::core::fmt::Debug for PrintTicketFeatureSelectionType {
 }
 unsafe impl ::windows::core::RuntimeType for PrintTicketFeatureSelectionType {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Graphics.Printing.PrintTicket.PrintTicketFeatureSelectionType;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -700,11 +728,6 @@ impl PrintTicketOption {
         }
     }
 }
-impl ::core::clone::Clone for PrintTicketOption {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PrintTicketOption {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -718,7 +741,6 @@ impl ::core::fmt::Debug for PrintTicketOption {
 }
 unsafe impl ::windows::core::RuntimeType for PrintTicketOption {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Printing.PrintTicket.PrintTicketOption;{b086cf90-b367-4e4b-bd48-9c78a0bb31ce})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -794,6 +816,7 @@ impl ::core::default::Default for PrintTicketParameterDataType {
 }
 unsafe impl ::windows::core::Abi for PrintTicketParameterDataType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PrintTicketParameterDataType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -802,7 +825,6 @@ impl ::core::fmt::Debug for PrintTicketParameterDataType {
 }
 unsafe impl ::windows::core::RuntimeType for PrintTicketParameterDataType {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Graphics.Printing.PrintTicket.PrintTicketParameterDataType;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -869,11 +891,6 @@ impl PrintTicketParameterDefinition {
         }
     }
 }
-impl ::core::clone::Clone for PrintTicketParameterDefinition {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PrintTicketParameterDefinition {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -887,7 +904,6 @@ impl ::core::fmt::Debug for PrintTicketParameterDefinition {
 }
 unsafe impl ::windows::core::RuntimeType for PrintTicketParameterDefinition {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Printing.PrintTicket.PrintTicketParameterDefinition;{d6bab4e4-2962-4c01-b7f3-9a9294eb8335})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -984,11 +1000,6 @@ impl PrintTicketParameterInitializer {
         }
     }
 }
-impl ::core::clone::Clone for PrintTicketParameterInitializer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PrintTicketParameterInitializer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1002,7 +1013,6 @@ impl ::core::fmt::Debug for PrintTicketParameterInitializer {
 }
 unsafe impl ::windows::core::RuntimeType for PrintTicketParameterInitializer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Printing.PrintTicket.PrintTicketParameterInitializer;{5e3335bb-a0a5-48b1-9d5c-07116ddc597a})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1085,11 +1095,6 @@ impl PrintTicketValue {
         }
     }
 }
-impl ::core::clone::Clone for PrintTicketValue {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PrintTicketValue {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1103,7 +1108,6 @@ impl ::core::fmt::Debug for PrintTicketValue {
 }
 unsafe impl ::windows::core::RuntimeType for PrintTicketValue {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Printing.PrintTicket.PrintTicketValue;{66b30a32-244d-4e22-a98b-bb3cf1f2dd91})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1179,6 +1183,7 @@ impl ::core::default::Default for PrintTicketValueType {
 }
 unsafe impl ::windows::core::Abi for PrintTicketValueType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PrintTicketValueType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1187,7 +1192,6 @@ impl ::core::fmt::Debug for PrintTicketValueType {
 }
 unsafe impl ::windows::core::RuntimeType for PrintTicketValueType {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Graphics.Printing.PrintTicket.PrintTicketValueType;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1408,11 +1412,6 @@ impl WorkflowPrintTicket {
         }
     }
 }
-impl ::core::clone::Clone for WorkflowPrintTicket {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for WorkflowPrintTicket {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1426,7 +1425,6 @@ impl ::core::fmt::Debug for WorkflowPrintTicket {
 }
 unsafe impl ::windows::core::RuntimeType for WorkflowPrintTicket {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Printing.PrintTicket.WorkflowPrintTicket;{41d52285-35e8-448e-a8c5-e4b6a2cf826c})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1501,11 +1499,6 @@ impl WorkflowPrintTicketValidationResult {
         }
     }
 }
-impl ::core::clone::Clone for WorkflowPrintTicketValidationResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for WorkflowPrintTicketValidationResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1519,7 +1512,6 @@ impl ::core::fmt::Debug for WorkflowPrintTicketValidationResult {
 }
 unsafe impl ::windows::core::RuntimeType for WorkflowPrintTicketValidationResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Printing.PrintTicket.WorkflowPrintTicketValidationResult;{0ad1f392-da7b-4a36-bf36-6a99a62e2059})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

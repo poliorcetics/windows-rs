@@ -4,6 +4,11 @@ pub mod Effects;
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ILamp(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILamp {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ILamp {
     type Vtable = ILamp_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x047d5b9a_ea45_4b2b_b1a2_14dff00bde7b);
@@ -38,6 +43,11 @@ pub struct ILamp_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ILampArray(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILampArray {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ILampArray {
     type Vtable = ILampArray_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x7ace9787_c8a0_4e95_a1e0_d58676538649);
@@ -112,6 +122,11 @@ pub struct ILampArray_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ILampArrayStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILampArrayStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ILampArrayStatics {
     type Vtable = ILampArrayStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x7bb8c98d_5fc1_452d_bb1f_4ad410d398ff);
@@ -129,6 +144,11 @@ pub struct ILampArrayStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ILampAvailabilityChangedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILampAvailabilityChangedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ILampAvailabilityChangedEventArgs {
     type Vtable = ILampAvailabilityChangedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x4f6e3ded_07a2_499d_9260_67e304532ba4);
@@ -142,6 +162,11 @@ pub struct ILampAvailabilityChangedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ILampInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILampInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ILampInfo {
     type Vtable = ILampInfo_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x30bb521c_0acf_49da_8c10_150b9cf62713);
@@ -176,6 +201,11 @@ pub struct ILampInfo_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ILampStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILampStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ILampStatics {
     type Vtable = ILampStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa822416c_8885_401e_b821_8e8b38a8e8ec);
@@ -305,11 +335,6 @@ impl Lamp {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for Lamp {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for Lamp {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -323,7 +348,6 @@ impl ::core::fmt::Debug for Lamp {
 }
 unsafe impl ::windows::core::RuntimeType for Lamp {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Lights.Lamp;{047d5b9a-ea45-4b2b-b1a2-14dff00bde7b})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -621,11 +645,6 @@ impl LampArray {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for LampArray {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for LampArray {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -639,7 +658,6 @@ impl ::core::fmt::Debug for LampArray {
 }
 unsafe impl ::windows::core::RuntimeType for LampArray {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Lights.LampArray;{7ace9787-c8a0-4e95-a1e0-d58676538649})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -723,6 +741,7 @@ impl ::core::default::Default for LampArrayKind {
 }
 unsafe impl ::windows::core::Abi for LampArrayKind {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for LampArrayKind {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -731,7 +750,6 @@ impl ::core::fmt::Debug for LampArrayKind {
 }
 unsafe impl ::windows::core::RuntimeType for LampArrayKind {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.Lights.LampArrayKind;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -749,11 +767,6 @@ impl LampAvailabilityChangedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for LampAvailabilityChangedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for LampAvailabilityChangedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -767,7 +780,6 @@ impl ::core::fmt::Debug for LampAvailabilityChangedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for LampAvailabilityChangedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Lights.LampAvailabilityChangedEventArgs;{4f6e3ded-07a2-499d-9260-67e304532ba4})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -910,11 +922,6 @@ impl LampInfo {
         }
     }
 }
-impl ::core::clone::Clone for LampInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for LampInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -928,7 +935,6 @@ impl ::core::fmt::Debug for LampInfo {
 }
 unsafe impl ::windows::core::RuntimeType for LampInfo {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Lights.LampInfo;{30bb521c-0acf-49da-8c10-150b9cf62713})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1008,6 +1014,7 @@ impl ::core::default::Default for LampPurposes {
 }
 unsafe impl ::windows::core::Abi for LampPurposes {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for LampPurposes {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1044,7 +1051,6 @@ impl ::core::ops::Not for LampPurposes {
 }
 unsafe impl ::windows::core::RuntimeType for LampPurposes {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.Lights.LampPurposes;u4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }

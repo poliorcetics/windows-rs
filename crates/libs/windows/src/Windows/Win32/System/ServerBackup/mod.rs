@@ -2,6 +2,11 @@
 #[doc = "*Required features: `\"Win32_System_ServerBackup\"`*"]
 #[repr(transparent)]
 pub struct IWsbApplicationAsync(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWsbApplicationAsync {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWsbApplicationAsync {
     #[doc = "*Required features: `\"Win32_System_ServerBackup\"`*"]
     pub unsafe fn QueryStatus(&self) -> ::windows::core::Result<::windows::core::HRESULT> {
@@ -33,11 +38,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWsbA
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWsbApplicationAsync {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWsbApplicationAsync {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -63,6 +63,11 @@ pub struct IWsbApplicationAsync_Vtbl {
 #[doc = "*Required features: `\"Win32_System_ServerBackup\"`*"]
 #[repr(transparent)]
 pub struct IWsbApplicationBackupSupport(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWsbApplicationBackupSupport {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWsbApplicationBackupSupport {
     #[doc = "*Required features: `\"Win32_System_ServerBackup\"`*"]
     pub unsafe fn CheckConsistency<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param1: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param2: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, wszwritermetadata: Param0, wszcomponentname: Param1, wszcomponentlogicalpath: Param2, cvolumes: u32, rgwszsourcevolumepath: *const ::windows::core::PWSTR, rgwszsnapshotvolumepath: *const ::windows::core::PWSTR) -> ::windows::core::Result<IWsbApplicationAsync> {
@@ -90,11 +95,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWsbA
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWsbApplicationBackupSupport {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWsbApplicationBackupSupport {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -119,6 +119,11 @@ pub struct IWsbApplicationBackupSupport_Vtbl {
 #[doc = "*Required features: `\"Win32_System_ServerBackup\"`*"]
 #[repr(transparent)]
 pub struct IWsbApplicationRestoreSupport(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWsbApplicationRestoreSupport {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWsbApplicationRestoreSupport {
     #[doc = "*Required features: `\"Win32_System_ServerBackup\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -158,11 +163,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IWsbAppli
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWsbApplicationRestoreSupport {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IWsbApplicationRestoreSupport {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IWsbApplicationRestoreSupport {
@@ -228,6 +228,7 @@ impl ::core::fmt::Debug for WSB_OB_REGISTRATION_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WSB_OB_REGISTRATION_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WSB_OB_REGISTRATION_INFO {
@@ -265,6 +266,7 @@ impl ::core::fmt::Debug for WSB_OB_STATUS_ENTRY {
 }
 unsafe impl ::windows::core::Abi for WSB_OB_STATUS_ENTRY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSB_OB_STATUS_ENTRY {
     fn eq(&self, other: &Self) -> bool {
@@ -308,6 +310,7 @@ impl ::core::default::Default for WSB_OB_STATUS_ENTRY_PAIR_TYPE {
 }
 unsafe impl ::windows::core::Abi for WSB_OB_STATUS_ENTRY_PAIR_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WSB_OB_STATUS_ENTRY_PAIR_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -333,6 +336,7 @@ impl ::core::fmt::Debug for WSB_OB_STATUS_ENTRY_VALUE_TYPE_PAIR {
 }
 unsafe impl ::windows::core::Abi for WSB_OB_STATUS_ENTRY_VALUE_TYPE_PAIR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSB_OB_STATUS_ENTRY_VALUE_TYPE_PAIR {
     fn eq(&self, other: &Self) -> bool {
@@ -365,6 +369,7 @@ impl ::core::fmt::Debug for WSB_OB_STATUS_INFO {
 }
 unsafe impl ::windows::core::Abi for WSB_OB_STATUS_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSB_OB_STATUS_INFO {
     fn eq(&self, other: &Self) -> bool {

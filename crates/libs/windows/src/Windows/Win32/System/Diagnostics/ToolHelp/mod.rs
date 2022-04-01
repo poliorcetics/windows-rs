@@ -30,6 +30,7 @@ impl ::core::default::Default for CREATE_TOOLHELP_SNAPSHOT_FLAGS {
 }
 unsafe impl ::windows::core::Abi for CREATE_TOOLHELP_SNAPSHOT_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CREATE_TOOLHELP_SNAPSHOT_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -111,6 +112,7 @@ impl ::core::fmt::Debug for HEAPENTRY32 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for HEAPENTRY32 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for HEAPENTRY32 {
@@ -149,6 +151,7 @@ impl ::core::default::Default for HEAPENTRY32_FLAGS {
 }
 unsafe impl ::windows::core::Abi for HEAPENTRY32_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HEAPENTRY32_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -176,6 +179,7 @@ impl ::core::fmt::Debug for HEAPLIST32 {
 }
 unsafe impl ::windows::core::Abi for HEAPLIST32 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HEAPLIST32 {
     fn eq(&self, other: &Self) -> bool {
@@ -286,6 +290,7 @@ impl ::core::fmt::Debug for MODULEENTRY32 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MODULEENTRY32 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MODULEENTRY32 {
@@ -333,6 +338,7 @@ impl ::core::fmt::Debug for MODULEENTRY32W {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MODULEENTRY32W {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MODULEENTRY32W {
@@ -440,6 +446,7 @@ impl ::core::fmt::Debug for PROCESSENTRY32 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PROCESSENTRY32 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for PROCESSENTRY32 {
@@ -482,6 +489,7 @@ impl ::core::fmt::Debug for PROCESSENTRY32W {
 }
 unsafe impl ::windows::core::Abi for PROCESSENTRY32W {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROCESSENTRY32W {
     fn eq(&self, other: &Self) -> bool {
@@ -578,6 +586,7 @@ impl ::core::fmt::Debug for THREADENTRY32 {
 }
 unsafe impl ::windows::core::Abi for THREADENTRY32 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for THREADENTRY32 {
     fn eq(&self, other: &Self) -> bool {

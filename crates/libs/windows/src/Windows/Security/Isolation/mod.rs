@@ -57,12 +57,6 @@ impl<F: FnMut(&::windows::core::GUID, &::core::option::Option<super::super::Foun
     }
 }
 #[cfg(feature = "Foundation_Collections")]
-impl ::core::clone::Clone for HostMessageReceivedCallback {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Foundation_Collections")]
 impl ::core::cmp::PartialEq for HostMessageReceivedCallback {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -84,7 +78,6 @@ unsafe impl ::windows::core::Interface for HostMessageReceivedCallback {
 #[cfg(feature = "Foundation_Collections")]
 unsafe impl ::windows::core::RuntimeType for HostMessageReceivedCallback {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{faf26ffa-8ce1-4cc1-b278-322d31a5e4a3}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -102,6 +95,11 @@ pub struct HostMessageReceivedCallback_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IIsolatedWindowsEnvironment(::windows::core::IUnknown);
+impl ::core::clone::Clone for IIsolatedWindowsEnvironment {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IIsolatedWindowsEnvironment {
     type Vtable = IIsolatedWindowsEnvironment_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x41d24597_c328_4467_b37f_4dfc6f60b6bc);
@@ -152,6 +150,11 @@ pub struct IIsolatedWindowsEnvironment_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IIsolatedWindowsEnvironment2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IIsolatedWindowsEnvironment2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IIsolatedWindowsEnvironment2 {
     type Vtable = IIsolatedWindowsEnvironment2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x2d365f39_88bd_4ab4_93cf_7e2bcef337c0);
@@ -172,6 +175,11 @@ pub struct IIsolatedWindowsEnvironment2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IIsolatedWindowsEnvironment3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IIsolatedWindowsEnvironment3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IIsolatedWindowsEnvironment3 {
     type Vtable = IIsolatedWindowsEnvironment3_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xcb7fc7d2_d06e_4c26_8ada_dacdaaad03f5);
@@ -193,6 +201,11 @@ pub struct IIsolatedWindowsEnvironment3_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IIsolatedWindowsEnvironmentCreateResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for IIsolatedWindowsEnvironmentCreateResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IIsolatedWindowsEnvironmentCreateResult {
     type Vtable = IIsolatedWindowsEnvironmentCreateResult_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xef9a5e58_dcd7_45c2_9c85_ab642a715e8e);
@@ -208,6 +221,11 @@ pub struct IIsolatedWindowsEnvironmentCreateResult_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IIsolatedWindowsEnvironmentFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IIsolatedWindowsEnvironmentFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IIsolatedWindowsEnvironmentFactory {
     type Vtable = IIsolatedWindowsEnvironmentFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1aca93e7_e804_454d_8466_f9897c20b0f6);
@@ -233,6 +251,11 @@ pub struct IIsolatedWindowsEnvironmentFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IIsolatedWindowsEnvironmentFile(::windows::core::IUnknown);
+impl ::core::clone::Clone for IIsolatedWindowsEnvironmentFile {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IIsolatedWindowsEnvironmentFile {
     type Vtable = IIsolatedWindowsEnvironmentFile_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x4d5ae1ef_029f_4101_8c35_fe91bf9cd5f0);
@@ -248,6 +271,11 @@ pub struct IIsolatedWindowsEnvironmentFile_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IIsolatedWindowsEnvironmentFile2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IIsolatedWindowsEnvironmentFile2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IIsolatedWindowsEnvironmentFile2 {
     type Vtable = IIsolatedWindowsEnvironmentFile2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x4eeb8dec_ad5d_4b0a_b754_f36c3d46d684);
@@ -262,6 +290,11 @@ pub struct IIsolatedWindowsEnvironmentFile2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IIsolatedWindowsEnvironmentHostStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IIsolatedWindowsEnvironmentHostStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IIsolatedWindowsEnvironmentHostStatics {
     type Vtable = IIsolatedWindowsEnvironmentHostStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x2c0e22c7_05a0_517a_b81c_6ee8790c381f);
@@ -279,6 +312,11 @@ pub struct IIsolatedWindowsEnvironmentHostStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IIsolatedWindowsEnvironmentLaunchFileResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for IIsolatedWindowsEnvironmentLaunchFileResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IIsolatedWindowsEnvironmentLaunchFileResult {
     type Vtable = IIsolatedWindowsEnvironmentLaunchFileResult_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x685d4176_f6e0_4569_b1aa_215c0ff5b257);
@@ -294,6 +332,11 @@ pub struct IIsolatedWindowsEnvironmentLaunchFileResult_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IIsolatedWindowsEnvironmentOptions(::windows::core::IUnknown);
+impl ::core::clone::Clone for IIsolatedWindowsEnvironmentOptions {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IIsolatedWindowsEnvironmentOptions {
     type Vtable = IIsolatedWindowsEnvironmentOptions_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb71d98f7_61f0_4008_b207_0bf9eb2d76f2);
@@ -323,6 +366,11 @@ pub struct IIsolatedWindowsEnvironmentOptions_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IIsolatedWindowsEnvironmentOptions2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IIsolatedWindowsEnvironmentOptions2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IIsolatedWindowsEnvironmentOptions2 {
     type Vtable = IIsolatedWindowsEnvironmentOptions2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x10d7cc31_8b8f_4b9d_b22c_617103b55b08);
@@ -337,6 +385,11 @@ pub struct IIsolatedWindowsEnvironmentOptions2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IIsolatedWindowsEnvironmentOwnerRegistrationData(::windows::core::IUnknown);
+impl ::core::clone::Clone for IIsolatedWindowsEnvironmentOwnerRegistrationData {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IIsolatedWindowsEnvironmentOwnerRegistrationData {
     type Vtable = IIsolatedWindowsEnvironmentOwnerRegistrationData_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf888ec22_e8cf_56c0_b1df_90af4ad80e84);
@@ -365,6 +418,11 @@ pub struct IIsolatedWindowsEnvironmentOwnerRegistrationData_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IIsolatedWindowsEnvironmentOwnerRegistrationResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for IIsolatedWindowsEnvironmentOwnerRegistrationResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IIsolatedWindowsEnvironmentOwnerRegistrationResult {
     type Vtable = IIsolatedWindowsEnvironmentOwnerRegistrationResult_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x6dab9451_6169_55df_8f51_790e99d7277d);
@@ -379,6 +437,11 @@ pub struct IIsolatedWindowsEnvironmentOwnerRegistrationResult_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IIsolatedWindowsEnvironmentOwnerRegistrationStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IIsolatedWindowsEnvironmentOwnerRegistrationStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IIsolatedWindowsEnvironmentOwnerRegistrationStatics {
     type Vtable = IIsolatedWindowsEnvironmentOwnerRegistrationStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x10951754_204b_5ec9_9de3_df792d074a61);
@@ -393,6 +456,11 @@ pub struct IIsolatedWindowsEnvironmentOwnerRegistrationStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IIsolatedWindowsEnvironmentPostMessageResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for IIsolatedWindowsEnvironmentPostMessageResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IIsolatedWindowsEnvironmentPostMessageResult {
     type Vtable = IIsolatedWindowsEnvironmentPostMessageResult_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x0dfa28fa_2ef0_4d8f_b341_3171b2df93b1);
@@ -407,6 +475,11 @@ pub struct IIsolatedWindowsEnvironmentPostMessageResult_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IIsolatedWindowsEnvironmentProcess(::windows::core::IUnknown);
+impl ::core::clone::Clone for IIsolatedWindowsEnvironmentProcess {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IIsolatedWindowsEnvironmentProcess {
     type Vtable = IIsolatedWindowsEnvironmentProcess_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa858c3ef_8172_4f10_af93_cbe60af88d09);
@@ -427,6 +500,11 @@ pub struct IIsolatedWindowsEnvironmentProcess_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IIsolatedWindowsEnvironmentShareFileRequestOptions(::windows::core::IUnknown);
+impl ::core::clone::Clone for IIsolatedWindowsEnvironmentShareFileRequestOptions {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IIsolatedWindowsEnvironmentShareFileRequestOptions {
     type Vtable = IIsolatedWindowsEnvironmentShareFileRequestOptions_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc9190ed8_0fd0_4946_bb88_117a60737b61);
@@ -441,6 +519,11 @@ pub struct IIsolatedWindowsEnvironmentShareFileRequestOptions_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IIsolatedWindowsEnvironmentShareFileResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for IIsolatedWindowsEnvironmentShareFileResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IIsolatedWindowsEnvironmentShareFileResult {
     type Vtable = IIsolatedWindowsEnvironmentShareFileResult_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xaec7caa7_9ac6_4bf5_8b91_5c1adf0d7d00);
@@ -456,6 +539,11 @@ pub struct IIsolatedWindowsEnvironmentShareFileResult_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IIsolatedWindowsEnvironmentShareFolderRequestOptions(::windows::core::IUnknown);
+impl ::core::clone::Clone for IIsolatedWindowsEnvironmentShareFolderRequestOptions {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IIsolatedWindowsEnvironmentShareFolderRequestOptions {
     type Vtable = IIsolatedWindowsEnvironmentShareFolderRequestOptions_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc405eb7d_7053_4f6a_9b87_746846ed19b2);
@@ -470,6 +558,11 @@ pub struct IIsolatedWindowsEnvironmentShareFolderRequestOptions_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IIsolatedWindowsEnvironmentShareFolderResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for IIsolatedWindowsEnvironmentShareFolderResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IIsolatedWindowsEnvironmentShareFolderResult {
     type Vtable = IIsolatedWindowsEnvironmentShareFolderResult_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x556ba72e_ca9d_4211_b143_1cedc86eb2fe);
@@ -484,6 +577,11 @@ pub struct IIsolatedWindowsEnvironmentShareFolderResult_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IIsolatedWindowsEnvironmentStartProcessResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for IIsolatedWindowsEnvironmentStartProcessResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IIsolatedWindowsEnvironmentStartProcessResult {
     type Vtable = IIsolatedWindowsEnvironmentStartProcessResult_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x8fa1dc2f_57da_4bb5_9c06_fa072d2032e2);
@@ -499,6 +597,11 @@ pub struct IIsolatedWindowsEnvironmentStartProcessResult_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IIsolatedWindowsEnvironmentTelemetryParameters(::windows::core::IUnknown);
+impl ::core::clone::Clone for IIsolatedWindowsEnvironmentTelemetryParameters {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IIsolatedWindowsEnvironmentTelemetryParameters {
     type Vtable = IIsolatedWindowsEnvironmentTelemetryParameters_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xebdb3cab_7a3a_4524_a0f4_f96e284d33cd);
@@ -513,6 +616,11 @@ pub struct IIsolatedWindowsEnvironmentTelemetryParameters_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IIsolatedWindowsEnvironmentUserInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IIsolatedWindowsEnvironmentUserInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IIsolatedWindowsEnvironmentUserInfo {
     type Vtable = IIsolatedWindowsEnvironmentUserInfo_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x8a9c75ae_69ba_4001_96fc_19a02703b340);
@@ -531,6 +639,11 @@ pub struct IIsolatedWindowsEnvironmentUserInfo_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IIsolatedWindowsHostMessengerStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IIsolatedWindowsHostMessengerStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IIsolatedWindowsHostMessengerStatics {
     type Vtable = IIsolatedWindowsHostMessengerStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x06e444bb_53c0_4889_8fa3_53592e37cf21);
@@ -548,6 +661,11 @@ pub struct IIsolatedWindowsHostMessengerStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IIsolatedWindowsHostMessengerStatics2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IIsolatedWindowsHostMessengerStatics2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IIsolatedWindowsHostMessengerStatics2 {
     type Vtable = IIsolatedWindowsHostMessengerStatics2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x55ef9ebc_0444_42ad_832d_1b89c089d1ca);
@@ -738,11 +856,6 @@ impl IsolatedWindowsEnvironment {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for IsolatedWindowsEnvironment {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IsolatedWindowsEnvironment {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -756,7 +869,6 @@ impl ::core::fmt::Debug for IsolatedWindowsEnvironment {
 }
 unsafe impl ::windows::core::RuntimeType for IsolatedWindowsEnvironment {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Security.Isolation.IsolatedWindowsEnvironment;{41d24597-c328-4467-b37f-4dfc6f60b6bc})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -831,6 +943,7 @@ impl ::core::default::Default for IsolatedWindowsEnvironmentActivator {
 }
 unsafe impl ::windows::core::Abi for IsolatedWindowsEnvironmentActivator {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for IsolatedWindowsEnvironmentActivator {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -839,7 +952,6 @@ impl ::core::fmt::Debug for IsolatedWindowsEnvironmentActivator {
 }
 unsafe impl ::windows::core::RuntimeType for IsolatedWindowsEnvironmentActivator {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Security.Isolation.IsolatedWindowsEnvironmentActivator;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -866,6 +978,7 @@ impl ::core::default::Default for IsolatedWindowsEnvironmentAllowedClipboardForm
 }
 unsafe impl ::windows::core::Abi for IsolatedWindowsEnvironmentAllowedClipboardFormats {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for IsolatedWindowsEnvironmentAllowedClipboardFormats {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -902,7 +1015,6 @@ impl ::core::ops::Not for IsolatedWindowsEnvironmentAllowedClipboardFormats {
 }
 unsafe impl ::windows::core::RuntimeType for IsolatedWindowsEnvironmentAllowedClipboardFormats {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Security.Isolation.IsolatedWindowsEnvironmentAllowedClipboardFormats;u4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -931,6 +1043,7 @@ impl ::core::default::Default for IsolatedWindowsEnvironmentAvailablePrinters {
 }
 unsafe impl ::windows::core::Abi for IsolatedWindowsEnvironmentAvailablePrinters {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for IsolatedWindowsEnvironmentAvailablePrinters {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -967,7 +1080,6 @@ impl ::core::ops::Not for IsolatedWindowsEnvironmentAvailablePrinters {
 }
 unsafe impl ::windows::core::RuntimeType for IsolatedWindowsEnvironmentAvailablePrinters {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Security.Isolation.IsolatedWindowsEnvironmentAvailablePrinters;u4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -994,6 +1106,7 @@ impl ::core::default::Default for IsolatedWindowsEnvironmentClipboardCopyPasteDi
 }
 unsafe impl ::windows::core::Abi for IsolatedWindowsEnvironmentClipboardCopyPasteDirections {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for IsolatedWindowsEnvironmentClipboardCopyPasteDirections {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1030,7 +1143,6 @@ impl ::core::ops::Not for IsolatedWindowsEnvironmentClipboardCopyPasteDirections
 }
 unsafe impl ::windows::core::RuntimeType for IsolatedWindowsEnvironmentClipboardCopyPasteDirections {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Security.Isolation.IsolatedWindowsEnvironmentClipboardCopyPasteDirections;u4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1054,10 +1166,10 @@ impl ::core::fmt::Debug for IsolatedWindowsEnvironmentCreateProgress {
 }
 unsafe impl ::windows::core::Abi for IsolatedWindowsEnvironmentCreateProgress {
     type Abi = Self;
+    type DefaultType = Self;
 }
 unsafe impl ::windows::core::RuntimeType for IsolatedWindowsEnvironmentCreateProgress {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"struct(Windows.Security.Isolation.IsolatedWindowsEnvironmentCreateProgress;enum(Windows.Security.Isolation.IsolatedWindowsEnvironmentProgressState;i4);u4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1102,11 +1214,6 @@ impl IsolatedWindowsEnvironmentCreateResult {
         }
     }
 }
-impl ::core::clone::Clone for IsolatedWindowsEnvironmentCreateResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IsolatedWindowsEnvironmentCreateResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1120,7 +1227,6 @@ impl ::core::fmt::Debug for IsolatedWindowsEnvironmentCreateResult {
 }
 unsafe impl ::windows::core::RuntimeType for IsolatedWindowsEnvironmentCreateResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Security.Isolation.IsolatedWindowsEnvironmentCreateResult;{ef9a5e58-dcd7-45c2-9c85-ab642a715e8e})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1196,6 +1302,7 @@ impl ::core::default::Default for IsolatedWindowsEnvironmentCreateStatus {
 }
 unsafe impl ::windows::core::Abi for IsolatedWindowsEnvironmentCreateStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for IsolatedWindowsEnvironmentCreateStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1204,7 +1311,6 @@ impl ::core::fmt::Debug for IsolatedWindowsEnvironmentCreateStatus {
 }
 unsafe impl ::windows::core::RuntimeType for IsolatedWindowsEnvironmentCreateStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Security.Isolation.IsolatedWindowsEnvironmentCreateStatus;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1251,11 +1357,6 @@ impl IsolatedWindowsEnvironmentFile {
         }
     }
 }
-impl ::core::clone::Clone for IsolatedWindowsEnvironmentFile {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IsolatedWindowsEnvironmentFile {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1269,7 +1370,6 @@ impl ::core::fmt::Debug for IsolatedWindowsEnvironmentFile {
 }
 unsafe impl ::windows::core::RuntimeType for IsolatedWindowsEnvironmentFile {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Security.Isolation.IsolatedWindowsEnvironmentFile;{4d5ae1ef-029f-4101-8c35-fe91bf9cd5f0})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1374,6 +1474,7 @@ impl ::core::default::Default for IsolatedWindowsEnvironmentHostError {
 }
 unsafe impl ::windows::core::Abi for IsolatedWindowsEnvironmentHostError {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for IsolatedWindowsEnvironmentHostError {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1382,7 +1483,6 @@ impl ::core::fmt::Debug for IsolatedWindowsEnvironmentHostError {
 }
 unsafe impl ::windows::core::RuntimeType for IsolatedWindowsEnvironmentHostError {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Security.Isolation.IsolatedWindowsEnvironmentHostError;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1416,11 +1516,6 @@ impl IsolatedWindowsEnvironmentLaunchFileResult {
         }
     }
 }
-impl ::core::clone::Clone for IsolatedWindowsEnvironmentLaunchFileResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IsolatedWindowsEnvironmentLaunchFileResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1434,7 +1529,6 @@ impl ::core::fmt::Debug for IsolatedWindowsEnvironmentLaunchFileResult {
 }
 unsafe impl ::windows::core::RuntimeType for IsolatedWindowsEnvironmentLaunchFileResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Security.Isolation.IsolatedWindowsEnvironmentLaunchFileResult;{685d4176-f6e0-4569-b1aa-215c0ff5b257})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1513,6 +1607,7 @@ impl ::core::default::Default for IsolatedWindowsEnvironmentLaunchFileStatus {
 }
 unsafe impl ::windows::core::Abi for IsolatedWindowsEnvironmentLaunchFileStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for IsolatedWindowsEnvironmentLaunchFileStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1521,7 +1616,6 @@ impl ::core::fmt::Debug for IsolatedWindowsEnvironmentLaunchFileStatus {
 }
 unsafe impl ::windows::core::RuntimeType for IsolatedWindowsEnvironmentLaunchFileStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Security.Isolation.IsolatedWindowsEnvironmentLaunchFileStatus;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1663,11 +1757,6 @@ impl IsolatedWindowsEnvironmentOptions {
         unsafe { (::windows::core::Interface::vtable(this).SetWindowAnnotationOverride)(::core::mem::transmute_copy(this), value.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for IsolatedWindowsEnvironmentOptions {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IsolatedWindowsEnvironmentOptions {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1681,7 +1770,6 @@ impl ::core::fmt::Debug for IsolatedWindowsEnvironmentOptions {
 }
 unsafe impl ::windows::core::RuntimeType for IsolatedWindowsEnvironmentOptions {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Security.Isolation.IsolatedWindowsEnvironmentOptions;{b71d98f7-61f0-4008-b207-0bf9eb2d76f2})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1806,11 +1894,6 @@ impl IsolatedWindowsEnvironmentOwnerRegistrationData {
         }
     }
 }
-impl ::core::clone::Clone for IsolatedWindowsEnvironmentOwnerRegistrationData {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IsolatedWindowsEnvironmentOwnerRegistrationData {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1824,7 +1907,6 @@ impl ::core::fmt::Debug for IsolatedWindowsEnvironmentOwnerRegistrationData {
 }
 unsafe impl ::windows::core::RuntimeType for IsolatedWindowsEnvironmentOwnerRegistrationData {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationData;{f888ec22-e8cf-56c0-b1df-90af4ad80e84})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1899,11 +1981,6 @@ impl IsolatedWindowsEnvironmentOwnerRegistrationResult {
         }
     }
 }
-impl ::core::clone::Clone for IsolatedWindowsEnvironmentOwnerRegistrationResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IsolatedWindowsEnvironmentOwnerRegistrationResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1917,7 +1994,6 @@ impl ::core::fmt::Debug for IsolatedWindowsEnvironmentOwnerRegistrationResult {
 }
 unsafe impl ::windows::core::RuntimeType for IsolatedWindowsEnvironmentOwnerRegistrationResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationResult;{6dab9451-6169-55df-8f51-790e99d7277d})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1995,6 +2071,7 @@ impl ::core::default::Default for IsolatedWindowsEnvironmentOwnerRegistrationSta
 }
 unsafe impl ::windows::core::Abi for IsolatedWindowsEnvironmentOwnerRegistrationStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for IsolatedWindowsEnvironmentOwnerRegistrationStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2003,7 +2080,6 @@ impl ::core::fmt::Debug for IsolatedWindowsEnvironmentOwnerRegistrationStatus {
 }
 unsafe impl ::windows::core::RuntimeType for IsolatedWindowsEnvironmentOwnerRegistrationStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationStatus;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2029,11 +2105,6 @@ impl IsolatedWindowsEnvironmentPostMessageResult {
         }
     }
 }
-impl ::core::clone::Clone for IsolatedWindowsEnvironmentPostMessageResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IsolatedWindowsEnvironmentPostMessageResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2047,7 +2118,6 @@ impl ::core::fmt::Debug for IsolatedWindowsEnvironmentPostMessageResult {
 }
 unsafe impl ::windows::core::RuntimeType for IsolatedWindowsEnvironmentPostMessageResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Security.Isolation.IsolatedWindowsEnvironmentPostMessageResult;{0dfa28fa-2ef0-4d8f-b341-3171b2df93b1})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2123,6 +2193,7 @@ impl ::core::default::Default for IsolatedWindowsEnvironmentPostMessageStatus {
 }
 unsafe impl ::windows::core::Abi for IsolatedWindowsEnvironmentPostMessageStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for IsolatedWindowsEnvironmentPostMessageStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2131,7 +2202,6 @@ impl ::core::fmt::Debug for IsolatedWindowsEnvironmentPostMessageStatus {
 }
 unsafe impl ::windows::core::RuntimeType for IsolatedWindowsEnvironmentPostMessageStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Security.Isolation.IsolatedWindowsEnvironmentPostMessageStatus;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2176,11 +2246,6 @@ impl IsolatedWindowsEnvironmentProcess {
         }
     }
 }
-impl ::core::clone::Clone for IsolatedWindowsEnvironmentProcess {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IsolatedWindowsEnvironmentProcess {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2194,7 +2259,6 @@ impl ::core::fmt::Debug for IsolatedWindowsEnvironmentProcess {
 }
 unsafe impl ::windows::core::RuntimeType for IsolatedWindowsEnvironmentProcess {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Security.Isolation.IsolatedWindowsEnvironmentProcess;{a858c3ef-8172-4f10-af93-cbe60af88d09})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2270,6 +2334,7 @@ impl ::core::default::Default for IsolatedWindowsEnvironmentProcessState {
 }
 unsafe impl ::windows::core::Abi for IsolatedWindowsEnvironmentProcessState {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for IsolatedWindowsEnvironmentProcessState {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2278,7 +2343,6 @@ impl ::core::fmt::Debug for IsolatedWindowsEnvironmentProcessState {
 }
 unsafe impl ::windows::core::RuntimeType for IsolatedWindowsEnvironmentProcessState {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Security.Isolation.IsolatedWindowsEnvironmentProcessState;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2305,6 +2369,7 @@ impl ::core::default::Default for IsolatedWindowsEnvironmentProgressState {
 }
 unsafe impl ::windows::core::Abi for IsolatedWindowsEnvironmentProgressState {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for IsolatedWindowsEnvironmentProgressState {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2313,7 +2378,6 @@ impl ::core::fmt::Debug for IsolatedWindowsEnvironmentProgressState {
 }
 unsafe impl ::windows::core::RuntimeType for IsolatedWindowsEnvironmentProgressState {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Security.Isolation.IsolatedWindowsEnvironmentProgressState;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2343,11 +2407,6 @@ impl IsolatedWindowsEnvironmentShareFileRequestOptions {
         unsafe { (::windows::core::Interface::vtable(this).SetAllowWrite)(::core::mem::transmute_copy(this), value).ok() }
     }
 }
-impl ::core::clone::Clone for IsolatedWindowsEnvironmentShareFileRequestOptions {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IsolatedWindowsEnvironmentShareFileRequestOptions {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2361,7 +2420,6 @@ impl ::core::fmt::Debug for IsolatedWindowsEnvironmentShareFileRequestOptions {
 }
 unsafe impl ::windows::core::RuntimeType for IsolatedWindowsEnvironmentShareFileRequestOptions {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFileRequestOptions;{c9190ed8-0fd0-4946-bb88-117a60737b61})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2444,11 +2502,6 @@ impl IsolatedWindowsEnvironmentShareFileResult {
         }
     }
 }
-impl ::core::clone::Clone for IsolatedWindowsEnvironmentShareFileResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IsolatedWindowsEnvironmentShareFileResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2462,7 +2515,6 @@ impl ::core::fmt::Debug for IsolatedWindowsEnvironmentShareFileResult {
 }
 unsafe impl ::windows::core::RuntimeType for IsolatedWindowsEnvironmentShareFileResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFileResult;{aec7caa7-9ac6-4bf5-8b91-5c1adf0d7d00})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2541,6 +2593,7 @@ impl ::core::default::Default for IsolatedWindowsEnvironmentShareFileStatus {
 }
 unsafe impl ::windows::core::Abi for IsolatedWindowsEnvironmentShareFileStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for IsolatedWindowsEnvironmentShareFileStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2549,7 +2602,6 @@ impl ::core::fmt::Debug for IsolatedWindowsEnvironmentShareFileStatus {
 }
 unsafe impl ::windows::core::RuntimeType for IsolatedWindowsEnvironmentShareFileStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFileStatus;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2579,11 +2631,6 @@ impl IsolatedWindowsEnvironmentShareFolderRequestOptions {
         unsafe { (::windows::core::Interface::vtable(this).SetAllowWrite)(::core::mem::transmute_copy(this), value).ok() }
     }
 }
-impl ::core::clone::Clone for IsolatedWindowsEnvironmentShareFolderRequestOptions {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IsolatedWindowsEnvironmentShareFolderRequestOptions {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2597,7 +2644,6 @@ impl ::core::fmt::Debug for IsolatedWindowsEnvironmentShareFolderRequestOptions 
 }
 unsafe impl ::windows::core::RuntimeType for IsolatedWindowsEnvironmentShareFolderRequestOptions {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderRequestOptions;{c405eb7d-7053-4f6a-9b87-746846ed19b2})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2672,11 +2718,6 @@ impl IsolatedWindowsEnvironmentShareFolderResult {
         }
     }
 }
-impl ::core::clone::Clone for IsolatedWindowsEnvironmentShareFolderResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IsolatedWindowsEnvironmentShareFolderResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2690,7 +2731,6 @@ impl ::core::fmt::Debug for IsolatedWindowsEnvironmentShareFolderResult {
 }
 unsafe impl ::windows::core::RuntimeType for IsolatedWindowsEnvironmentShareFolderResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderResult;{556ba72e-ca9d-4211-b143-1cedc86eb2fe})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2768,6 +2808,7 @@ impl ::core::default::Default for IsolatedWindowsEnvironmentShareFolderStatus {
 }
 unsafe impl ::windows::core::Abi for IsolatedWindowsEnvironmentShareFolderStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for IsolatedWindowsEnvironmentShareFolderStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2776,7 +2817,6 @@ impl ::core::fmt::Debug for IsolatedWindowsEnvironmentShareFolderStatus {
 }
 unsafe impl ::windows::core::RuntimeType for IsolatedWindowsEnvironmentShareFolderStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderStatus;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2810,11 +2850,6 @@ impl IsolatedWindowsEnvironmentStartProcessResult {
         }
     }
 }
-impl ::core::clone::Clone for IsolatedWindowsEnvironmentStartProcessResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IsolatedWindowsEnvironmentStartProcessResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2828,7 +2863,6 @@ impl ::core::fmt::Debug for IsolatedWindowsEnvironmentStartProcessResult {
 }
 unsafe impl ::windows::core::RuntimeType for IsolatedWindowsEnvironmentStartProcessResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Security.Isolation.IsolatedWindowsEnvironmentStartProcessResult;{8fa1dc2f-57da-4bb5-9c06-fa072d2032e2})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2906,6 +2940,7 @@ impl ::core::default::Default for IsolatedWindowsEnvironmentStartProcessStatus {
 }
 unsafe impl ::windows::core::Abi for IsolatedWindowsEnvironmentStartProcessStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for IsolatedWindowsEnvironmentStartProcessStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2914,7 +2949,6 @@ impl ::core::fmt::Debug for IsolatedWindowsEnvironmentStartProcessStatus {
 }
 unsafe impl ::windows::core::RuntimeType for IsolatedWindowsEnvironmentStartProcessStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Security.Isolation.IsolatedWindowsEnvironmentStartProcessStatus;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2944,11 +2978,6 @@ impl IsolatedWindowsEnvironmentTelemetryParameters {
         unsafe { (::windows::core::Interface::vtable(this).SetCorrelationId)(::core::mem::transmute_copy(this), value.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for IsolatedWindowsEnvironmentTelemetryParameters {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IsolatedWindowsEnvironmentTelemetryParameters {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2962,7 +2991,6 @@ impl ::core::fmt::Debug for IsolatedWindowsEnvironmentTelemetryParameters {
 }
 unsafe impl ::windows::core::RuntimeType for IsolatedWindowsEnvironmentTelemetryParameters {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Security.Isolation.IsolatedWindowsEnvironmentTelemetryParameters;{ebdb3cab-7a3a-4524-a0f4-f96e284d33cd})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3046,11 +3074,6 @@ impl IsolatedWindowsEnvironmentUserInfo {
         }
     }
 }
-impl ::core::clone::Clone for IsolatedWindowsEnvironmentUserInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IsolatedWindowsEnvironmentUserInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3064,7 +3087,6 @@ impl ::core::fmt::Debug for IsolatedWindowsEnvironmentUserInfo {
 }
 unsafe impl ::windows::core::RuntimeType for IsolatedWindowsEnvironmentUserInfo {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Security.Isolation.IsolatedWindowsEnvironmentUserInfo;{8a9c75ae-69ba-4001-96fc-19a02703b340})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3214,12 +3236,6 @@ impl<F: FnMut(&::windows::core::GUID, &::core::option::Option<super::super::Foun
     }
 }
 #[cfg(feature = "Foundation_Collections")]
-impl ::core::clone::Clone for MessageReceivedCallback {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Foundation_Collections")]
 impl ::core::cmp::PartialEq for MessageReceivedCallback {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3241,7 +3257,6 @@ unsafe impl ::windows::core::Interface for MessageReceivedCallback {
 #[cfg(feature = "Foundation_Collections")]
 unsafe impl ::windows::core::RuntimeType for MessageReceivedCallback {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{f5b4c8ff-1d9d-4995-9fea-4d15257c0757}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

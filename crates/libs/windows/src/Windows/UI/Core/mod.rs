@@ -54,11 +54,6 @@ impl AcceleratorKeyEventArgs {
         unsafe { (::windows::core::Interface::vtable(this).SetHandled)(::core::mem::transmute_copy(this), value).ok() }
     }
 }
-impl ::core::clone::Clone for AcceleratorKeyEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AcceleratorKeyEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -72,7 +67,6 @@ impl ::core::fmt::Debug for AcceleratorKeyEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for AcceleratorKeyEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Core.AcceleratorKeyEventArgs;{ff1c4c4a-9287-470b-836e-9086e3126ade})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -170,6 +164,7 @@ impl ::core::default::Default for AppViewBackButtonVisibility {
 }
 unsafe impl ::windows::core::Abi for AppViewBackButtonVisibility {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AppViewBackButtonVisibility {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -178,7 +173,6 @@ impl ::core::fmt::Debug for AppViewBackButtonVisibility {
 }
 unsafe impl ::windows::core::RuntimeType for AppViewBackButtonVisibility {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Core.AppViewBackButtonVisibility;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -214,11 +208,6 @@ impl AutomationProviderRequestedEventArgs {
         unsafe { (::windows::core::Interface::vtable(this).SetHandled)(::core::mem::transmute_copy(this), value).ok() }
     }
 }
-impl ::core::clone::Clone for AutomationProviderRequestedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AutomationProviderRequestedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -232,7 +221,6 @@ impl ::core::fmt::Debug for AutomationProviderRequestedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for AutomationProviderRequestedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Core.AutomationProviderRequestedEventArgs;{961ff258-21bf-4b42-a298-fa479d4c52e2})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -324,11 +312,6 @@ impl BackRequestedEventArgs {
         unsafe { (::windows::core::Interface::vtable(this).SetHandled)(::core::mem::transmute_copy(this), value).ok() }
     }
 }
-impl ::core::clone::Clone for BackRequestedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for BackRequestedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -342,7 +325,6 @@ impl ::core::fmt::Debug for BackRequestedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for BackRequestedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Core.BackRequestedEventArgs;{d603d28a-e411-4a4e-ba41-6a327a8675bc})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -430,11 +412,6 @@ impl CharacterReceivedEventArgs {
         unsafe { (::windows::core::Interface::vtable(this).SetHandled)(::core::mem::transmute_copy(this), value).ok() }
     }
 }
-impl ::core::clone::Clone for CharacterReceivedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for CharacterReceivedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -448,7 +425,6 @@ impl ::core::fmt::Debug for CharacterReceivedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for CharacterReceivedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Core.CharacterReceivedEventArgs;{c584659f-99b2-4bcc-bd33-04e63f42902e})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -560,11 +536,6 @@ impl ClosestInteractiveBoundsRequestedEventArgs {
         unsafe { (::windows::core::Interface::vtable(this).SetClosestInteractiveBounds)(::core::mem::transmute_copy(this), value.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for ClosestInteractiveBoundsRequestedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ClosestInteractiveBoundsRequestedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -578,7 +549,6 @@ impl ::core::fmt::Debug for ClosestInteractiveBoundsRequestedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for ClosestInteractiveBoundsRequestedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Core.ClosestInteractiveBoundsRequestedEventArgs;{347c11d7-f6f8-40e3-b29f-ae50d3e86486})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -658,6 +628,7 @@ impl ::core::default::Default for CoreAcceleratorKeyEventType {
 }
 unsafe impl ::windows::core::Abi for CoreAcceleratorKeyEventType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CoreAcceleratorKeyEventType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -666,7 +637,6 @@ impl ::core::fmt::Debug for CoreAcceleratorKeyEventType {
 }
 unsafe impl ::windows::core::RuntimeType for CoreAcceleratorKeyEventType {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Core.CoreAcceleratorKeyEventType;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -691,11 +661,6 @@ impl CoreAcceleratorKeys {
         unsafe { (::windows::core::Interface::vtable(this).RemoveAcceleratorKeyActivated)(::core::mem::transmute_copy(this), cookie.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for CoreAcceleratorKeys {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for CoreAcceleratorKeys {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -709,7 +674,6 @@ impl ::core::fmt::Debug for CoreAcceleratorKeys {
 }
 unsafe impl ::windows::core::RuntimeType for CoreAcceleratorKeys {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Core.CoreAcceleratorKeys;{9ffdf7f5-b8c9-4ef0-b7d2-1de626561fc8})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1110,11 +1074,6 @@ impl CoreComponentInputSource {
         unsafe { (::windows::core::Interface::vtable(this).RemoveTouchHitTesting)(::core::mem::transmute_copy(this), cookie.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for CoreComponentInputSource {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for CoreComponentInputSource {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1128,7 +1087,6 @@ impl ::core::fmt::Debug for CoreComponentInputSource {
 }
 unsafe impl ::windows::core::RuntimeType for CoreComponentInputSource {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Core.CoreComponentInputSource;{9f488807-4580-4be8-be68-92a9311713bb})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1281,11 +1239,6 @@ impl CoreCursor {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for CoreCursor {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for CoreCursor {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1299,7 +1252,6 @@ impl ::core::fmt::Debug for CoreCursor {
 }
 unsafe impl ::windows::core::RuntimeType for CoreCursor {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Core.CoreCursor;{96893acf-111d-442c-8a77-b87992f8e2d6})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1388,6 +1340,7 @@ impl ::core::default::Default for CoreCursorType {
 }
 unsafe impl ::windows::core::Abi for CoreCursorType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CoreCursorType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1396,7 +1349,6 @@ impl ::core::fmt::Debug for CoreCursorType {
 }
 unsafe impl ::windows::core::RuntimeType for CoreCursorType {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Core.CoreCursorType;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1504,11 +1456,6 @@ impl CoreDispatcher {
         unsafe { (::windows::core::Interface::vtable(this).StopProcessEvents)(::core::mem::transmute_copy(this)).ok() }
     }
 }
-impl ::core::clone::Clone for CoreDispatcher {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for CoreDispatcher {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1522,7 +1469,6 @@ impl ::core::fmt::Debug for CoreDispatcher {
 }
 unsafe impl ::windows::core::RuntimeType for CoreDispatcher {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Core.CoreDispatcher;{60db2fa8-b705-4fde-a7d6-ebbb1891d39e})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1621,6 +1567,7 @@ impl ::core::default::Default for CoreDispatcherPriority {
 }
 unsafe impl ::windows::core::Abi for CoreDispatcherPriority {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CoreDispatcherPriority {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1629,7 +1576,6 @@ impl ::core::fmt::Debug for CoreDispatcherPriority {
 }
 unsafe impl ::windows::core::RuntimeType for CoreDispatcherPriority {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Core.CoreDispatcherPriority;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1659,6 +1605,7 @@ impl ::core::default::Default for CoreIndependentInputFilters {
 }
 unsafe impl ::windows::core::Abi for CoreIndependentInputFilters {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CoreIndependentInputFilters {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1695,7 +1642,6 @@ impl ::core::ops::Not for CoreIndependentInputFilters {
 }
 unsafe impl ::windows::core::RuntimeType for CoreIndependentInputFilters {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Core.CoreIndependentInputFilters;u4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1940,11 +1886,6 @@ impl CoreIndependentInputSource {
         unsafe { (::windows::core::Interface::vtable(this).RemovePointerRoutedReleased)(::core::mem::transmute_copy(this), cookie.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for CoreIndependentInputSource {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for CoreIndependentInputSource {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1958,7 +1899,6 @@ impl ::core::fmt::Debug for CoreIndependentInputSource {
 }
 unsafe impl ::windows::core::RuntimeType for CoreIndependentInputSource {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Core.CoreIndependentInputSource;{9f488807-4580-4be8-be68-92a9311713bb})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2176,11 +2116,6 @@ impl CoreIndependentInputSourceController {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for CoreIndependentInputSourceController {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for CoreIndependentInputSourceController {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2194,7 +2129,6 @@ impl ::core::fmt::Debug for CoreIndependentInputSourceController {
 }
 unsafe impl ::windows::core::RuntimeType for CoreIndependentInputSourceController {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Core.CoreIndependentInputSourceController;{0963261c-84fe-578a-83ca-6425309ccde4})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2297,6 +2231,7 @@ impl ::core::default::Default for CoreInputDeviceTypes {
 }
 unsafe impl ::windows::core::Abi for CoreInputDeviceTypes {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CoreInputDeviceTypes {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2333,7 +2268,6 @@ impl ::core::ops::Not for CoreInputDeviceTypes {
 }
 unsafe impl ::windows::core::RuntimeType for CoreInputDeviceTypes {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Core.CoreInputDeviceTypes;u4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2361,10 +2295,10 @@ impl ::core::fmt::Debug for CorePhysicalKeyStatus {
 }
 unsafe impl ::windows::core::Abi for CorePhysicalKeyStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 unsafe impl ::windows::core::RuntimeType for CorePhysicalKeyStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"struct(Windows.UI.Core.CorePhysicalKeyStatus;u4;u4;b1;b1;b1;b1)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2403,6 +2337,7 @@ impl ::core::default::Default for CoreProcessEventsOption {
 }
 unsafe impl ::windows::core::Abi for CoreProcessEventsOption {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CoreProcessEventsOption {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2411,7 +2346,6 @@ impl ::core::fmt::Debug for CoreProcessEventsOption {
 }
 unsafe impl ::windows::core::RuntimeType for CoreProcessEventsOption {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Core.CoreProcessEventsOption;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2440,11 +2374,11 @@ impl ::core::fmt::Debug for CoreProximityEvaluation {
 #[cfg(feature = "Foundation")]
 unsafe impl ::windows::core::Abi for CoreProximityEvaluation {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Foundation")]
 unsafe impl ::windows::core::RuntimeType for CoreProximityEvaluation {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"struct(Windows.UI.Core.CoreProximityEvaluation;i4;struct(Windows.Foundation.Point;f4;f4))");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2484,6 +2418,7 @@ impl ::core::default::Default for CoreProximityEvaluationScore {
 }
 unsafe impl ::windows::core::Abi for CoreProximityEvaluationScore {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CoreProximityEvaluationScore {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2492,7 +2427,6 @@ impl ::core::fmt::Debug for CoreProximityEvaluationScore {
 }
 unsafe impl ::windows::core::RuntimeType for CoreProximityEvaluationScore {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Core.CoreProximityEvaluationScore;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2519,6 +2453,7 @@ impl ::core::default::Default for CoreVirtualKeyStates {
 }
 unsafe impl ::windows::core::Abi for CoreVirtualKeyStates {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CoreVirtualKeyStates {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2555,7 +2490,6 @@ impl ::core::ops::Not for CoreVirtualKeyStates {
 }
 unsafe impl ::windows::core::RuntimeType for CoreVirtualKeyStates {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Core.CoreVirtualKeyStates;u4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -3089,11 +3023,6 @@ impl CoreWindow {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for CoreWindow {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for CoreWindow {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3107,7 +3036,6 @@ impl ::core::fmt::Debug for CoreWindow {
 }
 unsafe impl ::windows::core::RuntimeType for CoreWindow {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Core.CoreWindow;{79b9d5f2-879e-4b89-b798-79e47598030c})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3226,6 +3154,7 @@ impl ::core::default::Default for CoreWindowActivationMode {
 }
 unsafe impl ::windows::core::Abi for CoreWindowActivationMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CoreWindowActivationMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3234,7 +3163,6 @@ impl ::core::fmt::Debug for CoreWindowActivationMode {
 }
 unsafe impl ::windows::core::RuntimeType for CoreWindowActivationMode {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Core.CoreWindowActivationMode;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -3261,6 +3189,7 @@ impl ::core::default::Default for CoreWindowActivationState {
 }
 unsafe impl ::windows::core::Abi for CoreWindowActivationState {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CoreWindowActivationState {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3269,7 +3198,6 @@ impl ::core::fmt::Debug for CoreWindowActivationState {
 }
 unsafe impl ::windows::core::RuntimeType for CoreWindowActivationState {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Core.CoreWindowActivationState;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -3416,11 +3344,6 @@ impl CoreWindowDialog {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for CoreWindowDialog {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for CoreWindowDialog {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3434,7 +3357,6 @@ impl ::core::fmt::Debug for CoreWindowDialog {
 }
 unsafe impl ::windows::core::RuntimeType for CoreWindowDialog {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Core.CoreWindowDialog;{e7392ce0-c78d-427e-8b2c-01ff420c69d5})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3504,11 +3426,6 @@ impl CoreWindowEventArgs {
         unsafe { (::windows::core::Interface::vtable(this).SetHandled)(::core::mem::transmute_copy(this), value).ok() }
     }
 }
-impl ::core::clone::Clone for CoreWindowEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for CoreWindowEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3522,7 +3439,6 @@ impl ::core::fmt::Debug for CoreWindowEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for CoreWindowEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Core.CoreWindowEventArgs;{272b1ef3-c633-4da5-a26c-c6d0f56b29da})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3617,6 +3533,7 @@ impl ::core::default::Default for CoreWindowFlowDirection {
 }
 unsafe impl ::windows::core::Abi for CoreWindowFlowDirection {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CoreWindowFlowDirection {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3625,7 +3542,6 @@ impl ::core::fmt::Debug for CoreWindowFlowDirection {
 }
 unsafe impl ::windows::core::RuntimeType for CoreWindowFlowDirection {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Core.CoreWindowFlowDirection;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -3761,11 +3677,6 @@ impl CoreWindowFlyout {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for CoreWindowFlyout {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for CoreWindowFlyout {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3779,7 +3690,6 @@ impl ::core::fmt::Debug for CoreWindowFlyout {
 }
 unsafe impl ::windows::core::RuntimeType for CoreWindowFlyout {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Core.CoreWindowFlyout;{e89d854d-2050-40bb-b344-f6f355eeb314})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3842,11 +3752,6 @@ impl CoreWindowPopupShowingEventArgs {
         unsafe { (::windows::core::Interface::vtable(this).SetDesiredSize)(::core::mem::transmute_copy(this), value.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for CoreWindowPopupShowingEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for CoreWindowPopupShowingEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3860,7 +3765,6 @@ impl ::core::fmt::Debug for CoreWindowPopupShowingEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for CoreWindowPopupShowingEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Core.CoreWindowPopupShowingEventArgs;{26155fa2-5ba5-4ea4-a3b4-2dc7d63c8e26})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3947,11 +3851,6 @@ impl CoreWindowResizeManager {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for CoreWindowResizeManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for CoreWindowResizeManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3965,7 +3864,6 @@ impl ::core::fmt::Debug for CoreWindowResizeManager {
 }
 unsafe impl ::windows::core::RuntimeType for CoreWindowResizeManager {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Core.CoreWindowResizeManager;{b8f0b925-b350-48b3-a198-5c1a84700243})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4071,11 +3969,6 @@ impl<F: FnMut() -> ::windows::core::Result<()> + ::core::marker::Send + 'static>
         ((*this).invoke)().into()
     }
 }
-impl ::core::clone::Clone for DispatchedHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DispatchedHandler {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4093,7 +3986,6 @@ unsafe impl ::windows::core::Interface for DispatchedHandler {
 }
 unsafe impl ::windows::core::RuntimeType for DispatchedHandler {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{d1f276c4-98d8-4636-bf49-eb79507548e9}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4107,6 +3999,11 @@ pub struct DispatchedHandler_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAcceleratorKeyEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAcceleratorKeyEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAcceleratorKeyEventArgs {
     type Vtable = IAcceleratorKeyEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xff1c4c4a_9287_470b_836e_9086e3126ade);
@@ -4125,6 +4022,11 @@ pub struct IAcceleratorKeyEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAcceleratorKeyEventArgs2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAcceleratorKeyEventArgs2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAcceleratorKeyEventArgs2 {
     type Vtable = IAcceleratorKeyEventArgs2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd300a9f6_2f7e_4873_a555_166e596ee1c5);
@@ -4138,6 +4040,11 @@ pub struct IAcceleratorKeyEventArgs2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAutomationProviderRequestedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAutomationProviderRequestedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAutomationProviderRequestedEventArgs {
     type Vtable = IAutomationProviderRequestedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x961ff258_21bf_4b42_a298_fa479d4c52e2);
@@ -4152,6 +4059,11 @@ pub struct IAutomationProviderRequestedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBackRequestedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBackRequestedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBackRequestedEventArgs {
     type Vtable = IBackRequestedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd603d28a_e411_4a4e_ba41_6a327a8675bc);
@@ -4166,6 +4078,11 @@ pub struct IBackRequestedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICharacterReceivedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICharacterReceivedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICharacterReceivedEventArgs {
     type Vtable = ICharacterReceivedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc584659f_99b2_4bcc_bd33_04e63f42902e);
@@ -4180,6 +4097,11 @@ pub struct ICharacterReceivedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IClosestInteractiveBoundsRequestedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IClosestInteractiveBoundsRequestedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IClosestInteractiveBoundsRequestedEventArgs {
     type Vtable = IClosestInteractiveBoundsRequestedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x347c11d7_f6f8_40e3_b29f_ae50d3e86486);
@@ -4208,6 +4130,11 @@ pub struct IClosestInteractiveBoundsRequestedEventArgs_Vtbl {
 #[doc = "*Required features: `\"UI_Core\"`*"]
 #[repr(transparent)]
 pub struct ICoreAcceleratorKeys(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICoreAcceleratorKeys {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ICoreAcceleratorKeys {
     #[doc = "*Required features: `\"UI_Core\"`, `\"Foundation\"`*"]
     #[cfg(feature = "Foundation")]
@@ -4265,11 +4192,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ICoreAcceleratorKeys {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ICoreAcceleratorKeys {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4283,7 +4205,6 @@ impl ::core::fmt::Debug for ICoreAcceleratorKeys {
 }
 unsafe impl ::windows::core::RuntimeType for ICoreAcceleratorKeys {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{9ffdf7f5-b8c9-4ef0-b7d2-1de626561fc8}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4308,6 +4229,11 @@ pub struct ICoreAcceleratorKeys_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICoreClosestInteractiveBoundsRequested(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICoreClosestInteractiveBoundsRequested {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICoreClosestInteractiveBoundsRequested {
     type Vtable = ICoreClosestInteractiveBoundsRequested_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf303043a_e8bf_4e8e_ae69_c9dadd57a114);
@@ -4328,6 +4254,11 @@ pub struct ICoreClosestInteractiveBoundsRequested_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICoreComponentFocusable(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICoreComponentFocusable {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICoreComponentFocusable {
     type Vtable = ICoreComponentFocusable_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x52f96fa3_8742_4411_ae69_79a85f29ac8b);
@@ -4357,6 +4288,11 @@ pub struct ICoreComponentFocusable_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICoreCursor(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICoreCursor {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICoreCursor {
     type Vtable = ICoreCursor_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x96893acf_111d_442c_8a77_b87992f8e2d6);
@@ -4371,6 +4307,11 @@ pub struct ICoreCursor_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICoreCursorFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICoreCursorFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICoreCursorFactory {
     type Vtable = ICoreCursorFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf6359621_a79d_4ed3_8c32_a9ef9d6b76a4);
@@ -4384,6 +4325,11 @@ pub struct ICoreCursorFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICoreDispatcher(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICoreDispatcher {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICoreDispatcher {
     type Vtable = ICoreDispatcher_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x60db2fa8_b705_4fde_a7d6_ebbb1891d39e);
@@ -4406,6 +4352,11 @@ pub struct ICoreDispatcher_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICoreDispatcher2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICoreDispatcher2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICoreDispatcher2 {
     type Vtable = ICoreDispatcher2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x6f5e63c7_e3aa_4eae_b0e0_dcf321ca4b2f);
@@ -4426,6 +4377,11 @@ pub struct ICoreDispatcher2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICoreDispatcherWithTaskPriority(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICoreDispatcherWithTaskPriority {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICoreDispatcherWithTaskPriority {
     type Vtable = ICoreDispatcherWithTaskPriority_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xbafaecad_484d_41be_ba80_1d58c65263ea);
@@ -4443,6 +4399,11 @@ pub struct ICoreDispatcherWithTaskPriority_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICoreIndependentInputSourceController(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICoreIndependentInputSourceController {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICoreIndependentInputSourceController {
     type Vtable = ICoreIndependentInputSourceController_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x0963261c_84fe_578a_83ca_6425309ccde4);
@@ -4462,6 +4423,11 @@ pub struct ICoreIndependentInputSourceController_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICoreIndependentInputSourceControllerStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICoreIndependentInputSourceControllerStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICoreIndependentInputSourceControllerStatics {
     type Vtable = ICoreIndependentInputSourceControllerStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x3edc4e20_9a8a_5691_8586_fca4cb57526d);
@@ -4482,6 +4448,11 @@ pub struct ICoreIndependentInputSourceControllerStatics_Vtbl {
 #[doc = "*Required features: `\"UI_Core\"`*"]
 #[repr(transparent)]
 pub struct ICoreInputSourceBase(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICoreInputSourceBase {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ICoreInputSourceBase {
     #[doc = "*Required features: `\"UI_Core\"`*"]
     pub fn Dispatcher(&self) -> ::windows::core::Result<CoreDispatcher> {
@@ -4560,11 +4531,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ICoreInputSourceBase {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ICoreInputSourceBase {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4578,7 +4544,6 @@ impl ::core::fmt::Debug for ICoreInputSourceBase {
 }
 unsafe impl ::windows::core::RuntimeType for ICoreInputSourceBase {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{9f488807-4580-4be8-be68-92a9311713bb}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4606,6 +4571,11 @@ pub struct ICoreInputSourceBase_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICoreKeyboardInputSource(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICoreKeyboardInputSource {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICoreKeyboardInputSource {
     type Vtable = ICoreKeyboardInputSource_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x231c9088_e469_4df1_b208_6e490d71cb90);
@@ -4646,6 +4616,11 @@ pub struct ICoreKeyboardInputSource_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICoreKeyboardInputSource2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICoreKeyboardInputSource2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICoreKeyboardInputSource2 {
     type Vtable = ICoreKeyboardInputSource2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xfa24cb94_f963_47a5_8778_207c482b0afd);
@@ -4659,6 +4634,11 @@ pub struct ICoreKeyboardInputSource2_Vtbl {
 #[doc = "*Required features: `\"UI_Core\"`*"]
 #[repr(transparent)]
 pub struct ICorePointerInputSource(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICorePointerInputSource {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ICorePointerInputSource {
     #[doc = "*Required features: `\"UI_Core\"`*"]
     pub fn ReleasePointerCapture(&self) -> ::windows::core::Result<()> {
@@ -4846,11 +4826,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ICorePointerInputSource {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ICorePointerInputSource {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4864,7 +4839,6 @@ impl ::core::fmt::Debug for ICorePointerInputSource {
 }
 unsafe impl ::windows::core::RuntimeType for ICorePointerInputSource {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{bbf1bb18-e47a-48eb-8807-f8f8d3ea4551}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4946,6 +4920,11 @@ pub struct ICorePointerInputSource_Vtbl {
 #[doc = "*Required features: `\"UI_Core\"`*"]
 #[repr(transparent)]
 pub struct ICorePointerInputSource2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICorePointerInputSource2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ICorePointerInputSource2 {
     #[doc = "*Required features: `\"UI_Core\"`, `\"System\"`*"]
     #[cfg(feature = "System")]
@@ -5164,11 +5143,6 @@ impl<'a> ::windows::core::IntoParam<'a, ICorePointerInputSource> for &ICorePoint
         ::core::convert::TryInto::<ICorePointerInputSource>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for ICorePointerInputSource2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ICorePointerInputSource2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5182,7 +5156,6 @@ impl ::core::fmt::Debug for ICorePointerInputSource2 {
 }
 unsafe impl ::windows::core::RuntimeType for ICorePointerInputSource2 {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{d703708a-4516-4786-b1e5-2751d563f997}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -5203,6 +5176,11 @@ pub struct ICorePointerInputSource2_Vtbl {
 #[doc = "*Required features: `\"UI_Core\"`*"]
 #[repr(transparent)]
 pub struct ICorePointerRedirector(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICorePointerRedirector {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ICorePointerRedirector {
     #[doc = "*Required features: `\"UI_Core\"`, `\"Foundation\"`*"]
     #[cfg(feature = "Foundation")]
@@ -5290,11 +5268,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ICorePointerRedirector {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ICorePointerRedirector {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5308,7 +5281,6 @@ impl ::core::fmt::Debug for ICorePointerRedirector {
 }
 unsafe impl ::windows::core::RuntimeType for ICorePointerRedirector {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{8f9d0c94-5688-4b0c-a9f1-f931f7fa3dc3}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -5349,6 +5321,11 @@ pub struct ICorePointerRedirector_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICoreTouchHitTesting(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICoreTouchHitTesting {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICoreTouchHitTesting {
     type Vtable = ICoreTouchHitTesting_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb1d8a289_3acf_4124_9fa3_ea8aba353c21);
@@ -5369,6 +5346,11 @@ pub struct ICoreTouchHitTesting_Vtbl {
 #[doc = "*Required features: `\"UI_Core\"`*"]
 #[repr(transparent)]
 pub struct ICoreWindow(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICoreWindow {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ICoreWindow {
     #[doc = "*Required features: `\"UI_Core\"`*"]
     pub fn AutomationHostProvider(&self) -> ::windows::core::Result<::windows::core::IInspectable> {
@@ -5794,11 +5776,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ICoreWindow {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ICoreWindow {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5812,7 +5789,6 @@ impl ::core::fmt::Debug for ICoreWindow {
 }
 unsafe impl ::windows::core::RuntimeType for ICoreWindow {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{79b9d5f2-879e-4b89-b798-79e47598030c}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -5998,6 +5974,11 @@ pub struct ICoreWindow_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICoreWindow2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICoreWindow2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICoreWindow2 {
     type Vtable = ICoreWindow2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x7c2b1b85_6917_4361_9c02_0d9e3a420b95);
@@ -6014,6 +5995,11 @@ pub struct ICoreWindow2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICoreWindow3(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICoreWindow3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICoreWindow3 {
     type Vtable = ICoreWindow3_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x32c20dd8_faef_4375_a2ab_32640e4815c7);
@@ -6035,6 +6021,11 @@ pub struct ICoreWindow3_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICoreWindow4(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICoreWindow4 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICoreWindow4 {
     type Vtable = ICoreWindow4_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x35caf0d0_47f0_436c_af97_0dd88f6f5f02);
@@ -6063,6 +6054,11 @@ pub struct ICoreWindow4_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICoreWindow5(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICoreWindow5 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICoreWindow5 {
     type Vtable = ICoreWindow5_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x4b4ae1e1_2e6d_4eaa_bda1_1c5cc1bee141);
@@ -6080,6 +6076,11 @@ pub struct ICoreWindow5_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICoreWindowDialog(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICoreWindowDialog {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICoreWindowDialog {
     type Vtable = ICoreWindowDialog_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe7392ce0_c78d_427e_8b2c_01ff420c69d5);
@@ -6132,6 +6133,11 @@ pub struct ICoreWindowDialog_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICoreWindowDialogFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICoreWindowDialogFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICoreWindowDialogFactory {
     type Vtable = ICoreWindowDialogFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xcfb2a855_1c59_4b13_b1e5_16e29805f7c4);
@@ -6145,6 +6151,11 @@ pub struct ICoreWindowDialogFactory_Vtbl {
 #[doc = "*Required features: `\"UI_Core\"`*"]
 #[repr(transparent)]
 pub struct ICoreWindowEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICoreWindowEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ICoreWindowEventArgs {
     #[doc = "*Required features: `\"UI_Core\"`*"]
     pub fn Handled(&self) -> ::windows::core::Result<bool> {
@@ -6200,11 +6211,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ICoreWindowEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ICoreWindowEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6218,7 +6224,6 @@ impl ::core::fmt::Debug for ICoreWindowEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for ICoreWindowEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{272b1ef3-c633-4da5-a26c-c6d0f56b29da}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -6237,6 +6242,11 @@ pub struct ICoreWindowEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICoreWindowFlyout(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICoreWindowFlyout {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICoreWindowFlyout {
     type Vtable = ICoreWindowFlyout_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe89d854d_2050_40bb_b344_f6f355eeb314);
@@ -6287,6 +6297,11 @@ pub struct ICoreWindowFlyout_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICoreWindowFlyoutFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICoreWindowFlyoutFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICoreWindowFlyoutFactory {
     type Vtable = ICoreWindowFlyoutFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xdec4c6c4_93e8_4f7c_be27_cefaa1af68a7);
@@ -6307,6 +6322,11 @@ pub struct ICoreWindowFlyoutFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICoreWindowPopupShowingEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICoreWindowPopupShowingEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICoreWindowPopupShowingEventArgs {
     type Vtable = ICoreWindowPopupShowingEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x26155fa2_5ba5_4ea4_a3b4_2dc7d63c8e26);
@@ -6323,6 +6343,11 @@ pub struct ICoreWindowPopupShowingEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICoreWindowResizeManager(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICoreWindowResizeManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICoreWindowResizeManager {
     type Vtable = ICoreWindowResizeManager_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb8f0b925_b350_48b3_a198_5c1a84700243);
@@ -6336,6 +6361,11 @@ pub struct ICoreWindowResizeManager_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICoreWindowResizeManagerLayoutCapability(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICoreWindowResizeManagerLayoutCapability {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICoreWindowResizeManagerLayoutCapability {
     type Vtable = ICoreWindowResizeManagerLayoutCapability_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xbb74f27b_a544_4301_80e6_0ae033ef4536);
@@ -6350,6 +6380,11 @@ pub struct ICoreWindowResizeManagerLayoutCapability_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICoreWindowResizeManagerStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICoreWindowResizeManagerStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICoreWindowResizeManagerStatics {
     type Vtable = ICoreWindowResizeManagerStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xae4a9045_6d70_49db_8e68_46ffbd17d38d);
@@ -6363,6 +6398,11 @@ pub struct ICoreWindowResizeManagerStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICoreWindowStatic(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICoreWindowStatic {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICoreWindowStatic {
     type Vtable = ICoreWindowStatic_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x4d239005_3c2a_41b1_9022_536bb9cf93b1);
@@ -6376,6 +6416,11 @@ pub struct ICoreWindowStatic_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICoreWindowWithContext(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICoreWindowWithContext {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICoreWindowWithContext {
     type Vtable = ICoreWindowWithContext_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9ac40241_3575_4c3b_af66_e8c529d4d06c);
@@ -6389,6 +6434,11 @@ pub struct ICoreWindowWithContext_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IIdleDispatchedHandlerArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IIdleDispatchedHandlerArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IIdleDispatchedHandlerArgs {
     type Vtable = IIdleDispatchedHandlerArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x98bb6a24_dc1c_43cb_b4ed_d1c0eb2391f3);
@@ -6402,6 +6452,11 @@ pub struct IIdleDispatchedHandlerArgs_Vtbl {
 #[doc = "*Required features: `\"UI_Core\"`*"]
 #[repr(transparent)]
 pub struct IInitializeWithCoreWindow(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInitializeWithCoreWindow {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IInitializeWithCoreWindow {
     #[doc = "*Required features: `\"UI_Core\"`*"]
     pub fn Initialize<'a, Param0: ::windows::core::IntoParam<'a, CoreWindow>>(&self, window: Param0) -> ::windows::core::Result<()> {
@@ -6449,11 +6504,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IInitializeWithCoreWindow {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IInitializeWithCoreWindow {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6467,7 +6517,6 @@ impl ::core::fmt::Debug for IInitializeWithCoreWindow {
 }
 unsafe impl ::windows::core::RuntimeType for IInitializeWithCoreWindow {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{188f20d6-9873-464a-ace5-57e010f465e6}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -6485,6 +6534,11 @@ pub struct IInitializeWithCoreWindow_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IInputEnabledEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInputEnabledEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IInputEnabledEventArgs {
     type Vtable = IInputEnabledEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x80371d4f_2fd8_4c24_aa86_3163a87b4e5a);
@@ -6498,6 +6552,11 @@ pub struct IInputEnabledEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IKeyEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IKeyEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IKeyEventArgs {
     type Vtable = IKeyEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x5ff5e930_2544_4a17_bd78_1f2fdebb106b);
@@ -6515,6 +6574,11 @@ pub struct IKeyEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IKeyEventArgs2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IKeyEventArgs2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IKeyEventArgs2 {
     type Vtable = IKeyEventArgs2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x583add98_0790_4571_9b12_645ef9d79e42);
@@ -6528,6 +6592,11 @@ pub struct IKeyEventArgs2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPointerEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPointerEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPointerEventArgs {
     type Vtable = IPointerEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x920d9cb1_a5fc_4a21_8c09_49dfe6ffe25f);
@@ -6552,6 +6621,11 @@ pub struct IPointerEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISystemNavigationManager(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISystemNavigationManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISystemNavigationManager {
     type Vtable = ISystemNavigationManager_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x93023118_cf50_42a6_9706_69107fa122e1);
@@ -6572,6 +6646,11 @@ pub struct ISystemNavigationManager_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISystemNavigationManager2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISystemNavigationManager2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISystemNavigationManager2 {
     type Vtable = ISystemNavigationManager2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x8c510401_67be_49ae_9509_671c1e54a389);
@@ -6586,6 +6665,11 @@ pub struct ISystemNavigationManager2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISystemNavigationManagerStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISystemNavigationManagerStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISystemNavigationManagerStatics {
     type Vtable = ISystemNavigationManagerStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xdc52b5ce_bee0_4305_8c54_68228ed683b5);
@@ -6599,6 +6683,11 @@ pub struct ISystemNavigationManagerStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ITouchHitTestingEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITouchHitTestingEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ITouchHitTestingEventArgs {
     type Vtable = ITouchHitTestingEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x22f3b823_0b7c_424e_9df7_33d4f962931b);
@@ -6635,6 +6724,11 @@ pub struct ITouchHitTestingEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IVisibilityChangedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVisibilityChangedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IVisibilityChangedEventArgs {
     type Vtable = IVisibilityChangedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xbf9918ea_d801_4564_a495_b1e84f8ad085);
@@ -6648,6 +6742,11 @@ pub struct IVisibilityChangedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWindowActivatedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWindowActivatedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWindowActivatedEventArgs {
     type Vtable = IWindowActivatedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x179d65e7_4658_4cb6_aa13_41d094ea255e);
@@ -6661,6 +6760,11 @@ pub struct IWindowActivatedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWindowSizeChangedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWindowSizeChangedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWindowSizeChangedEventArgs {
     type Vtable = IWindowSizeChangedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x5a200ec7_0426_47dc_b86c_6f475915e451);
@@ -6726,11 +6830,6 @@ impl<F: FnMut(&::core::option::Option<IdleDispatchedHandlerArgs>) -> ::windows::
         ((*this).invoke)(::core::mem::transmute(&e)).into()
     }
 }
-impl ::core::clone::Clone for IdleDispatchedHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IdleDispatchedHandler {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6748,7 +6847,6 @@ unsafe impl ::windows::core::Interface for IdleDispatchedHandler {
 }
 unsafe impl ::windows::core::RuntimeType for IdleDispatchedHandler {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{a42b0c24-7f21-4abc-99c1-8f01007f0880}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -6772,11 +6870,6 @@ impl IdleDispatchedHandlerArgs {
         }
     }
 }
-impl ::core::clone::Clone for IdleDispatchedHandlerArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IdleDispatchedHandlerArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6790,7 +6883,6 @@ impl ::core::fmt::Debug for IdleDispatchedHandlerArgs {
 }
 unsafe impl ::windows::core::RuntimeType for IdleDispatchedHandlerArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Core.IdleDispatchedHandlerArgs;{98bb6a24-dc1c-43cb-b4ed-d1c0eb2391f3})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -6868,11 +6960,6 @@ impl InputEnabledEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for InputEnabledEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for InputEnabledEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6886,7 +6973,6 @@ impl ::core::fmt::Debug for InputEnabledEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for InputEnabledEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Core.InputEnabledEventArgs;{80371d4f-2fd8-4c24-aa86-3163a87b4e5a})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -7003,11 +7089,6 @@ impl KeyEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for KeyEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for KeyEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7021,7 +7102,6 @@ impl ::core::fmt::Debug for KeyEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for KeyEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Core.KeyEventArgs;{5ff5e930-2544-4a17-bd78-1f2fdebb106b})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -7140,11 +7220,6 @@ impl PointerEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for PointerEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PointerEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7158,7 +7233,6 @@ impl ::core::fmt::Debug for PointerEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for PointerEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Core.PointerEventArgs;{920d9cb1-a5fc-4a21-8c09-49dfe6ffe25f})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -7277,11 +7351,6 @@ impl SystemNavigationManager {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for SystemNavigationManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SystemNavigationManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7295,7 +7364,6 @@ impl ::core::fmt::Debug for SystemNavigationManager {
 }
 unsafe impl ::windows::core::RuntimeType for SystemNavigationManager {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Core.SystemNavigationManager;{93023118-cf50-42a6-9706-69107fa122e1})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -7418,11 +7486,6 @@ impl TouchHitTestingEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for TouchHitTestingEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for TouchHitTestingEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7436,7 +7499,6 @@ impl ::core::fmt::Debug for TouchHitTestingEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for TouchHitTestingEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Core.TouchHitTestingEventArgs;{22f3b823-0b7c-424e-9df7-33d4f962931b})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -7536,11 +7598,6 @@ impl VisibilityChangedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for VisibilityChangedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for VisibilityChangedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7554,7 +7611,6 @@ impl ::core::fmt::Debug for VisibilityChangedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for VisibilityChangedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Core.VisibilityChangedEventArgs;{bf9918ea-d801-4564-a495-b1e84f8ad085})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -7654,11 +7710,6 @@ impl WindowActivatedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for WindowActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for WindowActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7672,7 +7723,6 @@ impl ::core::fmt::Debug for WindowActivatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for WindowActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Core.WindowActivatedEventArgs;{179d65e7-4658-4cb6-aa13-41d094ea255e})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -7773,11 +7823,6 @@ impl WindowSizeChangedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for WindowSizeChangedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for WindowSizeChangedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7791,7 +7836,6 @@ impl ::core::fmt::Debug for WindowSizeChangedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for WindowSizeChangedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Core.WindowSizeChangedEventArgs;{5a200ec7-0426-47dc-b86c-6f475915e451})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

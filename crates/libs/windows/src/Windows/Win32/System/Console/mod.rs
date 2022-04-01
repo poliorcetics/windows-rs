@@ -91,6 +91,7 @@ impl ::core::clone::Clone for CHAR_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for CHAR_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for CHAR_INFO {
@@ -124,6 +125,7 @@ impl ::core::clone::Clone for CHAR_INFO_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for CHAR_INFO_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for CHAR_INFO_0 {
@@ -179,6 +181,7 @@ impl ::core::fmt::Debug for CONSOLE_CURSOR_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for CONSOLE_CURSOR_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for CONSOLE_CURSOR_INFO {
@@ -213,6 +216,7 @@ impl ::core::fmt::Debug for CONSOLE_FONT_INFO {
 }
 unsafe impl ::windows::core::Abi for CONSOLE_FONT_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CONSOLE_FONT_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -248,6 +252,7 @@ impl ::core::fmt::Debug for CONSOLE_FONT_INFOEX {
 }
 unsafe impl ::windows::core::Abi for CONSOLE_FONT_INFOEX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CONSOLE_FONT_INFOEX {
     fn eq(&self, other: &Self) -> bool {
@@ -287,6 +292,7 @@ impl ::core::fmt::Debug for CONSOLE_HISTORY_INFO {
 }
 unsafe impl ::windows::core::Abi for CONSOLE_HISTORY_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CONSOLE_HISTORY_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -346,6 +352,7 @@ impl ::core::default::Default for CONSOLE_MODE {
 }
 unsafe impl ::windows::core::Abi for CONSOLE_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CONSOLE_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -407,6 +414,7 @@ impl ::core::fmt::Debug for CONSOLE_READCONSOLE_CONTROL {
 }
 unsafe impl ::windows::core::Abi for CONSOLE_READCONSOLE_CONTROL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CONSOLE_READCONSOLE_CONTROL {
     fn eq(&self, other: &Self) -> bool {
@@ -441,6 +449,7 @@ impl ::core::fmt::Debug for CONSOLE_SCREEN_BUFFER_INFO {
 }
 unsafe impl ::windows::core::Abi for CONSOLE_SCREEN_BUFFER_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CONSOLE_SCREEN_BUFFER_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -484,6 +493,7 @@ impl ::core::fmt::Debug for CONSOLE_SCREEN_BUFFER_INFOEX {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for CONSOLE_SCREEN_BUFFER_INFOEX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for CONSOLE_SCREEN_BUFFER_INFOEX {
@@ -519,6 +529,7 @@ impl ::core::fmt::Debug for CONSOLE_SELECTION_INFO {
 }
 unsafe impl ::windows::core::Abi for CONSOLE_SELECTION_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CONSOLE_SELECTION_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -558,6 +569,7 @@ impl ::core::fmt::Debug for COORD {
 }
 unsafe impl ::windows::core::Abi for COORD {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for COORD {
     fn eq(&self, other: &Self) -> bool {
@@ -683,6 +695,7 @@ impl ::core::fmt::Debug for FOCUS_EVENT_RECORD {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for FOCUS_EVENT_RECORD {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for FOCUS_EVENT_RECORD {
@@ -1352,6 +1365,7 @@ impl ::core::fmt::Debug for HPCON {
 }
 unsafe impl ::windows::core::Abi for HPCON {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[repr(C)]
 #[doc = "*Required features: `\"Win32_System_Console\"`, `\"Win32_Foundation\"`*"]
@@ -1371,6 +1385,7 @@ impl ::core::clone::Clone for INPUT_RECORD {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for INPUT_RECORD {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for INPUT_RECORD {
@@ -1407,6 +1422,7 @@ impl ::core::clone::Clone for INPUT_RECORD_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for INPUT_RECORD_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for INPUT_RECORD_0 {
@@ -1446,6 +1462,7 @@ impl ::core::clone::Clone for KEY_EVENT_RECORD {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KEY_EVENT_RECORD {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KEY_EVENT_RECORD {
@@ -1479,6 +1496,7 @@ impl ::core::clone::Clone for KEY_EVENT_RECORD_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KEY_EVENT_RECORD_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KEY_EVENT_RECORD_0 {
@@ -1518,6 +1536,7 @@ impl ::core::fmt::Debug for MENU_EVENT_RECORD {
 }
 unsafe impl ::windows::core::Abi for MENU_EVENT_RECORD {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MENU_EVENT_RECORD {
     fn eq(&self, other: &Self) -> bool {
@@ -1553,6 +1572,7 @@ impl ::core::fmt::Debug for MOUSE_EVENT_RECORD {
 }
 unsafe impl ::windows::core::Abi for MOUSE_EVENT_RECORD {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MOUSE_EVENT_RECORD {
     fn eq(&self, other: &Self) -> bool {
@@ -1802,6 +1822,7 @@ impl ::core::fmt::Debug for SMALL_RECT {
 }
 unsafe impl ::windows::core::Abi for SMALL_RECT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SMALL_RECT {
     fn eq(&self, other: &Self) -> bool {
@@ -1837,6 +1858,7 @@ impl ::core::default::Default for STD_HANDLE {
 }
 unsafe impl ::windows::core::Abi for STD_HANDLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for STD_HANDLE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2193,6 +2215,7 @@ impl ::core::fmt::Debug for WINDOW_BUFFER_SIZE_RECORD {
 }
 unsafe impl ::windows::core::Abi for WINDOW_BUFFER_SIZE_RECORD {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINDOW_BUFFER_SIZE_RECORD {
     fn eq(&self, other: &Self) -> bool {

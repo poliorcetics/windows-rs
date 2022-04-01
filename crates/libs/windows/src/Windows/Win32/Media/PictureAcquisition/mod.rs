@@ -30,6 +30,7 @@ impl ::core::default::Default for DEVICE_SELECTION_DEVICE_TYPE {
 }
 unsafe impl ::windows::core::Abi for DEVICE_SELECTION_DEVICE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DEVICE_SELECTION_DEVICE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -81,6 +82,7 @@ impl ::core::default::Default for ERROR_ADVISE_MESSAGE_TYPE {
 }
 unsafe impl ::windows::core::Abi for ERROR_ADVISE_MESSAGE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ERROR_ADVISE_MESSAGE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -118,6 +120,7 @@ impl ::core::default::Default for ERROR_ADVISE_RESULT {
 }
 unsafe impl ::windows::core::Abi for ERROR_ADVISE_RESULT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ERROR_ADVISE_RESULT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -127,6 +130,11 @@ impl ::core::fmt::Debug for ERROR_ADVISE_RESULT {
 #[doc = "*Required features: `\"Win32_Media_PictureAcquisition\"`*"]
 #[repr(transparent)]
 pub struct IPhotoAcquire(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPhotoAcquire {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPhotoAcquire {
     #[doc = "*Required features: `\"Win32_Media_PictureAcquisition\"`*"]
     pub unsafe fn CreatePhotoSource<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, pszdevice: Param0) -> ::windows::core::Result<IPhotoAcquireSource> {
@@ -165,11 +173,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPhot
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPhotoAcquire {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPhotoAcquire {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -202,6 +205,11 @@ pub struct IPhotoAcquire_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_PictureAcquisition\"`*"]
 #[repr(transparent)]
 pub struct IPhotoAcquireDeviceSelectionDialog(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPhotoAcquireDeviceSelectionDialog {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPhotoAcquireDeviceSelectionDialog {
     #[doc = "*Required features: `\"Win32_Media_PictureAcquisition\"`*"]
     pub unsafe fn SetTitle<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, psztitle: Param0) -> ::windows::core::Result<()> {
@@ -237,11 +245,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPhot
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPhotoAcquireDeviceSelectionDialog {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPhotoAcquireDeviceSelectionDialog {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -271,6 +274,11 @@ pub struct IPhotoAcquireDeviceSelectionDialog_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_PictureAcquisition\"`*"]
 #[repr(transparent)]
 pub struct IPhotoAcquireItem(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPhotoAcquireItem {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPhotoAcquireItem {
     #[doc = "*Required features: `\"Win32_Media_PictureAcquisition\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -342,11 +350,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPhot
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPhotoAcquireItem {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPhotoAcquireItem {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -397,6 +400,11 @@ pub struct IPhotoAcquireItem_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_PictureAcquisition\"`*"]
 #[repr(transparent)]
 pub struct IPhotoAcquireOptionsDialog(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPhotoAcquireOptionsDialog {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPhotoAcquireOptionsDialog {
     #[doc = "*Required features: `\"Win32_Media_PictureAcquisition\"`*"]
     pub unsafe fn Initialize<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, pszregistryroot: Param0) -> ::windows::core::Result<()> {
@@ -442,11 +450,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPhot
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPhotoAcquireOptionsDialog {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPhotoAcquireOptionsDialog {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -481,6 +484,11 @@ pub struct IPhotoAcquireOptionsDialog_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_PictureAcquisition\"`*"]
 #[repr(transparent)]
 pub struct IPhotoAcquirePlugin(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPhotoAcquirePlugin {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPhotoAcquirePlugin {
     #[doc = "*Required features: `\"Win32_Media_PictureAcquisition\"`*"]
     pub unsafe fn Initialize<'a, Param0: ::windows::core::IntoParam<'a, IPhotoAcquireSource>, Param1: ::windows::core::IntoParam<'a, IPhotoAcquireProgressCB>>(&self, pphotoacquiresource: Param0, pphotoacquireprogresscb: Param1) -> ::windows::core::Result<()> {
@@ -521,11 +529,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPhot
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPhotoAcquirePlugin {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPhotoAcquirePlugin {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -559,6 +562,11 @@ pub struct IPhotoAcquirePlugin_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_PictureAcquisition\"`*"]
 #[repr(transparent)]
 pub struct IPhotoAcquireProgressCB(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPhotoAcquireProgressCB {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPhotoAcquireProgressCB {
     #[doc = "*Required features: `\"Win32_Media_PictureAcquisition\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -664,11 +672,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPhot
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPhotoAcquireProgressCB {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPhotoAcquireProgressCB {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -723,6 +726,11 @@ pub struct IPhotoAcquireProgressCB_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_PictureAcquisition\"`*"]
 #[repr(transparent)]
 pub struct IPhotoAcquireSettings(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPhotoAcquireSettings {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPhotoAcquireSettings {
     #[doc = "*Required features: `\"Win32_Media_PictureAcquisition\"`*"]
     pub unsafe fn InitializeFromRegistry<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, pszregistrykey: Param0) -> ::windows::core::Result<()> {
@@ -809,11 +817,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPhot
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPhotoAcquireSettings {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPhotoAcquireSettings {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -868,6 +871,11 @@ pub struct IPhotoAcquireSettings_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_PictureAcquisition\"`*"]
 #[repr(transparent)]
 pub struct IPhotoAcquireSource(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPhotoAcquireSource {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPhotoAcquireSource {
     #[doc = "*Required features: `\"Win32_Media_PictureAcquisition\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -931,11 +939,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPhot
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPhotoAcquireSource {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPhotoAcquireSource {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -979,6 +982,11 @@ pub struct IPhotoAcquireSource_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_PictureAcquisition\"`*"]
 #[repr(transparent)]
 pub struct IPhotoProgressActionCB(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPhotoProgressActionCB {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPhotoProgressActionCB {
     #[doc = "*Required features: `\"Win32_Media_PictureAcquisition\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -1004,11 +1012,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IPhotoPro
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPhotoProgressActionCB {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IPhotoProgressActionCB {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IPhotoProgressActionCB {
@@ -1038,6 +1041,11 @@ pub struct IPhotoProgressActionCB_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_PictureAcquisition\"`*"]
 #[repr(transparent)]
 pub struct IPhotoProgressDialog(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPhotoProgressDialog {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPhotoProgressDialog {
     #[doc = "*Required features: `\"Win32_Media_PictureAcquisition\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -1144,11 +1152,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPhot
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPhotoProgressDialog {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPhotoProgressDialog {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1217,6 +1220,11 @@ pub struct IPhotoProgressDialog_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_PictureAcquisition\"`*"]
 #[repr(transparent)]
 pub struct IUserInputString(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUserInputString {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUserInputString {
     #[doc = "*Required features: `\"Win32_Media_PictureAcquisition\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -1293,11 +1301,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IUserInpu
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUserInputString {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IUserInputString {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IUserInputString {
@@ -1433,6 +1436,7 @@ impl ::core::default::Default for PROGRESS_DIALOG_CHECKBOX_ID {
 }
 unsafe impl ::windows::core::Abi for PROGRESS_DIALOG_CHECKBOX_ID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PROGRESS_DIALOG_CHECKBOX_ID {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1464,6 +1468,7 @@ impl ::core::default::Default for PROGRESS_DIALOG_IMAGE_TYPE {
 }
 unsafe impl ::windows::core::Abi for PROGRESS_DIALOG_IMAGE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PROGRESS_DIALOG_IMAGE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1499,6 +1504,7 @@ impl ::core::default::Default for USER_INPUT_STRING_TYPE {
 }
 unsafe impl ::windows::core::Abi for USER_INPUT_STRING_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for USER_INPUT_STRING_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

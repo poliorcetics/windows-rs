@@ -21,6 +21,7 @@ impl ::core::default::Default for AddContactResult {
 }
 unsafe impl ::windows::core::Abi for AddContactResult {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AddContactResult {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -29,7 +30,6 @@ impl ::core::fmt::Debug for AddContactResult {
 }
 unsafe impl ::windows::core::RuntimeType for AddContactResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.Contacts.Provider.AddContactResult;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -110,11 +110,6 @@ impl ContactPickerUI {
         }
     }
 }
-impl ::core::clone::Clone for ContactPickerUI {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ContactPickerUI {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -128,7 +123,6 @@ impl ::core::fmt::Debug for ContactPickerUI {
 }
 unsafe impl ::windows::core::RuntimeType for ContactPickerUI {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Contacts.Provider.ContactPickerUI;{e2cc1366-cf66-43c4-a96a-a5a112db4746})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -193,11 +187,6 @@ impl ContactRemovedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for ContactRemovedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ContactRemovedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -211,7 +200,6 @@ impl ::core::fmt::Debug for ContactRemovedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for ContactRemovedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Contacts.Provider.ContactRemovedEventArgs;{6f354338-3302-4d13-ad8d-adcc0ff9e47c})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -266,6 +254,11 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a C
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IContactPickerUI(::windows::core::IUnknown);
+impl ::core::clone::Clone for IContactPickerUI {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IContactPickerUI {
     type Vtable = IContactPickerUI_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe2cc1366_cf66_43c4_a96a_a5a112db4746);
@@ -297,6 +290,11 @@ pub struct IContactPickerUI_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IContactPickerUI2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IContactPickerUI2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IContactPickerUI2 {
     type Vtable = IContactPickerUI2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x6e449e28_7b25_4999_9b0b_875400a1e8c8);
@@ -314,6 +312,11 @@ pub struct IContactPickerUI2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IContactRemovedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IContactRemovedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IContactRemovedEventArgs {
     type Vtable = IContactRemovedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x6f354338_3302_4d13_ad8d_adcc0ff9e47c);

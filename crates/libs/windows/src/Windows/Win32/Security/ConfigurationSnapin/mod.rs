@@ -6,6 +6,11 @@ pub const CCF_SCESVC_ATTACHMENT_DATA: &'static str = "CCF_SCESVC_ATTACHMENT_DATA
 #[doc = "*Required features: `\"Win32_Security_ConfigurationSnapin\"`*"]
 #[repr(transparent)]
 pub struct ISceSvcAttachmentData(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISceSvcAttachmentData {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISceSvcAttachmentData {
     #[doc = "*Required features: `\"Win32_Security_ConfigurationSnapin\"`*"]
     pub unsafe fn GetData(&self, scesvchandle: *mut ::core::ffi::c_void, scetype: SCESVC_INFO_TYPE, ppvdata: *mut *mut ::core::ffi::c_void, psceenumhandle: *mut u32) -> ::windows::core::Result<()> {
@@ -44,11 +49,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISceS
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISceSvcAttachmentData {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISceSvcAttachmentData {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -76,6 +76,11 @@ pub struct ISceSvcAttachmentData_Vtbl {
 #[doc = "*Required features: `\"Win32_Security_ConfigurationSnapin\"`*"]
 #[repr(transparent)]
 pub struct ISceSvcAttachmentPersistInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISceSvcAttachmentPersistInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISceSvcAttachmentPersistInfo {
     #[doc = "*Required features: `\"Win32_Security_ConfigurationSnapin\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -109,11 +114,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for ISceSvcAt
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISceSvcAttachmentPersistInfo {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for ISceSvcAttachmentPersistInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for ISceSvcAttachmentPersistInfo {
@@ -217,6 +217,7 @@ impl ::core::fmt::Debug for SCESVC_ANALYSIS_INFO {
 }
 unsafe impl ::windows::core::Abi for SCESVC_ANALYSIS_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SCESVC_ANALYSIS_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -249,6 +250,7 @@ impl ::core::fmt::Debug for SCESVC_ANALYSIS_LINE {
 }
 unsafe impl ::windows::core::Abi for SCESVC_ANALYSIS_LINE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SCESVC_ANALYSIS_LINE {
     fn eq(&self, other: &Self) -> bool {
@@ -288,6 +290,7 @@ impl ::core::fmt::Debug for SCESVC_CALLBACK_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SCESVC_CALLBACK_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for SCESVC_CALLBACK_INFO {
@@ -322,6 +325,7 @@ impl ::core::fmt::Debug for SCESVC_CONFIGURATION_INFO {
 }
 unsafe impl ::windows::core::Abi for SCESVC_CONFIGURATION_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SCESVC_CONFIGURATION_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -354,6 +358,7 @@ impl ::core::fmt::Debug for SCESVC_CONFIGURATION_LINE {
 }
 unsafe impl ::windows::core::Abi for SCESVC_CONFIGURATION_LINE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SCESVC_CONFIGURATION_LINE {
     fn eq(&self, other: &Self) -> bool {
@@ -393,6 +398,7 @@ impl ::core::default::Default for SCESVC_INFO_TYPE {
 }
 unsafe impl ::windows::core::Abi for SCESVC_INFO_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SCESVC_INFO_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -424,6 +430,7 @@ impl ::core::default::Default for SCE_LOG_ERR_LEVEL {
 }
 unsafe impl ::windows::core::Abi for SCE_LOG_ERR_LEVEL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SCE_LOG_ERR_LEVEL {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

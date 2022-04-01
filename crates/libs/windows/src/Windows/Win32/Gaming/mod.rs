@@ -80,6 +80,7 @@ impl ::core::default::Default for GAMESTATS_OPEN_RESULT {
 }
 unsafe impl ::windows::core::Abi for GAMESTATS_OPEN_RESULT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GAMESTATS_OPEN_RESULT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -107,6 +108,7 @@ impl ::core::default::Default for GAMESTATS_OPEN_TYPE {
 }
 unsafe impl ::windows::core::Abi for GAMESTATS_OPEN_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GAMESTATS_OPEN_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -136,6 +138,7 @@ impl ::core::default::Default for GAME_INSTALL_SCOPE {
 }
 unsafe impl ::windows::core::Abi for GAME_INSTALL_SCOPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GAME_INSTALL_SCOPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -169,6 +172,7 @@ impl ::core::default::Default for GAMING_DEVICE_DEVICE_ID {
 }
 unsafe impl ::windows::core::Abi for GAMING_DEVICE_DEVICE_ID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GAMING_DEVICE_DEVICE_ID {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -194,6 +198,7 @@ impl ::core::fmt::Debug for GAMING_DEVICE_MODEL_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for GAMING_DEVICE_MODEL_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for GAMING_DEVICE_MODEL_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -227,6 +232,7 @@ impl ::core::default::Default for GAMING_DEVICE_VENDOR_ID {
 }
 unsafe impl ::windows::core::Abi for GAMING_DEVICE_VENDOR_ID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GAMING_DEVICE_VENDOR_ID {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -290,6 +296,11 @@ pub const ID_GDF_XML_STR: &'static str = "__GDF_XML";
 #[doc = "*Required features: `\"Win32_Gaming\"`*"]
 #[repr(transparent)]
 pub struct IGameExplorer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGameExplorer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IGameExplorer {
     #[doc = "*Required features: `\"Win32_Gaming\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -331,11 +342,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IGame
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IGameExplorer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IGameExplorer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -369,6 +375,11 @@ pub struct IGameExplorer_Vtbl {
 #[doc = "*Required features: `\"Win32_Gaming\"`*"]
 #[repr(transparent)]
 pub struct IGameExplorer2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGameExplorer2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IGameExplorer2 {
     #[doc = "*Required features: `\"Win32_Gaming\"`*"]
     pub unsafe fn InstallGame<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param1: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, binarygdfpath: Param0, installdirectory: Param1, installscope: GAME_INSTALL_SCOPE) -> ::windows::core::Result<()> {
@@ -405,11 +416,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IGame
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IGameExplorer2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IGameExplorer2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -439,6 +445,11 @@ pub struct IGameExplorer2_Vtbl {
 #[doc = "*Required features: `\"Win32_Gaming\"`*"]
 #[repr(transparent)]
 pub struct IGameStatistics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGameStatistics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IGameStatistics {
     #[doc = "*Required features: `\"Win32_Gaming\"`*"]
     pub unsafe fn GetMaxCategoryLength(&self) -> ::windows::core::Result<u32> {
@@ -517,11 +528,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IGame
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IGameStatistics {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IGameStatistics {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -560,6 +566,11 @@ pub struct IGameStatistics_Vtbl {
 #[doc = "*Required features: `\"Win32_Gaming\"`*"]
 #[repr(transparent)]
 pub struct IGameStatisticsMgr(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGameStatisticsMgr {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IGameStatisticsMgr {
     #[doc = "*Required features: `\"Win32_Gaming\"`*"]
     pub unsafe fn GetGameStatistics<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, gdfbinarypath: Param0, opentype: GAMESTATS_OPEN_TYPE, popenresult: *mut GAMESTATS_OPEN_RESULT, ppistats: *mut ::core::option::Option<IGameStatistics>) -> ::windows::core::Result<()> {
@@ -590,11 +601,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IGame
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IGameStatisticsMgr {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IGameStatisticsMgr {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -620,6 +626,11 @@ pub struct IGameStatisticsMgr_Vtbl {
 #[doc = "*Required features: `\"Win32_Gaming\"`*"]
 #[repr(transparent)]
 pub struct IXblIdpAuthManager(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXblIdpAuthManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXblIdpAuthManager {
     #[doc = "*Required features: `\"Win32_Gaming\"`*"]
     pub unsafe fn SetGamerAccount<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param1: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, msaaccountid: Param0, xuid: Param1) -> ::windows::core::Result<()> {
@@ -670,11 +681,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IXblI
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXblIdpAuthManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXblIdpAuthManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -707,6 +713,11 @@ pub struct IXblIdpAuthManager_Vtbl {
 #[doc = "*Required features: `\"Win32_Gaming\"`*"]
 #[repr(transparent)]
 pub struct IXblIdpAuthTokenResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXblIdpAuthTokenResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXblIdpAuthTokenResult {
     #[doc = "*Required features: `\"Win32_Gaming\"`*"]
     pub unsafe fn GetStatus(&self) -> ::windows::core::Result<XBL_IDP_AUTH_TOKEN_STATUS> {
@@ -829,11 +840,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IXblI
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXblIdpAuthTokenResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXblIdpAuthTokenResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -877,6 +883,11 @@ pub struct IXblIdpAuthTokenResult_Vtbl {
 #[doc = "*Required features: `\"Win32_Gaming\"`*"]
 #[repr(transparent)]
 pub struct IXblIdpAuthTokenResult2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXblIdpAuthTokenResult2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXblIdpAuthTokenResult2 {
     #[doc = "*Required features: `\"Win32_Gaming\"`*"]
     pub unsafe fn GetModernGamertag(&self) -> ::windows::core::Result<::windows::core::PWSTR> {
@@ -912,11 +923,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IXblIdpAu
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IXblIdpAuthTokenResult2 {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IXblIdpAuthTokenResult2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IXblIdpAuthTokenResult2 {
@@ -1003,6 +1009,7 @@ impl ::core::default::Default for KnownGamingPrivileges {
 }
 unsafe impl ::windows::core::Abi for KnownGamingPrivileges {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KnownGamingPrivileges {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1370,6 +1377,7 @@ impl ::core::default::Default for XBL_IDP_AUTH_TOKEN_STATUS {
 }
 unsafe impl ::windows::core::Abi for XBL_IDP_AUTH_TOKEN_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for XBL_IDP_AUTH_TOKEN_STATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

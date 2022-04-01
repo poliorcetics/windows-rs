@@ -2,6 +2,11 @@
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMediaTranscoder(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMediaTranscoder {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMediaTranscoder {
     type Vtable = IMediaTranscoder_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x190c99d2_a0aa_4d34_86bc_eed1b12c2f5b);
@@ -53,6 +58,11 @@ pub struct IMediaTranscoder_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMediaTranscoder2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMediaTranscoder2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMediaTranscoder2 {
     type Vtable = IMediaTranscoder2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x40531d74_35e0_4f04_8574_ca8bc4e5a082);
@@ -71,6 +81,11 @@ pub struct IMediaTranscoder2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrepareTranscodeResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrepareTranscodeResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrepareTranscodeResult {
     type Vtable = IPrepareTranscodeResult_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x05f25dce_994f_4a34_9d68_97ccce1730d6);
@@ -221,11 +236,6 @@ impl MediaTranscoder {
         }
     }
 }
-impl ::core::clone::Clone for MediaTranscoder {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MediaTranscoder {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -239,7 +249,6 @@ impl ::core::fmt::Debug for MediaTranscoder {
 }
 unsafe impl ::windows::core::RuntimeType for MediaTranscoder {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.Transcoding.MediaTranscoder;{190c99d2-a0aa-4d34-86bc-eed1b12c2f5b})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -314,6 +323,7 @@ impl ::core::default::Default for MediaVideoProcessingAlgorithm {
 }
 unsafe impl ::windows::core::Abi for MediaVideoProcessingAlgorithm {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MediaVideoProcessingAlgorithm {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -322,7 +332,6 @@ impl ::core::fmt::Debug for MediaVideoProcessingAlgorithm {
 }
 unsafe impl ::windows::core::RuntimeType for MediaVideoProcessingAlgorithm {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Media.Transcoding.MediaVideoProcessingAlgorithm;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -357,11 +366,6 @@ impl PrepareTranscodeResult {
         }
     }
 }
-impl ::core::clone::Clone for PrepareTranscodeResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PrepareTranscodeResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -375,7 +379,6 @@ impl ::core::fmt::Debug for PrepareTranscodeResult {
 }
 unsafe impl ::windows::core::RuntimeType for PrepareTranscodeResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.Transcoding.PrepareTranscodeResult;{05f25dce-994f-4a34-9d68-97ccce1730d6})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -452,6 +455,7 @@ impl ::core::default::Default for TranscodeFailureReason {
 }
 unsafe impl ::windows::core::Abi for TranscodeFailureReason {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TranscodeFailureReason {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -460,7 +464,6 @@ impl ::core::fmt::Debug for TranscodeFailureReason {
 }
 unsafe impl ::windows::core::RuntimeType for TranscodeFailureReason {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Media.Transcoding.TranscodeFailureReason;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }

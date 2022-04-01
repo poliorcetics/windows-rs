@@ -4,6 +4,11 @@ pub mod DataProvider;
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IUserDataTask(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUserDataTask {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IUserDataTask {
     type Vtable = IUserDataTask_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x7c6585d1_e0d4_4f99_aee2_bc2d5ddadf4c);
@@ -67,6 +72,11 @@ pub struct IUserDataTask_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IUserDataTaskBatch(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUserDataTaskBatch {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IUserDataTaskBatch {
     type Vtable = IUserDataTaskBatch_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x382da5fe_20b5_431c_8f42_a5d292ec930c);
@@ -83,6 +93,11 @@ pub struct IUserDataTaskBatch_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IUserDataTaskList(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUserDataTaskList {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IUserDataTaskList {
     type Vtable = IUserDataTaskList_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x49412e39_7c1d_4df1_bed3_314b7cbf5e4e);
@@ -132,6 +147,11 @@ pub struct IUserDataTaskList_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IUserDataTaskListLimitedWriteOperations(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUserDataTaskListLimitedWriteOperations {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IUserDataTaskListLimitedWriteOperations {
     type Vtable = IUserDataTaskListLimitedWriteOperations_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x7aa267f2_6078_4183_919e_4f29f19cfae9);
@@ -160,6 +180,11 @@ pub struct IUserDataTaskListLimitedWriteOperations_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IUserDataTaskListSyncManager(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUserDataTaskListSyncManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IUserDataTaskListSyncManager {
     type Vtable = IUserDataTaskListSyncManager_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x8e591a95_1dcf_469f_93ec_ba48bb553c6b);
@@ -202,6 +227,11 @@ pub struct IUserDataTaskListSyncManager_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IUserDataTaskManager(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUserDataTaskManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IUserDataTaskManager {
     type Vtable = IUserDataTaskManager_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x8451c914_e60b_48a9_9211_7fb8a56cb84c);
@@ -222,6 +252,11 @@ pub struct IUserDataTaskManager_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IUserDataTaskManagerStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUserDataTaskManagerStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IUserDataTaskManagerStatics {
     type Vtable = IUserDataTaskManagerStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb35539f8_c502_47fc_a81e_100883719d55);
@@ -239,6 +274,11 @@ pub struct IUserDataTaskManagerStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IUserDataTaskQueryOptions(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUserDataTaskQueryOptions {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IUserDataTaskQueryOptions {
     type Vtable = IUserDataTaskQueryOptions_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x959f27ed_909a_4d30_8c1b_331d8fe667e2);
@@ -255,6 +295,11 @@ pub struct IUserDataTaskQueryOptions_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IUserDataTaskReader(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUserDataTaskReader {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IUserDataTaskReader {
     type Vtable = IUserDataTaskReader_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x03e688b1_4ccf_4500_883b_e76290cfed63);
@@ -271,6 +316,11 @@ pub struct IUserDataTaskReader_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IUserDataTaskRecurrenceProperties(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUserDataTaskRecurrenceProperties {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IUserDataTaskRecurrenceProperties {
     type Vtable = IUserDataTaskRecurrenceProperties_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x73df80b0_27c6_40ce_b149_9cd41485a69e);
@@ -335,6 +385,11 @@ pub struct IUserDataTaskRecurrenceProperties_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IUserDataTaskRegenerationProperties(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUserDataTaskRegenerationProperties {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IUserDataTaskRegenerationProperties {
     type Vtable = IUserDataTaskRegenerationProperties_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x92ab0007_090e_4704_bb5c_84fc0b0d9c31);
@@ -367,6 +422,11 @@ pub struct IUserDataTaskRegenerationProperties_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IUserDataTaskStore(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUserDataTaskStore {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IUserDataTaskStore {
     type Vtable = IUserDataTaskStore_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf06a9cb0_f1db_45ba_8a62_086004c0213d);
@@ -592,11 +652,6 @@ impl UserDataTask {
         unsafe { (::windows::core::Interface::vtable(this).SetStartDate)(::core::mem::transmute_copy(this), value.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for UserDataTask {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for UserDataTask {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -610,7 +665,6 @@ impl ::core::fmt::Debug for UserDataTask {
 }
 unsafe impl ::windows::core::RuntimeType for UserDataTask {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.UserDataTasks.UserDataTask;{7c6585d1-e0d4-4f99-aee2-bc2d5ddadf4c})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -678,11 +732,6 @@ impl UserDataTaskBatch {
         }
     }
 }
-impl ::core::clone::Clone for UserDataTaskBatch {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for UserDataTaskBatch {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -696,7 +745,6 @@ impl ::core::fmt::Debug for UserDataTaskBatch {
 }
 unsafe impl ::windows::core::RuntimeType for UserDataTaskBatch {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.UserDataTasks.UserDataTaskBatch;{382da5fe-20b5-431c-8f42-a5d292ec930c})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -777,6 +825,7 @@ impl ::core::default::Default for UserDataTaskDaysOfWeek {
 }
 unsafe impl ::windows::core::Abi for UserDataTaskDaysOfWeek {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UserDataTaskDaysOfWeek {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -813,7 +862,6 @@ impl ::core::ops::Not for UserDataTaskDaysOfWeek {
 }
 unsafe impl ::windows::core::RuntimeType for UserDataTaskDaysOfWeek {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.UserDataTasks.UserDataTaskDaysOfWeek;u4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -839,6 +887,7 @@ impl ::core::default::Default for UserDataTaskDetailsKind {
 }
 unsafe impl ::windows::core::Abi for UserDataTaskDetailsKind {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UserDataTaskDetailsKind {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -847,7 +896,6 @@ impl ::core::fmt::Debug for UserDataTaskDetailsKind {
 }
 unsafe impl ::windows::core::RuntimeType for UserDataTaskDetailsKind {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.UserDataTasks.UserDataTaskDetailsKind;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -874,6 +922,7 @@ impl ::core::default::Default for UserDataTaskKind {
 }
 unsafe impl ::windows::core::Abi for UserDataTaskKind {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UserDataTaskKind {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -882,7 +931,6 @@ impl ::core::fmt::Debug for UserDataTaskKind {
 }
 unsafe impl ::windows::core::RuntimeType for UserDataTaskKind {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.UserDataTasks.UserDataTaskKind;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1041,11 +1089,6 @@ impl UserDataTaskList {
         }
     }
 }
-impl ::core::clone::Clone for UserDataTaskList {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for UserDataTaskList {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1059,7 +1102,6 @@ impl ::core::fmt::Debug for UserDataTaskList {
 }
 unsafe impl ::windows::core::RuntimeType for UserDataTaskList {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.UserDataTasks.UserDataTaskList;{49412e39-7c1d-4df1-bed3-314b7cbf5e4e})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1154,11 +1196,6 @@ impl UserDataTaskListLimitedWriteOperations {
         }
     }
 }
-impl ::core::clone::Clone for UserDataTaskListLimitedWriteOperations {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for UserDataTaskListLimitedWriteOperations {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1172,7 +1209,6 @@ impl ::core::fmt::Debug for UserDataTaskListLimitedWriteOperations {
 }
 unsafe impl ::windows::core::RuntimeType for UserDataTaskListLimitedWriteOperations {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.UserDataTasks.UserDataTaskListLimitedWriteOperations;{7aa267f2-6078-4183-919e-4f29f19cfae9})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1248,6 +1284,7 @@ impl ::core::default::Default for UserDataTaskListOtherAppReadAccess {
 }
 unsafe impl ::windows::core::Abi for UserDataTaskListOtherAppReadAccess {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UserDataTaskListOtherAppReadAccess {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1256,7 +1293,6 @@ impl ::core::fmt::Debug for UserDataTaskListOtherAppReadAccess {
 }
 unsafe impl ::windows::core::RuntimeType for UserDataTaskListOtherAppReadAccess {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.UserDataTasks.UserDataTaskListOtherAppReadAccess;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1282,6 +1318,7 @@ impl ::core::default::Default for UserDataTaskListOtherAppWriteAccess {
 }
 unsafe impl ::windows::core::Abi for UserDataTaskListOtherAppWriteAccess {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UserDataTaskListOtherAppWriteAccess {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1290,7 +1327,6 @@ impl ::core::fmt::Debug for UserDataTaskListOtherAppWriteAccess {
 }
 unsafe impl ::windows::core::RuntimeType for UserDataTaskListOtherAppWriteAccess {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.UserDataTasks.UserDataTaskListOtherAppWriteAccess;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1367,11 +1403,6 @@ impl UserDataTaskListSyncManager {
         unsafe { (::windows::core::Interface::vtable(this).RemoveSyncStatusChanged)(::core::mem::transmute_copy(this), token.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for UserDataTaskListSyncManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for UserDataTaskListSyncManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1385,7 +1416,6 @@ impl ::core::fmt::Debug for UserDataTaskListSyncManager {
 }
 unsafe impl ::windows::core::RuntimeType for UserDataTaskListSyncManager {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.UserDataTasks.UserDataTaskListSyncManager;{8e591a95-1dcf-469f-93ec-ba48bb553c6b})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1464,6 +1494,7 @@ impl ::core::default::Default for UserDataTaskListSyncStatus {
 }
 unsafe impl ::windows::core::Abi for UserDataTaskListSyncStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UserDataTaskListSyncStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1472,7 +1503,6 @@ impl ::core::fmt::Debug for UserDataTaskListSyncStatus {
 }
 unsafe impl ::windows::core::RuntimeType for UserDataTaskListSyncStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.UserDataTasks.UserDataTaskListSyncStatus;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1520,11 +1550,6 @@ impl UserDataTaskManager {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for UserDataTaskManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for UserDataTaskManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1538,7 +1563,6 @@ impl ::core::fmt::Debug for UserDataTaskManager {
 }
 unsafe impl ::windows::core::RuntimeType for UserDataTaskManager {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.UserDataTasks.UserDataTaskManager;{8451c914-e60b-48a9-9211-7fb8a56cb84c})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1614,6 +1638,7 @@ impl ::core::default::Default for UserDataTaskPriority {
 }
 unsafe impl ::windows::core::Abi for UserDataTaskPriority {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UserDataTaskPriority {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1622,7 +1647,6 @@ impl ::core::fmt::Debug for UserDataTaskPriority {
 }
 unsafe impl ::windows::core::RuntimeType for UserDataTaskPriority {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.UserDataTasks.UserDataTaskPriority;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1649,6 +1673,7 @@ impl ::core::default::Default for UserDataTaskQueryKind {
 }
 unsafe impl ::windows::core::Abi for UserDataTaskQueryKind {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UserDataTaskQueryKind {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1657,7 +1682,6 @@ impl ::core::fmt::Debug for UserDataTaskQueryKind {
 }
 unsafe impl ::windows::core::RuntimeType for UserDataTaskQueryKind {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.UserDataTasks.UserDataTaskQueryKind;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1700,11 +1724,6 @@ impl UserDataTaskQueryOptions {
         unsafe { (::windows::core::Interface::vtable(this).SetKind)(::core::mem::transmute_copy(this), value).ok() }
     }
 }
-impl ::core::clone::Clone for UserDataTaskQueryOptions {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for UserDataTaskQueryOptions {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1718,7 +1737,6 @@ impl ::core::fmt::Debug for UserDataTaskQueryOptions {
 }
 unsafe impl ::windows::core::RuntimeType for UserDataTaskQueryOptions {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.UserDataTasks.UserDataTaskQueryOptions;{959f27ed-909a-4d30-8c1b-331d8fe667e2})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1792,6 +1810,7 @@ impl ::core::default::Default for UserDataTaskQuerySortProperty {
 }
 unsafe impl ::windows::core::Abi for UserDataTaskQuerySortProperty {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UserDataTaskQuerySortProperty {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1800,7 +1819,6 @@ impl ::core::fmt::Debug for UserDataTaskQuerySortProperty {
 }
 unsafe impl ::windows::core::RuntimeType for UserDataTaskQuerySortProperty {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.UserDataTasks.UserDataTaskQuerySortProperty;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1819,11 +1837,6 @@ impl UserDataTaskReader {
         }
     }
 }
-impl ::core::clone::Clone for UserDataTaskReader {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for UserDataTaskReader {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1837,7 +1850,6 @@ impl ::core::fmt::Debug for UserDataTaskReader {
 }
 unsafe impl ::windows::core::RuntimeType for UserDataTaskReader {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.UserDataTasks.UserDataTaskReader;{03e688b1-4ccf-4500-883b-e76290cfed63})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2019,11 +2031,6 @@ impl UserDataTaskRecurrenceProperties {
         unsafe { (::windows::core::Interface::vtable(this).SetDay)(::core::mem::transmute_copy(this), value.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for UserDataTaskRecurrenceProperties {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for UserDataTaskRecurrenceProperties {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2037,7 +2044,6 @@ impl ::core::fmt::Debug for UserDataTaskRecurrenceProperties {
 }
 unsafe impl ::windows::core::RuntimeType for UserDataTaskRecurrenceProperties {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.UserDataTasks.UserDataTaskRecurrenceProperties;{73df80b0-27c6-40ce-b149-9cd41485a69e})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2116,6 +2122,7 @@ impl ::core::default::Default for UserDataTaskRecurrenceUnit {
 }
 unsafe impl ::windows::core::Abi for UserDataTaskRecurrenceUnit {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UserDataTaskRecurrenceUnit {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2124,7 +2131,6 @@ impl ::core::fmt::Debug for UserDataTaskRecurrenceUnit {
 }
 unsafe impl ::windows::core::RuntimeType for UserDataTaskRecurrenceUnit {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.UserDataTasks.UserDataTaskRecurrenceUnit;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2197,11 +2203,6 @@ impl UserDataTaskRegenerationProperties {
         unsafe { (::windows::core::Interface::vtable(this).SetInterval)(::core::mem::transmute_copy(this), value).ok() }
     }
 }
-impl ::core::clone::Clone for UserDataTaskRegenerationProperties {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for UserDataTaskRegenerationProperties {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2215,7 +2216,6 @@ impl ::core::fmt::Debug for UserDataTaskRegenerationProperties {
 }
 unsafe impl ::windows::core::RuntimeType for UserDataTaskRegenerationProperties {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.UserDataTasks.UserDataTaskRegenerationProperties;{92ab0007-090e-4704-bb5c-84fc0b0d9c31})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2292,6 +2292,7 @@ impl ::core::default::Default for UserDataTaskRegenerationUnit {
 }
 unsafe impl ::windows::core::Abi for UserDataTaskRegenerationUnit {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UserDataTaskRegenerationUnit {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2300,7 +2301,6 @@ impl ::core::fmt::Debug for UserDataTaskRegenerationUnit {
 }
 unsafe impl ::windows::core::RuntimeType for UserDataTaskRegenerationUnit {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.UserDataTasks.UserDataTaskRegenerationUnit;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2326,6 +2326,7 @@ impl ::core::default::Default for UserDataTaskSensitivity {
 }
 unsafe impl ::windows::core::Abi for UserDataTaskSensitivity {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UserDataTaskSensitivity {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2334,7 +2335,6 @@ impl ::core::fmt::Debug for UserDataTaskSensitivity {
 }
 unsafe impl ::windows::core::RuntimeType for UserDataTaskSensitivity {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.UserDataTasks.UserDataTaskSensitivity;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2380,11 +2380,6 @@ impl UserDataTaskStore {
         }
     }
 }
-impl ::core::clone::Clone for UserDataTaskStore {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for UserDataTaskStore {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2398,7 +2393,6 @@ impl ::core::fmt::Debug for UserDataTaskStore {
 }
 unsafe impl ::windows::core::RuntimeType for UserDataTaskStore {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.UserDataTasks.UserDataTaskStore;{f06a9cb0-f1db-45ba-8a62-086004c0213d})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2473,6 +2467,7 @@ impl ::core::default::Default for UserDataTaskStoreAccessType {
 }
 unsafe impl ::windows::core::Abi for UserDataTaskStoreAccessType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UserDataTaskStoreAccessType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2481,7 +2476,6 @@ impl ::core::fmt::Debug for UserDataTaskStoreAccessType {
 }
 unsafe impl ::windows::core::RuntimeType for UserDataTaskStoreAccessType {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.UserDataTasks.UserDataTaskStoreAccessType;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2510,6 +2504,7 @@ impl ::core::default::Default for UserDataTaskWeekOfMonth {
 }
 unsafe impl ::windows::core::Abi for UserDataTaskWeekOfMonth {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UserDataTaskWeekOfMonth {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2518,7 +2513,6 @@ impl ::core::fmt::Debug for UserDataTaskWeekOfMonth {
 }
 unsafe impl ::windows::core::RuntimeType for UserDataTaskWeekOfMonth {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.UserDataTasks.UserDataTaskWeekOfMonth;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }

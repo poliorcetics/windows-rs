@@ -28,6 +28,7 @@ impl ::core::default::Default for Direct3DBindings {
 }
 unsafe impl ::windows::core::Abi for Direct3DBindings {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for Direct3DBindings {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -64,7 +65,6 @@ impl ::core::ops::Not for Direct3DBindings {
 }
 unsafe impl ::windows::core::RuntimeType for Direct3DBindings {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Graphics.DirectX.Direct3D11.Direct3DBindings;u4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -88,10 +88,10 @@ impl ::core::fmt::Debug for Direct3DMultisampleDescription {
 }
 unsafe impl ::windows::core::Abi for Direct3DMultisampleDescription {
     type Abi = Self;
+    type DefaultType = Self;
 }
 unsafe impl ::windows::core::RuntimeType for Direct3DMultisampleDescription {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"struct(Windows.Graphics.DirectX.Direct3D11.Direct3DMultisampleDescription;i4;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -128,10 +128,10 @@ impl ::core::fmt::Debug for Direct3DSurfaceDescription {
 }
 unsafe impl ::windows::core::Abi for Direct3DSurfaceDescription {
     type Abi = Self;
+    type DefaultType = Self;
 }
 unsafe impl ::windows::core::RuntimeType for Direct3DSurfaceDescription {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"struct(Windows.Graphics.DirectX.Direct3D11.Direct3DSurfaceDescription;i4;i4;enum(Windows.Graphics.DirectX.DirectXPixelFormat;i4);struct(Windows.Graphics.DirectX.Direct3D11.Direct3DMultisampleDescription;i4;i4))");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -170,6 +170,7 @@ impl ::core::default::Default for Direct3DUsage {
 }
 unsafe impl ::windows::core::Abi for Direct3DUsage {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for Direct3DUsage {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -178,7 +179,6 @@ impl ::core::fmt::Debug for Direct3DUsage {
 }
 unsafe impl ::windows::core::RuntimeType for Direct3DUsage {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Graphics.DirectX.Direct3D11.Direct3DUsage;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -186,6 +186,11 @@ unsafe impl ::windows::core::RuntimeType for Direct3DUsage {
 #[doc = "*Required features: `\"Graphics_DirectX_Direct3D11\"`*"]
 #[repr(transparent)]
 pub struct IDirect3DDevice(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirect3DDevice {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirect3DDevice {
     #[doc = "*Required features: `\"Graphics_DirectX_Direct3D11\"`*"]
     pub fn Trim(&self) -> ::windows::core::Result<()> {
@@ -265,11 +270,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::Foundation::IClosab
         ::core::convert::TryInto::<super::super::super::Foundation::IClosable>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IDirect3DDevice {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirect3DDevice {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -283,7 +283,6 @@ impl ::core::fmt::Debug for IDirect3DDevice {
 }
 unsafe impl ::windows::core::RuntimeType for IDirect3DDevice {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{a37624ab-8d5f-4650-9d3e-9eae3d9bc670}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -301,6 +300,11 @@ pub struct IDirect3DDevice_Vtbl {
 #[doc = "*Required features: `\"Graphics_DirectX_Direct3D11\"`*"]
 #[repr(transparent)]
 pub struct IDirect3DSurface(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirect3DSurface {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirect3DSurface {
     #[doc = "*Required features: `\"Graphics_DirectX_Direct3D11\"`*"]
     pub fn Description(&self) -> ::windows::core::Result<Direct3DSurfaceDescription> {
@@ -383,11 +387,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::Foundation::IClosab
         ::core::convert::TryInto::<super::super::super::Foundation::IClosable>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IDirect3DSurface {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirect3DSurface {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -401,7 +400,6 @@ impl ::core::fmt::Debug for IDirect3DSurface {
 }
 unsafe impl ::windows::core::RuntimeType for IDirect3DSurface {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{0bf4a146-13c1-4694-bee3-7abf15eaf586}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

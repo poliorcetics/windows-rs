@@ -17,11 +17,6 @@ impl CoreAppWindowPreview {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for CoreAppWindowPreview {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for CoreAppWindowPreview {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -35,7 +30,6 @@ impl ::core::fmt::Debug for CoreAppWindowPreview {
 }
 unsafe impl ::windows::core::RuntimeType for CoreAppWindowPreview {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Core.Preview.CoreAppWindowPreview;{a4f6e665-365e-5fde-87a5-9543c3a15aa8})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -92,6 +86,11 @@ unsafe impl ::core::marker::Sync for CoreAppWindowPreview {}
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICoreAppWindowPreview(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICoreAppWindowPreview {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICoreAppWindowPreview {
     type Vtable = ICoreAppWindowPreview_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa4f6e665_365e_5fde_87a5_9543c3a15aa8);
@@ -104,6 +103,11 @@ pub struct ICoreAppWindowPreview_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICoreAppWindowPreviewStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICoreAppWindowPreviewStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICoreAppWindowPreviewStatics {
     type Vtable = ICoreAppWindowPreviewStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x33ac21be_423b_5db6_8a8e_4dc87353b75b);
@@ -120,6 +124,11 @@ pub struct ICoreAppWindowPreviewStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISystemNavigationCloseRequestedPreviewEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISystemNavigationCloseRequestedPreviewEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISystemNavigationCloseRequestedPreviewEventArgs {
     type Vtable = ISystemNavigationCloseRequestedPreviewEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x83d00de1_cbe5_4f31_8414_361da046518f);
@@ -138,6 +147,11 @@ pub struct ISystemNavigationCloseRequestedPreviewEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISystemNavigationManagerPreview(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISystemNavigationManagerPreview {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISystemNavigationManagerPreview {
     type Vtable = ISystemNavigationManagerPreview_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xec5f0488_6425_4777_a536_cb5634427f0d);
@@ -158,6 +172,11 @@ pub struct ISystemNavigationManagerPreview_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISystemNavigationManagerPreviewStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISystemNavigationManagerPreviewStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISystemNavigationManagerPreviewStatics {
     type Vtable = ISystemNavigationManagerPreviewStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x0e971360_df74_4bce_84cb_bd1181ac0a71);
@@ -195,11 +214,6 @@ impl SystemNavigationCloseRequestedPreviewEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for SystemNavigationCloseRequestedPreviewEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SystemNavigationCloseRequestedPreviewEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -213,7 +227,6 @@ impl ::core::fmt::Debug for SystemNavigationCloseRequestedPreviewEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for SystemNavigationCloseRequestedPreviewEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Core.Preview.SystemNavigationCloseRequestedPreviewEventArgs;{83d00de1-cbe5-4f31-8414-361da046518f})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -299,11 +312,6 @@ impl SystemNavigationManagerPreview {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for SystemNavigationManagerPreview {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SystemNavigationManagerPreview {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -317,7 +325,6 @@ impl ::core::fmt::Debug for SystemNavigationManagerPreview {
 }
 unsafe impl ::windows::core::RuntimeType for SystemNavigationManagerPreview {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Core.Preview.SystemNavigationManagerPreview;{ec5f0488-6425-4777-a536-cb5634427f0d})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

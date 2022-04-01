@@ -78,6 +78,12 @@ impl ::windows::core::RuntimeName for ForegroundEnergyDiagnostics {
 #[repr(transparent)]
 pub struct IBackgroundEnergyDiagnosticsStatics(::windows::core::IUnknown);
 #[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for IBackgroundEnergyDiagnosticsStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for IBackgroundEnergyDiagnosticsStatics {
     type Vtable = IBackgroundEnergyDiagnosticsStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd7663702_d3a6_46e0_8f9b_50b95bb4f9c5);
@@ -104,6 +110,12 @@ pub struct IBackgroundEnergyDiagnosticsStatics_Vtbl {
 #[cfg(feature = "deprecated")]
 #[repr(transparent)]
 pub struct IForegroundEnergyDiagnosticsStatics(::windows::core::IUnknown);
+#[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for IForegroundEnergyDiagnosticsStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for IForegroundEnergyDiagnosticsStatics {
     type Vtable = IForegroundEnergyDiagnosticsStatics_Vtbl;

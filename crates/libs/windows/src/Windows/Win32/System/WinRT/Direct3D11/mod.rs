@@ -34,6 +34,11 @@ pub unsafe fn CreateDirect3D11SurfaceFromDXGISurface<'a, Param0: ::windows::core
 #[doc = "*Required features: `\"Win32_System_WinRT_Direct3D11\"`*"]
 #[repr(transparent)]
 pub struct IDirect3DDxgiInterfaceAccess(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirect3DDxgiInterfaceAccess {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirect3DDxgiInterfaceAccess {
     #[doc = "*Required features: `\"Win32_System_WinRT_Direct3D11\"`*"]
     pub unsafe fn GetInterface<T: ::windows::core::Interface>(&self) -> ::windows::core::Result<T> {
@@ -59,11 +64,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IDirect3D
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDirect3DDxgiInterfaceAccess {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IDirect3DDxgiInterfaceAccess {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IDirect3DDxgiInterfaceAccess {

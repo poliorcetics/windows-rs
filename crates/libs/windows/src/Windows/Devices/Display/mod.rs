@@ -209,11 +209,6 @@ impl DisplayMonitor {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for DisplayMonitor {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DisplayMonitor {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -227,7 +222,6 @@ impl ::core::fmt::Debug for DisplayMonitor {
 }
 unsafe impl ::windows::core::RuntimeType for DisplayMonitor {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Display.DisplayMonitor;{1f6b15d4-1d01-4c51-87e2-6f954a772b59})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -304,6 +298,7 @@ impl ::core::default::Default for DisplayMonitorConnectionKind {
 }
 unsafe impl ::windows::core::Abi for DisplayMonitorConnectionKind {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DisplayMonitorConnectionKind {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -312,7 +307,6 @@ impl ::core::fmt::Debug for DisplayMonitorConnectionKind {
 }
 unsafe impl ::windows::core::RuntimeType for DisplayMonitorConnectionKind {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.Display.DisplayMonitorConnectionKind;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -338,6 +332,7 @@ impl ::core::default::Default for DisplayMonitorDescriptorKind {
 }
 unsafe impl ::windows::core::Abi for DisplayMonitorDescriptorKind {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DisplayMonitorDescriptorKind {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -346,7 +341,6 @@ impl ::core::fmt::Debug for DisplayMonitorDescriptorKind {
 }
 unsafe impl ::windows::core::RuntimeType for DisplayMonitorDescriptorKind {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.Display.DisplayMonitorDescriptorKind;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -378,6 +372,7 @@ impl ::core::default::Default for DisplayMonitorPhysicalConnectorKind {
 }
 unsafe impl ::windows::core::Abi for DisplayMonitorPhysicalConnectorKind {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DisplayMonitorPhysicalConnectorKind {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -386,7 +381,6 @@ impl ::core::fmt::Debug for DisplayMonitorPhysicalConnectorKind {
 }
 unsafe impl ::windows::core::RuntimeType for DisplayMonitorPhysicalConnectorKind {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.Display.DisplayMonitorPhysicalConnectorKind;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -413,6 +407,7 @@ impl ::core::default::Default for DisplayMonitorUsageKind {
 }
 unsafe impl ::windows::core::Abi for DisplayMonitorUsageKind {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DisplayMonitorUsageKind {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -421,7 +416,6 @@ impl ::core::fmt::Debug for DisplayMonitorUsageKind {
 }
 unsafe impl ::windows::core::RuntimeType for DisplayMonitorUsageKind {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.Display.DisplayMonitorUsageKind;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -429,6 +423,11 @@ unsafe impl ::windows::core::RuntimeType for DisplayMonitorUsageKind {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDisplayMonitor(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDisplayMonitor {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDisplayMonitor {
     type Vtable = IDisplayMonitor_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1f6b15d4_1d01_4c51_87e2_6f954a772b59);
@@ -482,6 +481,11 @@ pub struct IDisplayMonitor_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDisplayMonitor2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDisplayMonitor2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDisplayMonitor2 {
     type Vtable = IDisplayMonitor2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x023018e6_cb23_5830_96df_a7bf6e602577);
@@ -495,6 +499,11 @@ pub struct IDisplayMonitor2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDisplayMonitorStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDisplayMonitorStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDisplayMonitorStatics {
     type Vtable = IDisplayMonitorStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x6eae698f_a228_4c05_821d_b695d667de8e);

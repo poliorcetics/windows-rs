@@ -2,6 +2,11 @@
 #[doc = "*Required features: `\"Win32_System_Diagnostics_Debug_WebApp\"`*"]
 #[repr(transparent)]
 pub struct IWebApplicationActivation(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWebApplicationActivation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWebApplicationActivation {
     #[doc = "*Required features: `\"Win32_System_Diagnostics_Debug_WebApp\"`*"]
     pub unsafe fn CancelPendingActivation(&self) -> ::windows::core::Result<()> {
@@ -26,11 +31,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IWebAppli
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWebApplicationActivation {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IWebApplicationActivation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IWebApplicationActivation {
@@ -58,6 +58,12 @@ pub struct IWebApplicationActivation_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IWebApplicationAuthoringMode(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IWebApplicationAuthoringMode {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IWebApplicationAuthoringMode {
     #[doc = "*Required features: `\"Win32_System_Diagnostics_Debug_WebApp\"`, `\"Win32_System_Com\"`*"]
@@ -121,12 +127,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::Com::IServiceProvid
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IWebApplicationAuthoringMode {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IWebApplicationAuthoringMode {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -158,6 +158,11 @@ pub struct IWebApplicationAuthoringMode_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Diagnostics_Debug_WebApp\"`*"]
 #[repr(transparent)]
 pub struct IWebApplicationHost(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWebApplicationHost {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWebApplicationHost {
     #[doc = "*Required features: `\"Win32_System_Diagnostics_Debug_WebApp\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -203,11 +208,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWebA
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWebApplicationHost {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWebApplicationHost {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -242,6 +242,11 @@ pub struct IWebApplicationHost_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Diagnostics_Debug_WebApp\"`*"]
 #[repr(transparent)]
 pub struct IWebApplicationNavigationEvents(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWebApplicationNavigationEvents {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWebApplicationNavigationEvents {
     #[doc = "*Required features: `\"Win32_System_Diagnostics_Debug_WebApp\"`, `\"Win32_System_Com\"`, `\"Win32_Web_MsHtml\"`*"]
     #[cfg(all(feature = "Win32_System_Com", feature = "Win32_Web_MsHtml"))]
@@ -292,11 +297,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWebA
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWebApplicationNavigationEvents {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWebApplicationNavigationEvents {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -338,6 +338,11 @@ pub struct IWebApplicationNavigationEvents_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Diagnostics_Debug_WebApp\"`*"]
 #[repr(transparent)]
 pub struct IWebApplicationScriptEvents(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWebApplicationScriptEvents {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWebApplicationScriptEvents {
     #[doc = "*Required features: `\"Win32_System_Diagnostics_Debug_WebApp\"`, `\"Win32_System_Com\"`, `\"Win32_Web_MsHtml\"`*"]
     #[cfg(all(feature = "Win32_System_Com", feature = "Win32_Web_MsHtml"))]
@@ -368,11 +373,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IWebAppli
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWebApplicationScriptEvents {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IWebApplicationScriptEvents {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IWebApplicationScriptEvents {
@@ -406,6 +406,11 @@ pub struct IWebApplicationScriptEvents_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Diagnostics_Debug_WebApp\"`*"]
 #[repr(transparent)]
 pub struct IWebApplicationUIEvents(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWebApplicationUIEvents {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWebApplicationUIEvents {
     #[doc = "*Required features: `\"Win32_System_Diagnostics_Debug_WebApp\"`*"]
     pub unsafe fn SecurityProblem(&self, securityproblem: u32, result: *mut ::windows::core::HRESULT) -> ::windows::core::Result<()> {
@@ -432,11 +437,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWebA
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWebApplicationUIEvents {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWebApplicationUIEvents {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -461,6 +461,11 @@ pub struct IWebApplicationUIEvents_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Diagnostics_Debug_WebApp\"`*"]
 #[repr(transparent)]
 pub struct IWebApplicationUpdateEvents(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWebApplicationUpdateEvents {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWebApplicationUpdateEvents {
     #[doc = "*Required features: `\"Win32_System_Diagnostics_Debug_WebApp\"`*"]
     pub unsafe fn OnPaint(&self) -> ::windows::core::Result<()> {
@@ -489,11 +494,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IWebAppli
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWebApplicationUpdateEvents {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IWebApplicationUpdateEvents {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IWebApplicationUpdateEvents {

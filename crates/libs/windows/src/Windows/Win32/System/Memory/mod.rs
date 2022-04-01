@@ -80,6 +80,7 @@ impl ::core::fmt::Debug for CFG_CALL_TARGET_INFO {
 }
 unsafe impl ::windows::core::Abi for CFG_CALL_TARGET_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CFG_CALL_TARGET_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -259,6 +260,7 @@ impl ::core::default::Default for FILE_MAP {
 }
 unsafe impl ::windows::core::Abi for FILE_MAP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FILE_MAP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -350,6 +352,7 @@ impl ::core::default::Default for GLOBAL_ALLOC_FLAGS {
 }
 unsafe impl ::windows::core::Abi for GLOBAL_ALLOC_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GLOBAL_ALLOC_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -650,6 +653,7 @@ impl ::core::default::Default for HEAP_FLAGS {
 }
 unsafe impl ::windows::core::Abi for HEAP_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HEAP_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -709,6 +713,7 @@ impl ::core::default::Default for HEAP_INFORMATION_CLASS {
 }
 unsafe impl ::windows::core::Abi for HEAP_INFORMATION_CLASS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HEAP_INFORMATION_CLASS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -737,6 +742,7 @@ impl ::core::fmt::Debug for HEAP_SUMMARY {
 }
 unsafe impl ::windows::core::Abi for HEAP_SUMMARY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HEAP_SUMMARY {
     fn eq(&self, other: &Self) -> bool {
@@ -848,6 +854,7 @@ impl ::core::fmt::Debug for HeapHandle {
 }
 unsafe impl ::windows::core::Abi for HeapHandle {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[doc = "*Required features: `\"Win32_System_Memory\"`, `\"Win32_Foundation\"`*"]
 #[cfg(feature = "Win32_Foundation")]
@@ -1088,6 +1095,7 @@ impl ::core::default::Default for LOCAL_ALLOC_FLAGS {
 }
 unsafe impl ::windows::core::Abi for LOCAL_ALLOC_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for LOCAL_ALLOC_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1267,6 +1275,7 @@ impl ::core::fmt::Debug for MEMORY_BASIC_INFORMATION {
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 unsafe impl ::windows::core::Abi for MEMORY_BASIC_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 impl ::core::cmp::PartialEq for MEMORY_BASIC_INFORMATION {
@@ -1311,6 +1320,7 @@ impl ::core::fmt::Debug for MEMORY_BASIC_INFORMATION {
 #[cfg(target_arch = "x86")]
 unsafe impl ::windows::core::Abi for MEMORY_BASIC_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 impl ::core::cmp::PartialEq for MEMORY_BASIC_INFORMATION {
@@ -1350,6 +1360,7 @@ impl ::core::fmt::Debug for MEMORY_BASIC_INFORMATION32 {
 }
 unsafe impl ::windows::core::Abi for MEMORY_BASIC_INFORMATION32 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MEMORY_BASIC_INFORMATION32 {
     fn eq(&self, other: &Self) -> bool {
@@ -1388,6 +1399,7 @@ impl ::core::fmt::Debug for MEMORY_BASIC_INFORMATION64 {
 }
 unsafe impl ::windows::core::Abi for MEMORY_BASIC_INFORMATION64 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MEMORY_BASIC_INFORMATION64 {
     fn eq(&self, other: &Self) -> bool {
@@ -1421,6 +1433,7 @@ impl ::core::default::Default for MEMORY_RESOURCE_NOTIFICATION_TYPE {
 }
 unsafe impl ::windows::core::Abi for MEMORY_RESOURCE_NOTIFICATION_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MEMORY_RESOURCE_NOTIFICATION_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1447,6 +1460,7 @@ impl ::core::fmt::Debug for MEM_ADDRESS_REQUIREMENTS {
 }
 unsafe impl ::windows::core::Abi for MEM_ADDRESS_REQUIREMENTS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MEM_ADDRESS_REQUIREMENTS {
     fn eq(&self, other: &Self) -> bool {
@@ -1477,6 +1491,7 @@ impl ::core::clone::Clone for MEM_EXTENDED_PARAMETER {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MEM_EXTENDED_PARAMETER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MEM_EXTENDED_PARAMETER {
@@ -1515,6 +1530,7 @@ impl ::core::fmt::Debug for MEM_EXTENDED_PARAMETER_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MEM_EXTENDED_PARAMETER_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MEM_EXTENDED_PARAMETER_0 {
@@ -1551,6 +1567,7 @@ impl ::core::clone::Clone for MEM_EXTENDED_PARAMETER_1 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MEM_EXTENDED_PARAMETER_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MEM_EXTENDED_PARAMETER_1 {
@@ -1599,6 +1616,7 @@ impl ::core::default::Default for MEM_EXTENDED_PARAMETER_TYPE {
 }
 unsafe impl ::windows::core::Abi for MEM_EXTENDED_PARAMETER_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MEM_EXTENDED_PARAMETER_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1765,6 +1783,7 @@ impl ::core::default::Default for OFFER_PRIORITY {
 }
 unsafe impl ::windows::core::Abi for OFFER_PRIORITY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for OFFER_PRIORITY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1943,6 +1962,7 @@ impl ::core::default::Default for PAGE_PROTECTION_FLAGS {
 }
 unsafe impl ::windows::core::Abi for PAGE_PROTECTION_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PAGE_PROTECTION_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2000,6 +2020,7 @@ impl ::core::default::Default for PAGE_TYPE {
 }
 unsafe impl ::windows::core::Abi for PAGE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PAGE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2058,6 +2079,7 @@ impl ::core::clone::Clone for PROCESS_HEAP_ENTRY {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PROCESS_HEAP_ENTRY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for PROCESS_HEAP_ENTRY {
@@ -2091,6 +2113,7 @@ impl ::core::clone::Clone for PROCESS_HEAP_ENTRY_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PROCESS_HEAP_ENTRY_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for PROCESS_HEAP_ENTRY_0 {
@@ -2130,6 +2153,7 @@ impl ::core::fmt::Debug for PROCESS_HEAP_ENTRY_0_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PROCESS_HEAP_ENTRY_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for PROCESS_HEAP_ENTRY_0_0 {
@@ -2171,6 +2195,7 @@ impl ::core::fmt::Debug for PROCESS_HEAP_ENTRY_0_1 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PROCESS_HEAP_ENTRY_0_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for PROCESS_HEAP_ENTRY_0_1 {
@@ -2446,6 +2471,7 @@ impl ::core::default::Default for UNMAP_VIEW_OF_FILE_FLAGS {
 }
 unsafe impl ::windows::core::Abi for UNMAP_VIEW_OF_FILE_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UNMAP_VIEW_OF_FILE_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2545,6 +2571,7 @@ impl ::core::default::Default for VIRTUAL_ALLOCATION_TYPE {
 }
 unsafe impl ::windows::core::Abi for VIRTUAL_ALLOCATION_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VIRTUAL_ALLOCATION_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2600,6 +2627,7 @@ impl ::core::default::Default for VIRTUAL_FREE_TYPE {
 }
 unsafe impl ::windows::core::Abi for VIRTUAL_FREE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VIRTUAL_FREE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2862,6 +2890,7 @@ impl ::core::default::Default for WIN32_MEMORY_INFORMATION_CLASS {
 }
 unsafe impl ::windows::core::Abi for WIN32_MEMORY_INFORMATION_CLASS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WIN32_MEMORY_INFORMATION_CLASS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2920,6 +2949,7 @@ impl ::core::fmt::Debug for WIN32_MEMORY_PARTITION_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for WIN32_MEMORY_PARTITION_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WIN32_MEMORY_PARTITION_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -2953,6 +2983,7 @@ impl ::core::default::Default for WIN32_MEMORY_PARTITION_INFORMATION_CLASS {
 }
 unsafe impl ::windows::core::Abi for WIN32_MEMORY_PARTITION_INFORMATION_CLASS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WIN32_MEMORY_PARTITION_INFORMATION_CLASS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2978,6 +3009,7 @@ impl ::core::fmt::Debug for WIN32_MEMORY_RANGE_ENTRY {
 }
 unsafe impl ::windows::core::Abi for WIN32_MEMORY_RANGE_ENTRY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WIN32_MEMORY_RANGE_ENTRY {
     fn eq(&self, other: &Self) -> bool {
@@ -3007,6 +3039,7 @@ impl ::core::clone::Clone for WIN32_MEMORY_REGION_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for WIN32_MEMORY_REGION_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WIN32_MEMORY_REGION_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -3033,6 +3066,7 @@ impl ::core::clone::Clone for WIN32_MEMORY_REGION_INFORMATION_0 {
 }
 unsafe impl ::windows::core::Abi for WIN32_MEMORY_REGION_INFORMATION_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WIN32_MEMORY_REGION_INFORMATION_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -3063,6 +3097,7 @@ impl ::core::fmt::Debug for WIN32_MEMORY_REGION_INFORMATION_0_0 {
 }
 unsafe impl ::windows::core::Abi for WIN32_MEMORY_REGION_INFORMATION_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WIN32_MEMORY_REGION_INFORMATION_0_0 {
     fn eq(&self, other: &Self) -> bool {

@@ -38,6 +38,7 @@ impl ::core::default::Default for BROADCAST_SYSTEM_MESSAGE_FLAGS {
 }
 unsafe impl ::windows::core::Abi for BROADCAST_SYSTEM_MESSAGE_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for BROADCAST_SYSTEM_MESSAGE_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -95,6 +96,7 @@ impl ::core::default::Default for BROADCAST_SYSTEM_MESSAGE_INFO {
 }
 unsafe impl ::windows::core::Abi for BROADCAST_SYSTEM_MESSAGE_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for BROADCAST_SYSTEM_MESSAGE_INFO {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -155,6 +157,7 @@ impl ::core::fmt::Debug for BSMINFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for BSMINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for BSMINFO {
@@ -523,6 +526,7 @@ impl ::core::fmt::Debug for HDESK {
 }
 unsafe impl ::windows::core::Abi for HDESK {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[repr(transparent)]
 #[derive(:: core :: cmp :: PartialEq, :: core :: cmp :: Eq)]
@@ -550,6 +554,7 @@ impl ::core::fmt::Debug for HWINSTA {
 }
 unsafe impl ::windows::core::Abi for HWINSTA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[doc = "*Required features: `\"Win32_System_StationsAndDesktops\"`, `\"Win32_Foundation\"`*"]
 #[cfg(feature = "Win32_Foundation")]
@@ -731,6 +736,7 @@ impl ::core::fmt::Debug for USEROBJECTFLAGS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for USEROBJECTFLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for USEROBJECTFLAGS {
@@ -775,6 +781,7 @@ impl ::core::default::Default for USER_OBJECT_INFORMATION_INDEX {
 }
 unsafe impl ::windows::core::Abi for USER_OBJECT_INFORMATION_INDEX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for USER_OBJECT_INFORMATION_INDEX {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

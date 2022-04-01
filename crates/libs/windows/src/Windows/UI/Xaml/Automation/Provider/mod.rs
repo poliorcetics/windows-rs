@@ -2,6 +2,11 @@
 #[doc = "*Required features: `\"UI_Xaml_Automation_Provider\"`*"]
 #[repr(transparent)]
 pub struct IAnnotationProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAnnotationProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAnnotationProvider {
     #[doc = "*Required features: `\"UI_Xaml_Automation_Provider\"`*"]
     pub fn AnnotationTypeId(&self) -> ::windows::core::Result<i32> {
@@ -84,11 +89,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAnnotationProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAnnotationProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -102,7 +102,6 @@ impl ::core::fmt::Debug for IAnnotationProvider {
 }
 unsafe impl ::windows::core::RuntimeType for IAnnotationProvider {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{95ba1417-4437-451b-9461-050a49b59d06}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -124,6 +123,11 @@ pub struct IAnnotationProvider_Vtbl {
 #[doc = "*Required features: `\"UI_Xaml_Automation_Provider\"`*"]
 #[repr(transparent)]
 pub struct ICustomNavigationProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICustomNavigationProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ICustomNavigationProvider {
     #[doc = "*Required features: `\"UI_Xaml_Automation_Provider\"`, `\"UI_Xaml_Automation_Peers\"`*"]
     #[cfg(feature = "UI_Xaml_Automation_Peers")]
@@ -175,11 +179,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ICustomNavigationProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ICustomNavigationProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -193,7 +192,6 @@ impl ::core::fmt::Debug for ICustomNavigationProvider {
 }
 unsafe impl ::windows::core::RuntimeType for ICustomNavigationProvider {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{2bd8a6d0-2fa3-4717-b28c-4917ce54928d}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -214,6 +212,11 @@ pub struct ICustomNavigationProvider_Vtbl {
 #[doc = "*Required features: `\"UI_Xaml_Automation_Provider\"`*"]
 #[repr(transparent)]
 pub struct IDockProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDockProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDockProvider {
     #[doc = "*Required features: `\"UI_Xaml_Automation_Provider\"`*"]
     pub fn DockPosition(&self) -> ::windows::core::Result<super::DockPosition> {
@@ -269,11 +272,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDockProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDockProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -287,7 +285,6 @@ impl ::core::fmt::Debug for IDockProvider {
 }
 unsafe impl ::windows::core::RuntimeType for IDockProvider {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{48c243f8-78b1-44a0-ac5f-750757bcde3c}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -306,6 +303,11 @@ pub struct IDockProvider_Vtbl {
 #[doc = "*Required features: `\"UI_Xaml_Automation_Provider\"`*"]
 #[repr(transparent)]
 pub struct IDragProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDragProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDragProvider {
     #[doc = "*Required features: `\"UI_Xaml_Automation_Provider\"`*"]
     pub fn IsGrabbed(&self) -> ::windows::core::Result<bool> {
@@ -380,11 +382,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDragProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDragProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -398,7 +395,6 @@ impl ::core::fmt::Debug for IDragProvider {
 }
 unsafe impl ::windows::core::RuntimeType for IDragProvider {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{2e7786a9-7ffc-4f57-b965-1ef1f373f546}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -419,6 +415,11 @@ pub struct IDragProvider_Vtbl {
 #[doc = "*Required features: `\"UI_Xaml_Automation_Provider\"`*"]
 #[repr(transparent)]
 pub struct IDropTargetProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDropTargetProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDropTargetProvider {
     #[doc = "*Required features: `\"UI_Xaml_Automation_Provider\"`*"]
     pub fn DropEffect(&self) -> ::windows::core::Result<::windows::core::HSTRING> {
@@ -477,11 +478,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDropTargetProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDropTargetProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -495,7 +491,6 @@ impl ::core::fmt::Debug for IDropTargetProvider {
 }
 unsafe impl ::windows::core::RuntimeType for IDropTargetProvider {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{7a245bdd-b458-4fe0-98c8-aac89df56d61}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -514,6 +509,11 @@ pub struct IDropTargetProvider_Vtbl {
 #[doc = "*Required features: `\"UI_Xaml_Automation_Provider\"`*"]
 #[repr(transparent)]
 pub struct IExpandCollapseProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IExpandCollapseProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IExpandCollapseProvider {
     #[doc = "*Required features: `\"UI_Xaml_Automation_Provider\"`*"]
     pub fn ExpandCollapseState(&self) -> ::windows::core::Result<super::ExpandCollapseState> {
@@ -574,11 +574,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IExpandCollapseProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IExpandCollapseProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -592,7 +587,6 @@ impl ::core::fmt::Debug for IExpandCollapseProvider {
 }
 unsafe impl ::windows::core::RuntimeType for IExpandCollapseProvider {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{49ac8399-d626-4543-94b9-a6d9a9593af6}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -612,6 +606,11 @@ pub struct IExpandCollapseProvider_Vtbl {
 #[doc = "*Required features: `\"UI_Xaml_Automation_Provider\"`*"]
 #[repr(transparent)]
 pub struct IGridItemProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGridItemProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IGridItemProvider {
     #[doc = "*Required features: `\"UI_Xaml_Automation_Provider\"`*"]
     pub fn Column(&self) -> ::windows::core::Result<i32> {
@@ -694,11 +693,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IGridItemProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IGridItemProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -712,7 +706,6 @@ impl ::core::fmt::Debug for IGridItemProvider {
 }
 unsafe impl ::windows::core::RuntimeType for IGridItemProvider {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{fff3683c-7407-45bb-a936-df3ed6d3837d}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -734,6 +727,11 @@ pub struct IGridItemProvider_Vtbl {
 #[doc = "*Required features: `\"UI_Xaml_Automation_Provider\"`*"]
 #[repr(transparent)]
 pub struct IGridProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGridProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IGridProvider {
     #[doc = "*Required features: `\"UI_Xaml_Automation_Provider\"`*"]
     pub fn ColumnCount(&self) -> ::windows::core::Result<i32> {
@@ -800,11 +798,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IGridProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IGridProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -818,7 +811,6 @@ impl ::core::fmt::Debug for IGridProvider {
 }
 unsafe impl ::windows::core::RuntimeType for IGridProvider {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{8b62b7a0-932c-4490-9a13-02fdb39a8f5b}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -838,6 +830,11 @@ pub struct IGridProvider_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IIRawElementProviderSimple(::windows::core::IUnknown);
+impl ::core::clone::Clone for IIRawElementProviderSimple {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IIRawElementProviderSimple {
     type Vtable = IIRawElementProviderSimple_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xec752224_9b77_4720_bb21_4ac89fdb1afd);
@@ -850,6 +847,11 @@ pub struct IIRawElementProviderSimple_Vtbl {
 #[doc = "*Required features: `\"UI_Xaml_Automation_Provider\"`*"]
 #[repr(transparent)]
 pub struct IInvokeProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInvokeProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IInvokeProvider {
     #[doc = "*Required features: `\"UI_Xaml_Automation_Provider\"`*"]
     pub fn Invoke(&self) -> ::windows::core::Result<()> {
@@ -897,11 +899,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IInvokeProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IInvokeProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -915,7 +912,6 @@ impl ::core::fmt::Debug for IInvokeProvider {
 }
 unsafe impl ::windows::core::RuntimeType for IInvokeProvider {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{f7d1a187-b13c-4540-b09e-6778e2dc9ba5}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -933,6 +929,11 @@ pub struct IInvokeProvider_Vtbl {
 #[doc = "*Required features: `\"UI_Xaml_Automation_Provider\"`*"]
 #[repr(transparent)]
 pub struct IItemContainerProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IItemContainerProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IItemContainerProvider {
     #[doc = "*Required features: `\"UI_Xaml_Automation_Provider\"`*"]
     pub fn FindItemByProperty<'a, Param0: ::windows::core::IntoParam<'a, IRawElementProviderSimple>, Param1: ::windows::core::IntoParam<'a, super::AutomationProperty>, Param2: ::windows::core::IntoParam<'a, ::windows::core::IInspectable>>(&self, startafter: Param0, automationproperty: Param1, value: Param2) -> ::windows::core::Result<IRawElementProviderSimple> {
@@ -983,11 +984,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IItemContainerProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IItemContainerProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1001,7 +997,6 @@ impl ::core::fmt::Debug for IItemContainerProvider {
 }
 unsafe impl ::windows::core::RuntimeType for IItemContainerProvider {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{ef5cd845-e1d4-40f4-bad5-c7fad44a703e}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1019,6 +1014,11 @@ pub struct IItemContainerProvider_Vtbl {
 #[doc = "*Required features: `\"UI_Xaml_Automation_Provider\"`*"]
 #[repr(transparent)]
 pub struct IMultipleViewProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMultipleViewProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMultipleViewProvider {
     #[doc = "*Required features: `\"UI_Xaml_Automation_Provider\"`*"]
     pub fn CurrentView(&self) -> ::windows::core::Result<i32> {
@@ -1090,11 +1090,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMultipleViewProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMultipleViewProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1108,7 +1103,6 @@ impl ::core::fmt::Debug for IMultipleViewProvider {
 }
 unsafe impl ::windows::core::RuntimeType for IMultipleViewProvider {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{d014e196-0e50-4843-a5d2-c22897c8845a}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1129,6 +1123,11 @@ pub struct IMultipleViewProvider_Vtbl {
 #[doc = "*Required features: `\"UI_Xaml_Automation_Provider\"`*"]
 #[repr(transparent)]
 pub struct IObjectModelProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IObjectModelProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IObjectModelProvider {
     #[doc = "*Required features: `\"UI_Xaml_Automation_Provider\"`*"]
     pub fn GetUnderlyingObjectModel(&self) -> ::windows::core::Result<::windows::core::IInspectable> {
@@ -1179,11 +1178,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IObjectModelProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IObjectModelProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1197,7 +1191,6 @@ impl ::core::fmt::Debug for IObjectModelProvider {
 }
 unsafe impl ::windows::core::RuntimeType for IObjectModelProvider {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{c3ca36b9-0793-4ed0-bbf4-9ff4e0f98f80}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1215,6 +1208,11 @@ pub struct IObjectModelProvider_Vtbl {
 #[doc = "*Required features: `\"UI_Xaml_Automation_Provider\"`*"]
 #[repr(transparent)]
 pub struct IRangeValueProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRangeValueProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRangeValueProvider {
     #[doc = "*Required features: `\"UI_Xaml_Automation_Provider\"`*"]
     pub fn IsReadOnly(&self) -> ::windows::core::Result<bool> {
@@ -1310,11 +1308,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IRangeValueProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IRangeValueProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1328,7 +1321,6 @@ impl ::core::fmt::Debug for IRangeValueProvider {
 }
 unsafe impl ::windows::core::RuntimeType for IRangeValueProvider {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{838a34a8-7d5f-4079-af03-c3d015e93413}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1353,11 +1345,6 @@ pub struct IRangeValueProvider_Vtbl {
 #[repr(transparent)]
 pub struct IRawElementProviderSimple(::windows::core::IUnknown);
 impl IRawElementProviderSimple {}
-impl ::core::clone::Clone for IRawElementProviderSimple {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IRawElementProviderSimple {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1371,7 +1358,6 @@ impl ::core::fmt::Debug for IRawElementProviderSimple {
 }
 unsafe impl ::windows::core::RuntimeType for IRawElementProviderSimple {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Provider.IRawElementProviderSimple;{ec752224-9b77-4720-bb21-4ac89fdb1afd})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1448,6 +1434,11 @@ unsafe impl ::core::marker::Sync for IRawElementProviderSimple {}
 #[doc = "*Required features: `\"UI_Xaml_Automation_Provider\"`*"]
 #[repr(transparent)]
 pub struct IScrollItemProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IScrollItemProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IScrollItemProvider {
     #[doc = "*Required features: `\"UI_Xaml_Automation_Provider\"`*"]
     pub fn ScrollIntoView(&self) -> ::windows::core::Result<()> {
@@ -1495,11 +1486,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IScrollItemProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IScrollItemProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1513,7 +1499,6 @@ impl ::core::fmt::Debug for IScrollItemProvider {
 }
 unsafe impl ::windows::core::RuntimeType for IScrollItemProvider {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{9a3ec090-5d2c-4e42-9ee6-9d58db100b55}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1531,6 +1516,11 @@ pub struct IScrollItemProvider_Vtbl {
 #[doc = "*Required features: `\"UI_Xaml_Automation_Provider\"`*"]
 #[repr(transparent)]
 pub struct IScrollProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IScrollProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IScrollProvider {
     #[doc = "*Required features: `\"UI_Xaml_Automation_Provider\"`*"]
     pub fn HorizontallyScrollable(&self) -> ::windows::core::Result<bool> {
@@ -1631,11 +1621,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IScrollProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IScrollProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1649,7 +1634,6 @@ impl ::core::fmt::Debug for IScrollProvider {
 }
 unsafe impl ::windows::core::RuntimeType for IScrollProvider {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{374bf581-7716-4bbc-82eb-d997006ea999}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1674,6 +1658,11 @@ pub struct IScrollProvider_Vtbl {
 #[doc = "*Required features: `\"UI_Xaml_Automation_Provider\"`*"]
 #[repr(transparent)]
 pub struct ISelectionItemProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISelectionItemProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISelectionItemProvider {
     #[doc = "*Required features: `\"UI_Xaml_Automation_Provider\"`*"]
     pub fn IsSelected(&self) -> ::windows::core::Result<bool> {
@@ -1747,11 +1736,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISelectionItemProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISelectionItemProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1765,7 +1749,6 @@ impl ::core::fmt::Debug for ISelectionItemProvider {
 }
 unsafe impl ::windows::core::RuntimeType for ISelectionItemProvider {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{6a4977c1-830d-42d2-bf62-042ebddecc19}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1787,6 +1770,11 @@ pub struct ISelectionItemProvider_Vtbl {
 #[doc = "*Required features: `\"UI_Xaml_Automation_Provider\"`*"]
 #[repr(transparent)]
 pub struct ISelectionProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISelectionProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISelectionProvider {
     #[doc = "*Required features: `\"UI_Xaml_Automation_Provider\"`*"]
     pub fn CanSelectMultiple(&self) -> ::windows::core::Result<bool> {
@@ -1853,11 +1841,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISelectionProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISelectionProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1871,7 +1854,6 @@ impl ::core::fmt::Debug for ISelectionProvider {
 }
 unsafe impl ::windows::core::RuntimeType for ISelectionProvider {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{1f018fca-b944-4395-8de1-88f674af51d3}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1891,6 +1873,11 @@ pub struct ISelectionProvider_Vtbl {
 #[doc = "*Required features: `\"UI_Xaml_Automation_Provider\"`*"]
 #[repr(transparent)]
 pub struct ISpreadsheetItemProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpreadsheetItemProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISpreadsheetItemProvider {
     #[doc = "*Required features: `\"UI_Xaml_Automation_Provider\"`*"]
     pub fn Formula(&self) -> ::windows::core::Result<::windows::core::HSTRING> {
@@ -1957,11 +1944,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISpreadsheetItemProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISpreadsheetItemProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1975,7 +1957,6 @@ impl ::core::fmt::Debug for ISpreadsheetItemProvider {
 }
 unsafe impl ::windows::core::RuntimeType for ISpreadsheetItemProvider {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{ebde8f92-6015-4826-b719-47521a81c67e}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1995,6 +1976,11 @@ pub struct ISpreadsheetItemProvider_Vtbl {
 #[doc = "*Required features: `\"UI_Xaml_Automation_Provider\"`*"]
 #[repr(transparent)]
 pub struct ISpreadsheetProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpreadsheetProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISpreadsheetProvider {
     #[doc = "*Required features: `\"UI_Xaml_Automation_Provider\"`*"]
     pub fn GetItemByName<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::HSTRING>>(&self, name: Param0) -> ::windows::core::Result<IRawElementProviderSimple> {
@@ -2045,11 +2031,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISpreadsheetProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISpreadsheetProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2063,7 +2044,6 @@ impl ::core::fmt::Debug for ISpreadsheetProvider {
 }
 unsafe impl ::windows::core::RuntimeType for ISpreadsheetProvider {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{15359093-bd99-4cfd-9f07-3b14b315e23d}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2081,6 +2061,11 @@ pub struct ISpreadsheetProvider_Vtbl {
 #[doc = "*Required features: `\"UI_Xaml_Automation_Provider\"`*"]
 #[repr(transparent)]
 pub struct IStylesProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStylesProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IStylesProvider {
     #[doc = "*Required features: `\"UI_Xaml_Automation_Provider\"`*"]
     pub fn ExtendedProperties(&self) -> ::windows::core::Result<::windows::core::HSTRING> {
@@ -2179,11 +2164,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IStylesProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IStylesProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2197,7 +2177,6 @@ impl ::core::fmt::Debug for IStylesProvider {
 }
 unsafe impl ::windows::core::RuntimeType for IStylesProvider {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{1a5b7a17-7c01-4bec-9cd4-2dfa7dc246cd}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2221,6 +2200,11 @@ pub struct IStylesProvider_Vtbl {
 #[doc = "*Required features: `\"UI_Xaml_Automation_Provider\"`*"]
 #[repr(transparent)]
 pub struct ISynchronizedInputProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISynchronizedInputProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISynchronizedInputProvider {
     #[doc = "*Required features: `\"UI_Xaml_Automation_Provider\"`*"]
     pub fn Cancel(&self) -> ::windows::core::Result<()> {
@@ -2273,11 +2257,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISynchronizedInputProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISynchronizedInputProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2291,7 +2270,6 @@ impl ::core::fmt::Debug for ISynchronizedInputProvider {
 }
 unsafe impl ::windows::core::RuntimeType for ISynchronizedInputProvider {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{3d60cecb-da54-4aa3-b915-e3244427d4ac}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2310,6 +2288,11 @@ pub struct ISynchronizedInputProvider_Vtbl {
 #[doc = "*Required features: `\"UI_Xaml_Automation_Provider\"`*"]
 #[repr(transparent)]
 pub struct ITableItemProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITableItemProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITableItemProvider {
     #[doc = "*Required features: `\"UI_Xaml_Automation_Provider\"`*"]
     pub fn GetColumnHeaderItems(&self) -> ::windows::core::Result<::windows::core::Array<IRawElementProviderSimple>> {
@@ -2368,11 +2351,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITableItemProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITableItemProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2386,7 +2364,6 @@ impl ::core::fmt::Debug for ITableItemProvider {
 }
 unsafe impl ::windows::core::RuntimeType for ITableItemProvider {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{3b2c49cd-1de2-4ee2-a3e1-fb553559d15d}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2405,6 +2382,11 @@ pub struct ITableItemProvider_Vtbl {
 #[doc = "*Required features: `\"UI_Xaml_Automation_Provider\"`*"]
 #[repr(transparent)]
 pub struct ITableProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITableProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITableProvider {
     #[doc = "*Required features: `\"UI_Xaml_Automation_Provider\"`*"]
     pub fn RowOrColumnMajor(&self) -> ::windows::core::Result<super::RowOrColumnMajor> {
@@ -2471,11 +2453,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITableProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITableProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2489,7 +2466,6 @@ impl ::core::fmt::Debug for ITableProvider {
 }
 unsafe impl ::windows::core::RuntimeType for ITableProvider {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{7a8ed399-6824-4595-bab3-464bc9a04417}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2509,6 +2485,11 @@ pub struct ITableProvider_Vtbl {
 #[doc = "*Required features: `\"UI_Xaml_Automation_Provider\"`*"]
 #[repr(transparent)]
 pub struct ITextChildProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITextChildProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITextChildProvider {
     #[doc = "*Required features: `\"UI_Xaml_Automation_Provider\"`*"]
     pub fn TextContainer(&self) -> ::windows::core::Result<IRawElementProviderSimple> {
@@ -2567,11 +2548,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITextChildProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITextChildProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2585,7 +2561,6 @@ impl ::core::fmt::Debug for ITextChildProvider {
 }
 unsafe impl ::windows::core::RuntimeType for ITextChildProvider {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{1133c336-a89b-4130-9be6-55e33334f557}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2604,6 +2579,11 @@ pub struct ITextChildProvider_Vtbl {
 #[doc = "*Required features: `\"UI_Xaml_Automation_Provider\"`*"]
 #[repr(transparent)]
 pub struct ITextEditProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITextEditProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITextEditProvider {
     #[doc = "*Required features: `\"UI_Xaml_Automation_Provider\"`*"]
     pub fn GetActiveComposition(&self) -> ::windows::core::Result<ITextRangeProvider> {
@@ -2733,11 +2713,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITextProvider> for &ITextEditProvider {
         ::core::convert::TryInto::<ITextProvider>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for ITextEditProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITextEditProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2751,7 +2726,6 @@ impl ::core::fmt::Debug for ITextEditProvider {
 }
 unsafe impl ::windows::core::RuntimeType for ITextEditProvider {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{ea3605b4-3a05-400e-b5f9-4e91b40f6176}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2770,6 +2744,11 @@ pub struct ITextEditProvider_Vtbl {
 #[doc = "*Required features: `\"UI_Xaml_Automation_Provider\"`*"]
 #[repr(transparent)]
 pub struct ITextProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITextProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITextProvider {
     #[doc = "*Required features: `\"UI_Xaml_Automation_Provider\"`*"]
     pub fn DocumentRange(&self) -> ::windows::core::Result<ITextRangeProvider> {
@@ -2861,11 +2840,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITextProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITextProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2879,7 +2853,6 @@ impl ::core::fmt::Debug for ITextProvider {
 }
 unsafe impl ::windows::core::RuntimeType for ITextProvider {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{db5bbc9f-4807-4f2a-8678-1b13f3c60e22}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2905,6 +2878,11 @@ pub struct ITextProvider_Vtbl {
 #[doc = "*Required features: `\"UI_Xaml_Automation_Provider\"`*"]
 #[repr(transparent)]
 pub struct ITextProvider2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITextProvider2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITextProvider2 {
     #[doc = "*Required features: `\"UI_Xaml_Automation_Provider\"`*"]
     pub fn RangeFromAnnotation<'a, Param0: ::windows::core::IntoParam<'a, IRawElementProviderSimple>>(&self, annotationelement: Param0) -> ::windows::core::Result<ITextRangeProvider> {
@@ -3034,11 +3012,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITextProvider> for &ITextProvider2 {
         ::core::convert::TryInto::<ITextProvider>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for ITextProvider2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITextProvider2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3052,7 +3025,6 @@ impl ::core::fmt::Debug for ITextProvider2 {
 }
 unsafe impl ::windows::core::RuntimeType for ITextProvider2 {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{df1d48bc-0487-4e7f-9d5e-f09e77e41246}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3071,6 +3043,11 @@ pub struct ITextProvider2_Vtbl {
 #[doc = "*Required features: `\"UI_Xaml_Automation_Provider\"`*"]
 #[repr(transparent)]
 pub struct ITextRangeProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITextRangeProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITextRangeProvider {
     #[doc = "*Required features: `\"UI_Xaml_Automation_Provider\"`*"]
     pub fn Clone(&self) -> ::windows::core::Result<ITextRangeProvider> {
@@ -3241,11 +3218,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITextRangeProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITextRangeProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3259,7 +3231,6 @@ impl ::core::fmt::Debug for ITextRangeProvider {
 }
 unsafe impl ::windows::core::RuntimeType for ITextRangeProvider {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{0274688d-06e9-4f66-9446-28a5be98fbd0}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3309,6 +3280,11 @@ pub struct ITextRangeProvider_Vtbl {
 #[doc = "*Required features: `\"UI_Xaml_Automation_Provider\"`*"]
 #[repr(transparent)]
 pub struct ITextRangeProvider2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITextRangeProvider2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITextRangeProvider2 {
     #[doc = "*Required features: `\"UI_Xaml_Automation_Provider\"`*"]
     pub fn ShowContextMenu(&self) -> ::windows::core::Result<()> {
@@ -3506,11 +3482,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITextRangeProvider> for &ITextRangeProvi
         ::core::convert::TryInto::<ITextRangeProvider>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for ITextRangeProvider2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITextRangeProvider2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3524,7 +3495,6 @@ impl ::core::fmt::Debug for ITextRangeProvider2 {
 }
 unsafe impl ::windows::core::RuntimeType for ITextRangeProvider2 {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{d3be3dfb-9f54-4642-a7a5-5c18d5ee2a3f}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3542,6 +3512,11 @@ pub struct ITextRangeProvider2_Vtbl {
 #[doc = "*Required features: `\"UI_Xaml_Automation_Provider\"`*"]
 #[repr(transparent)]
 pub struct IToggleProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IToggleProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IToggleProvider {
     #[doc = "*Required features: `\"UI_Xaml_Automation_Provider\"`*"]
     pub fn ToggleState(&self) -> ::windows::core::Result<super::ToggleState> {
@@ -3597,11 +3572,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IToggleProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IToggleProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3615,7 +3585,6 @@ impl ::core::fmt::Debug for IToggleProvider {
 }
 unsafe impl ::windows::core::RuntimeType for IToggleProvider {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{93b88290-656f-44f7-aeaf-78b8f944d062}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3634,6 +3603,11 @@ pub struct IToggleProvider_Vtbl {
 #[doc = "*Required features: `\"UI_Xaml_Automation_Provider\"`*"]
 #[repr(transparent)]
 pub struct ITransformProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITransformProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITransformProvider {
     #[doc = "*Required features: `\"UI_Xaml_Automation_Provider\"`*"]
     pub fn CanMove(&self) -> ::windows::core::Result<bool> {
@@ -3715,11 +3689,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITransformProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITransformProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3733,7 +3702,6 @@ impl ::core::fmt::Debug for ITransformProvider {
 }
 unsafe impl ::windows::core::RuntimeType for ITransformProvider {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{79670fdd-f6a9-4a65-af17-861db799a2da}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3756,6 +3724,11 @@ pub struct ITransformProvider_Vtbl {
 #[doc = "*Required features: `\"UI_Xaml_Automation_Provider\"`*"]
 #[repr(transparent)]
 pub struct ITransformProvider2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITransformProvider2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITransformProvider2 {
     #[doc = "*Required features: `\"UI_Xaml_Automation_Provider\"`*"]
     pub fn CanZoom(&self) -> ::windows::core::Result<bool> {
@@ -3901,11 +3874,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITransformProvider> for &ITransformProvi
         ::core::convert::TryInto::<ITransformProvider>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for ITransformProvider2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITransformProvider2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3919,7 +3887,6 @@ impl ::core::fmt::Debug for ITransformProvider2 {
 }
 unsafe impl ::windows::core::RuntimeType for ITransformProvider2 {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{a8b11756-a39f-4e97-8c7d-c1ea8dd633c5}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3942,6 +3909,11 @@ pub struct ITransformProvider2_Vtbl {
 #[doc = "*Required features: `\"UI_Xaml_Automation_Provider\"`*"]
 #[repr(transparent)]
 pub struct IValueProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IValueProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IValueProvider {
     #[doc = "*Required features: `\"UI_Xaml_Automation_Provider\"`*"]
     pub fn IsReadOnly(&self) -> ::windows::core::Result<bool> {
@@ -4005,11 +3977,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IValueProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IValueProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4023,7 +3990,6 @@ impl ::core::fmt::Debug for IValueProvider {
 }
 unsafe impl ::windows::core::RuntimeType for IValueProvider {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{2086b7a7-ac0e-47d1-ab9b-2a64292afdf8}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4043,6 +4009,11 @@ pub struct IValueProvider_Vtbl {
 #[doc = "*Required features: `\"UI_Xaml_Automation_Provider\"`*"]
 #[repr(transparent)]
 pub struct IVirtualizedItemProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVirtualizedItemProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IVirtualizedItemProvider {
     #[doc = "*Required features: `\"UI_Xaml_Automation_Provider\"`*"]
     pub fn Realize(&self) -> ::windows::core::Result<()> {
@@ -4090,11 +4061,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IVirtualizedItemProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IVirtualizedItemProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4108,7 +4074,6 @@ impl ::core::fmt::Debug for IVirtualizedItemProvider {
 }
 unsafe impl ::windows::core::RuntimeType for IVirtualizedItemProvider {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{17d4a04b-d658-48e0-a574-5a516c58dfa7}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4126,6 +4091,11 @@ pub struct IVirtualizedItemProvider_Vtbl {
 #[doc = "*Required features: `\"UI_Xaml_Automation_Provider\"`*"]
 #[repr(transparent)]
 pub struct IWindowProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWindowProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWindowProvider {
     #[doc = "*Required features: `\"UI_Xaml_Automation_Provider\"`*"]
     pub fn IsModal(&self) -> ::windows::core::Result<bool> {
@@ -4234,11 +4204,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWindowProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWindowProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4252,7 +4217,6 @@ impl ::core::fmt::Debug for IWindowProvider {
 }
 unsafe impl ::windows::core::RuntimeType for IWindowProvider {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{1baa8b3d-38cf-415a-85d3-20e43a0ec1b1}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

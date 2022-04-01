@@ -52,6 +52,7 @@ impl ::core::default::Default for CHUNKSTATE {
 }
 unsafe impl ::windows::core::Abi for CHUNKSTATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CHUNKSTATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -85,6 +86,7 @@ impl ::core::default::Default for CHUNK_BREAKTYPE {
 }
 unsafe impl ::windows::core::Abi for CHUNK_BREAKTYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CHUNK_BREAKTYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -161,6 +163,7 @@ impl ::core::fmt::Debug for CI_STATE {
 }
 unsafe impl ::windows::core::Abi for CI_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CI_STATE {
     fn eq(&self, other: &Self) -> bool {
@@ -236,6 +239,7 @@ impl ::core::clone::Clone for DBID {
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 unsafe impl ::windows::core::Abi for DBID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 impl ::core::cmp::PartialEq for DBID {
@@ -269,6 +273,7 @@ impl ::core::clone::Clone for DBID_0 {
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 unsafe impl ::windows::core::Abi for DBID_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 impl ::core::cmp::PartialEq for DBID_0 {
@@ -302,6 +307,7 @@ impl ::core::clone::Clone for DBID_1 {
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 unsafe impl ::windows::core::Abi for DBID_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 impl ::core::cmp::PartialEq for DBID_1 {
@@ -336,6 +342,7 @@ impl ::core::clone::Clone for DBID {
 #[cfg(target_arch = "x86")]
 unsafe impl ::windows::core::Abi for DBID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 impl ::core::cmp::PartialEq for DBID {
@@ -369,6 +376,7 @@ impl ::core::clone::Clone for DBID_0 {
 #[cfg(target_arch = "x86")]
 unsafe impl ::windows::core::Abi for DBID_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 impl ::core::cmp::PartialEq for DBID_0 {
@@ -402,6 +410,7 @@ impl ::core::clone::Clone for DBID_1 {
 #[cfg(target_arch = "x86")]
 unsafe impl ::windows::core::Abi for DBID_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 impl ::core::cmp::PartialEq for DBID_1 {
@@ -448,6 +457,7 @@ impl ::core::default::Default for DBKINDENUM {
 }
 unsafe impl ::windows::core::Abi for DBKINDENUM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DBKINDENUM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -532,6 +542,7 @@ impl ::core::fmt::Debug for FILTERREGION {
 }
 unsafe impl ::windows::core::Abi for FILTERREGION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for FILTERREGION {
     fn eq(&self, other: &Self) -> bool {
@@ -588,6 +599,7 @@ impl ::core::clone::Clone for FULLPROPSPEC {
 #[cfg(feature = "Win32_System_Com_StructuredStorage")]
 unsafe impl ::windows::core::Abi for FULLPROPSPEC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_System_Com_StructuredStorage")]
 impl ::core::cmp::PartialEq for FULLPROPSPEC {
@@ -628,6 +640,7 @@ impl ::core::default::Default for IFILTER_FLAGS {
 }
 unsafe impl ::windows::core::Abi for IFILTER_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for IFILTER_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -677,6 +690,7 @@ impl ::core::default::Default for IFILTER_INIT {
 }
 unsafe impl ::windows::core::Abi for IFILTER_INIT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for IFILTER_INIT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -686,6 +700,11 @@ impl ::core::fmt::Debug for IFILTER_INIT {
 #[doc = "*Required features: `\"Win32_Storage_IndexServer\"`*"]
 #[repr(transparent)]
 pub struct IFilter(::windows::core::IUnknown);
+impl ::core::clone::Clone for IFilter {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IFilter {
     #[doc = "*Required features: `\"Win32_Storage_IndexServer\"`, `\"Win32_System_Com_StructuredStorage\"`*"]
     #[cfg(feature = "Win32_System_Com_StructuredStorage")]
@@ -731,11 +750,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IFilt
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IFilter {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IFilter {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -773,6 +787,11 @@ pub struct IFilter_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_IndexServer\"`*"]
 #[repr(transparent)]
 pub struct IPhraseSink(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPhraseSink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPhraseSink {
     #[doc = "*Required features: `\"Win32_Storage_IndexServer\"`*"]
     pub unsafe fn PutSmallPhrase<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param2: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, pwcnoun: Param0, cwcnoun: u32, pwcmodifier: Param2, cwcmodifier: u32, ulattachmenttype: u32) -> ::windows::core::Result<()> {
@@ -801,11 +820,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IPhraseSi
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPhraseSink {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IPhraseSink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IPhraseSink {
@@ -966,6 +980,7 @@ impl ::core::clone::Clone for STAT_CHUNK {
 #[cfg(feature = "Win32_System_Com_StructuredStorage")]
 unsafe impl ::windows::core::Abi for STAT_CHUNK {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_System_Com_StructuredStorage")]
 impl ::core::cmp::PartialEq for STAT_CHUNK {
@@ -1044,6 +1059,7 @@ impl ::core::default::Default for WORDREP_BREAK_TYPE {
 }
 unsafe impl ::windows::core::Abi for WORDREP_BREAK_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WORDREP_BREAK_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

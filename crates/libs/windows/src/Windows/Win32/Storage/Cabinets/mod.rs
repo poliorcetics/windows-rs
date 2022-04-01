@@ -56,6 +56,7 @@ impl ::core::fmt::Debug for CCAB {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for CCAB {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for CCAB {
@@ -96,6 +97,7 @@ impl ::core::fmt::Debug for ERF {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for ERF {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for ERF {
@@ -193,6 +195,7 @@ impl ::core::default::Default for FCIERROR {
 }
 unsafe impl ::windows::core::Abi for FCIERROR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FCIERROR {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -259,6 +262,7 @@ impl ::core::fmt::Debug for FDICABINETINFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for FDICABINETINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for FDICABINETINFO {
@@ -297,6 +301,7 @@ impl ::core::default::Default for FDICREATE_CPU_TYPE {
 }
 unsafe impl ::windows::core::Abi for FDICREATE_CPU_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FDICREATE_CPU_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -352,6 +357,7 @@ impl ::core::clone::Clone for FDIDECRYPT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for FDIDECRYPT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for FDIDECRYPT {
@@ -386,6 +392,7 @@ impl ::core::clone::Clone for FDIDECRYPT_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for FDIDECRYPT_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for FDIDECRYPT_0 {
@@ -427,6 +434,7 @@ impl ::core::fmt::Debug for FDIDECRYPT_0_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for FDIDECRYPT_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for FDIDECRYPT_0_0 {
@@ -470,6 +478,7 @@ impl ::core::fmt::Debug for FDIDECRYPT_0_1 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for FDIDECRYPT_0_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for FDIDECRYPT_0_1 {
@@ -510,6 +519,7 @@ impl ::core::fmt::Debug for FDIDECRYPT_0_2 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for FDIDECRYPT_0_2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for FDIDECRYPT_0_2 {
@@ -548,6 +558,7 @@ impl ::core::default::Default for FDIDECRYPTTYPE {
 }
 unsafe impl ::windows::core::Abi for FDIDECRYPTTYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FDIDECRYPTTYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -612,6 +623,7 @@ impl ::core::default::Default for FDIERROR {
 }
 unsafe impl ::windows::core::Abi for FDIERROR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FDIERROR {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -663,6 +675,7 @@ impl ::core::fmt::Debug for FDINOTIFICATION {
 }
 unsafe impl ::windows::core::Abi for FDINOTIFICATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for FDINOTIFICATION {
     fn eq(&self, other: &Self) -> bool {
@@ -704,6 +717,7 @@ impl ::core::default::Default for FDINOTIFICATIONTYPE {
 }
 unsafe impl ::windows::core::Abi for FDINOTIFICATIONTYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FDINOTIFICATIONTYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -732,6 +746,7 @@ impl ::core::clone::Clone for FDISPILLFILE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for FDISPILLFILE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 #[cfg(feature = "Win32_Foundation")]
@@ -772,6 +787,7 @@ impl ::core::clone::Clone for FDISPILLFILE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for FDISPILLFILE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 #[cfg(feature = "Win32_Foundation")]

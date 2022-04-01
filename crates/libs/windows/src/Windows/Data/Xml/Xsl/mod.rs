@@ -2,6 +2,11 @@
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IXsltProcessor(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXsltProcessor {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IXsltProcessor {
     type Vtable = IXsltProcessor_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x7b64703f_550c_48c6_a90f_93a5b964518f);
@@ -18,6 +23,11 @@ pub struct IXsltProcessor_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IXsltProcessor2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXsltProcessor2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IXsltProcessor2 {
     type Vtable = IXsltProcessor2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x8da45c56_97a5_44cb_a8be_27d86280c70a);
@@ -34,6 +44,11 @@ pub struct IXsltProcessor2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IXsltProcessorFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXsltProcessorFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IXsltProcessorFactory {
     type Vtable = IXsltProcessorFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x274146c0_9a51_4663_bf30_0ef742146f20);
@@ -83,11 +98,6 @@ impl XsltProcessor {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for XsltProcessor {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for XsltProcessor {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -101,7 +111,6 @@ impl ::core::fmt::Debug for XsltProcessor {
 }
 unsafe impl ::windows::core::RuntimeType for XsltProcessor {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Data.Xml.Xsl.XsltProcessor;{7b64703f-550c-48c6-a90f-93a5b964518f})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

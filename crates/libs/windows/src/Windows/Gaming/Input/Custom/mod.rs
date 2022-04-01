@@ -56,10 +56,10 @@ impl ::core::fmt::Debug for GameControllerVersionInfo {
 }
 unsafe impl ::windows::core::Abi for GameControllerVersionInfo {
     type Abi = Self;
+    type DefaultType = Self;
 }
 unsafe impl ::windows::core::RuntimeType for GameControllerVersionInfo {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"struct(Windows.Gaming.Input.Custom.GameControllerVersionInfo;u2;u2;u2;u2)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -94,10 +94,10 @@ impl ::core::fmt::Debug for GipFirmwareUpdateProgress {
 }
 unsafe impl ::windows::core::Abi for GipFirmwareUpdateProgress {
     type Abi = Self;
+    type DefaultType = Self;
 }
 unsafe impl ::windows::core::RuntimeType for GipFirmwareUpdateProgress {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"struct(Windows.Gaming.Input.Custom.GipFirmwareUpdateProgress;f8;u4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -142,11 +142,6 @@ impl GipFirmwareUpdateResult {
         }
     }
 }
-impl ::core::clone::Clone for GipFirmwareUpdateResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for GipFirmwareUpdateResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -160,7 +155,6 @@ impl ::core::fmt::Debug for GipFirmwareUpdateResult {
 }
 unsafe impl ::windows::core::RuntimeType for GipFirmwareUpdateResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Gaming.Input.Custom.GipFirmwareUpdateResult;{6b794d32-8553-4292-8e03-e16651a2f8bc})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -236,6 +230,7 @@ impl ::core::default::Default for GipFirmwareUpdateStatus {
 }
 unsafe impl ::windows::core::Abi for GipFirmwareUpdateStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GipFirmwareUpdateStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -244,7 +239,6 @@ impl ::core::fmt::Debug for GipFirmwareUpdateStatus {
 }
 unsafe impl ::windows::core::RuntimeType for GipFirmwareUpdateStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Gaming.Input.Custom.GipFirmwareUpdateStatus;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -313,11 +307,6 @@ impl GipGameControllerProvider {
         }
     }
 }
-impl ::core::clone::Clone for GipGameControllerProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for GipGameControllerProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -331,7 +320,6 @@ impl ::core::fmt::Debug for GipGameControllerProvider {
 }
 unsafe impl ::windows::core::RuntimeType for GipGameControllerProvider {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Gaming.Input.Custom.GipGameControllerProvider;{dbcf1e19-1af5-45a8-bf02-a0ee50c823fc})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -429,6 +417,7 @@ impl ::core::default::Default for GipMessageClass {
 }
 unsafe impl ::windows::core::Abi for GipMessageClass {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GipMessageClass {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -437,7 +426,6 @@ impl ::core::fmt::Debug for GipMessageClass {
 }
 unsafe impl ::windows::core::RuntimeType for GipMessageClass {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Gaming.Input.Custom.GipMessageClass;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -518,11 +506,6 @@ impl HidGameControllerProvider {
         unsafe { (::windows::core::Interface::vtable(this).SendOutputReport)(::core::mem::transmute_copy(this), reportid, reportbuffer.len() as u32, ::core::mem::transmute(reportbuffer.as_ptr())).ok() }
     }
 }
-impl ::core::clone::Clone for HidGameControllerProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for HidGameControllerProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -536,7 +519,6 @@ impl ::core::fmt::Debug for HidGameControllerProvider {
 }
 unsafe impl ::windows::core::RuntimeType for HidGameControllerProvider {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Gaming.Input.Custom.HidGameControllerProvider;{95ce3af4-abf0-4b68-a081-3b7de73ff0e7})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -615,6 +597,11 @@ unsafe impl ::core::marker::Sync for HidGameControllerProvider {}
 #[doc = "*Required features: `\"Gaming_Input_Custom\"`*"]
 #[repr(transparent)]
 pub struct ICustomGameControllerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICustomGameControllerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ICustomGameControllerFactory {
     #[doc = "*Required features: `\"Gaming_Input_Custom\"`*"]
     pub fn CreateGameController<'a, Param0: ::windows::core::IntoParam<'a, IGameControllerProvider>>(&self, provider: Param0) -> ::windows::core::Result<::windows::core::IInspectable> {
@@ -675,11 +662,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ICustomGameControllerFactory {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ICustomGameControllerFactory {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -693,7 +675,6 @@ impl ::core::fmt::Debug for ICustomGameControllerFactory {
 }
 unsafe impl ::windows::core::RuntimeType for ICustomGameControllerFactory {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{69a0ae5e-758e-4cbe-ace6-62155fe9126f}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -713,6 +694,11 @@ pub struct ICustomGameControllerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGameControllerFactoryManagerStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGameControllerFactoryManagerStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGameControllerFactoryManagerStatics {
     type Vtable = IGameControllerFactoryManagerStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x36cb66e3_d0a1_4986_a24c_40b137deba9e);
@@ -728,6 +714,11 @@ pub struct IGameControllerFactoryManagerStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGameControllerFactoryManagerStatics2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGameControllerFactoryManagerStatics2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGameControllerFactoryManagerStatics2 {
     type Vtable = IGameControllerFactoryManagerStatics2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xeace5644_19df_4115_b32a_2793e2aea3bb);
@@ -741,6 +732,11 @@ pub struct IGameControllerFactoryManagerStatics2_Vtbl {
 #[doc = "*Required features: `\"Gaming_Input_Custom\"`*"]
 #[repr(transparent)]
 pub struct IGameControllerInputSink(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGameControllerInputSink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IGameControllerInputSink {
     #[doc = "*Required features: `\"Gaming_Input_Custom\"`*"]
     pub fn OnInputResumed(&self, timestamp: u64) -> ::windows::core::Result<()> {
@@ -793,11 +789,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IGameControllerInputSink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IGameControllerInputSink {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -811,7 +802,6 @@ impl ::core::fmt::Debug for IGameControllerInputSink {
 }
 unsafe impl ::windows::core::RuntimeType for IGameControllerInputSink {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{1ff6f922-c640-4c78-a820-9a715c558bcb}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -830,6 +820,11 @@ pub struct IGameControllerInputSink_Vtbl {
 #[doc = "*Required features: `\"Gaming_Input_Custom\"`*"]
 #[repr(transparent)]
 pub struct IGameControllerProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGameControllerProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IGameControllerProvider {
     #[doc = "*Required features: `\"Gaming_Input_Custom\"`*"]
     pub fn FirmwareVersionInfo(&self) -> ::windows::core::Result<GameControllerVersionInfo> {
@@ -912,11 +907,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IGameControllerProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IGameControllerProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -930,7 +920,6 @@ impl ::core::fmt::Debug for IGameControllerProvider {
 }
 unsafe impl ::windows::core::RuntimeType for IGameControllerProvider {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{e6d73982-2996-4559-b16c-3e57d46e58d6}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -952,6 +941,11 @@ pub struct IGameControllerProvider_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGipFirmwareUpdateResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGipFirmwareUpdateResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGipFirmwareUpdateResult {
     type Vtable = IGipFirmwareUpdateResult_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x6b794d32_8553_4292_8e03_e16651a2f8bc);
@@ -967,6 +961,11 @@ pub struct IGipFirmwareUpdateResult_Vtbl {
 #[doc = "*Required features: `\"Gaming_Input_Custom\"`*"]
 #[repr(transparent)]
 pub struct IGipGameControllerInputSink(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGipGameControllerInputSink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IGipGameControllerInputSink {
     #[doc = "*Required features: `\"Gaming_Input_Custom\"`*"]
     pub fn OnKeyReceived(&self, timestamp: u64, keycode: u8, ispressed: bool) -> ::windows::core::Result<()> {
@@ -1051,11 +1050,6 @@ impl<'a> ::windows::core::IntoParam<'a, IGameControllerInputSink> for &IGipGameC
         ::core::convert::TryInto::<IGameControllerInputSink>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IGipGameControllerInputSink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IGipGameControllerInputSink {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1069,7 +1063,6 @@ impl ::core::fmt::Debug for IGipGameControllerInputSink {
 }
 unsafe impl ::windows::core::RuntimeType for IGipGameControllerInputSink {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{a2108abf-09f1-43bc-a140-80f899ec36fb}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1088,6 +1081,11 @@ pub struct IGipGameControllerInputSink_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGipGameControllerProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGipGameControllerProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGipGameControllerProvider {
     type Vtable = IGipGameControllerProvider_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xdbcf1e19_1af5_45a8_bf02_a0ee50c823fc);
@@ -1106,6 +1104,11 @@ pub struct IGipGameControllerProvider_Vtbl {
 #[doc = "*Required features: `\"Gaming_Input_Custom\"`*"]
 #[repr(transparent)]
 pub struct IHidGameControllerInputSink(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHidGameControllerInputSink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IHidGameControllerInputSink {
     #[doc = "*Required features: `\"Gaming_Input_Custom\"`*"]
     pub fn OnInputReportReceived(&self, timestamp: u64, reportid: u8, reportbuffer: &[u8]) -> ::windows::core::Result<()> {
@@ -1185,11 +1188,6 @@ impl<'a> ::windows::core::IntoParam<'a, IGameControllerInputSink> for &IHidGameC
         ::core::convert::TryInto::<IGameControllerInputSink>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IHidGameControllerInputSink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IHidGameControllerInputSink {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1203,7 +1201,6 @@ impl ::core::fmt::Debug for IHidGameControllerInputSink {
 }
 unsafe impl ::windows::core::RuntimeType for IHidGameControllerInputSink {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{f754c322-182d-40e4-a126-fcee4ffa1e31}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1221,6 +1218,11 @@ pub struct IHidGameControllerInputSink_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHidGameControllerProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHidGameControllerProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHidGameControllerProvider {
     type Vtable = IHidGameControllerProvider_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x95ce3af4_abf0_4b68_a081_3b7de73ff0e7);
@@ -1238,6 +1240,11 @@ pub struct IHidGameControllerProvider_Vtbl {
 #[doc = "*Required features: `\"Gaming_Input_Custom\"`*"]
 #[repr(transparent)]
 pub struct IXusbGameControllerInputSink(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXusbGameControllerInputSink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXusbGameControllerInputSink {
     #[doc = "*Required features: `\"Gaming_Input_Custom\"`*"]
     pub fn OnInputReceived(&self, timestamp: u64, reportid: u8, inputbuffer: &[u8]) -> ::windows::core::Result<()> {
@@ -1317,11 +1324,6 @@ impl<'a> ::windows::core::IntoParam<'a, IGameControllerInputSink> for &IXusbGame
         ::core::convert::TryInto::<IGameControllerInputSink>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IXusbGameControllerInputSink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXusbGameControllerInputSink {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1335,7 +1337,6 @@ impl ::core::fmt::Debug for IXusbGameControllerInputSink {
 }
 unsafe impl ::windows::core::RuntimeType for IXusbGameControllerInputSink {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{b2ac1d95-6ecb-42b3-8aab-025401ca4712}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1353,6 +1354,11 @@ pub struct IXusbGameControllerInputSink_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IXusbGameControllerProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXusbGameControllerProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IXusbGameControllerProvider {
     type Vtable = IXusbGameControllerProvider_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x6e2971eb_0efb_48b4_808b_837643b2f216);
@@ -1393,6 +1399,7 @@ impl ::core::default::Default for XusbDeviceSubtype {
 }
 unsafe impl ::windows::core::Abi for XusbDeviceSubtype {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for XusbDeviceSubtype {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1401,7 +1408,6 @@ impl ::core::fmt::Debug for XusbDeviceSubtype {
 }
 unsafe impl ::windows::core::RuntimeType for XusbDeviceSubtype {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Gaming.Input.Custom.XusbDeviceSubtype;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1427,6 +1433,7 @@ impl ::core::default::Default for XusbDeviceType {
 }
 unsafe impl ::windows::core::Abi for XusbDeviceType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for XusbDeviceType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1435,7 +1442,6 @@ impl ::core::fmt::Debug for XusbDeviceType {
 }
 unsafe impl ::windows::core::RuntimeType for XusbDeviceType {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Gaming.Input.Custom.XusbDeviceType;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1490,11 +1496,6 @@ impl XusbGameControllerProvider {
         unsafe { (::windows::core::Interface::vtable(this).SetVibration)(::core::mem::transmute_copy(this), lowfrequencymotorspeed, highfrequencymotorspeed).ok() }
     }
 }
-impl ::core::clone::Clone for XusbGameControllerProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for XusbGameControllerProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1508,7 +1509,6 @@ impl ::core::fmt::Debug for XusbGameControllerProvider {
 }
 unsafe impl ::windows::core::RuntimeType for XusbGameControllerProvider {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Gaming.Input.Custom.XusbGameControllerProvider;{6e2971eb-0efb-48b4-808b-837643b2f216})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

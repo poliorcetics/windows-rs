@@ -244,6 +244,7 @@ impl ::core::default::Default for ENUM_SERVICE_STATE {
 }
 unsafe impl ::windows::core::Abi for ENUM_SERVICE_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ENUM_SERVICE_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -270,6 +271,7 @@ impl ::core::fmt::Debug for ENUM_SERVICE_STATUSA {
 }
 unsafe impl ::windows::core::Abi for ENUM_SERVICE_STATUSA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ENUM_SERVICE_STATUSA {
     fn eq(&self, other: &Self) -> bool {
@@ -302,6 +304,7 @@ impl ::core::fmt::Debug for ENUM_SERVICE_STATUSW {
 }
 unsafe impl ::windows::core::Abi for ENUM_SERVICE_STATUSW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ENUM_SERVICE_STATUSW {
     fn eq(&self, other: &Self) -> bool {
@@ -334,6 +337,7 @@ impl ::core::fmt::Debug for ENUM_SERVICE_STATUS_PROCESSA {
 }
 unsafe impl ::windows::core::Abi for ENUM_SERVICE_STATUS_PROCESSA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ENUM_SERVICE_STATUS_PROCESSA {
     fn eq(&self, other: &Self) -> bool {
@@ -366,6 +370,7 @@ impl ::core::fmt::Debug for ENUM_SERVICE_STATUS_PROCESSW {
 }
 unsafe impl ::windows::core::Abi for ENUM_SERVICE_STATUS_PROCESSW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ENUM_SERVICE_STATUS_PROCESSW {
     fn eq(&self, other: &Self) -> bool {
@@ -419,6 +424,7 @@ impl ::core::default::Default for ENUM_SERVICE_TYPE {
 }
 unsafe impl ::windows::core::Abi for ENUM_SERVICE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ENUM_SERVICE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -834,6 +840,7 @@ impl ::core::fmt::Debug for QUERY_SERVICE_CONFIGA {
 }
 unsafe impl ::windows::core::Abi for QUERY_SERVICE_CONFIGA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for QUERY_SERVICE_CONFIGA {
     fn eq(&self, other: &Self) -> bool {
@@ -872,6 +879,7 @@ impl ::core::fmt::Debug for QUERY_SERVICE_CONFIGW {
 }
 unsafe impl ::windows::core::Abi for QUERY_SERVICE_CONFIGW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for QUERY_SERVICE_CONFIGW {
     fn eq(&self, other: &Self) -> bool {
@@ -904,6 +912,7 @@ impl ::core::fmt::Debug for QUERY_SERVICE_LOCK_STATUSA {
 }
 unsafe impl ::windows::core::Abi for QUERY_SERVICE_LOCK_STATUSA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for QUERY_SERVICE_LOCK_STATUSA {
     fn eq(&self, other: &Self) -> bool {
@@ -936,6 +945,7 @@ impl ::core::fmt::Debug for QUERY_SERVICE_LOCK_STATUSW {
 }
 unsafe impl ::windows::core::Abi for QUERY_SERVICE_LOCK_STATUSW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for QUERY_SERVICE_LOCK_STATUSW {
     fn eq(&self, other: &Self) -> bool {
@@ -1178,6 +1188,7 @@ impl ::core::fmt::Debug for SC_ACTION {
 }
 unsafe impl ::windows::core::Abi for SC_ACTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SC_ACTION {
     fn eq(&self, other: &Self) -> bool {
@@ -1217,6 +1228,7 @@ impl ::core::default::Default for SC_ACTION_TYPE {
 }
 unsafe impl ::windows::core::Abi for SC_ACTION_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SC_ACTION_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1244,6 +1256,7 @@ impl ::core::default::Default for SC_ENUM_TYPE {
 }
 unsafe impl ::windows::core::Abi for SC_ENUM_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SC_ENUM_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1273,6 +1286,7 @@ impl ::core::default::Default for SC_EVENT_TYPE {
 }
 unsafe impl ::windows::core::Abi for SC_EVENT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SC_EVENT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1312,6 +1326,7 @@ impl ::core::default::Default for SC_STATUS_TYPE {
 }
 unsafe impl ::windows::core::Abi for SC_STATUS_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SC_STATUS_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1399,6 +1414,7 @@ impl ::core::default::Default for SERVICE_CONFIG {
 }
 unsafe impl ::windows::core::Abi for SERVICE_CONFIG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SERVICE_CONFIG {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1457,6 +1473,7 @@ impl ::core::fmt::Debug for SERVICE_CONTROL_STATUS_REASON_PARAMSA {
 }
 unsafe impl ::windows::core::Abi for SERVICE_CONTROL_STATUS_REASON_PARAMSA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SERVICE_CONTROL_STATUS_REASON_PARAMSA {
     fn eq(&self, other: &Self) -> bool {
@@ -1489,6 +1506,7 @@ impl ::core::fmt::Debug for SERVICE_CONTROL_STATUS_REASON_PARAMSW {
 }
 unsafe impl ::windows::core::Abi for SERVICE_CONTROL_STATUS_REASON_PARAMSW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SERVICE_CONTROL_STATUS_REASON_PARAMSW {
     fn eq(&self, other: &Self) -> bool {
@@ -1522,6 +1540,7 @@ impl ::core::clone::Clone for SERVICE_CUSTOM_SYSTEM_STATE_CHANGE_DATA_ITEM {
 }
 unsafe impl ::windows::core::Abi for SERVICE_CUSTOM_SYSTEM_STATE_CHANGE_DATA_ITEM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SERVICE_CUSTOM_SYSTEM_STATE_CHANGE_DATA_ITEM {
     fn eq(&self, other: &Self) -> bool {
@@ -1548,6 +1567,7 @@ impl ::core::clone::Clone for SERVICE_CUSTOM_SYSTEM_STATE_CHANGE_DATA_ITEM_0 {
 }
 unsafe impl ::windows::core::Abi for SERVICE_CUSTOM_SYSTEM_STATE_CHANGE_DATA_ITEM_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SERVICE_CUSTOM_SYSTEM_STATE_CHANGE_DATA_ITEM_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -1579,6 +1599,7 @@ impl ::core::fmt::Debug for SERVICE_CUSTOM_SYSTEM_STATE_CHANGE_DATA_ITEM_0_0 {
 }
 unsafe impl ::windows::core::Abi for SERVICE_CUSTOM_SYSTEM_STATE_CHANGE_DATA_ITEM_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SERVICE_CUSTOM_SYSTEM_STATE_CHANGE_DATA_ITEM_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -1614,6 +1635,7 @@ impl ::core::fmt::Debug for SERVICE_DELAYED_AUTO_START_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SERVICE_DELAYED_AUTO_START_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for SERVICE_DELAYED_AUTO_START_INFO {
@@ -1647,6 +1669,7 @@ impl ::core::fmt::Debug for SERVICE_DESCRIPTIONA {
 }
 unsafe impl ::windows::core::Abi for SERVICE_DESCRIPTIONA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SERVICE_DESCRIPTIONA {
     fn eq(&self, other: &Self) -> bool {
@@ -1677,6 +1700,7 @@ impl ::core::fmt::Debug for SERVICE_DESCRIPTIONW {
 }
 unsafe impl ::windows::core::Abi for SERVICE_DESCRIPTIONW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SERVICE_DESCRIPTIONW {
     fn eq(&self, other: &Self) -> bool {
@@ -1710,6 +1734,7 @@ impl ::core::default::Default for SERVICE_DIRECTORY_TYPE {
 }
 unsafe impl ::windows::core::Abi for SERVICE_DIRECTORY_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SERVICE_DIRECTORY_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1745,6 +1770,7 @@ impl ::core::default::Default for SERVICE_ERROR {
 }
 unsafe impl ::windows::core::Abi for SERVICE_ERROR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SERVICE_ERROR {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1773,6 +1799,7 @@ impl ::core::fmt::Debug for SERVICE_FAILURE_ACTIONSA {
 }
 unsafe impl ::windows::core::Abi for SERVICE_FAILURE_ACTIONSA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SERVICE_FAILURE_ACTIONSA {
     fn eq(&self, other: &Self) -> bool {
@@ -1807,6 +1834,7 @@ impl ::core::fmt::Debug for SERVICE_FAILURE_ACTIONSW {
 }
 unsafe impl ::windows::core::Abi for SERVICE_FAILURE_ACTIONSW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SERVICE_FAILURE_ACTIONSW {
     fn eq(&self, other: &Self) -> bool {
@@ -1842,6 +1870,7 @@ impl ::core::fmt::Debug for SERVICE_FAILURE_ACTIONS_FLAG {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SERVICE_FAILURE_ACTIONS_FLAG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for SERVICE_FAILURE_ACTIONS_FLAG {
@@ -1879,6 +1908,7 @@ impl ::core::fmt::Debug for SERVICE_LAUNCH_PROTECTED_INFO {
 }
 unsafe impl ::windows::core::Abi for SERVICE_LAUNCH_PROTECTED_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SERVICE_LAUNCH_PROTECTED_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -1938,6 +1968,7 @@ impl ::core::default::Default for SERVICE_NOTIFY {
 }
 unsafe impl ::windows::core::Abi for SERVICE_NOTIFY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SERVICE_NOTIFY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1994,6 +2025,7 @@ impl ::core::fmt::Debug for SERVICE_NOTIFY_1 {
 }
 unsafe impl ::windows::core::Abi for SERVICE_NOTIFY_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SERVICE_NOTIFY_1 {
     fn eq(&self, other: &Self) -> bool {
@@ -2030,6 +2062,7 @@ impl ::core::fmt::Debug for SERVICE_NOTIFY_2A {
 }
 unsafe impl ::windows::core::Abi for SERVICE_NOTIFY_2A {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SERVICE_NOTIFY_2A {
     fn eq(&self, other: &Self) -> bool {
@@ -2066,6 +2099,7 @@ impl ::core::fmt::Debug for SERVICE_NOTIFY_2W {
 }
 unsafe impl ::windows::core::Abi for SERVICE_NOTIFY_2W {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SERVICE_NOTIFY_2W {
     fn eq(&self, other: &Self) -> bool {
@@ -2112,6 +2146,7 @@ impl ::core::fmt::Debug for SERVICE_PREFERRED_NODE_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SERVICE_PREFERRED_NODE_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for SERVICE_PREFERRED_NODE_INFO {
@@ -2145,6 +2180,7 @@ impl ::core::fmt::Debug for SERVICE_PRESHUTDOWN_INFO {
 }
 unsafe impl ::windows::core::Abi for SERVICE_PRESHUTDOWN_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SERVICE_PRESHUTDOWN_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -2184,6 +2220,7 @@ impl ::core::default::Default for SERVICE_REGISTRY_STATE_TYPE {
 }
 unsafe impl ::windows::core::Abi for SERVICE_REGISTRY_STATE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SERVICE_REGISTRY_STATE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2208,6 +2245,7 @@ impl ::core::fmt::Debug for SERVICE_REQUIRED_PRIVILEGES_INFOA {
 }
 unsafe impl ::windows::core::Abi for SERVICE_REQUIRED_PRIVILEGES_INFOA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SERVICE_REQUIRED_PRIVILEGES_INFOA {
     fn eq(&self, other: &Self) -> bool {
@@ -2238,6 +2276,7 @@ impl ::core::fmt::Debug for SERVICE_REQUIRED_PRIVILEGES_INFOW {
 }
 unsafe impl ::windows::core::Abi for SERVICE_REQUIRED_PRIVILEGES_INFOW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SERVICE_REQUIRED_PRIVILEGES_INFOW {
     fn eq(&self, other: &Self) -> bool {
@@ -2271,6 +2310,7 @@ impl ::core::default::Default for SERVICE_RUNS_IN_PROCESS {
 }
 unsafe impl ::windows::core::Abi for SERVICE_RUNS_IN_PROCESS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SERVICE_RUNS_IN_PROCESS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2296,6 +2336,7 @@ impl ::core::default::Default for SERVICE_SHARED_DIRECTORY_TYPE {
 }
 unsafe impl ::windows::core::Abi for SERVICE_SHARED_DIRECTORY_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SERVICE_SHARED_DIRECTORY_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2321,6 +2362,7 @@ impl ::core::default::Default for SERVICE_SHARED_REGISTRY_STATE_TYPE {
 }
 unsafe impl ::windows::core::Abi for SERVICE_SHARED_REGISTRY_STATE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SERVICE_SHARED_REGISTRY_STATE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2345,6 +2387,7 @@ impl ::core::fmt::Debug for SERVICE_SID_INFO {
 }
 unsafe impl ::windows::core::Abi for SERVICE_SID_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SERVICE_SID_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -2381,6 +2424,7 @@ impl ::core::fmt::Debug for SERVICE_START_REASON {
 }
 unsafe impl ::windows::core::Abi for SERVICE_START_REASON {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SERVICE_START_REASON {
     fn eq(&self, other: &Self) -> bool {
@@ -2430,6 +2474,7 @@ impl ::core::default::Default for SERVICE_START_TYPE {
 }
 unsafe impl ::windows::core::Abi for SERVICE_START_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SERVICE_START_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2460,6 +2505,7 @@ impl ::core::fmt::Debug for SERVICE_STATUS {
 }
 unsafe impl ::windows::core::Abi for SERVICE_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SERVICE_STATUS {
     fn eq(&self, other: &Self) -> bool {
@@ -2503,6 +2549,7 @@ impl ::core::default::Default for SERVICE_STATUS_CURRENT_STATE {
 }
 unsafe impl ::windows::core::Abi for SERVICE_STATUS_CURRENT_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SERVICE_STATUS_CURRENT_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2535,6 +2582,7 @@ impl ::core::fmt::Debug for SERVICE_STATUS_HANDLE {
 }
 unsafe impl ::windows::core::Abi for SERVICE_STATUS_HANDLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[repr(C)]
 #[doc = "*Required features: `\"Win32_System_Services\"`*"]
@@ -2562,6 +2610,7 @@ impl ::core::fmt::Debug for SERVICE_STATUS_PROCESS {
 }
 unsafe impl ::windows::core::Abi for SERVICE_STATUS_PROCESS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SERVICE_STATUS_PROCESS {
     fn eq(&self, other: &Self) -> bool {
@@ -2681,6 +2730,7 @@ impl ::core::fmt::Debug for SERVICE_TABLE_ENTRYA {
 }
 unsafe impl ::windows::core::Abi for SERVICE_TABLE_ENTRYA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SERVICE_TABLE_ENTRYA {
     fn eq(&self, other: &Self) -> bool {
@@ -2712,6 +2762,7 @@ impl ::core::fmt::Debug for SERVICE_TABLE_ENTRYW {
 }
 unsafe impl ::windows::core::Abi for SERVICE_TABLE_ENTRYW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SERVICE_TABLE_ENTRYW {
     fn eq(&self, other: &Self) -> bool {
@@ -2743,6 +2794,7 @@ impl ::core::fmt::Debug for SERVICE_TIMECHANGE_INFO {
 }
 unsafe impl ::windows::core::Abi for SERVICE_TIMECHANGE_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SERVICE_TIMECHANGE_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -2777,6 +2829,7 @@ impl ::core::fmt::Debug for SERVICE_TRIGGER {
 }
 unsafe impl ::windows::core::Abi for SERVICE_TRIGGER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SERVICE_TRIGGER {
     fn eq(&self, other: &Self) -> bool {
@@ -2810,6 +2863,7 @@ impl ::core::default::Default for SERVICE_TRIGGER_ACTION {
 }
 unsafe impl ::windows::core::Abi for SERVICE_TRIGGER_ACTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SERVICE_TRIGGER_ACTION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2834,6 +2888,7 @@ impl ::core::fmt::Debug for SERVICE_TRIGGER_CUSTOM_STATE_ID {
 }
 unsafe impl ::windows::core::Abi for SERVICE_TRIGGER_CUSTOM_STATE_ID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SERVICE_TRIGGER_CUSTOM_STATE_ID {
     fn eq(&self, other: &Self) -> bool {
@@ -2866,6 +2921,7 @@ impl ::core::fmt::Debug for SERVICE_TRIGGER_INFO {
 }
 unsafe impl ::windows::core::Abi for SERVICE_TRIGGER_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SERVICE_TRIGGER_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -2898,6 +2954,7 @@ impl ::core::fmt::Debug for SERVICE_TRIGGER_SPECIFIC_DATA_ITEM {
 }
 unsafe impl ::windows::core::Abi for SERVICE_TRIGGER_SPECIFIC_DATA_ITEM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SERVICE_TRIGGER_SPECIFIC_DATA_ITEM {
     fn eq(&self, other: &Self) -> bool {
@@ -2937,6 +2994,7 @@ impl ::core::default::Default for SERVICE_TRIGGER_SPECIFIC_DATA_ITEM_DATA_TYPE {
 }
 unsafe impl ::windows::core::Abi for SERVICE_TRIGGER_SPECIFIC_DATA_ITEM_DATA_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SERVICE_TRIGGER_SPECIFIC_DATA_ITEM_DATA_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2976,6 +3034,7 @@ impl ::core::default::Default for SERVICE_TRIGGER_TYPE {
 }
 unsafe impl ::windows::core::Abi for SERVICE_TRIGGER_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SERVICE_TRIGGER_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

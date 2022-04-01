@@ -2,6 +2,11 @@
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPreallocatedWorkItem(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPreallocatedWorkItem {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPreallocatedWorkItem {
     type Vtable = IPreallocatedWorkItem_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb6daa9fc_bc5b_401a_a8b2_6e754d14daa6);
@@ -18,6 +23,11 @@ pub struct IPreallocatedWorkItem_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPreallocatedWorkItemFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPreallocatedWorkItemFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPreallocatedWorkItemFactory {
     type Vtable = IPreallocatedWorkItemFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe3d32b45_dfea_469b_82c5_f6e3cefdeafb);
@@ -42,6 +52,11 @@ pub struct IPreallocatedWorkItemFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISignalNotifier(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISignalNotifier {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISignalNotifier {
     type Vtable = ISignalNotifier_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x14285e06_63a7_4713_b6d9_62f64b56fb8b);
@@ -56,6 +71,11 @@ pub struct ISignalNotifier_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISignalNotifierStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISignalNotifierStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISignalNotifierStatics {
     type Vtable = ISignalNotifierStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1c4e4566_8400_46d3_a115_7d0c0dfc9f62);
@@ -118,11 +138,6 @@ impl PreallocatedWorkItem {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for PreallocatedWorkItem {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PreallocatedWorkItem {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -136,7 +151,6 @@ impl ::core::fmt::Debug for PreallocatedWorkItem {
 }
 unsafe impl ::windows::core::RuntimeType for PreallocatedWorkItem {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.System.Threading.Core.PreallocatedWorkItem;{b6daa9fc-bc5b-401a-a8b2-6e754d14daa6})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -242,11 +256,6 @@ impl<F: FnMut(&::core::option::Option<SignalNotifier>, bool) -> ::windows::core:
         ((*this).invoke)(::core::mem::transmute(&signalnotifier), timedout).into()
     }
 }
-impl ::core::clone::Clone for SignalHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SignalHandler {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -264,7 +273,6 @@ unsafe impl ::windows::core::Interface for SignalHandler {
 }
 unsafe impl ::windows::core::RuntimeType for SignalHandler {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{923c402e-4721-440e-9dda-55b6f2e07710}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -325,11 +333,6 @@ impl SignalNotifier {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for SignalNotifier {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SignalNotifier {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -343,7 +346,6 @@ impl ::core::fmt::Debug for SignalNotifier {
 }
 unsafe impl ::windows::core::RuntimeType for SignalNotifier {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.System.Threading.Core.SignalNotifier;{14285e06-63a7-4713-b6d9-62f64b56fb8b})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

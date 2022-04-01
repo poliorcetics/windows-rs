@@ -177,6 +177,7 @@ impl ::core::fmt::Debug for DEVICEDIALOGDATA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DEVICEDIALOGDATA {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DEVICEDIALOGDATA {
@@ -231,6 +232,7 @@ impl ::core::fmt::Debug for DEVICEDIALOGDATA2 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DEVICEDIALOGDATA2 {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DEVICEDIALOGDATA2 {
@@ -341,6 +343,11 @@ pub const GUID_DEVINTERFACE_IMAGE: ::windows::core::GUID = ::windows::core::GUID
 #[doc = "*Required features: `\"Win32_Devices_ImageAcquisition\"`*"]
 #[repr(transparent)]
 pub struct IEnumWIA_DEV_CAPS(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnumWIA_DEV_CAPS {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnumWIA_DEV_CAPS {
     #[doc = "*Required features: `\"Win32_Devices_ImageAcquisition\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -386,11 +393,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnum
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnumWIA_DEV_CAPS {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnumWIA_DEV_CAPS {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -422,6 +424,11 @@ pub struct IEnumWIA_DEV_CAPS_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_ImageAcquisition\"`*"]
 #[repr(transparent)]
 pub struct IEnumWIA_DEV_INFO(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnumWIA_DEV_INFO {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnumWIA_DEV_INFO {
     #[doc = "*Required features: `\"Win32_Devices_ImageAcquisition\"`*"]
     pub unsafe fn Next(&self, celt: u32, rgelt: *mut ::core::option::Option<IWiaPropertyStorage>, pceltfetched: *mut u32) -> ::windows::core::Result<()> {
@@ -466,11 +473,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnum
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnumWIA_DEV_INFO {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnumWIA_DEV_INFO {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -499,6 +501,11 @@ pub struct IEnumWIA_DEV_INFO_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_ImageAcquisition\"`*"]
 #[repr(transparent)]
 pub struct IEnumWIA_FORMAT_INFO(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnumWIA_FORMAT_INFO {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnumWIA_FORMAT_INFO {
     #[doc = "*Required features: `\"Win32_Devices_ImageAcquisition\"`*"]
     pub unsafe fn Next(&self, celt: u32, rgelt: *mut WIA_FORMAT_INFO, pceltfetched: *mut u32) -> ::windows::core::Result<()> {
@@ -543,11 +550,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnum
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnumWIA_FORMAT_INFO {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnumWIA_FORMAT_INFO {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -576,6 +578,11 @@ pub struct IEnumWIA_FORMAT_INFO_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_ImageAcquisition\"`*"]
 #[repr(transparent)]
 pub struct IEnumWiaItem(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnumWiaItem {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnumWiaItem {
     #[doc = "*Required features: `\"Win32_Devices_ImageAcquisition\"`*"]
     pub unsafe fn Next(&self, celt: u32, ppiwiaitem: *mut ::core::option::Option<IWiaItem>, pceltfetched: *mut u32) -> ::windows::core::Result<()> {
@@ -620,11 +627,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnum
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnumWiaItem {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnumWiaItem {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -653,6 +655,11 @@ pub struct IEnumWiaItem_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_ImageAcquisition\"`*"]
 #[repr(transparent)]
 pub struct IEnumWiaItem2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnumWiaItem2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnumWiaItem2 {
     #[doc = "*Required features: `\"Win32_Devices_ImageAcquisition\"`*"]
     pub unsafe fn Next(&self, celt: u32, ppiwiaitem2: *mut ::core::option::Option<IWiaItem2>, pceltfetched: *mut u32) -> ::windows::core::Result<()> {
@@ -695,11 +702,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IEnumWiaI
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnumWiaItem2 {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IEnumWiaItem2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IEnumWiaItem2 {
@@ -756,6 +758,11 @@ pub const IT_STATUS_TRANSFER_TO_CLIENT: u32 = 4u32;
 #[doc = "*Required features: `\"Win32_Devices_ImageAcquisition\"`*"]
 #[repr(transparent)]
 pub struct IWiaAppErrorHandler(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWiaAppErrorHandler {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWiaAppErrorHandler {
     #[doc = "*Required features: `\"Win32_Devices_ImageAcquisition\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -788,11 +795,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWiaA
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWiaAppErrorHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWiaAppErrorHandler {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -821,6 +823,11 @@ pub struct IWiaAppErrorHandler_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_ImageAcquisition\"`*"]
 #[repr(transparent)]
 pub struct IWiaDataCallback(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWiaDataCallback {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWiaDataCallback {
     #[doc = "*Required features: `\"Win32_Devices_ImageAcquisition\"`*"]
     pub unsafe fn BandedDataCallback(&self, lmessage: i32, lstatus: i32, lpercentcomplete: i32, loffset: i32, llength: i32, lreserved: i32, lreslength: i32, pbbuffer: *mut u8) -> ::windows::core::Result<()> {
@@ -847,11 +854,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWiaD
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWiaDataCallback {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWiaDataCallback {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -876,6 +878,11 @@ pub struct IWiaDataCallback_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_ImageAcquisition\"`*"]
 #[repr(transparent)]
 pub struct IWiaDataTransfer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWiaDataTransfer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWiaDataTransfer {
     #[doc = "*Required features: `\"Win32_Devices_ImageAcquisition\"`, `\"Win32_Graphics_Gdi\"`, `\"Win32_System_Com_StructuredStorage\"`*"]
     #[cfg(all(feature = "Win32_Graphics_Gdi", feature = "Win32_System_Com_StructuredStorage"))]
@@ -922,11 +929,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWiaD
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWiaDataTransfer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWiaDataTransfer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -961,6 +963,11 @@ pub struct IWiaDataTransfer_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_ImageAcquisition\"`*"]
 #[repr(transparent)]
 pub struct IWiaDevMgr(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWiaDevMgr {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWiaDevMgr {
     #[doc = "*Required features: `\"Win32_Devices_ImageAcquisition\"`*"]
     pub unsafe fn EnumDeviceInfo(&self, lflag: i32) -> ::windows::core::Result<IEnumWIA_DEV_INFO> {
@@ -1030,11 +1037,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWiaD
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWiaDevMgr {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWiaDevMgr {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1091,6 +1093,11 @@ pub struct IWiaDevMgr_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_ImageAcquisition\"`*"]
 #[repr(transparent)]
 pub struct IWiaDevMgr2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWiaDevMgr2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWiaDevMgr2 {
     #[doc = "*Required features: `\"Win32_Devices_ImageAcquisition\"`*"]
     pub unsafe fn EnumDeviceInfo(&self, lflags: i32) -> ::windows::core::Result<IEnumWIA_DEV_INFO> {
@@ -1155,11 +1162,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWiaD
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWiaDevMgr2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWiaDevMgr2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1212,6 +1214,11 @@ pub struct IWiaDevMgr2_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_ImageAcquisition\"`*"]
 #[repr(transparent)]
 pub struct IWiaDrvItem(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWiaDrvItem {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWiaDrvItem {
     #[doc = "*Required features: `\"Win32_Devices_ImageAcquisition\"`*"]
     pub unsafe fn GetItemFlags(&self) -> ::windows::core::Result<i32> {
@@ -1301,11 +1308,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWiaD
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWiaDrvItem {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWiaDrvItem {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1357,6 +1359,11 @@ pub struct IWiaDrvItem_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_ImageAcquisition\"`*"]
 #[repr(transparent)]
 pub struct IWiaErrorHandler(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWiaErrorHandler {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWiaErrorHandler {
     #[doc = "*Required features: `\"Win32_Devices_ImageAcquisition\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -1390,11 +1397,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWiaE
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWiaErrorHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWiaErrorHandler {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1426,6 +1428,11 @@ pub struct IWiaErrorHandler_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_ImageAcquisition\"`*"]
 #[repr(transparent)]
 pub struct IWiaEventCallback(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWiaEventCallback {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWiaEventCallback {
     #[doc = "*Required features: `\"Win32_Devices_ImageAcquisition\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -1451,11 +1458,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IWiaEvent
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWiaEventCallback {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IWiaEventCallback {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IWiaEventCallback {
@@ -1485,6 +1487,11 @@ pub struct IWiaEventCallback_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_ImageAcquisition\"`*"]
 #[repr(transparent)]
 pub struct IWiaImageFilter(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWiaImageFilter {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWiaImageFilter {
     #[doc = "*Required features: `\"Win32_Devices_ImageAcquisition\"`*"]
     pub unsafe fn InitializeFilter<'a, Param0: ::windows::core::IntoParam<'a, IWiaItem2>, Param1: ::windows::core::IntoParam<'a, IWiaTransferCallback>>(&self, pwiaitem2: Param0, pwiatransfercallback: Param1) -> ::windows::core::Result<()> {
@@ -1524,11 +1531,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWiaI
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWiaImageFilter {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWiaImageFilter {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1559,6 +1561,11 @@ pub struct IWiaImageFilter_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_ImageAcquisition\"`*"]
 #[repr(transparent)]
 pub struct IWiaItem(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWiaItem {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWiaItem {
     #[doc = "*Required features: `\"Win32_Devices_ImageAcquisition\"`*"]
     pub unsafe fn GetItemType(&self) -> ::windows::core::Result<i32> {
@@ -1657,11 +1664,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWiaI
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWiaItem {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWiaItem {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1718,6 +1720,11 @@ pub struct IWiaItem_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_ImageAcquisition\"`*"]
 #[repr(transparent)]
 pub struct IWiaItem2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWiaItem2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWiaItem2 {
     #[doc = "*Required features: `\"Win32_Devices_ImageAcquisition\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -1819,11 +1826,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWiaI
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWiaItem2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWiaItem2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1878,6 +1880,11 @@ pub struct IWiaItem2_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_ImageAcquisition\"`*"]
 #[repr(transparent)]
 pub struct IWiaItemExtras(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWiaItemExtras {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWiaItemExtras {
     #[doc = "*Required features: `\"Win32_Devices_ImageAcquisition\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -1914,11 +1921,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWiaI
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWiaItemExtras {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWiaItemExtras {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1948,6 +1950,11 @@ pub struct IWiaItemExtras_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_ImageAcquisition\"`*"]
 #[repr(transparent)]
 pub struct IWiaLog(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWiaLog {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWiaLog {
     #[doc = "*Required features: `\"Win32_Devices_ImageAcquisition\"`*"]
     pub unsafe fn InitializeLog(&self, hinstance: i32) -> ::windows::core::Result<()> {
@@ -1983,11 +1990,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWiaL
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWiaLog {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWiaLog {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2017,6 +2019,11 @@ pub struct IWiaLog_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_ImageAcquisition\"`*"]
 #[repr(transparent)]
 pub struct IWiaLogEx(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWiaLogEx {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWiaLogEx {
     #[doc = "*Required features: `\"Win32_Devices_ImageAcquisition\"`*"]
     pub unsafe fn InitializeLogEx(&self, hinstance: *const u8) -> ::windows::core::Result<()> {
@@ -2061,11 +2068,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWiaL
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWiaLogEx {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWiaLogEx {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2100,6 +2102,11 @@ pub struct IWiaLogEx_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_ImageAcquisition\"`*"]
 #[repr(transparent)]
 pub struct IWiaMiniDrv(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWiaMiniDrv {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWiaMiniDrv {
     #[doc = "*Required features: `\"Win32_Devices_ImageAcquisition\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -2204,11 +2211,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWiaM
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWiaMiniDrv {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWiaMiniDrv {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2267,6 +2269,11 @@ pub struct IWiaMiniDrv_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_ImageAcquisition\"`*"]
 #[repr(transparent)]
 pub struct IWiaMiniDrvCallBack(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWiaMiniDrvCallBack {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWiaMiniDrvCallBack {
     #[doc = "*Required features: `\"Win32_Devices_ImageAcquisition\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -2292,11 +2299,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IWiaMiniD
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWiaMiniDrvCallBack {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IWiaMiniDrvCallBack {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IWiaMiniDrvCallBack {
@@ -2326,6 +2328,11 @@ pub struct IWiaMiniDrvCallBack_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_ImageAcquisition\"`*"]
 #[repr(transparent)]
 pub struct IWiaMiniDrvTransferCallback(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWiaMiniDrvTransferCallback {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWiaMiniDrvTransferCallback {
     #[doc = "*Required features: `\"Win32_Devices_ImageAcquisition\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com"))]
@@ -2358,11 +2365,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWiaM
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWiaMiniDrvTransferCallback {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWiaMiniDrvTransferCallback {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2391,6 +2393,11 @@ pub struct IWiaMiniDrvTransferCallback_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_ImageAcquisition\"`*"]
 #[repr(transparent)]
 pub struct IWiaNotifyDevMgr(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWiaNotifyDevMgr {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWiaNotifyDevMgr {
     #[doc = "*Required features: `\"Win32_Devices_ImageAcquisition\"`*"]
     pub unsafe fn NewDeviceArrival(&self) -> ::windows::core::Result<()> {
@@ -2417,11 +2424,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWiaN
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWiaNotifyDevMgr {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWiaNotifyDevMgr {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2446,6 +2448,11 @@ pub struct IWiaNotifyDevMgr_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_ImageAcquisition\"`*"]
 #[repr(transparent)]
 pub struct IWiaPreview(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWiaPreview {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWiaPreview {
     #[doc = "*Required features: `\"Win32_Devices_ImageAcquisition\"`*"]
     pub unsafe fn GetNewPreview<'a, Param1: ::windows::core::IntoParam<'a, IWiaItem2>, Param2: ::windows::core::IntoParam<'a, IWiaTransferCallback>>(&self, lflags: i32, pwiaitem2: Param1, pwiatransfercallback: Param2) -> ::windows::core::Result<()> {
@@ -2484,11 +2491,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWiaP
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWiaPreview {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWiaPreview {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2516,6 +2518,11 @@ pub struct IWiaPreview_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_ImageAcquisition\"`*"]
 #[repr(transparent)]
 pub struct IWiaPropertyStorage(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWiaPropertyStorage {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWiaPropertyStorage {
     #[doc = "*Required features: `\"Win32_Devices_ImageAcquisition\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com_StructuredStorage\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com_StructuredStorage"))]
@@ -2614,11 +2621,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWiaP
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWiaPropertyStorage {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWiaPropertyStorage {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2685,6 +2687,11 @@ pub struct IWiaPropertyStorage_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_ImageAcquisition\"`*"]
 #[repr(transparent)]
 pub struct IWiaSegmentationFilter(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWiaSegmentationFilter {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWiaSegmentationFilter {
     #[doc = "*Required features: `\"Win32_Devices_ImageAcquisition\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -2710,11 +2717,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IWiaSegme
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWiaSegmentationFilter {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IWiaSegmentationFilter {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IWiaSegmentationFilter {
@@ -2744,6 +2746,11 @@ pub struct IWiaSegmentationFilter_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_ImageAcquisition\"`*"]
 #[repr(transparent)]
 pub struct IWiaTransfer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWiaTransfer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWiaTransfer {
     #[doc = "*Required features: `\"Win32_Devices_ImageAcquisition\"`*"]
     pub unsafe fn Download<'a, Param1: ::windows::core::IntoParam<'a, IWiaTransferCallback>>(&self, lflags: i32, piwiatransfercallback: Param1) -> ::windows::core::Result<()> {
@@ -2784,11 +2791,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWiaT
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWiaTransfer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWiaTransfer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2819,6 +2821,11 @@ pub struct IWiaTransfer_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_ImageAcquisition\"`*"]
 #[repr(transparent)]
 pub struct IWiaTransferCallback(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWiaTransferCallback {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWiaTransferCallback {
     #[doc = "*Required features: `\"Win32_Devices_ImageAcquisition\"`*"]
     pub unsafe fn TransferCallback(&self, lflags: i32, pwiatransferparams: *const WiaTransferParams) -> ::windows::core::Result<()> {
@@ -2851,11 +2858,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWiaT
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWiaTransferCallback {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWiaTransferCallback {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2884,6 +2886,11 @@ pub struct IWiaTransferCallback_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_ImageAcquisition\"`*"]
 #[repr(transparent)]
 pub struct IWiaUIExtension(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWiaUIExtension {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWiaUIExtension {
     #[doc = "*Required features: `\"Win32_Devices_ImageAcquisition\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -2921,11 +2928,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWiaU
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWiaUIExtension {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWiaUIExtension {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2961,6 +2963,11 @@ pub struct IWiaUIExtension_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_ImageAcquisition\"`*"]
 #[repr(transparent)]
 pub struct IWiaUIExtension2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWiaUIExtension2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWiaUIExtension2 {
     #[doc = "*Required features: `\"Win32_Devices_ImageAcquisition\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -2991,11 +2998,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IWiaUIExt
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWiaUIExtension2 {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IWiaUIExtension2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IWiaUIExtension2 {
@@ -3029,6 +3031,11 @@ pub struct IWiaUIExtension2_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_ImageAcquisition\"`*"]
 #[repr(transparent)]
 pub struct IWiaVideo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWiaVideo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWiaVideo {
     #[doc = "*Required features: `\"Win32_Devices_ImageAcquisition\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -3114,11 +3121,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IWiaVideo
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWiaVideo {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IWiaVideo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IWiaVideo {
@@ -3330,6 +3332,7 @@ impl ::core::fmt::Debug for MINIDRV_TRANSFER_CONTEXT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MINIDRV_TRANSFER_CONTEXT {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MINIDRV_TRANSFER_CONTEXT {
@@ -3413,6 +3416,7 @@ impl ::core::fmt::Debug for RANGEVALUE {
 }
 unsafe impl ::windows::core::Abi for RANGEVALUE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RANGEVALUE {
     fn eq(&self, other: &Self) -> bool {
@@ -3526,6 +3530,7 @@ impl ::core::fmt::Debug for SCANINFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SCANINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for SCANINFO {
@@ -3566,6 +3571,7 @@ impl ::core::fmt::Debug for SCANWINDOW {
 }
 unsafe impl ::windows::core::Abi for SCANWINDOW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SCANWINDOW {
     fn eq(&self, other: &Self) -> bool {
@@ -3629,6 +3635,7 @@ impl ::core::fmt::Debug for TWAIN_CAPABILITY {
 }
 unsafe impl ::windows::core::Abi for TWAIN_CAPABILITY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TWAIN_CAPABILITY {
     fn eq(&self, other: &Self) -> bool {
@@ -3678,6 +3685,7 @@ impl ::core::fmt::Debug for VAL {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for VAL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for VAL {
@@ -3725,6 +3733,7 @@ impl ::core::clone::Clone for WIAS_CHANGED_VALUE_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WIAS_CHANGED_VALUE_INFO {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WIAS_CHANGED_VALUE_INFO {
@@ -3758,6 +3767,7 @@ impl ::core::clone::Clone for WIAS_CHANGED_VALUE_INFO_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WIAS_CHANGED_VALUE_INFO_0 {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WIAS_CHANGED_VALUE_INFO_0 {
@@ -3791,6 +3801,7 @@ impl ::core::clone::Clone for WIAS_CHANGED_VALUE_INFO_1 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WIAS_CHANGED_VALUE_INFO_1 {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WIAS_CHANGED_VALUE_INFO_1 {
@@ -3848,6 +3859,7 @@ impl ::core::fmt::Debug for WIAS_DOWN_SAMPLE_INFO {
 }
 unsafe impl ::windows::core::Abi for WIAS_DOWN_SAMPLE_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WIAS_DOWN_SAMPLE_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -3880,6 +3892,7 @@ impl ::core::fmt::Debug for WIAS_ENDORSER_INFO {
 }
 unsafe impl ::windows::core::Abi for WIAS_ENDORSER_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WIAS_ENDORSER_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -3911,6 +3924,7 @@ impl ::core::fmt::Debug for WIAS_ENDORSER_VALUE {
 }
 unsafe impl ::windows::core::Abi for WIAS_ENDORSER_VALUE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WIAS_ENDORSER_VALUE {
     fn eq(&self, other: &Self) -> bool {
@@ -3954,6 +3968,7 @@ impl ::core::default::Default for WIAVIDEO_STATE {
 }
 unsafe impl ::windows::core::Abi for WIAVIDEO_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WIAVIDEO_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4018,6 +4033,7 @@ impl ::core::fmt::Debug for WIA_BARCODES {
 }
 unsafe impl ::windows::core::Abi for WIA_BARCODES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WIA_BARCODES {
     fn eq(&self, other: &Self) -> bool {
@@ -4104,6 +4120,7 @@ impl ::core::fmt::Debug for WIA_BARCODE_INFO {
 }
 unsafe impl ::windows::core::Abi for WIA_BARCODE_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WIA_BARCODE_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -4267,6 +4284,7 @@ impl ::core::fmt::Debug for WIA_DATA_CALLBACK_HEADER {
 }
 unsafe impl ::windows::core::Abi for WIA_DATA_CALLBACK_HEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WIA_DATA_CALLBACK_HEADER {
     fn eq(&self, other: &Self) -> bool {
@@ -4332,6 +4350,7 @@ impl ::core::fmt::Debug for WIA_DATA_TRANSFER_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WIA_DATA_TRANSFER_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WIA_DATA_TRANSFER_INFO {
@@ -4398,6 +4417,7 @@ impl ::core::fmt::Debug for WIA_DEV_CAP {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WIA_DEV_CAP {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WIA_DEV_CAP {
@@ -4435,6 +4455,7 @@ impl ::core::fmt::Debug for WIA_DEV_CAP_DRV {
 }
 unsafe impl ::windows::core::Abi for WIA_DEV_CAP_DRV {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WIA_DEV_CAP_DRV {
     fn eq(&self, other: &Self) -> bool {
@@ -4546,6 +4567,7 @@ impl ::core::fmt::Debug for WIA_DITHER_PATTERN_DATA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WIA_DITHER_PATTERN_DATA {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WIA_DITHER_PATTERN_DATA {
@@ -5036,6 +5058,7 @@ impl ::core::fmt::Debug for WIA_EXTENDED_TRANSFER_INFO {
 }
 unsafe impl ::windows::core::Abi for WIA_EXTENDED_TRANSFER_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WIA_EXTENDED_TRANSFER_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -5085,6 +5108,7 @@ impl ::core::fmt::Debug for WIA_FORMAT_INFO {
 }
 unsafe impl ::windows::core::Abi for WIA_FORMAT_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WIA_FORMAT_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -5763,6 +5787,7 @@ impl ::core::fmt::Debug for WIA_MICR {
 }
 unsafe impl ::windows::core::Abi for WIA_MICR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WIA_MICR {
     fn eq(&self, other: &Self) -> bool {
@@ -5796,6 +5821,7 @@ impl ::core::fmt::Debug for WIA_MICR_INFO {
 }
 unsafe impl ::windows::core::Abi for WIA_MICR_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WIA_MICR_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -5990,6 +6016,7 @@ impl ::core::fmt::Debug for WIA_PATCH_CODES {
 }
 unsafe impl ::windows::core::Abi for WIA_PATCH_CODES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WIA_PATCH_CODES {
     fn eq(&self, other: &Self) -> bool {
@@ -6048,6 +6075,7 @@ impl ::core::fmt::Debug for WIA_PATCH_CODE_INFO {
 }
 unsafe impl ::windows::core::Abi for WIA_PATCH_CODE_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WIA_PATCH_CODE_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -6229,6 +6257,7 @@ impl ::core::fmt::Debug for WIA_PROPERTY_CONTEXT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WIA_PROPERTY_CONTEXT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WIA_PROPERTY_CONTEXT {
@@ -6261,6 +6290,7 @@ impl ::core::clone::Clone for WIA_PROPERTY_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WIA_PROPERTY_INFO {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WIA_PROPERTY_INFO {
@@ -6298,6 +6328,7 @@ impl ::core::clone::Clone for WIA_PROPERTY_INFO_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WIA_PROPERTY_INFO_0 {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WIA_PROPERTY_INFO_0 {
@@ -6337,6 +6368,7 @@ impl ::core::fmt::Debug for WIA_PROPERTY_INFO_0_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WIA_PROPERTY_INFO_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WIA_PROPERTY_INFO_0_0 {
@@ -6375,6 +6407,7 @@ impl ::core::fmt::Debug for WIA_PROPERTY_INFO_0_1 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WIA_PROPERTY_INFO_0_1 {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WIA_PROPERTY_INFO_0_1 {
@@ -6415,6 +6448,7 @@ impl ::core::fmt::Debug for WIA_PROPERTY_INFO_0_2 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WIA_PROPERTY_INFO_0_2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WIA_PROPERTY_INFO_0_2 {
@@ -6455,6 +6489,7 @@ impl ::core::fmt::Debug for WIA_PROPERTY_INFO_0_3 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WIA_PROPERTY_INFO_0_3 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WIA_PROPERTY_INFO_0_3 {
@@ -6495,6 +6530,7 @@ impl ::core::fmt::Debug for WIA_PROPERTY_INFO_0_4 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WIA_PROPERTY_INFO_0_4 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WIA_PROPERTY_INFO_0_4 {
@@ -6533,6 +6569,7 @@ impl ::core::fmt::Debug for WIA_PROPERTY_INFO_0_5 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WIA_PROPERTY_INFO_0_5 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WIA_PROPERTY_INFO_0_5 {
@@ -6574,6 +6611,7 @@ impl ::core::fmt::Debug for WIA_PROPERTY_INFO_0_6 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WIA_PROPERTY_INFO_0_6 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WIA_PROPERTY_INFO_0_6 {
@@ -6615,6 +6653,7 @@ impl ::core::fmt::Debug for WIA_PROPERTY_INFO_0_7 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WIA_PROPERTY_INFO_0_7 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WIA_PROPERTY_INFO_0_7 {
@@ -6649,6 +6688,7 @@ impl ::core::fmt::Debug for WIA_PROPID_TO_NAME {
 }
 unsafe impl ::windows::core::Abi for WIA_PROPID_TO_NAME {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WIA_PROPID_TO_NAME {
     fn eq(&self, other: &Self) -> bool {
@@ -6749,6 +6789,7 @@ impl ::core::fmt::Debug for WIA_RAW_HEADER {
 }
 unsafe impl ::windows::core::Abi for WIA_RAW_HEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WIA_RAW_HEADER {
     fn eq(&self, other: &Self) -> bool {
@@ -6979,6 +7020,7 @@ impl ::core::fmt::Debug for WiaTransferParams {
 }
 unsafe impl ::windows::core::Abi for WiaTransferParams {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WiaTransferParams {
     fn eq(&self, other: &Self) -> bool {

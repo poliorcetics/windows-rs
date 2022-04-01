@@ -2,6 +2,11 @@
 #[doc = "*Required features: `\"Win32_System_SettingsManagementInfrastructure\"`*"]
 #[repr(transparent)]
 pub struct IItemEnumerator(::windows::core::IUnknown);
+impl ::core::clone::Clone for IItemEnumerator {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IItemEnumerator {
     #[doc = "*Required features: `\"Win32_System_SettingsManagementInfrastructure\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com", feature = "Win32_System_Ole"))]
@@ -40,11 +45,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IItem
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IItemEnumerator {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IItemEnumerator {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -77,6 +77,11 @@ pub struct IItemEnumerator_Vtbl {
 #[doc = "*Required features: `\"Win32_System_SettingsManagementInfrastructure\"`*"]
 #[repr(transparent)]
 pub struct ISettingsContext(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISettingsContext {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISettingsContext {
     #[doc = "*Required features: `\"Win32_System_SettingsManagementInfrastructure\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -131,11 +136,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISett
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISettingsContext {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISettingsContext {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -172,6 +172,11 @@ pub struct ISettingsContext_Vtbl {
 #[doc = "*Required features: `\"Win32_System_SettingsManagementInfrastructure\"`*"]
 #[repr(transparent)]
 pub struct ISettingsEngine(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISettingsEngine {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISettingsEngine {
     #[doc = "*Required features: `\"Win32_System_SettingsManagementInfrastructure\"`*"]
     pub unsafe fn GetNamespaces(&self, flags: WcmNamespaceEnumerationFlags, reserved: *const ::core::ffi::c_void) -> ::windows::core::Result<IItemEnumerator> {
@@ -271,11 +276,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISett
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISettingsEngine {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISettingsEngine {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -324,6 +324,11 @@ pub struct ISettingsEngine_Vtbl {
 #[doc = "*Required features: `\"Win32_System_SettingsManagementInfrastructure\"`*"]
 #[repr(transparent)]
 pub struct ISettingsIdentity(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISettingsIdentity {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISettingsIdentity {
     #[doc = "*Required features: `\"Win32_System_SettingsManagementInfrastructure\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -365,11 +370,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISett
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISettingsIdentity {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISettingsIdentity {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -400,6 +400,11 @@ pub struct ISettingsIdentity_Vtbl {
 #[doc = "*Required features: `\"Win32_System_SettingsManagementInfrastructure\"`*"]
 #[repr(transparent)]
 pub struct ISettingsItem(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISettingsItem {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISettingsItem {
     #[doc = "*Required features: `\"Win32_System_SettingsManagementInfrastructure\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -536,11 +541,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISett
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISettingsItem {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISettingsItem {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -616,6 +616,11 @@ pub struct ISettingsItem_Vtbl {
 #[doc = "*Required features: `\"Win32_System_SettingsManagementInfrastructure\"`*"]
 #[repr(transparent)]
 pub struct ISettingsNamespace(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISettingsNamespace {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISettingsNamespace {
     #[doc = "*Required features: `\"Win32_System_SettingsManagementInfrastructure\"`*"]
     pub unsafe fn GetIdentity(&self) -> ::windows::core::Result<ISettingsIdentity> {
@@ -674,11 +679,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISett
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISettingsNamespace {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISettingsNamespace {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -715,6 +715,11 @@ pub struct ISettingsNamespace_Vtbl {
 #[doc = "*Required features: `\"Win32_System_SettingsManagementInfrastructure\"`*"]
 #[repr(transparent)]
 pub struct ISettingsResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISettingsResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISettingsResult {
     #[doc = "*Required features: `\"Win32_System_SettingsManagementInfrastructure\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -770,11 +775,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISett
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISettingsResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISettingsResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -813,6 +813,11 @@ pub struct ISettingsResult_Vtbl {
 #[doc = "*Required features: `\"Win32_System_SettingsManagementInfrastructure\"`*"]
 #[repr(transparent)]
 pub struct ITargetInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITargetInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITargetInfo {
     #[doc = "*Required features: `\"Win32_System_SettingsManagementInfrastructure\"`*"]
     pub unsafe fn GetTargetMode(&self) -> ::windows::core::Result<WcmTargetMode> {
@@ -940,11 +945,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for ITargetIn
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITargetInfo {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for ITargetInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for ITargetInfo {
@@ -1185,6 +1185,7 @@ impl ::core::default::Default for WcmDataType {
 }
 unsafe impl ::windows::core::Abi for WcmDataType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WcmDataType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1212,6 +1213,7 @@ impl ::core::default::Default for WcmNamespaceAccess {
 }
 unsafe impl ::windows::core::Abi for WcmNamespaceAccess {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WcmNamespaceAccess {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1241,6 +1243,7 @@ impl ::core::default::Default for WcmNamespaceEnumerationFlags {
 }
 unsafe impl ::windows::core::Abi for WcmNamespaceEnumerationFlags {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WcmNamespaceEnumerationFlags {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1272,6 +1275,7 @@ impl ::core::default::Default for WcmRestrictionFacets {
 }
 unsafe impl ::windows::core::Abi for WcmRestrictionFacets {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WcmRestrictionFacets {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1301,6 +1305,7 @@ impl ::core::default::Default for WcmSettingType {
 }
 unsafe impl ::windows::core::Abi for WcmSettingType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WcmSettingType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1328,6 +1333,7 @@ impl ::core::default::Default for WcmTargetMode {
 }
 unsafe impl ::windows::core::Abi for WcmTargetMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WcmTargetMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1361,6 +1367,7 @@ impl ::core::default::Default for WcmUserStatus {
 }
 unsafe impl ::windows::core::Abi for WcmUserStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WcmUserStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

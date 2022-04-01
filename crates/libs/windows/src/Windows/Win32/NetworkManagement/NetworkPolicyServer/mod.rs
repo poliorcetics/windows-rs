@@ -42,6 +42,7 @@ impl ::core::default::Default for ACCOUNTINGPROPERTIES {
 }
 unsafe impl ::windows::core::Abi for ACCOUNTINGPROPERTIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ACCOUNTINGPROPERTIES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -71,6 +72,7 @@ impl ::core::default::Default for ATTRIBUTEFILTER {
 }
 unsafe impl ::windows::core::Abi for ATTRIBUTEFILTER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ATTRIBUTEFILTER {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -580,6 +582,7 @@ impl ::core::default::Default for ATTRIBUTEID {
 }
 unsafe impl ::windows::core::Abi for ATTRIBUTEID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ATTRIBUTEID {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -617,6 +620,7 @@ impl ::core::default::Default for ATTRIBUTEINFO {
 }
 unsafe impl ::windows::core::Abi for ATTRIBUTEINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ATTRIBUTEINFO {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -676,6 +680,7 @@ impl ::core::default::Default for ATTRIBUTEPROPERTIES {
 }
 unsafe impl ::windows::core::Abi for ATTRIBUTEPROPERTIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ATTRIBUTEPROPERTIES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -713,6 +718,7 @@ impl ::core::default::Default for ATTRIBUTERESTRICTIONS {
 }
 unsafe impl ::windows::core::Abi for ATTRIBUTERESTRICTIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ATTRIBUTERESTRICTIONS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -756,6 +762,7 @@ impl ::core::default::Default for ATTRIBUTESYNTAX {
 }
 unsafe impl ::windows::core::Abi for ATTRIBUTESYNTAX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ATTRIBUTESYNTAX {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -803,6 +810,7 @@ impl ::core::default::Default for AUTHENTICATION_TYPE {
 }
 unsafe impl ::windows::core::Abi for AUTHENTICATION_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AUTHENTICATION_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -850,6 +858,7 @@ impl ::core::default::Default for CLIENTPROPERTIES {
 }
 unsafe impl ::windows::core::Abi for CLIENTPROPERTIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLIENTPROPERTIES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -875,6 +884,7 @@ impl ::core::default::Default for CONDITIONPROPERTIES {
 }
 unsafe impl ::windows::core::Abi for CONDITIONPROPERTIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CONDITIONPROPERTIES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -902,6 +912,7 @@ impl ::core::default::Default for DICTIONARYPROPERTIES {
 }
 unsafe impl ::windows::core::Abi for DICTIONARYPROPERTIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DICTIONARYPROPERTIES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -943,6 +954,7 @@ impl ::core::default::Default for IASCOMMONPROPERTIES {
 }
 unsafe impl ::windows::core::Abi for IASCOMMONPROPERTIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for IASCOMMONPROPERTIES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -972,6 +984,7 @@ impl ::core::default::Default for IASCOMPONENTPROPERTIES {
 }
 unsafe impl ::windows::core::Abi for IASCOMPONENTPROPERTIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for IASCOMPONENTPROPERTIES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -999,6 +1012,7 @@ impl ::core::default::Default for IASDATASTORE {
 }
 unsafe impl ::windows::core::Abi for IASDATASTORE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for IASDATASTORE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1030,6 +1044,7 @@ impl ::core::default::Default for IASDOMAINTYPE {
 }
 unsafe impl ::windows::core::Abi for IASDOMAINTYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for IASDOMAINTYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1081,6 +1096,7 @@ impl ::core::default::Default for IASOSTYPE {
 }
 unsafe impl ::windows::core::Abi for IASOSTYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for IASOSTYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1124,6 +1140,7 @@ impl ::core::default::Default for IASPROPERTIES {
 }
 unsafe impl ::windows::core::Abi for IASPROPERTIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for IASPROPERTIES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1149,6 +1166,7 @@ impl ::core::default::Default for IDENTITY_TYPE {
 }
 unsafe impl ::windows::core::Abi for IDENTITY_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for IDENTITY_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1174,6 +1192,7 @@ impl ::core::default::Default for IPFILTERPROPERTIES {
 }
 unsafe impl ::windows::core::Abi for IPFILTERPROPERTIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for IPFILTERPROPERTIES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1184,6 +1203,12 @@ impl ::core::fmt::Debug for IPFILTERPROPERTIES {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ISdo(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ISdo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ISdo {
     #[doc = "*Required features: `\"Win32_NetworkManagement_NetworkPolicyServer\"`*"]
@@ -1269,12 +1294,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ISdo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ISdo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1316,6 +1335,12 @@ pub struct ISdo_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ISdoCollection(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ISdoCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ISdoCollection {
     #[doc = "*Required features: `\"Win32_NetworkManagement_NetworkPolicyServer\"`*"]
@@ -1408,12 +1433,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ISdoCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ISdoCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1462,6 +1481,12 @@ pub struct ISdoCollection_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ISdoDictionaryOld(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ISdoDictionaryOld {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ISdoDictionaryOld {
     #[doc = "*Required features: `\"Win32_NetworkManagement_NetworkPolicyServer\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
@@ -1542,12 +1567,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ISdoDictionaryOld {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ISdoDictionaryOld {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1596,6 +1615,12 @@ pub struct ISdoDictionaryOld_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ISdoMachine(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ISdoMachine {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ISdoMachine {
     #[doc = "*Required features: `\"Win32_NetworkManagement_NetworkPolicyServer\"`, `\"Win32_Foundation\"`*"]
@@ -1696,12 +1721,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ISdoMachine {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ISdoMachine {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1751,6 +1770,12 @@ pub struct ISdoMachine_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ISdoMachine2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ISdoMachine2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ISdoMachine2 {
     #[doc = "*Required features: `\"Win32_NetworkManagement_NetworkPolicyServer\"`, `\"Win32_Foundation\"`*"]
@@ -1899,12 +1924,6 @@ impl<'a> ::windows::core::IntoParam<'a, ISdoMachine> for &'a ISdoMachine2 {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ISdoMachine2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ISdoMachine2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1947,6 +1966,12 @@ pub struct ISdoMachine2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ISdoServiceControl(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ISdoServiceControl {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ISdoServiceControl {
     #[doc = "*Required features: `\"Win32_NetworkManagement_NetworkPolicyServer\"`*"]
@@ -2016,12 +2041,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ISdoServiceControl {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ISdoServiceControl {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2054,6 +2073,12 @@ pub struct ISdoServiceControl_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITemplateSdo(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITemplateSdo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITemplateSdo {
     #[doc = "*Required features: `\"Win32_NetworkManagement_NetworkPolicyServer\"`*"]
@@ -2178,12 +2203,6 @@ impl<'a> ::windows::core::IntoParam<'a, ISdo> for &'a ITemplateSdo {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITemplateSdo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITemplateSdo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2239,6 +2258,7 @@ impl ::core::default::Default for NAMESPROPERTIES {
 }
 unsafe impl ::windows::core::Abi for NAMESPROPERTIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NAMESPROPERTIES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2266,6 +2286,7 @@ impl ::core::default::Default for NAPPROPERTIES {
 }
 unsafe impl ::windows::core::Abi for NAPPROPERTIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NAPPROPERTIES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2299,6 +2320,7 @@ impl ::core::default::Default for NEW_LOG_FILE_FREQUENCY {
 }
 unsafe impl ::windows::core::Abi for NEW_LOG_FILE_FREQUENCY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NEW_LOG_FILE_FREQUENCY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2328,6 +2350,7 @@ impl ::core::default::Default for NTEVENTLOGPROPERTIES {
 }
 unsafe impl ::windows::core::Abi for NTEVENTLOGPROPERTIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NTEVENTLOGPROPERTIES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2353,6 +2376,7 @@ impl ::core::default::Default for NTSAMPROPERTIES {
 }
 unsafe impl ::windows::core::Abi for NTSAMPROPERTIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NTSAMPROPERTIES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2394,6 +2418,7 @@ impl ::core::default::Default for POLICYPROPERTIES {
 }
 unsafe impl ::windows::core::Abi for POLICYPROPERTIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for POLICYPROPERTIES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2433,6 +2458,7 @@ impl ::core::default::Default for PROFILEPROPERTIES {
 }
 unsafe impl ::windows::core::Abi for PROFILEPROPERTIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PROFILEPROPERTIES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2460,6 +2486,7 @@ impl ::core::default::Default for PROTOCOLPROPERTIES {
 }
 unsafe impl ::windows::core::Abi for PROTOCOLPROPERTIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PROTOCOLPROPERTIES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2491,6 +2518,7 @@ impl ::core::default::Default for RADIUSPROPERTIES {
 }
 unsafe impl ::windows::core::Abi for RADIUSPROPERTIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RADIUSPROPERTIES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2516,6 +2544,7 @@ impl ::core::default::Default for RADIUSPROXYPROPERTIES {
 }
 unsafe impl ::windows::core::Abi for RADIUSPROXYPROPERTIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RADIUSPROXYPROPERTIES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2541,6 +2570,7 @@ impl ::core::default::Default for RADIUSSERVERGROUPPROPERTIES {
 }
 unsafe impl ::windows::core::Abi for RADIUSSERVERGROUPPROPERTIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RADIUSSERVERGROUPPROPERTIES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2592,6 +2622,7 @@ impl ::core::default::Default for RADIUSSERVERPROPERTIES {
 }
 unsafe impl ::windows::core::Abi for RADIUSSERVERPROPERTIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RADIUSSERVERPROPERTIES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2621,6 +2652,7 @@ impl ::core::default::Default for RADIUS_ACTION {
 }
 unsafe impl ::windows::core::Abi for RADIUS_ACTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RADIUS_ACTION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2643,6 +2675,7 @@ impl ::core::clone::Clone for RADIUS_ATTRIBUTE {
 }
 unsafe impl ::windows::core::Abi for RADIUS_ATTRIBUTE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RADIUS_ATTRIBUTE {
     fn eq(&self, other: &Self) -> bool {
@@ -2669,6 +2702,7 @@ impl ::core::clone::Clone for RADIUS_ATTRIBUTE_0 {
 }
 unsafe impl ::windows::core::Abi for RADIUS_ATTRIBUTE_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RADIUS_ATTRIBUTE_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -2705,6 +2739,7 @@ impl ::core::fmt::Debug for RADIUS_ATTRIBUTE_ARRAY {
 }
 unsafe impl ::windows::core::Abi for RADIUS_ATTRIBUTE_ARRAY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RADIUS_ATTRIBUTE_ARRAY {
     fn eq(&self, other: &Self) -> bool {
@@ -2892,6 +2927,7 @@ impl ::core::default::Default for RADIUS_ATTRIBUTE_TYPE {
 }
 unsafe impl ::windows::core::Abi for RADIUS_ATTRIBUTE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RADIUS_ATTRIBUTE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2929,6 +2965,7 @@ impl ::core::default::Default for RADIUS_AUTHENTICATION_PROVIDER {
 }
 unsafe impl ::windows::core::Abi for RADIUS_AUTHENTICATION_PROVIDER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RADIUS_AUTHENTICATION_PROVIDER {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2968,6 +3005,7 @@ impl ::core::default::Default for RADIUS_CODE {
 }
 unsafe impl ::windows::core::Abi for RADIUS_CODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RADIUS_CODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3003,6 +3041,7 @@ impl ::core::default::Default for RADIUS_DATA_TYPE {
 }
 unsafe impl ::windows::core::Abi for RADIUS_DATA_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RADIUS_DATA_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3034,6 +3073,7 @@ impl ::core::fmt::Debug for RADIUS_EXTENSION_CONTROL_BLOCK {
 }
 unsafe impl ::windows::core::Abi for RADIUS_EXTENSION_CONTROL_BLOCK {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RADIUS_EXTENSION_CONTROL_BLOCK {
     fn eq(&self, other: &Self) -> bool {
@@ -3071,6 +3111,7 @@ impl ::core::default::Default for RADIUS_EXTENSION_POINT {
 }
 unsafe impl ::windows::core::Abi for RADIUS_EXTENSION_POINT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RADIUS_EXTENSION_POINT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3114,6 +3155,7 @@ impl ::core::default::Default for RADIUS_REJECT_REASON_CODE {
 }
 unsafe impl ::windows::core::Abi for RADIUS_REJECT_REASON_CODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RADIUS_REJECT_REASON_CODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3141,6 +3183,7 @@ impl ::core::fmt::Debug for RADIUS_VSA_FORMAT {
 }
 unsafe impl ::windows::core::Abi for RADIUS_VSA_FORMAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RADIUS_VSA_FORMAT {
     fn eq(&self, other: &Self) -> bool {
@@ -3172,6 +3215,7 @@ impl ::core::default::Default for REMEDIATIONSERVERGROUPPROPERTIES {
 }
 unsafe impl ::windows::core::Abi for REMEDIATIONSERVERGROUPPROPERTIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for REMEDIATIONSERVERGROUPPROPERTIES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3199,6 +3243,7 @@ impl ::core::default::Default for REMEDIATIONSERVERPROPERTIES {
 }
 unsafe impl ::windows::core::Abi for REMEDIATIONSERVERPROPERTIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for REMEDIATIONSERVERPROPERTIES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3224,6 +3269,7 @@ impl ::core::default::Default for REMEDIATIONSERVERSPROPERTIES {
 }
 unsafe impl ::windows::core::Abi for REMEDIATIONSERVERSPROPERTIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for REMEDIATIONSERVERSPROPERTIES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3255,6 +3301,7 @@ impl ::core::default::Default for SERVICE_TYPE {
 }
 unsafe impl ::windows::core::Abi for SERVICE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SERVICE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3280,6 +3327,7 @@ impl ::core::default::Default for SHAREDSECRETPROPERTIES {
 }
 unsafe impl ::windows::core::Abi for SHAREDSECRETPROPERTIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SHAREDSECRETPROPERTIES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3309,6 +3357,7 @@ impl ::core::default::Default for SHVTEMPLATEPROPERTIES {
 }
 unsafe impl ::windows::core::Abi for SHVTEMPLATEPROPERTIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SHVTEMPLATEPROPERTIES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3348,6 +3397,7 @@ impl ::core::default::Default for SHV_COMBINATION_TYPE {
 }
 unsafe impl ::windows::core::Abi for SHV_COMBINATION_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SHV_COMBINATION_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3396,6 +3446,7 @@ impl ::core::default::Default for TEMPLATESPROPERTIES {
 }
 unsafe impl ::windows::core::Abi for TEMPLATESPROPERTIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TEMPLATESPROPERTIES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3451,6 +3502,7 @@ impl ::core::default::Default for USERPROPERTIES {
 }
 unsafe impl ::windows::core::Abi for USERPROPERTIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for USERPROPERTIES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3476,6 +3528,7 @@ impl ::core::default::Default for VENDORPROPERTIES {
 }
 unsafe impl ::windows::core::Abi for VENDORPROPERTIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VENDORPROPERTIES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

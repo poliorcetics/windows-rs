@@ -2,6 +2,11 @@
 #[doc = "*Required features: `\"Devices_Pwm_Provider\"`*"]
 #[repr(transparent)]
 pub struct IPwmControllerProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPwmControllerProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPwmControllerProvider {
     #[doc = "*Required features: `\"Devices_Pwm_Provider\"`*"]
     pub fn PinCount(&self) -> ::windows::core::Result<i32> {
@@ -109,11 +114,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPwmControllerProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPwmControllerProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -127,7 +127,6 @@ impl ::core::fmt::Debug for IPwmControllerProvider {
 }
 unsafe impl ::windows::core::RuntimeType for IPwmControllerProvider {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{1300593b-e2e3-40a4-b7d9-48dff0377a52}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -154,6 +153,11 @@ pub struct IPwmControllerProvider_Vtbl {
 #[doc = "*Required features: `\"Devices_Pwm_Provider\"`*"]
 #[repr(transparent)]
 pub struct IPwmProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPwmProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPwmProvider {
     #[doc = "*Required features: `\"Devices_Pwm_Provider\"`, `\"Foundation_Collections\"`*"]
     #[cfg(feature = "Foundation_Collections")]
@@ -205,11 +209,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPwmProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPwmProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -223,7 +222,6 @@ impl ::core::fmt::Debug for IPwmProvider {
 }
 unsafe impl ::windows::core::RuntimeType for IPwmProvider {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{a3301228-52f1-47b0-9349-66ba43d25902}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

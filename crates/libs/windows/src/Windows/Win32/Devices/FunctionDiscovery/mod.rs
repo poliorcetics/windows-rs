@@ -151,6 +151,11 @@ pub const FunctionInstanceCollection: ::windows::core::GUID = ::windows::core::G
 #[doc = "*Required features: `\"Win32_Devices_FunctionDiscovery\"`*"]
 #[repr(transparent)]
 pub struct IFunctionDiscovery(::windows::core::IUnknown);
+impl ::core::clone::Clone for IFunctionDiscovery {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IFunctionDiscovery {
     #[doc = "*Required features: `\"Win32_Devices_FunctionDiscovery\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -204,11 +209,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IFunc
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IFunctionDiscovery {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IFunctionDiscovery {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -250,6 +250,11 @@ pub struct IFunctionDiscovery_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_FunctionDiscovery\"`*"]
 #[repr(transparent)]
 pub struct IFunctionDiscoveryNotification(::windows::core::IUnknown);
+impl ::core::clone::Clone for IFunctionDiscoveryNotification {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IFunctionDiscoveryNotification {
     #[doc = "*Required features: `\"Win32_Devices_FunctionDiscovery\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -285,11 +290,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IFunc
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IFunctionDiscoveryNotification {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IFunctionDiscoveryNotification {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -319,6 +319,11 @@ pub struct IFunctionDiscoveryNotification_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_FunctionDiscovery\"`*"]
 #[repr(transparent)]
 pub struct IFunctionDiscoveryProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IFunctionDiscoveryProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IFunctionDiscoveryProvider {
     #[doc = "*Required features: `\"Win32_Devices_FunctionDiscovery\"`*"]
     pub unsafe fn Initialize<'a, Param0: ::windows::core::IntoParam<'a, IFunctionDiscoveryProviderFactory>, Param1: ::windows::core::IntoParam<'a, IFunctionDiscoveryNotification>>(&self, pifunctiondiscoveryproviderfactory: Param0, pifunctiondiscoverynotification: Param1, lciduserdefault: u32) -> ::windows::core::Result<u32> {
@@ -382,11 +387,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IFunc
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IFunctionDiscoveryProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IFunctionDiscoveryProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -433,6 +433,11 @@ pub struct IFunctionDiscoveryProvider_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_FunctionDiscovery\"`*"]
 #[repr(transparent)]
 pub struct IFunctionDiscoveryProviderFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IFunctionDiscoveryProviderFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IFunctionDiscoveryProviderFactory {
     #[doc = "*Required features: `\"Win32_Devices_FunctionDiscovery\"`, `\"Win32_UI_Shell_PropertiesSystem\"`*"]
     #[cfg(feature = "Win32_UI_Shell_PropertiesSystem")]
@@ -472,11 +477,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IFunc
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IFunctionDiscoveryProviderFactory {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IFunctionDiscoveryProviderFactory {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -509,6 +509,11 @@ pub struct IFunctionDiscoveryProviderFactory_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_FunctionDiscovery\"`*"]
 #[repr(transparent)]
 pub struct IFunctionDiscoveryProviderQuery(::windows::core::IUnknown);
+impl ::core::clone::Clone for IFunctionDiscoveryProviderQuery {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IFunctionDiscoveryProviderQuery {
     #[doc = "*Required features: `\"Win32_Devices_FunctionDiscovery\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -551,11 +556,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IFunc
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IFunctionDiscoveryProviderQuery {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IFunctionDiscoveryProviderQuery {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -589,6 +589,11 @@ pub struct IFunctionDiscoveryProviderQuery_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_FunctionDiscovery\"`*"]
 #[repr(transparent)]
 pub struct IFunctionDiscoveryServiceProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IFunctionDiscoveryServiceProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IFunctionDiscoveryServiceProvider {
     #[doc = "*Required features: `\"Win32_Devices_FunctionDiscovery\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -615,11 +620,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IFunction
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IFunctionDiscoveryServiceProvider {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IFunctionDiscoveryServiceProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IFunctionDiscoveryServiceProvider {
@@ -650,6 +650,12 @@ pub struct IFunctionDiscoveryServiceProvider_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFunctionInstance(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFunctionInstance {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFunctionInstance {
     #[doc = "*Required features: `\"Win32_Devices_FunctionDiscovery\"`, `\"Win32_System_Com\"`*"]
@@ -727,12 +733,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IServiceProvi
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFunctionInstance {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFunctionInstance {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -767,6 +767,11 @@ pub struct IFunctionInstance_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_FunctionDiscovery\"`*"]
 #[repr(transparent)]
 pub struct IFunctionInstanceCollection(::windows::core::IUnknown);
+impl ::core::clone::Clone for IFunctionInstanceCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IFunctionInstanceCollection {
     #[doc = "*Required features: `\"Win32_Devices_FunctionDiscovery\"`*"]
     pub unsafe fn GetCount(&self) -> ::windows::core::Result<u32> {
@@ -824,11 +829,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IFunc
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IFunctionInstanceCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IFunctionInstanceCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -871,6 +871,11 @@ pub struct IFunctionInstanceCollection_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_FunctionDiscovery\"`*"]
 #[repr(transparent)]
 pub struct IFunctionInstanceCollectionQuery(::windows::core::IUnknown);
+impl ::core::clone::Clone for IFunctionInstanceCollectionQuery {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IFunctionInstanceCollectionQuery {
     #[doc = "*Required features: `\"Win32_Devices_FunctionDiscovery\"`*"]
     pub unsafe fn AddQueryConstraint<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param1: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, pszconstraintname: Param0, pszconstraintvalue: Param1) -> ::windows::core::Result<()> {
@@ -907,11 +912,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IFunc
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IFunctionInstanceCollectionQuery {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IFunctionInstanceCollectionQuery {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -941,6 +941,11 @@ pub struct IFunctionInstanceCollectionQuery_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_FunctionDiscovery\"`*"]
 #[repr(transparent)]
 pub struct IFunctionInstanceQuery(::windows::core::IUnknown);
+impl ::core::clone::Clone for IFunctionInstanceQuery {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IFunctionInstanceQuery {
     #[doc = "*Required features: `\"Win32_Devices_FunctionDiscovery\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -967,11 +972,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IFunction
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IFunctionInstanceQuery {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IFunctionInstanceQuery {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IFunctionInstanceQuery {
@@ -1001,6 +1001,11 @@ pub struct IFunctionInstanceQuery_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_FunctionDiscovery\"`*"]
 #[repr(transparent)]
 pub struct IPNPXAssociation(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPNPXAssociation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPNPXAssociation {
     #[doc = "*Required features: `\"Win32_Devices_FunctionDiscovery\"`*"]
     pub unsafe fn Associate<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, pszsubcategory: Param0) -> ::windows::core::Result<()> {
@@ -1035,11 +1040,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPNPX
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPNPXAssociation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPNPXAssociation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1066,6 +1066,11 @@ pub struct IPNPXAssociation_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_FunctionDiscovery\"`*"]
 #[repr(transparent)]
 pub struct IPNPXDeviceAssociation(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPNPXDeviceAssociation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPNPXDeviceAssociation {
     #[doc = "*Required features: `\"Win32_Devices_FunctionDiscovery\"`*"]
     pub unsafe fn Associate<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param1: ::windows::core::IntoParam<'a, IFunctionDiscoveryNotification>>(&self, pszsubcategory: Param0, pifunctiondiscoverynotification: Param1) -> ::windows::core::Result<()> {
@@ -1100,11 +1105,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPNPX
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPNPXDeviceAssociation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPNPXDeviceAssociation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1131,6 +1131,11 @@ pub struct IPNPXDeviceAssociation_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_FunctionDiscovery\"`*"]
 #[repr(transparent)]
 pub struct IPropertyStoreCollection(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPropertyStoreCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPropertyStoreCollection {
     #[doc = "*Required features: `\"Win32_Devices_FunctionDiscovery\"`*"]
     pub unsafe fn GetCount(&self) -> ::windows::core::Result<u32> {
@@ -1188,11 +1193,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IProp
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPropertyStoreCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPropertyStoreCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1235,6 +1235,11 @@ pub struct IPropertyStoreCollection_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_FunctionDiscovery\"`*"]
 #[repr(transparent)]
 pub struct IProviderProperties(::windows::core::IUnknown);
+impl ::core::clone::Clone for IProviderProperties {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IProviderProperties {
     #[doc = "*Required features: `\"Win32_Devices_FunctionDiscovery\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -1280,11 +1285,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IProv
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IProviderProperties {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IProviderProperties {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1324,6 +1324,11 @@ pub struct IProviderProperties_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_FunctionDiscovery\"`*"]
 #[repr(transparent)]
 pub struct IProviderPropertyConstraintCollection(::windows::core::IUnknown);
+impl ::core::clone::Clone for IProviderPropertyConstraintCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IProviderPropertyConstraintCollection {
     #[doc = "*Required features: `\"Win32_Devices_FunctionDiscovery\"`*"]
     pub unsafe fn GetCount(&self) -> ::windows::core::Result<u32> {
@@ -1374,11 +1379,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IProv
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IProviderPropertyConstraintCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IProviderPropertyConstraintCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1417,6 +1417,11 @@ pub struct IProviderPropertyConstraintCollection_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_FunctionDiscovery\"`*"]
 #[repr(transparent)]
 pub struct IProviderPublishing(::windows::core::IUnknown);
+impl ::core::clone::Clone for IProviderPublishing {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IProviderPublishing {
     #[doc = "*Required features: `\"Win32_Devices_FunctionDiscovery\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -1449,11 +1454,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IProv
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IProviderPublishing {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IProviderPublishing {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1482,6 +1482,11 @@ pub struct IProviderPublishing_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_FunctionDiscovery\"`*"]
 #[repr(transparent)]
 pub struct IProviderQueryConstraintCollection(::windows::core::IUnknown);
+impl ::core::clone::Clone for IProviderQueryConstraintCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IProviderQueryConstraintCollection {
     #[doc = "*Required features: `\"Win32_Devices_FunctionDiscovery\"`*"]
     pub unsafe fn GetCount(&self) -> ::windows::core::Result<u32> {
@@ -1528,11 +1533,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IProvider
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IProviderQueryConstraintCollection {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IProviderQueryConstraintCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IProviderQueryConstraintCollection {
@@ -2398,6 +2398,7 @@ impl ::core::default::Default for PropertyConstraint {
 }
 unsafe impl ::windows::core::Abi for PropertyConstraint {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PropertyConstraint {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2427,6 +2428,7 @@ impl ::core::default::Default for QueryCategoryType {
 }
 unsafe impl ::windows::core::Abi for QueryCategoryType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for QueryCategoryType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2456,6 +2458,7 @@ impl ::core::default::Default for QueryUpdateAction {
 }
 unsafe impl ::windows::core::Abi for QueryUpdateAction {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for QueryUpdateAction {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2503,6 +2506,7 @@ impl ::core::default::Default for SystemVisibilityFlags {
 }
 unsafe impl ::windows::core::Abi for SystemVisibilityFlags {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SystemVisibilityFlags {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

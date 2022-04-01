@@ -46,6 +46,7 @@ impl ::core::default::Default for HCN_NOTIFICATIONS {
 }
 unsafe impl ::windows::core::Abi for HCN_NOTIFICATIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HCN_NOTIFICATIONS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -75,6 +76,7 @@ impl ::core::default::Default for HCN_PORT_ACCESS {
 }
 unsafe impl ::windows::core::Abi for HCN_PORT_ACCESS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HCN_PORT_ACCESS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -104,6 +106,7 @@ impl ::core::default::Default for HCN_PORT_PROTOCOL {
 }
 unsafe impl ::windows::core::Abi for HCN_PORT_PROTOCOL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HCN_PORT_PROTOCOL {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -136,6 +139,7 @@ impl ::core::fmt::Debug for HCN_PORT_RANGE_ENTRY {
 }
 unsafe impl ::windows::core::Abi for HCN_PORT_RANGE_ENTRY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HCN_PORT_RANGE_ENTRY {
     fn eq(&self, other: &Self) -> bool {
@@ -167,6 +171,7 @@ impl ::core::fmt::Debug for HCN_PORT_RANGE_RESERVATION {
 }
 unsafe impl ::windows::core::Abi for HCN_PORT_RANGE_RESERVATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HCN_PORT_RANGE_RESERVATION {
     fn eq(&self, other: &Self) -> bool {

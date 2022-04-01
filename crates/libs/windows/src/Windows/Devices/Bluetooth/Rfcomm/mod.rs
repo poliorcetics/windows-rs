@@ -2,6 +2,11 @@
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IRfcommDeviceService(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRfcommDeviceService {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IRfcommDeviceService {
     type Vtable = IRfcommDeviceService_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xae81ff1f_c5a1_4c40_8c28_f3efd69062f3);
@@ -36,6 +41,11 @@ pub struct IRfcommDeviceService_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IRfcommDeviceService2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRfcommDeviceService2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IRfcommDeviceService2 {
     type Vtable = IRfcommDeviceService2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x536ced14_ebcd_49fe_bf9f_40efc689b20d);
@@ -49,6 +59,11 @@ pub struct IRfcommDeviceService2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IRfcommDeviceService3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRfcommDeviceService3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IRfcommDeviceService3 {
     type Vtable = IRfcommDeviceService3_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1c22ace6_dd44_4d23_866d_8f3486ee6490);
@@ -69,6 +84,11 @@ pub struct IRfcommDeviceService3_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IRfcommDeviceServiceStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRfcommDeviceServiceStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IRfcommDeviceServiceStatics {
     type Vtable = IRfcommDeviceServiceStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa4a149ef_626d_41ac_b253_87ac5c27e28a);
@@ -86,6 +106,11 @@ pub struct IRfcommDeviceServiceStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IRfcommDeviceServiceStatics2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRfcommDeviceServiceStatics2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IRfcommDeviceServiceStatics2 {
     type Vtable = IRfcommDeviceServiceStatics2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xaa8cb1c9_e78d_4be4_8076_0a3d87a0a05f);
@@ -102,6 +127,11 @@ pub struct IRfcommDeviceServiceStatics2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IRfcommDeviceServicesResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRfcommDeviceServicesResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IRfcommDeviceServicesResult {
     type Vtable = IRfcommDeviceServicesResult_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x3b48388c_7ccf_488e_9625_d259a5732d55);
@@ -119,6 +149,11 @@ pub struct IRfcommDeviceServicesResult_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IRfcommServiceId(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRfcommServiceId {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IRfcommServiceId {
     type Vtable = IRfcommServiceId_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x22629204_7e02_4017_8136_da1b6a1b9bbf);
@@ -134,6 +169,11 @@ pub struct IRfcommServiceId_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IRfcommServiceIdStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRfcommServiceIdStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IRfcommServiceIdStatics {
     type Vtable = IRfcommServiceIdStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x2a179eba_a975_46e3_b56b_08ffd783a5fe);
@@ -154,6 +194,11 @@ pub struct IRfcommServiceIdStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IRfcommServiceProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRfcommServiceProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IRfcommServiceProvider {
     type Vtable = IRfcommServiceProvider_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xeadbfdc4_b1f6_44ff_9f7c_e7a82ab86821);
@@ -176,6 +221,11 @@ pub struct IRfcommServiceProvider_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IRfcommServiceProvider2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRfcommServiceProvider2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IRfcommServiceProvider2 {
     type Vtable = IRfcommServiceProvider2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x736bdfc6_3c81_4d1e_baf2_ddbb81284512);
@@ -192,6 +242,11 @@ pub struct IRfcommServiceProvider2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IRfcommServiceProviderStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRfcommServiceProviderStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IRfcommServiceProviderStatics {
     type Vtable = IRfcommServiceProviderStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x98888303_69ca_413a_84f7_4344c7292997);
@@ -356,11 +411,6 @@ impl RfcommDeviceService {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for RfcommDeviceService {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for RfcommDeviceService {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -374,7 +424,6 @@ impl ::core::fmt::Debug for RfcommDeviceService {
 }
 unsafe impl ::windows::core::RuntimeType for RfcommDeviceService {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Bluetooth.Rfcomm.RfcommDeviceService;{ae81ff1f-c5a1-4c40-8c28-f3efd69062f3})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -476,11 +525,6 @@ impl RfcommDeviceServicesResult {
         }
     }
 }
-impl ::core::clone::Clone for RfcommDeviceServicesResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for RfcommDeviceServicesResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -494,7 +538,6 @@ impl ::core::fmt::Debug for RfcommDeviceServicesResult {
 }
 unsafe impl ::windows::core::RuntimeType for RfcommDeviceServicesResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Bluetooth.Rfcomm.RfcommDeviceServicesResult;{3b48388c-7ccf-488e-9625-d259a5732d55})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -638,11 +681,6 @@ impl RfcommServiceId {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for RfcommServiceId {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for RfcommServiceId {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -656,7 +694,6 @@ impl ::core::fmt::Debug for RfcommServiceId {
 }
 unsafe impl ::windows::core::RuntimeType for RfcommServiceId {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Bluetooth.Rfcomm.RfcommServiceId;{22629204-7e02-4017-8136-da1b6a1b9bbf})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -762,11 +799,6 @@ impl RfcommServiceProvider {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for RfcommServiceProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for RfcommServiceProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -780,7 +812,6 @@ impl ::core::fmt::Debug for RfcommServiceProvider {
 }
 unsafe impl ::windows::core::RuntimeType for RfcommServiceProvider {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Bluetooth.Rfcomm.RfcommServiceProvider;{eadbfdc4-b1f6-44ff-9f7c-e7a82ab86821})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

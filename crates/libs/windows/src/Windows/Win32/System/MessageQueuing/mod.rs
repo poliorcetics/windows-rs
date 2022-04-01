@@ -22,6 +22,7 @@ impl ::core::default::Default for FOREIGN_STATUS {
 }
 unsafe impl ::windows::core::Abi for FOREIGN_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FOREIGN_STATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -32,6 +33,12 @@ impl ::core::fmt::Debug for FOREIGN_STATUS {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IMSMQApplication(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IMSMQApplication {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IMSMQApplication {
     #[doc = "*Required features: `\"Win32_System_MessageQueuing\"`, `\"Win32_Foundation\"`*"]
@@ -90,12 +97,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IMSMQAppl
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IMSMQApplication {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IMSMQApplication {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -128,6 +129,12 @@ pub struct IMSMQApplication_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IMSMQApplication2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IMSMQApplication2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IMSMQApplication2 {
     #[doc = "*Required features: `\"Win32_System_MessageQueuing\"`, `\"Win32_Foundation\"`*"]
@@ -247,12 +254,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMSMQApplication> for &'a IMSMQApplicati
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IMSMQApplication2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IMSMQApplication2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -297,6 +298,12 @@ pub struct IMSMQApplication2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IMSMQApplication3(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IMSMQApplication3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IMSMQApplication3 {
     #[doc = "*Required features: `\"Win32_System_MessageQueuing\"`, `\"Win32_Foundation\"`*"]
@@ -492,12 +499,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMSMQApplication2> for &'a IMSMQApplicat
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IMSMQApplication3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IMSMQApplication3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -554,6 +555,12 @@ pub struct IMSMQApplication3_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IMSMQCollection(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IMSMQCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IMSMQCollection {
     #[doc = "*Required features: `\"Win32_System_MessageQueuing\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
@@ -622,12 +629,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IMSMQColl
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IMSMQCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IMSMQCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -662,6 +663,12 @@ pub struct IMSMQCollection_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IMSMQCoordinatedTransactionDispenser(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IMSMQCoordinatedTransactionDispenser {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IMSMQCoordinatedTransactionDispenser {
     #[doc = "*Required features: `\"Win32_System_MessageQueuing\"`, `\"Win32_System_Com\"`*"]
@@ -720,12 +727,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IMSMQCoor
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IMSMQCoordinatedTransactionDispenser {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IMSMQCoordinatedTransactionDispenser {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -758,6 +759,12 @@ pub struct IMSMQCoordinatedTransactionDispenser_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IMSMQCoordinatedTransactionDispenser2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IMSMQCoordinatedTransactionDispenser2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IMSMQCoordinatedTransactionDispenser2 {
     #[doc = "*Required features: `\"Win32_System_MessageQueuing\"`, `\"Win32_System_Com\"`*"]
@@ -822,12 +829,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IMSMQCoor
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IMSMQCoordinatedTransactionDispenser2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IMSMQCoordinatedTransactionDispenser2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -864,6 +865,12 @@ pub struct IMSMQCoordinatedTransactionDispenser2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IMSMQCoordinatedTransactionDispenser3(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IMSMQCoordinatedTransactionDispenser3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IMSMQCoordinatedTransactionDispenser3 {
     #[doc = "*Required features: `\"Win32_System_MessageQueuing\"`, `\"Win32_System_Com\"`*"]
@@ -928,12 +935,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IMSMQCoor
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IMSMQCoordinatedTransactionDispenser3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IMSMQCoordinatedTransactionDispenser3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -970,6 +971,12 @@ pub struct IMSMQCoordinatedTransactionDispenser3_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IMSMQDestination(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IMSMQDestination {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IMSMQDestination {
     #[doc = "*Required features: `\"Win32_System_MessageQueuing\"`*"]
@@ -1096,12 +1103,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IMSMQDest
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IMSMQDestination {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IMSMQDestination {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1178,6 +1179,12 @@ pub struct IMSMQDestination_Vtbl {
 #[repr(transparent)]
 pub struct IMSMQEvent(::windows::core::IUnknown);
 #[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IMSMQEvent {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "Win32_System_Com")]
 impl IMSMQEvent {}
 #[cfg(feature = "Win32_System_Com")]
 impl ::core::convert::From<IMSMQEvent> for ::windows::core::IUnknown {
@@ -1228,12 +1235,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IMSMQEven
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IMSMQEvent {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IMSMQEvent {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1262,6 +1263,12 @@ pub struct IMSMQEvent_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IMSMQEvent2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IMSMQEvent2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IMSMQEvent2 {
     #[doc = "*Required features: `\"Win32_System_MessageQueuing\"`, `\"Win32_System_Com\"`*"]
@@ -1344,12 +1351,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMSMQEvent> for &'a IMSMQEvent2 {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IMSMQEvent2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IMSMQEvent2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1382,6 +1383,12 @@ pub struct IMSMQEvent2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IMSMQEvent3(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IMSMQEvent3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IMSMQEvent3 {
     #[doc = "*Required features: `\"Win32_System_MessageQueuing\"`, `\"Win32_System_Com\"`*"]
@@ -1488,12 +1495,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMSMQEvent2> for &'a IMSMQEvent3 {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IMSMQEvent3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IMSMQEvent3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1522,6 +1523,12 @@ pub struct IMSMQEvent3_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IMSMQManagement(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IMSMQManagement {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IMSMQManagement {
     #[doc = "*Required features: `\"Win32_System_MessageQueuing\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
@@ -1622,12 +1629,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IMSMQMana
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IMSMQManagement {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IMSMQManagement {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1677,6 +1678,12 @@ pub struct IMSMQManagement_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IMSMQMessage(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IMSMQMessage {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IMSMQMessage {
     #[doc = "*Required features: `\"Win32_System_MessageQueuing\"`*"]
@@ -1972,12 +1979,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IMSMQMess
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IMSMQMessage {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IMSMQMessage {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2112,6 +2113,12 @@ pub struct IMSMQMessage_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IMSMQMessage2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IMSMQMessage2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IMSMQMessage2 {
     #[doc = "*Required features: `\"Win32_System_MessageQueuing\"`*"]
@@ -2545,12 +2552,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IMSMQMess
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IMSMQMessage2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IMSMQMessage2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2765,6 +2766,12 @@ pub struct IMSMQMessage2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IMSMQMessage3(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IMSMQMessage3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IMSMQMessage3 {
     #[doc = "*Required features: `\"Win32_System_MessageQueuing\"`*"]
@@ -3284,12 +3291,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IMSMQMess
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IMSMQMessage3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IMSMQMessage3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3556,6 +3557,12 @@ pub struct IMSMQMessage3_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IMSMQMessage4(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IMSMQMessage4 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IMSMQMessage4 {
     #[doc = "*Required features: `\"Win32_System_MessageQueuing\"`*"]
@@ -4075,12 +4082,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IMSMQMess
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IMSMQMessage4 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IMSMQMessage4 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4348,6 +4349,12 @@ pub struct IMSMQMessage4_Vtbl {
 #[repr(transparent)]
 pub struct IMSMQOutgoingQueueManagement(::windows::core::IUnknown);
 #[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IMSMQOutgoingQueueManagement {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "Win32_System_Com")]
 impl IMSMQOutgoingQueueManagement {
     #[doc = "*Required features: `\"Win32_System_MessageQueuing\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com", feature = "Win32_System_Ole"))]
@@ -4500,12 +4507,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMSMQManagement> for &'a IMSMQOutgoingQu
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IMSMQOutgoingQueueManagement {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IMSMQOutgoingQueueManagement {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4546,6 +4547,12 @@ pub struct IMSMQOutgoingQueueManagement_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IMSMQPrivateDestination(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IMSMQPrivateDestination {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IMSMQPrivateDestination {
     #[doc = "*Required features: `\"Win32_System_MessageQueuing\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
@@ -4609,12 +4616,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IMSMQPriv
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IMSMQPrivateDestination {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IMSMQPrivateDestination {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4651,6 +4652,12 @@ pub struct IMSMQPrivateDestination_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IMSMQPrivateEvent(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IMSMQPrivateEvent {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IMSMQPrivateEvent {
     #[doc = "*Required features: `\"Win32_System_MessageQueuing\"`*"]
@@ -4718,12 +4725,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IMSMQPriv
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IMSMQPrivateEvent {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IMSMQPrivateEvent {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4761,6 +4762,12 @@ pub struct IMSMQPrivateEvent_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IMSMQQuery(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IMSMQQuery {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IMSMQQuery {
     #[doc = "*Required features: `\"Win32_System_MessageQueuing\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
@@ -4819,12 +4826,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IMSMQQuer
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IMSMQQuery {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IMSMQQuery {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4857,6 +4858,12 @@ pub struct IMSMQQuery_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IMSMQQuery2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IMSMQQuery2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IMSMQQuery2 {
     #[doc = "*Required features: `\"Win32_System_MessageQueuing\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
@@ -4921,12 +4928,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IMSMQQuer
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IMSMQQuery2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IMSMQQuery2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4963,6 +4964,12 @@ pub struct IMSMQQuery2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IMSMQQuery3(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IMSMQQuery3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IMSMQQuery3 {
     #[doc = "*Required features: `\"Win32_System_MessageQueuing\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
@@ -5048,12 +5055,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IMSMQQuer
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IMSMQQuery3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IMSMQQuery3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5094,6 +5095,12 @@ pub struct IMSMQQuery3_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IMSMQQuery4(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IMSMQQuery4 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IMSMQQuery4 {
     #[doc = "*Required features: `\"Win32_System_MessageQueuing\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
@@ -5179,12 +5186,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IMSMQQuer
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IMSMQQuery4 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IMSMQQuery4 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5225,6 +5226,12 @@ pub struct IMSMQQuery4_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IMSMQQueue(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IMSMQQueue {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IMSMQQueue {
     #[doc = "*Required features: `\"Win32_System_MessageQueuing\"`*"]
@@ -5346,12 +5353,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IMSMQQueu
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IMSMQQueue {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IMSMQQueue {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5414,6 +5415,12 @@ pub struct IMSMQQueue_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IMSMQQueue2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IMSMQQueue2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IMSMQQueue2 {
     #[doc = "*Required features: `\"Win32_System_MessageQueuing\"`*"]
@@ -5571,12 +5578,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IMSMQQueu
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IMSMQQueue2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IMSMQQueue2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5663,6 +5664,12 @@ pub struct IMSMQQueue2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IMSMQQueue3(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IMSMQQueue3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IMSMQQueue3 {
     #[doc = "*Required features: `\"Win32_System_MessageQueuing\"`*"]
@@ -5895,12 +5902,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IMSMQQueu
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IMSMQQueue3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IMSMQQueue3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6033,6 +6034,12 @@ pub struct IMSMQQueue3_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IMSMQQueue4(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IMSMQQueue4 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IMSMQQueue4 {
     #[doc = "*Required features: `\"Win32_System_MessageQueuing\"`*"]
@@ -6271,12 +6278,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IMSMQQueu
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IMSMQQueue4 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IMSMQQueue4 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6413,6 +6414,12 @@ pub struct IMSMQQueue4_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IMSMQQueueInfo(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IMSMQQueueInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IMSMQQueueInfo {
     #[doc = "*Required features: `\"Win32_System_MessageQueuing\"`, `\"Win32_Foundation\"`*"]
@@ -6614,12 +6621,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IMSMQQueu
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IMSMQQueueInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IMSMQQueueInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6717,6 +6718,12 @@ pub struct IMSMQQueueInfo_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IMSMQQueueInfo2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IMSMQQueueInfo2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IMSMQQueueInfo2 {
     #[doc = "*Required features: `\"Win32_System_MessageQueuing\"`, `\"Win32_Foundation\"`*"]
@@ -6941,12 +6948,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IMSMQQueu
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IMSMQQueueInfo2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IMSMQQueueInfo2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7060,6 +7061,12 @@ pub struct IMSMQQueueInfo2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IMSMQQueueInfo3(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IMSMQQueueInfo3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IMSMQQueueInfo3 {
     #[doc = "*Required features: `\"Win32_System_MessageQueuing\"`, `\"Win32_Foundation\"`*"]
@@ -7311,12 +7318,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IMSMQQueu
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IMSMQQueueInfo3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IMSMQQueueInfo3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7444,6 +7445,12 @@ pub struct IMSMQQueueInfo3_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IMSMQQueueInfo4(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IMSMQQueueInfo4 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IMSMQQueueInfo4 {
     #[doc = "*Required features: `\"Win32_System_MessageQueuing\"`, `\"Win32_Foundation\"`*"]
@@ -7695,12 +7702,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IMSMQQueu
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IMSMQQueueInfo4 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IMSMQQueueInfo4 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7829,6 +7830,12 @@ pub struct IMSMQQueueInfo4_Vtbl {
 #[repr(transparent)]
 pub struct IMSMQQueueInfos(::windows::core::IUnknown);
 #[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IMSMQQueueInfos {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "Win32_System_Com")]
 impl IMSMQQueueInfos {
     #[doc = "*Required features: `\"Win32_System_MessageQueuing\"`*"]
     pub unsafe fn Reset(&self) -> ::windows::core::Result<()> {
@@ -7890,12 +7897,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IMSMQQueu
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IMSMQQueueInfos {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IMSMQQueueInfos {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7929,6 +7930,12 @@ pub struct IMSMQQueueInfos_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IMSMQQueueInfos2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IMSMQQueueInfos2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IMSMQQueueInfos2 {
     #[doc = "*Required features: `\"Win32_System_MessageQueuing\"`*"]
@@ -7997,12 +8004,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IMSMQQueu
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IMSMQQueueInfos2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IMSMQQueueInfos2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8040,6 +8041,12 @@ pub struct IMSMQQueueInfos2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IMSMQQueueInfos3(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IMSMQQueueInfos3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IMSMQQueueInfos3 {
     #[doc = "*Required features: `\"Win32_System_MessageQueuing\"`*"]
@@ -8108,12 +8115,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IMSMQQueu
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IMSMQQueueInfos3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IMSMQQueueInfos3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8151,6 +8152,12 @@ pub struct IMSMQQueueInfos3_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IMSMQQueueInfos4(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IMSMQQueueInfos4 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IMSMQQueueInfos4 {
     #[doc = "*Required features: `\"Win32_System_MessageQueuing\"`*"]
@@ -8219,12 +8226,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IMSMQQueu
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IMSMQQueueInfos4 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IMSMQQueueInfos4 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8262,6 +8263,12 @@ pub struct IMSMQQueueInfos4_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IMSMQQueueManagement(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IMSMQQueueManagement {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IMSMQQueueManagement {
     #[doc = "*Required features: `\"Win32_System_MessageQueuing\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
@@ -8403,12 +8410,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMSMQManagement> for &'a IMSMQQueueManag
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IMSMQQueueManagement {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IMSMQQueueManagement {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8446,6 +8447,12 @@ pub struct IMSMQQueueManagement_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IMSMQTransaction(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IMSMQTransaction {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IMSMQTransaction {
     #[doc = "*Required features: `\"Win32_System_MessageQueuing\"`*"]
@@ -8513,12 +8520,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IMSMQTran
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IMSMQTransaction {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IMSMQTransaction {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8556,6 +8557,12 @@ pub struct IMSMQTransaction_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IMSMQTransaction2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IMSMQTransaction2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IMSMQTransaction2 {
     #[doc = "*Required features: `\"Win32_System_MessageQueuing\"`*"]
@@ -8658,12 +8665,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMSMQTransaction> for &'a IMSMQTransacti
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IMSMQTransaction2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IMSMQTransaction2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8700,6 +8701,12 @@ pub struct IMSMQTransaction2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IMSMQTransaction3(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IMSMQTransaction3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IMSMQTransaction3 {
     #[doc = "*Required features: `\"Win32_System_MessageQueuing\"`*"]
@@ -8832,12 +8839,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMSMQTransaction2> for &'a IMSMQTransact
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IMSMQTransaction3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IMSMQTransaction3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8870,6 +8871,12 @@ pub struct IMSMQTransaction3_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IMSMQTransactionDispenser(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IMSMQTransactionDispenser {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IMSMQTransactionDispenser {
     #[doc = "*Required features: `\"Win32_System_MessageQueuing\"`, `\"Win32_System_Com\"`*"]
@@ -8928,12 +8935,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IMSMQTran
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IMSMQTransactionDispenser {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IMSMQTransactionDispenser {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8966,6 +8967,12 @@ pub struct IMSMQTransactionDispenser_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IMSMQTransactionDispenser2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IMSMQTransactionDispenser2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IMSMQTransactionDispenser2 {
     #[doc = "*Required features: `\"Win32_System_MessageQueuing\"`, `\"Win32_System_Com\"`*"]
@@ -9030,12 +9037,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IMSMQTran
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IMSMQTransactionDispenser2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IMSMQTransactionDispenser2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9072,6 +9073,12 @@ pub struct IMSMQTransactionDispenser2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IMSMQTransactionDispenser3(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IMSMQTransactionDispenser3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IMSMQTransactionDispenser3 {
     #[doc = "*Required features: `\"Win32_System_MessageQueuing\"`, `\"Win32_System_Com\"`*"]
@@ -9133,12 +9140,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for IMSMQTransact
 impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IMSMQTransactionDispenser3 {
     fn into_param(self) -> ::windows::core::Param<'a, super::Com::IDispatch> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IMSMQTransactionDispenser3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 #[cfg(feature = "Win32_System_Com")]
@@ -9257,6 +9258,7 @@ impl ::core::default::Default for MQACCESS {
 }
 unsafe impl ::windows::core::Abi for MQACCESS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MQACCESS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9284,6 +9286,7 @@ impl ::core::default::Default for MQAUTHENTICATE {
 }
 unsafe impl ::windows::core::Abi for MQAUTHENTICATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MQAUTHENTICATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9333,6 +9336,7 @@ impl ::core::default::Default for MQCALG {
 }
 unsafe impl ::windows::core::Abi for MQCALG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MQCALG {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9360,6 +9364,7 @@ impl ::core::default::Default for MQCERT_REGISTER {
 }
 unsafe impl ::windows::core::Abi for MQCERT_REGISTER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MQCERT_REGISTER {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9415,6 +9420,7 @@ impl ::core::default::Default for MQDEFAULT {
 }
 unsafe impl ::windows::core::Abi for MQDEFAULT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MQDEFAULT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9704,6 +9710,7 @@ impl ::core::default::Default for MQERROR {
 }
 unsafe impl ::windows::core::Abi for MQERROR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MQERROR {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9731,6 +9738,7 @@ impl ::core::default::Default for MQJOURNAL {
 }
 unsafe impl ::windows::core::Abi for MQJOURNAL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MQJOURNAL {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9758,6 +9766,7 @@ impl ::core::default::Default for MQMAX {
 }
 unsafe impl ::windows::core::Abi for MQMAX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MQMAX {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9799,6 +9808,7 @@ impl ::core::default::Default for MQMSGACKNOWLEDGEMENT {
 }
 unsafe impl ::windows::core::Abi for MQMSGACKNOWLEDGEMENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MQMSGACKNOWLEDGEMENT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9836,6 +9846,7 @@ impl ::core::default::Default for MQMSGAUTHENTICATION {
 }
 unsafe impl ::windows::core::Abi for MQMSGAUTHENTICATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MQMSGAUTHENTICATION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9873,6 +9884,7 @@ impl ::core::default::Default for MQMSGAUTHLEVEL {
 }
 unsafe impl ::windows::core::Abi for MQMSGAUTHLEVEL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MQMSGAUTHLEVEL {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9938,6 +9950,7 @@ impl ::core::default::Default for MQMSGCLASS {
 }
 unsafe impl ::windows::core::Abi for MQMSGCLASS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MQMSGCLASS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9967,6 +9980,7 @@ impl ::core::default::Default for MQMSGCURSOR {
 }
 unsafe impl ::windows::core::Abi for MQMSGCURSOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MQMSGCURSOR {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9994,6 +10008,7 @@ impl ::core::default::Default for MQMSGDELIVERY {
 }
 unsafe impl ::windows::core::Abi for MQMSGDELIVERY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MQMSGDELIVERY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10023,6 +10038,7 @@ impl ::core::default::Default for MQMSGIDSIZE {
 }
 unsafe impl ::windows::core::Abi for MQMSGIDSIZE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MQMSGIDSIZE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10052,6 +10068,7 @@ impl ::core::default::Default for MQMSGJOURNAL {
 }
 unsafe impl ::windows::core::Abi for MQMSGJOURNAL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MQMSGJOURNAL {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10077,6 +10094,7 @@ impl ::core::default::Default for MQMSGMAX {
 }
 unsafe impl ::windows::core::Abi for MQMSGMAX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MQMSGMAX {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10106,6 +10124,7 @@ impl ::core::default::Default for MQMSGPRIVLEVEL {
 }
 unsafe impl ::windows::core::Abi for MQMSGPRIVLEVEL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MQMSGPRIVLEVEL {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10133,6 +10152,7 @@ impl ::core::default::Default for MQMSGSENDERIDTYPE {
 }
 unsafe impl ::windows::core::Abi for MQMSGSENDERIDTYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MQMSGSENDERIDTYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10160,6 +10180,7 @@ impl ::core::default::Default for MQMSGTRACE {
 }
 unsafe impl ::windows::core::Abi for MQMSGTRACE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MQMSGTRACE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10199,6 +10220,7 @@ impl ::core::default::Default for MQPRIORITY {
 }
 unsafe impl ::windows::core::Abi for MQPRIORITY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MQPRIORITY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10228,6 +10250,7 @@ impl ::core::default::Default for MQPRIVLEVEL {
 }
 unsafe impl ::windows::core::Abi for MQPRIVLEVEL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MQPRIVLEVEL {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10275,6 +10298,7 @@ impl ::core::default::Default for MQSHARE {
 }
 unsafe impl ::windows::core::Abi for MQSHARE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MQSHARE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10306,6 +10330,7 @@ impl ::core::default::Default for MQTRANSACTION {
 }
 unsafe impl ::windows::core::Abi for MQTRANSACTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MQTRANSACTION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10333,6 +10358,7 @@ impl ::core::default::Default for MQTRANSACTIONAL {
 }
 unsafe impl ::windows::core::Abi for MQTRANSACTIONAL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MQTRANSACTIONAL {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10374,6 +10400,7 @@ impl ::core::default::Default for MQWARNING {
 }
 unsafe impl ::windows::core::Abi for MQWARNING {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MQWARNING {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10776,6 +10803,7 @@ impl ::core::default::Default for QUEUE_STATE {
 }
 unsafe impl ::windows::core::Abi for QUEUE_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for QUEUE_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10809,6 +10837,7 @@ impl ::core::default::Default for QUEUE_TYPE {
 }
 unsafe impl ::windows::core::Abi for QUEUE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for QUEUE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10846,6 +10875,7 @@ impl ::core::default::Default for RELOPS {
 }
 unsafe impl ::windows::core::Abi for RELOPS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RELOPS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10875,6 +10905,7 @@ impl ::core::default::Default for XACT_STATUS {
 }
 unsafe impl ::windows::core::Abi for XACT_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for XACT_STATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10885,6 +10916,12 @@ impl ::core::fmt::Debug for XACT_STATUS {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct _DMSMQEventEvents(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for _DMSMQEventEvents {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl _DMSMQEventEvents {}
 #[cfg(feature = "Win32_System_Com")]
@@ -10933,12 +10970,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for _DMSMQEventEv
 impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a _DMSMQEventEvents {
     fn into_param(self) -> ::windows::core::Param<'a, super::Com::IDispatch> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for _DMSMQEventEvents {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 #[cfg(feature = "Win32_System_Com")]

@@ -25,6 +25,7 @@ impl ::core::fmt::Debug for HPSS {
 }
 unsafe impl ::windows::core::Abi for HPSS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[repr(transparent)]
 #[derive(:: core :: cmp :: PartialEq, :: core :: cmp :: Eq)]
@@ -52,6 +53,7 @@ impl ::core::fmt::Debug for HPSSWALK {
 }
 unsafe impl ::windows::core::Abi for HPSSWALK {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[repr(C)]
 #[doc = "*Required features: `\"Win32_System_Diagnostics_ProcessSnapshotting\"`*"]
@@ -73,6 +75,7 @@ impl ::core::fmt::Debug for PSS_ALLOCATOR {
 }
 unsafe impl ::windows::core::Abi for PSS_ALLOCATOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PSS_ALLOCATOR {
     fn eq(&self, other: &Self) -> bool {
@@ -103,6 +106,7 @@ impl ::core::fmt::Debug for PSS_AUXILIARY_PAGES_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for PSS_AUXILIARY_PAGES_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PSS_AUXILIARY_PAGES_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -142,6 +146,7 @@ impl ::core::fmt::Debug for PSS_AUXILIARY_PAGE_ENTRY {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Memory"))]
 unsafe impl ::windows::core::Abi for PSS_AUXILIARY_PAGE_ENTRY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Memory"))]
 impl ::core::cmp::PartialEq for PSS_AUXILIARY_PAGE_ENTRY {
@@ -218,6 +223,7 @@ impl ::core::default::Default for PSS_CAPTURE_FLAGS {
 }
 unsafe impl ::windows::core::Abi for PSS_CAPTURE_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PSS_CAPTURE_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -273,6 +279,7 @@ impl ::core::default::Default for PSS_DUPLICATE_FLAGS {
 }
 unsafe impl ::windows::core::Abi for PSS_DUPLICATE_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PSS_DUPLICATE_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -339,6 +346,7 @@ impl ::core::clone::Clone for PSS_HANDLE_ENTRY {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PSS_HANDLE_ENTRY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for PSS_HANDLE_ENTRY {
@@ -376,6 +384,7 @@ impl ::core::clone::Clone for PSS_HANDLE_ENTRY_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PSS_HANDLE_ENTRY_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for PSS_HANDLE_ENTRY_0 {
@@ -415,6 +424,7 @@ impl ::core::fmt::Debug for PSS_HANDLE_ENTRY_0_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PSS_HANDLE_ENTRY_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for PSS_HANDLE_ENTRY_0_0 {
@@ -456,6 +466,7 @@ impl ::core::fmt::Debug for PSS_HANDLE_ENTRY_0_1 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PSS_HANDLE_ENTRY_0_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for PSS_HANDLE_ENTRY_0_1 {
@@ -500,6 +511,7 @@ impl ::core::fmt::Debug for PSS_HANDLE_ENTRY_0_2 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PSS_HANDLE_ENTRY_0_2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for PSS_HANDLE_ENTRY_0_2 {
@@ -540,6 +552,7 @@ impl ::core::fmt::Debug for PSS_HANDLE_ENTRY_0_3 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PSS_HANDLE_ENTRY_0_3 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for PSS_HANDLE_ENTRY_0_3 {
@@ -579,6 +592,7 @@ impl ::core::fmt::Debug for PSS_HANDLE_ENTRY_0_4 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PSS_HANDLE_ENTRY_0_4 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for PSS_HANDLE_ENTRY_0_4 {
@@ -624,6 +638,7 @@ impl ::core::fmt::Debug for PSS_HANDLE_ENTRY_0_5 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PSS_HANDLE_ENTRY_0_5 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for PSS_HANDLE_ENTRY_0_5 {
@@ -666,6 +681,7 @@ impl ::core::default::Default for PSS_HANDLE_FLAGS {
 }
 unsafe impl ::windows::core::Abi for PSS_HANDLE_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PSS_HANDLE_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -718,6 +734,7 @@ impl ::core::fmt::Debug for PSS_HANDLE_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for PSS_HANDLE_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PSS_HANDLE_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -754,6 +771,7 @@ impl ::core::fmt::Debug for PSS_HANDLE_TRACE_INFORMATION {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PSS_HANDLE_TRACE_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for PSS_HANDLE_TRACE_INFORMATION {
@@ -800,6 +818,7 @@ impl ::core::default::Default for PSS_OBJECT_TYPE {
 }
 unsafe impl ::windows::core::Abi for PSS_OBJECT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PSS_OBJECT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -848,6 +867,7 @@ impl ::core::fmt::Debug for PSS_PERFORMANCE_COUNTERS {
 }
 unsafe impl ::windows::core::Abi for PSS_PERFORMANCE_COUNTERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PSS_PERFORMANCE_COUNTERS {
     fn eq(&self, other: &Self) -> bool {
@@ -891,6 +911,7 @@ impl ::core::default::Default for PSS_PROCESS_FLAGS {
 }
 unsafe impl ::windows::core::Abi for PSS_PROCESS_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PSS_PROCESS_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1000,6 +1021,7 @@ impl ::core::fmt::Debug for PSS_PROCESS_INFORMATION {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PSS_PROCESS_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for PSS_PROCESS_INFORMATION {
@@ -1048,6 +1070,7 @@ impl ::core::default::Default for PSS_QUERY_INFORMATION_CLASS {
 }
 unsafe impl ::windows::core::Abi for PSS_QUERY_INFORMATION_CLASS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PSS_QUERY_INFORMATION_CLASS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1115,6 +1138,7 @@ impl ::core::fmt::Debug for PSS_THREAD_ENTRY {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Diagnostics_Debug", feature = "Win32_System_Kernel"))]
 unsafe impl ::windows::core::Abi for PSS_THREAD_ENTRY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Diagnostics_Debug", feature = "Win32_System_Kernel"))]
 impl ::core::cmp::PartialEq for PSS_THREAD_ENTRY {
@@ -1151,6 +1175,7 @@ impl ::core::default::Default for PSS_THREAD_FLAGS {
 }
 unsafe impl ::windows::core::Abi for PSS_THREAD_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PSS_THREAD_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1204,6 +1229,7 @@ impl ::core::fmt::Debug for PSS_THREAD_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for PSS_THREAD_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PSS_THREAD_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -1239,6 +1265,7 @@ impl ::core::fmt::Debug for PSS_VA_CLONE_INFORMATION {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PSS_VA_CLONE_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for PSS_VA_CLONE_INFORMATION {
@@ -1298,6 +1325,7 @@ impl ::core::fmt::Debug for PSS_VA_SPACE_ENTRY {
 }
 unsafe impl ::windows::core::Abi for PSS_VA_SPACE_ENTRY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PSS_VA_SPACE_ENTRY {
     fn eq(&self, other: &Self) -> bool {
@@ -1328,6 +1356,7 @@ impl ::core::fmt::Debug for PSS_VA_SPACE_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for PSS_VA_SPACE_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PSS_VA_SPACE_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -1365,6 +1394,7 @@ impl ::core::default::Default for PSS_WALK_INFORMATION_CLASS {
 }
 unsafe impl ::windows::core::Abi for PSS_WALK_INFORMATION_CLASS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PSS_WALK_INFORMATION_CLASS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

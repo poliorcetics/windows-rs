@@ -73,6 +73,7 @@ impl ::core::fmt::Debug for ALLOCATOR_PROPERTIES_EX {
 }
 unsafe impl ::windows::core::Abi for ALLOCATOR_PROPERTIES_EX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ALLOCATOR_PROPERTIES_EX {
     fn eq(&self, other: &Self) -> bool {
@@ -116,6 +117,7 @@ impl ::core::default::Default for AUDIOPOSTURE_ORIENTATION {
 }
 unsafe impl ::windows::core::Abi for AUDIOPOSTURE_ORIENTATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AUDIOPOSTURE_ORIENTATION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -146,6 +148,7 @@ impl ::core::fmt::Debug for AUDIORESOURCEMANAGEMENT_RESOURCEGROUP {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for AUDIORESOURCEMANAGEMENT_RESOURCEGROUP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for AUDIORESOURCEMANAGEMENT_RESOURCEGROUP {
@@ -182,6 +185,7 @@ impl ::core::default::Default for AUDIO_CURVE_TYPE {
 }
 unsafe impl ::windows::core::Abi for AUDIO_CURVE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AUDIO_CURVE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -258,6 +262,7 @@ impl ::core::default::Default for CAPTURE_MEMORY_ALLOCATION_FLAGS {
 }
 unsafe impl ::windows::core::Abi for CAPTURE_MEMORY_ALLOCATION_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CAPTURE_MEMORY_ALLOCATION_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -283,6 +288,7 @@ impl ::core::fmt::Debug for CC_BYTE_PAIR {
 }
 unsafe impl ::windows::core::Abi for CC_BYTE_PAIR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CC_BYTE_PAIR {
     fn eq(&self, other: &Self) -> bool {
@@ -316,6 +322,7 @@ impl ::core::fmt::Debug for CC_HW_FIELD {
 }
 unsafe impl ::windows::core::Abi for CC_HW_FIELD {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CC_HW_FIELD {
     fn eq(&self, other: &Self) -> bool {
@@ -360,6 +367,7 @@ impl ::core::default::Default for CONSTRICTOR_OPTION {
 }
 unsafe impl ::windows::core::Abi for CONSTRICTOR_OPTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CONSTRICTOR_OPTION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -430,6 +438,7 @@ impl ::core::fmt::Debug for DEVCAPS {
 }
 unsafe impl ::windows::core::Abi for DEVCAPS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DEVCAPS {
     fn eq(&self, other: &Self) -> bool {
@@ -466,6 +475,7 @@ impl ::core::clone::Clone for DS3DVECTOR {
 }
 unsafe impl ::windows::core::Abi for DS3DVECTOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DS3DVECTOR {
     fn eq(&self, other: &Self) -> bool {
@@ -492,6 +502,7 @@ impl ::core::clone::Clone for DS3DVECTOR_0 {
 }
 unsafe impl ::windows::core::Abi for DS3DVECTOR_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DS3DVECTOR_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -518,6 +529,7 @@ impl ::core::clone::Clone for DS3DVECTOR_1 {
 }
 unsafe impl ::windows::core::Abi for DS3DVECTOR_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DS3DVECTOR_1 {
     fn eq(&self, other: &Self) -> bool {
@@ -544,6 +556,7 @@ impl ::core::clone::Clone for DS3DVECTOR_2 {
 }
 unsafe impl ::windows::core::Abi for DS3DVECTOR_2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DS3DVECTOR_2 {
     fn eq(&self, other: &Self) -> bool {
@@ -600,6 +613,7 @@ impl ::core::default::Default for EPcxConnectionType {
 }
 unsafe impl ::windows::core::Abi for EPcxConnectionType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EPcxConnectionType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -633,6 +647,7 @@ impl ::core::default::Default for EPcxGenLocation {
 }
 unsafe impl ::windows::core::Abi for EPcxGenLocation {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EPcxGenLocation {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -688,6 +703,7 @@ impl ::core::default::Default for EPcxGeoLocation {
 }
 unsafe impl ::windows::core::Abi for EPcxGeoLocation {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EPcxGeoLocation {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -719,6 +735,7 @@ impl ::core::default::Default for EPxcPortConnection {
 }
 unsafe impl ::windows::core::Abi for EPxcPortConnection {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EPxcPortConnection {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -754,6 +771,7 @@ impl ::core::default::Default for FRAMING_CACHE_OPS {
 }
 unsafe impl ::windows::core::Abi for FRAMING_CACHE_OPS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FRAMING_CACHE_OPS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -785,6 +803,7 @@ impl ::core::default::Default for FRAMING_PROP {
 }
 unsafe impl ::windows::core::Abi for FRAMING_PROP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FRAMING_PROP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -795,6 +814,11 @@ pub const GUID_NULL: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x
 #[doc = "*Required features: `\"Win32_Media_KernelStreaming\"`*"]
 #[repr(transparent)]
 pub struct IKsAggregateControl(::windows::core::IUnknown);
+impl ::core::clone::Clone for IKsAggregateControl {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IKsAggregateControl {
     #[doc = "*Required features: `\"Win32_Media_KernelStreaming\"`*"]
     pub unsafe fn KsAddAggregate(&self, aggregateclass: *const ::windows::core::GUID) -> ::windows::core::Result<()> {
@@ -823,11 +847,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IKsAggreg
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IKsAggregateControl {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IKsAggregateControl {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IKsAggregateControl {
@@ -859,6 +878,11 @@ pub struct IKsAllocatorEx(pub u8);
 #[doc = "*Required features: `\"Win32_Media_KernelStreaming\"`*"]
 #[repr(transparent)]
 pub struct IKsControl(::windows::core::IUnknown);
+impl ::core::clone::Clone for IKsControl {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IKsControl {
     #[doc = "*Required features: `\"Win32_Media_KernelStreaming\"`*"]
     pub unsafe fn KsProperty(&self, property: *const KSIDENTIFIER, propertylength: u32, propertydata: *mut ::core::ffi::c_void, datalength: u32, bytesreturned: *mut u32) -> ::windows::core::Result<()> {
@@ -893,11 +917,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IKsCo
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IKsControl {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IKsControl {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -924,6 +943,11 @@ pub struct IKsControl_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_KernelStreaming\"`*"]
 #[repr(transparent)]
 pub struct IKsFormatSupport(::windows::core::IUnknown);
+impl ::core::clone::Clone for IKsFormatSupport {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IKsFormatSupport {
     #[doc = "*Required features: `\"Win32_Media_KernelStreaming\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -956,11 +980,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IKsFo
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IKsFormatSupport {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IKsFormatSupport {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -989,6 +1008,11 @@ pub struct IKsFormatSupport_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_KernelStreaming\"`*"]
 #[repr(transparent)]
 pub struct IKsJackContainerId(::windows::core::IUnknown);
+impl ::core::clone::Clone for IKsJackContainerId {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IKsJackContainerId {
     #[doc = "*Required features: `\"Win32_Media_KernelStreaming\"`*"]
     pub unsafe fn GetJackContainerId(&self) -> ::windows::core::Result<::windows::core::GUID> {
@@ -1016,11 +1040,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IKsJa
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IKsJackContainerId {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IKsJackContainerId {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1045,6 +1064,11 @@ pub struct IKsJackContainerId_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_KernelStreaming\"`*"]
 #[repr(transparent)]
 pub struct IKsJackDescription(::windows::core::IUnknown);
+impl ::core::clone::Clone for IKsJackDescription {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IKsJackDescription {
     #[doc = "*Required features: `\"Win32_Media_KernelStreaming\"`*"]
     pub unsafe fn GetJackCount(&self) -> ::windows::core::Result<u32> {
@@ -1078,11 +1102,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IKsJa
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IKsJackDescription {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IKsJackDescription {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1111,6 +1130,11 @@ pub struct IKsJackDescription_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_KernelStreaming\"`*"]
 #[repr(transparent)]
 pub struct IKsJackDescription2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IKsJackDescription2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IKsJackDescription2 {
     #[doc = "*Required features: `\"Win32_Media_KernelStreaming\"`*"]
     pub unsafe fn GetJackCount(&self) -> ::windows::core::Result<u32> {
@@ -1143,11 +1167,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IKsJa
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IKsJackDescription2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IKsJackDescription2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1173,6 +1192,11 @@ pub struct IKsJackDescription2_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_KernelStreaming\"`*"]
 #[repr(transparent)]
 pub struct IKsJackSinkInformation(::windows::core::IUnknown);
+impl ::core::clone::Clone for IKsJackSinkInformation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IKsJackSinkInformation {
     #[doc = "*Required features: `\"Win32_Media_KernelStreaming\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -1199,11 +1223,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IKsJackSi
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IKsJackSinkInformation {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IKsJackSinkInformation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IKsJackSinkInformation {
@@ -1235,6 +1254,11 @@ pub struct IKsPin(pub u8);
 #[doc = "*Required features: `\"Win32_Media_KernelStreaming\"`*"]
 #[repr(transparent)]
 pub struct IKsPropertySet(::windows::core::IUnknown);
+impl ::core::clone::Clone for IKsPropertySet {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IKsPropertySet {
     #[doc = "*Required features: `\"Win32_Media_KernelStreaming\"`*"]
     pub unsafe fn Set(&self, propset: *const ::windows::core::GUID, id: u32, instancedata: *const ::core::ffi::c_void, instancelength: u32, propertydata: *const ::core::ffi::c_void, datalength: u32) -> ::windows::core::Result<()> {
@@ -1270,11 +1294,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IKsPr
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IKsPropertySet {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IKsPropertySet {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1301,6 +1320,11 @@ pub struct IKsPropertySet_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_KernelStreaming\"`*"]
 #[repr(transparent)]
 pub struct IKsTopology(::windows::core::IUnknown);
+impl ::core::clone::Clone for IKsTopology {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IKsTopology {
     #[doc = "*Required features: `\"Win32_Media_KernelStreaming\"`*"]
     pub unsafe fn CreateNodeInstance<'a, Param3: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, nodeid: u32, flags: u32, desiredaccess: u32, unkouter: Param3, interfaceid: *const ::windows::core::GUID, interface: *mut *mut ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -1325,11 +1349,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IKsTopolo
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IKsTopology {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IKsTopology {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IKsTopology {
@@ -1377,6 +1396,7 @@ impl ::core::fmt::Debug for INTERLEAVED_AUDIO_FORMAT_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for INTERLEAVED_AUDIO_FORMAT_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for INTERLEAVED_AUDIO_FORMAT_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -1433,6 +1453,7 @@ impl ::core::fmt::Debug for KSAC3_ALTERNATE_AUDIO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KSAC3_ALTERNATE_AUDIO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KSAC3_ALTERNATE_AUDIO {
@@ -1472,6 +1493,7 @@ impl ::core::fmt::Debug for KSAC3_BIT_STREAM_MODE {
 }
 unsafe impl ::windows::core::Abi for KSAC3_BIT_STREAM_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSAC3_BIT_STREAM_MODE {
     fn eq(&self, other: &Self) -> bool {
@@ -1502,6 +1524,7 @@ impl ::core::fmt::Debug for KSAC3_DIALOGUE_LEVEL {
 }
 unsafe impl ::windows::core::Abi for KSAC3_DIALOGUE_LEVEL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSAC3_DIALOGUE_LEVEL {
     fn eq(&self, other: &Self) -> bool {
@@ -1538,6 +1561,7 @@ impl ::core::fmt::Debug for KSAC3_DOWNMIX {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KSAC3_DOWNMIX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KSAC3_DOWNMIX {
@@ -1577,6 +1601,7 @@ impl ::core::fmt::Debug for KSAC3_ERROR_CONCEALMENT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KSAC3_ERROR_CONCEALMENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KSAC3_ERROR_CONCEALMENT {
@@ -1615,6 +1640,7 @@ impl ::core::fmt::Debug for KSAC3_ROOM_TYPE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KSAC3_ROOM_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KSAC3_ROOM_TYPE {
@@ -1671,6 +1697,7 @@ impl ::core::default::Default for KSALLOCATORMODE {
 }
 unsafe impl ::windows::core::Abi for KSALLOCATORMODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSALLOCATORMODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1719,6 +1746,7 @@ impl ::core::clone::Clone for KSALLOCATOR_FRAMING {
 }
 unsafe impl ::windows::core::Abi for KSALLOCATOR_FRAMING {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSALLOCATOR_FRAMING {
     fn eq(&self, other: &Self) -> bool {
@@ -1745,6 +1773,7 @@ impl ::core::clone::Clone for KSALLOCATOR_FRAMING_0 {
 }
 unsafe impl ::windows::core::Abi for KSALLOCATOR_FRAMING_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSALLOCATOR_FRAMING_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -1771,6 +1800,7 @@ impl ::core::clone::Clone for KSALLOCATOR_FRAMING_1 {
 }
 unsafe impl ::windows::core::Abi for KSALLOCATOR_FRAMING_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSALLOCATOR_FRAMING_1 {
     fn eq(&self, other: &Self) -> bool {
@@ -1800,6 +1830,7 @@ impl ::core::clone::Clone for KSALLOCATOR_FRAMING_EX {
 }
 unsafe impl ::windows::core::Abi for KSALLOCATOR_FRAMING_EX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSALLOCATOR_FRAMING_EX {
     fn eq(&self, other: &Self) -> bool {
@@ -1850,6 +1881,7 @@ impl ::core::fmt::Debug for KSATTRIBUTE {
 }
 unsafe impl ::windows::core::Abi for KSATTRIBUTE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSATTRIBUTE {
     fn eq(&self, other: &Self) -> bool {
@@ -1882,6 +1914,7 @@ impl ::core::fmt::Debug for KSATTRIBUTE_AUDIOSIGNALPROCESSING_MODE {
 }
 unsafe impl ::windows::core::Abi for KSATTRIBUTE_AUDIOSIGNALPROCESSING_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSATTRIBUTE_AUDIOSIGNALPROCESSING_MODE {
     fn eq(&self, other: &Self) -> bool {
@@ -1972,6 +2005,7 @@ impl ::core::fmt::Debug for KSAUDIOENGINE_BUFFER_SIZE_RANGE {
 }
 unsafe impl ::windows::core::Abi for KSAUDIOENGINE_BUFFER_SIZE_RANGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSAUDIOENGINE_BUFFER_SIZE_RANGE {
     fn eq(&self, other: &Self) -> bool {
@@ -2004,6 +2038,7 @@ impl ::core::fmt::Debug for KSAUDIOENGINE_DESCRIPTOR {
 }
 unsafe impl ::windows::core::Abi for KSAUDIOENGINE_DESCRIPTOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSAUDIOENGINE_DESCRIPTOR {
     fn eq(&self, other: &Self) -> bool {
@@ -2036,6 +2071,7 @@ impl ::core::fmt::Debug for KSAUDIOENGINE_VOLUMELEVEL {
 }
 unsafe impl ::windows::core::Abi for KSAUDIOENGINE_VOLUMELEVEL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSAUDIOENGINE_VOLUMELEVEL {
     fn eq(&self, other: &Self) -> bool {
@@ -2070,6 +2106,7 @@ impl ::core::fmt::Debug for KSAUDIOMODULE_DESCRIPTOR {
 }
 unsafe impl ::windows::core::Abi for KSAUDIOMODULE_DESCRIPTOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSAUDIOMODULE_DESCRIPTOR {
     fn eq(&self, other: &Self) -> bool {
@@ -2095,6 +2132,7 @@ impl ::core::clone::Clone for KSAUDIOMODULE_NOTIFICATION {
 }
 unsafe impl ::windows::core::Abi for KSAUDIOMODULE_NOTIFICATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSAUDIOMODULE_NOTIFICATION {
     fn eq(&self, other: &Self) -> bool {
@@ -2121,6 +2159,7 @@ impl ::core::clone::Clone for KSAUDIOMODULE_NOTIFICATION_0 {
 }
 unsafe impl ::windows::core::Abi for KSAUDIOMODULE_NOTIFICATION_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSAUDIOMODULE_NOTIFICATION_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -2154,6 +2193,7 @@ impl ::core::fmt::Debug for KSAUDIOMODULE_NOTIFICATION_0_0 {
 }
 unsafe impl ::windows::core::Abi for KSAUDIOMODULE_NOTIFICATION_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSAUDIOMODULE_NOTIFICATION_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -2181,6 +2221,7 @@ impl ::core::clone::Clone for KSAUDIOMODULE_PROPERTY {
 }
 unsafe impl ::windows::core::Abi for KSAUDIOMODULE_PROPERTY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSAUDIOMODULE_PROPERTY {
     fn eq(&self, other: &Self) -> bool {
@@ -2211,6 +2252,7 @@ impl ::core::fmt::Debug for KSAUDIO_CHANNEL_CONFIG {
 }
 unsafe impl ::windows::core::Abi for KSAUDIO_CHANNEL_CONFIG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSAUDIO_CHANNEL_CONFIG {
     fn eq(&self, other: &Self) -> bool {
@@ -2247,6 +2289,7 @@ impl ::core::fmt::Debug for KSAUDIO_COPY_PROTECTION {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KSAUDIO_COPY_PROTECTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KSAUDIO_COPY_PROTECTION {
@@ -2285,6 +2328,7 @@ impl ::core::fmt::Debug for KSAUDIO_DYNAMIC_RANGE {
 }
 unsafe impl ::windows::core::Abi for KSAUDIO_DYNAMIC_RANGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSAUDIO_DYNAMIC_RANGE {
     fn eq(&self, other: &Self) -> bool {
@@ -2320,6 +2364,7 @@ impl ::core::fmt::Debug for KSAUDIO_MICROPHONE_COORDINATES {
 }
 unsafe impl ::windows::core::Abi for KSAUDIO_MICROPHONE_COORDINATES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSAUDIO_MICROPHONE_COORDINATES {
     fn eq(&self, other: &Self) -> bool {
@@ -2370,6 +2415,7 @@ impl ::core::fmt::Debug for KSAUDIO_MIC_ARRAY_GEOMETRY {
 }
 unsafe impl ::windows::core::Abi for KSAUDIO_MIC_ARRAY_GEOMETRY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSAUDIO_MIC_ARRAY_GEOMETRY {
     fn eq(&self, other: &Self) -> bool {
@@ -2401,6 +2447,7 @@ impl ::core::clone::Clone for KSAUDIO_MIXCAP_TABLE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KSAUDIO_MIXCAP_TABLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KSAUDIO_MIXCAP_TABLE {
@@ -2440,6 +2487,7 @@ impl ::core::fmt::Debug for KSAUDIO_MIXLEVEL {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KSAUDIO_MIXLEVEL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KSAUDIO_MIXLEVEL {
@@ -2475,6 +2523,7 @@ impl ::core::clone::Clone for KSAUDIO_MIX_CAPS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KSAUDIO_MIX_CAPS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KSAUDIO_MIX_CAPS {
@@ -2508,6 +2557,7 @@ impl ::core::clone::Clone for KSAUDIO_MIX_CAPS_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KSAUDIO_MIX_CAPS_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KSAUDIO_MIX_CAPS_0 {
@@ -2545,6 +2595,7 @@ impl ::core::fmt::Debug for KSAUDIO_PACKETSIZE_CONSTRAINTS {
 }
 unsafe impl ::windows::core::Abi for KSAUDIO_PACKETSIZE_CONSTRAINTS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSAUDIO_PACKETSIZE_CONSTRAINTS {
     fn eq(&self, other: &Self) -> bool {
@@ -2579,6 +2630,7 @@ impl ::core::fmt::Debug for KSAUDIO_PACKETSIZE_CONSTRAINTS2 {
 }
 unsafe impl ::windows::core::Abi for KSAUDIO_PACKETSIZE_CONSTRAINTS2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSAUDIO_PACKETSIZE_CONSTRAINTS2 {
     fn eq(&self, other: &Self) -> bool {
@@ -2610,6 +2662,7 @@ impl ::core::fmt::Debug for KSAUDIO_POSITION {
 }
 unsafe impl ::windows::core::Abi for KSAUDIO_POSITION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSAUDIO_POSITION {
     fn eq(&self, other: &Self) -> bool {
@@ -2643,6 +2696,7 @@ impl ::core::fmt::Debug for KSAUDIO_POSITIONEX {
 }
 unsafe impl ::windows::core::Abi for KSAUDIO_POSITIONEX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSAUDIO_POSITIONEX {
     fn eq(&self, other: &Self) -> bool {
@@ -2674,6 +2728,7 @@ impl ::core::fmt::Debug for KSAUDIO_PRESENTATION_POSITION {
 }
 unsafe impl ::windows::core::Abi for KSAUDIO_PRESENTATION_POSITION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSAUDIO_PRESENTATION_POSITION {
     fn eq(&self, other: &Self) -> bool {
@@ -2785,6 +2840,7 @@ impl ::core::fmt::Debug for KSCAMERA_EXTENDEDPROP_BACKGROUNDSEGMENTATION_CONFIGC
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KSCAMERA_EXTENDEDPROP_BACKGROUNDSEGMENTATION_CONFIGCAPS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KSCAMERA_EXTENDEDPROP_BACKGROUNDSEGMENTATION_CONFIGCAPS {
@@ -2824,6 +2880,7 @@ impl ::core::fmt::Debug for KSCAMERA_EXTENDEDPROP_BACKGROUNDSEGMENTATION_CONFIGC
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KSCAMERA_EXTENDEDPROP_BACKGROUNDSEGMENTATION_CONFIGCAPS_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KSCAMERA_EXTENDEDPROP_BACKGROUNDSEGMENTATION_CONFIGCAPS_0 {
@@ -2864,6 +2921,7 @@ impl ::core::fmt::Debug for KSCAMERA_EXTENDEDPROP_CAMERAOFFSET {
 }
 unsafe impl ::windows::core::Abi for KSCAMERA_EXTENDEDPROP_CAMERAOFFSET {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSCAMERA_EXTENDEDPROP_CAMERAOFFSET {
     fn eq(&self, other: &Self) -> bool {
@@ -2924,6 +2982,7 @@ impl ::core::fmt::Debug for KSCAMERA_EXTENDEDPROP_DIGITALWINDOW_CONFIGCAPS {
 }
 unsafe impl ::windows::core::Abi for KSCAMERA_EXTENDEDPROP_DIGITALWINDOW_CONFIGCAPS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSCAMERA_EXTENDEDPROP_DIGITALWINDOW_CONFIGCAPS {
     fn eq(&self, other: &Self) -> bool {
@@ -2955,6 +3014,7 @@ impl ::core::fmt::Debug for KSCAMERA_EXTENDEDPROP_DIGITALWINDOW_CONFIGCAPSHEADER
 }
 unsafe impl ::windows::core::Abi for KSCAMERA_EXTENDEDPROP_DIGITALWINDOW_CONFIGCAPSHEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSCAMERA_EXTENDEDPROP_DIGITALWINDOW_CONFIGCAPSHEADER {
     fn eq(&self, other: &Self) -> bool {
@@ -2990,6 +3050,7 @@ impl ::core::fmt::Debug for KSCAMERA_EXTENDEDPROP_DIGITALWINDOW_SETTING {
 }
 unsafe impl ::windows::core::Abi for KSCAMERA_EXTENDEDPROP_DIGITALWINDOW_SETTING {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSCAMERA_EXTENDEDPROP_DIGITALWINDOW_SETTING {
     fn eq(&self, other: &Self) -> bool {
@@ -3024,6 +3085,7 @@ impl ::core::fmt::Debug for KSCAMERA_EXTENDEDPROP_EVCOMPENSATION {
 }
 unsafe impl ::windows::core::Abi for KSCAMERA_EXTENDEDPROP_EVCOMPENSATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSCAMERA_EXTENDEDPROP_EVCOMPENSATION {
     fn eq(&self, other: &Self) -> bool {
@@ -3091,6 +3153,7 @@ impl ::core::fmt::Debug for KSCAMERA_EXTENDEDPROP_FIELDOFVIEW {
 }
 unsafe impl ::windows::core::Abi for KSCAMERA_EXTENDEDPROP_FIELDOFVIEW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSCAMERA_EXTENDEDPROP_FIELDOFVIEW {
     fn eq(&self, other: &Self) -> bool {
@@ -3162,6 +3225,7 @@ impl ::core::default::Default for KSCAMERA_EXTENDEDPROP_FOCUSSTATE {
 }
 unsafe impl ::windows::core::Abi for KSCAMERA_EXTENDEDPROP_FOCUSSTATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSCAMERA_EXTENDEDPROP_FOCUSSTATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3217,6 +3281,7 @@ impl ::core::fmt::Debug for KSCAMERA_EXTENDEDPROP_HEADER {
 }
 unsafe impl ::windows::core::Abi for KSCAMERA_EXTENDEDPROP_HEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSCAMERA_EXTENDEDPROP_HEADER {
     fn eq(&self, other: &Self) -> bool {
@@ -3284,6 +3349,7 @@ impl ::core::fmt::Debug for KSCAMERA_EXTENDEDPROP_METADATAINFO {
 }
 unsafe impl ::windows::core::Abi for KSCAMERA_EXTENDEDPROP_METADATAINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSCAMERA_EXTENDEDPROP_METADATAINFO {
     fn eq(&self, other: &Self) -> bool {
@@ -3339,6 +3405,7 @@ impl ::core::default::Default for KSCAMERA_EXTENDEDPROP_MetadataAlignment {
 }
 unsafe impl ::windows::core::Abi for KSCAMERA_EXTENDEDPROP_MetadataAlignment {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSCAMERA_EXTENDEDPROP_MetadataAlignment {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3388,6 +3455,7 @@ impl ::core::fmt::Debug for KSCAMERA_EXTENDEDPROP_PHOTOMODE {
 }
 unsafe impl ::windows::core::Abi for KSCAMERA_EXTENDEDPROP_PHOTOMODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSCAMERA_EXTENDEDPROP_PHOTOMODE {
     fn eq(&self, other: &Self) -> bool {
@@ -3438,6 +3506,7 @@ impl ::core::fmt::Debug for KSCAMERA_EXTENDEDPROP_PROFILE {
 }
 unsafe impl ::windows::core::Abi for KSCAMERA_EXTENDEDPROP_PROFILE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSCAMERA_EXTENDEDPROP_PROFILE {
     fn eq(&self, other: &Self) -> bool {
@@ -3477,6 +3546,7 @@ impl ::core::default::Default for KSCAMERA_EXTENDEDPROP_ROITYPE {
 }
 unsafe impl ::windows::core::Abi for KSCAMERA_EXTENDEDPROP_ROITYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSCAMERA_EXTENDEDPROP_ROITYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3503,6 +3573,7 @@ impl ::core::fmt::Debug for KSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPS {
 }
 unsafe impl ::windows::core::Abi for KSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPS {
     fn eq(&self, other: &Self) -> bool {
@@ -3535,6 +3606,7 @@ impl ::core::fmt::Debug for KSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPSHEADER {
 }
 unsafe impl ::windows::core::Abi for KSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPSHEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPSHEADER {
     fn eq(&self, other: &Self) -> bool {
@@ -3571,6 +3643,7 @@ impl ::core::fmt::Debug for KSCAMERA_EXTENDEDPROP_ROI_EXPOSURE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KSCAMERA_EXTENDEDPROP_ROI_EXPOSURE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KSCAMERA_EXTENDEDPROP_ROI_EXPOSURE {
@@ -3610,6 +3683,7 @@ impl ::core::fmt::Debug for KSCAMERA_EXTENDEDPROP_ROI_FOCUS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KSCAMERA_EXTENDEDPROP_ROI_FOCUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KSCAMERA_EXTENDEDPROP_ROI_FOCUS {
@@ -3651,6 +3725,7 @@ impl ::core::fmt::Debug for KSCAMERA_EXTENDEDPROP_ROI_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KSCAMERA_EXTENDEDPROP_ROI_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KSCAMERA_EXTENDEDPROP_ROI_INFO {
@@ -3687,6 +3762,7 @@ impl ::core::fmt::Debug for KSCAMERA_EXTENDEDPROP_ROI_ISPCONTROL {
 }
 unsafe impl ::windows::core::Abi for KSCAMERA_EXTENDEDPROP_ROI_ISPCONTROL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSCAMERA_EXTENDEDPROP_ROI_ISPCONTROL {
     fn eq(&self, other: &Self) -> bool {
@@ -3719,6 +3795,7 @@ impl ::core::fmt::Debug for KSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER {
 }
 unsafe impl ::windows::core::Abi for KSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER {
     fn eq(&self, other: &Self) -> bool {
@@ -3755,6 +3832,7 @@ impl ::core::fmt::Debug for KSCAMERA_EXTENDEDPROP_ROI_WHITEBALANCE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KSCAMERA_EXTENDEDPROP_ROI_WHITEBALANCE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KSCAMERA_EXTENDEDPROP_ROI_WHITEBALANCE {
@@ -3813,6 +3891,7 @@ impl ::core::clone::Clone for KSCAMERA_EXTENDEDPROP_VALUE {
 }
 unsafe impl ::windows::core::Abi for KSCAMERA_EXTENDEDPROP_VALUE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSCAMERA_EXTENDEDPROP_VALUE {
     fn eq(&self, other: &Self) -> bool {
@@ -3843,6 +3922,7 @@ impl ::core::clone::Clone for KSCAMERA_EXTENDEDPROP_VALUE_0 {
 }
 unsafe impl ::windows::core::Abi for KSCAMERA_EXTENDEDPROP_VALUE_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSCAMERA_EXTENDEDPROP_VALUE_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -3889,6 +3969,7 @@ impl ::core::clone::Clone for KSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING {
 }
 unsafe impl ::windows::core::Abi for KSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING {
     fn eq(&self, other: &Self) -> bool {
@@ -3952,6 +4033,7 @@ impl ::core::default::Default for KSCAMERA_EXTENDEDPROP_WBPRESET {
 }
 unsafe impl ::windows::core::Abi for KSCAMERA_EXTENDEDPROP_WBPRESET {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSCAMERA_EXTENDEDPROP_WBPRESET {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3979,6 +4061,7 @@ impl ::core::default::Default for KSCAMERA_EXTENDEDPROP_WHITEBALANCE_MODE {
 }
 unsafe impl ::windows::core::Abi for KSCAMERA_EXTENDEDPROP_WHITEBALANCE_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSCAMERA_EXTENDEDPROP_WHITEBALANCE_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4014,6 +4097,7 @@ impl ::core::fmt::Debug for KSCAMERA_MAXVIDEOFPS_FORPHOTORES {
 }
 unsafe impl ::windows::core::Abi for KSCAMERA_MAXVIDEOFPS_FORPHOTORES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSCAMERA_MAXVIDEOFPS_FORPHOTORES {
     fn eq(&self, other: &Self) -> bool {
@@ -4053,6 +4137,7 @@ impl ::core::fmt::Debug for KSCAMERA_METADATA_BACKGROUNDSEGMENTATIONMASK {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KSCAMERA_METADATA_BACKGROUNDSEGMENTATIONMASK {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KSCAMERA_METADATA_BACKGROUNDSEGMENTATIONMASK {
@@ -4116,6 +4201,7 @@ impl ::core::fmt::Debug for KSCAMERA_METADATA_CAPTURESTATS {
 }
 unsafe impl ::windows::core::Abi for KSCAMERA_METADATA_CAPTURESTATS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSCAMERA_METADATA_CAPTURESTATS {
     fn eq(&self, other: &Self) -> bool {
@@ -4169,6 +4255,7 @@ impl ::core::fmt::Debug for KSCAMERA_METADATA_DIGITALWINDOW {
 }
 unsafe impl ::windows::core::Abi for KSCAMERA_METADATA_DIGITALWINDOW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSCAMERA_METADATA_DIGITALWINDOW {
     fn eq(&self, other: &Self) -> bool {
@@ -4201,6 +4288,7 @@ impl ::core::fmt::Debug for KSCAMERA_METADATA_FRAMEILLUMINATION {
 }
 unsafe impl ::windows::core::Abi for KSCAMERA_METADATA_FRAMEILLUMINATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSCAMERA_METADATA_FRAMEILLUMINATION {
     fn eq(&self, other: &Self) -> bool {
@@ -4234,6 +4322,7 @@ impl ::core::fmt::Debug for KSCAMERA_METADATA_ITEMHEADER {
 }
 unsafe impl ::windows::core::Abi for KSCAMERA_METADATA_ITEMHEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSCAMERA_METADATA_ITEMHEADER {
     fn eq(&self, other: &Self) -> bool {
@@ -4266,6 +4355,7 @@ impl ::core::fmt::Debug for KSCAMERA_METADATA_PHOTOCONFIRMATION {
 }
 unsafe impl ::windows::core::Abi for KSCAMERA_METADATA_PHOTOCONFIRMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSCAMERA_METADATA_PHOTOCONFIRMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -4317,6 +4407,7 @@ impl ::core::default::Default for KSCAMERA_MetadataId {
 }
 unsafe impl ::windows::core::Abi for KSCAMERA_MetadataId {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSCAMERA_MetadataId {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4345,6 +4436,7 @@ impl ::core::fmt::Debug for KSCAMERA_PERFRAMESETTING_CAP_HEADER {
 }
 unsafe impl ::windows::core::Abi for KSCAMERA_PERFRAMESETTING_CAP_HEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSCAMERA_PERFRAMESETTING_CAP_HEADER {
     fn eq(&self, other: &Self) -> bool {
@@ -4377,6 +4469,7 @@ impl ::core::fmt::Debug for KSCAMERA_PERFRAMESETTING_CAP_ITEM_HEADER {
 }
 unsafe impl ::windows::core::Abi for KSCAMERA_PERFRAMESETTING_CAP_ITEM_HEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSCAMERA_PERFRAMESETTING_CAP_ITEM_HEADER {
     fn eq(&self, other: &Self) -> bool {
@@ -4409,6 +4502,7 @@ impl ::core::fmt::Debug for KSCAMERA_PERFRAMESETTING_CUSTOM_ITEM {
 }
 unsafe impl ::windows::core::Abi for KSCAMERA_PERFRAMESETTING_CUSTOM_ITEM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSCAMERA_PERFRAMESETTING_CUSTOM_ITEM {
     fn eq(&self, other: &Self) -> bool {
@@ -4442,6 +4536,7 @@ impl ::core::fmt::Debug for KSCAMERA_PERFRAMESETTING_FRAME_HEADER {
 }
 unsafe impl ::windows::core::Abi for KSCAMERA_PERFRAMESETTING_FRAME_HEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSCAMERA_PERFRAMESETTING_FRAME_HEADER {
     fn eq(&self, other: &Self) -> bool {
@@ -4477,6 +4572,7 @@ impl ::core::fmt::Debug for KSCAMERA_PERFRAMESETTING_HEADER {
 }
 unsafe impl ::windows::core::Abi for KSCAMERA_PERFRAMESETTING_HEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSCAMERA_PERFRAMESETTING_HEADER {
     fn eq(&self, other: &Self) -> bool {
@@ -4509,6 +4605,7 @@ impl ::core::fmt::Debug for KSCAMERA_PERFRAMESETTING_ITEM_HEADER {
 }
 unsafe impl ::windows::core::Abi for KSCAMERA_PERFRAMESETTING_ITEM_HEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSCAMERA_PERFRAMESETTING_ITEM_HEADER {
     fn eq(&self, other: &Self) -> bool {
@@ -4552,6 +4649,7 @@ impl ::core::default::Default for KSCAMERA_PERFRAMESETTING_ITEM_TYPE {
 }
 unsafe impl ::windows::core::Abi for KSCAMERA_PERFRAMESETTING_ITEM_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSCAMERA_PERFRAMESETTING_ITEM_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4581,6 +4679,7 @@ impl ::core::fmt::Debug for KSCAMERA_PROFILE_CONCURRENCYINFO {
 }
 unsafe impl ::windows::core::Abi for KSCAMERA_PROFILE_CONCURRENCYINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSCAMERA_PROFILE_CONCURRENCYINFO {
     fn eq(&self, other: &Self) -> bool {
@@ -4614,6 +4713,7 @@ impl ::core::fmt::Debug for KSCAMERA_PROFILE_INFO {
 }
 unsafe impl ::windows::core::Abi for KSCAMERA_PROFILE_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSCAMERA_PROFILE_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -4650,6 +4750,7 @@ impl ::core::fmt::Debug for KSCAMERA_PROFILE_MEDIAINFO {
 }
 unsafe impl ::windows::core::Abi for KSCAMERA_PROFILE_MEDIAINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSCAMERA_PROFILE_MEDIAINFO {
     fn eq(&self, other: &Self) -> bool {
@@ -4681,6 +4782,7 @@ impl ::core::fmt::Debug for KSCAMERA_PROFILE_MEDIAINFO_0 {
 }
 unsafe impl ::windows::core::Abi for KSCAMERA_PROFILE_MEDIAINFO_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSCAMERA_PROFILE_MEDIAINFO_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -4712,6 +4814,7 @@ impl ::core::fmt::Debug for KSCAMERA_PROFILE_MEDIAINFO_1 {
 }
 unsafe impl ::windows::core::Abi for KSCAMERA_PROFILE_MEDIAINFO_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSCAMERA_PROFILE_MEDIAINFO_1 {
     fn eq(&self, other: &Self) -> bool {
@@ -4740,6 +4843,7 @@ impl ::core::clone::Clone for KSCAMERA_PROFILE_PININFO {
 }
 unsafe impl ::windows::core::Abi for KSCAMERA_PROFILE_PININFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSCAMERA_PROFILE_PININFO {
     fn eq(&self, other: &Self) -> bool {
@@ -4766,6 +4870,7 @@ impl ::core::clone::Clone for KSCAMERA_PROFILE_PININFO_0 {
 }
 unsafe impl ::windows::core::Abi for KSCAMERA_PROFILE_PININFO_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSCAMERA_PROFILE_PININFO_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -4797,6 +4902,7 @@ impl ::core::fmt::Debug for KSCAMERA_PROFILE_PININFO_0_0 {
 }
 unsafe impl ::windows::core::Abi for KSCAMERA_PROFILE_PININFO_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSCAMERA_PROFILE_PININFO_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -4864,6 +4970,7 @@ impl ::core::fmt::Debug for KSCLOCK_CREATE {
 }
 unsafe impl ::windows::core::Abi for KSCLOCK_CREATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSCLOCK_CREATE {
     fn eq(&self, other: &Self) -> bool {
@@ -4899,6 +5006,7 @@ impl ::core::fmt::Debug for KSCOMPONENTID {
 }
 unsafe impl ::windows::core::Abi for KSCOMPONENTID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSCOMPONENTID {
     fn eq(&self, other: &Self) -> bool {
@@ -4931,6 +5039,7 @@ impl ::core::fmt::Debug for KSCORRELATED_TIME {
 }
 unsafe impl ::windows::core::Abi for KSCORRELATED_TIME {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSCORRELATED_TIME {
     fn eq(&self, other: &Self) -> bool {
@@ -4977,6 +5086,7 @@ impl ::core::clone::Clone for KSDATAFORMAT {
 }
 unsafe impl ::windows::core::Abi for KSDATAFORMAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSDATAFORMAT {
     fn eq(&self, other: &Self) -> bool {
@@ -5013,6 +5123,7 @@ impl ::core::fmt::Debug for KSDATAFORMAT_0 {
 }
 unsafe impl ::windows::core::Abi for KSDATAFORMAT_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSDATAFORMAT_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -5160,6 +5271,7 @@ impl ::core::clone::Clone for KSDATARANGE_AUDIO {
 }
 unsafe impl ::windows::core::Abi for KSDATARANGE_AUDIO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSDATARANGE_AUDIO {
     fn eq(&self, other: &Self) -> bool {
@@ -5193,6 +5305,7 @@ impl ::core::clone::Clone for KSDATARANGE_MUSIC {
 }
 unsafe impl ::windows::core::Abi for KSDATARANGE_MUSIC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSDATARANGE_MUSIC {
     fn eq(&self, other: &Self) -> bool {
@@ -5231,6 +5344,7 @@ impl ::core::default::Default for KSDEGRADE_STANDARD {
 }
 unsafe impl ::windows::core::Abi for KSDEGRADE_STANDARD {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSDEGRADE_STANDARD {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5262,6 +5376,7 @@ impl ::core::clone::Clone for KSDEVICE_PROFILE_INFO {
 }
 unsafe impl ::windows::core::Abi for KSDEVICE_PROFILE_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSDEVICE_PROFILE_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -5287,6 +5402,7 @@ impl ::core::clone::Clone for KSDEVICE_PROFILE_INFO_0 {
 }
 unsafe impl ::windows::core::Abi for KSDEVICE_PROFILE_INFO_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSDEVICE_PROFILE_INFO_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -5320,6 +5436,7 @@ impl ::core::fmt::Debug for KSDEVICE_PROFILE_INFO_0_0 {
 }
 unsafe impl ::windows::core::Abi for KSDEVICE_PROFILE_INFO_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSDEVICE_PROFILE_INFO_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -5357,6 +5474,7 @@ impl ::core::default::Default for KSDEVICE_THERMAL_STATE {
 }
 unsafe impl ::windows::core::Abi for KSDEVICE_THERMAL_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSDEVICE_THERMAL_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5386,6 +5504,7 @@ impl ::core::fmt::Debug for KSDISPLAYCHANGE {
 }
 unsafe impl ::windows::core::Abi for KSDISPLAYCHANGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSDISPLAYCHANGE {
     fn eq(&self, other: &Self) -> bool {
@@ -5419,6 +5538,7 @@ impl ::core::clone::Clone for KSDS3D_BUFFER_ALL {
 }
 unsafe impl ::windows::core::Abi for KSDS3D_BUFFER_ALL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSDS3D_BUFFER_ALL {
     fn eq(&self, other: &Self) -> bool {
@@ -5450,6 +5570,7 @@ impl ::core::fmt::Debug for KSDS3D_BUFFER_CONE_ANGLES {
 }
 unsafe impl ::windows::core::Abi for KSDS3D_BUFFER_CONE_ANGLES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSDS3D_BUFFER_CONE_ANGLES {
     fn eq(&self, other: &Self) -> bool {
@@ -5485,6 +5606,7 @@ impl ::core::default::Default for KSDS3D_HRTF_COEFF_FORMAT {
 }
 unsafe impl ::windows::core::Abi for KSDS3D_HRTF_COEFF_FORMAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSDS3D_HRTF_COEFF_FORMAT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5512,6 +5634,7 @@ impl ::core::fmt::Debug for KSDS3D_HRTF_FILTER_FORMAT_MSG {
 }
 unsafe impl ::windows::core::Abi for KSDS3D_HRTF_FILTER_FORMAT_MSG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSDS3D_HRTF_FILTER_FORMAT_MSG {
     fn eq(&self, other: &Self) -> bool {
@@ -5547,6 +5670,7 @@ impl ::core::default::Default for KSDS3D_HRTF_FILTER_METHOD {
 }
 unsafe impl ::windows::core::Abi for KSDS3D_HRTF_FILTER_METHOD {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSDS3D_HRTF_FILTER_METHOD {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5576,6 +5700,7 @@ impl ::core::default::Default for KSDS3D_HRTF_FILTER_QUALITY {
 }
 unsafe impl ::windows::core::Abi for KSDS3D_HRTF_FILTER_QUALITY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSDS3D_HRTF_FILTER_QUALITY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5601,6 +5726,7 @@ impl ::core::default::Default for KSDS3D_HRTF_FILTER_VERSION {
 }
 unsafe impl ::windows::core::Abi for KSDS3D_HRTF_FILTER_VERSION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSDS3D_HRTF_FILTER_VERSION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5632,6 +5758,7 @@ impl ::core::fmt::Debug for KSDS3D_HRTF_INIT_MSG {
 }
 unsafe impl ::windows::core::Abi for KSDS3D_HRTF_INIT_MSG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSDS3D_HRTF_INIT_MSG {
     fn eq(&self, other: &Self) -> bool {
@@ -5672,6 +5799,7 @@ impl ::core::fmt::Debug for KSDS3D_HRTF_PARAMS_MSG {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KSDS3D_HRTF_PARAMS_MSG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KSDS3D_HRTF_PARAMS_MSG {
@@ -5710,6 +5838,7 @@ impl ::core::fmt::Debug for KSDS3D_ITD_PARAMS {
 }
 unsafe impl ::windows::core::Abi for KSDS3D_ITD_PARAMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSDS3D_ITD_PARAMS {
     fn eq(&self, other: &Self) -> bool {
@@ -5743,6 +5872,7 @@ impl ::core::fmt::Debug for KSDS3D_ITD_PARAMS_MSG {
 }
 unsafe impl ::windows::core::Abi for KSDS3D_ITD_PARAMS_MSG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSDS3D_ITD_PARAMS_MSG {
     fn eq(&self, other: &Self) -> bool {
@@ -5774,6 +5904,7 @@ impl ::core::clone::Clone for KSDS3D_LISTENER_ALL {
 }
 unsafe impl ::windows::core::Abi for KSDS3D_LISTENER_ALL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSDS3D_LISTENER_ALL {
     fn eq(&self, other: &Self) -> bool {
@@ -5800,6 +5931,7 @@ impl ::core::clone::Clone for KSDS3D_LISTENER_ORIENTATION {
 }
 unsafe impl ::windows::core::Abi for KSDS3D_LISTENER_ORIENTATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSDS3D_LISTENER_ORIENTATION {
     fn eq(&self, other: &Self) -> bool {
@@ -5857,6 +5989,7 @@ impl ::core::fmt::Debug for KSERROR {
 }
 unsafe impl ::windows::core::Abi for KSERROR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSERROR {
     fn eq(&self, other: &Self) -> bool {
@@ -5887,6 +6020,7 @@ impl ::core::clone::Clone for KSEVENTDATA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KSEVENTDATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KSEVENTDATA {
@@ -5921,6 +6055,7 @@ impl ::core::clone::Clone for KSEVENTDATA_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KSEVENTDATA_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KSEVENTDATA_0 {
@@ -5960,6 +6095,7 @@ impl ::core::fmt::Debug for KSEVENTDATA_0_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KSEVENTDATA_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KSEVENTDATA_0_0 {
@@ -5999,6 +6135,7 @@ impl ::core::fmt::Debug for KSEVENTDATA_0_1 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KSEVENTDATA_0_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KSEVENTDATA_0_1 {
@@ -6039,6 +6176,7 @@ impl ::core::fmt::Debug for KSEVENTDATA_0_2 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KSEVENTDATA_0_2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KSEVENTDATA_0_2 {
@@ -6106,6 +6244,7 @@ impl ::core::default::Default for KSEVENT_AUDIO_CONTROL_CHANGE {
 }
 unsafe impl ::windows::core::Abi for KSEVENT_AUDIO_CONTROL_CHANGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSEVENT_AUDIO_CONTROL_CHANGE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6133,6 +6272,7 @@ impl ::core::default::Default for KSEVENT_CAMERACONTROL {
 }
 unsafe impl ::windows::core::Abi for KSEVENT_CAMERACONTROL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSEVENT_CAMERACONTROL {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6158,6 +6298,7 @@ impl ::core::default::Default for KSEVENT_CAMERAEVENT {
 }
 unsafe impl ::windows::core::Abi for KSEVENT_CAMERAEVENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSEVENT_CAMERAEVENT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6185,6 +6326,7 @@ impl ::core::default::Default for KSEVENT_CLOCK_POSITION {
 }
 unsafe impl ::windows::core::Abi for KSEVENT_CLOCK_POSITION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSEVENT_CLOCK_POSITION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6218,6 +6360,7 @@ impl ::core::default::Default for KSEVENT_CONNECTION {
 }
 unsafe impl ::windows::core::Abi for KSEVENT_CONNECTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSEVENT_CONNECTION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6243,6 +6386,7 @@ impl ::core::default::Default for KSEVENT_CROSSBAR {
 }
 unsafe impl ::windows::core::Abi for KSEVENT_CROSSBAR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSEVENT_CROSSBAR {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6282,6 +6426,7 @@ impl ::core::default::Default for KSEVENT_DEVCMD {
 }
 unsafe impl ::windows::core::Abi for KSEVENT_DEVCMD {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSEVENT_DEVCMD {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6313,6 +6458,7 @@ impl ::core::default::Default for KSEVENT_DEVICE {
 }
 unsafe impl ::windows::core::Abi for KSEVENT_DEVICE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSEVENT_DEVICE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6338,6 +6484,7 @@ impl ::core::default::Default for KSEVENT_DYNAMICFORMATCHANGE {
 }
 unsafe impl ::windows::core::Abi for KSEVENT_DYNAMICFORMATCHANGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSEVENT_DYNAMICFORMATCHANGE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6369,6 +6516,7 @@ impl ::core::default::Default for KSEVENT_LOOPEDSTREAMING {
 }
 unsafe impl ::windows::core::Abi for KSEVENT_LOOPEDSTREAMING {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSEVENT_LOOPEDSTREAMING {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6396,6 +6544,7 @@ impl ::core::default::Default for KSEVENT_PINCAPS_CHANGENOTIFICATIONS {
 }
 unsafe impl ::windows::core::Abi for KSEVENT_PINCAPS_CHANGENOTIFICATIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSEVENT_PINCAPS_CHANGENOTIFICATIONS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6421,6 +6570,7 @@ impl ::core::default::Default for KSEVENT_SOUNDDETECTOR {
 }
 unsafe impl ::windows::core::Abi for KSEVENT_SOUNDDETECTOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSEVENT_SOUNDDETECTOR {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6448,6 +6598,7 @@ impl ::core::default::Default for KSEVENT_STREAMALLOCATOR {
 }
 unsafe impl ::windows::core::Abi for KSEVENT_STREAMALLOCATOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSEVENT_STREAMALLOCATOR {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6473,6 +6624,7 @@ impl ::core::default::Default for KSEVENT_TELEPHONY {
 }
 unsafe impl ::windows::core::Abi for KSEVENT_TELEPHONY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSEVENT_TELEPHONY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6498,6 +6650,7 @@ impl ::core::clone::Clone for KSEVENT_TIME_INTERVAL {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KSEVENT_TIME_INTERVAL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KSEVENT_TIME_INTERVAL {
@@ -6531,6 +6684,7 @@ impl ::core::clone::Clone for KSEVENT_TIME_MARK {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KSEVENT_TIME_MARK {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KSEVENT_TIME_MARK {
@@ -6567,6 +6721,7 @@ impl ::core::default::Default for KSEVENT_TUNER {
 }
 unsafe impl ::windows::core::Abi for KSEVENT_TUNER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSEVENT_TUNER {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6592,6 +6747,7 @@ impl ::core::clone::Clone for KSEVENT_TUNER_INITIATE_SCAN_S {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KSEVENT_TUNER_INITIATE_SCAN_S {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KSEVENT_TUNER_INITIATE_SCAN_S {
@@ -6626,6 +6782,7 @@ impl ::core::default::Default for KSEVENT_TVAUDIO {
 }
 unsafe impl ::windows::core::Abi for KSEVENT_TVAUDIO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSEVENT_TVAUDIO {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6669,6 +6826,7 @@ impl ::core::default::Default for KSEVENT_VIDCAPTOSTI {
 }
 unsafe impl ::windows::core::Abi for KSEVENT_VIDCAPTOSTI {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSEVENT_VIDCAPTOSTI {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6694,6 +6852,7 @@ impl ::core::default::Default for KSEVENT_VIDEODECODER {
 }
 unsafe impl ::windows::core::Abi for KSEVENT_VIDEODECODER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSEVENT_VIDEODECODER {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6719,6 +6878,7 @@ impl ::core::default::Default for KSEVENT_VOLUMELIMIT {
 }
 unsafe impl ::windows::core::Abi for KSEVENT_VOLUMELIMIT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSEVENT_VOLUMELIMIT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6744,6 +6904,7 @@ impl ::core::default::Default for KSEVENT_VPNOTIFY {
 }
 unsafe impl ::windows::core::Abi for KSEVENT_VPNOTIFY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSEVENT_VPNOTIFY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6769,6 +6930,7 @@ impl ::core::default::Default for KSEVENT_VPVBINOTIFY {
 }
 unsafe impl ::windows::core::Abi for KSEVENT_VPVBINOTIFY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSEVENT_VPVBINOTIFY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6790,6 +6952,7 @@ impl ::core::clone::Clone for KSE_NODE {
 }
 unsafe impl ::windows::core::Abi for KSE_NODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSE_NODE {
     fn eq(&self, other: &Self) -> bool {
@@ -6817,6 +6980,7 @@ impl ::core::clone::Clone for KSE_PIN {
 }
 unsafe impl ::windows::core::Abi for KSE_PIN {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSE_PIN {
     fn eq(&self, other: &Self) -> bool {
@@ -6861,6 +7025,7 @@ impl ::core::fmt::Debug for KSFRAMETIME {
 }
 unsafe impl ::windows::core::Abi for KSFRAMETIME {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSFRAMETIME {
     fn eq(&self, other: &Self) -> bool {
@@ -6901,6 +7066,7 @@ impl ::core::fmt::Debug for KSGOP_USERDATA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KSGOP_USERDATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KSGOP_USERDATA {
@@ -6929,6 +7095,7 @@ impl ::core::clone::Clone for KSIDENTIFIER {
 }
 unsafe impl ::windows::core::Abi for KSIDENTIFIER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSIDENTIFIER {
     fn eq(&self, other: &Self) -> bool {
@@ -6955,6 +7122,7 @@ impl ::core::clone::Clone for KSIDENTIFIER_0 {
 }
 unsafe impl ::windows::core::Abi for KSIDENTIFIER_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSIDENTIFIER_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -6987,6 +7155,7 @@ impl ::core::fmt::Debug for KSIDENTIFIER_0_0 {
 }
 unsafe impl ::windows::core::Abi for KSIDENTIFIER_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSIDENTIFIER_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -7021,6 +7190,7 @@ impl ::core::default::Default for KSINTERFACE_FILEIO {
 }
 unsafe impl ::windows::core::Abi for KSINTERFACE_FILEIO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSINTERFACE_FILEIO {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7050,6 +7220,7 @@ impl ::core::default::Default for KSINTERFACE_MEDIA {
 }
 unsafe impl ::windows::core::Abi for KSINTERFACE_MEDIA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSINTERFACE_MEDIA {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7079,6 +7250,7 @@ impl ::core::default::Default for KSINTERFACE_STANDARD {
 }
 unsafe impl ::windows::core::Abi for KSINTERFACE_STANDARD {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSINTERFACE_STANDARD {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7104,6 +7276,7 @@ impl ::core::fmt::Debug for KSINTERVAL {
 }
 unsafe impl ::windows::core::Abi for KSINTERVAL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSINTERVAL {
     fn eq(&self, other: &Self) -> bool {
@@ -7145,6 +7318,7 @@ impl ::core::fmt::Debug for KSJACK_DESCRIPTION {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KSJACK_DESCRIPTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KSJACK_DESCRIPTION {
@@ -7179,6 +7353,7 @@ impl ::core::fmt::Debug for KSJACK_DESCRIPTION2 {
 }
 unsafe impl ::windows::core::Abi for KSJACK_DESCRIPTION2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSJACK_DESCRIPTION2 {
     fn eq(&self, other: &Self) -> bool {
@@ -7212,6 +7387,7 @@ impl ::core::default::Default for KSJACK_SINK_CONNECTIONTYPE {
 }
 unsafe impl ::windows::core::Abi for KSJACK_SINK_CONNECTIONTYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSJACK_SINK_CONNECTIONTYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7249,6 +7425,7 @@ impl ::core::fmt::Debug for KSJACK_SINK_INFORMATION {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KSJACK_SINK_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KSJACK_SINK_INFORMATION {
@@ -7300,6 +7477,7 @@ impl ::core::default::Default for KSMETHOD_STREAMALLOCATOR {
 }
 unsafe impl ::windows::core::Abi for KSMETHOD_STREAMALLOCATOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSMETHOD_STREAMALLOCATOR {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7327,6 +7505,7 @@ impl ::core::default::Default for KSMETHOD_STREAMIO {
 }
 unsafe impl ::windows::core::Abi for KSMETHOD_STREAMIO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSMETHOD_STREAMIO {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7376,6 +7555,7 @@ impl ::core::default::Default for KSMETHOD_WAVETABLE {
 }
 unsafe impl ::windows::core::Abi for KSMETHOD_WAVETABLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSMETHOD_WAVETABLE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7417,6 +7597,7 @@ impl ::core::default::Default for KSMICARRAY_MICARRAYTYPE {
 }
 unsafe impl ::windows::core::Abi for KSMICARRAY_MICARRAYTYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSMICARRAY_MICARRAYTYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7454,6 +7635,7 @@ impl ::core::default::Default for KSMICARRAY_MICTYPE {
 }
 unsafe impl ::windows::core::Abi for KSMICARRAY_MICTYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSMICARRAY_MICTYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7487,6 +7669,7 @@ impl ::core::fmt::Debug for KSMPEGVID_RECT {
 }
 unsafe impl ::windows::core::Abi for KSMPEGVID_RECT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSMPEGVID_RECT {
     fn eq(&self, other: &Self) -> bool {
@@ -7513,6 +7696,7 @@ impl ::core::clone::Clone for KSMULTIPLE_DATA_PROP {
 }
 unsafe impl ::windows::core::Abi for KSMULTIPLE_DATA_PROP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSMULTIPLE_DATA_PROP {
     fn eq(&self, other: &Self) -> bool {
@@ -7544,6 +7728,7 @@ impl ::core::fmt::Debug for KSMULTIPLE_ITEM {
 }
 unsafe impl ::windows::core::Abi for KSMULTIPLE_ITEM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSMULTIPLE_ITEM {
     fn eq(&self, other: &Self) -> bool {
@@ -7575,6 +7760,7 @@ impl ::core::fmt::Debug for KSMUSICFORMAT {
 }
 unsafe impl ::windows::core::Abi for KSMUSICFORMAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSMUSICFORMAT {
     fn eq(&self, other: &Self) -> bool {
@@ -7607,6 +7793,7 @@ impl ::core::clone::Clone for KSM_NODE {
 }
 unsafe impl ::windows::core::Abi for KSM_NODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSM_NODE {
     fn eq(&self, other: &Self) -> bool {
@@ -7659,6 +7846,7 @@ impl ::core::clone::Clone for KSNODEPROPERTY {
 }
 unsafe impl ::windows::core::Abi for KSNODEPROPERTY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSNODEPROPERTY {
     fn eq(&self, other: &Self) -> bool {
@@ -7689,6 +7877,7 @@ impl ::core::clone::Clone for KSNODEPROPERTY_AUDIO_3D_LISTENER {
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 unsafe impl ::windows::core::Abi for KSNODEPROPERTY_AUDIO_3D_LISTENER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 impl ::core::cmp::PartialEq for KSNODEPROPERTY_AUDIO_3D_LISTENER {
@@ -7723,6 +7912,7 @@ impl ::core::clone::Clone for KSNODEPROPERTY_AUDIO_3D_LISTENER {
 #[cfg(target_arch = "x86")]
 unsafe impl ::windows::core::Abi for KSNODEPROPERTY_AUDIO_3D_LISTENER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 impl ::core::cmp::PartialEq for KSNODEPROPERTY_AUDIO_3D_LISTENER {
@@ -7753,6 +7943,7 @@ impl ::core::clone::Clone for KSNODEPROPERTY_AUDIO_CHANNEL {
 }
 unsafe impl ::windows::core::Abi for KSNODEPROPERTY_AUDIO_CHANNEL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSNODEPROPERTY_AUDIO_CHANNEL {
     fn eq(&self, other: &Self) -> bool {
@@ -7781,6 +7972,7 @@ impl ::core::clone::Clone for KSNODEPROPERTY_AUDIO_DEV_SPECIFIC {
 }
 unsafe impl ::windows::core::Abi for KSNODEPROPERTY_AUDIO_DEV_SPECIFIC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSNODEPROPERTY_AUDIO_DEV_SPECIFIC {
     fn eq(&self, other: &Self) -> bool {
@@ -7812,6 +8004,7 @@ impl ::core::clone::Clone for KSNODEPROPERTY_AUDIO_PROPERTY {
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 unsafe impl ::windows::core::Abi for KSNODEPROPERTY_AUDIO_PROPERTY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 impl ::core::cmp::PartialEq for KSNODEPROPERTY_AUDIO_PROPERTY {
@@ -7847,6 +8040,7 @@ impl ::core::clone::Clone for KSNODEPROPERTY_AUDIO_PROPERTY {
 #[cfg(target_arch = "x86")]
 unsafe impl ::windows::core::Abi for KSNODEPROPERTY_AUDIO_PROPERTY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 impl ::core::cmp::PartialEq for KSNODEPROPERTY_AUDIO_PROPERTY {
@@ -7980,6 +8174,7 @@ impl ::core::fmt::Debug for KSNODE_CREATE {
 }
 unsafe impl ::windows::core::Abi for KSNODE_CREATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSNODE_CREATE {
     fn eq(&self, other: &Self) -> bool {
@@ -8013,6 +8208,7 @@ impl ::core::fmt::Debug for KSPIN_CINSTANCES {
 }
 unsafe impl ::windows::core::Abi for KSPIN_CINSTANCES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSPIN_CINSTANCES {
     fn eq(&self, other: &Self) -> bool {
@@ -8052,6 +8248,7 @@ impl ::core::default::Default for KSPIN_COMMUNICATION {
 }
 unsafe impl ::windows::core::Abi for KSPIN_COMMUNICATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSPIN_COMMUNICATION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8079,6 +8276,7 @@ impl ::core::clone::Clone for KSPIN_CONNECT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KSPIN_CONNECT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KSPIN_CONNECT {
@@ -8115,6 +8313,7 @@ impl ::core::default::Default for KSPIN_DATAFLOW {
 }
 unsafe impl ::windows::core::Abi for KSPIN_DATAFLOW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSPIN_DATAFLOW {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8186,6 +8385,7 @@ impl ::core::default::Default for KSPIN_MDL_CACHING_EVENT {
 }
 unsafe impl ::windows::core::Abi for KSPIN_MDL_CACHING_EVENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSPIN_MDL_CACHING_EVENT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8211,6 +8411,7 @@ impl ::core::fmt::Debug for KSPIN_MDL_CACHING_NOTIFICATION {
 }
 unsafe impl ::windows::core::Abi for KSPIN_MDL_CACHING_NOTIFICATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSPIN_MDL_CACHING_NOTIFICATION {
     fn eq(&self, other: &Self) -> bool {
@@ -8242,6 +8443,7 @@ impl ::core::fmt::Debug for KSPIN_MDL_CACHING_NOTIFICATION32 {
 }
 unsafe impl ::windows::core::Abi for KSPIN_MDL_CACHING_NOTIFICATION32 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSPIN_MDL_CACHING_NOTIFICATION32 {
     fn eq(&self, other: &Self) -> bool {
@@ -8274,6 +8476,7 @@ impl ::core::fmt::Debug for KSPIN_PHYSICALCONNECTION {
 }
 unsafe impl ::windows::core::Abi for KSPIN_PHYSICALCONNECTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSPIN_PHYSICALCONNECTION {
     fn eq(&self, other: &Self) -> bool {
@@ -8305,6 +8508,7 @@ impl ::core::default::Default for KSPPROPERTY_ALLOCATOR_MDLCACHING {
 }
 unsafe impl ::windows::core::Abi for KSPPROPERTY_ALLOCATOR_MDLCACHING {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSPPROPERTY_ALLOCATOR_MDLCACHING {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8330,6 +8534,7 @@ impl ::core::fmt::Debug for KSPRIORITY {
 }
 unsafe impl ::windows::core::Abi for KSPRIORITY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSPRIORITY {
     fn eq(&self, other: &Self) -> bool {
@@ -8398,6 +8603,7 @@ impl ::core::default::Default for KSPROPERTY_AC3 {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_AC3 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSPROPERTY_AC3 {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8429,6 +8635,7 @@ impl ::core::default::Default for KSPROPERTY_ALLOCATOR_CONTROL {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_ALLOCATOR_CONTROL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSPROPERTY_ALLOCATOR_CONTROL {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8453,6 +8660,7 @@ impl ::core::fmt::Debug for KSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_CAPS_S {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_CAPS_S {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_CAPS_S {
     fn eq(&self, other: &Self) -> bool {
@@ -8483,6 +8691,7 @@ impl ::core::fmt::Debug for KSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_INTERLEAVE_S {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_INTERLEAVE_S {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_INTERLEAVE_S {
     fn eq(&self, other: &Self) -> bool {
@@ -8514,6 +8723,7 @@ impl ::core::fmt::Debug for KSPROPERTY_ALLOCATOR_CONTROL_SURFACE_SIZE_S {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_ALLOCATOR_CONTROL_SURFACE_SIZE_S {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSPROPERTY_ALLOCATOR_CONTROL_SURFACE_SIZE_S {
     fn eq(&self, other: &Self) -> bool {
@@ -8547,6 +8757,7 @@ impl ::core::default::Default for KSPROPERTY_AUDDECOUT {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_AUDDECOUT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSPROPERTY_AUDDECOUT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8690,6 +8901,7 @@ impl ::core::default::Default for KSPROPERTY_AUDIO {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_AUDIO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSPROPERTY_AUDIO {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8731,6 +8943,7 @@ impl ::core::default::Default for KSPROPERTY_AUDIOENGINE {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_AUDIOENGINE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSPROPERTY_AUDIOENGINE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8760,6 +8973,7 @@ impl ::core::default::Default for KSPROPERTY_AUDIOMODULE {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_AUDIOMODULE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSPROPERTY_AUDIOMODULE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8785,6 +8999,7 @@ impl ::core::default::Default for KSPROPERTY_AUDIOPOSTURE {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_AUDIOPOSTURE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSPROPERTY_AUDIOPOSTURE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8810,6 +9025,7 @@ impl ::core::default::Default for KSPROPERTY_AUDIORESOURCEMANAGEMENT {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_AUDIORESOURCEMANAGEMENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSPROPERTY_AUDIORESOURCEMANAGEMENT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8835,6 +9051,7 @@ impl ::core::default::Default for KSPROPERTY_AUDIOSIGNALPROCESSING {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_AUDIOSIGNALPROCESSING {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSPROPERTY_AUDIOSIGNALPROCESSING {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8932,6 +9149,7 @@ impl ::core::default::Default for KSPROPERTY_BIBLIOGRAPHIC {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_BIBLIOGRAPHIC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSPROPERTY_BIBLIOGRAPHIC {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8952,6 +9170,7 @@ impl ::core::clone::Clone for KSPROPERTY_BOUNDS_LONG {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_BOUNDS_LONG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSPROPERTY_BOUNDS_LONG {
     fn eq(&self, other: &Self) -> bool {
@@ -8983,6 +9202,7 @@ impl ::core::fmt::Debug for KSPROPERTY_BOUNDS_LONG_0 {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_BOUNDS_LONG_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSPROPERTY_BOUNDS_LONG_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -9014,6 +9234,7 @@ impl ::core::fmt::Debug for KSPROPERTY_BOUNDS_LONG_1 {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_BOUNDS_LONG_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSPROPERTY_BOUNDS_LONG_1 {
     fn eq(&self, other: &Self) -> bool {
@@ -9040,6 +9261,7 @@ impl ::core::clone::Clone for KSPROPERTY_BOUNDS_LONGLONG {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_BOUNDS_LONGLONG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSPROPERTY_BOUNDS_LONGLONG {
     fn eq(&self, other: &Self) -> bool {
@@ -9071,6 +9293,7 @@ impl ::core::fmt::Debug for KSPROPERTY_BOUNDS_LONGLONG_0 {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_BOUNDS_LONGLONG_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSPROPERTY_BOUNDS_LONGLONG_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -9102,6 +9325,7 @@ impl ::core::fmt::Debug for KSPROPERTY_BOUNDS_LONGLONG_1 {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_BOUNDS_LONGLONG_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSPROPERTY_BOUNDS_LONGLONG_1 {
     fn eq(&self, other: &Self) -> bool {
@@ -9135,6 +9359,7 @@ impl ::core::default::Default for KSPROPERTY_BTAUDIO {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_BTAUDIO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSPROPERTY_BTAUDIO {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9250,6 +9475,7 @@ impl ::core::default::Default for KSPROPERTY_CAMERACONTROL_EXTENDED_PROPERTY {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_CAMERACONTROL_EXTENDED_PROPERTY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSPROPERTY_CAMERACONTROL_EXTENDED_PROPERTY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9285,6 +9511,7 @@ impl ::core::default::Default for KSPROPERTY_CAMERACONTROL_FLASH {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_CAMERACONTROL_FLASH {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSPROPERTY_CAMERACONTROL_FLASH {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9320,6 +9547,7 @@ impl ::core::fmt::Debug for KSPROPERTY_CAMERACONTROL_FLASH_S {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_CAMERACONTROL_FLASH_S {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSPROPERTY_CAMERACONTROL_FLASH_S {
     fn eq(&self, other: &Self) -> bool {
@@ -9348,6 +9576,7 @@ impl ::core::clone::Clone for KSPROPERTY_CAMERACONTROL_FOCAL_LENGTH_S {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_CAMERACONTROL_FOCAL_LENGTH_S {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSPROPERTY_CAMERACONTROL_FOCAL_LENGTH_S {
     fn eq(&self, other: &Self) -> bool {
@@ -9379,6 +9608,7 @@ impl ::core::default::Default for KSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY 
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9406,6 +9636,7 @@ impl ::core::fmt::Debug for KSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY_S {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY_S {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY_S {
     fn eq(&self, other: &Self) -> bool {
@@ -9436,6 +9667,7 @@ impl ::core::clone::Clone for KSPROPERTY_CAMERACONTROL_NODE_FOCAL_LENGTH_S {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_CAMERACONTROL_NODE_FOCAL_LENGTH_S {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSPROPERTY_CAMERACONTROL_NODE_FOCAL_LENGTH_S {
     fn eq(&self, other: &Self) -> bool {
@@ -9464,6 +9696,7 @@ impl ::core::clone::Clone for KSPROPERTY_CAMERACONTROL_NODE_S {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_CAMERACONTROL_NODE_S {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSPROPERTY_CAMERACONTROL_NODE_S {
     fn eq(&self, other: &Self) -> bool {
@@ -9493,6 +9726,7 @@ impl ::core::clone::Clone for KSPROPERTY_CAMERACONTROL_NODE_S2 {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_CAMERACONTROL_NODE_S2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSPROPERTY_CAMERACONTROL_NODE_S2 {
     fn eq(&self, other: &Self) -> bool {
@@ -9528,6 +9762,7 @@ impl ::core::default::Default for KSPROPERTY_CAMERACONTROL_PERFRAMESETTING_PROPE
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_CAMERACONTROL_PERFRAMESETTING_PROPERTY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSPROPERTY_CAMERACONTROL_PERFRAMESETTING_PROPERTY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9553,6 +9788,7 @@ impl ::core::default::Default for KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9594,6 +9830,7 @@ impl ::core::clone::Clone for KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_S {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_S {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_S {
@@ -9627,6 +9864,7 @@ impl ::core::clone::Clone for KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_S_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_S_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_S_0 {
@@ -9658,6 +9896,7 @@ impl ::core::clone::Clone for KSPROPERTY_CAMERACONTROL_S {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_CAMERACONTROL_S {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSPROPERTY_CAMERACONTROL_S {
     fn eq(&self, other: &Self) -> bool {
@@ -9687,6 +9926,7 @@ impl ::core::clone::Clone for KSPROPERTY_CAMERACONTROL_S2 {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_CAMERACONTROL_S2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSPROPERTY_CAMERACONTROL_S2 {
     fn eq(&self, other: &Self) -> bool {
@@ -9720,6 +9960,7 @@ impl ::core::clone::Clone for KSPROPERTY_CAMERACONTROL_S_EX {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KSPROPERTY_CAMERACONTROL_S_EX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KSPROPERTY_CAMERACONTROL_S_EX {
@@ -9768,6 +10009,7 @@ impl ::core::fmt::Debug for KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S {
     fn eq(&self, other: &Self) -> bool {
@@ -9799,6 +10041,7 @@ impl ::core::default::Default for KSPROPERTY_CAMERACONTROL_VIDEO_STABILIZATION_M
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_CAMERACONTROL_VIDEO_STABILIZATION_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSPROPERTY_CAMERACONTROL_VIDEO_STABILIZATION_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9826,6 +10069,7 @@ impl ::core::default::Default for KSPROPERTY_CAMERA_PHOTOTRIGGERTIME_FLAGS {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_CAMERA_PHOTOTRIGGERTIME_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSPROPERTY_CAMERA_PHOTOTRIGGERTIME_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9861,6 +10105,7 @@ impl ::core::default::Default for KSPROPERTY_CLOCK {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_CLOCK {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSPROPERTY_CLOCK {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9900,6 +10145,7 @@ impl ::core::default::Default for KSPROPERTY_CONNECTION {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_CONNECTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSPROPERTY_CONNECTION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9939,6 +10185,7 @@ impl ::core::default::Default for KSPROPERTY_COPYPROT {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_COPYPROT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSPROPERTY_COPYPROT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9960,6 +10207,7 @@ impl ::core::clone::Clone for KSPROPERTY_CROSSBAR_ACTIVE_S {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_CROSSBAR_ACTIVE_S {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSPROPERTY_CROSSBAR_ACTIVE_S {
     fn eq(&self, other: &Self) -> bool {
@@ -9987,6 +10235,7 @@ impl ::core::clone::Clone for KSPROPERTY_CROSSBAR_CAPS_S {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_CROSSBAR_CAPS_S {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSPROPERTY_CROSSBAR_CAPS_S {
     fn eq(&self, other: &Self) -> bool {
@@ -10017,6 +10266,7 @@ impl ::core::clone::Clone for KSPROPERTY_CROSSBAR_PININFO_S {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_CROSSBAR_PININFO_S {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSPROPERTY_CROSSBAR_PININFO_S {
     fn eq(&self, other: &Self) -> bool {
@@ -10045,6 +10295,7 @@ impl ::core::clone::Clone for KSPROPERTY_CROSSBAR_ROUTE_S {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_CROSSBAR_ROUTE_S {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSPROPERTY_CROSSBAR_ROUTE_S {
     fn eq(&self, other: &Self) -> bool {
@@ -10076,6 +10327,7 @@ impl ::core::default::Default for KSPROPERTY_CYCLIC {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_CYCLIC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSPROPERTY_CYCLIC {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10099,6 +10351,7 @@ impl ::core::clone::Clone for KSPROPERTY_DESCRIPTION {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_DESCRIPTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSPROPERTY_DESCRIPTION {
     fn eq(&self, other: &Self) -> bool {
@@ -10146,6 +10399,7 @@ impl ::core::default::Default for KSPROPERTY_DIRECTSOUND3DBUFFER {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_DIRECTSOUND3DBUFFER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSPROPERTY_DIRECTSOUND3DBUFFER {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10187,6 +10441,7 @@ impl ::core::default::Default for KSPROPERTY_DIRECTSOUND3DLISTENER {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_DIRECTSOUND3DLISTENER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSPROPERTY_DIRECTSOUND3DLISTENER {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10212,6 +10467,7 @@ impl ::core::default::Default for KSPROPERTY_DRMAUDIOSTREAM {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_DRMAUDIOSTREAM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSPROPERTY_DRMAUDIOSTREAM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10234,6 +10490,7 @@ impl ::core::clone::Clone for KSPROPERTY_DROPPEDFRAMES_CURRENT_S {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_DROPPEDFRAMES_CURRENT_S {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSPROPERTY_DROPPEDFRAMES_CURRENT_S {
     fn eq(&self, other: &Self) -> bool {
@@ -10269,6 +10526,7 @@ impl ::core::default::Default for KSPROPERTY_DVDSUBPIC {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_DVDSUBPIC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSPROPERTY_DVDSUBPIC {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10302,6 +10560,7 @@ impl ::core::default::Default for KSPROPERTY_EXTDEVICE {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_EXTDEVICE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSPROPERTY_EXTDEVICE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10322,6 +10581,7 @@ impl ::core::clone::Clone for KSPROPERTY_EXTDEVICE_S {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_EXTDEVICE_S {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSPROPERTY_EXTDEVICE_S {
     fn eq(&self, other: &Self) -> bool {
@@ -10351,6 +10611,7 @@ impl ::core::clone::Clone for KSPROPERTY_EXTDEVICE_S_0 {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_EXTDEVICE_S_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSPROPERTY_EXTDEVICE_S_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -10386,6 +10647,7 @@ impl ::core::default::Default for KSPROPERTY_EXTENSION_UNIT {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_EXTENSION_UNIT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSPROPERTY_EXTENSION_UNIT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10431,6 +10693,7 @@ impl ::core::default::Default for KSPROPERTY_EXTXPORT {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_EXTXPORT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSPROPERTY_EXTXPORT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10455,6 +10718,7 @@ impl ::core::clone::Clone for KSPROPERTY_EXTXPORT_NODE_S {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KSPROPERTY_EXTXPORT_NODE_S {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KSPROPERTY_EXTXPORT_NODE_S {
@@ -10495,6 +10759,7 @@ impl ::core::clone::Clone for KSPROPERTY_EXTXPORT_NODE_S_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KSPROPERTY_EXTXPORT_NODE_S_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KSPROPERTY_EXTXPORT_NODE_S_0 {
@@ -10534,6 +10799,7 @@ impl ::core::fmt::Debug for KSPROPERTY_EXTXPORT_NODE_S_0_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KSPROPERTY_EXTXPORT_NODE_S_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KSPROPERTY_EXTXPORT_NODE_S_0_0 {
@@ -10575,6 +10841,7 @@ impl ::core::fmt::Debug for KSPROPERTY_EXTXPORT_NODE_S_0_1 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KSPROPERTY_EXTXPORT_NODE_S_0_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KSPROPERTY_EXTXPORT_NODE_S_0_1 {
@@ -10608,6 +10875,7 @@ impl ::core::clone::Clone for KSPROPERTY_EXTXPORT_S {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KSPROPERTY_EXTXPORT_S {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KSPROPERTY_EXTXPORT_S {
@@ -10648,6 +10916,7 @@ impl ::core::clone::Clone for KSPROPERTY_EXTXPORT_S_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KSPROPERTY_EXTXPORT_S_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KSPROPERTY_EXTXPORT_S_0 {
@@ -10687,6 +10956,7 @@ impl ::core::fmt::Debug for KSPROPERTY_EXTXPORT_S_0_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KSPROPERTY_EXTXPORT_S_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KSPROPERTY_EXTXPORT_S_0_0 {
@@ -10728,6 +10998,7 @@ impl ::core::fmt::Debug for KSPROPERTY_EXTXPORT_S_0_1 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KSPROPERTY_EXTXPORT_S_0_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KSPROPERTY_EXTXPORT_S_0_1 {
@@ -10762,6 +11033,7 @@ impl ::core::default::Default for KSPROPERTY_FMRX_CONTROL {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_FMRX_CONTROL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSPROPERTY_FMRX_CONTROL {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10791,6 +11063,7 @@ impl ::core::default::Default for KSPROPERTY_FMRX_TOPOLOGY {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_FMRX_TOPOLOGY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSPROPERTY_FMRX_TOPOLOGY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10816,6 +11089,7 @@ impl ::core::default::Default for KSPROPERTY_GENERAL {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_GENERAL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSPROPERTY_GENERAL {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10845,6 +11119,7 @@ impl ::core::default::Default for KSPROPERTY_HRTF3D {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_HRTF3D {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSPROPERTY_HRTF3D {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10870,6 +11145,7 @@ impl ::core::default::Default for KSPROPERTY_INTERLEAVEDAUDIO {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_INTERLEAVEDAUDIO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSPROPERTY_INTERLEAVEDAUDIO {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10895,6 +11171,7 @@ impl ::core::default::Default for KSPROPERTY_ITD3D {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_ITD3D {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSPROPERTY_ITD3D {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10926,6 +11203,7 @@ impl ::core::default::Default for KSPROPERTY_JACK {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_JACK {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSPROPERTY_JACK {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10951,6 +11229,7 @@ impl ::core::fmt::Debug for KSPROPERTY_MEDIAAVAILABLE {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_MEDIAAVAILABLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSPROPERTY_MEDIAAVAILABLE {
     fn eq(&self, other: &Self) -> bool {
@@ -11000,6 +11279,7 @@ impl ::core::default::Default for KSPROPERTY_MEDIASEEKING {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_MEDIASEEKING {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSPROPERTY_MEDIASEEKING {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11027,6 +11307,7 @@ impl ::core::fmt::Debug for KSPROPERTY_MEMBERSHEADER {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_MEMBERSHEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSPROPERTY_MEMBERSHEADER {
     fn eq(&self, other: &Self) -> bool {
@@ -11080,6 +11361,7 @@ impl ::core::default::Default for KSPROPERTY_MPEG2VID {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_MPEG2VID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSPROPERTY_MPEG2VID {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11105,6 +11387,7 @@ impl ::core::default::Default for KSPROPERTY_MPEG4_MEDIATYPE_ATTRIBUTES {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_MPEG4_MEDIATYPE_ATTRIBUTES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSPROPERTY_MPEG4_MEDIATYPE_ATTRIBUTES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11130,6 +11413,7 @@ impl ::core::fmt::Debug for KSPROPERTY_NETWORKCAMERACONTROL_EVENT_INFO {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_NETWORKCAMERACONTROL_EVENT_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSPROPERTY_NETWORKCAMERACONTROL_EVENT_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -11170,6 +11454,7 @@ impl ::core::fmt::Debug for KSPROPERTY_NETWORKCAMERACONTROL_METADATA_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KSPROPERTY_NETWORKCAMERACONTROL_METADATA_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KSPROPERTY_NETWORKCAMERACONTROL_METADATA_INFO {
@@ -11204,6 +11489,7 @@ impl ::core::default::Default for KSPROPERTY_NETWORKCAMERACONTROL_METADATA_TYPE 
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_NETWORKCAMERACONTROL_METADATA_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSPROPERTY_NETWORKCAMERACONTROL_METADATA_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11229,6 +11515,7 @@ impl ::core::fmt::Debug for KSPROPERTY_NETWORKCAMERACONTROL_NTPINFO_HEADER {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_NETWORKCAMERACONTROL_NTPINFO_HEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSPROPERTY_NETWORKCAMERACONTROL_NTPINFO_HEADER {
     fn eq(&self, other: &Self) -> bool {
@@ -11264,6 +11551,7 @@ impl ::core::default::Default for KSPROPERTY_NETWORKCAMERACONTROL_NTPINFO_TYPE {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_NETWORKCAMERACONTROL_NTPINFO_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSPROPERTY_NETWORKCAMERACONTROL_NTPINFO_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11295,6 +11583,7 @@ impl ::core::default::Default for KSPROPERTY_NETWORKCAMERACONTROL_PROPERTY {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_NETWORKCAMERACONTROL_PROPERTY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSPROPERTY_NETWORKCAMERACONTROL_PROPERTY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11332,6 +11621,7 @@ impl ::core::default::Default for KSPROPERTY_OVERLAYUPDATE {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_OVERLAYUPDATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSPROPERTY_OVERLAYUPDATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11389,6 +11679,7 @@ impl ::core::default::Default for KSPROPERTY_PIN {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_PIN {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSPROPERTY_PIN {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11420,6 +11711,7 @@ impl ::core::fmt::Debug for KSPROPERTY_POSITIONS {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_POSITIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSPROPERTY_POSITIONS {
     fn eq(&self, other: &Self) -> bool {
@@ -11453,6 +11745,7 @@ impl ::core::default::Default for KSPROPERTY_QUALITY {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_QUALITY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSPROPERTY_QUALITY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11504,6 +11797,7 @@ impl ::core::default::Default for KSPROPERTY_RTAUDIO {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_RTAUDIO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSPROPERTY_RTAUDIO {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11526,6 +11820,7 @@ impl ::core::clone::Clone for KSPROPERTY_SELECTOR_NODE_S {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_SELECTOR_NODE_S {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSPROPERTY_SELECTOR_NODE_S {
     fn eq(&self, other: &Self) -> bool {
@@ -11554,6 +11849,7 @@ impl ::core::clone::Clone for KSPROPERTY_SELECTOR_S {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_SELECTOR_S {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSPROPERTY_SELECTOR_S {
     fn eq(&self, other: &Self) -> bool {
@@ -11581,6 +11877,7 @@ impl ::core::clone::Clone for KSPROPERTY_SERIAL {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_SERIAL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSPROPERTY_SERIAL {
     fn eq(&self, other: &Self) -> bool {
@@ -11607,6 +11904,7 @@ impl ::core::clone::Clone for KSPROPERTY_SERIALHDR {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_SERIALHDR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSPROPERTY_SERIALHDR {
     fn eq(&self, other: &Self) -> bool {
@@ -11648,6 +11946,7 @@ impl ::core::default::Default for KSPROPERTY_SOUNDDETECTOR {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_SOUNDDETECTOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSPROPERTY_SOUNDDETECTOR {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11680,6 +11979,7 @@ impl ::core::fmt::Debug for KSPROPERTY_SPHLI {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_SPHLI {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSPROPERTY_SPHLI {
     fn eq(&self, other: &Self) -> bool {
@@ -11710,6 +12010,7 @@ impl ::core::fmt::Debug for KSPROPERTY_SPPAL {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_SPPAL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSPROPERTY_SPPAL {
     fn eq(&self, other: &Self) -> bool {
@@ -11737,6 +12038,7 @@ impl ::core::clone::Clone for KSPROPERTY_STEPPING_LONG {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_STEPPING_LONG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSPROPERTY_STEPPING_LONG {
     fn eq(&self, other: &Self) -> bool {
@@ -11763,6 +12065,7 @@ impl ::core::clone::Clone for KSPROPERTY_STEPPING_LONGLONG {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_STEPPING_LONGLONG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSPROPERTY_STEPPING_LONGLONG {
     fn eq(&self, other: &Self) -> bool {
@@ -11814,6 +12117,7 @@ impl ::core::default::Default for KSPROPERTY_STREAM {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_STREAM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSPROPERTY_STREAM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11839,6 +12143,7 @@ impl ::core::default::Default for KSPROPERTY_STREAMINTERFACE {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_STREAMINTERFACE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSPROPERTY_STREAMINTERFACE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11874,6 +12179,7 @@ impl ::core::default::Default for KSPROPERTY_TELEPHONY_CONTROL {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_TELEPHONY_CONTROL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSPROPERTY_TELEPHONY_CONTROL {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11901,6 +12207,7 @@ impl ::core::default::Default for KSPROPERTY_TELEPHONY_TOPOLOGY {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_TELEPHONY_TOPOLOGY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSPROPERTY_TELEPHONY_TOPOLOGY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11930,6 +12237,7 @@ impl ::core::default::Default for KSPROPERTY_TIMECODE {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_TIMECODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSPROPERTY_TIMECODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11950,6 +12258,7 @@ impl ::core::clone::Clone for KSPROPERTY_TIMECODE_NODE_S {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_TIMECODE_NODE_S {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSPROPERTY_TIMECODE_NODE_S {
     fn eq(&self, other: &Self) -> bool {
@@ -11976,6 +12285,7 @@ impl ::core::clone::Clone for KSPROPERTY_TIMECODE_S {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_TIMECODE_S {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSPROPERTY_TIMECODE_S {
     fn eq(&self, other: &Self) -> bool {
@@ -12013,6 +12323,7 @@ impl ::core::default::Default for KSPROPERTY_TOPOLOGY {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_TOPOLOGY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSPROPERTY_TOPOLOGY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12040,6 +12351,7 @@ impl ::core::default::Default for KSPROPERTY_TOPOLOGYNODE {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_TOPOLOGYNODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSPROPERTY_TOPOLOGYNODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12087,6 +12399,7 @@ impl ::core::default::Default for KSPROPERTY_TUNER {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_TUNER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSPROPERTY_TUNER {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12110,6 +12423,7 @@ impl ::core::clone::Clone for KSPROPERTY_TUNER_CAPS_S {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_TUNER_CAPS_S {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSPROPERTY_TUNER_CAPS_S {
     fn eq(&self, other: &Self) -> bool {
@@ -12142,6 +12456,7 @@ impl ::core::clone::Clone for KSPROPERTY_TUNER_FREQUENCY_S {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_TUNER_FREQUENCY_S {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSPROPERTY_TUNER_FREQUENCY_S {
     fn eq(&self, other: &Self) -> bool {
@@ -12168,6 +12483,7 @@ impl ::core::clone::Clone for KSPROPERTY_TUNER_IF_MEDIUM_S {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_TUNER_IF_MEDIUM_S {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSPROPERTY_TUNER_IF_MEDIUM_S {
     fn eq(&self, other: &Self) -> bool {
@@ -12194,6 +12510,7 @@ impl ::core::clone::Clone for KSPROPERTY_TUNER_INPUT_S {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_TUNER_INPUT_S {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSPROPERTY_TUNER_INPUT_S {
     fn eq(&self, other: &Self) -> bool {
@@ -12233,6 +12550,7 @@ impl ::core::default::Default for KSPROPERTY_TUNER_MODES {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_TUNER_MODES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSPROPERTY_TUNER_MODES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12260,6 +12578,7 @@ impl ::core::clone::Clone for KSPROPERTY_TUNER_MODE_CAPS_S {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_TUNER_MODE_CAPS_S {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSPROPERTY_TUNER_MODE_CAPS_S {
     fn eq(&self, other: &Self) -> bool {
@@ -12286,6 +12605,7 @@ impl ::core::clone::Clone for KSPROPERTY_TUNER_MODE_S {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_TUNER_MODE_S {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSPROPERTY_TUNER_MODE_S {
     fn eq(&self, other: &Self) -> bool {
@@ -12314,6 +12634,7 @@ impl ::core::clone::Clone for KSPROPERTY_TUNER_NETWORKTYPE_SCAN_CAPS_S {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_TUNER_NETWORKTYPE_SCAN_CAPS_S {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSPROPERTY_TUNER_NETWORKTYPE_SCAN_CAPS_S {
     fn eq(&self, other: &Self) -> bool {
@@ -12347,6 +12668,7 @@ impl ::core::clone::Clone for KSPROPERTY_TUNER_SCAN_CAPS_S {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KSPROPERTY_TUNER_SCAN_CAPS_S {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KSPROPERTY_TUNER_SCAN_CAPS_S {
@@ -12377,6 +12699,7 @@ impl ::core::clone::Clone for KSPROPERTY_TUNER_SCAN_STATUS_S {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_TUNER_SCAN_STATUS_S {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSPROPERTY_TUNER_SCAN_STATUS_S {
     fn eq(&self, other: &Self) -> bool {
@@ -12407,6 +12730,7 @@ impl ::core::clone::Clone for KSPROPERTY_TUNER_STANDARD_MODE_S {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KSPROPERTY_TUNER_STANDARD_MODE_S {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KSPROPERTY_TUNER_STANDARD_MODE_S {
@@ -12436,6 +12760,7 @@ impl ::core::clone::Clone for KSPROPERTY_TUNER_STANDARD_S {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_TUNER_STANDARD_S {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSPROPERTY_TUNER_STANDARD_S {
     fn eq(&self, other: &Self) -> bool {
@@ -12465,6 +12790,7 @@ impl ::core::clone::Clone for KSPROPERTY_TUNER_STATUS_S {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_TUNER_STATUS_S {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSPROPERTY_TUNER_STATUS_S {
     fn eq(&self, other: &Self) -> bool {
@@ -12493,6 +12819,7 @@ impl ::core::clone::Clone for KSPROPERTY_TVAUDIO_CAPS_S {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_TVAUDIO_CAPS_S {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSPROPERTY_TVAUDIO_CAPS_S {
     fn eq(&self, other: &Self) -> bool {
@@ -12519,6 +12846,7 @@ impl ::core::clone::Clone for KSPROPERTY_TVAUDIO_S {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_TVAUDIO_S {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSPROPERTY_TVAUDIO_S {
     fn eq(&self, other: &Self) -> bool {
@@ -12582,6 +12910,7 @@ impl ::core::default::Default for KSPROPERTY_VBICAP {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_VBICAP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSPROPERTY_VBICAP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12615,6 +12944,7 @@ impl ::core::default::Default for KSPROPERTY_VBICODECFILTERING {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_VBICODECFILTERING {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSPROPERTY_VBICODECFILTERING {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12635,6 +12965,7 @@ impl ::core::clone::Clone for KSPROPERTY_VBICODECFILTERING_CC_SUBSTREAMS_S {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_VBICODECFILTERING_CC_SUBSTREAMS_S {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSPROPERTY_VBICODECFILTERING_CC_SUBSTREAMS_S {
     fn eq(&self, other: &Self) -> bool {
@@ -12661,6 +12992,7 @@ impl ::core::clone::Clone for KSPROPERTY_VBICODECFILTERING_NABTS_SUBSTREAMS_S {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_VBICODECFILTERING_NABTS_SUBSTREAMS_S {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSPROPERTY_VBICODECFILTERING_NABTS_SUBSTREAMS_S {
     fn eq(&self, other: &Self) -> bool {
@@ -12687,6 +13019,7 @@ impl ::core::clone::Clone for KSPROPERTY_VBICODECFILTERING_SCANLINES_S {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_VBICODECFILTERING_SCANLINES_S {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSPROPERTY_VBICODECFILTERING_SCANLINES_S {
     fn eq(&self, other: &Self) -> bool {
@@ -12713,6 +13046,7 @@ impl ::core::clone::Clone for KSPROPERTY_VBICODECFILTERING_STATISTICS_CC_PIN_S {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_VBICODECFILTERING_STATISTICS_CC_PIN_S {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSPROPERTY_VBICODECFILTERING_STATISTICS_CC_PIN_S {
     fn eq(&self, other: &Self) -> bool {
@@ -12739,6 +13073,7 @@ impl ::core::clone::Clone for KSPROPERTY_VBICODECFILTERING_STATISTICS_CC_S {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_VBICODECFILTERING_STATISTICS_CC_S {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSPROPERTY_VBICODECFILTERING_STATISTICS_CC_S {
     fn eq(&self, other: &Self) -> bool {
@@ -12765,6 +13100,7 @@ impl ::core::clone::Clone for KSPROPERTY_VBICODECFILTERING_STATISTICS_COMMON_PIN
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_VBICODECFILTERING_STATISTICS_COMMON_PIN_S {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSPROPERTY_VBICODECFILTERING_STATISTICS_COMMON_PIN_S {
     fn eq(&self, other: &Self) -> bool {
@@ -12791,6 +13127,7 @@ impl ::core::clone::Clone for KSPROPERTY_VBICODECFILTERING_STATISTICS_COMMON_S {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_VBICODECFILTERING_STATISTICS_COMMON_S {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSPROPERTY_VBICODECFILTERING_STATISTICS_COMMON_S {
     fn eq(&self, other: &Self) -> bool {
@@ -12817,6 +13154,7 @@ impl ::core::clone::Clone for KSPROPERTY_VBICODECFILTERING_STATISTICS_NABTS_PIN_
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_VBICODECFILTERING_STATISTICS_NABTS_PIN_S {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSPROPERTY_VBICODECFILTERING_STATISTICS_NABTS_PIN_S {
     fn eq(&self, other: &Self) -> bool {
@@ -12843,6 +13181,7 @@ impl ::core::clone::Clone for KSPROPERTY_VBICODECFILTERING_STATISTICS_NABTS_S {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_VBICODECFILTERING_STATISTICS_NABTS_S {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSPROPERTY_VBICODECFILTERING_STATISTICS_NABTS_S {
     fn eq(&self, other: &Self) -> bool {
@@ -12912,6 +13251,7 @@ impl ::core::default::Default for KSPROPERTY_VIDCAP_CAMERACONTROL {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_VIDCAP_CAMERACONTROL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSPROPERTY_VIDCAP_CAMERACONTROL {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12945,6 +13285,7 @@ impl ::core::default::Default for KSPROPERTY_VIDCAP_CROSSBAR {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_VIDCAP_CROSSBAR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSPROPERTY_VIDCAP_CROSSBAR {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12970,6 +13311,7 @@ impl ::core::default::Default for KSPROPERTY_VIDCAP_DROPPEDFRAMES {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_VIDCAP_DROPPEDFRAMES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSPROPERTY_VIDCAP_DROPPEDFRAMES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12997,6 +13339,7 @@ impl ::core::default::Default for KSPROPERTY_VIDCAP_SELECTOR {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_VIDCAP_SELECTOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSPROPERTY_VIDCAP_SELECTOR {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13026,6 +13369,7 @@ impl ::core::default::Default for KSPROPERTY_VIDCAP_TVAUDIO {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_VIDCAP_TVAUDIO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSPROPERTY_VIDCAP_TVAUDIO {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13063,6 +13407,7 @@ impl ::core::default::Default for KSPROPERTY_VIDCAP_VIDEOCOMPRESSION {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_VIDCAP_VIDEOCOMPRESSION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSPROPERTY_VIDCAP_VIDEOCOMPRESSION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13094,6 +13439,7 @@ impl ::core::default::Default for KSPROPERTY_VIDCAP_VIDEOCONTROL {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_VIDCAP_VIDEOCONTROL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSPROPERTY_VIDCAP_VIDEOCONTROL {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13129,6 +13475,7 @@ impl ::core::default::Default for KSPROPERTY_VIDCAP_VIDEODECODER {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_VIDCAP_VIDEODECODER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSPROPERTY_VIDCAP_VIDEODECODER {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13160,6 +13507,7 @@ impl ::core::default::Default for KSPROPERTY_VIDCAP_VIDEOENCODER {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_VIDCAP_VIDEOENCODER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSPROPERTY_VIDCAP_VIDEOENCODER {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13211,6 +13559,7 @@ impl ::core::default::Default for KSPROPERTY_VIDCAP_VIDEOPROCAMP {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_VIDCAP_VIDEOPROCAMP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSPROPERTY_VIDCAP_VIDEOPROCAMP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13236,6 +13585,7 @@ impl ::core::clone::Clone for KSPROPERTY_VIDEOCOMPRESSION_GETINFO_S {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_VIDEOCOMPRESSION_GETINFO_S {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSPROPERTY_VIDEOCOMPRESSION_GETINFO_S {
     fn eq(&self, other: &Self) -> bool {
@@ -13263,6 +13613,7 @@ impl ::core::clone::Clone for KSPROPERTY_VIDEOCOMPRESSION_S {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_VIDEOCOMPRESSION_S {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSPROPERTY_VIDEOCOMPRESSION_S {
     fn eq(&self, other: &Self) -> bool {
@@ -13291,6 +13642,7 @@ impl ::core::clone::Clone for KSPROPERTY_VIDEOCOMPRESSION_S1 {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_VIDEOCOMPRESSION_S1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSPROPERTY_VIDEOCOMPRESSION_S1 {
     fn eq(&self, other: &Self) -> bool {
@@ -13325,6 +13677,7 @@ impl ::core::clone::Clone for KSPROPERTY_VIDEOCONTROL_ACTUAL_FRAME_RATE_S {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KSPROPERTY_VIDEOCONTROL_ACTUAL_FRAME_RATE_S {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KSPROPERTY_VIDEOCONTROL_ACTUAL_FRAME_RATE_S {
@@ -13355,6 +13708,7 @@ impl ::core::clone::Clone for KSPROPERTY_VIDEOCONTROL_CAPS_S {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_VIDEOCONTROL_CAPS_S {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSPROPERTY_VIDEOCONTROL_CAPS_S {
     fn eq(&self, other: &Self) -> bool {
@@ -13387,6 +13741,7 @@ impl ::core::clone::Clone for KSPROPERTY_VIDEOCONTROL_FRAME_RATES_S {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KSPROPERTY_VIDEOCONTROL_FRAME_RATES_S {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KSPROPERTY_VIDEOCONTROL_FRAME_RATES_S {
@@ -13417,6 +13772,7 @@ impl ::core::clone::Clone for KSPROPERTY_VIDEOCONTROL_MODE_S {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_VIDEOCONTROL_MODE_S {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSPROPERTY_VIDEOCONTROL_MODE_S {
     fn eq(&self, other: &Self) -> bool {
@@ -13446,6 +13802,7 @@ impl ::core::clone::Clone for KSPROPERTY_VIDEODECODER_CAPS_S {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_VIDEODECODER_CAPS_S {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSPROPERTY_VIDEODECODER_CAPS_S {
     fn eq(&self, other: &Self) -> bool {
@@ -13472,6 +13829,7 @@ impl ::core::clone::Clone for KSPROPERTY_VIDEODECODER_S {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_VIDEODECODER_S {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSPROPERTY_VIDEODECODER_S {
     fn eq(&self, other: &Self) -> bool {
@@ -13500,6 +13858,7 @@ impl ::core::clone::Clone for KSPROPERTY_VIDEODECODER_STATUS2_S {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_VIDEODECODER_STATUS2_S {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSPROPERTY_VIDEODECODER_STATUS2_S {
     fn eq(&self, other: &Self) -> bool {
@@ -13527,6 +13886,7 @@ impl ::core::clone::Clone for KSPROPERTY_VIDEODECODER_STATUS_S {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_VIDEODECODER_STATUS_S {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSPROPERTY_VIDEODECODER_STATUS_S {
     fn eq(&self, other: &Self) -> bool {
@@ -13555,6 +13915,7 @@ impl ::core::clone::Clone for KSPROPERTY_VIDEOENCODER_S {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_VIDEOENCODER_S {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSPROPERTY_VIDEOENCODER_S {
     fn eq(&self, other: &Self) -> bool {
@@ -13587,6 +13948,7 @@ impl ::core::clone::Clone for KSPROPERTY_VIDEOPROCAMP_NODE_S {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_VIDEOPROCAMP_NODE_S {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSPROPERTY_VIDEOPROCAMP_NODE_S {
     fn eq(&self, other: &Self) -> bool {
@@ -13616,6 +13978,7 @@ impl ::core::clone::Clone for KSPROPERTY_VIDEOPROCAMP_NODE_S2 {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_VIDEOPROCAMP_NODE_S2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSPROPERTY_VIDEOPROCAMP_NODE_S2 {
     fn eq(&self, other: &Self) -> bool {
@@ -13644,6 +14007,7 @@ impl ::core::clone::Clone for KSPROPERTY_VIDEOPROCAMP_S {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_VIDEOPROCAMP_S {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSPROPERTY_VIDEOPROCAMP_S {
     fn eq(&self, other: &Self) -> bool {
@@ -13673,6 +14037,7 @@ impl ::core::clone::Clone for KSPROPERTY_VIDEOPROCAMP_S2 {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_VIDEOPROCAMP_S2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSPROPERTY_VIDEOPROCAMP_S2 {
     fn eq(&self, other: &Self) -> bool {
@@ -13710,6 +14075,7 @@ impl ::core::default::Default for KSPROPERTY_VIDMEM_TRANSPORT {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_VIDMEM_TRANSPORT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSPROPERTY_VIDMEM_TRANSPORT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13765,6 +14131,7 @@ impl ::core::default::Default for KSPROPERTY_VPCONFIG {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_VPCONFIG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSPROPERTY_VPCONFIG {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13802,6 +14169,7 @@ impl ::core::default::Default for KSPROPERTY_WAVE {
 }
 unsafe impl ::windows::core::Abi for KSPROPERTY_WAVE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSPROPERTY_WAVE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13877,6 +14245,7 @@ impl ::core::clone::Clone for KSP_NODE {
 }
 unsafe impl ::windows::core::Abi for KSP_NODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSP_NODE {
     fn eq(&self, other: &Self) -> bool {
@@ -13904,6 +14273,7 @@ impl ::core::clone::Clone for KSP_PIN {
 }
 unsafe impl ::windows::core::Abi for KSP_PIN {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSP_PIN {
     fn eq(&self, other: &Self) -> bool {
@@ -13930,6 +14300,7 @@ impl ::core::clone::Clone for KSP_PIN_0 {
 }
 unsafe impl ::windows::core::Abi for KSP_PIN_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSP_PIN_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -13958,6 +14329,7 @@ impl ::core::clone::Clone for KSP_TIMEFORMAT {
 }
 unsafe impl ::windows::core::Abi for KSP_TIMEFORMAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSP_TIMEFORMAT {
     fn eq(&self, other: &Self) -> bool {
@@ -13990,6 +14362,7 @@ impl ::core::fmt::Debug for KSQUALITY {
 }
 unsafe impl ::windows::core::Abi for KSQUALITY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSQUALITY {
     fn eq(&self, other: &Self) -> bool {
@@ -14026,6 +14399,7 @@ impl ::core::fmt::Debug for KSQUALITY_MANAGER {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KSQUALITY_MANAGER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KSQUALITY_MANAGER {
@@ -14060,6 +14434,7 @@ impl ::core::clone::Clone for KSQUERYBUFFER {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KSQUERYBUFFER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KSQUERYBUFFER {
@@ -14092,6 +14467,7 @@ impl ::core::clone::Clone for KSRATE {
 }
 unsafe impl ::windows::core::Abi for KSRATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSRATE {
     fn eq(&self, other: &Self) -> bool {
@@ -14118,6 +14494,7 @@ impl ::core::clone::Clone for KSRATE_CAPABILITY {
 }
 unsafe impl ::windows::core::Abi for KSRATE_CAPABILITY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSRATE_CAPABILITY {
     fn eq(&self, other: &Self) -> bool {
@@ -14156,6 +14533,7 @@ impl ::core::clone::Clone for KSRELATIVEEVENT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KSRELATIVEEVENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KSRELATIVEEVENT {
@@ -14189,6 +14567,7 @@ impl ::core::clone::Clone for KSRELATIVEEVENT_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KSRELATIVEEVENT_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KSRELATIVEEVENT_0 {
@@ -14229,6 +14608,7 @@ impl ::core::default::Default for KSRESET {
 }
 unsafe impl ::windows::core::Abi for KSRESET {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSRESET {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14254,6 +14634,7 @@ impl ::core::fmt::Debug for KSRESOLUTION {
 }
 unsafe impl ::windows::core::Abi for KSRESOLUTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSRESOLUTION {
     fn eq(&self, other: &Self) -> bool {
@@ -14291,6 +14672,7 @@ impl ::core::fmt::Debug for KSRTAUDIO_BUFFER {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KSRTAUDIO_BUFFER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KSRTAUDIO_BUFFER {
@@ -14331,6 +14713,7 @@ impl ::core::fmt::Debug for KSRTAUDIO_BUFFER32 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KSRTAUDIO_BUFFER32 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KSRTAUDIO_BUFFER32 {
@@ -14361,6 +14744,7 @@ impl ::core::clone::Clone for KSRTAUDIO_BUFFER_PROPERTY {
 }
 unsafe impl ::windows::core::Abi for KSRTAUDIO_BUFFER_PROPERTY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSRTAUDIO_BUFFER_PROPERTY {
     fn eq(&self, other: &Self) -> bool {
@@ -14388,6 +14772,7 @@ impl ::core::clone::Clone for KSRTAUDIO_BUFFER_PROPERTY32 {
 }
 unsafe impl ::windows::core::Abi for KSRTAUDIO_BUFFER_PROPERTY32 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSRTAUDIO_BUFFER_PROPERTY32 {
     fn eq(&self, other: &Self) -> bool {
@@ -14416,6 +14801,7 @@ impl ::core::clone::Clone for KSRTAUDIO_BUFFER_PROPERTY_WITH_NOTIFICATION {
 }
 unsafe impl ::windows::core::Abi for KSRTAUDIO_BUFFER_PROPERTY_WITH_NOTIFICATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSRTAUDIO_BUFFER_PROPERTY_WITH_NOTIFICATION {
     fn eq(&self, other: &Self) -> bool {
@@ -14444,6 +14830,7 @@ impl ::core::clone::Clone for KSRTAUDIO_BUFFER_PROPERTY_WITH_NOTIFICATION32 {
 }
 unsafe impl ::windows::core::Abi for KSRTAUDIO_BUFFER_PROPERTY_WITH_NOTIFICATION32 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSRTAUDIO_BUFFER_PROPERTY_WITH_NOTIFICATION32 {
     fn eq(&self, other: &Self) -> bool {
@@ -14482,6 +14869,7 @@ impl ::core::fmt::Debug for KSRTAUDIO_GETREADPACKET_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KSRTAUDIO_GETREADPACKET_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KSRTAUDIO_GETREADPACKET_INFO {
@@ -14517,6 +14905,7 @@ impl ::core::fmt::Debug for KSRTAUDIO_HWLATENCY {
 }
 unsafe impl ::windows::core::Abi for KSRTAUDIO_HWLATENCY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSRTAUDIO_HWLATENCY {
     fn eq(&self, other: &Self) -> bool {
@@ -14551,6 +14940,7 @@ impl ::core::fmt::Debug for KSRTAUDIO_HWREGISTER {
 }
 unsafe impl ::windows::core::Abi for KSRTAUDIO_HWREGISTER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSRTAUDIO_HWREGISTER {
     fn eq(&self, other: &Self) -> bool {
@@ -14585,6 +14975,7 @@ impl ::core::fmt::Debug for KSRTAUDIO_HWREGISTER32 {
 }
 unsafe impl ::windows::core::Abi for KSRTAUDIO_HWREGISTER32 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSRTAUDIO_HWREGISTER32 {
     fn eq(&self, other: &Self) -> bool {
@@ -14611,6 +15002,7 @@ impl ::core::clone::Clone for KSRTAUDIO_HWREGISTER_PROPERTY {
 }
 unsafe impl ::windows::core::Abi for KSRTAUDIO_HWREGISTER_PROPERTY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSRTAUDIO_HWREGISTER_PROPERTY {
     fn eq(&self, other: &Self) -> bool {
@@ -14637,6 +15029,7 @@ impl ::core::clone::Clone for KSRTAUDIO_HWREGISTER_PROPERTY32 {
 }
 unsafe impl ::windows::core::Abi for KSRTAUDIO_HWREGISTER_PROPERTY32 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSRTAUDIO_HWREGISTER_PROPERTY32 {
     fn eq(&self, other: &Self) -> bool {
@@ -14667,6 +15060,7 @@ impl ::core::clone::Clone for KSRTAUDIO_NOTIFICATION_EVENT_PROPERTY {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KSRTAUDIO_NOTIFICATION_EVENT_PROPERTY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KSRTAUDIO_NOTIFICATION_EVENT_PROPERTY {
@@ -14696,6 +15090,7 @@ impl ::core::clone::Clone for KSRTAUDIO_NOTIFICATION_EVENT_PROPERTY32 {
 }
 unsafe impl ::windows::core::Abi for KSRTAUDIO_NOTIFICATION_EVENT_PROPERTY32 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSRTAUDIO_NOTIFICATION_EVENT_PROPERTY32 {
     fn eq(&self, other: &Self) -> bool {
@@ -14728,6 +15123,7 @@ impl ::core::fmt::Debug for KSRTAUDIO_PACKETVREGISTER {
 }
 unsafe impl ::windows::core::Abi for KSRTAUDIO_PACKETVREGISTER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSRTAUDIO_PACKETVREGISTER {
     fn eq(&self, other: &Self) -> bool {
@@ -14754,6 +15150,7 @@ impl ::core::clone::Clone for KSRTAUDIO_PACKETVREGISTER_PROPERTY {
 }
 unsafe impl ::windows::core::Abi for KSRTAUDIO_PACKETVREGISTER_PROPERTY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSRTAUDIO_PACKETVREGISTER_PROPERTY {
     fn eq(&self, other: &Self) -> bool {
@@ -14786,6 +15183,7 @@ impl ::core::fmt::Debug for KSRTAUDIO_SETWRITEPACKET_INFO {
 }
 unsafe impl ::windows::core::Abi for KSRTAUDIO_SETWRITEPACKET_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSRTAUDIO_SETWRITEPACKET_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -14812,6 +15210,7 @@ impl ::core::clone::Clone for KSSOUNDDETECTORPROPERTY {
 }
 unsafe impl ::windows::core::Abi for KSSOUNDDETECTORPROPERTY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSSOUNDDETECTORPROPERTY {
     fn eq(&self, other: &Self) -> bool {
@@ -14849,6 +15248,7 @@ impl ::core::default::Default for KSSTATE {
 }
 unsafe impl ::windows::core::Abi for KSSTATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSSTATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14870,6 +15270,7 @@ impl ::core::clone::Clone for KSSTREAMALLOCATOR_STATUS {
 }
 unsafe impl ::windows::core::Abi for KSSTREAMALLOCATOR_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSSTREAMALLOCATOR_STATUS {
     fn eq(&self, other: &Self) -> bool {
@@ -14897,6 +15298,7 @@ impl ::core::clone::Clone for KSSTREAMALLOCATOR_STATUS_EX {
 }
 unsafe impl ::windows::core::Abi for KSSTREAMALLOCATOR_STATUS_EX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSSTREAMALLOCATOR_STATUS_EX {
     fn eq(&self, other: &Self) -> bool {
@@ -14942,6 +15344,7 @@ impl ::core::fmt::Debug for KSSTREAM_HEADER {
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 unsafe impl ::windows::core::Abi for KSSTREAM_HEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 impl ::core::cmp::PartialEq for KSSTREAM_HEADER {
@@ -14987,6 +15390,7 @@ impl ::core::fmt::Debug for KSSTREAM_HEADER {
 #[cfg(target_arch = "x86")]
 unsafe impl ::windows::core::Abi for KSSTREAM_HEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 impl ::core::cmp::PartialEq for KSSTREAM_HEADER {
@@ -15063,6 +15467,7 @@ impl ::core::fmt::Debug for KSSTREAM_METADATA_INFO {
 }
 unsafe impl ::windows::core::Abi for KSSTREAM_METADATA_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSSTREAM_METADATA_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -15097,6 +15502,7 @@ impl ::core::clone::Clone for KSSTREAM_UVC_METADATA {
 }
 unsafe impl ::windows::core::Abi for KSSTREAM_UVC_METADATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSSTREAM_UVC_METADATA {
     fn eq(&self, other: &Self) -> bool {
@@ -15126,6 +15532,7 @@ impl ::core::clone::Clone for KSSTREAM_UVC_METADATATYPE_TIMESTAMP {
 }
 unsafe impl ::windows::core::Abi for KSSTREAM_UVC_METADATATYPE_TIMESTAMP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSSTREAM_UVC_METADATATYPE_TIMESTAMP {
     fn eq(&self, other: &Self) -> bool {
@@ -15152,6 +15559,7 @@ impl ::core::clone::Clone for KSSTREAM_UVC_METADATATYPE_TIMESTAMP_0 {
 }
 unsafe impl ::windows::core::Abi for KSSTREAM_UVC_METADATATYPE_TIMESTAMP_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSSTREAM_UVC_METADATATYPE_TIMESTAMP_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -15182,6 +15590,7 @@ impl ::core::fmt::Debug for KSSTREAM_UVC_METADATATYPE_TIMESTAMP_0_0 {
 }
 unsafe impl ::windows::core::Abi for KSSTREAM_UVC_METADATATYPE_TIMESTAMP_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSSTREAM_UVC_METADATATYPE_TIMESTAMP_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -15229,6 +15638,7 @@ impl ::core::fmt::Debug for KSTELEPHONY_CALLCONTROL {
 }
 unsafe impl ::windows::core::Abi for KSTELEPHONY_CALLCONTROL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSTELEPHONY_CALLCONTROL {
     fn eq(&self, other: &Self) -> bool {
@@ -15260,6 +15670,7 @@ impl ::core::fmt::Debug for KSTELEPHONY_CALLINFO {
 }
 unsafe impl ::windows::core::Abi for KSTELEPHONY_CALLINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSTELEPHONY_CALLINFO {
     fn eq(&self, other: &Self) -> bool {
@@ -15291,6 +15702,7 @@ impl ::core::fmt::Debug for KSTELEPHONY_PROVIDERCHANGE {
 }
 unsafe impl ::windows::core::Abi for KSTELEPHONY_PROVIDERCHANGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSTELEPHONY_PROVIDERCHANGE {
     fn eq(&self, other: &Self) -> bool {
@@ -15323,6 +15735,7 @@ impl ::core::fmt::Debug for KSTIME {
 }
 unsafe impl ::windows::core::Abi for KSTIME {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSTIME {
     fn eq(&self, other: &Self) -> bool {
@@ -15365,6 +15778,7 @@ impl ::core::fmt::Debug for KSTOPOLOGY {
 }
 unsafe impl ::windows::core::Abi for KSTOPOLOGY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSTOPOLOGY {
     fn eq(&self, other: &Self) -> bool {
@@ -15398,6 +15812,7 @@ impl ::core::fmt::Debug for KSTOPOLOGY_CONNECTION {
 }
 unsafe impl ::windows::core::Abi for KSTOPOLOGY_CONNECTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSTOPOLOGY_CONNECTION {
     fn eq(&self, other: &Self) -> bool {
@@ -15429,6 +15844,7 @@ impl ::core::fmt::Debug for KSTOPOLOGY_ENDPOINTID {
 }
 unsafe impl ::windows::core::Abi for KSTOPOLOGY_ENDPOINTID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSTOPOLOGY_ENDPOINTID {
     fn eq(&self, other: &Self) -> bool {
@@ -15460,6 +15876,7 @@ impl ::core::fmt::Debug for KSTOPOLOGY_ENDPOINTIDPAIR {
 }
 unsafe impl ::windows::core::Abi for KSTOPOLOGY_ENDPOINTIDPAIR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSTOPOLOGY_ENDPOINTIDPAIR {
     fn eq(&self, other: &Self) -> bool {
@@ -15492,6 +15909,7 @@ impl ::core::fmt::Debug for KSVPMAXPIXELRATE {
 }
 unsafe impl ::windows::core::Abi for KSVPMAXPIXELRATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSVPMAXPIXELRATE {
     fn eq(&self, other: &Self) -> bool {
@@ -15518,6 +15936,7 @@ impl ::core::clone::Clone for KSVPSIZE_PROP {
 }
 unsafe impl ::windows::core::Abi for KSVPSIZE_PROP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSVPSIZE_PROP {
     fn eq(&self, other: &Self) -> bool {
@@ -15550,6 +15969,7 @@ impl ::core::fmt::Debug for KSVPSURFACEPARAMS {
 }
 unsafe impl ::windows::core::Abi for KSVPSURFACEPARAMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSVPSURFACEPARAMS {
     fn eq(&self, other: &Self) -> bool {
@@ -15584,6 +16004,7 @@ impl ::core::clone::Clone for KSWAVETABLE_WAVE_DESC {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KSWAVETABLE_WAVE_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KSWAVETABLE_WAVE_DESC {
@@ -15619,6 +16040,7 @@ impl ::core::fmt::Debug for KSWAVE_BUFFER {
 }
 unsafe impl ::windows::core::Abi for KSWAVE_BUFFER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSWAVE_BUFFER {
     fn eq(&self, other: &Self) -> bool {
@@ -15653,6 +16075,7 @@ impl ::core::fmt::Debug for KSWAVE_COMPATCAPS {
 }
 unsafe impl ::windows::core::Abi for KSWAVE_COMPATCAPS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSWAVE_COMPATCAPS {
     fn eq(&self, other: &Self) -> bool {
@@ -15693,6 +16116,7 @@ impl ::core::fmt::Debug for KSWAVE_INPUT_CAPABILITIES {
 }
 unsafe impl ::windows::core::Abi for KSWAVE_INPUT_CAPABILITIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSWAVE_INPUT_CAPABILITIES {
     fn eq(&self, other: &Self) -> bool {
@@ -15763,6 +16187,7 @@ impl ::core::fmt::Debug for KSWAVE_OUTPUT_CAPABILITIES {
 }
 unsafe impl ::windows::core::Abi for KSWAVE_OUTPUT_CAPABILITIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSWAVE_OUTPUT_CAPABILITIES {
     fn eq(&self, other: &Self) -> bool {
@@ -15794,6 +16219,7 @@ impl ::core::fmt::Debug for KSWAVE_VOLUME {
 }
 unsafe impl ::windows::core::Abi for KSWAVE_VOLUME {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KSWAVE_VOLUME {
     fn eq(&self, other: &Self) -> bool {
@@ -15839,6 +16265,7 @@ impl ::core::default::Default for KS_AMPixAspectRatio {
 }
 unsafe impl ::windows::core::Abi for KS_AMPixAspectRatio {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KS_AMPixAspectRatio {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -15894,6 +16321,7 @@ impl ::core::fmt::Debug for KS_AMVPDATAINFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KS_AMVPDATAINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KS_AMVPDATAINFO {
@@ -15936,6 +16364,7 @@ impl ::core::fmt::Debug for KS_AMVPDIMINFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KS_AMVPDIMINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KS_AMVPDIMINFO {
@@ -15970,6 +16399,7 @@ impl ::core::fmt::Debug for KS_AMVPSIZE {
 }
 unsafe impl ::windows::core::Abi for KS_AMVPSIZE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KS_AMVPSIZE {
     fn eq(&self, other: &Self) -> bool {
@@ -16009,6 +16439,7 @@ impl ::core::default::Default for KS_AMVP_MODE {
 }
 unsafe impl ::windows::core::Abi for KS_AMVP_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KS_AMVP_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -16038,6 +16469,7 @@ impl ::core::default::Default for KS_AMVP_SELECTFORMATBY {
 }
 unsafe impl ::windows::core::Abi for KS_AMVP_SELECTFORMATBY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KS_AMVP_SELECTFORMATBY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -16063,6 +16495,7 @@ impl ::core::fmt::Debug for KS_AM_ExactRateChange {
 }
 unsafe impl ::windows::core::Abi for KS_AM_ExactRateChange {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KS_AM_ExactRateChange {
     fn eq(&self, other: &Self) -> bool {
@@ -16100,6 +16533,7 @@ impl ::core::default::Default for KS_AM_PROPERTY_TS_RATE_CHANGE {
 }
 unsafe impl ::windows::core::Abi for KS_AM_PROPERTY_TS_RATE_CHANGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KS_AM_PROPERTY_TS_RATE_CHANGE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -16125,6 +16559,7 @@ impl ::core::fmt::Debug for KS_AM_SimpleRateChange {
 }
 unsafe impl ::windows::core::Abi for KS_AM_SimpleRateChange {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KS_AM_SimpleRateChange {
     fn eq(&self, other: &Self) -> bool {
@@ -16166,6 +16601,7 @@ impl ::core::fmt::Debug for KS_AnalogVideoInfo {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KS_AnalogVideoInfo {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KS_AnalogVideoInfo {
@@ -16240,6 +16676,7 @@ impl ::core::default::Default for KS_AnalogVideoStandard {
 }
 unsafe impl ::windows::core::Abi for KS_AnalogVideoStandard {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KS_AnalogVideoStandard {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -16280,6 +16717,7 @@ impl ::core::fmt::Debug for KS_BITMAPINFOHEADER {
 }
 unsafe impl ::windows::core::Abi for KS_BITMAPINFOHEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KS_BITMAPINFOHEADER {
     fn eq(&self, other: &Self) -> bool {
@@ -16349,6 +16787,7 @@ impl ::core::fmt::Debug for KS_COLCON {
 }
 unsafe impl ::windows::core::Abi for KS_COLCON {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KS_COLCON {
     fn eq(&self, other: &Self) -> bool {
@@ -16381,6 +16820,7 @@ impl ::core::fmt::Debug for KS_COMPRESSION {
 }
 unsafe impl ::windows::core::Abi for KS_COMPRESSION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KS_COMPRESSION {
     fn eq(&self, other: &Self) -> bool {
@@ -16413,6 +16853,7 @@ impl ::core::fmt::Debug for KS_COPY_MACROVISION {
 }
 unsafe impl ::windows::core::Abi for KS_COPY_MACROVISION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KS_COPY_MACROVISION {
     fn eq(&self, other: &Self) -> bool {
@@ -16450,6 +16891,7 @@ impl ::core::default::Default for KS_COPY_MACROVISION_LEVEL {
 }
 unsafe impl ::windows::core::Abi for KS_COPY_MACROVISION_LEVEL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KS_COPY_MACROVISION_LEVEL {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -16479,6 +16921,7 @@ impl ::core::default::Default for KS_CameraControlAsyncOperation {
 }
 unsafe impl ::windows::core::Abi for KS_CameraControlAsyncOperation {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KS_CameraControlAsyncOperation {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -16512,6 +16955,7 @@ impl ::core::default::Default for KS_CompressionCaps {
 }
 unsafe impl ::windows::core::Abi for KS_CompressionCaps {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KS_CompressionCaps {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -16532,6 +16976,7 @@ impl ::core::clone::Clone for KS_DATAFORMAT_H264VIDEOINFO {
 }
 unsafe impl ::windows::core::Abi for KS_DATAFORMAT_H264VIDEOINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KS_DATAFORMAT_H264VIDEOINFO {
     fn eq(&self, other: &Self) -> bool {
@@ -16558,6 +17003,7 @@ impl ::core::clone::Clone for KS_DATAFORMAT_IMAGEINFO {
 }
 unsafe impl ::windows::core::Abi for KS_DATAFORMAT_IMAGEINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KS_DATAFORMAT_IMAGEINFO {
     fn eq(&self, other: &Self) -> bool {
@@ -16588,6 +17034,7 @@ impl ::core::clone::Clone for KS_DATAFORMAT_MPEGVIDEOINFO2 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KS_DATAFORMAT_MPEGVIDEOINFO2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KS_DATAFORMAT_MPEGVIDEOINFO2 {
@@ -16617,6 +17064,7 @@ impl ::core::clone::Clone for KS_DATAFORMAT_VBIINFOHEADER {
 }
 unsafe impl ::windows::core::Abi for KS_DATAFORMAT_VBIINFOHEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KS_DATAFORMAT_VBIINFOHEADER {
     fn eq(&self, other: &Self) -> bool {
@@ -16647,6 +17095,7 @@ impl ::core::clone::Clone for KS_DATAFORMAT_VIDEOINFOHEADER {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KS_DATAFORMAT_VIDEOINFOHEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KS_DATAFORMAT_VIDEOINFOHEADER {
@@ -16680,6 +17129,7 @@ impl ::core::clone::Clone for KS_DATAFORMAT_VIDEOINFOHEADER2 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KS_DATAFORMAT_VIDEOINFOHEADER2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KS_DATAFORMAT_VIDEOINFOHEADER2 {
@@ -16713,6 +17163,7 @@ impl ::core::clone::Clone for KS_DATAFORMAT_VIDEOINFO_PALETTE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KS_DATAFORMAT_VIDEOINFO_PALETTE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KS_DATAFORMAT_VIDEOINFO_PALETTE {
@@ -16746,6 +17197,7 @@ impl ::core::clone::Clone for KS_DATARANGE_ANALOGVIDEO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KS_DATARANGE_ANALOGVIDEO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KS_DATARANGE_ANALOGVIDEO {
@@ -16784,6 +17236,7 @@ impl ::core::clone::Clone for KS_DATARANGE_H264_VIDEO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KS_DATARANGE_H264_VIDEO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KS_DATARANGE_H264_VIDEO {
@@ -16818,6 +17271,7 @@ impl ::core::clone::Clone for KS_DATARANGE_IMAGE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KS_DATARANGE_IMAGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KS_DATARANGE_IMAGE {
@@ -16856,6 +17310,7 @@ impl ::core::clone::Clone for KS_DATARANGE_MPEG1_VIDEO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KS_DATARANGE_MPEG1_VIDEO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KS_DATARANGE_MPEG1_VIDEO {
@@ -16894,6 +17349,7 @@ impl ::core::clone::Clone for KS_DATARANGE_MPEG2_VIDEO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KS_DATARANGE_MPEG2_VIDEO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KS_DATARANGE_MPEG2_VIDEO {
@@ -16932,6 +17388,7 @@ impl ::core::clone::Clone for KS_DATARANGE_VIDEO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KS_DATARANGE_VIDEO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KS_DATARANGE_VIDEO {
@@ -16970,6 +17427,7 @@ impl ::core::clone::Clone for KS_DATARANGE_VIDEO2 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KS_DATARANGE_VIDEO2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KS_DATARANGE_VIDEO2 {
@@ -17008,6 +17466,7 @@ impl ::core::clone::Clone for KS_DATARANGE_VIDEO_PALETTE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KS_DATARANGE_VIDEO_PALETTE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KS_DATARANGE_VIDEO_PALETTE {
@@ -17046,6 +17505,7 @@ impl ::core::clone::Clone for KS_DATARANGE_VIDEO_VBI {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KS_DATARANGE_VIDEO_VBI {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KS_DATARANGE_VIDEO_VBI {
@@ -17088,6 +17548,7 @@ impl ::core::default::Default for KS_DVDCOPYSTATE {
 }
 unsafe impl ::windows::core::Abi for KS_DVDCOPYSTATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KS_DVDCOPYSTATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -17113,6 +17574,7 @@ impl ::core::fmt::Debug for KS_DVDCOPY_BUSKEY {
 }
 unsafe impl ::windows::core::Abi for KS_DVDCOPY_BUSKEY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KS_DVDCOPY_BUSKEY {
     fn eq(&self, other: &Self) -> bool {
@@ -17144,6 +17606,7 @@ impl ::core::fmt::Debug for KS_DVDCOPY_CHLGKEY {
 }
 unsafe impl ::windows::core::Abi for KS_DVDCOPY_CHLGKEY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KS_DVDCOPY_CHLGKEY {
     fn eq(&self, other: &Self) -> bool {
@@ -17174,6 +17637,7 @@ impl ::core::fmt::Debug for KS_DVDCOPY_DISCKEY {
 }
 unsafe impl ::windows::core::Abi for KS_DVDCOPY_DISCKEY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KS_DVDCOPY_DISCKEY {
     fn eq(&self, other: &Self) -> bool {
@@ -17206,6 +17670,7 @@ impl ::core::fmt::Debug for KS_DVDCOPY_REGION {
 }
 unsafe impl ::windows::core::Abi for KS_DVDCOPY_REGION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KS_DVDCOPY_REGION {
     fn eq(&self, other: &Self) -> bool {
@@ -17236,6 +17701,7 @@ impl ::core::fmt::Debug for KS_DVDCOPY_SET_COPY_STATE {
 }
 unsafe impl ::windows::core::Abi for KS_DVDCOPY_SET_COPY_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KS_DVDCOPY_SET_COPY_STATE {
     fn eq(&self, other: &Self) -> bool {
@@ -17269,6 +17735,7 @@ impl ::core::fmt::Debug for KS_DVDCOPY_TITLEKEY {
 }
 unsafe impl ::windows::core::Abi for KS_DVDCOPY_TITLEKEY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KS_DVDCOPY_TITLEKEY {
     fn eq(&self, other: &Self) -> bool {
@@ -17324,6 +17791,7 @@ impl ::core::fmt::Debug for KS_DVD_YCrCb {
 }
 unsafe impl ::windows::core::Abi for KS_DVD_YCrCb {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KS_DVD_YCrCb {
     fn eq(&self, other: &Self) -> bool {
@@ -17357,6 +17825,7 @@ impl ::core::fmt::Debug for KS_DVD_YUV {
 }
 unsafe impl ::windows::core::Abi for KS_DVD_YUV {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KS_DVD_YUV {
     fn eq(&self, other: &Self) -> bool {
@@ -17395,6 +17864,7 @@ impl ::core::clone::Clone for KS_FRAME_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KS_FRAME_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KS_FRAME_INFO {
@@ -17428,6 +17898,7 @@ impl ::core::clone::Clone for KS_FRAME_INFO_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KS_FRAME_INFO_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KS_FRAME_INFO_0 {
@@ -17461,6 +17932,7 @@ impl ::core::clone::Clone for KS_FRAME_INFO_1 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KS_FRAME_INFO_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KS_FRAME_INFO_1 {
@@ -17500,6 +17972,7 @@ impl ::core::fmt::Debug for KS_FRAME_INFO_1_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KS_FRAME_INFO_1_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KS_FRAME_INFO_1_0 {
@@ -17537,6 +18010,7 @@ impl ::core::clone::Clone for KS_FRAMING_ITEM {
 }
 unsafe impl ::windows::core::Abi for KS_FRAMING_ITEM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KS_FRAMING_ITEM {
     fn eq(&self, other: &Self) -> bool {
@@ -17563,6 +18037,7 @@ impl ::core::clone::Clone for KS_FRAMING_ITEM_0 {
 }
 unsafe impl ::windows::core::Abi for KS_FRAMING_ITEM_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KS_FRAMING_ITEM_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -17595,6 +18070,7 @@ impl ::core::fmt::Debug for KS_FRAMING_RANGE {
 }
 unsafe impl ::windows::core::Abi for KS_FRAMING_RANGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KS_FRAMING_RANGE {
     fn eq(&self, other: &Self) -> bool {
@@ -17627,6 +18103,7 @@ impl ::core::fmt::Debug for KS_FRAMING_RANGE_WEIGHTED {
 }
 unsafe impl ::windows::core::Abi for KS_FRAMING_RANGE_WEIGHTED {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KS_FRAMING_RANGE_WEIGHTED {
     fn eq(&self, other: &Self) -> bool {
@@ -17733,6 +18210,7 @@ impl ::core::fmt::Debug for KS_H264VIDEOINFO {
 }
 unsafe impl ::windows::core::Abi for KS_H264VIDEOINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KS_H264VIDEOINFO {
     fn eq(&self, other: &Self) -> bool {
@@ -17802,6 +18280,7 @@ impl ::core::default::Default for KS_LogicalMemoryType {
 }
 unsafe impl ::windows::core::Abi for KS_LogicalMemoryType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KS_LogicalMemoryType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -17831,6 +18310,7 @@ impl ::core::fmt::Debug for KS_MPEAUDIOINFO {
 }
 unsafe impl ::windows::core::Abi for KS_MPEAUDIOINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KS_MPEAUDIOINFO {
     fn eq(&self, other: &Self) -> bool {
@@ -17869,6 +18349,7 @@ impl ::core::fmt::Debug for KS_MPEG1VIDEOINFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KS_MPEG1VIDEOINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KS_MPEG1VIDEOINFO {
@@ -17909,6 +18390,7 @@ impl ::core::default::Default for KS_MPEG2Level {
 }
 unsafe impl ::windows::core::Abi for KS_MPEG2Level {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KS_MPEG2Level {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -17942,6 +18424,7 @@ impl ::core::default::Default for KS_MPEG2Profile {
 }
 unsafe impl ::windows::core::Abi for KS_MPEG2Profile {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KS_MPEG2Profile {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -17993,6 +18476,7 @@ impl ::core::clone::Clone for KS_MPEGVIDEOINFO2 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KS_MPEGVIDEOINFO2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KS_MPEGVIDEOINFO2 {
@@ -18099,6 +18583,7 @@ impl ::core::default::Default for KS_PhysicalConnectorType {
 }
 unsafe impl ::windows::core::Abi for KS_PhysicalConnectorType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KS_PhysicalConnectorType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -18126,6 +18611,7 @@ impl ::core::fmt::Debug for KS_RGBQUAD {
 }
 unsafe impl ::windows::core::Abi for KS_RGBQUAD {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KS_RGBQUAD {
     fn eq(&self, other: &Self) -> bool {
@@ -18170,6 +18656,7 @@ impl ::core::default::Default for KS_SEEKING_CAPABILITIES {
 }
 unsafe impl ::windows::core::Abi for KS_SEEKING_CAPABILITIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KS_SEEKING_CAPABILITIES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -18207,6 +18694,7 @@ impl ::core::default::Default for KS_SEEKING_FLAGS {
 }
 unsafe impl ::windows::core::Abi for KS_SEEKING_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KS_SEEKING_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -18232,6 +18720,7 @@ impl ::core::fmt::Debug for KS_TRUECOLORINFO {
 }
 unsafe impl ::windows::core::Abi for KS_TRUECOLORINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KS_TRUECOLORINFO {
     fn eq(&self, other: &Self) -> bool {
@@ -18267,6 +18756,7 @@ impl ::core::default::Default for KS_TUNER_STRATEGY {
 }
 unsafe impl ::windows::core::Abi for KS_TUNER_STRATEGY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KS_TUNER_STRATEGY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -18296,6 +18786,7 @@ impl ::core::default::Default for KS_TUNER_TUNING_FLAGS {
 }
 unsafe impl ::windows::core::Abi for KS_TUNER_TUNING_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KS_TUNER_TUNING_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -18345,6 +18836,7 @@ impl ::core::fmt::Debug for KS_TVTUNER_CHANGE_INFO {
 }
 unsafe impl ::windows::core::Abi for KS_TVTUNER_CHANGE_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KS_TVTUNER_CHANGE_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -18407,6 +18899,7 @@ impl ::core::fmt::Debug for KS_VBIINFOHEADER {
 }
 unsafe impl ::windows::core::Abi for KS_VBIINFOHEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KS_VBIINFOHEADER {
     fn eq(&self, other: &Self) -> bool {
@@ -18459,6 +18952,7 @@ impl ::core::fmt::Debug for KS_VBI_FRAME_INFO {
 }
 unsafe impl ::windows::core::Abi for KS_VBI_FRAME_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KS_VBI_FRAME_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -18494,6 +18988,7 @@ impl ::core::default::Default for KS_VIDEODECODER_FLAGS {
 }
 unsafe impl ::windows::core::Abi for KS_VIDEODECODER_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KS_VIDEODECODER_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -18523,6 +19018,7 @@ impl ::core::clone::Clone for KS_VIDEOINFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KS_VIDEOINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KS_VIDEOINFO {
@@ -18557,6 +19053,7 @@ impl ::core::clone::Clone for KS_VIDEOINFO_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KS_VIDEOINFO_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KS_VIDEOINFO_0 {
@@ -18600,6 +19097,7 @@ impl ::core::fmt::Debug for KS_VIDEOINFOHEADER {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KS_VIDEOINFOHEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KS_VIDEOINFOHEADER {
@@ -18643,6 +19141,7 @@ impl ::core::clone::Clone for KS_VIDEOINFOHEADER2 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KS_VIDEOINFOHEADER2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KS_VIDEOINFOHEADER2 {
@@ -18676,6 +19175,7 @@ impl ::core::clone::Clone for KS_VIDEOINFOHEADER2_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KS_VIDEOINFOHEADER2_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KS_VIDEOINFOHEADER2_0 {
@@ -18802,6 +19302,7 @@ impl ::core::fmt::Debug for KS_VIDEO_STREAM_CONFIG_CAPS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KS_VIDEO_STREAM_CONFIG_CAPS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KS_VIDEO_STREAM_CONFIG_CAPS {
@@ -18854,6 +19355,7 @@ impl ::core::default::Default for KS_VideoControlFlags {
 }
 unsafe impl ::windows::core::Abi for KS_VideoControlFlags {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KS_VideoControlFlags {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -18887,6 +19389,7 @@ impl ::core::default::Default for KS_VideoStreamingHints {
 }
 unsafe impl ::windows::core::Abi for KS_VideoStreamingHints {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KS_VideoStreamingHints {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -19053,6 +19556,7 @@ impl ::core::clone::Clone for LOOPEDSTREAMING_POSITION_EVENT_DATA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for LOOPEDSTREAMING_POSITION_EVENT_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for LOOPEDSTREAMING_POSITION_EVENT_DATA {
@@ -19101,6 +19605,7 @@ impl ::core::fmt::Debug for MEDIUM_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MEDIUM_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MEDIUM_INFO {
@@ -19130,6 +19635,7 @@ impl ::core::clone::Clone for MF_MDL_SHARED_PAYLOAD_KEY {
 }
 unsafe impl ::windows::core::Abi for MF_MDL_SHARED_PAYLOAD_KEY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MF_MDL_SHARED_PAYLOAD_KEY {
     fn eq(&self, other: &Self) -> bool {
@@ -19162,6 +19668,7 @@ impl ::core::fmt::Debug for MF_MDL_SHARED_PAYLOAD_KEY_0 {
 }
 unsafe impl ::windows::core::Abi for MF_MDL_SHARED_PAYLOAD_KEY_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MF_MDL_SHARED_PAYLOAD_KEY_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -19199,6 +19706,7 @@ impl ::core::fmt::Debug for NABTSFEC_BUFFER {
 }
 unsafe impl ::windows::core::Abi for NABTSFEC_BUFFER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NABTSFEC_BUFFER {
     fn eq(&self, other: &Self) -> bool {
@@ -19226,6 +19734,7 @@ impl ::core::clone::Clone for NABTS_BUFFER {
 }
 unsafe impl ::windows::core::Abi for NABTS_BUFFER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NABTS_BUFFER {
     fn eq(&self, other: &Self) -> bool {
@@ -19257,6 +19766,7 @@ impl ::core::fmt::Debug for NABTS_BUFFER_LINE {
 }
 unsafe impl ::windows::core::Abi for NABTS_BUFFER_LINE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NABTS_BUFFER_LINE {
     fn eq(&self, other: &Self) -> bool {
@@ -19299,6 +19809,7 @@ impl ::core::fmt::Debug for OPTIMAL_WEIGHT_TOTALS {
 }
 unsafe impl ::windows::core::Abi for OPTIMAL_WEIGHT_TOTALS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for OPTIMAL_WEIGHT_TOTALS {
     fn eq(&self, other: &Self) -> bool {
@@ -19355,6 +19866,7 @@ impl ::core::default::Default for PIPE_ALLOCATOR_PLACE {
 }
 unsafe impl ::windows::core::Abi for PIPE_ALLOCATOR_PLACE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PIPE_ALLOCATOR_PLACE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -19381,6 +19893,7 @@ impl ::core::fmt::Debug for PIPE_DIMENSIONS {
 }
 unsafe impl ::windows::core::Abi for PIPE_DIMENSIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PIPE_DIMENSIONS {
     fn eq(&self, other: &Self) -> bool {
@@ -19420,6 +19933,7 @@ impl ::core::default::Default for PIPE_STATE {
 }
 unsafe impl ::windows::core::Abi for PIPE_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PIPE_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -19449,6 +19963,7 @@ impl ::core::fmt::Debug for PIPE_TERMINATION {
 }
 unsafe impl ::windows::core::Abi for PIPE_TERMINATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PIPE_TERMINATION {
     fn eq(&self, other: &Self) -> bool {
@@ -19531,6 +20046,7 @@ impl ::core::fmt::Debug for SECURE_BUFFER_INFO {
 }
 unsafe impl ::windows::core::Abi for SECURE_BUFFER_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SECURE_BUFFER_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -19562,6 +20078,7 @@ impl ::core::fmt::Debug for SOUNDDETECTOR_PATTERNHEADER {
 }
 unsafe impl ::windows::core::Abi for SOUNDDETECTOR_PATTERNHEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SOUNDDETECTOR_PATTERNHEADER {
     fn eq(&self, other: &Self) -> bool {
@@ -19639,6 +20156,7 @@ impl ::core::default::Default for TELEPHONY_CALLCONTROLOP {
 }
 unsafe impl ::windows::core::Abi for TELEPHONY_CALLCONTROLOP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TELEPHONY_CALLCONTROLOP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -19670,6 +20188,7 @@ impl ::core::default::Default for TELEPHONY_CALLSTATE {
 }
 unsafe impl ::windows::core::Abi for TELEPHONY_CALLSTATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TELEPHONY_CALLSTATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -19699,6 +20218,7 @@ impl ::core::default::Default for TELEPHONY_CALLTYPE {
 }
 unsafe impl ::windows::core::Abi for TELEPHONY_CALLTYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TELEPHONY_CALLTYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -19728,6 +20248,7 @@ impl ::core::default::Default for TELEPHONY_PROVIDERCHANGEOP {
 }
 unsafe impl ::windows::core::Abi for TELEPHONY_PROVIDERCHANGEOP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TELEPHONY_PROVIDERCHANGEOP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -19756,6 +20277,7 @@ impl ::core::fmt::Debug for TRANSPORTAUDIOPARMS {
 }
 unsafe impl ::windows::core::Abi for TRANSPORTAUDIOPARMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TRANSPORTAUDIOPARMS {
     fn eq(&self, other: &Self) -> bool {
@@ -19846,6 +20368,7 @@ impl ::core::fmt::Debug for TRANSPORTBASICPARMS {
 }
 unsafe impl ::windows::core::Abi for TRANSPORTBASICPARMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TRANSPORTBASICPARMS {
     fn eq(&self, other: &Self) -> bool {
@@ -19902,6 +20425,7 @@ impl ::core::fmt::Debug for TRANSPORTSTATUS {
 }
 unsafe impl ::windows::core::Abi for TRANSPORTSTATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TRANSPORTSTATUS {
     fn eq(&self, other: &Self) -> bool {
@@ -19933,6 +20457,7 @@ impl ::core::fmt::Debug for TRANSPORTVIDEOPARMS {
 }
 unsafe impl ::windows::core::Abi for TRANSPORTVIDEOPARMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TRANSPORTVIDEOPARMS {
     fn eq(&self, other: &Self) -> bool {
@@ -19964,6 +20489,7 @@ impl ::core::fmt::Debug for TRANSPORT_STATE {
 }
 unsafe impl ::windows::core::Abi for TRANSPORT_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TRANSPORT_STATE {
     fn eq(&self, other: &Self) -> bool {
@@ -20001,6 +20527,7 @@ impl ::core::fmt::Debug for TUNER_ANALOG_CAPS_S {
 }
 unsafe impl ::windows::core::Abi for TUNER_ANALOG_CAPS_S {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TUNER_ANALOG_CAPS_S {
     fn eq(&self, other: &Self) -> bool {
@@ -20028,6 +20555,7 @@ impl ::core::clone::Clone for VBICAP_PROPERTIES_PROTECTION_S {
 }
 unsafe impl ::windows::core::Abi for VBICAP_PROPERTIES_PROTECTION_S {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VBICAP_PROPERTIES_PROTECTION_S {
     fn eq(&self, other: &Self) -> bool {
@@ -20058,6 +20586,7 @@ impl ::core::fmt::Debug for VBICODECFILTERING_CC_SUBSTREAMS {
 }
 unsafe impl ::windows::core::Abi for VBICODECFILTERING_CC_SUBSTREAMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VBICODECFILTERING_CC_SUBSTREAMS {
     fn eq(&self, other: &Self) -> bool {
@@ -20088,6 +20617,7 @@ impl ::core::fmt::Debug for VBICODECFILTERING_NABTS_SUBSTREAMS {
 }
 unsafe impl ::windows::core::Abi for VBICODECFILTERING_NABTS_SUBSTREAMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VBICODECFILTERING_NABTS_SUBSTREAMS {
     fn eq(&self, other: &Self) -> bool {
@@ -20118,6 +20648,7 @@ impl ::core::fmt::Debug for VBICODECFILTERING_SCANLINES {
 }
 unsafe impl ::windows::core::Abi for VBICODECFILTERING_SCANLINES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VBICODECFILTERING_SCANLINES {
     fn eq(&self, other: &Self) -> bool {
@@ -20148,6 +20679,7 @@ impl ::core::fmt::Debug for VBICODECFILTERING_STATISTICS_CC {
 }
 unsafe impl ::windows::core::Abi for VBICODECFILTERING_STATISTICS_CC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VBICODECFILTERING_STATISTICS_CC {
     fn eq(&self, other: &Self) -> bool {
@@ -20178,6 +20710,7 @@ impl ::core::fmt::Debug for VBICODECFILTERING_STATISTICS_CC_PIN {
 }
 unsafe impl ::windows::core::Abi for VBICODECFILTERING_STATISTICS_CC_PIN {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VBICODECFILTERING_STATISTICS_CC_PIN {
     fn eq(&self, other: &Self) -> bool {
@@ -20236,6 +20769,7 @@ impl ::core::fmt::Debug for VBICODECFILTERING_STATISTICS_COMMON {
 }
 unsafe impl ::windows::core::Abi for VBICODECFILTERING_STATISTICS_COMMON {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VBICODECFILTERING_STATISTICS_COMMON {
     fn eq(&self, other: &Self) -> bool {
@@ -20273,6 +20807,7 @@ impl ::core::fmt::Debug for VBICODECFILTERING_STATISTICS_COMMON_PIN {
 }
 unsafe impl ::windows::core::Abi for VBICODECFILTERING_STATISTICS_COMMON_PIN {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VBICODECFILTERING_STATISTICS_COMMON_PIN {
     fn eq(&self, other: &Self) -> bool {
@@ -20310,6 +20845,7 @@ impl ::core::fmt::Debug for VBICODECFILTERING_STATISTICS_NABTS {
 }
 unsafe impl ::windows::core::Abi for VBICODECFILTERING_STATISTICS_NABTS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VBICODECFILTERING_STATISTICS_NABTS {
     fn eq(&self, other: &Self) -> bool {
@@ -20340,6 +20876,7 @@ impl ::core::fmt::Debug for VBICODECFILTERING_STATISTICS_NABTS_PIN {
 }
 unsafe impl ::windows::core::Abi for VBICODECFILTERING_STATISTICS_NABTS_PIN {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VBICODECFILTERING_STATISTICS_NABTS_PIN {
     fn eq(&self, other: &Self) -> bool {
@@ -20370,6 +20907,7 @@ impl ::core::fmt::Debug for VBICODECFILTERING_STATISTICS_TELETEXT {
 }
 unsafe impl ::windows::core::Abi for VBICODECFILTERING_STATISTICS_TELETEXT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VBICODECFILTERING_STATISTICS_TELETEXT {
     fn eq(&self, other: &Self) -> bool {
@@ -20400,6 +20938,7 @@ impl ::core::fmt::Debug for VBICODECFILTERING_STATISTICS_TELETEXT_PIN {
 }
 unsafe impl ::windows::core::Abi for VBICODECFILTERING_STATISTICS_TELETEXT_PIN {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VBICODECFILTERING_STATISTICS_TELETEXT_PIN {
     fn eq(&self, other: &Self) -> bool {
@@ -20437,6 +20976,7 @@ impl ::core::fmt::Debug for VRAM_SURFACE_INFO {
 }
 unsafe impl ::windows::core::Abi for VRAM_SURFACE_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VRAM_SURFACE_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -20463,6 +21003,7 @@ impl ::core::clone::Clone for VRAM_SURFACE_INFO_PROPERTY_S {
 }
 unsafe impl ::windows::core::Abi for VRAM_SURFACE_INFO_PROPERTY_S {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VRAM_SURFACE_INFO_PROPERTY_S {
     fn eq(&self, other: &Self) -> bool {
@@ -20498,6 +21039,7 @@ impl ::core::fmt::Debug for WNF_KSCAMERA_STREAMSTATE_INFO {
 }
 unsafe impl ::windows::core::Abi for WNF_KSCAMERA_STREAMSTATE_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WNF_KSCAMERA_STREAMSTATE_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -20529,6 +21071,7 @@ impl ::core::fmt::Debug for WST_BUFFER {
 }
 unsafe impl ::windows::core::Abi for WST_BUFFER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WST_BUFFER {
     fn eq(&self, other: &Self) -> bool {
@@ -20560,6 +21103,7 @@ impl ::core::fmt::Debug for WST_BUFFER_LINE {
 }
 unsafe impl ::windows::core::Abi for WST_BUFFER_LINE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WST_BUFFER_LINE {
     fn eq(&self, other: &Self) -> bool {
@@ -20598,6 +21142,7 @@ impl ::core::fmt::Debug for _KSAUDIO_PACKETSIZE_SIGNALPROCESSINGMODE_CONSTRAINT 
 }
 unsafe impl ::windows::core::Abi for _KSAUDIO_PACKETSIZE_SIGNALPROCESSINGMODE_CONSTRAINT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for _KSAUDIO_PACKETSIZE_SIGNALPROCESSINGMODE_CONSTRAINT {
     fn eq(&self, other: &Self) -> bool {
@@ -20633,6 +21178,7 @@ impl ::core::default::Default for _TunerDecoderLockType {
 }
 unsafe impl ::windows::core::Abi for _TunerDecoderLockType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for _TunerDecoderLockType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

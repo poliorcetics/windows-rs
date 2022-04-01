@@ -103,6 +103,7 @@ impl ::core::clone::Clone for ENCLAVE_IDENTITY {
 }
 unsafe impl ::windows::core::Abi for ENCLAVE_IDENTITY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ENCLAVE_IDENTITY {
     fn eq(&self, other: &Self) -> bool {
@@ -132,6 +133,7 @@ impl ::core::clone::Clone for ENCLAVE_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for ENCLAVE_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ENCLAVE_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -179,6 +181,7 @@ impl ::core::default::Default for ENCLAVE_SEALING_IDENTITY_POLICY {
 }
 unsafe impl ::windows::core::Abi for ENCLAVE_SEALING_IDENTITY_POLICY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ENCLAVE_SEALING_IDENTITY_POLICY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -217,6 +220,7 @@ impl ::core::fmt::Debug for ENCLAVE_VBS_BASIC_KEY_REQUEST {
 }
 unsafe impl ::windows::core::Abi for ENCLAVE_VBS_BASIC_KEY_REQUEST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ENCLAVE_VBS_BASIC_KEY_REQUEST {
     fn eq(&self, other: &Self) -> bool {
@@ -762,6 +766,7 @@ impl ::core::fmt::Debug for VBS_BASIC_ENCLAVE_EXCEPTION_AMD64 {
 }
 unsafe impl ::windows::core::Abi for VBS_BASIC_ENCLAVE_EXCEPTION_AMD64 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VBS_BASIC_ENCLAVE_EXCEPTION_AMD64 {
     fn eq(&self, other: &Self) -> bool {
@@ -818,6 +823,7 @@ impl ::core::fmt::Debug for VBS_BASIC_ENCLAVE_SYSCALL_PAGE {
 }
 unsafe impl ::windows::core::Abi for VBS_BASIC_ENCLAVE_SYSCALL_PAGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VBS_BASIC_ENCLAVE_SYSCALL_PAGE {
     fn eq(&self, other: &Self) -> bool {
@@ -853,6 +859,7 @@ impl ::core::fmt::Debug for VBS_BASIC_ENCLAVE_THREAD_DESCRIPTOR32 {
 }
 unsafe impl ::windows::core::Abi for VBS_BASIC_ENCLAVE_THREAD_DESCRIPTOR32 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VBS_BASIC_ENCLAVE_THREAD_DESCRIPTOR32 {
     fn eq(&self, other: &Self) -> bool {
@@ -888,6 +895,7 @@ impl ::core::fmt::Debug for VBS_BASIC_ENCLAVE_THREAD_DESCRIPTOR64 {
 }
 unsafe impl ::windows::core::Abi for VBS_BASIC_ENCLAVE_THREAD_DESCRIPTOR64 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VBS_BASIC_ENCLAVE_THREAD_DESCRIPTOR64 {
     fn eq(&self, other: &Self) -> bool {
@@ -916,6 +924,7 @@ impl ::core::clone::Clone for VBS_ENCLAVE_REPORT {
 }
 unsafe impl ::windows::core::Abi for VBS_ENCLAVE_REPORT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VBS_ENCLAVE_REPORT {
     fn eq(&self, other: &Self) -> bool {
@@ -947,6 +956,7 @@ impl ::core::clone::Clone for VBS_ENCLAVE_REPORT_MODULE {
 }
 unsafe impl ::windows::core::Abi for VBS_ENCLAVE_REPORT_MODULE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VBS_ENCLAVE_REPORT_MODULE {
     fn eq(&self, other: &Self) -> bool {
@@ -977,6 +987,7 @@ impl ::core::clone::Clone for VBS_ENCLAVE_REPORT_PKG_HEADER {
 }
 unsafe impl ::windows::core::Abi for VBS_ENCLAVE_REPORT_PKG_HEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VBS_ENCLAVE_REPORT_PKG_HEADER {
     fn eq(&self, other: &Self) -> bool {
@@ -1007,6 +1018,7 @@ impl ::core::clone::Clone for VBS_ENCLAVE_REPORT_VARDATA_HEADER {
 }
 unsafe impl ::windows::core::Abi for VBS_ENCLAVE_REPORT_VARDATA_HEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VBS_ENCLAVE_REPORT_VARDATA_HEADER {
     fn eq(&self, other: &Self) -> bool {

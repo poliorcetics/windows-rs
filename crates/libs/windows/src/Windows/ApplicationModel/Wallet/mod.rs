@@ -4,6 +4,11 @@ pub mod System;
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWalletBarcode(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWalletBarcode {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWalletBarcode {
     type Vtable = IWalletBarcode_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x4f857b29_de80_4ea4_a1cd_81cd084dac27);
@@ -22,6 +27,11 @@ pub struct IWalletBarcode_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWalletBarcodeFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWalletBarcodeFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWalletBarcodeFactory {
     type Vtable = IWalletBarcodeFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x30117161_ed9c_469e_bbfd_306c95ea7108);
@@ -39,6 +49,11 @@ pub struct IWalletBarcodeFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWalletItem(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWalletItem {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWalletItem {
     type Vtable = IWalletItem_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x20b54be8_118d_4ec4_996c_b963e7bd3e74);
@@ -199,6 +214,11 @@ pub struct IWalletItem_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWalletItemCustomProperty(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWalletItemCustomProperty {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWalletItemCustomProperty {
     type Vtable = IWalletItemCustomProperty_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb94b40f3_fa00_40fd_98dc_9de46697f1e7);
@@ -221,6 +241,11 @@ pub struct IWalletItemCustomProperty_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWalletItemCustomPropertyFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWalletItemCustomPropertyFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWalletItemCustomPropertyFactory {
     type Vtable = IWalletItemCustomPropertyFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd0046a44_61a1_41aa_b259_a5610ab5d575);
@@ -234,6 +259,11 @@ pub struct IWalletItemCustomPropertyFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWalletItemFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWalletItemFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWalletItemFactory {
     type Vtable = IWalletItemFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x53e27470_4f0b_4a3e_99e5_0bbb1eab38d4);
@@ -247,6 +277,11 @@ pub struct IWalletItemFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWalletItemStore(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWalletItemStore {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWalletItemStore {
     type Vtable = IWalletItemStore_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x7160484b_6d49_48f8_91a9_40a1d0f13ef4);
@@ -299,6 +334,11 @@ pub struct IWalletItemStore_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWalletItemStore2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWalletItemStore2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWalletItemStore2 {
     type Vtable = IWalletItemStore2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x65e682f0_7009_4a15_bd54_4fff379bffe2);
@@ -319,6 +359,11 @@ pub struct IWalletItemStore2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWalletManagerStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWalletManagerStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWalletManagerStatics {
     type Vtable = IWalletManagerStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x5111d6b8_c9a4_4c64_b4dd_e1e548001c0d);
@@ -335,6 +380,11 @@ pub struct IWalletManagerStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWalletRelevantLocation(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWalletRelevantLocation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWalletRelevantLocation {
     type Vtable = IWalletRelevantLocation_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9fd8782a_e3f9_4de1_bab3_bb192e46b3f3);
@@ -357,6 +407,11 @@ pub struct IWalletRelevantLocation_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWalletTransaction(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWalletTransaction {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWalletTransaction {
     type Vtable = IWalletTransaction_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x40e1e940_2606_4519_81cb_bff1c60d1f79);
@@ -387,6 +442,11 @@ pub struct IWalletTransaction_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWalletVerb(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWalletVerb {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWalletVerb {
     type Vtable = IWalletVerb_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x17b826d6_e3c1_4c74_8a94_217aadbc4884);
@@ -401,6 +461,11 @@ pub struct IWalletVerb_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWalletVerbFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWalletVerbFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWalletVerbFactory {
     type Vtable = IWalletVerbFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x76012771_be58_4d5e_83ed_58b1669c7ad9);
@@ -435,6 +500,7 @@ impl ::core::default::Default for WalletActionKind {
 }
 unsafe impl ::windows::core::Abi for WalletActionKind {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WalletActionKind {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -443,7 +509,6 @@ impl ::core::fmt::Debug for WalletActionKind {
 }
 unsafe impl ::windows::core::RuntimeType for WalletActionKind {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.Wallet.WalletActionKind;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -498,11 +563,6 @@ impl WalletBarcode {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for WalletBarcode {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for WalletBarcode {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -516,7 +576,6 @@ impl ::core::fmt::Debug for WalletBarcode {
 }
 unsafe impl ::windows::core::RuntimeType for WalletBarcode {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Wallet.WalletBarcode;{4f857b29-de80-4ea4-a1cd-81cd084dac27})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -601,6 +660,7 @@ impl ::core::default::Default for WalletBarcodeSymbology {
 }
 unsafe impl ::windows::core::Abi for WalletBarcodeSymbology {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WalletBarcodeSymbology {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -609,7 +669,6 @@ impl ::core::fmt::Debug for WalletBarcodeSymbology {
 }
 unsafe impl ::windows::core::RuntimeType for WalletBarcodeSymbology {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.Wallet.WalletBarcodeSymbology;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -648,6 +707,7 @@ impl ::core::default::Default for WalletDetailViewPosition {
 }
 unsafe impl ::windows::core::Abi for WalletDetailViewPosition {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WalletDetailViewPosition {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -656,7 +716,6 @@ impl ::core::fmt::Debug for WalletDetailViewPosition {
 }
 unsafe impl ::windows::core::RuntimeType for WalletDetailViewPosition {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.Wallet.WalletDetailViewPosition;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1057,11 +1116,6 @@ impl WalletItem {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for WalletItem {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for WalletItem {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1075,7 +1129,6 @@ impl ::core::fmt::Debug for WalletItem {
 }
 unsafe impl ::windows::core::RuntimeType for WalletItem {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Wallet.WalletItem;{20b54be8-118d-4ec4-996c-b963e7bd3e74})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1211,11 +1264,6 @@ impl WalletItemCustomProperty {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for WalletItemCustomProperty {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for WalletItemCustomProperty {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1229,7 +1277,6 @@ impl ::core::fmt::Debug for WalletItemCustomProperty {
 }
 unsafe impl ::windows::core::RuntimeType for WalletItemCustomProperty {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Wallet.WalletItemCustomProperty;{b94b40f3-fa00-40fd-98dc-9de46697f1e7})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1309,6 +1356,7 @@ impl ::core::default::Default for WalletItemKind {
 }
 unsafe impl ::windows::core::Abi for WalletItemKind {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WalletItemKind {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1317,7 +1365,6 @@ impl ::core::fmt::Debug for WalletItemKind {
 }
 unsafe impl ::windows::core::RuntimeType for WalletItemKind {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.Wallet.WalletItemKind;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1417,11 +1464,6 @@ impl WalletItemStore {
         }
     }
 }
-impl ::core::clone::Clone for WalletItemStore {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for WalletItemStore {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1435,7 +1477,6 @@ impl ::core::fmt::Debug for WalletItemStore {
 }
 unsafe impl ::windows::core::RuntimeType for WalletItemStore {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Wallet.WalletItemStore;{7160484b-6d49-48f8-91a9-40a1d0f13ef4})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1549,11 +1590,6 @@ impl WalletRelevantLocation {
         unsafe { (::windows::core::Interface::vtable(this).SetDisplayMessage)(::core::mem::transmute_copy(this), value.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for WalletRelevantLocation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for WalletRelevantLocation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1567,7 +1603,6 @@ impl ::core::fmt::Debug for WalletRelevantLocation {
 }
 unsafe impl ::windows::core::RuntimeType for WalletRelevantLocation {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Wallet.WalletRelevantLocation;{9fd8782a-e3f9-4de1-bab3-bb192e46b3f3})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1643,6 +1678,7 @@ impl ::core::default::Default for WalletSummaryViewPosition {
 }
 unsafe impl ::windows::core::Abi for WalletSummaryViewPosition {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WalletSummaryViewPosition {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1651,7 +1687,6 @@ impl ::core::fmt::Debug for WalletSummaryViewPosition {
 }
 unsafe impl ::windows::core::RuntimeType for WalletSummaryViewPosition {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.Wallet.WalletSummaryViewPosition;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1748,11 +1783,6 @@ impl WalletTransaction {
         unsafe { (::windows::core::Interface::vtable(this).SetIsLaunchable)(::core::mem::transmute_copy(this), value).ok() }
     }
 }
-impl ::core::clone::Clone for WalletTransaction {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for WalletTransaction {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1766,7 +1796,6 @@ impl ::core::fmt::Debug for WalletTransaction {
 }
 unsafe impl ::windows::core::RuntimeType for WalletTransaction {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Wallet.WalletTransaction;{40e1e940-2606-4519-81cb-bff1c60d1f79})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1850,11 +1879,6 @@ impl WalletVerb {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for WalletVerb {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for WalletVerb {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1868,7 +1892,6 @@ impl ::core::fmt::Debug for WalletVerb {
 }
 unsafe impl ::windows::core::RuntimeType for WalletVerb {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Wallet.WalletVerb;{17b826d6-e3c1-4c74-8a94-217aadbc4884})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

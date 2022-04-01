@@ -2,6 +2,11 @@
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IVoiceCommand(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVoiceCommand {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IVoiceCommand {
     type Vtable = IVoiceCommand_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x936f5273_ec82_42a6_a55c_d2d79ec6f920);
@@ -23,6 +28,11 @@ pub struct IVoiceCommand_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IVoiceCommandCompletedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVoiceCommandCompletedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IVoiceCommandCompletedEventArgs {
     type Vtable = IVoiceCommandCompletedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc85e675d_fe42_432c_9907_09df9fcf64e8);
@@ -36,6 +46,11 @@ pub struct IVoiceCommandCompletedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IVoiceCommandConfirmationResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVoiceCommandConfirmationResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IVoiceCommandConfirmationResult {
     type Vtable = IVoiceCommandConfirmationResult_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa022593e_8221_4526_b083_840972262247);
@@ -49,6 +64,11 @@ pub struct IVoiceCommandConfirmationResult_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IVoiceCommandContentTile(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVoiceCommandContentTile {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IVoiceCommandContentTile {
     type Vtable = IVoiceCommandContentTile_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x3eefe9f0_b8c7_4c76_a0de_1607895ee327);
@@ -83,6 +103,11 @@ pub struct IVoiceCommandContentTile_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IVoiceCommandDefinition(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVoiceCommandDefinition {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IVoiceCommandDefinition {
     type Vtable = IVoiceCommandDefinition_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x7972aad0_0974_4979_984b_cb8959cd61ae);
@@ -101,6 +126,11 @@ pub struct IVoiceCommandDefinition_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IVoiceCommandDefinitionManagerStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVoiceCommandDefinitionManagerStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IVoiceCommandDefinitionManagerStatics {
     type Vtable = IVoiceCommandDefinitionManagerStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x8fe7a69e_067e_4f16_a18c_5b17e9499940);
@@ -121,6 +151,11 @@ pub struct IVoiceCommandDefinitionManagerStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IVoiceCommandDisambiguationResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVoiceCommandDisambiguationResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IVoiceCommandDisambiguationResult {
     type Vtable = IVoiceCommandDisambiguationResult_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xecc68cfe_c9ac_45df_a8ea_feea08ef9c5e);
@@ -134,6 +169,11 @@ pub struct IVoiceCommandDisambiguationResult_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IVoiceCommandResponse(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVoiceCommandResponse {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IVoiceCommandResponse {
     type Vtable = IVoiceCommandResponse_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x0284b30e_8a3b_4cc4_a6a1_cad5be2716b5);
@@ -156,6 +196,11 @@ pub struct IVoiceCommandResponse_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IVoiceCommandResponseStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVoiceCommandResponseStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IVoiceCommandResponseStatics {
     type Vtable = IVoiceCommandResponseStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x2932f813_0d3b_49f2_96dd_625019bd3b5d);
@@ -179,6 +224,11 @@ pub struct IVoiceCommandResponseStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IVoiceCommandServiceConnection(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVoiceCommandServiceConnection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IVoiceCommandServiceConnection {
     type Vtable = IVoiceCommandServiceConnection_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd894bb9f_21da_44a4_98a2_fb131920a9cc);
@@ -231,6 +281,11 @@ pub struct IVoiceCommandServiceConnection_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IVoiceCommandServiceConnectionStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVoiceCommandServiceConnectionStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IVoiceCommandServiceConnectionStatics {
     type Vtable = IVoiceCommandServiceConnectionStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x370ebffb_2d34_42df_8770_074d0f334697);
@@ -247,6 +302,11 @@ pub struct IVoiceCommandServiceConnectionStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IVoiceCommandUserMessage(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVoiceCommandUserMessage {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IVoiceCommandUserMessage {
     type Vtable = IVoiceCommandUserMessage_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x674eb3c0_44f6_4f07_b979_4c723fc08597);
@@ -291,11 +351,6 @@ impl VoiceCommand {
         }
     }
 }
-impl ::core::clone::Clone for VoiceCommand {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for VoiceCommand {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -309,7 +364,6 @@ impl ::core::fmt::Debug for VoiceCommand {
 }
 unsafe impl ::windows::core::RuntimeType for VoiceCommand {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.VoiceCommands.VoiceCommand;{936f5273-ec82-42a6-a55c-d2d79ec6f920})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -376,11 +430,6 @@ impl VoiceCommandCompletedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for VoiceCommandCompletedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for VoiceCommandCompletedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -394,7 +443,6 @@ impl ::core::fmt::Debug for VoiceCommandCompletedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for VoiceCommandCompletedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.VoiceCommands.VoiceCommandCompletedEventArgs;{c85e675d-fe42-432c-9907-09df9fcf64e8})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -474,6 +522,7 @@ impl ::core::default::Default for VoiceCommandCompletionReason {
 }
 unsafe impl ::windows::core::Abi for VoiceCommandCompletionReason {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VoiceCommandCompletionReason {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -482,7 +531,6 @@ impl ::core::fmt::Debug for VoiceCommandCompletionReason {
 }
 unsafe impl ::windows::core::RuntimeType for VoiceCommandCompletionReason {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.VoiceCommands.VoiceCommandCompletionReason;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -500,11 +548,6 @@ impl VoiceCommandConfirmationResult {
         }
     }
 }
-impl ::core::clone::Clone for VoiceCommandConfirmationResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for VoiceCommandConfirmationResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -518,7 +561,6 @@ impl ::core::fmt::Debug for VoiceCommandConfirmationResult {
 }
 unsafe impl ::windows::core::RuntimeType for VoiceCommandConfirmationResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.VoiceCommands.VoiceCommandConfirmationResult;{a022593e-8221-4526-b083-840972262247})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -690,11 +732,6 @@ impl VoiceCommandContentTile {
         unsafe { (::windows::core::Interface::vtable(this).SetContentTileType)(::core::mem::transmute_copy(this), value).ok() }
     }
 }
-impl ::core::clone::Clone for VoiceCommandContentTile {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for VoiceCommandContentTile {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -708,7 +745,6 @@ impl ::core::fmt::Debug for VoiceCommandContentTile {
 }
 unsafe impl ::windows::core::RuntimeType for VoiceCommandContentTile {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.VoiceCommands.VoiceCommandContentTile;{3eefe9f0-b8c7-4c76-a0de-1607895ee327})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -789,6 +825,7 @@ impl ::core::default::Default for VoiceCommandContentTileType {
 }
 unsafe impl ::windows::core::Abi for VoiceCommandContentTileType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VoiceCommandContentTileType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -797,7 +834,6 @@ impl ::core::fmt::Debug for VoiceCommandContentTileType {
 }
 unsafe impl ::windows::core::RuntimeType for VoiceCommandContentTileType {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.VoiceCommands.VoiceCommandContentTileType;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -832,11 +868,6 @@ impl VoiceCommandDefinition {
         }
     }
 }
-impl ::core::clone::Clone for VoiceCommandDefinition {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for VoiceCommandDefinition {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -850,7 +881,6 @@ impl ::core::fmt::Debug for VoiceCommandDefinition {
 }
 unsafe impl ::windows::core::RuntimeType for VoiceCommandDefinition {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.VoiceCommands.VoiceCommandDefinition;{7972aad0-0974-4979-984b-cb8959cd61ae})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -945,11 +975,6 @@ impl VoiceCommandDisambiguationResult {
         }
     }
 }
-impl ::core::clone::Clone for VoiceCommandDisambiguationResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for VoiceCommandDisambiguationResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -963,7 +988,6 @@ impl ::core::fmt::Debug for VoiceCommandDisambiguationResult {
 }
 unsafe impl ::windows::core::RuntimeType for VoiceCommandDisambiguationResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.VoiceCommands.VoiceCommandDisambiguationResult;{ecc68cfe-c9ac-45df-a8ea-feea08ef9c5e})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1112,11 +1136,6 @@ impl VoiceCommandResponse {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for VoiceCommandResponse {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for VoiceCommandResponse {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1130,7 +1149,6 @@ impl ::core::fmt::Debug for VoiceCommandResponse {
 }
 unsafe impl ::windows::core::RuntimeType for VoiceCommandResponse {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.VoiceCommands.VoiceCommandResponse;{0284b30e-8a3b-4cc4-a6a1-cad5be2716b5})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1289,11 +1307,6 @@ impl VoiceCommandServiceConnection {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for VoiceCommandServiceConnection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for VoiceCommandServiceConnection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1307,7 +1320,6 @@ impl ::core::fmt::Debug for VoiceCommandServiceConnection {
 }
 unsafe impl ::windows::core::RuntimeType for VoiceCommandServiceConnection {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.VoiceCommands.VoiceCommandServiceConnection;{d894bb9f-21da-44a4-98a2-fb131920a9cc})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1399,11 +1411,6 @@ impl VoiceCommandUserMessage {
         unsafe { (::windows::core::Interface::vtable(this).SetSpokenMessage)(::core::mem::transmute_copy(this), value.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for VoiceCommandUserMessage {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for VoiceCommandUserMessage {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1417,7 +1424,6 @@ impl ::core::fmt::Debug for VoiceCommandUserMessage {
 }
 unsafe impl ::windows::core::RuntimeType for VoiceCommandUserMessage {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.VoiceCommands.VoiceCommandUserMessage;{674eb3c0-44f6-4f07-b979-4c723fc08597})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

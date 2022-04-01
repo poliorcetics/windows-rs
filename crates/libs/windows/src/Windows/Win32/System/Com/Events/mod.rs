@@ -36,6 +36,7 @@ impl ::core::fmt::Debug for COMEVENTSYSCHANGEINFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for COMEVENTSYSCHANGEINFO {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for COMEVENTSYSCHANGEINFO {
@@ -74,6 +75,7 @@ impl ::core::default::Default for EOC_ChangeType {
 }
 unsafe impl ::windows::core::Abi for EOC_ChangeType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EOC_ChangeType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -85,6 +87,11 @@ pub const EventObjectChange2: ::windows::core::GUID = ::windows::core::GUID::fro
 #[doc = "*Required features: `\"Win32_System_Com_Events\"`*"]
 #[repr(transparent)]
 pub struct IDontSupportEventSubscription(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDontSupportEventSubscription {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDontSupportEventSubscription {}
 impl ::core::convert::From<IDontSupportEventSubscription> for ::windows::core::IUnknown {
     fn from(value: IDontSupportEventSubscription) -> Self {
@@ -104,11 +111,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IDontSupp
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDontSupportEventSubscription {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IDontSupportEventSubscription {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IDontSupportEventSubscription {
@@ -134,6 +136,11 @@ pub struct IDontSupportEventSubscription_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Com_Events\"`*"]
 #[repr(transparent)]
 pub struct IEnumEventObject(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnumEventObject {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnumEventObject {
     #[doc = "*Required features: `\"Win32_System_Com_Events\"`*"]
     pub unsafe fn Clone(&self) -> ::windows::core::Result<IEnumEventObject> {
@@ -173,11 +180,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnum
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnumEventObject {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnumEventObject {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -205,6 +207,11 @@ pub struct IEnumEventObject_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Com_Events\"`*"]
 #[repr(transparent)]
 pub struct IEventClass(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEventClass {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEventClass {
     #[doc = "*Required features: `\"Win32_System_Com_Events\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -324,11 +331,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::IDispatch> for &'a IEventClass {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEventClass {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEventClass {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -408,6 +410,11 @@ pub struct IEventClass_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Com_Events\"`*"]
 #[repr(transparent)]
 pub struct IEventClass2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEventClass2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEventClass2 {
     #[doc = "*Required features: `\"Win32_System_Com_Events\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -591,11 +598,6 @@ impl<'a> ::windows::core::IntoParam<'a, IEventClass> for &'a IEventClass2 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEventClass2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEventClass2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -651,6 +653,11 @@ pub struct IEventClass2_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Com_Events\"`*"]
 #[repr(transparent)]
 pub struct IEventControl(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEventControl {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEventControl {
     #[doc = "*Required features: `\"Win32_System_Com_Events\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -721,11 +728,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::IDispatch> for &'a IEventControl 
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEventControl {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEventControl {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -769,6 +771,11 @@ pub struct IEventControl_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Com_Events\"`*"]
 #[repr(transparent)]
 pub struct IEventObjectChange(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEventObjectChange {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEventObjectChange {
     #[doc = "*Required features: `\"Win32_System_Com_Events\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -806,11 +813,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEven
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEventObjectChange {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEventObjectChange {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -846,6 +848,11 @@ pub struct IEventObjectChange_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Com_Events\"`*"]
 #[repr(transparent)]
 pub struct IEventObjectChange2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEventObjectChange2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEventObjectChange2 {
     #[doc = "*Required features: `\"Win32_System_Com_Events\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -876,11 +883,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IEventObj
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEventObjectChange2 {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IEventObjectChange2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IEventObjectChange2 {
@@ -914,6 +916,11 @@ pub struct IEventObjectChange2_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Com_Events\"`*"]
 #[repr(transparent)]
 pub struct IEventObjectCollection(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEventObjectCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEventObjectCollection {
     #[doc = "*Required features: `\"Win32_System_Com_Events\"`*"]
     pub unsafe fn _NewEnum(&self) -> ::windows::core::Result<::windows::core::IUnknown> {
@@ -987,11 +994,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::IDispatch> for &'a IEventObjectCo
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEventObjectCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEventObjectCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1030,6 +1032,11 @@ pub struct IEventObjectCollection_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Com_Events\"`*"]
 #[repr(transparent)]
 pub struct IEventProperty(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEventProperty {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEventProperty {
     #[doc = "*Required features: `\"Win32_System_Com_Events\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -1094,11 +1101,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::IDispatch> for &'a IEventProperty
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEventProperty {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEventProperty {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1138,6 +1140,11 @@ pub struct IEventProperty_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Com_Events\"`*"]
 #[repr(transparent)]
 pub struct IEventPublisher(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEventPublisher {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEventPublisher {
     #[doc = "*Required features: `\"Win32_System_Com_Events\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -1256,11 +1263,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::IDispatch> for &'a IEventPublishe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEventPublisher {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEventPublisher {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1337,6 +1339,11 @@ pub struct IEventPublisher_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Com_Events\"`*"]
 #[repr(transparent)]
 pub struct IEventSubscription(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEventSubscription {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEventSubscription {
     #[doc = "*Required features: `\"Win32_System_Com_Events\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -1562,11 +1569,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::IDispatch> for &'a IEventSubscrip
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEventSubscription {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEventSubscription {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1714,6 +1716,11 @@ pub struct IEventSubscription_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Com_Events\"`*"]
 #[repr(transparent)]
 pub struct IEventSystem(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEventSystem {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEventSystem {
     #[doc = "*Required features: `\"Win32_System_Com_Events\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -1789,11 +1796,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::IDispatch> for &'a IEventSystem {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEventSystem {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEventSystem {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1841,6 +1843,11 @@ pub struct IEventSystem_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Com_Events\"`*"]
 #[repr(transparent)]
 pub struct IFiringControl(::windows::core::IUnknown);
+impl ::core::clone::Clone for IFiringControl {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IFiringControl {
     #[doc = "*Required features: `\"Win32_System_Com_Events\"`*"]
     pub unsafe fn FireSubscription<'a, Param0: ::windows::core::IntoParam<'a, IEventSubscription>>(&self, subscription: Param0) -> ::windows::core::Result<()> {
@@ -1887,11 +1894,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::IDispatch> for &'a IFiringControl
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IFiringControl {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IFiringControl {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1916,6 +1918,11 @@ pub struct IFiringControl_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Com_Events\"`*"]
 #[repr(transparent)]
 pub struct IMultiInterfaceEventControl(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMultiInterfaceEventControl {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMultiInterfaceEventControl {
     #[doc = "*Required features: `\"Win32_System_Com_Events\"`*"]
     pub unsafe fn SetMultiInterfacePublisherFilter<'a, Param0: ::windows::core::IntoParam<'a, IMultiInterfacePublisherFilter>>(&self, classfilter: Param0) -> ::windows::core::Result<()> {
@@ -1976,11 +1983,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMult
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMultiInterfaceEventControl {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMultiInterfaceEventControl {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2029,6 +2031,11 @@ pub struct IMultiInterfaceEventControl_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Com_Events\"`*"]
 #[repr(transparent)]
 pub struct IMultiInterfacePublisherFilter(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMultiInterfacePublisherFilter {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMultiInterfacePublisherFilter {
     #[doc = "*Required features: `\"Win32_System_Com_Events\"`*"]
     pub unsafe fn Initialize<'a, Param0: ::windows::core::IntoParam<'a, IMultiInterfaceEventControl>>(&self, peic: Param0) -> ::windows::core::Result<()> {
@@ -2060,11 +2067,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMult
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMultiInterfacePublisherFilter {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMultiInterfacePublisherFilter {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2093,6 +2095,11 @@ pub struct IMultiInterfacePublisherFilter_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Com_Events\"`*"]
 #[repr(transparent)]
 pub struct IPublisherFilter(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPublisherFilter {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPublisherFilter {
     #[doc = "*Required features: `\"Win32_System_Com_Events\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -2123,11 +2130,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IPublishe
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPublisherFilter {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IPublisherFilter {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IPublisherFilter {

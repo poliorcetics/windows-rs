@@ -27,6 +27,7 @@ impl ::core::fmt::Debug for CMD_ENTRY {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for CMD_ENTRY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for CMD_ENTRY {
@@ -70,6 +71,7 @@ impl ::core::fmt::Debug for CMD_GROUP_ENTRY {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for CMD_GROUP_ENTRY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for CMD_GROUP_ENTRY {
@@ -208,6 +210,7 @@ impl ::core::default::Default for NS_CMD_FLAGS {
 }
 unsafe impl ::windows::core::Abi for NS_CMD_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NS_CMD_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -244,6 +247,7 @@ impl ::core::clone::Clone for NS_CONTEXT_ATTRIBUTES {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NS_CONTEXT_ATTRIBUTES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NS_CONTEXT_ATTRIBUTES {
@@ -277,6 +281,7 @@ impl ::core::clone::Clone for NS_CONTEXT_ATTRIBUTES_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NS_CONTEXT_ATTRIBUTES_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NS_CONTEXT_ATTRIBUTES_0 {
@@ -316,6 +321,7 @@ impl ::core::fmt::Debug for NS_CONTEXT_ATTRIBUTES_0_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NS_CONTEXT_ATTRIBUTES_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NS_CONTEXT_ATTRIBUTES_0_0 {
@@ -358,6 +364,7 @@ impl ::core::default::Default for NS_EVENTS {
 }
 unsafe impl ::windows::core::Abi for NS_EVENTS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NS_EVENTS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -382,6 +389,7 @@ impl ::core::clone::Clone for NS_HELPER_ATTRIBUTES {
 }
 unsafe impl ::windows::core::Abi for NS_HELPER_ATTRIBUTES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NS_HELPER_ATTRIBUTES {
     fn eq(&self, other: &Self) -> bool {
@@ -408,6 +416,7 @@ impl ::core::clone::Clone for NS_HELPER_ATTRIBUTES_0 {
 }
 unsafe impl ::windows::core::Abi for NS_HELPER_ATTRIBUTES_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NS_HELPER_ATTRIBUTES_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -439,6 +448,7 @@ impl ::core::fmt::Debug for NS_HELPER_ATTRIBUTES_0_0 {
 }
 unsafe impl ::windows::core::Abi for NS_HELPER_ATTRIBUTES_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NS_HELPER_ATTRIBUTES_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -478,6 +488,7 @@ impl ::core::default::Default for NS_MODE_CHANGE {
 }
 unsafe impl ::windows::core::Abi for NS_MODE_CHANGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NS_MODE_CHANGE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -509,6 +520,7 @@ impl ::core::default::Default for NS_REQS {
 }
 unsafe impl ::windows::core::Abi for NS_REQS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NS_REQS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -650,6 +662,7 @@ impl ::core::fmt::Debug for TAG_TYPE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for TAG_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for TAG_TYPE {
@@ -684,6 +697,7 @@ impl ::core::fmt::Debug for TOKEN_VALUE {
 }
 unsafe impl ::windows::core::Abi for TOKEN_VALUE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TOKEN_VALUE {
     fn eq(&self, other: &Self) -> bool {

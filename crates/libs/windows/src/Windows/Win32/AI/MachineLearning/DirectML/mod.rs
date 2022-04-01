@@ -49,6 +49,7 @@ impl ::core::fmt::Debug for DML_ACTIVATION_CELU_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ACTIVATION_CELU_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ACTIVATION_CELU_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -81,6 +82,7 @@ impl ::core::fmt::Debug for DML_ACTIVATION_ELU_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ACTIVATION_ELU_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ACTIVATION_ELU_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -112,6 +114,7 @@ impl ::core::fmt::Debug for DML_ACTIVATION_HARDMAX_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ACTIVATION_HARDMAX_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ACTIVATION_HARDMAX_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -145,6 +148,7 @@ impl ::core::fmt::Debug for DML_ACTIVATION_HARD_SIGMOID_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ACTIVATION_HARD_SIGMOID_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ACTIVATION_HARD_SIGMOID_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -176,6 +180,7 @@ impl ::core::fmt::Debug for DML_ACTIVATION_IDENTITY_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ACTIVATION_IDENTITY_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ACTIVATION_IDENTITY_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -208,6 +213,7 @@ impl ::core::fmt::Debug for DML_ACTIVATION_LEAKY_RELU_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ACTIVATION_LEAKY_RELU_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ACTIVATION_LEAKY_RELU_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -241,6 +247,7 @@ impl ::core::fmt::Debug for DML_ACTIVATION_LINEAR_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ACTIVATION_LINEAR_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ACTIVATION_LINEAR_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -272,6 +279,7 @@ impl ::core::fmt::Debug for DML_ACTIVATION_LOG_SOFTMAX_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ACTIVATION_LOG_SOFTMAX_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ACTIVATION_LOG_SOFTMAX_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -304,6 +312,7 @@ impl ::core::fmt::Debug for DML_ACTIVATION_PARAMETERIZED_RELU_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ACTIVATION_PARAMETERIZED_RELU_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ACTIVATION_PARAMETERIZED_RELU_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -337,6 +346,7 @@ impl ::core::fmt::Debug for DML_ACTIVATION_PARAMETRIC_SOFTPLUS_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ACTIVATION_PARAMETRIC_SOFTPLUS_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ACTIVATION_PARAMETRIC_SOFTPLUS_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -369,6 +379,7 @@ impl ::core::fmt::Debug for DML_ACTIVATION_RELU_GRAD_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ACTIVATION_RELU_GRAD_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ACTIVATION_RELU_GRAD_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -400,6 +411,7 @@ impl ::core::fmt::Debug for DML_ACTIVATION_RELU_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ACTIVATION_RELU_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ACTIVATION_RELU_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -433,6 +445,7 @@ impl ::core::fmt::Debug for DML_ACTIVATION_SCALED_ELU_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ACTIVATION_SCALED_ELU_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ACTIVATION_SCALED_ELU_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -466,6 +479,7 @@ impl ::core::fmt::Debug for DML_ACTIVATION_SCALED_TANH_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ACTIVATION_SCALED_TANH_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ACTIVATION_SCALED_TANH_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -499,6 +513,7 @@ impl ::core::fmt::Debug for DML_ACTIVATION_SHRINK_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ACTIVATION_SHRINK_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ACTIVATION_SHRINK_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -530,6 +545,7 @@ impl ::core::fmt::Debug for DML_ACTIVATION_SIGMOID_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ACTIVATION_SIGMOID_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ACTIVATION_SIGMOID_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -561,6 +577,7 @@ impl ::core::fmt::Debug for DML_ACTIVATION_SOFTMAX_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ACTIVATION_SOFTMAX_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ACTIVATION_SOFTMAX_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -593,6 +610,7 @@ impl ::core::fmt::Debug for DML_ACTIVATION_SOFTPLUS_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ACTIVATION_SOFTPLUS_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ACTIVATION_SOFTPLUS_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -624,6 +642,7 @@ impl ::core::fmt::Debug for DML_ACTIVATION_SOFTSIGN_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ACTIVATION_SOFTSIGN_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ACTIVATION_SOFTSIGN_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -655,6 +674,7 @@ impl ::core::fmt::Debug for DML_ACTIVATION_TANH_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ACTIVATION_TANH_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ACTIVATION_TANH_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -687,6 +707,7 @@ impl ::core::fmt::Debug for DML_ACTIVATION_THRESHOLDED_RELU_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ACTIVATION_THRESHOLDED_RELU_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ACTIVATION_THRESHOLDED_RELU_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -741,6 +762,7 @@ impl ::core::fmt::Debug for DML_ADAM_OPTIMIZER_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ADAM_OPTIMIZER_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ADAM_OPTIMIZER_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -775,6 +797,7 @@ impl ::core::fmt::Debug for DML_ARGMAX_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ARGMAX_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ARGMAX_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -809,6 +832,7 @@ impl ::core::fmt::Debug for DML_ARGMIN_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ARGMIN_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ARGMIN_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -851,6 +875,7 @@ impl ::core::fmt::Debug for DML_AVERAGE_POOLING_GRAD_OPERATOR_DESC {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DML_AVERAGE_POOLING_GRAD_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DML_AVERAGE_POOLING_GRAD_OPERATOR_DESC {
@@ -896,6 +921,7 @@ impl ::core::fmt::Debug for DML_AVERAGE_POOLING_OPERATOR_DESC {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DML_AVERAGE_POOLING_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DML_AVERAGE_POOLING_OPERATOR_DESC {
@@ -932,6 +958,7 @@ impl ::core::default::Default for DML_AXIS_DIRECTION {
 }
 unsafe impl ::windows::core::Abi for DML_AXIS_DIRECTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DML_AXIS_DIRECTION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -974,6 +1001,7 @@ impl ::core::fmt::Debug for DML_BATCH_NORMALIZATION_GRAD_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_BATCH_NORMALIZATION_GRAD_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_BATCH_NORMALIZATION_GRAD_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -1017,6 +1045,7 @@ impl ::core::fmt::Debug for DML_BATCH_NORMALIZATION_OPERATOR_DESC {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DML_BATCH_NORMALIZATION_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DML_BATCH_NORMALIZATION_OPERATOR_DESC {
@@ -1051,6 +1080,7 @@ impl ::core::fmt::Debug for DML_BINDING_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_BINDING_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_BINDING_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -1083,6 +1113,7 @@ impl ::core::fmt::Debug for DML_BINDING_PROPERTIES {
 }
 unsafe impl ::windows::core::Abi for DML_BINDING_PROPERTIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_BINDING_PROPERTIES {
     fn eq(&self, other: &Self) -> bool {
@@ -1124,6 +1155,7 @@ impl ::core::fmt::Debug for DML_BINDING_TABLE_DESC {
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 unsafe impl ::windows::core::Abi for DML_BINDING_TABLE_DESC {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ::core::cmp::PartialEq for DML_BINDING_TABLE_DESC {
@@ -1162,6 +1194,7 @@ impl ::core::default::Default for DML_BINDING_TYPE {
 }
 unsafe impl ::windows::core::Abi for DML_BINDING_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DML_BINDING_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1192,6 +1225,7 @@ impl ::core::fmt::Debug for DML_BUFFER_ARRAY_BINDING {
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 unsafe impl ::windows::core::Abi for DML_BUFFER_ARRAY_BINDING {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ::core::cmp::PartialEq for DML_BUFFER_ARRAY_BINDING {
@@ -1230,6 +1264,7 @@ impl ::core::fmt::Debug for DML_BUFFER_BINDING {
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 unsafe impl ::windows::core::Abi for DML_BUFFER_BINDING {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ::core::cmp::PartialEq for DML_BUFFER_BINDING {
@@ -1269,6 +1304,7 @@ impl ::core::fmt::Debug for DML_BUFFER_TENSOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_BUFFER_TENSOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_BUFFER_TENSOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -1300,6 +1336,7 @@ impl ::core::fmt::Debug for DML_CAST_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_CAST_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_CAST_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -1333,6 +1370,7 @@ impl ::core::default::Default for DML_CONVOLUTION_DIRECTION {
 }
 unsafe impl ::windows::core::Abi for DML_CONVOLUTION_DIRECTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DML_CONVOLUTION_DIRECTION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1379,6 +1417,7 @@ impl ::core::fmt::Debug for DML_CONVOLUTION_INTEGER_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_CONVOLUTION_INTEGER_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_CONVOLUTION_INTEGER_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -1412,6 +1451,7 @@ impl ::core::default::Default for DML_CONVOLUTION_MODE {
 }
 unsafe impl ::windows::core::Abi for DML_CONVOLUTION_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DML_CONVOLUTION_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1464,6 +1504,7 @@ impl ::core::fmt::Debug for DML_CONVOLUTION_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_CONVOLUTION_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_CONVOLUTION_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -1497,6 +1538,7 @@ impl ::core::default::Default for DML_CREATE_DEVICE_FLAGS {
 }
 unsafe impl ::windows::core::Abi for DML_CREATE_DEVICE_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DML_CREATE_DEVICE_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1558,6 +1600,7 @@ impl ::core::fmt::Debug for DML_CUMULATIVE_PRODUCT_OPERATOR_DESC {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DML_CUMULATIVE_PRODUCT_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DML_CUMULATIVE_PRODUCT_OPERATOR_DESC {
@@ -1600,6 +1643,7 @@ impl ::core::fmt::Debug for DML_CUMULATIVE_SUMMATION_OPERATOR_DESC {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DML_CUMULATIVE_SUMMATION_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DML_CUMULATIVE_SUMMATION_OPERATOR_DESC {
@@ -1636,6 +1680,7 @@ impl ::core::default::Default for DML_DEPTH_SPACE_ORDER {
 }
 unsafe impl ::windows::core::Abi for DML_DEPTH_SPACE_ORDER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DML_DEPTH_SPACE_ORDER {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1663,6 +1708,7 @@ impl ::core::fmt::Debug for DML_DEPTH_TO_SPACE1_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_DEPTH_TO_SPACE1_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_DEPTH_TO_SPACE1_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -1695,6 +1741,7 @@ impl ::core::fmt::Debug for DML_DEPTH_TO_SPACE_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_DEPTH_TO_SPACE_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_DEPTH_TO_SPACE_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -1727,6 +1774,7 @@ impl ::core::fmt::Debug for DML_DIAGONAL_MATRIX_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_DIAGONAL_MATRIX_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_DIAGONAL_MATRIX_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -1760,6 +1808,7 @@ impl ::core::fmt::Debug for DML_DYNAMIC_QUANTIZE_LINEAR_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_DYNAMIC_QUANTIZE_LINEAR_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_DYNAMIC_QUANTIZE_LINEAR_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -1792,6 +1841,7 @@ impl ::core::fmt::Debug for DML_ELEMENT_WISE_ABS_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ELEMENT_WISE_ABS_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ELEMENT_WISE_ABS_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -1824,6 +1874,7 @@ impl ::core::fmt::Debug for DML_ELEMENT_WISE_ACOSH_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ELEMENT_WISE_ACOSH_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ELEMENT_WISE_ACOSH_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -1856,6 +1907,7 @@ impl ::core::fmt::Debug for DML_ELEMENT_WISE_ACOS_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ELEMENT_WISE_ACOS_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ELEMENT_WISE_ACOS_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -1889,6 +1941,7 @@ impl ::core::fmt::Debug for DML_ELEMENT_WISE_ADD1_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ELEMENT_WISE_ADD1_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ELEMENT_WISE_ADD1_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -1921,6 +1974,7 @@ impl ::core::fmt::Debug for DML_ELEMENT_WISE_ADD_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ELEMENT_WISE_ADD_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ELEMENT_WISE_ADD_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -1953,6 +2007,7 @@ impl ::core::fmt::Debug for DML_ELEMENT_WISE_ASINH_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ELEMENT_WISE_ASINH_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ELEMENT_WISE_ASINH_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -1985,6 +2040,7 @@ impl ::core::fmt::Debug for DML_ELEMENT_WISE_ASIN_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ELEMENT_WISE_ASIN_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ELEMENT_WISE_ASIN_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -2017,6 +2073,7 @@ impl ::core::fmt::Debug for DML_ELEMENT_WISE_ATANH_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ELEMENT_WISE_ATANH_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ELEMENT_WISE_ATANH_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -2049,6 +2106,7 @@ impl ::core::fmt::Debug for DML_ELEMENT_WISE_ATAN_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ELEMENT_WISE_ATAN_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ELEMENT_WISE_ATAN_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -2081,6 +2139,7 @@ impl ::core::fmt::Debug for DML_ELEMENT_WISE_ATAN_YX_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ELEMENT_WISE_ATAN_YX_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ELEMENT_WISE_ATAN_YX_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -2113,6 +2172,7 @@ impl ::core::fmt::Debug for DML_ELEMENT_WISE_BIT_AND_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ELEMENT_WISE_BIT_AND_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ELEMENT_WISE_BIT_AND_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -2144,6 +2204,7 @@ impl ::core::fmt::Debug for DML_ELEMENT_WISE_BIT_COUNT_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ELEMENT_WISE_BIT_COUNT_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ELEMENT_WISE_BIT_COUNT_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -2175,6 +2236,7 @@ impl ::core::fmt::Debug for DML_ELEMENT_WISE_BIT_NOT_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ELEMENT_WISE_BIT_NOT_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ELEMENT_WISE_BIT_NOT_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -2207,6 +2269,7 @@ impl ::core::fmt::Debug for DML_ELEMENT_WISE_BIT_OR_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ELEMENT_WISE_BIT_OR_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ELEMENT_WISE_BIT_OR_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -2239,6 +2302,7 @@ impl ::core::fmt::Debug for DML_ELEMENT_WISE_BIT_SHIFT_LEFT_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ELEMENT_WISE_BIT_SHIFT_LEFT_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ELEMENT_WISE_BIT_SHIFT_LEFT_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -2271,6 +2335,7 @@ impl ::core::fmt::Debug for DML_ELEMENT_WISE_BIT_SHIFT_RIGHT_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ELEMENT_WISE_BIT_SHIFT_RIGHT_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ELEMENT_WISE_BIT_SHIFT_RIGHT_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -2303,6 +2368,7 @@ impl ::core::fmt::Debug for DML_ELEMENT_WISE_BIT_XOR_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ELEMENT_WISE_BIT_XOR_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ELEMENT_WISE_BIT_XOR_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -2335,6 +2401,7 @@ impl ::core::fmt::Debug for DML_ELEMENT_WISE_CEIL_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ELEMENT_WISE_CEIL_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ELEMENT_WISE_CEIL_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -2369,6 +2436,7 @@ impl ::core::fmt::Debug for DML_ELEMENT_WISE_CLIP_GRAD_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ELEMENT_WISE_CLIP_GRAD_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ELEMENT_WISE_CLIP_GRAD_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -2403,6 +2471,7 @@ impl ::core::fmt::Debug for DML_ELEMENT_WISE_CLIP_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ELEMENT_WISE_CLIP_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ELEMENT_WISE_CLIP_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -2436,6 +2505,7 @@ impl ::core::fmt::Debug for DML_ELEMENT_WISE_CONSTANT_POW_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ELEMENT_WISE_CONSTANT_POW_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ELEMENT_WISE_CONSTANT_POW_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -2468,6 +2538,7 @@ impl ::core::fmt::Debug for DML_ELEMENT_WISE_COSH_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ELEMENT_WISE_COSH_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ELEMENT_WISE_COSH_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -2500,6 +2571,7 @@ impl ::core::fmt::Debug for DML_ELEMENT_WISE_COS_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ELEMENT_WISE_COS_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ELEMENT_WISE_COS_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -2533,6 +2605,7 @@ impl ::core::fmt::Debug for DML_ELEMENT_WISE_DEQUANTIZE_LINEAR_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ELEMENT_WISE_DEQUANTIZE_LINEAR_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ELEMENT_WISE_DEQUANTIZE_LINEAR_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -2565,6 +2638,7 @@ impl ::core::fmt::Debug for DML_ELEMENT_WISE_DIFFERENCE_SQUARE_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ELEMENT_WISE_DIFFERENCE_SQUARE_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ELEMENT_WISE_DIFFERENCE_SQUARE_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -2597,6 +2671,7 @@ impl ::core::fmt::Debug for DML_ELEMENT_WISE_DIVIDE_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ELEMENT_WISE_DIVIDE_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ELEMENT_WISE_DIVIDE_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -2629,6 +2704,7 @@ impl ::core::fmt::Debug for DML_ELEMENT_WISE_ERF_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ELEMENT_WISE_ERF_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ELEMENT_WISE_ERF_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -2661,6 +2737,7 @@ impl ::core::fmt::Debug for DML_ELEMENT_WISE_EXP_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ELEMENT_WISE_EXP_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ELEMENT_WISE_EXP_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -2693,6 +2770,7 @@ impl ::core::fmt::Debug for DML_ELEMENT_WISE_FLOOR_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ELEMENT_WISE_FLOOR_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ELEMENT_WISE_FLOOR_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -2725,6 +2803,7 @@ impl ::core::fmt::Debug for DML_ELEMENT_WISE_IDENTITY_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ELEMENT_WISE_IDENTITY_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ELEMENT_WISE_IDENTITY_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -2758,6 +2837,7 @@ impl ::core::fmt::Debug for DML_ELEMENT_WISE_IF_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ELEMENT_WISE_IF_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ELEMENT_WISE_IF_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -2790,6 +2870,7 @@ impl ::core::fmt::Debug for DML_ELEMENT_WISE_IS_INFINITY_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ELEMENT_WISE_IS_INFINITY_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ELEMENT_WISE_IS_INFINITY_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -2821,6 +2902,7 @@ impl ::core::fmt::Debug for DML_ELEMENT_WISE_IS_NAN_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ELEMENT_WISE_IS_NAN_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ELEMENT_WISE_IS_NAN_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -2853,6 +2935,7 @@ impl ::core::fmt::Debug for DML_ELEMENT_WISE_LOGICAL_AND_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ELEMENT_WISE_LOGICAL_AND_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ELEMENT_WISE_LOGICAL_AND_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -2885,6 +2968,7 @@ impl ::core::fmt::Debug for DML_ELEMENT_WISE_LOGICAL_EQUALS_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ELEMENT_WISE_LOGICAL_EQUALS_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ELEMENT_WISE_LOGICAL_EQUALS_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -2917,6 +3001,7 @@ impl ::core::fmt::Debug for DML_ELEMENT_WISE_LOGICAL_GREATER_THAN_OPERATOR_DESC 
 }
 unsafe impl ::windows::core::Abi for DML_ELEMENT_WISE_LOGICAL_GREATER_THAN_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ELEMENT_WISE_LOGICAL_GREATER_THAN_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -2949,6 +3034,7 @@ impl ::core::fmt::Debug for DML_ELEMENT_WISE_LOGICAL_GREATER_THAN_OR_EQUAL_OPERA
 }
 unsafe impl ::windows::core::Abi for DML_ELEMENT_WISE_LOGICAL_GREATER_THAN_OR_EQUAL_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ELEMENT_WISE_LOGICAL_GREATER_THAN_OR_EQUAL_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -2981,6 +3067,7 @@ impl ::core::fmt::Debug for DML_ELEMENT_WISE_LOGICAL_LESS_THAN_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ELEMENT_WISE_LOGICAL_LESS_THAN_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ELEMENT_WISE_LOGICAL_LESS_THAN_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -3013,6 +3100,7 @@ impl ::core::fmt::Debug for DML_ELEMENT_WISE_LOGICAL_LESS_THAN_OR_EQUAL_OPERATOR
 }
 unsafe impl ::windows::core::Abi for DML_ELEMENT_WISE_LOGICAL_LESS_THAN_OR_EQUAL_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ELEMENT_WISE_LOGICAL_LESS_THAN_OR_EQUAL_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -3044,6 +3132,7 @@ impl ::core::fmt::Debug for DML_ELEMENT_WISE_LOGICAL_NOT_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ELEMENT_WISE_LOGICAL_NOT_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ELEMENT_WISE_LOGICAL_NOT_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -3076,6 +3165,7 @@ impl ::core::fmt::Debug for DML_ELEMENT_WISE_LOGICAL_OR_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ELEMENT_WISE_LOGICAL_OR_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ELEMENT_WISE_LOGICAL_OR_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -3108,6 +3198,7 @@ impl ::core::fmt::Debug for DML_ELEMENT_WISE_LOGICAL_XOR_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ELEMENT_WISE_LOGICAL_XOR_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ELEMENT_WISE_LOGICAL_XOR_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -3140,6 +3231,7 @@ impl ::core::fmt::Debug for DML_ELEMENT_WISE_LOG_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ELEMENT_WISE_LOG_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ELEMENT_WISE_LOG_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -3172,6 +3264,7 @@ impl ::core::fmt::Debug for DML_ELEMENT_WISE_MAX_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ELEMENT_WISE_MAX_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ELEMENT_WISE_MAX_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -3204,6 +3297,7 @@ impl ::core::fmt::Debug for DML_ELEMENT_WISE_MEAN_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ELEMENT_WISE_MEAN_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ELEMENT_WISE_MEAN_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -3236,6 +3330,7 @@ impl ::core::fmt::Debug for DML_ELEMENT_WISE_MIN_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ELEMENT_WISE_MIN_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ELEMENT_WISE_MIN_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -3268,6 +3363,7 @@ impl ::core::fmt::Debug for DML_ELEMENT_WISE_MODULUS_FLOOR_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ELEMENT_WISE_MODULUS_FLOOR_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ELEMENT_WISE_MODULUS_FLOOR_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -3300,6 +3396,7 @@ impl ::core::fmt::Debug for DML_ELEMENT_WISE_MODULUS_TRUNCATE_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ELEMENT_WISE_MODULUS_TRUNCATE_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ELEMENT_WISE_MODULUS_TRUNCATE_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -3332,6 +3429,7 @@ impl ::core::fmt::Debug for DML_ELEMENT_WISE_MULTIPLY_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ELEMENT_WISE_MULTIPLY_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ELEMENT_WISE_MULTIPLY_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -3365,6 +3463,7 @@ impl ::core::fmt::Debug for DML_ELEMENT_WISE_POW_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ELEMENT_WISE_POW_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ELEMENT_WISE_POW_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -3403,6 +3502,7 @@ impl ::core::fmt::Debug for DML_ELEMENT_WISE_QUANTIZED_LINEAR_ADD_OPERATOR_DESC 
 }
 unsafe impl ::windows::core::Abi for DML_ELEMENT_WISE_QUANTIZED_LINEAR_ADD_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ELEMENT_WISE_QUANTIZED_LINEAR_ADD_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -3436,6 +3536,7 @@ impl ::core::fmt::Debug for DML_ELEMENT_WISE_QUANTIZE_LINEAR_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ELEMENT_WISE_QUANTIZE_LINEAR_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ELEMENT_WISE_QUANTIZE_LINEAR_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -3468,6 +3569,7 @@ impl ::core::fmt::Debug for DML_ELEMENT_WISE_RECIP_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ELEMENT_WISE_RECIP_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ELEMENT_WISE_RECIP_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -3500,6 +3602,7 @@ impl ::core::fmt::Debug for DML_ELEMENT_WISE_ROUND_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ELEMENT_WISE_ROUND_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ELEMENT_WISE_ROUND_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -3531,6 +3634,7 @@ impl ::core::fmt::Debug for DML_ELEMENT_WISE_SIGN_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ELEMENT_WISE_SIGN_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ELEMENT_WISE_SIGN_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -3563,6 +3667,7 @@ impl ::core::fmt::Debug for DML_ELEMENT_WISE_SINH_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ELEMENT_WISE_SINH_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ELEMENT_WISE_SINH_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -3595,6 +3700,7 @@ impl ::core::fmt::Debug for DML_ELEMENT_WISE_SIN_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ELEMENT_WISE_SIN_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ELEMENT_WISE_SIN_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -3627,6 +3733,7 @@ impl ::core::fmt::Debug for DML_ELEMENT_WISE_SQRT_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ELEMENT_WISE_SQRT_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ELEMENT_WISE_SQRT_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -3659,6 +3766,7 @@ impl ::core::fmt::Debug for DML_ELEMENT_WISE_SUBTRACT_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ELEMENT_WISE_SUBTRACT_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ELEMENT_WISE_SUBTRACT_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -3691,6 +3799,7 @@ impl ::core::fmt::Debug for DML_ELEMENT_WISE_TANH_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ELEMENT_WISE_TANH_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ELEMENT_WISE_TANH_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -3723,6 +3832,7 @@ impl ::core::fmt::Debug for DML_ELEMENT_WISE_TAN_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ELEMENT_WISE_TAN_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ELEMENT_WISE_TAN_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -3756,6 +3866,7 @@ impl ::core::fmt::Debug for DML_ELEMENT_WISE_THRESHOLD_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ELEMENT_WISE_THRESHOLD_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ELEMENT_WISE_THRESHOLD_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -3793,6 +3904,7 @@ impl ::core::default::Default for DML_EXECUTION_FLAGS {
 }
 unsafe impl ::windows::core::Abi for DML_EXECUTION_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DML_EXECUTION_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3848,6 +3960,7 @@ impl ::core::default::Default for DML_FEATURE {
 }
 unsafe impl ::windows::core::Abi for DML_FEATURE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DML_FEATURE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3872,6 +3985,7 @@ impl ::core::fmt::Debug for DML_FEATURE_DATA_FEATURE_LEVELS {
 }
 unsafe impl ::windows::core::Abi for DML_FEATURE_DATA_FEATURE_LEVELS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_FEATURE_DATA_FEATURE_LEVELS {
     fn eq(&self, other: &Self) -> bool {
@@ -3907,6 +4021,7 @@ impl ::core::fmt::Debug for DML_FEATURE_DATA_TENSOR_DATA_TYPE_SUPPORT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DML_FEATURE_DATA_TENSOR_DATA_TYPE_SUPPORT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DML_FEATURE_DATA_TENSOR_DATA_TYPE_SUPPORT {
@@ -3951,6 +4066,7 @@ impl ::core::default::Default for DML_FEATURE_LEVEL {
 }
 unsafe impl ::windows::core::Abi for DML_FEATURE_LEVEL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DML_FEATURE_LEVEL {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3976,6 +4092,7 @@ impl ::core::fmt::Debug for DML_FEATURE_QUERY_FEATURE_LEVELS {
 }
 unsafe impl ::windows::core::Abi for DML_FEATURE_QUERY_FEATURE_LEVELS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_FEATURE_QUERY_FEATURE_LEVELS {
     fn eq(&self, other: &Self) -> bool {
@@ -4006,6 +4123,7 @@ impl ::core::fmt::Debug for DML_FEATURE_QUERY_TENSOR_DATA_TYPE_SUPPORT {
 }
 unsafe impl ::windows::core::Abi for DML_FEATURE_QUERY_TENSOR_DATA_TYPE_SUPPORT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_FEATURE_QUERY_TENSOR_DATA_TYPE_SUPPORT {
     fn eq(&self, other: &Self) -> bool {
@@ -4033,6 +4151,7 @@ impl ::core::clone::Clone for DML_FILL_VALUE_CONSTANT_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_FILL_VALUE_CONSTANT_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_FILL_VALUE_CONSTANT_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -4061,6 +4180,7 @@ impl ::core::clone::Clone for DML_FILL_VALUE_SEQUENCE_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_FILL_VALUE_SEQUENCE_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_FILL_VALUE_SEQUENCE_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -4094,6 +4214,7 @@ impl ::core::fmt::Debug for DML_GATHER_ELEMENTS_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_GATHER_ELEMENTS_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_GATHER_ELEMENTS_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -4129,6 +4250,7 @@ impl ::core::fmt::Debug for DML_GATHER_ND1_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_GATHER_ND1_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_GATHER_ND1_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -4163,6 +4285,7 @@ impl ::core::fmt::Debug for DML_GATHER_ND_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_GATHER_ND_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_GATHER_ND_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -4197,6 +4320,7 @@ impl ::core::fmt::Debug for DML_GATHER_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_GATHER_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_GATHER_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -4235,6 +4359,7 @@ impl ::core::fmt::Debug for DML_GEMM_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_GEMM_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_GEMM_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -4274,6 +4399,7 @@ impl ::core::fmt::Debug for DML_GRAPH_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_GRAPH_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_GRAPH_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -4305,6 +4431,7 @@ impl ::core::fmt::Debug for DML_GRAPH_EDGE_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_GRAPH_EDGE_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_GRAPH_EDGE_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -4342,6 +4469,7 @@ impl ::core::default::Default for DML_GRAPH_EDGE_TYPE {
 }
 unsafe impl ::windows::core::Abi for DML_GRAPH_EDGE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DML_GRAPH_EDGE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4367,6 +4495,7 @@ impl ::core::fmt::Debug for DML_GRAPH_NODE_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_GRAPH_NODE_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_GRAPH_NODE_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -4400,6 +4529,7 @@ impl ::core::default::Default for DML_GRAPH_NODE_TYPE {
 }
 unsafe impl ::windows::core::Abi for DML_GRAPH_NODE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DML_GRAPH_NODE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4453,6 +4583,7 @@ impl ::core::fmt::Debug for DML_GRU_OPERATOR_DESC {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DML_GRU_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DML_GRU_OPERATOR_DESC {
@@ -4489,6 +4620,7 @@ impl ::core::fmt::Debug for DML_INPUT_GRAPH_EDGE_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_INPUT_GRAPH_EDGE_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_INPUT_GRAPH_EDGE_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -4523,6 +4655,7 @@ impl ::core::fmt::Debug for DML_INTERMEDIATE_GRAPH_EDGE_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_INTERMEDIATE_GRAPH_EDGE_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_INTERMEDIATE_GRAPH_EDGE_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -4556,6 +4689,7 @@ impl ::core::default::Default for DML_INTERPOLATION_MODE {
 }
 unsafe impl ::windows::core::Abi for DML_INTERPOLATION_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DML_INTERPOLATION_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4585,6 +4719,7 @@ impl ::core::default::Default for DML_IS_INFINITY_MODE {
 }
 unsafe impl ::windows::core::Abi for DML_IS_INFINITY_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DML_IS_INFINITY_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4612,6 +4747,7 @@ impl ::core::fmt::Debug for DML_JOIN_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_JOIN_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_JOIN_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -4654,6 +4790,7 @@ impl ::core::fmt::Debug for DML_LOCAL_RESPONSE_NORMALIZATION_GRAD_OPERATOR_DESC 
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DML_LOCAL_RESPONSE_NORMALIZATION_GRAD_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DML_LOCAL_RESPONSE_NORMALIZATION_GRAD_OPERATOR_DESC {
@@ -4698,6 +4835,7 @@ impl ::core::fmt::Debug for DML_LOCAL_RESPONSE_NORMALIZATION_OPERATOR_DESC {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DML_LOCAL_RESPONSE_NORMALIZATION_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DML_LOCAL_RESPONSE_NORMALIZATION_OPERATOR_DESC {
@@ -4735,6 +4873,7 @@ impl ::core::fmt::Debug for DML_LP_NORMALIZATION_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_LP_NORMALIZATION_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_LP_NORMALIZATION_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -4772,6 +4911,7 @@ impl ::core::fmt::Debug for DML_LP_POOLING_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_LP_POOLING_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_LP_POOLING_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -4841,6 +4981,7 @@ impl ::core::fmt::Debug for DML_LSTM_OPERATOR_DESC {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DML_LSTM_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DML_LSTM_OPERATOR_DESC {
@@ -4878,6 +5019,7 @@ impl ::core::fmt::Debug for DML_MATRIX_MULTIPLY_INTEGER_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_MATRIX_MULTIPLY_INTEGER_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_MATRIX_MULTIPLY_INTEGER_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -4911,6 +5053,7 @@ impl ::core::default::Default for DML_MATRIX_TRANSFORM {
 }
 unsafe impl ::windows::core::Abi for DML_MATRIX_TRANSFORM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DML_MATRIX_TRANSFORM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4942,6 +5085,7 @@ impl ::core::fmt::Debug for DML_MAX_POOLING1_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_MAX_POOLING1_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_MAX_POOLING1_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -4980,6 +5124,7 @@ impl ::core::fmt::Debug for DML_MAX_POOLING2_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_MAX_POOLING2_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_MAX_POOLING2_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -5018,6 +5163,7 @@ impl ::core::fmt::Debug for DML_MAX_POOLING_GRAD_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_MAX_POOLING_GRAD_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_MAX_POOLING_GRAD_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -5054,6 +5200,7 @@ impl ::core::fmt::Debug for DML_MAX_POOLING_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_MAX_POOLING_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_MAX_POOLING_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -5086,6 +5233,7 @@ impl ::core::fmt::Debug for DML_MAX_UNPOOLING_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_MAX_UNPOOLING_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_MAX_UNPOOLING_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -5129,6 +5277,7 @@ impl ::core::fmt::Debug for DML_MEAN_VARIANCE_NORMALIZATION1_OPERATOR_DESC {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DML_MEAN_VARIANCE_NORMALIZATION1_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DML_MEAN_VARIANCE_NORMALIZATION1_OPERATOR_DESC {
@@ -5174,6 +5323,7 @@ impl ::core::fmt::Debug for DML_MEAN_VARIANCE_NORMALIZATION_OPERATOR_DESC {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DML_MEAN_VARIANCE_NORMALIZATION_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DML_MEAN_VARIANCE_NORMALIZATION_OPERATOR_DESC {
@@ -5211,6 +5361,7 @@ impl ::core::fmt::Debug for DML_NONZERO_COORDINATES_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_NONZERO_COORDINATES_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_NONZERO_COORDINATES_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -5244,6 +5395,7 @@ impl ::core::fmt::Debug for DML_ONE_HOT_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ONE_HOT_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ONE_HOT_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -5275,6 +5427,7 @@ impl ::core::fmt::Debug for DML_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -5305,6 +5458,7 @@ impl ::core::fmt::Debug for DML_OPERATOR_GRAPH_NODE_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_OPERATOR_GRAPH_NODE_DESC {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_OPERATOR_GRAPH_NODE_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -5636,6 +5790,7 @@ impl ::core::default::Default for DML_OPERATOR_TYPE {
 }
 unsafe impl ::windows::core::Abi for DML_OPERATOR_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DML_OPERATOR_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5663,6 +5818,7 @@ impl ::core::fmt::Debug for DML_OUTPUT_GRAPH_EDGE_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_OUTPUT_GRAPH_EDGE_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_OUTPUT_GRAPH_EDGE_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -5700,6 +5856,7 @@ impl ::core::default::Default for DML_PADDING_MODE {
 }
 unsafe impl ::windows::core::Abi for DML_PADDING_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DML_PADDING_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5730,6 +5887,7 @@ impl ::core::fmt::Debug for DML_PADDING_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_PADDING_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_PADDING_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -5794,6 +5952,7 @@ impl ::core::fmt::Debug for DML_QUANTIZED_LINEAR_CONVOLUTION_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_QUANTIZED_LINEAR_CONVOLUTION_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_QUANTIZED_LINEAR_CONVOLUTION_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -5832,6 +5991,7 @@ impl ::core::fmt::Debug for DML_QUANTIZED_LINEAR_MATRIX_MULTIPLY_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_QUANTIZED_LINEAR_MATRIX_MULTIPLY_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_QUANTIZED_LINEAR_MATRIX_MULTIPLY_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -5865,6 +6025,7 @@ impl ::core::fmt::Debug for DML_RANDOM_GENERATOR_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_RANDOM_GENERATOR_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_RANDOM_GENERATOR_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -5896,6 +6057,7 @@ impl ::core::default::Default for DML_RANDOM_GENERATOR_TYPE {
 }
 unsafe impl ::windows::core::Abi for DML_RANDOM_GENERATOR_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DML_RANDOM_GENERATOR_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5925,6 +6087,7 @@ impl ::core::default::Default for DML_RECURRENT_NETWORK_DIRECTION {
 }
 unsafe impl ::windows::core::Abi for DML_RECURRENT_NETWORK_DIRECTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DML_RECURRENT_NETWORK_DIRECTION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5972,6 +6135,7 @@ impl ::core::default::Default for DML_REDUCE_FUNCTION {
 }
 unsafe impl ::windows::core::Abi for DML_REDUCE_FUNCTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DML_REDUCE_FUNCTION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6000,6 +6164,7 @@ impl ::core::fmt::Debug for DML_REDUCE_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_REDUCE_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_REDUCE_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -6036,6 +6201,7 @@ impl ::core::fmt::Debug for DML_RESAMPLE1_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_RESAMPLE1_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_RESAMPLE1_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -6072,6 +6238,7 @@ impl ::core::fmt::Debug for DML_RESAMPLE_GRAD_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_RESAMPLE_GRAD_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_RESAMPLE_GRAD_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -6106,6 +6273,7 @@ impl ::core::fmt::Debug for DML_RESAMPLE_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_RESAMPLE_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_RESAMPLE_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -6139,6 +6307,7 @@ impl ::core::fmt::Debug for DML_REVERSE_SUBSEQUENCES_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_REVERSE_SUBSEQUENCES_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_REVERSE_SUBSEQUENCES_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -6191,6 +6360,7 @@ impl ::core::fmt::Debug for DML_RNN_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_RNN_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_RNN_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -6254,6 +6424,7 @@ impl ::core::fmt::Debug for DML_ROI_ALIGN1_OPERATOR_DESC {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DML_ROI_ALIGN1_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DML_ROI_ALIGN1_OPERATOR_DESC {
@@ -6309,6 +6480,7 @@ impl ::core::fmt::Debug for DML_ROI_ALIGN_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ROI_ALIGN_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ROI_ALIGN_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -6343,6 +6515,7 @@ impl ::core::fmt::Debug for DML_ROI_POOLING_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_ROI_POOLING_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_ROI_POOLING_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -6378,6 +6551,7 @@ impl ::core::default::Default for DML_ROUNDING_MODE {
 }
 unsafe impl ::windows::core::Abi for DML_ROUNDING_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DML_ROUNDING_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6407,6 +6581,7 @@ impl ::core::clone::Clone for DML_SCALAR_UNION {
 }
 unsafe impl ::windows::core::Abi for DML_SCALAR_UNION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_SCALAR_UNION {
     fn eq(&self, other: &Self) -> bool {
@@ -6438,6 +6613,7 @@ impl ::core::fmt::Debug for DML_SCALE_BIAS {
 }
 unsafe impl ::windows::core::Abi for DML_SCALE_BIAS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_SCALE_BIAS {
     fn eq(&self, other: &Self) -> bool {
@@ -6473,6 +6649,7 @@ impl ::core::fmt::Debug for DML_SCATTER_ND_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_SCATTER_ND_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_SCATTER_ND_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -6507,6 +6684,7 @@ impl ::core::fmt::Debug for DML_SCATTER_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_SCATTER_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_SCATTER_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -6538,6 +6716,7 @@ impl ::core::fmt::Debug for DML_SIZE_2D {
 }
 unsafe impl ::windows::core::Abi for DML_SIZE_2D {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_SIZE_2D {
     fn eq(&self, other: &Self) -> bool {
@@ -6573,6 +6752,7 @@ impl ::core::fmt::Debug for DML_SLICE1_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_SLICE1_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_SLICE1_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -6608,6 +6788,7 @@ impl ::core::fmt::Debug for DML_SLICE_GRAD_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_SLICE_GRAD_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_SLICE_GRAD_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -6643,6 +6824,7 @@ impl ::core::fmt::Debug for DML_SLICE_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_SLICE_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_SLICE_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -6676,6 +6858,7 @@ impl ::core::fmt::Debug for DML_SPACE_TO_DEPTH1_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_SPACE_TO_DEPTH1_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_SPACE_TO_DEPTH1_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -6708,6 +6891,7 @@ impl ::core::fmt::Debug for DML_SPACE_TO_DEPTH_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_SPACE_TO_DEPTH_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_SPACE_TO_DEPTH_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -6741,6 +6925,7 @@ impl ::core::fmt::Debug for DML_SPLIT_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_SPLIT_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_SPLIT_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -6798,6 +6983,7 @@ impl ::core::default::Default for DML_TENSOR_DATA_TYPE {
 }
 unsafe impl ::windows::core::Abi for DML_TENSOR_DATA_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DML_TENSOR_DATA_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6823,6 +7009,7 @@ impl ::core::fmt::Debug for DML_TENSOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_TENSOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_TENSOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -6860,6 +7047,7 @@ impl ::core::default::Default for DML_TENSOR_FLAGS {
 }
 unsafe impl ::windows::core::Abi for DML_TENSOR_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DML_TENSOR_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6915,6 +7103,7 @@ impl ::core::default::Default for DML_TENSOR_TYPE {
 }
 unsafe impl ::windows::core::Abi for DML_TENSOR_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DML_TENSOR_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6942,6 +7131,7 @@ impl ::core::fmt::Debug for DML_TILE_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_TILE_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_TILE_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -6977,6 +7167,7 @@ impl ::core::fmt::Debug for DML_TOP_K1_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_TOP_K1_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_TOP_K1_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -7011,6 +7202,7 @@ impl ::core::fmt::Debug for DML_TOP_K_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_TOP_K_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_TOP_K_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -7044,6 +7236,7 @@ impl ::core::fmt::Debug for DML_UPSAMPLE_2D_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_UPSAMPLE_2D_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_UPSAMPLE_2D_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -7078,6 +7271,7 @@ impl ::core::fmt::Debug for DML_VALUE_SCALE_2D_OPERATOR_DESC {
 }
 unsafe impl ::windows::core::Abi for DML_VALUE_SCALE_2D_OPERATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DML_VALUE_SCALE_2D_OPERATOR_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -7093,6 +7287,11 @@ impl ::core::default::Default for DML_VALUE_SCALE_2D_OPERATOR_DESC {
 #[doc = "*Required features: `\"Win32_AI_MachineLearning_DirectML\"`*"]
 #[repr(transparent)]
 pub struct IDMLBindingTable(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDMLBindingTable {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDMLBindingTable {
     #[doc = "*Required features: `\"Win32_AI_MachineLearning_DirectML\"`*"]
     pub unsafe fn GetPrivateData(&self, guid: *const ::windows::core::GUID, datasize: *mut u32, data: *mut ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -7197,11 +7396,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDMLDeviceChild> for &'a IDMLBindingTabl
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDMLBindingTable {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDMLBindingTable {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7233,6 +7427,11 @@ pub struct IDMLBindingTable_Vtbl {
 #[doc = "*Required features: `\"Win32_AI_MachineLearning_DirectML\"`*"]
 #[repr(transparent)]
 pub struct IDMLCommandRecorder(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDMLCommandRecorder {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDMLCommandRecorder {
     #[doc = "*Required features: `\"Win32_AI_MachineLearning_DirectML\"`*"]
     pub unsafe fn GetPrivateData(&self, guid: *const ::windows::core::GUID, datasize: *mut u32, data: *mut ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -7321,11 +7520,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDMLDeviceChild> for &'a IDMLCommandReco
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDMLCommandRecorder {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDMLCommandRecorder {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7353,6 +7547,11 @@ pub struct IDMLCommandRecorder_Vtbl {
 #[doc = "*Required features: `\"Win32_AI_MachineLearning_DirectML\"`*"]
 #[repr(transparent)]
 pub struct IDMLCompiledOperator(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDMLCompiledOperator {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDMLCompiledOperator {
     #[doc = "*Required features: `\"Win32_AI_MachineLearning_DirectML\"`*"]
     pub unsafe fn GetPrivateData(&self, guid: *const ::windows::core::GUID, datasize: *mut u32, data: *mut ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -7482,11 +7681,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDMLDispatchable> for &'a IDMLCompiledOp
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDMLCompiledOperator {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDMLCompiledOperator {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7510,6 +7704,11 @@ pub struct IDMLCompiledOperator_Vtbl {
 #[doc = "*Required features: `\"Win32_AI_MachineLearning_DirectML\"`*"]
 #[repr(transparent)]
 pub struct IDMLDebugDevice(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDMLDebugDevice {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDMLDebugDevice {
     #[doc = "*Required features: `\"Win32_AI_MachineLearning_DirectML\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -7535,11 +7734,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IDMLDebug
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDMLDebugDevice {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IDMLDebugDevice {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IDMLDebugDevice {
@@ -7569,6 +7763,11 @@ pub struct IDMLDebugDevice_Vtbl {
 #[doc = "*Required features: `\"Win32_AI_MachineLearning_DirectML\"`*"]
 #[repr(transparent)]
 pub struct IDMLDevice(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDMLDevice {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDMLDevice {
     #[doc = "*Required features: `\"Win32_AI_MachineLearning_DirectML\"`*"]
     pub unsafe fn GetPrivateData(&self, guid: *const ::windows::core::GUID, datasize: *mut u32, data: *mut ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -7672,11 +7871,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDMLObject> for &'a IDMLDevice {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDMLDevice {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDMLDevice {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7713,6 +7907,11 @@ pub struct IDMLDevice_Vtbl {
 #[doc = "*Required features: `\"Win32_AI_MachineLearning_DirectML\"`*"]
 #[repr(transparent)]
 pub struct IDMLDevice1(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDMLDevice1 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDMLDevice1 {
     #[doc = "*Required features: `\"Win32_AI_MachineLearning_DirectML\"`*"]
     pub unsafe fn GetPrivateData(&self, guid: *const ::windows::core::GUID, datasize: *mut u32, data: *mut ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -7840,11 +8039,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDMLDevice> for &'a IDMLDevice1 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDMLDevice1 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDMLDevice1 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7869,6 +8063,11 @@ pub struct IDMLDevice1_Vtbl {
 #[doc = "*Required features: `\"Win32_AI_MachineLearning_DirectML\"`*"]
 #[repr(transparent)]
 pub struct IDMLDeviceChild(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDMLDeviceChild {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDMLDeviceChild {
     #[doc = "*Required features: `\"Win32_AI_MachineLearning_DirectML\"`*"]
     pub unsafe fn GetPrivateData(&self, guid: *const ::windows::core::GUID, datasize: *mut u32, data: *mut ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -7932,11 +8131,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDMLObject> for &'a IDMLDeviceChild {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDMLDeviceChild {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDMLDeviceChild {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7961,6 +8155,11 @@ pub struct IDMLDeviceChild_Vtbl {
 #[doc = "*Required features: `\"Win32_AI_MachineLearning_DirectML\"`*"]
 #[repr(transparent)]
 pub struct IDMLDispatchable(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDMLDispatchable {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDMLDispatchable {
     #[doc = "*Required features: `\"Win32_AI_MachineLearning_DirectML\"`*"]
     pub unsafe fn GetPrivateData(&self, guid: *const ::windows::core::GUID, datasize: *mut u32, data: *mut ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -8070,11 +8269,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDMLPageable> for &'a IDMLDispatchable {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDMLDispatchable {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDMLDispatchable {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8099,6 +8293,11 @@ pub struct IDMLDispatchable_Vtbl {
 #[doc = "*Required features: `\"Win32_AI_MachineLearning_DirectML\"`*"]
 #[repr(transparent)]
 pub struct IDMLObject(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDMLObject {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDMLObject {
     #[doc = "*Required features: `\"Win32_AI_MachineLearning_DirectML\"`*"]
     pub unsafe fn GetPrivateData(&self, guid: *const ::windows::core::GUID, datasize: *mut u32, data: *mut ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -8137,11 +8336,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDMLO
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDMLObject {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDMLObject {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8169,6 +8363,11 @@ pub struct IDMLObject_Vtbl {
 #[doc = "*Required features: `\"Win32_AI_MachineLearning_DirectML\"`*"]
 #[repr(transparent)]
 pub struct IDMLOperator(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDMLOperator {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDMLOperator {
     #[doc = "*Required features: `\"Win32_AI_MachineLearning_DirectML\"`*"]
     pub unsafe fn GetPrivateData(&self, guid: *const ::windows::core::GUID, datasize: *mut u32, data: *mut ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -8252,11 +8451,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDMLDeviceChild> for &'a IDMLOperator {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDMLOperator {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDMLOperator {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8280,6 +8474,11 @@ pub struct IDMLOperator_Vtbl {
 #[doc = "*Required features: `\"Win32_AI_MachineLearning_DirectML\"`*"]
 #[repr(transparent)]
 pub struct IDMLOperatorInitializer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDMLOperatorInitializer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDMLOperatorInitializer {
     #[doc = "*Required features: `\"Win32_AI_MachineLearning_DirectML\"`*"]
     pub unsafe fn GetPrivateData(&self, guid: *const ::windows::core::GUID, datasize: *mut u32, data: *mut ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -8413,11 +8612,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDMLDispatchable> for &'a IDMLOperatorIn
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDMLOperatorInitializer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDMLOperatorInitializer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8442,6 +8636,11 @@ pub struct IDMLOperatorInitializer_Vtbl {
 #[doc = "*Required features: `\"Win32_AI_MachineLearning_DirectML\"`*"]
 #[repr(transparent)]
 pub struct IDMLPageable(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDMLPageable {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDMLPageable {
     #[doc = "*Required features: `\"Win32_AI_MachineLearning_DirectML\"`*"]
     pub unsafe fn GetPrivateData(&self, guid: *const ::windows::core::GUID, datasize: *mut u32, data: *mut ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -8523,11 +8722,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDMLDeviceChild> for IDMLPageable {
 impl<'a> ::windows::core::IntoParam<'a, IDMLDeviceChild> for &'a IDMLPageable {
     fn into_param(self) -> ::windows::core::Param<'a, IDMLDeviceChild> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IDMLPageable {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IDMLPageable {

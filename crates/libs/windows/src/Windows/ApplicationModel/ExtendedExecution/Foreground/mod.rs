@@ -22,6 +22,7 @@ impl ::core::default::Default for ExtendedExecutionForegroundReason {
 }
 unsafe impl ::windows::core::Abi for ExtendedExecutionForegroundReason {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ExtendedExecutionForegroundReason {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -30,7 +31,6 @@ impl ::core::fmt::Debug for ExtendedExecutionForegroundReason {
 }
 unsafe impl ::windows::core::RuntimeType for ExtendedExecutionForegroundReason {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.ExtendedExecution.Foreground.ExtendedExecutionForegroundReason;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -56,6 +56,7 @@ impl ::core::default::Default for ExtendedExecutionForegroundResult {
 }
 unsafe impl ::windows::core::Abi for ExtendedExecutionForegroundResult {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ExtendedExecutionForegroundResult {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -64,7 +65,6 @@ impl ::core::fmt::Debug for ExtendedExecutionForegroundResult {
 }
 unsafe impl ::windows::core::RuntimeType for ExtendedExecutionForegroundResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.ExtendedExecution.Foreground.ExtendedExecutionForegroundResult;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -82,11 +82,6 @@ impl ExtendedExecutionForegroundRevokedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for ExtendedExecutionForegroundRevokedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ExtendedExecutionForegroundRevokedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -100,7 +95,6 @@ impl ::core::fmt::Debug for ExtendedExecutionForegroundRevokedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for ExtendedExecutionForegroundRevokedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.ExtendedExecution.Foreground.ExtendedExecutionForegroundRevokedEventArgs;{b07cd940-9557-aea4-2c99-bdd56d9be461})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -175,6 +169,7 @@ impl ::core::default::Default for ExtendedExecutionForegroundRevokedReason {
 }
 unsafe impl ::windows::core::Abi for ExtendedExecutionForegroundRevokedReason {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ExtendedExecutionForegroundRevokedReason {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -183,7 +178,6 @@ impl ::core::fmt::Debug for ExtendedExecutionForegroundRevokedReason {
 }
 unsafe impl ::windows::core::RuntimeType for ExtendedExecutionForegroundRevokedReason {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.ExtendedExecution.Foreground.ExtendedExecutionForegroundRevokedReason;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -256,11 +250,6 @@ impl ExtendedExecutionForegroundSession {
         unsafe { (::windows::core::Interface::vtable(this).SetReason)(::core::mem::transmute_copy(this), value).ok() }
     }
 }
-impl ::core::clone::Clone for ExtendedExecutionForegroundSession {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ExtendedExecutionForegroundSession {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -274,7 +263,6 @@ impl ::core::fmt::Debug for ExtendedExecutionForegroundSession {
 }
 unsafe impl ::windows::core::RuntimeType for ExtendedExecutionForegroundSession {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.ExtendedExecution.Foreground.ExtendedExecutionForegroundSession;{fbf440e1-9d10-4201-b01e-c83275296f2e})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -357,6 +345,11 @@ unsafe impl ::core::marker::Sync for ExtendedExecutionForegroundSession {}
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IExtendedExecutionForegroundRevokedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IExtendedExecutionForegroundRevokedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IExtendedExecutionForegroundRevokedEventArgs {
     type Vtable = IExtendedExecutionForegroundRevokedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb07cd940_9557_aea4_2c99_bdd56d9be461);
@@ -370,6 +363,11 @@ pub struct IExtendedExecutionForegroundRevokedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IExtendedExecutionForegroundSession(::windows::core::IUnknown);
+impl ::core::clone::Clone for IExtendedExecutionForegroundSession {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IExtendedExecutionForegroundSession {
     type Vtable = IExtendedExecutionForegroundSession_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xfbf440e1_9d10_4201_b01e_c83275296f2e);

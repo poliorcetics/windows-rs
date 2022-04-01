@@ -19,6 +19,7 @@ impl ::core::fmt::Debug for DAILY {
 }
 unsafe impl ::windows::core::Abi for DAILY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DAILY {
     fn eq(&self, other: &Self) -> bool {
@@ -35,6 +36,12 @@ impl ::core::default::Default for DAILY {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IAction(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IAction {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IAction {
     #[doc = "*Required features: `\"Win32_System_TaskScheduler\"`, `\"Win32_Foundation\"`*"]
@@ -101,12 +108,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IAction {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IAction {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IAction {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -144,6 +145,12 @@ pub struct IAction_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IActionCollection(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IActionCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IActionCollection {
     #[doc = "*Required features: `\"Win32_System_TaskScheduler\"`*"]
@@ -246,12 +253,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IActionCo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IActionCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IActionCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -311,6 +312,12 @@ pub struct IActionCollection_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IBootTrigger(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IBootTrigger {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IBootTrigger {
     #[doc = "*Required features: `\"Win32_System_TaskScheduler\"`*"]
@@ -460,12 +467,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITrigger> for &'a IBootTrigger {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IBootTrigger {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IBootTrigger {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -502,6 +503,12 @@ pub struct IBootTrigger_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IComHandlerAction(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IComHandlerAction {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IComHandlerAction {
     #[doc = "*Required features: `\"Win32_System_TaskScheduler\"`, `\"Win32_Foundation\"`*"]
@@ -612,12 +619,6 @@ impl<'a> ::windows::core::IntoParam<'a, IAction> for &'a IComHandlerAction {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IComHandlerAction {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IComHandlerAction {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -662,6 +663,12 @@ pub struct IComHandlerAction_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IDailyTrigger(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IDailyTrigger {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IDailyTrigger {
     #[doc = "*Required features: `\"Win32_System_TaskScheduler\"`*"]
@@ -819,12 +826,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITrigger> for &'a IDailyTrigger {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IDailyTrigger {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IDailyTrigger {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -863,6 +864,12 @@ pub struct IDailyTrigger_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IEmailAction(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IEmailAction {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IEmailAction {
     #[doc = "*Required features: `\"Win32_System_TaskScheduler\"`, `\"Win32_Foundation\"`*"]
@@ -1054,12 +1061,6 @@ impl<'a> ::windows::core::IntoParam<'a, IAction> for &'a IEmailAction {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IEmailAction {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IEmailAction {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1167,6 +1168,11 @@ pub struct IEmailAction_Vtbl {
 #[doc = "*Required features: `\"Win32_System_TaskScheduler\"`*"]
 #[repr(transparent)]
 pub struct IEnumWorkItems(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnumWorkItems {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnumWorkItems {
     #[doc = "*Required features: `\"Win32_System_TaskScheduler\"`*"]
     pub unsafe fn Next(&self, celt: u32, rgpwsznames: *mut *mut ::windows::core::PWSTR, pceltfetched: *mut u32) -> ::windows::core::HRESULT {
@@ -1206,11 +1212,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnum
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnumWorkItems {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnumWorkItems {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1239,6 +1240,12 @@ pub struct IEnumWorkItems_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IEventTrigger(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IEventTrigger {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IEventTrigger {
     #[doc = "*Required features: `\"Win32_System_TaskScheduler\"`*"]
@@ -1409,12 +1416,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITrigger> for &'a IEventTrigger {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IEventTrigger {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IEventTrigger {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1467,6 +1468,12 @@ pub struct IEventTrigger_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IExecAction(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IExecAction {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IExecAction {
     #[doc = "*Required features: `\"Win32_System_TaskScheduler\"`, `\"Win32_Foundation\"`*"]
@@ -1587,12 +1594,6 @@ impl<'a> ::windows::core::IntoParam<'a, IAction> for &'a IExecAction {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IExecAction {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IExecAction {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1645,6 +1646,12 @@ pub struct IExecAction_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IExecAction2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IExecAction2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IExecAction2 {
     #[doc = "*Required features: `\"Win32_System_TaskScheduler\"`, `\"Win32_Foundation\"`*"]
@@ -1797,12 +1804,6 @@ impl<'a> ::windows::core::IntoParam<'a, IExecAction> for &'a IExecAction2 {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IExecAction2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IExecAction2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1833,6 +1834,12 @@ pub struct IExecAction2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IIdleSettings(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IIdleSettings {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IIdleSettings {
     #[doc = "*Required features: `\"Win32_System_TaskScheduler\"`, `\"Win32_Foundation\"`*"]
@@ -1921,12 +1928,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IIdleSett
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IIdleSettings {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IIdleSettings {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1975,6 +1976,12 @@ pub struct IIdleSettings_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IIdleTrigger(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IIdleTrigger {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IIdleTrigger {
     #[doc = "*Required features: `\"Win32_System_TaskScheduler\"`*"]
@@ -2114,12 +2121,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITrigger> for &'a IIdleTrigger {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IIdleTrigger {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IIdleTrigger {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2148,6 +2149,12 @@ pub struct IIdleTrigger_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ILogonTrigger(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ILogonTrigger {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ILogonTrigger {
     #[doc = "*Required features: `\"Win32_System_TaskScheduler\"`*"]
@@ -2307,12 +2314,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITrigger> for &'a ILogonTrigger {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ILogonTrigger {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ILogonTrigger {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2357,6 +2358,12 @@ pub struct ILogonTrigger_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IMaintenanceSettings(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IMaintenanceSettings {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IMaintenanceSettings {
     #[doc = "*Required features: `\"Win32_System_TaskScheduler\"`, `\"Win32_Foundation\"`*"]
@@ -2437,12 +2444,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IMaintena
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IMaintenanceSettings {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IMaintenanceSettings {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2489,6 +2490,12 @@ pub struct IMaintenanceSettings_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IMonthlyDOWTrigger(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IMonthlyDOWTrigger {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IMonthlyDOWTrigger {
     #[doc = "*Required features: `\"Win32_System_TaskScheduler\"`*"]
@@ -2670,12 +2677,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITrigger> for &'a IMonthlyDOWTrigger {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IMonthlyDOWTrigger {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IMonthlyDOWTrigger {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2720,6 +2721,12 @@ pub struct IMonthlyDOWTrigger_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IMonthlyTrigger(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IMonthlyTrigger {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IMonthlyTrigger {
     #[doc = "*Required features: `\"Win32_System_TaskScheduler\"`*"]
@@ -2893,12 +2900,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITrigger> for &'a IMonthlyTrigger {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IMonthlyTrigger {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IMonthlyTrigger {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2941,6 +2942,12 @@ pub struct IMonthlyTrigger_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct INetworkSettings(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for INetworkSettings {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl INetworkSettings {
     #[doc = "*Required features: `\"Win32_System_TaskScheduler\"`, `\"Win32_Foundation\"`*"]
@@ -3013,12 +3020,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a INetworkS
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for INetworkSettings {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for INetworkSettings {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3063,6 +3064,12 @@ pub struct INetworkSettings_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IPrincipal(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IPrincipal {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IPrincipal {
     #[doc = "*Required features: `\"Win32_System_TaskScheduler\"`, `\"Win32_Foundation\"`*"]
@@ -3171,12 +3178,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IPrincipa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IPrincipal {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IPrincipal {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3241,6 +3242,12 @@ pub struct IPrincipal_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IPrincipal2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IPrincipal2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IPrincipal2 {
     #[doc = "*Required features: `\"Win32_System_TaskScheduler\"`*"]
@@ -3315,12 +3322,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IPrincipa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IPrincipal2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IPrincipal2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3359,6 +3360,11 @@ pub struct IPrincipal2_Vtbl {
 #[doc = "*Required features: `\"Win32_System_TaskScheduler\"`*"]
 #[repr(transparent)]
 pub struct IProvideTaskPage(::windows::core::IUnknown);
+impl ::core::clone::Clone for IProvideTaskPage {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IProvideTaskPage {
     #[doc = "*Required features: `\"Win32_System_TaskScheduler\"`, `\"Win32_Foundation\"`, `\"Win32_UI_Controls\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_UI_Controls"))]
@@ -3385,11 +3391,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IProvideT
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IProvideTaskPage {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IProvideTaskPage {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IProvideTaskPage {
@@ -3420,6 +3421,12 @@ pub struct IProvideTaskPage_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IRegisteredTask(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IRegisteredTask {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IRegisteredTask {
     #[doc = "*Required features: `\"Win32_System_TaskScheduler\"`, `\"Win32_Foundation\"`*"]
@@ -3568,12 +3575,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IRegister
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IRegisteredTask {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IRegisteredTask {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3651,6 +3652,12 @@ pub struct IRegisteredTask_Vtbl {
 #[repr(transparent)]
 pub struct IRegisteredTaskCollection(::windows::core::IUnknown);
 #[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IRegisteredTaskCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "Win32_System_Com")]
 impl IRegisteredTaskCollection {
     #[doc = "*Required features: `\"Win32_System_TaskScheduler\"`*"]
     pub unsafe fn Count(&self) -> ::windows::core::Result<i32> {
@@ -3718,12 +3725,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IRegister
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IRegisteredTaskCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IRegisteredTaskCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3758,6 +3759,12 @@ pub struct IRegisteredTaskCollection_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IRegistrationInfo(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IRegistrationInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IRegistrationInfo {
     #[doc = "*Required features: `\"Win32_System_TaskScheduler\"`, `\"Win32_Foundation\"`*"]
@@ -3900,12 +3907,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IRegistra
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IRegistrationInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IRegistrationInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4006,6 +4007,12 @@ pub struct IRegistrationInfo_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IRegistrationTrigger(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IRegistrationTrigger {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IRegistrationTrigger {
     #[doc = "*Required features: `\"Win32_System_TaskScheduler\"`*"]
@@ -4155,12 +4162,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITrigger> for &'a IRegistrationTrigger {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IRegistrationTrigger {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IRegistrationTrigger {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4197,6 +4198,12 @@ pub struct IRegistrationTrigger_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IRepetitionPattern(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IRepetitionPattern {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IRepetitionPattern {
     #[doc = "*Required features: `\"Win32_System_TaskScheduler\"`, `\"Win32_Foundation\"`*"]
@@ -4277,12 +4284,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IRepetiti
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IRepetitionPattern {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IRepetitionPattern {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4329,6 +4330,12 @@ pub struct IRepetitionPattern_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IRunningTask(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IRunningTask {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IRunningTask {
     #[doc = "*Required features: `\"Win32_System_TaskScheduler\"`, `\"Win32_Foundation\"`*"]
@@ -4423,12 +4430,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IRunningT
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IRunningTask {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IRunningTask {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4477,6 +4478,12 @@ pub struct IRunningTask_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IRunningTaskCollection(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IRunningTaskCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IRunningTaskCollection {
     #[doc = "*Required features: `\"Win32_System_TaskScheduler\"`*"]
@@ -4545,12 +4552,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IRunningT
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IRunningTaskCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IRunningTaskCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4584,6 +4585,11 @@ pub struct IRunningTaskCollection_Vtbl {
 #[doc = "*Required features: `\"Win32_System_TaskScheduler\"`*"]
 #[repr(transparent)]
 pub struct IScheduledWorkItem(::windows::core::IUnknown);
+impl ::core::clone::Clone for IScheduledWorkItem {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IScheduledWorkItem {
     #[doc = "*Required features: `\"Win32_System_TaskScheduler\"`*"]
     pub unsafe fn CreateTrigger(&self, pinewtrigger: *mut u16, pptrigger: *mut ::core::option::Option<ITaskTrigger>) -> ::windows::core::Result<()> {
@@ -4738,11 +4744,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISche
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IScheduledWorkItem {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IScheduledWorkItem {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4808,6 +4809,12 @@ pub struct IScheduledWorkItem_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ISessionStateChangeTrigger(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ISessionStateChangeTrigger {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ISessionStateChangeTrigger {
     #[doc = "*Required features: `\"Win32_System_TaskScheduler\"`*"]
@@ -4975,12 +4982,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITrigger> for &'a ISessionStateChangeTri
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ISessionStateChangeTrigger {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ISessionStateChangeTrigger {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5027,6 +5028,12 @@ pub struct ISessionStateChangeTrigger_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IShowMessageAction(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IShowMessageAction {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IShowMessageAction {
     #[doc = "*Required features: `\"Win32_System_TaskScheduler\"`, `\"Win32_Foundation\"`*"]
@@ -5137,12 +5144,6 @@ impl<'a> ::windows::core::IntoParam<'a, IAction> for &'a IShowMessageAction {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IShowMessageAction {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IShowMessageAction {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5186,6 +5187,11 @@ pub struct IShowMessageAction_Vtbl {
 #[doc = "*Required features: `\"Win32_System_TaskScheduler\"`*"]
 #[repr(transparent)]
 pub struct ITask(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITask {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITask {
     #[doc = "*Required features: `\"Win32_System_TaskScheduler\"`*"]
     pub unsafe fn CreateTrigger(&self, pinewtrigger: *mut u16, pptrigger: *mut ::core::option::Option<ITaskTrigger>) -> ::windows::core::Result<()> {
@@ -5414,11 +5420,6 @@ impl<'a> ::windows::core::IntoParam<'a, IScheduledWorkItem> for &'a ITask {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITask {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITask {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5455,6 +5456,12 @@ pub struct ITask_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITaskDefinition(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITaskDefinition {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITaskDefinition {
     #[doc = "*Required features: `\"Win32_System_TaskScheduler\"`, `\"Win32_System_Com\"`*"]
@@ -5582,12 +5589,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a ITaskDefi
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITaskDefinition {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITaskDefinition {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5672,6 +5673,12 @@ pub struct ITaskDefinition_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITaskFolder(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITaskFolder {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITaskFolder {
     #[doc = "*Required features: `\"Win32_System_TaskScheduler\"`, `\"Win32_Foundation\"`*"]
@@ -5799,12 +5806,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a ITaskFold
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITaskFolder {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITaskFolder {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5886,6 +5887,12 @@ pub struct ITaskFolder_Vtbl {
 #[repr(transparent)]
 pub struct ITaskFolderCollection(::windows::core::IUnknown);
 #[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITaskFolderCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "Win32_System_Com")]
 impl ITaskFolderCollection {
     #[doc = "*Required features: `\"Win32_System_TaskScheduler\"`*"]
     pub unsafe fn Count(&self) -> ::windows::core::Result<i32> {
@@ -5953,12 +5960,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a ITaskFold
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITaskFolderCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITaskFolderCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5992,6 +5993,11 @@ pub struct ITaskFolderCollection_Vtbl {
 #[doc = "*Required features: `\"Win32_System_TaskScheduler\"`*"]
 #[repr(transparent)]
 pub struct ITaskHandler(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITaskHandler {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITaskHandler {
     #[doc = "*Required features: `\"Win32_System_TaskScheduler\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -6032,11 +6038,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITask
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITaskHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITaskHandler {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6067,6 +6068,11 @@ pub struct ITaskHandler_Vtbl {
 #[doc = "*Required features: `\"Win32_System_TaskScheduler\"`*"]
 #[repr(transparent)]
 pub struct ITaskHandlerStatus(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITaskHandlerStatus {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITaskHandlerStatus {
     #[doc = "*Required features: `\"Win32_System_TaskScheduler\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -6098,11 +6104,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITask
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITaskHandlerStatus {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITaskHandlerStatus {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6132,6 +6133,12 @@ pub struct ITaskHandlerStatus_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITaskNamedValueCollection(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITaskNamedValueCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITaskNamedValueCollection {
     #[doc = "*Required features: `\"Win32_System_TaskScheduler\"`*"]
@@ -6213,12 +6220,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a ITaskName
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITaskNamedValueCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITaskNamedValueCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6259,6 +6260,12 @@ pub struct ITaskNamedValueCollection_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITaskNamedValuePair(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITaskNamedValuePair {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITaskNamedValuePair {
     #[doc = "*Required features: `\"Win32_System_TaskScheduler\"`, `\"Win32_Foundation\"`*"]
@@ -6331,12 +6338,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a ITaskName
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITaskNamedValuePair {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITaskNamedValuePair {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6380,6 +6381,11 @@ pub struct ITaskNamedValuePair_Vtbl {
 #[doc = "*Required features: `\"Win32_System_TaskScheduler\"`*"]
 #[repr(transparent)]
 pub struct ITaskScheduler(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITaskScheduler {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITaskScheduler {
     #[doc = "*Required features: `\"Win32_System_TaskScheduler\"`*"]
     pub unsafe fn SetTargetComputer<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, pwszcomputer: Param0) -> ::windows::core::Result<()> {
@@ -6438,11 +6444,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITask
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITaskScheduler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITaskScheduler {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6475,6 +6476,12 @@ pub struct ITaskScheduler_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITaskService(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITaskService {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITaskService {
     #[doc = "*Required features: `\"Win32_System_TaskScheduler\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`*"]
@@ -6578,12 +6585,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a ITaskServ
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITaskService {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITaskService {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6642,6 +6643,12 @@ pub struct ITaskService_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITaskSettings(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITaskSettings {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITaskSettings {
     #[doc = "*Required features: `\"Win32_System_TaskScheduler\"`*"]
@@ -6868,12 +6875,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a ITaskSett
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITaskSettings {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITaskSettings {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6979,6 +6980,12 @@ pub struct ITaskSettings_Vtbl {
 #[repr(transparent)]
 pub struct ITaskSettings2(::windows::core::IUnknown);
 #[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITaskSettings2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "Win32_System_Com")]
 impl ITaskSettings2 {
     #[doc = "*Required features: `\"Win32_System_TaskScheduler\"`*"]
     pub unsafe fn DisallowStartOnRemoteAppSession(&self, pdisallowstart: *mut i16) -> ::windows::core::Result<()> {
@@ -7046,12 +7053,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a ITaskSett
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITaskSettings2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITaskSettings2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7084,6 +7085,12 @@ pub struct ITaskSettings2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITaskSettings3(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITaskSettings3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITaskSettings3 {
     #[doc = "*Required features: `\"Win32_System_TaskScheduler\"`*"]
@@ -7375,12 +7382,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITaskSettings> for &'a ITaskSettings3 {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITaskSettings3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITaskSettings3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7426,6 +7427,11 @@ pub struct ITaskSettings3_Vtbl {
 #[doc = "*Required features: `\"Win32_System_TaskScheduler\"`*"]
 #[repr(transparent)]
 pub struct ITaskTrigger(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITaskTrigger {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITaskTrigger {
     #[doc = "*Required features: `\"Win32_System_TaskScheduler\"`*"]
     pub unsafe fn SetTrigger(&self, ptrigger: *const TASK_TRIGGER) -> ::windows::core::Result<()> {
@@ -7462,11 +7468,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITask
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITaskTrigger {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITaskTrigger {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7493,6 +7494,11 @@ pub struct ITaskTrigger_Vtbl {
 #[doc = "*Required features: `\"Win32_System_TaskScheduler\"`*"]
 #[repr(transparent)]
 pub struct ITaskVariables(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITaskVariables {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITaskVariables {
     #[doc = "*Required features: `\"Win32_System_TaskScheduler\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -7532,11 +7538,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITask
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITaskVariables {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITaskVariables {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7573,6 +7574,12 @@ pub struct ITaskVariables_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITimeTrigger(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITimeTrigger {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITimeTrigger {
     #[doc = "*Required features: `\"Win32_System_TaskScheduler\"`*"]
@@ -7722,12 +7729,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITrigger> for &'a ITimeTrigger {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITimeTrigger {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITimeTrigger {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7764,6 +7765,12 @@ pub struct ITimeTrigger_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITrigger(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITrigger {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITrigger {
     #[doc = "*Required features: `\"Win32_System_TaskScheduler\"`*"]
@@ -7879,12 +7886,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a ITrigger 
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITrigger {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITrigger {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7956,6 +7957,12 @@ pub struct ITrigger_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITriggerCollection(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITriggerCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITriggerCollection {
     #[doc = "*Required features: `\"Win32_System_TaskScheduler\"`*"]
@@ -8038,12 +8045,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a ITriggerC
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITriggerCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITriggerCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8087,6 +8088,12 @@ pub struct ITriggerCollection_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IWeeklyTrigger(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IWeeklyTrigger {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IWeeklyTrigger {
     #[doc = "*Required features: `\"Win32_System_TaskScheduler\"`*"]
@@ -8252,12 +8259,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITrigger> for &'a IWeeklyTrigger {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IWeeklyTrigger {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IWeeklyTrigger {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8313,6 +8314,7 @@ impl ::core::fmt::Debug for MONTHLYDATE {
 }
 unsafe impl ::windows::core::Abi for MONTHLYDATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MONTHLYDATE {
     fn eq(&self, other: &Self) -> bool {
@@ -8345,6 +8347,7 @@ impl ::core::fmt::Debug for MONTHLYDOW {
 }
 unsafe impl ::windows::core::Abi for MONTHLYDOW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MONTHLYDOW {
     fn eq(&self, other: &Self) -> bool {
@@ -8380,6 +8383,7 @@ impl ::core::default::Default for TASKPAGE {
 }
 unsafe impl ::windows::core::Abi for TASKPAGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TASKPAGE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8411,6 +8415,7 @@ impl ::core::default::Default for TASK_ACTION_TYPE {
 }
 unsafe impl ::windows::core::Abi for TASK_ACTION_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TASK_ACTION_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8452,6 +8457,7 @@ impl ::core::default::Default for TASK_COMPATIBILITY {
 }
 unsafe impl ::windows::core::Abi for TASK_COMPATIBILITY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TASK_COMPATIBILITY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8489,6 +8495,7 @@ impl ::core::default::Default for TASK_CREATION {
 }
 unsafe impl ::windows::core::Abi for TASK_CREATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TASK_CREATION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8516,6 +8523,7 @@ impl ::core::default::Default for TASK_ENUM_FLAGS {
 }
 unsafe impl ::windows::core::Abi for TASK_ENUM_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TASK_ENUM_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8581,6 +8589,7 @@ impl ::core::default::Default for TASK_INSTANCES_POLICY {
 }
 unsafe impl ::windows::core::Abi for TASK_INSTANCES_POLICY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TASK_INSTANCES_POLICY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8626,6 +8635,7 @@ impl ::core::default::Default for TASK_LOGON_TYPE {
 }
 unsafe impl ::windows::core::Abi for TASK_LOGON_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TASK_LOGON_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8667,6 +8677,7 @@ impl ::core::default::Default for TASK_PROCESSTOKENSID_TYPE {
 }
 unsafe impl ::windows::core::Abi for TASK_PROCESSTOKENSID_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TASK_PROCESSTOKENSID_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8694,6 +8705,7 @@ impl ::core::default::Default for TASK_RUNLEVEL_TYPE {
 }
 unsafe impl ::windows::core::Abi for TASK_RUNLEVEL_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TASK_RUNLEVEL_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8727,6 +8739,7 @@ impl ::core::default::Default for TASK_RUN_FLAGS {
 }
 unsafe impl ::windows::core::Abi for TASK_RUN_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TASK_RUN_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8768,6 +8781,7 @@ impl ::core::default::Default for TASK_SESSION_STATE_CHANGE_TYPE {
 }
 unsafe impl ::windows::core::Abi for TASK_SESSION_STATE_CHANGE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TASK_SESSION_STATE_CHANGE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8801,6 +8815,7 @@ impl ::core::default::Default for TASK_STATE {
 }
 unsafe impl ::windows::core::Abi for TASK_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TASK_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8842,6 +8857,7 @@ impl ::core::clone::Clone for TASK_TRIGGER {
 }
 unsafe impl ::windows::core::Abi for TASK_TRIGGER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TASK_TRIGGER {
     fn eq(&self, other: &Self) -> bool {
@@ -8893,6 +8909,7 @@ impl ::core::default::Default for TASK_TRIGGER_TYPE {
 }
 unsafe impl ::windows::core::Abi for TASK_TRIGGER_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TASK_TRIGGER_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8940,6 +8957,7 @@ impl ::core::default::Default for TASK_TRIGGER_TYPE2 {
 }
 unsafe impl ::windows::core::Abi for TASK_TRIGGER_TYPE2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TASK_TRIGGER_TYPE2 {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8966,6 +8984,7 @@ impl ::core::clone::Clone for TRIGGER_TYPE_UNION {
 }
 unsafe impl ::windows::core::Abi for TRIGGER_TYPE_UNION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TRIGGER_TYPE_UNION {
     fn eq(&self, other: &Self) -> bool {
@@ -9000,6 +9019,7 @@ impl ::core::fmt::Debug for WEEKLY {
 }
 unsafe impl ::windows::core::Abi for WEEKLY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WEEKLY {
     fn eq(&self, other: &Self) -> bool {

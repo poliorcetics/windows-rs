@@ -19,6 +19,7 @@ impl ::core::fmt::Debug for AVRF_BACKTRACE_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for AVRF_BACKTRACE_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for AVRF_BACKTRACE_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -56,6 +57,7 @@ impl ::core::fmt::Debug for AVRF_HANDLE_OPERATION {
 }
 unsafe impl ::windows::core::Abi for AVRF_HANDLE_OPERATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for AVRF_HANDLE_OPERATION {
     fn eq(&self, other: &Self) -> bool {
@@ -96,6 +98,7 @@ impl ::core::fmt::Debug for AVRF_HEAP_ALLOCATION {
 }
 unsafe impl ::windows::core::Abi for AVRF_HEAP_ALLOCATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for AVRF_HEAP_ALLOCATION {
     fn eq(&self, other: &Self) -> bool {
@@ -133,6 +136,7 @@ impl ::core::default::Default for VERIFIER_ENUM_RESOURCE_FLAGS {
 }
 unsafe impl ::windows::core::Abi for VERIFIER_ENUM_RESOURCE_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VERIFIER_ENUM_RESOURCE_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -205,6 +209,7 @@ impl ::core::default::Default for eAvrfResourceTypes {
 }
 unsafe impl ::windows::core::Abi for eAvrfResourceTypes {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for eAvrfResourceTypes {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -236,6 +241,7 @@ impl ::core::default::Default for eHANDLE_TRACE_OPERATIONS {
 }
 unsafe impl ::windows::core::Abi for eHANDLE_TRACE_OPERATIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for eHANDLE_TRACE_OPERATIONS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -265,6 +271,7 @@ impl ::core::default::Default for eHeapAllocationState {
 }
 unsafe impl ::windows::core::Abi for eHeapAllocationState {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for eHeapAllocationState {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -292,6 +299,7 @@ impl ::core::default::Default for eHeapEnumerationLevel {
 }
 unsafe impl ::windows::core::Abi for eHeapEnumerationLevel {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for eHeapEnumerationLevel {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -321,6 +329,7 @@ impl ::core::default::Default for eUserAllocationState {
 }
 unsafe impl ::windows::core::Abi for eUserAllocationState {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for eUserAllocationState {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

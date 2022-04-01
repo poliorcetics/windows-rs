@@ -21,6 +21,7 @@ impl ::core::default::Default for AEC_INPUT_STREAM {
 }
 unsafe impl ::windows::core::Abi for AEC_INPUT_STREAM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AEC_INPUT_STREAM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -60,6 +61,7 @@ impl ::core::default::Default for AEC_SYSTEM_MODE {
 }
 unsafe impl ::windows::core::Abi for AEC_SYSTEM_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AEC_SYSTEM_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -91,6 +93,7 @@ impl ::core::default::Default for AEC_VAD_MODE {
 }
 unsafe impl ::windows::core::Abi for AEC_VAD_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AEC_VAD_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -113,6 +116,7 @@ impl ::core::clone::Clone for ASF_FLAT_PICTURE {
 }
 unsafe impl ::windows::core::Abi for ASF_FLAT_PICTURE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ASF_FLAT_PICTURE {
     fn eq(&self, other: &Self) -> bool {
@@ -140,6 +144,7 @@ impl ::core::clone::Clone for ASF_FLAT_SYNCHRONISED_LYRICS {
 }
 unsafe impl ::windows::core::Abi for ASF_FLAT_SYNCHRONISED_LYRICS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ASF_FLAT_SYNCHRONISED_LYRICS {
     fn eq(&self, other: &Self) -> bool {
@@ -173,6 +178,7 @@ impl ::core::fmt::Debug for ASF_INDEX_DESCRIPTOR {
 }
 unsafe impl ::windows::core::Abi for ASF_INDEX_DESCRIPTOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ASF_INDEX_DESCRIPTOR {
     fn eq(&self, other: &Self) -> bool {
@@ -204,6 +210,7 @@ impl ::core::fmt::Debug for ASF_INDEX_IDENTIFIER {
 }
 unsafe impl ::windows::core::Abi for ASF_INDEX_IDENTIFIER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ASF_INDEX_IDENTIFIER {
     fn eq(&self, other: &Self) -> bool {
@@ -235,6 +242,7 @@ impl ::core::fmt::Debug for ASF_MUX_STATISTICS {
 }
 unsafe impl ::windows::core::Abi for ASF_MUX_STATISTICS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ASF_MUX_STATISTICS {
     fn eq(&self, other: &Self) -> bool {
@@ -270,6 +278,7 @@ impl ::core::default::Default for ASF_SELECTION_STATUS {
 }
 unsafe impl ::windows::core::Abi for ASF_SELECTION_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ASF_SELECTION_STATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -297,6 +306,7 @@ impl ::core::default::Default for ASF_STATUSFLAGS {
 }
 unsafe impl ::windows::core::Abi for ASF_STATUSFLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ASF_STATUSFLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -365,6 +375,7 @@ impl ::core::fmt::Debug for AecQualityMetrics_Struct {
 }
 unsafe impl ::windows::core::Abi for AecQualityMetrics_Struct {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for AecQualityMetrics_Struct {
     fn eq(&self, other: &Self) -> bool {
@@ -851,6 +862,7 @@ impl ::core::fmt::Debug for CodecAPIEventData {
 }
 unsafe impl ::windows::core::Abi for CodecAPIEventData {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CodecAPIEventData {
     fn eq(&self, other: &Self) -> bool {
@@ -914,6 +926,7 @@ impl ::core::default::Default for D3D12_BITSTREAM_ENCRYPTION_TYPE {
 }
 unsafe impl ::windows::core::Abi for D3D12_BITSTREAM_ENCRYPTION_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_BITSTREAM_ENCRYPTION_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -943,6 +956,7 @@ impl ::core::fmt::Debug for D3D12_FEATURE_DATA_VIDEO_ARCHITECTURE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3D12_FEATURE_DATA_VIDEO_ARCHITECTURE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3D12_FEATURE_DATA_VIDEO_ARCHITECTURE {
@@ -983,6 +997,7 @@ impl ::core::fmt::Debug for D3D12_FEATURE_DATA_VIDEO_DECODER_HEAP_SIZE {
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 unsafe impl ::windows::core::Abi for D3D12_FEATURE_DATA_VIDEO_DECODER_HEAP_SIZE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 impl ::core::cmp::PartialEq for D3D12_FEATURE_DATA_VIDEO_DECODER_HEAP_SIZE {
@@ -1024,6 +1039,7 @@ impl ::core::fmt::Debug for D3D12_FEATURE_DATA_VIDEO_DECODER_HEAP_SIZE1 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Dxgi_Common"))]
 unsafe impl ::windows::core::Abi for D3D12_FEATURE_DATA_VIDEO_DECODER_HEAP_SIZE1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Dxgi_Common"))]
 impl ::core::cmp::PartialEq for D3D12_FEATURE_DATA_VIDEO_DECODER_HEAP_SIZE1 {
@@ -1069,6 +1085,7 @@ impl ::core::fmt::Debug for D3D12_FEATURE_DATA_VIDEO_DECODE_CONVERSION_SUPPORT {
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 unsafe impl ::windows::core::Abi for D3D12_FEATURE_DATA_VIDEO_DECODE_CONVERSION_SUPPORT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 impl ::core::cmp::PartialEq for D3D12_FEATURE_DATA_VIDEO_DECODE_CONVERSION_SUPPORT {
@@ -1110,6 +1127,7 @@ impl ::core::fmt::Debug for D3D12_FEATURE_DATA_VIDEO_DECODE_FORMATS {
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 unsafe impl ::windows::core::Abi for D3D12_FEATURE_DATA_VIDEO_DECODE_FORMATS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 impl ::core::cmp::PartialEq for D3D12_FEATURE_DATA_VIDEO_DECODE_FORMATS {
@@ -1145,6 +1163,7 @@ impl ::core::fmt::Debug for D3D12_FEATURE_DATA_VIDEO_DECODE_FORMAT_COUNT {
 }
 unsafe impl ::windows::core::Abi for D3D12_FEATURE_DATA_VIDEO_DECODE_FORMAT_COUNT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_FEATURE_DATA_VIDEO_DECODE_FORMAT_COUNT {
     fn eq(&self, other: &Self) -> bool {
@@ -1187,6 +1206,7 @@ impl ::core::fmt::Debug for D3D12_FEATURE_DATA_VIDEO_DECODE_HISTOGRAM {
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 unsafe impl ::windows::core::Abi for D3D12_FEATURE_DATA_VIDEO_DECODE_HISTOGRAM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 impl ::core::cmp::PartialEq for D3D12_FEATURE_DATA_VIDEO_DECODE_HISTOGRAM {
@@ -1222,6 +1242,7 @@ impl ::core::fmt::Debug for D3D12_FEATURE_DATA_VIDEO_DECODE_PROFILES {
 }
 unsafe impl ::windows::core::Abi for D3D12_FEATURE_DATA_VIDEO_DECODE_PROFILES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_FEATURE_DATA_VIDEO_DECODE_PROFILES {
     fn eq(&self, other: &Self) -> bool {
@@ -1253,6 +1274,7 @@ impl ::core::fmt::Debug for D3D12_FEATURE_DATA_VIDEO_DECODE_PROFILE_COUNT {
 }
 unsafe impl ::windows::core::Abi for D3D12_FEATURE_DATA_VIDEO_DECODE_PROFILE_COUNT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_FEATURE_DATA_VIDEO_DECODE_PROFILE_COUNT {
     fn eq(&self, other: &Self) -> bool {
@@ -1285,6 +1307,7 @@ impl ::core::fmt::Debug for D3D12_FEATURE_DATA_VIDEO_DECODE_PROTECTED_RESOURCES 
 }
 unsafe impl ::windows::core::Abi for D3D12_FEATURE_DATA_VIDEO_DECODE_PROTECTED_RESOURCES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_FEATURE_DATA_VIDEO_DECODE_PROTECTED_RESOURCES {
     fn eq(&self, other: &Self) -> bool {
@@ -1329,6 +1352,7 @@ impl ::core::fmt::Debug for D3D12_FEATURE_DATA_VIDEO_DECODE_SUPPORT {
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 unsafe impl ::windows::core::Abi for D3D12_FEATURE_DATA_VIDEO_DECODE_SUPPORT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 impl ::core::cmp::PartialEq for D3D12_FEATURE_DATA_VIDEO_DECODE_SUPPORT {
@@ -1369,6 +1393,7 @@ impl ::core::fmt::Debug for D3D12_FEATURE_DATA_VIDEO_ENCODER_CODEC {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3D12_FEATURE_DATA_VIDEO_ENCODER_CODEC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3D12_FEATURE_DATA_VIDEO_ENCODER_CODEC {
@@ -1405,6 +1430,7 @@ impl ::core::clone::Clone for D3D12_FEATURE_DATA_VIDEO_ENCODER_CODEC_CONFIGURATI
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3D12_FEATURE_DATA_VIDEO_ENCODER_CODEC_CONFIGURATION_SUPPORT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3D12_FEATURE_DATA_VIDEO_ENCODER_CODEC_CONFIGURATION_SUPPORT {
@@ -1441,6 +1467,7 @@ impl ::core::clone::Clone for D3D12_FEATURE_DATA_VIDEO_ENCODER_CODEC_PICTURE_CON
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3D12_FEATURE_DATA_VIDEO_ENCODER_CODEC_PICTURE_CONTROL_SUPPORT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3D12_FEATURE_DATA_VIDEO_ENCODER_CODEC_PICTURE_CONTROL_SUPPORT {
@@ -1478,6 +1505,7 @@ impl ::core::clone::Clone for D3D12_FEATURE_DATA_VIDEO_ENCODER_FRAME_SUBREGION_L
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3D12_FEATURE_DATA_VIDEO_ENCODER_FRAME_SUBREGION_LAYOUT_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3D12_FEATURE_DATA_VIDEO_ENCODER_FRAME_SUBREGION_LAYOUT_MODE {
@@ -1513,6 +1541,7 @@ impl ::core::clone::Clone for D3D12_FEATURE_DATA_VIDEO_ENCODER_HEAP_SIZE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3D12_FEATURE_DATA_VIDEO_ENCODER_HEAP_SIZE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3D12_FEATURE_DATA_VIDEO_ENCODER_HEAP_SIZE {
@@ -1549,6 +1578,7 @@ impl ::core::clone::Clone for D3D12_FEATURE_DATA_VIDEO_ENCODER_INPUT_FORMAT {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Dxgi_Common"))]
 unsafe impl ::windows::core::Abi for D3D12_FEATURE_DATA_VIDEO_ENCODER_INPUT_FORMAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Dxgi_Common"))]
 impl ::core::cmp::PartialEq for D3D12_FEATURE_DATA_VIDEO_ENCODER_INPUT_FORMAT {
@@ -1586,6 +1616,7 @@ impl ::core::clone::Clone for D3D12_FEATURE_DATA_VIDEO_ENCODER_INTRA_REFRESH_MOD
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3D12_FEATURE_DATA_VIDEO_ENCODER_INTRA_REFRESH_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3D12_FEATURE_DATA_VIDEO_ENCODER_INTRA_REFRESH_MODE {
@@ -1642,6 +1673,7 @@ impl ::core::fmt::Debug for D3D12_FEATURE_DATA_VIDEO_ENCODER_OUTPUT_RESOLUTION {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3D12_FEATURE_DATA_VIDEO_ENCODER_OUTPUT_RESOLUTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3D12_FEATURE_DATA_VIDEO_ENCODER_OUTPUT_RESOLUTION {
@@ -1677,6 +1709,7 @@ impl ::core::fmt::Debug for D3D12_FEATURE_DATA_VIDEO_ENCODER_OUTPUT_RESOLUTION_R
 }
 unsafe impl ::windows::core::Abi for D3D12_FEATURE_DATA_VIDEO_ENCODER_OUTPUT_RESOLUTION_RATIOS_COUNT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_FEATURE_DATA_VIDEO_ENCODER_OUTPUT_RESOLUTION_RATIOS_COUNT {
     fn eq(&self, other: &Self) -> bool {
@@ -1711,6 +1744,7 @@ impl ::core::clone::Clone for D3D12_FEATURE_DATA_VIDEO_ENCODER_PROFILE_LEVEL {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3D12_FEATURE_DATA_VIDEO_ENCODER_PROFILE_LEVEL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3D12_FEATURE_DATA_VIDEO_ENCODER_PROFILE_LEVEL {
@@ -1752,6 +1786,7 @@ impl ::core::fmt::Debug for D3D12_FEATURE_DATA_VIDEO_ENCODER_RATE_CONTROL_MODE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3D12_FEATURE_DATA_VIDEO_ENCODER_RATE_CONTROL_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3D12_FEATURE_DATA_VIDEO_ENCODER_RATE_CONTROL_MODE {
@@ -1788,6 +1823,7 @@ impl ::core::fmt::Debug for D3D12_FEATURE_DATA_VIDEO_ENCODER_RESOLUTION_SUPPORT_
 }
 unsafe impl ::windows::core::Abi for D3D12_FEATURE_DATA_VIDEO_ENCODER_RESOLUTION_SUPPORT_LIMITS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_FEATURE_DATA_VIDEO_ENCODER_RESOLUTION_SUPPORT_LIMITS {
     fn eq(&self, other: &Self) -> bool {
@@ -1825,6 +1861,7 @@ impl ::core::clone::Clone for D3D12_FEATURE_DATA_VIDEO_ENCODER_RESOURCE_REQUIREM
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Dxgi_Common"))]
 unsafe impl ::windows::core::Abi for D3D12_FEATURE_DATA_VIDEO_ENCODER_RESOURCE_REQUIREMENTS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Dxgi_Common"))]
 impl ::core::cmp::PartialEq for D3D12_FEATURE_DATA_VIDEO_ENCODER_RESOURCE_REQUIREMENTS {
@@ -1872,6 +1909,7 @@ impl ::core::clone::Clone for D3D12_FEATURE_DATA_VIDEO_ENCODER_SUPPORT {
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 unsafe impl ::windows::core::Abi for D3D12_FEATURE_DATA_VIDEO_ENCODER_SUPPORT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 impl ::core::cmp::PartialEq for D3D12_FEATURE_DATA_VIDEO_ENCODER_SUPPORT {
@@ -1912,6 +1950,7 @@ impl ::core::fmt::Debug for D3D12_FEATURE_DATA_VIDEO_EXTENSION_COMMANDS {
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 unsafe impl ::windows::core::Abi for D3D12_FEATURE_DATA_VIDEO_EXTENSION_COMMANDS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ::core::cmp::PartialEq for D3D12_FEATURE_DATA_VIDEO_EXTENSION_COMMANDS {
@@ -1946,6 +1985,7 @@ impl ::core::fmt::Debug for D3D12_FEATURE_DATA_VIDEO_EXTENSION_COMMAND_COUNT {
 }
 unsafe impl ::windows::core::Abi for D3D12_FEATURE_DATA_VIDEO_EXTENSION_COMMAND_COUNT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_FEATURE_DATA_VIDEO_EXTENSION_COMMAND_COUNT {
     fn eq(&self, other: &Self) -> bool {
@@ -1979,6 +2019,7 @@ impl ::core::fmt::Debug for D3D12_FEATURE_DATA_VIDEO_EXTENSION_COMMAND_PARAMETER
 }
 unsafe impl ::windows::core::Abi for D3D12_FEATURE_DATA_VIDEO_EXTENSION_COMMAND_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_FEATURE_DATA_VIDEO_EXTENSION_COMMAND_PARAMETERS {
     fn eq(&self, other: &Self) -> bool {
@@ -2012,6 +2053,7 @@ impl ::core::fmt::Debug for D3D12_FEATURE_DATA_VIDEO_EXTENSION_COMMAND_PARAMETER
 }
 unsafe impl ::windows::core::Abi for D3D12_FEATURE_DATA_VIDEO_EXTENSION_COMMAND_PARAMETER_COUNT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_FEATURE_DATA_VIDEO_EXTENSION_COMMAND_PARAMETER_COUNT {
     fn eq(&self, other: &Self) -> bool {
@@ -2047,6 +2089,7 @@ impl ::core::fmt::Debug for D3D12_FEATURE_DATA_VIDEO_EXTENSION_COMMAND_SIZE {
 }
 unsafe impl ::windows::core::Abi for D3D12_FEATURE_DATA_VIDEO_EXTENSION_COMMAND_SIZE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_FEATURE_DATA_VIDEO_EXTENSION_COMMAND_SIZE {
     fn eq(&self, other: &Self) -> bool {
@@ -2082,6 +2125,7 @@ impl ::core::fmt::Debug for D3D12_FEATURE_DATA_VIDEO_EXTENSION_COMMAND_SUPPORT {
 }
 unsafe impl ::windows::core::Abi for D3D12_FEATURE_DATA_VIDEO_EXTENSION_COMMAND_SUPPORT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_FEATURE_DATA_VIDEO_EXTENSION_COMMAND_SUPPORT {
     fn eq(&self, other: &Self) -> bool {
@@ -2120,6 +2164,7 @@ impl ::core::fmt::Debug for D3D12_FEATURE_DATA_VIDEO_FEATURE_AREA_SUPPORT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3D12_FEATURE_DATA_VIDEO_FEATURE_AREA_SUPPORT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3D12_FEATURE_DATA_VIDEO_FEATURE_AREA_SUPPORT {
@@ -2162,6 +2207,7 @@ impl ::core::fmt::Debug for D3D12_FEATURE_DATA_VIDEO_MOTION_ESTIMATOR {
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 unsafe impl ::windows::core::Abi for D3D12_FEATURE_DATA_VIDEO_MOTION_ESTIMATOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 impl ::core::cmp::PartialEq for D3D12_FEATURE_DATA_VIDEO_MOTION_ESTIMATOR {
@@ -2196,6 +2242,7 @@ impl ::core::fmt::Debug for D3D12_FEATURE_DATA_VIDEO_MOTION_ESTIMATOR_PROTECTED_
 }
 unsafe impl ::windows::core::Abi for D3D12_FEATURE_DATA_VIDEO_MOTION_ESTIMATOR_PROTECTED_RESOURCES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_FEATURE_DATA_VIDEO_MOTION_ESTIMATOR_PROTECTED_RESOURCES {
     fn eq(&self, other: &Self) -> bool {
@@ -2251,6 +2298,7 @@ impl ::core::fmt::Debug for D3D12_FEATURE_DATA_VIDEO_MOTION_ESTIMATOR_SIZE {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Dxgi_Common"))]
 unsafe impl ::windows::core::Abi for D3D12_FEATURE_DATA_VIDEO_MOTION_ESTIMATOR_SIZE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Dxgi_Common"))]
 impl ::core::cmp::PartialEq for D3D12_FEATURE_DATA_VIDEO_MOTION_ESTIMATOR_SIZE {
@@ -2294,6 +2342,7 @@ impl ::core::fmt::Debug for D3D12_FEATURE_DATA_VIDEO_PROCESSOR_SIZE {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Dxgi_Common"))]
 unsafe impl ::windows::core::Abi for D3D12_FEATURE_DATA_VIDEO_PROCESSOR_SIZE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Dxgi_Common"))]
 impl ::core::cmp::PartialEq for D3D12_FEATURE_DATA_VIDEO_PROCESSOR_SIZE {
@@ -2338,6 +2387,7 @@ impl ::core::fmt::Debug for D3D12_FEATURE_DATA_VIDEO_PROCESSOR_SIZE1 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Dxgi_Common"))]
 unsafe impl ::windows::core::Abi for D3D12_FEATURE_DATA_VIDEO_PROCESSOR_SIZE1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Dxgi_Common"))]
 impl ::core::cmp::PartialEq for D3D12_FEATURE_DATA_VIDEO_PROCESSOR_SIZE1 {
@@ -2372,6 +2422,7 @@ impl ::core::fmt::Debug for D3D12_FEATURE_DATA_VIDEO_PROCESS_MAX_INPUT_STREAMS {
 }
 unsafe impl ::windows::core::Abi for D3D12_FEATURE_DATA_VIDEO_PROCESS_MAX_INPUT_STREAMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_FEATURE_DATA_VIDEO_PROCESS_MAX_INPUT_STREAMS {
     fn eq(&self, other: &Self) -> bool {
@@ -2403,6 +2454,7 @@ impl ::core::fmt::Debug for D3D12_FEATURE_DATA_VIDEO_PROCESS_PROTECTED_RESOURCES
 }
 unsafe impl ::windows::core::Abi for D3D12_FEATURE_DATA_VIDEO_PROCESS_PROTECTED_RESOURCES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_FEATURE_DATA_VIDEO_PROCESS_PROTECTED_RESOURCES {
     fn eq(&self, other: &Self) -> bool {
@@ -2446,6 +2498,7 @@ impl ::core::fmt::Debug for D3D12_FEATURE_DATA_VIDEO_PROCESS_REFERENCE_INFO {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Dxgi_Common"))]
 unsafe impl ::windows::core::Abi for D3D12_FEATURE_DATA_VIDEO_PROCESS_REFERENCE_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Dxgi_Common"))]
 impl ::core::cmp::PartialEq for D3D12_FEATURE_DATA_VIDEO_PROCESS_REFERENCE_INFO {
@@ -2514,6 +2567,7 @@ impl ::core::fmt::Debug for D3D12_FEATURE_DATA_VIDEO_PROCESS_SUPPORT {
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 unsafe impl ::windows::core::Abi for D3D12_FEATURE_DATA_VIDEO_PROCESS_SUPPORT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 impl ::core::cmp::PartialEq for D3D12_FEATURE_DATA_VIDEO_PROCESS_SUPPORT {
@@ -2600,6 +2654,7 @@ impl ::core::default::Default for D3D12_FEATURE_VIDEO {
 }
 unsafe impl ::windows::core::Abi for D3D12_FEATURE_VIDEO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_FEATURE_VIDEO {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2632,6 +2687,7 @@ impl ::core::fmt::Debug for D3D12_QUERY_DATA_VIDEO_DECODE_STATISTICS {
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 unsafe impl ::windows::core::Abi for D3D12_QUERY_DATA_VIDEO_DECODE_STATISTICS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 impl ::core::cmp::PartialEq for D3D12_QUERY_DATA_VIDEO_DECODE_STATISTICS {
@@ -2670,6 +2726,7 @@ impl ::core::fmt::Debug for D3D12_RESOLVE_VIDEO_MOTION_VECTOR_HEAP_INPUT {
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 unsafe impl ::windows::core::Abi for D3D12_RESOLVE_VIDEO_MOTION_VECTOR_HEAP_INPUT {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ::core::cmp::PartialEq for D3D12_RESOLVE_VIDEO_MOTION_VECTOR_HEAP_INPUT {
@@ -2707,6 +2764,7 @@ impl ::core::fmt::Debug for D3D12_RESOLVE_VIDEO_MOTION_VECTOR_HEAP_OUTPUT {
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 unsafe impl ::windows::core::Abi for D3D12_RESOLVE_VIDEO_MOTION_VECTOR_HEAP_OUTPUT {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ::core::cmp::PartialEq for D3D12_RESOLVE_VIDEO_MOTION_VECTOR_HEAP_OUTPUT {
@@ -2743,6 +2801,7 @@ impl ::core::fmt::Debug for D3D12_RESOURCE_COORDINATE {
 }
 unsafe impl ::windows::core::Abi for D3D12_RESOURCE_COORDINATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_RESOURCE_COORDINATE {
     fn eq(&self, other: &Self) -> bool {
@@ -2774,6 +2833,7 @@ impl ::core::fmt::Debug for D3D12_VIDEO_DECODER_DESC {
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_DECODER_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_VIDEO_DECODER_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -2816,6 +2876,7 @@ impl ::core::fmt::Debug for D3D12_VIDEO_DECODER_HEAP_DESC {
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_DECODER_HEAP_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 impl ::core::cmp::PartialEq for D3D12_VIDEO_DECODER_HEAP_DESC {
@@ -2856,6 +2917,7 @@ impl ::core::default::Default for D3D12_VIDEO_DECODE_ARGUMENT_TYPE {
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_DECODE_ARGUMENT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_VIDEO_DECODE_ARGUMENT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2885,6 +2947,7 @@ impl ::core::fmt::Debug for D3D12_VIDEO_DECODE_COMPRESSED_BITSTREAM {
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_DECODE_COMPRESSED_BITSTREAM {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ::core::cmp::PartialEq for D3D12_VIDEO_DECODE_COMPRESSED_BITSTREAM {
@@ -2920,6 +2983,7 @@ impl ::core::fmt::Debug for D3D12_VIDEO_DECODE_CONFIGURATION {
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_DECODE_CONFIGURATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_VIDEO_DECODE_CONFIGURATION {
     fn eq(&self, other: &Self) -> bool {
@@ -2959,6 +3023,7 @@ impl ::core::default::Default for D3D12_VIDEO_DECODE_CONFIGURATION_FLAGS {
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_DECODE_CONFIGURATION_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_VIDEO_DECODE_CONFIGURATION_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3024,6 +3089,7 @@ impl ::core::fmt::Debug for D3D12_VIDEO_DECODE_CONVERSION_ARGUMENTS {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Direct3D12", feature = "Win32_Graphics_Dxgi_Common"))]
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_DECODE_CONVERSION_ARGUMENTS {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Direct3D12", feature = "Win32_Graphics_Dxgi_Common"))]
 impl ::core::cmp::PartialEq for D3D12_VIDEO_DECODE_CONVERSION_ARGUMENTS {
@@ -3074,6 +3140,7 @@ impl ::core::fmt::Debug for D3D12_VIDEO_DECODE_CONVERSION_ARGUMENTS1 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Direct3D12", feature = "Win32_Graphics_Dxgi_Common"))]
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_DECODE_CONVERSION_ARGUMENTS1 {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Direct3D12", feature = "Win32_Graphics_Dxgi_Common"))]
 impl ::core::cmp::PartialEq for D3D12_VIDEO_DECODE_CONVERSION_ARGUMENTS1 {
@@ -3110,6 +3177,7 @@ impl ::core::default::Default for D3D12_VIDEO_DECODE_CONVERSION_SUPPORT_FLAGS {
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_DECODE_CONVERSION_SUPPORT_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_VIDEO_DECODE_CONVERSION_SUPPORT_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3164,6 +3232,7 @@ impl ::core::fmt::Debug for D3D12_VIDEO_DECODE_FRAME_ARGUMENT {
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_DECODE_FRAME_ARGUMENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_VIDEO_DECODE_FRAME_ARGUMENT {
     fn eq(&self, other: &Self) -> bool {
@@ -3207,6 +3276,7 @@ impl ::core::default::Default for D3D12_VIDEO_DECODE_HISTOGRAM_COMPONENT {
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_DECODE_HISTOGRAM_COMPONENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_VIDEO_DECODE_HISTOGRAM_COMPONENT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3246,6 +3316,7 @@ impl ::core::default::Default for D3D12_VIDEO_DECODE_HISTOGRAM_COMPONENT_FLAGS {
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_DECODE_HISTOGRAM_COMPONENT_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_VIDEO_DECODE_HISTOGRAM_COMPONENT_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3311,6 +3382,7 @@ impl ::core::fmt::Debug for D3D12_VIDEO_DECODE_INPUT_STREAM_ARGUMENTS {
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_DECODE_INPUT_STREAM_ARGUMENTS {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ::core::cmp::PartialEq for D3D12_VIDEO_DECODE_INPUT_STREAM_ARGUMENTS {
@@ -3348,6 +3420,7 @@ impl ::core::fmt::Debug for D3D12_VIDEO_DECODE_OUTPUT_HISTOGRAM {
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_DECODE_OUTPUT_HISTOGRAM {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ::core::cmp::PartialEq for D3D12_VIDEO_DECODE_OUTPUT_HISTOGRAM {
@@ -3390,6 +3463,7 @@ impl ::core::fmt::Debug for D3D12_VIDEO_DECODE_OUTPUT_STREAM_ARGUMENTS {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Direct3D12", feature = "Win32_Graphics_Dxgi_Common"))]
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_DECODE_OUTPUT_STREAM_ARGUMENTS {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Direct3D12", feature = "Win32_Graphics_Dxgi_Common"))]
 impl ::core::cmp::PartialEq for D3D12_VIDEO_DECODE_OUTPUT_STREAM_ARGUMENTS {
@@ -3434,6 +3508,7 @@ impl ::core::fmt::Debug for D3D12_VIDEO_DECODE_OUTPUT_STREAM_ARGUMENTS1 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Direct3D12", feature = "Win32_Graphics_Dxgi_Common"))]
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_DECODE_OUTPUT_STREAM_ARGUMENTS1 {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Direct3D12", feature = "Win32_Graphics_Dxgi_Common"))]
 impl ::core::cmp::PartialEq for D3D12_VIDEO_DECODE_OUTPUT_STREAM_ARGUMENTS1 {
@@ -3495,6 +3570,7 @@ impl ::core::fmt::Debug for D3D12_VIDEO_DECODE_REFERENCE_FRAMES {
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_DECODE_REFERENCE_FRAMES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ::core::cmp::PartialEq for D3D12_VIDEO_DECODE_REFERENCE_FRAMES {
@@ -3537,6 +3613,7 @@ impl ::core::default::Default for D3D12_VIDEO_DECODE_STATUS {
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_DECODE_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_VIDEO_DECODE_STATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3564,6 +3641,7 @@ impl ::core::default::Default for D3D12_VIDEO_DECODE_SUPPORT_FLAGS {
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_DECODE_SUPPORT_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_VIDEO_DECODE_SUPPORT_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3623,6 +3701,7 @@ impl ::core::default::Default for D3D12_VIDEO_DECODE_TIER {
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_DECODE_TIER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_VIDEO_DECODE_TIER {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3650,6 +3729,7 @@ impl ::core::default::Default for D3D12_VIDEO_ENCODER_CODEC {
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_CODEC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_VIDEO_ENCODER_CODEC {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3670,6 +3750,7 @@ impl ::core::clone::Clone for D3D12_VIDEO_ENCODER_CODEC_CONFIGURATION {
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_CODEC_CONFIGURATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_VIDEO_ENCODER_CODEC_CONFIGURATION {
     fn eq(&self, other: &Self) -> bool {
@@ -3696,6 +3777,7 @@ impl ::core::clone::Clone for D3D12_VIDEO_ENCODER_CODEC_CONFIGURATION_0 {
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_CODEC_CONFIGURATION_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_VIDEO_ENCODER_CODEC_CONFIGURATION_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -3728,6 +3810,7 @@ impl ::core::fmt::Debug for D3D12_VIDEO_ENCODER_CODEC_CONFIGURATION_H264 {
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_CODEC_CONFIGURATION_H264 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_VIDEO_ENCODER_CODEC_CONFIGURATION_H264 {
     fn eq(&self, other: &Self) -> bool {
@@ -3763,6 +3846,7 @@ impl ::core::default::Default for D3D12_VIDEO_ENCODER_CODEC_CONFIGURATION_H264_D
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_CODEC_CONFIGURATION_H264_DIRECT_MODES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_VIDEO_ENCODER_CODEC_CONFIGURATION_H264_DIRECT_MODES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3796,6 +3880,7 @@ impl ::core::default::Default for D3D12_VIDEO_ENCODER_CODEC_CONFIGURATION_H264_F
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_CODEC_CONFIGURATION_H264_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_VIDEO_ENCODER_CODEC_CONFIGURATION_H264_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3861,6 +3946,7 @@ impl ::core::default::Default for D3D12_VIDEO_ENCODER_CODEC_CONFIGURATION_H264_S
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_CODEC_CONFIGURATION_H264_SLICES_DEBLOCKING_MODES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_VIDEO_ENCODER_CODEC_CONFIGURATION_H264_SLICES_DEBLOCKING_MODES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3900,6 +3986,7 @@ impl ::core::default::Default for D3D12_VIDEO_ENCODER_CODEC_CONFIGURATION_H264_S
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_CODEC_CONFIGURATION_H264_SLICES_DEBLOCKING_MODE_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_VIDEO_ENCODER_CODEC_CONFIGURATION_H264_SLICES_DEBLOCKING_MODE_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3966,6 +4053,7 @@ impl ::core::fmt::Debug for D3D12_VIDEO_ENCODER_CODEC_CONFIGURATION_HEVC {
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_CODEC_CONFIGURATION_HEVC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_VIDEO_ENCODER_CODEC_CONFIGURATION_HEVC {
     fn eq(&self, other: &Self) -> bool {
@@ -4003,6 +4091,7 @@ impl ::core::default::Default for D3D12_VIDEO_ENCODER_CODEC_CONFIGURATION_HEVC_C
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_CODEC_CONFIGURATION_HEVC_CUSIZE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_VIDEO_ENCODER_CODEC_CONFIGURATION_HEVC_CUSIZE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4042,6 +4131,7 @@ impl ::core::default::Default for D3D12_VIDEO_ENCODER_CODEC_CONFIGURATION_HEVC_F
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_CODEC_CONFIGURATION_HEVC_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_VIDEO_ENCODER_CODEC_CONFIGURATION_HEVC_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4101,6 +4191,7 @@ impl ::core::default::Default for D3D12_VIDEO_ENCODER_CODEC_CONFIGURATION_HEVC_T
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_CODEC_CONFIGURATION_HEVC_TUSIZE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_VIDEO_ENCODER_CODEC_CONFIGURATION_HEVC_TUSIZE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4121,6 +4212,7 @@ impl ::core::clone::Clone for D3D12_VIDEO_ENCODER_CODEC_CONFIGURATION_SUPPORT {
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_CODEC_CONFIGURATION_SUPPORT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_VIDEO_ENCODER_CODEC_CONFIGURATION_SUPPORT {
     fn eq(&self, other: &Self) -> bool {
@@ -4147,6 +4239,7 @@ impl ::core::clone::Clone for D3D12_VIDEO_ENCODER_CODEC_CONFIGURATION_SUPPORT_0 
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_CODEC_CONFIGURATION_SUPPORT_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_VIDEO_ENCODER_CODEC_CONFIGURATION_SUPPORT_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -4178,6 +4271,7 @@ impl ::core::fmt::Debug for D3D12_VIDEO_ENCODER_CODEC_CONFIGURATION_SUPPORT_H264
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_CODEC_CONFIGURATION_SUPPORT_H264 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_VIDEO_ENCODER_CODEC_CONFIGURATION_SUPPORT_H264 {
     fn eq(&self, other: &Self) -> bool {
@@ -4223,6 +4317,7 @@ impl ::core::default::Default for D3D12_VIDEO_ENCODER_CODEC_CONFIGURATION_SUPPOR
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_CODEC_CONFIGURATION_SUPPORT_H264_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_VIDEO_ENCODER_CODEC_CONFIGURATION_SUPPORT_H264_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4289,6 +4384,7 @@ impl ::core::fmt::Debug for D3D12_VIDEO_ENCODER_CODEC_CONFIGURATION_SUPPORT_HEVC
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_CODEC_CONFIGURATION_SUPPORT_HEVC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_VIDEO_ENCODER_CODEC_CONFIGURATION_SUPPORT_HEVC {
     fn eq(&self, other: &Self) -> bool {
@@ -4338,6 +4434,7 @@ impl ::core::default::Default for D3D12_VIDEO_ENCODER_CODEC_CONFIGURATION_SUPPOR
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_CODEC_CONFIGURATION_SUPPORT_HEVC_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_VIDEO_ENCODER_CODEC_CONFIGURATION_SUPPORT_HEVC_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4386,6 +4483,7 @@ impl ::core::clone::Clone for D3D12_VIDEO_ENCODER_CODEC_PICTURE_CONTROL_SUPPORT 
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_CODEC_PICTURE_CONTROL_SUPPORT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_VIDEO_ENCODER_CODEC_PICTURE_CONTROL_SUPPORT {
     fn eq(&self, other: &Self) -> bool {
@@ -4412,6 +4510,7 @@ impl ::core::clone::Clone for D3D12_VIDEO_ENCODER_CODEC_PICTURE_CONTROL_SUPPORT_
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_CODEC_PICTURE_CONTROL_SUPPORT_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_VIDEO_ENCODER_CODEC_PICTURE_CONTROL_SUPPORT_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -4446,6 +4545,7 @@ impl ::core::fmt::Debug for D3D12_VIDEO_ENCODER_CODEC_PICTURE_CONTROL_SUPPORT_H2
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_CODEC_PICTURE_CONTROL_SUPPORT_H264 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_VIDEO_ENCODER_CODEC_PICTURE_CONTROL_SUPPORT_H264 {
     fn eq(&self, other: &Self) -> bool {
@@ -4480,6 +4580,7 @@ impl ::core::fmt::Debug for D3D12_VIDEO_ENCODER_CODEC_PICTURE_CONTROL_SUPPORT_HE
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_CODEC_PICTURE_CONTROL_SUPPORT_HEVC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_VIDEO_ENCODER_CODEC_PICTURE_CONTROL_SUPPORT_HEVC {
     fn eq(&self, other: &Self) -> bool {
@@ -4514,6 +4615,7 @@ impl ::core::fmt::Debug for D3D12_VIDEO_ENCODER_COMPRESSED_BITSTREAM {
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_COMPRESSED_BITSTREAM {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ::core::cmp::PartialEq for D3D12_VIDEO_ENCODER_COMPRESSED_BITSTREAM {
@@ -4552,6 +4654,7 @@ impl ::core::clone::Clone for D3D12_VIDEO_ENCODER_DESC {
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 impl ::core::cmp::PartialEq for D3D12_VIDEO_ENCODER_DESC {
@@ -4592,6 +4695,7 @@ impl ::core::clone::Clone for D3D12_VIDEO_ENCODER_ENCODEFRAME_INPUT_ARGUMENTS {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Direct3D12", feature = "Win32_Graphics_Dxgi_Common"))]
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_ENCODEFRAME_INPUT_ARGUMENTS {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Direct3D12", feature = "Win32_Graphics_Dxgi_Common"))]
 impl ::core::cmp::PartialEq for D3D12_VIDEO_ENCODER_ENCODEFRAME_INPUT_ARGUMENTS {
@@ -4634,6 +4738,7 @@ impl ::core::fmt::Debug for D3D12_VIDEO_ENCODER_ENCODEFRAME_OUTPUT_ARGUMENTS {
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_ENCODEFRAME_OUTPUT_ARGUMENTS {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ::core::cmp::PartialEq for D3D12_VIDEO_ENCODER_ENCODEFRAME_OUTPUT_ARGUMENTS {
@@ -4678,6 +4783,7 @@ impl ::core::default::Default for D3D12_VIDEO_ENCODER_ENCODE_ERROR_FLAGS {
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_ENCODE_ERROR_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_VIDEO_ENCODER_ENCODE_ERROR_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4734,6 +4840,7 @@ impl ::core::fmt::Debug for D3D12_VIDEO_ENCODER_ENCODE_OPERATION_METADATA_BUFFER
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_ENCODE_OPERATION_METADATA_BUFFER {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ::core::cmp::PartialEq for D3D12_VIDEO_ENCODER_ENCODE_OPERATION_METADATA_BUFFER {
@@ -4768,6 +4875,7 @@ impl ::core::default::Default for D3D12_VIDEO_ENCODER_FLAGS {
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_VIDEO_ENCODER_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4829,6 +4937,7 @@ impl ::core::default::Default for D3D12_VIDEO_ENCODER_FRAME_SUBREGION_LAYOUT_MOD
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_FRAME_SUBREGION_LAYOUT_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_VIDEO_ENCODER_FRAME_SUBREGION_LAYOUT_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4855,6 +4964,7 @@ impl ::core::fmt::Debug for D3D12_VIDEO_ENCODER_FRAME_SUBREGION_METADATA {
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_FRAME_SUBREGION_METADATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_VIDEO_ENCODER_FRAME_SUBREGION_METADATA {
     fn eq(&self, other: &Self) -> bool {
@@ -4892,6 +5002,7 @@ impl ::core::default::Default for D3D12_VIDEO_ENCODER_FRAME_TYPE_H264 {
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_FRAME_TYPE_H264 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_VIDEO_ENCODER_FRAME_TYPE_H264 {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4923,6 +5034,7 @@ impl ::core::default::Default for D3D12_VIDEO_ENCODER_FRAME_TYPE_HEVC {
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_FRAME_TYPE_HEVC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_VIDEO_ENCODER_FRAME_TYPE_HEVC {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4948,6 +5060,7 @@ impl ::core::clone::Clone for D3D12_VIDEO_ENCODER_HEAP_DESC {
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_HEAP_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_VIDEO_ENCODER_HEAP_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -4979,6 +5092,7 @@ impl ::core::default::Default for D3D12_VIDEO_ENCODER_HEAP_FLAGS {
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_HEAP_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_VIDEO_ENCODER_HEAP_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5032,6 +5146,7 @@ impl ::core::fmt::Debug for D3D12_VIDEO_ENCODER_INTRA_REFRESH {
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_INTRA_REFRESH {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_VIDEO_ENCODER_INTRA_REFRESH {
     fn eq(&self, other: &Self) -> bool {
@@ -5065,6 +5180,7 @@ impl ::core::default::Default for D3D12_VIDEO_ENCODER_INTRA_REFRESH_MODE {
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_INTRA_REFRESH_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_VIDEO_ENCODER_INTRA_REFRESH_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5128,6 +5244,7 @@ impl ::core::default::Default for D3D12_VIDEO_ENCODER_LEVELS_H264 {
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_LEVELS_H264 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_VIDEO_ENCODER_LEVELS_H264 {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5177,6 +5294,7 @@ impl ::core::default::Default for D3D12_VIDEO_ENCODER_LEVELS_HEVC {
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_LEVELS_HEVC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_VIDEO_ENCODER_LEVELS_HEVC {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5197,6 +5315,7 @@ impl ::core::clone::Clone for D3D12_VIDEO_ENCODER_LEVEL_SETTING {
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_LEVEL_SETTING {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_VIDEO_ENCODER_LEVEL_SETTING {
     fn eq(&self, other: &Self) -> bool {
@@ -5223,6 +5342,7 @@ impl ::core::clone::Clone for D3D12_VIDEO_ENCODER_LEVEL_SETTING_0 {
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_LEVEL_SETTING_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_VIDEO_ENCODER_LEVEL_SETTING_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -5254,6 +5374,7 @@ impl ::core::fmt::Debug for D3D12_VIDEO_ENCODER_LEVEL_TIER_CONSTRAINTS_HEVC {
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_LEVEL_TIER_CONSTRAINTS_HEVC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_VIDEO_ENCODER_LEVEL_TIER_CONSTRAINTS_HEVC {
     fn eq(&self, other: &Self) -> bool {
@@ -5291,6 +5412,7 @@ impl ::core::default::Default for D3D12_VIDEO_ENCODER_MOTION_ESTIMATION_PRECISIO
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_MOTION_ESTIMATION_PRECISION_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_VIDEO_ENCODER_MOTION_ESTIMATION_PRECISION_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5318,6 +5440,7 @@ impl ::core::fmt::Debug for D3D12_VIDEO_ENCODER_OUTPUT_METADATA {
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_OUTPUT_METADATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_VIDEO_ENCODER_OUTPUT_METADATA {
     fn eq(&self, other: &Self) -> bool {
@@ -5353,6 +5476,7 @@ impl ::core::fmt::Debug for D3D12_VIDEO_ENCODER_OUTPUT_METADATA_STATISTICS {
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_OUTPUT_METADATA_STATISTICS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_VIDEO_ENCODER_OUTPUT_METADATA_STATISTICS {
     fn eq(&self, other: &Self) -> bool {
@@ -5383,6 +5507,7 @@ impl ::core::clone::Clone for D3D12_VIDEO_ENCODER_PICTURE_CONTROL_CODEC_DATA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_PICTURE_CONTROL_CODEC_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3D12_VIDEO_ENCODER_PICTURE_CONTROL_CODEC_DATA {
@@ -5416,6 +5541,7 @@ impl ::core::clone::Clone for D3D12_VIDEO_ENCODER_PICTURE_CONTROL_CODEC_DATA_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_PICTURE_CONTROL_CODEC_DATA_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3D12_VIDEO_ENCODER_PICTURE_CONTROL_CODEC_DATA_0 {
@@ -5498,6 +5624,7 @@ impl ::core::fmt::Debug for D3D12_VIDEO_ENCODER_PICTURE_CONTROL_CODEC_DATA_H264 
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_PICTURE_CONTROL_CODEC_DATA_H264 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3D12_VIDEO_ENCODER_PICTURE_CONTROL_CODEC_DATA_H264 {
@@ -5534,6 +5661,7 @@ impl ::core::default::Default for D3D12_VIDEO_ENCODER_PICTURE_CONTROL_CODEC_DATA
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_PICTURE_CONTROL_CODEC_DATA_H264_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_VIDEO_ENCODER_PICTURE_CONTROL_CODEC_DATA_H264_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5588,6 +5716,7 @@ impl ::core::fmt::Debug for D3D12_VIDEO_ENCODER_PICTURE_CONTROL_CODEC_DATA_H264_
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_PICTURE_CONTROL_CODEC_DATA_H264_REFERENCE_PICTURE_LIST_MODIFICATION_OPERATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_VIDEO_ENCODER_PICTURE_CONTROL_CODEC_DATA_H264_REFERENCE_PICTURE_LIST_MODIFICATION_OPERATION {
     fn eq(&self, other: &Self) -> bool {
@@ -5622,6 +5751,7 @@ impl ::core::fmt::Debug for D3D12_VIDEO_ENCODER_PICTURE_CONTROL_CODEC_DATA_H264_
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_PICTURE_CONTROL_CODEC_DATA_H264_REFERENCE_PICTURE_MARKING_OPERATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_VIDEO_ENCODER_PICTURE_CONTROL_CODEC_DATA_H264_REFERENCE_PICTURE_MARKING_OPERATION {
     fn eq(&self, other: &Self) -> bool {
@@ -5691,6 +5821,7 @@ impl ::core::fmt::Debug for D3D12_VIDEO_ENCODER_PICTURE_CONTROL_CODEC_DATA_HEVC 
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_PICTURE_CONTROL_CODEC_DATA_HEVC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3D12_VIDEO_ENCODER_PICTURE_CONTROL_CODEC_DATA_HEVC {
@@ -5727,6 +5858,7 @@ impl ::core::default::Default for D3D12_VIDEO_ENCODER_PICTURE_CONTROL_CODEC_DATA
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_PICTURE_CONTROL_CODEC_DATA_HEVC_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_VIDEO_ENCODER_PICTURE_CONTROL_CODEC_DATA_HEVC_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5781,6 +5913,7 @@ impl ::core::clone::Clone for D3D12_VIDEO_ENCODER_PICTURE_CONTROL_DESC {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Direct3D12"))]
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_PICTURE_CONTROL_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Direct3D12"))]
 impl ::core::cmp::PartialEq for D3D12_VIDEO_ENCODER_PICTURE_CONTROL_DESC {
@@ -5817,6 +5950,7 @@ impl ::core::default::Default for D3D12_VIDEO_ENCODER_PICTURE_CONTROL_FLAGS {
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_PICTURE_CONTROL_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_VIDEO_ENCODER_PICTURE_CONTROL_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5865,6 +5999,7 @@ impl ::core::clone::Clone for D3D12_VIDEO_ENCODER_PICTURE_CONTROL_SUBREGIONS_LAY
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_PICTURE_CONTROL_SUBREGIONS_LAYOUT_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_VIDEO_ENCODER_PICTURE_CONTROL_SUBREGIONS_LAYOUT_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -5891,6 +6026,7 @@ impl ::core::clone::Clone for D3D12_VIDEO_ENCODER_PICTURE_CONTROL_SUBREGIONS_LAY
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_PICTURE_CONTROL_SUBREGIONS_LAYOUT_DATA_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_VIDEO_ENCODER_PICTURE_CONTROL_SUBREGIONS_LAYOUT_DATA_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -5916,6 +6052,7 @@ impl ::core::clone::Clone for D3D12_VIDEO_ENCODER_PICTURE_CONTROL_SUBREGIONS_LAY
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_PICTURE_CONTROL_SUBREGIONS_LAYOUT_DATA_SLICES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_VIDEO_ENCODER_PICTURE_CONTROL_SUBREGIONS_LAYOUT_DATA_SLICES {
     fn eq(&self, other: &Self) -> bool {
@@ -5944,6 +6081,7 @@ impl ::core::clone::Clone for D3D12_VIDEO_ENCODER_PICTURE_CONTROL_SUBREGIONS_LAY
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_PICTURE_CONTROL_SUBREGIONS_LAYOUT_DATA_SLICES_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_VIDEO_ENCODER_PICTURE_CONTROL_SUBREGIONS_LAYOUT_DATA_SLICES_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -5975,6 +6113,7 @@ impl ::core::fmt::Debug for D3D12_VIDEO_ENCODER_PICTURE_RESOLUTION_DESC {
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_PICTURE_RESOLUTION_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_VIDEO_ENCODER_PICTURE_RESOLUTION_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -6006,6 +6145,7 @@ impl ::core::fmt::Debug for D3D12_VIDEO_ENCODER_PICTURE_RESOLUTION_RATIO_DESC {
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_PICTURE_RESOLUTION_RATIO_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_VIDEO_ENCODER_PICTURE_RESOLUTION_RATIO_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -6032,6 +6172,7 @@ impl ::core::clone::Clone for D3D12_VIDEO_ENCODER_PROFILE_DESC {
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_PROFILE_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_VIDEO_ENCODER_PROFILE_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -6058,6 +6199,7 @@ impl ::core::clone::Clone for D3D12_VIDEO_ENCODER_PROFILE_DESC_0 {
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_PROFILE_DESC_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_VIDEO_ENCODER_PROFILE_DESC_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -6093,6 +6235,7 @@ impl ::core::default::Default for D3D12_VIDEO_ENCODER_PROFILE_H264 {
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_PROFILE_H264 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_VIDEO_ENCODER_PROFILE_H264 {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6120,6 +6263,7 @@ impl ::core::default::Default for D3D12_VIDEO_ENCODER_PROFILE_HEVC {
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_PROFILE_HEVC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_VIDEO_ENCODER_PROFILE_HEVC {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6146,6 +6290,7 @@ impl ::core::clone::Clone for D3D12_VIDEO_ENCODER_RATE_CONTROL {
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_RATE_CONTROL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 impl ::core::cmp::PartialEq for D3D12_VIDEO_ENCODER_RATE_CONTROL {
@@ -6185,6 +6330,7 @@ impl ::core::fmt::Debug for D3D12_VIDEO_ENCODER_RATE_CONTROL_CBR {
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_RATE_CONTROL_CBR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_VIDEO_ENCODER_RATE_CONTROL_CBR {
     fn eq(&self, other: &Self) -> bool {
@@ -6211,6 +6357,7 @@ impl ::core::clone::Clone for D3D12_VIDEO_ENCODER_RATE_CONTROL_CONFIGURATION_PAR
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_RATE_CONTROL_CONFIGURATION_PARAMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_VIDEO_ENCODER_RATE_CONTROL_CONFIGURATION_PARAMS {
     fn eq(&self, other: &Self) -> bool {
@@ -6239,6 +6386,7 @@ impl ::core::clone::Clone for D3D12_VIDEO_ENCODER_RATE_CONTROL_CONFIGURATION_PAR
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_RATE_CONTROL_CONFIGURATION_PARAMS_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_VIDEO_ENCODER_RATE_CONTROL_CONFIGURATION_PARAMS_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -6271,6 +6419,7 @@ impl ::core::fmt::Debug for D3D12_VIDEO_ENCODER_RATE_CONTROL_CQP {
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_RATE_CONTROL_CQP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_VIDEO_ENCODER_RATE_CONTROL_CQP {
     fn eq(&self, other: &Self) -> bool {
@@ -6314,6 +6463,7 @@ impl ::core::default::Default for D3D12_VIDEO_ENCODER_RATE_CONTROL_FLAGS {
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_RATE_CONTROL_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_VIDEO_ENCODER_RATE_CONTROL_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6375,6 +6525,7 @@ impl ::core::default::Default for D3D12_VIDEO_ENCODER_RATE_CONTROL_MODE {
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_RATE_CONTROL_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_VIDEO_ENCODER_RATE_CONTROL_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6405,6 +6556,7 @@ impl ::core::fmt::Debug for D3D12_VIDEO_ENCODER_RATE_CONTROL_QVBR {
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_RATE_CONTROL_QVBR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_VIDEO_ENCODER_RATE_CONTROL_QVBR {
     fn eq(&self, other: &Self) -> bool {
@@ -6442,6 +6594,7 @@ impl ::core::fmt::Debug for D3D12_VIDEO_ENCODER_RATE_CONTROL_VBR {
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_RATE_CONTROL_VBR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_VIDEO_ENCODER_RATE_CONTROL_VBR {
     fn eq(&self, other: &Self) -> bool {
@@ -6476,6 +6629,7 @@ impl ::core::fmt::Debug for D3D12_VIDEO_ENCODER_RECONSTRUCTED_PICTURE {
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_RECONSTRUCTED_PICTURE {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ::core::cmp::PartialEq for D3D12_VIDEO_ENCODER_RECONSTRUCTED_PICTURE {
@@ -6519,6 +6673,7 @@ impl ::core::fmt::Debug for D3D12_VIDEO_ENCODER_REFERENCE_PICTURE_DESCRIPTOR_H26
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_REFERENCE_PICTURE_DESCRIPTOR_H264 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3D12_VIDEO_ENCODER_REFERENCE_PICTURE_DESCRIPTOR_H264 {
@@ -6561,6 +6716,7 @@ impl ::core::fmt::Debug for D3D12_VIDEO_ENCODER_REFERENCE_PICTURE_DESCRIPTOR_HEV
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_REFERENCE_PICTURE_DESCRIPTOR_HEVC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3D12_VIDEO_ENCODER_REFERENCE_PICTURE_DESCRIPTOR_HEVC {
@@ -6601,6 +6757,7 @@ impl ::core::clone::Clone for D3D12_VIDEO_ENCODER_RESOLVE_METADATA_INPUT_ARGUMEN
 #[cfg(all(feature = "Win32_Graphics_Direct3D12", feature = "Win32_Graphics_Dxgi_Common"))]
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_RESOLVE_METADATA_INPUT_ARGUMENTS {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Graphics_Direct3D12", feature = "Win32_Graphics_Dxgi_Common"))]
 impl ::core::cmp::PartialEq for D3D12_VIDEO_ENCODER_RESOLVE_METADATA_INPUT_ARGUMENTS {
@@ -6637,6 +6794,7 @@ impl ::core::fmt::Debug for D3D12_VIDEO_ENCODER_RESOLVE_METADATA_OUTPUT_ARGUMENT
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_RESOLVE_METADATA_OUTPUT_ARGUMENTS {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ::core::cmp::PartialEq for D3D12_VIDEO_ENCODER_RESOLVE_METADATA_OUTPUT_ARGUMENTS {
@@ -6675,6 +6833,7 @@ impl ::core::clone::Clone for D3D12_VIDEO_ENCODER_SEQUENCE_CONTROL_DESC {
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_SEQUENCE_CONTROL_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 impl ::core::cmp::PartialEq for D3D12_VIDEO_ENCODER_SEQUENCE_CONTROL_DESC {
@@ -6719,6 +6878,7 @@ impl ::core::default::Default for D3D12_VIDEO_ENCODER_SEQUENCE_CONTROL_FLAGS {
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_SEQUENCE_CONTROL_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_VIDEO_ENCODER_SEQUENCE_CONTROL_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6767,6 +6927,7 @@ impl ::core::clone::Clone for D3D12_VIDEO_ENCODER_SEQUENCE_GOP_STRUCTURE {
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_SEQUENCE_GOP_STRUCTURE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_VIDEO_ENCODER_SEQUENCE_GOP_STRUCTURE {
     fn eq(&self, other: &Self) -> bool {
@@ -6793,6 +6954,7 @@ impl ::core::clone::Clone for D3D12_VIDEO_ENCODER_SEQUENCE_GOP_STRUCTURE_0 {
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_SEQUENCE_GOP_STRUCTURE_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_VIDEO_ENCODER_SEQUENCE_GOP_STRUCTURE_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -6827,6 +6989,7 @@ impl ::core::fmt::Debug for D3D12_VIDEO_ENCODER_SEQUENCE_GOP_STRUCTURE_H264 {
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_SEQUENCE_GOP_STRUCTURE_H264 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_VIDEO_ENCODER_SEQUENCE_GOP_STRUCTURE_H264 {
     fn eq(&self, other: &Self) -> bool {
@@ -6859,6 +7022,7 @@ impl ::core::fmt::Debug for D3D12_VIDEO_ENCODER_SEQUENCE_GOP_STRUCTURE_HEVC {
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_SEQUENCE_GOP_STRUCTURE_HEVC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_VIDEO_ENCODER_SEQUENCE_GOP_STRUCTURE_HEVC {
     fn eq(&self, other: &Self) -> bool {
@@ -6916,6 +7080,7 @@ impl ::core::default::Default for D3D12_VIDEO_ENCODER_SUPPORT_FLAGS {
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_SUPPORT_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_VIDEO_ENCODER_SUPPORT_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6971,6 +7136,7 @@ impl ::core::default::Default for D3D12_VIDEO_ENCODER_TIER_HEVC {
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_TIER_HEVC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_VIDEO_ENCODER_TIER_HEVC {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7014,6 +7180,7 @@ impl ::core::default::Default for D3D12_VIDEO_ENCODER_VALIDATION_FLAGS {
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODER_VALIDATION_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_VIDEO_ENCODER_VALIDATION_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7073,6 +7240,7 @@ impl ::core::fmt::Debug for D3D12_VIDEO_ENCODE_REFERENCE_FRAMES {
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_ENCODE_REFERENCE_FRAMES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ::core::cmp::PartialEq for D3D12_VIDEO_ENCODE_REFERENCE_FRAMES {
@@ -7107,6 +7275,7 @@ impl ::core::fmt::Debug for D3D12_VIDEO_EXTENSION_COMMAND_DESC {
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_EXTENSION_COMMAND_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_VIDEO_EXTENSION_COMMAND_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -7144,6 +7313,7 @@ impl ::core::fmt::Debug for D3D12_VIDEO_EXTENSION_COMMAND_INFO {
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_EXTENSION_COMMAND_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ::core::cmp::PartialEq for D3D12_VIDEO_EXTENSION_COMMAND_INFO {
@@ -7182,6 +7352,7 @@ impl ::core::default::Default for D3D12_VIDEO_EXTENSION_COMMAND_PARAMETER_FLAGS 
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_EXTENSION_COMMAND_PARAMETER_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_VIDEO_EXTENSION_COMMAND_PARAMETER_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7236,6 +7407,7 @@ impl ::core::fmt::Debug for D3D12_VIDEO_EXTENSION_COMMAND_PARAMETER_INFO {
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_EXTENSION_COMMAND_PARAMETER_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_VIDEO_EXTENSION_COMMAND_PARAMETER_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -7279,6 +7451,7 @@ impl ::core::default::Default for D3D12_VIDEO_EXTENSION_COMMAND_PARAMETER_STAGE 
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_EXTENSION_COMMAND_PARAMETER_STAGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_VIDEO_EXTENSION_COMMAND_PARAMETER_STAGE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7324,6 +7497,7 @@ impl ::core::default::Default for D3D12_VIDEO_EXTENSION_COMMAND_PARAMETER_TYPE {
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_EXTENSION_COMMAND_PARAMETER_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_VIDEO_EXTENSION_COMMAND_PARAMETER_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7353,6 +7527,7 @@ impl ::core::default::Default for D3D12_VIDEO_FIELD_TYPE {
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_FIELD_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_VIDEO_FIELD_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7383,6 +7558,7 @@ impl ::core::fmt::Debug for D3D12_VIDEO_FORMAT {
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_FORMAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 impl ::core::cmp::PartialEq for D3D12_VIDEO_FORMAT {
@@ -7419,6 +7595,7 @@ impl ::core::default::Default for D3D12_VIDEO_FRAME_CODED_INTERLACE_TYPE {
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_FRAME_CODED_INTERLACE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_VIDEO_FRAME_CODED_INTERLACE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7452,6 +7629,7 @@ impl ::core::default::Default for D3D12_VIDEO_FRAME_STEREO_FORMAT {
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_FRAME_STEREO_FORMAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_VIDEO_FRAME_STEREO_FORMAT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7485,6 +7663,7 @@ impl ::core::fmt::Debug for D3D12_VIDEO_MOTION_ESTIMATOR_DESC {
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_MOTION_ESTIMATOR_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 impl ::core::cmp::PartialEq for D3D12_VIDEO_MOTION_ESTIMATOR_DESC {
@@ -7531,6 +7710,7 @@ impl ::core::fmt::Debug for D3D12_VIDEO_MOTION_ESTIMATOR_INPUT {
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_MOTION_ESTIMATOR_INPUT {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ::core::cmp::PartialEq for D3D12_VIDEO_MOTION_ESTIMATOR_INPUT {
@@ -7567,6 +7747,7 @@ impl ::core::fmt::Debug for D3D12_VIDEO_MOTION_ESTIMATOR_OUTPUT {
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_MOTION_ESTIMATOR_OUTPUT {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ::core::cmp::PartialEq for D3D12_VIDEO_MOTION_ESTIMATOR_OUTPUT {
@@ -7603,6 +7784,7 @@ impl ::core::default::Default for D3D12_VIDEO_MOTION_ESTIMATOR_SEARCH_BLOCK_SIZE
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_MOTION_ESTIMATOR_SEARCH_BLOCK_SIZE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_VIDEO_MOTION_ESTIMATOR_SEARCH_BLOCK_SIZE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7632,6 +7814,7 @@ impl ::core::default::Default for D3D12_VIDEO_MOTION_ESTIMATOR_SEARCH_BLOCK_SIZE
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_MOTION_ESTIMATOR_SEARCH_BLOCK_SIZE_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_VIDEO_MOTION_ESTIMATOR_SEARCH_BLOCK_SIZE_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7685,6 +7868,7 @@ impl ::core::default::Default for D3D12_VIDEO_MOTION_ESTIMATOR_VECTOR_PRECISION 
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_MOTION_ESTIMATOR_VECTOR_PRECISION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_VIDEO_MOTION_ESTIMATOR_VECTOR_PRECISION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7712,6 +7896,7 @@ impl ::core::default::Default for D3D12_VIDEO_MOTION_ESTIMATOR_VECTOR_PRECISION_
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_MOTION_ESTIMATOR_VECTOR_PRECISION_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_VIDEO_MOTION_ESTIMATOR_VECTOR_PRECISION_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7773,6 +7958,7 @@ impl ::core::fmt::Debug for D3D12_VIDEO_MOTION_VECTOR_HEAP_DESC {
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_MOTION_VECTOR_HEAP_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 impl ::core::cmp::PartialEq for D3D12_VIDEO_MOTION_VECTOR_HEAP_DESC {
@@ -7812,6 +7998,7 @@ impl ::core::fmt::Debug for D3D12_VIDEO_PROCESS_ALPHA_BLENDING {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_PROCESS_ALPHA_BLENDING {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3D12_VIDEO_PROCESS_ALPHA_BLENDING {
@@ -7852,6 +8039,7 @@ impl ::core::default::Default for D3D12_VIDEO_PROCESS_ALPHA_FILL_MODE {
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_PROCESS_ALPHA_FILL_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_VIDEO_PROCESS_ALPHA_FILL_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7895,6 +8083,7 @@ impl ::core::default::Default for D3D12_VIDEO_PROCESS_AUTO_PROCESSING_FLAGS {
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_PROCESS_AUTO_PROCESSING_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_VIDEO_PROCESS_AUTO_PROCESSING_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7952,6 +8141,7 @@ impl ::core::default::Default for D3D12_VIDEO_PROCESS_DEINTERLACE_FLAGS {
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_PROCESS_DEINTERLACE_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_VIDEO_PROCESS_DEINTERLACE_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8019,6 +8209,7 @@ impl ::core::default::Default for D3D12_VIDEO_PROCESS_FEATURE_FLAGS {
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_PROCESS_FEATURE_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_VIDEO_PROCESS_FEATURE_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8086,6 +8277,7 @@ impl ::core::default::Default for D3D12_VIDEO_PROCESS_FILTER {
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_PROCESS_FILTER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_VIDEO_PROCESS_FILTER {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8127,6 +8319,7 @@ impl ::core::default::Default for D3D12_VIDEO_PROCESS_FILTER_FLAGS {
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_PROCESS_FILTER_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_VIDEO_PROCESS_FILTER_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8182,6 +8375,7 @@ impl ::core::fmt::Debug for D3D12_VIDEO_PROCESS_FILTER_RANGE {
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_PROCESS_FILTER_RANGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_VIDEO_PROCESS_FILTER_RANGE {
     fn eq(&self, other: &Self) -> bool {
@@ -8217,6 +8411,7 @@ impl ::core::fmt::Debug for D3D12_VIDEO_PROCESS_INPUT_STREAM {
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_PROCESS_INPUT_STREAM {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ::core::cmp::PartialEq for D3D12_VIDEO_PROCESS_INPUT_STREAM {
@@ -8265,6 +8460,7 @@ impl ::core::fmt::Debug for D3D12_VIDEO_PROCESS_INPUT_STREAM_ARGUMENTS {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Direct3D12"))]
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_PROCESS_INPUT_STREAM_ARGUMENTS {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Direct3D12"))]
 impl ::core::cmp::PartialEq for D3D12_VIDEO_PROCESS_INPUT_STREAM_ARGUMENTS {
@@ -8315,6 +8511,7 @@ impl ::core::fmt::Debug for D3D12_VIDEO_PROCESS_INPUT_STREAM_ARGUMENTS1 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Direct3D12"))]
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_PROCESS_INPUT_STREAM_ARGUMENTS1 {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Direct3D12"))]
 impl ::core::cmp::PartialEq for D3D12_VIDEO_PROCESS_INPUT_STREAM_ARGUMENTS1 {
@@ -8387,6 +8584,7 @@ impl ::core::fmt::Debug for D3D12_VIDEO_PROCESS_INPUT_STREAM_DESC {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Dxgi_Common"))]
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_PROCESS_INPUT_STREAM_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Dxgi_Common"))]
 impl ::core::cmp::PartialEq for D3D12_VIDEO_PROCESS_INPUT_STREAM_DESC {
@@ -8425,6 +8623,7 @@ impl ::core::default::Default for D3D12_VIDEO_PROCESS_INPUT_STREAM_FLAGS {
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_PROCESS_INPUT_STREAM_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_VIDEO_PROCESS_INPUT_STREAM_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8478,6 +8677,7 @@ impl ::core::fmt::Debug for D3D12_VIDEO_PROCESS_INPUT_STREAM_RATE {
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_PROCESS_INPUT_STREAM_RATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_VIDEO_PROCESS_INPUT_STREAM_RATE {
     fn eq(&self, other: &Self) -> bool {
@@ -8515,6 +8715,7 @@ impl ::core::fmt::Debug for D3D12_VIDEO_PROCESS_LUMA_KEY {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_PROCESS_LUMA_KEY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3D12_VIDEO_PROCESS_LUMA_KEY {
@@ -8563,6 +8764,7 @@ impl ::core::default::Default for D3D12_VIDEO_PROCESS_ORIENTATION {
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_PROCESS_ORIENTATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_VIDEO_PROCESS_ORIENTATION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8591,6 +8793,7 @@ impl ::core::fmt::Debug for D3D12_VIDEO_PROCESS_OUTPUT_STREAM {
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_PROCESS_OUTPUT_STREAM {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ::core::cmp::PartialEq for D3D12_VIDEO_PROCESS_OUTPUT_STREAM {
@@ -8628,6 +8831,7 @@ impl ::core::fmt::Debug for D3D12_VIDEO_PROCESS_OUTPUT_STREAM_ARGUMENTS {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Direct3D12"))]
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_PROCESS_OUTPUT_STREAM_ARGUMENTS {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Direct3D12"))]
 impl ::core::cmp::PartialEq for D3D12_VIDEO_PROCESS_OUTPUT_STREAM_ARGUMENTS {
@@ -8672,6 +8876,7 @@ impl ::core::fmt::Debug for D3D12_VIDEO_PROCESS_OUTPUT_STREAM_DESC {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Dxgi_Common"))]
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_PROCESS_OUTPUT_STREAM_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Dxgi_Common"))]
 impl ::core::cmp::PartialEq for D3D12_VIDEO_PROCESS_OUTPUT_STREAM_DESC {
@@ -8715,6 +8920,7 @@ impl ::core::fmt::Debug for D3D12_VIDEO_PROCESS_REFERENCE_SET {
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_PROCESS_REFERENCE_SET {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ::core::cmp::PartialEq for D3D12_VIDEO_PROCESS_REFERENCE_SET {
@@ -8751,6 +8957,7 @@ impl ::core::default::Default for D3D12_VIDEO_PROCESS_SUPPORT_FLAGS {
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_PROCESS_SUPPORT_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_VIDEO_PROCESS_SUPPORT_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8810,6 +9017,7 @@ impl ::core::fmt::Debug for D3D12_VIDEO_PROCESS_TRANSFORM {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_PROCESS_TRANSFORM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3D12_VIDEO_PROCESS_TRANSFORM {
@@ -8846,6 +9054,7 @@ impl ::core::default::Default for D3D12_VIDEO_PROTECTED_RESOURCE_SUPPORT_FLAGS {
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_PROTECTED_RESOURCE_SUPPORT_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_VIDEO_PROTECTED_RESOURCE_SUPPORT_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8905,6 +9114,7 @@ impl ::core::fmt::Debug for D3D12_VIDEO_SAMPLE {
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_SAMPLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 impl ::core::cmp::PartialEq for D3D12_VIDEO_SAMPLE {
@@ -8939,6 +9149,7 @@ impl ::core::fmt::Debug for D3D12_VIDEO_SCALE_SUPPORT {
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_SCALE_SUPPORT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_VIDEO_SCALE_SUPPORT {
     fn eq(&self, other: &Self) -> bool {
@@ -8974,6 +9185,7 @@ impl ::core::default::Default for D3D12_VIDEO_SCALE_SUPPORT_FLAGS {
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_SCALE_SUPPORT_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_VIDEO_SCALE_SUPPORT_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9029,6 +9241,7 @@ impl ::core::fmt::Debug for D3D12_VIDEO_SIZE_RANGE {
 }
 unsafe impl ::windows::core::Abi for D3D12_VIDEO_SIZE_RANGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_VIDEO_SIZE_RANGE {
     fn eq(&self, other: &Self) -> bool {
@@ -9062,6 +9275,7 @@ impl ::core::clone::Clone for D3DCONTENTPROTECTIONCAPS {
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 unsafe impl ::windows::core::Abi for D3DCONTENTPROTECTIONCAPS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 impl ::core::cmp::PartialEq for D3DCONTENTPROTECTIONCAPS {
@@ -9098,6 +9312,7 @@ impl ::core::clone::Clone for D3DCONTENTPROTECTIONCAPS {
 #[cfg(target_arch = "x86")]
 unsafe impl ::windows::core::Abi for D3DCONTENTPROTECTIONCAPS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 impl ::core::cmp::PartialEq for D3DCONTENTPROTECTIONCAPS {
@@ -9133,6 +9348,7 @@ impl ::core::fmt::Debug for D3DOVERLAYCAPS {
 }
 unsafe impl ::windows::core::Abi for D3DOVERLAYCAPS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3DOVERLAYCAPS {
     fn eq(&self, other: &Self) -> bool {
@@ -9176,6 +9392,7 @@ impl ::core::fmt::Debug for DEVICE_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DEVICE_INFO {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DEVICE_INFO {
@@ -9219,6 +9436,7 @@ impl ::core::fmt::Debug for DIRTYRECT_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DIRTYRECT_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DIRTYRECT_INFO {
@@ -9282,6 +9500,7 @@ impl ::core::fmt::Debug for DXVA2_AES_CTR_IV {
 }
 unsafe impl ::windows::core::Abi for DXVA2_AES_CTR_IV {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DXVA2_AES_CTR_IV {
     fn eq(&self, other: &Self) -> bool {
@@ -9315,6 +9534,7 @@ impl ::core::fmt::Debug for DXVA2_AYUVSample16 {
 }
 unsafe impl ::windows::core::Abi for DXVA2_AYUVSample16 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DXVA2_AYUVSample16 {
     fn eq(&self, other: &Self) -> bool {
@@ -9348,6 +9568,7 @@ impl ::core::fmt::Debug for DXVA2_AYUVSample8 {
 }
 unsafe impl ::windows::core::Abi for DXVA2_AYUVSample8 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DXVA2_AYUVSample8 {
     fn eq(&self, other: &Self) -> bool {
@@ -9395,6 +9616,7 @@ impl ::core::default::Default for DXVA2_BufferfType {
 }
 unsafe impl ::windows::core::Abi for DXVA2_BufferfType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXVA2_BufferfType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9453,6 +9675,7 @@ impl ::core::fmt::Debug for DXVA2_ConfigPictureDecode {
 }
 unsafe impl ::windows::core::Abi for DXVA2_ConfigPictureDecode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DXVA2_ConfigPictureDecode {
     fn eq(&self, other: &Self) -> bool {
@@ -9497,6 +9720,7 @@ impl ::core::fmt::Debug for DXVA2_DecodeBufferDesc {
 }
 unsafe impl ::windows::core::Abi for DXVA2_DecodeBufferDesc {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DXVA2_DecodeBufferDesc {
     fn eq(&self, other: &Self) -> bool {
@@ -9529,6 +9753,7 @@ impl ::core::fmt::Debug for DXVA2_DecodeExecuteParams {
 }
 unsafe impl ::windows::core::Abi for DXVA2_DecodeExecuteParams {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DXVA2_DecodeExecuteParams {
     fn eq(&self, other: &Self) -> bool {
@@ -9563,6 +9788,7 @@ impl ::core::fmt::Debug for DXVA2_DecodeExtensionData {
 }
 unsafe impl ::windows::core::Abi for DXVA2_DecodeExtensionData {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DXVA2_DecodeExtensionData {
     fn eq(&self, other: &Self) -> bool {
@@ -9614,6 +9840,7 @@ impl ::core::default::Default for DXVA2_DeinterlaceTech {
 }
 unsafe impl ::windows::core::Abi for DXVA2_DeinterlaceTech {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXVA2_DeinterlaceTech {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9645,6 +9872,7 @@ impl ::core::default::Default for DXVA2_DestData {
 }
 unsafe impl ::windows::core::Abi for DXVA2_DestData {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXVA2_DestData {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9678,6 +9906,7 @@ impl ::core::default::Default for DXVA2_DetailFilterTech {
 }
 unsafe impl ::windows::core::Abi for DXVA2_DetailFilterTech {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXVA2_DetailFilterTech {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9705,6 +9934,7 @@ impl ::core::clone::Clone for DXVA2_ExtendedFormat {
 }
 unsafe impl ::windows::core::Abi for DXVA2_ExtendedFormat {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DXVA2_ExtendedFormat {
     fn eq(&self, other: &Self) -> bool {
@@ -9731,6 +9961,7 @@ impl ::core::clone::Clone for DXVA2_ExtendedFormat_0 {
 }
 unsafe impl ::windows::core::Abi for DXVA2_ExtendedFormat_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DXVA2_ExtendedFormat_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -9761,6 +9992,7 @@ impl ::core::fmt::Debug for DXVA2_ExtendedFormat_0_0 {
 }
 unsafe impl ::windows::core::Abi for DXVA2_ExtendedFormat_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DXVA2_ExtendedFormat_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -9814,6 +10046,7 @@ impl ::core::default::Default for DXVA2_FilterType {
 }
 unsafe impl ::windows::core::Abi for DXVA2_FilterType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXVA2_FilterType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9835,6 +10068,7 @@ impl ::core::clone::Clone for DXVA2_FilterValues {
 }
 unsafe impl ::windows::core::Abi for DXVA2_FilterValues {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DXVA2_FilterValues {
     fn eq(&self, other: &Self) -> bool {
@@ -9860,6 +10094,7 @@ impl ::core::clone::Clone for DXVA2_Fixed32 {
 }
 unsafe impl ::windows::core::Abi for DXVA2_Fixed32 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DXVA2_Fixed32 {
     fn eq(&self, other: &Self) -> bool {
@@ -9886,6 +10121,7 @@ impl ::core::clone::Clone for DXVA2_Fixed32_0 {
 }
 unsafe impl ::windows::core::Abi for DXVA2_Fixed32_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DXVA2_Fixed32_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -9917,6 +10153,7 @@ impl ::core::fmt::Debug for DXVA2_Fixed32_0_0 {
 }
 unsafe impl ::windows::core::Abi for DXVA2_Fixed32_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DXVA2_Fixed32_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -9948,6 +10185,7 @@ impl ::core::fmt::Debug for DXVA2_Frequency {
 }
 unsafe impl ::windows::core::Abi for DXVA2_Frequency {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DXVA2_Frequency {
     fn eq(&self, other: &Self) -> bool {
@@ -10025,6 +10263,7 @@ impl ::core::default::Default for DXVA2_NoiseFilterTech {
 }
 unsafe impl ::windows::core::Abi for DXVA2_NoiseFilterTech {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXVA2_NoiseFilterTech {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10062,6 +10301,7 @@ impl ::core::default::Default for DXVA2_NominalRange {
 }
 unsafe impl ::windows::core::Abi for DXVA2_NominalRange {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXVA2_NominalRange {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10097,6 +10337,7 @@ impl ::core::default::Default for DXVA2_ProcAmp {
 }
 unsafe impl ::windows::core::Abi for DXVA2_ProcAmp {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXVA2_ProcAmp {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10119,6 +10360,7 @@ impl ::core::clone::Clone for DXVA2_ProcAmpValues {
 }
 unsafe impl ::windows::core::Abi for DXVA2_ProcAmpValues {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DXVA2_ProcAmpValues {
     fn eq(&self, other: &Self) -> bool {
@@ -10156,6 +10398,7 @@ impl ::core::default::Default for DXVA2_SampleData {
 }
 unsafe impl ::windows::core::Abi for DXVA2_SampleData {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXVA2_SampleData {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10195,6 +10438,7 @@ impl ::core::default::Default for DXVA2_SampleFormat {
 }
 unsafe impl ::windows::core::Abi for DXVA2_SampleFormat {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXVA2_SampleFormat {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10224,6 +10468,7 @@ impl ::core::default::Default for DXVA2_SurfaceType {
 }
 unsafe impl ::windows::core::Abi for DXVA2_SurfaceType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXVA2_SurfaceType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10255,6 +10500,7 @@ impl ::core::default::Default for DXVA2_VPDev {
 }
 unsafe impl ::windows::core::Abi for DXVA2_VPDev {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXVA2_VPDev {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10277,6 +10523,7 @@ impl ::core::clone::Clone for DXVA2_ValueRange {
 }
 unsafe impl ::windows::core::Abi for DXVA2_ValueRange {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DXVA2_ValueRange {
     fn eq(&self, other: &Self) -> bool {
@@ -10326,6 +10573,7 @@ impl ::core::default::Default for DXVA2_VideoChromaSubSampling {
 }
 unsafe impl ::windows::core::Abi for DXVA2_VideoChromaSubSampling {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXVA2_VideoChromaSubSampling {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10356,6 +10604,7 @@ impl ::core::clone::Clone for DXVA2_VideoDesc {
 #[cfg(feature = "Win32_Graphics_Direct3D9")]
 unsafe impl ::windows::core::Abi for DXVA2_VideoDesc {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Direct3D9")]
 impl ::core::cmp::PartialEq for DXVA2_VideoDesc {
@@ -10400,6 +10649,7 @@ impl ::core::default::Default for DXVA2_VideoLighting {
 }
 unsafe impl ::windows::core::Abi for DXVA2_VideoLighting {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXVA2_VideoLighting {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10443,6 +10693,7 @@ impl ::core::default::Default for DXVA2_VideoPrimaries {
 }
 unsafe impl ::windows::core::Abi for DXVA2_VideoPrimaries {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXVA2_VideoPrimaries {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10505,6 +10756,7 @@ impl ::core::default::Default for DXVA2_VideoProcess {
 }
 unsafe impl ::windows::core::Abi for DXVA2_VideoProcess {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXVA2_VideoProcess {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10540,6 +10792,7 @@ impl ::core::clone::Clone for DXVA2_VideoProcessBltParams {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DXVA2_VideoProcessBltParams {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DXVA2_VideoProcessBltParams {
@@ -10598,6 +10851,7 @@ impl ::core::fmt::Debug for DXVA2_VideoProcessorCaps {
 #[cfg(feature = "Win32_Graphics_Direct3D9")]
 unsafe impl ::windows::core::Abi for DXVA2_VideoProcessorCaps {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Direct3D9")]
 impl ::core::cmp::PartialEq for DXVA2_VideoProcessorCaps {
@@ -10636,6 +10890,7 @@ impl ::core::default::Default for DXVA2_VideoRenderTargetType {
 }
 unsafe impl ::windows::core::Abi for DXVA2_VideoRenderTargetType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXVA2_VideoRenderTargetType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10675,6 +10930,7 @@ impl ::core::clone::Clone for DXVA2_VideoSample {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Direct3D9"))]
 unsafe impl ::windows::core::Abi for DXVA2_VideoSample {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Direct3D9"))]
 impl ::core::cmp::PartialEq for DXVA2_VideoSample {
@@ -10727,6 +10983,7 @@ impl ::core::default::Default for DXVA2_VideoTransferFunction {
 }
 unsafe impl ::windows::core::Abi for DXVA2_VideoTransferFunction {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXVA2_VideoTransferFunction {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10760,6 +11017,7 @@ impl ::core::default::Default for DXVA2_VideoTransferMatrix {
 }
 unsafe impl ::windows::core::Abi for DXVA2_VideoTransferMatrix {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXVA2_VideoTransferMatrix {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10786,6 +11044,7 @@ impl ::core::fmt::Debug for DXVABufferInfo {
 }
 unsafe impl ::windows::core::Abi for DXVABufferInfo {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DXVABufferInfo {
     fn eq(&self, other: &Self) -> bool {
@@ -10827,6 +11086,7 @@ impl ::core::fmt::Debug for DXVACompBufferInfo {
 #[cfg(feature = "Win32_Graphics_Direct3D9")]
 unsafe impl ::windows::core::Abi for DXVACompBufferInfo {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Direct3D9")]
 impl ::core::cmp::PartialEq for DXVACompBufferInfo {
@@ -10869,6 +11129,7 @@ impl ::core::fmt::Debug for DXVAHDETW_CREATEVIDEOPROCESSOR {
 }
 unsafe impl ::windows::core::Abi for DXVAHDETW_CREATEVIDEOPROCESSOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DXVAHDETW_CREATEVIDEOPROCESSOR {
     fn eq(&self, other: &Self) -> bool {
@@ -10899,6 +11160,7 @@ impl ::core::fmt::Debug for DXVAHDETW_DESTROYVIDEOPROCESSOR {
 }
 unsafe impl ::windows::core::Abi for DXVAHDETW_DESTROYVIDEOPROCESSOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DXVAHDETW_DESTROYVIDEOPROCESSOR {
     fn eq(&self, other: &Self) -> bool {
@@ -10941,6 +11203,7 @@ impl ::core::fmt::Debug for DXVAHDETW_VIDEOPROCESSBLTHD {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Direct3D9"))]
 unsafe impl ::windows::core::Abi for DXVAHDETW_VIDEOPROCESSBLTHD {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Direct3D9"))]
 impl ::core::cmp::PartialEq for DXVAHDETW_VIDEOPROCESSBLTHD {
@@ -11003,6 +11266,7 @@ impl ::core::fmt::Debug for DXVAHDETW_VIDEOPROCESSBLTHD_STREAM {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Direct3D9"))]
 unsafe impl ::windows::core::Abi for DXVAHDETW_VIDEOPROCESSBLTHD_STREAM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Direct3D9"))]
 impl ::core::cmp::PartialEq for DXVAHDETW_VIDEOPROCESSBLTHD_STREAM {
@@ -11044,6 +11308,7 @@ impl ::core::fmt::Debug for DXVAHDETW_VIDEOPROCESSBLTSTATE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DXVAHDETW_VIDEOPROCESSBLTSTATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DXVAHDETW_VIDEOPROCESSBLTSTATE {
@@ -11086,6 +11351,7 @@ impl ::core::fmt::Debug for DXVAHDETW_VIDEOPROCESSSTREAMSTATE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DXVAHDETW_VIDEOPROCESSSTREAMSTATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DXVAHDETW_VIDEOPROCESSSTREAMSTATE {
@@ -11156,6 +11422,7 @@ impl ::core::fmt::Debug for DXVAHDSW_CALLBACKS {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Direct3D9"))]
 unsafe impl ::windows::core::Abi for DXVAHDSW_CALLBACKS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Direct3D9"))]
 impl ::core::cmp::PartialEq for DXVAHDSW_CALLBACKS {
@@ -11196,6 +11463,7 @@ impl ::core::default::Default for DXVAHD_ALPHA_FILL_MODE {
 }
 unsafe impl ::windows::core::Abi for DXVAHD_ALPHA_FILL_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXVAHD_ALPHA_FILL_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11231,6 +11499,7 @@ impl ::core::default::Default for DXVAHD_BLT_STATE {
 }
 unsafe impl ::windows::core::Abi for DXVAHD_BLT_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXVAHD_BLT_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11256,6 +11525,7 @@ impl ::core::fmt::Debug for DXVAHD_BLT_STATE_ALPHA_FILL_DATA {
 }
 unsafe impl ::windows::core::Abi for DXVAHD_BLT_STATE_ALPHA_FILL_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DXVAHD_BLT_STATE_ALPHA_FILL_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -11286,6 +11556,7 @@ impl ::core::clone::Clone for DXVAHD_BLT_STATE_BACKGROUND_COLOR_DATA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DXVAHD_BLT_STATE_BACKGROUND_COLOR_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DXVAHD_BLT_STATE_BACKGROUND_COLOR_DATA {
@@ -11325,6 +11596,7 @@ impl ::core::fmt::Debug for DXVAHD_BLT_STATE_CONSTRICTION_DATA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DXVAHD_BLT_STATE_CONSTRICTION_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DXVAHD_BLT_STATE_CONSTRICTION_DATA {
@@ -11353,6 +11625,7 @@ impl ::core::clone::Clone for DXVAHD_BLT_STATE_OUTPUT_COLOR_SPACE_DATA {
 }
 unsafe impl ::windows::core::Abi for DXVAHD_BLT_STATE_OUTPUT_COLOR_SPACE_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DXVAHD_BLT_STATE_OUTPUT_COLOR_SPACE_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -11379,6 +11652,7 @@ impl ::core::clone::Clone for DXVAHD_BLT_STATE_OUTPUT_COLOR_SPACE_DATA_0 {
 }
 unsafe impl ::windows::core::Abi for DXVAHD_BLT_STATE_OUTPUT_COLOR_SPACE_DATA_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DXVAHD_BLT_STATE_OUTPUT_COLOR_SPACE_DATA_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -11409,6 +11683,7 @@ impl ::core::fmt::Debug for DXVAHD_BLT_STATE_OUTPUT_COLOR_SPACE_DATA_0_0 {
 }
 unsafe impl ::windows::core::Abi for DXVAHD_BLT_STATE_OUTPUT_COLOR_SPACE_DATA_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DXVAHD_BLT_STATE_OUTPUT_COLOR_SPACE_DATA_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -11441,6 +11716,7 @@ impl ::core::fmt::Debug for DXVAHD_BLT_STATE_PRIVATE_DATA {
 }
 unsafe impl ::windows::core::Abi for DXVAHD_BLT_STATE_PRIVATE_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DXVAHD_BLT_STATE_PRIVATE_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -11477,6 +11753,7 @@ impl ::core::fmt::Debug for DXVAHD_BLT_STATE_TARGET_RECT_DATA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DXVAHD_BLT_STATE_TARGET_RECT_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DXVAHD_BLT_STATE_TARGET_RECT_DATA {
@@ -11506,6 +11783,7 @@ impl ::core::clone::Clone for DXVAHD_COLOR {
 }
 unsafe impl ::windows::core::Abi for DXVAHD_COLOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DXVAHD_COLOR {
     fn eq(&self, other: &Self) -> bool {
@@ -11539,6 +11817,7 @@ impl ::core::fmt::Debug for DXVAHD_COLOR_RGBA {
 }
 unsafe impl ::windows::core::Abi for DXVAHD_COLOR_RGBA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DXVAHD_COLOR_RGBA {
     fn eq(&self, other: &Self) -> bool {
@@ -11572,6 +11851,7 @@ impl ::core::fmt::Debug for DXVAHD_COLOR_YCbCrA {
 }
 unsafe impl ::windows::core::Abi for DXVAHD_COLOR_YCbCrA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DXVAHD_COLOR_YCbCrA {
     fn eq(&self, other: &Self) -> bool {
@@ -11608,6 +11888,7 @@ impl ::core::fmt::Debug for DXVAHD_CONTENT_DESC {
 }
 unsafe impl ::windows::core::Abi for DXVAHD_CONTENT_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DXVAHD_CONTENT_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -11646,6 +11927,7 @@ impl ::core::fmt::Debug for DXVAHD_CUSTOM_RATE_DATA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DXVAHD_CUSTOM_RATE_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DXVAHD_CUSTOM_RATE_DATA {
@@ -11702,6 +11984,7 @@ impl ::core::default::Default for DXVAHD_DEVICE_CAPS {
 }
 unsafe impl ::windows::core::Abi for DXVAHD_DEVICE_CAPS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXVAHD_DEVICE_CAPS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11733,6 +12016,7 @@ impl ::core::default::Default for DXVAHD_DEVICE_TYPE {
 }
 unsafe impl ::windows::core::Abi for DXVAHD_DEVICE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXVAHD_DEVICE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11762,6 +12046,7 @@ impl ::core::default::Default for DXVAHD_DEVICE_USAGE {
 }
 unsafe impl ::windows::core::Abi for DXVAHD_DEVICE_USAGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXVAHD_DEVICE_USAGE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11793,6 +12078,7 @@ impl ::core::default::Default for DXVAHD_FEATURE_CAPS {
 }
 unsafe impl ::windows::core::Abi for DXVAHD_FEATURE_CAPS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXVAHD_FEATURE_CAPS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11830,6 +12116,7 @@ impl ::core::default::Default for DXVAHD_FILTER {
 }
 unsafe impl ::windows::core::Abi for DXVAHD_FILTER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXVAHD_FILTER {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11867,6 +12154,7 @@ impl ::core::default::Default for DXVAHD_FILTER_CAPS {
 }
 unsafe impl ::windows::core::Abi for DXVAHD_FILTER_CAPS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXVAHD_FILTER_CAPS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11894,6 +12182,7 @@ impl ::core::fmt::Debug for DXVAHD_FILTER_RANGE_DATA {
 }
 unsafe impl ::windows::core::Abi for DXVAHD_FILTER_RANGE_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DXVAHD_FILTER_RANGE_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -11929,6 +12218,7 @@ impl ::core::default::Default for DXVAHD_FRAME_FORMAT {
 }
 unsafe impl ::windows::core::Abi for DXVAHD_FRAME_FORMAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXVAHD_FRAME_FORMAT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11960,6 +12250,7 @@ impl ::core::default::Default for DXVAHD_INPUT_FORMAT_CAPS {
 }
 unsafe impl ::windows::core::Abi for DXVAHD_INPUT_FORMAT_CAPS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXVAHD_INPUT_FORMAT_CAPS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12003,6 +12294,7 @@ impl ::core::default::Default for DXVAHD_ITELECINE_CAPS {
 }
 unsafe impl ::windows::core::Abi for DXVAHD_ITELECINE_CAPS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXVAHD_ITELECINE_CAPS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12032,6 +12324,7 @@ impl ::core::default::Default for DXVAHD_OUTPUT_RATE {
 }
 unsafe impl ::windows::core::Abi for DXVAHD_OUTPUT_RATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXVAHD_OUTPUT_RATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12067,6 +12360,7 @@ impl ::core::default::Default for DXVAHD_PROCESSOR_CAPS {
 }
 unsafe impl ::windows::core::Abi for DXVAHD_PROCESSOR_CAPS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXVAHD_PROCESSOR_CAPS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12092,6 +12386,7 @@ impl ::core::fmt::Debug for DXVAHD_RATIONAL {
 }
 unsafe impl ::windows::core::Abi for DXVAHD_RATIONAL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DXVAHD_RATIONAL {
     fn eq(&self, other: &Self) -> bool {
@@ -12141,6 +12436,7 @@ impl ::core::fmt::Debug for DXVAHD_STREAM_DATA {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Direct3D9"))]
 unsafe impl ::windows::core::Abi for DXVAHD_STREAM_DATA {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Direct3D9"))]
 impl ::core::cmp::PartialEq for DXVAHD_STREAM_DATA {
@@ -12209,6 +12505,7 @@ impl ::core::default::Default for DXVAHD_STREAM_STATE {
 }
 unsafe impl ::windows::core::Abi for DXVAHD_STREAM_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXVAHD_STREAM_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12239,6 +12536,7 @@ impl ::core::fmt::Debug for DXVAHD_STREAM_STATE_ALPHA_DATA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DXVAHD_STREAM_STATE_ALPHA_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DXVAHD_STREAM_STATE_ALPHA_DATA {
@@ -12279,6 +12577,7 @@ impl ::core::fmt::Debug for DXVAHD_STREAM_STATE_ASPECT_RATIO_DATA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DXVAHD_STREAM_STATE_ASPECT_RATIO_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DXVAHD_STREAM_STATE_ASPECT_RATIO_DATA {
@@ -12317,6 +12616,7 @@ impl ::core::fmt::Debug for DXVAHD_STREAM_STATE_D3DFORMAT_DATA {
 #[cfg(feature = "Win32_Graphics_Direct3D9")]
 unsafe impl ::windows::core::Abi for DXVAHD_STREAM_STATE_D3DFORMAT_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Direct3D9")]
 impl ::core::cmp::PartialEq for DXVAHD_STREAM_STATE_D3DFORMAT_DATA {
@@ -12356,6 +12656,7 @@ impl ::core::fmt::Debug for DXVAHD_STREAM_STATE_DESTINATION_RECT_DATA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DXVAHD_STREAM_STATE_DESTINATION_RECT_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DXVAHD_STREAM_STATE_DESTINATION_RECT_DATA {
@@ -12395,6 +12696,7 @@ impl ::core::fmt::Debug for DXVAHD_STREAM_STATE_FILTER_DATA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DXVAHD_STREAM_STATE_FILTER_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DXVAHD_STREAM_STATE_FILTER_DATA {
@@ -12428,6 +12730,7 @@ impl ::core::fmt::Debug for DXVAHD_STREAM_STATE_FRAME_FORMAT_DATA {
 }
 unsafe impl ::windows::core::Abi for DXVAHD_STREAM_STATE_FRAME_FORMAT_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DXVAHD_STREAM_STATE_FRAME_FORMAT_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -12453,6 +12756,7 @@ impl ::core::clone::Clone for DXVAHD_STREAM_STATE_INPUT_COLOR_SPACE_DATA {
 }
 unsafe impl ::windows::core::Abi for DXVAHD_STREAM_STATE_INPUT_COLOR_SPACE_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DXVAHD_STREAM_STATE_INPUT_COLOR_SPACE_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -12479,6 +12783,7 @@ impl ::core::clone::Clone for DXVAHD_STREAM_STATE_INPUT_COLOR_SPACE_DATA_0 {
 }
 unsafe impl ::windows::core::Abi for DXVAHD_STREAM_STATE_INPUT_COLOR_SPACE_DATA_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DXVAHD_STREAM_STATE_INPUT_COLOR_SPACE_DATA_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -12509,6 +12814,7 @@ impl ::core::fmt::Debug for DXVAHD_STREAM_STATE_INPUT_COLOR_SPACE_DATA_0_0 {
 }
 unsafe impl ::windows::core::Abi for DXVAHD_STREAM_STATE_INPUT_COLOR_SPACE_DATA_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DXVAHD_STREAM_STATE_INPUT_COLOR_SPACE_DATA_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -12546,6 +12852,7 @@ impl ::core::fmt::Debug for DXVAHD_STREAM_STATE_LUMA_KEY_DATA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DXVAHD_STREAM_STATE_LUMA_KEY_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DXVAHD_STREAM_STATE_LUMA_KEY_DATA {
@@ -12586,6 +12893,7 @@ impl ::core::fmt::Debug for DXVAHD_STREAM_STATE_OUTPUT_RATE_DATA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DXVAHD_STREAM_STATE_OUTPUT_RATE_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DXVAHD_STREAM_STATE_OUTPUT_RATE_DATA {
@@ -12620,6 +12928,7 @@ impl ::core::fmt::Debug for DXVAHD_STREAM_STATE_PALETTE_DATA {
 }
 unsafe impl ::windows::core::Abi for DXVAHD_STREAM_STATE_PALETTE_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DXVAHD_STREAM_STATE_PALETTE_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -12652,6 +12961,7 @@ impl ::core::fmt::Debug for DXVAHD_STREAM_STATE_PRIVATE_DATA {
 }
 unsafe impl ::windows::core::Abi for DXVAHD_STREAM_STATE_PRIVATE_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DXVAHD_STREAM_STATE_PRIVATE_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -12691,6 +13001,7 @@ impl ::core::fmt::Debug for DXVAHD_STREAM_STATE_PRIVATE_IVTC_DATA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DXVAHD_STREAM_STATE_PRIVATE_IVTC_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DXVAHD_STREAM_STATE_PRIVATE_IVTC_DATA {
@@ -12730,6 +13041,7 @@ impl ::core::fmt::Debug for DXVAHD_STREAM_STATE_SOURCE_RECT_DATA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DXVAHD_STREAM_STATE_SOURCE_RECT_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DXVAHD_STREAM_STATE_SOURCE_RECT_DATA {
@@ -12768,6 +13080,7 @@ impl ::core::default::Default for DXVAHD_SURFACE_TYPE {
 }
 unsafe impl ::windows::core::Abi for DXVAHD_SURFACE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXVAHD_SURFACE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12797,6 +13110,7 @@ impl ::core::fmt::Debug for DXVAHD_VPCAPS {
 }
 unsafe impl ::windows::core::Abi for DXVAHD_VPCAPS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DXVAHD_VPCAPS {
     fn eq(&self, other: &Self) -> bool {
@@ -12854,6 +13168,7 @@ impl ::core::fmt::Debug for DXVAHD_VPDEVCAPS {
 #[cfg(feature = "Win32_Graphics_Direct3D9")]
 unsafe impl ::windows::core::Abi for DXVAHD_VPDEVCAPS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Direct3D9")]
 impl ::core::cmp::PartialEq for DXVAHD_VPDEVCAPS {
@@ -12894,6 +13209,7 @@ impl ::core::fmt::Debug for DXVAUncompDataInfo {
 #[cfg(feature = "Win32_Graphics_Direct3D9")]
 unsafe impl ::windows::core::Abi for DXVAUncompDataInfo {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Direct3D9")]
 impl ::core::cmp::PartialEq for DXVAUncompDataInfo {
@@ -12930,6 +13246,7 @@ impl ::core::fmt::Debug for DXVA_AYUVsample2 {
 }
 unsafe impl ::windows::core::Abi for DXVA_AYUVsample2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DXVA_AYUVsample2 {
     fn eq(&self, other: &Self) -> bool {
@@ -12964,6 +13281,7 @@ impl ::core::clone::Clone for DXVA_BufferDescription {
 }
 unsafe impl ::windows::core::Abi for DXVA_BufferDescription {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DXVA_BufferDescription {
     fn eq(&self, other: &Self) -> bool {
@@ -12998,6 +13316,7 @@ impl ::core::fmt::Debug for DXVA_COPPCommand {
 }
 unsafe impl ::windows::core::Abi for DXVA_COPPCommand {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DXVA_COPPCommand {
     fn eq(&self, other: &Self) -> bool {
@@ -13028,6 +13347,7 @@ impl ::core::fmt::Debug for DXVA_COPPSignature {
 }
 unsafe impl ::windows::core::Abi for DXVA_COPPSignature {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DXVA_COPPSignature {
     fn eq(&self, other: &Self) -> bool {
@@ -13062,6 +13382,7 @@ impl ::core::fmt::Debug for DXVA_COPPStatusInput {
 }
 unsafe impl ::windows::core::Abi for DXVA_COPPStatusInput {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DXVA_COPPStatusInput {
     fn eq(&self, other: &Self) -> bool {
@@ -13094,6 +13415,7 @@ impl ::core::fmt::Debug for DXVA_COPPStatusOutput {
 }
 unsafe impl ::windows::core::Abi for DXVA_COPPStatusOutput {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DXVA_COPPStatusOutput {
     fn eq(&self, other: &Self) -> bool {
@@ -13135,6 +13457,7 @@ impl ::core::clone::Clone for DXVA_ConfigPictureDecode {
 }
 unsafe impl ::windows::core::Abi for DXVA_ConfigPictureDecode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DXVA_ConfigPictureDecode {
     fn eq(&self, other: &Self) -> bool {
@@ -13177,6 +13500,7 @@ impl ::core::fmt::Debug for DXVA_DeinterlaceBlt {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DXVA_DeinterlaceBlt {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DXVA_DeinterlaceBlt {
@@ -13223,6 +13547,7 @@ impl ::core::fmt::Debug for DXVA_DeinterlaceBltEx {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DXVA_DeinterlaceBltEx {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DXVA_DeinterlaceBltEx {
@@ -13274,6 +13599,7 @@ impl ::core::fmt::Debug for DXVA_DeinterlaceBltEx32 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DXVA_DeinterlaceBltEx32 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 #[cfg(feature = "Win32_Foundation")]
@@ -13322,6 +13648,7 @@ impl ::core::fmt::Debug for DXVA_DeinterlaceCaps {
 #[cfg(feature = "Win32_Graphics_Direct3D9")]
 unsafe impl ::windows::core::Abi for DXVA_DeinterlaceCaps {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Direct3D9")]
 impl ::core::cmp::PartialEq for DXVA_DeinterlaceCaps {
@@ -13357,6 +13684,7 @@ impl ::core::fmt::Debug for DXVA_DeinterlaceQueryAvailableModes {
 }
 unsafe impl ::windows::core::Abi for DXVA_DeinterlaceQueryAvailableModes {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DXVA_DeinterlaceQueryAvailableModes {
     fn eq(&self, other: &Self) -> bool {
@@ -13394,6 +13722,7 @@ impl ::core::fmt::Debug for DXVA_DeinterlaceQueryModeCaps {
 #[cfg(feature = "Win32_Graphics_Direct3D9")]
 unsafe impl ::windows::core::Abi for DXVA_DeinterlaceQueryModeCaps {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Direct3D9")]
 impl ::core::cmp::PartialEq for DXVA_DeinterlaceQueryModeCaps {
@@ -13444,6 +13773,7 @@ impl ::core::default::Default for DXVA_DeinterlaceTech {
 }
 unsafe impl ::windows::core::Abi for DXVA_DeinterlaceTech {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXVA_DeinterlaceTech {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13477,6 +13807,7 @@ impl ::core::default::Default for DXVA_DestinationFlags {
 }
 unsafe impl ::windows::core::Abi for DXVA_DestinationFlags {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXVA_DestinationFlags {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13501,6 +13832,7 @@ impl ::core::fmt::Debug for DXVA_ExtendedFormat {
 }
 unsafe impl ::windows::core::Abi for DXVA_ExtendedFormat {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DXVA_ExtendedFormat {
     fn eq(&self, other: &Self) -> bool {
@@ -13532,6 +13864,7 @@ impl ::core::fmt::Debug for DXVA_Frequency {
 }
 unsafe impl ::windows::core::Abi for DXVA_Frequency {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DXVA_Frequency {
     fn eq(&self, other: &Self) -> bool {
@@ -13577,6 +13910,7 @@ impl ::core::default::Default for DXVA_NominalRange {
 }
 unsafe impl ::windows::core::Abi for DXVA_NominalRange {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXVA_NominalRange {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13631,6 +13965,7 @@ impl ::core::clone::Clone for DXVA_PictureParameters {
 }
 unsafe impl ::windows::core::Abi for DXVA_PictureParameters {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DXVA_PictureParameters {
     fn eq(&self, other: &Self) -> bool {
@@ -13673,6 +14008,7 @@ impl ::core::fmt::Debug for DXVA_ProcAmpControlBlt {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DXVA_ProcAmpControlBlt {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DXVA_ProcAmpControlBlt {
@@ -13715,6 +14051,7 @@ impl ::core::fmt::Debug for DXVA_ProcAmpControlCaps {
 #[cfg(feature = "Win32_Graphics_Direct3D9")]
 unsafe impl ::windows::core::Abi for DXVA_ProcAmpControlCaps {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Direct3D9")]
 impl ::core::cmp::PartialEq for DXVA_ProcAmpControlCaps {
@@ -13757,6 +14094,7 @@ impl ::core::default::Default for DXVA_ProcAmpControlProp {
 }
 unsafe impl ::windows::core::Abi for DXVA_ProcAmpControlProp {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXVA_ProcAmpControlProp {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13788,6 +14126,7 @@ impl ::core::fmt::Debug for DXVA_ProcAmpControlQueryRange {
 #[cfg(feature = "Win32_Graphics_Direct3D9")]
 unsafe impl ::windows::core::Abi for DXVA_ProcAmpControlQueryRange {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Direct3D9")]
 impl ::core::cmp::PartialEq for DXVA_ProcAmpControlQueryRange {
@@ -13830,6 +14169,7 @@ impl ::core::default::Default for DXVA_SampleFlags {
 }
 unsafe impl ::windows::core::Abi for DXVA_SampleFlags {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXVA_SampleFlags {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13871,6 +14211,7 @@ impl ::core::default::Default for DXVA_SampleFormat {
 }
 unsafe impl ::windows::core::Abi for DXVA_SampleFormat {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXVA_SampleFormat {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13916,6 +14257,7 @@ impl ::core::default::Default for DXVA_VideoChromaSubsampling {
 }
 unsafe impl ::windows::core::Abi for DXVA_VideoChromaSubsampling {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXVA_VideoChromaSubsampling {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13951,6 +14293,7 @@ impl ::core::fmt::Debug for DXVA_VideoDesc {
 #[cfg(feature = "Win32_Graphics_Direct3D9")]
 unsafe impl ::windows::core::Abi for DXVA_VideoDesc {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Direct3D9")]
 impl ::core::cmp::PartialEq for DXVA_VideoDesc {
@@ -13997,6 +14340,7 @@ impl ::core::default::Default for DXVA_VideoLighting {
 }
 unsafe impl ::windows::core::Abi for DXVA_VideoLighting {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXVA_VideoLighting {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14042,6 +14386,7 @@ impl ::core::default::Default for DXVA_VideoPrimaries {
 }
 unsafe impl ::windows::core::Abi for DXVA_VideoPrimaries {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXVA_VideoPrimaries {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14085,6 +14430,7 @@ impl ::core::default::Default for DXVA_VideoProcessCaps {
 }
 unsafe impl ::windows::core::Abi for DXVA_VideoProcessCaps {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXVA_VideoProcessCaps {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14112,6 +14458,7 @@ impl ::core::fmt::Debug for DXVA_VideoPropertyRange {
 }
 unsafe impl ::windows::core::Abi for DXVA_VideoPropertyRange {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DXVA_VideoPropertyRange {
     fn eq(&self, other: &Self) -> bool {
@@ -14145,6 +14492,7 @@ impl ::core::fmt::Debug for DXVA_VideoSample {
 }
 unsafe impl ::windows::core::Abi for DXVA_VideoSample {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DXVA_VideoSample {
     fn eq(&self, other: &Self) -> bool {
@@ -14194,6 +14542,7 @@ impl ::core::fmt::Debug for DXVA_VideoSample2 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DXVA_VideoSample2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 #[cfg(feature = "Win32_Foundation")]
@@ -14247,6 +14596,7 @@ impl ::core::fmt::Debug for DXVA_VideoSample2 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DXVA_VideoSample2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 #[cfg(feature = "Win32_Foundation")]
@@ -14300,6 +14650,7 @@ impl ::core::fmt::Debug for DXVA_VideoSample32 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DXVA_VideoSample32 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 #[cfg(feature = "Win32_Foundation")]
@@ -14357,6 +14708,7 @@ impl ::core::default::Default for DXVA_VideoTransferFunction {
 }
 unsafe impl ::windows::core::Abi for DXVA_VideoTransferFunction {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXVA_VideoTransferFunction {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14392,6 +14744,7 @@ impl ::core::default::Default for DXVA_VideoTransferMatrix {
 }
 unsafe impl ::windows::core::Abi for DXVA_VideoTransferMatrix {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXVA_VideoTransferMatrix {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14428,6 +14781,7 @@ impl ::core::default::Default for DeviceStreamState {
 }
 unsafe impl ::windows::core::Abi for DeviceStreamState {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DeviceStreamState {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14454,6 +14808,7 @@ impl ::core::fmt::Debug for DigitalWindowSetting {
 }
 unsafe impl ::windows::core::Abi for DigitalWindowSetting {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DigitalWindowSetting {
     fn eq(&self, other: &Self) -> bool {
@@ -14491,6 +14846,7 @@ impl ::core::default::Default for EAllocationType {
 }
 unsafe impl ::windows::core::Abi for EAllocationType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EAllocationType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14518,6 +14874,7 @@ impl ::core::default::Default for EVRFilterConfigPrefs {
 }
 unsafe impl ::windows::core::Abi for EVRFilterConfigPrefs {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EVRFilterConfigPrefs {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14557,6 +14914,7 @@ impl ::core::default::Default for FILE_ACCESSMODE {
 }
 unsafe impl ::windows::core::Abi for FILE_ACCESSMODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FILE_ACCESSMODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14590,6 +14948,7 @@ impl ::core::default::Default for FILE_OPENMODE {
 }
 unsafe impl ::windows::core::Abi for FILE_OPENMODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FILE_OPENMODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14602,6 +14961,11 @@ pub const GUID_PlayToService: ::windows::core::GUID = ::windows::core::GUID::fro
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IAdvancedMediaCapture(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAdvancedMediaCapture {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAdvancedMediaCapture {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetAdvancedMediaCaptureSettings(&self) -> ::windows::core::Result<IAdvancedMediaCaptureSettings> {
@@ -14629,11 +14993,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAdva
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAdvancedMediaCapture {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAdvancedMediaCapture {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -14658,6 +15017,11 @@ pub struct IAdvancedMediaCapture_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IAdvancedMediaCaptureInitializationSettings(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAdvancedMediaCaptureInitializationSettings {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAdvancedMediaCaptureInitializationSettings {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn SetDirectxDeviceManager<'a, Param0: ::windows::core::IntoParam<'a, IMFDXGIDeviceManager>>(&self, value: Param0) -> ::windows::core::Result<()> {
@@ -14684,11 +15048,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAdva
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAdvancedMediaCaptureInitializationSettings {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAdvancedMediaCaptureInitializationSettings {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -14713,6 +15072,11 @@ pub struct IAdvancedMediaCaptureInitializationSettings_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IAdvancedMediaCaptureSettings(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAdvancedMediaCaptureSettings {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAdvancedMediaCaptureSettings {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetDirectxDeviceManager(&self) -> ::windows::core::Result<IMFDXGIDeviceManager> {
@@ -14740,11 +15104,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAdva
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAdvancedMediaCaptureSettings {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAdvancedMediaCaptureSettings {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -14769,6 +15128,11 @@ pub struct IAdvancedMediaCaptureSettings_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IAudioSourceProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAudioSourceProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAudioSourceProvider {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn ProvideInput(&self, dwsamplecount: u32, pdwchannelcount: *mut u32, pinterleavedaudiodata: *mut f32) -> ::windows::core::Result<()> {
@@ -14795,11 +15159,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAudi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAudioSourceProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAudioSourceProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -14824,6 +15183,11 @@ pub struct IAudioSourceProvider_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IClusterDetector(::windows::core::IUnknown);
+impl ::core::clone::Clone for IClusterDetector {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IClusterDetector {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn Initialize(&self, wbaseentrylevel: u16, wclusterentrylevel: u16) -> ::windows::core::Result<()> {
@@ -14855,11 +15219,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IClus
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IClusterDetector {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IClusterDetector {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -14885,6 +15244,11 @@ pub struct IClusterDetector_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct ICodecAPI(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICodecAPI {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ICodecAPI {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn IsSupported(&self, api: *const ::windows::core::GUID) -> ::windows::core::Result<()> {
@@ -14978,11 +15342,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ICode
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ICodecAPI {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ICodecAPI {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -15049,6 +15408,12 @@ pub struct ICodecAPI_Vtbl {
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 #[repr(transparent)]
 pub struct ID3D12VideoDecodeCommandList(::windows::core::IUnknown);
+#[cfg(feature = "Win32_Graphics_Direct3D12")]
+impl ::core::clone::Clone for ID3D12VideoDecodeCommandList {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ID3D12VideoDecodeCommandList {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_Graphics_Direct3D12\"`*"]
@@ -15244,12 +15609,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::Graphics::Direct3D12::ID3D
     }
 }
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
-impl ::core::clone::Clone for ID3D12VideoDecodeCommandList {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ::core::cmp::PartialEq for ID3D12VideoDecodeCommandList {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -15319,6 +15678,12 @@ pub struct ID3D12VideoDecodeCommandList_Vtbl {
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 #[repr(transparent)]
 pub struct ID3D12VideoDecodeCommandList1(::windows::core::IUnknown);
+#[cfg(feature = "Win32_Graphics_Direct3D12")]
+impl ::core::clone::Clone for ID3D12VideoDecodeCommandList1 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ID3D12VideoDecodeCommandList1 {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_Graphics_Direct3D12\"`*"]
@@ -15543,12 +15908,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D12VideoDecodeCommandList> for &'a ID
     }
 }
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
-impl ::core::clone::Clone for ID3D12VideoDecodeCommandList1 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ::core::cmp::PartialEq for ID3D12VideoDecodeCommandList1 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -15581,6 +15940,12 @@ pub struct ID3D12VideoDecodeCommandList1_Vtbl {
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 #[repr(transparent)]
 pub struct ID3D12VideoDecodeCommandList2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_Graphics_Direct3D12")]
+impl ::core::clone::Clone for ID3D12VideoDecodeCommandList2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ID3D12VideoDecodeCommandList2 {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_Graphics_Direct3D12\"`*"]
@@ -15844,12 +16209,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D12VideoDecodeCommandList1> for &'a I
     }
 }
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
-impl ::core::clone::Clone for ID3D12VideoDecodeCommandList2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ::core::cmp::PartialEq for ID3D12VideoDecodeCommandList2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -15890,6 +16249,12 @@ pub struct ID3D12VideoDecodeCommandList2_Vtbl {
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 #[repr(transparent)]
 pub struct ID3D12VideoDecoder(::windows::core::IUnknown);
+#[cfg(feature = "Win32_Graphics_Direct3D12")]
+impl ::core::clone::Clone for ID3D12VideoDecoder {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ID3D12VideoDecoder {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_Graphics_Direct3D12\"`*"]
@@ -16021,12 +16386,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::Graphics::Direct3D12::ID3D
     }
 }
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
-impl ::core::clone::Clone for ID3D12VideoDecoder {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ::core::cmp::PartialEq for ID3D12VideoDecoder {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -16056,6 +16415,12 @@ pub struct ID3D12VideoDecoder_Vtbl {
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 #[repr(transparent)]
 pub struct ID3D12VideoDecoder1(::windows::core::IUnknown);
+#[cfg(feature = "Win32_Graphics_Direct3D12")]
+impl ::core::clone::Clone for ID3D12VideoDecoder1 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ID3D12VideoDecoder1 {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_Graphics_Direct3D12\"`*"]
@@ -16215,12 +16580,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D12VideoDecoder> for &'a ID3D12VideoD
     }
 }
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
-impl ::core::clone::Clone for ID3D12VideoDecoder1 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ::core::cmp::PartialEq for ID3D12VideoDecoder1 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -16250,6 +16609,12 @@ pub struct ID3D12VideoDecoder1_Vtbl {
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 #[repr(transparent)]
 pub struct ID3D12VideoDecoderHeap(::windows::core::IUnknown);
+#[cfg(feature = "Win32_Graphics_Direct3D12")]
+impl ::core::clone::Clone for ID3D12VideoDecoderHeap {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ID3D12VideoDecoderHeap {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_Graphics_Direct3D12\"`*"]
@@ -16382,12 +16747,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::Graphics::Direct3D12::ID3D
     }
 }
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
-impl ::core::clone::Clone for ID3D12VideoDecoderHeap {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ::core::cmp::PartialEq for ID3D12VideoDecoderHeap {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -16420,6 +16779,12 @@ pub struct ID3D12VideoDecoderHeap_Vtbl {
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 #[repr(transparent)]
 pub struct ID3D12VideoDecoderHeap1(::windows::core::IUnknown);
+#[cfg(feature = "Win32_Graphics_Direct3D12")]
+impl ::core::clone::Clone for ID3D12VideoDecoderHeap1 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ID3D12VideoDecoderHeap1 {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_Graphics_Direct3D12\"`*"]
@@ -16580,12 +16945,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D12VideoDecoderHeap> for &'a ID3D12Vi
     }
 }
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
-impl ::core::clone::Clone for ID3D12VideoDecoderHeap1 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ::core::cmp::PartialEq for ID3D12VideoDecoderHeap1 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -16614,6 +16973,11 @@ pub struct ID3D12VideoDecoderHeap1_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct ID3D12VideoDevice(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D12VideoDevice {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D12VideoDevice {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn CheckFeatureSupport(&self, featurevideo: D3D12_FEATURE_VIDEO, pfeaturesupportdata: *mut ::core::ffi::c_void, featuresupportdatasize: u32) -> ::windows::core::Result<()> {
@@ -16657,11 +17021,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ID3D1
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D12VideoDevice {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D12VideoDevice {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -16695,6 +17054,11 @@ pub struct ID3D12VideoDevice_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct ID3D12VideoDevice1(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D12VideoDevice1 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D12VideoDevice1 {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn CheckFeatureSupport(&self, featurevideo: D3D12_FEATURE_VIDEO, pfeaturesupportdata: *mut ::core::ffi::c_void, featuresupportdatasize: u32) -> ::windows::core::Result<()> {
@@ -16770,11 +17134,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D12VideoDevice> for &'a ID3D12VideoDe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D12VideoDevice1 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D12VideoDevice1 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -16806,6 +17165,11 @@ pub struct ID3D12VideoDevice1_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct ID3D12VideoDevice2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D12VideoDevice2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D12VideoDevice2 {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn CheckFeatureSupport(&self, featurevideo: D3D12_FEATURE_VIDEO, pfeaturesupportdata: *mut ::core::ffi::c_void, featuresupportdatasize: u32) -> ::windows::core::Result<()> {
@@ -16930,11 +17294,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D12VideoDevice1> for &'a ID3D12VideoD
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D12VideoDevice2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D12VideoDevice2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -16978,6 +17337,11 @@ pub struct ID3D12VideoDevice2_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct ID3D12VideoDevice3(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D12VideoDevice3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D12VideoDevice3 {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn CheckFeatureSupport(&self, featurevideo: D3D12_FEATURE_VIDEO, pfeaturesupportdata: *mut ::core::ffi::c_void, featuresupportdatasize: u32) -> ::windows::core::Result<()> {
@@ -17133,11 +17497,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D12VideoDevice2> for &'a ID3D12VideoD
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D12VideoDevice3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D12VideoDevice3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -17167,6 +17526,12 @@ pub struct ID3D12VideoDevice3_Vtbl {
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 #[repr(transparent)]
 pub struct ID3D12VideoEncodeCommandList(::windows::core::IUnknown);
+#[cfg(feature = "Win32_Graphics_Direct3D12")]
+impl ::core::clone::Clone for ID3D12VideoEncodeCommandList {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ID3D12VideoEncodeCommandList {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_Graphics_Direct3D12\"`*"]
@@ -17372,12 +17737,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::Graphics::Direct3D12::ID3D
     }
 }
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
-impl ::core::clone::Clone for ID3D12VideoEncodeCommandList {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ::core::cmp::PartialEq for ID3D12VideoEncodeCommandList {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -17455,6 +17814,12 @@ pub struct ID3D12VideoEncodeCommandList_Vtbl {
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 #[repr(transparent)]
 pub struct ID3D12VideoEncodeCommandList1(::windows::core::IUnknown);
+#[cfg(feature = "Win32_Graphics_Direct3D12")]
+impl ::core::clone::Clone for ID3D12VideoEncodeCommandList1 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ID3D12VideoEncodeCommandList1 {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_Graphics_Direct3D12\"`*"]
@@ -17694,12 +18059,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D12VideoEncodeCommandList> for &'a ID
     }
 }
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
-impl ::core::clone::Clone for ID3D12VideoEncodeCommandList1 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ::core::cmp::PartialEq for ID3D12VideoEncodeCommandList1 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -17736,6 +18095,12 @@ pub struct ID3D12VideoEncodeCommandList1_Vtbl {
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 #[repr(transparent)]
 pub struct ID3D12VideoEncodeCommandList2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_Graphics_Direct3D12")]
+impl ::core::clone::Clone for ID3D12VideoEncodeCommandList2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ID3D12VideoEncodeCommandList2 {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_Graphics_Direct3D12\"`*"]
@@ -18009,12 +18374,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D12VideoEncodeCommandList1> for &'a I
     }
 }
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
-impl ::core::clone::Clone for ID3D12VideoEncodeCommandList2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ::core::cmp::PartialEq for ID3D12VideoEncodeCommandList2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -18051,6 +18410,12 @@ pub struct ID3D12VideoEncodeCommandList2_Vtbl {
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 #[repr(transparent)]
 pub struct ID3D12VideoEncoder(::windows::core::IUnknown);
+#[cfg(feature = "Win32_Graphics_Direct3D12")]
+impl ::core::clone::Clone for ID3D12VideoEncoder {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ID3D12VideoEncoder {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_Graphics_Direct3D12\"`*"]
@@ -18205,12 +18570,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::Graphics::Direct3D12::ID3D
     }
 }
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
-impl ::core::clone::Clone for ID3D12VideoEncoder {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ::core::cmp::PartialEq for ID3D12VideoEncoder {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -18249,6 +18608,12 @@ pub struct ID3D12VideoEncoder_Vtbl {
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 #[repr(transparent)]
 pub struct ID3D12VideoEncoderHeap(::windows::core::IUnknown);
+#[cfg(feature = "Win32_Graphics_Direct3D12")]
+impl ::core::clone::Clone for ID3D12VideoEncoderHeap {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ID3D12VideoEncoderHeap {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_Graphics_Direct3D12\"`*"]
@@ -18402,12 +18767,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::Graphics::Direct3D12::ID3D
     }
 }
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
-impl ::core::clone::Clone for ID3D12VideoEncoderHeap {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ::core::cmp::PartialEq for ID3D12VideoEncoderHeap {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -18443,6 +18802,12 @@ pub struct ID3D12VideoEncoderHeap_Vtbl {
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 #[repr(transparent)]
 pub struct ID3D12VideoExtensionCommand(::windows::core::IUnknown);
+#[cfg(feature = "Win32_Graphics_Direct3D12")]
+impl ::core::clone::Clone for ID3D12VideoExtensionCommand {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ID3D12VideoExtensionCommand {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_Graphics_Direct3D12\"`*"]
@@ -18578,12 +18943,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::Graphics::Direct3D12::ID3D
     }
 }
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
-impl ::core::clone::Clone for ID3D12VideoExtensionCommand {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ::core::cmp::PartialEq for ID3D12VideoExtensionCommand {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -18614,6 +18973,12 @@ pub struct ID3D12VideoExtensionCommand_Vtbl {
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 #[repr(transparent)]
 pub struct ID3D12VideoMotionEstimator(::windows::core::IUnknown);
+#[cfg(feature = "Win32_Graphics_Direct3D12")]
+impl ::core::clone::Clone for ID3D12VideoMotionEstimator {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ID3D12VideoMotionEstimator {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_Graphics_Direct3D12\"`*"]
@@ -18750,12 +19115,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::Graphics::Direct3D12::ID3D
     }
 }
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
-impl ::core::clone::Clone for ID3D12VideoMotionEstimator {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ::core::cmp::PartialEq for ID3D12VideoMotionEstimator {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -18789,6 +19148,12 @@ pub struct ID3D12VideoMotionEstimator_Vtbl {
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 #[repr(transparent)]
 pub struct ID3D12VideoMotionVectorHeap(::windows::core::IUnknown);
+#[cfg(feature = "Win32_Graphics_Direct3D12")]
+impl ::core::clone::Clone for ID3D12VideoMotionVectorHeap {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ID3D12VideoMotionVectorHeap {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_Graphics_Direct3D12\"`*"]
@@ -18925,12 +19290,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::Graphics::Direct3D12::ID3D
     }
 }
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
-impl ::core::clone::Clone for ID3D12VideoMotionVectorHeap {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ::core::cmp::PartialEq for ID3D12VideoMotionVectorHeap {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -18964,6 +19323,12 @@ pub struct ID3D12VideoMotionVectorHeap_Vtbl {
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 #[repr(transparent)]
 pub struct ID3D12VideoProcessCommandList(::windows::core::IUnknown);
+#[cfg(feature = "Win32_Graphics_Direct3D12")]
+impl ::core::clone::Clone for ID3D12VideoProcessCommandList {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ID3D12VideoProcessCommandList {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_Graphics_Direct3D12\"`*"]
@@ -19159,12 +19524,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::Graphics::Direct3D12::ID3D
     }
 }
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
-impl ::core::clone::Clone for ID3D12VideoProcessCommandList {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ::core::cmp::PartialEq for ID3D12VideoProcessCommandList {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -19234,6 +19593,12 @@ pub struct ID3D12VideoProcessCommandList_Vtbl {
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 #[repr(transparent)]
 pub struct ID3D12VideoProcessCommandList1(::windows::core::IUnknown);
+#[cfg(feature = "Win32_Graphics_Direct3D12")]
+impl ::core::clone::Clone for ID3D12VideoProcessCommandList1 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ID3D12VideoProcessCommandList1 {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_Graphics_Direct3D12\"`*"]
@@ -19458,12 +19823,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D12VideoProcessCommandList> for &'a I
     }
 }
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
-impl ::core::clone::Clone for ID3D12VideoProcessCommandList1 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ::core::cmp::PartialEq for ID3D12VideoProcessCommandList1 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -19496,6 +19855,12 @@ pub struct ID3D12VideoProcessCommandList1_Vtbl {
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 #[repr(transparent)]
 pub struct ID3D12VideoProcessCommandList2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_Graphics_Direct3D12")]
+impl ::core::clone::Clone for ID3D12VideoProcessCommandList2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ID3D12VideoProcessCommandList2 {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_Graphics_Direct3D12\"`*"]
@@ -19759,12 +20124,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D12VideoProcessCommandList1> for &'a 
     }
 }
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
-impl ::core::clone::Clone for ID3D12VideoProcessCommandList2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ::core::cmp::PartialEq for ID3D12VideoProcessCommandList2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -19805,6 +20164,12 @@ pub struct ID3D12VideoProcessCommandList2_Vtbl {
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 #[repr(transparent)]
 pub struct ID3D12VideoProcessor(::windows::core::IUnknown);
+#[cfg(feature = "Win32_Graphics_Direct3D12")]
+impl ::core::clone::Clone for ID3D12VideoProcessor {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ID3D12VideoProcessor {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_Graphics_Direct3D12\"`*"]
@@ -19950,12 +20315,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::Graphics::Direct3D12::ID3D
     }
 }
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
-impl ::core::clone::Clone for ID3D12VideoProcessor {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ::core::cmp::PartialEq for ID3D12VideoProcessor {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -19994,6 +20353,12 @@ pub struct ID3D12VideoProcessor_Vtbl {
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 #[repr(transparent)]
 pub struct ID3D12VideoProcessor1(::windows::core::IUnknown);
+#[cfg(feature = "Win32_Graphics_Direct3D12")]
+impl ::core::clone::Clone for ID3D12VideoProcessor1 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ID3D12VideoProcessor1 {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_Graphics_Direct3D12\"`*"]
@@ -20167,12 +20532,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D12VideoProcessor> for &'a ID3D12Vide
     }
 }
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
-impl ::core::clone::Clone for ID3D12VideoProcessor1 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ::core::cmp::PartialEq for ID3D12VideoProcessor1 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -20201,6 +20560,11 @@ pub struct ID3D12VideoProcessor1_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IDXVAHD_Device(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDXVAHD_Device {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDXVAHD_Device {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_Foundation\"`, `\"Win32_Graphics_Direct3D9\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Direct3D9"))]
@@ -20263,11 +20627,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDXVA
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDXVAHD_Device {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDXVAHD_Device {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -20314,6 +20673,11 @@ pub struct IDXVAHD_Device_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IDXVAHD_VideoProcessor(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDXVAHD_VideoProcessor {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDXVAHD_VideoProcessor {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn SetVideoProcessBltState(&self, state: DXVAHD_BLT_STATE, datasize: u32, pdata: *const ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -20357,11 +20721,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDXVA
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDXVAHD_VideoProcessor {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDXVAHD_VideoProcessor {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -20393,6 +20752,11 @@ pub struct IDXVAHD_VideoProcessor_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IDirect3D9ExOverlayExtension(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirect3D9ExOverlayExtension {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirect3D9ExOverlayExtension {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_Graphics_Direct3D9\"`*"]
     #[cfg(feature = "Win32_Graphics_Direct3D9")]
@@ -20418,11 +20782,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IDirect3D
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDirect3D9ExOverlayExtension {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IDirect3D9ExOverlayExtension {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IDirect3D9ExOverlayExtension {
@@ -20452,6 +20811,11 @@ pub struct IDirect3D9ExOverlayExtension_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IDirect3DAuthenticatedChannel9(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirect3DAuthenticatedChannel9 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirect3DAuthenticatedChannel9 {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetCertificateSize(&self, pcertificatesize: *mut u32) -> ::windows::core::Result<()> {
@@ -20495,11 +20859,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDire
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirect3DAuthenticatedChannel9 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirect3DAuthenticatedChannel9 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -20531,6 +20890,11 @@ pub struct IDirect3DAuthenticatedChannel9_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IDirect3DCryptoSession9(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirect3DCryptoSession9 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirect3DCryptoSession9 {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetCertificateSize(&self, pcertificatesize: *mut u32) -> ::windows::core::Result<()> {
@@ -20592,11 +20956,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDire
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirect3DCryptoSession9 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirect3DCryptoSession9 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -20638,6 +20997,11 @@ pub struct IDirect3DCryptoSession9_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IDirect3DDevice9Video(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirect3DDevice9Video {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirect3DDevice9Video {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetContentProtectionCaps(&self, pcryptotype: *const ::windows::core::GUID, pdecodeprofile: *const ::windows::core::GUID, pcaps: *mut D3DCONTENTPROTECTIONCAPS) -> ::windows::core::Result<()> {
@@ -20674,11 +21038,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDire
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirect3DDevice9Video {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirect3DDevice9Video {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -20711,6 +21070,11 @@ pub struct IDirect3DDevice9Video_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IDirect3DDeviceManager9(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirect3DDeviceManager9 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirect3DDeviceManager9 {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_Graphics_Direct3D9\"`*"]
     #[cfg(feature = "Win32_Graphics_Direct3D9")]
@@ -20769,11 +21133,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDire
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirect3DDeviceManager9 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirect3DDeviceManager9 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -20825,6 +21184,11 @@ pub struct IDirect3DDeviceManager9_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IDirectXVideoAccelerationService(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectXVideoAccelerationService {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirectXVideoAccelerationService {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_Foundation\"`, `\"Win32_Graphics_Direct3D9\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Direct3D9"))]
@@ -20850,11 +21214,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IDirectXV
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDirectXVideoAccelerationService {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IDirectXVideoAccelerationService {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IDirectXVideoAccelerationService {
@@ -20884,6 +21243,11 @@ pub struct IDirectXVideoAccelerationService_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IDirectXVideoDecoder(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectXVideoDecoder {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirectXVideoDecoder {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetVideoDecoderService(&self) -> ::windows::core::Result<IDirectXVideoDecoderService> {
@@ -20938,11 +21302,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDire
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirectXVideoDecoder {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirectXVideoDecoder {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -20982,6 +21341,11 @@ pub struct IDirectXVideoDecoder_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IDirectXVideoDecoderService(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectXVideoDecoderService {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirectXVideoDecoderService {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_Foundation\"`, `\"Win32_Graphics_Direct3D9\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Direct3D9"))]
@@ -21049,11 +21413,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDirectXVideoAccelerationService> for &'
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirectXVideoDecoderService {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirectXVideoDecoderService {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -21090,6 +21449,11 @@ pub struct IDirectXVideoDecoderService_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IDirectXVideoMemoryConfiguration(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectXVideoMemoryConfiguration {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirectXVideoMemoryConfiguration {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetAvailableSurfaceTypeByIndex(&self, dwtypeindex: u32) -> ::windows::core::Result<DXVA2_SurfaceType> {
@@ -21121,11 +21485,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDire
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirectXVideoMemoryConfiguration {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirectXVideoMemoryConfiguration {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -21151,6 +21510,11 @@ pub struct IDirectXVideoMemoryConfiguration_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IDirectXVideoProcessor(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectXVideoProcessor {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirectXVideoProcessor {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetVideoProcessorService(&self) -> ::windows::core::Result<IDirectXVideoProcessorService> {
@@ -21204,11 +21568,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDire
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirectXVideoProcessor {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirectXVideoProcessor {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -21247,6 +21606,11 @@ pub struct IDirectXVideoProcessor_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IDirectXVideoProcessorService(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectXVideoProcessorService {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirectXVideoProcessorService {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_Foundation\"`, `\"Win32_Graphics_Direct3D9\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Direct3D9"))]
@@ -21337,11 +21701,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDirectXVideoAccelerationService> for &'
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirectXVideoProcessorService {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirectXVideoProcessorService {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -21394,6 +21753,11 @@ pub struct IDirectXVideoProcessorService_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IEVRFilterConfig(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEVRFilterConfig {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEVRFilterConfig {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn SetNumberOfStreams(&self, dwmaxstreams: u32) -> ::windows::core::Result<()> {
@@ -21425,11 +21789,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEVRF
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEVRFilterConfig {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEVRFilterConfig {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -21455,6 +21814,11 @@ pub struct IEVRFilterConfig_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IEVRFilterConfigEx(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEVRFilterConfigEx {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEVRFilterConfigEx {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn SetNumberOfStreams(&self, dwmaxstreams: u32) -> ::windows::core::Result<()> {
@@ -21515,11 +21879,6 @@ impl<'a> ::windows::core::IntoParam<'a, IEVRFilterConfig> for &'a IEVRFilterConf
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEVRFilterConfigEx {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEVRFilterConfigEx {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -21545,6 +21904,11 @@ pub struct IEVRFilterConfigEx_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IEVRTrustedVideoPlugin(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEVRTrustedVideoPlugin {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEVRTrustedVideoPlugin {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -21588,11 +21952,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEVRT
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEVRTrustedVideoPlugin {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEVRTrustedVideoPlugin {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -21629,6 +21988,11 @@ pub struct IEVRTrustedVideoPlugin_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IEVRVideoStreamControl(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEVRVideoStreamControl {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEVRVideoStreamControl {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -21662,11 +22026,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEVRV
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEVRVideoStreamControl {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEVRVideoStreamControl {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -21698,6 +22057,11 @@ pub struct IEVRVideoStreamControl_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IFileClient(::windows::core::IUnknown);
+impl ::core::clone::Clone for IFileClient {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IFileClient {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetObjectDiskSize(&self, pqwsize: *mut u64) -> ::windows::core::Result<()> {
@@ -21732,11 +22096,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IFile
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IFileClient {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IFileClient {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -21763,6 +22122,11 @@ pub struct IFileClient_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IFileIo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IFileIo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IFileIo {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn Initialize<'a, Param2: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, eaccessmode: FILE_ACCESSMODE, eopenmode: FILE_OPENMODE, pwszfilename: Param2) -> ::windows::core::Result<()> {
@@ -21826,11 +22190,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IFile
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IFileIo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IFileIo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -21867,6 +22226,11 @@ pub struct IFileIo_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMF2DBuffer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMF2DBuffer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMF2DBuffer {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn Lock2D(&self, ppbscanline0: *mut *mut u8, plpitch: *mut i32) -> ::windows::core::Result<()> {
@@ -21920,11 +22284,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMF2D
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMF2DBuffer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMF2DBuffer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -21958,6 +22317,11 @@ pub struct IMF2DBuffer_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMF2DBuffer2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMF2DBuffer2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMF2DBuffer2 {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn Lock2D(&self, ppbscanline0: *mut *mut u8, plpitch: *mut i32) -> ::windows::core::Result<()> {
@@ -22039,11 +22403,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMF2DBuffer> for &'a IMF2DBuffer2 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMF2DBuffer2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMF2DBuffer2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -22069,6 +22428,11 @@ pub struct IMF2DBuffer2_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFASFContentInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFASFContentInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFASFContentInfo {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetHeaderSize<'a, Param0: ::windows::core::IntoParam<'a, IMFMediaBuffer>>(&self, pistartofcontent: Param0) -> ::windows::core::Result<u64> {
@@ -22125,11 +22489,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFAS
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFASFContentInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFASFContentInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -22163,6 +22522,11 @@ pub struct IMFASFContentInfo_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFASFIndexer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFASFIndexer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFASFIndexer {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn SetFlags(&self, dwflags: u32) -> ::windows::core::Result<()> {
@@ -22244,11 +22608,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFAS
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFASFIndexer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFASFIndexer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -22294,6 +22653,11 @@ pub struct IMFASFIndexer_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFASFMultiplexer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFASFMultiplexer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFASFMultiplexer {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn Initialize<'a, Param0: ::windows::core::IntoParam<'a, IMFASFContentInfo>>(&self, picontentinfo: Param0) -> ::windows::core::Result<()> {
@@ -22354,11 +22718,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFAS
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFASFMultiplexer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFASFMultiplexer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -22391,6 +22750,11 @@ pub struct IMFASFMultiplexer_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFASFMutualExclusion(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFASFMutualExclusion {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFASFMutualExclusion {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetType(&self) -> ::windows::core::Result<::windows::core::GUID> {
@@ -22453,11 +22817,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFAS
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFASFMutualExclusion {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFASFMutualExclusion {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -22490,6 +22849,11 @@ pub struct IMFASFMutualExclusion_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFASFProfile(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFASFProfile {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFASFProfile {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com_StructuredStorage\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com_StructuredStorage"))]
@@ -22741,11 +23105,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMFAttributes> for &'a IMFASFProfile {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFASFProfile {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFASFProfile {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -22785,6 +23144,11 @@ pub struct IMFASFProfile_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFASFSplitter(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFASFSplitter {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFASFSplitter {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn Initialize<'a, Param0: ::windows::core::IntoParam<'a, IMFASFContentInfo>>(&self, picontentinfo: Param0) -> ::windows::core::Result<()> {
@@ -22845,11 +23209,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFAS
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFASFSplitter {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFASFSplitter {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -22882,6 +23241,11 @@ pub struct IMFASFSplitter_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFASFStreamConfig(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFASFStreamConfig {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFASFStreamConfig {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com_StructuredStorage\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com_StructuredStorage"))]
@@ -23104,11 +23468,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMFAttributes> for &'a IMFASFStreamConfi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFASFStreamConfig {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFASFStreamConfig {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -23142,6 +23501,11 @@ pub struct IMFASFStreamConfig_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFASFStreamPrioritization(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFASFStreamPrioritization {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFASFStreamPrioritization {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetStreamCount(&self) -> ::windows::core::Result<u32> {
@@ -23186,11 +23550,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFAS
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFASFStreamPrioritization {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFASFStreamPrioritization {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -23219,6 +23578,11 @@ pub struct IMFASFStreamPrioritization_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFASFStreamSelector(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFASFStreamSelector {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFASFStreamSelector {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetStreamCount(&self) -> ::windows::core::Result<u32> {
@@ -23307,11 +23671,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFAS
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFASFStreamSelector {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFASFStreamSelector {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -23349,6 +23708,11 @@ pub struct IMFASFStreamSelector_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFActivate(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFActivate {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFActivate {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com_StructuredStorage\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com_StructuredStorage"))]
@@ -23540,11 +23904,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMFAttributes> for &'a IMFActivate {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFActivate {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFActivate {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -23571,6 +23930,11 @@ pub struct IMFActivate_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFAsyncCallback(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFAsyncCallback {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFAsyncCallback {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetParameters(&self, pdwflags: *mut u32, pdwqueue: *mut u32) -> ::windows::core::Result<()> {
@@ -23601,11 +23965,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFAs
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFAsyncCallback {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFAsyncCallback {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -23631,6 +23990,11 @@ pub struct IMFAsyncCallback_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFAsyncCallbackLogging(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFAsyncCallbackLogging {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFAsyncCallbackLogging {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetParameters(&self, pdwflags: *mut u32, pdwqueue: *mut u32) -> ::windows::core::Result<()> {
@@ -23689,11 +24053,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMFAsyncCallback> for &'a IMFAsyncCallba
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFAsyncCallbackLogging {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFAsyncCallbackLogging {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -23719,6 +24078,11 @@ pub struct IMFAsyncCallbackLogging_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFAsyncResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFAsyncResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFAsyncResult {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetState(&self) -> ::windows::core::Result<::windows::core::IUnknown> {
@@ -23763,11 +24127,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFAs
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFAsyncResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFAsyncResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -23796,6 +24155,11 @@ pub struct IMFAsyncResult_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFAttributes(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFAttributes {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFAttributes {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com_StructuredStorage\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com_StructuredStorage"))]
@@ -23954,11 +24318,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFAt
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFAttributes {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFAttributes {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -24027,6 +24386,11 @@ pub struct IMFAttributes_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFAudioMediaType(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFAudioMediaType {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFAudioMediaType {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com_StructuredStorage\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com_StructuredStorage"))]
@@ -24254,11 +24618,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMFMediaType> for &'a IMFAudioMediaType 
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFAudioMediaType {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFAudioMediaType {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -24286,6 +24645,11 @@ pub struct IMFAudioMediaType_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFAudioPolicy(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFAudioPolicy {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFAudioPolicy {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn SetGroupingParam(&self, rguidclass: *const ::windows::core::GUID) -> ::windows::core::Result<()> {
@@ -24335,11 +24699,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFAu
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFAudioPolicy {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFAudioPolicy {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -24369,6 +24728,11 @@ pub struct IMFAudioPolicy_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFAudioStreamVolume(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFAudioStreamVolume {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFAudioStreamVolume {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetChannelCount(&self) -> ::windows::core::Result<u32> {
@@ -24413,11 +24777,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFAu
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFAudioStreamVolume {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFAudioStreamVolume {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -24446,6 +24805,11 @@ pub struct IMFAudioStreamVolume_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFBufferListNotify(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFBufferListNotify {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFBufferListNotify {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn OnAddSourceBuffer(&self) {
@@ -24476,11 +24840,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFBu
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFBufferListNotify {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFBufferListNotify {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -24506,6 +24865,11 @@ pub struct IMFBufferListNotify_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFByteStream(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFByteStream {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFByteStream {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetCapabilities(&self) -> ::windows::core::Result<u32> {
@@ -24597,11 +24961,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFBy
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFByteStream {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFByteStream {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -24643,6 +25002,11 @@ pub struct IMFByteStream_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFByteStreamBuffering(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFByteStreamBuffering {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFByteStreamBuffering {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn SetBufferingParams(&self, pparams: *const MFBYTESTREAM_BUFFERING_PARAMS) -> ::windows::core::Result<()> {
@@ -24678,11 +25042,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFBy
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFByteStreamBuffering {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFByteStreamBuffering {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -24712,6 +25071,11 @@ pub struct IMFByteStreamBuffering_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFByteStreamCacheControl(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFByteStreamCacheControl {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFByteStreamCacheControl {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn StopBackgroundTransfer(&self) -> ::windows::core::Result<()> {
@@ -24738,11 +25102,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFBy
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFByteStreamCacheControl {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFByteStreamCacheControl {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -24767,6 +25126,11 @@ pub struct IMFByteStreamCacheControl_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFByteStreamCacheControl2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFByteStreamCacheControl2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFByteStreamCacheControl2 {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn StopBackgroundTransfer(&self) -> ::windows::core::Result<()> {
@@ -24827,11 +25191,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMFByteStreamCacheControl> for &'a IMFBy
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFByteStreamCacheControl2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFByteStreamCacheControl2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -24861,6 +25220,11 @@ pub struct IMFByteStreamCacheControl2_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFByteStreamHandler(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFByteStreamHandler {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFByteStreamHandler {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_UI_Shell_PropertiesSystem\"`*"]
     #[cfg(feature = "Win32_UI_Shell_PropertiesSystem")]
@@ -24901,11 +25265,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFBy
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFByteStreamHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFByteStreamHandler {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -24936,6 +25295,11 @@ pub struct IMFByteStreamHandler_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFByteStreamProxyClassFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFByteStreamProxyClassFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFByteStreamProxyClassFactory {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn CreateByteStreamProxy<'a, Param0: ::windows::core::IntoParam<'a, IMFByteStream>, Param1: ::windows::core::IntoParam<'a, IMFAttributes>, T: ::windows::core::Interface>(&self, pbytestream: Param0, pattributes: Param1) -> ::windows::core::Result<T> {
@@ -24963,11 +25327,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFBy
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFByteStreamProxyClassFactory {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFByteStreamProxyClassFactory {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -24992,6 +25351,11 @@ pub struct IMFByteStreamProxyClassFactory_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFByteStreamTimeSeek(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFByteStreamTimeSeek {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFByteStreamTimeSeek {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -25028,11 +25392,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFBy
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFByteStreamTimeSeek {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFByteStreamTimeSeek {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -25062,6 +25421,11 @@ pub struct IMFByteStreamTimeSeek_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFCameraOcclusionStateMonitor(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFCameraOcclusionStateMonitor {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFCameraOcclusionStateMonitor {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn Start(&self) -> ::windows::core::Result<()> {
@@ -25096,11 +25460,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFCa
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFCameraOcclusionStateMonitor {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFCameraOcclusionStateMonitor {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -25127,6 +25486,11 @@ pub struct IMFCameraOcclusionStateMonitor_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFCameraOcclusionStateReport(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFCameraOcclusionStateReport {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFCameraOcclusionStateReport {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetOcclusionState(&self) -> ::windows::core::Result<u32> {
@@ -25154,11 +25518,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFCa
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFCameraOcclusionStateReport {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFCameraOcclusionStateReport {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -25183,6 +25542,11 @@ pub struct IMFCameraOcclusionStateReport_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFCameraOcclusionStateReportCallback(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFCameraOcclusionStateReportCallback {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFCameraOcclusionStateReportCallback {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn OnOcclusionStateReport<'a, Param0: ::windows::core::IntoParam<'a, IMFCameraOcclusionStateReport>>(&self, occlusionstatereport: Param0) -> ::windows::core::Result<()> {
@@ -25209,11 +25573,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFCa
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFCameraOcclusionStateReportCallback {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFCameraOcclusionStateReportCallback {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -25238,6 +25597,11 @@ pub struct IMFCameraOcclusionStateReportCallback_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFCameraSyncObject(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFCameraSyncObject {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFCameraSyncObject {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn WaitOnSignal(&self, timeoutinms: u32) -> ::windows::core::Result<()> {
@@ -25268,11 +25632,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFCa
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFCameraSyncObject {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFCameraSyncObject {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -25298,6 +25657,11 @@ pub struct IMFCameraSyncObject_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFCaptureEngine(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFCaptureEngine {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFCaptureEngine {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn Initialize<'a, Param0: ::windows::core::IntoParam<'a, IMFCaptureEngineOnEventCallback>, Param1: ::windows::core::IntoParam<'a, IMFAttributes>, Param2: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>, Param3: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, peventcallback: Param0, pattributes: Param1, paudiosource: Param2, pvideosource: Param3) -> ::windows::core::Result<()> {
@@ -25355,11 +25719,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFCa
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFCaptureEngine {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFCaptureEngine {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -25394,6 +25753,11 @@ pub struct IMFCaptureEngine_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFCaptureEngineClassFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFCaptureEngineClassFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFCaptureEngineClassFactory {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn CreateInstance(&self, clsid: *const ::windows::core::GUID, riid: *const ::windows::core::GUID, ppvobject: *mut *mut ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -25420,11 +25784,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFCa
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFCaptureEngineClassFactory {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFCaptureEngineClassFactory {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -25449,6 +25808,11 @@ pub struct IMFCaptureEngineClassFactory_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFCaptureEngineOnEventCallback(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFCaptureEngineOnEventCallback {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFCaptureEngineOnEventCallback {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn OnEvent<'a, Param0: ::windows::core::IntoParam<'a, IMFMediaEvent>>(&self, pevent: Param0) -> ::windows::core::Result<()> {
@@ -25475,11 +25839,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFCa
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFCaptureEngineOnEventCallback {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFCaptureEngineOnEventCallback {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -25504,6 +25863,11 @@ pub struct IMFCaptureEngineOnEventCallback_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFCaptureEngineOnSampleCallback(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFCaptureEngineOnSampleCallback {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFCaptureEngineOnSampleCallback {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn OnSample<'a, Param0: ::windows::core::IntoParam<'a, IMFSample>>(&self, psample: Param0) -> ::windows::core::Result<()> {
@@ -25530,11 +25894,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFCa
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFCaptureEngineOnSampleCallback {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFCaptureEngineOnSampleCallback {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -25559,6 +25918,11 @@ pub struct IMFCaptureEngineOnSampleCallback_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFCaptureEngineOnSampleCallback2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFCaptureEngineOnSampleCallback2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFCaptureEngineOnSampleCallback2 {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn OnSample<'a, Param0: ::windows::core::IntoParam<'a, IMFSample>>(&self, psample: Param0) -> ::windows::core::Result<()> {
@@ -25609,11 +25973,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMFCaptureEngineOnSampleCallback> for &'
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFCaptureEngineOnSampleCallback2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFCaptureEngineOnSampleCallback2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -25638,6 +25997,11 @@ pub struct IMFCaptureEngineOnSampleCallback2_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFCapturePhotoConfirmation(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFCapturePhotoConfirmation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFCapturePhotoConfirmation {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn SetPhotoConfirmationCallback<'a, Param0: ::windows::core::IntoParam<'a, IMFAsyncCallback>>(&self, pnotificationcallback: Param0) -> ::windows::core::Result<()> {
@@ -25673,11 +26037,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFCa
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFCapturePhotoConfirmation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFCapturePhotoConfirmation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -25704,6 +26063,11 @@ pub struct IMFCapturePhotoConfirmation_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFCapturePhotoSink(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFCapturePhotoSink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFCapturePhotoSink {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetOutputMediaType(&self, dwsinkstreamindex: u32) -> ::windows::core::Result<IMFMediaType> {
@@ -25781,11 +26145,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMFCaptureSink> for &'a IMFCapturePhotoS
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFCapturePhotoSink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFCapturePhotoSink {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -25812,6 +26171,11 @@ pub struct IMFCapturePhotoSink_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFCapturePreviewSink(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFCapturePreviewSink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFCapturePreviewSink {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetOutputMediaType(&self, dwsinkstreamindex: u32) -> ::windows::core::Result<IMFMediaType> {
@@ -25919,11 +26283,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMFCaptureSink> for &'a IMFCapturePrevie
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFCapturePreviewSink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFCapturePreviewSink {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -25968,6 +26327,11 @@ pub struct IMFCapturePreviewSink_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFCaptureRecordSink(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFCaptureRecordSink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFCaptureRecordSink {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetOutputMediaType(&self, dwsinkstreamindex: u32) -> ::windows::core::Result<IMFMediaType> {
@@ -26058,11 +26422,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMFCaptureSink> for &'a IMFCaptureRecord
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFCaptureRecordSink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFCaptureRecordSink {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -26092,6 +26451,11 @@ pub struct IMFCaptureRecordSink_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFCaptureSink(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFCaptureSink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFCaptureSink {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetOutputMediaType(&self, dwsinkstreamindex: u32) -> ::windows::core::Result<IMFMediaType> {
@@ -26137,11 +26501,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFCa
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFCaptureSink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFCaptureSink {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -26170,6 +26529,11 @@ pub struct IMFCaptureSink_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFCaptureSink2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFCaptureSink2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFCaptureSink2 {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetOutputMediaType(&self, dwsinkstreamindex: u32) -> ::windows::core::Result<IMFMediaType> {
@@ -26239,11 +26603,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMFCaptureSink> for &'a IMFCaptureSink2 
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFCaptureSink2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFCaptureSink2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -26268,6 +26627,11 @@ pub struct IMFCaptureSink2_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFCaptureSource(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFCaptureSource {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFCaptureSource {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetCaptureDeviceSource(&self, mfcaptureenginedevicetype: MF_CAPTURE_ENGINE_DEVICE_TYPE) -> ::windows::core::Result<IMFMediaSource> {
@@ -26357,11 +26721,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFCa
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFCaptureSource {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFCaptureSource {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -26405,6 +26764,11 @@ pub struct IMFCaptureSource_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFCdmSuspendNotify(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFCdmSuspendNotify {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFCdmSuspendNotify {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn Begin(&self) -> ::windows::core::Result<()> {
@@ -26435,11 +26799,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFCd
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFCdmSuspendNotify {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFCdmSuspendNotify {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -26465,6 +26824,11 @@ pub struct IMFCdmSuspendNotify_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFClock(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFClock {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFClock {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetClockCharacteristics(&self) -> ::windows::core::Result<u32> {
@@ -26511,11 +26875,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFCl
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFClock {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFClock {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -26544,6 +26903,11 @@ pub struct IMFClock_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFClockConsumer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFClockConsumer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFClockConsumer {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn SetPresentationClock<'a, Param0: ::windows::core::IntoParam<'a, IMFPresentationClock>>(&self, ppresentationclock: Param0) -> ::windows::core::Result<()> {
@@ -26575,11 +26939,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFCl
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFClockConsumer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFClockConsumer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -26605,6 +26964,11 @@ pub struct IMFClockConsumer_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFClockStateSink(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFClockStateSink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFClockStateSink {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn OnClockStart(&self, hnssystemtime: i64, llclockstartoffset: i64) -> ::windows::core::Result<()> {
@@ -26647,11 +27011,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFCl
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFClockStateSink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFClockStateSink {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -26680,6 +27039,11 @@ pub struct IMFClockStateSink_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFCollection(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFCollection {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetElementCount(&self) -> ::windows::core::Result<u32> {
@@ -26729,11 +27093,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFCo
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -26763,6 +27122,11 @@ pub struct IMFCollection_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFContentDecryptionModule(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFContentDecryptionModule {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFContentDecryptionModule {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn SetContentEnabler<'a, Param0: ::windows::core::IntoParam<'a, IMFContentEnabler>, Param1: ::windows::core::IntoParam<'a, IMFAsyncResult>>(&self, contentenabler: Param0, result: Param1) -> ::windows::core::Result<()> {
@@ -26816,11 +27180,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFCo
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFContentDecryptionModule {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFContentDecryptionModule {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -26851,6 +27210,11 @@ pub struct IMFContentDecryptionModule_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFContentDecryptionModuleAccess(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFContentDecryptionModuleAccess {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFContentDecryptionModuleAccess {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_UI_Shell_PropertiesSystem\"`*"]
     #[cfg(feature = "Win32_UI_Shell_PropertiesSystem")]
@@ -26890,11 +27254,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFCo
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFContentDecryptionModuleAccess {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFContentDecryptionModuleAccess {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -26927,6 +27286,11 @@ pub struct IMFContentDecryptionModuleAccess_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFContentDecryptionModuleFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFContentDecryptionModuleFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFContentDecryptionModuleFactory {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -26960,11 +27324,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFCo
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFContentDecryptionModuleFactory {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFContentDecryptionModuleFactory {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -26996,6 +27355,11 @@ pub struct IMFContentDecryptionModuleFactory_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFContentDecryptionModuleSession(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFContentDecryptionModuleSession {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFContentDecryptionModuleSession {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetSessionId(&self) -> ::windows::core::Result<::windows::core::PWSTR> {
@@ -27054,11 +27418,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFCo
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFContentDecryptionModuleSession {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFContentDecryptionModuleSession {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -27093,6 +27452,11 @@ pub struct IMFContentDecryptionModuleSession_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFContentDecryptionModuleSessionCallbacks(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFContentDecryptionModuleSessionCallbacks {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFContentDecryptionModuleSessionCallbacks {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn KeyMessage<'a, Param3: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, messagetype: MF_MEDIAKEYSESSION_MESSAGETYPE, message: &[u8], destinationurl: Param3) -> ::windows::core::Result<()> {
@@ -27123,11 +27487,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFCo
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFContentDecryptionModuleSessionCallbacks {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFContentDecryptionModuleSessionCallbacks {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -27153,6 +27512,11 @@ pub struct IMFContentDecryptionModuleSessionCallbacks_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFContentDecryptorContext(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFContentDecryptorContext {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFContentDecryptorContext {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn InitializeHardwareKey(&self, inputprivatedata: &[u8]) -> ::windows::core::Result<u64> {
@@ -27180,11 +27544,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFCo
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFContentDecryptorContext {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFContentDecryptorContext {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -27209,6 +27568,11 @@ pub struct IMFContentDecryptorContext_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFContentEnabler(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFContentEnabler {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFContentEnabler {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetEnableType(&self) -> ::windows::core::Result<::windows::core::GUID> {
@@ -27262,11 +27626,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFCo
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFContentEnabler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFContentEnabler {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -27300,6 +27659,11 @@ pub struct IMFContentEnabler_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFContentProtectionDevice(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFContentProtectionDevice {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFContentProtectionDevice {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn InvokeFunction(&self, functionid: u32, inputbufferbytecount: u32, inputbuffer: *const u8, outputbufferbytecount: *mut u32, outputbuffer: *mut u8) -> ::windows::core::Result<()> {
@@ -27330,11 +27694,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFCo
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFContentProtectionDevice {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFContentProtectionDevice {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -27360,6 +27719,11 @@ pub struct IMFContentProtectionDevice_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFContentProtectionManager(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFContentProtectionManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFContentProtectionManager {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn BeginEnableContent<'a, Param0: ::windows::core::IntoParam<'a, IMFActivate>, Param1: ::windows::core::IntoParam<'a, IMFTopology>, Param2: ::windows::core::IntoParam<'a, IMFAsyncCallback>, Param3: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, penableractivate: Param0, ptopo: Param1, pcallback: Param2, punkstate: Param3) -> ::windows::core::Result<()> {
@@ -27390,11 +27754,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFCo
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFContentProtectionManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFContentProtectionManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -27420,6 +27779,11 @@ pub struct IMFContentProtectionManager_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFD3D12SynchronizationObject(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFD3D12SynchronizationObject {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFD3D12SynchronizationObject {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -27451,11 +27815,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFD3
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFD3D12SynchronizationObject {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFD3D12SynchronizationObject {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -27484,6 +27843,11 @@ pub struct IMFD3D12SynchronizationObject_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFD3D12SynchronizationObjectCommands(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFD3D12SynchronizationObjectCommands {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFD3D12SynchronizationObjectCommands {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_Graphics_Direct3D12\"`*"]
     #[cfg(feature = "Win32_Graphics_Direct3D12")]
@@ -27526,11 +27890,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFD3
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFD3D12SynchronizationObjectCommands {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFD3D12SynchronizationObjectCommands {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -27570,6 +27929,11 @@ pub struct IMFD3D12SynchronizationObjectCommands_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFDLNASinkInit(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFDLNASinkInit {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFDLNASinkInit {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -27595,11 +27959,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IMFDLNASi
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFDLNASinkInit {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IMFDLNASinkInit {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IMFDLNASinkInit {
@@ -27629,6 +27988,11 @@ pub struct IMFDLNASinkInit_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFDRMNetHelper(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFDRMNetHelper {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFDRMNetHelper {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -27660,11 +28024,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFDR
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFDRMNetHelper {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFDRMNetHelper {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -27693,6 +28052,11 @@ pub struct IMFDRMNetHelper_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFDXGIBuffer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFDXGIBuffer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFDXGIBuffer {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetResource(&self, riid: *const ::windows::core::GUID, ppvobject: *mut *mut ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -27732,11 +28096,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFDX
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFDXGIBuffer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFDXGIBuffer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -27764,6 +28123,11 @@ pub struct IMFDXGIBuffer_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFDXGIDeviceManager(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFDXGIDeviceManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFDXGIDeviceManager {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -27821,11 +28185,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFDX
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFDXGIDeviceManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFDXGIDeviceManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -27874,6 +28233,11 @@ pub struct IMFDXGIDeviceManager_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFDXGIDeviceManagerSource(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFDXGIDeviceManagerSource {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFDXGIDeviceManagerSource {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetManager(&self) -> ::windows::core::Result<IMFDXGIDeviceManager> {
@@ -27901,11 +28265,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFDX
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFDXGIDeviceManagerSource {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFDXGIDeviceManagerSource {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -27930,6 +28289,11 @@ pub struct IMFDXGIDeviceManagerSource_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFDesiredSample(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFDesiredSample {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFDesiredSample {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetDesiredSampleTimeAndDuration(&self, phnssampletime: *mut i64, phnssampleduration: *mut i64) -> ::windows::core::Result<()> {
@@ -27964,11 +28328,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFDe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFDesiredSample {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFDesiredSample {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -27995,6 +28354,11 @@ pub struct IMFDesiredSample_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFExtendedCameraControl(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFExtendedCameraControl {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFExtendedCameraControl {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetCapabilities(&self) -> u64 {
@@ -28041,11 +28405,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFEx
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFExtendedCameraControl {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFExtendedCameraControl {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -28075,6 +28434,11 @@ pub struct IMFExtendedCameraControl_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFExtendedCameraController(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFExtendedCameraController {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFExtendedCameraController {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetExtendedCameraControl(&self, dwstreamindex: u32, ulpropertyid: u32) -> ::windows::core::Result<IMFExtendedCameraControl> {
@@ -28102,11 +28466,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFEx
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFExtendedCameraController {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFExtendedCameraController {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -28131,6 +28490,11 @@ pub struct IMFExtendedCameraController_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFExtendedCameraIntrinsicModel(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFExtendedCameraIntrinsicModel {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFExtendedCameraIntrinsicModel {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetModel(&self) -> ::windows::core::Result<MFExtendedCameraIntrinsic_IntrinsicModel> {
@@ -28167,11 +28531,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFEx
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFExtendedCameraIntrinsicModel {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFExtendedCameraIntrinsicModel {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -28198,6 +28557,11 @@ pub struct IMFExtendedCameraIntrinsicModel_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFExtendedCameraIntrinsics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFExtendedCameraIntrinsics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFExtendedCameraIntrinsics {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn InitializeFromBuffer(&self, pbbuffer: *const u8, dwbuffersize: u32) -> ::windows::core::Result<()> {
@@ -28247,11 +28611,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFEx
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFExtendedCameraIntrinsics {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFExtendedCameraIntrinsics {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -28281,6 +28640,11 @@ pub struct IMFExtendedCameraIntrinsics_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFExtendedCameraIntrinsicsDistortionModel6KT(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFExtendedCameraIntrinsicsDistortionModel6KT {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFExtendedCameraIntrinsicsDistortionModel6KT {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetDistortionModel(&self) -> ::windows::core::Result<MFCameraIntrinsic_DistortionModel6KT> {
@@ -28312,11 +28676,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFEx
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFExtendedCameraIntrinsicsDistortionModel6KT {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFExtendedCameraIntrinsicsDistortionModel6KT {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -28342,6 +28701,11 @@ pub struct IMFExtendedCameraIntrinsicsDistortionModel6KT_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFExtendedCameraIntrinsicsDistortionModelArcTan(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFExtendedCameraIntrinsicsDistortionModelArcTan {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFExtendedCameraIntrinsicsDistortionModelArcTan {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetDistortionModel(&self) -> ::windows::core::Result<MFCameraIntrinsic_DistortionModelArcTan> {
@@ -28373,11 +28737,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFEx
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFExtendedCameraIntrinsicsDistortionModelArcTan {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFExtendedCameraIntrinsicsDistortionModelArcTan {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -28403,6 +28762,11 @@ pub struct IMFExtendedCameraIntrinsicsDistortionModelArcTan_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFExtendedDRMTypeSupport(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFExtendedDRMTypeSupport {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFExtendedDRMTypeSupport {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -28429,11 +28793,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IMFExtend
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFExtendedDRMTypeSupport {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IMFExtendedDRMTypeSupport {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IMFExtendedDRMTypeSupport {
@@ -28463,6 +28822,11 @@ pub struct IMFExtendedDRMTypeSupport_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFFieldOfUseMFTUnlock(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFFieldOfUseMFTUnlock {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFFieldOfUseMFTUnlock {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn Unlock<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, punkmft: Param0) -> ::windows::core::Result<()> {
@@ -28489,11 +28853,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFFi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFFieldOfUseMFTUnlock {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFFieldOfUseMFTUnlock {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -28518,6 +28877,11 @@ pub struct IMFFieldOfUseMFTUnlock_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFFinalizableMediaSink(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFFinalizableMediaSink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFFinalizableMediaSink {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetCharacteristics(&self) -> ::windows::core::Result<u32> {
@@ -28610,11 +28974,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMFMediaSink> for &'a IMFFinalizableMedi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFFinalizableMediaSink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFFinalizableMediaSink {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -28640,6 +28999,11 @@ pub struct IMFFinalizableMediaSink_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFGetService(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFGetService {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFGetService {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetService<T: ::windows::core::Interface>(&self, guidservice: *const ::windows::core::GUID) -> ::windows::core::Result<T> {
@@ -28667,11 +29031,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFGe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFGetService {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFGetService {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -28696,6 +29055,11 @@ pub struct IMFGetService_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFHDCPStatus(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFHDCPStatus {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFHDCPStatus {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -28727,11 +29091,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFHD
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFHDCPStatus {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFHDCPStatus {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -28760,6 +29119,11 @@ pub struct IMFHDCPStatus_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFHttpDownloadRequest(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFHttpDownloadRequest {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFHttpDownloadRequest {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn AddHeader<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, szheader: Param0) -> ::windows::core::Result<()> {
@@ -28855,11 +29219,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFHt
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFHttpDownloadRequest {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFHttpDownloadRequest {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -28905,6 +29264,11 @@ pub struct IMFHttpDownloadRequest_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFHttpDownloadSession(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFHttpDownloadSession {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFHttpDownloadSession {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn SetServer<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, szservername: Param0, nport: u32) -> ::windows::core::Result<()> {
@@ -28941,11 +29305,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFHt
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFHttpDownloadSession {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFHttpDownloadSession {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -28975,6 +29334,11 @@ pub struct IMFHttpDownloadSession_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFHttpDownloadSessionProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFHttpDownloadSessionProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFHttpDownloadSessionProvider {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn CreateHttpDownloadSession<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, wszscheme: Param0) -> ::windows::core::Result<IMFHttpDownloadSession> {
@@ -29002,11 +29366,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFHt
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFHttpDownloadSessionProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFHttpDownloadSessionProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -29031,6 +29390,11 @@ pub struct IMFHttpDownloadSessionProvider_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFImageSharingEngine(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFImageSharingEngine {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFImageSharingEngine {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn SetSource<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, pstream: Param0) -> ::windows::core::Result<()> {
@@ -29067,11 +29431,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFIm
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFImageSharingEngine {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFImageSharingEngine {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -29101,6 +29460,11 @@ pub struct IMFImageSharingEngine_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFImageSharingEngineClassFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFImageSharingEngineClassFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFImageSharingEngineClassFactory {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -29127,11 +29491,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IMFImageS
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFImageSharingEngineClassFactory {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IMFImageSharingEngineClassFactory {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IMFImageSharingEngineClassFactory {
@@ -29161,6 +29520,11 @@ pub struct IMFImageSharingEngineClassFactory_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFInputTrustAuthority(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFInputTrustAuthority {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFInputTrustAuthority {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetDecrypter(&self, riid: *const ::windows::core::GUID, ppv: *mut *mut ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -29209,11 +29573,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFIn
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFInputTrustAuthority {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFInputTrustAuthority {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -29243,6 +29602,11 @@ pub struct IMFInputTrustAuthority_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFLocalMFTRegistration(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFLocalMFTRegistration {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFLocalMFTRegistration {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn RegisterMFTs(&self, pmfts: &[MFT_REGISTRATION_INFO]) -> ::windows::core::Result<()> {
@@ -29269,11 +29633,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFLo
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFLocalMFTRegistration {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFLocalMFTRegistration {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -29298,6 +29657,11 @@ pub struct IMFLocalMFTRegistration_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFMediaBuffer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFMediaBuffer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFMediaBuffer {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn Lock(&self, ppbbuffer: *mut *mut u8, pcbmaxlength: *mut u32, pcbcurrentlength: *mut u32) -> ::windows::core::Result<()> {
@@ -29342,11 +29706,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFMe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFMediaBuffer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFMediaBuffer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -29375,6 +29734,11 @@ pub struct IMFMediaBuffer_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFMediaEngine(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFMediaEngine {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFMediaEngine {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetError(&self) -> ::windows::core::Result<IMFMediaError> {
@@ -29587,11 +29951,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFMe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFMediaEngine {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFMediaEngine {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -29702,6 +30061,11 @@ pub struct IMFMediaEngine_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFMediaEngineAudioEndpointId(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFMediaEngineAudioEndpointId {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFMediaEngineAudioEndpointId {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn SetAudioEndpointId<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, pszendpointid: Param0) -> ::windows::core::Result<()> {
@@ -29733,11 +30097,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFMe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFMediaEngineAudioEndpointId {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFMediaEngineAudioEndpointId {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -29763,6 +30122,11 @@ pub struct IMFMediaEngineAudioEndpointId_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFMediaEngineClassFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFMediaEngineClassFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFMediaEngineClassFactory {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn CreateInstance<'a, Param1: ::windows::core::IntoParam<'a, IMFAttributes>>(&self, dwflags: u32, pattr: Param1) -> ::windows::core::Result<IMFMediaEngine> {
@@ -29800,11 +30164,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFMe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFMediaEngineClassFactory {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFMediaEngineClassFactory {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -29831,6 +30190,11 @@ pub struct IMFMediaEngineClassFactory_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFMediaEngineClassFactory2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFMediaEngineClassFactory2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFMediaEngineClassFactory2 {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -29857,11 +30221,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IMFMediaE
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFMediaEngineClassFactory2 {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IMFMediaEngineClassFactory2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IMFMediaEngineClassFactory2 {
@@ -29891,6 +30250,11 @@ pub struct IMFMediaEngineClassFactory2_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFMediaEngineClassFactory3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFMediaEngineClassFactory3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFMediaEngineClassFactory3 {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_Foundation\"`, `\"Win32_UI_Shell_PropertiesSystem\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_UI_Shell_PropertiesSystem"))]
@@ -29917,11 +30281,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IMFMediaE
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFMediaEngineClassFactory3 {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IMFMediaEngineClassFactory3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IMFMediaEngineClassFactory3 {
@@ -29951,6 +30310,11 @@ pub struct IMFMediaEngineClassFactory3_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFMediaEngineClassFactory4(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFMediaEngineClassFactory4 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFMediaEngineClassFactory4 {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn CreateContentDecryptionModuleFactory<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, keysystem: Param0, riid: *const ::windows::core::GUID, ppvobject: *mut *mut ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -29977,11 +30341,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFMe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFMediaEngineClassFactory4 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFMediaEngineClassFactory4 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -30006,6 +30365,11 @@ pub struct IMFMediaEngineClassFactory4_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFMediaEngineClassFactoryEx(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFMediaEngineClassFactoryEx {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFMediaEngineClassFactoryEx {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn CreateInstance<'a, Param1: ::windows::core::IntoParam<'a, IMFAttributes>>(&self, dwflags: u32, pattr: Param1) -> ::windows::core::Result<IMFMediaEngine> {
@@ -30080,11 +30444,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMFMediaEngineClassFactory> for &'a IMFM
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFMediaEngineClassFactoryEx {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFMediaEngineClassFactoryEx {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -30117,6 +30476,11 @@ pub struct IMFMediaEngineClassFactoryEx_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFMediaEngineEME(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFMediaEngineEME {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFMediaEngineEME {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn Keys(&self) -> ::windows::core::Result<IMFMediaKeys> {
@@ -30148,11 +30512,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFMe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFMediaEngineEME {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFMediaEngineEME {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -30178,6 +30537,11 @@ pub struct IMFMediaEngineEME_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFMediaEngineEMENotify(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFMediaEngineEMENotify {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFMediaEngineEMENotify {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -30209,11 +30573,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFMe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFMediaEngineEMENotify {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFMediaEngineEMENotify {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -30242,6 +30601,11 @@ pub struct IMFMediaEngineEMENotify_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFMediaEngineEx(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFMediaEngineEx {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFMediaEngineEx {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetError(&self) -> ::windows::core::Result<IMFMediaError> {
@@ -30655,11 +31019,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMFMediaEngine> for &'a IMFMediaEngineEx
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFMediaEngineEx {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFMediaEngineEx {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -30777,6 +31136,11 @@ pub struct IMFMediaEngineEx_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFMediaEngineExtension(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFMediaEngineExtension {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFMediaEngineExtension {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -30819,11 +31183,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFMe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFMediaEngineExtension {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFMediaEngineExtension {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -30857,6 +31216,11 @@ pub struct IMFMediaEngineExtension_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFMediaEngineNeedKeyNotify(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFMediaEngineNeedKeyNotify {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFMediaEngineNeedKeyNotify {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn NeedKey(&self, initdata: *const u8, cb: u32) {
@@ -30883,11 +31247,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFMe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFMediaEngineNeedKeyNotify {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFMediaEngineNeedKeyNotify {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -30912,6 +31271,11 @@ pub struct IMFMediaEngineNeedKeyNotify_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFMediaEngineNotify(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFMediaEngineNotify {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFMediaEngineNotify {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn EventNotify(&self, event: u32, param1: usize, param2: u32) -> ::windows::core::Result<()> {
@@ -30938,11 +31302,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFMe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFMediaEngineNotify {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFMediaEngineNotify {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -30967,6 +31326,11 @@ pub struct IMFMediaEngineNotify_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFMediaEngineOPMInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFMediaEngineOPMInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFMediaEngineOPMInfo {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -30992,11 +31356,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IMFMediaE
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFMediaEngineOPMInfo {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IMFMediaEngineOPMInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IMFMediaEngineOPMInfo {
@@ -31026,6 +31385,11 @@ pub struct IMFMediaEngineOPMInfo_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFMediaEngineProtectedContent(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFMediaEngineProtectedContent {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFMediaEngineProtectedContent {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn ShareResources<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, punkdevicecontext: Param0) -> ::windows::core::Result<()> {
@@ -31076,11 +31440,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFMe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFMediaEngineProtectedContent {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFMediaEngineProtectedContent {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -31116,6 +31475,11 @@ pub struct IMFMediaEngineProtectedContent_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFMediaEngineSrcElements(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFMediaEngineSrcElements {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFMediaEngineSrcElements {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetLength(&self) -> u32 {
@@ -31169,11 +31533,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFMe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFMediaEngineSrcElements {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFMediaEngineSrcElements {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -31215,6 +31574,11 @@ pub struct IMFMediaEngineSrcElements_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFMediaEngineSrcElementsEx(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFMediaEngineSrcElementsEx {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFMediaEngineSrcElementsEx {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetLength(&self) -> u32 {
@@ -31299,11 +31663,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMFMediaEngineSrcElements> for &'a IMFMe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFMediaEngineSrcElementsEx {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFMediaEngineSrcElementsEx {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -31335,6 +31694,11 @@ pub struct IMFMediaEngineSrcElementsEx_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFMediaEngineSupportsSourceTransfer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFMediaEngineSupportsSourceTransfer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFMediaEngineSupportsSourceTransfer {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -31371,11 +31735,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFMe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFMediaEngineSupportsSourceTransfer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFMediaEngineSupportsSourceTransfer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -31405,6 +31764,11 @@ pub struct IMFMediaEngineSupportsSourceTransfer_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFMediaEngineTransferSource(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFMediaEngineTransferSource {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFMediaEngineTransferSource {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn TransferSourceToMediaEngine<'a, Param0: ::windows::core::IntoParam<'a, IMFMediaEngine>>(&self, destination: Param0) -> ::windows::core::Result<()> {
@@ -31431,11 +31795,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFMe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFMediaEngineTransferSource {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFMediaEngineTransferSource {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -31460,6 +31819,11 @@ pub struct IMFMediaEngineTransferSource_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFMediaEngineWebSupport(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFMediaEngineWebSupport {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFMediaEngineWebSupport {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -31496,11 +31860,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFMe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFMediaEngineWebSupport {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFMediaEngineWebSupport {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -31530,6 +31889,11 @@ pub struct IMFMediaEngineWebSupport_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFMediaError(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFMediaError {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFMediaError {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetErrorCode(&self) -> u16 {
@@ -31568,11 +31932,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFMe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFMediaError {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFMediaError {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -31600,6 +31959,11 @@ pub struct IMFMediaError_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFMediaEvent(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFMediaEvent {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFMediaEvent {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com_StructuredStorage\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com_StructuredStorage"))]
@@ -31799,11 +32163,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMFAttributes> for &'a IMFMediaEvent {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFMediaEvent {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFMediaEvent {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -31834,6 +32193,11 @@ pub struct IMFMediaEvent_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFMediaEventGenerator(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFMediaEventGenerator {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFMediaEventGenerator {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetEvent(&self, dwflags: MEDIA_EVENT_GENERATOR_GET_EVENT_FLAGS) -> ::windows::core::Result<IMFMediaEvent> {
@@ -31875,11 +32239,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFMe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFMediaEventGenerator {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFMediaEventGenerator {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -31910,6 +32269,11 @@ pub struct IMFMediaEventGenerator_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFMediaEventQueue(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFMediaEventQueue {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFMediaEventQueue {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetEvent(&self, dwflags: u32) -> ::windows::core::Result<IMFMediaEvent> {
@@ -31963,11 +32327,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFMe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFMediaEventQueue {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFMediaEventQueue {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -32001,6 +32360,11 @@ pub struct IMFMediaEventQueue_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFMediaKeySession(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFMediaKeySession {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFMediaKeySession {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetError(&self, code: *mut u16, systemcode: *mut u32) -> ::windows::core::Result<()> {
@@ -32047,11 +32411,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFMe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFMediaKeySession {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFMediaKeySession {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -32086,6 +32445,11 @@ pub struct IMFMediaKeySession_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFMediaKeySession2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFMediaKeySession2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFMediaKeySession2 {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetError(&self, code: *mut u16, systemcode: *mut u32) -> ::windows::core::Result<()> {
@@ -32180,11 +32544,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMFMediaKeySession> for &'a IMFMediaKeyS
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFMediaKeySession2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFMediaKeySession2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -32220,6 +32579,11 @@ pub struct IMFMediaKeySession2_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFMediaKeySessionNotify(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFMediaKeySessionNotify {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFMediaKeySessionNotify {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -32255,11 +32619,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFMe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFMediaKeySessionNotify {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFMediaKeySessionNotify {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -32289,6 +32648,11 @@ pub struct IMFMediaKeySessionNotify_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFMediaKeySessionNotify2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFMediaKeySessionNotify2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFMediaKeySessionNotify2 {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -32353,11 +32717,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMFMediaKeySessionNotify> for &'a IMFMed
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFMediaKeySessionNotify2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFMediaKeySessionNotify2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -32386,6 +32745,11 @@ pub struct IMFMediaKeySessionNotify2_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFMediaKeySystemAccess(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFMediaKeySystemAccess {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFMediaKeySystemAccess {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_UI_Shell_PropertiesSystem\"`*"]
     #[cfg(feature = "Win32_UI_Shell_PropertiesSystem")]
@@ -32426,11 +32790,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFMe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFMediaKeySystemAccess {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFMediaKeySystemAccess {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -32466,6 +32825,11 @@ pub struct IMFMediaKeySystemAccess_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFMediaKeys(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFMediaKeys {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFMediaKeys {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -32509,11 +32873,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFMe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFMediaKeys {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFMediaKeys {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -32547,6 +32906,11 @@ pub struct IMFMediaKeys_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFMediaKeys2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFMediaKeys2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFMediaKeys2 {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -32624,11 +32988,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMFMediaKeys> for &'a IMFMediaKeys2 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFMediaKeys2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFMediaKeys2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -32655,6 +33014,11 @@ pub struct IMFMediaKeys2_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFMediaSession(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFMediaSession {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFMediaSession {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetEvent(&self, dwflags: MEDIA_EVENT_GENERATOR_GET_EVENT_FLAGS) -> ::windows::core::Result<IMFMediaEvent> {
@@ -32760,11 +33124,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMFMediaEventGenerator> for &'a IMFMedia
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFMediaSession {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFMediaSession {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -32801,6 +33160,11 @@ pub struct IMFMediaSession_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFMediaSharingEngine(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFMediaSharingEngine {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFMediaSharingEngine {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetError(&self) -> ::windows::core::Result<IMFMediaError> {
@@ -33039,11 +33403,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMFMediaEngine> for &'a IMFMediaSharingE
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFMediaSharingEngine {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFMediaSharingEngine {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -33071,6 +33430,11 @@ pub struct IMFMediaSharingEngine_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFMediaSharingEngineClassFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFMediaSharingEngineClassFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFMediaSharingEngineClassFactory {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn CreateInstance<'a, Param1: ::windows::core::IntoParam<'a, IMFAttributes>>(&self, dwflags: u32, pattr: Param1) -> ::windows::core::Result<IMFMediaSharingEngine> {
@@ -33098,11 +33462,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFMe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFMediaSharingEngineClassFactory {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFMediaSharingEngineClassFactory {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -33127,6 +33486,11 @@ pub struct IMFMediaSharingEngineClassFactory_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFMediaSink(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFMediaSink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFMediaSink {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetCharacteristics(&self) -> ::windows::core::Result<u32> {
@@ -33191,11 +33555,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFMe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFMediaSink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFMediaSink {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -33228,6 +33587,11 @@ pub struct IMFMediaSink_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFMediaSinkPreroll(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFMediaSinkPreroll {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFMediaSinkPreroll {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn NotifyPreroll(&self, hnsupcomingstarttime: i64) -> ::windows::core::Result<()> {
@@ -33254,11 +33618,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFMe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFMediaSinkPreroll {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFMediaSinkPreroll {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -33283,6 +33642,11 @@ pub struct IMFMediaSinkPreroll_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFMediaSource(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFMediaSource {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFMediaSource {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetEvent(&self, dwflags: MEDIA_EVENT_GENERATOR_GET_EVENT_FLAGS) -> ::windows::core::Result<IMFMediaEvent> {
@@ -33371,11 +33735,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMFMediaEventGenerator> for &'a IMFMedia
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFMediaSource {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFMediaSource {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -33408,6 +33767,11 @@ pub struct IMFMediaSource_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFMediaSource2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFMediaSource2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFMediaSource2 {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetEvent(&self, dwflags: MEDIA_EVENT_GENERATOR_GET_EVENT_FLAGS) -> ::windows::core::Result<IMFMediaEvent> {
@@ -33554,11 +33918,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMFMediaSourceEx> for &'a IMFMediaSource
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFMediaSource2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFMediaSource2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -33583,6 +33942,11 @@ pub struct IMFMediaSource2_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFMediaSourceEx(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFMediaSourceEx {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFMediaSourceEx {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetEvent(&self, dwflags: MEDIA_EVENT_GENERATOR_GET_EVENT_FLAGS) -> ::windows::core::Result<IMFMediaEvent> {
@@ -33705,11 +34069,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMFMediaSource> for &'a IMFMediaSourceEx
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFMediaSourceEx {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFMediaSourceEx {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -33736,6 +34095,11 @@ pub struct IMFMediaSourceEx_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFMediaSourceExtension(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFMediaSourceExtension {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFMediaSourceExtension {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetSourceBuffers(&self) -> ::core::option::Option<IMFSourceBufferList> {
@@ -33801,11 +34165,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFMe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFMediaSourceExtension {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFMediaSourceExtension {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -33845,6 +34204,11 @@ pub struct IMFMediaSourceExtension_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFMediaSourceExtensionLiveSeekableRange(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFMediaSourceExtensionLiveSeekableRange {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFMediaSourceExtensionLiveSeekableRange {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn SetLiveSeekableRange(&self, start: f64, end: f64) -> ::windows::core::Result<()> {
@@ -33875,11 +34239,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFMe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFMediaSourceExtensionLiveSeekableRange {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFMediaSourceExtensionLiveSeekableRange {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -33905,6 +34264,11 @@ pub struct IMFMediaSourceExtensionLiveSeekableRange_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFMediaSourceExtensionNotify(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFMediaSourceExtensionNotify {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFMediaSourceExtensionNotify {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn OnSourceOpen(&self) {
@@ -33939,11 +34303,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFMe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFMediaSourceExtensionNotify {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFMediaSourceExtensionNotify {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -33970,6 +34329,11 @@ pub struct IMFMediaSourceExtensionNotify_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFMediaSourcePresentationProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFMediaSourcePresentationProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFMediaSourcePresentationProvider {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn ForceEndOfPresentation<'a, Param0: ::windows::core::IntoParam<'a, IMFPresentationDescriptor>>(&self, ppresentationdescriptor: Param0) -> ::windows::core::Result<()> {
@@ -33996,11 +34360,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFMe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFMediaSourcePresentationProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFMediaSourcePresentationProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -34025,6 +34384,11 @@ pub struct IMFMediaSourcePresentationProvider_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFMediaSourceTopologyProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFMediaSourceTopologyProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFMediaSourceTopologyProvider {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetMediaSourceTopology<'a, Param0: ::windows::core::IntoParam<'a, IMFPresentationDescriptor>>(&self, ppresentationdescriptor: Param0) -> ::windows::core::Result<IMFTopology> {
@@ -34052,11 +34416,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFMe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFMediaSourceTopologyProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFMediaSourceTopologyProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -34081,6 +34440,11 @@ pub struct IMFMediaSourceTopologyProvider_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFMediaStream(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFMediaStream {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFMediaStream {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetEvent(&self, dwflags: MEDIA_EVENT_GENERATOR_GET_EVENT_FLAGS) -> ::windows::core::Result<IMFMediaEvent> {
@@ -34156,11 +34520,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMFMediaEventGenerator> for &'a IMFMedia
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFMediaStream {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFMediaStream {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -34187,6 +34546,11 @@ pub struct IMFMediaStream_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFMediaStream2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFMediaStream2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFMediaStream2 {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetEvent(&self, dwflags: MEDIA_EVENT_GENERATOR_GET_EVENT_FLAGS) -> ::windows::core::Result<IMFMediaEvent> {
@@ -34291,11 +34655,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMFMediaStream> for &'a IMFMediaStream2 
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFMediaStream2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFMediaStream2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -34321,6 +34680,11 @@ pub struct IMFMediaStream2_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFMediaStreamSourceSampleRequest(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFMediaStreamSourceSampleRequest {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFMediaStreamSourceSampleRequest {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn SetSample<'a, Param0: ::windows::core::IntoParam<'a, IMFSample>>(&self, value: Param0) -> ::windows::core::Result<()> {
@@ -34347,11 +34711,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFMe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFMediaStreamSourceSampleRequest {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFMediaStreamSourceSampleRequest {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -34376,6 +34735,11 @@ pub struct IMFMediaStreamSourceSampleRequest_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFMediaTimeRange(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFMediaTimeRange {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFMediaTimeRange {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetLength(&self) -> u32 {
@@ -34425,11 +34789,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFMe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFMediaTimeRange {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFMediaTimeRange {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -34462,6 +34821,11 @@ pub struct IMFMediaTimeRange_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFMediaType(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFMediaType {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFMediaType {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com_StructuredStorage\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com_StructuredStorage"))]
@@ -34664,11 +35028,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMFAttributes> for &'a IMFMediaType {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFMediaType {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFMediaType {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -34700,6 +35059,11 @@ pub struct IMFMediaType_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFMediaTypeHandler(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFMediaTypeHandler {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFMediaTypeHandler {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn IsMediaTypeSupported<'a, Param0: ::windows::core::IntoParam<'a, IMFMediaType>>(&self, pmediatype: Param0) -> ::windows::core::Result<IMFMediaType> {
@@ -34751,11 +35115,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFMe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFMediaTypeHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFMediaTypeHandler {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -34785,6 +35144,11 @@ pub struct IMFMediaTypeHandler_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFMetadata(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFMetadata {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFMetadata {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn SetLanguage<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, pwszrfc1766: Param0) -> ::windows::core::Result<()> {
@@ -34843,11 +35207,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFMe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFMetadata {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFMetadata {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -34890,6 +35249,11 @@ pub struct IMFMetadata_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFMetadataProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFMetadataProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFMetadataProvider {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetMFMetadata<'a, Param0: ::windows::core::IntoParam<'a, IMFPresentationDescriptor>>(&self, ppresentationdescriptor: Param0, dwstreamidentifier: u32, dwflags: u32) -> ::windows::core::Result<IMFMetadata> {
@@ -34917,11 +35281,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFMe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFMetadataProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFMetadataProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -34946,6 +35305,11 @@ pub struct IMFMetadataProvider_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFMuxStreamAttributesManager(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFMuxStreamAttributesManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFMuxStreamAttributesManager {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetStreamCount(&self) -> ::windows::core::Result<u32> {
@@ -34978,11 +35342,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFMu
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFMuxStreamAttributesManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFMuxStreamAttributesManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -35008,6 +35367,11 @@ pub struct IMFMuxStreamAttributesManager_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFMuxStreamMediaTypeManager(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFMuxStreamMediaTypeManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFMuxStreamMediaTypeManager {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetStreamCount(&self) -> ::windows::core::Result<u32> {
@@ -35058,11 +35422,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFMu
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFMuxStreamMediaTypeManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFMuxStreamMediaTypeManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -35092,6 +35451,11 @@ pub struct IMFMuxStreamMediaTypeManager_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFMuxStreamSampleManager(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFMuxStreamSampleManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFMuxStreamSampleManager {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetStreamCount(&self) -> ::windows::core::Result<u32> {
@@ -35128,11 +35492,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFMu
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFMuxStreamSampleManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFMuxStreamSampleManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -35159,6 +35518,11 @@ pub struct IMFMuxStreamSampleManager_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFNetCredential(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFNetCredential {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFNetCredential {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -35207,11 +35571,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFNe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFNetCredential {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFNetCredential {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -35255,6 +35614,11 @@ pub struct IMFNetCredential_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFNetCredentialCache(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFNetCredentialCache {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFNetCredentialCache {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetCredential<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param1: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, pszurl: Param0, pszrealm: Param1, dwauthenticationflags: u32, ppcred: *mut ::core::option::Option<IMFNetCredential>, pdwrequirementsflags: *mut u32) -> ::windows::core::Result<()> {
@@ -35290,11 +35654,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFNe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFNetCredentialCache {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFNetCredentialCache {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -35324,6 +35683,11 @@ pub struct IMFNetCredentialCache_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFNetCredentialManager(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFNetCredentialManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFNetCredentialManager {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -35361,11 +35725,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFNe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFNetCredentialManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFNetCredentialManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -35398,6 +35757,11 @@ pub struct IMFNetCredentialManager_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFNetCrossOriginSupport(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFNetCrossOriginSupport {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFNetCrossOriginSupport {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetCrossOriginPolicy(&self) -> ::windows::core::Result<MF_CROSS_ORIGIN_POLICY> {
@@ -35436,11 +35800,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFNe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFNetCrossOriginSupport {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFNetCrossOriginSupport {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -35470,6 +35829,11 @@ pub struct IMFNetCrossOriginSupport_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFNetProxyLocator(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFNetProxyLocator {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFNetProxyLocator {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -35514,11 +35878,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFNe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFNetProxyLocator {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFNetProxyLocator {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -35550,6 +35909,11 @@ pub struct IMFNetProxyLocator_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFNetProxyLocatorFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFNetProxyLocatorFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFNetProxyLocatorFactory {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn CreateProxyLocator<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, pszprotocol: Param0) -> ::windows::core::Result<IMFNetProxyLocator> {
@@ -35577,11 +35941,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFNe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFNetProxyLocatorFactory {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFNetProxyLocatorFactory {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -35606,6 +35965,11 @@ pub struct IMFNetProxyLocatorFactory_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFNetResourceFilter(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFNetResourceFilter {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFNetResourceFilter {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn OnRedirect<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, pszurl: Param0) -> ::windows::core::Result<i16> {
@@ -35637,11 +36001,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFNe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFNetResourceFilter {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFNetResourceFilter {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -35667,6 +36026,11 @@ pub struct IMFNetResourceFilter_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFNetSchemeHandlerConfig(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFNetSchemeHandlerConfig {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFNetSchemeHandlerConfig {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetNumberOfSupportedProtocols(&self) -> ::windows::core::Result<u32> {
@@ -35703,11 +36067,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFNe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFNetSchemeHandlerConfig {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFNetSchemeHandlerConfig {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -35734,6 +36093,11 @@ pub struct IMFNetSchemeHandlerConfig_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFObjectReferenceStream(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFObjectReferenceStream {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFObjectReferenceStream {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn SaveReference<'a, Param1: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, riid: *const ::windows::core::GUID, punk: Param1) -> ::windows::core::Result<()> {
@@ -35764,11 +36128,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFOb
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFObjectReferenceStream {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFObjectReferenceStream {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -35794,6 +36153,11 @@ pub struct IMFObjectReferenceStream_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFOutputPolicy(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFOutputPolicy {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFOutputPolicy {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com_StructuredStorage\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com_StructuredStorage"))]
@@ -35987,11 +36351,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMFAttributes> for &'a IMFOutputPolicy {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFOutputPolicy {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFOutputPolicy {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -36018,6 +36377,11 @@ pub struct IMFOutputPolicy_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFOutputSchema(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFOutputSchema {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFOutputSchema {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com_StructuredStorage\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com_StructuredStorage"))]
@@ -36211,11 +36575,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMFAttributes> for &'a IMFOutputSchema {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFOutputSchema {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFOutputSchema {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -36242,6 +36601,11 @@ pub struct IMFOutputSchema_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFOutputTrustAuthority(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFOutputTrustAuthority {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFOutputTrustAuthority {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetAction(&self) -> ::windows::core::Result<MFPOLICYMANAGER_ACTION> {
@@ -36273,11 +36637,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFOu
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFOutputTrustAuthority {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFOutputTrustAuthority {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -36303,6 +36662,11 @@ pub struct IMFOutputTrustAuthority_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFPMPClient(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFPMPClient {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFPMPClient {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn SetPMPHost<'a, Param0: ::windows::core::IntoParam<'a, IMFPMPHost>>(&self, ppmphost: Param0) -> ::windows::core::Result<()> {
@@ -36329,11 +36693,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFPM
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFPMPClient {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFPMPClient {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -36358,6 +36717,11 @@ pub struct IMFPMPClient_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFPMPClientApp(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFPMPClientApp {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFPMPClientApp {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn SetPMPHost<'a, Param0: ::windows::core::IntoParam<'a, IMFPMPHostApp>>(&self, ppmphost: Param0) -> ::windows::core::Result<()> {
@@ -36384,11 +36748,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFPM
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFPMPClientApp {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFPMPClientApp {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -36413,6 +36772,11 @@ pub struct IMFPMPClientApp_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFPMPHost(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFPMPHost {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFPMPHost {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn LockProcess(&self) -> ::windows::core::Result<()> {
@@ -36449,11 +36813,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFPM
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFPMPHost {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFPMPHost {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -36483,6 +36842,11 @@ pub struct IMFPMPHost_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFPMPHostApp(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFPMPHostApp {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFPMPHostApp {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn LockProcess(&self) -> ::windows::core::Result<()> {
@@ -36519,11 +36883,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFPM
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFPMPHostApp {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFPMPHostApp {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -36553,6 +36912,11 @@ pub struct IMFPMPHostApp_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFPMPServer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFPMPServer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFPMPServer {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn LockProcess(&self) -> ::windows::core::Result<()> {
@@ -36588,11 +36952,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFPM
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFPMPServer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFPMPServer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -36619,6 +36978,11 @@ pub struct IMFPMPServer_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFPMediaItem(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFPMediaItem {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFPMediaItem {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetMediaPlayer(&self) -> ::windows::core::Result<IMFPMediaPlayer> {
@@ -36740,11 +37104,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFPM
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFPMediaItem {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFPMediaItem {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -36820,6 +37179,11 @@ pub struct IMFPMediaItem_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFPMediaPlayer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFPMediaPlayer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFPMediaPlayer {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn Play(&self) -> ::windows::core::Result<()> {
@@ -37012,11 +37376,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFPM
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFPMediaPlayer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFPMediaPlayer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -37112,6 +37471,11 @@ pub struct IMFPMediaPlayer_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFPMediaPlayerCallback(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFPMediaPlayerCallback {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFPMediaPlayerCallback {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_UI_Shell_PropertiesSystem\"`*"]
     #[cfg(feature = "Win32_UI_Shell_PropertiesSystem")]
@@ -37137,11 +37501,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IMFPMedia
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFPMediaPlayerCallback {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IMFPMediaPlayerCallback {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IMFPMediaPlayerCallback {
@@ -37171,6 +37530,11 @@ pub struct IMFPMediaPlayerCallback_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFPluginControl(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFPluginControl {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFPluginControl {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetPreferredClsid<'a, Param1: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, plugintype: u32, selector: Param1) -> ::windows::core::Result<::windows::core::GUID> {
@@ -37220,11 +37584,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFPl
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFPluginControl {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFPluginControl {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -37257,6 +37616,11 @@ pub struct IMFPluginControl_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFPluginControl2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFPluginControl2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFPluginControl2 {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetPreferredClsid<'a, Param1: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, plugintype: u32, selector: Param1) -> ::windows::core::Result<::windows::core::GUID> {
@@ -37330,11 +37694,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMFPluginControl> for &'a IMFPluginContr
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFPluginControl2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFPluginControl2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -37359,6 +37718,11 @@ pub struct IMFPluginControl2_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFPresentationClock(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFPresentationClock {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFPresentationClock {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetClockCharacteristics(&self) -> ::windows::core::Result<u32> {
@@ -37459,11 +37823,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMFClock> for &'a IMFPresentationClock {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFPresentationClock {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFPresentationClock {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -37495,6 +37854,11 @@ pub struct IMFPresentationClock_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFPresentationDescriptor(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFPresentationDescriptor {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFPresentationDescriptor {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com_StructuredStorage\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com_StructuredStorage"))]
@@ -37696,11 +38060,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMFAttributes> for &'a IMFPresentationDe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFPresentationDescriptor {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFPresentationDescriptor {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -37732,6 +38091,11 @@ pub struct IMFPresentationDescriptor_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFPresentationTimeSource(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFPresentationTimeSource {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFPresentationTimeSource {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetClockCharacteristics(&self) -> ::windows::core::Result<u32> {
@@ -37803,11 +38167,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMFClock> for &'a IMFPresentationTimeSou
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFPresentationTimeSource {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFPresentationTimeSource {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -37832,6 +38191,11 @@ pub struct IMFPresentationTimeSource_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFProtectedEnvironmentAccess(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFProtectedEnvironmentAccess {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFProtectedEnvironmentAccess {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn Call(&self, inputlength: u32, input: *const u8, outputlength: u32) -> ::windows::core::Result<u8> {
@@ -37863,11 +38227,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFPr
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFProtectedEnvironmentAccess {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFProtectedEnvironmentAccess {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -37893,6 +38252,11 @@ pub struct IMFProtectedEnvironmentAccess_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFQualityAdvise(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFQualityAdvise {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFQualityAdvise {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn SetDropMode(&self, edropmode: MF_QUALITY_DROP_MODE) -> ::windows::core::Result<()> {
@@ -37937,11 +38301,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFQu
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFQualityAdvise {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFQualityAdvise {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -37970,6 +38329,11 @@ pub struct IMFQualityAdvise_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFQualityAdvise2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFQualityAdvise2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFQualityAdvise2 {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn SetDropMode(&self, edropmode: MF_QUALITY_DROP_MODE) -> ::windows::core::Result<()> {
@@ -38039,11 +38403,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMFQualityAdvise> for &'a IMFQualityAdvi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFQualityAdvise2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFQualityAdvise2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -38068,6 +38427,11 @@ pub struct IMFQualityAdvise2_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFQualityAdviseLimits(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFQualityAdviseLimits {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFQualityAdviseLimits {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetMaximumDropMode(&self) -> ::windows::core::Result<MF_QUALITY_DROP_MODE> {
@@ -38100,11 +38464,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFQu
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFQualityAdviseLimits {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFQualityAdviseLimits {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -38130,6 +38489,11 @@ pub struct IMFQualityAdviseLimits_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFQualityManager(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFQualityManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFQualityManager {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn NotifyTopology<'a, Param0: ::windows::core::IntoParam<'a, IMFTopology>>(&self, ptopology: Param0) -> ::windows::core::Result<()> {
@@ -38176,11 +38540,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFQu
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFQualityManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFQualityManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -38210,6 +38569,11 @@ pub struct IMFQualityManager_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFRateControl(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFRateControl {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFRateControl {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -38240,11 +38604,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IMFRateCo
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFRateControl {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IMFRateControl {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IMFRateControl {
@@ -38278,6 +38637,11 @@ pub struct IMFRateControl_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFRateSupport(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFRateSupport {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFRateSupport {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -38317,11 +38681,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFRa
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFRateSupport {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFRateSupport {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -38357,6 +38716,11 @@ pub struct IMFRateSupport_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFReadWriteClassFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFReadWriteClassFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFReadWriteClassFactory {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn CreateInstanceFromURL<'a, Param1: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param2: ::windows::core::IntoParam<'a, IMFAttributes>>(&self, clsid: *const ::windows::core::GUID, pwszurl: Param1, pattributes: Param2, riid: *const ::windows::core::GUID, ppvobject: *mut *mut ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -38387,11 +38751,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFRe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFReadWriteClassFactory {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFReadWriteClassFactory {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -38417,6 +38776,11 @@ pub struct IMFReadWriteClassFactory_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFRealTimeClient(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFRealTimeClient {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFRealTimeClient {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn RegisterThreads<'a, Param1: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, dwtaskindex: u32, wszclass: Param1) -> ::windows::core::Result<()> {
@@ -38451,11 +38815,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFRe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFRealTimeClient {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFRealTimeClient {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -38482,6 +38841,11 @@ pub struct IMFRealTimeClient_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFRealTimeClientEx(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFRealTimeClientEx {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFRealTimeClientEx {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn RegisterThreadsEx<'a, Param1: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, pdwtaskindex: *mut u32, wszclassname: Param1, lbasepriority: i32) -> ::windows::core::Result<()> {
@@ -38516,11 +38880,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFRe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFRealTimeClientEx {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFRealTimeClientEx {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -38547,6 +38906,11 @@ pub struct IMFRealTimeClientEx_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFRelativePanelReport(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFRelativePanelReport {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFRelativePanelReport {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetRelativePanel(&self) -> ::windows::core::Result<u32> {
@@ -38574,11 +38938,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFRe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFRelativePanelReport {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFRelativePanelReport {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -38603,6 +38962,11 @@ pub struct IMFRelativePanelReport_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFRelativePanelWatcher(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFRelativePanelWatcher {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFRelativePanelWatcher {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn Shutdown(&self) -> ::windows::core::Result<()> {
@@ -38668,11 +39032,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMFShutdown> for &'a IMFRelativePanelWat
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFRelativePanelWatcher {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFRelativePanelWatcher {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -38699,6 +39058,11 @@ pub struct IMFRelativePanelWatcher_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFRemoteAsyncCallback(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFRemoteAsyncCallback {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFRemoteAsyncCallback {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn Invoke<'a, Param1: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, hr: ::windows::core::HRESULT, premoteresult: Param1) -> ::windows::core::Result<()> {
@@ -38725,11 +39089,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFRe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFRemoteAsyncCallback {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFRemoteAsyncCallback {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -38754,6 +39113,11 @@ pub struct IMFRemoteAsyncCallback_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFRemoteDesktopPlugin(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFRemoteDesktopPlugin {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFRemoteDesktopPlugin {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn UpdateTopology<'a, Param0: ::windows::core::IntoParam<'a, IMFTopology>>(&self, ptopology: Param0) -> ::windows::core::Result<()> {
@@ -38780,11 +39144,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFRe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFRemoteDesktopPlugin {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFRemoteDesktopPlugin {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -38809,6 +39168,11 @@ pub struct IMFRemoteDesktopPlugin_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFRemoteProxy(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFRemoteProxy {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFRemoteProxy {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetRemoteObject(&self, riid: *const ::windows::core::GUID, ppv: *mut *mut ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -38839,11 +39203,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFRe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFRemoteProxy {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFRemoteProxy {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -38869,6 +39228,11 @@ pub struct IMFRemoteProxy_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFSAMIStyle(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFSAMIStyle {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFSAMIStyle {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetStyleCount(&self) -> ::windows::core::Result<u32> {
@@ -38911,11 +39275,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFSA
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFSAMIStyle {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFSAMIStyle {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -38946,6 +39305,11 @@ pub struct IMFSAMIStyle_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFSSLCertificateManager(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFSSLCertificateManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFSSLCertificateManager {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetClientCertificate<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, pszurl: Param0, ppbdata: *mut *mut u8, pcbdata: *mut u32) -> ::windows::core::Result<()> {
@@ -38991,11 +39355,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFSS
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFSSLCertificateManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFSSLCertificateManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -39030,6 +39389,11 @@ pub struct IMFSSLCertificateManager_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFSample(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFSample {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFSample {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com_StructuredStorage\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com_StructuredStorage"))]
@@ -39271,11 +39635,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMFAttributes> for &'a IMFSample {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFSample {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFSample {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -39313,6 +39672,11 @@ pub struct IMFSample_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFSampleAllocatorControl(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFSampleAllocatorControl {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFSampleAllocatorControl {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn SetDefaultAllocator<'a, Param1: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, dwoutputstreamid: u32, pallocator: Param1) -> ::windows::core::Result<()> {
@@ -39343,11 +39707,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFSa
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFSampleAllocatorControl {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFSampleAllocatorControl {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -39373,6 +39732,11 @@ pub struct IMFSampleAllocatorControl_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFSampleGrabberSinkCallback(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFSampleGrabberSinkCallback {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFSampleGrabberSinkCallback {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn OnClockStart(&self, hnssystemtime: i64, llclockstartoffset: i64) -> ::windows::core::Result<()> {
@@ -39447,11 +39811,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMFClockStateSink> for &'a IMFSampleGrab
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFSampleGrabberSinkCallback {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFSampleGrabberSinkCallback {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -39478,6 +39837,11 @@ pub struct IMFSampleGrabberSinkCallback_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFSampleGrabberSinkCallback2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFSampleGrabberSinkCallback2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFSampleGrabberSinkCallback2 {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn OnClockStart(&self, hnssystemtime: i64, llclockstartoffset: i64) -> ::windows::core::Result<()> {
@@ -39576,11 +39940,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMFSampleGrabberSinkCallback> for &'a IM
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFSampleGrabberSinkCallback2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFSampleGrabberSinkCallback2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -39605,6 +39964,11 @@ pub struct IMFSampleGrabberSinkCallback2_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFSampleOutputStream(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFSampleOutputStream {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFSampleOutputStream {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn BeginWriteSample<'a, Param0: ::windows::core::IntoParam<'a, IMFSample>, Param1: ::windows::core::IntoParam<'a, IMFAsyncCallback>, Param2: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, psample: Param0, pcallback: Param1, punkstate: Param2) -> ::windows::core::Result<()> {
@@ -39639,11 +40003,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFSa
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFSampleOutputStream {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFSampleOutputStream {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -39670,6 +40029,11 @@ pub struct IMFSampleOutputStream_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFSampleProtection(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFSampleProtection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFSampleProtection {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetInputProtectionVersion(&self) -> ::windows::core::Result<u32> {
@@ -39714,11 +40078,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFSa
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFSampleProtection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFSampleProtection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -39747,6 +40106,11 @@ pub struct IMFSampleProtection_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFSaveJob(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFSaveJob {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFSaveJob {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn BeginSave<'a, Param0: ::windows::core::IntoParam<'a, IMFByteStream>, Param1: ::windows::core::IntoParam<'a, IMFAsyncCallback>, Param2: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, pstream: Param0, pcallback: Param1, pstate: Param2) -> ::windows::core::Result<()> {
@@ -39786,11 +40150,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFSa
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFSaveJob {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFSaveJob {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -39818,6 +40177,11 @@ pub struct IMFSaveJob_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFSchemeHandler(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFSchemeHandler {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFSchemeHandler {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_UI_Shell_PropertiesSystem\"`*"]
     #[cfg(feature = "Win32_UI_Shell_PropertiesSystem")]
@@ -39853,11 +40217,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFSc
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFSchemeHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFSchemeHandler {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -39887,6 +40246,11 @@ pub struct IMFSchemeHandler_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFSecureBuffer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFSecureBuffer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFSecureBuffer {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetIdentifier(&self) -> ::windows::core::Result<::windows::core::GUID> {
@@ -39914,11 +40278,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFSe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFSecureBuffer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFSecureBuffer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -39943,6 +40302,11 @@ pub struct IMFSecureBuffer_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFSecureChannel(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFSecureChannel {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFSecureChannel {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetCertificate(&self, ppcert: *mut *mut u8, pcbcert: *mut u32) -> ::windows::core::Result<()> {
@@ -39973,11 +40337,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFSe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFSecureChannel {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFSecureChannel {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -40003,6 +40362,11 @@ pub struct IMFSecureChannel_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFSeekInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFSeekInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFSeekInfo {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com_StructuredStorage\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com_StructuredStorage"))]
@@ -40028,11 +40392,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IMFSeekIn
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFSeekInfo {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IMFSeekInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IMFSeekInfo {
@@ -40062,6 +40421,11 @@ pub struct IMFSeekInfo_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFSensorActivitiesReport(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFSensorActivitiesReport {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFSensorActivitiesReport {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetCount(&self) -> ::windows::core::Result<u32> {
@@ -40099,11 +40463,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFSe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFSensorActivitiesReport {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFSensorActivitiesReport {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -40130,6 +40489,11 @@ pub struct IMFSensorActivitiesReport_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFSensorActivitiesReportCallback(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFSensorActivitiesReportCallback {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFSensorActivitiesReportCallback {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn OnActivitiesReport<'a, Param0: ::windows::core::IntoParam<'a, IMFSensorActivitiesReport>>(&self, sensoractivitiesreport: Param0) -> ::windows::core::Result<()> {
@@ -40156,11 +40520,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFSe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFSensorActivitiesReportCallback {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFSensorActivitiesReportCallback {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -40185,6 +40544,11 @@ pub struct IMFSensorActivitiesReportCallback_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFSensorActivityMonitor(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFSensorActivityMonitor {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFSensorActivityMonitor {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn Start(&self) -> ::windows::core::Result<()> {
@@ -40215,11 +40579,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFSe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFSensorActivityMonitor {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFSensorActivityMonitor {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -40245,6 +40604,11 @@ pub struct IMFSensorActivityMonitor_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFSensorActivityReport(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFSensorActivityReport {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFSensorActivityReport {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetFriendlyName(&self, friendlyname: &mut [u16], pcchwritten: *mut u32) -> ::windows::core::Result<()> {
@@ -40285,11 +40649,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFSe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFSensorActivityReport {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFSensorActivityReport {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -40317,6 +40676,11 @@ pub struct IMFSensorActivityReport_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFSensorDevice(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFSensorDevice {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFSensorDevice {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetDeviceId(&self) -> ::windows::core::Result<u64> {
@@ -40382,11 +40746,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFSe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFSensorDevice {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFSensorDevice {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -40419,6 +40778,11 @@ pub struct IMFSensorDevice_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFSensorGroup(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFSensorGroup {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFSensorGroup {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetSymbolicLink(&self, symboliclink: &mut [u16], pcchwritten: *mut i32) -> ::windows::core::Result<()> {
@@ -40479,11 +40843,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFSe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFSensorGroup {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFSensorGroup {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -40515,6 +40874,11 @@ pub struct IMFSensorGroup_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFSensorProcessActivity(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFSensorProcessActivity {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFSensorProcessActivity {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetProcessId(&self) -> ::windows::core::Result<u32> {
@@ -40559,11 +40923,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFSe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFSensorProcessActivity {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFSensorProcessActivity {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -40597,6 +40956,11 @@ pub struct IMFSensorProcessActivity_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFSensorProfile(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFSensorProfile {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFSensorProfile {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetProfileId(&self) -> ::windows::core::Result<SENSORPROFILEID> {
@@ -40638,11 +41002,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFSe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFSensorProfile {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFSensorProfile {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -40673,6 +41032,11 @@ pub struct IMFSensorProfile_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFSensorProfileCollection(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFSensorProfileCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFSensorProfileCollection {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetProfileCount(&self) -> u32 {
@@ -40721,11 +41085,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFSe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFSensorProfileCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFSensorProfileCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -40755,6 +41114,11 @@ pub struct IMFSensorProfileCollection_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFSensorStream(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFSensorStream {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFSensorStream {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com_StructuredStorage\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com_StructuredStorage"))]
@@ -40948,11 +41312,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMFAttributes> for &'a IMFSensorStream {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFSensorStream {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFSensorStream {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -40979,6 +41338,11 @@ pub struct IMFSensorStream_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFSensorTransformFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFSensorTransformFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFSensorTransformFactory {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetFactoryAttributes(&self) -> ::windows::core::Result<IMFAttributes> {
@@ -41025,11 +41389,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFSe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFSensorTransformFactory {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFSensorTransformFactory {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -41061,6 +41420,11 @@ pub struct IMFSensorTransformFactory_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFSequencerSource(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFSequencerSource {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFSequencerSource {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn AppendTopology<'a, Param0: ::windows::core::IntoParam<'a, IMFTopology>>(&self, ptopology: Param0, dwflags: u32) -> ::windows::core::Result<u32> {
@@ -41104,11 +41468,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFSe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFSequencerSource {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFSequencerSource {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -41137,6 +41496,11 @@ pub struct IMFSequencerSource_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFSharingEngineClassFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFSharingEngineClassFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFSharingEngineClassFactory {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn CreateInstance<'a, Param1: ::windows::core::IntoParam<'a, IMFAttributes>>(&self, dwflags: u32, pattr: Param1) -> ::windows::core::Result<::windows::core::IUnknown> {
@@ -41164,11 +41528,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFSh
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFSharingEngineClassFactory {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFSharingEngineClassFactory {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -41193,6 +41552,11 @@ pub struct IMFSharingEngineClassFactory_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFShutdown(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFShutdown {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFShutdown {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn Shutdown(&self) -> ::windows::core::Result<()> {
@@ -41224,11 +41588,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFSh
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFShutdown {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFShutdown {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -41254,6 +41613,11 @@ pub struct IMFShutdown_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFSignedLibrary(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFSignedLibrary {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFSignedLibrary {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetProcedureAddress<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCSTR>>(&self, name: Param0, address: *mut *mut ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -41280,11 +41644,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFSi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFSignedLibrary {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFSignedLibrary {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -41309,6 +41668,11 @@ pub struct IMFSignedLibrary_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFSimpleAudioVolume(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFSimpleAudioVolume {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFSimpleAudioVolume {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn SetMasterVolume(&self, flevel: f32) -> ::windows::core::Result<()> {
@@ -41351,11 +41715,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFSi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFSimpleAudioVolume {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFSimpleAudioVolume {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -41389,6 +41748,11 @@ pub struct IMFSimpleAudioVolume_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFSinkWriter(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFSinkWriter {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFSinkWriter {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn AddStream<'a, Param0: ::windows::core::IntoParam<'a, IMFMediaType>>(&self, ptargetmediatype: Param0) -> ::windows::core::Result<u32> {
@@ -41457,11 +41821,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFSi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFSinkWriter {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFSinkWriter {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -41496,6 +41855,11 @@ pub struct IMFSinkWriter_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFSinkWriterCallback(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFSinkWriterCallback {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFSinkWriterCallback {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn OnFinalize(&self, hrstatus: ::windows::core::HRESULT) -> ::windows::core::Result<()> {
@@ -41526,11 +41890,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFSi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFSinkWriterCallback {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFSinkWriterCallback {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -41556,6 +41915,11 @@ pub struct IMFSinkWriterCallback_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFSinkWriterCallback2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFSinkWriterCallback2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFSinkWriterCallback2 {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn OnFinalize(&self, hrstatus: ::windows::core::HRESULT) -> ::windows::core::Result<()> {
@@ -41614,11 +41978,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMFSinkWriterCallback> for &'a IMFSinkWr
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFSinkWriterCallback2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFSinkWriterCallback2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -41644,6 +42003,11 @@ pub struct IMFSinkWriterCallback2_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFSinkWriterEncoderConfig(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFSinkWriterEncoderConfig {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFSinkWriterEncoderConfig {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn SetTargetMediaType<'a, Param1: ::windows::core::IntoParam<'a, IMFMediaType>, Param2: ::windows::core::IntoParam<'a, IMFAttributes>>(&self, dwstreamindex: u32, ptargetmediatype: Param1, pencodingparameters: Param2) -> ::windows::core::Result<()> {
@@ -41674,11 +42038,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFSi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFSinkWriterEncoderConfig {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFSinkWriterEncoderConfig {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -41704,6 +42063,11 @@ pub struct IMFSinkWriterEncoderConfig_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFSinkWriterEx(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFSinkWriterEx {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFSinkWriterEx {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn AddStream<'a, Param0: ::windows::core::IntoParam<'a, IMFMediaType>>(&self, ptargetmediatype: Param0) -> ::windows::core::Result<u32> {
@@ -41796,11 +42160,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMFSinkWriter> for &'a IMFSinkWriterEx {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFSinkWriterEx {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFSinkWriterEx {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -41825,6 +42184,11 @@ pub struct IMFSinkWriterEx_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFSourceBuffer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFSourceBuffer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFSourceBuffer {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -41897,11 +42261,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFSo
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFSourceBuffer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFSourceBuffer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -41940,6 +42299,11 @@ pub struct IMFSourceBuffer_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFSourceBufferAppendMode(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFSourceBufferAppendMode {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFSourceBufferAppendMode {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetAppendMode(&self) -> MF_MSE_APPEND_MODE {
@@ -41970,11 +42334,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFSo
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFSourceBufferAppendMode {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFSourceBufferAppendMode {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -42000,6 +42359,11 @@ pub struct IMFSourceBufferAppendMode_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFSourceBufferList(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFSourceBufferList {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFSourceBufferList {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetLength(&self) -> u32 {
@@ -42030,11 +42394,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFSo
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFSourceBufferList {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFSourceBufferList {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -42060,6 +42419,11 @@ pub struct IMFSourceBufferList_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFSourceBufferNotify(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFSourceBufferNotify {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFSourceBufferNotify {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn OnUpdateStart(&self) {
@@ -42102,11 +42466,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFSo
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFSourceBufferNotify {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFSourceBufferNotify {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -42135,6 +42494,11 @@ pub struct IMFSourceBufferNotify_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFSourceOpenMonitor(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFSourceOpenMonitor {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFSourceOpenMonitor {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn OnSourceEvent<'a, Param0: ::windows::core::IntoParam<'a, IMFMediaEvent>>(&self, pevent: Param0) -> ::windows::core::Result<()> {
@@ -42161,11 +42525,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFSo
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFSourceOpenMonitor {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFSourceOpenMonitor {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -42190,6 +42549,11 @@ pub struct IMFSourceOpenMonitor_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFSourceReader(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFSourceReader {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFSourceReader {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -42260,11 +42624,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFSo
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFSourceReader {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFSourceReader {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -42310,6 +42669,11 @@ pub struct IMFSourceReader_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFSourceReaderCallback(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFSourceReaderCallback {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFSourceReaderCallback {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn OnReadSample<'a, Param4: ::windows::core::IntoParam<'a, IMFSample>>(&self, hrstatus: ::windows::core::HRESULT, dwstreamindex: u32, dwstreamflags: u32, lltimestamp: i64, psample: Param4) -> ::windows::core::Result<()> {
@@ -42344,11 +42708,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFSo
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFSourceReaderCallback {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFSourceReaderCallback {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -42375,6 +42734,11 @@ pub struct IMFSourceReaderCallback_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFSourceReaderCallback2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFSourceReaderCallback2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFSourceReaderCallback2 {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn OnReadSample<'a, Param4: ::windows::core::IntoParam<'a, IMFSample>>(&self, hrstatus: ::windows::core::HRESULT, dwstreamindex: u32, dwstreamflags: u32, lltimestamp: i64, psample: Param4) -> ::windows::core::Result<()> {
@@ -42437,11 +42801,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMFSourceReaderCallback> for &'a IMFSour
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFSourceReaderCallback2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFSourceReaderCallback2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -42467,6 +42826,11 @@ pub struct IMFSourceReaderCallback2_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFSourceReaderEx(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFSourceReaderEx {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFSourceReaderEx {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -42574,11 +42938,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMFSourceReader> for &'a IMFSourceReader
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFSourceReaderEx {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFSourceReaderEx {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -42606,6 +42965,11 @@ pub struct IMFSourceReaderEx_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFSourceResolver(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFSourceResolver {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFSourceResolver {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_UI_Shell_PropertiesSystem\"`*"]
     #[cfg(feature = "Win32_UI_Shell_PropertiesSystem")]
@@ -42660,11 +43024,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFSo
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFSourceResolver {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFSourceResolver {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -42707,6 +43066,11 @@ pub struct IMFSourceResolver_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFSpatialAudioObjectBuffer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFSpatialAudioObjectBuffer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFSpatialAudioObjectBuffer {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn Lock(&self, ppbbuffer: *mut *mut u8, pcbmaxlength: *mut u32, pcbcurrentlength: *mut u32) -> ::windows::core::Result<()> {
@@ -42797,11 +43161,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMFMediaBuffer> for &'a IMFSpatialAudioO
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFSpatialAudioObjectBuffer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFSpatialAudioObjectBuffer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -42839,6 +43198,11 @@ pub struct IMFSpatialAudioObjectBuffer_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFSpatialAudioSample(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFSpatialAudioSample {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFSpatialAudioSample {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com_StructuredStorage\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com_StructuredStorage"))]
@@ -43114,11 +43478,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMFSample> for &'a IMFSpatialAudioSample
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFSpatialAudioSample {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFSpatialAudioSample {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -43145,6 +43504,11 @@ pub struct IMFSpatialAudioSample_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFStreamDescriptor(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFStreamDescriptor {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFStreamDescriptor {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com_StructuredStorage\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com_StructuredStorage"))]
@@ -43333,11 +43697,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMFAttributes> for &'a IMFStreamDescript
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFStreamDescriptor {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFStreamDescriptor {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -43363,6 +43722,11 @@ pub struct IMFStreamDescriptor_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFStreamSink(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFStreamSink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFStreamSink {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetEvent(&self, dwflags: MEDIA_EVENT_GENERATOR_GET_EVENT_FLAGS) -> ::windows::core::Result<IMFMediaEvent> {
@@ -43452,11 +43816,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMFMediaEventGenerator> for &'a IMFStrea
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFStreamSink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFStreamSink {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -43489,6 +43848,11 @@ pub struct IMFStreamSink_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFStreamingSinkConfig(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFStreamingSinkConfig {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFStreamingSinkConfig {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -43514,11 +43878,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IMFStream
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFStreamingSinkConfig {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IMFStreamingSinkConfig {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IMFStreamingSinkConfig {
@@ -43548,6 +43907,11 @@ pub struct IMFStreamingSinkConfig_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFSystemId(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFSystemId {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFSystemId {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetData(&self, size: *mut u32, data: *mut *mut u8) -> ::windows::core::Result<()> {
@@ -43578,11 +43942,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFSy
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFSystemId {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFSystemId {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -43608,6 +43967,11 @@ pub struct IMFSystemId_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFTimecodeTranslate(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFTimecodeTranslate {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFTimecodeTranslate {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com_StructuredStorage\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com_StructuredStorage"))]
@@ -43650,11 +44014,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFTi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFTimecodeTranslate {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFTimecodeTranslate {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -43688,6 +44047,11 @@ pub struct IMFTimecodeTranslate_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFTimedText(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFTimedText {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFTimedText {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn RegisterNotifications<'a, Param0: ::windows::core::IntoParam<'a, IMFTimedTextNotify>>(&self, notify: Param0) -> ::windows::core::Result<()> {
@@ -43779,11 +44143,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFTi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFTimedText {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFTimedText {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -43836,6 +44195,11 @@ pub struct IMFTimedText_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFTimedTextBinary(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFTimedTextBinary {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFTimedTextBinary {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetData(&self, data: *mut *mut u8, length: *mut u32) -> ::windows::core::Result<()> {
@@ -43862,11 +44226,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFTi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFTimedTextBinary {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFTimedTextBinary {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -43891,6 +44250,11 @@ pub struct IMFTimedTextBinary_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFTimedTextBouten(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFTimedTextBouten {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFTimedTextBouten {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetBoutenType(&self) -> ::windows::core::Result<MF_TIMED_TEXT_BOUTEN_TYPE> {
@@ -43928,11 +44292,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFTi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFTimedTextBouten {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFTimedTextBouten {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -43959,6 +44318,11 @@ pub struct IMFTimedTextBouten_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFTimedTextCue(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFTimedTextCue {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFTimedTextCue {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetId(&self) -> u32 {
@@ -44030,11 +44394,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFTi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFTimedTextCue {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFTimedTextCue {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -44069,6 +44428,11 @@ pub struct IMFTimedTextCue_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFTimedTextCueList(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFTimedTextCueList {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFTimedTextCueList {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetLength(&self) -> u32 {
@@ -44124,11 +44488,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFTi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFTimedTextCueList {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFTimedTextCueList {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -44159,6 +44518,11 @@ pub struct IMFTimedTextCueList_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFTimedTextFormattedText(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFTimedTextFormattedText {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFTimedTextFormattedText {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetText(&self) -> ::windows::core::Result<::windows::core::PWSTR> {
@@ -44194,11 +44558,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFTi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFTimedTextFormattedText {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFTimedTextFormattedText {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -44225,6 +44584,11 @@ pub struct IMFTimedTextFormattedText_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFTimedTextNotify(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFTimedTextNotify {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFTimedTextNotify {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn TrackAdded(&self, trackid: u32) {
@@ -44276,11 +44640,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFTi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFTimedTextNotify {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFTimedTextNotify {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -44314,6 +44673,11 @@ pub struct IMFTimedTextNotify_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFTimedTextRegion(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFTimedTextRegion {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFTimedTextRegion {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetName(&self) -> ::windows::core::Result<::windows::core::PWSTR> {
@@ -44394,11 +44758,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFTi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFTimedTextRegion {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFTimedTextRegion {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -44440,6 +44799,11 @@ pub struct IMFTimedTextRegion_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFTimedTextRuby(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFTimedTextRuby {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFTimedTextRuby {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetRubyText(&self) -> ::windows::core::Result<::windows::core::PWSTR> {
@@ -44482,11 +44846,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFTi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFTimedTextRuby {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFTimedTextRuby {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -44514,6 +44873,11 @@ pub struct IMFTimedTextRuby_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFTimedTextStyle(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFTimedTextStyle {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFTimedTextStyle {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetName(&self) -> ::windows::core::Result<::windows::core::PWSTR> {
@@ -44602,11 +44966,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFTi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFTimedTextStyle {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFTimedTextStyle {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -44655,6 +45014,11 @@ pub struct IMFTimedTextStyle_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFTimedTextStyle2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFTimedTextStyle2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFTimedTextStyle2 {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetRuby(&self) -> ::windows::core::Result<IMFTimedTextRuby> {
@@ -44698,11 +45062,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFTi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFTimedTextStyle2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFTimedTextStyle2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -44733,6 +45092,11 @@ pub struct IMFTimedTextStyle2_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFTimedTextTrack(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFTimedTextTrack {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFTimedTextTrack {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetId(&self) -> u32 {
@@ -44814,11 +45178,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFTi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFTimedTextTrack {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFTimedTextTrack {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -44861,6 +45220,11 @@ pub struct IMFTimedTextTrack_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFTimedTextTrackList(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFTimedTextTrackList {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFTimedTextTrackList {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetLength(&self) -> u32 {
@@ -44897,11 +45261,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFTi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFTimedTextTrackList {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFTimedTextTrackList {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -44928,6 +45287,11 @@ pub struct IMFTimedTextTrackList_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFTimer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFTimer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFTimer {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn SetTimer<'a, Param2: ::windows::core::IntoParam<'a, IMFAsyncCallback>, Param3: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, dwflags: u32, llclocktime: i64, pcallback: Param2, punkstate: Param3) -> ::windows::core::Result<::windows::core::IUnknown> {
@@ -44959,11 +45323,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFTi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFTimer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFTimer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -44989,6 +45348,11 @@ pub struct IMFTimer_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFTopoLoader(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFTopoLoader {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFTopoLoader {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn Load<'a, Param0: ::windows::core::IntoParam<'a, IMFTopology>, Param2: ::windows::core::IntoParam<'a, IMFTopology>>(&self, pinputtopo: Param0, ppoutputtopo: *mut ::core::option::Option<IMFTopology>, pcurrenttopo: Param2) -> ::windows::core::Result<()> {
@@ -45015,11 +45379,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFTo
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFTopoLoader {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFTopoLoader {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -45044,6 +45403,11 @@ pub struct IMFTopoLoader_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFTopology(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFTopology {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFTopology {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com_StructuredStorage\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com_StructuredStorage"))]
@@ -45268,11 +45632,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMFAttributes> for &'a IMFTopology {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFTopology {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFTopology {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -45306,6 +45665,11 @@ pub struct IMFTopology_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFTopologyNode(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFTopologyNode {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFTopologyNode {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com_StructuredStorage\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com_StructuredStorage"))]
@@ -45555,11 +45919,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMFAttributes> for &'a IMFTopologyNode {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFTopologyNode {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFTopologyNode {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -45599,6 +45958,11 @@ pub struct IMFTopologyNode_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFTopologyNodeAttributeEditor(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFTopologyNodeAttributeEditor {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFTopologyNodeAttributeEditor {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn UpdateNodeAttributes(&self, topoid: u64, pupdates: &[MFTOPONODE_ATTRIBUTE_UPDATE]) -> ::windows::core::Result<()> {
@@ -45625,11 +45989,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFTo
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFTopologyNodeAttributeEditor {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFTopologyNodeAttributeEditor {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -45654,6 +46013,11 @@ pub struct IMFTopologyNodeAttributeEditor_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFTopologyServiceLookup(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFTopologyServiceLookup {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFTopologyServiceLookup {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn LookupService(&self, r#type: MF_SERVICE_LOOKUP_TYPE, dwindex: u32, guidservice: *const ::windows::core::GUID, riid: *const ::windows::core::GUID, ppvobjects: *mut *mut ::core::ffi::c_void, pnobjects: *mut u32) -> ::windows::core::Result<()> {
@@ -45680,11 +46044,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFTo
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFTopologyServiceLookup {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFTopologyServiceLookup {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -45709,6 +46068,11 @@ pub struct IMFTopologyServiceLookup_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFTopologyServiceLookupClient(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFTopologyServiceLookupClient {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFTopologyServiceLookupClient {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn InitServicePointers<'a, Param0: ::windows::core::IntoParam<'a, IMFTopologyServiceLookup>>(&self, plookup: Param0) -> ::windows::core::Result<()> {
@@ -45739,11 +46103,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFTo
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFTopologyServiceLookupClient {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFTopologyServiceLookupClient {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -45769,6 +46128,11 @@ pub struct IMFTopologyServiceLookupClient_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFTrackedSample(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFTrackedSample {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFTrackedSample {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn SetAllocator<'a, Param0: ::windows::core::IntoParam<'a, IMFAsyncCallback>, Param1: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, psampleallocator: Param0, punkstate: Param1) -> ::windows::core::Result<()> {
@@ -45795,11 +46159,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFTr
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFTrackedSample {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFTrackedSample {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -45824,6 +46183,11 @@ pub struct IMFTrackedSample_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFTranscodeProfile(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFTranscodeProfile {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFTranscodeProfile {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn SetAudioAttributes<'a, Param0: ::windows::core::IntoParam<'a, IMFAttributes>>(&self, pattrs: Param0) -> ::windows::core::Result<()> {
@@ -45873,11 +46237,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFTr
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFTranscodeProfile {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFTranscodeProfile {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -45907,6 +46266,11 @@ pub struct IMFTranscodeProfile_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFTranscodeSinkInfoProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFTranscodeSinkInfoProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFTranscodeSinkInfoProvider {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn SetOutputFile<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, pwszfilename: Param0) -> ::windows::core::Result<()> {
@@ -45946,11 +46310,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFTr
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFTranscodeSinkInfoProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFTranscodeSinkInfoProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -45978,6 +46337,11 @@ pub struct IMFTranscodeSinkInfoProvider_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFTransform(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFTransform {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFTransform {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetStreamLimits(&self, pdwinputminimum: *mut u32, pdwinputmaximum: *mut u32, pdwoutputminimum: *mut u32, pdwoutputmaximum: *mut u32) -> ::windows::core::Result<()> {
@@ -46103,11 +46467,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFTr
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFTransform {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFTransform {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -46154,6 +46513,11 @@ pub struct IMFTransform_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFTrustedInput(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFTrustedInput {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFTrustedInput {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetInputTrustAuthority(&self, dwstreamid: u32, riid: *const ::windows::core::GUID) -> ::windows::core::Result<::windows::core::IUnknown> {
@@ -46181,11 +46545,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFTr
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFTrustedInput {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFTrustedInput {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -46210,6 +46569,11 @@ pub struct IMFTrustedInput_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFTrustedOutput(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFTrustedOutput {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFTrustedOutput {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetOutputTrustAuthorityCount(&self) -> ::windows::core::Result<u32> {
@@ -46248,11 +46612,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFTr
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFTrustedOutput {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFTrustedOutput {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -46282,6 +46641,11 @@ pub struct IMFTrustedOutput_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFVideoCaptureSampleAllocator(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFVideoCaptureSampleAllocator {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFVideoCaptureSampleAllocator {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn SetDirectXManager<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, pmanager: Param0) -> ::windows::core::Result<()> {
@@ -46345,11 +46709,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMFVideoSampleAllocator> for &'a IMFVide
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFVideoCaptureSampleAllocator {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFVideoCaptureSampleAllocator {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -46374,6 +46733,11 @@ pub struct IMFVideoCaptureSampleAllocator_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFVideoDeviceID(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFVideoDeviceID {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFVideoDeviceID {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetDeviceID(&self) -> ::windows::core::Result<::windows::core::GUID> {
@@ -46401,11 +46765,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFVi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFVideoDeviceID {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFVideoDeviceID {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -46430,6 +46789,11 @@ pub struct IMFVideoDeviceID_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFVideoDisplayControl(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFVideoDisplayControl {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFVideoDisplayControl {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -46530,11 +46894,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFVi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFVideoDisplayControl {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFVideoDisplayControl {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -46601,6 +46960,11 @@ pub struct IMFVideoDisplayControl_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFVideoMediaType(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFVideoMediaType {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFVideoMediaType {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com_StructuredStorage\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com_StructuredStorage"))]
@@ -46832,11 +47196,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMFMediaType> for &'a IMFVideoMediaType 
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFVideoMediaType {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFVideoMediaType {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -46865,6 +47224,11 @@ pub struct IMFVideoMediaType_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFVideoMixerBitmap(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFVideoMixerBitmap {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFVideoMixerBitmap {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_Foundation\"`, `\"Win32_Graphics_Direct3D9\"`, `\"Win32_Graphics_Gdi\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Direct3D9", feature = "Win32_Graphics_Gdi"))]
@@ -46907,11 +47271,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFVi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFVideoMixerBitmap {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFVideoMixerBitmap {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -46948,6 +47307,11 @@ pub struct IMFVideoMixerBitmap_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFVideoMixerControl(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFVideoMixerControl {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFVideoMixerControl {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn SetStreamZOrder(&self, dwstreamid: u32, dwz: u32) -> ::windows::core::Result<()> {
@@ -46988,11 +47352,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFVi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFVideoMixerControl {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFVideoMixerControl {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -47020,6 +47379,11 @@ pub struct IMFVideoMixerControl_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFVideoMixerControl2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFVideoMixerControl2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFVideoMixerControl2 {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn SetStreamZOrder(&self, dwstreamid: u32, dwz: u32) -> ::windows::core::Result<()> {
@@ -47089,11 +47453,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMFVideoMixerControl> for &'a IMFVideoMi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFVideoMixerControl2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFVideoMixerControl2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -47119,6 +47478,11 @@ pub struct IMFVideoMixerControl2_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFVideoPositionMapper(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFVideoPositionMapper {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFVideoPositionMapper {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn MapOutputCoordinateToInputStream(&self, xout: f32, yout: f32, dwoutputstreamindex: u32, dwinputstreamindex: u32, pxin: *mut f32, pyin: *mut f32) -> ::windows::core::Result<()> {
@@ -47145,11 +47509,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFVi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFVideoPositionMapper {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFVideoPositionMapper {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -47174,6 +47533,11 @@ pub struct IMFVideoPositionMapper_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFVideoPresenter(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFVideoPresenter {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFVideoPresenter {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn OnClockStart(&self, hnssystemtime: i64, llclockstartoffset: i64) -> ::windows::core::Result<()> {
@@ -47245,11 +47609,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMFClockStateSink> for &'a IMFVideoPrese
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFVideoPresenter {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFVideoPresenter {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -47275,6 +47634,11 @@ pub struct IMFVideoPresenter_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFVideoProcessor(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFVideoProcessor {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFVideoProcessor {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetAvailableVideoProcessorModes(&self, lpdwnumprocessingmodes: *mut u32, ppvideoprocessingmodes: *mut *mut ::windows::core::GUID) -> ::windows::core::Result<()> {
@@ -47353,11 +47717,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFVi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFVideoProcessor {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFVideoProcessor {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -47396,6 +47755,11 @@ pub struct IMFVideoProcessor_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFVideoProcessorControl(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFVideoProcessorControl {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFVideoProcessorControl {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn SetBorderColor(&self, pbordercolor: *const MFARGB) -> ::windows::core::Result<()> {
@@ -47445,11 +47809,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFVi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFVideoProcessorControl {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFVideoProcessorControl {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -47488,6 +47847,11 @@ pub struct IMFVideoProcessorControl_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFVideoProcessorControl2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFVideoProcessorControl2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFVideoProcessorControl2 {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn SetBorderColor(&self, pbordercolor: *const MFARGB) -> ::windows::core::Result<()> {
@@ -47571,11 +47935,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMFVideoProcessorControl> for &'a IMFVid
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFVideoProcessorControl2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFVideoProcessorControl2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -47605,6 +47964,11 @@ pub struct IMFVideoProcessorControl2_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFVideoProcessorControl3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFVideoProcessorControl3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFVideoProcessorControl3 {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn SetBorderColor(&self, pbordercolor: *const MFARGB) -> ::windows::core::Result<()> {
@@ -47726,11 +48090,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMFVideoProcessorControl2> for &'a IMFVi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFVideoProcessorControl3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFVideoProcessorControl3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -47761,6 +48120,11 @@ pub struct IMFVideoProcessorControl3_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFVideoRenderer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFVideoRenderer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFVideoRenderer {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn InitializeRenderer<'a, Param0: ::windows::core::IntoParam<'a, IMFTransform>, Param1: ::windows::core::IntoParam<'a, IMFVideoPresenter>>(&self, pvideomixer: Param0, pvideopresenter: Param1) -> ::windows::core::Result<()> {
@@ -47787,11 +48151,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFVi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFVideoRenderer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFVideoRenderer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -47816,6 +48175,11 @@ pub struct IMFVideoRenderer_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFVideoRendererEffectControl(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFVideoRendererEffectControl {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFVideoRendererEffectControl {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn OnAppServiceConnectionEstablished<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, pappserviceconnection: Param0) -> ::windows::core::Result<()> {
@@ -47842,11 +48206,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFVi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFVideoRendererEffectControl {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFVideoRendererEffectControl {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -47871,6 +48230,11 @@ pub struct IMFVideoRendererEffectControl_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFVideoSampleAllocator(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFVideoSampleAllocator {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFVideoSampleAllocator {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn SetDirectXManager<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, pmanager: Param0) -> ::windows::core::Result<()> {
@@ -47910,11 +48274,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFVi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFVideoSampleAllocator {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFVideoSampleAllocator {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -47942,6 +48301,11 @@ pub struct IMFVideoSampleAllocator_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFVideoSampleAllocatorCallback(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFVideoSampleAllocatorCallback {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFVideoSampleAllocatorCallback {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn SetCallback<'a, Param0: ::windows::core::IntoParam<'a, IMFVideoSampleAllocatorNotify>>(&self, pnotify: Param0) -> ::windows::core::Result<()> {
@@ -47973,11 +48337,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFVi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFVideoSampleAllocatorCallback {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFVideoSampleAllocatorCallback {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -48003,6 +48362,11 @@ pub struct IMFVideoSampleAllocatorCallback_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFVideoSampleAllocatorEx(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFVideoSampleAllocatorEx {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFVideoSampleAllocatorEx {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn SetDirectXManager<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, pmanager: Param0) -> ::windows::core::Result<()> {
@@ -48066,11 +48430,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMFVideoSampleAllocator> for &'a IMFVide
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFVideoSampleAllocatorEx {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFVideoSampleAllocatorEx {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -48095,6 +48454,11 @@ pub struct IMFVideoSampleAllocatorEx_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFVideoSampleAllocatorNotify(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFVideoSampleAllocatorNotify {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFVideoSampleAllocatorNotify {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn NotifyRelease(&self) -> ::windows::core::Result<()> {
@@ -48121,11 +48485,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFVi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFVideoSampleAllocatorNotify {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFVideoSampleAllocatorNotify {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -48150,6 +48509,11 @@ pub struct IMFVideoSampleAllocatorNotify_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFVideoSampleAllocatorNotifyEx(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFVideoSampleAllocatorNotifyEx {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFVideoSampleAllocatorNotifyEx {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn NotifyRelease(&self) -> ::windows::core::Result<()> {
@@ -48200,11 +48564,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMFVideoSampleAllocatorNotify> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFVideoSampleAllocatorNotifyEx {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFVideoSampleAllocatorNotifyEx {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -48229,6 +48588,11 @@ pub struct IMFVideoSampleAllocatorNotifyEx_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFVirtualCamera(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFVirtualCamera {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFVirtualCamera {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com_StructuredStorage\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com_StructuredStorage"))]
@@ -48457,11 +48821,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMFAttributes> for &'a IMFVirtualCamera 
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFVirtualCamera {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFVirtualCamera {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -48505,6 +48864,11 @@ pub struct IMFVirtualCamera_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFWorkQueueServices(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFWorkQueueServices {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFWorkQueueServices {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn BeginRegisterTopologyWorkQueuesWithMMCSS<'a, Param0: ::windows::core::IntoParam<'a, IMFAsyncCallback>, Param1: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, pcallback: Param0, pstate: Param1) -> ::windows::core::Result<()> {
@@ -48578,11 +48942,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFWo
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFWorkQueueServices {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFWorkQueueServices {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -48618,6 +48977,11 @@ pub struct IMFWorkQueueServices_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IMFWorkQueueServicesEx(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFWorkQueueServicesEx {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFWorkQueueServicesEx {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn BeginRegisterTopologyWorkQueuesWithMMCSS<'a, Param0: ::windows::core::IntoParam<'a, IMFAsyncCallback>, Param1: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, pcallback: Param0, pstate: Param1) -> ::windows::core::Result<()> {
@@ -48725,11 +49089,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMFWorkQueueServices> for &'a IMFWorkQue
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFWorkQueueServicesEx {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFWorkQueueServicesEx {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -48756,6 +49115,11 @@ pub struct IMFWorkQueueServicesEx_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IOPMVideoOutput(::windows::core::IUnknown);
+impl ::core::clone::Clone for IOPMVideoOutput {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IOPMVideoOutput {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn StartInitialization(&self, prnrandomnumber: *mut OPM_RANDOM_NUMBER, ppbcertificate: *mut *mut u8, pulcertificatelength: *mut u32) -> ::windows::core::Result<()> {
@@ -48800,11 +49164,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IOPMV
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IOPMVideoOutput {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IOPMVideoOutput {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -48833,6 +49192,11 @@ pub struct IOPMVideoOutput_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IPlayToControl(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPlayToControl {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPlayToControl {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn Connect<'a, Param0: ::windows::core::IntoParam<'a, IMFSharingEngineClassFactory>>(&self, pfactory: Param0) -> ::windows::core::Result<()> {
@@ -48863,11 +49227,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPlay
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPlayToControl {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPlayToControl {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -48893,6 +49252,11 @@ pub struct IPlayToControl_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IPlayToControlWithCapabilities(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPlayToControlWithCapabilities {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPlayToControlWithCapabilities {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn Connect<'a, Param0: ::windows::core::IntoParam<'a, IMFSharingEngineClassFactory>>(&self, pfactory: Param0) -> ::windows::core::Result<()> {
@@ -48948,11 +49312,6 @@ impl<'a> ::windows::core::IntoParam<'a, IPlayToControl> for &'a IPlayToControlWi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPlayToControlWithCapabilities {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPlayToControlWithCapabilities {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -48977,6 +49336,11 @@ pub struct IPlayToControlWithCapabilities_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IPlayToSourceClassFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPlayToSourceClassFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPlayToSourceClassFactory {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn CreateInstance<'a, Param1: ::windows::core::IntoParam<'a, IPlayToControl>>(&self, dwflags: u32, pcontrol: Param1) -> ::windows::core::Result<::windows::core::IInspectable> {
@@ -49004,11 +49368,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPlay
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPlayToSourceClassFactory {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPlayToSourceClassFactory {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -49033,6 +49392,11 @@ pub struct IPlayToSourceClassFactory_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IToc(::windows::core::IUnknown);
+impl ::core::clone::Clone for IToc {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IToc {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn SetDescriptor(&self, pdescriptor: *mut TOC_DESCRIPTOR) -> ::windows::core::Result<()> {
@@ -49100,11 +49464,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IToc 
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IToc {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IToc {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -49139,6 +49498,11 @@ pub struct IToc_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct ITocCollection(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITocCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITocCollection {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetEntryCount(&self, pdwentrycount: *mut u32) -> ::windows::core::Result<()> {
@@ -49182,11 +49546,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITocC
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITocCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITocCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -49215,6 +49574,11 @@ pub struct ITocCollection_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct ITocEntry(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITocEntry {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITocEntry {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn SetTitle<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, pwsztitle: Param0) -> ::windows::core::Result<()> {
@@ -49269,11 +49633,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITocE
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITocEntry {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITocEntry {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -49305,6 +49664,11 @@ pub struct ITocEntry_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct ITocEntryList(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITocEntryList {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITocEntryList {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetEntryCount(&self, pdwentrycount: *mut u32) -> ::windows::core::Result<()> {
@@ -49348,11 +49712,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITocE
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITocEntryList {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITocEntryList {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -49381,6 +49740,11 @@ pub struct ITocEntryList_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct ITocParser(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITocParser {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITocParser {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn Init<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, pwszfilename: Param0) -> ::windows::core::Result<()> {
@@ -49437,11 +49801,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITocP
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITocParser {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITocParser {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -49473,6 +49832,11 @@ pub struct ITocParser_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IValidateBinding(::windows::core::IUnknown);
+impl ::core::clone::Clone for IValidateBinding {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IValidateBinding {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetIdentifier<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::GUID>>(&self, guidlicensorid: Param0, pbephemeron: &[u8], ppbblobvalidationid: *mut *mut u8, pcbblobsize: *mut u32) -> ::windows::core::Result<()> {
@@ -49499,11 +49863,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IVali
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IValidateBinding {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IValidateBinding {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -49528,6 +49887,11 @@ pub struct IValidateBinding_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IWMCodecLeakyBucket(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMCodecLeakyBucket {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMCodecLeakyBucket {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn SetBufferSizeBits(&self, ulbuffersize: u32) -> ::windows::core::Result<()> {
@@ -49566,11 +49930,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWMCo
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWMCodecLeakyBucket {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWMCodecLeakyBucket {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -49598,6 +49957,11 @@ pub struct IWMCodecLeakyBucket_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IWMCodecOutputTimestamp(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMCodecOutputTimestamp {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMCodecOutputTimestamp {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetNextOutputTime(&self, prttime: *mut i64) -> ::windows::core::Result<()> {
@@ -49624,11 +49988,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWMCo
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWMCodecOutputTimestamp {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWMCodecOutputTimestamp {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -49653,6 +50012,11 @@ pub struct IWMCodecOutputTimestamp_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IWMCodecPrivateData(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMCodecPrivateData {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMCodecPrivateData {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_Foundation\"`, `\"Win32_Media_DxMediaObjects\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Media_DxMediaObjects"))]
@@ -49684,11 +50048,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWMCo
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWMCodecPrivateData {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWMCodecPrivateData {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -49717,6 +50076,11 @@ pub struct IWMCodecPrivateData_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IWMCodecProps(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMCodecProps {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMCodecProps {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_Foundation\"`, `\"Win32_Media_DxMediaObjects\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Media_DxMediaObjects"))]
@@ -49748,11 +50112,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWMCo
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWMCodecProps {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWMCodecProps {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -49781,6 +50140,11 @@ pub struct IWMCodecProps_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IWMCodecStrings(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMCodecStrings {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMCodecStrings {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_Foundation\"`, `\"Win32_Media_DxMediaObjects\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Media_DxMediaObjects"))]
@@ -49811,11 +50175,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IWMCodecS
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWMCodecStrings {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IWMCodecStrings {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IWMCodecStrings {
@@ -49849,6 +50208,11 @@ pub struct IWMCodecStrings_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IWMColorConvProps(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMColorConvProps {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMColorConvProps {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn SetMode(&self, lmode: i32) -> ::windows::core::Result<()> {
@@ -49879,11 +50243,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWMCo
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWMColorConvProps {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWMColorConvProps {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -49909,6 +50268,11 @@ pub struct IWMColorConvProps_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IWMColorLegalizerProps(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMColorLegalizerProps {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMColorLegalizerProps {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn SetColorLegalizerQuality(&self, lquality: i32) -> ::windows::core::Result<()> {
@@ -49935,11 +50299,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWMCo
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWMColorLegalizerProps {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWMColorLegalizerProps {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -49964,6 +50323,11 @@ pub struct IWMColorLegalizerProps_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IWMFrameInterpProps(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMFrameInterpProps {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMFrameInterpProps {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn SetFrameRateIn(&self, lframerate: i32, lscale: i32) -> ::windows::core::Result<()> {
@@ -50003,11 +50367,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWMFr
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWMFrameInterpProps {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWMFrameInterpProps {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -50038,6 +50397,11 @@ pub struct IWMFrameInterpProps_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IWMInterlaceProps(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMInterlaceProps {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMInterlaceProps {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn SetProcessType(&self, iprocesstype: i32) -> ::windows::core::Result<()> {
@@ -50072,11 +50436,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWMIn
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWMInterlaceProps {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWMInterlaceProps {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -50103,6 +50462,11 @@ pub struct IWMInterlaceProps_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IWMResamplerProps(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMResamplerProps {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMResamplerProps {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn SetHalfFilterLength(&self, lhalffilterlen: i32) -> ::windows::core::Result<()> {
@@ -50133,11 +50497,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWMRe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWMResamplerProps {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWMResamplerProps {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -50163,6 +50522,11 @@ pub struct IWMResamplerProps_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IWMResizerProps(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMResizerProps {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMResizerProps {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn SetResizerQuality(&self, lquality: i32) -> ::windows::core::Result<()> {
@@ -50205,11 +50569,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWMRe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWMResizerProps {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWMResizerProps {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -50238,6 +50597,11 @@ pub struct IWMResizerProps_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IWMSampleExtensionSupport(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMSampleExtensionSupport {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMSampleExtensionSupport {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -50263,11 +50627,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IWMSample
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWMSampleExtensionSupport {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IWMSampleExtensionSupport {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IWMSampleExtensionSupport {
@@ -50297,6 +50656,11 @@ pub struct IWMSampleExtensionSupport_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IWMValidate(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMValidate {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMValidate {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn SetIdentifier<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::GUID>>(&self, guidvalidationid: Param0) -> ::windows::core::Result<()> {
@@ -50323,11 +50687,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWMVa
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWMValidate {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWMValidate {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -50352,6 +50711,11 @@ pub struct IWMValidate_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IWMVideoDecoderHurryup(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMVideoDecoderHurryup {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMVideoDecoderHurryup {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn SetHurryup(&self, lhurryup: i32) -> ::windows::core::Result<()> {
@@ -50382,11 +50746,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWMVi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWMVideoDecoderHurryup {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWMVideoDecoderHurryup {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -50412,6 +50771,11 @@ pub struct IWMVideoDecoderHurryup_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IWMVideoDecoderReconBuffer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMVideoDecoderReconBuffer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMVideoDecoderReconBuffer {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetReconstructedVideoFrameSize(&self, pdwsize: *mut u32) -> ::windows::core::Result<()> {
@@ -50448,11 +50812,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWMVi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWMVideoDecoderReconBuffer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWMVideoDecoderReconBuffer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -50485,6 +50844,11 @@ pub struct IWMVideoDecoderReconBuffer_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct IWMVideoForceKeyFrame(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMVideoForceKeyFrame {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMVideoForceKeyFrame {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn SetKeyFrame(&self) -> ::windows::core::Result<()> {
@@ -50509,11 +50873,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IWMVideoF
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWMVideoForceKeyFrame {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IWMVideoForceKeyFrame {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IWMVideoForceKeyFrame {
@@ -50560,6 +50919,7 @@ impl ::core::default::Default for KSMETHOD_OPMVIDEOOUTPUT {
 }
 unsafe impl ::windows::core::Abi for KSMETHOD_OPMVIDEOOUTPUT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSMETHOD_OPMVIDEOOUTPUT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -50590,6 +50950,7 @@ impl ::core::fmt::Debug for MACROBLOCK_DATA {
 }
 unsafe impl ::windows::core::Abi for MACROBLOCK_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MACROBLOCK_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -50712,6 +51073,7 @@ impl ::core::default::Default for MEDIA_EVENT_GENERATOR_GET_EVENT_FLAGS {
 }
 unsafe impl ::windows::core::Abi for MEDIA_EVENT_GENERATOR_GET_EVENT_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MEDIA_EVENT_GENERATOR_GET_EVENT_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -50746,6 +51108,7 @@ impl ::core::default::Default for MF2DBuffer_LockFlags {
 }
 unsafe impl ::windows::core::Abi for MF2DBuffer_LockFlags {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF2DBuffer_LockFlags {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -50773,6 +51136,7 @@ impl ::core::default::Default for MF3DVideoOutputType {
 }
 unsafe impl ::windows::core::Abi for MF3DVideoOutputType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF3DVideoOutputType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -50802,6 +51166,7 @@ impl ::core::fmt::Debug for MFARGB {
 }
 unsafe impl ::windows::core::Abi for MFARGB {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MFARGB {
     fn eq(&self, other: &Self) -> bool {
@@ -50861,6 +51226,7 @@ impl ::core::default::Default for MFASF_INDEXER_FLAGS {
 }
 unsafe impl ::windows::core::Abi for MFASF_INDEXER_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MFASF_INDEXER_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -50890,6 +51256,7 @@ impl ::core::default::Default for MFASF_MULTIPLEXERFLAGS {
 }
 unsafe impl ::windows::core::Abi for MFASF_MULTIPLEXERFLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MFASF_MULTIPLEXERFLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -50921,6 +51288,7 @@ impl ::core::default::Default for MFASF_SPLITTERFLAGS {
 }
 unsafe impl ::windows::core::Abi for MFASF_SPLITTERFLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MFASF_SPLITTERFLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -50948,6 +51316,7 @@ impl ::core::default::Default for MFASF_STREAMSELECTOR_FLAGS {
 }
 unsafe impl ::windows::core::Abi for MFASF_STREAMSELECTOR_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MFASF_STREAMSELECTOR_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -50957,6 +51326,11 @@ impl ::core::fmt::Debug for MFASF_STREAMSELECTOR_FLAGS {
 #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
 #[repr(transparent)]
 pub struct MFASYNCRESULT(::windows::core::IUnknown);
+impl ::core::clone::Clone for MFASYNCRESULT {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl MFASYNCRESULT {
     #[doc = "*Required features: `\"Win32_Media_MediaFoundation\"`*"]
     pub unsafe fn GetState(&self) -> ::windows::core::Result<::windows::core::IUnknown> {
@@ -51019,11 +51393,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMFAsyncResult> for MFASYNCRESULT {
 impl<'a> ::windows::core::IntoParam<'a, IMFAsyncResult> for &'a MFASYNCRESULT {
     fn into_param(self) -> ::windows::core::Param<'a, IMFAsyncResult> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for MFASYNCRESULT {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for MFASYNCRESULT {
@@ -51097,6 +51466,7 @@ impl ::core::default::Default for MFASYNC_WORKQUEUE_TYPE {
 }
 unsafe impl ::windows::core::Abi for MFASYNC_WORKQUEUE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MFASYNC_WORKQUEUE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -51124,6 +51494,7 @@ impl ::core::fmt::Debug for MFAYUVSample {
 }
 unsafe impl ::windows::core::Abi for MFAYUVSample {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MFAYUVSample {
     fn eq(&self, other: &Self) -> bool {
@@ -51223,6 +51594,7 @@ impl ::core::default::Default for MFAudioConstriction {
 }
 unsafe impl ::windows::core::Abi for MFAudioConstriction {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MFAudioConstriction {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -51248,6 +51620,7 @@ impl ::core::fmt::Debug for MFAudioDecoderDegradationInfo {
 }
 unsafe impl ::windows::core::Abi for MFAudioDecoderDegradationInfo {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MFAudioDecoderDegradationInfo {
     fn eq(&self, other: &Self) -> bool {
@@ -51341,6 +51714,7 @@ impl ::core::fmt::Debug for MFBYTESTREAM_BUFFERING_PARAMS {
 }
 unsafe impl ::windows::core::Abi for MFBYTESTREAM_BUFFERING_PARAMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MFBYTESTREAM_BUFFERING_PARAMS {
     fn eq(&self, other: &Self) -> bool {
@@ -51392,6 +51766,7 @@ impl ::core::default::Default for MFBYTESTREAM_SEEK_ORIGIN {
 }
 unsafe impl ::windows::core::Abi for MFBYTESTREAM_SEEK_ORIGIN {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MFBYTESTREAM_SEEK_ORIGIN {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -51486,6 +51861,7 @@ impl ::core::default::Default for MFCLOCK_CHARACTERISTICS_FLAGS {
 }
 unsafe impl ::windows::core::Abi for MFCLOCK_CHARACTERISTICS_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MFCLOCK_CHARACTERISTICS_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -51523,6 +51899,7 @@ impl ::core::fmt::Debug for MFCLOCK_PROPERTIES {
 }
 unsafe impl ::windows::core::Abi for MFCLOCK_PROPERTIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MFCLOCK_PROPERTIES {
     fn eq(&self, other: &Self) -> bool {
@@ -51554,6 +51931,7 @@ impl ::core::default::Default for MFCLOCK_RELATIONAL_FLAGS {
 }
 unsafe impl ::windows::core::Abi for MFCLOCK_RELATIONAL_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MFCLOCK_RELATIONAL_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -51585,6 +51963,7 @@ impl ::core::default::Default for MFCLOCK_STATE {
 }
 unsafe impl ::windows::core::Abi for MFCLOCK_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MFCLOCK_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -51639,6 +52018,7 @@ impl ::core::fmt::Debug for MFCONTENTPROTECTIONDEVICE_INPUT_DATA {
 }
 unsafe impl ::windows::core::Abi for MFCONTENTPROTECTIONDEVICE_INPUT_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MFCONTENTPROTECTIONDEVICE_INPUT_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -51683,6 +52063,7 @@ impl ::core::fmt::Debug for MFCONTENTPROTECTIONDEVICE_OUTPUT_DATA {
 }
 unsafe impl ::windows::core::Abi for MFCONTENTPROTECTIONDEVICE_OUTPUT_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MFCONTENTPROTECTIONDEVICE_OUTPUT_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -51715,6 +52096,7 @@ impl ::core::fmt::Debug for MFCONTENTPROTECTIONDEVICE_REALTIMECLIENT_DATA {
 }
 unsafe impl ::windows::core::Abi for MFCONTENTPROTECTIONDEVICE_REALTIMECLIENT_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MFCONTENTPROTECTIONDEVICE_REALTIMECLIENT_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -51779,6 +52161,7 @@ impl ::core::fmt::Debug for MFCameraExtrinsic_CalibratedTransform {
 }
 unsafe impl ::windows::core::Abi for MFCameraExtrinsic_CalibratedTransform {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MFCameraExtrinsic_CalibratedTransform {
     fn eq(&self, other: &Self) -> bool {
@@ -51810,6 +52193,7 @@ impl ::core::fmt::Debug for MFCameraExtrinsics {
 }
 unsafe impl ::windows::core::Abi for MFCameraExtrinsics {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MFCameraExtrinsics {
     fn eq(&self, other: &Self) -> bool {
@@ -51843,6 +52227,7 @@ impl ::core::fmt::Debug for MFCameraIntrinsic_CameraModel {
 }
 unsafe impl ::windows::core::Abi for MFCameraIntrinsic_CameraModel {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MFCameraIntrinsic_CameraModel {
     fn eq(&self, other: &Self) -> bool {
@@ -51877,6 +52262,7 @@ impl ::core::fmt::Debug for MFCameraIntrinsic_DistortionModel {
 }
 unsafe impl ::windows::core::Abi for MFCameraIntrinsic_DistortionModel {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MFCameraIntrinsic_DistortionModel {
     fn eq(&self, other: &Self) -> bool {
@@ -51914,6 +52300,7 @@ impl ::core::fmt::Debug for MFCameraIntrinsic_DistortionModel6KT {
 }
 unsafe impl ::windows::core::Abi for MFCameraIntrinsic_DistortionModel6KT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MFCameraIntrinsic_DistortionModel6KT {
     fn eq(&self, other: &Self) -> bool {
@@ -51948,6 +52335,7 @@ impl ::core::fmt::Debug for MFCameraIntrinsic_DistortionModelArcTan {
 }
 unsafe impl ::windows::core::Abi for MFCameraIntrinsic_DistortionModelArcTan {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MFCameraIntrinsic_DistortionModelArcTan {
     fn eq(&self, other: &Self) -> bool {
@@ -51981,6 +52369,7 @@ impl ::core::default::Default for MFCameraIntrinsic_DistortionModelType {
 }
 unsafe impl ::windows::core::Abi for MFCameraIntrinsic_DistortionModelType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MFCameraIntrinsic_DistortionModelType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -52006,6 +52395,7 @@ impl ::core::fmt::Debug for MFCameraIntrinsic_PinholeCameraModel {
 }
 unsafe impl ::windows::core::Abi for MFCameraIntrinsic_PinholeCameraModel {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MFCameraIntrinsic_PinholeCameraModel {
     fn eq(&self, other: &Self) -> bool {
@@ -52041,6 +52431,7 @@ impl ::core::default::Default for MFCameraOcclusionState {
 }
 unsafe impl ::windows::core::Abi for MFCameraOcclusionState {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MFCameraOcclusionState {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -54048,6 +54439,7 @@ impl ::core::default::Default for MFDepthMeasurement {
 }
 unsafe impl ::windows::core::Abi for MFDepthMeasurement {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MFDepthMeasurement {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -54171,6 +54563,7 @@ impl ::core::fmt::Debug for MFExtendedCameraIntrinsic_IntrinsicModel {
 }
 unsafe impl ::windows::core::Abi for MFExtendedCameraIntrinsic_IntrinsicModel {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MFExtendedCameraIntrinsic_IntrinsicModel {
     fn eq(&self, other: &Self) -> bool {
@@ -54207,6 +54600,7 @@ impl ::core::fmt::Debug for MFFOLDDOWN_MATRIX {
 }
 unsafe impl ::windows::core::Abi for MFFOLDDOWN_MATRIX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MFFOLDDOWN_MATRIX {
     fn eq(&self, other: &Self) -> bool {
@@ -54261,6 +54655,7 @@ impl ::core::default::Default for MFFrameSourceTypes {
 }
 unsafe impl ::windows::core::Abi for MFFrameSourceTypes {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MFFrameSourceTypes {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -54599,6 +54994,7 @@ impl ::core::fmt::Debug for MFINPUTTRUSTAUTHORITY_ACCESS_ACTION {
 }
 unsafe impl ::windows::core::Abi for MFINPUTTRUSTAUTHORITY_ACCESS_ACTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MFINPUTTRUSTAUTHORITY_ACCESS_ACTION {
     fn eq(&self, other: &Self) -> bool {
@@ -54636,6 +55032,7 @@ impl ::core::fmt::Debug for MFINPUTTRUSTAUTHORITY_ACCESS_PARAMS {
 }
 unsafe impl ::windows::core::Abi for MFINPUTTRUSTAUTHORITY_ACCESS_PARAMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MFINPUTTRUSTAUTHORITY_ACCESS_PARAMS {
     fn eq(&self, other: &Self) -> bool {
@@ -54979,6 +55376,7 @@ impl ::core::default::Default for MFMEDIASOURCE_CHARACTERISTICS {
 }
 unsafe impl ::windows::core::Abi for MFMEDIASOURCE_CHARACTERISTICS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MFMEDIASOURCE_CHARACTERISTICS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -55036,6 +55434,7 @@ impl ::core::fmt::Debug for MFMPEG2DLNASINKSTATS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MFMPEG2DLNASINKSTATS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MFMPEG2DLNASINKSTATS {
@@ -55102,6 +55501,7 @@ impl ::core::fmt::Debug for MFMediaKeyStatus {
 }
 unsafe impl ::windows::core::Abi for MFMediaKeyStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MFMediaKeyStatus {
     fn eq(&self, other: &Self) -> bool {
@@ -55159,6 +55559,7 @@ impl ::core::default::Default for MFNETSOURCE_CACHE_STATE {
 }
 unsafe impl ::windows::core::Abi for MFNETSOURCE_CACHE_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MFNETSOURCE_CACHE_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -55220,6 +55621,7 @@ impl ::core::default::Default for MFNETSOURCE_PROTOCOL_TYPE {
 }
 unsafe impl ::windows::core::Abi for MFNETSOURCE_PROTOCOL_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MFNETSOURCE_PROTOCOL_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -55315,6 +55717,7 @@ impl ::core::default::Default for MFNETSOURCE_STATISTICS_IDS {
 }
 unsafe impl ::windows::core::Abi for MFNETSOURCE_STATISTICS_IDS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MFNETSOURCE_STATISTICS_IDS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -55346,6 +55749,7 @@ impl ::core::default::Default for MFNETSOURCE_TRANSPORT_TYPE {
 }
 unsafe impl ::windows::core::Abi for MFNETSOURCE_TRANSPORT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MFNETSOURCE_TRANSPORT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -55378,6 +55782,7 @@ impl ::core::default::Default for MFNET_PROXYSETTINGS {
 }
 unsafe impl ::windows::core::Abi for MFNET_PROXYSETTINGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MFNET_PROXYSETTINGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -55408,6 +55813,7 @@ impl ::core::default::Default for MFNetAuthenticationFlags {
 }
 unsafe impl ::windows::core::Abi for MFNetAuthenticationFlags {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MFNetAuthenticationFlags {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -55444,6 +55850,7 @@ impl ::core::fmt::Debug for MFNetCredentialManagerGetParam {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MFNetCredentialManagerGetParam {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MFNetCredentialManagerGetParam {
@@ -55482,6 +55889,7 @@ impl ::core::default::Default for MFNetCredentialOptions {
 }
 unsafe impl ::windows::core::Abi for MFNetCredentialOptions {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MFNetCredentialOptions {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -55509,6 +55917,7 @@ impl ::core::default::Default for MFNetCredentialRequirements {
 }
 unsafe impl ::windows::core::Abi for MFNetCredentialRequirements {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MFNetCredentialRequirements {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -55550,6 +55959,7 @@ impl ::core::default::Default for MFNominalRange {
 }
 unsafe impl ::windows::core::Abi for MFNominalRange {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MFNominalRange {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -55575,6 +55985,7 @@ impl ::core::fmt::Debug for MFOffset {
 }
 unsafe impl ::windows::core::Abi for MFOffset {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MFOffset {
     fn eq(&self, other: &Self) -> bool {
@@ -55626,6 +56037,7 @@ impl ::core::default::Default for MFPMPSESSION_CREATION_FLAGS {
 }
 unsafe impl ::windows::core::Abi for MFPMPSESSION_CREATION_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MFPMPSESSION_CREATION_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -55667,6 +56079,7 @@ impl ::core::default::Default for MFPOLICYMANAGER_ACTION {
 }
 unsafe impl ::windows::core::Abi for MFPOLICYMANAGER_ACTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MFPOLICYMANAGER_ACTION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -55748,6 +56161,7 @@ impl ::core::fmt::Debug for MFP_ACQUIRE_USER_CREDENTIAL_EVENT {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_UI_Shell_PropertiesSystem"))]
 unsafe impl ::windows::core::Abi for MFP_ACQUIRE_USER_CREDENTIAL_EVENT {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_UI_Shell_PropertiesSystem"))]
 impl ::core::cmp::PartialEq for MFP_ACQUIRE_USER_CREDENTIAL_EVENT {
@@ -55788,6 +56202,7 @@ impl ::core::default::Default for MFP_CREATION_OPTIONS {
 }
 unsafe impl ::windows::core::Abi for MFP_CREATION_OPTIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MFP_CREATION_OPTIONS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -55815,6 +56230,7 @@ impl ::core::fmt::Debug for MFP_ERROR_EVENT {
 #[cfg(feature = "Win32_UI_Shell_PropertiesSystem")]
 unsafe impl ::windows::core::Abi for MFP_ERROR_EVENT {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_UI_Shell_PropertiesSystem")]
 impl ::core::cmp::PartialEq for MFP_ERROR_EVENT {
@@ -55861,6 +56277,7 @@ impl ::core::fmt::Debug for MFP_EVENT_HEADER {
 #[cfg(feature = "Win32_UI_Shell_PropertiesSystem")]
 unsafe impl ::windows::core::Abi for MFP_EVENT_HEADER {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_UI_Shell_PropertiesSystem")]
 impl ::core::cmp::PartialEq for MFP_EVENT_HEADER {
@@ -55919,6 +56336,7 @@ impl ::core::default::Default for MFP_EVENT_TYPE {
 }
 unsafe impl ::windows::core::Abi for MFP_EVENT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MFP_EVENT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -55947,6 +56365,7 @@ impl ::core::fmt::Debug for MFP_FRAME_STEP_EVENT {
 #[cfg(feature = "Win32_UI_Shell_PropertiesSystem")]
 unsafe impl ::windows::core::Abi for MFP_FRAME_STEP_EVENT {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_UI_Shell_PropertiesSystem")]
 impl ::core::cmp::PartialEq for MFP_FRAME_STEP_EVENT {
@@ -55984,6 +56403,7 @@ impl ::core::fmt::Debug for MFP_MEDIAITEM_CLEARED_EVENT {
 #[cfg(feature = "Win32_UI_Shell_PropertiesSystem")]
 unsafe impl ::windows::core::Abi for MFP_MEDIAITEM_CLEARED_EVENT {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_UI_Shell_PropertiesSystem")]
 impl ::core::cmp::PartialEq for MFP_MEDIAITEM_CLEARED_EVENT {
@@ -56022,6 +56442,7 @@ impl ::core::fmt::Debug for MFP_MEDIAITEM_CREATED_EVENT {
 #[cfg(feature = "Win32_UI_Shell_PropertiesSystem")]
 unsafe impl ::windows::core::Abi for MFP_MEDIAITEM_CREATED_EVENT {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_UI_Shell_PropertiesSystem")]
 impl ::core::cmp::PartialEq for MFP_MEDIAITEM_CREATED_EVENT {
@@ -56059,6 +56480,7 @@ impl ::core::fmt::Debug for MFP_MEDIAITEM_SET_EVENT {
 #[cfg(feature = "Win32_UI_Shell_PropertiesSystem")]
 unsafe impl ::windows::core::Abi for MFP_MEDIAITEM_SET_EVENT {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_UI_Shell_PropertiesSystem")]
 impl ::core::cmp::PartialEq for MFP_MEDIAITEM_SET_EVENT {
@@ -56101,6 +56523,7 @@ impl ::core::default::Default for MFP_MEDIAPLAYER_STATE {
 }
 unsafe impl ::windows::core::Abi for MFP_MEDIAPLAYER_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MFP_MEDIAPLAYER_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -56131,6 +56554,7 @@ impl ::core::fmt::Debug for MFP_MF_EVENT {
 #[cfg(feature = "Win32_UI_Shell_PropertiesSystem")]
 unsafe impl ::windows::core::Abi for MFP_MF_EVENT {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_UI_Shell_PropertiesSystem")]
 impl ::core::cmp::PartialEq for MFP_MF_EVENT {
@@ -56168,6 +56592,7 @@ impl ::core::fmt::Debug for MFP_PAUSE_EVENT {
 #[cfg(feature = "Win32_UI_Shell_PropertiesSystem")]
 unsafe impl ::windows::core::Abi for MFP_PAUSE_EVENT {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_UI_Shell_PropertiesSystem")]
 impl ::core::cmp::PartialEq for MFP_PAUSE_EVENT {
@@ -56205,6 +56630,7 @@ impl ::core::fmt::Debug for MFP_PLAYBACK_ENDED_EVENT {
 #[cfg(feature = "Win32_UI_Shell_PropertiesSystem")]
 unsafe impl ::windows::core::Abi for MFP_PLAYBACK_ENDED_EVENT {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_UI_Shell_PropertiesSystem")]
 impl ::core::cmp::PartialEq for MFP_PLAYBACK_ENDED_EVENT {
@@ -56242,6 +56668,7 @@ impl ::core::fmt::Debug for MFP_PLAY_EVENT {
 #[cfg(feature = "Win32_UI_Shell_PropertiesSystem")]
 unsafe impl ::windows::core::Abi for MFP_PLAY_EVENT {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_UI_Shell_PropertiesSystem")]
 impl ::core::cmp::PartialEq for MFP_PLAY_EVENT {
@@ -56280,6 +56707,7 @@ impl ::core::fmt::Debug for MFP_POSITION_SET_EVENT {
 #[cfg(feature = "Win32_UI_Shell_PropertiesSystem")]
 unsafe impl ::windows::core::Abi for MFP_POSITION_SET_EVENT {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_UI_Shell_PropertiesSystem")]
 impl ::core::cmp::PartialEq for MFP_POSITION_SET_EVENT {
@@ -56318,6 +56746,7 @@ impl ::core::fmt::Debug for MFP_RATE_SET_EVENT {
 #[cfg(feature = "Win32_UI_Shell_PropertiesSystem")]
 unsafe impl ::windows::core::Abi for MFP_RATE_SET_EVENT {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_UI_Shell_PropertiesSystem")]
 impl ::core::cmp::PartialEq for MFP_RATE_SET_EVENT {
@@ -56355,6 +56784,7 @@ impl ::core::fmt::Debug for MFP_STOP_EVENT {
 #[cfg(feature = "Win32_UI_Shell_PropertiesSystem")]
 unsafe impl ::windows::core::Abi for MFP_STOP_EVENT {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_UI_Shell_PropertiesSystem")]
 impl ::core::cmp::PartialEq for MFP_STOP_EVENT {
@@ -56384,6 +56814,7 @@ impl ::core::clone::Clone for MFPaletteEntry {
 }
 unsafe impl ::windows::core::Abi for MFPaletteEntry {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MFPaletteEntry {
     fn eq(&self, other: &Self) -> bool {
@@ -56417,6 +56848,7 @@ impl ::core::fmt::Debug for MFPinholeCameraIntrinsic_IntrinsicModel {
 }
 unsafe impl ::windows::core::Abi for MFPinholeCameraIntrinsic_IntrinsicModel {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MFPinholeCameraIntrinsic_IntrinsicModel {
     fn eq(&self, other: &Self) -> bool {
@@ -56448,6 +56880,7 @@ impl ::core::fmt::Debug for MFPinholeCameraIntrinsics {
 }
 unsafe impl ::windows::core::Abi for MFPinholeCameraIntrinsics {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MFPinholeCameraIntrinsics {
     fn eq(&self, other: &Self) -> bool {
@@ -56553,6 +56986,7 @@ impl ::core::default::Default for MFRATE_DIRECTION {
 }
 unsafe impl ::windows::core::Abi for MFRATE_DIRECTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MFRATE_DIRECTION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -56579,6 +57013,7 @@ impl ::core::fmt::Debug for MFRR_COMPONENTS {
 }
 unsafe impl ::windows::core::Abi for MFRR_COMPONENTS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MFRR_COMPONENTS {
     fn eq(&self, other: &Self) -> bool {
@@ -56612,6 +57047,7 @@ impl ::core::fmt::Debug for MFRR_COMPONENT_HASH_INFO {
 }
 unsafe impl ::windows::core::Abi for MFRR_COMPONENT_HASH_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MFRR_COMPONENT_HASH_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -56645,6 +57081,7 @@ impl ::core::fmt::Debug for MFRatio {
 }
 unsafe impl ::windows::core::Abi for MFRatio {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MFRatio {
     fn eq(&self, other: &Self) -> bool {
@@ -56760,6 +57197,7 @@ impl ::core::default::Default for MFSESSION_GETFULLTOPOLOGY_FLAGS {
 }
 unsafe impl ::windows::core::Abi for MFSESSION_GETFULLTOPOLOGY_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MFSESSION_GETFULLTOPOLOGY_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -56789,6 +57227,7 @@ impl ::core::default::Default for MFSESSION_SETTOPOLOGY_FLAGS {
 }
 unsafe impl ::windows::core::Abi for MFSESSION_SETTOPOLOGY_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MFSESSION_SETTOPOLOGY_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -56816,6 +57255,7 @@ impl ::core::default::Default for MFSHUTDOWN_STATUS {
 }
 unsafe impl ::windows::core::Abi for MFSHUTDOWN_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MFSHUTDOWN_STATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -56849,6 +57289,7 @@ impl ::core::default::Default for MFSINK_WMDRMACTION {
 }
 unsafe impl ::windows::core::Abi for MFSINK_WMDRMACTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MFSINK_WMDRMACTION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -56886,6 +57327,7 @@ impl ::core::default::Default for MFSTREAMSINK_MARKER_TYPE {
 }
 unsafe impl ::windows::core::Abi for MFSTREAMSINK_MARKER_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MFSTREAMSINK_MARKER_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -56915,6 +57357,7 @@ impl ::core::default::Default for MFSampleAllocatorUsage {
 }
 unsafe impl ::windows::core::Abi for MFSampleAllocatorUsage {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MFSampleAllocatorUsage {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -56944,6 +57387,7 @@ impl ::core::default::Default for MFSampleEncryptionProtectionScheme {
 }
 unsafe impl ::windows::core::Abi for MFSampleEncryptionProtectionScheme {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MFSampleEncryptionProtectionScheme {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -57076,6 +57520,7 @@ impl ::core::default::Default for MFSensorDeviceMode {
 }
 unsafe impl ::windows::core::Abi for MFSensorDeviceMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MFSensorDeviceMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -57109,6 +57554,7 @@ impl ::core::default::Default for MFSensorDeviceType {
 }
 unsafe impl ::windows::core::Abi for MFSensorDeviceType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MFSensorDeviceType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -57138,6 +57584,7 @@ impl ::core::default::Default for MFSensorStreamType {
 }
 unsafe impl ::windows::core::Abi for MFSensorStreamType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MFSensorStreamType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -57163,6 +57610,7 @@ impl ::core::default::Default for MFSequencerTopologyFlags {
 }
 unsafe impl ::windows::core::Abi for MFSequencerTopologyFlags {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MFSequencerTopologyFlags {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -57277,6 +57725,7 @@ impl ::core::default::Default for MFStandardVideoFormat {
 }
 unsafe impl ::windows::core::Abi for MFStandardVideoFormat {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MFStandardVideoFormat {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -57386,6 +57835,7 @@ impl ::core::default::Default for MFTIMER_FLAGS {
 }
 unsafe impl ::windows::core::Abi for MFTIMER_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MFTIMER_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -57415,6 +57865,7 @@ impl ::core::default::Default for MFTOPOLOGY_DXVA_MODE {
 }
 unsafe impl ::windows::core::Abi for MFTOPOLOGY_DXVA_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MFTOPOLOGY_DXVA_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -57444,6 +57895,7 @@ impl ::core::default::Default for MFTOPOLOGY_HARDWARE_MODE {
 }
 unsafe impl ::windows::core::Abi for MFTOPOLOGY_HARDWARE_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MFTOPOLOGY_HARDWARE_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -57466,6 +57918,7 @@ impl ::core::clone::Clone for MFTOPONODE_ATTRIBUTE_UPDATE {
 }
 unsafe impl ::windows::core::Abi for MFTOPONODE_ATTRIBUTE_UPDATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MFTOPONODE_ATTRIBUTE_UPDATE {
     fn eq(&self, other: &Self) -> bool {
@@ -57493,6 +57946,7 @@ impl ::core::clone::Clone for MFTOPONODE_ATTRIBUTE_UPDATE_0 {
 }
 unsafe impl ::windows::core::Abi for MFTOPONODE_ATTRIBUTE_UPDATE_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MFTOPONODE_ATTRIBUTE_UPDATE_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -57614,6 +58068,7 @@ impl ::core::default::Default for MFT_AUDIO_DECODER_DEGRADATION_REASON {
 }
 unsafe impl ::windows::core::Abi for MFT_AUDIO_DECODER_DEGRADATION_REASON {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MFT_AUDIO_DECODER_DEGRADATION_REASON {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -57645,6 +58100,7 @@ impl ::core::default::Default for MFT_AUDIO_DECODER_DEGRADATION_TYPE {
 }
 unsafe impl ::windows::core::Abi for MFT_AUDIO_DECODER_DEGRADATION_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MFT_AUDIO_DECODER_DEGRADATION_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -57692,6 +58148,7 @@ impl ::core::default::Default for MFT_DRAIN_TYPE {
 }
 unsafe impl ::windows::core::Abi for MFT_DRAIN_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MFT_DRAIN_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -57732,6 +58189,7 @@ impl ::core::fmt::Debug for MFT_INPUT_STREAM_INFO {
 }
 unsafe impl ::windows::core::Abi for MFT_INPUT_STREAM_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MFT_INPUT_STREAM_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -57792,6 +58250,7 @@ impl ::core::default::Default for MFT_MESSAGE_TYPE {
 }
 unsafe impl ::windows::core::Abi for MFT_MESSAGE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MFT_MESSAGE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -57820,6 +58279,7 @@ impl ::core::fmt::Debug for MFT_OUTPUT_DATA_BUFFER {
 }
 unsafe impl ::windows::core::Abi for MFT_OUTPUT_DATA_BUFFER {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MFT_OUTPUT_DATA_BUFFER {
     fn eq(&self, other: &Self) -> bool {
@@ -57852,6 +58312,7 @@ impl ::core::fmt::Debug for MFT_OUTPUT_STREAM_INFO {
 }
 unsafe impl ::windows::core::Abi for MFT_OUTPUT_STREAM_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MFT_OUTPUT_STREAM_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -57888,6 +58349,7 @@ impl ::core::fmt::Debug for MFT_REGISTER_TYPE_INFO {
 }
 unsafe impl ::windows::core::Abi for MFT_REGISTER_TYPE_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MFT_REGISTER_TYPE_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -57925,6 +58387,7 @@ impl ::core::fmt::Debug for MFT_REGISTRATION_INFO {
 }
 unsafe impl ::windows::core::Abi for MFT_REGISTRATION_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MFT_REGISTRATION_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -57959,6 +58422,7 @@ impl ::core::fmt::Debug for MFT_STREAM_STATE_PARAM {
 }
 unsafe impl ::windows::core::Abi for MFT_STREAM_STATE_PARAM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MFT_STREAM_STATE_PARAM {
     fn eq(&self, other: &Self) -> bool {
@@ -58094,6 +58558,7 @@ impl ::core::clone::Clone for MFVIDEOFORMAT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MFVIDEOFORMAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MFVIDEOFORMAT {
@@ -58142,6 +58607,7 @@ impl ::core::default::Default for MFVP_MESSAGE_TYPE {
 }
 unsafe impl ::windows::core::Abi for MFVP_MESSAGE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MFVP_MESSAGE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -58187,6 +58653,7 @@ impl ::core::default::Default for MFVideo3DFormat {
 }
 unsafe impl ::windows::core::Abi for MFVideo3DFormat {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MFVideo3DFormat {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -58214,6 +58681,7 @@ impl ::core::default::Default for MFVideo3DSampleFormat {
 }
 unsafe impl ::windows::core::Abi for MFVideo3DSampleFormat {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MFVideo3DSampleFormat {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -58237,6 +58705,7 @@ impl ::core::clone::Clone for MFVideoAlphaBitmap {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Direct3D9", feature = "Win32_Graphics_Gdi"))]
 unsafe impl ::windows::core::Abi for MFVideoAlphaBitmap {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Direct3D9", feature = "Win32_Graphics_Gdi"))]
 impl ::core::cmp::PartialEq for MFVideoAlphaBitmap {
@@ -58268,6 +58737,7 @@ impl ::core::clone::Clone for MFVideoAlphaBitmap_0 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Direct3D9", feature = "Win32_Graphics_Gdi"))]
 unsafe impl ::windows::core::Abi for MFVideoAlphaBitmap_0 {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Direct3D9", feature = "Win32_Graphics_Gdi"))]
 impl ::core::cmp::PartialEq for MFVideoAlphaBitmap_0 {
@@ -58314,6 +58784,7 @@ impl ::core::default::Default for MFVideoAlphaBitmapFlags {
 }
 unsafe impl ::windows::core::Abi for MFVideoAlphaBitmapFlags {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MFVideoAlphaBitmapFlags {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -58348,6 +58819,7 @@ impl ::core::fmt::Debug for MFVideoAlphaBitmapParams {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MFVideoAlphaBitmapParams {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MFVideoAlphaBitmapParams {
@@ -58388,6 +58860,7 @@ impl ::core::fmt::Debug for MFVideoArea {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MFVideoArea {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MFVideoArea {
@@ -58430,6 +58903,7 @@ impl ::core::default::Default for MFVideoAspectRatioMode {
 }
 unsafe impl ::windows::core::Abi for MFVideoAspectRatioMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MFVideoAspectRatioMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -58475,6 +58949,7 @@ impl ::core::default::Default for MFVideoChromaSubsampling {
 }
 unsafe impl ::windows::core::Abi for MFVideoChromaSubsampling {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MFVideoChromaSubsampling {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -58501,6 +58976,7 @@ impl ::core::fmt::Debug for MFVideoCompressedInfo {
 }
 unsafe impl ::windows::core::Abi for MFVideoCompressedInfo {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MFVideoCompressedInfo {
     fn eq(&self, other: &Self) -> bool {
@@ -58536,6 +59012,7 @@ impl ::core::default::Default for MFVideoDRMFlags {
 }
 unsafe impl ::windows::core::Abi for MFVideoDRMFlags {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MFVideoDRMFlags {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -58563,6 +59040,7 @@ impl ::core::default::Default for MFVideoDSPMode {
 }
 unsafe impl ::windows::core::Abi for MFVideoDSPMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MFVideoDSPMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -58626,6 +59104,7 @@ impl ::core::default::Default for MFVideoFlags {
 }
 unsafe impl ::windows::core::Abi for MFVideoFlags {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MFVideoFlags {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -58758,6 +59237,7 @@ impl ::core::fmt::Debug for MFVideoInfo {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MFVideoInfo {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MFVideoInfo {
@@ -58808,6 +59288,7 @@ impl ::core::default::Default for MFVideoInterlaceMode {
 }
 unsafe impl ::windows::core::Abi for MFVideoInterlaceMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MFVideoInterlaceMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -58845,6 +59326,7 @@ impl ::core::default::Default for MFVideoLighting {
 }
 unsafe impl ::windows::core::Abi for MFVideoLighting {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MFVideoLighting {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -58880,6 +59362,7 @@ impl ::core::default::Default for MFVideoMixPrefs {
 }
 unsafe impl ::windows::core::Abi for MFVideoMixPrefs {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MFVideoMixPrefs {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -58907,6 +59390,7 @@ impl ::core::fmt::Debug for MFVideoNormalizedRect {
 }
 unsafe impl ::windows::core::Abi for MFVideoNormalizedRect {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MFVideoNormalizedRect {
     fn eq(&self, other: &Self) -> bool {
@@ -58942,6 +59426,7 @@ impl ::core::default::Default for MFVideoPadFlags {
 }
 unsafe impl ::windows::core::Abi for MFVideoPadFlags {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MFVideoPadFlags {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -58995,6 +59480,7 @@ impl ::core::default::Default for MFVideoPrimaries {
 }
 unsafe impl ::windows::core::Abi for MFVideoPrimaries {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MFVideoPrimaries {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -59038,6 +59524,7 @@ impl ::core::default::Default for MFVideoRenderPrefs {
 }
 unsafe impl ::windows::core::Abi for MFVideoRenderPrefs {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MFVideoRenderPrefs {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -59069,6 +59556,7 @@ impl ::core::default::Default for MFVideoRotationFormat {
 }
 unsafe impl ::windows::core::Abi for MFVideoRotationFormat {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MFVideoRotationFormat {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -59100,6 +59588,7 @@ impl ::core::default::Default for MFVideoSphericalFormat {
 }
 unsafe impl ::windows::core::Abi for MFVideoSphericalFormat {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MFVideoSphericalFormat {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -59127,6 +59616,7 @@ impl ::core::default::Default for MFVideoSphericalProjectionMode {
 }
 unsafe impl ::windows::core::Abi for MFVideoSphericalProjectionMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MFVideoSphericalProjectionMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -59156,6 +59646,7 @@ impl ::core::default::Default for MFVideoSrcContentHintFlags {
 }
 unsafe impl ::windows::core::Abi for MFVideoSrcContentHintFlags {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MFVideoSrcContentHintFlags {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -59177,6 +59668,7 @@ impl ::core::clone::Clone for MFVideoSurfaceInfo {
 }
 unsafe impl ::windows::core::Abi for MFVideoSurfaceInfo {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MFVideoSurfaceInfo {
     fn eq(&self, other: &Self) -> bool {
@@ -59246,6 +59738,7 @@ impl ::core::default::Default for MFVideoTransferFunction {
 }
 unsafe impl ::windows::core::Abi for MFVideoTransferFunction {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MFVideoTransferFunction {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -59285,6 +59778,7 @@ impl ::core::default::Default for MFVideoTransferMatrix {
 }
 unsafe impl ::windows::core::Abi for MFVideoTransferMatrix {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MFVideoTransferMatrix {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -59312,6 +59806,7 @@ impl ::core::default::Default for MFWaveFormatExConvertFlags {
 }
 unsafe impl ::windows::core::Abi for MFWaveFormatExConvertFlags {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MFWaveFormatExConvertFlags {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -59381,6 +59876,7 @@ impl ::core::default::Default for MF_ACTIVATE_CUSTOM_MIXER {
 }
 unsafe impl ::windows::core::Abi for MF_ACTIVATE_CUSTOM_MIXER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_ACTIVATE_CUSTOM_MIXER {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -59406,6 +59902,7 @@ impl ::core::default::Default for MF_ACTIVATE_CUSTOM_PRESENTER {
 }
 unsafe impl ::windows::core::Abi for MF_ACTIVATE_CUSTOM_PRESENTER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_ACTIVATE_CUSTOM_PRESENTER {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -59453,6 +59950,7 @@ impl ::core::default::Default for MF_ATTRIBUTES_MATCH_TYPE {
 }
 unsafe impl ::windows::core::Abi for MF_ATTRIBUTES_MATCH_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_ATTRIBUTES_MATCH_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -59478,6 +59976,7 @@ impl ::core::default::Default for MF_ATTRIBUTE_SERIALIZE_OPTIONS {
 }
 unsafe impl ::windows::core::Abi for MF_ATTRIBUTE_SERIALIZE_OPTIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_ATTRIBUTE_SERIALIZE_OPTIONS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -59515,6 +60014,7 @@ impl ::core::default::Default for MF_ATTRIBUTE_TYPE {
 }
 unsafe impl ::windows::core::Abi for MF_ATTRIBUTE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_ATTRIBUTE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -59557,6 +60057,7 @@ impl ::core::default::Default for MF_AUVRHP_ROOMMODEL {
 }
 unsafe impl ::windows::core::Abi for MF_AUVRHP_ROOMMODEL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_AUVRHP_ROOMMODEL {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -59595,6 +60096,7 @@ impl ::core::fmt::Debug for MF_BYTE_STREAM_CACHE_RANGE {
 }
 unsafe impl ::windows::core::Abi for MF_BYTE_STREAM_CACHE_RANGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MF_BYTE_STREAM_CACHE_RANGE {
     fn eq(&self, other: &Self) -> bool {
@@ -59630,6 +60132,7 @@ impl ::core::default::Default for MF_CAPTURE_ENGINE_AUDIO_PROCESSING_MODE {
 }
 unsafe impl ::windows::core::Abi for MF_CAPTURE_ENGINE_AUDIO_PROCESSING_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_CAPTURE_ENGINE_AUDIO_PROCESSING_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -59661,6 +60164,7 @@ impl ::core::default::Default for MF_CAPTURE_ENGINE_DEVICE_TYPE {
 }
 unsafe impl ::windows::core::Abi for MF_CAPTURE_ENGINE_DEVICE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_CAPTURE_ENGINE_DEVICE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -59712,6 +60216,7 @@ impl ::core::default::Default for MF_CAPTURE_ENGINE_MEDIA_CATEGORY_TYPE {
 }
 unsafe impl ::windows::core::Abi for MF_CAPTURE_ENGINE_MEDIA_CATEGORY_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_CAPTURE_ENGINE_MEDIA_CATEGORY_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -59753,6 +60258,7 @@ impl ::core::default::Default for MF_CAPTURE_ENGINE_SINK_TYPE {
 }
 unsafe impl ::windows::core::Abi for MF_CAPTURE_ENGINE_SINK_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_CAPTURE_ENGINE_SINK_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -59788,6 +60294,7 @@ impl ::core::default::Default for MF_CAPTURE_ENGINE_SOURCE {
 }
 unsafe impl ::windows::core::Abi for MF_CAPTURE_ENGINE_SOURCE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_CAPTURE_ENGINE_SOURCE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -59825,6 +60332,7 @@ impl ::core::default::Default for MF_CAPTURE_ENGINE_STREAM_CATEGORY {
 }
 unsafe impl ::windows::core::Abi for MF_CAPTURE_ENGINE_STREAM_CATEGORY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_CAPTURE_ENGINE_STREAM_CATEGORY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -59905,6 +60413,7 @@ impl ::core::default::Default for MF_CONNECT_METHOD {
 }
 unsafe impl ::windows::core::Abi for MF_CONNECT_METHOD {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_CONNECT_METHOD {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -59937,6 +60446,7 @@ impl ::core::default::Default for MF_CROSS_ORIGIN_POLICY {
 }
 unsafe impl ::windows::core::Abi for MF_CROSS_ORIGIN_POLICY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_CROSS_ORIGIN_POLICY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -59964,6 +60474,7 @@ impl ::core::default::Default for MF_CUSTOM_DECODE_UNIT_TYPE {
 }
 unsafe impl ::windows::core::Abi for MF_CUSTOM_DECODE_UNIT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_CUSTOM_DECODE_UNIT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -60296,6 +60807,7 @@ impl ::core::default::Default for MF_EVENT_TYPE {
 }
 unsafe impl ::windows::core::Abi for MF_EVENT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_EVENT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -61001,6 +61513,7 @@ impl ::core::default::Default for MF_FILE_ACCESSMODE {
 }
 unsafe impl ::windows::core::Abi for MF_FILE_ACCESSMODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_FILE_ACCESSMODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -61030,6 +61543,7 @@ impl ::core::default::Default for MF_FILE_FLAGS {
 }
 unsafe impl ::windows::core::Abi for MF_FILE_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_FILE_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -61063,6 +61577,7 @@ impl ::core::default::Default for MF_FILE_OPENMODE {
 }
 unsafe impl ::windows::core::Abi for MF_FILE_OPENMODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_FILE_OPENMODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -61088,6 +61603,7 @@ impl ::core::fmt::Debug for MF_FLOAT2 {
 }
 unsafe impl ::windows::core::Abi for MF_FLOAT2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MF_FLOAT2 {
     fn eq(&self, other: &Self) -> bool {
@@ -61120,6 +61636,7 @@ impl ::core::fmt::Debug for MF_FLOAT3 {
 }
 unsafe impl ::windows::core::Abi for MF_FLOAT3 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MF_FLOAT3 {
     fn eq(&self, other: &Self) -> bool {
@@ -61165,6 +61682,7 @@ impl ::core::default::Default for MF_HDCP_STATUS {
 }
 unsafe impl ::windows::core::Abi for MF_HDCP_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_HDCP_STATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -61217,6 +61735,7 @@ impl ::core::fmt::Debug for MF_LEAKY_BUCKET_PAIR {
 }
 unsafe impl ::windows::core::Abi for MF_LEAKY_BUCKET_PAIR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MF_LEAKY_BUCKET_PAIR {
     fn eq(&self, other: &Self) -> bool {
@@ -61260,6 +61779,7 @@ impl ::core::default::Default for MF_MEDIAKEYSESSION_MESSAGETYPE {
 }
 unsafe impl ::windows::core::Abi for MF_MEDIAKEYSESSION_MESSAGETYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_MEDIAKEYSESSION_MESSAGETYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -61291,6 +61811,7 @@ impl ::core::default::Default for MF_MEDIAKEYSESSION_TYPE {
 }
 unsafe impl ::windows::core::Abi for MF_MEDIAKEYSESSION_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_MEDIAKEYSESSION_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -61320,6 +61841,7 @@ impl ::core::default::Default for MF_MEDIAKEYS_REQUIREMENT {
 }
 unsafe impl ::windows::core::Abi for MF_MEDIAKEYS_REQUIREMENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_MEDIAKEYS_REQUIREMENT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -61359,6 +61881,7 @@ impl ::core::default::Default for MF_MEDIAKEY_STATUS {
 }
 unsafe impl ::windows::core::Abi for MF_MEDIAKEY_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_MEDIAKEY_STATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -61409,6 +61932,7 @@ impl ::core::default::Default for MF_MEDIA_ENGINE_CANPLAY {
 }
 unsafe impl ::windows::core::Abi for MF_MEDIA_ENGINE_CANPLAY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_MEDIA_ENGINE_CANPLAY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -61451,6 +61975,7 @@ impl ::core::default::Default for MF_MEDIA_ENGINE_CREATEFLAGS {
 }
 unsafe impl ::windows::core::Abi for MF_MEDIA_ENGINE_CREATEFLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_MEDIA_ENGINE_CREATEFLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -61488,6 +62013,7 @@ impl ::core::default::Default for MF_MEDIA_ENGINE_ERR {
 }
 unsafe impl ::windows::core::Abi for MF_MEDIA_ENGINE_ERR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_MEDIA_ENGINE_ERR {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -61589,6 +62115,7 @@ impl ::core::default::Default for MF_MEDIA_ENGINE_EVENT {
 }
 unsafe impl ::windows::core::Abi for MF_MEDIA_ENGINE_EVENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_MEDIA_ENGINE_EVENT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -61617,6 +62144,7 @@ impl ::core::default::Default for MF_MEDIA_ENGINE_EXTENSION_TYPE {
 }
 unsafe impl ::windows::core::Abi for MF_MEDIA_ENGINE_EXTENSION_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_MEDIA_ENGINE_EXTENSION_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -61646,6 +62174,7 @@ impl ::core::default::Default for MF_MEDIA_ENGINE_FRAME_PROTECTION_FLAGS {
 }
 unsafe impl ::windows::core::Abi for MF_MEDIA_ENGINE_FRAME_PROTECTION_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_MEDIA_ENGINE_FRAME_PROTECTION_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -61681,6 +62210,7 @@ impl ::core::default::Default for MF_MEDIA_ENGINE_KEYERR {
 }
 unsafe impl ::windows::core::Abi for MF_MEDIA_ENGINE_KEYERR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_MEDIA_ENGINE_KEYERR {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -61714,6 +62244,7 @@ impl ::core::default::Default for MF_MEDIA_ENGINE_NETWORK {
 }
 unsafe impl ::windows::core::Abi for MF_MEDIA_ENGINE_NETWORK {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_MEDIA_ENGINE_NETWORK {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -61750,6 +62281,7 @@ impl ::core::default::Default for MF_MEDIA_ENGINE_OPM_STATUS {
 }
 unsafe impl ::windows::core::Abi for MF_MEDIA_ENGINE_OPM_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_MEDIA_ENGINE_OPM_STATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -61785,6 +62317,7 @@ impl ::core::default::Default for MF_MEDIA_ENGINE_PRELOAD {
 }
 unsafe impl ::windows::core::Abi for MF_MEDIA_ENGINE_PRELOAD {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_MEDIA_ENGINE_PRELOAD {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -61814,6 +62347,7 @@ impl ::core::default::Default for MF_MEDIA_ENGINE_PROTECTION_FLAGS {
 }
 unsafe impl ::windows::core::Abi for MF_MEDIA_ENGINE_PROTECTION_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_MEDIA_ENGINE_PROTECTION_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -61847,6 +62381,7 @@ impl ::core::default::Default for MF_MEDIA_ENGINE_READY {
 }
 unsafe impl ::windows::core::Abi for MF_MEDIA_ENGINE_READY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_MEDIA_ENGINE_READY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -61876,6 +62411,7 @@ impl ::core::default::Default for MF_MEDIA_ENGINE_S3D_PACKING_MODE {
 }
 unsafe impl ::windows::core::Abi for MF_MEDIA_ENGINE_S3D_PACKING_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_MEDIA_ENGINE_S3D_PACKING_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -61903,6 +62439,7 @@ impl ::core::default::Default for MF_MEDIA_ENGINE_SEEK_MODE {
 }
 unsafe impl ::windows::core::Abi for MF_MEDIA_ENGINE_SEEK_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_MEDIA_ENGINE_SEEK_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -61943,6 +62480,7 @@ impl ::core::default::Default for MF_MEDIA_ENGINE_STATISTIC {
 }
 unsafe impl ::windows::core::Abi for MF_MEDIA_ENGINE_STATISTIC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_MEDIA_ENGINE_STATISTIC {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -61972,6 +62510,7 @@ impl ::core::default::Default for MF_MEDIA_ENGINE_STREAMTYPE_FAILED {
 }
 unsafe impl ::windows::core::Abi for MF_MEDIA_ENGINE_STREAMTYPE_FAILED {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_MEDIA_ENGINE_STREAMTYPE_FAILED {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -62006,6 +62545,7 @@ impl ::core::default::Default for MF_MEDIA_SHARING_ENGINE_EVENT {
 }
 unsafe impl ::windows::core::Abi for MF_MEDIA_SHARING_ENGINE_EVENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_MEDIA_SHARING_ENGINE_EVENT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -62054,6 +62594,7 @@ impl ::core::default::Default for MF_MSE_APPEND_MODE {
 }
 unsafe impl ::windows::core::Abi for MF_MSE_APPEND_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_MSE_APPEND_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -62087,6 +62628,7 @@ impl ::core::default::Default for MF_MSE_ERROR {
 }
 unsafe impl ::windows::core::Abi for MF_MSE_ERROR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_MSE_ERROR {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -62115,6 +62657,7 @@ impl ::core::default::Default for MF_MSE_OPUS_SUPPORT_TYPE {
 }
 unsafe impl ::windows::core::Abi for MF_MSE_OPUS_SUPPORT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_MSE_OPUS_SUPPORT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -62144,6 +62687,7 @@ impl ::core::default::Default for MF_MSE_READY {
 }
 unsafe impl ::windows::core::Abi for MF_MSE_READY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_MSE_READY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -62174,6 +62718,7 @@ impl ::core::default::Default for MF_MSE_VP9_SUPPORT_TYPE {
 }
 unsafe impl ::windows::core::Abi for MF_MSE_VP9_SUPPORT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_MSE_VP9_SUPPORT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -62238,6 +62783,7 @@ impl ::core::default::Default for MF_MT_D3D_RESOURCE_VERSION_ENUM {
 }
 unsafe impl ::windows::core::Abi for MF_MT_D3D_RESOURCE_VERSION_ENUM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_MT_D3D_RESOURCE_VERSION_ENUM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -62368,6 +62914,7 @@ impl ::core::default::Default for MF_OBJECT_TYPE {
 }
 unsafe impl ::windows::core::Abi for MF_OBJECT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_OBJECT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -62401,6 +62948,7 @@ impl ::core::default::Default for MF_OPM_ACP_PROTECTION_LEVEL {
 }
 unsafe impl ::windows::core::Abi for MF_OPM_ACP_PROTECTION_LEVEL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_OPM_ACP_PROTECTION_LEVEL {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -62436,6 +62984,7 @@ impl ::core::default::Default for MF_OPM_CGMSA_PROTECTION_LEVEL {
 }
 unsafe impl ::windows::core::Abi for MF_OPM_CGMSA_PROTECTION_LEVEL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_OPM_CGMSA_PROTECTION_LEVEL {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -62512,6 +63061,7 @@ impl ::core::default::Default for MF_PLUGIN_CONTROL_POLICY {
 }
 unsafe impl ::windows::core::Abi for MF_PLUGIN_CONTROL_POLICY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_PLUGIN_CONTROL_POLICY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -62548,6 +63098,7 @@ impl ::core::default::Default for MF_Plugin_Type {
 }
 unsafe impl ::windows::core::Abi for MF_Plugin_Type {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_Plugin_Type {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -62573,6 +63124,7 @@ impl ::core::default::Default for MF_QUALITY_ADVISE_FLAGS {
 }
 unsafe impl ::windows::core::Abi for MF_QUALITY_ADVISE_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_QUALITY_ADVISE_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -62610,6 +63162,7 @@ impl ::core::default::Default for MF_QUALITY_DROP_MODE {
 }
 unsafe impl ::windows::core::Abi for MF_QUALITY_DROP_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_QUALITY_DROP_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -62647,6 +63200,7 @@ impl ::core::default::Default for MF_QUALITY_LEVEL {
 }
 unsafe impl ::windows::core::Abi for MF_QUALITY_LEVEL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_QUALITY_LEVEL {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -62677,6 +63231,7 @@ impl ::core::fmt::Debug for MF_QUATERNION {
 }
 unsafe impl ::windows::core::Abi for MF_QUATERNION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MF_QUATERNION {
     fn eq(&self, other: &Self) -> bool {
@@ -62740,6 +63295,7 @@ impl ::core::default::Default for MF_RESOLUTION_FLAGS {
 }
 unsafe impl ::windows::core::Abi for MF_RESOLUTION_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_RESOLUTION_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -62845,6 +63401,7 @@ impl ::core::default::Default for MF_SERVICE_LOOKUP_TYPE {
 }
 unsafe impl ::windows::core::Abi for MF_SERVICE_LOOKUP_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_SERVICE_LOOKUP_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -62886,6 +63443,7 @@ impl ::core::default::Default for MF_SHARING_ENGINE_EVENT {
 }
 unsafe impl ::windows::core::Abi for MF_SHARING_ENGINE_EVENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_SHARING_ENGINE_EVENT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -62923,6 +63481,7 @@ impl ::core::default::Default for MF_SINK_WRITER_CONSTANTS {
 }
 unsafe impl ::windows::core::Abi for MF_SINK_WRITER_CONSTANTS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_SINK_WRITER_CONSTANTS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -62982,6 +63541,7 @@ impl ::core::fmt::Debug for MF_SINK_WRITER_STATISTICS {
 }
 unsafe impl ::windows::core::Abi for MF_SINK_WRITER_STATISTICS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MF_SINK_WRITER_STATISTICS {
     fn eq(&self, other: &Self) -> bool {
@@ -63025,6 +63585,7 @@ impl ::core::default::Default for MF_SOURCE_READER_CONSTANTS {
 }
 unsafe impl ::windows::core::Abi for MF_SOURCE_READER_CONSTANTS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_SOURCE_READER_CONSTANTS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -63050,6 +63611,7 @@ impl ::core::default::Default for MF_SOURCE_READER_CONTROL_FLAG {
 }
 unsafe impl ::windows::core::Abi for MF_SOURCE_READER_CONTROL_FLAG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_SOURCE_READER_CONTROL_FLAG {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -63075,6 +63637,7 @@ impl ::core::default::Default for MF_SOURCE_READER_CURRENT_TYPE_CONSTANTS {
 }
 unsafe impl ::windows::core::Abi for MF_SOURCE_READER_CURRENT_TYPE_CONSTANTS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_SOURCE_READER_CURRENT_TYPE_CONSTANTS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -63120,6 +63683,7 @@ impl ::core::default::Default for MF_SOURCE_READER_FLAG {
 }
 unsafe impl ::windows::core::Abi for MF_SOURCE_READER_FLAG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_SOURCE_READER_FLAG {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -63156,6 +63720,7 @@ impl ::core::default::Default for MF_STREAM_STATE {
 }
 unsafe impl ::windows::core::Abi for MF_STREAM_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_STREAM_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -63216,6 +63781,7 @@ impl ::core::default::Default for MF_TIMED_TEXT_ALIGNMENT {
 }
 unsafe impl ::windows::core::Abi for MF_TIMED_TEXT_ALIGNMENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_TIMED_TEXT_ALIGNMENT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -63245,6 +63811,7 @@ impl ::core::default::Default for MF_TIMED_TEXT_BOUTEN_POSITION {
 }
 unsafe impl ::windows::core::Abi for MF_TIMED_TEXT_BOUTEN_POSITION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_TIMED_TEXT_BOUTEN_POSITION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -63284,6 +63851,7 @@ impl ::core::default::Default for MF_TIMED_TEXT_BOUTEN_TYPE {
 }
 unsafe impl ::windows::core::Abi for MF_TIMED_TEXT_BOUTEN_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_TIMED_TEXT_BOUTEN_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -63313,6 +63881,7 @@ impl ::core::default::Default for MF_TIMED_TEXT_CUE_EVENT {
 }
 unsafe impl ::windows::core::Abi for MF_TIMED_TEXT_CUE_EVENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_TIMED_TEXT_CUE_EVENT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -63344,6 +63913,7 @@ impl ::core::default::Default for MF_TIMED_TEXT_DECORATION {
 }
 unsafe impl ::windows::core::Abi for MF_TIMED_TEXT_DECORATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_TIMED_TEXT_DECORATION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -63373,6 +63943,7 @@ impl ::core::default::Default for MF_TIMED_TEXT_DISPLAY_ALIGNMENT {
 }
 unsafe impl ::windows::core::Abi for MF_TIMED_TEXT_DISPLAY_ALIGNMENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_TIMED_TEXT_DISPLAY_ALIGNMENT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -63406,6 +63977,7 @@ impl ::core::default::Default for MF_TIMED_TEXT_ERROR_CODE {
 }
 unsafe impl ::windows::core::Abi for MF_TIMED_TEXT_ERROR_CODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_TIMED_TEXT_ERROR_CODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -63435,6 +64007,7 @@ impl ::core::default::Default for MF_TIMED_TEXT_FONT_STYLE {
 }
 unsafe impl ::windows::core::Abi for MF_TIMED_TEXT_FONT_STYLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_TIMED_TEXT_FONT_STYLE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -63470,6 +64043,7 @@ impl ::core::default::Default for MF_TIMED_TEXT_RUBY_ALIGN {
 }
 unsafe impl ::windows::core::Abi for MF_TIMED_TEXT_RUBY_ALIGN {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_TIMED_TEXT_RUBY_ALIGN {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -63499,6 +64073,7 @@ impl ::core::default::Default for MF_TIMED_TEXT_RUBY_POSITION {
 }
 unsafe impl ::windows::core::Abi for MF_TIMED_TEXT_RUBY_POSITION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_TIMED_TEXT_RUBY_POSITION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -63532,6 +64107,7 @@ impl ::core::default::Default for MF_TIMED_TEXT_RUBY_RESERVE {
 }
 unsafe impl ::windows::core::Abi for MF_TIMED_TEXT_RUBY_RESERVE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_TIMED_TEXT_RUBY_RESERVE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -63559,6 +64135,7 @@ impl ::core::default::Default for MF_TIMED_TEXT_SCROLL_MODE {
 }
 unsafe impl ::windows::core::Abi for MF_TIMED_TEXT_SCROLL_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_TIMED_TEXT_SCROLL_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -63590,6 +64167,7 @@ impl ::core::default::Default for MF_TIMED_TEXT_TRACK_KIND {
 }
 unsafe impl ::windows::core::Abi for MF_TIMED_TEXT_TRACK_KIND {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_TIMED_TEXT_TRACK_KIND {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -63621,6 +64199,7 @@ impl ::core::default::Default for MF_TIMED_TEXT_TRACK_READY_STATE {
 }
 unsafe impl ::windows::core::Abi for MF_TIMED_TEXT_TRACK_READY_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_TIMED_TEXT_TRACK_READY_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -63648,6 +64227,7 @@ impl ::core::default::Default for MF_TIMED_TEXT_UNIT_TYPE {
 }
 unsafe impl ::windows::core::Abi for MF_TIMED_TEXT_UNIT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_TIMED_TEXT_UNIT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -63685,6 +64265,7 @@ impl ::core::default::Default for MF_TIMED_TEXT_WRITING_MODE {
 }
 unsafe impl ::windows::core::Abi for MF_TIMED_TEXT_WRITING_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_TIMED_TEXT_WRITING_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -63727,6 +64308,7 @@ impl ::core::default::Default for MF_TOPOLOGY_RESOLUTION_STATUS_FLAGS {
 }
 unsafe impl ::windows::core::Abi for MF_TOPOLOGY_RESOLUTION_STATUS_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_TOPOLOGY_RESOLUTION_STATUS_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -63762,6 +64344,7 @@ impl ::core::default::Default for MF_TOPOLOGY_TYPE {
 }
 unsafe impl ::windows::core::Abi for MF_TOPOLOGY_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_TOPOLOGY_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -63799,6 +64382,7 @@ impl ::core::default::Default for MF_TOPONODE_DRAIN_MODE {
 }
 unsafe impl ::windows::core::Abi for MF_TOPONODE_DRAIN_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_TOPONODE_DRAIN_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -63832,6 +64416,7 @@ impl ::core::default::Default for MF_TOPONODE_FLUSH_MODE {
 }
 unsafe impl ::windows::core::Abi for MF_TOPONODE_FLUSH_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_TOPONODE_FLUSH_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -63886,6 +64471,7 @@ impl ::core::default::Default for MF_TOPOSTATUS {
 }
 unsafe impl ::windows::core::Abi for MF_TOPOSTATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_TOPOSTATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -63914,6 +64500,7 @@ impl ::core::default::Default for MF_TRANSCODE_ADJUST_PROFILE_FLAGS {
 }
 unsafe impl ::windows::core::Abi for MF_TRANSCODE_ADJUST_PROFILE_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_TRANSCODE_ADJUST_PROFILE_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -63949,6 +64536,7 @@ impl ::core::fmt::Debug for MF_TRANSCODE_SINK_INFO {
 }
 unsafe impl ::windows::core::Abi for MF_TRANSCODE_SINK_INFO {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MF_TRANSCODE_SINK_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -63984,6 +64572,7 @@ impl ::core::default::Default for MF_TRANSCODE_TOPOLOGYMODE_FLAGS {
 }
 unsafe impl ::windows::core::Abi for MF_TRANSCODE_TOPOLOGYMODE_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_TRANSCODE_TOPOLOGYMODE_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -64021,6 +64610,7 @@ impl ::core::default::Default for MF_URL_TRUST_STATUS {
 }
 unsafe impl ::windows::core::Abi for MF_URL_TRUST_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_URL_TRUST_STATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -64055,6 +64645,7 @@ impl ::core::default::Default for MF_VIDEO_PROCESSOR_ALGORITHM_TYPE {
 }
 unsafe impl ::windows::core::Abi for MF_VIDEO_PROCESSOR_ALGORITHM_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_VIDEO_PROCESSOR_ALGORITHM_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -64084,6 +64675,7 @@ impl ::core::default::Default for MF_VIDEO_PROCESSOR_MIRROR {
 }
 unsafe impl ::windows::core::Abi for MF_VIDEO_PROCESSOR_MIRROR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_VIDEO_PROCESSOR_MIRROR {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -64111,6 +64703,7 @@ impl ::core::default::Default for MF_VIDEO_PROCESSOR_ROTATION {
 }
 unsafe impl ::windows::core::Abi for MF_VIDEO_PROCESSOR_ROTATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_VIDEO_PROCESSOR_ROTATION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -64138,6 +64731,7 @@ impl ::core::fmt::Debug for MF_VIDEO_SPHERICAL_VIEWDIRECTION {
 }
 unsafe impl ::windows::core::Abi for MF_VIDEO_SPHERICAL_VIEWDIRECTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MF_VIDEO_SPHERICAL_VIEWDIRECTION {
     fn eq(&self, other: &Self) -> bool {
@@ -64200,6 +64794,7 @@ impl ::core::default::Default for MIC_ARRAY_MODE {
 }
 unsafe impl ::windows::core::Abi for MIC_ARRAY_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MIC_ARRAY_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -64231,6 +64826,7 @@ impl ::core::fmt::Debug for MOVEREGION_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MOVEREGION_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MOVEREGION_INFO {
@@ -64270,6 +64866,7 @@ impl ::core::fmt::Debug for MOVE_RECT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MOVE_RECT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MOVE_RECT {
@@ -64324,6 +64921,7 @@ impl ::core::fmt::Debug for MT_ARBITRARY_HEADER {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MT_ARBITRARY_HEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MT_ARBITRARY_HEADER {
@@ -64364,6 +64962,7 @@ impl ::core::fmt::Debug for MT_CUSTOM_VIDEO_PRIMARIES {
 }
 unsafe impl ::windows::core::Abi for MT_CUSTOM_VIDEO_PRIMARIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MT_CUSTOM_VIDEO_PRIMARIES {
     fn eq(&self, other: &Self) -> bool {
@@ -64490,6 +65089,7 @@ impl ::core::clone::Clone for OPM_ACP_AND_CGMSA_SIGNALING {
 }
 unsafe impl ::windows::core::Abi for OPM_ACP_AND_CGMSA_SIGNALING {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for OPM_ACP_AND_CGMSA_SIGNALING {
     fn eq(&self, other: &Self) -> bool {
@@ -64529,6 +65129,7 @@ impl ::core::default::Default for OPM_ACP_PROTECTION_LEVEL {
 }
 unsafe impl ::windows::core::Abi for OPM_ACP_PROTECTION_LEVEL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for OPM_ACP_PROTECTION_LEVEL {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -64559,6 +65160,7 @@ impl ::core::clone::Clone for OPM_ACTUAL_OUTPUT_FORMAT {
 #[cfg(feature = "Win32_Graphics_Direct3D9")]
 unsafe impl ::windows::core::Abi for OPM_ACTUAL_OUTPUT_FORMAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Direct3D9")]
 impl ::core::cmp::PartialEq for OPM_ACTUAL_OUTPUT_FORMAT {
@@ -64615,6 +65217,7 @@ impl ::core::default::Default for OPM_BUS_TYPE {
 }
 unsafe impl ::windows::core::Abi for OPM_BUS_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for OPM_BUS_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -64650,6 +65253,7 @@ impl ::core::default::Default for OPM_CGMSA {
 }
 unsafe impl ::windows::core::Abi for OPM_CGMSA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for OPM_CGMSA {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -64673,6 +65277,7 @@ impl ::core::clone::Clone for OPM_CONFIGURE_PARAMETERS {
 }
 unsafe impl ::windows::core::Abi for OPM_CONFIGURE_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for OPM_CONFIGURE_PARAMETERS {
     fn eq(&self, other: &Self) -> bool {
@@ -64704,6 +65309,7 @@ impl ::core::clone::Clone for OPM_CONNECTED_HDCP_DEVICE_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for OPM_CONNECTED_HDCP_DEVICE_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for OPM_CONNECTED_HDCP_DEVICE_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -64733,6 +65339,7 @@ impl ::core::clone::Clone for OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS {
 }
 unsafe impl ::windows::core::Abi for OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS {
     fn eq(&self, other: &Self) -> bool {
@@ -64768,6 +65375,7 @@ impl ::core::default::Default for OPM_DPCP_PROTECTION_LEVEL {
 }
 unsafe impl ::windows::core::Abi for OPM_DPCP_PROTECTION_LEVEL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for OPM_DPCP_PROTECTION_LEVEL {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -64795,6 +65403,7 @@ impl ::core::default::Default for OPM_DVI_CHARACTERISTIC {
 }
 unsafe impl ::windows::core::Abi for OPM_DVI_CHARACTERISTIC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for OPM_DVI_CHARACTERISTIC {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -64819,6 +65428,7 @@ impl ::core::fmt::Debug for OPM_ENCRYPTED_INITIALIZATION_PARAMETERS {
 }
 unsafe impl ::windows::core::Abi for OPM_ENCRYPTED_INITIALIZATION_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for OPM_ENCRYPTED_INITIALIZATION_PARAMETERS {
     fn eq(&self, other: &Self) -> bool {
@@ -64850,6 +65460,7 @@ impl ::core::clone::Clone for OPM_GET_CODEC_INFO_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for OPM_GET_CODEC_INFO_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for OPM_GET_CODEC_INFO_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -64876,6 +65487,7 @@ impl ::core::clone::Clone for OPM_GET_CODEC_INFO_PARAMETERS {
 }
 unsafe impl ::windows::core::Abi for OPM_GET_CODEC_INFO_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for OPM_GET_CODEC_INFO_PARAMETERS {
     fn eq(&self, other: &Self) -> bool {
@@ -64910,6 +65522,7 @@ impl ::core::clone::Clone for OPM_GET_INFO_PARAMETERS {
 }
 unsafe impl ::windows::core::Abi for OPM_GET_INFO_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for OPM_GET_INFO_PARAMETERS {
     fn eq(&self, other: &Self) -> bool {
@@ -64947,6 +65560,7 @@ impl ::core::default::Default for OPM_HDCP_FLAGS {
 }
 unsafe impl ::windows::core::Abi for OPM_HDCP_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for OPM_HDCP_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -64999,6 +65613,7 @@ impl ::core::fmt::Debug for OPM_HDCP_KEY_SELECTION_VECTOR {
 }
 unsafe impl ::windows::core::Abi for OPM_HDCP_KEY_SELECTION_VECTOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for OPM_HDCP_KEY_SELECTION_VECTOR {
     fn eq(&self, other: &Self) -> bool {
@@ -65034,6 +65649,7 @@ impl ::core::default::Default for OPM_HDCP_PROTECTION_LEVEL {
 }
 unsafe impl ::windows::core::Abi for OPM_HDCP_PROTECTION_LEVEL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for OPM_HDCP_PROTECTION_LEVEL {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -65061,6 +65677,7 @@ impl ::core::default::Default for OPM_HDCP_STATUS {
 }
 unsafe impl ::windows::core::Abi for OPM_HDCP_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for OPM_HDCP_STATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -65088,6 +65705,7 @@ impl ::core::default::Default for OPM_HDCP_TYPE {
 }
 unsafe impl ::windows::core::Abi for OPM_HDCP_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for OPM_HDCP_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -65129,6 +65747,7 @@ impl ::core::default::Default for OPM_IMAGE_ASPECT_RATIO_EN300294 {
 }
 unsafe impl ::windows::core::Abi for OPM_IMAGE_ASPECT_RATIO_EN300294 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for OPM_IMAGE_ASPECT_RATIO_EN300294 {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -65153,6 +65772,7 @@ impl ::core::fmt::Debug for OPM_OMAC {
 }
 unsafe impl ::windows::core::Abi for OPM_OMAC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for OPM_OMAC {
     fn eq(&self, other: &Self) -> bool {
@@ -65186,6 +65806,7 @@ impl ::core::default::Default for OPM_OUTPUT_HARDWARE_PROTECTION {
 }
 unsafe impl ::windows::core::Abi for OPM_OUTPUT_HARDWARE_PROTECTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for OPM_OUTPUT_HARDWARE_PROTECTION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -65207,6 +65828,7 @@ impl ::core::clone::Clone for OPM_OUTPUT_ID_DATA {
 }
 unsafe impl ::windows::core::Abi for OPM_OUTPUT_ID_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for OPM_OUTPUT_ID_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -65270,6 +65892,7 @@ impl ::core::default::Default for OPM_PROTECTION_STANDARD_TYPE {
 }
 unsafe impl ::windows::core::Abi for OPM_PROTECTION_STANDARD_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for OPM_PROTECTION_STANDARD_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -65309,6 +65932,7 @@ impl ::core::default::Default for OPM_PROTECTION_TYPE {
 }
 unsafe impl ::windows::core::Abi for OPM_PROTECTION_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for OPM_PROTECTION_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -65333,6 +65957,7 @@ impl ::core::fmt::Debug for OPM_RANDOM_NUMBER {
 }
 unsafe impl ::windows::core::Abi for OPM_RANDOM_NUMBER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for OPM_RANDOM_NUMBER {
     fn eq(&self, other: &Self) -> bool {
@@ -65360,6 +65985,7 @@ impl ::core::clone::Clone for OPM_REQUESTED_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for OPM_REQUESTED_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for OPM_REQUESTED_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -65395,6 +66021,7 @@ impl ::core::clone::Clone for OPM_SET_ACP_AND_CGMSA_SIGNALING_PARAMETERS {
 }
 unsafe impl ::windows::core::Abi for OPM_SET_ACP_AND_CGMSA_SIGNALING_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for OPM_SET_ACP_AND_CGMSA_SIGNALING_PARAMETERS {
     fn eq(&self, other: &Self) -> bool {
@@ -65421,6 +66048,7 @@ impl ::core::clone::Clone for OPM_SET_HDCP_SRM_PARAMETERS {
 }
 unsafe impl ::windows::core::Abi for OPM_SET_HDCP_SRM_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for OPM_SET_HDCP_SRM_PARAMETERS {
     fn eq(&self, other: &Self) -> bool {
@@ -65451,6 +66079,7 @@ impl ::core::clone::Clone for OPM_SET_PROTECTION_LEVEL_PARAMETERS {
 }
 unsafe impl ::windows::core::Abi for OPM_SET_PROTECTION_LEVEL_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for OPM_SET_PROTECTION_LEVEL_PARAMETERS {
     fn eq(&self, other: &Self) -> bool {
@@ -65480,6 +66109,7 @@ impl ::core::clone::Clone for OPM_STANDARD_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for OPM_STANDARD_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for OPM_STANDARD_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -65519,6 +66149,7 @@ impl ::core::default::Default for OPM_STATUS {
 }
 unsafe impl ::windows::core::Abi for OPM_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for OPM_STATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -65562,6 +66193,7 @@ impl ::core::default::Default for OPM_TYPE {
 }
 unsafe impl ::windows::core::Abi for OPM_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for OPM_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -65593,6 +66225,7 @@ impl ::core::default::Default for OPM_TYPE_ENFORCEMENT_HDCP_PROTECTION_LEVEL {
 }
 unsafe impl ::windows::core::Abi for OPM_TYPE_ENFORCEMENT_HDCP_PROTECTION_LEVEL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for OPM_TYPE_ENFORCEMENT_HDCP_PROTECTION_LEVEL {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -65622,6 +66255,7 @@ impl ::core::default::Default for OPM_VIDEO_OUTPUT_SEMANTICS {
 }
 unsafe impl ::windows::core::Abi for OPM_VIDEO_OUTPUT_SEMANTICS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for OPM_VIDEO_OUTPUT_SEMANTICS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -65708,6 +66342,7 @@ impl ::core::default::Default for PLAYTO_SOURCE_CREATEFLAGS {
 }
 unsafe impl ::windows::core::Abi for PLAYTO_SOURCE_CREATEFLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PLAYTO_SOURCE_CREATEFLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -65769,6 +66404,7 @@ impl ::core::default::Default for PM_CONNECTOR_TYPE {
 }
 unsafe impl ::windows::core::Abi for PM_CONNECTOR_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PM_CONNECTOR_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -65801,6 +66437,7 @@ impl ::core::fmt::Debug for ROI_AREA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for ROI_AREA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for ROI_AREA {
@@ -65843,6 +66480,7 @@ impl ::core::default::Default for SAMPLE_PROTECTION_VERSION {
 }
 unsafe impl ::windows::core::Abi for SAMPLE_PROTECTION_VERSION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SAMPLE_PROTECTION_VERSION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -65870,6 +66508,7 @@ impl ::core::default::Default for SEEK_ORIGIN {
 }
 unsafe impl ::windows::core::Abi for SEEK_ORIGIN {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SEEK_ORIGIN {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -65896,6 +66535,7 @@ impl ::core::fmt::Debug for SENSORPROFILEID {
 }
 unsafe impl ::windows::core::Abi for SENSORPROFILEID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SENSORPROFILEID {
     fn eq(&self, other: &Self) -> bool {
@@ -65929,6 +66569,7 @@ impl ::core::fmt::Debug for STREAM_MEDIUM {
 }
 unsafe impl ::windows::core::Abi for STREAM_MEDIUM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for STREAM_MEDIUM {
     fn eq(&self, other: &Self) -> bool {
@@ -65978,6 +66619,7 @@ impl ::core::fmt::Debug for TOC_DESCRIPTOR {
 }
 unsafe impl ::windows::core::Abi for TOC_DESCRIPTOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TOC_DESCRIPTOR {
     fn eq(&self, other: &Self) -> bool {
@@ -66012,6 +66654,7 @@ impl ::core::fmt::Debug for TOC_ENTRY_DESCRIPTOR {
 }
 unsafe impl ::windows::core::Abi for TOC_ENTRY_DESCRIPTOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TOC_ENTRY_DESCRIPTOR {
     fn eq(&self, other: &Self) -> bool {
@@ -66049,6 +66692,7 @@ impl ::core::default::Default for TOC_POS_TYPE {
 }
 unsafe impl ::windows::core::Abi for TOC_POS_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TOC_POS_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -66090,6 +66734,7 @@ impl ::core::default::Default for WMT_PROP_DATATYPE {
 }
 unsafe impl ::windows::core::Abi for WMT_PROP_DATATYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WMT_PROP_DATATYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -66119,6 +66764,7 @@ impl ::core::default::Default for WMV_DYNAMIC_FLAGS {
 }
 unsafe impl ::windows::core::Abi for WMV_DYNAMIC_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WMV_DYNAMIC_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -66164,6 +66810,7 @@ impl ::core::default::Default for _MFP_CREDENTIAL_FLAGS {
 }
 unsafe impl ::windows::core::Abi for _MFP_CREDENTIAL_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for _MFP_CREDENTIAL_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -66195,6 +66842,7 @@ impl ::core::default::Default for _MFP_MEDIAITEM_CHARACTERISTICS {
 }
 unsafe impl ::windows::core::Abi for _MFP_MEDIAITEM_CHARACTERISTICS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for _MFP_MEDIAITEM_CHARACTERISTICS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -66242,6 +66890,7 @@ impl ::core::default::Default for _MFT_ENUM_FLAG {
 }
 unsafe impl ::windows::core::Abi for _MFT_ENUM_FLAG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for _MFT_ENUM_FLAG {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -66267,6 +66916,7 @@ impl ::core::default::Default for _MFT_INPUT_DATA_BUFFER_FLAGS {
 }
 unsafe impl ::windows::core::Abi for _MFT_INPUT_DATA_BUFFER_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for _MFT_INPUT_DATA_BUFFER_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -66292,6 +66942,7 @@ impl ::core::default::Default for _MFT_INPUT_STATUS_FLAGS {
 }
 unsafe impl ::windows::core::Abi for _MFT_INPUT_STATUS_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for _MFT_INPUT_STATUS_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -66331,6 +66982,7 @@ impl ::core::default::Default for _MFT_INPUT_STREAM_INFO_FLAGS {
 }
 unsafe impl ::windows::core::Abi for _MFT_INPUT_STREAM_INFO_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for _MFT_INPUT_STREAM_INFO_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -66362,6 +67014,7 @@ impl ::core::default::Default for _MFT_OUTPUT_DATA_BUFFER_FLAGS {
 }
 unsafe impl ::windows::core::Abi for _MFT_OUTPUT_DATA_BUFFER_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for _MFT_OUTPUT_DATA_BUFFER_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -66387,6 +67040,7 @@ impl ::core::default::Default for _MFT_OUTPUT_STATUS_FLAGS {
 }
 unsafe impl ::windows::core::Abi for _MFT_OUTPUT_STATUS_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for _MFT_OUTPUT_STATUS_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -66428,6 +67082,7 @@ impl ::core::default::Default for _MFT_OUTPUT_STREAM_INFO_FLAGS {
 }
 unsafe impl ::windows::core::Abi for _MFT_OUTPUT_STREAM_INFO_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for _MFT_OUTPUT_STREAM_INFO_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -66455,6 +67110,7 @@ impl ::core::default::Default for _MFT_PROCESS_OUTPUT_FLAGS {
 }
 unsafe impl ::windows::core::Abi for _MFT_PROCESS_OUTPUT_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for _MFT_PROCESS_OUTPUT_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -66480,6 +67136,7 @@ impl ::core::default::Default for _MFT_PROCESS_OUTPUT_STATUS {
 }
 unsafe impl ::windows::core::Abi for _MFT_PROCESS_OUTPUT_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for _MFT_PROCESS_OUTPUT_STATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -66505,6 +67162,7 @@ impl ::core::default::Default for _MFT_SET_TYPE_FLAGS {
 }
 unsafe impl ::windows::core::Abi for _MFT_SET_TYPE_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for _MFT_SET_TYPE_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -66530,6 +67188,7 @@ impl ::core::default::Default for __MIDL___MIDL_itf_mfvirtualcamera_0000_0000_00
 }
 unsafe impl ::windows::core::Abi for __MIDL___MIDL_itf_mfvirtualcamera_0000_0000_0001 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for __MIDL___MIDL_itf_mfvirtualcamera_0000_0000_0001 {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -66557,6 +67216,7 @@ impl ::core::default::Default for __MIDL___MIDL_itf_mfvirtualcamera_0000_0000_00
 }
 unsafe impl ::windows::core::Abi for __MIDL___MIDL_itf_mfvirtualcamera_0000_0000_0002 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for __MIDL___MIDL_itf_mfvirtualcamera_0000_0000_0002 {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -66584,6 +67244,7 @@ impl ::core::default::Default for __MIDL___MIDL_itf_mfvirtualcamera_0000_0000_00
 }
 unsafe impl ::windows::core::Abi for __MIDL___MIDL_itf_mfvirtualcamera_0000_0000_0003 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for __MIDL___MIDL_itf_mfvirtualcamera_0000_0000_0003 {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -66643,6 +67304,7 @@ impl ::core::default::Default for eAVAudioChannelConfig {
 }
 unsafe impl ::windows::core::Abi for eAVAudioChannelConfig {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for eAVAudioChannelConfig {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -66672,6 +67334,7 @@ impl ::core::default::Default for eAVDDSurroundMode {
 }
 unsafe impl ::windows::core::Abi for eAVDDSurroundMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for eAVDDSurroundMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -66701,6 +67364,7 @@ impl ::core::default::Default for eAVDSPLoudnessEqualization {
 }
 unsafe impl ::windows::core::Abi for eAVDSPLoudnessEqualization {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for eAVDSPLoudnessEqualization {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -66730,6 +67394,7 @@ impl ::core::default::Default for eAVDSPSpeakerFill {
 }
 unsafe impl ::windows::core::Abi for eAVDSPSpeakerFill {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for eAVDSPSpeakerFill {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -66757,6 +67422,7 @@ impl ::core::default::Default for eAVDecAACDownmixMode {
 }
 unsafe impl ::windows::core::Abi for eAVDecAACDownmixMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for eAVDecAACDownmixMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -66786,6 +67452,7 @@ impl ::core::default::Default for eAVDecAudioDualMono {
 }
 unsafe impl ::windows::core::Abi for eAVDecAudioDualMono {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for eAVDecAudioDualMono {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -66817,6 +67484,7 @@ impl ::core::default::Default for eAVDecAudioDualMonoReproMode {
 }
 unsafe impl ::windows::core::Abi for eAVDecAudioDualMonoReproMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for eAVDecAudioDualMonoReproMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -66846,6 +67514,7 @@ impl ::core::default::Default for eAVDecDDMatrixDecodingMode {
 }
 unsafe impl ::windows::core::Abi for eAVDecDDMatrixDecodingMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for eAVDecDDMatrixDecodingMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -66885,6 +67554,7 @@ impl ::core::default::Default for eAVDecDDOperationalMode {
 }
 unsafe impl ::windows::core::Abi for eAVDecDDOperationalMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for eAVDecDDOperationalMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -66914,6 +67584,7 @@ impl ::core::default::Default for eAVDecDDStereoDownMixMode {
 }
 unsafe impl ::windows::core::Abi for eAVDecDDStereoDownMixMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for eAVDecDDStereoDownMixMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -66941,6 +67612,7 @@ impl ::core::default::Default for eAVDecHEAACDynamicRangeControl {
 }
 unsafe impl ::windows::core::Abi for eAVDecHEAACDynamicRangeControl {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for eAVDecHEAACDynamicRangeControl {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -66970,6 +67642,7 @@ impl ::core::default::Default for eAVDecVideoCodecType {
 }
 unsafe impl ::windows::core::Abi for eAVDecVideoCodecType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for eAVDecVideoCodecType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -66999,6 +67672,7 @@ impl ::core::default::Default for eAVDecVideoDXVABusEncryption {
 }
 unsafe impl ::windows::core::Abi for eAVDecVideoDXVABusEncryption {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for eAVDecVideoDXVABusEncryption {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -67032,6 +67706,7 @@ impl ::core::default::Default for eAVDecVideoDXVAMode {
 }
 unsafe impl ::windows::core::Abi for eAVDecVideoDXVAMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for eAVDecVideoDXVAMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -67063,6 +67738,7 @@ impl ::core::default::Default for eAVDecVideoH264ErrorConcealment {
 }
 unsafe impl ::windows::core::Abi for eAVDecVideoH264ErrorConcealment {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for eAVDecVideoH264ErrorConcealment {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -67094,6 +67770,7 @@ impl ::core::default::Default for eAVDecVideoInputScanType {
 }
 unsafe impl ::windows::core::Abi for eAVDecVideoInputScanType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for eAVDecVideoInputScanType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -67121,6 +67798,7 @@ impl ::core::default::Default for eAVDecVideoMPEG2ErrorConcealment {
 }
 unsafe impl ::windows::core::Abi for eAVDecVideoMPEG2ErrorConcealment {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for eAVDecVideoMPEG2ErrorConcealment {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -67150,6 +67828,7 @@ impl ::core::default::Default for eAVDecVideoSWPowerLevel {
 }
 unsafe impl ::windows::core::Abi for eAVDecVideoSWPowerLevel {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for eAVDecVideoSWPowerLevel {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -67181,6 +67860,7 @@ impl ::core::default::Default for eAVDecVideoSoftwareDeinterlaceMode {
 }
 unsafe impl ::windows::core::Abi for eAVDecVideoSoftwareDeinterlaceMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for eAVDecVideoSoftwareDeinterlaceMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -67210,6 +67890,7 @@ impl ::core::default::Default for eAVEncAdaptiveMode {
 }
 unsafe impl ::windows::core::Abi for eAVEncAdaptiveMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for eAVEncAdaptiveMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -67239,6 +67920,7 @@ impl ::core::default::Default for eAVEncAudioDualMono {
 }
 unsafe impl ::windows::core::Abi for eAVEncAudioDualMono {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for eAVEncAudioDualMono {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -67268,6 +67950,7 @@ impl ::core::default::Default for eAVEncAudioInputContent {
 }
 unsafe impl ::windows::core::Abi for eAVEncAudioInputContent {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for eAVEncAudioInputContent {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -67297,6 +67980,7 @@ impl ::core::default::Default for eAVEncChromaEncodeMode {
 }
 unsafe impl ::windows::core::Abi for eAVEncChromaEncodeMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for eAVEncChromaEncodeMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -67334,6 +68018,7 @@ impl ::core::default::Default for eAVEncCommonRateControlMode {
 }
 unsafe impl ::windows::core::Abi for eAVEncCommonRateControlMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for eAVEncCommonRateControlMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -67361,6 +68046,7 @@ impl ::core::default::Default for eAVEncCommonStreamEndHandling {
 }
 unsafe impl ::windows::core::Abi for eAVEncCommonStreamEndHandling {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for eAVEncCommonStreamEndHandling {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -67388,6 +68074,7 @@ impl ::core::default::Default for eAVEncDDAtoDConverterType {
 }
 unsafe impl ::windows::core::Abi for eAVEncDDAtoDConverterType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for eAVEncDDAtoDConverterType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -67423,6 +68110,7 @@ impl ::core::default::Default for eAVEncDDDynamicRangeCompressionControl {
 }
 unsafe impl ::windows::core::Abi for eAVEncDDDynamicRangeCompressionControl {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for eAVEncDDDynamicRangeCompressionControl {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -67452,6 +68140,7 @@ impl ::core::default::Default for eAVEncDDHeadphoneMode {
 }
 unsafe impl ::windows::core::Abi for eAVEncDDHeadphoneMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for eAVEncDDHeadphoneMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -67479,6 +68168,7 @@ impl ::core::default::Default for eAVEncDDPreferredStereoDownMixMode {
 }
 unsafe impl ::windows::core::Abi for eAVEncDDPreferredStereoDownMixMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for eAVEncDDPreferredStereoDownMixMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -67508,6 +68198,7 @@ impl ::core::default::Default for eAVEncDDProductionRoomType {
 }
 unsafe impl ::windows::core::Abi for eAVEncDDProductionRoomType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for eAVEncDDProductionRoomType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -67547,6 +68238,7 @@ impl ::core::default::Default for eAVEncDDService {
 }
 unsafe impl ::windows::core::Abi for eAVEncDDService {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for eAVEncDDService {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -67576,6 +68268,7 @@ impl ::core::default::Default for eAVEncDDSurroundExMode {
 }
 unsafe impl ::windows::core::Abi for eAVEncDDSurroundExMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for eAVEncDDSurroundExMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -67605,6 +68298,7 @@ impl ::core::default::Default for eAVEncH263PictureType {
 }
 unsafe impl ::windows::core::Abi for eAVEncH263PictureType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for eAVEncH263PictureType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -67644,6 +68338,7 @@ impl ::core::default::Default for eAVEncH263VLevel {
 }
 unsafe impl ::windows::core::Abi for eAVEncH263VLevel {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for eAVEncH263VLevel {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -67685,6 +68380,7 @@ impl ::core::default::Default for eAVEncH263VProfile {
 }
 unsafe impl ::windows::core::Abi for eAVEncH263VProfile {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for eAVEncH263VProfile {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -67714,6 +68410,7 @@ impl ::core::default::Default for eAVEncH264PictureType {
 }
 unsafe impl ::windows::core::Abi for eAVEncH264PictureType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for eAVEncH264PictureType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -67771,6 +68468,7 @@ impl ::core::default::Default for eAVEncH264VLevel {
 }
 unsafe impl ::windows::core::Abi for eAVEncH264VLevel {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for eAVEncH264VLevel {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -67828,6 +68526,7 @@ impl ::core::default::Default for eAVEncH264VProfile {
 }
 unsafe impl ::windows::core::Abi for eAVEncH264VProfile {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for eAVEncH264VProfile {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -67877,6 +68576,7 @@ impl ::core::default::Default for eAVEncH265VLevel {
 }
 unsafe impl ::windows::core::Abi for eAVEncH265VLevel {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for eAVEncH265VLevel {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -67946,6 +68646,7 @@ impl ::core::default::Default for eAVEncH265VProfile {
 }
 unsafe impl ::windows::core::Abi for eAVEncH265VProfile {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for eAVEncH265VProfile {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -67983,6 +68684,7 @@ impl ::core::default::Default for eAVEncInputVideoSystem {
 }
 unsafe impl ::windows::core::Abi for eAVEncInputVideoSystem {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for eAVEncInputVideoSystem {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -68016,6 +68718,7 @@ impl ::core::default::Default for eAVEncMPACodingMode {
 }
 unsafe impl ::windows::core::Abi for eAVEncMPACodingMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for eAVEncMPACodingMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -68047,6 +68750,7 @@ impl ::core::default::Default for eAVEncMPAEmphasisType {
 }
 unsafe impl ::windows::core::Abi for eAVEncMPAEmphasisType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for eAVEncMPAEmphasisType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -68076,6 +68780,7 @@ impl ::core::default::Default for eAVEncMPALayer {
 }
 unsafe impl ::windows::core::Abi for eAVEncMPALayer {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for eAVEncMPALayer {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -68103,6 +68808,7 @@ impl ::core::default::Default for eAVEncMPVFrameFieldMode {
 }
 unsafe impl ::windows::core::Abi for eAVEncMPVFrameFieldMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for eAVEncMPVFrameFieldMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -68132,6 +68838,7 @@ impl ::core::default::Default for eAVEncMPVIntraVLCTable {
 }
 unsafe impl ::windows::core::Abi for eAVEncMPVIntraVLCTable {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for eAVEncMPVIntraVLCTable {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -68163,6 +68870,7 @@ impl ::core::default::Default for eAVEncMPVLevel {
 }
 unsafe impl ::windows::core::Abi for eAVEncMPVLevel {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for eAVEncMPVLevel {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -68196,6 +68904,7 @@ impl ::core::default::Default for eAVEncMPVProfile {
 }
 unsafe impl ::windows::core::Abi for eAVEncMPVProfile {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for eAVEncMPVProfile {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -68225,6 +68934,7 @@ impl ::core::default::Default for eAVEncMPVQScaleType {
 }
 unsafe impl ::windows::core::Abi for eAVEncMPVQScaleType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for eAVEncMPVQScaleType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -68254,6 +68964,7 @@ impl ::core::default::Default for eAVEncMPVScanPattern {
 }
 unsafe impl ::windows::core::Abi for eAVEncMPVScanPattern {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for eAVEncMPVScanPattern {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -68285,6 +68996,7 @@ impl ::core::default::Default for eAVEncMPVSceneDetection {
 }
 unsafe impl ::windows::core::Abi for eAVEncMPVSceneDetection {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for eAVEncMPVSceneDetection {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -68314,6 +69026,7 @@ impl ::core::default::Default for eAVEncMuxOutput {
 }
 unsafe impl ::windows::core::Abi for eAVEncMuxOutput {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for eAVEncMuxOutput {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -68345,6 +69058,7 @@ impl ::core::default::Default for eAVEncVP9VProfile {
 }
 unsafe impl ::windows::core::Abi for eAVEncVP9VProfile {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for eAVEncVP9VProfile {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -68378,6 +69092,7 @@ impl ::core::default::Default for eAVEncVideoChromaResolution {
 }
 unsafe impl ::windows::core::Abi for eAVEncVideoChromaResolution {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for eAVEncVideoChromaResolution {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -68411,6 +69126,7 @@ impl ::core::default::Default for eAVEncVideoChromaSubsampling {
 }
 unsafe impl ::windows::core::Abi for eAVEncVideoChromaSubsampling {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for eAVEncVideoChromaSubsampling {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -68446,6 +69162,7 @@ impl ::core::default::Default for eAVEncVideoColorLighting {
 }
 unsafe impl ::windows::core::Abi for eAVEncVideoColorLighting {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for eAVEncVideoColorLighting {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -68477,6 +69194,7 @@ impl ::core::default::Default for eAVEncVideoColorNominalRange {
 }
 unsafe impl ::windows::core::Abi for eAVEncVideoColorNominalRange {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for eAVEncVideoColorNominalRange {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -68518,6 +69236,7 @@ impl ::core::default::Default for eAVEncVideoColorPrimaries {
 }
 unsafe impl ::windows::core::Abi for eAVEncVideoColorPrimaries {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for eAVEncVideoColorPrimaries {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -68559,6 +69278,7 @@ impl ::core::default::Default for eAVEncVideoColorTransferFunction {
 }
 unsafe impl ::windows::core::Abi for eAVEncVideoColorTransferFunction {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for eAVEncVideoColorTransferFunction {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -68590,6 +69310,7 @@ impl ::core::default::Default for eAVEncVideoColorTransferMatrix {
 }
 unsafe impl ::windows::core::Abi for eAVEncVideoColorTransferMatrix {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for eAVEncVideoColorTransferMatrix {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -68617,6 +69338,7 @@ impl ::core::default::Default for eAVEncVideoContentType {
 }
 unsafe impl ::windows::core::Abi for eAVEncVideoContentType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for eAVEncVideoContentType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -68646,6 +69368,7 @@ impl ::core::default::Default for eAVEncVideoFilmContent {
 }
 unsafe impl ::windows::core::Abi for eAVEncVideoFilmContent {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for eAVEncVideoFilmContent {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -68675,6 +69398,7 @@ impl ::core::default::Default for eAVEncVideoOutputFrameRateConversion {
 }
 unsafe impl ::windows::core::Abi for eAVEncVideoOutputFrameRateConversion {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for eAVEncVideoOutputFrameRateConversion {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -68706,6 +69430,7 @@ impl ::core::default::Default for eAVEncVideoOutputScanType {
 }
 unsafe impl ::windows::core::Abi for eAVEncVideoOutputScanType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for eAVEncVideoOutputScanType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -68735,6 +69460,7 @@ impl ::core::default::Default for eAVEncVideoSourceScanType {
 }
 unsafe impl ::windows::core::Abi for eAVEncVideoSourceScanType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for eAVEncVideoSourceScanType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -68766,6 +69492,7 @@ impl ::core::default::Default for eAVFastDecodeMode {
 }
 unsafe impl ::windows::core::Abi for eAVFastDecodeMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for eAVFastDecodeMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -68803,6 +69530,7 @@ impl ::core::default::Default for eAVScenarioInfo {
 }
 unsafe impl ::windows::core::Abi for eAVScenarioInfo {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for eAVScenarioInfo {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -68830,6 +69558,7 @@ impl ::core::default::Default for eVideoEncoderDisplayContentType {
 }
 unsafe impl ::windows::core::Abi for eVideoEncoderDisplayContentType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for eVideoEncoderDisplayContentType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

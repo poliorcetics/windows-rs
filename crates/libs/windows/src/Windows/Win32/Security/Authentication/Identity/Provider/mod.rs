@@ -22,6 +22,7 @@ impl ::core::default::Default for ACCOUNT_STATE {
 }
 unsafe impl ::windows::core::Abi for ACCOUNT_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ACCOUNT_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -31,6 +32,11 @@ impl ::core::fmt::Debug for ACCOUNT_STATE {
 #[doc = "*Required features: `\"Win32_Security_Authentication_Identity_Provider\"`*"]
 #[repr(transparent)]
 pub struct AsyncIAssociatedIdentityProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for AsyncIAssociatedIdentityProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl AsyncIAssociatedIdentityProvider {
     #[doc = "*Required features: `\"Win32_Security_Authentication_Identity_Provider\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -82,11 +88,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a Async
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for AsyncIAssociatedIdentityProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AsyncIAssociatedIdentityProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -128,6 +129,11 @@ pub struct AsyncIAssociatedIdentityProvider_Vtbl {
 #[doc = "*Required features: `\"Win32_Security_Authentication_Identity_Provider\"`*"]
 #[repr(transparent)]
 pub struct AsyncIConnectedIdentityProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for AsyncIConnectedIdentityProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl AsyncIConnectedIdentityProvider {
     #[doc = "*Required features: `\"Win32_Security_Authentication_Identity_Provider\"`*"]
     pub unsafe fn Begin_ConnectIdentity(&self, authbuffer: &[u8]) -> ::windows::core::Result<()> {
@@ -195,11 +201,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a Async
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for AsyncIConnectedIdentityProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AsyncIConnectedIdentityProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -242,6 +243,11 @@ pub struct AsyncIConnectedIdentityProvider_Vtbl {
 #[doc = "*Required features: `\"Win32_Security_Authentication_Identity_Provider\"`*"]
 #[repr(transparent)]
 pub struct AsyncIIdentityAdvise(::windows::core::IUnknown);
+impl ::core::clone::Clone for AsyncIIdentityAdvise {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl AsyncIIdentityAdvise {
     #[doc = "*Required features: `\"Win32_Security_Authentication_Identity_Provider\"`*"]
     pub unsafe fn Begin_IdentityUpdated<'a, Param1: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, dwidentityupdateevents: u32, lpszuniqueid: Param1) -> ::windows::core::Result<()> {
@@ -272,11 +278,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a Async
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for AsyncIIdentityAdvise {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AsyncIIdentityAdvise {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -302,6 +303,11 @@ pub struct AsyncIIdentityAdvise_Vtbl {
 #[doc = "*Required features: `\"Win32_Security_Authentication_Identity_Provider\"`*"]
 #[repr(transparent)]
 pub struct AsyncIIdentityAuthentication(::windows::core::IUnknown);
+impl ::core::clone::Clone for AsyncIIdentityAuthentication {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl AsyncIIdentityAuthentication {
     #[doc = "*Required features: `\"Win32_Security_Authentication_Identity_Provider\"`*"]
     pub unsafe fn Begin_SetIdentityCredential(&self, credbuffer: &[u8]) -> ::windows::core::Result<()> {
@@ -342,11 +348,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a Async
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for AsyncIIdentityAuthentication {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AsyncIIdentityAuthentication {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -380,6 +381,11 @@ pub struct AsyncIIdentityAuthentication_Vtbl {
 #[doc = "*Required features: `\"Win32_Security_Authentication_Identity_Provider\"`*"]
 #[repr(transparent)]
 pub struct AsyncIIdentityProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for AsyncIIdentityProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl AsyncIIdentityProvider {
     #[doc = "*Required features: `\"Win32_Security_Authentication_Identity_Provider\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com_StructuredStorage\"`, `\"Win32_UI_Shell_PropertiesSystem\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com_StructuredStorage", feature = "Win32_UI_Shell_PropertiesSystem"))]
@@ -479,11 +485,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a Async
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for AsyncIIdentityProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AsyncIIdentityProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -547,6 +548,11 @@ pub struct AsyncIIdentityProvider_Vtbl {
 #[doc = "*Required features: `\"Win32_Security_Authentication_Identity_Provider\"`*"]
 #[repr(transparent)]
 pub struct AsyncIIdentityStore(::windows::core::IUnknown);
+impl ::core::clone::Clone for AsyncIIdentityStore {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl AsyncIIdentityStore {
     #[doc = "*Required features: `\"Win32_Security_Authentication_Identity_Provider\"`*"]
     pub unsafe fn Begin_GetCount(&self) -> ::windows::core::Result<()> {
@@ -621,11 +627,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a Async
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for AsyncIIdentityStore {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AsyncIIdentityStore {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -667,6 +668,11 @@ pub struct AsyncIIdentityStore_Vtbl {
 #[doc = "*Required features: `\"Win32_Security_Authentication_Identity_Provider\"`*"]
 #[repr(transparent)]
 pub struct AsyncIIdentityStoreEx(::windows::core::IUnknown);
+impl ::core::clone::Clone for AsyncIIdentityStoreEx {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl AsyncIIdentityStoreEx {
     #[doc = "*Required features: `\"Win32_Security_Authentication_Identity_Provider\"`*"]
     pub unsafe fn Begin_CreateConnectedIdentity<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param1: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, localname: Param0, connectedname: Param1, providerguid: *const ::windows::core::GUID) -> ::windows::core::Result<()> {
@@ -705,11 +711,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a Async
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for AsyncIIdentityStoreEx {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AsyncIIdentityStoreEx {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -739,6 +740,11 @@ pub const CoClassIdentityStore: ::windows::core::GUID = ::windows::core::GUID::f
 #[doc = "*Required features: `\"Win32_Security_Authentication_Identity_Provider\"`*"]
 #[repr(transparent)]
 pub struct IAssociatedIdentityProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAssociatedIdentityProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAssociatedIdentityProvider {
     #[doc = "*Required features: `\"Win32_Security_Authentication_Identity_Provider\"`, `\"Win32_Foundation\"`, `\"Win32_UI_Shell_PropertiesSystem\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_UI_Shell_PropertiesSystem"))]
@@ -777,11 +783,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAsso
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAssociatedIdentityProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAssociatedIdentityProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -817,6 +818,11 @@ pub struct IAssociatedIdentityProvider_Vtbl {
 #[doc = "*Required features: `\"Win32_Security_Authentication_Identity_Provider\"`*"]
 #[repr(transparent)]
 pub struct IConnectedIdentityProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IConnectedIdentityProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IConnectedIdentityProvider {
     #[doc = "*Required features: `\"Win32_Security_Authentication_Identity_Provider\"`*"]
     pub unsafe fn ConnectIdentity(&self, authbuffer: &[u8]) -> ::windows::core::Result<()> {
@@ -861,11 +867,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IConnecte
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IConnectedIdentityProvider {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IConnectedIdentityProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IConnectedIdentityProvider {
@@ -928,6 +929,7 @@ impl ::core::default::Default for IDENTITY_TYPE {
 }
 unsafe impl ::windows::core::Abi for IDENTITY_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for IDENTITY_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -965,6 +967,7 @@ impl ::core::default::Default for IDENTITY_URL {
 }
 unsafe impl ::windows::core::Abi for IDENTITY_URL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for IDENTITY_URL {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -974,6 +977,11 @@ impl ::core::fmt::Debug for IDENTITY_URL {
 #[doc = "*Required features: `\"Win32_Security_Authentication_Identity_Provider\"`*"]
 #[repr(transparent)]
 pub struct IIdentityAdvise(::windows::core::IUnknown);
+impl ::core::clone::Clone for IIdentityAdvise {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IIdentityAdvise {
     #[doc = "*Required features: `\"Win32_Security_Authentication_Identity_Provider\"`*"]
     pub unsafe fn IdentityUpdated<'a, Param1: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, dwidentityupdateevents: IdentityUpdateEvent, lpszuniqueid: Param1) -> ::windows::core::Result<()> {
@@ -1000,11 +1008,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IIden
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IIdentityAdvise {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IIdentityAdvise {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1029,6 +1032,11 @@ pub struct IIdentityAdvise_Vtbl {
 #[doc = "*Required features: `\"Win32_Security_Authentication_Identity_Provider\"`*"]
 #[repr(transparent)]
 pub struct IIdentityAuthentication(::windows::core::IUnknown);
+impl ::core::clone::Clone for IIdentityAuthentication {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IIdentityAuthentication {
     #[doc = "*Required features: `\"Win32_Security_Authentication_Identity_Provider\"`*"]
     pub unsafe fn SetIdentityCredential(&self, credbuffer: &[u8]) -> ::windows::core::Result<()> {
@@ -1060,11 +1068,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IIden
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IIdentityAuthentication {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IIdentityAuthentication {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1093,6 +1096,11 @@ pub struct IIdentityAuthentication_Vtbl {
 #[doc = "*Required features: `\"Win32_Security_Authentication_Identity_Provider\"`*"]
 #[repr(transparent)]
 pub struct IIdentityProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IIdentityProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IIdentityProvider {
     #[doc = "*Required features: `\"Win32_Security_Authentication_Identity_Provider\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com_StructuredStorage\"`, `\"Win32_UI_Shell_PropertiesSystem\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com_StructuredStorage", feature = "Win32_UI_Shell_PropertiesSystem"))]
@@ -1157,11 +1165,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IIden
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IIdentityProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IIdentityProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1211,6 +1214,11 @@ pub struct IIdentityProvider_Vtbl {
 #[doc = "*Required features: `\"Win32_Security_Authentication_Identity_Provider\"`*"]
 #[repr(transparent)]
 pub struct IIdentityStore(::windows::core::IUnknown);
+impl ::core::clone::Clone for IIdentityStore {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IIdentityStore {
     #[doc = "*Required features: `\"Win32_Security_Authentication_Identity_Provider\"`*"]
     pub unsafe fn GetCount(&self) -> ::windows::core::Result<u32> {
@@ -1260,11 +1268,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IIden
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IIdentityStore {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IIdentityStore {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1297,6 +1300,11 @@ pub struct IIdentityStore_Vtbl {
 #[doc = "*Required features: `\"Win32_Security_Authentication_Identity_Provider\"`*"]
 #[repr(transparent)]
 pub struct IIdentityStoreEx(::windows::core::IUnknown);
+impl ::core::clone::Clone for IIdentityStoreEx {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IIdentityStoreEx {
     #[doc = "*Required features: `\"Win32_Security_Authentication_Identity_Provider\"`*"]
     pub unsafe fn CreateConnectedIdentity<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param1: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, localname: Param0, connectedname: Param1, providerguid: *const ::windows::core::GUID) -> ::windows::core::Result<()> {
@@ -1325,11 +1333,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IIdentity
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IIdentityStoreEx {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IIdentityStoreEx {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IIdentityStoreEx {
@@ -1387,6 +1390,7 @@ impl ::core::default::Default for IdentityUpdateEvent {
 }
 unsafe impl ::windows::core::Abi for IdentityUpdateEvent {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for IdentityUpdateEvent {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

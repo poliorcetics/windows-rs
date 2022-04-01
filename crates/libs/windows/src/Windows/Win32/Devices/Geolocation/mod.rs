@@ -45,6 +45,7 @@ impl ::core::clone::Clone for GNSS_AGNSS_INJECT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for GNSS_AGNSS_INJECT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for GNSS_AGNSS_INJECT {
@@ -79,6 +80,7 @@ impl ::core::clone::Clone for GNSS_AGNSS_INJECT_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for GNSS_AGNSS_INJECT_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for GNSS_AGNSS_INJECT_0 {
@@ -118,6 +120,7 @@ impl ::core::fmt::Debug for GNSS_AGNSS_INJECTBLOB {
 }
 unsafe impl ::windows::core::Abi for GNSS_AGNSS_INJECTBLOB {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for GNSS_AGNSS_INJECTBLOB {
     fn eq(&self, other: &Self) -> bool {
@@ -152,6 +155,7 @@ impl ::core::fmt::Debug for GNSS_AGNSS_INJECTPOSITION {
 }
 unsafe impl ::windows::core::Abi for GNSS_AGNSS_INJECTPOSITION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for GNSS_AGNSS_INJECTPOSITION {
     fn eq(&self, other: &Self) -> bool {
@@ -190,6 +194,7 @@ impl ::core::fmt::Debug for GNSS_AGNSS_INJECTTIME {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for GNSS_AGNSS_INJECTTIME {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for GNSS_AGNSS_INJECTTIME {
@@ -226,6 +231,7 @@ impl ::core::fmt::Debug for GNSS_AGNSS_REQUEST_PARAM {
 }
 unsafe impl ::windows::core::Abi for GNSS_AGNSS_REQUEST_PARAM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for GNSS_AGNSS_REQUEST_PARAM {
     fn eq(&self, other: &Self) -> bool {
@@ -261,6 +267,7 @@ impl ::core::default::Default for GNSS_AGNSS_REQUEST_TYPE {
 }
 unsafe impl ::windows::core::Abi for GNSS_AGNSS_REQUEST_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GNSS_AGNSS_REQUEST_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -287,6 +294,7 @@ impl ::core::fmt::Debug for GNSS_BREADCRUMBING_ALERT_DATA {
 }
 unsafe impl ::windows::core::Abi for GNSS_BREADCRUMBING_ALERT_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for GNSS_BREADCRUMBING_ALERT_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -322,6 +330,7 @@ impl ::core::fmt::Debug for GNSS_BREADCRUMBING_PARAM {
 }
 unsafe impl ::windows::core::Abi for GNSS_BREADCRUMBING_PARAM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for GNSS_BREADCRUMBING_PARAM {
     fn eq(&self, other: &Self) -> bool {
@@ -354,6 +363,7 @@ impl ::core::clone::Clone for GNSS_BREADCRUMB_LIST {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for GNSS_BREADCRUMB_LIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for GNSS_BREADCRUMB_LIST {
@@ -386,6 +396,7 @@ impl ::core::clone::Clone for GNSS_BREADCRUMB_LIST_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for GNSS_BREADCRUMB_LIST_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for GNSS_BREADCRUMB_LIST_0 {
@@ -446,6 +457,7 @@ impl ::core::fmt::Debug for GNSS_BREADCRUMB_V1 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for GNSS_BREADCRUMB_V1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for GNSS_BREADCRUMB_V1 {
@@ -484,6 +496,7 @@ impl ::core::fmt::Debug for GNSS_CHIPSETINFO {
 }
 unsafe impl ::windows::core::Abi for GNSS_CHIPSETINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for GNSS_CHIPSETINFO {
     fn eq(&self, other: &Self) -> bool {
@@ -516,6 +529,7 @@ impl ::core::fmt::Debug for GNSS_CONTINUOUSTRACKING_PARAM {
 }
 unsafe impl ::windows::core::Abi for GNSS_CONTINUOUSTRACKING_PARAM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for GNSS_CONTINUOUSTRACKING_PARAM {
     fn eq(&self, other: &Self) -> bool {
@@ -549,6 +563,7 @@ impl ::core::fmt::Debug for GNSS_CP_NI_INFO {
 }
 unsafe impl ::windows::core::Abi for GNSS_CP_NI_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for GNSS_CP_NI_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -589,6 +604,7 @@ impl ::core::fmt::Debug for GNSS_CWTESTDATA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for GNSS_CWTESTDATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for GNSS_CWTESTDATA {
@@ -681,6 +697,7 @@ impl ::core::fmt::Debug for GNSS_DEVICE_CAPABILITY {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for GNSS_DEVICE_CAPABILITY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for GNSS_DEVICE_CAPABILITY {
@@ -716,6 +733,7 @@ impl ::core::fmt::Debug for GNSS_DISTANCETRACKING_PARAM {
 }
 unsafe impl ::windows::core::Abi for GNSS_DISTANCETRACKING_PARAM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for GNSS_DISTANCETRACKING_PARAM {
     fn eq(&self, other: &Self) -> bool {
@@ -752,6 +770,7 @@ impl ::core::fmt::Debug for GNSS_DRIVERCOMMAND_PARAM {
 }
 unsafe impl ::windows::core::Abi for GNSS_DRIVERCOMMAND_PARAM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for GNSS_DRIVERCOMMAND_PARAM {
     fn eq(&self, other: &Self) -> bool {
@@ -807,6 +826,7 @@ impl ::core::default::Default for GNSS_DRIVERCOMMAND_TYPE {
 }
 unsafe impl ::windows::core::Abi for GNSS_DRIVERCOMMAND_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GNSS_DRIVERCOMMAND_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -832,6 +852,7 @@ impl ::core::default::Default for GNSS_DRIVER_REQUEST {
 }
 unsafe impl ::windows::core::Abi for GNSS_DRIVER_REQUEST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GNSS_DRIVER_REQUEST {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -859,6 +880,7 @@ impl ::core::fmt::Debug for GNSS_DRIVER_REQUEST_DATA {
 }
 unsafe impl ::windows::core::Abi for GNSS_DRIVER_REQUEST_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for GNSS_DRIVER_REQUEST_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -911,6 +933,7 @@ impl ::core::fmt::Debug for GNSS_ERRORINFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for GNSS_ERRORINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for GNSS_ERRORINFO {
@@ -948,6 +971,7 @@ impl ::core::clone::Clone for GNSS_EVENT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for GNSS_EVENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for GNSS_EVENT {
@@ -989,6 +1013,7 @@ impl ::core::clone::Clone for GNSS_EVENT_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for GNSS_EVENT_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for GNSS_EVENT_0 {
@@ -1026,6 +1051,7 @@ impl ::core::clone::Clone for GNSS_EVENT_2 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for GNSS_EVENT_2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for GNSS_EVENT_2 {
@@ -1068,6 +1094,7 @@ impl ::core::clone::Clone for GNSS_EVENT_2_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for GNSS_EVENT_2_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for GNSS_EVENT_2_0 {
@@ -1122,6 +1149,7 @@ impl ::core::default::Default for GNSS_EVENT_TYPE {
 }
 unsafe impl ::windows::core::Abi for GNSS_EVENT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GNSS_EVENT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1160,6 +1188,7 @@ impl ::core::fmt::Debug for GNSS_FIXDATA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for GNSS_FIXDATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for GNSS_FIXDATA {
@@ -1207,6 +1236,7 @@ impl ::core::fmt::Debug for GNSS_FIXDATA_2 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for GNSS_FIXDATA_2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for GNSS_FIXDATA_2 {
@@ -1272,6 +1302,7 @@ impl ::core::fmt::Debug for GNSS_FIXDATA_ACCURACY {
 }
 unsafe impl ::windows::core::Abi for GNSS_FIXDATA_ACCURACY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for GNSS_FIXDATA_ACCURACY {
     fn eq(&self, other: &Self) -> bool {
@@ -1338,6 +1369,7 @@ impl ::core::fmt::Debug for GNSS_FIXDATA_ACCURACY_2 {
 }
 unsafe impl ::windows::core::Abi for GNSS_FIXDATA_ACCURACY_2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for GNSS_FIXDATA_ACCURACY_2 {
     fn eq(&self, other: &Self) -> bool {
@@ -1374,6 +1406,7 @@ impl ::core::fmt::Debug for GNSS_FIXDATA_BASIC {
 }
 unsafe impl ::windows::core::Abi for GNSS_FIXDATA_BASIC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for GNSS_FIXDATA_BASIC {
     fn eq(&self, other: &Self) -> bool {
@@ -1411,6 +1444,7 @@ impl ::core::fmt::Debug for GNSS_FIXDATA_BASIC_2 {
 }
 unsafe impl ::windows::core::Abi for GNSS_FIXDATA_BASIC_2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for GNSS_FIXDATA_BASIC_2 {
     fn eq(&self, other: &Self) -> bool {
@@ -1449,6 +1483,7 @@ impl ::core::fmt::Debug for GNSS_FIXDATA_SATELLITE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for GNSS_FIXDATA_SATELLITE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for GNSS_FIXDATA_SATELLITE {
@@ -1495,6 +1530,7 @@ impl ::core::default::Default for GNSS_FIXSESSIONTYPE {
 }
 unsafe impl ::windows::core::Abi for GNSS_FIXSESSIONTYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GNSS_FIXSESSIONTYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1523,6 +1559,7 @@ impl ::core::clone::Clone for GNSS_FIXSESSION_PARAM {
 }
 unsafe impl ::windows::core::Abi for GNSS_FIXSESSION_PARAM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for GNSS_FIXSESSION_PARAM {
     fn eq(&self, other: &Self) -> bool {
@@ -1552,6 +1589,7 @@ impl ::core::clone::Clone for GNSS_FIXSESSION_PARAM_0 {
 }
 unsafe impl ::windows::core::Abi for GNSS_FIXSESSION_PARAM_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for GNSS_FIXSESSION_PARAM_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -1595,6 +1633,7 @@ impl ::core::fmt::Debug for GNSS_GEOFENCES_TRACKINGSTATUS_DATA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for GNSS_GEOFENCES_TRACKINGSTATUS_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for GNSS_GEOFENCES_TRACKINGSTATUS_DATA {
@@ -1634,6 +1673,7 @@ impl ::core::fmt::Debug for GNSS_GEOFENCE_ALERT_DATA {
 }
 unsafe impl ::windows::core::Abi for GNSS_GEOFENCE_ALERT_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for GNSS_GEOFENCE_ALERT_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -1664,6 +1704,7 @@ impl ::core::clone::Clone for GNSS_GEOFENCE_CREATE_PARAM {
 }
 unsafe impl ::windows::core::Abi for GNSS_GEOFENCE_CREATE_PARAM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for GNSS_GEOFENCE_CREATE_PARAM {
     fn eq(&self, other: &Self) -> bool {
@@ -1703,6 +1744,7 @@ impl ::core::fmt::Debug for GNSS_GEOFENCE_CREATE_RESPONSE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for GNSS_GEOFENCE_CREATE_RESPONSE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for GNSS_GEOFENCE_CREATE_RESPONSE {
@@ -1739,6 +1781,7 @@ impl ::core::fmt::Debug for GNSS_GEOFENCE_DELETE_PARAM {
 }
 unsafe impl ::windows::core::Abi for GNSS_GEOFENCE_DELETE_PARAM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for GNSS_GEOFENCE_DELETE_PARAM {
     fn eq(&self, other: &Self) -> bool {
@@ -1774,6 +1817,7 @@ impl ::core::default::Default for GNSS_GEOFENCE_STATE {
 }
 unsafe impl ::windows::core::Abi for GNSS_GEOFENCE_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GNSS_GEOFENCE_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1796,6 +1840,7 @@ impl ::core::clone::Clone for GNSS_GEOREGION {
 }
 unsafe impl ::windows::core::Abi for GNSS_GEOREGION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for GNSS_GEOREGION {
     fn eq(&self, other: &Self) -> bool {
@@ -1822,6 +1867,7 @@ impl ::core::clone::Clone for GNSS_GEOREGION_0 {
 }
 unsafe impl ::windows::core::Abi for GNSS_GEOREGION_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for GNSS_GEOREGION_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -1853,6 +1899,7 @@ impl ::core::default::Default for GNSS_GEOREGIONTYPE {
 }
 unsafe impl ::windows::core::Abi for GNSS_GEOREGIONTYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GNSS_GEOREGIONTYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1879,6 +1926,7 @@ impl ::core::fmt::Debug for GNSS_GEOREGION_CIRCLE {
 }
 unsafe impl ::windows::core::Abi for GNSS_GEOREGION_CIRCLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for GNSS_GEOREGION_CIRCLE {
     fn eq(&self, other: &Self) -> bool {
@@ -1910,6 +1958,7 @@ impl ::core::fmt::Debug for GNSS_LKGFIX_PARAM {
 }
 unsafe impl ::windows::core::Abi for GNSS_LKGFIX_PARAM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for GNSS_LKGFIX_PARAM {
     fn eq(&self, other: &Self) -> bool {
@@ -1951,6 +2000,7 @@ impl ::core::default::Default for GNSS_NI_NOTIFICATION_TYPE {
 }
 unsafe impl ::windows::core::Abi for GNSS_NI_NOTIFICATION_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GNSS_NI_NOTIFICATION_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1980,6 +2030,7 @@ impl ::core::default::Default for GNSS_NI_PLANE_TYPE {
 }
 unsafe impl ::windows::core::Abi for GNSS_NI_PLANE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GNSS_NI_PLANE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2011,6 +2062,7 @@ impl ::core::clone::Clone for GNSS_NI_REQUEST_PARAM {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for GNSS_NI_REQUEST_PARAM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for GNSS_NI_REQUEST_PARAM {
@@ -2045,6 +2097,7 @@ impl ::core::clone::Clone for GNSS_NI_REQUEST_PARAM_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for GNSS_NI_REQUEST_PARAM_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for GNSS_NI_REQUEST_PARAM_0 {
@@ -2081,6 +2134,7 @@ impl ::core::default::Default for GNSS_NI_REQUEST_TYPE {
 }
 unsafe impl ::windows::core::Abi for GNSS_NI_REQUEST_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GNSS_NI_REQUEST_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2108,6 +2162,7 @@ impl ::core::fmt::Debug for GNSS_NI_RESPONSE {
 }
 unsafe impl ::windows::core::Abi for GNSS_NI_RESPONSE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for GNSS_NI_RESPONSE {
     fn eq(&self, other: &Self) -> bool {
@@ -2143,6 +2198,7 @@ impl ::core::default::Default for GNSS_NI_USER_RESPONSE {
 }
 unsafe impl ::windows::core::Abi for GNSS_NI_USER_RESPONSE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GNSS_NI_USER_RESPONSE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2178,6 +2234,7 @@ impl ::core::fmt::Debug for GNSS_NMEA_DATA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for GNSS_NMEA_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for GNSS_NMEA_DATA {
@@ -2234,6 +2291,7 @@ impl ::core::fmt::Debug for GNSS_PLATFORM_CAPABILITY {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for GNSS_PLATFORM_CAPABILITY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for GNSS_PLATFORM_CAPABILITY {
@@ -2276,6 +2334,7 @@ impl ::core::fmt::Debug for GNSS_SATELLITEINFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for GNSS_SATELLITEINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for GNSS_SATELLITEINFO {
@@ -2324,6 +2383,7 @@ impl ::core::fmt::Debug for GNSS_SELFTESTCONFIG {
 }
 unsafe impl ::windows::core::Abi for GNSS_SELFTESTCONFIG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for GNSS_SELFTESTCONFIG {
     fn eq(&self, other: &Self) -> bool {
@@ -2366,6 +2426,7 @@ impl ::core::fmt::Debug for GNSS_SELFTESTRESULT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for GNSS_SELFTESTRESULT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for GNSS_SELFTESTRESULT {
@@ -2401,6 +2462,7 @@ impl ::core::fmt::Debug for GNSS_SINGLESHOT_PARAM {
 }
 unsafe impl ::windows::core::Abi for GNSS_SINGLESHOT_PARAM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for GNSS_SINGLESHOT_PARAM {
     fn eq(&self, other: &Self) -> bool {
@@ -2434,6 +2496,7 @@ impl ::core::fmt::Debug for GNSS_STOPFIXSESSION_PARAM {
 }
 unsafe impl ::windows::core::Abi for GNSS_STOPFIXSESSION_PARAM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for GNSS_STOPFIXSESSION_PARAM {
     fn eq(&self, other: &Self) -> bool {
@@ -2469,6 +2532,7 @@ impl ::core::default::Default for GNSS_SUPL_CERT_ACTION {
 }
 unsafe impl ::windows::core::Abi for GNSS_SUPL_CERT_ACTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GNSS_SUPL_CERT_ACTION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2504,6 +2568,7 @@ impl ::core::fmt::Debug for GNSS_SUPL_CERT_CONFIG {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for GNSS_SUPL_CERT_CONFIG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for GNSS_SUPL_CERT_CONFIG {
@@ -2547,6 +2612,7 @@ impl ::core::fmt::Debug for GNSS_SUPL_HSLP_CONFIG {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for GNSS_SUPL_HSLP_CONFIG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for GNSS_SUPL_HSLP_CONFIG {
@@ -2589,6 +2655,7 @@ impl ::core::fmt::Debug for GNSS_SUPL_NI_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for GNSS_SUPL_NI_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for GNSS_SUPL_NI_INFO {
@@ -2623,6 +2690,7 @@ impl ::core::fmt::Debug for GNSS_SUPL_VERSION {
 }
 unsafe impl ::windows::core::Abi for GNSS_SUPL_VERSION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for GNSS_SUPL_VERSION {
     fn eq(&self, other: &Self) -> bool {
@@ -2655,6 +2723,7 @@ impl ::core::fmt::Debug for GNSS_SUPL_VERSION_2 {
 }
 unsafe impl ::windows::core::Abi for GNSS_SUPL_VERSION_2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for GNSS_SUPL_VERSION_2 {
     fn eq(&self, other: &Self) -> bool {
@@ -2695,6 +2764,7 @@ impl ::core::fmt::Debug for GNSS_V2UPL_CONFIG {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for GNSS_V2UPL_CONFIG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for GNSS_V2UPL_CONFIG {
@@ -2730,6 +2800,7 @@ impl ::core::fmt::Debug for GNSS_V2UPL_NI_INFO {
 }
 unsafe impl ::windows::core::Abi for GNSS_V2UPL_NI_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for GNSS_V2UPL_NI_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -2746,6 +2817,11 @@ pub const GUID_DEVINTERFACE_GNSS: ::windows::core::GUID = ::windows::core::GUID:
 #[doc = "*Required features: `\"Win32_Devices_Geolocation\"`*"]
 #[repr(transparent)]
 pub struct ICivicAddressReport(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICivicAddressReport {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ICivicAddressReport {
     #[doc = "*Required features: `\"Win32_Devices_Geolocation\"`*"]
     pub unsafe fn GetSensorID(&self) -> ::windows::core::Result<::windows::core::GUID> {
@@ -2846,11 +2922,6 @@ impl<'a> ::windows::core::IntoParam<'a, ILocationReport> for &'a ICivicAddressRe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ICivicAddressReport {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ICivicAddressReport {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2900,6 +2971,12 @@ pub struct ICivicAddressReport_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ICivicAddressReportFactory(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ICivicAddressReportFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ICivicAddressReportFactory {
     #[doc = "*Required features: `\"Win32_Devices_Geolocation\"`*"]
@@ -3017,12 +3094,6 @@ impl<'a> ::windows::core::IntoParam<'a, ILocationReportFactory> for &'a ICivicAd
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ICivicAddressReportFactory {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ICivicAddressReportFactory {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3054,6 +3125,11 @@ pub struct ICivicAddressReportFactory_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_Geolocation\"`*"]
 #[repr(transparent)]
 pub struct IDefaultLocation(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDefaultLocation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDefaultLocation {
     #[doc = "*Required features: `\"Win32_Devices_Geolocation\"`*"]
     pub unsafe fn SetReport<'a, Param1: ::windows::core::IntoParam<'a, ILocationReport>>(&self, reporttype: *const ::windows::core::GUID, plocationreport: Param1) -> ::windows::core::Result<()> {
@@ -3085,11 +3161,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDefa
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDefaultLocation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDefaultLocation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3116,6 +3187,12 @@ pub struct IDefaultLocation_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IDispCivicAddressReport(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IDispCivicAddressReport {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IDispCivicAddressReport {
     #[doc = "*Required features: `\"Win32_Devices_Geolocation\"`, `\"Win32_Foundation\"`*"]
@@ -3214,12 +3291,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IDispCivicAddressReport {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IDispCivicAddressReport {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3274,6 +3345,12 @@ pub struct IDispCivicAddressReport_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IDispLatLongReport(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IDispLatLongReport {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IDispLatLongReport {
     #[doc = "*Required features: `\"Win32_Devices_Geolocation\"`*"]
@@ -3356,12 +3433,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IDispLatLongReport {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IDispLatLongReport {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3395,6 +3466,11 @@ pub struct IDispLatLongReport_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_Geolocation\"`*"]
 #[repr(transparent)]
 pub struct ILatLongReport(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILatLongReport {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ILatLongReport {
     #[doc = "*Required features: `\"Win32_Devices_Geolocation\"`*"]
     pub unsafe fn GetSensorID(&self) -> ::windows::core::Result<::windows::core::GUID> {
@@ -3479,11 +3555,6 @@ impl<'a> ::windows::core::IntoParam<'a, ILocationReport> for &'a ILatLongReport 
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ILatLongReport {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ILatLongReport {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3513,6 +3584,12 @@ pub struct ILatLongReport_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ILatLongReportFactory(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ILatLongReportFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ILatLongReportFactory {
     #[doc = "*Required features: `\"Win32_Devices_Geolocation\"`*"]
@@ -3630,12 +3707,6 @@ impl<'a> ::windows::core::IntoParam<'a, ILocationReportFactory> for &'a ILatLong
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ILatLongReportFactory {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ILatLongReportFactory {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3667,6 +3738,11 @@ pub struct ILatLongReportFactory_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_Geolocation\"`*"]
 #[repr(transparent)]
 pub struct ILocation(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILocation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ILocation {
     #[doc = "*Required features: `\"Win32_Devices_Geolocation\"`*"]
     pub unsafe fn RegisterForReport<'a, Param0: ::windows::core::IntoParam<'a, ILocationEvents>>(&self, pevents: Param0, reporttype: *const ::windows::core::GUID, dwrequestedreportinterval: u32) -> ::windows::core::Result<()> {
@@ -3732,11 +3808,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ILoca
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ILocation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ILocation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3778,6 +3849,11 @@ pub struct ILocation_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_Geolocation\"`*"]
 #[repr(transparent)]
 pub struct ILocationEvents(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILocationEvents {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ILocationEvents {
     #[doc = "*Required features: `\"Win32_Devices_Geolocation\"`*"]
     pub unsafe fn OnLocationChanged<'a, Param1: ::windows::core::IntoParam<'a, ILocationReport>>(&self, reporttype: *const ::windows::core::GUID, plocationreport: Param1) -> ::windows::core::Result<()> {
@@ -3808,11 +3884,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ILoca
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ILocationEvents {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ILocationEvents {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3838,6 +3909,11 @@ pub struct ILocationEvents_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_Geolocation\"`*"]
 #[repr(transparent)]
 pub struct ILocationPower(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILocationPower {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ILocationPower {
     #[doc = "*Required features: `\"Win32_Devices_Geolocation\"`*"]
     pub unsafe fn Connect(&self) -> ::windows::core::Result<()> {
@@ -3868,11 +3944,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ILoca
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ILocationPower {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ILocationPower {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3898,6 +3969,11 @@ pub struct ILocationPower_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_Geolocation\"`*"]
 #[repr(transparent)]
 pub struct ILocationReport(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILocationReport {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ILocationReport {
     #[doc = "*Required features: `\"Win32_Devices_Geolocation\"`*"]
     pub unsafe fn GetSensorID(&self) -> ::windows::core::Result<::windows::core::GUID> {
@@ -3937,11 +4013,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ILoca
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ILocationReport {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ILocationReport {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3975,6 +4046,12 @@ pub struct ILocationReport_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ILocationReportFactory(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ILocationReportFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ILocationReportFactory {
     #[doc = "*Required features: `\"Win32_Devices_Geolocation\"`*"]
@@ -4059,12 +4136,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
 impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> for &'a ILocationReportFactory {
     fn into_param(self) -> ::windows::core::Param<'a, super::super::System::Com::IDispatch> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ILocationReportFactory {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 #[cfg(feature = "Win32_System_Com")]
@@ -4185,6 +4256,7 @@ impl ::core::default::Default for LOCATION_REPORT_STATUS {
 }
 unsafe impl ::windows::core::Abi for LOCATION_REPORT_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for LOCATION_REPORT_STATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4204,6 +4276,12 @@ pub const MIN_GEOFENCES_REQUIRED: u32 = 100u32;
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct _ICivicAddressReportFactoryEvents(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for _ICivicAddressReportFactoryEvents {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl _ICivicAddressReportFactoryEvents {}
 #[cfg(feature = "Win32_System_Com")]
@@ -4255,12 +4333,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for _ICivicAddressReportFactoryEvents {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for _ICivicAddressReportFactoryEvents {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4289,6 +4361,12 @@ pub struct _ICivicAddressReportFactoryEvents_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct _ILatLongReportFactoryEvents(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for _ILatLongReportFactoryEvents {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl _ILatLongReportFactoryEvents {}
 #[cfg(feature = "Win32_System_Com")]
@@ -4337,12 +4415,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
 impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> for &'a _ILatLongReportFactoryEvents {
     fn into_param(self) -> ::windows::core::Param<'a, super::super::System::Com::IDispatch> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for _ILatLongReportFactoryEvents {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 #[cfg(feature = "Win32_System_Com")]

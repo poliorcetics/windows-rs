@@ -17,6 +17,7 @@ impl ::core::fmt::Debug for MAGCOLOREFFECT {
 }
 unsafe impl ::windows::core::Abi for MAGCOLOREFFECT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MAGCOLOREFFECT {
     fn eq(&self, other: &Self) -> bool {
@@ -52,6 +53,7 @@ impl ::core::fmt::Debug for MAGIMAGEHEADER {
 }
 unsafe impl ::windows::core::Abi for MAGIMAGEHEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MAGIMAGEHEADER {
     fn eq(&self, other: &Self) -> bool {
@@ -82,6 +84,7 @@ impl ::core::fmt::Debug for MAGTRANSFORM {
 }
 unsafe impl ::windows::core::Abi for MAGTRANSFORM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MAGTRANSFORM {
     fn eq(&self, other: &Self) -> bool {

@@ -2,6 +2,11 @@
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISceneBoundingBox(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISceneBoundingBox {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISceneBoundingBox {
     type Vtable = ISceneBoundingBox_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x5d8ffc70_c618_4083_8251_9962593114aa);
@@ -34,6 +39,11 @@ pub struct ISceneBoundingBox_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISceneComponent(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISceneComponent {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISceneComponent {
     type Vtable = ISceneComponent_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xae20fc96_226c_44bd_95cb_dd5ed9ebe9a5);
@@ -47,6 +57,11 @@ pub struct ISceneComponent_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISceneComponentCollection(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISceneComponentCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISceneComponentCollection {
     type Vtable = ISceneComponentCollection_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc483791c_5f46_45e4_b666_a3d2259f9b2e);
@@ -59,6 +74,11 @@ pub struct ISceneComponentCollection_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISceneComponentFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISceneComponentFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISceneComponentFactory {
     type Vtable = ISceneComponentFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x5fbc5574_ddd8_5889_ab5b_d8fa716e7c9e);
@@ -71,6 +91,11 @@ pub struct ISceneComponentFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISceneMaterial(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISceneMaterial {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISceneMaterial {
     type Vtable = ISceneMaterial_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x8ca74b7c_30df_4e07_9490_37875af1a123);
@@ -83,6 +108,11 @@ pub struct ISceneMaterial_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISceneMaterialFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISceneMaterialFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISceneMaterialFactory {
     type Vtable = ISceneMaterialFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x67536c19_a707_5254_a495_7fdc799893b9);
@@ -95,6 +125,11 @@ pub struct ISceneMaterialFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISceneMaterialInput(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISceneMaterialInput {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISceneMaterialInput {
     type Vtable = ISceneMaterialInput_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x422a1642_1ef1_485c_97e9_ae6f95ad812f);
@@ -107,6 +142,11 @@ pub struct ISceneMaterialInput_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISceneMaterialInputFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISceneMaterialInputFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISceneMaterialInputFactory {
     type Vtable = ISceneMaterialInputFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa88feb74_7d0a_5e4c_a748_1015af9ca74f);
@@ -119,6 +159,11 @@ pub struct ISceneMaterialInputFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISceneMesh(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISceneMesh {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISceneMesh {
     type Vtable = ISceneMesh_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xee9a1530_1155_4c0c_92bd_40020cf78347);
@@ -144,6 +189,11 @@ pub struct ISceneMesh_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISceneMeshMaterialAttributeMap(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISceneMeshMaterialAttributeMap {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISceneMeshMaterialAttributeMap {
     type Vtable = ISceneMeshMaterialAttributeMap_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xce843171_3d43_4855_aa69_31ff988d049d);
@@ -156,6 +206,11 @@ pub struct ISceneMeshMaterialAttributeMap_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISceneMeshRendererComponent(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISceneMeshRendererComponent {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISceneMeshRendererComponent {
     type Vtable = ISceneMeshRendererComponent_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9929f7e3_6364_477e_98fe_74ed9fd4c2de);
@@ -173,6 +228,11 @@ pub struct ISceneMeshRendererComponent_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISceneMeshRendererComponentStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISceneMeshRendererComponentStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISceneMeshRendererComponentStatics {
     type Vtable = ISceneMeshRendererComponentStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x4954f37a_4459_4521_bd6e_2b38b8d711ea);
@@ -186,6 +246,11 @@ pub struct ISceneMeshRendererComponentStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISceneMeshStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISceneMeshStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISceneMeshStatics {
     type Vtable = ISceneMeshStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x8412316c_7b57_473f_966b_81dc277b1751);
@@ -199,6 +264,11 @@ pub struct ISceneMeshStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISceneMetallicRoughnessMaterial(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISceneMetallicRoughnessMaterial {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISceneMetallicRoughnessMaterial {
     type Vtable = ISceneMetallicRoughnessMaterial_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc1d91446_799c_429e_a4e4_5da645f18e61);
@@ -227,6 +297,11 @@ pub struct ISceneMetallicRoughnessMaterial_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISceneMetallicRoughnessMaterialStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISceneMetallicRoughnessMaterialStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISceneMetallicRoughnessMaterialStatics {
     type Vtable = ISceneMetallicRoughnessMaterialStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x3bddca50_6d9d_4531_8dc4_b27e3e49b7ab);
@@ -240,6 +315,11 @@ pub struct ISceneMetallicRoughnessMaterialStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISceneModelTransform(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISceneModelTransform {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISceneModelTransform {
     type Vtable = ISceneModelTransform_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc05576c2_32b1_4269_980d_b98537100ae4);
@@ -288,6 +368,11 @@ pub struct ISceneModelTransform_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISceneNode(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISceneNode {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISceneNode {
     type Vtable = ISceneNode_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xacf2c247_f307_4581_9c41_af2e29c3b016);
@@ -311,6 +396,11 @@ pub struct ISceneNode_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISceneNodeCollection(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISceneNodeCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISceneNodeCollection {
     type Vtable = ISceneNodeCollection_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x29ada101_2dd9_4332_be63_60d2cf4269f2);
@@ -323,6 +413,11 @@ pub struct ISceneNodeCollection_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISceneNodeStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISceneNodeStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISceneNodeStatics {
     type Vtable = ISceneNodeStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x579a0faa_be9d_4210_908c_93d15feed0b7);
@@ -336,6 +431,11 @@ pub struct ISceneNodeStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISceneObject(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISceneObject {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISceneObject {
     type Vtable = ISceneObject_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1e94249b_0f1b_49eb_a819_877d8450005b);
@@ -348,6 +448,11 @@ pub struct ISceneObject_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISceneObjectFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISceneObjectFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISceneObjectFactory {
     type Vtable = ISceneObjectFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x14fe799a_33e4_52ef_956c_44229d21f2c1);
@@ -360,6 +465,11 @@ pub struct ISceneObjectFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IScenePbrMaterial(::windows::core::IUnknown);
+impl ::core::clone::Clone for IScenePbrMaterial {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IScenePbrMaterial {
     type Vtable = IScenePbrMaterial_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xaab6ebbe_d680_46df_8294_b6800a9f95e7);
@@ -396,6 +506,11 @@ pub struct IScenePbrMaterial_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IScenePbrMaterialFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IScenePbrMaterialFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IScenePbrMaterialFactory {
     type Vtable = IScenePbrMaterialFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x2e3f3dfe_0b85_5727_b5be_b7d3cbac37fa);
@@ -408,6 +523,11 @@ pub struct IScenePbrMaterialFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISceneRendererComponent(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISceneRendererComponent {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISceneRendererComponent {
     type Vtable = ISceneRendererComponent_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf1acb857_cf4f_4025_9b25_a2d1944cf507);
@@ -420,6 +540,11 @@ pub struct ISceneRendererComponent_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISceneRendererComponentFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISceneRendererComponentFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISceneRendererComponentFactory {
     type Vtable = ISceneRendererComponentFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1db6ed6c_aa2c_5967_9035_56352dc69658);
@@ -432,6 +557,11 @@ pub struct ISceneRendererComponentFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISceneSurfaceMaterialInput(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISceneSurfaceMaterialInput {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISceneSurfaceMaterialInput {
     type Vtable = ISceneSurfaceMaterialInput_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9937da5c_a9ca_4cfc_b3aa_088356518742);
@@ -452,6 +582,11 @@ pub struct ISceneSurfaceMaterialInput_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISceneSurfaceMaterialInputStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISceneSurfaceMaterialInputStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISceneSurfaceMaterialInputStatics {
     type Vtable = ISceneSurfaceMaterialInputStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x5a2394d3_6429_4589_bbcf_b84f4f3cfbfe);
@@ -465,6 +600,11 @@ pub struct ISceneSurfaceMaterialInputStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISceneVisual(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISceneVisual {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISceneVisual {
     type Vtable = ISceneVisual_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x8e672c1e_d734_47b1_be14_3d694ffa4301);
@@ -479,6 +619,11 @@ pub struct ISceneVisual_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISceneVisualStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISceneVisualStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISceneVisualStatics {
     type Vtable = ISceneVisualStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb8347e9a_50aa_4527_8d34_de4cb8ea88b4);
@@ -511,6 +656,7 @@ impl ::core::default::Default for SceneAlphaMode {
 }
 unsafe impl ::windows::core::Abi for SceneAlphaMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SceneAlphaMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -519,7 +665,6 @@ impl ::core::fmt::Debug for SceneAlphaMode {
 }
 unsafe impl ::windows::core::RuntimeType for SceneAlphaMode {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Composition.Scenes.SceneAlphaMode;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -550,6 +695,7 @@ impl ::core::default::Default for SceneAttributeSemantic {
 }
 unsafe impl ::windows::core::Abi for SceneAttributeSemantic {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SceneAttributeSemantic {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -558,7 +704,6 @@ impl ::core::fmt::Debug for SceneAttributeSemantic {
 }
 unsafe impl ::windows::core::RuntimeType for SceneAttributeSemantic {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Composition.Scenes.SceneAttributeSemantic;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -712,11 +857,6 @@ impl SceneBoundingBox {
         }
     }
 }
-impl ::core::clone::Clone for SceneBoundingBox {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SceneBoundingBox {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -730,7 +870,6 @@ impl ::core::fmt::Debug for SceneBoundingBox {
 }
 unsafe impl ::windows::core::RuntimeType for SceneBoundingBox {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Composition.Scenes.SceneBoundingBox;{5d8ffc70-c618-4083-8251-9962593114aa})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -984,11 +1123,6 @@ impl SceneComponent {
         }
     }
 }
-impl ::core::clone::Clone for SceneComponent {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SceneComponent {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1002,7 +1136,6 @@ impl ::core::fmt::Debug for SceneComponent {
 }
 unsafe impl ::windows::core::RuntimeType for SceneComponent {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Composition.Scenes.SceneComponent;{ae20fc96-226c-44bd-95cb-dd5ed9ebe9a5})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1347,12 +1480,6 @@ impl SceneComponentCollection {
     }
 }
 #[cfg(feature = "Foundation_Collections")]
-impl ::core::clone::Clone for SceneComponentCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Foundation_Collections")]
 impl ::core::cmp::PartialEq for SceneComponentCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1369,7 +1496,6 @@ impl ::core::fmt::Debug for SceneComponentCollection {
 #[cfg(feature = "Foundation_Collections")]
 unsafe impl ::windows::core::RuntimeType for SceneComponentCollection {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Composition.Scenes.SceneComponentCollection;pinterface({913337e9-11a1-4345-a3a2-4e7f956e222d};rc(Windows.UI.Composition.Scenes.SceneComponent;{ae20fc96-226c-44bd-95cb-dd5ed9ebe9a5})))");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1623,6 +1749,7 @@ impl ::core::default::Default for SceneComponentType {
 }
 unsafe impl ::windows::core::Abi for SceneComponentType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SceneComponentType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1631,7 +1758,6 @@ impl ::core::fmt::Debug for SceneComponentType {
 }
 unsafe impl ::windows::core::RuntimeType for SceneComponentType {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Composition.Scenes.SceneComponentType;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1740,11 +1866,6 @@ impl SceneMaterial {
         }
     }
 }
-impl ::core::clone::Clone for SceneMaterial {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SceneMaterial {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1758,7 +1879,6 @@ impl ::core::fmt::Debug for SceneMaterial {
 }
 unsafe impl ::windows::core::RuntimeType for SceneMaterial {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Composition.Scenes.SceneMaterial;{8ca74b7c-30df-4e07-9490-37875af1a123})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2004,11 +2124,6 @@ impl SceneMaterialInput {
         }
     }
 }
-impl ::core::clone::Clone for SceneMaterialInput {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SceneMaterialInput {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2022,7 +2137,6 @@ impl ::core::fmt::Debug for SceneMaterialInput {
 }
 unsafe impl ::windows::core::RuntimeType for SceneMaterialInput {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Composition.Scenes.SceneMaterialInput;{422a1642-1ef1-485c-97e9-ae6f95ad812f})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2309,11 +2423,6 @@ impl SceneMesh {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for SceneMesh {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SceneMesh {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2327,7 +2436,6 @@ impl ::core::fmt::Debug for SceneMesh {
 }
 unsafe impl ::windows::core::RuntimeType for SceneMesh {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Composition.Scenes.SceneMesh;{ee9a1530-1155-4c0c-92bd-40020cf78347})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2639,11 +2747,6 @@ impl SceneMeshMaterialAttributeMap {
         unsafe { (::windows::core::Interface::vtable(this).Clear)(::core::mem::transmute_copy(this)).ok() }
     }
 }
-impl ::core::clone::Clone for SceneMeshMaterialAttributeMap {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SceneMeshMaterialAttributeMap {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2657,7 +2760,6 @@ impl ::core::fmt::Debug for SceneMeshMaterialAttributeMap {
 }
 unsafe impl ::windows::core::RuntimeType for SceneMeshMaterialAttributeMap {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Composition.Scenes.SceneMeshMaterialAttributeMap;{ce843171-3d43-4855-aa69-31ff988d049d})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3025,11 +3127,6 @@ impl SceneMeshRendererComponent {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for SceneMeshRendererComponent {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SceneMeshRendererComponent {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3043,7 +3140,6 @@ impl ::core::fmt::Debug for SceneMeshRendererComponent {
 }
 unsafe impl ::windows::core::RuntimeType for SceneMeshRendererComponent {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Composition.Scenes.SceneMeshRendererComponent;{9929f7e3-6364-477e-98fe-74ed9fd4c2de})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3527,11 +3623,6 @@ impl SceneMetallicRoughnessMaterial {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for SceneMetallicRoughnessMaterial {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SceneMetallicRoughnessMaterial {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3545,7 +3636,6 @@ impl ::core::fmt::Debug for SceneMetallicRoughnessMaterial {
 }
 unsafe impl ::windows::core::RuntimeType for SceneMetallicRoughnessMaterial {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Composition.Scenes.SceneMetallicRoughnessMaterial;{c1d91446-799c-429e-a4e4-5da645f18e61})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3917,11 +4007,6 @@ impl SceneModelTransform {
         unsafe { (::windows::core::Interface::vtable(this).SetTranslation)(::core::mem::transmute_copy(this), value.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for SceneModelTransform {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SceneModelTransform {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3935,7 +4020,6 @@ impl ::core::fmt::Debug for SceneModelTransform {
 }
 unsafe impl ::windows::core::RuntimeType for SceneModelTransform {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Composition.Scenes.SceneModelTransform;{c05576c2-32b1-4269-980d-b98537100ae4})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4235,11 +4319,6 @@ impl SceneNode {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for SceneNode {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SceneNode {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4253,7 +4332,6 @@ impl ::core::fmt::Debug for SceneNode {
 }
 unsafe impl ::windows::core::RuntimeType for SceneNode {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Composition.Scenes.SceneNode;{acf2c247-f307-4581-9c41-af2e29c3b016})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4598,12 +4676,6 @@ impl SceneNodeCollection {
     }
 }
 #[cfg(feature = "Foundation_Collections")]
-impl ::core::clone::Clone for SceneNodeCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Foundation_Collections")]
 impl ::core::cmp::PartialEq for SceneNodeCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4620,7 +4692,6 @@ impl ::core::fmt::Debug for SceneNodeCollection {
 #[cfg(feature = "Foundation_Collections")]
 unsafe impl ::windows::core::RuntimeType for SceneNodeCollection {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Composition.Scenes.SceneNodeCollection;pinterface({913337e9-11a1-4345-a3a2-4e7f956e222d};rc(Windows.UI.Composition.Scenes.SceneNode;{acf2c247-f307-4581-9c41-af2e29c3b016})))");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4958,11 +5029,6 @@ impl SceneObject {
         }
     }
 }
-impl ::core::clone::Clone for SceneObject {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SceneObject {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4976,7 +5042,6 @@ impl ::core::fmt::Debug for SceneObject {
 }
 unsafe impl ::windows::core::RuntimeType for SceneObject {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Composition.Scenes.SceneObject;{1e94249b-0f1b-49eb-a819-877d8450005b})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -5321,11 +5386,6 @@ impl ScenePbrMaterial {
         unsafe { (::windows::core::Interface::vtable(this).SetOcclusionStrength)(::core::mem::transmute_copy(this), value).ok() }
     }
 }
-impl ::core::clone::Clone for ScenePbrMaterial {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ScenePbrMaterial {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5339,7 +5399,6 @@ impl ::core::fmt::Debug for ScenePbrMaterial {
 }
 unsafe impl ::windows::core::RuntimeType for ScenePbrMaterial {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Composition.Scenes.ScenePbrMaterial;{aab6ebbe-d680-46df-8294-b6800a9f95e7})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -5613,11 +5672,6 @@ impl SceneRendererComponent {
         }
     }
 }
-impl ::core::clone::Clone for SceneRendererComponent {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SceneRendererComponent {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5631,7 +5685,6 @@ impl ::core::fmt::Debug for SceneRendererComponent {
 }
 unsafe impl ::windows::core::RuntimeType for SceneRendererComponent {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Composition.Scenes.SceneRendererComponent;{f1acb857-cf4f-4025-9b25-a2d1944cf507})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -5961,11 +6014,6 @@ impl SceneSurfaceMaterialInput {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for SceneSurfaceMaterialInput {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SceneSurfaceMaterialInput {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5979,7 +6027,6 @@ impl ::core::fmt::Debug for SceneSurfaceMaterialInput {
 }
 unsafe impl ::windows::core::RuntimeType for SceneSurfaceMaterialInput {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Composition.Scenes.SceneSurfaceMaterialInput;{9937da5c-a9ca-4cfc-b3aa-088356518742})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -6579,11 +6626,6 @@ impl SceneVisual {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for SceneVisual {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SceneVisual {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6597,7 +6639,6 @@ impl ::core::fmt::Debug for SceneVisual {
 }
 unsafe impl ::windows::core::RuntimeType for SceneVisual {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Composition.Scenes.SceneVisual;{8e672c1e-d734-47b1-be14-3d694ffa4301})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -6781,6 +6822,7 @@ impl ::core::default::Default for SceneWrappingMode {
 }
 unsafe impl ::windows::core::Abi for SceneWrappingMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SceneWrappingMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6789,7 +6831,6 @@ impl ::core::fmt::Debug for SceneWrappingMode {
 }
 unsafe impl ::windows::core::RuntimeType for SceneWrappingMode {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Composition.Scenes.SceneWrappingMode;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }

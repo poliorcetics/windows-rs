@@ -29,6 +29,7 @@ impl ::core::fmt::Debug for CompositionFrameDisplayInstance {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Dxgi_Common"))]
 unsafe impl ::windows::core::Abi for CompositionFrameDisplayInstance {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Dxgi_Common"))]
 impl ::core::cmp::PartialEq for CompositionFrameDisplayInstance {
@@ -67,6 +68,7 @@ impl ::core::default::Default for CompositionFrameInstanceKind {
 }
 unsafe impl ::windows::core::Abi for CompositionFrameInstanceKind {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CompositionFrameInstanceKind {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -90,6 +92,11 @@ pub unsafe fn CreatePresentationFactory<'a, Param0: ::windows::core::IntoParam<'
 #[doc = "*Required features: `\"Win32_Graphics_CompositionSwapchain\"`*"]
 #[repr(transparent)]
 pub struct ICompositionFramePresentStatistics(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICompositionFramePresentStatistics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ICompositionFramePresentStatistics {
     #[doc = "*Required features: `\"Win32_Graphics_CompositionSwapchain\"`*"]
     pub unsafe fn GetPresentId(&self) -> u64 {
@@ -153,11 +160,6 @@ impl<'a> ::windows::core::IntoParam<'a, IPresentStatistics> for &'a IComposition
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ICompositionFramePresentStatistics {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ICompositionFramePresentStatistics {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -187,6 +189,11 @@ pub struct ICompositionFramePresentStatistics_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_CompositionSwapchain\"`*"]
 #[repr(transparent)]
 pub struct IIndependentFlipFramePresentStatistics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IIndependentFlipFramePresentStatistics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IIndependentFlipFramePresentStatistics {
     #[doc = "*Required features: `\"Win32_Graphics_CompositionSwapchain\"`*"]
     pub unsafe fn GetPresentId(&self) -> u64 {
@@ -264,11 +271,6 @@ impl<'a> ::windows::core::IntoParam<'a, IPresentStatistics> for &'a IIndependent
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IIndependentFlipFramePresentStatistics {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IIndependentFlipFramePresentStatistics {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -300,6 +302,11 @@ pub struct IIndependentFlipFramePresentStatistics_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_CompositionSwapchain\"`*"]
 #[repr(transparent)]
 pub struct IPresentStatistics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPresentStatistics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPresentStatistics {
     #[doc = "*Required features: `\"Win32_Graphics_CompositionSwapchain\"`*"]
     pub unsafe fn GetPresentId(&self) -> u64 {
@@ -330,11 +337,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPres
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPresentStatistics {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPresentStatistics {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -360,6 +362,11 @@ pub struct IPresentStatistics_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_CompositionSwapchain\"`*"]
 #[repr(transparent)]
 pub struct IPresentStatusPresentStatistics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPresentStatusPresentStatistics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPresentStatusPresentStatistics {
     #[doc = "*Required features: `\"Win32_Graphics_CompositionSwapchain\"`*"]
     pub unsafe fn GetPresentId(&self) -> u64 {
@@ -418,11 +425,6 @@ impl<'a> ::windows::core::IntoParam<'a, IPresentStatistics> for &'a IPresentStat
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPresentStatusPresentStatistics {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPresentStatusPresentStatistics {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -448,6 +450,11 @@ pub struct IPresentStatusPresentStatistics_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_CompositionSwapchain\"`*"]
 #[repr(transparent)]
 pub struct IPresentationBuffer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPresentationBuffer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPresentationBuffer {
     #[doc = "*Required features: `\"Win32_Graphics_CompositionSwapchain\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -481,11 +488,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPres
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPresentationBuffer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPresentationBuffer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -514,6 +516,11 @@ pub struct IPresentationBuffer_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_CompositionSwapchain\"`*"]
 #[repr(transparent)]
 pub struct IPresentationContent(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPresentationContent {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPresentationContent {
     #[doc = "*Required features: `\"Win32_Graphics_CompositionSwapchain\"`*"]
     pub unsafe fn SetTag(&self, tag: usize) {
@@ -540,11 +547,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPres
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPresentationContent {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPresentationContent {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -569,6 +571,11 @@ pub struct IPresentationContent_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_CompositionSwapchain\"`*"]
 #[repr(transparent)]
 pub struct IPresentationFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPresentationFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPresentationFactory {
     #[doc = "*Required features: `\"Win32_Graphics_CompositionSwapchain\"`*"]
     pub unsafe fn IsPresentationSupported(&self) -> u8 {
@@ -604,11 +611,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPres
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPresentationFactory {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPresentationFactory {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -635,6 +637,11 @@ pub struct IPresentationFactory_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_CompositionSwapchain\"`*"]
 #[repr(transparent)]
 pub struct IPresentationManager(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPresentationManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPresentationManager {
     #[doc = "*Required features: `\"Win32_Graphics_CompositionSwapchain\"`*"]
     pub unsafe fn AddBufferFromResource<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, resource: Param0) -> ::windows::core::Result<IPresentationBuffer> {
@@ -718,11 +725,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPres
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPresentationManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPresentationManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -768,6 +770,11 @@ pub struct IPresentationManager_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_CompositionSwapchain\"`*"]
 #[repr(transparent)]
 pub struct IPresentationSurface(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPresentationSurface {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPresentationSurface {
     #[doc = "*Required features: `\"Win32_Graphics_CompositionSwapchain\"`*"]
     pub unsafe fn SetTag(&self, tag: usize) {
@@ -849,11 +856,6 @@ impl<'a> ::windows::core::IntoParam<'a, IPresentationContent> for &'a IPresentat
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPresentationSurface {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPresentationSurface {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -914,6 +916,7 @@ impl ::core::default::Default for PresentStatisticsKind {
 }
 unsafe impl ::windows::core::Abi for PresentStatisticsKind {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PresentStatisticsKind {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -943,6 +946,7 @@ impl ::core::default::Default for PresentStatus {
 }
 unsafe impl ::windows::core::Abi for PresentStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PresentStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -972,6 +976,7 @@ impl ::core::fmt::Debug for PresentationTransform {
 }
 unsafe impl ::windows::core::Abi for PresentationTransform {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PresentationTransform {
     fn eq(&self, other: &Self) -> bool {
@@ -1002,6 +1007,7 @@ impl ::core::fmt::Debug for SystemInterruptTime {
 }
 unsafe impl ::windows::core::Abi for SystemInterruptTime {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SystemInterruptTime {
     fn eq(&self, other: &Self) -> bool {

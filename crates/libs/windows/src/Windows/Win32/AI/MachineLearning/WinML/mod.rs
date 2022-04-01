@@ -2,6 +2,11 @@
 #[doc = "*Required features: `\"Win32_AI_MachineLearning_WinML\"`*"]
 #[repr(transparent)]
 pub struct IMLOperatorAttributes(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMLOperatorAttributes {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMLOperatorAttributes {
     #[doc = "*Required features: `\"Win32_AI_MachineLearning_WinML\"`*"]
     pub unsafe fn GetAttributeElementCount<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCSTR>>(&self, name: Param0, r#type: MLOperatorAttributeType) -> ::windows::core::Result<u32> {
@@ -42,11 +47,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMLOp
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMLOperatorAttributes {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMLOperatorAttributes {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -74,6 +74,11 @@ pub struct IMLOperatorAttributes_Vtbl {
 #[doc = "*Required features: `\"Win32_AI_MachineLearning_WinML\"`*"]
 #[repr(transparent)]
 pub struct IMLOperatorKernel(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMLOperatorKernel {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMLOperatorKernel {
     #[doc = "*Required features: `\"Win32_AI_MachineLearning_WinML\"`*"]
     pub unsafe fn Compute<'a, Param0: ::windows::core::IntoParam<'a, IMLOperatorKernelContext>>(&self, context: Param0) -> ::windows::core::Result<()> {
@@ -100,11 +105,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMLOp
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMLOperatorKernel {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMLOperatorKernel {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -129,6 +129,11 @@ pub struct IMLOperatorKernel_Vtbl {
 #[doc = "*Required features: `\"Win32_AI_MachineLearning_WinML\"`*"]
 #[repr(transparent)]
 pub struct IMLOperatorKernelContext(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMLOperatorKernelContext {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMLOperatorKernelContext {
     #[doc = "*Required features: `\"Win32_AI_MachineLearning_WinML\"`*"]
     pub unsafe fn GetInputTensor(&self, inputindex: u32) -> ::windows::core::Result<IMLOperatorTensor> {
@@ -175,11 +180,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMLOp
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMLOperatorKernelContext {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMLOperatorKernelContext {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -208,6 +208,11 @@ pub struct IMLOperatorKernelContext_Vtbl {
 #[doc = "*Required features: `\"Win32_AI_MachineLearning_WinML\"`*"]
 #[repr(transparent)]
 pub struct IMLOperatorKernelCreationContext(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMLOperatorKernelCreationContext {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMLOperatorKernelCreationContext {
     #[doc = "*Required features: `\"Win32_AI_MachineLearning_WinML\"`*"]
     pub unsafe fn GetAttributeElementCount<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCSTR>>(&self, name: Param0, r#type: MLOperatorAttributeType) -> ::windows::core::Result<u32> {
@@ -307,11 +312,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMLOperatorAttributes> for &'a IMLOperat
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMLOperatorKernelCreationContext {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMLOperatorKernelCreationContext {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -344,6 +344,11 @@ pub struct IMLOperatorKernelCreationContext_Vtbl {
 #[doc = "*Required features: `\"Win32_AI_MachineLearning_WinML\"`*"]
 #[repr(transparent)]
 pub struct IMLOperatorKernelFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMLOperatorKernelFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMLOperatorKernelFactory {
     #[doc = "*Required features: `\"Win32_AI_MachineLearning_WinML\"`*"]
     pub unsafe fn CreateKernel<'a, Param0: ::windows::core::IntoParam<'a, IMLOperatorKernelCreationContext>>(&self, context: Param0) -> ::windows::core::Result<IMLOperatorKernel> {
@@ -371,11 +376,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMLOp
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMLOperatorKernelFactory {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMLOperatorKernelFactory {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -400,6 +400,11 @@ pub struct IMLOperatorKernelFactory_Vtbl {
 #[doc = "*Required features: `\"Win32_AI_MachineLearning_WinML\"`*"]
 #[repr(transparent)]
 pub struct IMLOperatorRegistry(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMLOperatorRegistry {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMLOperatorRegistry {
     #[doc = "*Required features: `\"Win32_AI_MachineLearning_WinML\"`*"]
     pub unsafe fn RegisterOperatorSetSchema<'a, Param4: ::windows::core::IntoParam<'a, IMLOperatorTypeInferrer>, Param5: ::windows::core::IntoParam<'a, IMLOperatorShapeInferrer>>(&self, operatorsetid: *const MLOperatorSetId, baselineversion: i32, schema: &[*const MLOperatorSchemaDescription], typeinferrer: Param4, shapeinferrer: Param5) -> ::windows::core::Result<()> {
@@ -430,11 +435,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMLOp
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMLOperatorRegistry {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMLOperatorRegistry {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -460,6 +460,11 @@ pub struct IMLOperatorRegistry_Vtbl {
 #[doc = "*Required features: `\"Win32_AI_MachineLearning_WinML\"`*"]
 #[repr(transparent)]
 pub struct IMLOperatorShapeInferenceContext(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMLOperatorShapeInferenceContext {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMLOperatorShapeInferenceContext {
     #[doc = "*Required features: `\"Win32_AI_MachineLearning_WinML\"`*"]
     pub unsafe fn GetAttributeElementCount<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCSTR>>(&self, name: Param0, r#type: MLOperatorAttributeType) -> ::windows::core::Result<u32> {
@@ -554,11 +559,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMLOperatorAttributes> for &'a IMLOperat
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMLOperatorShapeInferenceContext {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMLOperatorShapeInferenceContext {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -590,6 +590,11 @@ pub struct IMLOperatorShapeInferenceContext_Vtbl {
 #[doc = "*Required features: `\"Win32_AI_MachineLearning_WinML\"`*"]
 #[repr(transparent)]
 pub struct IMLOperatorShapeInferrer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMLOperatorShapeInferrer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMLOperatorShapeInferrer {
     #[doc = "*Required features: `\"Win32_AI_MachineLearning_WinML\"`*"]
     pub unsafe fn InferOutputShapes<'a, Param0: ::windows::core::IntoParam<'a, IMLOperatorShapeInferenceContext>>(&self, context: Param0) -> ::windows::core::Result<()> {
@@ -616,11 +621,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMLOp
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMLOperatorShapeInferrer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMLOperatorShapeInferrer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -645,6 +645,11 @@ pub struct IMLOperatorShapeInferrer_Vtbl {
 #[doc = "*Required features: `\"Win32_AI_MachineLearning_WinML\"`*"]
 #[repr(transparent)]
 pub struct IMLOperatorTensor(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMLOperatorTensor {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMLOperatorTensor {
     #[doc = "*Required features: `\"Win32_AI_MachineLearning_WinML\"`*"]
     pub unsafe fn GetDimensionCount(&self) -> u32 {
@@ -695,11 +700,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMLOp
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMLOperatorTensor {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMLOperatorTensor {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -730,6 +730,11 @@ pub struct IMLOperatorTensor_Vtbl {
 #[doc = "*Required features: `\"Win32_AI_MachineLearning_WinML\"`*"]
 #[repr(transparent)]
 pub struct IMLOperatorTensorShapeDescription(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMLOperatorTensorShapeDescription {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMLOperatorTensorShapeDescription {
     #[doc = "*Required features: `\"Win32_AI_MachineLearning_WinML\"`*"]
     pub unsafe fn GetInputTensorDimensionCount(&self, inputindex: u32) -> ::windows::core::Result<u32> {
@@ -774,11 +779,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMLOp
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMLOperatorTensorShapeDescription {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMLOperatorTensorShapeDescription {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -807,6 +807,11 @@ pub struct IMLOperatorTensorShapeDescription_Vtbl {
 #[doc = "*Required features: `\"Win32_AI_MachineLearning_WinML\"`*"]
 #[repr(transparent)]
 pub struct IMLOperatorTypeInferenceContext(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMLOperatorTypeInferenceContext {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMLOperatorTypeInferenceContext {
     #[doc = "*Required features: `\"Win32_AI_MachineLearning_WinML\"`*"]
     pub unsafe fn GetAttributeElementCount<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCSTR>>(&self, name: Param0, r#type: MLOperatorAttributeType) -> ::windows::core::Result<u32> {
@@ -892,11 +897,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMLOperatorAttributes> for &'a IMLOperat
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMLOperatorTypeInferenceContext {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMLOperatorTypeInferenceContext {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -926,6 +926,11 @@ pub struct IMLOperatorTypeInferenceContext_Vtbl {
 #[doc = "*Required features: `\"Win32_AI_MachineLearning_WinML\"`*"]
 #[repr(transparent)]
 pub struct IMLOperatorTypeInferrer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMLOperatorTypeInferrer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMLOperatorTypeInferrer {
     #[doc = "*Required features: `\"Win32_AI_MachineLearning_WinML\"`*"]
     pub unsafe fn InferOutputTypes<'a, Param0: ::windows::core::IntoParam<'a, IMLOperatorTypeInferenceContext>>(&self, context: Param0) -> ::windows::core::Result<()> {
@@ -952,11 +957,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMLOp
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMLOperatorTypeInferrer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMLOperatorTypeInferrer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -981,6 +981,11 @@ pub struct IMLOperatorTypeInferrer_Vtbl {
 #[doc = "*Required features: `\"Win32_AI_MachineLearning_WinML\"`*"]
 #[repr(transparent)]
 pub struct IWinMLEvaluationContext(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWinMLEvaluationContext {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWinMLEvaluationContext {
     #[doc = "*Required features: `\"Win32_AI_MachineLearning_WinML\"`, `\"Win32_Graphics_Direct3D12\"`*"]
     #[cfg(feature = "Win32_Graphics_Direct3D12")]
@@ -1018,11 +1023,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWinM
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWinMLEvaluationContext {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWinMLEvaluationContext {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1055,6 +1055,11 @@ pub struct IWinMLEvaluationContext_Vtbl {
 #[doc = "*Required features: `\"Win32_AI_MachineLearning_WinML\"`*"]
 #[repr(transparent)]
 pub struct IWinMLModel(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWinMLModel {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWinMLModel {
     #[doc = "*Required features: `\"Win32_AI_MachineLearning_WinML\"`*"]
     pub unsafe fn GetDescription(&self) -> ::windows::core::Result<*mut WINML_MODEL_DESC> {
@@ -1098,11 +1103,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWinM
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWinMLModel {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWinMLModel {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1136,6 +1136,11 @@ pub struct IWinMLModel_Vtbl {
 #[doc = "*Required features: `\"Win32_AI_MachineLearning_WinML\"`*"]
 #[repr(transparent)]
 pub struct IWinMLRuntime(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWinMLRuntime {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWinMLRuntime {
     #[doc = "*Required features: `\"Win32_AI_MachineLearning_WinML\"`*"]
     pub unsafe fn LoadModel<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, path: Param0) -> ::windows::core::Result<IWinMLModel> {
@@ -1173,11 +1178,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWinM
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWinMLRuntime {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWinMLRuntime {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1207,6 +1207,11 @@ pub struct IWinMLRuntime_Vtbl {
 #[doc = "*Required features: `\"Win32_AI_MachineLearning_WinML\"`*"]
 #[repr(transparent)]
 pub struct IWinMLRuntimeFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWinMLRuntimeFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWinMLRuntimeFactory {
     #[doc = "*Required features: `\"Win32_AI_MachineLearning_WinML\"`*"]
     pub unsafe fn CreateRuntime(&self, runtimetype: WINML_RUNTIME_TYPE) -> ::windows::core::Result<IWinMLRuntime> {
@@ -1232,11 +1237,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IWinMLRun
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWinMLRuntimeFactory {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IWinMLRuntimeFactory {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IWinMLRuntimeFactory {
@@ -1295,6 +1295,7 @@ impl ::core::fmt::Debug for MLOperatorAttribute {
 }
 unsafe impl ::windows::core::Abi for MLOperatorAttribute {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MLOperatorAttribute {
     fn eq(&self, other: &Self) -> bool {
@@ -1323,6 +1324,7 @@ impl ::core::clone::Clone for MLOperatorAttributeNameValue {
 }
 unsafe impl ::windows::core::Abi for MLOperatorAttributeNameValue {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MLOperatorAttributeNameValue {
     fn eq(&self, other: &Self) -> bool {
@@ -1351,6 +1353,7 @@ impl ::core::clone::Clone for MLOperatorAttributeNameValue_0 {
 }
 unsafe impl ::windows::core::Abi for MLOperatorAttributeNameValue_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MLOperatorAttributeNameValue_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -1389,6 +1392,7 @@ impl ::core::default::Default for MLOperatorAttributeType {
 }
 unsafe impl ::windows::core::Abi for MLOperatorAttributeType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MLOperatorAttributeType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1409,6 +1413,7 @@ impl ::core::clone::Clone for MLOperatorEdgeDescription {
 }
 unsafe impl ::windows::core::Abi for MLOperatorEdgeDescription {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MLOperatorEdgeDescription {
     fn eq(&self, other: &Self) -> bool {
@@ -1435,6 +1440,7 @@ impl ::core::clone::Clone for MLOperatorEdgeDescription_0 {
 }
 unsafe impl ::windows::core::Abi for MLOperatorEdgeDescription_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MLOperatorEdgeDescription_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -1468,6 +1474,7 @@ impl ::core::default::Default for MLOperatorEdgeType {
 }
 unsafe impl ::windows::core::Abi for MLOperatorEdgeType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MLOperatorEdgeType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1494,6 +1501,7 @@ impl ::core::fmt::Debug for MLOperatorEdgeTypeConstraint {
 }
 unsafe impl ::windows::core::Abi for MLOperatorEdgeTypeConstraint {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MLOperatorEdgeTypeConstraint {
     fn eq(&self, other: &Self) -> bool {
@@ -1528,6 +1536,7 @@ impl ::core::default::Default for MLOperatorExecutionType {
 }
 unsafe impl ::windows::core::Abi for MLOperatorExecutionType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MLOperatorExecutionType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1572,6 +1581,7 @@ impl ::core::fmt::Debug for MLOperatorKernelDescription {
 }
 unsafe impl ::windows::core::Abi for MLOperatorKernelDescription {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MLOperatorKernelDescription {
     fn eq(&self, other: &Self) -> bool {
@@ -1605,6 +1615,7 @@ impl ::core::default::Default for MLOperatorKernelOptions {
 }
 unsafe impl ::windows::core::Abi for MLOperatorKernelOptions {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MLOperatorKernelOptions {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1661,6 +1672,7 @@ impl ::core::default::Default for MLOperatorParameterOptions {
 }
 unsafe impl ::windows::core::Abi for MLOperatorParameterOptions {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MLOperatorParameterOptions {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1737,6 +1749,7 @@ impl ::core::fmt::Debug for MLOperatorSchemaDescription {
 }
 unsafe impl ::windows::core::Abi for MLOperatorSchemaDescription {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MLOperatorSchemaDescription {
     fn eq(&self, other: &Self) -> bool {
@@ -1764,6 +1777,7 @@ impl ::core::clone::Clone for MLOperatorSchemaEdgeDescription {
 }
 unsafe impl ::windows::core::Abi for MLOperatorSchemaEdgeDescription {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MLOperatorSchemaEdgeDescription {
     fn eq(&self, other: &Self) -> bool {
@@ -1791,6 +1805,7 @@ impl ::core::clone::Clone for MLOperatorSchemaEdgeDescription_0 {
 }
 unsafe impl ::windows::core::Abi for MLOperatorSchemaEdgeDescription_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MLOperatorSchemaEdgeDescription_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -1824,6 +1839,7 @@ impl ::core::default::Default for MLOperatorSchemaEdgeTypeFormat {
 }
 unsafe impl ::windows::core::Abi for MLOperatorSchemaEdgeTypeFormat {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MLOperatorSchemaEdgeTypeFormat {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1849,6 +1865,7 @@ impl ::core::fmt::Debug for MLOperatorSetId {
 }
 unsafe impl ::windows::core::Abi for MLOperatorSetId {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MLOperatorSetId {
     fn eq(&self, other: &Self) -> bool {
@@ -1896,6 +1913,7 @@ impl ::core::default::Default for MLOperatorTensorDataType {
 }
 unsafe impl ::windows::core::Abi for MLOperatorTensorDataType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MLOperatorTensorDataType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1919,6 +1937,7 @@ impl ::core::clone::Clone for WINML_BINDING_DESC {
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 unsafe impl ::windows::core::Abi for WINML_BINDING_DESC {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ::core::cmp::PartialEq for WINML_BINDING_DESC {
@@ -1953,6 +1972,7 @@ impl ::core::clone::Clone for WINML_BINDING_DESC_0 {
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 unsafe impl ::windows::core::Abi for WINML_BINDING_DESC_0 {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ::core::cmp::PartialEq for WINML_BINDING_DESC_0 {
@@ -1997,6 +2017,7 @@ impl ::core::default::Default for WINML_BINDING_TYPE {
 }
 unsafe impl ::windows::core::Abi for WINML_BINDING_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WINML_BINDING_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2030,6 +2051,7 @@ impl ::core::default::Default for WINML_FEATURE_TYPE {
 }
 unsafe impl ::windows::core::Abi for WINML_FEATURE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WINML_FEATURE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2058,6 +2080,7 @@ impl ::core::fmt::Debug for WINML_IMAGE_BINDING_DESC {
 }
 unsafe impl ::windows::core::Abi for WINML_IMAGE_BINDING_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINML_IMAGE_BINDING_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -2090,6 +2113,7 @@ impl ::core::fmt::Debug for WINML_IMAGE_VARIABLE_DESC {
 }
 unsafe impl ::windows::core::Abi for WINML_IMAGE_VARIABLE_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINML_IMAGE_VARIABLE_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -2119,6 +2143,7 @@ impl ::core::clone::Clone for WINML_MAP_BINDING_DESC {
 }
 unsafe impl ::windows::core::Abi for WINML_MAP_BINDING_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINML_MAP_BINDING_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -2145,6 +2170,7 @@ impl ::core::clone::Clone for WINML_MAP_BINDING_DESC_0 {
 }
 unsafe impl ::windows::core::Abi for WINML_MAP_BINDING_DESC_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINML_MAP_BINDING_DESC_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -2173,6 +2199,7 @@ impl ::core::clone::Clone for WINML_MAP_BINDING_DESC_1 {
 }
 unsafe impl ::windows::core::Abi for WINML_MAP_BINDING_DESC_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINML_MAP_BINDING_DESC_1 {
     fn eq(&self, other: &Self) -> bool {
@@ -2204,6 +2231,7 @@ impl ::core::fmt::Debug for WINML_MAP_VARIABLE_DESC {
 }
 unsafe impl ::windows::core::Abi for WINML_MAP_VARIABLE_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINML_MAP_VARIABLE_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -2238,6 +2266,7 @@ impl ::core::fmt::Debug for WINML_MODEL_DESC {
 }
 unsafe impl ::windows::core::Abi for WINML_MODEL_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINML_MODEL_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -2274,6 +2303,7 @@ impl ::core::fmt::Debug for WINML_RESOURCE_BINDING_DESC {
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 unsafe impl ::windows::core::Abi for WINML_RESOURCE_BINDING_DESC {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ::core::cmp::PartialEq for WINML_RESOURCE_BINDING_DESC {
@@ -2308,6 +2338,7 @@ impl ::core::default::Default for WINML_RUNTIME_TYPE {
 }
 unsafe impl ::windows::core::Abi for WINML_RUNTIME_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WINML_RUNTIME_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2329,6 +2360,7 @@ impl ::core::clone::Clone for WINML_SEQUENCE_BINDING_DESC {
 }
 unsafe impl ::windows::core::Abi for WINML_SEQUENCE_BINDING_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINML_SEQUENCE_BINDING_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -2357,6 +2389,7 @@ impl ::core::clone::Clone for WINML_SEQUENCE_BINDING_DESC_0 {
 }
 unsafe impl ::windows::core::Abi for WINML_SEQUENCE_BINDING_DESC_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINML_SEQUENCE_BINDING_DESC_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -2387,6 +2420,7 @@ impl ::core::fmt::Debug for WINML_SEQUENCE_VARIABLE_DESC {
 }
 unsafe impl ::windows::core::Abi for WINML_SEQUENCE_VARIABLE_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINML_SEQUENCE_VARIABLE_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -2421,6 +2455,7 @@ impl ::core::fmt::Debug for WINML_TENSOR_BINDING_DESC {
 }
 unsafe impl ::windows::core::Abi for WINML_TENSOR_BINDING_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINML_TENSOR_BINDING_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -2482,6 +2517,7 @@ impl ::core::default::Default for WINML_TENSOR_DATA_TYPE {
 }
 unsafe impl ::windows::core::Abi for WINML_TENSOR_DATA_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WINML_TENSOR_DATA_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2510,6 +2546,7 @@ impl ::core::fmt::Debug for WINML_TENSOR_VARIABLE_DESC {
 }
 unsafe impl ::windows::core::Abi for WINML_TENSOR_VARIABLE_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINML_TENSOR_VARIABLE_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -2543,6 +2580,7 @@ impl ::core::clone::Clone for WINML_VARIABLE_DESC {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WINML_VARIABLE_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WINML_VARIABLE_DESC {
@@ -2578,6 +2616,7 @@ impl ::core::clone::Clone for WINML_VARIABLE_DESC_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WINML_VARIABLE_DESC_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WINML_VARIABLE_DESC_0 {

@@ -106,6 +106,7 @@ impl ::core::fmt::Debug for DXGI_ADAPTER_DESC {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DXGI_ADAPTER_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DXGI_ADAPTER_DESC {
@@ -153,6 +154,7 @@ impl ::core::fmt::Debug for DXGI_ADAPTER_DESC1 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DXGI_ADAPTER_DESC1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DXGI_ADAPTER_DESC1 {
@@ -215,6 +217,7 @@ impl ::core::fmt::Debug for DXGI_ADAPTER_DESC2 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DXGI_ADAPTER_DESC2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DXGI_ADAPTER_DESC2 {
@@ -277,6 +280,7 @@ impl ::core::fmt::Debug for DXGI_ADAPTER_DESC3 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DXGI_ADAPTER_DESC3 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DXGI_ADAPTER_DESC3 {
@@ -315,6 +319,7 @@ impl ::core::default::Default for DXGI_ADAPTER_FLAG {
 }
 unsafe impl ::windows::core::Abi for DXGI_ADAPTER_FLAG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXGI_ADAPTER_FLAG {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -382,6 +387,7 @@ impl ::core::default::Default for DXGI_ADAPTER_FLAG3 {
 }
 unsafe impl ::windows::core::Abi for DXGI_ADAPTER_FLAG3 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXGI_ADAPTER_FLAG3 {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -443,6 +449,7 @@ impl ::core::default::Default for DXGI_COMPUTE_PREEMPTION_GRANULARITY {
 }
 unsafe impl ::windows::core::Abi for DXGI_COMPUTE_PREEMPTION_GRANULARITY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXGI_COMPUTE_PREEMPTION_GRANULARITY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -482,6 +489,7 @@ impl ::core::default::Default for DXGI_DEBUG_RLO_FLAGS {
 }
 unsafe impl ::windows::core::Abi for DXGI_DEBUG_RLO_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXGI_DEBUG_RLO_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -534,6 +542,7 @@ impl ::core::fmt::Debug for DXGI_DECODE_SWAP_CHAIN_DESC {
 }
 unsafe impl ::windows::core::Abi for DXGI_DECODE_SWAP_CHAIN_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DXGI_DECODE_SWAP_CHAIN_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -565,6 +574,7 @@ impl ::core::fmt::Debug for DXGI_DISPLAY_COLOR_SPACE {
 }
 unsafe impl ::windows::core::Abi for DXGI_DISPLAY_COLOR_SPACE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DXGI_DISPLAY_COLOR_SPACE {
     fn eq(&self, other: &Self) -> bool {
@@ -668,6 +678,7 @@ impl ::core::default::Default for DXGI_FEATURE {
 }
 unsafe impl ::windows::core::Abi for DXGI_FEATURE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXGI_FEATURE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -699,6 +710,7 @@ impl ::core::default::Default for DXGI_FRAME_PRESENTATION_MODE {
 }
 unsafe impl ::windows::core::Abi for DXGI_FRAME_PRESENTATION_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXGI_FRAME_PRESENTATION_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -727,6 +739,7 @@ impl ::core::fmt::Debug for DXGI_FRAME_STATISTICS {
 }
 unsafe impl ::windows::core::Abi for DXGI_FRAME_STATISTICS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DXGI_FRAME_STATISTICS {
     fn eq(&self, other: &Self) -> bool {
@@ -763,6 +776,7 @@ impl ::core::fmt::Debug for DXGI_FRAME_STATISTICS_MEDIA {
 }
 unsafe impl ::windows::core::Abi for DXGI_FRAME_STATISTICS_MEDIA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DXGI_FRAME_STATISTICS_MEDIA {
     fn eq(&self, other: &Self) -> bool {
@@ -798,6 +812,7 @@ impl ::core::default::Default for DXGI_GPU_PREFERENCE {
 }
 unsafe impl ::windows::core::Abi for DXGI_GPU_PREFERENCE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXGI_GPU_PREFERENCE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -831,6 +846,7 @@ impl ::core::default::Default for DXGI_GRAPHICS_PREEMPTION_GRANULARITY {
 }
 unsafe impl ::windows::core::Abi for DXGI_GRAPHICS_PREEMPTION_GRANULARITY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXGI_GRAPHICS_PREEMPTION_GRANULARITY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -860,6 +876,7 @@ impl ::core::default::Default for DXGI_HARDWARE_COMPOSITION_SUPPORT_FLAGS {
 }
 unsafe impl ::windows::core::Abi for DXGI_HARDWARE_COMPOSITION_SUPPORT_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXGI_HARDWARE_COMPOSITION_SUPPORT_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -919,6 +936,7 @@ impl ::core::fmt::Debug for DXGI_HDR_METADATA_HDR10 {
 }
 unsafe impl ::windows::core::Abi for DXGI_HDR_METADATA_HDR10 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DXGI_HDR_METADATA_HDR10 {
     fn eq(&self, other: &Self) -> bool {
@@ -949,6 +967,7 @@ impl ::core::fmt::Debug for DXGI_HDR_METADATA_HDR10PLUS {
 }
 unsafe impl ::windows::core::Abi for DXGI_HDR_METADATA_HDR10PLUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DXGI_HDR_METADATA_HDR10PLUS {
     fn eq(&self, other: &Self) -> bool {
@@ -984,6 +1003,7 @@ impl ::core::default::Default for DXGI_HDR_METADATA_TYPE {
 }
 unsafe impl ::windows::core::Abi for DXGI_HDR_METADATA_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXGI_HDR_METADATA_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1011,6 +1031,7 @@ impl ::core::fmt::Debug for DXGI_INFO_QUEUE_FILTER {
 }
 unsafe impl ::windows::core::Abi for DXGI_INFO_QUEUE_FILTER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DXGI_INFO_QUEUE_FILTER {
     fn eq(&self, other: &Self) -> bool {
@@ -1046,6 +1067,7 @@ impl ::core::fmt::Debug for DXGI_INFO_QUEUE_FILTER_DESC {
 }
 unsafe impl ::windows::core::Abi for DXGI_INFO_QUEUE_FILTER_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DXGI_INFO_QUEUE_FILTER_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -1081,6 +1103,7 @@ impl ::core::fmt::Debug for DXGI_INFO_QUEUE_MESSAGE {
 }
 unsafe impl ::windows::core::Abi for DXGI_INFO_QUEUE_MESSAGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DXGI_INFO_QUEUE_MESSAGE {
     fn eq(&self, other: &Self) -> bool {
@@ -1132,6 +1155,7 @@ impl ::core::default::Default for DXGI_INFO_QUEUE_MESSAGE_CATEGORY {
 }
 unsafe impl ::windows::core::Abi for DXGI_INFO_QUEUE_MESSAGE_CATEGORY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXGI_INFO_QUEUE_MESSAGE_CATEGORY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1167,6 +1191,7 @@ impl ::core::default::Default for DXGI_INFO_QUEUE_MESSAGE_SEVERITY {
 }
 unsafe impl ::windows::core::Abi for DXGI_INFO_QUEUE_MESSAGE_SEVERITY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXGI_INFO_QUEUE_MESSAGE_SEVERITY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1192,6 +1217,7 @@ impl ::core::fmt::Debug for DXGI_MAPPED_RECT {
 }
 unsafe impl ::windows::core::Abi for DXGI_MAPPED_RECT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DXGI_MAPPED_RECT {
     fn eq(&self, other: &Self) -> bool {
@@ -1233,6 +1259,7 @@ impl ::core::fmt::Debug for DXGI_MATRIX_3X2_F {
 }
 unsafe impl ::windows::core::Abi for DXGI_MATRIX_3X2_F {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DXGI_MATRIX_3X2_F {
     fn eq(&self, other: &Self) -> bool {
@@ -1268,6 +1295,7 @@ impl ::core::default::Default for DXGI_MEMORY_SEGMENT_GROUP {
 }
 unsafe impl ::windows::core::Abi for DXGI_MEMORY_SEGMENT_GROUP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXGI_MEMORY_SEGMENT_GROUP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1303,6 +1331,7 @@ impl ::core::fmt::Debug for DXGI_MODE_DESC1 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Dxgi_Common"))]
 unsafe impl ::windows::core::Abi for DXGI_MODE_DESC1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Dxgi_Common"))]
 impl ::core::cmp::PartialEq for DXGI_MODE_DESC1 {
@@ -1341,6 +1370,7 @@ impl ::core::default::Default for DXGI_MULTIPLANE_OVERLAY_YCbCr_FLAGS {
 }
 unsafe impl ::windows::core::Abi for DXGI_MULTIPLANE_OVERLAY_YCbCr_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXGI_MULTIPLANE_OVERLAY_YCbCr_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2034,6 +2064,7 @@ impl ::core::default::Default for DXGI_Message_Id {
 }
 unsafe impl ::windows::core::Abi for DXGI_Message_Id {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXGI_Message_Id {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2059,6 +2090,7 @@ impl ::core::default::Default for DXGI_OFFER_RESOURCE_FLAGS {
 }
 unsafe impl ::windows::core::Abi for DXGI_OFFER_RESOURCE_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXGI_OFFER_RESOURCE_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2088,6 +2120,7 @@ impl ::core::default::Default for DXGI_OFFER_RESOURCE_PRIORITY {
 }
 unsafe impl ::windows::core::Abi for DXGI_OFFER_RESOURCE_PRIORITY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXGI_OFFER_RESOURCE_PRIORITY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2119,6 +2152,7 @@ impl ::core::fmt::Debug for DXGI_OUTDUPL_DESC {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Dxgi_Common"))]
 unsafe impl ::windows::core::Abi for DXGI_OUTDUPL_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Dxgi_Common"))]
 impl ::core::cmp::PartialEq for DXGI_OUTDUPL_DESC {
@@ -2153,6 +2187,7 @@ impl ::core::default::Default for DXGI_OUTDUPL_FLAG {
 }
 unsafe impl ::windows::core::Abi for DXGI_OUTDUPL_FLAG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXGI_OUTDUPL_FLAG {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2198,6 +2233,7 @@ impl ::core::fmt::Debug for DXGI_OUTDUPL_FRAME_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DXGI_OUTDUPL_FRAME_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DXGI_OUTDUPL_FRAME_INFO {
@@ -2237,6 +2273,7 @@ impl ::core::fmt::Debug for DXGI_OUTDUPL_MOVE_RECT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DXGI_OUTDUPL_MOVE_RECT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DXGI_OUTDUPL_MOVE_RECT {
@@ -2276,6 +2313,7 @@ impl ::core::fmt::Debug for DXGI_OUTDUPL_POINTER_POSITION {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DXGI_OUTDUPL_POINTER_POSITION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DXGI_OUTDUPL_POINTER_POSITION {
@@ -2318,6 +2356,7 @@ impl ::core::fmt::Debug for DXGI_OUTDUPL_POINTER_SHAPE_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DXGI_OUTDUPL_POINTER_SHAPE_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DXGI_OUTDUPL_POINTER_SHAPE_INFO {
@@ -2356,6 +2395,7 @@ impl ::core::default::Default for DXGI_OUTDUPL_POINTER_SHAPE_TYPE {
 }
 unsafe impl ::windows::core::Abi for DXGI_OUTDUPL_POINTER_SHAPE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXGI_OUTDUPL_POINTER_SHAPE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2389,6 +2429,7 @@ impl ::core::fmt::Debug for DXGI_OUTPUT_DESC {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Dxgi_Common", feature = "Win32_Graphics_Gdi"))]
 unsafe impl ::windows::core::Abi for DXGI_OUTPUT_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Dxgi_Common", feature = "Win32_Graphics_Gdi"))]
 impl ::core::cmp::PartialEq for DXGI_OUTPUT_DESC {
@@ -2455,6 +2496,7 @@ impl ::core::fmt::Debug for DXGI_OUTPUT_DESC1 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Dxgi_Common", feature = "Win32_Graphics_Gdi"))]
 unsafe impl ::windows::core::Abi for DXGI_OUTPUT_DESC1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Dxgi_Common", feature = "Win32_Graphics_Gdi"))]
 impl ::core::cmp::PartialEq for DXGI_OUTPUT_DESC1 {
@@ -2489,6 +2531,7 @@ impl ::core::default::Default for DXGI_OVERLAY_COLOR_SPACE_SUPPORT_FLAG {
 }
 unsafe impl ::windows::core::Abi for DXGI_OVERLAY_COLOR_SPACE_SUPPORT_FLAG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXGI_OVERLAY_COLOR_SPACE_SUPPORT_FLAG {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2516,6 +2559,7 @@ impl ::core::default::Default for DXGI_OVERLAY_SUPPORT_FLAG {
 }
 unsafe impl ::windows::core::Abi for DXGI_OVERLAY_SUPPORT_FLAG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXGI_OVERLAY_SUPPORT_FLAG {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2554,6 +2598,7 @@ impl ::core::fmt::Debug for DXGI_PRESENT_PARAMETERS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DXGI_PRESENT_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DXGI_PRESENT_PARAMETERS {
@@ -2602,6 +2647,7 @@ impl ::core::fmt::Debug for DXGI_QUERY_VIDEO_MEMORY_INFO {
 }
 unsafe impl ::windows::core::Abi for DXGI_QUERY_VIDEO_MEMORY_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DXGI_QUERY_VIDEO_MEMORY_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -2637,6 +2683,7 @@ impl ::core::default::Default for DXGI_RECLAIM_RESOURCE_RESULTS {
 }
 unsafe impl ::windows::core::Abi for DXGI_RECLAIM_RESOURCE_RESULTS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXGI_RECLAIM_RESOURCE_RESULTS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2666,6 +2713,7 @@ impl ::core::default::Default for DXGI_RESIDENCY {
 }
 unsafe impl ::windows::core::Abi for DXGI_RESIDENCY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXGI_RESIDENCY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2699,6 +2747,7 @@ impl ::core::default::Default for DXGI_RESOURCE_PRIORITY {
 }
 unsafe impl ::windows::core::Abi for DXGI_RESOURCE_PRIORITY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXGI_RESOURCE_PRIORITY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2726,6 +2775,7 @@ impl ::core::fmt::Debug for DXGI_RGBA {
 }
 unsafe impl ::windows::core::Abi for DXGI_RGBA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DXGI_RGBA {
     fn eq(&self, other: &Self) -> bool {
@@ -2761,6 +2811,7 @@ impl ::core::default::Default for DXGI_SCALING {
 }
 unsafe impl ::windows::core::Abi for DXGI_SCALING {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXGI_SCALING {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2790,6 +2841,7 @@ impl ::core::fmt::Debug for DXGI_SHARED_RESOURCE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DXGI_SHARED_RESOURCE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DXGI_SHARED_RESOURCE {
@@ -2835,6 +2887,7 @@ impl ::core::fmt::Debug for DXGI_SURFACE_DESC {
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 unsafe impl ::windows::core::Abi for DXGI_SURFACE_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 impl ::core::cmp::PartialEq for DXGI_SURFACE_DESC {
@@ -2871,6 +2924,7 @@ impl ::core::default::Default for DXGI_SWAP_CHAIN_COLOR_SPACE_SUPPORT_FLAG {
 }
 unsafe impl ::windows::core::Abi for DXGI_SWAP_CHAIN_COLOR_SPACE_SUPPORT_FLAG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXGI_SWAP_CHAIN_COLOR_SPACE_SUPPORT_FLAG {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2907,6 +2961,7 @@ impl ::core::fmt::Debug for DXGI_SWAP_CHAIN_DESC {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Dxgi_Common"))]
 unsafe impl ::windows::core::Abi for DXGI_SWAP_CHAIN_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Dxgi_Common"))]
 impl ::core::cmp::PartialEq for DXGI_SWAP_CHAIN_DESC {
@@ -2955,6 +3010,7 @@ impl ::core::fmt::Debug for DXGI_SWAP_CHAIN_DESC1 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Dxgi_Common"))]
 unsafe impl ::windows::core::Abi for DXGI_SWAP_CHAIN_DESC1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Dxgi_Common"))]
 impl ::core::cmp::PartialEq for DXGI_SWAP_CHAIN_DESC1 {
@@ -3013,6 +3069,7 @@ impl ::core::default::Default for DXGI_SWAP_CHAIN_FLAG {
 }
 unsafe impl ::windows::core::Abi for DXGI_SWAP_CHAIN_FLAG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXGI_SWAP_CHAIN_FLAG {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3045,6 +3102,7 @@ impl ::core::fmt::Debug for DXGI_SWAP_CHAIN_FULLSCREEN_DESC {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Dxgi_Common"))]
 unsafe impl ::windows::core::Abi for DXGI_SWAP_CHAIN_FULLSCREEN_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Dxgi_Common"))]
 impl ::core::cmp::PartialEq for DXGI_SWAP_CHAIN_FULLSCREEN_DESC {
@@ -3085,6 +3143,7 @@ impl ::core::default::Default for DXGI_SWAP_EFFECT {
 }
 unsafe impl ::windows::core::Abi for DXGI_SWAP_EFFECT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXGI_SWAP_EFFECT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3108,6 +3167,11 @@ pub const DXGI_USAGE_UNORDERED_ACCESS: u32 = 1024u32;
 #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
 #[repr(transparent)]
 pub struct IDXGIAdapter(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDXGIAdapter {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDXGIAdapter {
     #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
     pub unsafe fn SetPrivateData(&self, name: *const ::windows::core::GUID, datasize: u32, pdata: *const ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -3183,11 +3247,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDXGIObject> for &'a IDXGIAdapter {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDXGIAdapter {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDXGIAdapter {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3217,6 +3276,11 @@ pub struct IDXGIAdapter_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
 #[repr(transparent)]
 pub struct IDXGIAdapter1(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDXGIAdapter1 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDXGIAdapter1 {
     #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
     pub unsafe fn SetPrivateData(&self, name: *const ::windows::core::GUID, datasize: u32, pdata: *const ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -3318,11 +3382,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDXGIAdapter> for &'a IDXGIAdapter1 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDXGIAdapter1 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDXGIAdapter1 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3350,6 +3409,11 @@ pub struct IDXGIAdapter1_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
 #[repr(transparent)]
 pub struct IDXGIAdapter2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDXGIAdapter2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDXGIAdapter2 {
     #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
     pub unsafe fn SetPrivateData(&self, name: *const ::windows::core::GUID, datasize: u32, pdata: *const ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -3477,11 +3541,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDXGIAdapter1> for &'a IDXGIAdapter2 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDXGIAdapter2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDXGIAdapter2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3509,6 +3568,11 @@ pub struct IDXGIAdapter2_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
 #[repr(transparent)]
 pub struct IDXGIAdapter3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDXGIAdapter3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDXGIAdapter3 {
     #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
     pub unsafe fn SetPrivateData(&self, name: *const ::windows::core::GUID, datasize: u32, pdata: *const ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -3685,11 +3749,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDXGIAdapter2> for &'a IDXGIAdapter3 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDXGIAdapter3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDXGIAdapter3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3725,6 +3784,11 @@ pub struct IDXGIAdapter3_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
 #[repr(transparent)]
 pub struct IDXGIAdapter4(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDXGIAdapter4 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDXGIAdapter4 {
     #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
     pub unsafe fn SetPrivateData(&self, name: *const ::windows::core::GUID, datasize: u32, pdata: *const ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -3927,11 +3991,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDXGIAdapter3> for &'a IDXGIAdapter4 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDXGIAdapter4 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDXGIAdapter4 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3959,6 +4018,11 @@ pub struct IDXGIAdapter4_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
 #[repr(transparent)]
 pub struct IDXGIDebug(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDXGIDebug {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDXGIDebug {
     #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
     pub unsafe fn ReportLiveObjects<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::GUID>>(&self, apiid: Param0, flags: DXGI_DEBUG_RLO_FLAGS) -> ::windows::core::Result<()> {
@@ -3985,11 +4049,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDXGI
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDXGIDebug {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDXGIDebug {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4014,6 +4073,11 @@ pub struct IDXGIDebug_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
 #[repr(transparent)]
 pub struct IDXGIDebug1(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDXGIDebug1 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDXGIDebug1 {
     #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
     pub unsafe fn ReportLiveObjects<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::GUID>>(&self, apiid: Param0, flags: DXGI_DEBUG_RLO_FLAGS) -> ::windows::core::Result<()> {
@@ -4073,11 +4137,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDXGIDebug> for &'a IDXGIDebug1 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDXGIDebug1 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDXGIDebug1 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4107,6 +4166,11 @@ pub struct IDXGIDebug1_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
 #[repr(transparent)]
 pub struct IDXGIDecodeSwapChain(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDXGIDecodeSwapChain {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDXGIDecodeSwapChain {
     #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
     pub unsafe fn PresentBuffer(&self, buffertopresent: u32, syncinterval: u32, flags: u32) -> ::windows::core::Result<()> {
@@ -4171,11 +4235,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDXGI
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDXGIDecodeSwapChain {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDXGIDecodeSwapChain {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4220,6 +4279,11 @@ pub struct IDXGIDecodeSwapChain_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
 #[repr(transparent)]
 pub struct IDXGIDevice(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDXGIDevice {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDXGIDevice {
     #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
     pub unsafe fn SetPrivateData(&self, name: *const ::windows::core::GUID, datasize: u32, pdata: *const ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -4302,11 +4366,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDXGIObject> for &'a IDXGIDevice {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDXGIDevice {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDXGIDevice {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4338,6 +4397,11 @@ pub struct IDXGIDevice_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
 #[repr(transparent)]
 pub struct IDXGIDevice1(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDXGIDevice1 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDXGIDevice1 {
     #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
     pub unsafe fn SetPrivateData(&self, name: *const ::windows::core::GUID, datasize: u32, pdata: *const ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -4449,11 +4513,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDXGIDevice> for &'a IDXGIDevice1 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDXGIDevice1 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDXGIDevice1 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4479,6 +4538,11 @@ pub struct IDXGIDevice1_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
 #[repr(transparent)]
 pub struct IDXGIDevice2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDXGIDevice2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDXGIDevice2 {
     #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
     pub unsafe fn SetPrivateData(&self, name: *const ::windows::core::GUID, datasize: u32, pdata: *const ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -4625,11 +4689,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDXGIDevice1> for &'a IDXGIDevice2 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDXGIDevice2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDXGIDevice2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4662,6 +4721,11 @@ pub struct IDXGIDevice2_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
 #[repr(transparent)]
 pub struct IDXGIDevice3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDXGIDevice3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDXGIDevice3 {
     #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
     pub unsafe fn SetPrivateData(&self, name: *const ::windows::core::GUID, datasize: u32, pdata: *const ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -4832,11 +4896,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDXGIDevice2> for &'a IDXGIDevice3 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDXGIDevice3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDXGIDevice3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4861,6 +4920,11 @@ pub struct IDXGIDevice3_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
 #[repr(transparent)]
 pub struct IDXGIDevice4(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDXGIDevice4 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDXGIDevice4 {
     #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
     pub unsafe fn SetPrivateData(&self, name: *const ::windows::core::GUID, datasize: u32, pdata: *const ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -5060,11 +5124,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDXGIDevice3> for &'a IDXGIDevice4 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDXGIDevice4 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDXGIDevice4 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5090,6 +5149,11 @@ pub struct IDXGIDevice4_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
 #[repr(transparent)]
 pub struct IDXGIDeviceSubObject(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDXGIDeviceSubObject {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDXGIDeviceSubObject {
     #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
     pub unsafe fn SetPrivateData(&self, name: *const ::windows::core::GUID, datasize: u32, pdata: *const ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -5154,11 +5218,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDXGIObject> for &'a IDXGIDeviceSubObjec
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDXGIDeviceSubObject {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDXGIDeviceSubObject {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5183,6 +5242,11 @@ pub struct IDXGIDeviceSubObject_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
 #[repr(transparent)]
 pub struct IDXGIDisplayControl(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDXGIDisplayControl {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDXGIDisplayControl {
     #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -5213,11 +5277,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IDXGIDisp
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDXGIDisplayControl {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IDXGIDisplayControl {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IDXGIDisplayControl {
@@ -5251,6 +5310,11 @@ pub struct IDXGIDisplayControl_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
 #[repr(transparent)]
 pub struct IDXGIFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDXGIFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDXGIFactory {
     #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
     pub unsafe fn SetPrivateData(&self, name: *const ::windows::core::GUID, datasize: u32, pdata: *const ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -5338,11 +5402,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDXGIObject> for &'a IDXGIFactory {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDXGIFactory {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDXGIFactory {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5383,6 +5442,11 @@ pub struct IDXGIFactory_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
 #[repr(transparent)]
 pub struct IDXGIFactory1(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDXGIFactory1 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDXGIFactory1 {
     #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
     pub unsafe fn SetPrivateData(&self, name: *const ::windows::core::GUID, datasize: u32, pdata: *const ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -5500,11 +5564,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDXGIFactory> for &'a IDXGIFactory1 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDXGIFactory1 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDXGIFactory1 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5533,6 +5592,11 @@ pub struct IDXGIFactory1_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
 #[repr(transparent)]
 pub struct IDXGIFactory2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDXGIFactory2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDXGIFactory2 {
     #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
     pub unsafe fn SetPrivateData(&self, name: *const ::windows::core::GUID, datasize: u32, pdata: *const ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -5731,11 +5795,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDXGIFactory1> for &'a IDXGIFactory2 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDXGIFactory2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDXGIFactory2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5797,6 +5856,11 @@ pub struct IDXGIFactory2_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
 #[repr(transparent)]
 pub struct IDXGIFactory3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDXGIFactory3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDXGIFactory3 {
     #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
     pub unsafe fn SetPrivateData(&self, name: *const ::windows::core::GUID, datasize: u32, pdata: *const ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -6019,11 +6083,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDXGIFactory2> for &'a IDXGIFactory3 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDXGIFactory3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDXGIFactory3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6048,6 +6107,11 @@ pub struct IDXGIFactory3_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
 #[repr(transparent)]
 pub struct IDXGIFactory4(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDXGIFactory4 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDXGIFactory4 {
     #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
     pub unsafe fn SetPrivateData(&self, name: *const ::windows::core::GUID, datasize: u32, pdata: *const ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -6301,11 +6365,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDXGIFactory3> for &'a IDXGIFactory4 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDXGIFactory4 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDXGIFactory4 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6334,6 +6393,11 @@ pub struct IDXGIFactory4_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
 #[repr(transparent)]
 pub struct IDXGIFactory5(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDXGIFactory5 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDXGIFactory5 {
     #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
     pub unsafe fn SetPrivateData(&self, name: *const ::windows::core::GUID, datasize: u32, pdata: *const ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -6611,11 +6675,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDXGIFactory4> for &'a IDXGIFactory5 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDXGIFactory5 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDXGIFactory5 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6640,6 +6699,11 @@ pub struct IDXGIFactory5_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
 #[repr(transparent)]
 pub struct IDXGIFactory6(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDXGIFactory6 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDXGIFactory6 {
     #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
     pub unsafe fn SetPrivateData(&self, name: *const ::windows::core::GUID, datasize: u32, pdata: *const ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -6942,11 +7006,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDXGIFactory5> for &'a IDXGIFactory6 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDXGIFactory6 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDXGIFactory6 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6971,6 +7030,11 @@ pub struct IDXGIFactory6_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
 #[repr(transparent)]
 pub struct IDXGIFactory7(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDXGIFactory7 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDXGIFactory7 {
     #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
     pub unsafe fn SetPrivateData(&self, name: *const ::windows::core::GUID, datasize: u32, pdata: *const ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -7303,11 +7367,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDXGIFactory6> for &'a IDXGIFactory7 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDXGIFactory7 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDXGIFactory7 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7336,6 +7395,11 @@ pub struct IDXGIFactory7_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
 #[repr(transparent)]
 pub struct IDXGIFactoryMedia(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDXGIFactoryMedia {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDXGIFactoryMedia {
     #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`, `\"Win32_Foundation\"`, `\"Win32_Graphics_Dxgi_Common\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Dxgi_Common"))]
@@ -7370,11 +7434,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDXGI
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDXGIFactoryMedia {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDXGIFactoryMedia {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7406,6 +7465,11 @@ pub struct IDXGIFactoryMedia_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
 #[repr(transparent)]
 pub struct IDXGIInfoQueue(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDXGIInfoQueue {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDXGIInfoQueue {
     #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
     pub unsafe fn SetMessageCountLimit<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::GUID>>(&self, producer: Param0, messagecountlimit: u64) -> ::windows::core::Result<()> {
@@ -7584,11 +7648,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDXGI
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDXGIInfoQueue {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDXGIInfoQueue {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7673,6 +7732,11 @@ pub struct IDXGIInfoQueue_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
 #[repr(transparent)]
 pub struct IDXGIKeyedMutex(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDXGIKeyedMutex {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDXGIKeyedMutex {
     #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
     pub unsafe fn SetPrivateData(&self, name: *const ::windows::core::GUID, datasize: u32, pdata: *const ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -7765,11 +7829,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDXGIDeviceSubObject> for &'a IDXGIKeyed
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDXGIKeyedMutex {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDXGIKeyedMutex {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7795,6 +7854,11 @@ pub struct IDXGIKeyedMutex_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
 #[repr(transparent)]
 pub struct IDXGIObject(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDXGIObject {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDXGIObject {
     #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
     pub unsafe fn SetPrivateData(&self, name: *const ::windows::core::GUID, datasize: u32, pdata: *const ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -7834,11 +7898,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDXGI
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDXGIObject {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDXGIObject {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7866,6 +7925,11 @@ pub struct IDXGIObject_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
 #[repr(transparent)]
 pub struct IDXGIOutput(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDXGIOutput {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDXGIOutput {
     #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
     pub unsafe fn SetPrivateData(&self, name: *const ::windows::core::GUID, datasize: u32, pdata: *const ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -7984,11 +8048,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDXGIObject> for &'a IDXGIOutput {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDXGIOutput {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDXGIOutput {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8045,6 +8104,11 @@ pub struct IDXGIOutput_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
 #[repr(transparent)]
 pub struct IDXGIOutput1(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDXGIOutput1 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDXGIOutput1 {
     #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
     pub unsafe fn SetPrivateData(&self, name: *const ::windows::core::GUID, datasize: u32, pdata: *const ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -8202,11 +8266,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDXGIOutput> for &'a IDXGIOutput1 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDXGIOutput1 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDXGIOutput1 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8240,6 +8299,11 @@ pub struct IDXGIOutput1_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
 #[repr(transparent)]
 pub struct IDXGIOutput2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDXGIOutput2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDXGIOutput2 {
     #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
     pub unsafe fn SetPrivateData(&self, name: *const ::windows::core::GUID, datasize: u32, pdata: *const ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -8422,11 +8486,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDXGIOutput1> for &'a IDXGIOutput2 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDXGIOutput2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDXGIOutput2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8454,6 +8513,11 @@ pub struct IDXGIOutput2_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
 #[repr(transparent)]
 pub struct IDXGIOutput3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDXGIOutput3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDXGIOutput3 {
     #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
     pub unsafe fn SetPrivateData(&self, name: *const ::windows::core::GUID, datasize: u32, pdata: *const ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -8662,11 +8726,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDXGIOutput2> for &'a IDXGIOutput3 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDXGIOutput3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDXGIOutput3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8694,6 +8753,11 @@ pub struct IDXGIOutput3_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
 #[repr(transparent)]
 pub struct IDXGIOutput4(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDXGIOutput4 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDXGIOutput4 {
     #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
     pub unsafe fn SetPrivateData(&self, name: *const ::windows::core::GUID, datasize: u32, pdata: *const ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -8928,11 +8992,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDXGIOutput3> for &'a IDXGIOutput4 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDXGIOutput4 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDXGIOutput4 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8960,6 +9019,11 @@ pub struct IDXGIOutput4_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
 #[repr(transparent)]
 pub struct IDXGIOutput5(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDXGIOutput5 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDXGIOutput5 {
     #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
     pub unsafe fn SetPrivateData(&self, name: *const ::windows::core::GUID, datasize: u32, pdata: *const ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -9220,11 +9284,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDXGIOutput4> for &'a IDXGIOutput5 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDXGIOutput5 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDXGIOutput5 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9252,6 +9311,11 @@ pub struct IDXGIOutput5_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
 #[repr(transparent)]
 pub struct IDXGIOutput6(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDXGIOutput6 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDXGIOutput6 {
     #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
     pub unsafe fn SetPrivateData(&self, name: *const ::windows::core::GUID, datasize: u32, pdata: *const ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -9543,11 +9607,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDXGIOutput5> for &'a IDXGIOutput6 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDXGIOutput6 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDXGIOutput6 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9576,6 +9635,11 @@ pub struct IDXGIOutput6_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
 #[repr(transparent)]
 pub struct IDXGIOutputDuplication(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDXGIOutputDuplication {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDXGIOutputDuplication {
     #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
     pub unsafe fn SetPrivateData(&self, name: *const ::windows::core::GUID, datasize: u32, pdata: *const ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -9673,11 +9737,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDXGIObject> for &'a IDXGIOutputDuplicat
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDXGIOutputDuplication {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDXGIOutputDuplication {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9724,6 +9783,11 @@ pub struct IDXGIOutputDuplication_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
 #[repr(transparent)]
 pub struct IDXGIResource(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDXGIResource {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDXGIResource {
     #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
     pub unsafe fn SetPrivateData(&self, name: *const ::windows::core::GUID, datasize: u32, pdata: *const ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -9828,11 +9892,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDXGIDeviceSubObject> for &'a IDXGIResou
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDXGIResource {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDXGIResource {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9863,6 +9922,11 @@ pub struct IDXGIResource_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
 #[repr(transparent)]
 pub struct IDXGIResource1(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDXGIResource1 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDXGIResource1 {
     #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
     pub unsafe fn SetPrivateData(&self, name: *const ::windows::core::GUID, datasize: u32, pdata: *const ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -9998,11 +10062,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDXGIResource> for &'a IDXGIResource1 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDXGIResource1 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDXGIResource1 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10031,6 +10090,11 @@ pub struct IDXGIResource1_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
 #[repr(transparent)]
 pub struct IDXGISurface(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDXGISurface {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDXGISurface {
     #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
     pub unsafe fn SetPrivateData(&self, name: *const ::windows::core::GUID, datasize: u32, pdata: *const ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -10129,11 +10193,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDXGIDeviceSubObject> for &'a IDXGISurfa
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDXGISurface {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDXGISurface {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10163,6 +10222,11 @@ pub struct IDXGISurface_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
 #[repr(transparent)]
 pub struct IDXGISurface1(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDXGISurface1 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDXGISurface1 {
     #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
     pub unsafe fn SetPrivateData(&self, name: *const ::windows::core::GUID, datasize: u32, pdata: *const ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -10292,11 +10356,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDXGISurface> for &'a IDXGISurface1 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDXGISurface1 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDXGISurface1 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10328,6 +10387,11 @@ pub struct IDXGISurface1_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
 #[repr(transparent)]
 pub struct IDXGISurface2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDXGISurface2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDXGISurface2 {
     #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
     pub unsafe fn SetPrivateData(&self, name: *const ::windows::core::GUID, datasize: u32, pdata: *const ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -10481,11 +10545,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDXGISurface1> for &'a IDXGISurface2 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDXGISurface2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDXGISurface2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10510,6 +10569,11 @@ pub struct IDXGISurface2_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
 #[repr(transparent)]
 pub struct IDXGISwapChain(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDXGISwapChain {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDXGISwapChain {
     #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
     pub unsafe fn SetPrivateData(&self, name: *const ::windows::core::GUID, datasize: u32, pdata: *const ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -10644,11 +10708,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDXGIDeviceSubObject> for &'a IDXGISwapC
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDXGISwapChain {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDXGISwapChain {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10697,6 +10756,11 @@ pub struct IDXGISwapChain_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
 #[repr(transparent)]
 pub struct IDXGISwapChain1(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDXGISwapChain1 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDXGISwapChain1 {
     #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
     pub unsafe fn SetPrivateData(&self, name: *const ::windows::core::GUID, datasize: u32, pdata: *const ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -10909,11 +10973,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDXGISwapChain> for &'a IDXGISwapChain1 
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDXGISwapChain1 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDXGISwapChain1 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10969,6 +11028,11 @@ pub struct IDXGISwapChain1_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
 #[repr(transparent)]
 pub struct IDXGISwapChain2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDXGISwapChain2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDXGISwapChain2 {
     #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
     pub unsafe fn SetPrivateData(&self, name: *const ::windows::core::GUID, datasize: u32, pdata: *const ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -11232,11 +11296,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDXGISwapChain1> for &'a IDXGISwapChain2
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDXGISwapChain2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDXGISwapChain2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11270,6 +11329,11 @@ pub struct IDXGISwapChain2_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
 #[repr(transparent)]
 pub struct IDXGISwapChain3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDXGISwapChain3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDXGISwapChain3 {
     #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
     pub unsafe fn SetPrivateData(&self, name: *const ::windows::core::GUID, datasize: u32, pdata: *const ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -11573,11 +11637,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDXGISwapChain2> for &'a IDXGISwapChain3
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDXGISwapChain3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDXGISwapChain3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11614,6 +11673,11 @@ pub struct IDXGISwapChain3_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
 #[repr(transparent)]
 pub struct IDXGISwapChain4(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDXGISwapChain4 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDXGISwapChain4 {
     #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
     pub unsafe fn SetPrivateData(&self, name: *const ::windows::core::GUID, datasize: u32, pdata: *const ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -11941,11 +12005,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDXGISwapChain3> for &'a IDXGISwapChain4
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDXGISwapChain4 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDXGISwapChain4 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11970,6 +12029,11 @@ pub struct IDXGISwapChain4_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
 #[repr(transparent)]
 pub struct IDXGISwapChainMedia(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDXGISwapChainMedia {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDXGISwapChainMedia {
     #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
     pub unsafe fn GetFrameStatisticsMedia(&self) -> ::windows::core::Result<DXGI_FRAME_STATISTICS_MEDIA> {
@@ -12005,11 +12069,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDXGI
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDXGISwapChainMedia {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDXGISwapChainMedia {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12036,6 +12095,11 @@ pub struct IDXGISwapChainMedia_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
 #[repr(transparent)]
 pub struct IDXGraphicsAnalysis(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDXGraphicsAnalysis {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDXGraphicsAnalysis {
     #[doc = "*Required features: `\"Win32_Graphics_Dxgi\"`*"]
     pub unsafe fn BeginCapture(&self) {
@@ -12064,11 +12128,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IDXGraphi
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDXGraphicsAnalysis {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IDXGraphicsAnalysis {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IDXGraphicsAnalysis {

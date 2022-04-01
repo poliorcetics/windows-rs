@@ -170,6 +170,7 @@ impl ::core::fmt::Debug for MapiFileDesc {
 }
 unsafe impl ::windows::core::Abi for MapiFileDesc {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MapiFileDesc {
     fn eq(&self, other: &Self) -> bool {
@@ -205,6 +206,7 @@ impl ::core::fmt::Debug for MapiFileDescW {
 }
 unsafe impl ::windows::core::Abi for MapiFileDescW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MapiFileDescW {
     fn eq(&self, other: &Self) -> bool {
@@ -239,6 +241,7 @@ impl ::core::fmt::Debug for MapiFileTagExt {
 }
 unsafe impl ::windows::core::Abi for MapiFileTagExt {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MapiFileTagExt {
     fn eq(&self, other: &Self) -> bool {
@@ -293,6 +296,7 @@ impl ::core::fmt::Debug for MapiMessage {
 }
 unsafe impl ::windows::core::Abi for MapiMessage {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MapiMessage {
     fn eq(&self, other: &Self) -> bool {
@@ -347,6 +351,7 @@ impl ::core::fmt::Debug for MapiMessageW {
 }
 unsafe impl ::windows::core::Abi for MapiMessageW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MapiMessageW {
     fn eq(&self, other: &Self) -> bool {
@@ -382,6 +387,7 @@ impl ::core::fmt::Debug for MapiRecipDesc {
 }
 unsafe impl ::windows::core::Abi for MapiRecipDesc {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MapiRecipDesc {
     fn eq(&self, other: &Self) -> bool {
@@ -417,6 +423,7 @@ impl ::core::fmt::Debug for MapiRecipDescW {
 }
 unsafe impl ::windows::core::Abi for MapiRecipDescW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MapiRecipDescW {
     fn eq(&self, other: &Self) -> bool {

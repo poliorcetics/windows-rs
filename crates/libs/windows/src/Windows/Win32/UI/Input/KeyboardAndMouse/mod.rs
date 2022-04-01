@@ -32,6 +32,7 @@ impl ::core::default::Default for ACTIVATE_KEYBOARD_LAYOUT_FLAGS {
 }
 unsafe impl ::windows::core::Abi for ACTIVATE_KEYBOARD_LAYOUT_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ACTIVATE_KEYBOARD_LAYOUT_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -103,6 +104,7 @@ impl ::core::fmt::Debug for DEADKEY {
 }
 unsafe impl ::windows::core::Abi for DEADKEY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DEADKEY {
     fn eq(&self, other: &Self) -> bool {
@@ -192,6 +194,7 @@ impl ::core::default::Default for GET_MOUSE_MOVE_POINTS_EX_RESOLUTION {
 }
 unsafe impl ::windows::core::Abi for GET_MOUSE_MOVE_POINTS_EX_RESOLUTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GET_MOUSE_MOVE_POINTS_EX_RESOLUTION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -471,6 +474,7 @@ impl ::core::fmt::Debug for HARDWAREINPUT {
 }
 unsafe impl ::windows::core::Abi for HARDWAREINPUT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HARDWAREINPUT {
     fn eq(&self, other: &Self) -> bool {
@@ -512,6 +516,7 @@ impl ::core::default::Default for HOT_KEY_MODIFIERS {
 }
 unsafe impl ::windows::core::Abi for HOT_KEY_MODIFIERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HOT_KEY_MODIFIERS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -560,6 +565,7 @@ impl ::core::clone::Clone for INPUT {
 }
 unsafe impl ::windows::core::Abi for INPUT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for INPUT {
     fn eq(&self, other: &Self) -> bool {
@@ -587,6 +593,7 @@ impl ::core::clone::Clone for INPUT_0 {
 }
 unsafe impl ::windows::core::Abi for INPUT_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for INPUT_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -622,6 +629,7 @@ impl ::core::default::Default for INPUT_TYPE {
 }
 unsafe impl ::windows::core::Abi for INPUT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for INPUT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -723,6 +731,7 @@ impl ::core::fmt::Debug for KBDTABLE_DESC {
 }
 unsafe impl ::windows::core::Abi for KBDTABLE_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KBDTABLE_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -754,6 +763,7 @@ impl ::core::fmt::Debug for KBDTABLE_MULTI {
 }
 unsafe impl ::windows::core::Abi for KBDTABLE_MULTI {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KBDTABLE_MULTI {
     fn eq(&self, other: &Self) -> bool {
@@ -790,6 +800,7 @@ impl ::core::fmt::Debug for KBD_TYPE_INFO {
 }
 unsafe impl ::windows::core::Abi for KBD_TYPE_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KBD_TYPE_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -826,6 +837,7 @@ impl ::core::fmt::Debug for KEYBDINPUT {
 }
 unsafe impl ::windows::core::Abi for KEYBDINPUT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KEYBDINPUT {
     fn eq(&self, other: &Self) -> bool {
@@ -863,6 +875,7 @@ impl ::core::default::Default for KEYBD_EVENT_FLAGS {
 }
 unsafe impl ::windows::core::Abi for KEYBD_EVENT_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KEYBD_EVENT_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -932,6 +945,7 @@ impl ::core::fmt::Debug for LASTINPUTINFO {
 }
 unsafe impl ::windows::core::Abi for LASTINPUTINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for LASTINPUTINFO {
     fn eq(&self, other: &Self) -> bool {
@@ -964,6 +978,7 @@ impl ::core::fmt::Debug for LIGATURE1 {
 }
 unsafe impl ::windows::core::Abi for LIGATURE1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for LIGATURE1 {
     fn eq(&self, other: &Self) -> bool {
@@ -996,6 +1011,7 @@ impl ::core::fmt::Debug for LIGATURE2 {
 }
 unsafe impl ::windows::core::Abi for LIGATURE2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for LIGATURE2 {
     fn eq(&self, other: &Self) -> bool {
@@ -1028,6 +1044,7 @@ impl ::core::fmt::Debug for LIGATURE3 {
 }
 unsafe impl ::windows::core::Abi for LIGATURE3 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for LIGATURE3 {
     fn eq(&self, other: &Self) -> bool {
@@ -1060,6 +1077,7 @@ impl ::core::fmt::Debug for LIGATURE4 {
 }
 unsafe impl ::windows::core::Abi for LIGATURE4 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for LIGATURE4 {
     fn eq(&self, other: &Self) -> bool {
@@ -1092,6 +1110,7 @@ impl ::core::fmt::Debug for LIGATURE5 {
 }
 unsafe impl ::windows::core::Abi for LIGATURE5 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for LIGATURE5 {
     fn eq(&self, other: &Self) -> bool {
@@ -1178,6 +1197,7 @@ impl ::core::fmt::Debug for MODIFIERS {
 }
 unsafe impl ::windows::core::Abi for MODIFIERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MODIFIERS {
     fn eq(&self, other: &Self) -> bool {
@@ -1213,6 +1233,7 @@ impl ::core::fmt::Debug for MOUSEINPUT {
 }
 unsafe impl ::windows::core::Abi for MOUSEINPUT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MOUSEINPUT {
     fn eq(&self, other: &Self) -> bool {
@@ -1246,6 +1267,7 @@ impl ::core::fmt::Debug for MOUSEMOVEPOINT {
 }
 unsafe impl ::windows::core::Abi for MOUSEMOVEPOINT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MOUSEMOVEPOINT {
     fn eq(&self, other: &Self) -> bool {
@@ -1303,6 +1325,7 @@ impl ::core::default::Default for MOUSE_EVENT_FLAGS {
 }
 unsafe impl ::windows::core::Abi for MOUSE_EVENT_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MOUSE_EVENT_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1641,6 +1664,7 @@ impl ::core::fmt::Debug for TRACKMOUSEEVENT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for TRACKMOUSEEVENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for TRACKMOUSEEVENT {
@@ -1683,6 +1707,7 @@ impl ::core::default::Default for TRACKMOUSEEVENT_FLAGS {
 }
 unsafe impl ::windows::core::Abi for TRACKMOUSEEVENT_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TRACKMOUSEEVENT_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2299,6 +2324,7 @@ impl ::core::default::Default for VIRTUAL_KEY {
 }
 unsafe impl ::windows::core::Abi for VIRTUAL_KEY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VIRTUAL_KEY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2356,6 +2382,7 @@ impl ::core::fmt::Debug for VK_TO_BIT {
 }
 unsafe impl ::windows::core::Abi for VK_TO_BIT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VK_TO_BIT {
     fn eq(&self, other: &Self) -> bool {
@@ -2388,6 +2415,7 @@ impl ::core::fmt::Debug for VK_TO_WCHARS1 {
 }
 unsafe impl ::windows::core::Abi for VK_TO_WCHARS1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VK_TO_WCHARS1 {
     fn eq(&self, other: &Self) -> bool {
@@ -2420,6 +2448,7 @@ impl ::core::fmt::Debug for VK_TO_WCHARS10 {
 }
 unsafe impl ::windows::core::Abi for VK_TO_WCHARS10 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VK_TO_WCHARS10 {
     fn eq(&self, other: &Self) -> bool {
@@ -2452,6 +2481,7 @@ impl ::core::fmt::Debug for VK_TO_WCHARS2 {
 }
 unsafe impl ::windows::core::Abi for VK_TO_WCHARS2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VK_TO_WCHARS2 {
     fn eq(&self, other: &Self) -> bool {
@@ -2484,6 +2514,7 @@ impl ::core::fmt::Debug for VK_TO_WCHARS3 {
 }
 unsafe impl ::windows::core::Abi for VK_TO_WCHARS3 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VK_TO_WCHARS3 {
     fn eq(&self, other: &Self) -> bool {
@@ -2516,6 +2547,7 @@ impl ::core::fmt::Debug for VK_TO_WCHARS4 {
 }
 unsafe impl ::windows::core::Abi for VK_TO_WCHARS4 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VK_TO_WCHARS4 {
     fn eq(&self, other: &Self) -> bool {
@@ -2548,6 +2580,7 @@ impl ::core::fmt::Debug for VK_TO_WCHARS5 {
 }
 unsafe impl ::windows::core::Abi for VK_TO_WCHARS5 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VK_TO_WCHARS5 {
     fn eq(&self, other: &Self) -> bool {
@@ -2580,6 +2613,7 @@ impl ::core::fmt::Debug for VK_TO_WCHARS6 {
 }
 unsafe impl ::windows::core::Abi for VK_TO_WCHARS6 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VK_TO_WCHARS6 {
     fn eq(&self, other: &Self) -> bool {
@@ -2612,6 +2646,7 @@ impl ::core::fmt::Debug for VK_TO_WCHARS7 {
 }
 unsafe impl ::windows::core::Abi for VK_TO_WCHARS7 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VK_TO_WCHARS7 {
     fn eq(&self, other: &Self) -> bool {
@@ -2644,6 +2679,7 @@ impl ::core::fmt::Debug for VK_TO_WCHARS8 {
 }
 unsafe impl ::windows::core::Abi for VK_TO_WCHARS8 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VK_TO_WCHARS8 {
     fn eq(&self, other: &Self) -> bool {
@@ -2676,6 +2712,7 @@ impl ::core::fmt::Debug for VK_TO_WCHARS9 {
 }
 unsafe impl ::windows::core::Abi for VK_TO_WCHARS9 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VK_TO_WCHARS9 {
     fn eq(&self, other: &Self) -> bool {
@@ -2708,6 +2745,7 @@ impl ::core::fmt::Debug for VK_TO_WCHAR_TABLE {
 }
 unsafe impl ::windows::core::Abi for VK_TO_WCHAR_TABLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VK_TO_WCHAR_TABLE {
     fn eq(&self, other: &Self) -> bool {
@@ -2739,6 +2777,7 @@ impl ::core::fmt::Debug for VK_VSC {
 }
 unsafe impl ::windows::core::Abi for VK_VSC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VK_VSC {
     fn eq(&self, other: &Self) -> bool {
@@ -2772,6 +2811,7 @@ impl ::core::fmt::Debug for VSC_LPWSTR {
 }
 unsafe impl ::windows::core::Abi for VSC_LPWSTR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VSC_LPWSTR {
     fn eq(&self, other: &Self) -> bool {
@@ -2803,6 +2843,7 @@ impl ::core::fmt::Debug for VSC_VK {
 }
 unsafe impl ::windows::core::Abi for VSC_VK {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VSC_VK {
     fn eq(&self, other: &Self) -> bool {
@@ -2914,6 +2955,7 @@ impl ::core::fmt::Debug for _VK_FUNCTION_PARAM {
 }
 unsafe impl ::windows::core::Abi for _VK_FUNCTION_PARAM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for _VK_FUNCTION_PARAM {
     fn eq(&self, other: &Self) -> bool {
@@ -2949,6 +2991,7 @@ impl ::core::fmt::Debug for _VK_TO_FUNCTION_TABLE {
 }
 unsafe impl ::windows::core::Abi for _VK_TO_FUNCTION_TABLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for _VK_TO_FUNCTION_TABLE {
     fn eq(&self, other: &Self) -> bool {
@@ -3039,6 +3082,7 @@ impl ::core::fmt::Debug for tagKbdLayer {
 }
 unsafe impl ::windows::core::Abi for tagKbdLayer {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for tagKbdLayer {
     fn eq(&self, other: &Self) -> bool {
@@ -3074,6 +3118,7 @@ impl ::core::fmt::Debug for tagKbdNlsLayer {
 }
 unsafe impl ::windows::core::Abi for tagKbdNlsLayer {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for tagKbdNlsLayer {
     fn eq(&self, other: &Self) -> bool {

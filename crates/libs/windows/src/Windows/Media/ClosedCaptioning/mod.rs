@@ -27,6 +27,7 @@ impl ::core::default::Default for ClosedCaptionColor {
 }
 unsafe impl ::windows::core::Abi for ClosedCaptionColor {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ClosedCaptionColor {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -35,7 +36,6 @@ impl ::core::fmt::Debug for ClosedCaptionColor {
 }
 unsafe impl ::windows::core::RuntimeType for ClosedCaptionColor {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Media.ClosedCaptioning.ClosedCaptionColor;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -65,6 +65,7 @@ impl ::core::default::Default for ClosedCaptionEdgeEffect {
 }
 unsafe impl ::windows::core::Abi for ClosedCaptionEdgeEffect {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ClosedCaptionEdgeEffect {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -73,7 +74,6 @@ impl ::core::fmt::Debug for ClosedCaptionEdgeEffect {
 }
 unsafe impl ::windows::core::RuntimeType for ClosedCaptionEdgeEffect {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Media.ClosedCaptioning.ClosedCaptionEdgeEffect;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -102,6 +102,7 @@ impl ::core::default::Default for ClosedCaptionOpacity {
 }
 unsafe impl ::windows::core::Abi for ClosedCaptionOpacity {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ClosedCaptionOpacity {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -110,7 +111,6 @@ impl ::core::fmt::Debug for ClosedCaptionOpacity {
 }
 unsafe impl ::windows::core::RuntimeType for ClosedCaptionOpacity {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Media.ClosedCaptioning.ClosedCaptionOpacity;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -238,6 +238,7 @@ impl ::core::default::Default for ClosedCaptionSize {
 }
 unsafe impl ::windows::core::Abi for ClosedCaptionSize {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ClosedCaptionSize {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -246,7 +247,6 @@ impl ::core::fmt::Debug for ClosedCaptionSize {
 }
 unsafe impl ::windows::core::RuntimeType for ClosedCaptionSize {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Media.ClosedCaptioning.ClosedCaptionSize;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -278,6 +278,7 @@ impl ::core::default::Default for ClosedCaptionStyle {
 }
 unsafe impl ::windows::core::Abi for ClosedCaptionStyle {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ClosedCaptionStyle {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -286,7 +287,6 @@ impl ::core::fmt::Debug for ClosedCaptionStyle {
 }
 unsafe impl ::windows::core::RuntimeType for ClosedCaptionStyle {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Media.ClosedCaptioning.ClosedCaptionStyle;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -294,6 +294,11 @@ unsafe impl ::windows::core::RuntimeType for ClosedCaptionStyle {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IClosedCaptionPropertiesStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IClosedCaptionPropertiesStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IClosedCaptionPropertiesStatics {
     type Vtable = IClosedCaptionPropertiesStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x10aa1f84_cc30_4141_b503_5272289e0c20);

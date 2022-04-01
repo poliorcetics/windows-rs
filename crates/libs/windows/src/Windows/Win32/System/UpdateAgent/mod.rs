@@ -22,6 +22,7 @@ impl ::core::default::Default for AddServiceFlag {
 }
 unsafe impl ::windows::core::Abi for AddServiceFlag {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AddServiceFlag {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -51,6 +52,7 @@ impl ::core::default::Default for AutoDownloadMode {
 }
 unsafe impl ::windows::core::Abi for AutoDownloadMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AutoDownloadMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -82,6 +84,7 @@ impl ::core::default::Default for AutoSelectionMode {
 }
 unsafe impl ::windows::core::Abi for AutoSelectionMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AutoSelectionMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -116,6 +119,7 @@ impl ::core::default::Default for AutomaticUpdatesNotificationLevel {
 }
 unsafe impl ::windows::core::Abi for AutomaticUpdatesNotificationLevel {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AutomaticUpdatesNotificationLevel {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -149,6 +153,7 @@ impl ::core::default::Default for AutomaticUpdatesPermissionType {
 }
 unsafe impl ::windows::core::Abi for AutomaticUpdatesPermissionType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AutomaticUpdatesPermissionType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -188,6 +193,7 @@ impl ::core::default::Default for AutomaticUpdatesScheduledInstallationDay {
 }
 unsafe impl ::windows::core::Abi for AutomaticUpdatesScheduledInstallationDay {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AutomaticUpdatesScheduledInstallationDay {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -215,6 +221,7 @@ impl ::core::default::Default for AutomaticUpdatesUserType {
 }
 unsafe impl ::windows::core::Abi for AutomaticUpdatesUserType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AutomaticUpdatesUserType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -248,6 +255,7 @@ impl ::core::default::Default for DeploymentAction {
 }
 unsafe impl ::windows::core::Abi for DeploymentAction {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DeploymentAction {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -277,6 +285,7 @@ impl ::core::default::Default for DownloadPhase {
 }
 unsafe impl ::windows::core::Abi for DownloadPhase {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DownloadPhase {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -308,6 +317,7 @@ impl ::core::default::Default for DownloadPriority {
 }
 unsafe impl ::windows::core::Abi for DownloadPriority {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DownloadPriority {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -318,6 +328,12 @@ impl ::core::fmt::Debug for DownloadPriority {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IAutomaticUpdates(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IAutomaticUpdates {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IAutomaticUpdates {
     #[doc = "*Required features: `\"Win32_System_UpdateAgent\"`*"]
@@ -401,12 +417,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IAutomati
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IAutomaticUpdates {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IAutomaticUpdates {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -445,6 +455,12 @@ pub struct IAutomaticUpdates_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IAutomaticUpdates2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IAutomaticUpdates2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IAutomaticUpdates2 {
     #[doc = "*Required features: `\"Win32_System_UpdateAgent\"`*"]
@@ -558,12 +574,6 @@ impl<'a> ::windows::core::IntoParam<'a, IAutomaticUpdates> for &'a IAutomaticUpd
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IAutomaticUpdates2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IAutomaticUpdates2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -596,6 +606,12 @@ pub struct IAutomaticUpdates2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IAutomaticUpdatesResults(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IAutomaticUpdatesResults {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IAutomaticUpdatesResults {
     #[doc = "*Required features: `\"Win32_System_UpdateAgent\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
@@ -660,12 +676,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IAutomati
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IAutomaticUpdatesResults {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IAutomaticUpdatesResults {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -702,6 +712,12 @@ pub struct IAutomaticUpdatesResults_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IAutomaticUpdatesSettings(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IAutomaticUpdatesSettings {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IAutomaticUpdatesSettings {
     #[doc = "*Required features: `\"Win32_System_UpdateAgent\"`*"]
@@ -799,12 +815,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IAutomati
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IAutomaticUpdatesSettings {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IAutomaticUpdatesSettings {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -843,6 +853,12 @@ pub struct IAutomaticUpdatesSettings_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IAutomaticUpdatesSettings2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IAutomaticUpdatesSettings2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IAutomaticUpdatesSettings2 {
     #[doc = "*Required features: `\"Win32_System_UpdateAgent\"`*"]
@@ -978,12 +994,6 @@ impl<'a> ::windows::core::IntoParam<'a, IAutomaticUpdatesSettings> for &'a IAuto
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IAutomaticUpdatesSettings2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IAutomaticUpdatesSettings2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1015,6 +1025,12 @@ pub struct IAutomaticUpdatesSettings2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IAutomaticUpdatesSettings3(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IAutomaticUpdatesSettings3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IAutomaticUpdatesSettings3 {
     #[doc = "*Required features: `\"Win32_System_UpdateAgent\"`*"]
@@ -1192,12 +1208,6 @@ impl<'a> ::windows::core::IntoParam<'a, IAutomaticUpdatesSettings2> for &'a IAut
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IAutomaticUpdatesSettings3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IAutomaticUpdatesSettings3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1230,6 +1240,12 @@ pub struct IAutomaticUpdatesSettings3_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ICategory(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ICategory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ICategory {
     #[doc = "*Required features: `\"Win32_System_UpdateAgent\"`, `\"Win32_Foundation\"`*"]
@@ -1335,12 +1351,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a ICategory
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ICategory {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ICategory {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1402,6 +1412,12 @@ pub struct ICategory_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ICategoryCollection(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ICategoryCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ICategoryCollection {
     #[doc = "*Required features: `\"Win32_System_UpdateAgent\"`, `\"Win32_System_Com\"`*"]
@@ -1470,12 +1486,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a ICategory
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ICategoryCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ICategoryCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1509,6 +1519,11 @@ pub struct ICategoryCollection_Vtbl {
 #[doc = "*Required features: `\"Win32_System_UpdateAgent\"`*"]
 #[repr(transparent)]
 pub struct IDownloadCompletedCallback(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDownloadCompletedCallback {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDownloadCompletedCallback {
     #[doc = "*Required features: `\"Win32_System_UpdateAgent\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -1534,11 +1549,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IDownload
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDownloadCompletedCallback {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IDownloadCompletedCallback {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IDownloadCompletedCallback {
@@ -1569,6 +1579,12 @@ pub struct IDownloadCompletedCallback_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IDownloadCompletedCallbackArgs(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IDownloadCompletedCallbackArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IDownloadCompletedCallbackArgs {}
 #[cfg(feature = "Win32_System_Com")]
@@ -1620,12 +1636,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IDownload
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IDownloadCompletedCallbackArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IDownloadCompletedCallbackArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1654,6 +1664,12 @@ pub struct IDownloadCompletedCallbackArgs_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IDownloadJob(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IDownloadJob {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IDownloadJob {
     #[doc = "*Required features: `\"Win32_System_UpdateAgent\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
@@ -1737,12 +1753,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IDownload
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IDownloadJob {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IDownloadJob {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1786,6 +1796,12 @@ pub struct IDownloadJob_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IDownloadProgress(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IDownloadProgress {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IDownloadProgress {
     #[doc = "*Required features: `\"Win32_System_UpdateAgent\"`, `\"Win32_Foundation\"`*"]
@@ -1888,12 +1904,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IDownload
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IDownloadProgress {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IDownloadProgress {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1945,6 +1955,11 @@ pub struct IDownloadProgress_Vtbl {
 #[doc = "*Required features: `\"Win32_System_UpdateAgent\"`*"]
 #[repr(transparent)]
 pub struct IDownloadProgressChangedCallback(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDownloadProgressChangedCallback {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDownloadProgressChangedCallback {
     #[doc = "*Required features: `\"Win32_System_UpdateAgent\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -1970,11 +1985,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IDownload
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDownloadProgressChangedCallback {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IDownloadProgressChangedCallback {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IDownloadProgressChangedCallback {
@@ -2005,6 +2015,12 @@ pub struct IDownloadProgressChangedCallback_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IDownloadProgressChangedCallbackArgs(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IDownloadProgressChangedCallbackArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IDownloadProgressChangedCallbackArgs {
     #[doc = "*Required features: `\"Win32_System_UpdateAgent\"`, `\"Win32_System_Com\"`*"]
@@ -2063,12 +2079,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IDownload
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IDownloadProgressChangedCallbackArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IDownloadProgressChangedCallbackArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2101,6 +2111,12 @@ pub struct IDownloadProgressChangedCallbackArgs_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IDownloadResult(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IDownloadResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IDownloadResult {
     #[doc = "*Required features: `\"Win32_System_UpdateAgent\"`*"]
@@ -2169,12 +2185,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IDownload
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IDownloadResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IDownloadResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2209,6 +2219,12 @@ pub struct IDownloadResult_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IImageInformation(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IImageInformation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IImageInformation {
     #[doc = "*Required features: `\"Win32_System_UpdateAgent\"`, `\"Win32_Foundation\"`*"]
@@ -2283,12 +2299,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IImageInf
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IImageInformation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IImageInformation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2327,6 +2337,12 @@ pub struct IImageInformation_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IInstallationAgent(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IInstallationAgent {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IInstallationAgent {
     #[doc = "*Required features: `\"Win32_System_UpdateAgent\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`*"]
@@ -2384,12 +2400,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IInstalla
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IInstallationAgent {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IInstallationAgent {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2422,6 +2432,12 @@ pub struct IInstallationAgent_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IInstallationBehavior(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IInstallationBehavior {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IInstallationBehavior {
     #[doc = "*Required features: `\"Win32_System_UpdateAgent\"`*"]
@@ -2494,12 +2510,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IInstalla
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IInstallationBehavior {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IInstallationBehavior {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2531,6 +2541,11 @@ pub struct IInstallationBehavior_Vtbl {
 #[doc = "*Required features: `\"Win32_System_UpdateAgent\"`*"]
 #[repr(transparent)]
 pub struct IInstallationCompletedCallback(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInstallationCompletedCallback {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IInstallationCompletedCallback {
     #[doc = "*Required features: `\"Win32_System_UpdateAgent\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -2556,11 +2571,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IInstalla
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IInstallationCompletedCallback {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IInstallationCompletedCallback {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IInstallationCompletedCallback {
@@ -2591,6 +2601,12 @@ pub struct IInstallationCompletedCallback_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IInstallationCompletedCallbackArgs(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IInstallationCompletedCallbackArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IInstallationCompletedCallbackArgs {}
 #[cfg(feature = "Win32_System_Com")]
@@ -2642,12 +2658,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IInstalla
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IInstallationCompletedCallbackArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IInstallationCompletedCallbackArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2676,6 +2686,12 @@ pub struct IInstallationCompletedCallbackArgs_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IInstallationJob(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IInstallationJob {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IInstallationJob {
     #[doc = "*Required features: `\"Win32_System_UpdateAgent\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
@@ -2759,12 +2775,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IInstalla
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IInstallationJob {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IInstallationJob {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2808,6 +2818,12 @@ pub struct IInstallationJob_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IInstallationProgress(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IInstallationProgress {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IInstallationProgress {
     #[doc = "*Required features: `\"Win32_System_UpdateAgent\"`*"]
@@ -2881,12 +2897,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IInstalla
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IInstallationProgress {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IInstallationProgress {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2921,6 +2931,11 @@ pub struct IInstallationProgress_Vtbl {
 #[doc = "*Required features: `\"Win32_System_UpdateAgent\"`*"]
 #[repr(transparent)]
 pub struct IInstallationProgressChangedCallback(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInstallationProgressChangedCallback {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IInstallationProgressChangedCallback {
     #[doc = "*Required features: `\"Win32_System_UpdateAgent\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -2946,11 +2961,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IInstalla
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IInstallationProgressChangedCallback {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IInstallationProgressChangedCallback {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IInstallationProgressChangedCallback {
@@ -2981,6 +2991,12 @@ pub struct IInstallationProgressChangedCallback_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IInstallationProgressChangedCallbackArgs(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IInstallationProgressChangedCallbackArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IInstallationProgressChangedCallbackArgs {
     #[doc = "*Required features: `\"Win32_System_UpdateAgent\"`, `\"Win32_System_Com\"`*"]
@@ -3039,12 +3055,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IInstalla
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IInstallationProgressChangedCallbackArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IInstallationProgressChangedCallbackArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3077,6 +3087,12 @@ pub struct IInstallationProgressChangedCallbackArgs_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IInstallationResult(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IInstallationResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IInstallationResult {
     #[doc = "*Required features: `\"Win32_System_UpdateAgent\"`*"]
@@ -3150,12 +3166,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IInstalla
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IInstallationResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IInstallationResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3191,6 +3201,12 @@ pub struct IInstallationResult_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IInvalidProductLicenseException(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IInvalidProductLicenseException {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IInvalidProductLicenseException {
     #[doc = "*Required features: `\"Win32_System_UpdateAgent\"`, `\"Win32_Foundation\"`*"]
@@ -3289,12 +3305,6 @@ impl<'a> ::windows::core::IntoParam<'a, IUpdateException> for &'a IInvalidProduc
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IInvalidProductLicenseException {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IInvalidProductLicenseException {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3326,6 +3336,11 @@ pub struct IInvalidProductLicenseException_Vtbl {
 #[doc = "*Required features: `\"Win32_System_UpdateAgent\"`*"]
 #[repr(transparent)]
 pub struct ISearchCompletedCallback(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISearchCompletedCallback {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISearchCompletedCallback {
     #[doc = "*Required features: `\"Win32_System_UpdateAgent\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -3351,11 +3366,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for ISearchCo
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISearchCompletedCallback {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for ISearchCompletedCallback {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for ISearchCompletedCallback {
@@ -3386,6 +3396,12 @@ pub struct ISearchCompletedCallback_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ISearchCompletedCallbackArgs(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ISearchCompletedCallbackArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ISearchCompletedCallbackArgs {}
 #[cfg(feature = "Win32_System_Com")]
@@ -3437,12 +3453,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a ISearchCo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ISearchCompletedCallbackArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ISearchCompletedCallbackArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3471,6 +3481,12 @@ pub struct ISearchCompletedCallbackArgs_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ISearchJob(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ISearchJob {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ISearchJob {
     #[doc = "*Required features: `\"Win32_System_UpdateAgent\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
@@ -3542,12 +3558,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a ISearchJo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ISearchJob {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ISearchJob {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3583,6 +3593,12 @@ pub struct ISearchJob_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ISearchResult(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ISearchResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ISearchResult {
     #[doc = "*Required features: `\"Win32_System_UpdateAgent\"`*"]
@@ -3658,12 +3674,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a ISearchRe
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ISearchResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ISearchResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3705,6 +3715,12 @@ pub struct ISearchResult_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IStringCollection(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IStringCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IStringCollection {
     #[doc = "*Required features: `\"Win32_System_UpdateAgent\"`, `\"Win32_Foundation\"`*"]
@@ -3808,12 +3824,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IStringCo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IStringCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IStringCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3867,6 +3877,12 @@ pub struct IStringCollection_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ISystemInformation(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ISystemInformation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ISystemInformation {
     #[doc = "*Required features: `\"Win32_System_UpdateAgent\"`, `\"Win32_Foundation\"`*"]
@@ -3930,12 +3946,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a ISystemIn
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ISystemInformation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ISystemInformation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3969,6 +3979,12 @@ pub struct ISystemInformation_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IUpdate(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IUpdate {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IUpdate {
     #[doc = "*Required features: `\"Win32_System_UpdateAgent\"`, `\"Win32_Foundation\"`*"]
@@ -4268,12 +4284,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IUpdate {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IUpdate {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IUpdate {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4422,6 +4432,12 @@ pub struct IUpdate_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IUpdate2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IUpdate2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IUpdate2 {
     #[doc = "*Required features: `\"Win32_System_UpdateAgent\"`, `\"Win32_Foundation\"`*"]
@@ -4766,12 +4782,6 @@ impl<'a> ::windows::core::IntoParam<'a, IUpdate> for &'a IUpdate2 {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IUpdate2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IUpdate2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4810,6 +4820,12 @@ pub struct IUpdate2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IUpdate3(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IUpdate3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IUpdate3 {
     #[doc = "*Required features: `\"Win32_System_UpdateAgent\"`, `\"Win32_Foundation\"`*"]
@@ -5183,12 +5199,6 @@ impl<'a> ::windows::core::IntoParam<'a, IUpdate2> for &'a IUpdate3 {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IUpdate3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IUpdate3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5218,6 +5228,12 @@ pub struct IUpdate3_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IUpdate4(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IUpdate4 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IUpdate4 {
     #[doc = "*Required features: `\"Win32_System_UpdateAgent\"`, `\"Win32_Foundation\"`*"]
@@ -5620,12 +5636,6 @@ impl<'a> ::windows::core::IntoParam<'a, IUpdate3> for &'a IUpdate4 {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IUpdate4 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IUpdate4 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5655,6 +5665,12 @@ pub struct IUpdate4_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IUpdate5(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IUpdate5 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IUpdate5 {
     #[doc = "*Required features: `\"Win32_System_UpdateAgent\"`, `\"Win32_Foundation\"`*"]
@@ -6091,12 +6107,6 @@ impl<'a> ::windows::core::IntoParam<'a, IUpdate4> for &'a IUpdate5 {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IUpdate5 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IUpdate5 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6127,6 +6137,12 @@ pub struct IUpdate5_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IUpdateCollection(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IUpdateCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IUpdateCollection {
     #[doc = "*Required features: `\"Win32_System_UpdateAgent\"`, `\"Win32_System_Com\"`*"]
@@ -6230,12 +6246,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IUpdateCo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IUpdateCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IUpdateCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6289,6 +6299,12 @@ pub struct IUpdateCollection_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IUpdateDownloadContent(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IUpdateDownloadContent {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IUpdateDownloadContent {
     #[doc = "*Required features: `\"Win32_System_UpdateAgent\"`, `\"Win32_Foundation\"`*"]
@@ -6347,12 +6363,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IUpdateDo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IUpdateDownloadContent {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IUpdateDownloadContent {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6385,6 +6395,12 @@ pub struct IUpdateDownloadContent_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IUpdateDownloadContent2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IUpdateDownloadContent2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IUpdateDownloadContent2 {
     #[doc = "*Required features: `\"Win32_System_UpdateAgent\"`, `\"Win32_Foundation\"`*"]
@@ -6472,12 +6488,6 @@ impl<'a> ::windows::core::IntoParam<'a, IUpdateDownloadContent> for &'a IUpdateD
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IUpdateDownloadContent2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IUpdateDownloadContent2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6507,6 +6517,12 @@ pub struct IUpdateDownloadContent2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IUpdateDownloadContentCollection(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IUpdateDownloadContentCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IUpdateDownloadContentCollection {
     #[doc = "*Required features: `\"Win32_System_UpdateAgent\"`, `\"Win32_System_Com\"`*"]
@@ -6575,12 +6591,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IUpdateDo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IUpdateDownloadContentCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IUpdateDownloadContentCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6615,6 +6625,12 @@ pub struct IUpdateDownloadContentCollection_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IUpdateDownloadResult(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IUpdateDownloadResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IUpdateDownloadResult {
     #[doc = "*Required features: `\"Win32_System_UpdateAgent\"`*"]
@@ -6677,12 +6693,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IUpdateDo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IUpdateDownloadResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IUpdateDownloadResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6713,6 +6723,12 @@ pub struct IUpdateDownloadResult_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IUpdateDownloader(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IUpdateDownloader {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IUpdateDownloader {
     #[doc = "*Required features: `\"Win32_System_UpdateAgent\"`, `\"Win32_Foundation\"`*"]
@@ -6823,12 +6839,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IUpdateDo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IUpdateDownloader {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IUpdateDownloader {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6889,6 +6899,12 @@ pub struct IUpdateDownloader_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IUpdateException(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IUpdateException {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IUpdateException {
     #[doc = "*Required features: `\"Win32_System_UpdateAgent\"`, `\"Win32_Foundation\"`*"]
@@ -6957,12 +6973,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IUpdateEx
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IUpdateException {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IUpdateException {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6997,6 +7007,12 @@ pub struct IUpdateException_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IUpdateExceptionCollection(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IUpdateExceptionCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IUpdateExceptionCollection {
     #[doc = "*Required features: `\"Win32_System_UpdateAgent\"`, `\"Win32_System_Com\"`*"]
@@ -7065,12 +7081,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IUpdateEx
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IUpdateExceptionCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IUpdateExceptionCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7105,6 +7115,12 @@ pub struct IUpdateExceptionCollection_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IUpdateHistoryEntry(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IUpdateHistoryEntry {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IUpdateHistoryEntry {
     #[doc = "*Required features: `\"Win32_System_UpdateAgent\"`*"]
@@ -7235,12 +7251,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IUpdateHi
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IUpdateHistoryEntry {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IUpdateHistoryEntry {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7307,6 +7317,12 @@ pub struct IUpdateHistoryEntry_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IUpdateHistoryEntry2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IUpdateHistoryEntry2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IUpdateHistoryEntry2 {
     #[doc = "*Required features: `\"Win32_System_UpdateAgent\"`*"]
@@ -7467,12 +7483,6 @@ impl<'a> ::windows::core::IntoParam<'a, IUpdateHistoryEntry> for &'a IUpdateHist
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IUpdateHistoryEntry2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IUpdateHistoryEntry2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7505,6 +7515,12 @@ pub struct IUpdateHistoryEntry2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IUpdateHistoryEntryCollection(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IUpdateHistoryEntryCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IUpdateHistoryEntryCollection {
     #[doc = "*Required features: `\"Win32_System_UpdateAgent\"`, `\"Win32_System_Com\"`*"]
@@ -7573,12 +7589,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IUpdateHi
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IUpdateHistoryEntryCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IUpdateHistoryEntryCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7613,6 +7623,12 @@ pub struct IUpdateHistoryEntryCollection_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IUpdateIdentity(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IUpdateIdentity {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IUpdateIdentity {
     #[doc = "*Required features: `\"Win32_System_UpdateAgent\"`*"]
@@ -7676,12 +7692,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IUpdateId
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IUpdateIdentity {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IUpdateIdentity {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7715,6 +7725,12 @@ pub struct IUpdateIdentity_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IUpdateInstallationResult(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IUpdateInstallationResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IUpdateInstallationResult {
     #[doc = "*Required features: `\"Win32_System_UpdateAgent\"`*"]
@@ -7782,12 +7798,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IUpdateIn
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IUpdateInstallationResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IUpdateInstallationResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7819,6 +7829,12 @@ pub struct IUpdateInstallationResult_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IUpdateInstaller(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IUpdateInstaller {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IUpdateInstaller {
     #[doc = "*Required features: `\"Win32_System_UpdateAgent\"`, `\"Win32_Foundation\"`*"]
@@ -7983,12 +7999,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IUpdateIn
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IUpdateInstaller {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IUpdateInstaller {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8077,6 +8087,12 @@ pub struct IUpdateInstaller_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IUpdateInstaller2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IUpdateInstaller2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IUpdateInstaller2 {
     #[doc = "*Required features: `\"Win32_System_UpdateAgent\"`, `\"Win32_Foundation\"`*"]
@@ -8274,12 +8290,6 @@ impl<'a> ::windows::core::IntoParam<'a, IUpdateInstaller> for &'a IUpdateInstall
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IUpdateInstaller2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IUpdateInstaller2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8310,6 +8320,12 @@ pub struct IUpdateInstaller2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IUpdateInstaller3(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IUpdateInstaller3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IUpdateInstaller3 {
     #[doc = "*Required features: `\"Win32_System_UpdateAgent\"`, `\"Win32_Foundation\"`*"]
@@ -8540,12 +8556,6 @@ impl<'a> ::windows::core::IntoParam<'a, IUpdateInstaller2> for &'a IUpdateInstal
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IUpdateInstaller3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IUpdateInstaller3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8576,6 +8586,12 @@ pub struct IUpdateInstaller3_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IUpdateInstaller4(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IUpdateInstaller4 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IUpdateInstaller4 {
     #[doc = "*Required features: `\"Win32_System_UpdateAgent\"`, `\"Win32_Foundation\"`*"]
@@ -8834,12 +8850,6 @@ impl<'a> ::windows::core::IntoParam<'a, IUpdateInstaller3> for &'a IUpdateInstal
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IUpdateInstaller4 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IUpdateInstaller4 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8868,6 +8878,11 @@ pub struct IUpdateInstaller4_Vtbl {
 #[doc = "*Required features: `\"Win32_System_UpdateAgent\"`*"]
 #[repr(transparent)]
 pub struct IUpdateLockdown(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUpdateLockdown {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUpdateLockdown {
     #[doc = "*Required features: `\"Win32_System_UpdateAgent\"`*"]
     pub unsafe fn LockDown(&self, flags: i32) -> ::windows::core::Result<()> {
@@ -8892,11 +8907,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IUpdateLo
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUpdateLockdown {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IUpdateLockdown {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IUpdateLockdown {
@@ -8924,6 +8934,12 @@ pub struct IUpdateLockdown_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IUpdateSearcher(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IUpdateSearcher {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IUpdateSearcher {
     #[doc = "*Required features: `\"Win32_System_UpdateAgent\"`*"]
@@ -9069,12 +9085,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IUpdateSe
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IUpdateSearcher {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IUpdateSearcher {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9148,6 +9158,12 @@ pub struct IUpdateSearcher_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IUpdateSearcher2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IUpdateSearcher2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IUpdateSearcher2 {
     #[doc = "*Required features: `\"Win32_System_UpdateAgent\"`*"]
@@ -9326,12 +9342,6 @@ impl<'a> ::windows::core::IntoParam<'a, IUpdateSearcher> for &'a IUpdateSearcher
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IUpdateSearcher2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IUpdateSearcher2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9362,6 +9372,12 @@ pub struct IUpdateSearcher2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IUpdateSearcher3(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IUpdateSearcher3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IUpdateSearcher3 {
     #[doc = "*Required features: `\"Win32_System_UpdateAgent\"`*"]
@@ -9573,12 +9589,6 @@ impl<'a> ::windows::core::IntoParam<'a, IUpdateSearcher2> for &'a IUpdateSearche
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IUpdateSearcher3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IUpdateSearcher3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9609,6 +9619,12 @@ pub struct IUpdateSearcher3_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IUpdateService(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IUpdateService {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IUpdateService {
     #[doc = "*Required features: `\"Win32_System_UpdateAgent\"`, `\"Win32_Foundation\"`*"]
@@ -9732,12 +9748,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IUpdateSe
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IUpdateService {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IUpdateService {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9797,6 +9807,12 @@ pub struct IUpdateService_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IUpdateService2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IUpdateService2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IUpdateService2 {
     #[doc = "*Required features: `\"Win32_System_UpdateAgent\"`, `\"Win32_Foundation\"`*"]
@@ -9949,12 +9965,6 @@ impl<'a> ::windows::core::IntoParam<'a, IUpdateService> for &'a IUpdateService2 
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IUpdateService2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IUpdateService2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9984,6 +9994,12 @@ pub struct IUpdateService2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IUpdateServiceCollection(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IUpdateServiceCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IUpdateServiceCollection {
     #[doc = "*Required features: `\"Win32_System_UpdateAgent\"`, `\"Win32_System_Com\"`*"]
@@ -10052,12 +10068,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IUpdateSe
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IUpdateServiceCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IUpdateServiceCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10092,6 +10102,12 @@ pub struct IUpdateServiceCollection_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IUpdateServiceManager(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IUpdateServiceManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IUpdateServiceManager {
     #[doc = "*Required features: `\"Win32_System_UpdateAgent\"`, `\"Win32_System_Com\"`*"]
@@ -10182,12 +10198,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IUpdateSe
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IUpdateServiceManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IUpdateServiceManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10244,6 +10254,12 @@ pub struct IUpdateServiceManager_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IUpdateServiceManager2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IUpdateServiceManager2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IUpdateServiceManager2 {
     #[doc = "*Required features: `\"Win32_System_UpdateAgent\"`, `\"Win32_System_Com\"`*"]
@@ -10381,12 +10397,6 @@ impl<'a> ::windows::core::IntoParam<'a, IUpdateServiceManager> for &'a IUpdateSe
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IUpdateServiceManager2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IUpdateServiceManager2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10431,6 +10441,12 @@ pub struct IUpdateServiceManager2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IUpdateServiceRegistration(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IUpdateServiceRegistration {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IUpdateServiceRegistration {
     #[doc = "*Required features: `\"Win32_System_UpdateAgent\"`*"]
@@ -10505,12 +10521,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IUpdateSe
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IUpdateServiceRegistration {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IUpdateServiceRegistration {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10549,6 +10559,12 @@ pub struct IUpdateServiceRegistration_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IUpdateSession(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IUpdateSession {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IUpdateSession {
     #[doc = "*Required features: `\"Win32_System_UpdateAgent\"`, `\"Win32_Foundation\"`*"]
@@ -10646,12 +10662,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IUpdateSe
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IUpdateSession {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IUpdateSession {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10709,6 +10719,12 @@ pub struct IUpdateSession_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IUpdateSession2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IUpdateSession2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IUpdateSession2 {
     #[doc = "*Required features: `\"Win32_System_UpdateAgent\"`, `\"Win32_Foundation\"`*"]
@@ -10839,12 +10855,6 @@ impl<'a> ::windows::core::IntoParam<'a, IUpdateSession> for &'a IUpdateSession2 
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IUpdateSession2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IUpdateSession2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10875,6 +10885,12 @@ pub struct IUpdateSession2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IUpdateSession3(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IUpdateSession3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IUpdateSession3 {
     #[doc = "*Required features: `\"Win32_System_UpdateAgent\"`, `\"Win32_Foundation\"`*"]
@@ -11041,12 +11057,6 @@ impl<'a> ::windows::core::IntoParam<'a, IUpdateSession2> for &'a IUpdateSession3
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IUpdateSession3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IUpdateSession3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11083,6 +11093,12 @@ pub struct IUpdateSession3_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IWebProxy(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IWebProxy {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IWebProxy {
     #[doc = "*Required features: `\"Win32_System_UpdateAgent\"`, `\"Win32_Foundation\"`*"]
@@ -11206,12 +11222,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IWebProxy
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IWebProxy {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IWebProxy {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11281,6 +11291,12 @@ pub struct IWebProxy_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IWindowsDriverUpdate(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IWindowsDriverUpdate {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IWindowsDriverUpdate {
     #[doc = "*Required features: `\"Win32_System_UpdateAgent\"`, `\"Win32_Foundation\"`*"]
@@ -11649,12 +11665,6 @@ impl<'a> ::windows::core::IntoParam<'a, IUpdate> for &'a IWindowsDriverUpdate {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IWindowsDriverUpdate {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IWindowsDriverUpdate {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11706,6 +11716,12 @@ pub struct IWindowsDriverUpdate_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IWindowsDriverUpdate2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IWindowsDriverUpdate2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IWindowsDriverUpdate2 {
     #[doc = "*Required features: `\"Win32_System_UpdateAgent\"`, `\"Win32_Foundation\"`*"]
@@ -12119,12 +12135,6 @@ impl<'a> ::windows::core::IntoParam<'a, IWindowsDriverUpdate> for &'a IWindowsDr
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IWindowsDriverUpdate2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IWindowsDriverUpdate2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12163,6 +12173,12 @@ pub struct IWindowsDriverUpdate2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IWindowsDriverUpdate3(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IWindowsDriverUpdate3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IWindowsDriverUpdate3 {
     #[doc = "*Required features: `\"Win32_System_UpdateAgent\"`, `\"Win32_Foundation\"`*"]
@@ -12605,12 +12621,6 @@ impl<'a> ::windows::core::IntoParam<'a, IWindowsDriverUpdate2> for &'a IWindowsD
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IWindowsDriverUpdate3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IWindowsDriverUpdate3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12640,6 +12650,12 @@ pub struct IWindowsDriverUpdate3_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IWindowsDriverUpdate4(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IWindowsDriverUpdate4 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IWindowsDriverUpdate4 {
     #[doc = "*Required features: `\"Win32_System_UpdateAgent\"`, `\"Win32_Foundation\"`*"]
@@ -13117,12 +13133,6 @@ impl<'a> ::windows::core::IntoParam<'a, IWindowsDriverUpdate3> for &'a IWindowsD
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IWindowsDriverUpdate4 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IWindowsDriverUpdate4 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13156,6 +13166,12 @@ pub struct IWindowsDriverUpdate4_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IWindowsDriverUpdate5(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IWindowsDriverUpdate5 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IWindowsDriverUpdate5 {
     #[doc = "*Required features: `\"Win32_System_UpdateAgent\"`, `\"Win32_Foundation\"`*"]
@@ -13667,12 +13683,6 @@ impl<'a> ::windows::core::IntoParam<'a, IWindowsDriverUpdate4> for &'a IWindowsD
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IWindowsDriverUpdate5 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IWindowsDriverUpdate5 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13703,6 +13713,12 @@ pub struct IWindowsDriverUpdate5_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IWindowsDriverUpdateEntry(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IWindowsDriverUpdateEntry {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IWindowsDriverUpdateEntry {
     #[doc = "*Required features: `\"Win32_System_UpdateAgent\"`, `\"Win32_Foundation\"`*"]
@@ -13800,12 +13816,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IWindowsD
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IWindowsDriverUpdateEntry {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IWindowsDriverUpdateEntry {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13857,6 +13867,12 @@ pub struct IWindowsDriverUpdateEntry_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IWindowsDriverUpdateEntryCollection(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IWindowsDriverUpdateEntryCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IWindowsDriverUpdateEntryCollection {
     #[doc = "*Required features: `\"Win32_System_UpdateAgent\"`, `\"Win32_System_Com\"`*"]
@@ -13925,12 +13941,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IWindowsD
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IWindowsDriverUpdateEntryCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IWindowsDriverUpdateEntryCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13965,6 +13975,12 @@ pub struct IWindowsDriverUpdateEntryCollection_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IWindowsUpdateAgentInfo(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IWindowsUpdateAgentInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IWindowsUpdateAgentInfo {
     #[doc = "*Required features: `\"Win32_System_UpdateAgent\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
@@ -14023,12 +14039,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IWindowsU
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IWindowsUpdateAgentInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IWindowsUpdateAgentInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -14081,6 +14091,7 @@ impl ::core::default::Default for InstallationImpact {
 }
 unsafe impl ::windows::core::Abi for InstallationImpact {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for InstallationImpact {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14110,6 +14121,7 @@ impl ::core::default::Default for InstallationRebootBehavior {
 }
 unsafe impl ::windows::core::Abi for InstallationRebootBehavior {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for InstallationRebootBehavior {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14146,6 +14158,7 @@ impl ::core::default::Default for OperationResultCode {
 }
 unsafe impl ::windows::core::Abi for OperationResultCode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for OperationResultCode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14181,6 +14194,7 @@ impl ::core::default::Default for SearchScope {
 }
 unsafe impl ::windows::core::Abi for SearchScope {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SearchScope {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14212,6 +14226,7 @@ impl ::core::default::Default for ServerSelection {
 }
 unsafe impl ::windows::core::Abi for ServerSelection {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ServerSelection {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14249,6 +14264,7 @@ impl ::core::default::Default for UpdateExceptionContext {
 }
 unsafe impl ::windows::core::Abi for UpdateExceptionContext {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UpdateExceptionContext {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14275,6 +14291,7 @@ impl ::core::default::Default for UpdateLockdownOption {
 }
 unsafe impl ::windows::core::Abi for UpdateLockdownOption {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UpdateLockdownOption {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14302,6 +14319,7 @@ impl ::core::default::Default for UpdateOperation {
 }
 unsafe impl ::windows::core::Abi for UpdateOperation {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UpdateOperation {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14329,6 +14347,7 @@ impl ::core::default::Default for UpdateServiceOption {
 }
 unsafe impl ::windows::core::Abi for UpdateServiceOption {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UpdateServiceOption {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14358,6 +14377,7 @@ impl ::core::default::Default for UpdateServiceRegistrationState {
 }
 unsafe impl ::windows::core::Abi for UpdateServiceRegistrationState {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UpdateServiceRegistrationState {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14386,6 +14406,7 @@ impl ::core::default::Default for UpdateType {
 }
 unsafe impl ::windows::core::Abi for UpdateType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UpdateType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

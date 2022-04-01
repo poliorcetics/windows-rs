@@ -34,11 +34,6 @@ impl AppBroadcastingMonitor {
         unsafe { (::windows::core::Interface::vtable(this).RemoveIsCurrentAppBroadcastingChanged)(::core::mem::transmute_copy(this), token.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for AppBroadcastingMonitor {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AppBroadcastingMonitor {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -52,7 +47,6 @@ impl ::core::fmt::Debug for AppBroadcastingMonitor {
 }
 unsafe impl ::windows::core::RuntimeType for AppBroadcastingMonitor {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.AppBroadcasting.AppBroadcastingMonitor;{00f95a68-8907-48a0-b8ef-24d208137542})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -127,11 +121,6 @@ impl AppBroadcastingStatus {
         }
     }
 }
-impl ::core::clone::Clone for AppBroadcastingStatus {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AppBroadcastingStatus {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -145,7 +134,6 @@ impl ::core::fmt::Debug for AppBroadcastingStatus {
 }
 unsafe impl ::windows::core::RuntimeType for AppBroadcastingStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.AppBroadcasting.AppBroadcastingStatus;{1225e4df-03a1-42f8-8b80-c9228cd9cf2e})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -268,11 +256,6 @@ impl AppBroadcastingStatusDetails {
         }
     }
 }
-impl ::core::clone::Clone for AppBroadcastingStatusDetails {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AppBroadcastingStatusDetails {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -286,7 +269,6 @@ impl ::core::fmt::Debug for AppBroadcastingStatusDetails {
 }
 unsafe impl ::windows::core::RuntimeType for AppBroadcastingStatusDetails {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.AppBroadcasting.AppBroadcastingStatusDetails;{069dada4-b573-4e3c-8e19-1bafacd09713})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -378,11 +360,6 @@ impl AppBroadcastingUI {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for AppBroadcastingUI {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AppBroadcastingUI {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -396,7 +373,6 @@ impl ::core::fmt::Debug for AppBroadcastingUI {
 }
 unsafe impl ::windows::core::RuntimeType for AppBroadcastingUI {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.AppBroadcasting.AppBroadcastingUI;{e56f9f8f-ee99-4dca-a3c3-70af3db44f5f})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -453,6 +429,11 @@ unsafe impl ::core::marker::Sync for AppBroadcastingUI {}
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppBroadcastingMonitor(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppBroadcastingMonitor {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppBroadcastingMonitor {
     type Vtable = IAppBroadcastingMonitor_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x00f95a68_8907_48a0_b8ef_24d208137542);
@@ -474,6 +455,11 @@ pub struct IAppBroadcastingMonitor_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppBroadcastingStatus(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppBroadcastingStatus {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppBroadcastingStatus {
     type Vtable = IAppBroadcastingStatus_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1225e4df_03a1_42f8_8b80_c9228cd9cf2e);
@@ -488,6 +474,11 @@ pub struct IAppBroadcastingStatus_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppBroadcastingStatusDetails(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppBroadcastingStatusDetails {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppBroadcastingStatusDetails {
     type Vtable = IAppBroadcastingStatusDetails_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x069dada4_b573_4e3c_8e19_1bafacd09713);
@@ -508,6 +499,11 @@ pub struct IAppBroadcastingStatusDetails_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppBroadcastingUI(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppBroadcastingUI {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppBroadcastingUI {
     type Vtable = IAppBroadcastingUI_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe56f9f8f_ee99_4dca_a3c3_70af3db44f5f);
@@ -522,6 +518,11 @@ pub struct IAppBroadcastingUI_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppBroadcastingUIStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppBroadcastingUIStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppBroadcastingUIStatics {
     type Vtable = IAppBroadcastingUIStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x55a8a79d_23cb_4579_9c34_886fe02c045a);

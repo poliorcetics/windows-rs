@@ -32,6 +32,7 @@ impl ::core::default::Default for ACCEPT_SECURITY_CONTEXT_CONTEXT_REQ {
 }
 unsafe impl ::windows::core::Abi for ACCEPT_SECURITY_CONTEXT_CONTEXT_REQ {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ACCEPT_SECURITY_CONTEXT_CONTEXT_REQ {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -202,6 +203,7 @@ impl ::core::fmt::Debug for AUDIT_POLICY_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for AUDIT_POLICY_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for AUDIT_POLICY_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -796,6 +798,7 @@ impl ::core::fmt::Debug for CENTRAL_ACCESS_POLICY {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for CENTRAL_ACCESS_POLICY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for CENTRAL_ACCESS_POLICY {
@@ -843,6 +846,7 @@ impl ::core::fmt::Debug for CENTRAL_ACCESS_POLICY_ENTRY {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for CENTRAL_ACCESS_POLICY_ENTRY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for CENTRAL_ACCESS_POLICY_ENTRY {
@@ -893,6 +897,7 @@ impl ::core::fmt::Debug for CLEAR_BLOCK {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for CLEAR_BLOCK {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for CLEAR_BLOCK {
@@ -954,6 +959,7 @@ impl ::core::default::Default for CRED_FETCH {
 }
 unsafe impl ::windows::core::Abi for CRED_FETCH {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CRED_FETCH {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1092,6 +1098,7 @@ impl ::core::fmt::Debug for DOMAIN_PASSWORD_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for DOMAIN_PASSWORD_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOMAIN_PASSWORD_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -1133,6 +1140,7 @@ impl ::core::default::Default for DOMAIN_PASSWORD_PROPERTIES {
 }
 unsafe impl ::windows::core::Abi for DOMAIN_PASSWORD_PROPERTIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DOMAIN_PASSWORD_PROPERTIES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1254,6 +1262,7 @@ impl ::core::fmt::Debug for ENCRYPTED_CREDENTIALW {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Credentials"))]
 unsafe impl ::windows::core::Abi for ENCRYPTED_CREDENTIALW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Credentials"))]
 impl ::core::cmp::PartialEq for ENCRYPTED_CREDENTIALW {
@@ -1299,6 +1308,7 @@ impl ::core::default::Default for EXPORT_SECURITY_CONTEXT_FLAGS {
 }
 unsafe impl ::windows::core::Abi for EXPORT_SECURITY_CONTEXT_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EXPORT_SECURITY_CONTEXT_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1377,6 +1387,7 @@ impl ::core::default::Default for EXTENDED_NAME_FORMAT {
 }
 unsafe impl ::windows::core::Abi for EXTENDED_NAME_FORMAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EXTENDED_NAME_FORMAT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1542,6 +1553,11 @@ pub unsafe fn GetUserNameExW(nameformat: EXTENDED_NAME_FORMAT, lpnamebuffer: ::w
 #[doc = "*Required features: `\"Win32_Security_Authentication_Identity\"`*"]
 #[repr(transparent)]
 pub struct ICcgDomainAuthCredentials(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICcgDomainAuthCredentials {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ICcgDomainAuthCredentials {
     #[doc = "*Required features: `\"Win32_Security_Authentication_Identity\"`*"]
     pub unsafe fn GetPasswordCredentials<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, plugininput: Param0, domainname: *mut ::windows::core::PWSTR, username: *mut ::windows::core::PWSTR, password: *mut ::windows::core::PWSTR) -> ::windows::core::Result<()> {
@@ -1566,11 +1582,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for ICcgDomai
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ICcgDomainAuthCredentials {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for ICcgDomainAuthCredentials {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for ICcgDomainAuthCredentials {
@@ -1875,6 +1886,7 @@ impl ::core::fmt::Debug for KDC_PROXY_CACHE_ENTRY_DATA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KDC_PROXY_CACHE_ENTRY_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KDC_PROXY_CACHE_ENTRY_DATA {
@@ -1919,6 +1931,7 @@ impl ::core::default::Default for KERB_ADDRESS_TYPE {
 }
 unsafe impl ::windows::core::Abi for KERB_ADDRESS_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KERB_ADDRESS_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1952,6 +1965,7 @@ impl ::core::fmt::Debug for KERB_ADD_BINDING_CACHE_ENTRY_EX_REQUEST {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KERB_ADD_BINDING_CACHE_ENTRY_EX_REQUEST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KERB_ADD_BINDING_CACHE_ENTRY_EX_REQUEST {
@@ -1993,6 +2007,7 @@ impl ::core::fmt::Debug for KERB_ADD_BINDING_CACHE_ENTRY_REQUEST {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KERB_ADD_BINDING_CACHE_ENTRY_REQUEST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KERB_ADD_BINDING_CACHE_ENTRY_REQUEST {
@@ -2036,6 +2051,7 @@ impl ::core::fmt::Debug for KERB_ADD_CREDENTIALS_REQUEST {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KERB_ADD_CREDENTIALS_REQUEST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KERB_ADD_CREDENTIALS_REQUEST {
@@ -2076,6 +2092,7 @@ impl ::core::fmt::Debug for KERB_ADD_CREDENTIALS_REQUEST_EX {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KERB_ADD_CREDENTIALS_REQUEST_EX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KERB_ADD_CREDENTIALS_REQUEST_EX {
@@ -2111,6 +2128,7 @@ impl ::core::fmt::Debug for KERB_AUTH_DATA {
 }
 unsafe impl ::windows::core::Abi for KERB_AUTH_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KERB_AUTH_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -2153,6 +2171,7 @@ impl ::core::fmt::Debug for KERB_BINDING_CACHE_ENTRY_DATA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KERB_BINDING_CACHE_ENTRY_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KERB_BINDING_CACHE_ENTRY_DATA {
@@ -2187,6 +2206,7 @@ impl ::core::fmt::Debug for KERB_CERTIFICATE_HASHINFO {
 }
 unsafe impl ::windows::core::Abi for KERB_CERTIFICATE_HASHINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KERB_CERTIFICATE_HASHINFO {
     fn eq(&self, other: &Self) -> bool {
@@ -2218,6 +2238,7 @@ impl ::core::fmt::Debug for KERB_CERTIFICATE_INFO {
 }
 unsafe impl ::windows::core::Abi for KERB_CERTIFICATE_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KERB_CERTIFICATE_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -2249,6 +2270,7 @@ impl ::core::default::Default for KERB_CERTIFICATE_INFO_TYPE {
 }
 unsafe impl ::windows::core::Abi for KERB_CERTIFICATE_INFO_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KERB_CERTIFICATE_INFO_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2284,6 +2306,7 @@ impl ::core::fmt::Debug for KERB_CERTIFICATE_LOGON {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KERB_CERTIFICATE_LOGON {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KERB_CERTIFICATE_LOGON {
@@ -2331,6 +2354,7 @@ impl ::core::fmt::Debug for KERB_CERTIFICATE_S4U_LOGON {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KERB_CERTIFICATE_S4U_LOGON {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KERB_CERTIFICATE_S4U_LOGON {
@@ -2378,6 +2402,7 @@ impl ::core::fmt::Debug for KERB_CERTIFICATE_UNLOCK_LOGON {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KERB_CERTIFICATE_UNLOCK_LOGON {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KERB_CERTIFICATE_UNLOCK_LOGON {
@@ -2421,6 +2446,7 @@ impl ::core::fmt::Debug for KERB_CHANGEPASSWORD_REQUEST {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KERB_CHANGEPASSWORD_REQUEST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KERB_CHANGEPASSWORD_REQUEST {
@@ -2502,6 +2528,7 @@ impl ::core::fmt::Debug for KERB_CLEANUP_MACHINE_PKINIT_CREDS_REQUEST {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KERB_CLEANUP_MACHINE_PKINIT_CREDS_REQUEST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KERB_CLEANUP_MACHINE_PKINIT_CREDS_REQUEST {
@@ -2535,6 +2562,7 @@ impl ::core::fmt::Debug for KERB_CLOUD_KERBEROS_DEBUG_DATA_V0 {
 }
 unsafe impl ::windows::core::Abi for KERB_CLOUD_KERBEROS_DEBUG_DATA_V0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KERB_CLOUD_KERBEROS_DEBUG_DATA_V0 {
     fn eq(&self, other: &Self) -> bool {
@@ -2573,6 +2601,7 @@ impl ::core::fmt::Debug for KERB_CLOUD_KERBEROS_DEBUG_REQUEST {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KERB_CLOUD_KERBEROS_DEBUG_REQUEST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KERB_CLOUD_KERBEROS_DEBUG_REQUEST {
@@ -2609,6 +2638,7 @@ impl ::core::fmt::Debug for KERB_CLOUD_KERBEROS_DEBUG_RESPONSE {
 }
 unsafe impl ::windows::core::Abi for KERB_CLOUD_KERBEROS_DEBUG_RESPONSE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KERB_CLOUD_KERBEROS_DEBUG_RESPONSE {
     fn eq(&self, other: &Self) -> bool {
@@ -2641,6 +2671,7 @@ impl ::core::fmt::Debug for KERB_CRYPTO_KEY {
 }
 unsafe impl ::windows::core::Abi for KERB_CRYPTO_KEY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KERB_CRYPTO_KEY {
     fn eq(&self, other: &Self) -> bool {
@@ -2673,6 +2704,7 @@ impl ::core::fmt::Debug for KERB_CRYPTO_KEY32 {
 }
 unsafe impl ::windows::core::Abi for KERB_CRYPTO_KEY32 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KERB_CRYPTO_KEY32 {
     fn eq(&self, other: &Self) -> bool {
@@ -2714,6 +2746,7 @@ impl ::core::default::Default for KERB_CRYPTO_KEY_TYPE {
 }
 unsafe impl ::windows::core::Abi for KERB_CRYPTO_KEY_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KERB_CRYPTO_KEY_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2754,6 +2787,7 @@ impl ::core::fmt::Debug for KERB_DECRYPT_REQUEST {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KERB_DECRYPT_REQUEST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KERB_DECRYPT_REQUEST {
@@ -2787,6 +2821,7 @@ impl ::core::fmt::Debug for KERB_DECRYPT_RESPONSE {
 }
 unsafe impl ::windows::core::Abi for KERB_DECRYPT_RESPONSE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KERB_DECRYPT_RESPONSE {
     fn eq(&self, other: &Self) -> bool {
@@ -2890,6 +2925,7 @@ impl ::core::fmt::Debug for KERB_EXTERNAL_NAME {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KERB_EXTERNAL_NAME {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KERB_EXTERNAL_NAME {
@@ -2960,6 +2996,7 @@ impl ::core::fmt::Debug for KERB_EXTERNAL_TICKET {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KERB_EXTERNAL_TICKET {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KERB_EXTERNAL_TICKET {
@@ -3001,6 +3038,7 @@ impl ::core::fmt::Debug for KERB_INTERACTIVE_LOGON {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KERB_INTERACTIVE_LOGON {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KERB_INTERACTIVE_LOGON {
@@ -3071,6 +3109,7 @@ impl ::core::fmt::Debug for KERB_INTERACTIVE_PROFILE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KERB_INTERACTIVE_PROFILE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KERB_INTERACTIVE_PROFILE {
@@ -3110,6 +3149,7 @@ impl ::core::fmt::Debug for KERB_INTERACTIVE_UNLOCK_LOGON {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KERB_INTERACTIVE_UNLOCK_LOGON {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KERB_INTERACTIVE_UNLOCK_LOGON {
@@ -3172,6 +3212,7 @@ impl ::core::default::Default for KERB_LOGON_SUBMIT_TYPE {
 }
 unsafe impl ::windows::core::Abi for KERB_LOGON_SUBMIT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KERB_LOGON_SUBMIT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3198,6 +3239,7 @@ impl ::core::fmt::Debug for KERB_NET_ADDRESS {
 }
 unsafe impl ::windows::core::Abi for KERB_NET_ADDRESS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KERB_NET_ADDRESS {
     fn eq(&self, other: &Self) -> bool {
@@ -3229,6 +3271,7 @@ impl ::core::fmt::Debug for KERB_NET_ADDRESSES {
 }
 unsafe impl ::windows::core::Abi for KERB_NET_ADDRESSES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KERB_NET_ADDRESSES {
     fn eq(&self, other: &Self) -> bool {
@@ -3264,6 +3307,7 @@ impl ::core::default::Default for KERB_PROFILE_BUFFER_TYPE {
 }
 unsafe impl ::windows::core::Abi for KERB_PROFILE_BUFFER_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KERB_PROFILE_BUFFER_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3361,6 +3405,7 @@ impl ::core::default::Default for KERB_PROTOCOL_MESSAGE_TYPE {
 }
 unsafe impl ::windows::core::Abi for KERB_PROTOCOL_MESSAGE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KERB_PROTOCOL_MESSAGE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3387,6 +3432,7 @@ impl ::core::fmt::Debug for KERB_PURGE_BINDING_CACHE_REQUEST {
 }
 unsafe impl ::windows::core::Abi for KERB_PURGE_BINDING_CACHE_REQUEST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KERB_PURGE_BINDING_CACHE_REQUEST {
     fn eq(&self, other: &Self) -> bool {
@@ -3424,6 +3470,7 @@ impl ::core::fmt::Debug for KERB_PURGE_KDC_PROXY_CACHE_REQUEST {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KERB_PURGE_KDC_PROXY_CACHE_REQUEST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KERB_PURGE_KDC_PROXY_CACHE_REQUEST {
@@ -3458,6 +3505,7 @@ impl ::core::fmt::Debug for KERB_PURGE_KDC_PROXY_CACHE_RESPONSE {
 }
 unsafe impl ::windows::core::Abi for KERB_PURGE_KDC_PROXY_CACHE_RESPONSE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KERB_PURGE_KDC_PROXY_CACHE_RESPONSE {
     fn eq(&self, other: &Self) -> bool {
@@ -3496,6 +3544,7 @@ impl ::core::fmt::Debug for KERB_PURGE_TKT_CACHE_EX_REQUEST {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KERB_PURGE_TKT_CACHE_EX_REQUEST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KERB_PURGE_TKT_CACHE_EX_REQUEST {
@@ -3537,6 +3586,7 @@ impl ::core::fmt::Debug for KERB_PURGE_TKT_CACHE_REQUEST {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KERB_PURGE_TKT_CACHE_REQUEST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KERB_PURGE_TKT_CACHE_REQUEST {
@@ -3570,6 +3620,7 @@ impl ::core::fmt::Debug for KERB_QUERY_BINDING_CACHE_REQUEST {
 }
 unsafe impl ::windows::core::Abi for KERB_QUERY_BINDING_CACHE_REQUEST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KERB_QUERY_BINDING_CACHE_REQUEST {
     fn eq(&self, other: &Self) -> bool {
@@ -3607,6 +3658,7 @@ impl ::core::fmt::Debug for KERB_QUERY_BINDING_CACHE_RESPONSE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KERB_QUERY_BINDING_CACHE_RESPONSE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KERB_QUERY_BINDING_CACHE_RESPONSE {
@@ -3647,6 +3699,7 @@ impl ::core::fmt::Debug for KERB_QUERY_DOMAIN_EXTENDED_POLICIES_REQUEST {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KERB_QUERY_DOMAIN_EXTENDED_POLICIES_REQUEST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KERB_QUERY_DOMAIN_EXTENDED_POLICIES_REQUEST {
@@ -3683,6 +3736,7 @@ impl ::core::fmt::Debug for KERB_QUERY_DOMAIN_EXTENDED_POLICIES_RESPONSE {
 }
 unsafe impl ::windows::core::Abi for KERB_QUERY_DOMAIN_EXTENDED_POLICIES_RESPONSE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KERB_QUERY_DOMAIN_EXTENDED_POLICIES_RESPONSE {
     fn eq(&self, other: &Self) -> bool {
@@ -3722,6 +3776,7 @@ impl ::core::fmt::Debug for KERB_QUERY_KDC_PROXY_CACHE_REQUEST {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KERB_QUERY_KDC_PROXY_CACHE_REQUEST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KERB_QUERY_KDC_PROXY_CACHE_REQUEST {
@@ -3762,6 +3817,7 @@ impl ::core::fmt::Debug for KERB_QUERY_KDC_PROXY_CACHE_RESPONSE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KERB_QUERY_KDC_PROXY_CACHE_RESPONSE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KERB_QUERY_KDC_PROXY_CACHE_RESPONSE {
@@ -3802,6 +3858,7 @@ impl ::core::fmt::Debug for KERB_QUERY_S4U2PROXY_CACHE_REQUEST {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KERB_QUERY_S4U2PROXY_CACHE_REQUEST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KERB_QUERY_S4U2PROXY_CACHE_REQUEST {
@@ -3842,6 +3899,7 @@ impl ::core::fmt::Debug for KERB_QUERY_S4U2PROXY_CACHE_RESPONSE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KERB_QUERY_S4U2PROXY_CACHE_RESPONSE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KERB_QUERY_S4U2PROXY_CACHE_RESPONSE {
@@ -3882,6 +3940,7 @@ impl ::core::fmt::Debug for KERB_QUERY_TKT_CACHE_EX2_RESPONSE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KERB_QUERY_TKT_CACHE_EX2_RESPONSE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KERB_QUERY_TKT_CACHE_EX2_RESPONSE {
@@ -3922,6 +3981,7 @@ impl ::core::fmt::Debug for KERB_QUERY_TKT_CACHE_EX3_RESPONSE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KERB_QUERY_TKT_CACHE_EX3_RESPONSE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KERB_QUERY_TKT_CACHE_EX3_RESPONSE {
@@ -3962,6 +4022,7 @@ impl ::core::fmt::Debug for KERB_QUERY_TKT_CACHE_EX_RESPONSE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KERB_QUERY_TKT_CACHE_EX_RESPONSE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KERB_QUERY_TKT_CACHE_EX_RESPONSE {
@@ -4001,6 +4062,7 @@ impl ::core::fmt::Debug for KERB_QUERY_TKT_CACHE_REQUEST {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KERB_QUERY_TKT_CACHE_REQUEST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KERB_QUERY_TKT_CACHE_REQUEST {
@@ -4041,6 +4103,7 @@ impl ::core::fmt::Debug for KERB_QUERY_TKT_CACHE_RESPONSE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KERB_QUERY_TKT_CACHE_RESPONSE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KERB_QUERY_TKT_CACHE_RESPONSE {
@@ -4079,6 +4142,7 @@ impl ::core::fmt::Debug for KERB_REFRESH_POLICY_REQUEST {
 }
 unsafe impl ::windows::core::Abi for KERB_REFRESH_POLICY_REQUEST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KERB_REFRESH_POLICY_REQUEST {
     fn eq(&self, other: &Self) -> bool {
@@ -4110,6 +4174,7 @@ impl ::core::fmt::Debug for KERB_REFRESH_POLICY_RESPONSE {
 }
 unsafe impl ::windows::core::Abi for KERB_REFRESH_POLICY_RESPONSE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KERB_REFRESH_POLICY_RESPONSE {
     fn eq(&self, other: &Self) -> bool {
@@ -4152,6 +4217,7 @@ impl ::core::fmt::Debug for KERB_REFRESH_SCCRED_REQUEST {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KERB_REFRESH_SCCRED_REQUEST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KERB_REFRESH_SCCRED_REQUEST {
@@ -4190,6 +4256,7 @@ impl ::core::default::Default for KERB_REQUEST_FLAGS {
 }
 unsafe impl ::windows::core::Abi for KERB_REQUEST_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KERB_REQUEST_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4223,6 +4290,7 @@ impl ::core::fmt::Debug for KERB_RETRIEVE_KEY_TAB_REQUEST {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KERB_RETRIEVE_KEY_TAB_REQUEST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KERB_RETRIEVE_KEY_TAB_REQUEST {
@@ -4258,6 +4326,7 @@ impl ::core::fmt::Debug for KERB_RETRIEVE_KEY_TAB_RESPONSE {
 }
 unsafe impl ::windows::core::Abi for KERB_RETRIEVE_KEY_TAB_RESPONSE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KERB_RETRIEVE_KEY_TAB_RESPONSE {
     fn eq(&self, other: &Self) -> bool {
@@ -4315,6 +4384,7 @@ impl ::core::fmt::Debug for KERB_RETRIEVE_TKT_REQUEST {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Credentials"))]
 unsafe impl ::windows::core::Abi for KERB_RETRIEVE_TKT_REQUEST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Credentials"))]
 impl ::core::cmp::PartialEq for KERB_RETRIEVE_TKT_REQUEST {
@@ -4353,6 +4423,7 @@ impl ::core::fmt::Debug for KERB_RETRIEVE_TKT_RESPONSE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KERB_RETRIEVE_TKT_RESPONSE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KERB_RETRIEVE_TKT_RESPONSE {
@@ -4394,6 +4465,7 @@ impl ::core::fmt::Debug for KERB_S4U2PROXY_CACHE_ENTRY_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KERB_S4U2PROXY_CACHE_ENTRY_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KERB_S4U2PROXY_CACHE_ENTRY_INFO {
@@ -4440,6 +4512,7 @@ impl ::core::fmt::Debug for KERB_S4U2PROXY_CRED {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KERB_S4U2PROXY_CRED {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KERB_S4U2PROXY_CRED {
@@ -4483,6 +4556,7 @@ impl ::core::fmt::Debug for KERB_S4U_LOGON {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KERB_S4U_LOGON {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KERB_S4U_LOGON {
@@ -4549,6 +4623,7 @@ impl ::core::fmt::Debug for KERB_SETPASSWORD_EX_REQUEST {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Credentials"))]
 unsafe impl ::windows::core::Abi for KERB_SETPASSWORD_EX_REQUEST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Credentials"))]
 impl ::core::cmp::PartialEq for KERB_SETPASSWORD_EX_REQUEST {
@@ -4593,6 +4668,7 @@ impl ::core::fmt::Debug for KERB_SETPASSWORD_REQUEST {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Credentials"))]
 unsafe impl ::windows::core::Abi for KERB_SETPASSWORD_REQUEST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Credentials"))]
 impl ::core::cmp::PartialEq for KERB_SETPASSWORD_REQUEST {
@@ -4638,6 +4714,7 @@ impl ::core::fmt::Debug for KERB_SMART_CARD_LOGON {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KERB_SMART_CARD_LOGON {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KERB_SMART_CARD_LOGON {
@@ -4678,6 +4755,7 @@ impl ::core::fmt::Debug for KERB_SMART_CARD_PROFILE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KERB_SMART_CARD_PROFILE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KERB_SMART_CARD_PROFILE {
@@ -4717,6 +4795,7 @@ impl ::core::fmt::Debug for KERB_SMART_CARD_UNLOCK_LOGON {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KERB_SMART_CARD_UNLOCK_LOGON {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KERB_SMART_CARD_UNLOCK_LOGON {
@@ -4760,6 +4839,7 @@ impl ::core::fmt::Debug for KERB_SUBMIT_TKT_REQUEST {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KERB_SUBMIT_TKT_REQUEST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KERB_SUBMIT_TKT_REQUEST {
@@ -4804,6 +4884,7 @@ impl ::core::fmt::Debug for KERB_TICKET_CACHE_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KERB_TICKET_CACHE_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KERB_TICKET_CACHE_INFO {
@@ -4850,6 +4931,7 @@ impl ::core::fmt::Debug for KERB_TICKET_CACHE_INFO_EX {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KERB_TICKET_CACHE_INFO_EX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KERB_TICKET_CACHE_INFO_EX {
@@ -4898,6 +4980,7 @@ impl ::core::fmt::Debug for KERB_TICKET_CACHE_INFO_EX2 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KERB_TICKET_CACHE_INFO_EX2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KERB_TICKET_CACHE_INFO_EX2 {
@@ -4962,6 +5045,7 @@ impl ::core::fmt::Debug for KERB_TICKET_CACHE_INFO_EX3 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KERB_TICKET_CACHE_INFO_EX3 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KERB_TICKET_CACHE_INFO_EX3 {
@@ -5022,6 +5106,7 @@ impl ::core::default::Default for KERB_TICKET_FLAGS {
 }
 unsafe impl ::windows::core::Abi for KERB_TICKET_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KERB_TICKET_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5085,6 +5170,7 @@ impl ::core::fmt::Debug for KERB_TICKET_LOGON {
 }
 unsafe impl ::windows::core::Abi for KERB_TICKET_LOGON {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KERB_TICKET_LOGON {
     fn eq(&self, other: &Self) -> bool {
@@ -5121,6 +5207,7 @@ impl ::core::fmt::Debug for KERB_TICKET_PROFILE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KERB_TICKET_PROFILE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KERB_TICKET_PROFILE {
@@ -5160,6 +5247,7 @@ impl ::core::fmt::Debug for KERB_TICKET_UNLOCK_LOGON {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KERB_TICKET_UNLOCK_LOGON {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KERB_TICKET_UNLOCK_LOGON {
@@ -5203,6 +5291,7 @@ impl ::core::fmt::Debug for KERB_TRANSFER_CRED_REQUEST {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for KERB_TRANSFER_CRED_REQUEST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for KERB_TRANSFER_CRED_REQUEST {
@@ -5281,6 +5370,7 @@ impl ::core::default::Default for KSEC_CONTEXT_TYPE {
 }
 unsafe impl ::windows::core::Abi for KSEC_CONTEXT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KSEC_CONTEXT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5314,6 +5404,7 @@ impl ::core::fmt::Debug for KSEC_LIST_ENTRY {
 #[cfg(feature = "Win32_System_Kernel")]
 unsafe impl ::windows::core::Abi for KSEC_LIST_ENTRY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_System_Kernel")]
 impl ::core::cmp::PartialEq for KSEC_LIST_ENTRY {
@@ -5395,6 +5486,7 @@ impl ::core::fmt::Debug for LOGON_HOURS {
 }
 unsafe impl ::windows::core::Abi for LOGON_HOURS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for LOGON_HOURS {
     fn eq(&self, other: &Self) -> bool {
@@ -5479,6 +5571,7 @@ impl ::core::fmt::Debug for LSA_AUTH_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for LSA_AUTH_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for LSA_AUTH_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -5516,6 +5609,7 @@ impl ::core::default::Default for LSA_AUTH_INFORMATION_AUTH_TYPE {
 }
 unsafe impl ::windows::core::Abi for LSA_AUTH_INFORMATION_AUTH_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for LSA_AUTH_INFORMATION_AUTH_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5569,6 +5663,7 @@ impl ::core::fmt::Debug for LSA_DISPATCH_TABLE {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Kernel"))]
 unsafe impl ::windows::core::Abi for LSA_DISPATCH_TABLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Kernel"))]
 impl ::core::cmp::PartialEq for LSA_DISPATCH_TABLE {
@@ -5607,6 +5702,7 @@ impl ::core::fmt::Debug for LSA_ENUMERATION_INFORMATION {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for LSA_ENUMERATION_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for LSA_ENUMERATION_INFORMATION {
@@ -5641,6 +5737,7 @@ impl ::core::fmt::Debug for LSA_FOREST_TRUST_BINARY_DATA {
 }
 unsafe impl ::windows::core::Abi for LSA_FOREST_TRUST_BINARY_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for LSA_FOREST_TRUST_BINARY_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -5677,6 +5774,7 @@ impl ::core::fmt::Debug for LSA_FOREST_TRUST_COLLISION_INFORMATION {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for LSA_FOREST_TRUST_COLLISION_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for LSA_FOREST_TRUST_COLLISION_INFORMATION {
@@ -5718,6 +5816,7 @@ impl ::core::fmt::Debug for LSA_FOREST_TRUST_COLLISION_RECORD {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for LSA_FOREST_TRUST_COLLISION_RECORD {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for LSA_FOREST_TRUST_COLLISION_RECORD {
@@ -5756,6 +5855,7 @@ impl ::core::default::Default for LSA_FOREST_TRUST_COLLISION_RECORD_TYPE {
 }
 unsafe impl ::windows::core::Abi for LSA_FOREST_TRUST_COLLISION_RECORD_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for LSA_FOREST_TRUST_COLLISION_RECORD_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5787,6 +5887,7 @@ impl ::core::fmt::Debug for LSA_FOREST_TRUST_DOMAIN_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for LSA_FOREST_TRUST_DOMAIN_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for LSA_FOREST_TRUST_DOMAIN_INFO {
@@ -5826,6 +5927,7 @@ impl ::core::fmt::Debug for LSA_FOREST_TRUST_INFORMATION {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for LSA_FOREST_TRUST_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for LSA_FOREST_TRUST_INFORMATION {
@@ -5861,6 +5963,7 @@ impl ::core::clone::Clone for LSA_FOREST_TRUST_RECORD {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for LSA_FOREST_TRUST_RECORD {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for LSA_FOREST_TRUST_RECORD {
@@ -5895,6 +5998,7 @@ impl ::core::clone::Clone for LSA_FOREST_TRUST_RECORD_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for LSA_FOREST_TRUST_RECORD_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for LSA_FOREST_TRUST_RECORD_0 {
@@ -5935,6 +6039,7 @@ impl ::core::default::Default for LSA_FOREST_TRUST_RECORD_TYPE {
 }
 unsafe impl ::windows::core::Abi for LSA_FOREST_TRUST_RECORD_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for LSA_FOREST_TRUST_RECORD_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5969,6 +6074,7 @@ impl ::core::fmt::Debug for LSA_LAST_INTER_LOGON_INFO {
 }
 unsafe impl ::windows::core::Abi for LSA_LAST_INTER_LOGON_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for LSA_LAST_INTER_LOGON_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -6008,6 +6114,7 @@ impl ::core::default::Default for LSA_LOOKUP_DOMAIN_INFO_CLASS {
 }
 unsafe impl ::windows::core::Abi for LSA_LOOKUP_DOMAIN_INFO_CLASS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for LSA_LOOKUP_DOMAIN_INFO_CLASS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6062,6 +6169,7 @@ impl ::core::fmt::Debug for LSA_REFERENCED_DOMAIN_LIST {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for LSA_REFERENCED_DOMAIN_LIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for LSA_REFERENCED_DOMAIN_LIST {
@@ -6226,6 +6334,7 @@ impl ::core::fmt::Debug for LSA_SECPKG_FUNCTION_TABLE {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Credentials", feature = "Win32_System_Kernel", feature = "Win32_System_Threading"))]
 unsafe impl ::windows::core::Abi for LSA_SECPKG_FUNCTION_TABLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Credentials", feature = "Win32_System_Kernel", feature = "Win32_System_Threading"))]
 impl ::core::cmp::PartialEq for LSA_SECPKG_FUNCTION_TABLE {
@@ -6279,6 +6388,7 @@ impl ::core::fmt::Debug for LSA_TOKEN_INFORMATION_NULL {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for LSA_TOKEN_INFORMATION_NULL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for LSA_TOKEN_INFORMATION_NULL {
@@ -6319,6 +6429,7 @@ impl ::core::default::Default for LSA_TOKEN_INFORMATION_TYPE {
 }
 unsafe impl ::windows::core::Abi for LSA_TOKEN_INFORMATION_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for LSA_TOKEN_INFORMATION_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6354,6 +6465,7 @@ impl ::core::fmt::Debug for LSA_TOKEN_INFORMATION_V1 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for LSA_TOKEN_INFORMATION_V1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for LSA_TOKEN_INFORMATION_V1 {
@@ -6401,6 +6513,7 @@ impl ::core::fmt::Debug for LSA_TOKEN_INFORMATION_V3 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for LSA_TOKEN_INFORMATION_V3 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for LSA_TOKEN_INFORMATION_V3 {
@@ -6441,6 +6554,7 @@ impl ::core::fmt::Debug for LSA_TRANSLATED_NAME {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for LSA_TRANSLATED_NAME {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for LSA_TRANSLATED_NAME {
@@ -6476,6 +6590,7 @@ impl ::core::fmt::Debug for LSA_TRANSLATED_SID {
 }
 unsafe impl ::windows::core::Abi for LSA_TRANSLATED_SID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for LSA_TRANSLATED_SID {
     fn eq(&self, other: &Self) -> bool {
@@ -6514,6 +6629,7 @@ impl ::core::fmt::Debug for LSA_TRANSLATED_SID2 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for LSA_TRANSLATED_SID2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for LSA_TRANSLATED_SID2 {
@@ -6553,6 +6669,7 @@ impl ::core::fmt::Debug for LSA_TRUST_INFORMATION {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for LSA_TRUST_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for LSA_TRUST_INFORMATION {
@@ -6834,6 +6951,7 @@ impl ::core::fmt::Debug for LsaHandle {
 }
 unsafe impl ::windows::core::Abi for LsaHandle {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[doc = "*Required features: `\"Win32_Security_Authentication_Identity\"`, `\"Win32_Foundation\"`, `\"Win32_System_Kernel\"`*"]
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Kernel"))]
@@ -7296,6 +7414,7 @@ impl ::core::default::Default for MSV1_0 {
 }
 unsafe impl ::windows::core::Abi for MSV1_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MSV1_0 {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7345,6 +7464,7 @@ impl ::core::default::Default for MSV1_0_AVID {
 }
 unsafe impl ::windows::core::Abi for MSV1_0_AVID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MSV1_0_AVID {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7376,6 +7496,7 @@ impl ::core::fmt::Debug for MSV1_0_AV_PAIR {
 }
 unsafe impl ::windows::core::Abi for MSV1_0_AV_PAIR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MSV1_0_AV_PAIR {
     fn eq(&self, other: &Self) -> bool {
@@ -7418,6 +7539,7 @@ impl ::core::fmt::Debug for MSV1_0_CHANGEPASSWORD_REQUEST {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MSV1_0_CHANGEPASSWORD_REQUEST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MSV1_0_CHANGEPASSWORD_REQUEST {
@@ -7458,6 +7580,7 @@ impl ::core::fmt::Debug for MSV1_0_CHANGEPASSWORD_RESPONSE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MSV1_0_CHANGEPASSWORD_RESPONSE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MSV1_0_CHANGEPASSWORD_RESPONSE {
@@ -7495,6 +7618,7 @@ impl ::core::fmt::Debug for MSV1_0_CREDENTIAL_KEY {
 }
 unsafe impl ::windows::core::Abi for MSV1_0_CREDENTIAL_KEY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MSV1_0_CREDENTIAL_KEY {
     fn eq(&self, other: &Self) -> bool {
@@ -7536,6 +7660,7 @@ impl ::core::default::Default for MSV1_0_CREDENTIAL_KEY_TYPE {
 }
 unsafe impl ::windows::core::Abi for MSV1_0_CREDENTIAL_KEY_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MSV1_0_CREDENTIAL_KEY_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7590,6 +7715,7 @@ impl ::core::fmt::Debug for MSV1_0_INTERACTIVE_LOGON {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MSV1_0_INTERACTIVE_LOGON {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MSV1_0_INTERACTIVE_LOGON {
@@ -7660,6 +7786,7 @@ impl ::core::fmt::Debug for MSV1_0_INTERACTIVE_PROFILE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MSV1_0_INTERACTIVE_PROFILE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MSV1_0_INTERACTIVE_PROFILE {
@@ -7697,6 +7824,7 @@ impl ::core::fmt::Debug for MSV1_0_IUM_SUPPLEMENTAL_CREDENTIAL {
 }
 unsafe impl ::windows::core::Abi for MSV1_0_IUM_SUPPLEMENTAL_CREDENTIAL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MSV1_0_IUM_SUPPLEMENTAL_CREDENTIAL {
     fn eq(&self, other: &Self) -> bool {
@@ -7741,6 +7869,7 @@ impl ::core::fmt::Debug for MSV1_0_LM20_LOGON {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Kernel"))]
 unsafe impl ::windows::core::Abi for MSV1_0_LM20_LOGON {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Kernel"))]
 impl ::core::cmp::PartialEq for MSV1_0_LM20_LOGON {
@@ -7787,6 +7916,7 @@ impl ::core::fmt::Debug for MSV1_0_LM20_LOGON_PROFILE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MSV1_0_LM20_LOGON_PROFILE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MSV1_0_LM20_LOGON_PROFILE {
@@ -7837,6 +7967,7 @@ impl ::core::default::Default for MSV1_0_LOGON_SUBMIT_TYPE {
 }
 unsafe impl ::windows::core::Abi for MSV1_0_LOGON_SUBMIT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MSV1_0_LOGON_SUBMIT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7877,6 +8008,7 @@ impl ::core::fmt::Debug for MSV1_0_NTLM3_RESPONSE {
 }
 unsafe impl ::windows::core::Abi for MSV1_0_NTLM3_RESPONSE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MSV1_0_NTLM3_RESPONSE {
     fn eq(&self, other: &Self) -> bool {
@@ -7925,6 +8057,7 @@ impl ::core::fmt::Debug for MSV1_0_PASSTHROUGH_REQUEST {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MSV1_0_PASSTHROUGH_REQUEST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MSV1_0_PASSTHROUGH_REQUEST {
@@ -7961,6 +8094,7 @@ impl ::core::fmt::Debug for MSV1_0_PASSTHROUGH_RESPONSE {
 }
 unsafe impl ::windows::core::Abi for MSV1_0_PASSTHROUGH_RESPONSE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MSV1_0_PASSTHROUGH_RESPONSE {
     fn eq(&self, other: &Self) -> bool {
@@ -7996,6 +8130,7 @@ impl ::core::default::Default for MSV1_0_PROFILE_BUFFER_TYPE {
 }
 unsafe impl ::windows::core::Abi for MSV1_0_PROFILE_BUFFER_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MSV1_0_PROFILE_BUFFER_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8069,6 +8204,7 @@ impl ::core::default::Default for MSV1_0_PROTOCOL_MESSAGE_TYPE {
 }
 unsafe impl ::windows::core::Abi for MSV1_0_PROTOCOL_MESSAGE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MSV1_0_PROTOCOL_MESSAGE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8093,6 +8229,7 @@ impl ::core::clone::Clone for MSV1_0_REMOTE_SUPPLEMENTAL_CREDENTIAL {
 }
 unsafe impl ::windows::core::Abi for MSV1_0_REMOTE_SUPPLEMENTAL_CREDENTIAL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MSV1_0_REMOTE_SUPPLEMENTAL_CREDENTIAL {
     fn eq(&self, other: &Self) -> bool {
@@ -8133,6 +8270,7 @@ impl ::core::fmt::Debug for MSV1_0_S4U_LOGON {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MSV1_0_S4U_LOGON {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MSV1_0_S4U_LOGON {
@@ -8207,6 +8345,7 @@ impl ::core::fmt::Debug for MSV1_0_SUBAUTH_LOGON {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Kernel"))]
 unsafe impl ::windows::core::Abi for MSV1_0_SUBAUTH_LOGON {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Kernel"))]
 impl ::core::cmp::PartialEq for MSV1_0_SUBAUTH_LOGON {
@@ -8249,6 +8388,7 @@ impl ::core::fmt::Debug for MSV1_0_SUBAUTH_REQUEST {
 }
 unsafe impl ::windows::core::Abi for MSV1_0_SUBAUTH_REQUEST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MSV1_0_SUBAUTH_REQUEST {
     fn eq(&self, other: &Self) -> bool {
@@ -8281,6 +8421,7 @@ impl ::core::fmt::Debug for MSV1_0_SUBAUTH_RESPONSE {
 }
 unsafe impl ::windows::core::Abi for MSV1_0_SUBAUTH_RESPONSE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MSV1_0_SUBAUTH_RESPONSE {
     fn eq(&self, other: &Self) -> bool {
@@ -8316,6 +8457,7 @@ impl ::core::fmt::Debug for MSV1_0_SUPPLEMENTAL_CREDENTIAL {
 }
 unsafe impl ::windows::core::Abi for MSV1_0_SUPPLEMENTAL_CREDENTIAL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MSV1_0_SUPPLEMENTAL_CREDENTIAL {
     fn eq(&self, other: &Self) -> bool {
@@ -8349,6 +8491,7 @@ impl ::core::fmt::Debug for MSV1_0_SUPPLEMENTAL_CREDENTIAL_V2 {
 }
 unsafe impl ::windows::core::Abi for MSV1_0_SUPPLEMENTAL_CREDENTIAL_V2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MSV1_0_SUPPLEMENTAL_CREDENTIAL_V2 {
     fn eq(&self, other: &Self) -> bool {
@@ -8384,6 +8527,7 @@ impl ::core::fmt::Debug for MSV1_0_SUPPLEMENTAL_CREDENTIAL_V3 {
 }
 unsafe impl ::windows::core::Abi for MSV1_0_SUPPLEMENTAL_CREDENTIAL_V3 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MSV1_0_SUPPLEMENTAL_CREDENTIAL_V3 {
     fn eq(&self, other: &Self) -> bool {
@@ -8433,6 +8577,7 @@ impl ::core::fmt::Debug for MSV1_0_VALIDATION_INFO {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_PasswordManagement"))]
 unsafe impl ::windows::core::Abi for MSV1_0_VALIDATION_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_PasswordManagement"))]
 impl ::core::cmp::PartialEq for MSV1_0_VALIDATION_INFO {
@@ -8499,6 +8644,7 @@ impl ::core::default::Default for MSV_SUBAUTH_LOGON_PARAMETER_CONTROL {
 }
 unsafe impl ::windows::core::Abi for MSV_SUBAUTH_LOGON_PARAMETER_CONTROL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MSV_SUBAUTH_LOGON_PARAMETER_CONTROL {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8568,6 +8714,7 @@ impl ::core::default::Default for MSV_SUB_AUTHENTICATION_FILTER {
 }
 unsafe impl ::windows::core::Abi for MSV_SUB_AUTHENTICATION_FILTER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MSV_SUB_AUTHENTICATION_FILTER {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8597,6 +8744,7 @@ impl ::core::default::Default for MSV_SUPPLEMENTAL_CREDENTIAL_FLAGS {
 }
 unsafe impl ::windows::core::Abi for MSV_SUPPLEMENTAL_CREDENTIAL_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MSV_SUPPLEMENTAL_CREDENTIAL_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8678,6 +8826,7 @@ impl ::core::fmt::Debug for NEGOTIATE_CALLER_NAME_REQUEST {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NEGOTIATE_CALLER_NAME_REQUEST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NEGOTIATE_CALLER_NAME_REQUEST {
@@ -8712,6 +8861,7 @@ impl ::core::fmt::Debug for NEGOTIATE_CALLER_NAME_RESPONSE {
 }
 unsafe impl ::windows::core::Abi for NEGOTIATE_CALLER_NAME_RESPONSE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NEGOTIATE_CALLER_NAME_RESPONSE {
     fn eq(&self, other: &Self) -> bool {
@@ -8753,6 +8903,7 @@ impl ::core::default::Default for NEGOTIATE_MESSAGES {
 }
 unsafe impl ::windows::core::Abi for NEGOTIATE_MESSAGES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NEGOTIATE_MESSAGES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8783,6 +8934,7 @@ impl ::core::fmt::Debug for NEGOTIATE_PACKAGE_PREFIX {
 }
 unsafe impl ::windows::core::Abi for NEGOTIATE_PACKAGE_PREFIX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NEGOTIATE_PACKAGE_PREFIX {
     fn eq(&self, other: &Self) -> bool {
@@ -8816,6 +8968,7 @@ impl ::core::fmt::Debug for NEGOTIATE_PACKAGE_PREFIXES {
 }
 unsafe impl ::windows::core::Abi for NEGOTIATE_PACKAGE_PREFIXES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NEGOTIATE_PACKAGE_PREFIXES {
     fn eq(&self, other: &Self) -> bool {
@@ -8854,6 +9007,7 @@ impl ::core::fmt::Debug for NETLOGON_GENERIC_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NETLOGON_GENERIC_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NETLOGON_GENERIC_INFO {
@@ -8894,6 +9048,7 @@ impl ::core::fmt::Debug for NETLOGON_INTERACTIVE_INFO {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_PasswordManagement"))]
 unsafe impl ::windows::core::Abi for NETLOGON_INTERACTIVE_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_PasswordManagement"))]
 impl ::core::cmp::PartialEq for NETLOGON_INTERACTIVE_INFO {
@@ -8936,6 +9091,7 @@ impl ::core::fmt::Debug for NETLOGON_LOGON_IDENTITY_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NETLOGON_LOGON_IDENTITY_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NETLOGON_LOGON_IDENTITY_INFO {
@@ -8982,6 +9138,7 @@ impl ::core::default::Default for NETLOGON_LOGON_INFO_CLASS {
 }
 unsafe impl ::windows::core::Abi for NETLOGON_LOGON_INFO_CLASS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NETLOGON_LOGON_INFO_CLASS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9014,6 +9171,7 @@ impl ::core::fmt::Debug for NETLOGON_NETWORK_INFO {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Kernel"))]
 unsafe impl ::windows::core::Abi for NETLOGON_NETWORK_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Kernel"))]
 impl ::core::cmp::PartialEq for NETLOGON_NETWORK_INFO {
@@ -9054,6 +9212,7 @@ impl ::core::fmt::Debug for NETLOGON_SERVICE_INFO {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_PasswordManagement"))]
 unsafe impl ::windows::core::Abi for NETLOGON_SERVICE_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_PasswordManagement"))]
 impl ::core::cmp::PartialEq for NETLOGON_SERVICE_INFO {
@@ -9172,6 +9331,7 @@ impl ::core::fmt::Debug for PKU2U_CERTIFICATE_S4U_LOGON {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PKU2U_CERTIFICATE_S4U_LOGON {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for PKU2U_CERTIFICATE_S4U_LOGON {
@@ -9206,6 +9366,7 @@ impl ::core::fmt::Debug for PKU2U_CERT_BLOB {
 }
 unsafe impl ::windows::core::Abi for PKU2U_CERT_BLOB {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PKU2U_CERT_BLOB {
     fn eq(&self, other: &Self) -> bool {
@@ -9240,6 +9401,7 @@ impl ::core::fmt::Debug for PKU2U_CREDUI_CONTEXT {
 }
 unsafe impl ::windows::core::Abi for PKU2U_CREDUI_CONTEXT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PKU2U_CREDUI_CONTEXT {
     fn eq(&self, other: &Self) -> bool {
@@ -9271,6 +9433,7 @@ impl ::core::default::Default for PKU2U_LOGON_SUBMIT_TYPE {
 }
 unsafe impl ::windows::core::Abi for PKU2U_LOGON_SUBMIT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PKU2U_LOGON_SUBMIT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9574,6 +9737,7 @@ impl ::core::fmt::Debug for POLICY_ACCOUNT_DOMAIN_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for POLICY_ACCOUNT_DOMAIN_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for POLICY_ACCOUNT_DOMAIN_INFO {
@@ -9608,6 +9772,7 @@ impl ::core::fmt::Debug for POLICY_AUDIT_CATEGORIES_INFO {
 }
 unsafe impl ::windows::core::Abi for POLICY_AUDIT_CATEGORIES_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for POLICY_AUDIT_CATEGORIES_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -9645,6 +9810,7 @@ impl ::core::fmt::Debug for POLICY_AUDIT_EVENTS_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for POLICY_AUDIT_EVENTS_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for POLICY_AUDIT_EVENTS_INFO {
@@ -9701,6 +9867,7 @@ impl ::core::default::Default for POLICY_AUDIT_EVENT_TYPE {
 }
 unsafe impl ::windows::core::Abi for POLICY_AUDIT_EVENT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for POLICY_AUDIT_EVENT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9733,6 +9900,7 @@ impl ::core::fmt::Debug for POLICY_AUDIT_FULL_QUERY_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for POLICY_AUDIT_FULL_QUERY_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for POLICY_AUDIT_FULL_QUERY_INFO {
@@ -9771,6 +9939,7 @@ impl ::core::fmt::Debug for POLICY_AUDIT_FULL_SET_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for POLICY_AUDIT_FULL_SET_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for POLICY_AUDIT_FULL_SET_INFO {
@@ -9816,6 +9985,7 @@ impl ::core::fmt::Debug for POLICY_AUDIT_LOG_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for POLICY_AUDIT_LOG_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for POLICY_AUDIT_LOG_INFO {
@@ -9855,6 +10025,7 @@ impl ::core::fmt::Debug for POLICY_AUDIT_SID_ARRAY {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for POLICY_AUDIT_SID_ARRAY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for POLICY_AUDIT_SID_ARRAY {
@@ -9889,6 +10060,7 @@ impl ::core::fmt::Debug for POLICY_AUDIT_SUBCATEGORIES_INFO {
 }
 unsafe impl ::windows::core::Abi for POLICY_AUDIT_SUBCATEGORIES_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for POLICY_AUDIT_SUBCATEGORIES_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -9925,6 +10097,7 @@ impl ::core::fmt::Debug for POLICY_DEFAULT_QUOTA_INFO {
 }
 unsafe impl ::windows::core::Abi for POLICY_DEFAULT_QUOTA_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for POLICY_DEFAULT_QUOTA_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -9964,6 +10137,7 @@ impl ::core::fmt::Debug for POLICY_DNS_DOMAIN_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for POLICY_DNS_DOMAIN_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for POLICY_DNS_DOMAIN_INFO {
@@ -9998,6 +10172,7 @@ impl ::core::fmt::Debug for POLICY_DOMAIN_EFS_INFO {
 }
 unsafe impl ::windows::core::Abi for POLICY_DOMAIN_EFS_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for POLICY_DOMAIN_EFS_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -10031,6 +10206,7 @@ impl ::core::default::Default for POLICY_DOMAIN_INFORMATION_CLASS {
 }
 unsafe impl ::windows::core::Abi for POLICY_DOMAIN_INFORMATION_CLASS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for POLICY_DOMAIN_INFORMATION_CLASS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10060,6 +10236,7 @@ impl ::core::fmt::Debug for POLICY_DOMAIN_KERBEROS_TICKET_INFO {
 }
 unsafe impl ::windows::core::Abi for POLICY_DOMAIN_KERBEROS_TICKET_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for POLICY_DOMAIN_KERBEROS_TICKET_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -10123,6 +10300,7 @@ impl ::core::default::Default for POLICY_INFORMATION_CLASS {
 }
 unsafe impl ::windows::core::Abi for POLICY_INFORMATION_CLASS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for POLICY_INFORMATION_CLASS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10154,6 +10332,7 @@ impl ::core::default::Default for POLICY_LSA_SERVER_ROLE {
 }
 unsafe impl ::windows::core::Abi for POLICY_LSA_SERVER_ROLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for POLICY_LSA_SERVER_ROLE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10178,6 +10357,7 @@ impl ::core::fmt::Debug for POLICY_LSA_SERVER_ROLE_INFO {
 }
 unsafe impl ::windows::core::Abi for POLICY_LSA_SERVER_ROLE_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for POLICY_LSA_SERVER_ROLE_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -10214,6 +10394,7 @@ impl ::core::fmt::Debug for POLICY_MACHINE_ACCT_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for POLICY_MACHINE_ACCT_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for POLICY_MACHINE_ACCT_INFO {
@@ -10248,6 +10429,7 @@ impl ::core::fmt::Debug for POLICY_MODIFICATION_INFO {
 }
 unsafe impl ::windows::core::Abi for POLICY_MODIFICATION_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for POLICY_MODIFICATION_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -10297,6 +10479,7 @@ impl ::core::default::Default for POLICY_NOTIFICATION_INFORMATION_CLASS {
 }
 unsafe impl ::windows::core::Abi for POLICY_NOTIFICATION_INFORMATION_CLASS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for POLICY_NOTIFICATION_INFORMATION_CLASS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10326,6 +10509,7 @@ impl ::core::fmt::Debug for POLICY_PD_ACCOUNT_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for POLICY_PD_ACCOUNT_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for POLICY_PD_ACCOUNT_INFO {
@@ -10365,6 +10549,7 @@ impl ::core::fmt::Debug for POLICY_PRIMARY_DOMAIN_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for POLICY_PRIMARY_DOMAIN_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for POLICY_PRIMARY_DOMAIN_INFO {
@@ -10420,6 +10605,7 @@ impl ::core::fmt::Debug for POLICY_REPLICA_SOURCE_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for POLICY_REPLICA_SOURCE_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for POLICY_REPLICA_SOURCE_INFO {
@@ -10537,6 +10723,7 @@ impl ::core::fmt::Debug for PctPublicKey {
 }
 unsafe impl ::windows::core::Abi for PctPublicKey {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PctPublicKey {
     fn eq(&self, other: &Self) -> bool {
@@ -10818,6 +11005,7 @@ impl ::core::fmt::Debug for SAM_REGISTER_MAPPING_ELEMENT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SAM_REGISTER_MAPPING_ELEMENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for SAM_REGISTER_MAPPING_ELEMENT {
@@ -10857,6 +11045,7 @@ impl ::core::fmt::Debug for SAM_REGISTER_MAPPING_LIST {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SAM_REGISTER_MAPPING_LIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for SAM_REGISTER_MAPPING_LIST {
@@ -10896,6 +11085,7 @@ impl ::core::fmt::Debug for SAM_REGISTER_MAPPING_TABLE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SAM_REGISTER_MAPPING_TABLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for SAM_REGISTER_MAPPING_TABLE {
@@ -10932,6 +11122,7 @@ impl ::core::default::Default for SASL_AUTHZID_STATE {
 }
 unsafe impl ::windows::core::Abi for SASL_AUTHZID_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SASL_AUTHZID_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10968,6 +11159,7 @@ impl ::core::fmt::Debug for SCHANNEL_ALERT_TOKEN {
 }
 unsafe impl ::windows::core::Abi for SCHANNEL_ALERT_TOKEN {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SCHANNEL_ALERT_TOKEN {
     fn eq(&self, other: &Self) -> bool {
@@ -11001,6 +11193,7 @@ impl ::core::default::Default for SCHANNEL_ALERT_TOKEN_ALERT_TYPE {
 }
 unsafe impl ::windows::core::Abi for SCHANNEL_ALERT_TOKEN_ALERT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SCHANNEL_ALERT_TOKEN_ALERT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11028,6 +11221,7 @@ impl ::core::fmt::Debug for SCHANNEL_CERT_HASH {
 }
 unsafe impl ::windows::core::Abi for SCHANNEL_CERT_HASH {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SCHANNEL_CERT_HASH {
     fn eq(&self, other: &Self) -> bool {
@@ -11062,6 +11256,7 @@ impl ::core::fmt::Debug for SCHANNEL_CERT_HASH_STORE {
 }
 unsafe impl ::windows::core::Abi for SCHANNEL_CERT_HASH_STORE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SCHANNEL_CERT_HASH_STORE {
     fn eq(&self, other: &Self) -> bool {
@@ -11096,6 +11291,7 @@ impl ::core::fmt::Debug for SCHANNEL_CLIENT_SIGNATURE {
 }
 unsafe impl ::windows::core::Abi for SCHANNEL_CLIENT_SIGNATURE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SCHANNEL_CLIENT_SIGNATURE {
     fn eq(&self, other: &Self) -> bool {
@@ -11159,6 +11355,7 @@ impl ::core::fmt::Debug for SCHANNEL_CRED {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography"))]
 unsafe impl ::windows::core::Abi for SCHANNEL_CRED {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography"))]
 impl ::core::cmp::PartialEq for SCHANNEL_CRED {
@@ -11225,6 +11422,7 @@ impl ::core::default::Default for SCHANNEL_CRED_FLAGS {
 }
 unsafe impl ::windows::core::Abi for SCHANNEL_CRED_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SCHANNEL_CRED_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11294,6 +11492,7 @@ impl ::core::fmt::Debug for SCHANNEL_SESSION_TOKEN {
 }
 unsafe impl ::windows::core::Abi for SCHANNEL_SESSION_TOKEN {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SCHANNEL_SESSION_TOKEN {
     fn eq(&self, other: &Self) -> bool {
@@ -11327,6 +11526,7 @@ impl ::core::default::Default for SCHANNEL_SESSION_TOKEN_FLAGS {
 }
 unsafe impl ::windows::core::Abi for SCHANNEL_SESSION_TOKEN_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SCHANNEL_SESSION_TOKEN_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11360,6 +11560,7 @@ impl ::core::fmt::Debug for SCH_CRED {
 }
 unsafe impl ::windows::core::Abi for SCH_CRED {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SCH_CRED {
     fn eq(&self, other: &Self) -> bool {
@@ -11424,6 +11625,7 @@ impl ::core::fmt::Debug for SCH_CRED_PUBLIC_CERTCHAIN {
 }
 unsafe impl ::windows::core::Abi for SCH_CRED_PUBLIC_CERTCHAIN {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SCH_CRED_PUBLIC_CERTCHAIN {
     fn eq(&self, other: &Self) -> bool {
@@ -11459,6 +11661,7 @@ impl ::core::fmt::Debug for SCH_CRED_SECRET_CAPI {
 }
 unsafe impl ::windows::core::Abi for SCH_CRED_SECRET_CAPI {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SCH_CRED_SECRET_CAPI {
     fn eq(&self, other: &Self) -> bool {
@@ -11492,6 +11695,7 @@ impl ::core::fmt::Debug for SCH_CRED_SECRET_PRIVKEY {
 }
 unsafe impl ::windows::core::Abi for SCH_CRED_SECRET_PRIVKEY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SCH_CRED_SECRET_PRIVKEY {
     fn eq(&self, other: &Self) -> bool {
@@ -11540,6 +11744,7 @@ impl ::core::fmt::Debug for SCH_EXTENSION_DATA {
 }
 unsafe impl ::windows::core::Abi for SCH_EXTENSION_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SCH_EXTENSION_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -11663,6 +11868,7 @@ impl ::core::fmt::Debug for SECPKG_APP_MODE_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SECPKG_APP_MODE_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for SECPKG_APP_MODE_INFO {
@@ -11777,6 +11983,7 @@ impl ::core::default::Default for SECPKG_ATTR {
 }
 unsafe impl ::windows::core::Abi for SECPKG_ATTR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SECPKG_ATTR {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11838,6 +12045,7 @@ impl ::core::default::Default for SECPKG_ATTR_LCT_STATUS {
 }
 unsafe impl ::windows::core::Abi for SECPKG_ATTR_LCT_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SECPKG_ATTR_LCT_STATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11915,6 +12123,7 @@ impl ::core::fmt::Debug for SECPKG_BYTE_VECTOR {
 }
 unsafe impl ::windows::core::Abi for SECPKG_BYTE_VECTOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SECPKG_BYTE_VECTOR {
     fn eq(&self, other: &Self) -> bool {
@@ -11967,6 +12176,7 @@ impl ::core::fmt::Debug for SECPKG_CALL_INFO {
 }
 unsafe impl ::windows::core::Abi for SECPKG_CALL_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SECPKG_CALL_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -12018,6 +12228,7 @@ impl ::core::default::Default for SECPKG_CALL_PACKAGE_MESSAGE_TYPE {
 }
 unsafe impl ::windows::core::Abi for SECPKG_CALL_PACKAGE_MESSAGE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SECPKG_CALL_PACKAGE_MESSAGE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12051,6 +12262,7 @@ impl ::core::fmt::Debug for SECPKG_CALL_PACKAGE_PIN_DC_REQUEST {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SECPKG_CALL_PACKAGE_PIN_DC_REQUEST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for SECPKG_CALL_PACKAGE_PIN_DC_REQUEST {
@@ -12092,6 +12304,7 @@ impl ::core::fmt::Debug for SECPKG_CALL_PACKAGE_TRANSFER_CRED_REQUEST {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SECPKG_CALL_PACKAGE_TRANSFER_CRED_REQUEST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for SECPKG_CALL_PACKAGE_TRANSFER_CRED_REQUEST {
@@ -12132,6 +12345,7 @@ impl ::core::fmt::Debug for SECPKG_CALL_PACKAGE_UNPIN_ALL_DCS_REQUEST {
 }
 unsafe impl ::windows::core::Abi for SECPKG_CALL_PACKAGE_UNPIN_ALL_DCS_REQUEST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SECPKG_CALL_PACKAGE_UNPIN_ALL_DCS_REQUEST {
     fn eq(&self, other: &Self) -> bool {
@@ -12195,6 +12409,7 @@ impl ::core::fmt::Debug for SECPKG_CLIENT_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SECPKG_CLIENT_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for SECPKG_CLIENT_INFO {
@@ -12233,6 +12448,7 @@ impl ::core::fmt::Debug for SECPKG_CONTEXT_THUNKS {
 }
 unsafe impl ::windows::core::Abi for SECPKG_CONTEXT_THUNKS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SECPKG_CONTEXT_THUNKS {
     fn eq(&self, other: &Self) -> bool {
@@ -12266,6 +12482,7 @@ impl ::core::default::Default for SECPKG_CRED {
 }
 unsafe impl ::windows::core::Abi for SECPKG_CRED {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SECPKG_CRED {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12323,6 +12540,7 @@ impl ::core::fmt::Debug for SECPKG_CREDENTIAL {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SECPKG_CREDENTIAL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for SECPKG_CREDENTIAL {
@@ -12387,6 +12605,7 @@ impl ::core::default::Default for SECPKG_CRED_CLASS {
 }
 unsafe impl ::windows::core::Abi for SECPKG_CRED_CLASS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SECPKG_CRED_CLASS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12425,6 +12644,7 @@ impl ::core::fmt::Debug for SECPKG_DLL_FUNCTIONS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SECPKG_DLL_FUNCTIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for SECPKG_DLL_FUNCTIONS {
@@ -12462,6 +12682,7 @@ impl ::core::fmt::Debug for SECPKG_EVENT_NOTIFY {
 }
 unsafe impl ::windows::core::Abi for SECPKG_EVENT_NOTIFY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SECPKG_EVENT_NOTIFY {
     fn eq(&self, other: &Self) -> bool {
@@ -12499,6 +12720,7 @@ impl ::core::fmt::Debug for SECPKG_EVENT_PACKAGE_CHANGE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SECPKG_EVENT_PACKAGE_CHANGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for SECPKG_EVENT_PACKAGE_CHANGE {
@@ -12533,6 +12755,7 @@ impl ::core::fmt::Debug for SECPKG_EVENT_ROLE_CHANGE {
 }
 unsafe impl ::windows::core::Abi for SECPKG_EVENT_ROLE_CHANGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SECPKG_EVENT_ROLE_CHANGE {
     fn eq(&self, other: &Self) -> bool {
@@ -12563,6 +12786,7 @@ impl ::core::clone::Clone for SECPKG_EXTENDED_INFORMATION {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SECPKG_EXTENDED_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for SECPKG_EXTENDED_INFORMATION {
@@ -12600,6 +12824,7 @@ impl ::core::clone::Clone for SECPKG_EXTENDED_INFORMATION_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SECPKG_EXTENDED_INFORMATION_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for SECPKG_EXTENDED_INFORMATION_0 {
@@ -12646,6 +12871,7 @@ impl ::core::default::Default for SECPKG_EXTENDED_INFORMATION_CLASS {
 }
 unsafe impl ::windows::core::Abi for SECPKG_EXTENDED_INFORMATION_CLASS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SECPKG_EXTENDED_INFORMATION_CLASS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12671,6 +12897,7 @@ impl ::core::fmt::Debug for SECPKG_EXTRA_OIDS {
 }
 unsafe impl ::windows::core::Abi for SECPKG_EXTRA_OIDS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SECPKG_EXTRA_OIDS {
     fn eq(&self, other: &Self) -> bool {
@@ -12842,6 +13069,7 @@ impl ::core::fmt::Debug for SECPKG_FUNCTION_TABLE {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Credentials", feature = "Win32_System_Kernel", feature = "Win32_System_Threading"))]
 unsafe impl ::windows::core::Abi for SECPKG_FUNCTION_TABLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Credentials", feature = "Win32_System_Kernel", feature = "Win32_System_Threading"))]
 impl ::core::cmp::PartialEq for SECPKG_FUNCTION_TABLE {
@@ -12876,6 +13104,7 @@ impl ::core::fmt::Debug for SECPKG_GSS_INFO {
 }
 unsafe impl ::windows::core::Abi for SECPKG_GSS_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SECPKG_GSS_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -12951,6 +13180,7 @@ impl ::core::fmt::Debug for SECPKG_KERNEL_FUNCTIONS {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Kernel"))]
 unsafe impl ::windows::core::Abi for SECPKG_KERNEL_FUNCTIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Kernel"))]
 impl ::core::cmp::PartialEq for SECPKG_KERNEL_FUNCTIONS {
@@ -13019,6 +13249,7 @@ impl ::core::fmt::Debug for SECPKG_KERNEL_FUNCTION_TABLE {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Kernel"))]
 unsafe impl ::windows::core::Abi for SECPKG_KERNEL_FUNCTION_TABLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Kernel"))]
 impl ::core::cmp::PartialEq for SECPKG_KERNEL_FUNCTION_TABLE {
@@ -13056,6 +13287,7 @@ impl ::core::fmt::Debug for SECPKG_MUTUAL_AUTH_LEVEL {
 }
 unsafe impl ::windows::core::Abi for SECPKG_MUTUAL_AUTH_LEVEL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SECPKG_MUTUAL_AUTH_LEVEL {
     fn eq(&self, other: &Self) -> bool {
@@ -13095,6 +13327,7 @@ impl ::core::default::Default for SECPKG_NAME_TYPE {
 }
 unsafe impl ::windows::core::Abi for SECPKG_NAME_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SECPKG_NAME_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13120,6 +13353,7 @@ impl ::core::fmt::Debug for SECPKG_NEGO2_INFO {
 }
 unsafe impl ::windows::core::Abi for SECPKG_NEGO2_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SECPKG_NEGO2_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -13167,6 +13401,7 @@ impl ::core::default::Default for SECPKG_PACKAGE_CHANGE_TYPE {
 }
 unsafe impl ::windows::core::Abi for SECPKG_PACKAGE_CHANGE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SECPKG_PACKAGE_CHANGE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13202,6 +13437,7 @@ impl ::core::fmt::Debug for SECPKG_PARAMETERS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SECPKG_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for SECPKG_PARAMETERS {
@@ -13242,6 +13478,7 @@ impl ::core::fmt::Debug for SECPKG_POST_LOGON_USER_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SECPKG_POST_LOGON_USER_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for SECPKG_POST_LOGON_USER_INFO {
@@ -13308,6 +13545,7 @@ impl ::core::fmt::Debug for SECPKG_PRIMARY_CRED {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SECPKG_PRIMARY_CRED {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for SECPKG_PRIMARY_CRED {
@@ -13380,6 +13618,7 @@ impl ::core::fmt::Debug for SECPKG_PRIMARY_CRED_EX {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SECPKG_PRIMARY_CRED_EX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for SECPKG_PRIMARY_CRED_EX {
@@ -13434,6 +13673,7 @@ impl ::core::fmt::Debug for SECPKG_REDIRECTED_LOGON_BUFFER {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SECPKG_REDIRECTED_LOGON_BUFFER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for SECPKG_REDIRECTED_LOGON_BUFFER {
@@ -13469,6 +13709,7 @@ impl ::core::fmt::Debug for SECPKG_SERIALIZED_OID {
 }
 unsafe impl ::windows::core::Abi for SECPKG_SERIALIZED_OID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SECPKG_SERIALIZED_OID {
     fn eq(&self, other: &Self) -> bool {
@@ -13500,6 +13741,7 @@ impl ::core::default::Default for SECPKG_SESSIONINFO_TYPE {
 }
 unsafe impl ::windows::core::Abi for SECPKG_SESSIONINFO_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SECPKG_SESSIONINFO_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13525,6 +13767,7 @@ impl ::core::fmt::Debug for SECPKG_SHORT_VECTOR {
 }
 unsafe impl ::windows::core::Abi for SECPKG_SHORT_VECTOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SECPKG_SHORT_VECTOR {
     fn eq(&self, other: &Self) -> bool {
@@ -13576,6 +13819,7 @@ impl ::core::fmt::Debug for SECPKG_SUPPLEMENTAL_CRED {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SECPKG_SUPPLEMENTAL_CRED {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for SECPKG_SUPPLEMENTAL_CRED {
@@ -13615,6 +13859,7 @@ impl ::core::fmt::Debug for SECPKG_SUPPLEMENTAL_CRED_ARRAY {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SECPKG_SUPPLEMENTAL_CRED_ARRAY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for SECPKG_SUPPLEMENTAL_CRED_ARRAY {
@@ -13653,6 +13898,7 @@ impl ::core::fmt::Debug for SECPKG_SUPPLIED_CREDENTIAL {
 }
 unsafe impl ::windows::core::Abi for SECPKG_SUPPLIED_CREDENTIAL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SECPKG_SUPPLIED_CREDENTIAL {
     fn eq(&self, other: &Self) -> bool {
@@ -13691,6 +13937,7 @@ impl ::core::fmt::Debug for SECPKG_SURROGATE_LOGON {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SECPKG_SURROGATE_LOGON {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for SECPKG_SURROGATE_LOGON {
@@ -13725,6 +13972,7 @@ impl ::core::fmt::Debug for SECPKG_SURROGATE_LOGON_ENTRY {
 }
 unsafe impl ::windows::core::Abi for SECPKG_SURROGATE_LOGON_ENTRY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SECPKG_SURROGATE_LOGON_ENTRY {
     fn eq(&self, other: &Self) -> bool {
@@ -13763,6 +14011,7 @@ impl ::core::fmt::Debug for SECPKG_TARGETINFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SECPKG_TARGETINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for SECPKG_TARGETINFO {
@@ -13835,6 +14084,7 @@ impl ::core::fmt::Debug for SECPKG_USER_FUNCTION_TABLE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SECPKG_USER_FUNCTION_TABLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for SECPKG_USER_FUNCTION_TABLE {
@@ -13873,6 +14123,7 @@ impl ::core::fmt::Debug for SECPKG_WOW_CLIENT_DLL {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SECPKG_WOW_CLIENT_DLL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for SECPKG_WOW_CLIENT_DLL {
@@ -13975,6 +14226,7 @@ impl ::core::fmt::Debug for SECURITY_LOGON_SESSION_DATA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SECURITY_LOGON_SESSION_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for SECURITY_LOGON_SESSION_DATA {
@@ -14022,6 +14274,7 @@ impl ::core::default::Default for SECURITY_LOGON_TYPE {
 }
 unsafe impl ::windows::core::Abi for SECURITY_LOGON_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SECURITY_LOGON_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14054,6 +14307,7 @@ impl ::core::fmt::Debug for SECURITY_PACKAGE_OPTIONS {
 }
 unsafe impl ::windows::core::Abi for SECURITY_PACKAGE_OPTIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SECURITY_PACKAGE_OPTIONS {
     fn eq(&self, other: &Self) -> bool {
@@ -14089,6 +14343,7 @@ impl ::core::default::Default for SECURITY_PACKAGE_OPTIONS_TYPE {
 }
 unsafe impl ::windows::core::Abi for SECURITY_PACKAGE_OPTIONS_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SECURITY_PACKAGE_OPTIONS_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14131,6 +14386,7 @@ impl ::core::fmt::Debug for SECURITY_USER_DATA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SECURITY_USER_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for SECURITY_USER_DATA {
@@ -14165,6 +14421,7 @@ impl ::core::fmt::Debug for SEC_APPLICATION_PROTOCOLS {
 }
 unsafe impl ::windows::core::Abi for SEC_APPLICATION_PROTOCOLS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SEC_APPLICATION_PROTOCOLS {
     fn eq(&self, other: &Self) -> bool {
@@ -14197,6 +14454,7 @@ impl ::core::fmt::Debug for SEC_APPLICATION_PROTOCOL_LIST {
 }
 unsafe impl ::windows::core::Abi for SEC_APPLICATION_PROTOCOL_LIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SEC_APPLICATION_PROTOCOL_LIST {
     fn eq(&self, other: &Self) -> bool {
@@ -14232,6 +14490,7 @@ impl ::core::default::Default for SEC_APPLICATION_PROTOCOL_NEGOTIATION_EXT {
 }
 unsafe impl ::windows::core::Abi for SEC_APPLICATION_PROTOCOL_NEGOTIATION_EXT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SEC_APPLICATION_PROTOCOL_NEGOTIATION_EXT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14261,6 +14520,7 @@ impl ::core::default::Default for SEC_APPLICATION_PROTOCOL_NEGOTIATION_STATUS {
 }
 unsafe impl ::windows::core::Abi for SEC_APPLICATION_PROTOCOL_NEGOTIATION_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SEC_APPLICATION_PROTOCOL_NEGOTIATION_STATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14301,6 +14561,7 @@ impl ::core::fmt::Debug for SEC_CHANNEL_BINDINGS {
 }
 unsafe impl ::windows::core::Abi for SEC_CHANNEL_BINDINGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SEC_CHANNEL_BINDINGS {
     fn eq(&self, other: &Self) -> bool {
@@ -14331,6 +14592,7 @@ impl ::core::fmt::Debug for SEC_DTLS_MTU {
 }
 unsafe impl ::windows::core::Abi for SEC_DTLS_MTU {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SEC_DTLS_MTU {
     fn eq(&self, other: &Self) -> bool {
@@ -14361,6 +14623,7 @@ impl ::core::fmt::Debug for SEC_FLAGS {
 }
 unsafe impl ::windows::core::Abi for SEC_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SEC_FLAGS {
     fn eq(&self, other: &Self) -> bool {
@@ -14396,6 +14659,7 @@ impl ::core::fmt::Debug for SEC_NEGOTIATION_INFO {
 }
 unsafe impl ::windows::core::Abi for SEC_NEGOTIATION_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SEC_NEGOTIATION_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -14427,6 +14691,7 @@ impl ::core::fmt::Debug for SEC_PRESHAREDKEY {
 }
 unsafe impl ::windows::core::Abi for SEC_PRESHAREDKEY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SEC_PRESHAREDKEY {
     fn eq(&self, other: &Self) -> bool {
@@ -14458,6 +14723,7 @@ impl ::core::fmt::Debug for SEC_PRESHAREDKEY_IDENTITY {
 }
 unsafe impl ::windows::core::Abi for SEC_PRESHAREDKEY_IDENTITY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SEC_PRESHAREDKEY_IDENTITY {
     fn eq(&self, other: &Self) -> bool {
@@ -14489,6 +14755,7 @@ impl ::core::fmt::Debug for SEC_SRTP_MASTER_KEY_IDENTIFIER {
 }
 unsafe impl ::windows::core::Abi for SEC_SRTP_MASTER_KEY_IDENTIFIER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SEC_SRTP_MASTER_KEY_IDENTIFIER {
     fn eq(&self, other: &Self) -> bool {
@@ -14520,6 +14787,7 @@ impl ::core::fmt::Debug for SEC_SRTP_PROTECTION_PROFILES {
 }
 unsafe impl ::windows::core::Abi for SEC_SRTP_PROTECTION_PROFILES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SEC_SRTP_PROTECTION_PROFILES {
     fn eq(&self, other: &Self) -> bool {
@@ -14553,6 +14821,7 @@ impl ::core::fmt::Debug for SEC_TOKEN_BINDING {
 }
 unsafe impl ::windows::core::Abi for SEC_TOKEN_BINDING {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SEC_TOKEN_BINDING {
     fn eq(&self, other: &Self) -> bool {
@@ -14592,6 +14861,7 @@ impl ::core::fmt::Debug for SEC_TRAFFIC_SECRETS {
 }
 unsafe impl ::windows::core::Abi for SEC_TRAFFIC_SECRETS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SEC_TRAFFIC_SECRETS {
     fn eq(&self, other: &Self) -> bool {
@@ -14627,6 +14897,7 @@ impl ::core::default::Default for SEC_TRAFFIC_SECRET_TYPE {
 }
 unsafe impl ::windows::core::Abi for SEC_TRAFFIC_SECRET_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SEC_TRAFFIC_SECRET_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14657,6 +14928,7 @@ impl ::core::fmt::Debug for SEC_WINNT_AUTH_IDENTITY32 {
 }
 unsafe impl ::windows::core::Abi for SEC_WINNT_AUTH_IDENTITY32 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SEC_WINNT_AUTH_IDENTITY32 {
     fn eq(&self, other: &Self) -> bool {
@@ -14717,6 +14989,7 @@ impl ::core::fmt::Debug for SEC_WINNT_AUTH_IDENTITY_EX2 {
 }
 unsafe impl ::windows::core::Abi for SEC_WINNT_AUTH_IDENTITY_EX2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SEC_WINNT_AUTH_IDENTITY_EX2 {
     fn eq(&self, other: &Self) -> bool {
@@ -14757,6 +15030,7 @@ impl ::core::fmt::Debug for SEC_WINNT_AUTH_IDENTITY_EX32 {
 }
 unsafe impl ::windows::core::Abi for SEC_WINNT_AUTH_IDENTITY_EX32 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SEC_WINNT_AUTH_IDENTITY_EX32 {
     fn eq(&self, other: &Self) -> bool {
@@ -14797,6 +15071,7 @@ impl ::core::fmt::Debug for SEC_WINNT_AUTH_IDENTITY_EXA {
 }
 unsafe impl ::windows::core::Abi for SEC_WINNT_AUTH_IDENTITY_EXA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SEC_WINNT_AUTH_IDENTITY_EXA {
     fn eq(&self, other: &Self) -> bool {
@@ -14837,6 +15112,7 @@ impl ::core::fmt::Debug for SEC_WINNT_AUTH_IDENTITY_EXW {
 }
 unsafe impl ::windows::core::Abi for SEC_WINNT_AUTH_IDENTITY_EXW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SEC_WINNT_AUTH_IDENTITY_EXW {
     fn eq(&self, other: &Self) -> bool {
@@ -14898,6 +15174,7 @@ impl ::core::clone::Clone for SEC_WINNT_AUTH_IDENTITY_INFO {
 #[cfg(feature = "Win32_System_Rpc")]
 unsafe impl ::windows::core::Abi for SEC_WINNT_AUTH_IDENTITY_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_System_Rpc")]
 impl ::core::cmp::PartialEq for SEC_WINNT_AUTH_IDENTITY_INFO {
@@ -14943,6 +15220,7 @@ impl ::core::fmt::Debug for SEND_GENERIC_TLS_EXTENSION {
 }
 unsafe impl ::windows::core::Abi for SEND_GENERIC_TLS_EXTENSION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SEND_GENERIC_TLS_EXTENSION {
     fn eq(&self, other: &Self) -> bool {
@@ -14993,6 +15271,7 @@ impl ::core::fmt::Debug for SE_ADT_ACCESS_REASON {
 }
 unsafe impl ::windows::core::Abi for SE_ADT_ACCESS_REASON {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SE_ADT_ACCESS_REASON {
     fn eq(&self, other: &Self) -> bool {
@@ -15024,6 +15303,7 @@ impl ::core::fmt::Debug for SE_ADT_CLAIMS {
 }
 unsafe impl ::windows::core::Abi for SE_ADT_CLAIMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SE_ADT_CLAIMS {
     fn eq(&self, other: &Self) -> bool {
@@ -15059,6 +15339,7 @@ impl ::core::fmt::Debug for SE_ADT_OBJECT_TYPE {
 }
 unsafe impl ::windows::core::Abi for SE_ADT_OBJECT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SE_ADT_OBJECT_TYPE {
     fn eq(&self, other: &Self) -> bool {
@@ -15100,6 +15381,7 @@ impl ::core::fmt::Debug for SE_ADT_PARAMETER_ARRAY {
 }
 unsafe impl ::windows::core::Abi for SE_ADT_PARAMETER_ARRAY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SE_ADT_PARAMETER_ARRAY {
     fn eq(&self, other: &Self) -> bool {
@@ -15133,6 +15415,7 @@ impl ::core::fmt::Debug for SE_ADT_PARAMETER_ARRAY_ENTRY {
 }
 unsafe impl ::windows::core::Abi for SE_ADT_PARAMETER_ARRAY_ENTRY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SE_ADT_PARAMETER_ARRAY_ENTRY {
     fn eq(&self, other: &Self) -> bool {
@@ -15171,6 +15454,7 @@ impl ::core::fmt::Debug for SE_ADT_PARAMETER_ARRAY_EX {
 }
 unsafe impl ::windows::core::Abi for SE_ADT_PARAMETER_ARRAY_EX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SE_ADT_PARAMETER_ARRAY_EX {
     fn eq(&self, other: &Self) -> bool {
@@ -15276,6 +15560,7 @@ impl ::core::default::Default for SE_ADT_PARAMETER_TYPE {
 }
 unsafe impl ::windows::core::Abi for SE_ADT_PARAMETER_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SE_ADT_PARAMETER_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -15395,6 +15680,7 @@ impl ::core::default::Default for SLDATATYPE {
 }
 unsafe impl ::windows::core::Abi for SLDATATYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SLDATATYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -15766,6 +16052,7 @@ impl ::core::default::Default for SLIDTYPE {
 }
 unsafe impl ::windows::core::Abi for SLIDTYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SLIDTYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -15843,6 +16130,7 @@ impl ::core::default::Default for SLLICENSINGSTATUS {
 }
 unsafe impl ::windows::core::Abi for SLLICENSINGSTATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SLLICENSINGSTATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -15904,6 +16192,7 @@ impl ::core::default::Default for SLREFERRALTYPE {
 }
 unsafe impl ::windows::core::Abi for SLREFERRALTYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SLREFERRALTYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -16015,6 +16304,7 @@ impl ::core::fmt::Debug for SL_ACTIVATION_INFO_HEADER {
 }
 unsafe impl ::windows::core::Abi for SL_ACTIVATION_INFO_HEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SL_ACTIVATION_INFO_HEADER {
     fn eq(&self, other: &Self) -> bool {
@@ -16048,6 +16338,7 @@ impl ::core::default::Default for SL_ACTIVATION_TYPE {
 }
 unsafe impl ::windows::core::Abi for SL_ACTIVATION_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SL_ACTIVATION_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -16074,6 +16365,7 @@ impl ::core::fmt::Debug for SL_AD_ACTIVATION_INFO {
 }
 unsafe impl ::windows::core::Abi for SL_AD_ACTIVATION_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SL_AD_ACTIVATION_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -16691,6 +16983,7 @@ impl ::core::default::Default for SL_GENUINE_STATE {
 }
 unsafe impl ::windows::core::Abi for SL_GENUINE_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SL_GENUINE_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -16808,6 +17101,7 @@ impl ::core::fmt::Debug for SL_LICENSING_STATUS {
 }
 unsafe impl ::windows::core::Abi for SL_LICENSING_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SL_LICENSING_STATUS {
     fn eq(&self, other: &Self) -> bool {
@@ -16844,6 +17138,7 @@ impl ::core::fmt::Debug for SL_NONGENUINE_UI_OPTIONS {
 }
 unsafe impl ::windows::core::Abi for SL_NONGENUINE_UI_OPTIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SL_NONGENUINE_UI_OPTIONS {
     fn eq(&self, other: &Self) -> bool {
@@ -17137,6 +17432,7 @@ impl ::core::fmt::Debug for SL_SYSTEM_POLICY_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for SL_SYSTEM_POLICY_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SL_SYSTEM_POLICY_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -17236,6 +17532,7 @@ impl ::core::fmt::Debug for SR_SECURITY_DESCRIPTOR {
 }
 unsafe impl ::windows::core::Abi for SR_SECURITY_DESCRIPTOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SR_SECURITY_DESCRIPTOR {
     fn eq(&self, other: &Self) -> bool {
@@ -17287,6 +17584,7 @@ impl ::core::fmt::Debug for SSL_CREDENTIAL_CERTIFICATE {
 }
 unsafe impl ::windows::core::Abi for SSL_CREDENTIAL_CERTIFICATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SSL_CREDENTIAL_CERTIFICATE {
     fn eq(&self, other: &Self) -> bool {
@@ -17342,6 +17640,7 @@ impl ::core::fmt::Debug for SUBSCRIBE_GENERIC_TLS_EXTENSION {
 }
 unsafe impl ::windows::core::Abi for SUBSCRIBE_GENERIC_TLS_EXTENSION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SUBSCRIBE_GENERIC_TLS_EXTENSION {
     fn eq(&self, other: &Self) -> bool {
@@ -17540,6 +17839,7 @@ impl ::core::default::Default for SchGetExtensionsOptions {
 }
 unsafe impl ::windows::core::Abi for SchGetExtensionsOptions {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SchGetExtensionsOptions {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -17594,6 +17894,7 @@ impl ::core::fmt::Debug for SecBuffer {
 }
 unsafe impl ::windows::core::Abi for SecBuffer {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SecBuffer {
     fn eq(&self, other: &Self) -> bool {
@@ -17626,6 +17927,7 @@ impl ::core::fmt::Debug for SecBufferDesc {
 }
 unsafe impl ::windows::core::Abi for SecBufferDesc {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SecBufferDesc {
     fn eq(&self, other: &Self) -> bool {
@@ -17665,6 +17967,7 @@ impl ::core::default::Default for SecDelegationType {
 }
 unsafe impl ::windows::core::Abi for SecDelegationType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SecDelegationType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -17689,6 +17992,7 @@ impl ::core::fmt::Debug for SecPkgContext_AccessToken {
 }
 unsafe impl ::windows::core::Abi for SecPkgContext_AccessToken {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SecPkgContext_AccessToken {
     fn eq(&self, other: &Self) -> bool {
@@ -17722,6 +18026,7 @@ impl ::core::fmt::Debug for SecPkgContext_ApplicationProtocol {
 }
 unsafe impl ::windows::core::Abi for SecPkgContext_ApplicationProtocol {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SecPkgContext_ApplicationProtocol {
     fn eq(&self, other: &Self) -> bool {
@@ -17752,6 +18057,7 @@ impl ::core::fmt::Debug for SecPkgContext_AuthorityA {
 }
 unsafe impl ::windows::core::Abi for SecPkgContext_AuthorityA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SecPkgContext_AuthorityA {
     fn eq(&self, other: &Self) -> bool {
@@ -17782,6 +18088,7 @@ impl ::core::fmt::Debug for SecPkgContext_AuthorityW {
 }
 unsafe impl ::windows::core::Abi for SecPkgContext_AuthorityW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SecPkgContext_AuthorityW {
     fn eq(&self, other: &Self) -> bool {
@@ -17813,6 +18120,7 @@ impl ::core::fmt::Debug for SecPkgContext_AuthzID {
 }
 unsafe impl ::windows::core::Abi for SecPkgContext_AuthzID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SecPkgContext_AuthzID {
     fn eq(&self, other: &Self) -> bool {
@@ -17844,6 +18152,7 @@ impl ::core::fmt::Debug for SecPkgContext_Bindings {
 }
 unsafe impl ::windows::core::Abi for SecPkgContext_Bindings {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SecPkgContext_Bindings {
     fn eq(&self, other: &Self) -> bool {
@@ -17879,6 +18188,7 @@ impl ::core::fmt::Debug for SecPkgContext_CertInfo {
 }
 unsafe impl ::windows::core::Abi for SecPkgContext_CertInfo {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SecPkgContext_CertInfo {
     fn eq(&self, other: &Self) -> bool {
@@ -17910,6 +18220,7 @@ impl ::core::fmt::Debug for SecPkgContext_CertificateValidationResult {
 }
 unsafe impl ::windows::core::Abi for SecPkgContext_CertificateValidationResult {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SecPkgContext_CertificateValidationResult {
     fn eq(&self, other: &Self) -> bool {
@@ -17942,6 +18253,7 @@ impl ::core::fmt::Debug for SecPkgContext_Certificates {
 }
 unsafe impl ::windows::core::Abi for SecPkgContext_Certificates {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SecPkgContext_Certificates {
     fn eq(&self, other: &Self) -> bool {
@@ -18002,6 +18314,7 @@ impl ::core::fmt::Debug for SecPkgContext_CipherInfo {
 }
 unsafe impl ::windows::core::Abi for SecPkgContext_CipherInfo {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SecPkgContext_CipherInfo {
     fn eq(&self, other: &Self) -> bool {
@@ -18033,6 +18346,7 @@ impl ::core::fmt::Debug for SecPkgContext_ClientCertPolicyResult {
 }
 unsafe impl ::windows::core::Abi for SecPkgContext_ClientCertPolicyResult {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SecPkgContext_ClientCertPolicyResult {
     fn eq(&self, other: &Self) -> bool {
@@ -18063,6 +18377,7 @@ impl ::core::fmt::Debug for SecPkgContext_ClientSpecifiedTarget {
 }
 unsafe impl ::windows::core::Abi for SecPkgContext_ClientSpecifiedTarget {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SecPkgContext_ClientSpecifiedTarget {
     fn eq(&self, other: &Self) -> bool {
@@ -18099,6 +18414,7 @@ impl ::core::fmt::Debug for SecPkgContext_ConnectionInfo {
 }
 unsafe impl ::windows::core::Abi for SecPkgContext_ConnectionInfo {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SecPkgContext_ConnectionInfo {
     fn eq(&self, other: &Self) -> bool {
@@ -18136,6 +18452,7 @@ impl ::core::fmt::Debug for SecPkgContext_ConnectionInfoEx {
 }
 unsafe impl ::windows::core::Abi for SecPkgContext_ConnectionInfoEx {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SecPkgContext_ConnectionInfoEx {
     fn eq(&self, other: &Self) -> bool {
@@ -18167,6 +18484,7 @@ impl ::core::fmt::Debug for SecPkgContext_CredInfo {
 }
 unsafe impl ::windows::core::Abi for SecPkgContext_CredInfo {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SecPkgContext_CredInfo {
     fn eq(&self, other: &Self) -> bool {
@@ -18198,6 +18516,7 @@ impl ::core::fmt::Debug for SecPkgContext_CredentialNameA {
 }
 unsafe impl ::windows::core::Abi for SecPkgContext_CredentialNameA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SecPkgContext_CredentialNameA {
     fn eq(&self, other: &Self) -> bool {
@@ -18229,6 +18548,7 @@ impl ::core::fmt::Debug for SecPkgContext_CredentialNameW {
 }
 unsafe impl ::windows::core::Abi for SecPkgContext_CredentialNameW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SecPkgContext_CredentialNameW {
     fn eq(&self, other: &Self) -> bool {
@@ -18260,6 +18580,7 @@ impl ::core::fmt::Debug for SecPkgContext_DceInfo {
 }
 unsafe impl ::windows::core::Abi for SecPkgContext_DceInfo {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SecPkgContext_DceInfo {
     fn eq(&self, other: &Self) -> bool {
@@ -18291,6 +18612,7 @@ impl ::core::fmt::Debug for SecPkgContext_EapKeyBlock {
 }
 unsafe impl ::windows::core::Abi for SecPkgContext_EapKeyBlock {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SecPkgContext_EapKeyBlock {
     fn eq(&self, other: &Self) -> bool {
@@ -18323,6 +18645,7 @@ impl ::core::fmt::Debug for SecPkgContext_EapPrfInfo {
 }
 unsafe impl ::windows::core::Abi for SecPkgContext_EapPrfInfo {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SecPkgContext_EapPrfInfo {
     fn eq(&self, other: &Self) -> bool {
@@ -18353,6 +18676,7 @@ impl ::core::fmt::Debug for SecPkgContext_EarlyStart {
 }
 unsafe impl ::windows::core::Abi for SecPkgContext_EarlyStart {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SecPkgContext_EarlyStart {
     fn eq(&self, other: &Self) -> bool {
@@ -18383,6 +18707,7 @@ impl ::core::fmt::Debug for SecPkgContext_Flags {
 }
 unsafe impl ::windows::core::Abi for SecPkgContext_Flags {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SecPkgContext_Flags {
     fn eq(&self, other: &Self) -> bool {
@@ -18419,6 +18744,7 @@ impl ::core::fmt::Debug for SecPkgContext_IssuerListInfoEx {
 #[cfg(feature = "Win32_Security_Cryptography")]
 unsafe impl ::windows::core::Abi for SecPkgContext_IssuerListInfoEx {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Security_Cryptography")]
 impl ::core::cmp::PartialEq for SecPkgContext_IssuerListInfoEx {
@@ -18456,6 +18782,7 @@ impl ::core::fmt::Debug for SecPkgContext_KeyInfoA {
 }
 unsafe impl ::windows::core::Abi for SecPkgContext_KeyInfoA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SecPkgContext_KeyInfoA {
     fn eq(&self, other: &Self) -> bool {
@@ -18490,6 +18817,7 @@ impl ::core::fmt::Debug for SecPkgContext_KeyInfoW {
 }
 unsafe impl ::windows::core::Abi for SecPkgContext_KeyInfoW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SecPkgContext_KeyInfoW {
     fn eq(&self, other: &Self) -> bool {
@@ -18521,6 +18849,7 @@ impl ::core::fmt::Debug for SecPkgContext_KeyingMaterial {
 }
 unsafe impl ::windows::core::Abi for SecPkgContext_KeyingMaterial {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SecPkgContext_KeyingMaterial {
     fn eq(&self, other: &Self) -> bool {
@@ -18555,6 +18884,7 @@ impl ::core::fmt::Debug for SecPkgContext_KeyingMaterialInfo {
 }
 unsafe impl ::windows::core::Abi for SecPkgContext_KeyingMaterialInfo {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SecPkgContext_KeyingMaterialInfo {
     fn eq(&self, other: &Self) -> bool {
@@ -18590,6 +18920,7 @@ impl ::core::fmt::Debug for SecPkgContext_KeyingMaterial_Inproc {
 }
 unsafe impl ::windows::core::Abi for SecPkgContext_KeyingMaterial_Inproc {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SecPkgContext_KeyingMaterial_Inproc {
     fn eq(&self, other: &Self) -> bool {
@@ -18620,6 +18951,7 @@ impl ::core::fmt::Debug for SecPkgContext_LastClientTokenStatus {
 }
 unsafe impl ::windows::core::Abi for SecPkgContext_LastClientTokenStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SecPkgContext_LastClientTokenStatus {
     fn eq(&self, other: &Self) -> bool {
@@ -18651,6 +18983,7 @@ impl ::core::fmt::Debug for SecPkgContext_Lifespan {
 }
 unsafe impl ::windows::core::Abi for SecPkgContext_Lifespan {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SecPkgContext_Lifespan {
     fn eq(&self, other: &Self) -> bool {
@@ -18685,6 +19018,7 @@ impl ::core::fmt::Debug for SecPkgContext_LocalCredentialInfo {
 }
 unsafe impl ::windows::core::Abi for SecPkgContext_LocalCredentialInfo {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SecPkgContext_LocalCredentialInfo {
     fn eq(&self, other: &Self) -> bool {
@@ -18715,6 +19049,7 @@ impl ::core::fmt::Debug for SecPkgContext_LogoffTime {
 }
 unsafe impl ::windows::core::Abi for SecPkgContext_LogoffTime {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SecPkgContext_LogoffTime {
     fn eq(&self, other: &Self) -> bool {
@@ -18746,6 +19081,7 @@ impl ::core::fmt::Debug for SecPkgContext_MappedCredAttr {
 }
 unsafe impl ::windows::core::Abi for SecPkgContext_MappedCredAttr {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SecPkgContext_MappedCredAttr {
     fn eq(&self, other: &Self) -> bool {
@@ -18776,6 +19112,7 @@ impl ::core::fmt::Debug for SecPkgContext_NamesA {
 }
 unsafe impl ::windows::core::Abi for SecPkgContext_NamesA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SecPkgContext_NamesA {
     fn eq(&self, other: &Self) -> bool {
@@ -18806,6 +19143,7 @@ impl ::core::fmt::Debug for SecPkgContext_NamesW {
 }
 unsafe impl ::windows::core::Abi for SecPkgContext_NamesW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SecPkgContext_NamesW {
     fn eq(&self, other: &Self) -> bool {
@@ -18837,6 +19175,7 @@ impl ::core::fmt::Debug for SecPkgContext_NativeNamesA {
 }
 unsafe impl ::windows::core::Abi for SecPkgContext_NativeNamesA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SecPkgContext_NativeNamesA {
     fn eq(&self, other: &Self) -> bool {
@@ -18868,6 +19207,7 @@ impl ::core::fmt::Debug for SecPkgContext_NativeNamesW {
 }
 unsafe impl ::windows::core::Abi for SecPkgContext_NativeNamesW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SecPkgContext_NativeNamesW {
     fn eq(&self, other: &Self) -> bool {
@@ -18903,6 +19243,7 @@ impl ::core::fmt::Debug for SecPkgContext_NegoKeys {
 }
 unsafe impl ::windows::core::Abi for SecPkgContext_NegoKeys {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SecPkgContext_NegoKeys {
     fn eq(&self, other: &Self) -> bool {
@@ -18933,6 +19274,7 @@ impl ::core::fmt::Debug for SecPkgContext_NegoPackageInfo {
 }
 unsafe impl ::windows::core::Abi for SecPkgContext_NegoPackageInfo {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SecPkgContext_NegoPackageInfo {
     fn eq(&self, other: &Self) -> bool {
@@ -18963,6 +19305,7 @@ impl ::core::fmt::Debug for SecPkgContext_NegoStatus {
 }
 unsafe impl ::windows::core::Abi for SecPkgContext_NegoStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SecPkgContext_NegoStatus {
     fn eq(&self, other: &Self) -> bool {
@@ -18994,6 +19337,7 @@ impl ::core::fmt::Debug for SecPkgContext_NegotiatedTlsExtensions {
 }
 unsafe impl ::windows::core::Abi for SecPkgContext_NegotiatedTlsExtensions {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SecPkgContext_NegotiatedTlsExtensions {
     fn eq(&self, other: &Self) -> bool {
@@ -19025,6 +19369,7 @@ impl ::core::fmt::Debug for SecPkgContext_NegotiationInfoA {
 }
 unsafe impl ::windows::core::Abi for SecPkgContext_NegotiationInfoA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SecPkgContext_NegotiationInfoA {
     fn eq(&self, other: &Self) -> bool {
@@ -19056,6 +19401,7 @@ impl ::core::fmt::Debug for SecPkgContext_NegotiationInfoW {
 }
 unsafe impl ::windows::core::Abi for SecPkgContext_NegotiationInfoW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SecPkgContext_NegotiationInfoW {
     fn eq(&self, other: &Self) -> bool {
@@ -19086,6 +19432,7 @@ impl ::core::fmt::Debug for SecPkgContext_PackageInfoA {
 }
 unsafe impl ::windows::core::Abi for SecPkgContext_PackageInfoA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SecPkgContext_PackageInfoA {
     fn eq(&self, other: &Self) -> bool {
@@ -19116,6 +19463,7 @@ impl ::core::fmt::Debug for SecPkgContext_PackageInfoW {
 }
 unsafe impl ::windows::core::Abi for SecPkgContext_PackageInfoW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SecPkgContext_PackageInfoW {
     fn eq(&self, other: &Self) -> bool {
@@ -19146,6 +19494,7 @@ impl ::core::fmt::Debug for SecPkgContext_PasswordExpiry {
 }
 unsafe impl ::windows::core::Abi for SecPkgContext_PasswordExpiry {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SecPkgContext_PasswordExpiry {
     fn eq(&self, other: &Self) -> bool {
@@ -19178,6 +19527,7 @@ impl ::core::fmt::Debug for SecPkgContext_ProtoInfoA {
 }
 unsafe impl ::windows::core::Abi for SecPkgContext_ProtoInfoA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SecPkgContext_ProtoInfoA {
     fn eq(&self, other: &Self) -> bool {
@@ -19210,6 +19560,7 @@ impl ::core::fmt::Debug for SecPkgContext_ProtoInfoW {
 }
 unsafe impl ::windows::core::Abi for SecPkgContext_ProtoInfoW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SecPkgContext_ProtoInfoW {
     fn eq(&self, other: &Self) -> bool {
@@ -19244,6 +19595,7 @@ impl ::core::fmt::Debug for SecPkgContext_RemoteCredentialInfo {
 }
 unsafe impl ::windows::core::Abi for SecPkgContext_RemoteCredentialInfo {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SecPkgContext_RemoteCredentialInfo {
     fn eq(&self, other: &Self) -> bool {
@@ -19274,6 +19626,7 @@ impl ::core::fmt::Debug for SecPkgContext_SaslContext {
 }
 unsafe impl ::windows::core::Abi for SecPkgContext_SaslContext {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SecPkgContext_SaslContext {
     fn eq(&self, other: &Self) -> bool {
@@ -19306,6 +19659,7 @@ impl ::core::fmt::Debug for SecPkgContext_SessionAppData {
 }
 unsafe impl ::windows::core::Abi for SecPkgContext_SessionAppData {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SecPkgContext_SessionAppData {
     fn eq(&self, other: &Self) -> bool {
@@ -19338,6 +19692,7 @@ impl ::core::fmt::Debug for SecPkgContext_SessionInfo {
 }
 unsafe impl ::windows::core::Abi for SecPkgContext_SessionInfo {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SecPkgContext_SessionInfo {
     fn eq(&self, other: &Self) -> bool {
@@ -19369,6 +19724,7 @@ impl ::core::fmt::Debug for SecPkgContext_SessionKey {
 }
 unsafe impl ::windows::core::Abi for SecPkgContext_SessionKey {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SecPkgContext_SessionKey {
     fn eq(&self, other: &Self) -> bool {
@@ -19402,6 +19758,7 @@ impl ::core::fmt::Debug for SecPkgContext_Sizes {
 }
 unsafe impl ::windows::core::Abi for SecPkgContext_Sizes {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SecPkgContext_Sizes {
     fn eq(&self, other: &Self) -> bool {
@@ -19434,6 +19791,7 @@ impl ::core::fmt::Debug for SecPkgContext_SrtpParameters {
 }
 unsafe impl ::windows::core::Abi for SecPkgContext_SrtpParameters {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SecPkgContext_SrtpParameters {
     fn eq(&self, other: &Self) -> bool {
@@ -19468,6 +19826,7 @@ impl ::core::fmt::Debug for SecPkgContext_StreamSizes {
 }
 unsafe impl ::windows::core::Abi for SecPkgContext_StreamSizes {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SecPkgContext_StreamSizes {
     fn eq(&self, other: &Self) -> bool {
@@ -19498,6 +19857,7 @@ impl ::core::fmt::Debug for SecPkgContext_SubjectAttributes {
 }
 unsafe impl ::windows::core::Abi for SecPkgContext_SubjectAttributes {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SecPkgContext_SubjectAttributes {
     fn eq(&self, other: &Self) -> bool {
@@ -19529,6 +19889,7 @@ impl ::core::fmt::Debug for SecPkgContext_SupportedSignatures {
 }
 unsafe impl ::windows::core::Abi for SecPkgContext_SupportedSignatures {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SecPkgContext_SupportedSignatures {
     fn eq(&self, other: &Self) -> bool {
@@ -19560,6 +19921,7 @@ impl ::core::fmt::Debug for SecPkgContext_Target {
 }
 unsafe impl ::windows::core::Abi for SecPkgContext_Target {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SecPkgContext_Target {
     fn eq(&self, other: &Self) -> bool {
@@ -19591,6 +19953,7 @@ impl ::core::fmt::Debug for SecPkgContext_TargetInformation {
 }
 unsafe impl ::windows::core::Abi for SecPkgContext_TargetInformation {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SecPkgContext_TargetInformation {
     fn eq(&self, other: &Self) -> bool {
@@ -19624,6 +19987,7 @@ impl ::core::fmt::Debug for SecPkgContext_TokenBinding {
 }
 unsafe impl ::windows::core::Abi for SecPkgContext_TokenBinding {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SecPkgContext_TokenBinding {
     fn eq(&self, other: &Self) -> bool {
@@ -19659,6 +20023,7 @@ impl ::core::fmt::Debug for SecPkgContext_UiInfo {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SecPkgContext_UiInfo {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for SecPkgContext_UiInfo {
@@ -19692,6 +20057,7 @@ impl ::core::fmt::Debug for SecPkgContext_UserFlags {
 }
 unsafe impl ::windows::core::Abi for SecPkgContext_UserFlags {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SecPkgContext_UserFlags {
     fn eq(&self, other: &Self) -> bool {
@@ -19723,6 +20089,7 @@ impl ::core::fmt::Debug for SecPkgCred_CipherStrengths {
 }
 unsafe impl ::windows::core::Abi for SecPkgCred_CipherStrengths {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SecPkgCred_CipherStrengths {
     fn eq(&self, other: &Self) -> bool {
@@ -19776,6 +20143,7 @@ impl ::core::fmt::Debug for SecPkgCred_ClientCertPolicy {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SecPkgCred_ClientCertPolicy {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for SecPkgCred_ClientCertPolicy {
@@ -19812,6 +20180,7 @@ impl ::core::fmt::Debug for SecPkgCred_SessionTicketKey {
 }
 unsafe impl ::windows::core::Abi for SecPkgCred_SessionTicketKey {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SecPkgCred_SessionTicketKey {
     fn eq(&self, other: &Self) -> bool {
@@ -19843,6 +20212,7 @@ impl ::core::fmt::Debug for SecPkgCred_SessionTicketKeys {
 }
 unsafe impl ::windows::core::Abi for SecPkgCred_SessionTicketKeys {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SecPkgCred_SessionTicketKeys {
     fn eq(&self, other: &Self) -> bool {
@@ -19874,6 +20244,7 @@ impl ::core::fmt::Debug for SecPkgCred_SupportedAlgs {
 }
 unsafe impl ::windows::core::Abi for SecPkgCred_SupportedAlgs {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SecPkgCred_SupportedAlgs {
     fn eq(&self, other: &Self) -> bool {
@@ -19904,6 +20275,7 @@ impl ::core::fmt::Debug for SecPkgCred_SupportedProtocols {
 }
 unsafe impl ::windows::core::Abi for SecPkgCred_SupportedProtocols {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SecPkgCred_SupportedProtocols {
     fn eq(&self, other: &Self) -> bool {
@@ -19935,6 +20307,7 @@ impl ::core::fmt::Debug for SecPkgCredentials_Cert {
 }
 unsafe impl ::windows::core::Abi for SecPkgCredentials_Cert {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SecPkgCredentials_Cert {
     fn eq(&self, other: &Self) -> bool {
@@ -19970,6 +20343,7 @@ impl ::core::fmt::Debug for SecPkgCredentials_KdcProxySettingsW {
 }
 unsafe impl ::windows::core::Abi for SecPkgCredentials_KdcProxySettingsW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SecPkgCredentials_KdcProxySettingsW {
     fn eq(&self, other: &Self) -> bool {
@@ -20000,6 +20374,7 @@ impl ::core::fmt::Debug for SecPkgCredentials_NamesA {
 }
 unsafe impl ::windows::core::Abi for SecPkgCredentials_NamesA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SecPkgCredentials_NamesA {
     fn eq(&self, other: &Self) -> bool {
@@ -20030,6 +20405,7 @@ impl ::core::fmt::Debug for SecPkgCredentials_NamesW {
 }
 unsafe impl ::windows::core::Abi for SecPkgCredentials_NamesW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SecPkgCredentials_NamesW {
     fn eq(&self, other: &Self) -> bool {
@@ -20062,6 +20438,7 @@ impl ::core::fmt::Debug for SecPkgCredentials_SSIProviderA {
 }
 unsafe impl ::windows::core::Abi for SecPkgCredentials_SSIProviderA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SecPkgCredentials_SSIProviderA {
     fn eq(&self, other: &Self) -> bool {
@@ -20094,6 +20471,7 @@ impl ::core::fmt::Debug for SecPkgCredentials_SSIProviderW {
 }
 unsafe impl ::windows::core::Abi for SecPkgCredentials_SSIProviderW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SecPkgCredentials_SSIProviderW {
     fn eq(&self, other: &Self) -> bool {
@@ -20129,6 +20507,7 @@ impl ::core::fmt::Debug for SecPkgInfoA {
 }
 unsafe impl ::windows::core::Abi for SecPkgInfoA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SecPkgInfoA {
     fn eq(&self, other: &Self) -> bool {
@@ -20164,6 +20543,7 @@ impl ::core::fmt::Debug for SecPkgInfoW {
 }
 unsafe impl ::windows::core::Abi for SecPkgInfoW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SecPkgInfoW {
     fn eq(&self, other: &Self) -> bool {
@@ -20263,6 +20643,7 @@ impl ::core::fmt::Debug for SecurityFunctionTableA {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Credentials"))]
 unsafe impl ::windows::core::Abi for SecurityFunctionTableA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Credentials"))]
 impl ::core::cmp::PartialEq for SecurityFunctionTableA {
@@ -20365,6 +20746,7 @@ impl ::core::fmt::Debug for SecurityFunctionTableW {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Credentials"))]
 unsafe impl ::windows::core::Abi for SecurityFunctionTableW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Credentials"))]
 impl ::core::cmp::PartialEq for SecurityFunctionTableW {
@@ -21129,6 +21511,7 @@ impl ::core::fmt::Debug for TLS_EXTENSION_SUBSCRIPTION {
 }
 unsafe impl ::windows::core::Abi for TLS_EXTENSION_SUBSCRIPTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TLS_EXTENSION_SUBSCRIPTION {
     fn eq(&self, other: &Self) -> bool {
@@ -21162,6 +21545,7 @@ impl ::core::default::Default for TOKENBINDING_EXTENSION_FORMAT {
 }
 unsafe impl ::windows::core::Abi for TOKENBINDING_EXTENSION_FORMAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TOKENBINDING_EXTENSION_FORMAT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -21186,6 +21570,7 @@ impl ::core::fmt::Debug for TOKENBINDING_IDENTIFIER {
 }
 unsafe impl ::windows::core::Abi for TOKENBINDING_IDENTIFIER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TOKENBINDING_IDENTIFIER {
     fn eq(&self, other: &Self) -> bool {
@@ -21223,6 +21608,7 @@ impl ::core::default::Default for TOKENBINDING_KEY_PARAMETERS_TYPE {
 }
 unsafe impl ::windows::core::Abi for TOKENBINDING_KEY_PARAMETERS_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TOKENBINDING_KEY_PARAMETERS_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -21248,6 +21634,7 @@ impl ::core::fmt::Debug for TOKENBINDING_KEY_TYPES {
 }
 unsafe impl ::windows::core::Abi for TOKENBINDING_KEY_TYPES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TOKENBINDING_KEY_TYPES {
     fn eq(&self, other: &Self) -> bool {
@@ -21283,6 +21670,7 @@ impl ::core::fmt::Debug for TOKENBINDING_RESULT_DATA {
 }
 unsafe impl ::windows::core::Abi for TOKENBINDING_RESULT_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TOKENBINDING_RESULT_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -21314,6 +21702,7 @@ impl ::core::fmt::Debug for TOKENBINDING_RESULT_LIST {
 }
 unsafe impl ::windows::core::Abi for TOKENBINDING_RESULT_LIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TOKENBINDING_RESULT_LIST {
     fn eq(&self, other: &Self) -> bool {
@@ -21347,6 +21736,7 @@ impl ::core::default::Default for TOKENBINDING_TYPE {
 }
 unsafe impl ::windows::core::Abi for TOKENBINDING_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TOKENBINDING_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -21377,6 +21767,7 @@ impl ::core::fmt::Debug for TRUSTED_CONTROLLERS_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for TRUSTED_CONTROLLERS_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for TRUSTED_CONTROLLERS_INFO {
@@ -21422,6 +21813,7 @@ impl ::core::fmt::Debug for TRUSTED_DOMAIN_AUTH_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for TRUSTED_DOMAIN_AUTH_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TRUSTED_DOMAIN_AUTH_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -21459,6 +21851,7 @@ impl ::core::fmt::Debug for TRUSTED_DOMAIN_FULL_INFORMATION {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for TRUSTED_DOMAIN_FULL_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for TRUSTED_DOMAIN_FULL_INFORMATION {
@@ -21499,6 +21892,7 @@ impl ::core::fmt::Debug for TRUSTED_DOMAIN_FULL_INFORMATION2 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for TRUSTED_DOMAIN_FULL_INFORMATION2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for TRUSTED_DOMAIN_FULL_INFORMATION2 {
@@ -21542,6 +21936,7 @@ impl ::core::fmt::Debug for TRUSTED_DOMAIN_INFORMATION_EX {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for TRUSTED_DOMAIN_INFORMATION_EX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for TRUSTED_DOMAIN_INFORMATION_EX {
@@ -21587,6 +21982,7 @@ impl ::core::fmt::Debug for TRUSTED_DOMAIN_INFORMATION_EX2 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for TRUSTED_DOMAIN_INFORMATION_EX2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for TRUSTED_DOMAIN_INFORMATION_EX2 {
@@ -21625,6 +22021,7 @@ impl ::core::fmt::Debug for TRUSTED_DOMAIN_NAME_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for TRUSTED_DOMAIN_NAME_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for TRUSTED_DOMAIN_NAME_INFO {
@@ -21658,6 +22055,7 @@ impl ::core::fmt::Debug for TRUSTED_DOMAIN_SUPPORTED_ENCRYPTION_TYPES {
 }
 unsafe impl ::windows::core::Abi for TRUSTED_DOMAIN_SUPPORTED_ENCRYPTION_TYPES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TRUSTED_DOMAIN_SUPPORTED_ENCRYPTION_TYPES {
     fn eq(&self, other: &Self) -> bool {
@@ -21701,6 +22099,7 @@ impl ::core::default::Default for TRUSTED_DOMAIN_TRUST_ATTRIBUTES {
 }
 unsafe impl ::windows::core::Abi for TRUSTED_DOMAIN_TRUST_ATTRIBUTES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TRUSTED_DOMAIN_TRUST_ATTRIBUTES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -21732,6 +22131,7 @@ impl ::core::default::Default for TRUSTED_DOMAIN_TRUST_DIRECTION {
 }
 unsafe impl ::windows::core::Abi for TRUSTED_DOMAIN_TRUST_DIRECTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TRUSTED_DOMAIN_TRUST_DIRECTION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -21763,6 +22163,7 @@ impl ::core::default::Default for TRUSTED_DOMAIN_TRUST_TYPE {
 }
 unsafe impl ::windows::core::Abi for TRUSTED_DOMAIN_TRUST_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TRUSTED_DOMAIN_TRUST_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -21812,6 +22213,7 @@ impl ::core::default::Default for TRUSTED_INFORMATION_CLASS {
 }
 unsafe impl ::windows::core::Abi for TRUSTED_INFORMATION_CLASS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TRUSTED_INFORMATION_CLASS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -21842,6 +22244,7 @@ impl ::core::fmt::Debug for TRUSTED_PASSWORD_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for TRUSTED_PASSWORD_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for TRUSTED_PASSWORD_INFO {
@@ -21875,6 +22278,7 @@ impl ::core::fmt::Debug for TRUSTED_POSIX_OFFSET_INFO {
 }
 unsafe impl ::windows::core::Abi for TRUSTED_POSIX_OFFSET_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TRUSTED_POSIX_OFFSET_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -22159,6 +22563,7 @@ impl ::core::clone::Clone for USER_ALL_INFORMATION {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for USER_ALL_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for USER_ALL_INFORMATION {
@@ -22225,6 +22630,7 @@ impl ::core::fmt::Debug for USER_SESSION_KEY {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_PasswordManagement"))]
 unsafe impl ::windows::core::Abi for USER_SESSION_KEY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_PasswordManagement"))]
 impl ::core::cmp::PartialEq for USER_SESSION_KEY {
@@ -22310,6 +22716,7 @@ impl ::core::fmt::Debug for X509Certificate {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for X509Certificate {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for X509Certificate {
@@ -22360,6 +22767,7 @@ impl ::core::default::Default for eTlsHashAlgorithm {
 }
 unsafe impl ::windows::core::Abi for eTlsHashAlgorithm {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for eTlsHashAlgorithm {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -22391,6 +22799,7 @@ impl ::core::default::Default for eTlsSignatureAlgorithm {
 }
 unsafe impl ::windows::core::Abi for eTlsSignatureAlgorithm {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for eTlsSignatureAlgorithm {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

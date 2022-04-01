@@ -46,6 +46,7 @@ impl ::core::fmt::Debug for APOInitBaseStruct {
 }
 unsafe impl ::windows::core::Abi for APOInitBaseStruct {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for APOInitBaseStruct {
     fn eq(&self, other: &Self) -> bool {
@@ -89,6 +90,7 @@ impl ::core::fmt::Debug for APOInitSystemEffects {
 #[cfg(feature = "Win32_UI_Shell_PropertiesSystem")]
 unsafe impl ::windows::core::Abi for APOInitSystemEffects {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_UI_Shell_PropertiesSystem")]
 impl ::core::cmp::PartialEq for APOInitSystemEffects {
@@ -153,6 +155,7 @@ impl ::core::fmt::Debug for APOInitSystemEffects2 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_UI_Shell_PropertiesSystem"))]
 unsafe impl ::windows::core::Abi for APOInitSystemEffects2 {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_UI_Shell_PropertiesSystem"))]
 impl ::core::cmp::PartialEq for APOInitSystemEffects2 {
@@ -214,6 +217,7 @@ impl ::core::fmt::Debug for APOInitSystemEffects3 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com", feature = "Win32_UI_Shell_PropertiesSystem"))]
 unsafe impl ::windows::core::Abi for APOInitSystemEffects3 {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com", feature = "Win32_UI_Shell_PropertiesSystem"))]
 impl ::core::cmp::PartialEq for APOInitSystemEffects3 {
@@ -252,6 +256,7 @@ impl ::core::default::Default for APO_BUFFER_FLAGS {
 }
 unsafe impl ::windows::core::Abi for APO_BUFFER_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for APO_BUFFER_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -281,6 +286,7 @@ impl ::core::default::Default for APO_CONNECTION_BUFFER_TYPE {
 }
 unsafe impl ::windows::core::Abi for APO_CONNECTION_BUFFER_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for APO_CONNECTION_BUFFER_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -308,6 +314,7 @@ impl ::core::fmt::Debug for APO_CONNECTION_DESCRIPTOR {
 }
 unsafe impl ::windows::core::Abi for APO_CONNECTION_DESCRIPTOR {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for APO_CONNECTION_DESCRIPTOR {
     fn eq(&self, other: &Self) -> bool {
@@ -341,6 +348,7 @@ impl ::core::fmt::Debug for APO_CONNECTION_PROPERTY {
 }
 unsafe impl ::windows::core::Abi for APO_CONNECTION_PROPERTY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for APO_CONNECTION_PROPERTY {
     fn eq(&self, other: &Self) -> bool {
@@ -372,6 +380,7 @@ impl ::core::fmt::Debug for APO_CONNECTION_PROPERTY_V2 {
 }
 unsafe impl ::windows::core::Abi for APO_CONNECTION_PROPERTY_V2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for APO_CONNECTION_PROPERTY_V2 {
     fn eq(&self, other: &Self) -> bool {
@@ -415,6 +424,7 @@ impl ::core::default::Default for APO_FLAG {
 }
 unsafe impl ::windows::core::Abi for APO_FLAG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for APO_FLAG {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -450,6 +460,7 @@ impl ::core::default::Default for APO_LOG_LEVEL {
 }
 unsafe impl ::windows::core::Abi for APO_LOG_LEVEL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for APO_LOG_LEVEL {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -472,6 +483,7 @@ impl ::core::clone::Clone for APO_NOTIFICATION {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_UI_Shell_PropertiesSystem"))]
 unsafe impl ::windows::core::Abi for APO_NOTIFICATION {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_UI_Shell_PropertiesSystem"))]
 impl ::core::cmp::PartialEq for APO_NOTIFICATION {
@@ -504,6 +516,7 @@ impl ::core::clone::Clone for APO_NOTIFICATION_0 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_UI_Shell_PropertiesSystem"))]
 unsafe impl ::windows::core::Abi for APO_NOTIFICATION_0 {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_UI_Shell_PropertiesSystem"))]
 impl ::core::cmp::PartialEq for APO_NOTIFICATION_0 {
@@ -532,6 +545,7 @@ impl ::core::clone::Clone for APO_NOTIFICATION_DESCRIPTOR {
 }
 unsafe impl ::windows::core::Abi for APO_NOTIFICATION_DESCRIPTOR {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for APO_NOTIFICATION_DESCRIPTOR {
     fn eq(&self, other: &Self) -> bool {
@@ -558,6 +572,7 @@ impl ::core::clone::Clone for APO_NOTIFICATION_DESCRIPTOR_0 {
 }
 unsafe impl ::windows::core::Abi for APO_NOTIFICATION_DESCRIPTOR_0 {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for APO_NOTIFICATION_DESCRIPTOR_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -595,6 +610,7 @@ impl ::core::default::Default for APO_NOTIFICATION_TYPE {
 }
 unsafe impl ::windows::core::Abi for APO_NOTIFICATION_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for APO_NOTIFICATION_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -645,6 +661,7 @@ impl ::core::fmt::Debug for APO_REG_PROPERTIES {
 }
 unsafe impl ::windows::core::Abi for APO_REG_PROPERTIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for APO_REG_PROPERTIES {
     fn eq(&self, other: &Self) -> bool {
@@ -680,6 +697,7 @@ impl ::core::fmt::Debug for AUDIO_ENDPOINT_PROPERTY_CHANGE_APO_NOTIFICATION_DESC
 }
 unsafe impl ::windows::core::Abi for AUDIO_ENDPOINT_PROPERTY_CHANGE_APO_NOTIFICATION_DESCRIPTOR {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for AUDIO_ENDPOINT_PROPERTY_CHANGE_APO_NOTIFICATION_DESCRIPTOR {
     fn eq(&self, other: &Self) -> bool {
@@ -715,6 +733,7 @@ impl ::core::fmt::Debug for AUDIO_ENDPOINT_PROPERTY_CHANGE_NOTIFICATION {
 #[cfg(feature = "Win32_UI_Shell_PropertiesSystem")]
 unsafe impl ::windows::core::Abi for AUDIO_ENDPOINT_PROPERTY_CHANGE_NOTIFICATION {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_UI_Shell_PropertiesSystem")]
 impl ::core::cmp::PartialEq for AUDIO_ENDPOINT_PROPERTY_CHANGE_NOTIFICATION {
@@ -747,6 +766,7 @@ impl ::core::fmt::Debug for AUDIO_ENDPOINT_VOLUME_APO_NOTIFICATION_DESCRIPTOR {
 }
 unsafe impl ::windows::core::Abi for AUDIO_ENDPOINT_VOLUME_APO_NOTIFICATION_DESCRIPTOR {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for AUDIO_ENDPOINT_VOLUME_APO_NOTIFICATION_DESCRIPTOR {
     fn eq(&self, other: &Self) -> bool {
@@ -781,6 +801,7 @@ impl ::core::fmt::Debug for AUDIO_ENDPOINT_VOLUME_CHANGE_NOTIFICATION {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for AUDIO_ENDPOINT_VOLUME_CHANGE_NOTIFICATION {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for AUDIO_ENDPOINT_VOLUME_CHANGE_NOTIFICATION {
@@ -817,6 +838,7 @@ impl ::core::default::Default for AUDIO_FLOW_TYPE {
 }
 unsafe impl ::windows::core::Abi for AUDIO_FLOW_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AUDIO_FLOW_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -856,6 +878,7 @@ impl ::core::fmt::Debug for AUDIO_SYSTEMEFFECT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for AUDIO_SYSTEMEFFECT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for AUDIO_SYSTEMEFFECT {
@@ -889,6 +912,7 @@ impl ::core::fmt::Debug for AUDIO_SYSTEMEFFECTS_PROPERTY_CHANGE_APO_NOTIFICATION
 }
 unsafe impl ::windows::core::Abi for AUDIO_SYSTEMEFFECTS_PROPERTY_CHANGE_APO_NOTIFICATION_DESCRIPTOR {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for AUDIO_SYSTEMEFFECTS_PROPERTY_CHANGE_APO_NOTIFICATION_DESCRIPTOR {
     fn eq(&self, other: &Self) -> bool {
@@ -932,6 +956,7 @@ impl ::core::fmt::Debug for AUDIO_SYSTEMEFFECTS_PROPERTY_CHANGE_NOTIFICATION {
 #[cfg(feature = "Win32_UI_Shell_PropertiesSystem")]
 unsafe impl ::windows::core::Abi for AUDIO_SYSTEMEFFECTS_PROPERTY_CHANGE_NOTIFICATION {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_UI_Shell_PropertiesSystem")]
 impl ::core::cmp::PartialEq for AUDIO_SYSTEMEFFECTS_PROPERTY_CHANGE_NOTIFICATION {
@@ -968,6 +993,7 @@ impl ::core::default::Default for AUDIO_SYSTEMEFFECT_STATE {
 }
 unsafe impl ::windows::core::Abi for AUDIO_SYSTEMEFFECT_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AUDIO_SYSTEMEFFECT_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -997,6 +1023,7 @@ impl ::core::fmt::Debug for AudioFXExtensionParams {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_UI_Shell_PropertiesSystem"))]
 unsafe impl ::windows::core::Abi for AudioFXExtensionParams {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_UI_Shell_PropertiesSystem"))]
 impl ::core::cmp::PartialEq for AudioFXExtensionParams {
@@ -1039,6 +1066,7 @@ impl ::core::default::Default for EAudioConstriction {
 }
 unsafe impl ::windows::core::Abi for EAudioConstriction {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EAudioConstriction {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1050,6 +1078,11 @@ pub type FNAPONOTIFICATIONCALLBACK = ::core::option::Option<unsafe extern "syste
 #[doc = "*Required features: `\"Win32_Media_Audio_Apo\"`*"]
 #[repr(transparent)]
 pub struct IApoAcousticEchoCancellation(::windows::core::IUnknown);
+impl ::core::clone::Clone for IApoAcousticEchoCancellation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IApoAcousticEchoCancellation {}
 impl ::core::convert::From<IApoAcousticEchoCancellation> for ::windows::core::IUnknown {
     fn from(value: IApoAcousticEchoCancellation) -> Self {
@@ -1069,11 +1102,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IApoAcous
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IApoAcousticEchoCancellation {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IApoAcousticEchoCancellation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IApoAcousticEchoCancellation {
@@ -1099,6 +1127,11 @@ pub struct IApoAcousticEchoCancellation_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_Audio_Apo\"`*"]
 #[repr(transparent)]
 pub struct IApoAuxiliaryInputConfiguration(::windows::core::IUnknown);
+impl ::core::clone::Clone for IApoAuxiliaryInputConfiguration {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IApoAuxiliaryInputConfiguration {
     #[doc = "*Required features: `\"Win32_Media_Audio_Apo\"`*"]
     pub unsafe fn AddAuxiliaryInput(&self, dwinputid: u32, pbydata: &[u8], pinputconnection: *const APO_CONNECTION_DESCRIPTOR) -> ::windows::core::Result<()> {
@@ -1134,11 +1167,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IApoA
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IApoAuxiliaryInputConfiguration {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IApoAuxiliaryInputConfiguration {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1165,6 +1193,11 @@ pub struct IApoAuxiliaryInputConfiguration_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_Audio_Apo\"`*"]
 #[repr(transparent)]
 pub struct IApoAuxiliaryInputRT(::windows::core::IUnknown);
+impl ::core::clone::Clone for IApoAuxiliaryInputRT {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IApoAuxiliaryInputRT {
     #[doc = "*Required features: `\"Win32_Media_Audio_Apo\"`*"]
     pub unsafe fn AcceptInput(&self, dwinputid: u32, pinputconnection: *const APO_CONNECTION_PROPERTY) {
@@ -1191,11 +1224,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IApoA
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IApoAuxiliaryInputRT {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IApoAuxiliaryInputRT {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1220,6 +1248,11 @@ pub struct IApoAuxiliaryInputRT_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_Audio_Apo\"`*"]
 #[repr(transparent)]
 pub struct IAudioDeviceModulesClient(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAudioDeviceModulesClient {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAudioDeviceModulesClient {
     #[doc = "*Required features: `\"Win32_Media_Audio_Apo\"`*"]
     pub unsafe fn SetAudioDeviceModulesManager<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, paudiodevicemodulesmanager: Param0) -> ::windows::core::Result<()> {
@@ -1246,11 +1279,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAudi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAudioDeviceModulesClient {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAudioDeviceModulesClient {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1275,6 +1303,11 @@ pub struct IAudioDeviceModulesClient_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_Audio_Apo\"`*"]
 #[repr(transparent)]
 pub struct IAudioMediaType(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAudioMediaType {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAudioMediaType {
     #[doc = "*Required features: `\"Win32_Media_Audio_Apo\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -1317,11 +1350,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAudi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAudioMediaType {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAudioMediaType {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1352,6 +1380,11 @@ pub struct IAudioMediaType_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_Audio_Apo\"`*"]
 #[repr(transparent)]
 pub struct IAudioProcessingObject(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAudioProcessingObject {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAudioProcessingObject {
     #[doc = "*Required features: `\"Win32_Media_Audio_Apo\"`*"]
     pub unsafe fn Reset(&self) -> ::windows::core::Result<()> {
@@ -1407,11 +1440,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAudi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAudioProcessingObject {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAudioProcessingObject {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1442,6 +1470,11 @@ pub struct IAudioProcessingObject_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_Audio_Apo\"`*"]
 #[repr(transparent)]
 pub struct IAudioProcessingObjectConfiguration(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAudioProcessingObjectConfiguration {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAudioProcessingObjectConfiguration {
     #[doc = "*Required features: `\"Win32_Media_Audio_Apo\"`*"]
     pub unsafe fn LockForProcess(&self, u32numinputconnections: u32, ppinputconnections: *const *const APO_CONNECTION_DESCRIPTOR, u32numoutputconnections: u32, ppoutputconnections: *const *const APO_CONNECTION_DESCRIPTOR) -> ::windows::core::Result<()> {
@@ -1472,11 +1505,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAudi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAudioProcessingObjectConfiguration {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAudioProcessingObjectConfiguration {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1502,6 +1530,11 @@ pub struct IAudioProcessingObjectConfiguration_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_Audio_Apo\"`*"]
 #[repr(transparent)]
 pub struct IAudioProcessingObjectLoggingService(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAudioProcessingObjectLoggingService {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAudioProcessingObjectLoggingService {
     #[doc = "*Required features: `\"Win32_Media_Audio_Apo\"`*"]
     pub unsafe fn ApoLog<'a, Param1: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, level: APO_LOG_LEVEL, format: Param1) {
@@ -1528,11 +1561,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAudi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAudioProcessingObjectLoggingService {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAudioProcessingObjectLoggingService {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1557,6 +1585,11 @@ pub struct IAudioProcessingObjectLoggingService_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_Audio_Apo\"`*"]
 #[repr(transparent)]
 pub struct IAudioProcessingObjectNotifications(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAudioProcessingObjectNotifications {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAudioProcessingObjectNotifications {
     #[doc = "*Required features: `\"Win32_Media_Audio_Apo\"`*"]
     pub unsafe fn GetApoNotificationRegistrationInfo(&self, aponotifications: *mut *mut APO_NOTIFICATION_DESCRIPTOR, count: *mut u32) -> ::windows::core::Result<()> {
@@ -1588,11 +1621,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAudi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAudioProcessingObjectNotifications {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAudioProcessingObjectNotifications {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1621,6 +1649,11 @@ pub struct IAudioProcessingObjectNotifications_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_Audio_Apo\"`*"]
 #[repr(transparent)]
 pub struct IAudioProcessingObjectRT(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAudioProcessingObjectRT {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAudioProcessingObjectRT {
     #[doc = "*Required features: `\"Win32_Media_Audio_Apo\"`*"]
     pub unsafe fn APOProcess(&self, u32numinputconnections: u32, ppinputconnections: *const *const APO_CONNECTION_PROPERTY, u32numoutputconnections: u32, ppoutputconnections: *mut *mut APO_CONNECTION_PROPERTY) {
@@ -1655,11 +1688,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAudi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAudioProcessingObjectRT {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAudioProcessingObjectRT {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1686,6 +1714,11 @@ pub struct IAudioProcessingObjectRT_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_Audio_Apo\"`*"]
 #[repr(transparent)]
 pub struct IAudioProcessingObjectRTQueueService(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAudioProcessingObjectRTQueueService {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAudioProcessingObjectRTQueueService {
     #[doc = "*Required features: `\"Win32_Media_Audio_Apo\"`*"]
     pub unsafe fn GetRealTimeWorkQueue(&self) -> ::windows::core::Result<u32> {
@@ -1713,11 +1746,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAudi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAudioProcessingObjectRTQueueService {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAudioProcessingObjectRTQueueService {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1742,6 +1770,11 @@ pub struct IAudioProcessingObjectRTQueueService_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_Audio_Apo\"`*"]
 #[repr(transparent)]
 pub struct IAudioProcessingObjectVBR(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAudioProcessingObjectVBR {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAudioProcessingObjectVBR {
     #[doc = "*Required features: `\"Win32_Media_Audio_Apo\"`*"]
     pub unsafe fn CalcMaxInputFrames(&self, u32maxoutputframecount: u32) -> ::windows::core::Result<u32> {
@@ -1774,11 +1807,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAudi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAudioProcessingObjectVBR {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAudioProcessingObjectVBR {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1804,6 +1832,11 @@ pub struct IAudioProcessingObjectVBR_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_Audio_Apo\"`*"]
 #[repr(transparent)]
 pub struct IAudioSystemEffects(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAudioSystemEffects {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAudioSystemEffects {}
 impl ::core::convert::From<IAudioSystemEffects> for ::windows::core::IUnknown {
     fn from(value: IAudioSystemEffects) -> Self {
@@ -1823,11 +1856,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IAudioSys
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAudioSystemEffects {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IAudioSystemEffects {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IAudioSystemEffects {
@@ -1853,6 +1881,11 @@ pub struct IAudioSystemEffects_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_Audio_Apo\"`*"]
 #[repr(transparent)]
 pub struct IAudioSystemEffects2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAudioSystemEffects2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAudioSystemEffects2 {
     #[doc = "*Required features: `\"Win32_Media_Audio_Apo\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -1900,11 +1933,6 @@ impl<'a> ::windows::core::IntoParam<'a, IAudioSystemEffects> for &'a IAudioSyste
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAudioSystemEffects2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAudioSystemEffects2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1932,6 +1960,11 @@ pub struct IAudioSystemEffects2_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_Audio_Apo\"`*"]
 #[repr(transparent)]
 pub struct IAudioSystemEffects3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAudioSystemEffects3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAudioSystemEffects3 {
     #[doc = "*Required features: `\"Win32_Media_Audio_Apo\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -2008,11 +2041,6 @@ impl<'a> ::windows::core::IntoParam<'a, IAudioSystemEffects2> for &'a IAudioSyst
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAudioSystemEffects3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAudioSystemEffects3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2041,6 +2069,11 @@ pub struct IAudioSystemEffects3_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_Audio_Apo\"`*"]
 #[repr(transparent)]
 pub struct IAudioSystemEffectsCustomFormats(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAudioSystemEffectsCustomFormats {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAudioSystemEffectsCustomFormats {
     #[doc = "*Required features: `\"Win32_Media_Audio_Apo\"`*"]
     pub unsafe fn GetFormatCount(&self) -> ::windows::core::Result<u32> {
@@ -2076,11 +2109,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IAudioSys
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAudioSystemEffectsCustomFormats {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IAudioSystemEffectsCustomFormats {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IAudioSystemEffectsCustomFormats {
@@ -2221,6 +2249,7 @@ impl ::core::fmt::Debug for UNCOMPRESSEDAUDIOFORMAT {
 }
 unsafe impl ::windows::core::Abi for UNCOMPRESSEDAUDIOFORMAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for UNCOMPRESSEDAUDIOFORMAT {
     fn eq(&self, other: &Self) -> bool {

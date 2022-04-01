@@ -517,6 +517,7 @@ impl ::core::default::Default for D3D10_ASYNC_GETDATA_FLAG {
 }
 unsafe impl ::windows::core::Abi for D3D10_ASYNC_GETDATA_FLAG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D10_ASYNC_GETDATA_FLAG {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -554,6 +555,7 @@ impl ::core::default::Default for D3D10_BIND_FLAG {
 }
 unsafe impl ::windows::core::Abi for D3D10_BIND_FLAG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D10_BIND_FLAG {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -611,6 +613,7 @@ impl ::core::default::Default for D3D10_BLEND {
 }
 unsafe impl ::windows::core::Abi for D3D10_BLEND {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D10_BLEND {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -648,6 +651,7 @@ impl ::core::fmt::Debug for D3D10_BLEND_DESC {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3D10_BLEND_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3D10_BLEND_DESC {
@@ -688,6 +692,7 @@ impl ::core::fmt::Debug for D3D10_BLEND_DESC1 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3D10_BLEND_DESC1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3D10_BLEND_DESC1 {
@@ -730,6 +735,7 @@ impl ::core::default::Default for D3D10_BLEND_OP {
 }
 unsafe impl ::windows::core::Abi for D3D10_BLEND_OP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D10_BLEND_OP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -759,6 +765,7 @@ impl ::core::fmt::Debug for D3D10_BOX {
 }
 unsafe impl ::windows::core::Abi for D3D10_BOX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D10_BOX {
     fn eq(&self, other: &Self) -> bool {
@@ -801,6 +808,7 @@ impl ::core::fmt::Debug for D3D10_BUFFER_DESC {
 }
 unsafe impl ::windows::core::Abi for D3D10_BUFFER_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D10_BUFFER_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -827,6 +835,7 @@ impl ::core::clone::Clone for D3D10_BUFFER_RTV {
 }
 unsafe impl ::windows::core::Abi for D3D10_BUFFER_RTV {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D10_BUFFER_RTV {
     fn eq(&self, other: &Self) -> bool {
@@ -853,6 +862,7 @@ impl ::core::clone::Clone for D3D10_BUFFER_RTV_0 {
 }
 unsafe impl ::windows::core::Abi for D3D10_BUFFER_RTV_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D10_BUFFER_RTV_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -879,6 +889,7 @@ impl ::core::clone::Clone for D3D10_BUFFER_RTV_1 {
 }
 unsafe impl ::windows::core::Abi for D3D10_BUFFER_RTV_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D10_BUFFER_RTV_1 {
     fn eq(&self, other: &Self) -> bool {
@@ -905,6 +916,7 @@ impl ::core::clone::Clone for D3D10_BUFFER_SRV {
 }
 unsafe impl ::windows::core::Abi for D3D10_BUFFER_SRV {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D10_BUFFER_SRV {
     fn eq(&self, other: &Self) -> bool {
@@ -931,6 +943,7 @@ impl ::core::clone::Clone for D3D10_BUFFER_SRV_0 {
 }
 unsafe impl ::windows::core::Abi for D3D10_BUFFER_SRV_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D10_BUFFER_SRV_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -957,6 +970,7 @@ impl ::core::clone::Clone for D3D10_BUFFER_SRV_1 {
 }
 unsafe impl ::windows::core::Abi for D3D10_BUFFER_SRV_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D10_BUFFER_SRV_1 {
     fn eq(&self, other: &Self) -> bool {
@@ -990,6 +1004,7 @@ impl ::core::default::Default for D3D10_CLEAR_FLAG {
 }
 unsafe impl ::windows::core::Abi for D3D10_CLEAR_FLAG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D10_CLEAR_FLAG {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1027,6 +1042,7 @@ impl ::core::default::Default for D3D10_COLOR_WRITE_ENABLE {
 }
 unsafe impl ::windows::core::Abi for D3D10_COLOR_WRITE_ENABLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D10_COLOR_WRITE_ENABLE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1136,6 +1152,7 @@ impl ::core::default::Default for D3D10_COMPARISON_FUNC {
 }
 unsafe impl ::windows::core::Abi for D3D10_COMPARISON_FUNC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D10_COMPARISON_FUNC {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1197,6 +1214,7 @@ impl ::core::default::Default for D3D10_COUNTER {
 }
 unsafe impl ::windows::core::Abi for D3D10_COUNTER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D10_COUNTER {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1222,6 +1240,7 @@ impl ::core::fmt::Debug for D3D10_COUNTER_DESC {
 }
 unsafe impl ::windows::core::Abi for D3D10_COUNTER_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D10_COUNTER_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -1254,6 +1273,7 @@ impl ::core::fmt::Debug for D3D10_COUNTER_INFO {
 }
 unsafe impl ::windows::core::Abi for D3D10_COUNTER_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D10_COUNTER_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -1291,6 +1311,7 @@ impl ::core::default::Default for D3D10_COUNTER_TYPE {
 }
 unsafe impl ::windows::core::Abi for D3D10_COUNTER_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D10_COUNTER_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1318,6 +1339,7 @@ impl ::core::default::Default for D3D10_CPU_ACCESS_FLAG {
 }
 unsafe impl ::windows::core::Abi for D3D10_CPU_ACCESS_FLAG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D10_CPU_ACCESS_FLAG {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1359,6 +1381,7 @@ impl ::core::default::Default for D3D10_CREATE_DEVICE_FLAG {
 }
 unsafe impl ::windows::core::Abi for D3D10_CREATE_DEVICE_FLAG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D10_CREATE_DEVICE_FLAG {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1388,6 +1411,7 @@ impl ::core::default::Default for D3D10_CULL_MODE {
 }
 unsafe impl ::windows::core::Abi for D3D10_CULL_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D10_CULL_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1473,6 +1497,7 @@ impl ::core::fmt::Debug for D3D10_DEPTH_STENCILOP_DESC {
 }
 unsafe impl ::windows::core::Abi for D3D10_DEPTH_STENCILOP_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D10_DEPTH_STENCILOP_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -1515,6 +1540,7 @@ impl ::core::fmt::Debug for D3D10_DEPTH_STENCIL_DESC {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3D10_DEPTH_STENCIL_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3D10_DEPTH_STENCIL_DESC {
@@ -1549,6 +1575,7 @@ impl ::core::clone::Clone for D3D10_DEPTH_STENCIL_VIEW_DESC {
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 unsafe impl ::windows::core::Abi for D3D10_DEPTH_STENCIL_VIEW_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 impl ::core::cmp::PartialEq for D3D10_DEPTH_STENCIL_VIEW_DESC {
@@ -1586,6 +1613,7 @@ impl ::core::clone::Clone for D3D10_DEPTH_STENCIL_VIEW_DESC_0 {
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 unsafe impl ::windows::core::Abi for D3D10_DEPTH_STENCIL_VIEW_DESC_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 impl ::core::cmp::PartialEq for D3D10_DEPTH_STENCIL_VIEW_DESC_0 {
@@ -1622,6 +1650,7 @@ impl ::core::default::Default for D3D10_DEPTH_WRITE_MASK {
 }
 unsafe impl ::windows::core::Abi for D3D10_DEPTH_WRITE_MASK {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D10_DEPTH_WRITE_MASK {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1693,6 +1722,7 @@ impl ::core::default::Default for D3D10_DEVICE_STATE_TYPES {
 }
 unsafe impl ::windows::core::Abi for D3D10_DEVICE_STATE_TYPES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D10_DEVICE_STATE_TYPES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1726,6 +1756,7 @@ impl ::core::default::Default for D3D10_DRIVER_TYPE {
 }
 unsafe impl ::windows::core::Abi for D3D10_DRIVER_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D10_DRIVER_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1763,6 +1794,7 @@ impl ::core::default::Default for D3D10_DSV_DIMENSION {
 }
 unsafe impl ::windows::core::Abi for D3D10_DSV_DIMENSION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D10_DSV_DIMENSION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1801,6 +1833,7 @@ impl ::core::fmt::Debug for D3D10_EFFECT_DESC {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3D10_EFFECT_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3D10_EFFECT_DESC {
@@ -1845,6 +1878,7 @@ impl ::core::fmt::Debug for D3D10_EFFECT_SHADER_DESC {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3D10_EFFECT_SHADER_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3D10_EFFECT_SHADER_DESC {
@@ -1894,6 +1928,7 @@ impl ::core::fmt::Debug for D3D10_EFFECT_TYPE_DESC {
 #[cfg(feature = "Win32_Graphics_Direct3D")]
 unsafe impl ::windows::core::Abi for D3D10_EFFECT_TYPE_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Direct3D")]
 impl ::core::cmp::PartialEq for D3D10_EFFECT_TYPE_DESC {
@@ -1934,6 +1969,7 @@ impl ::core::fmt::Debug for D3D10_EFFECT_VARIABLE_DESC {
 }
 unsafe impl ::windows::core::Abi for D3D10_EFFECT_VARIABLE_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D10_EFFECT_VARIABLE_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -1981,6 +2017,7 @@ impl ::core::default::Default for D3D10_FEATURE_LEVEL1 {
 }
 unsafe impl ::windows::core::Abi for D3D10_FEATURE_LEVEL1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D10_FEATURE_LEVEL1 {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2008,6 +2045,7 @@ impl ::core::default::Default for D3D10_FILL_MODE {
 }
 unsafe impl ::windows::core::Abi for D3D10_FILL_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D10_FILL_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2069,6 +2107,7 @@ impl ::core::default::Default for D3D10_FILTER {
 }
 unsafe impl ::windows::core::Abi for D3D10_FILTER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D10_FILTER {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2096,6 +2135,7 @@ impl ::core::default::Default for D3D10_FILTER_TYPE {
 }
 unsafe impl ::windows::core::Abi for D3D10_FILTER_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D10_FILTER_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2189,6 +2229,7 @@ impl ::core::default::Default for D3D10_FORMAT_SUPPORT {
 }
 unsafe impl ::windows::core::Abi for D3D10_FORMAT_SUPPORT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D10_FORMAT_SUPPORT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2278,6 +2319,7 @@ impl ::core::fmt::Debug for D3D10_INFO_QUEUE_FILTER {
 }
 unsafe impl ::windows::core::Abi for D3D10_INFO_QUEUE_FILTER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D10_INFO_QUEUE_FILTER {
     fn eq(&self, other: &Self) -> bool {
@@ -2313,6 +2355,7 @@ impl ::core::fmt::Debug for D3D10_INFO_QUEUE_FILTER_DESC {
 }
 unsafe impl ::windows::core::Abi for D3D10_INFO_QUEUE_FILTER_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D10_INFO_QUEUE_FILTER_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -2346,6 +2389,7 @@ impl ::core::default::Default for D3D10_INPUT_CLASSIFICATION {
 }
 unsafe impl ::windows::core::Abi for D3D10_INPUT_CLASSIFICATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D10_INPUT_CLASSIFICATION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2381,6 +2425,7 @@ impl ::core::fmt::Debug for D3D10_INPUT_ELEMENT_DESC {
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 unsafe impl ::windows::core::Abi for D3D10_INPUT_ELEMENT_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 impl ::core::cmp::PartialEq for D3D10_INPUT_ELEMENT_DESC {
@@ -2431,6 +2476,7 @@ impl ::core::default::Default for D3D10_MAP {
 }
 unsafe impl ::windows::core::Abi for D3D10_MAP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D10_MAP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2456,6 +2502,7 @@ impl ::core::fmt::Debug for D3D10_MAPPED_TEXTURE2D {
 }
 unsafe impl ::windows::core::Abi for D3D10_MAPPED_TEXTURE2D {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D10_MAPPED_TEXTURE2D {
     fn eq(&self, other: &Self) -> bool {
@@ -2488,6 +2535,7 @@ impl ::core::fmt::Debug for D3D10_MAPPED_TEXTURE3D {
 }
 unsafe impl ::windows::core::Abi for D3D10_MAPPED_TEXTURE3D {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D10_MAPPED_TEXTURE3D {
     fn eq(&self, other: &Self) -> bool {
@@ -2519,6 +2567,7 @@ impl ::core::default::Default for D3D10_MAP_FLAG {
 }
 unsafe impl ::windows::core::Abi for D3D10_MAP_FLAG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D10_MAP_FLAG {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2559,6 +2608,7 @@ impl ::core::fmt::Debug for D3D10_MESSAGE {
 }
 unsafe impl ::windows::core::Abi for D3D10_MESSAGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D10_MESSAGE {
     fn eq(&self, other: &Self) -> bool {
@@ -2610,6 +2660,7 @@ impl ::core::default::Default for D3D10_MESSAGE_CATEGORY {
 }
 unsafe impl ::windows::core::Abi for D3D10_MESSAGE_CATEGORY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D10_MESSAGE_CATEGORY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3647,6 +3698,7 @@ impl ::core::default::Default for D3D10_MESSAGE_ID {
 }
 unsafe impl ::windows::core::Abi for D3D10_MESSAGE_ID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D10_MESSAGE_ID {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3680,6 +3732,7 @@ impl ::core::default::Default for D3D10_MESSAGE_SEVERITY {
 }
 unsafe impl ::windows::core::Abi for D3D10_MESSAGE_SEVERITY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D10_MESSAGE_SEVERITY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3742,6 +3795,7 @@ impl ::core::fmt::Debug for D3D10_PASS_DESC {
 }
 unsafe impl ::windows::core::Abi for D3D10_PASS_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D10_PASS_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -3772,6 +3826,7 @@ impl ::core::fmt::Debug for D3D10_PASS_SHADER_DESC {
 }
 unsafe impl ::windows::core::Abi for D3D10_PASS_SHADER_DESC {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D10_PASS_SHADER_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -3853,6 +3908,7 @@ impl ::core::default::Default for D3D10_QUERY {
 }
 unsafe impl ::windows::core::Abi for D3D10_QUERY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D10_QUERY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3884,6 +3940,7 @@ impl ::core::fmt::Debug for D3D10_QUERY_DATA_PIPELINE_STATISTICS {
 }
 unsafe impl ::windows::core::Abi for D3D10_QUERY_DATA_PIPELINE_STATISTICS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D10_QUERY_DATA_PIPELINE_STATISTICS {
     fn eq(&self, other: &Self) -> bool {
@@ -3915,6 +3972,7 @@ impl ::core::fmt::Debug for D3D10_QUERY_DATA_SO_STATISTICS {
 }
 unsafe impl ::windows::core::Abi for D3D10_QUERY_DATA_SO_STATISTICS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D10_QUERY_DATA_SO_STATISTICS {
     fn eq(&self, other: &Self) -> bool {
@@ -3951,6 +4009,7 @@ impl ::core::fmt::Debug for D3D10_QUERY_DATA_TIMESTAMP_DISJOINT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3D10_QUERY_DATA_TIMESTAMP_DISJOINT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3D10_QUERY_DATA_TIMESTAMP_DISJOINT {
@@ -3985,6 +4044,7 @@ impl ::core::fmt::Debug for D3D10_QUERY_DESC {
 }
 unsafe impl ::windows::core::Abi for D3D10_QUERY_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D10_QUERY_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -4016,6 +4076,7 @@ impl ::core::default::Default for D3D10_QUERY_MISC_FLAG {
 }
 unsafe impl ::windows::core::Abi for D3D10_QUERY_MISC_FLAG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D10_QUERY_MISC_FLAG {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4041,6 +4102,7 @@ impl ::core::default::Default for D3D10_RAISE_FLAG {
 }
 unsafe impl ::windows::core::Abi for D3D10_RAISE_FLAG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D10_RAISE_FLAG {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4090,6 +4152,7 @@ impl ::core::fmt::Debug for D3D10_RASTERIZER_DESC {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3D10_RASTERIZER_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3D10_RASTERIZER_DESC {
@@ -4137,6 +4200,7 @@ impl ::core::fmt::Debug for D3D10_RENDER_TARGET_BLEND_DESC1 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3D10_RENDER_TARGET_BLEND_DESC1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3D10_RENDER_TARGET_BLEND_DESC1 {
@@ -4171,6 +4235,7 @@ impl ::core::clone::Clone for D3D10_RENDER_TARGET_VIEW_DESC {
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 unsafe impl ::windows::core::Abi for D3D10_RENDER_TARGET_VIEW_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 impl ::core::cmp::PartialEq for D3D10_RENDER_TARGET_VIEW_DESC {
@@ -4210,6 +4275,7 @@ impl ::core::clone::Clone for D3D10_RENDER_TARGET_VIEW_DESC_0 {
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 unsafe impl ::windows::core::Abi for D3D10_RENDER_TARGET_VIEW_DESC_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 impl ::core::cmp::PartialEq for D3D10_RENDER_TARGET_VIEW_DESC_0 {
@@ -4300,6 +4366,7 @@ impl ::core::default::Default for D3D10_RESOURCE_DIMENSION {
 }
 unsafe impl ::windows::core::Abi for D3D10_RESOURCE_DIMENSION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D10_RESOURCE_DIMENSION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4333,6 +4400,7 @@ impl ::core::default::Default for D3D10_RESOURCE_MISC_FLAG {
 }
 unsafe impl ::windows::core::Abi for D3D10_RESOURCE_MISC_FLAG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D10_RESOURCE_MISC_FLAG {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4374,6 +4442,7 @@ impl ::core::default::Default for D3D10_RTV_DIMENSION {
 }
 unsafe impl ::windows::core::Abi for D3D10_RTV_DIMENSION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D10_RTV_DIMENSION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4407,6 +4476,7 @@ impl ::core::fmt::Debug for D3D10_SAMPLER_DESC {
 }
 unsafe impl ::windows::core::Abi for D3D10_SAMPLER_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D10_SAMPLER_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -4452,6 +4522,7 @@ impl ::core::fmt::Debug for D3D10_SHADER_BUFFER_DESC {
 #[cfg(feature = "Win32_Graphics_Direct3D")]
 unsafe impl ::windows::core::Abi for D3D10_SHADER_BUFFER_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Direct3D")]
 impl ::core::cmp::PartialEq for D3D10_SHADER_BUFFER_DESC {
@@ -4490,6 +4561,7 @@ impl ::core::fmt::Debug for D3D10_SHADER_DEBUG_FILE_INFO {
 }
 unsafe impl ::windows::core::Abi for D3D10_SHADER_DEBUG_FILE_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D10_SHADER_DEBUG_FILE_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -4562,6 +4634,7 @@ impl ::core::fmt::Debug for D3D10_SHADER_DEBUG_INFO {
 }
 unsafe impl ::windows::core::Abi for D3D10_SHADER_DEBUG_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D10_SHADER_DEBUG_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -4597,6 +4670,7 @@ impl ::core::fmt::Debug for D3D10_SHADER_DEBUG_INPUT_INFO {
 }
 unsafe impl ::windows::core::Abi for D3D10_SHADER_DEBUG_INPUT_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D10_SHADER_DEBUG_INPUT_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -4641,6 +4715,7 @@ impl ::core::fmt::Debug for D3D10_SHADER_DEBUG_INST_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3D10_SHADER_DEBUG_INST_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3D10_SHADER_DEBUG_INST_INFO {
@@ -4689,6 +4764,7 @@ impl ::core::fmt::Debug for D3D10_SHADER_DEBUG_OUTPUTREG_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3D10_SHADER_DEBUG_OUTPUTREG_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3D10_SHADER_DEBUG_OUTPUTREG_INFO {
@@ -4735,6 +4811,7 @@ impl ::core::fmt::Debug for D3D10_SHADER_DEBUG_OUTPUTVAR {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3D10_SHADER_DEBUG_OUTPUTVAR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3D10_SHADER_DEBUG_OUTPUTVAR {
@@ -4795,6 +4872,7 @@ impl ::core::default::Default for D3D10_SHADER_DEBUG_REGTYPE {
 }
 unsafe impl ::windows::core::Abi for D3D10_SHADER_DEBUG_REGTYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D10_SHADER_DEBUG_REGTYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4836,6 +4914,7 @@ impl ::core::default::Default for D3D10_SHADER_DEBUG_SCOPETYPE {
 }
 unsafe impl ::windows::core::Abi for D3D10_SHADER_DEBUG_SCOPETYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D10_SHADER_DEBUG_SCOPETYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4875,6 +4954,7 @@ impl ::core::fmt::Debug for D3D10_SHADER_DEBUG_SCOPEVAR_INFO {
 #[cfg(feature = "Win32_Graphics_Direct3D")]
 unsafe impl ::windows::core::Abi for D3D10_SHADER_DEBUG_SCOPEVAR_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Direct3D")]
 impl ::core::cmp::PartialEq for D3D10_SHADER_DEBUG_SCOPEVAR_INFO {
@@ -4912,6 +4992,7 @@ impl ::core::fmt::Debug for D3D10_SHADER_DEBUG_SCOPE_INFO {
 }
 unsafe impl ::windows::core::Abi for D3D10_SHADER_DEBUG_SCOPE_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D10_SHADER_DEBUG_SCOPE_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -4946,6 +5027,7 @@ impl ::core::fmt::Debug for D3D10_SHADER_DEBUG_TOKEN_INFO {
 }
 unsafe impl ::windows::core::Abi for D3D10_SHADER_DEBUG_TOKEN_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D10_SHADER_DEBUG_TOKEN_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -4981,6 +5063,7 @@ impl ::core::default::Default for D3D10_SHADER_DEBUG_VARTYPE {
 }
 unsafe impl ::windows::core::Abi for D3D10_SHADER_DEBUG_VARTYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D10_SHADER_DEBUG_VARTYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5015,6 +5098,7 @@ impl ::core::fmt::Debug for D3D10_SHADER_DEBUG_VAR_INFO {
 #[cfg(feature = "Win32_Graphics_Direct3D")]
 unsafe impl ::windows::core::Abi for D3D10_SHADER_DEBUG_VAR_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Direct3D")]
 impl ::core::cmp::PartialEq for D3D10_SHADER_DEBUG_VAR_INFO {
@@ -5109,6 +5193,7 @@ impl ::core::fmt::Debug for D3D10_SHADER_DESC {
 #[cfg(feature = "Win32_Graphics_Direct3D")]
 unsafe impl ::windows::core::Abi for D3D10_SHADER_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Direct3D")]
 impl ::core::cmp::PartialEq for D3D10_SHADER_DESC {
@@ -5170,6 +5255,7 @@ impl ::core::fmt::Debug for D3D10_SHADER_INPUT_BIND_DESC {
 #[cfg(feature = "Win32_Graphics_Direct3D")]
 unsafe impl ::windows::core::Abi for D3D10_SHADER_INPUT_BIND_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Direct3D")]
 impl ::core::cmp::PartialEq for D3D10_SHADER_INPUT_BIND_DESC {
@@ -5226,6 +5312,7 @@ impl ::core::clone::Clone for D3D10_SHADER_RESOURCE_VIEW_DESC {
 #[cfg(all(feature = "Win32_Graphics_Direct3D", feature = "Win32_Graphics_Dxgi_Common"))]
 unsafe impl ::windows::core::Abi for D3D10_SHADER_RESOURCE_VIEW_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Graphics_Direct3D", feature = "Win32_Graphics_Dxgi_Common"))]
 impl ::core::cmp::PartialEq for D3D10_SHADER_RESOURCE_VIEW_DESC {
@@ -5266,6 +5353,7 @@ impl ::core::clone::Clone for D3D10_SHADER_RESOURCE_VIEW_DESC_0 {
 #[cfg(all(feature = "Win32_Graphics_Direct3D", feature = "Win32_Graphics_Dxgi_Common"))]
 unsafe impl ::windows::core::Abi for D3D10_SHADER_RESOURCE_VIEW_DESC_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Graphics_Direct3D", feature = "Win32_Graphics_Dxgi_Common"))]
 impl ::core::cmp::PartialEq for D3D10_SHADER_RESOURCE_VIEW_DESC_0 {
@@ -5300,6 +5388,7 @@ impl ::core::clone::Clone for D3D10_SHADER_RESOURCE_VIEW_DESC1 {
 #[cfg(all(feature = "Win32_Graphics_Direct3D", feature = "Win32_Graphics_Dxgi_Common"))]
 unsafe impl ::windows::core::Abi for D3D10_SHADER_RESOURCE_VIEW_DESC1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Graphics_Direct3D", feature = "Win32_Graphics_Dxgi_Common"))]
 impl ::core::cmp::PartialEq for D3D10_SHADER_RESOURCE_VIEW_DESC1 {
@@ -5341,6 +5430,7 @@ impl ::core::clone::Clone for D3D10_SHADER_RESOURCE_VIEW_DESC1_0 {
 #[cfg(all(feature = "Win32_Graphics_Direct3D", feature = "Win32_Graphics_Dxgi_Common"))]
 unsafe impl ::windows::core::Abi for D3D10_SHADER_RESOURCE_VIEW_DESC1_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Graphics_Direct3D", feature = "Win32_Graphics_Dxgi_Common"))]
 impl ::core::cmp::PartialEq for D3D10_SHADER_RESOURCE_VIEW_DESC1_0 {
@@ -5389,6 +5479,7 @@ impl ::core::fmt::Debug for D3D10_SHADER_TYPE_DESC {
 #[cfg(feature = "Win32_Graphics_Direct3D")]
 unsafe impl ::windows::core::Abi for D3D10_SHADER_TYPE_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Direct3D")]
 impl ::core::cmp::PartialEq for D3D10_SHADER_TYPE_DESC {
@@ -5426,6 +5517,7 @@ impl ::core::fmt::Debug for D3D10_SHADER_VARIABLE_DESC {
 }
 unsafe impl ::windows::core::Abi for D3D10_SHADER_VARIABLE_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D10_SHADER_VARIABLE_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -5473,6 +5565,7 @@ impl ::core::fmt::Debug for D3D10_SIGNATURE_PARAMETER_DESC {
 #[cfg(feature = "Win32_Graphics_Direct3D")]
 unsafe impl ::windows::core::Abi for D3D10_SIGNATURE_PARAMETER_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Direct3D")]
 impl ::core::cmp::PartialEq for D3D10_SIGNATURE_PARAMETER_DESC {
@@ -5520,6 +5613,7 @@ impl ::core::fmt::Debug for D3D10_SO_DECLARATION_ENTRY {
 }
 unsafe impl ::windows::core::Abi for D3D10_SO_DECLARATION_ENTRY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D10_SO_DECLARATION_ENTRY {
     fn eq(&self, other: &Self) -> bool {
@@ -5577,6 +5671,7 @@ impl ::core::default::Default for D3D10_STANDARD_MULTISAMPLE_QUALITY_LEVELS {
 }
 unsafe impl ::windows::core::Abi for D3D10_STANDARD_MULTISAMPLE_QUALITY_LEVELS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D10_STANDARD_MULTISAMPLE_QUALITY_LEVELS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5659,6 +5754,7 @@ impl ::core::fmt::Debug for D3D10_STATE_BLOCK_MASK {
 }
 unsafe impl ::windows::core::Abi for D3D10_STATE_BLOCK_MASK {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D10_STATE_BLOCK_MASK {
     fn eq(&self, other: &Self) -> bool {
@@ -5704,6 +5800,7 @@ impl ::core::default::Default for D3D10_STENCIL_OP {
 }
 unsafe impl ::windows::core::Abi for D3D10_STENCIL_OP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D10_STENCIL_OP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5732,6 +5829,7 @@ impl ::core::fmt::Debug for D3D10_SUBRESOURCE_DATA {
 }
 unsafe impl ::windows::core::Abi for D3D10_SUBRESOURCE_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D10_SUBRESOURCE_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -5766,6 +5864,7 @@ impl ::core::fmt::Debug for D3D10_TECHNIQUE_DESC {
 }
 unsafe impl ::windows::core::Abi for D3D10_TECHNIQUE_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D10_TECHNIQUE_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -5798,6 +5897,7 @@ impl ::core::fmt::Debug for D3D10_TEX1D_ARRAY_DSV {
 }
 unsafe impl ::windows::core::Abi for D3D10_TEX1D_ARRAY_DSV {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D10_TEX1D_ARRAY_DSV {
     fn eq(&self, other: &Self) -> bool {
@@ -5830,6 +5930,7 @@ impl ::core::fmt::Debug for D3D10_TEX1D_ARRAY_RTV {
 }
 unsafe impl ::windows::core::Abi for D3D10_TEX1D_ARRAY_RTV {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D10_TEX1D_ARRAY_RTV {
     fn eq(&self, other: &Self) -> bool {
@@ -5863,6 +5964,7 @@ impl ::core::fmt::Debug for D3D10_TEX1D_ARRAY_SRV {
 }
 unsafe impl ::windows::core::Abi for D3D10_TEX1D_ARRAY_SRV {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D10_TEX1D_ARRAY_SRV {
     fn eq(&self, other: &Self) -> bool {
@@ -5893,6 +5995,7 @@ impl ::core::fmt::Debug for D3D10_TEX1D_DSV {
 }
 unsafe impl ::windows::core::Abi for D3D10_TEX1D_DSV {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D10_TEX1D_DSV {
     fn eq(&self, other: &Self) -> bool {
@@ -5923,6 +6026,7 @@ impl ::core::fmt::Debug for D3D10_TEX1D_RTV {
 }
 unsafe impl ::windows::core::Abi for D3D10_TEX1D_RTV {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D10_TEX1D_RTV {
     fn eq(&self, other: &Self) -> bool {
@@ -5954,6 +6058,7 @@ impl ::core::fmt::Debug for D3D10_TEX1D_SRV {
 }
 unsafe impl ::windows::core::Abi for D3D10_TEX1D_SRV {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D10_TEX1D_SRV {
     fn eq(&self, other: &Self) -> bool {
@@ -5985,6 +6090,7 @@ impl ::core::fmt::Debug for D3D10_TEX2DMS_ARRAY_DSV {
 }
 unsafe impl ::windows::core::Abi for D3D10_TEX2DMS_ARRAY_DSV {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D10_TEX2DMS_ARRAY_DSV {
     fn eq(&self, other: &Self) -> bool {
@@ -6016,6 +6122,7 @@ impl ::core::fmt::Debug for D3D10_TEX2DMS_ARRAY_RTV {
 }
 unsafe impl ::windows::core::Abi for D3D10_TEX2DMS_ARRAY_RTV {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D10_TEX2DMS_ARRAY_RTV {
     fn eq(&self, other: &Self) -> bool {
@@ -6047,6 +6154,7 @@ impl ::core::fmt::Debug for D3D10_TEX2DMS_ARRAY_SRV {
 }
 unsafe impl ::windows::core::Abi for D3D10_TEX2DMS_ARRAY_SRV {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D10_TEX2DMS_ARRAY_SRV {
     fn eq(&self, other: &Self) -> bool {
@@ -6077,6 +6185,7 @@ impl ::core::fmt::Debug for D3D10_TEX2DMS_DSV {
 }
 unsafe impl ::windows::core::Abi for D3D10_TEX2DMS_DSV {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D10_TEX2DMS_DSV {
     fn eq(&self, other: &Self) -> bool {
@@ -6107,6 +6216,7 @@ impl ::core::fmt::Debug for D3D10_TEX2DMS_RTV {
 }
 unsafe impl ::windows::core::Abi for D3D10_TEX2DMS_RTV {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D10_TEX2DMS_RTV {
     fn eq(&self, other: &Self) -> bool {
@@ -6137,6 +6247,7 @@ impl ::core::fmt::Debug for D3D10_TEX2DMS_SRV {
 }
 unsafe impl ::windows::core::Abi for D3D10_TEX2DMS_SRV {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D10_TEX2DMS_SRV {
     fn eq(&self, other: &Self) -> bool {
@@ -6169,6 +6280,7 @@ impl ::core::fmt::Debug for D3D10_TEX2D_ARRAY_DSV {
 }
 unsafe impl ::windows::core::Abi for D3D10_TEX2D_ARRAY_DSV {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D10_TEX2D_ARRAY_DSV {
     fn eq(&self, other: &Self) -> bool {
@@ -6201,6 +6313,7 @@ impl ::core::fmt::Debug for D3D10_TEX2D_ARRAY_RTV {
 }
 unsafe impl ::windows::core::Abi for D3D10_TEX2D_ARRAY_RTV {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D10_TEX2D_ARRAY_RTV {
     fn eq(&self, other: &Self) -> bool {
@@ -6234,6 +6347,7 @@ impl ::core::fmt::Debug for D3D10_TEX2D_ARRAY_SRV {
 }
 unsafe impl ::windows::core::Abi for D3D10_TEX2D_ARRAY_SRV {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D10_TEX2D_ARRAY_SRV {
     fn eq(&self, other: &Self) -> bool {
@@ -6264,6 +6378,7 @@ impl ::core::fmt::Debug for D3D10_TEX2D_DSV {
 }
 unsafe impl ::windows::core::Abi for D3D10_TEX2D_DSV {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D10_TEX2D_DSV {
     fn eq(&self, other: &Self) -> bool {
@@ -6294,6 +6409,7 @@ impl ::core::fmt::Debug for D3D10_TEX2D_RTV {
 }
 unsafe impl ::windows::core::Abi for D3D10_TEX2D_RTV {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D10_TEX2D_RTV {
     fn eq(&self, other: &Self) -> bool {
@@ -6325,6 +6441,7 @@ impl ::core::fmt::Debug for D3D10_TEX2D_SRV {
 }
 unsafe impl ::windows::core::Abi for D3D10_TEX2D_SRV {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D10_TEX2D_SRV {
     fn eq(&self, other: &Self) -> bool {
@@ -6357,6 +6474,7 @@ impl ::core::fmt::Debug for D3D10_TEX3D_RTV {
 }
 unsafe impl ::windows::core::Abi for D3D10_TEX3D_RTV {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D10_TEX3D_RTV {
     fn eq(&self, other: &Self) -> bool {
@@ -6388,6 +6506,7 @@ impl ::core::fmt::Debug for D3D10_TEX3D_SRV {
 }
 unsafe impl ::windows::core::Abi for D3D10_TEX3D_SRV {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D10_TEX3D_SRV {
     fn eq(&self, other: &Self) -> bool {
@@ -6421,6 +6540,7 @@ impl ::core::fmt::Debug for D3D10_TEXCUBE_ARRAY_SRV1 {
 }
 unsafe impl ::windows::core::Abi for D3D10_TEXCUBE_ARRAY_SRV1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D10_TEXCUBE_ARRAY_SRV1 {
     fn eq(&self, other: &Self) -> bool {
@@ -6452,6 +6572,7 @@ impl ::core::fmt::Debug for D3D10_TEXCUBE_SRV {
 }
 unsafe impl ::windows::core::Abi for D3D10_TEXCUBE_SRV {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D10_TEXCUBE_SRV {
     fn eq(&self, other: &Self) -> bool {
@@ -6496,6 +6617,7 @@ impl ::core::fmt::Debug for D3D10_TEXTURE1D_DESC {
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 unsafe impl ::windows::core::Abi for D3D10_TEXTURE1D_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 impl ::core::cmp::PartialEq for D3D10_TEXTURE1D_DESC {
@@ -6543,6 +6665,7 @@ impl ::core::fmt::Debug for D3D10_TEXTURE2D_DESC {
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 unsafe impl ::windows::core::Abi for D3D10_TEXTURE2D_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 impl ::core::cmp::PartialEq for D3D10_TEXTURE2D_DESC {
@@ -6589,6 +6712,7 @@ impl ::core::fmt::Debug for D3D10_TEXTURE3D_DESC {
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 unsafe impl ::windows::core::Abi for D3D10_TEXTURE3D_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 impl ::core::cmp::PartialEq for D3D10_TEXTURE3D_DESC {
@@ -6633,6 +6757,7 @@ impl ::core::default::Default for D3D10_TEXTURECUBE_FACE {
 }
 unsafe impl ::windows::core::Abi for D3D10_TEXTURECUBE_FACE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D10_TEXTURECUBE_FACE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6666,6 +6791,7 @@ impl ::core::default::Default for D3D10_TEXTURE_ADDRESS_MODE {
 }
 unsafe impl ::windows::core::Abi for D3D10_TEXTURE_ADDRESS_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D10_TEXTURE_ADDRESS_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6703,6 +6829,7 @@ impl ::core::default::Default for D3D10_USAGE {
 }
 unsafe impl ::windows::core::Abi for D3D10_USAGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D10_USAGE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6732,6 +6859,7 @@ impl ::core::fmt::Debug for D3D10_VIEWPORT {
 }
 unsafe impl ::windows::core::Abi for D3D10_VIEWPORT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D10_VIEWPORT {
     fn eq(&self, other: &Self) -> bool {
@@ -6791,6 +6919,11 @@ pub const GUID_DeviceType: ::windows::core::GUID = ::windows::core::GUID::from_u
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
 #[repr(transparent)]
 pub struct ID3D10Asynchronous(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D10Asynchronous {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D10Asynchronous {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
     pub unsafe fn GetDevice(&self, ppdevice: *mut ::core::option::Option<ID3D10Device>) {
@@ -6865,11 +6998,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D10DeviceChild> for &'a ID3D10Asynchr
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D10Asynchronous {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D10Asynchronous {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6897,6 +7025,11 @@ pub struct ID3D10Asynchronous_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
 #[repr(transparent)]
 pub struct ID3D10BlendState(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D10BlendState {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D10BlendState {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
     pub unsafe fn GetDevice(&self, ppdevice: *mut ::core::option::Option<ID3D10Device>) {
@@ -6960,11 +7093,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D10DeviceChild> for &'a ID3D10BlendSt
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D10BlendState {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D10BlendState {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6992,6 +7120,11 @@ pub struct ID3D10BlendState_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
 #[repr(transparent)]
 pub struct ID3D10BlendState1(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D10BlendState1 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D10BlendState1 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
     pub unsafe fn GetDevice(&self, ppdevice: *mut ::core::option::Option<ID3D10Device>) {
@@ -7080,11 +7213,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D10BlendState> for &'a ID3D10BlendSta
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D10BlendState1 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D10BlendState1 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7112,6 +7240,11 @@ pub struct ID3D10BlendState1_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
 #[repr(transparent)]
 pub struct ID3D10Buffer(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D10Buffer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D10Buffer {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
     pub unsafe fn GetDevice(&self, ppdevice: *mut ::core::option::Option<ID3D10Device>) {
@@ -7214,11 +7347,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D10Resource> for &'a ID3D10Buffer {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D10Buffer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D10Buffer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7245,6 +7373,11 @@ pub struct ID3D10Buffer_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
 #[repr(transparent)]
 pub struct ID3D10Counter(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D10Counter {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D10Counter {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
     pub unsafe fn GetDevice(&self, ppdevice: *mut ::core::option::Option<ID3D10Device>) {
@@ -7343,11 +7476,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D10Asynchronous> for &'a ID3D10Counte
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D10Counter {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D10Counter {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7372,6 +7500,11 @@ pub struct ID3D10Counter_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
 #[repr(transparent)]
 pub struct ID3D10Debug(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D10Debug {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D10Debug {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
     pub unsafe fn SetFeatureMask(&self, mask: u32) -> ::windows::core::Result<()> {
@@ -7425,11 +7558,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ID3D1
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D10Debug {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D10Debug {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7466,6 +7594,11 @@ pub struct ID3D10Debug_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
 #[repr(transparent)]
 pub struct ID3D10DepthStencilState(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D10DepthStencilState {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D10DepthStencilState {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
     pub unsafe fn GetDevice(&self, ppdevice: *mut ::core::option::Option<ID3D10Device>) {
@@ -7529,11 +7662,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D10DeviceChild> for &'a ID3D10DepthSt
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D10DepthStencilState {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D10DepthStencilState {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7561,6 +7689,11 @@ pub struct ID3D10DepthStencilState_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
 #[repr(transparent)]
 pub struct ID3D10DepthStencilView(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D10DepthStencilView {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D10DepthStencilView {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
     pub unsafe fn GetDevice(&self, ppdevice: *mut ::core::option::Option<ID3D10Device>) {
@@ -7648,11 +7781,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D10View> for &'a ID3D10DepthStencilVi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D10DepthStencilView {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D10DepthStencilView {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7680,6 +7808,11 @@ pub struct ID3D10DepthStencilView_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
 #[repr(transparent)]
 pub struct ID3D10Device(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D10Device {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D10Device {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
     pub unsafe fn VSSetConstantBuffers(&self, startslot: u32, ppconstantbuffers: &[::core::option::Option<ID3D10Buffer>]) {
@@ -8125,11 +8258,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ID3D1
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D10Device {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D10Device {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8314,6 +8442,11 @@ pub struct ID3D10Device_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
 #[repr(transparent)]
 pub struct ID3D10Device1(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D10Device1 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D10Device1 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
     pub unsafe fn VSSetConstantBuffers(&self, startslot: u32, ppconstantbuffers: &[::core::option::Option<ID3D10Buffer>]) {
@@ -8795,11 +8928,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D10Device> for &'a ID3D10Device1 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D10Device1 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D10Device1 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8832,6 +8960,11 @@ pub struct ID3D10Device1_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
 #[repr(transparent)]
 pub struct ID3D10DeviceChild(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D10DeviceChild {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D10DeviceChild {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
     pub unsafe fn GetDevice(&self, ppdevice: *mut ::core::option::Option<ID3D10Device>) {
@@ -8870,11 +9003,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ID3D1
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D10DeviceChild {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D10DeviceChild {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8902,6 +9030,11 @@ pub struct ID3D10DeviceChild_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
 #[repr(transparent)]
 pub struct ID3D10Effect(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D10Effect {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D10Effect {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -8982,11 +9115,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ID3D1
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D10Effect {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D10Effect {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9035,6 +9163,11 @@ pub struct ID3D10Effect_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
 #[repr(transparent)]
 pub struct ID3D10EffectBlendVariable(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D10EffectBlendVariable {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D10EffectBlendVariable {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -9169,11 +9302,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D10EffectVariable> for &'a ID3D10Effe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D10EffectBlendVariable {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D10EffectBlendVariable {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9202,6 +9330,11 @@ pub struct ID3D10EffectBlendVariable_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
 #[repr(transparent)]
 pub struct ID3D10EffectConstantBuffer(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D10EffectConstantBuffer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D10EffectConstantBuffer {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -9344,11 +9477,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D10EffectVariable> for &'a ID3D10Effe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D10EffectConstantBuffer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D10EffectConstantBuffer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9376,6 +9504,11 @@ pub struct ID3D10EffectConstantBuffer_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
 #[repr(transparent)]
 pub struct ID3D10EffectDepthStencilVariable(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D10EffectDepthStencilVariable {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D10EffectDepthStencilVariable {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -9511,11 +9644,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D10EffectVariable> for &'a ID3D10Effe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D10EffectDepthStencilVariable {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D10EffectDepthStencilVariable {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9544,6 +9672,11 @@ pub struct ID3D10EffectDepthStencilVariable_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
 #[repr(transparent)]
 pub struct ID3D10EffectDepthStencilViewVariable(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D10EffectDepthStencilViewVariable {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D10EffectDepthStencilViewVariable {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -9685,11 +9818,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D10EffectVariable> for &'a ID3D10Effe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D10EffectDepthStencilViewVariable {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D10EffectDepthStencilViewVariable {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9717,6 +9845,11 @@ pub struct ID3D10EffectDepthStencilViewVariable_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
 #[repr(transparent)]
 pub struct ID3D10EffectMatrixVariable(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D10EffectMatrixVariable {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D10EffectMatrixVariable {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -9873,11 +10006,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D10EffectVariable> for &'a ID3D10Effe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D10EffectMatrixVariable {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D10EffectMatrixVariable {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9909,6 +10037,11 @@ pub struct ID3D10EffectMatrixVariable_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
 #[repr(transparent)]
 pub struct ID3D10EffectPass(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D10EffectPass {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D10EffectPass {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -9949,11 +10082,6 @@ impl ID3D10EffectPass {
         (::windows::core::Interface::vtable(self).ComputeStateBlockMask)(::core::mem::transmute_copy(self), ::core::mem::transmute(&mut result__)).from_abi::<D3D10_STATE_BLOCK_MASK>(result__)
     }
 }
-impl ::core::clone::Clone for ID3D10EffectPass {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D10EffectPass {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9988,6 +10116,11 @@ pub struct ID3D10EffectPass_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
 #[repr(transparent)]
 pub struct ID3D10EffectPool(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D10EffectPool {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D10EffectPool {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
     pub unsafe fn AsEffect(&self) -> ::core::option::Option<ID3D10Effect> {
@@ -10014,11 +10147,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ID3D1
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D10EffectPool {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D10EffectPool {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10043,6 +10171,11 @@ pub struct ID3D10EffectPool_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
 #[repr(transparent)]
 pub struct ID3D10EffectRasterizerVariable(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D10EffectRasterizerVariable {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D10EffectRasterizerVariable {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -10178,11 +10311,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D10EffectVariable> for &'a ID3D10Effe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D10EffectRasterizerVariable {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D10EffectRasterizerVariable {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10211,6 +10339,11 @@ pub struct ID3D10EffectRasterizerVariable_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
 #[repr(transparent)]
 pub struct ID3D10EffectRenderTargetViewVariable(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D10EffectRenderTargetViewVariable {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D10EffectRenderTargetViewVariable {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -10352,11 +10485,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D10EffectVariable> for &'a ID3D10Effe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D10EffectRenderTargetViewVariable {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D10EffectRenderTargetViewVariable {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10384,6 +10512,11 @@ pub struct ID3D10EffectRenderTargetViewVariable_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
 #[repr(transparent)]
 pub struct ID3D10EffectSamplerVariable(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D10EffectSamplerVariable {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D10EffectSamplerVariable {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -10518,11 +10651,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D10EffectVariable> for &'a ID3D10Effe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D10EffectSamplerVariable {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D10EffectSamplerVariable {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10548,6 +10676,11 @@ pub struct ID3D10EffectSamplerVariable_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
 #[repr(transparent)]
 pub struct ID3D10EffectScalarVariable(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D10EffectScalarVariable {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D10EffectScalarVariable {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -10727,11 +10860,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D10EffectVariable> for &'a ID3D10Effe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D10EffectScalarVariable {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D10EffectScalarVariable {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10779,6 +10907,11 @@ pub struct ID3D10EffectScalarVariable_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
 #[repr(transparent)]
 pub struct ID3D10EffectShaderResourceVariable(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D10EffectShaderResourceVariable {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D10EffectShaderResourceVariable {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -10920,11 +11053,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D10EffectVariable> for &'a ID3D10Effe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D10EffectShaderResourceVariable {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D10EffectShaderResourceVariable {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10952,6 +11080,11 @@ pub struct ID3D10EffectShaderResourceVariable_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
 #[repr(transparent)]
 pub struct ID3D10EffectShaderVariable(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D10EffectShaderVariable {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D10EffectShaderVariable {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -11109,11 +11242,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D10EffectVariable> for &'a ID3D10Effe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D10EffectShaderVariable {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D10EffectShaderVariable {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11152,6 +11280,11 @@ pub struct ID3D10EffectShaderVariable_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
 #[repr(transparent)]
 pub struct ID3D10EffectStringVariable(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D10EffectStringVariable {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D10EffectStringVariable {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -11285,11 +11418,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D10EffectVariable> for &'a ID3D10Effe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D10EffectStringVariable {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D10EffectStringVariable {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11315,6 +11443,11 @@ pub struct ID3D10EffectStringVariable_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
 #[repr(transparent)]
 pub struct ID3D10EffectTechnique(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D10EffectTechnique {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D10EffectTechnique {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -11345,11 +11478,6 @@ impl ID3D10EffectTechnique {
     pub unsafe fn ComputeStateBlockMask(&self) -> ::windows::core::Result<D3D10_STATE_BLOCK_MASK> {
         let mut result__: D3D10_STATE_BLOCK_MASK = ::core::mem::zeroed();
         (::windows::core::Interface::vtable(self).ComputeStateBlockMask)(::core::mem::transmute_copy(self), ::core::mem::transmute(&mut result__)).from_abi::<D3D10_STATE_BLOCK_MASK>(result__)
-    }
-}
-impl ::core::clone::Clone for ID3D10EffectTechnique {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for ID3D10EffectTechnique {
@@ -11384,6 +11512,11 @@ pub struct ID3D10EffectTechnique_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
 #[repr(transparent)]
 pub struct ID3D10EffectType(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D10EffectType {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D10EffectType {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -11414,11 +11547,6 @@ impl ID3D10EffectType {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
     pub unsafe fn GetMemberSemantic(&self, index: u32) -> ::windows::core::PSTR {
         ::core::mem::transmute((::windows::core::Interface::vtable(self).GetMemberSemantic)(::core::mem::transmute_copy(self), ::core::mem::transmute(index)))
-    }
-}
-impl ::core::clone::Clone for ID3D10EffectType {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for ID3D10EffectType {
@@ -11456,6 +11584,11 @@ pub struct ID3D10EffectType_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
 #[repr(transparent)]
 pub struct ID3D10EffectVariable(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D10EffectVariable {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D10EffectVariable {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -11560,11 +11693,6 @@ impl ID3D10EffectVariable {
         (::windows::core::Interface::vtable(self).GetRawValue)(::core::mem::transmute_copy(self), ::core::mem::transmute(pdata), ::core::mem::transmute(offset), ::core::mem::transmute(bytecount)).ok()
     }
 }
-impl ::core::clone::Clone for ID3D10EffectVariable {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D10EffectVariable {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11615,6 +11743,11 @@ pub struct ID3D10EffectVariable_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
 #[repr(transparent)]
 pub struct ID3D10EffectVectorVariable(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D10EffectVectorVariable {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D10EffectVectorVariable {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -11791,11 +11924,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D10EffectVariable> for &'a ID3D10Effe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D10EffectVectorVariable {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D10EffectVectorVariable {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11843,6 +11971,11 @@ pub struct ID3D10EffectVectorVariable_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
 #[repr(transparent)]
 pub struct ID3D10GeometryShader(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D10GeometryShader {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D10GeometryShader {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
     pub unsafe fn GetDevice(&self, ppdevice: *mut ::core::option::Option<ID3D10Device>) {
@@ -11901,11 +12034,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D10DeviceChild> for &'a ID3D10Geometr
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D10GeometryShader {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D10GeometryShader {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11929,6 +12057,11 @@ pub struct ID3D10GeometryShader_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
 #[repr(transparent)]
 pub struct ID3D10InfoQueue(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D10InfoQueue {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D10InfoQueue {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
     pub unsafe fn SetMessageCountLimit(&self, messagecountlimit: u64) -> ::windows::core::Result<()> {
@@ -12099,11 +12232,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ID3D1
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D10InfoQueue {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D10InfoQueue {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12186,6 +12314,11 @@ pub struct ID3D10InfoQueue_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
 #[repr(transparent)]
 pub struct ID3D10InputLayout(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D10InputLayout {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D10InputLayout {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
     pub unsafe fn GetDevice(&self, ppdevice: *mut ::core::option::Option<ID3D10Device>) {
@@ -12244,11 +12377,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D10DeviceChild> for &'a ID3D10InputLa
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D10InputLayout {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D10InputLayout {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12272,6 +12400,11 @@ pub struct ID3D10InputLayout_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
 #[repr(transparent)]
 pub struct ID3D10Multithread(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D10Multithread {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D10Multithread {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
     pub unsafe fn Enter(&self) {
@@ -12312,11 +12445,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ID3D1
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D10Multithread {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D10Multithread {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12350,6 +12478,11 @@ pub struct ID3D10Multithread_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
 #[repr(transparent)]
 pub struct ID3D10PixelShader(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D10PixelShader {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D10PixelShader {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
     pub unsafe fn GetDevice(&self, ppdevice: *mut ::core::option::Option<ID3D10Device>) {
@@ -12408,11 +12541,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D10DeviceChild> for &'a ID3D10PixelSh
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D10PixelShader {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D10PixelShader {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12436,6 +12564,11 @@ pub struct ID3D10PixelShader_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
 #[repr(transparent)]
 pub struct ID3D10Predicate(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D10Predicate {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D10Predicate {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
     pub unsafe fn GetDevice(&self, ppdevice: *mut ::core::option::Option<ID3D10Device>) {
@@ -12554,11 +12687,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D10Query> for &'a ID3D10Predicate {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D10Predicate {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D10Predicate {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12582,6 +12710,11 @@ pub struct ID3D10Predicate_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
 #[repr(transparent)]
 pub struct ID3D10Query(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D10Query {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D10Query {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
     pub unsafe fn GetDevice(&self, ppdevice: *mut ::core::option::Option<ID3D10Device>) {
@@ -12680,11 +12813,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D10Asynchronous> for &'a ID3D10Query 
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D10Query {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D10Query {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12709,6 +12837,11 @@ pub struct ID3D10Query_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
 #[repr(transparent)]
 pub struct ID3D10RasterizerState(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D10RasterizerState {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D10RasterizerState {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
     pub unsafe fn GetDevice(&self, ppdevice: *mut ::core::option::Option<ID3D10Device>) {
@@ -12772,11 +12905,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D10DeviceChild> for &'a ID3D10Rasteri
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D10RasterizerState {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D10RasterizerState {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12804,6 +12932,11 @@ pub struct ID3D10RasterizerState_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
 #[repr(transparent)]
 pub struct ID3D10RenderTargetView(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D10RenderTargetView {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D10RenderTargetView {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
     pub unsafe fn GetDevice(&self, ppdevice: *mut ::core::option::Option<ID3D10Device>) {
@@ -12891,11 +13024,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D10View> for &'a ID3D10RenderTargetVi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D10RenderTargetView {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D10RenderTargetView {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12923,6 +13051,11 @@ pub struct ID3D10RenderTargetView_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
 #[repr(transparent)]
 pub struct ID3D10Resource(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D10Resource {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D10Resource {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
     pub unsafe fn GetDevice(&self, ppdevice: *mut ::core::option::Option<ID3D10Device>) {
@@ -12993,11 +13126,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D10DeviceChild> for &'a ID3D10Resourc
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D10Resource {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D10Resource {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13024,6 +13152,11 @@ pub struct ID3D10Resource_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
 #[repr(transparent)]
 pub struct ID3D10SamplerState(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D10SamplerState {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D10SamplerState {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
     pub unsafe fn GetDevice(&self, ppdevice: *mut ::core::option::Option<ID3D10Device>) {
@@ -13086,11 +13219,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D10DeviceChild> for &'a ID3D10Sampler
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D10SamplerState {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D10SamplerState {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13115,6 +13243,11 @@ pub struct ID3D10SamplerState_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
 #[repr(transparent)]
 pub struct ID3D10ShaderReflection(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D10ShaderReflection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D10ShaderReflection {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`, `\"Win32_Graphics_Direct3D\"`*"]
     #[cfg(feature = "Win32_Graphics_Direct3D")]
@@ -13169,11 +13302,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ID3D1
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D10ShaderReflection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D10ShaderReflection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13215,6 +13343,11 @@ pub struct ID3D10ShaderReflection_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
 #[repr(transparent)]
 pub struct ID3D10ShaderReflection1(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D10ShaderReflection1 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D10ShaderReflection1 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`, `\"Win32_Graphics_Direct3D\"`*"]
     #[cfg(feature = "Win32_Graphics_Direct3D")]
@@ -13317,11 +13450,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ID3D1
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D10ShaderReflection1 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D10ShaderReflection1 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13384,6 +13512,11 @@ pub struct ID3D10ShaderReflection1_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
 #[repr(transparent)]
 pub struct ID3D10ShaderReflectionConstantBuffer(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D10ShaderReflectionConstantBuffer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D10ShaderReflectionConstantBuffer {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`, `\"Win32_Graphics_Direct3D\"`*"]
     #[cfg(feature = "Win32_Graphics_Direct3D")]
@@ -13398,11 +13531,6 @@ impl ID3D10ShaderReflectionConstantBuffer {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
     pub unsafe fn GetVariableByName<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCSTR>>(&self, name: Param0) -> ::core::option::Option<ID3D10ShaderReflectionVariable> {
         ::core::mem::transmute((::windows::core::Interface::vtable(self).GetVariableByName)(::core::mem::transmute_copy(self), name.into_param().abi()))
-    }
-}
-impl ::core::clone::Clone for ID3D10ShaderReflectionConstantBuffer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for ID3D10ShaderReflectionConstantBuffer {
@@ -13433,6 +13561,11 @@ pub struct ID3D10ShaderReflectionConstantBuffer_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
 #[repr(transparent)]
 pub struct ID3D10ShaderReflectionType(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D10ShaderReflectionType {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D10ShaderReflectionType {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`, `\"Win32_Graphics_Direct3D\"`*"]
     #[cfg(feature = "Win32_Graphics_Direct3D")]
@@ -13450,11 +13583,6 @@ impl ID3D10ShaderReflectionType {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
     pub unsafe fn GetMemberTypeName(&self, index: u32) -> ::windows::core::PSTR {
         ::core::mem::transmute((::windows::core::Interface::vtable(self).GetMemberTypeName)(::core::mem::transmute_copy(self), ::core::mem::transmute(index)))
-    }
-}
-impl ::core::clone::Clone for ID3D10ShaderReflectionType {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for ID3D10ShaderReflectionType {
@@ -13486,6 +13614,11 @@ pub struct ID3D10ShaderReflectionType_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
 #[repr(transparent)]
 pub struct ID3D10ShaderReflectionVariable(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D10ShaderReflectionVariable {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D10ShaderReflectionVariable {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
     pub unsafe fn GetDesc(&self) -> ::windows::core::Result<D3D10_SHADER_VARIABLE_DESC> {
@@ -13495,11 +13628,6 @@ impl ID3D10ShaderReflectionVariable {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
     pub unsafe fn GetType(&self) -> ::core::option::Option<ID3D10ShaderReflectionType> {
         ::core::mem::transmute((::windows::core::Interface::vtable(self).GetType)(::core::mem::transmute_copy(self)))
-    }
-}
-impl ::core::clone::Clone for ID3D10ShaderReflectionVariable {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for ID3D10ShaderReflectionVariable {
@@ -13526,6 +13654,11 @@ pub struct ID3D10ShaderReflectionVariable_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
 #[repr(transparent)]
 pub struct ID3D10ShaderResourceView(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D10ShaderResourceView {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D10ShaderResourceView {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
     pub unsafe fn GetDevice(&self, ppdevice: *mut ::core::option::Option<ID3D10Device>) {
@@ -13613,11 +13746,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D10View> for &'a ID3D10ShaderResource
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D10ShaderResourceView {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D10ShaderResourceView {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13645,6 +13773,11 @@ pub struct ID3D10ShaderResourceView_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
 #[repr(transparent)]
 pub struct ID3D10ShaderResourceView1(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D10ShaderResourceView1 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D10ShaderResourceView1 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
     pub unsafe fn GetDevice(&self, ppdevice: *mut ::core::option::Option<ID3D10Device>) {
@@ -13757,11 +13890,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D10ShaderResourceView> for &'a ID3D10
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D10ShaderResourceView1 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D10ShaderResourceView1 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13789,6 +13917,11 @@ pub struct ID3D10ShaderResourceView1_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
 #[repr(transparent)]
 pub struct ID3D10StateBlock(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D10StateBlock {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D10StateBlock {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
     pub unsafe fn Capture(&self) -> ::windows::core::Result<()> {
@@ -13828,11 +13961,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ID3D1
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D10StateBlock {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D10StateBlock {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13860,6 +13988,11 @@ pub struct ID3D10StateBlock_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
 #[repr(transparent)]
 pub struct ID3D10SwitchToRef(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D10SwitchToRef {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D10SwitchToRef {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -13890,11 +14023,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for ID3D10Swi
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ID3D10SwitchToRef {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for ID3D10SwitchToRef {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for ID3D10SwitchToRef {
@@ -13928,6 +14056,11 @@ pub struct ID3D10SwitchToRef_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
 #[repr(transparent)]
 pub struct ID3D10Texture1D(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D10Texture1D {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D10Texture1D {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
     pub unsafe fn GetDevice(&self, ppdevice: *mut ::core::option::Option<ID3D10Device>) {
@@ -14031,11 +14164,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D10Resource> for &'a ID3D10Texture1D 
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D10Texture1D {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D10Texture1D {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -14065,6 +14193,11 @@ pub struct ID3D10Texture1D_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
 #[repr(transparent)]
 pub struct ID3D10Texture2D(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D10Texture2D {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D10Texture2D {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
     pub unsafe fn GetDevice(&self, ppdevice: *mut ::core::option::Option<ID3D10Device>) {
@@ -14169,11 +14302,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D10Resource> for &'a ID3D10Texture2D 
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D10Texture2D {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D10Texture2D {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -14203,6 +14331,11 @@ pub struct ID3D10Texture2D_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
 #[repr(transparent)]
 pub struct ID3D10Texture3D(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D10Texture3D {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D10Texture3D {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
     pub unsafe fn GetDevice(&self, ppdevice: *mut ::core::option::Option<ID3D10Device>) {
@@ -14307,11 +14440,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D10Resource> for &'a ID3D10Texture3D 
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D10Texture3D {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D10Texture3D {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -14341,6 +14469,11 @@ pub struct ID3D10Texture3D_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
 #[repr(transparent)]
 pub struct ID3D10VertexShader(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D10VertexShader {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D10VertexShader {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
     pub unsafe fn GetDevice(&self, ppdevice: *mut ::core::option::Option<ID3D10Device>) {
@@ -14399,11 +14532,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D10DeviceChild> for &'a ID3D10VertexS
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D10VertexShader {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D10VertexShader {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -14427,6 +14555,11 @@ pub struct ID3D10VertexShader_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
 #[repr(transparent)]
 pub struct ID3D10View(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D10View {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D10View {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D10\"`*"]
     pub unsafe fn GetDevice(&self, ppdevice: *mut ::core::option::Option<ID3D10Device>) {
@@ -14487,11 +14620,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D10DeviceChild> for ID3D10View {
 impl<'a> ::windows::core::IntoParam<'a, ID3D10DeviceChild> for &'a ID3D10View {
     fn into_param(self) -> ::windows::core::Param<'a, ID3D10DeviceChild> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for ID3D10View {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for ID3D10View {

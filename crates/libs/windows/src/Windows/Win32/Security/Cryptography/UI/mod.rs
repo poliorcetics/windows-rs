@@ -68,6 +68,7 @@ impl ::core::fmt::Debug for CERT_SELECTUI_INPUT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for CERT_SELECTUI_INPUT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for CERT_SELECTUI_INPUT {
@@ -140,6 +141,7 @@ impl ::core::fmt::Debug for CERT_SELECT_STRUCT_A {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for CERT_SELECT_STRUCT_A {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for CERT_SELECT_STRUCT_A {
@@ -184,6 +186,7 @@ impl ::core::default::Default for CERT_SELECT_STRUCT_FLAGS {
 }
 unsafe impl ::windows::core::Abi for CERT_SELECT_STRUCT_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CERT_SELECT_STRUCT_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -275,6 +278,7 @@ impl ::core::fmt::Debug for CERT_SELECT_STRUCT_W {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for CERT_SELECT_STRUCT_W {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for CERT_SELECT_STRUCT_W {
@@ -399,6 +403,7 @@ impl ::core::fmt::Debug for CERT_VERIFY_CERTIFICATE_TRUST {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for CERT_VERIFY_CERTIFICATE_TRUST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for CERT_VERIFY_CERTIFICATE_TRUST {
@@ -481,6 +486,7 @@ impl ::core::fmt::Debug for CERT_VIEWPROPERTIES_STRUCT_A {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_Controls", feature = "Win32_UI_WindowsAndMessaging"))]
 unsafe impl ::windows::core::Abi for CERT_VIEWPROPERTIES_STRUCT_A {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_Controls", feature = "Win32_UI_WindowsAndMessaging"))]
 impl ::core::cmp::PartialEq for CERT_VIEWPROPERTIES_STRUCT_A {
@@ -533,6 +539,7 @@ impl ::core::default::Default for CERT_VIEWPROPERTIES_STRUCT_FLAGS {
 }
 unsafe impl ::windows::core::Abi for CERT_VIEWPROPERTIES_STRUCT_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CERT_VIEWPROPERTIES_STRUCT_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -634,6 +641,7 @@ impl ::core::fmt::Debug for CERT_VIEWPROPERTIES_STRUCT_W {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_Controls", feature = "Win32_UI_WindowsAndMessaging"))]
 unsafe impl ::windows::core::Abi for CERT_VIEWPROPERTIES_STRUCT_W {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_Controls", feature = "Win32_UI_WindowsAndMessaging"))]
 impl ::core::cmp::PartialEq for CERT_VIEWPROPERTIES_STRUCT_W {
@@ -670,6 +678,7 @@ impl ::core::fmt::Debug for CMFLTR {
 }
 unsafe impl ::windows::core::Abi for CMFLTR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CMFLTR {
     fn eq(&self, other: &Self) -> bool {
@@ -703,6 +712,7 @@ impl ::core::fmt::Debug for CMOID {
 }
 unsafe impl ::windows::core::Abi for CMOID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CMOID {
     fn eq(&self, other: &Self) -> bool {
@@ -764,6 +774,7 @@ impl ::core::fmt::Debug for CRYPTUI_CERT_MGR_STRUCT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for CRYPTUI_CERT_MGR_STRUCT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for CRYPTUI_CERT_MGR_STRUCT {
@@ -805,6 +816,7 @@ impl ::core::fmt::Debug for CRYPTUI_INITDIALOG_STRUCT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for CRYPTUI_INITDIALOG_STRUCT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for CRYPTUI_INITDIALOG_STRUCT {
@@ -889,6 +901,7 @@ impl ::core::default::Default for CRYPTUI_VIEWCERTIFICATE_FLAGS {
 }
 unsafe impl ::windows::core::Abi for CRYPTUI_VIEWCERTIFICATE_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CRYPTUI_VIEWCERTIFICATE_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -957,6 +970,7 @@ impl ::core::clone::Clone for CRYPTUI_VIEWCERTIFICATE_STRUCTA {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_Security_Cryptography_Catalog", feature = "Win32_Security_Cryptography_Sip", feature = "Win32_Security_WinTrust", feature = "Win32_UI_Controls", feature = "Win32_UI_WindowsAndMessaging"))]
 unsafe impl ::windows::core::Abi for CRYPTUI_VIEWCERTIFICATE_STRUCTA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_Security_Cryptography_Catalog", feature = "Win32_Security_Cryptography_Sip", feature = "Win32_Security_WinTrust", feature = "Win32_UI_Controls", feature = "Win32_UI_WindowsAndMessaging"))]
 impl ::core::cmp::PartialEq for CRYPTUI_VIEWCERTIFICATE_STRUCTA {
@@ -990,6 +1004,7 @@ impl ::core::clone::Clone for CRYPTUI_VIEWCERTIFICATE_STRUCTA_0 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_Security_Cryptography_Catalog", feature = "Win32_Security_Cryptography_Sip", feature = "Win32_Security_WinTrust", feature = "Win32_UI_Controls", feature = "Win32_UI_WindowsAndMessaging"))]
 unsafe impl ::windows::core::Abi for CRYPTUI_VIEWCERTIFICATE_STRUCTA_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_Security_Cryptography_Catalog", feature = "Win32_Security_Cryptography_Sip", feature = "Win32_Security_WinTrust", feature = "Win32_UI_Controls", feature = "Win32_UI_WindowsAndMessaging"))]
 impl ::core::cmp::PartialEq for CRYPTUI_VIEWCERTIFICATE_STRUCTA_0 {
@@ -1039,6 +1054,7 @@ impl ::core::clone::Clone for CRYPTUI_VIEWCERTIFICATE_STRUCTW {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_Security_Cryptography_Catalog", feature = "Win32_Security_Cryptography_Sip", feature = "Win32_Security_WinTrust", feature = "Win32_UI_Controls", feature = "Win32_UI_WindowsAndMessaging"))]
 unsafe impl ::windows::core::Abi for CRYPTUI_VIEWCERTIFICATE_STRUCTW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_Security_Cryptography_Catalog", feature = "Win32_Security_Cryptography_Sip", feature = "Win32_Security_WinTrust", feature = "Win32_UI_Controls", feature = "Win32_UI_WindowsAndMessaging"))]
 impl ::core::cmp::PartialEq for CRYPTUI_VIEWCERTIFICATE_STRUCTW {
@@ -1072,6 +1088,7 @@ impl ::core::clone::Clone for CRYPTUI_VIEWCERTIFICATE_STRUCTW_0 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_Security_Cryptography_Catalog", feature = "Win32_Security_Cryptography_Sip", feature = "Win32_Security_WinTrust", feature = "Win32_UI_Controls", feature = "Win32_UI_WindowsAndMessaging"))]
 unsafe impl ::windows::core::Abi for CRYPTUI_VIEWCERTIFICATE_STRUCTW_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_Security_Cryptography_Catalog", feature = "Win32_Security_Cryptography_Sip", feature = "Win32_Security_WinTrust", feature = "Win32_UI_Controls", feature = "Win32_UI_WindowsAndMessaging"))]
 impl ::core::cmp::PartialEq for CRYPTUI_VIEWCERTIFICATE_STRUCTW_0 {
@@ -1110,6 +1127,7 @@ impl ::core::default::Default for CRYPTUI_WIZ_DIGITAL_ADDITIONAL_CERT_CHOICE {
 }
 unsafe impl ::windows::core::Abi for CRYPTUI_WIZ_DIGITAL_ADDITIONAL_CERT_CHOICE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CRYPTUI_WIZ_DIGITAL_ADDITIONAL_CERT_CHOICE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1141,6 +1159,7 @@ impl ::core::default::Default for CRYPTUI_WIZ_DIGITAL_SIGN {
 }
 unsafe impl ::windows::core::Abi for CRYPTUI_WIZ_DIGITAL_SIGN {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CRYPTUI_WIZ_DIGITAL_SIGN {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1169,6 +1188,7 @@ impl ::core::fmt::Debug for CRYPTUI_WIZ_DIGITAL_SIGN_BLOB_INFO {
 }
 unsafe impl ::windows::core::Abi for CRYPTUI_WIZ_DIGITAL_SIGN_BLOB_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CRYPTUI_WIZ_DIGITAL_SIGN_BLOB_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -1197,6 +1217,7 @@ impl ::core::clone::Clone for CRYPTUI_WIZ_DIGITAL_SIGN_CERT_PVK_INFO {
 }
 unsafe impl ::windows::core::Abi for CRYPTUI_WIZ_DIGITAL_SIGN_CERT_PVK_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CRYPTUI_WIZ_DIGITAL_SIGN_CERT_PVK_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -1223,6 +1244,7 @@ impl ::core::clone::Clone for CRYPTUI_WIZ_DIGITAL_SIGN_CERT_PVK_INFO_0 {
 }
 unsafe impl ::windows::core::Abi for CRYPTUI_WIZ_DIGITAL_SIGN_CERT_PVK_INFO_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CRYPTUI_WIZ_DIGITAL_SIGN_CERT_PVK_INFO_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -1255,6 +1277,7 @@ impl ::core::fmt::Debug for CRYPTUI_WIZ_DIGITAL_SIGN_CONTEXT {
 }
 unsafe impl ::windows::core::Abi for CRYPTUI_WIZ_DIGITAL_SIGN_CONTEXT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CRYPTUI_WIZ_DIGITAL_SIGN_CONTEXT {
     fn eq(&self, other: &Self) -> bool {
@@ -1305,6 +1328,7 @@ impl ::core::fmt::Debug for CRYPTUI_WIZ_DIGITAL_SIGN_EXTENDED_INFO {
 }
 unsafe impl ::windows::core::Abi for CRYPTUI_WIZ_DIGITAL_SIGN_EXTENDED_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CRYPTUI_WIZ_DIGITAL_SIGN_EXTENDED_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -1343,6 +1367,7 @@ impl ::core::clone::Clone for CRYPTUI_WIZ_DIGITAL_SIGN_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for CRYPTUI_WIZ_DIGITAL_SIGN_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for CRYPTUI_WIZ_DIGITAL_SIGN_INFO {
@@ -1376,6 +1401,7 @@ impl ::core::clone::Clone for CRYPTUI_WIZ_DIGITAL_SIGN_INFO_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for CRYPTUI_WIZ_DIGITAL_SIGN_INFO_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for CRYPTUI_WIZ_DIGITAL_SIGN_INFO_0 {
@@ -1410,6 +1436,7 @@ impl ::core::clone::Clone for CRYPTUI_WIZ_DIGITAL_SIGN_INFO_1 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for CRYPTUI_WIZ_DIGITAL_SIGN_INFO_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for CRYPTUI_WIZ_DIGITAL_SIGN_INFO_1 {
@@ -1446,6 +1473,7 @@ impl ::core::fmt::Debug for CRYPTUI_WIZ_DIGITAL_SIGN_PVK_FILE_INFO {
 }
 unsafe impl ::windows::core::Abi for CRYPTUI_WIZ_DIGITAL_SIGN_PVK_FILE_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CRYPTUI_WIZ_DIGITAL_SIGN_PVK_FILE_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -1479,6 +1507,7 @@ impl ::core::default::Default for CRYPTUI_WIZ_DIGITAL_SIGN_PVK_OPTION {
 }
 unsafe impl ::windows::core::Abi for CRYPTUI_WIZ_DIGITAL_SIGN_PVK_OPTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CRYPTUI_WIZ_DIGITAL_SIGN_PVK_OPTION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1506,6 +1535,7 @@ impl ::core::default::Default for CRYPTUI_WIZ_DIGITAL_SIGN_SIG_TYPE {
 }
 unsafe impl ::windows::core::Abi for CRYPTUI_WIZ_DIGITAL_SIGN_SIG_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CRYPTUI_WIZ_DIGITAL_SIGN_SIG_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1539,6 +1569,7 @@ impl ::core::fmt::Debug for CRYPTUI_WIZ_DIGITAL_SIGN_STORE_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for CRYPTUI_WIZ_DIGITAL_SIGN_STORE_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for CRYPTUI_WIZ_DIGITAL_SIGN_STORE_INFO {
@@ -1577,6 +1608,7 @@ impl ::core::default::Default for CRYPTUI_WIZ_DIGITAL_SIGN_SUBJECT {
 }
 unsafe impl ::windows::core::Abi for CRYPTUI_WIZ_DIGITAL_SIGN_SUBJECT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CRYPTUI_WIZ_DIGITAL_SIGN_SUBJECT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1611,6 +1643,7 @@ impl ::core::fmt::Debug for CRYPTUI_WIZ_EXPORT_CERTCONTEXT_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for CRYPTUI_WIZ_EXPORT_CERTCONTEXT_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for CRYPTUI_WIZ_EXPORT_CERTCONTEXT_INFO {
@@ -1655,6 +1688,7 @@ impl ::core::default::Default for CRYPTUI_WIZ_EXPORT_FORMAT {
 }
 unsafe impl ::windows::core::Abi for CRYPTUI_WIZ_EXPORT_FORMAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CRYPTUI_WIZ_EXPORT_FORMAT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1685,6 +1719,7 @@ impl ::core::clone::Clone for CRYPTUI_WIZ_EXPORT_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for CRYPTUI_WIZ_EXPORT_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for CRYPTUI_WIZ_EXPORT_INFO {
@@ -1720,6 +1755,7 @@ impl ::core::clone::Clone for CRYPTUI_WIZ_EXPORT_INFO_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for CRYPTUI_WIZ_EXPORT_INFO_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for CRYPTUI_WIZ_EXPORT_INFO_0 {
@@ -1762,6 +1798,7 @@ impl ::core::default::Default for CRYPTUI_WIZ_EXPORT_SUBJECT {
 }
 unsafe impl ::windows::core::Abi for CRYPTUI_WIZ_EXPORT_SUBJECT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CRYPTUI_WIZ_EXPORT_SUBJECT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1809,6 +1846,7 @@ impl ::core::default::Default for CRYPTUI_WIZ_FLAGS {
 }
 unsafe impl ::windows::core::Abi for CRYPTUI_WIZ_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CRYPTUI_WIZ_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1864,6 +1902,7 @@ impl ::core::clone::Clone for CRYPTUI_WIZ_IMPORT_SRC_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for CRYPTUI_WIZ_IMPORT_SRC_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for CRYPTUI_WIZ_IMPORT_SRC_INFO {
@@ -1900,6 +1939,7 @@ impl ::core::clone::Clone for CRYPTUI_WIZ_IMPORT_SRC_INFO_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for CRYPTUI_WIZ_IMPORT_SRC_INFO_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for CRYPTUI_WIZ_IMPORT_SRC_INFO_0 {
@@ -1942,6 +1982,7 @@ impl ::core::default::Default for CRYPTUI_WIZ_IMPORT_SUBJECT_OPTION {
 }
 unsafe impl ::windows::core::Abi for CRYPTUI_WIZ_IMPORT_SUBJECT_OPTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CRYPTUI_WIZ_IMPORT_SUBJECT_OPTION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1977,6 +2018,7 @@ impl ::core::fmt::Debug for CTL_MODIFY_REQUEST {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for CTL_MODIFY_REQUEST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for CTL_MODIFY_REQUEST {
@@ -2015,6 +2057,7 @@ impl ::core::default::Default for CTL_MODIFY_REQUEST_OPERATION {
 }
 unsafe impl ::windows::core::Abi for CTL_MODIFY_REQUEST_OPERATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CTL_MODIFY_REQUEST_OPERATION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

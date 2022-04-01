@@ -40,11 +40,6 @@ impl CustomXamlResourceLoader {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for CustomXamlResourceLoader {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for CustomXamlResourceLoader {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -58,7 +53,6 @@ impl ::core::fmt::Debug for CustomXamlResourceLoader {
 }
 unsafe impl ::windows::core::RuntimeType for CustomXamlResourceLoader {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Resources.CustomXamlResourceLoader;{511a84ab-4a88-419f-852e-54083b90b078})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -115,6 +109,11 @@ unsafe impl ::core::marker::Sync for CustomXamlResourceLoader {}
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICustomXamlResourceLoader(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICustomXamlResourceLoader {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICustomXamlResourceLoader {
     type Vtable = ICustomXamlResourceLoader_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x511a84ab_4a88_419f_852e_54083b90b078);
@@ -127,6 +126,11 @@ pub struct ICustomXamlResourceLoader_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICustomXamlResourceLoaderFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICustomXamlResourceLoaderFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICustomXamlResourceLoaderFactory {
     type Vtable = ICustomXamlResourceLoaderFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x5bfd7e49_7886_44f3_8ed3_6fec0463ed69);
@@ -140,6 +144,11 @@ pub struct ICustomXamlResourceLoaderFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICustomXamlResourceLoaderOverrides(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICustomXamlResourceLoaderOverrides {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICustomXamlResourceLoaderOverrides {
     type Vtable = ICustomXamlResourceLoaderOverrides_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf851e991_af02_46e8_9af8_427b7ebfe9f8);
@@ -153,6 +162,11 @@ pub struct ICustomXamlResourceLoaderOverrides_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICustomXamlResourceLoaderStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICustomXamlResourceLoaderStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICustomXamlResourceLoaderStatics {
     type Vtable = ICustomXamlResourceLoaderStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x224ff617_e4dc_4c27_ad32_db93d5d0e5da);

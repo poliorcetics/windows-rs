@@ -27,6 +27,7 @@ impl ::core::fmt::Debug for ACPI_REAL_TIME {
 }
 unsafe impl ::windows::core::Abi for ACPI_REAL_TIME {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ACPI_REAL_TIME {
     fn eq(&self, other: &Self) -> bool {
@@ -70,6 +71,7 @@ impl ::core::fmt::Debug for ADMINISTRATOR_POWER_POLICY {
 }
 unsafe impl ::windows::core::Abi for ADMINISTRATOR_POWER_POLICY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ADMINISTRATOR_POWER_POLICY {
     fn eq(&self, other: &Self) -> bool {
@@ -103,6 +105,7 @@ impl ::core::fmt::Debug for BATTERY_CHARGER_STATUS {
 }
 unsafe impl ::windows::core::Abi for BATTERY_CHARGER_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for BATTERY_CHARGER_STATUS {
     fn eq(&self, other: &Self) -> bool {
@@ -136,6 +139,7 @@ impl ::core::fmt::Debug for BATTERY_CHARGING_SOURCE {
 }
 unsafe impl ::windows::core::Abi for BATTERY_CHARGING_SOURCE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for BATTERY_CHARGING_SOURCE {
     fn eq(&self, other: &Self) -> bool {
@@ -172,6 +176,7 @@ impl ::core::fmt::Debug for BATTERY_CHARGING_SOURCE_INFORMATION {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for BATTERY_CHARGING_SOURCE_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for BATTERY_CHARGING_SOURCE_INFORMATION {
@@ -212,6 +217,7 @@ impl ::core::default::Default for BATTERY_CHARGING_SOURCE_TYPE {
 }
 unsafe impl ::windows::core::Abi for BATTERY_CHARGING_SOURCE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for BATTERY_CHARGING_SOURCE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -257,6 +263,7 @@ impl ::core::fmt::Debug for BATTERY_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for BATTERY_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for BATTERY_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -291,6 +298,7 @@ impl ::core::fmt::Debug for BATTERY_MANUFACTURE_DATE {
 }
 unsafe impl ::windows::core::Abi for BATTERY_MANUFACTURE_DATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for BATTERY_MANUFACTURE_DATE {
     fn eq(&self, other: &Self) -> bool {
@@ -329,6 +337,7 @@ impl ::core::fmt::Debug for BATTERY_QUERY_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for BATTERY_QUERY_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for BATTERY_QUERY_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -376,6 +385,7 @@ impl ::core::default::Default for BATTERY_QUERY_INFORMATION_LEVEL {
 }
 unsafe impl ::windows::core::Abi for BATTERY_QUERY_INFORMATION_LEVEL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for BATTERY_QUERY_INFORMATION_LEVEL {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -401,6 +411,7 @@ impl ::core::fmt::Debug for BATTERY_REPORTING_SCALE {
 }
 unsafe impl ::windows::core::Abi for BATTERY_REPORTING_SCALE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for BATTERY_REPORTING_SCALE {
     fn eq(&self, other: &Self) -> bool {
@@ -444,6 +455,7 @@ impl ::core::fmt::Debug for BATTERY_SET_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for BATTERY_SET_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for BATTERY_SET_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -485,6 +497,7 @@ impl ::core::default::Default for BATTERY_SET_INFORMATION_LEVEL {
 }
 unsafe impl ::windows::core::Abi for BATTERY_SET_INFORMATION_LEVEL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for BATTERY_SET_INFORMATION_LEVEL {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -513,6 +526,7 @@ impl ::core::fmt::Debug for BATTERY_STATUS {
 }
 unsafe impl ::windows::core::Abi for BATTERY_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for BATTERY_STATUS {
     fn eq(&self, other: &Self) -> bool {
@@ -569,6 +583,7 @@ impl ::core::fmt::Debug for BATTERY_USB_CHARGER_STATUS {
 }
 unsafe impl ::windows::core::Abi for BATTERY_USB_CHARGER_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for BATTERY_USB_CHARGER_STATUS {
     fn eq(&self, other: &Self) -> bool {
@@ -607,6 +622,7 @@ impl ::core::fmt::Debug for BATTERY_WAIT_STATUS {
 }
 unsafe impl ::windows::core::Abi for BATTERY_WAIT_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for BATTERY_WAIT_STATUS {
     fn eq(&self, other: &Self) -> bool {
@@ -644,6 +660,7 @@ impl ::core::fmt::Debug for CM_POWER_DATA {
 }
 unsafe impl ::windows::core::Abi for CM_POWER_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CM_POWER_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -722,6 +739,7 @@ impl ::core::fmt::Debug for DEVICE_NOTIFY_SUBSCRIBE_PARAMETERS {
 }
 unsafe impl ::windows::core::Abi for DEVICE_NOTIFY_SUBSCRIBE_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DEVICE_NOTIFY_SUBSCRIBE_PARAMETERS {
     fn eq(&self, other: &Self) -> bool {
@@ -763,6 +781,7 @@ impl ::core::default::Default for DEVICE_POWER_STATE {
 }
 unsafe impl ::windows::core::Abi for DEVICE_POWER_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DEVICE_POWER_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -874,6 +893,7 @@ impl ::core::default::Default for EFFECTIVE_POWER_MODE {
 }
 unsafe impl ::windows::core::Abi for EFFECTIVE_POWER_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EFFECTIVE_POWER_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -905,6 +925,7 @@ impl ::core::fmt::Debug for EMI_CHANNEL_MEASUREMENT_DATA {
 }
 unsafe impl ::windows::core::Abi for EMI_CHANNEL_MEASUREMENT_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EMI_CHANNEL_MEASUREMENT_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -937,6 +958,7 @@ impl ::core::fmt::Debug for EMI_CHANNEL_V2 {
 }
 unsafe impl ::windows::core::Abi for EMI_CHANNEL_V2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EMI_CHANNEL_V2 {
     fn eq(&self, other: &Self) -> bool {
@@ -967,6 +989,7 @@ impl ::core::fmt::Debug for EMI_MEASUREMENT_DATA_V2 {
 }
 unsafe impl ::windows::core::Abi for EMI_MEASUREMENT_DATA_V2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EMI_MEASUREMENT_DATA_V2 {
     fn eq(&self, other: &Self) -> bool {
@@ -998,6 +1021,7 @@ impl ::core::default::Default for EMI_MEASUREMENT_UNIT {
 }
 unsafe impl ::windows::core::Abi for EMI_MEASUREMENT_UNIT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EMI_MEASUREMENT_UNIT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1022,6 +1046,7 @@ impl ::core::fmt::Debug for EMI_METADATA_SIZE {
 }
 unsafe impl ::windows::core::Abi for EMI_METADATA_SIZE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EMI_METADATA_SIZE {
     fn eq(&self, other: &Self) -> bool {
@@ -1057,6 +1082,7 @@ impl ::core::fmt::Debug for EMI_METADATA_V1 {
 }
 unsafe impl ::windows::core::Abi for EMI_METADATA_V1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EMI_METADATA_V1 {
     fn eq(&self, other: &Self) -> bool {
@@ -1091,6 +1117,7 @@ impl ::core::fmt::Debug for EMI_METADATA_V2 {
 }
 unsafe impl ::windows::core::Abi for EMI_METADATA_V2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EMI_METADATA_V2 {
     fn eq(&self, other: &Self) -> bool {
@@ -1123,6 +1150,7 @@ impl ::core::fmt::Debug for EMI_VERSION {
 }
 unsafe impl ::windows::core::Abi for EMI_VERSION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EMI_VERSION {
     fn eq(&self, other: &Self) -> bool {
@@ -1166,6 +1194,7 @@ impl ::core::default::Default for EXECUTION_STATE {
 }
 unsafe impl ::windows::core::Abi for EXECUTION_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EXECUTION_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1246,6 +1275,7 @@ impl ::core::fmt::Debug for GLOBAL_MACHINE_POWER_POLICY {
 }
 unsafe impl ::windows::core::Abi for GLOBAL_MACHINE_POWER_POLICY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for GLOBAL_MACHINE_POWER_POLICY {
     fn eq(&self, other: &Self) -> bool {
@@ -1282,6 +1312,7 @@ impl ::core::fmt::Debug for GLOBAL_POWER_POLICY {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for GLOBAL_POWER_POLICY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for GLOBAL_POWER_POLICY {
@@ -1328,6 +1359,7 @@ impl ::core::fmt::Debug for GLOBAL_USER_POWER_POLICY {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for GLOBAL_USER_POWER_POLICY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for GLOBAL_USER_POWER_POLICY {
@@ -1473,6 +1505,7 @@ impl ::core::fmt::Debug for HPOWERNOTIFY {
 }
 unsafe impl ::windows::core::Abi for HPOWERNOTIFY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[doc = "*Required features: `\"Win32_System_Power\"`*"]
 pub const IOCTL_ACPI_GET_REAL_TIME: u32 = 2703888u32;
@@ -1626,6 +1659,7 @@ impl ::core::default::Default for LATENCY_TIME {
 }
 unsafe impl ::windows::core::Abi for LATENCY_TIME {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for LATENCY_TIME {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1678,6 +1712,7 @@ impl ::core::fmt::Debug for MACHINE_POWER_POLICY {
 }
 unsafe impl ::windows::core::Abi for MACHINE_POWER_POLICY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MACHINE_POWER_POLICY {
     fn eq(&self, other: &Self) -> bool {
@@ -1710,6 +1745,7 @@ impl ::core::fmt::Debug for MACHINE_PROCESSOR_POWER_POLICY {
 }
 unsafe impl ::windows::core::Abi for MACHINE_PROCESSOR_POWER_POLICY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MACHINE_PROCESSOR_POWER_POLICY {
     fn eq(&self, other: &Self) -> bool {
@@ -1770,6 +1806,7 @@ impl ::core::fmt::Debug for POWERBROADCAST_SETTING {
 }
 unsafe impl ::windows::core::Abi for POWERBROADCAST_SETTING {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for POWERBROADCAST_SETTING {
     fn eq(&self, other: &Self) -> bool {
@@ -1817,6 +1854,7 @@ impl ::core::default::Default for POWER_ACTION {
 }
 unsafe impl ::windows::core::Abi for POWER_ACTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for POWER_ACTION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1843,6 +1881,7 @@ impl ::core::fmt::Debug for POWER_ACTION_POLICY {
 }
 unsafe impl ::windows::core::Abi for POWER_ACTION_POLICY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for POWER_ACTION_POLICY {
     fn eq(&self, other: &Self) -> bool {
@@ -1884,6 +1923,7 @@ impl ::core::default::Default for POWER_ACTION_POLICY_EVENT_CODE {
 }
 unsafe impl ::windows::core::Abi for POWER_ACTION_POLICY_EVENT_CODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for POWER_ACTION_POLICY_EVENT_CODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1995,6 +2035,7 @@ impl ::core::default::Default for POWER_DATA_ACCESSOR {
 }
 unsafe impl ::windows::core::Abi for POWER_DATA_ACCESSOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for POWER_DATA_ACCESSOR {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2214,6 +2255,7 @@ impl ::core::default::Default for POWER_INFORMATION_LEVEL {
 }
 unsafe impl ::windows::core::Abi for POWER_INFORMATION_LEVEL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for POWER_INFORMATION_LEVEL {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2257,6 +2299,7 @@ impl ::core::default::Default for POWER_PLATFORM_ROLE {
 }
 unsafe impl ::windows::core::Abi for POWER_PLATFORM_ROLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for POWER_PLATFORM_ROLE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2284,6 +2327,7 @@ impl ::core::default::Default for POWER_PLATFORM_ROLE_VERSION {
 }
 unsafe impl ::windows::core::Abi for POWER_PLATFORM_ROLE_VERSION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for POWER_PLATFORM_ROLE_VERSION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2314,6 +2358,7 @@ impl ::core::fmt::Debug for POWER_POLICY {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for POWER_POLICY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for POWER_POLICY {
@@ -2354,6 +2399,7 @@ impl ::core::default::Default for POWER_REQUEST_TYPE {
 }
 unsafe impl ::windows::core::Abi for POWER_REQUEST_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for POWER_REQUEST_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2383,6 +2429,7 @@ impl ::core::default::Default for POWER_SETTING_REGISTER_NOTIFICATION_FLAGS {
 }
 unsafe impl ::windows::core::Abi for POWER_SETTING_REGISTER_NOTIFICATION_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for POWER_SETTING_REGISTER_NOTIFICATION_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2412,6 +2459,7 @@ impl ::core::fmt::Debug for PROCESSOR_OBJECT_INFO {
 }
 unsafe impl ::windows::core::Abi for PROCESSOR_OBJECT_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROCESSOR_OBJECT_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -2445,6 +2493,7 @@ impl ::core::fmt::Debug for PROCESSOR_OBJECT_INFO_EX {
 }
 unsafe impl ::windows::core::Abi for PROCESSOR_OBJECT_INFO_EX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROCESSOR_OBJECT_INFO_EX {
     fn eq(&self, other: &Self) -> bool {
@@ -2480,6 +2529,7 @@ impl ::core::fmt::Debug for PROCESSOR_POWER_POLICY {
 }
 unsafe impl ::windows::core::Abi for PROCESSOR_POWER_POLICY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROCESSOR_POWER_POLICY {
     fn eq(&self, other: &Self) -> bool {
@@ -2516,6 +2566,7 @@ impl ::core::fmt::Debug for PROCESSOR_POWER_POLICY_INFO {
 }
 unsafe impl ::windows::core::Abi for PROCESSOR_POWER_POLICY_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROCESSOR_POWER_POLICY_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -3564,6 +3615,7 @@ impl ::core::fmt::Debug for SET_POWER_SETTING_VALUE {
 }
 unsafe impl ::windows::core::Abi for SET_POWER_SETTING_VALUE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SET_POWER_SETTING_VALUE {
     fn eq(&self, other: &Self) -> bool {
@@ -3623,6 +3675,7 @@ impl ::core::fmt::Debug for SYSTEM_BATTERY_STATE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SYSTEM_BATTERY_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for SYSTEM_BATTERY_STATE {
@@ -3727,6 +3780,7 @@ impl ::core::fmt::Debug for SYSTEM_POWER_CAPABILITIES {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SYSTEM_POWER_CAPABILITIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for SYSTEM_POWER_CAPABILITIES {
@@ -3767,6 +3821,7 @@ impl ::core::default::Default for SYSTEM_POWER_CONDITION {
 }
 unsafe impl ::windows::core::Abi for SYSTEM_POWER_CONDITION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SYSTEM_POWER_CONDITION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3800,6 +3855,7 @@ impl ::core::fmt::Debug for SYSTEM_POWER_LEVEL {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SYSTEM_POWER_LEVEL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for SYSTEM_POWER_LEVEL {
@@ -3894,6 +3950,7 @@ impl ::core::fmt::Debug for SYSTEM_POWER_POLICY {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SYSTEM_POWER_POLICY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for SYSTEM_POWER_POLICY {
@@ -3942,6 +3999,7 @@ impl ::core::default::Default for SYSTEM_POWER_STATE {
 }
 unsafe impl ::windows::core::Abi for SYSTEM_POWER_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SYSTEM_POWER_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3971,6 +4029,7 @@ impl ::core::fmt::Debug for SYSTEM_POWER_STATUS {
 }
 unsafe impl ::windows::core::Abi for SYSTEM_POWER_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SYSTEM_POWER_STATUS {
     fn eq(&self, other: &Self) -> bool {
@@ -4087,6 +4146,7 @@ impl ::core::fmt::Debug for THERMAL_EVENT {
 }
 unsafe impl ::windows::core::Abi for THERMAL_EVENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for THERMAL_EVENT {
     fn eq(&self, other: &Self) -> bool {
@@ -4139,6 +4199,7 @@ impl ::core::fmt::Debug for THERMAL_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for THERMAL_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for THERMAL_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -4182,6 +4243,7 @@ impl ::core::fmt::Debug for THERMAL_POLICY {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for THERMAL_POLICY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for THERMAL_POLICY {
@@ -4221,6 +4283,7 @@ impl ::core::fmt::Debug for THERMAL_WAIT_READ {
 }
 unsafe impl ::windows::core::Abi for THERMAL_WAIT_READ {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for THERMAL_WAIT_READ {
     fn eq(&self, other: &Self) -> bool {
@@ -4268,6 +4331,7 @@ impl ::core::default::Default for USB_CHARGER_PORT {
 }
 unsafe impl ::windows::core::Abi for USB_CHARGER_PORT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for USB_CHARGER_PORT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4341,6 +4405,7 @@ impl ::core::fmt::Debug for USER_POWER_POLICY {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for USER_POWER_POLICY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for USER_POWER_POLICY {
@@ -4420,6 +4485,7 @@ impl ::core::fmt::Debug for WAKE_ALARM_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for WAKE_ALARM_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WAKE_ALARM_INFORMATION {
     fn eq(&self, other: &Self) -> bool {

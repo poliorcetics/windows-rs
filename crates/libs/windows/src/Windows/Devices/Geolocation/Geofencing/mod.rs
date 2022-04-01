@@ -98,11 +98,6 @@ impl Geofence {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for Geofence {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for Geofence {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -116,7 +111,6 @@ impl ::core::fmt::Debug for Geofence {
 }
 unsafe impl ::windows::core::RuntimeType for Geofence {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Geolocation.Geofencing.Geofence;{9c090823-edb8-47e0-8245-5bf61d321f2d})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -251,11 +245,6 @@ impl GeofenceMonitor {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for GeofenceMonitor {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for GeofenceMonitor {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -269,7 +258,6 @@ impl ::core::fmt::Debug for GeofenceMonitor {
 }
 unsafe impl ::windows::core::RuntimeType for GeofenceMonitor {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Geolocation.Geofencing.GeofenceMonitor;{4c0f5f78-1c1f-4621-bbbd-833b92247226})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -348,6 +336,7 @@ impl ::core::default::Default for GeofenceMonitorStatus {
 }
 unsafe impl ::windows::core::Abi for GeofenceMonitorStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GeofenceMonitorStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -356,7 +345,6 @@ impl ::core::fmt::Debug for GeofenceMonitorStatus {
 }
 unsafe impl ::windows::core::RuntimeType for GeofenceMonitorStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.Geolocation.Geofencing.GeofenceMonitorStatus;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -382,6 +370,7 @@ impl ::core::default::Default for GeofenceRemovalReason {
 }
 unsafe impl ::windows::core::Abi for GeofenceRemovalReason {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GeofenceRemovalReason {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -390,7 +379,6 @@ impl ::core::fmt::Debug for GeofenceRemovalReason {
 }
 unsafe impl ::windows::core::RuntimeType for GeofenceRemovalReason {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.Geolocation.Geofencing.GeofenceRemovalReason;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -418,6 +406,7 @@ impl ::core::default::Default for GeofenceState {
 }
 unsafe impl ::windows::core::Abi for GeofenceState {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GeofenceState {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -454,7 +443,6 @@ impl ::core::ops::Not for GeofenceState {
 }
 unsafe impl ::windows::core::RuntimeType for GeofenceState {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.Geolocation.Geofencing.GeofenceState;u4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -496,11 +484,6 @@ impl GeofenceStateChangeReport {
         }
     }
 }
-impl ::core::clone::Clone for GeofenceStateChangeReport {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for GeofenceStateChangeReport {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -514,7 +497,6 @@ impl ::core::fmt::Debug for GeofenceStateChangeReport {
 }
 unsafe impl ::windows::core::RuntimeType for GeofenceStateChangeReport {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Geolocation.Geofencing.GeofenceStateChangeReport;{9a243c18-2464-4c89-be05-b3ffff5babc5})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -571,6 +553,11 @@ unsafe impl ::core::marker::Sync for GeofenceStateChangeReport {}
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGeofence(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGeofence {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGeofence {
     type Vtable = IGeofence_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9c090823_edb8_47e0_8245_5bf61d321f2d);
@@ -599,6 +586,11 @@ pub struct IGeofence_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGeofenceFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGeofenceFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGeofenceFactory {
     type Vtable = IGeofenceFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x841f624b_325f_4b90_bca7_2b8022a93796);
@@ -621,6 +613,11 @@ pub struct IGeofenceFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGeofenceMonitor(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGeofenceMonitor {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGeofenceMonitor {
     type Vtable = IGeofenceMonitor_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x4c0f5f78_1c1f_4621_bbbd_833b92247226);
@@ -659,6 +656,11 @@ pub struct IGeofenceMonitor_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGeofenceMonitorStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGeofenceMonitorStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGeofenceMonitorStatics {
     type Vtable = IGeofenceMonitorStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x2dd32fcf_7e75_4899_ace3_2bd0a65cce06);
@@ -672,6 +674,11 @@ pub struct IGeofenceMonitorStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGeofenceStateChangeReport(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGeofenceStateChangeReport {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGeofenceStateChangeReport {
     type Vtable = IGeofenceStateChangeReport_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9a243c18_2464_4c89_be05_b3ffff5babc5);
@@ -708,6 +715,7 @@ impl ::core::default::Default for MonitoredGeofenceStates {
 }
 unsafe impl ::windows::core::Abi for MonitoredGeofenceStates {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MonitoredGeofenceStates {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -744,7 +752,6 @@ impl ::core::ops::Not for MonitoredGeofenceStates {
 }
 unsafe impl ::windows::core::RuntimeType for MonitoredGeofenceStates {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.Geolocation.Geofencing.MonitoredGeofenceStates;u4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }

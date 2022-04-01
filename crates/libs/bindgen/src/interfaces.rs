@@ -49,6 +49,12 @@ fn gen_win_interface(def: &TypeDef, gen: &Gen) -> TokenStream {
         #features
         #[repr(transparent)]
         pub struct #name(::windows::core::IUnknown, #(#phantoms)*) where #(#constraints)*;
+        #features
+        impl<#(#constraints)*> ::core::clone::Clone for #name {
+            fn clone(&self) -> Self {
+                Self(self.0.clone(), #(#phantoms)*)
+            }
+        }
     });
 
     if !is_exclusive {

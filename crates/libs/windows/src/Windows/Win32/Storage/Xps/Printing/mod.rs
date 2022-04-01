@@ -7,6 +7,12 @@ pub const ID_DOCUMENTPACKAGETARGET_OPENXPS_WITH_3D: ::windows::core::GUID = ::wi
 #[repr(transparent)]
 pub struct IPrintDocumentPackageStatusEvent(::windows::core::IUnknown);
 #[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IPrintDocumentPackageStatusEvent {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "Win32_System_Com")]
 impl IPrintDocumentPackageStatusEvent {
     #[doc = "*Required features: `\"Win32_Storage_Xps_Printing\"`*"]
     pub unsafe fn PackageStatusUpdated(&self, packagestatus: *const PrintDocumentPackageStatus) -> ::windows::core::Result<()> {
@@ -62,12 +68,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IPrintDocumentPackageStatusEvent {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IPrintDocumentPackageStatusEvent {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -96,6 +96,11 @@ pub struct IPrintDocumentPackageStatusEvent_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Xps_Printing\"`*"]
 #[repr(transparent)]
 pub struct IPrintDocumentPackageTarget(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrintDocumentPackageTarget {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPrintDocumentPackageTarget {
     #[doc = "*Required features: `\"Win32_Storage_Xps_Printing\"`*"]
     pub unsafe fn GetPackageTargetTypes(&self, targetcount: *mut u32, targettypes: *mut *mut ::windows::core::GUID) -> ::windows::core::Result<()> {
@@ -131,11 +136,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPrin
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPrintDocumentPackageTarget {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPrintDocumentPackageTarget {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -162,6 +162,11 @@ pub struct IPrintDocumentPackageTarget_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Xps_Printing\"`*"]
 #[repr(transparent)]
 pub struct IPrintDocumentPackageTargetFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrintDocumentPackageTargetFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPrintDocumentPackageTargetFactory {
     #[doc = "*Required features: `\"Win32_Storage_Xps_Printing\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -188,11 +193,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IPrintDoc
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPrintDocumentPackageTargetFactory {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IPrintDocumentPackageTargetFactory {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IPrintDocumentPackageTargetFactory {
@@ -222,6 +222,11 @@ pub struct IPrintDocumentPackageTargetFactory_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Xps_Printing\"`*"]
 #[repr(transparent)]
 pub struct IXpsPrintJob(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXpsPrintJob {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXpsPrintJob {
     #[doc = "*Required features: `\"Win32_Storage_Xps_Printing\"`*"]
     pub unsafe fn Cancel(&self) -> ::windows::core::Result<()> {
@@ -253,11 +258,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IXpsP
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXpsPrintJob {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXpsPrintJob {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -284,6 +284,12 @@ pub struct IXpsPrintJob_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IXpsPrintJobStream(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IXpsPrintJobStream {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IXpsPrintJobStream {
     #[doc = "*Required features: `\"Win32_Storage_Xps_Printing\"`, `\"Win32_System_Com\"`*"]
@@ -350,12 +356,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::ISeque
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IXpsPrintJobStream {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IXpsPrintJobStream {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -406,6 +406,7 @@ impl ::core::default::Default for PrintDocumentPackageCompletion {
 }
 unsafe impl ::windows::core::Abi for PrintDocumentPackageCompletion {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PrintDocumentPackageCompletion {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -435,6 +436,7 @@ impl ::core::fmt::Debug for PrintDocumentPackageStatus {
 }
 unsafe impl ::windows::core::Abi for PrintDocumentPackageStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PrintDocumentPackageStatus {
     fn eq(&self, other: &Self) -> bool {
@@ -504,6 +506,7 @@ impl ::core::default::Default for XPS_JOB_COMPLETION {
 }
 unsafe impl ::windows::core::Abi for XPS_JOB_COMPLETION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for XPS_JOB_COMPLETION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -533,6 +536,7 @@ impl ::core::fmt::Debug for XPS_JOB_STATUS {
 }
 unsafe impl ::windows::core::Abi for XPS_JOB_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for XPS_JOB_STATUS {
     fn eq(&self, other: &Self) -> bool {

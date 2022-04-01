@@ -2,6 +2,11 @@
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPushNotificationChannel(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPushNotificationChannel {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPushNotificationChannel {
     type Vtable = IPushNotificationChannel_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x2b28102e_ef0b_4f39_9b8a_a3c194de7081);
@@ -28,6 +33,11 @@ pub struct IPushNotificationChannel_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPushNotificationChannelManagerForUser(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPushNotificationChannelManagerForUser {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPushNotificationChannelManagerForUser {
     type Vtable = IPushNotificationChannelManagerForUser_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa4c45704_1182_42c7_8890_f563c4890dc4);
@@ -56,6 +66,11 @@ pub struct IPushNotificationChannelManagerForUser_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPushNotificationChannelManagerForUser2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPushNotificationChannelManagerForUser2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPushNotificationChannelManagerForUser2 {
     type Vtable = IPushNotificationChannelManagerForUser2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc38b066a_7cc1_4dac_87fd_be6e920414a4);
@@ -76,6 +91,11 @@ pub struct IPushNotificationChannelManagerForUser2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPushNotificationChannelManagerStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPushNotificationChannelManagerStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPushNotificationChannelManagerStatics {
     type Vtable = IPushNotificationChannelManagerStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x8baf9b65_77a1_4588_bd19_861529a9dcf0);
@@ -100,6 +120,11 @@ pub struct IPushNotificationChannelManagerStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPushNotificationChannelManagerStatics2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPushNotificationChannelManagerStatics2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPushNotificationChannelManagerStatics2 {
     type Vtable = IPushNotificationChannelManagerStatics2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb444a65d_a7e9_4b28_950e_f375a907f9df);
@@ -116,6 +141,11 @@ pub struct IPushNotificationChannelManagerStatics2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPushNotificationChannelManagerStatics3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPushNotificationChannelManagerStatics3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPushNotificationChannelManagerStatics3 {
     type Vtable = IPushNotificationChannelManagerStatics3_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x4701fefe_0ede_4a3f_ae78_bfa471496925);
@@ -129,6 +159,11 @@ pub struct IPushNotificationChannelManagerStatics3_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPushNotificationChannelManagerStatics4(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPushNotificationChannelManagerStatics4 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPushNotificationChannelManagerStatics4 {
     type Vtable = IPushNotificationChannelManagerStatics4_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xbc540efb_7820_5a5b_9c01_b4757f774025);
@@ -149,6 +184,11 @@ pub struct IPushNotificationChannelManagerStatics4_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPushNotificationChannelsRevokedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPushNotificationChannelsRevokedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPushNotificationChannelsRevokedEventArgs {
     type Vtable = IPushNotificationChannelsRevokedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x20e1a24c_1a34_5beb_aae2_40c232c8c140);
@@ -161,6 +201,11 @@ pub struct IPushNotificationChannelsRevokedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPushNotificationReceivedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPushNotificationReceivedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPushNotificationReceivedEventArgs {
     type Vtable = IPushNotificationReceivedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd1065e0c_36cd_484c_b935_0a99b753cf00);
@@ -189,6 +234,11 @@ pub struct IPushNotificationReceivedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IRawNotification(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRawNotification {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IRawNotification {
     type Vtable = IRawNotification_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1a227281_3b79_42ac_9963_22ab00d4f0b7);
@@ -202,6 +252,11 @@ pub struct IRawNotification_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IRawNotification2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRawNotification2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IRawNotification2 {
     type Vtable = IRawNotification2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe6d0cf19_0c6f_4cdd_9424_eec5be014d26);
@@ -219,6 +274,11 @@ pub struct IRawNotification2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IRawNotification3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRawNotification3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IRawNotification3 {
     type Vtable = IRawNotification3_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x62737dde_8a73_424c_ab44_5635f40a96e5);
@@ -274,11 +334,6 @@ impl PushNotificationChannel {
         unsafe { (::windows::core::Interface::vtable(this).RemovePushNotificationReceived)(::core::mem::transmute_copy(this), token.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for PushNotificationChannel {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PushNotificationChannel {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -292,7 +347,6 @@ impl ::core::fmt::Debug for PushNotificationChannel {
 }
 unsafe impl ::windows::core::RuntimeType for PushNotificationChannel {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.PushNotifications.PushNotificationChannel;{2b28102e-ef0b-4f39-9b8a-a3c194de7081})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -484,11 +538,6 @@ impl PushNotificationChannelManagerForUser {
         }
     }
 }
-impl ::core::clone::Clone for PushNotificationChannelManagerForUser {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PushNotificationChannelManagerForUser {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -502,7 +551,6 @@ impl ::core::fmt::Debug for PushNotificationChannelManagerForUser {
 }
 unsafe impl ::windows::core::RuntimeType for PushNotificationChannelManagerForUser {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.PushNotifications.PushNotificationChannelManagerForUser;{a4c45704-1182-42c7-8890-f563c4890dc4})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -560,11 +608,6 @@ unsafe impl ::core::marker::Sync for PushNotificationChannelManagerForUser {}
 #[repr(transparent)]
 pub struct PushNotificationChannelsRevokedEventArgs(::windows::core::IUnknown);
 impl PushNotificationChannelsRevokedEventArgs {}
-impl ::core::clone::Clone for PushNotificationChannelsRevokedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PushNotificationChannelsRevokedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -578,7 +621,6 @@ impl ::core::fmt::Debug for PushNotificationChannelsRevokedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for PushNotificationChannelsRevokedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.PushNotifications.PushNotificationChannelsRevokedEventArgs;{20e1a24c-1a34-5beb-aae2-40c232c8c140})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -693,11 +735,6 @@ impl PushNotificationReceivedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for PushNotificationReceivedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PushNotificationReceivedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -711,7 +748,6 @@ impl ::core::fmt::Debug for PushNotificationReceivedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for PushNotificationReceivedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.PushNotifications.PushNotificationReceivedEventArgs;{d1065e0c-36cd-484c-b935-0a99b753cf00})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -789,6 +825,7 @@ impl ::core::default::Default for PushNotificationType {
 }
 unsafe impl ::windows::core::Abi for PushNotificationType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PushNotificationType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -797,7 +834,6 @@ impl ::core::fmt::Debug for PushNotificationType {
 }
 unsafe impl ::windows::core::RuntimeType for PushNotificationType {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Networking.PushNotifications.PushNotificationType;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -841,11 +877,6 @@ impl RawNotification {
         }
     }
 }
-impl ::core::clone::Clone for RawNotification {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for RawNotification {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -859,7 +890,6 @@ impl ::core::fmt::Debug for RawNotification {
 }
 unsafe impl ::windows::core::RuntimeType for RawNotification {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.PushNotifications.RawNotification;{1a227281-3b79-42ac-9963-22ab00d4f0b7})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

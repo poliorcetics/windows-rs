@@ -70,6 +70,7 @@ impl ::core::default::Default for EFaultRepRetVal {
 }
 unsafe impl ::windows::core::Abi for EFaultRepRetVal {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EFaultRepRetVal {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -102,6 +103,7 @@ impl ::core::fmt::Debug for HREPORT {
 }
 unsafe impl ::windows::core::Abi for HREPORT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[repr(transparent)]
 #[derive(:: core :: cmp :: PartialEq, :: core :: cmp :: Eq)]
@@ -129,6 +131,7 @@ impl ::core::fmt::Debug for HREPORTSTORE {
 }
 unsafe impl ::windows::core::Abi for HREPORTSTORE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[doc = "*Required features: `\"Win32_System_ErrorReporting\"`*"]
 pub const PACKAGED_APPCRASH_EVENT: &'static str = "MoAppCrash";
@@ -168,6 +171,7 @@ impl ::core::default::Default for REPORT_STORE_TYPES {
 }
 unsafe impl ::windows::core::Abi for REPORT_STORE_TYPES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for REPORT_STORE_TYPES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -216,6 +220,7 @@ impl ::core::default::Default for WER_CONSENT {
 }
 unsafe impl ::windows::core::Abi for WER_CONSENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WER_CONSENT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -269,6 +274,7 @@ impl ::core::fmt::Debug for WER_DUMP_CUSTOM_OPTIONS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WER_DUMP_CUSTOM_OPTIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WER_DUMP_CUSTOM_OPTIONS {
@@ -333,6 +339,7 @@ impl ::core::fmt::Debug for WER_DUMP_CUSTOM_OPTIONS_V2 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WER_DUMP_CUSTOM_OPTIONS_V2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WER_DUMP_CUSTOM_OPTIONS_V2 {
@@ -403,6 +410,7 @@ impl ::core::fmt::Debug for WER_DUMP_CUSTOM_OPTIONS_V3 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WER_DUMP_CUSTOM_OPTIONS_V3 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WER_DUMP_CUSTOM_OPTIONS_V3 {
@@ -451,6 +459,7 @@ impl ::core::default::Default for WER_DUMP_TYPE {
 }
 unsafe impl ::windows::core::Abi for WER_DUMP_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WER_DUMP_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -481,6 +490,7 @@ impl ::core::fmt::Debug for WER_EXCEPTION_INFORMATION {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Diagnostics_Debug", feature = "Win32_System_Kernel"))]
 unsafe impl ::windows::core::Abi for WER_EXCEPTION_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Diagnostics_Debug", feature = "Win32_System_Kernel"))]
 impl ::core::cmp::PartialEq for WER_EXCEPTION_INFORMATION {
@@ -523,6 +533,7 @@ impl ::core::default::Default for WER_FAULT_REPORTING {
 }
 unsafe impl ::windows::core::Abi for WER_FAULT_REPORTING {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WER_FAULT_REPORTING {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -590,6 +601,7 @@ impl ::core::default::Default for WER_FILE {
 }
 unsafe impl ::windows::core::Abi for WER_FILE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WER_FILE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -663,6 +675,7 @@ impl ::core::default::Default for WER_FILE_TYPE {
 }
 unsafe impl ::windows::core::Abi for WER_FILE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WER_FILE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -748,6 +761,7 @@ impl ::core::default::Default for WER_REGISTER_FILE_TYPE {
 }
 unsafe impl ::windows::core::Abi for WER_REGISTER_FILE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WER_REGISTER_FILE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -784,6 +798,7 @@ impl ::core::fmt::Debug for WER_REPORT_INFORMATION {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WER_REPORT_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WER_REPORT_INFORMATION {
@@ -842,6 +857,7 @@ impl ::core::fmt::Debug for WER_REPORT_INFORMATION_V3 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WER_REPORT_INFORMATION_V3 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WER_REPORT_INFORMATION_V3 {
@@ -906,6 +922,7 @@ impl ::core::fmt::Debug for WER_REPORT_INFORMATION_V4 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WER_REPORT_INFORMATION_V4 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WER_REPORT_INFORMATION_V4 {
@@ -972,6 +989,7 @@ impl ::core::fmt::Debug for WER_REPORT_INFORMATION_V5 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WER_REPORT_INFORMATION_V5 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WER_REPORT_INFORMATION_V5 {
@@ -1014,6 +1032,7 @@ impl ::core::fmt::Debug for WER_REPORT_METADATA_V1 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WER_REPORT_METADATA_V1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WER_REPORT_METADATA_V1 {
@@ -1074,6 +1093,7 @@ impl ::core::fmt::Debug for WER_REPORT_METADATA_V2 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WER_REPORT_METADATA_V2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WER_REPORT_METADATA_V2 {
@@ -1146,6 +1166,7 @@ impl ::core::fmt::Debug for WER_REPORT_METADATA_V3 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WER_REPORT_METADATA_V3 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WER_REPORT_METADATA_V3 {
@@ -1180,6 +1201,7 @@ impl ::core::fmt::Debug for WER_REPORT_PARAMETER {
 }
 unsafe impl ::windows::core::Abi for WER_REPORT_PARAMETER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WER_REPORT_PARAMETER {
     fn eq(&self, other: &Self) -> bool {
@@ -1211,6 +1233,7 @@ impl ::core::fmt::Debug for WER_REPORT_SIGNATURE {
 }
 unsafe impl ::windows::core::Abi for WER_REPORT_SIGNATURE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WER_REPORT_SIGNATURE {
     fn eq(&self, other: &Self) -> bool {
@@ -1252,6 +1275,7 @@ impl ::core::default::Default for WER_REPORT_TYPE {
 }
 unsafe impl ::windows::core::Abi for WER_REPORT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WER_REPORT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1297,6 +1321,7 @@ impl ::core::default::Default for WER_REPORT_UI {
 }
 unsafe impl ::windows::core::Abi for WER_REPORT_UI {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WER_REPORT_UI {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1333,6 +1358,7 @@ impl ::core::clone::Clone for WER_RUNTIME_EXCEPTION_INFORMATION {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Diagnostics_Debug", feature = "Win32_System_Kernel"))]
 unsafe impl ::windows::core::Abi for WER_RUNTIME_EXCEPTION_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Diagnostics_Debug", feature = "Win32_System_Kernel"))]
 impl ::core::cmp::PartialEq for WER_RUNTIME_EXCEPTION_INFORMATION {
@@ -1397,6 +1423,7 @@ impl ::core::default::Default for WER_SUBMIT_FLAGS {
 }
 unsafe impl ::windows::core::Abi for WER_SUBMIT_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WER_SUBMIT_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1474,6 +1501,7 @@ impl ::core::default::Default for WER_SUBMIT_RESULT {
 }
 unsafe impl ::windows::core::Abi for WER_SUBMIT_RESULT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WER_SUBMIT_RESULT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

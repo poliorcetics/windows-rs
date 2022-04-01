@@ -217,6 +217,7 @@ impl ::core::fmt::Debug for MS_ADDINFO_BLOB {
 }
 unsafe impl ::windows::core::Abi for MS_ADDINFO_BLOB {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MS_ADDINFO_BLOB {
     fn eq(&self, other: &Self) -> bool {
@@ -254,6 +255,7 @@ impl ::core::fmt::Debug for MS_ADDINFO_CATALOGMEMBER {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography_Catalog"))]
 unsafe impl ::windows::core::Abi for MS_ADDINFO_CATALOGMEMBER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography_Catalog"))]
 impl ::core::cmp::PartialEq for MS_ADDINFO_CATALOGMEMBER {
@@ -288,6 +290,7 @@ impl ::core::fmt::Debug for MS_ADDINFO_FLAT {
 }
 unsafe impl ::windows::core::Abi for MS_ADDINFO_FLAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MS_ADDINFO_FLAT {
     fn eq(&self, other: &Self) -> bool {
@@ -342,6 +345,7 @@ impl ::core::fmt::Debug for SIP_ADD_NEWPROVIDER {
 }
 unsafe impl ::windows::core::Abi for SIP_ADD_NEWPROVIDER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SIP_ADD_NEWPROVIDER {
     fn eq(&self, other: &Self) -> bool {
@@ -384,6 +388,7 @@ impl ::core::fmt::Debug for SIP_CAP_SET_V2 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SIP_CAP_SET_V2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for SIP_CAP_SET_V2 {
@@ -419,6 +424,7 @@ impl ::core::clone::Clone for SIP_CAP_SET_V3 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SIP_CAP_SET_V3 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for SIP_CAP_SET_V3 {
@@ -452,6 +458,7 @@ impl ::core::clone::Clone for SIP_CAP_SET_V3_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SIP_CAP_SET_V3_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for SIP_CAP_SET_V3_0 {
@@ -500,6 +507,7 @@ impl ::core::fmt::Debug for SIP_DISPATCH_INFO {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography_Catalog"))]
 unsafe impl ::windows::core::Abi for SIP_DISPATCH_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography_Catalog"))]
 impl ::core::cmp::PartialEq for SIP_DISPATCH_INFO {
@@ -535,6 +543,7 @@ impl ::core::fmt::Debug for SIP_INDIRECT_DATA {
 }
 unsafe impl ::windows::core::Abi for SIP_INDIRECT_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SIP_INDIRECT_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -583,6 +592,7 @@ impl ::core::clone::Clone for SIP_SUBJECTINFO {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography_Catalog"))]
 unsafe impl ::windows::core::Abi for SIP_SUBJECTINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography_Catalog"))]
 impl ::core::cmp::PartialEq for SIP_SUBJECTINFO {
@@ -617,6 +627,7 @@ impl ::core::clone::Clone for SIP_SUBJECTINFO_0 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography_Catalog"))]
 unsafe impl ::windows::core::Abi for SIP_SUBJECTINFO_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography_Catalog"))]
 impl ::core::cmp::PartialEq for SIP_SUBJECTINFO_0 {

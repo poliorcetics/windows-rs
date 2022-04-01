@@ -2,6 +2,11 @@
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct INamedPolicyData(::windows::core::IUnknown);
+impl ::core::clone::Clone for INamedPolicyData {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for INamedPolicyData {
     type Vtable = INamedPolicyData_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x38dcb198_95ac_4077_a643_8078cae26400);
@@ -39,6 +44,11 @@ pub struct INamedPolicyData_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct INamedPolicyStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for INamedPolicyStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for INamedPolicyStatics {
     type Vtable = INamedPolicyStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x7f793be7_76c4_4058_8cad_67662cd05f0d);
@@ -190,11 +200,6 @@ impl NamedPolicyData {
         unsafe { (::windows::core::Interface::vtable(this).RemoveChanged)(::core::mem::transmute_copy(this), cookie.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for NamedPolicyData {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for NamedPolicyData {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -208,7 +213,6 @@ impl ::core::fmt::Debug for NamedPolicyData {
 }
 unsafe impl ::windows::core::RuntimeType for NamedPolicyData {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Management.Policies.NamedPolicyData;{38dcb198-95ac-4077-a643-8078cae26400})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -287,6 +291,7 @@ impl ::core::default::Default for NamedPolicyKind {
 }
 unsafe impl ::windows::core::Abi for NamedPolicyKind {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NamedPolicyKind {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -295,7 +300,6 @@ impl ::core::fmt::Debug for NamedPolicyKind {
 }
 unsafe impl ::windows::core::RuntimeType for NamedPolicyKind {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Management.Policies.NamedPolicyKind;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }

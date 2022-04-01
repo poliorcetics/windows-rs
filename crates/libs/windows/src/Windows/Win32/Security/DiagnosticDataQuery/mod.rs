@@ -20,6 +20,7 @@ impl ::core::fmt::Debug for DIAGNOSTIC_DATA_EVENT_BINARY_STATS {
 }
 unsafe impl ::windows::core::Abi for DIAGNOSTIC_DATA_EVENT_BINARY_STATS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DIAGNOSTIC_DATA_EVENT_BINARY_STATS {
     fn eq(&self, other: &Self) -> bool {
@@ -51,6 +52,7 @@ impl ::core::fmt::Debug for DIAGNOSTIC_DATA_EVENT_CATEGORY_DESCRIPTION {
 }
 unsafe impl ::windows::core::Abi for DIAGNOSTIC_DATA_EVENT_CATEGORY_DESCRIPTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DIAGNOSTIC_DATA_EVENT_CATEGORY_DESCRIPTION {
     fn eq(&self, other: &Self) -> bool {
@@ -81,6 +83,7 @@ impl ::core::fmt::Debug for DIAGNOSTIC_DATA_EVENT_PRODUCER_DESCRIPTION {
 }
 unsafe impl ::windows::core::Abi for DIAGNOSTIC_DATA_EVENT_PRODUCER_DESCRIPTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DIAGNOSTIC_DATA_EVENT_PRODUCER_DESCRIPTION {
     fn eq(&self, other: &Self) -> bool {
@@ -113,6 +116,7 @@ impl ::core::fmt::Debug for DIAGNOSTIC_DATA_EVENT_TAG_DESCRIPTION {
 }
 unsafe impl ::windows::core::Abi for DIAGNOSTIC_DATA_EVENT_TAG_DESCRIPTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DIAGNOSTIC_DATA_EVENT_TAG_DESCRIPTION {
     fn eq(&self, other: &Self) -> bool {
@@ -144,6 +148,7 @@ impl ::core::fmt::Debug for DIAGNOSTIC_DATA_EVENT_TAG_STATS {
 }
 unsafe impl ::windows::core::Abi for DIAGNOSTIC_DATA_EVENT_TAG_STATS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DIAGNOSTIC_DATA_EVENT_TAG_STATS {
     fn eq(&self, other: &Self) -> bool {
@@ -176,6 +181,7 @@ impl ::core::fmt::Debug for DIAGNOSTIC_DATA_EVENT_TRANSCRIPT_CONFIGURATION {
 }
 unsafe impl ::windows::core::Abi for DIAGNOSTIC_DATA_EVENT_TRANSCRIPT_CONFIGURATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DIAGNOSTIC_DATA_EVENT_TRANSCRIPT_CONFIGURATION {
     fn eq(&self, other: &Self) -> bool {
@@ -210,6 +216,7 @@ impl ::core::fmt::Debug for DIAGNOSTIC_DATA_GENERAL_STATS {
 }
 unsafe impl ::windows::core::Abi for DIAGNOSTIC_DATA_GENERAL_STATS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DIAGNOSTIC_DATA_GENERAL_STATS {
     fn eq(&self, other: &Self) -> bool {
@@ -273,6 +280,7 @@ impl ::core::fmt::Debug for DIAGNOSTIC_DATA_RECORD {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DIAGNOSTIC_DATA_RECORD {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DIAGNOSTIC_DATA_RECORD {
@@ -318,6 +326,7 @@ impl ::core::fmt::Debug for DIAGNOSTIC_DATA_SEARCH_CRITERIA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DIAGNOSTIC_DATA_SEARCH_CRITERIA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DIAGNOSTIC_DATA_SEARCH_CRITERIA {
@@ -390,6 +399,7 @@ impl ::core::fmt::Debug for DIAGNOSTIC_REPORT_DATA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DIAGNOSTIC_REPORT_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DIAGNOSTIC_REPORT_DATA {
@@ -424,6 +434,7 @@ impl ::core::fmt::Debug for DIAGNOSTIC_REPORT_PARAMETER {
 }
 unsafe impl ::windows::core::Abi for DIAGNOSTIC_REPORT_PARAMETER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DIAGNOSTIC_REPORT_PARAMETER {
     fn eq(&self, other: &Self) -> bool {
@@ -455,6 +466,7 @@ impl ::core::fmt::Debug for DIAGNOSTIC_REPORT_SIGNATURE {
 }
 unsafe impl ::windows::core::Abi for DIAGNOSTIC_REPORT_SIGNATURE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DIAGNOSTIC_REPORT_SIGNATURE {
     fn eq(&self, other: &Self) -> bool {
@@ -490,6 +502,7 @@ impl ::core::default::Default for DdqAccessLevel {
 }
 unsafe impl ::windows::core::Abi for DdqAccessLevel {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DdqAccessLevel {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

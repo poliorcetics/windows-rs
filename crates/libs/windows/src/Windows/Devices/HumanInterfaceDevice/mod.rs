@@ -49,11 +49,6 @@ impl HidBooleanControl {
         }
     }
 }
-impl ::core::clone::Clone for HidBooleanControl {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for HidBooleanControl {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -67,7 +62,6 @@ impl ::core::fmt::Debug for HidBooleanControl {
 }
 unsafe impl ::windows::core::RuntimeType for HidBooleanControl {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.HumanInterfaceDevice.HidBooleanControl;{524df48a-3695-408c-bba2-e2eb5abfbc20})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -183,11 +177,6 @@ impl HidBooleanControlDescription {
         }
     }
 }
-impl ::core::clone::Clone for HidBooleanControlDescription {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for HidBooleanControlDescription {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -201,7 +190,6 @@ impl ::core::fmt::Debug for HidBooleanControlDescription {
 }
 unsafe impl ::windows::core::RuntimeType for HidBooleanControlDescription {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.HumanInterfaceDevice.HidBooleanControlDescription;{6196e543-29d8-4a2a-8683-849e207bbe31})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -292,11 +280,6 @@ impl HidCollection {
         }
     }
 }
-impl ::core::clone::Clone for HidCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for HidCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -310,7 +293,6 @@ impl ::core::fmt::Debug for HidCollection {
 }
 unsafe impl ::windows::core::RuntimeType for HidCollection {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.HumanInterfaceDevice.HidCollection;{7189f5a3-32f1-46e3-befd-44d2663b7e6a})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -391,6 +373,7 @@ impl ::core::default::Default for HidCollectionType {
 }
 unsafe impl ::windows::core::Abi for HidCollectionType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HidCollectionType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -399,7 +382,6 @@ impl ::core::fmt::Debug for HidCollectionType {
 }
 unsafe impl ::windows::core::RuntimeType for HidCollectionType {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.HumanInterfaceDevice.HidCollectionType;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -601,11 +583,6 @@ impl HidDevice {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for HidDevice {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for HidDevice {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -619,7 +596,6 @@ impl ::core::fmt::Debug for HidDevice {
 }
 unsafe impl ::windows::core::RuntimeType for HidDevice {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.HumanInterfaceDevice.HidDevice;{5f8a14e7-2200-432e-95da-d09b87d574a8})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -759,11 +735,6 @@ impl HidFeatureReport {
         }
     }
 }
-impl ::core::clone::Clone for HidFeatureReport {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for HidFeatureReport {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -777,7 +748,6 @@ impl ::core::fmt::Debug for HidFeatureReport {
 }
 unsafe impl ::windows::core::RuntimeType for HidFeatureReport {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.HumanInterfaceDevice.HidFeatureReport;{841d9b79-5ae5-46e3-82ef-1fec5c8942f4})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -903,11 +873,6 @@ impl HidInputReport {
         }
     }
 }
-impl ::core::clone::Clone for HidInputReport {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for HidInputReport {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -921,7 +886,6 @@ impl ::core::fmt::Debug for HidInputReport {
 }
 unsafe impl ::windows::core::RuntimeType for HidInputReport {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.HumanInterfaceDevice.HidInputReport;{c35d0e50-f7e7-4e8d-b23e-cabbe56b90e9})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -988,11 +952,6 @@ impl HidInputReportReceivedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for HidInputReportReceivedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for HidInputReportReceivedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1006,7 +965,6 @@ impl ::core::fmt::Debug for HidInputReportReceivedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for HidInputReportReceivedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.HumanInterfaceDevice.HidInputReportReceivedEventArgs;{7059c5cb-59b2-4dc2-985c-0adc6136fa2d})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1131,11 +1089,6 @@ impl HidNumericControl {
         }
     }
 }
-impl ::core::clone::Clone for HidNumericControl {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for HidNumericControl {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1149,7 +1102,6 @@ impl ::core::fmt::Debug for HidNumericControl {
 }
 unsafe impl ::windows::core::RuntimeType for HidNumericControl {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.HumanInterfaceDevice.HidNumericControl;{e38a12a5-35a7-4b75-89c8-fb1f28b10823})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1337,11 +1289,6 @@ impl HidNumericControlDescription {
         }
     }
 }
-impl ::core::clone::Clone for HidNumericControlDescription {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for HidNumericControlDescription {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1355,7 +1302,6 @@ impl ::core::fmt::Debug for HidNumericControlDescription {
 }
 unsafe impl ::windows::core::RuntimeType for HidNumericControlDescription {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.HumanInterfaceDevice.HidNumericControlDescription;{638d5e86-1d97-4c75-927f-5ff58ba05e32})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1469,11 +1415,6 @@ impl HidOutputReport {
         }
     }
 }
-impl ::core::clone::Clone for HidOutputReport {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for HidOutputReport {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1487,7 +1428,6 @@ impl ::core::fmt::Debug for HidOutputReport {
 }
 unsafe impl ::windows::core::RuntimeType for HidOutputReport {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.HumanInterfaceDevice.HidOutputReport;{62cb2544-c896-4463-93c1-df9db053c450})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1563,6 +1503,7 @@ impl ::core::default::Default for HidReportType {
 }
 unsafe impl ::windows::core::Abi for HidReportType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HidReportType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1571,7 +1512,6 @@ impl ::core::fmt::Debug for HidReportType {
 }
 unsafe impl ::windows::core::RuntimeType for HidReportType {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.HumanInterfaceDevice.HidReportType;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1579,6 +1519,11 @@ unsafe impl ::windows::core::RuntimeType for HidReportType {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHidBooleanControl(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHidBooleanControl {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHidBooleanControl {
     type Vtable = IHidBooleanControl_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x524df48a_3695_408c_bba2_e2eb5abfbc20);
@@ -1597,6 +1542,11 @@ pub struct IHidBooleanControl_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHidBooleanControlDescription(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHidBooleanControlDescription {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHidBooleanControlDescription {
     type Vtable = IHidBooleanControlDescription_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x6196e543_29d8_4a2a_8683_849e207bbe31);
@@ -1618,6 +1568,11 @@ pub struct IHidBooleanControlDescription_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHidBooleanControlDescription2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHidBooleanControlDescription2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHidBooleanControlDescription2 {
     type Vtable = IHidBooleanControlDescription2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc8eed2ea_8a77_4c36_aa00_5ff0449d3e73);
@@ -1631,6 +1586,11 @@ pub struct IHidBooleanControlDescription2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHidCollection(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHidCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHidCollection {
     type Vtable = IHidCollection_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x7189f5a3_32f1_46e3_befd_44d2663b7e6a);
@@ -1647,6 +1607,11 @@ pub struct IHidCollection_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHidDevice(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHidDevice {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHidDevice {
     type Vtable = IHidDevice_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x5f8a14e7_2200_432e_95da_d09b87d574a8);
@@ -1708,6 +1673,11 @@ pub struct IHidDevice_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHidDeviceStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHidDeviceStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHidDeviceStatics {
     type Vtable = IHidDeviceStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9e5981e4_9856_418c_9f73_77de0cd85754);
@@ -1726,6 +1696,11 @@ pub struct IHidDeviceStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHidFeatureReport(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHidFeatureReport {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHidFeatureReport {
     type Vtable = IHidFeatureReport_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x841d9b79_5ae5_46e3_82ef_1fec5c8942f4);
@@ -1751,6 +1726,11 @@ pub struct IHidFeatureReport_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHidInputReport(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHidInputReport {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHidInputReport {
     type Vtable = IHidInputReport_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc35d0e50_f7e7_4e8d_b23e_cabbe56b90e9);
@@ -1780,6 +1760,11 @@ pub struct IHidInputReport_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHidInputReportReceivedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHidInputReportReceivedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHidInputReportReceivedEventArgs {
     type Vtable = IHidInputReportReceivedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x7059c5cb_59b2_4dc2_985c_0adc6136fa2d);
@@ -1793,6 +1778,11 @@ pub struct IHidInputReportReceivedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHidNumericControl(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHidNumericControl {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHidNumericControl {
     type Vtable = IHidNumericControl_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe38a12a5_35a7_4b75_89c8_fb1f28b10823);
@@ -1814,6 +1804,11 @@ pub struct IHidNumericControl_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHidNumericControlDescription(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHidNumericControlDescription {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHidNumericControlDescription {
     type Vtable = IHidNumericControlDescription_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x638d5e86_1d97_4c75_927f_5ff58ba05e32);
@@ -1845,6 +1840,11 @@ pub struct IHidNumericControlDescription_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHidOutputReport(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHidOutputReport {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHidOutputReport {
     type Vtable = IHidOutputReport_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x62cb2544_c896_4463_93c1_df9db053c450);

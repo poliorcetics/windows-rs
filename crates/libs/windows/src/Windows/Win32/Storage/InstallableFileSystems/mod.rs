@@ -14,6 +14,7 @@ impl ::core::clone::Clone for FILTER_AGGREGATE_BASIC_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for FILTER_AGGREGATE_BASIC_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for FILTER_AGGREGATE_BASIC_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -40,6 +41,7 @@ impl ::core::clone::Clone for FILTER_AGGREGATE_BASIC_INFORMATION_0 {
 }
 unsafe impl ::windows::core::Abi for FILTER_AGGREGATE_BASIC_INFORMATION_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for FILTER_AGGREGATE_BASIC_INFORMATION_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -71,6 +73,7 @@ impl ::core::fmt::Debug for FILTER_AGGREGATE_BASIC_INFORMATION_0_0 {
 }
 unsafe impl ::windows::core::Abi for FILTER_AGGREGATE_BASIC_INFORMATION_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for FILTER_AGGREGATE_BASIC_INFORMATION_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -106,6 +109,7 @@ impl ::core::fmt::Debug for FILTER_AGGREGATE_BASIC_INFORMATION_0_1 {
 }
 unsafe impl ::windows::core::Abi for FILTER_AGGREGATE_BASIC_INFORMATION_0_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for FILTER_AGGREGATE_BASIC_INFORMATION_0_1 {
     fn eq(&self, other: &Self) -> bool {
@@ -133,6 +137,7 @@ impl ::core::clone::Clone for FILTER_AGGREGATE_STANDARD_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for FILTER_AGGREGATE_STANDARD_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for FILTER_AGGREGATE_STANDARD_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -159,6 +164,7 @@ impl ::core::clone::Clone for FILTER_AGGREGATE_STANDARD_INFORMATION_0 {
 }
 unsafe impl ::windows::core::Abi for FILTER_AGGREGATE_STANDARD_INFORMATION_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for FILTER_AGGREGATE_STANDARD_INFORMATION_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -193,6 +199,7 @@ impl ::core::fmt::Debug for FILTER_AGGREGATE_STANDARD_INFORMATION_0_0 {
 }
 unsafe impl ::windows::core::Abi for FILTER_AGGREGATE_STANDARD_INFORMATION_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for FILTER_AGGREGATE_STANDARD_INFORMATION_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -229,6 +236,7 @@ impl ::core::fmt::Debug for FILTER_AGGREGATE_STANDARD_INFORMATION_0_1 {
 }
 unsafe impl ::windows::core::Abi for FILTER_AGGREGATE_STANDARD_INFORMATION_0_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for FILTER_AGGREGATE_STANDARD_INFORMATION_0_1 {
     fn eq(&self, other: &Self) -> bool {
@@ -263,6 +271,7 @@ impl ::core::fmt::Debug for FILTER_FULL_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for FILTER_FULL_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for FILTER_FULL_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -298,6 +307,7 @@ impl ::core::default::Default for FILTER_INFORMATION_CLASS {
 }
 unsafe impl ::windows::core::Abi for FILTER_INFORMATION_CLASS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FILTER_INFORMATION_CLASS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -323,6 +333,7 @@ impl ::core::fmt::Debug for FILTER_MESSAGE_HEADER {
 }
 unsafe impl ::windows::core::Abi for FILTER_MESSAGE_HEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for FILTER_MESSAGE_HEADER {
     fn eq(&self, other: &Self) -> bool {
@@ -361,6 +372,7 @@ impl ::core::fmt::Debug for FILTER_REPLY_HEADER {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for FILTER_REPLY_HEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for FILTER_REPLY_HEADER {
@@ -395,6 +407,7 @@ impl ::core::fmt::Debug for FILTER_VOLUME_BASIC_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for FILTER_VOLUME_BASIC_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for FILTER_VOLUME_BASIC_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -428,6 +441,7 @@ impl ::core::default::Default for FILTER_VOLUME_INFORMATION_CLASS {
 }
 unsafe impl ::windows::core::Abi for FILTER_VOLUME_INFORMATION_CLASS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FILTER_VOLUME_INFORMATION_CLASS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -457,6 +471,7 @@ impl ::core::fmt::Debug for FILTER_VOLUME_STANDARD_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for FILTER_VOLUME_STANDARD_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for FILTER_VOLUME_STANDARD_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -566,6 +581,7 @@ impl ::core::default::Default for FLT_FILESYSTEM_TYPE {
 }
 unsafe impl ::windows::core::Abi for FLT_FILESYSTEM_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FLT_FILESYSTEM_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -716,6 +732,7 @@ impl ::core::fmt::Debug for FilterFindHandle {
 }
 unsafe impl ::windows::core::Abi for FilterFindHandle {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[doc = "*Required features: `\"Win32_Storage_InstallableFileSystems\"`, `\"Win32_Foundation\"`*"]
 #[cfg(feature = "Win32_Foundation")]
@@ -859,6 +876,7 @@ impl ::core::fmt::Debug for FilterInstanceFindHandle {
 }
 unsafe impl ::windows::core::Abi for FilterInstanceFindHandle {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[doc = "*Required features: `\"Win32_Storage_InstallableFileSystems\"`, `\"Win32_Foundation\"`*"]
 #[cfg(feature = "Win32_Foundation")]
@@ -1002,6 +1020,7 @@ impl ::core::fmt::Debug for FilterVolumeFindHandle {
 }
 unsafe impl ::windows::core::Abi for FilterVolumeFindHandle {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[doc = "*Required features: `\"Win32_Storage_InstallableFileSystems\"`, `\"Win32_Foundation\"`*"]
 #[cfg(feature = "Win32_Foundation")]
@@ -1073,6 +1092,7 @@ impl ::core::fmt::Debug for FilterVolumeInstanceFindHandle {
 }
 unsafe impl ::windows::core::Abi for FilterVolumeInstanceFindHandle {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[doc = "*Required features: `\"Win32_Storage_InstallableFileSystems\"`, `\"Win32_Foundation\"`*"]
 #[cfg(feature = "Win32_Foundation")]
@@ -1115,6 +1135,7 @@ impl ::core::fmt::Debug for HFILTER {
 }
 unsafe impl ::windows::core::Abi for HFILTER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[repr(transparent)]
 #[derive(:: core :: cmp :: PartialEq, :: core :: cmp :: Eq)]
@@ -1142,6 +1163,7 @@ impl ::core::fmt::Debug for HFILTER_INSTANCE {
 }
 unsafe impl ::windows::core::Abi for HFILTER_INSTANCE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[repr(C)]
 #[doc = "*Required features: `\"Win32_Storage_InstallableFileSystems\"`*"]
@@ -1158,6 +1180,7 @@ impl ::core::clone::Clone for INSTANCE_AGGREGATE_STANDARD_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for INSTANCE_AGGREGATE_STANDARD_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for INSTANCE_AGGREGATE_STANDARD_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -1184,6 +1207,7 @@ impl ::core::clone::Clone for INSTANCE_AGGREGATE_STANDARD_INFORMATION_0 {
 }
 unsafe impl ::windows::core::Abi for INSTANCE_AGGREGATE_STANDARD_INFORMATION_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for INSTANCE_AGGREGATE_STANDARD_INFORMATION_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -1221,6 +1245,7 @@ impl ::core::fmt::Debug for INSTANCE_AGGREGATE_STANDARD_INFORMATION_0_0 {
 }
 unsafe impl ::windows::core::Abi for INSTANCE_AGGREGATE_STANDARD_INFORMATION_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for INSTANCE_AGGREGATE_STANDARD_INFORMATION_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -1275,6 +1300,7 @@ impl ::core::fmt::Debug for INSTANCE_AGGREGATE_STANDARD_INFORMATION_0_1 {
 }
 unsafe impl ::windows::core::Abi for INSTANCE_AGGREGATE_STANDARD_INFORMATION_0_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for INSTANCE_AGGREGATE_STANDARD_INFORMATION_0_1 {
     fn eq(&self, other: &Self) -> bool {
@@ -1307,6 +1333,7 @@ impl ::core::fmt::Debug for INSTANCE_BASIC_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for INSTANCE_BASIC_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for INSTANCE_BASIC_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -1355,6 +1382,7 @@ impl ::core::fmt::Debug for INSTANCE_FULL_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for INSTANCE_FULL_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for INSTANCE_FULL_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -1392,6 +1420,7 @@ impl ::core::default::Default for INSTANCE_INFORMATION_CLASS {
 }
 unsafe impl ::windows::core::Abi for INSTANCE_INFORMATION_CLASS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for INSTANCE_INFORMATION_CLASS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1422,6 +1451,7 @@ impl ::core::fmt::Debug for INSTANCE_PARTIAL_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for INSTANCE_PARTIAL_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for INSTANCE_PARTIAL_INFORMATION {
     fn eq(&self, other: &Self) -> bool {

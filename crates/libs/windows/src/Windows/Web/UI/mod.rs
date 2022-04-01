@@ -4,6 +4,11 @@ pub mod Interop;
 #[doc = "*Required features: `\"Web_UI\"`*"]
 #[repr(transparent)]
 pub struct IWebViewControl(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWebViewControl {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWebViewControl {
     #[doc = "*Required features: `\"Web_UI\"`, `\"Foundation\"`*"]
     #[cfg(feature = "Foundation")]
@@ -464,11 +469,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWebViewControl {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWebViewControl {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -482,7 +482,6 @@ impl ::core::fmt::Debug for IWebViewControl {
 }
 unsafe impl ::windows::core::RuntimeType for IWebViewControl {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{3f921316-bc70-4bda-9136-c94370899fab}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -694,6 +693,11 @@ pub struct IWebViewControl_Vtbl {
 #[doc = "*Required features: `\"Web_UI\"`*"]
 #[repr(transparent)]
 pub struct IWebViewControl2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWebViewControl2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWebViewControl2 {
     #[doc = "*Required features: `\"Web_UI\"`*"]
     pub fn AddInitializeScript<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::HSTRING>>(&self, script: Param0) -> ::windows::core::Result<()> {
@@ -741,11 +745,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWebViewControl2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWebViewControl2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -759,7 +758,6 @@ impl ::core::fmt::Debug for IWebViewControl2 {
 }
 unsafe impl ::windows::core::RuntimeType for IWebViewControl2 {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{4d3c06f9-c8df-41cc-8bd5-2a947b204503}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -777,6 +775,11 @@ pub struct IWebViewControl2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWebViewControlContentLoadingEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWebViewControlContentLoadingEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWebViewControlContentLoadingEventArgs {
     type Vtable = IWebViewControlContentLoadingEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9a3fccb2_b9bb_404b_a22b_66dccd1250c6);
@@ -793,6 +796,11 @@ pub struct IWebViewControlContentLoadingEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWebViewControlDOMContentLoadedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWebViewControlDOMContentLoadedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWebViewControlDOMContentLoadedEventArgs {
     type Vtable = IWebViewControlDOMContentLoadedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xbe8bc008_9541_4545_9ff2_2df585b29f7d);
@@ -809,6 +817,11 @@ pub struct IWebViewControlDOMContentLoadedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWebViewControlDeferredPermissionRequest(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWebViewControlDeferredPermissionRequest {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWebViewControlDeferredPermissionRequest {
     type Vtable = IWebViewControlDeferredPermissionRequest_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x2ce349e0_d759_445c_9926_8995298f152b);
@@ -829,6 +842,11 @@ pub struct IWebViewControlDeferredPermissionRequest_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWebViewControlLongRunningScriptDetectedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWebViewControlLongRunningScriptDetectedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWebViewControlLongRunningScriptDetectedEventArgs {
     type Vtable = IWebViewControlLongRunningScriptDetectedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x2a6e5bba_98b4_45bc_bbeb_0f69ce49c599);
@@ -847,6 +865,11 @@ pub struct IWebViewControlLongRunningScriptDetectedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWebViewControlNavigationCompletedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWebViewControlNavigationCompletedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWebViewControlNavigationCompletedEventArgs {
     type Vtable = IWebViewControlNavigationCompletedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x20409918_4a15_4c46_a55d_f79edb0bde8b);
@@ -865,6 +888,11 @@ pub struct IWebViewControlNavigationCompletedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWebViewControlNavigationStartingEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWebViewControlNavigationStartingEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWebViewControlNavigationStartingEventArgs {
     type Vtable = IWebViewControlNavigationStartingEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x0c9057c5_0a08_41c7_863b_71e3a9549137);
@@ -883,6 +911,11 @@ pub struct IWebViewControlNavigationStartingEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWebViewControlNewWindowRequestedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWebViewControlNewWindowRequestedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWebViewControlNewWindowRequestedEventArgs {
     type Vtable = IWebViewControlNewWindowRequestedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x3df44bbb_a124_46d5_a083_d02cacdff5ad);
@@ -905,6 +938,11 @@ pub struct IWebViewControlNewWindowRequestedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWebViewControlNewWindowRequestedEventArgs2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWebViewControlNewWindowRequestedEventArgs2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWebViewControlNewWindowRequestedEventArgs2 {
     type Vtable = IWebViewControlNewWindowRequestedEventArgs2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb53c5ca6_2aae_4bfc_92b9_c30e92b48098);
@@ -923,6 +961,11 @@ pub struct IWebViewControlNewWindowRequestedEventArgs2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWebViewControlPermissionRequest(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWebViewControlPermissionRequest {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWebViewControlPermissionRequest {
     type Vtable = IWebViewControlPermissionRequest_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe5bc836c_f22f_40e2_95b2_7729f840eb7f);
@@ -945,6 +988,11 @@ pub struct IWebViewControlPermissionRequest_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWebViewControlPermissionRequestedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWebViewControlPermissionRequestedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWebViewControlPermissionRequestedEventArgs {
     type Vtable = IWebViewControlPermissionRequestedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x27204d51_2488_4cc5_968e_0a771e59c147);
@@ -958,6 +1006,11 @@ pub struct IWebViewControlPermissionRequestedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWebViewControlScriptNotifyEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWebViewControlScriptNotifyEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWebViewControlScriptNotifyEventArgs {
     type Vtable = IWebViewControlScriptNotifyEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x491de57b_6f49_41bb_b591_51b85b817037);
@@ -975,6 +1028,11 @@ pub struct IWebViewControlScriptNotifyEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWebViewControlSettings(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWebViewControlSettings {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWebViewControlSettings {
     type Vtable = IWebViewControlSettings_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc9967fbf_5e98_4cfd_8cce_27b0911e3de8);
@@ -993,6 +1051,11 @@ pub struct IWebViewControlSettings_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWebViewControlUnsupportedUriSchemeIdentifiedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWebViewControlUnsupportedUriSchemeIdentifiedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWebViewControlUnsupportedUriSchemeIdentifiedEventArgs {
     type Vtable = IWebViewControlUnsupportedUriSchemeIdentifiedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe3b81944_e4fc_43dc_94ca_f980f30bc51d);
@@ -1011,6 +1074,11 @@ pub struct IWebViewControlUnsupportedUriSchemeIdentifiedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWebViewControlUnviewableContentIdentifiedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWebViewControlUnviewableContentIdentifiedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWebViewControlUnviewableContentIdentifiedEventArgs {
     type Vtable = IWebViewControlUnviewableContentIdentifiedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x4a9680db_88f2_4e20_b693_b4e2df4aa581);
@@ -1032,6 +1100,11 @@ pub struct IWebViewControlUnviewableContentIdentifiedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWebViewControlWebResourceRequestedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWebViewControlWebResourceRequestedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWebViewControlWebResourceRequestedEventArgs {
     type Vtable = IWebViewControlWebResourceRequestedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x44d6524d_55a4_4d8b_891c_931d8e25d42e);
@@ -1071,11 +1144,6 @@ impl WebViewControlContentLoadingEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for WebViewControlContentLoadingEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for WebViewControlContentLoadingEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1089,7 +1157,6 @@ impl ::core::fmt::Debug for WebViewControlContentLoadingEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for WebViewControlContentLoadingEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Web.UI.WebViewControlContentLoadingEventArgs;{9a3fccb2-b9bb-404b-a22b-66dccd1250c6})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1155,11 +1222,6 @@ impl WebViewControlDOMContentLoadedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for WebViewControlDOMContentLoadedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for WebViewControlDOMContentLoadedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1173,7 +1235,6 @@ impl ::core::fmt::Debug for WebViewControlDOMContentLoadedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for WebViewControlDOMContentLoadedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Web.UI.WebViewControlDOMContentLoadedEventArgs;{be8bc008-9541-4545-9ff2-2df585b29f7d})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1265,11 +1326,6 @@ impl WebViewControlDeferredPermissionRequest {
         unsafe { (::windows::core::Interface::vtable(this).Deny)(::core::mem::transmute_copy(this)).ok() }
     }
 }
-impl ::core::clone::Clone for WebViewControlDeferredPermissionRequest {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for WebViewControlDeferredPermissionRequest {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1283,7 +1339,6 @@ impl ::core::fmt::Debug for WebViewControlDeferredPermissionRequest {
 }
 unsafe impl ::windows::core::RuntimeType for WebViewControlDeferredPermissionRequest {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Web.UI.WebViewControlDeferredPermissionRequest;{2ce349e0-d759-445c-9926-8995298f152b})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1362,11 +1417,6 @@ impl WebViewControlLongRunningScriptDetectedEventArgs {
         unsafe { (::windows::core::Interface::vtable(this).SetStopPageScriptExecution)(::core::mem::transmute_copy(this), value).ok() }
     }
 }
-impl ::core::clone::Clone for WebViewControlLongRunningScriptDetectedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for WebViewControlLongRunningScriptDetectedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1380,7 +1430,6 @@ impl ::core::fmt::Debug for WebViewControlLongRunningScriptDetectedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for WebViewControlLongRunningScriptDetectedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Web.UI.WebViewControlLongRunningScriptDetectedEventArgs;{2a6e5bba-98b4-45bc-bbeb-0f69ce49c599})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1462,11 +1511,6 @@ impl WebViewControlNavigationCompletedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for WebViewControlNavigationCompletedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for WebViewControlNavigationCompletedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1480,7 +1524,6 @@ impl ::core::fmt::Debug for WebViewControlNavigationCompletedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for WebViewControlNavigationCompletedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Web.UI.WebViewControlNavigationCompletedEventArgs;{20409918-4a15-4c46-a55d-f79edb0bde8b})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1559,11 +1602,6 @@ impl WebViewControlNavigationStartingEventArgs {
         unsafe { (::windows::core::Interface::vtable(this).SetCancel)(::core::mem::transmute_copy(this), value).ok() }
     }
 }
-impl ::core::clone::Clone for WebViewControlNavigationStartingEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for WebViewControlNavigationStartingEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1577,7 +1615,6 @@ impl ::core::fmt::Debug for WebViewControlNavigationStartingEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for WebViewControlNavigationStartingEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Web.UI.WebViewControlNavigationStartingEventArgs;{0c9057c5-0a08-41c7-863b-71e3a9549137})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1687,11 +1724,6 @@ impl WebViewControlNewWindowRequestedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for WebViewControlNewWindowRequestedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for WebViewControlNewWindowRequestedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1705,7 +1737,6 @@ impl ::core::fmt::Debug for WebViewControlNewWindowRequestedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for WebViewControlNewWindowRequestedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Web.UI.WebViewControlNewWindowRequestedEventArgs;{3df44bbb-a124-46d5-a083-d02cacdff5ad})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1810,11 +1841,6 @@ impl WebViewControlPermissionRequest {
         unsafe { (::windows::core::Interface::vtable(this).Deny)(::core::mem::transmute_copy(this)).ok() }
     }
 }
-impl ::core::clone::Clone for WebViewControlPermissionRequest {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for WebViewControlPermissionRequest {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1828,7 +1854,6 @@ impl ::core::fmt::Debug for WebViewControlPermissionRequest {
 }
 unsafe impl ::windows::core::RuntimeType for WebViewControlPermissionRequest {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Web.UI.WebViewControlPermissionRequest;{e5bc836c-f22f-40e2-95b2-7729f840eb7f})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1893,11 +1918,6 @@ impl WebViewControlPermissionRequestedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for WebViewControlPermissionRequestedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for WebViewControlPermissionRequestedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1911,7 +1931,6 @@ impl ::core::fmt::Debug for WebViewControlPermissionRequestedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for WebViewControlPermissionRequestedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Web.UI.WebViewControlPermissionRequestedEventArgs;{27204d51-2488-4cc5-968e-0a771e59c147})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1986,6 +2005,7 @@ impl ::core::default::Default for WebViewControlPermissionState {
 }
 unsafe impl ::windows::core::Abi for WebViewControlPermissionState {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WebViewControlPermissionState {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1994,7 +2014,6 @@ impl ::core::fmt::Debug for WebViewControlPermissionState {
 }
 unsafe impl ::windows::core::RuntimeType for WebViewControlPermissionState {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Web.UI.WebViewControlPermissionState;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2025,6 +2044,7 @@ impl ::core::default::Default for WebViewControlPermissionType {
 }
 unsafe impl ::windows::core::Abi for WebViewControlPermissionType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WebViewControlPermissionType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2033,7 +2053,6 @@ impl ::core::fmt::Debug for WebViewControlPermissionType {
 }
 unsafe impl ::windows::core::RuntimeType for WebViewControlPermissionType {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Web.UI.WebViewControlPermissionType;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2060,11 +2079,6 @@ impl WebViewControlScriptNotifyEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for WebViewControlScriptNotifyEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for WebViewControlScriptNotifyEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2078,7 +2092,6 @@ impl ::core::fmt::Debug for WebViewControlScriptNotifyEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for WebViewControlScriptNotifyEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Web.UI.WebViewControlScriptNotifyEventArgs;{491de57b-6f49-41bb-b591-51b85b817037})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2174,11 +2187,6 @@ impl WebViewControlSettings {
         }
     }
 }
-impl ::core::clone::Clone for WebViewControlSettings {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for WebViewControlSettings {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2192,7 +2200,6 @@ impl ::core::fmt::Debug for WebViewControlSettings {
 }
 unsafe impl ::windows::core::RuntimeType for WebViewControlSettings {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Web.UI.WebViewControlSettings;{c9967fbf-5e98-4cfd-8cce-27b0911e3de8})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2271,11 +2278,6 @@ impl WebViewControlUnsupportedUriSchemeIdentifiedEventArgs {
         unsafe { (::windows::core::Interface::vtable(this).SetHandled)(::core::mem::transmute_copy(this), value).ok() }
     }
 }
-impl ::core::clone::Clone for WebViewControlUnsupportedUriSchemeIdentifiedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for WebViewControlUnsupportedUriSchemeIdentifiedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2289,7 +2291,6 @@ impl ::core::fmt::Debug for WebViewControlUnsupportedUriSchemeIdentifiedEventArg
 }
 unsafe impl ::windows::core::RuntimeType for WebViewControlUnsupportedUriSchemeIdentifiedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Web.UI.WebViewControlUnsupportedUriSchemeIdentifiedEventArgs;{e3b81944-e4fc-43dc-94ca-f980f30bc51d})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2372,11 +2373,6 @@ impl WebViewControlUnviewableContentIdentifiedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for WebViewControlUnviewableContentIdentifiedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for WebViewControlUnviewableContentIdentifiedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2390,7 +2386,6 @@ impl ::core::fmt::Debug for WebViewControlUnviewableContentIdentifiedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for WebViewControlUnviewableContentIdentifiedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Web.UI.WebViewControlUnviewableContentIdentifiedEventArgs;{4a9680db-88f2-4e20-b693-b4e2df4aa581})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2480,11 +2475,6 @@ impl WebViewControlWebResourceRequestedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for WebViewControlWebResourceRequestedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for WebViewControlWebResourceRequestedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2498,7 +2488,6 @@ impl ::core::fmt::Debug for WebViewControlWebResourceRequestedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for WebViewControlWebResourceRequestedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Web.UI.WebViewControlWebResourceRequestedEventArgs;{44d6524d-55a4-4d8b-891c-931d8e25d42e})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

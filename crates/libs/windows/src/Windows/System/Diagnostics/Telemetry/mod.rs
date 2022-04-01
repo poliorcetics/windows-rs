@@ -2,6 +2,11 @@
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPlatformTelemetryClientStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPlatformTelemetryClientStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPlatformTelemetryClientStatics {
     type Vtable = IPlatformTelemetryClientStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9bf3f25d_d5c3_4eea_8dbe_9c8dbb0d9d8f);
@@ -16,6 +21,11 @@ pub struct IPlatformTelemetryClientStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPlatformTelemetryRegistrationResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPlatformTelemetryRegistrationResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPlatformTelemetryRegistrationResult {
     type Vtable = IPlatformTelemetryRegistrationResult_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x4d8518ab_2292_49bd_a15a_3d71d2145112);
@@ -29,6 +39,11 @@ pub struct IPlatformTelemetryRegistrationResult_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPlatformTelemetryRegistrationSettings(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPlatformTelemetryRegistrationSettings {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPlatformTelemetryRegistrationSettings {
     type Vtable = IPlatformTelemetryRegistrationSettings_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x819a8582_ca19_415e_bb79_9c224bfa3a73);
@@ -81,11 +96,6 @@ impl PlatformTelemetryRegistrationResult {
         }
     }
 }
-impl ::core::clone::Clone for PlatformTelemetryRegistrationResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PlatformTelemetryRegistrationResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -99,7 +109,6 @@ impl ::core::fmt::Debug for PlatformTelemetryRegistrationResult {
 }
 unsafe impl ::windows::core::RuntimeType for PlatformTelemetryRegistrationResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.System.Diagnostics.Telemetry.PlatformTelemetryRegistrationResult;{4d8518ab-2292-49bd-a15a-3d71d2145112})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -191,11 +200,6 @@ impl PlatformTelemetryRegistrationSettings {
         unsafe { (::windows::core::Interface::vtable(this).SetUploadQuotaSize)(::core::mem::transmute_copy(this), value).ok() }
     }
 }
-impl ::core::clone::Clone for PlatformTelemetryRegistrationSettings {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PlatformTelemetryRegistrationSettings {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -209,7 +213,6 @@ impl ::core::fmt::Debug for PlatformTelemetryRegistrationSettings {
 }
 unsafe impl ::windows::core::RuntimeType for PlatformTelemetryRegistrationSettings {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.System.Diagnostics.Telemetry.PlatformTelemetryRegistrationSettings;{819a8582-ca19-415e-bb79-9c224bfa3a73})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -285,6 +288,7 @@ impl ::core::default::Default for PlatformTelemetryRegistrationStatus {
 }
 unsafe impl ::windows::core::Abi for PlatformTelemetryRegistrationStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PlatformTelemetryRegistrationStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -293,7 +297,6 @@ impl ::core::fmt::Debug for PlatformTelemetryRegistrationStatus {
 }
 unsafe impl ::windows::core::RuntimeType for PlatformTelemetryRegistrationStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.System.Diagnostics.Telemetry.PlatformTelemetryRegistrationStatus;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }

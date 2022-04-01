@@ -2,6 +2,11 @@
 #[doc = "*Required features: `\"Win32_System_Com_ChannelCredentials\"`*"]
 #[repr(transparent)]
 pub struct IChannelCredentials(::windows::core::IUnknown);
+impl ::core::clone::Clone for IChannelCredentials {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IChannelCredentials {
     #[doc = "*Required features: `\"Win32_System_Com_ChannelCredentials\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -92,11 +97,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::IDispatch> for IChannelCredential
 impl<'a> ::windows::core::IntoParam<'a, super::IDispatch> for &'a IChannelCredentials {
     fn into_param(self) -> ::windows::core::Param<'a, super::IDispatch> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IChannelCredentials {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IChannelCredentials {

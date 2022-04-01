@@ -44,11 +44,6 @@ impl AccessibilitySettings {
         unsafe { (::windows::core::Interface::vtable(this).RemoveHighContrastChanged)(::core::mem::transmute_copy(this), cookie.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for AccessibilitySettings {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AccessibilitySettings {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -62,7 +57,6 @@ impl ::core::fmt::Debug for AccessibilitySettings {
 }
 unsafe impl ::windows::core::RuntimeType for AccessibilitySettings {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.ViewManagement.AccessibilitySettings;{fe0e8147-c4c0-4562-b962-1327b52ad5b9})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -147,11 +141,6 @@ impl ActivationViewSwitcher {
         }
     }
 }
-impl ::core::clone::Clone for ActivationViewSwitcher {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ActivationViewSwitcher {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -165,7 +154,6 @@ impl ::core::fmt::Debug for ActivationViewSwitcher {
 }
 unsafe impl ::windows::core::RuntimeType for ActivationViewSwitcher {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.ViewManagement.ActivationViewSwitcher;{dca71bb6-7350-492b-aac7-c8a13d7224ad})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -627,11 +615,6 @@ impl ApplicationView {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for ApplicationView {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ApplicationView {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -645,7 +628,6 @@ impl ::core::fmt::Debug for ApplicationView {
 }
 unsafe impl ::windows::core::RuntimeType for ApplicationView {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.ViewManagement.ApplicationView;{d222d519-4361-451e-96c4-60f4f9742db0})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -720,6 +702,7 @@ impl ::core::default::Default for ApplicationViewBoundsMode {
 }
 unsafe impl ::windows::core::Abi for ApplicationViewBoundsMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ApplicationViewBoundsMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -728,7 +711,6 @@ impl ::core::fmt::Debug for ApplicationViewBoundsMode {
 }
 unsafe impl ::windows::core::RuntimeType for ApplicationViewBoundsMode {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.ViewManagement.ApplicationViewBoundsMode;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -754,11 +736,6 @@ impl ApplicationViewConsolidatedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for ApplicationViewConsolidatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ApplicationViewConsolidatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -772,7 +749,6 @@ impl ::core::fmt::Debug for ApplicationViewConsolidatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for ApplicationViewConsolidatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.ViewManagement.ApplicationViewConsolidatedEventArgs;{514449ec-7ea2-4de7-a6a6-7dfbaaebb6fb})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -847,6 +823,7 @@ impl ::core::default::Default for ApplicationViewMode {
 }
 unsafe impl ::windows::core::Abi for ApplicationViewMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ApplicationViewMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -855,7 +832,6 @@ impl ::core::fmt::Debug for ApplicationViewMode {
 }
 unsafe impl ::windows::core::RuntimeType for ApplicationViewMode {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.ViewManagement.ApplicationViewMode;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -881,6 +857,7 @@ impl ::core::default::Default for ApplicationViewOrientation {
 }
 unsafe impl ::windows::core::Abi for ApplicationViewOrientation {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ApplicationViewOrientation {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -889,7 +866,6 @@ impl ::core::fmt::Debug for ApplicationViewOrientation {
 }
 unsafe impl ::windows::core::RuntimeType for ApplicationViewOrientation {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.ViewManagement.ApplicationViewOrientation;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -918,11 +894,6 @@ impl ApplicationViewScaling {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for ApplicationViewScaling {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ApplicationViewScaling {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -936,7 +907,6 @@ impl ::core::fmt::Debug for ApplicationViewScaling {
 }
 unsafe impl ::windows::core::RuntimeType for ApplicationViewScaling {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.ViewManagement.ApplicationViewScaling;{1d0ddc23-23f3-4b2d-84fe-74bf37b48b66})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1017,6 +987,7 @@ impl ::core::default::Default for ApplicationViewState {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Abi for ApplicationViewState {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "deprecated")]
 impl ::core::fmt::Debug for ApplicationViewState {
@@ -1027,7 +998,6 @@ impl ::core::fmt::Debug for ApplicationViewState {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for ApplicationViewState {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.ViewManagement.ApplicationViewState;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1156,6 +1126,7 @@ impl ::core::default::Default for ApplicationViewSwitchingOptions {
 }
 unsafe impl ::windows::core::Abi for ApplicationViewSwitchingOptions {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ApplicationViewSwitchingOptions {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1192,7 +1163,6 @@ impl ::core::ops::Not for ApplicationViewSwitchingOptions {
 }
 unsafe impl ::windows::core::RuntimeType for ApplicationViewSwitchingOptions {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.ViewManagement.ApplicationViewSwitchingOptions;u4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1382,11 +1352,6 @@ impl ApplicationViewTitleBar {
         }
     }
 }
-impl ::core::clone::Clone for ApplicationViewTitleBar {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ApplicationViewTitleBar {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1400,7 +1365,6 @@ impl ::core::fmt::Debug for ApplicationViewTitleBar {
 }
 unsafe impl ::windows::core::RuntimeType for ApplicationViewTitleBar {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.ViewManagement.ApplicationViewTitleBar;{00924ac0-932b-4a6b-9c4b-dc38c82478ce})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1491,11 +1455,6 @@ impl ApplicationViewTransferContext {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for ApplicationViewTransferContext {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ApplicationViewTransferContext {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1509,7 +1468,6 @@ impl ::core::fmt::Debug for ApplicationViewTransferContext {
 }
 unsafe impl ::windows::core::RuntimeType for ApplicationViewTransferContext {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.ViewManagement.ApplicationViewTransferContext;{8574bc63-3c17-408e-9408-8a1a9ea81bfa})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1585,6 +1543,7 @@ impl ::core::default::Default for ApplicationViewWindowingMode {
 }
 unsafe impl ::windows::core::Abi for ApplicationViewWindowingMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ApplicationViewWindowingMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1593,7 +1552,6 @@ impl ::core::fmt::Debug for ApplicationViewWindowingMode {
 }
 unsafe impl ::windows::core::RuntimeType for ApplicationViewWindowingMode {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.ViewManagement.ApplicationViewWindowingMode;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1619,6 +1577,7 @@ impl ::core::default::Default for FullScreenSystemOverlayMode {
 }
 unsafe impl ::windows::core::Abi for FullScreenSystemOverlayMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FullScreenSystemOverlayMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1627,7 +1586,6 @@ impl ::core::fmt::Debug for FullScreenSystemOverlayMode {
 }
 unsafe impl ::windows::core::RuntimeType for FullScreenSystemOverlayMode {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.ViewManagement.FullScreenSystemOverlayMode;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1653,6 +1611,7 @@ impl ::core::default::Default for HandPreference {
 }
 unsafe impl ::windows::core::Abi for HandPreference {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HandPreference {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1661,7 +1620,6 @@ impl ::core::fmt::Debug for HandPreference {
 }
 unsafe impl ::windows::core::RuntimeType for HandPreference {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.ViewManagement.HandPreference;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1669,6 +1627,11 @@ unsafe impl ::windows::core::RuntimeType for HandPreference {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAccessibilitySettings(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAccessibilitySettings {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAccessibilitySettings {
     type Vtable = IAccessibilitySettings_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xfe0e8147_c4c0_4562_b962_1327b52ad5b9);
@@ -1691,6 +1654,11 @@ pub struct IAccessibilitySettings_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IActivationViewSwitcher(::windows::core::IUnknown);
+impl ::core::clone::Clone for IActivationViewSwitcher {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IActivationViewSwitcher {
     type Vtable = IActivationViewSwitcher_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xdca71bb6_7350_492b_aac7_c8a13d7224ad);
@@ -1712,6 +1680,11 @@ pub struct IActivationViewSwitcher_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IApplicationView(::windows::core::IUnknown);
+impl ::core::clone::Clone for IApplicationView {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IApplicationView {
     type Vtable = IApplicationView_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd222d519_4361_451e_96c4_60f4f9742db0);
@@ -1745,6 +1718,11 @@ pub struct IApplicationView_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IApplicationView2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IApplicationView2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IApplicationView2 {
     type Vtable = IApplicationView2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe876b196_a545_40dc_b594_450cba68cc00);
@@ -1779,6 +1757,11 @@ pub struct IApplicationView2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IApplicationView3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IApplicationView3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IApplicationView3 {
     type Vtable = IApplicationView3_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x903c9ce5_793a_4fdf_a2b2_af1ac21e3108);
@@ -1806,6 +1789,11 @@ pub struct IApplicationView3_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IApplicationView4(::windows::core::IUnknown);
+impl ::core::clone::Clone for IApplicationView4 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IApplicationView4 {
     type Vtable = IApplicationView4_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x15e5cbec_9e0f_46b5_bc3f_9bf653e74b5e);
@@ -1832,6 +1820,11 @@ pub struct IApplicationView4_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IApplicationView7(::windows::core::IUnknown);
+impl ::core::clone::Clone for IApplicationView7 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IApplicationView7 {
     type Vtable = IApplicationView7_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa0369647_5faf_5aa6_9c38_befbb12a071e);
@@ -1846,6 +1839,11 @@ pub struct IApplicationView7_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IApplicationView9(::windows::core::IUnknown);
+impl ::core::clone::Clone for IApplicationView9 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IApplicationView9 {
     type Vtable = IApplicationView9_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9c6516f9_021a_5f01_93e5_9bdad2647574);
@@ -1866,6 +1864,11 @@ pub struct IApplicationView9_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IApplicationViewConsolidatedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IApplicationViewConsolidatedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IApplicationViewConsolidatedEventArgs {
     type Vtable = IApplicationViewConsolidatedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x514449ec_7ea2_4de7_a6a6_7dfbaaebb6fb);
@@ -1879,6 +1882,11 @@ pub struct IApplicationViewConsolidatedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IApplicationViewConsolidatedEventArgs2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IApplicationViewConsolidatedEventArgs2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IApplicationViewConsolidatedEventArgs2 {
     type Vtable = IApplicationViewConsolidatedEventArgs2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1c199ecc_6dc1_40f4_afee_07d9ea296430);
@@ -1893,6 +1901,12 @@ pub struct IApplicationViewConsolidatedEventArgs2_Vtbl {
 #[cfg(feature = "deprecated")]
 #[repr(transparent)]
 pub struct IApplicationViewFullscreenStatics(::windows::core::IUnknown);
+#[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for IApplicationViewFullscreenStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for IApplicationViewFullscreenStatics {
     type Vtable = IApplicationViewFullscreenStatics_Vtbl;
@@ -1911,6 +1925,11 @@ pub struct IApplicationViewFullscreenStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IApplicationViewInteropStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IApplicationViewInteropStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IApplicationViewInteropStatics {
     type Vtable = IApplicationViewInteropStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc446fb5d_4793_4896_a8e2_be57a8bb0f50);
@@ -1927,6 +1946,11 @@ pub struct IApplicationViewInteropStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IApplicationViewScaling(::windows::core::IUnknown);
+impl ::core::clone::Clone for IApplicationViewScaling {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IApplicationViewScaling {
     type Vtable = IApplicationViewScaling_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1d0ddc23_23f3_4b2d_84fe_74bf37b48b66);
@@ -1939,6 +1963,11 @@ pub struct IApplicationViewScaling_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IApplicationViewScalingStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IApplicationViewScalingStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IApplicationViewScalingStatics {
     type Vtable = IApplicationViewScalingStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb08fecf0_b946_45c8_a5e3_71f5aa78f861);
@@ -1954,6 +1983,12 @@ pub struct IApplicationViewScalingStatics_Vtbl {
 #[cfg(feature = "deprecated")]
 #[repr(transparent)]
 pub struct IApplicationViewStatics(::windows::core::IUnknown);
+#[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for IApplicationViewStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for IApplicationViewStatics {
     type Vtable = IApplicationViewStatics_Vtbl;
@@ -1976,6 +2011,11 @@ pub struct IApplicationViewStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IApplicationViewStatics2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IApplicationViewStatics2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IApplicationViewStatics2 {
     type Vtable = IApplicationViewStatics2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xaf338ae5_cf64_423c_85e5_f3e72448fb23);
@@ -1991,6 +2031,11 @@ pub struct IApplicationViewStatics2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IApplicationViewStatics3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IApplicationViewStatics3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IApplicationViewStatics3 {
     type Vtable = IApplicationViewStatics3_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa28d7594_8c41_4e13_9719_5164796fe4c7);
@@ -2013,6 +2058,11 @@ pub struct IApplicationViewStatics3_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IApplicationViewStatics4(::windows::core::IUnknown);
+impl ::core::clone::Clone for IApplicationViewStatics4 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IApplicationViewStatics4 {
     type Vtable = IApplicationViewStatics4_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x08fd8d33_2611_5336_a315_d98e6366c9db);
@@ -2027,6 +2077,11 @@ pub struct IApplicationViewStatics4_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IApplicationViewSwitcherStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IApplicationViewSwitcherStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IApplicationViewSwitcherStatics {
     type Vtable = IApplicationViewSwitcherStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x975f2f1e_e656_4c5e_a0a1_717c6ffa7d64);
@@ -2068,6 +2123,11 @@ pub struct IApplicationViewSwitcherStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IApplicationViewSwitcherStatics2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IApplicationViewSwitcherStatics2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IApplicationViewSwitcherStatics2 {
     type Vtable = IApplicationViewSwitcherStatics2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x60e995cd_4fc2_48c4_b8e3_395f2b9f0fc1);
@@ -2081,6 +2141,11 @@ pub struct IApplicationViewSwitcherStatics2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IApplicationViewSwitcherStatics3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IApplicationViewSwitcherStatics3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IApplicationViewSwitcherStatics3 {
     type Vtable = IApplicationViewSwitcherStatics3_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x92059420_80a7_486d_b21f_c7a4a242a383);
@@ -2101,6 +2166,11 @@ pub struct IApplicationViewSwitcherStatics3_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IApplicationViewTitleBar(::windows::core::IUnknown);
+impl ::core::clone::Clone for IApplicationViewTitleBar {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IApplicationViewTitleBar {
     type Vtable = IApplicationViewTitleBar_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x00924ac0_932b_4a6b_9c4b_dc38c82478ce);
@@ -2209,6 +2279,11 @@ pub struct IApplicationViewTitleBar_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IApplicationViewTransferContext(::windows::core::IUnknown);
+impl ::core::clone::Clone for IApplicationViewTransferContext {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IApplicationViewTransferContext {
     type Vtable = IApplicationViewTransferContext_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x8574bc63_3c17_408e_9408_8a1a9ea81bfa);
@@ -2223,6 +2298,11 @@ pub struct IApplicationViewTransferContext_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IApplicationViewTransferContextStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IApplicationViewTransferContextStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IApplicationViewTransferContextStatics {
     type Vtable = IApplicationViewTransferContextStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x15a89d92_dd79_4b0b_bc47_d5f195f14661);
@@ -2236,6 +2316,11 @@ pub struct IApplicationViewTransferContextStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IApplicationViewWithContext(::windows::core::IUnknown);
+impl ::core::clone::Clone for IApplicationViewWithContext {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IApplicationViewWithContext {
     type Vtable = IApplicationViewWithContext_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xbd55d512_9dc1_44fc_8501_666625df60dc);
@@ -2249,6 +2334,11 @@ pub struct IApplicationViewWithContext_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IInputPane(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInputPane {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IInputPane {
     type Vtable = IInputPane_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x640ada70_06f3_4c87_a678_9829c9127c28);
@@ -2281,6 +2371,11 @@ pub struct IInputPane_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IInputPane2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInputPane2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IInputPane2 {
     type Vtable = IInputPane2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x8a6b3f26_7090_4793_944c_c3f2cde26276);
@@ -2295,6 +2390,11 @@ pub struct IInputPane2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IInputPaneControl(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInputPaneControl {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IInputPaneControl {
     type Vtable = IInputPaneControl_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x088bb24f_962f_489d_aa6e_c6be1a0a6e52);
@@ -2309,6 +2409,11 @@ pub struct IInputPaneControl_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IInputPaneStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInputPaneStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IInputPaneStatics {
     type Vtable = IInputPaneStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x95f4af3a_ef47_424a_9741_fd2815eba2bd);
@@ -2322,6 +2427,11 @@ pub struct IInputPaneStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IInputPaneStatics2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInputPaneStatics2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IInputPaneStatics2 {
     type Vtable = IInputPaneStatics2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1b63529b_d9ec_4531_8445_71bab9fb828e);
@@ -2335,6 +2445,11 @@ pub struct IInputPaneStatics2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IInputPaneVisibilityEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInputPaneVisibilityEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IInputPaneVisibilityEventArgs {
     type Vtable = IInputPaneVisibilityEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd243e016_d907_4fcc_bb8d_f77baa5028f1);
@@ -2353,6 +2468,11 @@ pub struct IInputPaneVisibilityEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IProjectionManagerStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IProjectionManagerStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IProjectionManagerStatics {
     type Vtable = IProjectionManagerStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb65f913d_e2f0_4ffd_ba95_34241647e45c);
@@ -2386,6 +2506,11 @@ pub struct IProjectionManagerStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IProjectionManagerStatics2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IProjectionManagerStatics2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IProjectionManagerStatics2 {
     type Vtable = IProjectionManagerStatics2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf33d2f43_2749_4cde_b977_c0c41e7415d1);
@@ -2411,6 +2536,11 @@ pub struct IProjectionManagerStatics2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IStatusBar(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStatusBar {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IStatusBar {
     type Vtable = IStatusBar_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x0ffcc5bf_98d0_4864_b1e8_b3f4020be8b4);
@@ -2470,6 +2600,11 @@ pub struct IStatusBar_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IStatusBarProgressIndicator(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStatusBarProgressIndicator {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IStatusBarProgressIndicator {
     type Vtable = IStatusBarProgressIndicator_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x76cb2670_a3d7_49cf_8200_4f3eedca27bb);
@@ -2500,6 +2635,11 @@ pub struct IStatusBarProgressIndicator_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IStatusBarStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStatusBarStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IStatusBarStatics {
     type Vtable = IStatusBarStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x8b463fdf_422f_4561_8806_fb1289cadfb7);
@@ -2513,6 +2653,11 @@ pub struct IStatusBarStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IUISettings(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUISettings {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IUISettings {
     type Vtable = IUISettings_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x85361600_1c63_4627_bcb1_3a89e0bc9c55);
@@ -2550,6 +2695,11 @@ pub struct IUISettings_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IUISettings2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUISettings2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IUISettings2 {
     type Vtable = IUISettings2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xbad82401_2721_44f9_bb91_2bb228be442f);
@@ -2571,6 +2721,11 @@ pub struct IUISettings2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IUISettings3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUISettings3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IUISettings3 {
     type Vtable = IUISettings3_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x03021be4_5254_4781_8194_5168f7d06d7b);
@@ -2592,6 +2747,11 @@ pub struct IUISettings3_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IUISettings4(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUISettings4 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IUISettings4 {
     type Vtable = IUISettings4_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x52bb3002_919b_4d6b_9b78_8dd66ff4b93b);
@@ -2613,6 +2773,11 @@ pub struct IUISettings4_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IUISettings5(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUISettings5 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IUISettings5 {
     type Vtable = IUISettings5_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x5349d588_0cb5_5f05_bd34_706b3231f0bd);
@@ -2634,6 +2799,11 @@ pub struct IUISettings5_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IUISettings6(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUISettings6 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IUISettings6 {
     type Vtable = IUISettings6_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xaef19bd7_fe31_5a04_ada4_469aaec6dfa9);
@@ -2662,6 +2832,11 @@ pub struct IUISettings6_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IUISettingsAnimationsEnabledChangedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUISettingsAnimationsEnabledChangedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IUISettingsAnimationsEnabledChangedEventArgs {
     type Vtable = IUISettingsAnimationsEnabledChangedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x0c7b4b3d_2ea1_533e_894d_415bc5243c29);
@@ -2674,6 +2849,11 @@ pub struct IUISettingsAnimationsEnabledChangedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IUISettingsAutoHideScrollBarsChangedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUISettingsAutoHideScrollBarsChangedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IUISettingsAutoHideScrollBarsChangedEventArgs {
     type Vtable = IUISettingsAutoHideScrollBarsChangedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x87afd4b2_9146_5f02_8f6b_06d454174c0f);
@@ -2686,6 +2866,11 @@ pub struct IUISettingsAutoHideScrollBarsChangedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IUISettingsMessageDurationChangedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUISettingsMessageDurationChangedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IUISettingsMessageDurationChangedEventArgs {
     type Vtable = IUISettingsMessageDurationChangedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x338aad52_4a5d_5b59_8002_d930f608fd6e);
@@ -2698,6 +2883,11 @@ pub struct IUISettingsMessageDurationChangedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IUIViewSettings(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIViewSettings {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IUIViewSettings {
     type Vtable = IUIViewSettings_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc63657f6_8850_470d_88f8_455e16ea2c26);
@@ -2711,6 +2901,11 @@ pub struct IUIViewSettings_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IUIViewSettingsStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIViewSettingsStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IUIViewSettingsStatics {
     type Vtable = IUIViewSettingsStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x595c97a5_f8f6_41cf_b0fb_aacdb81fd5f6);
@@ -2724,6 +2919,11 @@ pub struct IUIViewSettingsStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IViewModePreferences(::windows::core::IUnknown);
+impl ::core::clone::Clone for IViewModePreferences {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IViewModePreferences {
     type Vtable = IViewModePreferences_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x878fcd3a_0b99_42c9_84d0_d3f1d403554b);
@@ -2746,6 +2946,11 @@ pub struct IViewModePreferences_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IViewModePreferencesStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IViewModePreferencesStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IViewModePreferencesStatics {
     type Vtable = IViewModePreferencesStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x69b60a65_5de5_40d8_8306_3833df7a2274);
@@ -2853,11 +3058,6 @@ impl InputPane {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for InputPane {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for InputPane {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2871,7 +3071,6 @@ impl ::core::fmt::Debug for InputPane {
 }
 unsafe impl ::windows::core::RuntimeType for InputPane {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.ViewManagement.InputPane;{640ada70-06f3-4c87-a678-9829c9127c28})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2950,11 +3149,6 @@ impl InputPaneVisibilityEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for InputPaneVisibilityEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for InputPaneVisibilityEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2968,7 +3162,6 @@ impl ::core::fmt::Debug for InputPaneVisibilityEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for InputPaneVisibilityEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.ViewManagement.InputPaneVisibilityEventArgs;{d243e016-d907-4fcc-bb8d-f77baa5028f1})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3237,11 +3430,6 @@ impl StatusBar {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for StatusBar {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for StatusBar {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3255,7 +3443,6 @@ impl ::core::fmt::Debug for StatusBar {
 }
 unsafe impl ::windows::core::RuntimeType for StatusBar {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.ViewManagement.StatusBar;{0ffcc5bf-98d0-4864-b1e8-b3f4020be8b4})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3360,11 +3547,6 @@ impl StatusBarProgressIndicator {
         unsafe { (::windows::core::Interface::vtable(this).SetProgressValue)(::core::mem::transmute_copy(this), value.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for StatusBarProgressIndicator {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for StatusBarProgressIndicator {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3378,7 +3560,6 @@ impl ::core::fmt::Debug for StatusBarProgressIndicator {
 }
 unsafe impl ::windows::core::RuntimeType for StatusBarProgressIndicator {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.ViewManagement.StatusBarProgressIndicator;{76cb2670-a3d7-49cf-8200-4f3eedca27bb})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3461,6 +3642,7 @@ impl ::core::default::Default for UIColorType {
 }
 unsafe impl ::windows::core::Abi for UIColorType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UIColorType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3469,7 +3651,6 @@ impl ::core::fmt::Debug for UIColorType {
 }
 unsafe impl ::windows::core::RuntimeType for UIColorType {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.ViewManagement.UIColorType;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -3519,6 +3700,7 @@ impl ::core::default::Default for UIElementType {
 }
 unsafe impl ::windows::core::Abi for UIElementType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UIElementType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3527,7 +3709,6 @@ impl ::core::fmt::Debug for UIElementType {
 }
 unsafe impl ::windows::core::RuntimeType for UIElementType {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.ViewManagement.UIElementType;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -3774,11 +3955,6 @@ impl UISettings {
         unsafe { (::windows::core::Interface::vtable(this).RemoveMessageDurationChanged)(::core::mem::transmute_copy(this), token.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for UISettings {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for UISettings {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3792,7 +3968,6 @@ impl ::core::fmt::Debug for UISettings {
 }
 unsafe impl ::windows::core::RuntimeType for UISettings {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.ViewManagement.UISettings;{85361600-1c63-4627-bcb1-3a89e0bc9c55})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3850,11 +4025,6 @@ unsafe impl ::core::marker::Sync for UISettings {}
 #[repr(transparent)]
 pub struct UISettingsAnimationsEnabledChangedEventArgs(::windows::core::IUnknown);
 impl UISettingsAnimationsEnabledChangedEventArgs {}
-impl ::core::clone::Clone for UISettingsAnimationsEnabledChangedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for UISettingsAnimationsEnabledChangedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3868,7 +4038,6 @@ impl ::core::fmt::Debug for UISettingsAnimationsEnabledChangedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for UISettingsAnimationsEnabledChangedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.ViewManagement.UISettingsAnimationsEnabledChangedEventArgs;{0c7b4b3d-2ea1-533e-894d-415bc5243c29})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3926,11 +4095,6 @@ unsafe impl ::core::marker::Sync for UISettingsAnimationsEnabledChangedEventArgs
 #[repr(transparent)]
 pub struct UISettingsAutoHideScrollBarsChangedEventArgs(::windows::core::IUnknown);
 impl UISettingsAutoHideScrollBarsChangedEventArgs {}
-impl ::core::clone::Clone for UISettingsAutoHideScrollBarsChangedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for UISettingsAutoHideScrollBarsChangedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3944,7 +4108,6 @@ impl ::core::fmt::Debug for UISettingsAutoHideScrollBarsChangedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for UISettingsAutoHideScrollBarsChangedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.ViewManagement.UISettingsAutoHideScrollBarsChangedEventArgs;{87afd4b2-9146-5f02-8f6b-06d454174c0f})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4002,11 +4165,6 @@ unsafe impl ::core::marker::Sync for UISettingsAutoHideScrollBarsChangedEventArg
 #[repr(transparent)]
 pub struct UISettingsMessageDurationChangedEventArgs(::windows::core::IUnknown);
 impl UISettingsMessageDurationChangedEventArgs {}
-impl ::core::clone::Clone for UISettingsMessageDurationChangedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for UISettingsMessageDurationChangedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4020,7 +4178,6 @@ impl ::core::fmt::Debug for UISettingsMessageDurationChangedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for UISettingsMessageDurationChangedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.ViewManagement.UISettingsMessageDurationChangedEventArgs;{338aad52-4a5d-5b59-8002-d930f608fd6e})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4099,11 +4256,6 @@ impl UIViewSettings {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for UIViewSettings {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for UIViewSettings {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4117,7 +4269,6 @@ impl ::core::fmt::Debug for UIViewSettings {
 }
 unsafe impl ::windows::core::RuntimeType for UIViewSettings {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.ViewManagement.UIViewSettings;{c63657f6-8850-470d-88f8-455e16ea2c26})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4192,6 +4343,7 @@ impl ::core::default::Default for UserInteractionMode {
 }
 unsafe impl ::windows::core::Abi for UserInteractionMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UserInteractionMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4200,7 +4352,6 @@ impl ::core::fmt::Debug for UserInteractionMode {
 }
 unsafe impl ::windows::core::RuntimeType for UserInteractionMode {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.ViewManagement.UserInteractionMode;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -4250,11 +4401,6 @@ impl ViewModePreferences {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for ViewModePreferences {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ViewModePreferences {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4268,7 +4414,6 @@ impl ::core::fmt::Debug for ViewModePreferences {
 }
 unsafe impl ::windows::core::RuntimeType for ViewModePreferences {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.ViewManagement.ViewModePreferences;{878fcd3a-0b99-42c9-84d0-d3f1d403554b})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4346,6 +4491,7 @@ impl ::core::default::Default for ViewSizePreference {
 }
 unsafe impl ::windows::core::Abi for ViewSizePreference {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ViewSizePreference {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4354,7 +4500,6 @@ impl ::core::fmt::Debug for ViewSizePreference {
 }
 unsafe impl ::windows::core::RuntimeType for ViewSizePreference {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.ViewManagement.ViewSizePreference;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }

@@ -26,6 +26,7 @@ impl ::core::fmt::Debug for CONNECTION {
 }
 unsafe impl ::windows::core::Abi for CONNECTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CONNECTION {
     fn eq(&self, other: &Self) -> bool {
@@ -57,6 +58,7 @@ impl ::core::fmt::Debug for CONNECTIONLIST {
 }
 unsafe impl ::windows::core::Abi for CONNECTIONLIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CONNECTIONLIST {
     fn eq(&self, other: &Self) -> bool {
@@ -240,6 +242,7 @@ impl ::core::default::Default for DIRECTSOUNDDEVICE_DATAFLOW {
 }
 unsafe impl ::windows::core::Abi for DIRECTSOUNDDEVICE_DATAFLOW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DIRECTSOUNDDEVICE_DATAFLOW {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -269,6 +272,7 @@ impl ::core::default::Default for DIRECTSOUNDDEVICE_TYPE {
 }
 unsafe impl ::windows::core::Abi for DIRECTSOUNDDEVICE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DIRECTSOUNDDEVICE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -293,6 +297,7 @@ impl ::core::fmt::Debug for DLSHEADER {
 }
 unsafe impl ::windows::core::Abi for DLSHEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DLSHEADER {
     fn eq(&self, other: &Self) -> bool {
@@ -326,6 +331,7 @@ impl ::core::fmt::Debug for DLSID {
 }
 unsafe impl ::windows::core::Abi for DLSID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DLSID {
     fn eq(&self, other: &Self) -> bool {
@@ -366,6 +372,7 @@ impl ::core::fmt::Debug for DLSVERSION {
 }
 unsafe impl ::windows::core::Abi for DLSVERSION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DLSVERSION {
     fn eq(&self, other: &Self) -> bool {
@@ -435,6 +442,7 @@ impl ::core::fmt::Debug for DMUS_ARTICPARAMS {
 }
 unsafe impl ::windows::core::Abi for DMUS_ARTICPARAMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DMUS_ARTICPARAMS {
     fn eq(&self, other: &Self) -> bool {
@@ -466,6 +474,7 @@ impl ::core::fmt::Debug for DMUS_ARTICULATION {
 }
 unsafe impl ::windows::core::Abi for DMUS_ARTICULATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DMUS_ARTICULATION {
     fn eq(&self, other: &Self) -> bool {
@@ -498,6 +507,7 @@ impl ::core::fmt::Debug for DMUS_ARTICULATION2 {
 }
 unsafe impl ::windows::core::Abi for DMUS_ARTICULATION2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DMUS_ARTICULATION2 {
     fn eq(&self, other: &Self) -> bool {
@@ -531,6 +541,7 @@ impl ::core::fmt::Debug for DMUS_BUFFERDESC {
 }
 unsafe impl ::windows::core::Abi for DMUS_BUFFERDESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DMUS_BUFFERDESC {
     fn eq(&self, other: &Self) -> bool {
@@ -566,6 +577,7 @@ impl ::core::fmt::Debug for DMUS_CLOCKINFO7 {
 }
 unsafe impl ::windows::core::Abi for DMUS_CLOCKINFO7 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DMUS_CLOCKINFO7 {
     fn eq(&self, other: &Self) -> bool {
@@ -600,6 +612,7 @@ impl ::core::fmt::Debug for DMUS_CLOCKINFO8 {
 }
 unsafe impl ::windows::core::Abi for DMUS_CLOCKINFO8 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DMUS_CLOCKINFO8 {
     fn eq(&self, other: &Self) -> bool {
@@ -633,6 +646,7 @@ impl ::core::default::Default for DMUS_CLOCKTYPE {
 }
 unsafe impl ::windows::core::Abi for DMUS_CLOCKTYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DMUS_CLOCKTYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -658,6 +672,7 @@ impl ::core::fmt::Debug for DMUS_COPYRIGHT {
 }
 unsafe impl ::windows::core::Abi for DMUS_COPYRIGHT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DMUS_COPYRIGHT {
     fn eq(&self, other: &Self) -> bool {
@@ -693,6 +708,7 @@ impl ::core::fmt::Debug for DMUS_DOWNLOADINFO {
 }
 unsafe impl ::windows::core::Abi for DMUS_DOWNLOADINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DMUS_DOWNLOADINFO {
     fn eq(&self, other: &Self) -> bool {
@@ -741,6 +757,7 @@ impl ::core::clone::Clone for DMUS_EVENTHEADER {
 }
 unsafe impl ::windows::core::Abi for DMUS_EVENTHEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DMUS_EVENTHEADER {
     fn eq(&self, other: &Self) -> bool {
@@ -776,6 +793,7 @@ impl ::core::fmt::Debug for DMUS_EXTENSIONCHUNK {
 }
 unsafe impl ::windows::core::Abi for DMUS_EXTENSIONCHUNK {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DMUS_EXTENSIONCHUNK {
     fn eq(&self, other: &Self) -> bool {
@@ -811,6 +829,7 @@ impl ::core::fmt::Debug for DMUS_INSTRUMENT {
 }
 unsafe impl ::windows::core::Abi for DMUS_INSTRUMENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DMUS_INSTRUMENT {
     fn eq(&self, other: &Self) -> bool {
@@ -848,6 +867,7 @@ impl ::core::fmt::Debug for DMUS_LFOPARAMS {
 }
 unsafe impl ::windows::core::Abi for DMUS_LFOPARAMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DMUS_LFOPARAMS {
     fn eq(&self, other: &Self) -> bool {
@@ -884,6 +904,7 @@ impl ::core::fmt::Debug for DMUS_MSCPARAMS {
 }
 unsafe impl ::windows::core::Abi for DMUS_MSCPARAMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DMUS_MSCPARAMS {
     fn eq(&self, other: &Self) -> bool {
@@ -915,6 +936,7 @@ impl ::core::fmt::Debug for DMUS_NOTERANGE {
 }
 unsafe impl ::windows::core::Abi for DMUS_NOTERANGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DMUS_NOTERANGE {
     fn eq(&self, other: &Self) -> bool {
@@ -945,6 +967,7 @@ impl ::core::fmt::Debug for DMUS_OFFSETTABLE {
 }
 unsafe impl ::windows::core::Abi for DMUS_OFFSETTABLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DMUS_OFFSETTABLE {
     fn eq(&self, other: &Self) -> bool {
@@ -1011,6 +1034,7 @@ impl ::core::fmt::Debug for DMUS_PEGPARAMS {
 }
 unsafe impl ::windows::core::Abi for DMUS_PEGPARAMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DMUS_PEGPARAMS {
     fn eq(&self, other: &Self) -> bool {
@@ -1051,6 +1075,7 @@ impl ::core::fmt::Debug for DMUS_PORTCAPS {
 }
 unsafe impl ::windows::core::Abi for DMUS_PORTCAPS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DMUS_PORTCAPS {
     fn eq(&self, other: &Self) -> bool {
@@ -1094,6 +1119,7 @@ impl ::core::fmt::Debug for DMUS_PORTPARAMS8 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DMUS_PORTPARAMS8 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DMUS_PORTPARAMS8 {
@@ -1160,6 +1186,7 @@ impl ::core::fmt::Debug for DMUS_REGION {
 }
 unsafe impl ::windows::core::Abi for DMUS_REGION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DMUS_REGION {
     fn eq(&self, other: &Self) -> bool {
@@ -1197,6 +1224,7 @@ impl ::core::fmt::Debug for DMUS_SYNTHSTATS {
 }
 unsafe impl ::windows::core::Abi for DMUS_SYNTHSTATS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DMUS_SYNTHSTATS {
     fn eq(&self, other: &Self) -> bool {
@@ -1235,6 +1263,7 @@ impl ::core::fmt::Debug for DMUS_SYNTHSTATS8 {
 }
 unsafe impl ::windows::core::Abi for DMUS_SYNTHSTATS8 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DMUS_SYNTHSTATS8 {
     fn eq(&self, other: &Self) -> bool {
@@ -1284,6 +1313,7 @@ impl ::core::fmt::Debug for DMUS_VEGPARAMS {
 }
 unsafe impl ::windows::core::Abi for DMUS_VEGPARAMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DMUS_VEGPARAMS {
     fn eq(&self, other: &Self) -> bool {
@@ -1320,6 +1350,7 @@ impl ::core::fmt::Debug for DMUS_VOICE_STATE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DMUS_VOICE_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DMUS_VOICE_STATE {
@@ -1355,6 +1386,7 @@ impl ::core::clone::Clone for DMUS_WAVE {
 }
 unsafe impl ::windows::core::Abi for DMUS_WAVE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DMUS_WAVE {
     fn eq(&self, other: &Self) -> bool {
@@ -1389,6 +1421,7 @@ impl ::core::fmt::Debug for DMUS_WAVEARTDL {
 }
 unsafe impl ::windows::core::Abi for DMUS_WAVEARTDL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DMUS_WAVEARTDL {
     fn eq(&self, other: &Self) -> bool {
@@ -1420,6 +1453,7 @@ impl ::core::fmt::Debug for DMUS_WAVEDATA {
 }
 unsafe impl ::windows::core::Abi for DMUS_WAVEDATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DMUS_WAVEDATA {
     fn eq(&self, other: &Self) -> bool {
@@ -1450,6 +1484,7 @@ impl ::core::fmt::Debug for DMUS_WAVEDL {
 }
 unsafe impl ::windows::core::Abi for DMUS_WAVEDL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DMUS_WAVEDL {
     fn eq(&self, other: &Self) -> bool {
@@ -1483,6 +1518,7 @@ impl ::core::fmt::Debug for DMUS_WAVES_REVERB_PARAMS {
 }
 unsafe impl ::windows::core::Abi for DMUS_WAVES_REVERB_PARAMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DMUS_WAVES_REVERB_PARAMS {
     fn eq(&self, other: &Self) -> bool {
@@ -1580,6 +1616,7 @@ impl ::core::default::Default for DSPROPERTY_DIRECTSOUNDDEVICE {
 }
 unsafe impl ::windows::core::Abi for DSPROPERTY_DIRECTSOUNDDEVICE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DSPROPERTY_DIRECTSOUNDDEVICE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1617,6 +1654,7 @@ impl ::core::fmt::Debug for DSPROPERTY_DIRECTSOUNDDEVICE_DESCRIPTION_1_DATA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DSPROPERTY_DIRECTSOUNDDEVICE_DESCRIPTION_1_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DSPROPERTY_DIRECTSOUNDDEVICE_DESCRIPTION_1_DATA {
@@ -1656,6 +1694,7 @@ impl ::core::fmt::Debug for DSPROPERTY_DIRECTSOUNDDEVICE_DESCRIPTION_A_DATA {
 }
 unsafe impl ::windows::core::Abi for DSPROPERTY_DIRECTSOUNDDEVICE_DESCRIPTION_A_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DSPROPERTY_DIRECTSOUNDDEVICE_DESCRIPTION_A_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -1692,6 +1731,7 @@ impl ::core::fmt::Debug for DSPROPERTY_DIRECTSOUNDDEVICE_DESCRIPTION_W_DATA {
 }
 unsafe impl ::windows::core::Abi for DSPROPERTY_DIRECTSOUNDDEVICE_DESCRIPTION_W_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DSPROPERTY_DIRECTSOUNDDEVICE_DESCRIPTION_W_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -1728,6 +1768,7 @@ impl ::core::fmt::Debug for DSPROPERTY_DIRECTSOUNDDEVICE_ENUMERATE_1_DATA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DSPROPERTY_DIRECTSOUNDDEVICE_ENUMERATE_1_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DSPROPERTY_DIRECTSOUNDDEVICE_ENUMERATE_1_DATA {
@@ -1767,6 +1808,7 @@ impl ::core::fmt::Debug for DSPROPERTY_DIRECTSOUNDDEVICE_ENUMERATE_A_DATA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DSPROPERTY_DIRECTSOUNDDEVICE_ENUMERATE_A_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DSPROPERTY_DIRECTSOUNDDEVICE_ENUMERATE_A_DATA {
@@ -1806,6 +1848,7 @@ impl ::core::fmt::Debug for DSPROPERTY_DIRECTSOUNDDEVICE_ENUMERATE_W_DATA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DSPROPERTY_DIRECTSOUNDDEVICE_ENUMERATE_W_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DSPROPERTY_DIRECTSOUNDDEVICE_ENUMERATE_W_DATA {
@@ -1841,6 +1884,7 @@ impl ::core::fmt::Debug for DSPROPERTY_DIRECTSOUNDDEVICE_WAVEDEVICEMAPPING_A_DAT
 }
 unsafe impl ::windows::core::Abi for DSPROPERTY_DIRECTSOUNDDEVICE_WAVEDEVICEMAPPING_A_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DSPROPERTY_DIRECTSOUNDDEVICE_WAVEDEVICEMAPPING_A_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -1873,6 +1917,7 @@ impl ::core::fmt::Debug for DSPROPERTY_DIRECTSOUNDDEVICE_WAVEDEVICEMAPPING_W_DAT
 }
 unsafe impl ::windows::core::Abi for DSPROPERTY_DIRECTSOUNDDEVICE_WAVEDEVICEMAPPING_W_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DSPROPERTY_DIRECTSOUNDDEVICE_WAVEDEVICEMAPPING_W_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -1952,6 +1997,11 @@ pub const GUID_DMUS_PROP_XG_Hardware: ::windows::core::GUID = ::windows::core::G
 #[doc = "*Required features: `\"Win32_Media_Audio_DirectMusic\"`*"]
 #[repr(transparent)]
 pub struct IDirectMusic(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectMusic {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirectMusic {
     #[doc = "*Required features: `\"Win32_Media_Audio_DirectMusic\"`*"]
     pub unsafe fn EnumPort(&self, dwindex: u32, pportcaps: *mut DMUS_PORTCAPS) -> ::windows::core::Result<()> {
@@ -2013,11 +2063,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDire
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirectMusic {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirectMusic {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2059,6 +2104,11 @@ pub struct IDirectMusic_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_Audio_DirectMusic\"`*"]
 #[repr(transparent)]
 pub struct IDirectMusic8(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectMusic8 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirectMusic8 {
     #[doc = "*Required features: `\"Win32_Media_Audio_DirectMusic\"`*"]
     pub unsafe fn EnumPort(&self, dwindex: u32, pportcaps: *mut DMUS_PORTCAPS) -> ::windows::core::Result<()> {
@@ -2144,11 +2194,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDirectMusic> for &'a IDirectMusic8 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirectMusic8 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirectMusic8 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2173,6 +2218,11 @@ pub struct IDirectMusic8_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_Audio_DirectMusic\"`*"]
 #[repr(transparent)]
 pub struct IDirectMusicBuffer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectMusicBuffer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirectMusicBuffer {
     #[doc = "*Required features: `\"Win32_Media_Audio_DirectMusic\"`*"]
     pub unsafe fn Flush(&self) -> ::windows::core::Result<()> {
@@ -2247,11 +2297,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDire
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirectMusicBuffer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirectMusicBuffer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2288,6 +2333,11 @@ pub struct IDirectMusicBuffer_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_Audio_DirectMusic\"`*"]
 #[repr(transparent)]
 pub struct IDirectMusicCollection(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectMusicCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirectMusicCollection {
     #[doc = "*Required features: `\"Win32_Media_Audio_DirectMusic\"`*"]
     pub unsafe fn GetInstrument(&self, dwpatch: u32) -> ::windows::core::Result<IDirectMusicInstrument> {
@@ -2319,11 +2369,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDire
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirectMusicCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirectMusicCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2349,6 +2394,11 @@ pub struct IDirectMusicCollection_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_Audio_DirectMusic\"`*"]
 #[repr(transparent)]
 pub struct IDirectMusicDownload(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectMusicDownload {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirectMusicDownload {
     #[doc = "*Required features: `\"Win32_Media_Audio_DirectMusic\"`*"]
     pub unsafe fn GetBuffer(&self, ppvbuffer: *mut *mut ::core::ffi::c_void, pdwsize: *mut u32) -> ::windows::core::Result<()> {
@@ -2375,11 +2425,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDire
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirectMusicDownload {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirectMusicDownload {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2404,6 +2449,11 @@ pub struct IDirectMusicDownload_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_Audio_DirectMusic\"`*"]
 #[repr(transparent)]
 pub struct IDirectMusicDownloadedInstrument(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectMusicDownloadedInstrument {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirectMusicDownloadedInstrument {}
 impl ::core::convert::From<IDirectMusicDownloadedInstrument> for ::windows::core::IUnknown {
     fn from(value: IDirectMusicDownloadedInstrument) -> Self {
@@ -2423,11 +2473,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IDirectMu
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDirectMusicDownloadedInstrument {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IDirectMusicDownloadedInstrument {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IDirectMusicDownloadedInstrument {
@@ -2453,6 +2498,11 @@ pub struct IDirectMusicDownloadedInstrument_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_Audio_DirectMusic\"`*"]
 #[repr(transparent)]
 pub struct IDirectMusicInstrument(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectMusicInstrument {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirectMusicInstrument {
     #[doc = "*Required features: `\"Win32_Media_Audio_DirectMusic\"`*"]
     pub unsafe fn GetPatch(&self, pdwpatch: *mut u32) -> ::windows::core::Result<()> {
@@ -2483,11 +2533,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDire
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirectMusicInstrument {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirectMusicInstrument {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2513,6 +2558,11 @@ pub struct IDirectMusicInstrument_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_Audio_DirectMusic\"`*"]
 #[repr(transparent)]
 pub struct IDirectMusicPort(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectMusicPort {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirectMusicPort {
     #[doc = "*Required features: `\"Win32_Media_Audio_DirectMusic\"`*"]
     pub unsafe fn PlayBuffer<'a, Param0: ::windows::core::IntoParam<'a, IDirectMusicBuffer>>(&self, pbuffer: Param0) -> ::windows::core::Result<()> {
@@ -2608,11 +2658,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDire
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirectMusicPort {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirectMusicPort {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2665,6 +2710,11 @@ pub struct IDirectMusicPort_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_Audio_DirectMusic\"`*"]
 #[repr(transparent)]
 pub struct IDirectMusicPortDownload(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectMusicPortDownload {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirectMusicPortDownload {
     #[doc = "*Required features: `\"Win32_Media_Audio_DirectMusic\"`*"]
     pub unsafe fn GetBuffer(&self, dwdlid: u32) -> ::windows::core::Result<IDirectMusicDownload> {
@@ -2713,11 +2763,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDire
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirectMusicPortDownload {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirectMusicPortDownload {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2747,6 +2792,11 @@ pub struct IDirectMusicPortDownload_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_Audio_DirectMusic\"`*"]
 #[repr(transparent)]
 pub struct IDirectMusicSynth(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectMusicSynth {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirectMusicSynth {
     #[doc = "*Required features: `\"Win32_Media_Audio_DirectMusic\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -2842,11 +2892,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDire
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirectMusicSynth {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirectMusicSynth {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2899,6 +2944,11 @@ pub struct IDirectMusicSynth_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_Audio_DirectMusic\"`*"]
 #[repr(transparent)]
 pub struct IDirectMusicSynth8(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectMusicSynth8 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirectMusicSynth8 {
     #[doc = "*Required features: `\"Win32_Media_Audio_DirectMusic\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -3035,11 +3085,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDirectMusicSynth> for &'a IDirectMusicS
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirectMusicSynth8 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirectMusicSynth8 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3071,6 +3116,11 @@ pub struct IDirectMusicSynth8_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_Audio_DirectMusic\"`*"]
 #[repr(transparent)]
 pub struct IDirectMusicSynthSink(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectMusicSynthSink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirectMusicSynthSink {
     #[doc = "*Required features: `\"Win32_Media_Audio_DirectMusic\"`*"]
     pub unsafe fn Init<'a, Param0: ::windows::core::IntoParam<'a, IDirectMusicSynth>>(&self, psynth: Param0) -> ::windows::core::Result<()> {
@@ -3128,11 +3178,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDire
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirectMusicSynthSink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirectMusicSynthSink {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3170,6 +3215,11 @@ pub struct IDirectMusicSynthSink_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_Audio_DirectMusic\"`*"]
 #[repr(transparent)]
 pub struct IDirectMusicThru(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectMusicThru {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirectMusicThru {
     #[doc = "*Required features: `\"Win32_Media_Audio_DirectMusic\"`*"]
     pub unsafe fn ThruChannel<'a, Param4: ::windows::core::IntoParam<'a, IDirectMusicPort>>(&self, dwsourcechannelgroup: u32, dwsourcechannel: u32, dwdestinationchannelgroup: u32, dwdestinationchannel: u32, pdestinationport: Param4) -> ::windows::core::Result<()> {
@@ -3194,11 +3244,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IDirectMu
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDirectMusicThru {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IDirectMusicThru {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IDirectMusicThru {
@@ -3241,6 +3286,7 @@ impl ::core::fmt::Debug for INSTHEADER {
 }
 unsafe impl ::windows::core::Abi for INSTHEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for INSTHEADER {
     fn eq(&self, other: &Self) -> bool {
@@ -3276,6 +3322,7 @@ impl ::core::clone::Clone for MDEVICECAPSEX {
 }
 unsafe impl ::windows::core::Abi for MDEVICECAPSEX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MDEVICECAPSEX {
     fn eq(&self, other: &Self) -> bool {
@@ -3307,6 +3354,7 @@ impl ::core::fmt::Debug for MIDILOCALE {
 }
 unsafe impl ::windows::core::Abi for MIDILOCALE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MIDILOCALE {
     fn eq(&self, other: &Self) -> bool {
@@ -3341,6 +3389,7 @@ impl ::core::clone::Clone for MIDIOPENDESC {
 #[cfg(feature = "Win32_Media_Multimedia")]
 unsafe impl ::windows::core::Abi for MIDIOPENDESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Media_Multimedia")]
 impl ::core::cmp::PartialEq for MIDIOPENDESC {
@@ -3374,6 +3423,7 @@ impl ::core::fmt::Debug for POOLCUE {
 }
 unsafe impl ::windows::core::Abi for POOLCUE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for POOLCUE {
     fn eq(&self, other: &Self) -> bool {
@@ -3405,6 +3455,7 @@ impl ::core::fmt::Debug for POOLTABLE {
 }
 unsafe impl ::windows::core::Abi for POOLTABLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for POOLTABLE {
     fn eq(&self, other: &Self) -> bool {
@@ -3444,6 +3495,7 @@ impl ::core::fmt::Debug for RGNHEADER {
 }
 unsafe impl ::windows::core::Abi for RGNHEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RGNHEADER {
     fn eq(&self, other: &Self) -> bool {
@@ -3475,6 +3527,7 @@ impl ::core::fmt::Debug for RGNRANGE {
 }
 unsafe impl ::windows::core::Abi for RGNRANGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RGNRANGE {
     fn eq(&self, other: &Self) -> bool {
@@ -3513,6 +3566,7 @@ impl ::core::fmt::Debug for Tag_DVAudInfo {
 }
 unsafe impl ::windows::core::Abi for Tag_DVAudInfo {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for Tag_DVAudInfo {
     fn eq(&self, other: &Self) -> bool {
@@ -3546,6 +3600,7 @@ impl ::core::fmt::Debug for WAVELINK {
 }
 unsafe impl ::windows::core::Abi for WAVELINK {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WAVELINK {
     fn eq(&self, other: &Self) -> bool {
@@ -3596,6 +3651,7 @@ impl ::core::fmt::Debug for _DMUS_PORTPARAMS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for _DMUS_PORTPARAMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for _DMUS_PORTPARAMS {
@@ -3632,6 +3688,7 @@ impl ::core::fmt::Debug for _rloop {
 }
 unsafe impl ::windows::core::Abi for _rloop {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for _rloop {
     fn eq(&self, other: &Self) -> bool {
@@ -3667,6 +3724,7 @@ impl ::core::fmt::Debug for _rwsmp {
 }
 unsafe impl ::windows::core::Abi for _rwsmp {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for _rwsmp {
     fn eq(&self, other: &Self) -> bool {

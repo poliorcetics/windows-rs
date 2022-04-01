@@ -23,6 +23,7 @@ impl ::core::default::Default for GazeDeviceConfigurationStatePreview {
 }
 unsafe impl ::windows::core::Abi for GazeDeviceConfigurationStatePreview {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GazeDeviceConfigurationStatePreview {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -31,7 +32,6 @@ impl ::core::fmt::Debug for GazeDeviceConfigurationStatePreview {
 }
 unsafe impl ::windows::core::RuntimeType for GazeDeviceConfigurationStatePreview {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.Input.Preview.GazeDeviceConfigurationStatePreview;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -100,11 +100,6 @@ impl GazeDevicePreview {
         }
     }
 }
-impl ::core::clone::Clone for GazeDevicePreview {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for GazeDevicePreview {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -118,7 +113,6 @@ impl ::core::fmt::Debug for GazeDevicePreview {
 }
 unsafe impl ::windows::core::RuntimeType for GazeDevicePreview {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Input.Preview.GazeDevicePreview;{e79e7ee9-b389-11e7-b201-c8d3ffb75721})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -185,11 +179,6 @@ impl GazeDeviceWatcherAddedPreviewEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for GazeDeviceWatcherAddedPreviewEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for GazeDeviceWatcherAddedPreviewEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -203,7 +192,6 @@ impl ::core::fmt::Debug for GazeDeviceWatcherAddedPreviewEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for GazeDeviceWatcherAddedPreviewEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Input.Preview.GazeDeviceWatcherAddedPreviewEventArgs;{e79e7eed-b389-11e7-b201-c8d3ffb75721})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -332,11 +320,6 @@ impl GazeDeviceWatcherPreview {
         unsafe { (::windows::core::Interface::vtable(this).Stop)(::core::mem::transmute_copy(this)).ok() }
     }
 }
-impl ::core::clone::Clone for GazeDeviceWatcherPreview {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for GazeDeviceWatcherPreview {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -350,7 +333,6 @@ impl ::core::fmt::Debug for GazeDeviceWatcherPreview {
 }
 unsafe impl ::windows::core::RuntimeType for GazeDeviceWatcherPreview {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Input.Preview.GazeDeviceWatcherPreview;{e79e7ee7-b389-11e7-b201-c8d3ffb75721})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -417,11 +399,6 @@ impl GazeDeviceWatcherRemovedPreviewEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for GazeDeviceWatcherRemovedPreviewEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for GazeDeviceWatcherRemovedPreviewEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -435,7 +412,6 @@ impl ::core::fmt::Debug for GazeDeviceWatcherRemovedPreviewEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for GazeDeviceWatcherRemovedPreviewEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Input.Preview.GazeDeviceWatcherRemovedPreviewEventArgs;{f2631f08-0e3f-431f-a606-50b35af94a1c})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -502,11 +478,6 @@ impl GazeDeviceWatcherUpdatedPreviewEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for GazeDeviceWatcherUpdatedPreviewEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for GazeDeviceWatcherUpdatedPreviewEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -520,7 +491,6 @@ impl ::core::fmt::Debug for GazeDeviceWatcherUpdatedPreviewEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for GazeDeviceWatcherUpdatedPreviewEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Input.Preview.GazeDeviceWatcherUpdatedPreviewEventArgs;{7fe830ef-7f08-4737-88e1-4a83ae4e4885})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -600,11 +570,6 @@ impl GazeEnteredPreviewEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for GazeEnteredPreviewEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for GazeEnteredPreviewEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -618,7 +583,6 @@ impl ::core::fmt::Debug for GazeEnteredPreviewEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for GazeEnteredPreviewEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Input.Preview.GazeEnteredPreviewEventArgs;{2567bf43-1225-489f-9dd1-daa7c50fbf4b})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -698,11 +662,6 @@ impl GazeExitedPreviewEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for GazeExitedPreviewEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for GazeExitedPreviewEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -716,7 +675,6 @@ impl ::core::fmt::Debug for GazeExitedPreviewEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for GazeExitedPreviewEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Input.Preview.GazeExitedPreviewEventArgs;{5d0af07e-7d83-40ef-9f0a-fbc1bbdcc5ac})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -839,11 +797,6 @@ impl GazeInputSourcePreview {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for GazeInputSourcePreview {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for GazeInputSourcePreview {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -857,7 +810,6 @@ impl ::core::fmt::Debug for GazeInputSourcePreview {
 }
 unsafe impl ::windows::core::RuntimeType for GazeInputSourcePreview {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Input.Preview.GazeInputSourcePreview;{e79e7ee8-b389-11e7-b201-c8d3ffb75721})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -946,11 +898,6 @@ impl GazeMovedPreviewEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for GazeMovedPreviewEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for GazeMovedPreviewEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -964,7 +911,6 @@ impl ::core::fmt::Debug for GazeMovedPreviewEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for GazeMovedPreviewEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Input.Preview.GazeMovedPreviewEventArgs;{e79e7eeb-b389-11e7-b201-c8d3ffb75721})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1066,11 +1012,6 @@ impl GazePointPreview {
         }
     }
 }
-impl ::core::clone::Clone for GazePointPreview {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for GazePointPreview {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1084,7 +1025,6 @@ impl ::core::fmt::Debug for GazePointPreview {
 }
 unsafe impl ::windows::core::RuntimeType for GazePointPreview {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Input.Preview.GazePointPreview;{e79e7eea-b389-11e7-b201-c8d3ffb75721})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1141,6 +1081,11 @@ unsafe impl ::core::marker::Sync for GazePointPreview {}
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGazeDevicePreview(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGazeDevicePreview {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGazeDevicePreview {
     type Vtable = IGazeDevicePreview_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe79e7ee9_b389_11e7_b201_c8d3ffb75721);
@@ -1169,6 +1114,11 @@ pub struct IGazeDevicePreview_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGazeDeviceWatcherAddedPreviewEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGazeDeviceWatcherAddedPreviewEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGazeDeviceWatcherAddedPreviewEventArgs {
     type Vtable = IGazeDeviceWatcherAddedPreviewEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe79e7eed_b389_11e7_b201_c8d3ffb75721);
@@ -1182,6 +1132,11 @@ pub struct IGazeDeviceWatcherAddedPreviewEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGazeDeviceWatcherPreview(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGazeDeviceWatcherPreview {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGazeDeviceWatcherPreview {
     type Vtable = IGazeDeviceWatcherPreview_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe79e7ee7_b389_11e7_b201_c8d3ffb75721);
@@ -1228,6 +1183,11 @@ pub struct IGazeDeviceWatcherPreview_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGazeDeviceWatcherRemovedPreviewEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGazeDeviceWatcherRemovedPreviewEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGazeDeviceWatcherRemovedPreviewEventArgs {
     type Vtable = IGazeDeviceWatcherRemovedPreviewEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf2631f08_0e3f_431f_a606_50b35af94a1c);
@@ -1241,6 +1201,11 @@ pub struct IGazeDeviceWatcherRemovedPreviewEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGazeDeviceWatcherUpdatedPreviewEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGazeDeviceWatcherUpdatedPreviewEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGazeDeviceWatcherUpdatedPreviewEventArgs {
     type Vtable = IGazeDeviceWatcherUpdatedPreviewEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x7fe830ef_7f08_4737_88e1_4a83ae4e4885);
@@ -1254,6 +1219,11 @@ pub struct IGazeDeviceWatcherUpdatedPreviewEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGazeEnteredPreviewEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGazeEnteredPreviewEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGazeEnteredPreviewEventArgs {
     type Vtable = IGazeEnteredPreviewEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x2567bf43_1225_489f_9dd1_daa7c50fbf4b);
@@ -1269,6 +1239,11 @@ pub struct IGazeEnteredPreviewEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGazeExitedPreviewEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGazeExitedPreviewEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGazeExitedPreviewEventArgs {
     type Vtable = IGazeExitedPreviewEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x5d0af07e_7d83_40ef_9f0a_fbc1bbdcc5ac);
@@ -1284,6 +1259,11 @@ pub struct IGazeExitedPreviewEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGazeInputSourcePreview(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGazeInputSourcePreview {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGazeInputSourcePreview {
     type Vtable = IGazeInputSourcePreview_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe79e7ee8_b389_11e7_b201_c8d3ffb75721);
@@ -1320,6 +1300,11 @@ pub struct IGazeInputSourcePreview_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGazeInputSourcePreviewStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGazeInputSourcePreviewStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGazeInputSourcePreviewStatics {
     type Vtable = IGazeInputSourcePreviewStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe79e7ee6_b389_11e7_b201_c8d3ffb75721);
@@ -1334,6 +1319,11 @@ pub struct IGazeInputSourcePreviewStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGazeMovedPreviewEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGazeMovedPreviewEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGazeMovedPreviewEventArgs {
     type Vtable = IGazeMovedPreviewEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe79e7eeb_b389_11e7_b201_c8d3ffb75721);
@@ -1353,6 +1343,11 @@ pub struct IGazeMovedPreviewEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGazePointPreview(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGazePointPreview {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGazePointPreview {
     type Vtable = IGazePointPreview_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe79e7eea_b389_11e7_b201_c8d3ffb75721);

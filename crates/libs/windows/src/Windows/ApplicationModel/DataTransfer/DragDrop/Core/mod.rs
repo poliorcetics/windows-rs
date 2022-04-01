@@ -44,11 +44,6 @@ impl CoreDragDropManager {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for CoreDragDropManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for CoreDragDropManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -62,7 +57,6 @@ impl ::core::fmt::Debug for CoreDragDropManager {
 }
 unsafe impl ::windows::core::RuntimeType for CoreDragDropManager {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.DataTransfer.DragDrop.Core.CoreDragDropManager;{7d56d344-8464-4faf-aa49-37ea6e2d7bd1})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -154,11 +148,6 @@ impl CoreDragInfo {
         }
     }
 }
-impl ::core::clone::Clone for CoreDragInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for CoreDragInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -172,7 +161,6 @@ impl ::core::fmt::Debug for CoreDragInfo {
 }
 unsafe impl ::windows::core::RuntimeType for CoreDragInfo {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.DataTransfer.DragDrop.Core.CoreDragInfo;{48353a8b-cb50-464e-9575-cd4e3a7ab028})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -298,11 +286,6 @@ impl CoreDragOperation {
         unsafe { (::windows::core::Interface::vtable(this).SetAllowedOperations)(::core::mem::transmute_copy(this), value).ok() }
     }
 }
-impl ::core::clone::Clone for CoreDragOperation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for CoreDragOperation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -316,7 +299,6 @@ impl ::core::fmt::Debug for CoreDragOperation {
 }
 unsafe impl ::windows::core::RuntimeType for CoreDragOperation {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.DataTransfer.DragDrop.Core.CoreDragOperation;{cc06de4f-6db0-4e62-ab1b-a74a02dc6d85})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -391,6 +373,7 @@ impl ::core::default::Default for CoreDragUIContentMode {
 }
 unsafe impl ::windows::core::Abi for CoreDragUIContentMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CoreDragUIContentMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -427,7 +410,6 @@ impl ::core::ops::Not for CoreDragUIContentMode {
 }
 unsafe impl ::windows::core::RuntimeType for CoreDragUIContentMode {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.DataTransfer.DragDrop.Core.CoreDragUIContentMode;u4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -506,11 +488,6 @@ impl CoreDragUIOverride {
         unsafe { (::windows::core::Interface::vtable(this).Clear)(::core::mem::transmute_copy(this)).ok() }
     }
 }
-impl ::core::clone::Clone for CoreDragUIOverride {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for CoreDragUIOverride {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -524,7 +501,6 @@ impl ::core::fmt::Debug for CoreDragUIOverride {
 }
 unsafe impl ::windows::core::RuntimeType for CoreDragUIOverride {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.DataTransfer.DragDrop.Core.CoreDragUIOverride;{89a85064-3389-4f4f-8897-7e8a3ffb3c93})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -588,11 +564,6 @@ impl CoreDropOperationTargetRequestedEventArgs {
         unsafe { (::windows::core::Interface::vtable(this).SetTarget)(::core::mem::transmute_copy(this), target.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for CoreDropOperationTargetRequestedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for CoreDropOperationTargetRequestedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -606,7 +577,6 @@ impl ::core::fmt::Debug for CoreDropOperationTargetRequestedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for CoreDropOperationTargetRequestedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.DataTransfer.DragDrop.Core.CoreDropOperationTargetRequestedEventArgs;{2aca929a-5e28-4ea6-829e-29134e665d6d})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -663,6 +633,11 @@ unsafe impl ::core::marker::Sync for CoreDropOperationTargetRequestedEventArgs {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICoreDragDropManager(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICoreDragDropManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICoreDragDropManager {
     type Vtable = ICoreDragDropManager_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x7d56d344_8464_4faf_aa49_37ea6e2d7bd1);
@@ -685,6 +660,11 @@ pub struct ICoreDragDropManager_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICoreDragDropManagerStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICoreDragDropManagerStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICoreDragDropManagerStatics {
     type Vtable = ICoreDragDropManagerStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9542fdca_da12_4c1c_8d06_041db29733c3);
@@ -698,6 +678,11 @@ pub struct ICoreDragDropManagerStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICoreDragInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICoreDragInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICoreDragInfo {
     type Vtable = ICoreDragInfo_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x48353a8b_cb50_464e_9575_cd4e3a7ab028);
@@ -716,6 +701,11 @@ pub struct ICoreDragInfo_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICoreDragInfo2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICoreDragInfo2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICoreDragInfo2 {
     type Vtable = ICoreDragInfo2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc54691e5_e6fb_4d74_b4b1_8a3c17f25e9e);
@@ -729,6 +719,11 @@ pub struct ICoreDragInfo2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICoreDragOperation(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICoreDragOperation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICoreDragOperation {
     type Vtable = ICoreDragOperation_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xcc06de4f_6db0_4e62_ab1b_a74a02dc6d85);
@@ -757,6 +752,11 @@ pub struct ICoreDragOperation_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICoreDragOperation2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICoreDragOperation2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICoreDragOperation2 {
     type Vtable = ICoreDragOperation2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x824b1e2c_d99a_4fc3_8507_6c182f33b46a);
@@ -771,6 +771,11 @@ pub struct ICoreDragOperation2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICoreDragUIOverride(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICoreDragUIOverride {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICoreDragUIOverride {
     type Vtable = ICoreDragUIOverride_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x89a85064_3389_4f4f_8897_7e8a3ffb3c93);
@@ -800,6 +805,11 @@ pub struct ICoreDragUIOverride_Vtbl {
 #[doc = "*Required features: `\"ApplicationModel_DataTransfer_DragDrop_Core\"`*"]
 #[repr(transparent)]
 pub struct ICoreDropOperationTarget(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICoreDropOperationTarget {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ICoreDropOperationTarget {
     #[doc = "*Required features: `\"ApplicationModel_DataTransfer_DragDrop_Core\"`, `\"Foundation\"`*"]
     #[cfg(feature = "Foundation")]
@@ -878,11 +888,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ICoreDropOperationTarget {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ICoreDropOperationTarget {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -896,7 +901,6 @@ impl ::core::fmt::Debug for ICoreDropOperationTarget {
 }
 unsafe impl ::windows::core::RuntimeType for ICoreDropOperationTarget {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{d9126196-4c5b-417d-bb37-76381def8db4}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -929,6 +933,11 @@ pub struct ICoreDropOperationTarget_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICoreDropOperationTargetRequestedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICoreDropOperationTargetRequestedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICoreDropOperationTargetRequestedEventArgs {
     type Vtable = ICoreDropOperationTargetRequestedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x2aca929a_5e28_4ea6_829e_29134e665d6d);

@@ -58,6 +58,7 @@ impl ::core::default::Default for DRAWPROGRESSFLAGS {
 }
 unsafe impl ::windows::core::Abi for DRAWPROGRESSFLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DRAWPROGRESSFLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -139,6 +140,7 @@ impl ::core::default::Default for GETPROPERTYSTOREFLAGS {
 }
 unsafe impl ::windows::core::Abi for GETPROPERTYSTOREFLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GETPROPERTYSTOREFLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -176,6 +178,11 @@ impl ::core::ops::Not for GETPROPERTYSTOREFLAGS {
 #[doc = "*Required features: `\"Win32_UI_Shell_PropertiesSystem\"`*"]
 #[repr(transparent)]
 pub struct ICreateObject(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICreateObject {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ICreateObject {
     #[doc = "*Required features: `\"Win32_UI_Shell_PropertiesSystem\"`*"]
     pub unsafe fn CreateObject<'a, Param1: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>, T: ::windows::core::Interface>(&self, clsid: *const ::windows::core::GUID, punkouter: Param1) -> ::windows::core::Result<T> {
@@ -203,11 +210,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ICrea
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ICreateObject {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ICreateObject {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -232,6 +234,11 @@ pub struct ICreateObject_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Shell_PropertiesSystem\"`*"]
 #[repr(transparent)]
 pub struct IDelayedPropertyStoreFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDelayedPropertyStoreFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDelayedPropertyStoreFactory {
     #[doc = "*Required features: `\"Win32_UI_Shell_PropertiesSystem\"`*"]
     pub unsafe fn GetPropertyStore<'a, Param1: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>, T: ::windows::core::Interface>(&self, flags: GETPROPERTYSTOREFLAGS, punkfactory: Param1) -> ::windows::core::Result<T> {
@@ -289,11 +296,6 @@ impl<'a> ::windows::core::IntoParam<'a, IPropertyStoreFactory> for &'a IDelayedP
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDelayedPropertyStoreFactory {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDelayedPropertyStoreFactory {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -318,6 +320,11 @@ pub struct IDelayedPropertyStoreFactory_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Shell_PropertiesSystem\"`*"]
 #[repr(transparent)]
 pub struct IInitializeWithFile(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInitializeWithFile {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IInitializeWithFile {
     #[doc = "*Required features: `\"Win32_UI_Shell_PropertiesSystem\"`*"]
     pub unsafe fn Initialize<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, pszfilepath: Param0, grfmode: u32) -> ::windows::core::Result<()> {
@@ -344,11 +351,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IInit
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IInitializeWithFile {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IInitializeWithFile {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -373,6 +375,11 @@ pub struct IInitializeWithFile_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Shell_PropertiesSystem\"`*"]
 #[repr(transparent)]
 pub struct IInitializeWithStream(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInitializeWithStream {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IInitializeWithStream {
     #[doc = "*Required features: `\"Win32_UI_Shell_PropertiesSystem\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -398,11 +405,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IInitiali
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IInitializeWithStream {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IInitializeWithStream {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IInitializeWithStream {
@@ -432,6 +434,11 @@ pub struct IInitializeWithStream_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Shell_PropertiesSystem\"`*"]
 #[repr(transparent)]
 pub struct INamedPropertyStore(::windows::core::IUnknown);
+impl ::core::clone::Clone for INamedPropertyStore {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl INamedPropertyStore {
     #[doc = "*Required features: `\"Win32_UI_Shell_PropertiesSystem\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com_StructuredStorage\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com_StructuredStorage"))]
@@ -476,11 +483,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IName
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for INamedPropertyStore {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for INamedPropertyStore {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -517,6 +519,11 @@ pub struct INamedPropertyStore_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Shell_PropertiesSystem\"`*"]
 #[repr(transparent)]
 pub struct IObjectWithPropertyKey(::windows::core::IUnknown);
+impl ::core::clone::Clone for IObjectWithPropertyKey {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IObjectWithPropertyKey {
     #[doc = "*Required features: `\"Win32_UI_Shell_PropertiesSystem\"`*"]
     pub unsafe fn SetPropertyKey(&self, key: *const PROPERTYKEY) -> ::windows::core::Result<()> {
@@ -548,11 +555,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IObje
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IObjectWithPropertyKey {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IObjectWithPropertyKey {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -578,6 +580,11 @@ pub struct IObjectWithPropertyKey_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Shell_PropertiesSystem\"`*"]
 #[repr(transparent)]
 pub struct IPersistSerializedPropStorage(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPersistSerializedPropStorage {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPersistSerializedPropStorage {
     #[doc = "*Required features: `\"Win32_UI_Shell_PropertiesSystem\"`*"]
     pub unsafe fn SetFlags(&self, flags: i32) -> ::windows::core::Result<()> {
@@ -612,11 +619,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPers
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPersistSerializedPropStorage {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPersistSerializedPropStorage {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -643,6 +645,11 @@ pub struct IPersistSerializedPropStorage_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Shell_PropertiesSystem\"`*"]
 #[repr(transparent)]
 pub struct IPersistSerializedPropStorage2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPersistSerializedPropStorage2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPersistSerializedPropStorage2 {
     #[doc = "*Required features: `\"Win32_UI_Shell_PropertiesSystem\"`*"]
     pub unsafe fn SetFlags(&self, flags: i32) -> ::windows::core::Result<()> {
@@ -706,11 +713,6 @@ impl<'a> ::windows::core::IntoParam<'a, IPersistSerializedPropStorage> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPersistSerializedPropStorage2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPersistSerializedPropStorage2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -736,6 +738,11 @@ pub struct IPersistSerializedPropStorage2_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Shell_PropertiesSystem\"`*"]
 #[repr(transparent)]
 pub struct IPropertyChange(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPropertyChange {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPropertyChange {
     #[doc = "*Required features: `\"Win32_UI_Shell_PropertiesSystem\"`*"]
     pub unsafe fn SetPropertyKey(&self, key: *const PROPERTYKEY) -> ::windows::core::Result<()> {
@@ -793,11 +800,6 @@ impl<'a> ::windows::core::IntoParam<'a, IObjectWithPropertyKey> for &'a IPropert
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPropertyChange {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPropertyChange {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -825,6 +827,11 @@ pub struct IPropertyChange_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Shell_PropertiesSystem\"`*"]
 #[repr(transparent)]
 pub struct IPropertyChangeArray(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPropertyChangeArray {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPropertyChangeArray {
     #[doc = "*Required features: `\"Win32_UI_Shell_PropertiesSystem\"`*"]
     pub unsafe fn GetCount(&self) -> ::windows::core::Result<u32> {
@@ -877,11 +884,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IProp
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPropertyChangeArray {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPropertyChangeArray {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -912,6 +914,11 @@ pub struct IPropertyChangeArray_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Shell_PropertiesSystem\"`*"]
 #[repr(transparent)]
 pub struct IPropertyDescription(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPropertyDescription {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPropertyDescription {
     #[doc = "*Required features: `\"Win32_UI_Shell_PropertiesSystem\"`*"]
     pub unsafe fn GetPropertyKey(&self) -> ::windows::core::Result<PROPERTYKEY> {
@@ -1041,11 +1048,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IProp
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPropertyDescription {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPropertyDescription {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1108,6 +1110,11 @@ pub struct IPropertyDescription_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Shell_PropertiesSystem\"`*"]
 #[repr(transparent)]
 pub struct IPropertyDescription2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPropertyDescription2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPropertyDescription2 {
     #[doc = "*Required features: `\"Win32_UI_Shell_PropertiesSystem\"`*"]
     pub unsafe fn GetPropertyKey(&self) -> ::windows::core::Result<PROPERTYKEY> {
@@ -1263,11 +1270,6 @@ impl<'a> ::windows::core::IntoParam<'a, IPropertyDescription> for &'a IPropertyD
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPropertyDescription2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPropertyDescription2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1295,6 +1297,11 @@ pub struct IPropertyDescription2_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Shell_PropertiesSystem\"`*"]
 #[repr(transparent)]
 pub struct IPropertyDescriptionAliasInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPropertyDescriptionAliasInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPropertyDescriptionAliasInfo {
     #[doc = "*Required features: `\"Win32_UI_Shell_PropertiesSystem\"`*"]
     pub unsafe fn GetPropertyKey(&self) -> ::windows::core::Result<PROPERTYKEY> {
@@ -1454,11 +1461,6 @@ impl<'a> ::windows::core::IntoParam<'a, IPropertyDescription> for &'a IPropertyD
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPropertyDescriptionAliasInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPropertyDescriptionAliasInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1484,6 +1486,11 @@ pub struct IPropertyDescriptionAliasInfo_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Shell_PropertiesSystem\"`*"]
 #[repr(transparent)]
 pub struct IPropertyDescriptionList(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPropertyDescriptionList {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPropertyDescriptionList {
     #[doc = "*Required features: `\"Win32_UI_Shell_PropertiesSystem\"`*"]
     pub unsafe fn GetCount(&self) -> ::windows::core::Result<u32> {
@@ -1516,11 +1523,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IProp
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPropertyDescriptionList {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPropertyDescriptionList {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1546,6 +1548,11 @@ pub struct IPropertyDescriptionList_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Shell_PropertiesSystem\"`*"]
 #[repr(transparent)]
 pub struct IPropertyDescriptionRelatedPropertyInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPropertyDescriptionRelatedPropertyInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPropertyDescriptionRelatedPropertyInfo {
     #[doc = "*Required features: `\"Win32_UI_Shell_PropertiesSystem\"`*"]
     pub unsafe fn GetPropertyKey(&self) -> ::windows::core::Result<PROPERTYKEY> {
@@ -1700,11 +1707,6 @@ impl<'a> ::windows::core::IntoParam<'a, IPropertyDescription> for &'a IPropertyD
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPropertyDescriptionRelatedPropertyInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPropertyDescriptionRelatedPropertyInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1729,6 +1731,11 @@ pub struct IPropertyDescriptionRelatedPropertyInfo_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Shell_PropertiesSystem\"`*"]
 #[repr(transparent)]
 pub struct IPropertyDescriptionSearchInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPropertyDescriptionSearchInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPropertyDescriptionSearchInfo {
     #[doc = "*Required features: `\"Win32_UI_Shell_PropertiesSystem\"`*"]
     pub unsafe fn GetPropertyKey(&self) -> ::windows::core::Result<PROPERTYKEY> {
@@ -1898,11 +1905,6 @@ impl<'a> ::windows::core::IntoParam<'a, IPropertyDescription> for &'a IPropertyD
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPropertyDescriptionSearchInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPropertyDescriptionSearchInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1930,6 +1932,11 @@ pub struct IPropertyDescriptionSearchInfo_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Shell_PropertiesSystem\"`*"]
 #[repr(transparent)]
 pub struct IPropertyEnumType(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPropertyEnumType {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPropertyEnumType {
     #[doc = "*Required features: `\"Win32_UI_Shell_PropertiesSystem\"`*"]
     pub unsafe fn GetEnumType(&self) -> ::windows::core::Result<PROPENUMTYPE> {
@@ -1980,11 +1987,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IProp
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPropertyEnumType {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPropertyEnumType {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2022,6 +2024,11 @@ pub struct IPropertyEnumType_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Shell_PropertiesSystem\"`*"]
 #[repr(transparent)]
 pub struct IPropertyEnumType2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPropertyEnumType2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPropertyEnumType2 {
     #[doc = "*Required features: `\"Win32_UI_Shell_PropertiesSystem\"`*"]
     pub unsafe fn GetEnumType(&self) -> ::windows::core::Result<PROPENUMTYPE> {
@@ -2097,11 +2104,6 @@ impl<'a> ::windows::core::IntoParam<'a, IPropertyEnumType> for &'a IPropertyEnum
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPropertyEnumType2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPropertyEnumType2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2126,6 +2128,11 @@ pub struct IPropertyEnumType2_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Shell_PropertiesSystem\"`*"]
 #[repr(transparent)]
 pub struct IPropertyEnumTypeList(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPropertyEnumTypeList {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPropertyEnumTypeList {
     #[doc = "*Required features: `\"Win32_UI_Shell_PropertiesSystem\"`*"]
     pub unsafe fn GetCount(&self) -> ::windows::core::Result<u32> {
@@ -2169,11 +2176,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IProp
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPropertyEnumTypeList {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPropertyEnumTypeList {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2204,6 +2206,11 @@ pub struct IPropertyEnumTypeList_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Shell_PropertiesSystem\"`*"]
 #[repr(transparent)]
 pub struct IPropertyStore(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPropertyStore {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPropertyStore {
     #[doc = "*Required features: `\"Win32_UI_Shell_PropertiesSystem\"`*"]
     pub unsafe fn GetCount(&self) -> ::windows::core::Result<u32> {
@@ -2251,11 +2258,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IProp
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPropertyStore {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPropertyStore {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2290,6 +2292,11 @@ pub struct IPropertyStore_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Shell_PropertiesSystem\"`*"]
 #[repr(transparent)]
 pub struct IPropertyStoreCache(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPropertyStoreCache {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPropertyStoreCache {
     #[doc = "*Required features: `\"Win32_UI_Shell_PropertiesSystem\"`*"]
     pub unsafe fn GetCount(&self) -> ::windows::core::Result<u32> {
@@ -2376,11 +2383,6 @@ impl<'a> ::windows::core::IntoParam<'a, IPropertyStore> for &'a IPropertyStoreCa
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPropertyStoreCache {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPropertyStoreCache {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2414,6 +2416,11 @@ pub struct IPropertyStoreCache_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Shell_PropertiesSystem\"`*"]
 #[repr(transparent)]
 pub struct IPropertyStoreCapabilities(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPropertyStoreCapabilities {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPropertyStoreCapabilities {
     #[doc = "*Required features: `\"Win32_UI_Shell_PropertiesSystem\"`*"]
     pub unsafe fn IsPropertyWritable(&self, key: *const PROPERTYKEY) -> ::windows::core::Result<()> {
@@ -2440,11 +2447,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IProp
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPropertyStoreCapabilities {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPropertyStoreCapabilities {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2469,6 +2471,11 @@ pub struct IPropertyStoreCapabilities_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Shell_PropertiesSystem\"`*"]
 #[repr(transparent)]
 pub struct IPropertyStoreFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPropertyStoreFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPropertyStoreFactory {
     #[doc = "*Required features: `\"Win32_UI_Shell_PropertiesSystem\"`*"]
     pub unsafe fn GetPropertyStore<'a, Param1: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>, T: ::windows::core::Interface>(&self, flags: GETPROPERTYSTOREFLAGS, punkfactory: Param1) -> ::windows::core::Result<T> {
@@ -2501,11 +2508,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IProp
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPropertyStoreFactory {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPropertyStoreFactory {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2531,6 +2533,11 @@ pub struct IPropertyStoreFactory_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Shell_PropertiesSystem\"`*"]
 #[repr(transparent)]
 pub struct IPropertySystem(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPropertySystem {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPropertySystem {
     #[doc = "*Required features: `\"Win32_UI_Shell_PropertiesSystem\"`*"]
     pub unsafe fn GetPropertyDescription<T: ::windows::core::Interface>(&self, propkey: *const PROPERTYKEY) -> ::windows::core::Result<T> {
@@ -2596,11 +2603,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IProp
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPropertySystem {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPropertySystem {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2639,6 +2641,11 @@ pub struct IPropertySystem_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Shell_PropertiesSystem\"`*"]
 #[repr(transparent)]
 pub struct IPropertySystemChangeNotify(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPropertySystemChangeNotify {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPropertySystemChangeNotify {
     #[doc = "*Required features: `\"Win32_UI_Shell_PropertiesSystem\"`*"]
     pub unsafe fn SchemaRefreshed(&self) -> ::windows::core::Result<()> {
@@ -2665,11 +2672,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IProp
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPropertySystemChangeNotify {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPropertySystemChangeNotify {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2694,6 +2696,11 @@ pub struct IPropertySystemChangeNotify_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Shell_PropertiesSystem\"`*"]
 #[repr(transparent)]
 pub struct IPropertyUI(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPropertyUI {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPropertyUI {
     #[doc = "*Required features: `\"Win32_UI_Shell_PropertiesSystem\"`*"]
     pub unsafe fn ParsePropertyName<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, pszname: Param0, pfmtid: *mut ::windows::core::GUID, ppid: *mut u32, pcheaten: *mut u32) -> ::windows::core::Result<()> {
@@ -2749,11 +2756,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IProperty
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPropertyUI {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IPropertyUI {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IPropertyUI {
@@ -3375,6 +3377,7 @@ impl ::core::default::Default for PDOPSTATUS {
 }
 unsafe impl ::windows::core::Abi for PDOPSTATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PDOPSTATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3404,6 +3407,7 @@ impl ::core::default::Default for PKA_FLAGS {
 }
 unsafe impl ::windows::core::Abi for PKA_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PKA_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3471,6 +3475,7 @@ impl ::core::default::Default for PLACEHOLDER_STATES {
 }
 unsafe impl ::windows::core::Abi for PLACEHOLDER_STATES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PLACEHOLDER_STATES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3538,6 +3543,7 @@ impl ::core::default::Default for PROPDESC_AGGREGATION_TYPE {
 }
 unsafe impl ::windows::core::Abi for PROPDESC_AGGREGATION_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PROPDESC_AGGREGATION_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3573,6 +3579,7 @@ impl ::core::default::Default for PROPDESC_COLUMNINDEX_TYPE {
 }
 unsafe impl ::windows::core::Abi for PROPDESC_COLUMNINDEX_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PROPDESC_COLUMNINDEX_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3608,6 +3615,7 @@ impl ::core::default::Default for PROPDESC_CONDITION_TYPE {
 }
 unsafe impl ::windows::core::Abi for PROPDESC_CONDITION_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PROPDESC_CONDITION_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3641,6 +3649,7 @@ impl ::core::default::Default for PROPDESC_DISPLAYTYPE {
 }
 unsafe impl ::windows::core::Abi for PROPDESC_DISPLAYTYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PROPDESC_DISPLAYTYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3678,6 +3687,7 @@ impl ::core::default::Default for PROPDESC_ENUMFILTER {
 }
 unsafe impl ::windows::core::Abi for PROPDESC_ENUMFILTER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PROPDESC_ENUMFILTER {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3731,6 +3741,7 @@ impl ::core::default::Default for PROPDESC_FORMAT_FLAGS {
 }
 unsafe impl ::windows::core::Abi for PROPDESC_FORMAT_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PROPDESC_FORMAT_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3796,6 +3807,7 @@ impl ::core::default::Default for PROPDESC_GROUPING_RANGE {
 }
 unsafe impl ::windows::core::Abi for PROPDESC_GROUPING_RANGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PROPDESC_GROUPING_RANGE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3841,6 +3853,7 @@ impl ::core::default::Default for PROPDESC_RELATIVEDESCRIPTION_TYPE {
 }
 unsafe impl ::windows::core::Abi for PROPDESC_RELATIVEDESCRIPTION_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PROPDESC_RELATIVEDESCRIPTION_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3876,6 +3889,7 @@ impl ::core::default::Default for PROPDESC_SEARCHINFO_FLAGS {
 }
 unsafe impl ::windows::core::Abi for PROPDESC_SEARCHINFO_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PROPDESC_SEARCHINFO_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3937,6 +3951,7 @@ impl ::core::default::Default for PROPDESC_SORTDESCRIPTION {
 }
 unsafe impl ::windows::core::Abi for PROPDESC_SORTDESCRIPTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PROPDESC_SORTDESCRIPTION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3992,6 +4007,7 @@ impl ::core::default::Default for PROPDESC_TYPE_FLAGS {
 }
 unsafe impl ::windows::core::Abi for PROPDESC_TYPE_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PROPDESC_TYPE_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4071,6 +4087,7 @@ impl ::core::default::Default for PROPDESC_VIEW_FLAGS {
 }
 unsafe impl ::windows::core::Abi for PROPDESC_VIEW_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PROPDESC_VIEW_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4130,6 +4147,7 @@ impl ::core::default::Default for PROPENUMTYPE {
 }
 unsafe impl ::windows::core::Abi for PROPENUMTYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PROPENUMTYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4155,6 +4173,7 @@ impl ::core::fmt::Debug for PROPERTYKEY {
 }
 unsafe impl ::windows::core::Abi for PROPERTYKEY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROPERTYKEY {
     fn eq(&self, other: &Self) -> bool {
@@ -4190,6 +4209,7 @@ impl ::core::default::Default for PROPERTYUI_FLAGS {
 }
 unsafe impl ::windows::core::Abi for PROPERTYUI_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PROPERTYUI_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4251,6 +4271,7 @@ impl ::core::default::Default for PROPERTYUI_FORMAT_FLAGS {
 }
 unsafe impl ::windows::core::Abi for PROPERTYUI_FORMAT_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PROPERTYUI_FORMAT_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4306,6 +4327,7 @@ impl ::core::default::Default for PROPERTYUI_NAME_FLAGS {
 }
 unsafe impl ::windows::core::Abi for PROPERTYUI_NAME_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PROPERTYUI_NAME_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4368,6 +4390,7 @@ impl ::core::clone::Clone for PROPPRG {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PROPPRG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for PROPPRG {
@@ -4412,6 +4435,7 @@ impl ::core::default::Default for PROPVAR_CHANGE_FLAGS {
 }
 unsafe impl ::windows::core::Abi for PROPVAR_CHANGE_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PROPVAR_CHANGE_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4477,6 +4501,7 @@ impl ::core::default::Default for PROPVAR_COMPARE_FLAGS {
 }
 unsafe impl ::windows::core::Abi for PROPVAR_COMPARE_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PROPVAR_COMPARE_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4542,6 +4567,7 @@ impl ::core::default::Default for PROPVAR_COMPARE_UNIT {
 }
 unsafe impl ::windows::core::Abi for PROPVAR_COMPARE_UNIT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PROPVAR_COMPARE_UNIT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4573,6 +4599,7 @@ impl ::core::default::Default for PSC_STATE {
 }
 unsafe impl ::windows::core::Abi for PSC_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PSC_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5566,6 +5593,7 @@ impl ::core::default::Default for PSTIME_FLAGS {
 }
 unsafe impl ::windows::core::Abi for PSTIME_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PSTIME_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6730,6 +6758,7 @@ impl ::core::default::Default for SYNC_ENGINE_STATE_FLAGS {
 }
 unsafe impl ::windows::core::Abi for SYNC_ENGINE_STATE_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SYNC_ENGINE_STATE_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6805,6 +6834,7 @@ impl ::core::default::Default for SYNC_TRANSFER_STATUS {
 }
 unsafe impl ::windows::core::Abi for SYNC_TRANSFER_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SYNC_TRANSFER_STATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7710,6 +7740,7 @@ impl ::core::default::Default for _PERSIST_SPROPSTORE_FLAGS {
 }
 unsafe impl ::windows::core::Abi for _PERSIST_SPROPSTORE_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for _PERSIST_SPROPSTORE_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

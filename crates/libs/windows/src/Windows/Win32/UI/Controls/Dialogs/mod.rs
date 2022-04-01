@@ -54,6 +54,7 @@ impl ::core::clone::Clone for CHOOSECOLORA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for CHOOSECOLORA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 #[cfg(feature = "Win32_Foundation")]
@@ -101,6 +102,7 @@ impl ::core::clone::Clone for CHOOSECOLORA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for CHOOSECOLORA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 #[cfg(feature = "Win32_Foundation")]
@@ -148,6 +150,7 @@ impl ::core::clone::Clone for CHOOSECOLORW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for CHOOSECOLORW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 #[cfg(feature = "Win32_Foundation")]
@@ -195,6 +198,7 @@ impl ::core::clone::Clone for CHOOSECOLORW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for CHOOSECOLORW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 #[cfg(feature = "Win32_Foundation")]
@@ -249,6 +253,7 @@ impl ::core::clone::Clone for CHOOSEFONTA {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
 unsafe impl ::windows::core::Abi for CHOOSEFONTA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
@@ -303,6 +308,7 @@ impl ::core::clone::Clone for CHOOSEFONTA {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
 unsafe impl ::windows::core::Abi for CHOOSEFONTA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
@@ -357,6 +363,7 @@ impl ::core::clone::Clone for CHOOSEFONTW {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
 unsafe impl ::windows::core::Abi for CHOOSEFONTW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
@@ -411,6 +418,7 @@ impl ::core::clone::Clone for CHOOSEFONTW {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
 unsafe impl ::windows::core::Abi for CHOOSEFONTW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
@@ -504,6 +512,7 @@ impl ::core::default::Default for CHOOSEFONT_FLAGS {
 }
 unsafe impl ::windows::core::Abi for CHOOSEFONT_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CHOOSEFONT_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -567,6 +576,7 @@ impl ::core::default::Default for CHOOSEFONT_FONT_TYPE {
 }
 unsafe impl ::windows::core::Abi for CHOOSEFONT_FONT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CHOOSEFONT_FONT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -758,6 +768,7 @@ impl ::core::default::Default for COMMON_DLG_ERRORS {
 }
 unsafe impl ::windows::core::Abi for COMMON_DLG_ERRORS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for COMMON_DLG_ERRORS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -858,6 +869,7 @@ impl ::core::clone::Clone for DEVNAMES {
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 unsafe impl ::windows::core::Abi for DEVNAMES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 impl ::core::cmp::PartialEq for DEVNAMES {
@@ -893,6 +905,7 @@ impl ::core::clone::Clone for DEVNAMES {
 #[cfg(target_arch = "x86")]
 unsafe impl ::windows::core::Abi for DEVNAMES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 impl ::core::cmp::PartialEq for DEVNAMES {
@@ -955,6 +968,7 @@ impl ::core::clone::Clone for FINDREPLACEA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for FINDREPLACEA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 #[cfg(feature = "Win32_Foundation")]
@@ -1004,6 +1018,7 @@ impl ::core::clone::Clone for FINDREPLACEA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for FINDREPLACEA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 #[cfg(feature = "Win32_Foundation")]
@@ -1053,6 +1068,7 @@ impl ::core::clone::Clone for FINDREPLACEW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for FINDREPLACEW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 #[cfg(feature = "Win32_Foundation")]
@@ -1102,6 +1118,7 @@ impl ::core::clone::Clone for FINDREPLACEW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for FINDREPLACEW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 #[cfg(feature = "Win32_Foundation")]
@@ -1171,6 +1188,7 @@ impl ::core::default::Default for FINDREPLACE_FLAGS {
 }
 unsafe impl ::windows::core::Abi for FINDREPLACE_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FINDREPLACE_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1348,6 +1366,11 @@ pub const HELPMSGSTRINGW: &'static str = "commdlg_help";
 #[doc = "*Required features: `\"Win32_UI_Controls_Dialogs\"`*"]
 #[repr(transparent)]
 pub struct IPrintDialogCallback(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrintDialogCallback {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPrintDialogCallback {
     #[doc = "*Required features: `\"Win32_UI_Controls_Dialogs\"`*"]
     pub unsafe fn InitDone(&self) -> ::windows::core::Result<()> {
@@ -1383,11 +1406,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPrin
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPrintDialogCallback {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPrintDialogCallback {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1417,6 +1435,11 @@ pub struct IPrintDialogCallback_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Controls_Dialogs\"`*"]
 #[repr(transparent)]
 pub struct IPrintDialogServices(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrintDialogServices {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPrintDialogServices {
     #[doc = "*Required features: `\"Win32_UI_Controls_Dialogs\"`, `\"Win32_Foundation\"`, `\"Win32_Graphics_Gdi\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
@@ -1450,11 +1473,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IPrintDia
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPrintDialogServices {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IPrintDialogServices {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IPrintDialogServices {
@@ -1540,6 +1558,7 @@ impl ::core::clone::Clone for OFNOTIFYA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for OFNOTIFYA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 #[cfg(feature = "Win32_Foundation")]
@@ -1581,6 +1600,7 @@ impl ::core::clone::Clone for OFNOTIFYA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for OFNOTIFYA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 #[cfg(feature = "Win32_Foundation")]
@@ -1623,6 +1643,7 @@ impl ::core::clone::Clone for OFNOTIFYEXA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for OFNOTIFYEXA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 #[cfg(feature = "Win32_Foundation")]
@@ -1665,6 +1686,7 @@ impl ::core::clone::Clone for OFNOTIFYEXA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for OFNOTIFYEXA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 #[cfg(feature = "Win32_Foundation")]
@@ -1707,6 +1729,7 @@ impl ::core::clone::Clone for OFNOTIFYEXW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for OFNOTIFYEXW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 #[cfg(feature = "Win32_Foundation")]
@@ -1749,6 +1772,7 @@ impl ::core::clone::Clone for OFNOTIFYEXW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for OFNOTIFYEXW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 #[cfg(feature = "Win32_Foundation")]
@@ -1790,6 +1814,7 @@ impl ::core::clone::Clone for OFNOTIFYW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for OFNOTIFYW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 #[cfg(feature = "Win32_Foundation")]
@@ -1831,6 +1856,7 @@ impl ::core::clone::Clone for OFNOTIFYW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for OFNOTIFYW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 #[cfg(feature = "Win32_Foundation")]
@@ -1898,6 +1924,7 @@ impl ::core::clone::Clone for OPENFILENAMEA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for OPENFILENAMEA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 #[cfg(feature = "Win32_Foundation")]
@@ -1959,6 +1986,7 @@ impl ::core::clone::Clone for OPENFILENAMEA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for OPENFILENAMEA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 #[cfg(feature = "Win32_Foundation")]
@@ -2020,6 +2048,7 @@ impl ::core::clone::Clone for OPENFILENAMEW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for OPENFILENAMEW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 #[cfg(feature = "Win32_Foundation")]
@@ -2081,6 +2110,7 @@ impl ::core::clone::Clone for OPENFILENAMEW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for OPENFILENAMEW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 #[cfg(feature = "Win32_Foundation")]
@@ -2139,6 +2169,7 @@ impl ::core::clone::Clone for OPENFILENAME_NT4A {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for OPENFILENAME_NT4A {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 #[cfg(feature = "Win32_Foundation")]
@@ -2197,6 +2228,7 @@ impl ::core::clone::Clone for OPENFILENAME_NT4A {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for OPENFILENAME_NT4A {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 #[cfg(feature = "Win32_Foundation")]
@@ -2255,6 +2287,7 @@ impl ::core::clone::Clone for OPENFILENAME_NT4W {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for OPENFILENAME_NT4W {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 #[cfg(feature = "Win32_Foundation")]
@@ -2313,6 +2346,7 @@ impl ::core::clone::Clone for OPENFILENAME_NT4W {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for OPENFILENAME_NT4W {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 #[cfg(feature = "Win32_Foundation")]
@@ -2400,6 +2434,7 @@ impl ::core::default::Default for OPEN_FILENAME_FLAGS {
 }
 unsafe impl ::windows::core::Abi for OPEN_FILENAME_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for OPEN_FILENAME_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2455,6 +2490,7 @@ impl ::core::default::Default for OPEN_FILENAME_FLAGS_EX {
 }
 unsafe impl ::windows::core::Abi for OPEN_FILENAME_FLAGS_EX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for OPEN_FILENAME_FLAGS_EX {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2523,6 +2559,7 @@ impl ::core::clone::Clone for PAGESETUPDLGA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PAGESETUPDLGA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 #[cfg(feature = "Win32_Foundation")]
@@ -2575,6 +2612,7 @@ impl ::core::clone::Clone for PAGESETUPDLGA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PAGESETUPDLGA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 #[cfg(feature = "Win32_Foundation")]
@@ -2627,6 +2665,7 @@ impl ::core::clone::Clone for PAGESETUPDLGW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PAGESETUPDLGW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 #[cfg(feature = "Win32_Foundation")]
@@ -2679,6 +2718,7 @@ impl ::core::clone::Clone for PAGESETUPDLGW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PAGESETUPDLGW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 #[cfg(feature = "Win32_Foundation")]
@@ -2752,6 +2792,7 @@ impl ::core::default::Default for PAGESETUPDLG_FLAGS {
 }
 unsafe impl ::windows::core::Abi for PAGESETUPDLG_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PAGESETUPDLG_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2831,6 +2872,7 @@ impl ::core::clone::Clone for PRINTDLGA {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
 unsafe impl ::windows::core::Abi for PRINTDLGA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
@@ -2888,6 +2930,7 @@ impl ::core::clone::Clone for PRINTDLGA {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
 unsafe impl ::windows::core::Abi for PRINTDLGA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
@@ -2966,6 +3009,7 @@ impl ::core::clone::Clone for PRINTDLGEXA {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
 unsafe impl ::windows::core::Abi for PRINTDLGEXA {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
@@ -3035,6 +3079,7 @@ pub struct PRINTDLGEXA {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
 unsafe impl ::windows::core::Abi for PRINTDLGEXA {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
@@ -3113,6 +3158,7 @@ impl ::core::clone::Clone for PRINTDLGEXW {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
 unsafe impl ::windows::core::Abi for PRINTDLGEXW {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
@@ -3182,6 +3228,7 @@ pub struct PRINTDLGEXW {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
 unsafe impl ::windows::core::Abi for PRINTDLGEXW {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
@@ -3273,6 +3320,7 @@ impl ::core::default::Default for PRINTDLGEX_FLAGS {
 }
 unsafe impl ::windows::core::Abi for PRINTDLGEX_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PRINTDLGEX_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3346,6 +3394,7 @@ impl ::core::clone::Clone for PRINTDLGW {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
 unsafe impl ::windows::core::Abi for PRINTDLGW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
@@ -3403,6 +3452,7 @@ impl ::core::clone::Clone for PRINTDLGW {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
 unsafe impl ::windows::core::Abi for PRINTDLGW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
@@ -3439,6 +3489,7 @@ impl ::core::clone::Clone for PRINTPAGERANGE {
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 unsafe impl ::windows::core::Abi for PRINTPAGERANGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 impl ::core::cmp::PartialEq for PRINTPAGERANGE {
@@ -3472,6 +3523,7 @@ impl ::core::clone::Clone for PRINTPAGERANGE {
 #[cfg(target_arch = "x86")]
 unsafe impl ::windows::core::Abi for PRINTPAGERANGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 impl ::core::cmp::PartialEq for PRINTPAGERANGE {

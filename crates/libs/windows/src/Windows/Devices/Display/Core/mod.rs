@@ -83,11 +83,6 @@ impl DisplayAdapter {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for DisplayAdapter {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DisplayAdapter {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -101,7 +96,6 @@ impl ::core::fmt::Debug for DisplayAdapter {
 }
 unsafe impl ::windows::core::RuntimeType for DisplayAdapter {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Display.Core.DisplayAdapter;{a56f5287-f000-5f2e-b5ac-3783a2b69af5})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -181,6 +175,7 @@ impl ::core::default::Default for DisplayBitsPerChannel {
 }
 unsafe impl ::windows::core::Abi for DisplayBitsPerChannel {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DisplayBitsPerChannel {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -217,7 +212,6 @@ impl ::core::ops::Not for DisplayBitsPerChannel {
 }
 unsafe impl ::windows::core::RuntimeType for DisplayBitsPerChannel {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.Display.Core.DisplayBitsPerChannel;u4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -290,11 +284,6 @@ impl DisplayDevice {
         }
     }
 }
-impl ::core::clone::Clone for DisplayDevice {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DisplayDevice {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -308,7 +297,6 @@ impl ::core::fmt::Debug for DisplayDevice {
 }
 unsafe impl ::windows::core::RuntimeType for DisplayDevice {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Display.Core.DisplayDevice;{a4c9b62c-335f-5731-8cb4-c1ccd4731070})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -382,6 +370,7 @@ impl ::core::default::Default for DisplayDeviceCapability {
 }
 unsafe impl ::windows::core::Abi for DisplayDeviceCapability {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DisplayDeviceCapability {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -390,7 +379,6 @@ impl ::core::fmt::Debug for DisplayDeviceCapability {
 }
 unsafe impl ::windows::core::RuntimeType for DisplayDeviceCapability {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.Display.Core.DisplayDeviceCapability;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -399,11 +387,6 @@ unsafe impl ::windows::core::RuntimeType for DisplayDeviceCapability {
 #[repr(transparent)]
 pub struct DisplayFence(::windows::core::IUnknown);
 impl DisplayFence {}
-impl ::core::clone::Clone for DisplayFence {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DisplayFence {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -417,7 +400,6 @@ impl ::core::fmt::Debug for DisplayFence {
 }
 unsafe impl ::windows::core::RuntimeType for DisplayFence {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Display.Core.DisplayFence;{04dcf9ef-3406-5700-8fec-77eba4c5a74b})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -638,11 +620,6 @@ impl DisplayManager {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for DisplayManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DisplayManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -656,7 +633,6 @@ impl ::core::fmt::Debug for DisplayManager {
 }
 unsafe impl ::windows::core::RuntimeType for DisplayManager {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Display.Core.DisplayManager;{4ed9245b-15ec-56e2-9072-7fe5084a31a7})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -763,11 +739,6 @@ impl DisplayManagerChangedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for DisplayManagerChangedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DisplayManagerChangedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -781,7 +752,6 @@ impl ::core::fmt::Debug for DisplayManagerChangedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for DisplayManagerChangedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Display.Core.DisplayManagerChangedEventArgs;{6abfa285-6cca-5731-bcdc-42e5d2f5c50f})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -862,11 +832,6 @@ impl DisplayManagerDisabledEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for DisplayManagerDisabledEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DisplayManagerDisabledEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -880,7 +845,6 @@ impl ::core::fmt::Debug for DisplayManagerDisabledEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for DisplayManagerDisabledEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Display.Core.DisplayManagerDisabledEventArgs;{8726dde4-6793-5973-a11f-5ffbc93fdb90})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -961,11 +925,6 @@ impl DisplayManagerEnabledEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for DisplayManagerEnabledEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DisplayManagerEnabledEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -979,7 +938,6 @@ impl ::core::fmt::Debug for DisplayManagerEnabledEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for DisplayManagerEnabledEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Display.Core.DisplayManagerEnabledEventArgs;{f0cf3f6f-42fa-59a2-b297-26e1713de848})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1055,6 +1013,7 @@ impl ::core::default::Default for DisplayManagerOptions {
 }
 unsafe impl ::windows::core::Abi for DisplayManagerOptions {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DisplayManagerOptions {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1091,7 +1050,6 @@ impl ::core::ops::Not for DisplayManagerOptions {
 }
 unsafe impl ::windows::core::RuntimeType for DisplayManagerOptions {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.Display.Core.DisplayManagerOptions;u4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1123,11 +1081,6 @@ impl DisplayManagerPathsFailedOrInvalidatedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for DisplayManagerPathsFailedOrInvalidatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DisplayManagerPathsFailedOrInvalidatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1141,7 +1094,6 @@ impl ::core::fmt::Debug for DisplayManagerPathsFailedOrInvalidatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for DisplayManagerPathsFailedOrInvalidatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Display.Core.DisplayManagerPathsFailedOrInvalidatedEventArgs;{03a65659-1dec-5c15-b2a2-8fe9129869fe})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1219,6 +1171,7 @@ impl ::core::default::Default for DisplayManagerResult {
 }
 unsafe impl ::windows::core::Abi for DisplayManagerResult {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DisplayManagerResult {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1227,7 +1180,6 @@ impl ::core::fmt::Debug for DisplayManagerResult {
 }
 unsafe impl ::windows::core::RuntimeType for DisplayManagerResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.Display.Core.DisplayManagerResult;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1261,11 +1213,6 @@ impl DisplayManagerResultWithState {
         }
     }
 }
-impl ::core::clone::Clone for DisplayManagerResultWithState {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DisplayManagerResultWithState {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1279,7 +1226,6 @@ impl ::core::fmt::Debug for DisplayManagerResultWithState {
 }
 unsafe impl ::windows::core::RuntimeType for DisplayManagerResultWithState {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Display.Core.DisplayManagerResultWithState;{8e656aa6-6614-54be-bfef-4994547f7be1})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1424,11 +1370,6 @@ impl DisplayModeInfo {
         }
     }
 }
-impl ::core::clone::Clone for DisplayModeInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DisplayModeInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1442,7 +1383,6 @@ impl ::core::fmt::Debug for DisplayModeInfo {
 }
 unsafe impl ::windows::core::RuntimeType for DisplayModeInfo {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Display.Core.DisplayModeInfo;{48d513a0-f79b-5a74-a05e-da821f470868})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1517,6 +1457,7 @@ impl ::core::default::Default for DisplayModeQueryOptions {
 }
 unsafe impl ::windows::core::Abi for DisplayModeQueryOptions {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DisplayModeQueryOptions {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1553,7 +1494,6 @@ impl ::core::ops::Not for DisplayModeQueryOptions {
 }
 unsafe impl ::windows::core::RuntimeType for DisplayModeQueryOptions {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.Display.Core.DisplayModeQueryOptions;u4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1752,11 +1692,6 @@ impl DisplayPath {
         unsafe { (::windows::core::Interface::vtable(this).SetPhysicalPresentationRate)(::core::mem::transmute_copy(this), value.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for DisplayPath {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DisplayPath {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1770,7 +1705,6 @@ impl ::core::fmt::Debug for DisplayPath {
 }
 unsafe impl ::windows::core::RuntimeType for DisplayPath {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Display.Core.DisplayPath;{b3dfd64a-7460-5cde-811b-d5ae9f3d9f84})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1849,6 +1783,7 @@ impl ::core::default::Default for DisplayPathScaling {
 }
 unsafe impl ::windows::core::Abi for DisplayPathScaling {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DisplayPathScaling {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1857,7 +1792,6 @@ impl ::core::fmt::Debug for DisplayPathScaling {
 }
 unsafe impl ::windows::core::RuntimeType for DisplayPathScaling {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.Display.Core.DisplayPathScaling;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1887,6 +1821,7 @@ impl ::core::default::Default for DisplayPathStatus {
 }
 unsafe impl ::windows::core::Abi for DisplayPathStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DisplayPathStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1895,7 +1830,6 @@ impl ::core::fmt::Debug for DisplayPathStatus {
 }
 unsafe impl ::windows::core::RuntimeType for DisplayPathStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.Display.Core.DisplayPathStatus;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1925,6 +1859,7 @@ impl ::core::default::Default for DisplayPresentStatus {
 }
 unsafe impl ::windows::core::Abi for DisplayPresentStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DisplayPresentStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1933,7 +1868,6 @@ impl ::core::fmt::Debug for DisplayPresentStatus {
 }
 unsafe impl ::windows::core::RuntimeType for DisplayPresentStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.Display.Core.DisplayPresentStatus;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1962,11 +1896,11 @@ impl ::core::fmt::Debug for DisplayPresentationRate {
 #[cfg(feature = "Foundation_Numerics")]
 unsafe impl ::windows::core::Abi for DisplayPresentationRate {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Foundation_Numerics")]
 unsafe impl ::windows::core::RuntimeType for DisplayPresentationRate {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"struct(Windows.Devices.Display.Core.DisplayPresentationRate;struct(Windows.Foundation.Numerics.Rational;u4;u4);i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2076,11 +2010,6 @@ impl DisplayPrimaryDescription {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for DisplayPrimaryDescription {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DisplayPrimaryDescription {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2094,7 +2023,6 @@ impl ::core::fmt::Debug for DisplayPrimaryDescription {
 }
 unsafe impl ::windows::core::RuntimeType for DisplayPrimaryDescription {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Display.Core.DisplayPrimaryDescription;{872591d2-d533-50ff-a85e-06696194b77c})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2171,6 +2099,7 @@ impl ::core::default::Default for DisplayRotation {
 }
 unsafe impl ::windows::core::Abi for DisplayRotation {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DisplayRotation {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2179,7 +2108,6 @@ impl ::core::fmt::Debug for DisplayRotation {
 }
 unsafe impl ::windows::core::RuntimeType for DisplayRotation {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.Display.Core.DisplayRotation;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2188,11 +2116,6 @@ unsafe impl ::windows::core::RuntimeType for DisplayRotation {
 #[repr(transparent)]
 pub struct DisplayScanout(::windows::core::IUnknown);
 impl DisplayScanout {}
-impl ::core::clone::Clone for DisplayScanout {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DisplayScanout {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2206,7 +2129,6 @@ impl ::core::fmt::Debug for DisplayScanout {
 }
 unsafe impl ::windows::core::RuntimeType for DisplayScanout {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Display.Core.DisplayScanout;{e3051828-1ba5-50e7-8a39-bb1fd2f4f8b9})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2281,6 +2203,7 @@ impl ::core::default::Default for DisplayScanoutOptions {
 }
 unsafe impl ::windows::core::Abi for DisplayScanoutOptions {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DisplayScanoutOptions {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2317,7 +2240,6 @@ impl ::core::ops::Not for DisplayScanoutOptions {
 }
 unsafe impl ::windows::core::RuntimeType for DisplayScanoutOptions {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.Display.Core.DisplayScanoutOptions;u4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2376,11 +2298,6 @@ impl DisplaySource {
         unsafe { (::windows::core::Interface::vtable(this).RemoveStatusChanged)(::core::mem::transmute_copy(this), token.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for DisplaySource {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DisplaySource {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2394,7 +2311,6 @@ impl ::core::fmt::Debug for DisplaySource {
 }
 unsafe impl ::windows::core::RuntimeType for DisplaySource {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Display.Core.DisplaySource;{ecd15fc1-eadc-51bc-971d-3bc628db2dd4})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2472,6 +2388,7 @@ impl ::core::default::Default for DisplaySourceStatus {
 }
 unsafe impl ::windows::core::Abi for DisplaySourceStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DisplaySourceStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2480,7 +2397,6 @@ impl ::core::fmt::Debug for DisplaySourceStatus {
 }
 unsafe impl ::windows::core::RuntimeType for DisplaySourceStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.Display.Core.DisplaySourceStatus;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2602,11 +2518,6 @@ impl DisplayState {
         }
     }
 }
-impl ::core::clone::Clone for DisplayState {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DisplayState {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2620,7 +2531,6 @@ impl ::core::fmt::Debug for DisplayState {
 }
 unsafe impl ::windows::core::RuntimeType for DisplayState {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Display.Core.DisplayState;{08129321-11b5-5cb2-99f8-e90b479a8a1d})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2697,6 +2607,7 @@ impl ::core::default::Default for DisplayStateApplyOptions {
 }
 unsafe impl ::windows::core::Abi for DisplayStateApplyOptions {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DisplayStateApplyOptions {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2733,7 +2644,6 @@ impl ::core::ops::Not for DisplayStateApplyOptions {
 }
 unsafe impl ::windows::core::RuntimeType for DisplayStateApplyOptions {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.Display.Core.DisplayStateApplyOptions;u4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2760,6 +2670,7 @@ impl ::core::default::Default for DisplayStateFunctionalizeOptions {
 }
 unsafe impl ::windows::core::Abi for DisplayStateFunctionalizeOptions {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DisplayStateFunctionalizeOptions {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2796,7 +2707,6 @@ impl ::core::ops::Not for DisplayStateFunctionalizeOptions {
 }
 unsafe impl ::windows::core::RuntimeType for DisplayStateFunctionalizeOptions {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.Display.Core.DisplayStateFunctionalizeOptions;u4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2822,11 +2732,6 @@ impl DisplayStateOperationResult {
         }
     }
 }
-impl ::core::clone::Clone for DisplayStateOperationResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DisplayStateOperationResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2840,7 +2745,6 @@ impl ::core::fmt::Debug for DisplayStateOperationResult {
 }
 unsafe impl ::windows::core::RuntimeType for DisplayStateOperationResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Display.Core.DisplayStateOperationResult;{fcadbfdf-dc27-5638-b7f2-ebdfa4f7ea93})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2921,6 +2825,7 @@ impl ::core::default::Default for DisplayStateOperationStatus {
 }
 unsafe impl ::windows::core::Abi for DisplayStateOperationStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DisplayStateOperationStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2929,7 +2834,6 @@ impl ::core::fmt::Debug for DisplayStateOperationStatus {
 }
 unsafe impl ::windows::core::RuntimeType for DisplayStateOperationStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.Display.Core.DisplayStateOperationStatus;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2938,11 +2842,6 @@ unsafe impl ::windows::core::RuntimeType for DisplayStateOperationStatus {
 #[repr(transparent)]
 pub struct DisplaySurface(::windows::core::IUnknown);
 impl DisplaySurface {}
-impl ::core::clone::Clone for DisplaySurface {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DisplaySurface {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2956,7 +2855,6 @@ impl ::core::fmt::Debug for DisplaySurface {
 }
 unsafe impl ::windows::core::RuntimeType for DisplaySurface {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Display.Core.DisplaySurface;{594f6cc6-139a-56d6-a4b1-15fe2cb76adb})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3128,11 +3026,6 @@ impl DisplayTarget {
         }
     }
 }
-impl ::core::clone::Clone for DisplayTarget {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DisplayTarget {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3146,7 +3039,6 @@ impl ::core::fmt::Debug for DisplayTarget {
 }
 unsafe impl ::windows::core::RuntimeType for DisplayTarget {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Display.Core.DisplayTarget;{aec57c6f-47b4-546b-987c-e73fa791fe3a})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3223,6 +3115,7 @@ impl ::core::default::Default for DisplayTargetPersistence {
 }
 unsafe impl ::windows::core::Abi for DisplayTargetPersistence {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DisplayTargetPersistence {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3231,7 +3124,6 @@ impl ::core::fmt::Debug for DisplayTargetPersistence {
 }
 unsafe impl ::windows::core::RuntimeType for DisplayTargetPersistence {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.Display.Core.DisplayTargetPersistence;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -3256,11 +3148,6 @@ impl DisplayTask {
         unsafe { (::windows::core::Interface::vtable(this).SetSignal)(::core::mem::transmute_copy(this), signalkind, fence.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for DisplayTask {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DisplayTask {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3274,7 +3161,6 @@ impl ::core::fmt::Debug for DisplayTask {
 }
 unsafe impl ::windows::core::RuntimeType for DisplayTask {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Display.Core.DisplayTask;{5e087448-135b-5bb0-bf63-637f84227c7a})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3355,11 +3241,6 @@ impl DisplayTaskPool {
         }
     }
 }
-impl ::core::clone::Clone for DisplayTaskPool {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DisplayTaskPool {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3373,7 +3254,6 @@ impl ::core::fmt::Debug for DisplayTaskPool {
 }
 unsafe impl ::windows::core::RuntimeType for DisplayTaskPool {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Display.Core.DisplayTaskPool;{c676253d-237d-5548-aafa-3e517fefef1c})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3456,11 +3336,6 @@ impl DisplayTaskResult {
         }
     }
 }
-impl ::core::clone::Clone for DisplayTaskResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DisplayTaskResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3474,7 +3349,6 @@ impl ::core::fmt::Debug for DisplayTaskResult {
 }
 unsafe impl ::windows::core::RuntimeType for DisplayTaskResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Display.Core.DisplayTaskResult;{6fbc7d67-f9b1-55e0-9d88-d3a5197a3f59})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3549,6 +3423,7 @@ impl ::core::default::Default for DisplayTaskSignalKind {
 }
 unsafe impl ::windows::core::Abi for DisplayTaskSignalKind {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DisplayTaskSignalKind {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3557,7 +3432,6 @@ impl ::core::fmt::Debug for DisplayTaskSignalKind {
 }
 unsafe impl ::windows::core::RuntimeType for DisplayTaskSignalKind {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.Display.Core.DisplayTaskSignalKind;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -3605,11 +3479,6 @@ impl DisplayView {
         }
     }
 }
-impl ::core::clone::Clone for DisplayView {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DisplayView {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3623,7 +3492,6 @@ impl ::core::fmt::Debug for DisplayView {
 }
 unsafe impl ::windows::core::RuntimeType for DisplayView {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Display.Core.DisplayView;{b0c98ca1-b759-5b59-b1ad-f0786aa9e53d})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3756,11 +3624,6 @@ impl DisplayWireFormat {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for DisplayWireFormat {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DisplayWireFormat {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3774,7 +3637,6 @@ impl ::core::fmt::Debug for DisplayWireFormat {
 }
 unsafe impl ::windows::core::RuntimeType for DisplayWireFormat {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Display.Core.DisplayWireFormat;{1acc967d-872c-5a38-bbb9-1d4872b76255})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3850,6 +3712,7 @@ impl ::core::default::Default for DisplayWireFormatColorSpace {
 }
 unsafe impl ::windows::core::Abi for DisplayWireFormatColorSpace {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DisplayWireFormatColorSpace {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3858,7 +3721,6 @@ impl ::core::fmt::Debug for DisplayWireFormatColorSpace {
 }
 unsafe impl ::windows::core::RuntimeType for DisplayWireFormatColorSpace {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.Display.Core.DisplayWireFormatColorSpace;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -3884,6 +3746,7 @@ impl ::core::default::Default for DisplayWireFormatEotf {
 }
 unsafe impl ::windows::core::Abi for DisplayWireFormatEotf {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DisplayWireFormatEotf {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3892,7 +3755,6 @@ impl ::core::fmt::Debug for DisplayWireFormatEotf {
 }
 unsafe impl ::windows::core::RuntimeType for DisplayWireFormatEotf {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.Display.Core.DisplayWireFormatEotf;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -3920,6 +3782,7 @@ impl ::core::default::Default for DisplayWireFormatHdrMetadata {
 }
 unsafe impl ::windows::core::Abi for DisplayWireFormatHdrMetadata {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DisplayWireFormatHdrMetadata {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3928,7 +3791,6 @@ impl ::core::fmt::Debug for DisplayWireFormatHdrMetadata {
 }
 unsafe impl ::windows::core::RuntimeType for DisplayWireFormatHdrMetadata {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.Display.Core.DisplayWireFormatHdrMetadata;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -3957,6 +3819,7 @@ impl ::core::default::Default for DisplayWireFormatPixelEncoding {
 }
 unsafe impl ::windows::core::Abi for DisplayWireFormatPixelEncoding {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DisplayWireFormatPixelEncoding {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3965,7 +3828,6 @@ impl ::core::fmt::Debug for DisplayWireFormatPixelEncoding {
 }
 unsafe impl ::windows::core::RuntimeType for DisplayWireFormatPixelEncoding {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.Display.Core.DisplayWireFormatPixelEncoding;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -3973,6 +3835,11 @@ unsafe impl ::windows::core::RuntimeType for DisplayWireFormatPixelEncoding {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDisplayAdapter(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDisplayAdapter {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDisplayAdapter {
     type Vtable = IDisplayAdapter_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa56f5287_f000_5f2e_b5ac_3783a2b69af5);
@@ -3999,6 +3866,11 @@ pub struct IDisplayAdapter_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDisplayAdapterStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDisplayAdapterStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDisplayAdapterStatics {
     type Vtable = IDisplayAdapterStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1dac3cda_481f_5469_8470_82c4ba680a28);
@@ -4015,6 +3887,11 @@ pub struct IDisplayAdapterStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDisplayDevice(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDisplayDevice {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDisplayDevice {
     type Vtable = IDisplayDevice_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa4c9b62c_335f_5731_8cb4_c1ccd4731070);
@@ -4037,6 +3914,11 @@ pub struct IDisplayDevice_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDisplayDevice2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDisplayDevice2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDisplayDevice2 {
     type Vtable = IDisplayDevice2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x3fefe50c_0940_54bd_a02f_f9c7a536ad60);
@@ -4053,6 +3935,11 @@ pub struct IDisplayDevice2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDisplayFence(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDisplayFence {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDisplayFence {
     type Vtable = IDisplayFence_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x04dcf9ef_3406_5700_8fec_77eba4c5a74b);
@@ -4065,6 +3952,11 @@ pub struct IDisplayFence_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDisplayManager(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDisplayManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDisplayManager {
     type Vtable = IDisplayManager_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x4ed9245b_15ec_56e2_9072_7fe5084a31a7);
@@ -4135,6 +4027,11 @@ pub struct IDisplayManager_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDisplayManagerChangedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDisplayManagerChangedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDisplayManagerChangedEventArgs {
     type Vtable = IDisplayManagerChangedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x6abfa285_6cca_5731_bcdc_42e5d2f5c50f);
@@ -4153,6 +4050,11 @@ pub struct IDisplayManagerChangedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDisplayManagerDisabledEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDisplayManagerDisabledEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDisplayManagerDisabledEventArgs {
     type Vtable = IDisplayManagerDisabledEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x8726dde4_6793_5973_a11f_5ffbc93fdb90);
@@ -4171,6 +4073,11 @@ pub struct IDisplayManagerDisabledEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDisplayManagerEnabledEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDisplayManagerEnabledEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDisplayManagerEnabledEventArgs {
     type Vtable = IDisplayManagerEnabledEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf0cf3f6f_42fa_59a2_b297_26e1713de848);
@@ -4189,6 +4096,11 @@ pub struct IDisplayManagerEnabledEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDisplayManagerPathsFailedOrInvalidatedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDisplayManagerPathsFailedOrInvalidatedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDisplayManagerPathsFailedOrInvalidatedEventArgs {
     type Vtable = IDisplayManagerPathsFailedOrInvalidatedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x03a65659_1dec_5c15_b2a2_8fe9129869fe);
@@ -4207,6 +4119,11 @@ pub struct IDisplayManagerPathsFailedOrInvalidatedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDisplayManagerResultWithState(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDisplayManagerResultWithState {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDisplayManagerResultWithState {
     type Vtable = IDisplayManagerResultWithState_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x8e656aa6_6614_54be_bfef_4994547f7be1);
@@ -4222,6 +4139,11 @@ pub struct IDisplayManagerResultWithState_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDisplayManagerStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDisplayManagerStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDisplayManagerStatics {
     type Vtable = IDisplayManagerStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x2b6b9446_b999_5535_9d69_53f092c780a1);
@@ -4235,6 +4157,11 @@ pub struct IDisplayManagerStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDisplayModeInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDisplayModeInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDisplayModeInfo {
     type Vtable = IDisplayModeInfo_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x48d513a0_f79b_5a74_a05e_da821f470868);
@@ -4271,6 +4198,11 @@ pub struct IDisplayModeInfo_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDisplayModeInfo2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDisplayModeInfo2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDisplayModeInfo2 {
     type Vtable = IDisplayModeInfo2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc86fa386_0ddb_5473_bfb0_4b7807b5f909);
@@ -4287,6 +4219,11 @@ pub struct IDisplayModeInfo2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDisplayPath(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDisplayPath {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDisplayPath {
     type Vtable = IDisplayPath_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb3dfd64a_7460_5cde_811b_d5ae9f3d9f84);
@@ -4359,6 +4296,11 @@ pub struct IDisplayPath_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDisplayPath2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDisplayPath2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDisplayPath2 {
     type Vtable = IDisplayPath2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf32459c5_e994_570b_9ec8_ef42c35a8547);
@@ -4379,6 +4321,11 @@ pub struct IDisplayPath2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDisplayPrimaryDescription(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDisplayPrimaryDescription {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDisplayPrimaryDescription {
     type Vtable = IDisplayPrimaryDescription_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x872591d2_d533_50ff_a85e_06696194b77c);
@@ -4410,6 +4357,11 @@ pub struct IDisplayPrimaryDescription_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDisplayPrimaryDescriptionFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDisplayPrimaryDescriptionFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDisplayPrimaryDescriptionFactory {
     type Vtable = IDisplayPrimaryDescriptionFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1a6aff7b_3637_5c46_b479_76d576216e65);
@@ -4426,6 +4378,11 @@ pub struct IDisplayPrimaryDescriptionFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDisplayPrimaryDescriptionStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDisplayPrimaryDescriptionStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDisplayPrimaryDescriptionStatics {
     type Vtable = IDisplayPrimaryDescriptionStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe60e4cfb_36c9_56dd_8fa1_6ff8c4e0ff07);
@@ -4442,6 +4399,11 @@ pub struct IDisplayPrimaryDescriptionStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDisplayScanout(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDisplayScanout {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDisplayScanout {
     type Vtable = IDisplayScanout_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe3051828_1ba5_50e7_8a39_bb1fd2f4f8b9);
@@ -4454,6 +4416,11 @@ pub struct IDisplayScanout_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDisplaySource(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDisplaySource {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDisplaySource {
     type Vtable = IDisplaySource_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xecd15fc1_eadc_51bc_971d_3bc628db2dd4);
@@ -4475,6 +4442,11 @@ pub struct IDisplaySource_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDisplaySource2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDisplaySource2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDisplaySource2 {
     type Vtable = IDisplaySource2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x71e18952_b321_5af4_bfe8_03fbea31e40d);
@@ -4496,6 +4468,11 @@ pub struct IDisplaySource2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDisplayState(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDisplayState {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDisplayState {
     type Vtable = IDisplayState_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x08129321_11b5_5cb2_99f8_e90b479a8a1d);
@@ -4531,6 +4508,11 @@ pub struct IDisplayState_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDisplayStateOperationResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDisplayStateOperationResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDisplayStateOperationResult {
     type Vtable = IDisplayStateOperationResult_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xfcadbfdf_dc27_5638_b7f2_ebdfa4f7ea93);
@@ -4545,6 +4527,11 @@ pub struct IDisplayStateOperationResult_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDisplaySurface(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDisplaySurface {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDisplaySurface {
     type Vtable = IDisplaySurface_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x594f6cc6_139a_56d6_a4b1_15fe2cb76adb);
@@ -4557,6 +4544,11 @@ pub struct IDisplaySurface_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDisplayTarget(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDisplayTarget {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDisplayTarget {
     type Vtable = IDisplayTarget_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xaec57c6f_47b4_546b_987c_e73fa791fe3a);
@@ -4586,6 +4578,11 @@ pub struct IDisplayTarget_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDisplayTask(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDisplayTask {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDisplayTask {
     type Vtable = IDisplayTask_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x5e087448_135b_5bb0_bf63_637f84227c7a);
@@ -4600,6 +4597,11 @@ pub struct IDisplayTask_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDisplayTask2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDisplayTask2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDisplayTask2 {
     type Vtable = IDisplayTask2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x0957ea19_bd55_55de_9267_c97b61e71c37);
@@ -4613,6 +4615,11 @@ pub struct IDisplayTask2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDisplayTaskPool(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDisplayTaskPool {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDisplayTaskPool {
     type Vtable = IDisplayTaskPool_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc676253d_237d_5548_aafa_3e517fefef1c);
@@ -4630,6 +4637,11 @@ pub struct IDisplayTaskPool_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDisplayTaskPool2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDisplayTaskPool2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDisplayTaskPool2 {
     type Vtable = IDisplayTaskPool2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x46b879b6_5d17_5955_a872_eb38003db586);
@@ -4643,6 +4655,11 @@ pub struct IDisplayTaskPool2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDisplayTaskResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDisplayTaskResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDisplayTaskResult {
     type Vtable = IDisplayTaskResult_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x6fbc7d67_f9b1_55e0_9d88_d3a5197a3f59);
@@ -4658,6 +4675,11 @@ pub struct IDisplayTaskResult_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDisplayView(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDisplayView {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDisplayView {
     type Vtable = IDisplayView_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb0c98ca1_b759_5b59_b1ad_f0786aa9e53d);
@@ -4687,6 +4709,11 @@ pub struct IDisplayView_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDisplayWireFormat(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDisplayWireFormat {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDisplayWireFormat {
     type Vtable = IDisplayWireFormat_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1acc967d_872c_5a38_bbb9_1d4872b76255);
@@ -4708,6 +4735,11 @@ pub struct IDisplayWireFormat_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDisplayWireFormatFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDisplayWireFormatFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDisplayWireFormatFactory {
     type Vtable = IDisplayWireFormatFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb2efc8d5_09d6_55e6_ad22_9014b3d25229);
@@ -4721,6 +4753,11 @@ pub struct IDisplayWireFormatFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDisplayWireFormatStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDisplayWireFormatStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDisplayWireFormatStatics {
     type Vtable = IDisplayWireFormatStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc575a22d_c3e6_5f7a_bdfb_87c6ab8661d5);

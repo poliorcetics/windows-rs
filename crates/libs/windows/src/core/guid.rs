@@ -56,11 +56,11 @@ impl GUID {
 
 unsafe impl Abi for GUID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 
 unsafe impl RuntimeType for GUID {
     const SIGNATURE: ConstBuffer = ConstBuffer::from_slice(b"g16");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> Result<Self> {
         Ok(*from)
     }

@@ -203,6 +203,7 @@ impl ::core::default::Default for JOBOBJECTINFOCLASS {
 }
 unsafe impl ::windows::core::Abi for JOBOBJECTINFOCLASS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for JOBOBJECTINFOCLASS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -233,6 +234,7 @@ impl ::core::fmt::Debug for JOBOBJECT_ASSOCIATE_COMPLETION_PORT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for JOBOBJECT_ASSOCIATE_COMPLETION_PORT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for JOBOBJECT_ASSOCIATE_COMPLETION_PORT {
@@ -282,6 +284,7 @@ impl ::core::fmt::Debug for JOBOBJECT_BASIC_ACCOUNTING_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for JOBOBJECT_BASIC_ACCOUNTING_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for JOBOBJECT_BASIC_ACCOUNTING_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -318,6 +321,7 @@ impl ::core::fmt::Debug for JOBOBJECT_BASIC_AND_IO_ACCOUNTING_INFORMATION {
 #[cfg(feature = "Win32_System_Threading")]
 unsafe impl ::windows::core::Abi for JOBOBJECT_BASIC_AND_IO_ACCOUNTING_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_System_Threading")]
 impl ::core::cmp::PartialEq for JOBOBJECT_BASIC_AND_IO_ACCOUNTING_INFORMATION {
@@ -369,6 +373,7 @@ impl ::core::fmt::Debug for JOBOBJECT_BASIC_LIMIT_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for JOBOBJECT_BASIC_LIMIT_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for JOBOBJECT_BASIC_LIMIT_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -401,6 +406,7 @@ impl ::core::fmt::Debug for JOBOBJECT_BASIC_PROCESS_ID_LIST {
 }
 unsafe impl ::windows::core::Abi for JOBOBJECT_BASIC_PROCESS_ID_LIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for JOBOBJECT_BASIC_PROCESS_ID_LIST {
     fn eq(&self, other: &Self) -> bool {
@@ -431,6 +437,7 @@ impl ::core::fmt::Debug for JOBOBJECT_BASIC_UI_RESTRICTIONS {
 }
 unsafe impl ::windows::core::Abi for JOBOBJECT_BASIC_UI_RESTRICTIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for JOBOBJECT_BASIC_UI_RESTRICTIONS {
     fn eq(&self, other: &Self) -> bool {
@@ -457,6 +464,7 @@ impl ::core::clone::Clone for JOBOBJECT_CPU_RATE_CONTROL_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for JOBOBJECT_CPU_RATE_CONTROL_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for JOBOBJECT_CPU_RATE_CONTROL_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -484,6 +492,7 @@ impl ::core::clone::Clone for JOBOBJECT_CPU_RATE_CONTROL_INFORMATION_0 {
 }
 unsafe impl ::windows::core::Abi for JOBOBJECT_CPU_RATE_CONTROL_INFORMATION_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for JOBOBJECT_CPU_RATE_CONTROL_INFORMATION_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -515,6 +524,7 @@ impl ::core::fmt::Debug for JOBOBJECT_CPU_RATE_CONTROL_INFORMATION_0_0 {
 }
 unsafe impl ::windows::core::Abi for JOBOBJECT_CPU_RATE_CONTROL_INFORMATION_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for JOBOBJECT_CPU_RATE_CONTROL_INFORMATION_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -545,6 +555,7 @@ impl ::core::fmt::Debug for JOBOBJECT_END_OF_JOB_TIME_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for JOBOBJECT_END_OF_JOB_TIME_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for JOBOBJECT_END_OF_JOB_TIME_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -585,6 +596,7 @@ impl ::core::fmt::Debug for JOBOBJECT_EXTENDED_LIMIT_INFORMATION {
 #[cfg(feature = "Win32_System_Threading")]
 unsafe impl ::windows::core::Abi for JOBOBJECT_EXTENDED_LIMIT_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_System_Threading")]
 impl ::core::cmp::PartialEq for JOBOBJECT_EXTENDED_LIMIT_INFORMATION {
@@ -623,6 +635,7 @@ impl ::core::default::Default for JOBOBJECT_IO_ATTRIBUTION_CONTROL_FLAGS {
 }
 unsafe impl ::windows::core::Abi for JOBOBJECT_IO_ATTRIBUTION_CONTROL_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for JOBOBJECT_IO_ATTRIBUTION_CONTROL_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -649,6 +662,7 @@ impl ::core::fmt::Debug for JOBOBJECT_IO_ATTRIBUTION_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for JOBOBJECT_IO_ATTRIBUTION_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for JOBOBJECT_IO_ATTRIBUTION_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -682,6 +696,7 @@ impl ::core::fmt::Debug for JOBOBJECT_IO_ATTRIBUTION_STATS {
 }
 unsafe impl ::windows::core::Abi for JOBOBJECT_IO_ATTRIBUTION_STATS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for JOBOBJECT_IO_ATTRIBUTION_STATS {
     fn eq(&self, other: &Self) -> bool {
@@ -717,6 +732,7 @@ impl ::core::fmt::Debug for JOBOBJECT_IO_RATE_CONTROL_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for JOBOBJECT_IO_RATE_CONTROL_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for JOBOBJECT_IO_RATE_CONTROL_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -753,6 +769,7 @@ impl ::core::fmt::Debug for JOBOBJECT_IO_RATE_CONTROL_INFORMATION_NATIVE {
 }
 unsafe impl ::windows::core::Abi for JOBOBJECT_IO_RATE_CONTROL_INFORMATION_NATIVE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for JOBOBJECT_IO_RATE_CONTROL_INFORMATION_NATIVE {
     fn eq(&self, other: &Self) -> bool {
@@ -809,6 +826,7 @@ impl ::core::fmt::Debug for JOBOBJECT_IO_RATE_CONTROL_INFORMATION_NATIVE_V2 {
 }
 unsafe impl ::windows::core::Abi for JOBOBJECT_IO_RATE_CONTROL_INFORMATION_NATIVE_V2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for JOBOBJECT_IO_RATE_CONTROL_INFORMATION_NATIVE_V2 {
     fn eq(&self, other: &Self) -> bool {
@@ -877,6 +895,7 @@ impl ::core::fmt::Debug for JOBOBJECT_IO_RATE_CONTROL_INFORMATION_NATIVE_V3 {
 }
 unsafe impl ::windows::core::Abi for JOBOBJECT_IO_RATE_CONTROL_INFORMATION_NATIVE_V3 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for JOBOBJECT_IO_RATE_CONTROL_INFORMATION_NATIVE_V3 {
     fn eq(&self, other: &Self) -> bool {
@@ -907,6 +926,7 @@ impl ::core::fmt::Debug for JOBOBJECT_JOBSET_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for JOBOBJECT_JOBSET_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for JOBOBJECT_JOBSET_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -961,6 +981,7 @@ impl ::core::fmt::Debug for JOBOBJECT_LIMIT_VIOLATION_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for JOBOBJECT_LIMIT_VIOLATION_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for JOBOBJECT_LIMIT_VIOLATION_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -1002,6 +1023,7 @@ impl ::core::clone::Clone for JOBOBJECT_LIMIT_VIOLATION_INFORMATION_2 {
 }
 unsafe impl ::windows::core::Abi for JOBOBJECT_LIMIT_VIOLATION_INFORMATION_2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for JOBOBJECT_LIMIT_VIOLATION_INFORMATION_2 {
     fn eq(&self, other: &Self) -> bool {
@@ -1028,6 +1050,7 @@ impl ::core::clone::Clone for JOBOBJECT_LIMIT_VIOLATION_INFORMATION_2_0 {
 }
 unsafe impl ::windows::core::Abi for JOBOBJECT_LIMIT_VIOLATION_INFORMATION_2_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for JOBOBJECT_LIMIT_VIOLATION_INFORMATION_2_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -1054,6 +1077,7 @@ impl ::core::clone::Clone for JOBOBJECT_LIMIT_VIOLATION_INFORMATION_2_1 {
 }
 unsafe impl ::windows::core::Abi for JOBOBJECT_LIMIT_VIOLATION_INFORMATION_2_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for JOBOBJECT_LIMIT_VIOLATION_INFORMATION_2_1 {
     fn eq(&self, other: &Self) -> bool {
@@ -1080,6 +1104,7 @@ impl ::core::clone::Clone for JOBOBJECT_LIMIT_VIOLATION_INFORMATION_2_2 {
 }
 unsafe impl ::windows::core::Abi for JOBOBJECT_LIMIT_VIOLATION_INFORMATION_2_2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for JOBOBJECT_LIMIT_VIOLATION_INFORMATION_2_2 {
     fn eq(&self, other: &Self) -> bool {
@@ -1112,6 +1137,7 @@ impl ::core::fmt::Debug for JOBOBJECT_NET_RATE_CONTROL_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for JOBOBJECT_NET_RATE_CONTROL_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for JOBOBJECT_NET_RATE_CONTROL_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -1148,6 +1174,7 @@ impl ::core::fmt::Debug for JOBOBJECT_NOTIFICATION_LIMIT_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for JOBOBJECT_NOTIFICATION_LIMIT_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for JOBOBJECT_NOTIFICATION_LIMIT_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -1184,6 +1211,7 @@ impl ::core::clone::Clone for JOBOBJECT_NOTIFICATION_LIMIT_INFORMATION_2 {
 }
 unsafe impl ::windows::core::Abi for JOBOBJECT_NOTIFICATION_LIMIT_INFORMATION_2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for JOBOBJECT_NOTIFICATION_LIMIT_INFORMATION_2 {
     fn eq(&self, other: &Self) -> bool {
@@ -1210,6 +1238,7 @@ impl ::core::clone::Clone for JOBOBJECT_NOTIFICATION_LIMIT_INFORMATION_2_0 {
 }
 unsafe impl ::windows::core::Abi for JOBOBJECT_NOTIFICATION_LIMIT_INFORMATION_2_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for JOBOBJECT_NOTIFICATION_LIMIT_INFORMATION_2_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -1236,6 +1265,7 @@ impl ::core::clone::Clone for JOBOBJECT_NOTIFICATION_LIMIT_INFORMATION_2_1 {
 }
 unsafe impl ::windows::core::Abi for JOBOBJECT_NOTIFICATION_LIMIT_INFORMATION_2_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for JOBOBJECT_NOTIFICATION_LIMIT_INFORMATION_2_1 {
     fn eq(&self, other: &Self) -> bool {
@@ -1262,6 +1292,7 @@ impl ::core::clone::Clone for JOBOBJECT_NOTIFICATION_LIMIT_INFORMATION_2_2 {
 }
 unsafe impl ::windows::core::Abi for JOBOBJECT_NOTIFICATION_LIMIT_INFORMATION_2_2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for JOBOBJECT_NOTIFICATION_LIMIT_INFORMATION_2_2 {
     fn eq(&self, other: &Self) -> bool {
@@ -1297,6 +1328,7 @@ impl ::core::default::Default for JOBOBJECT_RATE_CONTROL_TOLERANCE {
 }
 unsafe impl ::windows::core::Abi for JOBOBJECT_RATE_CONTROL_TOLERANCE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for JOBOBJECT_RATE_CONTROL_TOLERANCE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1326,6 +1358,7 @@ impl ::core::default::Default for JOBOBJECT_RATE_CONTROL_TOLERANCE_INTERVAL {
 }
 unsafe impl ::windows::core::Abi for JOBOBJECT_RATE_CONTROL_TOLERANCE_INTERVAL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for JOBOBJECT_RATE_CONTROL_TOLERANCE_INTERVAL {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1359,6 +1392,7 @@ impl ::core::fmt::Debug for JOBOBJECT_SECURITY_LIMIT_INFORMATION {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security"))]
 unsafe impl ::windows::core::Abi for JOBOBJECT_SECURITY_LIMIT_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security"))]
 impl ::core::cmp::PartialEq for JOBOBJECT_SECURITY_LIMIT_INFORMATION {
@@ -1401,6 +1435,7 @@ impl ::core::default::Default for JOB_OBJECT_CPU_RATE_CONTROL {
 }
 unsafe impl ::windows::core::Abi for JOB_OBJECT_CPU_RATE_CONTROL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for JOB_OBJECT_CPU_RATE_CONTROL {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1434,6 +1469,7 @@ impl ::core::default::Default for JOB_OBJECT_IO_RATE_CONTROL_FLAGS {
 }
 unsafe impl ::windows::core::Abi for JOB_OBJECT_IO_RATE_CONTROL_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for JOB_OBJECT_IO_RATE_CONTROL_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1511,6 +1547,7 @@ impl ::core::default::Default for JOB_OBJECT_LIMIT {
 }
 unsafe impl ::windows::core::Abi for JOB_OBJECT_LIMIT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for JOB_OBJECT_LIMIT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1570,6 +1607,7 @@ impl ::core::default::Default for JOB_OBJECT_NET_RATE_CONTROL_FLAGS {
 }
 unsafe impl ::windows::core::Abi for JOB_OBJECT_NET_RATE_CONTROL_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for JOB_OBJECT_NET_RATE_CONTROL_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1603,6 +1641,7 @@ impl ::core::default::Default for JOB_OBJECT_SECURITY {
 }
 unsafe impl ::windows::core::Abi for JOB_OBJECT_SECURITY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for JOB_OBJECT_SECURITY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1658,6 +1697,7 @@ impl ::core::default::Default for JOB_OBJECT_TERMINATE_AT_END_ACTION {
 }
 unsafe impl ::windows::core::Abi for JOB_OBJECT_TERMINATE_AT_END_ACTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for JOB_OBJECT_TERMINATE_AT_END_ACTION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1699,6 +1739,7 @@ impl ::core::default::Default for JOB_OBJECT_UILIMIT {
 }
 unsafe impl ::windows::core::Abi for JOB_OBJECT_UILIMIT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for JOB_OBJECT_UILIMIT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1758,6 +1799,7 @@ impl ::core::fmt::Debug for JOB_SET_ARRAY {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for JOB_SET_ARRAY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for JOB_SET_ARRAY {

@@ -173,6 +173,7 @@ impl ::core::fmt::Debug for HRAWINPUT {
 }
 unsafe impl ::windows::core::Abi for HRAWINPUT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[doc = "*Required features: `\"Win32_UI_Input\"`*"]
 #[repr(transparent)]
@@ -203,6 +204,7 @@ impl ::core::default::Default for INPUT_MESSAGE_DEVICE_TYPE {
 }
 unsafe impl ::windows::core::Abi for INPUT_MESSAGE_DEVICE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for INPUT_MESSAGE_DEVICE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -234,6 +236,7 @@ impl ::core::default::Default for INPUT_MESSAGE_ORIGIN_ID {
 }
 unsafe impl ::windows::core::Abi for INPUT_MESSAGE_ORIGIN_ID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for INPUT_MESSAGE_ORIGIN_ID {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -259,6 +262,7 @@ impl ::core::fmt::Debug for INPUT_MESSAGE_SOURCE {
 }
 unsafe impl ::windows::core::Abi for INPUT_MESSAGE_SOURCE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for INPUT_MESSAGE_SOURCE {
     fn eq(&self, other: &Self) -> bool {
@@ -291,6 +295,7 @@ impl ::core::fmt::Debug for RAWHID {
 }
 unsafe impl ::windows::core::Abi for RAWHID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RAWHID {
     fn eq(&self, other: &Self) -> bool {
@@ -321,6 +326,7 @@ impl ::core::clone::Clone for RAWINPUT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for RAWINPUT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for RAWINPUT {
@@ -355,6 +361,7 @@ impl ::core::clone::Clone for RAWINPUT_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for RAWINPUT_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for RAWINPUT_0 {
@@ -396,6 +403,7 @@ impl ::core::fmt::Debug for RAWINPUTDEVICE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for RAWINPUTDEVICE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for RAWINPUTDEVICE {
@@ -435,6 +443,7 @@ impl ::core::fmt::Debug for RAWINPUTDEVICELIST {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for RAWINPUTDEVICELIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for RAWINPUTDEVICELIST {
@@ -487,6 +496,7 @@ impl ::core::default::Default for RAWINPUTDEVICE_FLAGS {
 }
 unsafe impl ::windows::core::Abi for RAWINPUTDEVICE_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RAWINPUTDEVICE_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -547,6 +557,7 @@ impl ::core::fmt::Debug for RAWINPUTHEADER {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for RAWINPUTHEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for RAWINPUTHEADER {
@@ -585,6 +596,7 @@ impl ::core::fmt::Debug for RAWKEYBOARD {
 }
 unsafe impl ::windows::core::Abi for RAWKEYBOARD {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RAWKEYBOARD {
     fn eq(&self, other: &Self) -> bool {
@@ -615,6 +627,7 @@ impl ::core::clone::Clone for RAWMOUSE {
 }
 unsafe impl ::windows::core::Abi for RAWMOUSE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RAWMOUSE {
     fn eq(&self, other: &Self) -> bool {
@@ -641,6 +654,7 @@ impl ::core::clone::Clone for RAWMOUSE_0 {
 }
 unsafe impl ::windows::core::Abi for RAWMOUSE_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RAWMOUSE_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -672,6 +686,7 @@ impl ::core::fmt::Debug for RAWMOUSE_0_0 {
 }
 unsafe impl ::windows::core::Abi for RAWMOUSE_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RAWMOUSE_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -705,6 +720,7 @@ impl ::core::default::Default for RAW_INPUT_DATA_COMMAND_FLAGS {
 }
 unsafe impl ::windows::core::Abi for RAW_INPUT_DATA_COMMAND_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RAW_INPUT_DATA_COMMAND_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -734,6 +750,7 @@ impl ::core::default::Default for RAW_INPUT_DEVICE_INFO_COMMAND {
 }
 unsafe impl ::windows::core::Abi for RAW_INPUT_DEVICE_INFO_COMMAND {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RAW_INPUT_DEVICE_INFO_COMMAND {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -759,6 +776,7 @@ impl ::core::clone::Clone for RID_DEVICE_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for RID_DEVICE_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for RID_DEVICE_INFO {
@@ -793,6 +811,7 @@ impl ::core::clone::Clone for RID_DEVICE_INFO_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for RID_DEVICE_INFO_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for RID_DEVICE_INFO_0 {
@@ -830,6 +849,7 @@ impl ::core::fmt::Debug for RID_DEVICE_INFO_HID {
 }
 unsafe impl ::windows::core::Abi for RID_DEVICE_INFO_HID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RID_DEVICE_INFO_HID {
     fn eq(&self, other: &Self) -> bool {
@@ -865,6 +885,7 @@ impl ::core::fmt::Debug for RID_DEVICE_INFO_KEYBOARD {
 }
 unsafe impl ::windows::core::Abi for RID_DEVICE_INFO_KEYBOARD {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RID_DEVICE_INFO_KEYBOARD {
     fn eq(&self, other: &Self) -> bool {
@@ -903,6 +924,7 @@ impl ::core::fmt::Debug for RID_DEVICE_INFO_MOUSE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for RID_DEVICE_INFO_MOUSE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for RID_DEVICE_INFO_MOUSE {
@@ -941,6 +963,7 @@ impl ::core::default::Default for RID_DEVICE_INFO_TYPE {
 }
 unsafe impl ::windows::core::Abi for RID_DEVICE_INFO_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RID_DEVICE_INFO_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

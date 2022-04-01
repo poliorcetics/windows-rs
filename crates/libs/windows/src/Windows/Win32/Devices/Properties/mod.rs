@@ -604,6 +604,7 @@ impl ::core::fmt::Debug for DEVPROPCOMPKEY {
 }
 unsafe impl ::windows::core::Abi for DEVPROPCOMPKEY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DEVPROPCOMPKEY {
     fn eq(&self, other: &Self) -> bool {
@@ -637,6 +638,7 @@ impl ::core::fmt::Debug for DEVPROPERTY {
 }
 unsafe impl ::windows::core::Abi for DEVPROPERTY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DEVPROPERTY {
     fn eq(&self, other: &Self) -> bool {
@@ -670,6 +672,7 @@ impl ::core::fmt::Debug for DEVPROPKEY {
 }
 unsafe impl ::windows::core::Abi for DEVPROPKEY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DEVPROPKEY {
     fn eq(&self, other: &Self) -> bool {
@@ -703,6 +706,7 @@ impl ::core::default::Default for DEVPROPSTORE {
 }
 unsafe impl ::windows::core::Abi for DEVPROPSTORE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DEVPROPSTORE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

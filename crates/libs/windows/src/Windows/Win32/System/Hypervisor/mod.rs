@@ -62,6 +62,7 @@ impl ::core::fmt::Debug for DOS_IMAGE_INFO {
 }
 unsafe impl ::windows::core::Abi for DOS_IMAGE_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOS_IMAGE_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -168,6 +169,7 @@ impl ::core::fmt::Debug for GPA_MEMORY_CHUNK {
 }
 unsafe impl ::windows::core::Abi for GPA_MEMORY_CHUNK {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for GPA_MEMORY_CHUNK {
     fn eq(&self, other: &Self) -> bool {
@@ -195,6 +197,7 @@ impl ::core::clone::Clone for GUEST_OS_INFO {
 }
 unsafe impl ::windows::core::Abi for GUEST_OS_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for GUEST_OS_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -225,6 +228,7 @@ impl ::core::fmt::Debug for GUEST_OS_INFO_0 {
 }
 unsafe impl ::windows::core::Abi for GUEST_OS_INFO_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for GUEST_OS_INFO_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -255,6 +259,7 @@ impl ::core::fmt::Debug for GUEST_OS_INFO_1 {
 }
 unsafe impl ::windows::core::Abi for GUEST_OS_INFO_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for GUEST_OS_INFO_1 {
     fn eq(&self, other: &Self) -> bool {
@@ -296,6 +301,7 @@ impl ::core::default::Default for GUEST_OS_MICROSOFT_IDS {
 }
 unsafe impl ::windows::core::Abi for GUEST_OS_MICROSOFT_IDS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GUEST_OS_MICROSOFT_IDS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -329,6 +335,7 @@ impl ::core::default::Default for GUEST_OS_OPENSOURCE_IDS {
 }
 unsafe impl ::windows::core::Abi for GUEST_OS_OPENSOURCE_IDS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GUEST_OS_OPENSOURCE_IDS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -360,6 +367,7 @@ impl ::core::default::Default for GUEST_OS_VENDOR {
 }
 unsafe impl ::windows::core::Abi for GUEST_OS_VENDOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GUEST_OS_VENDOR {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -630,6 +638,7 @@ impl ::core::default::Default for HDV_DEVICE_TYPE {
 }
 unsafe impl ::windows::core::Abi for HDV_DEVICE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HDV_DEVICE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -665,6 +674,7 @@ impl ::core::default::Default for HDV_DOORBELL_FLAGS {
 }
 unsafe impl ::windows::core::Abi for HDV_DOORBELL_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HDV_DOORBELL_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -694,6 +704,7 @@ impl ::core::default::Default for HDV_MMIO_MAPPING_FLAGS {
 }
 unsafe impl ::windows::core::Abi for HDV_MMIO_MAPPING_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HDV_MMIO_MAPPING_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -759,6 +770,7 @@ impl ::core::default::Default for HDV_PCI_BAR_SELECTOR {
 }
 unsafe impl ::windows::core::Abi for HDV_PCI_BAR_SELECTOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HDV_PCI_BAR_SELECTOR {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -809,6 +821,7 @@ impl ::core::fmt::Debug for HDV_PCI_DEVICE_INTERFACE {
 }
 unsafe impl ::windows::core::Abi for HDV_PCI_DEVICE_INTERFACE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HDV_PCI_DEVICE_INTERFACE {
     fn eq(&self, other: &Self) -> bool {
@@ -850,6 +863,7 @@ impl ::core::default::Default for HDV_PCI_INTERFACE_VERSION {
 }
 unsafe impl ::windows::core::Abi for HDV_PCI_INTERFACE_VERSION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HDV_PCI_INTERFACE_VERSION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -881,6 +895,7 @@ impl ::core::fmt::Debug for HDV_PCI_PNP_ID {
 }
 unsafe impl ::windows::core::Abi for HDV_PCI_PNP_ID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HDV_PCI_PNP_ID {
     fn eq(&self, other: &Self) -> bool {
@@ -924,6 +939,7 @@ impl ::core::fmt::Debug for HVSOCKET_ADDRESS_INFO {
 }
 unsafe impl ::windows::core::Abi for HVSOCKET_ADDRESS_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HVSOCKET_ADDRESS_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -1276,6 +1292,7 @@ impl ::core::fmt::Debug for MODULE_INFO {
 }
 unsafe impl ::windows::core::Abi for MODULE_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MODULE_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -1317,6 +1334,7 @@ impl ::core::default::Default for PAGING_MODE {
 }
 unsafe impl ::windows::core::Abi for PAGING_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PAGING_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1658,6 +1676,7 @@ impl ::core::default::Default for REGISTER_ID {
 }
 unsafe impl ::windows::core::Abi for REGISTER_ID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for REGISTER_ID {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1769,6 +1788,7 @@ impl ::core::fmt::Debug for SOCKADDR_HV {
 }
 unsafe impl ::windows::core::Abi for SOCKADDR_HV {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SOCKADDR_HV {
     fn eq(&self, other: &Self) -> bool {
@@ -1849,6 +1869,7 @@ impl ::core::default::Default for VIRTUAL_PROCESSOR_ARCH {
 }
 unsafe impl ::windows::core::Abi for VIRTUAL_PROCESSOR_ARCH {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VIRTUAL_PROCESSOR_ARCH {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1873,6 +1894,7 @@ impl ::core::clone::Clone for VIRTUAL_PROCESSOR_REGISTER {
 }
 unsafe impl ::windows::core::Abi for VIRTUAL_PROCESSOR_REGISTER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VIRTUAL_PROCESSOR_REGISTER {
     fn eq(&self, other: &Self) -> bool {
@@ -1904,6 +1926,7 @@ impl ::core::fmt::Debug for VIRTUAL_PROCESSOR_REGISTER_0 {
 }
 unsafe impl ::windows::core::Abi for VIRTUAL_PROCESSOR_REGISTER_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VIRTUAL_PROCESSOR_REGISTER_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -1932,6 +1955,7 @@ impl ::core::clone::Clone for VIRTUAL_PROCESSOR_REGISTER_1 {
 }
 unsafe impl ::windows::core::Abi for VIRTUAL_PROCESSOR_REGISTER_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VIRTUAL_PROCESSOR_REGISTER_1 {
     fn eq(&self, other: &Self) -> bool {
@@ -1962,6 +1986,7 @@ impl ::core::clone::Clone for VIRTUAL_PROCESSOR_REGISTER_1_0 {
 }
 unsafe impl ::windows::core::Abi for VIRTUAL_PROCESSOR_REGISTER_1_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VIRTUAL_PROCESSOR_REGISTER_1_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -1988,6 +2013,7 @@ impl ::core::clone::Clone for VIRTUAL_PROCESSOR_REGISTER_1_0_0 {
 }
 unsafe impl ::windows::core::Abi for VIRTUAL_PROCESSOR_REGISTER_1_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VIRTUAL_PROCESSOR_REGISTER_1_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -2019,6 +2045,7 @@ impl ::core::fmt::Debug for VIRTUAL_PROCESSOR_REGISTER_1_0_0_0 {
 }
 unsafe impl ::windows::core::Abi for VIRTUAL_PROCESSOR_REGISTER_1_0_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VIRTUAL_PROCESSOR_REGISTER_1_0_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -2047,6 +2074,7 @@ impl ::core::clone::Clone for VIRTUAL_PROCESSOR_REGISTER_1_1 {
 }
 unsafe impl ::windows::core::Abi for VIRTUAL_PROCESSOR_REGISTER_1_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VIRTUAL_PROCESSOR_REGISTER_1_1 {
     fn eq(&self, other: &Self) -> bool {
@@ -2073,6 +2101,7 @@ impl ::core::clone::Clone for VIRTUAL_PROCESSOR_REGISTER_1_1_0 {
 }
 unsafe impl ::windows::core::Abi for VIRTUAL_PROCESSOR_REGISTER_1_1_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VIRTUAL_PROCESSOR_REGISTER_1_1_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -2103,6 +2132,7 @@ impl ::core::fmt::Debug for VIRTUAL_PROCESSOR_REGISTER_1_1_0_0 {
 }
 unsafe impl ::windows::core::Abi for VIRTUAL_PROCESSOR_REGISTER_1_1_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VIRTUAL_PROCESSOR_REGISTER_1_1_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -2134,6 +2164,7 @@ impl ::core::fmt::Debug for VIRTUAL_PROCESSOR_REGISTER_1_2 {
 }
 unsafe impl ::windows::core::Abi for VIRTUAL_PROCESSOR_REGISTER_1_2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VIRTUAL_PROCESSOR_REGISTER_1_2 {
     fn eq(&self, other: &Self) -> bool {
@@ -2161,6 +2192,7 @@ impl ::core::clone::Clone for VIRTUAL_PROCESSOR_REGISTER_1_3 {
 }
 unsafe impl ::windows::core::Abi for VIRTUAL_PROCESSOR_REGISTER_1_3 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VIRTUAL_PROCESSOR_REGISTER_1_3 {
     fn eq(&self, other: &Self) -> bool {
@@ -2187,6 +2219,7 @@ impl ::core::clone::Clone for VIRTUAL_PROCESSOR_REGISTER_1_3_0 {
 }
 unsafe impl ::windows::core::Abi for VIRTUAL_PROCESSOR_REGISTER_1_3_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VIRTUAL_PROCESSOR_REGISTER_1_3_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -2218,6 +2251,7 @@ impl ::core::fmt::Debug for VIRTUAL_PROCESSOR_REGISTER_1_3_0_0 {
 }
 unsafe impl ::windows::core::Abi for VIRTUAL_PROCESSOR_REGISTER_1_3_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VIRTUAL_PROCESSOR_REGISTER_1_3_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -2257,6 +2291,7 @@ impl ::core::default::Default for VIRTUAL_PROCESSOR_VENDOR {
 }
 unsafe impl ::windows::core::Abi for VIRTUAL_PROCESSOR_VENDOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VIRTUAL_PROCESSOR_VENDOR {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2282,6 +2317,7 @@ impl ::core::fmt::Debug for VM_GENCOUNTER {
 }
 unsafe impl ::windows::core::Abi for VM_GENCOUNTER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VM_GENCOUNTER {
     fn eq(&self, other: &Self) -> bool {
@@ -2310,6 +2346,7 @@ impl ::core::clone::Clone for WHV_ACCESS_GPA_CONTROLS {
 }
 unsafe impl ::windows::core::Abi for WHV_ACCESS_GPA_CONTROLS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_ACCESS_GPA_CONTROLS {
     fn eq(&self, other: &Self) -> bool {
@@ -2341,6 +2378,7 @@ impl ::core::fmt::Debug for WHV_ACCESS_GPA_CONTROLS_0 {
 }
 unsafe impl ::windows::core::Abi for WHV_ACCESS_GPA_CONTROLS_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_ACCESS_GPA_CONTROLS_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -2366,6 +2404,7 @@ impl ::core::clone::Clone for WHV_ADVISE_GPA_RANGE {
 }
 unsafe impl ::windows::core::Abi for WHV_ADVISE_GPA_RANGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_ADVISE_GPA_RANGE {
     fn eq(&self, other: &Self) -> bool {
@@ -2401,6 +2440,7 @@ impl ::core::default::Default for WHV_ADVISE_GPA_RANGE_CODE {
 }
 unsafe impl ::windows::core::Abi for WHV_ADVISE_GPA_RANGE_CODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WHV_ADVISE_GPA_RANGE_CODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2421,6 +2461,7 @@ impl ::core::clone::Clone for WHV_ADVISE_GPA_RANGE_POPULATE {
 }
 unsafe impl ::windows::core::Abi for WHV_ADVISE_GPA_RANGE_POPULATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_ADVISE_GPA_RANGE_POPULATE {
     fn eq(&self, other: &Self) -> bool {
@@ -2447,6 +2488,7 @@ impl ::core::clone::Clone for WHV_ADVISE_GPA_RANGE_POPULATE_FLAGS {
 }
 unsafe impl ::windows::core::Abi for WHV_ADVISE_GPA_RANGE_POPULATE_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_ADVISE_GPA_RANGE_POPULATE_FLAGS {
     fn eq(&self, other: &Self) -> bool {
@@ -2477,6 +2519,7 @@ impl ::core::fmt::Debug for WHV_ADVISE_GPA_RANGE_POPULATE_FLAGS_0 {
 }
 unsafe impl ::windows::core::Abi for WHV_ADVISE_GPA_RANGE_POPULATE_FLAGS_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_ADVISE_GPA_RANGE_POPULATE_FLAGS_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -2510,6 +2553,7 @@ impl ::core::default::Default for WHV_ALLOCATE_VPCI_RESOURCE_FLAGS {
 }
 unsafe impl ::windows::core::Abi for WHV_ALLOCATE_VPCI_RESOURCE_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WHV_ALLOCATE_VPCI_RESOURCE_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2573,6 +2617,7 @@ impl ::core::default::Default for WHV_CACHE_TYPE {
 }
 unsafe impl ::windows::core::Abi for WHV_CACHE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WHV_CACHE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2612,6 +2657,7 @@ impl ::core::clone::Clone for WHV_CAPABILITY {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WHV_CAPABILITY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WHV_CAPABILITY {
@@ -2678,6 +2724,7 @@ impl ::core::default::Default for WHV_CAPABILITY_CODE {
 }
 unsafe impl ::windows::core::Abi for WHV_CAPABILITY_CODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WHV_CAPABILITY_CODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2698,6 +2745,7 @@ impl ::core::clone::Clone for WHV_CAPABILITY_FEATURES {
 }
 unsafe impl ::windows::core::Abi for WHV_CAPABILITY_FEATURES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_CAPABILITY_FEATURES {
     fn eq(&self, other: &Self) -> bool {
@@ -2728,6 +2776,7 @@ impl ::core::fmt::Debug for WHV_CAPABILITY_FEATURES_0 {
 }
 unsafe impl ::windows::core::Abi for WHV_CAPABILITY_FEATURES_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_CAPABILITY_FEATURES_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -2762,6 +2811,7 @@ impl ::core::fmt::Debug for WHV_CAPABILITY_PROCESSOR_FREQUENCY_CAP {
 }
 unsafe impl ::windows::core::Abi for WHV_CAPABILITY_PROCESSOR_FREQUENCY_CAP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_CAPABILITY_PROCESSOR_FREQUENCY_CAP {
     fn eq(&self, other: &Self) -> bool {
@@ -2795,6 +2845,7 @@ impl ::core::fmt::Debug for WHV_CPUID_OUTPUT {
 }
 unsafe impl ::windows::core::Abi for WHV_CPUID_OUTPUT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_CPUID_OUTPUT {
     fn eq(&self, other: &Self) -> bool {
@@ -2830,6 +2881,7 @@ impl ::core::default::Default for WHV_CREATE_VPCI_DEVICE_FLAGS {
 }
 unsafe impl ::windows::core::Abi for WHV_CREATE_VPCI_DEVICE_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WHV_CREATE_VPCI_DEVICE_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2885,6 +2937,7 @@ impl ::core::fmt::Debug for WHV_DOORBELL_MATCH_DATA {
 }
 unsafe impl ::windows::core::Abi for WHV_DOORBELL_MATCH_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_DOORBELL_MATCH_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -2929,6 +2982,7 @@ impl ::core::fmt::Debug for WHV_EMULATOR_CALLBACKS {
 }
 unsafe impl ::windows::core::Abi for WHV_EMULATOR_CALLBACKS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_EMULATOR_CALLBACKS {
     fn eq(&self, other: &Self) -> bool {
@@ -2964,6 +3018,7 @@ impl ::core::fmt::Debug for WHV_EMULATOR_IO_ACCESS_INFO {
 }
 unsafe impl ::windows::core::Abi for WHV_EMULATOR_IO_ACCESS_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_EMULATOR_IO_ACCESS_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -2999,6 +3054,7 @@ impl ::core::fmt::Debug for WHV_EMULATOR_MEMORY_ACCESS_INFO {
 }
 unsafe impl ::windows::core::Abi for WHV_EMULATOR_MEMORY_ACCESS_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_EMULATOR_MEMORY_ACCESS_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -3029,6 +3085,7 @@ impl ::core::clone::Clone for WHV_EMULATOR_STATUS {
 }
 unsafe impl ::windows::core::Abi for WHV_EMULATOR_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_EMULATOR_STATUS {
     fn eq(&self, other: &Self) -> bool {
@@ -3059,6 +3116,7 @@ impl ::core::fmt::Debug for WHV_EMULATOR_STATUS_0 {
 }
 unsafe impl ::windows::core::Abi for WHV_EMULATOR_STATUS_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_EMULATOR_STATUS_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -3124,6 +3182,7 @@ impl ::core::default::Default for WHV_EXCEPTION_TYPE {
 }
 unsafe impl ::windows::core::Abi for WHV_EXCEPTION_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WHV_EXCEPTION_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3144,6 +3203,7 @@ impl ::core::clone::Clone for WHV_EXTENDED_VM_EXITS {
 }
 unsafe impl ::windows::core::Abi for WHV_EXTENDED_VM_EXITS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_EXTENDED_VM_EXITS {
     fn eq(&self, other: &Self) -> bool {
@@ -3174,6 +3234,7 @@ impl ::core::fmt::Debug for WHV_EXTENDED_VM_EXITS_0 {
 }
 unsafe impl ::windows::core::Abi for WHV_EXTENDED_VM_EXITS_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_EXTENDED_VM_EXITS_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -3208,6 +3269,7 @@ impl ::core::clone::Clone for WHV_HYPERCALL_CONTEXT {
 }
 unsafe impl ::windows::core::Abi for WHV_HYPERCALL_CONTEXT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_HYPERCALL_CONTEXT {
     fn eq(&self, other: &Self) -> bool {
@@ -3236,6 +3298,7 @@ impl ::core::clone::Clone for WHV_INTERNAL_ACTIVITY_REGISTER {
 }
 unsafe impl ::windows::core::Abi for WHV_INTERNAL_ACTIVITY_REGISTER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_INTERNAL_ACTIVITY_REGISTER {
     fn eq(&self, other: &Self) -> bool {
@@ -3266,6 +3329,7 @@ impl ::core::fmt::Debug for WHV_INTERNAL_ACTIVITY_REGISTER_0 {
 }
 unsafe impl ::windows::core::Abi for WHV_INTERNAL_ACTIVITY_REGISTER_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_INTERNAL_ACTIVITY_REGISTER_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -3298,6 +3362,7 @@ impl ::core::fmt::Debug for WHV_INTERRUPT_CONTROL {
 }
 unsafe impl ::windows::core::Abi for WHV_INTERRUPT_CONTROL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_INTERRUPT_CONTROL {
     fn eq(&self, other: &Self) -> bool {
@@ -3331,6 +3396,7 @@ impl ::core::default::Default for WHV_INTERRUPT_DESTINATION_MODE {
 }
 unsafe impl ::windows::core::Abi for WHV_INTERRUPT_DESTINATION_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WHV_INTERRUPT_DESTINATION_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3358,6 +3424,7 @@ impl ::core::default::Default for WHV_INTERRUPT_TRIGGER_MODE {
 }
 unsafe impl ::windows::core::Abi for WHV_INTERRUPT_TRIGGER_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WHV_INTERRUPT_TRIGGER_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3393,6 +3460,7 @@ impl ::core::default::Default for WHV_INTERRUPT_TYPE {
 }
 unsafe impl ::windows::core::Abi for WHV_INTERRUPT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WHV_INTERRUPT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3426,6 +3494,7 @@ impl ::core::default::Default for WHV_MAP_GPA_RANGE_FLAGS {
 }
 unsafe impl ::windows::core::Abi for WHV_MAP_GPA_RANGE_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WHV_MAP_GPA_RANGE_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3480,6 +3549,7 @@ impl ::core::clone::Clone for WHV_MEMORY_ACCESS_CONTEXT {
 }
 unsafe impl ::windows::core::Abi for WHV_MEMORY_ACCESS_CONTEXT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_MEMORY_ACCESS_CONTEXT {
     fn eq(&self, other: &Self) -> bool {
@@ -3506,6 +3576,7 @@ impl ::core::clone::Clone for WHV_MEMORY_ACCESS_INFO {
 }
 unsafe impl ::windows::core::Abi for WHV_MEMORY_ACCESS_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_MEMORY_ACCESS_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -3536,6 +3607,7 @@ impl ::core::fmt::Debug for WHV_MEMORY_ACCESS_INFO_0 {
 }
 unsafe impl ::windows::core::Abi for WHV_MEMORY_ACCESS_INFO_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_MEMORY_ACCESS_INFO_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -3571,6 +3643,7 @@ impl ::core::default::Default for WHV_MEMORY_ACCESS_TYPE {
 }
 unsafe impl ::windows::core::Abi for WHV_MEMORY_ACCESS_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WHV_MEMORY_ACCESS_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3596,6 +3669,7 @@ impl ::core::fmt::Debug for WHV_MEMORY_RANGE_ENTRY {
 }
 unsafe impl ::windows::core::Abi for WHV_MEMORY_RANGE_ENTRY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_MEMORY_RANGE_ENTRY {
     fn eq(&self, other: &Self) -> bool {
@@ -3631,6 +3705,7 @@ impl ::core::default::Default for WHV_MSR_ACTION {
 }
 unsafe impl ::windows::core::Abi for WHV_MSR_ACTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WHV_MSR_ACTION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3658,6 +3733,7 @@ impl ::core::fmt::Debug for WHV_MSR_ACTION_ENTRY {
 }
 unsafe impl ::windows::core::Abi for WHV_MSR_ACTION_ENTRY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_MSR_ACTION_ENTRY {
     fn eq(&self, other: &Self) -> bool {
@@ -3685,6 +3761,7 @@ impl ::core::clone::Clone for WHV_NOTIFICATION_PORT_PARAMETERS {
 }
 unsafe impl ::windows::core::Abi for WHV_NOTIFICATION_PORT_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_NOTIFICATION_PORT_PARAMETERS {
     fn eq(&self, other: &Self) -> bool {
@@ -3711,6 +3788,7 @@ impl ::core::clone::Clone for WHV_NOTIFICATION_PORT_PARAMETERS_0 {
 }
 unsafe impl ::windows::core::Abi for WHV_NOTIFICATION_PORT_PARAMETERS_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_NOTIFICATION_PORT_PARAMETERS_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -3741,6 +3819,7 @@ impl ::core::fmt::Debug for WHV_NOTIFICATION_PORT_PARAMETERS_0_0 {
 }
 unsafe impl ::windows::core::Abi for WHV_NOTIFICATION_PORT_PARAMETERS_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_NOTIFICATION_PORT_PARAMETERS_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -3774,6 +3853,7 @@ impl ::core::default::Default for WHV_NOTIFICATION_PORT_PROPERTY_CODE {
 }
 unsafe impl ::windows::core::Abi for WHV_NOTIFICATION_PORT_PROPERTY_CODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WHV_NOTIFICATION_PORT_PROPERTY_CODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3801,6 +3881,7 @@ impl ::core::default::Default for WHV_NOTIFICATION_PORT_TYPE {
 }
 unsafe impl ::windows::core::Abi for WHV_NOTIFICATION_PORT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WHV_NOTIFICATION_PORT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3826,6 +3907,7 @@ impl ::core::default::Default for WHV_PARTITION_COUNTER_SET {
 }
 unsafe impl ::windows::core::Abi for WHV_PARTITION_COUNTER_SET {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WHV_PARTITION_COUNTER_SET {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3858,6 +3940,7 @@ impl ::core::fmt::Debug for WHV_PARTITION_HANDLE {
 }
 unsafe impl ::windows::core::Abi for WHV_PARTITION_HANDLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[repr(C)]
 #[doc = "*Required features: `\"Win32_System_Hypervisor\"`*"]
@@ -3879,6 +3962,7 @@ impl ::core::fmt::Debug for WHV_PARTITION_MEMORY_COUNTERS {
 }
 unsafe impl ::windows::core::Abi for WHV_PARTITION_MEMORY_COUNTERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_PARTITION_MEMORY_COUNTERS {
     fn eq(&self, other: &Self) -> bool {
@@ -3937,6 +4021,7 @@ impl ::core::clone::Clone for WHV_PARTITION_PROPERTY {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WHV_PARTITION_PROPERTY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WHV_PARTITION_PROPERTY {
@@ -4029,6 +4114,7 @@ impl ::core::default::Default for WHV_PARTITION_PROPERTY_CODE {
 }
 unsafe impl ::windows::core::Abi for WHV_PARTITION_PROPERTY_CODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WHV_PARTITION_PROPERTY_CODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4057,6 +4143,7 @@ impl ::core::fmt::Debug for WHV_PROCESSOR_APIC_COUNTERS {
 }
 unsafe impl ::windows::core::Abi for WHV_PROCESSOR_APIC_COUNTERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_PROCESSOR_APIC_COUNTERS {
     fn eq(&self, other: &Self) -> bool {
@@ -4096,6 +4183,7 @@ impl ::core::default::Default for WHV_PROCESSOR_COUNTER_SET {
 }
 unsafe impl ::windows::core::Abi for WHV_PROCESSOR_COUNTER_SET {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WHV_PROCESSOR_COUNTER_SET {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4122,6 +4210,7 @@ impl ::core::fmt::Debug for WHV_PROCESSOR_EVENT_COUNTERS {
 }
 unsafe impl ::windows::core::Abi for WHV_PROCESSOR_EVENT_COUNTERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_PROCESSOR_EVENT_COUNTERS {
     fn eq(&self, other: &Self) -> bool {
@@ -4148,6 +4237,7 @@ impl ::core::clone::Clone for WHV_PROCESSOR_FEATURES {
 }
 unsafe impl ::windows::core::Abi for WHV_PROCESSOR_FEATURES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_PROCESSOR_FEATURES {
     fn eq(&self, other: &Self) -> bool {
@@ -4178,6 +4268,7 @@ impl ::core::fmt::Debug for WHV_PROCESSOR_FEATURES_0 {
 }
 unsafe impl ::windows::core::Abi for WHV_PROCESSOR_FEATURES_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_PROCESSOR_FEATURES_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -4204,6 +4295,7 @@ impl ::core::clone::Clone for WHV_PROCESSOR_FEATURES1 {
 }
 unsafe impl ::windows::core::Abi for WHV_PROCESSOR_FEATURES1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_PROCESSOR_FEATURES1 {
     fn eq(&self, other: &Self) -> bool {
@@ -4234,6 +4326,7 @@ impl ::core::fmt::Debug for WHV_PROCESSOR_FEATURES1_0 {
 }
 unsafe impl ::windows::core::Abi for WHV_PROCESSOR_FEATURES1_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_PROCESSOR_FEATURES1_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -4261,6 +4354,7 @@ impl ::core::clone::Clone for WHV_PROCESSOR_FEATURES_BANKS {
 }
 unsafe impl ::windows::core::Abi for WHV_PROCESSOR_FEATURES_BANKS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_PROCESSOR_FEATURES_BANKS {
     fn eq(&self, other: &Self) -> bool {
@@ -4287,6 +4381,7 @@ impl ::core::clone::Clone for WHV_PROCESSOR_FEATURES_BANKS_0 {
 }
 unsafe impl ::windows::core::Abi for WHV_PROCESSOR_FEATURES_BANKS_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_PROCESSOR_FEATURES_BANKS_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -4313,6 +4408,7 @@ impl ::core::clone::Clone for WHV_PROCESSOR_FEATURES_BANKS_0_0 {
 }
 unsafe impl ::windows::core::Abi for WHV_PROCESSOR_FEATURES_BANKS_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_PROCESSOR_FEATURES_BANKS_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -4346,6 +4442,7 @@ impl ::core::fmt::Debug for WHV_PROCESSOR_INTERCEPT_COUNTER {
 }
 unsafe impl ::windows::core::Abi for WHV_PROCESSOR_INTERCEPT_COUNTER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_PROCESSOR_INTERCEPT_COUNTER {
     fn eq(&self, other: &Self) -> bool {
@@ -4404,6 +4501,7 @@ impl ::core::fmt::Debug for WHV_PROCESSOR_INTERCEPT_COUNTERS {
 }
 unsafe impl ::windows::core::Abi for WHV_PROCESSOR_INTERCEPT_COUNTERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_PROCESSOR_INTERCEPT_COUNTERS {
     fn eq(&self, other: &Self) -> bool {
@@ -4430,6 +4528,7 @@ impl ::core::clone::Clone for WHV_PROCESSOR_PERFMON_FEATURES {
 }
 unsafe impl ::windows::core::Abi for WHV_PROCESSOR_PERFMON_FEATURES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_PROCESSOR_PERFMON_FEATURES {
     fn eq(&self, other: &Self) -> bool {
@@ -4460,6 +4559,7 @@ impl ::core::fmt::Debug for WHV_PROCESSOR_PERFMON_FEATURES_0 {
 }
 unsafe impl ::windows::core::Abi for WHV_PROCESSOR_PERFMON_FEATURES_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_PROCESSOR_PERFMON_FEATURES_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -4491,6 +4591,7 @@ impl ::core::fmt::Debug for WHV_PROCESSOR_RUNTIME_COUNTERS {
 }
 unsafe impl ::windows::core::Abi for WHV_PROCESSOR_RUNTIME_COUNTERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_PROCESSOR_RUNTIME_COUNTERS {
     fn eq(&self, other: &Self) -> bool {
@@ -4533,6 +4634,7 @@ impl ::core::fmt::Debug for WHV_PROCESSOR_SYNTHETIC_FEATURES_COUNTERS {
 }
 unsafe impl ::windows::core::Abi for WHV_PROCESSOR_SYNTHETIC_FEATURES_COUNTERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_PROCESSOR_SYNTHETIC_FEATURES_COUNTERS {
     fn eq(&self, other: &Self) -> bool {
@@ -4568,6 +4670,7 @@ impl ::core::default::Default for WHV_PROCESSOR_VENDOR {
 }
 unsafe impl ::windows::core::Abi for WHV_PROCESSOR_VENDOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WHV_PROCESSOR_VENDOR {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4588,6 +4691,7 @@ impl ::core::clone::Clone for WHV_PROCESSOR_XSAVE_FEATURES {
 }
 unsafe impl ::windows::core::Abi for WHV_PROCESSOR_XSAVE_FEATURES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_PROCESSOR_XSAVE_FEATURES {
     fn eq(&self, other: &Self) -> bool {
@@ -4618,6 +4722,7 @@ impl ::core::fmt::Debug for WHV_PROCESSOR_XSAVE_FEATURES_0 {
 }
 unsafe impl ::windows::core::Abi for WHV_PROCESSOR_XSAVE_FEATURES_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_PROCESSOR_XSAVE_FEATURES_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -5101,6 +5206,7 @@ impl ::core::default::Default for WHV_REGISTER_NAME {
 }
 unsafe impl ::windows::core::Abi for WHV_REGISTER_NAME {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WHV_REGISTER_NAME {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5136,6 +5242,7 @@ impl ::core::clone::Clone for WHV_REGISTER_VALUE {
 }
 unsafe impl ::windows::core::Abi for WHV_REGISTER_VALUE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_REGISTER_VALUE {
     fn eq(&self, other: &Self) -> bool {
@@ -5166,6 +5273,7 @@ impl ::core::fmt::Debug for WHV_RUN_VP_CANCELED_CONTEXT {
 }
 unsafe impl ::windows::core::Abi for WHV_RUN_VP_CANCELED_CONTEXT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_RUN_VP_CANCELED_CONTEXT {
     fn eq(&self, other: &Self) -> bool {
@@ -5197,6 +5305,7 @@ impl ::core::default::Default for WHV_RUN_VP_CANCEL_REASON {
 }
 unsafe impl ::windows::core::Abi for WHV_RUN_VP_CANCEL_REASON {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WHV_RUN_VP_CANCEL_REASON {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5219,6 +5328,7 @@ impl ::core::clone::Clone for WHV_RUN_VP_EXIT_CONTEXT {
 }
 unsafe impl ::windows::core::Abi for WHV_RUN_VP_EXIT_CONTEXT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_RUN_VP_EXIT_CONTEXT {
     fn eq(&self, other: &Self) -> bool {
@@ -5258,6 +5368,7 @@ impl ::core::clone::Clone for WHV_RUN_VP_EXIT_CONTEXT_0 {
 }
 unsafe impl ::windows::core::Abi for WHV_RUN_VP_EXIT_CONTEXT_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_RUN_VP_EXIT_CONTEXT_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -5325,6 +5436,7 @@ impl ::core::default::Default for WHV_RUN_VP_EXIT_REASON {
 }
 unsafe impl ::windows::core::Abi for WHV_RUN_VP_EXIT_REASON {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WHV_RUN_VP_EXIT_REASON {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5345,6 +5457,7 @@ impl ::core::clone::Clone for WHV_SCHEDULER_FEATURES {
 }
 unsafe impl ::windows::core::Abi for WHV_SCHEDULER_FEATURES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_SCHEDULER_FEATURES {
     fn eq(&self, other: &Self) -> bool {
@@ -5375,6 +5488,7 @@ impl ::core::fmt::Debug for WHV_SCHEDULER_FEATURES_0 {
 }
 unsafe impl ::windows::core::Abi for WHV_SCHEDULER_FEATURES_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_SCHEDULER_FEATURES_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -5413,6 +5527,7 @@ impl ::core::fmt::Debug for WHV_SRIOV_RESOURCE_DESCRIPTOR {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WHV_SRIOV_RESOURCE_DESCRIPTOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WHV_SRIOV_RESOURCE_DESCRIPTOR {
@@ -5449,6 +5564,7 @@ impl ::core::fmt::Debug for WHV_SYNIC_EVENT_PARAMETERS {
 }
 unsafe impl ::windows::core::Abi for WHV_SYNIC_EVENT_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_SYNIC_EVENT_PARAMETERS {
     fn eq(&self, other: &Self) -> bool {
@@ -5483,6 +5599,7 @@ impl ::core::fmt::Debug for WHV_SYNIC_SINT_DELIVERABLE_CONTEXT {
 }
 unsafe impl ::windows::core::Abi for WHV_SYNIC_SINT_DELIVERABLE_CONTEXT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_SYNIC_SINT_DELIVERABLE_CONTEXT {
     fn eq(&self, other: &Self) -> bool {
@@ -5509,6 +5626,7 @@ impl ::core::clone::Clone for WHV_SYNTHETIC_PROCESSOR_FEATURES {
 }
 unsafe impl ::windows::core::Abi for WHV_SYNTHETIC_PROCESSOR_FEATURES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_SYNTHETIC_PROCESSOR_FEATURES {
     fn eq(&self, other: &Self) -> bool {
@@ -5539,6 +5657,7 @@ impl ::core::fmt::Debug for WHV_SYNTHETIC_PROCESSOR_FEATURES_0 {
 }
 unsafe impl ::windows::core::Abi for WHV_SYNTHETIC_PROCESSOR_FEATURES_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_SYNTHETIC_PROCESSOR_FEATURES_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -5566,6 +5685,7 @@ impl ::core::clone::Clone for WHV_SYNTHETIC_PROCESSOR_FEATURES_BANKS {
 }
 unsafe impl ::windows::core::Abi for WHV_SYNTHETIC_PROCESSOR_FEATURES_BANKS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_SYNTHETIC_PROCESSOR_FEATURES_BANKS {
     fn eq(&self, other: &Self) -> bool {
@@ -5592,6 +5712,7 @@ impl ::core::clone::Clone for WHV_SYNTHETIC_PROCESSOR_FEATURES_BANKS_0 {
 }
 unsafe impl ::windows::core::Abi for WHV_SYNTHETIC_PROCESSOR_FEATURES_BANKS_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_SYNTHETIC_PROCESSOR_FEATURES_BANKS_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -5617,6 +5738,7 @@ impl ::core::clone::Clone for WHV_SYNTHETIC_PROCESSOR_FEATURES_BANKS_0_0 {
 }
 unsafe impl ::windows::core::Abi for WHV_SYNTHETIC_PROCESSOR_FEATURES_BANKS_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_SYNTHETIC_PROCESSOR_FEATURES_BANKS_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -5664,6 +5786,7 @@ impl ::core::default::Default for WHV_TRANSLATE_GVA_FLAGS {
 }
 unsafe impl ::windows::core::Abi for WHV_TRANSLATE_GVA_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WHV_TRANSLATE_GVA_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5717,6 +5840,7 @@ impl ::core::fmt::Debug for WHV_TRANSLATE_GVA_RESULT {
 }
 unsafe impl ::windows::core::Abi for WHV_TRANSLATE_GVA_RESULT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_TRANSLATE_GVA_RESULT {
     fn eq(&self, other: &Self) -> bool {
@@ -5764,6 +5888,7 @@ impl ::core::default::Default for WHV_TRANSLATE_GVA_RESULT_CODE {
 }
 unsafe impl ::windows::core::Abi for WHV_TRANSLATE_GVA_RESULT_CODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WHV_TRANSLATE_GVA_RESULT_CODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5785,6 +5910,7 @@ impl ::core::clone::Clone for WHV_TRIGGER_PARAMETERS {
 }
 unsafe impl ::windows::core::Abi for WHV_TRIGGER_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_TRIGGER_PARAMETERS {
     fn eq(&self, other: &Self) -> bool {
@@ -5812,6 +5938,7 @@ impl ::core::clone::Clone for WHV_TRIGGER_PARAMETERS_0 {
 }
 unsafe impl ::windows::core::Abi for WHV_TRIGGER_PARAMETERS_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_TRIGGER_PARAMETERS_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -5845,6 +5972,7 @@ impl ::core::fmt::Debug for WHV_TRIGGER_PARAMETERS_0_0 {
 }
 unsafe impl ::windows::core::Abi for WHV_TRIGGER_PARAMETERS_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_TRIGGER_PARAMETERS_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -5880,6 +6008,7 @@ impl ::core::default::Default for WHV_TRIGGER_TYPE {
 }
 unsafe impl ::windows::core::Abi for WHV_TRIGGER_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WHV_TRIGGER_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5900,6 +6029,7 @@ impl ::core::clone::Clone for WHV_UINT128 {
 }
 unsafe impl ::windows::core::Abi for WHV_UINT128 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_UINT128 {
     fn eq(&self, other: &Self) -> bool {
@@ -5931,6 +6061,7 @@ impl ::core::fmt::Debug for WHV_UINT128_0 {
 }
 unsafe impl ::windows::core::Abi for WHV_UINT128_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_UINT128_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -5958,6 +6089,7 @@ impl ::core::clone::Clone for WHV_VIRTUAL_PROCESSOR_PROPERTY {
 }
 unsafe impl ::windows::core::Abi for WHV_VIRTUAL_PROCESSOR_PROPERTY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_VIRTUAL_PROCESSOR_PROPERTY {
     fn eq(&self, other: &Self) -> bool {
@@ -5984,6 +6116,7 @@ impl ::core::clone::Clone for WHV_VIRTUAL_PROCESSOR_PROPERTY_0 {
 }
 unsafe impl ::windows::core::Abi for WHV_VIRTUAL_PROCESSOR_PROPERTY_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_VIRTUAL_PROCESSOR_PROPERTY_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -6015,6 +6148,7 @@ impl ::core::default::Default for WHV_VIRTUAL_PROCESSOR_PROPERTY_CODE {
 }
 unsafe impl ::windows::core::Abi for WHV_VIRTUAL_PROCESSOR_PROPERTY_CODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WHV_VIRTUAL_PROCESSOR_PROPERTY_CODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6048,6 +6182,7 @@ impl ::core::default::Default for WHV_VIRTUAL_PROCESSOR_STATE_TYPE {
 }
 unsafe impl ::windows::core::Abi for WHV_VIRTUAL_PROCESSOR_STATE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WHV_VIRTUAL_PROCESSOR_STATE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6069,6 +6204,7 @@ impl ::core::clone::Clone for WHV_VPCI_DEVICE_NOTIFICATION {
 }
 unsafe impl ::windows::core::Abi for WHV_VPCI_DEVICE_NOTIFICATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_VPCI_DEVICE_NOTIFICATION {
     fn eq(&self, other: &Self) -> bool {
@@ -6094,6 +6230,7 @@ impl ::core::clone::Clone for WHV_VPCI_DEVICE_NOTIFICATION_0 {
 }
 unsafe impl ::windows::core::Abi for WHV_VPCI_DEVICE_NOTIFICATION_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_VPCI_DEVICE_NOTIFICATION_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -6129,6 +6266,7 @@ impl ::core::default::Default for WHV_VPCI_DEVICE_NOTIFICATION_TYPE {
 }
 unsafe impl ::windows::core::Abi for WHV_VPCI_DEVICE_NOTIFICATION_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WHV_VPCI_DEVICE_NOTIFICATION_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6158,6 +6296,7 @@ impl ::core::default::Default for WHV_VPCI_DEVICE_PROPERTY_CODE {
 }
 unsafe impl ::windows::core::Abi for WHV_VPCI_DEVICE_PROPERTY_CODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WHV_VPCI_DEVICE_PROPERTY_CODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6184,6 +6323,7 @@ impl ::core::fmt::Debug for WHV_VPCI_DEVICE_REGISTER {
 }
 unsafe impl ::windows::core::Abi for WHV_VPCI_DEVICE_REGISTER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_VPCI_DEVICE_REGISTER {
     fn eq(&self, other: &Self) -> bool {
@@ -6227,6 +6367,7 @@ impl ::core::default::Default for WHV_VPCI_DEVICE_REGISTER_SPACE {
 }
 unsafe impl ::windows::core::Abi for WHV_VPCI_DEVICE_REGISTER_SPACE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WHV_VPCI_DEVICE_REGISTER_SPACE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6258,6 +6399,7 @@ impl ::core::fmt::Debug for WHV_VPCI_HARDWARE_IDS {
 }
 unsafe impl ::windows::core::Abi for WHV_VPCI_HARDWARE_IDS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_VPCI_HARDWARE_IDS {
     fn eq(&self, other: &Self) -> bool {
@@ -6291,6 +6433,7 @@ impl ::core::fmt::Debug for WHV_VPCI_INTERRUPT_TARGET {
 }
 unsafe impl ::windows::core::Abi for WHV_VPCI_INTERRUPT_TARGET {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_VPCI_INTERRUPT_TARGET {
     fn eq(&self, other: &Self) -> bool {
@@ -6324,6 +6467,7 @@ impl ::core::default::Default for WHV_VPCI_INTERRUPT_TARGET_FLAGS {
 }
 unsafe impl ::windows::core::Abi for WHV_VPCI_INTERRUPT_TARGET_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WHV_VPCI_INTERRUPT_TARGET_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6380,6 +6524,7 @@ impl ::core::fmt::Debug for WHV_VPCI_MMIO_MAPPING {
 }
 unsafe impl ::windows::core::Abi for WHV_VPCI_MMIO_MAPPING {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_VPCI_MMIO_MAPPING {
     fn eq(&self, other: &Self) -> bool {
@@ -6413,6 +6558,7 @@ impl ::core::default::Default for WHV_VPCI_MMIO_RANGE_FLAGS {
 }
 unsafe impl ::windows::core::Abi for WHV_VPCI_MMIO_RANGE_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WHV_VPCI_MMIO_RANGE_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6465,6 +6611,7 @@ impl ::core::fmt::Debug for WHV_VPCI_PROBED_BARS {
 }
 unsafe impl ::windows::core::Abi for WHV_VPCI_PROBED_BARS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_VPCI_PROBED_BARS {
     fn eq(&self, other: &Self) -> bool {
@@ -6499,6 +6646,7 @@ impl ::core::clone::Clone for WHV_VP_EXCEPTION_CONTEXT {
 }
 unsafe impl ::windows::core::Abi for WHV_VP_EXCEPTION_CONTEXT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_VP_EXCEPTION_CONTEXT {
     fn eq(&self, other: &Self) -> bool {
@@ -6525,6 +6673,7 @@ impl ::core::clone::Clone for WHV_VP_EXCEPTION_INFO {
 }
 unsafe impl ::windows::core::Abi for WHV_VP_EXCEPTION_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_VP_EXCEPTION_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -6555,6 +6704,7 @@ impl ::core::fmt::Debug for WHV_VP_EXCEPTION_INFO_0 {
 }
 unsafe impl ::windows::core::Abi for WHV_VP_EXCEPTION_INFO_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_VP_EXCEPTION_INFO_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -6586,6 +6736,7 @@ impl ::core::clone::Clone for WHV_VP_EXIT_CONTEXT {
 }
 unsafe impl ::windows::core::Abi for WHV_VP_EXIT_CONTEXT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_VP_EXIT_CONTEXT {
     fn eq(&self, other: &Self) -> bool {
@@ -6616,6 +6767,7 @@ impl ::core::fmt::Debug for WHV_X64_APIC_EOI_CONTEXT {
 }
 unsafe impl ::windows::core::Abi for WHV_X64_APIC_EOI_CONTEXT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_X64_APIC_EOI_CONTEXT {
     fn eq(&self, other: &Self) -> bool {
@@ -6646,6 +6798,7 @@ impl ::core::fmt::Debug for WHV_X64_APIC_INIT_SIPI_CONTEXT {
 }
 unsafe impl ::windows::core::Abi for WHV_X64_APIC_INIT_SIPI_CONTEXT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_X64_APIC_INIT_SIPI_CONTEXT {
     fn eq(&self, other: &Self) -> bool {
@@ -6676,6 +6829,7 @@ impl ::core::fmt::Debug for WHV_X64_APIC_SMI_CONTEXT {
 }
 unsafe impl ::windows::core::Abi for WHV_X64_APIC_SMI_CONTEXT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_X64_APIC_SMI_CONTEXT {
     fn eq(&self, other: &Self) -> bool {
@@ -6708,6 +6862,7 @@ impl ::core::fmt::Debug for WHV_X64_APIC_WRITE_CONTEXT {
 }
 unsafe impl ::windows::core::Abi for WHV_X64_APIC_WRITE_CONTEXT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_X64_APIC_WRITE_CONTEXT {
     fn eq(&self, other: &Self) -> bool {
@@ -6747,6 +6902,7 @@ impl ::core::default::Default for WHV_X64_APIC_WRITE_TYPE {
 }
 unsafe impl ::windows::core::Abi for WHV_X64_APIC_WRITE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WHV_X64_APIC_WRITE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6778,6 +6934,7 @@ impl ::core::fmt::Debug for WHV_X64_CPUID_ACCESS_CONTEXT {
 }
 unsafe impl ::windows::core::Abi for WHV_X64_CPUID_ACCESS_CONTEXT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_X64_CPUID_ACCESS_CONTEXT {
     fn eq(&self, other: &Self) -> bool {
@@ -6813,6 +6970,7 @@ impl ::core::fmt::Debug for WHV_X64_CPUID_RESULT {
 }
 unsafe impl ::windows::core::Abi for WHV_X64_CPUID_RESULT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_X64_CPUID_RESULT {
     fn eq(&self, other: &Self) -> bool {
@@ -6848,6 +7006,7 @@ impl ::core::fmt::Debug for WHV_X64_CPUID_RESULT2 {
 }
 unsafe impl ::windows::core::Abi for WHV_X64_CPUID_RESULT2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_X64_CPUID_RESULT2 {
     fn eq(&self, other: &Self) -> bool {
@@ -6881,6 +7040,7 @@ impl ::core::default::Default for WHV_X64_CPUID_RESULT2_FLAGS {
 }
 unsafe impl ::windows::core::Abi for WHV_X64_CPUID_RESULT2_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WHV_X64_CPUID_RESULT2_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6929,6 +7089,7 @@ impl ::core::clone::Clone for WHV_X64_DELIVERABILITY_NOTIFICATIONS_REGISTER {
 }
 unsafe impl ::windows::core::Abi for WHV_X64_DELIVERABILITY_NOTIFICATIONS_REGISTER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_X64_DELIVERABILITY_NOTIFICATIONS_REGISTER {
     fn eq(&self, other: &Self) -> bool {
@@ -6959,6 +7120,7 @@ impl ::core::fmt::Debug for WHV_X64_DELIVERABILITY_NOTIFICATIONS_REGISTER_0 {
 }
 unsafe impl ::windows::core::Abi for WHV_X64_DELIVERABILITY_NOTIFICATIONS_REGISTER_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_X64_DELIVERABILITY_NOTIFICATIONS_REGISTER_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -6985,6 +7147,7 @@ impl ::core::clone::Clone for WHV_X64_FP_CONTROL_STATUS_REGISTER {
 }
 unsafe impl ::windows::core::Abi for WHV_X64_FP_CONTROL_STATUS_REGISTER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_X64_FP_CONTROL_STATUS_REGISTER {
     fn eq(&self, other: &Self) -> bool {
@@ -7015,6 +7178,7 @@ impl ::core::clone::Clone for WHV_X64_FP_CONTROL_STATUS_REGISTER_0 {
 }
 unsafe impl ::windows::core::Abi for WHV_X64_FP_CONTROL_STATUS_REGISTER_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_X64_FP_CONTROL_STATUS_REGISTER_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -7041,6 +7205,7 @@ impl ::core::clone::Clone for WHV_X64_FP_CONTROL_STATUS_REGISTER_0_0 {
 }
 unsafe impl ::windows::core::Abi for WHV_X64_FP_CONTROL_STATUS_REGISTER_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_X64_FP_CONTROL_STATUS_REGISTER_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -7073,6 +7238,7 @@ impl ::core::fmt::Debug for WHV_X64_FP_CONTROL_STATUS_REGISTER_0_0_0 {
 }
 unsafe impl ::windows::core::Abi for WHV_X64_FP_CONTROL_STATUS_REGISTER_0_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_X64_FP_CONTROL_STATUS_REGISTER_0_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -7099,6 +7265,7 @@ impl ::core::clone::Clone for WHV_X64_FP_REGISTER {
 }
 unsafe impl ::windows::core::Abi for WHV_X64_FP_REGISTER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_X64_FP_REGISTER {
     fn eq(&self, other: &Self) -> bool {
@@ -7130,6 +7297,7 @@ impl ::core::fmt::Debug for WHV_X64_FP_REGISTER_0 {
 }
 unsafe impl ::windows::core::Abi for WHV_X64_FP_REGISTER_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_X64_FP_REGISTER_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -7160,6 +7328,7 @@ impl ::core::fmt::Debug for WHV_X64_INTERRUPTION_DELIVERABLE_CONTEXT {
 }
 unsafe impl ::windows::core::Abi for WHV_X64_INTERRUPTION_DELIVERABLE_CONTEXT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_X64_INTERRUPTION_DELIVERABLE_CONTEXT {
     fn eq(&self, other: &Self) -> bool {
@@ -7186,6 +7355,7 @@ impl ::core::clone::Clone for WHV_X64_INTERRUPT_STATE_REGISTER {
 }
 unsafe impl ::windows::core::Abi for WHV_X64_INTERRUPT_STATE_REGISTER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_X64_INTERRUPT_STATE_REGISTER {
     fn eq(&self, other: &Self) -> bool {
@@ -7216,6 +7386,7 @@ impl ::core::fmt::Debug for WHV_X64_INTERRUPT_STATE_REGISTER_0 {
 }
 unsafe impl ::windows::core::Abi for WHV_X64_INTERRUPT_STATE_REGISTER_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_X64_INTERRUPT_STATE_REGISTER_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -7252,6 +7423,7 @@ impl ::core::clone::Clone for WHV_X64_IO_PORT_ACCESS_CONTEXT {
 }
 unsafe impl ::windows::core::Abi for WHV_X64_IO_PORT_ACCESS_CONTEXT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_X64_IO_PORT_ACCESS_CONTEXT {
     fn eq(&self, other: &Self) -> bool {
@@ -7278,6 +7450,7 @@ impl ::core::clone::Clone for WHV_X64_IO_PORT_ACCESS_INFO {
 }
 unsafe impl ::windows::core::Abi for WHV_X64_IO_PORT_ACCESS_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_X64_IO_PORT_ACCESS_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -7308,6 +7481,7 @@ impl ::core::fmt::Debug for WHV_X64_IO_PORT_ACCESS_INFO_0 {
 }
 unsafe impl ::windows::core::Abi for WHV_X64_IO_PORT_ACCESS_INFO_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_X64_IO_PORT_ACCESS_INFO_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -7343,6 +7517,7 @@ impl ::core::default::Default for WHV_X64_LOCAL_APIC_EMULATION_MODE {
 }
 unsafe impl ::windows::core::Abi for WHV_X64_LOCAL_APIC_EMULATION_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WHV_X64_LOCAL_APIC_EMULATION_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7365,6 +7540,7 @@ impl ::core::clone::Clone for WHV_X64_MSR_ACCESS_CONTEXT {
 }
 unsafe impl ::windows::core::Abi for WHV_X64_MSR_ACCESS_CONTEXT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_X64_MSR_ACCESS_CONTEXT {
     fn eq(&self, other: &Self) -> bool {
@@ -7391,6 +7567,7 @@ impl ::core::clone::Clone for WHV_X64_MSR_ACCESS_INFO {
 }
 unsafe impl ::windows::core::Abi for WHV_X64_MSR_ACCESS_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_X64_MSR_ACCESS_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -7421,6 +7598,7 @@ impl ::core::fmt::Debug for WHV_X64_MSR_ACCESS_INFO_0 {
 }
 unsafe impl ::windows::core::Abi for WHV_X64_MSR_ACCESS_INFO_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_X64_MSR_ACCESS_INFO_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -7447,6 +7625,7 @@ impl ::core::clone::Clone for WHV_X64_MSR_EXIT_BITMAP {
 }
 unsafe impl ::windows::core::Abi for WHV_X64_MSR_EXIT_BITMAP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_X64_MSR_EXIT_BITMAP {
     fn eq(&self, other: &Self) -> bool {
@@ -7477,6 +7656,7 @@ impl ::core::fmt::Debug for WHV_X64_MSR_EXIT_BITMAP_0 {
 }
 unsafe impl ::windows::core::Abi for WHV_X64_MSR_EXIT_BITMAP_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_X64_MSR_EXIT_BITMAP_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -7503,6 +7683,7 @@ impl ::core::clone::Clone for WHV_X64_PENDING_DEBUG_EXCEPTION {
 }
 unsafe impl ::windows::core::Abi for WHV_X64_PENDING_DEBUG_EXCEPTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_X64_PENDING_DEBUG_EXCEPTION {
     fn eq(&self, other: &Self) -> bool {
@@ -7533,6 +7714,7 @@ impl ::core::fmt::Debug for WHV_X64_PENDING_DEBUG_EXCEPTION_0 {
 }
 unsafe impl ::windows::core::Abi for WHV_X64_PENDING_DEBUG_EXCEPTION_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_X64_PENDING_DEBUG_EXCEPTION_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -7566,6 +7748,7 @@ impl ::core::default::Default for WHV_X64_PENDING_EVENT_TYPE {
 }
 unsafe impl ::windows::core::Abi for WHV_X64_PENDING_EVENT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WHV_X64_PENDING_EVENT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7586,6 +7769,7 @@ impl ::core::clone::Clone for WHV_X64_PENDING_EXCEPTION_EVENT {
 }
 unsafe impl ::windows::core::Abi for WHV_X64_PENDING_EXCEPTION_EVENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_X64_PENDING_EXCEPTION_EVENT {
     fn eq(&self, other: &Self) -> bool {
@@ -7618,6 +7802,7 @@ impl ::core::fmt::Debug for WHV_X64_PENDING_EXCEPTION_EVENT_0 {
 }
 unsafe impl ::windows::core::Abi for WHV_X64_PENDING_EXCEPTION_EVENT_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_X64_PENDING_EXCEPTION_EVENT_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -7644,6 +7829,7 @@ impl ::core::clone::Clone for WHV_X64_PENDING_EXT_INT_EVENT {
 }
 unsafe impl ::windows::core::Abi for WHV_X64_PENDING_EXT_INT_EVENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_X64_PENDING_EXT_INT_EVENT {
     fn eq(&self, other: &Self) -> bool {
@@ -7675,6 +7861,7 @@ impl ::core::fmt::Debug for WHV_X64_PENDING_EXT_INT_EVENT_0 {
 }
 unsafe impl ::windows::core::Abi for WHV_X64_PENDING_EXT_INT_EVENT_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_X64_PENDING_EXT_INT_EVENT_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -7701,6 +7888,7 @@ impl ::core::clone::Clone for WHV_X64_PENDING_INTERRUPTION_REGISTER {
 }
 unsafe impl ::windows::core::Abi for WHV_X64_PENDING_INTERRUPTION_REGISTER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_X64_PENDING_INTERRUPTION_REGISTER {
     fn eq(&self, other: &Self) -> bool {
@@ -7732,6 +7920,7 @@ impl ::core::fmt::Debug for WHV_X64_PENDING_INTERRUPTION_REGISTER_0 {
 }
 unsafe impl ::windows::core::Abi for WHV_X64_PENDING_INTERRUPTION_REGISTER_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_X64_PENDING_INTERRUPTION_REGISTER_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -7767,6 +7956,7 @@ impl ::core::default::Default for WHV_X64_PENDING_INTERRUPTION_TYPE {
 }
 unsafe impl ::windows::core::Abi for WHV_X64_PENDING_INTERRUPTION_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WHV_X64_PENDING_INTERRUPTION_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7790,6 +7980,7 @@ impl ::core::clone::Clone for WHV_X64_RDTSC_CONTEXT {
 }
 unsafe impl ::windows::core::Abi for WHV_X64_RDTSC_CONTEXT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_X64_RDTSC_CONTEXT {
     fn eq(&self, other: &Self) -> bool {
@@ -7816,6 +8007,7 @@ impl ::core::clone::Clone for WHV_X64_RDTSC_INFO {
 }
 unsafe impl ::windows::core::Abi for WHV_X64_RDTSC_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_X64_RDTSC_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -7846,6 +8038,7 @@ impl ::core::fmt::Debug for WHV_X64_RDTSC_INFO_0 {
 }
 unsafe impl ::windows::core::Abi for WHV_X64_RDTSC_INFO_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_X64_RDTSC_INFO_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -7874,6 +8067,7 @@ impl ::core::clone::Clone for WHV_X64_SEGMENT_REGISTER {
 }
 unsafe impl ::windows::core::Abi for WHV_X64_SEGMENT_REGISTER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_X64_SEGMENT_REGISTER {
     fn eq(&self, other: &Self) -> bool {
@@ -7900,6 +8094,7 @@ impl ::core::clone::Clone for WHV_X64_SEGMENT_REGISTER_0 {
 }
 unsafe impl ::windows::core::Abi for WHV_X64_SEGMENT_REGISTER_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_X64_SEGMENT_REGISTER_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -7930,6 +8125,7 @@ impl ::core::fmt::Debug for WHV_X64_SEGMENT_REGISTER_0_0 {
 }
 unsafe impl ::windows::core::Abi for WHV_X64_SEGMENT_REGISTER_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_X64_SEGMENT_REGISTER_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -7962,6 +8158,7 @@ impl ::core::fmt::Debug for WHV_X64_TABLE_REGISTER {
 }
 unsafe impl ::windows::core::Abi for WHV_X64_TABLE_REGISTER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_X64_TABLE_REGISTER {
     fn eq(&self, other: &Self) -> bool {
@@ -7995,6 +8192,7 @@ impl ::core::default::Default for WHV_X64_UNSUPPORTED_FEATURE_CODE {
 }
 unsafe impl ::windows::core::Abi for WHV_X64_UNSUPPORTED_FEATURE_CODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WHV_X64_UNSUPPORTED_FEATURE_CODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8021,6 +8219,7 @@ impl ::core::fmt::Debug for WHV_X64_UNSUPPORTED_FEATURE_CONTEXT {
 }
 unsafe impl ::windows::core::Abi for WHV_X64_UNSUPPORTED_FEATURE_CONTEXT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_X64_UNSUPPORTED_FEATURE_CONTEXT {
     fn eq(&self, other: &Self) -> bool {
@@ -8047,6 +8246,7 @@ impl ::core::clone::Clone for WHV_X64_VP_EXECUTION_STATE {
 }
 unsafe impl ::windows::core::Abi for WHV_X64_VP_EXECUTION_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_X64_VP_EXECUTION_STATE {
     fn eq(&self, other: &Self) -> bool {
@@ -8077,6 +8277,7 @@ impl ::core::fmt::Debug for WHV_X64_VP_EXECUTION_STATE_0 {
 }
 unsafe impl ::windows::core::Abi for WHV_X64_VP_EXECUTION_STATE_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_X64_VP_EXECUTION_STATE_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -8103,6 +8304,7 @@ impl ::core::clone::Clone for WHV_X64_XMM_CONTROL_STATUS_REGISTER {
 }
 unsafe impl ::windows::core::Abi for WHV_X64_XMM_CONTROL_STATUS_REGISTER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_X64_XMM_CONTROL_STATUS_REGISTER {
     fn eq(&self, other: &Self) -> bool {
@@ -8130,6 +8332,7 @@ impl ::core::clone::Clone for WHV_X64_XMM_CONTROL_STATUS_REGISTER_0 {
 }
 unsafe impl ::windows::core::Abi for WHV_X64_XMM_CONTROL_STATUS_REGISTER_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_X64_XMM_CONTROL_STATUS_REGISTER_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -8156,6 +8359,7 @@ impl ::core::clone::Clone for WHV_X64_XMM_CONTROL_STATUS_REGISTER_0_0 {
 }
 unsafe impl ::windows::core::Abi for WHV_X64_XMM_CONTROL_STATUS_REGISTER_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_X64_XMM_CONTROL_STATUS_REGISTER_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -8188,6 +8392,7 @@ impl ::core::fmt::Debug for WHV_X64_XMM_CONTROL_STATUS_REGISTER_0_0_0 {
 }
 unsafe impl ::windows::core::Abi for WHV_X64_XMM_CONTROL_STATUS_REGISTER_0_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WHV_X64_XMM_CONTROL_STATUS_REGISTER_0_0_0 {
     fn eq(&self, other: &Self) -> bool {

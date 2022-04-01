@@ -2,6 +2,11 @@
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IInstalledDesktopApp(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInstalledDesktopApp {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IInstalledDesktopApp {
     type Vtable = IInstalledDesktopApp_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x75eab8ed_c0bc_5364_4c28_166e0545167a);
@@ -18,6 +23,11 @@ pub struct IInstalledDesktopApp_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IInstalledDesktopAppStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInstalledDesktopAppStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IInstalledDesktopAppStatics {
     type Vtable = IInstalledDesktopAppStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x264cf74e_21cd_5f9b_6056_7866ad72489a);
@@ -90,11 +100,6 @@ impl InstalledDesktopApp {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for InstalledDesktopApp {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for InstalledDesktopApp {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -108,7 +113,6 @@ impl ::core::fmt::Debug for InstalledDesktopApp {
 }
 unsafe impl ::windows::core::RuntimeType for InstalledDesktopApp {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.System.Inventory.InstalledDesktopApp;{75eab8ed-c0bc-5364-4c28-166e0545167a})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

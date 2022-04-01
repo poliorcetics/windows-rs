@@ -29,6 +29,7 @@ impl ::core::fmt::Debug for EAPHOST_AUTH_INFO {
 }
 unsafe impl ::windows::core::Abi for EAPHOST_AUTH_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EAPHOST_AUTH_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -72,6 +73,7 @@ impl ::core::default::Default for EAPHOST_AUTH_STATUS {
 }
 unsafe impl ::windows::core::Abi for EAPHOST_AUTH_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EAPHOST_AUTH_STATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -118,6 +120,7 @@ impl ::core::fmt::Debug for EAPHOST_IDENTITY_UI_PARAMS {
 }
 unsafe impl ::windows::core::Abi for EAPHOST_IDENTITY_UI_PARAMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EAPHOST_IDENTITY_UI_PARAMS {
     fn eq(&self, other: &Self) -> bool {
@@ -153,6 +156,7 @@ impl ::core::fmt::Debug for EAPHOST_INTERACTIVE_UI_PARAMS {
 }
 unsafe impl ::windows::core::Abi for EAPHOST_INTERACTIVE_UI_PARAMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EAPHOST_INTERACTIVE_UI_PARAMS {
     fn eq(&self, other: &Self) -> bool {
@@ -189,6 +193,7 @@ impl ::core::fmt::Debug for EAP_ATTRIBUTE {
 }
 unsafe impl ::windows::core::Abi for EAP_ATTRIBUTE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EAP_ATTRIBUTE {
     fn eq(&self, other: &Self) -> bool {
@@ -220,6 +225,7 @@ impl ::core::fmt::Debug for EAP_ATTRIBUTES {
 }
 unsafe impl ::windows::core::Abi for EAP_ATTRIBUTES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EAP_ATTRIBUTES {
     fn eq(&self, other: &Self) -> bool {
@@ -445,6 +451,7 @@ impl ::core::default::Default for EAP_ATTRIBUTE_TYPE {
 }
 unsafe impl ::windows::core::Abi for EAP_ATTRIBUTE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EAP_ATTRIBUTE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -493,6 +500,7 @@ impl ::core::fmt::Debug for EAP_AUTHENTICATOR_METHOD_ROUTINES {
 }
 unsafe impl ::windows::core::Abi for EAP_AUTHENTICATOR_METHOD_ROUTINES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EAP_AUTHENTICATOR_METHOD_ROUTINES {
     fn eq(&self, other: &Self) -> bool {
@@ -528,6 +536,7 @@ impl ::core::default::Default for EAP_AUTHENTICATOR_SEND_TIMEOUT {
 }
 unsafe impl ::windows::core::Abi for EAP_AUTHENTICATOR_SEND_TIMEOUT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EAP_AUTHENTICATOR_SEND_TIMEOUT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -562,6 +571,7 @@ impl ::core::fmt::Debug for EAP_CONFIG_INPUT_FIELD_ARRAY {
 }
 unsafe impl ::windows::core::Abi for EAP_CONFIG_INPUT_FIELD_ARRAY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EAP_CONFIG_INPUT_FIELD_ARRAY {
     fn eq(&self, other: &Self) -> bool {
@@ -598,6 +608,7 @@ impl ::core::fmt::Debug for EAP_CONFIG_INPUT_FIELD_DATA {
 }
 unsafe impl ::windows::core::Abi for EAP_CONFIG_INPUT_FIELD_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EAP_CONFIG_INPUT_FIELD_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -651,6 +662,7 @@ impl ::core::default::Default for EAP_CONFIG_INPUT_FIELD_TYPE {
 }
 unsafe impl ::windows::core::Abi for EAP_CONFIG_INPUT_FIELD_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EAP_CONFIG_INPUT_FIELD_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -678,6 +690,7 @@ impl ::core::fmt::Debug for EAP_CRED_EXPIRY_REQ {
 }
 unsafe impl ::windows::core::Abi for EAP_CRED_EXPIRY_REQ {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EAP_CRED_EXPIRY_REQ {
     fn eq(&self, other: &Self) -> bool {
@@ -715,6 +728,7 @@ impl ::core::fmt::Debug for EAP_ERROR {
 }
 unsafe impl ::windows::core::Abi for EAP_ERROR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EAP_ERROR {
     fn eq(&self, other: &Self) -> bool {
@@ -878,6 +892,7 @@ impl ::core::clone::Clone for EAP_INTERACTIVE_UI_DATA {
 }
 unsafe impl ::windows::core::Abi for EAP_INTERACTIVE_UI_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EAP_INTERACTIVE_UI_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -919,6 +934,7 @@ impl ::core::default::Default for EAP_INTERACTIVE_UI_DATA_TYPE {
 }
 unsafe impl ::windows::core::Abi for EAP_INTERACTIVE_UI_DATA_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EAP_INTERACTIVE_UI_DATA_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -972,6 +988,7 @@ impl ::core::default::Default for EAP_METHOD_AUTHENTICATOR_RESPONSE_ACTION {
 }
 unsafe impl ::windows::core::Abi for EAP_METHOD_AUTHENTICATOR_RESPONSE_ACTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EAP_METHOD_AUTHENTICATOR_RESPONSE_ACTION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1003,6 +1020,7 @@ impl ::core::fmt::Debug for EAP_METHOD_AUTHENTICATOR_RESULT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for EAP_METHOD_AUTHENTICATOR_RESULT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for EAP_METHOD_AUTHENTICATOR_RESULT {
@@ -1040,6 +1058,7 @@ impl ::core::fmt::Debug for EAP_METHOD_INFO {
 }
 unsafe impl ::windows::core::Abi for EAP_METHOD_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EAP_METHOD_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -1071,6 +1090,7 @@ impl ::core::fmt::Debug for EAP_METHOD_INFO_ARRAY {
 }
 unsafe impl ::windows::core::Abi for EAP_METHOD_INFO_ARRAY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EAP_METHOD_INFO_ARRAY {
     fn eq(&self, other: &Self) -> bool {
@@ -1102,6 +1122,7 @@ impl ::core::fmt::Debug for EAP_METHOD_INFO_ARRAY_EX {
 }
 unsafe impl ::windows::core::Abi for EAP_METHOD_INFO_ARRAY_EX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EAP_METHOD_INFO_ARRAY_EX {
     fn eq(&self, other: &Self) -> bool {
@@ -1136,6 +1157,7 @@ impl ::core::fmt::Debug for EAP_METHOD_INFO_EX {
 }
 unsafe impl ::windows::core::Abi for EAP_METHOD_INFO_EX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EAP_METHOD_INFO_EX {
     fn eq(&self, other: &Self) -> bool {
@@ -1169,6 +1191,7 @@ impl ::core::clone::Clone for EAP_METHOD_PROPERTY {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for EAP_METHOD_PROPERTY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for EAP_METHOD_PROPERTY {
@@ -1208,6 +1231,7 @@ impl ::core::fmt::Debug for EAP_METHOD_PROPERTY_ARRAY {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for EAP_METHOD_PROPERTY_ARRAY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for EAP_METHOD_PROPERTY_ARRAY {
@@ -1302,6 +1326,7 @@ impl ::core::default::Default for EAP_METHOD_PROPERTY_TYPE {
 }
 unsafe impl ::windows::core::Abi for EAP_METHOD_PROPERTY_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EAP_METHOD_PROPERTY_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1327,6 +1352,7 @@ impl ::core::clone::Clone for EAP_METHOD_PROPERTY_VALUE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for EAP_METHOD_PROPERTY_VALUE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for EAP_METHOD_PROPERTY_VALUE {
@@ -1366,6 +1392,7 @@ impl ::core::fmt::Debug for EAP_METHOD_PROPERTY_VALUE_BOOL {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for EAP_METHOD_PROPERTY_VALUE_BOOL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for EAP_METHOD_PROPERTY_VALUE_BOOL {
@@ -1400,6 +1427,7 @@ impl ::core::fmt::Debug for EAP_METHOD_PROPERTY_VALUE_DWORD {
 }
 unsafe impl ::windows::core::Abi for EAP_METHOD_PROPERTY_VALUE_DWORD {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EAP_METHOD_PROPERTY_VALUE_DWORD {
     fn eq(&self, other: &Self) -> bool {
@@ -1431,6 +1459,7 @@ impl ::core::fmt::Debug for EAP_METHOD_PROPERTY_VALUE_STRING {
 }
 unsafe impl ::windows::core::Abi for EAP_METHOD_PROPERTY_VALUE_STRING {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EAP_METHOD_PROPERTY_VALUE_STRING {
     fn eq(&self, other: &Self) -> bool {
@@ -1466,6 +1495,7 @@ impl ::core::default::Default for EAP_METHOD_PROPERTY_VALUE_TYPE {
 }
 unsafe impl ::windows::core::Abi for EAP_METHOD_PROPERTY_VALUE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EAP_METHOD_PROPERTY_VALUE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1491,6 +1521,7 @@ impl ::core::fmt::Debug for EAP_METHOD_TYPE {
 }
 unsafe impl ::windows::core::Abi for EAP_METHOD_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EAP_METHOD_TYPE {
     fn eq(&self, other: &Self) -> bool {
@@ -1555,6 +1586,7 @@ impl ::core::fmt::Debug for EAP_PEER_METHOD_ROUTINES {
 }
 unsafe impl ::windows::core::Abi for EAP_PEER_METHOD_ROUTINES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EAP_PEER_METHOD_ROUTINES {
     fn eq(&self, other: &Self) -> bool {
@@ -1607,6 +1639,7 @@ impl ::core::fmt::Debug for EAP_TYPE {
 }
 unsafe impl ::windows::core::Abi for EAP_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EAP_TYPE {
     fn eq(&self, other: &Self) -> bool {
@@ -1634,6 +1667,7 @@ impl ::core::clone::Clone for EAP_UI_DATA_FORMAT {
 }
 unsafe impl ::windows::core::Abi for EAP_UI_DATA_FORMAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EAP_UI_DATA_FORMAT {
     fn eq(&self, other: &Self) -> bool {
@@ -1675,6 +1709,7 @@ impl ::core::fmt::Debug for EapCertificateCredential {
 }
 unsafe impl ::windows::core::Abi for EapCertificateCredential {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EapCertificateCredential {
     fn eq(&self, other: &Self) -> bool {
@@ -1716,6 +1751,7 @@ impl ::core::default::Default for EapCode {
 }
 unsafe impl ::windows::core::Abi for EapCode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EapCode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1736,6 +1772,7 @@ impl ::core::clone::Clone for EapCredential {
 }
 unsafe impl ::windows::core::Abi for EapCredential {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EapCredential {
     fn eq(&self, other: &Self) -> bool {
@@ -1775,6 +1812,7 @@ impl ::core::default::Default for EapCredentialType {
 }
 unsafe impl ::windows::core::Abi for EapCredentialType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EapCredentialType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1796,6 +1834,7 @@ impl ::core::clone::Clone for EapCredentialTypeData {
 }
 unsafe impl ::windows::core::Abi for EapCredentialTypeData {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EapCredentialTypeData {
     fn eq(&self, other: &Self) -> bool {
@@ -1833,6 +1872,7 @@ impl ::core::default::Default for EapHostPeerAuthParams {
 }
 unsafe impl ::windows::core::Abi for EapHostPeerAuthParams {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EapHostPeerAuthParams {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2277,6 +2317,7 @@ impl ::core::fmt::Debug for EapHostPeerMethodResult {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for EapHostPeerMethodResult {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for EapHostPeerMethodResult {
@@ -2315,6 +2356,7 @@ impl ::core::default::Default for EapHostPeerMethodResultReason {
 }
 unsafe impl ::windows::core::Abi for EapHostPeerMethodResultReason {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EapHostPeerMethodResultReason {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2424,6 +2466,7 @@ impl ::core::default::Default for EapHostPeerResponseAction {
 }
 unsafe impl ::windows::core::Abi for EapHostPeerResponseAction {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EapHostPeerResponseAction {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2493,6 +2536,7 @@ impl ::core::fmt::Debug for EapPacket {
 }
 unsafe impl ::windows::core::Abi for EapPacket {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EapPacket {
     fn eq(&self, other: &Self) -> bool {
@@ -2529,6 +2573,7 @@ impl ::core::fmt::Debug for EapPeerMethodOutput {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for EapPeerMethodOutput {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for EapPeerMethodOutput {
@@ -2573,6 +2618,7 @@ impl ::core::default::Default for EapPeerMethodResponseAction {
 }
 unsafe impl ::windows::core::Abi for EapPeerMethodResponseAction {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EapPeerMethodResponseAction {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2626,6 +2672,7 @@ impl ::core::fmt::Debug for EapPeerMethodResult {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography"))]
 unsafe impl ::windows::core::Abi for EapPeerMethodResult {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography"))]
 impl ::core::cmp::PartialEq for EapPeerMethodResult {
@@ -2664,6 +2711,7 @@ impl ::core::default::Default for EapPeerMethodResultReason {
 }
 unsafe impl ::windows::core::Abi for EapPeerMethodResultReason {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EapPeerMethodResultReason {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2688,6 +2736,7 @@ impl ::core::fmt::Debug for EapSimCredential {
 }
 unsafe impl ::windows::core::Abi for EapSimCredential {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EapSimCredential {
     fn eq(&self, other: &Self) -> bool {
@@ -2719,6 +2768,7 @@ impl ::core::fmt::Debug for EapUsernamePasswordCredential {
 }
 unsafe impl ::windows::core::Abi for EapUsernamePasswordCredential {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EapUsernamePasswordCredential {
     fn eq(&self, other: &Self) -> bool {
@@ -2790,6 +2840,11 @@ pub const GUID_EapHost_Repair_User_SelectValidCert: ::windows::core::GUID = ::wi
 #[doc = "*Required features: `\"Win32_Security_ExtensibleAuthenticationProtocol\"`*"]
 #[repr(transparent)]
 pub struct IAccountingProviderConfig(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAccountingProviderConfig {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAccountingProviderConfig {
     #[doc = "*Required features: `\"Win32_Security_ExtensibleAuthenticationProtocol\"`*"]
     pub unsafe fn Initialize<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, pszmachinename: Param0) -> ::windows::core::Result<usize> {
@@ -2834,11 +2889,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAcco
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAccountingProviderConfig {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAccountingProviderConfig {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2870,6 +2920,11 @@ pub struct IAccountingProviderConfig_Vtbl {
 #[doc = "*Required features: `\"Win32_Security_ExtensibleAuthenticationProtocol\"`*"]
 #[repr(transparent)]
 pub struct IAuthenticationProviderConfig(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAuthenticationProviderConfig {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAuthenticationProviderConfig {
     #[doc = "*Required features: `\"Win32_Security_ExtensibleAuthenticationProtocol\"`*"]
     pub unsafe fn Initialize<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, pszmachinename: Param0) -> ::windows::core::Result<usize> {
@@ -2914,11 +2969,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAuth
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAuthenticationProviderConfig {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAuthenticationProviderConfig {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2950,6 +3000,11 @@ pub struct IAuthenticationProviderConfig_Vtbl {
 #[doc = "*Required features: `\"Win32_Security_ExtensibleAuthenticationProtocol\"`*"]
 #[repr(transparent)]
 pub struct IEAPProviderConfig(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEAPProviderConfig {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEAPProviderConfig {
     #[doc = "*Required features: `\"Win32_Security_ExtensibleAuthenticationProtocol\"`*"]
     pub unsafe fn Initialize<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, pszmachinename: Param0, dweaptypeid: u32) -> ::windows::core::Result<usize> {
@@ -2996,11 +3051,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEAPP
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEAPProviderConfig {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEAPProviderConfig {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3038,6 +3088,11 @@ pub struct IEAPProviderConfig_Vtbl {
 #[doc = "*Required features: `\"Win32_Security_ExtensibleAuthenticationProtocol\"`*"]
 #[repr(transparent)]
 pub struct IEAPProviderConfig2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEAPProviderConfig2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEAPProviderConfig2 {
     #[doc = "*Required features: `\"Win32_Security_ExtensibleAuthenticationProtocol\"`*"]
     pub unsafe fn Initialize<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, pszmachinename: Param0, dweaptypeid: u32) -> ::windows::core::Result<usize> {
@@ -3113,11 +3168,6 @@ impl<'a> ::windows::core::IntoParam<'a, IEAPProviderConfig> for &'a IEAPProvider
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEAPProviderConfig2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEAPProviderConfig2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3146,6 +3196,11 @@ pub struct IEAPProviderConfig2_Vtbl {
 #[doc = "*Required features: `\"Win32_Security_ExtensibleAuthenticationProtocol\"`*"]
 #[repr(transparent)]
 pub struct IEAPProviderConfig3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEAPProviderConfig3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEAPProviderConfig3 {
     #[doc = "*Required features: `\"Win32_Security_ExtensibleAuthenticationProtocol\"`*"]
     pub unsafe fn Initialize<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, pszmachinename: Param0, dweaptypeid: u32) -> ::windows::core::Result<usize> {
@@ -3246,11 +3301,6 @@ impl<'a> ::windows::core::IntoParam<'a, IEAPProviderConfig2> for &'a IEAPProvide
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEAPProviderConfig3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEAPProviderConfig3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3278,6 +3328,11 @@ pub struct IEAPProviderConfig3_Vtbl {
 #[doc = "*Required features: `\"Win32_Security_ExtensibleAuthenticationProtocol\"`*"]
 #[repr(transparent)]
 pub struct IRouterProtocolConfig(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRouterProtocolConfig {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRouterProtocolConfig {
     #[doc = "*Required features: `\"Win32_Security_ExtensibleAuthenticationProtocol\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -3308,11 +3363,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IRouterPr
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IRouterProtocolConfig {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IRouterProtocolConfig {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IRouterProtocolConfig {
@@ -3368,6 +3418,7 @@ impl ::core::default::Default for ISOLATION_STATE {
 }
 unsafe impl ::windows::core::Abi for ISOLATION_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ISOLATION_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3412,6 +3463,7 @@ impl ::core::fmt::Debug for LEGACY_IDENTITY_UI_PARAMS {
 }
 unsafe impl ::windows::core::Abi for LEGACY_IDENTITY_UI_PARAMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for LEGACY_IDENTITY_UI_PARAMS {
     fn eq(&self, other: &Self) -> bool {
@@ -3447,6 +3499,7 @@ impl ::core::fmt::Debug for LEGACY_INTERACTIVE_UI_PARAMS {
 }
 unsafe impl ::windows::core::Abi for LEGACY_INTERACTIVE_UI_PARAMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for LEGACY_INTERACTIVE_UI_PARAMS {
     fn eq(&self, other: &Self) -> bool {
@@ -3492,6 +3545,7 @@ impl ::core::fmt::Debug for NgcTicketContext {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography"))]
 unsafe impl ::windows::core::Abi for NgcTicketContext {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography"))]
 impl ::core::cmp::PartialEq for NgcTicketContext {
@@ -3544,6 +3598,7 @@ impl ::core::default::Default for PPP_EAP_ACTION {
 }
 unsafe impl ::windows::core::Abi for PPP_EAP_ACTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PPP_EAP_ACTION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3573,6 +3628,7 @@ impl ::core::fmt::Debug for PPP_EAP_INFO {
 }
 unsafe impl ::windows::core::Abi for PPP_EAP_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PPP_EAP_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -3650,6 +3706,7 @@ impl ::core::fmt::Debug for PPP_EAP_INPUT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PPP_EAP_INPUT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for PPP_EAP_INPUT {
@@ -3718,6 +3775,7 @@ impl ::core::fmt::Debug for PPP_EAP_OUTPUT {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography"))]
 unsafe impl ::windows::core::Abi for PPP_EAP_OUTPUT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography"))]
 impl ::core::cmp::PartialEq for PPP_EAP_OUTPUT {
@@ -3754,6 +3812,7 @@ impl ::core::fmt::Debug for PPP_EAP_PACKET {
 }
 unsafe impl ::windows::core::Abi for PPP_EAP_PACKET {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PPP_EAP_PACKET {
     fn eq(&self, other: &Self) -> bool {
@@ -3786,6 +3845,7 @@ impl ::core::fmt::Debug for RAS_AUTH_ATTRIBUTE {
 }
 unsafe impl ::windows::core::Abi for RAS_AUTH_ATTRIBUTE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RAS_AUTH_ATTRIBUTE {
     fn eq(&self, other: &Self) -> bool {
@@ -4007,6 +4067,7 @@ impl ::core::default::Default for RAS_AUTH_ATTRIBUTE_TYPE {
 }
 unsafe impl ::windows::core::Abi for RAS_AUTH_ATTRIBUTE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RAS_AUTH_ATTRIBUTE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

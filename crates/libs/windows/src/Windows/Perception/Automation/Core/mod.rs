@@ -19,6 +19,11 @@ impl ::windows::core::RuntimeName for CorePerceptionAutomation {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICorePerceptionAutomationStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICorePerceptionAutomationStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICorePerceptionAutomationStatics {
     type Vtable = ICorePerceptionAutomationStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x0bb04541_4ce2_4923_9a76_8187ecc59112);

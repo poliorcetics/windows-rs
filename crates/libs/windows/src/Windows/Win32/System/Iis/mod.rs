@@ -22,6 +22,11 @@ pub const ASP_MD_UT_APP: u32 = 101u32;
 #[doc = "*Required features: `\"Win32_System_Iis\"`*"]
 #[repr(transparent)]
 pub struct AsyncIFtpAuthenticationProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for AsyncIFtpAuthenticationProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl AsyncIFtpAuthenticationProvider {
     #[doc = "*Required features: `\"Win32_System_Iis\"`*"]
     pub unsafe fn Begin_AuthenticateUser<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param1: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param2: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param3: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, pszsessionid: Param0, pszsitename: Param1, pszusername: Param2, pszpassword: Param3) -> ::windows::core::Result<()> {
@@ -53,11 +58,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a Async
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for AsyncIFtpAuthenticationProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AsyncIFtpAuthenticationProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -86,6 +86,11 @@ pub struct AsyncIFtpAuthenticationProvider_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Iis\"`*"]
 #[repr(transparent)]
 pub struct AsyncIFtpAuthorizationProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for AsyncIFtpAuthorizationProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl AsyncIFtpAuthorizationProvider {
     #[doc = "*Required features: `\"Win32_System_Iis\"`*"]
     pub unsafe fn Begin_GetUserAccessPermission<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param1: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param2: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param3: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, pszsessionid: Param0, pszsitename: Param1, pszvirtualpath: Param2, pszusername: Param3) -> ::windows::core::Result<()> {
@@ -117,11 +122,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a Async
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for AsyncIFtpAuthorizationProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AsyncIFtpAuthorizationProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -147,6 +147,11 @@ pub struct AsyncIFtpAuthorizationProvider_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Iis\"`*"]
 #[repr(transparent)]
 pub struct AsyncIFtpHomeDirectoryProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for AsyncIFtpHomeDirectoryProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl AsyncIFtpHomeDirectoryProvider {
     #[doc = "*Required features: `\"Win32_System_Iis\"`*"]
     pub unsafe fn Begin_GetUserHomeDirectoryData<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param1: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param2: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, pszsessionid: Param0, pszsitename: Param1, pszusername: Param2) -> ::windows::core::Result<()> {
@@ -178,11 +183,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a Async
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for AsyncIFtpHomeDirectoryProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AsyncIFtpHomeDirectoryProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -208,6 +208,11 @@ pub struct AsyncIFtpHomeDirectoryProvider_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Iis\"`*"]
 #[repr(transparent)]
 pub struct AsyncIFtpLogProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for AsyncIFtpLogProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl AsyncIFtpLogProvider {
     #[doc = "*Required features: `\"Win32_System_Iis\"`*"]
     pub unsafe fn Begin_Log(&self, ploggingparameters: *const LOGGING_PARAMETERS) -> ::windows::core::Result<()> {
@@ -238,11 +243,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a Async
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for AsyncIFtpLogProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AsyncIFtpLogProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -268,6 +268,11 @@ pub struct AsyncIFtpLogProvider_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Iis\"`*"]
 #[repr(transparent)]
 pub struct AsyncIFtpPostprocessProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for AsyncIFtpPostprocessProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl AsyncIFtpPostprocessProvider {
     #[doc = "*Required features: `\"Win32_System_Iis\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -300,11 +305,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a Async
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for AsyncIFtpPostprocessProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AsyncIFtpPostprocessProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -333,6 +333,11 @@ pub struct AsyncIFtpPostprocessProvider_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Iis\"`*"]
 #[repr(transparent)]
 pub struct AsyncIFtpPreprocessProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for AsyncIFtpPreprocessProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl AsyncIFtpPreprocessProvider {
     #[doc = "*Required features: `\"Win32_System_Iis\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -365,11 +370,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a Async
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for AsyncIFtpPreprocessProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AsyncIFtpPreprocessProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -398,6 +398,11 @@ pub struct AsyncIFtpPreprocessProvider_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Iis\"`*"]
 #[repr(transparent)]
 pub struct AsyncIFtpRoleProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for AsyncIFtpRoleProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl AsyncIFtpRoleProvider {
     #[doc = "*Required features: `\"Win32_System_Iis\"`*"]
     pub unsafe fn Begin_IsUserInRole<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param1: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param2: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param3: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, pszsessionid: Param0, pszsitename: Param1, pszusername: Param2, pszrole: Param3) -> ::windows::core::Result<()> {
@@ -430,11 +435,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a Async
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for AsyncIFtpRoleProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AsyncIFtpRoleProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -463,6 +463,11 @@ pub struct AsyncIFtpRoleProvider_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Iis\"`*"]
 #[repr(transparent)]
 pub struct AsyncIMSAdminBaseSinkW(::windows::core::IUnknown);
+impl ::core::clone::Clone for AsyncIMSAdminBaseSinkW {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl AsyncIMSAdminBaseSinkW {
     #[doc = "*Required features: `\"Win32_System_Iis\"`*"]
     pub unsafe fn Begin_SinkNotify(&self, pcochangelist: &[MD_CHANGE_OBJECT_W]) -> ::windows::core::Result<()> {
@@ -499,11 +504,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for AsyncIMSA
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a AsyncIMSAdminBaseSinkW {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for AsyncIMSAdminBaseSinkW {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for AsyncIMSAdminBaseSinkW {
@@ -555,6 +555,7 @@ impl ::core::fmt::Debug for CERT_CONTEXT_EX {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography"))]
 unsafe impl ::windows::core::Abi for CERT_CONTEXT_EX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography"))]
 impl ::core::cmp::PartialEq for CERT_CONTEXT_EX {
@@ -601,6 +602,7 @@ impl ::core::fmt::Debug for CONFIGURATION_ENTRY {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for CONFIGURATION_ENTRY {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for CONFIGURATION_ENTRY {
@@ -721,6 +723,7 @@ impl ::core::fmt::Debug for EXTENSION_CONTROL_BLOCK {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for EXTENSION_CONTROL_BLOCK {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for EXTENSION_CONTROL_BLOCK {
@@ -765,6 +768,7 @@ impl ::core::default::Default for FTP_ACCESS {
 }
 unsafe impl ::windows::core::Abi for FTP_ACCESS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FTP_ACCESS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -796,6 +800,7 @@ impl ::core::default::Default for FTP_PROCESS_STATUS {
 }
 unsafe impl ::windows::core::Abi for FTP_PROCESS_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FTP_PROCESS_STATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -873,6 +878,7 @@ impl ::core::fmt::Debug for HSE_CUSTOM_ERROR_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for HSE_CUSTOM_ERROR_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for HSE_CUSTOM_ERROR_INFO {
@@ -916,6 +922,7 @@ impl ::core::fmt::Debug for HSE_EXEC_UNICODE_URL_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for HSE_EXEC_UNICODE_URL_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for HSE_EXEC_UNICODE_URL_INFO {
@@ -956,6 +963,7 @@ impl ::core::fmt::Debug for HSE_EXEC_UNICODE_URL_USER_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for HSE_EXEC_UNICODE_URL_USER_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for HSE_EXEC_UNICODE_URL_USER_INFO {
@@ -992,6 +1000,7 @@ impl ::core::fmt::Debug for HSE_EXEC_URL_ENTITY_INFO {
 }
 unsafe impl ::windows::core::Abi for HSE_EXEC_URL_ENTITY_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HSE_EXEC_URL_ENTITY_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -1038,6 +1047,7 @@ impl ::core::fmt::Debug for HSE_EXEC_URL_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for HSE_EXEC_URL_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for HSE_EXEC_URL_INFO {
@@ -1077,6 +1087,7 @@ impl ::core::fmt::Debug for HSE_EXEC_URL_STATUS {
 }
 unsafe impl ::windows::core::Abi for HSE_EXEC_URL_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HSE_EXEC_URL_STATUS {
     fn eq(&self, other: &Self) -> bool {
@@ -1114,6 +1125,7 @@ impl ::core::fmt::Debug for HSE_EXEC_URL_USER_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for HSE_EXEC_URL_USER_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for HSE_EXEC_URL_USER_INFO {
@@ -1255,6 +1267,7 @@ impl ::core::fmt::Debug for HSE_RESPONSE_VECTOR {
 }
 unsafe impl ::windows::core::Abi for HSE_RESPONSE_VECTOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HSE_RESPONSE_VECTOR {
     fn eq(&self, other: &Self) -> bool {
@@ -1294,6 +1307,7 @@ impl ::core::fmt::Debug for HSE_SEND_HEADER_EX_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for HSE_SEND_HEADER_EX_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for HSE_SEND_HEADER_EX_INFO {
@@ -1354,6 +1368,7 @@ impl ::core::fmt::Debug for HSE_TF_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for HSE_TF_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for HSE_TF_INFO {
@@ -1395,6 +1410,7 @@ impl ::core::fmt::Debug for HSE_TRACE_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for HSE_TRACE_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for HSE_TRACE_INFO {
@@ -1431,6 +1447,7 @@ impl ::core::fmt::Debug for HSE_UNICODE_URL_MAPEX_INFO {
 }
 unsafe impl ::windows::core::Abi for HSE_UNICODE_URL_MAPEX_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HSE_UNICODE_URL_MAPEX_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -1493,6 +1510,7 @@ impl ::core::fmt::Debug for HSE_URL_MAPEX_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for HSE_URL_MAPEX_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for HSE_URL_MAPEX_INFO {
@@ -1529,6 +1547,7 @@ impl ::core::fmt::Debug for HSE_VECTOR_ELEMENT {
 }
 unsafe impl ::windows::core::Abi for HSE_VECTOR_ELEMENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HSE_VECTOR_ELEMENT {
     fn eq(&self, other: &Self) -> bool {
@@ -1569,6 +1588,7 @@ impl ::core::fmt::Debug for HSE_VERSION_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for HSE_VERSION_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for HSE_VERSION_INFO {
@@ -1608,6 +1628,7 @@ impl ::core::fmt::Debug for HTTP_FILTER_ACCESS_DENIED {
 }
 unsafe impl ::windows::core::Abi for HTTP_FILTER_ACCESS_DENIED {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HTTP_FILTER_ACCESS_DENIED {
     fn eq(&self, other: &Self) -> bool {
@@ -1641,6 +1662,7 @@ impl ::core::fmt::Debug for HTTP_FILTER_AUTHENT {
 }
 unsafe impl ::windows::core::Abi for HTTP_FILTER_AUTHENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HTTP_FILTER_AUTHENT {
     fn eq(&self, other: &Self) -> bool {
@@ -1682,6 +1704,7 @@ impl ::core::fmt::Debug for HTTP_FILTER_AUTH_COMPLETE_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for HTTP_FILTER_AUTH_COMPLETE_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for HTTP_FILTER_AUTH_COMPLETE_INFO {
@@ -1742,6 +1765,7 @@ impl ::core::fmt::Debug for HTTP_FILTER_CONTEXT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for HTTP_FILTER_CONTEXT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for HTTP_FILTER_CONTEXT {
@@ -1797,6 +1821,7 @@ impl ::core::fmt::Debug for HTTP_FILTER_LOG {
 }
 unsafe impl ::windows::core::Abi for HTTP_FILTER_LOG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HTTP_FILTER_LOG {
     fn eq(&self, other: &Self) -> bool {
@@ -1831,6 +1856,7 @@ impl ::core::fmt::Debug for HTTP_FILTER_PREPROC_HEADERS {
 }
 unsafe impl ::windows::core::Abi for HTTP_FILTER_PREPROC_HEADERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HTTP_FILTER_PREPROC_HEADERS {
     fn eq(&self, other: &Self) -> bool {
@@ -1864,6 +1890,7 @@ impl ::core::fmt::Debug for HTTP_FILTER_RAW_DATA {
 }
 unsafe impl ::windows::core::Abi for HTTP_FILTER_RAW_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HTTP_FILTER_RAW_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -1896,6 +1923,7 @@ impl ::core::fmt::Debug for HTTP_FILTER_URL_MAP {
 }
 unsafe impl ::windows::core::Abi for HTTP_FILTER_URL_MAP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HTTP_FILTER_URL_MAP {
     fn eq(&self, other: &Self) -> bool {
@@ -1932,6 +1960,7 @@ impl ::core::fmt::Debug for HTTP_FILTER_URL_MAP_EX {
 }
 unsafe impl ::windows::core::Abi for HTTP_FILTER_URL_MAP_EX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HTTP_FILTER_URL_MAP_EX {
     fn eq(&self, other: &Self) -> bool {
@@ -1970,6 +1999,7 @@ impl ::core::fmt::Debug for HTTP_FILTER_VERSION {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for HTTP_FILTER_VERSION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for HTTP_FILTER_VERSION {
@@ -2011,6 +2041,7 @@ impl ::core::fmt::Debug for HTTP_TRACE_CONFIGURATION {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for HTTP_TRACE_CONFIGURATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for HTTP_TRACE_CONFIGURATION {
@@ -2070,6 +2101,7 @@ impl ::core::fmt::Debug for HTTP_TRACE_EVENT {
 }
 unsafe impl ::windows::core::Abi for HTTP_TRACE_EVENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HTTP_TRACE_EVENT {
     fn eq(&self, other: &Self) -> bool {
@@ -2106,6 +2138,7 @@ impl ::core::fmt::Debug for HTTP_TRACE_EVENT_ITEM {
 }
 unsafe impl ::windows::core::Abi for HTTP_TRACE_EVENT_ITEM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HTTP_TRACE_EVENT_ITEM {
     fn eq(&self, other: &Self) -> bool {
@@ -2163,6 +2196,7 @@ impl ::core::default::Default for HTTP_TRACE_TYPE {
 }
 unsafe impl ::windows::core::Abi for HTTP_TRACE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HTTP_TRACE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2202,6 +2236,11 @@ pub unsafe fn HttpFilterProc(pfc: *mut HTTP_FILTER_CONTEXT, notificationtype: u3
 #[doc = "*Required features: `\"Win32_System_Iis\"`*"]
 #[repr(transparent)]
 pub struct IADMEXT(::windows::core::IUnknown);
+impl ::core::clone::Clone for IADMEXT {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IADMEXT {
     #[doc = "*Required features: `\"Win32_System_Iis\"`*"]
     pub unsafe fn Initialize(&self) -> ::windows::core::Result<()> {
@@ -2236,11 +2275,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IADME
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IADMEXT {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IADMEXT {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2267,6 +2301,11 @@ pub struct IADMEXT_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Iis\"`*"]
 #[repr(transparent)]
 pub struct IFtpAuthenticationProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IFtpAuthenticationProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IFtpAuthenticationProvider {
     #[doc = "*Required features: `\"Win32_System_Iis\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -2292,11 +2331,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IFtpAuthe
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IFtpAuthenticationProvider {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IFtpAuthenticationProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IFtpAuthenticationProvider {
@@ -2326,6 +2360,11 @@ pub struct IFtpAuthenticationProvider_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Iis\"`*"]
 #[repr(transparent)]
 pub struct IFtpAuthorizationProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IFtpAuthorizationProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IFtpAuthorizationProvider {
     #[doc = "*Required features: `\"Win32_System_Iis\"`*"]
     pub unsafe fn GetUserAccessPermission<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param1: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param2: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param3: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, pszsessionid: Param0, pszsitename: Param1, pszvirtualpath: Param2, pszusername: Param3) -> ::windows::core::Result<FTP_ACCESS> {
@@ -2353,11 +2392,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IFtpA
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IFtpAuthorizationProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IFtpAuthorizationProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2382,6 +2416,11 @@ pub struct IFtpAuthorizationProvider_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Iis\"`*"]
 #[repr(transparent)]
 pub struct IFtpHomeDirectoryProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IFtpHomeDirectoryProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IFtpHomeDirectoryProvider {
     #[doc = "*Required features: `\"Win32_System_Iis\"`*"]
     pub unsafe fn GetUserHomeDirectoryData<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param1: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param2: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, pszsessionid: Param0, pszsitename: Param1, pszusername: Param2) -> ::windows::core::Result<::windows::core::PWSTR> {
@@ -2409,11 +2448,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IFtpH
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IFtpHomeDirectoryProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IFtpHomeDirectoryProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2438,6 +2472,11 @@ pub struct IFtpHomeDirectoryProvider_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Iis\"`*"]
 #[repr(transparent)]
 pub struct IFtpLogProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IFtpLogProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IFtpLogProvider {
     #[doc = "*Required features: `\"Win32_System_Iis\"`*"]
     pub unsafe fn Log(&self, ploggingparameters: *const LOGGING_PARAMETERS) -> ::windows::core::Result<()> {
@@ -2464,11 +2503,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IFtpL
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IFtpLogProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IFtpLogProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2493,6 +2527,11 @@ pub struct IFtpLogProvider_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Iis\"`*"]
 #[repr(transparent)]
 pub struct IFtpPostprocessProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IFtpPostprocessProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IFtpPostprocessProvider {
     #[doc = "*Required features: `\"Win32_System_Iis\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -2519,11 +2558,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IFtpPostp
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IFtpPostprocessProvider {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IFtpPostprocessProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IFtpPostprocessProvider {
@@ -2553,6 +2587,11 @@ pub struct IFtpPostprocessProvider_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Iis\"`*"]
 #[repr(transparent)]
 pub struct IFtpPreprocessProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IFtpPreprocessProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IFtpPreprocessProvider {
     #[doc = "*Required features: `\"Win32_System_Iis\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -2579,11 +2618,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IFtpPrepr
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IFtpPreprocessProvider {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IFtpPreprocessProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IFtpPreprocessProvider {
@@ -2613,6 +2647,11 @@ pub struct IFtpPreprocessProvider_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Iis\"`*"]
 #[repr(transparent)]
 pub struct IFtpProviderConstruct(::windows::core::IUnknown);
+impl ::core::clone::Clone for IFtpProviderConstruct {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IFtpProviderConstruct {
     #[doc = "*Required features: `\"Win32_System_Iis\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -2638,11 +2677,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IFtpProvi
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IFtpProviderConstruct {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IFtpProviderConstruct {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IFtpProviderConstruct {
@@ -2672,6 +2706,11 @@ pub struct IFtpProviderConstruct_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Iis\"`*"]
 #[repr(transparent)]
 pub struct IFtpRoleProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IFtpRoleProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IFtpRoleProvider {
     #[doc = "*Required features: `\"Win32_System_Iis\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -2698,11 +2737,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IFtpRoleP
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IFtpRoleProvider {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IFtpRoleProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IFtpRoleProvider {
@@ -2918,6 +2952,11 @@ pub const IMGTRANS_OPAQUE: u32 = 536870912u32;
 #[doc = "*Required features: `\"Win32_System_Iis\"`*"]
 #[repr(transparent)]
 pub struct IMSAdminBase2W(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMSAdminBase2W {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMSAdminBase2W {
     #[doc = "*Required features: `\"Win32_System_Iis\"`*"]
     pub unsafe fn AddKey<'a, Param1: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, hmdhandle: u32, pszmdpath: Param1) -> ::windows::core::Result<()> {
@@ -3119,11 +3158,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMSAdminBaseW> for &'a IMSAdminBase2W {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMSAdminBase2W {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMSAdminBase2W {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3156,6 +3190,11 @@ pub struct IMSAdminBase2W_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Iis\"`*"]
 #[repr(transparent)]
 pub struct IMSAdminBase3W(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMSAdminBase3W {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMSAdminBase3W {
     #[doc = "*Required features: `\"Win32_System_Iis\"`*"]
     pub unsafe fn AddKey<'a, Param1: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, hmdhandle: u32, pszmdpath: Param1) -> ::windows::core::Result<()> {
@@ -3381,11 +3420,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMSAdminBase2W> for &'a IMSAdminBase3W {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMSAdminBase3W {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMSAdminBase3W {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3410,6 +3444,11 @@ pub struct IMSAdminBase3W_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Iis\"`*"]
 #[repr(transparent)]
 pub struct IMSAdminBaseSinkW(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMSAdminBaseSinkW {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMSAdminBaseSinkW {
     #[doc = "*Required features: `\"Win32_System_Iis\"`*"]
     pub unsafe fn SinkNotify(&self, pcochangelist: &[MD_CHANGE_OBJECT_W]) -> ::windows::core::Result<()> {
@@ -3440,11 +3479,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMSAd
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMSAdminBaseSinkW {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMSAdminBaseSinkW {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3470,6 +3504,11 @@ pub struct IMSAdminBaseSinkW_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Iis\"`*"]
 #[repr(transparent)]
 pub struct IMSAdminBaseW(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMSAdminBaseW {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMSAdminBaseW {
     #[doc = "*Required features: `\"Win32_System_Iis\"`*"]
     pub unsafe fn AddKey<'a, Param1: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, hmdhandle: u32, pszmdpath: Param1) -> ::windows::core::Result<()> {
@@ -3626,11 +3665,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMSAd
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMSAdminBaseW {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMSAdminBaseW {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3700,6 +3734,11 @@ pub struct IMSAdminBaseW_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Iis\"`*"]
 #[repr(transparent)]
 pub struct IMSImpExpHelpW(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMSImpExpHelpW {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMSImpExpHelpW {
     #[doc = "*Required features: `\"Win32_System_Iis\"`*"]
     pub unsafe fn EnumeratePathsInFile<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param1: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, pszfilename: Param0, pszkeytype: Param1, pszbuffer: &mut [u16], pdwmdrequiredbuffersize: *mut u32) -> ::windows::core::Result<()> {
@@ -3724,11 +3763,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IMSImpExp
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMSImpExpHelpW {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IMSImpExpHelpW {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IMSImpExpHelpW {
@@ -3809,6 +3843,7 @@ impl ::core::fmt::Debug for LOGGING_PARAMETERS {
 }
 unsafe impl ::windows::core::Abi for LOGGING_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for LOGGING_PARAMETERS {
     fn eq(&self, other: &Self) -> bool {
@@ -4252,6 +4287,7 @@ impl ::core::fmt::Debug for MD_CHANGE_OBJECT_W {
 }
 unsafe impl ::windows::core::Abi for MD_CHANGE_OBJECT_W {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MD_CHANGE_OBJECT_W {
     fn eq(&self, other: &Self) -> bool {
@@ -5159,6 +5195,7 @@ impl ::core::default::Default for METADATATYPES {
 }
 unsafe impl ::windows::core::Abi for METADATATYPES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for METADATATYPES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5186,6 +5223,7 @@ impl ::core::clone::Clone for METADATA_GETALL_INTERNAL_RECORD {
 }
 unsafe impl ::windows::core::Abi for METADATA_GETALL_INTERNAL_RECORD {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for METADATA_GETALL_INTERNAL_RECORD {
     fn eq(&self, other: &Self) -> bool {
@@ -5212,6 +5250,7 @@ impl ::core::clone::Clone for METADATA_GETALL_INTERNAL_RECORD_0 {
 }
 unsafe impl ::windows::core::Abi for METADATA_GETALL_INTERNAL_RECORD_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for METADATA_GETALL_INTERNAL_RECORD_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -5248,6 +5287,7 @@ impl ::core::fmt::Debug for METADATA_GETALL_RECORD {
 }
 unsafe impl ::windows::core::Abi for METADATA_GETALL_RECORD {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for METADATA_GETALL_RECORD {
     fn eq(&self, other: &Self) -> bool {
@@ -5279,6 +5319,7 @@ impl ::core::fmt::Debug for METADATA_HANDLE_INFO {
 }
 unsafe impl ::windows::core::Abi for METADATA_HANDLE_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for METADATA_HANDLE_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -5337,6 +5378,7 @@ impl ::core::fmt::Debug for METADATA_RECORD {
 }
 unsafe impl ::windows::core::Abi for METADATA_RECORD {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for METADATA_RECORD {
     fn eq(&self, other: &Self) -> bool {
@@ -5452,6 +5494,7 @@ impl ::core::fmt::Debug for POST_PROCESS_PARAMETERS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for POST_PROCESS_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for POST_PROCESS_PARAMETERS {
@@ -5516,6 +5559,7 @@ impl ::core::fmt::Debug for PRE_PROCESS_PARAMETERS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PRE_PROCESS_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for PRE_PROCESS_PARAMETERS {
@@ -5604,6 +5648,7 @@ impl ::core::default::Default for SF_PROPERTY_IIS {
 }
 unsafe impl ::windows::core::Abi for SF_PROPERTY_IIS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SF_PROPERTY_IIS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5645,6 +5690,7 @@ impl ::core::default::Default for SF_REQ_TYPE {
 }
 unsafe impl ::windows::core::Abi for SF_REQ_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SF_REQ_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5680,6 +5726,7 @@ impl ::core::default::Default for SF_STATUS_TYPE {
 }
 unsafe impl ::windows::core::Abi for SF_STATUS_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SF_STATUS_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

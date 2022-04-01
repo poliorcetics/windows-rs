@@ -183,6 +183,7 @@ impl ::core::fmt::Debug for D3D12_AUTO_BREADCRUMB_NODE {
 }
 unsafe impl ::windows::core::Abi for D3D12_AUTO_BREADCRUMB_NODE {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_AUTO_BREADCRUMB_NODE {
     fn eq(&self, other: &Self) -> bool {
@@ -249,6 +250,7 @@ impl ::core::fmt::Debug for D3D12_AUTO_BREADCRUMB_NODE1 {
 }
 unsafe impl ::windows::core::Abi for D3D12_AUTO_BREADCRUMB_NODE1 {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_AUTO_BREADCRUMB_NODE1 {
     fn eq(&self, other: &Self) -> bool {
@@ -368,6 +370,7 @@ impl ::core::default::Default for D3D12_AUTO_BREADCRUMB_OP {
 }
 unsafe impl ::windows::core::Abi for D3D12_AUTO_BREADCRUMB_OP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_AUTO_BREADCRUMB_OP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -397,6 +400,7 @@ impl ::core::default::Default for D3D12_AXIS_SHADING_RATE {
 }
 unsafe impl ::windows::core::Abi for D3D12_AXIS_SHADING_RATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_AXIS_SHADING_RATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -428,6 +432,7 @@ impl ::core::default::Default for D3D12_BACKGROUND_PROCESSING_MODE {
 }
 unsafe impl ::windows::core::Abi for D3D12_BACKGROUND_PROCESSING_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_BACKGROUND_PROCESSING_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -485,6 +490,7 @@ impl ::core::default::Default for D3D12_BLEND {
 }
 unsafe impl ::windows::core::Abi for D3D12_BLEND {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_BLEND {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -516,6 +522,7 @@ impl ::core::fmt::Debug for D3D12_BLEND_DESC {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3D12_BLEND_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3D12_BLEND_DESC {
@@ -558,6 +565,7 @@ impl ::core::default::Default for D3D12_BLEND_OP {
 }
 unsafe impl ::windows::core::Abi for D3D12_BLEND_OP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_BLEND_OP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -587,6 +595,7 @@ impl ::core::fmt::Debug for D3D12_BOX {
 }
 unsafe impl ::windows::core::Abi for D3D12_BOX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_BOX {
     fn eq(&self, other: &Self) -> bool {
@@ -618,6 +627,7 @@ impl ::core::fmt::Debug for D3D12_BUFFER_RTV {
 }
 unsafe impl ::windows::core::Abi for D3D12_BUFFER_RTV {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_BUFFER_RTV {
     fn eq(&self, other: &Self) -> bool {
@@ -651,6 +661,7 @@ impl ::core::fmt::Debug for D3D12_BUFFER_SRV {
 }
 unsafe impl ::windows::core::Abi for D3D12_BUFFER_SRV {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_BUFFER_SRV {
     fn eq(&self, other: &Self) -> bool {
@@ -684,6 +695,7 @@ impl ::core::default::Default for D3D12_BUFFER_SRV_FLAGS {
 }
 unsafe impl ::windows::core::Abi for D3D12_BUFFER_SRV_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_BUFFER_SRV_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -740,6 +752,7 @@ impl ::core::fmt::Debug for D3D12_BUFFER_UAV {
 }
 unsafe impl ::windows::core::Abi for D3D12_BUFFER_UAV {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_BUFFER_UAV {
     fn eq(&self, other: &Self) -> bool {
@@ -773,6 +786,7 @@ impl ::core::default::Default for D3D12_BUFFER_UAV_FLAGS {
 }
 unsafe impl ::windows::core::Abi for D3D12_BUFFER_UAV_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_BUFFER_UAV_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -827,6 +841,7 @@ impl ::core::clone::Clone for D3D12_BUILD_RAYTRACING_ACCELERATION_STRUCTURE_DESC
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 unsafe impl ::windows::core::Abi for D3D12_BUILD_RAYTRACING_ACCELERATION_STRUCTURE_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 impl ::core::cmp::PartialEq for D3D12_BUILD_RAYTRACING_ACCELERATION_STRUCTURE_DESC {
@@ -863,6 +878,7 @@ impl ::core::clone::Clone for D3D12_BUILD_RAYTRACING_ACCELERATION_STRUCTURE_INPU
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 unsafe impl ::windows::core::Abi for D3D12_BUILD_RAYTRACING_ACCELERATION_STRUCTURE_INPUTS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 impl ::core::cmp::PartialEq for D3D12_BUILD_RAYTRACING_ACCELERATION_STRUCTURE_INPUTS {
@@ -897,6 +913,7 @@ impl ::core::clone::Clone for D3D12_BUILD_RAYTRACING_ACCELERATION_STRUCTURE_INPU
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 unsafe impl ::windows::core::Abi for D3D12_BUILD_RAYTRACING_ACCELERATION_STRUCTURE_INPUTS_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 impl ::core::cmp::PartialEq for D3D12_BUILD_RAYTRACING_ACCELERATION_STRUCTURE_INPUTS_0 {
@@ -931,6 +948,7 @@ impl ::core::fmt::Debug for D3D12_BUILD_RAYTRACING_ACCELERATION_STRUCTURE_TOOLS_
 }
 unsafe impl ::windows::core::Abi for D3D12_BUILD_RAYTRACING_ACCELERATION_STRUCTURE_TOOLS_VISUALIZATION_HEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_BUILD_RAYTRACING_ACCELERATION_STRUCTURE_TOOLS_VISUALIZATION_HEADER {
     fn eq(&self, other: &Self) -> bool {
@@ -962,6 +980,7 @@ impl ::core::fmt::Debug for D3D12_CACHED_PIPELINE_STATE {
 }
 unsafe impl ::windows::core::Abi for D3D12_CACHED_PIPELINE_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_CACHED_PIPELINE_STATE {
     fn eq(&self, other: &Self) -> bool {
@@ -995,6 +1014,7 @@ impl ::core::default::Default for D3D12_CLEAR_FLAGS {
 }
 unsafe impl ::windows::core::Abi for D3D12_CLEAR_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_CLEAR_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1047,6 +1067,7 @@ impl ::core::clone::Clone for D3D12_CLEAR_VALUE {
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 unsafe impl ::windows::core::Abi for D3D12_CLEAR_VALUE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 impl ::core::cmp::PartialEq for D3D12_CLEAR_VALUE {
@@ -1080,6 +1101,7 @@ impl ::core::clone::Clone for D3D12_CLEAR_VALUE_0 {
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 unsafe impl ::windows::core::Abi for D3D12_CLEAR_VALUE_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 impl ::core::cmp::PartialEq for D3D12_CLEAR_VALUE_0 {
@@ -1126,6 +1148,7 @@ impl ::core::default::Default for D3D12_COLOR_WRITE_ENABLE {
 }
 unsafe impl ::windows::core::Abi for D3D12_COLOR_WRITE_ENABLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_COLOR_WRITE_ENABLE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1151,6 +1174,7 @@ impl ::core::default::Default for D3D12_COMMAND_LIST_FLAGS {
 }
 unsafe impl ::windows::core::Abi for D3D12_COMMAND_LIST_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_COMMAND_LIST_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1218,6 +1242,7 @@ impl ::core::default::Default for D3D12_COMMAND_LIST_SUPPORT_FLAGS {
 }
 unsafe impl ::windows::core::Abi for D3D12_COMMAND_LIST_SUPPORT_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_COMMAND_LIST_SUPPORT_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1283,6 +1308,7 @@ impl ::core::default::Default for D3D12_COMMAND_LIST_TYPE {
 }
 unsafe impl ::windows::core::Abi for D3D12_COMMAND_LIST_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_COMMAND_LIST_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1308,6 +1334,7 @@ impl ::core::default::Default for D3D12_COMMAND_POOL_FLAGS {
 }
 unsafe impl ::windows::core::Abi for D3D12_COMMAND_POOL_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_COMMAND_POOL_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1363,6 +1390,7 @@ impl ::core::fmt::Debug for D3D12_COMMAND_QUEUE_DESC {
 }
 unsafe impl ::windows::core::Abi for D3D12_COMMAND_QUEUE_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_COMMAND_QUEUE_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -1396,6 +1424,7 @@ impl ::core::default::Default for D3D12_COMMAND_QUEUE_FLAGS {
 }
 unsafe impl ::windows::core::Abi for D3D12_COMMAND_QUEUE_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_COMMAND_QUEUE_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1453,6 +1482,7 @@ impl ::core::default::Default for D3D12_COMMAND_QUEUE_PRIORITY {
 }
 unsafe impl ::windows::core::Abi for D3D12_COMMAND_QUEUE_PRIORITY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_COMMAND_QUEUE_PRIORITY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1478,6 +1508,7 @@ impl ::core::default::Default for D3D12_COMMAND_RECORDER_FLAGS {
 }
 unsafe impl ::windows::core::Abi for D3D12_COMMAND_RECORDER_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_COMMAND_RECORDER_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1533,6 +1564,7 @@ impl ::core::fmt::Debug for D3D12_COMMAND_SIGNATURE_DESC {
 }
 unsafe impl ::windows::core::Abi for D3D12_COMMAND_SIGNATURE_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_COMMAND_SIGNATURE_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -1648,6 +1680,7 @@ impl ::core::default::Default for D3D12_COMPARISON_FUNC {
 }
 unsafe impl ::windows::core::Abi for D3D12_COMPARISON_FUNC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_COMPARISON_FUNC {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1675,6 +1708,7 @@ impl ::core::fmt::Debug for D3D12_COMPUTE_PIPELINE_STATE_DESC {
 }
 unsafe impl ::windows::core::Abi for D3D12_COMPUTE_PIPELINE_STATE_DESC {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_COMPUTE_PIPELINE_STATE_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -1708,6 +1742,7 @@ impl ::core::default::Default for D3D12_CONSERVATIVE_RASTERIZATION_MODE {
 }
 unsafe impl ::windows::core::Abi for D3D12_CONSERVATIVE_RASTERIZATION_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_CONSERVATIVE_RASTERIZATION_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1739,6 +1774,7 @@ impl ::core::default::Default for D3D12_CONSERVATIVE_RASTERIZATION_TIER {
 }
 unsafe impl ::windows::core::Abi for D3D12_CONSERVATIVE_RASTERIZATION_TIER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_CONSERVATIVE_RASTERIZATION_TIER {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1766,6 +1802,7 @@ impl ::core::fmt::Debug for D3D12_CONSTANT_BUFFER_VIEW_DESC {
 }
 unsafe impl ::windows::core::Abi for D3D12_CONSTANT_BUFFER_VIEW_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_CONSTANT_BUFFER_VIEW_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -1796,6 +1833,7 @@ impl ::core::fmt::Debug for D3D12_CPU_DESCRIPTOR_HANDLE {
 }
 unsafe impl ::windows::core::Abi for D3D12_CPU_DESCRIPTOR_HANDLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_CPU_DESCRIPTOR_HANDLE {
     fn eq(&self, other: &Self) -> bool {
@@ -1833,6 +1871,7 @@ impl ::core::default::Default for D3D12_CPU_PAGE_PROPERTY {
 }
 unsafe impl ::windows::core::Abi for D3D12_CPU_PAGE_PROPERTY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_CPU_PAGE_PROPERTY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1866,6 +1905,7 @@ impl ::core::default::Default for D3D12_CROSS_NODE_SHARING_TIER {
 }
 unsafe impl ::windows::core::Abi for D3D12_CROSS_NODE_SHARING_TIER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_CROSS_NODE_SHARING_TIER {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2013,6 +2053,7 @@ impl ::core::default::Default for D3D12_CULL_MODE {
 }
 unsafe impl ::windows::core::Abi for D3D12_CULL_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_CULL_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2037,6 +2078,7 @@ impl ::core::fmt::Debug for D3D12_DEBUG_COMMAND_LIST_GPU_BASED_VALIDATION_SETTIN
 }
 unsafe impl ::windows::core::Abi for D3D12_DEBUG_COMMAND_LIST_GPU_BASED_VALIDATION_SETTINGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_DEBUG_COMMAND_LIST_GPU_BASED_VALIDATION_SETTINGS {
     fn eq(&self, other: &Self) -> bool {
@@ -2068,6 +2110,7 @@ impl ::core::default::Default for D3D12_DEBUG_COMMAND_LIST_PARAMETER_TYPE {
 }
 unsafe impl ::windows::core::Abi for D3D12_DEBUG_COMMAND_LIST_PARAMETER_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_DEBUG_COMMAND_LIST_PARAMETER_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2094,6 +2137,7 @@ impl ::core::fmt::Debug for D3D12_DEBUG_DEVICE_GPU_BASED_VALIDATION_SETTINGS {
 }
 unsafe impl ::windows::core::Abi for D3D12_DEBUG_DEVICE_GPU_BASED_VALIDATION_SETTINGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_DEBUG_DEVICE_GPU_BASED_VALIDATION_SETTINGS {
     fn eq(&self, other: &Self) -> bool {
@@ -2124,6 +2168,7 @@ impl ::core::fmt::Debug for D3D12_DEBUG_DEVICE_GPU_SLOWDOWN_PERFORMANCE_FACTOR {
 }
 unsafe impl ::windows::core::Abi for D3D12_DEBUG_DEVICE_GPU_SLOWDOWN_PERFORMANCE_FACTOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_DEBUG_DEVICE_GPU_SLOWDOWN_PERFORMANCE_FACTOR {
     fn eq(&self, other: &Self) -> bool {
@@ -2159,6 +2204,7 @@ impl ::core::default::Default for D3D12_DEBUG_DEVICE_PARAMETER_TYPE {
 }
 unsafe impl ::windows::core::Abi for D3D12_DEBUG_DEVICE_PARAMETER_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_DEBUG_DEVICE_PARAMETER_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2192,6 +2238,7 @@ impl ::core::default::Default for D3D12_DEBUG_FEATURE {
 }
 unsafe impl ::windows::core::Abi for D3D12_DEBUG_FEATURE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_DEBUG_FEATURE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2277,6 +2324,7 @@ impl ::core::fmt::Debug for D3D12_DEPTH_STENCILOP_DESC {
 }
 unsafe impl ::windows::core::Abi for D3D12_DEPTH_STENCILOP_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_DEPTH_STENCILOP_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -2319,6 +2367,7 @@ impl ::core::fmt::Debug for D3D12_DEPTH_STENCIL_DESC {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3D12_DEPTH_STENCIL_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3D12_DEPTH_STENCIL_DESC {
@@ -2365,6 +2414,7 @@ impl ::core::fmt::Debug for D3D12_DEPTH_STENCIL_DESC1 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3D12_DEPTH_STENCIL_DESC1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3D12_DEPTH_STENCIL_DESC1 {
@@ -2399,6 +2449,7 @@ impl ::core::fmt::Debug for D3D12_DEPTH_STENCIL_VALUE {
 }
 unsafe impl ::windows::core::Abi for D3D12_DEPTH_STENCIL_VALUE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_DEPTH_STENCIL_VALUE {
     fn eq(&self, other: &Self) -> bool {
@@ -2431,6 +2482,7 @@ impl ::core::clone::Clone for D3D12_DEPTH_STENCIL_VIEW_DESC {
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 unsafe impl ::windows::core::Abi for D3D12_DEPTH_STENCIL_VIEW_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 impl ::core::cmp::PartialEq for D3D12_DEPTH_STENCIL_VIEW_DESC {
@@ -2468,6 +2520,7 @@ impl ::core::clone::Clone for D3D12_DEPTH_STENCIL_VIEW_DESC_0 {
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 unsafe impl ::windows::core::Abi for D3D12_DEPTH_STENCIL_VIEW_DESC_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 impl ::core::cmp::PartialEq for D3D12_DEPTH_STENCIL_VIEW_DESC_0 {
@@ -2504,6 +2557,7 @@ impl ::core::default::Default for D3D12_DEPTH_WRITE_MASK {
 }
 unsafe impl ::windows::core::Abi for D3D12_DEPTH_WRITE_MASK {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_DEPTH_WRITE_MASK {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2531,6 +2585,7 @@ impl ::core::fmt::Debug for D3D12_DESCRIPTOR_HEAP_DESC {
 }
 unsafe impl ::windows::core::Abi for D3D12_DESCRIPTOR_HEAP_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_DESCRIPTOR_HEAP_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -2564,6 +2619,7 @@ impl ::core::default::Default for D3D12_DESCRIPTOR_HEAP_FLAGS {
 }
 unsafe impl ::windows::core::Abi for D3D12_DESCRIPTOR_HEAP_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_DESCRIPTOR_HEAP_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2625,6 +2681,7 @@ impl ::core::default::Default for D3D12_DESCRIPTOR_HEAP_TYPE {
 }
 unsafe impl ::windows::core::Abi for D3D12_DESCRIPTOR_HEAP_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_DESCRIPTOR_HEAP_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2653,6 +2710,7 @@ impl ::core::fmt::Debug for D3D12_DESCRIPTOR_RANGE {
 }
 unsafe impl ::windows::core::Abi for D3D12_DESCRIPTOR_RANGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_DESCRIPTOR_RANGE {
     fn eq(&self, other: &Self) -> bool {
@@ -2688,6 +2746,7 @@ impl ::core::fmt::Debug for D3D12_DESCRIPTOR_RANGE1 {
 }
 unsafe impl ::windows::core::Abi for D3D12_DESCRIPTOR_RANGE1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_DESCRIPTOR_RANGE1 {
     fn eq(&self, other: &Self) -> bool {
@@ -2729,6 +2788,7 @@ impl ::core::default::Default for D3D12_DESCRIPTOR_RANGE_FLAGS {
 }
 unsafe impl ::windows::core::Abi for D3D12_DESCRIPTOR_RANGE_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_DESCRIPTOR_RANGE_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2790,6 +2850,7 @@ impl ::core::default::Default for D3D12_DESCRIPTOR_RANGE_TYPE {
 }
 unsafe impl ::windows::core::Abi for D3D12_DESCRIPTOR_RANGE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_DESCRIPTOR_RANGE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2815,6 +2876,7 @@ impl ::core::fmt::Debug for D3D12_DEVICE_REMOVED_EXTENDED_DATA {
 }
 unsafe impl ::windows::core::Abi for D3D12_DEVICE_REMOVED_EXTENDED_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_DEVICE_REMOVED_EXTENDED_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -2847,6 +2909,7 @@ impl ::core::fmt::Debug for D3D12_DEVICE_REMOVED_EXTENDED_DATA1 {
 }
 unsafe impl ::windows::core::Abi for D3D12_DEVICE_REMOVED_EXTENDED_DATA1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_DEVICE_REMOVED_EXTENDED_DATA1 {
     fn eq(&self, other: &Self) -> bool {
@@ -2879,6 +2942,7 @@ impl ::core::fmt::Debug for D3D12_DEVICE_REMOVED_EXTENDED_DATA2 {
 }
 unsafe impl ::windows::core::Abi for D3D12_DEVICE_REMOVED_EXTENDED_DATA2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_DEVICE_REMOVED_EXTENDED_DATA2 {
     fn eq(&self, other: &Self) -> bool {
@@ -2912,6 +2976,7 @@ impl ::core::fmt::Debug for D3D12_DEVICE_REMOVED_EXTENDED_DATA3 {
 }
 unsafe impl ::windows::core::Abi for D3D12_DEVICE_REMOVED_EXTENDED_DATA3 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_DEVICE_REMOVED_EXTENDED_DATA3 {
     fn eq(&self, other: &Self) -> bool {
@@ -2950,6 +3015,7 @@ impl ::core::fmt::Debug for D3D12_DISCARD_REGION {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3D12_DISCARD_REGION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3D12_DISCARD_REGION {
@@ -2985,6 +3051,7 @@ impl ::core::fmt::Debug for D3D12_DISPATCH_ARGUMENTS {
 }
 unsafe impl ::windows::core::Abi for D3D12_DISPATCH_ARGUMENTS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_DISPATCH_ARGUMENTS {
     fn eq(&self, other: &Self) -> bool {
@@ -3017,6 +3084,7 @@ impl ::core::fmt::Debug for D3D12_DISPATCH_MESH_ARGUMENTS {
 }
 unsafe impl ::windows::core::Abi for D3D12_DISPATCH_MESH_ARGUMENTS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_DISPATCH_MESH_ARGUMENTS {
     fn eq(&self, other: &Self) -> bool {
@@ -3053,6 +3121,7 @@ impl ::core::fmt::Debug for D3D12_DISPATCH_RAYS_DESC {
 }
 unsafe impl ::windows::core::Abi for D3D12_DISPATCH_RAYS_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_DISPATCH_RAYS_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -3086,6 +3155,7 @@ impl ::core::fmt::Debug for D3D12_DRAW_ARGUMENTS {
 }
 unsafe impl ::windows::core::Abi for D3D12_DRAW_ARGUMENTS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_DRAW_ARGUMENTS {
     fn eq(&self, other: &Self) -> bool {
@@ -3120,6 +3190,7 @@ impl ::core::fmt::Debug for D3D12_DRAW_INDEXED_ARGUMENTS {
 }
 unsafe impl ::windows::core::Abi for D3D12_DRAW_INDEXED_ARGUMENTS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_DRAW_INDEXED_ARGUMENTS {
     fn eq(&self, other: &Self) -> bool {
@@ -3153,6 +3224,7 @@ impl ::core::fmt::Debug for D3D12_DRED_ALLOCATION_NODE {
 }
 unsafe impl ::windows::core::Abi for D3D12_DRED_ALLOCATION_NODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_DRED_ALLOCATION_NODE {
     fn eq(&self, other: &Self) -> bool {
@@ -3192,6 +3264,7 @@ impl ::core::fmt::Debug for D3D12_DRED_ALLOCATION_NODE1 {
 }
 unsafe impl ::windows::core::Abi for D3D12_DRED_ALLOCATION_NODE1 {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_DRED_ALLOCATION_NODE1 {
     fn eq(&self, other: &Self) -> bool {
@@ -3279,6 +3352,7 @@ impl ::core::default::Default for D3D12_DRED_ALLOCATION_TYPE {
 }
 unsafe impl ::windows::core::Abi for D3D12_DRED_ALLOCATION_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_DRED_ALLOCATION_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3303,6 +3377,7 @@ impl ::core::fmt::Debug for D3D12_DRED_AUTO_BREADCRUMBS_OUTPUT {
 }
 unsafe impl ::windows::core::Abi for D3D12_DRED_AUTO_BREADCRUMBS_OUTPUT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_DRED_AUTO_BREADCRUMBS_OUTPUT {
     fn eq(&self, other: &Self) -> bool {
@@ -3333,6 +3408,7 @@ impl ::core::fmt::Debug for D3D12_DRED_AUTO_BREADCRUMBS_OUTPUT1 {
 }
 unsafe impl ::windows::core::Abi for D3D12_DRED_AUTO_BREADCRUMBS_OUTPUT1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_DRED_AUTO_BREADCRUMBS_OUTPUT1 {
     fn eq(&self, other: &Self) -> bool {
@@ -3364,6 +3440,7 @@ impl ::core::fmt::Debug for D3D12_DRED_BREADCRUMB_CONTEXT {
 }
 unsafe impl ::windows::core::Abi for D3D12_DRED_BREADCRUMB_CONTEXT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_DRED_BREADCRUMB_CONTEXT {
     fn eq(&self, other: &Self) -> bool {
@@ -3401,6 +3478,7 @@ impl ::core::default::Default for D3D12_DRED_DEVICE_STATE {
 }
 unsafe impl ::windows::core::Abi for D3D12_DRED_DEVICE_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_DRED_DEVICE_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3430,6 +3508,7 @@ impl ::core::default::Default for D3D12_DRED_ENABLEMENT {
 }
 unsafe impl ::windows::core::Abi for D3D12_DRED_ENABLEMENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_DRED_ENABLEMENT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3459,6 +3538,7 @@ impl ::core::default::Default for D3D12_DRED_FLAGS {
 }
 unsafe impl ::windows::core::Abi for D3D12_DRED_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_DRED_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3512,6 +3592,7 @@ impl ::core::default::Default for D3D12_DRED_PAGE_FAULT_FLAGS {
 }
 unsafe impl ::windows::core::Abi for D3D12_DRED_PAGE_FAULT_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_DRED_PAGE_FAULT_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3566,6 +3647,7 @@ impl ::core::fmt::Debug for D3D12_DRED_PAGE_FAULT_OUTPUT {
 }
 unsafe impl ::windows::core::Abi for D3D12_DRED_PAGE_FAULT_OUTPUT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_DRED_PAGE_FAULT_OUTPUT {
     fn eq(&self, other: &Self) -> bool {
@@ -3598,6 +3680,7 @@ impl ::core::fmt::Debug for D3D12_DRED_PAGE_FAULT_OUTPUT1 {
 }
 unsafe impl ::windows::core::Abi for D3D12_DRED_PAGE_FAULT_OUTPUT1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_DRED_PAGE_FAULT_OUTPUT1 {
     fn eq(&self, other: &Self) -> bool {
@@ -3631,6 +3714,7 @@ impl ::core::fmt::Debug for D3D12_DRED_PAGE_FAULT_OUTPUT2 {
 }
 unsafe impl ::windows::core::Abi for D3D12_DRED_PAGE_FAULT_OUTPUT2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_DRED_PAGE_FAULT_OUTPUT2 {
     fn eq(&self, other: &Self) -> bool {
@@ -3668,6 +3752,7 @@ impl ::core::default::Default for D3D12_DRED_VERSION {
 }
 unsafe impl ::windows::core::Abi for D3D12_DRED_VERSION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_DRED_VERSION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3701,6 +3786,7 @@ impl ::core::default::Default for D3D12_DRIVER_MATCHING_IDENTIFIER_STATUS {
 }
 unsafe impl ::windows::core::Abi for D3D12_DRIVER_MATCHING_IDENTIFIER_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_DRIVER_MATCHING_IDENTIFIER_STATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3742,6 +3828,7 @@ impl ::core::default::Default for D3D12_DSV_DIMENSION {
 }
 unsafe impl ::windows::core::Abi for D3D12_DSV_DIMENSION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_DSV_DIMENSION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3771,6 +3858,7 @@ impl ::core::default::Default for D3D12_DSV_FLAGS {
 }
 unsafe impl ::windows::core::Abi for D3D12_DSV_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_DSV_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3873,6 +3961,7 @@ impl ::core::fmt::Debug for D3D12_DXIL_LIBRARY_DESC {
 }
 unsafe impl ::windows::core::Abi for D3D12_DXIL_LIBRARY_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_DXIL_LIBRARY_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -3905,6 +3994,7 @@ impl ::core::fmt::Debug for D3D12_DXIL_SUBOBJECT_TO_EXPORTS_ASSOCIATION {
 }
 unsafe impl ::windows::core::Abi for D3D12_DXIL_SUBOBJECT_TO_EXPORTS_ASSOCIATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_DXIL_SUBOBJECT_TO_EXPORTS_ASSOCIATION {
     fn eq(&self, other: &Self) -> bool {
@@ -3938,6 +4028,7 @@ impl ::core::default::Default for D3D12_ELEMENTS_LAYOUT {
 }
 unsafe impl ::windows::core::Abi for D3D12_ELEMENTS_LAYOUT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_ELEMENTS_LAYOUT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3963,6 +4054,7 @@ impl ::core::fmt::Debug for D3D12_EXISTING_COLLECTION_DESC {
 }
 unsafe impl ::windows::core::Abi for D3D12_EXISTING_COLLECTION_DESC {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_EXISTING_COLLECTION_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -3995,6 +4087,7 @@ impl ::core::fmt::Debug for D3D12_EXPORT_DESC {
 }
 unsafe impl ::windows::core::Abi for D3D12_EXPORT_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_EXPORT_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -4026,6 +4119,7 @@ impl ::core::default::Default for D3D12_EXPORT_FLAGS {
 }
 unsafe impl ::windows::core::Abi for D3D12_EXPORT_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_EXPORT_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4139,6 +4233,7 @@ impl ::core::default::Default for D3D12_FEATURE {
 }
 unsafe impl ::windows::core::Abi for D3D12_FEATURE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_FEATURE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4171,6 +4266,7 @@ impl ::core::fmt::Debug for D3D12_FEATURE_DATA_ARCHITECTURE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3D12_FEATURE_DATA_ARCHITECTURE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3D12_FEATURE_DATA_ARCHITECTURE {
@@ -4213,6 +4309,7 @@ impl ::core::fmt::Debug for D3D12_FEATURE_DATA_ARCHITECTURE1 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3D12_FEATURE_DATA_ARCHITECTURE1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3D12_FEATURE_DATA_ARCHITECTURE1 {
@@ -4253,6 +4350,7 @@ impl ::core::fmt::Debug for D3D12_FEATURE_DATA_COMMAND_QUEUE_PRIORITY {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3D12_FEATURE_DATA_COMMAND_QUEUE_PRIORITY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3D12_FEATURE_DATA_COMMAND_QUEUE_PRIORITY {
@@ -4292,6 +4390,7 @@ impl ::core::fmt::Debug for D3D12_FEATURE_DATA_CROSS_NODE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3D12_FEATURE_DATA_CROSS_NODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3D12_FEATURE_DATA_CROSS_NODE {
@@ -4360,6 +4459,7 @@ impl ::core::fmt::Debug for D3D12_FEATURE_DATA_D3D12_OPTIONS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3D12_FEATURE_DATA_D3D12_OPTIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3D12_FEATURE_DATA_D3D12_OPTIONS {
@@ -4403,6 +4503,7 @@ impl ::core::fmt::Debug for D3D12_FEATURE_DATA_D3D12_OPTIONS1 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3D12_FEATURE_DATA_D3D12_OPTIONS1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3D12_FEATURE_DATA_D3D12_OPTIONS1 {
@@ -4442,6 +4543,7 @@ impl ::core::fmt::Debug for D3D12_FEATURE_DATA_D3D12_OPTIONS10 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3D12_FEATURE_DATA_D3D12_OPTIONS10 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3D12_FEATURE_DATA_D3D12_OPTIONS10 {
@@ -4480,6 +4582,7 @@ impl ::core::fmt::Debug for D3D12_FEATURE_DATA_D3D12_OPTIONS11 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3D12_FEATURE_DATA_D3D12_OPTIONS11 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3D12_FEATURE_DATA_D3D12_OPTIONS11 {
@@ -4519,6 +4622,7 @@ impl ::core::fmt::Debug for D3D12_FEATURE_DATA_D3D12_OPTIONS2 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3D12_FEATURE_DATA_D3D12_OPTIONS2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3D12_FEATURE_DATA_D3D12_OPTIONS2 {
@@ -4561,6 +4665,7 @@ impl ::core::fmt::Debug for D3D12_FEATURE_DATA_D3D12_OPTIONS3 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3D12_FEATURE_DATA_D3D12_OPTIONS3 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3D12_FEATURE_DATA_D3D12_OPTIONS3 {
@@ -4601,6 +4706,7 @@ impl ::core::fmt::Debug for D3D12_FEATURE_DATA_D3D12_OPTIONS4 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3D12_FEATURE_DATA_D3D12_OPTIONS4 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3D12_FEATURE_DATA_D3D12_OPTIONS4 {
@@ -4641,6 +4747,7 @@ impl ::core::fmt::Debug for D3D12_FEATURE_DATA_D3D12_OPTIONS5 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3D12_FEATURE_DATA_D3D12_OPTIONS5 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3D12_FEATURE_DATA_D3D12_OPTIONS5 {
@@ -4683,6 +4790,7 @@ impl ::core::fmt::Debug for D3D12_FEATURE_DATA_D3D12_OPTIONS6 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3D12_FEATURE_DATA_D3D12_OPTIONS6 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3D12_FEATURE_DATA_D3D12_OPTIONS6 {
@@ -4717,6 +4825,7 @@ impl ::core::fmt::Debug for D3D12_FEATURE_DATA_D3D12_OPTIONS7 {
 }
 unsafe impl ::windows::core::Abi for D3D12_FEATURE_DATA_D3D12_OPTIONS7 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_FEATURE_DATA_D3D12_OPTIONS7 {
     fn eq(&self, other: &Self) -> bool {
@@ -4752,6 +4861,7 @@ impl ::core::fmt::Debug for D3D12_FEATURE_DATA_D3D12_OPTIONS8 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3D12_FEATURE_DATA_D3D12_OPTIONS8 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3D12_FEATURE_DATA_D3D12_OPTIONS8 {
@@ -4802,6 +4912,7 @@ impl ::core::fmt::Debug for D3D12_FEATURE_DATA_D3D12_OPTIONS9 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3D12_FEATURE_DATA_D3D12_OPTIONS9 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3D12_FEATURE_DATA_D3D12_OPTIONS9 {
@@ -4841,6 +4952,7 @@ impl ::core::fmt::Debug for D3D12_FEATURE_DATA_DISPLAYABLE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3D12_FEATURE_DATA_DISPLAYABLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3D12_FEATURE_DATA_DISPLAYABLE {
@@ -4879,6 +4991,7 @@ impl ::core::fmt::Debug for D3D12_FEATURE_DATA_EXISTING_HEAPS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3D12_FEATURE_DATA_EXISTING_HEAPS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3D12_FEATURE_DATA_EXISTING_HEAPS {
@@ -4919,6 +5032,7 @@ impl ::core::fmt::Debug for D3D12_FEATURE_DATA_FEATURE_LEVELS {
 #[cfg(feature = "Win32_Graphics_Direct3D")]
 unsafe impl ::windows::core::Abi for D3D12_FEATURE_DATA_FEATURE_LEVELS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Direct3D")]
 impl ::core::cmp::PartialEq for D3D12_FEATURE_DATA_FEATURE_LEVELS {
@@ -4958,6 +5072,7 @@ impl ::core::fmt::Debug for D3D12_FEATURE_DATA_FORMAT_INFO {
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 unsafe impl ::windows::core::Abi for D3D12_FEATURE_DATA_FORMAT_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 impl ::core::cmp::PartialEq for D3D12_FEATURE_DATA_FORMAT_INFO {
@@ -4998,6 +5113,7 @@ impl ::core::fmt::Debug for D3D12_FEATURE_DATA_FORMAT_SUPPORT {
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 unsafe impl ::windows::core::Abi for D3D12_FEATURE_DATA_FORMAT_SUPPORT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 impl ::core::cmp::PartialEq for D3D12_FEATURE_DATA_FORMAT_SUPPORT {
@@ -5032,6 +5148,7 @@ impl ::core::fmt::Debug for D3D12_FEATURE_DATA_GPU_VIRTUAL_ADDRESS_SUPPORT {
 }
 unsafe impl ::windows::core::Abi for D3D12_FEATURE_DATA_GPU_VIRTUAL_ADDRESS_SUPPORT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_FEATURE_DATA_GPU_VIRTUAL_ADDRESS_SUPPORT {
     fn eq(&self, other: &Self) -> bool {
@@ -5070,6 +5187,7 @@ impl ::core::fmt::Debug for D3D12_FEATURE_DATA_MULTISAMPLE_QUALITY_LEVELS {
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 unsafe impl ::windows::core::Abi for D3D12_FEATURE_DATA_MULTISAMPLE_QUALITY_LEVELS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 impl ::core::cmp::PartialEq for D3D12_FEATURE_DATA_MULTISAMPLE_QUALITY_LEVELS {
@@ -5104,6 +5222,7 @@ impl ::core::fmt::Debug for D3D12_FEATURE_DATA_PROTECTED_RESOURCE_SESSION_SUPPOR
 }
 unsafe impl ::windows::core::Abi for D3D12_FEATURE_DATA_PROTECTED_RESOURCE_SESSION_SUPPORT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_FEATURE_DATA_PROTECTED_RESOURCE_SESSION_SUPPORT {
     fn eq(&self, other: &Self) -> bool {
@@ -5136,6 +5255,7 @@ impl ::core::fmt::Debug for D3D12_FEATURE_DATA_PROTECTED_RESOURCE_SESSION_TYPES 
 }
 unsafe impl ::windows::core::Abi for D3D12_FEATURE_DATA_PROTECTED_RESOURCE_SESSION_TYPES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_FEATURE_DATA_PROTECTED_RESOURCE_SESSION_TYPES {
     fn eq(&self, other: &Self) -> bool {
@@ -5167,6 +5287,7 @@ impl ::core::fmt::Debug for D3D12_FEATURE_DATA_PROTECTED_RESOURCE_SESSION_TYPE_C
 }
 unsafe impl ::windows::core::Abi for D3D12_FEATURE_DATA_PROTECTED_RESOURCE_SESSION_TYPE_COUNT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_FEATURE_DATA_PROTECTED_RESOURCE_SESSION_TYPE_COUNT {
     fn eq(&self, other: &Self) -> bool {
@@ -5202,6 +5323,7 @@ impl ::core::fmt::Debug for D3D12_FEATURE_DATA_QUERY_META_COMMAND {
 }
 unsafe impl ::windows::core::Abi for D3D12_FEATURE_DATA_QUERY_META_COMMAND {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_FEATURE_DATA_QUERY_META_COMMAND {
     fn eq(&self, other: &Self) -> bool {
@@ -5232,6 +5354,7 @@ impl ::core::fmt::Debug for D3D12_FEATURE_DATA_ROOT_SIGNATURE {
 }
 unsafe impl ::windows::core::Abi for D3D12_FEATURE_DATA_ROOT_SIGNATURE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_FEATURE_DATA_ROOT_SIGNATURE {
     fn eq(&self, other: &Self) -> bool {
@@ -5263,6 +5386,7 @@ impl ::core::fmt::Debug for D3D12_FEATURE_DATA_SERIALIZATION {
 }
 unsafe impl ::windows::core::Abi for D3D12_FEATURE_DATA_SERIALIZATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_FEATURE_DATA_SERIALIZATION {
     fn eq(&self, other: &Self) -> bool {
@@ -5293,6 +5417,7 @@ impl ::core::fmt::Debug for D3D12_FEATURE_DATA_SHADER_CACHE {
 }
 unsafe impl ::windows::core::Abi for D3D12_FEATURE_DATA_SHADER_CACHE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_FEATURE_DATA_SHADER_CACHE {
     fn eq(&self, other: &Self) -> bool {
@@ -5323,6 +5448,7 @@ impl ::core::fmt::Debug for D3D12_FEATURE_DATA_SHADER_MODEL {
 }
 unsafe impl ::windows::core::Abi for D3D12_FEATURE_DATA_SHADER_MODEL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_FEATURE_DATA_SHADER_MODEL {
     fn eq(&self, other: &Self) -> bool {
@@ -5360,6 +5486,7 @@ impl ::core::default::Default for D3D12_FENCE_FLAGS {
 }
 unsafe impl ::windows::core::Abi for D3D12_FENCE_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_FENCE_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5415,6 +5542,7 @@ impl ::core::default::Default for D3D12_FILL_MODE {
 }
 unsafe impl ::windows::core::Abi for D3D12_FILL_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_FILL_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5510,6 +5638,7 @@ impl ::core::default::Default for D3D12_FILTER {
 }
 unsafe impl ::windows::core::Abi for D3D12_FILTER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_FILTER {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5541,6 +5670,7 @@ impl ::core::default::Default for D3D12_FILTER_REDUCTION_TYPE {
 }
 unsafe impl ::windows::core::Abi for D3D12_FILTER_REDUCTION_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_FILTER_REDUCTION_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5572,6 +5702,7 @@ impl ::core::default::Default for D3D12_FILTER_TYPE {
 }
 unsafe impl ::windows::core::Abi for D3D12_FILTER_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_FILTER_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5675,6 +5806,7 @@ impl ::core::default::Default for D3D12_FORMAT_SUPPORT1 {
 }
 unsafe impl ::windows::core::Abi for D3D12_FORMAT_SUPPORT1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_FORMAT_SUPPORT1 {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5752,6 +5884,7 @@ impl ::core::default::Default for D3D12_FORMAT_SUPPORT2 {
 }
 unsafe impl ::windows::core::Abi for D3D12_FORMAT_SUPPORT2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_FORMAT_SUPPORT2 {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5883,6 +6016,7 @@ impl ::core::fmt::Debug for D3D12_FUNCTION_DESC {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Direct3D"))]
 unsafe impl ::windows::core::Abi for D3D12_FUNCTION_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Direct3D"))]
 impl ::core::cmp::PartialEq for D3D12_FUNCTION_DESC {
@@ -5915,6 +6049,7 @@ impl ::core::fmt::Debug for D3D12_GLOBAL_ROOT_SIGNATURE {
 }
 unsafe impl ::windows::core::Abi for D3D12_GLOBAL_ROOT_SIGNATURE {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_GLOBAL_ROOT_SIGNATURE {
     fn eq(&self, other: &Self) -> bool {
@@ -5948,6 +6083,7 @@ impl ::core::default::Default for D3D12_GPU_BASED_VALIDATION_FLAGS {
 }
 unsafe impl ::windows::core::Abi for D3D12_GPU_BASED_VALIDATION_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_GPU_BASED_VALIDATION_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5981,6 +6117,7 @@ impl ::core::default::Default for D3D12_GPU_BASED_VALIDATION_PIPELINE_STATE_CREA
 }
 unsafe impl ::windows::core::Abi for D3D12_GPU_BASED_VALIDATION_PIPELINE_STATE_CREATE_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_GPU_BASED_VALIDATION_PIPELINE_STATE_CREATE_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6014,6 +6151,7 @@ impl ::core::default::Default for D3D12_GPU_BASED_VALIDATION_SHADER_PATCH_MODE {
 }
 unsafe impl ::windows::core::Abi for D3D12_GPU_BASED_VALIDATION_SHADER_PATCH_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_GPU_BASED_VALIDATION_SHADER_PATCH_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6038,6 +6176,7 @@ impl ::core::fmt::Debug for D3D12_GPU_DESCRIPTOR_HANDLE {
 }
 unsafe impl ::windows::core::Abi for D3D12_GPU_DESCRIPTOR_HANDLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_GPU_DESCRIPTOR_HANDLE {
     fn eq(&self, other: &Self) -> bool {
@@ -6069,6 +6208,7 @@ impl ::core::fmt::Debug for D3D12_GPU_VIRTUAL_ADDRESS_AND_STRIDE {
 }
 unsafe impl ::windows::core::Abi for D3D12_GPU_VIRTUAL_ADDRESS_AND_STRIDE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_GPU_VIRTUAL_ADDRESS_AND_STRIDE {
     fn eq(&self, other: &Self) -> bool {
@@ -6100,6 +6240,7 @@ impl ::core::fmt::Debug for D3D12_GPU_VIRTUAL_ADDRESS_RANGE {
 }
 unsafe impl ::windows::core::Abi for D3D12_GPU_VIRTUAL_ADDRESS_RANGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_GPU_VIRTUAL_ADDRESS_RANGE {
     fn eq(&self, other: &Self) -> bool {
@@ -6132,6 +6273,7 @@ impl ::core::fmt::Debug for D3D12_GPU_VIRTUAL_ADDRESS_RANGE_AND_STRIDE {
 }
 unsafe impl ::windows::core::Abi for D3D12_GPU_VIRTUAL_ADDRESS_RANGE_AND_STRIDE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_GPU_VIRTUAL_ADDRESS_RANGE_AND_STRIDE {
     fn eq(&self, other: &Self) -> bool {
@@ -6229,6 +6371,7 @@ impl ::core::fmt::Debug for D3D12_GRAPHICS_PIPELINE_STATE_DESC {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Dxgi_Common"))]
 unsafe impl ::windows::core::Abi for D3D12_GRAPHICS_PIPELINE_STATE_DESC {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Dxgi_Common"))]
 impl ::core::cmp::PartialEq for D3D12_GRAPHICS_PIPELINE_STATE_DESC {
@@ -6317,6 +6460,7 @@ impl ::core::default::Default for D3D12_GRAPHICS_STATES {
 }
 unsafe impl ::windows::core::Abi for D3D12_GRAPHICS_STATES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_GRAPHICS_STATES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6416,6 +6560,7 @@ impl ::core::fmt::Debug for D3D12_HEAP_DESC {
 }
 unsafe impl ::windows::core::Abi for D3D12_HEAP_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_HEAP_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -6477,6 +6622,7 @@ impl ::core::default::Default for D3D12_HEAP_FLAGS {
 }
 unsafe impl ::windows::core::Abi for D3D12_HEAP_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_HEAP_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6533,6 +6679,7 @@ impl ::core::fmt::Debug for D3D12_HEAP_PROPERTIES {
 }
 unsafe impl ::windows::core::Abi for D3D12_HEAP_PROPERTIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_HEAP_PROPERTIES {
     fn eq(&self, other: &Self) -> bool {
@@ -6566,6 +6713,7 @@ impl ::core::default::Default for D3D12_HEAP_SERIALIZATION_TIER {
 }
 unsafe impl ::windows::core::Abi for D3D12_HEAP_SERIALIZATION_TIER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_HEAP_SERIALIZATION_TIER {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6597,6 +6745,7 @@ impl ::core::default::Default for D3D12_HEAP_TYPE {
 }
 unsafe impl ::windows::core::Abi for D3D12_HEAP_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_HEAP_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6625,6 +6774,7 @@ impl ::core::fmt::Debug for D3D12_HIT_GROUP_DESC {
 }
 unsafe impl ::windows::core::Abi for D3D12_HIT_GROUP_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_HIT_GROUP_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -6658,6 +6808,7 @@ impl ::core::default::Default for D3D12_HIT_GROUP_TYPE {
 }
 unsafe impl ::windows::core::Abi for D3D12_HIT_GROUP_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_HIT_GROUP_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6685,6 +6836,7 @@ impl ::core::default::Default for D3D12_HIT_KIND {
 }
 unsafe impl ::windows::core::Abi for D3D12_HIT_KIND {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_HIT_KIND {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6812,6 +6964,7 @@ impl ::core::default::Default for D3D12_INDEX_BUFFER_STRIP_CUT_VALUE {
 }
 unsafe impl ::windows::core::Abi for D3D12_INDEX_BUFFER_STRIP_CUT_VALUE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_INDEX_BUFFER_STRIP_CUT_VALUE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6843,6 +6996,7 @@ impl ::core::fmt::Debug for D3D12_INDEX_BUFFER_VIEW {
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 unsafe impl ::windows::core::Abi for D3D12_INDEX_BUFFER_VIEW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 impl ::core::cmp::PartialEq for D3D12_INDEX_BUFFER_VIEW {
@@ -6872,6 +7026,7 @@ impl ::core::clone::Clone for D3D12_INDIRECT_ARGUMENT_DESC {
 }
 unsafe impl ::windows::core::Abi for D3D12_INDIRECT_ARGUMENT_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_INDIRECT_ARGUMENT_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -6901,6 +7056,7 @@ impl ::core::clone::Clone for D3D12_INDIRECT_ARGUMENT_DESC_0 {
 }
 unsafe impl ::windows::core::Abi for D3D12_INDIRECT_ARGUMENT_DESC_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_INDIRECT_ARGUMENT_DESC_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -6931,6 +7087,7 @@ impl ::core::fmt::Debug for D3D12_INDIRECT_ARGUMENT_DESC_0_0 {
 }
 unsafe impl ::windows::core::Abi for D3D12_INDIRECT_ARGUMENT_DESC_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_INDIRECT_ARGUMENT_DESC_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -6963,6 +7120,7 @@ impl ::core::fmt::Debug for D3D12_INDIRECT_ARGUMENT_DESC_0_1 {
 }
 unsafe impl ::windows::core::Abi for D3D12_INDIRECT_ARGUMENT_DESC_0_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_INDIRECT_ARGUMENT_DESC_0_1 {
     fn eq(&self, other: &Self) -> bool {
@@ -6993,6 +7151,7 @@ impl ::core::fmt::Debug for D3D12_INDIRECT_ARGUMENT_DESC_0_2 {
 }
 unsafe impl ::windows::core::Abi for D3D12_INDIRECT_ARGUMENT_DESC_0_2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_INDIRECT_ARGUMENT_DESC_0_2 {
     fn eq(&self, other: &Self) -> bool {
@@ -7023,6 +7182,7 @@ impl ::core::fmt::Debug for D3D12_INDIRECT_ARGUMENT_DESC_0_3 {
 }
 unsafe impl ::windows::core::Abi for D3D12_INDIRECT_ARGUMENT_DESC_0_3 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_INDIRECT_ARGUMENT_DESC_0_3 {
     fn eq(&self, other: &Self) -> bool {
@@ -7053,6 +7213,7 @@ impl ::core::fmt::Debug for D3D12_INDIRECT_ARGUMENT_DESC_0_4 {
 }
 unsafe impl ::windows::core::Abi for D3D12_INDIRECT_ARGUMENT_DESC_0_4 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_INDIRECT_ARGUMENT_DESC_0_4 {
     fn eq(&self, other: &Self) -> bool {
@@ -7104,6 +7265,7 @@ impl ::core::default::Default for D3D12_INDIRECT_ARGUMENT_TYPE {
 }
 unsafe impl ::windows::core::Abi for D3D12_INDIRECT_ARGUMENT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_INDIRECT_ARGUMENT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7131,6 +7293,7 @@ impl ::core::fmt::Debug for D3D12_INFO_QUEUE_FILTER {
 }
 unsafe impl ::windows::core::Abi for D3D12_INFO_QUEUE_FILTER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_INFO_QUEUE_FILTER {
     fn eq(&self, other: &Self) -> bool {
@@ -7166,6 +7329,7 @@ impl ::core::fmt::Debug for D3D12_INFO_QUEUE_FILTER_DESC {
 }
 unsafe impl ::windows::core::Abi for D3D12_INFO_QUEUE_FILTER_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_INFO_QUEUE_FILTER_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -7199,6 +7363,7 @@ impl ::core::default::Default for D3D12_INPUT_CLASSIFICATION {
 }
 unsafe impl ::windows::core::Abi for D3D12_INPUT_CLASSIFICATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_INPUT_CLASSIFICATION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7234,6 +7399,7 @@ impl ::core::fmt::Debug for D3D12_INPUT_ELEMENT_DESC {
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 unsafe impl ::windows::core::Abi for D3D12_INPUT_ELEMENT_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 impl ::core::cmp::PartialEq for D3D12_INPUT_ELEMENT_DESC {
@@ -7273,6 +7439,7 @@ impl ::core::fmt::Debug for D3D12_INPUT_LAYOUT_DESC {
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 unsafe impl ::windows::core::Abi for D3D12_INPUT_LAYOUT_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 impl ::core::cmp::PartialEq for D3D12_INPUT_LAYOUT_DESC {
@@ -7316,6 +7483,7 @@ impl ::core::fmt::Debug for D3D12_LIBRARY_DESC {
 }
 unsafe impl ::windows::core::Abi for D3D12_LIBRARY_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_LIBRARY_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -7349,6 +7517,7 @@ impl ::core::default::Default for D3D12_LIFETIME_STATE {
 }
 unsafe impl ::windows::core::Abi for D3D12_LIFETIME_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_LIFETIME_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7374,6 +7543,7 @@ impl ::core::fmt::Debug for D3D12_LOCAL_ROOT_SIGNATURE {
 }
 unsafe impl ::windows::core::Abi for D3D12_LOCAL_ROOT_SIGNATURE {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_LOCAL_ROOT_SIGNATURE {
     fn eq(&self, other: &Self) -> bool {
@@ -7435,6 +7605,7 @@ impl ::core::default::Default for D3D12_LOGIC_OP {
 }
 unsafe impl ::windows::core::Abi for D3D12_LOGIC_OP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_LOGIC_OP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7494,6 +7665,7 @@ impl ::core::default::Default for D3D12_MEASUREMENTS_ACTION {
 }
 unsafe impl ::windows::core::Abi for D3D12_MEASUREMENTS_ACTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_MEASUREMENTS_ACTION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7520,6 +7692,7 @@ impl ::core::fmt::Debug for D3D12_MEMCPY_DEST {
 }
 unsafe impl ::windows::core::Abi for D3D12_MEMCPY_DEST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_MEMCPY_DEST {
     fn eq(&self, other: &Self) -> bool {
@@ -7555,6 +7728,7 @@ impl ::core::default::Default for D3D12_MEMORY_POOL {
 }
 unsafe impl ::windows::core::Abi for D3D12_MEMORY_POOL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_MEMORY_POOL {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7582,6 +7756,7 @@ impl ::core::default::Default for D3D12_MESH_SHADER_TIER {
 }
 unsafe impl ::windows::core::Abi for D3D12_MESH_SHADER_TIER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_MESH_SHADER_TIER {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7610,6 +7785,7 @@ impl ::core::fmt::Debug for D3D12_MESSAGE {
 }
 unsafe impl ::windows::core::Abi for D3D12_MESSAGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_MESSAGE {
     fn eq(&self, other: &Self) -> bool {
@@ -7643,6 +7819,7 @@ impl ::core::default::Default for D3D12_MESSAGE_CALLBACK_FLAGS {
 }
 unsafe impl ::windows::core::Abi for D3D12_MESSAGE_CALLBACK_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_MESSAGE_CALLBACK_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7688,6 +7865,7 @@ impl ::core::default::Default for D3D12_MESSAGE_CATEGORY {
 }
 unsafe impl ::windows::core::Abi for D3D12_MESSAGE_CATEGORY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_MESSAGE_CATEGORY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9495,6 +9673,7 @@ impl ::core::default::Default for D3D12_MESSAGE_ID {
 }
 unsafe impl ::windows::core::Abi for D3D12_MESSAGE_ID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_MESSAGE_ID {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9528,6 +9707,7 @@ impl ::core::default::Default for D3D12_MESSAGE_SEVERITY {
 }
 unsafe impl ::windows::core::Abi for D3D12_MESSAGE_SEVERITY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_MESSAGE_SEVERITY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9555,6 +9735,7 @@ impl ::core::fmt::Debug for D3D12_META_COMMAND_DESC {
 }
 unsafe impl ::windows::core::Abi for D3D12_META_COMMAND_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_META_COMMAND_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -9589,6 +9770,7 @@ impl ::core::fmt::Debug for D3D12_META_COMMAND_PARAMETER_DESC {
 }
 unsafe impl ::windows::core::Abi for D3D12_META_COMMAND_PARAMETER_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_META_COMMAND_PARAMETER_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -9622,6 +9804,7 @@ impl ::core::default::Default for D3D12_META_COMMAND_PARAMETER_FLAGS {
 }
 unsafe impl ::windows::core::Abi for D3D12_META_COMMAND_PARAMETER_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_META_COMMAND_PARAMETER_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9679,6 +9862,7 @@ impl ::core::default::Default for D3D12_META_COMMAND_PARAMETER_STAGE {
 }
 unsafe impl ::windows::core::Abi for D3D12_META_COMMAND_PARAMETER_STAGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_META_COMMAND_PARAMETER_STAGE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9712,6 +9896,7 @@ impl ::core::default::Default for D3D12_META_COMMAND_PARAMETER_TYPE {
 }
 unsafe impl ::windows::core::Abi for D3D12_META_COMMAND_PARAMETER_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_META_COMMAND_PARAMETER_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9758,6 +9943,7 @@ impl ::core::fmt::Debug for D3D12_MIP_REGION {
 }
 unsafe impl ::windows::core::Abi for D3D12_MIP_REGION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_MIP_REGION {
     fn eq(&self, other: &Self) -> bool {
@@ -9793,6 +9979,7 @@ impl ::core::default::Default for D3D12_MULTIPLE_FENCE_WAIT_FLAGS {
 }
 unsafe impl ::windows::core::Abi for D3D12_MULTIPLE_FENCE_WAIT_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_MULTIPLE_FENCE_WAIT_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9850,6 +10037,7 @@ impl ::core::default::Default for D3D12_MULTISAMPLE_QUALITY_LEVEL_FLAGS {
 }
 unsafe impl ::windows::core::Abi for D3D12_MULTISAMPLE_QUALITY_LEVEL_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_MULTISAMPLE_QUALITY_LEVEL_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9902,6 +10090,7 @@ impl ::core::fmt::Debug for D3D12_NODE_MASK {
 }
 unsafe impl ::windows::core::Abi for D3D12_NODE_MASK {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_NODE_MASK {
     fn eq(&self, other: &Self) -> bool {
@@ -9941,6 +10130,7 @@ impl ::core::fmt::Debug for D3D12_PACKED_MIP_INFO {
 }
 unsafe impl ::windows::core::Abi for D3D12_PACKED_MIP_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_PACKED_MIP_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -10002,6 +10192,7 @@ impl ::core::fmt::Debug for D3D12_PARAMETER_DESC {
 #[cfg(feature = "Win32_Graphics_Direct3D")]
 unsafe impl ::windows::core::Abi for D3D12_PARAMETER_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Direct3D")]
 impl ::core::cmp::PartialEq for D3D12_PARAMETER_DESC {
@@ -10038,6 +10229,7 @@ impl ::core::default::Default for D3D12_PIPELINE_STATE_FLAGS {
 }
 unsafe impl ::windows::core::Abi for D3D12_PIPELINE_STATE_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_PIPELINE_STATE_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10091,6 +10283,7 @@ impl ::core::fmt::Debug for D3D12_PIPELINE_STATE_STREAM_DESC {
 }
 unsafe impl ::windows::core::Abi for D3D12_PIPELINE_STATE_STREAM_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_PIPELINE_STATE_STREAM_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -10172,6 +10365,7 @@ impl ::core::default::Default for D3D12_PIPELINE_STATE_SUBOBJECT_TYPE {
 }
 unsafe impl ::windows::core::Abi for D3D12_PIPELINE_STATE_SUBOBJECT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_PIPELINE_STATE_SUBOBJECT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10204,6 +10398,7 @@ impl ::core::fmt::Debug for D3D12_PLACED_SUBRESOURCE_FOOTPRINT {
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 unsafe impl ::windows::core::Abi for D3D12_PLACED_SUBRESOURCE_FOOTPRINT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 impl ::core::cmp::PartialEq for D3D12_PLACED_SUBRESOURCE_FOOTPRINT {
@@ -10240,6 +10435,7 @@ impl ::core::default::Default for D3D12_PREDICATION_OP {
 }
 unsafe impl ::windows::core::Abi for D3D12_PREDICATION_OP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_PREDICATION_OP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10275,6 +10471,7 @@ impl ::core::default::Default for D3D12_PRIMITIVE_TOPOLOGY_TYPE {
 }
 unsafe impl ::windows::core::Abi for D3D12_PRIMITIVE_TOPOLOGY_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_PRIMITIVE_TOPOLOGY_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10304,6 +10501,7 @@ impl ::core::default::Default for D3D12_PROGRAMMABLE_SAMPLE_POSITIONS_TIER {
 }
 unsafe impl ::windows::core::Abi for D3D12_PROGRAMMABLE_SAMPLE_POSITIONS_TIER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_PROGRAMMABLE_SAMPLE_POSITIONS_TIER {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10330,6 +10528,7 @@ impl ::core::fmt::Debug for D3D12_PROTECTED_RESOURCE_SESSION_DESC {
 }
 unsafe impl ::windows::core::Abi for D3D12_PROTECTED_RESOURCE_SESSION_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_PROTECTED_RESOURCE_SESSION_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -10362,6 +10561,7 @@ impl ::core::fmt::Debug for D3D12_PROTECTED_RESOURCE_SESSION_DESC1 {
 }
 unsafe impl ::windows::core::Abi for D3D12_PROTECTED_RESOURCE_SESSION_DESC1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_PROTECTED_RESOURCE_SESSION_DESC1 {
     fn eq(&self, other: &Self) -> bool {
@@ -10393,6 +10593,7 @@ impl ::core::default::Default for D3D12_PROTECTED_RESOURCE_SESSION_FLAGS {
 }
 unsafe impl ::windows::core::Abi for D3D12_PROTECTED_RESOURCE_SESSION_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_PROTECTED_RESOURCE_SESSION_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10448,6 +10649,7 @@ impl ::core::default::Default for D3D12_PROTECTED_RESOURCE_SESSION_SUPPORT_FLAGS
 }
 unsafe impl ::windows::core::Abi for D3D12_PROTECTED_RESOURCE_SESSION_SUPPORT_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_PROTECTED_RESOURCE_SESSION_SUPPORT_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10503,6 +10705,7 @@ impl ::core::default::Default for D3D12_PROTECTED_SESSION_STATUS {
 }
 unsafe impl ::windows::core::Abi for D3D12_PROTECTED_SESSION_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_PROTECTED_SESSION_STATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10595,6 +10798,7 @@ impl ::core::fmt::Debug for D3D12_QUERY_DATA_PIPELINE_STATISTICS {
 }
 unsafe impl ::windows::core::Abi for D3D12_QUERY_DATA_PIPELINE_STATISTICS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_QUERY_DATA_PIPELINE_STATISTICS {
     fn eq(&self, other: &Self) -> bool {
@@ -10653,6 +10857,7 @@ impl ::core::fmt::Debug for D3D12_QUERY_DATA_PIPELINE_STATISTICS1 {
 }
 unsafe impl ::windows::core::Abi for D3D12_QUERY_DATA_PIPELINE_STATISTICS1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_QUERY_DATA_PIPELINE_STATISTICS1 {
     fn eq(&self, other: &Self) -> bool {
@@ -10684,6 +10889,7 @@ impl ::core::fmt::Debug for D3D12_QUERY_DATA_SO_STATISTICS {
 }
 unsafe impl ::windows::core::Abi for D3D12_QUERY_DATA_SO_STATISTICS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_QUERY_DATA_SO_STATISTICS {
     fn eq(&self, other: &Self) -> bool {
@@ -10716,6 +10922,7 @@ impl ::core::fmt::Debug for D3D12_QUERY_HEAP_DESC {
 }
 unsafe impl ::windows::core::Abi for D3D12_QUERY_HEAP_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_QUERY_HEAP_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -10759,6 +10966,7 @@ impl ::core::default::Default for D3D12_QUERY_HEAP_TYPE {
 }
 unsafe impl ::windows::core::Abi for D3D12_QUERY_HEAP_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_QUERY_HEAP_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10802,6 +11010,7 @@ impl ::core::default::Default for D3D12_QUERY_TYPE {
 }
 unsafe impl ::windows::core::Abi for D3D12_QUERY_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_QUERY_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10827,6 +11036,7 @@ impl ::core::fmt::Debug for D3D12_RANGE {
 }
 unsafe impl ::windows::core::Abi for D3D12_RANGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_RANGE {
     fn eq(&self, other: &Self) -> bool {
@@ -10858,6 +11068,7 @@ impl ::core::fmt::Debug for D3D12_RANGE_UINT64 {
 }
 unsafe impl ::windows::core::Abi for D3D12_RANGE_UINT64 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_RANGE_UINT64 {
     fn eq(&self, other: &Self) -> bool {
@@ -10915,6 +11126,7 @@ impl ::core::fmt::Debug for D3D12_RASTERIZER_DESC {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3D12_RASTERIZER_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3D12_RASTERIZER_DESC {
@@ -10955,6 +11167,7 @@ impl ::core::fmt::Debug for D3D12_RAYTRACING_AABB {
 }
 unsafe impl ::windows::core::Abi for D3D12_RAYTRACING_AABB {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_RAYTRACING_AABB {
     fn eq(&self, other: &Self) -> bool {
@@ -11000,6 +11213,7 @@ impl ::core::default::Default for D3D12_RAYTRACING_ACCELERATION_STRUCTURE_BUILD_
 }
 unsafe impl ::windows::core::Abi for D3D12_RAYTRACING_ACCELERATION_STRUCTURE_BUILD_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_RAYTRACING_ACCELERATION_STRUCTURE_BUILD_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11063,6 +11277,7 @@ impl ::core::default::Default for D3D12_RAYTRACING_ACCELERATION_STRUCTURE_COPY_M
 }
 unsafe impl ::windows::core::Abi for D3D12_RAYTRACING_ACCELERATION_STRUCTURE_COPY_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_RAYTRACING_ACCELERATION_STRUCTURE_COPY_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11087,6 +11302,7 @@ impl ::core::fmt::Debug for D3D12_RAYTRACING_ACCELERATION_STRUCTURE_POSTBUILD_IN
 }
 unsafe impl ::windows::core::Abi for D3D12_RAYTRACING_ACCELERATION_STRUCTURE_POSTBUILD_INFO_COMPACTED_SIZE_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_RAYTRACING_ACCELERATION_STRUCTURE_POSTBUILD_INFO_COMPACTED_SIZE_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -11117,6 +11333,7 @@ impl ::core::fmt::Debug for D3D12_RAYTRACING_ACCELERATION_STRUCTURE_POSTBUILD_IN
 }
 unsafe impl ::windows::core::Abi for D3D12_RAYTRACING_ACCELERATION_STRUCTURE_POSTBUILD_INFO_CURRENT_SIZE_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_RAYTRACING_ACCELERATION_STRUCTURE_POSTBUILD_INFO_CURRENT_SIZE_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -11148,6 +11365,7 @@ impl ::core::fmt::Debug for D3D12_RAYTRACING_ACCELERATION_STRUCTURE_POSTBUILD_IN
 }
 unsafe impl ::windows::core::Abi for D3D12_RAYTRACING_ACCELERATION_STRUCTURE_POSTBUILD_INFO_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_RAYTRACING_ACCELERATION_STRUCTURE_POSTBUILD_INFO_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -11179,6 +11397,7 @@ impl ::core::fmt::Debug for D3D12_RAYTRACING_ACCELERATION_STRUCTURE_POSTBUILD_IN
 }
 unsafe impl ::windows::core::Abi for D3D12_RAYTRACING_ACCELERATION_STRUCTURE_POSTBUILD_INFO_SERIALIZATION_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_RAYTRACING_ACCELERATION_STRUCTURE_POSTBUILD_INFO_SERIALIZATION_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -11209,6 +11428,7 @@ impl ::core::fmt::Debug for D3D12_RAYTRACING_ACCELERATION_STRUCTURE_POSTBUILD_IN
 }
 unsafe impl ::windows::core::Abi for D3D12_RAYTRACING_ACCELERATION_STRUCTURE_POSTBUILD_INFO_TOOLS_VISUALIZATION_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_RAYTRACING_ACCELERATION_STRUCTURE_POSTBUILD_INFO_TOOLS_VISUALIZATION_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -11246,6 +11466,7 @@ impl ::core::default::Default for D3D12_RAYTRACING_ACCELERATION_STRUCTURE_POSTBU
 }
 unsafe impl ::windows::core::Abi for D3D12_RAYTRACING_ACCELERATION_STRUCTURE_POSTBUILD_INFO_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_RAYTRACING_ACCELERATION_STRUCTURE_POSTBUILD_INFO_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11272,6 +11493,7 @@ impl ::core::fmt::Debug for D3D12_RAYTRACING_ACCELERATION_STRUCTURE_PREBUILD_INF
 }
 unsafe impl ::windows::core::Abi for D3D12_RAYTRACING_ACCELERATION_STRUCTURE_PREBUILD_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_RAYTRACING_ACCELERATION_STRUCTURE_PREBUILD_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -11302,6 +11524,7 @@ impl ::core::fmt::Debug for D3D12_RAYTRACING_ACCELERATION_STRUCTURE_SRV {
 }
 unsafe impl ::windows::core::Abi for D3D12_RAYTRACING_ACCELERATION_STRUCTURE_SRV {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_RAYTRACING_ACCELERATION_STRUCTURE_SRV {
     fn eq(&self, other: &Self) -> bool {
@@ -11335,6 +11558,7 @@ impl ::core::default::Default for D3D12_RAYTRACING_ACCELERATION_STRUCTURE_TYPE {
 }
 unsafe impl ::windows::core::Abi for D3D12_RAYTRACING_ACCELERATION_STRUCTURE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_RAYTRACING_ACCELERATION_STRUCTURE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11360,6 +11584,7 @@ impl ::core::fmt::Debug for D3D12_RAYTRACING_GEOMETRY_AABBS_DESC {
 }
 unsafe impl ::windows::core::Abi for D3D12_RAYTRACING_GEOMETRY_AABBS_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_RAYTRACING_GEOMETRY_AABBS_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -11391,6 +11616,7 @@ impl ::core::clone::Clone for D3D12_RAYTRACING_GEOMETRY_DESC {
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 unsafe impl ::windows::core::Abi for D3D12_RAYTRACING_GEOMETRY_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 impl ::core::cmp::PartialEq for D3D12_RAYTRACING_GEOMETRY_DESC {
@@ -11424,6 +11650,7 @@ impl ::core::clone::Clone for D3D12_RAYTRACING_GEOMETRY_DESC_0 {
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 unsafe impl ::windows::core::Abi for D3D12_RAYTRACING_GEOMETRY_DESC_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 impl ::core::cmp::PartialEq for D3D12_RAYTRACING_GEOMETRY_DESC_0 {
@@ -11462,6 +11689,7 @@ impl ::core::default::Default for D3D12_RAYTRACING_GEOMETRY_FLAGS {
 }
 unsafe impl ::windows::core::Abi for D3D12_RAYTRACING_GEOMETRY_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_RAYTRACING_GEOMETRY_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11525,6 +11753,7 @@ impl ::core::fmt::Debug for D3D12_RAYTRACING_GEOMETRY_TRIANGLES_DESC {
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 unsafe impl ::windows::core::Abi for D3D12_RAYTRACING_GEOMETRY_TRIANGLES_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 impl ::core::cmp::PartialEq for D3D12_RAYTRACING_GEOMETRY_TRIANGLES_DESC {
@@ -11561,6 +11790,7 @@ impl ::core::default::Default for D3D12_RAYTRACING_GEOMETRY_TYPE {
 }
 unsafe impl ::windows::core::Abi for D3D12_RAYTRACING_GEOMETRY_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_RAYTRACING_GEOMETRY_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11588,6 +11818,7 @@ impl ::core::fmt::Debug for D3D12_RAYTRACING_INSTANCE_DESC {
 }
 unsafe impl ::windows::core::Abi for D3D12_RAYTRACING_INSTANCE_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_RAYTRACING_INSTANCE_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -11629,6 +11860,7 @@ impl ::core::default::Default for D3D12_RAYTRACING_INSTANCE_FLAGS {
 }
 unsafe impl ::windows::core::Abi for D3D12_RAYTRACING_INSTANCE_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_RAYTRACING_INSTANCE_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11695,6 +11927,7 @@ impl ::core::fmt::Debug for D3D12_RAYTRACING_PIPELINE_CONFIG {
 }
 unsafe impl ::windows::core::Abi for D3D12_RAYTRACING_PIPELINE_CONFIG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_RAYTRACING_PIPELINE_CONFIG {
     fn eq(&self, other: &Self) -> bool {
@@ -11726,6 +11959,7 @@ impl ::core::fmt::Debug for D3D12_RAYTRACING_PIPELINE_CONFIG1 {
 }
 unsafe impl ::windows::core::Abi for D3D12_RAYTRACING_PIPELINE_CONFIG1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_RAYTRACING_PIPELINE_CONFIG1 {
     fn eq(&self, other: &Self) -> bool {
@@ -11761,6 +11995,7 @@ impl ::core::default::Default for D3D12_RAYTRACING_PIPELINE_FLAGS {
 }
 unsafe impl ::windows::core::Abi for D3D12_RAYTRACING_PIPELINE_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_RAYTRACING_PIPELINE_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11814,6 +12049,7 @@ impl ::core::fmt::Debug for D3D12_RAYTRACING_SHADER_CONFIG {
 }
 unsafe impl ::windows::core::Abi for D3D12_RAYTRACING_SHADER_CONFIG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_RAYTRACING_SHADER_CONFIG {
     fn eq(&self, other: &Self) -> bool {
@@ -11853,6 +12089,7 @@ impl ::core::default::Default for D3D12_RAYTRACING_TIER {
 }
 unsafe impl ::windows::core::Abi for D3D12_RAYTRACING_TIER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_RAYTRACING_TIER {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11900,6 +12137,7 @@ impl ::core::default::Default for D3D12_RAY_FLAGS {
 }
 unsafe impl ::windows::core::Abi for D3D12_RAY_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_RAY_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11952,6 +12190,7 @@ impl ::core::clone::Clone for D3D12_RENDER_PASS_BEGINNING_ACCESS {
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 unsafe impl ::windows::core::Abi for D3D12_RENDER_PASS_BEGINNING_ACCESS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 impl ::core::cmp::PartialEq for D3D12_RENDER_PASS_BEGINNING_ACCESS {
@@ -11984,6 +12223,7 @@ impl ::core::clone::Clone for D3D12_RENDER_PASS_BEGINNING_ACCESS_0 {
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 unsafe impl ::windows::core::Abi for D3D12_RENDER_PASS_BEGINNING_ACCESS_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 impl ::core::cmp::PartialEq for D3D12_RENDER_PASS_BEGINNING_ACCESS_0 {
@@ -12016,6 +12256,7 @@ impl ::core::clone::Clone for D3D12_RENDER_PASS_BEGINNING_ACCESS_CLEAR_PARAMETER
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 unsafe impl ::windows::core::Abi for D3D12_RENDER_PASS_BEGINNING_ACCESS_CLEAR_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 impl ::core::cmp::PartialEq for D3D12_RENDER_PASS_BEGINNING_ACCESS_CLEAR_PARAMETERS {
@@ -12056,6 +12297,7 @@ impl ::core::default::Default for D3D12_RENDER_PASS_BEGINNING_ACCESS_TYPE {
 }
 unsafe impl ::windows::core::Abi for D3D12_RENDER_PASS_BEGINNING_ACCESS_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_RENDER_PASS_BEGINNING_ACCESS_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12087,6 +12329,7 @@ impl ::core::clone::Clone for D3D12_RENDER_PASS_DEPTH_STENCIL_DESC {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Dxgi_Common"))]
 unsafe impl ::windows::core::Abi for D3D12_RENDER_PASS_DEPTH_STENCIL_DESC {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Dxgi_Common"))]
 impl ::core::cmp::PartialEq for D3D12_RENDER_PASS_DEPTH_STENCIL_DESC {
@@ -12118,6 +12361,7 @@ impl ::core::clone::Clone for D3D12_RENDER_PASS_ENDING_ACCESS {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Dxgi_Common"))]
 unsafe impl ::windows::core::Abi for D3D12_RENDER_PASS_ENDING_ACCESS {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Dxgi_Common"))]
 impl ::core::cmp::PartialEq for D3D12_RENDER_PASS_ENDING_ACCESS {
@@ -12148,6 +12392,7 @@ impl ::core::clone::Clone for D3D12_RENDER_PASS_ENDING_ACCESS_0 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Dxgi_Common"))]
 unsafe impl ::windows::core::Abi for D3D12_RENDER_PASS_ENDING_ACCESS_0 {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Dxgi_Common"))]
 impl ::core::cmp::PartialEq for D3D12_RENDER_PASS_ENDING_ACCESS_0 {
@@ -12198,6 +12443,7 @@ impl ::core::fmt::Debug for D3D12_RENDER_PASS_ENDING_ACCESS_RESOLVE_PARAMETERS {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Dxgi_Common"))]
 unsafe impl ::windows::core::Abi for D3D12_RENDER_PASS_ENDING_ACCESS_RESOLVE_PARAMETERS {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Dxgi_Common"))]
 impl ::core::cmp::PartialEq for D3D12_RENDER_PASS_ENDING_ACCESS_RESOLVE_PARAMETERS {
@@ -12240,6 +12486,7 @@ impl ::core::fmt::Debug for D3D12_RENDER_PASS_ENDING_ACCESS_RESOLVE_SUBRESOURCE_
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3D12_RENDER_PASS_ENDING_ACCESS_RESOLVE_SUBRESOURCE_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3D12_RENDER_PASS_ENDING_ACCESS_RESOLVE_SUBRESOURCE_PARAMETERS {
@@ -12280,6 +12527,7 @@ impl ::core::default::Default for D3D12_RENDER_PASS_ENDING_ACCESS_TYPE {
 }
 unsafe impl ::windows::core::Abi for D3D12_RENDER_PASS_ENDING_ACCESS_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_RENDER_PASS_ENDING_ACCESS_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12311,6 +12559,7 @@ impl ::core::default::Default for D3D12_RENDER_PASS_FLAGS {
 }
 unsafe impl ::windows::core::Abi for D3D12_RENDER_PASS_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_RENDER_PASS_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12362,6 +12611,7 @@ impl ::core::clone::Clone for D3D12_RENDER_PASS_RENDER_TARGET_DESC {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Dxgi_Common"))]
 unsafe impl ::windows::core::Abi for D3D12_RENDER_PASS_RENDER_TARGET_DESC {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Dxgi_Common"))]
 impl ::core::cmp::PartialEq for D3D12_RENDER_PASS_RENDER_TARGET_DESC {
@@ -12400,6 +12650,7 @@ impl ::core::default::Default for D3D12_RENDER_PASS_TIER {
 }
 unsafe impl ::windows::core::Abi for D3D12_RENDER_PASS_TIER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_RENDER_PASS_TIER {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12438,6 +12689,7 @@ impl ::core::fmt::Debug for D3D12_RENDER_TARGET_BLEND_DESC {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3D12_RENDER_TARGET_BLEND_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3D12_RENDER_TARGET_BLEND_DESC {
@@ -12472,6 +12724,7 @@ impl ::core::clone::Clone for D3D12_RENDER_TARGET_VIEW_DESC {
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 unsafe impl ::windows::core::Abi for D3D12_RENDER_TARGET_VIEW_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 impl ::core::cmp::PartialEq for D3D12_RENDER_TARGET_VIEW_DESC {
@@ -12511,6 +12764,7 @@ impl ::core::clone::Clone for D3D12_RENDER_TARGET_VIEW_DESC_0 {
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 unsafe impl ::windows::core::Abi for D3D12_RENDER_TARGET_VIEW_DESC_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 impl ::core::cmp::PartialEq for D3D12_RENDER_TARGET_VIEW_DESC_0 {
@@ -12599,6 +12853,7 @@ impl ::core::default::Default for D3D12_RESIDENCY_FLAGS {
 }
 unsafe impl ::windows::core::Abi for D3D12_RESIDENCY_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_RESIDENCY_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12660,6 +12915,7 @@ impl ::core::default::Default for D3D12_RESIDENCY_PRIORITY {
 }
 unsafe impl ::windows::core::Abi for D3D12_RESIDENCY_PRIORITY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_RESIDENCY_PRIORITY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12697,6 +12953,7 @@ impl ::core::default::Default for D3D12_RESOLVE_MODE {
 }
 unsafe impl ::windows::core::Abi for D3D12_RESOLVE_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_RESOLVE_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12721,6 +12978,7 @@ impl ::core::fmt::Debug for D3D12_RESOURCE_ALIASING_BARRIER {
 }
 unsafe impl ::windows::core::Abi for D3D12_RESOURCE_ALIASING_BARRIER {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_RESOURCE_ALIASING_BARRIER {
     fn eq(&self, other: &Self) -> bool {
@@ -12752,6 +13010,7 @@ impl ::core::fmt::Debug for D3D12_RESOURCE_ALLOCATION_INFO {
 }
 unsafe impl ::windows::core::Abi for D3D12_RESOURCE_ALLOCATION_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_RESOURCE_ALLOCATION_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -12784,6 +13043,7 @@ impl ::core::fmt::Debug for D3D12_RESOURCE_ALLOCATION_INFO1 {
 }
 unsafe impl ::windows::core::Abi for D3D12_RESOURCE_ALLOCATION_INFO1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_RESOURCE_ALLOCATION_INFO1 {
     fn eq(&self, other: &Self) -> bool {
@@ -12810,6 +13070,7 @@ impl ::core::clone::Clone for D3D12_RESOURCE_BARRIER {
 }
 unsafe impl ::windows::core::Abi for D3D12_RESOURCE_BARRIER {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_RESOURCE_BARRIER {
     fn eq(&self, other: &Self) -> bool {
@@ -12836,6 +13097,7 @@ impl ::core::clone::Clone for D3D12_RESOURCE_BARRIER_0 {
 }
 unsafe impl ::windows::core::Abi for D3D12_RESOURCE_BARRIER_0 {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_RESOURCE_BARRIER_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -12873,6 +13135,7 @@ impl ::core::default::Default for D3D12_RESOURCE_BARRIER_FLAGS {
 }
 unsafe impl ::windows::core::Abi for D3D12_RESOURCE_BARRIER_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_RESOURCE_BARRIER_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12930,6 +13193,7 @@ impl ::core::default::Default for D3D12_RESOURCE_BARRIER_TYPE {
 }
 unsafe impl ::windows::core::Abi for D3D12_RESOURCE_BARRIER_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_RESOURCE_BARRIER_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12959,6 +13223,7 @@ impl ::core::default::Default for D3D12_RESOURCE_BINDING_TIER {
 }
 unsafe impl ::windows::core::Abi for D3D12_RESOURCE_BINDING_TIER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_RESOURCE_BINDING_TIER {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12997,6 +13262,7 @@ impl ::core::fmt::Debug for D3D12_RESOURCE_DESC {
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 unsafe impl ::windows::core::Abi for D3D12_RESOURCE_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 impl ::core::cmp::PartialEq for D3D12_RESOURCE_DESC {
@@ -13045,6 +13311,7 @@ impl ::core::fmt::Debug for D3D12_RESOURCE_DESC1 {
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 unsafe impl ::windows::core::Abi for D3D12_RESOURCE_DESC1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 impl ::core::cmp::PartialEq for D3D12_RESOURCE_DESC1 {
@@ -13087,6 +13354,7 @@ impl ::core::default::Default for D3D12_RESOURCE_DIMENSION {
 }
 unsafe impl ::windows::core::Abi for D3D12_RESOURCE_DIMENSION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_RESOURCE_DIMENSION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13128,6 +13396,7 @@ impl ::core::default::Default for D3D12_RESOURCE_FLAGS {
 }
 unsafe impl ::windows::core::Abi for D3D12_RESOURCE_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_RESOURCE_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13183,6 +13452,7 @@ impl ::core::default::Default for D3D12_RESOURCE_HEAP_TIER {
 }
 unsafe impl ::windows::core::Abi for D3D12_RESOURCE_HEAP_TIER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_RESOURCE_HEAP_TIER {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13260,6 +13530,7 @@ impl ::core::default::Default for D3D12_RESOURCE_STATES {
 }
 unsafe impl ::windows::core::Abi for D3D12_RESOURCE_STATES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_RESOURCE_STATES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13314,6 +13585,7 @@ impl ::core::fmt::Debug for D3D12_RESOURCE_TRANSITION_BARRIER {
 }
 unsafe impl ::windows::core::Abi for D3D12_RESOURCE_TRANSITION_BARRIER {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_RESOURCE_TRANSITION_BARRIER {
     fn eq(&self, other: &Self) -> bool {
@@ -13343,6 +13615,7 @@ impl ::core::fmt::Debug for D3D12_RESOURCE_UAV_BARRIER {
 }
 unsafe impl ::windows::core::Abi for D3D12_RESOURCE_UAV_BARRIER {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_RESOURCE_UAV_BARRIER {
     fn eq(&self, other: &Self) -> bool {
@@ -13380,6 +13653,7 @@ impl ::core::default::Default for D3D12_RLDO_FLAGS {
 }
 unsafe impl ::windows::core::Abi for D3D12_RLDO_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_RLDO_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13406,6 +13680,7 @@ impl ::core::fmt::Debug for D3D12_ROOT_CONSTANTS {
 }
 unsafe impl ::windows::core::Abi for D3D12_ROOT_CONSTANTS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_ROOT_CONSTANTS {
     fn eq(&self, other: &Self) -> bool {
@@ -13437,6 +13712,7 @@ impl ::core::fmt::Debug for D3D12_ROOT_DESCRIPTOR {
 }
 unsafe impl ::windows::core::Abi for D3D12_ROOT_DESCRIPTOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_ROOT_DESCRIPTOR {
     fn eq(&self, other: &Self) -> bool {
@@ -13469,6 +13745,7 @@ impl ::core::fmt::Debug for D3D12_ROOT_DESCRIPTOR1 {
 }
 unsafe impl ::windows::core::Abi for D3D12_ROOT_DESCRIPTOR1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_ROOT_DESCRIPTOR1 {
     fn eq(&self, other: &Self) -> bool {
@@ -13506,6 +13783,7 @@ impl ::core::default::Default for D3D12_ROOT_DESCRIPTOR_FLAGS {
 }
 unsafe impl ::windows::core::Abi for D3D12_ROOT_DESCRIPTOR_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_ROOT_DESCRIPTOR_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13559,6 +13837,7 @@ impl ::core::fmt::Debug for D3D12_ROOT_DESCRIPTOR_TABLE {
 }
 unsafe impl ::windows::core::Abi for D3D12_ROOT_DESCRIPTOR_TABLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_ROOT_DESCRIPTOR_TABLE {
     fn eq(&self, other: &Self) -> bool {
@@ -13590,6 +13869,7 @@ impl ::core::fmt::Debug for D3D12_ROOT_DESCRIPTOR_TABLE1 {
 }
 unsafe impl ::windows::core::Abi for D3D12_ROOT_DESCRIPTOR_TABLE1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_ROOT_DESCRIPTOR_TABLE1 {
     fn eq(&self, other: &Self) -> bool {
@@ -13617,6 +13897,7 @@ impl ::core::clone::Clone for D3D12_ROOT_PARAMETER {
 }
 unsafe impl ::windows::core::Abi for D3D12_ROOT_PARAMETER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_ROOT_PARAMETER {
     fn eq(&self, other: &Self) -> bool {
@@ -13644,6 +13925,7 @@ impl ::core::clone::Clone for D3D12_ROOT_PARAMETER_0 {
 }
 unsafe impl ::windows::core::Abi for D3D12_ROOT_PARAMETER_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_ROOT_PARAMETER_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -13671,6 +13953,7 @@ impl ::core::clone::Clone for D3D12_ROOT_PARAMETER1 {
 }
 unsafe impl ::windows::core::Abi for D3D12_ROOT_PARAMETER1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_ROOT_PARAMETER1 {
     fn eq(&self, other: &Self) -> bool {
@@ -13698,6 +13981,7 @@ impl ::core::clone::Clone for D3D12_ROOT_PARAMETER1_0 {
 }
 unsafe impl ::windows::core::Abi for D3D12_ROOT_PARAMETER1_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_ROOT_PARAMETER1_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -13737,6 +14021,7 @@ impl ::core::default::Default for D3D12_ROOT_PARAMETER_TYPE {
 }
 unsafe impl ::windows::core::Abi for D3D12_ROOT_PARAMETER_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_ROOT_PARAMETER_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13765,6 +14050,7 @@ impl ::core::fmt::Debug for D3D12_ROOT_SIGNATURE_DESC {
 }
 unsafe impl ::windows::core::Abi for D3D12_ROOT_SIGNATURE_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_ROOT_SIGNATURE_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -13799,6 +14085,7 @@ impl ::core::fmt::Debug for D3D12_ROOT_SIGNATURE_DESC1 {
 }
 unsafe impl ::windows::core::Abi for D3D12_ROOT_SIGNATURE_DESC1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_ROOT_SIGNATURE_DESC1 {
     fn eq(&self, other: &Self) -> bool {
@@ -13854,6 +14141,7 @@ impl ::core::default::Default for D3D12_ROOT_SIGNATURE_FLAGS {
 }
 unsafe impl ::windows::core::Abi for D3D12_ROOT_SIGNATURE_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_ROOT_SIGNATURE_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13925,6 +14213,7 @@ impl ::core::default::Default for D3D12_RTV_DIMENSION {
 }
 unsafe impl ::windows::core::Abi for D3D12_RTV_DIMENSION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_RTV_DIMENSION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13955,6 +14244,7 @@ impl ::core::fmt::Debug for D3D12_RT_FORMAT_ARRAY {
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 unsafe impl ::windows::core::Abi for D3D12_RT_FORMAT_ARRAY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 impl ::core::cmp::PartialEq for D3D12_RT_FORMAT_ARRAY {
@@ -13997,6 +14287,7 @@ impl ::core::fmt::Debug for D3D12_SAMPLER_DESC {
 }
 unsafe impl ::windows::core::Abi for D3D12_SAMPLER_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_SAMPLER_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -14032,6 +14323,7 @@ impl ::core::default::Default for D3D12_SAMPLER_FEEDBACK_TIER {
 }
 unsafe impl ::windows::core::Abi for D3D12_SAMPLER_FEEDBACK_TIER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_SAMPLER_FEEDBACK_TIER {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14057,6 +14349,7 @@ impl ::core::fmt::Debug for D3D12_SAMPLE_POSITION {
 }
 unsafe impl ::windows::core::Abi for D3D12_SAMPLE_POSITION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_SAMPLE_POSITION {
     fn eq(&self, other: &Self) -> bool {
@@ -14090,6 +14383,7 @@ impl ::core::fmt::Debug for D3D12_SERIALIZED_DATA_DRIVER_MATCHING_IDENTIFIER {
 }
 unsafe impl ::windows::core::Abi for D3D12_SERIALIZED_DATA_DRIVER_MATCHING_IDENTIFIER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_SERIALIZED_DATA_DRIVER_MATCHING_IDENTIFIER {
     fn eq(&self, other: &Self) -> bool {
@@ -14121,6 +14415,7 @@ impl ::core::default::Default for D3D12_SERIALIZED_DATA_TYPE {
 }
 unsafe impl ::windows::core::Abi for D3D12_SERIALIZED_DATA_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_SERIALIZED_DATA_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14148,6 +14443,7 @@ impl ::core::fmt::Debug for D3D12_SERIALIZED_RAYTRACING_ACCELERATION_STRUCTURE_H
 }
 unsafe impl ::windows::core::Abi for D3D12_SERIALIZED_RAYTRACING_ACCELERATION_STRUCTURE_HEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_SERIALIZED_RAYTRACING_ACCELERATION_STRUCTURE_HEADER {
     fn eq(&self, other: &Self) -> bool {
@@ -14187,6 +14483,7 @@ impl ::core::fmt::Debug for D3D12_SHADER_BUFFER_DESC {
 #[cfg(feature = "Win32_Graphics_Direct3D")]
 unsafe impl ::windows::core::Abi for D3D12_SHADER_BUFFER_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Direct3D")]
 impl ::core::cmp::PartialEq for D3D12_SHADER_BUFFER_DESC {
@@ -14221,6 +14518,7 @@ impl ::core::fmt::Debug for D3D12_SHADER_BYTECODE {
 }
 unsafe impl ::windows::core::Abi for D3D12_SHADER_BYTECODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_SHADER_BYTECODE {
     fn eq(&self, other: &Self) -> bool {
@@ -14256,6 +14554,7 @@ impl ::core::default::Default for D3D12_SHADER_CACHE_CONTROL_FLAGS {
 }
 unsafe impl ::windows::core::Abi for D3D12_SHADER_CACHE_CONTROL_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_SHADER_CACHE_CONTROL_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14313,6 +14612,7 @@ impl ::core::default::Default for D3D12_SHADER_CACHE_FLAGS {
 }
 unsafe impl ::windows::core::Abi for D3D12_SHADER_CACHE_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_SHADER_CACHE_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14372,6 +14672,7 @@ impl ::core::default::Default for D3D12_SHADER_CACHE_KIND_FLAGS {
 }
 unsafe impl ::windows::core::Abi for D3D12_SHADER_CACHE_KIND_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_SHADER_CACHE_KIND_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14427,6 +14728,7 @@ impl ::core::default::Default for D3D12_SHADER_CACHE_MODE {
 }
 unsafe impl ::windows::core::Abi for D3D12_SHADER_CACHE_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_SHADER_CACHE_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14457,6 +14759,7 @@ impl ::core::fmt::Debug for D3D12_SHADER_CACHE_SESSION_DESC {
 }
 unsafe impl ::windows::core::Abi for D3D12_SHADER_CACHE_SESSION_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_SHADER_CACHE_SESSION_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -14502,6 +14805,7 @@ impl ::core::default::Default for D3D12_SHADER_CACHE_SUPPORT_FLAGS {
 }
 unsafe impl ::windows::core::Abi for D3D12_SHADER_CACHE_SUPPORT_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_SHADER_CACHE_SUPPORT_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14565,6 +14869,7 @@ impl ::core::default::Default for D3D12_SHADER_COMPONENT_MAPPING {
 }
 unsafe impl ::windows::core::Abi for D3D12_SHADER_COMPONENT_MAPPING {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_SHADER_COMPONENT_MAPPING {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14676,6 +14981,7 @@ impl ::core::fmt::Debug for D3D12_SHADER_DESC {
 #[cfg(feature = "Win32_Graphics_Direct3D")]
 unsafe impl ::windows::core::Abi for D3D12_SHADER_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Direct3D")]
 impl ::core::cmp::PartialEq for D3D12_SHADER_DESC {
@@ -14725,6 +15031,7 @@ impl ::core::fmt::Debug for D3D12_SHADER_INPUT_BIND_DESC {
 #[cfg(feature = "Win32_Graphics_Direct3D")]
 unsafe impl ::windows::core::Abi for D3D12_SHADER_INPUT_BIND_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Direct3D")]
 impl ::core::cmp::PartialEq for D3D12_SHADER_INPUT_BIND_DESC {
@@ -14775,6 +15082,7 @@ impl ::core::default::Default for D3D12_SHADER_MIN_PRECISION_SUPPORT {
 }
 unsafe impl ::windows::core::Abi for D3D12_SHADER_MIN_PRECISION_SUPPORT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_SHADER_MIN_PRECISION_SUPPORT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14829,6 +15137,7 @@ impl ::core::clone::Clone for D3D12_SHADER_RESOURCE_VIEW_DESC {
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 unsafe impl ::windows::core::Abi for D3D12_SHADER_RESOURCE_VIEW_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 impl ::core::cmp::PartialEq for D3D12_SHADER_RESOURCE_VIEW_DESC {
@@ -14871,6 +15180,7 @@ impl ::core::clone::Clone for D3D12_SHADER_RESOURCE_VIEW_DESC_0 {
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 unsafe impl ::windows::core::Abi for D3D12_SHADER_RESOURCE_VIEW_DESC_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 impl ::core::cmp::PartialEq for D3D12_SHADER_RESOURCE_VIEW_DESC_0 {
@@ -14916,6 +15226,7 @@ impl ::core::fmt::Debug for D3D12_SHADER_TYPE_DESC {
 #[cfg(feature = "Win32_Graphics_Direct3D")]
 unsafe impl ::windows::core::Abi for D3D12_SHADER_TYPE_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Direct3D")]
 impl ::core::cmp::PartialEq for D3D12_SHADER_TYPE_DESC {
@@ -14957,6 +15268,7 @@ impl ::core::fmt::Debug for D3D12_SHADER_VARIABLE_DESC {
 }
 unsafe impl ::windows::core::Abi for D3D12_SHADER_VARIABLE_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_SHADER_VARIABLE_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -15000,6 +15312,7 @@ impl ::core::default::Default for D3D12_SHADER_VERSION_TYPE {
 }
 unsafe impl ::windows::core::Abi for D3D12_SHADER_VERSION_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_SHADER_VERSION_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -15039,6 +15352,7 @@ impl ::core::default::Default for D3D12_SHADER_VISIBILITY {
 }
 unsafe impl ::windows::core::Abi for D3D12_SHADER_VISIBILITY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_SHADER_VISIBILITY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -15076,6 +15390,7 @@ impl ::core::default::Default for D3D12_SHADING_RATE {
 }
 unsafe impl ::windows::core::Abi for D3D12_SHADING_RATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_SHADING_RATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -15109,6 +15424,7 @@ impl ::core::default::Default for D3D12_SHADING_RATE_COMBINER {
 }
 unsafe impl ::windows::core::Abi for D3D12_SHADING_RATE_COMBINER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_SHADING_RATE_COMBINER {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -15142,6 +15458,7 @@ impl ::core::default::Default for D3D12_SHARED_RESOURCE_COMPATIBILITY_TIER {
 }
 unsafe impl ::windows::core::Abi for D3D12_SHARED_RESOURCE_COMPATIBILITY_TIER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_SHARED_RESOURCE_COMPATIBILITY_TIER {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -15183,6 +15500,7 @@ impl ::core::fmt::Debug for D3D12_SIGNATURE_PARAMETER_DESC {
 #[cfg(feature = "Win32_Graphics_Direct3D")]
 unsafe impl ::windows::core::Abi for D3D12_SIGNATURE_PARAMETER_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Direct3D")]
 impl ::core::cmp::PartialEq for D3D12_SIGNATURE_PARAMETER_DESC {
@@ -15235,6 +15553,7 @@ impl ::core::fmt::Debug for D3D12_SO_DECLARATION_ENTRY {
 }
 unsafe impl ::windows::core::Abi for D3D12_SO_DECLARATION_ENTRY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_SO_DECLARATION_ENTRY {
     fn eq(&self, other: &Self) -> bool {
@@ -15316,6 +15635,7 @@ impl ::core::default::Default for D3D12_SRV_DIMENSION {
 }
 unsafe impl ::windows::core::Abi for D3D12_SRV_DIMENSION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_SRV_DIMENSION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -15356,6 +15676,7 @@ impl ::core::fmt::Debug for D3D12_STATE_OBJECT_CONFIG {
 }
 unsafe impl ::windows::core::Abi for D3D12_STATE_OBJECT_CONFIG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_STATE_OBJECT_CONFIG {
     fn eq(&self, other: &Self) -> bool {
@@ -15388,6 +15709,7 @@ impl ::core::fmt::Debug for D3D12_STATE_OBJECT_DESC {
 }
 unsafe impl ::windows::core::Abi for D3D12_STATE_OBJECT_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_STATE_OBJECT_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -15425,6 +15747,7 @@ impl ::core::default::Default for D3D12_STATE_OBJECT_FLAGS {
 }
 unsafe impl ::windows::core::Abi for D3D12_STATE_OBJECT_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_STATE_OBJECT_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -15480,6 +15803,7 @@ impl ::core::default::Default for D3D12_STATE_OBJECT_TYPE {
 }
 unsafe impl ::windows::core::Abi for D3D12_STATE_OBJECT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_STATE_OBJECT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -15505,6 +15829,7 @@ impl ::core::fmt::Debug for D3D12_STATE_SUBOBJECT {
 }
 unsafe impl ::windows::core::Abi for D3D12_STATE_SUBOBJECT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_STATE_SUBOBJECT {
     fn eq(&self, other: &Self) -> bool {
@@ -15560,6 +15885,7 @@ impl ::core::default::Default for D3D12_STATE_SUBOBJECT_TYPE {
 }
 unsafe impl ::windows::core::Abi for D3D12_STATE_SUBOBJECT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_STATE_SUBOBJECT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -15589,6 +15915,7 @@ impl ::core::default::Default for D3D12_STATIC_BORDER_COLOR {
 }
 unsafe impl ::windows::core::Abi for D3D12_STATIC_BORDER_COLOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_STATIC_BORDER_COLOR {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -15639,6 +15966,7 @@ impl ::core::fmt::Debug for D3D12_STATIC_SAMPLER_DESC {
 }
 unsafe impl ::windows::core::Abi for D3D12_STATIC_SAMPLER_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_STATIC_SAMPLER_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -15684,6 +16012,7 @@ impl ::core::default::Default for D3D12_STENCIL_OP {
 }
 unsafe impl ::windows::core::Abi for D3D12_STENCIL_OP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_STENCIL_OP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -15710,6 +16039,7 @@ impl ::core::fmt::Debug for D3D12_STREAM_OUTPUT_BUFFER_VIEW {
 }
 unsafe impl ::windows::core::Abi for D3D12_STREAM_OUTPUT_BUFFER_VIEW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_STREAM_OUTPUT_BUFFER_VIEW {
     fn eq(&self, other: &Self) -> bool {
@@ -15744,6 +16074,7 @@ impl ::core::fmt::Debug for D3D12_STREAM_OUTPUT_DESC {
 }
 unsafe impl ::windows::core::Abi for D3D12_STREAM_OUTPUT_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_STREAM_OUTPUT_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -15776,6 +16107,7 @@ impl ::core::fmt::Debug for D3D12_SUBOBJECT_TO_EXPORTS_ASSOCIATION {
 }
 unsafe impl ::windows::core::Abi for D3D12_SUBOBJECT_TO_EXPORTS_ASSOCIATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_SUBOBJECT_TO_EXPORTS_ASSOCIATION {
     fn eq(&self, other: &Self) -> bool {
@@ -15810,6 +16142,7 @@ impl ::core::fmt::Debug for D3D12_SUBRESOURCE_DATA {
 }
 unsafe impl ::windows::core::Abi for D3D12_SUBRESOURCE_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_SUBRESOURCE_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -15849,6 +16182,7 @@ impl ::core::fmt::Debug for D3D12_SUBRESOURCE_FOOTPRINT {
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 unsafe impl ::windows::core::Abi for D3D12_SUBRESOURCE_FOOTPRINT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 impl ::core::cmp::PartialEq for D3D12_SUBRESOURCE_FOOTPRINT {
@@ -15884,6 +16218,7 @@ impl ::core::fmt::Debug for D3D12_SUBRESOURCE_INFO {
 }
 unsafe impl ::windows::core::Abi for D3D12_SUBRESOURCE_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_SUBRESOURCE_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -15915,6 +16250,7 @@ impl ::core::fmt::Debug for D3D12_SUBRESOURCE_RANGE_UINT64 {
 }
 unsafe impl ::windows::core::Abi for D3D12_SUBRESOURCE_RANGE_UINT64 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_SUBRESOURCE_RANGE_UINT64 {
     fn eq(&self, other: &Self) -> bool {
@@ -15948,6 +16284,7 @@ impl ::core::fmt::Debug for D3D12_SUBRESOURCE_TILING {
 }
 unsafe impl ::windows::core::Abi for D3D12_SUBRESOURCE_TILING {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_SUBRESOURCE_TILING {
     fn eq(&self, other: &Self) -> bool {
@@ -16000,6 +16337,7 @@ impl ::core::fmt::Debug for D3D12_TEX1D_ARRAY_DSV {
 }
 unsafe impl ::windows::core::Abi for D3D12_TEX1D_ARRAY_DSV {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_TEX1D_ARRAY_DSV {
     fn eq(&self, other: &Self) -> bool {
@@ -16032,6 +16370,7 @@ impl ::core::fmt::Debug for D3D12_TEX1D_ARRAY_RTV {
 }
 unsafe impl ::windows::core::Abi for D3D12_TEX1D_ARRAY_RTV {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_TEX1D_ARRAY_RTV {
     fn eq(&self, other: &Self) -> bool {
@@ -16066,6 +16405,7 @@ impl ::core::fmt::Debug for D3D12_TEX1D_ARRAY_SRV {
 }
 unsafe impl ::windows::core::Abi for D3D12_TEX1D_ARRAY_SRV {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_TEX1D_ARRAY_SRV {
     fn eq(&self, other: &Self) -> bool {
@@ -16098,6 +16438,7 @@ impl ::core::fmt::Debug for D3D12_TEX1D_ARRAY_UAV {
 }
 unsafe impl ::windows::core::Abi for D3D12_TEX1D_ARRAY_UAV {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_TEX1D_ARRAY_UAV {
     fn eq(&self, other: &Self) -> bool {
@@ -16128,6 +16469,7 @@ impl ::core::fmt::Debug for D3D12_TEX1D_DSV {
 }
 unsafe impl ::windows::core::Abi for D3D12_TEX1D_DSV {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_TEX1D_DSV {
     fn eq(&self, other: &Self) -> bool {
@@ -16158,6 +16500,7 @@ impl ::core::fmt::Debug for D3D12_TEX1D_RTV {
 }
 unsafe impl ::windows::core::Abi for D3D12_TEX1D_RTV {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_TEX1D_RTV {
     fn eq(&self, other: &Self) -> bool {
@@ -16190,6 +16533,7 @@ impl ::core::fmt::Debug for D3D12_TEX1D_SRV {
 }
 unsafe impl ::windows::core::Abi for D3D12_TEX1D_SRV {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_TEX1D_SRV {
     fn eq(&self, other: &Self) -> bool {
@@ -16220,6 +16564,7 @@ impl ::core::fmt::Debug for D3D12_TEX1D_UAV {
 }
 unsafe impl ::windows::core::Abi for D3D12_TEX1D_UAV {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_TEX1D_UAV {
     fn eq(&self, other: &Self) -> bool {
@@ -16251,6 +16596,7 @@ impl ::core::fmt::Debug for D3D12_TEX2DMS_ARRAY_DSV {
 }
 unsafe impl ::windows::core::Abi for D3D12_TEX2DMS_ARRAY_DSV {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_TEX2DMS_ARRAY_DSV {
     fn eq(&self, other: &Self) -> bool {
@@ -16282,6 +16628,7 @@ impl ::core::fmt::Debug for D3D12_TEX2DMS_ARRAY_RTV {
 }
 unsafe impl ::windows::core::Abi for D3D12_TEX2DMS_ARRAY_RTV {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_TEX2DMS_ARRAY_RTV {
     fn eq(&self, other: &Self) -> bool {
@@ -16313,6 +16660,7 @@ impl ::core::fmt::Debug for D3D12_TEX2DMS_ARRAY_SRV {
 }
 unsafe impl ::windows::core::Abi for D3D12_TEX2DMS_ARRAY_SRV {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_TEX2DMS_ARRAY_SRV {
     fn eq(&self, other: &Self) -> bool {
@@ -16343,6 +16691,7 @@ impl ::core::fmt::Debug for D3D12_TEX2DMS_DSV {
 }
 unsafe impl ::windows::core::Abi for D3D12_TEX2DMS_DSV {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_TEX2DMS_DSV {
     fn eq(&self, other: &Self) -> bool {
@@ -16373,6 +16722,7 @@ impl ::core::fmt::Debug for D3D12_TEX2DMS_RTV {
 }
 unsafe impl ::windows::core::Abi for D3D12_TEX2DMS_RTV {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_TEX2DMS_RTV {
     fn eq(&self, other: &Self) -> bool {
@@ -16403,6 +16753,7 @@ impl ::core::fmt::Debug for D3D12_TEX2DMS_SRV {
 }
 unsafe impl ::windows::core::Abi for D3D12_TEX2DMS_SRV {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_TEX2DMS_SRV {
     fn eq(&self, other: &Self) -> bool {
@@ -16435,6 +16786,7 @@ impl ::core::fmt::Debug for D3D12_TEX2D_ARRAY_DSV {
 }
 unsafe impl ::windows::core::Abi for D3D12_TEX2D_ARRAY_DSV {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_TEX2D_ARRAY_DSV {
     fn eq(&self, other: &Self) -> bool {
@@ -16468,6 +16820,7 @@ impl ::core::fmt::Debug for D3D12_TEX2D_ARRAY_RTV {
 }
 unsafe impl ::windows::core::Abi for D3D12_TEX2D_ARRAY_RTV {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_TEX2D_ARRAY_RTV {
     fn eq(&self, other: &Self) -> bool {
@@ -16503,6 +16856,7 @@ impl ::core::fmt::Debug for D3D12_TEX2D_ARRAY_SRV {
 }
 unsafe impl ::windows::core::Abi for D3D12_TEX2D_ARRAY_SRV {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_TEX2D_ARRAY_SRV {
     fn eq(&self, other: &Self) -> bool {
@@ -16536,6 +16890,7 @@ impl ::core::fmt::Debug for D3D12_TEX2D_ARRAY_UAV {
 }
 unsafe impl ::windows::core::Abi for D3D12_TEX2D_ARRAY_UAV {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_TEX2D_ARRAY_UAV {
     fn eq(&self, other: &Self) -> bool {
@@ -16566,6 +16921,7 @@ impl ::core::fmt::Debug for D3D12_TEX2D_DSV {
 }
 unsafe impl ::windows::core::Abi for D3D12_TEX2D_DSV {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_TEX2D_DSV {
     fn eq(&self, other: &Self) -> bool {
@@ -16597,6 +16953,7 @@ impl ::core::fmt::Debug for D3D12_TEX2D_RTV {
 }
 unsafe impl ::windows::core::Abi for D3D12_TEX2D_RTV {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_TEX2D_RTV {
     fn eq(&self, other: &Self) -> bool {
@@ -16630,6 +16987,7 @@ impl ::core::fmt::Debug for D3D12_TEX2D_SRV {
 }
 unsafe impl ::windows::core::Abi for D3D12_TEX2D_SRV {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_TEX2D_SRV {
     fn eq(&self, other: &Self) -> bool {
@@ -16661,6 +17019,7 @@ impl ::core::fmt::Debug for D3D12_TEX2D_UAV {
 }
 unsafe impl ::windows::core::Abi for D3D12_TEX2D_UAV {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_TEX2D_UAV {
     fn eq(&self, other: &Self) -> bool {
@@ -16693,6 +17052,7 @@ impl ::core::fmt::Debug for D3D12_TEX3D_RTV {
 }
 unsafe impl ::windows::core::Abi for D3D12_TEX3D_RTV {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_TEX3D_RTV {
     fn eq(&self, other: &Self) -> bool {
@@ -16725,6 +17085,7 @@ impl ::core::fmt::Debug for D3D12_TEX3D_SRV {
 }
 unsafe impl ::windows::core::Abi for D3D12_TEX3D_SRV {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_TEX3D_SRV {
     fn eq(&self, other: &Self) -> bool {
@@ -16757,6 +17118,7 @@ impl ::core::fmt::Debug for D3D12_TEX3D_UAV {
 }
 unsafe impl ::windows::core::Abi for D3D12_TEX3D_UAV {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_TEX3D_UAV {
     fn eq(&self, other: &Self) -> bool {
@@ -16791,6 +17153,7 @@ impl ::core::fmt::Debug for D3D12_TEXCUBE_ARRAY_SRV {
 }
 unsafe impl ::windows::core::Abi for D3D12_TEXCUBE_ARRAY_SRV {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_TEXCUBE_ARRAY_SRV {
     fn eq(&self, other: &Self) -> bool {
@@ -16823,6 +17186,7 @@ impl ::core::fmt::Debug for D3D12_TEXCUBE_SRV {
 }
 unsafe impl ::windows::core::Abi for D3D12_TEXCUBE_SRV {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_TEXCUBE_SRV {
     fn eq(&self, other: &Self) -> bool {
@@ -16864,6 +17228,7 @@ impl ::core::default::Default for D3D12_TEXTURE_ADDRESS_MODE {
 }
 unsafe impl ::windows::core::Abi for D3D12_TEXTURE_ADDRESS_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_TEXTURE_ADDRESS_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -16887,6 +17252,7 @@ impl ::core::clone::Clone for D3D12_TEXTURE_COPY_LOCATION {
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 unsafe impl ::windows::core::Abi for D3D12_TEXTURE_COPY_LOCATION {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 impl ::core::cmp::PartialEq for D3D12_TEXTURE_COPY_LOCATION {
@@ -16920,6 +17286,7 @@ impl ::core::clone::Clone for D3D12_TEXTURE_COPY_LOCATION_0 {
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 unsafe impl ::windows::core::Abi for D3D12_TEXTURE_COPY_LOCATION_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 impl ::core::cmp::PartialEq for D3D12_TEXTURE_COPY_LOCATION_0 {
@@ -16956,6 +17323,7 @@ impl ::core::default::Default for D3D12_TEXTURE_COPY_TYPE {
 }
 unsafe impl ::windows::core::Abi for D3D12_TEXTURE_COPY_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_TEXTURE_COPY_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -16991,6 +17359,7 @@ impl ::core::default::Default for D3D12_TEXTURE_LAYOUT {
 }
 unsafe impl ::windows::core::Abi for D3D12_TEXTURE_LAYOUT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_TEXTURE_LAYOUT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -17024,6 +17393,7 @@ impl ::core::default::Default for D3D12_TILED_RESOURCES_TIER {
 }
 unsafe impl ::windows::core::Abi for D3D12_TILED_RESOURCES_TIER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_TILED_RESOURCES_TIER {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -17051,6 +17421,7 @@ impl ::core::fmt::Debug for D3D12_TILED_RESOURCE_COORDINATE {
 }
 unsafe impl ::windows::core::Abi for D3D12_TILED_RESOURCE_COORDINATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_TILED_RESOURCE_COORDINATE {
     fn eq(&self, other: &Self) -> bool {
@@ -17090,6 +17461,7 @@ impl ::core::default::Default for D3D12_TILE_COPY_FLAGS {
 }
 unsafe impl ::windows::core::Abi for D3D12_TILE_COPY_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_TILE_COPY_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -17145,6 +17517,7 @@ impl ::core::default::Default for D3D12_TILE_MAPPING_FLAGS {
 }
 unsafe impl ::windows::core::Abi for D3D12_TILE_MAPPING_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_TILE_MAPPING_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -17204,6 +17577,7 @@ impl ::core::default::Default for D3D12_TILE_RANGE_FLAGS {
 }
 unsafe impl ::windows::core::Abi for D3D12_TILE_RANGE_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_TILE_RANGE_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -17237,6 +17611,7 @@ impl ::core::fmt::Debug for D3D12_TILE_REGION_SIZE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3D12_TILE_REGION_SIZE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3D12_TILE_REGION_SIZE {
@@ -17272,6 +17647,7 @@ impl ::core::fmt::Debug for D3D12_TILE_SHAPE {
 }
 unsafe impl ::windows::core::Abi for D3D12_TILE_SHAPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_TILE_SHAPE {
     fn eq(&self, other: &Self) -> bool {
@@ -17319,6 +17695,7 @@ impl ::core::default::Default for D3D12_UAV_DIMENSION {
 }
 unsafe impl ::windows::core::Abi for D3D12_UAV_DIMENSION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_UAV_DIMENSION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -17348,6 +17725,7 @@ impl ::core::clone::Clone for D3D12_UNORDERED_ACCESS_VIEW_DESC {
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 unsafe impl ::windows::core::Abi for D3D12_UNORDERED_ACCESS_VIEW_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 impl ::core::cmp::PartialEq for D3D12_UNORDERED_ACCESS_VIEW_DESC {
@@ -17385,6 +17763,7 @@ impl ::core::clone::Clone for D3D12_UNORDERED_ACCESS_VIEW_DESC_0 {
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 unsafe impl ::windows::core::Abi for D3D12_UNORDERED_ACCESS_VIEW_DESC_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 impl ::core::cmp::PartialEq for D3D12_UNORDERED_ACCESS_VIEW_DESC_0 {
@@ -17423,6 +17802,7 @@ impl ::core::default::Default for D3D12_VARIABLE_SHADING_RATE_TIER {
 }
 unsafe impl ::windows::core::Abi for D3D12_VARIABLE_SHADING_RATE_TIER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_VARIABLE_SHADING_RATE_TIER {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -17443,6 +17823,7 @@ impl ::core::clone::Clone for D3D12_VERSIONED_DEVICE_REMOVED_EXTENDED_DATA {
 }
 unsafe impl ::windows::core::Abi for D3D12_VERSIONED_DEVICE_REMOVED_EXTENDED_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_VERSIONED_DEVICE_REMOVED_EXTENDED_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -17471,6 +17852,7 @@ impl ::core::clone::Clone for D3D12_VERSIONED_DEVICE_REMOVED_EXTENDED_DATA_0 {
 }
 unsafe impl ::windows::core::Abi for D3D12_VERSIONED_DEVICE_REMOVED_EXTENDED_DATA_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_VERSIONED_DEVICE_REMOVED_EXTENDED_DATA_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -17497,6 +17879,7 @@ impl ::core::clone::Clone for D3D12_VERSIONED_ROOT_SIGNATURE_DESC {
 }
 unsafe impl ::windows::core::Abi for D3D12_VERSIONED_ROOT_SIGNATURE_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_VERSIONED_ROOT_SIGNATURE_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -17523,6 +17906,7 @@ impl ::core::clone::Clone for D3D12_VERSIONED_ROOT_SIGNATURE_DESC_0 {
 }
 unsafe impl ::windows::core::Abi for D3D12_VERSIONED_ROOT_SIGNATURE_DESC_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_VERSIONED_ROOT_SIGNATURE_DESC_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -17555,6 +17939,7 @@ impl ::core::fmt::Debug for D3D12_VERTEX_BUFFER_VIEW {
 }
 unsafe impl ::windows::core::Abi for D3D12_VERTEX_BUFFER_VIEW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_VERTEX_BUFFER_VIEW {
     fn eq(&self, other: &Self) -> bool {
@@ -17604,6 +17989,7 @@ impl ::core::fmt::Debug for D3D12_VIEWPORT {
 }
 unsafe impl ::windows::core::Abi for D3D12_VIEWPORT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_VIEWPORT {
     fn eq(&self, other: &Self) -> bool {
@@ -17643,6 +18029,7 @@ impl ::core::fmt::Debug for D3D12_VIEW_INSTANCE_LOCATION {
 }
 unsafe impl ::windows::core::Abi for D3D12_VIEW_INSTANCE_LOCATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_VIEW_INSTANCE_LOCATION {
     fn eq(&self, other: &Self) -> bool {
@@ -17675,6 +18062,7 @@ impl ::core::fmt::Debug for D3D12_VIEW_INSTANCING_DESC {
 }
 unsafe impl ::windows::core::Abi for D3D12_VIEW_INSTANCING_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_VIEW_INSTANCING_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -17708,6 +18096,7 @@ impl ::core::default::Default for D3D12_VIEW_INSTANCING_FLAGS {
 }
 unsafe impl ::windows::core::Abi for D3D12_VIEW_INSTANCING_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_VIEW_INSTANCING_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -17767,6 +18156,7 @@ impl ::core::default::Default for D3D12_VIEW_INSTANCING_TIER {
 }
 unsafe impl ::windows::core::Abi for D3D12_VIEW_INSTANCING_TIER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_VIEW_INSTANCING_TIER {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -17810,6 +18200,7 @@ impl ::core::default::Default for D3D12_WAVE_MMA_TIER {
 }
 unsafe impl ::windows::core::Abi for D3D12_WAVE_MMA_TIER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_WAVE_MMA_TIER {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -17845,6 +18236,7 @@ impl ::core::default::Default for D3D12_WRITEBUFFERIMMEDIATE_MODE {
 }
 unsafe impl ::windows::core::Abi for D3D12_WRITEBUFFERIMMEDIATE_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D12_WRITEBUFFERIMMEDIATE_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -17870,6 +18262,7 @@ impl ::core::fmt::Debug for D3D12_WRITEBUFFERIMMEDIATE_PARAMETER {
 }
 unsafe impl ::windows::core::Abi for D3D12_WRITEBUFFERIMMEDIATE_PARAMETER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D12_WRITEBUFFERIMMEDIATE_PARAMETER {
     fn eq(&self, other: &Self) -> bool {
@@ -17905,6 +18298,7 @@ impl ::core::default::Default for D3D_ROOT_SIGNATURE_VERSION {
 }
 unsafe impl ::windows::core::Abi for D3D_ROOT_SIGNATURE_VERSION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D_ROOT_SIGNATURE_VERSION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -17946,6 +18340,7 @@ impl ::core::default::Default for D3D_SHADER_MODEL {
 }
 unsafe impl ::windows::core::Abi for D3D_SHADER_MODEL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3D_SHADER_MODEL {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -17996,6 +18391,11 @@ pub const DXGI_DEBUG_D3D12: ::windows::core::GUID = ::windows::core::GUID::from_
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
 #[repr(transparent)]
 pub struct ID3D12CommandAllocator(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D12CommandAllocator {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D12CommandAllocator {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
     pub unsafe fn GetPrivateData(&self, guid: *const ::windows::core::GUID, pdatasize: *mut u32, pdata: *mut ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -18102,11 +18502,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D12Pageable> for &'a ID3D12CommandAll
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D12CommandAllocator {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D12CommandAllocator {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -18131,6 +18526,11 @@ pub struct ID3D12CommandAllocator_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
 #[repr(transparent)]
 pub struct ID3D12CommandList(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D12CommandList {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D12CommandList {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
     pub unsafe fn GetPrivateData(&self, guid: *const ::windows::core::GUID, pdatasize: *mut u32, pdata: *mut ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -18217,11 +18617,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D12DeviceChild> for &'a ID3D12Command
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D12CommandList {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D12CommandList {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -18246,6 +18641,11 @@ pub struct ID3D12CommandList_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
 #[repr(transparent)]
 pub struct ID3D12CommandQueue(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D12CommandQueue {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D12CommandQueue {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
     pub unsafe fn GetPrivateData(&self, guid: *const ::windows::core::GUID, pdatasize: *mut u32, pdata: *mut ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -18397,11 +18797,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D12Pageable> for &'a ID3D12CommandQue
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D12CommandQueue {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D12CommandQueue {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -18442,6 +18837,11 @@ pub struct ID3D12CommandQueue_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
 #[repr(transparent)]
 pub struct ID3D12CommandSignature(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D12CommandSignature {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D12CommandSignature {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
     pub unsafe fn GetPrivateData(&self, guid: *const ::windows::core::GUID, pdatasize: *mut u32, pdata: *mut ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -18544,11 +18944,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D12Pageable> for &'a ID3D12CommandSig
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D12CommandSignature {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D12CommandSignature {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -18572,6 +18967,11 @@ pub struct ID3D12CommandSignature_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
 #[repr(transparent)]
 pub struct ID3D12Debug(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D12Debug {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D12Debug {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
     pub unsafe fn EnableDebugLayer(&self) {
@@ -18598,11 +18998,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ID3D1
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D12Debug {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D12Debug {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -18627,6 +19022,11 @@ pub struct ID3D12Debug_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
 #[repr(transparent)]
 pub struct ID3D12Debug1(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D12Debug1 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D12Debug1 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
     pub unsafe fn EnableDebugLayer(&self) {
@@ -18663,11 +19063,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ID3D1
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D12Debug1 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D12Debug1 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -18700,6 +19095,11 @@ pub struct ID3D12Debug1_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
 #[repr(transparent)]
 pub struct ID3D12Debug2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D12Debug2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D12Debug2 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
     pub unsafe fn SetGPUBasedValidationFlags(&self, flags: D3D12_GPU_BASED_VALIDATION_FLAGS) {
@@ -18726,11 +19126,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ID3D1
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D12Debug2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D12Debug2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -18755,6 +19150,11 @@ pub struct ID3D12Debug2_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
 #[repr(transparent)]
 pub struct ID3D12Debug3(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D12Debug3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D12Debug3 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
     pub unsafe fn EnableDebugLayer(&self) {
@@ -18815,11 +19215,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D12Debug> for &'a ID3D12Debug3 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D12Debug3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D12Debug3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -18852,6 +19247,11 @@ pub struct ID3D12Debug3_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
 #[repr(transparent)]
 pub struct ID3D12Debug4(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D12Debug4 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D12Debug4 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
     pub unsafe fn EnableDebugLayer(&self) {
@@ -18936,11 +19336,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D12Debug3> for &'a ID3D12Debug4 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D12Debug4 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D12Debug4 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -18965,6 +19360,11 @@ pub struct ID3D12Debug4_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
 #[repr(transparent)]
 pub struct ID3D12Debug5(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D12Debug5 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D12Debug5 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
     pub unsafe fn EnableDebugLayer(&self) {
@@ -19074,11 +19474,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D12Debug4> for &'a ID3D12Debug5 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D12Debug5 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D12Debug5 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -19106,6 +19501,11 @@ pub struct ID3D12Debug5_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
 #[repr(transparent)]
 pub struct ID3D12DebugCommandList(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D12DebugCommandList {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D12DebugCommandList {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -19141,11 +19541,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ID3D1
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D12DebugCommandList {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D12DebugCommandList {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -19175,6 +19570,11 @@ pub struct ID3D12DebugCommandList_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
 #[repr(transparent)]
 pub struct ID3D12DebugCommandList1(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D12DebugCommandList1 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D12DebugCommandList1 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -19210,11 +19610,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ID3D1
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D12DebugCommandList1 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D12DebugCommandList1 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -19244,6 +19639,11 @@ pub struct ID3D12DebugCommandList1_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
 #[repr(transparent)]
 pub struct ID3D12DebugCommandList2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D12DebugCommandList2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D12DebugCommandList2 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -19307,11 +19707,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D12DebugCommandList> for &'a ID3D12De
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D12DebugCommandList2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D12DebugCommandList2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -19337,6 +19732,11 @@ pub struct ID3D12DebugCommandList2_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
 #[repr(transparent)]
 pub struct ID3D12DebugCommandQueue(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D12DebugCommandQueue {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D12DebugCommandQueue {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -19362,11 +19762,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for ID3D12Deb
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ID3D12DebugCommandQueue {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for ID3D12DebugCommandQueue {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for ID3D12DebugCommandQueue {
@@ -19396,6 +19791,11 @@ pub struct ID3D12DebugCommandQueue_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
 #[repr(transparent)]
 pub struct ID3D12DebugDevice(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D12DebugDevice {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D12DebugDevice {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
     pub unsafe fn SetFeatureMask(&self, mask: D3D12_DEBUG_FEATURE) -> ::windows::core::Result<()> {
@@ -19430,11 +19830,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ID3D1
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D12DebugDevice {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D12DebugDevice {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -19461,6 +19856,11 @@ pub struct ID3D12DebugDevice_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
 #[repr(transparent)]
 pub struct ID3D12DebugDevice1(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D12DebugDevice1 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D12DebugDevice1 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
     pub unsafe fn SetDebugParameter(&self, r#type: D3D12_DEBUG_DEVICE_PARAMETER_TYPE, pdata: *const ::core::ffi::c_void, datasize: u32) -> ::windows::core::Result<()> {
@@ -19495,11 +19895,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ID3D1
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D12DebugDevice1 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D12DebugDevice1 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -19526,6 +19921,11 @@ pub struct ID3D12DebugDevice1_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
 #[repr(transparent)]
 pub struct ID3D12DebugDevice2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D12DebugDevice2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D12DebugDevice2 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
     pub unsafe fn SetFeatureMask(&self, mask: D3D12_DEBUG_FEATURE) -> ::windows::core::Result<()> {
@@ -19588,11 +19988,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D12DebugDevice> for &'a ID3D12DebugDe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D12DebugDevice2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D12DebugDevice2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -19618,6 +20013,11 @@ pub struct ID3D12DebugDevice2_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
 #[repr(transparent)]
 pub struct ID3D12DescriptorHeap(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D12DescriptorHeap {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D12DescriptorHeap {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
     pub unsafe fn GetPrivateData(&self, guid: *const ::windows::core::GUID, pdatasize: *mut u32, pdata: *mut ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -19738,11 +20138,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D12Pageable> for &'a ID3D12Descriptor
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D12DescriptorHeap {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D12DescriptorHeap {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -19769,6 +20164,11 @@ pub struct ID3D12DescriptorHeap_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
 #[repr(transparent)]
 pub struct ID3D12Device(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D12Device {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D12Device {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
     pub unsafe fn GetPrivateData(&self, guid: *const ::windows::core::GUID, pdatasize: *mut u32, pdata: *mut ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -20006,11 +20406,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D12Object> for &'a ID3D12Device {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D12Device {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D12Device {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -20116,6 +20511,11 @@ pub struct ID3D12Device_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
 #[repr(transparent)]
 pub struct ID3D12Device1(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D12Device1 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D12Device1 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
     pub unsafe fn GetPrivateData(&self, guid: *const ::windows::core::GUID, pdatasize: *mut u32, pdata: *mut ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -20387,11 +20787,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D12Device> for &'a ID3D12Device1 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D12Device1 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D12Device1 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -20421,6 +20816,11 @@ pub struct ID3D12Device1_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
 #[repr(transparent)]
 pub struct ID3D12Device2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D12Device2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D12Device2 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
     pub unsafe fn GetPrivateData(&self, guid: *const ::windows::core::GUID, pdatasize: *mut u32, pdata: *mut ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -20717,11 +21117,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D12Device1> for &'a ID3D12Device2 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D12Device2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D12Device2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -20746,6 +21141,11 @@ pub struct ID3D12Device2_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
 #[repr(transparent)]
 pub struct ID3D12Device3(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D12Device3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D12Device3 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
     pub unsafe fn GetPrivateData(&self, guid: *const ::windows::core::GUID, pdatasize: *mut u32, pdata: *mut ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -21077,11 +21477,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D12Device2> for &'a ID3D12Device3 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D12Device3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D12Device3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -21111,6 +21506,11 @@ pub struct ID3D12Device3_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
 #[repr(transparent)]
 pub struct ID3D12Device4(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D12Device4 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D12Device4 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
     pub unsafe fn GetPrivateData(&self, guid: *const ::windows::core::GUID, pdatasize: *mut u32, pdata: *mut ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -21493,11 +21893,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D12Device3> for &'a ID3D12Device4 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D12Device4 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D12Device4 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -21536,6 +21931,11 @@ pub struct ID3D12Device4_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
 #[repr(transparent)]
 pub struct ID3D12Device5(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D12Device5 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D12Device5 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
     pub unsafe fn GetPrivateData(&self, guid: *const ::windows::core::GUID, pdatasize: *mut u32, pdata: *mut ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -21974,11 +22374,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D12Device4> for &'a ID3D12Device5 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D12Device5 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D12Device5 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -22013,6 +22408,11 @@ pub struct ID3D12Device5_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
 #[repr(transparent)]
 pub struct ID3D12Device6(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D12Device6 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D12Device6 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
     pub unsafe fn GetPrivateData(&self, guid: *const ::windows::core::GUID, pdatasize: *mut u32, pdata: *mut ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -22477,11 +22877,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D12Device5> for &'a ID3D12Device6 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D12Device6 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D12Device6 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -22509,6 +22904,11 @@ pub struct ID3D12Device6_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
 #[repr(transparent)]
 pub struct ID3D12Device7(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D12Device7 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D12Device7 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
     pub unsafe fn GetPrivateData(&self, guid: *const ::windows::core::GUID, pdatasize: *mut u32, pdata: *mut ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -23003,11 +23403,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D12Device6> for &'a ID3D12Device7 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D12Device7 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D12Device7 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -23033,6 +23428,11 @@ pub struct ID3D12Device7_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
 #[repr(transparent)]
 pub struct ID3D12Device8(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D12Device8 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D12Device8 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
     pub unsafe fn GetPrivateData(&self, guid: *const ::windows::core::GUID, pdatasize: *mut u32, pdata: *mut ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -23573,11 +23973,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D12Device7> for &'a ID3D12Device8 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D12Device8 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D12Device8 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -23618,6 +24013,11 @@ pub struct ID3D12Device8_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
 #[repr(transparent)]
 pub struct ID3D12Device9(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D12Device9 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D12Device9 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
     pub unsafe fn GetPrivateData(&self, guid: *const ::windows::core::GUID, pdatasize: *mut u32, pdata: *mut ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -24191,11 +24591,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D12Device8> for &'a ID3D12Device9 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D12Device9 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D12Device9 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -24222,6 +24617,11 @@ pub struct ID3D12Device9_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
 #[repr(transparent)]
 pub struct ID3D12DeviceChild(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D12DeviceChild {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D12DeviceChild {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
     pub unsafe fn GetPrivateData(&self, guid: *const ::windows::core::GUID, pdatasize: *mut u32, pdata: *mut ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -24284,11 +24684,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D12Object> for &'a ID3D12DeviceChild 
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D12DeviceChild {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D12DeviceChild {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -24313,6 +24708,11 @@ pub struct ID3D12DeviceChild_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
 #[repr(transparent)]
 pub struct ID3D12DeviceRemovedExtendedData(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D12DeviceRemovedExtendedData {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D12DeviceRemovedExtendedData {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
     pub unsafe fn GetAutoBreadcrumbsOutput(&self) -> ::windows::core::Result<D3D12_DRED_AUTO_BREADCRUMBS_OUTPUT> {
@@ -24345,11 +24745,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ID3D1
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D12DeviceRemovedExtendedData {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D12DeviceRemovedExtendedData {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -24375,6 +24770,11 @@ pub struct ID3D12DeviceRemovedExtendedData_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
 #[repr(transparent)]
 pub struct ID3D12DeviceRemovedExtendedData1(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D12DeviceRemovedExtendedData1 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D12DeviceRemovedExtendedData1 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
     pub unsafe fn GetAutoBreadcrumbsOutput(&self) -> ::windows::core::Result<D3D12_DRED_AUTO_BREADCRUMBS_OUTPUT> {
@@ -24437,11 +24837,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D12DeviceRemovedExtendedData> for &'a
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D12DeviceRemovedExtendedData1 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D12DeviceRemovedExtendedData1 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -24467,6 +24862,11 @@ pub struct ID3D12DeviceRemovedExtendedData1_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
 #[repr(transparent)]
 pub struct ID3D12DeviceRemovedExtendedData2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D12DeviceRemovedExtendedData2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D12DeviceRemovedExtendedData2 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
     pub unsafe fn GetAutoBreadcrumbsOutput(&self) -> ::windows::core::Result<D3D12_DRED_AUTO_BREADCRUMBS_OUTPUT> {
@@ -24558,11 +24958,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D12DeviceRemovedExtendedData1> for &'
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D12DeviceRemovedExtendedData2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D12DeviceRemovedExtendedData2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -24588,6 +24983,11 @@ pub struct ID3D12DeviceRemovedExtendedData2_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
 #[repr(transparent)]
 pub struct ID3D12DeviceRemovedExtendedDataSettings(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D12DeviceRemovedExtendedDataSettings {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D12DeviceRemovedExtendedDataSettings {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
     pub unsafe fn SetAutoBreadcrumbsEnablement(&self, enablement: D3D12_DRED_ENABLEMENT) {
@@ -24622,11 +25022,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ID3D1
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D12DeviceRemovedExtendedDataSettings {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D12DeviceRemovedExtendedDataSettings {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -24653,6 +25048,11 @@ pub struct ID3D12DeviceRemovedExtendedDataSettings_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
 #[repr(transparent)]
 pub struct ID3D12DeviceRemovedExtendedDataSettings1(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D12DeviceRemovedExtendedDataSettings1 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D12DeviceRemovedExtendedDataSettings1 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
     pub unsafe fn SetAutoBreadcrumbsEnablement(&self, enablement: D3D12_DRED_ENABLEMENT) {
@@ -24711,11 +25111,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D12DeviceRemovedExtendedDataSettings>
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D12DeviceRemovedExtendedDataSettings1 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D12DeviceRemovedExtendedDataSettings1 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -24740,6 +25135,11 @@ pub struct ID3D12DeviceRemovedExtendedDataSettings1_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
 #[repr(transparent)]
 pub struct ID3D12Fence(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D12Fence {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D12Fence {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
     pub unsafe fn GetPrivateData(&self, guid: *const ::windows::core::GUID, pdatasize: *mut u32, pdata: *mut ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -24855,11 +25255,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D12Pageable> for &'a ID3D12Fence {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D12Fence {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D12Fence {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -24889,6 +25284,11 @@ pub struct ID3D12Fence_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
 #[repr(transparent)]
 pub struct ID3D12Fence1(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D12Fence1 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D12Fence1 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
     pub unsafe fn GetPrivateData(&self, guid: *const ::windows::core::GUID, pdatasize: *mut u32, pdata: *mut ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -25028,11 +25428,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D12Fence> for &'a ID3D12Fence1 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D12Fence1 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D12Fence1 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -25057,17 +25452,17 @@ pub struct ID3D12Fence1_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
 #[repr(transparent)]
 pub struct ID3D12FunctionParameterReflection(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D12FunctionParameterReflection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D12FunctionParameterReflection {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`, `\"Win32_Graphics_Direct3D\"`*"]
     #[cfg(feature = "Win32_Graphics_Direct3D")]
     pub unsafe fn GetDesc(&self) -> ::windows::core::Result<D3D12_PARAMETER_DESC> {
         let mut result__: D3D12_PARAMETER_DESC = ::core::mem::zeroed();
         (::windows::core::Interface::vtable(self).GetDesc)(::core::mem::transmute_copy(self), ::core::mem::transmute(&mut result__)).from_abi::<D3D12_PARAMETER_DESC>(result__)
-    }
-}
-impl ::core::clone::Clone for ID3D12FunctionParameterReflection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for ID3D12FunctionParameterReflection {
@@ -25096,6 +25491,11 @@ pub struct ID3D12FunctionParameterReflection_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
 #[repr(transparent)]
 pub struct ID3D12FunctionReflection(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D12FunctionReflection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D12FunctionReflection {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`, `\"Win32_Foundation\"`, `\"Win32_Graphics_Direct3D\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Direct3D"))]
@@ -25130,11 +25530,6 @@ impl ID3D12FunctionReflection {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
     pub unsafe fn GetFunctionParameter(&self, parameterindex: i32) -> ::core::option::Option<ID3D12FunctionParameterReflection> {
         ::core::mem::transmute((::windows::core::Interface::vtable(self).GetFunctionParameter)(::core::mem::transmute_copy(self), ::core::mem::transmute(parameterindex)))
-    }
-}
-impl ::core::clone::Clone for ID3D12FunctionReflection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for ID3D12FunctionReflection {
@@ -25175,6 +25570,11 @@ pub struct ID3D12FunctionReflection_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
 #[repr(transparent)]
 pub struct ID3D12GraphicsCommandList(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D12GraphicsCommandList {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D12GraphicsCommandList {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
     pub unsafe fn GetPrivateData(&self, guid: *const ::windows::core::GUID, pdatasize: *mut u32, pdata: *mut ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -25497,11 +25897,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D12CommandList> for &'a ID3D12Graphic
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D12GraphicsCommandList {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D12GraphicsCommandList {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -25612,6 +26007,11 @@ pub struct ID3D12GraphicsCommandList_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
 #[repr(transparent)]
 pub struct ID3D12GraphicsCommandList1(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D12GraphicsCommandList1 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D12GraphicsCommandList1 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
     pub unsafe fn GetPrivateData(&self, guid: *const ::windows::core::GUID, pdatasize: *mut u32, pdata: *mut ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -25979,11 +26379,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D12GraphicsCommandList> for &'a ID3D1
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D12GraphicsCommandList1 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D12GraphicsCommandList1 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -26016,6 +26411,11 @@ pub struct ID3D12GraphicsCommandList1_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
 #[repr(transparent)]
 pub struct ID3D12GraphicsCommandList2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D12GraphicsCommandList2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D12GraphicsCommandList2 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
     pub unsafe fn GetPrivateData(&self, guid: *const ::windows::core::GUID, pdatasize: *mut u32, pdata: *mut ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -26407,11 +26807,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D12GraphicsCommandList1> for &'a ID3D
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D12GraphicsCommandList2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D12GraphicsCommandList2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -26436,6 +26831,11 @@ pub struct ID3D12GraphicsCommandList2_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
 #[repr(transparent)]
 pub struct ID3D12GraphicsCommandList3(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D12GraphicsCommandList3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D12GraphicsCommandList3 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
     pub unsafe fn GetPrivateData(&self, guid: *const ::windows::core::GUID, pdatasize: *mut u32, pdata: *mut ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -26851,11 +27251,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D12GraphicsCommandList2> for &'a ID3D
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D12GraphicsCommandList3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D12GraphicsCommandList3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -26880,6 +27275,11 @@ pub struct ID3D12GraphicsCommandList3_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
 #[repr(transparent)]
 pub struct ID3D12GraphicsCommandList4(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D12GraphicsCommandList4 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D12GraphicsCommandList4 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
     pub unsafe fn GetPrivateData(&self, guid: *const ::windows::core::GUID, pdatasize: *mut u32, pdata: *mut ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -27353,11 +27753,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D12GraphicsCommandList3> for &'a ID3D
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D12GraphicsCommandList4 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D12GraphicsCommandList4 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -27396,6 +27791,11 @@ pub struct ID3D12GraphicsCommandList4_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
 #[repr(transparent)]
 pub struct ID3D12GraphicsCommandList5(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D12GraphicsCommandList5 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D12GraphicsCommandList5 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
     pub unsafe fn GetPrivateData(&self, guid: *const ::windows::core::GUID, pdatasize: *mut u32, pdata: *mut ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -27897,11 +28297,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D12GraphicsCommandList4> for &'a ID3D
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D12GraphicsCommandList5 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D12GraphicsCommandList5 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -27927,6 +28322,11 @@ pub struct ID3D12GraphicsCommandList5_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
 #[repr(transparent)]
 pub struct ID3D12GraphicsCommandList6(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D12GraphicsCommandList6 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D12GraphicsCommandList6 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
     pub unsafe fn GetPrivateData(&self, guid: *const ::windows::core::GUID, pdatasize: *mut u32, pdata: *mut ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -28452,11 +28852,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D12GraphicsCommandList5> for &'a ID3D
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D12GraphicsCommandList6 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D12GraphicsCommandList6 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -28481,6 +28876,11 @@ pub struct ID3D12GraphicsCommandList6_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
 #[repr(transparent)]
 pub struct ID3D12Heap(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D12Heap {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D12Heap {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
     pub unsafe fn GetPrivateData(&self, guid: *const ::windows::core::GUID, pdatasize: *mut u32, pdata: *mut ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -28589,11 +28989,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D12Pageable> for &'a ID3D12Heap {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D12Heap {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D12Heap {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -28618,6 +29013,11 @@ pub struct ID3D12Heap_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
 #[repr(transparent)]
 pub struct ID3D12Heap1(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D12Heap1 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D12Heap1 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
     pub unsafe fn GetPrivateData(&self, guid: *const ::windows::core::GUID, pdatasize: *mut u32, pdata: *mut ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -28750,11 +29150,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D12Heap> for &'a ID3D12Heap1 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D12Heap1 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D12Heap1 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -28779,6 +29174,11 @@ pub struct ID3D12Heap1_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
 #[repr(transparent)]
 pub struct ID3D12InfoQueue(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D12InfoQueue {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D12InfoQueue {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
     pub unsafe fn SetMessageCountLimit(&self, messagecountlimit: u64) -> ::windows::core::Result<()> {
@@ -28949,11 +29349,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ID3D1
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D12InfoQueue {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D12InfoQueue {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -29036,6 +29431,11 @@ pub struct ID3D12InfoQueue_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
 #[repr(transparent)]
 pub struct ID3D12InfoQueue1(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D12InfoQueue1 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D12InfoQueue1 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
     pub unsafe fn SetMessageCountLimit(&self, messagecountlimit: u64) -> ::windows::core::Result<()> {
@@ -29234,11 +29634,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D12InfoQueue> for &'a ID3D12InfoQueue
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D12InfoQueue1 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D12InfoQueue1 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -29264,6 +29659,11 @@ pub struct ID3D12InfoQueue1_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
 #[repr(transparent)]
 pub struct ID3D12LibraryReflection(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D12LibraryReflection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D12LibraryReflection {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
     pub unsafe fn GetDesc(&self) -> ::windows::core::Result<D3D12_LIBRARY_DESC> {
@@ -29295,11 +29695,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ID3D1
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D12LibraryReflection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D12LibraryReflection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -29325,6 +29720,11 @@ pub struct ID3D12LibraryReflection_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
 #[repr(transparent)]
 pub struct ID3D12LifetimeOwner(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D12LifetimeOwner {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D12LifetimeOwner {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
     pub unsafe fn LifetimeStateUpdated(&self, newstate: D3D12_LIFETIME_STATE) {
@@ -29351,11 +29751,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ID3D1
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D12LifetimeOwner {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D12LifetimeOwner {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -29380,6 +29775,11 @@ pub struct ID3D12LifetimeOwner_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
 #[repr(transparent)]
 pub struct ID3D12LifetimeTracker(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D12LifetimeTracker {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D12LifetimeTracker {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
     pub unsafe fn GetPrivateData(&self, guid: *const ::windows::core::GUID, pdatasize: *mut u32, pdata: *mut ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -29466,11 +29866,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D12DeviceChild> for &'a ID3D12Lifetim
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D12LifetimeTracker {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D12LifetimeTracker {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -29495,6 +29890,11 @@ pub struct ID3D12LifetimeTracker_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
 #[repr(transparent)]
 pub struct ID3D12MetaCommand(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D12MetaCommand {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D12MetaCommand {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
     pub unsafe fn GetPrivateData(&self, guid: *const ::windows::core::GUID, pdatasize: *mut u32, pdata: *mut ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -29601,11 +30001,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D12Pageable> for &'a ID3D12MetaComman
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D12MetaCommand {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D12MetaCommand {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -29630,6 +30025,11 @@ pub struct ID3D12MetaCommand_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
 #[repr(transparent)]
 pub struct ID3D12Object(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D12Object {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D12Object {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
     pub unsafe fn GetPrivateData(&self, guid: *const ::windows::core::GUID, pdatasize: *mut u32, pdata: *mut ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -29668,11 +30068,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ID3D1
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D12Object {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D12Object {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -29700,6 +30095,11 @@ pub struct ID3D12Object_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
 #[repr(transparent)]
 pub struct ID3D12Pageable(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D12Pageable {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D12Pageable {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
     pub unsafe fn GetPrivateData(&self, guid: *const ::windows::core::GUID, pdatasize: *mut u32, pdata: *mut ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -29782,11 +30182,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D12DeviceChild> for &'a ID3D12Pageabl
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D12Pageable {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D12Pageable {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -29810,6 +30205,11 @@ pub struct ID3D12Pageable_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
 #[repr(transparent)]
 pub struct ID3D12PipelineLibrary(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D12PipelineLibrary {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D12PipelineLibrary {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
     pub unsafe fn GetPrivateData(&self, guid: *const ::windows::core::GUID, pdatasize: *mut u32, pdata: *mut ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -29915,11 +30315,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D12DeviceChild> for &'a ID3D12Pipelin
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D12PipelineLibrary {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D12PipelineLibrary {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -29951,6 +30346,11 @@ pub struct ID3D12PipelineLibrary_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
 #[repr(transparent)]
 pub struct ID3D12PipelineLibrary1(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D12PipelineLibrary1 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D12PipelineLibrary1 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
     pub unsafe fn GetPrivateData(&self, guid: *const ::windows::core::GUID, pdatasize: *mut u32, pdata: *mut ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -30081,11 +30481,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D12PipelineLibrary> for &'a ID3D12Pip
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D12PipelineLibrary1 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D12PipelineLibrary1 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -30110,6 +30505,11 @@ pub struct ID3D12PipelineLibrary1_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
 #[repr(transparent)]
 pub struct ID3D12PipelineState(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D12PipelineState {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D12PipelineState {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
     pub unsafe fn GetPrivateData(&self, guid: *const ::windows::core::GUID, pdatasize: *mut u32, pdata: *mut ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -30218,11 +30618,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D12Pageable> for &'a ID3D12PipelineSt
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D12PipelineState {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D12PipelineState {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -30250,6 +30645,11 @@ pub struct ID3D12PipelineState_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
 #[repr(transparent)]
 pub struct ID3D12ProtectedResourceSession(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D12ProtectedResourceSession {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D12ProtectedResourceSession {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
     pub unsafe fn GetPrivateData(&self, guid: *const ::windows::core::GUID, pdatasize: *mut u32, pdata: *mut ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -30366,11 +30766,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D12ProtectedSession> for &'a ID3D12Pr
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D12ProtectedResourceSession {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D12ProtectedResourceSession {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -30395,6 +30790,11 @@ pub struct ID3D12ProtectedResourceSession_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
 #[repr(transparent)]
 pub struct ID3D12ProtectedResourceSession1(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D12ProtectedResourceSession1 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D12ProtectedResourceSession1 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
     pub unsafe fn GetPrivateData(&self, guid: *const ::windows::core::GUID, pdatasize: *mut u32, pdata: *mut ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -30537,11 +30937,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D12ProtectedResourceSession> for &'a 
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D12ProtectedResourceSession1 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D12ProtectedResourceSession1 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -30566,6 +30961,11 @@ pub struct ID3D12ProtectedResourceSession1_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
 #[repr(transparent)]
 pub struct ID3D12ProtectedSession(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D12ProtectedSession {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D12ProtectedSession {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
     pub unsafe fn GetPrivateData(&self, guid: *const ::windows::core::GUID, pdatasize: *mut u32, pdata: *mut ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -30656,11 +31056,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D12DeviceChild> for &'a ID3D12Protect
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D12ProtectedSession {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D12ProtectedSession {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -30686,6 +31081,11 @@ pub struct ID3D12ProtectedSession_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
 #[repr(transparent)]
 pub struct ID3D12QueryHeap(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D12QueryHeap {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D12QueryHeap {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
     pub unsafe fn GetPrivateData(&self, guid: *const ::windows::core::GUID, pdatasize: *mut u32, pdata: *mut ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -30788,11 +31188,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D12Pageable> for &'a ID3D12QueryHeap 
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D12QueryHeap {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D12QueryHeap {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -30816,6 +31211,11 @@ pub struct ID3D12QueryHeap_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
 #[repr(transparent)]
 pub struct ID3D12Resource(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D12Resource {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D12Resource {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
     pub unsafe fn GetPrivateData(&self, guid: *const ::windows::core::GUID, pdatasize: *mut u32, pdata: *mut ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -30949,11 +31349,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D12Pageable> for &'a ID3D12Resource {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D12Resource {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D12Resource {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -30987,6 +31382,11 @@ pub struct ID3D12Resource_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
 #[repr(transparent)]
 pub struct ID3D12Resource1(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D12Resource1 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D12Resource1 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
     pub unsafe fn GetPrivateData(&self, guid: *const ::windows::core::GUID, pdatasize: *mut u32, pdata: *mut ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -31144,11 +31544,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D12Resource> for &'a ID3D12Resource1 
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D12Resource1 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D12Resource1 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -31173,6 +31568,11 @@ pub struct ID3D12Resource1_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
 #[repr(transparent)]
 pub struct ID3D12Resource2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D12Resource2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D12Resource2 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
     pub unsafe fn GetPrivateData(&self, guid: *const ::windows::core::GUID, pdatasize: *mut u32, pdata: *mut ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -31357,11 +31757,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D12Resource1> for &'a ID3D12Resource2
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D12Resource2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D12Resource2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -31389,6 +31784,11 @@ pub struct ID3D12Resource2_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
 #[repr(transparent)]
 pub struct ID3D12RootSignature(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D12RootSignature {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D12RootSignature {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
     pub unsafe fn GetPrivateData(&self, guid: *const ::windows::core::GUID, pdatasize: *mut u32, pdata: *mut ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -31471,11 +31871,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D12DeviceChild> for &'a ID3D12RootSig
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D12RootSignature {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D12RootSignature {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -31499,6 +31894,11 @@ pub struct ID3D12RootSignature_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
 #[repr(transparent)]
 pub struct ID3D12RootSignatureDeserializer(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D12RootSignatureDeserializer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D12RootSignatureDeserializer {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
     pub unsafe fn GetRootSignatureDesc(&self) -> *mut D3D12_ROOT_SIGNATURE_DESC {
@@ -31525,11 +31925,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ID3D1
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D12RootSignatureDeserializer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D12RootSignatureDeserializer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -31554,6 +31949,11 @@ pub struct ID3D12RootSignatureDeserializer_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
 #[repr(transparent)]
 pub struct ID3D12SDKConfiguration(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D12SDKConfiguration {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D12SDKConfiguration {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
     pub unsafe fn SetSDKVersion<'a, Param1: ::windows::core::IntoParam<'a, ::windows::core::PCSTR>>(&self, sdkversion: u32, sdkpath: Param1) -> ::windows::core::Result<()> {
@@ -31580,11 +31980,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ID3D1
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D12SDKConfiguration {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D12SDKConfiguration {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -31609,6 +32004,11 @@ pub struct ID3D12SDKConfiguration_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
 #[repr(transparent)]
 pub struct ID3D12ShaderCacheSession(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D12ShaderCacheSession {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D12ShaderCacheSession {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
     pub unsafe fn GetPrivateData(&self, guid: *const ::windows::core::GUID, pdatasize: *mut u32, pdata: *mut ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -31709,11 +32109,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D12DeviceChild> for &'a ID3D12ShaderC
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D12ShaderCacheSession {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D12ShaderCacheSession {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -31741,6 +32136,11 @@ pub struct ID3D12ShaderCacheSession_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
 #[repr(transparent)]
 pub struct ID3D12ShaderReflection(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D12ShaderReflection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D12ShaderReflection {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`, `\"Win32_Graphics_Direct3D\"`*"]
     #[cfg(feature = "Win32_Graphics_Direct3D")]
@@ -31855,11 +32255,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ID3D1
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D12ShaderReflection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D12ShaderReflection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -31929,6 +32324,11 @@ pub struct ID3D12ShaderReflection_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
 #[repr(transparent)]
 pub struct ID3D12ShaderReflectionConstantBuffer(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D12ShaderReflectionConstantBuffer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D12ShaderReflectionConstantBuffer {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`, `\"Win32_Graphics_Direct3D\"`*"]
     #[cfg(feature = "Win32_Graphics_Direct3D")]
@@ -31942,11 +32342,6 @@ impl ID3D12ShaderReflectionConstantBuffer {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
     pub unsafe fn GetVariableByName<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCSTR>>(&self, name: Param0) -> ::core::option::Option<ID3D12ShaderReflectionVariable> {
         ::core::mem::transmute((::windows::core::Interface::vtable(self).GetVariableByName)(::core::mem::transmute_copy(self), name.into_param().abi()))
-    }
-}
-impl ::core::clone::Clone for ID3D12ShaderReflectionConstantBuffer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for ID3D12ShaderReflectionConstantBuffer {
@@ -31977,6 +32372,11 @@ pub struct ID3D12ShaderReflectionConstantBuffer_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
 #[repr(transparent)]
 pub struct ID3D12ShaderReflectionType(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D12ShaderReflectionType {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D12ShaderReflectionType {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`, `\"Win32_Graphics_Direct3D\"`*"]
     #[cfg(feature = "Win32_Graphics_Direct3D")]
@@ -32025,11 +32425,6 @@ impl ID3D12ShaderReflectionType {
         (::windows::core::Interface::vtable(self).ImplementsInterface)(::core::mem::transmute_copy(self), pbase.into_param().abi()).ok()
     }
 }
-impl ::core::clone::Clone for ID3D12ShaderReflectionType {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D12ShaderReflectionType {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -32066,6 +32461,11 @@ pub struct ID3D12ShaderReflectionType_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
 #[repr(transparent)]
 pub struct ID3D12ShaderReflectionVariable(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D12ShaderReflectionVariable {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D12ShaderReflectionVariable {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
     pub unsafe fn GetDesc(&self) -> ::windows::core::Result<D3D12_SHADER_VARIABLE_DESC> {
@@ -32083,11 +32483,6 @@ impl ID3D12ShaderReflectionVariable {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
     pub unsafe fn GetInterfaceSlot(&self, uarrayindex: u32) -> u32 {
         ::core::mem::transmute((::windows::core::Interface::vtable(self).GetInterfaceSlot)(::core::mem::transmute_copy(self), ::core::mem::transmute(uarrayindex)))
-    }
-}
-impl ::core::clone::Clone for ID3D12ShaderReflectionVariable {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for ID3D12ShaderReflectionVariable {
@@ -32116,6 +32511,11 @@ pub struct ID3D12ShaderReflectionVariable_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
 #[repr(transparent)]
 pub struct ID3D12SharingContract(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D12SharingContract {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D12SharingContract {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -32155,11 +32555,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ID3D1
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D12SharingContract {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D12SharingContract {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -32190,6 +32585,11 @@ pub struct ID3D12SharingContract_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
 #[repr(transparent)]
 pub struct ID3D12StateObject(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D12StateObject {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D12StateObject {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
     pub unsafe fn GetPrivateData(&self, guid: *const ::windows::core::GUID, pdatasize: *mut u32, pdata: *mut ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -32292,11 +32692,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D12Pageable> for &'a ID3D12StateObjec
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D12StateObject {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D12StateObject {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -32320,6 +32715,11 @@ pub struct ID3D12StateObject_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
 #[repr(transparent)]
 pub struct ID3D12StateObjectProperties(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D12StateObjectProperties {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D12StateObjectProperties {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
     pub unsafe fn GetShaderIdentifier<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, pexportname: Param0) -> *mut ::core::ffi::c_void {
@@ -32358,11 +32758,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ID3D1
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D12StateObjectProperties {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D12StateObjectProperties {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -32390,6 +32785,11 @@ pub struct ID3D12StateObjectProperties_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
 #[repr(transparent)]
 pub struct ID3D12SwapChainAssistant(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D12SwapChainAssistant {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D12SwapChainAssistant {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -32433,11 +32833,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ID3D1
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D12SwapChainAssistant {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D12SwapChainAssistant {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -32468,6 +32863,11 @@ pub struct ID3D12SwapChainAssistant_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
 #[repr(transparent)]
 pub struct ID3D12Tools(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D12Tools {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D12Tools {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -32498,11 +32898,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for ID3D12Too
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ID3D12Tools {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for ID3D12Tools {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for ID3D12Tools {
@@ -32536,6 +32931,11 @@ pub struct ID3D12Tools_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
 #[repr(transparent)]
 pub struct ID3D12VersionedRootSignatureDeserializer(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D12VersionedRootSignatureDeserializer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D12VersionedRootSignatureDeserializer {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D12\"`*"]
     pub unsafe fn GetRootSignatureDescAtVersion(&self, converttoversion: D3D_ROOT_SIGNATURE_VERSION) -> ::windows::core::Result<*mut D3D12_VERSIONED_ROOT_SIGNATURE_DESC> {
@@ -32565,11 +32965,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for ID3D12Ver
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ID3D12VersionedRootSignatureDeserializer {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for ID3D12VersionedRootSignatureDeserializer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for ID3D12VersionedRootSignatureDeserializer {

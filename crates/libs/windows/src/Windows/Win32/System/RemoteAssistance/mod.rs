@@ -12,6 +12,12 @@ pub const DISPID_EVENT_ON_TERMINATION: u32 = 6u32;
 #[repr(transparent)]
 pub struct DRendezvousSessionEvents(::windows::core::IUnknown);
 #[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for DRendezvousSessionEvents {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "Win32_System_Com")]
 impl DRendezvousSessionEvents {}
 #[cfg(feature = "Win32_System_Com")]
 impl ::core::convert::From<DRendezvousSessionEvents> for ::windows::core::IUnknown {
@@ -62,12 +68,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a DRendezvo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for DRendezvousSessionEvents {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for DRendezvousSessionEvents {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -95,6 +95,11 @@ pub struct DRendezvousSessionEvents_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteAssistance\"`*"]
 #[repr(transparent)]
 pub struct IRendezvousApplication(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRendezvousApplication {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRendezvousApplication {
     #[doc = "*Required features: `\"Win32_System_RemoteAssistance\"`*"]
     pub unsafe fn SetRendezvousSession<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, prendezvoussession: Param0) -> ::windows::core::Result<()> {
@@ -121,11 +126,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IRend
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IRendezvousApplication {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IRendezvousApplication {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -150,6 +150,11 @@ pub struct IRendezvousApplication_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteAssistance\"`*"]
 #[repr(transparent)]
 pub struct IRendezvousSession(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRendezvousSession {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRendezvousSession {
     #[doc = "*Required features: `\"Win32_System_RemoteAssistance\"`*"]
     pub unsafe fn State(&self) -> ::windows::core::Result<RENDEZVOUS_SESSION_STATE> {
@@ -196,11 +201,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IRendezvo
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IRendezvousSession {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IRendezvousSession {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IRendezvousSession {
@@ -266,6 +266,7 @@ impl ::core::default::Default for RENDEZVOUS_SESSION_FLAGS {
 }
 unsafe impl ::windows::core::Abi for RENDEZVOUS_SESSION_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RENDEZVOUS_SESSION_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -305,6 +306,7 @@ impl ::core::default::Default for RENDEZVOUS_SESSION_STATE {
 }
 unsafe impl ::windows::core::Abi for RENDEZVOUS_SESSION_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RENDEZVOUS_SESSION_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

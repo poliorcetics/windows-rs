@@ -2,6 +2,11 @@
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct INotePlacementChangedPreviewEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for INotePlacementChangedPreviewEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for INotePlacementChangedPreviewEventArgs {
     type Vtable = INotePlacementChangedPreviewEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x491d57b7_f780_4e7f_a939_9a4caf965214);
@@ -15,6 +20,11 @@ pub struct INotePlacementChangedPreviewEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct INoteVisibilityChangedPreviewEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for INoteVisibilityChangedPreviewEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for INoteVisibilityChangedPreviewEventArgs {
     type Vtable = INoteVisibilityChangedPreviewEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x0e34649e_3815_4ff6_83b3_a14d17120e24);
@@ -29,6 +39,11 @@ pub struct INoteVisibilityChangedPreviewEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct INotesWindowManagerPreview(::windows::core::IUnknown);
+impl ::core::clone::Clone for INotesWindowManagerPreview {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for INotesWindowManagerPreview {
     type Vtable = INotesWindowManagerPreview_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xdc2ac23e_4850_4f13_9cc7_ff487efdfcde);
@@ -86,6 +101,11 @@ pub struct INotesWindowManagerPreview_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct INotesWindowManagerPreview2(::windows::core::IUnknown);
+impl ::core::clone::Clone for INotesWindowManagerPreview2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for INotesWindowManagerPreview2 {
     type Vtable = INotesWindowManagerPreview2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xedfe864a_1f54_4b09_9823_ff477f6fa3bc);
@@ -108,6 +128,11 @@ pub struct INotesWindowManagerPreview2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct INotesWindowManagerPreviewShowNoteOptions(::windows::core::IUnknown);
+impl ::core::clone::Clone for INotesWindowManagerPreviewShowNoteOptions {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for INotesWindowManagerPreviewShowNoteOptions {
     type Vtable = INotesWindowManagerPreviewShowNoteOptions_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x886b09d6_a6ae_4007_a56d_1ca70c84c0d2);
@@ -122,6 +147,11 @@ pub struct INotesWindowManagerPreviewShowNoteOptions_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct INotesWindowManagerPreviewStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for INotesWindowManagerPreviewStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for INotesWindowManagerPreviewStatics {
     type Vtable = INotesWindowManagerPreviewStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x6668cc88_0a8e_4127_a38e_995445868a78);
@@ -145,11 +175,6 @@ impl NotePlacementChangedPreviewEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for NotePlacementChangedPreviewEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for NotePlacementChangedPreviewEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -163,7 +188,6 @@ impl ::core::fmt::Debug for NotePlacementChangedPreviewEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for NotePlacementChangedPreviewEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Preview.Notes.NotePlacementChangedPreviewEventArgs;{491d57b7-f780-4e7f-a939-9a4caf965214})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -238,11 +262,6 @@ impl NoteVisibilityChangedPreviewEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for NoteVisibilityChangedPreviewEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for NoteVisibilityChangedPreviewEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -256,7 +275,6 @@ impl ::core::fmt::Debug for NoteVisibilityChangedPreviewEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for NoteVisibilityChangedPreviewEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Preview.Notes.NoteVisibilityChangedPreviewEventArgs;{0e34649e-3815-4ff6-83b3-a14d17120e24})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -458,11 +476,6 @@ impl NotesWindowManagerPreview {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for NotesWindowManagerPreview {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for NotesWindowManagerPreview {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -476,7 +489,6 @@ impl ::core::fmt::Debug for NotesWindowManagerPreview {
 }
 unsafe impl ::windows::core::RuntimeType for NotesWindowManagerPreview {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Preview.Notes.NotesWindowManagerPreview;{dc2ac23e-4850-4f13-9cc7-ff487efdfcde})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -555,11 +567,6 @@ impl NotesWindowManagerPreviewShowNoteOptions {
         unsafe { (::windows::core::Interface::vtable(this).SetShowWithFocus)(::core::mem::transmute_copy(this), value).ok() }
     }
 }
-impl ::core::clone::Clone for NotesWindowManagerPreviewShowNoteOptions {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for NotesWindowManagerPreviewShowNoteOptions {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -573,7 +580,6 @@ impl ::core::fmt::Debug for NotesWindowManagerPreviewShowNoteOptions {
 }
 unsafe impl ::windows::core::RuntimeType for NotesWindowManagerPreviewShowNoteOptions {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Preview.Notes.NotesWindowManagerPreviewShowNoteOptions;{886b09d6-a6ae-4007-a56d-1ca70c84c0d2})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

@@ -126,6 +126,7 @@ impl ::core::clone::Clone for DNS_AAAA_DATA {
 }
 unsafe impl ::windows::core::Abi for DNS_AAAA_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DNS_AAAA_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -156,6 +157,7 @@ impl ::core::clone::Clone for DNS_ADDR {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DNS_ADDR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DNS_ADDR {
@@ -188,6 +190,7 @@ impl ::core::clone::Clone for DNS_ADDR_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DNS_ADDR_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DNS_ADDR_0 {
@@ -231,6 +234,7 @@ impl ::core::clone::Clone for DNS_ADDR_ARRAY {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DNS_ADDR_ARRAY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DNS_ADDR_ARRAY {
@@ -267,6 +271,7 @@ impl ::core::fmt::Debug for DNS_APPLICATION_SETTINGS {
 }
 unsafe impl ::windows::core::Abi for DNS_APPLICATION_SETTINGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DNS_APPLICATION_SETTINGS {
     fn eq(&self, other: &Self) -> bool {
@@ -304,6 +309,7 @@ impl ::core::fmt::Debug for DNS_ATMA_DATA {
 }
 unsafe impl ::windows::core::Abi for DNS_ATMA_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DNS_ATMA_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -342,6 +348,7 @@ impl ::core::fmt::Debug for DNS_A_DATA {
 }
 unsafe impl ::windows::core::Abi for DNS_A_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DNS_A_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -379,6 +386,7 @@ impl ::core::default::Default for DNS_CHARSET {
 }
 unsafe impl ::windows::core::Abi for DNS_CHARSET {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DNS_CHARSET {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -460,6 +468,7 @@ impl ::core::default::Default for DNS_CONFIG_TYPE {
 }
 unsafe impl ::windows::core::Abi for DNS_CONFIG_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DNS_CONFIG_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -485,6 +494,7 @@ impl ::core::fmt::Debug for DNS_CONNECTION_IFINDEX_ENTRY {
 }
 unsafe impl ::windows::core::Abi for DNS_CONNECTION_IFINDEX_ENTRY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DNS_CONNECTION_IFINDEX_ENTRY {
     fn eq(&self, other: &Self) -> bool {
@@ -516,6 +526,7 @@ impl ::core::fmt::Debug for DNS_CONNECTION_IFINDEX_LIST {
 }
 unsafe impl ::windows::core::Abi for DNS_CONNECTION_IFINDEX_LIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DNS_CONNECTION_IFINDEX_LIST {
     fn eq(&self, other: &Self) -> bool {
@@ -546,6 +557,7 @@ impl ::core::fmt::Debug for DNS_CONNECTION_NAME {
 }
 unsafe impl ::windows::core::Abi for DNS_CONNECTION_NAME {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DNS_CONNECTION_NAME {
     fn eq(&self, other: &Self) -> bool {
@@ -577,6 +589,7 @@ impl ::core::fmt::Debug for DNS_CONNECTION_NAME_LIST {
 }
 unsafe impl ::windows::core::Abi for DNS_CONNECTION_NAME_LIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DNS_CONNECTION_NAME_LIST {
     fn eq(&self, other: &Self) -> bool {
@@ -615,6 +628,7 @@ impl ::core::fmt::Debug for DNS_CONNECTION_POLICY_ENTRY {
 }
 unsafe impl ::windows::core::Abi for DNS_CONNECTION_POLICY_ENTRY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DNS_CONNECTION_POLICY_ENTRY {
     fn eq(&self, other: &Self) -> bool {
@@ -646,6 +660,7 @@ impl ::core::fmt::Debug for DNS_CONNECTION_POLICY_ENTRY_LIST {
 }
 unsafe impl ::windows::core::Abi for DNS_CONNECTION_POLICY_ENTRY_LIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DNS_CONNECTION_POLICY_ENTRY_LIST {
     fn eq(&self, other: &Self) -> bool {
@@ -683,6 +698,7 @@ impl ::core::default::Default for DNS_CONNECTION_POLICY_TAG {
 }
 unsafe impl ::windows::core::Abi for DNS_CONNECTION_POLICY_TAG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DNS_CONNECTION_POLICY_TAG {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -703,6 +719,7 @@ impl ::core::clone::Clone for DNS_CONNECTION_PROXY_ELEMENT {
 }
 unsafe impl ::windows::core::Abi for DNS_CONNECTION_PROXY_ELEMENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DNS_CONNECTION_PROXY_ELEMENT {
     fn eq(&self, other: &Self) -> bool {
@@ -732,6 +749,7 @@ impl ::core::clone::Clone for DNS_CONNECTION_PROXY_INFO {
 }
 unsafe impl ::windows::core::Abi for DNS_CONNECTION_PROXY_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DNS_CONNECTION_PROXY_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -758,6 +776,7 @@ impl ::core::clone::Clone for DNS_CONNECTION_PROXY_INFO_0 {
 }
 unsafe impl ::windows::core::Abi for DNS_CONNECTION_PROXY_INFO_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DNS_CONNECTION_PROXY_INFO_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -793,6 +812,7 @@ impl ::core::fmt::Debug for DNS_CONNECTION_PROXY_INFO_0_0 {
 }
 unsafe impl ::windows::core::Abi for DNS_CONNECTION_PROXY_INFO_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DNS_CONNECTION_PROXY_INFO_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -825,6 +845,7 @@ impl ::core::fmt::Debug for DNS_CONNECTION_PROXY_INFO_0_1 {
 }
 unsafe impl ::windows::core::Abi for DNS_CONNECTION_PROXY_INFO_0_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DNS_CONNECTION_PROXY_INFO_0_1 {
     fn eq(&self, other: &Self) -> bool {
@@ -860,6 +881,7 @@ impl ::core::clone::Clone for DNS_CONNECTION_PROXY_INFO_EX {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DNS_CONNECTION_PROXY_INFO_EX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DNS_CONNECTION_PROXY_INFO_EX {
@@ -912,6 +934,7 @@ impl ::core::default::Default for DNS_CONNECTION_PROXY_INFO_SWITCH {
 }
 unsafe impl ::windows::core::Abi for DNS_CONNECTION_PROXY_INFO_SWITCH {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DNS_CONNECTION_PROXY_INFO_SWITCH {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -939,6 +962,7 @@ impl ::core::fmt::Debug for DNS_CONNECTION_PROXY_LIST {
 }
 unsafe impl ::windows::core::Abi for DNS_CONNECTION_PROXY_LIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DNS_CONNECTION_PROXY_LIST {
     fn eq(&self, other: &Self) -> bool {
@@ -978,6 +1002,7 @@ impl ::core::default::Default for DNS_CONNECTION_PROXY_TYPE {
 }
 unsafe impl ::windows::core::Abi for DNS_CONNECTION_PROXY_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DNS_CONNECTION_PROXY_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1004,6 +1029,7 @@ impl ::core::clone::Clone for DNS_CUSTOM_SERVER {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DNS_CUSTOM_SERVER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DNS_CUSTOM_SERVER {
@@ -1036,6 +1062,7 @@ impl ::core::clone::Clone for DNS_CUSTOM_SERVER_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DNS_CUSTOM_SERVER_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DNS_CUSTOM_SERVER_0 {
@@ -1068,6 +1095,7 @@ impl ::core::clone::Clone for DNS_CUSTOM_SERVER_1 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DNS_CUSTOM_SERVER_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DNS_CUSTOM_SERVER_1 {
@@ -1108,6 +1136,7 @@ impl ::core::fmt::Debug for DNS_DHCID_DATA {
 }
 unsafe impl ::windows::core::Abi for DNS_DHCID_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DNS_DHCID_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -1143,6 +1172,7 @@ impl ::core::fmt::Debug for DNS_DS_DATA {
 }
 unsafe impl ::windows::core::Abi for DNS_DS_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DNS_DS_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -1178,6 +1208,7 @@ impl ::core::default::Default for DNS_FREE_TYPE {
 }
 unsafe impl ::windows::core::Abi for DNS_FREE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DNS_FREE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1203,6 +1234,7 @@ impl ::core::clone::Clone for DNS_HEADER {
 }
 unsafe impl ::windows::core::Abi for DNS_HEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DNS_HEADER {
     fn eq(&self, other: &Self) -> bool {
@@ -1230,6 +1262,7 @@ impl ::core::clone::Clone for DNS_HEADER_EXT {
 }
 unsafe impl ::windows::core::Abi for DNS_HEADER_EXT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DNS_HEADER_EXT {
     fn eq(&self, other: &Self) -> bool {
@@ -1265,6 +1298,7 @@ impl ::core::fmt::Debug for DNS_KEY_DATA {
 }
 unsafe impl ::windows::core::Abi for DNS_KEY_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DNS_KEY_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -1301,6 +1335,7 @@ impl ::core::fmt::Debug for DNS_LOC_DATA {
 }
 unsafe impl ::windows::core::Abi for DNS_LOC_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DNS_LOC_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -1353,6 +1388,7 @@ impl ::core::clone::Clone for DNS_MESSAGE_BUFFER {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DNS_MESSAGE_BUFFER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DNS_MESSAGE_BUFFER {
@@ -1387,6 +1423,7 @@ impl ::core::fmt::Debug for DNS_MINFO_DATAA {
 }
 unsafe impl ::windows::core::Abi for DNS_MINFO_DATAA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DNS_MINFO_DATAA {
     fn eq(&self, other: &Self) -> bool {
@@ -1418,6 +1455,7 @@ impl ::core::fmt::Debug for DNS_MINFO_DATAW {
 }
 unsafe impl ::windows::core::Abi for DNS_MINFO_DATAW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DNS_MINFO_DATAW {
     fn eq(&self, other: &Self) -> bool {
@@ -1450,6 +1488,7 @@ impl ::core::fmt::Debug for DNS_MX_DATAA {
 }
 unsafe impl ::windows::core::Abi for DNS_MX_DATAA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DNS_MX_DATAA {
     fn eq(&self, other: &Self) -> bool {
@@ -1482,6 +1521,7 @@ impl ::core::fmt::Debug for DNS_MX_DATAW {
 }
 unsafe impl ::windows::core::Abi for DNS_MX_DATAW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DNS_MX_DATAW {
     fn eq(&self, other: &Self) -> bool {
@@ -1525,6 +1565,7 @@ impl ::core::default::Default for DNS_NAME_FORMAT {
 }
 unsafe impl ::windows::core::Abi for DNS_NAME_FORMAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DNS_NAME_FORMAT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1554,6 +1595,7 @@ impl ::core::fmt::Debug for DNS_NAPTR_DATAA {
 }
 unsafe impl ::windows::core::Abi for DNS_NAPTR_DATAA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DNS_NAPTR_DATAA {
     fn eq(&self, other: &Self) -> bool {
@@ -1589,6 +1631,7 @@ impl ::core::fmt::Debug for DNS_NAPTR_DATAW {
 }
 unsafe impl ::windows::core::Abi for DNS_NAPTR_DATAW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DNS_NAPTR_DATAW {
     fn eq(&self, other: &Self) -> bool {
@@ -1624,6 +1667,7 @@ impl ::core::fmt::Debug for DNS_NSEC3PARAM_DATA {
 }
 unsafe impl ::windows::core::Abi for DNS_NSEC3PARAM_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DNS_NSEC3PARAM_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -1660,6 +1704,7 @@ impl ::core::fmt::Debug for DNS_NSEC3_DATA {
 }
 unsafe impl ::windows::core::Abi for DNS_NSEC3_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DNS_NSEC3_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -1693,6 +1738,7 @@ impl ::core::fmt::Debug for DNS_NSEC_DATAA {
 }
 unsafe impl ::windows::core::Abi for DNS_NSEC_DATAA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DNS_NSEC_DATAA {
     fn eq(&self, other: &Self) -> bool {
@@ -1726,6 +1772,7 @@ impl ::core::fmt::Debug for DNS_NSEC_DATAW {
 }
 unsafe impl ::windows::core::Abi for DNS_NSEC_DATAW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DNS_NSEC_DATAW {
     fn eq(&self, other: &Self) -> bool {
@@ -1757,6 +1804,7 @@ impl ::core::fmt::Debug for DNS_NULL_DATA {
 }
 unsafe impl ::windows::core::Abi for DNS_NULL_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DNS_NULL_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -1789,6 +1837,7 @@ impl ::core::fmt::Debug for DNS_NXT_DATAA {
 }
 unsafe impl ::windows::core::Abi for DNS_NXT_DATAA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DNS_NXT_DATAA {
     fn eq(&self, other: &Self) -> bool {
@@ -1821,6 +1870,7 @@ impl ::core::fmt::Debug for DNS_NXT_DATAW {
 }
 unsafe impl ::windows::core::Abi for DNS_NXT_DATAW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DNS_NXT_DATAW {
     fn eq(&self, other: &Self) -> bool {
@@ -1865,6 +1915,7 @@ impl ::core::fmt::Debug for DNS_OPT_DATA {
 }
 unsafe impl ::windows::core::Abi for DNS_OPT_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DNS_OPT_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -1903,6 +1954,7 @@ impl ::core::fmt::Debug for DNS_PROXY_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for DNS_PROXY_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DNS_PROXY_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -1940,6 +1992,7 @@ impl ::core::default::Default for DNS_PROXY_INFORMATION_TYPE {
 }
 unsafe impl ::windows::core::Abi for DNS_PROXY_INFORMATION_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DNS_PROXY_INFORMATION_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1964,6 +2017,7 @@ impl ::core::fmt::Debug for DNS_PTR_DATAA {
 }
 unsafe impl ::windows::core::Abi for DNS_PTR_DATAA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DNS_PTR_DATAA {
     fn eq(&self, other: &Self) -> bool {
@@ -1994,6 +2048,7 @@ impl ::core::fmt::Debug for DNS_PTR_DATAW {
 }
 unsafe impl ::windows::core::Abi for DNS_PTR_DATAW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DNS_PTR_DATAW {
     fn eq(&self, other: &Self) -> bool {
@@ -2039,6 +2094,7 @@ impl ::core::fmt::Debug for DNS_QUERY_CANCEL {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DNS_QUERY_CANCEL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DNS_QUERY_CANCEL {
@@ -2108,6 +2164,7 @@ impl ::core::fmt::Debug for DNS_QUERY_REQUEST {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DNS_QUERY_REQUEST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DNS_QUERY_REQUEST {
@@ -2170,6 +2227,7 @@ impl ::core::fmt::Debug for DNS_QUERY_REQUEST3 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DNS_QUERY_REQUEST3 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DNS_QUERY_REQUEST3 {
@@ -2220,6 +2278,7 @@ impl ::core::fmt::Debug for DNS_QUERY_RESULT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DNS_QUERY_RESULT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DNS_QUERY_RESULT {
@@ -2329,6 +2388,7 @@ impl ::core::clone::Clone for DNS_RECORDA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DNS_RECORDA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DNS_RECORDA {
@@ -2444,6 +2504,7 @@ impl ::core::clone::Clone for DNS_RECORDA_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DNS_RECORDA_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DNS_RECORDA_0 {
@@ -2477,6 +2538,7 @@ impl ::core::clone::Clone for DNS_RECORDA_1 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DNS_RECORDA_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DNS_RECORDA_1 {
@@ -2516,6 +2578,7 @@ impl ::core::clone::Clone for DNS_RECORDW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DNS_RECORDW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DNS_RECORDW {
@@ -2631,6 +2694,7 @@ impl ::core::clone::Clone for DNS_RECORDW_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DNS_RECORDW_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DNS_RECORDW_0 {
@@ -2664,6 +2728,7 @@ impl ::core::clone::Clone for DNS_RECORDW_1 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DNS_RECORDW_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DNS_RECORDW_1 {
@@ -2697,6 +2762,7 @@ impl ::core::fmt::Debug for DNS_RECORD_FLAGS {
 }
 unsafe impl ::windows::core::Abi for DNS_RECORD_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DNS_RECORD_FLAGS {
     fn eq(&self, other: &Self) -> bool {
@@ -2735,6 +2801,7 @@ impl ::core::fmt::Debug for DNS_RRSET {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DNS_RRSET {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DNS_RRSET {
@@ -2901,6 +2968,7 @@ impl ::core::default::Default for DNS_SECTION {
 }
 unsafe impl ::windows::core::Abi for DNS_SECTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DNS_SECTION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2928,6 +2996,7 @@ impl ::core::clone::Clone for DNS_SERVICE_BROWSE_REQUEST {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DNS_SERVICE_BROWSE_REQUEST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DNS_SERVICE_BROWSE_REQUEST {
@@ -2961,6 +3030,7 @@ impl ::core::clone::Clone for DNS_SERVICE_BROWSE_REQUEST_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DNS_SERVICE_BROWSE_REQUEST_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DNS_SERVICE_BROWSE_REQUEST_0 {
@@ -2994,6 +3064,7 @@ impl ::core::fmt::Debug for DNS_SERVICE_CANCEL {
 }
 unsafe impl ::windows::core::Abi for DNS_SERVICE_CANCEL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DNS_SERVICE_CANCEL {
     fn eq(&self, other: &Self) -> bool {
@@ -3034,6 +3105,7 @@ impl ::core::fmt::Debug for DNS_SERVICE_INSTANCE {
 }
 unsafe impl ::windows::core::Abi for DNS_SERVICE_INSTANCE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DNS_SERVICE_INSTANCE {
     fn eq(&self, other: &Self) -> bool {
@@ -3075,6 +3147,7 @@ impl ::core::fmt::Debug for DNS_SERVICE_REGISTER_REQUEST {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DNS_SERVICE_REGISTER_REQUEST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DNS_SERVICE_REGISTER_REQUEST {
@@ -3112,6 +3185,7 @@ impl ::core::fmt::Debug for DNS_SERVICE_RESOLVE_REQUEST {
 }
 unsafe impl ::windows::core::Abi for DNS_SERVICE_RESOLVE_REQUEST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DNS_SERVICE_RESOLVE_REQUEST {
     fn eq(&self, other: &Self) -> bool {
@@ -3151,6 +3225,7 @@ impl ::core::fmt::Debug for DNS_SIG_DATAA {
 }
 unsafe impl ::windows::core::Abi for DNS_SIG_DATAA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DNS_SIG_DATAA {
     fn eq(&self, other: &Self) -> bool {
@@ -3190,6 +3265,7 @@ impl ::core::fmt::Debug for DNS_SIG_DATAW {
 }
 unsafe impl ::windows::core::Abi for DNS_SIG_DATAW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DNS_SIG_DATAW {
     fn eq(&self, other: &Self) -> bool {
@@ -3226,6 +3302,7 @@ impl ::core::fmt::Debug for DNS_SOA_DATAA {
 }
 unsafe impl ::windows::core::Abi for DNS_SOA_DATAA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DNS_SOA_DATAA {
     fn eq(&self, other: &Self) -> bool {
@@ -3262,6 +3339,7 @@ impl ::core::fmt::Debug for DNS_SOA_DATAW {
 }
 unsafe impl ::windows::core::Abi for DNS_SOA_DATAW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DNS_SOA_DATAW {
     fn eq(&self, other: &Self) -> bool {
@@ -3296,6 +3374,7 @@ impl ::core::fmt::Debug for DNS_SRV_DATAA {
 }
 unsafe impl ::windows::core::Abi for DNS_SRV_DATAA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DNS_SRV_DATAA {
     fn eq(&self, other: &Self) -> bool {
@@ -3330,6 +3409,7 @@ impl ::core::fmt::Debug for DNS_SRV_DATAW {
 }
 unsafe impl ::windows::core::Abi for DNS_SRV_DATAW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DNS_SRV_DATAW {
     fn eq(&self, other: &Self) -> bool {
@@ -3389,6 +3469,7 @@ impl ::core::fmt::Debug for DNS_TKEY_DATAA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DNS_TKEY_DATAA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DNS_TKEY_DATAA {
@@ -3451,6 +3532,7 @@ impl ::core::fmt::Debug for DNS_TKEY_DATAW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DNS_TKEY_DATAW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DNS_TKEY_DATAW {
@@ -3497,6 +3579,7 @@ impl ::core::fmt::Debug for DNS_TLSA_DATA {
 }
 unsafe impl ::windows::core::Abi for DNS_TLSA_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DNS_TLSA_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -3556,6 +3639,7 @@ impl ::core::fmt::Debug for DNS_TSIG_DATAA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DNS_TSIG_DATAA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DNS_TSIG_DATAA {
@@ -3618,6 +3702,7 @@ impl ::core::fmt::Debug for DNS_TSIG_DATAW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DNS_TSIG_DATAW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DNS_TSIG_DATAW {
@@ -3652,6 +3737,7 @@ impl ::core::fmt::Debug for DNS_TXT_DATAA {
 }
 unsafe impl ::windows::core::Abi for DNS_TXT_DATAA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DNS_TXT_DATAA {
     fn eq(&self, other: &Self) -> bool {
@@ -3683,6 +3769,7 @@ impl ::core::fmt::Debug for DNS_TXT_DATAW {
 }
 unsafe impl ::windows::core::Abi for DNS_TXT_DATAW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DNS_TXT_DATAW {
     fn eq(&self, other: &Self) -> bool {
@@ -3846,6 +3933,7 @@ impl ::core::fmt::Debug for DNS_UNKNOWN_DATA {
 }
 unsafe impl ::windows::core::Abi for DNS_UNKNOWN_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DNS_UNKNOWN_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -3917,6 +4005,7 @@ impl ::core::fmt::Debug for DNS_WINSR_DATAA {
 }
 unsafe impl ::windows::core::Abi for DNS_WINSR_DATAA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DNS_WINSR_DATAA {
     fn eq(&self, other: &Self) -> bool {
@@ -3950,6 +4039,7 @@ impl ::core::fmt::Debug for DNS_WINSR_DATAW {
 }
 unsafe impl ::windows::core::Abi for DNS_WINSR_DATAW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DNS_WINSR_DATAW {
     fn eq(&self, other: &Self) -> bool {
@@ -3984,6 +4074,7 @@ impl ::core::fmt::Debug for DNS_WINS_DATA {
 }
 unsafe impl ::windows::core::Abi for DNS_WINS_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DNS_WINS_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -4014,6 +4105,7 @@ impl ::core::clone::Clone for DNS_WIRE_QUESTION {
 }
 unsafe impl ::windows::core::Abi for DNS_WIRE_QUESTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DNS_WIRE_QUESTION {
     fn eq(&self, other: &Self) -> bool {
@@ -4042,6 +4134,7 @@ impl ::core::clone::Clone for DNS_WIRE_RECORD {
 }
 unsafe impl ::windows::core::Abi for DNS_WIRE_RECORD {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DNS_WIRE_RECORD {
     fn eq(&self, other: &Self) -> bool {
@@ -4074,6 +4167,7 @@ impl ::core::fmt::Debug for DNS_WKS_DATA {
 }
 unsafe impl ::windows::core::Abi for DNS_WKS_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DNS_WKS_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -4339,6 +4433,7 @@ impl ::core::fmt::Debug for DnsContextHandle {
 }
 unsafe impl ::windows::core::Abi for DnsContextHandle {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[doc = "*Required features: `\"Win32_NetworkManagement_Dns\"`, `\"Win32_Foundation\"`*"]
 #[cfg(feature = "Win32_Foundation")]
@@ -5008,6 +5103,7 @@ impl ::core::fmt::Debug for IP4_ARRAY {
 }
 unsafe impl ::windows::core::Abi for IP4_ARRAY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IP4_ARRAY {
     fn eq(&self, other: &Self) -> bool {
@@ -5040,6 +5136,7 @@ impl ::core::clone::Clone for IP6_ADDRESS {
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 unsafe impl ::windows::core::Abi for IP6_ADDRESS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 impl ::core::cmp::PartialEq for IP6_ADDRESS {
@@ -5074,6 +5171,7 @@ impl ::core::clone::Clone for IP6_ADDRESS {
 #[cfg(target_arch = "x86")]
 unsafe impl ::windows::core::Abi for IP6_ADDRESS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 impl ::core::cmp::PartialEq for IP6_ADDRESS {
@@ -5115,6 +5213,7 @@ impl ::core::fmt::Debug for MDNS_QUERY_HANDLE {
 }
 unsafe impl ::windows::core::Abi for MDNS_QUERY_HANDLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MDNS_QUERY_HANDLE {
     fn eq(&self, other: &Self) -> bool {
@@ -5159,6 +5258,7 @@ impl ::core::fmt::Debug for MDNS_QUERY_REQUEST {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MDNS_QUERY_REQUEST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MDNS_QUERY_REQUEST {
@@ -5214,6 +5314,7 @@ impl ::core::clone::Clone for _DnsRecordOptA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for _DnsRecordOptA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for _DnsRecordOptA {
@@ -5247,6 +5348,7 @@ impl ::core::clone::Clone for _DnsRecordOptA_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for _DnsRecordOptA_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for _DnsRecordOptA_0 {
@@ -5280,6 +5382,7 @@ impl ::core::clone::Clone for _DnsRecordOptA_1 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for _DnsRecordOptA_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for _DnsRecordOptA_1 {
@@ -5320,6 +5423,7 @@ impl ::core::clone::Clone for _DnsRecordOptW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for _DnsRecordOptW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for _DnsRecordOptW {
@@ -5353,6 +5457,7 @@ impl ::core::clone::Clone for _DnsRecordOptW_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for _DnsRecordOptW_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for _DnsRecordOptW_0 {
@@ -5386,6 +5491,7 @@ impl ::core::clone::Clone for _DnsRecordOptW_1 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for _DnsRecordOptW_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for _DnsRecordOptW_1 {

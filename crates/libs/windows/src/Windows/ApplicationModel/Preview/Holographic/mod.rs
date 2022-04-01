@@ -66,12 +66,6 @@ impl HolographicKeyboardPlacementOverridePreview {
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for HolographicKeyboardPlacementOverridePreview {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for HolographicKeyboardPlacementOverridePreview {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -88,7 +82,6 @@ impl ::core::fmt::Debug for HolographicKeyboardPlacementOverridePreview {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for HolographicKeyboardPlacementOverridePreview {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Preview.Holographic.HolographicKeyboardPlacementOverridePreview;{c8a8ce3a-dfde-5a14-8d5f-182c526dd9c4})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -157,6 +150,11 @@ unsafe impl ::core::marker::Sync for HolographicKeyboardPlacementOverridePreview
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHolographicApplicationPreviewStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHolographicApplicationPreviewStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHolographicApplicationPreviewStatics {
     type Vtable = IHolographicApplicationPreviewStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xfe038691_2a3a_45a9_a208_7bed691919f3);
@@ -175,6 +173,12 @@ pub struct IHolographicApplicationPreviewStatics_Vtbl {
 #[cfg(feature = "deprecated")]
 #[repr(transparent)]
 pub struct IHolographicKeyboardPlacementOverridePreview(::windows::core::IUnknown);
+#[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for IHolographicKeyboardPlacementOverridePreview {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for IHolographicKeyboardPlacementOverridePreview {
     type Vtable = IHolographicKeyboardPlacementOverridePreview_Vtbl;
@@ -202,6 +206,12 @@ pub struct IHolographicKeyboardPlacementOverridePreview_Vtbl {
 #[cfg(feature = "deprecated")]
 #[repr(transparent)]
 pub struct IHolographicKeyboardPlacementOverridePreviewStatics(::windows::core::IUnknown);
+#[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for IHolographicKeyboardPlacementOverridePreviewStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for IHolographicKeyboardPlacementOverridePreviewStatics {
     type Vtable = IHolographicKeyboardPlacementOverridePreviewStatics_Vtbl;

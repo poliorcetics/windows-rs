@@ -2,6 +2,11 @@
 #[doc = "*Required features: `\"Win32_UI_Input_Ink\"`*"]
 #[repr(transparent)]
 pub struct IInkCommitRequestHandler(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInkCommitRequestHandler {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IInkCommitRequestHandler {
     #[doc = "*Required features: `\"Win32_UI_Input_Ink\"`*"]
     pub unsafe fn OnCommitRequested(&self) -> ::windows::core::Result<()> {
@@ -28,11 +33,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IInkC
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IInkCommitRequestHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IInkCommitRequestHandler {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -57,6 +57,11 @@ pub struct IInkCommitRequestHandler_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Input_Ink\"`*"]
 #[repr(transparent)]
 pub struct IInkD2DRenderer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInkD2DRenderer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IInkD2DRenderer {
     #[doc = "*Required features: `\"Win32_UI_Input_Ink\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -82,11 +87,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IInkD2DRe
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IInkD2DRenderer {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IInkD2DRenderer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IInkD2DRenderer {
@@ -116,6 +116,11 @@ pub struct IInkD2DRenderer_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Input_Ink\"`*"]
 #[repr(transparent)]
 pub struct IInkD2DRenderer2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInkD2DRenderer2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IInkD2DRenderer2 {
     #[doc = "*Required features: `\"Win32_UI_Input_Ink\"`*"]
     pub unsafe fn Draw<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>, Param1: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, pd2d1devicecontext: Param0, pinkstrokeiterable: Param1, highcontrastadjustment: INK_HIGH_CONTRAST_ADJUSTMENT) -> ::windows::core::Result<()> {
@@ -142,11 +147,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IInkD
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IInkD2DRenderer2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IInkD2DRenderer2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -171,6 +171,11 @@ pub struct IInkD2DRenderer2_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Input_Ink\"`*"]
 #[repr(transparent)]
 pub struct IInkDesktopHost(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInkDesktopHost {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IInkDesktopHost {
     #[doc = "*Required features: `\"Win32_UI_Input_Ink\"`*"]
     pub unsafe fn QueueWorkItem<'a, Param0: ::windows::core::IntoParam<'a, IInkHostWorkItem>>(&self, workitem: Param0) -> ::windows::core::Result<()> {
@@ -207,11 +212,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IInkD
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IInkDesktopHost {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IInkDesktopHost {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -238,6 +238,11 @@ pub struct IInkDesktopHost_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Input_Ink\"`*"]
 #[repr(transparent)]
 pub struct IInkHostWorkItem(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInkHostWorkItem {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IInkHostWorkItem {
     #[doc = "*Required features: `\"Win32_UI_Input_Ink\"`*"]
     pub unsafe fn Invoke(&self) -> ::windows::core::Result<()> {
@@ -264,11 +269,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IInkH
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IInkHostWorkItem {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IInkHostWorkItem {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -293,6 +293,11 @@ pub struct IInkHostWorkItem_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Input_Ink\"`*"]
 #[repr(transparent)]
 pub struct IInkPresenterDesktop(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInkPresenterDesktop {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IInkPresenterDesktop {
     #[doc = "*Required features: `\"Win32_UI_Input_Ink\"`*"]
     pub unsafe fn SetRootVisual<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>, Param1: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, rootvisual: Param0, device: Param1) -> ::windows::core::Result<()> {
@@ -333,11 +338,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IInkPrese
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IInkPresenterDesktop {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IInkPresenterDesktop {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IInkPresenterDesktop {
@@ -388,6 +388,7 @@ impl ::core::default::Default for INK_HIGH_CONTRAST_ADJUSTMENT {
 }
 unsafe impl ::windows::core::Abi for INK_HIGH_CONTRAST_ADJUSTMENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for INK_HIGH_CONTRAST_ADJUSTMENT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

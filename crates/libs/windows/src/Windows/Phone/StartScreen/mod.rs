@@ -127,11 +127,6 @@ impl DualSimTile {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for DualSimTile {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DualSimTile {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -145,7 +140,6 @@ impl ::core::fmt::Debug for DualSimTile {
 }
 unsafe impl ::windows::core::RuntimeType for DualSimTile {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Phone.StartScreen.DualSimTile;{143ab213-d05f-4041-a18c-3e3fcb75b41e})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -200,6 +194,11 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a D
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDualSimTile(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDualSimTile {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDualSimTile {
     type Vtable = IDualSimTile_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x143ab213_d05f_4041_a18c_3e3fcb75b41e);
@@ -227,6 +226,11 @@ pub struct IDualSimTile_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDualSimTileStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDualSimTileStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDualSimTileStatics {
     type Vtable = IDualSimTileStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x50567c9e_c58f_4dc9_b6e8_fa6777eeeb37);
@@ -268,6 +272,11 @@ pub struct IDualSimTileStatics_Vtbl {
 #[doc = "*Required features: `\"Phone_StartScreen\"`*"]
 #[repr(transparent)]
 pub struct IToastNotificationManagerStatics3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IToastNotificationManagerStatics3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IToastNotificationManagerStatics3 {
     #[doc = "*Required features: `\"Phone_StartScreen\"`, `\"UI_Notifications\"`*"]
     #[cfg(feature = "UI_Notifications")]
@@ -319,11 +328,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IToastNotificationManagerStatics3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IToastNotificationManagerStatics3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -337,7 +341,6 @@ impl ::core::fmt::Debug for IToastNotificationManagerStatics3 {
 }
 unsafe impl ::windows::core::RuntimeType for IToastNotificationManagerStatics3 {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{2717f54b-50df-4455-8e6e-41e0fc8e13ce}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

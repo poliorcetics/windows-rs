@@ -25,6 +25,7 @@ impl ::core::fmt::Debug for DRT_ADDRESS {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 unsafe impl ::windows::core::Abi for DRT_ADDRESS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 impl ::core::cmp::PartialEq for DRT_ADDRESS {
@@ -73,6 +74,7 @@ impl ::core::default::Default for DRT_ADDRESS_FLAGS {
 }
 unsafe impl ::windows::core::Abi for DRT_ADDRESS_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DRT_ADDRESS_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -103,6 +105,7 @@ impl ::core::fmt::Debug for DRT_ADDRESS_LIST {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 unsafe impl ::windows::core::Abi for DRT_ADDRESS_LIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 impl ::core::cmp::PartialEq for DRT_ADDRESS_LIST {
@@ -143,6 +146,7 @@ impl ::core::fmt::Debug for DRT_BOOTSTRAP_PROVIDER {
 }
 unsafe impl ::windows::core::Abi for DRT_BOOTSTRAP_PROVIDER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DRT_BOOTSTRAP_PROVIDER {
     fn eq(&self, other: &Self) -> bool {
@@ -177,6 +181,7 @@ impl ::core::fmt::Debug for DRT_DATA {
 }
 unsafe impl ::windows::core::Abi for DRT_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DRT_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -209,6 +214,7 @@ impl ::core::clone::Clone for DRT_EVENT_DATA {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 unsafe impl ::windows::core::Abi for DRT_EVENT_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 impl ::core::cmp::PartialEq for DRT_EVENT_DATA {
@@ -243,6 +249,7 @@ impl ::core::clone::Clone for DRT_EVENT_DATA_0 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 unsafe impl ::windows::core::Abi for DRT_EVENT_DATA_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 impl ::core::cmp::PartialEq for DRT_EVENT_DATA_0 {
@@ -283,6 +290,7 @@ impl ::core::fmt::Debug for DRT_EVENT_DATA_0_0 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 unsafe impl ::windows::core::Abi for DRT_EVENT_DATA_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 impl ::core::cmp::PartialEq for DRT_EVENT_DATA_0_0 {
@@ -322,6 +330,7 @@ impl ::core::fmt::Debug for DRT_EVENT_DATA_0_1 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 unsafe impl ::windows::core::Abi for DRT_EVENT_DATA_0_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 impl ::core::cmp::PartialEq for DRT_EVENT_DATA_0_1 {
@@ -361,6 +370,7 @@ impl ::core::fmt::Debug for DRT_EVENT_DATA_0_2 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 unsafe impl ::windows::core::Abi for DRT_EVENT_DATA_0_2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 impl ::core::cmp::PartialEq for DRT_EVENT_DATA_0_2 {
@@ -400,6 +410,7 @@ impl ::core::fmt::Debug for DRT_EVENT_DATA_0_2_0 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 unsafe impl ::windows::core::Abi for DRT_EVENT_DATA_0_2_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 impl ::core::cmp::PartialEq for DRT_EVENT_DATA_0_2_0 {
@@ -438,6 +449,7 @@ impl ::core::default::Default for DRT_EVENT_TYPE {
 }
 unsafe impl ::windows::core::Abi for DRT_EVENT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DRT_EVENT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -547,6 +559,7 @@ impl ::core::default::Default for DRT_LEAFSET_KEY_CHANGE_TYPE {
 }
 unsafe impl ::windows::core::Abi for DRT_LEAFSET_KEY_CHANGE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DRT_LEAFSET_KEY_CHANGE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -578,6 +591,7 @@ impl ::core::default::Default for DRT_MATCH_TYPE {
 }
 unsafe impl ::windows::core::Abi for DRT_MATCH_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DRT_MATCH_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -613,6 +627,7 @@ impl ::core::fmt::Debug for DRT_REGISTRATION {
 }
 unsafe impl ::windows::core::Abi for DRT_REGISTRATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DRT_REGISTRATION {
     fn eq(&self, other: &Self) -> bool {
@@ -644,6 +659,7 @@ impl ::core::default::Default for DRT_REGISTRATION_STATE {
 }
 unsafe impl ::windows::core::Abi for DRT_REGISTRATION_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DRT_REGISTRATION_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -673,6 +689,7 @@ impl ::core::default::Default for DRT_SCOPE {
 }
 unsafe impl ::windows::core::Abi for DRT_SCOPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DRT_SCOPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -708,6 +725,7 @@ impl ::core::fmt::Debug for DRT_SEARCH_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DRT_SEARCH_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DRT_SEARCH_INFO {
@@ -744,6 +762,7 @@ impl ::core::fmt::Debug for DRT_SEARCH_RESULT {
 }
 unsafe impl ::windows::core::Abi for DRT_SEARCH_RESULT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DRT_SEARCH_RESULT {
     fn eq(&self, other: &Self) -> bool {
@@ -779,6 +798,7 @@ impl ::core::default::Default for DRT_SECURITY_MODE {
 }
 unsafe impl ::windows::core::Abi for DRT_SECURITY_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DRT_SECURITY_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -831,6 +851,7 @@ impl ::core::fmt::Debug for DRT_SECURITY_PROVIDER {
 }
 unsafe impl ::windows::core::Abi for DRT_SECURITY_PROVIDER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DRT_SECURITY_PROVIDER {
     fn eq(&self, other: &Self) -> bool {
@@ -881,6 +902,7 @@ impl ::core::fmt::Debug for DRT_SETTINGS {
 }
 unsafe impl ::windows::core::Abi for DRT_SETTINGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DRT_SETTINGS {
     fn eq(&self, other: &Self) -> bool {
@@ -918,6 +940,7 @@ impl ::core::default::Default for DRT_STATUS {
 }
 unsafe impl ::windows::core::Abi for DRT_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DRT_STATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1354,6 +1377,7 @@ impl ::core::fmt::Debug for PEERDIST_CLIENT_BASIC_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PEERDIST_CLIENT_BASIC_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for PEERDIST_CLIENT_BASIC_INFO {
@@ -1390,6 +1414,7 @@ impl ::core::default::Default for PEERDIST_CLIENT_INFO_BY_HANDLE_CLASS {
 }
 unsafe impl ::windows::core::Abi for PEERDIST_CLIENT_INFO_BY_HANDLE_CLASS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PEERDIST_CLIENT_INFO_BY_HANDLE_CLASS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1414,6 +1439,7 @@ impl ::core::fmt::Debug for PEERDIST_CONTENT_TAG {
 }
 unsafe impl ::windows::core::Abi for PEERDIST_CONTENT_TAG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PEERDIST_CONTENT_TAG {
     fn eq(&self, other: &Self) -> bool {
@@ -1445,6 +1471,7 @@ impl ::core::fmt::Debug for PEERDIST_PUBLICATION_OPTIONS {
 }
 unsafe impl ::windows::core::Abi for PEERDIST_PUBLICATION_OPTIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PEERDIST_PUBLICATION_OPTIONS {
     fn eq(&self, other: &Self) -> bool {
@@ -1488,6 +1515,7 @@ impl ::core::fmt::Debug for PEERDIST_RETRIEVAL_OPTIONS {
 }
 unsafe impl ::windows::core::Abi for PEERDIST_RETRIEVAL_OPTIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PEERDIST_RETRIEVAL_OPTIONS {
     fn eq(&self, other: &Self) -> bool {
@@ -1523,6 +1551,7 @@ impl ::core::default::Default for PEERDIST_RETRIEVAL_OPTIONS_CONTENTINFO_VERSION
 }
 unsafe impl ::windows::core::Abi for PEERDIST_RETRIEVAL_OPTIONS_CONTENTINFO_VERSION_VALUE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PEERDIST_RETRIEVAL_OPTIONS_CONTENTINFO_VERSION_VALUE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1552,6 +1581,7 @@ impl ::core::default::Default for PEERDIST_STATUS {
 }
 unsafe impl ::windows::core::Abi for PEERDIST_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PEERDIST_STATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1579,6 +1609,7 @@ impl ::core::fmt::Debug for PEERDIST_STATUS_INFO {
 }
 unsafe impl ::windows::core::Abi for PEERDIST_STATUS_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PEERDIST_STATUS_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -1609,6 +1640,7 @@ impl ::core::clone::Clone for PEER_ADDRESS {
 #[cfg(feature = "Win32_Networking_WinSock")]
 unsafe impl ::windows::core::Abi for PEER_ADDRESS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Networking_WinSock")]
 impl ::core::cmp::PartialEq for PEER_ADDRESS {
@@ -1644,6 +1676,7 @@ impl ::core::fmt::Debug for PEER_APPLICATION {
 }
 unsafe impl ::windows::core::Abi for PEER_APPLICATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PEER_APPLICATION {
     fn eq(&self, other: &Self) -> bool {
@@ -1677,6 +1710,7 @@ impl ::core::fmt::Debug for PEER_APPLICATION_REGISTRATION_INFO {
 }
 unsafe impl ::windows::core::Abi for PEER_APPLICATION_REGISTRATION_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PEER_APPLICATION_REGISTRATION_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -1710,6 +1744,7 @@ impl ::core::default::Default for PEER_APPLICATION_REGISTRATION_TYPE {
 }
 unsafe impl ::windows::core::Abi for PEER_APPLICATION_REGISTRATION_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PEER_APPLICATION_REGISTRATION_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1741,6 +1776,7 @@ impl ::core::fmt::Debug for PEER_APP_LAUNCH_INFO {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 unsafe impl ::windows::core::Abi for PEER_APP_LAUNCH_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 impl ::core::cmp::PartialEq for PEER_APP_LAUNCH_INFO {
@@ -1779,6 +1815,7 @@ impl ::core::default::Default for PEER_CHANGE_TYPE {
 }
 unsafe impl ::windows::core::Abi for PEER_CHANGE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PEER_CHANGE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1803,6 +1840,7 @@ impl ::core::clone::Clone for PEER_COLLAB_EVENT_DATA {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 unsafe impl ::windows::core::Abi for PEER_COLLAB_EVENT_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 impl ::core::cmp::PartialEq for PEER_COLLAB_EVENT_DATA {
@@ -1841,6 +1879,7 @@ impl ::core::clone::Clone for PEER_COLLAB_EVENT_DATA_0 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 unsafe impl ::windows::core::Abi for PEER_COLLAB_EVENT_DATA_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 impl ::core::cmp::PartialEq for PEER_COLLAB_EVENT_DATA_0 {
@@ -1875,6 +1914,7 @@ impl ::core::fmt::Debug for PEER_COLLAB_EVENT_REGISTRATION {
 }
 unsafe impl ::windows::core::Abi for PEER_COLLAB_EVENT_REGISTRATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PEER_COLLAB_EVENT_REGISTRATION {
     fn eq(&self, other: &Self) -> bool {
@@ -1926,6 +1966,7 @@ impl ::core::default::Default for PEER_COLLAB_EVENT_TYPE {
 }
 unsafe impl ::windows::core::Abi for PEER_COLLAB_EVENT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PEER_COLLAB_EVENT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1954,6 +1995,7 @@ impl ::core::default::Default for PEER_CONNECTION_FLAGS {
 }
 unsafe impl ::windows::core::Abi for PEER_CONNECTION_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PEER_CONNECTION_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1982,6 +2024,7 @@ impl ::core::clone::Clone for PEER_CONNECTION_INFO {
 #[cfg(feature = "Win32_Networking_WinSock")]
 unsafe impl ::windows::core::Abi for PEER_CONNECTION_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Networking_WinSock")]
 impl ::core::cmp::PartialEq for PEER_CONNECTION_INFO {
@@ -2020,6 +2063,7 @@ impl ::core::default::Default for PEER_CONNECTION_STATUS {
 }
 unsafe impl ::windows::core::Abi for PEER_CONNECTION_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PEER_CONNECTION_STATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2055,6 +2099,7 @@ impl ::core::fmt::Debug for PEER_CONTACT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PEER_CONTACT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for PEER_CONTACT {
@@ -2102,6 +2147,7 @@ impl ::core::fmt::Debug for PEER_CREDENTIAL_INFO {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography"))]
 unsafe impl ::windows::core::Abi for PEER_CREDENTIAL_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography"))]
 impl ::core::cmp::PartialEq for PEER_CREDENTIAL_INFO {
@@ -2136,6 +2182,7 @@ impl ::core::fmt::Debug for PEER_DATA {
 }
 unsafe impl ::windows::core::Abi for PEER_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PEER_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -2166,6 +2213,7 @@ impl ::core::clone::Clone for PEER_ENDPOINT {
 #[cfg(feature = "Win32_Networking_WinSock")]
 unsafe impl ::windows::core::Abi for PEER_ENDPOINT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Networking_WinSock")]
 impl ::core::cmp::PartialEq for PEER_ENDPOINT {
@@ -2207,6 +2255,7 @@ impl ::core::fmt::Debug for PEER_EVENT_APPLICATION_CHANGED_DATA {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 unsafe impl ::windows::core::Abi for PEER_EVENT_APPLICATION_CHANGED_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 impl ::core::cmp::PartialEq for PEER_EVENT_APPLICATION_CHANGED_DATA {
@@ -2245,6 +2294,7 @@ impl ::core::fmt::Debug for PEER_EVENT_CONNECTION_CHANGE_DATA {
 }
 unsafe impl ::windows::core::Abi for PEER_EVENT_CONNECTION_CHANGE_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PEER_EVENT_CONNECTION_CHANGE_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -2281,6 +2331,7 @@ impl ::core::fmt::Debug for PEER_EVENT_ENDPOINT_CHANGED_DATA {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 unsafe impl ::windows::core::Abi for PEER_EVENT_ENDPOINT_CHANGED_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 impl ::core::cmp::PartialEq for PEER_EVENT_ENDPOINT_CHANGED_DATA {
@@ -2317,6 +2368,7 @@ impl ::core::fmt::Debug for PEER_EVENT_INCOMING_DATA {
 }
 unsafe impl ::windows::core::Abi for PEER_EVENT_INCOMING_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PEER_EVENT_INCOMING_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -2349,6 +2401,7 @@ impl ::core::fmt::Debug for PEER_EVENT_MEMBER_CHANGE_DATA {
 }
 unsafe impl ::windows::core::Abi for PEER_EVENT_MEMBER_CHANGE_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PEER_EVENT_MEMBER_CHANGE_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -2382,6 +2435,7 @@ impl ::core::fmt::Debug for PEER_EVENT_NODE_CHANGE_DATA {
 }
 unsafe impl ::windows::core::Abi for PEER_EVENT_NODE_CHANGE_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PEER_EVENT_NODE_CHANGE_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -2420,6 +2474,7 @@ impl ::core::fmt::Debug for PEER_EVENT_OBJECT_CHANGED_DATA {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 unsafe impl ::windows::core::Abi for PEER_EVENT_OBJECT_CHANGED_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 impl ::core::cmp::PartialEq for PEER_EVENT_OBJECT_CHANGED_DATA {
@@ -2459,6 +2514,7 @@ impl ::core::fmt::Debug for PEER_EVENT_PEOPLE_NEAR_ME_CHANGED_DATA {
 #[cfg(feature = "Win32_Networking_WinSock")]
 unsafe impl ::windows::core::Abi for PEER_EVENT_PEOPLE_NEAR_ME_CHANGED_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Networking_WinSock")]
 impl ::core::cmp::PartialEq for PEER_EVENT_PEOPLE_NEAR_ME_CHANGED_DATA {
@@ -2500,6 +2556,7 @@ impl ::core::fmt::Debug for PEER_EVENT_PRESENCE_CHANGED_DATA {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 unsafe impl ::windows::core::Abi for PEER_EVENT_PRESENCE_CHANGED_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 impl ::core::cmp::PartialEq for PEER_EVENT_PRESENCE_CHANGED_DATA {
@@ -2536,6 +2593,7 @@ impl ::core::fmt::Debug for PEER_EVENT_RECORD_CHANGE_DATA {
 }
 unsafe impl ::windows::core::Abi for PEER_EVENT_RECORD_CHANGE_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PEER_EVENT_RECORD_CHANGE_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -2572,6 +2630,7 @@ impl ::core::fmt::Debug for PEER_EVENT_REQUEST_STATUS_CHANGED_DATA {
 #[cfg(feature = "Win32_Networking_WinSock")]
 unsafe impl ::windows::core::Abi for PEER_EVENT_REQUEST_STATUS_CHANGED_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Networking_WinSock")]
 impl ::core::cmp::PartialEq for PEER_EVENT_REQUEST_STATUS_CHANGED_DATA {
@@ -2606,6 +2665,7 @@ impl ::core::fmt::Debug for PEER_EVENT_SYNCHRONIZED_DATA {
 }
 unsafe impl ::windows::core::Abi for PEER_EVENT_SYNCHRONIZED_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PEER_EVENT_SYNCHRONIZED_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -2642,6 +2702,7 @@ impl ::core::fmt::Debug for PEER_EVENT_WATCHLIST_CHANGED_DATA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PEER_EVENT_WATCHLIST_CHANGED_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for PEER_EVENT_WATCHLIST_CHANGED_DATA {
@@ -2693,6 +2754,7 @@ impl ::core::clone::Clone for PEER_GRAPH_EVENT_DATA {
 }
 unsafe impl ::windows::core::Abi for PEER_GRAPH_EVENT_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PEER_GRAPH_EVENT_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -2723,6 +2785,7 @@ impl ::core::clone::Clone for PEER_GRAPH_EVENT_DATA_0 {
 }
 unsafe impl ::windows::core::Abi for PEER_GRAPH_EVENT_DATA_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PEER_GRAPH_EVENT_DATA_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -2754,6 +2817,7 @@ impl ::core::fmt::Debug for PEER_GRAPH_EVENT_REGISTRATION {
 }
 unsafe impl ::windows::core::Abi for PEER_GRAPH_EVENT_REGISTRATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PEER_GRAPH_EVENT_REGISTRATION {
     fn eq(&self, other: &Self) -> bool {
@@ -2801,6 +2865,7 @@ impl ::core::default::Default for PEER_GRAPH_EVENT_TYPE {
 }
 unsafe impl ::windows::core::Abi for PEER_GRAPH_EVENT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PEER_GRAPH_EVENT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2834,6 +2899,7 @@ impl ::core::fmt::Debug for PEER_GRAPH_PROPERTIES {
 }
 unsafe impl ::windows::core::Abi for PEER_GRAPH_PROPERTIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PEER_GRAPH_PROPERTIES {
     fn eq(&self, other: &Self) -> bool {
@@ -2867,6 +2933,7 @@ impl ::core::default::Default for PEER_GRAPH_PROPERTY_FLAGS {
 }
 unsafe impl ::windows::core::Abi for PEER_GRAPH_PROPERTY_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PEER_GRAPH_PROPERTY_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2900,6 +2967,7 @@ impl ::core::default::Default for PEER_GRAPH_SCOPE {
 }
 unsafe impl ::windows::core::Abi for PEER_GRAPH_SCOPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PEER_GRAPH_SCOPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2929,6 +2997,7 @@ impl ::core::default::Default for PEER_GRAPH_STATUS_FLAGS {
 }
 unsafe impl ::windows::core::Abi for PEER_GRAPH_STATUS_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PEER_GRAPH_STATUS_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2956,6 +3025,7 @@ impl ::core::default::Default for PEER_GROUP_AUTHENTICATION_SCHEME {
 }
 unsafe impl ::windows::core::Abi for PEER_GROUP_AUTHENTICATION_SCHEME {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PEER_GROUP_AUTHENTICATION_SCHEME {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2976,6 +3046,7 @@ impl ::core::clone::Clone for PEER_GROUP_EVENT_DATA {
 }
 unsafe impl ::windows::core::Abi for PEER_GROUP_EVENT_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PEER_GROUP_EVENT_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -3006,6 +3077,7 @@ impl ::core::clone::Clone for PEER_GROUP_EVENT_DATA_0 {
 }
 unsafe impl ::windows::core::Abi for PEER_GROUP_EVENT_DATA_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PEER_GROUP_EVENT_DATA_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -3037,6 +3109,7 @@ impl ::core::fmt::Debug for PEER_GROUP_EVENT_REGISTRATION {
 }
 unsafe impl ::windows::core::Abi for PEER_GROUP_EVENT_REGISTRATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PEER_GROUP_EVENT_REGISTRATION {
     fn eq(&self, other: &Self) -> bool {
@@ -3084,6 +3157,7 @@ impl ::core::default::Default for PEER_GROUP_EVENT_TYPE {
 }
 unsafe impl ::windows::core::Abi for PEER_GROUP_EVENT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PEER_GROUP_EVENT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3109,6 +3183,7 @@ impl ::core::default::Default for PEER_GROUP_ISSUE_CREDENTIAL_FLAGS {
 }
 unsafe impl ::windows::core::Abi for PEER_GROUP_ISSUE_CREDENTIAL_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PEER_GROUP_ISSUE_CREDENTIAL_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3159,6 +3234,7 @@ impl ::core::fmt::Debug for PEER_GROUP_PROPERTIES {
 }
 unsafe impl ::windows::core::Abi for PEER_GROUP_PROPERTIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PEER_GROUP_PROPERTIES {
     fn eq(&self, other: &Self) -> bool {
@@ -3194,6 +3270,7 @@ impl ::core::default::Default for PEER_GROUP_PROPERTY_FLAGS {
 }
 unsafe impl ::windows::core::Abi for PEER_GROUP_PROPERTY_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PEER_GROUP_PROPERTY_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3224,6 +3301,7 @@ impl ::core::default::Default for PEER_GROUP_STATUS {
 }
 unsafe impl ::windows::core::Abi for PEER_GROUP_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PEER_GROUP_STATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3250,6 +3328,7 @@ impl ::core::fmt::Debug for PEER_INVITATION {
 }
 unsafe impl ::windows::core::Abi for PEER_INVITATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PEER_INVITATION {
     fn eq(&self, other: &Self) -> bool {
@@ -3323,6 +3402,7 @@ impl ::core::fmt::Debug for PEER_INVITATION_INFO {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography"))]
 unsafe impl ::windows::core::Abi for PEER_INVITATION_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography"))]
 impl ::core::cmp::PartialEq for PEER_INVITATION_INFO {
@@ -3358,6 +3438,7 @@ impl ::core::fmt::Debug for PEER_INVITATION_RESPONSE {
 }
 unsafe impl ::windows::core::Abi for PEER_INVITATION_RESPONSE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PEER_INVITATION_RESPONSE {
     fn eq(&self, other: &Self) -> bool {
@@ -3395,6 +3476,7 @@ impl ::core::default::Default for PEER_INVITATION_RESPONSE_TYPE {
 }
 unsafe impl ::windows::core::Abi for PEER_INVITATION_RESPONSE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PEER_INVITATION_RESPONSE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3431,6 +3513,7 @@ impl ::core::fmt::Debug for PEER_MEMBER {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock", feature = "Win32_Security_Cryptography"))]
 unsafe impl ::windows::core::Abi for PEER_MEMBER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock", feature = "Win32_Security_Cryptography"))]
 impl ::core::cmp::PartialEq for PEER_MEMBER {
@@ -3473,6 +3556,7 @@ impl ::core::default::Default for PEER_MEMBER_CHANGE_TYPE {
 }
 unsafe impl ::windows::core::Abi for PEER_MEMBER_CHANGE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PEER_MEMBER_CHANGE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3498,6 +3582,7 @@ impl ::core::default::Default for PEER_MEMBER_FLAGS {
 }
 unsafe impl ::windows::core::Abi for PEER_MEMBER_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PEER_MEMBER_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3524,6 +3609,7 @@ impl ::core::fmt::Debug for PEER_NAME_PAIR {
 }
 unsafe impl ::windows::core::Abi for PEER_NAME_PAIR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PEER_NAME_PAIR {
     fn eq(&self, other: &Self) -> bool {
@@ -3559,6 +3645,7 @@ impl ::core::default::Default for PEER_NODE_CHANGE_TYPE {
 }
 unsafe impl ::windows::core::Abi for PEER_NODE_CHANGE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PEER_NODE_CHANGE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3593,6 +3680,7 @@ impl ::core::fmt::Debug for PEER_NODE_INFO {
 #[cfg(feature = "Win32_Networking_WinSock")]
 unsafe impl ::windows::core::Abi for PEER_NODE_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Networking_WinSock")]
 impl ::core::cmp::PartialEq for PEER_NODE_INFO {
@@ -3628,6 +3716,7 @@ impl ::core::fmt::Debug for PEER_OBJECT {
 }
 unsafe impl ::windows::core::Abi for PEER_OBJECT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PEER_OBJECT {
     fn eq(&self, other: &Self) -> bool {
@@ -3659,6 +3748,7 @@ impl ::core::clone::Clone for PEER_PEOPLE_NEAR_ME {
 #[cfg(feature = "Win32_Networking_WinSock")]
 unsafe impl ::windows::core::Abi for PEER_PEOPLE_NEAR_ME {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Networking_WinSock")]
 impl ::core::cmp::PartialEq for PEER_PEOPLE_NEAR_ME {
@@ -3696,6 +3786,7 @@ impl ::core::fmt::Debug for PEER_PNRP_CLOUD_INFO {
 }
 unsafe impl ::windows::core::Abi for PEER_PNRP_CLOUD_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PEER_PNRP_CLOUD_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -3735,6 +3826,7 @@ impl ::core::fmt::Debug for PEER_PNRP_ENDPOINT_INFO {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 unsafe impl ::windows::core::Abi for PEER_PNRP_ENDPOINT_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 impl ::core::cmp::PartialEq for PEER_PNRP_ENDPOINT_INFO {
@@ -3779,6 +3871,7 @@ impl ::core::fmt::Debug for PEER_PNRP_REGISTRATION_INFO {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 unsafe impl ::windows::core::Abi for PEER_PNRP_REGISTRATION_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 impl ::core::cmp::PartialEq for PEER_PNRP_REGISTRATION_INFO {
@@ -3813,6 +3906,7 @@ impl ::core::fmt::Debug for PEER_PRESENCE_INFO {
 }
 unsafe impl ::windows::core::Abi for PEER_PRESENCE_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PEER_PRESENCE_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -3858,6 +3952,7 @@ impl ::core::default::Default for PEER_PRESENCE_STATUS {
 }
 unsafe impl ::windows::core::Abi for PEER_PRESENCE_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PEER_PRESENCE_STATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3889,6 +3984,7 @@ impl ::core::default::Default for PEER_PUBLICATION_SCOPE {
 }
 unsafe impl ::windows::core::Abi for PEER_PUBLICATION_SCOPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PEER_PUBLICATION_SCOPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3944,6 +4040,7 @@ impl ::core::fmt::Debug for PEER_RECORD {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PEER_RECORD {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for PEER_RECORD {
@@ -3984,6 +4081,7 @@ impl ::core::default::Default for PEER_RECORD_CHANGE_TYPE {
 }
 unsafe impl ::windows::core::Abi for PEER_RECORD_CHANGE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PEER_RECORD_CHANGE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4011,6 +4109,7 @@ impl ::core::default::Default for PEER_RECORD_FLAGS {
 }
 unsafe impl ::windows::core::Abi for PEER_RECORD_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PEER_RECORD_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4060,6 +4159,7 @@ impl ::core::fmt::Debug for PEER_SECURITY_INTERFACE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PEER_SECURITY_INTERFACE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for PEER_SECURITY_INTERFACE {
@@ -4100,6 +4200,7 @@ impl ::core::default::Default for PEER_SIGNIN_FLAGS {
 }
 unsafe impl ::windows::core::Abi for PEER_SIGNIN_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PEER_SIGNIN_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4125,6 +4226,7 @@ impl ::core::fmt::Debug for PEER_VERSION_DATA {
 }
 unsafe impl ::windows::core::Abi for PEER_VERSION_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PEER_VERSION_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -4158,6 +4260,7 @@ impl ::core::default::Default for PEER_WATCH_PERMISSION {
 }
 unsafe impl ::windows::core::Abi for PEER_WATCH_PERMISSION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PEER_WATCH_PERMISSION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4195,6 +4298,7 @@ impl ::core::fmt::Debug for PNRPCLOUDINFO {
 }
 unsafe impl ::windows::core::Abi for PNRPCLOUDINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PNRPCLOUDINFO {
     fn eq(&self, other: &Self) -> bool {
@@ -4240,6 +4344,7 @@ impl ::core::fmt::Debug for PNRPINFO_V1 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 unsafe impl ::windows::core::Abi for PNRPINFO_V1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 impl ::core::cmp::PartialEq for PNRPINFO_V1 {
@@ -4282,6 +4387,7 @@ impl ::core::clone::Clone for PNRPINFO_V2 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock", feature = "Win32_System_Com"))]
 unsafe impl ::windows::core::Abi for PNRPINFO_V2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock", feature = "Win32_System_Com"))]
 impl ::core::cmp::PartialEq for PNRPINFO_V2 {
@@ -4315,6 +4421,7 @@ impl ::core::clone::Clone for PNRPINFO_V2_0 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock", feature = "Win32_System_Com"))]
 unsafe impl ::windows::core::Abi for PNRPINFO_V2_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock", feature = "Win32_System_Com"))]
 impl ::core::cmp::PartialEq for PNRPINFO_V2_0 {
@@ -4355,6 +4462,7 @@ impl ::core::default::Default for PNRP_CLOUD_FLAGS {
 }
 unsafe impl ::windows::core::Abi for PNRP_CLOUD_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PNRP_CLOUD_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4381,6 +4489,7 @@ impl ::core::fmt::Debug for PNRP_CLOUD_ID {
 }
 unsafe impl ::windows::core::Abi for PNRP_CLOUD_ID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PNRP_CLOUD_ID {
     fn eq(&self, other: &Self) -> bool {
@@ -4424,6 +4533,7 @@ impl ::core::default::Default for PNRP_CLOUD_STATE {
 }
 unsafe impl ::windows::core::Abi for PNRP_CLOUD_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PNRP_CLOUD_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4453,6 +4563,7 @@ impl ::core::default::Default for PNRP_EXTENDED_PAYLOAD_TYPE {
 }
 unsafe impl ::windows::core::Abi for PNRP_EXTENDED_PAYLOAD_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PNRP_EXTENDED_PAYLOAD_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4484,6 +4595,7 @@ impl ::core::default::Default for PNRP_REGISTERED_ID_STATE {
 }
 unsafe impl ::windows::core::Abi for PNRP_REGISTERED_ID_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PNRP_REGISTERED_ID_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4521,6 +4633,7 @@ impl ::core::default::Default for PNRP_RESOLVE_CRITERIA {
 }
 unsafe impl ::windows::core::Abi for PNRP_RESOLVE_CRITERIA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PNRP_RESOLVE_CRITERIA {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4552,6 +4665,7 @@ impl ::core::default::Default for PNRP_SCOPE {
 }
 unsafe impl ::windows::core::Abi for PNRP_SCOPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PNRP_SCOPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

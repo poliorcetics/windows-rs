@@ -4,6 +4,12 @@
 #[repr(transparent)]
 pub struct INDClient(::windows::core::IUnknown);
 #[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for INDClient {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for INDClient {
     type Vtable = INDClient_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x3bd6781b_61b8_46e2_99a5_8abcb6b9f7d6);
@@ -75,6 +81,12 @@ pub struct INDClient_Vtbl {
 #[repr(transparent)]
 pub struct INDClientFactory(::windows::core::IUnknown);
 #[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for INDClientFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for INDClientFactory {
     type Vtable = INDClientFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x3e53dd62_fee8_451f_b0d4_f706cca3e037);
@@ -93,6 +105,12 @@ pub struct INDClientFactory_Vtbl {
 #[cfg(feature = "deprecated")]
 #[repr(transparent)]
 pub struct INDClosedCaptionDataReceivedEventArgs(::windows::core::IUnknown);
+#[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for INDClosedCaptionDataReceivedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "deprecated")]
 impl INDClosedCaptionDataReceivedEventArgs {
     #[doc = "*Required features: `\"Media_Protection_PlayReady\"`, `\"deprecated\"`*"]
@@ -172,12 +190,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for INDClosedCaptionDataReceivedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for INDClosedCaptionDataReceivedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -194,7 +206,6 @@ impl ::core::fmt::Debug for INDClosedCaptionDataReceivedEventArgs {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for INDClosedCaptionDataReceivedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{4738d29f-c345-4649-8468-b8c5fc357190}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -226,6 +237,12 @@ pub struct INDClosedCaptionDataReceivedEventArgs_Vtbl {
 #[cfg(feature = "deprecated")]
 #[repr(transparent)]
 pub struct INDCustomData(::windows::core::IUnknown);
+#[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for INDCustomData {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "deprecated")]
 impl INDCustomData {
     #[doc = "*Required features: `\"Media_Protection_PlayReady\"`, `\"deprecated\"`*"]
@@ -296,12 +313,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for INDCustomData {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for INDCustomData {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -318,7 +329,6 @@ impl ::core::fmt::Debug for INDCustomData {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for INDCustomData {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{f5cb0fdc-2d09-4f19-b5e1-76a0b3ee9267}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -347,6 +357,12 @@ pub struct INDCustomData_Vtbl {
 #[repr(transparent)]
 pub struct INDCustomDataFactory(::windows::core::IUnknown);
 #[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for INDCustomDataFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for INDCustomDataFactory {
     type Vtable = INDCustomDataFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd65405ab_3424_4833_8c9a_af5fdeb22872);
@@ -365,6 +381,12 @@ pub struct INDCustomDataFactory_Vtbl {
 #[cfg(feature = "deprecated")]
 #[repr(transparent)]
 pub struct INDDownloadEngine(::windows::core::IUnknown);
+#[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for INDDownloadEngine {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "deprecated")]
 impl INDDownloadEngine {
     #[doc = "*Required features: `\"Media_Protection_PlayReady\"`, `\"Foundation\"`, `\"deprecated\"`*"]
@@ -483,12 +505,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for INDDownloadEngine {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for INDDownloadEngine {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -505,7 +521,6 @@ impl ::core::fmt::Debug for INDDownloadEngine {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for INDDownloadEngine {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{2d223d65-c4b6-4438-8d46-b96e6d0fb21f}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -561,6 +576,12 @@ pub struct INDDownloadEngine_Vtbl {
 #[cfg(feature = "deprecated")]
 #[repr(transparent)]
 pub struct INDDownloadEngineNotifier(::windows::core::IUnknown);
+#[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for INDDownloadEngineNotifier {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "deprecated")]
 impl INDDownloadEngineNotifier {
     #[doc = "*Required features: `\"Media_Protection_PlayReady\"`, `\"deprecated\"`*"]
@@ -649,12 +670,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for INDDownloadEngineNotifier {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for INDDownloadEngineNotifier {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -671,7 +686,6 @@ impl ::core::fmt::Debug for INDDownloadEngineNotifier {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for INDDownloadEngineNotifier {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{d720b4d4-f4b8-4530-a809-9193a571e7fc}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -715,6 +729,12 @@ pub struct INDDownloadEngineNotifier_Vtbl {
 #[cfg(feature = "deprecated")]
 #[repr(transparent)]
 pub struct INDLicenseFetchCompletedEventArgs(::windows::core::IUnknown);
+#[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for INDLicenseFetchCompletedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "deprecated")]
 impl INDLicenseFetchCompletedEventArgs {
     #[doc = "*Required features: `\"Media_Protection_PlayReady\"`, `\"deprecated\"`*"]
@@ -776,12 +796,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for INDLicenseFetchCompletedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for INDLicenseFetchCompletedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -798,7 +812,6 @@ impl ::core::fmt::Debug for INDLicenseFetchCompletedEventArgs {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for INDLicenseFetchCompletedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{1ee30a1a-11b2-4558-8865-e3a516922517}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -822,6 +835,12 @@ pub struct INDLicenseFetchCompletedEventArgs_Vtbl {
 #[cfg(feature = "deprecated")]
 #[repr(transparent)]
 pub struct INDLicenseFetchDescriptor(::windows::core::IUnknown);
+#[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for INDLicenseFetchDescriptor {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "deprecated")]
 impl INDLicenseFetchDescriptor {
     #[doc = "*Required features: `\"Media_Protection_PlayReady\"`, `\"deprecated\"`*"]
@@ -907,12 +926,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for INDLicenseFetchDescriptor {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for INDLicenseFetchDescriptor {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -929,7 +942,6 @@ impl ::core::fmt::Debug for INDLicenseFetchDescriptor {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for INDLicenseFetchDescriptor {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{5498d33a-e686-4935-a567-7ca77ad20fa4}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -966,6 +978,12 @@ pub struct INDLicenseFetchDescriptor_Vtbl {
 #[repr(transparent)]
 pub struct INDLicenseFetchDescriptorFactory(::windows::core::IUnknown);
 #[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for INDLicenseFetchDescriptorFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for INDLicenseFetchDescriptorFactory {
     type Vtable = INDLicenseFetchDescriptorFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd0031202_cfac_4f00_ae6a_97af80b848f2);
@@ -984,6 +1002,12 @@ pub struct INDLicenseFetchDescriptorFactory_Vtbl {
 #[cfg(feature = "deprecated")]
 #[repr(transparent)]
 pub struct INDLicenseFetchResult(::windows::core::IUnknown);
+#[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for INDLicenseFetchResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "deprecated")]
 impl INDLicenseFetchResult {
     #[doc = "*Required features: `\"Media_Protection_PlayReady\"`, `\"deprecated\"`*"]
@@ -1045,12 +1069,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for INDLicenseFetchResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for INDLicenseFetchResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1067,7 +1085,6 @@ impl ::core::fmt::Debug for INDLicenseFetchResult {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for INDLicenseFetchResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{21d39698-aa62-45ff-a5ff-8037e5433825}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1091,6 +1108,12 @@ pub struct INDLicenseFetchResult_Vtbl {
 #[cfg(feature = "deprecated")]
 #[repr(transparent)]
 pub struct INDMessenger(::windows::core::IUnknown);
+#[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for INDMessenger {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "deprecated")]
 impl INDMessenger {
     #[doc = "*Required features: `\"Media_Protection_PlayReady\"`, `\"Foundation\"`, `\"deprecated\"`*"]
@@ -1179,12 +1202,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for INDMessenger {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for INDMessenger {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1201,7 +1218,6 @@ impl ::core::fmt::Debug for INDMessenger {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for INDMessenger {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{d42df95d-a75b-47bf-8249-bc83820da38a}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1237,6 +1253,12 @@ pub struct INDMessenger_Vtbl {
 #[cfg(feature = "deprecated")]
 #[repr(transparent)]
 pub struct INDProximityDetectionCompletedEventArgs(::windows::core::IUnknown);
+#[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for INDProximityDetectionCompletedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "deprecated")]
 impl INDProximityDetectionCompletedEventArgs {
     #[doc = "*Required features: `\"Media_Protection_PlayReady\"`, `\"deprecated\"`*"]
@@ -1298,12 +1320,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for INDProximityDetectionCompletedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for INDProximityDetectionCompletedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1320,7 +1336,6 @@ impl ::core::fmt::Debug for INDProximityDetectionCompletedEventArgs {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for INDProximityDetectionCompletedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{2a706328-da25-4f8c-9eb7-5d0fc3658bca}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1344,6 +1359,12 @@ pub struct INDProximityDetectionCompletedEventArgs_Vtbl {
 #[cfg(feature = "deprecated")]
 #[repr(transparent)]
 pub struct INDRegistrationCompletedEventArgs(::windows::core::IUnknown);
+#[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for INDRegistrationCompletedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "deprecated")]
 impl INDRegistrationCompletedEventArgs {
     #[doc = "*Required features: `\"Media_Protection_PlayReady\"`, `\"deprecated\"`*"]
@@ -1429,12 +1450,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for INDRegistrationCompletedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for INDRegistrationCompletedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1451,7 +1466,6 @@ impl ::core::fmt::Debug for INDRegistrationCompletedEventArgs {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for INDRegistrationCompletedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{9e39b64d-ab5b-4905-acdc-787a77c6374d}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1487,6 +1501,12 @@ pub struct INDRegistrationCompletedEventArgs_Vtbl {
 #[cfg(feature = "deprecated")]
 #[repr(transparent)]
 pub struct INDSendResult(::windows::core::IUnknown);
+#[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for INDSendResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "deprecated")]
 impl INDSendResult {
     #[doc = "*Required features: `\"Media_Protection_PlayReady\"`, `\"deprecated\"`*"]
@@ -1548,12 +1568,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for INDSendResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for INDSendResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1570,7 +1584,6 @@ impl ::core::fmt::Debug for INDSendResult {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for INDSendResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{e3685517-a584-479d-90b7-d689c7bf7c80}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1594,6 +1607,12 @@ pub struct INDSendResult_Vtbl {
 #[cfg(feature = "deprecated")]
 #[repr(transparent)]
 pub struct INDStartResult(::windows::core::IUnknown);
+#[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for INDStartResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "deprecated")]
 impl INDStartResult {
     #[doc = "*Required features: `\"Media_Protection_PlayReady\"`, `\"Media_Core\"`, `\"deprecated\"`*"]
@@ -1655,12 +1674,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for INDStartResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for INDStartResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1677,7 +1690,6 @@ impl ::core::fmt::Debug for INDStartResult {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for INDStartResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{79f6e96e-f50f-4015-8ba4-c2bc344ebd4e}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1701,6 +1713,12 @@ pub struct INDStartResult_Vtbl {
 #[cfg(feature = "deprecated")]
 #[repr(transparent)]
 pub struct INDStorageFileHelper(::windows::core::IUnknown);
+#[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for INDStorageFileHelper {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "deprecated")]
 impl INDStorageFileHelper {
     #[doc = "*Required features: `\"Media_Protection_PlayReady\"`, `\"Foundation_Collections\"`, `\"Storage\"`, `\"deprecated\"`*"]
@@ -1762,12 +1780,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for INDStorageFileHelper {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for INDStorageFileHelper {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1784,7 +1796,6 @@ impl ::core::fmt::Debug for INDStorageFileHelper {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for INDStorageFileHelper {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{d8f0bef8-91d2-4d47-a3f9-eaff4edb729f}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1808,6 +1819,12 @@ pub struct INDStorageFileHelper_Vtbl {
 #[cfg(feature = "deprecated")]
 #[repr(transparent)]
 pub struct INDStreamParser(::windows::core::IUnknown);
+#[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for INDStreamParser {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "deprecated")]
 impl INDStreamParser {
     #[doc = "*Required features: `\"Media_Protection_PlayReady\"`, `\"deprecated\"`*"]
@@ -1896,12 +1913,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for INDStreamParser {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for INDStreamParser {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1918,7 +1929,6 @@ impl ::core::fmt::Debug for INDStreamParser {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for INDStreamParser {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{e0baa198-9796-41c9-8695-59437e67e66a}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1958,6 +1968,12 @@ pub struct INDStreamParser_Vtbl {
 #[cfg(feature = "deprecated")]
 #[repr(transparent)]
 pub struct INDStreamParserNotifier(::windows::core::IUnknown);
+#[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for INDStreamParserNotifier {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "deprecated")]
 impl INDStreamParserNotifier {
     #[doc = "*Required features: `\"Media_Protection_PlayReady\"`, `\"deprecated\"`*"]
@@ -2034,12 +2050,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for INDStreamParserNotifier {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for INDStreamParserNotifier {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2056,7 +2066,6 @@ impl ::core::fmt::Debug for INDStreamParserNotifier {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for INDStreamParserNotifier {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{c167acd0-2ce6-426c-ace5-5e9275fea715}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2093,6 +2102,12 @@ pub struct INDStreamParserNotifier_Vtbl {
 #[repr(transparent)]
 pub struct INDTCPMessengerFactory(::windows::core::IUnknown);
 #[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for INDTCPMessengerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for INDTCPMessengerFactory {
     type Vtable = INDTCPMessengerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x7dd85cfe_1b99_4f68_8f82_8177f7cedf2b);
@@ -2111,6 +2126,12 @@ pub struct INDTCPMessengerFactory_Vtbl {
 #[cfg(feature = "deprecated")]
 #[repr(transparent)]
 pub struct INDTransmitterProperties(::windows::core::IUnknown);
+#[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for INDTransmitterProperties {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "deprecated")]
 impl INDTransmitterProperties {
     #[doc = "*Required features: `\"Media_Protection_PlayReady\"`, `\"deprecated\"`*"]
@@ -2262,12 +2283,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for INDTransmitterProperties {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for INDTransmitterProperties {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2284,7 +2299,6 @@ impl ::core::fmt::Debug for INDTransmitterProperties {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for INDTransmitterProperties {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{e536af23-ac4f-4adc-8c66-4ff7c2702dd6}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2347,6 +2361,11 @@ pub struct INDTransmitterProperties_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPlayReadyContentHeader(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPlayReadyContentHeader {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPlayReadyContentHeader {
     type Vtable = IPlayReadyContentHeader_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9a438a6a_7f4c_452e_88bd_0148c6387a2c);
@@ -2375,6 +2394,11 @@ pub struct IPlayReadyContentHeader_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPlayReadyContentHeader2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPlayReadyContentHeader2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPlayReadyContentHeader2 {
     type Vtable = IPlayReadyContentHeader2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x359c79f4_2180_498c_965b_e754d875eab2);
@@ -2389,6 +2413,11 @@ pub struct IPlayReadyContentHeader2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPlayReadyContentHeaderFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPlayReadyContentHeaderFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPlayReadyContentHeaderFactory {
     type Vtable = IPlayReadyContentHeaderFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xcb97c8ff_b758_4776_bf01_217a8b510b2c);
@@ -2410,6 +2439,11 @@ pub struct IPlayReadyContentHeaderFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPlayReadyContentHeaderFactory2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPlayReadyContentHeaderFactory2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPlayReadyContentHeaderFactory2 {
     type Vtable = IPlayReadyContentHeaderFactory2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd1239cf5_ae6d_4778_97fd_6e3a2eeadbeb);
@@ -2426,6 +2460,11 @@ pub struct IPlayReadyContentHeaderFactory2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPlayReadyContentResolver(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPlayReadyContentResolver {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPlayReadyContentResolver {
     type Vtable = IPlayReadyContentResolver_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xfbfd2523_906d_4982_a6b8_6849565a7ce8);
@@ -2439,6 +2478,11 @@ pub struct IPlayReadyContentResolver_Vtbl {
 #[doc = "*Required features: `\"Media_Protection_PlayReady\"`*"]
 #[repr(transparent)]
 pub struct IPlayReadyDomain(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPlayReadyDomain {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPlayReadyDomain {
     #[doc = "*Required features: `\"Media_Protection_PlayReady\"`*"]
     pub fn AccountId(&self) -> ::windows::core::Result<::windows::core::GUID> {
@@ -2522,11 +2566,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPlayReadyDomain {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPlayReadyDomain {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2540,7 +2579,6 @@ impl ::core::fmt::Debug for IPlayReadyDomain {
 }
 unsafe impl ::windows::core::RuntimeType for IPlayReadyDomain {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{adcc93ac-97e6-43ef-95e4-d7868f3b16a9}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2565,6 +2603,11 @@ pub struct IPlayReadyDomain_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPlayReadyDomainIterableFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPlayReadyDomainIterableFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPlayReadyDomainIterableFactory {
     type Vtable = IPlayReadyDomainIterableFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x4df384ee_3121_4df3_a5e8_d0c24c0500fc);
@@ -2581,6 +2624,11 @@ pub struct IPlayReadyDomainIterableFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPlayReadyDomainJoinServiceRequest(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPlayReadyDomainJoinServiceRequest {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPlayReadyDomainJoinServiceRequest {
     type Vtable = IPlayReadyDomainJoinServiceRequest_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x171b4a5a_405f_4739_b040_67b9f0c38758);
@@ -2599,6 +2647,11 @@ pub struct IPlayReadyDomainJoinServiceRequest_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPlayReadyDomainLeaveServiceRequest(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPlayReadyDomainLeaveServiceRequest {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPlayReadyDomainLeaveServiceRequest {
     type Vtable = IPlayReadyDomainLeaveServiceRequest_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x062d58be_97ad_4917_aa03_46d4c252d464);
@@ -2615,6 +2668,11 @@ pub struct IPlayReadyDomainLeaveServiceRequest_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPlayReadyITADataGenerator(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPlayReadyITADataGenerator {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPlayReadyITADataGenerator {
     type Vtable = IPlayReadyITADataGenerator_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x24446b8e_10b9_4530_b25b_901a8029a9b2);
@@ -2631,6 +2689,11 @@ pub struct IPlayReadyITADataGenerator_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPlayReadyIndividualizationServiceRequest(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPlayReadyIndividualizationServiceRequest {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPlayReadyIndividualizationServiceRequest {
     type Vtable = IPlayReadyIndividualizationServiceRequest_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x21f5a86b_008c_4611_ab2f_aaa6c69f0e24);
@@ -2643,6 +2706,11 @@ pub struct IPlayReadyIndividualizationServiceRequest_Vtbl {
 #[doc = "*Required features: `\"Media_Protection_PlayReady\"`*"]
 #[repr(transparent)]
 pub struct IPlayReadyLicense(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPlayReadyLicense {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPlayReadyLicense {
     #[doc = "*Required features: `\"Media_Protection_PlayReady\"`*"]
     pub fn FullyEvaluated(&self) -> ::windows::core::Result<bool> {
@@ -2742,11 +2810,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPlayReadyLicense {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPlayReadyLicense {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2760,7 +2823,6 @@ impl ::core::fmt::Debug for IPlayReadyLicense {
 }
 unsafe impl ::windows::core::RuntimeType for IPlayReadyLicense {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{ee474c4e-fa3c-414d-a9f2-3ffc1ef832d4}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2787,6 +2849,11 @@ pub struct IPlayReadyLicense_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPlayReadyLicense2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPlayReadyLicense2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPlayReadyLicense2 {
     type Vtable = IPlayReadyLicense2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x30f4e7a7_d8e3_48a0_bcda_ff9f40530436);
@@ -2803,6 +2870,11 @@ pub struct IPlayReadyLicense2_Vtbl {
 #[doc = "*Required features: `\"Media_Protection_PlayReady\"`*"]
 #[repr(transparent)]
 pub struct IPlayReadyLicenseAcquisitionServiceRequest(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPlayReadyLicenseAcquisitionServiceRequest {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPlayReadyLicenseAcquisitionServiceRequest {
     #[doc = "*Required features: `\"Media_Protection_PlayReady\"`*"]
     pub fn ContentHeader(&self) -> ::windows::core::Result<PlayReadyContentHeader> {
@@ -3000,11 +3072,6 @@ impl<'a> ::windows::core::IntoParam<'a, IPlayReadyServiceRequest> for &IPlayRead
         ::core::convert::TryInto::<IPlayReadyServiceRequest>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IPlayReadyLicenseAcquisitionServiceRequest {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPlayReadyLicenseAcquisitionServiceRequest {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3018,7 +3085,6 @@ impl ::core::fmt::Debug for IPlayReadyLicenseAcquisitionServiceRequest {
 }
 unsafe impl ::windows::core::RuntimeType for IPlayReadyLicenseAcquisitionServiceRequest {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{5d85ff45-3e9f-4f48-93e1-9530c8d58c3e}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3039,6 +3105,11 @@ pub struct IPlayReadyLicenseAcquisitionServiceRequest_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPlayReadyLicenseAcquisitionServiceRequest2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPlayReadyLicenseAcquisitionServiceRequest2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPlayReadyLicenseAcquisitionServiceRequest2 {
     type Vtable = IPlayReadyLicenseAcquisitionServiceRequest2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb7fa5eb5_fe0c_b225_bc60_5a9edd32ceb5);
@@ -3052,6 +3123,11 @@ pub struct IPlayReadyLicenseAcquisitionServiceRequest2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPlayReadyLicenseAcquisitionServiceRequest3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPlayReadyLicenseAcquisitionServiceRequest3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPlayReadyLicenseAcquisitionServiceRequest3 {
     type Vtable = IPlayReadyLicenseAcquisitionServiceRequest3_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x394e5f4d_7f75_430d_b2e7_7f75f34b2d75);
@@ -3068,6 +3144,11 @@ pub struct IPlayReadyLicenseAcquisitionServiceRequest3_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPlayReadyLicenseIterableFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPlayReadyLicenseIterableFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPlayReadyLicenseIterableFactory {
     type Vtable = IPlayReadyLicenseIterableFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd4179f08_0837_4978_8e68_be4293c8d7a6);
@@ -3084,6 +3165,11 @@ pub struct IPlayReadyLicenseIterableFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPlayReadyLicenseManagement(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPlayReadyLicenseManagement {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPlayReadyLicenseManagement {
     type Vtable = IPlayReadyLicenseManagement_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xaaeb2141_0957_4405_b892_8bf3ec5dadd9);
@@ -3100,6 +3186,11 @@ pub struct IPlayReadyLicenseManagement_Vtbl {
 #[doc = "*Required features: `\"Media_Protection_PlayReady\"`*"]
 #[repr(transparent)]
 pub struct IPlayReadyLicenseSession(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPlayReadyLicenseSession {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPlayReadyLicenseSession {
     #[doc = "*Required features: `\"Media_Protection_PlayReady\"`*"]
     pub fn CreateLAServiceRequest(&self) -> ::windows::core::Result<IPlayReadyLicenseAcquisitionServiceRequest> {
@@ -3155,11 +3246,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPlayReadyLicenseSession {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPlayReadyLicenseSession {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3173,7 +3259,6 @@ impl ::core::fmt::Debug for IPlayReadyLicenseSession {
 }
 unsafe impl ::windows::core::RuntimeType for IPlayReadyLicenseSession {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{a1723a39-87fa-4fdd-abbb-a9720e845259}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3192,6 +3277,11 @@ pub struct IPlayReadyLicenseSession_Vtbl {
 #[doc = "*Required features: `\"Media_Protection_PlayReady\"`*"]
 #[repr(transparent)]
 pub struct IPlayReadyLicenseSession2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPlayReadyLicenseSession2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPlayReadyLicenseSession2 {
     #[doc = "*Required features: `\"Media_Protection_PlayReady\"`, `\"Foundation_Collections\"`*"]
     #[cfg(feature = "Foundation_Collections")]
@@ -3278,11 +3368,6 @@ impl<'a> ::windows::core::IntoParam<'a, IPlayReadyLicenseSession> for &IPlayRead
         ::core::convert::TryInto::<IPlayReadyLicenseSession>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IPlayReadyLicenseSession2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPlayReadyLicenseSession2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3296,7 +3381,6 @@ impl ::core::fmt::Debug for IPlayReadyLicenseSession2 {
 }
 unsafe impl ::windows::core::RuntimeType for IPlayReadyLicenseSession2 {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{4909be3a-3aed-4656-8ad7-ee0fd7799510}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3317,6 +3401,11 @@ pub struct IPlayReadyLicenseSession2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPlayReadyLicenseSessionFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPlayReadyLicenseSessionFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPlayReadyLicenseSessionFactory {
     type Vtable = IPlayReadyLicenseSessionFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x62492699_6527_429e_98be_48d798ac2739);
@@ -3333,6 +3422,11 @@ pub struct IPlayReadyLicenseSessionFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPlayReadyMeteringReportServiceRequest(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPlayReadyMeteringReportServiceRequest {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPlayReadyMeteringReportServiceRequest {
     type Vtable = IPlayReadyMeteringReportServiceRequest_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc12b231c_0ecd_4f11_a185_1e24a4a67fb7);
@@ -3347,6 +3441,11 @@ pub struct IPlayReadyMeteringReportServiceRequest_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPlayReadyRevocationServiceRequest(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPlayReadyRevocationServiceRequest {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPlayReadyRevocationServiceRequest {
     type Vtable = IPlayReadyRevocationServiceRequest_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x543d66ac_faf0_4560_84a5_0e4acec939e4);
@@ -3359,6 +3458,11 @@ pub struct IPlayReadyRevocationServiceRequest_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPlayReadySecureStopIterableFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPlayReadySecureStopIterableFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPlayReadySecureStopIterableFactory {
     type Vtable = IPlayReadySecureStopIterableFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x5f1f0165_4214_4d9e_81eb_e89f9d294aee);
@@ -3375,6 +3479,11 @@ pub struct IPlayReadySecureStopIterableFactory_Vtbl {
 #[doc = "*Required features: `\"Media_Protection_PlayReady\"`*"]
 #[repr(transparent)]
 pub struct IPlayReadySecureStopServiceRequest(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPlayReadySecureStopServiceRequest {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPlayReadySecureStopServiceRequest {
     #[doc = "*Required features: `\"Media_Protection_PlayReady\"`*"]
     pub fn SessionID(&self) -> ::windows::core::Result<::windows::core::GUID> {
@@ -3588,11 +3697,6 @@ impl<'a> ::windows::core::IntoParam<'a, IPlayReadyServiceRequest> for &IPlayRead
         ::core::convert::TryInto::<IPlayReadyServiceRequest>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IPlayReadySecureStopServiceRequest {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPlayReadySecureStopServiceRequest {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3606,7 +3710,6 @@ impl ::core::fmt::Debug for IPlayReadySecureStopServiceRequest {
 }
 unsafe impl ::windows::core::RuntimeType for IPlayReadySecureStopServiceRequest {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{b5501ee5-01bf-4401-9677-05630a6a4cc8}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3634,6 +3737,11 @@ pub struct IPlayReadySecureStopServiceRequest_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPlayReadySecureStopServiceRequestFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPlayReadySecureStopServiceRequestFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPlayReadySecureStopServiceRequestFactory {
     type Vtable = IPlayReadySecureStopServiceRequestFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x0e448ac9_e67e_494e_9f49_6285438c76cf);
@@ -3648,6 +3756,11 @@ pub struct IPlayReadySecureStopServiceRequestFactory_Vtbl {
 #[doc = "*Required features: `\"Media_Protection_PlayReady\"`*"]
 #[repr(transparent)]
 pub struct IPlayReadyServiceRequest(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPlayReadyServiceRequest {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPlayReadyServiceRequest {
     #[doc = "*Required features: `\"Media_Protection_PlayReady\"`, `\"Foundation\"`*"]
     #[cfg(feature = "Foundation")]
@@ -3797,11 +3910,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::IMediaProtectionServiceRequest> f
         ::core::convert::TryInto::<super::IMediaProtectionServiceRequest>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IPlayReadyServiceRequest {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPlayReadyServiceRequest {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3815,7 +3923,6 @@ impl ::core::fmt::Debug for IPlayReadyServiceRequest {
 }
 unsafe impl ::windows::core::RuntimeType for IPlayReadyServiceRequest {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{8bad2836-a703-45a6-a180-76f3565aa725}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3850,6 +3957,11 @@ pub struct IPlayReadyServiceRequest_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPlayReadySoapMessage(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPlayReadySoapMessage {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPlayReadySoapMessage {
     type Vtable = IPlayReadySoapMessage_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb659fcb5_ce41_41ba_8a0d_61df5fffa139);
@@ -3871,6 +3983,11 @@ pub struct IPlayReadySoapMessage_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPlayReadyStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPlayReadyStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPlayReadyStatics {
     type Vtable = IPlayReadyStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x5e69c00d_247c_469a_8f31_5c1a1571d9c6);
@@ -3891,6 +4008,11 @@ pub struct IPlayReadyStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPlayReadyStatics2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPlayReadyStatics2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPlayReadyStatics2 {
     type Vtable = IPlayReadyStatics2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1f8d6a92_5f9a_423e_9466_b33969af7a3d);
@@ -3904,6 +4026,11 @@ pub struct IPlayReadyStatics2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPlayReadyStatics3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPlayReadyStatics3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPlayReadyStatics3 {
     type Vtable = IPlayReadyStatics3_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x3fa33f71_2dd3_4bed_ae49_f7148e63e710);
@@ -3918,6 +4045,11 @@ pub struct IPlayReadyStatics3_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPlayReadyStatics4(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPlayReadyStatics4 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPlayReadyStatics4 {
     type Vtable = IPlayReadyStatics4_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x50a91300_d824_4231_9d5e_78ef8844c7d7);
@@ -3932,6 +4064,11 @@ pub struct IPlayReadyStatics4_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPlayReadyStatics5(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPlayReadyStatics5 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPlayReadyStatics5 {
     type Vtable = IPlayReadyStatics5_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x230a7075_dfa0_4f8e_a779_cefea9c6824b);
@@ -3982,6 +4119,7 @@ impl ::core::default::Default for NDCertificateFeature {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Abi for NDCertificateFeature {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "deprecated")]
 impl ::core::fmt::Debug for NDCertificateFeature {
@@ -3992,7 +4130,6 @@ impl ::core::fmt::Debug for NDCertificateFeature {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for NDCertificateFeature {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Media.Protection.PlayReady.NDCertificateFeature;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -4034,6 +4171,7 @@ impl ::core::default::Default for NDCertificatePlatformID {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Abi for NDCertificatePlatformID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "deprecated")]
 impl ::core::fmt::Debug for NDCertificatePlatformID {
@@ -4044,7 +4182,6 @@ impl ::core::fmt::Debug for NDCertificatePlatformID {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for NDCertificatePlatformID {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Media.Protection.PlayReady.NDCertificatePlatformID;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -4087,6 +4224,7 @@ impl ::core::default::Default for NDCertificateType {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Abi for NDCertificateType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "deprecated")]
 impl ::core::fmt::Debug for NDCertificateType {
@@ -4097,7 +4235,6 @@ impl ::core::fmt::Debug for NDCertificateType {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for NDCertificateType {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Media.Protection.PlayReady.NDCertificateType;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -4232,12 +4369,6 @@ impl NDClient {
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for NDClient {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for NDClient {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4254,7 +4385,6 @@ impl ::core::fmt::Debug for NDClient {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for NDClient {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.Protection.PlayReady.NDClient;{3bd6781b-61b8-46e2-99a5-8abcb6b9f7d6})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4344,6 +4474,7 @@ impl ::core::default::Default for NDClosedCaptionFormat {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Abi for NDClosedCaptionFormat {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "deprecated")]
 impl ::core::fmt::Debug for NDClosedCaptionFormat {
@@ -4354,7 +4485,6 @@ impl ::core::fmt::Debug for NDClosedCaptionFormat {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for NDClosedCaptionFormat {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Media.Protection.PlayReady.NDClosedCaptionFormat;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -4387,6 +4517,7 @@ impl ::core::default::Default for NDContentIDType {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Abi for NDContentIDType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "deprecated")]
 impl ::core::fmt::Debug for NDContentIDType {
@@ -4397,7 +4528,6 @@ impl ::core::fmt::Debug for NDContentIDType {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for NDContentIDType {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Media.Protection.PlayReady.NDContentIDType;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -4442,12 +4572,6 @@ impl NDCustomData {
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for NDCustomData {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for NDCustomData {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4464,7 +4588,6 @@ impl ::core::fmt::Debug for NDCustomData {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for NDCustomData {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.Protection.PlayReady.NDCustomData;{f5cb0fdc-2d09-4f19-b5e1-76a0b3ee9267})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4603,12 +4726,6 @@ impl NDDownloadEngineNotifier {
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for NDDownloadEngineNotifier {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for NDDownloadEngineNotifier {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4625,7 +4742,6 @@ impl ::core::fmt::Debug for NDDownloadEngineNotifier {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for NDDownloadEngineNotifier {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.Protection.PlayReady.NDDownloadEngineNotifier;{d720b4d4-f4b8-4530-a809-9193a571e7fc})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4768,12 +4884,6 @@ impl NDLicenseFetchDescriptor {
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for NDLicenseFetchDescriptor {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for NDLicenseFetchDescriptor {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4790,7 +4900,6 @@ impl ::core::fmt::Debug for NDLicenseFetchDescriptor {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for NDLicenseFetchDescriptor {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.Protection.PlayReady.NDLicenseFetchDescriptor;{5498d33a-e686-4935-a567-7ca77ad20fa4})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4905,6 +5014,7 @@ impl ::core::default::Default for NDMediaStreamType {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Abi for NDMediaStreamType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "deprecated")]
 impl ::core::fmt::Debug for NDMediaStreamType {
@@ -4915,7 +5025,6 @@ impl ::core::fmt::Debug for NDMediaStreamType {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for NDMediaStreamType {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Media.Protection.PlayReady.NDMediaStreamType;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -4948,6 +5057,7 @@ impl ::core::default::Default for NDProximityDetectionType {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Abi for NDProximityDetectionType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "deprecated")]
 impl ::core::fmt::Debug for NDProximityDetectionType {
@@ -4958,7 +5068,6 @@ impl ::core::fmt::Debug for NDProximityDetectionType {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for NDProximityDetectionType {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Media.Protection.PlayReady.NDProximityDetectionType;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -4990,6 +5099,7 @@ impl ::core::default::Default for NDStartAsyncOptions {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Abi for NDStartAsyncOptions {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "deprecated")]
 impl ::core::fmt::Debug for NDStartAsyncOptions {
@@ -5000,7 +5110,6 @@ impl ::core::fmt::Debug for NDStartAsyncOptions {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for NDStartAsyncOptions {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Media.Protection.PlayReady.NDStartAsyncOptions;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -5029,12 +5138,6 @@ impl NDStorageFileHelper {
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for NDStorageFileHelper {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for NDStorageFileHelper {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5051,7 +5154,6 @@ impl ::core::fmt::Debug for NDStorageFileHelper {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for NDStorageFileHelper {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.Protection.PlayReady.NDStorageFileHelper;{d8f0bef8-91d2-4d47-a3f9-eaff4edb729f})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -5178,12 +5280,6 @@ impl NDStreamParserNotifier {
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for NDStreamParserNotifier {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for NDStreamParserNotifier {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5200,7 +5296,6 @@ impl ::core::fmt::Debug for NDStreamParserNotifier {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for NDStreamParserNotifier {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.Protection.PlayReady.NDStreamParserNotifier;{c167acd0-2ce6-426c-ace5-5e9275fea715})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -5346,12 +5441,6 @@ impl NDTCPMessenger {
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for NDTCPMessenger {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for NDTCPMessenger {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5368,7 +5457,6 @@ impl ::core::fmt::Debug for NDTCPMessenger {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for NDTCPMessenger {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.Protection.PlayReady.NDTCPMessenger;{d42df95d-a75b-47bf-8249-bc83820da38a})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -5600,11 +5688,6 @@ impl PlayReadyContentHeader {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for PlayReadyContentHeader {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PlayReadyContentHeader {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5618,7 +5701,6 @@ impl ::core::fmt::Debug for PlayReadyContentHeader {
 }
 unsafe impl ::windows::core::RuntimeType for PlayReadyContentHeader {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.Protection.PlayReady.PlayReadyContentHeader;{9a438a6a-7f4c-452e-88bd-0148c6387a2c})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -5710,6 +5792,7 @@ impl ::core::default::Default for PlayReadyDecryptorSetup {
 }
 unsafe impl ::windows::core::Abi for PlayReadyDecryptorSetup {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PlayReadyDecryptorSetup {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5718,7 +5801,6 @@ impl ::core::fmt::Debug for PlayReadyDecryptorSetup {
 }
 unsafe impl ::windows::core::RuntimeType for PlayReadyDecryptorSetup {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Media.Protection.PlayReady.PlayReadyDecryptorSetup;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -5769,11 +5851,6 @@ impl PlayReadyDomain {
         }
     }
 }
-impl ::core::clone::Clone for PlayReadyDomain {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PlayReadyDomain {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5787,7 +5864,6 @@ impl ::core::fmt::Debug for PlayReadyDomain {
 }
 unsafe impl ::windows::core::RuntimeType for PlayReadyDomain {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.Protection.PlayReady.PlayReadyDomain;{adcc93ac-97e6-43ef-95e4-d7868f3b16a9})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -5891,12 +5967,6 @@ impl PlayReadyDomainIterable {
     }
 }
 #[cfg(feature = "Foundation_Collections")]
-impl ::core::clone::Clone for PlayReadyDomainIterable {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Foundation_Collections")]
 impl ::core::cmp::PartialEq for PlayReadyDomainIterable {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5913,7 +5983,6 @@ impl ::core::fmt::Debug for PlayReadyDomainIterable {
 #[cfg(feature = "Foundation_Collections")]
 unsafe impl ::windows::core::RuntimeType for PlayReadyDomainIterable {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.Protection.PlayReady.PlayReadyDomainIterable;pinterface({faa585ea-6214-4217-afda-7f46de5869b3};{adcc93ac-97e6-43ef-95e4-d7868f3b16a9}))");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -6061,12 +6130,6 @@ impl PlayReadyDomainIterator {
     }
 }
 #[cfg(feature = "Foundation_Collections")]
-impl ::core::clone::Clone for PlayReadyDomainIterator {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Foundation_Collections")]
 impl ::core::cmp::PartialEq for PlayReadyDomainIterator {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6083,7 +6146,6 @@ impl ::core::fmt::Debug for PlayReadyDomainIterator {
 #[cfg(feature = "Foundation_Collections")]
 unsafe impl ::windows::core::RuntimeType for PlayReadyDomainIterator {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.Protection.PlayReady.PlayReadyDomainIterator;pinterface({6a79e863-4300-459a-9966-cbb660963ee1};{adcc93ac-97e6-43ef-95e4-d7868f3b16a9}))");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -6307,11 +6369,6 @@ impl PlayReadyDomainJoinServiceRequest {
         }
     }
 }
-impl ::core::clone::Clone for PlayReadyDomainJoinServiceRequest {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PlayReadyDomainJoinServiceRequest {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6325,7 +6382,6 @@ impl ::core::fmt::Debug for PlayReadyDomainJoinServiceRequest {
 }
 unsafe impl ::windows::core::RuntimeType for PlayReadyDomainJoinServiceRequest {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.Protection.PlayReady.PlayReadyDomainJoinServiceRequest;{171b4a5a-405f-4739-b040-67b9f0c38758})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -6544,11 +6600,6 @@ impl PlayReadyDomainLeaveServiceRequest {
         }
     }
 }
-impl ::core::clone::Clone for PlayReadyDomainLeaveServiceRequest {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PlayReadyDomainLeaveServiceRequest {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6562,7 +6613,6 @@ impl ::core::fmt::Debug for PlayReadyDomainLeaveServiceRequest {
 }
 unsafe impl ::windows::core::RuntimeType for PlayReadyDomainLeaveServiceRequest {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.Protection.PlayReady.PlayReadyDomainLeaveServiceRequest;{062d58be-97ad-4917-aa03-46d4c252d464})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -6683,6 +6733,7 @@ impl ::core::default::Default for PlayReadyEncryptionAlgorithm {
 }
 unsafe impl ::windows::core::Abi for PlayReadyEncryptionAlgorithm {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PlayReadyEncryptionAlgorithm {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6691,7 +6742,6 @@ impl ::core::fmt::Debug for PlayReadyEncryptionAlgorithm {
 }
 unsafe impl ::windows::core::RuntimeType for PlayReadyEncryptionAlgorithm {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Media.Protection.PlayReady.PlayReadyEncryptionAlgorithm;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -6718,6 +6768,7 @@ impl ::core::default::Default for PlayReadyHardwareDRMFeatures {
 }
 unsafe impl ::windows::core::Abi for PlayReadyHardwareDRMFeatures {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PlayReadyHardwareDRMFeatures {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6726,7 +6777,6 @@ impl ::core::fmt::Debug for PlayReadyHardwareDRMFeatures {
 }
 unsafe impl ::windows::core::RuntimeType for PlayReadyHardwareDRMFeatures {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Media.Protection.PlayReady.PlayReadyHardwareDRMFeatures;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -6752,6 +6802,7 @@ impl ::core::default::Default for PlayReadyITADataFormat {
 }
 unsafe impl ::windows::core::Abi for PlayReadyITADataFormat {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PlayReadyITADataFormat {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6760,7 +6811,6 @@ impl ::core::fmt::Debug for PlayReadyITADataFormat {
 }
 unsafe impl ::windows::core::RuntimeType for PlayReadyITADataFormat {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Media.Protection.PlayReady.PlayReadyITADataFormat;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -6786,11 +6836,6 @@ impl PlayReadyITADataGenerator {
         }
     }
 }
-impl ::core::clone::Clone for PlayReadyITADataGenerator {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PlayReadyITADataGenerator {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6804,7 +6849,6 @@ impl ::core::fmt::Debug for PlayReadyITADataGenerator {
 }
 unsafe impl ::windows::core::RuntimeType for PlayReadyITADataGenerator {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.Protection.PlayReady.PlayReadyITADataGenerator;{24446b8e-10b9-4530-b25b-901a8029a9b2})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -6953,11 +6997,6 @@ impl PlayReadyIndividualizationServiceRequest {
         }
     }
 }
-impl ::core::clone::Clone for PlayReadyIndividualizationServiceRequest {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PlayReadyIndividualizationServiceRequest {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6971,7 +7010,6 @@ impl ::core::fmt::Debug for PlayReadyIndividualizationServiceRequest {
 }
 unsafe impl ::windows::core::RuntimeType for PlayReadyIndividualizationServiceRequest {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.Protection.PlayReady.PlayReadyIndividualizationServiceRequest;{21f5a86b-008c-4611-ab2f-aaa6c69f0e24})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -7161,11 +7199,6 @@ impl PlayReadyLicense {
         }
     }
 }
-impl ::core::clone::Clone for PlayReadyLicense {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PlayReadyLicense {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7179,7 +7212,6 @@ impl ::core::fmt::Debug for PlayReadyLicense {
 }
 unsafe impl ::windows::core::RuntimeType for PlayReadyLicense {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.Protection.PlayReady.PlayReadyLicense;{ee474c4e-fa3c-414d-a9f2-3ffc1ef832d4})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -7393,11 +7425,6 @@ impl PlayReadyLicenseAcquisitionServiceRequest {
         }
     }
 }
-impl ::core::clone::Clone for PlayReadyLicenseAcquisitionServiceRequest {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PlayReadyLicenseAcquisitionServiceRequest {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7411,7 +7438,6 @@ impl ::core::fmt::Debug for PlayReadyLicenseAcquisitionServiceRequest {
 }
 unsafe impl ::windows::core::RuntimeType for PlayReadyLicenseAcquisitionServiceRequest {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.Protection.PlayReady.PlayReadyLicenseAcquisitionServiceRequest;{5d85ff45-3e9f-4f48-93e1-9530c8d58c3e})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -7566,12 +7592,6 @@ impl PlayReadyLicenseIterable {
     }
 }
 #[cfg(feature = "Foundation_Collections")]
-impl ::core::clone::Clone for PlayReadyLicenseIterable {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Foundation_Collections")]
 impl ::core::cmp::PartialEq for PlayReadyLicenseIterable {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7588,7 +7608,6 @@ impl ::core::fmt::Debug for PlayReadyLicenseIterable {
 #[cfg(feature = "Foundation_Collections")]
 unsafe impl ::windows::core::RuntimeType for PlayReadyLicenseIterable {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.Protection.PlayReady.PlayReadyLicenseIterable;pinterface({faa585ea-6214-4217-afda-7f46de5869b3};{ee474c4e-fa3c-414d-a9f2-3ffc1ef832d4}))");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -7736,12 +7755,6 @@ impl PlayReadyLicenseIterator {
     }
 }
 #[cfg(feature = "Foundation_Collections")]
-impl ::core::clone::Clone for PlayReadyLicenseIterator {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Foundation_Collections")]
 impl ::core::cmp::PartialEq for PlayReadyLicenseIterator {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7758,7 +7771,6 @@ impl ::core::fmt::Debug for PlayReadyLicenseIterator {
 #[cfg(feature = "Foundation_Collections")]
 unsafe impl ::windows::core::RuntimeType for PlayReadyLicenseIterator {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.Protection.PlayReady.PlayReadyLicenseIterator;pinterface({6a79e863-4300-459a-9966-cbb660963ee1};{ee474c4e-fa3c-414d-a9f2-3ffc1ef832d4}))");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -7906,11 +7918,6 @@ impl PlayReadyLicenseSession {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for PlayReadyLicenseSession {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PlayReadyLicenseSession {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7924,7 +7931,6 @@ impl ::core::fmt::Debug for PlayReadyLicenseSession {
 }
 unsafe impl ::windows::core::RuntimeType for PlayReadyLicenseSession {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.Protection.PlayReady.PlayReadyLicenseSession;{a1723a39-87fa-4fdd-abbb-a9720e845259})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -8130,11 +8136,6 @@ impl PlayReadyMeteringReportServiceRequest {
         }
     }
 }
-impl ::core::clone::Clone for PlayReadyMeteringReportServiceRequest {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PlayReadyMeteringReportServiceRequest {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8148,7 +8149,6 @@ impl ::core::fmt::Debug for PlayReadyMeteringReportServiceRequest {
 }
 unsafe impl ::windows::core::RuntimeType for PlayReadyMeteringReportServiceRequest {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.Protection.PlayReady.PlayReadyMeteringReportServiceRequest;{c12b231c-0ecd-4f11-a185-1e24a4a67fb7})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -8341,11 +8341,6 @@ impl PlayReadyRevocationServiceRequest {
         }
     }
 }
-impl ::core::clone::Clone for PlayReadyRevocationServiceRequest {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PlayReadyRevocationServiceRequest {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8359,7 +8354,6 @@ impl ::core::fmt::Debug for PlayReadyRevocationServiceRequest {
 }
 unsafe impl ::windows::core::RuntimeType for PlayReadyRevocationServiceRequest {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.Protection.PlayReady.PlayReadyRevocationServiceRequest;{543d66ac-faf0-4560-84a5-0e4acec939e4})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -8485,12 +8479,6 @@ impl PlayReadySecureStopIterable {
     }
 }
 #[cfg(feature = "Foundation_Collections")]
-impl ::core::clone::Clone for PlayReadySecureStopIterable {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Foundation_Collections")]
 impl ::core::cmp::PartialEq for PlayReadySecureStopIterable {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8507,7 +8495,6 @@ impl ::core::fmt::Debug for PlayReadySecureStopIterable {
 #[cfg(feature = "Foundation_Collections")]
 unsafe impl ::windows::core::RuntimeType for PlayReadySecureStopIterable {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.Protection.PlayReady.PlayReadySecureStopIterable;pinterface({faa585ea-6214-4217-afda-7f46de5869b3};{b5501ee5-01bf-4401-9677-05630a6a4cc8}))");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -8655,12 +8642,6 @@ impl PlayReadySecureStopIterator {
     }
 }
 #[cfg(feature = "Foundation_Collections")]
-impl ::core::clone::Clone for PlayReadySecureStopIterator {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Foundation_Collections")]
 impl ::core::cmp::PartialEq for PlayReadySecureStopIterator {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8677,7 +8658,6 @@ impl ::core::fmt::Debug for PlayReadySecureStopIterator {
 #[cfg(feature = "Foundation_Collections")]
 unsafe impl ::windows::core::RuntimeType for PlayReadySecureStopIterator {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.Protection.PlayReady.PlayReadySecureStopIterator;pinterface({6a79e863-4300-459a-9966-cbb660963ee1};{b5501ee5-01bf-4401-9677-05630a6a4cc8}))");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -8916,11 +8896,6 @@ impl PlayReadySecureStopServiceRequest {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for PlayReadySecureStopServiceRequest {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PlayReadySecureStopServiceRequest {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8934,7 +8909,6 @@ impl ::core::fmt::Debug for PlayReadySecureStopServiceRequest {
 }
 unsafe impl ::windows::core::RuntimeType for PlayReadySecureStopServiceRequest {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.Protection.PlayReady.PlayReadySecureStopServiceRequest;{b5501ee5-01bf-4401-9677-05630a6a4cc8})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -9083,11 +9057,6 @@ impl PlayReadySoapMessage {
         }
     }
 }
-impl ::core::clone::Clone for PlayReadySoapMessage {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PlayReadySoapMessage {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9101,7 +9070,6 @@ impl ::core::fmt::Debug for PlayReadySoapMessage {
 }
 unsafe impl ::windows::core::RuntimeType for PlayReadySoapMessage {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.Protection.PlayReady.PlayReadySoapMessage;{b659fcb5-ce41-41ba-8a0d-61df5fffa139})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

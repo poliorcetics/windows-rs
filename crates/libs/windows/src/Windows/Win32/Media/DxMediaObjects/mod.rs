@@ -99,6 +99,7 @@ impl ::core::default::Default for DMO_ENUM_FLAGS {
 }
 unsafe impl ::windows::core::Abi for DMO_ENUM_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DMO_ENUM_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -156,6 +157,7 @@ impl ::core::fmt::Debug for DMO_MEDIA_TYPE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DMO_MEDIA_TYPE {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DMO_MEDIA_TYPE {
@@ -191,6 +193,7 @@ impl ::core::fmt::Debug for DMO_OUTPUT_DATA_BUFFER {
 }
 unsafe impl ::windows::core::Abi for DMO_OUTPUT_DATA_BUFFER {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DMO_OUTPUT_DATA_BUFFER {
     fn eq(&self, other: &Self) -> bool {
@@ -222,6 +225,7 @@ impl ::core::fmt::Debug for DMO_PARTIAL_MEDIATYPE {
 }
 unsafe impl ::windows::core::Abi for DMO_PARTIAL_MEDIATYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DMO_PARTIAL_MEDIATYPE {
     fn eq(&self, other: &Self) -> bool {
@@ -253,6 +257,7 @@ impl ::core::default::Default for DMO_REGISTER_FLAGS {
 }
 unsafe impl ::windows::core::Abi for DMO_REGISTER_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DMO_REGISTER_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -262,6 +267,11 @@ impl ::core::fmt::Debug for DMO_REGISTER_FLAGS {
 #[doc = "*Required features: `\"Win32_Media_DxMediaObjects\"`*"]
 #[repr(transparent)]
 pub struct IDMOQualityControl(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDMOQualityControl {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDMOQualityControl {
     #[doc = "*Required features: `\"Win32_Media_DxMediaObjects\"`*"]
     pub unsafe fn SetNow(&self, rtnow: i64) -> ::windows::core::Result<()> {
@@ -297,11 +307,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDMOQ
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDMOQualityControl {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDMOQualityControl {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -328,6 +333,11 @@ pub struct IDMOQualityControl_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_DxMediaObjects\"`*"]
 #[repr(transparent)]
 pub struct IDMOVideoOutputOptimizations(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDMOVideoOutputOptimizations {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDMOVideoOutputOptimizations {
     #[doc = "*Required features: `\"Win32_Media_DxMediaObjects\"`*"]
     pub unsafe fn QueryOperationModePreferences(&self, uloutputstreamindex: u32) -> ::windows::core::Result<u32> {
@@ -369,11 +379,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDMOV
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDMOVideoOutputOptimizations {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDMOVideoOutputOptimizations {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -401,6 +406,11 @@ pub struct IDMOVideoOutputOptimizations_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_DxMediaObjects\"`*"]
 #[repr(transparent)]
 pub struct IEnumDMO(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnumDMO {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnumDMO {
     #[doc = "*Required features: `\"Win32_Media_DxMediaObjects\"`*"]
     pub unsafe fn Next(&self, citemstofetch: u32, pclsid: *mut ::windows::core::GUID, names: *mut ::windows::core::PWSTR, pcitemsfetched: *mut u32) -> ::windows::core::Result<()> {
@@ -440,11 +450,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnum
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnumDMO {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnumDMO {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -472,6 +477,11 @@ pub struct IEnumDMO_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_DxMediaObjects\"`*"]
 #[repr(transparent)]
 pub struct IMediaBuffer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMediaBuffer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMediaBuffer {
     #[doc = "*Required features: `\"Win32_Media_DxMediaObjects\"`*"]
     pub unsafe fn SetLength(&self, cblength: u32) -> ::windows::core::Result<()> {
@@ -507,11 +517,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMedi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMediaBuffer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMediaBuffer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -538,6 +543,11 @@ pub struct IMediaBuffer_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_DxMediaObjects\"`*"]
 #[repr(transparent)]
 pub struct IMediaObject(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMediaObject {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMediaObject {
     #[doc = "*Required features: `\"Win32_Media_DxMediaObjects\"`*"]
     pub unsafe fn GetStreamCount(&self, pcinputstreams: *mut u32, pcoutputstreams: *mut u32) -> ::windows::core::Result<()> {
@@ -658,11 +668,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMedi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMediaObject {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMediaObject {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -725,6 +730,11 @@ pub struct IMediaObject_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_DxMediaObjects\"`*"]
 #[repr(transparent)]
 pub struct IMediaObjectInPlace(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMediaObjectInPlace {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMediaObjectInPlace {
     #[doc = "*Required features: `\"Win32_Media_DxMediaObjects\"`*"]
     pub unsafe fn Process(&self, ulsize: u32, pdata: *mut u8, reftimestart: i64, dwflags: u32) -> ::windows::core::Result<()> {
@@ -759,11 +769,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IMediaObj
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMediaObjectInPlace {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IMediaObjectInPlace {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IMediaObjectInPlace {
@@ -900,6 +905,7 @@ impl ::core::default::Default for _DMO_INPLACE_PROCESS_FLAGS {
 }
 unsafe impl ::windows::core::Abi for _DMO_INPLACE_PROCESS_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for _DMO_INPLACE_PROCESS_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -931,6 +937,7 @@ impl ::core::default::Default for _DMO_INPUT_DATA_BUFFER_FLAGS {
 }
 unsafe impl ::windows::core::Abi for _DMO_INPUT_DATA_BUFFER_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for _DMO_INPUT_DATA_BUFFER_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -956,6 +963,7 @@ impl ::core::default::Default for _DMO_INPUT_STATUS_FLAGS {
 }
 unsafe impl ::windows::core::Abi for _DMO_INPUT_STATUS_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for _DMO_INPUT_STATUS_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -987,6 +995,7 @@ impl ::core::default::Default for _DMO_INPUT_STREAM_INFO_FLAGS {
 }
 unsafe impl ::windows::core::Abi for _DMO_INPUT_STREAM_INFO_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for _DMO_INPUT_STREAM_INFO_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1020,6 +1029,7 @@ impl ::core::default::Default for _DMO_OUTPUT_DATA_BUFFER_FLAGS {
 }
 unsafe impl ::windows::core::Abi for _DMO_OUTPUT_DATA_BUFFER_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for _DMO_OUTPUT_DATA_BUFFER_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1053,6 +1063,7 @@ impl ::core::default::Default for _DMO_OUTPUT_STREAM_INFO_FLAGS {
 }
 unsafe impl ::windows::core::Abi for _DMO_OUTPUT_STREAM_INFO_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for _DMO_OUTPUT_STREAM_INFO_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1078,6 +1089,7 @@ impl ::core::default::Default for _DMO_PROCESS_OUTPUT_FLAGS {
 }
 unsafe impl ::windows::core::Abi for _DMO_PROCESS_OUTPUT_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for _DMO_PROCESS_OUTPUT_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1103,6 +1115,7 @@ impl ::core::default::Default for _DMO_QUALITY_STATUS_FLAGS {
 }
 unsafe impl ::windows::core::Abi for _DMO_QUALITY_STATUS_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for _DMO_QUALITY_STATUS_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1130,6 +1143,7 @@ impl ::core::default::Default for _DMO_SET_TYPE_FLAGS {
 }
 unsafe impl ::windows::core::Abi for _DMO_SET_TYPE_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for _DMO_SET_TYPE_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1155,6 +1169,7 @@ impl ::core::default::Default for _DMO_VIDEO_OUTPUT_STREAM_FLAGS {
 }
 unsafe impl ::windows::core::Abi for _DMO_VIDEO_OUTPUT_STREAM_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for _DMO_VIDEO_OUTPUT_STREAM_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

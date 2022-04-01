@@ -22,6 +22,7 @@ impl ::core::default::Default for CollectionChange {
 }
 unsafe impl ::windows::core::Abi for CollectionChange {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CollectionChange {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -30,7 +31,6 @@ impl ::core::fmt::Debug for CollectionChange {
 }
 unsafe impl ::windows::core::RuntimeType for CollectionChange {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Foundation.Collections.CollectionChange;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -40,6 +40,11 @@ unsafe impl ::windows::core::RuntimeType for CollectionChange {
 pub struct IIterable<T>(::windows::core::IUnknown, ::core::marker::PhantomData<T>)
 where
     T: ::windows::core::RuntimeType + 'static;
+impl<T: ::windows::core::RuntimeType + 'static> ::core::clone::Clone for IIterable<T> {
+    fn clone(&self) -> Self {
+        Self(self.0.clone(), ::core::marker::PhantomData::<T>)
+    }
+}
 impl<T: ::windows::core::RuntimeType + 'static> IIterable<T> {
     #[doc = "*Required features: `\"Foundation_Collections\"`*"]
     pub fn First(&self) -> ::windows::core::Result<IIterator<T>> {
@@ -90,11 +95,6 @@ impl<'a, T: ::windows::core::RuntimeType + 'static> ::windows::core::IntoParam<'
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl<T: ::windows::core::RuntimeType + 'static> ::core::clone::Clone for IIterable<T> {
-    fn clone(&self) -> Self {
-        Self(self.0.clone(), ::core::marker::PhantomData::<T>)
-    }
-}
 impl<T: ::windows::core::RuntimeType + 'static> ::core::cmp::PartialEq for IIterable<T> {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -108,7 +108,6 @@ impl<T: ::windows::core::RuntimeType + 'static> ::core::fmt::Debug for IIterable
 }
 unsafe impl<T: ::windows::core::RuntimeType + 'static> ::windows::core::RuntimeType for IIterable<T> {
     const SIGNATURE: ::windows::core::ConstBuffer = { ::windows::core::ConstBuffer::new().push_slice(b"pinterface(").push_slice(b"{faa585ea-6214-4217-afda-7f46de5869b3}").push_slice(b";").push_other(<T as ::windows::core::RuntimeType>::SIGNATURE).push_slice(b")") };
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -146,6 +145,11 @@ where
 pub struct IIterator<T>(::windows::core::IUnknown, ::core::marker::PhantomData<T>)
 where
     T: ::windows::core::RuntimeType + 'static;
+impl<T: ::windows::core::RuntimeType + 'static> ::core::clone::Clone for IIterator<T> {
+    fn clone(&self) -> Self {
+        Self(self.0.clone(), ::core::marker::PhantomData::<T>)
+    }
+}
 impl<T: ::windows::core::RuntimeType + 'static> IIterator<T> {
     #[doc = "*Required features: `\"Foundation_Collections\"`*"]
     pub fn Current(&self) -> ::windows::core::Result<T> {
@@ -220,11 +224,6 @@ impl<'a, T: ::windows::core::RuntimeType + 'static> ::windows::core::IntoParam<'
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl<T: ::windows::core::RuntimeType + 'static> ::core::clone::Clone for IIterator<T> {
-    fn clone(&self) -> Self {
-        Self(self.0.clone(), ::core::marker::PhantomData::<T>)
-    }
-}
 impl<T: ::windows::core::RuntimeType + 'static> ::core::cmp::PartialEq for IIterator<T> {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -238,7 +237,6 @@ impl<T: ::windows::core::RuntimeType + 'static> ::core::fmt::Debug for IIterator
 }
 unsafe impl<T: ::windows::core::RuntimeType + 'static> ::windows::core::RuntimeType for IIterator<T> {
     const SIGNATURE: ::windows::core::ConstBuffer = { ::windows::core::ConstBuffer::new().push_slice(b"pinterface(").push_slice(b"{6a79e863-4300-459a-9966-cbb660963ee1}").push_slice(b";").push_other(<T as ::windows::core::RuntimeType>::SIGNATURE).push_slice(b")") };
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -276,6 +274,11 @@ pub struct IKeyValuePair<K, V>(::windows::core::IUnknown, ::core::marker::Phanto
 where
     K: ::windows::core::RuntimeType + 'static,
     V: ::windows::core::RuntimeType + 'static;
+impl<K: ::windows::core::RuntimeType + 'static, V: ::windows::core::RuntimeType + 'static> ::core::clone::Clone for IKeyValuePair<K, V> {
+    fn clone(&self) -> Self {
+        Self(self.0.clone(), ::core::marker::PhantomData::<K>, ::core::marker::PhantomData::<V>)
+    }
+}
 impl<K: ::windows::core::RuntimeType + 'static, V: ::windows::core::RuntimeType + 'static> IKeyValuePair<K, V> {
     #[doc = "*Required features: `\"Foundation_Collections\"`*"]
     pub fn Key(&self) -> ::windows::core::Result<K> {
@@ -334,11 +337,6 @@ impl<'a, K: ::windows::core::RuntimeType + 'static, V: ::windows::core::RuntimeT
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl<K: ::windows::core::RuntimeType + 'static, V: ::windows::core::RuntimeType + 'static> ::core::clone::Clone for IKeyValuePair<K, V> {
-    fn clone(&self) -> Self {
-        Self(self.0.clone(), ::core::marker::PhantomData::<K>, ::core::marker::PhantomData::<V>)
-    }
-}
 impl<K: ::windows::core::RuntimeType + 'static, V: ::windows::core::RuntimeType + 'static> ::core::cmp::PartialEq for IKeyValuePair<K, V> {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -352,7 +350,6 @@ impl<K: ::windows::core::RuntimeType + 'static, V: ::windows::core::RuntimeType 
 }
 unsafe impl<K: ::windows::core::RuntimeType + 'static, V: ::windows::core::RuntimeType + 'static> ::windows::core::RuntimeType for IKeyValuePair<K, V> {
     const SIGNATURE: ::windows::core::ConstBuffer = { ::windows::core::ConstBuffer::new().push_slice(b"pinterface(").push_slice(b"{02b51929-c1c4-4a7e-8940-0312b5c18500}").push_slice(b";").push_other(<K as ::windows::core::RuntimeType>::SIGNATURE).push_slice(b";").push_other(<V as ::windows::core::RuntimeType>::SIGNATURE).push_slice(b")") };
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -380,6 +377,11 @@ pub struct IMap<K, V>(::windows::core::IUnknown, ::core::marker::PhantomData<K>,
 where
     K: ::windows::core::RuntimeType + 'static,
     V: ::windows::core::RuntimeType + 'static;
+impl<K: ::windows::core::RuntimeType + 'static, V: ::windows::core::RuntimeType + 'static> ::core::clone::Clone for IMap<K, V> {
+    fn clone(&self) -> Self {
+        Self(self.0.clone(), ::core::marker::PhantomData::<K>, ::core::marker::PhantomData::<V>)
+    }
+}
 impl<K: ::windows::core::RuntimeType + 'static, V: ::windows::core::RuntimeType + 'static> IMap<K, V> {
     #[doc = "*Required features: `\"Foundation_Collections\"`*"]
     pub fn Lookup<'a, Param0: ::windows::core::IntoParam<'a, K>>(&self, key: Param0) -> ::windows::core::Result<V> {
@@ -502,11 +504,6 @@ impl<'a, K: ::windows::core::RuntimeType + 'static, V: ::windows::core::RuntimeT
         ::core::convert::TryInto::<IIterable<IKeyValuePair<K, V>>>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl<K: ::windows::core::RuntimeType + 'static, V: ::windows::core::RuntimeType + 'static> ::core::clone::Clone for IMap<K, V> {
-    fn clone(&self) -> Self {
-        Self(self.0.clone(), ::core::marker::PhantomData::<K>, ::core::marker::PhantomData::<V>)
-    }
-}
 impl<K: ::windows::core::RuntimeType + 'static, V: ::windows::core::RuntimeType + 'static> ::core::cmp::PartialEq for IMap<K, V> {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -520,7 +517,6 @@ impl<K: ::windows::core::RuntimeType + 'static, V: ::windows::core::RuntimeType 
 }
 unsafe impl<K: ::windows::core::RuntimeType + 'static, V: ::windows::core::RuntimeType + 'static> ::windows::core::RuntimeType for IMap<K, V> {
     const SIGNATURE: ::windows::core::ConstBuffer = { ::windows::core::ConstBuffer::new().push_slice(b"pinterface(").push_slice(b"{3c2925fe-8519-45c1-aa79-197b6718c1c1}").push_slice(b";").push_other(<K as ::windows::core::RuntimeType>::SIGNATURE).push_slice(b";").push_other(<V as ::windows::core::RuntimeType>::SIGNATURE).push_slice(b")") };
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -566,6 +562,11 @@ where
 pub struct IMapChangedEventArgs<K>(::windows::core::IUnknown, ::core::marker::PhantomData<K>)
 where
     K: ::windows::core::RuntimeType + 'static;
+impl<K: ::windows::core::RuntimeType + 'static> ::core::clone::Clone for IMapChangedEventArgs<K> {
+    fn clone(&self) -> Self {
+        Self(self.0.clone(), ::core::marker::PhantomData::<K>)
+    }
+}
 impl<K: ::windows::core::RuntimeType + 'static> IMapChangedEventArgs<K> {
     #[doc = "*Required features: `\"Foundation_Collections\"`*"]
     pub fn CollectionChange(&self) -> ::windows::core::Result<CollectionChange> {
@@ -624,11 +625,6 @@ impl<'a, K: ::windows::core::RuntimeType + 'static> ::windows::core::IntoParam<'
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl<K: ::windows::core::RuntimeType + 'static> ::core::clone::Clone for IMapChangedEventArgs<K> {
-    fn clone(&self) -> Self {
-        Self(self.0.clone(), ::core::marker::PhantomData::<K>)
-    }
-}
 impl<K: ::windows::core::RuntimeType + 'static> ::core::cmp::PartialEq for IMapChangedEventArgs<K> {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -642,7 +638,6 @@ impl<K: ::windows::core::RuntimeType + 'static> ::core::fmt::Debug for IMapChang
 }
 unsafe impl<K: ::windows::core::RuntimeType + 'static> ::windows::core::RuntimeType for IMapChangedEventArgs<K> {
     const SIGNATURE: ::windows::core::ConstBuffer = { ::windows::core::ConstBuffer::new().push_slice(b"pinterface(").push_slice(b"{9939f4df-050a-4c0f-aa60-77075f9c4777}").push_slice(b";").push_other(<K as ::windows::core::RuntimeType>::SIGNATURE).push_slice(b")") };
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -668,6 +663,11 @@ pub struct IMapView<K, V>(::windows::core::IUnknown, ::core::marker::PhantomData
 where
     K: ::windows::core::RuntimeType + 'static,
     V: ::windows::core::RuntimeType + 'static;
+impl<K: ::windows::core::RuntimeType + 'static, V: ::windows::core::RuntimeType + 'static> ::core::clone::Clone for IMapView<K, V> {
+    fn clone(&self) -> Self {
+        Self(self.0.clone(), ::core::marker::PhantomData::<K>, ::core::marker::PhantomData::<V>)
+    }
+}
 impl<K: ::windows::core::RuntimeType + 'static, V: ::windows::core::RuntimeType + 'static> IMapView<K, V> {
     #[doc = "*Required features: `\"Foundation_Collections\"`*"]
     pub fn Lookup<'a, Param0: ::windows::core::IntoParam<'a, K>>(&self, key: Param0) -> ::windows::core::Result<V> {
@@ -769,11 +769,6 @@ impl<'a, K: ::windows::core::RuntimeType + 'static, V: ::windows::core::RuntimeT
         ::core::convert::TryInto::<IIterable<IKeyValuePair<K, V>>>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl<K: ::windows::core::RuntimeType + 'static, V: ::windows::core::RuntimeType + 'static> ::core::clone::Clone for IMapView<K, V> {
-    fn clone(&self) -> Self {
-        Self(self.0.clone(), ::core::marker::PhantomData::<K>, ::core::marker::PhantomData::<V>)
-    }
-}
 impl<K: ::windows::core::RuntimeType + 'static, V: ::windows::core::RuntimeType + 'static> ::core::cmp::PartialEq for IMapView<K, V> {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -787,7 +782,6 @@ impl<K: ::windows::core::RuntimeType + 'static, V: ::windows::core::RuntimeType 
 }
 unsafe impl<K: ::windows::core::RuntimeType + 'static, V: ::windows::core::RuntimeType + 'static> ::windows::core::RuntimeType for IMapView<K, V> {
     const SIGNATURE: ::windows::core::ConstBuffer = { ::windows::core::ConstBuffer::new().push_slice(b"pinterface(").push_slice(b"{e480ce40-a338-4ada-adcf-272272e48cb9}").push_slice(b";").push_other(<K as ::windows::core::RuntimeType>::SIGNATURE).push_slice(b";").push_other(<V as ::windows::core::RuntimeType>::SIGNATURE).push_slice(b")") };
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -831,6 +825,11 @@ pub struct IObservableMap<K, V>(::windows::core::IUnknown, ::core::marker::Phant
 where
     K: ::windows::core::RuntimeType + 'static,
     V: ::windows::core::RuntimeType + 'static;
+impl<K: ::windows::core::RuntimeType + 'static, V: ::windows::core::RuntimeType + 'static> ::core::clone::Clone for IObservableMap<K, V> {
+    fn clone(&self) -> Self {
+        Self(self.0.clone(), ::core::marker::PhantomData::<K>, ::core::marker::PhantomData::<V>)
+    }
+}
 impl<K: ::windows::core::RuntimeType + 'static, V: ::windows::core::RuntimeType + 'static> IObservableMap<K, V> {
     #[doc = "*Required features: `\"Foundation_Collections\"`*"]
     pub fn MapChanged<'a, Param0: ::windows::core::IntoParam<'a, MapChangedEventHandler<K, V>>>(&self, vhnd: Param0) -> ::windows::core::Result<super::EventRegistrationToken> {
@@ -988,11 +987,6 @@ impl<'a, K: ::windows::core::RuntimeType + 'static, V: ::windows::core::RuntimeT
         ::core::convert::TryInto::<IMap<K, V>>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl<K: ::windows::core::RuntimeType + 'static, V: ::windows::core::RuntimeType + 'static> ::core::clone::Clone for IObservableMap<K, V> {
-    fn clone(&self) -> Self {
-        Self(self.0.clone(), ::core::marker::PhantomData::<K>, ::core::marker::PhantomData::<V>)
-    }
-}
 impl<K: ::windows::core::RuntimeType + 'static, V: ::windows::core::RuntimeType + 'static> ::core::cmp::PartialEq for IObservableMap<K, V> {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1006,7 +1000,6 @@ impl<K: ::windows::core::RuntimeType + 'static, V: ::windows::core::RuntimeType 
 }
 unsafe impl<K: ::windows::core::RuntimeType + 'static, V: ::windows::core::RuntimeType + 'static> ::windows::core::RuntimeType for IObservableMap<K, V> {
     const SIGNATURE: ::windows::core::ConstBuffer = { ::windows::core::ConstBuffer::new().push_slice(b"pinterface(").push_slice(b"{65df2bf5-bf39-41b5-aebc-5a9d865e472b}").push_slice(b";").push_other(<K as ::windows::core::RuntimeType>::SIGNATURE).push_slice(b";").push_other(<V as ::windows::core::RuntimeType>::SIGNATURE).push_slice(b")") };
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1047,6 +1040,11 @@ where
 pub struct IObservableVector<T>(::windows::core::IUnknown, ::core::marker::PhantomData<T>)
 where
     T: ::windows::core::RuntimeType + 'static;
+impl<T: ::windows::core::RuntimeType + 'static> ::core::clone::Clone for IObservableVector<T> {
+    fn clone(&self) -> Self {
+        Self(self.0.clone(), ::core::marker::PhantomData::<T>)
+    }
+}
 impl<T: ::windows::core::RuntimeType + 'static> IObservableVector<T> {
     #[doc = "*Required features: `\"Foundation_Collections\"`*"]
     pub fn VectorChanged<'a, Param0: ::windows::core::IntoParam<'a, VectorChangedEventHandler<T>>>(&self, vhnd: Param0) -> ::windows::core::Result<super::EventRegistrationToken> {
@@ -1229,11 +1227,6 @@ impl<'a, T: ::windows::core::RuntimeType + 'static> ::windows::core::IntoParam<'
         ::core::convert::TryInto::<IVector<T>>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl<T: ::windows::core::RuntimeType + 'static> ::core::clone::Clone for IObservableVector<T> {
-    fn clone(&self) -> Self {
-        Self(self.0.clone(), ::core::marker::PhantomData::<T>)
-    }
-}
 impl<T: ::windows::core::RuntimeType + 'static> ::core::cmp::PartialEq for IObservableVector<T> {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1247,7 +1240,6 @@ impl<T: ::windows::core::RuntimeType + 'static> ::core::fmt::Debug for IObservab
 }
 unsafe impl<T: ::windows::core::RuntimeType + 'static> ::windows::core::RuntimeType for IObservableVector<T> {
     const SIGNATURE: ::windows::core::ConstBuffer = { ::windows::core::ConstBuffer::new().push_slice(b"pinterface(").push_slice(b"{5917eb53-50b4-4a0d-b309-65862b3f1dbc}").push_slice(b";").push_other(<T as ::windows::core::RuntimeType>::SIGNATURE).push_slice(b")") };
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1284,6 +1276,11 @@ where
 #[doc = "*Required features: `\"Foundation_Collections\"`*"]
 #[repr(transparent)]
 pub struct IPropertySet(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPropertySet {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPropertySet {
     #[doc = "*Required features: `\"Foundation_Collections\"`*"]
     pub fn First(&self) -> ::windows::core::Result<IIterator<IKeyValuePair<::windows::core::HSTRING, ::windows::core::IInspectable>>> {
@@ -1463,11 +1460,6 @@ impl<'a> ::windows::core::IntoParam<'a, IObservableMap<::windows::core::HSTRING,
         ::core::convert::TryInto::<IObservableMap<::windows::core::HSTRING, ::windows::core::IInspectable>>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IPropertySet {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPropertySet {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1481,7 +1473,6 @@ impl ::core::fmt::Debug for IPropertySet {
 }
 unsafe impl ::windows::core::RuntimeType for IPropertySet {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{8a43ed9f-f4e6-4421-acf9-1dab2986820c}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1514,6 +1505,11 @@ pub struct IPropertySet_Vtbl {
 pub struct IVector<T>(::windows::core::IUnknown, ::core::marker::PhantomData<T>)
 where
     T: ::windows::core::RuntimeType + 'static;
+impl<T: ::windows::core::RuntimeType + 'static> ::core::clone::Clone for IVector<T> {
+    fn clone(&self) -> Self {
+        Self(self.0.clone(), ::core::marker::PhantomData::<T>)
+    }
+}
 impl<T: ::windows::core::RuntimeType + 'static> IVector<T> {
     #[doc = "*Required features: `\"Foundation_Collections\"`*"]
     pub fn GetAt(&self, index: u32) -> ::windows::core::Result<T> {
@@ -1661,11 +1657,6 @@ impl<'a, T: ::windows::core::RuntimeType + 'static> ::windows::core::IntoParam<'
         ::core::convert::TryInto::<IIterable<T>>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl<T: ::windows::core::RuntimeType + 'static> ::core::clone::Clone for IVector<T> {
-    fn clone(&self) -> Self {
-        Self(self.0.clone(), ::core::marker::PhantomData::<T>)
-    }
-}
 impl<T: ::windows::core::RuntimeType + 'static> ::core::cmp::PartialEq for IVector<T> {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1679,7 +1670,6 @@ impl<T: ::windows::core::RuntimeType + 'static> ::core::fmt::Debug for IVector<T
 }
 unsafe impl<T: ::windows::core::RuntimeType + 'static> ::windows::core::RuntimeType for IVector<T> {
     const SIGNATURE: ::windows::core::ConstBuffer = { ::windows::core::ConstBuffer::new().push_slice(b"pinterface(").push_slice(b"{913337e9-11a1-4345-a3a2-4e7f956e222d}").push_slice(b";").push_other(<T as ::windows::core::RuntimeType>::SIGNATURE).push_slice(b")") };
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1744,6 +1734,11 @@ where
 #[doc = "*Required features: `\"Foundation_Collections\"`*"]
 #[repr(transparent)]
 pub struct IVectorChangedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVectorChangedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IVectorChangedEventArgs {
     #[doc = "*Required features: `\"Foundation_Collections\"`*"]
     pub fn CollectionChange(&self) -> ::windows::core::Result<CollectionChange> {
@@ -1802,11 +1797,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IVectorChangedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IVectorChangedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1820,7 +1810,6 @@ impl ::core::fmt::Debug for IVectorChangedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for IVectorChangedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{575933df-34fe-4480-af15-07691f3d5d9b}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1841,6 +1830,11 @@ pub struct IVectorChangedEventArgs_Vtbl {
 pub struct IVectorView<T>(::windows::core::IUnknown, ::core::marker::PhantomData<T>)
 where
     T: ::windows::core::RuntimeType + 'static;
+impl<T: ::windows::core::RuntimeType + 'static> ::core::clone::Clone for IVectorView<T> {
+    fn clone(&self) -> Self {
+        Self(self.0.clone(), ::core::marker::PhantomData::<T>)
+    }
+}
 impl<T: ::windows::core::RuntimeType + 'static> IVectorView<T> {
     #[doc = "*Required features: `\"Foundation_Collections\"`*"]
     pub fn GetAt(&self, index: u32) -> ::windows::core::Result<T> {
@@ -1945,11 +1939,6 @@ impl<'a, T: ::windows::core::RuntimeType + 'static> ::windows::core::IntoParam<'
         ::core::convert::TryInto::<IIterable<T>>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl<T: ::windows::core::RuntimeType + 'static> ::core::clone::Clone for IVectorView<T> {
-    fn clone(&self) -> Self {
-        Self(self.0.clone(), ::core::marker::PhantomData::<T>)
-    }
-}
 impl<T: ::windows::core::RuntimeType + 'static> ::core::cmp::PartialEq for IVectorView<T> {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1963,7 +1952,6 @@ impl<T: ::windows::core::RuntimeType + 'static> ::core::fmt::Debug for IVectorVi
 }
 unsafe impl<T: ::windows::core::RuntimeType + 'static> ::windows::core::RuntimeType for IVectorView<T> {
     const SIGNATURE: ::windows::core::ConstBuffer = { ::windows::core::ConstBuffer::new().push_slice(b"pinterface(").push_slice(b"{bbe1fa4c-b0e3-4583-baef-1f1b2e483e56}").push_slice(b";").push_other(<T as ::windows::core::RuntimeType>::SIGNATURE).push_slice(b")") };
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2078,11 +2066,6 @@ impl<K: ::windows::core::RuntimeType + 'static, V: ::windows::core::RuntimeType 
         ((*this).invoke)(::core::mem::transmute(&sender), ::core::mem::transmute(&event)).into()
     }
 }
-impl<K: ::windows::core::RuntimeType + 'static, V: ::windows::core::RuntimeType + 'static> ::core::clone::Clone for MapChangedEventHandler<K, V> {
-    fn clone(&self) -> Self {
-        Self(self.0.clone(), ::core::marker::PhantomData::<K>, ::core::marker::PhantomData::<V>)
-    }
-}
 impl<K: ::windows::core::RuntimeType + 'static, V: ::windows::core::RuntimeType + 'static> ::core::cmp::PartialEq for MapChangedEventHandler<K, V> {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2100,7 +2083,6 @@ unsafe impl<K: ::windows::core::RuntimeType + 'static, V: ::windows::core::Runti
 }
 unsafe impl<K: ::windows::core::RuntimeType + 'static, V: ::windows::core::RuntimeType + 'static> ::windows::core::RuntimeType for MapChangedEventHandler<K, V> {
     const SIGNATURE: ::windows::core::ConstBuffer = { ::windows::core::ConstBuffer::new().push_slice(b"pinterface(").push_slice(b"{179517f3-94ee-41f8-bddc-768a895544f3}").push_slice(b";").push_other(<K as ::windows::core::RuntimeType>::SIGNATURE).push_slice(b";").push_other(<V as ::windows::core::RuntimeType>::SIGNATURE).push_slice(b")") };
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2200,11 +2182,6 @@ impl PropertySet {
         unsafe { (::windows::core::Interface::vtable(this).RemoveMapChanged)(::core::mem::transmute_copy(this), token.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for PropertySet {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PropertySet {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2218,7 +2195,6 @@ impl ::core::fmt::Debug for PropertySet {
 }
 unsafe impl ::windows::core::RuntimeType for PropertySet {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Foundation.Collections.PropertySet;{8a43ed9f-f4e6-4421-acf9-1dab2986820c})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2457,11 +2433,6 @@ impl StringMap {
         unsafe { (::windows::core::Interface::vtable(this).RemoveMapChanged)(::core::mem::transmute_copy(this), token.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for StringMap {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for StringMap {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2475,7 +2446,6 @@ impl ::core::fmt::Debug for StringMap {
 }
 unsafe impl ::windows::core::RuntimeType for StringMap {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Foundation.Collections.StringMap;pinterface({3c2925fe-8519-45c1-aa79-197b6718c1c1};string;string))");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2692,11 +2662,6 @@ impl ValueSet {
         unsafe { (::windows::core::Interface::vtable(this).RemoveMapChanged)(::core::mem::transmute_copy(this), token.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for ValueSet {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ValueSet {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2710,7 +2675,6 @@ impl ::core::fmt::Debug for ValueSet {
 }
 unsafe impl ::windows::core::RuntimeType for ValueSet {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Foundation.Collections.ValueSet;{8a43ed9f-f4e6-4421-acf9-1dab2986820c})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2924,11 +2888,6 @@ impl<T: ::windows::core::RuntimeType + 'static, F: FnMut(&::core::option::Option
         ((*this).invoke)(::core::mem::transmute(&sender), ::core::mem::transmute(&event)).into()
     }
 }
-impl<T: ::windows::core::RuntimeType + 'static> ::core::clone::Clone for VectorChangedEventHandler<T> {
-    fn clone(&self) -> Self {
-        Self(self.0.clone(), ::core::marker::PhantomData::<T>)
-    }
-}
 impl<T: ::windows::core::RuntimeType + 'static> ::core::cmp::PartialEq for VectorChangedEventHandler<T> {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2946,7 +2905,6 @@ unsafe impl<T: ::windows::core::RuntimeType + 'static> ::windows::core::Interfac
 }
 unsafe impl<T: ::windows::core::RuntimeType + 'static> ::windows::core::RuntimeType for VectorChangedEventHandler<T> {
     const SIGNATURE: ::windows::core::ConstBuffer = { ::windows::core::ConstBuffer::new().push_slice(b"pinterface(").push_slice(b"{0c051752-9fbf-4c70-aa0c-0e4c82d9a761}").push_slice(b";").push_other(<T as ::windows::core::RuntimeType>::SIGNATURE).push_slice(b")") };
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

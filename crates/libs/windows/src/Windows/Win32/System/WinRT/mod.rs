@@ -58,6 +58,7 @@ impl ::core::default::Default for ACTIVATIONTYPE {
 }
 unsafe impl ::windows::core::Abi for ACTIVATIONTYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ACTIVATIONTYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -90,6 +91,7 @@ impl ::core::fmt::Debug for APARTMENT_SHUTDOWN_REGISTRATION_COOKIE {
 }
 unsafe impl ::windows::core::Abi for APARTMENT_SHUTDOWN_REGISTRATION_COOKIE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[doc = "*Required features: `\"Win32_System_WinRT\"`*"]
 #[repr(transparent)]
@@ -112,6 +114,7 @@ impl ::core::default::Default for AgileReferenceOptions {
 }
 unsafe impl ::windows::core::Abi for AgileReferenceOptions {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AgileReferenceOptions {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -139,6 +142,7 @@ impl ::core::default::Default for BSOS_OPTIONS {
 }
 unsafe impl ::windows::core::Abi for BSOS_OPTIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for BSOS_OPTIONS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -176,6 +180,7 @@ impl ::core::default::Default for CASTING_CONNECTION_ERROR_STATUS {
 }
 unsafe impl ::windows::core::Abi for CASTING_CONNECTION_ERROR_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CASTING_CONNECTION_ERROR_STATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -209,6 +214,7 @@ impl ::core::default::Default for CASTING_CONNECTION_STATE {
 }
 unsafe impl ::windows::core::Abi for CASTING_CONNECTION_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CASTING_CONNECTION_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -351,6 +357,7 @@ impl ::core::default::Default for DISPATCHERQUEUE_THREAD_APARTMENTTYPE {
 }
 unsafe impl ::windows::core::Abi for DISPATCHERQUEUE_THREAD_APARTMENTTYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DISPATCHERQUEUE_THREAD_APARTMENTTYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -378,6 +385,7 @@ impl ::core::default::Default for DISPATCHERQUEUE_THREAD_TYPE {
 }
 unsafe impl ::windows::core::Abi for DISPATCHERQUEUE_THREAD_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DISPATCHERQUEUE_THREAD_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -404,6 +412,7 @@ impl ::core::fmt::Debug for DispatcherQueueOptions {
 }
 unsafe impl ::windows::core::Abi for DispatcherQueueOptions {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DispatcherQueueOptions {
     fn eq(&self, other: &Self) -> bool {
@@ -434,6 +443,7 @@ impl ::core::fmt::Debug for EventRegistrationToken {
 }
 unsafe impl ::windows::core::Abi for EventRegistrationToken {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EventRegistrationToken {
     fn eq(&self, other: &Self) -> bool {
@@ -487,6 +497,7 @@ impl ::core::fmt::Debug for HSTRING_BUFFER {
 }
 unsafe impl ::windows::core::Abi for HSTRING_BUFFER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[repr(C)]
 #[doc = "*Required features: `\"Win32_System_WinRT\"`, `\"Win32_Foundation\"`*"]
@@ -505,6 +516,7 @@ impl ::core::clone::Clone for HSTRING_HEADER {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for HSTRING_HEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for HSTRING_HEADER {
@@ -538,6 +550,7 @@ impl ::core::clone::Clone for HSTRING_HEADER_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for HSTRING_HEADER_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for HSTRING_HEADER_0 {
@@ -668,6 +681,11 @@ pub unsafe fn HSTRING_UserUnmarshal64(param0: *const u32, param1: *const u8, par
 #[doc = "*Required features: `\"Win32_System_WinRT\"`*"]
 #[repr(transparent)]
 pub struct IAccountsSettingsPaneInterop(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAccountsSettingsPaneInterop {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAccountsSettingsPaneInterop {
     #[doc = "*Required features: `\"Win32_System_WinRT\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -728,11 +746,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAccountsSettingsPaneInterop {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAccountsSettingsPaneInterop {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -768,6 +781,11 @@ pub struct IAccountsSettingsPaneInterop_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT\"`*"]
 #[repr(transparent)]
 pub struct IActivationFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IActivationFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IActivationFactory {
     #[doc = "*Required features: `\"Win32_System_WinRT\"`*"]
     pub unsafe fn ActivateInstance(&self) -> ::windows::core::Result<::windows::core::IInspectable> {
@@ -815,11 +833,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IActivationFactory {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IActivationFactory {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -844,6 +857,11 @@ pub struct IActivationFactory_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT\"`*"]
 #[repr(transparent)]
 pub struct IAgileReference(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAgileReference {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAgileReference {
     #[doc = "*Required features: `\"Win32_System_WinRT\"`*"]
     pub unsafe fn Resolve<T: ::windows::core::Interface>(&self) -> ::windows::core::Result<T> {
@@ -871,11 +889,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAgil
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAgileReference {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAgileReference {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -900,6 +913,11 @@ pub struct IAgileReference_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT\"`*"]
 #[repr(transparent)]
 pub struct IApartmentShutdown(::windows::core::IUnknown);
+impl ::core::clone::Clone for IApartmentShutdown {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IApartmentShutdown {
     #[doc = "*Required features: `\"Win32_System_WinRT\"`*"]
     pub unsafe fn OnUninitialize(&self, ui64apartmentidentifier: u64) {
@@ -926,11 +944,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IApar
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IApartmentShutdown {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IApartmentShutdown {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -955,6 +968,11 @@ pub struct IApartmentShutdown_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT\"`*"]
 #[repr(transparent)]
 pub struct IAppServiceConnectionExtendedExecution(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppServiceConnectionExtendedExecution {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppServiceConnectionExtendedExecution {
     #[doc = "*Required features: `\"Win32_System_WinRT\"`*"]
     pub unsafe fn OpenForExtendedExecutionAsync<T: ::windows::core::Interface>(&self) -> ::windows::core::Result<T> {
@@ -982,11 +1000,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAppS
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAppServiceConnectionExtendedExecution {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAppServiceConnectionExtendedExecution {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1011,6 +1024,11 @@ pub struct IAppServiceConnectionExtendedExecution_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT\"`*"]
 #[repr(transparent)]
 pub struct IBufferByteAccess(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBufferByteAccess {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IBufferByteAccess {
     #[doc = "*Required features: `\"Win32_System_WinRT\"`*"]
     pub unsafe fn Buffer(&self) -> ::windows::core::Result<*mut u8> {
@@ -1038,11 +1056,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IBuff
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IBufferByteAccess {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IBufferByteAccess {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1067,6 +1080,11 @@ pub struct IBufferByteAccess_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT\"`*"]
 #[repr(transparent)]
 pub struct ICastingController(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICastingController {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ICastingController {
     #[doc = "*Required features: `\"Win32_System_WinRT\"`*"]
     pub unsafe fn Initialize<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>, Param1: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, castingengine: Param0, castingsource: Param1) -> ::windows::core::Result<()> {
@@ -1110,11 +1128,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ICast
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ICastingController {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ICastingController {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1143,6 +1156,11 @@ pub struct ICastingController_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT\"`*"]
 #[repr(transparent)]
 pub struct ICastingEventHandler(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICastingEventHandler {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ICastingEventHandler {
     #[doc = "*Required features: `\"Win32_System_WinRT\"`*"]
     pub unsafe fn OnStateChanged(&self, newstate: CASTING_CONNECTION_STATE) -> ::windows::core::Result<()> {
@@ -1173,11 +1191,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ICast
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ICastingEventHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ICastingEventHandler {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1203,6 +1216,11 @@ pub struct ICastingEventHandler_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT\"`*"]
 #[repr(transparent)]
 pub struct ICastingSourceInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICastingSourceInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ICastingSourceInfo {
     #[doc = "*Required features: `\"Win32_System_WinRT\"`*"]
     pub unsafe fn GetController(&self) -> ::windows::core::Result<ICastingController> {
@@ -1236,11 +1254,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ICast
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ICastingSourceInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ICastingSourceInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1269,6 +1282,11 @@ pub struct ICastingSourceInfo_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT\"`*"]
 #[repr(transparent)]
 pub struct ICoreInputInterop(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICoreInputInterop {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ICoreInputInterop {
     #[doc = "*Required features: `\"Win32_System_WinRT\"`*"]
     pub unsafe fn SetInputSource<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, value: Param0) -> ::windows::core::Result<()> {
@@ -1299,11 +1317,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ICore
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ICoreInputInterop {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ICoreInputInterop {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1329,6 +1342,11 @@ pub struct ICoreInputInterop_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT\"`*"]
 #[repr(transparent)]
 pub struct ICoreWindowAdapterInterop(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICoreWindowAdapterInterop {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ICoreWindowAdapterInterop {
     #[doc = "*Required features: `\"Win32_System_WinRT\"`*"]
     pub unsafe fn AppActivationClientAdapter(&self) -> ::windows::core::Result<::windows::core::IUnknown> {
@@ -1410,11 +1428,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ICoreWindowAdapterInterop {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ICoreWindowAdapterInterop {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1446,6 +1459,11 @@ pub struct ICoreWindowAdapterInterop_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT\"`*"]
 #[repr(transparent)]
 pub struct ICoreWindowComponentInterop(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICoreWindowComponentInterop {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ICoreWindowComponentInterop {
     #[doc = "*Required features: `\"Win32_System_WinRT\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -1478,11 +1496,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ICore
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ICoreWindowComponentInterop {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ICoreWindowComponentInterop {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1511,6 +1524,11 @@ pub struct ICoreWindowComponentInterop_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT\"`*"]
 #[repr(transparent)]
 pub struct ICoreWindowInterop(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICoreWindowInterop {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ICoreWindowInterop {
     #[doc = "*Required features: `\"Win32_System_WinRT\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -1543,11 +1561,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ICore
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ICoreWindowInterop {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ICoreWindowInterop {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1576,6 +1589,11 @@ pub struct ICoreWindowInterop_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT\"`*"]
 #[repr(transparent)]
 pub struct ICorrelationVectorInformation(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICorrelationVectorInformation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ICorrelationVectorInformation {
     #[doc = "*Required features: `\"Win32_System_WinRT\"`*"]
     pub unsafe fn LastCorrelationVectorForThread(&self) -> ::windows::core::Result<::windows::core::HSTRING> {
@@ -1632,11 +1650,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ICorrelationVectorInformation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ICorrelationVectorInformation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1663,6 +1676,11 @@ pub struct ICorrelationVectorInformation_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT\"`*"]
 #[repr(transparent)]
 pub struct ICorrelationVectorSource(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICorrelationVectorSource {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ICorrelationVectorSource {
     #[doc = "*Required features: `\"Win32_System_WinRT\"`*"]
     pub unsafe fn CorrelationVector(&self) -> ::windows::core::Result<::windows::core::HSTRING> {
@@ -1690,11 +1708,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ICorr
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ICorrelationVectorSource {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ICorrelationVectorSource {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1719,6 +1732,11 @@ pub struct ICorrelationVectorSource_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT\"`*"]
 #[repr(transparent)]
 pub struct IDragDropManagerInterop(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDragDropManagerInterop {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDragDropManagerInterop {
     #[doc = "*Required features: `\"Win32_System_WinRT\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -1767,11 +1785,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDragDropManagerInterop {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDragDropManagerInterop {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1799,6 +1812,11 @@ pub struct IDragDropManagerInterop_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT\"`*"]
 #[repr(transparent)]
 pub struct IHolographicSpaceInterop(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHolographicSpaceInterop {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IHolographicSpaceInterop {
     #[doc = "*Required features: `\"Win32_System_WinRT\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -1847,11 +1865,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IHolographicSpaceInterop {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IHolographicSpaceInterop {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1879,6 +1892,11 @@ pub struct IHolographicSpaceInterop_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT\"`*"]
 #[repr(transparent)]
 pub struct IInputPaneInterop(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInputPaneInterop {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IInputPaneInterop {
     #[doc = "*Required features: `\"Win32_System_WinRT\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -1927,11 +1945,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IInputPaneInterop {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IInputPaneInterop {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1959,6 +1972,11 @@ pub struct IInputPaneInterop_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT\"`*"]
 #[repr(transparent)]
 pub struct ILanguageExceptionErrorInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILanguageExceptionErrorInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ILanguageExceptionErrorInfo {
     #[doc = "*Required features: `\"Win32_System_WinRT\"`*"]
     pub unsafe fn GetLanguageException(&self) -> ::windows::core::Result<::windows::core::IUnknown> {
@@ -1986,11 +2004,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ILang
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ILanguageExceptionErrorInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ILanguageExceptionErrorInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2015,6 +2028,11 @@ pub struct ILanguageExceptionErrorInfo_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT\"`*"]
 #[repr(transparent)]
 pub struct ILanguageExceptionErrorInfo2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILanguageExceptionErrorInfo2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ILanguageExceptionErrorInfo2 {
     #[doc = "*Required features: `\"Win32_System_WinRT\"`*"]
     pub unsafe fn GetLanguageException(&self) -> ::windows::core::Result<::windows::core::IUnknown> {
@@ -2076,11 +2094,6 @@ impl<'a> ::windows::core::IntoParam<'a, ILanguageExceptionErrorInfo> for &'a ILa
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ILanguageExceptionErrorInfo2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ILanguageExceptionErrorInfo2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2107,6 +2120,11 @@ pub struct ILanguageExceptionErrorInfo2_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT\"`*"]
 #[repr(transparent)]
 pub struct ILanguageExceptionStackBackTrace(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILanguageExceptionStackBackTrace {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ILanguageExceptionStackBackTrace {
     #[doc = "*Required features: `\"Win32_System_WinRT\"`*"]
     pub unsafe fn GetStackBackTrace(&self, maxframestocapture: u32, stackbacktrace: *mut usize, framescaptured: *mut u32) -> ::windows::core::Result<()> {
@@ -2133,11 +2151,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ILang
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ILanguageExceptionStackBackTrace {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ILanguageExceptionStackBackTrace {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2162,6 +2175,11 @@ pub struct ILanguageExceptionStackBackTrace_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT\"`*"]
 #[repr(transparent)]
 pub struct ILanguageExceptionTransform(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILanguageExceptionTransform {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ILanguageExceptionTransform {
     #[doc = "*Required features: `\"Win32_System_WinRT\"`*"]
     pub unsafe fn GetTransformedRestrictedErrorInfo(&self) -> ::windows::core::Result<IRestrictedErrorInfo> {
@@ -2189,11 +2207,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ILang
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ILanguageExceptionTransform {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ILanguageExceptionTransform {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2218,6 +2231,11 @@ pub struct ILanguageExceptionTransform_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT\"`*"]
 #[repr(transparent)]
 pub struct IMemoryBufferByteAccess(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMemoryBufferByteAccess {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMemoryBufferByteAccess {
     #[doc = "*Required features: `\"Win32_System_WinRT\"`*"]
     pub unsafe fn GetBuffer(&self, value: *mut *mut u8, capacity: *mut u32) -> ::windows::core::Result<()> {
@@ -2244,11 +2262,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMemo
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMemoryBufferByteAccess {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMemoryBufferByteAccess {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2273,6 +2286,11 @@ pub struct IMemoryBufferByteAccess_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT\"`*"]
 #[repr(transparent)]
 pub struct IMessageDispatcher(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMessageDispatcher {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMessageDispatcher {
     #[doc = "*Required features: `\"Win32_System_WinRT\"`*"]
     pub unsafe fn PumpMessages(&self) -> ::windows::core::Result<()> {
@@ -2319,11 +2337,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMessageDispatcher {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMessageDispatcher {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2348,6 +2361,11 @@ pub struct IMessageDispatcher_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT\"`*"]
 #[repr(transparent)]
 pub struct IPlayToManagerInterop(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPlayToManagerInterop {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPlayToManagerInterop {
     #[doc = "*Required features: `\"Win32_System_WinRT\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -2401,11 +2419,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPlayToManagerInterop {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPlayToManagerInterop {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2437,6 +2450,11 @@ pub struct IPlayToManagerInterop_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT\"`*"]
 #[repr(transparent)]
 pub struct IRestrictedErrorInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRestrictedErrorInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRestrictedErrorInfo {
     #[doc = "*Required features: `\"Win32_System_WinRT\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -2468,11 +2486,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IRestrict
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IRestrictedErrorInfo {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IRestrictedErrorInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IRestrictedErrorInfo {
@@ -2508,15 +2521,15 @@ pub struct IRestrictedErrorInfo_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT\"`*"]
 #[repr(transparent)]
 pub struct IRoMetaDataLocator(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRoMetaDataLocator {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRoMetaDataLocator {
     #[doc = "*Required features: `\"Win32_System_WinRT\"`*"]
     pub unsafe fn Locate<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param1: ::windows::core::IntoParam<'a, IRoSimpleMetaDataBuilder>>(&self, nameelement: Param0, metadatadestination: Param1) -> ::windows::core::Result<()> {
         (::windows::core::Interface::vtable(self).Locate)(::core::mem::transmute_copy(self), nameelement.into_param().abi(), metadatadestination.into_param().abi()).ok()
-    }
-}
-impl ::core::clone::Clone for IRoMetaDataLocator {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IRoMetaDataLocator {
@@ -2542,6 +2555,11 @@ pub struct IRoMetaDataLocator_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT\"`*"]
 #[repr(transparent)]
 pub struct IRoSimpleMetaDataBuilder(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRoSimpleMetaDataBuilder {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRoSimpleMetaDataBuilder {
     #[doc = "*Required features: `\"Win32_System_WinRT\"`*"]
     pub unsafe fn SetWinRtInterface<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::GUID>>(&self, iid: Param0) -> ::windows::core::Result<()> {
@@ -2584,11 +2602,6 @@ impl IRoSimpleMetaDataBuilder {
         (::windows::core::Interface::vtable(self).SetParameterizedDelegate)(::core::mem::transmute_copy(self), piid.into_param().abi(), ::core::mem::transmute(numargs)).ok()
     }
 }
-impl ::core::clone::Clone for IRoSimpleMetaDataBuilder {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IRoSimpleMetaDataBuilder {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2621,6 +2634,11 @@ pub struct IRoSimpleMetaDataBuilder_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT\"`*"]
 #[repr(transparent)]
 pub struct IShareWindowCommandEventArgsInterop(::windows::core::IUnknown);
+impl ::core::clone::Clone for IShareWindowCommandEventArgsInterop {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IShareWindowCommandEventArgsInterop {
     #[doc = "*Required features: `\"Win32_System_WinRT\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -2647,11 +2665,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IShareWin
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IShareWindowCommandEventArgsInterop {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IShareWindowCommandEventArgsInterop {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IShareWindowCommandEventArgsInterop {
@@ -2681,6 +2694,11 @@ pub struct IShareWindowCommandEventArgsInterop_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT\"`*"]
 #[repr(transparent)]
 pub struct IShareWindowCommandSourceInterop(::windows::core::IUnknown);
+impl ::core::clone::Clone for IShareWindowCommandSourceInterop {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IShareWindowCommandSourceInterop {
     #[doc = "*Required features: `\"Win32_System_WinRT\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -2707,11 +2725,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IShareWin
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IShareWindowCommandSourceInterop {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IShareWindowCommandSourceInterop {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IShareWindowCommandSourceInterop {
@@ -2741,6 +2754,11 @@ pub struct IShareWindowCommandSourceInterop_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT\"`*"]
 #[repr(transparent)]
 pub struct ISpatialInteractionManagerInterop(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpatialInteractionManagerInterop {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISpatialInteractionManagerInterop {
     #[doc = "*Required features: `\"Win32_System_WinRT\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -2789,11 +2807,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISpatialInteractionManagerInterop {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISpatialInteractionManagerInterop {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2821,6 +2834,11 @@ pub struct ISpatialInteractionManagerInterop_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT\"`*"]
 #[repr(transparent)]
 pub struct ISystemMediaTransportControlsInterop(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISystemMediaTransportControlsInterop {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISystemMediaTransportControlsInterop {
     #[doc = "*Required features: `\"Win32_System_WinRT\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -2869,11 +2887,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISystemMediaTransportControlsInterop {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISystemMediaTransportControlsInterop {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2901,6 +2914,11 @@ pub struct ISystemMediaTransportControlsInterop_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT\"`*"]
 #[repr(transparent)]
 pub struct IUIViewSettingsInterop(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIViewSettingsInterop {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIViewSettingsInterop {
     #[doc = "*Required features: `\"Win32_System_WinRT\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -2949,11 +2967,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIViewSettingsInterop {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIViewSettingsInterop {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2981,6 +2994,11 @@ pub struct IUIViewSettingsInterop_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT\"`*"]
 #[repr(transparent)]
 pub struct IUserActivityInterop(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUserActivityInterop {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUserActivityInterop {
     #[doc = "*Required features: `\"Win32_System_WinRT\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -3029,11 +3047,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUserActivityInterop {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUserActivityInterop {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3061,6 +3074,11 @@ pub struct IUserActivityInterop_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT\"`*"]
 #[repr(transparent)]
 pub struct IUserActivityRequestManagerInterop(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUserActivityRequestManagerInterop {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUserActivityRequestManagerInterop {
     #[doc = "*Required features: `\"Win32_System_WinRT\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -3109,11 +3127,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUserActivityRequestManagerInterop {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUserActivityRequestManagerInterop {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3141,6 +3154,11 @@ pub struct IUserActivityRequestManagerInterop_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT\"`*"]
 #[repr(transparent)]
 pub struct IUserActivitySourceHostInterop(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUserActivitySourceHostInterop {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUserActivitySourceHostInterop {
     #[doc = "*Required features: `\"Win32_System_WinRT\"`*"]
     pub unsafe fn SetActivitySourceHost<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::HSTRING>>(&self, activitysourcehost: Param0) -> ::windows::core::Result<()> {
@@ -3187,11 +3205,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUserActivitySourceHostInterop {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUserActivitySourceHostInterop {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3216,6 +3229,11 @@ pub struct IUserActivitySourceHostInterop_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT\"`*"]
 #[repr(transparent)]
 pub struct IUserConsentVerifierInterop(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUserConsentVerifierInterop {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUserConsentVerifierInterop {
     #[doc = "*Required features: `\"Win32_System_WinRT\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -3264,11 +3282,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUserConsentVerifierInterop {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUserConsentVerifierInterop {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3296,6 +3309,11 @@ pub struct IUserConsentVerifierInterop_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT\"`*"]
 #[repr(transparent)]
 pub struct IWeakReference(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWeakReference {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWeakReference {
     #[doc = "*Required features: `\"Win32_System_WinRT\"`*"]
     pub unsafe fn Resolve<T: ::windows::core::Interface>(&self) -> ::windows::core::Result<T> {
@@ -3323,11 +3341,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWeak
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWeakReference {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWeakReference {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3352,6 +3365,11 @@ pub struct IWeakReference_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT\"`*"]
 #[repr(transparent)]
 pub struct IWeakReferenceSource(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWeakReferenceSource {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWeakReferenceSource {
     #[doc = "*Required features: `\"Win32_System_WinRT\"`*"]
     pub unsafe fn GetWeakReference(&self) -> ::windows::core::Result<IWeakReference> {
@@ -3379,11 +3397,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWeak
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWeakReferenceSource {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWeakReferenceSource {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3408,6 +3421,11 @@ pub struct IWeakReferenceSource_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT\"`*"]
 #[repr(transparent)]
 pub struct IWebAuthenticationCoreManagerInterop(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWebAuthenticationCoreManagerInterop {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWebAuthenticationCoreManagerInterop {
     #[doc = "*Required features: `\"Win32_System_WinRT\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -3460,11 +3478,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for IWebA
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a IWebAuthenticationCoreManagerInterop {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IInspectable> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IWebAuthenticationCoreManagerInterop {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IWebAuthenticationCoreManagerInterop {
@@ -3558,6 +3571,7 @@ impl ::core::fmt::Debug for ROPARAMIIDHANDLE {
 }
 unsafe impl ::windows::core::Abi for ROPARAMIIDHANDLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[doc = "*Required features: `\"Win32_System_WinRT\"`*"]
 #[repr(transparent)]
@@ -3586,6 +3600,7 @@ impl ::core::default::Default for RO_ERROR_REPORTING_FLAGS {
 }
 unsafe impl ::windows::core::Abi for RO_ERROR_REPORTING_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RO_ERROR_REPORTING_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3641,6 +3656,7 @@ impl ::core::default::Default for RO_INIT_TYPE {
 }
 unsafe impl ::windows::core::Abi for RO_INIT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RO_INIT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4117,6 +4133,7 @@ impl ::core::fmt::Debug for ServerInformation {
 }
 unsafe impl ::windows::core::Abi for ServerInformation {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ServerInformation {
     fn eq(&self, other: &Self) -> bool {
@@ -4166,6 +4183,7 @@ impl ::core::default::Default for TrustLevel {
 }
 unsafe impl ::windows::core::Abi for TrustLevel {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TrustLevel {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

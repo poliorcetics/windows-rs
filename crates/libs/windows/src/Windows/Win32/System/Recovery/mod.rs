@@ -85,6 +85,7 @@ impl ::core::default::Default for REGISTER_APPLICATION_RESTART_FLAGS {
 }
 unsafe impl ::windows::core::Abi for REGISTER_APPLICATION_RESTART_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for REGISTER_APPLICATION_RESTART_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

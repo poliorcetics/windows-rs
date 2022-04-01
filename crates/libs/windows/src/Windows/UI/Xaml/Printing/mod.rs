@@ -20,11 +20,6 @@ impl AddPagesEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for AddPagesEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AddPagesEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -38,7 +33,6 @@ impl ::core::fmt::Debug for AddPagesEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for AddPagesEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Printing.AddPagesEventArgs;{e2e52be5-056c-4420-9795-cb3526ce0c20})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -144,11 +138,6 @@ impl<F: FnMut(&::core::option::Option<::windows::core::IInspectable>, &::core::o
         ((*this).invoke)(::core::mem::transmute(&sender), ::core::mem::transmute(&e)).into()
     }
 }
-impl ::core::clone::Clone for AddPagesEventHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AddPagesEventHandler {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -166,7 +155,6 @@ unsafe impl ::windows::core::Interface for AddPagesEventHandler {
 }
 unsafe impl ::windows::core::RuntimeType for AddPagesEventHandler {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{d4b57970-57a0-4209-847c-c093b54bc729}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -197,11 +185,6 @@ impl GetPreviewPageEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for GetPreviewPageEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for GetPreviewPageEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -215,7 +198,6 @@ impl ::core::fmt::Debug for GetPreviewPageEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for GetPreviewPageEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Printing.GetPreviewPageEventArgs;{a43d703d-dea9-4df6-a7ed-35049cd485c7})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -321,11 +303,6 @@ impl<F: FnMut(&::core::option::Option<::windows::core::IInspectable>, &::core::o
         ((*this).invoke)(::core::mem::transmute(&sender), ::core::mem::transmute(&e)).into()
     }
 }
-impl ::core::clone::Clone for GetPreviewPageEventHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for GetPreviewPageEventHandler {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -343,7 +320,6 @@ unsafe impl ::windows::core::Interface for GetPreviewPageEventHandler {
 }
 unsafe impl ::windows::core::RuntimeType for GetPreviewPageEventHandler {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{ccb3e9ed-9c11-4e50-ab49-e98086bbfdef}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -357,6 +333,11 @@ pub struct GetPreviewPageEventHandler_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAddPagesEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAddPagesEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAddPagesEventArgs {
     type Vtable = IAddPagesEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe2e52be5_056c_4420_9795_cb3526ce0c20);
@@ -373,6 +354,11 @@ pub struct IAddPagesEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGetPreviewPageEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGetPreviewPageEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGetPreviewPageEventArgs {
     type Vtable = IGetPreviewPageEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa43d703d_dea9_4df6_a7ed_35049cd485c7);
@@ -386,6 +372,11 @@ pub struct IGetPreviewPageEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPaginateEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPaginateEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPaginateEventArgs {
     type Vtable = IPaginateEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xed945fd6_79ab_42b7_930a_3d6e09011d21);
@@ -403,6 +394,11 @@ pub struct IPaginateEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrintDocument(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrintDocument {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrintDocument {
     type Vtable = IPrintDocument_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe44327c3_a999_485b_b1d8_72dc517821e6);
@@ -448,6 +444,11 @@ pub struct IPrintDocument_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrintDocumentFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrintDocumentFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrintDocumentFactory {
     type Vtable = IPrintDocumentFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xfb87b18f_2606_4a2f_99d4_a7cdbc35d7c7);
@@ -461,6 +462,11 @@ pub struct IPrintDocumentFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrintDocumentStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrintDocumentStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrintDocumentStatics {
     type Vtable = IPrintDocumentStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xfd970a3c_b152_49e0_a6bd_6aa6477e43c7);
@@ -500,11 +506,6 @@ impl PaginateEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for PaginateEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PaginateEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -518,7 +519,6 @@ impl ::core::fmt::Debug for PaginateEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for PaginateEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Printing.PaginateEventArgs;{ed945fd6-79ab-42b7-930a-3d6e09011d21})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -624,11 +624,6 @@ impl<F: FnMut(&::core::option::Option<::windows::core::IInspectable>, &::core::o
         ((*this).invoke)(::core::mem::transmute(&sender), ::core::mem::transmute(&e)).into()
     }
 }
-impl ::core::clone::Clone for PaginateEventHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PaginateEventHandler {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -646,7 +641,6 @@ unsafe impl ::windows::core::Interface for PaginateEventHandler {
 }
 unsafe impl ::windows::core::RuntimeType for PaginateEventHandler {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{0cc05b61-811b-4a32-9965-13eb78dbb01b}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -678,6 +672,7 @@ impl ::core::default::Default for PreviewPageCountType {
 }
 unsafe impl ::windows::core::Abi for PreviewPageCountType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PreviewPageCountType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -686,7 +681,6 @@ impl ::core::fmt::Debug for PreviewPageCountType {
 }
 unsafe impl ::windows::core::RuntimeType for PreviewPageCountType {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Xaml.Printing.PreviewPageCountType;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -807,11 +801,6 @@ impl PrintDocument {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for PrintDocument {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PrintDocument {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -825,7 +814,6 @@ impl ::core::fmt::Debug for PrintDocument {
 }
 unsafe impl ::windows::core::RuntimeType for PrintDocument {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Printing.PrintDocument;{e44327c3-a999-485b-b1d8-72dc517821e6})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

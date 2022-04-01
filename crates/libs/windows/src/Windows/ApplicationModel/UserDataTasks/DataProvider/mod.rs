@@ -2,6 +2,11 @@
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IUserDataTaskDataProviderConnection(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUserDataTaskDataProviderConnection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IUserDataTaskDataProviderConnection {
     type Vtable = IUserDataTaskDataProviderConnection_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9ff39d1d_a447_428b_afe9_e5402bdeb041);
@@ -55,6 +60,11 @@ pub struct IUserDataTaskDataProviderConnection_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IUserDataTaskDataProviderTriggerDetails(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUserDataTaskDataProviderTriggerDetails {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IUserDataTaskDataProviderTriggerDetails {
     type Vtable = IUserDataTaskDataProviderTriggerDetails_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xae273202_b1c9_453e_afc5_b30af3bd217d);
@@ -68,6 +78,11 @@ pub struct IUserDataTaskDataProviderTriggerDetails_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IUserDataTaskListCompleteTaskRequest(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUserDataTaskListCompleteTaskRequest {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IUserDataTaskListCompleteTaskRequest {
     type Vtable = IUserDataTaskListCompleteTaskRequest_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf65e14a3_1a42_49da_8552_2873e52c55eb);
@@ -90,6 +105,11 @@ pub struct IUserDataTaskListCompleteTaskRequest_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IUserDataTaskListCompleteTaskRequestEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUserDataTaskListCompleteTaskRequestEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IUserDataTaskListCompleteTaskRequestEventArgs {
     type Vtable = IUserDataTaskListCompleteTaskRequestEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd77c393d_4cf2_48ad_87fd_963f0eaa7a95);
@@ -107,6 +127,11 @@ pub struct IUserDataTaskListCompleteTaskRequestEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IUserDataTaskListCreateOrUpdateTaskRequest(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUserDataTaskListCreateOrUpdateTaskRequest {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IUserDataTaskListCreateOrUpdateTaskRequest {
     type Vtable = IUserDataTaskListCreateOrUpdateTaskRequest_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x2133772c_55c2_4300_8279_04326e07cce4);
@@ -129,6 +154,11 @@ pub struct IUserDataTaskListCreateOrUpdateTaskRequest_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IUserDataTaskListCreateOrUpdateTaskRequestEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUserDataTaskListCreateOrUpdateTaskRequestEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IUserDataTaskListCreateOrUpdateTaskRequestEventArgs {
     type Vtable = IUserDataTaskListCreateOrUpdateTaskRequestEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x12c55a52_e378_419b_ae38_a5e9e604476e);
@@ -146,6 +176,11 @@ pub struct IUserDataTaskListCreateOrUpdateTaskRequestEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IUserDataTaskListDeleteTaskRequest(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUserDataTaskListDeleteTaskRequest {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IUserDataTaskListDeleteTaskRequest {
     type Vtable = IUserDataTaskListDeleteTaskRequest_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x4b863c68_7657_4f3d_b074_d47ec8df07e7);
@@ -168,6 +203,11 @@ pub struct IUserDataTaskListDeleteTaskRequest_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IUserDataTaskListDeleteTaskRequestEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUserDataTaskListDeleteTaskRequestEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IUserDataTaskListDeleteTaskRequestEventArgs {
     type Vtable = IUserDataTaskListDeleteTaskRequestEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x6063dad9_f562_4145_8efe_d50078c92b7f);
@@ -185,6 +225,11 @@ pub struct IUserDataTaskListDeleteTaskRequestEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IUserDataTaskListSkipOccurrenceRequest(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUserDataTaskListSkipOccurrenceRequest {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IUserDataTaskListSkipOccurrenceRequest {
     type Vtable = IUserDataTaskListSkipOccurrenceRequest_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xab87e34d_1cd3_431c_9f58_089aa4338d85);
@@ -207,6 +252,11 @@ pub struct IUserDataTaskListSkipOccurrenceRequest_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IUserDataTaskListSkipOccurrenceRequestEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUserDataTaskListSkipOccurrenceRequestEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IUserDataTaskListSkipOccurrenceRequestEventArgs {
     type Vtable = IUserDataTaskListSkipOccurrenceRequestEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x7a3b924a_cc2f_4e7b_aacd_a5b9d29cfa4e);
@@ -224,6 +274,11 @@ pub struct IUserDataTaskListSkipOccurrenceRequestEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IUserDataTaskListSyncManagerSyncRequest(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUserDataTaskListSyncManagerSyncRequest {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IUserDataTaskListSyncManagerSyncRequest {
     type Vtable = IUserDataTaskListSyncManagerSyncRequest_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x40a73807_7590_4149_ae19_b211431a9f48);
@@ -245,6 +300,11 @@ pub struct IUserDataTaskListSyncManagerSyncRequest_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IUserDataTaskListSyncManagerSyncRequestEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUserDataTaskListSyncManagerSyncRequestEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IUserDataTaskListSyncManagerSyncRequestEventArgs {
     type Vtable = IUserDataTaskListSyncManagerSyncRequestEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x8ead1c12_768e_43bd_8385_5cdc351ffdea);
@@ -344,11 +404,6 @@ impl UserDataTaskDataProviderConnection {
         unsafe { (::windows::core::Interface::vtable(this).Start)(::core::mem::transmute_copy(this)).ok() }
     }
 }
-impl ::core::clone::Clone for UserDataTaskDataProviderConnection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for UserDataTaskDataProviderConnection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -362,7 +417,6 @@ impl ::core::fmt::Debug for UserDataTaskDataProviderConnection {
 }
 unsafe impl ::windows::core::RuntimeType for UserDataTaskDataProviderConnection {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.UserDataTasks.DataProvider.UserDataTaskDataProviderConnection;{9ff39d1d-a447-428b-afe9-e5402bdeb041})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -429,11 +483,6 @@ impl UserDataTaskDataProviderTriggerDetails {
         }
     }
 }
-impl ::core::clone::Clone for UserDataTaskDataProviderTriggerDetails {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for UserDataTaskDataProviderTriggerDetails {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -447,7 +496,6 @@ impl ::core::fmt::Debug for UserDataTaskDataProviderTriggerDetails {
 }
 unsafe impl ::windows::core::RuntimeType for UserDataTaskDataProviderTriggerDetails {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.UserDataTasks.DataProvider.UserDataTaskDataProviderTriggerDetails;{ae273202-b1c9-453e-afc5-b30af3bd217d})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -540,11 +588,6 @@ impl UserDataTaskListCompleteTaskRequest {
         }
     }
 }
-impl ::core::clone::Clone for UserDataTaskListCompleteTaskRequest {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for UserDataTaskListCompleteTaskRequest {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -558,7 +601,6 @@ impl ::core::fmt::Debug for UserDataTaskListCompleteTaskRequest {
 }
 unsafe impl ::windows::core::RuntimeType for UserDataTaskListCompleteTaskRequest {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.UserDataTasks.DataProvider.UserDataTaskListCompleteTaskRequest;{f65e14a3-1a42-49da-8552-2873e52c55eb})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -634,11 +676,6 @@ impl UserDataTaskListCompleteTaskRequestEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for UserDataTaskListCompleteTaskRequestEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for UserDataTaskListCompleteTaskRequestEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -652,7 +689,6 @@ impl ::core::fmt::Debug for UserDataTaskListCompleteTaskRequestEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for UserDataTaskListCompleteTaskRequestEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.UserDataTasks.DataProvider.UserDataTaskListCompleteTaskRequestEventArgs;{d77c393d-4cf2-48ad-87fd-963f0eaa7a95})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -745,11 +781,6 @@ impl UserDataTaskListCreateOrUpdateTaskRequest {
         }
     }
 }
-impl ::core::clone::Clone for UserDataTaskListCreateOrUpdateTaskRequest {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for UserDataTaskListCreateOrUpdateTaskRequest {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -763,7 +794,6 @@ impl ::core::fmt::Debug for UserDataTaskListCreateOrUpdateTaskRequest {
 }
 unsafe impl ::windows::core::RuntimeType for UserDataTaskListCreateOrUpdateTaskRequest {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.UserDataTasks.DataProvider.UserDataTaskListCreateOrUpdateTaskRequest;{2133772c-55c2-4300-8279-04326e07cce4})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -839,11 +869,6 @@ impl UserDataTaskListCreateOrUpdateTaskRequestEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for UserDataTaskListCreateOrUpdateTaskRequestEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for UserDataTaskListCreateOrUpdateTaskRequestEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -857,7 +882,6 @@ impl ::core::fmt::Debug for UserDataTaskListCreateOrUpdateTaskRequestEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for UserDataTaskListCreateOrUpdateTaskRequestEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.UserDataTasks.DataProvider.UserDataTaskListCreateOrUpdateTaskRequestEventArgs;{12c55a52-e378-419b-ae38-a5e9e604476e})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -950,11 +974,6 @@ impl UserDataTaskListDeleteTaskRequest {
         }
     }
 }
-impl ::core::clone::Clone for UserDataTaskListDeleteTaskRequest {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for UserDataTaskListDeleteTaskRequest {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -968,7 +987,6 @@ impl ::core::fmt::Debug for UserDataTaskListDeleteTaskRequest {
 }
 unsafe impl ::windows::core::RuntimeType for UserDataTaskListDeleteTaskRequest {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.UserDataTasks.DataProvider.UserDataTaskListDeleteTaskRequest;{4b863c68-7657-4f3d-b074-d47ec8df07e7})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1044,11 +1062,6 @@ impl UserDataTaskListDeleteTaskRequestEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for UserDataTaskListDeleteTaskRequestEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for UserDataTaskListDeleteTaskRequestEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1062,7 +1075,6 @@ impl ::core::fmt::Debug for UserDataTaskListDeleteTaskRequestEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for UserDataTaskListDeleteTaskRequestEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.UserDataTasks.DataProvider.UserDataTaskListDeleteTaskRequestEventArgs;{6063dad9-f562-4145-8efe-d50078c92b7f})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1155,11 +1167,6 @@ impl UserDataTaskListSkipOccurrenceRequest {
         }
     }
 }
-impl ::core::clone::Clone for UserDataTaskListSkipOccurrenceRequest {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for UserDataTaskListSkipOccurrenceRequest {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1173,7 +1180,6 @@ impl ::core::fmt::Debug for UserDataTaskListSkipOccurrenceRequest {
 }
 unsafe impl ::windows::core::RuntimeType for UserDataTaskListSkipOccurrenceRequest {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.UserDataTasks.DataProvider.UserDataTaskListSkipOccurrenceRequest;{ab87e34d-1cd3-431c-9f58-089aa4338d85})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1249,11 +1255,6 @@ impl UserDataTaskListSkipOccurrenceRequestEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for UserDataTaskListSkipOccurrenceRequestEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for UserDataTaskListSkipOccurrenceRequestEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1267,7 +1268,6 @@ impl ::core::fmt::Debug for UserDataTaskListSkipOccurrenceRequestEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for UserDataTaskListSkipOccurrenceRequestEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.UserDataTasks.DataProvider.UserDataTaskListSkipOccurrenceRequestEventArgs;{7a3b924a-cc2f-4e7b-aacd-a5b9d29cfa4e})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1352,11 +1352,6 @@ impl UserDataTaskListSyncManagerSyncRequest {
         }
     }
 }
-impl ::core::clone::Clone for UserDataTaskListSyncManagerSyncRequest {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for UserDataTaskListSyncManagerSyncRequest {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1370,7 +1365,6 @@ impl ::core::fmt::Debug for UserDataTaskListSyncManagerSyncRequest {
 }
 unsafe impl ::windows::core::RuntimeType for UserDataTaskListSyncManagerSyncRequest {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.UserDataTasks.DataProvider.UserDataTaskListSyncManagerSyncRequest;{40a73807-7590-4149-ae19-b211431a9f48})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1446,11 +1440,6 @@ impl UserDataTaskListSyncManagerSyncRequestEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for UserDataTaskListSyncManagerSyncRequestEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for UserDataTaskListSyncManagerSyncRequestEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1464,7 +1453,6 @@ impl ::core::fmt::Debug for UserDataTaskListSyncManagerSyncRequestEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for UserDataTaskListSyncManagerSyncRequestEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.UserDataTasks.DataProvider.UserDataTaskListSyncManagerSyncRequestEventArgs;{8ead1c12-768e-43bd-8385-5cdc351ffdea})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

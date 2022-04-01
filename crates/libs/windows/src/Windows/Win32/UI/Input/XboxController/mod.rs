@@ -40,6 +40,7 @@ impl ::core::fmt::Debug for XINPUT_BATTERY_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for XINPUT_BATTERY_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for XINPUT_BATTERY_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -74,6 +75,7 @@ impl ::core::fmt::Debug for XINPUT_CAPABILITIES {
 }
 unsafe impl ::windows::core::Abi for XINPUT_CAPABILITIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for XINPUT_CAPABILITIES {
     fn eq(&self, other: &Self) -> bool {
@@ -152,6 +154,7 @@ impl ::core::fmt::Debug for XINPUT_GAMEPAD {
 }
 unsafe impl ::windows::core::Abi for XINPUT_GAMEPAD {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for XINPUT_GAMEPAD {
     fn eq(&self, other: &Self) -> bool {
@@ -220,6 +223,7 @@ impl ::core::fmt::Debug for XINPUT_KEYSTROKE {
 }
 unsafe impl ::windows::core::Abi for XINPUT_KEYSTROKE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for XINPUT_KEYSTROKE {
     fn eq(&self, other: &Self) -> bool {
@@ -257,6 +261,7 @@ impl ::core::fmt::Debug for XINPUT_STATE {
 }
 unsafe impl ::windows::core::Abi for XINPUT_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for XINPUT_STATE {
     fn eq(&self, other: &Self) -> bool {
@@ -288,6 +293,7 @@ impl ::core::fmt::Debug for XINPUT_VIBRATION {
 }
 unsafe impl ::windows::core::Abi for XINPUT_VIBRATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for XINPUT_VIBRATION {
     fn eq(&self, other: &Self) -> bool {
@@ -381,6 +387,7 @@ impl ::core::default::Default for XINPUT_VIRTUAL_KEY {
 }
 unsafe impl ::windows::core::Abi for XINPUT_VIRTUAL_KEY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for XINPUT_VIRTUAL_KEY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

@@ -92,11 +92,6 @@ impl DevicePortalConnection {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for DevicePortalConnection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DevicePortalConnection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -110,7 +105,6 @@ impl ::core::fmt::Debug for DevicePortalConnection {
 }
 unsafe impl ::windows::core::RuntimeType for DevicePortalConnection {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.System.Diagnostics.DevicePortal.DevicePortalConnection;{0f447f51-1198-4da1-8d54-bdef393e09b6})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -177,11 +171,6 @@ impl DevicePortalConnectionClosedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for DevicePortalConnectionClosedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DevicePortalConnectionClosedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -195,7 +184,6 @@ impl ::core::fmt::Debug for DevicePortalConnectionClosedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for DevicePortalConnectionClosedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.System.Diagnostics.DevicePortal.DevicePortalConnectionClosedEventArgs;{fcf70e38-7032-428c-9f50-945c15a9f0cb})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -274,6 +262,7 @@ impl ::core::default::Default for DevicePortalConnectionClosedReason {
 }
 unsafe impl ::windows::core::Abi for DevicePortalConnectionClosedReason {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DevicePortalConnectionClosedReason {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -282,7 +271,6 @@ impl ::core::fmt::Debug for DevicePortalConnectionClosedReason {
 }
 unsafe impl ::windows::core::RuntimeType for DevicePortalConnectionClosedReason {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.System.Diagnostics.DevicePortal.DevicePortalConnectionClosedReason;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -336,11 +324,6 @@ impl DevicePortalConnectionRequestReceivedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for DevicePortalConnectionRequestReceivedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DevicePortalConnectionRequestReceivedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -354,7 +337,6 @@ impl ::core::fmt::Debug for DevicePortalConnectionRequestReceivedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for DevicePortalConnectionRequestReceivedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.System.Diagnostics.DevicePortal.DevicePortalConnectionRequestReceivedEventArgs;{64dae045-6fda-4459-9ebd-ecce22e38559})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -411,6 +393,11 @@ unsafe impl ::core::marker::Sync for DevicePortalConnectionRequestReceivedEventA
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDevicePortalConnection(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDevicePortalConnection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDevicePortalConnection {
     type Vtable = IDevicePortalConnection_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x0f447f51_1198_4da1_8d54_bdef393e09b6);
@@ -439,6 +426,11 @@ pub struct IDevicePortalConnection_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDevicePortalConnectionClosedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDevicePortalConnectionClosedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDevicePortalConnectionClosedEventArgs {
     type Vtable = IDevicePortalConnectionClosedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xfcf70e38_7032_428c_9f50_945c15a9f0cb);
@@ -452,6 +444,11 @@ pub struct IDevicePortalConnectionClosedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDevicePortalConnectionRequestReceivedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDevicePortalConnectionRequestReceivedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDevicePortalConnectionRequestReceivedEventArgs {
     type Vtable = IDevicePortalConnectionRequestReceivedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x64dae045_6fda_4459_9ebd_ecce22e38559);
@@ -472,6 +469,11 @@ pub struct IDevicePortalConnectionRequestReceivedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDevicePortalConnectionStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDevicePortalConnectionStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDevicePortalConnectionStatics {
     type Vtable = IDevicePortalConnectionStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x4bbe31e7_e9b9_4645_8fed_a53eea0edbd6);
@@ -488,6 +490,11 @@ pub struct IDevicePortalConnectionStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDevicePortalWebSocketConnection(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDevicePortalWebSocketConnection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDevicePortalWebSocketConnection {
     type Vtable = IDevicePortalWebSocketConnection_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x67657920_d65a_42f0_aef4_787808098b7b);
@@ -520,6 +527,11 @@ pub struct IDevicePortalWebSocketConnection_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDevicePortalWebSocketConnectionRequestReceivedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDevicePortalWebSocketConnectionRequestReceivedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDevicePortalWebSocketConnectionRequestReceivedEventArgs {
     type Vtable = IDevicePortalWebSocketConnectionRequestReceivedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x79fdcaba_175c_4739_9f74_dda797c35b3f);

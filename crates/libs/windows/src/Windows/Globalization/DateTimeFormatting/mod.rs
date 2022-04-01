@@ -248,11 +248,6 @@ impl DateTimeFormatter {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for DateTimeFormatter {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DateTimeFormatter {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -266,7 +261,6 @@ impl ::core::fmt::Debug for DateTimeFormatter {
 }
 unsafe impl ::windows::core::RuntimeType for DateTimeFormatter {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Globalization.DateTimeFormatting.DateTimeFormatter;{95eeca10-73e0-4e4b-a183-3d6ad0ba35ec})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -341,6 +335,7 @@ impl ::core::default::Default for DayFormat {
 }
 unsafe impl ::windows::core::Abi for DayFormat {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DayFormat {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -349,7 +344,6 @@ impl ::core::fmt::Debug for DayFormat {
 }
 unsafe impl ::windows::core::RuntimeType for DayFormat {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Globalization.DateTimeFormatting.DayFormat;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -377,6 +371,7 @@ impl ::core::default::Default for DayOfWeekFormat {
 }
 unsafe impl ::windows::core::Abi for DayOfWeekFormat {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DayOfWeekFormat {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -385,7 +380,6 @@ impl ::core::fmt::Debug for DayOfWeekFormat {
 }
 unsafe impl ::windows::core::RuntimeType for DayOfWeekFormat {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Globalization.DateTimeFormatting.DayOfWeekFormat;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -411,6 +405,7 @@ impl ::core::default::Default for HourFormat {
 }
 unsafe impl ::windows::core::Abi for HourFormat {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HourFormat {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -419,7 +414,6 @@ impl ::core::fmt::Debug for HourFormat {
 }
 unsafe impl ::windows::core::RuntimeType for HourFormat {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Globalization.DateTimeFormatting.HourFormat;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -427,6 +421,11 @@ unsafe impl ::windows::core::RuntimeType for HourFormat {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDateTimeFormatter(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDateTimeFormatter {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDateTimeFormatter {
     type Vtable = IDateTimeFormatter_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x95eeca10_73e0_4e4b_a183_3d6ad0ba35ec);
@@ -466,6 +465,11 @@ pub struct IDateTimeFormatter_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDateTimeFormatter2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDateTimeFormatter2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDateTimeFormatter2 {
     type Vtable = IDateTimeFormatter2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x27c91a86_bdaa_4fd0_9e36_671d5aa5ee03);
@@ -482,6 +486,11 @@ pub struct IDateTimeFormatter2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDateTimeFormatterFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDateTimeFormatterFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDateTimeFormatterFactory {
     type Vtable = IDateTimeFormatterFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xec8d8a53_1a2e_412d_8815_3b745fb1a2a0);
@@ -513,6 +522,11 @@ pub struct IDateTimeFormatterFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDateTimeFormatterStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDateTimeFormatterStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDateTimeFormatterStatics {
     type Vtable = IDateTimeFormatterStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xbfcde7c0_df4c_4a2e_9012_f47daf3f1212);
@@ -547,6 +561,7 @@ impl ::core::default::Default for MinuteFormat {
 }
 unsafe impl ::windows::core::Abi for MinuteFormat {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MinuteFormat {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -555,7 +570,6 @@ impl ::core::fmt::Debug for MinuteFormat {
 }
 unsafe impl ::windows::core::RuntimeType for MinuteFormat {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Globalization.DateTimeFormatting.MinuteFormat;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -584,6 +598,7 @@ impl ::core::default::Default for MonthFormat {
 }
 unsafe impl ::windows::core::Abi for MonthFormat {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MonthFormat {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -592,7 +607,6 @@ impl ::core::fmt::Debug for MonthFormat {
 }
 unsafe impl ::windows::core::RuntimeType for MonthFormat {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Globalization.DateTimeFormatting.MonthFormat;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -618,6 +632,7 @@ impl ::core::default::Default for SecondFormat {
 }
 unsafe impl ::windows::core::Abi for SecondFormat {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SecondFormat {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -626,7 +641,6 @@ impl ::core::fmt::Debug for SecondFormat {
 }
 unsafe impl ::windows::core::RuntimeType for SecondFormat {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Globalization.DateTimeFormatting.SecondFormat;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -654,6 +668,7 @@ impl ::core::default::Default for YearFormat {
 }
 unsafe impl ::windows::core::Abi for YearFormat {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for YearFormat {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -662,7 +677,6 @@ impl ::core::fmt::Debug for YearFormat {
 }
 unsafe impl ::windows::core::RuntimeType for YearFormat {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Globalization.DateTimeFormatting.YearFormat;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }

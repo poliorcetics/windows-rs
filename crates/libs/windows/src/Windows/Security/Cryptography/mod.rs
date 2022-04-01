@@ -27,6 +27,7 @@ impl ::core::default::Default for BinaryStringEncoding {
 }
 unsafe impl ::windows::core::Abi for BinaryStringEncoding {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for BinaryStringEncoding {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -35,7 +36,6 @@ impl ::core::fmt::Debug for BinaryStringEncoding {
 }
 unsafe impl ::windows::core::RuntimeType for BinaryStringEncoding {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Security.Cryptography.BinaryStringEncoding;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -139,6 +139,11 @@ impl ::windows::core::RuntimeName for CryptographicBuffer {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICryptographicBufferStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICryptographicBufferStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICryptographicBufferStatics {
     type Vtable = ICryptographicBufferStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x320b7e22_3cb0_4cdf_8663_1d28910065eb);

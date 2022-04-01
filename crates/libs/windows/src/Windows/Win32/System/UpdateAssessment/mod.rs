@@ -2,6 +2,11 @@
 #[doc = "*Required features: `\"Win32_System_UpdateAssessment\"`*"]
 #[repr(transparent)]
 pub struct IWaaSAssessor(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWaaSAssessor {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWaaSAssessor {
     #[doc = "*Required features: `\"Win32_System_UpdateAssessment\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -28,11 +33,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IWaaSAsse
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWaaSAssessor {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IWaaSAssessor {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IWaaSAssessor {
@@ -102,6 +102,7 @@ impl ::core::fmt::Debug for OSUpdateAssessment {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for OSUpdateAssessment {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for OSUpdateAssessment {
@@ -137,6 +138,7 @@ impl ::core::fmt::Debug for UpdateAssessment {
 }
 unsafe impl ::windows::core::Abi for UpdateAssessment {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for UpdateAssessment {
     fn eq(&self, other: &Self) -> bool {
@@ -190,6 +192,7 @@ impl ::core::default::Default for UpdateAssessmentStatus {
 }
 unsafe impl ::windows::core::Abi for UpdateAssessmentStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UpdateAssessmentStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -221,6 +224,7 @@ impl ::core::default::Default for UpdateImpactLevel {
 }
 unsafe impl ::windows::core::Abi for UpdateImpactLevel {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UpdateImpactLevel {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

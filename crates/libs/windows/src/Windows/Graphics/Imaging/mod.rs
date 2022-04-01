@@ -21,6 +21,7 @@ impl ::core::default::Default for BitmapAlphaMode {
 }
 unsafe impl ::windows::core::Abi for BitmapAlphaMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for BitmapAlphaMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -29,7 +30,6 @@ impl ::core::fmt::Debug for BitmapAlphaMode {
 }
 unsafe impl ::windows::core::RuntimeType for BitmapAlphaMode {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Graphics.Imaging.BitmapAlphaMode;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -55,10 +55,10 @@ impl ::core::fmt::Debug for BitmapBounds {
 }
 unsafe impl ::windows::core::Abi for BitmapBounds {
     type Abi = Self;
+    type DefaultType = Self;
 }
 unsafe impl ::windows::core::RuntimeType for BitmapBounds {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"struct(Windows.Graphics.Imaging.BitmapBounds;u4;u4;u4;u4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -110,11 +110,6 @@ impl BitmapBuffer {
         }
     }
 }
-impl ::core::clone::Clone for BitmapBuffer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for BitmapBuffer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -128,7 +123,6 @@ impl ::core::fmt::Debug for BitmapBuffer {
 }
 unsafe impl ::windows::core::RuntimeType for BitmapBuffer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Imaging.BitmapBuffer;{a53e04c4-399c-438c-b28f-a63a6b83d1a1})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -256,6 +250,7 @@ impl ::core::default::Default for BitmapBufferAccessMode {
 }
 unsafe impl ::windows::core::Abi for BitmapBufferAccessMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for BitmapBufferAccessMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -264,7 +259,6 @@ impl ::core::fmt::Debug for BitmapBufferAccessMode {
 }
 unsafe impl ::windows::core::RuntimeType for BitmapBufferAccessMode {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Graphics.Imaging.BitmapBufferAccessMode;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -308,11 +302,6 @@ impl BitmapCodecInformation {
         }
     }
 }
-impl ::core::clone::Clone for BitmapCodecInformation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for BitmapCodecInformation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -326,7 +315,6 @@ impl ::core::fmt::Debug for BitmapCodecInformation {
 }
 unsafe impl ::windows::core::RuntimeType for BitmapCodecInformation {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Imaging.BitmapCodecInformation;{400caaf2-c4b0-4392-a3b0-6f6f9ba95cb4})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -650,11 +638,6 @@ impl BitmapDecoder {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for BitmapDecoder {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for BitmapDecoder {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -668,7 +651,6 @@ impl ::core::fmt::Debug for BitmapDecoder {
 }
 unsafe impl ::windows::core::RuntimeType for BitmapDecoder {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Imaging.BitmapDecoder;{acef22ba-1d74-4c91-9dfc-9620745233e6})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -978,11 +960,6 @@ impl BitmapEncoder {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for BitmapEncoder {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for BitmapEncoder {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -996,7 +973,6 @@ impl ::core::fmt::Debug for BitmapEncoder {
 }
 unsafe impl ::windows::core::RuntimeType for BitmapEncoder {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Imaging.BitmapEncoder;{2bc468e3-e1f8-4b54-95e8-32919551ce62})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1072,6 +1048,7 @@ impl ::core::default::Default for BitmapFlip {
 }
 unsafe impl ::windows::core::Abi for BitmapFlip {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for BitmapFlip {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1080,7 +1057,6 @@ impl ::core::fmt::Debug for BitmapFlip {
 }
 unsafe impl ::windows::core::RuntimeType for BitmapFlip {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Graphics.Imaging.BitmapFlip;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1216,11 +1192,6 @@ impl BitmapFrame {
         }
     }
 }
-impl ::core::clone::Clone for BitmapFrame {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for BitmapFrame {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1234,7 +1205,6 @@ impl ::core::fmt::Debug for BitmapFrame {
 }
 unsafe impl ::windows::core::RuntimeType for BitmapFrame {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Imaging.BitmapFrame;{72a49a1c-8081-438d-91bc-94ecfc8185c6})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1355,6 +1325,7 @@ impl ::core::default::Default for BitmapInterpolationMode {
 }
 unsafe impl ::windows::core::Abi for BitmapInterpolationMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for BitmapInterpolationMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1363,7 +1334,6 @@ impl ::core::fmt::Debug for BitmapInterpolationMode {
 }
 unsafe impl ::windows::core::RuntimeType for BitmapInterpolationMode {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Graphics.Imaging.BitmapInterpolationMode;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1396,6 +1366,7 @@ impl ::core::default::Default for BitmapPixelFormat {
 }
 unsafe impl ::windows::core::Abi for BitmapPixelFormat {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for BitmapPixelFormat {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1404,7 +1375,6 @@ impl ::core::fmt::Debug for BitmapPixelFormat {
 }
 unsafe impl ::windows::core::RuntimeType for BitmapPixelFormat {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Graphics.Imaging.BitmapPixelFormat;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1430,10 +1400,10 @@ impl ::core::fmt::Debug for BitmapPlaneDescription {
 }
 unsafe impl ::windows::core::Abi for BitmapPlaneDescription {
     type Abi = Self;
+    type DefaultType = Self;
 }
 unsafe impl ::windows::core::RuntimeType for BitmapPlaneDescription {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"struct(Windows.Graphics.Imaging.BitmapPlaneDescription;i4;i4;i4;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1472,11 +1442,6 @@ impl BitmapProperties {
         }
     }
 }
-impl ::core::clone::Clone for BitmapProperties {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for BitmapProperties {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1490,7 +1455,6 @@ impl ::core::fmt::Debug for BitmapProperties {
 }
 unsafe impl ::windows::core::RuntimeType for BitmapProperties {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Imaging.BitmapProperties;{ea9f4f1b-b505-4450-a4d1-e8ca94529d8d})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1580,11 +1544,6 @@ impl BitmapPropertiesView {
         }
     }
 }
-impl ::core::clone::Clone for BitmapPropertiesView {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for BitmapPropertiesView {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1598,7 +1557,6 @@ impl ::core::fmt::Debug for BitmapPropertiesView {
 }
 unsafe impl ::windows::core::RuntimeType for BitmapPropertiesView {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Imaging.BitmapPropertiesView;{7e0fe87a-3a70-48f8-9c55-196cf5a545f5})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1755,12 +1713,6 @@ impl BitmapPropertySet {
     }
 }
 #[cfg(feature = "Foundation_Collections")]
-impl ::core::clone::Clone for BitmapPropertySet {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Foundation_Collections")]
 impl ::core::cmp::PartialEq for BitmapPropertySet {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1777,7 +1729,6 @@ impl ::core::fmt::Debug for BitmapPropertySet {
 #[cfg(feature = "Foundation_Collections")]
 unsafe impl ::windows::core::RuntimeType for BitmapPropertySet {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Imaging.BitmapPropertySet;pinterface({3c2925fe-8519-45c1-aa79-197b6718c1c1};string;rc(Windows.Graphics.Imaging.BitmapTypedValue;{cd8044a9-2443-4000-b0cd-79316c56f589})))");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1934,6 +1885,7 @@ impl ::core::default::Default for BitmapRotation {
 }
 unsafe impl ::windows::core::Abi for BitmapRotation {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for BitmapRotation {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1942,7 +1894,6 @@ impl ::core::fmt::Debug for BitmapRotation {
 }
 unsafe impl ::windows::core::RuntimeType for BitmapRotation {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Graphics.Imaging.BitmapRotation;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1966,10 +1917,10 @@ impl ::core::fmt::Debug for BitmapSize {
 }
 unsafe impl ::windows::core::Abi for BitmapSize {
     type Abi = Self;
+    type DefaultType = Self;
 }
 unsafe impl ::windows::core::RuntimeType for BitmapSize {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"struct(Windows.Graphics.Imaging.BitmapSize;u4;u4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2075,11 +2026,6 @@ impl BitmapTransform {
         unsafe { (::windows::core::Interface::vtable(this).SetBounds)(::core::mem::transmute_copy(this), value.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for BitmapTransform {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for BitmapTransform {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2093,7 +2039,6 @@ impl ::core::fmt::Debug for BitmapTransform {
 }
 unsafe impl ::windows::core::RuntimeType for BitmapTransform {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Imaging.BitmapTransform;{ae755344-e268-4d35-adcf-e995d31a8d34})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2182,11 +2127,6 @@ impl BitmapTypedValue {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for BitmapTypedValue {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for BitmapTypedValue {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2200,7 +2140,6 @@ impl ::core::fmt::Debug for BitmapTypedValue {
 }
 unsafe impl ::windows::core::RuntimeType for BitmapTypedValue {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Imaging.BitmapTypedValue;{cd8044a9-2443-4000-b0cd-79316c56f589})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2275,6 +2214,7 @@ impl ::core::default::Default for ColorManagementMode {
 }
 unsafe impl ::windows::core::Abi for ColorManagementMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ColorManagementMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2283,7 +2223,6 @@ impl ::core::fmt::Debug for ColorManagementMode {
 }
 unsafe impl ::windows::core::RuntimeType for ColorManagementMode {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Graphics.Imaging.ColorManagementMode;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2309,6 +2248,7 @@ impl ::core::default::Default for ExifOrientationMode {
 }
 unsafe impl ::windows::core::Abi for ExifOrientationMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ExifOrientationMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2317,7 +2257,6 @@ impl ::core::fmt::Debug for ExifOrientationMode {
 }
 unsafe impl ::windows::core::RuntimeType for ExifOrientationMode {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Graphics.Imaging.ExifOrientationMode;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2325,6 +2264,11 @@ unsafe impl ::windows::core::RuntimeType for ExifOrientationMode {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBitmapBuffer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBitmapBuffer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBitmapBuffer {
     type Vtable = IBitmapBuffer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa53e04c4_399c_438c_b28f_a63a6b83d1a1);
@@ -2339,6 +2283,11 @@ pub struct IBitmapBuffer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBitmapCodecInformation(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBitmapCodecInformation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBitmapCodecInformation {
     type Vtable = IBitmapCodecInformation_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x400caaf2_c4b0_4392_a3b0_6f6f9ba95cb4);
@@ -2361,6 +2310,11 @@ pub struct IBitmapCodecInformation_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBitmapDecoder(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBitmapDecoder {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBitmapDecoder {
     type Vtable = IBitmapDecoder_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xacef22ba_1d74_4c91_9dfc_9620745233e6);
@@ -2384,6 +2338,11 @@ pub struct IBitmapDecoder_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBitmapDecoderStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBitmapDecoderStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBitmapDecoderStatics {
     type Vtable = IBitmapDecoderStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x438ccb26_bcef_4e95_bad6_23a822e58d01);
@@ -2415,6 +2374,11 @@ pub struct IBitmapDecoderStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBitmapDecoderStatics2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBitmapDecoderStatics2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBitmapDecoderStatics2 {
     type Vtable = IBitmapDecoderStatics2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x50ba68ea_99a1_40c4_80d9_aef0dafa6c3f);
@@ -2429,6 +2393,11 @@ pub struct IBitmapDecoderStatics2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBitmapEncoder(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBitmapEncoder {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBitmapEncoder {
     type Vtable = IBitmapEncoder_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x2bc468e3_e1f8_4b54_95e8_32919551ce62);
@@ -2464,6 +2433,11 @@ pub struct IBitmapEncoder_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBitmapEncoderStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBitmapEncoderStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBitmapEncoderStatics {
     type Vtable = IBitmapEncoderStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa74356a7_a4e4_4eb9_8e40_564de7e1ccb2);
@@ -2502,6 +2476,11 @@ pub struct IBitmapEncoderStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBitmapEncoderStatics2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBitmapEncoderStatics2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBitmapEncoderStatics2 {
     type Vtable = IBitmapEncoderStatics2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x33cbc259_fe31_41b1_b812_086d21e87e16);
@@ -2515,6 +2494,11 @@ pub struct IBitmapEncoderStatics2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBitmapEncoderWithSoftwareBitmap(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBitmapEncoderWithSoftwareBitmap {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBitmapEncoderWithSoftwareBitmap {
     type Vtable = IBitmapEncoderWithSoftwareBitmap_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x686cd241_4330_4c77_ace4_0334968b1768);
@@ -2528,6 +2512,11 @@ pub struct IBitmapEncoderWithSoftwareBitmap_Vtbl {
 #[doc = "*Required features: `\"Graphics_Imaging\"`*"]
 #[repr(transparent)]
 pub struct IBitmapFrame(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBitmapFrame {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IBitmapFrame {
     #[doc = "*Required features: `\"Graphics_Imaging\"`, `\"Foundation\"`, `\"Storage_Streams\"`*"]
     #[cfg(all(feature = "Foundation", feature = "Storage_Streams"))]
@@ -2669,11 +2658,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IBitmapFrame {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IBitmapFrame {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2687,7 +2671,6 @@ impl ::core::fmt::Debug for IBitmapFrame {
 }
 unsafe impl ::windows::core::RuntimeType for IBitmapFrame {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{72a49a1c-8081-438d-91bc-94ecfc8185c6}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2725,6 +2708,11 @@ pub struct IBitmapFrame_Vtbl {
 #[doc = "*Required features: `\"Graphics_Imaging\"`*"]
 #[repr(transparent)]
 pub struct IBitmapFrameWithSoftwareBitmap(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBitmapFrameWithSoftwareBitmap {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IBitmapFrameWithSoftwareBitmap {
     #[doc = "*Required features: `\"Graphics_Imaging\"`, `\"Foundation\"`*"]
     #[cfg(feature = "Foundation")]
@@ -2915,11 +2903,6 @@ impl<'a> ::windows::core::IntoParam<'a, IBitmapFrame> for &IBitmapFrameWithSoftw
         ::core::convert::TryInto::<IBitmapFrame>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IBitmapFrameWithSoftwareBitmap {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IBitmapFrameWithSoftwareBitmap {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2933,7 +2916,6 @@ impl ::core::fmt::Debug for IBitmapFrameWithSoftwareBitmap {
 }
 unsafe impl ::windows::core::RuntimeType for IBitmapFrameWithSoftwareBitmap {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{fe287c9a-420c-4963-87ad-691436e08383}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2962,6 +2944,11 @@ pub struct IBitmapFrameWithSoftwareBitmap_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBitmapProperties(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBitmapProperties {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBitmapProperties {
     type Vtable = IBitmapProperties_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xea9f4f1b_b505_4450_a4d1_e8ca94529d8d);
@@ -2978,6 +2965,11 @@ pub struct IBitmapProperties_Vtbl {
 #[doc = "*Required features: `\"Graphics_Imaging\"`*"]
 #[repr(transparent)]
 pub struct IBitmapPropertiesView(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBitmapPropertiesView {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IBitmapPropertiesView {
     #[doc = "*Required features: `\"Graphics_Imaging\"`, `\"Foundation_Collections\"`*"]
     #[cfg(feature = "Foundation_Collections")]
@@ -3029,11 +3021,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IBitmapPropertiesView {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IBitmapPropertiesView {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3047,7 +3034,6 @@ impl ::core::fmt::Debug for IBitmapPropertiesView {
 }
 unsafe impl ::windows::core::RuntimeType for IBitmapPropertiesView {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{7e0fe87a-3a70-48f8-9c55-196cf5a545f5}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3068,6 +3054,11 @@ pub struct IBitmapPropertiesView_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBitmapTransform(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBitmapTransform {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBitmapTransform {
     type Vtable = IBitmapTransform_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xae755344_e268_4d35_adcf_e995d31a8d34);
@@ -3092,6 +3083,11 @@ pub struct IBitmapTransform_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBitmapTypedValue(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBitmapTypedValue {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBitmapTypedValue {
     type Vtable = IBitmapTypedValue_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xcd8044a9_2443_4000_b0cd_79316c56f589);
@@ -3109,6 +3105,11 @@ pub struct IBitmapTypedValue_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBitmapTypedValueFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBitmapTypedValueFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBitmapTypedValueFactory {
     type Vtable = IBitmapTypedValueFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x92dbb599_ce13_46bb_9545_cb3a3f63eb8b);
@@ -3125,6 +3126,11 @@ pub struct IBitmapTypedValueFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPixelDataProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPixelDataProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPixelDataProvider {
     type Vtable = IPixelDataProvider_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xdd831f25_185c_4595_9fb9_ccbe6ec18a6f);
@@ -3138,6 +3144,11 @@ pub struct IPixelDataProvider_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISoftwareBitmap(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISoftwareBitmap {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISoftwareBitmap {
     type Vtable = ISoftwareBitmap_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x689e0708_7eef_483f_963f_da938818e073);
@@ -3170,6 +3181,11 @@ pub struct ISoftwareBitmap_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISoftwareBitmapFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISoftwareBitmapFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISoftwareBitmapFactory {
     type Vtable = ISoftwareBitmapFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc99feb69_2d62_4d47_a6b3_4fdb6a07fdf8);
@@ -3184,6 +3200,11 @@ pub struct ISoftwareBitmapFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISoftwareBitmapStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISoftwareBitmapStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISoftwareBitmapStatics {
     type Vtable = ISoftwareBitmapStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xdf0385db_672f_4a9d_806e_c2442f343e86);
@@ -3337,12 +3358,6 @@ impl ImageStream {
     }
 }
 #[cfg(feature = "Storage_Streams")]
-impl ::core::clone::Clone for ImageStream {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Storage_Streams")]
 impl ::core::cmp::PartialEq for ImageStream {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3359,7 +3374,6 @@ impl ::core::fmt::Debug for ImageStream {
 #[cfg(feature = "Storage_Streams")]
 unsafe impl ::windows::core::RuntimeType for ImageStream {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Imaging.ImageStream;{cc254827-4b3d-438f-9232-10c76bc7e038})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3604,6 +3618,7 @@ impl ::core::default::Default for JpegSubsamplingMode {
 }
 unsafe impl ::windows::core::Abi for JpegSubsamplingMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for JpegSubsamplingMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3612,7 +3627,6 @@ impl ::core::fmt::Debug for JpegSubsamplingMode {
 }
 unsafe impl ::windows::core::RuntimeType for JpegSubsamplingMode {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Graphics.Imaging.JpegSubsamplingMode;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -3630,11 +3644,6 @@ impl PixelDataProvider {
         }
     }
 }
-impl ::core::clone::Clone for PixelDataProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PixelDataProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3648,7 +3657,6 @@ impl ::core::fmt::Debug for PixelDataProvider {
 }
 unsafe impl ::windows::core::RuntimeType for PixelDataProvider {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Imaging.PixelDataProvider;{dd831f25-185c-4595-9fb9-ccbe6ec18a6f})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3728,6 +3736,7 @@ impl ::core::default::Default for PngFilterMode {
 }
 unsafe impl ::windows::core::Abi for PngFilterMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PngFilterMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3736,7 +3745,6 @@ impl ::core::fmt::Debug for PngFilterMode {
 }
 unsafe impl ::windows::core::RuntimeType for PngFilterMode {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Graphics.Imaging.PngFilterMode;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -3928,11 +3936,6 @@ impl SoftwareBitmap {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for SoftwareBitmap {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SoftwareBitmap {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3946,7 +3949,6 @@ impl ::core::fmt::Debug for SoftwareBitmap {
 }
 unsafe impl ::windows::core::RuntimeType for SoftwareBitmap {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Imaging.SoftwareBitmap;{689e0708-7eef-483f-963f-da938818e073})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4053,6 +4055,7 @@ impl ::core::default::Default for TiffCompressionMode {
 }
 unsafe impl ::windows::core::Abi for TiffCompressionMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TiffCompressionMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4061,7 +4064,6 @@ impl ::core::fmt::Debug for TiffCompressionMode {
 }
 unsafe impl ::windows::core::RuntimeType for TiffCompressionMode {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Graphics.Imaging.TiffCompressionMode;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }

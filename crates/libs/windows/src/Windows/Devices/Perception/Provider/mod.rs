@@ -4,6 +4,12 @@
 #[repr(transparent)]
 pub struct IKnownPerceptionFrameKindStatics(::windows::core::IUnknown);
 #[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for IKnownPerceptionFrameKindStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for IKnownPerceptionFrameKindStatics {
     type Vtable = IKnownPerceptionFrameKindStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x3ae651d6_9669_4106_9fae_4835c1b96104);
@@ -31,6 +37,12 @@ pub struct IKnownPerceptionFrameKindStatics_Vtbl {
 #[repr(transparent)]
 pub struct IPerceptionControlGroup(::windows::core::IUnknown);
 #[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for IPerceptionControlGroup {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for IPerceptionControlGroup {
     type Vtable = IPerceptionControlGroup_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x172c4882_2fd9_4c4e_ba34_fdf20a73dde5);
@@ -50,6 +62,12 @@ pub struct IPerceptionControlGroup_Vtbl {
 #[repr(transparent)]
 pub struct IPerceptionControlGroupFactory(::windows::core::IUnknown);
 #[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for IPerceptionControlGroupFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for IPerceptionControlGroupFactory {
     type Vtable = IPerceptionControlGroupFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x2f1af2e0_baf1_453b_bed4_cd9d4619154c);
@@ -68,6 +86,12 @@ pub struct IPerceptionControlGroupFactory_Vtbl {
 #[cfg(feature = "deprecated")]
 #[repr(transparent)]
 pub struct IPerceptionCorrelation(::windows::core::IUnknown);
+#[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for IPerceptionCorrelation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for IPerceptionCorrelation {
     type Vtable = IPerceptionCorrelation_Vtbl;
@@ -96,6 +120,12 @@ pub struct IPerceptionCorrelation_Vtbl {
 #[repr(transparent)]
 pub struct IPerceptionCorrelationFactory(::windows::core::IUnknown);
 #[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for IPerceptionCorrelationFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for IPerceptionCorrelationFactory {
     type Vtable = IPerceptionCorrelationFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd4a6c425_2884_4a8f_8134_2835d7286cbf);
@@ -114,6 +144,12 @@ pub struct IPerceptionCorrelationFactory_Vtbl {
 #[cfg(feature = "deprecated")]
 #[repr(transparent)]
 pub struct IPerceptionCorrelationGroup(::windows::core::IUnknown);
+#[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for IPerceptionCorrelationGroup {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for IPerceptionCorrelationGroup {
     type Vtable = IPerceptionCorrelationGroup_Vtbl;
@@ -134,6 +170,12 @@ pub struct IPerceptionCorrelationGroup_Vtbl {
 #[repr(transparent)]
 pub struct IPerceptionCorrelationGroupFactory(::windows::core::IUnknown);
 #[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for IPerceptionCorrelationGroupFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for IPerceptionCorrelationGroupFactory {
     type Vtable = IPerceptionCorrelationGroupFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x7dfe2088_63df_48ed_83b1_4ab829132995);
@@ -152,6 +194,12 @@ pub struct IPerceptionCorrelationGroupFactory_Vtbl {
 #[cfg(feature = "deprecated")]
 #[repr(transparent)]
 pub struct IPerceptionFaceAuthenticationGroup(::windows::core::IUnknown);
+#[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for IPerceptionFaceAuthenticationGroup {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for IPerceptionFaceAuthenticationGroup {
     type Vtable = IPerceptionFaceAuthenticationGroup_Vtbl;
@@ -172,6 +220,12 @@ pub struct IPerceptionFaceAuthenticationGroup_Vtbl {
 #[repr(transparent)]
 pub struct IPerceptionFaceAuthenticationGroupFactory(::windows::core::IUnknown);
 #[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for IPerceptionFaceAuthenticationGroupFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for IPerceptionFaceAuthenticationGroupFactory {
     type Vtable = IPerceptionFaceAuthenticationGroupFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe68a05d4_b60c_40f4_bcb9_f24d46467320);
@@ -190,6 +244,12 @@ pub struct IPerceptionFaceAuthenticationGroupFactory_Vtbl {
 #[cfg(feature = "deprecated")]
 #[repr(transparent)]
 pub struct IPerceptionFrame(::windows::core::IUnknown);
+#[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for IPerceptionFrame {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for IPerceptionFrame {
     type Vtable = IPerceptionFrame_Vtbl;
@@ -221,6 +281,12 @@ pub struct IPerceptionFrame_Vtbl {
 #[cfg(feature = "deprecated")]
 #[repr(transparent)]
 pub struct IPerceptionFrameProvider(::windows::core::IUnknown);
+#[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for IPerceptionFrameProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "deprecated")]
 impl IPerceptionFrameProvider {
     #[doc = "*Required features: `\"Devices_Perception_Provider\"`, `\"deprecated\"`*"]
@@ -350,12 +416,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::Foundation::IClosab
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for IPerceptionFrameProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for IPerceptionFrameProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -372,7 +432,6 @@ impl ::core::fmt::Debug for IPerceptionFrameProvider {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for IPerceptionFrameProvider {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{794f7ab9-b37d-3b33-a10d-30626419ce65}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -416,6 +475,12 @@ pub struct IPerceptionFrameProvider_Vtbl {
 #[cfg(feature = "deprecated")]
 #[repr(transparent)]
 pub struct IPerceptionFrameProviderInfo(::windows::core::IUnknown);
+#[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for IPerceptionFrameProviderInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for IPerceptionFrameProviderInfo {
     type Vtable = IPerceptionFrameProviderInfo_Vtbl;
@@ -471,6 +536,12 @@ pub struct IPerceptionFrameProviderInfo_Vtbl {
 #[cfg(feature = "deprecated")]
 #[repr(transparent)]
 pub struct IPerceptionFrameProviderManager(::windows::core::IUnknown);
+#[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for IPerceptionFrameProviderManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "deprecated")]
 impl IPerceptionFrameProviderManager {
     #[doc = "*Required features: `\"Devices_Perception_Provider\"`, `\"deprecated\"`*"]
@@ -564,12 +635,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::Foundation::IClosab
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for IPerceptionFrameProviderManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for IPerceptionFrameProviderManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -586,7 +651,6 @@ impl ::core::fmt::Debug for IPerceptionFrameProviderManager {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for IPerceptionFrameProviderManager {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{a959ce07-ead3-33df-8ec1-b924abe019c4}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -610,6 +674,12 @@ pub struct IPerceptionFrameProviderManager_Vtbl {
 #[cfg(feature = "deprecated")]
 #[repr(transparent)]
 pub struct IPerceptionFrameProviderManagerServiceStatics(::windows::core::IUnknown);
+#[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for IPerceptionFrameProviderManagerServiceStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for IPerceptionFrameProviderManagerServiceStatics {
     type Vtable = IPerceptionFrameProviderManagerServiceStatics_Vtbl;
@@ -666,6 +736,12 @@ pub struct IPerceptionFrameProviderManagerServiceStatics_Vtbl {
 #[repr(transparent)]
 pub struct IPerceptionPropertyChangeRequest(::windows::core::IUnknown);
 #[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for IPerceptionPropertyChangeRequest {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for IPerceptionPropertyChangeRequest {
     type Vtable = IPerceptionPropertyChangeRequest_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x3c5aeb51_350b_4df8_9414_59e09815510b);
@@ -701,6 +777,12 @@ pub struct IPerceptionPropertyChangeRequest_Vtbl {
 #[repr(transparent)]
 pub struct IPerceptionVideoFrameAllocator(::windows::core::IUnknown);
 #[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for IPerceptionVideoFrameAllocator {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for IPerceptionVideoFrameAllocator {
     type Vtable = IPerceptionVideoFrameAllocator_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x4c38a7da_fdd8_4ed4_a039_2a6f9b235038);
@@ -723,6 +805,12 @@ pub struct IPerceptionVideoFrameAllocator_Vtbl {
 #[cfg(feature = "deprecated")]
 #[repr(transparent)]
 pub struct IPerceptionVideoFrameAllocatorFactory(::windows::core::IUnknown);
+#[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for IPerceptionVideoFrameAllocatorFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for IPerceptionVideoFrameAllocatorFactory {
     type Vtable = IPerceptionVideoFrameAllocatorFactory_Vtbl;
@@ -809,12 +897,6 @@ impl PerceptionControlGroup {
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for PerceptionControlGroup {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for PerceptionControlGroup {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -831,7 +913,6 @@ impl ::core::fmt::Debug for PerceptionControlGroup {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for PerceptionControlGroup {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Perception.Provider.PerceptionControlGroup;{172c4882-2fd9-4c4e-ba34-fdf20a73dde5})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -946,12 +1027,6 @@ impl PerceptionCorrelation {
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for PerceptionCorrelation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for PerceptionCorrelation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -968,7 +1043,6 @@ impl ::core::fmt::Debug for PerceptionCorrelation {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for PerceptionCorrelation {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Perception.Provider.PerceptionCorrelation;{b4131a82-dff5-4047-8a19-3b4d805f7176})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1065,12 +1139,6 @@ impl PerceptionCorrelationGroup {
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for PerceptionCorrelationGroup {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for PerceptionCorrelationGroup {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1087,7 +1155,6 @@ impl ::core::fmt::Debug for PerceptionCorrelationGroup {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for PerceptionCorrelationGroup {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Perception.Provider.PerceptionCorrelationGroup;{752a0906-36a7-47bb-9b79-56cc6b746770})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1184,12 +1251,6 @@ impl PerceptionFaceAuthenticationGroup {
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for PerceptionFaceAuthenticationGroup {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for PerceptionFaceAuthenticationGroup {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1206,7 +1267,6 @@ impl ::core::fmt::Debug for PerceptionFaceAuthenticationGroup {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for PerceptionFaceAuthenticationGroup {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Perception.Provider.PerceptionFaceAuthenticationGroup;{e8019814-4a91-41b0-83a6-881a1775353e})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1313,12 +1373,6 @@ impl PerceptionFrame {
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for PerceptionFrame {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for PerceptionFrame {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1335,7 +1389,6 @@ impl ::core::fmt::Debug for PerceptionFrame {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for PerceptionFrame {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Perception.Provider.PerceptionFrame;{7cfe7825-54bb-4d9d-bec5-8ef66151d2ac})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1491,12 +1544,6 @@ impl PerceptionFrameProviderInfo {
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for PerceptionFrameProviderInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for PerceptionFrameProviderInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1513,7 +1560,6 @@ impl ::core::fmt::Debug for PerceptionFrameProviderInfo {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for PerceptionFrameProviderInfo {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Perception.Provider.PerceptionFrameProviderInfo;{cca959e8-797e-4e83-9b87-036a74142fc4})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1695,12 +1741,6 @@ impl PerceptionPropertyChangeRequest {
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for PerceptionPropertyChangeRequest {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for PerceptionPropertyChangeRequest {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1717,7 +1757,6 @@ impl ::core::fmt::Debug for PerceptionPropertyChangeRequest {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for PerceptionPropertyChangeRequest {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Perception.Provider.PerceptionPropertyChangeRequest;{3c5aeb51-350b-4df8-9414-59e09815510b})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1851,12 +1890,6 @@ impl<F: FnMut(&::core::option::Option<PerceptionFaceAuthenticationGroup>) -> ::w
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for PerceptionStartFaceAuthenticationHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for PerceptionStartFaceAuthenticationHandler {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1878,7 +1911,6 @@ unsafe impl ::windows::core::Interface for PerceptionStartFaceAuthenticationHand
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for PerceptionStartFaceAuthenticationHandler {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{74816d2a-2090-4670-8c48-ef39e7ff7c26}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1951,12 +1983,6 @@ impl<F: FnMut(&::core::option::Option<PerceptionFaceAuthenticationGroup>) -> ::w
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for PerceptionStopFaceAuthenticationHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for PerceptionStopFaceAuthenticationHandler {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1978,7 +2004,6 @@ unsafe impl ::windows::core::Interface for PerceptionStopFaceAuthenticationHandl
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for PerceptionStopFaceAuthenticationHandler {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{387ee6aa-89cd-481e-aade-dd92f70b2ad7}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2039,12 +2064,6 @@ impl PerceptionVideoFrameAllocator {
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for PerceptionVideoFrameAllocator {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for PerceptionVideoFrameAllocator {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2061,7 +2080,6 @@ impl ::core::fmt::Debug for PerceptionVideoFrameAllocator {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for PerceptionVideoFrameAllocator {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Perception.Provider.PerceptionVideoFrameAllocator;{4c38a7da-fdd8-4ed4-a039-2a6f9b235038})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

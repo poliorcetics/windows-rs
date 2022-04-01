@@ -71,11 +71,6 @@ impl AppointmentCalendarCancelMeetingRequest {
         }
     }
 }
-impl ::core::clone::Clone for AppointmentCalendarCancelMeetingRequest {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AppointmentCalendarCancelMeetingRequest {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -89,7 +84,6 @@ impl ::core::fmt::Debug for AppointmentCalendarCancelMeetingRequest {
 }
 unsafe impl ::windows::core::RuntimeType for AppointmentCalendarCancelMeetingRequest {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Appointments.DataProvider.AppointmentCalendarCancelMeetingRequest;{49460f8d-6434-40d7-ad46-6297419314d1})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -165,11 +159,6 @@ impl AppointmentCalendarCancelMeetingRequestEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for AppointmentCalendarCancelMeetingRequestEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AppointmentCalendarCancelMeetingRequestEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -183,7 +172,6 @@ impl ::core::fmt::Debug for AppointmentCalendarCancelMeetingRequestEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for AppointmentCalendarCancelMeetingRequestEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Appointments.DataProvider.AppointmentCalendarCancelMeetingRequestEventArgs;{1a79be16-7f30-4e35-beef-9d2c7b6dcae1})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -293,11 +281,6 @@ impl AppointmentCalendarCreateOrUpdateAppointmentRequest {
         }
     }
 }
-impl ::core::clone::Clone for AppointmentCalendarCreateOrUpdateAppointmentRequest {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AppointmentCalendarCreateOrUpdateAppointmentRequest {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -311,7 +294,6 @@ impl ::core::fmt::Debug for AppointmentCalendarCreateOrUpdateAppointmentRequest 
 }
 unsafe impl ::windows::core::RuntimeType for AppointmentCalendarCreateOrUpdateAppointmentRequest {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Appointments.DataProvider.AppointmentCalendarCreateOrUpdateAppointmentRequest;{2e62f2b2-ca96-48ac-9124-406b19fefa70})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -387,11 +369,6 @@ impl AppointmentCalendarCreateOrUpdateAppointmentRequestEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for AppointmentCalendarCreateOrUpdateAppointmentRequestEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AppointmentCalendarCreateOrUpdateAppointmentRequestEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -405,7 +382,6 @@ impl ::core::fmt::Debug for AppointmentCalendarCreateOrUpdateAppointmentRequestE
 }
 unsafe impl ::windows::core::RuntimeType for AppointmentCalendarCreateOrUpdateAppointmentRequestEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Appointments.DataProvider.AppointmentCalendarCreateOrUpdateAppointmentRequestEventArgs;{cf8ded28-002e-4bf7-8e9d-5e20d49aa3ba})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -540,11 +516,6 @@ impl AppointmentCalendarForwardMeetingRequest {
         }
     }
 }
-impl ::core::clone::Clone for AppointmentCalendarForwardMeetingRequest {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AppointmentCalendarForwardMeetingRequest {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -558,7 +529,6 @@ impl ::core::fmt::Debug for AppointmentCalendarForwardMeetingRequest {
 }
 unsafe impl ::windows::core::RuntimeType for AppointmentCalendarForwardMeetingRequest {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Appointments.DataProvider.AppointmentCalendarForwardMeetingRequest;{82e5ee56-26b6-4253-8a8f-6cf5f2ff7884})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -634,11 +604,6 @@ impl AppointmentCalendarForwardMeetingRequestEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for AppointmentCalendarForwardMeetingRequestEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AppointmentCalendarForwardMeetingRequestEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -652,7 +617,6 @@ impl ::core::fmt::Debug for AppointmentCalendarForwardMeetingRequestEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for AppointmentCalendarForwardMeetingRequestEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Appointments.DataProvider.AppointmentCalendarForwardMeetingRequestEventArgs;{3109151a-23a2-42fd-9c82-c9a60d59f8a8})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -788,11 +752,6 @@ impl AppointmentCalendarProposeNewTimeForMeetingRequest {
         }
     }
 }
-impl ::core::clone::Clone for AppointmentCalendarProposeNewTimeForMeetingRequest {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AppointmentCalendarProposeNewTimeForMeetingRequest {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -806,7 +765,6 @@ impl ::core::fmt::Debug for AppointmentCalendarProposeNewTimeForMeetingRequest {
 }
 unsafe impl ::windows::core::RuntimeType for AppointmentCalendarProposeNewTimeForMeetingRequest {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Appointments.DataProvider.AppointmentCalendarProposeNewTimeForMeetingRequest;{ce1c63f5-edf6-43c3-82b7-be6b368c6900})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -882,11 +840,6 @@ impl AppointmentCalendarProposeNewTimeForMeetingRequestEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for AppointmentCalendarProposeNewTimeForMeetingRequestEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AppointmentCalendarProposeNewTimeForMeetingRequestEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -900,7 +853,6 @@ impl ::core::fmt::Debug for AppointmentCalendarProposeNewTimeForMeetingRequestEv
 }
 unsafe impl ::windows::core::RuntimeType for AppointmentCalendarProposeNewTimeForMeetingRequestEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Appointments.DataProvider.AppointmentCalendarProposeNewTimeForMeetingRequestEventArgs;{d2d777d8-fed1-4280-a3ba-2e1f47609aa2})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -985,11 +937,6 @@ impl AppointmentCalendarSyncManagerSyncRequest {
         }
     }
 }
-impl ::core::clone::Clone for AppointmentCalendarSyncManagerSyncRequest {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AppointmentCalendarSyncManagerSyncRequest {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1003,7 +950,6 @@ impl ::core::fmt::Debug for AppointmentCalendarSyncManagerSyncRequest {
 }
 unsafe impl ::windows::core::RuntimeType for AppointmentCalendarSyncManagerSyncRequest {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Appointments.DataProvider.AppointmentCalendarSyncManagerSyncRequest;{12ab382b-7163-4a56-9a4e-7223a84adf46})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1079,11 +1025,6 @@ impl AppointmentCalendarSyncManagerSyncRequestEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for AppointmentCalendarSyncManagerSyncRequestEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AppointmentCalendarSyncManagerSyncRequestEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1097,7 +1038,6 @@ impl ::core::fmt::Debug for AppointmentCalendarSyncManagerSyncRequestEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for AppointmentCalendarSyncManagerSyncRequestEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Appointments.DataProvider.AppointmentCalendarSyncManagerSyncRequestEventArgs;{ca17c6f7-0284-4edd-87ba-4d8f69dcf5c0})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1231,11 +1171,6 @@ impl AppointmentCalendarUpdateMeetingResponseRequest {
         }
     }
 }
-impl ::core::clone::Clone for AppointmentCalendarUpdateMeetingResponseRequest {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AppointmentCalendarUpdateMeetingResponseRequest {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1249,7 +1184,6 @@ impl ::core::fmt::Debug for AppointmentCalendarUpdateMeetingResponseRequest {
 }
 unsafe impl ::windows::core::RuntimeType for AppointmentCalendarUpdateMeetingResponseRequest {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Appointments.DataProvider.AppointmentCalendarUpdateMeetingResponseRequest;{a36d608c-c29d-4b94-b086-7e9ff7bd84a0})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1325,11 +1259,6 @@ impl AppointmentCalendarUpdateMeetingResponseRequestEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for AppointmentCalendarUpdateMeetingResponseRequestEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AppointmentCalendarUpdateMeetingResponseRequestEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1343,7 +1272,6 @@ impl ::core::fmt::Debug for AppointmentCalendarUpdateMeetingResponseRequestEvent
 }
 unsafe impl ::windows::core::RuntimeType for AppointmentCalendarUpdateMeetingResponseRequestEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Appointments.DataProvider.AppointmentCalendarUpdateMeetingResponseRequestEventArgs;{88759883-97bf-479d-aed5-0be8ce567d1e})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1497,11 +1425,6 @@ impl AppointmentDataProviderConnection {
         unsafe { (::windows::core::Interface::vtable(this).Start)(::core::mem::transmute_copy(this)).ok() }
     }
 }
-impl ::core::clone::Clone for AppointmentDataProviderConnection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AppointmentDataProviderConnection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1515,7 +1438,6 @@ impl ::core::fmt::Debug for AppointmentDataProviderConnection {
 }
 unsafe impl ::windows::core::RuntimeType for AppointmentDataProviderConnection {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Appointments.DataProvider.AppointmentDataProviderConnection;{f3dd9d83-3254-465f-abdb-928046552cf4})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1582,11 +1504,6 @@ impl AppointmentDataProviderTriggerDetails {
         }
     }
 }
-impl ::core::clone::Clone for AppointmentDataProviderTriggerDetails {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AppointmentDataProviderTriggerDetails {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1600,7 +1517,6 @@ impl ::core::fmt::Debug for AppointmentDataProviderTriggerDetails {
 }
 unsafe impl ::windows::core::RuntimeType for AppointmentDataProviderTriggerDetails {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Appointments.DataProvider.AppointmentDataProviderTriggerDetails;{b3283c01-7e12-4e5e-b1ef-74fb68ac6f2a})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1657,6 +1573,11 @@ unsafe impl ::core::marker::Sync for AppointmentDataProviderTriggerDetails {}
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppointmentCalendarCancelMeetingRequest(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppointmentCalendarCancelMeetingRequest {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppointmentCalendarCancelMeetingRequest {
     type Vtable = IAppointmentCalendarCancelMeetingRequest_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x49460f8d_6434_40d7_ad46_6297419314d1);
@@ -1686,6 +1607,11 @@ pub struct IAppointmentCalendarCancelMeetingRequest_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppointmentCalendarCancelMeetingRequestEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppointmentCalendarCancelMeetingRequestEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppointmentCalendarCancelMeetingRequestEventArgs {
     type Vtable = IAppointmentCalendarCancelMeetingRequestEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1a79be16_7f30_4e35_beef_9d2c7b6dcae1);
@@ -1703,6 +1629,11 @@ pub struct IAppointmentCalendarCancelMeetingRequestEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppointmentCalendarCreateOrUpdateAppointmentRequest(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppointmentCalendarCreateOrUpdateAppointmentRequest {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppointmentCalendarCreateOrUpdateAppointmentRequest {
     type Vtable = IAppointmentCalendarCreateOrUpdateAppointmentRequest_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x2e62f2b2_ca96_48ac_9124_406b19fefa70);
@@ -1730,6 +1661,11 @@ pub struct IAppointmentCalendarCreateOrUpdateAppointmentRequest_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppointmentCalendarCreateOrUpdateAppointmentRequestEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppointmentCalendarCreateOrUpdateAppointmentRequestEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppointmentCalendarCreateOrUpdateAppointmentRequestEventArgs {
     type Vtable = IAppointmentCalendarCreateOrUpdateAppointmentRequestEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xcf8ded28_002e_4bf7_8e9d_5e20d49aa3ba);
@@ -1747,6 +1683,11 @@ pub struct IAppointmentCalendarCreateOrUpdateAppointmentRequestEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppointmentCalendarForwardMeetingRequest(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppointmentCalendarForwardMeetingRequest {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppointmentCalendarForwardMeetingRequest {
     type Vtable = IAppointmentCalendarForwardMeetingRequest_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x82e5ee56_26b6_4253_8a8f_6cf5f2ff7884);
@@ -1780,6 +1721,11 @@ pub struct IAppointmentCalendarForwardMeetingRequest_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppointmentCalendarForwardMeetingRequestEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppointmentCalendarForwardMeetingRequestEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppointmentCalendarForwardMeetingRequestEventArgs {
     type Vtable = IAppointmentCalendarForwardMeetingRequestEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x3109151a_23a2_42fd_9c82_c9a60d59f8a8);
@@ -1797,6 +1743,11 @@ pub struct IAppointmentCalendarForwardMeetingRequestEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppointmentCalendarProposeNewTimeForMeetingRequest(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppointmentCalendarProposeNewTimeForMeetingRequest {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppointmentCalendarProposeNewTimeForMeetingRequest {
     type Vtable = IAppointmentCalendarProposeNewTimeForMeetingRequest_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xce1c63f5_edf6_43c3_82b7_be6b368c6900);
@@ -1833,6 +1784,11 @@ pub struct IAppointmentCalendarProposeNewTimeForMeetingRequest_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppointmentCalendarProposeNewTimeForMeetingRequestEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppointmentCalendarProposeNewTimeForMeetingRequestEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppointmentCalendarProposeNewTimeForMeetingRequestEventArgs {
     type Vtable = IAppointmentCalendarProposeNewTimeForMeetingRequestEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd2d777d8_fed1_4280_a3ba_2e1f47609aa2);
@@ -1850,6 +1806,11 @@ pub struct IAppointmentCalendarProposeNewTimeForMeetingRequestEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppointmentCalendarSyncManagerSyncRequest(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppointmentCalendarSyncManagerSyncRequest {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppointmentCalendarSyncManagerSyncRequest {
     type Vtable = IAppointmentCalendarSyncManagerSyncRequest_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x12ab382b_7163_4a56_9a4e_7223a84adf46);
@@ -1871,6 +1832,11 @@ pub struct IAppointmentCalendarSyncManagerSyncRequest_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppointmentCalendarSyncManagerSyncRequestEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppointmentCalendarSyncManagerSyncRequestEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppointmentCalendarSyncManagerSyncRequestEventArgs {
     type Vtable = IAppointmentCalendarSyncManagerSyncRequestEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xca17c6f7_0284_4edd_87ba_4d8f69dcf5c0);
@@ -1888,6 +1854,11 @@ pub struct IAppointmentCalendarSyncManagerSyncRequestEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppointmentCalendarUpdateMeetingResponseRequest(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppointmentCalendarUpdateMeetingResponseRequest {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppointmentCalendarUpdateMeetingResponseRequest {
     type Vtable = IAppointmentCalendarUpdateMeetingResponseRequest_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa36d608c_c29d_4b94_b086_7e9ff7bd84a0);
@@ -1918,6 +1889,11 @@ pub struct IAppointmentCalendarUpdateMeetingResponseRequest_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppointmentCalendarUpdateMeetingResponseRequestEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppointmentCalendarUpdateMeetingResponseRequestEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppointmentCalendarUpdateMeetingResponseRequestEventArgs {
     type Vtable = IAppointmentCalendarUpdateMeetingResponseRequestEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x88759883_97bf_479d_aed5_0be8ce567d1e);
@@ -1935,6 +1911,11 @@ pub struct IAppointmentCalendarUpdateMeetingResponseRequestEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppointmentDataProviderConnection(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppointmentDataProviderConnection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppointmentDataProviderConnection {
     type Vtable = IAppointmentDataProviderConnection_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf3dd9d83_3254_465f_abdb_928046552cf4);
@@ -1996,6 +1977,11 @@ pub struct IAppointmentDataProviderConnection_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppointmentDataProviderTriggerDetails(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppointmentDataProviderTriggerDetails {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppointmentDataProviderTriggerDetails {
     type Vtable = IAppointmentDataProviderTriggerDetails_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb3283c01_7e12_4e5e_b1ef_74fb68ac6f2a);

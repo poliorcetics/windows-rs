@@ -83,6 +83,7 @@ impl ::core::fmt::Debug for APP_LOCAL_DEVICE_ID {
 }
 unsafe impl ::windows::core::Abi for APP_LOCAL_DEVICE_ID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for APP_LOCAL_DEVICE_ID {
     fn eq(&self, other: &Self) -> bool {
@@ -191,6 +192,7 @@ impl ::core::ops::Not for BOOL {
 }
 unsafe impl ::windows::core::Abi for BOOL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl<'a> ::windows::core::IntoParam<'a, BOOL> for bool {
     fn into_param(self) -> ::windows::core::Param<'a, BOOL> {
@@ -218,6 +220,7 @@ impl ::core::fmt::Debug for BOOLEAN {
 }
 unsafe impl ::windows::core::Abi for BOOLEAN {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[repr(transparent)]
 pub struct BSTR(*const u16);
@@ -335,6 +338,7 @@ impl ::core::ops::Drop for BSTR {
 }
 unsafe impl ::windows::core::Abi for BSTR {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "alloc")]
 impl<'a> ::windows::core::IntoParam<'a, BSTR> for &str {
@@ -545,6 +549,7 @@ impl ::core::fmt::Debug for CHAR {
 }
 unsafe impl ::windows::core::Abi for CHAR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[doc = "*Required features: `\"Win32_Foundation\"`*"]
 pub const CI_CORRUPT_CATALOG: ::windows::core::HRESULT = ::windows::core::HRESULT(-1073473535i32);
@@ -1560,6 +1565,7 @@ impl ::core::clone::Clone for DECIMAL {
 }
 unsafe impl ::windows::core::Abi for DECIMAL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DECIMAL {
     fn eq(&self, other: &Self) -> bool {
@@ -1586,6 +1592,7 @@ impl ::core::clone::Clone for DECIMAL_0 {
 }
 unsafe impl ::windows::core::Abi for DECIMAL_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DECIMAL_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -1617,6 +1624,7 @@ impl ::core::fmt::Debug for DECIMAL_0_0 {
 }
 unsafe impl ::windows::core::Abi for DECIMAL_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DECIMAL_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -1643,6 +1651,7 @@ impl ::core::clone::Clone for DECIMAL_1 {
 }
 unsafe impl ::windows::core::Abi for DECIMAL_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DECIMAL_1 {
     fn eq(&self, other: &Self) -> bool {
@@ -1674,6 +1683,7 @@ impl ::core::fmt::Debug for DECIMAL_1_0 {
 }
 unsafe impl ::windows::core::Abi for DECIMAL_1_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DECIMAL_1_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -1809,6 +1819,7 @@ impl ::core::default::Default for DUPLICATE_HANDLE_OPTIONS {
 }
 unsafe impl ::windows::core::Abi for DUPLICATE_HANDLE_OPTIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DUPLICATE_HANDLE_OPTIONS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3152,6 +3163,7 @@ impl ::core::fmt::Debug for FILETIME {
 }
 unsafe impl ::windows::core::Abi for FILETIME {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for FILETIME {
     fn eq(&self, other: &Self) -> bool {
@@ -3213,6 +3225,7 @@ impl ::core::fmt::Debug for FLOAT128 {
 }
 unsafe impl ::windows::core::Abi for FLOAT128 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for FLOAT128 {
     fn eq(&self, other: &Self) -> bool {
@@ -3907,6 +3920,7 @@ impl ::core::fmt::Debug for HANDLE {
 }
 unsafe impl ::windows::core::Abi for HANDLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[doc = "*Required features: `\"Win32_Foundation\"`*"]
 #[repr(transparent)]
@@ -3929,6 +3943,7 @@ impl ::core::default::Default for HANDLE_FLAGS {
 }
 unsafe impl ::windows::core::Abi for HANDLE_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HANDLE_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3984,6 +3999,7 @@ impl ::core::fmt::Debug for HANDLE_PTR {
 }
 unsafe impl ::windows::core::Abi for HANDLE_PTR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[doc = "*Required features: `\"Win32_Foundation\"`*"]
 pub const HCN_E_ADAPTER_NOT_FOUND: ::windows::core::HRESULT = ::windows::core::HRESULT(-2143617018i32);
@@ -4160,6 +4176,7 @@ impl ::core::fmt::Debug for HINSTANCE {
 }
 unsafe impl ::windows::core::Abi for HINSTANCE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[repr(C)]
 #[doc = "*Required features: `\"Win32_Foundation\"`*"]
@@ -4179,6 +4196,7 @@ impl ::core::fmt::Debug for HLSURF__ {
 }
 unsafe impl ::windows::core::Abi for HLSURF__ {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HLSURF__ {
     fn eq(&self, other: &Self) -> bool {
@@ -4217,6 +4235,7 @@ impl ::core::fmt::Debug for HRSRC {
 }
 unsafe impl ::windows::core::Abi for HRSRC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[repr(C)]
 #[doc = "*Required features: `\"Win32_Foundation\"`*"]
@@ -4236,6 +4255,7 @@ impl ::core::fmt::Debug for HSPRITE__ {
 }
 unsafe impl ::windows::core::Abi for HSPRITE__ {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HSPRITE__ {
     fn eq(&self, other: &Self) -> bool {
@@ -4322,6 +4342,7 @@ impl ::core::fmt::Debug for HSTR__ {
 }
 unsafe impl ::windows::core::Abi for HSTR__ {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HSTR__ {
     fn eq(&self, other: &Self) -> bool {
@@ -4422,6 +4443,7 @@ impl ::core::fmt::Debug for HUMPD__ {
 }
 unsafe impl ::windows::core::Abi for HUMPD__ {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HUMPD__ {
     fn eq(&self, other: &Self) -> bool {
@@ -4455,6 +4477,7 @@ impl ::core::fmt::Debug for HWND {
 }
 unsafe impl ::windows::core::Abi for HWND {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[doc = "*Required features: `\"Win32_Foundation\"`*"]
 pub const INPLACE_E_FIRST: i32 = -2147221088i32;
@@ -4531,6 +4554,7 @@ impl ::core::fmt::Debug for LPARAM {
 }
 unsafe impl ::windows::core::Abi for LPARAM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[repr(transparent)]
 #[derive(:: core :: cmp :: PartialEq, :: core :: cmp :: Eq)]
@@ -4553,6 +4577,7 @@ impl ::core::fmt::Debug for LRESULT {
 }
 unsafe impl ::windows::core::Abi for LRESULT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[repr(C)]
 #[doc = "*Required features: `\"Win32_Foundation\"`*"]
@@ -4573,6 +4598,7 @@ impl ::core::fmt::Debug for LUID {
 }
 unsafe impl ::windows::core::Abi for LUID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for LUID {
     fn eq(&self, other: &Self) -> bool {
@@ -5057,6 +5083,7 @@ impl ::core::fmt::Debug for NTSTATUS {
 }
 unsafe impl ::windows::core::Abi for NTSTATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[doc = "*Required features: `\"Win32_Foundation\"`*"]
 #[repr(transparent)]
@@ -5185,6 +5212,7 @@ impl ::core::default::Default for NTSTATUS_FACILITY_CODE {
 }
 unsafe impl ::windows::core::Abi for NTSTATUS_FACILITY_CODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NTSTATUS_FACILITY_CODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5670,6 +5698,7 @@ impl ::core::fmt::Debug for POINT {
 }
 unsafe impl ::windows::core::Abi for POINT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for POINT {
     fn eq(&self, other: &Self) -> bool {
@@ -5701,6 +5730,7 @@ impl ::core::fmt::Debug for POINTL {
 }
 unsafe impl ::windows::core::Abi for POINTL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for POINTL {
     fn eq(&self, other: &Self) -> bool {
@@ -5732,6 +5762,7 @@ impl ::core::fmt::Debug for POINTS {
 }
 unsafe impl ::windows::core::Abi for POINTS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for POINTS {
     fn eq(&self, other: &Self) -> bool {
@@ -5774,6 +5805,7 @@ impl ::core::fmt::Debug for PSID {
 }
 unsafe impl ::windows::core::Abi for PSID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[doc = "*Required features: `\"Win32_Foundation\"`*"]
 pub const PSINK_E_INDEX_ONLY: ::windows::core::HRESULT = ::windows::core::HRESULT(-2147215471i32);
@@ -5914,6 +5946,7 @@ impl ::core::fmt::Debug for RECT {
 }
 unsafe impl ::windows::core::Abi for RECT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RECT {
     fn eq(&self, other: &Self) -> bool {
@@ -5947,6 +5980,7 @@ impl ::core::fmt::Debug for RECTL {
 }
 unsafe impl ::windows::core::Abi for RECTL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RECTL {
     fn eq(&self, other: &Self) -> bool {
@@ -6854,6 +6888,7 @@ impl ::core::fmt::Debug for SHANDLE_PTR {
 }
 unsafe impl ::windows::core::Abi for SHANDLE_PTR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[repr(C)]
 #[doc = "*Required features: `\"Win32_Foundation\"`*"]
@@ -6874,6 +6909,7 @@ impl ::core::fmt::Debug for SIZE {
 }
 unsafe impl ::windows::core::Abi for SIZE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SIZE {
     fn eq(&self, other: &Self) -> bool {
@@ -12757,6 +12793,7 @@ impl ::core::fmt::Debug for SYSTEMTIME {
 }
 unsafe impl ::windows::core::Abi for SYSTEMTIME {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SYSTEMTIME {
     fn eq(&self, other: &Self) -> bool {
@@ -13875,6 +13912,7 @@ impl ::core::fmt::Debug for UNICODE_STRING {
 }
 unsafe impl ::windows::core::Abi for UNICODE_STRING {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for UNICODE_STRING {
     fn eq(&self, other: &Self) -> bool {
@@ -20610,6 +20648,7 @@ impl ::core::default::Default for WIN32_ERROR {
 }
 unsafe impl ::windows::core::Abi for WIN32_ERROR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WIN32_ERROR {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -20919,6 +20958,7 @@ impl ::core::fmt::Debug for WPARAM {
 }
 unsafe impl ::windows::core::Abi for WPARAM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[doc = "*Required features: `\"Win32_Foundation\"`*"]
 pub const WPN_E_ACCESS_DENIED: ::windows::core::HRESULT = ::windows::core::HRESULT(-2143420137i32);

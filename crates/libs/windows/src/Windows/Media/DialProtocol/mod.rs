@@ -39,11 +39,6 @@ impl DialApp {
         }
     }
 }
-impl ::core::clone::Clone for DialApp {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DialApp {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -57,7 +52,6 @@ impl ::core::fmt::Debug for DialApp {
 }
 unsafe impl ::windows::core::RuntimeType for DialApp {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.DialProtocol.DialApp;{555ffbd3-45b7-49f3-bbd7-302db6084646})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -134,6 +128,7 @@ impl ::core::default::Default for DialAppLaunchResult {
 }
 unsafe impl ::windows::core::Abi for DialAppLaunchResult {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DialAppLaunchResult {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -142,7 +137,6 @@ impl ::core::fmt::Debug for DialAppLaunchResult {
 }
 unsafe impl ::windows::core::RuntimeType for DialAppLaunchResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Media.DialProtocol.DialAppLaunchResult;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -170,6 +164,7 @@ impl ::core::default::Default for DialAppState {
 }
 unsafe impl ::windows::core::Abi for DialAppState {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DialAppState {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -178,7 +173,6 @@ impl ::core::fmt::Debug for DialAppState {
 }
 unsafe impl ::windows::core::RuntimeType for DialAppState {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Media.DialProtocol.DialAppState;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -204,11 +198,6 @@ impl DialAppStateDetails {
         }
     }
 }
-impl ::core::clone::Clone for DialAppStateDetails {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DialAppStateDetails {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -222,7 +211,6 @@ impl ::core::fmt::Debug for DialAppStateDetails {
 }
 unsafe impl ::windows::core::RuntimeType for DialAppStateDetails {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.DialProtocol.DialAppStateDetails;{ddc4a4a1-f5de-400d-bea4-8c8466bb2961})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -299,6 +287,7 @@ impl ::core::default::Default for DialAppStopResult {
 }
 unsafe impl ::windows::core::Abi for DialAppStopResult {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DialAppStopResult {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -307,7 +296,6 @@ impl ::core::fmt::Debug for DialAppStopResult {
 }
 unsafe impl ::windows::core::RuntimeType for DialAppStopResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Media.DialProtocol.DialAppStopResult;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -378,11 +366,6 @@ impl DialDevice {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for DialDevice {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DialDevice {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -396,7 +379,6 @@ impl ::core::fmt::Debug for DialDevice {
 }
 unsafe impl ::windows::core::RuntimeType for DialDevice {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.DialProtocol.DialDevice;{fff0edaf-759f-41d2-a20a-7f29ce0b3784})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -475,6 +457,7 @@ impl ::core::default::Default for DialDeviceDisplayStatus {
 }
 unsafe impl ::windows::core::Abi for DialDeviceDisplayStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DialDeviceDisplayStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -483,7 +466,6 @@ impl ::core::fmt::Debug for DialDeviceDisplayStatus {
 }
 unsafe impl ::windows::core::RuntimeType for DialDeviceDisplayStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Media.DialProtocol.DialDeviceDisplayStatus;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -602,11 +584,6 @@ impl DialDevicePicker {
         unsafe { (::windows::core::Interface::vtable(this).SetDisplayStatus)(::core::mem::transmute_copy(this), device.into_param().abi(), status).ok() }
     }
 }
-impl ::core::clone::Clone for DialDevicePicker {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DialDevicePicker {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -620,7 +597,6 @@ impl ::core::fmt::Debug for DialDevicePicker {
 }
 unsafe impl ::windows::core::RuntimeType for DialDevicePicker {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.DialProtocol.DialDevicePicker;{ba7e520a-ff59-4f4b-bdac-d89f495ad6e1})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -688,11 +664,6 @@ impl DialDevicePickerFilter {
         }
     }
 }
-impl ::core::clone::Clone for DialDevicePickerFilter {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DialDevicePickerFilter {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -706,7 +677,6 @@ impl ::core::fmt::Debug for DialDevicePickerFilter {
 }
 unsafe impl ::windows::core::RuntimeType for DialDevicePickerFilter {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.DialProtocol.DialDevicePickerFilter;{c17c93ba-86c0-485d-b8d6-0f9a8f641590})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -773,11 +743,6 @@ impl DialDeviceSelectedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for DialDeviceSelectedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DialDeviceSelectedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -791,7 +756,6 @@ impl ::core::fmt::Debug for DialDeviceSelectedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for DialDeviceSelectedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.DialProtocol.DialDeviceSelectedEventArgs;{480b92ad-ac76-47eb-9c06-a19304da0247})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -858,11 +822,6 @@ impl DialDisconnectButtonClickedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for DialDisconnectButtonClickedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DialDisconnectButtonClickedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -876,7 +835,6 @@ impl ::core::fmt::Debug for DialDisconnectButtonClickedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for DialDisconnectButtonClickedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.DialProtocol.DialDisconnectButtonClickedEventArgs;{52765152-9c81-4e55-adc2-0ebe99cde3b6})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -974,11 +932,6 @@ impl DialReceiverApp {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for DialReceiverApp {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DialReceiverApp {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -992,7 +945,6 @@ impl ::core::fmt::Debug for DialReceiverApp {
 }
 unsafe impl ::windows::core::RuntimeType for DialReceiverApp {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.DialProtocol.DialReceiverApp;{fd3e7c57-5045-470e-b304-4dd9b13e7d11})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1049,6 +1001,11 @@ unsafe impl ::core::marker::Sync for DialReceiverApp {}
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDialApp(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDialApp {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDialApp {
     type Vtable = IDialApp_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x555ffbd3_45b7_49f3_bbd7_302db6084646);
@@ -1074,6 +1031,11 @@ pub struct IDialApp_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDialAppStateDetails(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDialAppStateDetails {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDialAppStateDetails {
     type Vtable = IDialAppStateDetails_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xddc4a4a1_f5de_400d_bea4_8c8466bb2961);
@@ -1088,6 +1050,11 @@ pub struct IDialAppStateDetails_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDialDevice(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDialDevice {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDialDevice {
     type Vtable = IDialDevice_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xfff0edaf_759f_41d2_a20a_7f29ce0b3784);
@@ -1102,6 +1069,11 @@ pub struct IDialDevice_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDialDevice2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDialDevice2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDialDevice2 {
     type Vtable = IDialDevice2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xbab7f3d5_5bfb_4eba_8b32_b57c5c5ee5c9);
@@ -1119,6 +1091,11 @@ pub struct IDialDevice2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDialDevicePicker(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDialDevicePicker {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDialDevicePicker {
     type Vtable = IDialDevicePicker_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xba7e520a_ff59_4f4b_bdac_d89f495ad6e1);
@@ -1178,6 +1155,11 @@ pub struct IDialDevicePicker_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDialDevicePickerFilter(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDialDevicePickerFilter {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDialDevicePickerFilter {
     type Vtable = IDialDevicePickerFilter_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc17c93ba_86c0_485d_b8d6_0f9a8f641590);
@@ -1194,6 +1176,11 @@ pub struct IDialDevicePickerFilter_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDialDeviceSelectedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDialDeviceSelectedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDialDeviceSelectedEventArgs {
     type Vtable = IDialDeviceSelectedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x480b92ad_ac76_47eb_9c06_a19304da0247);
@@ -1207,6 +1194,11 @@ pub struct IDialDeviceSelectedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDialDeviceStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDialDeviceStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDialDeviceStatics {
     type Vtable = IDialDeviceStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xaa69cc95_01f8_4758_8461_2bbd1cdc3cf3);
@@ -1228,6 +1220,11 @@ pub struct IDialDeviceStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDialDisconnectButtonClickedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDialDisconnectButtonClickedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDialDisconnectButtonClickedEventArgs {
     type Vtable = IDialDisconnectButtonClickedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x52765152_9c81_4e55_adc2_0ebe99cde3b6);
@@ -1241,6 +1238,11 @@ pub struct IDialDisconnectButtonClickedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDialReceiverApp(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDialReceiverApp {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDialReceiverApp {
     type Vtable = IDialReceiverApp_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xfd3e7c57_5045_470e_b304_4dd9b13e7d11);
@@ -1261,6 +1263,11 @@ pub struct IDialReceiverApp_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDialReceiverApp2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDialReceiverApp2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDialReceiverApp2 {
     type Vtable = IDialReceiverApp2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x530c5805_9130_42ac_a504_1977dcb2ea8a);
@@ -1277,6 +1284,11 @@ pub struct IDialReceiverApp2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDialReceiverAppStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDialReceiverAppStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDialReceiverAppStatics {
     type Vtable = IDialReceiverAppStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x53183a3c_4c36_4d02_b28a_f2a9da38ec52);

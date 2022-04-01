@@ -21,6 +21,7 @@ impl ::core::fmt::Debug for CACHE_DESCRIPTOR {
 }
 unsafe impl ::windows::core::Abi for CACHE_DESCRIPTOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CACHE_DESCRIPTOR {
     fn eq(&self, other: &Self) -> bool {
@@ -53,6 +54,7 @@ impl ::core::clone::Clone for CACHE_RELATIONSHIP {
 }
 unsafe impl ::windows::core::Abi for CACHE_RELATIONSHIP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CACHE_RELATIONSHIP {
     fn eq(&self, other: &Self) -> bool {
@@ -79,6 +81,7 @@ impl ::core::clone::Clone for CACHE_RELATIONSHIP_0 {
 }
 unsafe impl ::windows::core::Abi for CACHE_RELATIONSHIP_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CACHE_RELATIONSHIP_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -126,6 +129,7 @@ impl ::core::default::Default for COMPUTER_NAME_FORMAT {
 }
 unsafe impl ::windows::core::Abi for COMPUTER_NAME_FORMAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for COMPUTER_NAME_FORMAT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -151,6 +155,7 @@ impl ::core::default::Default for CPU_SET_INFORMATION_TYPE {
 }
 unsafe impl ::windows::core::Abi for CPU_SET_INFORMATION_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CPU_SET_INFORMATION_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -184,6 +189,7 @@ impl ::core::default::Default for DEP_SYSTEM_POLICY_TYPE {
 }
 unsafe impl ::windows::core::Abi for DEP_SYSTEM_POLICY_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DEP_SYSTEM_POLICY_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -301,6 +307,7 @@ impl ::core::default::Default for DEVICEFAMILYDEVICEFORM {
 }
 unsafe impl ::windows::core::Abi for DEVICEFAMILYDEVICEFORM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DEVICEFAMILYDEVICEFORM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -362,6 +369,7 @@ impl ::core::default::Default for DEVICEFAMILYINFOENUM {
 }
 unsafe impl ::windows::core::Abi for DEVICEFAMILYINFOENUM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DEVICEFAMILYINFOENUM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -418,6 +426,7 @@ impl ::core::fmt::Debug for FIRMWARE_TABLE_ID {
 }
 unsafe impl ::windows::core::Abi for FIRMWARE_TABLE_ID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[doc = "*Required features: `\"Win32_System_SystemInformation\"`*"]
 #[repr(transparent)]
@@ -442,6 +451,7 @@ impl ::core::default::Default for FIRMWARE_TABLE_PROVIDER {
 }
 unsafe impl ::windows::core::Abi for FIRMWARE_TABLE_PROVIDER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FIRMWARE_TABLE_PROVIDER {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -473,6 +483,7 @@ impl ::core::default::Default for FIRMWARE_TYPE {
 }
 unsafe impl ::windows::core::Abi for FIRMWARE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FIRMWARE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -499,6 +510,7 @@ impl ::core::fmt::Debug for GROUP_AFFINITY {
 }
 unsafe impl ::windows::core::Abi for GROUP_AFFINITY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for GROUP_AFFINITY {
     fn eq(&self, other: &Self) -> bool {
@@ -532,6 +544,7 @@ impl ::core::fmt::Debug for GROUP_RELATIONSHIP {
 }
 unsafe impl ::windows::core::Abi for GROUP_RELATIONSHIP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for GROUP_RELATIONSHIP {
     fn eq(&self, other: &Self) -> bool {
@@ -1194,6 +1207,7 @@ impl ::core::default::Default for LOGICAL_PROCESSOR_RELATIONSHIP {
 }
 unsafe impl ::windows::core::Abi for LOGICAL_PROCESSOR_RELATIONSHIP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for LOGICAL_PROCESSOR_RELATIONSHIP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1225,6 +1239,7 @@ impl ::core::fmt::Debug for MEMORYSTATUS {
 }
 unsafe impl ::windows::core::Abi for MEMORYSTATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MEMORYSTATUS {
     fn eq(&self, other: &Self) -> bool {
@@ -1263,6 +1278,7 @@ impl ::core::fmt::Debug for MEMORYSTATUSEX {
 }
 unsafe impl ::windows::core::Abi for MEMORYSTATUSEX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MEMORYSTATUSEX {
     fn eq(&self, other: &Self) -> bool {
@@ -1387,6 +1403,7 @@ impl ::core::clone::Clone for NUMA_NODE_RELATIONSHIP {
 }
 unsafe impl ::windows::core::Abi for NUMA_NODE_RELATIONSHIP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NUMA_NODE_RELATIONSHIP {
     fn eq(&self, other: &Self) -> bool {
@@ -1413,6 +1430,7 @@ impl ::core::clone::Clone for NUMA_NODE_RELATIONSHIP_0 {
 }
 unsafe impl ::windows::core::Abi for NUMA_NODE_RELATIONSHIP_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NUMA_NODE_RELATIONSHIP_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -1453,6 +1471,7 @@ impl ::core::fmt::Debug for OSVERSIONINFOA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for OSVERSIONINFOA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for OSVERSIONINFOA {
@@ -1513,6 +1532,7 @@ impl ::core::fmt::Debug for OSVERSIONINFOEXA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for OSVERSIONINFOEXA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for OSVERSIONINFOEXA {
@@ -1568,6 +1588,7 @@ impl ::core::fmt::Debug for OSVERSIONINFOEXW {
 }
 unsafe impl ::windows::core::Abi for OSVERSIONINFOEXW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for OSVERSIONINFOEXW {
     fn eq(&self, other: &Self) -> bool {
@@ -1603,6 +1624,7 @@ impl ::core::fmt::Debug for OSVERSIONINFOW {
 }
 unsafe impl ::windows::core::Abi for OSVERSIONINFOW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for OSVERSIONINFOW {
     fn eq(&self, other: &Self) -> bool {
@@ -1638,6 +1660,7 @@ impl ::core::default::Default for OS_DEPLOYEMENT_STATE_VALUES {
 }
 unsafe impl ::windows::core::Abi for OS_DEPLOYEMENT_STATE_VALUES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for OS_DEPLOYEMENT_STATE_VALUES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1853,6 +1876,7 @@ impl ::core::default::Default for OS_PRODUCT_TYPE {
 }
 unsafe impl ::windows::core::Abi for OS_PRODUCT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for OS_PRODUCT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1888,6 +1912,7 @@ impl ::core::default::Default for PROCESSOR_CACHE_TYPE {
 }
 unsafe impl ::windows::core::Abi for PROCESSOR_CACHE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PROCESSOR_CACHE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1915,6 +1940,7 @@ impl ::core::fmt::Debug for PROCESSOR_GROUP_INFO {
 }
 unsafe impl ::windows::core::Abi for PROCESSOR_GROUP_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROCESSOR_GROUP_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -1949,6 +1975,7 @@ impl ::core::fmt::Debug for PROCESSOR_RELATIONSHIP {
 }
 unsafe impl ::windows::core::Abi for PROCESSOR_RELATIONSHIP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROCESSOR_RELATIONSHIP {
     fn eq(&self, other: &Self) -> bool {
@@ -2006,6 +2033,7 @@ impl ::core::default::Default for RTL_SYSTEM_GLOBAL_DATA_ID {
 }
 unsafe impl ::windows::core::Abi for RTL_SYSTEM_GLOBAL_DATA_ID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RTL_SYSTEM_GLOBAL_DATA_ID {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2118,6 +2146,7 @@ impl ::core::clone::Clone for SYSTEM_CPU_SET_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for SYSTEM_CPU_SET_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SYSTEM_CPU_SET_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -2143,6 +2172,7 @@ impl ::core::clone::Clone for SYSTEM_CPU_SET_INFORMATION_0 {
 }
 unsafe impl ::windows::core::Abi for SYSTEM_CPU_SET_INFORMATION_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SYSTEM_CPU_SET_INFORMATION_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -2177,6 +2207,7 @@ impl ::core::clone::Clone for SYSTEM_CPU_SET_INFORMATION_0_0 {
 }
 unsafe impl ::windows::core::Abi for SYSTEM_CPU_SET_INFORMATION_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SYSTEM_CPU_SET_INFORMATION_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -2203,6 +2234,7 @@ impl ::core::clone::Clone for SYSTEM_CPU_SET_INFORMATION_0_0_0 {
 }
 unsafe impl ::windows::core::Abi for SYSTEM_CPU_SET_INFORMATION_0_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SYSTEM_CPU_SET_INFORMATION_0_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -2233,6 +2265,7 @@ impl ::core::fmt::Debug for SYSTEM_CPU_SET_INFORMATION_0_0_0_0 {
 }
 unsafe impl ::windows::core::Abi for SYSTEM_CPU_SET_INFORMATION_0_0_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SYSTEM_CPU_SET_INFORMATION_0_0_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -2259,6 +2292,7 @@ impl ::core::clone::Clone for SYSTEM_CPU_SET_INFORMATION_0_0_1 {
 }
 unsafe impl ::windows::core::Abi for SYSTEM_CPU_SET_INFORMATION_0_0_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SYSTEM_CPU_SET_INFORMATION_0_0_1 {
     fn eq(&self, other: &Self) -> bool {
@@ -2305,6 +2339,7 @@ impl ::core::clone::Clone for SYSTEM_INFO {
 #[cfg(feature = "Win32_System_Diagnostics_Debug")]
 unsafe impl ::windows::core::Abi for SYSTEM_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_System_Diagnostics_Debug")]
 impl ::core::cmp::PartialEq for SYSTEM_INFO {
@@ -2338,6 +2373,7 @@ impl ::core::clone::Clone for SYSTEM_INFO_0 {
 #[cfg(feature = "Win32_System_Diagnostics_Debug")]
 unsafe impl ::windows::core::Abi for SYSTEM_INFO_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_System_Diagnostics_Debug")]
 impl ::core::cmp::PartialEq for SYSTEM_INFO_0 {
@@ -2377,6 +2413,7 @@ impl ::core::fmt::Debug for SYSTEM_INFO_0_0 {
 #[cfg(feature = "Win32_System_Diagnostics_Debug")]
 unsafe impl ::windows::core::Abi for SYSTEM_INFO_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_System_Diagnostics_Debug")]
 impl ::core::cmp::PartialEq for SYSTEM_INFO_0_0 {
@@ -2407,6 +2444,7 @@ impl ::core::clone::Clone for SYSTEM_LOGICAL_PROCESSOR_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for SYSTEM_LOGICAL_PROCESSOR_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SYSTEM_LOGICAL_PROCESSOR_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -2435,6 +2473,7 @@ impl ::core::clone::Clone for SYSTEM_LOGICAL_PROCESSOR_INFORMATION_0 {
 }
 unsafe impl ::windows::core::Abi for SYSTEM_LOGICAL_PROCESSOR_INFORMATION_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SYSTEM_LOGICAL_PROCESSOR_INFORMATION_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -2465,6 +2504,7 @@ impl ::core::fmt::Debug for SYSTEM_LOGICAL_PROCESSOR_INFORMATION_0_0 {
 }
 unsafe impl ::windows::core::Abi for SYSTEM_LOGICAL_PROCESSOR_INFORMATION_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SYSTEM_LOGICAL_PROCESSOR_INFORMATION_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -2495,6 +2535,7 @@ impl ::core::fmt::Debug for SYSTEM_LOGICAL_PROCESSOR_INFORMATION_0_1 {
 }
 unsafe impl ::windows::core::Abi for SYSTEM_LOGICAL_PROCESSOR_INFORMATION_0_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SYSTEM_LOGICAL_PROCESSOR_INFORMATION_0_1 {
     fn eq(&self, other: &Self) -> bool {
@@ -2522,6 +2563,7 @@ impl ::core::clone::Clone for SYSTEM_LOGICAL_PROCESSOR_INFORMATION_EX {
 }
 unsafe impl ::windows::core::Abi for SYSTEM_LOGICAL_PROCESSOR_INFORMATION_EX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SYSTEM_LOGICAL_PROCESSOR_INFORMATION_EX {
     fn eq(&self, other: &Self) -> bool {
@@ -2550,6 +2592,7 @@ impl ::core::clone::Clone for SYSTEM_LOGICAL_PROCESSOR_INFORMATION_EX_0 {
 }
 unsafe impl ::windows::core::Abi for SYSTEM_LOGICAL_PROCESSOR_INFORMATION_EX_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SYSTEM_LOGICAL_PROCESSOR_INFORMATION_EX_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -2585,6 +2628,7 @@ impl ::core::fmt::Debug for SYSTEM_POOL_ZEROING_INFORMATION {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SYSTEM_POOL_ZEROING_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for SYSTEM_POOL_ZEROING_INFORMATION {
@@ -2618,6 +2662,7 @@ impl ::core::fmt::Debug for SYSTEM_PROCESSOR_CYCLE_TIME_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for SYSTEM_PROCESSOR_CYCLE_TIME_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SYSTEM_PROCESSOR_CYCLE_TIME_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -2648,6 +2693,7 @@ impl ::core::fmt::Debug for SYSTEM_SUPPORTED_PROCESSOR_ARCHITECTURES_INFORMATION
 }
 unsafe impl ::windows::core::Abi for SYSTEM_SUPPORTED_PROCESSOR_ARCHITECTURES_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SYSTEM_SUPPORTED_PROCESSOR_ARCHITECTURES_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -2820,6 +2866,7 @@ impl ::core::default::Default for USER_CET_ENVIRONMENT {
 }
 unsafe impl ::windows::core::Abi for USER_CET_ENVIRONMENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for USER_CET_ENVIRONMENT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2859,6 +2906,7 @@ impl ::core::default::Default for VER_FLAGS {
 }
 unsafe impl ::windows::core::Abi for VER_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VER_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

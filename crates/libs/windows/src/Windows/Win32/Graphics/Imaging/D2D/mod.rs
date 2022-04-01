@@ -2,6 +2,11 @@
 #[doc = "*Required features: `\"Win32_Graphics_Imaging_D2D\"`*"]
 #[repr(transparent)]
 pub struct IWICImageEncoder(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWICImageEncoder {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWICImageEncoder {
     #[doc = "*Required features: `\"Win32_Graphics_Imaging_D2D\"`, `\"Win32_Graphics_Direct2D_Common\"`, `\"Win32_Graphics_Dxgi_Common\"`*"]
     #[cfg(all(feature = "Win32_Graphics_Direct2D_Common", feature = "Win32_Graphics_Dxgi_Common"))]
@@ -39,11 +44,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWICI
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWICImageEncoder {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWICImageEncoder {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -79,6 +79,11 @@ pub struct IWICImageEncoder_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Imaging_D2D\"`*"]
 #[repr(transparent)]
 pub struct IWICImagingFactory2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWICImagingFactory2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWICImagingFactory2 {
     #[doc = "*Required features: `\"Win32_Graphics_Imaging_D2D\"`*"]
     pub unsafe fn CreateDecoderFromFilename<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, wzfilename: Param0, pguidvendor: *const ::windows::core::GUID, dwdesiredaccess: u32, metadataoptions: super::WICDecodeOptions) -> ::windows::core::Result<super::IWICBitmapDecoder> {
@@ -255,11 +260,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::IWICImagingFactory> for IWICImagi
 impl<'a> ::windows::core::IntoParam<'a, super::IWICImagingFactory> for &'a IWICImagingFactory2 {
     fn into_param(self) -> ::windows::core::Param<'a, super::IWICImagingFactory> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IWICImagingFactory2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IWICImagingFactory2 {

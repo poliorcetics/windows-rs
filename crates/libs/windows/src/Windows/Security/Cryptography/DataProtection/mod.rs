@@ -59,11 +59,6 @@ impl DataProtectionProvider {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for DataProtectionProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DataProtectionProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -77,7 +72,6 @@ impl ::core::fmt::Debug for DataProtectionProvider {
 }
 unsafe impl ::windows::core::RuntimeType for DataProtectionProvider {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Security.Cryptography.DataProtection.DataProtectionProvider;{09639948-ed22-4270-bd1c-6d72c00f8787})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -134,6 +128,11 @@ unsafe impl ::core::marker::Sync for DataProtectionProvider {}
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDataProtectionProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDataProtectionProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDataProtectionProvider {
     type Vtable = IDataProtectionProvider_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x09639948_ed22_4270_bd1c_6d72c00f8787);
@@ -162,6 +161,11 @@ pub struct IDataProtectionProvider_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDataProtectionProviderFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDataProtectionProviderFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDataProtectionProviderFactory {
     type Vtable = IDataProtectionProviderFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xadf33dac_4932_4cdf_ac41_7214333514ca);

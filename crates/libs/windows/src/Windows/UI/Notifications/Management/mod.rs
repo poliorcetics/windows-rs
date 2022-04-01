@@ -2,6 +2,11 @@
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IUserNotificationListener(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUserNotificationListener {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IUserNotificationListener {
     type Vtable = IUserNotificationListener_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x62553e41_8a06_4cef_8215_6033a5be4b03);
@@ -34,6 +39,11 @@ pub struct IUserNotificationListener_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IUserNotificationListenerStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUserNotificationListenerStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IUserNotificationListenerStatics {
     type Vtable = IUserNotificationListenerStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xff6123cf_4386_4aa3_b73d_b804e5b63b23);
@@ -120,11 +130,6 @@ impl UserNotificationListener {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for UserNotificationListener {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for UserNotificationListener {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -138,7 +143,6 @@ impl ::core::fmt::Debug for UserNotificationListener {
 }
 unsafe impl ::windows::core::RuntimeType for UserNotificationListener {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Notifications.Management.UserNotificationListener;{62553e41-8a06-4cef-8215-6033a5be4b03})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -214,6 +218,7 @@ impl ::core::default::Default for UserNotificationListenerAccessStatus {
 }
 unsafe impl ::windows::core::Abi for UserNotificationListenerAccessStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UserNotificationListenerAccessStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -222,7 +227,6 @@ impl ::core::fmt::Debug for UserNotificationListenerAccessStatus {
 }
 unsafe impl ::windows::core::RuntimeType for UserNotificationListenerAccessStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Notifications.Management.UserNotificationListenerAccessStatus;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }

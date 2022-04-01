@@ -2,6 +2,11 @@
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IVibrationDevice(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVibrationDevice {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IVibrationDevice {
     type Vtable = IVibrationDevice_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1b4a6595_cfcd_4e08_92fb_c1906d04498c);
@@ -19,6 +24,11 @@ pub struct IVibrationDevice_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IVibrationDeviceStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVibrationDeviceStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IVibrationDeviceStatics {
     type Vtable = IVibrationDeviceStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x332fd2f1_1c69_4c91_949e_4bb67a85bdc7);
@@ -57,11 +67,6 @@ impl VibrationDevice {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for VibrationDevice {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for VibrationDevice {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -75,7 +80,6 @@ impl ::core::fmt::Debug for VibrationDevice {
 }
 unsafe impl ::windows::core::RuntimeType for VibrationDevice {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Phone.Devices.Notification.VibrationDevice;{1b4a6595-cfcd-4e08-92fb-c1906d04498c})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

@@ -35,6 +35,7 @@ impl ::core::default::Default for DataClasses {
 }
 unsafe impl ::windows::core::Abi for DataClasses {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DataClasses {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -71,7 +72,6 @@ impl ::core::ops::Not for DataClasses {
 }
 unsafe impl ::windows::core::RuntimeType for DataClasses {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Networking.NetworkOperators.DataClasses;u4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -215,11 +215,6 @@ impl ESim {
         }
     }
 }
-impl ::core::clone::Clone for ESim {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ESim {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -233,7 +228,6 @@ impl ::core::fmt::Debug for ESim {
 }
 unsafe impl ::windows::core::RuntimeType for ESim {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.NetworkOperators.ESim;{6f6e6e26-f123-437d-8ced-dc1d2bc0c3a9})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -300,11 +294,6 @@ impl ESimAddedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for ESimAddedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ESimAddedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -318,7 +307,6 @@ impl ::core::fmt::Debug for ESimAddedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for ESimAddedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.NetworkOperators.ESimAddedEventArgs;{38bd0a58-4d5a-4d08-8da7-e73eff369ddd})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -394,6 +382,7 @@ impl ::core::default::Default for ESimAuthenticationPreference {
 }
 unsafe impl ::windows::core::Abi for ESimAuthenticationPreference {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ESimAuthenticationPreference {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -402,7 +391,6 @@ impl ::core::fmt::Debug for ESimAuthenticationPreference {
 }
 unsafe impl ::windows::core::RuntimeType for ESimAuthenticationPreference {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Networking.NetworkOperators.ESimAuthenticationPreference;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -428,11 +416,6 @@ impl ESimDiscoverEvent {
         }
     }
 }
-impl ::core::clone::Clone for ESimDiscoverEvent {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ESimDiscoverEvent {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -446,7 +429,6 @@ impl ::core::fmt::Debug for ESimDiscoverEvent {
 }
 unsafe impl ::windows::core::RuntimeType for ESimDiscoverEvent {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.NetworkOperators.ESimDiscoverEvent;{e59ac3e3-39bc-5f6f-9321-0d4a182d261b})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -538,11 +520,6 @@ impl ESimDiscoverResult {
         }
     }
 }
-impl ::core::clone::Clone for ESimDiscoverResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ESimDiscoverResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -556,7 +533,6 @@ impl ::core::fmt::Debug for ESimDiscoverResult {
 }
 unsafe impl ::windows::core::RuntimeType for ESimDiscoverResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.NetworkOperators.ESimDiscoverResult;{56b4bb5e-ab2f-5ac6-b359-dd5a8e237926})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -632,6 +608,7 @@ impl ::core::default::Default for ESimDiscoverResultKind {
 }
 unsafe impl ::windows::core::Abi for ESimDiscoverResultKind {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ESimDiscoverResultKind {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -640,7 +617,6 @@ impl ::core::fmt::Debug for ESimDiscoverResultKind {
 }
 unsafe impl ::windows::core::RuntimeType for ESimDiscoverResultKind {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Networking.NetworkOperators.ESimDiscoverResultKind;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -666,11 +642,6 @@ impl ESimDownloadProfileMetadataResult {
         }
     }
 }
-impl ::core::clone::Clone for ESimDownloadProfileMetadataResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ESimDownloadProfileMetadataResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -684,7 +655,6 @@ impl ::core::fmt::Debug for ESimDownloadProfileMetadataResult {
 }
 unsafe impl ::windows::core::RuntimeType for ESimDownloadProfileMetadataResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.NetworkOperators.ESimDownloadProfileMetadataResult;{c4234d9e-5ad6-426d-8d00-4434f449afec})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -790,11 +760,6 @@ impl ESimOperationResult {
         }
     }
 }
-impl ::core::clone::Clone for ESimOperationResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ESimOperationResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -808,7 +773,6 @@ impl ::core::fmt::Debug for ESimOperationResult {
 }
 unsafe impl ::windows::core::RuntimeType for ESimOperationResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.NetworkOperators.ESimOperationResult;{a67b63b1-309b-4e77-9e7e-cd93f1ddc7b9})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -910,6 +874,7 @@ impl ::core::default::Default for ESimOperationStatus {
 }
 unsafe impl ::windows::core::Abi for ESimOperationStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ESimOperationStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -918,7 +883,6 @@ impl ::core::fmt::Debug for ESimOperationStatus {
 }
 unsafe impl ::windows::core::RuntimeType for ESimOperationStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Networking.NetworkOperators.ESimOperationStatus;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -936,11 +900,6 @@ impl ESimPolicy {
         }
     }
 }
-impl ::core::clone::Clone for ESimPolicy {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ESimPolicy {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -954,7 +913,6 @@ impl ::core::fmt::Debug for ESimPolicy {
 }
 unsafe impl ::windows::core::RuntimeType for ESimPolicy {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.NetworkOperators.ESimPolicy;{41e1b99d-cf7e-4315-882b-6f1e74b0d38f})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1105,11 +1063,6 @@ impl ESimProfile {
         }
     }
 }
-impl ::core::clone::Clone for ESimProfile {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ESimProfile {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1123,7 +1076,6 @@ impl ::core::fmt::Debug for ESimProfile {
 }
 unsafe impl ::windows::core::RuntimeType for ESimProfile {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.NetworkOperators.ESimProfile;{ee1e7880-06a9-4027-b4f8-ddb23d7810e0})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1199,6 +1151,7 @@ impl ::core::default::Default for ESimProfileClass {
 }
 unsafe impl ::windows::core::Abi for ESimProfileClass {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ESimProfileClass {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1207,7 +1160,6 @@ impl ::core::fmt::Debug for ESimProfileClass {
 }
 unsafe impl ::windows::core::RuntimeType for ESimProfileClass {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Networking.NetworkOperators.ESimProfileClass;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1231,10 +1183,10 @@ impl ::core::fmt::Debug for ESimProfileInstallProgress {
 }
 unsafe impl ::windows::core::Abi for ESimProfileInstallProgress {
     type Abi = Self;
+    type DefaultType = Self;
 }
 unsafe impl ::windows::core::RuntimeType for ESimProfileInstallProgress {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"struct(Windows.Networking.NetworkOperators.ESimProfileInstallProgress;i4;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1363,11 +1315,6 @@ impl ESimProfileMetadata {
         unsafe { (::windows::core::Interface::vtable(this).RemoveStateChanged)(::core::mem::transmute_copy(this), token.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for ESimProfileMetadata {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ESimProfileMetadata {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1381,7 +1328,6 @@ impl ::core::fmt::Debug for ESimProfileMetadata {
 }
 unsafe impl ::windows::core::RuntimeType for ESimProfileMetadata {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.NetworkOperators.ESimProfileMetadata;{ed25831f-90db-498d-a7b4-ebce807d3c23})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1462,6 +1408,7 @@ impl ::core::default::Default for ESimProfileMetadataState {
 }
 unsafe impl ::windows::core::Abi for ESimProfileMetadataState {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ESimProfileMetadataState {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1470,7 +1417,6 @@ impl ::core::fmt::Debug for ESimProfileMetadataState {
 }
 unsafe impl ::windows::core::RuntimeType for ESimProfileMetadataState {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Networking.NetworkOperators.ESimProfileMetadataState;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1504,11 +1450,6 @@ impl ESimProfilePolicy {
         }
     }
 }
-impl ::core::clone::Clone for ESimProfilePolicy {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ESimProfilePolicy {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1522,7 +1463,6 @@ impl ::core::fmt::Debug for ESimProfilePolicy {
 }
 unsafe impl ::windows::core::RuntimeType for ESimProfilePolicy {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.NetworkOperators.ESimProfilePolicy;{e6dd0f1d-9c5c-46c5-a289-a948999bf062})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1599,6 +1539,7 @@ impl ::core::default::Default for ESimProfileState {
 }
 unsafe impl ::windows::core::Abi for ESimProfileState {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ESimProfileState {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1607,7 +1548,6 @@ impl ::core::fmt::Debug for ESimProfileState {
 }
 unsafe impl ::windows::core::RuntimeType for ESimProfileState {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Networking.NetworkOperators.ESimProfileState;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1625,11 +1565,6 @@ impl ESimRemovedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for ESimRemovedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ESimRemovedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1643,7 +1578,6 @@ impl ::core::fmt::Debug for ESimRemovedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for ESimRemovedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.NetworkOperators.ESimRemovedEventArgs;{dec5277b-2fd9-4ed9-8376-d9b5e41278a3})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1718,11 +1652,6 @@ impl ESimServiceInfo {
         }
     }
 }
-impl ::core::clone::Clone for ESimServiceInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ESimServiceInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1736,7 +1665,6 @@ impl ::core::fmt::Debug for ESimServiceInfo {
 }
 unsafe impl ::windows::core::RuntimeType for ESimServiceInfo {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.NetworkOperators.ESimServiceInfo;{f16aabcf-7f59-4a51-8494-bd89d5ff50ee})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1813,6 +1741,7 @@ impl ::core::default::Default for ESimState {
 }
 unsafe impl ::windows::core::Abi for ESimState {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ESimState {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1821,7 +1750,6 @@ impl ::core::fmt::Debug for ESimState {
 }
 unsafe impl ::windows::core::RuntimeType for ESimState {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Networking.NetworkOperators.ESimState;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1839,11 +1767,6 @@ impl ESimUpdatedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for ESimUpdatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ESimUpdatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1857,7 +1780,6 @@ impl ::core::fmt::Debug for ESimUpdatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for ESimUpdatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.NetworkOperators.ESimUpdatedEventArgs;{4c125cec-508d-4b88-83cb-68bef8168d12})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2009,11 +1931,6 @@ impl ESimWatcher {
         unsafe { (::windows::core::Interface::vtable(this).RemoveUpdated)(::core::mem::transmute_copy(this), token.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for ESimWatcher {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ESimWatcher {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2027,7 +1944,6 @@ impl ::core::fmt::Debug for ESimWatcher {
 }
 unsafe impl ::windows::core::RuntimeType for ESimWatcher {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.NetworkOperators.ESimWatcher;{c1f84ceb-a28d-4fbf-9771-6e31b81ccf22})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2105,6 +2021,7 @@ impl ::core::default::Default for ESimWatcherStatus {
 }
 unsafe impl ::windows::core::Abi for ESimWatcherStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ESimWatcherStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2113,7 +2030,6 @@ impl ::core::fmt::Debug for ESimWatcherStatus {
 }
 unsafe impl ::windows::core::RuntimeType for ESimWatcherStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Networking.NetworkOperators.ESimWatcherStatus;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2228,11 +2144,6 @@ impl HotspotAuthenticationContext {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for HotspotAuthenticationContext {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for HotspotAuthenticationContext {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2246,7 +2157,6 @@ impl ::core::fmt::Debug for HotspotAuthenticationContext {
 }
 unsafe impl ::windows::core::RuntimeType for HotspotAuthenticationContext {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.NetworkOperators.HotspotAuthenticationContext;{e756c791-1003-4de5-83c7-de61d88831d0})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2311,11 +2221,6 @@ impl HotspotAuthenticationEventDetails {
         }
     }
 }
-impl ::core::clone::Clone for HotspotAuthenticationEventDetails {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for HotspotAuthenticationEventDetails {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2329,7 +2234,6 @@ impl ::core::fmt::Debug for HotspotAuthenticationEventDetails {
 }
 unsafe impl ::windows::core::RuntimeType for HotspotAuthenticationEventDetails {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.NetworkOperators.HotspotAuthenticationEventDetails;{e756c791-1001-4de5-83c7-de61d88831d0})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2407,6 +2311,7 @@ impl ::core::default::Default for HotspotAuthenticationResponseCode {
 }
 unsafe impl ::windows::core::Abi for HotspotAuthenticationResponseCode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HotspotAuthenticationResponseCode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2415,7 +2320,6 @@ impl ::core::fmt::Debug for HotspotAuthenticationResponseCode {
 }
 unsafe impl ::windows::core::RuntimeType for HotspotAuthenticationResponseCode {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Networking.NetworkOperators.HotspotAuthenticationResponseCode;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2459,11 +2363,6 @@ impl HotspotCredentialsAuthenticationResult {
         }
     }
 }
-impl ::core::clone::Clone for HotspotCredentialsAuthenticationResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for HotspotCredentialsAuthenticationResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2477,7 +2376,6 @@ impl ::core::fmt::Debug for HotspotCredentialsAuthenticationResult {
 }
 unsafe impl ::windows::core::RuntimeType for HotspotCredentialsAuthenticationResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.NetworkOperators.HotspotCredentialsAuthenticationResult;{e756c791-1005-4de5-83c7-de61d88831d0})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2532,6 +2430,11 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a H
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IESim(::windows::core::IUnknown);
+impl ::core::clone::Clone for IESim {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IESim {
     type Vtable = IESim_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x6f6e6e26_f123_437d_8ced_dc1d2bc0c3a9);
@@ -2577,6 +2480,11 @@ pub struct IESim_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IESim2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IESim2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IESim2 {
     type Vtable = IESim2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xbd4fd0a0_c68f_56eb_b99b_8f34b8100299);
@@ -2599,6 +2507,11 @@ pub struct IESim2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IESimAddedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IESimAddedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IESimAddedEventArgs {
     type Vtable = IESimAddedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x38bd0a58_4d5a_4d08_8da7_e73eff369ddd);
@@ -2612,6 +2525,11 @@ pub struct IESimAddedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IESimDiscoverEvent(::windows::core::IUnknown);
+impl ::core::clone::Clone for IESimDiscoverEvent {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IESimDiscoverEvent {
     type Vtable = IESimDiscoverEvent_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe59ac3e3_39bc_5f6f_9321_0d4a182d261b);
@@ -2626,6 +2544,11 @@ pub struct IESimDiscoverEvent_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IESimDiscoverResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for IESimDiscoverResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IESimDiscoverResult {
     type Vtable = IESimDiscoverResult_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x56b4bb5e_ab2f_5ac6_b359_dd5a8e237926);
@@ -2645,6 +2568,11 @@ pub struct IESimDiscoverResult_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IESimDownloadProfileMetadataResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for IESimDownloadProfileMetadataResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IESimDownloadProfileMetadataResult {
     type Vtable = IESimDownloadProfileMetadataResult_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc4234d9e_5ad6_426d_8d00_4434f449afec);
@@ -2659,6 +2587,11 @@ pub struct IESimDownloadProfileMetadataResult_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IESimManagerStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IESimManagerStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IESimManagerStatics {
     type Vtable = IESimManagerStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x0bfa2c0c_df88_4631_bf04_c12e281b3962);
@@ -2681,6 +2614,11 @@ pub struct IESimManagerStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IESimOperationResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for IESimOperationResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IESimOperationResult {
     type Vtable = IESimOperationResult_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa67b63b1_309b_4e77_9e7e_cd93f1ddc7b9);
@@ -2694,6 +2632,11 @@ pub struct IESimOperationResult_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IESimPolicy(::windows::core::IUnknown);
+impl ::core::clone::Clone for IESimPolicy {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IESimPolicy {
     type Vtable = IESimPolicy_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x41e1b99d_cf7e_4315_882b_6f1e74b0d38f);
@@ -2707,6 +2650,11 @@ pub struct IESimPolicy_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IESimProfile(::windows::core::IUnknown);
+impl ::core::clone::Clone for IESimProfile {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IESimProfile {
     type Vtable = IESimProfile_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xee1e7880_06a9_4027_b4f8_ddb23d7810e0);
@@ -2742,6 +2690,11 @@ pub struct IESimProfile_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IESimProfileMetadata(::windows::core::IUnknown);
+impl ::core::clone::Clone for IESimProfileMetadata {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IESimProfileMetadata {
     type Vtable = IESimProfileMetadata_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xed25831f_90db_498d_a7b4_ebce807d3c23);
@@ -2788,6 +2741,11 @@ pub struct IESimProfileMetadata_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IESimProfilePolicy(::windows::core::IUnknown);
+impl ::core::clone::Clone for IESimProfilePolicy {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IESimProfilePolicy {
     type Vtable = IESimProfilePolicy_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe6dd0f1d_9c5c_46c5_a289_a948999bf062);
@@ -2803,6 +2761,11 @@ pub struct IESimProfilePolicy_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IESimRemovedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IESimRemovedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IESimRemovedEventArgs {
     type Vtable = IESimRemovedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xdec5277b_2fd9_4ed9_8376_d9b5e41278a3);
@@ -2816,6 +2779,11 @@ pub struct IESimRemovedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IESimServiceInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IESimServiceInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IESimServiceInfo {
     type Vtable = IESimServiceInfo_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf16aabcf_7f59_4a51_8494_bd89d5ff50ee);
@@ -2830,6 +2798,11 @@ pub struct IESimServiceInfo_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IESimUpdatedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IESimUpdatedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IESimUpdatedEventArgs {
     type Vtable = IESimUpdatedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x4c125cec_508d_4b88_83cb_68bef8168d12);
@@ -2843,6 +2816,11 @@ pub struct IESimUpdatedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IESimWatcher(::windows::core::IUnknown);
+impl ::core::clone::Clone for IESimWatcher {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IESimWatcher {
     type Vtable = IESimWatcher_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc1f84ceb_a28d_4fbf_9771_6e31b81ccf22);
@@ -2898,6 +2876,11 @@ pub struct IESimWatcher_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IFdnAccessManagerStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IFdnAccessManagerStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IFdnAccessManagerStatics {
     type Vtable = IFdnAccessManagerStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf2aa4395_f1e6_4319_aa3e_477ca64b2bdf);
@@ -2914,6 +2897,11 @@ pub struct IFdnAccessManagerStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHotspotAuthenticationContext(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHotspotAuthenticationContext {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHotspotAuthenticationContext {
     type Vtable = IHotspotAuthenticationContext_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe756c791_1003_4de5_83c7_de61d88831d0);
@@ -2947,6 +2935,11 @@ pub struct IHotspotAuthenticationContext_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHotspotAuthenticationContext2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHotspotAuthenticationContext2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHotspotAuthenticationContext2 {
     type Vtable = IHotspotAuthenticationContext2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe756c791_1004_4de5_83c7_de61d88831d0);
@@ -2963,6 +2956,11 @@ pub struct IHotspotAuthenticationContext2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHotspotAuthenticationContextStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHotspotAuthenticationContextStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHotspotAuthenticationContextStatics {
     type Vtable = IHotspotAuthenticationContextStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe756c791_1002_4de5_83c7_de61d88831d0);
@@ -2976,6 +2974,11 @@ pub struct IHotspotAuthenticationContextStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHotspotAuthenticationEventDetails(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHotspotAuthenticationEventDetails {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHotspotAuthenticationEventDetails {
     type Vtable = IHotspotAuthenticationEventDetails_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe756c791_1001_4de5_83c7_de61d88831d0);
@@ -2989,6 +2992,11 @@ pub struct IHotspotAuthenticationEventDetails_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHotspotCredentialsAuthenticationResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHotspotCredentialsAuthenticationResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHotspotCredentialsAuthenticationResult {
     type Vtable = IHotspotCredentialsAuthenticationResult_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe756c791_1005_4de5_83c7_de61d88831d0);
@@ -3011,6 +3019,11 @@ pub struct IHotspotCredentialsAuthenticationResult_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IKnownCSimFilePathsStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IKnownCSimFilePathsStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IKnownCSimFilePathsStatics {
     type Vtable = IKnownCSimFilePathsStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb458aeed_49f1_4c22_b073_96d511bf9c35);
@@ -3035,6 +3048,11 @@ pub struct IKnownCSimFilePathsStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IKnownRuimFilePathsStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IKnownRuimFilePathsStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IKnownRuimFilePathsStatics {
     type Vtable = IKnownRuimFilePathsStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x3883c8b9_ff24_4571_a867_09f960426e14);
@@ -3059,6 +3077,11 @@ pub struct IKnownRuimFilePathsStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IKnownSimFilePathsStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IKnownSimFilePathsStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IKnownSimFilePathsStatics {
     type Vtable = IKnownSimFilePathsStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x80cd1a63_37a5_43d3_80a3_ccd23e8fecee);
@@ -3087,6 +3110,11 @@ pub struct IKnownSimFilePathsStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IKnownUSimFilePathsStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IKnownUSimFilePathsStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IKnownUSimFilePathsStatics {
     type Vtable = IKnownUSimFilePathsStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x7c34e581_1f1b_43f4_9530_8b092d32d71f);
@@ -3119,6 +3147,11 @@ pub struct IKnownUSimFilePathsStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMobileBroadbandAccount(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMobileBroadbandAccount {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMobileBroadbandAccount {
     type Vtable = IMobileBroadbandAccount_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x36c24ccd_cee2_43e0_a603_ee86a36d6570);
@@ -3136,6 +3169,11 @@ pub struct IMobileBroadbandAccount_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMobileBroadbandAccount2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMobileBroadbandAccount2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMobileBroadbandAccount2 {
     type Vtable = IMobileBroadbandAccount2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x38f52f1c_1136_4257_959f_b658a352b6d4);
@@ -3152,6 +3190,11 @@ pub struct IMobileBroadbandAccount2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMobileBroadbandAccount3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMobileBroadbandAccount3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMobileBroadbandAccount3 {
     type Vtable = IMobileBroadbandAccount3_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x092a1e21_9379_4b9b_ad31_d5fee2f748c6);
@@ -3168,6 +3211,11 @@ pub struct IMobileBroadbandAccount3_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMobileBroadbandAccountEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMobileBroadbandAccountEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMobileBroadbandAccountEventArgs {
     type Vtable = IMobileBroadbandAccountEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x3853c880_77de_4c04_bead_a123b08c9f59);
@@ -3181,6 +3229,11 @@ pub struct IMobileBroadbandAccountEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMobileBroadbandAccountStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMobileBroadbandAccountStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMobileBroadbandAccountStatics {
     type Vtable = IMobileBroadbandAccountStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xaa7f4d24_afc1_4fc8_ae9a_a9175310faad);
@@ -3198,6 +3251,11 @@ pub struct IMobileBroadbandAccountStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMobileBroadbandAccountUpdatedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMobileBroadbandAccountUpdatedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMobileBroadbandAccountUpdatedEventArgs {
     type Vtable = IMobileBroadbandAccountUpdatedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x7bc31d88_a6bd_49e1_80ab_6b91354a57d4);
@@ -3213,6 +3271,11 @@ pub struct IMobileBroadbandAccountUpdatedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMobileBroadbandAccountWatcher(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMobileBroadbandAccountWatcher {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMobileBroadbandAccountWatcher {
     type Vtable = IMobileBroadbandAccountWatcher_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x6bf3335e_23b5_449f_928d_5e0d3e04471d);
@@ -3268,6 +3331,11 @@ pub struct IMobileBroadbandAccountWatcher_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMobileBroadbandAntennaSar(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMobileBroadbandAntennaSar {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMobileBroadbandAntennaSar {
     type Vtable = IMobileBroadbandAntennaSar_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb9af4b7e_cbf9_4109_90be_5c06bfd513b6);
@@ -3282,6 +3350,11 @@ pub struct IMobileBroadbandAntennaSar_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMobileBroadbandAntennaSarFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMobileBroadbandAntennaSarFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMobileBroadbandAntennaSarFactory {
     type Vtable = IMobileBroadbandAntennaSarFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa91e1716_c04d_4a21_8698_1459dc672c6e);
@@ -3295,6 +3368,11 @@ pub struct IMobileBroadbandAntennaSarFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMobileBroadbandCellCdma(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMobileBroadbandCellCdma {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMobileBroadbandCellCdma {
     type Vtable = IMobileBroadbandCellCdma_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x0601b3b4_411a_4f2e_8287_76f5650c60cd);
@@ -3339,6 +3417,11 @@ pub struct IMobileBroadbandCellCdma_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMobileBroadbandCellGsm(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMobileBroadbandCellGsm {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMobileBroadbandCellGsm {
     type Vtable = IMobileBroadbandCellGsm_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xcc917f06_7ee0_47b8_9e1f_c3b48df9df5b);
@@ -3376,6 +3459,11 @@ pub struct IMobileBroadbandCellGsm_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMobileBroadbandCellLte(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMobileBroadbandCellLte {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMobileBroadbandCellLte {
     type Vtable = IMobileBroadbandCellLte_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9197c87b_2b78_456d_8b53_aaa25d0af741);
@@ -3417,6 +3505,11 @@ pub struct IMobileBroadbandCellLte_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMobileBroadbandCellNR(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMobileBroadbandCellNR {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMobileBroadbandCellNR {
     type Vtable = IMobileBroadbandCellNR_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa13f0deb_66fc_4b4b_83a9_a487a3a5a0a6);
@@ -3462,6 +3555,11 @@ pub struct IMobileBroadbandCellNR_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMobileBroadbandCellTdscdma(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMobileBroadbandCellTdscdma {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMobileBroadbandCellTdscdma {
     type Vtable = IMobileBroadbandCellTdscdma_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x0eda1655_db0e_4182_8cda_cc419a7bde08);
@@ -3503,6 +3601,11 @@ pub struct IMobileBroadbandCellTdscdma_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMobileBroadbandCellUmts(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMobileBroadbandCellUmts {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMobileBroadbandCellUmts {
     type Vtable = IMobileBroadbandCellUmts_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x77b4b5ae_49c8_4f15_b285_4c26a7f67215);
@@ -3544,6 +3647,11 @@ pub struct IMobileBroadbandCellUmts_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMobileBroadbandCellsInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMobileBroadbandCellsInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMobileBroadbandCellsInfo {
     type Vtable = IMobileBroadbandCellsInfo_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x89a9562a_e472_4da5_929c_de61711dd261);
@@ -3596,6 +3704,11 @@ pub struct IMobileBroadbandCellsInfo_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMobileBroadbandCellsInfo2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMobileBroadbandCellsInfo2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMobileBroadbandCellsInfo2 {
     type Vtable = IMobileBroadbandCellsInfo2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x66205912_b89f_4e12_bbb6_d5cf09a820ca);
@@ -3616,6 +3729,11 @@ pub struct IMobileBroadbandCellsInfo2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMobileBroadbandCurrentSlotIndexChangedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMobileBroadbandCurrentSlotIndexChangedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMobileBroadbandCurrentSlotIndexChangedEventArgs {
     type Vtable = IMobileBroadbandCurrentSlotIndexChangedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf718b184_c370_5fd4_a670_1846cb9bce47);
@@ -3629,6 +3747,11 @@ pub struct IMobileBroadbandCurrentSlotIndexChangedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMobileBroadbandDeviceInformation(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMobileBroadbandDeviceInformation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMobileBroadbandDeviceInformation {
     type Vtable = IMobileBroadbandDeviceInformation_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe6d08168_e381_4c6e_9be8_fe156969a446);
@@ -3661,6 +3784,11 @@ pub struct IMobileBroadbandDeviceInformation_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMobileBroadbandDeviceInformation2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMobileBroadbandDeviceInformation2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMobileBroadbandDeviceInformation2 {
     type Vtable = IMobileBroadbandDeviceInformation2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x2e467af1_f932_4737_a722_03ba72370cb8);
@@ -3676,6 +3804,11 @@ pub struct IMobileBroadbandDeviceInformation2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMobileBroadbandDeviceInformation3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMobileBroadbandDeviceInformation3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMobileBroadbandDeviceInformation3 {
     type Vtable = IMobileBroadbandDeviceInformation3_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe08bb4bd_5d30_4b5a_92cc_d54df881d49e);
@@ -3691,6 +3824,11 @@ pub struct IMobileBroadbandDeviceInformation3_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMobileBroadbandDeviceInformation4(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMobileBroadbandDeviceInformation4 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMobileBroadbandDeviceInformation4 {
     type Vtable = IMobileBroadbandDeviceInformation4_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x263f3152_7b9d_582c_b17c_f80a60b50031);
@@ -3704,6 +3842,11 @@ pub struct IMobileBroadbandDeviceInformation4_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMobileBroadbandDeviceService(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMobileBroadbandDeviceService {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMobileBroadbandDeviceService {
     type Vtable = IMobileBroadbandDeviceService_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x22be1a52_bd80_40ac_8e1f_2e07836a3dbd);
@@ -3723,6 +3866,11 @@ pub struct IMobileBroadbandDeviceService_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMobileBroadbandDeviceServiceCommandResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMobileBroadbandDeviceServiceCommandResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMobileBroadbandDeviceServiceCommandResult {
     type Vtable = IMobileBroadbandDeviceServiceCommandResult_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb0f46abb_94d6_44b9_a538_f0810b645389);
@@ -3740,6 +3888,11 @@ pub struct IMobileBroadbandDeviceServiceCommandResult_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMobileBroadbandDeviceServiceCommandSession(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMobileBroadbandDeviceServiceCommandSession {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMobileBroadbandDeviceServiceCommandSession {
     type Vtable = IMobileBroadbandDeviceServiceCommandSession_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xfc098a45_913b_4914_b6c3_ae6304593e75);
@@ -3761,6 +3914,11 @@ pub struct IMobileBroadbandDeviceServiceCommandSession_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMobileBroadbandDeviceServiceDataReceivedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMobileBroadbandDeviceServiceDataReceivedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMobileBroadbandDeviceServiceDataReceivedEventArgs {
     type Vtable = IMobileBroadbandDeviceServiceDataReceivedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb6aa13de_1380_40e3_8618_73cbca48138c);
@@ -3777,6 +3935,11 @@ pub struct IMobileBroadbandDeviceServiceDataReceivedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMobileBroadbandDeviceServiceDataSession(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMobileBroadbandDeviceServiceDataSession {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMobileBroadbandDeviceServiceDataSession {
     type Vtable = IMobileBroadbandDeviceServiceDataSession_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xdad62333_8bcf_4289_8a37_045c2169486a);
@@ -3802,6 +3965,11 @@ pub struct IMobileBroadbandDeviceServiceDataSession_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMobileBroadbandDeviceServiceInformation(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMobileBroadbandDeviceServiceInformation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMobileBroadbandDeviceServiceInformation {
     type Vtable = IMobileBroadbandDeviceServiceInformation_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x53d69b5b_c4ed_45f0_803a_d9417a6d9846);
@@ -3817,6 +3985,11 @@ pub struct IMobileBroadbandDeviceServiceInformation_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMobileBroadbandDeviceServiceTriggerDetails(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMobileBroadbandDeviceServiceTriggerDetails {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMobileBroadbandDeviceServiceTriggerDetails {
     type Vtable = IMobileBroadbandDeviceServiceTriggerDetails_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x4a055b70_b9ae_4458_9241_a6a5fbf18a0c);
@@ -3835,6 +4008,11 @@ pub struct IMobileBroadbandDeviceServiceTriggerDetails_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMobileBroadbandModem(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMobileBroadbandModem {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMobileBroadbandModem {
     type Vtable = IMobileBroadbandModem_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd0356912_e9f9_4f67_a03d_43189a316bf1);
@@ -3866,6 +4044,11 @@ pub struct IMobileBroadbandModem_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMobileBroadbandModem2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMobileBroadbandModem2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMobileBroadbandModem2 {
     type Vtable = IMobileBroadbandModem2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x12862b28_b9eb_4ee2_bbe3_711f53eea373);
@@ -3886,6 +4069,11 @@ pub struct IMobileBroadbandModem2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMobileBroadbandModem3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMobileBroadbandModem3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMobileBroadbandModem3 {
     type Vtable = IMobileBroadbandModem3_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe9fec6ea_2f34_4582_9102_c314d2a87eec);
@@ -3911,6 +4099,11 @@ pub struct IMobileBroadbandModem3_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMobileBroadbandModemConfiguration(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMobileBroadbandModemConfiguration {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMobileBroadbandModemConfiguration {
     type Vtable = IMobileBroadbandModemConfiguration_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xfce035a3_d6cd_4320_b982_be9d3ec7890f);
@@ -3926,6 +4119,11 @@ pub struct IMobileBroadbandModemConfiguration_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMobileBroadbandModemConfiguration2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMobileBroadbandModemConfiguration2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMobileBroadbandModemConfiguration2 {
     type Vtable = IMobileBroadbandModemConfiguration2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x320ff5c5_e460_42ae_aa51_69621e7a4477);
@@ -3939,6 +4137,11 @@ pub struct IMobileBroadbandModemConfiguration2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMobileBroadbandModemIsolation(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMobileBroadbandModemIsolation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMobileBroadbandModemIsolation {
     type Vtable = IMobileBroadbandModemIsolation_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb5618fec_e661_4330_9bb4_3480212ec354);
@@ -3961,6 +4164,11 @@ pub struct IMobileBroadbandModemIsolation_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMobileBroadbandModemIsolationFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMobileBroadbandModemIsolationFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMobileBroadbandModemIsolationFactory {
     type Vtable = IMobileBroadbandModemIsolationFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x21d7ec58_c2b1_4c2f_a030_72820a24ecd9);
@@ -3974,6 +4182,11 @@ pub struct IMobileBroadbandModemIsolationFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMobileBroadbandModemStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMobileBroadbandModemStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMobileBroadbandModemStatics {
     type Vtable = IMobileBroadbandModemStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf99ed637_d6f1_4a78_8cbc_6421a65063c8);
@@ -3989,6 +4202,11 @@ pub struct IMobileBroadbandModemStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMobileBroadbandNetwork(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMobileBroadbandNetwork {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMobileBroadbandNetwork {
     type Vtable = IMobileBroadbandNetwork_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xcb63928c_0309_4cb6_a8c1_6a5a3c8e1ff6);
@@ -4014,6 +4232,11 @@ pub struct IMobileBroadbandNetwork_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMobileBroadbandNetwork2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMobileBroadbandNetwork2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMobileBroadbandNetwork2 {
     type Vtable = IMobileBroadbandNetwork2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x5a55db22_62f7_4bdd_ba1d_477441960ba0);
@@ -4034,6 +4257,11 @@ pub struct IMobileBroadbandNetwork2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMobileBroadbandNetwork3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMobileBroadbandNetwork3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMobileBroadbandNetwork3 {
     type Vtable = IMobileBroadbandNetwork3_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x33670a8a_c7ef_444c_ab6c_df7ef7a390fe);
@@ -4050,6 +4278,11 @@ pub struct IMobileBroadbandNetwork3_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMobileBroadbandNetworkRegistrationStateChange(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMobileBroadbandNetworkRegistrationStateChange {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMobileBroadbandNetworkRegistrationStateChange {
     type Vtable = IMobileBroadbandNetworkRegistrationStateChange_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xbeaf94e1_960f_49b4_a08d_7d85e968c7ec);
@@ -4064,6 +4297,11 @@ pub struct IMobileBroadbandNetworkRegistrationStateChange_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMobileBroadbandNetworkRegistrationStateChangeTriggerDetails(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMobileBroadbandNetworkRegistrationStateChangeTriggerDetails {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMobileBroadbandNetworkRegistrationStateChangeTriggerDetails {
     type Vtable = IMobileBroadbandNetworkRegistrationStateChangeTriggerDetails_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x89135cff_28b8_46aa_b137_1c4b0f21edfe);
@@ -4080,6 +4318,11 @@ pub struct IMobileBroadbandNetworkRegistrationStateChangeTriggerDetails_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMobileBroadbandPco(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMobileBroadbandPco {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMobileBroadbandPco {
     type Vtable = IMobileBroadbandPco_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd4e4fcbe_e3a3_43c5_a87b_6c86d229d7fa);
@@ -4098,6 +4341,11 @@ pub struct IMobileBroadbandPco_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMobileBroadbandPcoDataChangeTriggerDetails(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMobileBroadbandPcoDataChangeTriggerDetails {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMobileBroadbandPcoDataChangeTriggerDetails {
     type Vtable = IMobileBroadbandPcoDataChangeTriggerDetails_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x263f5114_64e0_4493_909b_2d14a01962b1);
@@ -4111,6 +4359,11 @@ pub struct IMobileBroadbandPcoDataChangeTriggerDetails_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMobileBroadbandPin(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMobileBroadbandPin {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMobileBroadbandPin {
     type Vtable = IMobileBroadbandPin_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe661d709_e779_45bf_8281_75323df9e321);
@@ -4150,6 +4403,11 @@ pub struct IMobileBroadbandPin_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMobileBroadbandPinLockStateChange(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMobileBroadbandPinLockStateChange {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMobileBroadbandPinLockStateChange {
     type Vtable = IMobileBroadbandPinLockStateChange_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xbe16673e_1f04_4f95_8b90_e7f559dde7e5);
@@ -4165,6 +4423,11 @@ pub struct IMobileBroadbandPinLockStateChange_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMobileBroadbandPinLockStateChangeTriggerDetails(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMobileBroadbandPinLockStateChangeTriggerDetails {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMobileBroadbandPinLockStateChangeTriggerDetails {
     type Vtable = IMobileBroadbandPinLockStateChangeTriggerDetails_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd338c091_3e91_4d38_9036_aee83a6e79ad);
@@ -4181,6 +4444,11 @@ pub struct IMobileBroadbandPinLockStateChangeTriggerDetails_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMobileBroadbandPinManager(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMobileBroadbandPinManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMobileBroadbandPinManager {
     type Vtable = IMobileBroadbandPinManager_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x83567edd_6e1f_4b9b_a413_2b1f50cc36df);
@@ -4198,6 +4466,11 @@ pub struct IMobileBroadbandPinManager_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMobileBroadbandPinOperationResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMobileBroadbandPinOperationResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMobileBroadbandPinOperationResult {
     type Vtable = IMobileBroadbandPinOperationResult_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x11dddc32_31e7_49f5_b663_123d3bef0362);
@@ -4212,6 +4485,11 @@ pub struct IMobileBroadbandPinOperationResult_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMobileBroadbandRadioStateChange(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMobileBroadbandRadioStateChange {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMobileBroadbandRadioStateChange {
     type Vtable = IMobileBroadbandRadioStateChange_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb054a561_9833_4aed_9717_4348b21a24b3);
@@ -4226,6 +4504,11 @@ pub struct IMobileBroadbandRadioStateChange_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMobileBroadbandRadioStateChangeTriggerDetails(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMobileBroadbandRadioStateChangeTriggerDetails {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMobileBroadbandRadioStateChangeTriggerDetails {
     type Vtable = IMobileBroadbandRadioStateChangeTriggerDetails_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x71301ace_093c_42c6_b0db_ad1f75a65445);
@@ -4242,6 +4525,11 @@ pub struct IMobileBroadbandRadioStateChangeTriggerDetails_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMobileBroadbandSarManager(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMobileBroadbandSarManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMobileBroadbandSarManager {
     type Vtable = IMobileBroadbandSarManager_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe5b26833_967e_40c9_a485_19c0dd209e22);
@@ -4299,6 +4587,11 @@ pub struct IMobileBroadbandSarManager_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMobileBroadbandSlotInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMobileBroadbandSlotInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMobileBroadbandSlotInfo {
     type Vtable = IMobileBroadbandSlotInfo_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xbd350b32_882e_542a_b17d_0bb1b49bae9e);
@@ -4313,6 +4606,11 @@ pub struct IMobileBroadbandSlotInfo_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMobileBroadbandSlotInfoChangedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMobileBroadbandSlotInfoChangedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMobileBroadbandSlotInfoChangedEventArgs {
     type Vtable = IMobileBroadbandSlotInfoChangedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x3158839f_950c_54ce_a48d_ba4529b48f0f);
@@ -4326,6 +4624,11 @@ pub struct IMobileBroadbandSlotInfoChangedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMobileBroadbandSlotManager(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMobileBroadbandSlotManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMobileBroadbandSlotManager {
     type Vtable = IMobileBroadbandSlotManager_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xeba07cd6_2019_5f81_a294_cc364a11d0b2);
@@ -4364,6 +4667,11 @@ pub struct IMobileBroadbandSlotManager_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMobileBroadbandTransmissionStateChangedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMobileBroadbandTransmissionStateChangedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMobileBroadbandTransmissionStateChangedEventArgs {
     type Vtable = IMobileBroadbandTransmissionStateChangedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x612e3875_040a_4f99_a4f9_61d7c32da129);
@@ -4377,6 +4685,11 @@ pub struct IMobileBroadbandTransmissionStateChangedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMobileBroadbandUicc(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMobileBroadbandUicc {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMobileBroadbandUicc {
     type Vtable = IMobileBroadbandUicc_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe634f691_525a_4ce2_8fce_aa4162579154);
@@ -4394,6 +4707,11 @@ pub struct IMobileBroadbandUicc_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMobileBroadbandUiccApp(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMobileBroadbandUiccApp {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMobileBroadbandUiccApp {
     type Vtable = IMobileBroadbandUiccApp_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x4d170556_98a1_43dd_b2ec_50c90cf248df);
@@ -4419,6 +4737,11 @@ pub struct IMobileBroadbandUiccApp_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMobileBroadbandUiccAppReadRecordResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMobileBroadbandUiccAppReadRecordResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMobileBroadbandUiccAppReadRecordResult {
     type Vtable = IMobileBroadbandUiccAppReadRecordResult_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x64c95285_358e_47c5_8249_695f383b2bdb);
@@ -4436,6 +4759,11 @@ pub struct IMobileBroadbandUiccAppReadRecordResult_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMobileBroadbandUiccAppRecordDetailsResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMobileBroadbandUiccAppRecordDetailsResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMobileBroadbandUiccAppRecordDetailsResult {
     type Vtable = IMobileBroadbandUiccAppRecordDetailsResult_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd919682f_be14_4934_981d_2f57b9ed83e6);
@@ -4454,6 +4782,11 @@ pub struct IMobileBroadbandUiccAppRecordDetailsResult_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMobileBroadbandUiccAppsResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMobileBroadbandUiccAppsResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMobileBroadbandUiccAppsResult {
     type Vtable = IMobileBroadbandUiccAppsResult_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x744930eb_8157_4a41_8494_6bf54c9b1d2b);
@@ -4471,6 +4804,11 @@ pub struct IMobileBroadbandUiccAppsResult_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct INetworkOperatorDataUsageTriggerDetails(::windows::core::IUnknown);
+impl ::core::clone::Clone for INetworkOperatorDataUsageTriggerDetails {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for INetworkOperatorDataUsageTriggerDetails {
     type Vtable = INetworkOperatorDataUsageTriggerDetails_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x50e3126d_a465_4eeb_9317_28a167630cea);
@@ -4484,6 +4822,11 @@ pub struct INetworkOperatorDataUsageTriggerDetails_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct INetworkOperatorNotificationEventDetails(::windows::core::IUnknown);
+impl ::core::clone::Clone for INetworkOperatorNotificationEventDetails {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for INetworkOperatorNotificationEventDetails {
     type Vtable = INetworkOperatorNotificationEventDetails_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xbc68a9d1_82e1_4488_9f2c_1276c2468fac);
@@ -4505,6 +4848,11 @@ pub struct INetworkOperatorNotificationEventDetails_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct INetworkOperatorTetheringAccessPointConfiguration(::windows::core::IUnknown);
+impl ::core::clone::Clone for INetworkOperatorTetheringAccessPointConfiguration {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for INetworkOperatorTetheringAccessPointConfiguration {
     type Vtable = INetworkOperatorTetheringAccessPointConfiguration_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x0bcc0284_412e_403d_acc6_b757e34774a4);
@@ -4521,6 +4869,11 @@ pub struct INetworkOperatorTetheringAccessPointConfiguration_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct INetworkOperatorTetheringAccessPointConfiguration2(::windows::core::IUnknown);
+impl ::core::clone::Clone for INetworkOperatorTetheringAccessPointConfiguration2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for INetworkOperatorTetheringAccessPointConfiguration2 {
     type Vtable = INetworkOperatorTetheringAccessPointConfiguration2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb1809142_7238_59a0_928b_74ab46fd64b6);
@@ -4540,6 +4893,11 @@ pub struct INetworkOperatorTetheringAccessPointConfiguration2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct INetworkOperatorTetheringClient(::windows::core::IUnknown);
+impl ::core::clone::Clone for INetworkOperatorTetheringClient {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for INetworkOperatorTetheringClient {
     type Vtable = INetworkOperatorTetheringClient_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x709d254c_595f_4847_bb30_646935542918);
@@ -4557,6 +4915,11 @@ pub struct INetworkOperatorTetheringClient_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct INetworkOperatorTetheringClientManager(::windows::core::IUnknown);
+impl ::core::clone::Clone for INetworkOperatorTetheringClientManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for INetworkOperatorTetheringClientManager {
     type Vtable = INetworkOperatorTetheringClientManager_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x91b14016_8dca_4225_bbed_eef8b8d718d7);
@@ -4573,6 +4936,11 @@ pub struct INetworkOperatorTetheringClientManager_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct INetworkOperatorTetheringEntitlementCheck(::windows::core::IUnknown);
+impl ::core::clone::Clone for INetworkOperatorTetheringEntitlementCheck {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for INetworkOperatorTetheringEntitlementCheck {
     type Vtable = INetworkOperatorTetheringEntitlementCheck_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x0108916d_9e9a_4af6_8da3_60493b19c204);
@@ -4586,6 +4954,11 @@ pub struct INetworkOperatorTetheringEntitlementCheck_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct INetworkOperatorTetheringManager(::windows::core::IUnknown);
+impl ::core::clone::Clone for INetworkOperatorTetheringManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for INetworkOperatorTetheringManager {
     type Vtable = INetworkOperatorTetheringManager_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd45a8da0_0e86_4d98_8ba4_dd70d4b764d3);
@@ -4614,6 +4987,11 @@ pub struct INetworkOperatorTetheringManager_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct INetworkOperatorTetheringManagerStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for INetworkOperatorTetheringManagerStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for INetworkOperatorTetheringManagerStatics {
     type Vtable = INetworkOperatorTetheringManagerStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x3ebcbacc_f8c3_405c_9964_70a1eeabe194);
@@ -4628,6 +5006,11 @@ pub struct INetworkOperatorTetheringManagerStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct INetworkOperatorTetheringManagerStatics2(::windows::core::IUnknown);
+impl ::core::clone::Clone for INetworkOperatorTetheringManagerStatics2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for INetworkOperatorTetheringManagerStatics2 {
     type Vtable = INetworkOperatorTetheringManagerStatics2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x5b235412_35f0_49e7_9b08_16d278fbaa42);
@@ -4648,6 +5031,11 @@ pub struct INetworkOperatorTetheringManagerStatics2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct INetworkOperatorTetheringManagerStatics3(::windows::core::IUnknown);
+impl ::core::clone::Clone for INetworkOperatorTetheringManagerStatics3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for INetworkOperatorTetheringManagerStatics3 {
     type Vtable = INetworkOperatorTetheringManagerStatics3_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x8fdaadb6_4af9_4f21_9b58_d53e9f24231e);
@@ -4664,6 +5052,11 @@ pub struct INetworkOperatorTetheringManagerStatics3_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct INetworkOperatorTetheringManagerStatics4(::windows::core::IUnknown);
+impl ::core::clone::Clone for INetworkOperatorTetheringManagerStatics4 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for INetworkOperatorTetheringManagerStatics4 {
     type Vtable = INetworkOperatorTetheringManagerStatics4_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb3b9f9d0_ebff_46a4_a847_d663d8b0977e);
@@ -4687,6 +5080,11 @@ pub struct INetworkOperatorTetheringManagerStatics4_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct INetworkOperatorTetheringOperationResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for INetworkOperatorTetheringOperationResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for INetworkOperatorTetheringOperationResult {
     type Vtable = INetworkOperatorTetheringOperationResult_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xebd203a1_01ba_476d_b4b3_bf3d12c8f80c);
@@ -4701,6 +5099,11 @@ pub struct INetworkOperatorTetheringOperationResult_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IProvisionFromXmlDocumentResults(::windows::core::IUnknown);
+impl ::core::clone::Clone for IProvisionFromXmlDocumentResults {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IProvisionFromXmlDocumentResults {
     type Vtable = IProvisionFromXmlDocumentResults_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x217700e0_8203_11df_adb9_f4ce462d9137);
@@ -4715,6 +5118,11 @@ pub struct IProvisionFromXmlDocumentResults_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IProvisionedProfile(::windows::core::IUnknown);
+impl ::core::clone::Clone for IProvisionedProfile {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IProvisionedProfile {
     type Vtable = IProvisionedProfile_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x217700e0_8202_11df_adb9_f4ce462d9137);
@@ -4735,6 +5143,11 @@ pub struct IProvisionedProfile_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IProvisioningAgent(::windows::core::IUnknown);
+impl ::core::clone::Clone for IProvisioningAgent {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IProvisioningAgent {
     type Vtable = IProvisioningAgent_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x217700e0_8201_11df_adb9_f4ce462d9137);
@@ -4752,6 +5165,11 @@ pub struct IProvisioningAgent_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IProvisioningAgentStaticMethods(::windows::core::IUnknown);
+impl ::core::clone::Clone for IProvisioningAgentStaticMethods {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IProvisioningAgentStaticMethods {
     type Vtable = IProvisioningAgentStaticMethods_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x217700e0_8101_11df_adb9_f4ce462d9137);
@@ -4765,6 +5183,11 @@ pub struct IProvisioningAgentStaticMethods_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ITetheringEntitlementCheckTriggerDetails(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITetheringEntitlementCheckTriggerDetails {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ITetheringEntitlementCheckTriggerDetails {
     type Vtable = ITetheringEntitlementCheckTriggerDetails_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x03c65e9d_5926_41f3_a94e_b50926fc421b);
@@ -4780,6 +5203,11 @@ pub struct ITetheringEntitlementCheckTriggerDetails_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IUssdMessage(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUssdMessage {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IUssdMessage {
     type Vtable = IUssdMessage_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x2f9acf82_2004_4d5d_bf81_2aba1b4be4a8);
@@ -4798,6 +5226,11 @@ pub struct IUssdMessage_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IUssdMessageFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUssdMessageFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IUssdMessageFactory {
     type Vtable = IUssdMessageFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x2f9acf82_1003_4d5d_bf81_2aba1b4be4a8);
@@ -4811,6 +5244,11 @@ pub struct IUssdMessageFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IUssdReply(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUssdReply {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IUssdReply {
     type Vtable = IUssdReply_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x2f9acf82_2005_4d5d_bf81_2aba1b4be4a8);
@@ -4825,6 +5263,11 @@ pub struct IUssdReply_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IUssdSession(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUssdSession {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IUssdSession {
     type Vtable = IUssdSession_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x2f9acf82_2002_4d5d_bf81_2aba1b4be4a8);
@@ -4842,6 +5285,11 @@ pub struct IUssdSession_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IUssdSessionStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUssdSessionStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IUssdSessionStatics {
     type Vtable = IUssdSessionStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x2f9acf82_1001_4d5d_bf81_2aba1b4be4a8);
@@ -5104,11 +5552,6 @@ impl MobileBroadbandAccount {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for MobileBroadbandAccount {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MobileBroadbandAccount {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5122,7 +5565,6 @@ impl ::core::fmt::Debug for MobileBroadbandAccount {
 }
 unsafe impl ::windows::core::RuntimeType for MobileBroadbandAccount {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.NetworkOperators.MobileBroadbandAccount;{36c24ccd-cee2-43e0-a603-ee86a36d6570})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -5187,11 +5629,6 @@ impl MobileBroadbandAccountEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for MobileBroadbandAccountEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MobileBroadbandAccountEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5205,7 +5642,6 @@ impl ::core::fmt::Debug for MobileBroadbandAccountEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for MobileBroadbandAccountEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.NetworkOperators.MobileBroadbandAccountEventArgs;{3853c880-77de-4c04-bead-a123b08c9f59})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -5286,11 +5722,6 @@ impl MobileBroadbandAccountUpdatedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for MobileBroadbandAccountUpdatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MobileBroadbandAccountUpdatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5304,7 +5735,6 @@ impl ::core::fmt::Debug for MobileBroadbandAccountUpdatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for MobileBroadbandAccountUpdatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.NetworkOperators.MobileBroadbandAccountUpdatedEventArgs;{7bc31d88-a6bd-49e1-80ab-6b91354a57d4})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -5461,11 +5891,6 @@ impl MobileBroadbandAccountWatcher {
         unsafe { (::windows::core::Interface::vtable(this).Stop)(::core::mem::transmute_copy(this)).ok() }
     }
 }
-impl ::core::clone::Clone for MobileBroadbandAccountWatcher {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MobileBroadbandAccountWatcher {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5479,7 +5904,6 @@ impl ::core::fmt::Debug for MobileBroadbandAccountWatcher {
 }
 unsafe impl ::windows::core::RuntimeType for MobileBroadbandAccountWatcher {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.NetworkOperators.MobileBroadbandAccountWatcher;{6bf3335e-23b5-449f-928d-5e0d3e04471d})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -5555,6 +5979,7 @@ impl ::core::default::Default for MobileBroadbandAccountWatcherStatus {
 }
 unsafe impl ::windows::core::Abi for MobileBroadbandAccountWatcherStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MobileBroadbandAccountWatcherStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5563,7 +5988,6 @@ impl ::core::fmt::Debug for MobileBroadbandAccountWatcherStatus {
 }
 unsafe impl ::windows::core::RuntimeType for MobileBroadbandAccountWatcherStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Networking.NetworkOperators.MobileBroadbandAccountWatcherStatus;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -5601,11 +6025,6 @@ impl MobileBroadbandAntennaSar {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for MobileBroadbandAntennaSar {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MobileBroadbandAntennaSar {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5619,7 +6038,6 @@ impl ::core::fmt::Debug for MobileBroadbandAntennaSar {
 }
 unsafe impl ::windows::core::RuntimeType for MobileBroadbandAntennaSar {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.NetworkOperators.MobileBroadbandAntennaSar;{b9af4b7e-cbf9-4109-90be-5c06bfd513b6})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -5750,11 +6168,6 @@ impl MobileBroadbandCellCdma {
         }
     }
 }
-impl ::core::clone::Clone for MobileBroadbandCellCdma {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MobileBroadbandCellCdma {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5768,7 +6181,6 @@ impl ::core::fmt::Debug for MobileBroadbandCellCdma {
 }
 unsafe impl ::windows::core::RuntimeType for MobileBroadbandCellCdma {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.NetworkOperators.MobileBroadbandCellCdma;{0601b3b4-411a-4f2e-8287-76f5650c60cd})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -5889,11 +6301,6 @@ impl MobileBroadbandCellGsm {
         }
     }
 }
-impl ::core::clone::Clone for MobileBroadbandCellGsm {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MobileBroadbandCellGsm {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5907,7 +6314,6 @@ impl ::core::fmt::Debug for MobileBroadbandCellGsm {
 }
 unsafe impl ::windows::core::RuntimeType for MobileBroadbandCellGsm {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.NetworkOperators.MobileBroadbandCellGsm;{cc917f06-7ee0-47b8-9e1f-c3b48df9df5b})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -6037,11 +6443,6 @@ impl MobileBroadbandCellLte {
         }
     }
 }
-impl ::core::clone::Clone for MobileBroadbandCellLte {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MobileBroadbandCellLte {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6055,7 +6456,6 @@ impl ::core::fmt::Debug for MobileBroadbandCellLte {
 }
 unsafe impl ::windows::core::RuntimeType for MobileBroadbandCellLte {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.NetworkOperators.MobileBroadbandCellLte;{9197c87b-2b78-456d-8b53-aaa25d0af741})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -6194,11 +6594,6 @@ impl MobileBroadbandCellNR {
         }
     }
 }
-impl ::core::clone::Clone for MobileBroadbandCellNR {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MobileBroadbandCellNR {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6212,7 +6607,6 @@ impl ::core::fmt::Debug for MobileBroadbandCellNR {
 }
 unsafe impl ::windows::core::RuntimeType for MobileBroadbandCellNR {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.NetworkOperators.MobileBroadbandCellNR;{a13f0deb-66fc-4b4b-83a9-a487a3a5a0a6})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -6342,11 +6736,6 @@ impl MobileBroadbandCellTdscdma {
         }
     }
 }
-impl ::core::clone::Clone for MobileBroadbandCellTdscdma {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MobileBroadbandCellTdscdma {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6360,7 +6749,6 @@ impl ::core::fmt::Debug for MobileBroadbandCellTdscdma {
 }
 unsafe impl ::windows::core::RuntimeType for MobileBroadbandCellTdscdma {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.NetworkOperators.MobileBroadbandCellTdscdma;{0eda1655-db0e-4182-8cda-cc419a7bde08})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -6490,11 +6878,6 @@ impl MobileBroadbandCellUmts {
         }
     }
 }
-impl ::core::clone::Clone for MobileBroadbandCellUmts {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MobileBroadbandCellUmts {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6508,7 +6891,6 @@ impl ::core::fmt::Debug for MobileBroadbandCellUmts {
 }
 unsafe impl ::windows::core::RuntimeType for MobileBroadbandCellUmts {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.NetworkOperators.MobileBroadbandCellUmts;{77b4b5ae-49c8-4f15-b285-4c26a7f67215})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -6675,11 +7057,6 @@ impl MobileBroadbandCellsInfo {
         }
     }
 }
-impl ::core::clone::Clone for MobileBroadbandCellsInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MobileBroadbandCellsInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6693,7 +7070,6 @@ impl ::core::fmt::Debug for MobileBroadbandCellsInfo {
 }
 unsafe impl ::windows::core::RuntimeType for MobileBroadbandCellsInfo {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.NetworkOperators.MobileBroadbandCellsInfo;{89a9562a-e472-4da5-929c-de61711dd261})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -6760,11 +7136,6 @@ impl MobileBroadbandCurrentSlotIndexChangedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for MobileBroadbandCurrentSlotIndexChangedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MobileBroadbandCurrentSlotIndexChangedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6778,7 +7149,6 @@ impl ::core::fmt::Debug for MobileBroadbandCurrentSlotIndexChangedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for MobileBroadbandCurrentSlotIndexChangedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.NetworkOperators.MobileBroadbandCurrentSlotIndexChangedEventArgs;{f718b184-c370-5fd4-a670-1846cb9bce47})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -7007,11 +7377,6 @@ impl MobileBroadbandDeviceInformation {
         }
     }
 }
-impl ::core::clone::Clone for MobileBroadbandDeviceInformation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MobileBroadbandDeviceInformation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7025,7 +7390,6 @@ impl ::core::fmt::Debug for MobileBroadbandDeviceInformation {
 }
 unsafe impl ::windows::core::RuntimeType for MobileBroadbandDeviceInformation {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.NetworkOperators.MobileBroadbandDeviceInformation;{e6d08168-e381-4c6e-9be8-fe156969a446})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -7115,11 +7479,6 @@ impl MobileBroadbandDeviceService {
         }
     }
 }
-impl ::core::clone::Clone for MobileBroadbandDeviceService {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MobileBroadbandDeviceService {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7133,7 +7492,6 @@ impl ::core::fmt::Debug for MobileBroadbandDeviceService {
 }
 unsafe impl ::windows::core::RuntimeType for MobileBroadbandDeviceService {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.NetworkOperators.MobileBroadbandDeviceService;{22be1a52-bd80-40ac-8e1f-2e07836a3dbd})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -7209,11 +7567,6 @@ impl MobileBroadbandDeviceServiceCommandResult {
         }
     }
 }
-impl ::core::clone::Clone for MobileBroadbandDeviceServiceCommandResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MobileBroadbandDeviceServiceCommandResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7227,7 +7580,6 @@ impl ::core::fmt::Debug for MobileBroadbandDeviceServiceCommandResult {
 }
 unsafe impl ::windows::core::RuntimeType for MobileBroadbandDeviceServiceCommandResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.NetworkOperators.MobileBroadbandDeviceServiceCommandResult;{b0f46abb-94d6-44b9-a538-f0810b645389})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -7309,11 +7661,6 @@ impl MobileBroadbandDeviceServiceCommandSession {
         unsafe { (::windows::core::Interface::vtable(this).CloseSession)(::core::mem::transmute_copy(this)).ok() }
     }
 }
-impl ::core::clone::Clone for MobileBroadbandDeviceServiceCommandSession {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MobileBroadbandDeviceServiceCommandSession {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7327,7 +7674,6 @@ impl ::core::fmt::Debug for MobileBroadbandDeviceServiceCommandSession {
 }
 unsafe impl ::windows::core::RuntimeType for MobileBroadbandDeviceServiceCommandSession {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.NetworkOperators.MobileBroadbandDeviceServiceCommandSession;{fc098a45-913b-4914-b6c3-ae6304593e75})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -7395,11 +7741,6 @@ impl MobileBroadbandDeviceServiceDataReceivedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for MobileBroadbandDeviceServiceDataReceivedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MobileBroadbandDeviceServiceDataReceivedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7413,7 +7754,6 @@ impl ::core::fmt::Debug for MobileBroadbandDeviceServiceDataReceivedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for MobileBroadbandDeviceServiceDataReceivedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.NetworkOperators.MobileBroadbandDeviceServiceDataReceivedEventArgs;{b6aa13de-1380-40e3-8618-73cbca48138c})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -7501,11 +7841,6 @@ impl MobileBroadbandDeviceServiceDataSession {
         unsafe { (::windows::core::Interface::vtable(this).RemoveDataReceived)(::core::mem::transmute_copy(this), eventcookie.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for MobileBroadbandDeviceServiceDataSession {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MobileBroadbandDeviceServiceDataSession {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7519,7 +7854,6 @@ impl ::core::fmt::Debug for MobileBroadbandDeviceServiceDataSession {
 }
 unsafe impl ::windows::core::RuntimeType for MobileBroadbandDeviceServiceDataSession {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.NetworkOperators.MobileBroadbandDeviceServiceDataSession;{dad62333-8bcf-4289-8a37-045c2169486a})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -7602,11 +7936,6 @@ impl MobileBroadbandDeviceServiceInformation {
         }
     }
 }
-impl ::core::clone::Clone for MobileBroadbandDeviceServiceInformation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MobileBroadbandDeviceServiceInformation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7620,7 +7949,6 @@ impl ::core::fmt::Debug for MobileBroadbandDeviceServiceInformation {
 }
 unsafe impl ::windows::core::RuntimeType for MobileBroadbandDeviceServiceInformation {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.NetworkOperators.MobileBroadbandDeviceServiceInformation;{53d69b5b-c4ed-45f0-803a-d9417a6d9846})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -7704,11 +8032,6 @@ impl MobileBroadbandDeviceServiceTriggerDetails {
         }
     }
 }
-impl ::core::clone::Clone for MobileBroadbandDeviceServiceTriggerDetails {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MobileBroadbandDeviceServiceTriggerDetails {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7722,7 +8045,6 @@ impl ::core::fmt::Debug for MobileBroadbandDeviceServiceTriggerDetails {
 }
 unsafe impl ::windows::core::RuntimeType for MobileBroadbandDeviceServiceTriggerDetails {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.NetworkOperators.MobileBroadbandDeviceServiceTriggerDetails;{4a055b70-b9ae-4458-9241-a6a5fbf18a0c})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -7799,6 +8121,7 @@ impl ::core::default::Default for MobileBroadbandDeviceType {
 }
 unsafe impl ::windows::core::Abi for MobileBroadbandDeviceType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MobileBroadbandDeviceType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7807,7 +8130,6 @@ impl ::core::fmt::Debug for MobileBroadbandDeviceType {
 }
 unsafe impl ::windows::core::RuntimeType for MobileBroadbandDeviceType {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Networking.NetworkOperators.MobileBroadbandDeviceType;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -7976,11 +8298,6 @@ impl MobileBroadbandModem {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for MobileBroadbandModem {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MobileBroadbandModem {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7994,7 +8311,6 @@ impl ::core::fmt::Debug for MobileBroadbandModem {
 }
 unsafe impl ::windows::core::RuntimeType for MobileBroadbandModem {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.NetworkOperators.MobileBroadbandModem;{d0356912-e9f9-4f67-a03d-43189a316bf1})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -8085,11 +8401,6 @@ impl MobileBroadbandModemConfiguration {
         }
     }
 }
-impl ::core::clone::Clone for MobileBroadbandModemConfiguration {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MobileBroadbandModemConfiguration {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8103,7 +8414,6 @@ impl ::core::fmt::Debug for MobileBroadbandModemConfiguration {
 }
 unsafe impl ::windows::core::RuntimeType for MobileBroadbandModemConfiguration {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.NetworkOperators.MobileBroadbandModemConfiguration;{fce035a3-d6cd-4320-b982-be9d3ec7890f})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -8200,11 +8510,6 @@ impl MobileBroadbandModemIsolation {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for MobileBroadbandModemIsolation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MobileBroadbandModemIsolation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8218,7 +8523,6 @@ impl ::core::fmt::Debug for MobileBroadbandModemIsolation {
 }
 unsafe impl ::windows::core::RuntimeType for MobileBroadbandModemIsolation {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.NetworkOperators.MobileBroadbandModemIsolation;{b5618fec-e661-4330-9bb4-3480212ec354})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -8295,6 +8599,7 @@ impl ::core::default::Default for MobileBroadbandModemStatus {
 }
 unsafe impl ::windows::core::Abi for MobileBroadbandModemStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MobileBroadbandModemStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8303,7 +8608,6 @@ impl ::core::fmt::Debug for MobileBroadbandModemStatus {
 }
 unsafe impl ::windows::core::RuntimeType for MobileBroadbandModemStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Networking.NetworkOperators.MobileBroadbandModemStatus;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -8418,11 +8722,6 @@ impl MobileBroadbandNetwork {
         }
     }
 }
-impl ::core::clone::Clone for MobileBroadbandNetwork {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MobileBroadbandNetwork {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8436,7 +8735,6 @@ impl ::core::fmt::Debug for MobileBroadbandNetwork {
 }
 unsafe impl ::windows::core::RuntimeType for MobileBroadbandNetwork {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.NetworkOperators.MobileBroadbandNetwork;{cb63928c-0309-4cb6-a8c1-6a5a3c8e1ff6})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -8509,11 +8807,6 @@ impl MobileBroadbandNetworkRegistrationStateChange {
         }
     }
 }
-impl ::core::clone::Clone for MobileBroadbandNetworkRegistrationStateChange {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MobileBroadbandNetworkRegistrationStateChange {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8527,7 +8820,6 @@ impl ::core::fmt::Debug for MobileBroadbandNetworkRegistrationStateChange {
 }
 unsafe impl ::windows::core::RuntimeType for MobileBroadbandNetworkRegistrationStateChange {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.NetworkOperators.MobileBroadbandNetworkRegistrationStateChange;{beaf94e1-960f-49b4-a08d-7d85e968c7ec})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -8595,11 +8887,6 @@ impl MobileBroadbandNetworkRegistrationStateChangeTriggerDetails {
         }
     }
 }
-impl ::core::clone::Clone for MobileBroadbandNetworkRegistrationStateChangeTriggerDetails {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MobileBroadbandNetworkRegistrationStateChangeTriggerDetails {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8613,7 +8900,6 @@ impl ::core::fmt::Debug for MobileBroadbandNetworkRegistrationStateChangeTrigger
 }
 unsafe impl ::windows::core::RuntimeType for MobileBroadbandNetworkRegistrationStateChangeTriggerDetails {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.NetworkOperators.MobileBroadbandNetworkRegistrationStateChangeTriggerDetails;{89135cff-28b8-46aa-b137-1c4b0f21edfe})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -8697,11 +8983,6 @@ impl MobileBroadbandPco {
         }
     }
 }
-impl ::core::clone::Clone for MobileBroadbandPco {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MobileBroadbandPco {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8715,7 +8996,6 @@ impl ::core::fmt::Debug for MobileBroadbandPco {
 }
 unsafe impl ::windows::core::RuntimeType for MobileBroadbandPco {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.NetworkOperators.MobileBroadbandPco;{d4e4fcbe-e3a3-43c5-a87b-6c86d229d7fa})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -8782,11 +9062,6 @@ impl MobileBroadbandPcoDataChangeTriggerDetails {
         }
     }
 }
-impl ::core::clone::Clone for MobileBroadbandPcoDataChangeTriggerDetails {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MobileBroadbandPcoDataChangeTriggerDetails {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8800,7 +9075,6 @@ impl ::core::fmt::Debug for MobileBroadbandPcoDataChangeTriggerDetails {
 }
 unsafe impl ::windows::core::RuntimeType for MobileBroadbandPcoDataChangeTriggerDetails {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.NetworkOperators.MobileBroadbandPcoDataChangeTriggerDetails;{263f5114-64e0-4493-909b-2d14a01962b1})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -8960,11 +9234,6 @@ impl MobileBroadbandPin {
         }
     }
 }
-impl ::core::clone::Clone for MobileBroadbandPin {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MobileBroadbandPin {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8978,7 +9247,6 @@ impl ::core::fmt::Debug for MobileBroadbandPin {
 }
 unsafe impl ::windows::core::RuntimeType for MobileBroadbandPin {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.NetworkOperators.MobileBroadbandPin;{e661d709-e779-45bf-8281-75323df9e321})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -9054,6 +9322,7 @@ impl ::core::default::Default for MobileBroadbandPinFormat {
 }
 unsafe impl ::windows::core::Abi for MobileBroadbandPinFormat {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MobileBroadbandPinFormat {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9062,7 +9331,6 @@ impl ::core::fmt::Debug for MobileBroadbandPinFormat {
 }
 unsafe impl ::windows::core::RuntimeType for MobileBroadbandPinFormat {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Networking.NetworkOperators.MobileBroadbandPinFormat;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -9090,6 +9358,7 @@ impl ::core::default::Default for MobileBroadbandPinLockState {
 }
 unsafe impl ::windows::core::Abi for MobileBroadbandPinLockState {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MobileBroadbandPinLockState {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9098,7 +9367,6 @@ impl ::core::fmt::Debug for MobileBroadbandPinLockState {
 }
 unsafe impl ::windows::core::RuntimeType for MobileBroadbandPinLockState {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Networking.NetworkOperators.MobileBroadbandPinLockState;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -9132,11 +9400,6 @@ impl MobileBroadbandPinLockStateChange {
         }
     }
 }
-impl ::core::clone::Clone for MobileBroadbandPinLockStateChange {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MobileBroadbandPinLockStateChange {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9150,7 +9413,6 @@ impl ::core::fmt::Debug for MobileBroadbandPinLockStateChange {
 }
 unsafe impl ::windows::core::RuntimeType for MobileBroadbandPinLockStateChange {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.NetworkOperators.MobileBroadbandPinLockStateChange;{be16673e-1f04-4f95-8b90-e7f559dde7e5})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -9218,11 +9480,6 @@ impl MobileBroadbandPinLockStateChangeTriggerDetails {
         }
     }
 }
-impl ::core::clone::Clone for MobileBroadbandPinLockStateChangeTriggerDetails {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MobileBroadbandPinLockStateChangeTriggerDetails {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9236,7 +9493,6 @@ impl ::core::fmt::Debug for MobileBroadbandPinLockStateChangeTriggerDetails {
 }
 unsafe impl ::windows::core::RuntimeType for MobileBroadbandPinLockStateChangeTriggerDetails {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.NetworkOperators.MobileBroadbandPinLockStateChangeTriggerDetails;{d338c091-3e91-4d38-9036-aee83a6e79ad})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -9312,11 +9568,6 @@ impl MobileBroadbandPinManager {
         }
     }
 }
-impl ::core::clone::Clone for MobileBroadbandPinManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MobileBroadbandPinManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9330,7 +9581,6 @@ impl ::core::fmt::Debug for MobileBroadbandPinManager {
 }
 unsafe impl ::windows::core::RuntimeType for MobileBroadbandPinManager {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.NetworkOperators.MobileBroadbandPinManager;{83567edd-6e1f-4b9b-a413-2b1f50cc36df})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -9405,11 +9655,6 @@ impl MobileBroadbandPinOperationResult {
         }
     }
 }
-impl ::core::clone::Clone for MobileBroadbandPinOperationResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MobileBroadbandPinOperationResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9423,7 +9668,6 @@ impl ::core::fmt::Debug for MobileBroadbandPinOperationResult {
 }
 unsafe impl ::windows::core::RuntimeType for MobileBroadbandPinOperationResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.NetworkOperators.MobileBroadbandPinOperationResult;{11dddc32-31e7-49f5-b663-123d3bef0362})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -9507,6 +9751,7 @@ impl ::core::default::Default for MobileBroadbandPinType {
 }
 unsafe impl ::windows::core::Abi for MobileBroadbandPinType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MobileBroadbandPinType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9515,7 +9760,6 @@ impl ::core::fmt::Debug for MobileBroadbandPinType {
 }
 unsafe impl ::windows::core::RuntimeType for MobileBroadbandPinType {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Networking.NetworkOperators.MobileBroadbandPinType;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -9541,6 +9785,7 @@ impl ::core::default::Default for MobileBroadbandRadioState {
 }
 unsafe impl ::windows::core::Abi for MobileBroadbandRadioState {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MobileBroadbandRadioState {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9549,7 +9794,6 @@ impl ::core::fmt::Debug for MobileBroadbandRadioState {
 }
 unsafe impl ::windows::core::RuntimeType for MobileBroadbandRadioState {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Networking.NetworkOperators.MobileBroadbandRadioState;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -9575,11 +9819,6 @@ impl MobileBroadbandRadioStateChange {
         }
     }
 }
-impl ::core::clone::Clone for MobileBroadbandRadioStateChange {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MobileBroadbandRadioStateChange {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9593,7 +9832,6 @@ impl ::core::fmt::Debug for MobileBroadbandRadioStateChange {
 }
 unsafe impl ::windows::core::RuntimeType for MobileBroadbandRadioStateChange {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.NetworkOperators.MobileBroadbandRadioStateChange;{b054a561-9833-4aed-9717-4348b21a24b3})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -9661,11 +9899,6 @@ impl MobileBroadbandRadioStateChangeTriggerDetails {
         }
     }
 }
-impl ::core::clone::Clone for MobileBroadbandRadioStateChangeTriggerDetails {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MobileBroadbandRadioStateChangeTriggerDetails {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9679,7 +9912,6 @@ impl ::core::fmt::Debug for MobileBroadbandRadioStateChangeTriggerDetails {
 }
 unsafe impl ::windows::core::RuntimeType for MobileBroadbandRadioStateChangeTriggerDetails {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.NetworkOperators.MobileBroadbandRadioStateChangeTriggerDetails;{71301ace-093c-42c6-b0db-ad1f75a65445})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -9859,11 +10091,6 @@ impl MobileBroadbandSarManager {
         unsafe { (::windows::core::Interface::vtable(this).StopTransmissionStateMonitoring)(::core::mem::transmute_copy(this)).ok() }
     }
 }
-impl ::core::clone::Clone for MobileBroadbandSarManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MobileBroadbandSarManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9877,7 +10104,6 @@ impl ::core::fmt::Debug for MobileBroadbandSarManager {
 }
 unsafe impl ::windows::core::RuntimeType for MobileBroadbandSarManager {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.NetworkOperators.MobileBroadbandSarManager;{e5b26833-967e-40c9-a485-19c0dd209e22})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -9952,11 +10178,6 @@ impl MobileBroadbandSlotInfo {
         }
     }
 }
-impl ::core::clone::Clone for MobileBroadbandSlotInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MobileBroadbandSlotInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9970,7 +10191,6 @@ impl ::core::fmt::Debug for MobileBroadbandSlotInfo {
 }
 unsafe impl ::windows::core::RuntimeType for MobileBroadbandSlotInfo {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.NetworkOperators.MobileBroadbandSlotInfo;{bd350b32-882e-542a-b17d-0bb1b49bae9e})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -10037,11 +10257,6 @@ impl MobileBroadbandSlotInfoChangedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for MobileBroadbandSlotInfoChangedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MobileBroadbandSlotInfoChangedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10055,7 +10270,6 @@ impl ::core::fmt::Debug for MobileBroadbandSlotInfoChangedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for MobileBroadbandSlotInfoChangedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.NetworkOperators.MobileBroadbandSlotInfoChangedEventArgs;{3158839f-950c-54ce-a48d-ba4529b48f0f})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -10178,11 +10392,6 @@ impl MobileBroadbandSlotManager {
         unsafe { (::windows::core::Interface::vtable(this).RemoveCurrentSlotIndexChanged)(::core::mem::transmute_copy(this), token.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for MobileBroadbandSlotManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MobileBroadbandSlotManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10196,7 +10405,6 @@ impl ::core::fmt::Debug for MobileBroadbandSlotManager {
 }
 unsafe impl ::windows::core::RuntimeType for MobileBroadbandSlotManager {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.NetworkOperators.MobileBroadbandSlotManager;{eba07cd6-2019-5f81-a294-cc364a11d0b2})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -10279,6 +10487,7 @@ impl ::core::default::Default for MobileBroadbandSlotState {
 }
 unsafe impl ::windows::core::Abi for MobileBroadbandSlotState {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MobileBroadbandSlotState {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10287,7 +10496,6 @@ impl ::core::fmt::Debug for MobileBroadbandSlotState {
 }
 unsafe impl ::windows::core::RuntimeType for MobileBroadbandSlotState {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Networking.NetworkOperators.MobileBroadbandSlotState;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -10305,11 +10513,6 @@ impl MobileBroadbandTransmissionStateChangedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for MobileBroadbandTransmissionStateChangedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MobileBroadbandTransmissionStateChangedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10323,7 +10526,6 @@ impl ::core::fmt::Debug for MobileBroadbandTransmissionStateChangedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for MobileBroadbandTransmissionStateChangedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.NetworkOperators.MobileBroadbandTransmissionStateChangedEventArgs;{612e3875-040a-4f99-a4f9-61d7c32da129})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -10399,11 +10601,6 @@ impl MobileBroadbandUicc {
         }
     }
 }
-impl ::core::clone::Clone for MobileBroadbandUicc {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MobileBroadbandUicc {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10417,7 +10614,6 @@ impl ::core::fmt::Debug for MobileBroadbandUicc {
 }
 unsafe impl ::windows::core::RuntimeType for MobileBroadbandUicc {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.NetworkOperators.MobileBroadbandUicc;{e634f691-525a-4ce2-8fce-aa4162579154})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -10511,11 +10707,6 @@ impl MobileBroadbandUiccApp {
         }
     }
 }
-impl ::core::clone::Clone for MobileBroadbandUiccApp {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MobileBroadbandUiccApp {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10529,7 +10720,6 @@ impl ::core::fmt::Debug for MobileBroadbandUiccApp {
 }
 unsafe impl ::windows::core::RuntimeType for MobileBroadbandUiccApp {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.NetworkOperators.MobileBroadbandUiccApp;{4d170556-98a1-43dd-b2ec-50c90cf248df})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -10606,6 +10796,7 @@ impl ::core::default::Default for MobileBroadbandUiccAppOperationStatus {
 }
 unsafe impl ::windows::core::Abi for MobileBroadbandUiccAppOperationStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MobileBroadbandUiccAppOperationStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10614,7 +10805,6 @@ impl ::core::fmt::Debug for MobileBroadbandUiccAppOperationStatus {
 }
 unsafe impl ::windows::core::RuntimeType for MobileBroadbandUiccAppOperationStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Networking.NetworkOperators.MobileBroadbandUiccAppOperationStatus;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -10641,11 +10831,6 @@ impl MobileBroadbandUiccAppReadRecordResult {
         }
     }
 }
-impl ::core::clone::Clone for MobileBroadbandUiccAppReadRecordResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MobileBroadbandUiccAppReadRecordResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10659,7 +10844,6 @@ impl ::core::fmt::Debug for MobileBroadbandUiccAppReadRecordResult {
 }
 unsafe impl ::windows::core::RuntimeType for MobileBroadbandUiccAppReadRecordResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.NetworkOperators.MobileBroadbandUiccAppReadRecordResult;{64c95285-358e-47c5-8249-695f383b2bdb})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -10766,11 +10950,6 @@ impl MobileBroadbandUiccAppRecordDetailsResult {
         }
     }
 }
-impl ::core::clone::Clone for MobileBroadbandUiccAppRecordDetailsResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MobileBroadbandUiccAppRecordDetailsResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10784,7 +10963,6 @@ impl ::core::fmt::Debug for MobileBroadbandUiccAppRecordDetailsResult {
 }
 unsafe impl ::windows::core::RuntimeType for MobileBroadbandUiccAppRecordDetailsResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.NetworkOperators.MobileBroadbandUiccAppRecordDetailsResult;{d919682f-be14-4934-981d-2f57b9ed83e6})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -10860,11 +11038,6 @@ impl MobileBroadbandUiccAppsResult {
         }
     }
 }
-impl ::core::clone::Clone for MobileBroadbandUiccAppsResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MobileBroadbandUiccAppsResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10878,7 +11051,6 @@ impl ::core::fmt::Debug for MobileBroadbandUiccAppsResult {
 }
 unsafe impl ::windows::core::RuntimeType for MobileBroadbandUiccAppsResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.NetworkOperators.MobileBroadbandUiccAppsResult;{744930eb-8157-4a41-8494-6bf54c9b1d2b})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -10959,6 +11131,7 @@ impl ::core::default::Default for NetworkDeviceStatus {
 }
 unsafe impl ::windows::core::Abi for NetworkDeviceStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NetworkDeviceStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10967,7 +11140,6 @@ impl ::core::fmt::Debug for NetworkDeviceStatus {
 }
 unsafe impl ::windows::core::RuntimeType for NetworkDeviceStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Networking.NetworkOperators.NetworkDeviceStatus;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -10992,6 +11164,7 @@ impl ::core::default::Default for NetworkOperatorDataUsageNotificationKind {
 }
 unsafe impl ::windows::core::Abi for NetworkOperatorDataUsageNotificationKind {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NetworkOperatorDataUsageNotificationKind {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11000,7 +11173,6 @@ impl ::core::fmt::Debug for NetworkOperatorDataUsageNotificationKind {
 }
 unsafe impl ::windows::core::RuntimeType for NetworkOperatorDataUsageNotificationKind {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Networking.NetworkOperators.NetworkOperatorDataUsageNotificationKind;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -11018,11 +11190,6 @@ impl NetworkOperatorDataUsageTriggerDetails {
         }
     }
 }
-impl ::core::clone::Clone for NetworkOperatorDataUsageTriggerDetails {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for NetworkOperatorDataUsageTriggerDetails {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11036,7 +11203,6 @@ impl ::core::fmt::Debug for NetworkOperatorDataUsageTriggerDetails {
 }
 unsafe impl ::windows::core::RuntimeType for NetworkOperatorDataUsageTriggerDetails {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.NetworkOperators.NetworkOperatorDataUsageTriggerDetails;{50e3126d-a465-4eeb-9317-28a167630cea})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -11122,6 +11288,7 @@ impl ::core::default::Default for NetworkOperatorEventMessageType {
 }
 unsafe impl ::windows::core::Abi for NetworkOperatorEventMessageType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NetworkOperatorEventMessageType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11130,7 +11297,6 @@ impl ::core::fmt::Debug for NetworkOperatorEventMessageType {
 }
 unsafe impl ::windows::core::RuntimeType for NetworkOperatorEventMessageType {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Networking.NetworkOperators.NetworkOperatorEventMessageType;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -11194,11 +11360,6 @@ impl NetworkOperatorNotificationEventDetails {
         unsafe { (::windows::core::Interface::vtable(this).AuthorizeTethering)(::core::mem::transmute_copy(this), allow, entitlementfailurereason.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for NetworkOperatorNotificationEventDetails {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for NetworkOperatorNotificationEventDetails {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11212,7 +11373,6 @@ impl ::core::fmt::Debug for NetworkOperatorNotificationEventDetails {
 }
 unsafe impl ::windows::core::RuntimeType for NetworkOperatorNotificationEventDetails {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.NetworkOperators.NetworkOperatorNotificationEventDetails;{bc68a9d1-82e1-4488-9f2c-1276c2468fac})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -11334,11 +11494,6 @@ impl NetworkOperatorTetheringAccessPointConfiguration {
         unsafe { (::windows::core::Interface::vtable(this).SetBand)(::core::mem::transmute_copy(this), value).ok() }
     }
 }
-impl ::core::clone::Clone for NetworkOperatorTetheringAccessPointConfiguration {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for NetworkOperatorTetheringAccessPointConfiguration {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11352,7 +11507,6 @@ impl ::core::fmt::Debug for NetworkOperatorTetheringAccessPointConfiguration {
 }
 unsafe impl ::windows::core::RuntimeType for NetworkOperatorTetheringAccessPointConfiguration {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.NetworkOperators.NetworkOperatorTetheringAccessPointConfiguration;{0bcc0284-412e-403d-acc6-b757e34774a4})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -11428,11 +11582,6 @@ impl NetworkOperatorTetheringClient {
         }
     }
 }
-impl ::core::clone::Clone for NetworkOperatorTetheringClient {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for NetworkOperatorTetheringClient {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11446,7 +11595,6 @@ impl ::core::fmt::Debug for NetworkOperatorTetheringClient {
 }
 unsafe impl ::windows::core::RuntimeType for NetworkOperatorTetheringClient {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.NetworkOperators.NetworkOperatorTetheringClient;{709d254c-595f-4847-bb30-646935542918})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -11662,11 +11810,6 @@ impl NetworkOperatorTetheringManager {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for NetworkOperatorTetheringManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for NetworkOperatorTetheringManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11680,7 +11823,6 @@ impl ::core::fmt::Debug for NetworkOperatorTetheringManager {
 }
 unsafe impl ::windows::core::RuntimeType for NetworkOperatorTetheringManager {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.NetworkOperators.NetworkOperatorTetheringManager;{d45a8da0-0e86-4d98-8ba4-dd70d4b764d3})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -11753,11 +11895,6 @@ impl NetworkOperatorTetheringOperationResult {
         }
     }
 }
-impl ::core::clone::Clone for NetworkOperatorTetheringOperationResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for NetworkOperatorTetheringOperationResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11771,7 +11908,6 @@ impl ::core::fmt::Debug for NetworkOperatorTetheringOperationResult {
 }
 unsafe impl ::windows::core::RuntimeType for NetworkOperatorTetheringOperationResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.NetworkOperators.NetworkOperatorTetheringOperationResult;{ebd203a1-01ba-476d-b4b3-bf3d12c8f80c})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -11849,6 +11985,7 @@ impl ::core::default::Default for NetworkRegistrationState {
 }
 unsafe impl ::windows::core::Abi for NetworkRegistrationState {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NetworkRegistrationState {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11857,7 +11994,6 @@ impl ::core::fmt::Debug for NetworkRegistrationState {
 }
 unsafe impl ::windows::core::RuntimeType for NetworkRegistrationState {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Networking.NetworkOperators.NetworkRegistrationState;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -11883,6 +12019,7 @@ impl ::core::default::Default for ProfileMediaType {
 }
 unsafe impl ::windows::core::Abi for ProfileMediaType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ProfileMediaType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11891,7 +12028,6 @@ impl ::core::fmt::Debug for ProfileMediaType {
 }
 unsafe impl ::windows::core::RuntimeType for ProfileMediaType {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Networking.NetworkOperators.ProfileMediaType;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -11920,11 +12056,11 @@ impl ::core::fmt::Debug for ProfileUsage {
 #[cfg(feature = "Foundation")]
 unsafe impl ::windows::core::Abi for ProfileUsage {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Foundation")]
 unsafe impl ::windows::core::RuntimeType for ProfileUsage {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"struct(Windows.Networking.NetworkOperators.ProfileUsage;u4;struct(Windows.Foundation.DateTime;i8))");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -11964,11 +12100,6 @@ impl ProvisionFromXmlDocumentResults {
         }
     }
 }
-impl ::core::clone::Clone for ProvisionFromXmlDocumentResults {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ProvisionFromXmlDocumentResults {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11982,7 +12113,6 @@ impl ::core::fmt::Debug for ProvisionFromXmlDocumentResults {
 }
 unsafe impl ::windows::core::RuntimeType for ProvisionFromXmlDocumentResults {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.NetworkOperators.ProvisionFromXmlDocumentResults;{217700e0-8203-11df-adb9-f4ce462d9137})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -12051,11 +12181,6 @@ impl ProvisionedProfile {
         unsafe { (::windows::core::Interface::vtable(this).UpdateUsage)(::core::mem::transmute_copy(this), value.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for ProvisionedProfile {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ProvisionedProfile {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12069,7 +12194,6 @@ impl ::core::fmt::Debug for ProvisionedProfile {
 }
 unsafe impl ::windows::core::RuntimeType for ProvisionedProfile {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.NetworkOperators.ProvisionedProfile;{217700e0-8202-11df-adb9-f4ce462d9137})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -12162,11 +12286,6 @@ impl ProvisioningAgent {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for ProvisioningAgent {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ProvisioningAgent {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12180,7 +12299,6 @@ impl ::core::fmt::Debug for ProvisioningAgent {
 }
 unsafe impl ::windows::core::RuntimeType for ProvisioningAgent {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.NetworkOperators.ProvisioningAgent;{217700e0-8201-11df-adb9-f4ce462d9137})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -12259,6 +12377,7 @@ impl ::core::default::Default for TetheringCapability {
 }
 unsafe impl ::windows::core::Abi for TetheringCapability {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TetheringCapability {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12267,7 +12386,6 @@ impl ::core::fmt::Debug for TetheringCapability {
 }
 unsafe impl ::windows::core::RuntimeType for TetheringCapability {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Networking.NetworkOperators.TetheringCapability;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -12295,11 +12413,6 @@ impl TetheringEntitlementCheckTriggerDetails {
         unsafe { (::windows::core::Interface::vtable(this).DenyTethering)(::core::mem::transmute_copy(this), entitlementfailurereason.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for TetheringEntitlementCheckTriggerDetails {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for TetheringEntitlementCheckTriggerDetails {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12313,7 +12426,6 @@ impl ::core::fmt::Debug for TetheringEntitlementCheckTriggerDetails {
 }
 unsafe impl ::windows::core::RuntimeType for TetheringEntitlementCheckTriggerDetails {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.NetworkOperators.TetheringEntitlementCheckTriggerDetails;{03c65e9d-5926-41f3-a94e-b50926fc421b})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -12395,6 +12507,7 @@ impl ::core::default::Default for TetheringOperationStatus {
 }
 unsafe impl ::windows::core::Abi for TetheringOperationStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TetheringOperationStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12403,7 +12516,6 @@ impl ::core::fmt::Debug for TetheringOperationStatus {
 }
 unsafe impl ::windows::core::RuntimeType for TetheringOperationStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Networking.NetworkOperators.TetheringOperationStatus;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -12431,6 +12543,7 @@ impl ::core::default::Default for TetheringOperationalState {
 }
 unsafe impl ::windows::core::Abi for TetheringOperationalState {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TetheringOperationalState {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12439,7 +12552,6 @@ impl ::core::fmt::Debug for TetheringOperationalState {
 }
 unsafe impl ::windows::core::RuntimeType for TetheringOperationalState {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Networking.NetworkOperators.TetheringOperationalState;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -12466,6 +12578,7 @@ impl ::core::default::Default for TetheringWiFiBand {
 }
 unsafe impl ::windows::core::Abi for TetheringWiFiBand {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TetheringWiFiBand {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12474,7 +12587,6 @@ impl ::core::fmt::Debug for TetheringWiFiBand {
 }
 unsafe impl ::windows::core::RuntimeType for TetheringWiFiBand {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Networking.NetworkOperators.TetheringWiFiBand;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -12506,6 +12618,7 @@ impl ::core::default::Default for UiccAccessCondition {
 }
 unsafe impl ::windows::core::Abi for UiccAccessCondition {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UiccAccessCondition {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12514,7 +12627,6 @@ impl ::core::fmt::Debug for UiccAccessCondition {
 }
 unsafe impl ::windows::core::RuntimeType for UiccAccessCondition {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Networking.NetworkOperators.UiccAccessCondition;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -12545,6 +12657,7 @@ impl ::core::default::Default for UiccAppKind {
 }
 unsafe impl ::windows::core::Abi for UiccAppKind {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UiccAppKind {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12553,7 +12666,6 @@ impl ::core::fmt::Debug for UiccAppKind {
 }
 unsafe impl ::windows::core::RuntimeType for UiccAppKind {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Networking.NetworkOperators.UiccAppKind;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -12580,6 +12692,7 @@ impl ::core::default::Default for UiccAppRecordKind {
 }
 unsafe impl ::windows::core::Abi for UiccAppRecordKind {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UiccAppRecordKind {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12588,7 +12701,6 @@ impl ::core::fmt::Debug for UiccAppRecordKind {
 }
 unsafe impl ::windows::core::RuntimeType for UiccAppRecordKind {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Networking.NetworkOperators.UiccAppRecordKind;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -12649,11 +12761,6 @@ impl UssdMessage {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for UssdMessage {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for UssdMessage {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12667,7 +12774,6 @@ impl ::core::fmt::Debug for UssdMessage {
 }
 unsafe impl ::windows::core::RuntimeType for UssdMessage {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.NetworkOperators.UssdMessage;{2f9acf82-2004-4d5d-bf81-2aba1b4be4a8})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -12742,11 +12848,6 @@ impl UssdReply {
         }
     }
 }
-impl ::core::clone::Clone for UssdReply {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for UssdReply {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12760,7 +12861,6 @@ impl ::core::fmt::Debug for UssdReply {
 }
 unsafe impl ::windows::core::RuntimeType for UssdReply {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.NetworkOperators.UssdReply;{2f9acf82-2005-4d5d-bf81-2aba1b4be4a8})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -12837,6 +12937,7 @@ impl ::core::default::Default for UssdResultCode {
 }
 unsafe impl ::windows::core::Abi for UssdResultCode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UssdResultCode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12845,7 +12946,6 @@ impl ::core::fmt::Debug for UssdResultCode {
 }
 unsafe impl ::windows::core::RuntimeType for UssdResultCode {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Networking.NetworkOperators.UssdResultCode;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -12888,11 +12988,6 @@ impl UssdSession {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for UssdSession {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for UssdSession {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12906,7 +13001,6 @@ impl ::core::fmt::Debug for UssdSession {
 }
 unsafe impl ::windows::core::RuntimeType for UssdSession {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.NetworkOperators.UssdSession;{2f9acf82-2002-4d5d-bf81-2aba1b4be4a8})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

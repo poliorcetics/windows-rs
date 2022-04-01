@@ -41,6 +41,12 @@ pub unsafe fn CloseIMsgSession(lpmsgsess: *mut _MSGSESS) {
 #[repr(transparent)]
 pub struct DDiscFormat2DataEvents(::windows::core::IUnknown);
 #[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for DDiscFormat2DataEvents {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "Win32_System_Com")]
 impl DDiscFormat2DataEvents {
     #[doc = "*Required features: `\"Win32_Storage_Imapi\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -97,12 +103,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for DDiscFormat2DataEvents {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for DDiscFormat2DataEvents {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -135,6 +135,12 @@ pub struct DDiscFormat2DataEvents_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct DDiscFormat2EraseEvents(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for DDiscFormat2EraseEvents {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl DDiscFormat2EraseEvents {
     #[doc = "*Required features: `\"Win32_Storage_Imapi\"`, `\"Win32_System_Com\"`*"]
@@ -192,12 +198,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for DDiscFormat2EraseEvents {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for DDiscFormat2EraseEvents {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -230,6 +230,12 @@ pub struct DDiscFormat2EraseEvents_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct DDiscFormat2RawCDEvents(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for DDiscFormat2RawCDEvents {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl DDiscFormat2RawCDEvents {
     #[doc = "*Required features: `\"Win32_Storage_Imapi\"`, `\"Win32_System_Com\"`*"]
@@ -287,12 +293,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for DDiscFormat2RawCDEvents {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for DDiscFormat2RawCDEvents {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -325,6 +325,12 @@ pub struct DDiscFormat2RawCDEvents_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct DDiscFormat2TrackAtOnceEvents(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for DDiscFormat2TrackAtOnceEvents {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl DDiscFormat2TrackAtOnceEvents {
     #[doc = "*Required features: `\"Win32_Storage_Imapi\"`, `\"Win32_System_Com\"`*"]
@@ -382,12 +388,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for DDiscFormat2TrackAtOnceEvents {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for DDiscFormat2TrackAtOnceEvents {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -420,6 +420,12 @@ pub struct DDiscFormat2TrackAtOnceEvents_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct DDiscMaster2Events(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for DDiscMaster2Events {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl DDiscMaster2Events {
     #[doc = "*Required features: `\"Win32_Storage_Imapi\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`*"]
@@ -482,12 +488,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for DDiscMaster2Events {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for DDiscMaster2Events {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -524,6 +524,12 @@ pub struct DDiscMaster2Events_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct DFileSystemImageEvents(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for DFileSystemImageEvents {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl DFileSystemImageEvents {
     #[doc = "*Required features: `\"Win32_Storage_Imapi\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`*"]
@@ -581,12 +587,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for DFileSystemImageEvents {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for DFileSystemImageEvents {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -619,6 +619,12 @@ pub struct DFileSystemImageEvents_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct DFileSystemImageImportEvents(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for DFileSystemImageImportEvents {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl DFileSystemImageImportEvents {
     #[doc = "*Required features: `\"Win32_Storage_Imapi\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`*"]
@@ -676,12 +682,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for DFileSystemImageImportEvents {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for DFileSystemImageImportEvents {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -733,6 +733,7 @@ impl ::core::default::Default for DISC_RECORDER_STATE_FLAGS {
 }
 unsafe impl ::windows::core::Abi for DISC_RECORDER_STATE_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DISC_RECORDER_STATE_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1088,6 +1089,12 @@ pub const DISPID_IWRITEENGINE2_WRITESECTION: u32 = 512u32;
 #[repr(transparent)]
 pub struct DWriteEngine2Events(::windows::core::IUnknown);
 #[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for DWriteEngine2Events {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "Win32_System_Com")]
 impl DWriteEngine2Events {
     #[doc = "*Required features: `\"Win32_Storage_Imapi\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -1141,12 +1148,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
 impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> for &'a DWriteEngine2Events {
     fn into_param(self) -> ::windows::core::Param<'a, super::super::System::Com::IDispatch> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for DWriteEngine2Events {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 #[cfg(feature = "Win32_System_Com")]
@@ -1205,6 +1206,7 @@ impl ::core::default::Default for EmulationType {
 }
 unsafe impl ::windows::core::Abi for EmulationType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EmulationType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1243,6 +1245,7 @@ impl ::core::default::Default for FsiFileSystems {
 }
 unsafe impl ::windows::core::Abi for FsiFileSystems {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FsiFileSystems {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1272,6 +1275,7 @@ impl ::core::default::Default for FsiItemType {
 }
 unsafe impl ::windows::core::Abi for FsiItemType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FsiItemType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1301,6 +1305,12 @@ pub unsafe fn GetAttribIMsgOnIStg(lpobject: *mut ::core::ffi::c_void, lpproptaga
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IBlockRange(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IBlockRange {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IBlockRange {
     #[doc = "*Required features: `\"Win32_Storage_Imapi\"`*"]
@@ -1363,12 +1373,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IBlockRange {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IBlockRange {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1399,6 +1403,12 @@ pub struct IBlockRange_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IBlockRangeList(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IBlockRangeList {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IBlockRangeList {
     #[doc = "*Required features: `\"Win32_Storage_Imapi\"`, `\"Win32_System_Com\"`*"]
@@ -1457,12 +1467,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IBlockRangeList {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IBlockRangeList {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1495,6 +1499,12 @@ pub struct IBlockRangeList_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IBootOptions(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IBootOptions {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IBootOptions {
     #[doc = "*Required features: `\"Win32_Storage_Imapi\"`, `\"Win32_System_Com\"`*"]
@@ -1592,12 +1602,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IBootOptions {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IBootOptions {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1646,6 +1650,11 @@ pub struct IBootOptions_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Imapi\"`*"]
 #[repr(transparent)]
 pub struct IBurnVerification(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBurnVerification {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IBurnVerification {
     #[doc = "*Required features: `\"Win32_Storage_Imapi\"`*"]
     pub unsafe fn SetBurnVerificationLevel(&self, value: IMAPI_BURN_VERIFICATION_LEVEL) -> ::windows::core::Result<()> {
@@ -1677,11 +1686,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IBurn
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IBurnVerification {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IBurnVerification {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1708,6 +1712,12 @@ pub struct IBurnVerification_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IDiscFormat2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IDiscFormat2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IDiscFormat2 {
     #[doc = "*Required features: `\"Win32_Storage_Imapi\"`, `\"Win32_System_Com\"`*"]
@@ -1788,12 +1798,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IDiscFormat2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IDiscFormat2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1836,6 +1840,12 @@ pub struct IDiscFormat2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IDiscFormat2Data(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IDiscFormat2Data {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IDiscFormat2Data {
     #[doc = "*Required features: `\"Win32_Storage_Imapi\"`, `\"Win32_System_Com\"`*"]
@@ -2098,12 +2108,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDiscFormat2> for &'a IDiscFormat2Data {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IDiscFormat2Data {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IDiscFormat2Data {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2188,6 +2192,12 @@ pub struct IDiscFormat2Data_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IDiscFormat2DataEventArgs(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IDiscFormat2DataEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IDiscFormat2DataEventArgs {
     #[doc = "*Required features: `\"Win32_Storage_Imapi\"`*"]
@@ -2319,12 +2329,6 @@ impl<'a> ::windows::core::IntoParam<'a, IWriteEngine2EventArgs> for &'a IDiscFor
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IDiscFormat2DataEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IDiscFormat2DataEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2357,6 +2361,12 @@ pub struct IDiscFormat2DataEventArgs_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IDiscFormat2Erase(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IDiscFormat2Erase {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IDiscFormat2Erase {
     #[doc = "*Required features: `\"Win32_Storage_Imapi\"`, `\"Win32_System_Com\"`*"]
@@ -2501,12 +2511,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDiscFormat2> for &'a IDiscFormat2Erase 
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IDiscFormat2Erase {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IDiscFormat2Erase {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2555,6 +2559,12 @@ pub struct IDiscFormat2Erase_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IDiscFormat2RawCD(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IDiscFormat2RawCD {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IDiscFormat2RawCD {
     #[doc = "*Required features: `\"Win32_Storage_Imapi\"`, `\"Win32_System_Com\"`*"]
@@ -2778,12 +2788,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDiscFormat2> for &'a IDiscFormat2RawCD 
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IDiscFormat2RawCD {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IDiscFormat2RawCD {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2863,6 +2867,12 @@ pub struct IDiscFormat2RawCD_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IDiscFormat2RawCDEventArgs(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IDiscFormat2RawCDEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IDiscFormat2RawCDEventArgs {
     #[doc = "*Required features: `\"Win32_Storage_Imapi\"`*"]
@@ -2989,12 +2999,6 @@ impl<'a> ::windows::core::IntoParam<'a, IWriteEngine2EventArgs> for &'a IDiscFor
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IDiscFormat2RawCDEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IDiscFormat2RawCDEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3026,6 +3030,12 @@ pub struct IDiscFormat2RawCDEventArgs_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IDiscFormat2TrackAtOnce(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IDiscFormat2TrackAtOnce {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IDiscFormat2TrackAtOnce {
     #[doc = "*Required features: `\"Win32_Storage_Imapi\"`, `\"Win32_System_Com\"`*"]
@@ -3254,12 +3264,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDiscFormat2> for &'a IDiscFormat2TrackA
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IDiscFormat2TrackAtOnce {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IDiscFormat2TrackAtOnce {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3337,6 +3341,12 @@ pub struct IDiscFormat2TrackAtOnce_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IDiscFormat2TrackAtOnceEventArgs(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IDiscFormat2TrackAtOnceEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IDiscFormat2TrackAtOnceEventArgs {
     #[doc = "*Required features: `\"Win32_Storage_Imapi\"`*"]
@@ -3468,12 +3478,6 @@ impl<'a> ::windows::core::IntoParam<'a, IWriteEngine2EventArgs> for &'a IDiscFor
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IDiscFormat2TrackAtOnceEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IDiscFormat2TrackAtOnceEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3505,6 +3509,11 @@ pub struct IDiscFormat2TrackAtOnceEventArgs_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Imapi\"`*"]
 #[repr(transparent)]
 pub struct IDiscMaster(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDiscMaster {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDiscMaster {
     #[doc = "*Required features: `\"Win32_Storage_Imapi\"`*"]
     pub unsafe fn Open(&self) -> ::windows::core::Result<()> {
@@ -3580,11 +3589,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDisc
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDiscMaster {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDiscMaster {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3621,6 +3625,12 @@ pub struct IDiscMaster_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IDiscMaster2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IDiscMaster2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IDiscMaster2 {
     #[doc = "*Required features: `\"Win32_Storage_Imapi\"`, `\"Win32_System_Ole\"`*"]
@@ -3695,12 +3705,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IDiscMaster2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IDiscMaster2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3738,6 +3742,11 @@ pub struct IDiscMaster2_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Imapi\"`*"]
 #[repr(transparent)]
 pub struct IDiscMasterProgressEvents(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDiscMasterProgressEvents {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDiscMasterProgressEvents {
     #[doc = "*Required features: `\"Win32_Storage_Imapi\"`*"]
     pub unsafe fn QueryCancel(&self) -> ::windows::core::Result<u8> {
@@ -3797,11 +3806,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDisc
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDiscMasterProgressEvents {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDiscMasterProgressEvents {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3834,6 +3838,11 @@ pub struct IDiscMasterProgressEvents_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Imapi\"`*"]
 #[repr(transparent)]
 pub struct IDiscRecorder(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDiscRecorder {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDiscRecorder {
     #[doc = "*Required features: `\"Win32_Storage_Imapi\"`*"]
     pub unsafe fn Init(&self, pbyuniqueid: &[u8], nuldrivenumber: u32) -> ::windows::core::Result<()> {
@@ -3926,11 +3935,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDisc
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDiscRecorder {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDiscRecorder {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3985,6 +3989,12 @@ pub struct IDiscRecorder_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IDiscRecorder2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IDiscRecorder2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IDiscRecorder2 {
     #[doc = "*Required features: `\"Win32_Storage_Imapi\"`*"]
@@ -4149,12 +4159,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IDiscRecorder2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IDiscRecorder2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4245,6 +4249,11 @@ pub struct IDiscRecorder2_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Imapi\"`*"]
 #[repr(transparent)]
 pub struct IDiscRecorder2Ex(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDiscRecorder2Ex {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDiscRecorder2Ex {
     #[doc = "*Required features: `\"Win32_Storage_Imapi\"`*"]
     pub unsafe fn SendCommandNoData(&self, cdb: &[u8], sensebuffer: &mut [u8; 18], timeout: u32) -> ::windows::core::Result<()> {
@@ -4345,11 +4354,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDisc
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDiscRecorder2Ex {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDiscRecorder2Ex {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4400,6 +4404,11 @@ pub struct IDiscRecorder2Ex_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Imapi\"`*"]
 #[repr(transparent)]
 pub struct IEnumDiscMasterFormats(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnumDiscMasterFormats {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnumDiscMasterFormats {
     #[doc = "*Required features: `\"Win32_Storage_Imapi\"`*"]
     pub unsafe fn Next(&self, cformats: u32, lpiidformatid: *mut ::windows::core::GUID, pcfetched: *mut u32) -> ::windows::core::Result<()> {
@@ -4439,11 +4448,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnum
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnumDiscMasterFormats {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnumDiscMasterFormats {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4471,6 +4475,11 @@ pub struct IEnumDiscMasterFormats_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Imapi\"`*"]
 #[repr(transparent)]
 pub struct IEnumDiscRecorders(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnumDiscRecorders {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnumDiscRecorders {
     #[doc = "*Required features: `\"Win32_Storage_Imapi\"`*"]
     pub unsafe fn Next(&self, crecorders: u32, pprecorder: *mut ::core::option::Option<IDiscRecorder>, pcfetched: *mut u32) -> ::windows::core::Result<()> {
@@ -4510,11 +4519,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnum
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnumDiscRecorders {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnumDiscRecorders {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4542,6 +4546,11 @@ pub struct IEnumDiscRecorders_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Imapi\"`*"]
 #[repr(transparent)]
 pub struct IEnumFsiItems(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnumFsiItems {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnumFsiItems {
     #[doc = "*Required features: `\"Win32_Storage_Imapi\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -4582,11 +4591,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnum
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnumFsiItems {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnumFsiItems {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4617,6 +4621,11 @@ pub struct IEnumFsiItems_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Imapi\"`*"]
 #[repr(transparent)]
 pub struct IEnumProgressItems(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnumProgressItems {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnumProgressItems {
     #[doc = "*Required features: `\"Win32_Storage_Imapi\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -4657,11 +4666,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnum
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnumProgressItems {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnumProgressItems {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4693,6 +4697,12 @@ pub struct IEnumProgressItems_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFileSystemImage(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFileSystemImage {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFileSystemImage {
     #[doc = "*Required features: `\"Win32_Storage_Imapi\"`, `\"Win32_System_Com\"`*"]
@@ -5000,12 +5010,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFileSystemImage {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFileSystemImage {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5153,6 +5157,12 @@ pub struct IFileSystemImage_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFileSystemImage2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFileSystemImage2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFileSystemImage2 {
     #[doc = "*Required features: `\"Win32_Storage_Imapi\"`, `\"Win32_System_Com\"`*"]
@@ -5495,12 +5505,6 @@ impl<'a> ::windows::core::IntoParam<'a, IFileSystemImage> for &'a IFileSystemIma
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFileSystemImage2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFileSystemImage2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5537,6 +5541,12 @@ pub struct IFileSystemImage2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFileSystemImage3(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFileSystemImage3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFileSystemImage3 {
     #[doc = "*Required features: `\"Win32_Storage_Imapi\"`, `\"Win32_System_Com\"`*"]
@@ -5917,12 +5927,6 @@ impl<'a> ::windows::core::IntoParam<'a, IFileSystemImage2> for &'a IFileSystemIm
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFileSystemImage3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFileSystemImage3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5954,6 +5958,12 @@ pub struct IFileSystemImage3_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFileSystemImageResult(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFileSystemImageResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFileSystemImageResult {
     #[doc = "*Required features: `\"Win32_Storage_Imapi\"`, `\"Win32_System_Com\"`*"]
@@ -6034,12 +6044,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFileSystemImageResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFileSystemImageResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6082,6 +6086,12 @@ pub struct IFileSystemImageResult_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFileSystemImageResult2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFileSystemImageResult2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFileSystemImageResult2 {
     #[doc = "*Required features: `\"Win32_Storage_Imapi\"`, `\"Win32_System_Com\"`*"]
@@ -6192,12 +6202,6 @@ impl<'a> ::windows::core::IntoParam<'a, IFileSystemImageResult> for &'a IFileSys
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFileSystemImageResult2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFileSystemImageResult2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6230,6 +6234,12 @@ pub struct IFileSystemImageResult2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFsiDirectoryItem(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFsiDirectoryItem {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFsiDirectoryItem {
     #[doc = "*Required features: `\"Win32_Storage_Imapi\"`, `\"Win32_Foundation\"`*"]
@@ -6418,12 +6428,6 @@ impl<'a> ::windows::core::IntoParam<'a, IFsiItem> for &'a IFsiDirectoryItem {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFsiDirectoryItem {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFsiDirectoryItem {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6486,6 +6490,12 @@ pub struct IFsiDirectoryItem_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFsiDirectoryItem2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFsiDirectoryItem2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFsiDirectoryItem2 {
     #[doc = "*Required features: `\"Win32_Storage_Imapi\"`, `\"Win32_Foundation\"`*"]
@@ -6703,12 +6713,6 @@ impl<'a> ::windows::core::IntoParam<'a, IFsiDirectoryItem> for &'a IFsiDirectory
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFsiDirectoryItem2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFsiDirectoryItem2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6741,6 +6745,12 @@ pub struct IFsiDirectoryItem2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFsiFileItem(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFsiFileItem {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFsiFileItem {
     #[doc = "*Required features: `\"Win32_Storage_Imapi\"`, `\"Win32_Foundation\"`*"]
@@ -6903,12 +6913,6 @@ impl<'a> ::windows::core::IntoParam<'a, IFsiItem> for &'a IFsiFileItem {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFsiFileItem {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFsiFileItem {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6948,6 +6952,12 @@ pub struct IFsiFileItem_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFsiFileItem2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFsiFileItem2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFsiFileItem2 {
     #[doc = "*Required features: `\"Win32_Storage_Imapi\"`, `\"Win32_Foundation\"`*"]
@@ -7164,12 +7174,6 @@ impl<'a> ::windows::core::IntoParam<'a, IFsiFileItem> for &'a IFsiFileItem2 {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFsiFileItem2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFsiFileItem2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7213,6 +7217,12 @@ pub struct IFsiFileItem2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFsiItem(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFsiItem {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFsiItem {
     #[doc = "*Required features: `\"Win32_Storage_Imapi\"`, `\"Win32_Foundation\"`*"]
@@ -7325,12 +7335,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFsiItem {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFsiItem {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7383,6 +7387,12 @@ pub struct IFsiItem_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFsiNamedStreams(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFsiNamedStreams {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFsiNamedStreams {
     #[doc = "*Required features: `\"Win32_Storage_Imapi\"`, `\"Win32_System_Ole\"`*"]
@@ -7457,12 +7467,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFsiNamedStreams {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFsiNamedStreams {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7501,6 +7505,12 @@ pub struct IFsiNamedStreams_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IIsoImageManager(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IIsoImageManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IIsoImageManager {
     #[doc = "*Required features: `\"Win32_Storage_Imapi\"`, `\"Win32_Foundation\"`*"]
@@ -7579,12 +7589,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IIsoImageManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IIsoImageManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7629,6 +7633,11 @@ pub struct IIsoImageManager_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Imapi\"`*"]
 #[repr(transparent)]
 pub struct IJolietDiscMaster(::windows::core::IUnknown);
+impl ::core::clone::Clone for IJolietDiscMaster {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IJolietDiscMaster {
     #[doc = "*Required features: `\"Win32_Storage_Imapi\"`*"]
     pub unsafe fn GetTotalDataBlocks(&self) -> ::windows::core::Result<i32> {
@@ -7680,11 +7689,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IJolietDi
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IJolietDiscMaster {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IJolietDiscMaster {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IJolietDiscMaster {
@@ -7761,6 +7765,7 @@ impl ::core::default::Default for IMAPI_BURN_VERIFICATION_LEVEL {
 }
 unsafe impl ::windows::core::Abi for IMAPI_BURN_VERIFICATION_LEVEL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for IMAPI_BURN_VERIFICATION_LEVEL {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7804,6 +7809,7 @@ impl ::core::default::Default for IMAPI_CD_SECTOR_TYPE {
 }
 unsafe impl ::windows::core::Abi for IMAPI_CD_SECTOR_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for IMAPI_CD_SECTOR_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7833,6 +7839,7 @@ impl ::core::default::Default for IMAPI_CD_TRACK_DIGITAL_COPY_SETTING {
 }
 unsafe impl ::windows::core::Abi for IMAPI_CD_TRACK_DIGITAL_COPY_SETTING {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for IMAPI_CD_TRACK_DIGITAL_COPY_SETTING {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8030,6 +8037,7 @@ impl ::core::default::Default for IMAPI_FEATURE_PAGE_TYPE {
 }
 unsafe impl ::windows::core::Abi for IMAPI_FEATURE_PAGE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for IMAPI_FEATURE_PAGE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8081,6 +8089,7 @@ impl ::core::default::Default for IMAPI_FORMAT2_DATA_MEDIA_STATE {
 }
 unsafe impl ::windows::core::Abi for IMAPI_FORMAT2_DATA_MEDIA_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for IMAPI_FORMAT2_DATA_MEDIA_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8120,6 +8129,7 @@ impl ::core::default::Default for IMAPI_FORMAT2_DATA_WRITE_ACTION {
 }
 unsafe impl ::windows::core::Abi for IMAPI_FORMAT2_DATA_WRITE_ACTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for IMAPI_FORMAT2_DATA_WRITE_ACTION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8149,6 +8159,7 @@ impl ::core::default::Default for IMAPI_FORMAT2_RAW_CD_DATA_SECTOR_TYPE {
 }
 unsafe impl ::windows::core::Abi for IMAPI_FORMAT2_RAW_CD_DATA_SECTOR_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for IMAPI_FORMAT2_RAW_CD_DATA_SECTOR_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8180,6 +8191,7 @@ impl ::core::default::Default for IMAPI_FORMAT2_RAW_CD_WRITE_ACTION {
 }
 unsafe impl ::windows::core::Abi for IMAPI_FORMAT2_RAW_CD_WRITE_ACTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for IMAPI_FORMAT2_RAW_CD_WRITE_ACTION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8213,6 +8225,7 @@ impl ::core::default::Default for IMAPI_FORMAT2_TAO_WRITE_ACTION {
 }
 unsafe impl ::windows::core::Abi for IMAPI_FORMAT2_TAO_WRITE_ACTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for IMAPI_FORMAT2_TAO_WRITE_ACTION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8278,6 +8291,7 @@ impl ::core::default::Default for IMAPI_MEDIA_PHYSICAL_TYPE {
 }
 unsafe impl ::windows::core::Abi for IMAPI_MEDIA_PHYSICAL_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for IMAPI_MEDIA_PHYSICAL_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8313,6 +8327,7 @@ impl ::core::default::Default for IMAPI_MEDIA_WRITE_PROTECT_STATE {
 }
 unsafe impl ::windows::core::Abi for IMAPI_MEDIA_WRITE_PROTECT_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for IMAPI_MEDIA_WRITE_PROTECT_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8344,6 +8359,7 @@ impl ::core::default::Default for IMAPI_MODE_PAGE_REQUEST_TYPE {
 }
 unsafe impl ::windows::core::Abi for IMAPI_MODE_PAGE_REQUEST_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for IMAPI_MODE_PAGE_REQUEST_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8383,6 +8399,7 @@ impl ::core::default::Default for IMAPI_MODE_PAGE_TYPE {
 }
 unsafe impl ::windows::core::Abi for IMAPI_MODE_PAGE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for IMAPI_MODE_PAGE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8468,6 +8485,7 @@ impl ::core::default::Default for IMAPI_PROFILE_TYPE {
 }
 unsafe impl ::windows::core::Abi for IMAPI_PROFILE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for IMAPI_PROFILE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8497,6 +8515,7 @@ impl ::core::default::Default for IMAPI_READ_TRACK_ADDRESS_TYPE {
 }
 unsafe impl ::windows::core::Abi for IMAPI_READ_TRACK_ADDRESS_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for IMAPI_READ_TRACK_ADDRESS_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8540,6 +8559,7 @@ impl ::core::default::Default for IMMPID_CPV_ENUM {
 }
 unsafe impl ::windows::core::Abi for IMMPID_CPV_ENUM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for IMMPID_CPV_ENUM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8579,6 +8599,7 @@ impl ::core::default::Default for IMMPID_MPV_ENUM {
 }
 unsafe impl ::windows::core::Abi for IMMPID_MPV_ENUM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for IMMPID_MPV_ENUM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8720,6 +8741,7 @@ impl ::core::default::Default for IMMPID_MP_ENUM {
 }
 unsafe impl ::windows::core::Abi for IMMPID_MP_ENUM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for IMMPID_MP_ENUM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8765,6 +8787,7 @@ impl ::core::default::Default for IMMPID_NMP_ENUM {
 }
 unsafe impl ::windows::core::Abi for IMMPID_NMP_ENUM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for IMMPID_NMP_ENUM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8796,6 +8819,7 @@ impl ::core::default::Default for IMMPID_RPV_ENUM {
 }
 unsafe impl ::windows::core::Abi for IMMPID_RPV_ENUM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for IMMPID_RPV_ENUM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8865,6 +8889,7 @@ impl ::core::default::Default for IMMPID_RP_ENUM {
 }
 unsafe impl ::windows::core::Abi for IMMPID_RP_ENUM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for IMMPID_RP_ENUM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8889,6 +8914,7 @@ impl ::core::fmt::Debug for IMMP_MPV_STORE_DRIVER_HANDLE {
 }
 unsafe impl ::windows::core::Abi for IMMP_MPV_STORE_DRIVER_HANDLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IMMP_MPV_STORE_DRIVER_HANDLE {
     fn eq(&self, other: &Self) -> bool {
@@ -8905,6 +8931,12 @@ impl ::core::default::Default for IMMP_MPV_STORE_DRIVER_HANDLE {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IMultisession(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IMultisession {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IMultisession {
     #[doc = "*Required features: `\"Win32_Storage_Imapi\"`*"]
@@ -8977,12 +9009,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IMultisession {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IMultisession {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9018,6 +9044,12 @@ pub struct IMultisession_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IMultisessionRandomWrite(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IMultisessionRandomWrite {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IMultisessionRandomWrite {
     #[doc = "*Required features: `\"Win32_Storage_Imapi\"`*"]
@@ -9129,12 +9161,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMultisession> for &'a IMultisessionRand
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IMultisessionRandomWrite {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IMultisessionRandomWrite {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9166,6 +9192,12 @@ pub struct IMultisessionRandomWrite_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IMultisessionSequential(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IMultisessionSequential {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IMultisessionSequential {
     #[doc = "*Required features: `\"Win32_Storage_Imapi\"`*"]
@@ -9287,12 +9319,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMultisession> for &'a IMultisessionSequ
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IMultisessionSequential {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IMultisessionSequential {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9326,6 +9352,12 @@ pub struct IMultisessionSequential_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IMultisessionSequential2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IMultisessionSequential2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IMultisessionSequential2 {
     #[doc = "*Required features: `\"Win32_Storage_Imapi\"`*"]
@@ -9476,12 +9508,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMultisessionSequential> for &'a IMultis
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IMultisessionSequential2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IMultisessionSequential2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9511,6 +9537,12 @@ pub struct IMultisessionSequential2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IProgressItem(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IProgressItem {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IProgressItem {
     #[doc = "*Required features: `\"Win32_Storage_Imapi\"`, `\"Win32_Foundation\"`*"]
@@ -9584,12 +9616,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IProgressItem {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IProgressItem {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9625,6 +9651,12 @@ pub struct IProgressItem_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IProgressItems(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IProgressItems {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IProgressItems {
     #[doc = "*Required features: `\"Win32_Storage_Imapi\"`, `\"Win32_System_Ole\"`*"]
@@ -9711,12 +9743,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IProgressItems {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IProgressItems {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9763,6 +9789,12 @@ pub struct IProgressItems_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IRawCDImageCreator(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IRawCDImageCreator {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IRawCDImageCreator {
     #[doc = "*Required features: `\"Win32_Storage_Imapi\"`, `\"Win32_System_Com\"`*"]
@@ -9911,12 +9943,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IRawCDImageCreator {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IRawCDImageCreator {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9988,6 +10014,12 @@ pub struct IRawCDImageCreator_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IRawCDImageTrackInfo(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IRawCDImageTrackInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IRawCDImageTrackInfo {
     #[doc = "*Required features: `\"Win32_Storage_Imapi\"`*"]
@@ -10103,12 +10135,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IRawCDImageTrackInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IRawCDImageTrackInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10158,6 +10184,11 @@ pub struct IRawCDImageTrackInfo_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Imapi\"`*"]
 #[repr(transparent)]
 pub struct IRedbookDiscMaster(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRedbookDiscMaster {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRedbookDiscMaster {
     #[doc = "*Required features: `\"Win32_Storage_Imapi\"`*"]
     pub unsafe fn GetTotalAudioTracks(&self) -> ::windows::core::Result<i32> {
@@ -10217,11 +10248,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IRedb
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IRedbookDiscMaster {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IRedbookDiscMaster {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10254,6 +10280,12 @@ pub struct IRedbookDiscMaster_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IStreamConcatenate(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IStreamConcatenate {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IStreamConcatenate {
     #[doc = "*Required features: `\"Win32_Storage_Imapi\"`, `\"Win32_System_Com\"`*"]
@@ -10407,12 +10439,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IStream> for 
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IStreamConcatenate {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IStreamConcatenate {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10457,6 +10483,12 @@ pub struct IStreamConcatenate_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IStreamInterleave(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IStreamInterleave {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IStreamInterleave {
     #[doc = "*Required features: `\"Win32_Storage_Imapi\"`, `\"Win32_System_Com\"`*"]
@@ -10595,12 +10627,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IStream> for 
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IStreamInterleave {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IStreamInterleave {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10633,6 +10659,12 @@ pub struct IStreamInterleave_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IStreamPseudoRandomBased(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IStreamPseudoRandomBased {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IStreamPseudoRandomBased {
     #[doc = "*Required features: `\"Win32_Storage_Imapi\"`, `\"Win32_System_Com\"`*"]
@@ -10783,12 +10815,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IStream> for 
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IStreamPseudoRandomBased {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IStreamPseudoRandomBased {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10821,6 +10847,12 @@ pub struct IStreamPseudoRandomBased_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IWriteEngine2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IWriteEngine2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IWriteEngine2 {
     #[doc = "*Required features: `\"Win32_Storage_Imapi\"`, `\"Win32_System_Com\"`*"]
@@ -10932,12 +10964,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IWriteEngine2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IWriteEngine2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10982,6 +11008,12 @@ pub struct IWriteEngine2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IWriteEngine2EventArgs(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IWriteEngine2EventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IWriteEngine2EventArgs {
     #[doc = "*Required features: `\"Win32_Storage_Imapi\"`*"]
@@ -11069,12 +11101,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IWriteEngine2EventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IWriteEngine2EventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11110,6 +11136,12 @@ pub struct IWriteEngine2EventArgs_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IWriteSpeedDescriptor(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IWriteSpeedDescriptor {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IWriteSpeedDescriptor {
     #[doc = "*Required features: `\"Win32_Storage_Imapi\"`*"]
@@ -11177,12 +11209,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IWriteSpeedDescriptor {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IWriteSpeedDescriptor {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11235,6 +11261,7 @@ impl ::core::default::Default for MEDIA_FLAGS {
 }
 unsafe impl ::windows::core::Abi for MEDIA_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MEDIA_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11270,6 +11297,7 @@ impl ::core::default::Default for MEDIA_TYPES {
 }
 unsafe impl ::windows::core::Abi for MEDIA_TYPES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MEDIA_TYPES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11400,6 +11428,7 @@ impl ::core::default::Default for PlatformId {
 }
 unsafe impl ::windows::core::Abi for PlatformId {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PlatformId {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11429,6 +11458,7 @@ impl ::core::default::Default for RECORDER_TYPES {
 }
 unsafe impl ::windows::core::Abi for RECORDER_TYPES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RECORDER_TYPES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11504,6 +11534,7 @@ impl ::core::fmt::Debug for SPropAttrArray {
 }
 unsafe impl ::windows::core::Abi for SPropAttrArray {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SPropAttrArray {
     fn eq(&self, other: &Self) -> bool {
@@ -11556,6 +11587,7 @@ impl ::core::fmt::Debug for tagIMMPID_GUIDLIST_ITEM {
 }
 unsafe impl ::windows::core::Abi for tagIMMPID_GUIDLIST_ITEM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for tagIMMPID_GUIDLIST_ITEM {
     fn eq(&self, other: &Self) -> bool {

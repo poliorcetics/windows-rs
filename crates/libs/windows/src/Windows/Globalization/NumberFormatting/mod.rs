@@ -268,11 +268,6 @@ impl CurrencyFormatter {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for CurrencyFormatter {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for CurrencyFormatter {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -286,7 +281,6 @@ impl ::core::fmt::Debug for CurrencyFormatter {
 }
 unsafe impl ::windows::core::RuntimeType for CurrencyFormatter {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Globalization.NumberFormatting.CurrencyFormatter;{11730ca5-4b00-41b2-b332-73b12a497d54})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -515,6 +509,7 @@ impl ::core::default::Default for CurrencyFormatterMode {
 }
 unsafe impl ::windows::core::Abi for CurrencyFormatterMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CurrencyFormatterMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -523,7 +518,6 @@ impl ::core::fmt::Debug for CurrencyFormatterMode {
 }
 unsafe impl ::windows::core::RuntimeType for CurrencyFormatterMode {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Globalization.NumberFormatting.CurrencyFormatterMode;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -765,11 +759,6 @@ impl DecimalFormatter {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for DecimalFormatter {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DecimalFormatter {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -783,7 +772,6 @@ impl ::core::fmt::Debug for DecimalFormatter {
 }
 unsafe impl ::windows::core::RuntimeType for DecimalFormatter {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Globalization.NumberFormatting.DecimalFormatter;{a5007c49-7676-4db7-8631-1b6ff265caa9})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -994,6 +982,11 @@ unsafe impl ::core::marker::Sync for DecimalFormatter {}
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICurrencyFormatter(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICurrencyFormatter {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICurrencyFormatter {
     type Vtable = ICurrencyFormatter_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x11730ca5_4b00_41b2_b332_73b12a497d54);
@@ -1011,6 +1004,11 @@ pub struct ICurrencyFormatter_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICurrencyFormatter2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICurrencyFormatter2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICurrencyFormatter2 {
     type Vtable = ICurrencyFormatter2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x072c2f1d_e7ba_4197_920e_247c92f7dea6);
@@ -1026,6 +1024,11 @@ pub struct ICurrencyFormatter2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICurrencyFormatterFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICurrencyFormatterFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICurrencyFormatterFactory {
     type Vtable = ICurrencyFormatterFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x86c7537e_b938_4aa2_84b0_2c33dc5b1450);
@@ -1043,6 +1046,11 @@ pub struct ICurrencyFormatterFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDecimalFormatterFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDecimalFormatterFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDecimalFormatterFactory {
     type Vtable = IDecimalFormatterFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x0d018c9a_e393_46b8_b830_7a69c8f89fbb);
@@ -1059,6 +1067,11 @@ pub struct IDecimalFormatterFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IIncrementNumberRounder(::windows::core::IUnknown);
+impl ::core::clone::Clone for IIncrementNumberRounder {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IIncrementNumberRounder {
     type Vtable = IIncrementNumberRounder_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x70a64ff8_66ab_4155_9da1_739e46764543);
@@ -1075,6 +1088,11 @@ pub struct IIncrementNumberRounder_Vtbl {
 #[doc = "*Required features: `\"Globalization_NumberFormatting\"`*"]
 #[repr(transparent)]
 pub struct INumberFormatter(::windows::core::IUnknown);
+impl ::core::clone::Clone for INumberFormatter {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl INumberFormatter {
     #[doc = "*Required features: `\"Globalization_NumberFormatting\"`*"]
     pub fn FormatInt(&self, value: i64) -> ::windows::core::Result<::windows::core::HSTRING> {
@@ -1141,11 +1159,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for INumberFormatter {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for INumberFormatter {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1159,7 +1172,6 @@ impl ::core::fmt::Debug for INumberFormatter {
 }
 unsafe impl ::windows::core::RuntimeType for INumberFormatter {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{a5007c49-7676-4db7-8631-1b6ff265caa9}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1179,6 +1191,11 @@ pub struct INumberFormatter_Vtbl {
 #[doc = "*Required features: `\"Globalization_NumberFormatting\"`*"]
 #[repr(transparent)]
 pub struct INumberFormatter2(::windows::core::IUnknown);
+impl ::core::clone::Clone for INumberFormatter2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl INumberFormatter2 {
     #[doc = "*Required features: `\"Globalization_NumberFormatting\"`*"]
     pub fn FormatInt(&self, value: i64) -> ::windows::core::Result<::windows::core::HSTRING> {
@@ -1245,11 +1262,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for INumberFormatter2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for INumberFormatter2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1263,7 +1275,6 @@ impl ::core::fmt::Debug for INumberFormatter2 {
 }
 unsafe impl ::windows::core::RuntimeType for INumberFormatter2 {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{d4a8c1f0-80d0-4b0d-a89e-882c1e8f8310}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1283,6 +1294,11 @@ pub struct INumberFormatter2_Vtbl {
 #[doc = "*Required features: `\"Globalization_NumberFormatting\"`*"]
 #[repr(transparent)]
 pub struct INumberFormatterOptions(::windows::core::IUnknown);
+impl ::core::clone::Clone for INumberFormatterOptions {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl INumberFormatterOptions {
     #[doc = "*Required features: `\"Globalization_NumberFormatting\"`, `\"Foundation_Collections\"`*"]
     #[cfg(feature = "Foundation_Collections")]
@@ -1423,11 +1439,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for INumberFormatterOptions {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for INumberFormatterOptions {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1441,7 +1452,6 @@ impl ::core::fmt::Debug for INumberFormatterOptions {
 }
 unsafe impl ::windows::core::RuntimeType for INumberFormatterOptions {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{80332d21-aee1-4a39-baa2-07ed8c96daf6}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1475,6 +1485,11 @@ pub struct INumberFormatterOptions_Vtbl {
 #[doc = "*Required features: `\"Globalization_NumberFormatting\"`*"]
 #[repr(transparent)]
 pub struct INumberParser(::windows::core::IUnknown);
+impl ::core::clone::Clone for INumberParser {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl INumberParser {
     #[doc = "*Required features: `\"Globalization_NumberFormatting\"`, `\"Foundation\"`*"]
     #[cfg(feature = "Foundation")]
@@ -1544,11 +1559,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for INumberParser {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for INumberParser {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1562,7 +1572,6 @@ impl ::core::fmt::Debug for INumberParser {
 }
 unsafe impl ::windows::core::RuntimeType for INumberParser {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{e6659412-4a13-4a53-83a1-392fbe4cff9f}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1591,6 +1600,11 @@ pub struct INumberParser_Vtbl {
 #[doc = "*Required features: `\"Globalization_NumberFormatting\"`*"]
 #[repr(transparent)]
 pub struct INumberRounder(::windows::core::IUnknown);
+impl ::core::clone::Clone for INumberRounder {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl INumberRounder {
     #[doc = "*Required features: `\"Globalization_NumberFormatting\"`*"]
     pub fn RoundInt32(&self, value: i32) -> ::windows::core::Result<i32> {
@@ -1681,11 +1695,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for INumberRounder {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for INumberRounder {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1699,7 +1708,6 @@ impl ::core::fmt::Debug for INumberRounder {
 }
 unsafe impl ::windows::core::RuntimeType for INumberRounder {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{5473c375-38ed-4631-b80c-ef34fc48b7f5}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1722,6 +1730,11 @@ pub struct INumberRounder_Vtbl {
 #[doc = "*Required features: `\"Globalization_NumberFormatting\"`*"]
 #[repr(transparent)]
 pub struct INumberRounderOption(::windows::core::IUnknown);
+impl ::core::clone::Clone for INumberRounderOption {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl INumberRounderOption {
     #[doc = "*Required features: `\"Globalization_NumberFormatting\"`*"]
     pub fn NumberRounder(&self) -> ::windows::core::Result<INumberRounder> {
@@ -1777,11 +1790,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for INumberRounderOption {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for INumberRounderOption {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1795,7 +1803,6 @@ impl ::core::fmt::Debug for INumberRounderOption {
 }
 unsafe impl ::windows::core::RuntimeType for INumberRounderOption {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{3b088433-646f-4efe-8d48-66eb2e49e736}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1814,6 +1821,11 @@ pub struct INumberRounderOption_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct INumeralSystemTranslator(::windows::core::IUnknown);
+impl ::core::clone::Clone for INumeralSystemTranslator {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for INumeralSystemTranslator {
     type Vtable = INumeralSystemTranslator_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x28f5bc2c_8c23_4234_ad2e_fa5a3a426e9b);
@@ -1834,6 +1846,11 @@ pub struct INumeralSystemTranslator_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct INumeralSystemTranslatorFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for INumeralSystemTranslatorFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for INumeralSystemTranslatorFactory {
     type Vtable = INumeralSystemTranslatorFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9630c8da_36ef_4d88_a85c_6f0d98d620a6);
@@ -1850,6 +1867,11 @@ pub struct INumeralSystemTranslatorFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPercentFormatterFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPercentFormatterFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPercentFormatterFactory {
     type Vtable = IPercentFormatterFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb7828aef_fed4_4018_a6e2_e09961e03765);
@@ -1866,6 +1888,11 @@ pub struct IPercentFormatterFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPermilleFormatterFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPermilleFormatterFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPermilleFormatterFactory {
     type Vtable = IPermilleFormatterFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x2b37b4ac_e638_4ed5_a998_62f6b06a49ae);
@@ -1882,6 +1909,11 @@ pub struct IPermilleFormatterFactory_Vtbl {
 #[doc = "*Required features: `\"Globalization_NumberFormatting\"`*"]
 #[repr(transparent)]
 pub struct ISignedZeroOption(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISignedZeroOption {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISignedZeroOption {
     #[doc = "*Required features: `\"Globalization_NumberFormatting\"`*"]
     pub fn IsZeroSigned(&self) -> ::windows::core::Result<bool> {
@@ -1937,11 +1969,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISignedZeroOption {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISignedZeroOption {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1955,7 +1982,6 @@ impl ::core::fmt::Debug for ISignedZeroOption {
 }
 unsafe impl ::windows::core::RuntimeType for ISignedZeroOption {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{fd1cdd31-0a3c-49c4-a642-96a1564f4f30}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1974,6 +2000,11 @@ pub struct ISignedZeroOption_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISignificantDigitsNumberRounder(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISignificantDigitsNumberRounder {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISignificantDigitsNumberRounder {
     type Vtable = ISignificantDigitsNumberRounder_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf5941bca_6646_4913_8c76_1b191ff94dfd);
@@ -1990,6 +2021,11 @@ pub struct ISignificantDigitsNumberRounder_Vtbl {
 #[doc = "*Required features: `\"Globalization_NumberFormatting\"`*"]
 #[repr(transparent)]
 pub struct ISignificantDigitsOption(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISignificantDigitsOption {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISignificantDigitsOption {
     #[doc = "*Required features: `\"Globalization_NumberFormatting\"`*"]
     pub fn SignificantDigits(&self) -> ::windows::core::Result<i32> {
@@ -2045,11 +2081,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISignificantDigitsOption {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISignificantDigitsOption {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2063,7 +2094,6 @@ impl ::core::fmt::Debug for ISignificantDigitsOption {
 }
 unsafe impl ::windows::core::RuntimeType for ISignificantDigitsOption {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{1d4dfcdd-2d43-4ee8-bbf1-c1b26a711a58}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2165,11 +2195,6 @@ impl IncrementNumberRounder {
         }
     }
 }
-impl ::core::clone::Clone for IncrementNumberRounder {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IncrementNumberRounder {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2183,7 +2208,6 @@ impl ::core::fmt::Debug for IncrementNumberRounder {
 }
 unsafe impl ::windows::core::RuntimeType for IncrementNumberRounder {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Globalization.NumberFormatting.IncrementNumberRounder;{5473c375-38ed-4631-b80c-ef34fc48b7f5})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2322,11 +2346,6 @@ impl NumeralSystemTranslator {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for NumeralSystemTranslator {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for NumeralSystemTranslator {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2340,7 +2359,6 @@ impl ::core::fmt::Debug for NumeralSystemTranslator {
 }
 unsafe impl ::windows::core::RuntimeType for NumeralSystemTranslator {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Globalization.NumberFormatting.NumeralSystemTranslator;{28f5bc2c-8c23-4234-ad2e-fa5a3a426e9b})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2631,11 +2649,6 @@ impl PercentFormatter {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for PercentFormatter {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PercentFormatter {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2649,7 +2662,6 @@ impl ::core::fmt::Debug for PercentFormatter {
 }
 unsafe impl ::windows::core::RuntimeType for PercentFormatter {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Globalization.NumberFormatting.PercentFormatter;{a5007c49-7676-4db7-8631-1b6ff265caa9})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3094,11 +3106,6 @@ impl PermilleFormatter {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for PermilleFormatter {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PermilleFormatter {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3112,7 +3119,6 @@ impl ::core::fmt::Debug for PermilleFormatter {
 }
 unsafe impl ::windows::core::RuntimeType for PermilleFormatter {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Globalization.NumberFormatting.PermilleFormatter;{a5007c49-7676-4db7-8631-1b6ff265caa9})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3350,6 +3356,7 @@ impl ::core::default::Default for RoundingAlgorithm {
 }
 unsafe impl ::windows::core::Abi for RoundingAlgorithm {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RoundingAlgorithm {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3358,7 +3365,6 @@ impl ::core::fmt::Debug for RoundingAlgorithm {
 }
 unsafe impl ::windows::core::RuntimeType for RoundingAlgorithm {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Globalization.NumberFormatting.RoundingAlgorithm;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -3449,11 +3455,6 @@ impl SignificantDigitsNumberRounder {
         unsafe { (::windows::core::Interface::vtable(this).SetSignificantDigits)(::core::mem::transmute_copy(this), value).ok() }
     }
 }
-impl ::core::clone::Clone for SignificantDigitsNumberRounder {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SignificantDigitsNumberRounder {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3467,7 +3468,6 @@ impl ::core::fmt::Debug for SignificantDigitsNumberRounder {
 }
 unsafe impl ::windows::core::RuntimeType for SignificantDigitsNumberRounder {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Globalization.NumberFormatting.SignificantDigitsNumberRounder;{5473c375-38ed-4631-b80c-ef34fc48b7f5})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

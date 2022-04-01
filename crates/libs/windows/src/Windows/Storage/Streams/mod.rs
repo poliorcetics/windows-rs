@@ -58,11 +58,6 @@ impl Buffer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for Buffer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for Buffer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -76,7 +71,6 @@ impl ::core::fmt::Debug for Buffer {
 }
 unsafe impl ::windows::core::RuntimeType for Buffer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Storage.Streams.Buffer;{905a0fe0-bc53-11df-8c49-001e4fc686da})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -173,6 +167,7 @@ impl ::core::default::Default for ByteOrder {
 }
 unsafe impl ::windows::core::Abi for ByteOrder {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ByteOrder {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -181,7 +176,6 @@ impl ::core::fmt::Debug for ByteOrder {
 }
 unsafe impl ::windows::core::RuntimeType for ByteOrder {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Storage.Streams.ByteOrder;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -420,11 +414,6 @@ impl DataReader {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for DataReader {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DataReader {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -438,7 +427,6 @@ impl ::core::fmt::Debug for DataReader {
 }
 unsafe impl ::windows::core::RuntimeType for DataReader {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Storage.Streams.DataReader;{e2b50029-b4c1-4314-a4b8-fb813a2f275e})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -611,12 +599,6 @@ impl DataReaderLoadOperation {
     }
 }
 #[cfg(feature = "Foundation")]
-impl ::core::clone::Clone for DataReaderLoadOperation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Foundation")]
 impl ::core::cmp::PartialEq for DataReaderLoadOperation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -633,7 +615,6 @@ impl ::core::fmt::Debug for DataReaderLoadOperation {
 #[cfg(feature = "Foundation")]
 unsafe impl ::windows::core::RuntimeType for DataReaderLoadOperation {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Storage.Streams.DataReaderLoadOperation;pinterface({9fc2b0bb-e446-44e2-aa61-9cab8f636af2};u4))");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -978,11 +959,6 @@ impl DataWriter {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for DataWriter {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DataWriter {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -996,7 +972,6 @@ impl ::core::fmt::Debug for DataWriter {
 }
 unsafe impl ::windows::core::RuntimeType for DataWriter {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Storage.Streams.DataWriter;{64b89265-d341-4922-b38a-dd4af8808c4e})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1169,12 +1144,6 @@ impl DataWriterStoreOperation {
     }
 }
 #[cfg(feature = "Foundation")]
-impl ::core::clone::Clone for DataWriterStoreOperation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Foundation")]
 impl ::core::cmp::PartialEq for DataWriterStoreOperation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1191,7 +1160,6 @@ impl ::core::fmt::Debug for DataWriterStoreOperation {
 #[cfg(feature = "Foundation")]
 unsafe impl ::windows::core::RuntimeType for DataWriterStoreOperation {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Storage.Streams.DataWriterStoreOperation;pinterface({9fc2b0bb-e446-44e2-aa61-9cab8f636af2};u4))");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1360,11 +1328,6 @@ impl FileInputStream {
         }
     }
 }
-impl ::core::clone::Clone for FileInputStream {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for FileInputStream {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1378,7 +1341,6 @@ impl ::core::fmt::Debug for FileInputStream {
 }
 unsafe impl ::windows::core::RuntimeType for FileInputStream {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Storage.Streams.FileInputStream;{905a0fe2-bc53-11df-8c49-001e4fc686da})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1504,6 +1466,7 @@ impl ::core::default::Default for FileOpenDisposition {
 }
 unsafe impl ::windows::core::Abi for FileOpenDisposition {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FileOpenDisposition {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1512,7 +1475,6 @@ impl ::core::fmt::Debug for FileOpenDisposition {
 }
 unsafe impl ::windows::core::RuntimeType for FileOpenDisposition {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Storage.Streams.FileOpenDisposition;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1546,11 +1508,6 @@ impl FileOutputStream {
         }
     }
 }
-impl ::core::clone::Clone for FileOutputStream {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for FileOutputStream {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1564,7 +1521,6 @@ impl ::core::fmt::Debug for FileOutputStream {
 }
 unsafe impl ::windows::core::RuntimeType for FileOutputStream {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Storage.Streams.FileOutputStream;{905a0fe6-bc53-11df-8c49-001e4fc686da})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1839,11 +1795,6 @@ impl FileRandomAccessStream {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for FileRandomAccessStream {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for FileRandomAccessStream {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1857,7 +1808,6 @@ impl ::core::fmt::Debug for FileRandomAccessStream {
 }
 unsafe impl ::windows::core::RuntimeType for FileRandomAccessStream {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Storage.Streams.FileRandomAccessStream;{905a0fe1-bc53-11df-8c49-001e4fc686da})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2006,6 +1956,11 @@ unsafe impl ::core::marker::Sync for FileRandomAccessStream {}
 #[doc = "*Required features: `\"Storage_Streams\"`*"]
 #[repr(transparent)]
 pub struct IBuffer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBuffer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IBuffer {
     #[doc = "*Required features: `\"Storage_Streams\"`*"]
     pub fn Capacity(&self) -> ::windows::core::Result<u32> {
@@ -2069,11 +2024,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IBuffer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IBuffer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2087,7 +2037,6 @@ impl ::core::fmt::Debug for IBuffer {
 }
 unsafe impl ::windows::core::RuntimeType for IBuffer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{905a0fe0-bc53-11df-8c49-001e4fc686da}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2107,6 +2056,11 @@ pub struct IBuffer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBufferFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBufferFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBufferFactory {
     type Vtable = IBufferFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x71af914d_c10f_484b_bc50_14bc623b3a27);
@@ -2120,6 +2074,11 @@ pub struct IBufferFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBufferStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBufferStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBufferStatics {
     type Vtable = IBufferStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe901e65b_d716_475a_a90a_af7229b1e741);
@@ -2140,6 +2099,11 @@ pub struct IBufferStatics_Vtbl {
 #[doc = "*Required features: `\"Storage_Streams\"`*"]
 #[repr(transparent)]
 pub struct IContentTypeProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IContentTypeProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IContentTypeProvider {
     #[doc = "*Required features: `\"Storage_Streams\"`*"]
     pub fn ContentType(&self) -> ::windows::core::Result<::windows::core::HSTRING> {
@@ -2190,11 +2154,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IContentTypeProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IContentTypeProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2208,7 +2167,6 @@ impl ::core::fmt::Debug for IContentTypeProvider {
 }
 unsafe impl ::windows::core::RuntimeType for IContentTypeProvider {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{97d098a5-3b99-4de9-88a5-e11d2f50c795}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2226,6 +2184,11 @@ pub struct IContentTypeProvider_Vtbl {
 #[doc = "*Required features: `\"Storage_Streams\"`*"]
 #[repr(transparent)]
 pub struct IDataReader(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDataReader {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDataReader {
     #[doc = "*Required features: `\"Storage_Streams\"`*"]
     pub fn UnconsumedBufferLength(&self) -> ::windows::core::Result<u32> {
@@ -2467,11 +2430,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDataReader {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDataReader {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2485,7 +2443,6 @@ impl ::core::fmt::Debug for IDataReader {
 }
 unsafe impl ::windows::core::RuntimeType for IDataReader {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{e2b50029-b4c1-4314-a4b8-fb813a2f275e}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2537,6 +2494,11 @@ pub struct IDataReader_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDataReaderFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDataReaderFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDataReaderFactory {
     type Vtable = IDataReaderFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd7527847_57da_4e15_914c_06806699a098);
@@ -2550,6 +2512,11 @@ pub struct IDataReaderFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDataReaderStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDataReaderStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDataReaderStatics {
     type Vtable = IDataReaderStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x11fcbfc8_f93a_471b_b121_f379e349313c);
@@ -2563,6 +2530,11 @@ pub struct IDataReaderStatics_Vtbl {
 #[doc = "*Required features: `\"Storage_Streams\"`*"]
 #[repr(transparent)]
 pub struct IDataWriter(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDataWriter {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDataWriter {
     #[doc = "*Required features: `\"Storage_Streams\"`*"]
     pub fn UnstoredBufferLength(&self) -> ::windows::core::Result<u32> {
@@ -2771,11 +2743,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDataWriter {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDataWriter {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2789,7 +2756,6 @@ impl ::core::fmt::Debug for IDataWriter {
 }
 unsafe impl ::windows::core::RuntimeType for IDataWriter {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{64b89265-d341-4922-b38a-dd4af8808c4e}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2845,6 +2811,11 @@ pub struct IDataWriter_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDataWriterFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDataWriterFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDataWriterFactory {
     type Vtable = IDataWriterFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x338c67c2_8b84_4c2b_9c50_7b8767847a1f);
@@ -2858,6 +2829,11 @@ pub struct IDataWriterFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IFileRandomAccessStreamStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IFileRandomAccessStreamStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IFileRandomAccessStreamStatics {
     type Vtable = IFileRandomAccessStreamStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x73550107_3b57_4b5d_8345_554d2fc621f0);
@@ -2902,6 +2878,11 @@ pub struct IFileRandomAccessStreamStatics_Vtbl {
 #[doc = "*Required features: `\"Storage_Streams\"`*"]
 #[repr(transparent)]
 pub struct IInputStream(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInputStream {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IInputStream {
     #[doc = "*Required features: `\"Storage_Streams\"`, `\"Foundation\"`*"]
     #[cfg(feature = "Foundation")]
@@ -2985,11 +2966,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::Foundation::IClosable> for
         ::core::convert::TryInto::<super::super::Foundation::IClosable>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IInputStream {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IInputStream {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3003,7 +2979,6 @@ impl ::core::fmt::Debug for IInputStream {
 }
 unsafe impl ::windows::core::RuntimeType for IInputStream {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{905a0fe2-bc53-11df-8c49-001e4fc686da}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3024,6 +2999,11 @@ pub struct IInputStream_Vtbl {
 #[doc = "*Required features: `\"Storage_Streams\"`*"]
 #[repr(transparent)]
 pub struct IInputStreamReference(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInputStreamReference {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IInputStreamReference {
     #[doc = "*Required features: `\"Storage_Streams\"`, `\"Foundation\"`*"]
     #[cfg(feature = "Foundation")]
@@ -3075,11 +3055,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IInputStreamReference {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IInputStreamReference {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3093,7 +3068,6 @@ impl ::core::fmt::Debug for IInputStreamReference {
 }
 unsafe impl ::windows::core::RuntimeType for IInputStreamReference {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{43929d18-5ec9-4b5a-919c-4205b0c804b6}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3114,6 +3088,11 @@ pub struct IInputStreamReference_Vtbl {
 #[doc = "*Required features: `\"Storage_Streams\"`*"]
 #[repr(transparent)]
 pub struct IOutputStream(::windows::core::IUnknown);
+impl ::core::clone::Clone for IOutputStream {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IOutputStream {
     #[doc = "*Required features: `\"Storage_Streams\"`, `\"Foundation\"`*"]
     #[cfg(feature = "Foundation")]
@@ -3206,11 +3185,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::Foundation::IClosable> for
         ::core::convert::TryInto::<super::super::Foundation::IClosable>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IOutputStream {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IOutputStream {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3224,7 +3198,6 @@ impl ::core::fmt::Debug for IOutputStream {
 }
 unsafe impl ::windows::core::RuntimeType for IOutputStream {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{905a0fe6-bc53-11df-8c49-001e4fc686da}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3249,6 +3222,11 @@ pub struct IOutputStream_Vtbl {
 #[doc = "*Required features: `\"Storage_Streams\"`*"]
 #[repr(transparent)]
 pub struct IPropertySetSerializer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPropertySetSerializer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPropertySetSerializer {
     #[doc = "*Required features: `\"Storage_Streams\"`, `\"Foundation_Collections\"`*"]
     #[cfg(feature = "Foundation_Collections")]
@@ -3306,11 +3284,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPropertySetSerializer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPropertySetSerializer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3324,7 +3297,6 @@ impl ::core::fmt::Debug for IPropertySetSerializer {
 }
 unsafe impl ::windows::core::RuntimeType for IPropertySetSerializer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{6e8ebf1c-ef3d-4376-b20e-5be638aeac77}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3349,6 +3321,11 @@ pub struct IPropertySetSerializer_Vtbl {
 #[doc = "*Required features: `\"Storage_Streams\"`*"]
 #[repr(transparent)]
 pub struct IRandomAccessStream(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRandomAccessStream {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRandomAccessStream {
     #[doc = "*Required features: `\"Storage_Streams\"`*"]
     pub fn Size(&self) -> ::windows::core::Result<u64> {
@@ -3560,11 +3537,6 @@ impl<'a> ::windows::core::IntoParam<'a, IOutputStream> for &IRandomAccessStream 
         ::core::convert::TryInto::<IOutputStream>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IRandomAccessStream {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IRandomAccessStream {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3578,7 +3550,6 @@ impl ::core::fmt::Debug for IRandomAccessStream {
 }
 unsafe impl ::windows::core::RuntimeType for IRandomAccessStream {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{905a0fe1-bc53-11df-8c49-001e4fc686da}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3604,6 +3575,11 @@ pub struct IRandomAccessStream_Vtbl {
 #[doc = "*Required features: `\"Storage_Streams\"`*"]
 #[repr(transparent)]
 pub struct IRandomAccessStreamReference(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRandomAccessStreamReference {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRandomAccessStreamReference {
     #[doc = "*Required features: `\"Storage_Streams\"`, `\"Foundation\"`*"]
     #[cfg(feature = "Foundation")]
@@ -3655,11 +3631,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IRandomAccessStreamReference {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IRandomAccessStreamReference {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3673,7 +3644,6 @@ impl ::core::fmt::Debug for IRandomAccessStreamReference {
 }
 unsafe impl ::windows::core::RuntimeType for IRandomAccessStreamReference {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{33ee3134-1dd6-4e3a-8067-d1c162e8642b}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3694,6 +3664,11 @@ pub struct IRandomAccessStreamReference_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IRandomAccessStreamReferenceStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRandomAccessStreamReferenceStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IRandomAccessStreamReferenceStatics {
     type Vtable = IRandomAccessStreamReferenceStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x857309dc_3fbf_4e7d_986f_ef3b1a07a964);
@@ -3712,6 +3687,11 @@ pub struct IRandomAccessStreamReferenceStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IRandomAccessStreamStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRandomAccessStreamStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IRandomAccessStreamStatics {
     type Vtable = IRandomAccessStreamStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x524cedcf_6e29_4ce5_9573_6b753db66c3a);
@@ -3736,6 +3716,11 @@ pub struct IRandomAccessStreamStatics_Vtbl {
 #[doc = "*Required features: `\"Storage_Streams\"`*"]
 #[repr(transparent)]
 pub struct IRandomAccessStreamWithContentType(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRandomAccessStreamWithContentType {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRandomAccessStreamWithContentType {
     #[doc = "*Required features: `\"Storage_Streams\"`, `\"Foundation\"`*"]
     #[cfg(feature = "Foundation")]
@@ -3999,11 +3984,6 @@ impl<'a> ::windows::core::IntoParam<'a, IRandomAccessStream> for &IRandomAccessS
         ::core::convert::TryInto::<IRandomAccessStream>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IRandomAccessStreamWithContentType {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IRandomAccessStreamWithContentType {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4017,7 +3997,6 @@ impl ::core::fmt::Debug for IRandomAccessStreamWithContentType {
 }
 unsafe impl ::windows::core::RuntimeType for IRandomAccessStreamWithContentType {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{cc254827-4b3d-438f-9232-10c76bc7e038}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4142,11 +4121,6 @@ impl InMemoryRandomAccessStream {
         }
     }
 }
-impl ::core::clone::Clone for InMemoryRandomAccessStream {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for InMemoryRandomAccessStream {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4160,7 +4134,6 @@ impl ::core::fmt::Debug for InMemoryRandomAccessStream {
 }
 unsafe impl ::windows::core::RuntimeType for InMemoryRandomAccessStream {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Storage.Streams.InMemoryRandomAccessStream;{905a0fe1-bc53-11df-8c49-001e4fc686da})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4328,6 +4301,7 @@ impl ::core::default::Default for InputStreamOptions {
 }
 unsafe impl ::windows::core::Abi for InputStreamOptions {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for InputStreamOptions {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4364,7 +4338,6 @@ impl ::core::ops::Not for InputStreamOptions {
 }
 unsafe impl ::windows::core::RuntimeType for InputStreamOptions {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Storage.Streams.InputStreamOptions;u4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -4389,11 +4362,6 @@ impl InputStreamOverStream {
         }
     }
 }
-impl ::core::clone::Clone for InputStreamOverStream {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for InputStreamOverStream {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4407,7 +4375,6 @@ impl ::core::fmt::Debug for InputStreamOverStream {
 }
 unsafe impl ::windows::core::RuntimeType for InputStreamOverStream {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Storage.Streams.InputStreamOverStream;{905a0fe2-bc53-11df-8c49-001e4fc686da})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4538,11 +4505,6 @@ impl OutputStreamOverStream {
         }
     }
 }
-impl ::core::clone::Clone for OutputStreamOverStream {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for OutputStreamOverStream {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4556,7 +4518,6 @@ impl ::core::fmt::Debug for OutputStreamOverStream {
 }
 unsafe impl ::windows::core::RuntimeType for OutputStreamOverStream {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Storage.Streams.OutputStreamOverStream;{905a0fe6-bc53-11df-8c49-001e4fc686da})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4798,11 +4759,6 @@ impl RandomAccessStreamOverStream {
         }
     }
 }
-impl ::core::clone::Clone for RandomAccessStreamOverStream {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for RandomAccessStreamOverStream {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4816,7 +4772,6 @@ impl ::core::fmt::Debug for RandomAccessStreamOverStream {
 }
 unsafe impl ::windows::core::RuntimeType for RandomAccessStreamOverStream {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Storage.Streams.RandomAccessStreamOverStream;{905a0fe1-bc53-11df-8c49-001e4fc686da})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -5003,11 +4958,6 @@ impl RandomAccessStreamReference {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for RandomAccessStreamReference {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for RandomAccessStreamReference {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5021,7 +4971,6 @@ impl ::core::fmt::Debug for RandomAccessStreamReference {
 }
 unsafe impl ::windows::core::RuntimeType for RandomAccessStreamReference {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Storage.Streams.RandomAccessStreamReference;{33ee3134-1dd6-4e3a-8067-d1c162e8642b})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -5119,6 +5068,7 @@ impl ::core::default::Default for UnicodeEncoding {
 }
 unsafe impl ::windows::core::Abi for UnicodeEncoding {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UnicodeEncoding {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5127,7 +5077,6 @@ impl ::core::fmt::Debug for UnicodeEncoding {
 }
 unsafe impl ::windows::core::RuntimeType for UnicodeEncoding {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Storage.Streams.UnicodeEncoding;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }

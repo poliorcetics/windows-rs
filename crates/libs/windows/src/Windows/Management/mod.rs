@@ -12,6 +12,11 @@ pub mod Workplace;
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMdmAlert(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMdmAlert {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMdmAlert {
     type Vtable = IMdmAlert_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb0fbc327_28c1_4b52_a548_c5807caf70b6);
@@ -37,6 +42,11 @@ pub struct IMdmAlert_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMdmSession(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMdmSession {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMdmSession {
     type Vtable = IMdmSession_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xfe89314c_8f64_4797_a9d7_9d88f86ae166);
@@ -69,6 +79,11 @@ pub struct IMdmSession_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMdmSessionManagerStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMdmSessionManagerStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMdmSessionManagerStatics {
     type Vtable = IMdmSessionManagerStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xcf4ad959_f745_4b79_9b5c_de0bf8efe44b);
@@ -183,11 +198,6 @@ impl MdmAlert {
         unsafe { (::windows::core::Interface::vtable(this).SetType)(::core::mem::transmute_copy(this), value.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for MdmAlert {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MdmAlert {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -201,7 +211,6 @@ impl ::core::fmt::Debug for MdmAlert {
 }
 unsafe impl ::windows::core::RuntimeType for MdmAlert {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Management.MdmAlert;{b0fbc327-28c1-4b52-a548-c5807caf70b6})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -276,6 +285,7 @@ impl ::core::default::Default for MdmAlertDataType {
 }
 unsafe impl ::windows::core::Abi for MdmAlertDataType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MdmAlertDataType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -284,7 +294,6 @@ impl ::core::fmt::Debug for MdmAlertDataType {
 }
 unsafe impl ::windows::core::RuntimeType for MdmAlertDataType {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Management.MdmAlertDataType;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -313,6 +322,7 @@ impl ::core::default::Default for MdmAlertMark {
 }
 unsafe impl ::windows::core::Abi for MdmAlertMark {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MdmAlertMark {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -321,7 +331,6 @@ impl ::core::fmt::Debug for MdmAlertMark {
 }
 unsafe impl ::windows::core::RuntimeType for MdmAlertMark {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Management.MdmAlertMark;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -396,11 +405,6 @@ impl MdmSession {
         }
     }
 }
-impl ::core::clone::Clone for MdmSession {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MdmSession {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -414,7 +418,6 @@ impl ::core::fmt::Debug for MdmSession {
 }
 unsafe impl ::windows::core::RuntimeType for MdmSession {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Management.MdmSession;{fe89314c-8f64-4797-a9d7-9d88f86ae166})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -530,6 +533,7 @@ impl ::core::default::Default for MdmSessionState {
 }
 unsafe impl ::windows::core::Abi for MdmSessionState {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MdmSessionState {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -538,7 +542,6 @@ impl ::core::fmt::Debug for MdmSessionState {
 }
 unsafe impl ::windows::core::RuntimeType for MdmSessionState {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Management.MdmSessionState;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }

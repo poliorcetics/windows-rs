@@ -26,6 +26,7 @@ impl ::core::default::Default for LicenseProtectionStatus {
 }
 unsafe impl ::windows::core::Abi for LicenseProtectionStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for LicenseProtectionStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

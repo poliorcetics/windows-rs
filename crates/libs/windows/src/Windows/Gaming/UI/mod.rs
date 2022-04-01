@@ -72,6 +72,7 @@ impl ::core::default::Default for GameChatMessageOrigin {
 }
 unsafe impl ::windows::core::Abi for GameChatMessageOrigin {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GameChatMessageOrigin {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -80,7 +81,6 @@ impl ::core::fmt::Debug for GameChatMessageOrigin {
 }
 unsafe impl ::windows::core::RuntimeType for GameChatMessageOrigin {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Gaming.UI.GameChatMessageOrigin;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -130,11 +130,6 @@ impl GameChatMessageReceivedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for GameChatMessageReceivedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for GameChatMessageReceivedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -148,7 +143,6 @@ impl ::core::fmt::Debug for GameChatMessageReceivedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for GameChatMessageReceivedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Gaming.UI.GameChatMessageReceivedEventArgs;{a28201f1-3fb9-4e42-a403-7afce2023b1e})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -237,11 +231,6 @@ impl GameChatOverlay {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for GameChatOverlay {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for GameChatOverlay {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -255,7 +244,6 @@ impl ::core::fmt::Debug for GameChatOverlay {
 }
 unsafe impl ::windows::core::RuntimeType for GameChatOverlay {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Gaming.UI.GameChatOverlay;{fbc64865-f6fc-4a48-ae07-03ac6ed43704})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -342,11 +330,6 @@ impl GameChatOverlayMessageSource {
         unsafe { (::windows::core::Interface::vtable(this).SetDelayBeforeClosingAfterMessageReceived)(::core::mem::transmute_copy(this), value.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for GameChatOverlayMessageSource {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for GameChatOverlayMessageSource {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -360,7 +343,6 @@ impl ::core::fmt::Debug for GameChatOverlayMessageSource {
 }
 unsafe impl ::windows::core::RuntimeType for GameChatOverlayMessageSource {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Gaming.UI.GameChatOverlayMessageSource;{1e177397-59fb-4f4f-8e9a-80acf817743c})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -441,6 +423,7 @@ impl ::core::default::Default for GameChatOverlayPosition {
 }
 unsafe impl ::windows::core::Abi for GameChatOverlayPosition {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GameChatOverlayPosition {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -449,7 +432,6 @@ impl ::core::fmt::Debug for GameChatOverlayPosition {
 }
 unsafe impl ::windows::core::RuntimeType for GameChatOverlayPosition {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Gaming.UI.GameChatOverlayPosition;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -501,11 +483,6 @@ impl GameUIProviderActivatedEventArgs {
         unsafe { (::windows::core::Interface::vtable(this).ReportCompleted)(::core::mem::transmute_copy(this), results.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for GameUIProviderActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for GameUIProviderActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -519,7 +496,6 @@ impl ::core::fmt::Debug for GameUIProviderActivatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for GameUIProviderActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Gaming.UI.GameUIProviderActivatedEventArgs;{a7b3203e-caf7-4ded-bbd2-47de43bb6dd5})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -602,6 +578,11 @@ unsafe impl ::core::marker::Sync for GameUIProviderActivatedEventArgs {}
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGameBarStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGameBarStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGameBarStatics {
     type Vtable = IGameBarStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1db9a292_cc78_4173_be45_b61e67283ea7);
@@ -632,6 +613,11 @@ pub struct IGameBarStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGameChatMessageReceivedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGameChatMessageReceivedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGameChatMessageReceivedEventArgs {
     type Vtable = IGameChatMessageReceivedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa28201f1_3fb9_4e42_a403_7afce2023b1e);
@@ -649,6 +635,11 @@ pub struct IGameChatMessageReceivedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGameChatOverlay(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGameChatOverlay {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGameChatOverlay {
     type Vtable = IGameChatOverlay_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xfbc64865_f6fc_4a48_ae07_03ac6ed43704);
@@ -664,6 +655,11 @@ pub struct IGameChatOverlay_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGameChatOverlayMessageSource(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGameChatOverlayMessageSource {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGameChatOverlayMessageSource {
     type Vtable = IGameChatOverlayMessageSource_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1e177397_59fb_4f4f_8e9a_80acf817743c);
@@ -688,6 +684,11 @@ pub struct IGameChatOverlayMessageSource_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGameChatOverlayStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGameChatOverlayStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGameChatOverlayStatics {
     type Vtable = IGameChatOverlayStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x89acf614_7867_49f7_9687_25d9dbf444d1);
@@ -701,6 +702,11 @@ pub struct IGameChatOverlayStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGameUIProviderActivatedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGameUIProviderActivatedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGameUIProviderActivatedEventArgs {
     type Vtable = IGameUIProviderActivatedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa7b3203e_caf7_4ded_bbd2_47de43bb6dd5);

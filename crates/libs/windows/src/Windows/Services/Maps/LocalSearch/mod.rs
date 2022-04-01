@@ -2,6 +2,11 @@
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ILocalCategoriesStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILocalCategoriesStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ILocalCategoriesStatics {
     type Vtable = ILocalCategoriesStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf49399f5_8261_4321_9974_ef92d49a8dca);
@@ -22,6 +27,11 @@ pub struct ILocalCategoriesStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ILocalLocation(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILocalLocation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ILocalLocation {
     type Vtable = ILocalLocation_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xbb0fe9ab_4502_4f2c_94a9_0d60de0e2163);
@@ -44,6 +54,11 @@ pub struct ILocalLocation_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ILocalLocation2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILocalLocation2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ILocalLocation2 {
     type Vtable = ILocalLocation2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x6e9e307c_ecb5_4ffc_bb8c_ba50ba8c2dc6);
@@ -62,6 +77,11 @@ pub struct ILocalLocation2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ILocalLocationFinderResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILocalLocationFinderResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ILocalLocationFinderResult {
     type Vtable = ILocalLocationFinderResult_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd09b6cc6_f338_4191_9fd8_5440b9a68f52);
@@ -79,6 +99,11 @@ pub struct ILocalLocationFinderResult_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ILocalLocationFinderStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILocalLocationFinderStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ILocalLocationFinderStatics {
     type Vtable = ILocalLocationFinderStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd2ef7344_a0de_48ca_81a8_07c7dcfd37ab);
@@ -95,6 +120,11 @@ pub struct ILocalLocationFinderStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ILocalLocationHoursOfOperationItem(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILocalLocationHoursOfOperationItem {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ILocalLocationHoursOfOperationItem {
     type Vtable = ILocalLocationHoursOfOperationItem_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x23548c72_a1c7_43f1_a4f0_1091c39ec640);
@@ -119,6 +149,11 @@ pub struct ILocalLocationHoursOfOperationItem_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ILocalLocationRatingInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILocalLocationRatingInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ILocalLocationRatingInfo {
     type Vtable = ILocalLocationRatingInfo_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xcb1dab56_3354_4311_8bc0_a2d4d5eb806e);
@@ -140,6 +175,11 @@ pub struct ILocalLocationRatingInfo_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPlaceInfoHelperStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPlaceInfoHelperStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPlaceInfoHelperStatics {
     type Vtable = IPlaceInfoHelperStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xdd1ca9a7_a9c6_491b_bc09_e80fcea48ee6);
@@ -305,11 +345,6 @@ impl LocalLocation {
         }
     }
 }
-impl ::core::clone::Clone for LocalLocation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for LocalLocation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -323,7 +358,6 @@ impl ::core::fmt::Debug for LocalLocation {
 }
 unsafe impl ::windows::core::RuntimeType for LocalLocation {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Services.Maps.LocalSearch.LocalLocation;{bb0fe9ab-4502-4f2c-94a9-0d60de0e2163})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -419,11 +453,6 @@ impl LocalLocationFinderResult {
         }
     }
 }
-impl ::core::clone::Clone for LocalLocationFinderResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for LocalLocationFinderResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -437,7 +466,6 @@ impl ::core::fmt::Debug for LocalLocationFinderResult {
 }
 unsafe impl ::windows::core::RuntimeType for LocalLocationFinderResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Services.Maps.LocalSearch.LocalLocationFinderResult;{d09b6cc6-f338-4191-9fd8-5440b9a68f52})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -518,6 +546,7 @@ impl ::core::default::Default for LocalLocationFinderStatus {
 }
 unsafe impl ::windows::core::Abi for LocalLocationFinderStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for LocalLocationFinderStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -526,7 +555,6 @@ impl ::core::fmt::Debug for LocalLocationFinderStatus {
 }
 unsafe impl ::windows::core::RuntimeType for LocalLocationFinderStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Services.Maps.LocalSearch.LocalLocationFinderStatus;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -563,11 +591,6 @@ impl LocalLocationHoursOfOperationItem {
         }
     }
 }
-impl ::core::clone::Clone for LocalLocationHoursOfOperationItem {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for LocalLocationHoursOfOperationItem {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -581,7 +604,6 @@ impl ::core::fmt::Debug for LocalLocationHoursOfOperationItem {
 }
 unsafe impl ::windows::core::RuntimeType for LocalLocationHoursOfOperationItem {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Services.Maps.LocalSearch.LocalLocationHoursOfOperationItem;{23548c72-a1c7-43f1-a4f0-1091c39ec640})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -666,11 +688,6 @@ impl LocalLocationRatingInfo {
         }
     }
 }
-impl ::core::clone::Clone for LocalLocationRatingInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for LocalLocationRatingInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -684,7 +701,6 @@ impl ::core::fmt::Debug for LocalLocationRatingInfo {
 }
 unsafe impl ::windows::core::RuntimeType for LocalLocationRatingInfo {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Services.Maps.LocalSearch.LocalLocationRatingInfo;{cb1dab56-3354-4311-8bc0-a2d4d5eb806e})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

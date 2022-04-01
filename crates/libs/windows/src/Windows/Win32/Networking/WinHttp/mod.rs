@@ -226,6 +226,7 @@ impl ::core::fmt::Debug for HTTP_VERSION_INFO {
 }
 unsafe impl ::windows::core::Abi for HTTP_VERSION_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HTTP_VERSION_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -273,6 +274,7 @@ impl ::core::default::Default for INTERNET_PORT {
 }
 unsafe impl ::windows::core::Abi for INTERNET_PORT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for INTERNET_PORT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -347,6 +349,7 @@ impl ::core::fmt::Debug for URL_COMPONENTS {
 }
 unsafe impl ::windows::core::Abi for URL_COMPONENTS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for URL_COMPONENTS {
     fn eq(&self, other: &Self) -> bool {
@@ -384,6 +387,7 @@ impl ::core::default::Default for WINHTTP_ACCESS_TYPE {
 }
 unsafe impl ::windows::core::Abi for WINHTTP_ACCESS_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WINHTTP_ACCESS_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -425,6 +429,7 @@ impl ::core::fmt::Debug for WINHTTP_ASYNC_RESULT {
 }
 unsafe impl ::windows::core::Abi for WINHTTP_ASYNC_RESULT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINHTTP_ASYNC_RESULT {
     fn eq(&self, other: &Self) -> bool {
@@ -501,6 +506,7 @@ impl ::core::fmt::Debug for WINHTTP_AUTOPROXY_OPTIONS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WINHTTP_AUTOPROXY_OPTIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WINHTTP_AUTOPROXY_OPTIONS {
@@ -650,6 +656,7 @@ impl ::core::fmt::Debug for WINHTTP_CERTIFICATE_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WINHTTP_CERTIFICATE_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WINHTTP_CERTIFICATE_INFO {
@@ -684,6 +691,7 @@ impl ::core::fmt::Debug for WINHTTP_CONNECTION_GROUP {
 }
 unsafe impl ::windows::core::Abi for WINHTTP_CONNECTION_GROUP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINHTTP_CONNECTION_GROUP {
     fn eq(&self, other: &Self) -> bool {
@@ -719,6 +727,7 @@ impl ::core::clone::Clone for WINHTTP_CONNECTION_INFO {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 unsafe impl ::windows::core::Abi for WINHTTP_CONNECTION_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
@@ -760,6 +769,7 @@ impl ::core::clone::Clone for WINHTTP_CONNECTION_INFO {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 unsafe impl ::windows::core::Abi for WINHTTP_CONNECTION_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
@@ -809,6 +819,7 @@ impl ::core::fmt::Debug for WINHTTP_CREDS {
 }
 unsafe impl ::windows::core::Abi for WINHTTP_CREDS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINHTTP_CREDS {
     fn eq(&self, other: &Self) -> bool {
@@ -844,6 +855,7 @@ impl ::core::default::Default for WINHTTP_CREDS_AUTHSCHEME {
 }
 unsafe impl ::windows::core::Abi for WINHTTP_CREDS_AUTHSCHEME {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WINHTTP_CREDS_AUTHSCHEME {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -874,6 +886,7 @@ impl ::core::fmt::Debug for WINHTTP_CREDS_EX {
 }
 unsafe impl ::windows::core::Abi for WINHTTP_CREDS_EX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINHTTP_CREDS_EX {
     fn eq(&self, other: &Self) -> bool {
@@ -912,6 +925,7 @@ impl ::core::fmt::Debug for WINHTTP_CURRENT_USER_IE_PROXY_CONFIG {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WINHTTP_CURRENT_USER_IE_PROXY_CONFIG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WINHTTP_CURRENT_USER_IE_PROXY_CONFIG {
@@ -973,6 +987,7 @@ impl ::core::clone::Clone for WINHTTP_EXTENDED_HEADER {
 }
 unsafe impl ::windows::core::Abi for WINHTTP_EXTENDED_HEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINHTTP_EXTENDED_HEADER {
     fn eq(&self, other: &Self) -> bool {
@@ -999,6 +1014,7 @@ impl ::core::clone::Clone for WINHTTP_EXTENDED_HEADER_0 {
 }
 unsafe impl ::windows::core::Abi for WINHTTP_EXTENDED_HEADER_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINHTTP_EXTENDED_HEADER_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -1025,6 +1041,7 @@ impl ::core::clone::Clone for WINHTTP_EXTENDED_HEADER_1 {
 }
 unsafe impl ::windows::core::Abi for WINHTTP_EXTENDED_HEADER_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINHTTP_EXTENDED_HEADER_1 {
     fn eq(&self, other: &Self) -> bool {
@@ -1058,6 +1075,7 @@ impl ::core::fmt::Debug for WINHTTP_FAILED_CONNECTION_RETRIES {
 }
 unsafe impl ::windows::core::Abi for WINHTTP_FAILED_CONNECTION_RETRIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINHTTP_FAILED_CONNECTION_RETRIES {
     fn eq(&self, other: &Self) -> bool {
@@ -1106,6 +1124,7 @@ impl ::core::clone::Clone for WINHTTP_HEADER_NAME {
 }
 unsafe impl ::windows::core::Abi for WINHTTP_HEADER_NAME {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINHTTP_HEADER_NAME {
     fn eq(&self, other: &Self) -> bool {
@@ -1138,6 +1157,7 @@ impl ::core::fmt::Debug for WINHTTP_HOST_CONNECTION_GROUP {
 }
 unsafe impl ::windows::core::Abi for WINHTTP_HOST_CONNECTION_GROUP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINHTTP_HOST_CONNECTION_GROUP {
     fn eq(&self, other: &Self) -> bool {
@@ -1169,6 +1189,7 @@ impl ::core::fmt::Debug for WINHTTP_HTTP2_RECEIVE_WINDOW {
 }
 unsafe impl ::windows::core::Abi for WINHTTP_HTTP2_RECEIVE_WINDOW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINHTTP_HTTP2_RECEIVE_WINDOW {
     fn eq(&self, other: &Self) -> bool {
@@ -1208,6 +1229,7 @@ impl ::core::default::Default for WINHTTP_INTERNET_SCHEME {
 }
 unsafe impl ::windows::core::Abi for WINHTTP_INTERNET_SCHEME {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WINHTTP_INTERNET_SCHEME {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1234,6 +1256,7 @@ impl ::core::clone::Clone for WINHTTP_MATCH_CONNECTION_GUID {
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 unsafe impl ::windows::core::Abi for WINHTTP_MATCH_CONNECTION_GUID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 impl ::core::cmp::PartialEq for WINHTTP_MATCH_CONNECTION_GUID {
@@ -1267,6 +1290,7 @@ impl ::core::clone::Clone for WINHTTP_MATCH_CONNECTION_GUID {
 #[cfg(target_arch = "x86")]
 unsafe impl ::windows::core::Abi for WINHTTP_MATCH_CONNECTION_GUID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 impl ::core::cmp::PartialEq for WINHTTP_MATCH_CONNECTION_GUID {
@@ -1317,6 +1341,7 @@ impl ::core::default::Default for WINHTTP_OPEN_REQUEST_FLAGS {
 }
 unsafe impl ::windows::core::Abi for WINHTTP_OPEN_REQUEST_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WINHTTP_OPEN_REQUEST_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1623,6 +1648,7 @@ impl ::core::fmt::Debug for WINHTTP_PROXY_INFO {
 }
 unsafe impl ::windows::core::Abi for WINHTTP_PROXY_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINHTTP_PROXY_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -1659,6 +1685,7 @@ impl ::core::fmt::Debug for WINHTTP_PROXY_RESULT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WINHTTP_PROXY_RESULT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WINHTTP_PROXY_RESULT {
@@ -1701,6 +1728,7 @@ impl ::core::fmt::Debug for WINHTTP_PROXY_RESULT_ENTRY {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WINHTTP_PROXY_RESULT_ENTRY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WINHTTP_PROXY_RESULT_ENTRY {
@@ -1742,6 +1770,7 @@ impl ::core::fmt::Debug for WINHTTP_PROXY_RESULT_EX {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WINHTTP_PROXY_RESULT_EX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WINHTTP_PROXY_RESULT_EX {
@@ -1812,6 +1841,7 @@ impl ::core::fmt::Debug for WINHTTP_PROXY_SETTINGS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WINHTTP_PROXY_SETTINGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WINHTTP_PROXY_SETTINGS {
@@ -1876,6 +1906,7 @@ impl ::core::fmt::Debug for WINHTTP_QUERY_CONNECTION_GROUP_RESULT {
 }
 unsafe impl ::windows::core::Abi for WINHTTP_QUERY_CONNECTION_GROUP_RESULT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINHTTP_QUERY_CONNECTION_GROUP_RESULT {
     fn eq(&self, other: &Self) -> bool {
@@ -2054,6 +2085,7 @@ impl ::core::clone::Clone for WINHTTP_REQUEST_STATS {
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 unsafe impl ::windows::core::Abi for WINHTTP_REQUEST_STATS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 impl ::core::cmp::PartialEq for WINHTTP_REQUEST_STATS {
@@ -2089,6 +2121,7 @@ impl ::core::clone::Clone for WINHTTP_REQUEST_STATS {
 #[cfg(target_arch = "x86")]
 unsafe impl ::windows::core::Abi for WINHTTP_REQUEST_STATS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 impl ::core::cmp::PartialEq for WINHTTP_REQUEST_STATS {
@@ -2157,6 +2190,7 @@ impl ::core::default::Default for WINHTTP_REQUEST_STAT_ENTRY {
 }
 unsafe impl ::windows::core::Abi for WINHTTP_REQUEST_STAT_ENTRY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WINHTTP_REQUEST_STAT_ENTRY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2193,6 +2227,7 @@ impl ::core::clone::Clone for WINHTTP_REQUEST_TIMES {
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 unsafe impl ::windows::core::Abi for WINHTTP_REQUEST_TIMES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 impl ::core::cmp::PartialEq for WINHTTP_REQUEST_TIMES {
@@ -2226,6 +2261,7 @@ impl ::core::clone::Clone for WINHTTP_REQUEST_TIMES {
 #[cfg(target_arch = "x86")]
 unsafe impl ::windows::core::Abi for WINHTTP_REQUEST_TIMES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 impl ::core::cmp::PartialEq for WINHTTP_REQUEST_TIMES {
@@ -2334,6 +2370,7 @@ impl ::core::default::Default for WINHTTP_REQUEST_TIME_ENTRY {
 }
 unsafe impl ::windows::core::Abi for WINHTTP_REQUEST_TIME_ENTRY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WINHTTP_REQUEST_TIME_ENTRY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2378,6 +2415,7 @@ impl ::core::clone::Clone for WINHTTP_RESOLVER_CACHE_CONFIG {
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 unsafe impl ::windows::core::Abi for WINHTTP_RESOLVER_CACHE_CONFIG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 impl ::core::cmp::PartialEq for WINHTTP_RESOLVER_CACHE_CONFIG {
@@ -2415,6 +2453,7 @@ impl ::core::clone::Clone for WINHTTP_RESOLVER_CACHE_CONFIG {
 #[cfg(target_arch = "x86")]
 unsafe impl ::windows::core::Abi for WINHTTP_RESOLVER_CACHE_CONFIG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 impl ::core::cmp::PartialEq for WINHTTP_RESOLVER_CACHE_CONFIG {
@@ -2465,6 +2504,7 @@ impl ::core::default::Default for WINHTTP_SECURE_DNS_SETTING {
 }
 unsafe impl ::windows::core::Abi for WINHTTP_SECURE_DNS_SETTING {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WINHTTP_SECURE_DNS_SETTING {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2494,6 +2534,7 @@ impl ::core::fmt::Debug for WINHTTP_WEB_SOCKET_ASYNC_RESULT {
 }
 unsafe impl ::windows::core::Abi for WINHTTP_WEB_SOCKET_ASYNC_RESULT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINHTTP_WEB_SOCKET_ASYNC_RESULT {
     fn eq(&self, other: &Self) -> bool {
@@ -2533,6 +2574,7 @@ impl ::core::default::Default for WINHTTP_WEB_SOCKET_BUFFER_TYPE {
 }
 unsafe impl ::windows::core::Abi for WINHTTP_WEB_SOCKET_BUFFER_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WINHTTP_WEB_SOCKET_BUFFER_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2580,6 +2622,7 @@ impl ::core::default::Default for WINHTTP_WEB_SOCKET_CLOSE_STATUS {
 }
 unsafe impl ::windows::core::Abi for WINHTTP_WEB_SOCKET_CLOSE_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WINHTTP_WEB_SOCKET_CLOSE_STATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2615,6 +2658,7 @@ impl ::core::default::Default for WINHTTP_WEB_SOCKET_OPERATION {
 }
 unsafe impl ::windows::core::Abi for WINHTTP_WEB_SOCKET_OPERATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WINHTTP_WEB_SOCKET_OPERATION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2640,6 +2684,7 @@ impl ::core::fmt::Debug for WINHTTP_WEB_SOCKET_STATUS {
 }
 unsafe impl ::windows::core::Abi for WINHTTP_WEB_SOCKET_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINHTTP_WEB_SOCKET_STATUS {
     fn eq(&self, other: &Self) -> bool {
@@ -2675,6 +2720,7 @@ impl ::core::default::Default for WIN_HTTP_CREATE_URL_FLAGS {
 }
 unsafe impl ::windows::core::Abi for WIN_HTTP_CREATE_URL_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WIN_HTTP_CREATE_URL_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3446,6 +3492,7 @@ impl ::core::fmt::Debug for _WinHttpProxyNetworkKey {
 }
 unsafe impl ::windows::core::Abi for _WinHttpProxyNetworkKey {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for _WinHttpProxyNetworkKey {
     fn eq(&self, other: &Self) -> bool {

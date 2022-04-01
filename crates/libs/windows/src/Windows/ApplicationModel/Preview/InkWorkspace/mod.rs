@@ -2,6 +2,11 @@
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IInkWorkspaceHostedAppManager(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInkWorkspaceHostedAppManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IInkWorkspaceHostedAppManager {
     type Vtable = IInkWorkspaceHostedAppManager_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xfe0a7990_5e59_4bb7_8a63_7d218cd96300);
@@ -18,6 +23,11 @@ pub struct IInkWorkspaceHostedAppManager_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IInkWorkspaceHostedAppManagerStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInkWorkspaceHostedAppManagerStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IInkWorkspaceHostedAppManagerStatics {
     type Vtable = IInkWorkspaceHostedAppManagerStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xcbfd8cc5_a162_4bc4_84ee_e8716d5233c5);
@@ -54,11 +64,6 @@ impl InkWorkspaceHostedAppManager {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for InkWorkspaceHostedAppManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for InkWorkspaceHostedAppManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -72,7 +77,6 @@ impl ::core::fmt::Debug for InkWorkspaceHostedAppManager {
 }
 unsafe impl ::windows::core::RuntimeType for InkWorkspaceHostedAppManager {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Preview.InkWorkspace.InkWorkspaceHostedAppManager;{fe0a7990-5e59-4bb7-8a63-7d218cd96300})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

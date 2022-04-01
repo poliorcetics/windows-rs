@@ -23,6 +23,7 @@ impl ::core::fmt::Debug for DEVPROP_FILTER_EXPRESSION {
 #[cfg(feature = "Win32_Devices_Properties")]
 unsafe impl ::windows::core::Abi for DEVPROP_FILTER_EXPRESSION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Devices_Properties")]
 impl ::core::cmp::PartialEq for DEVPROP_FILTER_EXPRESSION {
@@ -139,6 +140,7 @@ impl ::core::default::Default for DEVPROP_OPERATOR {
 }
 unsafe impl ::windows::core::Abi for DEVPROP_OPERATOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DEVPROP_OPERATOR {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -199,6 +201,7 @@ impl ::core::fmt::Debug for DEV_OBJECT {
 #[cfg(feature = "Win32_Devices_Properties")]
 unsafe impl ::windows::core::Abi for DEV_OBJECT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Devices_Properties")]
 impl ::core::cmp::PartialEq for DEV_OBJECT {
@@ -255,6 +258,7 @@ impl ::core::default::Default for DEV_OBJECT_TYPE {
 }
 unsafe impl ::windows::core::Abi for DEV_OBJECT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DEV_OBJECT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -288,6 +292,7 @@ impl ::core::default::Default for DEV_QUERY_FLAGS {
 }
 unsafe impl ::windows::core::Abi for DEV_QUERY_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DEV_QUERY_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -320,6 +325,7 @@ impl ::core::fmt::Debug for DEV_QUERY_PARAMETER {
 #[cfg(feature = "Win32_Devices_Properties")]
 unsafe impl ::windows::core::Abi for DEV_QUERY_PARAMETER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Devices_Properties")]
 impl ::core::cmp::PartialEq for DEV_QUERY_PARAMETER {
@@ -360,6 +366,7 @@ impl ::core::default::Default for DEV_QUERY_RESULT_ACTION {
 }
 unsafe impl ::windows::core::Abi for DEV_QUERY_RESULT_ACTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DEV_QUERY_RESULT_ACTION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -384,6 +391,7 @@ impl ::core::clone::Clone for DEV_QUERY_RESULT_ACTION_DATA {
 #[cfg(feature = "Win32_Devices_Properties")]
 unsafe impl ::windows::core::Abi for DEV_QUERY_RESULT_ACTION_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Devices_Properties")]
 impl ::core::cmp::PartialEq for DEV_QUERY_RESULT_ACTION_DATA {
@@ -417,6 +425,7 @@ impl ::core::clone::Clone for DEV_QUERY_RESULT_ACTION_DATA_0 {
 #[cfg(feature = "Win32_Devices_Properties")]
 unsafe impl ::windows::core::Abi for DEV_QUERY_RESULT_ACTION_DATA_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Devices_Properties")]
 impl ::core::cmp::PartialEq for DEV_QUERY_RESULT_ACTION_DATA_0 {
@@ -457,6 +466,7 @@ impl ::core::default::Default for DEV_QUERY_STATE {
 }
 unsafe impl ::windows::core::Abi for DEV_QUERY_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DEV_QUERY_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -737,6 +747,7 @@ impl ::core::fmt::Debug for HDEVQUERY__ {
 }
 unsafe impl ::windows::core::Abi for HDEVQUERY__ {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HDEVQUERY__ {
     fn eq(&self, other: &Self) -> bool {

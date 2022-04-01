@@ -32,6 +32,7 @@ impl ::core::default::Default for EC_SUBSCRIPTION_CONFIGURATION_MODE {
 }
 unsafe impl ::windows::core::Abi for EC_SUBSCRIPTION_CONFIGURATION_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EC_SUBSCRIPTION_CONFIGURATION_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -59,6 +60,7 @@ impl ::core::default::Default for EC_SUBSCRIPTION_CONTENT_FORMAT {
 }
 unsafe impl ::windows::core::Abi for EC_SUBSCRIPTION_CONTENT_FORMAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EC_SUBSCRIPTION_CONTENT_FORMAT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -92,6 +94,7 @@ impl ::core::default::Default for EC_SUBSCRIPTION_CREDENTIALS_TYPE {
 }
 unsafe impl ::windows::core::Abi for EC_SUBSCRIPTION_CREDENTIALS_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EC_SUBSCRIPTION_CREDENTIALS_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -119,6 +122,7 @@ impl ::core::default::Default for EC_SUBSCRIPTION_DELIVERY_MODE {
 }
 unsafe impl ::windows::core::Abi for EC_SUBSCRIPTION_DELIVERY_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EC_SUBSCRIPTION_DELIVERY_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -208,6 +212,7 @@ impl ::core::default::Default for EC_SUBSCRIPTION_PROPERTY_ID {
 }
 unsafe impl ::windows::core::Abi for EC_SUBSCRIPTION_PROPERTY_ID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EC_SUBSCRIPTION_PROPERTY_ID {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -239,6 +244,7 @@ impl ::core::default::Default for EC_SUBSCRIPTION_RUNTIME_STATUS_ACTIVE_STATUS {
 }
 unsafe impl ::windows::core::Abi for EC_SUBSCRIPTION_RUNTIME_STATUS_ACTIVE_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EC_SUBSCRIPTION_RUNTIME_STATUS_ACTIVE_STATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -278,6 +284,7 @@ impl ::core::default::Default for EC_SUBSCRIPTION_RUNTIME_STATUS_INFO_ID {
 }
 unsafe impl ::windows::core::Abi for EC_SUBSCRIPTION_RUNTIME_STATUS_INFO_ID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EC_SUBSCRIPTION_RUNTIME_STATUS_INFO_ID {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -305,6 +312,7 @@ impl ::core::default::Default for EC_SUBSCRIPTION_TYPE {
 }
 unsafe impl ::windows::core::Abi for EC_SUBSCRIPTION_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EC_SUBSCRIPTION_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -330,6 +338,7 @@ impl ::core::clone::Clone for EC_VARIANT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for EC_VARIANT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for EC_VARIANT {
@@ -370,6 +379,7 @@ impl ::core::clone::Clone for EC_VARIANT_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for EC_VARIANT_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for EC_VARIANT_0 {
@@ -414,6 +424,7 @@ impl ::core::default::Default for EC_VARIANT_TYPE {
 }
 unsafe impl ::windows::core::Abi for EC_VARIANT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EC_VARIANT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

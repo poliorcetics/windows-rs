@@ -62,11 +62,6 @@ impl Battery {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for Battery {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for Battery {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -80,7 +75,6 @@ impl ::core::fmt::Debug for Battery {
 }
 unsafe impl ::windows::core::RuntimeType for Battery {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Power.Battery;{bc894fc6-0072-47c8-8b5d-614aaa7a437e})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -184,11 +178,6 @@ impl BatteryReport {
         }
     }
 }
-impl ::core::clone::Clone for BatteryReport {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for BatteryReport {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -202,7 +191,6 @@ impl ::core::fmt::Debug for BatteryReport {
 }
 unsafe impl ::windows::core::RuntimeType for BatteryReport {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Power.BatteryReport;{c9858c3a-4e13-420a-a8d0-24f18f395401})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -259,6 +247,11 @@ unsafe impl ::core::marker::Sync for BatteryReport {}
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBattery(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBattery {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBattery {
     type Vtable = IBattery_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xbc894fc6_0072_47c8_8b5d_614aaa7a437e);
@@ -281,6 +274,11 @@ pub struct IBattery_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBatteryReport(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBatteryReport {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBatteryReport {
     type Vtable = IBatteryReport_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc9858c3a_4e13_420a_a8d0_24f18f395401);
@@ -313,6 +311,11 @@ pub struct IBatteryReport_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBatteryStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBatteryStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBatteryStatics {
     type Vtable = IBatteryStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x79cd72b6_9e5e_4452_bea6_dfcd541e597f);

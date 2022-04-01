@@ -6,6 +6,11 @@ pub mod Provider;
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWebAuthenticationBrokerStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWebAuthenticationBrokerStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWebAuthenticationBrokerStatics {
     type Vtable = IWebAuthenticationBrokerStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x2f149f1a_e673_40b5_bc22_201a6864a37b);
@@ -30,6 +35,11 @@ pub struct IWebAuthenticationBrokerStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWebAuthenticationBrokerStatics2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWebAuthenticationBrokerStatics2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWebAuthenticationBrokerStatics2 {
     type Vtable = IWebAuthenticationBrokerStatics2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x73cdfb9e_14e7_41da_a971_aaf4410b621e);
@@ -62,6 +72,11 @@ pub struct IWebAuthenticationBrokerStatics2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWebAuthenticationResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWebAuthenticationResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWebAuthenticationResult {
     type Vtable = IWebAuthenticationResult_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x64002b4b_ede9_470a_a5cd_0323faf6e262);
@@ -96,6 +111,7 @@ impl ::core::default::Default for TokenBindingKeyType {
 }
 unsafe impl ::windows::core::Abi for TokenBindingKeyType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TokenBindingKeyType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -104,7 +120,6 @@ impl ::core::fmt::Debug for TokenBindingKeyType {
 }
 unsafe impl ::windows::core::RuntimeType for TokenBindingKeyType {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Security.Authentication.Web.TokenBindingKeyType;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -205,6 +220,7 @@ impl ::core::default::Default for WebAuthenticationOptions {
 }
 unsafe impl ::windows::core::Abi for WebAuthenticationOptions {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WebAuthenticationOptions {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -241,7 +257,6 @@ impl ::core::ops::Not for WebAuthenticationOptions {
 }
 unsafe impl ::windows::core::RuntimeType for WebAuthenticationOptions {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Security.Authentication.Web.WebAuthenticationOptions;u4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -275,11 +290,6 @@ impl WebAuthenticationResult {
         }
     }
 }
-impl ::core::clone::Clone for WebAuthenticationResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for WebAuthenticationResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -293,7 +303,6 @@ impl ::core::fmt::Debug for WebAuthenticationResult {
 }
 unsafe impl ::windows::core::RuntimeType for WebAuthenticationResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Security.Authentication.Web.WebAuthenticationResult;{64002b4b-ede9-470a-a5cd-0323faf6e262})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -367,6 +376,7 @@ impl ::core::default::Default for WebAuthenticationStatus {
 }
 unsafe impl ::windows::core::Abi for WebAuthenticationStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WebAuthenticationStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -375,7 +385,6 @@ impl ::core::fmt::Debug for WebAuthenticationStatus {
 }
 unsafe impl ::windows::core::RuntimeType for WebAuthenticationStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Security.Authentication.Web.WebAuthenticationStatus;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }

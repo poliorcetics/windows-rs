@@ -4,6 +4,12 @@
 #[repr(transparent)]
 pub struct ISocialDashboardItemUpdater(::windows::core::IUnknown);
 #[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for ISocialDashboardItemUpdater {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for ISocialDashboardItemUpdater {
     type Vtable = ISocialDashboardItemUpdater_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x3cde9dc9_4800_46cd_869b_1973ec685bde);
@@ -55,6 +61,12 @@ pub struct ISocialDashboardItemUpdater_Vtbl {
 #[repr(transparent)]
 pub struct ISocialFeedUpdater(::windows::core::IUnknown);
 #[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for ISocialFeedUpdater {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for ISocialFeedUpdater {
     type Vtable = ISocialFeedUpdater_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x7a0c0aa7_ed89_4bd5_a8d9_15f4d9861c10);
@@ -85,6 +97,12 @@ pub struct ISocialFeedUpdater_Vtbl {
 #[cfg(feature = "deprecated")]
 #[repr(transparent)]
 pub struct ISocialInfoProviderManagerStatics(::windows::core::IUnknown);
+#[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for ISocialInfoProviderManagerStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for ISocialInfoProviderManagerStatics {
     type Vtable = ISocialInfoProviderManagerStatics_Vtbl;
@@ -200,12 +218,6 @@ impl SocialDashboardItemUpdater {
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for SocialDashboardItemUpdater {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for SocialDashboardItemUpdater {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -222,7 +234,6 @@ impl ::core::fmt::Debug for SocialDashboardItemUpdater {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for SocialDashboardItemUpdater {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.SocialInfo.Provider.SocialDashboardItemUpdater;{3cde9dc9-4800-46cd-869b-1973ec685bde})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -332,12 +343,6 @@ impl SocialFeedUpdater {
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for SocialFeedUpdater {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for SocialFeedUpdater {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -354,7 +359,6 @@ impl ::core::fmt::Debug for SocialFeedUpdater {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for SocialFeedUpdater {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.SocialInfo.Provider.SocialFeedUpdater;{7a0c0aa7-ed89-4bd5-a8d9-15f4d9861c10})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

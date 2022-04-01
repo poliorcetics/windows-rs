@@ -22,6 +22,7 @@ impl ::core::default::Default for HdmiDisplayColorSpace {
 }
 unsafe impl ::windows::core::Abi for HdmiDisplayColorSpace {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HdmiDisplayColorSpace {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -30,7 +31,6 @@ impl ::core::fmt::Debug for HdmiDisplayColorSpace {
 }
 unsafe impl ::windows::core::RuntimeType for HdmiDisplayColorSpace {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Graphics.Display.Core.HdmiDisplayColorSpace;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -77,10 +77,10 @@ impl ::core::fmt::Debug for HdmiDisplayHdr2086Metadata {
 }
 unsafe impl ::windows::core::Abi for HdmiDisplayHdr2086Metadata {
     type Abi = Self;
+    type DefaultType = Self;
 }
 unsafe impl ::windows::core::RuntimeType for HdmiDisplayHdr2086Metadata {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"struct(Windows.Graphics.Display.Core.HdmiDisplayHdr2086Metadata;u2;u2;u2;u2;u2;u2;u2;u2;u2;u2;u2;u2)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -119,6 +119,7 @@ impl ::core::default::Default for HdmiDisplayHdrOption {
 }
 unsafe impl ::windows::core::Abi for HdmiDisplayHdrOption {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HdmiDisplayHdrOption {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -127,7 +128,6 @@ impl ::core::fmt::Debug for HdmiDisplayHdrOption {
 }
 unsafe impl ::windows::core::RuntimeType for HdmiDisplayHdrOption {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Graphics.Display.Core.HdmiDisplayHdrOption;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -217,11 +217,6 @@ impl HdmiDisplayInformation {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for HdmiDisplayInformation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for HdmiDisplayInformation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -235,7 +230,6 @@ impl ::core::fmt::Debug for HdmiDisplayInformation {
 }
 unsafe impl ::windows::core::RuntimeType for HdmiDisplayInformation {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Display.Core.HdmiDisplayInformation;{130b3c0a-f565-476e-abd5-ea05aee74c69})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -390,11 +384,6 @@ impl HdmiDisplayMode {
         }
     }
 }
-impl ::core::clone::Clone for HdmiDisplayMode {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for HdmiDisplayMode {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -408,7 +397,6 @@ impl ::core::fmt::Debug for HdmiDisplayMode {
 }
 unsafe impl ::windows::core::RuntimeType for HdmiDisplayMode {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Display.Core.HdmiDisplayMode;{0c06d5ad-1b90-4f51-9981-ef5a1c0ddf66})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -485,6 +473,7 @@ impl ::core::default::Default for HdmiDisplayPixelEncoding {
 }
 unsafe impl ::windows::core::Abi for HdmiDisplayPixelEncoding {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HdmiDisplayPixelEncoding {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -493,7 +482,6 @@ impl ::core::fmt::Debug for HdmiDisplayPixelEncoding {
 }
 unsafe impl ::windows::core::RuntimeType for HdmiDisplayPixelEncoding {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Graphics.Display.Core.HdmiDisplayPixelEncoding;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -501,6 +489,11 @@ unsafe impl ::windows::core::RuntimeType for HdmiDisplayPixelEncoding {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHdmiDisplayInformation(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHdmiDisplayInformation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHdmiDisplayInformation {
     type Vtable = IHdmiDisplayInformation_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x130b3c0a_f565_476e_abd5_ea05aee74c69);
@@ -542,6 +535,11 @@ pub struct IHdmiDisplayInformation_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHdmiDisplayInformationStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHdmiDisplayInformationStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHdmiDisplayInformationStatics {
     type Vtable = IHdmiDisplayInformationStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x6ce6b260_f42a_4a15_914c_7b8e2a5a65df);
@@ -555,6 +553,11 @@ pub struct IHdmiDisplayInformationStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHdmiDisplayMode(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHdmiDisplayMode {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHdmiDisplayMode {
     type Vtable = IHdmiDisplayMode_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x0c06d5ad_1b90_4f51_9981_ef5a1c0ddf66);
@@ -578,6 +581,11 @@ pub struct IHdmiDisplayMode_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHdmiDisplayMode2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHdmiDisplayMode2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHdmiDisplayMode2 {
     type Vtable = IHdmiDisplayMode2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x07cd4e9f_4b3c_42b8_84e7_895368718af2);

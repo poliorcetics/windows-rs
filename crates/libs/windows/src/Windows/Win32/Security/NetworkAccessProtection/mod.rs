@@ -27,6 +27,7 @@ impl ::core::fmt::Debug for CorrelationId {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for CorrelationId {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for CorrelationId {
@@ -61,6 +62,7 @@ impl ::core::fmt::Debug for CountedString {
 }
 unsafe impl ::windows::core::Abi for CountedString {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CountedString {
     fn eq(&self, other: &Self) -> bool {
@@ -98,6 +100,7 @@ impl ::core::default::Default for ExtendedIsolationState {
 }
 unsafe impl ::windows::core::Abi for ExtendedIsolationState {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ExtendedIsolationState {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -133,6 +136,7 @@ impl ::core::default::Default for FailureCategory {
 }
 unsafe impl ::windows::core::Abi for FailureCategory {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FailureCategory {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -162,6 +166,7 @@ impl ::core::fmt::Debug for FailureCategoryMapping {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for FailureCategoryMapping {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for FailureCategoryMapping {
@@ -198,6 +203,7 @@ impl ::core::fmt::Debug for FixupInfo {
 }
 unsafe impl ::windows::core::Abi for FixupInfo {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for FixupInfo {
     fn eq(&self, other: &Self) -> bool {
@@ -233,6 +239,7 @@ impl ::core::default::Default for FixupState {
 }
 unsafe impl ::windows::core::Abi for FixupState {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FixupState {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -257,6 +264,7 @@ impl ::core::fmt::Debug for Ipv4Address {
 }
 unsafe impl ::windows::core::Abi for Ipv4Address {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for Ipv4Address {
     fn eq(&self, other: &Self) -> bool {
@@ -287,6 +295,7 @@ impl ::core::fmt::Debug for Ipv6Address {
 }
 unsafe impl ::windows::core::Abi for Ipv6Address {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for Ipv6Address {
     fn eq(&self, other: &Self) -> bool {
@@ -324,6 +333,7 @@ impl ::core::fmt::Debug for IsolationInfo {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for IsolationInfo {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for IsolationInfo {
@@ -365,6 +375,7 @@ impl ::core::fmt::Debug for IsolationInfoEx {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for IsolationInfoEx {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for IsolationInfoEx {
@@ -403,6 +414,7 @@ impl ::core::default::Default for IsolationState {
 }
 unsafe impl ::windows::core::Abi for IsolationState {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for IsolationState {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -440,6 +452,7 @@ impl ::core::fmt::Debug for NapComponentRegistrationInfo {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NapComponentRegistrationInfo {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NapComponentRegistrationInfo {
@@ -478,6 +491,7 @@ impl ::core::default::Default for NapNotifyType {
 }
 unsafe impl ::windows::core::Abi for NapNotifyType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NapNotifyType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -509,6 +523,7 @@ impl ::core::default::Default for NapTracingLevel {
 }
 unsafe impl ::windows::core::Abi for NapTracingLevel {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NapTracingLevel {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -534,6 +549,7 @@ impl ::core::fmt::Debug for NetworkSoH {
 }
 unsafe impl ::windows::core::Abi for NetworkSoH {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NetworkSoH {
     fn eq(&self, other: &Self) -> bool {
@@ -565,6 +581,7 @@ impl ::core::fmt::Debug for PrivateData {
 }
 unsafe impl ::windows::core::Abi for PrivateData {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PrivateData {
     fn eq(&self, other: &Self) -> bool {
@@ -598,6 +615,7 @@ impl ::core::default::Default for RemoteConfigurationType {
 }
 unsafe impl ::windows::core::Abi for RemoteConfigurationType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RemoteConfigurationType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -623,6 +641,7 @@ impl ::core::fmt::Debug for ResultCodes {
 }
 unsafe impl ::windows::core::Abi for ResultCodes {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ResultCodes {
     fn eq(&self, other: &Self) -> bool {
@@ -654,6 +673,7 @@ impl ::core::fmt::Debug for SoH {
 }
 unsafe impl ::windows::core::Abi for SoH {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SoH {
     fn eq(&self, other: &Self) -> bool {
@@ -686,6 +706,7 @@ impl ::core::fmt::Debug for SoHAttribute {
 }
 unsafe impl ::windows::core::Abi for SoHAttribute {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SoHAttribute {
     fn eq(&self, other: &Self) -> bool {
@@ -719,6 +740,7 @@ impl ::core::fmt::Debug for SystemHealthAgentState {
 }
 unsafe impl ::windows::core::Abi for SystemHealthAgentState {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SystemHealthAgentState {
     fn eq(&self, other: &Self) -> bool {

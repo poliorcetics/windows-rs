@@ -2,6 +2,11 @@
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMidiChannelPressureMessage(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMidiChannelPressureMessage {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMidiChannelPressureMessage {
     type Vtable = IMidiChannelPressureMessage_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xbe1fa860_62b4_4d52_a37e_92e54d35b909);
@@ -16,6 +21,11 @@ pub struct IMidiChannelPressureMessage_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMidiChannelPressureMessageFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMidiChannelPressureMessageFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMidiChannelPressureMessageFactory {
     type Vtable = IMidiChannelPressureMessageFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x6218ed2f_2284_412a_94cf_10fb04842c6c);
@@ -29,6 +39,11 @@ pub struct IMidiChannelPressureMessageFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMidiControlChangeMessage(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMidiControlChangeMessage {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMidiControlChangeMessage {
     type Vtable = IMidiControlChangeMessage_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb7e15f83_780d_405f_b781_3e1598c97f40);
@@ -44,6 +59,11 @@ pub struct IMidiControlChangeMessage_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMidiControlChangeMessageFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMidiControlChangeMessageFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMidiControlChangeMessageFactory {
     type Vtable = IMidiControlChangeMessageFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x2ab14321_956c_46ad_9752_f87f55052fe3);
@@ -57,6 +77,11 @@ pub struct IMidiControlChangeMessageFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMidiInPort(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMidiInPort {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMidiInPort {
     type Vtable = IMidiInPort_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd5c1d9db_971a_4eaf_a23d_ea19fe607ff9);
@@ -78,6 +103,11 @@ pub struct IMidiInPort_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMidiInPortStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMidiInPortStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMidiInPortStatics {
     type Vtable = IMidiInPortStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x44c439dc_67ff_4a6e_8bac_fdb6610cf296);
@@ -95,6 +125,11 @@ pub struct IMidiInPortStatics_Vtbl {
 #[doc = "*Required features: `\"Devices_Midi\"`*"]
 #[repr(transparent)]
 pub struct IMidiMessage(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMidiMessage {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMidiMessage {
     #[doc = "*Required features: `\"Devices_Midi\"`, `\"Foundation\"`*"]
     #[cfg(feature = "Foundation")]
@@ -163,11 +198,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMidiMessage {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMidiMessage {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -181,7 +211,6 @@ impl ::core::fmt::Debug for IMidiMessage {
 }
 unsafe impl ::windows::core::RuntimeType for IMidiMessage {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{79767945-1094-4283-9be0-289fc0ee8334}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -207,6 +236,11 @@ pub struct IMidiMessage_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMidiMessageReceivedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMidiMessageReceivedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMidiMessageReceivedEventArgs {
     type Vtable = IMidiMessageReceivedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x76566e56_f328_4b51_907d_b3a8ce96bf80);
@@ -220,6 +254,11 @@ pub struct IMidiMessageReceivedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMidiNoteOffMessage(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMidiNoteOffMessage {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMidiNoteOffMessage {
     type Vtable = IMidiNoteOffMessage_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x16fd8af4_198e_4d8f_a654_d305a293548f);
@@ -235,6 +274,11 @@ pub struct IMidiNoteOffMessage_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMidiNoteOffMessageFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMidiNoteOffMessageFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMidiNoteOffMessageFactory {
     type Vtable = IMidiNoteOffMessageFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa6b240e0_a749_425f_8af4_a4d979cc15b5);
@@ -248,6 +292,11 @@ pub struct IMidiNoteOffMessageFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMidiNoteOnMessage(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMidiNoteOnMessage {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMidiNoteOnMessage {
     type Vtable = IMidiNoteOnMessage_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe0224af5_6181_46dd_afa2_410004c057aa);
@@ -263,6 +312,11 @@ pub struct IMidiNoteOnMessage_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMidiNoteOnMessageFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMidiNoteOnMessageFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMidiNoteOnMessageFactory {
     type Vtable = IMidiNoteOnMessageFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9b4280a0_59c1_420e_b517_15a10aa9606b);
@@ -276,6 +330,11 @@ pub struct IMidiNoteOnMessageFactory_Vtbl {
 #[doc = "*Required features: `\"Devices_Midi\"`*"]
 #[repr(transparent)]
 pub struct IMidiOutPort(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMidiOutPort {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMidiOutPort {
     #[doc = "*Required features: `\"Devices_Midi\"`*"]
     pub fn SendMessage<'a, Param0: ::windows::core::IntoParam<'a, IMidiMessage>>(&self, midimessage: Param0) -> ::windows::core::Result<()> {
@@ -369,11 +428,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::Foundation::IClosable> for
         ::core::convert::TryInto::<super::super::Foundation::IClosable>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IMidiOutPort {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMidiOutPort {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -387,7 +441,6 @@ impl ::core::fmt::Debug for IMidiOutPort {
 }
 unsafe impl ::windows::core::RuntimeType for IMidiOutPort {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{931d6d9f-57a2-4a3a-adb8-4640886f6693}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -410,6 +463,11 @@ pub struct IMidiOutPort_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMidiOutPortStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMidiOutPortStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMidiOutPortStatics {
     type Vtable = IMidiOutPortStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x065cc3e9_0f88_448b_9b64_a95826c65b8f);
@@ -427,6 +485,11 @@ pub struct IMidiOutPortStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMidiPitchBendChangeMessage(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMidiPitchBendChangeMessage {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMidiPitchBendChangeMessage {
     type Vtable = IMidiPitchBendChangeMessage_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x29df4cb1_2e9f_4faf_8c2b_9cb82a9079ca);
@@ -441,6 +504,11 @@ pub struct IMidiPitchBendChangeMessage_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMidiPitchBendChangeMessageFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMidiPitchBendChangeMessageFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMidiPitchBendChangeMessageFactory {
     type Vtable = IMidiPitchBendChangeMessageFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf5eedf55_cfc8_4926_b30e_a3622393306c);
@@ -454,6 +522,11 @@ pub struct IMidiPitchBendChangeMessageFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMidiPolyphonicKeyPressureMessage(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMidiPolyphonicKeyPressureMessage {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMidiPolyphonicKeyPressureMessage {
     type Vtable = IMidiPolyphonicKeyPressureMessage_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1f7337fe_ace8_48a0_868e_7cdbf20f04d6);
@@ -469,6 +542,11 @@ pub struct IMidiPolyphonicKeyPressureMessage_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMidiPolyphonicKeyPressureMessageFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMidiPolyphonicKeyPressureMessageFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMidiPolyphonicKeyPressureMessageFactory {
     type Vtable = IMidiPolyphonicKeyPressureMessageFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe98f483e_c4b3_4dd2_917c_e349815a1b3b);
@@ -482,6 +560,11 @@ pub struct IMidiPolyphonicKeyPressureMessageFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMidiProgramChangeMessage(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMidiProgramChangeMessage {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMidiProgramChangeMessage {
     type Vtable = IMidiProgramChangeMessage_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9cbb3c78_7a3e_4327_aa98_20b8e4485af8);
@@ -496,6 +579,11 @@ pub struct IMidiProgramChangeMessage_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMidiProgramChangeMessageFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMidiProgramChangeMessageFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMidiProgramChangeMessageFactory {
     type Vtable = IMidiProgramChangeMessageFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd6b04387_524b_4104_9c99_6572bfd2e261);
@@ -509,6 +597,11 @@ pub struct IMidiProgramChangeMessageFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMidiSongPositionPointerMessage(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMidiSongPositionPointerMessage {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMidiSongPositionPointerMessage {
     type Vtable = IMidiSongPositionPointerMessage_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x4ca50c56_ec5e_4ae4_a115_88dc57cc2b79);
@@ -522,6 +615,11 @@ pub struct IMidiSongPositionPointerMessage_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMidiSongPositionPointerMessageFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMidiSongPositionPointerMessageFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMidiSongPositionPointerMessageFactory {
     type Vtable = IMidiSongPositionPointerMessageFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9c00e996_f10b_4fea_b395_f5d6cf80f64e);
@@ -535,6 +633,11 @@ pub struct IMidiSongPositionPointerMessageFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMidiSongSelectMessage(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMidiSongSelectMessage {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMidiSongSelectMessage {
     type Vtable = IMidiSongSelectMessage_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x49f0f27f_6d83_4741_a5bf_4629f6be974f);
@@ -548,6 +651,11 @@ pub struct IMidiSongSelectMessage_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMidiSongSelectMessageFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMidiSongSelectMessageFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMidiSongSelectMessageFactory {
     type Vtable = IMidiSongSelectMessageFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x848878e4_8748_4129_a66c_a05493f75daa);
@@ -561,6 +669,11 @@ pub struct IMidiSongSelectMessageFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMidiSynthesizer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMidiSynthesizer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMidiSynthesizer {
     type Vtable = IMidiSynthesizer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf0da155e_db90_405f_b8ae_21d2e17f2e45);
@@ -579,6 +692,11 @@ pub struct IMidiSynthesizer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMidiSynthesizerStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMidiSynthesizerStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMidiSynthesizerStatics {
     type Vtable = IMidiSynthesizerStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x4224eaa8_6629_4d6b_aa8f_d4521a5a31ce);
@@ -603,6 +721,11 @@ pub struct IMidiSynthesizerStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMidiSystemExclusiveMessageFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMidiSystemExclusiveMessageFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMidiSystemExclusiveMessageFactory {
     type Vtable = IMidiSystemExclusiveMessageFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x083de222_3b74_4320_9b42_0ca8545f8a24);
@@ -619,6 +742,11 @@ pub struct IMidiSystemExclusiveMessageFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMidiTimeCodeMessage(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMidiTimeCodeMessage {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMidiTimeCodeMessage {
     type Vtable = IMidiTimeCodeMessage_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x0bf7087d_fa63_4a1c_8deb_c0e87796a6d7);
@@ -633,6 +761,11 @@ pub struct IMidiTimeCodeMessage_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMidiTimeCodeMessageFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMidiTimeCodeMessageFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMidiTimeCodeMessageFactory {
     type Vtable = IMidiTimeCodeMessageFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xeb3099c5_771c_40de_b961_175a7489a85e);
@@ -681,11 +814,6 @@ impl MidiActiveSensingMessage {
         }
     }
 }
-impl ::core::clone::Clone for MidiActiveSensingMessage {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MidiActiveSensingMessage {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -699,7 +827,6 @@ impl ::core::fmt::Debug for MidiActiveSensingMessage {
 }
 unsafe impl ::windows::core::RuntimeType for MidiActiveSensingMessage {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Midi.MidiActiveSensingMessage;{79767945-1094-4283-9be0-289fc0ee8334})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -834,11 +961,6 @@ impl MidiChannelPressureMessage {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for MidiChannelPressureMessage {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MidiChannelPressureMessage {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -852,7 +974,6 @@ impl ::core::fmt::Debug for MidiChannelPressureMessage {
 }
 unsafe impl ::windows::core::RuntimeType for MidiChannelPressureMessage {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Midi.MidiChannelPressureMessage;{be1fa860-62b4-4d52-a37e-92e54d35b909})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -966,11 +1087,6 @@ impl MidiContinueMessage {
         }
     }
 }
-impl ::core::clone::Clone for MidiContinueMessage {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MidiContinueMessage {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -984,7 +1100,6 @@ impl ::core::fmt::Debug for MidiContinueMessage {
 }
 unsafe impl ::windows::core::RuntimeType for MidiContinueMessage {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Midi.MidiContinueMessage;{79767945-1094-4283-9be0-289fc0ee8334})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1127,11 +1242,6 @@ impl MidiControlChangeMessage {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for MidiControlChangeMessage {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MidiControlChangeMessage {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1145,7 +1255,6 @@ impl ::core::fmt::Debug for MidiControlChangeMessage {
 }
 unsafe impl ::windows::core::RuntimeType for MidiControlChangeMessage {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Midi.MidiControlChangeMessage;{b7e15f83-780d-405f-b781-3e1598c97f40})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1275,11 +1384,6 @@ impl MidiInPort {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for MidiInPort {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MidiInPort {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1293,7 +1397,6 @@ impl ::core::fmt::Debug for MidiInPort {
 }
 unsafe impl ::windows::core::RuntimeType for MidiInPort {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Midi.MidiInPort;{d5c1d9db-971a-4eaf-a23d-ea19fe607ff9})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1386,11 +1489,6 @@ impl MidiMessageReceivedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for MidiMessageReceivedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MidiMessageReceivedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1404,7 +1502,6 @@ impl ::core::fmt::Debug for MidiMessageReceivedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for MidiMessageReceivedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Midi.MidiMessageReceivedEventArgs;{76566e56-f328-4b51-907d-b3a8ce96bf80})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1497,6 +1594,7 @@ impl ::core::default::Default for MidiMessageType {
 }
 unsafe impl ::windows::core::Abi for MidiMessageType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MidiMessageType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1505,7 +1603,6 @@ impl ::core::fmt::Debug for MidiMessageType {
 }
 unsafe impl ::windows::core::RuntimeType for MidiMessageType {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.Midi.MidiMessageType;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1577,11 +1674,6 @@ impl MidiNoteOffMessage {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for MidiNoteOffMessage {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MidiNoteOffMessage {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1595,7 +1687,6 @@ impl ::core::fmt::Debug for MidiNoteOffMessage {
 }
 unsafe impl ::windows::core::RuntimeType for MidiNoteOffMessage {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Midi.MidiNoteOffMessage;{16fd8af4-198e-4d8f-a654-d305a293548f})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1738,11 +1829,6 @@ impl MidiNoteOnMessage {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for MidiNoteOnMessage {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MidiNoteOnMessage {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1756,7 +1842,6 @@ impl ::core::fmt::Debug for MidiNoteOnMessage {
 }
 unsafe impl ::windows::core::RuntimeType for MidiNoteOnMessage {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Midi.MidiNoteOnMessage;{e0224af5-6181-46dd-afa2-410004c057aa})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1882,11 +1967,6 @@ impl MidiOutPort {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for MidiOutPort {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MidiOutPort {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1900,7 +1980,6 @@ impl ::core::fmt::Debug for MidiOutPort {
 }
 unsafe impl ::windows::core::RuntimeType for MidiOutPort {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Midi.MidiOutPort;{931d6d9f-57a2-4a3a-adb8-4640886f6693})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2061,11 +2140,6 @@ impl MidiPitchBendChangeMessage {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for MidiPitchBendChangeMessage {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MidiPitchBendChangeMessage {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2079,7 +2153,6 @@ impl ::core::fmt::Debug for MidiPitchBendChangeMessage {
 }
 unsafe impl ::windows::core::RuntimeType for MidiPitchBendChangeMessage {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Midi.MidiPitchBendChangeMessage;{29df4cb1-2e9f-4faf-8c2b-9cb82a9079ca})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2222,11 +2295,6 @@ impl MidiPolyphonicKeyPressureMessage {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for MidiPolyphonicKeyPressureMessage {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MidiPolyphonicKeyPressureMessage {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2240,7 +2308,6 @@ impl ::core::fmt::Debug for MidiPolyphonicKeyPressureMessage {
 }
 unsafe impl ::windows::core::RuntimeType for MidiPolyphonicKeyPressureMessage {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Midi.MidiPolyphonicKeyPressureMessage;{1f7337fe-ace8-48a0-868e-7cdbf20f04d6})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2375,11 +2442,6 @@ impl MidiProgramChangeMessage {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for MidiProgramChangeMessage {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MidiProgramChangeMessage {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2393,7 +2455,6 @@ impl ::core::fmt::Debug for MidiProgramChangeMessage {
 }
 unsafe impl ::windows::core::RuntimeType for MidiProgramChangeMessage {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Midi.MidiProgramChangeMessage;{9cbb3c78-7a3e-4327-aa98-20b8e4485af8})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2520,11 +2581,6 @@ impl MidiSongPositionPointerMessage {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for MidiSongPositionPointerMessage {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MidiSongPositionPointerMessage {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2538,7 +2594,6 @@ impl ::core::fmt::Debug for MidiSongPositionPointerMessage {
 }
 unsafe impl ::windows::core::RuntimeType for MidiSongPositionPointerMessage {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Midi.MidiSongPositionPointerMessage;{4ca50c56-ec5e-4ae4-a115-88dc57cc2b79})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2665,11 +2720,6 @@ impl MidiSongSelectMessage {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for MidiSongSelectMessage {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MidiSongSelectMessage {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2683,7 +2733,6 @@ impl ::core::fmt::Debug for MidiSongSelectMessage {
 }
 unsafe impl ::windows::core::RuntimeType for MidiSongSelectMessage {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Midi.MidiSongSelectMessage;{49f0f27f-6d83-4741-a5bf-4629f6be974f})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2797,11 +2846,6 @@ impl MidiStartMessage {
         }
     }
 }
-impl ::core::clone::Clone for MidiStartMessage {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MidiStartMessage {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2815,7 +2859,6 @@ impl ::core::fmt::Debug for MidiStartMessage {
 }
 unsafe impl ::windows::core::RuntimeType for MidiStartMessage {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Midi.MidiStartMessage;{79767945-1094-4283-9be0-289fc0ee8334})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2929,11 +2972,6 @@ impl MidiStopMessage {
         }
     }
 }
-impl ::core::clone::Clone for MidiStopMessage {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MidiStopMessage {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2947,7 +2985,6 @@ impl ::core::fmt::Debug for MidiStopMessage {
 }
 unsafe impl ::windows::core::RuntimeType for MidiStopMessage {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Midi.MidiStopMessage;{79767945-1094-4283-9be0-289fc0ee8334})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3104,11 +3141,6 @@ impl MidiSynthesizer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for MidiSynthesizer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MidiSynthesizer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3122,7 +3154,6 @@ impl ::core::fmt::Debug for MidiSynthesizer {
 }
 unsafe impl ::windows::core::RuntimeType for MidiSynthesizer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Midi.MidiSynthesizer;{f0da155e-db90-405f-b8ae-21d2e17f2e45})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3268,11 +3299,6 @@ impl MidiSystemExclusiveMessage {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for MidiSystemExclusiveMessage {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MidiSystemExclusiveMessage {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3286,7 +3312,6 @@ impl ::core::fmt::Debug for MidiSystemExclusiveMessage {
 }
 unsafe impl ::windows::core::RuntimeType for MidiSystemExclusiveMessage {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Midi.MidiSystemExclusiveMessage;{79767945-1094-4283-9be0-289fc0ee8334})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3400,11 +3425,6 @@ impl MidiSystemResetMessage {
         }
     }
 }
-impl ::core::clone::Clone for MidiSystemResetMessage {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MidiSystemResetMessage {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3418,7 +3438,6 @@ impl ::core::fmt::Debug for MidiSystemResetMessage {
 }
 unsafe impl ::windows::core::RuntimeType for MidiSystemResetMessage {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Midi.MidiSystemResetMessage;{79767945-1094-4283-9be0-289fc0ee8334})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3553,11 +3572,6 @@ impl MidiTimeCodeMessage {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for MidiTimeCodeMessage {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MidiTimeCodeMessage {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3571,7 +3585,6 @@ impl ::core::fmt::Debug for MidiTimeCodeMessage {
 }
 unsafe impl ::windows::core::RuntimeType for MidiTimeCodeMessage {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Midi.MidiTimeCodeMessage;{0bf7087d-fa63-4a1c-8deb-c0e87796a6d7})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3685,11 +3698,6 @@ impl MidiTimingClockMessage {
         }
     }
 }
-impl ::core::clone::Clone for MidiTimingClockMessage {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MidiTimingClockMessage {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3703,7 +3711,6 @@ impl ::core::fmt::Debug for MidiTimingClockMessage {
 }
 unsafe impl ::windows::core::RuntimeType for MidiTimingClockMessage {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Midi.MidiTimingClockMessage;{79767945-1094-4283-9be0-289fc0ee8334})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3817,11 +3824,6 @@ impl MidiTuneRequestMessage {
         }
     }
 }
-impl ::core::clone::Clone for MidiTuneRequestMessage {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MidiTuneRequestMessage {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3835,7 +3837,6 @@ impl ::core::fmt::Debug for MidiTuneRequestMessage {
 }
 unsafe impl ::windows::core::RuntimeType for MidiTuneRequestMessage {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Midi.MidiTuneRequestMessage;{79767945-1094-4283-9be0-289fc0ee8334})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

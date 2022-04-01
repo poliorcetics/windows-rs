@@ -229,11 +229,6 @@ impl GattCharacteristic {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for GattCharacteristic {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for GattCharacteristic {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -247,7 +242,6 @@ impl ::core::fmt::Debug for GattCharacteristic {
 }
 unsafe impl ::windows::core::RuntimeType for GattCharacteristic {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristic;{59cb50c1-5934-4f68-a198-eb864fa44e6b})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -331,6 +325,7 @@ impl ::core::default::Default for GattCharacteristicProperties {
 }
 unsafe impl ::windows::core::Abi for GattCharacteristicProperties {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GattCharacteristicProperties {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -367,7 +362,6 @@ impl ::core::ops::Not for GattCharacteristicProperties {
 }
 unsafe impl ::windows::core::RuntimeType for GattCharacteristicProperties {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristicProperties;u4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -987,11 +981,6 @@ impl GattCharacteristicsResult {
         }
     }
 }
-impl ::core::clone::Clone for GattCharacteristicsResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for GattCharacteristicsResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1005,7 +994,6 @@ impl ::core::fmt::Debug for GattCharacteristicsResult {
 }
 unsafe impl ::windows::core::RuntimeType for GattCharacteristicsResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristicsResult;{1194945c-b257-4f3e-9db7-f68bc9a9aef2})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1081,6 +1069,7 @@ impl ::core::default::Default for GattClientCharacteristicConfigurationDescripto
 }
 unsafe impl ::windows::core::Abi for GattClientCharacteristicConfigurationDescriptorValue {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GattClientCharacteristicConfigurationDescriptorValue {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1089,7 +1078,6 @@ impl ::core::fmt::Debug for GattClientCharacteristicConfigurationDescriptorValue
 }
 unsafe impl ::windows::core::RuntimeType for GattClientCharacteristicConfigurationDescriptorValue {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.Bluetooth.GenericAttributeProfile.GattClientCharacteristicConfigurationDescriptorValue;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1132,11 +1120,6 @@ impl GattClientNotificationResult {
         }
     }
 }
-impl ::core::clone::Clone for GattClientNotificationResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for GattClientNotificationResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1150,7 +1133,6 @@ impl ::core::fmt::Debug for GattClientNotificationResult {
 }
 unsafe impl ::windows::core::RuntimeType for GattClientNotificationResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Bluetooth.GenericAttributeProfile.GattClientNotificationResult;{506d5599-0112-419a-8e3b-ae21afabd2c2})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1227,6 +1209,7 @@ impl ::core::default::Default for GattCommunicationStatus {
 }
 unsafe impl ::windows::core::Abi for GattCommunicationStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GattCommunicationStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1235,7 +1218,6 @@ impl ::core::fmt::Debug for GattCommunicationStatus {
 }
 unsafe impl ::windows::core::RuntimeType for GattCommunicationStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.Bluetooth.GenericAttributeProfile.GattCommunicationStatus;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1323,11 +1305,6 @@ impl GattDescriptor {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for GattDescriptor {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for GattDescriptor {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1341,7 +1318,6 @@ impl ::core::fmt::Debug for GattDescriptor {
 }
 unsafe impl ::windows::core::RuntimeType for GattDescriptor {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Bluetooth.GenericAttributeProfile.GattDescriptor;{92055f2b-8084-4344-b4c2-284de19a8506})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1480,11 +1456,6 @@ impl GattDescriptorsResult {
         }
     }
 }
-impl ::core::clone::Clone for GattDescriptorsResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for GattDescriptorsResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1498,7 +1469,6 @@ impl ::core::fmt::Debug for GattDescriptorsResult {
 }
 unsafe impl ::windows::core::RuntimeType for GattDescriptorsResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Bluetooth.GenericAttributeProfile.GattDescriptorsResult;{9bc091f3-95e7-4489-8d25-ff81955a57b9})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1833,11 +1803,6 @@ impl GattDeviceService {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for GattDeviceService {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for GattDeviceService {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1851,7 +1816,6 @@ impl ::core::fmt::Debug for GattDeviceService {
 }
 unsafe impl ::windows::core::RuntimeType for GattDeviceService {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Bluetooth.GenericAttributeProfile.GattDeviceService;{ac7b7c05-b33c-47cf-990f-6b8f5577df71})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1962,11 +1926,6 @@ impl GattDeviceServicesResult {
         }
     }
 }
-impl ::core::clone::Clone for GattDeviceServicesResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for GattDeviceServicesResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1980,7 +1939,6 @@ impl ::core::fmt::Debug for GattDeviceServicesResult {
 }
 unsafe impl ::windows::core::RuntimeType for GattDeviceServicesResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Bluetooth.GenericAttributeProfile.GattDeviceServicesResult;{171dd3ee-016d-419d-838a-576cf475a3d8})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2187,11 +2145,6 @@ impl GattLocalCharacteristic {
         }
     }
 }
-impl ::core::clone::Clone for GattLocalCharacteristic {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for GattLocalCharacteristic {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2205,7 +2158,6 @@ impl ::core::fmt::Debug for GattLocalCharacteristic {
 }
 unsafe impl ::windows::core::RuntimeType for GattLocalCharacteristic {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Bluetooth.GenericAttributeProfile.GattLocalCharacteristic;{aede376d-5412-4d74-92a8-8deb8526829c})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2347,11 +2299,6 @@ impl GattLocalCharacteristicParameters {
         }
     }
 }
-impl ::core::clone::Clone for GattLocalCharacteristicParameters {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for GattLocalCharacteristicParameters {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2365,7 +2312,6 @@ impl ::core::fmt::Debug for GattLocalCharacteristicParameters {
 }
 unsafe impl ::windows::core::RuntimeType for GattLocalCharacteristicParameters {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Bluetooth.GenericAttributeProfile.GattLocalCharacteristicParameters;{faf73db4-4cff-44c7-8445-040e6ead0063})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2440,11 +2386,6 @@ impl GattLocalCharacteristicResult {
         }
     }
 }
-impl ::core::clone::Clone for GattLocalCharacteristicResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for GattLocalCharacteristicResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2458,7 +2399,6 @@ impl ::core::fmt::Debug for GattLocalCharacteristicResult {
 }
 unsafe impl ::windows::core::RuntimeType for GattLocalCharacteristicResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Bluetooth.GenericAttributeProfile.GattLocalCharacteristicResult;{7975de9b-0170-4397-9666-92f863f12ee6})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2580,11 +2520,6 @@ impl GattLocalDescriptor {
         unsafe { (::windows::core::Interface::vtable(this).RemoveWriteRequested)(::core::mem::transmute_copy(this), token.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for GattLocalDescriptor {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for GattLocalDescriptor {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2598,7 +2533,6 @@ impl ::core::fmt::Debug for GattLocalDescriptor {
 }
 unsafe impl ::windows::core::RuntimeType for GattLocalDescriptor {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Bluetooth.GenericAttributeProfile.GattLocalDescriptor;{f48ebe06-789d-4a4b-8652-bd017b5d2fc6})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2705,11 +2639,6 @@ impl GattLocalDescriptorParameters {
         }
     }
 }
-impl ::core::clone::Clone for GattLocalDescriptorParameters {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for GattLocalDescriptorParameters {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2723,7 +2652,6 @@ impl ::core::fmt::Debug for GattLocalDescriptorParameters {
 }
 unsafe impl ::windows::core::RuntimeType for GattLocalDescriptorParameters {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Bluetooth.GenericAttributeProfile.GattLocalDescriptorParameters;{5fdede6a-f3c1-4b66-8c4b-e3d2293b40e9})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2798,11 +2726,6 @@ impl GattLocalDescriptorResult {
         }
     }
 }
-impl ::core::clone::Clone for GattLocalDescriptorResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for GattLocalDescriptorResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2816,7 +2739,6 @@ impl ::core::fmt::Debug for GattLocalDescriptorResult {
 }
 unsafe impl ::windows::core::RuntimeType for GattLocalDescriptorResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Bluetooth.GenericAttributeProfile.GattLocalDescriptorResult;{375791be-321f-4366-bfc1-3bc6b82c79f8})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2901,11 +2823,6 @@ impl GattLocalService {
         }
     }
 }
-impl ::core::clone::Clone for GattLocalService {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for GattLocalService {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2919,7 +2836,6 @@ impl ::core::fmt::Debug for GattLocalService {
 }
 unsafe impl ::windows::core::RuntimeType for GattLocalService {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Bluetooth.GenericAttributeProfile.GattLocalService;{f513e258-f7f7-4902-b803-57fcc7d6fe83})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2998,6 +2914,7 @@ impl ::core::default::Default for GattOpenStatus {
 }
 unsafe impl ::windows::core::Abi for GattOpenStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GattOpenStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3006,7 +2923,6 @@ impl ::core::fmt::Debug for GattOpenStatus {
 }
 unsafe impl ::windows::core::RuntimeType for GattOpenStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.Bluetooth.GenericAttributeProfile.GattOpenStatus;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -3080,11 +2996,6 @@ impl GattPresentationFormat {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for GattPresentationFormat {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for GattPresentationFormat {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3098,7 +3009,6 @@ impl ::core::fmt::Debug for GattPresentationFormat {
 }
 unsafe impl ::windows::core::RuntimeType for GattPresentationFormat {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Bluetooth.GenericAttributeProfile.GattPresentationFormat;{196d0021-faad-45dc-ae5b-2ac3184e84db})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3376,6 +3286,7 @@ impl ::core::default::Default for GattProtectionLevel {
 }
 unsafe impl ::windows::core::Abi for GattProtectionLevel {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GattProtectionLevel {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3384,7 +3295,6 @@ impl ::core::fmt::Debug for GattProtectionLevel {
 }
 unsafe impl ::windows::core::RuntimeType for GattProtectionLevel {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.Bluetooth.GenericAttributeProfile.GattProtectionLevel;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -3550,11 +3460,6 @@ impl GattReadClientCharacteristicConfigurationDescriptorResult {
         }
     }
 }
-impl ::core::clone::Clone for GattReadClientCharacteristicConfigurationDescriptorResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for GattReadClientCharacteristicConfigurationDescriptorResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3568,7 +3473,6 @@ impl ::core::fmt::Debug for GattReadClientCharacteristicConfigurationDescriptorR
 }
 unsafe impl ::windows::core::RuntimeType for GattReadClientCharacteristicConfigurationDescriptorResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Bluetooth.GenericAttributeProfile.GattReadClientCharacteristicConfigurationDescriptorResult;{63a66f09-1aea-4c4c-a50f-97bae474b348})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3677,11 +3581,6 @@ impl GattReadRequest {
         unsafe { (::windows::core::Interface::vtable(this).RespondWithProtocolError)(::core::mem::transmute_copy(this), protocolerror).ok() }
     }
 }
-impl ::core::clone::Clone for GattReadRequest {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for GattReadRequest {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3695,7 +3594,6 @@ impl ::core::fmt::Debug for GattReadRequest {
 }
 unsafe impl ::windows::core::RuntimeType for GattReadRequest {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Bluetooth.GenericAttributeProfile.GattReadRequest;{f1dd6535-6acd-42a6-a4bb-d789dae0043e})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3780,11 +3678,6 @@ impl GattReadRequestedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for GattReadRequestedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for GattReadRequestedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3798,7 +3691,6 @@ impl ::core::fmt::Debug for GattReadRequestedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for GattReadRequestedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Bluetooth.GenericAttributeProfile.GattReadRequestedEventArgs;{93497243-f39c-484b-8ab6-996ba486cfa3})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3883,11 +3775,6 @@ impl GattReadResult {
         }
     }
 }
-impl ::core::clone::Clone for GattReadResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for GattReadResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3901,7 +3788,6 @@ impl ::core::fmt::Debug for GattReadResult {
 }
 unsafe impl ::windows::core::RuntimeType for GattReadResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Bluetooth.GenericAttributeProfile.GattReadResult;{63a66f08-1aea-4c4c-a50f-97bae474b348})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3991,11 +3877,6 @@ impl GattReliableWriteTransaction {
         }
     }
 }
-impl ::core::clone::Clone for GattReliableWriteTransaction {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for GattReliableWriteTransaction {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4009,7 +3890,6 @@ impl ::core::fmt::Debug for GattReliableWriteTransaction {
 }
 unsafe impl ::windows::core::RuntimeType for GattReliableWriteTransaction {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Bluetooth.GenericAttributeProfile.GattReliableWriteTransaction;{63a66f07-1aea-4c4c-a50f-97bae474b348})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4085,6 +3965,7 @@ impl ::core::default::Default for GattRequestState {
 }
 unsafe impl ::windows::core::Abi for GattRequestState {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GattRequestState {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4093,7 +3974,6 @@ impl ::core::fmt::Debug for GattRequestState {
 }
 unsafe impl ::windows::core::RuntimeType for GattRequestState {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.Bluetooth.GenericAttributeProfile.GattRequestState;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -4119,11 +3999,6 @@ impl GattRequestStateChangedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for GattRequestStateChangedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for GattRequestStateChangedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4137,7 +4012,6 @@ impl ::core::fmt::Debug for GattRequestStateChangedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for GattRequestStateChangedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Bluetooth.GenericAttributeProfile.GattRequestStateChangedEventArgs;{e834d92c-27be-44b3-9d0d-4fc6e808dd3f})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4255,11 +4129,6 @@ impl GattServiceProvider {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for GattServiceProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for GattServiceProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4273,7 +4142,6 @@ impl ::core::fmt::Debug for GattServiceProvider {
 }
 unsafe impl ::windows::core::RuntimeType for GattServiceProvider {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Bluetooth.GenericAttributeProfile.GattServiceProvider;{7822b3cd-2889-4f86-a051-3f0aed1c2760})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4351,6 +4219,7 @@ impl ::core::default::Default for GattServiceProviderAdvertisementStatus {
 }
 unsafe impl ::windows::core::Abi for GattServiceProviderAdvertisementStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GattServiceProviderAdvertisementStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4359,7 +4228,6 @@ impl ::core::fmt::Debug for GattServiceProviderAdvertisementStatus {
 }
 unsafe impl ::windows::core::RuntimeType for GattServiceProviderAdvertisementStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.Bluetooth.GenericAttributeProfile.GattServiceProviderAdvertisementStatus;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -4385,11 +4253,6 @@ impl GattServiceProviderAdvertisementStatusChangedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for GattServiceProviderAdvertisementStatusChangedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for GattServiceProviderAdvertisementStatusChangedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4403,7 +4266,6 @@ impl ::core::fmt::Debug for GattServiceProviderAdvertisementStatusChangedEventAr
 }
 unsafe impl ::windows::core::RuntimeType for GattServiceProviderAdvertisementStatusChangedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Bluetooth.GenericAttributeProfile.GattServiceProviderAdvertisementStatusChangedEventArgs;{59a5aa65-fa21-4ffc-b155-04d928012686})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4510,11 +4372,6 @@ impl GattServiceProviderAdvertisingParameters {
         }
     }
 }
-impl ::core::clone::Clone for GattServiceProviderAdvertisingParameters {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for GattServiceProviderAdvertisingParameters {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4528,7 +4385,6 @@ impl ::core::fmt::Debug for GattServiceProviderAdvertisingParameters {
 }
 unsafe impl ::windows::core::RuntimeType for GattServiceProviderAdvertisingParameters {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Bluetooth.GenericAttributeProfile.GattServiceProviderAdvertisingParameters;{e2ce31ab-6315-4c22-9bd7-781dbc3d8d82})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4603,11 +4459,6 @@ impl GattServiceProviderResult {
         }
     }
 }
-impl ::core::clone::Clone for GattServiceProviderResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for GattServiceProviderResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4621,7 +4472,6 @@ impl ::core::fmt::Debug for GattServiceProviderResult {
 }
 unsafe impl ::windows::core::RuntimeType for GattServiceProviderResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Bluetooth.GenericAttributeProfile.GattServiceProviderResult;{764696d8-c53e-428c-8a48-67afe02c3ae6})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4945,11 +4795,6 @@ impl GattSession {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for GattSession {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for GattSession {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4963,7 +4808,6 @@ impl ::core::fmt::Debug for GattSession {
 }
 unsafe impl ::windows::core::RuntimeType for GattSession {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Bluetooth.GenericAttributeProfile.GattSession;{d23b5143-e04e-4c24-999c-9c256f9856b1})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -5064,6 +4908,7 @@ impl ::core::default::Default for GattSessionStatus {
 }
 unsafe impl ::windows::core::Abi for GattSessionStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GattSessionStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5072,7 +4917,6 @@ impl ::core::fmt::Debug for GattSessionStatus {
 }
 unsafe impl ::windows::core::RuntimeType for GattSessionStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.Bluetooth.GenericAttributeProfile.GattSessionStatus;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -5098,11 +4942,6 @@ impl GattSessionStatusChangedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for GattSessionStatusChangedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for GattSessionStatusChangedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5116,7 +4955,6 @@ impl ::core::fmt::Debug for GattSessionStatusChangedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for GattSessionStatusChangedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Bluetooth.GenericAttributeProfile.GattSessionStatusChangedEventArgs;{7605b72e-837f-404c-ab34-3163f39ddf32})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -5193,6 +5031,7 @@ impl ::core::default::Default for GattSharingMode {
 }
 unsafe impl ::windows::core::Abi for GattSharingMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GattSharingMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5201,7 +5040,6 @@ impl ::core::fmt::Debug for GattSharingMode {
 }
 unsafe impl ::windows::core::RuntimeType for GattSharingMode {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.Bluetooth.GenericAttributeProfile.GattSharingMode;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -5242,11 +5080,6 @@ impl GattSubscribedClient {
         unsafe { (::windows::core::Interface::vtable(this).RemoveMaxNotificationSizeChanged)(::core::mem::transmute_copy(this), token.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for GattSubscribedClient {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for GattSubscribedClient {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5260,7 +5093,6 @@ impl ::core::fmt::Debug for GattSubscribedClient {
 }
 unsafe impl ::windows::core::RuntimeType for GattSubscribedClient {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Bluetooth.GenericAttributeProfile.GattSubscribedClient;{736e9001-15a4-4ec2-9248-e3f20d463be9})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -5337,11 +5169,6 @@ impl GattValueChangedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for GattValueChangedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for GattValueChangedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5355,7 +5182,6 @@ impl ::core::fmt::Debug for GattValueChangedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for GattValueChangedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs;{d21bdb54-06e3-4ed8-a263-acfac8ba7313})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -5430,6 +5256,7 @@ impl ::core::default::Default for GattWriteOption {
 }
 unsafe impl ::windows::core::Abi for GattWriteOption {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GattWriteOption {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5438,7 +5265,6 @@ impl ::core::fmt::Debug for GattWriteOption {
 }
 unsafe impl ::windows::core::RuntimeType for GattWriteOption {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.Bluetooth.GenericAttributeProfile.GattWriteOption;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -5506,11 +5332,6 @@ impl GattWriteRequest {
         unsafe { (::windows::core::Interface::vtable(this).RespondWithProtocolError)(::core::mem::transmute_copy(this), protocolerror).ok() }
     }
 }
-impl ::core::clone::Clone for GattWriteRequest {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for GattWriteRequest {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5524,7 +5345,6 @@ impl ::core::fmt::Debug for GattWriteRequest {
 }
 unsafe impl ::windows::core::RuntimeType for GattWriteRequest {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Bluetooth.GenericAttributeProfile.GattWriteRequest;{aeb6a9ed-de2f-4fc2-a9a8-94ea7844f13d})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -5609,11 +5429,6 @@ impl GattWriteRequestedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for GattWriteRequestedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for GattWriteRequestedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5627,7 +5442,6 @@ impl ::core::fmt::Debug for GattWriteRequestedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for GattWriteRequestedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Bluetooth.GenericAttributeProfile.GattWriteRequestedEventArgs;{2dec8bbe-a73a-471a-94d5-037deadd0806})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -5703,11 +5517,6 @@ impl GattWriteResult {
         }
     }
 }
-impl ::core::clone::Clone for GattWriteResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for GattWriteResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5721,7 +5530,6 @@ impl ::core::fmt::Debug for GattWriteResult {
 }
 unsafe impl ::windows::core::RuntimeType for GattWriteResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Bluetooth.GenericAttributeProfile.GattWriteResult;{4991ddb1-cb2b-44f7-99fc-d29a2871dc9b})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -5778,6 +5586,11 @@ unsafe impl ::core::marker::Sync for GattWriteResult {}
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGattCharacteristic(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGattCharacteristic {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGattCharacteristic {
     type Vtable = IGattCharacteristic_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x59cb50c1_5934_4f68_a198_eb864fa44e6b);
@@ -5836,6 +5649,11 @@ pub struct IGattCharacteristic_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGattCharacteristic2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGattCharacteristic2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGattCharacteristic2 {
     type Vtable = IGattCharacteristic2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xae1ab578_ec06_4764_b780_9835a1d35d6e);
@@ -5853,6 +5671,11 @@ pub struct IGattCharacteristic2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGattCharacteristic3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGattCharacteristic3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGattCharacteristic3 {
     type Vtable = IGattCharacteristic3_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x3f3c663e_93d4_406b_b817_db81f8ed53b3);
@@ -5893,6 +5716,11 @@ pub struct IGattCharacteristic3_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGattCharacteristicStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGattCharacteristicStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGattCharacteristicStatics {
     type Vtable = IGattCharacteristicStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x59cb50c3_5934_4f68_a198_eb864fa44e6b);
@@ -5909,6 +5737,11 @@ pub struct IGattCharacteristicStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGattCharacteristicUuidsStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGattCharacteristicUuidsStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGattCharacteristicUuidsStatics {
     type Vtable = IGattCharacteristicUuidsStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x58fa4586_b1de_470c_b7de_0d11ff44f4b7);
@@ -5942,6 +5775,11 @@ pub struct IGattCharacteristicUuidsStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGattCharacteristicUuidsStatics2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGattCharacteristicUuidsStatics2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGattCharacteristicUuidsStatics2 {
     type Vtable = IGattCharacteristicUuidsStatics2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1855b425_d46e_4a2c_9c3f_ed6dea29e7be);
@@ -6014,6 +5852,11 @@ pub struct IGattCharacteristicUuidsStatics2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGattCharacteristicsResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGattCharacteristicsResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGattCharacteristicsResult {
     type Vtable = IGattCharacteristicsResult_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1194945c_b257_4f3e_9db7_f68bc9a9aef2);
@@ -6035,6 +5878,11 @@ pub struct IGattCharacteristicsResult_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGattClientNotificationResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGattClientNotificationResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGattClientNotificationResult {
     type Vtable = IGattClientNotificationResult_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x506d5599_0112_419a_8e3b_ae21afabd2c2);
@@ -6053,6 +5901,11 @@ pub struct IGattClientNotificationResult_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGattClientNotificationResult2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGattClientNotificationResult2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGattClientNotificationResult2 {
     type Vtable = IGattClientNotificationResult2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x8faec497_45e0_497e_9582_29a1fe281ad5);
@@ -6066,6 +5919,11 @@ pub struct IGattClientNotificationResult2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGattDescriptor(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGattDescriptor {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGattDescriptor {
     type Vtable = IGattDescriptor_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x92055f2b_8084_4344_b4c2_284de19a8506);
@@ -6094,6 +5952,11 @@ pub struct IGattDescriptor_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGattDescriptor2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGattDescriptor2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGattDescriptor2 {
     type Vtable = IGattDescriptor2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x8f563d39_d630_406c_ba11_10cdd16b0e5e);
@@ -6110,6 +5973,11 @@ pub struct IGattDescriptor2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGattDescriptorStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGattDescriptorStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGattDescriptorStatics {
     type Vtable = IGattDescriptorStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x92055f2d_8084_4344_b4c2_284de19a8506);
@@ -6126,6 +5994,11 @@ pub struct IGattDescriptorStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGattDescriptorUuidsStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGattDescriptorUuidsStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGattDescriptorUuidsStatics {
     type Vtable = IGattDescriptorUuidsStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa6f862ce_9cfc_42f1_9185_ff37b75181d3);
@@ -6144,6 +6017,11 @@ pub struct IGattDescriptorUuidsStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGattDescriptorsResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGattDescriptorsResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGattDescriptorsResult {
     type Vtable = IGattDescriptorsResult_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9bc091f3_95e7_4489_8d25_ff81955a57b9);
@@ -6165,6 +6043,11 @@ pub struct IGattDescriptorsResult_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGattDeviceService(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGattDeviceService {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGattDeviceService {
     type Vtable = IGattDeviceService_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xac7b7c05_b33c_47cf_990f_6b8f5577df71);
@@ -6188,6 +6071,11 @@ pub struct IGattDeviceService_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGattDeviceService2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGattDeviceService2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGattDeviceService2 {
     type Vtable = IGattDeviceService2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xfc54520b_0b0d_4708_bae0_9ffd9489bc59);
@@ -6216,6 +6104,11 @@ pub struct IGattDeviceService2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGattDeviceService3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGattDeviceService3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGattDeviceService3 {
     type Vtable = IGattDeviceService3_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb293a950_0c53_437c_a9b3_5c3210c6e569);
@@ -6274,6 +6167,11 @@ pub struct IGattDeviceService3_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGattDeviceServiceStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGattDeviceServiceStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGattDeviceServiceStatics {
     type Vtable = IGattDeviceServiceStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x196d0022_faad_45dc_ae5b_2ac3184e84db);
@@ -6299,6 +6197,11 @@ pub struct IGattDeviceServiceStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGattDeviceServiceStatics2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGattDeviceServiceStatics2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGattDeviceServiceStatics2 {
     type Vtable = IGattDeviceServiceStatics2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x0604186e_24a6_4b0d_a2f2_30cc01545d25);
@@ -6319,6 +6222,11 @@ pub struct IGattDeviceServiceStatics2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGattDeviceServicesResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGattDeviceServicesResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGattDeviceServicesResult {
     type Vtable = IGattDeviceServicesResult_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x171dd3ee_016d_419d_838a_576cf475a3d8);
@@ -6340,6 +6248,11 @@ pub struct IGattDeviceServicesResult_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGattLocalCharacteristic(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGattLocalCharacteristic {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGattLocalCharacteristic {
     type Vtable = IGattLocalCharacteristic_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xaede376d_5412_4d74_92a8_8deb8526829c);
@@ -6409,6 +6322,11 @@ pub struct IGattLocalCharacteristic_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGattLocalCharacteristicParameters(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGattLocalCharacteristicParameters {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGattLocalCharacteristicParameters {
     type Vtable = IGattLocalCharacteristicParameters_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xfaf73db4_4cff_44c7_8445_040e6ead0063);
@@ -6441,6 +6359,11 @@ pub struct IGattLocalCharacteristicParameters_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGattLocalCharacteristicResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGattLocalCharacteristicResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGattLocalCharacteristicResult {
     type Vtable = IGattLocalCharacteristicResult_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x7975de9b_0170_4397_9666_92f863f12ee6);
@@ -6455,6 +6378,11 @@ pub struct IGattLocalCharacteristicResult_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGattLocalDescriptor(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGattLocalDescriptor {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGattLocalDescriptor {
     type Vtable = IGattLocalDescriptor_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf48ebe06_789d_4a4b_8652_bd017b5d2fc6);
@@ -6490,6 +6418,11 @@ pub struct IGattLocalDescriptor_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGattLocalDescriptorParameters(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGattLocalDescriptorParameters {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGattLocalDescriptorParameters {
     type Vtable = IGattLocalDescriptorParameters_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x5fdede6a_f3c1_4b66_8c4b_e3d2293b40e9);
@@ -6514,6 +6447,11 @@ pub struct IGattLocalDescriptorParameters_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGattLocalDescriptorResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGattLocalDescriptorResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGattLocalDescriptorResult {
     type Vtable = IGattLocalDescriptorResult_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x375791be_321f_4366_bfc1_3bc6b82c79f8);
@@ -6528,6 +6466,11 @@ pub struct IGattLocalDescriptorResult_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGattLocalService(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGattLocalService {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGattLocalService {
     type Vtable = IGattLocalService_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf513e258_f7f7_4902_b803_57fcc7d6fe83);
@@ -6549,6 +6492,11 @@ pub struct IGattLocalService_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGattPresentationFormat(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGattPresentationFormat {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGattPresentationFormat {
     type Vtable = IGattPresentationFormat_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x196d0021_faad_45dc_ae5b_2ac3184e84db);
@@ -6566,6 +6514,11 @@ pub struct IGattPresentationFormat_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGattPresentationFormatStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGattPresentationFormatStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGattPresentationFormatStatics {
     type Vtable = IGattPresentationFormatStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x196d0020_faad_45dc_ae5b_2ac3184e84db);
@@ -6579,6 +6532,11 @@ pub struct IGattPresentationFormatStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGattPresentationFormatStatics2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGattPresentationFormatStatics2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGattPresentationFormatStatics2 {
     type Vtable = IGattPresentationFormatStatics2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa9c21713_b82f_435e_b634_21fd85a43c07);
@@ -6592,6 +6550,11 @@ pub struct IGattPresentationFormatStatics2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGattPresentationFormatTypesStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGattPresentationFormatTypesStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGattPresentationFormatTypesStatics {
     type Vtable = IGattPresentationFormatTypesStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xfaf1ba0a_30ba_409c_bef7_cffb6d03b8fb);
@@ -6631,6 +6594,11 @@ pub struct IGattPresentationFormatTypesStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGattProtocolErrorStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGattProtocolErrorStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGattProtocolErrorStatics {
     type Vtable = IGattProtocolErrorStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xca46c5c5_0ecc_4809_bea3_cf79bc991e37);
@@ -6660,6 +6628,11 @@ pub struct IGattProtocolErrorStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGattReadClientCharacteristicConfigurationDescriptorResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGattReadClientCharacteristicConfigurationDescriptorResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGattReadClientCharacteristicConfigurationDescriptorResult {
     type Vtable = IGattReadClientCharacteristicConfigurationDescriptorResult_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x63a66f09_1aea_4c4c_a50f_97bae474b348);
@@ -6674,6 +6647,11 @@ pub struct IGattReadClientCharacteristicConfigurationDescriptorResult_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGattReadClientCharacteristicConfigurationDescriptorResult2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGattReadClientCharacteristicConfigurationDescriptorResult2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGattReadClientCharacteristicConfigurationDescriptorResult2 {
     type Vtable = IGattReadClientCharacteristicConfigurationDescriptorResult2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1bf1a59d_ba4d_4622_8651_f4ee150d0a5d);
@@ -6690,6 +6668,11 @@ pub struct IGattReadClientCharacteristicConfigurationDescriptorResult2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGattReadRequest(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGattReadRequest {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGattReadRequest {
     type Vtable = IGattReadRequest_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf1dd6535_6acd_42a6_a4bb_d789dae0043e);
@@ -6718,6 +6701,11 @@ pub struct IGattReadRequest_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGattReadRequestedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGattReadRequestedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGattReadRequestedEventArgs {
     type Vtable = IGattReadRequestedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x93497243_f39c_484b_8ab6_996ba486cfa3);
@@ -6739,6 +6727,11 @@ pub struct IGattReadRequestedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGattReadResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGattReadResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGattReadResult {
     type Vtable = IGattReadResult_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x63a66f08_1aea_4c4c_a50f_97bae474b348);
@@ -6756,6 +6749,11 @@ pub struct IGattReadResult_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGattReadResult2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGattReadResult2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGattReadResult2 {
     type Vtable = IGattReadResult2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa10f50a0_fb43_48af_baaa_638a5c6329fe);
@@ -6772,6 +6770,11 @@ pub struct IGattReadResult2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGattReliableWriteTransaction(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGattReliableWriteTransaction {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGattReliableWriteTransaction {
     type Vtable = IGattReliableWriteTransaction_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x63a66f07_1aea_4c4c_a50f_97bae474b348);
@@ -6792,6 +6795,11 @@ pub struct IGattReliableWriteTransaction_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGattReliableWriteTransaction2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGattReliableWriteTransaction2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGattReliableWriteTransaction2 {
     type Vtable = IGattReliableWriteTransaction2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x51113987_ef12_462f_9fb2_a1a43a679416);
@@ -6808,6 +6816,11 @@ pub struct IGattReliableWriteTransaction2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGattRequestStateChangedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGattRequestStateChangedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGattRequestStateChangedEventArgs {
     type Vtable = IGattRequestStateChangedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe834d92c_27be_44b3_9d0d_4fc6e808dd3f);
@@ -6822,6 +6835,11 @@ pub struct IGattRequestStateChangedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGattServiceProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGattServiceProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGattServiceProvider {
     type Vtable = IGattServiceProvider_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x7822b3cd_2889_4f86_a051_3f0aed1c2760);
@@ -6847,6 +6865,11 @@ pub struct IGattServiceProvider_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGattServiceProviderAdvertisementStatusChangedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGattServiceProviderAdvertisementStatusChangedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGattServiceProviderAdvertisementStatusChangedEventArgs {
     type Vtable = IGattServiceProviderAdvertisementStatusChangedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x59a5aa65_fa21_4ffc_b155_04d928012686);
@@ -6861,6 +6884,11 @@ pub struct IGattServiceProviderAdvertisementStatusChangedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGattServiceProviderAdvertisingParameters(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGattServiceProviderAdvertisingParameters {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGattServiceProviderAdvertisingParameters {
     type Vtable = IGattServiceProviderAdvertisingParameters_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe2ce31ab_6315_4c22_9bd7_781dbc3d8d82);
@@ -6877,6 +6905,11 @@ pub struct IGattServiceProviderAdvertisingParameters_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGattServiceProviderAdvertisingParameters2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGattServiceProviderAdvertisingParameters2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGattServiceProviderAdvertisingParameters2 {
     type Vtable = IGattServiceProviderAdvertisingParameters2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xff68468d_ca92_4434_9743_0e90988ad879);
@@ -6897,6 +6930,11 @@ pub struct IGattServiceProviderAdvertisingParameters2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGattServiceProviderResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGattServiceProviderResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGattServiceProviderResult {
     type Vtable = IGattServiceProviderResult_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x764696d8_c53e_428c_8a48_67afe02c3ae6);
@@ -6911,6 +6949,11 @@ pub struct IGattServiceProviderResult_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGattServiceProviderStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGattServiceProviderStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGattServiceProviderStatics {
     type Vtable = IGattServiceProviderStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x31794063_5256_4054_a4f4_7bbe7755a57e);
@@ -6927,6 +6970,11 @@ pub struct IGattServiceProviderStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGattServiceUuidsStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGattServiceUuidsStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGattServiceUuidsStatics {
     type Vtable = IGattServiceUuidsStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x6dc57058_9aba_4417_b8f2_dce016d34ee2);
@@ -6948,6 +6996,11 @@ pub struct IGattServiceUuidsStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGattServiceUuidsStatics2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGattServiceUuidsStatics2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGattServiceUuidsStatics2 {
     type Vtable = IGattServiceUuidsStatics2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd2ae94f5_3d15_4f79_9c0c_eaafa675155c);
@@ -6973,6 +7026,11 @@ pub struct IGattServiceUuidsStatics2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGattSession(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGattSession {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGattSession {
     type Vtable = IGattSession_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd23b5143_e04e_4c24_999c_9c256f9856b1);
@@ -7007,6 +7065,11 @@ pub struct IGattSession_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGattSessionStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGattSessionStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGattSessionStatics {
     type Vtable = IGattSessionStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x2e65b95c_539f_4db7_82a8_73bdbbf73ebf);
@@ -7023,6 +7086,11 @@ pub struct IGattSessionStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGattSessionStatusChangedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGattSessionStatusChangedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGattSessionStatusChangedEventArgs {
     type Vtable = IGattSessionStatusChangedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x7605b72e_837f_404c_ab34_3163f39ddf32);
@@ -7037,6 +7105,11 @@ pub struct IGattSessionStatusChangedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGattSubscribedClient(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGattSubscribedClient {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGattSubscribedClient {
     type Vtable = IGattSubscribedClient_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x736e9001_15a4_4ec2_9248_e3f20d463be9);
@@ -7059,6 +7132,11 @@ pub struct IGattSubscribedClient_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGattValueChangedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGattValueChangedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGattValueChangedEventArgs {
     type Vtable = IGattValueChangedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd21bdb54_06e3_4ed8_a263_acfac8ba7313);
@@ -7079,6 +7157,11 @@ pub struct IGattValueChangedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGattWriteRequest(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGattWriteRequest {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGattWriteRequest {
     type Vtable = IGattWriteRequest_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xaeb6a9ed_de2f_4fc2_a9a8_94ea7844f13d);
@@ -7108,6 +7191,11 @@ pub struct IGattWriteRequest_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGattWriteRequestedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGattWriteRequestedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGattWriteRequestedEventArgs {
     type Vtable = IGattWriteRequestedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x2dec8bbe_a73a_471a_94d5_037deadd0806);
@@ -7129,6 +7217,11 @@ pub struct IGattWriteRequestedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGattWriteResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGattWriteResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGattWriteResult {
     type Vtable = IGattWriteResult_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x4991ddb1_cb2b_44f7_99fc_d29a2871dc9b);

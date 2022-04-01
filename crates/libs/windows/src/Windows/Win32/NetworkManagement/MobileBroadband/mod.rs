@@ -4,6 +4,12 @@
 #[repr(transparent)]
 pub struct IDummyMBNUCMExt(::windows::core::IUnknown);
 #[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IDummyMBNUCMExt {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "Win32_System_Com")]
 impl IDummyMBNUCMExt {}
 #[cfg(feature = "Win32_System_Com")]
 impl ::core::convert::From<IDummyMBNUCMExt> for ::windows::core::IUnknown {
@@ -54,12 +60,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IDummyMBNUCMExt {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IDummyMBNUCMExt {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -87,6 +87,11 @@ pub struct IDummyMBNUCMExt_Vtbl {
 #[doc = "*Required features: `\"Win32_NetworkManagement_MobileBroadband\"`*"]
 #[repr(transparent)]
 pub struct IMbnConnection(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMbnConnection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMbnConnection {
     #[doc = "*Required features: `\"Win32_NetworkManagement_MobileBroadband\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -146,11 +151,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMbnC
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMbnConnection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMbnConnection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -190,6 +190,11 @@ pub struct IMbnConnection_Vtbl {
 #[doc = "*Required features: `\"Win32_NetworkManagement_MobileBroadband\"`*"]
 #[repr(transparent)]
 pub struct IMbnConnectionContext(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMbnConnectionContext {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMbnConnectionContext {
     #[doc = "*Required features: `\"Win32_NetworkManagement_MobileBroadband\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -224,11 +229,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMbnC
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMbnConnectionContext {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMbnConnectionContext {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -260,6 +260,11 @@ pub struct IMbnConnectionContext_Vtbl {
 #[doc = "*Required features: `\"Win32_NetworkManagement_MobileBroadband\"`*"]
 #[repr(transparent)]
 pub struct IMbnConnectionContextEvents(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMbnConnectionContextEvents {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMbnConnectionContextEvents {
     #[doc = "*Required features: `\"Win32_NetworkManagement_MobileBroadband\"`*"]
     pub unsafe fn OnProvisionedContextListChange<'a, Param0: ::windows::core::IntoParam<'a, IMbnConnectionContext>>(&self, newinterface: Param0) -> ::windows::core::Result<()> {
@@ -290,11 +295,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMbnC
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMbnConnectionContextEvents {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMbnConnectionContextEvents {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -320,6 +320,11 @@ pub struct IMbnConnectionContextEvents_Vtbl {
 #[doc = "*Required features: `\"Win32_NetworkManagement_MobileBroadband\"`*"]
 #[repr(transparent)]
 pub struct IMbnConnectionEvents(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMbnConnectionEvents {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMbnConnectionEvents {
     #[doc = "*Required features: `\"Win32_NetworkManagement_MobileBroadband\"`*"]
     pub unsafe fn OnConnectComplete<'a, Param0: ::windows::core::IntoParam<'a, IMbnConnection>>(&self, newconnection: Param0, requestid: u32, status: ::windows::core::HRESULT) -> ::windows::core::Result<()> {
@@ -358,11 +363,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMbnC
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMbnConnectionEvents {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMbnConnectionEvents {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -390,6 +390,11 @@ pub struct IMbnConnectionEvents_Vtbl {
 #[doc = "*Required features: `\"Win32_NetworkManagement_MobileBroadband\"`*"]
 #[repr(transparent)]
 pub struct IMbnConnectionManager(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMbnConnectionManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMbnConnectionManager {
     #[doc = "*Required features: `\"Win32_NetworkManagement_MobileBroadband\"`*"]
     pub unsafe fn GetConnection<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, connectionid: Param0) -> ::windows::core::Result<IMbnConnection> {
@@ -423,11 +428,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMbnC
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMbnConnectionManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMbnConnectionManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -456,6 +456,11 @@ pub struct IMbnConnectionManager_Vtbl {
 #[doc = "*Required features: `\"Win32_NetworkManagement_MobileBroadband\"`*"]
 #[repr(transparent)]
 pub struct IMbnConnectionManagerEvents(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMbnConnectionManagerEvents {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMbnConnectionManagerEvents {
     #[doc = "*Required features: `\"Win32_NetworkManagement_MobileBroadband\"`*"]
     pub unsafe fn OnConnectionArrival<'a, Param0: ::windows::core::IntoParam<'a, IMbnConnection>>(&self, newconnection: Param0) -> ::windows::core::Result<()> {
@@ -486,11 +491,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMbnC
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMbnConnectionManagerEvents {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMbnConnectionManagerEvents {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -516,6 +516,11 @@ pub struct IMbnConnectionManagerEvents_Vtbl {
 #[doc = "*Required features: `\"Win32_NetworkManagement_MobileBroadband\"`*"]
 #[repr(transparent)]
 pub struct IMbnConnectionProfile(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMbnConnectionProfile {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMbnConnectionProfile {
     #[doc = "*Required features: `\"Win32_NetworkManagement_MobileBroadband\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -552,11 +557,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMbnC
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMbnConnectionProfile {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMbnConnectionProfile {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -586,6 +586,11 @@ pub struct IMbnConnectionProfile_Vtbl {
 #[doc = "*Required features: `\"Win32_NetworkManagement_MobileBroadband\"`*"]
 #[repr(transparent)]
 pub struct IMbnConnectionProfileEvents(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMbnConnectionProfileEvents {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMbnConnectionProfileEvents {
     #[doc = "*Required features: `\"Win32_NetworkManagement_MobileBroadband\"`*"]
     pub unsafe fn OnProfileUpdate<'a, Param0: ::windows::core::IntoParam<'a, IMbnConnectionProfile>>(&self, newprofile: Param0) -> ::windows::core::Result<()> {
@@ -612,11 +617,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMbnC
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMbnConnectionProfileEvents {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMbnConnectionProfileEvents {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -641,6 +641,11 @@ pub struct IMbnConnectionProfileEvents_Vtbl {
 #[doc = "*Required features: `\"Win32_NetworkManagement_MobileBroadband\"`*"]
 #[repr(transparent)]
 pub struct IMbnConnectionProfileManager(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMbnConnectionProfileManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMbnConnectionProfileManager {
     #[doc = "*Required features: `\"Win32_NetworkManagement_MobileBroadband\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -678,11 +683,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMbnC
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMbnConnectionProfileManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMbnConnectionProfileManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -712,6 +712,11 @@ pub struct IMbnConnectionProfileManager_Vtbl {
 #[doc = "*Required features: `\"Win32_NetworkManagement_MobileBroadband\"`*"]
 #[repr(transparent)]
 pub struct IMbnConnectionProfileManagerEvents(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMbnConnectionProfileManagerEvents {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMbnConnectionProfileManagerEvents {
     #[doc = "*Required features: `\"Win32_NetworkManagement_MobileBroadband\"`*"]
     pub unsafe fn OnConnectionProfileArrival<'a, Param0: ::windows::core::IntoParam<'a, IMbnConnectionProfile>>(&self, newconnectionprofile: Param0) -> ::windows::core::Result<()> {
@@ -742,11 +747,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMbnC
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMbnConnectionProfileManagerEvents {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMbnConnectionProfileManagerEvents {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -772,6 +772,11 @@ pub struct IMbnConnectionProfileManagerEvents_Vtbl {
 #[doc = "*Required features: `\"Win32_NetworkManagement_MobileBroadband\"`*"]
 #[repr(transparent)]
 pub struct IMbnDeviceService(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMbnDeviceService {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMbnDeviceService {
     #[doc = "*Required features: `\"Win32_NetworkManagement_MobileBroadband\"`*"]
     pub unsafe fn QuerySupportedCommands(&self) -> ::windows::core::Result<u32> {
@@ -861,11 +866,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMbnD
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMbnDeviceService {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMbnDeviceService {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -922,6 +922,11 @@ pub struct IMbnDeviceService_Vtbl {
 #[doc = "*Required features: `\"Win32_NetworkManagement_MobileBroadband\"`*"]
 #[repr(transparent)]
 pub struct IMbnDeviceServiceStateEvents(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMbnDeviceServiceStateEvents {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMbnDeviceServiceStateEvents {
     #[doc = "*Required features: `\"Win32_NetworkManagement_MobileBroadband\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -947,11 +952,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IMbnDevic
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMbnDeviceServiceStateEvents {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IMbnDeviceServiceStateEvents {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IMbnDeviceServiceStateEvents {
@@ -981,6 +981,11 @@ pub struct IMbnDeviceServiceStateEvents_Vtbl {
 #[doc = "*Required features: `\"Win32_NetworkManagement_MobileBroadband\"`*"]
 #[repr(transparent)]
 pub struct IMbnDeviceServicesContext(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMbnDeviceServicesContext {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMbnDeviceServicesContext {
     #[doc = "*Required features: `\"Win32_NetworkManagement_MobileBroadband\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -1025,11 +1030,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMbnD
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMbnDeviceServicesContext {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMbnDeviceServicesContext {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1063,6 +1063,11 @@ pub struct IMbnDeviceServicesContext_Vtbl {
 #[doc = "*Required features: `\"Win32_NetworkManagement_MobileBroadband\"`*"]
 #[repr(transparent)]
 pub struct IMbnDeviceServicesEvents(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMbnDeviceServicesEvents {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMbnDeviceServicesEvents {
     #[doc = "*Required features: `\"Win32_NetworkManagement_MobileBroadband\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -1135,11 +1140,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMbnD
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMbnDeviceServicesEvents {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMbnDeviceServicesEvents {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1192,6 +1192,11 @@ pub struct IMbnDeviceServicesEvents_Vtbl {
 #[doc = "*Required features: `\"Win32_NetworkManagement_MobileBroadband\"`*"]
 #[repr(transparent)]
 pub struct IMbnDeviceServicesManager(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMbnDeviceServicesManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMbnDeviceServicesManager {
     #[doc = "*Required features: `\"Win32_NetworkManagement_MobileBroadband\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -1218,11 +1223,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IMbnDevic
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMbnDeviceServicesManager {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IMbnDeviceServicesManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IMbnDeviceServicesManager {
@@ -1252,6 +1252,11 @@ pub struct IMbnDeviceServicesManager_Vtbl {
 #[doc = "*Required features: `\"Win32_NetworkManagement_MobileBroadband\"`*"]
 #[repr(transparent)]
 pub struct IMbnInterface(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMbnInterface {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMbnInterface {
     #[doc = "*Required features: `\"Win32_NetworkManagement_MobileBroadband\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -1334,11 +1339,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMbnI
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMbnInterface {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMbnInterface {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1391,6 +1391,11 @@ pub struct IMbnInterface_Vtbl {
 #[doc = "*Required features: `\"Win32_NetworkManagement_MobileBroadband\"`*"]
 #[repr(transparent)]
 pub struct IMbnInterfaceEvents(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMbnInterfaceEvents {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMbnInterfaceEvents {
     #[doc = "*Required features: `\"Win32_NetworkManagement_MobileBroadband\"`*"]
     pub unsafe fn OnInterfaceCapabilityAvailable<'a, Param0: ::windows::core::IntoParam<'a, IMbnInterface>>(&self, newinterface: Param0) -> ::windows::core::Result<()> {
@@ -1445,11 +1450,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMbnI
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMbnInterfaceEvents {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMbnInterfaceEvents {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1481,6 +1481,11 @@ pub struct IMbnInterfaceEvents_Vtbl {
 #[doc = "*Required features: `\"Win32_NetworkManagement_MobileBroadband\"`*"]
 #[repr(transparent)]
 pub struct IMbnInterfaceManager(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMbnInterfaceManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMbnInterfaceManager {
     #[doc = "*Required features: `\"Win32_NetworkManagement_MobileBroadband\"`*"]
     pub unsafe fn GetInterface<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, interfaceid: Param0) -> ::windows::core::Result<IMbnInterface> {
@@ -1514,11 +1519,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMbnI
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMbnInterfaceManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMbnInterfaceManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1547,6 +1547,11 @@ pub struct IMbnInterfaceManager_Vtbl {
 #[doc = "*Required features: `\"Win32_NetworkManagement_MobileBroadband\"`*"]
 #[repr(transparent)]
 pub struct IMbnInterfaceManagerEvents(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMbnInterfaceManagerEvents {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMbnInterfaceManagerEvents {
     #[doc = "*Required features: `\"Win32_NetworkManagement_MobileBroadband\"`*"]
     pub unsafe fn OnInterfaceArrival<'a, Param0: ::windows::core::IntoParam<'a, IMbnInterface>>(&self, newinterface: Param0) -> ::windows::core::Result<()> {
@@ -1577,11 +1582,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMbnI
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMbnInterfaceManagerEvents {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMbnInterfaceManagerEvents {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1607,6 +1607,11 @@ pub struct IMbnInterfaceManagerEvents_Vtbl {
 #[doc = "*Required features: `\"Win32_NetworkManagement_MobileBroadband\"`*"]
 #[repr(transparent)]
 pub struct IMbnMultiCarrier(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMbnMultiCarrier {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMbnMultiCarrier {
     #[doc = "*Required features: `\"Win32_NetworkManagement_MobileBroadband\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -1662,11 +1667,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMbnM
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMbnMultiCarrier {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMbnMultiCarrier {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1708,6 +1708,11 @@ pub struct IMbnMultiCarrier_Vtbl {
 #[doc = "*Required features: `\"Win32_NetworkManagement_MobileBroadband\"`*"]
 #[repr(transparent)]
 pub struct IMbnMultiCarrierEvents(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMbnMultiCarrierEvents {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMbnMultiCarrierEvents {
     #[doc = "*Required features: `\"Win32_NetworkManagement_MobileBroadband\"`*"]
     pub unsafe fn OnSetHomeProviderComplete<'a, Param0: ::windows::core::IntoParam<'a, IMbnMultiCarrier>>(&self, mbninterface: Param0, requestid: u32, status: ::windows::core::HRESULT) -> ::windows::core::Result<()> {
@@ -1750,11 +1755,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMbnM
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMbnMultiCarrierEvents {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMbnMultiCarrierEvents {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1783,6 +1783,11 @@ pub struct IMbnMultiCarrierEvents_Vtbl {
 #[doc = "*Required features: `\"Win32_NetworkManagement_MobileBroadband\"`*"]
 #[repr(transparent)]
 pub struct IMbnPin(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMbnPin {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMbnPin {
     #[doc = "*Required features: `\"Win32_NetworkManagement_MobileBroadband\"`*"]
     pub unsafe fn PinType(&self) -> ::windows::core::Result<MBN_PIN_TYPE> {
@@ -1860,11 +1865,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMbnP
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMbnPin {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMbnPin {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1899,6 +1899,11 @@ pub struct IMbnPin_Vtbl {
 #[doc = "*Required features: `\"Win32_NetworkManagement_MobileBroadband\"`*"]
 #[repr(transparent)]
 pub struct IMbnPinEvents(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMbnPinEvents {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMbnPinEvents {
     #[doc = "*Required features: `\"Win32_NetworkManagement_MobileBroadband\"`*"]
     pub unsafe fn OnEnableComplete<'a, Param0: ::windows::core::IntoParam<'a, IMbnPin>>(&self, pin: Param0, pininfo: *const MBN_PIN_INFO, requestid: u32, status: ::windows::core::HRESULT) -> ::windows::core::Result<()> {
@@ -1941,11 +1946,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMbnP
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMbnPinEvents {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMbnPinEvents {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1974,6 +1974,11 @@ pub struct IMbnPinEvents_Vtbl {
 #[doc = "*Required features: `\"Win32_NetworkManagement_MobileBroadband\"`*"]
 #[repr(transparent)]
 pub struct IMbnPinManager(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMbnPinManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMbnPinManager {
     #[doc = "*Required features: `\"Win32_NetworkManagement_MobileBroadband\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -2012,11 +2017,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMbnP
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMbnPinManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMbnPinManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2046,6 +2046,11 @@ pub struct IMbnPinManager_Vtbl {
 #[doc = "*Required features: `\"Win32_NetworkManagement_MobileBroadband\"`*"]
 #[repr(transparent)]
 pub struct IMbnPinManagerEvents(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMbnPinManagerEvents {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMbnPinManagerEvents {
     #[doc = "*Required features: `\"Win32_NetworkManagement_MobileBroadband\"`*"]
     pub unsafe fn OnPinListAvailable<'a, Param0: ::windows::core::IntoParam<'a, IMbnPinManager>>(&self, pinmanager: Param0) -> ::windows::core::Result<()> {
@@ -2076,11 +2081,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMbnP
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMbnPinManagerEvents {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMbnPinManagerEvents {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2106,6 +2106,11 @@ pub struct IMbnPinManagerEvents_Vtbl {
 #[doc = "*Required features: `\"Win32_NetworkManagement_MobileBroadband\"`*"]
 #[repr(transparent)]
 pub struct IMbnRadio(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMbnRadio {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMbnRadio {
     #[doc = "*Required features: `\"Win32_NetworkManagement_MobileBroadband\"`*"]
     pub unsafe fn SoftwareRadioState(&self) -> ::windows::core::Result<MBN_RADIO> {
@@ -2143,11 +2148,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMbnR
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMbnRadio {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMbnRadio {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2174,6 +2174,11 @@ pub struct IMbnRadio_Vtbl {
 #[doc = "*Required features: `\"Win32_NetworkManagement_MobileBroadband\"`*"]
 #[repr(transparent)]
 pub struct IMbnRadioEvents(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMbnRadioEvents {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMbnRadioEvents {
     #[doc = "*Required features: `\"Win32_NetworkManagement_MobileBroadband\"`*"]
     pub unsafe fn OnRadioStateChange<'a, Param0: ::windows::core::IntoParam<'a, IMbnRadio>>(&self, newinterface: Param0) -> ::windows::core::Result<()> {
@@ -2204,11 +2209,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMbnR
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMbnRadioEvents {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMbnRadioEvents {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2234,6 +2234,11 @@ pub struct IMbnRadioEvents_Vtbl {
 #[doc = "*Required features: `\"Win32_NetworkManagement_MobileBroadband\"`*"]
 #[repr(transparent)]
 pub struct IMbnRegistration(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMbnRegistration {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMbnRegistration {
     #[doc = "*Required features: `\"Win32_NetworkManagement_MobileBroadband\"`*"]
     pub unsafe fn GetRegisterState(&self) -> ::windows::core::Result<MBN_REGISTER_STATE> {
@@ -2309,11 +2314,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMbnR
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMbnRegistration {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMbnRegistration {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2356,6 +2356,11 @@ pub struct IMbnRegistration_Vtbl {
 #[doc = "*Required features: `\"Win32_NetworkManagement_MobileBroadband\"`*"]
 #[repr(transparent)]
 pub struct IMbnRegistrationEvents(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMbnRegistrationEvents {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMbnRegistrationEvents {
     #[doc = "*Required features: `\"Win32_NetworkManagement_MobileBroadband\"`*"]
     pub unsafe fn OnRegisterModeAvailable<'a, Param0: ::windows::core::IntoParam<'a, IMbnRegistration>>(&self, newinterface: Param0) -> ::windows::core::Result<()> {
@@ -2394,11 +2399,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMbnR
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMbnRegistrationEvents {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMbnRegistrationEvents {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2426,6 +2426,11 @@ pub struct IMbnRegistrationEvents_Vtbl {
 #[doc = "*Required features: `\"Win32_NetworkManagement_MobileBroadband\"`*"]
 #[repr(transparent)]
 pub struct IMbnServiceActivation(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMbnServiceActivation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMbnServiceActivation {
     #[doc = "*Required features: `\"Win32_NetworkManagement_MobileBroadband\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -2452,11 +2457,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IMbnServi
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMbnServiceActivation {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IMbnServiceActivation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IMbnServiceActivation {
@@ -2486,6 +2486,11 @@ pub struct IMbnServiceActivation_Vtbl {
 #[doc = "*Required features: `\"Win32_NetworkManagement_MobileBroadband\"`*"]
 #[repr(transparent)]
 pub struct IMbnServiceActivationEvents(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMbnServiceActivationEvents {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMbnServiceActivationEvents {
     #[doc = "*Required features: `\"Win32_NetworkManagement_MobileBroadband\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -2511,11 +2516,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IMbnServi
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMbnServiceActivationEvents {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IMbnServiceActivationEvents {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IMbnServiceActivationEvents {
@@ -2545,6 +2545,11 @@ pub struct IMbnServiceActivationEvents_Vtbl {
 #[doc = "*Required features: `\"Win32_NetworkManagement_MobileBroadband\"`*"]
 #[repr(transparent)]
 pub struct IMbnSignal(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMbnSignal {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMbnSignal {
     #[doc = "*Required features: `\"Win32_NetworkManagement_MobileBroadband\"`*"]
     pub unsafe fn GetSignalStrength(&self) -> ::windows::core::Result<u32> {
@@ -2577,11 +2582,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMbnS
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMbnSignal {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMbnSignal {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2607,6 +2607,11 @@ pub struct IMbnSignal_Vtbl {
 #[doc = "*Required features: `\"Win32_NetworkManagement_MobileBroadband\"`*"]
 #[repr(transparent)]
 pub struct IMbnSignalEvents(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMbnSignalEvents {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMbnSignalEvents {
     #[doc = "*Required features: `\"Win32_NetworkManagement_MobileBroadband\"`*"]
     pub unsafe fn OnSignalStateChange<'a, Param0: ::windows::core::IntoParam<'a, IMbnSignal>>(&self, newinterface: Param0) -> ::windows::core::Result<()> {
@@ -2633,11 +2638,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMbnS
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMbnSignalEvents {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMbnSignalEvents {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2662,6 +2662,11 @@ pub struct IMbnSignalEvents_Vtbl {
 #[doc = "*Required features: `\"Win32_NetworkManagement_MobileBroadband\"`*"]
 #[repr(transparent)]
 pub struct IMbnSms(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMbnSms {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMbnSms {
     #[doc = "*Required features: `\"Win32_NetworkManagement_MobileBroadband\"`*"]
     pub unsafe fn GetSmsConfiguration(&self) -> ::windows::core::Result<IMbnSmsConfiguration> {
@@ -2726,11 +2731,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMbnS
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMbnSms {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMbnSms {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2768,6 +2768,11 @@ pub struct IMbnSms_Vtbl {
 #[doc = "*Required features: `\"Win32_NetworkManagement_MobileBroadband\"`*"]
 #[repr(transparent)]
 pub struct IMbnSmsConfiguration(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMbnSmsConfiguration {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMbnSmsConfiguration {
     #[doc = "*Required features: `\"Win32_NetworkManagement_MobileBroadband\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -2819,11 +2824,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMbnS
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMbnSmsConfiguration {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMbnSmsConfiguration {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2856,6 +2856,11 @@ pub struct IMbnSmsConfiguration_Vtbl {
 #[doc = "*Required features: `\"Win32_NetworkManagement_MobileBroadband\"`*"]
 #[repr(transparent)]
 pub struct IMbnSmsEvents(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMbnSmsEvents {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMbnSmsEvents {
     #[doc = "*Required features: `\"Win32_NetworkManagement_MobileBroadband\"`*"]
     pub unsafe fn OnSmsConfigurationChange<'a, Param0: ::windows::core::IntoParam<'a, IMbnSms>>(&self, sms: Param0) -> ::windows::core::Result<()> {
@@ -2908,11 +2913,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMbnS
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMbnSmsEvents {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMbnSmsEvents {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2949,6 +2949,11 @@ pub struct IMbnSmsEvents_Vtbl {
 #[doc = "*Required features: `\"Win32_NetworkManagement_MobileBroadband\"`*"]
 #[repr(transparent)]
 pub struct IMbnSmsReadMsgPdu(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMbnSmsReadMsgPdu {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMbnSmsReadMsgPdu {
     #[doc = "*Required features: `\"Win32_NetworkManagement_MobileBroadband\"`*"]
     pub unsafe fn Index(&self) -> ::windows::core::Result<u32> {
@@ -2993,11 +2998,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMbnS
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMbnSmsReadMsgPdu {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMbnSmsReadMsgPdu {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3031,6 +3031,11 @@ pub struct IMbnSmsReadMsgPdu_Vtbl {
 #[doc = "*Required features: `\"Win32_NetworkManagement_MobileBroadband\"`*"]
 #[repr(transparent)]
 pub struct IMbnSmsReadMsgTextCdma(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMbnSmsReadMsgTextCdma {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMbnSmsReadMsgTextCdma {
     #[doc = "*Required features: `\"Win32_NetworkManagement_MobileBroadband\"`*"]
     pub unsafe fn Index(&self) -> ::windows::core::Result<u32> {
@@ -3096,11 +3101,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMbnS
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMbnSmsReadMsgTextCdma {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMbnSmsReadMsgTextCdma {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3141,6 +3141,11 @@ pub struct IMbnSmsReadMsgTextCdma_Vtbl {
 #[doc = "*Required features: `\"Win32_NetworkManagement_MobileBroadband\"`*"]
 #[repr(transparent)]
 pub struct IMbnSubscriberInformation(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMbnSubscriberInformation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMbnSubscriberInformation {
     #[doc = "*Required features: `\"Win32_NetworkManagement_MobileBroadband\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -3181,11 +3186,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMbnS
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMbnSubscriberInformation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMbnSubscriberInformation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3221,6 +3221,11 @@ pub struct IMbnSubscriberInformation_Vtbl {
 #[doc = "*Required features: `\"Win32_NetworkManagement_MobileBroadband\"`*"]
 #[repr(transparent)]
 pub struct IMbnVendorSpecificEvents(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMbnVendorSpecificEvents {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMbnVendorSpecificEvents {
     #[doc = "*Required features: `\"Win32_NetworkManagement_MobileBroadband\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -3251,11 +3256,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IMbnVendo
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMbnVendorSpecificEvents {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IMbnVendorSpecificEvents {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IMbnVendorSpecificEvents {
@@ -3289,6 +3289,11 @@ pub struct IMbnVendorSpecificEvents_Vtbl {
 #[doc = "*Required features: `\"Win32_NetworkManagement_MobileBroadband\"`*"]
 #[repr(transparent)]
 pub struct IMbnVendorSpecificOperation(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMbnVendorSpecificOperation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMbnVendorSpecificOperation {
     #[doc = "*Required features: `\"Win32_NetworkManagement_MobileBroadband\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -3315,11 +3320,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IMbnVendo
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMbnVendorSpecificOperation {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IMbnVendorSpecificOperation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IMbnVendorSpecificOperation {
@@ -3373,6 +3373,7 @@ impl ::core::default::Default for MBN_ACTIVATION_STATE {
 }
 unsafe impl ::windows::core::Abi for MBN_ACTIVATION_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MBN_ACTIVATION_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3404,6 +3405,7 @@ impl ::core::default::Default for MBN_AUTH_PROTOCOL {
 }
 unsafe impl ::windows::core::Abi for MBN_AUTH_PROTOCOL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MBN_AUTH_PROTOCOL {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3467,6 +3469,7 @@ impl ::core::default::Default for MBN_BAND_CLASS {
 }
 unsafe impl ::windows::core::Abi for MBN_BAND_CLASS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MBN_BAND_CLASS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3496,6 +3499,7 @@ impl ::core::default::Default for MBN_CELLULAR_CLASS {
 }
 unsafe impl ::windows::core::Abi for MBN_CELLULAR_CLASS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MBN_CELLULAR_CLASS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3523,6 +3527,7 @@ impl ::core::default::Default for MBN_COMPRESSION {
 }
 unsafe impl ::windows::core::Abi for MBN_COMPRESSION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MBN_COMPRESSION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3550,6 +3555,7 @@ impl ::core::default::Default for MBN_CONNECTION_MODE {
 }
 unsafe impl ::windows::core::Abi for MBN_CONNECTION_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MBN_CONNECTION_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3591,6 +3597,7 @@ impl ::core::fmt::Debug for MBN_CONTEXT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MBN_CONTEXT {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MBN_CONTEXT {
@@ -3631,6 +3638,7 @@ impl ::core::default::Default for MBN_CONTEXT_CONSTANTS {
 }
 unsafe impl ::windows::core::Abi for MBN_CONTEXT_CONSTANTS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MBN_CONTEXT_CONSTANTS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3668,6 +3676,7 @@ impl ::core::default::Default for MBN_CONTEXT_TYPE {
 }
 unsafe impl ::windows::core::Abi for MBN_CONTEXT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MBN_CONTEXT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3709,6 +3718,7 @@ impl ::core::default::Default for MBN_CTRL_CAPS {
 }
 unsafe impl ::windows::core::Abi for MBN_CTRL_CAPS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MBN_CTRL_CAPS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3766,6 +3776,7 @@ impl ::core::default::Default for MBN_DATA_CLASS {
 }
 unsafe impl ::windows::core::Abi for MBN_DATA_CLASS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MBN_DATA_CLASS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3795,6 +3806,7 @@ impl ::core::fmt::Debug for MBN_DEVICE_SERVICE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MBN_DEVICE_SERVICE {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MBN_DEVICE_SERVICE {
@@ -3831,6 +3843,7 @@ impl ::core::default::Default for MBN_DEVICE_SERVICES_INTERFACE_STATE {
 }
 unsafe impl ::windows::core::Abi for MBN_DEVICE_SERVICES_INTERFACE_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MBN_DEVICE_SERVICES_INTERFACE_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3856,6 +3869,7 @@ impl ::core::default::Default for MBN_DEVICE_SERVICE_SESSIONS_STATE {
 }
 unsafe impl ::windows::core::Abi for MBN_DEVICE_SERVICE_SESSIONS_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MBN_DEVICE_SERVICE_SESSIONS_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3923,6 +3937,7 @@ impl ::core::fmt::Debug for MBN_INTERFACE_CAPS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MBN_INTERFACE_CAPS {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MBN_INTERFACE_CAPS {
@@ -3963,6 +3978,7 @@ impl ::core::default::Default for MBN_INTERFACE_CAPS_CONSTANTS {
 }
 unsafe impl ::windows::core::Abi for MBN_INTERFACE_CAPS_CONSTANTS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MBN_INTERFACE_CAPS_CONSTANTS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3994,6 +4010,7 @@ impl ::core::default::Default for MBN_MSG_STATUS {
 }
 unsafe impl ::windows::core::Abi for MBN_MSG_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MBN_MSG_STATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4021,6 +4038,7 @@ impl ::core::default::Default for MBN_PIN_CONSTANTS {
 }
 unsafe impl ::windows::core::Abi for MBN_PIN_CONSTANTS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MBN_PIN_CONSTANTS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4050,6 +4068,7 @@ impl ::core::default::Default for MBN_PIN_FORMAT {
 }
 unsafe impl ::windows::core::Abi for MBN_PIN_FORMAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MBN_PIN_FORMAT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4076,6 +4095,7 @@ impl ::core::fmt::Debug for MBN_PIN_INFO {
 }
 unsafe impl ::windows::core::Abi for MBN_PIN_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MBN_PIN_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -4109,6 +4129,7 @@ impl ::core::default::Default for MBN_PIN_MODE {
 }
 unsafe impl ::windows::core::Abi for MBN_PIN_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MBN_PIN_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4138,6 +4159,7 @@ impl ::core::default::Default for MBN_PIN_STATE {
 }
 unsafe impl ::windows::core::Abi for MBN_PIN_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MBN_PIN_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4183,6 +4205,7 @@ impl ::core::default::Default for MBN_PIN_TYPE {
 }
 unsafe impl ::windows::core::Abi for MBN_PIN_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MBN_PIN_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4213,6 +4236,7 @@ impl ::core::fmt::Debug for MBN_PROVIDER {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MBN_PROVIDER {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MBN_PROVIDER {
@@ -4252,6 +4276,7 @@ impl ::core::fmt::Debug for MBN_PROVIDER2 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MBN_PROVIDER2 {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MBN_PROVIDER2 {
@@ -4288,6 +4313,7 @@ impl ::core::default::Default for MBN_PROVIDER_CONSTANTS {
 }
 unsafe impl ::windows::core::Abi for MBN_PROVIDER_CONSTANTS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MBN_PROVIDER_CONSTANTS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4325,6 +4351,7 @@ impl ::core::default::Default for MBN_PROVIDER_STATE {
 }
 unsafe impl ::windows::core::Abi for MBN_PROVIDER_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MBN_PROVIDER_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4352,6 +4379,7 @@ impl ::core::default::Default for MBN_RADIO {
 }
 unsafe impl ::windows::core::Abi for MBN_RADIO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MBN_RADIO {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4393,6 +4421,7 @@ impl ::core::default::Default for MBN_READY_STATE {
 }
 unsafe impl ::windows::core::Abi for MBN_READY_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MBN_READY_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4422,6 +4451,7 @@ impl ::core::default::Default for MBN_REGISTER_MODE {
 }
 unsafe impl ::windows::core::Abi for MBN_REGISTER_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MBN_REGISTER_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4459,6 +4489,7 @@ impl ::core::default::Default for MBN_REGISTER_STATE {
 }
 unsafe impl ::windows::core::Abi for MBN_REGISTER_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MBN_REGISTER_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4486,6 +4517,7 @@ impl ::core::default::Default for MBN_REGISTRATION_CONSTANTS {
 }
 unsafe impl ::windows::core::Abi for MBN_REGISTRATION_CONSTANTS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MBN_REGISTRATION_CONSTANTS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4517,6 +4549,7 @@ impl ::core::default::Default for MBN_SIGNAL_CONSTANTS {
 }
 unsafe impl ::windows::core::Abi for MBN_SIGNAL_CONSTANTS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MBN_SIGNAL_CONSTANTS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4550,6 +4583,7 @@ impl ::core::default::Default for MBN_SMS_CAPS {
 }
 unsafe impl ::windows::core::Abi for MBN_SMS_CAPS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MBN_SMS_CAPS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4593,6 +4627,7 @@ impl ::core::default::Default for MBN_SMS_CDMA_ENCODING {
 }
 unsafe impl ::windows::core::Abi for MBN_SMS_CDMA_ENCODING {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MBN_SMS_CDMA_ENCODING {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4632,6 +4667,7 @@ impl ::core::default::Default for MBN_SMS_CDMA_LANG {
 }
 unsafe impl ::windows::core::Abi for MBN_SMS_CDMA_LANG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MBN_SMS_CDMA_LANG {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4657,6 +4693,7 @@ impl ::core::fmt::Debug for MBN_SMS_FILTER {
 }
 unsafe impl ::windows::core::Abi for MBN_SMS_FILTER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MBN_SMS_FILTER {
     fn eq(&self, other: &Self) -> bool {
@@ -4698,6 +4735,7 @@ impl ::core::default::Default for MBN_SMS_FLAG {
 }
 unsafe impl ::windows::core::Abi for MBN_SMS_FLAG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MBN_SMS_FLAG {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4727,6 +4765,7 @@ impl ::core::default::Default for MBN_SMS_FORMAT {
 }
 unsafe impl ::windows::core::Abi for MBN_SMS_FORMAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MBN_SMS_FORMAT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4756,6 +4795,7 @@ impl ::core::default::Default for MBN_SMS_STATUS_FLAG {
 }
 unsafe impl ::windows::core::Abi for MBN_SMS_STATUS_FLAG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MBN_SMS_STATUS_FLAG {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4781,6 +4821,7 @@ impl ::core::fmt::Debug for MBN_SMS_STATUS_INFO {
 }
 unsafe impl ::windows::core::Abi for MBN_SMS_STATUS_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MBN_SMS_STATUS_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -4816,6 +4857,7 @@ impl ::core::default::Default for MBN_VOICE_CALL_STATE {
 }
 unsafe impl ::windows::core::Abi for MBN_VOICE_CALL_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MBN_VOICE_CALL_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4847,6 +4889,7 @@ impl ::core::default::Default for MBN_VOICE_CLASS {
 }
 unsafe impl ::windows::core::Abi for MBN_VOICE_CLASS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MBN_VOICE_CLASS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4880,6 +4923,7 @@ impl ::core::default::Default for WWAEXT_SMS_CONSTANTS {
 }
 unsafe impl ::windows::core::Abi for WWAEXT_SMS_CONSTANTS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WWAEXT_SMS_CONSTANTS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4904,6 +4948,7 @@ impl ::core::fmt::Debug for __DummyPinType__ {
 }
 unsafe impl ::windows::core::Abi for __DummyPinType__ {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for __DummyPinType__ {
     fn eq(&self, other: &Self) -> bool {
@@ -4962,6 +5007,7 @@ impl ::core::fmt::Debug for __mbnapi_ReferenceRemainingTypes__ {
 }
 unsafe impl ::windows::core::Abi for __mbnapi_ReferenceRemainingTypes__ {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for __mbnapi_ReferenceRemainingTypes__ {
     fn eq(&self, other: &Self) -> bool {

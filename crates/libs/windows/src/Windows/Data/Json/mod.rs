@@ -2,6 +2,11 @@
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IJsonArray(::windows::core::IUnknown);
+impl ::core::clone::Clone for IJsonArray {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IJsonArray {
     type Vtable = IJsonArray_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x08c1ddb6_0cbd_4a9a_b5d3_2f852dc37e81);
@@ -19,6 +24,11 @@ pub struct IJsonArray_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IJsonArrayStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IJsonArrayStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IJsonArrayStatics {
     type Vtable = IJsonArrayStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xdb1434a9_e164_499f_93e2_8a8f49bb90ba);
@@ -33,6 +43,11 @@ pub struct IJsonArrayStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IJsonErrorStatics2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IJsonErrorStatics2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IJsonErrorStatics2 {
     type Vtable = IJsonErrorStatics2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x404030da_87d0_436c_83ab_fc7b12c0cc26);
@@ -46,6 +61,11 @@ pub struct IJsonErrorStatics2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IJsonObject(::windows::core::IUnknown);
+impl ::core::clone::Clone for IJsonObject {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IJsonObject {
     type Vtable = IJsonObject_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x064e24dd_29c2_4f83_9ac1_9ee11578beb3);
@@ -65,6 +85,11 @@ pub struct IJsonObject_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IJsonObjectStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IJsonObjectStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IJsonObjectStatics {
     type Vtable = IJsonObjectStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x2289f159_54de_45d8_abcc_22603fa066a0);
@@ -79,6 +104,11 @@ pub struct IJsonObjectStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IJsonObjectWithDefaultValues(::windows::core::IUnknown);
+impl ::core::clone::Clone for IJsonObjectWithDefaultValues {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IJsonObjectWithDefaultValues {
     type Vtable = IJsonObjectWithDefaultValues_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd960d2a2_b7f0_4f00_8e44_d82cf415ea13);
@@ -97,6 +127,11 @@ pub struct IJsonObjectWithDefaultValues_Vtbl {
 #[doc = "*Required features: `\"Data_Json\"`*"]
 #[repr(transparent)]
 pub struct IJsonValue(::windows::core::IUnknown);
+impl ::core::clone::Clone for IJsonValue {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IJsonValue {
     #[doc = "*Required features: `\"Data_Json\"`*"]
     pub fn ValueType(&self) -> ::windows::core::Result<JsonValueType> {
@@ -195,11 +230,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IJsonValue {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IJsonValue {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -213,7 +243,6 @@ impl ::core::fmt::Debug for IJsonValue {
 }
 unsafe impl ::windows::core::RuntimeType for IJsonValue {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{a3219ecb-f0b3-4dcd-beee-19d48cd3ed1e}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -237,6 +266,11 @@ pub struct IJsonValue_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IJsonValueStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IJsonValueStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IJsonValueStatics {
     type Vtable = IJsonValueStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x5f6b544a_2f53_48e1_91a3_f78b50a6345c);
@@ -254,6 +288,11 @@ pub struct IJsonValueStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IJsonValueStatics2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IJsonValueStatics2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IJsonValueStatics2 {
     type Vtable = IJsonValueStatics2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1d9ecbe4_3fe8_4335_8392_93d8e36865f0);
@@ -496,11 +535,6 @@ impl JsonArray {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for JsonArray {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for JsonArray {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -514,7 +548,6 @@ impl ::core::fmt::Debug for JsonArray {
 }
 unsafe impl ::windows::core::RuntimeType for JsonArray {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Data.Json.JsonArray;{08c1ddb6-0cbd-4a9a-b5d3-2f852dc37e81})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -727,6 +760,7 @@ impl ::core::default::Default for JsonErrorStatus {
 }
 unsafe impl ::windows::core::Abi for JsonErrorStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for JsonErrorStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -735,7 +769,6 @@ impl ::core::fmt::Debug for JsonErrorStatus {
 }
 unsafe impl ::windows::core::RuntimeType for JsonErrorStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Data.Json.JsonErrorStatus;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1003,11 +1036,6 @@ impl JsonObject {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for JsonObject {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for JsonObject {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1021,7 +1049,6 @@ impl ::core::fmt::Debug for JsonObject {
 }
 unsafe impl ::windows::core::RuntimeType for JsonObject {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Data.Json.JsonObject;{064e24dd-29c2-4f83-9ac1-9ee11578beb3})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1313,11 +1340,6 @@ impl JsonValue {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for JsonValue {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for JsonValue {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1331,7 +1353,6 @@ impl ::core::fmt::Debug for JsonValue {
 }
 unsafe impl ::windows::core::RuntimeType for JsonValue {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Data.Json.JsonValue;{a3219ecb-f0b3-4dcd-beee-19d48cd3ed1e})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1458,6 +1479,7 @@ impl ::core::default::Default for JsonValueType {
 }
 unsafe impl ::windows::core::Abi for JsonValueType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for JsonValueType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1466,7 +1488,6 @@ impl ::core::fmt::Debug for JsonValueType {
 }
 unsafe impl ::windows::core::RuntimeType for JsonValueType {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Data.Json.JsonValueType;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }

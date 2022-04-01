@@ -30,6 +30,7 @@ impl ::core::default::Default for D2D1_2DAFFINETRANSFORM_INTERPOLATION_MODE {
 }
 unsafe impl ::windows::core::Abi for D2D1_2DAFFINETRANSFORM_INTERPOLATION_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_2DAFFINETRANSFORM_INTERPOLATION_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -63,6 +64,7 @@ impl ::core::default::Default for D2D1_ALPHA_MODE {
 }
 unsafe impl ::windows::core::Abi for D2D1_ALPHA_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_ALPHA_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -89,6 +91,7 @@ impl ::core::fmt::Debug for D2D1_BEZIER_SEGMENT {
 }
 unsafe impl ::windows::core::Abi for D2D1_BEZIER_SEGMENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D2D1_BEZIER_SEGMENT {
     fn eq(&self, other: &Self) -> bool {
@@ -172,6 +175,7 @@ impl ::core::default::Default for D2D1_BLEND_MODE {
 }
 unsafe impl ::windows::core::Abi for D2D1_BLEND_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_BLEND_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -201,6 +205,7 @@ impl ::core::default::Default for D2D1_BORDER_MODE {
 }
 unsafe impl ::windows::core::Abi for D2D1_BORDER_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_BORDER_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -230,6 +235,7 @@ impl ::core::default::Default for D2D1_COLORMATRIX_ALPHA_MODE {
 }
 unsafe impl ::windows::core::Abi for D2D1_COLORMATRIX_ALPHA_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_COLORMATRIX_ALPHA_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -257,6 +263,7 @@ impl ::core::fmt::Debug for D2D1_COLOR_F {
 }
 unsafe impl ::windows::core::Abi for D2D1_COLOR_F {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D2D1_COLOR_F {
     fn eq(&self, other: &Self) -> bool {
@@ -314,6 +321,7 @@ impl ::core::default::Default for D2D1_COMPOSITE_MODE {
 }
 unsafe impl ::windows::core::Abi for D2D1_COMPOSITE_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_COMPOSITE_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -343,6 +351,7 @@ impl ::core::default::Default for D2D1_FIGURE_BEGIN {
 }
 unsafe impl ::windows::core::Abi for D2D1_FIGURE_BEGIN {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_FIGURE_BEGIN {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -372,6 +381,7 @@ impl ::core::default::Default for D2D1_FIGURE_END {
 }
 unsafe impl ::windows::core::Abi for D2D1_FIGURE_END {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_FIGURE_END {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -401,6 +411,7 @@ impl ::core::default::Default for D2D1_FILL_MODE {
 }
 unsafe impl ::windows::core::Abi for D2D1_FILL_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_FILL_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -432,6 +443,7 @@ impl ::core::default::Default for D2D1_PATH_SEGMENT {
 }
 unsafe impl ::windows::core::Abi for D2D1_PATH_SEGMENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_PATH_SEGMENT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -490,6 +502,7 @@ impl ::core::fmt::Debug for D2D1_PIXEL_FORMAT {
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 unsafe impl ::windows::core::Abi for D2D1_PIXEL_FORMAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 impl ::core::cmp::PartialEq for D2D1_PIXEL_FORMAT {
@@ -528,6 +541,7 @@ impl ::core::default::Default for D2D1_TURBULENCE_NOISE {
 }
 unsafe impl ::windows::core::Abi for D2D1_TURBULENCE_NOISE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_TURBULENCE_NOISE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -555,6 +569,7 @@ impl ::core::fmt::Debug for D2D_COLOR_F {
 }
 unsafe impl ::windows::core::Abi for D2D_COLOR_F {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D2D_COLOR_F {
     fn eq(&self, other: &Self) -> bool {
@@ -580,6 +595,7 @@ impl ::core::clone::Clone for D2D_MATRIX_3X2_F {
 }
 unsafe impl ::windows::core::Abi for D2D_MATRIX_3X2_F {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D2D_MATRIX_3X2_F {
     fn eq(&self, other: &Self) -> bool {
@@ -607,6 +623,7 @@ impl ::core::clone::Clone for D2D_MATRIX_3X2_F_0 {
 }
 unsafe impl ::windows::core::Abi for D2D_MATRIX_3X2_F_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D2D_MATRIX_3X2_F_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -642,6 +659,7 @@ impl ::core::fmt::Debug for D2D_MATRIX_3X2_F_0_0 {
 }
 unsafe impl ::windows::core::Abi for D2D_MATRIX_3X2_F_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D2D_MATRIX_3X2_F_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -677,6 +695,7 @@ impl ::core::fmt::Debug for D2D_MATRIX_3X2_F_0_1 {
 }
 unsafe impl ::windows::core::Abi for D2D_MATRIX_3X2_F_0_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D2D_MATRIX_3X2_F_0_1 {
     fn eq(&self, other: &Self) -> bool {
@@ -702,6 +721,7 @@ impl ::core::clone::Clone for D2D_MATRIX_4X3_F {
 }
 unsafe impl ::windows::core::Abi for D2D_MATRIX_4X3_F {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D2D_MATRIX_4X3_F {
     fn eq(&self, other: &Self) -> bool {
@@ -728,6 +748,7 @@ impl ::core::clone::Clone for D2D_MATRIX_4X3_F_0 {
 }
 unsafe impl ::windows::core::Abi for D2D_MATRIX_4X3_F_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D2D_MATRIX_4X3_F_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -769,6 +790,7 @@ impl ::core::fmt::Debug for D2D_MATRIX_4X3_F_0_0 {
 }
 unsafe impl ::windows::core::Abi for D2D_MATRIX_4X3_F_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D2D_MATRIX_4X3_F_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -794,6 +816,7 @@ impl ::core::clone::Clone for D2D_MATRIX_4X4_F {
 }
 unsafe impl ::windows::core::Abi for D2D_MATRIX_4X4_F {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D2D_MATRIX_4X4_F {
     fn eq(&self, other: &Self) -> bool {
@@ -820,6 +843,7 @@ impl ::core::clone::Clone for D2D_MATRIX_4X4_F_0 {
 }
 unsafe impl ::windows::core::Abi for D2D_MATRIX_4X4_F_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D2D_MATRIX_4X4_F_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -865,6 +889,7 @@ impl ::core::fmt::Debug for D2D_MATRIX_4X4_F_0_0 {
 }
 unsafe impl ::windows::core::Abi for D2D_MATRIX_4X4_F_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D2D_MATRIX_4X4_F_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -890,6 +915,7 @@ impl ::core::clone::Clone for D2D_MATRIX_5X4_F {
 }
 unsafe impl ::windows::core::Abi for D2D_MATRIX_5X4_F {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D2D_MATRIX_5X4_F {
     fn eq(&self, other: &Self) -> bool {
@@ -916,6 +942,7 @@ impl ::core::clone::Clone for D2D_MATRIX_5X4_F_0 {
 }
 unsafe impl ::windows::core::Abi for D2D_MATRIX_5X4_F_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D2D_MATRIX_5X4_F_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -986,6 +1013,7 @@ impl ::core::fmt::Debug for D2D_MATRIX_5X4_F_0_0 {
 }
 unsafe impl ::windows::core::Abi for D2D_MATRIX_5X4_F_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D2D_MATRIX_5X4_F_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -1017,6 +1045,7 @@ impl ::core::fmt::Debug for D2D_POINT_2F {
 }
 unsafe impl ::windows::core::Abi for D2D_POINT_2F {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D2D_POINT_2F {
     fn eq(&self, other: &Self) -> bool {
@@ -1048,6 +1077,7 @@ impl ::core::fmt::Debug for D2D_POINT_2U {
 }
 unsafe impl ::windows::core::Abi for D2D_POINT_2U {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D2D_POINT_2U {
     fn eq(&self, other: &Self) -> bool {
@@ -1081,6 +1111,7 @@ impl ::core::fmt::Debug for D2D_RECT_F {
 }
 unsafe impl ::windows::core::Abi for D2D_RECT_F {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D2D_RECT_F {
     fn eq(&self, other: &Self) -> bool {
@@ -1114,6 +1145,7 @@ impl ::core::fmt::Debug for D2D_RECT_U {
 }
 unsafe impl ::windows::core::Abi for D2D_RECT_U {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D2D_RECT_U {
     fn eq(&self, other: &Self) -> bool {
@@ -1145,6 +1177,7 @@ impl ::core::fmt::Debug for D2D_SIZE_F {
 }
 unsafe impl ::windows::core::Abi for D2D_SIZE_F {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D2D_SIZE_F {
     fn eq(&self, other: &Self) -> bool {
@@ -1176,6 +1209,7 @@ impl ::core::fmt::Debug for D2D_SIZE_U {
 }
 unsafe impl ::windows::core::Abi for D2D_SIZE_U {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D2D_SIZE_U {
     fn eq(&self, other: &Self) -> bool {
@@ -1207,6 +1241,7 @@ impl ::core::fmt::Debug for D2D_VECTOR_2F {
 }
 unsafe impl ::windows::core::Abi for D2D_VECTOR_2F {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D2D_VECTOR_2F {
     fn eq(&self, other: &Self) -> bool {
@@ -1239,6 +1274,7 @@ impl ::core::fmt::Debug for D2D_VECTOR_3F {
 }
 unsafe impl ::windows::core::Abi for D2D_VECTOR_3F {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D2D_VECTOR_3F {
     fn eq(&self, other: &Self) -> bool {
@@ -1272,6 +1308,7 @@ impl ::core::fmt::Debug for D2D_VECTOR_4F {
 }
 unsafe impl ::windows::core::Abi for D2D_VECTOR_4F {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D2D_VECTOR_4F {
     fn eq(&self, other: &Self) -> bool {
@@ -1287,6 +1324,11 @@ impl ::core::default::Default for D2D_VECTOR_4F {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D_Common\"`*"]
 #[repr(transparent)]
 pub struct ID2D1SimplifiedGeometrySink(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1SimplifiedGeometrySink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1SimplifiedGeometrySink {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D_Common\"`*"]
     pub unsafe fn SetFillMode(&self, fillmode: D2D1_FILL_MODE) {
@@ -1335,11 +1377,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for ID2D1Simp
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ID2D1SimplifiedGeometrySink {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for ID2D1SimplifiedGeometrySink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for ID2D1SimplifiedGeometrySink {

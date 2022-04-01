@@ -30,6 +30,7 @@ impl ::core::fmt::Debug for D3D9ON12_ARGS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3D9ON12_ARGS {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3D9ON12_ARGS {
@@ -78,6 +79,11 @@ pub unsafe fn Direct3DCreate9On12Ex(sdkversion: u32, poverridelist: *mut D3D9ON1
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D9on12\"`*"]
 #[repr(transparent)]
 pub struct IDirect3DDevice9On12(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirect3DDevice9On12 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirect3DDevice9On12 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D9on12\"`*"]
     pub unsafe fn GetD3D12Device(&self, riid: *const ::windows::core::GUID, ppvdevice: *mut *mut ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -112,11 +118,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IDirect3D
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDirect3DDevice9On12 {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IDirect3DDevice9On12 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IDirect3DDevice9On12 {

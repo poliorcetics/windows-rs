@@ -18,6 +18,7 @@ impl ::core::fmt::Debug for BINARY_BLOB_CREDENTIAL_INFO {
 }
 unsafe impl ::windows::core::Abi for BINARY_BLOB_CREDENTIAL_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for BINARY_BLOB_CREDENTIAL_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -49,6 +50,7 @@ impl ::core::fmt::Debug for CERT_CREDENTIAL_INFO {
 }
 unsafe impl ::windows::core::Abi for CERT_CREDENTIAL_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CERT_CREDENTIAL_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -110,6 +112,7 @@ impl ::core::fmt::Debug for CREDENTIALA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for CREDENTIALA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for CREDENTIALA {
@@ -172,6 +175,7 @@ impl ::core::fmt::Debug for CREDENTIALW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for CREDENTIALW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for CREDENTIALW {
@@ -208,6 +212,7 @@ impl ::core::fmt::Debug for CREDENTIAL_ATTRIBUTEA {
 }
 unsafe impl ::windows::core::Abi for CREDENTIAL_ATTRIBUTEA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CREDENTIAL_ATTRIBUTEA {
     fn eq(&self, other: &Self) -> bool {
@@ -241,6 +246,7 @@ impl ::core::fmt::Debug for CREDENTIAL_ATTRIBUTEW {
 }
 unsafe impl ::windows::core::Abi for CREDENTIAL_ATTRIBUTEW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CREDENTIAL_ATTRIBUTEW {
     fn eq(&self, other: &Self) -> bool {
@@ -280,6 +286,7 @@ impl ::core::fmt::Debug for CREDENTIAL_TARGET_INFORMATIONA {
 }
 unsafe impl ::windows::core::Abi for CREDENTIAL_TARGET_INFORMATIONA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CREDENTIAL_TARGET_INFORMATIONA {
     fn eq(&self, other: &Self) -> bool {
@@ -319,6 +326,7 @@ impl ::core::fmt::Debug for CREDENTIAL_TARGET_INFORMATIONW {
 }
 unsafe impl ::windows::core::Abi for CREDENTIAL_TARGET_INFORMATIONW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CREDENTIAL_TARGET_INFORMATIONW {
     fn eq(&self, other: &Self) -> bool {
@@ -360,6 +368,7 @@ impl ::core::default::Default for CREDSPP_SUBMIT_TYPE {
 }
 unsafe impl ::windows::core::Abi for CREDSPP_SUBMIT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CREDSPP_SUBMIT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -386,6 +395,7 @@ impl ::core::fmt::Debug for CREDSSP_CRED {
 }
 unsafe impl ::windows::core::Abi for CREDSSP_CRED {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CREDSSP_CRED {
     fn eq(&self, other: &Self) -> bool {
@@ -420,6 +430,7 @@ impl ::core::fmt::Debug for CREDSSP_CRED_EX {
 }
 unsafe impl ::windows::core::Abi for CREDSSP_CRED_EX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CREDSSP_CRED_EX {
     fn eq(&self, other: &Self) -> bool {
@@ -481,6 +492,7 @@ impl ::core::default::Default for CREDUIWIN_FLAGS {
 }
 unsafe impl ::windows::core::Abi for CREDUIWIN_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CREDUIWIN_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -568,6 +580,7 @@ impl ::core::default::Default for CREDUI_FLAGS {
 }
 unsafe impl ::windows::core::Abi for CREDUI_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CREDUI_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -629,6 +642,7 @@ impl ::core::fmt::Debug for CREDUI_INFOA {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
 unsafe impl ::windows::core::Abi for CREDUI_INFOA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
 impl ::core::cmp::PartialEq for CREDUI_INFOA {
@@ -671,6 +685,7 @@ impl ::core::fmt::Debug for CREDUI_INFOW {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
 unsafe impl ::windows::core::Abi for CREDUI_INFOW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
 impl ::core::cmp::PartialEq for CREDUI_INFOW {
@@ -715,6 +730,7 @@ impl ::core::default::Default for CRED_ENUMERATE_FLAGS {
 }
 unsafe impl ::windows::core::Abi for CRED_ENUMERATE_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CRED_ENUMERATE_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -786,6 +802,7 @@ impl ::core::default::Default for CRED_FLAGS {
 }
 unsafe impl ::windows::core::Abi for CRED_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CRED_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -849,6 +866,7 @@ impl ::core::default::Default for CRED_MARSHAL_TYPE {
 }
 unsafe impl ::windows::core::Abi for CRED_MARSHAL_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CRED_MARSHAL_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -892,6 +910,7 @@ impl ::core::default::Default for CRED_PACK_FLAGS {
 }
 unsafe impl ::windows::core::Abi for CRED_PACK_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CRED_PACK_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -951,6 +970,7 @@ impl ::core::default::Default for CRED_PERSIST {
 }
 unsafe impl ::windows::core::Abi for CRED_PERSIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CRED_PERSIST {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -984,6 +1004,7 @@ impl ::core::default::Default for CRED_PROTECTION_TYPE {
 }
 unsafe impl ::windows::core::Abi for CRED_PROTECTION_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CRED_PROTECTION_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1113,6 +1134,7 @@ impl ::core::default::Default for CRED_TYPE {
 }
 unsafe impl ::windows::core::Abi for CRED_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CRED_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1934,6 +1956,7 @@ impl ::core::fmt::Debug for KeyCredentialManagerInfo {
 }
 unsafe impl ::windows::core::Abi for KeyCredentialManagerInfo {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KeyCredentialManagerInfo {
     fn eq(&self, other: &Self) -> bool {
@@ -1979,6 +2002,7 @@ impl ::core::default::Default for KeyCredentialManagerOperationErrorStates {
 }
 unsafe impl ::windows::core::Abi for KeyCredentialManagerOperationErrorStates {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KeyCredentialManagerOperationErrorStates {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2036,6 +2060,7 @@ impl ::core::default::Default for KeyCredentialManagerOperationType {
 }
 unsafe impl ::windows::core::Abi for KeyCredentialManagerOperationType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KeyCredentialManagerOperationType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2139,6 +2164,7 @@ impl ::core::fmt::Debug for OPENCARDNAMEA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for OPENCARDNAMEA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for OPENCARDNAMEA {
@@ -2223,6 +2249,7 @@ impl ::core::fmt::Debug for OPENCARDNAMEW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for OPENCARDNAMEW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for OPENCARDNAMEW {
@@ -2297,6 +2324,7 @@ impl ::core::fmt::Debug for OPENCARDNAME_EXA {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_UI_WindowsAndMessaging"))]
 unsafe impl ::windows::core::Abi for OPENCARDNAME_EXA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_UI_WindowsAndMessaging"))]
 impl ::core::cmp::PartialEq for OPENCARDNAME_EXA {
@@ -2371,6 +2399,7 @@ impl ::core::fmt::Debug for OPENCARDNAME_EXW {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_UI_WindowsAndMessaging"))]
 unsafe impl ::windows::core::Abi for OPENCARDNAME_EXW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_UI_WindowsAndMessaging"))]
 impl ::core::cmp::PartialEq for OPENCARDNAME_EXW {
@@ -2435,6 +2464,7 @@ impl ::core::fmt::Debug for OPENCARD_SEARCH_CRITERIAA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for OPENCARD_SEARCH_CRITERIAA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for OPENCARD_SEARCH_CRITERIAA {
@@ -2499,6 +2529,7 @@ impl ::core::fmt::Debug for OPENCARD_SEARCH_CRITERIAW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for OPENCARD_SEARCH_CRITERIAW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for OPENCARD_SEARCH_CRITERIAW {
@@ -2530,6 +2561,7 @@ impl ::core::clone::Clone for READER_SEL_REQUEST {
 }
 unsafe impl ::windows::core::Abi for READER_SEL_REQUEST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for READER_SEL_REQUEST {
     fn eq(&self, other: &Self) -> bool {
@@ -2556,6 +2588,7 @@ impl ::core::clone::Clone for READER_SEL_REQUEST_0 {
 }
 unsafe impl ::windows::core::Abi for READER_SEL_REQUEST_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for READER_SEL_REQUEST_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -2591,6 +2624,7 @@ impl ::core::fmt::Debug for READER_SEL_REQUEST_0_0 {
 }
 unsafe impl ::windows::core::Abi for READER_SEL_REQUEST_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for READER_SEL_REQUEST_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -2623,6 +2657,7 @@ impl ::core::fmt::Debug for READER_SEL_REQUEST_0_1 {
 }
 unsafe impl ::windows::core::Abi for READER_SEL_REQUEST_0_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for READER_SEL_REQUEST_0_1 {
     fn eq(&self, other: &Self) -> bool {
@@ -2658,6 +2693,7 @@ impl ::core::default::Default for READER_SEL_REQUEST_MATCH_TYPE {
 }
 unsafe impl ::windows::core::Abi for READER_SEL_REQUEST_MATCH_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for READER_SEL_REQUEST_MATCH_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2685,6 +2721,7 @@ impl ::core::fmt::Debug for READER_SEL_RESPONSE {
 }
 unsafe impl ::windows::core::Abi for READER_SEL_RESPONSE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for READER_SEL_RESPONSE {
     fn eq(&self, other: &Self) -> bool {
@@ -2721,6 +2758,7 @@ impl ::core::fmt::Debug for SCARD_ATRMASK {
 }
 unsafe impl ::windows::core::Abi for SCARD_ATRMASK {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SCARD_ATRMASK {
     fn eq(&self, other: &Self) -> bool {
@@ -2786,6 +2824,7 @@ impl ::core::fmt::Debug for SCARD_IO_REQUEST {
 }
 unsafe impl ::windows::core::Abi for SCARD_IO_REQUEST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SCARD_IO_REQUEST {
     fn eq(&self, other: &Self) -> bool {
@@ -2851,6 +2890,7 @@ impl ::core::fmt::Debug for SCARD_READERSTATEA {
 }
 unsafe impl ::windows::core::Abi for SCARD_READERSTATEA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SCARD_READERSTATEA {
     fn eq(&self, other: &Self) -> bool {
@@ -2886,6 +2926,7 @@ impl ::core::fmt::Debug for SCARD_READERSTATEW {
 }
 unsafe impl ::windows::core::Abi for SCARD_READERSTATEW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SCARD_READERSTATEW {
     fn eq(&self, other: &Self) -> bool {
@@ -2955,6 +2996,7 @@ impl ::core::default::Default for SCARD_SCOPE {
 }
 unsafe impl ::windows::core::Abi for SCARD_SCOPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SCARD_SCOPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3010,6 +3052,7 @@ impl ::core::default::Default for SCARD_STATE {
 }
 unsafe impl ::windows::core::Abi for SCARD_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SCARD_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3046,6 +3089,7 @@ impl ::core::fmt::Debug for SCARD_T0_COMMAND {
 }
 unsafe impl ::windows::core::Abi for SCARD_T0_COMMAND {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SCARD_T0_COMMAND {
     fn eq(&self, other: &Self) -> bool {
@@ -3076,6 +3120,7 @@ impl ::core::clone::Clone for SCARD_T0_REQUEST {
 }
 unsafe impl ::windows::core::Abi for SCARD_T0_REQUEST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SCARD_T0_REQUEST {
     fn eq(&self, other: &Self) -> bool {
@@ -3102,6 +3147,7 @@ impl ::core::clone::Clone for SCARD_T0_REQUEST_0 {
 }
 unsafe impl ::windows::core::Abi for SCARD_T0_REQUEST_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SCARD_T0_REQUEST_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -3140,6 +3186,7 @@ impl ::core::fmt::Debug for SCARD_T1_REQUEST {
 }
 unsafe impl ::windows::core::Abi for SCARD_T1_REQUEST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SCARD_T1_REQUEST {
     fn eq(&self, other: &Self) -> bool {
@@ -4256,6 +4303,7 @@ impl ::core::fmt::Debug for SecHandle {
 }
 unsafe impl ::windows::core::Abi for SecHandle {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SecHandle {
     fn eq(&self, other: &Self) -> bool {
@@ -4287,6 +4335,7 @@ impl ::core::fmt::Debug for SecPkgContext_ClientCreds {
 }
 unsafe impl ::windows::core::Abi for SecPkgContext_ClientCreds {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SecPkgContext_ClientCreds {
     fn eq(&self, other: &Self) -> bool {
@@ -4321,6 +4370,7 @@ impl ::core::fmt::Debug for USERNAME_TARGET_CREDENTIAL_INFO {
 }
 unsafe impl ::windows::core::Abi for USERNAME_TARGET_CREDENTIAL_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USERNAME_TARGET_CREDENTIAL_INFO {
     fn eq(&self, other: &Self) -> bool {

@@ -38,6 +38,7 @@ impl ::core::default::Default for ACCESS_MODE {
 }
 unsafe impl ::windows::core::Abi for ACCESS_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ACCESS_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -63,6 +64,7 @@ impl ::core::fmt::Debug for ACTRL_ACCESSA {
 }
 unsafe impl ::windows::core::Abi for ACTRL_ACCESSA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ACTRL_ACCESSA {
     fn eq(&self, other: &Self) -> bool {
@@ -94,6 +96,7 @@ impl ::core::fmt::Debug for ACTRL_ACCESSW {
 }
 unsafe impl ::windows::core::Abi for ACTRL_ACCESSW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ACTRL_ACCESSW {
     fn eq(&self, other: &Self) -> bool {
@@ -129,6 +132,7 @@ impl ::core::fmt::Debug for ACTRL_ACCESS_ENTRYA {
 }
 unsafe impl ::windows::core::Abi for ACTRL_ACCESS_ENTRYA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ACTRL_ACCESS_ENTRYA {
     fn eq(&self, other: &Self) -> bool {
@@ -164,6 +168,7 @@ impl ::core::fmt::Debug for ACTRL_ACCESS_ENTRYW {
 }
 unsafe impl ::windows::core::Abi for ACTRL_ACCESS_ENTRYW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ACTRL_ACCESS_ENTRYW {
     fn eq(&self, other: &Self) -> bool {
@@ -201,6 +206,7 @@ impl ::core::default::Default for ACTRL_ACCESS_ENTRY_ACCESS_FLAGS {
 }
 unsafe impl ::windows::core::Abi for ACTRL_ACCESS_ENTRY_ACCESS_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ACTRL_ACCESS_ENTRY_ACCESS_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -226,6 +232,7 @@ impl ::core::fmt::Debug for ACTRL_ACCESS_ENTRY_LISTA {
 }
 unsafe impl ::windows::core::Abi for ACTRL_ACCESS_ENTRY_LISTA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ACTRL_ACCESS_ENTRY_LISTA {
     fn eq(&self, other: &Self) -> bool {
@@ -257,6 +264,7 @@ impl ::core::fmt::Debug for ACTRL_ACCESS_ENTRY_LISTW {
 }
 unsafe impl ::windows::core::Abi for ACTRL_ACCESS_ENTRY_LISTW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ACTRL_ACCESS_ENTRY_LISTW {
     fn eq(&self, other: &Self) -> bool {
@@ -288,6 +296,7 @@ impl ::core::fmt::Debug for ACTRL_ACCESS_INFOA {
 }
 unsafe impl ::windows::core::Abi for ACTRL_ACCESS_INFOA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ACTRL_ACCESS_INFOA {
     fn eq(&self, other: &Self) -> bool {
@@ -319,6 +328,7 @@ impl ::core::fmt::Debug for ACTRL_ACCESS_INFOW {
 }
 unsafe impl ::windows::core::Abi for ACTRL_ACCESS_INFOW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ACTRL_ACCESS_INFOW {
     fn eq(&self, other: &Self) -> bool {
@@ -360,6 +370,7 @@ impl ::core::fmt::Debug for ACTRL_CONTROL_INFOA {
 }
 unsafe impl ::windows::core::Abi for ACTRL_CONTROL_INFOA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ACTRL_CONTROL_INFOA {
     fn eq(&self, other: &Self) -> bool {
@@ -391,6 +402,7 @@ impl ::core::fmt::Debug for ACTRL_CONTROL_INFOW {
 }
 unsafe impl ::windows::core::Abi for ACTRL_CONTROL_INFOW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ACTRL_CONTROL_INFOW {
     fn eq(&self, other: &Self) -> bool {
@@ -484,6 +496,7 @@ impl ::core::clone::Clone for ACTRL_OVERLAPPED {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for ACTRL_OVERLAPPED {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for ACTRL_OVERLAPPED {
@@ -517,6 +530,7 @@ impl ::core::clone::Clone for ACTRL_OVERLAPPED_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for ACTRL_OVERLAPPED_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for ACTRL_OVERLAPPED_0 {
@@ -602,6 +616,7 @@ impl ::core::fmt::Debug for ACTRL_PROPERTY_ENTRYA {
 }
 unsafe impl ::windows::core::Abi for ACTRL_PROPERTY_ENTRYA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ACTRL_PROPERTY_ENTRYA {
     fn eq(&self, other: &Self) -> bool {
@@ -634,6 +649,7 @@ impl ::core::fmt::Debug for ACTRL_PROPERTY_ENTRYW {
 }
 unsafe impl ::windows::core::Abi for ACTRL_PROPERTY_ENTRYW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ACTRL_PROPERTY_ENTRYW {
     fn eq(&self, other: &Self) -> bool {
@@ -732,6 +748,7 @@ impl ::core::fmt::Debug for AUDIT_IP_ADDRESS {
 }
 unsafe impl ::windows::core::Abi for AUDIT_IP_ADDRESS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for AUDIT_IP_ADDRESS {
     fn eq(&self, other: &Self) -> bool {
@@ -765,6 +782,7 @@ impl ::core::fmt::Debug for AUDIT_OBJECT_TYPE {
 }
 unsafe impl ::windows::core::Abi for AUDIT_OBJECT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for AUDIT_OBJECT_TYPE {
     fn eq(&self, other: &Self) -> bool {
@@ -797,6 +815,7 @@ impl ::core::fmt::Debug for AUDIT_OBJECT_TYPES {
 }
 unsafe impl ::windows::core::Abi for AUDIT_OBJECT_TYPES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for AUDIT_OBJECT_TYPES {
     fn eq(&self, other: &Self) -> bool {
@@ -826,6 +845,7 @@ impl ::core::clone::Clone for AUDIT_PARAM {
 }
 unsafe impl ::windows::core::Abi for AUDIT_PARAM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for AUDIT_PARAM {
     fn eq(&self, other: &Self) -> bool {
@@ -858,6 +878,7 @@ impl ::core::clone::Clone for AUDIT_PARAM_0 {
 }
 unsafe impl ::windows::core::Abi for AUDIT_PARAM_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for AUDIT_PARAM_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -884,6 +905,7 @@ impl ::core::clone::Clone for AUDIT_PARAM_1 {
 }
 unsafe impl ::windows::core::Abi for AUDIT_PARAM_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for AUDIT_PARAM_1 {
     fn eq(&self, other: &Self) -> bool {
@@ -917,6 +939,7 @@ impl ::core::fmt::Debug for AUDIT_PARAMS {
 }
 unsafe impl ::windows::core::Abi for AUDIT_PARAMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for AUDIT_PARAMS {
     fn eq(&self, other: &Self) -> bool {
@@ -972,6 +995,7 @@ impl ::core::default::Default for AUDIT_PARAM_TYPE {
 }
 unsafe impl ::windows::core::Abi for AUDIT_PARAM_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AUDIT_PARAM_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1003,6 +1027,7 @@ impl ::core::default::Default for AUTHZ_ACCESS_CHECK_FLAGS {
 }
 unsafe impl ::windows::core::Abi for AUTHZ_ACCESS_CHECK_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AUTHZ_ACCESS_CHECK_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1035,6 +1060,7 @@ impl ::core::fmt::Debug for AUTHZ_ACCESS_CHECK_RESULTS_HANDLE {
 }
 unsafe impl ::windows::core::Abi for AUTHZ_ACCESS_CHECK_RESULTS_HANDLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[repr(C)]
 #[doc = "*Required features: `\"Win32_Security_Authorization\"`*"]
@@ -1057,6 +1083,7 @@ impl ::core::fmt::Debug for AUTHZ_ACCESS_REPLY {
 }
 unsafe impl ::windows::core::Abi for AUTHZ_ACCESS_REPLY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for AUTHZ_ACCESS_REPLY {
     fn eq(&self, other: &Self) -> bool {
@@ -1096,6 +1123,7 @@ impl ::core::fmt::Debug for AUTHZ_ACCESS_REQUEST {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for AUTHZ_ACCESS_REQUEST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for AUTHZ_ACCESS_REQUEST {
@@ -1139,6 +1167,7 @@ impl ::core::fmt::Debug for AUTHZ_AUDIT_EVENT_HANDLE {
 }
 unsafe impl ::windows::core::Abi for AUTHZ_AUDIT_EVENT_HANDLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[doc = "*Required features: `\"Win32_Security_Authorization\"`*"]
 #[repr(transparent)]
@@ -1167,6 +1196,7 @@ impl ::core::default::Default for AUTHZ_AUDIT_EVENT_INFORMATION_CLASS {
 }
 unsafe impl ::windows::core::Abi for AUTHZ_AUDIT_EVENT_INFORMATION_CLASS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AUTHZ_AUDIT_EVENT_INFORMATION_CLASS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1199,6 +1229,7 @@ impl ::core::fmt::Debug for AUTHZ_AUDIT_EVENT_TYPE_HANDLE {
 }
 unsafe impl ::windows::core::Abi for AUTHZ_AUDIT_EVENT_TYPE_HANDLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[repr(C)]
 #[doc = "*Required features: `\"Win32_Security_Authorization\"`*"]
@@ -1220,6 +1251,7 @@ impl ::core::fmt::Debug for AUTHZ_AUDIT_EVENT_TYPE_LEGACY {
 }
 unsafe impl ::windows::core::Abi for AUTHZ_AUDIT_EVENT_TYPE_LEGACY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for AUTHZ_AUDIT_EVENT_TYPE_LEGACY {
     fn eq(&self, other: &Self) -> bool {
@@ -1254,6 +1286,7 @@ impl ::core::clone::Clone for AUTHZ_AUDIT_EVENT_TYPE_OLD {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for AUTHZ_AUDIT_EVENT_TYPE_OLD {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for AUTHZ_AUDIT_EVENT_TYPE_OLD {
@@ -1282,6 +1315,7 @@ impl ::core::clone::Clone for AUTHZ_AUDIT_EVENT_TYPE_UNION {
 }
 unsafe impl ::windows::core::Abi for AUTHZ_AUDIT_EVENT_TYPE_UNION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for AUTHZ_AUDIT_EVENT_TYPE_UNION {
     fn eq(&self, other: &Self) -> bool {
@@ -1314,6 +1348,7 @@ impl ::core::fmt::Debug for AUTHZ_CAP_CHANGE_SUBSCRIPTION_HANDLE__ {
 }
 unsafe impl ::windows::core::Abi for AUTHZ_CAP_CHANGE_SUBSCRIPTION_HANDLE__ {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for AUTHZ_CAP_CHANGE_SUBSCRIPTION_HANDLE__ {
     fn eq(&self, other: &Self) -> bool {
@@ -1352,6 +1387,7 @@ impl ::core::fmt::Debug for AUTHZ_CLIENT_CONTEXT_HANDLE {
 }
 unsafe impl ::windows::core::Abi for AUTHZ_CLIENT_CONTEXT_HANDLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[doc = "*Required features: `\"Win32_Security_Authorization\"`*"]
 pub const AUTHZ_COMPUTE_PRIVILEGES: u32 = 8u32;
@@ -1404,6 +1440,7 @@ impl ::core::default::Default for AUTHZ_CONTEXT_INFORMATION_CLASS {
 }
 unsafe impl ::windows::core::Abi for AUTHZ_CONTEXT_INFORMATION_CLASS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AUTHZ_CONTEXT_INFORMATION_CLASS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1433,6 +1470,7 @@ impl ::core::default::Default for AUTHZ_GENERATE_RESULTS {
 }
 unsafe impl ::windows::core::Abi for AUTHZ_GENERATE_RESULTS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AUTHZ_GENERATE_RESULTS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1462,6 +1500,7 @@ impl ::core::default::Default for AUTHZ_INITIALIZE_OBJECT_ACCESS_AUDIT_EVENT_FLA
 }
 unsafe impl ::windows::core::Abi for AUTHZ_INITIALIZE_OBJECT_ACCESS_AUDIT_EVENT_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AUTHZ_INITIALIZE_OBJECT_ACCESS_AUDIT_EVENT_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1505,6 +1544,7 @@ impl ::core::fmt::Debug for AUTHZ_INIT_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for AUTHZ_INIT_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for AUTHZ_INIT_INFO {
@@ -1543,6 +1583,7 @@ impl ::core::fmt::Debug for AUTHZ_REGISTRATION_OBJECT_TYPE_NAME_OFFSET {
 }
 unsafe impl ::windows::core::Abi for AUTHZ_REGISTRATION_OBJECT_TYPE_NAME_OFFSET {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for AUTHZ_REGISTRATION_OBJECT_TYPE_NAME_OFFSET {
     fn eq(&self, other: &Self) -> bool {
@@ -1580,6 +1621,7 @@ impl ::core::default::Default for AUTHZ_RESOURCE_MANAGER_FLAGS {
 }
 unsafe impl ::windows::core::Abi for AUTHZ_RESOURCE_MANAGER_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AUTHZ_RESOURCE_MANAGER_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1640,6 +1682,7 @@ impl ::core::fmt::Debug for AUTHZ_RESOURCE_MANAGER_HANDLE {
 }
 unsafe impl ::windows::core::Abi for AUTHZ_RESOURCE_MANAGER_HANDLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[repr(C)]
 #[doc = "*Required features: `\"Win32_Security_Authorization\"`*"]
@@ -1665,6 +1708,7 @@ impl ::core::fmt::Debug for AUTHZ_RPC_INIT_INFO_CLIENT {
 }
 unsafe impl ::windows::core::Abi for AUTHZ_RPC_INIT_INFO_CLIENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for AUTHZ_RPC_INIT_INFO_CLIENT {
     fn eq(&self, other: &Self) -> bool {
@@ -1695,6 +1739,7 @@ impl ::core::clone::Clone for AUTHZ_SECURITY_ATTRIBUTES_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for AUTHZ_SECURITY_ATTRIBUTES_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for AUTHZ_SECURITY_ATTRIBUTES_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -1720,6 +1765,7 @@ impl ::core::clone::Clone for AUTHZ_SECURITY_ATTRIBUTES_INFORMATION_0 {
 }
 unsafe impl ::windows::core::Abi for AUTHZ_SECURITY_ATTRIBUTES_INFORMATION_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for AUTHZ_SECURITY_ATTRIBUTES_INFORMATION_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -1757,6 +1803,7 @@ impl ::core::default::Default for AUTHZ_SECURITY_ATTRIBUTE_FLAGS {
 }
 unsafe impl ::windows::core::Abi for AUTHZ_SECURITY_ATTRIBUTE_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AUTHZ_SECURITY_ATTRIBUTE_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1810,6 +1857,7 @@ impl ::core::fmt::Debug for AUTHZ_SECURITY_ATTRIBUTE_FQBN_VALUE {
 }
 unsafe impl ::windows::core::Abi for AUTHZ_SECURITY_ATTRIBUTE_FQBN_VALUE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for AUTHZ_SECURITY_ATTRIBUTE_FQBN_VALUE {
     fn eq(&self, other: &Self) -> bool {
@@ -1841,6 +1889,7 @@ impl ::core::fmt::Debug for AUTHZ_SECURITY_ATTRIBUTE_OCTET_STRING_VALUE {
 }
 unsafe impl ::windows::core::Abi for AUTHZ_SECURITY_ATTRIBUTE_OCTET_STRING_VALUE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for AUTHZ_SECURITY_ATTRIBUTE_OCTET_STRING_VALUE {
     fn eq(&self, other: &Self) -> bool {
@@ -1880,6 +1929,7 @@ impl ::core::default::Default for AUTHZ_SECURITY_ATTRIBUTE_OPERATION {
 }
 unsafe impl ::windows::core::Abi for AUTHZ_SECURITY_ATTRIBUTE_OPERATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AUTHZ_SECURITY_ATTRIBUTE_OPERATION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1920,6 +1970,7 @@ impl ::core::clone::Clone for AUTHZ_SECURITY_ATTRIBUTE_V1 {
 }
 unsafe impl ::windows::core::Abi for AUTHZ_SECURITY_ATTRIBUTE_V1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for AUTHZ_SECURITY_ATTRIBUTE_V1 {
     fn eq(&self, other: &Self) -> bool {
@@ -1949,6 +2000,7 @@ impl ::core::clone::Clone for AUTHZ_SECURITY_ATTRIBUTE_V1_0 {
 }
 unsafe impl ::windows::core::Abi for AUTHZ_SECURITY_ATTRIBUTE_V1_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for AUTHZ_SECURITY_ATTRIBUTE_V1_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -1987,6 +2039,7 @@ impl ::core::fmt::Debug for AUTHZ_SECURITY_EVENT_PROVIDER_HANDLE {
 }
 unsafe impl ::windows::core::Abi for AUTHZ_SECURITY_EVENT_PROVIDER_HANDLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[doc = "*Required features: `\"Win32_Security_Authorization\"`*"]
 #[repr(transparent)]
@@ -2015,6 +2068,7 @@ impl ::core::default::Default for AUTHZ_SID_OPERATION {
 }
 unsafe impl ::windows::core::Abi for AUTHZ_SID_OPERATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AUTHZ_SID_OPERATION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2044,6 +2098,7 @@ impl ::core::clone::Clone for AUTHZ_SOURCE_SCHEMA_REGISTRATION {
 }
 unsafe impl ::windows::core::Abi for AUTHZ_SOURCE_SCHEMA_REGISTRATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for AUTHZ_SOURCE_SCHEMA_REGISTRATION {
     fn eq(&self, other: &Self) -> bool {
@@ -2070,6 +2125,7 @@ impl ::core::clone::Clone for AUTHZ_SOURCE_SCHEMA_REGISTRATION_0 {
 }
 unsafe impl ::windows::core::Abi for AUTHZ_SOURCE_SCHEMA_REGISTRATION_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for AUTHZ_SOURCE_SCHEMA_REGISTRATION_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -2297,6 +2353,7 @@ impl ::core::default::Default for AZ_PROP_CONSTANTS {
 }
 unsafe impl ::windows::core::Abi for AZ_PROP_CONSTANTS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AZ_PROP_CONSTANTS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3170,6 +3227,7 @@ impl ::core::fmt::Debug for EXPLICIT_ACCESS_A {
 }
 unsafe impl ::windows::core::Abi for EXPLICIT_ACCESS_A {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EXPLICIT_ACCESS_A {
     fn eq(&self, other: &Self) -> bool {
@@ -3203,6 +3261,7 @@ impl ::core::fmt::Debug for EXPLICIT_ACCESS_W {
 }
 unsafe impl ::windows::core::Abi for EXPLICIT_ACCESS_W {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EXPLICIT_ACCESS_W {
     fn eq(&self, other: &Self) -> bool {
@@ -3233,6 +3292,7 @@ impl ::core::fmt::Debug for FN_OBJECT_MGR_FUNCTIONS {
 }
 unsafe impl ::windows::core::Abi for FN_OBJECT_MGR_FUNCTIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for FN_OBJECT_MGR_FUNCTIONS {
     fn eq(&self, other: &Self) -> bool {
@@ -3565,6 +3625,12 @@ pub unsafe fn GetTrusteeTypeW(ptrustee: *const TRUSTEE_W) -> TRUSTEE_TYPE {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IAzApplication(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IAzApplication {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IAzApplication {
     #[doc = "*Required features: `\"Win32_Security_Authorization\"`, `\"Win32_Foundation\"`*"]
@@ -3955,12 +4021,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IAzApplication {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IAzApplication {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4233,6 +4293,12 @@ pub struct IAzApplication_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IAzApplication2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IAzApplication2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IAzApplication2 {
     #[doc = "*Required features: `\"Win32_Security_Authorization\"`, `\"Win32_Foundation\"`*"]
@@ -4659,12 +4725,6 @@ impl<'a> ::windows::core::IntoParam<'a, IAzApplication> for &'a IAzApplication2 
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IAzApplication2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IAzApplication2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4701,6 +4761,12 @@ pub struct IAzApplication2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IAzApplication3(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IAzApplication3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IAzApplication3 {
     #[doc = "*Required features: `\"Win32_Security_Authorization\"`, `\"Win32_Foundation\"`*"]
@@ -5229,12 +5295,6 @@ impl<'a> ::windows::core::IntoParam<'a, IAzApplication2> for &'a IAzApplication3
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IAzApplication3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IAzApplication3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5313,6 +5373,12 @@ pub struct IAzApplication3_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IAzApplicationGroup(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IAzApplicationGroup {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IAzApplicationGroup {
     #[doc = "*Required features: `\"Win32_Security_Authorization\"`, `\"Win32_Foundation\"`*"]
@@ -5535,12 +5601,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IAzApplicationGroup {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IAzApplicationGroup {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5691,6 +5751,12 @@ pub struct IAzApplicationGroup_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IAzApplicationGroup2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IAzApplicationGroup2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IAzApplicationGroup2 {
     #[doc = "*Required features: `\"Win32_Security_Authorization\"`, `\"Win32_Foundation\"`*"]
@@ -5976,12 +6042,6 @@ impl<'a> ::windows::core::IntoParam<'a, IAzApplicationGroup> for &'a IAzApplicat
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IAzApplicationGroup2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IAzApplicationGroup2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6038,6 +6098,12 @@ pub struct IAzApplicationGroup2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IAzApplicationGroups(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IAzApplicationGroups {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IAzApplicationGroups {
     #[doc = "*Required features: `\"Win32_Security_Authorization\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
@@ -6106,12 +6172,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IAzApplicationGroups {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IAzApplicationGroups {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6146,6 +6206,12 @@ pub struct IAzApplicationGroups_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IAzApplications(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IAzApplications {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IAzApplications {
     #[doc = "*Required features: `\"Win32_Security_Authorization\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
@@ -6214,12 +6280,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IAzApplications {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IAzApplications {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6254,6 +6314,12 @@ pub struct IAzApplications_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IAzAuthorizationStore(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IAzAuthorizationStore {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IAzAuthorizationStore {
     #[doc = "*Required features: `\"Win32_Security_Authorization\"`, `\"Win32_Foundation\"`*"]
@@ -6577,12 +6643,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IAzAuthorizationStore {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IAzAuthorizationStore {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6797,6 +6857,12 @@ pub struct IAzAuthorizationStore_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IAzAuthorizationStore2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IAzAuthorizationStore2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IAzAuthorizationStore2 {
     #[doc = "*Required features: `\"Win32_Security_Authorization\"`, `\"Win32_Foundation\"`*"]
@@ -7156,12 +7222,6 @@ impl<'a> ::windows::core::IntoParam<'a, IAzAuthorizationStore> for &'a IAzAuthor
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IAzAuthorizationStore2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IAzAuthorizationStore2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7198,6 +7258,12 @@ pub struct IAzAuthorizationStore2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IAzAuthorizationStore3(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IAzAuthorizationStore3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IAzAuthorizationStore3 {
     #[doc = "*Required features: `\"Win32_Security_Authorization\"`, `\"Win32_Foundation\"`*"]
@@ -7604,12 +7670,6 @@ impl<'a> ::windows::core::IntoParam<'a, IAzAuthorizationStore2> for &'a IAzAutho
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IAzAuthorizationStore3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IAzAuthorizationStore3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7643,6 +7703,12 @@ pub struct IAzAuthorizationStore3_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IAzBizRuleContext(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IAzBizRuleContext {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IAzBizRuleContext {
     #[doc = "*Required features: `\"Win32_Security_Authorization\"`, `\"Win32_Foundation\"`*"]
@@ -7717,12 +7783,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IAzBizRuleContext {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IAzBizRuleContext {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7767,6 +7827,12 @@ pub struct IAzBizRuleContext_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IAzBizRuleInterfaces(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IAzBizRuleInterfaces {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IAzBizRuleInterfaces {
     #[doc = "*Required features: `\"Win32_Security_Authorization\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
@@ -7848,12 +7914,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IAzBizRuleInterfaces {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IAzBizRuleInterfaces {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7900,6 +7960,12 @@ pub struct IAzBizRuleInterfaces_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IAzBizRuleParameters(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IAzBizRuleParameters {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IAzBizRuleParameters {
     #[doc = "*Required features: `\"Win32_Security_Authorization\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
@@ -7982,12 +8048,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IAzBizRuleParameters {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IAzBizRuleParameters {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8034,6 +8094,12 @@ pub struct IAzBizRuleParameters_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IAzClientContext(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IAzClientContext {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IAzClientContext {
     #[doc = "*Required features: `\"Win32_Security_Authorization\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
@@ -8173,12 +8239,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IAzClientContext {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IAzClientContext {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8259,6 +8319,12 @@ pub struct IAzClientContext_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IAzClientContext2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IAzClientContext2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IAzClientContext2 {
     #[doc = "*Required features: `\"Win32_Security_Authorization\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
@@ -8453,12 +8519,6 @@ impl<'a> ::windows::core::IntoParam<'a, IAzClientContext> for &'a IAzClientConte
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IAzClientContext2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IAzClientContext2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8511,6 +8571,12 @@ pub struct IAzClientContext2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IAzClientContext3(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IAzClientContext3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IAzClientContext3 {
     #[doc = "*Required features: `\"Win32_Security_Authorization\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
@@ -8777,12 +8843,6 @@ impl<'a> ::windows::core::IntoParam<'a, IAzClientContext2> for &'a IAzClientCont
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IAzClientContext3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IAzClientContext3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8843,6 +8903,12 @@ pub struct IAzClientContext3_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IAzNameResolver(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IAzNameResolver {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IAzNameResolver {
     #[doc = "*Required features: `\"Win32_Security_Authorization\"`, `\"Win32_Foundation\"`*"]
@@ -8905,12 +8971,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IAzNameResolver {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IAzNameResolver {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8947,6 +9007,12 @@ pub struct IAzNameResolver_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IAzObjectPicker(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IAzObjectPicker {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IAzObjectPicker {
     #[doc = "*Required features: `\"Win32_Security_Authorization\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
@@ -9010,12 +9076,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IAzObjectPicker {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IAzObjectPicker {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9052,6 +9112,12 @@ pub struct IAzObjectPicker_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IAzOperation(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IAzOperation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IAzOperation {
     #[doc = "*Required features: `\"Win32_Security_Authorization\"`, `\"Win32_Foundation\"`*"]
@@ -9168,12 +9234,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IAzOperation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IAzOperation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9244,6 +9304,12 @@ pub struct IAzOperation_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IAzOperation2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IAzOperation2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IAzOperation2 {
     #[doc = "*Required features: `\"Win32_Security_Authorization\"`, `\"Win32_Foundation\"`*"]
@@ -9390,12 +9456,6 @@ impl<'a> ::windows::core::IntoParam<'a, IAzOperation> for &'a IAzOperation2 {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IAzOperation2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IAzOperation2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9428,6 +9488,12 @@ pub struct IAzOperation2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IAzOperations(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IAzOperations {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IAzOperations {
     #[doc = "*Required features: `\"Win32_Security_Authorization\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
@@ -9496,12 +9562,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IAzOperations {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IAzOperations {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9536,6 +9596,12 @@ pub struct IAzOperations_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IAzPrincipalLocator(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IAzPrincipalLocator {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IAzPrincipalLocator {
     #[doc = "*Required features: `\"Win32_Security_Authorization\"`, `\"Win32_System_Com\"`*"]
@@ -9600,12 +9666,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IAzPrincipalLocator {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IAzPrincipalLocator {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9642,6 +9702,12 @@ pub struct IAzPrincipalLocator_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IAzRole(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IAzRole {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IAzRole {
     #[doc = "*Required features: `\"Win32_Security_Authorization\"`, `\"Win32_Foundation\"`*"]
@@ -9839,12 +9905,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IAzRole {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IAzRole {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9981,6 +10041,12 @@ pub struct IAzRole_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IAzRoleAssignment(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IAzRoleAssignment {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IAzRoleAssignment {
     #[doc = "*Required features: `\"Win32_Security_Authorization\"`, `\"Win32_Foundation\"`*"]
@@ -10224,12 +10290,6 @@ impl<'a> ::windows::core::IntoParam<'a, IAzRole> for &'a IAzRoleAssignment {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IAzRoleAssignment {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IAzRoleAssignment {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10274,6 +10334,12 @@ pub struct IAzRoleAssignment_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IAzRoleAssignments(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IAzRoleAssignments {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IAzRoleAssignments {
     #[doc = "*Required features: `\"Win32_Security_Authorization\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
@@ -10342,12 +10408,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IAzRoleAssignments {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IAzRoleAssignments {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10382,6 +10442,12 @@ pub struct IAzRoleAssignments_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IAzRoleDefinition(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IAzRoleDefinition {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IAzRoleDefinition {
     #[doc = "*Required features: `\"Win32_Security_Authorization\"`, `\"Win32_Foundation\"`*"]
@@ -10621,12 +10687,6 @@ impl<'a> ::windows::core::IntoParam<'a, IAzTask> for &'a IAzRoleDefinition {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IAzRoleDefinition {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IAzRoleDefinition {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10671,6 +10731,12 @@ pub struct IAzRoleDefinition_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IAzRoleDefinitions(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IAzRoleDefinitions {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IAzRoleDefinitions {
     #[doc = "*Required features: `\"Win32_Security_Authorization\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
@@ -10739,12 +10805,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IAzRoleDefinitions {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IAzRoleDefinitions {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10779,6 +10839,12 @@ pub struct IAzRoleDefinitions_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IAzRoles(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IAzRoles {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IAzRoles {
     #[doc = "*Required features: `\"Win32_Security_Authorization\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
@@ -10847,12 +10913,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IAzRoles {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IAzRoles {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10887,6 +10947,12 @@ pub struct IAzRoles_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IAzScope(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IAzScope {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IAzScope {
     #[doc = "*Required features: `\"Win32_Security_Authorization\"`, `\"Win32_Foundation\"`*"]
@@ -11149,12 +11215,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IAzScope {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IAzScope {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11335,6 +11395,12 @@ pub struct IAzScope_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IAzScope2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IAzScope2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IAzScope2 {
     #[doc = "*Required features: `\"Win32_Security_Authorization\"`, `\"Win32_Foundation\"`*"]
@@ -11667,12 +11733,6 @@ impl<'a> ::windows::core::IntoParam<'a, IAzScope> for &'a IAzScope2 {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IAzScope2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IAzScope2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11733,6 +11793,12 @@ pub struct IAzScope2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IAzScopes(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IAzScopes {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IAzScopes {
     #[doc = "*Required features: `\"Win32_Security_Authorization\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
@@ -11801,12 +11867,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IAzScopes {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IAzScopes {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11841,6 +11901,12 @@ pub struct IAzScopes_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IAzTask(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IAzTask {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IAzTask {
     #[doc = "*Required features: `\"Win32_Security_Authorization\"`, `\"Win32_Foundation\"`*"]
@@ -12034,12 +12100,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IAzTask {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IAzTask {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12172,6 +12232,12 @@ pub struct IAzTask_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IAzTask2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IAzTask2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IAzTask2 {
     #[doc = "*Required features: `\"Win32_Security_Authorization\"`, `\"Win32_Foundation\"`*"]
@@ -12395,12 +12461,6 @@ impl<'a> ::windows::core::IntoParam<'a, IAzTask> for &'a IAzTask2 {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IAzTask2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IAzTask2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12433,6 +12493,12 @@ pub struct IAzTask2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IAzTasks(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IAzTasks {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IAzTasks {
     #[doc = "*Required features: `\"Win32_Security_Authorization\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
@@ -12501,12 +12567,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IAzTasks {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IAzTasks {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12558,6 +12618,7 @@ impl ::core::fmt::Debug for INHERITED_FROMA {
 }
 unsafe impl ::windows::core::Abi for INHERITED_FROMA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for INHERITED_FROMA {
     fn eq(&self, other: &Self) -> bool {
@@ -12589,6 +12650,7 @@ impl ::core::fmt::Debug for INHERITED_FROMW {
 }
 unsafe impl ::windows::core::Abi for INHERITED_FROMW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for INHERITED_FROMW {
     fn eq(&self, other: &Self) -> bool {
@@ -12654,6 +12716,7 @@ impl ::core::default::Default for MULTIPLE_TRUSTEE_OPERATION {
 }
 unsafe impl ::windows::core::Abi for MULTIPLE_TRUSTEE_OPERATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MULTIPLE_TRUSTEE_OPERATION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12682,6 +12745,7 @@ impl ::core::fmt::Debug for OBJECTS_AND_NAME_A {
 }
 unsafe impl ::windows::core::Abi for OBJECTS_AND_NAME_A {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for OBJECTS_AND_NAME_A {
     fn eq(&self, other: &Self) -> bool {
@@ -12716,6 +12780,7 @@ impl ::core::fmt::Debug for OBJECTS_AND_NAME_W {
 }
 unsafe impl ::windows::core::Abi for OBJECTS_AND_NAME_W {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for OBJECTS_AND_NAME_W {
     fn eq(&self, other: &Self) -> bool {
@@ -12749,6 +12814,7 @@ impl ::core::fmt::Debug for OBJECTS_AND_SID {
 }
 unsafe impl ::windows::core::Abi for OBJECTS_AND_SID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for OBJECTS_AND_SID {
     fn eq(&self, other: &Self) -> bool {
@@ -12806,6 +12872,7 @@ impl ::core::default::Default for PROG_INVOKE_SETTING {
 }
 unsafe impl ::windows::core::Abi for PROG_INVOKE_SETTING {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PROG_INVOKE_SETTING {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13159,6 +13226,7 @@ impl ::core::default::Default for SE_OBJECT_TYPE {
 }
 unsafe impl ::windows::core::Abi for SE_OBJECT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SE_OBJECT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13261,6 +13329,7 @@ impl ::core::default::Default for TREE_SEC_INFO {
 }
 unsafe impl ::windows::core::Abi for TREE_SEC_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TREE_SEC_INFO {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13289,6 +13358,7 @@ impl ::core::fmt::Debug for TRUSTEE_A {
 }
 unsafe impl ::windows::core::Abi for TRUSTEE_A {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TRUSTEE_A {
     fn eq(&self, other: &Self) -> bool {
@@ -13322,6 +13392,7 @@ impl ::core::fmt::Debug for TRUSTEE_ACCESSA {
 }
 unsafe impl ::windows::core::Abi for TRUSTEE_ACCESSA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TRUSTEE_ACCESSA {
     fn eq(&self, other: &Self) -> bool {
@@ -13355,6 +13426,7 @@ impl ::core::fmt::Debug for TRUSTEE_ACCESSW {
 }
 unsafe impl ::windows::core::Abi for TRUSTEE_ACCESSW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TRUSTEE_ACCESSW {
     fn eq(&self, other: &Self) -> bool {
@@ -13404,6 +13476,7 @@ impl ::core::default::Default for TRUSTEE_FORM {
 }
 unsafe impl ::windows::core::Abi for TRUSTEE_FORM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TRUSTEE_FORM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13445,6 +13518,7 @@ impl ::core::default::Default for TRUSTEE_TYPE {
 }
 unsafe impl ::windows::core::Abi for TRUSTEE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TRUSTEE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13473,6 +13547,7 @@ impl ::core::fmt::Debug for TRUSTEE_W {
 }
 unsafe impl ::windows::core::Abi for TRUSTEE_W {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TRUSTEE_W {
     fn eq(&self, other: &Self) -> bool {

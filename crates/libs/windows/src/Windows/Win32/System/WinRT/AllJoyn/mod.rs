@@ -2,6 +2,11 @@
 #[doc = "*Required features: `\"Win32_System_WinRT_AllJoyn\"`*"]
 #[repr(transparent)]
 pub struct IWindowsDevicesAllJoynBusAttachmentFactoryInterop(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWindowsDevicesAllJoynBusAttachmentFactoryInterop {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWindowsDevicesAllJoynBusAttachmentFactoryInterop {
     #[doc = "*Required features: `\"Win32_System_WinRT_AllJoyn\"`*"]
     pub unsafe fn CreateFromWin32Handle<T: ::windows::core::Interface>(&self, win32handle: u64, enableaboutdata: u8) -> ::windows::core::Result<T> {
@@ -49,11 +54,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWindowsDevicesAllJoynBusAttachmentFactoryInterop {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWindowsDevicesAllJoynBusAttachmentFactoryInterop {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -78,6 +78,11 @@ pub struct IWindowsDevicesAllJoynBusAttachmentFactoryInterop_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT_AllJoyn\"`*"]
 #[repr(transparent)]
 pub struct IWindowsDevicesAllJoynBusAttachmentInterop(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWindowsDevicesAllJoynBusAttachmentInterop {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWindowsDevicesAllJoynBusAttachmentInterop {
     #[doc = "*Required features: `\"Win32_System_WinRT_AllJoyn\"`*"]
     pub unsafe fn Win32Handle(&self) -> ::windows::core::Result<u64> {
@@ -125,11 +130,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWindowsDevicesAllJoynBusAttachmentInterop {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWindowsDevicesAllJoynBusAttachmentInterop {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -154,6 +154,11 @@ pub struct IWindowsDevicesAllJoynBusAttachmentInterop_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT_AllJoyn\"`*"]
 #[repr(transparent)]
 pub struct IWindowsDevicesAllJoynBusObjectFactoryInterop(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWindowsDevicesAllJoynBusObjectFactoryInterop {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWindowsDevicesAllJoynBusObjectFactoryInterop {
     #[doc = "*Required features: `\"Win32_System_WinRT_AllJoyn\"`*"]
     pub unsafe fn CreateFromWin32Handle<T: ::windows::core::Interface>(&self, win32handle: u64) -> ::windows::core::Result<T> {
@@ -201,11 +206,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWindowsDevicesAllJoynBusObjectFactoryInterop {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWindowsDevicesAllJoynBusObjectFactoryInterop {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -230,6 +230,11 @@ pub struct IWindowsDevicesAllJoynBusObjectFactoryInterop_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT_AllJoyn\"`*"]
 #[repr(transparent)]
 pub struct IWindowsDevicesAllJoynBusObjectInterop(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWindowsDevicesAllJoynBusObjectInterop {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWindowsDevicesAllJoynBusObjectInterop {
     #[doc = "*Required features: `\"Win32_System_WinRT_AllJoyn\"`*"]
     pub unsafe fn AddPropertyGetHandler<'a, Param1: ::windows::core::IntoParam<'a, ::windows::core::HSTRING>>(&self, context: *const ::core::ffi::c_void, interfacename: Param1, callback: isize) -> ::windows::core::Result<()> {
@@ -283,11 +288,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for IWind
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a IWindowsDevicesAllJoynBusObjectInterop {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IInspectable> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IWindowsDevicesAllJoynBusObjectInterop {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IWindowsDevicesAllJoynBusObjectInterop {

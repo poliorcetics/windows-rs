@@ -2,6 +2,11 @@
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ILockApplicationHost(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILockApplicationHost {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ILockApplicationHost {
     type Vtable = ILockApplicationHost_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x38ee31ad_d94f_4e7c_81fa_4f4436506281);
@@ -23,6 +28,11 @@ pub struct ILockApplicationHost_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ILockApplicationHostStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILockApplicationHostStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ILockApplicationHostStatics {
     type Vtable = ILockApplicationHostStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf48fab8e_23d7_4e63_96a1_666ff52d3b2c);
@@ -36,6 +46,11 @@ pub struct ILockApplicationHostStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ILockScreenBadge(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILockScreenBadge {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ILockScreenBadge {
     type Vtable = ILockScreenBadge_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe95105d9_2bff_4db0_9b4f_3824778b9c9a);
@@ -62,6 +77,11 @@ pub struct ILockScreenBadge_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ILockScreenInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILockScreenInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ILockScreenInfo {
     type Vtable = ILockScreenInfo_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf59aa65c_9711_4dc9_a630_95b6cb8cdad0);
@@ -122,6 +142,11 @@ pub struct ILockScreenInfo_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ILockScreenUnlockingDeferral(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILockScreenUnlockingDeferral {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ILockScreenUnlockingDeferral {
     type Vtable = ILockScreenUnlockingDeferral_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x7e7d1ad6_5203_43e7_9bd6_7c3947d1e3fe);
@@ -135,6 +160,11 @@ pub struct ILockScreenUnlockingDeferral_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ILockScreenUnlockingEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILockScreenUnlockingEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ILockScreenUnlockingEventArgs {
     type Vtable = ILockScreenUnlockingEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x44e6c007_75fb_4abb_9f8b_824748900c71);
@@ -186,11 +216,6 @@ impl LockApplicationHost {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for LockApplicationHost {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for LockApplicationHost {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -204,7 +229,6 @@ impl ::core::fmt::Debug for LockApplicationHost {
 }
 unsafe impl ::windows::core::RuntimeType for LockApplicationHost {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.LockScreen.LockApplicationHost;{38ee31ad-d94f-4e7c-81fa-4f4436506281})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -303,11 +327,6 @@ impl LockScreenBadge {
         unsafe { (::windows::core::Interface::vtable(this).LaunchApp)(::core::mem::transmute_copy(this)).ok() }
     }
 }
-impl ::core::clone::Clone for LockScreenBadge {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for LockScreenBadge {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -321,7 +340,6 @@ impl ::core::fmt::Debug for LockScreenBadge {
 }
 unsafe impl ::windows::core::RuntimeType for LockScreenBadge {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.LockScreen.LockScreenBadge;{e95105d9-2bff-4db0-9b4f-3824778b9c9a})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -476,11 +494,6 @@ impl LockScreenInfo {
         }
     }
 }
-impl ::core::clone::Clone for LockScreenInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for LockScreenInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -494,7 +507,6 @@ impl ::core::fmt::Debug for LockScreenInfo {
 }
 unsafe impl ::windows::core::RuntimeType for LockScreenInfo {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.LockScreen.LockScreenInfo;{f59aa65c-9711-4dc9-a630-95b6cb8cdad0})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -558,11 +570,6 @@ impl LockScreenUnlockingDeferral {
         unsafe { (::windows::core::Interface::vtable(this).Complete)(::core::mem::transmute_copy(this)).ok() }
     }
 }
-impl ::core::clone::Clone for LockScreenUnlockingDeferral {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for LockScreenUnlockingDeferral {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -576,7 +583,6 @@ impl ::core::fmt::Debug for LockScreenUnlockingDeferral {
 }
 unsafe impl ::windows::core::RuntimeType for LockScreenUnlockingDeferral {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.LockScreen.LockScreenUnlockingDeferral;{7e7d1ad6-5203-43e7-9bd6-7c3947d1e3fe})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -652,11 +658,6 @@ impl LockScreenUnlockingEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for LockScreenUnlockingEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for LockScreenUnlockingEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -670,7 +671,6 @@ impl ::core::fmt::Debug for LockScreenUnlockingEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for LockScreenUnlockingEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.LockScreen.LockScreenUnlockingEventArgs;{44e6c007-75fb-4abb-9f8b-824748900c71})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

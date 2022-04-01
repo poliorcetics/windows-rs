@@ -106,6 +106,11 @@ pub const ED_VIDEO: i32 = 33554432i32;
 #[doc = "*Required features: `\"Win32_Devices_DeviceAccess\"`*"]
 #[repr(transparent)]
 pub struct ICreateDeviceAccessAsync(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICreateDeviceAccessAsync {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ICreateDeviceAccessAsync {
     #[doc = "*Required features: `\"Win32_Devices_DeviceAccess\"`*"]
     pub unsafe fn Cancel(&self) -> ::windows::core::Result<()> {
@@ -145,11 +150,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ICrea
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ICreateDeviceAccessAsync {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ICreateDeviceAccessAsync {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -177,6 +177,11 @@ pub struct ICreateDeviceAccessAsync_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_DeviceAccess\"`*"]
 #[repr(transparent)]
 pub struct IDeviceIoControl(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDeviceIoControl {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDeviceIoControl {
     #[doc = "*Required features: `\"Win32_Devices_DeviceAccess\"`*"]
     pub unsafe fn DeviceIoControlSync(&self, iocontrolcode: u32, inputbuffer: &[u8], outputbuffer: &mut [u8], bytesreturned: *mut u32) -> ::windows::core::Result<()> {
@@ -211,11 +216,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDevi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDeviceIoControl {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDeviceIoControl {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -242,6 +242,11 @@ pub struct IDeviceIoControl_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_DeviceAccess\"`*"]
 #[repr(transparent)]
 pub struct IDeviceRequestCompletionCallback(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDeviceRequestCompletionCallback {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDeviceRequestCompletionCallback {
     #[doc = "*Required features: `\"Win32_Devices_DeviceAccess\"`*"]
     pub unsafe fn Invoke(&self, requestresult: ::windows::core::HRESULT, bytesreturned: u32) -> ::windows::core::Result<()> {
@@ -266,11 +271,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IDeviceRe
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDeviceRequestCompletionCallback {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IDeviceRequestCompletionCallback {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IDeviceRequestCompletionCallback {

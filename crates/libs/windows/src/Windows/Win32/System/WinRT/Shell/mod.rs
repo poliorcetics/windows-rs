@@ -22,6 +22,7 @@ impl ::core::default::Default for CreateProcessMethod {
 }
 unsafe impl ::windows::core::Abi for CreateProcessMethod {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CreateProcessMethod {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -31,6 +32,11 @@ impl ::core::fmt::Debug for CreateProcessMethod {
 #[doc = "*Required features: `\"Win32_System_WinRT_Shell\"`*"]
 #[repr(transparent)]
 pub struct IDDEInitializer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDDEInitializer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDDEInitializer {
     #[doc = "*Required features: `\"Win32_System_WinRT_Shell\"`, `\"Win32_UI_Shell\"`*"]
     #[cfg(feature = "Win32_UI_Shell")]
@@ -67,11 +73,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IDDEIniti
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDDEInitializer {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IDDEInitializer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IDDEInitializer {

@@ -54,11 +54,6 @@ impl DeviceLockdownProfileInformation {
         }
     }
 }
-impl ::core::clone::Clone for DeviceLockdownProfileInformation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DeviceLockdownProfileInformation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -72,7 +67,6 @@ impl ::core::fmt::Debug for DeviceLockdownProfileInformation {
 }
 unsafe impl ::windows::core::RuntimeType for DeviceLockdownProfileInformation {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Embedded.DeviceLockdown.DeviceLockdownProfileInformation;{7980e14e-45b1-4a96-92fc-62756b739678})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -129,6 +123,11 @@ unsafe impl ::core::marker::Sync for DeviceLockdownProfileInformation {}
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDeviceLockdownProfileInformation(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDeviceLockdownProfileInformation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDeviceLockdownProfileInformation {
     type Vtable = IDeviceLockdownProfileInformation_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x7980e14e_45b1_4a96_92fc_62756b739678);
@@ -142,6 +141,11 @@ pub struct IDeviceLockdownProfileInformation_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDeviceLockdownProfileStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDeviceLockdownProfileStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDeviceLockdownProfileStatics {
     type Vtable = IDeviceLockdownProfileStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x622f6965_f9a8_41a1_a691_88cd80c7a069);

@@ -17,6 +17,7 @@ impl ::core::fmt::Debug for ACT_AUTHORIZATION_STATE {
 }
 unsafe impl ::windows::core::Abi for ACT_AUTHORIZATION_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ACT_AUTHORIZATION_STATE {
     fn eq(&self, other: &Self) -> bool {
@@ -50,6 +51,7 @@ impl ::core::default::Default for ACT_AUTHORIZATION_STATE_VALUE {
 }
 unsafe impl ::windows::core::Abi for ACT_AUTHORIZATION_STATE_VALUE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ACT_AUTHORIZATION_STATE_VALUE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -309,6 +311,7 @@ impl ::core::fmt::Debug for ENHANCED_STORAGE_PASSWORD_SILO_INFORMATION {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for ENHANCED_STORAGE_PASSWORD_SILO_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for ENHANCED_STORAGE_PASSWORD_SILO_INFORMATION {
@@ -482,6 +485,11 @@ pub const GUID_DEVINTERFACE_ENHANCED_STORAGE_SILO: ::windows::core::GUID = ::win
 #[doc = "*Required features: `\"Win32_Storage_EnhancedStorage\"`*"]
 #[repr(transparent)]
 pub struct IEnhancedStorageACT(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnhancedStorageACT {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnhancedStorageACT {
     #[doc = "*Required features: `\"Win32_Storage_EnhancedStorage\"`*"]
     pub unsafe fn Authorize(&self, hwndparent: u32, dwflags: u32) -> ::windows::core::Result<()> {
@@ -531,11 +539,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnha
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnhancedStorageACT {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnhancedStorageACT {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -565,6 +568,11 @@ pub struct IEnhancedStorageACT_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_EnhancedStorage\"`*"]
 #[repr(transparent)]
 pub struct IEnhancedStorageACT2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnhancedStorageACT2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnhancedStorageACT2 {
     #[doc = "*Required features: `\"Win32_Storage_EnhancedStorage\"`*"]
     pub unsafe fn Authorize(&self, hwndparent: u32, dwflags: u32) -> ::windows::core::Result<()> {
@@ -645,11 +653,6 @@ impl<'a> ::windows::core::IntoParam<'a, IEnhancedStorageACT> for &'a IEnhancedSt
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnhancedStorageACT2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnhancedStorageACT2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -678,6 +681,11 @@ pub struct IEnhancedStorageACT2_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_EnhancedStorage\"`*"]
 #[repr(transparent)]
 pub struct IEnhancedStorageACT3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnhancedStorageACT3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnhancedStorageACT3 {
     #[doc = "*Required features: `\"Win32_Storage_EnhancedStorage\"`*"]
     pub unsafe fn Authorize(&self, hwndparent: u32, dwflags: u32) -> ::windows::core::Result<()> {
@@ -794,11 +802,6 @@ impl<'a> ::windows::core::IntoParam<'a, IEnhancedStorageACT2> for &'a IEnhancedS
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnhancedStorageACT3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnhancedStorageACT3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -831,6 +834,11 @@ pub struct IEnhancedStorageACT3_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_EnhancedStorage\"`*"]
 #[repr(transparent)]
 pub struct IEnhancedStorageSilo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnhancedStorageSilo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnhancedStorageSilo {
     #[doc = "*Required features: `\"Win32_Storage_EnhancedStorage\"`*"]
     pub unsafe fn GetInfo(&self) -> ::windows::core::Result<SILO_INFO> {
@@ -877,11 +885,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnha
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnhancedStorageSilo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnhancedStorageSilo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -913,6 +916,11 @@ pub struct IEnhancedStorageSilo_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_EnhancedStorage\"`*"]
 #[repr(transparent)]
 pub struct IEnhancedStorageSiloAction(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnhancedStorageSiloAction {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnhancedStorageSiloAction {
     #[doc = "*Required features: `\"Win32_Storage_EnhancedStorage\"`*"]
     pub unsafe fn GetName(&self) -> ::windows::core::Result<::windows::core::PWSTR> {
@@ -949,11 +957,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnha
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnhancedStorageSiloAction {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnhancedStorageSiloAction {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -980,6 +983,11 @@ pub struct IEnhancedStorageSiloAction_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_EnhancedStorage\"`*"]
 #[repr(transparent)]
 pub struct IEnumEnhancedStorageACT(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnumEnhancedStorageACT {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnumEnhancedStorageACT {
     #[doc = "*Required features: `\"Win32_Storage_EnhancedStorage\"`*"]
     pub unsafe fn GetACTs(&self, pppienhancedstorageacts: *mut *mut ::core::option::Option<IEnhancedStorageACT>, pcenhancedstorageacts: *mut u32) -> ::windows::core::Result<()> {
@@ -1009,11 +1017,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IEnumEnha
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnumEnhancedStorageACT {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IEnumEnhancedStorageACT {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IEnumEnhancedStorageACT {
@@ -4496,6 +4499,7 @@ impl ::core::fmt::Debug for SILO_INFO {
 }
 unsafe impl ::windows::core::Abi for SILO_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SILO_INFO {
     fn eq(&self, other: &Self) -> bool {

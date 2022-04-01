@@ -30,6 +30,7 @@ impl ::core::fmt::Debug for ACTCTXA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for ACTCTXA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for ACTCTXA {
@@ -76,6 +77,7 @@ impl ::core::fmt::Debug for ACTCTXW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for ACTCTXW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for ACTCTXW {
@@ -116,6 +118,7 @@ impl ::core::default::Default for ACTCTX_COMPATIBILITY_ELEMENT_TYPE {
 }
 unsafe impl ::windows::core::Abi for ACTCTX_COMPATIBILITY_ELEMENT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ACTCTX_COMPATIBILITY_ELEMENT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -149,6 +152,7 @@ impl ::core::default::Default for ACTCTX_REQUESTED_RUN_LEVEL {
 }
 unsafe impl ::windows::core::Abi for ACTCTX_REQUESTED_RUN_LEVEL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ACTCTX_REQUESTED_RUN_LEVEL {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -202,6 +206,7 @@ impl ::core::fmt::Debug for ACTCTX_SECTION_KEYED_DATA {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_WindowsProgramming"))]
 unsafe impl ::windows::core::Abi for ACTCTX_SECTION_KEYED_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_WindowsProgramming"))]
 impl ::core::cmp::PartialEq for ACTCTX_SECTION_KEYED_DATA {
@@ -273,6 +278,7 @@ impl ::core::fmt::Debug for ACTIVATION_CONTEXT_ASSEMBLY_DETAILED_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for ACTIVATION_CONTEXT_ASSEMBLY_DETAILED_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ACTIVATION_CONTEXT_ASSEMBLY_DETAILED_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -304,6 +310,7 @@ impl ::core::fmt::Debug for ACTIVATION_CONTEXT_COMPATIBILITY_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for ACTIVATION_CONTEXT_COMPATIBILITY_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ACTIVATION_CONTEXT_COMPATIBILITY_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -358,6 +365,7 @@ impl ::core::fmt::Debug for ACTIVATION_CONTEXT_DETAILED_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for ACTIVATION_CONTEXT_DETAILED_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ACTIVATION_CONTEXT_DETAILED_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -389,6 +397,7 @@ impl ::core::fmt::Debug for ACTIVATION_CONTEXT_QUERY_INDEX {
 }
 unsafe impl ::windows::core::Abi for ACTIVATION_CONTEXT_QUERY_INDEX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ACTIVATION_CONTEXT_QUERY_INDEX {
     fn eq(&self, other: &Self) -> bool {
@@ -421,6 +430,7 @@ impl ::core::fmt::Debug for ACTIVATION_CONTEXT_RUN_LEVEL_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for ACTIVATION_CONTEXT_RUN_LEVEL_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ACTIVATION_CONTEXT_RUN_LEVEL_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -454,6 +464,7 @@ impl ::core::default::Default for ADVERTISEFLAGS {
 }
 unsafe impl ::windows::core::Abi for ADVERTISEFLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ADVERTISEFLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -497,6 +508,7 @@ impl ::core::default::Default for ASM_BIND_FLAGS {
 }
 unsafe impl ::windows::core::Abi for ASM_BIND_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ASM_BIND_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -568,6 +580,7 @@ impl ::core::default::Default for ASM_CMP_FLAGS {
 }
 unsafe impl ::windows::core::Abi for ASM_CMP_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ASM_CMP_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -605,6 +618,7 @@ impl ::core::default::Default for ASM_DISPLAY_FLAGS {
 }
 unsafe impl ::windows::core::Abi for ASM_DISPLAY_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ASM_DISPLAY_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -670,6 +684,7 @@ impl ::core::default::Default for ASM_NAME {
 }
 unsafe impl ::windows::core::Abi for ASM_NAME {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ASM_NAME {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -702,6 +717,7 @@ impl ::core::fmt::Debug for ASSEMBLY_FILE_DETAILED_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for ASSEMBLY_FILE_DETAILED_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ASSEMBLY_FILE_DETAILED_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -736,6 +752,7 @@ impl ::core::fmt::Debug for ASSEMBLY_INFO {
 }
 unsafe impl ::windows::core::Abi for ASSEMBLY_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ASSEMBLY_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -980,6 +997,7 @@ impl ::core::fmt::Debug for COMPATIBILITY_CONTEXT_ELEMENT {
 }
 unsafe impl ::windows::core::Abi for COMPATIBILITY_CONTEXT_ELEMENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for COMPATIBILITY_CONTEXT_ELEMENT {
     fn eq(&self, other: &Self) -> bool {
@@ -1013,6 +1031,7 @@ impl ::core::default::Default for CREATE_ASM_NAME_OBJ_FLAGS {
 }
 unsafe impl ::windows::core::Abi for CREATE_ASM_NAME_OBJ_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CREATE_ASM_NAME_OBJ_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1211,6 +1230,7 @@ impl ::core::fmt::Debug for DELTA_HASH {
 }
 unsafe impl ::windows::core::Abi for DELTA_HASH {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DELTA_HASH {
     fn eq(&self, other: &Self) -> bool {
@@ -1252,6 +1272,7 @@ impl ::core::fmt::Debug for DELTA_HEADER_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DELTA_HEADER_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DELTA_HEADER_INFO {
@@ -1286,6 +1307,7 @@ impl ::core::clone::Clone for DELTA_INPUT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DELTA_INPUT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DELTA_INPUT {
@@ -1319,6 +1341,7 @@ impl ::core::clone::Clone for DELTA_INPUT_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DELTA_INPUT_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DELTA_INPUT_0 {
@@ -1355,6 +1378,7 @@ impl ::core::fmt::Debug for DELTA_OUTPUT {
 }
 unsafe impl ::windows::core::Abi for DELTA_OUTPUT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DELTA_OUTPUT {
     fn eq(&self, other: &Self) -> bool {
@@ -1841,6 +1865,7 @@ impl ::core::fmt::Debug for FUSION_INSTALL_REFERENCE {
 }
 unsafe impl ::windows::core::Abi for FUSION_INSTALL_REFERENCE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for FUSION_INSTALL_REFERENCE {
     fn eq(&self, other: &Self) -> bool {
@@ -2111,6 +2136,7 @@ impl ::core::default::Default for IASSEMBLYCACHE_UNINSTALL_DISPOSITION {
 }
 unsafe impl ::windows::core::Abi for IASSEMBLYCACHE_UNINSTALL_DISPOSITION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for IASSEMBLYCACHE_UNINSTALL_DISPOSITION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2120,6 +2146,11 @@ impl ::core::fmt::Debug for IASSEMBLYCACHE_UNINSTALL_DISPOSITION {
 #[doc = "*Required features: `\"Win32_System_ApplicationInstallationAndServicing\"`*"]
 #[repr(transparent)]
 pub struct IAssemblyCache(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAssemblyCache {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAssemblyCache {
     #[doc = "*Required features: `\"Win32_System_ApplicationInstallationAndServicing\"`*"]
     pub unsafe fn UninstallAssembly<'a, Param1: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, dwflags: u32, pszassemblyname: Param1, prefdata: *mut FUSION_INSTALL_REFERENCE, puldisposition: *mut IASSEMBLYCACHE_UNINSTALL_DISPOSITION) -> ::windows::core::Result<()> {
@@ -2163,11 +2194,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAsse
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAssemblyCache {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAssemblyCache {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2196,6 +2222,11 @@ pub struct IAssemblyCache_Vtbl {
 #[doc = "*Required features: `\"Win32_System_ApplicationInstallationAndServicing\"`*"]
 #[repr(transparent)]
 pub struct IAssemblyCacheItem(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAssemblyCacheItem {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAssemblyCacheItem {
     #[doc = "*Required features: `\"Win32_System_ApplicationInstallationAndServicing\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -2231,11 +2262,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAsse
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAssemblyCacheItem {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAssemblyCacheItem {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2265,6 +2291,11 @@ pub struct IAssemblyCacheItem_Vtbl {
 #[doc = "*Required features: `\"Win32_System_ApplicationInstallationAndServicing\"`*"]
 #[repr(transparent)]
 pub struct IAssemblyName(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAssemblyName {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAssemblyName {
     #[doc = "*Required features: `\"Win32_System_ApplicationInstallationAndServicing\"`*"]
     pub unsafe fn SetProperty(&self, propertyid: u32, pvproperty: *mut ::core::ffi::c_void, cbproperty: u32) -> ::windows::core::Result<()> {
@@ -2324,11 +2355,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAsse
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAssemblyName {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAssemblyName {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2361,6 +2387,11 @@ pub struct IAssemblyName_Vtbl {
 #[doc = "*Required features: `\"Win32_System_ApplicationInstallationAndServicing\"`*"]
 #[repr(transparent)]
 pub struct IEnumMsmDependency(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnumMsmDependency {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnumMsmDependency {
     #[doc = "*Required features: `\"Win32_System_ApplicationInstallationAndServicing\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -2401,11 +2432,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnum
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnumMsmDependency {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnumMsmDependency {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2436,6 +2462,11 @@ pub struct IEnumMsmDependency_Vtbl {
 #[doc = "*Required features: `\"Win32_System_ApplicationInstallationAndServicing\"`*"]
 #[repr(transparent)]
 pub struct IEnumMsmError(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnumMsmError {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnumMsmError {
     #[doc = "*Required features: `\"Win32_System_ApplicationInstallationAndServicing\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -2476,11 +2507,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnum
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnumMsmError {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnumMsmError {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2511,6 +2537,11 @@ pub struct IEnumMsmError_Vtbl {
 #[doc = "*Required features: `\"Win32_System_ApplicationInstallationAndServicing\"`*"]
 #[repr(transparent)]
 pub struct IEnumMsmString(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnumMsmString {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnumMsmString {
     #[doc = "*Required features: `\"Win32_System_ApplicationInstallationAndServicing\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -2551,11 +2582,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnum
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnumMsmString {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnumMsmString {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2587,6 +2613,12 @@ pub struct IEnumMsmString_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IMsmDependencies(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IMsmDependencies {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IMsmDependencies {
     #[doc = "*Required features: `\"Win32_System_ApplicationInstallationAndServicing\"`, `\"Win32_System_Com\"`*"]
@@ -2654,12 +2686,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IMsmDepen
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IMsmDependencies {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IMsmDependencies {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2694,6 +2720,12 @@ pub struct IMsmDependencies_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IMsmDependency(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IMsmDependency {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IMsmDependency {
     #[doc = "*Required features: `\"Win32_System_ApplicationInstallationAndServicing\"`, `\"Win32_Foundation\"`*"]
@@ -2760,12 +2792,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IMsmDepen
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IMsmDependency {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IMsmDependency {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2803,6 +2829,12 @@ pub struct IMsmDependency_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IMsmError(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IMsmError {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IMsmError {
     #[doc = "*Required features: `\"Win32_System_ApplicationInstallationAndServicing\"`*"]
@@ -2890,12 +2922,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IMsmError
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IMsmError {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IMsmError {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2946,6 +2972,12 @@ pub struct IMsmError_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IMsmErrors(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IMsmErrors {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IMsmErrors {
     #[doc = "*Required features: `\"Win32_System_ApplicationInstallationAndServicing\"`, `\"Win32_System_Com\"`*"]
@@ -3013,12 +3045,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IMsmError
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IMsmErrors {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IMsmErrors {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3053,6 +3079,12 @@ pub struct IMsmErrors_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IMsmGetFiles(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IMsmGetFiles {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IMsmGetFiles {
     #[doc = "*Required features: `\"Win32_System_ApplicationInstallationAndServicing\"`, `\"Win32_System_Com\"`*"]
@@ -3111,12 +3143,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IMsmGetFi
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IMsmGetFiles {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IMsmGetFiles {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3149,6 +3175,12 @@ pub struct IMsmGetFiles_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IMsmMerge(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IMsmMerge {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IMsmMerge {
     #[doc = "*Required features: `\"Win32_System_ApplicationInstallationAndServicing\"`, `\"Win32_Foundation\"`*"]
@@ -3265,12 +3297,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IMsmMerge
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IMsmMerge {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IMsmMerge {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3343,6 +3369,12 @@ pub struct IMsmMerge_Vtbl {
 #[repr(transparent)]
 pub struct IMsmStrings(::windows::core::IUnknown);
 #[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IMsmStrings {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "Win32_System_Com")]
 impl IMsmStrings {
     #[doc = "*Required features: `\"Win32_System_ApplicationInstallationAndServicing\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -3405,12 +3437,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for IMsmStrings {
 impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IMsmStrings {
     fn into_param(self) -> ::windows::core::Param<'a, super::Com::IDispatch> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IMsmStrings {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 #[cfg(feature = "Win32_System_Com")]
@@ -3511,6 +3537,7 @@ impl ::core::default::Default for INSTALLFEATUREATTRIBUTE {
 }
 unsafe impl ::windows::core::Abi for INSTALLFEATUREATTRIBUTE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for INSTALLFEATUREATTRIBUTE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3540,6 +3567,7 @@ impl ::core::default::Default for INSTALLLEVEL {
 }
 unsafe impl ::windows::core::Abi for INSTALLLEVEL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for INSTALLLEVEL {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3567,6 +3595,7 @@ impl ::core::default::Default for INSTALLLOGATTRIBUTES {
 }
 unsafe impl ::windows::core::Abi for INSTALLLOGATTRIBUTES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for INSTALLLOGATTRIBUTES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3628,6 +3657,7 @@ impl ::core::default::Default for INSTALLMESSAGE {
 }
 unsafe impl ::windows::core::Abi for INSTALLMESSAGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for INSTALLMESSAGE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3663,6 +3693,7 @@ impl ::core::default::Default for INSTALLMODE {
 }
 unsafe impl ::windows::core::Abi for INSTALLMODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for INSTALLMODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3732,6 +3763,7 @@ impl ::core::default::Default for INSTALLOGMODE {
 }
 unsafe impl ::windows::core::Abi for INSTALLOGMODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for INSTALLOGMODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3859,6 +3891,7 @@ impl ::core::default::Default for INSTALLSTATE {
 }
 unsafe impl ::windows::core::Abi for INSTALLSTATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for INSTALLSTATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3888,6 +3921,7 @@ impl ::core::default::Default for INSTALLTYPE {
 }
 unsafe impl ::windows::core::Abi for INSTALLTYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for INSTALLTYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3933,6 +3967,7 @@ impl ::core::default::Default for INSTALLUILEVEL {
 }
 unsafe impl ::windows::core::Abi for INSTALLUILEVEL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for INSTALLUILEVEL {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3946,6 +3981,11 @@ pub type INSTALLUI_HANDLERW = ::core::option::Option<unsafe extern "system" fn(p
 #[doc = "*Required features: `\"Win32_System_ApplicationInstallationAndServicing\"`*"]
 #[repr(transparent)]
 pub struct IPMApplicationInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPMApplicationInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPMApplicationInfo {
     #[doc = "*Required features: `\"Win32_System_ApplicationInstallationAndServicing\"`*"]
     pub unsafe fn ProductID(&self) -> ::windows::core::Result<::windows::core::GUID> {
@@ -4265,11 +4305,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPMAp
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPMApplicationInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPMApplicationInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4474,6 +4509,11 @@ pub struct IPMApplicationInfo_Vtbl {
 #[doc = "*Required features: `\"Win32_System_ApplicationInstallationAndServicing\"`*"]
 #[repr(transparent)]
 pub struct IPMApplicationInfoEnumerator(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPMApplicationInfoEnumerator {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPMApplicationInfoEnumerator {
     #[doc = "*Required features: `\"Win32_System_ApplicationInstallationAndServicing\"`*"]
     pub unsafe fn Next(&self) -> ::windows::core::Result<IPMApplicationInfo> {
@@ -4501,11 +4541,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPMAp
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPMApplicationInfoEnumerator {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPMApplicationInfoEnumerator {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4530,6 +4565,11 @@ pub struct IPMApplicationInfoEnumerator_Vtbl {
 #[doc = "*Required features: `\"Win32_System_ApplicationInstallationAndServicing\"`*"]
 #[repr(transparent)]
 pub struct IPMBackgroundServiceAgentInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPMBackgroundServiceAgentInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPMBackgroundServiceAgentInfo {
     #[doc = "*Required features: `\"Win32_System_ApplicationInstallationAndServicing\"`*"]
     pub unsafe fn ProductID(&self) -> ::windows::core::Result<::windows::core::GUID> {
@@ -4626,11 +4666,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPMBa
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPMBackgroundServiceAgentInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPMBackgroundServiceAgentInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4704,6 +4739,11 @@ pub struct IPMBackgroundServiceAgentInfo_Vtbl {
 #[doc = "*Required features: `\"Win32_System_ApplicationInstallationAndServicing\"`*"]
 #[repr(transparent)]
 pub struct IPMBackgroundServiceAgentInfoEnumerator(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPMBackgroundServiceAgentInfoEnumerator {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPMBackgroundServiceAgentInfoEnumerator {
     #[doc = "*Required features: `\"Win32_System_ApplicationInstallationAndServicing\"`*"]
     pub unsafe fn Next(&self) -> ::windows::core::Result<IPMBackgroundServiceAgentInfo> {
@@ -4731,11 +4771,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPMBa
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPMBackgroundServiceAgentInfoEnumerator {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPMBackgroundServiceAgentInfoEnumerator {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4760,6 +4795,11 @@ pub struct IPMBackgroundServiceAgentInfoEnumerator_Vtbl {
 #[doc = "*Required features: `\"Win32_System_ApplicationInstallationAndServicing\"`*"]
 #[repr(transparent)]
 pub struct IPMBackgroundWorkerInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPMBackgroundWorkerInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPMBackgroundWorkerInfo {
     #[doc = "*Required features: `\"Win32_System_ApplicationInstallationAndServicing\"`*"]
     pub unsafe fn ProductID(&self) -> ::windows::core::Result<::windows::core::GUID> {
@@ -4813,11 +4853,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPMBa
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPMBackgroundWorkerInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPMBackgroundWorkerInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4856,6 +4891,11 @@ pub struct IPMBackgroundWorkerInfo_Vtbl {
 #[doc = "*Required features: `\"Win32_System_ApplicationInstallationAndServicing\"`*"]
 #[repr(transparent)]
 pub struct IPMBackgroundWorkerInfoEnumerator(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPMBackgroundWorkerInfoEnumerator {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPMBackgroundWorkerInfoEnumerator {
     #[doc = "*Required features: `\"Win32_System_ApplicationInstallationAndServicing\"`*"]
     pub unsafe fn Next(&self) -> ::windows::core::Result<IPMBackgroundWorkerInfo> {
@@ -4883,11 +4923,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPMBa
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPMBackgroundWorkerInfoEnumerator {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPMBackgroundWorkerInfoEnumerator {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4912,6 +4947,11 @@ pub struct IPMBackgroundWorkerInfoEnumerator_Vtbl {
 #[doc = "*Required features: `\"Win32_System_ApplicationInstallationAndServicing\"`*"]
 #[repr(transparent)]
 pub struct IPMDeploymentManager(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPMDeploymentManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPMDeploymentManager {
     #[doc = "*Required features: `\"Win32_System_ApplicationInstallationAndServicing\"`*"]
     pub unsafe fn ReportDownloadBegin<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::GUID>>(&self, productid: Param0) -> ::windows::core::Result<()> {
@@ -5090,11 +5130,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPMDe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPMDeploymentManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPMDeploymentManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5195,6 +5230,11 @@ pub struct IPMDeploymentManager_Vtbl {
 #[doc = "*Required features: `\"Win32_System_ApplicationInstallationAndServicing\"`*"]
 #[repr(transparent)]
 pub struct IPMEnumerationManager(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPMEnumerationManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPMEnumerationManager {
     #[doc = "*Required features: `\"Win32_System_ApplicationInstallationAndServicing\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -5311,11 +5351,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPMEn
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPMEnumerationManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPMEnumerationManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5396,6 +5431,11 @@ pub struct IPMEnumerationManager_Vtbl {
 #[doc = "*Required features: `\"Win32_System_ApplicationInstallationAndServicing\"`*"]
 #[repr(transparent)]
 pub struct IPMExtensionCachedFileUpdaterInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPMExtensionCachedFileUpdaterInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPMExtensionCachedFileUpdaterInfo {
     #[doc = "*Required features: `\"Win32_System_ApplicationInstallationAndServicing\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -5422,11 +5462,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IPMExtens
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPMExtensionCachedFileUpdaterInfo {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IPMExtensionCachedFileUpdaterInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IPMExtensionCachedFileUpdaterInfo {
@@ -5456,6 +5491,11 @@ pub struct IPMExtensionCachedFileUpdaterInfo_Vtbl {
 #[doc = "*Required features: `\"Win32_System_ApplicationInstallationAndServicing\"`*"]
 #[repr(transparent)]
 pub struct IPMExtensionContractInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPMExtensionContractInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPMExtensionContractInfo {
     #[doc = "*Required features: `\"Win32_System_ApplicationInstallationAndServicing\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -5481,11 +5521,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IPMExtens
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPMExtensionContractInfo {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IPMExtensionContractInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IPMExtensionContractInfo {
@@ -5515,6 +5550,11 @@ pub struct IPMExtensionContractInfo_Vtbl {
 #[doc = "*Required features: `\"Win32_System_ApplicationInstallationAndServicing\"`*"]
 #[repr(transparent)]
 pub struct IPMExtensionFileExtensionInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPMExtensionFileExtensionInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPMExtensionFileExtensionInfo {
     #[doc = "*Required features: `\"Win32_System_ApplicationInstallationAndServicing\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -5572,11 +5612,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPMEx
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPMExtensionFileExtensionInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPMExtensionFileExtensionInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5628,6 +5663,11 @@ pub struct IPMExtensionFileExtensionInfo_Vtbl {
 #[doc = "*Required features: `\"Win32_System_ApplicationInstallationAndServicing\"`*"]
 #[repr(transparent)]
 pub struct IPMExtensionFileOpenPickerInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPMExtensionFileOpenPickerInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPMExtensionFileOpenPickerInfo {
     #[doc = "*Required features: `\"Win32_System_ApplicationInstallationAndServicing\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -5661,11 +5701,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPMEx
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPMExtensionFileOpenPickerInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPMExtensionFileOpenPickerInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5697,6 +5732,11 @@ pub struct IPMExtensionFileOpenPickerInfo_Vtbl {
 #[doc = "*Required features: `\"Win32_System_ApplicationInstallationAndServicing\"`*"]
 #[repr(transparent)]
 pub struct IPMExtensionFileSavePickerInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPMExtensionFileSavePickerInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPMExtensionFileSavePickerInfo {
     #[doc = "*Required features: `\"Win32_System_ApplicationInstallationAndServicing\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -5730,11 +5770,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPMEx
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPMExtensionFileSavePickerInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPMExtensionFileSavePickerInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5766,6 +5801,11 @@ pub struct IPMExtensionFileSavePickerInfo_Vtbl {
 #[doc = "*Required features: `\"Win32_System_ApplicationInstallationAndServicing\"`*"]
 #[repr(transparent)]
 pub struct IPMExtensionInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPMExtensionInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPMExtensionInfo {
     #[doc = "*Required features: `\"Win32_System_ApplicationInstallationAndServicing\"`*"]
     pub unsafe fn SupplierPID(&self) -> ::windows::core::Result<::windows::core::GUID> {
@@ -5818,11 +5858,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPMEx
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPMExtensionInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPMExtensionInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5867,6 +5902,11 @@ pub struct IPMExtensionInfo_Vtbl {
 #[doc = "*Required features: `\"Win32_System_ApplicationInstallationAndServicing\"`*"]
 #[repr(transparent)]
 pub struct IPMExtensionInfoEnumerator(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPMExtensionInfoEnumerator {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPMExtensionInfoEnumerator {
     #[doc = "*Required features: `\"Win32_System_ApplicationInstallationAndServicing\"`*"]
     pub unsafe fn Next(&self) -> ::windows::core::Result<IPMExtensionInfo> {
@@ -5894,11 +5934,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPMEx
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPMExtensionInfoEnumerator {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPMExtensionInfoEnumerator {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5923,6 +5958,11 @@ pub struct IPMExtensionInfoEnumerator_Vtbl {
 #[doc = "*Required features: `\"Win32_System_ApplicationInstallationAndServicing\"`*"]
 #[repr(transparent)]
 pub struct IPMExtensionProtocolInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPMExtensionProtocolInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPMExtensionProtocolInfo {
     #[doc = "*Required features: `\"Win32_System_ApplicationInstallationAndServicing\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -5953,11 +5993,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IPMExtens
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPMExtensionProtocolInfo {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IPMExtensionProtocolInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IPMExtensionProtocolInfo {
@@ -5991,6 +6026,11 @@ pub struct IPMExtensionProtocolInfo_Vtbl {
 #[doc = "*Required features: `\"Win32_System_ApplicationInstallationAndServicing\"`*"]
 #[repr(transparent)]
 pub struct IPMExtensionShareTargetInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPMExtensionShareTargetInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPMExtensionShareTargetInfo {
     #[doc = "*Required features: `\"Win32_System_ApplicationInstallationAndServicing\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -6029,11 +6069,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPMEx
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPMExtensionShareTargetInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPMExtensionShareTargetInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6069,6 +6104,11 @@ pub struct IPMExtensionShareTargetInfo_Vtbl {
 #[doc = "*Required features: `\"Win32_System_ApplicationInstallationAndServicing\"`*"]
 #[repr(transparent)]
 pub struct IPMLiveTileJobInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPMLiveTileJobInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPMLiveTileJobInfo {
     #[doc = "*Required features: `\"Win32_System_ApplicationInstallationAndServicing\"`*"]
     pub unsafe fn ProductID(&self) -> ::windows::core::Result<::windows::core::GUID> {
@@ -6204,11 +6244,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPMLi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPMLiveTileJobInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPMLiveTileJobInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6277,6 +6312,11 @@ pub struct IPMLiveTileJobInfo_Vtbl {
 #[doc = "*Required features: `\"Win32_System_ApplicationInstallationAndServicing\"`*"]
 #[repr(transparent)]
 pub struct IPMLiveTileJobInfoEnumerator(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPMLiveTileJobInfoEnumerator {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPMLiveTileJobInfoEnumerator {
     #[doc = "*Required features: `\"Win32_System_ApplicationInstallationAndServicing\"`*"]
     pub unsafe fn Next(&self) -> ::windows::core::Result<IPMLiveTileJobInfo> {
@@ -6304,11 +6344,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPMLi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPMLiveTileJobInfoEnumerator {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPMLiveTileJobInfoEnumerator {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6333,6 +6368,11 @@ pub struct IPMLiveTileJobInfoEnumerator_Vtbl {
 #[doc = "*Required features: `\"Win32_System_ApplicationInstallationAndServicing\"`*"]
 #[repr(transparent)]
 pub struct IPMTaskInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPMTaskInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPMTaskInfo {
     #[doc = "*Required features: `\"Win32_System_ApplicationInstallationAndServicing\"`*"]
     pub unsafe fn ProductID(&self) -> ::windows::core::Result<::windows::core::GUID> {
@@ -6463,11 +6503,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPMTa
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPMTaskInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPMTaskInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6548,6 +6583,11 @@ pub struct IPMTaskInfo_Vtbl {
 #[doc = "*Required features: `\"Win32_System_ApplicationInstallationAndServicing\"`*"]
 #[repr(transparent)]
 pub struct IPMTaskInfoEnumerator(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPMTaskInfoEnumerator {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPMTaskInfoEnumerator {
     #[doc = "*Required features: `\"Win32_System_ApplicationInstallationAndServicing\"`*"]
     pub unsafe fn Next(&self) -> ::windows::core::Result<IPMTaskInfo> {
@@ -6575,11 +6615,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPMTa
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPMTaskInfoEnumerator {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPMTaskInfoEnumerator {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6604,6 +6639,11 @@ pub struct IPMTaskInfoEnumerator_Vtbl {
 #[doc = "*Required features: `\"Win32_System_ApplicationInstallationAndServicing\"`*"]
 #[repr(transparent)]
 pub struct IPMTileInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPMTileInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPMTileInfo {
     #[doc = "*Required features: `\"Win32_System_ApplicationInstallationAndServicing\"`*"]
     pub unsafe fn ProductID(&self) -> ::windows::core::Result<::windows::core::GUID> {
@@ -6750,11 +6790,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPMTi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPMTileInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPMTileInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6847,6 +6882,11 @@ pub struct IPMTileInfo_Vtbl {
 #[doc = "*Required features: `\"Win32_System_ApplicationInstallationAndServicing\"`*"]
 #[repr(transparent)]
 pub struct IPMTileInfoEnumerator(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPMTileInfoEnumerator {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPMTileInfoEnumerator {
     #[doc = "*Required features: `\"Win32_System_ApplicationInstallationAndServicing\"`*"]
     pub unsafe fn Next(&self) -> ::windows::core::Result<IPMTileInfo> {
@@ -6874,11 +6914,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPMTi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPMTileInfoEnumerator {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPMTileInfoEnumerator {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6903,6 +6938,11 @@ pub struct IPMTileInfoEnumerator_Vtbl {
 #[doc = "*Required features: `\"Win32_System_ApplicationInstallationAndServicing\"`*"]
 #[repr(transparent)]
 pub struct IPMTilePropertyEnumerator(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPMTilePropertyEnumerator {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPMTilePropertyEnumerator {
     #[doc = "*Required features: `\"Win32_System_ApplicationInstallationAndServicing\"`*"]
     pub unsafe fn Next(&self) -> ::windows::core::Result<IPMTilePropertyInfo> {
@@ -6930,11 +6970,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPMTi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPMTilePropertyEnumerator {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPMTilePropertyEnumerator {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6959,6 +6994,11 @@ pub struct IPMTilePropertyEnumerator_Vtbl {
 #[doc = "*Required features: `\"Win32_System_ApplicationInstallationAndServicing\"`*"]
 #[repr(transparent)]
 pub struct IPMTilePropertyInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPMTilePropertyInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPMTilePropertyInfo {
     #[doc = "*Required features: `\"Win32_System_ApplicationInstallationAndServicing\"`*"]
     pub unsafe fn PropertyID(&self) -> ::windows::core::Result<u32> {
@@ -6994,11 +7034,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IPMTilePr
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPMTilePropertyInfo {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IPMTilePropertyInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IPMTilePropertyInfo {
@@ -7471,6 +7506,11 @@ pub const IPROPVALUE__CARRYINGNDP_URTUPGRADE: &'static str = "URTUPGRADE";
 #[doc = "*Required features: `\"Win32_System_ApplicationInstallationAndServicing\"`*"]
 #[repr(transparent)]
 pub struct IValidate(::windows::core::IUnknown);
+impl ::core::clone::Clone for IValidate {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IValidate {
     #[doc = "*Required features: `\"Win32_System_ApplicationInstallationAndServicing\"`*"]
     pub unsafe fn OpenDatabase<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, szdatabase: Param0) -> ::windows::core::Result<()> {
@@ -7521,11 +7561,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IValidate
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IValidate {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IValidate {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IValidate {
@@ -7613,6 +7648,7 @@ impl ::core::default::Default for MSIADVERTISEOPTIONFLAGS {
 }
 unsafe impl ::windows::core::Abi for MSIADVERTISEOPTIONFLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MSIADVERTISEOPTIONFLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7644,6 +7680,7 @@ impl ::core::default::Default for MSIARCHITECTUREFLAGS {
 }
 unsafe impl ::windows::core::Abi for MSIARCHITECTUREFLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MSIARCHITECTUREFLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7671,6 +7708,7 @@ impl ::core::default::Default for MSIASSEMBLYINFO {
 }
 unsafe impl ::windows::core::Abi for MSIASSEMBLYINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MSIASSEMBLYINFO {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7698,6 +7736,7 @@ impl ::core::default::Default for MSICODE {
 }
 unsafe impl ::windows::core::Abi for MSICODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MSICODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7725,6 +7764,7 @@ impl ::core::default::Default for MSICOLINFO {
 }
 unsafe impl ::windows::core::Abi for MSICOLINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MSICOLINFO {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7756,6 +7796,7 @@ impl ::core::default::Default for MSICONDITION {
 }
 unsafe impl ::windows::core::Abi for MSICONDITION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MSICONDITION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7787,6 +7828,7 @@ impl ::core::default::Default for MSICOSTTREE {
 }
 unsafe impl ::windows::core::Abi for MSICOSTTREE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MSICOSTTREE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7876,6 +7918,7 @@ impl ::core::default::Default for MSIDBERROR {
 }
 unsafe impl ::windows::core::Abi for MSIDBERROR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MSIDBERROR {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7905,6 +7948,7 @@ impl ::core::default::Default for MSIDBSTATE {
 }
 unsafe impl ::windows::core::Abi for MSIDBSTATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MSIDBSTATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7930,6 +7974,7 @@ impl ::core::fmt::Debug for MSIFILEHASHINFO {
 }
 unsafe impl ::windows::core::Abi for MSIFILEHASHINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MSIFILEHASHINFO {
     fn eq(&self, other: &Self) -> bool {
@@ -7968,6 +8013,7 @@ impl ::core::fmt::Debug for MSIHANDLE {
 }
 unsafe impl ::windows::core::Abi for MSIHANDLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[doc = "*Required features: `\"Win32_System_ApplicationInstallationAndServicing\"`*"]
 #[repr(transparent)]
@@ -8000,6 +8046,7 @@ impl ::core::default::Default for MSIINSTALLCONTEXT {
 }
 unsafe impl ::windows::core::Abi for MSIINSTALLCONTEXT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MSIINSTALLCONTEXT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8049,6 +8096,7 @@ impl ::core::default::Default for MSIMODIFY {
 }
 unsafe impl ::windows::core::Abi for MSIMODIFY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MSIMODIFY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8074,6 +8122,7 @@ impl ::core::default::Default for MSIOPENPACKAGEFLAGS {
 }
 unsafe impl ::windows::core::Abi for MSIOPENPACKAGEFLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MSIOPENPACKAGEFLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8103,6 +8152,7 @@ impl ::core::default::Default for MSIPATCHDATATYPE {
 }
 unsafe impl ::windows::core::Abi for MSIPATCHDATATYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MSIPATCHDATATYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8130,6 +8180,7 @@ impl ::core::fmt::Debug for MSIPATCHSEQUENCEINFOA {
 }
 unsafe impl ::windows::core::Abi for MSIPATCHSEQUENCEINFOA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MSIPATCHSEQUENCEINFOA {
     fn eq(&self, other: &Self) -> bool {
@@ -8163,6 +8214,7 @@ impl ::core::fmt::Debug for MSIPATCHSEQUENCEINFOW {
 }
 unsafe impl ::windows::core::Abi for MSIPATCHSEQUENCEINFOW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MSIPATCHSEQUENCEINFOW {
     fn eq(&self, other: &Self) -> bool {
@@ -8204,6 +8256,7 @@ impl ::core::default::Default for MSIPATCHSTATE {
 }
 unsafe impl ::windows::core::Abi for MSIPATCHSTATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MSIPATCHSTATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8265,6 +8318,7 @@ impl ::core::default::Default for MSIRUNMODE {
 }
 unsafe impl ::windows::core::Abi for MSIRUNMODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MSIRUNMODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8296,6 +8350,7 @@ impl ::core::default::Default for MSISOURCETYPE {
 }
 unsafe impl ::windows::core::Abi for MSISOURCETYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MSISOURCETYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8323,6 +8378,7 @@ impl ::core::default::Default for MSITRANSACTION {
 }
 unsafe impl ::windows::core::Abi for MSITRANSACTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MSITRANSACTION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8350,6 +8406,7 @@ impl ::core::default::Default for MSITRANSACTIONSTATE {
 }
 unsafe impl ::windows::core::Abi for MSITRANSACTIONSTATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MSITRANSACTIONSTATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8389,6 +8446,7 @@ impl ::core::default::Default for MSITRANSFORM_ERROR {
 }
 unsafe impl ::windows::core::Abi for MSITRANSFORM_ERROR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MSITRANSFORM_ERROR {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8436,6 +8494,7 @@ impl ::core::default::Default for MSITRANSFORM_VALIDATE {
 }
 unsafe impl ::windows::core::Abi for MSITRANSFORM_VALIDATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MSITRANSFORM_VALIDATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12206,6 +12265,7 @@ impl ::core::default::Default for PACKMAN_RUNTIME {
 }
 unsafe impl ::windows::core::Abi for PACKMAN_RUNTIME {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PACKMAN_RUNTIME {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12231,6 +12291,7 @@ impl ::core::fmt::Debug for PATCH_IGNORE_RANGE {
 }
 unsafe impl ::windows::core::Abi for PATCH_IGNORE_RANGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PATCH_IGNORE_RANGE {
     fn eq(&self, other: &Self) -> bool {
@@ -12262,6 +12323,7 @@ impl ::core::fmt::Debug for PATCH_INTERLEAVE_MAP {
 }
 unsafe impl ::windows::core::Abi for PATCH_INTERLEAVE_MAP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PATCH_INTERLEAVE_MAP {
     fn eq(&self, other: &Self) -> bool {
@@ -12294,6 +12356,7 @@ impl ::core::fmt::Debug for PATCH_INTERLEAVE_MAP_0 {
 }
 unsafe impl ::windows::core::Abi for PATCH_INTERLEAVE_MAP_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PATCH_INTERLEAVE_MAP_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -12328,6 +12391,7 @@ impl ::core::clone::Clone for PATCH_OLD_FILE_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PATCH_OLD_FILE_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for PATCH_OLD_FILE_INFO {
@@ -12362,6 +12426,7 @@ impl ::core::clone::Clone for PATCH_OLD_FILE_INFO_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PATCH_OLD_FILE_INFO_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for PATCH_OLD_FILE_INFO_0 {
@@ -12400,6 +12465,7 @@ impl ::core::fmt::Debug for PATCH_OLD_FILE_INFO_A {
 }
 unsafe impl ::windows::core::Abi for PATCH_OLD_FILE_INFO_A {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PATCH_OLD_FILE_INFO_A {
     fn eq(&self, other: &Self) -> bool {
@@ -12440,6 +12506,7 @@ impl ::core::fmt::Debug for PATCH_OLD_FILE_INFO_H {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PATCH_OLD_FILE_INFO_H {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for PATCH_OLD_FILE_INFO_H {
@@ -12478,6 +12545,7 @@ impl ::core::fmt::Debug for PATCH_OLD_FILE_INFO_W {
 }
 unsafe impl ::windows::core::Abi for PATCH_OLD_FILE_INFO_W {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PATCH_OLD_FILE_INFO_W {
     fn eq(&self, other: &Self) -> bool {
@@ -12531,6 +12599,7 @@ impl ::core::fmt::Debug for PATCH_OPTION_DATA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PATCH_OPTION_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for PATCH_OPTION_DATA {
@@ -12600,6 +12669,7 @@ impl ::core::fmt::Debug for PATCH_RETAIN_RANGE {
 }
 unsafe impl ::windows::core::Abi for PATCH_RETAIN_RANGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PATCH_RETAIN_RANGE {
     fn eq(&self, other: &Self) -> bool {
@@ -12684,6 +12754,7 @@ impl ::core::fmt::Debug for PMSIHANDLE {
 }
 unsafe impl ::windows::core::Abi for PMSIHANDLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PMSIHANDLE {
     fn eq(&self, other: &Self) -> bool {
@@ -12730,6 +12801,7 @@ impl ::core::default::Default for PM_ACTIVATION_POLICY {
 }
 unsafe impl ::windows::core::Abi for PM_ACTIVATION_POLICY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PM_ACTIVATION_POLICY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12759,6 +12831,7 @@ impl ::core::default::Default for PM_APPLICATION_HUBTYPE {
 }
 unsafe impl ::windows::core::Abi for PM_APPLICATION_HUBTYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PM_APPLICATION_HUBTYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12794,6 +12867,7 @@ impl ::core::default::Default for PM_APPLICATION_INSTALL_TYPE {
 }
 unsafe impl ::windows::core::Abi for PM_APPLICATION_INSTALL_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PM_APPLICATION_INSTALL_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12843,6 +12917,7 @@ impl ::core::default::Default for PM_APPLICATION_STATE {
 }
 unsafe impl ::windows::core::Abi for PM_APPLICATION_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PM_APPLICATION_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12872,6 +12947,7 @@ impl ::core::default::Default for PM_APP_GENRE {
 }
 unsafe impl ::windows::core::Abi for PM_APP_GENRE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PM_APP_GENRE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12900,6 +12976,7 @@ impl ::core::fmt::Debug for PM_BSATASKID {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PM_BSATASKID {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for PM_BSATASKID {
@@ -12937,6 +13014,7 @@ impl ::core::fmt::Debug for PM_BWTASKID {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PM_BWTASKID {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for PM_BWTASKID {
@@ -12987,6 +13065,7 @@ impl ::core::default::Default for PM_ENUM_APP_FILTER {
 }
 unsafe impl ::windows::core::Abi for PM_ENUM_APP_FILTER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PM_ENUM_APP_FILTER {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13022,6 +13101,7 @@ impl ::core::default::Default for PM_ENUM_BSA_FILTER {
 }
 unsafe impl ::windows::core::Abi for PM_ENUM_BSA_FILTER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PM_ENUM_BSA_FILTER {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13051,6 +13131,7 @@ impl ::core::default::Default for PM_ENUM_BW_FILTER {
 }
 unsafe impl ::windows::core::Abi for PM_ENUM_BW_FILTER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PM_ENUM_BW_FILTER {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13096,6 +13177,7 @@ impl ::core::default::Default for PM_ENUM_EXTENSION_FILTER {
 }
 unsafe impl ::windows::core::Abi for PM_ENUM_EXTENSION_FILTER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PM_ENUM_EXTENSION_FILTER {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13118,6 +13200,7 @@ impl ::core::clone::Clone for PM_ENUM_FILTER {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PM_ENUM_FILTER {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for PM_ENUM_FILTER {
@@ -13164,6 +13247,7 @@ impl ::core::clone::Clone for PM_ENUM_FILTER_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PM_ENUM_FILTER_0 {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for PM_ENUM_FILTER_0 {
@@ -13208,6 +13292,7 @@ impl ::core::default::Default for PM_ENUM_TASK_FILTER {
 }
 unsafe impl ::windows::core::Abi for PM_ENUM_TASK_FILTER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PM_ENUM_TASK_FILTER {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13241,6 +13326,7 @@ impl ::core::default::Default for PM_ENUM_TILE_FILTER {
 }
 unsafe impl ::windows::core::Abi for PM_ENUM_TILE_FILTER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PM_ENUM_TILE_FILTER {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13269,6 +13355,7 @@ impl ::core::fmt::Debug for PM_EXTENSIONCONSUMER {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PM_EXTENSIONCONSUMER {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for PM_EXTENSIONCONSUMER {
@@ -13323,6 +13410,7 @@ impl ::core::fmt::Debug for PM_INSTALLINFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PM_INSTALLINFO {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for PM_INSTALLINFO {
@@ -13360,6 +13448,7 @@ impl ::core::fmt::Debug for PM_INVOCATIONINFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PM_INVOCATIONINFO {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for PM_INVOCATIONINFO {
@@ -13400,6 +13489,7 @@ impl ::core::default::Default for PM_LIVETILE_RECURRENCE_TYPE {
 }
 unsafe impl ::windows::core::Abi for PM_LIVETILE_RECURRENCE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PM_LIVETILE_RECURRENCE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13431,6 +13521,7 @@ impl ::core::default::Default for PM_LOGO_SIZE {
 }
 unsafe impl ::windows::core::Abi for PM_LOGO_SIZE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PM_LOGO_SIZE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13480,6 +13571,7 @@ impl ::core::fmt::Debug for PM_STARTAPPBLOB {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PM_STARTAPPBLOB {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for PM_STARTAPPBLOB {
@@ -13556,6 +13648,7 @@ impl ::core::fmt::Debug for PM_STARTTILEBLOB {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PM_STARTTILEBLOB {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for PM_STARTTILEBLOB {
@@ -13598,6 +13691,7 @@ impl ::core::default::Default for PM_STARTTILE_TYPE {
 }
 unsafe impl ::windows::core::Abi for PM_STARTTILE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PM_STARTTILE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13637,6 +13731,7 @@ impl ::core::default::Default for PM_TASK_TRANSITION {
 }
 unsafe impl ::windows::core::Abi for PM_TASK_TRANSITION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PM_TASK_TRANSITION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13672,6 +13767,7 @@ impl ::core::default::Default for PM_TASK_TYPE {
 }
 unsafe impl ::windows::core::Abi for PM_TASK_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PM_TASK_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13713,6 +13809,7 @@ impl ::core::default::Default for PM_TILE_HUBTYPE {
 }
 unsafe impl ::windows::core::Abi for PM_TILE_HUBTYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PM_TILE_HUBTYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13748,6 +13845,7 @@ impl ::core::default::Default for PM_TILE_SIZE {
 }
 unsafe impl ::windows::core::Abi for PM_TILE_SIZE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PM_TILE_SIZE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13789,6 +13887,7 @@ impl ::core::fmt::Debug for PM_UPDATEINFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PM_UPDATEINFO {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for PM_UPDATEINFO {
@@ -13837,6 +13936,7 @@ impl ::core::fmt::Debug for PM_UPDATEINFO_LEGACY {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PM_UPDATEINFO_LEGACY {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for PM_UPDATEINFO_LEGACY {
@@ -13877,6 +13977,7 @@ impl ::core::fmt::Debug for PROTECTED_FILE_DATA {
 }
 unsafe impl ::windows::core::Abi for PROTECTED_FILE_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROTECTED_FILE_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -13908,6 +14009,7 @@ impl ::core::default::Default for QUERYASMINFO_FLAGS {
 }
 unsafe impl ::windows::core::Abi for QUERYASMINFO_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for QUERYASMINFO_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14011,6 +14113,7 @@ impl ::core::default::Default for REINSTALLMODE {
 }
 unsafe impl ::windows::core::Abi for REINSTALLMODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for REINSTALLMODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14042,6 +14145,7 @@ impl ::core::default::Default for RESULTTYPES {
 }
 unsafe impl ::windows::core::Abi for RESULTTYPES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RESULTTYPES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14098,6 +14202,7 @@ impl ::core::default::Default for SCRIPTFLAGS {
 }
 unsafe impl ::windows::core::Abi for SCRIPTFLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SCRIPTFLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14165,6 +14270,7 @@ impl ::core::default::Default for STATUSTYPES {
 }
 unsafe impl ::windows::core::Abi for STATUSTYPES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for STATUSTYPES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14372,6 +14478,7 @@ impl ::core::default::Default for TILE_TEMPLATE_TYPE {
 }
 unsafe impl ::windows::core::Abi for TILE_TEMPLATE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TILE_TEMPLATE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14541,6 +14648,7 @@ impl ::core::default::Default for USERINFOSTATE {
 }
 unsafe impl ::windows::core::Abi for USERINFOSTATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for USERINFOSTATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14615,6 +14723,7 @@ impl ::core::fmt::Debug for _tagAPPTASKTYPE {
 }
 unsafe impl ::windows::core::Abi for _tagAPPTASKTYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for _tagAPPTASKTYPE {
     fn eq(&self, other: &Self) -> bool {
@@ -14650,6 +14759,7 @@ impl ::core::default::Default for msidbAssemblyAttributes {
 }
 unsafe impl ::windows::core::Abi for msidbAssemblyAttributes {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for msidbAssemblyAttributes {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14675,6 +14785,7 @@ impl ::core::default::Default for msidbClassAttributes {
 }
 unsafe impl ::windows::core::Abi for msidbClassAttributes {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for msidbClassAttributes {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14724,6 +14835,7 @@ impl ::core::default::Default for msidbComponentAttributes {
 }
 unsafe impl ::windows::core::Abi for msidbComponentAttributes {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for msidbComponentAttributes {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14819,6 +14931,7 @@ impl ::core::default::Default for msidbControlAttributes {
 }
 unsafe impl ::windows::core::Abi for msidbControlAttributes {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for msidbControlAttributes {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14888,6 +15001,7 @@ impl ::core::default::Default for msidbCustomActionType {
 }
 unsafe impl ::windows::core::Abi for msidbCustomActionType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for msidbCustomActionType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14935,6 +15049,7 @@ impl ::core::default::Default for msidbDialogAttributes {
 }
 unsafe impl ::windows::core::Abi for msidbDialogAttributes {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for msidbDialogAttributes {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14962,6 +15077,7 @@ impl ::core::default::Default for msidbEmbeddedUIAttributes {
 }
 unsafe impl ::windows::core::Abi for msidbEmbeddedUIAttributes {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for msidbEmbeddedUIAttributes {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14999,6 +15115,7 @@ impl ::core::default::Default for msidbFeatureAttributes {
 }
 unsafe impl ::windows::core::Abi for msidbFeatureAttributes {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for msidbFeatureAttributes {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -15050,6 +15167,7 @@ impl ::core::default::Default for msidbFileAttributes {
 }
 unsafe impl ::windows::core::Abi for msidbFileAttributes {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for msidbFileAttributes {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -15083,6 +15201,7 @@ impl ::core::default::Default for msidbIniFileAction {
 }
 unsafe impl ::windows::core::Abi for msidbIniFileAction {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for msidbIniFileAction {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -15114,6 +15233,7 @@ impl ::core::default::Default for msidbLocatorType {
 }
 unsafe impl ::windows::core::Abi for msidbLocatorType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for msidbLocatorType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -15139,6 +15259,7 @@ impl ::core::default::Default for msidbMoveFileOptions {
 }
 unsafe impl ::windows::core::Abi for msidbMoveFileOptions {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for msidbMoveFileOptions {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -15166,6 +15287,7 @@ impl ::core::default::Default for msidbODBCDataSourceRegistration {
 }
 unsafe impl ::windows::core::Abi for msidbODBCDataSourceRegistration {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for msidbODBCDataSourceRegistration {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -15191,6 +15313,7 @@ impl ::core::default::Default for msidbPatchAttributes {
 }
 unsafe impl ::windows::core::Abi for msidbPatchAttributes {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for msidbPatchAttributes {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -15222,6 +15345,7 @@ impl ::core::default::Default for msidbRegistryRoot {
 }
 unsafe impl ::windows::core::Abi for msidbRegistryRoot {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for msidbRegistryRoot {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -15251,6 +15375,7 @@ impl ::core::default::Default for msidbRemoveFileInstallMode {
 }
 unsafe impl ::windows::core::Abi for msidbRemoveFileInstallMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for msidbRemoveFileInstallMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -15280,6 +15405,7 @@ impl ::core::default::Default for msidbServiceConfigEvent {
 }
 unsafe impl ::windows::core::Abi for msidbServiceConfigEvent {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for msidbServiceConfigEvent {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -15315,6 +15441,7 @@ impl ::core::default::Default for msidbServiceControlEvent {
 }
 unsafe impl ::windows::core::Abi for msidbServiceControlEvent {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for msidbServiceControlEvent {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -15340,6 +15467,7 @@ impl ::core::default::Default for msidbServiceInstallErrorControl {
 }
 unsafe impl ::windows::core::Abi for msidbServiceInstallErrorControl {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for msidbServiceInstallErrorControl {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -15371,6 +15499,7 @@ impl ::core::default::Default for msidbSumInfoSourceType {
 }
 unsafe impl ::windows::core::Abi for msidbSumInfoSourceType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for msidbSumInfoSourceType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -15402,6 +15531,7 @@ impl ::core::default::Default for msidbTextStyleStyleBits {
 }
 unsafe impl ::windows::core::Abi for msidbTextStyleStyleBits {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for msidbTextStyleStyleBits {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -15437,6 +15567,7 @@ impl ::core::default::Default for msidbUpgradeAttributes {
 }
 unsafe impl ::windows::core::Abi for msidbUpgradeAttributes {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for msidbUpgradeAttributes {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -15466,6 +15597,7 @@ impl ::core::default::Default for msifiFastInstallBits {
 }
 unsafe impl ::windows::core::Abi for msifiFastInstallBits {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for msifiFastInstallBits {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -15499,6 +15631,7 @@ impl ::core::default::Default for msirbRebootReason {
 }
 unsafe impl ::windows::core::Abi for msirbRebootReason {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for msirbRebootReason {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -15526,6 +15659,7 @@ impl ::core::default::Default for msirbRebootType {
 }
 unsafe impl ::windows::core::Abi for msirbRebootType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for msirbRebootType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -15565,6 +15699,7 @@ impl ::core::default::Default for msmErrorType {
 }
 unsafe impl ::windows::core::Abi for msmErrorType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for msmErrorType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

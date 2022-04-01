@@ -49,6 +49,7 @@ impl ::core::fmt::Debug for GESTURECONFIG {
 }
 unsafe impl ::windows::core::Abi for GESTURECONFIG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for GESTURECONFIG {
     fn eq(&self, other: &Self) -> bool {
@@ -94,6 +95,7 @@ impl ::core::default::Default for GESTURECONFIG_ID {
 }
 unsafe impl ::windows::core::Abi for GESTURECONFIG_ID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GESTURECONFIG_ID {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -159,6 +161,7 @@ impl ::core::fmt::Debug for GESTUREINFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for GESTUREINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for GESTUREINFO {
@@ -201,6 +204,7 @@ impl ::core::fmt::Debug for GESTURENOTIFYSTRUCT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for GESTURENOTIFYSTRUCT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for GESTURENOTIFYSTRUCT {
@@ -302,6 +306,7 @@ impl ::core::fmt::Debug for HGESTUREINFO {
 }
 unsafe impl ::windows::core::Abi for HGESTUREINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[repr(transparent)]
 #[derive(:: core :: cmp :: PartialEq, :: core :: cmp :: Eq)]
@@ -329,10 +334,16 @@ impl ::core::fmt::Debug for HTOUCHINPUT {
 }
 unsafe impl ::windows::core::Abi for HTOUCHINPUT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[doc = "*Required features: `\"Win32_UI_Input_Touch\"`*"]
 #[repr(transparent)]
 pub struct IInertiaProcessor(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInertiaProcessor {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IInertiaProcessor {
     #[doc = "*Required features: `\"Win32_UI_Input_Touch\"`*"]
     pub unsafe fn InitialOriginX(&self) -> ::windows::core::Result<f32> {
@@ -577,11 +588,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IIner
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IInertiaProcessor {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IInertiaProcessor {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -660,6 +666,11 @@ pub struct IInertiaProcessor_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Input_Touch\"`*"]
 #[repr(transparent)]
 pub struct IManipulationProcessor(::windows::core::IUnknown);
+impl ::core::clone::Clone for IManipulationProcessor {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IManipulationProcessor {
     #[doc = "*Required features: `\"Win32_UI_Input_Touch\"`*"]
     pub unsafe fn SupportedManipulations(&self) -> ::windows::core::Result<MANIPULATION_PROCESSOR_MANIPULATIONS> {
@@ -775,11 +786,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMani
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IManipulationProcessor {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IManipulationProcessor {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -866,6 +872,7 @@ impl ::core::default::Default for MANIPULATION_PROCESSOR_MANIPULATIONS {
 }
 unsafe impl ::windows::core::Abi for MANIPULATION_PROCESSOR_MANIPULATIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MANIPULATION_PROCESSOR_MANIPULATIONS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -894,6 +901,7 @@ impl ::core::default::Default for REGISTER_TOUCH_WINDOW_FLAGS {
 }
 unsafe impl ::windows::core::Abi for REGISTER_TOUCH_WINDOW_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for REGISTER_TOUCH_WINDOW_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -963,6 +971,7 @@ impl ::core::default::Default for TOUCHEVENTF_FLAGS {
 }
 unsafe impl ::windows::core::Abi for TOUCHEVENTF_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TOUCHEVENTF_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1029,6 +1038,7 @@ impl ::core::fmt::Debug for TOUCHINPUT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for TOUCHINPUT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for TOUCHINPUT {
@@ -1067,6 +1077,7 @@ impl ::core::default::Default for TOUCHINPUTMASKF_MASK {
 }
 unsafe impl ::windows::core::Abi for TOUCHINPUTMASKF_MASK {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TOUCHINPUTMASKF_MASK {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1119,6 +1130,11 @@ pub unsafe fn UnregisterTouchWindow<'a, Param0: ::windows::core::IntoParam<'a, s
 #[doc = "*Required features: `\"Win32_UI_Input_Touch\"`*"]
 #[repr(transparent)]
 pub struct _IManipulationEvents(::windows::core::IUnknown);
+impl ::core::clone::Clone for _IManipulationEvents {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl _IManipulationEvents {
     #[doc = "*Required features: `\"Win32_UI_Input_Touch\"`*"]
     pub unsafe fn ManipulationStarted(&self, x: f32, y: f32) -> ::windows::core::Result<()> {
@@ -1166,11 +1182,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for _IManipul
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a _IManipulationEvents {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for _IManipulationEvents {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for _IManipulationEvents {

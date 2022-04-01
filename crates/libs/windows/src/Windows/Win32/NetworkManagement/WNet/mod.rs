@@ -26,6 +26,7 @@ impl ::core::fmt::Debug for CONNECTDLGSTRUCTA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for CONNECTDLGSTRUCTA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for CONNECTDLGSTRUCTA {
@@ -68,6 +69,7 @@ impl ::core::fmt::Debug for CONNECTDLGSTRUCTW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for CONNECTDLGSTRUCTW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for CONNECTDLGSTRUCTW {
@@ -112,6 +114,7 @@ impl ::core::default::Default for CONNECTDLGSTRUCT_FLAGS {
 }
 unsafe impl ::windows::core::Abi for CONNECTDLGSTRUCT_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CONNECTDLGSTRUCT_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -193,6 +196,7 @@ impl ::core::fmt::Debug for DISCDLGSTRUCTA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DISCDLGSTRUCTA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DISCDLGSTRUCTA {
@@ -235,6 +239,7 @@ impl ::core::fmt::Debug for DISCDLGSTRUCTW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DISCDLGSTRUCTW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DISCDLGSTRUCTW {
@@ -271,6 +276,7 @@ impl ::core::default::Default for DISCDLGSTRUCT_FLAGS {
 }
 unsafe impl ::windows::core::Abi for DISCDLGSTRUCT_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DISCDLGSTRUCT_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -355,6 +361,7 @@ impl ::core::fmt::Debug for NETCONNECTINFOSTRUCT {
 }
 unsafe impl ::windows::core::Abi for NETCONNECTINFOSTRUCT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NETCONNECTINFOSTRUCT {
     fn eq(&self, other: &Self) -> bool {
@@ -397,6 +404,7 @@ impl ::core::fmt::Debug for NETINFOSTRUCT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NETINFOSTRUCT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NETINFOSTRUCT {
@@ -435,6 +443,7 @@ impl ::core::default::Default for NETINFOSTRUCT_CHARACTERISTICS {
 }
 unsafe impl ::windows::core::Abi for NETINFOSTRUCT_CHARACTERISTICS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NETINFOSTRUCT_CHARACTERISTICS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -496,6 +505,7 @@ impl ::core::fmt::Debug for NETRESOURCEA {
 }
 unsafe impl ::windows::core::Abi for NETRESOURCEA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NETRESOURCEA {
     fn eq(&self, other: &Self) -> bool {
@@ -533,6 +543,7 @@ impl ::core::fmt::Debug for NETRESOURCEW {
 }
 unsafe impl ::windows::core::Abi for NETRESOURCEW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NETRESOURCEW {
     fn eq(&self, other: &Self) -> bool {
@@ -566,6 +577,7 @@ impl ::core::default::Default for NETWORK_NAME_FORMAT_FLAGS {
 }
 unsafe impl ::windows::core::Abi for NETWORK_NAME_FORMAT_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NETWORK_NAME_FORMAT_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -597,6 +609,7 @@ impl ::core::default::Default for NET_RESOURCE_SCOPE {
 }
 unsafe impl ::windows::core::Abi for NET_RESOURCE_SCOPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NET_RESOURCE_SCOPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -626,6 +639,7 @@ impl ::core::default::Default for NET_RESOURCE_TYPE {
 }
 unsafe impl ::windows::core::Abi for NET_RESOURCE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NET_RESOURCE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -695,6 +709,7 @@ impl ::core::default::Default for NET_USE_CONNECT_FLAGS {
 }
 unsafe impl ::windows::core::Abi for NET_USE_CONNECT_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NET_USE_CONNECT_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -754,6 +769,7 @@ impl ::core::fmt::Debug for NOTIFYADD {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NOTIFYADD {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NOTIFYADD {
@@ -795,6 +811,7 @@ impl ::core::fmt::Debug for NOTIFYCANCEL {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NOTIFYCANCEL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NOTIFYCANCEL {
@@ -830,6 +847,7 @@ impl ::core::fmt::Debug for NOTIFYINFO {
 }
 unsafe impl ::windows::core::Abi for NOTIFYINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NOTIFYINFO {
     fn eq(&self, other: &Self) -> bool {
@@ -958,6 +976,7 @@ impl ::core::default::Default for NPDIRECTORY_NOTIFY_OPERATION {
 }
 unsafe impl ::windows::core::Abi for NPDIRECTORY_NOTIFY_OPERATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NPDIRECTORY_NOTIFY_OPERATION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1157,6 +1176,7 @@ impl ::core::default::Default for NP_PROPERTY_DIALOG_SELECTION {
 }
 unsafe impl ::windows::core::Abi for NP_PROPERTY_DIALOG_SELECTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NP_PROPERTY_DIALOG_SELECTION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1189,6 +1209,7 @@ impl ::core::fmt::Debug for NetEnumHandle {
 }
 unsafe impl ::windows::core::Abi for NetEnumHandle {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[doc = "*Required features: `\"Win32_NetworkManagement_WNet\"`, `\"Win32_Foundation\"`*"]
 #[cfg(feature = "Win32_Foundation")]
@@ -1289,6 +1310,7 @@ impl ::core::fmt::Debug for REMOTE_NAME_INFOA {
 }
 unsafe impl ::windows::core::Abi for REMOTE_NAME_INFOA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for REMOTE_NAME_INFOA {
     fn eq(&self, other: &Self) -> bool {
@@ -1321,6 +1343,7 @@ impl ::core::fmt::Debug for REMOTE_NAME_INFOW {
 }
 unsafe impl ::windows::core::Abi for REMOTE_NAME_INFOW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for REMOTE_NAME_INFOW {
     fn eq(&self, other: &Self) -> bool {
@@ -1376,6 +1399,7 @@ impl ::core::default::Default for UNC_INFO_LEVEL {
 }
 unsafe impl ::windows::core::Abi for UNC_INFO_LEVEL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UNC_INFO_LEVEL {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1400,6 +1424,7 @@ impl ::core::fmt::Debug for UNIVERSAL_NAME_INFOA {
 }
 unsafe impl ::windows::core::Abi for UNIVERSAL_NAME_INFOA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for UNIVERSAL_NAME_INFOA {
     fn eq(&self, other: &Self) -> bool {
@@ -1430,6 +1455,7 @@ impl ::core::fmt::Debug for UNIVERSAL_NAME_INFOW {
 }
 unsafe impl ::windows::core::Abi for UNIVERSAL_NAME_INFOW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for UNIVERSAL_NAME_INFOW {
     fn eq(&self, other: &Self) -> bool {
@@ -1481,6 +1507,7 @@ impl ::core::default::Default for WNET_OPEN_ENUM_USAGE {
 }
 unsafe impl ::windows::core::Abi for WNET_OPEN_ENUM_USAGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WNET_OPEN_ENUM_USAGE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1622,6 +1649,7 @@ impl ::core::default::Default for WNPERM_DLG {
 }
 unsafe impl ::windows::core::Abi for WNPERM_DLG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WNPERM_DLG {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

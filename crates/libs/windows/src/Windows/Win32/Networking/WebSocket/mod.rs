@@ -26,6 +26,7 @@ impl ::core::default::Default for WEB_SOCKET_ACTION {
 }
 unsafe impl ::windows::core::Abi for WEB_SOCKET_ACTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WEB_SOCKET_ACTION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -55,6 +56,7 @@ impl ::core::default::Default for WEB_SOCKET_ACTION_QUEUE {
 }
 unsafe impl ::windows::core::Abi for WEB_SOCKET_ACTION_QUEUE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WEB_SOCKET_ACTION_QUEUE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -75,6 +77,7 @@ impl ::core::clone::Clone for WEB_SOCKET_BUFFER {
 }
 unsafe impl ::windows::core::Abi for WEB_SOCKET_BUFFER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WEB_SOCKET_BUFFER {
     fn eq(&self, other: &Self) -> bool {
@@ -107,6 +110,7 @@ impl ::core::fmt::Debug for WEB_SOCKET_BUFFER_0 {
 }
 unsafe impl ::windows::core::Abi for WEB_SOCKET_BUFFER_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WEB_SOCKET_BUFFER_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -138,6 +142,7 @@ impl ::core::fmt::Debug for WEB_SOCKET_BUFFER_1 {
 }
 unsafe impl ::windows::core::Abi for WEB_SOCKET_BUFFER_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WEB_SOCKET_BUFFER_1 {
     fn eq(&self, other: &Self) -> bool {
@@ -181,6 +186,7 @@ impl ::core::default::Default for WEB_SOCKET_BUFFER_TYPE {
 }
 unsafe impl ::windows::core::Abi for WEB_SOCKET_BUFFER_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WEB_SOCKET_BUFFER_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -228,6 +234,7 @@ impl ::core::default::Default for WEB_SOCKET_CLOSE_STATUS {
 }
 unsafe impl ::windows::core::Abi for WEB_SOCKET_CLOSE_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WEB_SOCKET_CLOSE_STATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -260,6 +267,7 @@ impl ::core::fmt::Debug for WEB_SOCKET_HANDLE {
 }
 unsafe impl ::windows::core::Abi for WEB_SOCKET_HANDLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[repr(C)]
 #[doc = "*Required features: `\"Win32_Networking_WebSocket\"`*"]
@@ -282,6 +290,7 @@ impl ::core::fmt::Debug for WEB_SOCKET_HTTP_HEADER {
 }
 unsafe impl ::windows::core::Abi for WEB_SOCKET_HTTP_HEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WEB_SOCKET_HTTP_HEADER {
     fn eq(&self, other: &Self) -> bool {
@@ -316,6 +325,7 @@ impl ::core::fmt::Debug for WEB_SOCKET_PROPERTY {
 }
 unsafe impl ::windows::core::Abi for WEB_SOCKET_PROPERTY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WEB_SOCKET_PROPERTY {
     fn eq(&self, other: &Self) -> bool {
@@ -359,6 +369,7 @@ impl ::core::default::Default for WEB_SOCKET_PROPERTY_TYPE {
 }
 unsafe impl ::windows::core::Abi for WEB_SOCKET_PROPERTY_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WEB_SOCKET_PROPERTY_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

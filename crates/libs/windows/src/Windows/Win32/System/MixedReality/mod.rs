@@ -20,6 +20,7 @@ impl ::core::fmt::Debug for PERCEPTION_PAYLOAD_FIELD {
 }
 unsafe impl ::windows::core::Abi for PERCEPTION_PAYLOAD_FIELD {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PERCEPTION_PAYLOAD_FIELD {
     fn eq(&self, other: &Self) -> bool {
@@ -51,6 +52,7 @@ impl ::core::fmt::Debug for PERCEPTION_STATE_STREAM_TIMESTAMPS {
 }
 unsafe impl ::windows::core::Abi for PERCEPTION_STATE_STREAM_TIMESTAMPS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PERCEPTION_STATE_STREAM_TIMESTAMPS {
     fn eq(&self, other: &Self) -> bool {

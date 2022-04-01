@@ -59,11 +59,6 @@ impl AnimationDescription {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for AnimationDescription {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AnimationDescription {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -77,7 +72,6 @@ impl ::core::fmt::Debug for AnimationDescription {
 }
 unsafe impl ::windows::core::RuntimeType for AnimationDescription {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Core.AnimationMetrics.AnimationDescription;{7d11a549-be3d-41de-b081-05c149962f9b})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -186,6 +180,7 @@ impl ::core::default::Default for AnimationEffect {
 }
 unsafe impl ::windows::core::Abi for AnimationEffect {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AnimationEffect {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -194,7 +189,6 @@ impl ::core::fmt::Debug for AnimationEffect {
 }
 unsafe impl ::windows::core::RuntimeType for AnimationEffect {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Core.AnimationMetrics.AnimationEffect;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -238,6 +232,7 @@ impl ::core::default::Default for AnimationEffectTarget {
 }
 unsafe impl ::windows::core::Abi for AnimationEffectTarget {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AnimationEffectTarget {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -246,7 +241,6 @@ impl ::core::fmt::Debug for AnimationEffectTarget {
 }
 unsafe impl ::windows::core::RuntimeType for AnimationEffectTarget {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Core.AnimationMetrics.AnimationEffectTarget;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -254,6 +248,11 @@ unsafe impl ::windows::core::RuntimeType for AnimationEffectTarget {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAnimationDescription(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAnimationDescription {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAnimationDescription {
     type Vtable = IAnimationDescription_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x7d11a549_be3d_41de_b081_05c149962f9b);
@@ -280,6 +279,11 @@ pub struct IAnimationDescription_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAnimationDescriptionFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAnimationDescriptionFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAnimationDescriptionFactory {
     type Vtable = IAnimationDescriptionFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc6e27abe_c1fb_48b5_9271_ecc70ac86ef0);
@@ -293,6 +297,11 @@ pub struct IAnimationDescriptionFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IOpacityAnimation(::windows::core::IUnknown);
+impl ::core::clone::Clone for IOpacityAnimation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IOpacityAnimation {
     type Vtable = IOpacityAnimation_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x803aabe5_ee7e_455f_84e9_2506afb8d2b4);
@@ -310,6 +319,11 @@ pub struct IOpacityAnimation_Vtbl {
 #[doc = "*Required features: `\"UI_Core_AnimationMetrics\"`*"]
 #[repr(transparent)]
 pub struct IPropertyAnimation(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPropertyAnimation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPropertyAnimation {
     #[doc = "*Required features: `\"UI_Core_AnimationMetrics\"`*"]
     pub fn Type(&self) -> ::windows::core::Result<PropertyAnimationType> {
@@ -396,11 +410,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPropertyAnimation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPropertyAnimation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -414,7 +423,6 @@ impl ::core::fmt::Debug for IPropertyAnimation {
 }
 unsafe impl ::windows::core::RuntimeType for IPropertyAnimation {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{3a01b4da-4d8c-411e-b615-1ade683a9903}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -448,6 +456,11 @@ pub struct IPropertyAnimation_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IScaleAnimation(::windows::core::IUnknown);
+impl ::core::clone::Clone for IScaleAnimation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IScaleAnimation {
     type Vtable = IScaleAnimation_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x023552c7_71ab_428c_9c9f_d31780964995);
@@ -537,11 +550,6 @@ impl OpacityAnimation {
         }
     }
 }
-impl ::core::clone::Clone for OpacityAnimation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for OpacityAnimation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -555,7 +563,6 @@ impl ::core::fmt::Debug for OpacityAnimation {
 }
 unsafe impl ::windows::core::RuntimeType for OpacityAnimation {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Core.AnimationMetrics.OpacityAnimation;{803aabe5-ee7e-455f-84e9-2506afb8d2b4})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -680,11 +687,6 @@ impl PropertyAnimation {
         }
     }
 }
-impl ::core::clone::Clone for PropertyAnimation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PropertyAnimation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -698,7 +700,6 @@ impl ::core::fmt::Debug for PropertyAnimation {
 }
 unsafe impl ::windows::core::RuntimeType for PropertyAnimation {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Core.AnimationMetrics.PropertyAnimation;{3a01b4da-4d8c-411e-b615-1ade683a9903})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -796,6 +797,7 @@ impl ::core::default::Default for PropertyAnimationType {
 }
 unsafe impl ::windows::core::Abi for PropertyAnimationType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PropertyAnimationType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -804,7 +806,6 @@ impl ::core::fmt::Debug for PropertyAnimationType {
 }
 unsafe impl ::windows::core::RuntimeType for PropertyAnimationType {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Core.AnimationMetrics.PropertyAnimationType;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -901,11 +902,6 @@ impl ScaleAnimation {
         }
     }
 }
-impl ::core::clone::Clone for ScaleAnimation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ScaleAnimation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -919,7 +915,6 @@ impl ::core::fmt::Debug for ScaleAnimation {
 }
 unsafe impl ::windows::core::RuntimeType for ScaleAnimation {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Core.AnimationMetrics.ScaleAnimation;{023552c7-71ab-428c-9c9f-d31780964995})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1044,11 +1039,6 @@ impl TranslationAnimation {
         }
     }
 }
-impl ::core::clone::Clone for TranslationAnimation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for TranslationAnimation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1062,7 +1052,6 @@ impl ::core::fmt::Debug for TranslationAnimation {
 }
 unsafe impl ::windows::core::RuntimeType for TranslationAnimation {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Core.AnimationMetrics.TranslationAnimation;{3a01b4da-4d8c-411e-b615-1ade683a9903})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

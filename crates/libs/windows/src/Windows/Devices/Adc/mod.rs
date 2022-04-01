@@ -36,11 +36,6 @@ impl AdcChannel {
         unsafe { (::windows::core::Interface::vtable(this).Close)(::core::mem::transmute_copy(this)).ok() }
     }
 }
-impl ::core::clone::Clone for AdcChannel {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AdcChannel {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -54,7 +49,6 @@ impl ::core::fmt::Debug for AdcChannel {
 }
 unsafe impl ::windows::core::RuntimeType for AdcChannel {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Adc.AdcChannel;{040bf414-2588-4a56-abef-73a260acc60a})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -155,6 +149,7 @@ impl ::core::default::Default for AdcChannelMode {
 }
 unsafe impl ::windows::core::Abi for AdcChannelMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AdcChannelMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -163,7 +158,6 @@ impl ::core::fmt::Debug for AdcChannelMode {
 }
 unsafe impl ::windows::core::RuntimeType for AdcChannelMode {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.Adc.AdcChannelMode;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -260,11 +254,6 @@ impl AdcController {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for AdcController {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AdcController {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -278,7 +267,6 @@ impl ::core::fmt::Debug for AdcController {
 }
 unsafe impl ::windows::core::RuntimeType for AdcController {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Adc.AdcController;{2a76e4b0-a896-4219-86b6-ea8cdce98f56})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -335,6 +323,11 @@ unsafe impl ::core::marker::Sync for AdcController {}
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAdcChannel(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAdcChannel {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAdcChannel {
     type Vtable = IAdcChannel_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x040bf414_2588_4a56_abef_73a260acc60a);
@@ -350,6 +343,11 @@ pub struct IAdcChannel_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAdcController(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAdcController {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAdcController {
     type Vtable = IAdcController_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x2a76e4b0_a896_4219_86b6_ea8cdce98f56);
@@ -370,6 +368,11 @@ pub struct IAdcController_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAdcControllerStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAdcControllerStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAdcControllerStatics {
     type Vtable = IAdcControllerStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xcce98e0c_01f8_4891_bc3b_be53ef279ca4);
@@ -386,6 +389,11 @@ pub struct IAdcControllerStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAdcControllerStatics2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAdcControllerStatics2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAdcControllerStatics2 {
     type Vtable = IAdcControllerStatics2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa2b93b1d_977b_4f5a_a5fe_a6abaffe6484);

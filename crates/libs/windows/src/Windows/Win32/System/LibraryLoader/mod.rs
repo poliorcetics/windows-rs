@@ -100,6 +100,7 @@ impl ::core::fmt::Debug for ENUMUILANG {
 }
 unsafe impl ::windows::core::Abi for ENUMUILANG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ENUMUILANG {
     fn eq(&self, other: &Self) -> bool {
@@ -619,6 +620,7 @@ impl ::core::default::Default for LOAD_LIBRARY_FLAGS {
 }
 unsafe impl ::windows::core::Abi for LOAD_LIBRARY_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for LOAD_LIBRARY_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -799,6 +801,7 @@ impl ::core::fmt::Debug for REDIRECTION_DESCRIPTOR {
 }
 unsafe impl ::windows::core::Abi for REDIRECTION_DESCRIPTOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for REDIRECTION_DESCRIPTOR {
     fn eq(&self, other: &Self) -> bool {
@@ -831,6 +834,7 @@ impl ::core::fmt::Debug for REDIRECTION_FUNCTION_DESCRIPTOR {
 }
 unsafe impl ::windows::core::Abi for REDIRECTION_FUNCTION_DESCRIPTOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for REDIRECTION_FUNCTION_DESCRIPTOR {
     fn eq(&self, other: &Self) -> bool {

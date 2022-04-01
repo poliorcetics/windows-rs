@@ -75,6 +75,7 @@ impl ::core::default::Default for AddResourcePackageOptions {
 }
 unsafe impl ::windows::core::Abi for AddResourcePackageOptions {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AddResourcePackageOptions {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -111,7 +112,6 @@ impl ::core::ops::Not for AddResourcePackageOptions {
 }
 unsafe impl ::windows::core::RuntimeType for AddResourcePackageOptions {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.AddResourcePackageOptions;u4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -146,11 +146,6 @@ impl AppDisplayInfo {
         }
     }
 }
-impl ::core::clone::Clone for AppDisplayInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AppDisplayInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -164,7 +159,6 @@ impl ::core::fmt::Debug for AppDisplayInfo {
 }
 unsafe impl ::windows::core::RuntimeType for AppDisplayInfo {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.AppDisplayInfo;{1aeb1103-e4d4-41aa-a4f6-c4a276e79eac})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -240,6 +234,7 @@ impl ::core::default::Default for AppExecutionContext {
 }
 unsafe impl ::windows::core::Abi for AppExecutionContext {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AppExecutionContext {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -248,7 +243,6 @@ impl ::core::fmt::Debug for AppExecutionContext {
 }
 unsafe impl ::windows::core::RuntimeType for AppExecutionContext {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.AppExecutionContext;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -341,11 +335,6 @@ impl AppInfo {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for AppInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AppInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -359,7 +348,6 @@ impl ::core::fmt::Debug for AppInfo {
 }
 unsafe impl ::windows::core::RuntimeType for AppInfo {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.AppInfo;{cf7f59b3-6a09-4de8-a6c0-5792d56880d1})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -553,11 +541,6 @@ impl AppInstallerInfo {
         }
     }
 }
-impl ::core::clone::Clone for AppInstallerInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AppInstallerInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -571,7 +554,6 @@ impl ::core::fmt::Debug for AppInstallerInfo {
 }
 unsafe impl ::windows::core::RuntimeType for AppInstallerInfo {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.AppInstallerInfo;{29ab2ac0-d4f6-42a3-adcd-d6583c659508})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -646,6 +628,7 @@ impl ::core::default::Default for AppInstallerPolicySource {
 }
 unsafe impl ::windows::core::Abi for AppInstallerPolicySource {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AppInstallerPolicySource {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -654,7 +637,6 @@ impl ::core::fmt::Debug for AppInstallerPolicySource {
 }
 unsafe impl ::windows::core::RuntimeType for AppInstallerPolicySource {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.AppInstallerPolicySource;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -724,11 +706,6 @@ impl AppInstance {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for AppInstance {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AppInstance {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -742,7 +719,6 @@ impl ::core::fmt::Debug for AppInstance {
 }
 unsafe impl ::windows::core::RuntimeType for AppInstance {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.AppInstance;{675f2b47-f25f-4532-9fd6-3633e0634d01})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -857,11 +833,6 @@ impl EnteredBackgroundEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for EnteredBackgroundEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for EnteredBackgroundEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -875,7 +846,6 @@ impl ::core::fmt::Debug for EnteredBackgroundEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for EnteredBackgroundEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.EnteredBackgroundEventArgs;{f722dcc2-9827-403d-aaed-ecca9ac17398})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -974,6 +944,7 @@ impl ::core::default::Default for FullTrustLaunchResult {
 }
 unsafe impl ::windows::core::Abi for FullTrustLaunchResult {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FullTrustLaunchResult {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -982,7 +953,6 @@ impl ::core::fmt::Debug for FullTrustLaunchResult {
 }
 unsafe impl ::windows::core::RuntimeType for FullTrustLaunchResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.FullTrustLaunchResult;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1008,11 +978,6 @@ impl FullTrustProcessLaunchResult {
         }
     }
 }
-impl ::core::clone::Clone for FullTrustProcessLaunchResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for FullTrustProcessLaunchResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1026,7 +991,6 @@ impl ::core::fmt::Debug for FullTrustProcessLaunchResult {
 }
 unsafe impl ::windows::core::RuntimeType for FullTrustProcessLaunchResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.FullTrustProcessLaunchResult;{8917d888-edfb-515f-8e22-5ebceb69dfd9})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1148,6 +1112,11 @@ impl ::windows::core::RuntimeName for FullTrustProcessLauncher {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppDisplayInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppDisplayInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppDisplayInfo {
     type Vtable = IAppDisplayInfo_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1aeb1103_e4d4_41aa_a4f6_c4a276e79eac);
@@ -1166,6 +1135,11 @@ pub struct IAppDisplayInfo_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppInfo {
     type Vtable = IAppInfo_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xcf7f59b3_6a09_4de8_a6c0_5792d56880d1);
@@ -1182,6 +1156,11 @@ pub struct IAppInfo_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppInfo2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppInfo2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppInfo2 {
     type Vtable = IAppInfo2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xbe4b1f5a_2098_431b_bd25_b30878748d47);
@@ -1195,6 +1174,11 @@ pub struct IAppInfo2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppInfo3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppInfo3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppInfo3 {
     type Vtable = IAppInfo3_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x09a78e46_93a4_46de_9397_0843b57115ea);
@@ -1208,6 +1192,11 @@ pub struct IAppInfo3_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppInfo4(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppInfo4 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppInfo4 {
     type Vtable = IAppInfo4_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x2f34bdeb_1609_4554_9f33_12e1e803e0d4);
@@ -1221,6 +1210,11 @@ pub struct IAppInfo4_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppInfoStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppInfoStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppInfoStatics {
     type Vtable = IAppInfoStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xcf1f782a_e48b_4f0c_9b0b_79c3f8957dd7);
@@ -1239,6 +1233,11 @@ pub struct IAppInfoStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppInstallerInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppInstallerInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppInstallerInfo {
     type Vtable = IAppInstallerInfo_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x29ab2ac0_d4f6_42a3_adcd_d6583c659508);
@@ -1255,6 +1254,11 @@ pub struct IAppInstallerInfo_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppInstallerInfo2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppInstallerInfo2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppInstallerInfo2 {
     type Vtable = IAppInstallerInfo2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd20f1388_8256_597c_8511_c84ec50d5e2b);
@@ -1300,6 +1304,11 @@ pub struct IAppInstallerInfo2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppInstance(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppInstance {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppInstance {
     type Vtable = IAppInstance_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x675f2b47_f25f_4532_9fd6_3633e0634d01);
@@ -1315,6 +1324,11 @@ pub struct IAppInstance_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppInstanceStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppInstanceStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppInstanceStatics {
     type Vtable = IAppInstanceStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9d11e77f_9ea6_47af_a6ec_46784c5ba254);
@@ -1338,6 +1352,11 @@ pub struct IAppInstanceStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICameraApplicationManagerStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICameraApplicationManagerStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICameraApplicationManagerStatics {
     type Vtable = ICameraApplicationManagerStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9599ddce_9bd3_435c_8054_c1add50028fe);
@@ -1351,6 +1370,11 @@ pub struct ICameraApplicationManagerStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDesignModeStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDesignModeStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDesignModeStatics {
     type Vtable = IDesignModeStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x2c3893cc_f81a_4e7a_b857_76a80887e185);
@@ -1364,6 +1388,11 @@ pub struct IDesignModeStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDesignModeStatics2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDesignModeStatics2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDesignModeStatics2 {
     type Vtable = IDesignModeStatics2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x80cf8137_b064_4858_bec8_3eba22357535);
@@ -1377,6 +1406,11 @@ pub struct IDesignModeStatics2_Vtbl {
 #[doc = "*Required features: `\"ApplicationModel\"`*"]
 #[repr(transparent)]
 pub struct IEnteredBackgroundEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnteredBackgroundEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnteredBackgroundEventArgs {
     #[doc = "*Required features: `\"ApplicationModel\"`, `\"Foundation\"`*"]
     #[cfg(feature = "Foundation")]
@@ -1428,11 +1462,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnteredBackgroundEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnteredBackgroundEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1446,7 +1475,6 @@ impl ::core::fmt::Debug for IEnteredBackgroundEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for IEnteredBackgroundEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{f722dcc2-9827-403d-aaed-ecca9ac17398}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1467,6 +1495,11 @@ pub struct IEnteredBackgroundEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IFullTrustProcessLaunchResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for IFullTrustProcessLaunchResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IFullTrustProcessLaunchResult {
     type Vtable = IFullTrustProcessLaunchResult_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x8917d888_edfb_515f_8e22_5ebceb69dfd9);
@@ -1481,6 +1514,11 @@ pub struct IFullTrustProcessLaunchResult_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IFullTrustProcessLauncherStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IFullTrustProcessLauncherStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IFullTrustProcessLauncherStatics {
     type Vtable = IFullTrustProcessLauncherStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd784837f_1100_3c6b_a455_f6262cc331b6);
@@ -1509,6 +1547,11 @@ pub struct IFullTrustProcessLauncherStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IFullTrustProcessLauncherStatics2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IFullTrustProcessLauncherStatics2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IFullTrustProcessLauncherStatics2 {
     type Vtable = IFullTrustProcessLauncherStatics2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x8b8ed72f_b65c_56cf_a1a7_2bf77cbc6ea8);
@@ -1529,6 +1572,11 @@ pub struct IFullTrustProcessLauncherStatics2_Vtbl {
 #[doc = "*Required features: `\"ApplicationModel\"`*"]
 #[repr(transparent)]
 pub struct ILeavingBackgroundEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILeavingBackgroundEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ILeavingBackgroundEventArgs {
     #[doc = "*Required features: `\"ApplicationModel\"`, `\"Foundation\"`*"]
     #[cfg(feature = "Foundation")]
@@ -1580,11 +1628,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ILeavingBackgroundEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ILeavingBackgroundEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1598,7 +1641,6 @@ impl ::core::fmt::Debug for ILeavingBackgroundEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for ILeavingBackgroundEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{39c6ec9a-ae6e-46f9-a07a-cfc23f88733e}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1619,6 +1661,11 @@ pub struct ILeavingBackgroundEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ILimitedAccessFeatureRequestResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILimitedAccessFeatureRequestResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ILimitedAccessFeatureRequestResult {
     type Vtable = ILimitedAccessFeatureRequestResult_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd45156a6_1e24_5ddd_abb4_6188aba4d5bf);
@@ -1637,6 +1684,11 @@ pub struct ILimitedAccessFeatureRequestResult_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ILimitedAccessFeaturesStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILimitedAccessFeaturesStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ILimitedAccessFeaturesStatics {
     type Vtable = ILimitedAccessFeaturesStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x8be612d4_302b_5fbf_a632_1a99e43e8925);
@@ -1650,6 +1702,11 @@ pub struct ILimitedAccessFeaturesStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPackage(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPackage {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPackage {
     type Vtable = IPackage_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x163c792f_bd75_413c_bf23_b1fe7b95d825);
@@ -1672,6 +1729,11 @@ pub struct IPackage_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPackage2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPackage2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPackage2 {
     type Vtable = IPackage2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa6612fb6_7688_4ace_95fb_359538e7aa01);
@@ -1694,6 +1756,11 @@ pub struct IPackage2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPackage3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPackage3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPackage3 {
     type Vtable = IPackage3_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x5f738b61_f86a_4917_93d1_f1ee9d3b35d9);
@@ -1715,6 +1782,11 @@ pub struct IPackage3_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPackage4(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPackage4 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPackage4 {
     type Vtable = IPackage4_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x65aed1ae_b95b_450c_882b_6255187f397e);
@@ -1733,6 +1805,11 @@ pub struct IPackage4_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPackage5(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPackage5 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPackage5 {
     type Vtable = IPackage5_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x0e842dd4_d9ac_45ed_9a1e_74ce056b2635);
@@ -1765,6 +1842,11 @@ pub struct IPackage5_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPackage6(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPackage6 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPackage6 {
     type Vtable = IPackage6_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x8b1ad942_12d7_4754_ae4e_638cbc0e3a2e);
@@ -1782,6 +1864,11 @@ pub struct IPackage6_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPackage7(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPackage7 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPackage7 {
     type Vtable = IPackage7_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x86ff8d31_a2e4_45e0_9732_283a6d88fde1);
@@ -1802,6 +1889,11 @@ pub struct IPackage7_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPackage8(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPackage8 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPackage8 {
     type Vtable = IPackage8_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x2c584f7b_ce2a_4be6_a093_77cfbb2a7ea1);
@@ -1841,6 +1933,11 @@ pub struct IPackage8_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPackageCatalog(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPackageCatalog {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPackageCatalog {
     type Vtable = IPackageCatalog_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x230a3751_9de3_4445_be74_91fb325abefe);
@@ -1893,6 +1990,11 @@ pub struct IPackageCatalog_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPackageCatalog2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPackageCatalog2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPackageCatalog2 {
     type Vtable = IPackageCatalog2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x96a60c36_8ff7_4344_b6bf_ee64c2207ed2);
@@ -1917,6 +2019,11 @@ pub struct IPackageCatalog2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPackageCatalog3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPackageCatalog3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPackageCatalog3 {
     type Vtable = IPackageCatalog3_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x96dd5c88_8837_43f9_9015_033434ba14f3);
@@ -1933,6 +2040,11 @@ pub struct IPackageCatalog3_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPackageCatalog4(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPackageCatalog4 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPackageCatalog4 {
     type Vtable = IPackageCatalog4_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc37c399b_44cc_4b7b_8baf_796c04ead3b9);
@@ -1953,6 +2065,11 @@ pub struct IPackageCatalog4_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPackageCatalogAddOptionalPackageResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPackageCatalogAddOptionalPackageResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPackageCatalogAddOptionalPackageResult {
     type Vtable = IPackageCatalogAddOptionalPackageResult_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x3bf10cd4_b4df_47b3_a963_e2fa832f7dd3);
@@ -1967,6 +2084,11 @@ pub struct IPackageCatalogAddOptionalPackageResult_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPackageCatalogAddResourcePackageResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPackageCatalogAddResourcePackageResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPackageCatalogAddResourcePackageResult {
     type Vtable = IPackageCatalogAddResourcePackageResult_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9636ce0d_3e17_493f_aa08_ccec6fdef699);
@@ -1982,6 +2104,11 @@ pub struct IPackageCatalogAddResourcePackageResult_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPackageCatalogRemoveOptionalPackagesResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPackageCatalogRemoveOptionalPackagesResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPackageCatalogRemoveOptionalPackagesResult {
     type Vtable = IPackageCatalogRemoveOptionalPackagesResult_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x29d2f97b_d974_4e64_9359_22cadfd79828);
@@ -1999,6 +2126,11 @@ pub struct IPackageCatalogRemoveOptionalPackagesResult_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPackageCatalogRemoveResourcePackagesResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPackageCatalogRemoveResourcePackagesResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPackageCatalogRemoveResourcePackagesResult {
     type Vtable = IPackageCatalogRemoveResourcePackagesResult_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xae719709_1a52_4321_87b3_e5a1a17981a7);
@@ -2016,6 +2148,11 @@ pub struct IPackageCatalogRemoveResourcePackagesResult_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPackageCatalogStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPackageCatalogStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPackageCatalogStatics {
     type Vtable = IPackageCatalogStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa18c9696_e65b_4634_ba21_5e63eb7244a7);
@@ -2030,6 +2167,11 @@ pub struct IPackageCatalogStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPackageContentGroup(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPackageContentGroup {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPackageContentGroup {
     type Vtable = IPackageContentGroup_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x8f62695d_120a_4798_b5e1_5800dda8f2e1);
@@ -2046,6 +2188,11 @@ pub struct IPackageContentGroup_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPackageContentGroupStagingEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPackageContentGroupStagingEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPackageContentGroupStagingEventArgs {
     type Vtable = IPackageContentGroupStagingEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x3d7bc27e_6f27_446c_986e_d4733d4d9113);
@@ -2065,6 +2212,11 @@ pub struct IPackageContentGroupStagingEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPackageContentGroupStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPackageContentGroupStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPackageContentGroupStatics {
     type Vtable = IPackageContentGroupStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x70ee7619_5f12_4b92_b9ea_6ccada13bc75);
@@ -2078,6 +2230,11 @@ pub struct IPackageContentGroupStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPackageId(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPackageId {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPackageId {
     type Vtable = IPackageId_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1adb665e_37c7_4790_9980_dd7ae74e8bb2);
@@ -2101,6 +2258,11 @@ pub struct IPackageId_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPackageIdWithMetadata(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPackageIdWithMetadata {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPackageIdWithMetadata {
     type Vtable = IPackageIdWithMetadata_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x40577a7c_0c9e_443d_9074_855f5ce0a08d);
@@ -2115,6 +2277,11 @@ pub struct IPackageIdWithMetadata_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPackageInstallingEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPackageInstallingEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPackageInstallingEventArgs {
     type Vtable = IPackageInstallingEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x97741eb7_ab7a_401a_8b61_eb0e7faff237);
@@ -2132,6 +2299,11 @@ pub struct IPackageInstallingEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPackageStagingEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPackageStagingEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPackageStagingEventArgs {
     type Vtable = IPackageStagingEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1041682d_54e2_4f51_b828_9ef7046c210f);
@@ -2149,6 +2321,11 @@ pub struct IPackageStagingEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPackageStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPackageStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPackageStatics {
     type Vtable = IPackageStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x4e534bdf_2960_4878_97a4_9624deb72f2d);
@@ -2162,6 +2339,11 @@ pub struct IPackageStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPackageStatus(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPackageStatus {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPackageStatus {
     type Vtable = IPackageStatus_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x5fe74f71_a365_4c09_a02d_046d525ea1da);
@@ -2186,6 +2368,11 @@ pub struct IPackageStatus_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPackageStatus2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPackageStatus2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPackageStatus2 {
     type Vtable = IPackageStatus2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf428fa93_7c56_4862_acfa_abaedcc0694d);
@@ -2199,6 +2386,11 @@ pub struct IPackageStatus2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPackageStatusChangedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPackageStatusChangedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPackageStatusChangedEventArgs {
     type Vtable = IPackageStatusChangedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x437d714d_bd80_4a70_bc50_f6e796509575);
@@ -2212,6 +2404,11 @@ pub struct IPackageStatusChangedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPackageUninstallingEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPackageUninstallingEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPackageUninstallingEventArgs {
     type Vtable = IPackageUninstallingEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x4443aa52_ab22_44cd_82bb_4ec9b827367a);
@@ -2229,6 +2426,11 @@ pub struct IPackageUninstallingEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPackageUpdateAvailabilityResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPackageUpdateAvailabilityResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPackageUpdateAvailabilityResult {
     type Vtable = IPackageUpdateAvailabilityResult_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x114e5009_199a_48a1_a079_313c45634a71);
@@ -2243,6 +2445,11 @@ pub struct IPackageUpdateAvailabilityResult_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPackageUpdatingEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPackageUpdatingEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPackageUpdatingEventArgs {
     type Vtable = IPackageUpdatingEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xcd7b4228_fd74_443e_b114_23e677b0e86f);
@@ -2261,6 +2468,11 @@ pub struct IPackageUpdatingEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPackageWithMetadata(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPackageWithMetadata {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPackageWithMetadata {
     type Vtable = IPackageWithMetadata_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x95949780_1de9_40f2_b452_0de9f1910012);
@@ -2282,6 +2494,11 @@ pub struct IPackageWithMetadata_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IStartupTask(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStartupTask {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IStartupTask {
     type Vtable = IStartupTask_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf75c23c8_b5f2_4f6c_88dd_36cb1d599d17);
@@ -2301,6 +2518,11 @@ pub struct IStartupTask_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IStartupTaskStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStartupTaskStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IStartupTaskStatics {
     type Vtable = IStartupTaskStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xee5b60bd_a148_41a7_b26e_e8b88a1e62f8);
@@ -2321,6 +2543,11 @@ pub struct IStartupTaskStatics_Vtbl {
 #[doc = "*Required features: `\"ApplicationModel\"`*"]
 #[repr(transparent)]
 pub struct ISuspendingDeferral(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISuspendingDeferral {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISuspendingDeferral {
     #[doc = "*Required features: `\"ApplicationModel\"`*"]
     pub fn Complete(&self) -> ::windows::core::Result<()> {
@@ -2368,11 +2595,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISuspendingDeferral {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISuspendingDeferral {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2386,7 +2608,6 @@ impl ::core::fmt::Debug for ISuspendingDeferral {
 }
 unsafe impl ::windows::core::RuntimeType for ISuspendingDeferral {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{59140509-8bc9-4eb4-b636-dabdc4f46f66}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2404,6 +2625,11 @@ pub struct ISuspendingDeferral_Vtbl {
 #[doc = "*Required features: `\"ApplicationModel\"`*"]
 #[repr(transparent)]
 pub struct ISuspendingEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISuspendingEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISuspendingEventArgs {
     #[doc = "*Required features: `\"ApplicationModel\"`*"]
     pub fn SuspendingOperation(&self) -> ::windows::core::Result<SuspendingOperation> {
@@ -2454,11 +2680,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISuspendingEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISuspendingEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2472,7 +2693,6 @@ impl ::core::fmt::Debug for ISuspendingEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for ISuspendingEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{96061c05-2dba-4d08-b0bd-2b30a131c6aa}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2490,6 +2710,11 @@ pub struct ISuspendingEventArgs_Vtbl {
 #[doc = "*Required features: `\"ApplicationModel\"`*"]
 #[repr(transparent)]
 pub struct ISuspendingOperation(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISuspendingOperation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISuspendingOperation {
     #[doc = "*Required features: `\"ApplicationModel\"`*"]
     pub fn GetDeferral(&self) -> ::windows::core::Result<SuspendingDeferral> {
@@ -2549,11 +2774,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISuspendingOperation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISuspendingOperation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2567,7 +2787,6 @@ impl ::core::fmt::Debug for ISuspendingOperation {
 }
 unsafe impl ::windows::core::RuntimeType for ISuspendingOperation {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{9da4ca41-20e1-4e9b-9f65-a9f435340c3a}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2600,11 +2819,6 @@ impl LeavingBackgroundEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for LeavingBackgroundEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for LeavingBackgroundEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2618,7 +2832,6 @@ impl ::core::fmt::Debug for LeavingBackgroundEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for LeavingBackgroundEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.LeavingBackgroundEventArgs;{39c6ec9a-ae6e-46f9-a07a-cfc23f88733e})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2724,11 +2937,6 @@ impl LimitedAccessFeatureRequestResult {
         }
     }
 }
-impl ::core::clone::Clone for LimitedAccessFeatureRequestResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for LimitedAccessFeatureRequestResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2742,7 +2950,6 @@ impl ::core::fmt::Debug for LimitedAccessFeatureRequestResult {
 }
 unsafe impl ::windows::core::RuntimeType for LimitedAccessFeatureRequestResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.LimitedAccessFeatureRequestResult;{d45156a6-1e24-5ddd-abb4-6188aba4d5bf})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2819,6 +3026,7 @@ impl ::core::default::Default for LimitedAccessFeatureStatus {
 }
 unsafe impl ::windows::core::Abi for LimitedAccessFeatureStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for LimitedAccessFeatureStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2827,7 +3035,6 @@ impl ::core::fmt::Debug for LimitedAccessFeatureStatus {
 }
 unsafe impl ::windows::core::RuntimeType for LimitedAccessFeatureStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.LimitedAccessFeatureStatus;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -3214,11 +3421,6 @@ impl Package {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for Package {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for Package {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3232,7 +3434,6 @@ impl ::core::fmt::Debug for Package {
 }
 unsafe impl ::windows::core::RuntimeType for Package {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Package;{163c792f-bd75-413c-bf23-b1fe7b95d825})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3436,11 +3637,6 @@ impl PackageCatalog {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for PackageCatalog {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PackageCatalog {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3454,7 +3650,6 @@ impl ::core::fmt::Debug for PackageCatalog {
 }
 unsafe impl ::windows::core::RuntimeType for PackageCatalog {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.PackageCatalog;{230a3751-9de3-4445-be74-91fb325abefe})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3527,11 +3722,6 @@ impl PackageCatalogAddOptionalPackageResult {
         }
     }
 }
-impl ::core::clone::Clone for PackageCatalogAddOptionalPackageResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PackageCatalogAddOptionalPackageResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3545,7 +3735,6 @@ impl ::core::fmt::Debug for PackageCatalogAddOptionalPackageResult {
 }
 unsafe impl ::windows::core::RuntimeType for PackageCatalogAddOptionalPackageResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.PackageCatalogAddOptionalPackageResult;{3bf10cd4-b4df-47b3-a963-e2fa832f7dd3})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3626,11 +3815,6 @@ impl PackageCatalogAddResourcePackageResult {
         }
     }
 }
-impl ::core::clone::Clone for PackageCatalogAddResourcePackageResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PackageCatalogAddResourcePackageResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3644,7 +3828,6 @@ impl ::core::fmt::Debug for PackageCatalogAddResourcePackageResult {
 }
 unsafe impl ::windows::core::RuntimeType for PackageCatalogAddResourcePackageResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.PackageCatalogAddResourcePackageResult;{9636ce0d-3e17-493f-aa08-ccec6fdef699})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3720,11 +3903,6 @@ impl PackageCatalogRemoveOptionalPackagesResult {
         }
     }
 }
-impl ::core::clone::Clone for PackageCatalogRemoveOptionalPackagesResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PackageCatalogRemoveOptionalPackagesResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3738,7 +3916,6 @@ impl ::core::fmt::Debug for PackageCatalogRemoveOptionalPackagesResult {
 }
 unsafe impl ::windows::core::RuntimeType for PackageCatalogRemoveOptionalPackagesResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.PackageCatalogRemoveOptionalPackagesResult;{29d2f97b-d974-4e64-9359-22cadfd79828})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3812,11 +3989,6 @@ impl PackageCatalogRemoveResourcePackagesResult {
         }
     }
 }
-impl ::core::clone::Clone for PackageCatalogRemoveResourcePackagesResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PackageCatalogRemoveResourcePackagesResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3830,7 +4002,6 @@ impl ::core::fmt::Debug for PackageCatalogRemoveResourcePackagesResult {
 }
 unsafe impl ::windows::core::RuntimeType for PackageCatalogRemoveResourcePackagesResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.PackageCatalogRemoveResourcePackagesResult;{ae719709-1a52-4321-87b3-e5a1a17981a7})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3933,11 +4104,6 @@ impl PackageContentGroup {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for PackageContentGroup {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PackageContentGroup {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3951,7 +4117,6 @@ impl ::core::fmt::Debug for PackageContentGroup {
 }
 unsafe impl ::windows::core::RuntimeType for PackageContentGroup {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.PackageContentGroup;{8f62695d-120a-4798-b5e1-5800dda8f2e1})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4066,11 +4231,6 @@ impl PackageContentGroupStagingEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for PackageContentGroupStagingEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PackageContentGroupStagingEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4084,7 +4244,6 @@ impl ::core::fmt::Debug for PackageContentGroupStagingEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for PackageContentGroupStagingEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.PackageContentGroupStagingEventArgs;{3d7bc27e-6f27-446c-986e-d4733d4d9113})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4161,6 +4320,7 @@ impl ::core::default::Default for PackageContentGroupState {
 }
 unsafe impl ::windows::core::Abi for PackageContentGroupState {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PackageContentGroupState {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4169,7 +4329,6 @@ impl ::core::fmt::Debug for PackageContentGroupState {
 }
 unsafe impl ::windows::core::RuntimeType for PackageContentGroupState {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.PackageContentGroupState;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -4260,11 +4419,6 @@ impl PackageId {
         }
     }
 }
-impl ::core::clone::Clone for PackageId {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PackageId {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4278,7 +4432,6 @@ impl ::core::fmt::Debug for PackageId {
 }
 unsafe impl ::windows::core::RuntimeType for PackageId {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.PackageId;{1adb665e-37c7-4790-9980-dd7ae74e8bb2})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4350,10 +4503,10 @@ impl ::core::fmt::Debug for PackageInstallProgress {
 }
 unsafe impl ::windows::core::Abi for PackageInstallProgress {
     type Abi = Self;
+    type DefaultType = Self;
 }
 unsafe impl ::windows::core::RuntimeType for PackageInstallProgress {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"struct(Windows.ApplicationModel.PackageInstallProgress;u4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -4414,11 +4567,6 @@ impl PackageInstallingEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for PackageInstallingEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PackageInstallingEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4432,7 +4580,6 @@ impl ::core::fmt::Debug for PackageInstallingEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for PackageInstallingEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.PackageInstallingEventArgs;{97741eb7-ab7a-401a-8b61-eb0e7faff237})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4510,6 +4657,7 @@ impl ::core::default::Default for PackageSignatureKind {
 }
 unsafe impl ::windows::core::Abi for PackageSignatureKind {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PackageSignatureKind {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4518,7 +4666,6 @@ impl ::core::fmt::Debug for PackageSignatureKind {
 }
 unsafe impl ::windows::core::RuntimeType for PackageSignatureKind {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.PackageSignatureKind;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -4568,11 +4715,6 @@ impl PackageStagingEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for PackageStagingEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PackageStagingEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4586,7 +4728,6 @@ impl ::core::fmt::Debug for PackageStagingEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for PackageStagingEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.PackageStagingEventArgs;{1041682d-54e2-4f51-b828-9ef7046c210f})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4749,11 +4890,6 @@ impl PackageStatus {
         }
     }
 }
-impl ::core::clone::Clone for PackageStatus {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PackageStatus {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4767,7 +4903,6 @@ impl ::core::fmt::Debug for PackageStatus {
 }
 unsafe impl ::windows::core::RuntimeType for PackageStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.PackageStatus;{5fe74f71-a365-4c09-a02d-046d525ea1da})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4834,11 +4969,6 @@ impl PackageStatusChangedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for PackageStatusChangedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PackageStatusChangedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4852,7 +4982,6 @@ impl ::core::fmt::Debug for PackageStatusChangedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for PackageStatusChangedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.PackageStatusChangedEventArgs;{437d714d-bd80-4a70-bc50-f6e796509575})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4951,11 +5080,6 @@ impl PackageUninstallingEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for PackageUninstallingEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PackageUninstallingEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4969,7 +5093,6 @@ impl ::core::fmt::Debug for PackageUninstallingEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for PackageUninstallingEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.PackageUninstallingEventArgs;{4443aa52-ab22-44cd-82bb-4ec9b827367a})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -5047,6 +5170,7 @@ impl ::core::default::Default for PackageUpdateAvailability {
 }
 unsafe impl ::windows::core::Abi for PackageUpdateAvailability {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PackageUpdateAvailability {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5055,7 +5179,6 @@ impl ::core::fmt::Debug for PackageUpdateAvailability {
 }
 unsafe impl ::windows::core::RuntimeType for PackageUpdateAvailability {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.PackageUpdateAvailability;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -5081,11 +5204,6 @@ impl PackageUpdateAvailabilityResult {
         }
     }
 }
-impl ::core::clone::Clone for PackageUpdateAvailabilityResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PackageUpdateAvailabilityResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5099,7 +5217,6 @@ impl ::core::fmt::Debug for PackageUpdateAvailabilityResult {
 }
 unsafe impl ::windows::core::RuntimeType for PackageUpdateAvailabilityResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.PackageUpdateAvailabilityResult;{114e5009-199a-48a1-a079-313c45634a71})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -5206,11 +5323,6 @@ impl PackageUpdatingEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for PackageUpdatingEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PackageUpdatingEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5224,7 +5336,6 @@ impl ::core::fmt::Debug for PackageUpdatingEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for PackageUpdatingEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.PackageUpdatingEventArgs;{cd7b4228-fd74-443e-b114-23e677b0e86f})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -5299,10 +5410,10 @@ impl ::core::fmt::Debug for PackageVersion {
 }
 unsafe impl ::windows::core::Abi for PackageVersion {
     type Abi = Self;
+    type DefaultType = Self;
 }
 unsafe impl ::windows::core::RuntimeType for PackageVersion {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"struct(Windows.ApplicationModel.PackageVersion;u2;u2;u2;u2)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -5374,11 +5485,6 @@ impl StartupTask {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for StartupTask {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for StartupTask {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5392,7 +5498,6 @@ impl ::core::fmt::Debug for StartupTask {
 }
 unsafe impl ::windows::core::RuntimeType for StartupTask {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.StartupTask;{f75c23c8-b5f2-4f6c-88dd-36cb1d599d17})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -5470,6 +5575,7 @@ impl ::core::default::Default for StartupTaskState {
 }
 unsafe impl ::windows::core::Abi for StartupTaskState {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for StartupTaskState {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5478,7 +5584,6 @@ impl ::core::fmt::Debug for StartupTaskState {
 }
 unsafe impl ::windows::core::RuntimeType for StartupTaskState {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.StartupTaskState;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -5491,11 +5596,6 @@ impl SuspendingDeferral {
     pub fn Complete(&self) -> ::windows::core::Result<()> {
         let this = self;
         unsafe { (::windows::core::Interface::vtable(this).Complete)(::core::mem::transmute_copy(this)).ok() }
-    }
-}
-impl ::core::clone::Clone for SuspendingDeferral {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for SuspendingDeferral {
@@ -5511,7 +5611,6 @@ impl ::core::fmt::Debug for SuspendingDeferral {
 }
 unsafe impl ::windows::core::RuntimeType for SuspendingDeferral {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.SuspendingDeferral;{59140509-8bc9-4eb4-b636-dabdc4f46f66})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -5600,11 +5699,6 @@ impl SuspendingEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for SuspendingEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SuspendingEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5618,7 +5712,6 @@ impl ::core::fmt::Debug for SuspendingEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for SuspendingEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.SuspendingEventArgs;{96061c05-2dba-4d08-b0bd-2b30a131c6aa})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -5716,11 +5809,6 @@ impl SuspendingOperation {
         }
     }
 }
-impl ::core::clone::Clone for SuspendingOperation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SuspendingOperation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5734,7 +5822,6 @@ impl ::core::fmt::Debug for SuspendingOperation {
 }
 unsafe impl ::windows::core::RuntimeType for SuspendingOperation {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.SuspendingOperation;{9da4ca41-20e1-4e9b-9f65-a9f435340c3a})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

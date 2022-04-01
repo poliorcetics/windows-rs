@@ -199,11 +199,6 @@ impl AppInstallItem {
         unsafe { (::windows::core::Interface::vtable(this).SetInstallInProgressToastNotificationMode)(::core::mem::transmute_copy(this), value).ok() }
     }
 }
-impl ::core::clone::Clone for AppInstallItem {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AppInstallItem {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -217,7 +212,6 @@ impl ::core::fmt::Debug for AppInstallItem {
 }
 unsafe impl ::windows::core::RuntimeType for AppInstallItem {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallItem;{49d3dfab-168a-4cbf-a93a-9e448c82737d})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -691,11 +685,6 @@ impl AppInstallManager {
         }
     }
 }
-impl ::core::clone::Clone for AppInstallManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AppInstallManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -709,7 +698,6 @@ impl ::core::fmt::Debug for AppInstallManager {
 }
 unsafe impl ::windows::core::RuntimeType for AppInstallManager {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallManager;{9353e170-8441-4b45-bd72-7c2fa925beee})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -776,11 +764,6 @@ impl AppInstallManagerItemEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for AppInstallManagerItemEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AppInstallManagerItemEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -794,7 +777,6 @@ impl ::core::fmt::Debug for AppInstallManagerItemEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for AppInstallManagerItemEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallManagerItemEventArgs;{bc505743-4674-4dd1-957e-c25682086a14})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1057,11 +1039,6 @@ impl AppInstallOptions {
         unsafe { (::windows::core::Interface::vtable(this).SetExtendedCampaignId)(::core::mem::transmute_copy(this), value.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for AppInstallOptions {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AppInstallOptions {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1075,7 +1052,6 @@ impl ::core::fmt::Debug for AppInstallOptions {
 }
 unsafe impl ::windows::core::RuntimeType for AppInstallOptions {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallOptions;{c9808300-1cb8-4eb6-8c9f-6a30c64a5b51})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1162,6 +1138,7 @@ impl ::core::default::Default for AppInstallState {
 }
 unsafe impl ::windows::core::Abi for AppInstallState {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AppInstallState {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1170,7 +1147,6 @@ impl ::core::fmt::Debug for AppInstallState {
 }
 unsafe impl ::windows::core::RuntimeType for AppInstallState {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallState;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1245,11 +1221,6 @@ impl AppInstallStatus {
         }
     }
 }
-impl ::core::clone::Clone for AppInstallStatus {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AppInstallStatus {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1263,7 +1234,6 @@ impl ::core::fmt::Debug for AppInstallStatus {
 }
 unsafe impl ::windows::core::RuntimeType for AppInstallStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallStatus;{936dccfa-2450-4126-88b1-6127a644dd5c})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1339,6 +1309,7 @@ impl ::core::default::Default for AppInstallType {
 }
 unsafe impl ::windows::core::Abi for AppInstallType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AppInstallType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1347,7 +1318,6 @@ impl ::core::fmt::Debug for AppInstallType {
 }
 unsafe impl ::windows::core::RuntimeType for AppInstallType {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallType;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1375,6 +1345,7 @@ impl ::core::default::Default for AppInstallationToastNotificationMode {
 }
 unsafe impl ::windows::core::Abi for AppInstallationToastNotificationMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AppInstallationToastNotificationMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1383,7 +1354,6 @@ impl ::core::fmt::Debug for AppInstallationToastNotificationMode {
 }
 unsafe impl ::windows::core::RuntimeType for AppInstallationToastNotificationMode {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallationToastNotificationMode;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1439,11 +1409,6 @@ impl AppUpdateOptions {
         unsafe { (::windows::core::Interface::vtable(this).SetAutomaticallyDownloadAndInstallUpdateIfFound)(::core::mem::transmute_copy(this), value).ok() }
     }
 }
-impl ::core::clone::Clone for AppUpdateOptions {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AppUpdateOptions {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1457,7 +1422,6 @@ impl ::core::fmt::Debug for AppUpdateOptions {
 }
 unsafe impl ::windows::core::RuntimeType for AppUpdateOptions {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Store.Preview.InstallControl.AppUpdateOptions;{26f0b02f-c2f3-4aea-af8c-6308dd9db85f})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1534,6 +1498,7 @@ impl ::core::default::Default for AutoUpdateSetting {
 }
 unsafe impl ::windows::core::Abi for AutoUpdateSetting {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AutoUpdateSetting {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1542,7 +1507,6 @@ impl ::core::fmt::Debug for AutoUpdateSetting {
 }
 unsafe impl ::windows::core::RuntimeType for AutoUpdateSetting {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.Store.Preview.InstallControl.AutoUpdateSetting;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1560,11 +1524,6 @@ impl GetEntitlementResult {
         }
     }
 }
-impl ::core::clone::Clone for GetEntitlementResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for GetEntitlementResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1578,7 +1537,6 @@ impl ::core::fmt::Debug for GetEntitlementResult {
 }
 unsafe impl ::windows::core::RuntimeType for GetEntitlementResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Store.Preview.InstallControl.GetEntitlementResult;{74fc843f-1a9e-4609-8e4d-819086d08a3d})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1655,6 +1613,7 @@ impl ::core::default::Default for GetEntitlementStatus {
 }
 unsafe impl ::windows::core::Abi for GetEntitlementStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GetEntitlementStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1663,7 +1622,6 @@ impl ::core::fmt::Debug for GetEntitlementStatus {
 }
 unsafe impl ::windows::core::RuntimeType for GetEntitlementStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.Store.Preview.InstallControl.GetEntitlementStatus;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1671,6 +1629,11 @@ unsafe impl ::windows::core::RuntimeType for GetEntitlementStatus {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppInstallItem(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppInstallItem {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppInstallItem {
     type Vtable = IAppInstallItem_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x49d3dfab_168a_4cbf_a93a_9e448c82737d);
@@ -1707,6 +1670,11 @@ pub struct IAppInstallItem_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppInstallItem2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppInstallItem2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppInstallItem2 {
     type Vtable = IAppInstallItem2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd3972af8_40c0_4fd7_aa6c_0aa13ca6188c);
@@ -1722,6 +1690,11 @@ pub struct IAppInstallItem2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppInstallItem3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppInstallItem3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppInstallItem3 {
     type Vtable = IAppInstallItem3_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x6f3dc998_dd47_433c_9234_560172d67a45);
@@ -1739,6 +1712,11 @@ pub struct IAppInstallItem3_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppInstallItem4(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppInstallItem4 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppInstallItem4 {
     type Vtable = IAppInstallItem4_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc2d1ce12_71ff_4fc8_b540_453d4b37e1d1);
@@ -1753,6 +1731,11 @@ pub struct IAppInstallItem4_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppInstallItem5(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppInstallItem5 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppInstallItem5 {
     type Vtable = IAppInstallItem5_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x5510e7cc_4076_4a0b_9472_c21d9d380e55);
@@ -1775,6 +1758,11 @@ pub struct IAppInstallItem5_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppInstallManager(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppInstallManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppInstallManager {
     type Vtable = IAppInstallManager_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9353e170_8441_4b45_bd72_7c2fa925beee);
@@ -1842,6 +1830,11 @@ pub struct IAppInstallManager_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppInstallManager2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppInstallManager2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppInstallManager2 {
     type Vtable = IAppInstallManager2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x16937851_ed37_480d_8314_52e27c03f04a);
@@ -1877,6 +1870,11 @@ pub struct IAppInstallManager2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppInstallManager3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppInstallManager3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppInstallManager3 {
     type Vtable = IAppInstallManager3_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x95b24b17_e96a_4d0e_84e1_c8cb417a0178);
@@ -1918,6 +1916,11 @@ pub struct IAppInstallManager3_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppInstallManager4(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppInstallManager4 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppInstallManager4 {
     type Vtable = IAppInstallManager4_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x260a2a16_5a9e_4ebd_b944_f2ba75c31159);
@@ -1942,6 +1945,11 @@ pub struct IAppInstallManager4_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppInstallManager5(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppInstallManager5 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppInstallManager5 {
     type Vtable = IAppInstallManager5_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x3cd7be4c_1be9_4f7f_b675_aa1d64a529b2);
@@ -1958,6 +1966,11 @@ pub struct IAppInstallManager5_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppInstallManager6(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppInstallManager6 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppInstallManager6 {
     type Vtable = IAppInstallManager6_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc9e7d408_f27a_4471_b2f4_e76efcbebcca);
@@ -2002,6 +2015,11 @@ pub struct IAppInstallManager6_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppInstallManager7(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppInstallManager7 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppInstallManager7 {
     type Vtable = IAppInstallManager7_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa5ee7b30_d5e4_49a3_9853_3db03203321d);
@@ -2015,6 +2033,11 @@ pub struct IAppInstallManager7_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppInstallManagerItemEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppInstallManagerItemEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppInstallManagerItemEventArgs {
     type Vtable = IAppInstallManagerItemEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xbc505743_4674_4dd1_957e_c25682086a14);
@@ -2028,6 +2051,11 @@ pub struct IAppInstallManagerItemEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppInstallOptions(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppInstallOptions {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppInstallOptions {
     type Vtable = IAppInstallOptions_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc9808300_1cb8_4eb6_8c9f_6a30c64a5b51);
@@ -2058,6 +2086,11 @@ pub struct IAppInstallOptions_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppInstallOptions2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppInstallOptions2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppInstallOptions2 {
     type Vtable = IAppInstallOptions2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x8a04c0d7_c94b_425e_95b4_bf27faeaee89);
@@ -2088,6 +2121,11 @@ pub struct IAppInstallOptions2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppInstallStatus(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppInstallStatus {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppInstallStatus {
     type Vtable = IAppInstallStatus_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x936dccfa_2450_4126_88b1_6127a644dd5c);
@@ -2105,6 +2143,11 @@ pub struct IAppInstallStatus_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppInstallStatus2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppInstallStatus2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppInstallStatus2 {
     type Vtable = IAppInstallStatus2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x96e7818a_5e92_4aa9_8edc_58fed4b87e00);
@@ -2122,6 +2165,11 @@ pub struct IAppInstallStatus2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppInstallStatus3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppInstallStatus3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppInstallStatus3 {
     type Vtable = IAppInstallStatus3_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xcb880c56_837b_4b4c_9ebb_6d44a0a96307);
@@ -2135,6 +2183,11 @@ pub struct IAppInstallStatus3_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppUpdateOptions(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppUpdateOptions {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppUpdateOptions {
     type Vtable = IAppUpdateOptions_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x26f0b02f_c2f3_4aea_af8c_6308dd9db85f);
@@ -2151,6 +2204,11 @@ pub struct IAppUpdateOptions_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppUpdateOptions2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppUpdateOptions2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppUpdateOptions2 {
     type Vtable = IAppUpdateOptions2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf4646e08_ed26_4bf9_9679_48f628e53df8);
@@ -2165,6 +2223,11 @@ pub struct IAppUpdateOptions2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGetEntitlementResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGetEntitlementResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGetEntitlementResult {
     type Vtable = IGetEntitlementResult_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x74fc843f_1a9e_4609_8e4d_819086d08a3d);

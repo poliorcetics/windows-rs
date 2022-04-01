@@ -2,6 +2,11 @@
 #[doc = "*Required features: `\"Devices_Adc_Provider\"`*"]
 #[repr(transparent)]
 pub struct IAdcControllerProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAdcControllerProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAdcControllerProvider {
     #[doc = "*Required features: `\"Devices_Adc_Provider\"`*"]
     pub fn ChannelCount(&self) -> ::windows::core::Result<i32> {
@@ -115,11 +120,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAdcControllerProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAdcControllerProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -133,7 +133,6 @@ impl ::core::fmt::Debug for IAdcControllerProvider {
 }
 unsafe impl ::windows::core::RuntimeType for IAdcControllerProvider {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{be545828-816d-4de5-a048-aba06958aaa8}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -160,6 +159,11 @@ pub struct IAdcControllerProvider_Vtbl {
 #[doc = "*Required features: `\"Devices_Adc_Provider\"`*"]
 #[repr(transparent)]
 pub struct IAdcProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAdcProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAdcProvider {
     #[doc = "*Required features: `\"Devices_Adc_Provider\"`, `\"Foundation_Collections\"`*"]
     #[cfg(feature = "Foundation_Collections")]
@@ -211,11 +215,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAdcProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAdcProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -229,7 +228,6 @@ impl ::core::fmt::Debug for IAdcProvider {
 }
 unsafe impl ::windows::core::RuntimeType for IAdcProvider {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{28953668-9359-4c57-bc88-e275e81638c9}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -268,6 +266,7 @@ impl ::core::default::Default for ProviderAdcChannelMode {
 }
 unsafe impl ::windows::core::Abi for ProviderAdcChannelMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ProviderAdcChannelMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -276,7 +275,6 @@ impl ::core::fmt::Debug for ProviderAdcChannelMode {
 }
 unsafe impl ::windows::core::RuntimeType for ProviderAdcChannelMode {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.Adc.Provider.ProviderAdcChannelMode;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }

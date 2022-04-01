@@ -6,6 +6,11 @@ pub mod SystemAccess;
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IUserDataAccount(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUserDataAccount {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IUserDataAccount {
     type Vtable = IUserDataAccount_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb9c4367e_b348_4910_be94_4ad4bba6dea7);
@@ -53,6 +58,11 @@ pub struct IUserDataAccount_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IUserDataAccount2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUserDataAccount2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IUserDataAccount2 {
     type Vtable = IUserDataAccount2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x078cd89f_de82_404b_8195_c8a3ac198f60);
@@ -67,6 +77,11 @@ pub struct IUserDataAccount2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IUserDataAccount3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUserDataAccount3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IUserDataAccount3 {
     type Vtable = IUserDataAccount3_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x01533845_6c43_4286_9d69_3e1709a1f266);
@@ -85,6 +100,11 @@ pub struct IUserDataAccount3_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IUserDataAccount4(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUserDataAccount4 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IUserDataAccount4 {
     type Vtable = IUserDataAccount4_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc4315210_eae5_4f0a_a8b2_1cca115e008f);
@@ -120,6 +140,11 @@ pub struct IUserDataAccount4_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IUserDataAccountManagerForUser(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUserDataAccountManagerForUser {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IUserDataAccountManagerForUser {
     type Vtable = IUserDataAccountManagerForUser_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x56a6e8db_db8f_41ab_a65f_8c5971aac982);
@@ -140,6 +165,11 @@ pub struct IUserDataAccountManagerForUser_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IUserDataAccountManagerStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUserDataAccountManagerStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IUserDataAccountManagerStatics {
     type Vtable = IUserDataAccountManagerStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x0d9b89ea_1928_4a20_86d5_3c737f7dc3b0);
@@ -168,6 +198,11 @@ pub struct IUserDataAccountManagerStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IUserDataAccountManagerStatics2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUserDataAccountManagerStatics2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IUserDataAccountManagerStatics2 {
     type Vtable = IUserDataAccountManagerStatics2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x6a3ded88_316b_435e_b534_f7d4b4b7dba6);
@@ -184,6 +219,11 @@ pub struct IUserDataAccountManagerStatics2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IUserDataAccountStore(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUserDataAccountStore {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IUserDataAccountStore {
     type Vtable = IUserDataAccountStore_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x2073b0ad_7d0a_4e76_bf45_2368f978a59a);
@@ -208,6 +248,11 @@ pub struct IUserDataAccountStore_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IUserDataAccountStore2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUserDataAccountStore2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IUserDataAccountStore2 {
     type Vtable = IUserDataAccountStore2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb1e0aef7_9560_4631_8af0_061d30161469);
@@ -232,6 +277,11 @@ pub struct IUserDataAccountStore2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IUserDataAccountStore3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUserDataAccountStore3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IUserDataAccountStore3 {
     type Vtable = IUserDataAccountStore3_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x8142c094_f3c9_478b_b117_6585bebb6789);
@@ -248,6 +298,11 @@ pub struct IUserDataAccountStore3_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IUserDataAccountStoreChangedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUserDataAccountStoreChangedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IUserDataAccountStoreChangedEventArgs {
     type Vtable = IUserDataAccountStoreChangedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x84e3e2e5_8820_4512_b1f6_2e035be1072c);
@@ -477,11 +532,6 @@ impl UserDataAccount {
         unsafe { (::windows::core::Interface::vtable(this).SetIcon)(::core::mem::transmute_copy(this), value.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for UserDataAccount {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for UserDataAccount {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -495,7 +545,6 @@ impl ::core::fmt::Debug for UserDataAccount {
 }
 unsafe impl ::windows::core::RuntimeType for UserDataAccount {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.UserDataAccounts.UserDataAccount;{b9c4367e-b348-4910-be94-4ad4bba6dea7})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -571,6 +620,7 @@ impl ::core::default::Default for UserDataAccountContentKinds {
 }
 unsafe impl ::windows::core::Abi for UserDataAccountContentKinds {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UserDataAccountContentKinds {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -607,7 +657,6 @@ impl ::core::ops::Not for UserDataAccountContentKinds {
 }
 unsafe impl ::windows::core::RuntimeType for UserDataAccountContentKinds {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.UserDataAccounts.UserDataAccountContentKinds;u4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -692,11 +741,6 @@ impl UserDataAccountManagerForUser {
         }
     }
 }
-impl ::core::clone::Clone for UserDataAccountManagerForUser {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for UserDataAccountManagerForUser {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -710,7 +754,6 @@ impl ::core::fmt::Debug for UserDataAccountManagerForUser {
 }
 unsafe impl ::windows::core::RuntimeType for UserDataAccountManagerForUser {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.UserDataAccounts.UserDataAccountManagerForUser;{56a6e8db-db8f-41ab-a65f-8c5971aac982})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -786,6 +829,7 @@ impl ::core::default::Default for UserDataAccountOtherAppReadAccess {
 }
 unsafe impl ::windows::core::Abi for UserDataAccountOtherAppReadAccess {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UserDataAccountOtherAppReadAccess {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -794,7 +838,6 @@ impl ::core::fmt::Debug for UserDataAccountOtherAppReadAccess {
 }
 unsafe impl ::windows::core::RuntimeType for UserDataAccountOtherAppReadAccess {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.UserDataAccounts.UserDataAccountOtherAppReadAccess;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -864,11 +907,6 @@ impl UserDataAccountStore {
         }
     }
 }
-impl ::core::clone::Clone for UserDataAccountStore {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for UserDataAccountStore {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -882,7 +920,6 @@ impl ::core::fmt::Debug for UserDataAccountStore {
 }
 unsafe impl ::windows::core::RuntimeType for UserDataAccountStore {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.UserDataAccounts.UserDataAccountStore;{2073b0ad-7d0a-4e76-bf45-2368f978a59a})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -957,6 +994,7 @@ impl ::core::default::Default for UserDataAccountStoreAccessType {
 }
 unsafe impl ::windows::core::Abi for UserDataAccountStoreAccessType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UserDataAccountStoreAccessType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -965,7 +1003,6 @@ impl ::core::fmt::Debug for UserDataAccountStoreAccessType {
 }
 unsafe impl ::windows::core::RuntimeType for UserDataAccountStoreAccessType {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.UserDataAccounts.UserDataAccountStoreAccessType;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -984,11 +1021,6 @@ impl UserDataAccountStoreChangedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for UserDataAccountStoreChangedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for UserDataAccountStoreChangedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1002,7 +1034,6 @@ impl ::core::fmt::Debug for UserDataAccountStoreChangedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for UserDataAccountStoreChangedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.UserDataAccounts.UserDataAccountStoreChangedEventArgs;{84e3e2e5-8820-4512-b1f6-2e035be1072c})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

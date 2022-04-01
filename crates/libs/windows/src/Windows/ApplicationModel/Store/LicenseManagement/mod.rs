@@ -2,6 +2,11 @@
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ILicenseManagerStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILicenseManagerStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ILicenseManagerStatics {
     type Vtable = ILicenseManagerStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb5ac3ae0_da47_4f20_9a23_09182c9476ff);
@@ -22,6 +27,11 @@ pub struct ILicenseManagerStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ILicenseManagerStatics2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILicenseManagerStatics2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ILicenseManagerStatics2 {
     type Vtable = ILicenseManagerStatics2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xab2ec47b_1f79_4480_b87e_2c499e601ba3);
@@ -38,6 +48,11 @@ pub struct ILicenseManagerStatics2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ILicenseSatisfactionInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILicenseSatisfactionInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ILicenseSatisfactionInfo {
     type Vtable = ILicenseSatisfactionInfo_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x3ccbb08f_db31_48d5_8384_fa17c81474e2);
@@ -57,6 +72,11 @@ pub struct ILicenseSatisfactionInfo_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ILicenseSatisfactionResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILicenseSatisfactionResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ILicenseSatisfactionResult {
     type Vtable = ILicenseSatisfactionResult_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x3c674f73_3c87_4ee1_8201_f428359bd3af);
@@ -133,6 +153,7 @@ impl ::core::default::Default for LicenseRefreshOption {
 }
 unsafe impl ::windows::core::Abi for LicenseRefreshOption {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for LicenseRefreshOption {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -141,7 +162,6 @@ impl ::core::fmt::Debug for LicenseRefreshOption {
 }
 unsafe impl ::windows::core::RuntimeType for LicenseRefreshOption {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.Store.LicenseManagement.LicenseRefreshOption;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -207,11 +227,6 @@ impl LicenseSatisfactionInfo {
         }
     }
 }
-impl ::core::clone::Clone for LicenseSatisfactionInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for LicenseSatisfactionInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -225,7 +240,6 @@ impl ::core::fmt::Debug for LicenseSatisfactionInfo {
 }
 unsafe impl ::windows::core::RuntimeType for LicenseSatisfactionInfo {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Store.LicenseManagement.LicenseSatisfactionInfo;{3ccbb08f-db31-48d5-8384-fa17c81474e2})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -301,11 +315,6 @@ impl LicenseSatisfactionResult {
         }
     }
 }
-impl ::core::clone::Clone for LicenseSatisfactionResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for LicenseSatisfactionResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -319,7 +328,6 @@ impl ::core::fmt::Debug for LicenseSatisfactionResult {
 }
 unsafe impl ::windows::core::RuntimeType for LicenseSatisfactionResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Store.LicenseManagement.LicenseSatisfactionResult;{3c674f73-3c87-4ee1-8201-f428359bd3af})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

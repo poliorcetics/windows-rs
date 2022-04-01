@@ -139,6 +139,7 @@ impl ::core::fmt::Debug for EVENTLOGRECORD {
 }
 unsafe impl ::windows::core::Abi for EVENTLOGRECORD {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EVENTLOGRECORD {
     fn eq(&self, other: &Self) -> bool {
@@ -169,6 +170,7 @@ impl ::core::fmt::Debug for EVENTLOG_FULL_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for EVENTLOG_FULL_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EVENTLOG_FULL_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -202,6 +204,7 @@ impl ::core::fmt::Debug for EVENTSFORLOGFILE {
 }
 unsafe impl ::windows::core::Abi for EVENTSFORLOGFILE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EVENTSFORLOGFILE {
     fn eq(&self, other: &Self) -> bool {
@@ -237,6 +240,7 @@ impl ::core::default::Default for EVT_CHANNEL_CLOCK_TYPE {
 }
 unsafe impl ::windows::core::Abi for EVT_CHANNEL_CLOCK_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EVT_CHANNEL_CLOCK_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -304,6 +308,7 @@ impl ::core::default::Default for EVT_CHANNEL_CONFIG_PROPERTY_ID {
 }
 unsafe impl ::windows::core::Abi for EVT_CHANNEL_CONFIG_PROPERTY_ID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EVT_CHANNEL_CONFIG_PROPERTY_ID {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -333,6 +338,7 @@ impl ::core::default::Default for EVT_CHANNEL_ISOLATION_TYPE {
 }
 unsafe impl ::windows::core::Abi for EVT_CHANNEL_ISOLATION_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EVT_CHANNEL_ISOLATION_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -358,6 +364,7 @@ impl ::core::default::Default for EVT_CHANNEL_REFERENCE_FLAGS {
 }
 unsafe impl ::windows::core::Abi for EVT_CHANNEL_REFERENCE_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EVT_CHANNEL_REFERENCE_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -385,6 +392,7 @@ impl ::core::default::Default for EVT_CHANNEL_SID_TYPE {
 }
 unsafe impl ::windows::core::Abi for EVT_CHANNEL_SID_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EVT_CHANNEL_SID_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -416,6 +424,7 @@ impl ::core::default::Default for EVT_CHANNEL_TYPE {
 }
 unsafe impl ::windows::core::Abi for EVT_CHANNEL_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EVT_CHANNEL_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -461,6 +470,7 @@ impl ::core::default::Default for EVT_EVENT_METADATA_PROPERTY_ID {
 }
 unsafe impl ::windows::core::Abi for EVT_EVENT_METADATA_PROPERTY_ID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EVT_EVENT_METADATA_PROPERTY_ID {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -490,6 +500,7 @@ impl ::core::default::Default for EVT_EVENT_PROPERTY_ID {
 }
 unsafe impl ::windows::core::Abi for EVT_EVENT_PROPERTY_ID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EVT_EVENT_PROPERTY_ID {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -521,6 +532,7 @@ impl ::core::default::Default for EVT_EXPORTLOG_FLAGS {
 }
 unsafe impl ::windows::core::Abi for EVT_EXPORTLOG_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EVT_EXPORTLOG_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -562,6 +574,7 @@ impl ::core::default::Default for EVT_FORMAT_MESSAGE_FLAGS {
 }
 unsafe impl ::windows::core::Abi for EVT_FORMAT_MESSAGE_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EVT_FORMAT_MESSAGE_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -587,6 +600,7 @@ impl ::core::default::Default for EVT_LOGIN_CLASS {
 }
 unsafe impl ::windows::core::Abi for EVT_LOGIN_CLASS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EVT_LOGIN_CLASS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -626,6 +640,7 @@ impl ::core::default::Default for EVT_LOG_PROPERTY_ID {
 }
 unsafe impl ::windows::core::Abi for EVT_LOG_PROPERTY_ID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EVT_LOG_PROPERTY_ID {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -653,6 +668,7 @@ impl ::core::default::Default for EVT_OPEN_LOG_FLAGS {
 }
 unsafe impl ::windows::core::Abi for EVT_OPEN_LOG_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EVT_OPEN_LOG_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -736,6 +752,7 @@ impl ::core::default::Default for EVT_PUBLISHER_METADATA_PROPERTY_ID {
 }
 unsafe impl ::windows::core::Abi for EVT_PUBLISHER_METADATA_PROPERTY_ID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EVT_PUBLISHER_METADATA_PROPERTY_ID {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -769,6 +786,7 @@ impl ::core::default::Default for EVT_QUERY_FLAGS {
 }
 unsafe impl ::windows::core::Abi for EVT_QUERY_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EVT_QUERY_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -798,6 +816,7 @@ impl ::core::default::Default for EVT_QUERY_PROPERTY_ID {
 }
 unsafe impl ::windows::core::Abi for EVT_QUERY_PROPERTY_ID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EVT_QUERY_PROPERTY_ID {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -829,6 +848,7 @@ impl ::core::default::Default for EVT_RENDER_CONTEXT_FLAGS {
 }
 unsafe impl ::windows::core::Abi for EVT_RENDER_CONTEXT_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EVT_RENDER_CONTEXT_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -858,6 +878,7 @@ impl ::core::default::Default for EVT_RENDER_FLAGS {
 }
 unsafe impl ::windows::core::Abi for EVT_RENDER_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EVT_RENDER_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -886,6 +907,7 @@ impl ::core::fmt::Debug for EVT_RPC_LOGIN {
 }
 unsafe impl ::windows::core::Abi for EVT_RPC_LOGIN {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EVT_RPC_LOGIN {
     fn eq(&self, other: &Self) -> bool {
@@ -923,6 +945,7 @@ impl ::core::default::Default for EVT_RPC_LOGIN_FLAGS {
 }
 unsafe impl ::windows::core::Abi for EVT_RPC_LOGIN_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EVT_RPC_LOGIN_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -958,6 +981,7 @@ impl ::core::default::Default for EVT_SEEK_FLAGS {
 }
 unsafe impl ::windows::core::Abi for EVT_SEEK_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EVT_SEEK_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -995,6 +1019,7 @@ impl ::core::default::Default for EVT_SUBSCRIBE_FLAGS {
 }
 unsafe impl ::windows::core::Abi for EVT_SUBSCRIBE_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EVT_SUBSCRIBE_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1022,6 +1047,7 @@ impl ::core::default::Default for EVT_SUBSCRIBE_NOTIFY_ACTION {
 }
 unsafe impl ::windows::core::Abi for EVT_SUBSCRIBE_NOTIFY_ACTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EVT_SUBSCRIBE_NOTIFY_ACTION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1083,6 +1109,7 @@ impl ::core::default::Default for EVT_SYSTEM_PROPERTY_ID {
 }
 unsafe impl ::windows::core::Abi for EVT_SYSTEM_PROPERTY_ID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EVT_SYSTEM_PROPERTY_ID {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1108,6 +1135,7 @@ impl ::core::clone::Clone for EVT_VARIANT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for EVT_VARIANT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for EVT_VARIANT {
@@ -1179,6 +1207,7 @@ impl ::core::clone::Clone for EVT_VARIANT_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for EVT_VARIANT_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for EVT_VARIANT_0 {
@@ -1259,6 +1288,7 @@ impl ::core::default::Default for EVT_VARIANT_TYPE {
 }
 unsafe impl ::windows::core::Abi for EVT_VARIANT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EVT_VARIANT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1297,6 +1327,7 @@ impl ::core::fmt::Debug for EventLogHandle {
 }
 unsafe impl ::windows::core::Abi for EventLogHandle {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[repr(transparent)]
 #[derive(:: core :: cmp :: PartialEq, :: core :: cmp :: Eq)]
@@ -1324,6 +1355,7 @@ impl ::core::fmt::Debug for EventSourceHandle {
 }
 unsafe impl ::windows::core::Abi for EventSourceHandle {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[doc = "*Required features: `\"Win32_System_EventLog\"`, `\"Win32_Foundation\"`*"]
 #[cfg(feature = "Win32_Foundation")]
@@ -1979,6 +2011,7 @@ impl ::core::default::Default for READ_EVENT_LOG_READ_FLAGS {
 }
 unsafe impl ::windows::core::Abi for READ_EVENT_LOG_READ_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for READ_EVENT_LOG_READ_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2014,6 +2047,7 @@ impl ::core::default::Default for REPORT_EVENT_TYPE {
 }
 unsafe impl ::windows::core::Abi for REPORT_EVENT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for REPORT_EVENT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

@@ -83,6 +83,7 @@ impl ::core::clone::Clone for FXECHO_INITDATA {
 }
 unsafe impl ::windows::core::Abi for FXECHO_INITDATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for FXECHO_INITDATA {
     fn eq(&self, other: &Self) -> bool {
@@ -122,6 +123,7 @@ impl ::core::clone::Clone for FXECHO_PARAMETERS {
 }
 unsafe impl ::windows::core::Abi for FXECHO_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for FXECHO_PARAMETERS {
     fn eq(&self, other: &Self) -> bool {
@@ -187,6 +189,7 @@ impl ::core::clone::Clone for FXEQ_PARAMETERS {
 }
 unsafe impl ::windows::core::Abi for FXEQ_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for FXEQ_PARAMETERS {
     fn eq(&self, other: &Self) -> bool {
@@ -230,6 +233,7 @@ impl ::core::clone::Clone for FXMASTERINGLIMITER_PARAMETERS {
 }
 unsafe impl ::windows::core::Abi for FXMASTERINGLIMITER_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for FXMASTERINGLIMITER_PARAMETERS {
     fn eq(&self, other: &Self) -> bool {
@@ -269,6 +273,7 @@ impl ::core::clone::Clone for FXREVERB_PARAMETERS {
 }
 unsafe impl ::windows::core::Abi for FXREVERB_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for FXREVERB_PARAMETERS {
     fn eq(&self, other: &Self) -> bool {
@@ -309,6 +314,7 @@ impl ::core::fmt::Debug for HrtfApoInit {
 }
 unsafe impl ::windows::core::Abi for HrtfApoInit {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HrtfApoInit {
     fn eq(&self, other: &Self) -> bool {
@@ -340,6 +346,7 @@ impl ::core::fmt::Debug for HrtfDirectivity {
 }
 unsafe impl ::windows::core::Abi for HrtfDirectivity {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HrtfDirectivity {
     fn eq(&self, other: &Self) -> bool {
@@ -371,6 +378,7 @@ impl ::core::fmt::Debug for HrtfDirectivityCardioid {
 }
 unsafe impl ::windows::core::Abi for HrtfDirectivityCardioid {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HrtfDirectivityCardioid {
     fn eq(&self, other: &Self) -> bool {
@@ -403,6 +411,7 @@ impl ::core::fmt::Debug for HrtfDirectivityCone {
 }
 unsafe impl ::windows::core::Abi for HrtfDirectivityCone {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HrtfDirectivityCone {
     fn eq(&self, other: &Self) -> bool {
@@ -438,6 +447,7 @@ impl ::core::default::Default for HrtfDirectivityType {
 }
 unsafe impl ::windows::core::Abi for HrtfDirectivityType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HrtfDirectivityType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -466,6 +476,7 @@ impl ::core::fmt::Debug for HrtfDistanceDecay {
 }
 unsafe impl ::windows::core::Abi for HrtfDistanceDecay {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HrtfDistanceDecay {
     fn eq(&self, other: &Self) -> bool {
@@ -499,6 +510,7 @@ impl ::core::default::Default for HrtfDistanceDecayType {
 }
 unsafe impl ::windows::core::Abi for HrtfDistanceDecayType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HrtfDistanceDecayType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -530,6 +542,7 @@ impl ::core::default::Default for HrtfEnvironment {
 }
 unsafe impl ::windows::core::Abi for HrtfEnvironment {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HrtfEnvironment {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -554,6 +567,7 @@ impl ::core::fmt::Debug for HrtfOrientation {
 }
 unsafe impl ::windows::core::Abi for HrtfOrientation {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HrtfOrientation {
     fn eq(&self, other: &Self) -> bool {
@@ -586,6 +600,7 @@ impl ::core::fmt::Debug for HrtfPosition {
 }
 unsafe impl ::windows::core::Abi for HrtfPosition {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HrtfPosition {
     fn eq(&self, other: &Self) -> bool {
@@ -601,6 +616,11 @@ impl ::core::default::Default for HrtfPosition {
 #[doc = "*Required features: `\"Win32_Media_Audio_XAudio2\"`*"]
 #[repr(transparent)]
 pub struct IXAPO(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXAPO {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXAPO {
     #[doc = "*Required features: `\"Win32_Media_Audio_XAudio2\"`*"]
     pub unsafe fn GetRegistrationProperties(&self) -> ::windows::core::Result<*mut XAPO_REGISTRATION_PROPERTIES> {
@@ -667,11 +687,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IXAPO
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXAPO {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXAPO {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -708,6 +723,11 @@ pub struct IXAPO_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_Audio_XAudio2\"`*"]
 #[repr(transparent)]
 pub struct IXAPOHrtfParameters(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXAPOHrtfParameters {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXAPOHrtfParameters {
     #[doc = "*Required features: `\"Win32_Media_Audio_XAudio2\"`*"]
     pub unsafe fn SetSourcePosition(&self, position: *const HrtfPosition) -> ::windows::core::Result<()> {
@@ -746,11 +766,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IXAPO
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXAPOHrtfParameters {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXAPOHrtfParameters {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -778,6 +793,11 @@ pub struct IXAPOHrtfParameters_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_Audio_XAudio2\"`*"]
 #[repr(transparent)]
 pub struct IXAPOParameters(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXAPOParameters {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXAPOParameters {
     #[doc = "*Required features: `\"Win32_Media_Audio_XAudio2\"`*"]
     pub unsafe fn SetParameters(&self, pparameters: *const ::core::ffi::c_void, parameterbytesize: u32) {
@@ -808,11 +828,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IXAPO
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXAPOParameters {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXAPOParameters {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -838,6 +853,11 @@ pub struct IXAPOParameters_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_Audio_XAudio2\"`*"]
 #[repr(transparent)]
 pub struct IXAudio2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXAudio2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXAudio2 {
     #[doc = "*Required features: `\"Win32_Media_Audio_XAudio2\"`*"]
     pub unsafe fn RegisterForCallbacks<'a, Param0: ::windows::core::IntoParam<'a, IXAudio2EngineCallback>>(&self, pcallback: Param0) -> ::windows::core::Result<()> {
@@ -904,11 +924,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IXAud
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXAudio2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXAudio2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -954,6 +969,11 @@ pub struct IXAudio2_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_Audio_XAudio2\"`*"]
 #[repr(transparent)]
 pub struct IXAudio2EngineCallback(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXAudio2EngineCallback {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXAudio2EngineCallback {
     #[doc = "*Required features: `\"Win32_Media_Audio_XAudio2\"`*"]
     pub unsafe fn OnProcessingPassStart(&self) {
@@ -966,11 +986,6 @@ impl IXAudio2EngineCallback {
     #[doc = "*Required features: `\"Win32_Media_Audio_XAudio2\"`*"]
     pub unsafe fn OnCriticalError(&self, error: ::windows::core::HRESULT) {
         (::windows::core::Interface::vtable(self).OnCriticalError)(::core::mem::transmute_copy(self), ::core::mem::transmute(error))
-    }
-}
-impl ::core::clone::Clone for IXAudio2EngineCallback {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IXAudio2EngineCallback {
@@ -998,6 +1013,11 @@ pub struct IXAudio2EngineCallback_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_Audio_XAudio2\"`*"]
 #[repr(transparent)]
 pub struct IXAudio2Extension(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXAudio2Extension {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXAudio2Extension {
     #[doc = "*Required features: `\"Win32_Media_Audio_XAudio2\"`*"]
     pub unsafe fn GetProcessingQuantum(&self, quantumnumerator: *mut u32, quantumdenominator: *mut u32) {
@@ -1028,11 +1048,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IXAud
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXAudio2Extension {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXAudio2Extension {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1058,6 +1073,11 @@ pub struct IXAudio2Extension_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_Audio_XAudio2\"`*"]
 #[repr(transparent)]
 pub struct IXAudio2MasteringVoice(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXAudio2MasteringVoice {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXAudio2MasteringVoice {
     #[doc = "*Required features: `\"Win32_Media_Audio_XAudio2\"`*"]
     pub unsafe fn GetVoiceDetails(&self, pvoicedetails: *mut XAUDIO2_VOICE_DETAILS) {
@@ -1163,11 +1183,6 @@ impl<'a> ::windows::core::IntoParam<'a, IXAudio2Voice> for &'a IXAudio2Mastering
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXAudio2MasteringVoice {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXAudio2MasteringVoice {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1192,6 +1207,11 @@ pub struct IXAudio2MasteringVoice_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_Audio_XAudio2\"`*"]
 #[repr(transparent)]
 pub struct IXAudio2SourceVoice(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXAudio2SourceVoice {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXAudio2SourceVoice {
     #[doc = "*Required features: `\"Win32_Media_Audio_XAudio2\"`*"]
     pub unsafe fn GetVoiceDetails(&self, pvoicedetails: *mut XAUDIO2_VOICE_DETAILS) {
@@ -1332,11 +1352,6 @@ impl<'a> ::windows::core::IntoParam<'a, IXAudio2Voice> for &'a IXAudio2SourceVoi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXAudio2SourceVoice {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXAudio2SourceVoice {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1370,6 +1385,11 @@ pub struct IXAudio2SourceVoice_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_Audio_XAudio2\"`*"]
 #[repr(transparent)]
 pub struct IXAudio2SubmixVoice(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXAudio2SubmixVoice {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXAudio2SubmixVoice {
     #[doc = "*Required features: `\"Win32_Media_Audio_XAudio2\"`*"]
     pub unsafe fn GetVoiceDetails(&self, pvoicedetails: *mut XAUDIO2_VOICE_DETAILS) {
@@ -1470,11 +1490,6 @@ impl<'a> ::windows::core::IntoParam<'a, IXAudio2Voice> for &'a IXAudio2SubmixVoi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXAudio2SubmixVoice {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXAudio2SubmixVoice {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1498,6 +1513,11 @@ pub struct IXAudio2SubmixVoice_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_Audio_XAudio2\"`*"]
 #[repr(transparent)]
 pub struct IXAudio2Voice(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXAudio2Voice {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXAudio2Voice {
     #[doc = "*Required features: `\"Win32_Media_Audio_XAudio2\"`*"]
     pub unsafe fn GetVoiceDetails(&self, pvoicedetails: *mut XAUDIO2_VOICE_DETAILS) {
@@ -1578,11 +1598,6 @@ impl IXAudio2Voice {
         (::windows::core::Interface::vtable(self).DestroyVoice)(::core::mem::transmute_copy(self))
     }
 }
-impl ::core::clone::Clone for IXAudio2Voice {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXAudio2Voice {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1630,6 +1645,11 @@ pub struct IXAudio2Voice_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_Audio_XAudio2\"`*"]
 #[repr(transparent)]
 pub struct IXAudio2VoiceCallback(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXAudio2VoiceCallback {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXAudio2VoiceCallback {
     #[doc = "*Required features: `\"Win32_Media_Audio_XAudio2\"`*"]
     pub unsafe fn OnVoiceProcessingPassStart(&self, bytesrequired: u32) {
@@ -1658,11 +1678,6 @@ impl IXAudio2VoiceCallback {
     #[doc = "*Required features: `\"Win32_Media_Audio_XAudio2\"`*"]
     pub unsafe fn OnVoiceError(&self, pbuffercontext: *mut ::core::ffi::c_void, error: ::windows::core::HRESULT) {
         (::windows::core::Interface::vtable(self).OnVoiceError)(::core::mem::transmute_copy(self), ::core::mem::transmute(pbuffercontext), ::core::mem::transmute(error))
-    }
-}
-impl ::core::clone::Clone for IXAudio2VoiceCallback {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IXAudio2VoiceCallback {
@@ -1804,6 +1819,7 @@ impl ::core::default::Default for XAPO_BUFFER_FLAGS {
 }
 unsafe impl ::windows::core::Abi for XAPO_BUFFER_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for XAPO_BUFFER_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1838,6 +1854,7 @@ impl ::core::clone::Clone for XAPO_LOCKFORPROCESS_PARAMETERS {
 }
 unsafe impl ::windows::core::Abi for XAPO_LOCKFORPROCESS_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for XAPO_LOCKFORPROCESS_PARAMETERS {
     fn eq(&self, other: &Self) -> bool {
@@ -1873,6 +1890,7 @@ impl ::core::clone::Clone for XAPO_PROCESS_BUFFER_PARAMETERS {
 }
 unsafe impl ::windows::core::Abi for XAPO_PROCESS_BUFFER_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for XAPO_PROCESS_BUFFER_PARAMETERS {
     fn eq(&self, other: &Self) -> bool {
@@ -1907,6 +1925,7 @@ impl ::core::clone::Clone for XAPO_REGISTRATION_PROPERTIES {
 }
 unsafe impl ::windows::core::Abi for XAPO_REGISTRATION_PROPERTIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for XAPO_REGISTRATION_PROPERTIES {
     fn eq(&self, other: &Self) -> bool {
@@ -1998,6 +2017,7 @@ impl ::core::clone::Clone for XAUDIO2FX_REVERB_I3DL2_PARAMETERS {
 }
 unsafe impl ::windows::core::Abi for XAUDIO2FX_REVERB_I3DL2_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for XAUDIO2FX_REVERB_I3DL2_PARAMETERS {
     fn eq(&self, other: &Self) -> bool {
@@ -2132,6 +2152,7 @@ impl ::core::clone::Clone for XAUDIO2FX_REVERB_PARAMETERS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for XAUDIO2FX_REVERB_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for XAUDIO2FX_REVERB_PARAMETERS {
@@ -2162,6 +2183,7 @@ impl ::core::clone::Clone for XAUDIO2FX_VOLUMEMETER_LEVELS {
 }
 unsafe impl ::windows::core::Abi for XAUDIO2FX_VOLUMEMETER_LEVELS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for XAUDIO2FX_VOLUMEMETER_LEVELS {
     fn eq(&self, other: &Self) -> bool {
@@ -2199,6 +2221,7 @@ impl ::core::clone::Clone for XAUDIO2_BUFFER {
 }
 unsafe impl ::windows::core::Abi for XAUDIO2_BUFFER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for XAUDIO2_BUFFER {
     fn eq(&self, other: &Self) -> bool {
@@ -2225,6 +2248,7 @@ impl ::core::clone::Clone for XAUDIO2_BUFFER_WMA {
 }
 unsafe impl ::windows::core::Abi for XAUDIO2_BUFFER_WMA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for XAUDIO2_BUFFER_WMA {
     fn eq(&self, other: &Self) -> bool {
@@ -2263,6 +2287,7 @@ impl ::core::clone::Clone for XAUDIO2_DEBUG_CONFIGURATION {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for XAUDIO2_DEBUG_CONFIGURATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for XAUDIO2_DEBUG_CONFIGURATION {
@@ -2316,6 +2341,7 @@ impl ::core::clone::Clone for XAUDIO2_EFFECT_CHAIN {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for XAUDIO2_EFFECT_CHAIN {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for XAUDIO2_EFFECT_CHAIN {
@@ -2342,6 +2368,7 @@ pub struct XAUDIO2_EFFECT_DESCRIPTOR {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for XAUDIO2_EFFECT_DESCRIPTOR {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for XAUDIO2_EFFECT_DESCRIPTOR {
@@ -2382,6 +2409,7 @@ impl ::core::clone::Clone for XAUDIO2_FILTER_PARAMETERS {
 }
 unsafe impl ::windows::core::Abi for XAUDIO2_FILTER_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for XAUDIO2_FILTER_PARAMETERS {
     fn eq(&self, other: &Self) -> bool {
@@ -2423,6 +2451,7 @@ impl ::core::default::Default for XAUDIO2_FILTER_TYPE {
 }
 unsafe impl ::windows::core::Abi for XAUDIO2_FILTER_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for XAUDIO2_FILTER_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2509,6 +2538,7 @@ impl ::core::clone::Clone for XAUDIO2_PERFORMANCE_DATA {
 }
 unsafe impl ::windows::core::Abi for XAUDIO2_PERFORMANCE_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for XAUDIO2_PERFORMANCE_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -2535,6 +2565,7 @@ pub struct XAUDIO2_SEND_DESCRIPTOR {
 }
 unsafe impl ::windows::core::Abi for XAUDIO2_SEND_DESCRIPTOR {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for XAUDIO2_SEND_DESCRIPTOR {
     fn eq(&self, other: &Self) -> bool {
@@ -2569,6 +2600,7 @@ impl ::core::clone::Clone for XAUDIO2_VOICE_DETAILS {
 }
 unsafe impl ::windows::core::Abi for XAUDIO2_VOICE_DETAILS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for XAUDIO2_VOICE_DETAILS {
     fn eq(&self, other: &Self) -> bool {
@@ -2601,6 +2633,7 @@ impl ::core::clone::Clone for XAUDIO2_VOICE_SENDS {
 }
 unsafe impl ::windows::core::Abi for XAUDIO2_VOICE_SENDS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for XAUDIO2_VOICE_SENDS {
     fn eq(&self, other: &Self) -> bool {
@@ -2628,6 +2661,7 @@ impl ::core::clone::Clone for XAUDIO2_VOICE_STATE {
 }
 unsafe impl ::windows::core::Abi for XAUDIO2_VOICE_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for XAUDIO2_VOICE_STATE {
     fn eq(&self, other: &Self) -> bool {

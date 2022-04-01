@@ -2,6 +2,11 @@
 #[doc = "*Required features: `\"Win32_UI_Ribbon\"`*"]
 #[repr(transparent)]
 pub struct IUIApplication(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIApplication {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIApplication {
     #[doc = "*Required features: `\"Win32_UI_Ribbon\"`*"]
     pub unsafe fn OnViewChanged<'a, Param2: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, viewid: u32, typeid: UI_VIEWTYPE, view: Param2, verb: UI_VIEWVERB, ureasoncode: i32) -> ::windows::core::Result<()> {
@@ -37,11 +42,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAp
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIApplication {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIApplication {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -68,6 +68,11 @@ pub struct IUIApplication_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Ribbon\"`*"]
 #[repr(transparent)]
 pub struct IUICollection(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUICollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUICollection {
     #[doc = "*Required features: `\"Win32_UI_Ribbon\"`*"]
     pub unsafe fn GetCount(&self) -> ::windows::core::Result<u32> {
@@ -120,11 +125,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUICo
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUICollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUICollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -155,6 +155,11 @@ pub struct IUICollection_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Ribbon\"`*"]
 #[repr(transparent)]
 pub struct IUICollectionChangedEvent(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUICollectionChangedEvent {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUICollectionChangedEvent {
     #[doc = "*Required features: `\"Win32_UI_Ribbon\"`*"]
     pub unsafe fn OnChanged<'a, Param2: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>, Param4: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, action: UI_COLLECTIONCHANGE, oldindex: u32, olditem: Param2, newindex: u32, newitem: Param4) -> ::windows::core::Result<()> {
@@ -181,11 +186,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUICo
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUICollectionChangedEvent {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUICollectionChangedEvent {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -210,6 +210,11 @@ pub struct IUICollectionChangedEvent_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Ribbon\"`*"]
 #[repr(transparent)]
 pub struct IUICommandHandler(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUICommandHandler {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUICommandHandler {
     #[doc = "*Required features: `\"Win32_UI_Ribbon\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com_StructuredStorage\"`, `\"Win32_UI_Shell_PropertiesSystem\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com_StructuredStorage", feature = "Win32_UI_Shell_PropertiesSystem"))]
@@ -243,11 +248,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUICo
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUICommandHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUICommandHandler {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -279,6 +279,11 @@ pub struct IUICommandHandler_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Ribbon\"`*"]
 #[repr(transparent)]
 pub struct IUIContextualUI(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIContextualUI {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIContextualUI {
     #[doc = "*Required features: `\"Win32_UI_Ribbon\"`*"]
     pub unsafe fn ShowAtLocation(&self, x: i32, y: i32) -> ::windows::core::Result<()> {
@@ -305,11 +310,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUICo
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIContextualUI {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIContextualUI {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -334,6 +334,11 @@ pub struct IUIContextualUI_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Ribbon\"`*"]
 #[repr(transparent)]
 pub struct IUIEventLogger(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIEventLogger {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIEventLogger {
     #[doc = "*Required features: `\"Win32_UI_Ribbon\"`*"]
     pub unsafe fn OnUIEvent(&self, peventparams: *const UI_EVENTPARAMS) {
@@ -360,11 +365,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIEv
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIEventLogger {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIEventLogger {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -389,6 +389,11 @@ pub struct IUIEventLogger_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Ribbon\"`*"]
 #[repr(transparent)]
 pub struct IUIEventingManager(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIEventingManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIEventingManager {
     #[doc = "*Required features: `\"Win32_UI_Ribbon\"`*"]
     pub unsafe fn SetEventLogger<'a, Param0: ::windows::core::IntoParam<'a, IUIEventLogger>>(&self, eventlogger: Param0) -> ::windows::core::Result<()> {
@@ -415,11 +420,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIEv
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIEventingManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIEventingManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -444,6 +444,11 @@ pub struct IUIEventingManager_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Ribbon\"`*"]
 #[repr(transparent)]
 pub struct IUIFramework(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIFramework {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIFramework {
     #[doc = "*Required features: `\"Win32_UI_Ribbon\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -508,11 +513,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIFr
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIFramework {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIFramework {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -560,6 +560,11 @@ pub struct IUIFramework_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Ribbon\"`*"]
 #[repr(transparent)]
 pub struct IUIImage(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIImage {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIImage {
     #[doc = "*Required features: `\"Win32_UI_Ribbon\"`, `\"Win32_Graphics_Gdi\"`*"]
     #[cfg(feature = "Win32_Graphics_Gdi")]
@@ -586,11 +591,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IUIImage 
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIImage {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IUIImage {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IUIImage {
@@ -620,6 +620,11 @@ pub struct IUIImage_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Ribbon\"`*"]
 #[repr(transparent)]
 pub struct IUIImageFromBitmap(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIImageFromBitmap {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIImageFromBitmap {
     #[doc = "*Required features: `\"Win32_UI_Ribbon\"`, `\"Win32_Graphics_Gdi\"`*"]
     #[cfg(feature = "Win32_Graphics_Gdi")]
@@ -646,11 +651,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IUIImageF
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIImageFromBitmap {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IUIImageFromBitmap {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IUIImageFromBitmap {
@@ -680,6 +680,11 @@ pub struct IUIImageFromBitmap_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Ribbon\"`*"]
 #[repr(transparent)]
 pub struct IUIRibbon(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIRibbon {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIRibbon {
     #[doc = "*Required features: `\"Win32_UI_Ribbon\"`*"]
     pub unsafe fn GetHeight(&self) -> ::windows::core::Result<u32> {
@@ -717,11 +722,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIRi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIRibbon {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIRibbon {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -754,6 +754,11 @@ pub struct IUIRibbon_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Ribbon\"`*"]
 #[repr(transparent)]
 pub struct IUISimplePropertySet(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUISimplePropertySet {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUISimplePropertySet {
     #[doc = "*Required features: `\"Win32_UI_Ribbon\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com_StructuredStorage\"`, `\"Win32_UI_Shell_PropertiesSystem\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com_StructuredStorage", feature = "Win32_UI_Shell_PropertiesSystem"))]
@@ -780,11 +785,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IUISimple
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUISimplePropertySet {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IUISimplePropertySet {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IUISimplePropertySet {
@@ -841,6 +841,7 @@ impl ::core::default::Default for UI_COLLECTIONCHANGE {
 }
 unsafe impl ::windows::core::Abi for UI_COLLECTIONCHANGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UI_COLLECTIONCHANGE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -892,6 +893,7 @@ impl ::core::default::Default for UI_COMMANDTYPE {
 }
 unsafe impl ::windows::core::Abi for UI_COMMANDTYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UI_COMMANDTYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -921,6 +923,7 @@ impl ::core::default::Default for UI_CONTEXTAVAILABILITY {
 }
 unsafe impl ::windows::core::Abi for UI_CONTEXTAVAILABILITY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UI_CONTEXTAVAILABILITY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -948,6 +951,7 @@ impl ::core::default::Default for UI_CONTROLDOCK {
 }
 unsafe impl ::windows::core::Abi for UI_CONTROLDOCK {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UI_CONTROLDOCK {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -979,6 +983,7 @@ impl ::core::default::Default for UI_EVENTLOCATION {
 }
 unsafe impl ::windows::core::Abi for UI_EVENTLOCATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UI_EVENTLOCATION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -999,6 +1004,7 @@ impl ::core::clone::Clone for UI_EVENTPARAMS {
 }
 unsafe impl ::windows::core::Abi for UI_EVENTPARAMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for UI_EVENTPARAMS {
     fn eq(&self, other: &Self) -> bool {
@@ -1025,6 +1031,7 @@ impl ::core::clone::Clone for UI_EVENTPARAMS_0 {
 }
 unsafe impl ::windows::core::Abi for UI_EVENTPARAMS_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for UI_EVENTPARAMS_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -1060,6 +1067,7 @@ impl ::core::fmt::Debug for UI_EVENTPARAMS_COMMAND {
 }
 unsafe impl ::windows::core::Abi for UI_EVENTPARAMS_COMMAND {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for UI_EVENTPARAMS_COMMAND {
     fn eq(&self, other: &Self) -> bool {
@@ -1105,6 +1113,7 @@ impl ::core::default::Default for UI_EVENTTYPE {
 }
 unsafe impl ::windows::core::Abi for UI_EVENTTYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UI_EVENTTYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1134,6 +1143,7 @@ impl ::core::default::Default for UI_EXECUTIONVERB {
 }
 unsafe impl ::windows::core::Abi for UI_EXECUTIONVERB {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UI_EXECUTIONVERB {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1161,6 +1171,7 @@ impl ::core::default::Default for UI_FONTDELTASIZE {
 }
 unsafe impl ::windows::core::Abi for UI_FONTDELTASIZE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UI_FONTDELTASIZE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1190,6 +1201,7 @@ impl ::core::default::Default for UI_FONTPROPERTIES {
 }
 unsafe impl ::windows::core::Abi for UI_FONTPROPERTIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UI_FONTPROPERTIES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1219,6 +1231,7 @@ impl ::core::default::Default for UI_FONTUNDERLINE {
 }
 unsafe impl ::windows::core::Abi for UI_FONTUNDERLINE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UI_FONTUNDERLINE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1250,6 +1263,7 @@ impl ::core::default::Default for UI_FONTVERTICALPOSITION {
 }
 unsafe impl ::windows::core::Abi for UI_FONTVERTICALPOSITION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UI_FONTVERTICALPOSITION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1281,6 +1295,7 @@ impl ::core::default::Default for UI_INVALIDATIONS {
 }
 unsafe impl ::windows::core::Abi for UI_INVALIDATIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UI_INVALIDATIONS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1308,6 +1323,7 @@ impl ::core::default::Default for UI_OWNERSHIP {
 }
 unsafe impl ::windows::core::Abi for UI_OWNERSHIP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UI_OWNERSHIP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1335,6 +1351,7 @@ impl ::core::default::Default for UI_SWATCHCOLORMODE {
 }
 unsafe impl ::windows::core::Abi for UI_SWATCHCOLORMODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UI_SWATCHCOLORMODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1364,6 +1381,7 @@ impl ::core::default::Default for UI_SWATCHCOLORTYPE {
 }
 unsafe impl ::windows::core::Abi for UI_SWATCHCOLORTYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UI_SWATCHCOLORTYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1389,6 +1407,7 @@ impl ::core::default::Default for UI_VIEWTYPE {
 }
 unsafe impl ::windows::core::Abi for UI_VIEWTYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UI_VIEWTYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1420,6 +1439,7 @@ impl ::core::default::Default for UI_VIEWVERB {
 }
 unsafe impl ::windows::core::Abi for UI_VIEWVERB {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UI_VIEWVERB {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

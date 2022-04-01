@@ -46,6 +46,7 @@ impl ::core::fmt::Debug for CALLFRAMEINFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for CALLFRAMEINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for CALLFRAMEINFO {
@@ -87,6 +88,7 @@ impl ::core::fmt::Debug for CALLFRAMEPARAMINFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for CALLFRAMEPARAMINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for CALLFRAMEPARAMINFO {
@@ -123,6 +125,7 @@ impl ::core::default::Default for CALLFRAME_COPY {
 }
 unsafe impl ::windows::core::Abi for CALLFRAME_COPY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CALLFRAME_COPY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -160,6 +163,7 @@ impl ::core::default::Default for CALLFRAME_FREE {
 }
 unsafe impl ::windows::core::Abi for CALLFRAME_FREE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CALLFRAME_FREE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -197,6 +201,7 @@ impl ::core::fmt::Debug for CALLFRAME_MARSHALCONTEXT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for CALLFRAME_MARSHALCONTEXT {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for CALLFRAME_MARSHALCONTEXT {
@@ -237,6 +242,7 @@ impl ::core::default::Default for CALLFRAME_NULL {
 }
 unsafe impl ::windows::core::Abi for CALLFRAME_NULL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CALLFRAME_NULL {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -266,6 +272,7 @@ impl ::core::default::Default for CALLFRAME_WALK {
 }
 unsafe impl ::windows::core::Abi for CALLFRAME_WALK {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CALLFRAME_WALK {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -303,6 +310,11 @@ pub unsafe fn CoGetInterceptorFromTypeInfo<'a, Param1: ::windows::core::IntoPara
 #[doc = "*Required features: `\"Win32_System_Com_CallObj\"`*"]
 #[repr(transparent)]
 pub struct ICallFrame(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICallFrame {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ICallFrame {
     #[doc = "*Required features: `\"Win32_System_Com_CallObj\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -415,11 +427,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ICall
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ICallFrame {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ICallFrame {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -486,6 +493,11 @@ pub struct ICallFrame_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Com_CallObj\"`*"]
 #[repr(transparent)]
 pub struct ICallFrameEvents(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICallFrameEvents {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ICallFrameEvents {
     #[doc = "*Required features: `\"Win32_System_Com_CallObj\"`*"]
     pub unsafe fn OnCall<'a, Param0: ::windows::core::IntoParam<'a, ICallFrame>>(&self, pframe: Param0) -> ::windows::core::Result<()> {
@@ -512,11 +524,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ICall
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ICallFrameEvents {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ICallFrameEvents {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -541,6 +548,11 @@ pub struct ICallFrameEvents_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Com_CallObj\"`*"]
 #[repr(transparent)]
 pub struct ICallFrameWalker(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICallFrameWalker {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ICallFrameWalker {
     #[doc = "*Required features: `\"Win32_System_Com_CallObj\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -566,11 +578,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for ICallFram
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ICallFrameWalker {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for ICallFrameWalker {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for ICallFrameWalker {
@@ -600,6 +607,11 @@ pub struct ICallFrameWalker_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Com_CallObj\"`*"]
 #[repr(transparent)]
 pub struct ICallIndirect(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICallIndirect {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ICallIndirect {
     #[doc = "*Required features: `\"Win32_System_Com_CallObj\"`*"]
     pub unsafe fn CallIndirect(&self, phrreturn: *mut ::windows::core::HRESULT, imethod: u32, pvargs: *const ::core::ffi::c_void, cbargs: *mut u32) -> ::windows::core::Result<()> {
@@ -641,11 +653,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ICall
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ICallIndirect {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ICallIndirect {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -679,6 +686,11 @@ pub struct ICallIndirect_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Com_CallObj\"`*"]
 #[repr(transparent)]
 pub struct ICallInterceptor(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICallInterceptor {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ICallInterceptor {
     #[doc = "*Required features: `\"Win32_System_Com_CallObj\"`*"]
     pub unsafe fn CallIndirect(&self, phrreturn: *mut ::windows::core::HRESULT, imethod: u32, pvargs: *const ::core::ffi::c_void, cbargs: *mut u32) -> ::windows::core::Result<()> {
@@ -749,11 +761,6 @@ impl<'a> ::windows::core::IntoParam<'a, ICallIndirect> for &'a ICallInterceptor 
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ICallInterceptor {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ICallInterceptor {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -779,6 +786,11 @@ pub struct ICallInterceptor_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Com_CallObj\"`*"]
 #[repr(transparent)]
 pub struct ICallUnmarshal(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICallUnmarshal {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ICallUnmarshal {
     #[doc = "*Required features: `\"Win32_System_Com_CallObj\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -809,11 +821,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for ICallUnma
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ICallUnmarshal {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for ICallUnmarshal {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for ICallUnmarshal {
@@ -847,6 +854,11 @@ pub struct ICallUnmarshal_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Com_CallObj\"`*"]
 #[repr(transparent)]
 pub struct IInterfaceRelated(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInterfaceRelated {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IInterfaceRelated {
     #[doc = "*Required features: `\"Win32_System_Com_CallObj\"`*"]
     pub unsafe fn SetIID(&self, iid: *const ::windows::core::GUID) -> ::windows::core::Result<()> {
@@ -876,11 +888,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IInterfac
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IInterfaceRelated {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IInterfaceRelated {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IInterfaceRelated {

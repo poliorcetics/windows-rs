@@ -2,6 +2,11 @@
 #[doc = "*Required features: `\"Win32_Security_Tpm\"`*"]
 #[repr(transparent)]
 pub struct ITpmVirtualSmartCardManager(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITpmVirtualSmartCardManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITpmVirtualSmartCardManager {
     #[doc = "*Required features: `\"Win32_Security_Tpm\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -52,11 +57,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITpmV
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITpmVirtualSmartCardManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITpmVirtualSmartCardManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -88,6 +88,11 @@ pub struct ITpmVirtualSmartCardManager_Vtbl {
 #[doc = "*Required features: `\"Win32_Security_Tpm\"`*"]
 #[repr(transparent)]
 pub struct ITpmVirtualSmartCardManager2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITpmVirtualSmartCardManager2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITpmVirtualSmartCardManager2 {
     #[doc = "*Required features: `\"Win32_Security_Tpm\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -182,11 +187,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITpmVirtualSmartCardManager> for &'a ITp
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITpmVirtualSmartCardManager2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITpmVirtualSmartCardManager2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -214,6 +214,11 @@ pub struct ITpmVirtualSmartCardManager2_Vtbl {
 #[doc = "*Required features: `\"Win32_Security_Tpm\"`*"]
 #[repr(transparent)]
 pub struct ITpmVirtualSmartCardManager3(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITpmVirtualSmartCardManager3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITpmVirtualSmartCardManager3 {
     #[doc = "*Required features: `\"Win32_Security_Tpm\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -353,11 +358,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITpmVirtualSmartCardManager2> for &'a IT
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITpmVirtualSmartCardManager3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITpmVirtualSmartCardManager3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -385,6 +385,11 @@ pub struct ITpmVirtualSmartCardManager3_Vtbl {
 #[doc = "*Required features: `\"Win32_Security_Tpm\"`*"]
 #[repr(transparent)]
 pub struct ITpmVirtualSmartCardManagerStatusCallback(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITpmVirtualSmartCardManagerStatusCallback {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITpmVirtualSmartCardManagerStatusCallback {
     #[doc = "*Required features: `\"Win32_Security_Tpm\"`*"]
     pub unsafe fn ReportProgress(&self, status: TPMVSCMGR_STATUS) -> ::windows::core::Result<()> {
@@ -413,11 +418,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for ITpmVirtu
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITpmVirtualSmartCardManagerStatusCallback {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for ITpmVirtualSmartCardManagerStatusCallback {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for ITpmVirtualSmartCardManagerStatusCallback {
@@ -498,6 +498,7 @@ impl ::core::default::Default for TPMVSCMGR_ERROR {
 }
 unsafe impl ::windows::core::Abi for TPMVSCMGR_ERROR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TPMVSCMGR_ERROR {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -549,6 +550,7 @@ impl ::core::default::Default for TPMVSCMGR_STATUS {
 }
 unsafe impl ::windows::core::Abi for TPMVSCMGR_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TPMVSCMGR_STATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -578,6 +580,7 @@ impl ::core::default::Default for TPMVSC_ATTESTATION_TYPE {
 }
 unsafe impl ::windows::core::Abi for TPMVSC_ATTESTATION_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TPMVSC_ATTESTATION_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

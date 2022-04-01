@@ -10,6 +10,12 @@ pub const CQueryWinSAT: ::windows::core::GUID = ::windows::core::GUID::from_u128
 #[repr(transparent)]
 pub struct IAccessibleWinSAT(::windows::core::IUnknown);
 #[cfg(all(feature = "Win32_System_Com", feature = "Win32_UI_Accessibility"))]
+impl ::core::clone::Clone for IAccessibleWinSAT {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(all(feature = "Win32_System_Com", feature = "Win32_UI_Accessibility"))]
 impl IAccessibleWinSAT {
     #[doc = "*Required features: `\"Win32_System_AssessmentTool\"`, `\"Win32_System_Com\"`, `\"Win32_UI_Accessibility\"`*"]
     #[cfg(all(feature = "Win32_System_Com", feature = "Win32_UI_Accessibility"))]
@@ -209,12 +215,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::UI::Accessibility::IAccess
     }
 }
 #[cfg(all(feature = "Win32_System_Com", feature = "Win32_UI_Accessibility"))]
-impl ::core::clone::Clone for IAccessibleWinSAT {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(all(feature = "Win32_System_Com", feature = "Win32_UI_Accessibility"))]
 impl ::core::cmp::PartialEq for IAccessibleWinSAT {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -243,6 +243,11 @@ pub struct IAccessibleWinSAT_Vtbl {
 #[doc = "*Required features: `\"Win32_System_AssessmentTool\"`*"]
 #[repr(transparent)]
 pub struct IInitiateWinSATAssessment(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInitiateWinSATAssessment {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IInitiateWinSATAssessment {
     #[doc = "*Required features: `\"Win32_System_AssessmentTool\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -279,11 +284,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IInit
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IInitiateWinSATAssessment {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IInitiateWinSATAssessment {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -317,6 +317,12 @@ pub struct IInitiateWinSATAssessment_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IProvideWinSATAssessmentInfo(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IProvideWinSATAssessmentInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IProvideWinSATAssessmentInfo {
     #[doc = "*Required features: `\"Win32_System_AssessmentTool\"`*"]
@@ -386,12 +392,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IProvideW
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IProvideWinSATAssessmentInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IProvideWinSATAssessmentInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -429,6 +429,12 @@ pub struct IProvideWinSATAssessmentInfo_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IProvideWinSATResultsInfo(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IProvideWinSATResultsInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IProvideWinSATResultsInfo {
     #[doc = "*Required features: `\"Win32_System_AssessmentTool\"`, `\"Win32_System_Com\"`*"]
@@ -509,12 +515,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IProvideW
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IProvideWinSATResultsInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IProvideWinSATResultsInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -556,6 +556,11 @@ pub struct IProvideWinSATResultsInfo_Vtbl {
 #[doc = "*Required features: `\"Win32_System_AssessmentTool\"`*"]
 #[repr(transparent)]
 pub struct IProvideWinSATVisuals(::windows::core::IUnknown);
+impl ::core::clone::Clone for IProvideWinSATVisuals {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IProvideWinSATVisuals {
     #[doc = "*Required features: `\"Win32_System_AssessmentTool\"`, `\"Win32_Graphics_Gdi\"`*"]
     #[cfg(feature = "Win32_Graphics_Gdi")]
@@ -582,11 +587,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IProvideW
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IProvideWinSATVisuals {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IProvideWinSATVisuals {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IProvideWinSATVisuals {
@@ -617,6 +617,12 @@ pub struct IProvideWinSATVisuals_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IQueryAllWinSATAssessments(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IQueryAllWinSATAssessments {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IQueryAllWinSATAssessments {
     #[doc = "*Required features: `\"Win32_System_AssessmentTool\"`, `\"Win32_Data_Xml_MsXml\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`*"]
@@ -675,12 +681,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IQueryAll
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IQueryAllWinSATAssessments {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IQueryAllWinSATAssessments {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -712,6 +712,11 @@ pub struct IQueryAllWinSATAssessments_Vtbl {
 #[doc = "*Required features: `\"Win32_System_AssessmentTool\"`*"]
 #[repr(transparent)]
 pub struct IQueryOEMWinSATCustomization(::windows::core::IUnknown);
+impl ::core::clone::Clone for IQueryOEMWinSATCustomization {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IQueryOEMWinSATCustomization {
     #[doc = "*Required features: `\"Win32_System_AssessmentTool\"`*"]
     pub unsafe fn GetOEMPrePopulationInfo(&self) -> ::windows::core::Result<WINSAT_OEM_DATA_TYPE> {
@@ -739,11 +744,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IQuer
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IQueryOEMWinSATCustomization {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IQueryOEMWinSATCustomization {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -769,6 +769,12 @@ pub struct IQueryOEMWinSATCustomization_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IQueryRecentWinSATAssessment(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IQueryRecentWinSATAssessment {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IQueryRecentWinSATAssessment {
     #[doc = "*Required features: `\"Win32_System_AssessmentTool\"`, `\"Win32_Data_Xml_MsXml\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`*"]
@@ -833,12 +839,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IQueryRec
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IQueryRecentWinSATAssessment {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IQueryRecentWinSATAssessment {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -874,6 +874,11 @@ pub struct IQueryRecentWinSATAssessment_Vtbl {
 #[doc = "*Required features: `\"Win32_System_AssessmentTool\"`*"]
 #[repr(transparent)]
 pub struct IWinSATInitiateEvents(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWinSATInitiateEvents {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWinSATInitiateEvents {
     #[doc = "*Required features: `\"Win32_System_AssessmentTool\"`*"]
     pub unsafe fn WinSATComplete<'a, Param1: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, hresult: ::windows::core::HRESULT, strdescription: Param1) -> ::windows::core::Result<()> {
@@ -902,11 +907,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IWinSATIn
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWinSATInitiateEvents {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IWinSATInitiateEvents {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IWinSATInitiateEvents {
@@ -962,6 +962,7 @@ impl ::core::default::Default for WINSAT_ASSESSMENT_STATE {
 }
 unsafe impl ::windows::core::Abi for WINSAT_ASSESSMENT_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WINSAT_ASSESSMENT_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -995,6 +996,7 @@ impl ::core::default::Default for WINSAT_ASSESSMENT_TYPE {
 }
 unsafe impl ::windows::core::Abi for WINSAT_ASSESSMENT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WINSAT_ASSESSMENT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1022,6 +1024,7 @@ impl ::core::default::Default for WINSAT_BITMAP_SIZE {
 }
 unsafe impl ::windows::core::Abi for WINSAT_BITMAP_SIZE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WINSAT_BITMAP_SIZE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1053,6 +1056,7 @@ impl ::core::default::Default for WINSAT_OEM_DATA_TYPE {
 }
 unsafe impl ::windows::core::Abi for WINSAT_OEM_DATA_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WINSAT_OEM_DATA_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

@@ -19,6 +19,7 @@ impl ::core::fmt::Debug for ABC {
 }
 unsafe impl ::windows::core::Abi for ABC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ABC {
     fn eq(&self, other: &Self) -> bool {
@@ -51,6 +52,7 @@ impl ::core::fmt::Debug for ABCFLOAT {
 }
 unsafe impl ::windows::core::Abi for ABCFLOAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ABCFLOAT {
     fn eq(&self, other: &Self) -> bool {
@@ -83,6 +85,7 @@ impl ::core::fmt::Debug for ABORTPATH {
 }
 unsafe impl ::windows::core::Abi for ABORTPATH {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ABORTPATH {
     fn eq(&self, other: &Self) -> bool {
@@ -126,6 +129,7 @@ impl ::core::default::Default for ARC_DIRECTION {
 }
 unsafe impl ::windows::core::Abi for ARC_DIRECTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ARC_DIRECTION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -154,6 +158,7 @@ impl ::core::fmt::Debug for AXESLISTA {
 }
 unsafe impl ::windows::core::Abi for AXESLISTA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for AXESLISTA {
     fn eq(&self, other: &Self) -> bool {
@@ -186,6 +191,7 @@ impl ::core::fmt::Debug for AXESLISTW {
 }
 unsafe impl ::windows::core::Abi for AXESLISTW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for AXESLISTW {
     fn eq(&self, other: &Self) -> bool {
@@ -218,6 +224,7 @@ impl ::core::fmt::Debug for AXISINFOA {
 }
 unsafe impl ::windows::core::Abi for AXISINFOA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for AXISINFOA {
     fn eq(&self, other: &Self) -> bool {
@@ -250,6 +257,7 @@ impl ::core::fmt::Debug for AXISINFOW {
 }
 unsafe impl ::windows::core::Abi for AXISINFOW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for AXISINFOW {
     fn eq(&self, other: &Self) -> bool {
@@ -444,6 +452,7 @@ impl ::core::default::Default for BACKGROUND_MODE {
 }
 unsafe impl ::windows::core::Abi for BACKGROUND_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for BACKGROUND_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -480,6 +489,7 @@ impl ::core::fmt::Debug for BITMAP {
 }
 unsafe impl ::windows::core::Abi for BITMAP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for BITMAP {
     fn eq(&self, other: &Self) -> bool {
@@ -514,6 +524,7 @@ impl ::core::fmt::Debug for BITMAPCOREHEADER {
 }
 unsafe impl ::windows::core::Abi for BITMAPCOREHEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for BITMAPCOREHEADER {
     fn eq(&self, other: &Self) -> bool {
@@ -545,6 +556,7 @@ impl ::core::fmt::Debug for BITMAPCOREINFO {
 }
 unsafe impl ::windows::core::Abi for BITMAPCOREINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for BITMAPCOREINFO {
     fn eq(&self, other: &Self) -> bool {
@@ -574,6 +586,7 @@ impl ::core::clone::Clone for BITMAPFILEHEADER {
 }
 unsafe impl ::windows::core::Abi for BITMAPFILEHEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for BITMAPFILEHEADER {
     fn eq(&self, other: &Self) -> bool {
@@ -605,6 +618,7 @@ impl ::core::fmt::Debug for BITMAPINFO {
 }
 unsafe impl ::windows::core::Abi for BITMAPINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for BITMAPINFO {
     fn eq(&self, other: &Self) -> bool {
@@ -645,6 +659,7 @@ impl ::core::fmt::Debug for BITMAPINFOHEADER {
 }
 unsafe impl ::windows::core::Abi for BITMAPINFOHEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for BITMAPINFOHEADER {
     fn eq(&self, other: &Self) -> bool {
@@ -715,6 +730,7 @@ impl ::core::fmt::Debug for BITMAPV4HEADER {
 }
 unsafe impl ::windows::core::Abi for BITMAPV4HEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for BITMAPV4HEADER {
     fn eq(&self, other: &Self) -> bool {
@@ -793,6 +809,7 @@ impl ::core::fmt::Debug for BITMAPV5HEADER {
 }
 unsafe impl ::windows::core::Abi for BITMAPV5HEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for BITMAPV5HEADER {
     fn eq(&self, other: &Self) -> bool {
@@ -840,6 +857,7 @@ impl ::core::fmt::Debug for BLENDFUNCTION {
 }
 unsafe impl ::windows::core::Abi for BLENDFUNCTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for BLENDFUNCTION {
     fn eq(&self, other: &Self) -> bool {
@@ -986,6 +1004,7 @@ impl ::core::default::Default for CDS_TYPE {
 }
 unsafe impl ::windows::core::Abi for CDS_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CDS_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1056,6 +1075,7 @@ impl ::core::fmt::Debug for CIEXYZ {
 }
 unsafe impl ::windows::core::Abi for CIEXYZ {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CIEXYZ {
     fn eq(&self, other: &Self) -> bool {
@@ -1088,6 +1108,7 @@ impl ::core::fmt::Debug for CIEXYZTRIPLE {
 }
 unsafe impl ::windows::core::Abi for CIEXYZTRIPLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CIEXYZTRIPLE {
     fn eq(&self, other: &Self) -> bool {
@@ -1162,6 +1183,7 @@ impl ::core::fmt::Debug for COLORADJUSTMENT {
 }
 unsafe impl ::windows::core::Abi for COLORADJUSTMENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for COLORADJUSTMENT {
     fn eq(&self, other: &Self) -> bool {
@@ -1196,6 +1218,7 @@ impl ::core::fmt::Debug for COLORCORRECTPALETTE {
 }
 unsafe impl ::windows::core::Abi for COLORCORRECTPALETTE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for COLORCORRECTPALETTE {
     fn eq(&self, other: &Self) -> bool {
@@ -1231,6 +1254,7 @@ impl ::core::fmt::Debug for COLORMATCHTOTARGET {
 }
 unsafe impl ::windows::core::Abi for COLORMATCHTOTARGET {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for COLORMATCHTOTARGET {
     fn eq(&self, other: &Self) -> bool {
@@ -1278,6 +1302,7 @@ impl ::core::default::Default for CREATE_FONT_PACKAGE_SUBSET_ENCODING {
 }
 unsafe impl ::windows::core::Abi for CREATE_FONT_PACKAGE_SUBSET_ENCODING {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CREATE_FONT_PACKAGE_SUBSET_ENCODING {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1305,6 +1330,7 @@ impl ::core::default::Default for CREATE_FONT_PACKAGE_SUBSET_PLATFORM {
 }
 unsafe impl ::windows::core::Abi for CREATE_FONT_PACKAGE_SUBSET_PLATFORM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CREATE_FONT_PACKAGE_SUBSET_PLATFORM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1332,6 +1358,7 @@ impl ::core::default::Default for CREATE_POLYGON_RGN_MODE {
 }
 unsafe impl ::windows::core::Abi for CREATE_POLYGON_RGN_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CREATE_POLYGON_RGN_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2251,6 +2278,7 @@ impl ::core::fmt::Debug for CreatedHDC {
 }
 unsafe impl ::windows::core::Abi for CreatedHDC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl<'a> ::windows::core::IntoParam<'a, HDC> for CreatedHDC {
     fn into_param(self) -> ::windows::core::Param<'a, HDC> {
@@ -2308,6 +2336,7 @@ impl ::core::default::Default for DC_LAYOUT {
 }
 unsafe impl ::windows::core::Abi for DC_LAYOUT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DC_LAYOUT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2370,6 +2399,7 @@ impl ::core::fmt::Debug for DESIGNVECTOR {
 }
 unsafe impl ::windows::core::Abi for DESIGNVECTOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DESIGNVECTOR {
     fn eq(&self, other: &Self) -> bool {
@@ -2429,6 +2459,7 @@ impl ::core::clone::Clone for DEVMODEA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DEVMODEA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DEVMODEA {
@@ -2462,6 +2493,7 @@ impl ::core::clone::Clone for DEVMODEA_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DEVMODEA_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DEVMODEA_0 {
@@ -2507,6 +2539,7 @@ impl ::core::fmt::Debug for DEVMODEA_0_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DEVMODEA_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DEVMODEA_0_0 {
@@ -2547,6 +2580,7 @@ impl ::core::fmt::Debug for DEVMODEA_0_1 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DEVMODEA_0_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DEVMODEA_0_1 {
@@ -2580,6 +2614,7 @@ impl ::core::clone::Clone for DEVMODEA_1 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DEVMODEA_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DEVMODEA_1 {
@@ -2638,6 +2673,7 @@ impl ::core::clone::Clone for DEVMODEW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DEVMODEW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DEVMODEW {
@@ -2671,6 +2707,7 @@ impl ::core::clone::Clone for DEVMODEW_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DEVMODEW_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DEVMODEW_0 {
@@ -2716,6 +2753,7 @@ impl ::core::fmt::Debug for DEVMODEW_0_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DEVMODEW_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DEVMODEW_0_0 {
@@ -2756,6 +2794,7 @@ impl ::core::fmt::Debug for DEVMODEW_0_1 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DEVMODEW_0_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DEVMODEW_0_1 {
@@ -2789,6 +2828,7 @@ impl ::core::clone::Clone for DEVMODEW_1 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DEVMODEW_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DEVMODEW_1 {
@@ -2881,6 +2921,7 @@ impl ::core::default::Default for DFCS_STATE {
 }
 unsafe impl ::windows::core::Abi for DFCS_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DFCS_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2942,6 +2983,7 @@ impl ::core::default::Default for DFC_TYPE {
 }
 unsafe impl ::windows::core::Abi for DFC_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DFC_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2975,6 +3017,7 @@ impl ::core::fmt::Debug for DIBSECTION {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DIBSECTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DIBSECTION {
@@ -3011,6 +3054,7 @@ impl ::core::default::Default for DIB_USAGE {
 }
 unsafe impl ::windows::core::Abi for DIB_USAGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DIB_USAGE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3046,6 +3090,7 @@ impl ::core::default::Default for DISPLAYCONFIG_COLOR_ENCODING {
 }
 unsafe impl ::windows::core::Abi for DISPLAYCONFIG_COLOR_ENCODING {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DISPLAYCONFIG_COLOR_ENCODING {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3114,6 +3159,7 @@ impl ::core::fmt::Debug for DISPLAY_DEVICEA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DISPLAY_DEVICEA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DISPLAY_DEVICEA {
@@ -3152,6 +3198,7 @@ impl ::core::fmt::Debug for DISPLAY_DEVICEW {
 }
 unsafe impl ::windows::core::Abi for DISPLAY_DEVICEW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DISPLAY_DEVICEW {
     fn eq(&self, other: &Self) -> bool {
@@ -3227,6 +3274,7 @@ impl ::core::default::Default for DISP_CHANGE {
 }
 unsafe impl ::windows::core::Abi for DISP_CHANGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DISP_CHANGE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3739,6 +3787,7 @@ impl ::core::default::Default for DRAWEDGE_FLAGS {
 }
 unsafe impl ::windows::core::Abi for DRAWEDGE_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DRAWEDGE_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3819,6 +3868,7 @@ impl ::core::default::Default for DRAWSTATE_FLAGS {
 }
 unsafe impl ::windows::core::Abi for DRAWSTATE_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DRAWSTATE_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3875,6 +3925,7 @@ impl ::core::fmt::Debug for DRAWTEXTPARAMS {
 }
 unsafe impl ::windows::core::Abi for DRAWTEXTPARAMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DRAWTEXTPARAMS {
     fn eq(&self, other: &Self) -> bool {
@@ -3918,6 +3969,7 @@ impl ::core::default::Default for DRAW_CAPTION_FLAGS {
 }
 unsafe impl ::windows::core::Abi for DRAW_CAPTION_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DRAW_CAPTION_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4007,6 +4059,7 @@ impl ::core::default::Default for DRAW_EDGE_FLAGS {
 }
 unsafe impl ::windows::core::Abi for DRAW_EDGE_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DRAW_EDGE_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4106,6 +4159,7 @@ impl ::core::default::Default for DRAW_TEXT_FORMAT {
 }
 unsafe impl ::windows::core::Abi for DRAW_TEXT_FORMAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DRAW_TEXT_FORMAT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4426,6 +4480,7 @@ impl ::core::default::Default for EMBEDDED_FONT_PRIV_STATUS {
 }
 unsafe impl ::windows::core::Abi for EMBEDDED_FONT_PRIV_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EMBEDDED_FONT_PRIV_STATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4453,6 +4508,7 @@ impl ::core::default::Default for EMBED_FONT_CHARSET {
 }
 unsafe impl ::windows::core::Abi for EMBED_FONT_CHARSET {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EMBED_FONT_CHARSET {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4478,6 +4534,7 @@ impl ::core::fmt::Debug for EMR {
 }
 unsafe impl ::windows::core::Abi for EMR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EMR {
     fn eq(&self, other: &Self) -> bool {
@@ -4549,6 +4606,7 @@ impl ::core::fmt::Debug for EMRALPHABLEND {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for EMRALPHABLEND {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for EMRALPHABLEND {
@@ -4591,6 +4649,7 @@ impl ::core::fmt::Debug for EMRANGLEARC {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for EMRANGLEARC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for EMRANGLEARC {
@@ -4632,6 +4691,7 @@ impl ::core::fmt::Debug for EMRARC {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for EMRARC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for EMRARC {
@@ -4702,6 +4762,7 @@ impl ::core::fmt::Debug for EMRBITBLT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for EMRBITBLT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for EMRBITBLT {
@@ -4737,6 +4798,7 @@ impl ::core::fmt::Debug for EMRCREATEBRUSHINDIRECT {
 }
 unsafe impl ::windows::core::Abi for EMRCREATEBRUSHINDIRECT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EMRCREATEBRUSHINDIRECT {
     fn eq(&self, other: &Self) -> bool {
@@ -4773,6 +4835,7 @@ impl ::core::fmt::Debug for EMRCREATEDIBPATTERNBRUSHPT {
 }
 unsafe impl ::windows::core::Abi for EMRCREATEDIBPATTERNBRUSHPT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EMRCREATEDIBPATTERNBRUSHPT {
     fn eq(&self, other: &Self) -> bool {
@@ -4809,6 +4872,7 @@ impl ::core::fmt::Debug for EMRCREATEMONOBRUSH {
 }
 unsafe impl ::windows::core::Abi for EMRCREATEMONOBRUSH {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EMRCREATEMONOBRUSH {
     fn eq(&self, other: &Self) -> bool {
@@ -4841,6 +4905,7 @@ impl ::core::fmt::Debug for EMRCREATEPALETTE {
 }
 unsafe impl ::windows::core::Abi for EMRCREATEPALETTE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EMRCREATEPALETTE {
     fn eq(&self, other: &Self) -> bool {
@@ -4878,6 +4943,7 @@ impl ::core::fmt::Debug for EMRCREATEPEN {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for EMRCREATEPEN {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for EMRCREATEPEN {
@@ -4917,6 +4983,7 @@ impl ::core::fmt::Debug for EMRELLIPSE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for EMRELLIPSE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for EMRELLIPSE {
@@ -4953,6 +5020,7 @@ impl ::core::fmt::Debug for EMREOF {
 }
 unsafe impl ::windows::core::Abi for EMREOF {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EMREOF {
     fn eq(&self, other: &Self) -> bool {
@@ -4989,6 +5057,7 @@ impl ::core::fmt::Debug for EMREXCLUDECLIPRECT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for EMREXCLUDECLIPRECT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for EMREXCLUDECLIPRECT {
@@ -5024,6 +5093,7 @@ impl ::core::fmt::Debug for EMREXTCREATEFONTINDIRECTW {
 }
 unsafe impl ::windows::core::Abi for EMREXTCREATEFONTINDIRECTW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EMREXTCREATEFONTINDIRECTW {
     fn eq(&self, other: &Self) -> bool {
@@ -5060,6 +5130,7 @@ impl ::core::fmt::Debug for EMREXTCREATEPEN {
 }
 unsafe impl ::windows::core::Abi for EMREXTCREATEPEN {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EMREXTCREATEPEN {
     fn eq(&self, other: &Self) -> bool {
@@ -5093,6 +5164,7 @@ impl ::core::fmt::Debug for EMREXTESCAPE {
 }
 unsafe impl ::windows::core::Abi for EMREXTESCAPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EMREXTESCAPE {
     fn eq(&self, other: &Self) -> bool {
@@ -5131,6 +5203,7 @@ impl ::core::fmt::Debug for EMREXTFLOODFILL {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for EMREXTFLOODFILL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for EMREXTFLOODFILL {
@@ -5167,6 +5240,7 @@ impl ::core::fmt::Debug for EMREXTSELECTCLIPRGN {
 }
 unsafe impl ::windows::core::Abi for EMREXTSELECTCLIPRGN {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EMREXTSELECTCLIPRGN {
     fn eq(&self, other: &Self) -> bool {
@@ -5207,6 +5281,7 @@ impl ::core::fmt::Debug for EMREXTTEXTOUTA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for EMREXTTEXTOUTA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for EMREXTTEXTOUTA {
@@ -5246,6 +5321,7 @@ impl ::core::fmt::Debug for EMRFILLPATH {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for EMRFILLPATH {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for EMRFILLPATH {
@@ -5288,6 +5364,7 @@ impl ::core::fmt::Debug for EMRFILLRGN {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for EMRFILLRGN {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for EMRFILLRGN {
@@ -5324,6 +5401,7 @@ impl ::core::fmt::Debug for EMRFORMAT {
 }
 unsafe impl ::windows::core::Abi for EMRFORMAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EMRFORMAT {
     fn eq(&self, other: &Self) -> bool {
@@ -5364,6 +5442,7 @@ impl ::core::fmt::Debug for EMRFRAMERGN {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for EMRFRAMERGN {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for EMRFRAMERGN {
@@ -5399,6 +5478,7 @@ impl ::core::fmt::Debug for EMRGDICOMMENT {
 }
 unsafe impl ::windows::core::Abi for EMRGDICOMMENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EMRGDICOMMENT {
     fn eq(&self, other: &Self) -> bool {
@@ -5437,6 +5517,7 @@ impl ::core::fmt::Debug for EMRGLSBOUNDEDRECORD {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for EMRGLSBOUNDEDRECORD {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for EMRGLSBOUNDEDRECORD {
@@ -5472,6 +5553,7 @@ impl ::core::fmt::Debug for EMRGLSRECORD {
 }
 unsafe impl ::windows::core::Abi for EMRGLSRECORD {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EMRGLSRECORD {
     fn eq(&self, other: &Self) -> bool {
@@ -5512,6 +5594,7 @@ impl ::core::fmt::Debug for EMRGRADIENTFILL {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for EMRGRADIENTFILL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for EMRGRADIENTFILL {
@@ -5553,6 +5636,7 @@ impl ::core::fmt::Debug for EMRINVERTRGN {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for EMRINVERTRGN {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for EMRINVERTRGN {
@@ -5592,6 +5676,7 @@ impl ::core::fmt::Debug for EMRLINETO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for EMRLINETO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for EMRLINETO {
@@ -5676,6 +5761,7 @@ impl ::core::fmt::Debug for EMRMASKBLT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for EMRMASKBLT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for EMRMASKBLT {
@@ -5711,6 +5797,7 @@ impl ::core::fmt::Debug for EMRMODIFYWORLDTRANSFORM {
 }
 unsafe impl ::windows::core::Abi for EMRMODIFYWORLDTRANSFORM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EMRMODIFYWORLDTRANSFORM {
     fn eq(&self, other: &Self) -> bool {
@@ -5745,6 +5832,7 @@ impl ::core::fmt::Debug for EMRNAMEDESCAPE {
 }
 unsafe impl ::windows::core::Abi for EMRNAMEDESCAPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EMRNAMEDESCAPE {
     fn eq(&self, other: &Self) -> bool {
@@ -5781,6 +5869,7 @@ impl ::core::fmt::Debug for EMROFFSETCLIPRGN {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for EMROFFSETCLIPRGN {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for EMROFFSETCLIPRGN {
@@ -5861,6 +5950,7 @@ impl ::core::fmt::Debug for EMRPLGBLT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for EMRPLGBLT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for EMRPLGBLT {
@@ -5903,6 +5993,7 @@ impl ::core::fmt::Debug for EMRPOLYDRAW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for EMRPOLYDRAW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for EMRPOLYDRAW {
@@ -5945,6 +6036,7 @@ impl ::core::fmt::Debug for EMRPOLYDRAW16 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for EMRPOLYDRAW16 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for EMRPOLYDRAW16 {
@@ -5986,6 +6078,7 @@ impl ::core::fmt::Debug for EMRPOLYLINE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for EMRPOLYLINE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for EMRPOLYLINE {
@@ -6027,6 +6120,7 @@ impl ::core::fmt::Debug for EMRPOLYLINE16 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for EMRPOLYLINE16 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for EMRPOLYLINE16 {
@@ -6070,6 +6164,7 @@ impl ::core::fmt::Debug for EMRPOLYPOLYLINE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for EMRPOLYPOLYLINE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for EMRPOLYPOLYLINE {
@@ -6113,6 +6208,7 @@ impl ::core::fmt::Debug for EMRPOLYPOLYLINE16 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for EMRPOLYPOLYLINE16 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for EMRPOLYPOLYLINE16 {
@@ -6157,6 +6253,7 @@ impl ::core::fmt::Debug for EMRPOLYTEXTOUTA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for EMRPOLYTEXTOUTA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for EMRPOLYTEXTOUTA {
@@ -6192,6 +6289,7 @@ impl ::core::fmt::Debug for EMRRESIZEPALETTE {
 }
 unsafe impl ::windows::core::Abi for EMRRESIZEPALETTE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EMRRESIZEPALETTE {
     fn eq(&self, other: &Self) -> bool {
@@ -6223,6 +6321,7 @@ impl ::core::fmt::Debug for EMRRESTOREDC {
 }
 unsafe impl ::windows::core::Abi for EMRRESTOREDC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EMRRESTOREDC {
     fn eq(&self, other: &Self) -> bool {
@@ -6260,6 +6359,7 @@ impl ::core::fmt::Debug for EMRROUNDRECT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for EMRROUNDRECT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for EMRROUNDRECT {
@@ -6297,6 +6397,7 @@ impl ::core::fmt::Debug for EMRSCALEVIEWPORTEXTEX {
 }
 unsafe impl ::windows::core::Abi for EMRSCALEVIEWPORTEXTEX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EMRSCALEVIEWPORTEXTEX {
     fn eq(&self, other: &Self) -> bool {
@@ -6328,6 +6429,7 @@ impl ::core::fmt::Debug for EMRSELECTCLIPPATH {
 }
 unsafe impl ::windows::core::Abi for EMRSELECTCLIPPATH {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EMRSELECTCLIPPATH {
     fn eq(&self, other: &Self) -> bool {
@@ -6359,6 +6461,7 @@ impl ::core::fmt::Debug for EMRSELECTOBJECT {
 }
 unsafe impl ::windows::core::Abi for EMRSELECTOBJECT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EMRSELECTOBJECT {
     fn eq(&self, other: &Self) -> bool {
@@ -6390,6 +6493,7 @@ impl ::core::fmt::Debug for EMRSELECTPALETTE {
 }
 unsafe impl ::windows::core::Abi for EMRSELECTPALETTE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EMRSELECTPALETTE {
     fn eq(&self, other: &Self) -> bool {
@@ -6421,6 +6525,7 @@ impl ::core::fmt::Debug for EMRSETARCDIRECTION {
 }
 unsafe impl ::windows::core::Abi for EMRSETARCDIRECTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EMRSETARCDIRECTION {
     fn eq(&self, other: &Self) -> bool {
@@ -6452,6 +6557,7 @@ impl ::core::fmt::Debug for EMRSETCOLORADJUSTMENT {
 }
 unsafe impl ::windows::core::Abi for EMRSETCOLORADJUSTMENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EMRSETCOLORADJUSTMENT {
     fn eq(&self, other: &Self) -> bool {
@@ -6483,6 +6589,7 @@ impl ::core::fmt::Debug for EMRSETCOLORSPACE {
 }
 unsafe impl ::windows::core::Abi for EMRSETCOLORSPACE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EMRSETCOLORSPACE {
     fn eq(&self, other: &Self) -> bool {
@@ -6548,6 +6655,7 @@ impl ::core::fmt::Debug for EMRSETDIBITSTODEVICE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for EMRSETDIBITSTODEVICE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for EMRSETDIBITSTODEVICE {
@@ -6585,6 +6693,7 @@ impl ::core::fmt::Debug for EMRSETICMPROFILE {
 }
 unsafe impl ::windows::core::Abi for EMRSETICMPROFILE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EMRSETICMPROFILE {
     fn eq(&self, other: &Self) -> bool {
@@ -6616,6 +6725,7 @@ impl ::core::fmt::Debug for EMRSETMAPPERFLAGS {
 }
 unsafe impl ::windows::core::Abi for EMRSETMAPPERFLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EMRSETMAPPERFLAGS {
     fn eq(&self, other: &Self) -> bool {
@@ -6647,6 +6757,7 @@ impl ::core::fmt::Debug for EMRSETMITERLIMIT {
 }
 unsafe impl ::windows::core::Abi for EMRSETMITERLIMIT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EMRSETMITERLIMIT {
     fn eq(&self, other: &Self) -> bool {
@@ -6681,6 +6792,7 @@ impl ::core::fmt::Debug for EMRSETPALETTEENTRIES {
 }
 unsafe impl ::windows::core::Abi for EMRSETPALETTEENTRIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EMRSETPALETTEENTRIES {
     fn eq(&self, other: &Self) -> bool {
@@ -6718,6 +6830,7 @@ impl ::core::fmt::Debug for EMRSETPIXELV {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for EMRSETPIXELV {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for EMRSETPIXELV {
@@ -6752,6 +6865,7 @@ impl ::core::fmt::Debug for EMRSETTEXTCOLOR {
 }
 unsafe impl ::windows::core::Abi for EMRSETTEXTCOLOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EMRSETTEXTCOLOR {
     fn eq(&self, other: &Self) -> bool {
@@ -6788,6 +6902,7 @@ impl ::core::fmt::Debug for EMRSETVIEWPORTEXTEX {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for EMRSETVIEWPORTEXTEX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for EMRSETVIEWPORTEXTEX {
@@ -6827,6 +6942,7 @@ impl ::core::fmt::Debug for EMRSETVIEWPORTORGEX {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for EMRSETVIEWPORTORGEX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for EMRSETVIEWPORTORGEX {
@@ -6861,6 +6977,7 @@ impl ::core::fmt::Debug for EMRSETWORLDTRANSFORM {
 }
 unsafe impl ::windows::core::Abi for EMRSETWORLDTRANSFORM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EMRSETWORLDTRANSFORM {
     fn eq(&self, other: &Self) -> bool {
@@ -6932,6 +7049,7 @@ impl ::core::fmt::Debug for EMRSTRETCHBLT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for EMRSTRETCHBLT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for EMRSTRETCHBLT {
@@ -7002,6 +7120,7 @@ impl ::core::fmt::Debug for EMRSTRETCHDIBITS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for EMRSTRETCHDIBITS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for EMRSTRETCHDIBITS {
@@ -7045,6 +7164,7 @@ impl ::core::fmt::Debug for EMRTEXT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for EMRTEXT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for EMRTEXT {
@@ -7119,6 +7239,7 @@ impl ::core::fmt::Debug for EMRTRANSPARENTBLT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for EMRTRANSPARENTBLT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for EMRTRANSPARENTBLT {
@@ -7453,6 +7574,7 @@ impl ::core::fmt::Debug for ENHMETAHEADER {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for ENHMETAHEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for ENHMETAHEADER {
@@ -7488,6 +7610,7 @@ impl ::core::fmt::Debug for ENHMETARECORD {
 }
 unsafe impl ::windows::core::Abi for ENHMETARECORD {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ENHMETARECORD {
     fn eq(&self, other: &Self) -> bool {
@@ -7532,6 +7655,7 @@ impl ::core::fmt::Debug for ENUMLOGFONTA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for ENUMLOGFONTA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for ENUMLOGFONTA {
@@ -7573,6 +7697,7 @@ impl ::core::fmt::Debug for ENUMLOGFONTEXA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for ENUMLOGFONTEXA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for ENUMLOGFONTEXA {
@@ -7612,6 +7737,7 @@ impl ::core::fmt::Debug for ENUMLOGFONTEXDVA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for ENUMLOGFONTEXDVA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for ENUMLOGFONTEXDVA {
@@ -7646,6 +7772,7 @@ impl ::core::fmt::Debug for ENUMLOGFONTEXDVW {
 }
 unsafe impl ::windows::core::Abi for ENUMLOGFONTEXDVW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ENUMLOGFONTEXDVW {
     fn eq(&self, other: &Self) -> bool {
@@ -7679,6 +7806,7 @@ impl ::core::fmt::Debug for ENUMLOGFONTEXW {
 }
 unsafe impl ::windows::core::Abi for ENUMLOGFONTEXW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ENUMLOGFONTEXW {
     fn eq(&self, other: &Self) -> bool {
@@ -7711,6 +7839,7 @@ impl ::core::fmt::Debug for ENUMLOGFONTW {
 }
 unsafe impl ::windows::core::Abi for ENUMLOGFONTW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ENUMLOGFONTW {
     fn eq(&self, other: &Self) -> bool {
@@ -7748,6 +7877,7 @@ impl ::core::default::Default for ENUM_DISPLAY_SETTINGS_MODE {
 }
 unsafe impl ::windows::core::Abi for ENUM_DISPLAY_SETTINGS_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ENUM_DISPLAY_SETTINGS_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7939,6 +8069,7 @@ impl ::core::default::Default for ETO_OPTIONS {
 }
 unsafe impl ::windows::core::Abi for ETO_OPTIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ETO_OPTIONS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8005,6 +8136,7 @@ impl ::core::fmt::Debug for EXTLOGFONTA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for EXTLOGFONTA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for EXTLOGFONTA {
@@ -8047,6 +8179,7 @@ impl ::core::fmt::Debug for EXTLOGFONTW {
 }
 unsafe impl ::windows::core::Abi for EXTLOGFONTW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EXTLOGFONTW {
     fn eq(&self, other: &Self) -> bool {
@@ -8083,6 +8216,7 @@ impl ::core::fmt::Debug for EXTLOGPEN {
 }
 unsafe impl ::windows::core::Abi for EXTLOGPEN {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EXTLOGPEN {
     fn eq(&self, other: &Self) -> bool {
@@ -8119,6 +8253,7 @@ impl ::core::fmt::Debug for EXTLOGPEN32 {
 }
 unsafe impl ::windows::core::Abi for EXTLOGPEN32 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EXTLOGPEN32 {
     fn eq(&self, other: &Self) -> bool {
@@ -8156,6 +8291,7 @@ impl ::core::default::Default for EXT_FLOOD_FILL_TYPE {
 }
 unsafe impl ::windows::core::Abi for EXT_FLOOD_FILL_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EXT_FLOOD_FILL_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8745,6 +8881,7 @@ impl ::core::fmt::Debug for FIXED {
 }
 unsafe impl ::windows::core::Abi for FIXED {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for FIXED {
     fn eq(&self, other: &Self) -> bool {
@@ -8806,6 +8943,7 @@ impl ::core::default::Default for FONT_CLIP_PRECISION {
 }
 unsafe impl ::windows::core::Abi for FONT_CLIP_PRECISION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FONT_CLIP_PRECISION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8867,6 +9005,7 @@ impl ::core::default::Default for FONT_LICENSE_PRIVS {
 }
 unsafe impl ::windows::core::Abi for FONT_LICENSE_PRIVS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FONT_LICENSE_PRIVS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8910,6 +9049,7 @@ impl ::core::default::Default for FONT_OUTPUT_PRECISION {
 }
 unsafe impl ::windows::core::Abi for FONT_OUTPUT_PRECISION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FONT_OUTPUT_PRECISION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8945,6 +9085,7 @@ impl ::core::default::Default for FONT_PITCH_AND_FAMILY {
 }
 unsafe impl ::windows::core::Abi for FONT_PITCH_AND_FAMILY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FONT_PITCH_AND_FAMILY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8980,6 +9121,7 @@ impl ::core::default::Default for FONT_QUALITY {
 }
 unsafe impl ::windows::core::Abi for FONT_QUALITY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FONT_QUALITY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9007,6 +9149,7 @@ impl ::core::default::Default for FONT_RESOURCE_CHARACTERISTICS {
 }
 unsafe impl ::windows::core::Abi for FONT_RESOURCE_CHARACTERISTICS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FONT_RESOURCE_CHARACTERISTICS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9259,6 +9402,7 @@ impl ::core::fmt::Debug for GCP_RESULTSA {
 }
 unsafe impl ::windows::core::Abi for GCP_RESULTSA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for GCP_RESULTSA {
     fn eq(&self, other: &Self) -> bool {
@@ -9297,6 +9441,7 @@ impl ::core::fmt::Debug for GCP_RESULTSW {
 }
 unsafe impl ::windows::core::Abi for GCP_RESULTSW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for GCP_RESULTSW {
     fn eq(&self, other: &Self) -> bool {
@@ -9416,6 +9561,7 @@ impl ::core::default::Default for GET_CHARACTER_PLACEMENT_FLAGS {
 }
 unsafe impl ::windows::core::Abi for GET_CHARACTER_PLACEMENT_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GET_CHARACTER_PLACEMENT_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9489,6 +9635,7 @@ impl ::core::default::Default for GET_DCX_FLAGS {
 }
 unsafe impl ::windows::core::Abi for GET_DCX_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GET_DCX_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9620,6 +9767,7 @@ impl ::core::default::Default for GET_DEVICE_CAPS_INDEX {
 }
 unsafe impl ::windows::core::Abi for GET_DEVICE_CAPS_INDEX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GET_DEVICE_CAPS_INDEX {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9661,6 +9809,7 @@ impl ::core::default::Default for GET_GLYPH_OUTLINE_FORMAT {
 }
 unsafe impl ::windows::core::Abi for GET_GLYPH_OUTLINE_FORMAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GET_GLYPH_OUTLINE_FORMAT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9726,6 +9875,7 @@ impl ::core::default::Default for GET_STOCK_OBJECT_FLAGS {
 }
 unsafe impl ::windows::core::Abi for GET_STOCK_OBJECT_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GET_STOCK_OBJECT_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9761,6 +9911,7 @@ impl ::core::fmt::Debug for GLYPHMETRICS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for GLYPHMETRICS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for GLYPHMETRICS {
@@ -9798,6 +9949,7 @@ impl ::core::fmt::Debug for GLYPHSET {
 }
 unsafe impl ::windows::core::Abi for GLYPHSET {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for GLYPHSET {
     fn eq(&self, other: &Self) -> bool {
@@ -9838,6 +9990,7 @@ impl ::core::default::Default for GRADIENT_FILL {
 }
 unsafe impl ::windows::core::Abi for GRADIENT_FILL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GRADIENT_FILL {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9865,6 +10018,7 @@ impl ::core::fmt::Debug for GRADIENT_RECT {
 }
 unsafe impl ::windows::core::Abi for GRADIENT_RECT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for GRADIENT_RECT {
     fn eq(&self, other: &Self) -> bool {
@@ -9897,6 +10051,7 @@ impl ::core::fmt::Debug for GRADIENT_TRIANGLE {
 }
 unsafe impl ::windows::core::Abi for GRADIENT_TRIANGLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for GRADIENT_TRIANGLE {
     fn eq(&self, other: &Self) -> bool {
@@ -9930,6 +10085,7 @@ impl ::core::default::Default for GRAPHICS_MODE {
 }
 unsafe impl ::windows::core::Abi for GRAPHICS_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GRAPHICS_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11703,6 +11859,7 @@ impl ::core::fmt::Debug for HANDLETABLE {
 }
 unsafe impl ::windows::core::Abi for HANDLETABLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HANDLETABLE {
     fn eq(&self, other: &Self) -> bool {
@@ -11748,6 +11905,7 @@ impl ::core::default::Default for HATCH_BRUSH_STYLE {
 }
 unsafe impl ::windows::core::Abi for HATCH_BRUSH_STYLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HATCH_BRUSH_STYLE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11780,6 +11938,7 @@ impl ::core::fmt::Debug for HBITMAP {
 }
 unsafe impl ::windows::core::Abi for HBITMAP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl<'a> ::windows::core::IntoParam<'a, HGDIOBJ> for HBITMAP {
     fn into_param(self) -> ::windows::core::Param<'a, HGDIOBJ> {
@@ -11812,6 +11971,7 @@ impl ::core::fmt::Debug for HBRUSH {
 }
 unsafe impl ::windows::core::Abi for HBRUSH {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl<'a> ::windows::core::IntoParam<'a, HGDIOBJ> for HBRUSH {
     fn into_param(self) -> ::windows::core::Param<'a, HGDIOBJ> {
@@ -11844,6 +12004,7 @@ impl ::core::fmt::Debug for HDC {
 }
 unsafe impl ::windows::core::Abi for HDC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[doc = "*Required features: `\"Win32_Graphics_Gdi\"`*"]
 #[repr(transparent)]
@@ -11878,6 +12039,7 @@ impl ::core::default::Default for HDC_MAP_MODE {
 }
 unsafe impl ::windows::core::Abi for HDC_MAP_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HDC_MAP_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11912,6 +12074,7 @@ impl ::core::fmt::Debug for HENHMETAFILE {
 }
 unsafe impl ::windows::core::Abi for HENHMETAFILE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[repr(transparent)]
 #[derive(:: core :: cmp :: PartialEq, :: core :: cmp :: Eq)]
@@ -11939,6 +12102,7 @@ impl ::core::fmt::Debug for HFONT {
 }
 unsafe impl ::windows::core::Abi for HFONT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl<'a> ::windows::core::IntoParam<'a, HGDIOBJ> for HFONT {
     fn into_param(self) -> ::windows::core::Param<'a, HGDIOBJ> {
@@ -11971,6 +12135,7 @@ impl ::core::fmt::Debug for HGDIOBJ {
 }
 unsafe impl ::windows::core::Abi for HGDIOBJ {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[repr(transparent)]
 #[derive(:: core :: cmp :: PartialEq, :: core :: cmp :: Eq)]
@@ -11998,6 +12163,7 @@ impl ::core::fmt::Debug for HMETAFILE {
 }
 unsafe impl ::windows::core::Abi for HMETAFILE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[repr(transparent)]
 #[derive(:: core :: cmp :: PartialEq, :: core :: cmp :: Eq)]
@@ -12025,6 +12191,7 @@ impl ::core::fmt::Debug for HMONITOR {
 }
 unsafe impl ::windows::core::Abi for HMONITOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[repr(transparent)]
 #[derive(:: core :: cmp :: PartialEq, :: core :: cmp :: Eq)]
@@ -12052,6 +12219,7 @@ impl ::core::fmt::Debug for HPALETTE {
 }
 unsafe impl ::windows::core::Abi for HPALETTE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl<'a> ::windows::core::IntoParam<'a, HGDIOBJ> for HPALETTE {
     fn into_param(self) -> ::windows::core::Param<'a, HGDIOBJ> {
@@ -12084,6 +12252,7 @@ impl ::core::fmt::Debug for HPEN {
 }
 unsafe impl ::windows::core::Abi for HPEN {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl<'a> ::windows::core::IntoParam<'a, HGDIOBJ> for HPEN {
     fn into_param(self) -> ::windows::core::Param<'a, HGDIOBJ> {
@@ -12116,6 +12285,7 @@ impl ::core::fmt::Debug for HRGN {
 }
 unsafe impl ::windows::core::Abi for HRGN {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl<'a> ::windows::core::IntoParam<'a, HGDIOBJ> for HRGN {
     fn into_param(self) -> ::windows::core::Param<'a, HGDIOBJ> {
@@ -12150,6 +12320,7 @@ impl ::core::fmt::Debug for HdcMetdataEnhFileHandle {
 }
 unsafe impl ::windows::core::Abi for HdcMetdataEnhFileHandle {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[repr(transparent)]
 #[derive(:: core :: cmp :: PartialEq, :: core :: cmp :: Eq)]
@@ -12177,6 +12348,7 @@ impl ::core::fmt::Debug for HdcMetdataFileHandle {
 }
 unsafe impl ::windows::core::Abi for HdcMetdataFileHandle {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[doc = "*Required features: `\"Win32_Graphics_Gdi\"`*"]
 pub const ILLUMINANT_A: u32 = 1u32;
@@ -12347,6 +12519,7 @@ impl ::core::fmt::Debug for KERNINGPAIR {
 }
 unsafe impl ::windows::core::Abi for KERNINGPAIR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KERNINGPAIR {
     fn eq(&self, other: &Self) -> bool {
@@ -12416,6 +12589,7 @@ impl ::core::fmt::Debug for LOGBRUSH {
 }
 unsafe impl ::windows::core::Abi for LOGBRUSH {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for LOGBRUSH {
     fn eq(&self, other: &Self) -> bool {
@@ -12448,6 +12622,7 @@ impl ::core::fmt::Debug for LOGBRUSH32 {
 }
 unsafe impl ::windows::core::Abi for LOGBRUSH32 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for LOGBRUSH32 {
     fn eq(&self, other: &Self) -> bool {
@@ -12511,6 +12686,7 @@ impl ::core::fmt::Debug for LOGFONTA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for LOGFONTA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for LOGFONTA {
@@ -12572,6 +12748,7 @@ impl ::core::fmt::Debug for LOGFONTW {
 }
 unsafe impl ::windows::core::Abi for LOGFONTW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for LOGFONTW {
     fn eq(&self, other: &Self) -> bool {
@@ -12604,6 +12781,7 @@ impl ::core::fmt::Debug for LOGPALETTE {
 }
 unsafe impl ::windows::core::Abi for LOGPALETTE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for LOGPALETTE {
     fn eq(&self, other: &Self) -> bool {
@@ -12641,6 +12819,7 @@ impl ::core::fmt::Debug for LOGPEN {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for LOGPEN {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for LOGPEN {
@@ -12799,6 +12978,7 @@ impl ::core::fmt::Debug for MAT2 {
 }
 unsafe impl ::windows::core::Abi for MAT2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MAT2 {
     fn eq(&self, other: &Self) -> bool {
@@ -12834,6 +13014,7 @@ impl ::core::clone::Clone for METAHEADER {
 }
 unsafe impl ::windows::core::Abi for METAHEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for METAHEADER {
     fn eq(&self, other: &Self) -> bool {
@@ -12866,6 +13047,7 @@ impl ::core::fmt::Debug for METARECORD {
 }
 unsafe impl ::windows::core::Abi for METARECORD {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for METARECORD {
     fn eq(&self, other: &Self) -> bool {
@@ -13052,6 +13234,7 @@ impl ::core::default::Default for MODIFY_WORLD_TRANSFORM_MODE {
 }
 unsafe impl ::windows::core::Abi for MODIFY_WORLD_TRANSFORM_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MODIFY_WORLD_TRANSFORM_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13087,6 +13270,7 @@ impl ::core::fmt::Debug for MONITORINFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MONITORINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MONITORINFO {
@@ -13126,6 +13310,7 @@ impl ::core::fmt::Debug for MONITORINFOEXA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MONITORINFOEXA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MONITORINFOEXA {
@@ -13165,6 +13350,7 @@ impl ::core::fmt::Debug for MONITORINFOEXW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MONITORINFOEXW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MONITORINFOEXW {
@@ -13203,6 +13389,7 @@ impl ::core::default::Default for MONITOR_FROM_FLAGS {
 }
 unsafe impl ::windows::core::Abi for MONITOR_FROM_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MONITOR_FROM_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13413,6 +13600,7 @@ impl ::core::fmt::Debug for NEWTEXTMETRICA {
 }
 unsafe impl ::windows::core::Abi for NEWTEXTMETRICA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NEWTEXTMETRICA {
     fn eq(&self, other: &Self) -> bool {
@@ -13491,6 +13679,7 @@ impl ::core::fmt::Debug for NEWTEXTMETRICW {
 }
 unsafe impl ::windows::core::Abi for NEWTEXTMETRICW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NEWTEXTMETRICW {
     fn eq(&self, other: &Self) -> bool {
@@ -13572,6 +13761,7 @@ impl ::core::default::Default for OBJ_TYPE {
 }
 unsafe impl ::windows::core::Abi for OBJ_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for OBJ_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13669,6 +13859,7 @@ impl ::core::fmt::Debug for OUTLINETEXTMETRICA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for OUTLINETEXTMETRICA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for OUTLINETEXTMETRICA {
@@ -13771,6 +13962,7 @@ impl ::core::fmt::Debug for OUTLINETEXTMETRICW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for OUTLINETEXTMETRICW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for OUTLINETEXTMETRICW {
@@ -13889,6 +14081,7 @@ impl ::core::fmt::Debug for PAINTSTRUCT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PAINTSTRUCT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for PAINTSTRUCT {
@@ -13925,6 +14118,7 @@ impl ::core::fmt::Debug for PALETTEENTRY {
 }
 unsafe impl ::windows::core::Abi for PALETTEENTRY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PALETTEENTRY {
     fn eq(&self, other: &Self) -> bool {
@@ -13964,6 +14158,7 @@ impl ::core::fmt::Debug for PANOSE {
 }
 unsafe impl ::windows::core::Abi for PANOSE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PANOSE {
     fn eq(&self, other: &Self) -> bool {
@@ -14244,6 +14439,7 @@ impl ::core::fmt::Debug for PELARRAY {
 }
 unsafe impl ::windows::core::Abi for PELARRAY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PELARRAY {
     fn eq(&self, other: &Self) -> bool {
@@ -14315,6 +14511,7 @@ impl ::core::default::Default for PEN_STYLE {
 }
 unsafe impl ::windows::core::Abi for PEN_STYLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PEN_STYLE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14368,6 +14565,7 @@ impl ::core::fmt::Debug for POINTFX {
 }
 unsafe impl ::windows::core::Abi for POINTFX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for POINTFX {
     fn eq(&self, other: &Self) -> bool {
@@ -14411,6 +14609,7 @@ impl ::core::fmt::Debug for POLYTEXTA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for POLYTEXTA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for POLYTEXTA {
@@ -14455,6 +14654,7 @@ impl ::core::fmt::Debug for POLYTEXTW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for POLYTEXTW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for POLYTEXTW {
@@ -14933,6 +15133,7 @@ impl ::core::default::Default for R2_MODE {
 }
 unsafe impl ::windows::core::Abi for R2_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for R2_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14959,6 +15160,7 @@ impl ::core::fmt::Debug for RASTERIZER_STATUS {
 }
 unsafe impl ::windows::core::Abi for RASTERIZER_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RASTERIZER_STATUS {
     fn eq(&self, other: &Self) -> bool {
@@ -15050,6 +15252,7 @@ impl ::core::default::Default for REDRAW_WINDOW_FLAGS {
 }
 unsafe impl ::windows::core::Abi for REDRAW_WINDOW_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for REDRAW_WINDOW_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -15109,6 +15312,7 @@ impl ::core::fmt::Debug for RGBQUAD {
 }
 unsafe impl ::windows::core::Abi for RGBQUAD {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RGBQUAD {
     fn eq(&self, other: &Self) -> bool {
@@ -15141,6 +15345,7 @@ impl ::core::fmt::Debug for RGBTRIPLE {
 }
 unsafe impl ::windows::core::Abi for RGBTRIPLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RGBTRIPLE {
     fn eq(&self, other: &Self) -> bool {
@@ -15177,6 +15382,7 @@ impl ::core::fmt::Debug for RGNDATA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for RGNDATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for RGNDATA {
@@ -15219,6 +15425,7 @@ impl ::core::fmt::Debug for RGNDATAHEADER {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for RGNDATAHEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for RGNDATAHEADER {
@@ -15265,6 +15472,7 @@ impl ::core::default::Default for RGN_COMBINE_MODE {
 }
 unsafe impl ::windows::core::Abi for RGN_COMBINE_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RGN_COMBINE_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -15324,6 +15532,7 @@ impl ::core::default::Default for ROP_CODE {
 }
 unsafe impl ::windows::core::Abi for ROP_CODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ROP_CODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -15676,6 +15885,7 @@ impl ::core::default::Default for SET_BOUNDS_RECT_FLAGS {
 }
 unsafe impl ::windows::core::Abi for SET_BOUNDS_RECT_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SET_BOUNDS_RECT_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -15749,6 +15959,7 @@ impl ::core::default::Default for STRETCH_BLT_MODE {
 }
 unsafe impl ::windows::core::Abi for STRETCH_BLT_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for STRETCH_BLT_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -15784,6 +15995,7 @@ impl ::core::default::Default for SYSTEM_PALETTE_USE {
 }
 unsafe impl ::windows::core::Abi for SYSTEM_PALETTE_USE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SYSTEM_PALETTE_USE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -16663,6 +16875,7 @@ impl ::core::fmt::Debug for TEXTMETRICA {
 }
 unsafe impl ::windows::core::Abi for TEXTMETRICA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TEXTMETRICA {
     fn eq(&self, other: &Self) -> bool {
@@ -16733,6 +16946,7 @@ impl ::core::fmt::Debug for TEXTMETRICW {
 }
 unsafe impl ::windows::core::Abi for TEXTMETRICW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TEXTMETRICW {
     fn eq(&self, other: &Self) -> bool {
@@ -16794,6 +17008,7 @@ impl ::core::default::Default for TEXT_ALIGN_OPTIONS {
 }
 unsafe impl ::windows::core::Abi for TEXT_ALIGN_OPTIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TEXT_ALIGN_OPTIONS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -16835,6 +17050,7 @@ impl ::core::fmt::Debug for TRIVERTEX {
 }
 unsafe impl ::windows::core::Abi for TRIVERTEX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TRIVERTEX {
     fn eq(&self, other: &Self) -> bool {
@@ -16900,6 +17116,7 @@ impl ::core::fmt::Debug for TTEMBEDINFO {
 }
 unsafe impl ::windows::core::Abi for TTEMBEDINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TTEMBEDINFO {
     fn eq(&self, other: &Self) -> bool {
@@ -16941,6 +17158,7 @@ impl ::core::default::Default for TTEMBED_FLAGS {
 }
 unsafe impl ::windows::core::Abi for TTEMBED_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TTEMBED_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -17175,6 +17393,7 @@ impl ::core::fmt::Debug for TTLOADINFO {
 }
 unsafe impl ::windows::core::Abi for TTLOADINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TTLOADINFO {
     fn eq(&self, other: &Self) -> bool {
@@ -17208,6 +17427,7 @@ impl ::core::default::Default for TTLOAD_EMBEDDED_FONT_STATUS {
 }
 unsafe impl ::windows::core::Abi for TTLOAD_EMBEDDED_FONT_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TTLOAD_EMBEDDED_FONT_STATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -17283,6 +17503,7 @@ impl ::core::fmt::Debug for TTPOLYCURVE {
 }
 unsafe impl ::windows::core::Abi for TTPOLYCURVE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TTPOLYCURVE {
     fn eq(&self, other: &Self) -> bool {
@@ -17315,6 +17536,7 @@ impl ::core::fmt::Debug for TTPOLYGONHEADER {
 }
 unsafe impl ::windows::core::Abi for TTPOLYGONHEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TTPOLYGONHEADER {
     fn eq(&self, other: &Self) -> bool {
@@ -17379,6 +17601,7 @@ impl ::core::fmt::Debug for TTVALIDATIONTESTSPARAMS {
 }
 unsafe impl ::windows::core::Abi for TTVALIDATIONTESTSPARAMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TTVALIDATIONTESTSPARAMS {
     fn eq(&self, other: &Self) -> bool {
@@ -17415,6 +17638,7 @@ impl ::core::fmt::Debug for TTVALIDATIONTESTSPARAMSEX {
 }
 unsafe impl ::windows::core::Abi for TTVALIDATIONTESTSPARAMSEX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TTVALIDATIONTESTSPARAMSEX {
     fn eq(&self, other: &Self) -> bool {
@@ -17627,6 +17851,7 @@ impl ::core::fmt::Debug for WCRANGE {
 }
 unsafe impl ::windows::core::Abi for WCRANGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WCRANGE {
     fn eq(&self, other: &Self) -> bool {
@@ -17658,6 +17883,7 @@ impl ::core::fmt::Debug for WGLSWAP {
 }
 unsafe impl ::windows::core::Abi for WGLSWAP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WGLSWAP {
     fn eq(&self, other: &Self) -> bool {
@@ -17793,6 +18019,7 @@ impl ::core::fmt::Debug for XFORM {
 }
 unsafe impl ::windows::core::Abi for XFORM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for XFORM {
     fn eq(&self, other: &Self) -> bool {

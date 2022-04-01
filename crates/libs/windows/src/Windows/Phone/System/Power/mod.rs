@@ -2,6 +2,11 @@
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPowerManagerStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPowerManagerStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPowerManagerStatics {
     type Vtable = IPowerManagerStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x25de8fd0_1c5b_11e1_bddb_0800200c9a66);
@@ -23,6 +28,11 @@ pub struct IPowerManagerStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPowerManagerStatics2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPowerManagerStatics2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPowerManagerStatics2 {
     type Vtable = IPowerManagerStatics2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x596236cf_1918_4551_a466_c51aae373bf8);
@@ -98,6 +108,7 @@ impl ::core::default::Default for PowerSavingMode {
 }
 unsafe impl ::windows::core::Abi for PowerSavingMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PowerSavingMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -106,7 +117,6 @@ impl ::core::fmt::Debug for PowerSavingMode {
 }
 unsafe impl ::windows::core::RuntimeType for PowerSavingMode {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Phone.System.Power.PowerSavingMode;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }

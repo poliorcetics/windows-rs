@@ -116,6 +116,7 @@ impl ::core::default::Default for DtdProcessing {
 }
 unsafe impl ::windows::core::Abi for DtdProcessing {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DtdProcessing {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -125,6 +126,11 @@ impl ::core::fmt::Debug for DtdProcessing {
 #[doc = "*Required features: `\"Win32_Data_Xml_XmlLite\"`*"]
 #[repr(transparent)]
 pub struct IXmlReader(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXmlReader {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXmlReader {
     #[doc = "*Required features: `\"Win32_Data_Xml_XmlLite\"`*"]
     pub unsafe fn SetInput<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, pinput: Param0) -> ::windows::core::Result<()> {
@@ -248,11 +254,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IXmlR
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXmlReader {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXmlReader {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -308,6 +309,11 @@ pub struct IXmlReader_Vtbl {
 #[doc = "*Required features: `\"Win32_Data_Xml_XmlLite\"`*"]
 #[repr(transparent)]
 pub struct IXmlResolver(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXmlResolver {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXmlResolver {
     #[doc = "*Required features: `\"Win32_Data_Xml_XmlLite\"`*"]
     pub unsafe fn ResolveUri<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param1: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param2: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, pwszbaseuri: Param0, pwszpublicidentifier: Param1, pwszsystemidentifier: Param2) -> ::windows::core::Result<::windows::core::IUnknown> {
@@ -335,11 +341,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IXmlR
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXmlResolver {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXmlResolver {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -364,6 +365,11 @@ pub struct IXmlResolver_Vtbl {
 #[doc = "*Required features: `\"Win32_Data_Xml_XmlLite\"`*"]
 #[repr(transparent)]
 pub struct IXmlWriter(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXmlWriter {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXmlWriter {
     #[doc = "*Required features: `\"Win32_Data_Xml_XmlLite\"`*"]
     pub unsafe fn SetOutput<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, poutput: Param0) -> ::windows::core::Result<()> {
@@ -506,11 +512,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IXmlW
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXmlWriter {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXmlWriter {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -572,6 +573,11 @@ pub struct IXmlWriter_Vtbl {
 #[doc = "*Required features: `\"Win32_Data_Xml_XmlLite\"`*"]
 #[repr(transparent)]
 pub struct IXmlWriterLite(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXmlWriterLite {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXmlWriterLite {
     #[doc = "*Required features: `\"Win32_Data_Xml_XmlLite\"`*"]
     pub unsafe fn SetOutput<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, poutput: Param0) -> ::windows::core::Result<()> {
@@ -710,11 +716,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IXmlW
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXmlWriterLite {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXmlWriterLite {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -797,6 +798,7 @@ impl ::core::default::Default for XmlConformanceLevel {
 }
 unsafe impl ::windows::core::Abi for XmlConformanceLevel {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for XmlConformanceLevel {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -990,6 +992,7 @@ impl ::core::default::Default for XmlError {
 }
 unsafe impl ::windows::core::Abi for XmlError {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for XmlError {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1037,6 +1040,7 @@ impl ::core::default::Default for XmlNodeType {
 }
 unsafe impl ::windows::core::Abi for XmlNodeType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for XmlNodeType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1070,6 +1074,7 @@ impl ::core::default::Default for XmlReadState {
 }
 unsafe impl ::windows::core::Abi for XmlReadState {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for XmlReadState {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1111,6 +1116,7 @@ impl ::core::default::Default for XmlReaderProperty {
 }
 unsafe impl ::windows::core::Abi for XmlReaderProperty {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for XmlReaderProperty {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1142,6 +1148,7 @@ impl ::core::default::Default for XmlStandalone {
 }
 unsafe impl ::windows::core::Abi for XmlStandalone {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for XmlStandalone {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1179,6 +1186,7 @@ impl ::core::default::Default for XmlWriterProperty {
 }
 unsafe impl ::windows::core::Abi for XmlWriterProperty {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for XmlWriterProperty {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

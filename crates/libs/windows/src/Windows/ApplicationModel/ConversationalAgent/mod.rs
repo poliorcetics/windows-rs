@@ -242,11 +242,6 @@ impl ActivationSignalDetectionConfiguration {
         unsafe { (::windows::core::Interface::vtable(this).Close)(::core::mem::transmute_copy(this)).ok() }
     }
 }
-impl ::core::clone::Clone for ActivationSignalDetectionConfiguration {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ActivationSignalDetectionConfiguration {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -260,7 +255,6 @@ impl ::core::fmt::Debug for ActivationSignalDetectionConfiguration {
 }
 unsafe impl ::windows::core::RuntimeType for ActivationSignalDetectionConfiguration {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.ConversationalAgent.ActivationSignalDetectionConfiguration;{40d8be16-5217-581c-9ab2-ce9b2f2e8e00})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -361,11 +355,6 @@ impl ActivationSignalDetectionConfigurationCreationResult {
         }
     }
 }
-impl ::core::clone::Clone for ActivationSignalDetectionConfigurationCreationResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ActivationSignalDetectionConfigurationCreationResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -379,7 +368,6 @@ impl ::core::fmt::Debug for ActivationSignalDetectionConfigurationCreationResult
 }
 unsafe impl ::windows::core::RuntimeType for ActivationSignalDetectionConfigurationCreationResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.ConversationalAgent.ActivationSignalDetectionConfigurationCreationResult;{4c89bc1b-8d12-5e48-a71c-7f6bc1cd66e0})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -460,6 +448,7 @@ impl ::core::default::Default for ActivationSignalDetectionConfigurationCreation
 }
 unsafe impl ::windows::core::Abi for ActivationSignalDetectionConfigurationCreationStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ActivationSignalDetectionConfigurationCreationStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -468,7 +457,6 @@ impl ::core::fmt::Debug for ActivationSignalDetectionConfigurationCreationStatus
 }
 unsafe impl ::windows::core::RuntimeType for ActivationSignalDetectionConfigurationCreationStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.ConversationalAgent.ActivationSignalDetectionConfigurationCreationStatus;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -496,6 +484,7 @@ impl ::core::default::Default for ActivationSignalDetectionConfigurationRemovalR
 }
 unsafe impl ::windows::core::Abi for ActivationSignalDetectionConfigurationRemovalResult {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ActivationSignalDetectionConfigurationRemovalResult {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -504,7 +493,6 @@ impl ::core::fmt::Debug for ActivationSignalDetectionConfigurationRemovalResult 
 }
 unsafe impl ::windows::core::RuntimeType for ActivationSignalDetectionConfigurationRemovalResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.ConversationalAgent.ActivationSignalDetectionConfigurationRemovalResult;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -536,6 +524,7 @@ impl ::core::default::Default for ActivationSignalDetectionConfigurationSetModel
 }
 unsafe impl ::windows::core::Abi for ActivationSignalDetectionConfigurationSetModelDataResult {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ActivationSignalDetectionConfigurationSetModelDataResult {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -544,7 +533,6 @@ impl ::core::fmt::Debug for ActivationSignalDetectionConfigurationSetModelDataRe
 }
 unsafe impl ::windows::core::RuntimeType for ActivationSignalDetectionConfigurationSetModelDataResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.ConversationalAgent.ActivationSignalDetectionConfigurationSetModelDataResult;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -571,6 +559,7 @@ impl ::core::default::Default for ActivationSignalDetectionConfigurationStateCha
 }
 unsafe impl ::windows::core::Abi for ActivationSignalDetectionConfigurationStateChangeResult {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ActivationSignalDetectionConfigurationStateChangeResult {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -579,7 +568,6 @@ impl ::core::fmt::Debug for ActivationSignalDetectionConfigurationStateChangeRes
 }
 unsafe impl ::windows::core::RuntimeType for ActivationSignalDetectionConfigurationStateChangeResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.ConversationalAgent.ActivationSignalDetectionConfigurationStateChangeResult;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -614,6 +602,7 @@ impl ::core::default::Default for ActivationSignalDetectionTrainingDataFormat {
 }
 unsafe impl ::windows::core::Abi for ActivationSignalDetectionTrainingDataFormat {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ActivationSignalDetectionTrainingDataFormat {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -622,7 +611,6 @@ impl ::core::fmt::Debug for ActivationSignalDetectionTrainingDataFormat {
 }
 unsafe impl ::windows::core::RuntimeType for ActivationSignalDetectionTrainingDataFormat {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.ConversationalAgent.ActivationSignalDetectionTrainingDataFormat;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -824,11 +812,6 @@ impl ActivationSignalDetector {
         }
     }
 }
-impl ::core::clone::Clone for ActivationSignalDetector {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ActivationSignalDetector {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -842,7 +825,6 @@ impl ::core::fmt::Debug for ActivationSignalDetector {
 }
 unsafe impl ::windows::core::RuntimeType for ActivationSignalDetector {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.ConversationalAgent.ActivationSignalDetector;{b5bf345f-a4d0-5b2b-8e65-b3c55ee756ff})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -918,6 +900,7 @@ impl ::core::default::Default for ActivationSignalDetectorKind {
 }
 unsafe impl ::windows::core::Abi for ActivationSignalDetectorKind {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ActivationSignalDetectorKind {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -926,7 +909,6 @@ impl ::core::fmt::Debug for ActivationSignalDetectorKind {
 }
 unsafe impl ::windows::core::RuntimeType for ActivationSignalDetectorKind {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.ConversationalAgent.ActivationSignalDetectorKind;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -953,6 +935,7 @@ impl ::core::default::Default for ActivationSignalDetectorPowerState {
 }
 unsafe impl ::windows::core::Abi for ActivationSignalDetectorPowerState {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ActivationSignalDetectorPowerState {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -961,7 +944,6 @@ impl ::core::fmt::Debug for ActivationSignalDetectorPowerState {
 }
 unsafe impl ::windows::core::RuntimeType for ActivationSignalDetectorPowerState {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.ConversationalAgent.ActivationSignalDetectorPowerState;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -987,6 +969,7 @@ impl ::core::default::Default for ConversationalAgentActivationKind {
 }
 unsafe impl ::windows::core::Abi for ConversationalAgentActivationKind {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ConversationalAgentActivationKind {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -995,7 +978,6 @@ impl ::core::fmt::Debug for ConversationalAgentActivationKind {
 }
 unsafe impl ::windows::core::RuntimeType for ConversationalAgentActivationKind {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.ConversationalAgent.ConversationalAgentActivationKind;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1023,6 +1005,7 @@ impl ::core::default::Default for ConversationalAgentActivationResult {
 }
 unsafe impl ::windows::core::Abi for ConversationalAgentActivationResult {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ConversationalAgentActivationResult {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1031,7 +1014,6 @@ impl ::core::fmt::Debug for ConversationalAgentActivationResult {
 }
 unsafe impl ::windows::core::RuntimeType for ConversationalAgentActivationResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.ConversationalAgent.ConversationalAgentActivationResult;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1106,11 +1088,6 @@ impl ConversationalAgentDetectorManager {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for ConversationalAgentDetectorManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ConversationalAgentDetectorManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1124,7 +1101,6 @@ impl ::core::fmt::Debug for ConversationalAgentDetectorManager {
 }
 unsafe impl ::windows::core::RuntimeType for ConversationalAgentDetectorManager {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.ConversationalAgent.ConversationalAgentDetectorManager;{de94fbb0-597a-5df8-8cfb-9dbb583ba3ff})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1539,11 +1515,6 @@ impl ConversationalAgentSession {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for ConversationalAgentSession {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ConversationalAgentSession {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1557,7 +1528,6 @@ impl ::core::fmt::Debug for ConversationalAgentSession {
 }
 unsafe impl ::windows::core::RuntimeType for ConversationalAgentSession {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.ConversationalAgent.ConversationalAgentSession;{daaae09a-b7ba-57e5-ad13-df520f9b6fa7})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1641,11 +1611,6 @@ unsafe impl ::core::marker::Sync for ConversationalAgentSession {}
 #[repr(transparent)]
 pub struct ConversationalAgentSessionInterruptedEventArgs(::windows::core::IUnknown);
 impl ConversationalAgentSessionInterruptedEventArgs {}
-impl ::core::clone::Clone for ConversationalAgentSessionInterruptedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ConversationalAgentSessionInterruptedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1659,7 +1624,6 @@ impl ::core::fmt::Debug for ConversationalAgentSessionInterruptedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for ConversationalAgentSessionInterruptedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.ConversationalAgent.ConversationalAgentSessionInterruptedEventArgs;{9766591f-f63d-5d3e-9bf2-bd0760552686})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1734,6 +1698,7 @@ impl ::core::default::Default for ConversationalAgentSessionUpdateResponse {
 }
 unsafe impl ::windows::core::Abi for ConversationalAgentSessionUpdateResponse {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ConversationalAgentSessionUpdateResponse {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1742,7 +1707,6 @@ impl ::core::fmt::Debug for ConversationalAgentSessionUpdateResponse {
 }
 unsafe impl ::windows::core::RuntimeType for ConversationalAgentSessionUpdateResponse {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.ConversationalAgent.ConversationalAgentSessionUpdateResponse;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1850,11 +1814,6 @@ impl ConversationalAgentSignal {
         }
     }
 }
-impl ::core::clone::Clone for ConversationalAgentSignal {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ConversationalAgentSignal {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1868,7 +1827,6 @@ impl ::core::fmt::Debug for ConversationalAgentSignal {
 }
 unsafe impl ::windows::core::RuntimeType for ConversationalAgentSignal {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.ConversationalAgent.ConversationalAgentSignal;{20ed25f7-b120-51f2-8603-265d6a47f232})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1926,11 +1884,6 @@ unsafe impl ::core::marker::Sync for ConversationalAgentSignal {}
 #[repr(transparent)]
 pub struct ConversationalAgentSignalDetectedEventArgs(::windows::core::IUnknown);
 impl ConversationalAgentSignalDetectedEventArgs {}
-impl ::core::clone::Clone for ConversationalAgentSignalDetectedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ConversationalAgentSignalDetectedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1944,7 +1897,6 @@ impl ::core::fmt::Debug for ConversationalAgentSignalDetectedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for ConversationalAgentSignalDetectedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.ConversationalAgent.ConversationalAgentSignalDetectedEventArgs;{4d57eb8f-f88a-599b-91d3-d604876708bc})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2023,6 +1975,7 @@ impl ::core::default::Default for ConversationalAgentState {
 }
 unsafe impl ::windows::core::Abi for ConversationalAgentState {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ConversationalAgentState {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2031,7 +1984,6 @@ impl ::core::fmt::Debug for ConversationalAgentState {
 }
 unsafe impl ::windows::core::RuntimeType for ConversationalAgentState {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.ConversationalAgent.ConversationalAgentState;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2059,6 +2011,7 @@ impl ::core::default::Default for ConversationalAgentSystemStateChangeType {
 }
 unsafe impl ::windows::core::Abi for ConversationalAgentSystemStateChangeType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ConversationalAgentSystemStateChangeType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2067,7 +2020,6 @@ impl ::core::fmt::Debug for ConversationalAgentSystemStateChangeType {
 }
 unsafe impl ::windows::core::RuntimeType for ConversationalAgentSystemStateChangeType {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.ConversationalAgent.ConversationalAgentSystemStateChangeType;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2085,11 +2037,6 @@ impl ConversationalAgentSystemStateChangedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for ConversationalAgentSystemStateChangedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ConversationalAgentSystemStateChangedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2103,7 +2050,6 @@ impl ::core::fmt::Debug for ConversationalAgentSystemStateChangedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for ConversationalAgentSystemStateChangedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.ConversationalAgent.ConversationalAgentSystemStateChangedEventArgs;{1c2c6e3e-2785-59a7-8e71-38adeef79928})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2182,6 +2128,7 @@ impl ::core::default::Default for ConversationalAgentVoiceActivationPrerequisite
 }
 unsafe impl ::windows::core::Abi for ConversationalAgentVoiceActivationPrerequisiteKind {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ConversationalAgentVoiceActivationPrerequisiteKind {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2190,7 +2137,6 @@ impl ::core::fmt::Debug for ConversationalAgentVoiceActivationPrerequisiteKind {
 }
 unsafe impl ::windows::core::RuntimeType for ConversationalAgentVoiceActivationPrerequisiteKind {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.ConversationalAgent.ConversationalAgentVoiceActivationPrerequisiteKind;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2217,6 +2163,7 @@ impl ::core::default::Default for DetectionConfigurationAvailabilityChangeKind {
 }
 unsafe impl ::windows::core::Abi for DetectionConfigurationAvailabilityChangeKind {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DetectionConfigurationAvailabilityChangeKind {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2225,7 +2172,6 @@ impl ::core::fmt::Debug for DetectionConfigurationAvailabilityChangeKind {
 }
 unsafe impl ::windows::core::RuntimeType for DetectionConfigurationAvailabilityChangeKind {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.ConversationalAgent.DetectionConfigurationAvailabilityChangeKind;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2243,11 +2189,6 @@ impl DetectionConfigurationAvailabilityChangedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for DetectionConfigurationAvailabilityChangedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DetectionConfigurationAvailabilityChangedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2261,7 +2202,6 @@ impl ::core::fmt::Debug for DetectionConfigurationAvailabilityChangedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for DetectionConfigurationAvailabilityChangedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.ConversationalAgent.DetectionConfigurationAvailabilityChangedEventArgs;{5129c9fb-4be8-5f14-af2b-88d62b1b4462})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2361,11 +2301,6 @@ impl DetectionConfigurationAvailabilityInfo {
         }
     }
 }
-impl ::core::clone::Clone for DetectionConfigurationAvailabilityInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DetectionConfigurationAvailabilityInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2379,7 +2314,6 @@ impl ::core::fmt::Debug for DetectionConfigurationAvailabilityInfo {
 }
 unsafe impl ::windows::core::RuntimeType for DetectionConfigurationAvailabilityInfo {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.ConversationalAgent.DetectionConfigurationAvailabilityInfo;{b5affeb0-40f0-5398-b838-91979c2c6208})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2462,6 +2396,7 @@ impl ::core::default::Default for DetectionConfigurationTrainingStatus {
 }
 unsafe impl ::windows::core::Abi for DetectionConfigurationTrainingStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DetectionConfigurationTrainingStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2470,7 +2405,6 @@ impl ::core::fmt::Debug for DetectionConfigurationTrainingStatus {
 }
 unsafe impl ::windows::core::RuntimeType for DetectionConfigurationTrainingStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.ConversationalAgent.DetectionConfigurationTrainingStatus;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2478,6 +2412,11 @@ unsafe impl ::windows::core::RuntimeType for DetectionConfigurationTrainingStatu
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IActivationSignalDetectionConfiguration(::windows::core::IUnknown);
+impl ::core::clone::Clone for IActivationSignalDetectionConfiguration {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IActivationSignalDetectionConfiguration {
     type Vtable = IActivationSignalDetectionConfiguration_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x40d8be16_5217_581c_9ab2_ce9b2f2e8e00);
@@ -2550,6 +2489,11 @@ pub struct IActivationSignalDetectionConfiguration_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IActivationSignalDetectionConfiguration2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IActivationSignalDetectionConfiguration2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IActivationSignalDetectionConfiguration2 {
     type Vtable = IActivationSignalDetectionConfiguration2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x71d9b022_562c_57ce_a78b_8b4ff0145bab);
@@ -2576,6 +2520,11 @@ pub struct IActivationSignalDetectionConfiguration2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IActivationSignalDetectionConfigurationCreationResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for IActivationSignalDetectionConfigurationCreationResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IActivationSignalDetectionConfigurationCreationResult {
     type Vtable = IActivationSignalDetectionConfigurationCreationResult_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x4c89bc1b_8d12_5e48_a71c_7f6bc1cd66e0);
@@ -2590,6 +2539,11 @@ pub struct IActivationSignalDetectionConfigurationCreationResult_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IActivationSignalDetector(::windows::core::IUnknown);
+impl ::core::clone::Clone for IActivationSignalDetector {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IActivationSignalDetector {
     type Vtable = IActivationSignalDetector_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb5bf345f_a4d0_5b2b_8e65_b3c55ee756ff);
@@ -2648,6 +2602,11 @@ pub struct IActivationSignalDetector_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IActivationSignalDetector2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IActivationSignalDetector2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IActivationSignalDetector2 {
     type Vtable = IActivationSignalDetector2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc7e2490a_baa5_59d2_85d1_ba42f7cf78c9);
@@ -2679,6 +2638,11 @@ pub struct IActivationSignalDetector2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IConversationalAgentDetectorManager(::windows::core::IUnknown);
+impl ::core::clone::Clone for IConversationalAgentDetectorManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IConversationalAgentDetectorManager {
     type Vtable = IConversationalAgentDetectorManager_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xde94fbb0_597a_5df8_8cfb_9dbb583ba3ff);
@@ -2707,6 +2671,11 @@ pub struct IConversationalAgentDetectorManager_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IConversationalAgentDetectorManager2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IConversationalAgentDetectorManager2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IConversationalAgentDetectorManager2 {
     type Vtable = IConversationalAgentDetectorManager2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x84610f31_d7f3_52fe_9311_c9eb4e3eb30a);
@@ -2724,6 +2693,11 @@ pub struct IConversationalAgentDetectorManager2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IConversationalAgentDetectorManagerStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IConversationalAgentDetectorManagerStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IConversationalAgentDetectorManagerStatics {
     type Vtable = IConversationalAgentDetectorManagerStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x36a8d283_fa0e_5693_8489_0fb2f0ab40d3);
@@ -2737,6 +2711,11 @@ pub struct IConversationalAgentDetectorManagerStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IConversationalAgentSession(::windows::core::IUnknown);
+impl ::core::clone::Clone for IConversationalAgentSession {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IConversationalAgentSession {
     type Vtable = IConversationalAgentSession_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xdaaae09a_b7ba_57e5_ad13_df520f9b6fa7);
@@ -2837,6 +2816,11 @@ pub struct IConversationalAgentSession_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IConversationalAgentSession2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IConversationalAgentSession2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IConversationalAgentSession2 {
     type Vtable = IConversationalAgentSession2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa7a9fbf9_ac78_57ff_9596_acc7a1c9a607);
@@ -2867,6 +2851,11 @@ pub struct IConversationalAgentSession2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IConversationalAgentSessionInterruptedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IConversationalAgentSessionInterruptedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IConversationalAgentSessionInterruptedEventArgs {
     type Vtable = IConversationalAgentSessionInterruptedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9766591f_f63d_5d3e_9bf2_bd0760552686);
@@ -2879,6 +2868,11 @@ pub struct IConversationalAgentSessionInterruptedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IConversationalAgentSessionStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IConversationalAgentSessionStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IConversationalAgentSessionStatics {
     type Vtable = IConversationalAgentSessionStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa005166e_e954_576e_be04_11b8ed10f37b);
@@ -2896,6 +2890,11 @@ pub struct IConversationalAgentSessionStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IConversationalAgentSignal(::windows::core::IUnknown);
+impl ::core::clone::Clone for IConversationalAgentSignal {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IConversationalAgentSignal {
     type Vtable = IConversationalAgentSignal_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x20ed25f7_b120_51f2_8603_265d6a47f232);
@@ -2932,6 +2931,11 @@ pub struct IConversationalAgentSignal_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IConversationalAgentSignal2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IConversationalAgentSignal2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IConversationalAgentSignal2 {
     type Vtable = IConversationalAgentSignal2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd0cc7ba9_9a7b_5c34_880e_b6146c904ecb);
@@ -2946,6 +2950,11 @@ pub struct IConversationalAgentSignal2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IConversationalAgentSignalDetectedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IConversationalAgentSignalDetectedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IConversationalAgentSignalDetectedEventArgs {
     type Vtable = IConversationalAgentSignalDetectedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x4d57eb8f_f88a_599b_91d3_d604876708bc);
@@ -2958,6 +2967,11 @@ pub struct IConversationalAgentSignalDetectedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IConversationalAgentSystemStateChangedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IConversationalAgentSystemStateChangedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IConversationalAgentSystemStateChangedEventArgs {
     type Vtable = IConversationalAgentSystemStateChangedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1c2c6e3e_2785_59a7_8e71_38adeef79928);
@@ -2971,6 +2985,11 @@ pub struct IConversationalAgentSystemStateChangedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDetectionConfigurationAvailabilityChangedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDetectionConfigurationAvailabilityChangedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDetectionConfigurationAvailabilityChangedEventArgs {
     type Vtable = IDetectionConfigurationAvailabilityChangedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x5129c9fb_4be8_5f14_af2b_88d62b1b4462);
@@ -2984,6 +3003,11 @@ pub struct IDetectionConfigurationAvailabilityChangedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDetectionConfigurationAvailabilityInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDetectionConfigurationAvailabilityInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDetectionConfigurationAvailabilityInfo {
     type Vtable = IDetectionConfigurationAvailabilityInfo_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb5affeb0_40f0_5398_b838_91979c2c6208);
@@ -3000,6 +3024,11 @@ pub struct IDetectionConfigurationAvailabilityInfo_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDetectionConfigurationAvailabilityInfo2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDetectionConfigurationAvailabilityInfo2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDetectionConfigurationAvailabilityInfo2 {
     type Vtable = IDetectionConfigurationAvailabilityInfo2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x30e06433_38b3_5c4b_84c3_62b6e685b2ff);
@@ -3046,6 +3075,7 @@ impl ::core::default::Default for SignalDetectorResourceKind {
 }
 unsafe impl ::windows::core::Abi for SignalDetectorResourceKind {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SignalDetectorResourceKind {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3054,7 +3084,6 @@ impl ::core::fmt::Debug for SignalDetectorResourceKind {
 }
 unsafe impl ::windows::core::RuntimeType for SignalDetectorResourceKind {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.ConversationalAgent.SignalDetectorResourceKind;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }

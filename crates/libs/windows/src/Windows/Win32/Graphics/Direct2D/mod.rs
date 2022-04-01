@@ -303,6 +303,7 @@ impl ::core::default::Default for D2D1_2DAFFINETRANSFORM_PROP {
 }
 unsafe impl ::windows::core::Abi for D2D1_2DAFFINETRANSFORM_PROP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_2DAFFINETRANSFORM_PROP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -338,6 +339,7 @@ impl ::core::default::Default for D2D1_3DPERSPECTIVETRANSFORM_INTERPOLATION_MODE
 }
 unsafe impl ::windows::core::Abi for D2D1_3DPERSPECTIVETRANSFORM_INTERPOLATION_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_3DPERSPECTIVETRANSFORM_INTERPOLATION_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -379,6 +381,7 @@ impl ::core::default::Default for D2D1_3DPERSPECTIVETRANSFORM_PROP {
 }
 unsafe impl ::windows::core::Abi for D2D1_3DPERSPECTIVETRANSFORM_PROP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_3DPERSPECTIVETRANSFORM_PROP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -414,6 +417,7 @@ impl ::core::default::Default for D2D1_3DTRANSFORM_INTERPOLATION_MODE {
 }
 unsafe impl ::windows::core::Abi for D2D1_3DTRANSFORM_INTERPOLATION_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_3DTRANSFORM_INTERPOLATION_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -445,6 +449,7 @@ impl ::core::default::Default for D2D1_3DTRANSFORM_PROP {
 }
 unsafe impl ::windows::core::Abi for D2D1_3DTRANSFORM_PROP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_3DTRANSFORM_PROP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -474,6 +479,7 @@ impl ::core::default::Default for D2D1_ANTIALIAS_MODE {
 }
 unsafe impl ::windows::core::Abi for D2D1_ANTIALIAS_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_ANTIALIAS_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -509,6 +515,7 @@ impl ::core::fmt::Debug for D2D1_ARC_SEGMENT {
 #[cfg(feature = "Win32_Graphics_Direct2D_Common")]
 unsafe impl ::windows::core::Abi for D2D1_ARC_SEGMENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Direct2D_Common")]
 impl ::core::cmp::PartialEq for D2D1_ARC_SEGMENT {
@@ -547,6 +554,7 @@ impl ::core::default::Default for D2D1_ARC_SIZE {
 }
 unsafe impl ::windows::core::Abi for D2D1_ARC_SIZE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_ARC_SIZE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -576,6 +584,7 @@ impl ::core::default::Default for D2D1_ARITHMETICCOMPOSITE_PROP {
 }
 unsafe impl ::windows::core::Abi for D2D1_ARITHMETICCOMPOSITE_PROP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_ARITHMETICCOMPOSITE_PROP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -605,6 +614,7 @@ impl ::core::default::Default for D2D1_ATLAS_PROP {
 }
 unsafe impl ::windows::core::Abi for D2D1_ATLAS_PROP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_ATLAS_PROP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -634,6 +644,7 @@ impl ::core::default::Default for D2D1_BITMAPSOURCE_ALPHA_MODE {
 }
 unsafe impl ::windows::core::Abi for D2D1_BITMAPSOURCE_ALPHA_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_BITMAPSOURCE_ALPHA_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -669,6 +680,7 @@ impl ::core::default::Default for D2D1_BITMAPSOURCE_INTERPOLATION_MODE {
 }
 unsafe impl ::windows::core::Abi for D2D1_BITMAPSOURCE_INTERPOLATION_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_BITMAPSOURCE_INTERPOLATION_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -710,6 +722,7 @@ impl ::core::default::Default for D2D1_BITMAPSOURCE_ORIENTATION {
 }
 unsafe impl ::windows::core::Abi for D2D1_BITMAPSOURCE_ORIENTATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_BITMAPSOURCE_ORIENTATION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -747,6 +760,7 @@ impl ::core::default::Default for D2D1_BITMAPSOURCE_PROP {
 }
 unsafe impl ::windows::core::Abi for D2D1_BITMAPSOURCE_PROP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_BITMAPSOURCE_PROP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -773,6 +787,7 @@ impl ::core::fmt::Debug for D2D1_BITMAP_BRUSH_PROPERTIES {
 }
 unsafe impl ::windows::core::Abi for D2D1_BITMAP_BRUSH_PROPERTIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D2D1_BITMAP_BRUSH_PROPERTIES {
     fn eq(&self, other: &Self) -> bool {
@@ -805,6 +820,7 @@ impl ::core::fmt::Debug for D2D1_BITMAP_BRUSH_PROPERTIES1 {
 }
 unsafe impl ::windows::core::Abi for D2D1_BITMAP_BRUSH_PROPERTIES1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D2D1_BITMAP_BRUSH_PROPERTIES1 {
     fn eq(&self, other: &Self) -> bool {
@@ -840,6 +856,7 @@ impl ::core::default::Default for D2D1_BITMAP_INTERPOLATION_MODE {
 }
 unsafe impl ::windows::core::Abi for D2D1_BITMAP_INTERPOLATION_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_BITMAP_INTERPOLATION_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -875,6 +892,7 @@ impl ::core::default::Default for D2D1_BITMAP_OPTIONS {
 }
 unsafe impl ::windows::core::Abi for D2D1_BITMAP_OPTIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_BITMAP_OPTIONS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -934,6 +952,7 @@ impl ::core::fmt::Debug for D2D1_BITMAP_PROPERTIES {
 #[cfg(all(feature = "Win32_Graphics_Direct2D_Common", feature = "Win32_Graphics_Dxgi_Common"))]
 unsafe impl ::windows::core::Abi for D2D1_BITMAP_PROPERTIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Graphics_Direct2D_Common", feature = "Win32_Graphics_Dxgi_Common"))]
 impl ::core::cmp::PartialEq for D2D1_BITMAP_PROPERTIES {
@@ -974,6 +993,7 @@ impl ::core::fmt::Debug for D2D1_BITMAP_PROPERTIES1 {
 #[cfg(all(feature = "Win32_Graphics_Direct2D_Common", feature = "Win32_Graphics_Dxgi_Common"))]
 unsafe impl ::windows::core::Abi for D2D1_BITMAP_PROPERTIES1 {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Graphics_Direct2D_Common", feature = "Win32_Graphics_Dxgi_Common"))]
 impl ::core::cmp::PartialEq for D2D1_BITMAP_PROPERTIES1 {
@@ -1034,6 +1054,7 @@ impl ::core::default::Default for D2D1_BLEND {
 }
 unsafe impl ::windows::core::Abi for D2D1_BLEND {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_BLEND {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1064,6 +1085,7 @@ impl ::core::fmt::Debug for D2D1_BLEND_DESCRIPTION {
 }
 unsafe impl ::windows::core::Abi for D2D1_BLEND_DESCRIPTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D2D1_BLEND_DESCRIPTION {
     fn eq(&self, other: &Self) -> bool {
@@ -1105,6 +1127,7 @@ impl ::core::default::Default for D2D1_BLEND_OPERATION {
 }
 unsafe impl ::windows::core::Abi for D2D1_BLEND_OPERATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_BLEND_OPERATION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1132,6 +1155,7 @@ impl ::core::default::Default for D2D1_BLEND_PROP {
 }
 unsafe impl ::windows::core::Abi for D2D1_BLEND_PROP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_BLEND_PROP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1163,6 +1187,7 @@ impl ::core::default::Default for D2D1_BORDER_EDGE_MODE {
 }
 unsafe impl ::windows::core::Abi for D2D1_BORDER_EDGE_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_BORDER_EDGE_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1192,6 +1217,7 @@ impl ::core::default::Default for D2D1_BORDER_PROP {
 }
 unsafe impl ::windows::core::Abi for D2D1_BORDER_PROP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_BORDER_PROP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1221,6 +1247,7 @@ impl ::core::default::Default for D2D1_BRIGHTNESS_PROP {
 }
 unsafe impl ::windows::core::Abi for D2D1_BRIGHTNESS_PROP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_BRIGHTNESS_PROP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1251,6 +1278,7 @@ impl ::core::fmt::Debug for D2D1_BRUSH_PROPERTIES {
 #[cfg(feature = "Foundation_Numerics")]
 unsafe impl ::windows::core::Abi for D2D1_BRUSH_PROPERTIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Foundation_Numerics")]
 impl ::core::cmp::PartialEq for D2D1_BRUSH_PROPERTIES {
@@ -1297,6 +1325,7 @@ impl ::core::default::Default for D2D1_BUFFER_PRECISION {
 }
 unsafe impl ::windows::core::Abi for D2D1_BUFFER_PRECISION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_BUFFER_PRECISION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1330,6 +1359,7 @@ impl ::core::default::Default for D2D1_CAP_STYLE {
 }
 unsafe impl ::windows::core::Abi for D2D1_CAP_STYLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_CAP_STYLE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1363,6 +1393,7 @@ impl ::core::default::Default for D2D1_CHANGE_TYPE {
 }
 unsafe impl ::windows::core::Abi for D2D1_CHANGE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_CHANGE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1422,6 +1453,7 @@ impl ::core::default::Default for D2D1_CHANNEL_DEPTH {
 }
 unsafe impl ::windows::core::Abi for D2D1_CHANNEL_DEPTH {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_CHANNEL_DEPTH {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1455,6 +1487,7 @@ impl ::core::default::Default for D2D1_CHANNEL_SELECTOR {
 }
 unsafe impl ::windows::core::Abi for D2D1_CHANNEL_SELECTOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_CHANNEL_SELECTOR {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1488,6 +1521,7 @@ impl ::core::default::Default for D2D1_CHROMAKEY_PROP {
 }
 unsafe impl ::windows::core::Abi for D2D1_CHROMAKEY_PROP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_CHROMAKEY_PROP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1517,6 +1551,7 @@ impl ::core::default::Default for D2D1_COLORMANAGEMENT_ALPHA_MODE {
 }
 unsafe impl ::windows::core::Abi for D2D1_COLORMANAGEMENT_ALPHA_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_COLORMANAGEMENT_ALPHA_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1554,6 +1589,7 @@ impl ::core::default::Default for D2D1_COLORMANAGEMENT_PROP {
 }
 unsafe impl ::windows::core::Abi for D2D1_COLORMANAGEMENT_PROP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_COLORMANAGEMENT_PROP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1585,6 +1621,7 @@ impl ::core::default::Default for D2D1_COLORMANAGEMENT_QUALITY {
 }
 unsafe impl ::windows::core::Abi for D2D1_COLORMANAGEMENT_QUALITY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_COLORMANAGEMENT_QUALITY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1618,6 +1655,7 @@ impl ::core::default::Default for D2D1_COLORMANAGEMENT_RENDERING_INTENT {
 }
 unsafe impl ::windows::core::Abi for D2D1_COLORMANAGEMENT_RENDERING_INTENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_COLORMANAGEMENT_RENDERING_INTENT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1649,6 +1687,7 @@ impl ::core::default::Default for D2D1_COLORMATRIX_PROP {
 }
 unsafe impl ::windows::core::Abi for D2D1_COLORMATRIX_PROP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_COLORMATRIX_PROP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1678,6 +1717,7 @@ impl ::core::default::Default for D2D1_COLOR_BITMAP_GLYPH_SNAP_OPTION {
 }
 unsafe impl ::windows::core::Abi for D2D1_COLOR_BITMAP_GLYPH_SNAP_OPTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_COLOR_BITMAP_GLYPH_SNAP_OPTION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1709,6 +1749,7 @@ impl ::core::default::Default for D2D1_COLOR_CONTEXT_TYPE {
 }
 unsafe impl ::windows::core::Abi for D2D1_COLOR_CONTEXT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_COLOR_CONTEXT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1738,6 +1779,7 @@ impl ::core::default::Default for D2D1_COLOR_INTERPOLATION_MODE {
 }
 unsafe impl ::windows::core::Abi for D2D1_COLOR_INTERPOLATION_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_COLOR_INTERPOLATION_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1769,6 +1811,7 @@ impl ::core::default::Default for D2D1_COLOR_SPACE {
 }
 unsafe impl ::windows::core::Abi for D2D1_COLOR_SPACE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_COLOR_SPACE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1802,6 +1845,7 @@ impl ::core::default::Default for D2D1_COMBINE_MODE {
 }
 unsafe impl ::windows::core::Abi for D2D1_COMBINE_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_COMBINE_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1831,6 +1875,7 @@ impl ::core::default::Default for D2D1_COMPATIBLE_RENDER_TARGET_OPTIONS {
 }
 unsafe impl ::windows::core::Abi for D2D1_COMPATIBLE_RENDER_TARGET_OPTIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_COMPATIBLE_RENDER_TARGET_OPTIONS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1886,6 +1931,7 @@ impl ::core::default::Default for D2D1_COMPOSITE_PROP {
 }
 unsafe impl ::windows::core::Abi for D2D1_COMPOSITE_PROP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_COMPOSITE_PROP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1915,6 +1961,7 @@ impl ::core::default::Default for D2D1_CONTRAST_PROP {
 }
 unsafe impl ::windows::core::Abi for D2D1_CONTRAST_PROP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_CONTRAST_PROP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1962,6 +2009,7 @@ impl ::core::default::Default for D2D1_CONVOLVEMATRIX_PROP {
 }
 unsafe impl ::windows::core::Abi for D2D1_CONVOLVEMATRIX_PROP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_CONVOLVEMATRIX_PROP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1999,6 +2047,7 @@ impl ::core::default::Default for D2D1_CONVOLVEMATRIX_SCALE_MODE {
 }
 unsafe impl ::windows::core::Abi for D2D1_CONVOLVEMATRIX_SCALE_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_CONVOLVEMATRIX_SCALE_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2025,6 +2074,7 @@ impl ::core::fmt::Debug for D2D1_CREATION_PROPERTIES {
 }
 unsafe impl ::windows::core::Abi for D2D1_CREATION_PROPERTIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D2D1_CREATION_PROPERTIES {
     fn eq(&self, other: &Self) -> bool {
@@ -2060,6 +2110,7 @@ impl ::core::default::Default for D2D1_CROP_PROP {
 }
 unsafe impl ::windows::core::Abi for D2D1_CROP_PROP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_CROP_PROP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2087,6 +2138,7 @@ impl ::core::default::Default for D2D1_CROSSFADE_PROP {
 }
 unsafe impl ::windows::core::Abi for D2D1_CROSSFADE_PROP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_CROSSFADE_PROP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2120,6 +2172,7 @@ impl ::core::fmt::Debug for D2D1_CUSTOM_VERTEX_BUFFER_PROPERTIES {
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 unsafe impl ::windows::core::Abi for D2D1_CUSTOM_VERTEX_BUFFER_PROPERTIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 impl ::core::cmp::PartialEq for D2D1_CUSTOM_VERTEX_BUFFER_PROPERTIES {
@@ -2166,6 +2219,7 @@ impl ::core::default::Default for D2D1_DASH_STYLE {
 }
 unsafe impl ::windows::core::Abi for D2D1_DASH_STYLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_DASH_STYLE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2195,6 +2249,7 @@ impl ::core::default::Default for D2D1_DC_INITIALIZE_MODE {
 }
 unsafe impl ::windows::core::Abi for D2D1_DC_INITIALIZE_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_DC_INITIALIZE_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2228,6 +2283,7 @@ impl ::core::default::Default for D2D1_DEBUG_LEVEL {
 }
 unsafe impl ::windows::core::Abi for D2D1_DEBUG_LEVEL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_DEBUG_LEVEL {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2259,6 +2315,7 @@ impl ::core::default::Default for D2D1_DEVICE_CONTEXT_OPTIONS {
 }
 unsafe impl ::windows::core::Abi for D2D1_DEVICE_CONTEXT_OPTIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_DEVICE_CONTEXT_OPTIONS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2318,6 +2375,7 @@ impl ::core::default::Default for D2D1_DIRECTIONALBLUR_OPTIMIZATION {
 }
 unsafe impl ::windows::core::Abi for D2D1_DIRECTIONALBLUR_OPTIMIZATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_DIRECTIONALBLUR_OPTIMIZATION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2351,6 +2409,7 @@ impl ::core::default::Default for D2D1_DIRECTIONALBLUR_PROP {
 }
 unsafe impl ::windows::core::Abi for D2D1_DIRECTIONALBLUR_PROP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_DIRECTIONALBLUR_PROP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2394,6 +2453,7 @@ impl ::core::default::Default for D2D1_DISCRETETRANSFER_PROP {
 }
 unsafe impl ::windows::core::Abi for D2D1_DISCRETETRANSFER_PROP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_DISCRETETRANSFER_PROP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2425,6 +2485,7 @@ impl ::core::default::Default for D2D1_DISPLACEMENTMAP_PROP {
 }
 unsafe impl ::windows::core::Abi for D2D1_DISPLACEMENTMAP_PROP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_DISPLACEMENTMAP_PROP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2464,6 +2525,7 @@ impl ::core::default::Default for D2D1_DISTANTDIFFUSE_PROP {
 }
 unsafe impl ::windows::core::Abi for D2D1_DISTANTDIFFUSE_PROP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_DISTANTDIFFUSE_PROP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2501,6 +2563,7 @@ impl ::core::default::Default for D2D1_DISTANTDIFFUSE_SCALE_MODE {
 }
 unsafe impl ::windows::core::Abi for D2D1_DISTANTDIFFUSE_SCALE_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_DISTANTDIFFUSE_SCALE_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2542,6 +2605,7 @@ impl ::core::default::Default for D2D1_DISTANTSPECULAR_PROP {
 }
 unsafe impl ::windows::core::Abi for D2D1_DISTANTSPECULAR_PROP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_DISTANTSPECULAR_PROP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2579,6 +2643,7 @@ impl ::core::default::Default for D2D1_DISTANTSPECULAR_SCALE_MODE {
 }
 unsafe impl ::windows::core::Abi for D2D1_DISTANTSPECULAR_SCALE_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_DISTANTSPECULAR_SCALE_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2616,6 +2681,7 @@ impl ::core::default::Default for D2D1_DPICOMPENSATION_INTERPOLATION_MODE {
 }
 unsafe impl ::windows::core::Abi for D2D1_DPICOMPENSATION_INTERPOLATION_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_DPICOMPENSATION_INTERPOLATION_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2647,6 +2713,7 @@ impl ::core::default::Default for D2D1_DPICOMPENSATION_PROP {
 }
 unsafe impl ::windows::core::Abi for D2D1_DPICOMPENSATION_PROP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_DPICOMPENSATION_PROP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2680,6 +2747,7 @@ impl ::core::fmt::Debug for D2D1_DRAWING_STATE_DESCRIPTION {
 #[cfg(feature = "Foundation_Numerics")]
 unsafe impl ::windows::core::Abi for D2D1_DRAWING_STATE_DESCRIPTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Foundation_Numerics")]
 impl ::core::cmp::PartialEq for D2D1_DRAWING_STATE_DESCRIPTION {
@@ -2724,6 +2792,7 @@ impl ::core::fmt::Debug for D2D1_DRAWING_STATE_DESCRIPTION1 {
 #[cfg(feature = "Foundation_Numerics")]
 unsafe impl ::windows::core::Abi for D2D1_DRAWING_STATE_DESCRIPTION1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Foundation_Numerics")]
 impl ::core::cmp::PartialEq for D2D1_DRAWING_STATE_DESCRIPTION1 {
@@ -2768,6 +2837,7 @@ impl ::core::default::Default for D2D1_DRAW_TEXT_OPTIONS {
 }
 unsafe impl ::windows::core::Abi for D2D1_DRAW_TEXT_OPTIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_DRAW_TEXT_OPTIONS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2825,6 +2895,7 @@ impl ::core::default::Default for D2D1_EDGEDETECTION_MODE {
 }
 unsafe impl ::windows::core::Abi for D2D1_EDGEDETECTION_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_EDGEDETECTION_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2860,6 +2931,7 @@ impl ::core::default::Default for D2D1_EDGEDETECTION_PROP {
 }
 unsafe impl ::windows::core::Abi for D2D1_EDGEDETECTION_PROP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_EDGEDETECTION_PROP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2889,6 +2961,7 @@ impl ::core::fmt::Debug for D2D1_EFFECT_INPUT_DESCRIPTION {
 #[cfg(feature = "Win32_Graphics_Direct2D_Common")]
 unsafe impl ::windows::core::Abi for D2D1_EFFECT_INPUT_DESCRIPTION {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Direct2D_Common")]
 impl ::core::cmp::PartialEq for D2D1_EFFECT_INPUT_DESCRIPTION {
@@ -2929,6 +3002,7 @@ impl ::core::fmt::Debug for D2D1_ELLIPSE {
 #[cfg(feature = "Win32_Graphics_Direct2D_Common")]
 unsafe impl ::windows::core::Abi for D2D1_ELLIPSE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Direct2D_Common")]
 impl ::core::cmp::PartialEq for D2D1_ELLIPSE {
@@ -2967,6 +3041,7 @@ impl ::core::default::Default for D2D1_EMBOSS_PROP {
 }
 unsafe impl ::windows::core::Abi for D2D1_EMBOSS_PROP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_EMBOSS_PROP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2994,6 +3069,7 @@ impl ::core::default::Default for D2D1_EXPOSURE_PROP {
 }
 unsafe impl ::windows::core::Abi for D2D1_EXPOSURE_PROP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_EXPOSURE_PROP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3025,6 +3101,7 @@ impl ::core::default::Default for D2D1_EXTEND_MODE {
 }
 unsafe impl ::windows::core::Abi for D2D1_EXTEND_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_EXTEND_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3049,6 +3126,7 @@ impl ::core::fmt::Debug for D2D1_FACTORY_OPTIONS {
 }
 unsafe impl ::windows::core::Abi for D2D1_FACTORY_OPTIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D2D1_FACTORY_OPTIONS {
     fn eq(&self, other: &Self) -> bool {
@@ -3084,6 +3162,7 @@ impl ::core::default::Default for D2D1_FACTORY_TYPE {
 }
 unsafe impl ::windows::core::Abi for D2D1_FACTORY_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_FACTORY_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3113,6 +3192,7 @@ impl ::core::default::Default for D2D1_FEATURE {
 }
 unsafe impl ::windows::core::Abi for D2D1_FEATURE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_FEATURE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3142,6 +3222,7 @@ impl ::core::fmt::Debug for D2D1_FEATURE_DATA_D3D10_X_HARDWARE_OPTIONS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D2D1_FEATURE_DATA_D3D10_X_HARDWARE_OPTIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D2D1_FEATURE_DATA_D3D10_X_HARDWARE_OPTIONS {
@@ -3180,6 +3261,7 @@ impl ::core::fmt::Debug for D2D1_FEATURE_DATA_DOUBLES {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D2D1_FEATURE_DATA_DOUBLES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D2D1_FEATURE_DATA_DOUBLES {
@@ -3220,6 +3302,7 @@ impl ::core::default::Default for D2D1_FEATURE_LEVEL {
 }
 unsafe impl ::windows::core::Abi for D2D1_FEATURE_LEVEL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_FEATURE_LEVEL {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3263,6 +3346,7 @@ impl ::core::default::Default for D2D1_FILTER {
 }
 unsafe impl ::windows::core::Abi for D2D1_FILTER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_FILTER {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3290,6 +3374,7 @@ impl ::core::default::Default for D2D1_FLOOD_PROP {
 }
 unsafe impl ::windows::core::Abi for D2D1_FLOOD_PROP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_FLOOD_PROP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3319,6 +3404,7 @@ impl ::core::default::Default for D2D1_GAMMA {
 }
 unsafe impl ::windows::core::Abi for D2D1_GAMMA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_GAMMA {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3350,6 +3436,7 @@ impl ::core::default::Default for D2D1_GAMMA1 {
 }
 unsafe impl ::windows::core::Abi for D2D1_GAMMA1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_GAMMA1 {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3409,6 +3496,7 @@ impl ::core::default::Default for D2D1_GAMMATRANSFER_PROP {
 }
 unsafe impl ::windows::core::Abi for D2D1_GAMMATRANSFER_PROP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_GAMMATRANSFER_PROP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3440,6 +3528,7 @@ impl ::core::default::Default for D2D1_GAUSSIANBLUR_OPTIMIZATION {
 }
 unsafe impl ::windows::core::Abi for D2D1_GAUSSIANBLUR_OPTIMIZATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_GAUSSIANBLUR_OPTIMIZATION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3471,6 +3560,7 @@ impl ::core::default::Default for D2D1_GAUSSIANBLUR_PROP {
 }
 unsafe impl ::windows::core::Abi for D2D1_GAUSSIANBLUR_PROP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_GAUSSIANBLUR_PROP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3506,6 +3596,7 @@ impl ::core::default::Default for D2D1_GEOMETRY_RELATION {
 }
 unsafe impl ::windows::core::Abi for D2D1_GEOMETRY_RELATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_GEOMETRY_RELATION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3535,6 +3626,7 @@ impl ::core::default::Default for D2D1_GEOMETRY_SIMPLIFICATION_OPTION {
 }
 unsafe impl ::windows::core::Abi for D2D1_GEOMETRY_SIMPLIFICATION_OPTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_GEOMETRY_SIMPLIFICATION_OPTION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3612,6 +3704,7 @@ impl ::core::fmt::Debug for D2D1_GRADIENT_MESH_PATCH {
 #[cfg(feature = "Win32_Graphics_Direct2D_Common")]
 unsafe impl ::windows::core::Abi for D2D1_GRADIENT_MESH_PATCH {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Direct2D_Common")]
 impl ::core::cmp::PartialEq for D2D1_GRADIENT_MESH_PATCH {
@@ -3651,6 +3744,7 @@ impl ::core::fmt::Debug for D2D1_GRADIENT_STOP {
 #[cfg(feature = "Win32_Graphics_Direct2D_Common")]
 unsafe impl ::windows::core::Abi for D2D1_GRADIENT_STOP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Direct2D_Common")]
 impl ::core::cmp::PartialEq for D2D1_GRADIENT_STOP {
@@ -3689,6 +3783,7 @@ impl ::core::default::Default for D2D1_HDRTONEMAP_DISPLAY_MODE {
 }
 unsafe impl ::windows::core::Abi for D2D1_HDRTONEMAP_DISPLAY_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_HDRTONEMAP_DISPLAY_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3720,6 +3815,7 @@ impl ::core::default::Default for D2D1_HDRTONEMAP_PROP {
 }
 unsafe impl ::windows::core::Abi for D2D1_HDRTONEMAP_PROP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_HDRTONEMAP_PROP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3749,6 +3845,7 @@ impl ::core::default::Default for D2D1_HIGHLIGHTSANDSHADOWS_INPUT_GAMMA {
 }
 unsafe impl ::windows::core::Abi for D2D1_HIGHLIGHTSANDSHADOWS_INPUT_GAMMA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_HIGHLIGHTSANDSHADOWS_INPUT_GAMMA {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3784,6 +3881,7 @@ impl ::core::default::Default for D2D1_HIGHLIGHTSANDSHADOWS_PROP {
 }
 unsafe impl ::windows::core::Abi for D2D1_HIGHLIGHTSANDSHADOWS_PROP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_HIGHLIGHTSANDSHADOWS_PROP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3815,6 +3913,7 @@ impl ::core::default::Default for D2D1_HISTOGRAM_PROP {
 }
 unsafe impl ::windows::core::Abi for D2D1_HISTOGRAM_PROP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_HISTOGRAM_PROP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3842,6 +3941,7 @@ impl ::core::default::Default for D2D1_HUEROTATION_PROP {
 }
 unsafe impl ::windows::core::Abi for D2D1_HUEROTATION_PROP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_HUEROTATION_PROP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3871,6 +3971,7 @@ impl ::core::default::Default for D2D1_HUETORGB_INPUT_COLOR_SPACE {
 }
 unsafe impl ::windows::core::Abi for D2D1_HUETORGB_INPUT_COLOR_SPACE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_HUETORGB_INPUT_COLOR_SPACE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3898,6 +3999,7 @@ impl ::core::default::Default for D2D1_HUETORGB_PROP {
 }
 unsafe impl ::windows::core::Abi for D2D1_HUETORGB_PROP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_HUETORGB_PROP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3929,6 +4031,7 @@ impl ::core::fmt::Debug for D2D1_HWND_RENDER_TARGET_PROPERTIES {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Direct2D_Common"))]
 unsafe impl ::windows::core::Abi for D2D1_HWND_RENDER_TARGET_PROPERTIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Direct2D_Common"))]
 impl ::core::cmp::PartialEq for D2D1_HWND_RENDER_TARGET_PROPERTIES {
@@ -3970,6 +4073,7 @@ impl ::core::fmt::Debug for D2D1_IMAGE_BRUSH_PROPERTIES {
 #[cfg(feature = "Win32_Graphics_Direct2D_Common")]
 unsafe impl ::windows::core::Abi for D2D1_IMAGE_BRUSH_PROPERTIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Direct2D_Common")]
 impl ::core::cmp::PartialEq for D2D1_IMAGE_BRUSH_PROPERTIES {
@@ -4008,6 +4112,7 @@ impl ::core::default::Default for D2D1_IMAGE_SOURCE_FROM_DXGI_OPTIONS {
 }
 unsafe impl ::windows::core::Abi for D2D1_IMAGE_SOURCE_FROM_DXGI_OPTIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_IMAGE_SOURCE_FROM_DXGI_OPTIONS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4067,6 +4172,7 @@ impl ::core::default::Default for D2D1_IMAGE_SOURCE_LOADING_OPTIONS {
 }
 unsafe impl ::windows::core::Abi for D2D1_IMAGE_SOURCE_LOADING_OPTIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_IMAGE_SOURCE_LOADING_OPTIONS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4121,6 +4227,7 @@ impl ::core::fmt::Debug for D2D1_INK_BEZIER_SEGMENT {
 }
 unsafe impl ::windows::core::Abi for D2D1_INK_BEZIER_SEGMENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D2D1_INK_BEZIER_SEGMENT {
     fn eq(&self, other: &Self) -> bool {
@@ -4156,6 +4263,7 @@ impl ::core::default::Default for D2D1_INK_NIB_SHAPE {
 }
 unsafe impl ::windows::core::Abi for D2D1_INK_NIB_SHAPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_INK_NIB_SHAPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4182,6 +4290,7 @@ impl ::core::fmt::Debug for D2D1_INK_POINT {
 }
 unsafe impl ::windows::core::Abi for D2D1_INK_POINT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D2D1_INK_POINT {
     fn eq(&self, other: &Self) -> bool {
@@ -4218,6 +4327,7 @@ impl ::core::fmt::Debug for D2D1_INK_STYLE_PROPERTIES {
 #[cfg(feature = "Foundation_Numerics")]
 unsafe impl ::windows::core::Abi for D2D1_INK_STYLE_PROPERTIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Foundation_Numerics")]
 impl ::core::cmp::PartialEq for D2D1_INK_STYLE_PROPERTIES {
@@ -4252,6 +4362,7 @@ impl ::core::fmt::Debug for D2D1_INPUT_DESCRIPTION {
 }
 unsafe impl ::windows::core::Abi for D2D1_INPUT_DESCRIPTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D2D1_INPUT_DESCRIPTION {
     fn eq(&self, other: &Self) -> bool {
@@ -4291,6 +4402,7 @@ impl ::core::fmt::Debug for D2D1_INPUT_ELEMENT_DESC {
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 unsafe impl ::windows::core::Abi for D2D1_INPUT_ELEMENT_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 impl ::core::cmp::PartialEq for D2D1_INPUT_ELEMENT_DESC {
@@ -4337,6 +4449,7 @@ impl ::core::default::Default for D2D1_INTERPOLATION_MODE {
 }
 unsafe impl ::windows::core::Abi for D2D1_INTERPOLATION_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_INTERPOLATION_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4376,6 +4489,7 @@ impl ::core::default::Default for D2D1_INTERPOLATION_MODE_DEFINITION {
 }
 unsafe impl ::windows::core::Abi for D2D1_INTERPOLATION_MODE_DEFINITION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_INTERPOLATION_MODE_DEFINITION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4405,6 +4519,7 @@ impl ::core::default::Default for D2D1_LAYER_OPTIONS {
 }
 unsafe impl ::windows::core::Abi for D2D1_LAYER_OPTIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_LAYER_OPTIONS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4464,6 +4579,7 @@ impl ::core::default::Default for D2D1_LAYER_OPTIONS1 {
 }
 unsafe impl ::windows::core::Abi for D2D1_LAYER_OPTIONS1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_LAYER_OPTIONS1 {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4533,6 +4649,7 @@ impl ::core::fmt::Debug for D2D1_LAYER_PARAMETERS {
 #[cfg(all(feature = "Foundation_Numerics", feature = "Win32_Graphics_Direct2D_Common"))]
 unsafe impl ::windows::core::Abi for D2D1_LAYER_PARAMETERS {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Foundation_Numerics", feature = "Win32_Graphics_Direct2D_Common"))]
 impl ::core::cmp::PartialEq for D2D1_LAYER_PARAMETERS {
@@ -4583,6 +4700,7 @@ impl ::core::fmt::Debug for D2D1_LAYER_PARAMETERS1 {
 #[cfg(all(feature = "Foundation_Numerics", feature = "Win32_Graphics_Direct2D_Common"))]
 unsafe impl ::windows::core::Abi for D2D1_LAYER_PARAMETERS1 {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Foundation_Numerics", feature = "Win32_Graphics_Direct2D_Common"))]
 impl ::core::cmp::PartialEq for D2D1_LAYER_PARAMETERS1 {
@@ -4643,6 +4761,7 @@ impl ::core::default::Default for D2D1_LINEARTRANSFER_PROP {
 }
 unsafe impl ::windows::core::Abi for D2D1_LINEARTRANSFER_PROP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_LINEARTRANSFER_PROP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4673,6 +4792,7 @@ impl ::core::fmt::Debug for D2D1_LINEAR_GRADIENT_BRUSH_PROPERTIES {
 #[cfg(feature = "Win32_Graphics_Direct2D_Common")]
 unsafe impl ::windows::core::Abi for D2D1_LINEAR_GRADIENT_BRUSH_PROPERTIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Direct2D_Common")]
 impl ::core::cmp::PartialEq for D2D1_LINEAR_GRADIENT_BRUSH_PROPERTIES {
@@ -4715,6 +4835,7 @@ impl ::core::default::Default for D2D1_LINE_JOIN {
 }
 unsafe impl ::windows::core::Abi for D2D1_LINE_JOIN {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_LINE_JOIN {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4744,6 +4865,7 @@ impl ::core::default::Default for D2D1_LOOKUPTABLE3D_PROP {
 }
 unsafe impl ::windows::core::Abi for D2D1_LOOKUPTABLE3D_PROP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_LOOKUPTABLE3D_PROP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4769,6 +4891,7 @@ impl ::core::fmt::Debug for D2D1_MAPPED_RECT {
 }
 unsafe impl ::windows::core::Abi for D2D1_MAPPED_RECT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D2D1_MAPPED_RECT {
     fn eq(&self, other: &Self) -> bool {
@@ -4808,6 +4931,7 @@ impl ::core::default::Default for D2D1_MAP_OPTIONS {
 }
 unsafe impl ::windows::core::Abi for D2D1_MAP_OPTIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_MAP_OPTIONS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4865,6 +4989,7 @@ impl ::core::default::Default for D2D1_MORPHOLOGY_MODE {
 }
 unsafe impl ::windows::core::Abi for D2D1_MORPHOLOGY_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_MORPHOLOGY_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4896,6 +5021,7 @@ impl ::core::default::Default for D2D1_MORPHOLOGY_PROP {
 }
 unsafe impl ::windows::core::Abi for D2D1_MORPHOLOGY_PROP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_MORPHOLOGY_PROP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4923,6 +5049,7 @@ impl ::core::default::Default for D2D1_OPACITYMETADATA_PROP {
 }
 unsafe impl ::windows::core::Abi for D2D1_OPACITYMETADATA_PROP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_OPACITYMETADATA_PROP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4954,6 +5081,7 @@ impl ::core::default::Default for D2D1_OPACITY_MASK_CONTENT {
 }
 unsafe impl ::windows::core::Abi for D2D1_OPACITY_MASK_CONTENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_OPACITY_MASK_CONTENT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4981,6 +5109,7 @@ impl ::core::default::Default for D2D1_OPACITY_PROP {
 }
 unsafe impl ::windows::core::Abi for D2D1_OPACITY_PROP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_OPACITY_PROP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5022,6 +5151,7 @@ impl ::core::default::Default for D2D1_ORIENTATION {
 }
 unsafe impl ::windows::core::Abi for D2D1_ORIENTATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_ORIENTATION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5053,6 +5183,7 @@ impl ::core::default::Default for D2D1_PATCH_EDGE_MODE {
 }
 unsafe impl ::windows::core::Abi for D2D1_PATCH_EDGE_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_PATCH_EDGE_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5082,6 +5213,7 @@ impl ::core::default::Default for D2D1_PIXEL_OPTIONS {
 }
 unsafe impl ::windows::core::Abi for D2D1_PIXEL_OPTIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_PIXEL_OPTIONS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5147,6 +5279,7 @@ impl ::core::default::Default for D2D1_POINTDIFFUSE_PROP {
 }
 unsafe impl ::windows::core::Abi for D2D1_POINTDIFFUSE_PROP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_POINTDIFFUSE_PROP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5184,6 +5317,7 @@ impl ::core::default::Default for D2D1_POINTDIFFUSE_SCALE_MODE {
 }
 unsafe impl ::windows::core::Abi for D2D1_POINTDIFFUSE_SCALE_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_POINTDIFFUSE_SCALE_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5223,6 +5357,7 @@ impl ::core::default::Default for D2D1_POINTSPECULAR_PROP {
 }
 unsafe impl ::windows::core::Abi for D2D1_POINTSPECULAR_PROP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_POINTSPECULAR_PROP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5260,6 +5395,7 @@ impl ::core::default::Default for D2D1_POINTSPECULAR_SCALE_MODE {
 }
 unsafe impl ::windows::core::Abi for D2D1_POINTSPECULAR_SCALE_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_POINTSPECULAR_SCALE_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5293,6 +5429,7 @@ impl ::core::fmt::Debug for D2D1_POINT_DESCRIPTION {
 #[cfg(feature = "Win32_Graphics_Direct2D_Common")]
 unsafe impl ::windows::core::Abi for D2D1_POINT_DESCRIPTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Direct2D_Common")]
 impl ::core::cmp::PartialEq for D2D1_POINT_DESCRIPTION {
@@ -5333,6 +5470,7 @@ impl ::core::default::Default for D2D1_POSTERIZE_PROP {
 }
 unsafe impl ::windows::core::Abi for D2D1_POSTERIZE_PROP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_POSTERIZE_PROP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5364,6 +5502,7 @@ impl ::core::default::Default for D2D1_PRESENT_OPTIONS {
 }
 unsafe impl ::windows::core::Abi for D2D1_PRESENT_OPTIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_PRESENT_OPTIONS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5427,6 +5566,7 @@ impl ::core::default::Default for D2D1_PRIMITIVE_BLEND {
 }
 unsafe impl ::windows::core::Abi for D2D1_PRIMITIVE_BLEND {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_PRIMITIVE_BLEND {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5453,6 +5593,7 @@ impl ::core::fmt::Debug for D2D1_PRINT_CONTROL_PROPERTIES {
 }
 unsafe impl ::windows::core::Abi for D2D1_PRINT_CONTROL_PROPERTIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D2D1_PRINT_CONTROL_PROPERTIES {
     fn eq(&self, other: &Self) -> bool {
@@ -5490,6 +5631,7 @@ impl ::core::default::Default for D2D1_PRINT_FONT_SUBSET_MODE {
 }
 unsafe impl ::windows::core::Abi for D2D1_PRINT_FONT_SUBSET_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_PRINT_FONT_SUBSET_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5535,6 +5677,7 @@ impl ::core::default::Default for D2D1_PROPERTY {
 }
 unsafe impl ::windows::core::Abi for D2D1_PROPERTY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_PROPERTY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5561,6 +5704,7 @@ impl ::core::fmt::Debug for D2D1_PROPERTY_BINDING {
 }
 unsafe impl ::windows::core::Abi for D2D1_PROPERTY_BINDING {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D2D1_PROPERTY_BINDING {
     fn eq(&self, other: &Self) -> bool {
@@ -5630,6 +5774,7 @@ impl ::core::default::Default for D2D1_PROPERTY_TYPE {
 }
 unsafe impl ::windows::core::Abi for D2D1_PROPERTY_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_PROPERTY_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5660,6 +5805,7 @@ impl ::core::fmt::Debug for D2D1_QUADRATIC_BEZIER_SEGMENT {
 #[cfg(feature = "Win32_Graphics_Direct2D_Common")]
 unsafe impl ::windows::core::Abi for D2D1_QUADRATIC_BEZIER_SEGMENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Direct2D_Common")]
 impl ::core::cmp::PartialEq for D2D1_QUADRATIC_BEZIER_SEGMENT {
@@ -5701,6 +5847,7 @@ impl ::core::fmt::Debug for D2D1_RADIAL_GRADIENT_BRUSH_PROPERTIES {
 #[cfg(feature = "Win32_Graphics_Direct2D_Common")]
 unsafe impl ::windows::core::Abi for D2D1_RADIAL_GRADIENT_BRUSH_PROPERTIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Direct2D_Common")]
 impl ::core::cmp::PartialEq for D2D1_RADIAL_GRADIENT_BRUSH_PROPERTIES {
@@ -5740,6 +5887,7 @@ impl ::core::fmt::Debug for D2D1_RENDERING_CONTROLS {
 #[cfg(feature = "Win32_Graphics_Direct2D_Common")]
 unsafe impl ::windows::core::Abi for D2D1_RENDERING_CONTROLS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Direct2D_Common")]
 impl ::core::cmp::PartialEq for D2D1_RENDERING_CONTROLS {
@@ -5778,6 +5926,7 @@ impl ::core::default::Default for D2D1_RENDERING_PRIORITY {
 }
 unsafe impl ::windows::core::Abi for D2D1_RENDERING_PRIORITY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_RENDERING_PRIORITY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5812,6 +5961,7 @@ impl ::core::fmt::Debug for D2D1_RENDER_TARGET_PROPERTIES {
 #[cfg(all(feature = "Win32_Graphics_Direct2D_Common", feature = "Win32_Graphics_Dxgi_Common"))]
 unsafe impl ::windows::core::Abi for D2D1_RENDER_TARGET_PROPERTIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Graphics_Direct2D_Common", feature = "Win32_Graphics_Dxgi_Common"))]
 impl ::core::cmp::PartialEq for D2D1_RENDER_TARGET_PROPERTIES {
@@ -5852,6 +6002,7 @@ impl ::core::default::Default for D2D1_RENDER_TARGET_TYPE {
 }
 unsafe impl ::windows::core::Abi for D2D1_RENDER_TARGET_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_RENDER_TARGET_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5883,6 +6034,7 @@ impl ::core::default::Default for D2D1_RENDER_TARGET_USAGE {
 }
 unsafe impl ::windows::core::Abi for D2D1_RENDER_TARGET_USAGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_RENDER_TARGET_USAGE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5940,6 +6092,7 @@ impl ::core::fmt::Debug for D2D1_RESOURCE_TEXTURE_PROPERTIES {
 }
 unsafe impl ::windows::core::Abi for D2D1_RESOURCE_TEXTURE_PROPERTIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D2D1_RESOURCE_TEXTURE_PROPERTIES {
     fn eq(&self, other: &Self) -> bool {
@@ -5975,6 +6128,7 @@ impl ::core::default::Default for D2D1_RGBTOHUE_OUTPUT_COLOR_SPACE {
 }
 unsafe impl ::windows::core::Abi for D2D1_RGBTOHUE_OUTPUT_COLOR_SPACE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_RGBTOHUE_OUTPUT_COLOR_SPACE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6002,6 +6156,7 @@ impl ::core::default::Default for D2D1_RGBTOHUE_PROP {
 }
 unsafe impl ::windows::core::Abi for D2D1_RGBTOHUE_PROP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_RGBTOHUE_PROP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6033,6 +6188,7 @@ impl ::core::fmt::Debug for D2D1_ROUNDED_RECT {
 #[cfg(feature = "Win32_Graphics_Direct2D_Common")]
 unsafe impl ::windows::core::Abi for D2D1_ROUNDED_RECT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Direct2D_Common")]
 impl ::core::cmp::PartialEq for D2D1_ROUNDED_RECT {
@@ -6069,6 +6225,7 @@ impl ::core::default::Default for D2D1_SATURATION_PROP {
 }
 unsafe impl ::windows::core::Abi for D2D1_SATURATION_PROP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_SATURATION_PROP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6106,6 +6263,7 @@ impl ::core::default::Default for D2D1_SCALE_INTERPOLATION_MODE {
 }
 unsafe impl ::windows::core::Abi for D2D1_SCALE_INTERPOLATION_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_SCALE_INTERPOLATION_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6141,6 +6299,7 @@ impl ::core::default::Default for D2D1_SCALE_PROP {
 }
 unsafe impl ::windows::core::Abi for D2D1_SCALE_PROP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_SCALE_PROP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6172,6 +6331,7 @@ impl ::core::default::Default for D2D1_SEPIA_PROP {
 }
 unsafe impl ::windows::core::Abi for D2D1_SEPIA_PROP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_SEPIA_PROP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6203,6 +6363,7 @@ impl ::core::default::Default for D2D1_SHADOW_OPTIMIZATION {
 }
 unsafe impl ::windows::core::Abi for D2D1_SHADOW_OPTIMIZATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_SHADOW_OPTIMIZATION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6234,6 +6395,7 @@ impl ::core::default::Default for D2D1_SHADOW_PROP {
 }
 unsafe impl ::windows::core::Abi for D2D1_SHADOW_PROP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_SHADOW_PROP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6263,6 +6425,7 @@ impl ::core::default::Default for D2D1_SHARPEN_PROP {
 }
 unsafe impl ::windows::core::Abi for D2D1_SHARPEN_PROP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_SHARPEN_PROP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6296,6 +6459,7 @@ impl ::core::fmt::Debug for D2D1_SIMPLE_COLOR_PROFILE {
 #[cfg(feature = "Win32_Graphics_Direct2D_Common")]
 unsafe impl ::windows::core::Abi for D2D1_SIMPLE_COLOR_PROFILE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Direct2D_Common")]
 impl ::core::cmp::PartialEq for D2D1_SIMPLE_COLOR_PROFILE {
@@ -6348,6 +6512,7 @@ impl ::core::default::Default for D2D1_SPOTDIFFUSE_PROP {
 }
 unsafe impl ::windows::core::Abi for D2D1_SPOTDIFFUSE_PROP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_SPOTDIFFUSE_PROP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6385,6 +6550,7 @@ impl ::core::default::Default for D2D1_SPOTDIFFUSE_SCALE_MODE {
 }
 unsafe impl ::windows::core::Abi for D2D1_SPOTDIFFUSE_SCALE_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_SPOTDIFFUSE_SCALE_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6430,6 +6596,7 @@ impl ::core::default::Default for D2D1_SPOTSPECULAR_PROP {
 }
 unsafe impl ::windows::core::Abi for D2D1_SPOTSPECULAR_PROP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_SPOTSPECULAR_PROP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6467,6 +6634,7 @@ impl ::core::default::Default for D2D1_SPOTSPECULAR_SCALE_MODE {
 }
 unsafe impl ::windows::core::Abi for D2D1_SPOTSPECULAR_SCALE_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_SPOTSPECULAR_SCALE_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6496,6 +6664,7 @@ impl ::core::default::Default for D2D1_SPRITE_OPTIONS {
 }
 unsafe impl ::windows::core::Abi for D2D1_SPRITE_OPTIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_SPRITE_OPTIONS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6555,6 +6724,7 @@ impl ::core::default::Default for D2D1_STRAIGHTEN_PROP {
 }
 unsafe impl ::windows::core::Abi for D2D1_STRAIGHTEN_PROP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_STRAIGHTEN_PROP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6590,6 +6760,7 @@ impl ::core::default::Default for D2D1_STRAIGHTEN_SCALE_MODE {
 }
 unsafe impl ::windows::core::Abi for D2D1_STRAIGHTEN_SCALE_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_STRAIGHTEN_SCALE_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6620,6 +6791,7 @@ impl ::core::fmt::Debug for D2D1_STROKE_STYLE_PROPERTIES {
 }
 unsafe impl ::windows::core::Abi for D2D1_STROKE_STYLE_PROPERTIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D2D1_STROKE_STYLE_PROPERTIES {
     fn eq(&self, other: &Self) -> bool {
@@ -6657,6 +6829,7 @@ impl ::core::fmt::Debug for D2D1_STROKE_STYLE_PROPERTIES1 {
 }
 unsafe impl ::windows::core::Abi for D2D1_STROKE_STYLE_PROPERTIES1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D2D1_STROKE_STYLE_PROPERTIES1 {
     fn eq(&self, other: &Self) -> bool {
@@ -6694,6 +6867,7 @@ impl ::core::default::Default for D2D1_STROKE_TRANSFORM_TYPE {
 }
 unsafe impl ::windows::core::Abi for D2D1_STROKE_TRANSFORM_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_STROKE_TRANSFORM_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6733,6 +6907,7 @@ impl ::core::default::Default for D2D1_SUBPROPERTY {
 }
 unsafe impl ::windows::core::Abi for D2D1_SUBPROPERTY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_SUBPROPERTY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6778,6 +6953,7 @@ impl ::core::default::Default for D2D1_SVG_ASPECT_ALIGN {
 }
 unsafe impl ::windows::core::Abi for D2D1_SVG_ASPECT_ALIGN {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_SVG_ASPECT_ALIGN {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6807,6 +6983,7 @@ impl ::core::default::Default for D2D1_SVG_ASPECT_SCALING {
 }
 unsafe impl ::windows::core::Abi for D2D1_SVG_ASPECT_SCALING {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_SVG_ASPECT_SCALING {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6860,6 +7037,7 @@ impl ::core::default::Default for D2D1_SVG_ATTRIBUTE_POD_TYPE {
 }
 unsafe impl ::windows::core::Abi for D2D1_SVG_ATTRIBUTE_POD_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_SVG_ATTRIBUTE_POD_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6889,6 +7067,7 @@ impl ::core::default::Default for D2D1_SVG_ATTRIBUTE_STRING_TYPE {
 }
 unsafe impl ::windows::core::Abi for D2D1_SVG_ATTRIBUTE_STRING_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_SVG_ATTRIBUTE_STRING_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6918,6 +7097,7 @@ impl ::core::default::Default for D2D1_SVG_DISPLAY {
 }
 unsafe impl ::windows::core::Abi for D2D1_SVG_DISPLAY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_SVG_DISPLAY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6943,6 +7123,7 @@ impl ::core::fmt::Debug for D2D1_SVG_LENGTH {
 }
 unsafe impl ::windows::core::Abi for D2D1_SVG_LENGTH {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D2D1_SVG_LENGTH {
     fn eq(&self, other: &Self) -> bool {
@@ -6978,6 +7159,7 @@ impl ::core::default::Default for D2D1_SVG_LENGTH_UNITS {
 }
 unsafe impl ::windows::core::Abi for D2D1_SVG_LENGTH_UNITS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_SVG_LENGTH_UNITS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7009,6 +7191,7 @@ impl ::core::default::Default for D2D1_SVG_LINE_CAP {
 }
 unsafe impl ::windows::core::Abi for D2D1_SVG_LINE_CAP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_SVG_LINE_CAP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7040,6 +7223,7 @@ impl ::core::default::Default for D2D1_SVG_LINE_JOIN {
 }
 unsafe impl ::windows::core::Abi for D2D1_SVG_LINE_JOIN {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_SVG_LINE_JOIN {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7069,6 +7253,7 @@ impl ::core::default::Default for D2D1_SVG_OVERFLOW {
 }
 unsafe impl ::windows::core::Abi for D2D1_SVG_OVERFLOW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_SVG_OVERFLOW {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7108,6 +7293,7 @@ impl ::core::default::Default for D2D1_SVG_PAINT_TYPE {
 }
 unsafe impl ::windows::core::Abi for D2D1_SVG_PAINT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_SVG_PAINT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7171,6 +7357,7 @@ impl ::core::default::Default for D2D1_SVG_PATH_COMMAND {
 }
 unsafe impl ::windows::core::Abi for D2D1_SVG_PATH_COMMAND {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_SVG_PATH_COMMAND {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7202,6 +7389,7 @@ impl ::core::fmt::Debug for D2D1_SVG_PRESERVE_ASPECT_RATIO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D2D1_SVG_PRESERVE_ASPECT_RATIO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D2D1_SVG_PRESERVE_ASPECT_RATIO {
@@ -7240,6 +7428,7 @@ impl ::core::default::Default for D2D1_SVG_UNIT_TYPE {
 }
 unsafe impl ::windows::core::Abi for D2D1_SVG_UNIT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_SVG_UNIT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7267,6 +7456,7 @@ impl ::core::fmt::Debug for D2D1_SVG_VIEWBOX {
 }
 unsafe impl ::windows::core::Abi for D2D1_SVG_VIEWBOX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D2D1_SVG_VIEWBOX {
     fn eq(&self, other: &Self) -> bool {
@@ -7302,6 +7492,7 @@ impl ::core::default::Default for D2D1_SVG_VISIBILITY {
 }
 unsafe impl ::windows::core::Abi for D2D1_SVG_VISIBILITY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_SVG_VISIBILITY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7331,6 +7522,7 @@ impl ::core::default::Default for D2D1_SWEEP_DIRECTION {
 }
 unsafe impl ::windows::core::Abi for D2D1_SWEEP_DIRECTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_SWEEP_DIRECTION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7374,6 +7566,7 @@ impl ::core::default::Default for D2D1_TABLETRANSFER_PROP {
 }
 unsafe impl ::windows::core::Abi for D2D1_TABLETRANSFER_PROP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_TABLETRANSFER_PROP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7403,6 +7596,7 @@ impl ::core::default::Default for D2D1_TEMPERATUREANDTINT_PROP {
 }
 unsafe impl ::windows::core::Abi for D2D1_TEMPERATUREANDTINT_PROP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_TEMPERATUREANDTINT_PROP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7436,6 +7630,7 @@ impl ::core::default::Default for D2D1_TEXT_ANTIALIAS_MODE {
 }
 unsafe impl ::windows::core::Abi for D2D1_TEXT_ANTIALIAS_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_TEXT_ANTIALIAS_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7465,6 +7660,7 @@ impl ::core::default::Default for D2D1_THREADING_MODE {
 }
 unsafe impl ::windows::core::Abi for D2D1_THREADING_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_THREADING_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7492,6 +7688,7 @@ impl ::core::default::Default for D2D1_TILE_PROP {
 }
 unsafe impl ::windows::core::Abi for D2D1_TILE_PROP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_TILE_PROP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7521,6 +7718,7 @@ impl ::core::default::Default for D2D1_TINT_PROP {
 }
 unsafe impl ::windows::core::Abi for D2D1_TINT_PROP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_TINT_PROP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7550,6 +7748,7 @@ impl ::core::default::Default for D2D1_TRANSFORMED_IMAGE_SOURCE_OPTIONS {
 }
 unsafe impl ::windows::core::Abi for D2D1_TRANSFORMED_IMAGE_SOURCE_OPTIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_TRANSFORMED_IMAGE_SOURCE_OPTIONS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7606,6 +7805,7 @@ impl ::core::fmt::Debug for D2D1_TRANSFORMED_IMAGE_SOURCE_PROPERTIES {
 }
 unsafe impl ::windows::core::Abi for D2D1_TRANSFORMED_IMAGE_SOURCE_PROPERTIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D2D1_TRANSFORMED_IMAGE_SOURCE_PROPERTIES {
     fn eq(&self, other: &Self) -> bool {
@@ -7643,6 +7843,7 @@ impl ::core::fmt::Debug for D2D1_TRIANGLE {
 #[cfg(feature = "Win32_Graphics_Direct2D_Common")]
 unsafe impl ::windows::core::Abi for D2D1_TRIANGLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Direct2D_Common")]
 impl ::core::cmp::PartialEq for D2D1_TRIANGLE {
@@ -7691,6 +7892,7 @@ impl ::core::default::Default for D2D1_TURBULENCE_PROP {
 }
 unsafe impl ::windows::core::Abi for D2D1_TURBULENCE_PROP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_TURBULENCE_PROP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7720,6 +7922,7 @@ impl ::core::default::Default for D2D1_UNIT_MODE {
 }
 unsafe impl ::windows::core::Abi for D2D1_UNIT_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_UNIT_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7747,6 +7950,7 @@ impl ::core::fmt::Debug for D2D1_VERTEX_BUFFER_PROPERTIES {
 }
 unsafe impl ::windows::core::Abi for D2D1_VERTEX_BUFFER_PROPERTIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D2D1_VERTEX_BUFFER_PROPERTIES {
     fn eq(&self, other: &Self) -> bool {
@@ -7786,6 +7990,7 @@ impl ::core::default::Default for D2D1_VERTEX_OPTIONS {
 }
 unsafe impl ::windows::core::Abi for D2D1_VERTEX_OPTIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_VERTEX_OPTIONS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7839,6 +8044,7 @@ impl ::core::fmt::Debug for D2D1_VERTEX_RANGE {
 }
 unsafe impl ::windows::core::Abi for D2D1_VERTEX_RANGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D2D1_VERTEX_RANGE {
     fn eq(&self, other: &Self) -> bool {
@@ -7874,6 +8080,7 @@ impl ::core::default::Default for D2D1_VERTEX_USAGE {
 }
 unsafe impl ::windows::core::Abi for D2D1_VERTEX_USAGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_VERTEX_USAGE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7905,6 +8112,7 @@ impl ::core::default::Default for D2D1_VIGNETTE_PROP {
 }
 unsafe impl ::windows::core::Abi for D2D1_VIGNETTE_PROP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_VIGNETTE_PROP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7934,6 +8142,7 @@ impl ::core::default::Default for D2D1_WHITELEVELADJUSTMENT_PROP {
 }
 unsafe impl ::windows::core::Abi for D2D1_WHITELEVELADJUSTMENT_PROP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_WHITELEVELADJUSTMENT_PROP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7963,6 +8172,7 @@ impl ::core::default::Default for D2D1_WINDOW_STATE {
 }
 unsafe impl ::windows::core::Abi for D2D1_WINDOW_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_WINDOW_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8026,6 +8236,7 @@ impl ::core::default::Default for D2D1_YCBCR_CHROMA_SUBSAMPLING {
 }
 unsafe impl ::windows::core::Abi for D2D1_YCBCR_CHROMA_SUBSAMPLING {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_YCBCR_CHROMA_SUBSAMPLING {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8063,6 +8274,7 @@ impl ::core::default::Default for D2D1_YCBCR_INTERPOLATION_MODE {
 }
 unsafe impl ::windows::core::Abi for D2D1_YCBCR_INTERPOLATION_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_YCBCR_INTERPOLATION_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8094,6 +8306,7 @@ impl ::core::default::Default for D2D1_YCBCR_PROP {
 }
 unsafe impl ::windows::core::Abi for D2D1_YCBCR_PROP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D2D1_YCBCR_PROP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8105,6 +8318,11 @@ pub const FACILITY_D2D: u32 = 2201u32;
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1AnalysisTransform(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1AnalysisTransform {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1AnalysisTransform {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn ProcessAnalysisResults(&self, analysisdata: &[u8]) -> ::windows::core::Result<()> {
@@ -8131,11 +8349,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ID2D1
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1AnalysisTransform {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1AnalysisTransform {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8160,6 +8373,11 @@ pub struct ID2D1AnalysisTransform_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1Bitmap(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1Bitmap {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1Bitmap {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn GetFactory(&self, factory: *mut ::core::option::Option<ID2D1Factory>) {
@@ -8266,11 +8484,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1Image> for &'a ID2D1Bitmap {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1Bitmap {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1Bitmap {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8319,6 +8532,11 @@ pub struct ID2D1Bitmap_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1Bitmap1(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1Bitmap1 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1Bitmap1 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn GetFactory(&self, factory: *mut ::core::option::Option<ID2D1Factory>) {
@@ -8468,11 +8686,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1Bitmap> for &'a ID2D1Bitmap1 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1Bitmap1 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1Bitmap1 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8504,6 +8717,11 @@ pub struct ID2D1Bitmap1_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1BitmapBrush(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1BitmapBrush {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1BitmapBrush {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn GetFactory(&self, factory: *mut ::core::option::Option<ID2D1Factory>) {
@@ -8620,11 +8838,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1Brush> for &'a ID2D1BitmapBrush {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1BitmapBrush {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1BitmapBrush {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8656,6 +8869,11 @@ pub struct ID2D1BitmapBrush_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1BitmapBrush1(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1BitmapBrush1 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1BitmapBrush1 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn GetFactory(&self, factory: *mut ::core::option::Option<ID2D1Factory>) {
@@ -8800,11 +9018,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1BitmapBrush> for &'a ID2D1BitmapBru
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1BitmapBrush1 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1BitmapBrush1 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8830,6 +9043,11 @@ pub struct ID2D1BitmapBrush1_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1BitmapRenderTarget(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1BitmapRenderTarget {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1BitmapRenderTarget {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn GetFactory(&self, factory: *mut ::core::option::Option<ID2D1Factory>) {
@@ -9162,11 +9380,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1RenderTarget> for &'a ID2D1BitmapRe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1BitmapRenderTarget {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1BitmapRenderTarget {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9191,6 +9404,11 @@ pub struct ID2D1BitmapRenderTarget_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1BlendTransform(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1BlendTransform {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1BlendTransform {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn GetInputCount(&self) -> u32 {
@@ -9274,11 +9492,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1ConcreteTransform> for &'a ID2D1Ble
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1BlendTransform {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1BlendTransform {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9304,6 +9517,11 @@ pub struct ID2D1BlendTransform_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1BorderTransform(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1BorderTransform {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1BorderTransform {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn GetInputCount(&self) -> u32 {
@@ -9395,11 +9613,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1ConcreteTransform> for &'a ID2D1Bor
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1BorderTransform {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1BorderTransform {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9427,6 +9640,11 @@ pub struct ID2D1BorderTransform_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1BoundsAdjustmentTransform(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1BoundsAdjustmentTransform {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1BoundsAdjustmentTransform {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn GetInputCount(&self) -> u32 {
@@ -9483,11 +9701,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1TransformNode> for &'a ID2D1BoundsA
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1BoundsAdjustmentTransform {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1BoundsAdjustmentTransform {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9519,6 +9732,11 @@ pub struct ID2D1BoundsAdjustmentTransform_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1Brush(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1Brush {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1Brush {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn GetFactory(&self, factory: *mut ::core::option::Option<ID2D1Factory>) {
@@ -9583,11 +9801,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1Resource> for &'a ID2D1Brush {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1Brush {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1Brush {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9621,6 +9834,11 @@ pub struct ID2D1Brush_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1ColorContext(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1ColorContext {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1ColorContext {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn GetFactory(&self, factory: *mut ::core::option::Option<ID2D1Factory>) {
@@ -9679,11 +9897,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1Resource> for &'a ID2D1ColorContext
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1ColorContext {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1ColorContext {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9710,6 +9923,11 @@ pub struct ID2D1ColorContext_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1ColorContext1(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1ColorContext1 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1ColorContext1 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn GetFactory(&self, factory: *mut ::core::option::Option<ID2D1Factory>) {
@@ -9803,11 +10021,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1ColorContext> for &'a ID2D1ColorCon
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1ColorContext1 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1ColorContext1 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9840,6 +10053,11 @@ pub struct ID2D1ColorContext1_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1CommandList(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1CommandList {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1CommandList {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn GetFactory(&self, factory: *mut ::core::option::Option<ID2D1Factory>) {
@@ -9914,11 +10132,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1Image> for &'a ID2D1CommandList {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1CommandList {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1CommandList {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9944,6 +10157,11 @@ pub struct ID2D1CommandList_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1CommandSink(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1CommandSink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1CommandSink {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn BeginDraw(&self) -> ::windows::core::Result<()> {
@@ -10079,11 +10297,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ID2D1
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1CommandSink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1CommandSink {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10171,6 +10384,11 @@ pub struct ID2D1CommandSink_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1CommandSink1(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1CommandSink1 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1CommandSink1 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn BeginDraw(&self) -> ::windows::core::Result<()> {
@@ -10330,11 +10548,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1CommandSink> for &'a ID2D1CommandSi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1CommandSink1 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1CommandSink1 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10359,6 +10572,11 @@ pub struct ID2D1CommandSink1_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1CommandSink2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1CommandSink2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1CommandSink2 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn BeginDraw(&self) -> ::windows::core::Result<()> {
@@ -10551,11 +10769,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1CommandSink1> for &'a ID2D1CommandS
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1CommandSink2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1CommandSink2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10585,6 +10798,11 @@ pub struct ID2D1CommandSink2_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1CommandSink3(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1CommandSink3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1CommandSink3 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn BeginDraw(&self) -> ::windows::core::Result<()> {
@@ -10801,11 +11019,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1CommandSink2> for &'a ID2D1CommandS
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1CommandSink3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1CommandSink3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10830,6 +11043,11 @@ pub struct ID2D1CommandSink3_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1CommandSink4(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1CommandSink4 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1CommandSink4 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn BeginDraw(&self) -> ::windows::core::Result<()> {
@@ -11070,11 +11288,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1CommandSink3> for &'a ID2D1CommandS
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1CommandSink4 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1CommandSink4 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11099,6 +11312,11 @@ pub struct ID2D1CommandSink4_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1CommandSink5(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1CommandSink5 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1CommandSink5 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn BeginDraw(&self) -> ::windows::core::Result<()> {
@@ -11364,11 +11582,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1CommandSink4> for &'a ID2D1CommandS
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1CommandSink5 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1CommandSink5 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11396,6 +11609,11 @@ pub struct ID2D1CommandSink5_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1ComputeInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1ComputeInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1ComputeInfo {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn SetInputDescription<'a, Param1: ::windows::core::IntoParam<'a, D2D1_INPUT_DESCRIPTION>>(&self, inputindex: u32, inputdescription: Param1) -> ::windows::core::Result<()> {
@@ -11467,11 +11685,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1RenderInfo> for &'a ID2D1ComputeInf
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1ComputeInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1ComputeInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11498,6 +11711,11 @@ pub struct ID2D1ComputeInfo_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1ComputeTransform(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1ComputeTransform {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1ComputeTransform {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn GetInputCount(&self) -> u32 {
@@ -11589,11 +11807,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1Transform> for &'a ID2D1ComputeTran
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1ComputeTransform {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1ComputeTransform {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11622,6 +11835,11 @@ pub struct ID2D1ComputeTransform_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1ConcreteTransform(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1ConcreteTransform {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1ConcreteTransform {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn GetInputCount(&self) -> u32 {
@@ -11677,11 +11895,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1TransformNode> for &'a ID2D1Concret
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1ConcreteTransform {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1ConcreteTransform {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11710,6 +11923,11 @@ pub struct ID2D1ConcreteTransform_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1DCRenderTarget(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1DCRenderTarget {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1DCRenderTarget {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn GetFactory(&self, factory: *mut ::core::option::Option<ID2D1Factory>) {
@@ -12042,11 +12260,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1RenderTarget> for &'a ID2D1DCRender
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1DCRenderTarget {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1DCRenderTarget {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12074,6 +12287,11 @@ pub struct ID2D1DCRenderTarget_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1Device(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1Device {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1Device {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn GetFactory(&self, factory: *mut ::core::option::Option<ID2D1Factory>) {
@@ -12143,11 +12361,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1Resource> for &'a ID2D1Device {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1Device {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1Device {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12179,6 +12392,11 @@ pub struct ID2D1Device_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1Device1(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1Device1 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1Device1 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn GetFactory(&self, factory: *mut ::core::option::Option<ID2D1Factory>) {
@@ -12281,11 +12499,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1Device> for &'a ID2D1Device1 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1Device1 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1Device1 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12312,6 +12525,11 @@ pub struct ID2D1Device1_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1Device2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1Device2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1Device2 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn GetFactory(&self, factory: *mut ::core::option::Option<ID2D1Factory>) {
@@ -12449,11 +12667,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1Device1> for &'a ID2D1Device2 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1Device2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1Device2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12483,6 +12696,11 @@ pub struct ID2D1Device2_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1Device3(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1Device3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1Device3 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn GetFactory(&self, factory: *mut ::core::option::Option<ID2D1Factory>) {
@@ -12645,11 +12863,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1Device2> for &'a ID2D1Device3 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1Device3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1Device3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12674,6 +12887,11 @@ pub struct ID2D1Device3_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1Device4(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1Device4 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1Device4 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn GetFactory(&self, factory: *mut ::core::option::Option<ID2D1Factory>) {
@@ -12869,11 +13087,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1Device3> for &'a ID2D1Device4 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1Device4 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1Device4 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12900,6 +13113,11 @@ pub struct ID2D1Device4_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1Device5(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1Device5 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1Device5 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn GetFactory(&self, factory: *mut ::core::option::Option<ID2D1Factory>) {
@@ -13120,11 +13338,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1Device4> for &'a ID2D1Device5 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1Device5 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1Device5 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13149,6 +13362,11 @@ pub struct ID2D1Device5_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1Device6(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1Device6 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1Device6 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn GetFactory(&self, factory: *mut ::core::option::Option<ID2D1Factory>) {
@@ -13394,11 +13612,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1Device5> for &'a ID2D1Device6 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1Device6 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1Device6 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13423,6 +13636,11 @@ pub struct ID2D1Device6_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1DeviceContext(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1DeviceContext {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1DeviceContext {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn GetFactory(&self, factory: *mut ::core::option::Option<ID2D1Factory>) {
@@ -13928,11 +14146,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1RenderTarget> for &'a ID2D1DeviceCo
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1DeviceContext {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1DeviceContext {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -14060,6 +14273,11 @@ pub struct ID2D1DeviceContext_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1DeviceContext1(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1DeviceContext1 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1DeviceContext1 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn GetFactory(&self, factory: *mut ::core::option::Option<ID2D1Factory>) {
@@ -14599,11 +14817,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1DeviceContext> for &'a ID2D1DeviceC
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1DeviceContext1 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1DeviceContext1 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -14630,6 +14843,11 @@ pub struct ID2D1DeviceContext1_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1DeviceContext2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1DeviceContext2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1DeviceContext2 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn GetFactory(&self, factory: *mut ::core::option::Option<ID2D1Factory>) {
@@ -15247,11 +15465,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1DeviceContext1> for &'a ID2D1Device
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1DeviceContext2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1DeviceContext2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -15304,6 +15517,11 @@ pub struct ID2D1DeviceContext2_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1DeviceContext3(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1DeviceContext3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1DeviceContext3 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn GetFactory(&self, factory: *mut ::core::option::Option<ID2D1Factory>) {
@@ -15950,11 +16168,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1DeviceContext2> for &'a ID2D1Device
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1DeviceContext3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1DeviceContext3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -15980,6 +16193,11 @@ pub struct ID2D1DeviceContext3_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1DeviceContext4(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1DeviceContext4 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1DeviceContext4 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn GetFactory(&self, factory: *mut ::core::option::Option<ID2D1Factory>) {
@@ -16681,11 +16899,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1DeviceContext3> for &'a ID2D1Device
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1DeviceContext4 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1DeviceContext4 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -16734,6 +16947,11 @@ pub struct ID2D1DeviceContext4_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1DeviceContext5(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1DeviceContext5 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1DeviceContext5 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn GetFactory(&self, factory: *mut ::core::option::Option<ID2D1Factory>) {
@@ -17477,11 +17695,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1DeviceContext4> for &'a ID2D1Device
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1DeviceContext5 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1DeviceContext5 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -17518,6 +17731,11 @@ pub struct ID2D1DeviceContext5_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1DeviceContext6(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1DeviceContext6 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1DeviceContext6 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn GetFactory(&self, factory: *mut ::core::option::Option<ID2D1Factory>) {
@@ -18286,11 +18504,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1DeviceContext5> for &'a ID2D1Device
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1DeviceContext6 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1DeviceContext6 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -18318,6 +18531,11 @@ pub struct ID2D1DeviceContext6_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1DrawInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1DrawInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1DrawInfo {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn SetInputDescription<'a, Param1: ::windows::core::IntoParam<'a, D2D1_INPUT_DESCRIPTION>>(&self, inputindex: u32, inputdescription: Param1) -> ::windows::core::Result<()> {
@@ -18397,11 +18615,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1RenderInfo> for &'a ID2D1DrawInfo {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1DrawInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1DrawInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -18430,6 +18643,11 @@ pub struct ID2D1DrawInfo_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1DrawTransform(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1DrawTransform {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1DrawTransform {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn GetInputCount(&self) -> u32 {
@@ -18516,11 +18734,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1Transform> for &'a ID2D1DrawTransfo
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1DrawTransform {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1DrawTransform {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -18545,6 +18758,11 @@ pub struct ID2D1DrawTransform_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1DrawingStateBlock(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1DrawingStateBlock {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1DrawingStateBlock {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn GetFactory(&self, factory: *mut ::core::option::Option<ID2D1Factory>) {
@@ -18611,11 +18829,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1Resource> for &'a ID2D1DrawingState
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1DrawingStateBlock {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1DrawingStateBlock {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -18655,6 +18868,11 @@ pub struct ID2D1DrawingStateBlock_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1DrawingStateBlock1(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1DrawingStateBlock1 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1DrawingStateBlock1 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn GetFactory(&self, factory: *mut ::core::option::Option<ID2D1Factory>) {
@@ -18751,11 +18969,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1DrawingStateBlock> for &'a ID2D1Dra
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1DrawingStateBlock1 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1DrawingStateBlock1 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -18787,6 +19000,11 @@ pub struct ID2D1DrawingStateBlock1_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1Effect(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1Effect {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1Effect {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn GetPropertyCount(&self) -> u32 {
@@ -18895,11 +19113,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1Properties> for &'a ID2D1Effect {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1Effect {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1Effect {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -18931,6 +19144,11 @@ pub struct ID2D1Effect_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1EffectContext(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1EffectContext {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1EffectContext {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn GetDpi(&self, dpix: *mut f32, dpiy: *mut f32) {
@@ -19058,11 +19276,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ID2D1
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1EffectContext {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1EffectContext {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -19128,6 +19341,11 @@ pub struct ID2D1EffectContext_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1EffectContext1(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1EffectContext1 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1EffectContext1 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn GetDpi(&self, dpix: *mut f32, dpiy: *mut f32) {
@@ -19280,11 +19498,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1EffectContext> for &'a ID2D1EffectC
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1EffectContext1 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1EffectContext1 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -19309,6 +19522,11 @@ pub struct ID2D1EffectContext1_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1EffectContext2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1EffectContext2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1EffectContext2 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn GetDpi(&self, dpix: *mut f32, dpiy: *mut f32) {
@@ -19493,11 +19711,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1EffectContext1> for &'a ID2D1Effect
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1EffectContext2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1EffectContext2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -19529,6 +19742,11 @@ pub struct ID2D1EffectContext2_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1EffectImpl(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1EffectImpl {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1EffectImpl {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn Initialize<'a, Param0: ::windows::core::IntoParam<'a, ID2D1EffectContext>, Param1: ::windows::core::IntoParam<'a, ID2D1TransformGraph>>(&self, effectcontext: Param0, transformgraph: Param1) -> ::windows::core::Result<()> {
@@ -19563,11 +19781,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ID2D1
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1EffectImpl {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1EffectImpl {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -19594,6 +19807,11 @@ pub struct ID2D1EffectImpl_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1EllipseGeometry(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1EllipseGeometry {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1EllipseGeometry {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn GetFactory(&self, factory: *mut ::core::option::Option<ID2D1Factory>) {
@@ -19737,11 +19955,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1Geometry> for &'a ID2D1EllipseGeome
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1EllipseGeometry {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1EllipseGeometry {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -19769,6 +19982,11 @@ pub struct ID2D1EllipseGeometry_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1Factory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1Factory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1Factory {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn ReloadSystemMetrics(&self) -> ::windows::core::Result<()> {
@@ -19869,11 +20087,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ID2D1
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1Factory {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1Factory {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -19941,6 +20154,11 @@ pub struct ID2D1Factory_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1Factory1(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1Factory1 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1Factory1 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn ReloadSystemMetrics(&self) -> ::windows::core::Result<()> {
@@ -20111,11 +20329,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1Factory> for &'a ID2D1Factory1 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1Factory1 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1Factory1 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -20161,6 +20374,11 @@ pub struct ID2D1Factory1_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1Factory2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1Factory2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1Factory2 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn ReloadSystemMetrics(&self) -> ::windows::core::Result<()> {
@@ -20357,11 +20575,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1Factory1> for &'a ID2D1Factory2 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1Factory2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1Factory2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -20389,6 +20602,11 @@ pub struct ID2D1Factory2_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1Factory3(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1Factory3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1Factory3 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn ReloadSystemMetrics(&self) -> ::windows::core::Result<()> {
@@ -20611,11 +20829,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1Factory2> for &'a ID2D1Factory3 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1Factory3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1Factory3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -20643,6 +20856,11 @@ pub struct ID2D1Factory3_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1Factory4(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1Factory4 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1Factory4 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn ReloadSystemMetrics(&self) -> ::windows::core::Result<()> {
@@ -20891,11 +21109,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1Factory3> for &'a ID2D1Factory4 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1Factory4 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1Factory4 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -20923,6 +21136,11 @@ pub struct ID2D1Factory4_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1Factory5(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1Factory5 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1Factory5 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn ReloadSystemMetrics(&self) -> ::windows::core::Result<()> {
@@ -21197,11 +21415,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1Factory4> for &'a ID2D1Factory5 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1Factory5 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1Factory5 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -21229,6 +21442,11 @@ pub struct ID2D1Factory5_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1Factory6(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1Factory6 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1Factory6 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn ReloadSystemMetrics(&self) -> ::windows::core::Result<()> {
@@ -21529,11 +21747,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1Factory5> for &'a ID2D1Factory6 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1Factory6 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1Factory6 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -21561,6 +21774,11 @@ pub struct ID2D1Factory6_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1Factory7(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1Factory7 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1Factory7 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn ReloadSystemMetrics(&self) -> ::windows::core::Result<()> {
@@ -21887,11 +22105,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1Factory6> for &'a ID2D1Factory7 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1Factory7 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1Factory7 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -21919,6 +22132,11 @@ pub struct ID2D1Factory7_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1GdiInteropRenderTarget(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1GdiInteropRenderTarget {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1GdiInteropRenderTarget {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`, `\"Win32_Graphics_Gdi\"`*"]
     #[cfg(feature = "Win32_Graphics_Gdi")]
@@ -21952,11 +22170,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ID2D1
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1GdiInteropRenderTarget {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1GdiInteropRenderTarget {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -21988,6 +22201,11 @@ pub struct ID2D1GdiInteropRenderTarget_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1GdiMetafile(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1GdiMetafile {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1GdiMetafile {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn GetFactory(&self, factory: *mut ::core::option::Option<ID2D1Factory>) {
@@ -22044,11 +22262,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1Resource> for &'a ID2D1GdiMetafile 
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1GdiMetafile {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1GdiMetafile {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -22077,6 +22290,11 @@ pub struct ID2D1GdiMetafile_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1GdiMetafile1(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1GdiMetafile1 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1GdiMetafile1 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn GetFactory(&self, factory: *mut ::core::option::Option<ID2D1Factory>) {
@@ -22163,11 +22381,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1GdiMetafile> for &'a ID2D1GdiMetafi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1GdiMetafile1 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1GdiMetafile1 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -22196,6 +22409,11 @@ pub struct ID2D1GdiMetafile1_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1GdiMetafileSink(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1GdiMetafileSink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1GdiMetafileSink {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn ProcessRecord(&self, recordtype: u32, recorddata: *const ::core::ffi::c_void, recorddatasize: u32) -> ::windows::core::Result<()> {
@@ -22222,11 +22440,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ID2D1
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1GdiMetafileSink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1GdiMetafileSink {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -22251,6 +22464,11 @@ pub struct ID2D1GdiMetafileSink_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1GdiMetafileSink1(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1GdiMetafileSink1 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1GdiMetafileSink1 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn ProcessRecord(&self, recordtype: u32, recorddata: *const ::core::ffi::c_void, recorddatasize: u32) -> ::windows::core::Result<()> {
@@ -22301,11 +22519,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1GdiMetafileSink> for &'a ID2D1GdiMe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1GdiMetafileSink1 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1GdiMetafileSink1 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -22330,6 +22543,11 @@ pub struct ID2D1GdiMetafileSink1_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1Geometry(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1Geometry {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1Geometry {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn GetFactory(&self, factory: *mut ::core::option::Option<ID2D1Factory>) {
@@ -22448,11 +22666,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1Resource> for &'a ID2D1Geometry {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1Geometry {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1Geometry {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -22528,6 +22741,11 @@ pub struct ID2D1Geometry_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1GeometryGroup(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1GeometryGroup {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1GeometryGroup {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn GetFactory(&self, factory: *mut ::core::option::Option<ID2D1Factory>) {
@@ -22679,11 +22897,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1Geometry> for &'a ID2D1GeometryGrou
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1GeometryGroup {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1GeometryGroup {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -22713,6 +22926,11 @@ pub struct ID2D1GeometryGroup_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1GeometryRealization(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1GeometryRealization {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1GeometryRealization {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn GetFactory(&self, factory: *mut ::core::option::Option<ID2D1Factory>) {
@@ -22759,11 +22977,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1Resource> for &'a ID2D1GeometryReal
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1GeometryRealization {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1GeometryRealization {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -22788,6 +23001,12 @@ pub struct ID2D1GeometryRealization_Vtbl {
 #[cfg(feature = "Win32_Graphics_Direct2D_Common")]
 #[repr(transparent)]
 pub struct ID2D1GeometrySink(::windows::core::IUnknown);
+#[cfg(feature = "Win32_Graphics_Direct2D_Common")]
+impl ::core::clone::Clone for ID2D1GeometrySink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_Graphics_Direct2D_Common")]
 impl ID2D1GeometrySink {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`, `\"Win32_Graphics_Direct2D_Common\"`*"]
@@ -22900,12 +23119,6 @@ impl<'a> ::windows::core::IntoParam<'a, Common::ID2D1SimplifiedGeometrySink> for
     }
 }
 #[cfg(feature = "Win32_Graphics_Direct2D_Common")]
-impl ::core::clone::Clone for ID2D1GeometrySink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_Graphics_Direct2D_Common")]
 impl ::core::cmp::PartialEq for ID2D1GeometrySink {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -22953,6 +23166,11 @@ pub struct ID2D1GeometrySink_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1GradientMesh(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1GradientMesh {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1GradientMesh {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn GetFactory(&self, factory: *mut ::core::option::Option<ID2D1Factory>) {
@@ -23008,11 +23226,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1Resource> for &'a ID2D1GradientMesh
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1GradientMesh {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1GradientMesh {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -23041,6 +23254,11 @@ pub struct ID2D1GradientMesh_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1GradientStopCollection(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1GradientStopCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1GradientStopCollection {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn GetFactory(&self, factory: *mut ::core::option::Option<ID2D1Factory>) {
@@ -23104,11 +23322,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1Resource> for &'a ID2D1GradientStop
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1GradientStopCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1GradientStopCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -23139,6 +23352,11 @@ pub struct ID2D1GradientStopCollection_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1GradientStopCollection1(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1GradientStopCollection1 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1GradientStopCollection1 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn GetFactory(&self, factory: *mut ::core::option::Option<ID2D1Factory>) {
@@ -23243,11 +23461,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1GradientStopCollection> for &'a ID2
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1GradientStopCollection1 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1GradientStopCollection1 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -23279,6 +23492,11 @@ pub struct ID2D1GradientStopCollection1_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1HwndRenderTarget(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1HwndRenderTarget {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1HwndRenderTarget {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn GetFactory(&self, factory: *mut ::core::option::Option<ID2D1Factory>) {
@@ -23620,11 +23838,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1RenderTarget> for &'a ID2D1HwndRend
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1HwndRenderTarget {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1HwndRenderTarget {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -23657,6 +23870,11 @@ pub struct ID2D1HwndRenderTarget_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1Image(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1Image {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1Image {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn GetFactory(&self, factory: *mut ::core::option::Option<ID2D1Factory>) {
@@ -23703,11 +23921,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1Resource> for &'a ID2D1Image {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1Image {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1Image {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -23731,6 +23944,11 @@ pub struct ID2D1Image_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1ImageBrush(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1ImageBrush {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1ImageBrush {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn GetFactory(&self, factory: *mut ::core::option::Option<ID2D1Factory>) {
@@ -23857,11 +24075,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1Brush> for &'a ID2D1ImageBrush {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1ImageBrush {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1ImageBrush {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -23901,6 +24114,11 @@ pub struct ID2D1ImageBrush_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1ImageSource(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1ImageSource {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1ImageSource {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn GetFactory(&self, factory: *mut ::core::option::Option<ID2D1Factory>) {
@@ -23977,11 +24195,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1Image> for &'a ID2D1ImageSource {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1ImageSource {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1ImageSource {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -24010,6 +24223,11 @@ pub struct ID2D1ImageSource_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1ImageSourceFromWic(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1ImageSourceFromWic {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1ImageSourceFromWic {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn GetFactory(&self, factory: *mut ::core::option::Option<ID2D1Factory>) {
@@ -24121,11 +24339,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1ImageSource> for &'a ID2D1ImageSour
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1ImageSourceFromWic {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1ImageSourceFromWic {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -24161,6 +24374,11 @@ pub struct ID2D1ImageSourceFromWic_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1Ink(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1Ink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1Ink {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn GetFactory(&self, factory: *mut ::core::option::Option<ID2D1Factory>) {
@@ -24252,11 +24470,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1Resource> for &'a ID2D1Ink {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1Ink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1Ink {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -24296,6 +24509,11 @@ pub struct ID2D1Ink_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1InkStyle(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1InkStyle {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1InkStyle {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn GetFactory(&self, factory: *mut ::core::option::Option<ID2D1Factory>) {
@@ -24360,11 +24578,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1Resource> for &'a ID2D1InkStyle {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1InkStyle {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1InkStyle {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -24398,6 +24611,11 @@ pub struct ID2D1InkStyle_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1Layer(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1Layer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1Layer {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn GetFactory(&self, factory: *mut ::core::option::Option<ID2D1Factory>) {
@@ -24451,11 +24669,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1Resource> for &'a ID2D1Layer {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1Layer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1Layer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -24483,6 +24696,11 @@ pub struct ID2D1Layer_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1LinearGradientBrush(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1LinearGradientBrush {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1LinearGradientBrush {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn GetFactory(&self, factory: *mut ::core::option::Option<ID2D1Factory>) {
@@ -24595,11 +24813,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1Brush> for &'a ID2D1LinearGradientB
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1LinearGradientBrush {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1LinearGradientBrush {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -24640,6 +24853,11 @@ pub struct ID2D1LinearGradientBrush_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1LookupTable3D(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1LookupTable3D {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1LookupTable3D {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn GetFactory(&self, factory: *mut ::core::option::Option<ID2D1Factory>) {
@@ -24686,11 +24904,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1Resource> for &'a ID2D1LookupTable3
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1LookupTable3D {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1LookupTable3D {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -24714,6 +24927,11 @@ pub struct ID2D1LookupTable3D_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1Mesh(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1Mesh {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1Mesh {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn GetFactory(&self, factory: *mut ::core::option::Option<ID2D1Factory>) {
@@ -24765,11 +24983,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1Resource> for &'a ID2D1Mesh {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1Mesh {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1Mesh {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -24794,6 +25007,11 @@ pub struct ID2D1Mesh_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1Multithread(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1Multithread {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1Multithread {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -24829,11 +25047,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ID2D1
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1Multithread {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1Multithread {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -24863,6 +25076,11 @@ pub struct ID2D1Multithread_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1OffsetTransform(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1OffsetTransform {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1OffsetTransform {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn GetInputCount(&self) -> u32 {
@@ -24921,11 +25139,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1TransformNode> for &'a ID2D1OffsetT
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1OffsetTransform {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1OffsetTransform {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -24957,6 +25170,11 @@ pub struct ID2D1OffsetTransform_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1PathGeometry(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1PathGeometry {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1PathGeometry {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn GetFactory(&self, factory: *mut ::core::option::Option<ID2D1Factory>) {
@@ -25116,11 +25334,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1Geometry> for &'a ID2D1PathGeometry
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1PathGeometry {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1PathGeometry {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -25154,6 +25367,11 @@ pub struct ID2D1PathGeometry_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1PathGeometry1(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1PathGeometry1 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1PathGeometry1 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn GetFactory(&self, factory: *mut ::core::option::Option<ID2D1Factory>) {
@@ -25339,11 +25557,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1PathGeometry> for &'a ID2D1PathGeom
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1PathGeometry1 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1PathGeometry1 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -25371,6 +25584,11 @@ pub struct ID2D1PathGeometry1_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1PrintControl(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1PrintControl {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1PrintControl {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`, `\"Win32_Graphics_Direct2D_Common\"`, `\"Win32_System_Com\"`*"]
     #[cfg(all(feature = "Win32_Graphics_Direct2D_Common", feature = "Win32_System_Com"))]
@@ -25402,11 +25620,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ID2D1
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1PrintControl {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1PrintControl {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -25435,6 +25648,11 @@ pub struct ID2D1PrintControl_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1Properties(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1Properties {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1Properties {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn GetPropertyCount(&self) -> u32 {
@@ -25502,11 +25720,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ID2D1
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1Properties {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1Properties {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -25541,6 +25754,11 @@ pub struct ID2D1Properties_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1RadialGradientBrush(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1RadialGradientBrush {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1RadialGradientBrush {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn GetFactory(&self, factory: *mut ::core::option::Option<ID2D1Factory>) {
@@ -25669,11 +25887,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1Brush> for &'a ID2D1RadialGradientB
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1RadialGradientBrush {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1RadialGradientBrush {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -25718,6 +25931,11 @@ pub struct ID2D1RadialGradientBrush_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1RectangleGeometry(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1RectangleGeometry {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1RectangleGeometry {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn GetFactory(&self, factory: *mut ::core::option::Option<ID2D1Factory>) {
@@ -25861,11 +26079,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1Geometry> for &'a ID2D1RectangleGeo
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1RectangleGeometry {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1RectangleGeometry {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -25893,6 +26106,11 @@ pub struct ID2D1RectangleGeometry_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1RenderInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1RenderInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1RenderInfo {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn SetInputDescription<'a, Param1: ::windows::core::IntoParam<'a, D2D1_INPUT_DESCRIPTION>>(&self, inputindex: u32, inputdescription: Param1) -> ::windows::core::Result<()> {
@@ -25932,11 +26150,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ID2D1
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1RenderInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1RenderInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -25967,6 +26180,11 @@ pub struct ID2D1RenderInfo_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1RenderTarget(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1RenderTarget {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1RenderTarget {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn GetFactory(&self, factory: *mut ::core::option::Option<ID2D1Factory>) {
@@ -26274,11 +26492,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1Resource> for &'a ID2D1RenderTarget
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1RenderTarget {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1RenderTarget {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -26454,6 +26667,11 @@ pub struct ID2D1RenderTarget_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1Resource(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1Resource {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1Resource {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn GetFactory(&self, factory: *mut ::core::option::Option<ID2D1Factory>) {
@@ -26480,11 +26698,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ID2D1
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1Resource {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1Resource {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -26509,6 +26722,11 @@ pub struct ID2D1Resource_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1ResourceTexture(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1ResourceTexture {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1ResourceTexture {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn Update(&self, minimumextents: *const u32, maximimumextents: *const u32, strides: *const u32, dimensions: u32, data: &[u8]) -> ::windows::core::Result<()> {
@@ -26535,11 +26753,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ID2D1
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1ResourceTexture {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1ResourceTexture {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -26564,6 +26777,11 @@ pub struct ID2D1ResourceTexture_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1RoundedRectangleGeometry(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1RoundedRectangleGeometry {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1RoundedRectangleGeometry {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn GetFactory(&self, factory: *mut ::core::option::Option<ID2D1Factory>) {
@@ -26707,11 +26925,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1Geometry> for &'a ID2D1RoundedRecta
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1RoundedRectangleGeometry {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1RoundedRectangleGeometry {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -26739,6 +26952,11 @@ pub struct ID2D1RoundedRectangleGeometry_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1SolidColorBrush(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1SolidColorBrush {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1SolidColorBrush {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn GetFactory(&self, factory: *mut ::core::option::Option<ID2D1Factory>) {
@@ -26835,11 +27053,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1Brush> for &'a ID2D1SolidColorBrush
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1SolidColorBrush {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1SolidColorBrush {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -26871,6 +27084,11 @@ pub struct ID2D1SolidColorBrush_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1SourceTransform(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1SourceTransform {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1SourceTransform {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn GetInputCount(&self) -> u32 {
@@ -26962,11 +27180,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1Transform> for &'a ID2D1SourceTrans
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1SourceTransform {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1SourceTransform {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -26995,6 +27208,11 @@ pub struct ID2D1SourceTransform_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1SpriteBatch(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1SpriteBatch {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1SpriteBatch {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn GetFactory(&self, factory: *mut ::core::option::Option<ID2D1Factory>) {
@@ -27064,11 +27282,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1Resource> for &'a ID2D1SpriteBatch 
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1SpriteBatch {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1SpriteBatch {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -27106,6 +27319,11 @@ pub struct ID2D1SpriteBatch_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1StrokeStyle(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1StrokeStyle {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1StrokeStyle {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn GetFactory(&self, factory: *mut ::core::option::Option<ID2D1Factory>) {
@@ -27188,11 +27406,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1Resource> for &'a ID2D1StrokeStyle 
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1StrokeStyle {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1StrokeStyle {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -27225,6 +27438,11 @@ pub struct ID2D1StrokeStyle_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1StrokeStyle1(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1StrokeStyle1 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1StrokeStyle1 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn GetFactory(&self, factory: *mut ::core::option::Option<ID2D1Factory>) {
@@ -27331,11 +27549,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1StrokeStyle> for &'a ID2D1StrokeSty
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1StrokeStyle1 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1StrokeStyle1 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -27360,6 +27573,11 @@ pub struct ID2D1StrokeStyle1_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1SvgAttribute(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1SvgAttribute {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1SvgAttribute {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn GetFactory(&self, factory: *mut ::core::option::Option<ID2D1Factory>) {
@@ -27415,11 +27633,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1Resource> for &'a ID2D1SvgAttribute
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1SvgAttribute {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1SvgAttribute {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -27445,6 +27658,11 @@ pub struct ID2D1SvgAttribute_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1SvgDocument(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1SvgDocument {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1SvgDocument {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn GetFactory(&self, factory: *mut ::core::option::Option<ID2D1Factory>) {
@@ -27549,11 +27767,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1Resource> for &'a ID2D1SvgDocument 
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1SvgDocument {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1SvgDocument {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -27606,6 +27819,11 @@ pub struct ID2D1SvgDocument_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1SvgElement(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1SvgElement {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1SvgElement {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn GetFactory(&self, factory: *mut ::core::option::Option<ID2D1Factory>) {
@@ -27781,11 +27999,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1Resource> for &'a ID2D1SvgElement {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1SvgElement {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1SvgElement {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -27854,6 +28067,11 @@ pub struct ID2D1SvgElement_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1SvgGlyphStyle(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1SvgGlyphStyle {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1SvgGlyphStyle {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn GetFactory(&self, factory: *mut ::core::option::Option<ID2D1Factory>) {
@@ -27920,11 +28138,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1Resource> for &'a ID2D1SvgGlyphStyl
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1SvgGlyphStyle {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1SvgGlyphStyle {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -27953,6 +28166,11 @@ pub struct ID2D1SvgGlyphStyle_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1SvgPaint(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1SvgPaint {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1SvgPaint {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn GetFactory(&self, factory: *mut ::core::option::Option<ID2D1Factory>) {
@@ -28058,11 +28276,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1SvgAttribute> for &'a ID2D1SvgPaint
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1SvgPaint {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1SvgPaint {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -28099,6 +28312,11 @@ pub struct ID2D1SvgPaint_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1SvgPathData(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1SvgPathData {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1SvgPathData {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn GetFactory(&self, factory: *mut ::core::option::Option<ID2D1Factory>) {
@@ -28212,11 +28430,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1SvgAttribute> for &'a ID2D1SvgPathD
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1SvgPathData {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1SvgPathData {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -28252,6 +28465,11 @@ pub struct ID2D1SvgPathData_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1SvgPointCollection(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1SvgPointCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1SvgPointCollection {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn GetFactory(&self, factory: *mut ::core::option::Option<ID2D1Factory>) {
@@ -28345,11 +28563,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1SvgAttribute> for &'a ID2D1SvgPoint
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1SvgPointCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1SvgPointCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -28383,6 +28596,11 @@ pub struct ID2D1SvgPointCollection_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1SvgStrokeDashArray(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1SvgStrokeDashArray {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1SvgStrokeDashArray {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn GetFactory(&self, factory: *mut ::core::option::Option<ID2D1Factory>) {
@@ -28482,11 +28700,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1SvgAttribute> for &'a ID2D1SvgStrok
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1SvgStrokeDashArray {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1SvgStrokeDashArray {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -28516,6 +28729,11 @@ pub struct ID2D1SvgStrokeDashArray_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1TessellationSink(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1TessellationSink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1TessellationSink {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`, `\"Win32_Graphics_Direct2D_Common\"`*"]
     #[cfg(feature = "Win32_Graphics_Direct2D_Common")]
@@ -28547,11 +28765,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ID2D1
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1TessellationSink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1TessellationSink {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -28580,6 +28793,11 @@ pub struct ID2D1TessellationSink_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1Transform(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1Transform {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1Transform {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn GetInputCount(&self) -> u32 {
@@ -28642,11 +28860,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1TransformNode> for &'a ID2D1Transfo
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1Transform {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1Transform {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -28682,6 +28895,11 @@ pub struct ID2D1Transform_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1TransformGraph(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1TransformGraph {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1TransformGraph {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn GetInputCount(&self) -> u32 {
@@ -28740,11 +28958,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ID2D1
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1TransformGraph {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1TransformGraph {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -28777,6 +28990,11 @@ pub struct ID2D1TransformGraph_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1TransformNode(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1TransformNode {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1TransformNode {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn GetInputCount(&self) -> u32 {
@@ -28803,11 +29021,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ID2D1
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1TransformNode {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1TransformNode {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -28832,6 +29045,11 @@ pub struct ID2D1TransformNode_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1TransformedGeometry(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1TransformedGeometry {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1TransformedGeometry {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn GetFactory(&self, factory: *mut ::core::option::Option<ID2D1Factory>) {
@@ -28979,11 +29197,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1Geometry> for &'a ID2D1TransformedG
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1TransformedGeometry {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1TransformedGeometry {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -29012,6 +29225,11 @@ pub struct ID2D1TransformedGeometry_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1TransformedImageSource(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1TransformedImageSource {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1TransformedImageSource {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn GetFactory(&self, factory: *mut ::core::option::Option<ID2D1Factory>) {
@@ -29086,11 +29304,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID2D1Image> for &'a ID2D1TransformedImag
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID2D1TransformedImageSource {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID2D1TransformedImageSource {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -29116,6 +29329,11 @@ pub struct ID2D1TransformedImageSource_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
 #[repr(transparent)]
 pub struct ID2D1VertexBuffer(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID2D1VertexBuffer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID2D1VertexBuffer {
     #[doc = "*Required features: `\"Win32_Graphics_Direct2D\"`*"]
     pub unsafe fn Map(&self, data: *mut *mut u8, buffersize: u32) -> ::windows::core::Result<()> {
@@ -29144,11 +29362,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for ID2D1Vert
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ID2D1VertexBuffer {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for ID2D1VertexBuffer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for ID2D1VertexBuffer {
@@ -29190,6 +29403,7 @@ impl ::core::clone::Clone for Matrix4x3F {
 #[cfg(feature = "Win32_Graphics_Direct2D_Common")]
 unsafe impl ::windows::core::Abi for Matrix4x3F {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Direct2D_Common")]
 impl ::core::cmp::PartialEq for Matrix4x3F {
@@ -29222,6 +29436,7 @@ impl ::core::clone::Clone for Matrix4x4F {
 #[cfg(feature = "Win32_Graphics_Direct2D_Common")]
 unsafe impl ::windows::core::Abi for Matrix4x4F {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Direct2D_Common")]
 impl ::core::cmp::PartialEq for Matrix4x4F {
@@ -29254,6 +29469,7 @@ impl ::core::clone::Clone for Matrix5x4F {
 #[cfg(feature = "Win32_Graphics_Direct2D_Common")]
 unsafe impl ::windows::core::Abi for Matrix5x4F {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Direct2D_Common")]
 impl ::core::cmp::PartialEq for Matrix5x4F {

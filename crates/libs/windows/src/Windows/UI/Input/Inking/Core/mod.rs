@@ -60,11 +60,6 @@ impl CoreIncrementalInkStroke {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for CoreIncrementalInkStroke {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for CoreIncrementalInkStroke {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -78,7 +73,6 @@ impl ::core::fmt::Debug for CoreIncrementalInkStroke {
 }
 unsafe impl ::windows::core::RuntimeType for CoreIncrementalInkStroke {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Input.Inking.Core.CoreIncrementalInkStroke;{fda015d3-9d66-4f7d-a57f-cc70b9cfaa76})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -277,11 +271,6 @@ impl CoreInkIndependentInputSource {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for CoreInkIndependentInputSource {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for CoreInkIndependentInputSource {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -295,7 +284,6 @@ impl ::core::fmt::Debug for CoreInkIndependentInputSource {
 }
 unsafe impl ::windows::core::RuntimeType for CoreInkIndependentInputSource {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Input.Inking.Core.CoreInkIndependentInputSource;{39b38da9-7639-4499-a5b5-191d00e35b16})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -384,11 +372,6 @@ impl CoreInkPresenterHost {
         unsafe { (::windows::core::Interface::vtable(this).SetRootVisual)(::core::mem::transmute_copy(this), value.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for CoreInkPresenterHost {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for CoreInkPresenterHost {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -402,7 +385,6 @@ impl ::core::fmt::Debug for CoreInkPresenterHost {
 }
 unsafe impl ::windows::core::RuntimeType for CoreInkPresenterHost {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Input.Inking.Core.CoreInkPresenterHost;{396e89e6-7d55-4617-9e58-68c70c9169b9})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -478,6 +460,7 @@ impl ::core::default::Default for CoreWetStrokeDisposition {
 }
 unsafe impl ::windows::core::Abi for CoreWetStrokeDisposition {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CoreWetStrokeDisposition {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -486,7 +469,6 @@ impl ::core::fmt::Debug for CoreWetStrokeDisposition {
 }
 unsafe impl ::windows::core::RuntimeType for CoreWetStrokeDisposition {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Input.Inking.Core.CoreWetStrokeDisposition;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -526,11 +508,6 @@ impl CoreWetStrokeUpdateEventArgs {
         unsafe { (::windows::core::Interface::vtable(this).SetDisposition)(::core::mem::transmute_copy(this), value).ok() }
     }
 }
-impl ::core::clone::Clone for CoreWetStrokeUpdateEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for CoreWetStrokeUpdateEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -544,7 +521,6 @@ impl ::core::fmt::Debug for CoreWetStrokeUpdateEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for CoreWetStrokeUpdateEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Input.Inking.Core.CoreWetStrokeUpdateEventArgs;{fb07d14c-3380-457a-a987-991357896c1b})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -698,11 +674,6 @@ impl CoreWetStrokeUpdateSource {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for CoreWetStrokeUpdateSource {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for CoreWetStrokeUpdateSource {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -716,7 +687,6 @@ impl ::core::fmt::Debug for CoreWetStrokeUpdateSource {
 }
 unsafe impl ::windows::core::RuntimeType for CoreWetStrokeUpdateSource {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Input.Inking.Core.CoreWetStrokeUpdateSource;{1f718e22-ee52-4e00-8209-4c3e5b21a3cc})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -773,6 +743,11 @@ unsafe impl ::core::marker::Sync for CoreWetStrokeUpdateSource {}
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICoreIncrementalInkStroke(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICoreIncrementalInkStroke {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICoreIncrementalInkStroke {
     type Vtable = ICoreIncrementalInkStroke_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xfda015d3_9d66_4f7d_a57f_cc70b9cfaa76);
@@ -799,6 +774,11 @@ pub struct ICoreIncrementalInkStroke_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICoreIncrementalInkStrokeFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICoreIncrementalInkStrokeFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICoreIncrementalInkStrokeFactory {
     type Vtable = ICoreIncrementalInkStrokeFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd7c59f46_8da8_4f70_9751_e53bb6df4596);
@@ -815,6 +795,11 @@ pub struct ICoreIncrementalInkStrokeFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICoreInkIndependentInputSource(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICoreInkIndependentInputSource {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICoreInkIndependentInputSource {
     type Vtable = ICoreInkIndependentInputSource_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x39b38da9_7639_4499_a5b5_191d00e35b16);
@@ -884,6 +869,11 @@ pub struct ICoreInkIndependentInputSource_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICoreInkIndependentInputSource2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICoreInkIndependentInputSource2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICoreInkIndependentInputSource2 {
     type Vtable = ICoreInkIndependentInputSource2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x2846b012_0b59_5bb9_a3c5_becb7cf03a33);
@@ -904,6 +894,11 @@ pub struct ICoreInkIndependentInputSource2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICoreInkIndependentInputSourceStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICoreInkIndependentInputSourceStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICoreInkIndependentInputSourceStatics {
     type Vtable = ICoreInkIndependentInputSourceStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x73e6011b_80c0_4dfb_9b66_10ba7f3f9c84);
@@ -917,6 +912,11 @@ pub struct ICoreInkIndependentInputSourceStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICoreInkPresenterHost(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICoreInkPresenterHost {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICoreInkPresenterHost {
     type Vtable = ICoreInkPresenterHost_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x396e89e6_7d55_4617_9e58_68c70c9169b9);
@@ -938,6 +938,11 @@ pub struct ICoreInkPresenterHost_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICoreWetStrokeUpdateEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICoreWetStrokeUpdateEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICoreWetStrokeUpdateEventArgs {
     type Vtable = ICoreWetStrokeUpdateEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xfb07d14c_3380_457a_a987_991357896c1b);
@@ -957,6 +962,11 @@ pub struct ICoreWetStrokeUpdateEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICoreWetStrokeUpdateSource(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICoreWetStrokeUpdateSource {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICoreWetStrokeUpdateSource {
     type Vtable = ICoreWetStrokeUpdateSource_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1f718e22_ee52_4e00_8209_4c3e5b21a3cc);
@@ -1010,6 +1020,11 @@ pub struct ICoreWetStrokeUpdateSource_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICoreWetStrokeUpdateSourceStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICoreWetStrokeUpdateSourceStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICoreWetStrokeUpdateSourceStatics {
     type Vtable = ICoreWetStrokeUpdateSourceStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x3dad9cba_1d3d_46ae_ab9d_8647486c6f90);

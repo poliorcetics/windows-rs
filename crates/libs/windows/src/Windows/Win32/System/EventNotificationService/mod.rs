@@ -6,6 +6,12 @@ pub const CONNECTION_AOL: u32 = 4u32;
 #[repr(transparent)]
 pub struct ISensLogon(::windows::core::IUnknown);
 #[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ISensLogon {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "Win32_System_Com")]
 impl ISensLogon {
     #[doc = "*Required features: `\"Win32_System_EventNotificationService\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -92,12 +98,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a ISensLogo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ISensLogon {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ISensLogon {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -154,6 +154,12 @@ pub struct ISensLogon_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ISensLogon2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ISensLogon2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ISensLogon2 {
     #[doc = "*Required features: `\"Win32_System_EventNotificationService\"`, `\"Win32_Foundation\"`*"]
@@ -231,12 +237,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a ISensLogo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ISensLogon2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ISensLogon2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -285,6 +285,12 @@ pub struct ISensLogon2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ISensNetwork(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ISensNetwork {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ISensNetwork {
     #[doc = "*Required features: `\"Win32_System_EventNotificationService\"`, `\"Win32_Foundation\"`*"]
@@ -362,12 +368,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a ISensNetw
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ISensNetwork {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ISensNetwork {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -416,6 +416,12 @@ pub struct ISensNetwork_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ISensOnNow(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ISensOnNow {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ISensOnNow {
     #[doc = "*Required features: `\"Win32_System_EventNotificationService\"`*"]
@@ -477,12 +483,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for ISensOnNow {
 impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a ISensOnNow {
     fn into_param(self) -> ::windows::core::Param<'a, super::Com::IDispatch> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ISensOnNow {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 #[cfg(feature = "Win32_System_Com")]
@@ -587,6 +587,7 @@ impl ::core::fmt::Debug for QOCINFO {
 }
 unsafe impl ::windows::core::Abi for QOCINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for QOCINFO {
     fn eq(&self, other: &Self) -> bool {
@@ -628,6 +629,7 @@ impl ::core::default::Default for SENS_CONNECTION_TYPE {
 }
 unsafe impl ::windows::core::Abi for SENS_CONNECTION_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SENS_CONNECTION_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -655,6 +657,7 @@ impl ::core::fmt::Debug for SENS_QOCINFO {
 }
 unsafe impl ::windows::core::Abi for SENS_QOCINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SENS_QOCINFO {
     fn eq(&self, other: &Self) -> bool {

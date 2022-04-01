@@ -3,6 +3,11 @@ pub const CLSID_SoftwareBitmapNativeFactory: ::windows::core::GUID = ::windows::
 #[doc = "*Required features: `\"Win32_System_WinRT_Graphics_Imaging\"`*"]
 #[repr(transparent)]
 pub struct ISoftwareBitmapNative(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISoftwareBitmapNative {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISoftwareBitmapNative {
     #[doc = "*Required features: `\"Win32_System_WinRT_Graphics_Imaging\"`*"]
     pub unsafe fn GetData<T: ::windows::core::Interface>(&self) -> ::windows::core::Result<T> {
@@ -50,11 +55,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISoftwareBitmapNative {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISoftwareBitmapNative {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -79,6 +79,11 @@ pub struct ISoftwareBitmapNative_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT_Graphics_Imaging\"`*"]
 #[repr(transparent)]
 pub struct ISoftwareBitmapNativeFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISoftwareBitmapNativeFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISoftwareBitmapNativeFactory {
     #[doc = "*Required features: `\"Win32_System_WinRT_Graphics_Imaging\"`, `\"Win32_Foundation\"`, `\"Win32_Graphics_Imaging\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Imaging"))]
@@ -131,11 +136,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for ISoft
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a ISoftwareBitmapNativeFactory {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IInspectable> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for ISoftwareBitmapNativeFactory {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for ISoftwareBitmapNativeFactory {

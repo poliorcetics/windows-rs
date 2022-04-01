@@ -29,11 +29,6 @@ impl DeviceServicingDetails {
         }
     }
 }
-impl ::core::clone::Clone for DeviceServicingDetails {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DeviceServicingDetails {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -47,7 +42,6 @@ impl ::core::fmt::Debug for DeviceServicingDetails {
 }
 unsafe impl ::windows::core::RuntimeType for DeviceServicingDetails {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Background.DeviceServicingDetails;{4aabee29-2344-4ac4-8527-4a8ef6905645})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -122,11 +116,6 @@ impl DeviceUseDetails {
         }
     }
 }
-impl ::core::clone::Clone for DeviceUseDetails {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DeviceUseDetails {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -140,7 +129,6 @@ impl ::core::fmt::Debug for DeviceUseDetails {
 }
 unsafe impl ::windows::core::RuntimeType for DeviceUseDetails {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Background.DeviceUseDetails;{7d565141-557e-4154-b994-e4f7a11fb323})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -197,6 +185,11 @@ unsafe impl ::core::marker::Sync for DeviceUseDetails {}
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDeviceServicingDetails(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDeviceServicingDetails {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDeviceServicingDetails {
     type Vtable = IDeviceServicingDetails_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x4aabee29_2344_4ac4_8527_4a8ef6905645);
@@ -215,6 +208,11 @@ pub struct IDeviceServicingDetails_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDeviceUseDetails(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDeviceUseDetails {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDeviceUseDetails {
     type Vtable = IDeviceUseDetails_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x7d565141_557e_4154_b994_e4f7a11fb323);

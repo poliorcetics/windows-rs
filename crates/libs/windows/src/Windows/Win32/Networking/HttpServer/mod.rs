@@ -18,6 +18,7 @@ impl ::core::fmt::Debug for HTTP2_SETTINGS_LIMITS_PARAM {
 }
 unsafe impl ::windows::core::Abi for HTTP2_SETTINGS_LIMITS_PARAM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HTTP2_SETTINGS_LIMITS_PARAM {
     fn eq(&self, other: &Self) -> bool {
@@ -48,6 +49,7 @@ impl ::core::fmt::Debug for HTTP2_WINDOW_SIZE_PARAM {
 }
 unsafe impl ::windows::core::Abi for HTTP2_WINDOW_SIZE_PARAM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HTTP2_WINDOW_SIZE_PARAM {
     fn eq(&self, other: &Self) -> bool {
@@ -79,6 +81,7 @@ impl ::core::fmt::Debug for HTTPAPI_VERSION {
 }
 unsafe impl ::windows::core::Abi for HTTPAPI_VERSION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HTTPAPI_VERSION {
     fn eq(&self, other: &Self) -> bool {
@@ -114,6 +117,7 @@ impl ::core::default::Default for HTTP_503_RESPONSE_VERBOSITY {
 }
 unsafe impl ::windows::core::Abi for HTTP_503_RESPONSE_VERBOSITY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HTTP_503_RESPONSE_VERBOSITY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -143,6 +147,7 @@ impl ::core::default::Default for HTTP_AUTHENTICATION_HARDENING_LEVELS {
 }
 unsafe impl ::windows::core::Abi for HTTP_AUTHENTICATION_HARDENING_LEVELS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HTTP_AUTHENTICATION_HARDENING_LEVELS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -186,6 +191,7 @@ impl ::core::default::Default for HTTP_AUTH_STATUS {
 }
 unsafe impl ::windows::core::Abi for HTTP_AUTH_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HTTP_AUTH_STATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -211,6 +217,7 @@ impl ::core::fmt::Debug for HTTP_BANDWIDTH_LIMIT_INFO {
 }
 unsafe impl ::windows::core::Abi for HTTP_BANDWIDTH_LIMIT_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HTTP_BANDWIDTH_LIMIT_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -247,6 +254,7 @@ impl ::core::fmt::Debug for HTTP_BINDING_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for HTTP_BINDING_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for HTTP_BINDING_INFO {
@@ -281,6 +289,7 @@ impl ::core::fmt::Debug for HTTP_BYTE_RANGE {
 }
 unsafe impl ::windows::core::Abi for HTTP_BYTE_RANGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HTTP_BYTE_RANGE {
     fn eq(&self, other: &Self) -> bool {
@@ -312,6 +321,7 @@ impl ::core::fmt::Debug for HTTP_CACHE_POLICY {
 }
 unsafe impl ::windows::core::Abi for HTTP_CACHE_POLICY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HTTP_CACHE_POLICY {
     fn eq(&self, other: &Self) -> bool {
@@ -349,6 +359,7 @@ impl ::core::default::Default for HTTP_CACHE_POLICY_TYPE {
 }
 unsafe impl ::windows::core::Abi for HTTP_CACHE_POLICY_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HTTP_CACHE_POLICY_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -380,6 +391,7 @@ impl ::core::fmt::Debug for HTTP_CHANNEL_BIND_INFO {
 }
 unsafe impl ::windows::core::Abi for HTTP_CHANNEL_BIND_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HTTP_CHANNEL_BIND_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -419,6 +431,7 @@ impl ::core::fmt::Debug for HTTP_CONNECTION_LIMIT_INFO {
 }
 unsafe impl ::windows::core::Abi for HTTP_CONNECTION_LIMIT_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HTTP_CONNECTION_LIMIT_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -456,6 +469,7 @@ impl ::core::fmt::Debug for HTTP_COOKED_URL {
 }
 unsafe impl ::windows::core::Abi for HTTP_COOKED_URL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HTTP_COOKED_URL {
     fn eq(&self, other: &Self) -> bool {
@@ -495,6 +509,7 @@ impl ::core::default::Default for HTTP_CREATE_REQUEST_QUEUE_PROPERTY_ID {
 }
 unsafe impl ::windows::core::Abi for HTTP_CREATE_REQUEST_QUEUE_PROPERTY_ID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HTTP_CREATE_REQUEST_QUEUE_PROPERTY_ID {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -521,6 +536,7 @@ impl ::core::fmt::Debug for HTTP_CREATE_REQUEST_QUEUE_PROPERTY_INFO {
 }
 unsafe impl ::windows::core::Abi for HTTP_CREATE_REQUEST_QUEUE_PROPERTY_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HTTP_CREATE_REQUEST_QUEUE_PROPERTY_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -551,6 +567,7 @@ impl ::core::clone::Clone for HTTP_DATA_CHUNK {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for HTTP_DATA_CHUNK {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for HTTP_DATA_CHUNK {
@@ -587,6 +604,7 @@ impl ::core::clone::Clone for HTTP_DATA_CHUNK_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for HTTP_DATA_CHUNK_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for HTTP_DATA_CHUNK_0 {
@@ -626,6 +644,7 @@ impl ::core::fmt::Debug for HTTP_DATA_CHUNK_0_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for HTTP_DATA_CHUNK_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for HTTP_DATA_CHUNK_0_0 {
@@ -665,6 +684,7 @@ impl ::core::fmt::Debug for HTTP_DATA_CHUNK_0_1 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for HTTP_DATA_CHUNK_0_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for HTTP_DATA_CHUNK_0_1 {
@@ -704,6 +724,7 @@ impl ::core::fmt::Debug for HTTP_DATA_CHUNK_0_2 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for HTTP_DATA_CHUNK_0_2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for HTTP_DATA_CHUNK_0_2 {
@@ -743,6 +764,7 @@ impl ::core::fmt::Debug for HTTP_DATA_CHUNK_0_3 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for HTTP_DATA_CHUNK_0_3 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for HTTP_DATA_CHUNK_0_3 {
@@ -782,6 +804,7 @@ impl ::core::fmt::Debug for HTTP_DATA_CHUNK_0_4 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for HTTP_DATA_CHUNK_0_4 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for HTTP_DATA_CHUNK_0_4 {
@@ -826,6 +849,7 @@ impl ::core::default::Default for HTTP_DATA_CHUNK_TYPE {
 }
 unsafe impl ::windows::core::Abi for HTTP_DATA_CHUNK_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HTTP_DATA_CHUNK_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -853,6 +877,7 @@ impl ::core::default::Default for HTTP_DELEGATE_REQUEST_PROPERTY_ID {
 }
 unsafe impl ::windows::core::Abi for HTTP_DELEGATE_REQUEST_PROPERTY_ID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HTTP_DELEGATE_REQUEST_PROPERTY_ID {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -879,6 +904,7 @@ impl ::core::fmt::Debug for HTTP_DELEGATE_REQUEST_PROPERTY_INFO {
 }
 unsafe impl ::windows::core::Abi for HTTP_DELEGATE_REQUEST_PROPERTY_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HTTP_DELEGATE_REQUEST_PROPERTY_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -914,6 +940,7 @@ impl ::core::default::Default for HTTP_ENABLED_STATE {
 }
 unsafe impl ::windows::core::Abi for HTTP_ENABLED_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HTTP_ENABLED_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -940,6 +967,7 @@ impl ::core::fmt::Debug for HTTP_ERROR_HEADERS_PARAM {
 }
 unsafe impl ::windows::core::Abi for HTTP_ERROR_HEADERS_PARAM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HTTP_ERROR_HEADERS_PARAM {
     fn eq(&self, other: &Self) -> bool {
@@ -981,6 +1009,7 @@ impl ::core::default::Default for HTTP_FEATURE_ID {
 }
 unsafe impl ::windows::core::Abi for HTTP_FEATURE_ID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HTTP_FEATURE_ID {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1008,6 +1037,7 @@ impl ::core::fmt::Debug for HTTP_FLOWRATE_INFO {
 }
 unsafe impl ::windows::core::Abi for HTTP_FLOWRATE_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HTTP_FLOWRATE_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -1147,6 +1177,7 @@ impl ::core::default::Default for HTTP_HEADER_ID {
 }
 unsafe impl ::windows::core::Abi for HTTP_HEADER_ID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HTTP_HEADER_ID {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1174,6 +1205,7 @@ impl ::core::default::Default for HTTP_INITIALIZE {
 }
 unsafe impl ::windows::core::Abi for HTTP_INITIALIZE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HTTP_INITIALIZE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1227,6 +1259,7 @@ impl ::core::fmt::Debug for HTTP_KNOWN_HEADER {
 }
 unsafe impl ::windows::core::Abi for HTTP_KNOWN_HEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HTTP_KNOWN_HEADER {
     fn eq(&self, other: &Self) -> bool {
@@ -1263,6 +1296,7 @@ impl ::core::fmt::Debug for HTTP_LISTEN_ENDPOINT_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for HTTP_LISTEN_ENDPOINT_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for HTTP_LISTEN_ENDPOINT_INFO {
@@ -1337,6 +1371,7 @@ impl ::core::fmt::Debug for HTTP_LOGGING_INFO {
 #[cfg(feature = "Win32_Security")]
 unsafe impl ::windows::core::Abi for HTTP_LOGGING_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Security")]
 impl ::core::cmp::PartialEq for HTTP_LOGGING_INFO {
@@ -1379,6 +1414,7 @@ impl ::core::default::Default for HTTP_LOGGING_ROLLOVER_TYPE {
 }
 unsafe impl ::windows::core::Abi for HTTP_LOGGING_ROLLOVER_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HTTP_LOGGING_ROLLOVER_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1410,6 +1446,7 @@ impl ::core::default::Default for HTTP_LOGGING_TYPE {
 }
 unsafe impl ::windows::core::Abi for HTTP_LOGGING_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HTTP_LOGGING_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1434,6 +1471,7 @@ impl ::core::fmt::Debug for HTTP_LOG_DATA {
 }
 unsafe impl ::windows::core::Abi for HTTP_LOG_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HTTP_LOG_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -1465,6 +1503,7 @@ impl ::core::default::Default for HTTP_LOG_DATA_TYPE {
 }
 unsafe impl ::windows::core::Abi for HTTP_LOG_DATA_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HTTP_LOG_DATA_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1549,6 +1588,7 @@ impl ::core::fmt::Debug for HTTP_LOG_FIELDS_DATA {
 }
 unsafe impl ::windows::core::Abi for HTTP_LOG_FIELDS_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HTTP_LOG_FIELDS_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -1648,6 +1688,7 @@ impl ::core::fmt::Debug for HTTP_MULTIPLE_KNOWN_HEADERS {
 }
 unsafe impl ::windows::core::Abi for HTTP_MULTIPLE_KNOWN_HEADERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HTTP_MULTIPLE_KNOWN_HEADERS {
     fn eq(&self, other: &Self) -> bool {
@@ -1680,6 +1721,7 @@ impl ::core::fmt::Debug for HTTP_PERFORMANCE_PARAM {
 }
 unsafe impl ::windows::core::Abi for HTTP_PERFORMANCE_PARAM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HTTP_PERFORMANCE_PARAM {
     fn eq(&self, other: &Self) -> bool {
@@ -1723,6 +1765,7 @@ impl ::core::default::Default for HTTP_PERFORMANCE_PARAM_TYPE {
 }
 unsafe impl ::windows::core::Abi for HTTP_PERFORMANCE_PARAM_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HTTP_PERFORMANCE_PARAM_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1747,6 +1790,7 @@ impl ::core::fmt::Debug for HTTP_PROPERTY_FLAGS {
 }
 unsafe impl ::windows::core::Abi for HTTP_PROPERTY_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HTTP_PROPERTY_FLAGS {
     fn eq(&self, other: &Self) -> bool {
@@ -1778,6 +1822,7 @@ impl ::core::fmt::Debug for HTTP_PROTECTION_LEVEL_INFO {
 }
 unsafe impl ::windows::core::Abi for HTTP_PROTECTION_LEVEL_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HTTP_PROTECTION_LEVEL_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -1813,6 +1858,7 @@ impl ::core::default::Default for HTTP_PROTECTION_LEVEL_TYPE {
 }
 unsafe impl ::windows::core::Abi for HTTP_PROTECTION_LEVEL_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HTTP_PROTECTION_LEVEL_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1838,6 +1884,7 @@ impl ::core::fmt::Debug for HTTP_QOS_SETTING_INFO {
 }
 unsafe impl ::windows::core::Abi for HTTP_QOS_SETTING_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HTTP_QOS_SETTING_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -1873,6 +1920,7 @@ impl ::core::default::Default for HTTP_QOS_SETTING_TYPE {
 }
 unsafe impl ::windows::core::Abi for HTTP_QOS_SETTING_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HTTP_QOS_SETTING_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1897,6 +1945,7 @@ impl ::core::fmt::Debug for HTTP_QUERY_REQUEST_QUALIFIER_QUIC {
 }
 unsafe impl ::windows::core::Abi for HTTP_QUERY_REQUEST_QUALIFIER_QUIC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HTTP_QUERY_REQUEST_QUALIFIER_QUIC {
     fn eq(&self, other: &Self) -> bool {
@@ -1927,6 +1976,7 @@ impl ::core::fmt::Debug for HTTP_QUERY_REQUEST_QUALIFIER_TCP {
 }
 unsafe impl ::windows::core::Abi for HTTP_QUERY_REQUEST_QUALIFIER_TCP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HTTP_QUERY_REQUEST_QUALIFIER_TCP {
     fn eq(&self, other: &Self) -> bool {
@@ -1958,6 +2008,7 @@ impl ::core::fmt::Debug for HTTP_QUIC_API_TIMINGS {
 }
 unsafe impl ::windows::core::Abi for HTTP_QUIC_API_TIMINGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HTTP_QUIC_API_TIMINGS {
     fn eq(&self, other: &Self) -> bool {
@@ -2014,6 +2065,7 @@ impl ::core::fmt::Debug for HTTP_QUIC_CONNECTION_API_TIMINGS {
 }
 unsafe impl ::windows::core::Abi for HTTP_QUIC_CONNECTION_API_TIMINGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HTTP_QUIC_CONNECTION_API_TIMINGS {
     fn eq(&self, other: &Self) -> bool {
@@ -2080,6 +2132,7 @@ impl ::core::fmt::Debug for HTTP_QUIC_STREAM_API_TIMINGS {
 }
 unsafe impl ::windows::core::Abi for HTTP_QUIC_STREAM_API_TIMINGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HTTP_QUIC_STREAM_API_TIMINGS {
     fn eq(&self, other: &Self) -> bool {
@@ -2115,6 +2168,7 @@ impl ::core::default::Default for HTTP_RECEIVE_HTTP_REQUEST_FLAGS {
 }
 unsafe impl ::windows::core::Abi for HTTP_RECEIVE_HTTP_REQUEST_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HTTP_RECEIVE_HTTP_REQUEST_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2176,6 +2230,7 @@ impl ::core::fmt::Debug for HTTP_REQUEST_AUTH_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for HTTP_REQUEST_AUTH_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for HTTP_REQUEST_AUTH_INFO {
@@ -2220,6 +2275,7 @@ impl ::core::default::Default for HTTP_REQUEST_AUTH_TYPE {
 }
 unsafe impl ::windows::core::Abi for HTTP_REQUEST_AUTH_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HTTP_REQUEST_AUTH_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2247,6 +2303,7 @@ impl ::core::fmt::Debug for HTTP_REQUEST_CHANNEL_BIND_STATUS {
 }
 unsafe impl ::windows::core::Abi for HTTP_REQUEST_CHANNEL_BIND_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HTTP_REQUEST_CHANNEL_BIND_STATUS {
     fn eq(&self, other: &Self) -> bool {
@@ -2289,6 +2346,7 @@ impl ::core::fmt::Debug for HTTP_REQUEST_HEADERS {
 }
 unsafe impl ::windows::core::Abi for HTTP_REQUEST_HEADERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HTTP_REQUEST_HEADERS {
     fn eq(&self, other: &Self) -> bool {
@@ -2321,6 +2379,7 @@ impl ::core::fmt::Debug for HTTP_REQUEST_INFO {
 }
 unsafe impl ::windows::core::Abi for HTTP_REQUEST_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HTTP_REQUEST_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -2370,6 +2429,7 @@ impl ::core::default::Default for HTTP_REQUEST_INFO_TYPE {
 }
 unsafe impl ::windows::core::Abi for HTTP_REQUEST_INFO_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HTTP_REQUEST_INFO_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2409,6 +2469,7 @@ impl ::core::default::Default for HTTP_REQUEST_PROPERTY {
 }
 unsafe impl ::windows::core::Abi for HTTP_REQUEST_PROPERTY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HTTP_REQUEST_PROPERTY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2434,6 +2495,7 @@ impl ::core::fmt::Debug for HTTP_REQUEST_PROPERTY_SNI {
 }
 unsafe impl ::windows::core::Abi for HTTP_REQUEST_PROPERTY_SNI {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HTTP_REQUEST_PROPERTY_SNI {
     fn eq(&self, other: &Self) -> bool {
@@ -2470,6 +2532,7 @@ impl ::core::fmt::Debug for HTTP_REQUEST_PROPERTY_STREAM_ERROR {
 }
 unsafe impl ::windows::core::Abi for HTTP_REQUEST_PROPERTY_STREAM_ERROR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HTTP_REQUEST_PROPERTY_STREAM_ERROR {
     fn eq(&self, other: &Self) -> bool {
@@ -2503,6 +2566,7 @@ impl ::core::fmt::Debug for HTTP_REQUEST_SIZING_INFO {
 }
 unsafe impl ::windows::core::Abi for HTTP_REQUEST_SIZING_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HTTP_REQUEST_SIZING_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -2552,6 +2616,7 @@ impl ::core::default::Default for HTTP_REQUEST_SIZING_TYPE {
 }
 unsafe impl ::windows::core::Abi for HTTP_REQUEST_SIZING_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HTTP_REQUEST_SIZING_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2577,6 +2642,7 @@ impl ::core::fmt::Debug for HTTP_REQUEST_TIMING_INFO {
 }
 unsafe impl ::windows::core::Abi for HTTP_REQUEST_TIMING_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HTTP_REQUEST_TIMING_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -2668,6 +2734,7 @@ impl ::core::default::Default for HTTP_REQUEST_TIMING_TYPE {
 }
 unsafe impl ::windows::core::Abi for HTTP_REQUEST_TIMING_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HTTP_REQUEST_TIMING_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2696,6 +2763,7 @@ impl ::core::fmt::Debug for HTTP_REQUEST_TOKEN_BINDING_INFO {
 }
 unsafe impl ::windows::core::Abi for HTTP_REQUEST_TOKEN_BINDING_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HTTP_REQUEST_TOKEN_BINDING_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -2767,6 +2835,7 @@ impl ::core::fmt::Debug for HTTP_REQUEST_V1 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 unsafe impl ::windows::core::Abi for HTTP_REQUEST_V1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 impl ::core::cmp::PartialEq for HTTP_REQUEST_V1 {
@@ -2807,6 +2876,7 @@ impl ::core::fmt::Debug for HTTP_REQUEST_V2 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 unsafe impl ::windows::core::Abi for HTTP_REQUEST_V2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 impl ::core::cmp::PartialEq for HTTP_REQUEST_V2 {
@@ -2848,6 +2918,7 @@ impl ::core::fmt::Debug for HTTP_RESPONSE_HEADERS {
 }
 unsafe impl ::windows::core::Abi for HTTP_RESPONSE_HEADERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HTTP_RESPONSE_HEADERS {
     fn eq(&self, other: &Self) -> bool {
@@ -2880,6 +2951,7 @@ impl ::core::fmt::Debug for HTTP_RESPONSE_INFO {
 }
 unsafe impl ::windows::core::Abi for HTTP_RESPONSE_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HTTP_RESPONSE_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -2919,6 +2991,7 @@ impl ::core::default::Default for HTTP_RESPONSE_INFO_TYPE {
 }
 unsafe impl ::windows::core::Abi for HTTP_RESPONSE_INFO_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HTTP_RESPONSE_INFO_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2955,6 +3028,7 @@ impl ::core::fmt::Debug for HTTP_RESPONSE_V1 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for HTTP_RESPONSE_V1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for HTTP_RESPONSE_V1 {
@@ -2995,6 +3069,7 @@ impl ::core::fmt::Debug for HTTP_RESPONSE_V2 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for HTTP_RESPONSE_V2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for HTTP_RESPONSE_V2 {
@@ -3033,6 +3108,7 @@ impl ::core::default::Default for HTTP_SCHEME {
 }
 unsafe impl ::windows::core::Abi for HTTP_SCHEME {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HTTP_SCHEME {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3072,6 +3148,7 @@ impl ::core::fmt::Debug for HTTP_SERVER_AUTHENTICATION_BASIC_PARAMS {
 }
 unsafe impl ::windows::core::Abi for HTTP_SERVER_AUTHENTICATION_BASIC_PARAMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HTTP_SERVER_AUTHENTICATION_BASIC_PARAMS {
     fn eq(&self, other: &Self) -> bool {
@@ -3105,6 +3182,7 @@ impl ::core::fmt::Debug for HTTP_SERVER_AUTHENTICATION_DIGEST_PARAMS {
 }
 unsafe impl ::windows::core::Abi for HTTP_SERVER_AUTHENTICATION_DIGEST_PARAMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HTTP_SERVER_AUTHENTICATION_DIGEST_PARAMS {
     fn eq(&self, other: &Self) -> bool {
@@ -3147,6 +3225,7 @@ impl ::core::fmt::Debug for HTTP_SERVER_AUTHENTICATION_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for HTTP_SERVER_AUTHENTICATION_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for HTTP_SERVER_AUTHENTICATION_INFO {
@@ -3205,6 +3284,7 @@ impl ::core::default::Default for HTTP_SERVER_PROPERTY {
 }
 unsafe impl ::windows::core::Abi for HTTP_SERVER_PROPERTY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HTTP_SERVER_PROPERTY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3231,6 +3311,7 @@ impl ::core::fmt::Debug for HTTP_SERVICE_BINDING_A {
 }
 unsafe impl ::windows::core::Abi for HTTP_SERVICE_BINDING_A {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HTTP_SERVICE_BINDING_A {
     fn eq(&self, other: &Self) -> bool {
@@ -3261,6 +3342,7 @@ impl ::core::fmt::Debug for HTTP_SERVICE_BINDING_BASE {
 }
 unsafe impl ::windows::core::Abi for HTTP_SERVICE_BINDING_BASE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HTTP_SERVICE_BINDING_BASE {
     fn eq(&self, other: &Self) -> bool {
@@ -3296,6 +3378,7 @@ impl ::core::default::Default for HTTP_SERVICE_BINDING_TYPE {
 }
 unsafe impl ::windows::core::Abi for HTTP_SERVICE_BINDING_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HTTP_SERVICE_BINDING_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3322,6 +3405,7 @@ impl ::core::fmt::Debug for HTTP_SERVICE_BINDING_W {
 }
 unsafe impl ::windows::core::Abi for HTTP_SERVICE_BINDING_W {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HTTP_SERVICE_BINDING_W {
     fn eq(&self, other: &Self) -> bool {
@@ -3355,6 +3439,7 @@ impl ::core::default::Default for HTTP_SERVICE_CONFIG_CACHE_KEY {
 }
 unsafe impl ::windows::core::Abi for HTTP_SERVICE_CONFIG_CACHE_KEY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HTTP_SERVICE_CONFIG_CACHE_KEY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3380,6 +3465,7 @@ impl ::core::fmt::Debug for HTTP_SERVICE_CONFIG_CACHE_SET {
 }
 unsafe impl ::windows::core::Abi for HTTP_SERVICE_CONFIG_CACHE_SET {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HTTP_SERVICE_CONFIG_CACHE_SET {
     fn eq(&self, other: &Self) -> bool {
@@ -3437,6 +3523,7 @@ impl ::core::default::Default for HTTP_SERVICE_CONFIG_ID {
 }
 unsafe impl ::windows::core::Abi for HTTP_SERVICE_CONFIG_ID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HTTP_SERVICE_CONFIG_ID {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3467,6 +3554,7 @@ impl ::core::fmt::Debug for HTTP_SERVICE_CONFIG_IP_LISTEN_PARAM {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 unsafe impl ::windows::core::Abi for HTTP_SERVICE_CONFIG_IP_LISTEN_PARAM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 impl ::core::cmp::PartialEq for HTTP_SERVICE_CONFIG_IP_LISTEN_PARAM {
@@ -3506,6 +3594,7 @@ impl ::core::fmt::Debug for HTTP_SERVICE_CONFIG_IP_LISTEN_QUERY {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 unsafe impl ::windows::core::Abi for HTTP_SERVICE_CONFIG_IP_LISTEN_QUERY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 impl ::core::cmp::PartialEq for HTTP_SERVICE_CONFIG_IP_LISTEN_QUERY {
@@ -3544,6 +3633,7 @@ impl ::core::default::Default for HTTP_SERVICE_CONFIG_QUERY_TYPE {
 }
 unsafe impl ::windows::core::Abi for HTTP_SERVICE_CONFIG_QUERY_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HTTP_SERVICE_CONFIG_QUERY_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3571,6 +3661,7 @@ impl ::core::default::Default for HTTP_SERVICE_CONFIG_SETTING_KEY {
 }
 unsafe impl ::windows::core::Abi for HTTP_SERVICE_CONFIG_SETTING_KEY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HTTP_SERVICE_CONFIG_SETTING_KEY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3596,6 +3687,7 @@ impl ::core::fmt::Debug for HTTP_SERVICE_CONFIG_SETTING_SET {
 }
 unsafe impl ::windows::core::Abi for HTTP_SERVICE_CONFIG_SETTING_SET {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HTTP_SERVICE_CONFIG_SETTING_SET {
     fn eq(&self, other: &Self) -> bool {
@@ -3631,6 +3723,7 @@ impl ::core::fmt::Debug for HTTP_SERVICE_CONFIG_SSL_CCS_KEY {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 unsafe impl ::windows::core::Abi for HTTP_SERVICE_CONFIG_SSL_CCS_KEY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 impl ::core::cmp::PartialEq for HTTP_SERVICE_CONFIG_SSL_CCS_KEY {
@@ -3671,6 +3764,7 @@ impl ::core::fmt::Debug for HTTP_SERVICE_CONFIG_SSL_CCS_QUERY {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 unsafe impl ::windows::core::Abi for HTTP_SERVICE_CONFIG_SSL_CCS_QUERY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 impl ::core::cmp::PartialEq for HTTP_SERVICE_CONFIG_SSL_CCS_QUERY {
@@ -3712,6 +3806,7 @@ impl ::core::fmt::Debug for HTTP_SERVICE_CONFIG_SSL_CCS_QUERY_EX {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 unsafe impl ::windows::core::Abi for HTTP_SERVICE_CONFIG_SSL_CCS_QUERY_EX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 impl ::core::cmp::PartialEq for HTTP_SERVICE_CONFIG_SSL_CCS_QUERY_EX {
@@ -3751,6 +3846,7 @@ impl ::core::fmt::Debug for HTTP_SERVICE_CONFIG_SSL_CCS_SET {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 unsafe impl ::windows::core::Abi for HTTP_SERVICE_CONFIG_SSL_CCS_SET {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 impl ::core::cmp::PartialEq for HTTP_SERVICE_CONFIG_SSL_CCS_SET {
@@ -3784,6 +3880,7 @@ impl ::core::clone::Clone for HTTP_SERVICE_CONFIG_SSL_CCS_SET_EX {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 unsafe impl ::windows::core::Abi for HTTP_SERVICE_CONFIG_SSL_CCS_SET_EX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 impl ::core::cmp::PartialEq for HTTP_SERVICE_CONFIG_SSL_CCS_SET_EX {
@@ -3850,6 +3947,7 @@ impl ::core::fmt::Debug for HTTP_SERVICE_CONFIG_SSL_KEY {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 unsafe impl ::windows::core::Abi for HTTP_SERVICE_CONFIG_SSL_KEY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 impl ::core::cmp::PartialEq for HTTP_SERVICE_CONFIG_SSL_KEY {
@@ -3888,6 +3986,7 @@ impl ::core::fmt::Debug for HTTP_SERVICE_CONFIG_SSL_KEY_EX {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 unsafe impl ::windows::core::Abi for HTTP_SERVICE_CONFIG_SSL_KEY_EX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 impl ::core::cmp::PartialEq for HTTP_SERVICE_CONFIG_SSL_KEY_EX {
@@ -3941,6 +4040,7 @@ impl ::core::fmt::Debug for HTTP_SERVICE_CONFIG_SSL_PARAM {
 }
 unsafe impl ::windows::core::Abi for HTTP_SERVICE_CONFIG_SSL_PARAM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HTTP_SERVICE_CONFIG_SSL_PARAM {
     fn eq(&self, other: &Self) -> bool {
@@ -3968,6 +4068,7 @@ impl ::core::clone::Clone for HTTP_SERVICE_CONFIG_SSL_PARAM_EX {
 }
 unsafe impl ::windows::core::Abi for HTTP_SERVICE_CONFIG_SSL_PARAM_EX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HTTP_SERVICE_CONFIG_SSL_PARAM_EX {
     fn eq(&self, other: &Self) -> bool {
@@ -3998,6 +4099,7 @@ impl ::core::clone::Clone for HTTP_SERVICE_CONFIG_SSL_PARAM_EX_0 {
 }
 unsafe impl ::windows::core::Abi for HTTP_SERVICE_CONFIG_SSL_PARAM_EX_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HTTP_SERVICE_CONFIG_SSL_PARAM_EX_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -4035,6 +4137,7 @@ impl ::core::fmt::Debug for HTTP_SERVICE_CONFIG_SSL_QUERY {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 unsafe impl ::windows::core::Abi for HTTP_SERVICE_CONFIG_SSL_QUERY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 impl ::core::cmp::PartialEq for HTTP_SERVICE_CONFIG_SSL_QUERY {
@@ -4076,6 +4179,7 @@ impl ::core::fmt::Debug for HTTP_SERVICE_CONFIG_SSL_QUERY_EX {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 unsafe impl ::windows::core::Abi for HTTP_SERVICE_CONFIG_SSL_QUERY_EX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 impl ::core::cmp::PartialEq for HTTP_SERVICE_CONFIG_SSL_QUERY_EX {
@@ -4115,6 +4219,7 @@ impl ::core::fmt::Debug for HTTP_SERVICE_CONFIG_SSL_SET {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 unsafe impl ::windows::core::Abi for HTTP_SERVICE_CONFIG_SSL_SET {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 impl ::core::cmp::PartialEq for HTTP_SERVICE_CONFIG_SSL_SET {
@@ -4148,6 +4253,7 @@ impl ::core::clone::Clone for HTTP_SERVICE_CONFIG_SSL_SET_EX {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 unsafe impl ::windows::core::Abi for HTTP_SERVICE_CONFIG_SSL_SET_EX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 impl ::core::cmp::PartialEq for HTTP_SERVICE_CONFIG_SSL_SET_EX {
@@ -4187,6 +4293,7 @@ impl ::core::fmt::Debug for HTTP_SERVICE_CONFIG_SSL_SNI_KEY {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 unsafe impl ::windows::core::Abi for HTTP_SERVICE_CONFIG_SSL_SNI_KEY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 impl ::core::cmp::PartialEq for HTTP_SERVICE_CONFIG_SSL_SNI_KEY {
@@ -4227,6 +4334,7 @@ impl ::core::fmt::Debug for HTTP_SERVICE_CONFIG_SSL_SNI_QUERY {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 unsafe impl ::windows::core::Abi for HTTP_SERVICE_CONFIG_SSL_SNI_QUERY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 impl ::core::cmp::PartialEq for HTTP_SERVICE_CONFIG_SSL_SNI_QUERY {
@@ -4268,6 +4376,7 @@ impl ::core::fmt::Debug for HTTP_SERVICE_CONFIG_SSL_SNI_QUERY_EX {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 unsafe impl ::windows::core::Abi for HTTP_SERVICE_CONFIG_SSL_SNI_QUERY_EX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 impl ::core::cmp::PartialEq for HTTP_SERVICE_CONFIG_SSL_SNI_QUERY_EX {
@@ -4307,6 +4416,7 @@ impl ::core::fmt::Debug for HTTP_SERVICE_CONFIG_SSL_SNI_SET {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 unsafe impl ::windows::core::Abi for HTTP_SERVICE_CONFIG_SSL_SNI_SET {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 impl ::core::cmp::PartialEq for HTTP_SERVICE_CONFIG_SSL_SNI_SET {
@@ -4340,6 +4450,7 @@ impl ::core::clone::Clone for HTTP_SERVICE_CONFIG_SSL_SNI_SET_EX {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 unsafe impl ::windows::core::Abi for HTTP_SERVICE_CONFIG_SSL_SNI_SET_EX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 impl ::core::cmp::PartialEq for HTTP_SERVICE_CONFIG_SSL_SNI_SET_EX {
@@ -4376,6 +4487,7 @@ impl ::core::default::Default for HTTP_SERVICE_CONFIG_TIMEOUT_KEY {
 }
 unsafe impl ::windows::core::Abi for HTTP_SERVICE_CONFIG_TIMEOUT_KEY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HTTP_SERVICE_CONFIG_TIMEOUT_KEY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4401,6 +4513,7 @@ impl ::core::fmt::Debug for HTTP_SERVICE_CONFIG_TIMEOUT_SET {
 }
 unsafe impl ::windows::core::Abi for HTTP_SERVICE_CONFIG_TIMEOUT_SET {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HTTP_SERVICE_CONFIG_TIMEOUT_SET {
     fn eq(&self, other: &Self) -> bool {
@@ -4431,6 +4544,7 @@ impl ::core::fmt::Debug for HTTP_SERVICE_CONFIG_URLACL_KEY {
 }
 unsafe impl ::windows::core::Abi for HTTP_SERVICE_CONFIG_URLACL_KEY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HTTP_SERVICE_CONFIG_URLACL_KEY {
     fn eq(&self, other: &Self) -> bool {
@@ -4461,6 +4575,7 @@ impl ::core::fmt::Debug for HTTP_SERVICE_CONFIG_URLACL_PARAM {
 }
 unsafe impl ::windows::core::Abi for HTTP_SERVICE_CONFIG_URLACL_PARAM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HTTP_SERVICE_CONFIG_URLACL_PARAM {
     fn eq(&self, other: &Self) -> bool {
@@ -4493,6 +4608,7 @@ impl ::core::fmt::Debug for HTTP_SERVICE_CONFIG_URLACL_QUERY {
 }
 unsafe impl ::windows::core::Abi for HTTP_SERVICE_CONFIG_URLACL_QUERY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HTTP_SERVICE_CONFIG_URLACL_QUERY {
     fn eq(&self, other: &Self) -> bool {
@@ -4524,6 +4640,7 @@ impl ::core::fmt::Debug for HTTP_SERVICE_CONFIG_URLACL_SET {
 }
 unsafe impl ::windows::core::Abi for HTTP_SERVICE_CONFIG_URLACL_SET {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HTTP_SERVICE_CONFIG_URLACL_SET {
     fn eq(&self, other: &Self) -> bool {
@@ -4563,6 +4680,7 @@ impl ::core::fmt::Debug for HTTP_SSL_CLIENT_CERT_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for HTTP_SSL_CLIENT_CERT_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for HTTP_SSL_CLIENT_CERT_INFO {
@@ -4608,6 +4726,7 @@ impl ::core::fmt::Debug for HTTP_SSL_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for HTTP_SSL_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for HTTP_SSL_INFO {
@@ -4647,6 +4766,7 @@ impl ::core::fmt::Debug for HTTP_SSL_PROTOCOL_INFO {
 }
 unsafe impl ::windows::core::Abi for HTTP_SSL_PROTOCOL_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HTTP_SSL_PROTOCOL_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -4690,6 +4810,7 @@ impl ::core::default::Default for HTTP_SSL_SERVICE_CONFIG_EX_PARAM_TYPE {
 }
 unsafe impl ::windows::core::Abi for HTTP_SSL_SERVICE_CONFIG_EX_PARAM_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HTTP_SSL_SERVICE_CONFIG_EX_PARAM_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4715,6 +4836,7 @@ impl ::core::fmt::Debug for HTTP_STATE_INFO {
 }
 unsafe impl ::windows::core::Abi for HTTP_STATE_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HTTP_STATE_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -4751,6 +4873,7 @@ impl ::core::fmt::Debug for HTTP_TIMEOUT_LIMIT_INFO {
 }
 unsafe impl ::windows::core::Abi for HTTP_TIMEOUT_LIMIT_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HTTP_TIMEOUT_LIMIT_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -4782,6 +4905,7 @@ impl ::core::fmt::Debug for HTTP_TLS_RESTRICTIONS_PARAM {
 }
 unsafe impl ::windows::core::Abi for HTTP_TLS_RESTRICTIONS_PARAM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HTTP_TLS_RESTRICTIONS_PARAM {
     fn eq(&self, other: &Self) -> bool {
@@ -4813,6 +4937,7 @@ impl ::core::fmt::Debug for HTTP_TLS_SESSION_TICKET_KEYS_PARAM {
 }
 unsafe impl ::windows::core::Abi for HTTP_TLS_SESSION_TICKET_KEYS_PARAM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HTTP_TLS_SESSION_TICKET_KEYS_PARAM {
     fn eq(&self, other: &Self) -> bool {
@@ -4849,6 +4974,7 @@ impl ::core::fmt::Debug for HTTP_TRANSPORT_ADDRESS {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 unsafe impl ::windows::core::Abi for HTTP_TRANSPORT_ADDRESS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 impl ::core::cmp::PartialEq for HTTP_TRANSPORT_ADDRESS {
@@ -4885,6 +5011,7 @@ impl ::core::fmt::Debug for HTTP_UNKNOWN_HEADER {
 }
 unsafe impl ::windows::core::Abi for HTTP_UNKNOWN_HEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HTTP_UNKNOWN_HEADER {
     fn eq(&self, other: &Self) -> bool {
@@ -4958,6 +5085,7 @@ impl ::core::default::Default for HTTP_VERB {
 }
 unsafe impl ::windows::core::Abi for HTTP_VERB {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HTTP_VERB {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4985,6 +5113,7 @@ impl ::core::fmt::Debug for HTTP_VERSION {
 }
 unsafe impl ::windows::core::Abi for HTTP_VERSION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HTTP_VERSION {
     fn eq(&self, other: &Self) -> bool {
@@ -5039,6 +5168,7 @@ impl ::core::fmt::Debug for HTTP_WSK_API_TIMINGS {
 }
 unsafe impl ::windows::core::Abi for HTTP_WSK_API_TIMINGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HTTP_WSK_API_TIMINGS {
     fn eq(&self, other: &Self) -> bool {

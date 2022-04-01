@@ -212,11 +212,6 @@ impl Certificate {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for Certificate {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for Certificate {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -230,7 +225,6 @@ impl ::core::fmt::Debug for Certificate {
 }
 unsafe impl ::windows::core::RuntimeType for Certificate {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Security.Cryptography.Certificates.Certificate;{333f740c-04d8-43b3-b278-8c5fcc9be5a0})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -314,11 +308,6 @@ impl CertificateChain {
         }
     }
 }
-impl ::core::clone::Clone for CertificateChain {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for CertificateChain {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -332,7 +321,6 @@ impl ::core::fmt::Debug for CertificateChain {
 }
 unsafe impl ::windows::core::RuntimeType for CertificateChain {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Security.Cryptography.Certificates.CertificateChain;{20bf5385-3691-4501-a62c-fd97278b31ee})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -409,6 +397,7 @@ impl ::core::default::Default for CertificateChainPolicy {
 }
 unsafe impl ::windows::core::Abi for CertificateChainPolicy {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CertificateChainPolicy {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -417,7 +406,6 @@ impl ::core::fmt::Debug for CertificateChainPolicy {
 }
 unsafe impl ::windows::core::RuntimeType for CertificateChainPolicy {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Security.Cryptography.Certificates.CertificateChainPolicy;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -547,11 +535,6 @@ impl CertificateExtension {
         unsafe { (::windows::core::Interface::vtable(this).SetValue)(::core::mem::transmute_copy(this), value.len() as u32, ::core::mem::transmute(value.as_ptr())).ok() }
     }
 }
-impl ::core::clone::Clone for CertificateExtension {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for CertificateExtension {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -565,7 +548,6 @@ impl ::core::fmt::Debug for CertificateExtension {
 }
 unsafe impl ::windows::core::RuntimeType for CertificateExtension {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Security.Cryptography.Certificates.CertificateExtension;{84cf0656-a9e6-454d-8e45-2ea7c4bcd53b})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -735,11 +717,6 @@ impl CertificateKeyUsages {
         unsafe { (::windows::core::Interface::vtable(this).SetDigitalSignature)(::core::mem::transmute_copy(this), value).ok() }
     }
 }
-impl ::core::clone::Clone for CertificateKeyUsages {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for CertificateKeyUsages {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -753,7 +730,6 @@ impl ::core::fmt::Debug for CertificateKeyUsages {
 }
 unsafe impl ::windows::core::RuntimeType for CertificateKeyUsages {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Security.Cryptography.Certificates.CertificateKeyUsages;{6ac6206f-e1cf-486a-b485-a69c83e46fd1})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -919,11 +895,6 @@ impl CertificateQuery {
         unsafe { (::windows::core::Interface::vtable(this).SetStoreName)(::core::mem::transmute_copy(this), value.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for CertificateQuery {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for CertificateQuery {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -937,7 +908,6 @@ impl ::core::fmt::Debug for CertificateQuery {
 }
 unsafe impl ::windows::core::RuntimeType for CertificateQuery {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Security.Cryptography.Certificates.CertificateQuery;{5b082a31-a728-4916-b5ee-ffcb8acf2417})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1250,11 +1220,6 @@ impl CertificateRequestProperties {
         }
     }
 }
-impl ::core::clone::Clone for CertificateRequestProperties {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for CertificateRequestProperties {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1268,7 +1233,6 @@ impl ::core::fmt::Debug for CertificateRequestProperties {
 }
 unsafe impl ::windows::core::RuntimeType for CertificateRequestProperties {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Security.Cryptography.Certificates.CertificateRequestProperties;{487e84f6-94e2-4dce-8833-1a700a37a29a})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1345,11 +1309,6 @@ impl CertificateStore {
         }
     }
 }
-impl ::core::clone::Clone for CertificateStore {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for CertificateStore {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1363,7 +1322,6 @@ impl ::core::fmt::Debug for CertificateStore {
 }
 unsafe impl ::windows::core::RuntimeType for CertificateStore {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Security.Cryptography.Certificates.CertificateStore;{b0bff720-344e-4331-af14-a7f7a7ebc93a})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1575,11 +1533,6 @@ impl ChainBuildingParameters {
         }
     }
 }
-impl ::core::clone::Clone for ChainBuildingParameters {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ChainBuildingParameters {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1593,7 +1546,6 @@ impl ::core::fmt::Debug for ChainBuildingParameters {
 }
 unsafe impl ::windows::core::RuntimeType for ChainBuildingParameters {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Security.Cryptography.Certificates.ChainBuildingParameters;{422ba922-7c8d-47b7-b59b-b12703733ac3})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1687,11 +1639,6 @@ impl ChainValidationParameters {
         unsafe { (::windows::core::Interface::vtable(this).SetServerDnsName)(::core::mem::transmute_copy(this), value.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for ChainValidationParameters {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ChainValidationParameters {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1705,7 +1652,6 @@ impl ::core::fmt::Debug for ChainValidationParameters {
 }
 unsafe impl ::windows::core::RuntimeType for ChainValidationParameters {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Security.Cryptography.Certificates.ChainValidationParameters;{c4743b4a-7eb0-4b56-a040-b9c8e655ddf3})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1792,6 +1738,7 @@ impl ::core::default::Default for ChainValidationResult {
 }
 unsafe impl ::windows::core::Abi for ChainValidationResult {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ChainValidationResult {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1800,7 +1747,6 @@ impl ::core::fmt::Debug for ChainValidationResult {
 }
 unsafe impl ::windows::core::RuntimeType for ChainValidationResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Security.Cryptography.Certificates.ChainValidationResult;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1870,11 +1816,6 @@ impl CmsAttachedSignature {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for CmsAttachedSignature {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for CmsAttachedSignature {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1888,7 +1829,6 @@ impl ::core::fmt::Debug for CmsAttachedSignature {
 }
 unsafe impl ::windows::core::RuntimeType for CmsAttachedSignature {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Security.Cryptography.Certificates.CmsAttachedSignature;{61899d9d-3757-4ecb-bddc-0ca357d7a936})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2000,11 +1940,6 @@ impl CmsDetachedSignature {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for CmsDetachedSignature {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for CmsDetachedSignature {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2018,7 +1953,6 @@ impl ::core::fmt::Debug for CmsDetachedSignature {
 }
 unsafe impl ::windows::core::RuntimeType for CmsDetachedSignature {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Security.Cryptography.Certificates.CmsDetachedSignature;{0f1ef154-f65e-4536-8339-5944081db2ca})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2118,11 +2052,6 @@ impl CmsSignerInfo {
         }
     }
 }
-impl ::core::clone::Clone for CmsSignerInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for CmsSignerInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2136,7 +2065,6 @@ impl ::core::fmt::Debug for CmsSignerInfo {
 }
 unsafe impl ::windows::core::RuntimeType for CmsSignerInfo {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Security.Cryptography.Certificates.CmsSignerInfo;{50d020db-1d2f-4c1a-b5c5-d0188ff91f47})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2221,11 +2149,6 @@ impl CmsTimestampInfo {
         }
     }
 }
-impl ::core::clone::Clone for CmsTimestampInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for CmsTimestampInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2239,7 +2162,6 @@ impl ::core::fmt::Debug for CmsTimestampInfo {
 }
 unsafe impl ::windows::core::RuntimeType for CmsTimestampInfo {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Security.Cryptography.Certificates.CmsTimestampInfo;{2f5f00f2-2c18-4f88-8435-c534086076f5})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2317,6 +2239,7 @@ impl ::core::default::Default for EnrollKeyUsages {
 }
 unsafe impl ::windows::core::Abi for EnrollKeyUsages {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EnrollKeyUsages {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2353,7 +2276,6 @@ impl ::core::ops::Not for EnrollKeyUsages {
 }
 unsafe impl ::windows::core::RuntimeType for EnrollKeyUsages {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Security.Cryptography.Certificates.EnrollKeyUsages;u4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2379,6 +2301,7 @@ impl ::core::default::Default for ExportOption {
 }
 unsafe impl ::windows::core::Abi for ExportOption {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ExportOption {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2387,7 +2310,6 @@ impl ::core::fmt::Debug for ExportOption {
 }
 unsafe impl ::windows::core::RuntimeType for ExportOption {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Security.Cryptography.Certificates.ExportOption;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2395,6 +2317,11 @@ unsafe impl ::windows::core::RuntimeType for ExportOption {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICertificate(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICertificate {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICertificate {
     type Vtable = ICertificate_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x333f740c_04d8_43b3_b278_8c5fcc9be5a0);
@@ -2440,6 +2367,11 @@ pub struct ICertificate_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICertificate2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICertificate2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICertificate2 {
     type Vtable = ICertificate2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x17b8374c_8a25_4d96_a492_8fc29ac4fda6);
@@ -2458,6 +2390,11 @@ pub struct ICertificate2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICertificate3(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICertificate3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICertificate3 {
     type Vtable = ICertificate3_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xbe51a966_ae5f_4652_ace7_c6d7e7724cf3);
@@ -2473,6 +2410,11 @@ pub struct ICertificate3_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICertificateChain(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICertificateChain {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICertificateChain {
     type Vtable = ICertificateChain_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x20bf5385_3691_4501_a62c_fd97278b31ee);
@@ -2491,6 +2433,11 @@ pub struct ICertificateChain_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICertificateEnrollmentManagerStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICertificateEnrollmentManagerStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICertificateEnrollmentManagerStatics {
     type Vtable = ICertificateEnrollmentManagerStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x8846ef3f_a986_48fb_9fd7_9aec06935bf1);
@@ -2515,6 +2462,11 @@ pub struct ICertificateEnrollmentManagerStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICertificateEnrollmentManagerStatics2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICertificateEnrollmentManagerStatics2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICertificateEnrollmentManagerStatics2 {
     type Vtable = ICertificateEnrollmentManagerStatics2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xdc5b1c33_6429_4014_999c_5d9735802d1d);
@@ -2532,6 +2484,11 @@ pub struct ICertificateEnrollmentManagerStatics2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICertificateEnrollmentManagerStatics3(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICertificateEnrollmentManagerStatics3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICertificateEnrollmentManagerStatics3 {
     type Vtable = ICertificateEnrollmentManagerStatics3_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xfdec82be_617c_425a_b72d_398b26ac7264);
@@ -2548,6 +2505,11 @@ pub struct ICertificateEnrollmentManagerStatics3_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICertificateExtension(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICertificateExtension {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICertificateExtension {
     type Vtable = ICertificateExtension_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x84cf0656_a9e6_454d_8e45_2ea7c4bcd53b);
@@ -2567,6 +2529,11 @@ pub struct ICertificateExtension_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICertificateFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICertificateFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICertificateFactory {
     type Vtable = ICertificateFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x17b4221c_4baf_44a2_9608_04fb62b16942);
@@ -2583,6 +2550,11 @@ pub struct ICertificateFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICertificateKeyUsages(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICertificateKeyUsages {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICertificateKeyUsages {
     type Vtable = ICertificateKeyUsages_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x6ac6206f_e1cf_486a_b485_a69c83e46fd1);
@@ -2611,6 +2583,11 @@ pub struct ICertificateKeyUsages_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICertificateQuery(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICertificateQuery {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICertificateQuery {
     type Vtable = ICertificateQuery_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x5b082a31_a728_4916_b5ee_ffcb8acf2417);
@@ -2635,6 +2612,11 @@ pub struct ICertificateQuery_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICertificateQuery2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICertificateQuery2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICertificateQuery2 {
     type Vtable = ICertificateQuery2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x935a0af7_0bd9_4f75_b8c2_e27a7f74eecd);
@@ -2653,6 +2635,11 @@ pub struct ICertificateQuery2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICertificateRequestProperties(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICertificateRequestProperties {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICertificateRequestProperties {
     type Vtable = ICertificateRequestProperties_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x487e84f6_94e2_4dce_8833_1a700a37a29a);
@@ -2683,6 +2670,11 @@ pub struct ICertificateRequestProperties_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICertificateRequestProperties2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICertificateRequestProperties2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICertificateRequestProperties2 {
     type Vtable = ICertificateRequestProperties2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x3da0c954_d73f_4ff3_a0a6_0677c0ada05b);
@@ -2701,6 +2693,11 @@ pub struct ICertificateRequestProperties2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICertificateRequestProperties3(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICertificateRequestProperties3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICertificateRequestProperties3 {
     type Vtable = ICertificateRequestProperties3_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe687f616_734d_46b1_9d4c_6edfdbfc845b);
@@ -2723,6 +2720,11 @@ pub struct ICertificateRequestProperties3_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICertificateRequestProperties4(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICertificateRequestProperties4 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICertificateRequestProperties4 {
     type Vtable = ICertificateRequestProperties4_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x4e429ad2_1c61_4fea_b8fe_135fb19cdce4);
@@ -2744,6 +2746,11 @@ pub struct ICertificateRequestProperties4_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICertificateStore(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICertificateStore {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICertificateStore {
     type Vtable = ICertificateStore_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb0bff720_344e_4331_af14_a7f7a7ebc93a);
@@ -2758,6 +2765,11 @@ pub struct ICertificateStore_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICertificateStore2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICertificateStore2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICertificateStore2 {
     type Vtable = ICertificateStore2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc7e68e4a_417d_4d1a_babd_15687e549974);
@@ -2771,6 +2783,11 @@ pub struct ICertificateStore2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICertificateStoresStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICertificateStoresStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICertificateStoresStatics {
     type Vtable = ICertificateStoresStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xfbecc739_c6fe_4de7_99cf_74c3e596e032);
@@ -2794,6 +2811,11 @@ pub struct ICertificateStoresStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICertificateStoresStatics2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICertificateStoresStatics2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICertificateStoresStatics2 {
     type Vtable = ICertificateStoresStatics2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xfa900b79_a0d4_4b8c_bc55_c0a37eb141ed);
@@ -2807,6 +2829,11 @@ pub struct ICertificateStoresStatics2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IChainBuildingParameters(::windows::core::IUnknown);
+impl ::core::clone::Clone for IChainBuildingParameters {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IChainBuildingParameters {
     type Vtable = IChainBuildingParameters_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x422ba922_7c8d_47b7_b59b_b12703733ac3);
@@ -2843,6 +2870,11 @@ pub struct IChainBuildingParameters_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IChainValidationParameters(::windows::core::IUnknown);
+impl ::core::clone::Clone for IChainValidationParameters {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IChainValidationParameters {
     type Vtable = IChainValidationParameters_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc4743b4a_7eb0_4b56_a040_b9c8e655ddf3);
@@ -2865,6 +2897,11 @@ pub struct IChainValidationParameters_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICmsAttachedSignature(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICmsAttachedSignature {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICmsAttachedSignature {
     type Vtable = ICmsAttachedSignature_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x61899d9d_3757_4ecb_bddc_0ca357d7a936);
@@ -2887,6 +2924,11 @@ pub struct ICmsAttachedSignature_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICmsAttachedSignatureFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICmsAttachedSignatureFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICmsAttachedSignatureFactory {
     type Vtable = ICmsAttachedSignatureFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd0c8fc15_f757_4c64_a362_52cc1c77cffb);
@@ -2903,6 +2945,11 @@ pub struct ICmsAttachedSignatureFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICmsAttachedSignatureStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICmsAttachedSignatureStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICmsAttachedSignatureStatics {
     type Vtable = ICmsAttachedSignatureStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x87989c8e_b0ad_498d_a7f5_78b59bce4b36);
@@ -2919,6 +2966,11 @@ pub struct ICmsAttachedSignatureStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICmsDetachedSignature(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICmsDetachedSignature {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICmsDetachedSignature {
     type Vtable = ICmsDetachedSignature_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x0f1ef154_f65e_4536_8339_5944081db2ca);
@@ -2943,6 +2995,11 @@ pub struct ICmsDetachedSignature_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICmsDetachedSignatureFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICmsDetachedSignatureFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICmsDetachedSignatureFactory {
     type Vtable = ICmsDetachedSignatureFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc4ab3503_ae7f_4387_ad19_00f150e48ebb);
@@ -2959,6 +3016,11 @@ pub struct ICmsDetachedSignatureFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICmsDetachedSignatureStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICmsDetachedSignatureStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICmsDetachedSignatureStatics {
     type Vtable = ICmsDetachedSignatureStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x3d114cfd_bf9b_4682_9be6_91f57c053808);
@@ -2975,6 +3037,11 @@ pub struct ICmsDetachedSignatureStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICmsSignerInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICmsSignerInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICmsSignerInfo {
     type Vtable = ICmsSignerInfo_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x50d020db_1d2f_4c1a_b5c5_d0188ff91f47);
@@ -2992,6 +3059,11 @@ pub struct ICmsSignerInfo_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICmsTimestampInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICmsTimestampInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICmsTimestampInfo {
     type Vtable = ICmsTimestampInfo_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x2f5f00f2_2c18_4f88_8435_c534086076f5);
@@ -3013,6 +3085,11 @@ pub struct ICmsTimestampInfo_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IKeyAlgorithmNamesStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IKeyAlgorithmNamesStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IKeyAlgorithmNamesStatics {
     type Vtable = IKeyAlgorithmNamesStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x479065d7_7ac7_4581_8c3b_d07027140448);
@@ -3033,6 +3110,11 @@ pub struct IKeyAlgorithmNamesStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IKeyAlgorithmNamesStatics2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IKeyAlgorithmNamesStatics2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IKeyAlgorithmNamesStatics2 {
     type Vtable = IKeyAlgorithmNamesStatics2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc99b5686_e1fd_4a4a_893d_a26f33dd8bb4);
@@ -3047,6 +3129,11 @@ pub struct IKeyAlgorithmNamesStatics2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IKeyAttestationHelperStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IKeyAttestationHelperStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IKeyAttestationHelperStatics {
     type Vtable = IKeyAttestationHelperStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1648e246_f644_4326_88be_3af102d30e0c);
@@ -3064,6 +3151,11 @@ pub struct IKeyAttestationHelperStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IKeyAttestationHelperStatics2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IKeyAttestationHelperStatics2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IKeyAttestationHelperStatics2 {
     type Vtable = IKeyAttestationHelperStatics2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9c590b2c_a6c6_4a5e_9e64_e85d5279df97);
@@ -3080,6 +3172,11 @@ pub struct IKeyAttestationHelperStatics2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IKeyStorageProviderNamesStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IKeyStorageProviderNamesStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IKeyStorageProviderNamesStatics {
     type Vtable = IKeyStorageProviderNamesStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xaf186ae0_5529_4602_bd94_0aab91957b5c);
@@ -3095,6 +3192,11 @@ pub struct IKeyStorageProviderNamesStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IKeyStorageProviderNamesStatics2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IKeyStorageProviderNamesStatics2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IKeyStorageProviderNamesStatics2 {
     type Vtable = IKeyStorageProviderNamesStatics2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x262d743d_9c2e_41cc_8812_c4d971dd7c60);
@@ -3108,6 +3210,11 @@ pub struct IKeyStorageProviderNamesStatics2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPfxImportParameters(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPfxImportParameters {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPfxImportParameters {
     type Vtable = IPfxImportParameters_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x680d3511_9a08_47c8_864a_2edd4d8eb46c);
@@ -3134,6 +3241,11 @@ pub struct IPfxImportParameters_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IStandardCertificateStoreNamesStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStandardCertificateStoreNamesStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IStandardCertificateStoreNamesStatics {
     type Vtable = IStandardCertificateStoreNamesStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x0c154adb_a496_41f8_8fe5_9e96f36efbf8);
@@ -3149,6 +3261,11 @@ pub struct IStandardCertificateStoreNamesStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISubjectAlternativeNameInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISubjectAlternativeNameInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISubjectAlternativeNameInfo {
     type Vtable = ISubjectAlternativeNameInfo_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x582859f1_569d_4c20_be7b_4e1c9a0bc52b);
@@ -3185,6 +3302,11 @@ pub struct ISubjectAlternativeNameInfo_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISubjectAlternativeNameInfo2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISubjectAlternativeNameInfo2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISubjectAlternativeNameInfo2 {
     type Vtable = ISubjectAlternativeNameInfo2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x437a78c6_1c51_41ea_b34a_3d654398a370);
@@ -3222,6 +3344,11 @@ pub struct ISubjectAlternativeNameInfo2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IUserCertificateEnrollmentManager(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUserCertificateEnrollmentManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IUserCertificateEnrollmentManager {
     type Vtable = IUserCertificateEnrollmentManager_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x96313718_22e1_4819_b20b_ab46a6eca06e);
@@ -3250,6 +3377,11 @@ pub struct IUserCertificateEnrollmentManager_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IUserCertificateEnrollmentManager2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUserCertificateEnrollmentManager2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IUserCertificateEnrollmentManager2 {
     type Vtable = IUserCertificateEnrollmentManager2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x0dad9cb1_65de_492a_b86d_fc5c482c3747);
@@ -3266,6 +3398,11 @@ pub struct IUserCertificateEnrollmentManager2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IUserCertificateStore(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUserCertificateStore {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IUserCertificateStore {
     type Vtable = IUserCertificateStore_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc9fb1d83_789f_4b4e_9180_045a757aac6d);
@@ -3305,6 +3442,7 @@ impl ::core::default::Default for InstallOptions {
 }
 unsafe impl ::windows::core::Abi for InstallOptions {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for InstallOptions {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3341,7 +3479,6 @@ impl ::core::ops::Not for InstallOptions {
 }
 unsafe impl ::windows::core::RuntimeType for InstallOptions {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Security.Cryptography.Certificates.InstallOptions;u4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -3496,6 +3633,7 @@ impl ::core::default::Default for KeyProtectionLevel {
 }
 unsafe impl ::windows::core::Abi for KeyProtectionLevel {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KeyProtectionLevel {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3504,7 +3642,6 @@ impl ::core::fmt::Debug for KeyProtectionLevel {
 }
 unsafe impl ::windows::core::RuntimeType for KeyProtectionLevel {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Security.Cryptography.Certificates.KeyProtectionLevel;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -3531,6 +3668,7 @@ impl ::core::default::Default for KeySize {
 }
 unsafe impl ::windows::core::Abi for KeySize {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KeySize {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3539,7 +3677,6 @@ impl ::core::fmt::Debug for KeySize {
 }
 unsafe impl ::windows::core::RuntimeType for KeySize {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Security.Cryptography.Certificates.KeySize;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -3692,11 +3829,6 @@ impl PfxImportParameters {
         unsafe { (::windows::core::Interface::vtable(this).SetReaderName)(::core::mem::transmute_copy(this), value.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for PfxImportParameters {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PfxImportParameters {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3710,7 +3842,6 @@ impl ::core::fmt::Debug for PfxImportParameters {
 }
 unsafe impl ::windows::core::RuntimeType for PfxImportParameters {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Security.Cryptography.Certificates.PfxImportParameters;{680d3511-9a08-47c8-864a-2edd4d8eb46c})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3788,6 +3919,7 @@ impl ::core::default::Default for SignatureValidationResult {
 }
 unsafe impl ::windows::core::Abi for SignatureValidationResult {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SignatureValidationResult {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3796,7 +3928,6 @@ impl ::core::fmt::Debug for SignatureValidationResult {
 }
 unsafe impl ::windows::core::RuntimeType for SignatureValidationResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Security.Cryptography.Certificates.SignatureValidationResult;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -3962,11 +4093,6 @@ impl SubjectAlternativeNameInfo {
         }
     }
 }
-impl ::core::clone::Clone for SubjectAlternativeNameInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SubjectAlternativeNameInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3980,7 +4106,6 @@ impl ::core::fmt::Debug for SubjectAlternativeNameInfo {
 }
 unsafe impl ::windows::core::RuntimeType for SubjectAlternativeNameInfo {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Security.Cryptography.Certificates.SubjectAlternativeNameInfo;{582859f1-569d-4c20-be7b-4e1c9a0bc52b})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4084,11 +4209,6 @@ impl UserCertificateEnrollmentManager {
         }
     }
 }
-impl ::core::clone::Clone for UserCertificateEnrollmentManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for UserCertificateEnrollmentManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4102,7 +4222,6 @@ impl ::core::fmt::Debug for UserCertificateEnrollmentManager {
 }
 unsafe impl ::windows::core::RuntimeType for UserCertificateEnrollmentManager {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Security.Cryptography.Certificates.UserCertificateEnrollmentManager;{96313718-22e1-4819-b20b-ab46a6eca06e})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4187,11 +4306,6 @@ impl UserCertificateStore {
         }
     }
 }
-impl ::core::clone::Clone for UserCertificateStore {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for UserCertificateStore {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4205,7 +4319,6 @@ impl ::core::fmt::Debug for UserCertificateStore {
 }
 unsafe impl ::windows::core::RuntimeType for UserCertificateStore {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Security.Cryptography.Certificates.UserCertificateStore;{c9fb1d83-789f-4b4e-9180-045a757aac6d})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

@@ -2,6 +2,11 @@
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPhoneNumberFormatter(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPhoneNumberFormatter {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPhoneNumberFormatter {
     type Vtable = IPhoneNumberFormatter_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1556b49e_bad4_4b4a_900d_4407adb7c981);
@@ -19,6 +24,11 @@ pub struct IPhoneNumberFormatter_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPhoneNumberFormatterStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPhoneNumberFormatterStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPhoneNumberFormatterStatics {
     type Vtable = IPhoneNumberFormatterStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x5ca6f931_84d9_414b_ab4e_a0552c878602);
@@ -35,6 +45,11 @@ pub struct IPhoneNumberFormatterStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPhoneNumberInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPhoneNumberInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPhoneNumberInfo {
     type Vtable = IPhoneNumberInfo_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1c7ce4dd_c8b4_4ea3_9aef_b342e2c5b417);
@@ -55,6 +70,11 @@ pub struct IPhoneNumberInfo_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPhoneNumberInfoFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPhoneNumberInfoFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPhoneNumberInfoFactory {
     type Vtable = IPhoneNumberInfoFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x8202b964_adaa_4cff_8fcf_17e7516a28ff);
@@ -68,6 +88,11 @@ pub struct IPhoneNumberInfoFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPhoneNumberInfoStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPhoneNumberInfoStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPhoneNumberInfoStatics {
     type Vtable = IPhoneNumberInfoStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x5b3f4f6a_86a9_40e9_8649_6d61161928d4);
@@ -102,6 +127,7 @@ impl ::core::default::Default for PhoneNumberFormat {
 }
 unsafe impl ::windows::core::Abi for PhoneNumberFormat {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PhoneNumberFormat {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -110,7 +136,6 @@ impl ::core::fmt::Debug for PhoneNumberFormat {
 }
 unsafe impl ::windows::core::RuntimeType for PhoneNumberFormat {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Globalization.PhoneNumberFormatting.PhoneNumberFormat;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -197,11 +222,6 @@ impl PhoneNumberFormatter {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for PhoneNumberFormatter {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PhoneNumberFormatter {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -215,7 +235,6 @@ impl ::core::fmt::Debug for PhoneNumberFormatter {
 }
 unsafe impl ::windows::core::RuntimeType for PhoneNumberFormatter {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Globalization.PhoneNumberFormatting.PhoneNumberFormatter;{1556b49e-bad4-4b4a-900d-4407adb7c981})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -378,11 +397,6 @@ impl PhoneNumberInfo {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for PhoneNumberInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PhoneNumberInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -396,7 +410,6 @@ impl ::core::fmt::Debug for PhoneNumberInfo {
 }
 unsafe impl ::windows::core::RuntimeType for PhoneNumberInfo {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Globalization.PhoneNumberFormatting.PhoneNumberInfo;{1c7ce4dd-c8b4-4ea3-9aef-b342e2c5b417})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -499,6 +512,7 @@ impl ::core::default::Default for PhoneNumberMatchResult {
 }
 unsafe impl ::windows::core::Abi for PhoneNumberMatchResult {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PhoneNumberMatchResult {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -507,7 +521,6 @@ impl ::core::fmt::Debug for PhoneNumberMatchResult {
 }
 unsafe impl ::windows::core::RuntimeType for PhoneNumberMatchResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Globalization.PhoneNumberFormatting.PhoneNumberMatchResult;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -536,6 +549,7 @@ impl ::core::default::Default for PhoneNumberParseResult {
 }
 unsafe impl ::windows::core::Abi for PhoneNumberParseResult {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PhoneNumberParseResult {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -544,7 +558,6 @@ impl ::core::fmt::Debug for PhoneNumberParseResult {
 }
 unsafe impl ::windows::core::RuntimeType for PhoneNumberParseResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Globalization.PhoneNumberFormatting.PhoneNumberParseResult;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -580,6 +593,7 @@ impl ::core::default::Default for PredictedPhoneNumberKind {
 }
 unsafe impl ::windows::core::Abi for PredictedPhoneNumberKind {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PredictedPhoneNumberKind {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -588,7 +602,6 @@ impl ::core::fmt::Debug for PredictedPhoneNumberKind {
 }
 unsafe impl ::windows::core::RuntimeType for PredictedPhoneNumberKind {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Globalization.PhoneNumberFormatting.PredictedPhoneNumberKind;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }

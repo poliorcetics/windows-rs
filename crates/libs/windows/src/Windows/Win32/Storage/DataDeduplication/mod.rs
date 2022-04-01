@@ -18,6 +18,7 @@ impl ::core::fmt::Debug for DDP_FILE_EXTENT {
 }
 unsafe impl ::windows::core::Abi for DDP_FILE_EXTENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DDP_FILE_EXTENT {
     fn eq(&self, other: &Self) -> bool {
@@ -51,6 +52,7 @@ impl ::core::default::Default for DEDUP_BACKUP_SUPPORT_PARAM_TYPE {
 }
 unsafe impl ::windows::core::Abi for DEDUP_BACKUP_SUPPORT_PARAM_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DEDUP_BACKUP_SUPPORT_PARAM_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -80,6 +82,7 @@ impl ::core::fmt::Debug for DEDUP_CHUNK_INFO_HASH32 {
 }
 unsafe impl ::windows::core::Abi for DEDUP_CHUNK_INFO_HASH32 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DEDUP_CHUNK_INFO_HASH32 {
     fn eq(&self, other: &Self) -> bool {
@@ -112,6 +115,7 @@ impl ::core::fmt::Debug for DEDUP_CONTAINER_EXTENT {
 }
 unsafe impl ::windows::core::Abi for DEDUP_CONTAINER_EXTENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DEDUP_CONTAINER_EXTENT {
     fn eq(&self, other: &Self) -> bool {
@@ -151,6 +155,7 @@ impl ::core::default::Default for DEDUP_SET_PARAM_TYPE {
 }
 unsafe impl ::windows::core::Abi for DEDUP_SET_PARAM_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DEDUP_SET_PARAM_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -179,6 +184,7 @@ impl ::core::fmt::Debug for DedupChunk {
 }
 unsafe impl ::windows::core::Abi for DedupChunk {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DedupChunk {
     fn eq(&self, other: &Self) -> bool {
@@ -212,6 +218,7 @@ impl ::core::default::Default for DedupChunkFlags {
 }
 unsafe impl ::windows::core::Abi for DedupChunkFlags {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DedupChunkFlags {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -239,6 +246,7 @@ impl ::core::default::Default for DedupChunkingAlgorithm {
 }
 unsafe impl ::windows::core::Abi for DedupChunkingAlgorithm {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DedupChunkingAlgorithm {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -266,6 +274,7 @@ impl ::core::default::Default for DedupCompressionAlgorithm {
 }
 unsafe impl ::windows::core::Abi for DedupCompressionAlgorithm {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DedupCompressionAlgorithm {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -296,6 +305,7 @@ impl ::core::default::Default for DedupDataPortManagerOption {
 }
 unsafe impl ::windows::core::Abi for DedupDataPortManagerOption {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DedupDataPortManagerOption {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -331,6 +341,7 @@ impl ::core::default::Default for DedupDataPortRequestStatus {
 }
 unsafe impl ::windows::core::Abi for DedupDataPortRequestStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DedupDataPortRequestStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -368,6 +379,7 @@ impl ::core::default::Default for DedupDataPortVolumeStatus {
 }
 unsafe impl ::windows::core::Abi for DedupDataPortVolumeStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DedupDataPortVolumeStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -392,6 +404,7 @@ impl ::core::fmt::Debug for DedupHash {
 }
 unsafe impl ::windows::core::Abi for DedupHash {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DedupHash {
     fn eq(&self, other: &Self) -> bool {
@@ -425,6 +438,7 @@ impl ::core::default::Default for DedupHashingAlgorithm {
 }
 unsafe impl ::windows::core::Abi for DedupHashingAlgorithm {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DedupHashingAlgorithm {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -455,6 +469,7 @@ impl ::core::fmt::Debug for DedupStream {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DedupStream {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DedupStream {
@@ -490,6 +505,7 @@ impl ::core::fmt::Debug for DedupStreamEntry {
 }
 unsafe impl ::windows::core::Abi for DedupStreamEntry {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DedupStreamEntry {
     fn eq(&self, other: &Self) -> bool {
@@ -505,6 +521,11 @@ impl ::core::default::Default for DedupStreamEntry {
 #[doc = "*Required features: `\"Win32_Storage_DataDeduplication\"`*"]
 #[repr(transparent)]
 pub struct IDedupBackupSupport(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDedupBackupSupport {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDedupBackupSupport {
     #[doc = "*Required features: `\"Win32_Storage_DataDeduplication\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -530,11 +551,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IDedupBac
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDedupBackupSupport {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IDedupBackupSupport {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IDedupBackupSupport {
@@ -564,6 +580,11 @@ pub struct IDedupBackupSupport_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_DataDeduplication\"`*"]
 #[repr(transparent)]
 pub struct IDedupChunkLibrary(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDedupChunkLibrary {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDedupChunkLibrary {
     #[doc = "*Required features: `\"Win32_Storage_DataDeduplication\"`*"]
     pub unsafe fn InitializeForPushBuffers(&self) -> ::windows::core::Result<()> {
@@ -604,11 +625,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDedu
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDedupChunkLibrary {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDedupChunkLibrary {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -639,6 +655,11 @@ pub struct IDedupChunkLibrary_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_DataDeduplication\"`*"]
 #[repr(transparent)]
 pub struct IDedupDataPort(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDedupDataPort {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDedupDataPort {
     #[doc = "*Required features: `\"Win32_Storage_DataDeduplication\"`*"]
     pub unsafe fn GetStatus(&self, pstatus: *mut DedupDataPortVolumeStatus, pdataheadroommb: *mut u32) -> ::windows::core::Result<()> {
@@ -722,11 +743,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDedu
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDedupDataPort {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDedupDataPort {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -777,6 +793,11 @@ pub struct IDedupDataPort_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_DataDeduplication\"`*"]
 #[repr(transparent)]
 pub struct IDedupDataPortManager(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDedupDataPortManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDedupDataPortManager {
     #[doc = "*Required features: `\"Win32_Storage_DataDeduplication\"`*"]
     pub unsafe fn GetConfiguration(&self, pminchunksize: *mut u32, pmaxchunksize: *mut u32, pchunkingalgorithm: *mut DedupChunkingAlgorithm, phashingalgorithm: *mut DedupHashingAlgorithm, pcompressionalgorithm: *mut DedupCompressionAlgorithm) -> ::windows::core::Result<()> {
@@ -815,11 +836,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDedu
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDedupDataPortManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDedupDataPortManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -852,6 +868,11 @@ pub struct IDedupDataPortManager_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_DataDeduplication\"`*"]
 #[repr(transparent)]
 pub struct IDedupIterateChunksHash32(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDedupIterateChunksHash32 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDedupIterateChunksHash32 {
     #[doc = "*Required features: `\"Win32_Storage_DataDeduplication\"`*"]
     pub unsafe fn PushBuffer(&self, pbuffer: &[u8]) -> ::windows::core::Result<()> {
@@ -890,11 +911,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDedu
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDedupIterateChunksHash32 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDedupIterateChunksHash32 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -922,6 +938,11 @@ pub struct IDedupIterateChunksHash32_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_DataDeduplication\"`*"]
 #[repr(transparent)]
 pub struct IDedupReadFileCallback(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDedupReadFileCallback {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDedupReadFileCallback {
     #[doc = "*Required features: `\"Win32_Storage_DataDeduplication\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -957,11 +978,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IDedupRea
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDedupReadFileCallback {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IDedupReadFileCallback {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IDedupReadFileCallback {

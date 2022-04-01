@@ -45,11 +45,6 @@ impl AttributedNetworkUsage {
         }
     }
 }
-impl ::core::clone::Clone for AttributedNetworkUsage {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AttributedNetworkUsage {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -63,7 +58,6 @@ impl ::core::fmt::Debug for AttributedNetworkUsage {
 }
 unsafe impl ::windows::core::RuntimeType for AttributedNetworkUsage {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.Connectivity.AttributedNetworkUsage;{f769b039-eca2-45eb-ade1-b0368b756c49})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -140,6 +134,7 @@ impl ::core::default::Default for CellularApnAuthenticationType {
 }
 unsafe impl ::windows::core::Abi for CellularApnAuthenticationType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CellularApnAuthenticationType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -148,7 +143,6 @@ impl ::core::fmt::Debug for CellularApnAuthenticationType {
 }
 unsafe impl ::windows::core::RuntimeType for CellularApnAuthenticationType {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Networking.Connectivity.CellularApnAuthenticationType;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -256,11 +250,6 @@ impl CellularApnContext {
         unsafe { (::windows::core::Interface::vtable(this).SetProfileName)(::core::mem::transmute_copy(this), value.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for CellularApnContext {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for CellularApnContext {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -274,7 +263,6 @@ impl ::core::fmt::Debug for CellularApnContext {
 }
 unsafe impl ::windows::core::RuntimeType for CellularApnContext {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.Connectivity.CellularApnContext;{6fa529f4-effd-4542-9ab2-705bbf94943a})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -373,11 +361,6 @@ impl ConnectionCost {
         }
     }
 }
-impl ::core::clone::Clone for ConnectionCost {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ConnectionCost {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -391,7 +374,6 @@ impl ::core::fmt::Debug for ConnectionCost {
 }
 unsafe impl ::windows::core::RuntimeType for ConnectionCost {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.Connectivity.ConnectionCost;{bad7d829-3416-4b10-a202-bac0b075bdae})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -636,11 +618,6 @@ impl ConnectionProfile {
         }
     }
 }
-impl ::core::clone::Clone for ConnectionProfile {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ConnectionProfile {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -654,7 +631,6 @@ impl ::core::fmt::Debug for ConnectionProfile {
 }
 unsafe impl ::windows::core::RuntimeType for ConnectionProfile {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.Connectivity.ConnectionProfile;{71ba143c-598e-49d0-84eb-8febaedcc195})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -731,6 +707,7 @@ impl ::core::default::Default for ConnectionProfileDeleteStatus {
 }
 unsafe impl ::windows::core::Abi for ConnectionProfileDeleteStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ConnectionProfileDeleteStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -739,7 +716,6 @@ impl ::core::fmt::Debug for ConnectionProfileDeleteStatus {
 }
 unsafe impl ::windows::core::RuntimeType for ConnectionProfileDeleteStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Networking.Connectivity.ConnectionProfileDeleteStatus;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -892,11 +868,6 @@ impl ConnectionProfileFilter {
         }
     }
 }
-impl ::core::clone::Clone for ConnectionProfileFilter {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ConnectionProfileFilter {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -910,7 +881,6 @@ impl ::core::fmt::Debug for ConnectionProfileFilter {
 }
 unsafe impl ::windows::core::RuntimeType for ConnectionProfileFilter {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.Connectivity.ConnectionProfileFilter;{204c7cc8-bd2d-4e8d-a4b3-455ec337388a})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -983,11 +953,6 @@ impl ConnectionSession {
         }
     }
 }
-impl ::core::clone::Clone for ConnectionSession {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ConnectionSession {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1001,7 +966,6 @@ impl ::core::fmt::Debug for ConnectionSession {
 }
 unsafe impl ::windows::core::RuntimeType for ConnectionSession {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.Connectivity.ConnectionSession;{ff905d4c-f83b-41b0-8a0c-1462d9c56b73})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1104,11 +1068,6 @@ impl ConnectivityInterval {
         }
     }
 }
-impl ::core::clone::Clone for ConnectivityInterval {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ConnectivityInterval {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1122,7 +1081,6 @@ impl ::core::fmt::Debug for ConnectivityInterval {
 }
 unsafe impl ::windows::core::RuntimeType for ConnectivityInterval {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.Connectivity.ConnectivityInterval;{4faa3fff-6746-4824-a964-eed8e87f8709})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1262,11 +1220,6 @@ impl DataPlanStatus {
         }
     }
 }
-impl ::core::clone::Clone for DataPlanStatus {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DataPlanStatus {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1280,7 +1233,6 @@ impl ::core::fmt::Debug for DataPlanStatus {
 }
 unsafe impl ::windows::core::RuntimeType for DataPlanStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.Connectivity.DataPlanStatus;{977a8b8c-3885-40f3-8851-42cd2bd568bb})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1356,11 +1308,6 @@ impl DataPlanUsage {
         }
     }
 }
-impl ::core::clone::Clone for DataPlanUsage {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DataPlanUsage {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1374,7 +1321,6 @@ impl ::core::fmt::Debug for DataPlanUsage {
 }
 unsafe impl ::windows::core::RuntimeType for DataPlanUsage {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.Connectivity.DataPlanUsage;{b921492d-3b44-47ff-b361-be59e69ed1b0})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1454,12 +1400,6 @@ impl DataUsage {
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for DataUsage {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for DataUsage {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1476,7 +1416,6 @@ impl ::core::fmt::Debug for DataUsage {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for DataUsage {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.Connectivity.DataUsage;{c1431dd3-b146-4d39-b959-0c69b096c512})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1565,6 +1504,7 @@ impl ::core::default::Default for DataUsageGranularity {
 }
 unsafe impl ::windows::core::Abi for DataUsageGranularity {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DataUsageGranularity {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1573,7 +1513,6 @@ impl ::core::fmt::Debug for DataUsageGranularity {
 }
 unsafe impl ::windows::core::RuntimeType for DataUsageGranularity {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Networking.Connectivity.DataUsageGranularity;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1600,6 +1539,7 @@ impl ::core::default::Default for DomainConnectivityLevel {
 }
 unsafe impl ::windows::core::Abi for DomainConnectivityLevel {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DomainConnectivityLevel {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1608,7 +1548,6 @@ impl ::core::fmt::Debug for DomainConnectivityLevel {
 }
 unsafe impl ::windows::core::RuntimeType for DomainConnectivityLevel {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Networking.Connectivity.DomainConnectivityLevel;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1616,6 +1555,11 @@ unsafe impl ::windows::core::RuntimeType for DomainConnectivityLevel {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAttributedNetworkUsage(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAttributedNetworkUsage {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAttributedNetworkUsage {
     type Vtable = IAttributedNetworkUsage_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf769b039_eca2_45eb_ade1_b0368b756c49);
@@ -1636,6 +1580,11 @@ pub struct IAttributedNetworkUsage_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICellularApnContext(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICellularApnContext {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICellularApnContext {
     type Vtable = ICellularApnContext_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x6fa529f4_effd_4542_9ab2_705bbf94943a);
@@ -1660,6 +1609,11 @@ pub struct ICellularApnContext_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICellularApnContext2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICellularApnContext2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICellularApnContext2 {
     type Vtable = ICellularApnContext2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x76b0eb1a_ac49_4350_b1e5_dc4763bc69c7);
@@ -1674,6 +1628,11 @@ pub struct ICellularApnContext2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IConnectionCost(::windows::core::IUnknown);
+impl ::core::clone::Clone for IConnectionCost {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IConnectionCost {
     type Vtable = IConnectionCost_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xbad7d829_3416_4b10_a202_bac0b075bdae);
@@ -1690,6 +1649,11 @@ pub struct IConnectionCost_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IConnectionCost2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IConnectionCost2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IConnectionCost2 {
     type Vtable = IConnectionCost2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x8e113a05_e209_4549_bb25_5e0db691cb05);
@@ -1703,6 +1667,11 @@ pub struct IConnectionCost2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IConnectionProfile(::windows::core::IUnknown);
+impl ::core::clone::Clone for IConnectionProfile {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IConnectionProfile {
     type Vtable = IConnectionProfile_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x71ba143c_598e_49d0_84eb_8febaedcc195);
@@ -1733,6 +1702,11 @@ pub struct IConnectionProfile_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IConnectionProfile2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IConnectionProfile2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IConnectionProfile2 {
     type Vtable = IConnectionProfile2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe2045145_4c9f_400c_9150_7ec7d6e2888a);
@@ -1766,6 +1740,11 @@ pub struct IConnectionProfile2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IConnectionProfile3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IConnectionProfile3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IConnectionProfile3 {
     type Vtable = IConnectionProfile3_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x578c2528_4cd9_4161_8045_201cfd5b115c);
@@ -1782,6 +1761,11 @@ pub struct IConnectionProfile3_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IConnectionProfile4(::windows::core::IUnknown);
+impl ::core::clone::Clone for IConnectionProfile4 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IConnectionProfile4 {
     type Vtable = IConnectionProfile4_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x7a2d42cd_81e0_4ae6_abed_ab9ca13eb714);
@@ -1798,6 +1782,11 @@ pub struct IConnectionProfile4_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IConnectionProfile5(::windows::core::IUnknown);
+impl ::core::clone::Clone for IConnectionProfile5 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IConnectionProfile5 {
     type Vtable = IConnectionProfile5_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x85361ec7_9c73_4be0_8f14_578eec71ee0e);
@@ -1815,6 +1804,11 @@ pub struct IConnectionProfile5_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IConnectionProfileFilter(::windows::core::IUnknown);
+impl ::core::clone::Clone for IConnectionProfileFilter {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IConnectionProfileFilter {
     type Vtable = IConnectionProfileFilter_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x204c7cc8_bd2d_4e8d_a4b3_455ec337388a);
@@ -1843,6 +1837,11 @@ pub struct IConnectionProfileFilter_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IConnectionProfileFilter2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IConnectionProfileFilter2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IConnectionProfileFilter2 {
     type Vtable = IConnectionProfileFilter2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xcd068ee1_c3fc_4fad_9ddc_593faa4b7885);
@@ -1883,6 +1882,11 @@ pub struct IConnectionProfileFilter2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IConnectionProfileFilter3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IConnectionProfileFilter3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IConnectionProfileFilter3 {
     type Vtable = IConnectionProfileFilter3_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x0aaa09c0_5014_447c_8809_aee4cb0af94a);
@@ -1903,6 +1907,11 @@ pub struct IConnectionProfileFilter3_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IConnectionSession(::windows::core::IUnknown);
+impl ::core::clone::Clone for IConnectionSession {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IConnectionSession {
     type Vtable = IConnectionSession_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xff905d4c_f83b_41b0_8a0c_1462d9c56b73);
@@ -1916,6 +1925,11 @@ pub struct IConnectionSession_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IConnectivityInterval(::windows::core::IUnknown);
+impl ::core::clone::Clone for IConnectivityInterval {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IConnectivityInterval {
     type Vtable = IConnectivityInterval_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x4faa3fff_6746_4824_a964_eed8e87f8709);
@@ -1936,6 +1950,11 @@ pub struct IConnectivityInterval_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IConnectivityManagerStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IConnectivityManagerStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IConnectivityManagerStatics {
     type Vtable = IConnectivityManagerStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x5120d4b1_4fb1_48b0_afc9_42e0092a8164);
@@ -1954,6 +1973,11 @@ pub struct IConnectivityManagerStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDataPlanStatus(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDataPlanStatus {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDataPlanStatus {
     type Vtable = IDataPlanStatus_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x977a8b8c_3885_40f3_8851_42cd2bd568bb);
@@ -1987,6 +2011,11 @@ pub struct IDataPlanStatus_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDataPlanUsage(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDataPlanUsage {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDataPlanUsage {
     type Vtable = IDataPlanUsage_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb921492d_3b44_47ff_b361_be59e69ed1b0);
@@ -2005,6 +2034,12 @@ pub struct IDataPlanUsage_Vtbl {
 #[cfg(feature = "deprecated")]
 #[repr(transparent)]
 pub struct IDataUsage(::windows::core::IUnknown);
+#[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for IDataUsage {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for IDataUsage {
     type Vtable = IDataUsage_Vtbl;
@@ -2027,6 +2062,11 @@ pub struct IDataUsage_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IIPInformation(::windows::core::IUnknown);
+impl ::core::clone::Clone for IIPInformation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IIPInformation {
     type Vtable = IIPInformation_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd85145e0_138f_47d7_9b3a_36bb488cef33);
@@ -2044,6 +2084,11 @@ pub struct IIPInformation_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ILanIdentifier(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILanIdentifier {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ILanIdentifier {
     type Vtable = ILanIdentifier_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x48aa53aa_1108_4546_a6cb_9a74da4b7ba0);
@@ -2059,6 +2104,11 @@ pub struct ILanIdentifier_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ILanIdentifierData(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILanIdentifierData {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ILanIdentifierData {
     type Vtable = ILanIdentifierData_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa74e83c3_d639_45be_a36a_c4e4aeaf6d9b);
@@ -2076,6 +2126,11 @@ pub struct ILanIdentifierData_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct INetworkAdapter(::windows::core::IUnknown);
+impl ::core::clone::Clone for INetworkAdapter {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for INetworkAdapter {
     type Vtable = INetworkAdapter_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x3b542e03_5388_496c_a8a3_affd39aec2e6);
@@ -2097,6 +2152,11 @@ pub struct INetworkAdapter_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct INetworkInformationStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for INetworkInformationStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for INetworkInformationStatics {
     type Vtable = INetworkInformationStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x5074f851_950d_4165_9c15_365619481eea);
@@ -2138,6 +2198,11 @@ pub struct INetworkInformationStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct INetworkInformationStatics2(::windows::core::IUnknown);
+impl ::core::clone::Clone for INetworkInformationStatics2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for INetworkInformationStatics2 {
     type Vtable = INetworkInformationStatics2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x459ced14_2832_49b6_ba6e_e265f04786a8);
@@ -2154,6 +2219,11 @@ pub struct INetworkInformationStatics2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct INetworkItem(::windows::core::IUnknown);
+impl ::core::clone::Clone for INetworkItem {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for INetworkItem {
     type Vtable = INetworkItem_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x01bc4d39_f5e0_4567_a28c_42080c831b2b);
@@ -2168,6 +2238,11 @@ pub struct INetworkItem_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct INetworkSecuritySettings(::windows::core::IUnknown);
+impl ::core::clone::Clone for INetworkSecuritySettings {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for INetworkSecuritySettings {
     type Vtable = INetworkSecuritySettings_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x7ca07e8d_917b_4b5f_b84d_28f7a5ac5402);
@@ -2182,6 +2257,11 @@ pub struct INetworkSecuritySettings_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct INetworkStateChangeEventDetails(::windows::core::IUnknown);
+impl ::core::clone::Clone for INetworkStateChangeEventDetails {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for INetworkStateChangeEventDetails {
     type Vtable = INetworkStateChangeEventDetails_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1f0cf333_d7a6_44dd_a4e9_687c476b903d);
@@ -2200,6 +2280,11 @@ pub struct INetworkStateChangeEventDetails_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct INetworkStateChangeEventDetails2(::windows::core::IUnknown);
+impl ::core::clone::Clone for INetworkStateChangeEventDetails2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for INetworkStateChangeEventDetails2 {
     type Vtable = INetworkStateChangeEventDetails2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd643c0e8_30d3_4f6a_ad47_6a1873ceb3c1);
@@ -2214,6 +2299,11 @@ pub struct INetworkStateChangeEventDetails2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct INetworkUsage(::windows::core::IUnknown);
+impl ::core::clone::Clone for INetworkUsage {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for INetworkUsage {
     type Vtable = INetworkUsage_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x49da8fce_9985_4927_bf5b_072b5c65f8d9);
@@ -2251,11 +2341,6 @@ impl IPInformation {
         }
     }
 }
-impl ::core::clone::Clone for IPInformation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPInformation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2269,7 +2354,6 @@ impl ::core::fmt::Debug for IPInformation {
 }
 unsafe impl ::windows::core::RuntimeType for IPInformation {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.Connectivity.IPInformation;{d85145e0-138f-47d7-9b3a-36bb488cef33})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2326,6 +2410,11 @@ unsafe impl ::core::marker::Sync for IPInformation {}
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IProviderNetworkUsage(::windows::core::IUnknown);
+impl ::core::clone::Clone for IProviderNetworkUsage {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IProviderNetworkUsage {
     type Vtable = IProviderNetworkUsage_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x5ec69e04_7931_48c8_b8f3_46300fa42728);
@@ -2341,6 +2430,11 @@ pub struct IProviderNetworkUsage_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IProxyConfiguration(::windows::core::IUnknown);
+impl ::core::clone::Clone for IProxyConfiguration {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IProxyConfiguration {
     type Vtable = IProxyConfiguration_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xef3a60b4_9004_4dd6_b7d8_b3e502f4aad0);
@@ -2358,6 +2452,11 @@ pub struct IProxyConfiguration_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IRoutePolicy(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRoutePolicy {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IRoutePolicy {
     type Vtable = IRoutePolicy_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x11abc4ac_0fc7_42e4_8742_569923b1ca11);
@@ -2373,6 +2472,11 @@ pub struct IRoutePolicy_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IRoutePolicyFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRoutePolicyFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IRoutePolicyFactory {
     type Vtable = IRoutePolicyFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x36027933_a18e_4db5_a697_f58fa7364e44);
@@ -2386,6 +2490,11 @@ pub struct IRoutePolicyFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWlanConnectionProfileDetails(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWlanConnectionProfileDetails {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWlanConnectionProfileDetails {
     type Vtable = IWlanConnectionProfileDetails_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x562098cb_b35a_4bf1_a884_b7557e88ff86);
@@ -2399,6 +2508,11 @@ pub struct IWlanConnectionProfileDetails_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWwanConnectionProfileDetails(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWwanConnectionProfileDetails {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWwanConnectionProfileDetails {
     type Vtable = IWwanConnectionProfileDetails_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x0e4da8fe_835f_4df3_82fd_df556ebc09ef);
@@ -2415,6 +2529,11 @@ pub struct IWwanConnectionProfileDetails_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWwanConnectionProfileDetails2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWwanConnectionProfileDetails2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWwanConnectionProfileDetails2 {
     type Vtable = IWwanConnectionProfileDetails2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x7a754ede_a1ed_48b2_8e92_b460033d52e2);
@@ -2458,11 +2577,6 @@ impl LanIdentifier {
         }
     }
 }
-impl ::core::clone::Clone for LanIdentifier {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for LanIdentifier {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2476,7 +2590,6 @@ impl ::core::fmt::Debug for LanIdentifier {
 }
 unsafe impl ::windows::core::RuntimeType for LanIdentifier {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.Connectivity.LanIdentifier;{48aa53aa-1108-4546-a6cb-9a74da4b7ba0})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2552,11 +2665,6 @@ impl LanIdentifierData {
         }
     }
 }
-impl ::core::clone::Clone for LanIdentifierData {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for LanIdentifierData {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2570,7 +2678,6 @@ impl ::core::fmt::Debug for LanIdentifierData {
 }
 unsafe impl ::windows::core::RuntimeType for LanIdentifierData {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.Connectivity.LanIdentifierData;{a74e83c3-d639-45be-a36a-c4e4aeaf6d9b})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2678,11 +2785,6 @@ impl NetworkAdapter {
         }
     }
 }
-impl ::core::clone::Clone for NetworkAdapter {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for NetworkAdapter {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2696,7 +2798,6 @@ impl ::core::fmt::Debug for NetworkAdapter {
 }
 unsafe impl ::windows::core::RuntimeType for NetworkAdapter {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.Connectivity.NetworkAdapter;{3b542e03-5388-496c-a8a3-affd39aec2e6})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2784,6 +2885,7 @@ impl ::core::default::Default for NetworkAuthenticationType {
 }
 unsafe impl ::windows::core::Abi for NetworkAuthenticationType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NetworkAuthenticationType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2792,7 +2894,6 @@ impl ::core::fmt::Debug for NetworkAuthenticationType {
 }
 unsafe impl ::windows::core::RuntimeType for NetworkAuthenticationType {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Networking.Connectivity.NetworkAuthenticationType;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2820,6 +2921,7 @@ impl ::core::default::Default for NetworkConnectivityLevel {
 }
 unsafe impl ::windows::core::Abi for NetworkConnectivityLevel {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NetworkConnectivityLevel {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2828,7 +2930,6 @@ impl ::core::fmt::Debug for NetworkConnectivityLevel {
 }
 unsafe impl ::windows::core::RuntimeType for NetworkConnectivityLevel {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Networking.Connectivity.NetworkConnectivityLevel;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2856,6 +2957,7 @@ impl ::core::default::Default for NetworkCostType {
 }
 unsafe impl ::windows::core::Abi for NetworkCostType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NetworkCostType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2864,7 +2966,6 @@ impl ::core::fmt::Debug for NetworkCostType {
 }
 unsafe impl ::windows::core::RuntimeType for NetworkCostType {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Networking.Connectivity.NetworkCostType;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2900,6 +3001,7 @@ impl ::core::default::Default for NetworkEncryptionType {
 }
 unsafe impl ::windows::core::Abi for NetworkEncryptionType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NetworkEncryptionType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2908,7 +3010,6 @@ impl ::core::fmt::Debug for NetworkEncryptionType {
 }
 unsafe impl ::windows::core::RuntimeType for NetworkEncryptionType {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Networking.Connectivity.NetworkEncryptionType;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -3019,11 +3120,6 @@ impl NetworkItem {
         }
     }
 }
-impl ::core::clone::Clone for NetworkItem {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for NetworkItem {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3037,7 +3133,6 @@ impl ::core::fmt::Debug for NetworkItem {
 }
 unsafe impl ::windows::core::RuntimeType for NetworkItem {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.Connectivity.NetworkItem;{01bc4d39-f5e0-4567-a28c-42080c831b2b})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3112,11 +3207,6 @@ impl NetworkSecuritySettings {
         }
     }
 }
-impl ::core::clone::Clone for NetworkSecuritySettings {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for NetworkSecuritySettings {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3130,7 +3220,6 @@ impl ::core::fmt::Debug for NetworkSecuritySettings {
 }
 unsafe impl ::windows::core::RuntimeType for NetworkSecuritySettings {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.Connectivity.NetworkSecuritySettings;{7ca07e8d-917b-4b5f-b84d-28f7a5ac5402})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3253,11 +3342,6 @@ impl NetworkStateChangeEventDetails {
         }
     }
 }
-impl ::core::clone::Clone for NetworkStateChangeEventDetails {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for NetworkStateChangeEventDetails {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3271,7 +3355,6 @@ impl ::core::fmt::Debug for NetworkStateChangeEventDetails {
 }
 unsafe impl ::windows::core::RuntimeType for NetworkStateChangeEventDetails {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.Connectivity.NetworkStateChangeEventDetails;{1f0cf333-d7a6-44dd-a4e9-687c476b903d})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3377,11 +3460,6 @@ impl<F: FnMut(&::core::option::Option<::windows::core::IInspectable>) -> ::windo
         ((*this).invoke)(::core::mem::transmute(&sender)).into()
     }
 }
-impl ::core::clone::Clone for NetworkStatusChangedEventHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for NetworkStatusChangedEventHandler {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3399,7 +3477,6 @@ unsafe impl ::windows::core::Interface for NetworkStatusChangedEventHandler {
 }
 unsafe impl ::windows::core::RuntimeType for NetworkStatusChangedEventHandler {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{71ba143f-598e-49d0-84eb-8febaedcc195}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3432,6 +3509,7 @@ impl ::core::default::Default for NetworkTypes {
 }
 unsafe impl ::windows::core::Abi for NetworkTypes {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NetworkTypes {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3468,7 +3546,6 @@ impl ::core::ops::Not for NetworkTypes {
 }
 unsafe impl ::windows::core::RuntimeType for NetworkTypes {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Networking.Connectivity.NetworkTypes;u4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -3503,11 +3580,6 @@ impl NetworkUsage {
         }
     }
 }
-impl ::core::clone::Clone for NetworkUsage {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for NetworkUsage {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3521,7 +3593,6 @@ impl ::core::fmt::Debug for NetworkUsage {
 }
 unsafe impl ::windows::core::RuntimeType for NetworkUsage {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.Connectivity.NetworkUsage;{49da8fce-9985-4927-bf5b-072b5c65f8d9})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3594,10 +3665,10 @@ impl ::core::fmt::Debug for NetworkUsageStates {
 }
 unsafe impl ::windows::core::Abi for NetworkUsageStates {
     type Abi = Self;
+    type DefaultType = Self;
 }
 unsafe impl ::windows::core::RuntimeType for NetworkUsageStates {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"struct(Windows.Networking.Connectivity.NetworkUsageStates;enum(Windows.Networking.Connectivity.TriStates;i4);enum(Windows.Networking.Connectivity.TriStates;i4))");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -3642,11 +3713,6 @@ impl ProviderNetworkUsage {
         }
     }
 }
-impl ::core::clone::Clone for ProviderNetworkUsage {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ProviderNetworkUsage {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3660,7 +3726,6 @@ impl ::core::fmt::Debug for ProviderNetworkUsage {
 }
 unsafe impl ::windows::core::RuntimeType for ProviderNetworkUsage {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.Connectivity.ProviderNetworkUsage;{5ec69e04-7931-48c8-b8f3-46300fa42728})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3736,11 +3801,6 @@ impl ProxyConfiguration {
         }
     }
 }
-impl ::core::clone::Clone for ProxyConfiguration {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ProxyConfiguration {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3754,7 +3814,6 @@ impl ::core::fmt::Debug for ProxyConfiguration {
 }
 unsafe impl ::windows::core::RuntimeType for ProxyConfiguration {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.Connectivity.ProxyConfiguration;{ef3a60b4-9004-4dd6-b7d8-b3e502f4aad0})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3830,6 +3889,7 @@ impl ::core::default::Default for RoamingStates {
 }
 unsafe impl ::windows::core::Abi for RoamingStates {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RoamingStates {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3866,7 +3926,6 @@ impl ::core::ops::Not for RoamingStates {
 }
 unsafe impl ::windows::core::RuntimeType for RoamingStates {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Networking.Connectivity.RoamingStates;u4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -3912,11 +3971,6 @@ impl RoutePolicy {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for RoutePolicy {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for RoutePolicy {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3930,7 +3984,6 @@ impl ::core::fmt::Debug for RoutePolicy {
 }
 unsafe impl ::windows::core::RuntimeType for RoutePolicy {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.Connectivity.RoutePolicy;{11abc4ac-0fc7-42e4-8742-569923b1ca11})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4006,6 +4059,7 @@ impl ::core::default::Default for TriStates {
 }
 unsafe impl ::windows::core::Abi for TriStates {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TriStates {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4014,7 +4068,6 @@ impl ::core::fmt::Debug for TriStates {
 }
 unsafe impl ::windows::core::RuntimeType for TriStates {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Networking.Connectivity.TriStates;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -4032,11 +4085,6 @@ impl WlanConnectionProfileDetails {
         }
     }
 }
-impl ::core::clone::Clone for WlanConnectionProfileDetails {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for WlanConnectionProfileDetails {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4050,7 +4098,6 @@ impl ::core::fmt::Debug for WlanConnectionProfileDetails {
 }
 unsafe impl ::windows::core::RuntimeType for WlanConnectionProfileDetails {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.Connectivity.WlanConnectionProfileDetails;{562098cb-b35a-4bf1-a884-b7557e88ff86})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4158,11 +4205,6 @@ impl WwanConnectionProfileDetails {
         }
     }
 }
-impl ::core::clone::Clone for WwanConnectionProfileDetails {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for WwanConnectionProfileDetails {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4176,7 +4218,6 @@ impl ::core::fmt::Debug for WwanConnectionProfileDetails {
 }
 unsafe impl ::windows::core::RuntimeType for WwanConnectionProfileDetails {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.Connectivity.WwanConnectionProfileDetails;{0e4da8fe-835f-4df3-82fd-df556ebc09ef})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4264,6 +4305,7 @@ impl ::core::default::Default for WwanDataClass {
 }
 unsafe impl ::windows::core::Abi for WwanDataClass {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WwanDataClass {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4300,7 +4342,6 @@ impl ::core::ops::Not for WwanDataClass {
 }
 unsafe impl ::windows::core::RuntimeType for WwanDataClass {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Networking.Connectivity.WwanDataClass;u4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -4329,6 +4370,7 @@ impl ::core::default::Default for WwanNetworkIPKind {
 }
 unsafe impl ::windows::core::Abi for WwanNetworkIPKind {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WwanNetworkIPKind {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4337,7 +4379,6 @@ impl ::core::fmt::Debug for WwanNetworkIPKind {
 }
 unsafe impl ::windows::core::RuntimeType for WwanNetworkIPKind {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Networking.Connectivity.WwanNetworkIPKind;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -4368,6 +4409,7 @@ impl ::core::default::Default for WwanNetworkRegistrationState {
 }
 unsafe impl ::windows::core::Abi for WwanNetworkRegistrationState {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WwanNetworkRegistrationState {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4376,7 +4418,6 @@ impl ::core::fmt::Debug for WwanNetworkRegistrationState {
 }
 unsafe impl ::windows::core::RuntimeType for WwanNetworkRegistrationState {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Networking.Connectivity.WwanNetworkRegistrationState;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }

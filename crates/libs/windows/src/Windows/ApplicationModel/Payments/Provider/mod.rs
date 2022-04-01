@@ -2,6 +2,11 @@
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPaymentAppCanMakePaymentTriggerDetails(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPaymentAppCanMakePaymentTriggerDetails {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPaymentAppCanMakePaymentTriggerDetails {
     type Vtable = IPaymentAppCanMakePaymentTriggerDetails_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x0ce201f0_8b93_4eb6_8c46_2e4a6c6a26f6);
@@ -16,6 +21,11 @@ pub struct IPaymentAppCanMakePaymentTriggerDetails_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPaymentAppManager(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPaymentAppManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPaymentAppManager {
     type Vtable = IPaymentAppManager_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x0e47aa53_8521_4969_a957_df2538a3a98f);
@@ -36,6 +46,11 @@ pub struct IPaymentAppManager_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPaymentAppManagerStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPaymentAppManagerStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPaymentAppManagerStatics {
     type Vtable = IPaymentAppManagerStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa341ac28_fc89_4406_b4d9_34e7fe79dfb6);
@@ -49,6 +64,11 @@ pub struct IPaymentAppManagerStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPaymentTransaction(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPaymentTransaction {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPaymentTransaction {
     type Vtable = IPaymentTransaction_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x62581da0_26a5_4e9b_a6eb_66606cf001d3);
@@ -81,6 +101,11 @@ pub struct IPaymentTransaction_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPaymentTransactionAcceptResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPaymentTransactionAcceptResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPaymentTransactionAcceptResult {
     type Vtable = IPaymentTransactionAcceptResult_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x060e3276_d30c_4817_95a2_df7ae9273b56);
@@ -94,6 +119,11 @@ pub struct IPaymentTransactionAcceptResult_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPaymentTransactionStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPaymentTransactionStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPaymentTransactionStatics {
     type Vtable = IPaymentTransactionStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x8d639750_ee0a_4df5_9b1e_1c0f9ec59881);
@@ -125,11 +155,6 @@ impl PaymentAppCanMakePaymentTriggerDetails {
         unsafe { (::windows::core::Interface::vtable(this).ReportCanMakePaymentResult)(::core::mem::transmute_copy(this), value.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for PaymentAppCanMakePaymentTriggerDetails {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PaymentAppCanMakePaymentTriggerDetails {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -143,7 +168,6 @@ impl ::core::fmt::Debug for PaymentAppCanMakePaymentTriggerDetails {
 }
 unsafe impl ::windows::core::RuntimeType for PaymentAppCanMakePaymentTriggerDetails {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Payments.Provider.PaymentAppCanMakePaymentTriggerDetails;{0ce201f0-8b93-4eb6-8c46-2e4a6c6a26f6})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -232,11 +256,6 @@ impl PaymentAppManager {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for PaymentAppManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PaymentAppManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -250,7 +269,6 @@ impl ::core::fmt::Debug for PaymentAppManager {
 }
 unsafe impl ::windows::core::RuntimeType for PaymentAppManager {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Payments.Provider.PaymentAppManager;{0e47aa53-8521-4969-a957-df2538a3a98f})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -401,11 +419,6 @@ impl PaymentTransaction {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for PaymentTransaction {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PaymentTransaction {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -419,7 +432,6 @@ impl ::core::fmt::Debug for PaymentTransaction {
 }
 unsafe impl ::windows::core::RuntimeType for PaymentTransaction {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Payments.Provider.PaymentTransaction;{62581da0-26a5-4e9b-a6eb-66606cf001d3})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -486,11 +498,6 @@ impl PaymentTransactionAcceptResult {
         }
     }
 }
-impl ::core::clone::Clone for PaymentTransactionAcceptResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PaymentTransactionAcceptResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -504,7 +511,6 @@ impl ::core::fmt::Debug for PaymentTransactionAcceptResult {
 }
 unsafe impl ::windows::core::RuntimeType for PaymentTransactionAcceptResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Payments.Provider.PaymentTransactionAcceptResult;{060e3276-d30c-4817-95a2-df7ae9273b56})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

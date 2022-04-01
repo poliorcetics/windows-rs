@@ -141,11 +141,6 @@ impl CompositionConditionalValue {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for CompositionConditionalValue {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for CompositionConditionalValue {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -159,7 +154,6 @@ impl ::core::fmt::Debug for CompositionConditionalValue {
 }
 unsafe impl ::windows::core::RuntimeType for CompositionConditionalValue {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Composition.Interactions.CompositionConditionalValue;{43250538-eb73-4561-a71d-1a43eaeb7a9b})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -417,11 +411,6 @@ impl CompositionInteractionSourceCollection {
         }
     }
 }
-impl ::core::clone::Clone for CompositionInteractionSourceCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for CompositionInteractionSourceCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -435,7 +424,6 @@ impl ::core::fmt::Debug for CompositionInteractionSourceCollection {
 }
 unsafe impl ::windows::core::RuntimeType for CompositionInteractionSourceCollection {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Composition.Interactions.CompositionInteractionSourceCollection;{1b468e4b-a5bf-47d8-a547-3894155a158c})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -602,6 +590,11 @@ unsafe impl ::core::marker::Sync for CompositionInteractionSourceCollection {}
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICompositionConditionalValue(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICompositionConditionalValue {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICompositionConditionalValue {
     type Vtable = ICompositionConditionalValue_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x43250538_eb73_4561_a71d_1a43eaeb7a9b);
@@ -618,6 +611,11 @@ pub struct ICompositionConditionalValue_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICompositionConditionalValueStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICompositionConditionalValueStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICompositionConditionalValueStatics {
     type Vtable = ICompositionConditionalValueStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x090c4b72_8467_4d0a_9065_ac46b80a5522);
@@ -631,6 +629,11 @@ pub struct ICompositionConditionalValueStatics_Vtbl {
 #[doc = "*Required features: `\"UI_Composition_Interactions\"`*"]
 #[repr(transparent)]
 pub struct ICompositionInteractionSource(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICompositionInteractionSource {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ICompositionInteractionSource {}
 impl ::core::convert::From<ICompositionInteractionSource> for ::windows::core::IUnknown {
     fn from(value: ICompositionInteractionSource) -> Self {
@@ -672,11 +675,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ICompositionInteractionSource {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ICompositionInteractionSource {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -690,7 +688,6 @@ impl ::core::fmt::Debug for ICompositionInteractionSource {
 }
 unsafe impl ::windows::core::RuntimeType for ICompositionInteractionSource {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{043b2431-06e3-495a-ba54-409f0017fac0}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -707,6 +704,11 @@ pub struct ICompositionInteractionSource_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICompositionInteractionSourceCollection(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICompositionInteractionSourceCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICompositionInteractionSourceCollection {
     type Vtable = ICompositionInteractionSourceCollection_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1b468e4b_a5bf_47d8_a547_3894155a158c);
@@ -723,6 +725,11 @@ pub struct ICompositionInteractionSourceCollection_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IInteractionSourceConfiguration(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInteractionSourceConfiguration {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IInteractionSourceConfiguration {
     type Vtable = IInteractionSourceConfiguration_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa78347e5_a9d1_4d02_985e_b930cd0b9da4);
@@ -741,6 +748,11 @@ pub struct IInteractionSourceConfiguration_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IInteractionTracker(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInteractionTracker {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IInteractionTracker {
     type Vtable = IInteractionTracker_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x2a8e8cb1_1000_4416_8363_cc27fb877308);
@@ -846,6 +858,11 @@ pub struct IInteractionTracker_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IInteractionTracker2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInteractionTracker2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IInteractionTracker2 {
     type Vtable = IInteractionTracker2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x25769a3e_ce6d_448c_8386_92620d240756);
@@ -866,6 +883,11 @@ pub struct IInteractionTracker2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IInteractionTracker3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInteractionTracker3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IInteractionTracker3 {
     type Vtable = IInteractionTracker3_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe6c5d7a2_5c4b_42c6_84b7_f69441b18091);
@@ -882,6 +904,11 @@ pub struct IInteractionTracker3_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IInteractionTracker4(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInteractionTracker4 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IInteractionTracker4 {
     type Vtable = IInteractionTracker4_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xebd222bc_04af_4ac7_847d_06ea36e80a16);
@@ -903,6 +930,11 @@ pub struct IInteractionTracker4_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IInteractionTracker5(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInteractionTracker5 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IInteractionTracker5 {
     type Vtable = IInteractionTracker5_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd3ef5da2_a254_40e4_88d5_44e4e16b5809);
@@ -919,6 +951,11 @@ pub struct IInteractionTracker5_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IInteractionTrackerCustomAnimationStateEnteredArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInteractionTrackerCustomAnimationStateEnteredArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IInteractionTrackerCustomAnimationStateEnteredArgs {
     type Vtable = IInteractionTrackerCustomAnimationStateEnteredArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x8d1c8cf1_d7b0_434c_a5d2_2d7611864834);
@@ -932,6 +969,11 @@ pub struct IInteractionTrackerCustomAnimationStateEnteredArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IInteractionTrackerCustomAnimationStateEnteredArgs2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInteractionTrackerCustomAnimationStateEnteredArgs2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IInteractionTrackerCustomAnimationStateEnteredArgs2 {
     type Vtable = IInteractionTrackerCustomAnimationStateEnteredArgs2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x47d579b7_0985_5e99_b024_2f32c380c1a4);
@@ -945,6 +987,11 @@ pub struct IInteractionTrackerCustomAnimationStateEnteredArgs2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IInteractionTrackerIdleStateEnteredArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInteractionTrackerIdleStateEnteredArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IInteractionTrackerIdleStateEnteredArgs {
     type Vtable = IInteractionTrackerIdleStateEnteredArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x50012faa_1510_4142_a1a5_019b09f8857b);
@@ -958,6 +1005,11 @@ pub struct IInteractionTrackerIdleStateEnteredArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IInteractionTrackerIdleStateEnteredArgs2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInteractionTrackerIdleStateEnteredArgs2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IInteractionTrackerIdleStateEnteredArgs2 {
     type Vtable = IInteractionTrackerIdleStateEnteredArgs2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf2e771ed_b803_5137_9435_1c96e48721e9);
@@ -971,6 +1023,11 @@ pub struct IInteractionTrackerIdleStateEnteredArgs2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IInteractionTrackerInertiaModifier(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInteractionTrackerInertiaModifier {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IInteractionTrackerInertiaModifier {
     type Vtable = IInteractionTrackerInertiaModifier_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa0e2c920_26b4_4da2_8b61_5e683979bbe2);
@@ -983,6 +1040,11 @@ pub struct IInteractionTrackerInertiaModifier_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IInteractionTrackerInertiaModifierFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInteractionTrackerInertiaModifierFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IInteractionTrackerInertiaModifierFactory {
     type Vtable = IInteractionTrackerInertiaModifierFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x993818fe_c94e_4b86_87f3_922665ba46b9);
@@ -995,6 +1057,11 @@ pub struct IInteractionTrackerInertiaModifierFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IInteractionTrackerInertiaMotion(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInteractionTrackerInertiaMotion {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IInteractionTrackerInertiaMotion {
     type Vtable = IInteractionTrackerInertiaMotion_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x04922fdc_f154_4cb8_bf33_cc1ba611e6db);
@@ -1011,6 +1078,11 @@ pub struct IInteractionTrackerInertiaMotion_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IInteractionTrackerInertiaMotionStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInteractionTrackerInertiaMotionStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IInteractionTrackerInertiaMotionStatics {
     type Vtable = IInteractionTrackerInertiaMotionStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x8cc83dd6_ba7b_431a_844b_6eac9130f99a);
@@ -1024,6 +1096,11 @@ pub struct IInteractionTrackerInertiaMotionStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IInteractionTrackerInertiaNaturalMotion(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInteractionTrackerInertiaNaturalMotion {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IInteractionTrackerInertiaNaturalMotion {
     type Vtable = IInteractionTrackerInertiaNaturalMotion_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x70acdaae_27dc_48ed_a3c3_6d61c9a029d2);
@@ -1040,6 +1117,11 @@ pub struct IInteractionTrackerInertiaNaturalMotion_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IInteractionTrackerInertiaNaturalMotionStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInteractionTrackerInertiaNaturalMotionStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IInteractionTrackerInertiaNaturalMotionStatics {
     type Vtable = IInteractionTrackerInertiaNaturalMotionStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xcfda55b0_5e3e_4289_932d_ee5f50e74283);
@@ -1053,6 +1135,11 @@ pub struct IInteractionTrackerInertiaNaturalMotionStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IInteractionTrackerInertiaRestingValue(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInteractionTrackerInertiaRestingValue {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IInteractionTrackerInertiaRestingValue {
     type Vtable = IInteractionTrackerInertiaRestingValue_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x86f7ec09_5096_4170_9cc8_df2fe101bb93);
@@ -1069,6 +1156,11 @@ pub struct IInteractionTrackerInertiaRestingValue_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IInteractionTrackerInertiaRestingValueStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInteractionTrackerInertiaRestingValueStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IInteractionTrackerInertiaRestingValueStatics {
     type Vtable = IInteractionTrackerInertiaRestingValueStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x18ed4699_0745_4096_bcab_3a4e99569bcf);
@@ -1082,6 +1174,11 @@ pub struct IInteractionTrackerInertiaRestingValueStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IInteractionTrackerInertiaStateEnteredArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInteractionTrackerInertiaStateEnteredArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IInteractionTrackerInertiaStateEnteredArgs {
     type Vtable = IInteractionTrackerInertiaStateEnteredArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x87108cf2_e7ff_4f7d_9ffd_d72f1e409b63);
@@ -1113,6 +1210,11 @@ pub struct IInteractionTrackerInertiaStateEnteredArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IInteractionTrackerInertiaStateEnteredArgs2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInteractionTrackerInertiaStateEnteredArgs2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IInteractionTrackerInertiaStateEnteredArgs2 {
     type Vtable = IInteractionTrackerInertiaStateEnteredArgs2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb1eb32f6_c26c_41f6_a189_fabc22b323cc);
@@ -1126,6 +1228,11 @@ pub struct IInteractionTrackerInertiaStateEnteredArgs2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IInteractionTrackerInertiaStateEnteredArgs3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInteractionTrackerInertiaStateEnteredArgs3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IInteractionTrackerInertiaStateEnteredArgs3 {
     type Vtable = IInteractionTrackerInertiaStateEnteredArgs3_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x48ac1c2f_47bd_59af_a58c_79bd2eb9ef71);
@@ -1139,6 +1246,11 @@ pub struct IInteractionTrackerInertiaStateEnteredArgs3_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IInteractionTrackerInteractingStateEnteredArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInteractionTrackerInteractingStateEnteredArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IInteractionTrackerInteractingStateEnteredArgs {
     type Vtable = IInteractionTrackerInteractingStateEnteredArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa7263939_a17b_4011_99fd_b5c24f143748);
@@ -1152,6 +1264,11 @@ pub struct IInteractionTrackerInteractingStateEnteredArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IInteractionTrackerInteractingStateEnteredArgs2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInteractionTrackerInteractingStateEnteredArgs2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IInteractionTrackerInteractingStateEnteredArgs2 {
     type Vtable = IInteractionTrackerInteractingStateEnteredArgs2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x509652d6_d488_59cd_819f_f52310295b11);
@@ -1165,6 +1282,11 @@ pub struct IInteractionTrackerInteractingStateEnteredArgs2_Vtbl {
 #[doc = "*Required features: `\"UI_Composition_Interactions\"`*"]
 #[repr(transparent)]
 pub struct IInteractionTrackerOwner(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInteractionTrackerOwner {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IInteractionTrackerOwner {
     #[doc = "*Required features: `\"UI_Composition_Interactions\"`*"]
     pub fn CustomAnimationStateEntered<'a, Param0: ::windows::core::IntoParam<'a, InteractionTracker>, Param1: ::windows::core::IntoParam<'a, InteractionTrackerCustomAnimationStateEnteredArgs>>(&self, sender: Param0, args: Param1) -> ::windows::core::Result<()> {
@@ -1237,11 +1359,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IInteractionTrackerOwner {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IInteractionTrackerOwner {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1255,7 +1372,6 @@ impl ::core::fmt::Debug for IInteractionTrackerOwner {
 }
 unsafe impl ::windows::core::RuntimeType for IInteractionTrackerOwner {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{db2e8af3-4deb-4e53-b29c-b06c9f96d651}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1278,6 +1394,11 @@ pub struct IInteractionTrackerOwner_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IInteractionTrackerRequestIgnoredArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInteractionTrackerRequestIgnoredArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IInteractionTrackerRequestIgnoredArgs {
     type Vtable = IInteractionTrackerRequestIgnoredArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x80dd82f1_ce25_488f_91dd_cb6455ccff2e);
@@ -1291,6 +1412,11 @@ pub struct IInteractionTrackerRequestIgnoredArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IInteractionTrackerStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInteractionTrackerStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IInteractionTrackerStatics {
     type Vtable = IInteractionTrackerStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xbba5d7b7_6590_4498_8d6c_eb62b514c92a);
@@ -1305,6 +1431,11 @@ pub struct IInteractionTrackerStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IInteractionTrackerStatics2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInteractionTrackerStatics2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IInteractionTrackerStatics2 {
     type Vtable = IInteractionTrackerStatics2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x35e53720_46b7_5cb0_b505_f3d6884a6163);
@@ -1319,6 +1450,11 @@ pub struct IInteractionTrackerStatics2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IInteractionTrackerValuesChangedArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInteractionTrackerValuesChangedArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IInteractionTrackerValuesChangedArgs {
     type Vtable = IInteractionTrackerValuesChangedArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xcf1578ef_d3df_4501_b9e6_f02fb22f73d0);
@@ -1337,6 +1473,11 @@ pub struct IInteractionTrackerValuesChangedArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IInteractionTrackerVector2InertiaModifier(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInteractionTrackerVector2InertiaModifier {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IInteractionTrackerVector2InertiaModifier {
     type Vtable = IInteractionTrackerVector2InertiaModifier_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x87e08ab0_3086_4853_a4b7_77882ad5d7e3);
@@ -1349,6 +1490,11 @@ pub struct IInteractionTrackerVector2InertiaModifier_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IInteractionTrackerVector2InertiaModifierFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInteractionTrackerVector2InertiaModifierFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IInteractionTrackerVector2InertiaModifierFactory {
     type Vtable = IInteractionTrackerVector2InertiaModifierFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x7401d6c4_6c6d_48df_bc3e_171e227e7d7f);
@@ -1361,6 +1507,11 @@ pub struct IInteractionTrackerVector2InertiaModifierFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IInteractionTrackerVector2InertiaNaturalMotion(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInteractionTrackerVector2InertiaNaturalMotion {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IInteractionTrackerVector2InertiaNaturalMotion {
     type Vtable = IInteractionTrackerVector2InertiaNaturalMotion_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x5f17695c_162d_4c07_9400_c282b28276ca);
@@ -1377,6 +1528,11 @@ pub struct IInteractionTrackerVector2InertiaNaturalMotion_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IInteractionTrackerVector2InertiaNaturalMotionStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInteractionTrackerVector2InertiaNaturalMotionStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IInteractionTrackerVector2InertiaNaturalMotionStatics {
     type Vtable = IInteractionTrackerVector2InertiaNaturalMotionStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x82001a48_09c0_434f_8189_141c66df362f);
@@ -1390,6 +1546,11 @@ pub struct IInteractionTrackerVector2InertiaNaturalMotionStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IVisualInteractionSource(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVisualInteractionSource {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IVisualInteractionSource {
     type Vtable = IVisualInteractionSource_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xca0e8a86_d8d6_4111_b088_70347bd2b0ed);
@@ -1425,6 +1586,11 @@ pub struct IVisualInteractionSource_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IVisualInteractionSource2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVisualInteractionSource2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IVisualInteractionSource2 {
     type Vtable = IVisualInteractionSource2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xaa914893_a73c_414d_80d0_249bad2fbd93);
@@ -1472,6 +1638,11 @@ pub struct IVisualInteractionSource2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IVisualInteractionSource3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVisualInteractionSource3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IVisualInteractionSource3 {
     type Vtable = IVisualInteractionSource3_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd941ef2a_0d5c_4057_92d7_c9711533204f);
@@ -1485,6 +1656,11 @@ pub struct IVisualInteractionSource3_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IVisualInteractionSourceObjectFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVisualInteractionSourceObjectFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IVisualInteractionSourceObjectFactory {
     type Vtable = IVisualInteractionSourceObjectFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb2ca917c_e98a_41f2_b3c9_891c9266c8f6);
@@ -1497,6 +1673,11 @@ pub struct IVisualInteractionSourceObjectFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IVisualInteractionSourceStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVisualInteractionSourceStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IVisualInteractionSourceStatics {
     type Vtable = IVisualInteractionSourceStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x369965e1_8645_4f75_ba00_6479cd10c8e6);
@@ -1510,6 +1691,11 @@ pub struct IVisualInteractionSourceStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IVisualInteractionSourceStatics2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVisualInteractionSourceStatics2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IVisualInteractionSourceStatics2 {
     type Vtable = IVisualInteractionSourceStatics2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa979c032_5764_55e0_bc1f_0778786dcfde);
@@ -1543,6 +1729,7 @@ impl ::core::default::Default for InteractionBindingAxisModes {
 }
 unsafe impl ::windows::core::Abi for InteractionBindingAxisModes {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for InteractionBindingAxisModes {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1579,7 +1766,6 @@ impl ::core::ops::Not for InteractionBindingAxisModes {
 }
 unsafe impl ::windows::core::RuntimeType for InteractionBindingAxisModes {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Composition.Interactions.InteractionBindingAxisModes;u4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1606,6 +1792,7 @@ impl ::core::default::Default for InteractionChainingMode {
 }
 unsafe impl ::windows::core::Abi for InteractionChainingMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for InteractionChainingMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1614,7 +1801,6 @@ impl ::core::fmt::Debug for InteractionChainingMode {
 }
 unsafe impl ::windows::core::RuntimeType for InteractionChainingMode {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Composition.Interactions.InteractionChainingMode;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1762,11 +1948,6 @@ impl InteractionSourceConfiguration {
         unsafe { (::windows::core::Interface::vtable(this).SetScaleSourceMode)(::core::mem::transmute_copy(this), value).ok() }
     }
 }
-impl ::core::clone::Clone for InteractionSourceConfiguration {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for InteractionSourceConfiguration {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1780,7 +1961,6 @@ impl ::core::fmt::Debug for InteractionSourceConfiguration {
 }
 unsafe impl ::windows::core::RuntimeType for InteractionSourceConfiguration {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Composition.Interactions.InteractionSourceConfiguration;{a78347e5-a9d1-4d02-985e-b930cd0b9da4})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1924,6 +2104,7 @@ impl ::core::default::Default for InteractionSourceMode {
 }
 unsafe impl ::windows::core::Abi for InteractionSourceMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for InteractionSourceMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1932,7 +2113,6 @@ impl ::core::fmt::Debug for InteractionSourceMode {
 }
 unsafe impl ::windows::core::RuntimeType for InteractionSourceMode {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Composition.Interactions.InteractionSourceMode;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1958,6 +2138,7 @@ impl ::core::default::Default for InteractionSourceRedirectionMode {
 }
 unsafe impl ::windows::core::Abi for InteractionSourceRedirectionMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for InteractionSourceRedirectionMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1966,7 +2147,6 @@ impl ::core::fmt::Debug for InteractionSourceRedirectionMode {
 }
 unsafe impl ::windows::core::RuntimeType for InteractionSourceRedirectionMode {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Composition.Interactions.InteractionSourceRedirectionMode;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2414,11 +2594,6 @@ impl InteractionTracker {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for InteractionTracker {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for InteractionTracker {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2432,7 +2607,6 @@ impl ::core::fmt::Debug for InteractionTracker {
 }
 unsafe impl ::windows::core::RuntimeType for InteractionTracker {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Composition.Interactions.InteractionTracker;{2a8e8cb1-1000-4416-8363-cc27fb877308})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2575,6 +2749,7 @@ impl ::core::default::Default for InteractionTrackerClampingOption {
 }
 unsafe impl ::windows::core::Abi for InteractionTrackerClampingOption {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for InteractionTrackerClampingOption {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2583,7 +2758,6 @@ impl ::core::fmt::Debug for InteractionTrackerClampingOption {
 }
 unsafe impl ::windows::core::RuntimeType for InteractionTrackerClampingOption {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Composition.Interactions.InteractionTrackerClampingOption;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2609,11 +2783,6 @@ impl InteractionTrackerCustomAnimationStateEnteredArgs {
         }
     }
 }
-impl ::core::clone::Clone for InteractionTrackerCustomAnimationStateEnteredArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for InteractionTrackerCustomAnimationStateEnteredArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2627,7 +2796,6 @@ impl ::core::fmt::Debug for InteractionTrackerCustomAnimationStateEnteredArgs {
 }
 unsafe impl ::windows::core::RuntimeType for InteractionTrackerCustomAnimationStateEnteredArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Composition.Interactions.InteractionTrackerCustomAnimationStateEnteredArgs;{8d1c8cf1-d7b0-434c-a5d2-2d7611864834})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2702,11 +2870,6 @@ impl InteractionTrackerIdleStateEnteredArgs {
         }
     }
 }
-impl ::core::clone::Clone for InteractionTrackerIdleStateEnteredArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for InteractionTrackerIdleStateEnteredArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2720,7 +2883,6 @@ impl ::core::fmt::Debug for InteractionTrackerIdleStateEnteredArgs {
 }
 unsafe impl ::windows::core::RuntimeType for InteractionTrackerIdleStateEnteredArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Composition.Interactions.InteractionTrackerIdleStateEnteredArgs;{50012faa-1510-4142-a1a5-019b09f8857b})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2878,11 +3040,6 @@ impl InteractionTrackerInertiaModifier {
         }
     }
 }
-impl ::core::clone::Clone for InteractionTrackerInertiaModifier {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for InteractionTrackerInertiaModifier {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2896,7 +3053,6 @@ impl ::core::fmt::Debug for InteractionTrackerInertiaModifier {
 }
 unsafe impl ::windows::core::RuntimeType for InteractionTrackerInertiaModifier {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Composition.Interactions.InteractionTrackerInertiaModifier;{a0e2c920-26b4-4da2-8b61-5e683979bbe2})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3160,11 +3316,6 @@ impl InteractionTrackerInertiaMotion {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for InteractionTrackerInertiaMotion {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for InteractionTrackerInertiaMotion {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3178,7 +3329,6 @@ impl ::core::fmt::Debug for InteractionTrackerInertiaMotion {
 }
 unsafe impl ::windows::core::RuntimeType for InteractionTrackerInertiaMotion {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Composition.Interactions.InteractionTrackerInertiaMotion;{04922fdc-f154-4cb8-bf33-cc1ba611e6db})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3462,11 +3612,6 @@ impl InteractionTrackerInertiaNaturalMotion {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for InteractionTrackerInertiaNaturalMotion {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for InteractionTrackerInertiaNaturalMotion {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3480,7 +3625,6 @@ impl ::core::fmt::Debug for InteractionTrackerInertiaNaturalMotion {
 }
 unsafe impl ::windows::core::RuntimeType for InteractionTrackerInertiaNaturalMotion {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Composition.Interactions.InteractionTrackerInertiaNaturalMotion;{70acdaae-27dc-48ed-a3c3-6d61c9a029d2})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3764,11 +3908,6 @@ impl InteractionTrackerInertiaRestingValue {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for InteractionTrackerInertiaRestingValue {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for InteractionTrackerInertiaRestingValue {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3782,7 +3921,6 @@ impl ::core::fmt::Debug for InteractionTrackerInertiaRestingValue {
 }
 unsafe impl ::windows::core::RuntimeType for InteractionTrackerInertiaRestingValue {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Composition.Interactions.InteractionTrackerInertiaRestingValue;{86f7ec09-5096-4170-9cc8-df2fe101bb93})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4005,11 +4143,6 @@ impl InteractionTrackerInertiaStateEnteredArgs {
         }
     }
 }
-impl ::core::clone::Clone for InteractionTrackerInertiaStateEnteredArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for InteractionTrackerInertiaStateEnteredArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4023,7 +4156,6 @@ impl ::core::fmt::Debug for InteractionTrackerInertiaStateEnteredArgs {
 }
 unsafe impl ::windows::core::RuntimeType for InteractionTrackerInertiaStateEnteredArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Composition.Interactions.InteractionTrackerInertiaStateEnteredArgs;{87108cf2-e7ff-4f7d-9ffd-d72f1e409b63})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4098,11 +4230,6 @@ impl InteractionTrackerInteractingStateEnteredArgs {
         }
     }
 }
-impl ::core::clone::Clone for InteractionTrackerInteractingStateEnteredArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for InteractionTrackerInteractingStateEnteredArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4116,7 +4243,6 @@ impl ::core::fmt::Debug for InteractionTrackerInteractingStateEnteredArgs {
 }
 unsafe impl ::windows::core::RuntimeType for InteractionTrackerInteractingStateEnteredArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Composition.Interactions.InteractionTrackerInteractingStateEnteredArgs;{a7263939-a17b-4011-99fd-b5c24f143748})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4191,6 +4317,7 @@ impl ::core::default::Default for InteractionTrackerPositionUpdateOption {
 }
 unsafe impl ::windows::core::Abi for InteractionTrackerPositionUpdateOption {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for InteractionTrackerPositionUpdateOption {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4199,7 +4326,6 @@ impl ::core::fmt::Debug for InteractionTrackerPositionUpdateOption {
 }
 unsafe impl ::windows::core::RuntimeType for InteractionTrackerPositionUpdateOption {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Composition.Interactions.InteractionTrackerPositionUpdateOption;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -4217,11 +4343,6 @@ impl InteractionTrackerRequestIgnoredArgs {
         }
     }
 }
-impl ::core::clone::Clone for InteractionTrackerRequestIgnoredArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for InteractionTrackerRequestIgnoredArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4235,7 +4356,6 @@ impl ::core::fmt::Debug for InteractionTrackerRequestIgnoredArgs {
 }
 unsafe impl ::windows::core::RuntimeType for InteractionTrackerRequestIgnoredArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Composition.Interactions.InteractionTrackerRequestIgnoredArgs;{80dd82f1-ce25-488f-91dd-cb6455ccff2e})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4319,11 +4439,6 @@ impl InteractionTrackerValuesChangedArgs {
         }
     }
 }
-impl ::core::clone::Clone for InteractionTrackerValuesChangedArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for InteractionTrackerValuesChangedArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4337,7 +4452,6 @@ impl ::core::fmt::Debug for InteractionTrackerValuesChangedArgs {
 }
 unsafe impl ::windows::core::RuntimeType for InteractionTrackerValuesChangedArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Composition.Interactions.InteractionTrackerValuesChangedArgs;{cf1578ef-d3df-4501-b9e6-f02fb22f73d0})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4495,11 +4609,6 @@ impl InteractionTrackerVector2InertiaModifier {
         }
     }
 }
-impl ::core::clone::Clone for InteractionTrackerVector2InertiaModifier {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for InteractionTrackerVector2InertiaModifier {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4513,7 +4622,6 @@ impl ::core::fmt::Debug for InteractionTrackerVector2InertiaModifier {
 }
 unsafe impl ::windows::core::RuntimeType for InteractionTrackerVector2InertiaModifier {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Composition.Interactions.InteractionTrackerVector2InertiaModifier;{87e08ab0-3086-4853-a4b7-77882ad5d7e3})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4777,11 +4885,6 @@ impl InteractionTrackerVector2InertiaNaturalMotion {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for InteractionTrackerVector2InertiaNaturalMotion {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for InteractionTrackerVector2InertiaNaturalMotion {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4795,7 +4898,6 @@ impl ::core::fmt::Debug for InteractionTrackerVector2InertiaNaturalMotion {
 }
 unsafe impl ::windows::core::RuntimeType for InteractionTrackerVector2InertiaNaturalMotion {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Composition.Interactions.InteractionTrackerVector2InertiaNaturalMotion;{5f17695c-162d-4c07-9400-c282b28276ca})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -5285,11 +5387,6 @@ impl VisualInteractionSource {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for VisualInteractionSource {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for VisualInteractionSource {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5303,7 +5400,6 @@ impl ::core::fmt::Debug for VisualInteractionSource {
 }
 unsafe impl ::windows::core::RuntimeType for VisualInteractionSource {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Composition.Interactions.VisualInteractionSource;{ca0e8a86-d8d6-4111-b088-70347bd2b0ed})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -5470,6 +5566,7 @@ impl ::core::default::Default for VisualInteractionSourceRedirectionMode {
 }
 unsafe impl ::windows::core::Abi for VisualInteractionSourceRedirectionMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VisualInteractionSourceRedirectionMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5478,7 +5575,6 @@ impl ::core::fmt::Debug for VisualInteractionSourceRedirectionMode {
 }
 unsafe impl ::windows::core::RuntimeType for VisualInteractionSourceRedirectionMode {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Composition.Interactions.VisualInteractionSourceRedirectionMode;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }

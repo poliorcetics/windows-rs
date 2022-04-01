@@ -2,6 +2,11 @@
 #[doc = "*Required features: `\"Win32_System_WinRT_Holographic\"`*"]
 #[repr(transparent)]
 pub struct IHolographicCameraInterop(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHolographicCameraInterop {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IHolographicCameraInterop {
     #[doc = "*Required features: `\"Win32_System_WinRT_Holographic\"`, `\"Win32_Graphics_Direct3D12\"`, `\"Win32_Graphics_Dxgi_Common\"`*"]
     #[cfg(all(feature = "Win32_Graphics_Direct3D12", feature = "Win32_Graphics_Dxgi_Common"))]
@@ -71,11 +76,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IHolographicCameraInterop {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IHolographicCameraInterop {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -119,6 +119,11 @@ pub struct IHolographicCameraInterop_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT_Holographic\"`*"]
 #[repr(transparent)]
 pub struct IHolographicCameraRenderingParametersInterop(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHolographicCameraRenderingParametersInterop {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IHolographicCameraRenderingParametersInterop {
     #[doc = "*Required features: `\"Win32_System_WinRT_Holographic\"`, `\"Win32_Graphics_Direct3D12\"`*"]
     #[cfg(feature = "Win32_Graphics_Direct3D12")]
@@ -171,11 +176,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IHolographicCameraRenderingParametersInterop {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IHolographicCameraRenderingParametersInterop {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -207,6 +207,11 @@ pub struct IHolographicCameraRenderingParametersInterop_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT_Holographic\"`*"]
 #[repr(transparent)]
 pub struct IHolographicQuadLayerInterop(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHolographicQuadLayerInterop {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IHolographicQuadLayerInterop {
     #[doc = "*Required features: `\"Win32_System_WinRT_Holographic\"`, `\"Win32_Graphics_Direct3D12\"`, `\"Win32_Graphics_Dxgi_Common\"`*"]
     #[cfg(all(feature = "Win32_Graphics_Direct3D12", feature = "Win32_Graphics_Dxgi_Common"))]
@@ -276,11 +281,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IHolographicQuadLayerInterop {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IHolographicQuadLayerInterop {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -324,6 +324,11 @@ pub struct IHolographicQuadLayerInterop_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT_Holographic\"`*"]
 #[repr(transparent)]
 pub struct IHolographicQuadLayerUpdateParametersInterop(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHolographicQuadLayerUpdateParametersInterop {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IHolographicQuadLayerUpdateParametersInterop {
     #[doc = "*Required features: `\"Win32_System_WinRT_Holographic\"`, `\"Win32_Graphics_Direct3D12\"`*"]
     #[cfg(feature = "Win32_Graphics_Direct3D12")]
@@ -369,11 +374,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for IHolo
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a IHolographicQuadLayerUpdateParametersInterop {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IInspectable> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IHolographicQuadLayerUpdateParametersInterop {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IHolographicQuadLayerUpdateParametersInterop {

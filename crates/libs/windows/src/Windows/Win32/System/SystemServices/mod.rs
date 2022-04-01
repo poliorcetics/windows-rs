@@ -110,6 +110,7 @@ impl ::core::default::Default for ACCESS_REASON_TYPE {
 }
 unsafe impl ::windows::core::Abi for ACCESS_REASON_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ACCESS_REASON_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -171,6 +172,7 @@ impl ::core::default::Default for ACTIVATION_CONTEXT_INFO_CLASS {
 }
 unsafe impl ::windows::core::Abi for ACTIVATION_CONTEXT_INFO_CLASS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ACTIVATION_CONTEXT_INFO_CLASS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -236,6 +238,7 @@ impl ::core::default::Default for ALERT_SYSTEM_SEV {
 }
 unsafe impl ::windows::core::Abi for ALERT_SYSTEM_SEV {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ALERT_SYSTEM_SEV {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -269,6 +272,7 @@ impl ::core::fmt::Debug for ANON_OBJECT_HEADER {
 }
 unsafe impl ::windows::core::Abi for ANON_OBJECT_HEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ANON_OBJECT_HEADER {
     fn eq(&self, other: &Self) -> bool {
@@ -325,6 +329,7 @@ impl ::core::fmt::Debug for ANON_OBJECT_HEADER_BIGOBJ {
 }
 unsafe impl ::windows::core::Abi for ANON_OBJECT_HEADER_BIGOBJ {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ANON_OBJECT_HEADER_BIGOBJ {
     fn eq(&self, other: &Self) -> bool {
@@ -364,6 +369,7 @@ impl ::core::fmt::Debug for ANON_OBJECT_HEADER_V2 {
 }
 unsafe impl ::windows::core::Abi for ANON_OBJECT_HEADER_V2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ANON_OBJECT_HEADER_V2 {
     fn eq(&self, other: &Self) -> bool {
@@ -505,6 +511,7 @@ impl ::core::default::Default for APPCOMMAND_ID {
 }
 unsafe impl ::windows::core::Abi for APPCOMMAND_ID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for APPCOMMAND_ID {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -531,6 +538,7 @@ impl ::core::fmt::Debug for APPLICATIONLAUNCH_SETTING_VALUE {
 }
 unsafe impl ::windows::core::Abi for APPLICATIONLAUNCH_SETTING_VALUE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for APPLICATIONLAUNCH_SETTING_VALUE {
     fn eq(&self, other: &Self) -> bool {
@@ -570,6 +578,7 @@ impl ::core::default::Default for ARM64_FNPDATA_CR {
 }
 unsafe impl ::windows::core::Abi for ARM64_FNPDATA_CR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ARM64_FNPDATA_CR {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -599,6 +608,7 @@ impl ::core::default::Default for ARM64_FNPDATA_FLAGS {
 }
 unsafe impl ::windows::core::Abi for ARM64_FNPDATA_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ARM64_FNPDATA_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -656,6 +666,7 @@ impl ::core::default::Default for ATF_FLAGS {
 }
 unsafe impl ::windows::core::Abi for ATF_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ATF_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -765,6 +776,7 @@ impl ::core::default::Default for CFE_UNDERLINE {
 }
 unsafe impl ::windows::core::Abi for CFE_UNDERLINE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CFE_UNDERLINE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -844,6 +856,7 @@ impl ::core::default::Default for CHOOSECOLOR_FLAGS {
 }
 unsafe impl ::windows::core::Abi for CHOOSECOLOR_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CHOOSECOLOR_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -957,6 +970,7 @@ impl ::core::default::Default for CLIPBOARD_FORMATS {
 }
 unsafe impl ::windows::core::Abi for CLIPBOARD_FORMATS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLIPBOARD_FORMATS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -988,6 +1002,7 @@ impl ::core::default::Default for CM_ERROR_CONTROL_TYPE {
 }
 unsafe impl ::windows::core::Abi for CM_ERROR_CONTROL_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CM_ERROR_CONTROL_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1021,6 +1036,7 @@ impl ::core::default::Default for CM_SERVICE_LOAD_TYPE {
 }
 unsafe impl ::windows::core::Abi for CM_SERVICE_LOAD_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CM_SERVICE_LOAD_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1060,6 +1076,7 @@ impl ::core::default::Default for CM_SERVICE_NODE_TYPE {
 }
 unsafe impl ::windows::core::Abi for CM_SERVICE_NODE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CM_SERVICE_NODE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1098,6 +1115,7 @@ impl ::core::fmt::Debug for COMPONENT_FILTER {
 }
 unsafe impl ::windows::core::Abi for COMPONENT_FILTER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for COMPONENT_FILTER {
     fn eq(&self, other: &Self) -> bool {
@@ -2180,6 +2198,7 @@ impl ::core::fmt::Debug for DEVICE_EVENT_BECOMING_READY {
 }
 unsafe impl ::windows::core::Abi for DEVICE_EVENT_BECOMING_READY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DEVICE_EVENT_BECOMING_READY {
     fn eq(&self, other: &Self) -> bool {
@@ -2214,6 +2233,7 @@ impl ::core::fmt::Debug for DEVICE_EVENT_EXTERNAL_REQUEST {
 }
 unsafe impl ::windows::core::Abi for DEVICE_EVENT_EXTERNAL_REQUEST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DEVICE_EVENT_EXTERNAL_REQUEST {
     fn eq(&self, other: &Self) -> bool {
@@ -2244,6 +2264,7 @@ impl ::core::fmt::Debug for DEVICE_EVENT_GENERIC_DATA {
 }
 unsafe impl ::windows::core::Abi for DEVICE_EVENT_GENERIC_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DEVICE_EVENT_GENERIC_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -2277,6 +2298,7 @@ impl ::core::fmt::Debug for DEVICE_EVENT_MOUNT {
 }
 unsafe impl ::windows::core::Abi for DEVICE_EVENT_MOUNT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DEVICE_EVENT_MOUNT {
     fn eq(&self, other: &Self) -> bool {
@@ -2312,6 +2334,7 @@ impl ::core::fmt::Debug for DEVICE_EVENT_RBC_DATA {
 }
 unsafe impl ::windows::core::Abi for DEVICE_EVENT_RBC_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DEVICE_EVENT_RBC_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -2351,6 +2374,7 @@ impl ::core::fmt::Debug for DEV_BROADCAST_DEVICEINTERFACE_A {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DEV_BROADCAST_DEVICEINTERFACE_A {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DEV_BROADCAST_DEVICEINTERFACE_A {
@@ -2388,6 +2412,7 @@ impl ::core::fmt::Debug for DEV_BROADCAST_DEVICEINTERFACE_W {
 }
 unsafe impl ::windows::core::Abi for DEV_BROADCAST_DEVICEINTERFACE_W {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DEV_BROADCAST_DEVICEINTERFACE_W {
     fn eq(&self, other: &Self) -> bool {
@@ -2421,6 +2446,7 @@ impl ::core::fmt::Debug for DEV_BROADCAST_DEVNODE {
 }
 unsafe impl ::windows::core::Abi for DEV_BROADCAST_DEVNODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DEV_BROADCAST_DEVNODE {
     fn eq(&self, other: &Self) -> bool {
@@ -2463,6 +2489,7 @@ impl ::core::fmt::Debug for DEV_BROADCAST_HANDLE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DEV_BROADCAST_HANDLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DEV_BROADCAST_HANDLE {
@@ -2503,6 +2530,7 @@ impl ::core::fmt::Debug for DEV_BROADCAST_HANDLE32 {
 }
 unsafe impl ::windows::core::Abi for DEV_BROADCAST_HANDLE32 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DEV_BROADCAST_HANDLE32 {
     fn eq(&self, other: &Self) -> bool {
@@ -2540,6 +2568,7 @@ impl ::core::fmt::Debug for DEV_BROADCAST_HANDLE64 {
 }
 unsafe impl ::windows::core::Abi for DEV_BROADCAST_HANDLE64 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DEV_BROADCAST_HANDLE64 {
     fn eq(&self, other: &Self) -> bool {
@@ -2572,6 +2601,7 @@ impl ::core::fmt::Debug for DEV_BROADCAST_HDR {
 }
 unsafe impl ::windows::core::Abi for DEV_BROADCAST_HDR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DEV_BROADCAST_HDR {
     fn eq(&self, other: &Self) -> bool {
@@ -2611,6 +2641,7 @@ impl ::core::default::Default for DEV_BROADCAST_HDR_DEVICE_TYPE {
 }
 unsafe impl ::windows::core::Abi for DEV_BROADCAST_HDR_DEVICE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DEV_BROADCAST_HDR_DEVICE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2639,6 +2670,7 @@ impl ::core::fmt::Debug for DEV_BROADCAST_NET {
 }
 unsafe impl ::windows::core::Abi for DEV_BROADCAST_NET {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DEV_BROADCAST_NET {
     fn eq(&self, other: &Self) -> bool {
@@ -2673,6 +2705,7 @@ impl ::core::fmt::Debug for DEV_BROADCAST_OEM {
 }
 unsafe impl ::windows::core::Abi for DEV_BROADCAST_OEM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DEV_BROADCAST_OEM {
     fn eq(&self, other: &Self) -> bool {
@@ -2711,6 +2744,7 @@ impl ::core::fmt::Debug for DEV_BROADCAST_PORT_A {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DEV_BROADCAST_PORT_A {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DEV_BROADCAST_PORT_A {
@@ -2747,6 +2781,7 @@ impl ::core::fmt::Debug for DEV_BROADCAST_PORT_W {
 }
 unsafe impl ::windows::core::Abi for DEV_BROADCAST_PORT_W {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DEV_BROADCAST_PORT_W {
     fn eq(&self, other: &Self) -> bool {
@@ -2781,6 +2816,7 @@ impl ::core::fmt::Debug for DEV_BROADCAST_VOLUME {
 }
 unsafe impl ::windows::core::Abi for DEV_BROADCAST_VOLUME {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DEV_BROADCAST_VOLUME {
     fn eq(&self, other: &Self) -> bool {
@@ -2814,6 +2850,7 @@ impl ::core::default::Default for DEV_BROADCAST_VOLUME_FLAGS {
 }
 unsafe impl ::windows::core::Abi for DEV_BROADCAST_VOLUME_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DEV_BROADCAST_VOLUME_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2852,6 +2889,7 @@ impl ::core::fmt::Debug for DISK_HEALTH_NOTIFICATION_DATA {
 }
 unsafe impl ::windows::core::Abi for DISK_HEALTH_NOTIFICATION_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DISK_HEALTH_NOTIFICATION_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -2878,6 +2916,7 @@ impl ::core::clone::Clone for DISPATCHER_CONTEXT_NONVOLREG_ARM64 {
 }
 unsafe impl ::windows::core::Abi for DISPATCHER_CONTEXT_NONVOLREG_ARM64 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DISPATCHER_CONTEXT_NONVOLREG_ARM64 {
     fn eq(&self, other: &Self) -> bool {
@@ -2909,6 +2948,7 @@ impl ::core::fmt::Debug for DISPATCHER_CONTEXT_NONVOLREG_ARM64_0 {
 }
 unsafe impl ::windows::core::Abi for DISPATCHER_CONTEXT_NONVOLREG_ARM64_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DISPATCHER_CONTEXT_NONVOLREG_ARM64_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -3157,6 +3197,7 @@ impl ::core::fmt::Debug for ENLISTMENT_BASIC_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for ENLISTMENT_BASIC_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ENLISTMENT_BASIC_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -3189,6 +3230,7 @@ impl ::core::fmt::Debug for ENLISTMENT_CRM_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for ENLISTMENT_CRM_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ENLISTMENT_CRM_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -3224,6 +3266,7 @@ impl ::core::default::Default for ENLISTMENT_INFORMATION_CLASS {
 }
 unsafe impl ::windows::core::Abi for ENLISTMENT_INFORMATION_CLASS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ENLISTMENT_INFORMATION_CLASS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3532,6 +3575,7 @@ impl ::core::clone::Clone for GDI_NONREMOTE {
 #[cfg(feature = "Win32_System_Com")]
 unsafe impl ::windows::core::Abi for GDI_NONREMOTE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for GDI_NONREMOTE {
@@ -3565,6 +3609,7 @@ impl ::core::clone::Clone for GDI_NONREMOTE_0 {
 #[cfg(feature = "Win32_System_Com")]
 unsafe impl ::windows::core::Abi for GDI_NONREMOTE_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for GDI_NONREMOTE_0 {
@@ -3627,6 +3672,7 @@ impl ::core::default::Default for GESTURECONFIG_FLAGS {
 }
 unsafe impl ::windows::core::Abi for GESTURECONFIG_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GESTURECONFIG_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3751,6 +3797,7 @@ impl ::core::fmt::Debug for GUID_IO_DISK_CLONE_ARRIVAL_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for GUID_IO_DISK_CLONE_ARRIVAL_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for GUID_IO_DISK_CLONE_ARRIVAL_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -3949,6 +3996,7 @@ impl ::core::fmt::Debug for HEAP_OPTIMIZE_RESOURCES_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for HEAP_OPTIMIZE_RESOURCES_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HEAP_OPTIMIZE_RESOURCES_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -3980,6 +4028,7 @@ impl ::core::fmt::Debug for HIBERFILE_BUCKET {
 }
 unsafe impl ::windows::core::Abi for HIBERFILE_BUCKET {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HIBERFILE_BUCKET {
     fn eq(&self, other: &Self) -> bool {
@@ -4025,6 +4074,7 @@ impl ::core::default::Default for HIBERFILE_BUCKET_SIZE {
 }
 unsafe impl ::windows::core::Abi for HIBERFILE_BUCKET_SIZE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HIBERFILE_BUCKET_SIZE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4070,6 +4120,7 @@ impl ::core::default::Default for IGP_ID {
 }
 unsafe impl ::windows::core::Abi for IGP_ID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for IGP_ID {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4093,6 +4144,7 @@ impl ::core::clone::Clone for IMAGE_ALPHA64_RUNTIME_FUNCTION_ENTRY {
 }
 unsafe impl ::windows::core::Abi for IMAGE_ALPHA64_RUNTIME_FUNCTION_ENTRY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IMAGE_ALPHA64_RUNTIME_FUNCTION_ENTRY {
     fn eq(&self, other: &Self) -> bool {
@@ -4127,6 +4179,7 @@ impl ::core::fmt::Debug for IMAGE_ALPHA_RUNTIME_FUNCTION_ENTRY {
 }
 unsafe impl ::windows::core::Abi for IMAGE_ALPHA_RUNTIME_FUNCTION_ENTRY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IMAGE_ALPHA_RUNTIME_FUNCTION_ENTRY {
     fn eq(&self, other: &Self) -> bool {
@@ -4158,6 +4211,7 @@ impl ::core::fmt::Debug for IMAGE_ARCHITECTURE_ENTRY {
 }
 unsafe impl ::windows::core::Abi for IMAGE_ARCHITECTURE_ENTRY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IMAGE_ARCHITECTURE_ENTRY {
     fn eq(&self, other: &Self) -> bool {
@@ -4189,6 +4243,7 @@ impl ::core::fmt::Debug for IMAGE_ARCHITECTURE_HEADER {
 }
 unsafe impl ::windows::core::Abi for IMAGE_ARCHITECTURE_HEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IMAGE_ARCHITECTURE_HEADER {
     fn eq(&self, other: &Self) -> bool {
@@ -4233,6 +4288,7 @@ impl ::core::fmt::Debug for IMAGE_ARCHIVE_MEMBER_HEADER {
 }
 unsafe impl ::windows::core::Abi for IMAGE_ARCHIVE_MEMBER_HEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IMAGE_ARCHIVE_MEMBER_HEADER {
     fn eq(&self, other: &Self) -> bool {
@@ -4265,6 +4321,7 @@ impl ::core::clone::Clone for IMAGE_ARM64_RUNTIME_FUNCTION_ENTRY_XDATA {
 }
 unsafe impl ::windows::core::Abi for IMAGE_ARM64_RUNTIME_FUNCTION_ENTRY_XDATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IMAGE_ARM64_RUNTIME_FUNCTION_ENTRY_XDATA {
     fn eq(&self, other: &Self) -> bool {
@@ -4295,6 +4352,7 @@ impl ::core::fmt::Debug for IMAGE_ARM64_RUNTIME_FUNCTION_ENTRY_XDATA_0 {
 }
 unsafe impl ::windows::core::Abi for IMAGE_ARM64_RUNTIME_FUNCTION_ENTRY_XDATA_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IMAGE_ARM64_RUNTIME_FUNCTION_ENTRY_XDATA_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -4321,6 +4379,7 @@ impl ::core::clone::Clone for IMAGE_ARM_RUNTIME_FUNCTION_ENTRY {
 }
 unsafe impl ::windows::core::Abi for IMAGE_ARM_RUNTIME_FUNCTION_ENTRY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IMAGE_ARM_RUNTIME_FUNCTION_ENTRY {
     fn eq(&self, other: &Self) -> bool {
@@ -4347,6 +4406,7 @@ impl ::core::clone::Clone for IMAGE_ARM_RUNTIME_FUNCTION_ENTRY_0 {
 }
 unsafe impl ::windows::core::Abi for IMAGE_ARM_RUNTIME_FUNCTION_ENTRY_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IMAGE_ARM_RUNTIME_FUNCTION_ENTRY_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -4377,6 +4437,7 @@ impl ::core::fmt::Debug for IMAGE_ARM_RUNTIME_FUNCTION_ENTRY_0_0 {
 }
 unsafe impl ::windows::core::Abi for IMAGE_ARM_RUNTIME_FUNCTION_ENTRY_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IMAGE_ARM_RUNTIME_FUNCTION_ENTRY_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -4406,6 +4467,7 @@ impl ::core::clone::Clone for IMAGE_AUX_SYMBOL {
 }
 unsafe impl ::windows::core::Abi for IMAGE_AUX_SYMBOL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IMAGE_AUX_SYMBOL {
     fn eq(&self, other: &Self) -> bool {
@@ -4432,6 +4494,7 @@ impl ::core::clone::Clone for IMAGE_AUX_SYMBOL_0 {
 }
 unsafe impl ::windows::core::Abi for IMAGE_AUX_SYMBOL_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IMAGE_AUX_SYMBOL_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -4462,6 +4525,7 @@ impl ::core::fmt::Debug for IMAGE_AUX_SYMBOL_1 {
 }
 unsafe impl ::windows::core::Abi for IMAGE_AUX_SYMBOL_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IMAGE_AUX_SYMBOL_1 {
     fn eq(&self, other: &Self) -> bool {
@@ -4494,6 +4558,7 @@ impl ::core::clone::Clone for IMAGE_AUX_SYMBOL_2 {
 }
 unsafe impl ::windows::core::Abi for IMAGE_AUX_SYMBOL_2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IMAGE_AUX_SYMBOL_2 {
     fn eq(&self, other: &Self) -> bool {
@@ -4522,6 +4587,7 @@ impl ::core::clone::Clone for IMAGE_AUX_SYMBOL_3 {
 }
 unsafe impl ::windows::core::Abi for IMAGE_AUX_SYMBOL_3 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IMAGE_AUX_SYMBOL_3 {
     fn eq(&self, other: &Self) -> bool {
@@ -4548,6 +4614,7 @@ impl ::core::clone::Clone for IMAGE_AUX_SYMBOL_3_0 {
 }
 unsafe impl ::windows::core::Abi for IMAGE_AUX_SYMBOL_3_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IMAGE_AUX_SYMBOL_3_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -4578,6 +4645,7 @@ impl ::core::fmt::Debug for IMAGE_AUX_SYMBOL_3_0_0 {
 }
 unsafe impl ::windows::core::Abi for IMAGE_AUX_SYMBOL_3_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IMAGE_AUX_SYMBOL_3_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -4604,6 +4672,7 @@ impl ::core::clone::Clone for IMAGE_AUX_SYMBOL_3_0_1 {
 }
 unsafe impl ::windows::core::Abi for IMAGE_AUX_SYMBOL_3_0_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IMAGE_AUX_SYMBOL_3_0_1 {
     fn eq(&self, other: &Self) -> bool {
@@ -4630,6 +4699,7 @@ impl ::core::clone::Clone for IMAGE_AUX_SYMBOL_3_1 {
 }
 unsafe impl ::windows::core::Abi for IMAGE_AUX_SYMBOL_3_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IMAGE_AUX_SYMBOL_3_1 {
     fn eq(&self, other: &Self) -> bool {
@@ -4661,6 +4731,7 @@ impl ::core::fmt::Debug for IMAGE_AUX_SYMBOL_3_1_0 {
 }
 unsafe impl ::windows::core::Abi for IMAGE_AUX_SYMBOL_3_1_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IMAGE_AUX_SYMBOL_3_1_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -4690,6 +4761,7 @@ impl ::core::clone::Clone for IMAGE_AUX_SYMBOL_EX {
 }
 unsafe impl ::windows::core::Abi for IMAGE_AUX_SYMBOL_EX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IMAGE_AUX_SYMBOL_EX {
     fn eq(&self, other: &Self) -> bool {
@@ -4716,6 +4788,7 @@ impl ::core::clone::Clone for IMAGE_AUX_SYMBOL_EX_0 {
 }
 unsafe impl ::windows::core::Abi for IMAGE_AUX_SYMBOL_EX_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IMAGE_AUX_SYMBOL_EX_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -4742,6 +4815,7 @@ impl ::core::clone::Clone for IMAGE_AUX_SYMBOL_EX_1 {
 }
 unsafe impl ::windows::core::Abi for IMAGE_AUX_SYMBOL_EX_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IMAGE_AUX_SYMBOL_EX_1 {
     fn eq(&self, other: &Self) -> bool {
@@ -4772,6 +4846,7 @@ impl ::core::fmt::Debug for IMAGE_AUX_SYMBOL_EX_2 {
 }
 unsafe impl ::windows::core::Abi for IMAGE_AUX_SYMBOL_EX_2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IMAGE_AUX_SYMBOL_EX_2 {
     fn eq(&self, other: &Self) -> bool {
@@ -4805,6 +4880,7 @@ impl ::core::clone::Clone for IMAGE_AUX_SYMBOL_EX_3 {
 }
 unsafe impl ::windows::core::Abi for IMAGE_AUX_SYMBOL_EX_3 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IMAGE_AUX_SYMBOL_EX_3 {
     fn eq(&self, other: &Self) -> bool {
@@ -4832,6 +4908,7 @@ impl ::core::clone::Clone for IMAGE_AUX_SYMBOL_EX_4 {
 }
 unsafe impl ::windows::core::Abi for IMAGE_AUX_SYMBOL_EX_4 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IMAGE_AUX_SYMBOL_EX_4 {
     fn eq(&self, other: &Self) -> bool {
@@ -4860,6 +4937,7 @@ impl ::core::clone::Clone for IMAGE_AUX_SYMBOL_TOKEN_DEF {
 }
 unsafe impl ::windows::core::Abi for IMAGE_AUX_SYMBOL_TOKEN_DEF {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IMAGE_AUX_SYMBOL_TOKEN_DEF {
     fn eq(&self, other: &Self) -> bool {
@@ -4891,6 +4969,7 @@ impl ::core::default::Default for IMAGE_AUX_SYMBOL_TYPE {
 }
 unsafe impl ::windows::core::Abi for IMAGE_AUX_SYMBOL_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for IMAGE_AUX_SYMBOL_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4916,6 +4995,7 @@ impl ::core::fmt::Debug for IMAGE_BASE_RELOCATION {
 }
 unsafe impl ::windows::core::Abi for IMAGE_BASE_RELOCATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IMAGE_BASE_RELOCATION {
     fn eq(&self, other: &Self) -> bool {
@@ -4948,6 +5028,7 @@ impl ::core::fmt::Debug for IMAGE_BOUND_FORWARDER_REF {
 }
 unsafe impl ::windows::core::Abi for IMAGE_BOUND_FORWARDER_REF {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IMAGE_BOUND_FORWARDER_REF {
     fn eq(&self, other: &Self) -> bool {
@@ -4980,6 +5061,7 @@ impl ::core::fmt::Debug for IMAGE_BOUND_IMPORT_DESCRIPTOR {
 }
 unsafe impl ::windows::core::Abi for IMAGE_BOUND_IMPORT_DESCRIPTOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IMAGE_BOUND_IMPORT_DESCRIPTOR {
     fn eq(&self, other: &Self) -> bool {
@@ -5011,6 +5093,7 @@ impl ::core::fmt::Debug for IMAGE_CE_RUNTIME_FUNCTION_ENTRY {
 }
 unsafe impl ::windows::core::Abi for IMAGE_CE_RUNTIME_FUNCTION_ENTRY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IMAGE_CE_RUNTIME_FUNCTION_ENTRY {
     fn eq(&self, other: &Self) -> bool {
@@ -5064,6 +5147,7 @@ impl ::core::fmt::Debug for IMAGE_DEBUG_MISC {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for IMAGE_DEBUG_MISC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for IMAGE_DEBUG_MISC {
@@ -5132,6 +5216,7 @@ impl ::core::clone::Clone for IMAGE_DOS_HEADER {
 }
 unsafe impl ::windows::core::Abi for IMAGE_DOS_HEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IMAGE_DOS_HEADER {
     fn eq(&self, other: &Self) -> bool {
@@ -5160,6 +5245,7 @@ impl ::core::clone::Clone for IMAGE_DYNAMIC_RELOCATION32 {
 }
 unsafe impl ::windows::core::Abi for IMAGE_DYNAMIC_RELOCATION32 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IMAGE_DYNAMIC_RELOCATION32 {
     fn eq(&self, other: &Self) -> bool {
@@ -5189,6 +5275,7 @@ impl ::core::clone::Clone for IMAGE_DYNAMIC_RELOCATION32_V2 {
 }
 unsafe impl ::windows::core::Abi for IMAGE_DYNAMIC_RELOCATION32_V2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IMAGE_DYNAMIC_RELOCATION32_V2 {
     fn eq(&self, other: &Self) -> bool {
@@ -5215,6 +5302,7 @@ impl ::core::clone::Clone for IMAGE_DYNAMIC_RELOCATION64 {
 }
 unsafe impl ::windows::core::Abi for IMAGE_DYNAMIC_RELOCATION64 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IMAGE_DYNAMIC_RELOCATION64 {
     fn eq(&self, other: &Self) -> bool {
@@ -5244,6 +5332,7 @@ impl ::core::clone::Clone for IMAGE_DYNAMIC_RELOCATION64_V2 {
 }
 unsafe impl ::windows::core::Abi for IMAGE_DYNAMIC_RELOCATION64_V2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IMAGE_DYNAMIC_RELOCATION64_V2 {
     fn eq(&self, other: &Self) -> bool {
@@ -5285,6 +5374,7 @@ impl ::core::fmt::Debug for IMAGE_DYNAMIC_RELOCATION_TABLE {
 }
 unsafe impl ::windows::core::Abi for IMAGE_DYNAMIC_RELOCATION_TABLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IMAGE_DYNAMIC_RELOCATION_TABLE {
     fn eq(&self, other: &Self) -> bool {
@@ -5331,6 +5421,7 @@ impl ::core::clone::Clone for IMAGE_EPILOGUE_DYNAMIC_RELOCATION_HEADER {
 }
 unsafe impl ::windows::core::Abi for IMAGE_EPILOGUE_DYNAMIC_RELOCATION_HEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IMAGE_EPILOGUE_DYNAMIC_RELOCATION_HEADER {
     fn eq(&self, other: &Self) -> bool {
@@ -5383,6 +5474,7 @@ impl ::core::fmt::Debug for IMAGE_EXPORT_DIRECTORY {
 }
 unsafe impl ::windows::core::Abi for IMAGE_EXPORT_DIRECTORY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IMAGE_EXPORT_DIRECTORY {
     fn eq(&self, other: &Self) -> bool {
@@ -5464,6 +5556,7 @@ impl ::core::fmt::Debug for IMAGE_HOT_PATCH_BASE {
 }
 unsafe impl ::windows::core::Abi for IMAGE_HOT_PATCH_BASE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IMAGE_HOT_PATCH_BASE {
     fn eq(&self, other: &Self) -> bool {
@@ -5519,6 +5612,7 @@ impl ::core::fmt::Debug for IMAGE_HOT_PATCH_HASHES {
 }
 unsafe impl ::windows::core::Abi for IMAGE_HOT_PATCH_HASHES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IMAGE_HOT_PATCH_HASHES {
     fn eq(&self, other: &Self) -> bool {
@@ -5557,6 +5651,7 @@ impl ::core::fmt::Debug for IMAGE_HOT_PATCH_INFO {
 }
 unsafe impl ::windows::core::Abi for IMAGE_HOT_PATCH_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IMAGE_HOT_PATCH_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -5599,6 +5694,7 @@ impl ::core::fmt::Debug for IMAGE_IMPORT_BY_NAME {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for IMAGE_IMPORT_BY_NAME {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for IMAGE_IMPORT_BY_NAME {
@@ -5627,6 +5723,7 @@ impl ::core::clone::Clone for IMAGE_IMPORT_CONTROL_TRANSFER_DYNAMIC_RELOCATION {
 }
 unsafe impl ::windows::core::Abi for IMAGE_IMPORT_CONTROL_TRANSFER_DYNAMIC_RELOCATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IMAGE_IMPORT_CONTROL_TRANSFER_DYNAMIC_RELOCATION {
     fn eq(&self, other: &Self) -> bool {
@@ -5656,6 +5753,7 @@ impl ::core::clone::Clone for IMAGE_IMPORT_DESCRIPTOR {
 }
 unsafe impl ::windows::core::Abi for IMAGE_IMPORT_DESCRIPTOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IMAGE_IMPORT_DESCRIPTOR {
     fn eq(&self, other: &Self) -> bool {
@@ -5682,6 +5780,7 @@ impl ::core::clone::Clone for IMAGE_IMPORT_DESCRIPTOR_0 {
 }
 unsafe impl ::windows::core::Abi for IMAGE_IMPORT_DESCRIPTOR_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IMAGE_IMPORT_DESCRIPTOR_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -5707,6 +5806,7 @@ impl ::core::clone::Clone for IMAGE_INDIR_CONTROL_TRANSFER_DYNAMIC_RELOCATION {
 }
 unsafe impl ::windows::core::Abi for IMAGE_INDIR_CONTROL_TRANSFER_DYNAMIC_RELOCATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IMAGE_INDIR_CONTROL_TRANSFER_DYNAMIC_RELOCATION {
     fn eq(&self, other: &Self) -> bool {
@@ -5733,6 +5833,7 @@ impl ::core::clone::Clone for IMAGE_LINENUMBER {
 }
 unsafe impl ::windows::core::Abi for IMAGE_LINENUMBER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IMAGE_LINENUMBER {
     fn eq(&self, other: &Self) -> bool {
@@ -5759,6 +5860,7 @@ impl ::core::clone::Clone for IMAGE_LINENUMBER_0 {
 }
 unsafe impl ::windows::core::Abi for IMAGE_LINENUMBER_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IMAGE_LINENUMBER_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -5827,6 +5929,7 @@ impl ::core::clone::Clone for IMAGE_OS2_HEADER {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for IMAGE_OS2_HEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for IMAGE_OS2_HEADER {
@@ -5865,6 +5968,7 @@ impl ::core::clone::Clone for IMAGE_POLICY_ENTRY {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for IMAGE_POLICY_ENTRY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for IMAGE_POLICY_ENTRY {
@@ -5908,6 +6012,7 @@ impl ::core::clone::Clone for IMAGE_POLICY_ENTRY_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for IMAGE_POLICY_ENTRY_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for IMAGE_POLICY_ENTRY_0 {
@@ -5968,6 +6073,7 @@ impl ::core::default::Default for IMAGE_POLICY_ENTRY_TYPE {
 }
 unsafe impl ::windows::core::Abi for IMAGE_POLICY_ENTRY_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for IMAGE_POLICY_ENTRY_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6017,6 +6123,7 @@ impl ::core::default::Default for IMAGE_POLICY_ID {
 }
 unsafe impl ::windows::core::Abi for IMAGE_POLICY_ID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for IMAGE_POLICY_ID {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6043,6 +6150,7 @@ impl ::core::clone::Clone for IMAGE_POLICY_METADATA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for IMAGE_POLICY_METADATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for IMAGE_POLICY_METADATA {
@@ -6080,6 +6188,7 @@ impl ::core::fmt::Debug for IMAGE_PROLOGUE_DYNAMIC_RELOCATION_HEADER {
 }
 unsafe impl ::windows::core::Abi for IMAGE_PROLOGUE_DYNAMIC_RELOCATION_HEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IMAGE_PROLOGUE_DYNAMIC_RELOCATION_HEADER {
     fn eq(&self, other: &Self) -> bool {
@@ -6107,6 +6216,7 @@ impl ::core::clone::Clone for IMAGE_RELOCATION {
 }
 unsafe impl ::windows::core::Abi for IMAGE_RELOCATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IMAGE_RELOCATION {
     fn eq(&self, other: &Self) -> bool {
@@ -6133,6 +6243,7 @@ impl ::core::clone::Clone for IMAGE_RELOCATION_0 {
 }
 unsafe impl ::windows::core::Abi for IMAGE_RELOCATION_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IMAGE_RELOCATION_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -6686,6 +6797,7 @@ impl ::core::fmt::Debug for IMAGE_RESOURCE_DATA_ENTRY {
 }
 unsafe impl ::windows::core::Abi for IMAGE_RESOURCE_DATA_ENTRY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IMAGE_RESOURCE_DATA_ENTRY {
     fn eq(&self, other: &Self) -> bool {
@@ -6723,6 +6835,7 @@ impl ::core::fmt::Debug for IMAGE_RESOURCE_DIRECTORY {
 }
 unsafe impl ::windows::core::Abi for IMAGE_RESOURCE_DIRECTORY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IMAGE_RESOURCE_DIRECTORY {
     fn eq(&self, other: &Self) -> bool {
@@ -6749,6 +6862,7 @@ impl ::core::clone::Clone for IMAGE_RESOURCE_DIRECTORY_ENTRY {
 }
 unsafe impl ::windows::core::Abi for IMAGE_RESOURCE_DIRECTORY_ENTRY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IMAGE_RESOURCE_DIRECTORY_ENTRY {
     fn eq(&self, other: &Self) -> bool {
@@ -6776,6 +6890,7 @@ impl ::core::clone::Clone for IMAGE_RESOURCE_DIRECTORY_ENTRY_0 {
 }
 unsafe impl ::windows::core::Abi for IMAGE_RESOURCE_DIRECTORY_ENTRY_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IMAGE_RESOURCE_DIRECTORY_ENTRY_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -6806,6 +6921,7 @@ impl ::core::fmt::Debug for IMAGE_RESOURCE_DIRECTORY_ENTRY_0_0 {
 }
 unsafe impl ::windows::core::Abi for IMAGE_RESOURCE_DIRECTORY_ENTRY_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IMAGE_RESOURCE_DIRECTORY_ENTRY_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -6832,6 +6948,7 @@ impl ::core::clone::Clone for IMAGE_RESOURCE_DIRECTORY_ENTRY_1 {
 }
 unsafe impl ::windows::core::Abi for IMAGE_RESOURCE_DIRECTORY_ENTRY_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IMAGE_RESOURCE_DIRECTORY_ENTRY_1 {
     fn eq(&self, other: &Self) -> bool {
@@ -6862,6 +6979,7 @@ impl ::core::fmt::Debug for IMAGE_RESOURCE_DIRECTORY_ENTRY_1_0 {
 }
 unsafe impl ::windows::core::Abi for IMAGE_RESOURCE_DIRECTORY_ENTRY_1_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IMAGE_RESOURCE_DIRECTORY_ENTRY_1_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -6898,6 +7016,7 @@ impl ::core::fmt::Debug for IMAGE_RESOURCE_DIRECTORY_STRING {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for IMAGE_RESOURCE_DIRECTORY_STRING {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for IMAGE_RESOURCE_DIRECTORY_STRING {
@@ -6932,6 +7051,7 @@ impl ::core::fmt::Debug for IMAGE_RESOURCE_DIR_STRING_U {
 }
 unsafe impl ::windows::core::Abi for IMAGE_RESOURCE_DIR_STRING_U {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IMAGE_RESOURCE_DIR_STRING_U {
     fn eq(&self, other: &Self) -> bool {
@@ -6992,6 +7112,7 @@ impl ::core::fmt::Debug for IMAGE_SEPARATE_DEBUG_HEADER {
 }
 unsafe impl ::windows::core::Abi for IMAGE_SEPARATE_DEBUG_HEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IMAGE_SEPARATE_DEBUG_HEADER {
     fn eq(&self, other: &Self) -> bool {
@@ -7031,6 +7152,7 @@ impl ::core::clone::Clone for IMAGE_SWITCHTABLE_BRANCH_DYNAMIC_RELOCATION {
 }
 unsafe impl ::windows::core::Abi for IMAGE_SWITCHTABLE_BRANCH_DYNAMIC_RELOCATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IMAGE_SWITCHTABLE_BRANCH_DYNAMIC_RELOCATION {
     fn eq(&self, other: &Self) -> bool {
@@ -7061,6 +7183,7 @@ impl ::core::clone::Clone for IMAGE_SYMBOL {
 }
 unsafe impl ::windows::core::Abi for IMAGE_SYMBOL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IMAGE_SYMBOL {
     fn eq(&self, other: &Self) -> bool {
@@ -7088,6 +7211,7 @@ impl ::core::clone::Clone for IMAGE_SYMBOL_0 {
 }
 unsafe impl ::windows::core::Abi for IMAGE_SYMBOL_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IMAGE_SYMBOL_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -7114,6 +7238,7 @@ impl ::core::clone::Clone for IMAGE_SYMBOL_0_0 {
 }
 unsafe impl ::windows::core::Abi for IMAGE_SYMBOL_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IMAGE_SYMBOL_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -7144,6 +7269,7 @@ impl ::core::clone::Clone for IMAGE_SYMBOL_EX {
 }
 unsafe impl ::windows::core::Abi for IMAGE_SYMBOL_EX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IMAGE_SYMBOL_EX {
     fn eq(&self, other: &Self) -> bool {
@@ -7171,6 +7297,7 @@ impl ::core::clone::Clone for IMAGE_SYMBOL_EX_0 {
 }
 unsafe impl ::windows::core::Abi for IMAGE_SYMBOL_EX_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IMAGE_SYMBOL_EX_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -7197,6 +7324,7 @@ impl ::core::clone::Clone for IMAGE_SYMBOL_EX_0_0 {
 }
 unsafe impl ::windows::core::Abi for IMAGE_SYMBOL_EX_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IMAGE_SYMBOL_EX_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -7327,6 +7455,7 @@ impl ::core::clone::Clone for IMAGE_TLS_DIRECTORY32 {
 }
 unsafe impl ::windows::core::Abi for IMAGE_TLS_DIRECTORY32 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IMAGE_TLS_DIRECTORY32 {
     fn eq(&self, other: &Self) -> bool {
@@ -7353,6 +7482,7 @@ impl ::core::clone::Clone for IMAGE_TLS_DIRECTORY32_0 {
 }
 unsafe impl ::windows::core::Abi for IMAGE_TLS_DIRECTORY32_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IMAGE_TLS_DIRECTORY32_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -7383,6 +7513,7 @@ impl ::core::fmt::Debug for IMAGE_TLS_DIRECTORY32_0_0 {
 }
 unsafe impl ::windows::core::Abi for IMAGE_TLS_DIRECTORY32_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IMAGE_TLS_DIRECTORY32_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -7413,6 +7544,7 @@ impl ::core::clone::Clone for IMAGE_TLS_DIRECTORY64 {
 }
 unsafe impl ::windows::core::Abi for IMAGE_TLS_DIRECTORY64 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IMAGE_TLS_DIRECTORY64 {
     fn eq(&self, other: &Self) -> bool {
@@ -7439,6 +7571,7 @@ impl ::core::clone::Clone for IMAGE_TLS_DIRECTORY64_0 {
 }
 unsafe impl ::windows::core::Abi for IMAGE_TLS_DIRECTORY64_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IMAGE_TLS_DIRECTORY64_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -7469,6 +7602,7 @@ impl ::core::fmt::Debug for IMAGE_TLS_DIRECTORY64_0_0 {
 }
 unsafe impl ::windows::core::Abi for IMAGE_TLS_DIRECTORY64_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IMAGE_TLS_DIRECTORY64_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -7544,6 +7678,7 @@ impl ::core::clone::Clone for IMAGE_VXD_HEADER {
 }
 unsafe impl ::windows::core::Abi for IMAGE_VXD_HEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IMAGE_VXD_HEADER {
     fn eq(&self, other: &Self) -> bool {
@@ -7588,6 +7723,7 @@ impl ::core::clone::Clone for IMPORT_OBJECT_HEADER {
 }
 unsafe impl ::windows::core::Abi for IMPORT_OBJECT_HEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IMPORT_OBJECT_HEADER {
     fn eq(&self, other: &Self) -> bool {
@@ -7614,6 +7750,7 @@ impl ::core::clone::Clone for IMPORT_OBJECT_HEADER_0 {
 }
 unsafe impl ::windows::core::Abi for IMPORT_OBJECT_HEADER_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IMPORT_OBJECT_HEADER_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -7653,6 +7790,7 @@ impl ::core::default::Default for IMPORT_OBJECT_NAME_TYPE {
 }
 unsafe impl ::windows::core::Abi for IMPORT_OBJECT_NAME_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for IMPORT_OBJECT_NAME_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7682,6 +7820,7 @@ impl ::core::default::Default for IMPORT_OBJECT_TYPE {
 }
 unsafe impl ::windows::core::Abi for IMPORT_OBJECT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for IMPORT_OBJECT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8135,6 +8274,7 @@ impl ::core::clone::Clone for KERNEL_CET_CONTEXT {
 }
 unsafe impl ::windows::core::Abi for KERNEL_CET_CONTEXT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KERNEL_CET_CONTEXT {
     fn eq(&self, other: &Self) -> bool {
@@ -8161,6 +8301,7 @@ impl ::core::clone::Clone for KERNEL_CET_CONTEXT_0 {
 }
 unsafe impl ::windows::core::Abi for KERNEL_CET_CONTEXT_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KERNEL_CET_CONTEXT_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -8191,6 +8332,7 @@ impl ::core::fmt::Debug for KERNEL_CET_CONTEXT_0_0 {
 }
 unsafe impl ::windows::core::Abi for KERNEL_CET_CONTEXT_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KERNEL_CET_CONTEXT_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -8223,6 +8365,7 @@ impl ::core::fmt::Debug for KTMOBJECT_CURSOR {
 }
 unsafe impl ::windows::core::Abi for KTMOBJECT_CURSOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KTMOBJECT_CURSOR {
     fn eq(&self, other: &Self) -> bool {
@@ -8262,6 +8405,7 @@ impl ::core::default::Default for KTMOBJECT_TYPE {
 }
 unsafe impl ::windows::core::Abi for KTMOBJECT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KTMOBJECT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8642,6 +8786,7 @@ impl ::core::fmt::Debug for MAXVERSIONTESTED_INFO {
 }
 unsafe impl ::windows::core::Abi for MAXVERSIONTESTED_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MAXVERSIONTESTED_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -8876,6 +9021,7 @@ impl ::core::fmt::Debug for MEMORY_PARTITION_DEDICATED_MEMORY_ATTRIBUTE {
 }
 unsafe impl ::windows::core::Abi for MEMORY_PARTITION_DEDICATED_MEMORY_ATTRIBUTE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MEMORY_PARTITION_DEDICATED_MEMORY_ATTRIBUTE {
     fn eq(&self, other: &Self) -> bool {
@@ -8912,6 +9058,7 @@ impl ::core::fmt::Debug for MEMORY_PARTITION_DEDICATED_MEMORY_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for MEMORY_PARTITION_DEDICATED_MEMORY_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MEMORY_PARTITION_DEDICATED_MEMORY_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -8961,6 +9108,7 @@ impl ::core::default::Default for MEM_DEDICATED_ATTRIBUTE_TYPE {
 }
 unsafe impl ::windows::core::Abi for MEM_DEDICATED_ATTRIBUTE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MEM_DEDICATED_ATTRIBUTE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9016,6 +9164,7 @@ impl ::core::default::Default for MEM_SECTION_EXTENDED_PARAMETER_TYPE {
 }
 unsafe impl ::windows::core::Abi for MEM_SECTION_EXTENDED_PARAMETER_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MEM_SECTION_EXTENDED_PARAMETER_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9061,6 +9210,7 @@ impl ::core::default::Default for MONITOR_DISPLAY_STATE {
 }
 unsafe impl ::windows::core::Abi for MONITOR_DISPLAY_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MONITOR_DISPLAY_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9092,6 +9242,7 @@ impl ::core::fmt::Debug for NETWORK_APP_INSTANCE_EA {
 }
 unsafe impl ::windows::core::Abi for NETWORK_APP_INSTANCE_EA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NETWORK_APP_INSTANCE_EA {
     fn eq(&self, other: &Self) -> bool {
@@ -9131,6 +9282,7 @@ impl ::core::clone::Clone for NON_PAGED_DEBUG_INFO {
 }
 unsafe impl ::windows::core::Abi for NON_PAGED_DEBUG_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NON_PAGED_DEBUG_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -9163,6 +9315,7 @@ impl ::core::fmt::Debug for NOTIFY_USER_POWER_SETTING {
 }
 unsafe impl ::windows::core::Abi for NOTIFY_USER_POWER_SETTING {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NOTIFY_USER_POWER_SETTING {
     fn eq(&self, other: &Self) -> bool {
@@ -9195,6 +9348,7 @@ impl ::core::clone::Clone for NT_TIB32 {
 }
 unsafe impl ::windows::core::Abi for NT_TIB32 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NT_TIB32 {
     fn eq(&self, other: &Self) -> bool {
@@ -9221,6 +9375,7 @@ impl ::core::clone::Clone for NT_TIB32_0 {
 }
 unsafe impl ::windows::core::Abi for NT_TIB32_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NT_TIB32_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -9252,6 +9407,7 @@ impl ::core::clone::Clone for NT_TIB64 {
 }
 unsafe impl ::windows::core::Abi for NT_TIB64 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NT_TIB64 {
     fn eq(&self, other: &Self) -> bool {
@@ -9278,6 +9434,7 @@ impl ::core::clone::Clone for NT_TIB64_0 {
 }
 unsafe impl ::windows::core::Abi for NT_TIB64_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NT_TIB64_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -9328,6 +9485,7 @@ impl ::core::fmt::Debug for PACKEDEVENTINFO {
 }
 unsafe impl ::windows::core::Abi for PACKEDEVENTINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PACKEDEVENTINFO {
     fn eq(&self, other: &Self) -> bool {
@@ -9511,6 +9669,7 @@ impl ::core::fmt::Debug for POWER_IDLE_RESILIENCY {
 }
 unsafe impl ::windows::core::Abi for POWER_IDLE_RESILIENCY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for POWER_IDLE_RESILIENCY {
     fn eq(&self, other: &Self) -> bool {
@@ -9547,6 +9706,7 @@ impl ::core::fmt::Debug for POWER_MONITOR_INVOCATION {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for POWER_MONITOR_INVOCATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for POWER_MONITOR_INVOCATION {
@@ -9691,6 +9851,7 @@ impl ::core::default::Default for POWER_MONITOR_REQUEST_REASON {
 }
 unsafe impl ::windows::core::Abi for POWER_MONITOR_REQUEST_REASON {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for POWER_MONITOR_REQUEST_REASON {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9720,6 +9881,7 @@ impl ::core::default::Default for POWER_MONITOR_REQUEST_TYPE {
 }
 unsafe impl ::windows::core::Abi for POWER_MONITOR_REQUEST_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for POWER_MONITOR_REQUEST_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9749,6 +9911,7 @@ impl ::core::fmt::Debug for POWER_PLATFORM_INFORMATION {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for POWER_PLATFORM_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for POWER_PLATFORM_INFORMATION {
@@ -9789,6 +9952,7 @@ impl ::core::fmt::Debug for POWER_SESSION_ALLOW_EXTERNAL_DMA_DEVICES {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for POWER_SESSION_ALLOW_EXTERNAL_DMA_DEVICES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for POWER_SESSION_ALLOW_EXTERNAL_DMA_DEVICES {
@@ -9828,6 +9992,7 @@ impl ::core::fmt::Debug for POWER_SESSION_CONNECT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for POWER_SESSION_CONNECT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for POWER_SESSION_CONNECT {
@@ -9867,6 +10032,7 @@ impl ::core::fmt::Debug for POWER_SESSION_RIT_STATE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for POWER_SESSION_RIT_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for POWER_SESSION_RIT_STATE {
@@ -9901,6 +10067,7 @@ impl ::core::fmt::Debug for POWER_SESSION_TIMEOUTS {
 }
 unsafe impl ::windows::core::Abi for POWER_SESSION_TIMEOUTS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for POWER_SESSION_TIMEOUTS {
     fn eq(&self, other: &Self) -> bool {
@@ -9938,6 +10105,7 @@ impl ::core::fmt::Debug for POWER_SESSION_WINLOGON {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for POWER_SESSION_WINLOGON {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for POWER_SESSION_WINLOGON {
@@ -9984,6 +10152,7 @@ impl ::core::default::Default for POWER_SETTING_ALTITUDE {
 }
 unsafe impl ::windows::core::Abi for POWER_SETTING_ALTITUDE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for POWER_SETTING_ALTITUDE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10014,6 +10183,7 @@ impl ::core::fmt::Debug for POWER_USER_PRESENCE {
 }
 unsafe impl ::windows::core::Abi for POWER_USER_PRESENCE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for POWER_USER_PRESENCE {
     fn eq(&self, other: &Self) -> bool {
@@ -10049,6 +10219,7 @@ impl ::core::default::Default for POWER_USER_PRESENCE_TYPE {
 }
 unsafe impl ::windows::core::Abi for POWER_USER_PRESENCE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for POWER_USER_PRESENCE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10127,6 +10298,7 @@ impl ::core::fmt::Debug for PPM_IDLESTATE_EVENT {
 }
 unsafe impl ::windows::core::Abi for PPM_IDLESTATE_EVENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PPM_IDLESTATE_EVENT {
     fn eq(&self, other: &Self) -> bool {
@@ -10161,6 +10333,7 @@ impl ::core::fmt::Debug for PPM_IDLE_ACCOUNTING {
 }
 unsafe impl ::windows::core::Abi for PPM_IDLE_ACCOUNTING {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PPM_IDLE_ACCOUNTING {
     fn eq(&self, other: &Self) -> bool {
@@ -10196,6 +10369,7 @@ impl ::core::fmt::Debug for PPM_IDLE_ACCOUNTING_EX {
 }
 unsafe impl ::windows::core::Abi for PPM_IDLE_ACCOUNTING_EX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PPM_IDLE_ACCOUNTING_EX {
     fn eq(&self, other: &Self) -> bool {
@@ -10242,6 +10416,7 @@ impl ::core::fmt::Debug for PPM_IDLE_STATE_ACCOUNTING {
 }
 unsafe impl ::windows::core::Abi for PPM_IDLE_STATE_ACCOUNTING {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PPM_IDLE_STATE_ACCOUNTING {
     fn eq(&self, other: &Self) -> bool {
@@ -10279,6 +10454,7 @@ impl ::core::fmt::Debug for PPM_IDLE_STATE_ACCOUNTING_EX {
 }
 unsafe impl ::windows::core::Abi for PPM_IDLE_STATE_ACCOUNTING_EX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PPM_IDLE_STATE_ACCOUNTING_EX {
     fn eq(&self, other: &Self) -> bool {
@@ -10312,6 +10488,7 @@ impl ::core::fmt::Debug for PPM_IDLE_STATE_BUCKET_EX {
 }
 unsafe impl ::windows::core::Abi for PPM_IDLE_STATE_BUCKET_EX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PPM_IDLE_STATE_BUCKET_EX {
     fn eq(&self, other: &Self) -> bool {
@@ -10359,6 +10536,7 @@ impl ::core::fmt::Debug for PPM_PERFSTATE_DOMAIN_EVENT {
 }
 unsafe impl ::windows::core::Abi for PPM_PERFSTATE_DOMAIN_EVENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PPM_PERFSTATE_DOMAIN_EVENT {
     fn eq(&self, other: &Self) -> bool {
@@ -10393,6 +10571,7 @@ impl ::core::fmt::Debug for PPM_PERFSTATE_EVENT {
 }
 unsafe impl ::windows::core::Abi for PPM_PERFSTATE_EVENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PPM_PERFSTATE_EVENT {
     fn eq(&self, other: &Self) -> bool {
@@ -10424,6 +10603,7 @@ impl ::core::fmt::Debug for PPM_THERMALCHANGE_EVENT {
 }
 unsafe impl ::windows::core::Abi for PPM_THERMALCHANGE_EVENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PPM_THERMALCHANGE_EVENT {
     fn eq(&self, other: &Self) -> bool {
@@ -10457,6 +10637,7 @@ impl ::core::fmt::Debug for PPM_THERMAL_POLICY_EVENT {
 }
 unsafe impl ::windows::core::Abi for PPM_THERMAL_POLICY_EVENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PPM_THERMAL_POLICY_EVENT {
     fn eq(&self, other: &Self) -> bool {
@@ -10497,6 +10678,7 @@ impl ::core::fmt::Debug for PPM_WMI_IDLE_STATE {
 }
 unsafe impl ::windows::core::Abi for PPM_WMI_IDLE_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PPM_WMI_IDLE_STATE {
     fn eq(&self, other: &Self) -> bool {
@@ -10532,6 +10714,7 @@ impl ::core::fmt::Debug for PPM_WMI_IDLE_STATES {
 }
 unsafe impl ::windows::core::Abi for PPM_WMI_IDLE_STATES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PPM_WMI_IDLE_STATES {
     fn eq(&self, other: &Self) -> bool {
@@ -10567,6 +10750,7 @@ impl ::core::fmt::Debug for PPM_WMI_IDLE_STATES_EX {
 }
 unsafe impl ::windows::core::Abi for PPM_WMI_IDLE_STATES_EX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PPM_WMI_IDLE_STATES_EX {
     fn eq(&self, other: &Self) -> bool {
@@ -10599,6 +10783,7 @@ impl ::core::fmt::Debug for PPM_WMI_LEGACY_PERFSTATE {
 }
 unsafe impl ::windows::core::Abi for PPM_WMI_LEGACY_PERFSTATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PPM_WMI_LEGACY_PERFSTATE {
     fn eq(&self, other: &Self) -> bool {
@@ -10657,6 +10842,7 @@ impl ::core::fmt::Debug for PPM_WMI_PERF_STATE {
 }
 unsafe impl ::windows::core::Abi for PPM_WMI_PERF_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PPM_WMI_PERF_STATE {
     fn eq(&self, other: &Self) -> bool {
@@ -10729,6 +10915,7 @@ impl ::core::fmt::Debug for PPM_WMI_PERF_STATES {
 }
 unsafe impl ::windows::core::Abi for PPM_WMI_PERF_STATES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PPM_WMI_PERF_STATES {
     fn eq(&self, other: &Self) -> bool {
@@ -10801,6 +10988,7 @@ impl ::core::fmt::Debug for PPM_WMI_PERF_STATES_EX {
 }
 unsafe impl ::windows::core::Abi for PPM_WMI_PERF_STATES_EX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PPM_WMI_PERF_STATES_EX {
     fn eq(&self, other: &Self) -> bool {
@@ -10882,6 +11070,7 @@ impl ::core::fmt::Debug for PROCESSOR_IDLESTATE_INFO {
 }
 unsafe impl ::windows::core::Abi for PROCESSOR_IDLESTATE_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROCESSOR_IDLESTATE_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -10910,6 +11099,7 @@ impl ::core::clone::Clone for PROCESSOR_IDLESTATE_POLICY {
 }
 unsafe impl ::windows::core::Abi for PROCESSOR_IDLESTATE_POLICY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROCESSOR_IDLESTATE_POLICY {
     fn eq(&self, other: &Self) -> bool {
@@ -10936,6 +11126,7 @@ impl ::core::clone::Clone for PROCESSOR_IDLESTATE_POLICY_0 {
 }
 unsafe impl ::windows::core::Abi for PROCESSOR_IDLESTATE_POLICY_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROCESSOR_IDLESTATE_POLICY_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -10966,6 +11157,7 @@ impl ::core::fmt::Debug for PROCESSOR_IDLESTATE_POLICY_0_0 {
 }
 unsafe impl ::windows::core::Abi for PROCESSOR_IDLESTATE_POLICY_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROCESSOR_IDLESTATE_POLICY_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -11016,6 +11208,7 @@ impl ::core::clone::Clone for PROCESSOR_PERFSTATE_POLICY {
 }
 unsafe impl ::windows::core::Abi for PROCESSOR_PERFSTATE_POLICY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROCESSOR_PERFSTATE_POLICY {
     fn eq(&self, other: &Self) -> bool {
@@ -11042,6 +11235,7 @@ impl ::core::clone::Clone for PROCESSOR_PERFSTATE_POLICY_0 {
 }
 unsafe impl ::windows::core::Abi for PROCESSOR_PERFSTATE_POLICY_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROCESSOR_PERFSTATE_POLICY_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -11068,6 +11262,7 @@ impl ::core::clone::Clone for PROCESSOR_PERFSTATE_POLICY_0_0 {
 }
 unsafe impl ::windows::core::Abi for PROCESSOR_PERFSTATE_POLICY_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROCESSOR_PERFSTATE_POLICY_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -11098,6 +11293,7 @@ impl ::core::fmt::Debug for PROCESSOR_PERFSTATE_POLICY_0_0_0 {
 }
 unsafe impl ::windows::core::Abi for PROCESSOR_PERFSTATE_POLICY_0_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROCESSOR_PERFSTATE_POLICY_0_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -11187,6 +11383,7 @@ impl ::core::clone::Clone for PROCESS_MITIGATION_ASLR_POLICY {
 }
 unsafe impl ::windows::core::Abi for PROCESS_MITIGATION_ASLR_POLICY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROCESS_MITIGATION_ASLR_POLICY {
     fn eq(&self, other: &Self) -> bool {
@@ -11213,6 +11410,7 @@ impl ::core::clone::Clone for PROCESS_MITIGATION_ASLR_POLICY_0 {
 }
 unsafe impl ::windows::core::Abi for PROCESS_MITIGATION_ASLR_POLICY_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROCESS_MITIGATION_ASLR_POLICY_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -11243,6 +11441,7 @@ impl ::core::fmt::Debug for PROCESS_MITIGATION_ASLR_POLICY_0_0 {
 }
 unsafe impl ::windows::core::Abi for PROCESS_MITIGATION_ASLR_POLICY_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROCESS_MITIGATION_ASLR_POLICY_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -11268,6 +11467,7 @@ impl ::core::clone::Clone for PROCESS_MITIGATION_BINARY_SIGNATURE_POLICY {
 }
 unsafe impl ::windows::core::Abi for PROCESS_MITIGATION_BINARY_SIGNATURE_POLICY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROCESS_MITIGATION_BINARY_SIGNATURE_POLICY {
     fn eq(&self, other: &Self) -> bool {
@@ -11294,6 +11494,7 @@ impl ::core::clone::Clone for PROCESS_MITIGATION_BINARY_SIGNATURE_POLICY_0 {
 }
 unsafe impl ::windows::core::Abi for PROCESS_MITIGATION_BINARY_SIGNATURE_POLICY_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROCESS_MITIGATION_BINARY_SIGNATURE_POLICY_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -11324,6 +11525,7 @@ impl ::core::fmt::Debug for PROCESS_MITIGATION_BINARY_SIGNATURE_POLICY_0_0 {
 }
 unsafe impl ::windows::core::Abi for PROCESS_MITIGATION_BINARY_SIGNATURE_POLICY_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROCESS_MITIGATION_BINARY_SIGNATURE_POLICY_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -11349,6 +11551,7 @@ impl ::core::clone::Clone for PROCESS_MITIGATION_CHILD_PROCESS_POLICY {
 }
 unsafe impl ::windows::core::Abi for PROCESS_MITIGATION_CHILD_PROCESS_POLICY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROCESS_MITIGATION_CHILD_PROCESS_POLICY {
     fn eq(&self, other: &Self) -> bool {
@@ -11375,6 +11578,7 @@ impl ::core::clone::Clone for PROCESS_MITIGATION_CHILD_PROCESS_POLICY_0 {
 }
 unsafe impl ::windows::core::Abi for PROCESS_MITIGATION_CHILD_PROCESS_POLICY_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROCESS_MITIGATION_CHILD_PROCESS_POLICY_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -11405,6 +11609,7 @@ impl ::core::fmt::Debug for PROCESS_MITIGATION_CHILD_PROCESS_POLICY_0_0 {
 }
 unsafe impl ::windows::core::Abi for PROCESS_MITIGATION_CHILD_PROCESS_POLICY_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROCESS_MITIGATION_CHILD_PROCESS_POLICY_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -11430,6 +11635,7 @@ impl ::core::clone::Clone for PROCESS_MITIGATION_CONTROL_FLOW_GUARD_POLICY {
 }
 unsafe impl ::windows::core::Abi for PROCESS_MITIGATION_CONTROL_FLOW_GUARD_POLICY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROCESS_MITIGATION_CONTROL_FLOW_GUARD_POLICY {
     fn eq(&self, other: &Self) -> bool {
@@ -11456,6 +11662,7 @@ impl ::core::clone::Clone for PROCESS_MITIGATION_CONTROL_FLOW_GUARD_POLICY_0 {
 }
 unsafe impl ::windows::core::Abi for PROCESS_MITIGATION_CONTROL_FLOW_GUARD_POLICY_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROCESS_MITIGATION_CONTROL_FLOW_GUARD_POLICY_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -11486,6 +11693,7 @@ impl ::core::fmt::Debug for PROCESS_MITIGATION_CONTROL_FLOW_GUARD_POLICY_0_0 {
 }
 unsafe impl ::windows::core::Abi for PROCESS_MITIGATION_CONTROL_FLOW_GUARD_POLICY_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROCESS_MITIGATION_CONTROL_FLOW_GUARD_POLICY_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -11516,6 +11724,7 @@ impl ::core::clone::Clone for PROCESS_MITIGATION_DEP_POLICY {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PROCESS_MITIGATION_DEP_POLICY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for PROCESS_MITIGATION_DEP_POLICY {
@@ -11549,6 +11758,7 @@ impl ::core::clone::Clone for PROCESS_MITIGATION_DEP_POLICY_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PROCESS_MITIGATION_DEP_POLICY_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for PROCESS_MITIGATION_DEP_POLICY_0 {
@@ -11587,6 +11797,7 @@ impl ::core::fmt::Debug for PROCESS_MITIGATION_DEP_POLICY_0_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PROCESS_MITIGATION_DEP_POLICY_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for PROCESS_MITIGATION_DEP_POLICY_0_0 {
@@ -11615,6 +11826,7 @@ impl ::core::clone::Clone for PROCESS_MITIGATION_DYNAMIC_CODE_POLICY {
 }
 unsafe impl ::windows::core::Abi for PROCESS_MITIGATION_DYNAMIC_CODE_POLICY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROCESS_MITIGATION_DYNAMIC_CODE_POLICY {
     fn eq(&self, other: &Self) -> bool {
@@ -11641,6 +11853,7 @@ impl ::core::clone::Clone for PROCESS_MITIGATION_DYNAMIC_CODE_POLICY_0 {
 }
 unsafe impl ::windows::core::Abi for PROCESS_MITIGATION_DYNAMIC_CODE_POLICY_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROCESS_MITIGATION_DYNAMIC_CODE_POLICY_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -11671,6 +11884,7 @@ impl ::core::fmt::Debug for PROCESS_MITIGATION_DYNAMIC_CODE_POLICY_0_0 {
 }
 unsafe impl ::windows::core::Abi for PROCESS_MITIGATION_DYNAMIC_CODE_POLICY_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROCESS_MITIGATION_DYNAMIC_CODE_POLICY_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -11696,6 +11910,7 @@ impl ::core::clone::Clone for PROCESS_MITIGATION_EXTENSION_POINT_DISABLE_POLICY 
 }
 unsafe impl ::windows::core::Abi for PROCESS_MITIGATION_EXTENSION_POINT_DISABLE_POLICY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROCESS_MITIGATION_EXTENSION_POINT_DISABLE_POLICY {
     fn eq(&self, other: &Self) -> bool {
@@ -11722,6 +11937,7 @@ impl ::core::clone::Clone for PROCESS_MITIGATION_EXTENSION_POINT_DISABLE_POLICY_
 }
 unsafe impl ::windows::core::Abi for PROCESS_MITIGATION_EXTENSION_POINT_DISABLE_POLICY_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROCESS_MITIGATION_EXTENSION_POINT_DISABLE_POLICY_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -11752,6 +11968,7 @@ impl ::core::fmt::Debug for PROCESS_MITIGATION_EXTENSION_POINT_DISABLE_POLICY_0_
 }
 unsafe impl ::windows::core::Abi for PROCESS_MITIGATION_EXTENSION_POINT_DISABLE_POLICY_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROCESS_MITIGATION_EXTENSION_POINT_DISABLE_POLICY_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -11777,6 +11994,7 @@ impl ::core::clone::Clone for PROCESS_MITIGATION_FONT_DISABLE_POLICY {
 }
 unsafe impl ::windows::core::Abi for PROCESS_MITIGATION_FONT_DISABLE_POLICY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROCESS_MITIGATION_FONT_DISABLE_POLICY {
     fn eq(&self, other: &Self) -> bool {
@@ -11803,6 +12021,7 @@ impl ::core::clone::Clone for PROCESS_MITIGATION_FONT_DISABLE_POLICY_0 {
 }
 unsafe impl ::windows::core::Abi for PROCESS_MITIGATION_FONT_DISABLE_POLICY_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROCESS_MITIGATION_FONT_DISABLE_POLICY_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -11833,6 +12052,7 @@ impl ::core::fmt::Debug for PROCESS_MITIGATION_FONT_DISABLE_POLICY_0_0 {
 }
 unsafe impl ::windows::core::Abi for PROCESS_MITIGATION_FONT_DISABLE_POLICY_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROCESS_MITIGATION_FONT_DISABLE_POLICY_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -11858,6 +12078,7 @@ impl ::core::clone::Clone for PROCESS_MITIGATION_IMAGE_LOAD_POLICY {
 }
 unsafe impl ::windows::core::Abi for PROCESS_MITIGATION_IMAGE_LOAD_POLICY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROCESS_MITIGATION_IMAGE_LOAD_POLICY {
     fn eq(&self, other: &Self) -> bool {
@@ -11884,6 +12105,7 @@ impl ::core::clone::Clone for PROCESS_MITIGATION_IMAGE_LOAD_POLICY_0 {
 }
 unsafe impl ::windows::core::Abi for PROCESS_MITIGATION_IMAGE_LOAD_POLICY_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROCESS_MITIGATION_IMAGE_LOAD_POLICY_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -11914,6 +12136,7 @@ impl ::core::fmt::Debug for PROCESS_MITIGATION_IMAGE_LOAD_POLICY_0_0 {
 }
 unsafe impl ::windows::core::Abi for PROCESS_MITIGATION_IMAGE_LOAD_POLICY_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROCESS_MITIGATION_IMAGE_LOAD_POLICY_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -11939,6 +12162,7 @@ impl ::core::clone::Clone for PROCESS_MITIGATION_PAYLOAD_RESTRICTION_POLICY {
 }
 unsafe impl ::windows::core::Abi for PROCESS_MITIGATION_PAYLOAD_RESTRICTION_POLICY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROCESS_MITIGATION_PAYLOAD_RESTRICTION_POLICY {
     fn eq(&self, other: &Self) -> bool {
@@ -11965,6 +12189,7 @@ impl ::core::clone::Clone for PROCESS_MITIGATION_PAYLOAD_RESTRICTION_POLICY_0 {
 }
 unsafe impl ::windows::core::Abi for PROCESS_MITIGATION_PAYLOAD_RESTRICTION_POLICY_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROCESS_MITIGATION_PAYLOAD_RESTRICTION_POLICY_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -11995,6 +12220,7 @@ impl ::core::fmt::Debug for PROCESS_MITIGATION_PAYLOAD_RESTRICTION_POLICY_0_0 {
 }
 unsafe impl ::windows::core::Abi for PROCESS_MITIGATION_PAYLOAD_RESTRICTION_POLICY_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROCESS_MITIGATION_PAYLOAD_RESTRICTION_POLICY_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -12020,6 +12246,7 @@ impl ::core::clone::Clone for PROCESS_MITIGATION_REDIRECTION_TRUST_POLICY {
 }
 unsafe impl ::windows::core::Abi for PROCESS_MITIGATION_REDIRECTION_TRUST_POLICY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROCESS_MITIGATION_REDIRECTION_TRUST_POLICY {
     fn eq(&self, other: &Self) -> bool {
@@ -12046,6 +12273,7 @@ impl ::core::clone::Clone for PROCESS_MITIGATION_REDIRECTION_TRUST_POLICY_0 {
 }
 unsafe impl ::windows::core::Abi for PROCESS_MITIGATION_REDIRECTION_TRUST_POLICY_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROCESS_MITIGATION_REDIRECTION_TRUST_POLICY_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -12076,6 +12304,7 @@ impl ::core::fmt::Debug for PROCESS_MITIGATION_REDIRECTION_TRUST_POLICY_0_0 {
 }
 unsafe impl ::windows::core::Abi for PROCESS_MITIGATION_REDIRECTION_TRUST_POLICY_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROCESS_MITIGATION_REDIRECTION_TRUST_POLICY_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -12101,6 +12330,7 @@ impl ::core::clone::Clone for PROCESS_MITIGATION_SIDE_CHANNEL_ISOLATION_POLICY {
 }
 unsafe impl ::windows::core::Abi for PROCESS_MITIGATION_SIDE_CHANNEL_ISOLATION_POLICY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROCESS_MITIGATION_SIDE_CHANNEL_ISOLATION_POLICY {
     fn eq(&self, other: &Self) -> bool {
@@ -12127,6 +12357,7 @@ impl ::core::clone::Clone for PROCESS_MITIGATION_SIDE_CHANNEL_ISOLATION_POLICY_0
 }
 unsafe impl ::windows::core::Abi for PROCESS_MITIGATION_SIDE_CHANNEL_ISOLATION_POLICY_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROCESS_MITIGATION_SIDE_CHANNEL_ISOLATION_POLICY_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -12157,6 +12388,7 @@ impl ::core::fmt::Debug for PROCESS_MITIGATION_SIDE_CHANNEL_ISOLATION_POLICY_0_0
 }
 unsafe impl ::windows::core::Abi for PROCESS_MITIGATION_SIDE_CHANNEL_ISOLATION_POLICY_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROCESS_MITIGATION_SIDE_CHANNEL_ISOLATION_POLICY_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -12182,6 +12414,7 @@ impl ::core::clone::Clone for PROCESS_MITIGATION_STRICT_HANDLE_CHECK_POLICY {
 }
 unsafe impl ::windows::core::Abi for PROCESS_MITIGATION_STRICT_HANDLE_CHECK_POLICY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROCESS_MITIGATION_STRICT_HANDLE_CHECK_POLICY {
     fn eq(&self, other: &Self) -> bool {
@@ -12208,6 +12441,7 @@ impl ::core::clone::Clone for PROCESS_MITIGATION_STRICT_HANDLE_CHECK_POLICY_0 {
 }
 unsafe impl ::windows::core::Abi for PROCESS_MITIGATION_STRICT_HANDLE_CHECK_POLICY_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROCESS_MITIGATION_STRICT_HANDLE_CHECK_POLICY_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -12238,6 +12472,7 @@ impl ::core::fmt::Debug for PROCESS_MITIGATION_STRICT_HANDLE_CHECK_POLICY_0_0 {
 }
 unsafe impl ::windows::core::Abi for PROCESS_MITIGATION_STRICT_HANDLE_CHECK_POLICY_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROCESS_MITIGATION_STRICT_HANDLE_CHECK_POLICY_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -12263,6 +12498,7 @@ impl ::core::clone::Clone for PROCESS_MITIGATION_SYSTEM_CALL_DISABLE_POLICY {
 }
 unsafe impl ::windows::core::Abi for PROCESS_MITIGATION_SYSTEM_CALL_DISABLE_POLICY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROCESS_MITIGATION_SYSTEM_CALL_DISABLE_POLICY {
     fn eq(&self, other: &Self) -> bool {
@@ -12289,6 +12525,7 @@ impl ::core::clone::Clone for PROCESS_MITIGATION_SYSTEM_CALL_DISABLE_POLICY_0 {
 }
 unsafe impl ::windows::core::Abi for PROCESS_MITIGATION_SYSTEM_CALL_DISABLE_POLICY_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROCESS_MITIGATION_SYSTEM_CALL_DISABLE_POLICY_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -12319,6 +12556,7 @@ impl ::core::fmt::Debug for PROCESS_MITIGATION_SYSTEM_CALL_DISABLE_POLICY_0_0 {
 }
 unsafe impl ::windows::core::Abi for PROCESS_MITIGATION_SYSTEM_CALL_DISABLE_POLICY_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROCESS_MITIGATION_SYSTEM_CALL_DISABLE_POLICY_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -12344,6 +12582,7 @@ impl ::core::clone::Clone for PROCESS_MITIGATION_SYSTEM_CALL_FILTER_POLICY {
 }
 unsafe impl ::windows::core::Abi for PROCESS_MITIGATION_SYSTEM_CALL_FILTER_POLICY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROCESS_MITIGATION_SYSTEM_CALL_FILTER_POLICY {
     fn eq(&self, other: &Self) -> bool {
@@ -12370,6 +12609,7 @@ impl ::core::clone::Clone for PROCESS_MITIGATION_SYSTEM_CALL_FILTER_POLICY_0 {
 }
 unsafe impl ::windows::core::Abi for PROCESS_MITIGATION_SYSTEM_CALL_FILTER_POLICY_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROCESS_MITIGATION_SYSTEM_CALL_FILTER_POLICY_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -12400,6 +12640,7 @@ impl ::core::fmt::Debug for PROCESS_MITIGATION_SYSTEM_CALL_FILTER_POLICY_0_0 {
 }
 unsafe impl ::windows::core::Abi for PROCESS_MITIGATION_SYSTEM_CALL_FILTER_POLICY_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROCESS_MITIGATION_SYSTEM_CALL_FILTER_POLICY_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -12425,6 +12666,7 @@ impl ::core::clone::Clone for PROCESS_MITIGATION_USER_SHADOW_STACK_POLICY {
 }
 unsafe impl ::windows::core::Abi for PROCESS_MITIGATION_USER_SHADOW_STACK_POLICY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROCESS_MITIGATION_USER_SHADOW_STACK_POLICY {
     fn eq(&self, other: &Self) -> bool {
@@ -12451,6 +12693,7 @@ impl ::core::clone::Clone for PROCESS_MITIGATION_USER_SHADOW_STACK_POLICY_0 {
 }
 unsafe impl ::windows::core::Abi for PROCESS_MITIGATION_USER_SHADOW_STACK_POLICY_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROCESS_MITIGATION_USER_SHADOW_STACK_POLICY_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -12481,6 +12724,7 @@ impl ::core::fmt::Debug for PROCESS_MITIGATION_USER_SHADOW_STACK_POLICY_0_0 {
 }
 unsafe impl ::windows::core::Abi for PROCESS_MITIGATION_USER_SHADOW_STACK_POLICY_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROCESS_MITIGATION_USER_SHADOW_STACK_POLICY_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -12689,6 +12933,7 @@ impl ::core::clone::Clone for QUOTA_LIMITS_EX {
 }
 unsafe impl ::windows::core::Abi for QUOTA_LIMITS_EX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for QUOTA_LIMITS_EX {
     fn eq(&self, other: &Self) -> bool {
@@ -12725,6 +12970,7 @@ impl ::core::clone::Clone for RATE_QUOTA_LIMIT {
 }
 unsafe impl ::windows::core::Abi for RATE_QUOTA_LIMIT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RATE_QUOTA_LIMIT {
     fn eq(&self, other: &Self) -> bool {
@@ -12755,6 +13001,7 @@ impl ::core::fmt::Debug for RATE_QUOTA_LIMIT_0 {
 }
 unsafe impl ::windows::core::Abi for RATE_QUOTA_LIMIT_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RATE_QUOTA_LIMIT_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -12798,6 +13045,7 @@ impl ::core::fmt::Debug for REARRANGE_FILE_DATA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for REARRANGE_FILE_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for REARRANGE_FILE_DATA {
@@ -12840,6 +13088,7 @@ impl ::core::fmt::Debug for REARRANGE_FILE_DATA32 {
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 unsafe impl ::windows::core::Abi for REARRANGE_FILE_DATA32 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 impl ::core::cmp::PartialEq for REARRANGE_FILE_DATA32 {
@@ -12876,6 +13125,7 @@ impl ::core::fmt::Debug for REDBOOK_DIGITAL_AUDIO_EXTRACTION_INFO {
 }
 unsafe impl ::windows::core::Abi for REDBOOK_DIGITAL_AUDIO_EXTRACTION_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for REDBOOK_DIGITAL_AUDIO_EXTRACTION_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -12944,6 +13194,7 @@ impl ::core::fmt::Debug for RESOURCEMANAGER_BASIC_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for RESOURCEMANAGER_BASIC_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RESOURCEMANAGER_BASIC_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -12982,6 +13233,7 @@ impl ::core::fmt::Debug for RESOURCEMANAGER_COMPLETION_INFORMATION {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for RESOURCEMANAGER_COMPLETION_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for RESOURCEMANAGER_COMPLETION_INFORMATION {
@@ -13022,6 +13274,7 @@ impl ::core::default::Default for RESOURCEMANAGER_INFORMATION_CLASS {
 }
 unsafe impl ::windows::core::Abi for RESOURCEMANAGER_INFORMATION_CLASS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RESOURCEMANAGER_INFORMATION_CLASS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13056,6 +13309,7 @@ impl ::core::fmt::Debug for RESUME_PERFORMANCE {
 }
 unsafe impl ::windows::core::Abi for RESUME_PERFORMANCE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RESUME_PERFORMANCE {
     fn eq(&self, other: &Self) -> bool {
@@ -13121,6 +13375,7 @@ impl ::core::default::Default for RTL_UMS_SCHEDULER_REASON {
 }
 unsafe impl ::windows::core::Abi for RTL_UMS_SCHEDULER_REASON {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RTL_UMS_SCHEDULER_REASON {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13152,6 +13407,7 @@ impl ::core::fmt::Debug for RemBRUSH {
 }
 unsafe impl ::windows::core::Abi for RemBRUSH {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RemBRUSH {
     fn eq(&self, other: &Self) -> bool {
@@ -13183,6 +13439,7 @@ impl ::core::fmt::Debug for RemHBITMAP {
 }
 unsafe impl ::windows::core::Abi for RemHBITMAP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RemHBITMAP {
     fn eq(&self, other: &Self) -> bool {
@@ -13214,6 +13471,7 @@ impl ::core::fmt::Debug for RemHENHMETAFILE {
 }
 unsafe impl ::windows::core::Abi for RemHENHMETAFILE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RemHENHMETAFILE {
     fn eq(&self, other: &Self) -> bool {
@@ -13246,6 +13504,7 @@ impl ::core::fmt::Debug for RemHGLOBAL {
 }
 unsafe impl ::windows::core::Abi for RemHGLOBAL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RemHGLOBAL {
     fn eq(&self, other: &Self) -> bool {
@@ -13280,6 +13539,7 @@ impl ::core::fmt::Debug for RemHMETAFILEPICT {
 }
 unsafe impl ::windows::core::Abi for RemHMETAFILEPICT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RemHMETAFILEPICT {
     fn eq(&self, other: &Self) -> bool {
@@ -13311,6 +13571,7 @@ impl ::core::fmt::Debug for RemHPALETTE {
 }
 unsafe impl ::windows::core::Abi for RemHPALETTE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RemHPALETTE {
     fn eq(&self, other: &Self) -> bool {
@@ -13337,6 +13598,7 @@ impl ::core::clone::Clone for RemotableHandle {
 }
 unsafe impl ::windows::core::Abi for RemotableHandle {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RemotableHandle {
     fn eq(&self, other: &Self) -> bool {
@@ -13363,6 +13625,7 @@ impl ::core::clone::Clone for RemotableHandle_0 {
 }
 unsafe impl ::windows::core::Abi for RemotableHandle_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RemotableHandle_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -13442,6 +13705,7 @@ impl ::core::default::Default for ReplacesCorHdrNumericDefines {
 }
 unsafe impl ::windows::core::Abi for ReplacesCorHdrNumericDefines {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ReplacesCorHdrNumericDefines {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13467,6 +13731,7 @@ impl ::core::fmt::Debug for SCOPE_TABLE_AMD64 {
 }
 unsafe impl ::windows::core::Abi for SCOPE_TABLE_AMD64 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SCOPE_TABLE_AMD64 {
     fn eq(&self, other: &Self) -> bool {
@@ -13500,6 +13765,7 @@ impl ::core::fmt::Debug for SCOPE_TABLE_AMD64_0 {
 }
 unsafe impl ::windows::core::Abi for SCOPE_TABLE_AMD64_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SCOPE_TABLE_AMD64_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -13531,6 +13797,7 @@ impl ::core::fmt::Debug for SCOPE_TABLE_ARM {
 }
 unsafe impl ::windows::core::Abi for SCOPE_TABLE_ARM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SCOPE_TABLE_ARM {
     fn eq(&self, other: &Self) -> bool {
@@ -13564,6 +13831,7 @@ impl ::core::fmt::Debug for SCOPE_TABLE_ARM_0 {
 }
 unsafe impl ::windows::core::Abi for SCOPE_TABLE_ARM_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SCOPE_TABLE_ARM_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -13595,6 +13863,7 @@ impl ::core::fmt::Debug for SCOPE_TABLE_ARM64 {
 }
 unsafe impl ::windows::core::Abi for SCOPE_TABLE_ARM64 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SCOPE_TABLE_ARM64 {
     fn eq(&self, other: &Self) -> bool {
@@ -13628,6 +13897,7 @@ impl ::core::fmt::Debug for SCOPE_TABLE_ARM64_0 {
 }
 unsafe impl ::windows::core::Abi for SCOPE_TABLE_ARM64_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SCOPE_TABLE_ARM64_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -13663,6 +13933,7 @@ impl ::core::fmt::Debug for SCRUB_DATA_INPUT {
 }
 unsafe impl ::windows::core::Abi for SCRUB_DATA_INPUT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SCRUB_DATA_INPUT {
     fn eq(&self, other: &Self) -> bool {
@@ -13755,6 +14026,7 @@ impl ::core::fmt::Debug for SCRUB_DATA_OUTPUT {
 }
 unsafe impl ::windows::core::Abi for SCRUB_DATA_OUTPUT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SCRUB_DATA_OUTPUT {
     fn eq(&self, other: &Self) -> bool {
@@ -13794,6 +14066,7 @@ impl ::core::fmt::Debug for SCRUB_PARITY_EXTENT {
 }
 unsafe impl ::windows::core::Abi for SCRUB_PARITY_EXTENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SCRUB_PARITY_EXTENT {
     fn eq(&self, other: &Self) -> bool {
@@ -13828,6 +14101,7 @@ impl ::core::fmt::Debug for SCRUB_PARITY_EXTENT_DATA {
 }
 unsafe impl ::windows::core::Abi for SCRUB_PARITY_EXTENT_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SCRUB_PARITY_EXTENT_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -13871,6 +14145,7 @@ impl ::core::default::Default for SECTION_FLAGS {
 }
 unsafe impl ::windows::core::Abi for SECTION_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SECTION_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14029,6 +14304,7 @@ impl ::core::fmt::Debug for SECURITY_DESCRIPTOR_RELATIVE {
 }
 unsafe impl ::windows::core::Abi for SECURITY_DESCRIPTOR_RELATIVE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SECURITY_DESCRIPTOR_RELATIVE {
     fn eq(&self, other: &Self) -> bool {
@@ -14132,6 +14408,7 @@ impl ::core::fmt::Debug for SECURITY_OBJECT_AI_PARAMS {
 }
 unsafe impl ::windows::core::Abi for SECURITY_OBJECT_AI_PARAMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SECURITY_OBJECT_AI_PARAMS {
     fn eq(&self, other: &Self) -> bool {
@@ -14282,6 +14559,7 @@ impl ::core::fmt::Debug for SERVERSILO_BASIC_INFORMATION {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SERVERSILO_BASIC_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for SERVERSILO_BASIC_INFORMATION {
@@ -14324,6 +14602,7 @@ impl ::core::default::Default for SERVERSILO_STATE {
 }
 unsafe impl ::windows::core::Abi for SERVERSILO_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SERVERSILO_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14439,6 +14718,7 @@ impl ::core::default::Default for SE_IMAGE_SIGNATURE_TYPE {
 }
 unsafe impl ::windows::core::Abi for SE_IMAGE_SIGNATURE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SE_IMAGE_SIGNATURE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14476,6 +14756,7 @@ impl ::core::default::Default for SE_LEARNING_MODE_DATA_TYPE {
 }
 unsafe impl ::windows::core::Abi for SE_LEARNING_MODE_DATA_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SE_LEARNING_MODE_DATA_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14602,6 +14883,7 @@ impl ::core::clone::Clone for SE_TOKEN_USER {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security"))]
 unsafe impl ::windows::core::Abi for SE_TOKEN_USER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security"))]
 impl ::core::cmp::PartialEq for SE_TOKEN_USER {
@@ -14635,6 +14917,7 @@ impl ::core::clone::Clone for SE_TOKEN_USER_0 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security"))]
 unsafe impl ::windows::core::Abi for SE_TOKEN_USER_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security"))]
 impl ::core::cmp::PartialEq for SE_TOKEN_USER_0 {
@@ -14668,6 +14951,7 @@ impl ::core::clone::Clone for SE_TOKEN_USER_1 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security"))]
 unsafe impl ::windows::core::Abi for SE_TOKEN_USER_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security"))]
 impl ::core::cmp::PartialEq for SE_TOKEN_USER_1 {
@@ -14708,6 +14992,7 @@ impl ::core::fmt::Debug for SHARED_VIRTUAL_DISK_SUPPORT {
 }
 unsafe impl ::windows::core::Abi for SHARED_VIRTUAL_DISK_SUPPORT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SHARED_VIRTUAL_DISK_SUPPORT {
     fn eq(&self, other: &Self) -> bool {
@@ -14740,6 +15025,7 @@ impl ::core::fmt::Debug for SHUFFLE_FILE_DATA {
 }
 unsafe impl ::windows::core::Abi for SHUFFLE_FILE_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SHUFFLE_FILE_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -14789,6 +15075,7 @@ impl ::core::fmt::Debug for SILOOBJECT_BASIC_INFORMATION {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SILOOBJECT_BASIC_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for SILOOBJECT_BASIC_INFORMATION {
@@ -15353,6 +15640,7 @@ impl ::core::fmt::Debug for SUPPORTED_OS_INFO {
 }
 unsafe impl ::windows::core::Abi for SUPPORTED_OS_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SUPPORTED_OS_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -15430,6 +15718,7 @@ impl ::core::default::Default for SharedVirtualDiskHandleState {
 }
 unsafe impl ::windows::core::Abi for SharedVirtualDiskHandleState {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SharedVirtualDiskHandleState {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -15461,6 +15750,7 @@ impl ::core::default::Default for SharedVirtualDiskSupportType {
 }
 unsafe impl ::windows::core::Abi for SharedVirtualDiskSupportType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SharedVirtualDiskSupportType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -15489,6 +15779,7 @@ impl ::core::fmt::Debug for TAPE_CREATE_PARTITION {
 }
 unsafe impl ::windows::core::Abi for TAPE_CREATE_PARTITION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TAPE_CREATE_PARTITION {
     fn eq(&self, other: &Self) -> bool {
@@ -15582,6 +15873,7 @@ impl ::core::default::Default for TAPE_DRIVE_PROBLEM_TYPE {
 }
 unsafe impl ::windows::core::Abi for TAPE_DRIVE_PROBLEM_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TAPE_DRIVE_PROBLEM_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -15651,6 +15943,7 @@ impl ::core::fmt::Debug for TAPE_GET_DRIVE_PARAMETERS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for TAPE_GET_DRIVE_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for TAPE_GET_DRIVE_PARAMETERS {
@@ -15741,6 +16034,7 @@ impl ::core::default::Default for TAPE_GET_DRIVE_PARAMETERS_FEATURES_HIGH {
 }
 unsafe impl ::windows::core::Abi for TAPE_GET_DRIVE_PARAMETERS_FEATURES_HIGH {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TAPE_GET_DRIVE_PARAMETERS_FEATURES_HIGH {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -15802,6 +16096,7 @@ impl ::core::fmt::Debug for TAPE_GET_MEDIA_PARAMETERS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for TAPE_GET_MEDIA_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for TAPE_GET_MEDIA_PARAMETERS {
@@ -15856,6 +16151,7 @@ impl ::core::fmt::Debug for TAPE_SET_DRIVE_PARAMETERS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for TAPE_SET_DRIVE_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for TAPE_SET_DRIVE_PARAMETERS {
@@ -15889,6 +16185,7 @@ impl ::core::fmt::Debug for TAPE_SET_MEDIA_PARAMETERS {
 }
 unsafe impl ::windows::core::Abi for TAPE_SET_MEDIA_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TAPE_SET_MEDIA_PARAMETERS {
     fn eq(&self, other: &Self) -> bool {
@@ -15921,6 +16218,7 @@ impl ::core::fmt::Debug for TAPE_WMI_OPERATIONS {
 }
 unsafe impl ::windows::core::Abi for TAPE_WMI_OPERATIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TAPE_WMI_OPERATIONS {
     fn eq(&self, other: &Self) -> bool {
@@ -15983,6 +16281,7 @@ impl ::core::fmt::Debug for TOKEN_BNO_ISOLATION_INFORMATION {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for TOKEN_BNO_ISOLATION_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for TOKEN_BNO_ISOLATION_INFORMATION {
@@ -16021,6 +16320,7 @@ impl ::core::fmt::Debug for TOKEN_SID_INFORMATION {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for TOKEN_SID_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for TOKEN_SID_INFORMATION {
@@ -16061,6 +16361,7 @@ impl ::core::fmt::Debug for TRANSACTIONMANAGER_BASIC_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for TRANSACTIONMANAGER_BASIC_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TRANSACTIONMANAGER_BASIC_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -16106,6 +16407,7 @@ impl ::core::default::Default for TRANSACTIONMANAGER_INFORMATION_CLASS {
 }
 unsafe impl ::windows::core::Abi for TRANSACTIONMANAGER_INFORMATION_CLASS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TRANSACTIONMANAGER_INFORMATION_CLASS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -16131,6 +16433,7 @@ impl ::core::fmt::Debug for TRANSACTIONMANAGER_LOGPATH_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for TRANSACTIONMANAGER_LOGPATH_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TRANSACTIONMANAGER_LOGPATH_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -16161,6 +16464,7 @@ impl ::core::fmt::Debug for TRANSACTIONMANAGER_LOG_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for TRANSACTIONMANAGER_LOG_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TRANSACTIONMANAGER_LOG_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -16191,6 +16495,7 @@ impl ::core::fmt::Debug for TRANSACTIONMANAGER_OLDEST_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for TRANSACTIONMANAGER_OLDEST_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TRANSACTIONMANAGER_OLDEST_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -16225,6 +16530,7 @@ impl ::core::fmt::Debug for TRANSACTIONMANAGER_RECOVERY_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for TRANSACTIONMANAGER_RECOVERY_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TRANSACTIONMANAGER_RECOVERY_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -16261,6 +16567,7 @@ impl ::core::fmt::Debug for TRANSACTION_BASIC_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for TRANSACTION_BASIC_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TRANSACTION_BASIC_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -16296,6 +16603,7 @@ impl ::core::fmt::Debug for TRANSACTION_BIND_INFORMATION {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for TRANSACTION_BIND_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for TRANSACTION_BIND_INFORMATION {
@@ -16334,6 +16642,7 @@ impl ::core::fmt::Debug for TRANSACTION_ENLISTMENTS_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for TRANSACTION_ENLISTMENTS_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TRANSACTION_ENLISTMENTS_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -16365,6 +16674,7 @@ impl ::core::fmt::Debug for TRANSACTION_ENLISTMENT_PAIR {
 }
 unsafe impl ::windows::core::Abi for TRANSACTION_ENLISTMENT_PAIR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TRANSACTION_ENLISTMENT_PAIR {
     fn eq(&self, other: &Self) -> bool {
@@ -16406,6 +16716,7 @@ impl ::core::default::Default for TRANSACTION_INFORMATION_CLASS {
 }
 unsafe impl ::windows::core::Abi for TRANSACTION_INFORMATION_CLASS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TRANSACTION_INFORMATION_CLASS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -16430,6 +16741,7 @@ impl ::core::fmt::Debug for TRANSACTION_LIST_ENTRY {
 }
 unsafe impl ::windows::core::Abi for TRANSACTION_LIST_ENTRY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TRANSACTION_LIST_ENTRY {
     fn eq(&self, other: &Self) -> bool {
@@ -16461,6 +16773,7 @@ impl ::core::fmt::Debug for TRANSACTION_LIST_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for TRANSACTION_LIST_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TRANSACTION_LIST_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -16498,6 +16811,7 @@ impl ::core::fmt::Debug for TRANSACTION_PROPERTIES_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for TRANSACTION_PROPERTIES_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TRANSACTION_PROPERTIES_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -16541,6 +16855,7 @@ impl ::core::default::Default for TRANSACTION_STATE {
 }
 unsafe impl ::windows::core::Abi for TRANSACTION_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TRANSACTION_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -16565,6 +16880,7 @@ impl ::core::fmt::Debug for TRANSACTION_SUPERIOR_ENLISTMENT_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for TRANSACTION_SUPERIOR_ENLISTMENT_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TRANSACTION_SUPERIOR_ENLISTMENT_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -16609,6 +16925,7 @@ impl ::core::fmt::Debug for UMS_CREATE_THREAD_ATTRIBUTES {
 }
 unsafe impl ::windows::core::Abi for UMS_CREATE_THREAD_ATTRIBUTES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for UMS_CREATE_THREAD_ATTRIBUTES {
     fn eq(&self, other: &Self) -> bool {
@@ -16662,6 +16979,7 @@ impl ::core::default::Default for USER_ACTIVITY_PRESENCE {
 }
 unsafe impl ::windows::core::Abi for USER_ACTIVITY_PRESENCE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for USER_ACTIVITY_PRESENCE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -16795,6 +17113,7 @@ impl ::core::fmt::Debug for VolLockBroadcast {
 }
 unsafe impl ::windows::core::Abi for VolLockBroadcast {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VolLockBroadcast {
     fn eq(&self, other: &Self) -> bool {
@@ -16936,6 +17255,7 @@ impl ::core::fmt::Debug for XSAVE_CET_U_FORMAT {
 }
 unsafe impl ::windows::core::Abi for XSAVE_CET_U_FORMAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for XSAVE_CET_U_FORMAT {
     fn eq(&self, other: &Self) -> bool {
@@ -17012,6 +17332,7 @@ impl ::core::fmt::Debug for _DEV_BROADCAST_HEADER {
 }
 unsafe impl ::windows::core::Abi for _DEV_BROADCAST_HEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for _DEV_BROADCAST_HEADER {
     fn eq(&self, other: &Self) -> bool {
@@ -17048,6 +17369,7 @@ impl ::core::fmt::Debug for _DEV_BROADCAST_USERDEFINED {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for _DEV_BROADCAST_USERDEFINED {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for _DEV_BROADCAST_USERDEFINED {
@@ -17335,6 +17657,7 @@ impl ::core::fmt::Debug for remoteMETAFILEPICT {
 #[cfg(feature = "Win32_System_Com")]
 unsafe impl ::windows::core::Abi for remoteMETAFILEPICT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for remoteMETAFILEPICT {
@@ -17375,6 +17698,7 @@ impl ::core::fmt::Debug for userBITMAP {
 }
 unsafe impl ::windows::core::Abi for userBITMAP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for userBITMAP {
     fn eq(&self, other: &Self) -> bool {
@@ -17401,6 +17725,7 @@ impl ::core::clone::Clone for userCLIPFORMAT {
 }
 unsafe impl ::windows::core::Abi for userCLIPFORMAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for userCLIPFORMAT {
     fn eq(&self, other: &Self) -> bool {
@@ -17427,6 +17752,7 @@ impl ::core::clone::Clone for userCLIPFORMAT_0 {
 }
 unsafe impl ::windows::core::Abi for userCLIPFORMAT_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for userCLIPFORMAT_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -17453,6 +17779,7 @@ impl ::core::clone::Clone for userHBITMAP {
 }
 unsafe impl ::windows::core::Abi for userHBITMAP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for userHBITMAP {
     fn eq(&self, other: &Self) -> bool {
@@ -17480,6 +17807,7 @@ impl ::core::clone::Clone for userHBITMAP_0 {
 }
 unsafe impl ::windows::core::Abi for userHBITMAP_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for userHBITMAP_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -17510,6 +17838,7 @@ impl ::core::clone::Clone for userHENHMETAFILE {
 #[cfg(feature = "Win32_System_Com")]
 unsafe impl ::windows::core::Abi for userHENHMETAFILE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for userHENHMETAFILE {
@@ -17544,6 +17873,7 @@ impl ::core::clone::Clone for userHENHMETAFILE_0 {
 #[cfg(feature = "Win32_System_Com")]
 unsafe impl ::windows::core::Abi for userHENHMETAFILE_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for userHENHMETAFILE_0 {
@@ -17577,6 +17907,7 @@ impl ::core::clone::Clone for userHGLOBAL {
 #[cfg(feature = "Win32_System_Com")]
 unsafe impl ::windows::core::Abi for userHGLOBAL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for userHGLOBAL {
@@ -17611,6 +17942,7 @@ impl ::core::clone::Clone for userHGLOBAL_0 {
 #[cfg(feature = "Win32_System_Com")]
 unsafe impl ::windows::core::Abi for userHGLOBAL_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for userHGLOBAL_0 {
@@ -17644,6 +17976,7 @@ impl ::core::clone::Clone for userHMETAFILE {
 #[cfg(feature = "Win32_System_Com")]
 unsafe impl ::windows::core::Abi for userHMETAFILE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for userHMETAFILE {
@@ -17678,6 +18011,7 @@ impl ::core::clone::Clone for userHMETAFILE_0 {
 #[cfg(feature = "Win32_System_Com")]
 unsafe impl ::windows::core::Abi for userHMETAFILE_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for userHMETAFILE_0 {
@@ -17711,6 +18045,7 @@ impl ::core::clone::Clone for userHMETAFILEPICT {
 #[cfg(feature = "Win32_System_Com")]
 unsafe impl ::windows::core::Abi for userHMETAFILEPICT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for userHMETAFILEPICT {
@@ -17745,6 +18080,7 @@ impl ::core::clone::Clone for userHMETAFILEPICT_0 {
 #[cfg(feature = "Win32_System_Com")]
 unsafe impl ::windows::core::Abi for userHMETAFILEPICT_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for userHMETAFILEPICT_0 {
@@ -17778,6 +18114,7 @@ impl ::core::clone::Clone for userHPALETTE {
 #[cfg(feature = "Win32_Graphics_Gdi")]
 unsafe impl ::windows::core::Abi for userHPALETTE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Gdi")]
 impl ::core::cmp::PartialEq for userHPALETTE {
@@ -17812,6 +18149,7 @@ impl ::core::clone::Clone for userHPALETTE_0 {
 #[cfg(feature = "Win32_Graphics_Gdi")]
 unsafe impl ::windows::core::Abi for userHPALETTE_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Gdi")]
 impl ::core::cmp::PartialEq for userHPALETTE_0 {

@@ -18,6 +18,7 @@ impl ::core::fmt::Debug for BSTRBLOB {
 }
 unsafe impl ::windows::core::Abi for BSTRBLOB {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for BSTRBLOB {
     fn eq(&self, other: &Self) -> bool {
@@ -49,6 +50,7 @@ impl ::core::fmt::Debug for CABOOL {
 }
 unsafe impl ::windows::core::Abi for CABOOL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CABOOL {
     fn eq(&self, other: &Self) -> bool {
@@ -85,6 +87,7 @@ impl ::core::fmt::Debug for CABSTR {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for CABSTR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for CABSTR {
@@ -119,6 +122,7 @@ impl ::core::fmt::Debug for CABSTRBLOB {
 }
 unsafe impl ::windows::core::Abi for CABSTRBLOB {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CABSTRBLOB {
     fn eq(&self, other: &Self) -> bool {
@@ -150,6 +154,7 @@ impl ::core::fmt::Debug for CAC {
 }
 unsafe impl ::windows::core::Abi for CAC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CAC {
     fn eq(&self, other: &Self) -> bool {
@@ -181,6 +186,7 @@ impl ::core::fmt::Debug for CACLIPDATA {
 }
 unsafe impl ::windows::core::Abi for CACLIPDATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CACLIPDATA {
     fn eq(&self, other: &Self) -> bool {
@@ -212,6 +218,7 @@ impl ::core::fmt::Debug for CACLSID {
 }
 unsafe impl ::windows::core::Abi for CACLSID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CACLSID {
     fn eq(&self, other: &Self) -> bool {
@@ -243,6 +250,7 @@ impl ::core::fmt::Debug for CACY {
 }
 unsafe impl ::windows::core::Abi for CACY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CACY {
     fn eq(&self, other: &Self) -> bool {
@@ -274,6 +282,7 @@ impl ::core::fmt::Debug for CADATE {
 }
 unsafe impl ::windows::core::Abi for CADATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CADATE {
     fn eq(&self, other: &Self) -> bool {
@@ -305,6 +314,7 @@ impl ::core::fmt::Debug for CADBL {
 }
 unsafe impl ::windows::core::Abi for CADBL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CADBL {
     fn eq(&self, other: &Self) -> bool {
@@ -341,6 +351,7 @@ impl ::core::fmt::Debug for CAFILETIME {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for CAFILETIME {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for CAFILETIME {
@@ -375,6 +386,7 @@ impl ::core::fmt::Debug for CAFLT {
 }
 unsafe impl ::windows::core::Abi for CAFLT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CAFLT {
     fn eq(&self, other: &Self) -> bool {
@@ -406,6 +418,7 @@ impl ::core::fmt::Debug for CAH {
 }
 unsafe impl ::windows::core::Abi for CAH {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CAH {
     fn eq(&self, other: &Self) -> bool {
@@ -437,6 +450,7 @@ impl ::core::fmt::Debug for CAI {
 }
 unsafe impl ::windows::core::Abi for CAI {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CAI {
     fn eq(&self, other: &Self) -> bool {
@@ -468,6 +482,7 @@ impl ::core::fmt::Debug for CAL {
 }
 unsafe impl ::windows::core::Abi for CAL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CAL {
     fn eq(&self, other: &Self) -> bool {
@@ -499,6 +514,7 @@ impl ::core::fmt::Debug for CALPSTR {
 }
 unsafe impl ::windows::core::Abi for CALPSTR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CALPSTR {
     fn eq(&self, other: &Self) -> bool {
@@ -530,6 +546,7 @@ impl ::core::fmt::Debug for CALPWSTR {
 }
 unsafe impl ::windows::core::Abi for CALPWSTR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CALPWSTR {
     fn eq(&self, other: &Self) -> bool {
@@ -566,6 +583,7 @@ impl ::core::fmt::Debug for CAPROPVARIANT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for CAPROPVARIANT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for CAPROPVARIANT {
@@ -600,6 +618,7 @@ impl ::core::fmt::Debug for CASCODE {
 }
 unsafe impl ::windows::core::Abi for CASCODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CASCODE {
     fn eq(&self, other: &Self) -> bool {
@@ -631,6 +650,7 @@ impl ::core::fmt::Debug for CAUB {
 }
 unsafe impl ::windows::core::Abi for CAUB {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CAUB {
     fn eq(&self, other: &Self) -> bool {
@@ -662,6 +682,7 @@ impl ::core::fmt::Debug for CAUH {
 }
 unsafe impl ::windows::core::Abi for CAUH {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CAUH {
     fn eq(&self, other: &Self) -> bool {
@@ -693,6 +714,7 @@ impl ::core::fmt::Debug for CAUI {
 }
 unsafe impl ::windows::core::Abi for CAUI {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CAUI {
     fn eq(&self, other: &Self) -> bool {
@@ -724,6 +746,7 @@ impl ::core::fmt::Debug for CAUL {
 }
 unsafe impl ::windows::core::Abi for CAUL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CAUL {
     fn eq(&self, other: &Self) -> bool {
@@ -758,6 +781,7 @@ impl ::core::fmt::Debug for CLIPDATA {
 }
 unsafe impl ::windows::core::Abi for CLIPDATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CLIPDATA {
     fn eq(&self, other: &Self) -> bool {
@@ -923,6 +947,11 @@ pub unsafe fn GetHGlobalFromStream<'a, Param0: ::windows::core::IntoParam<'a, su
 #[doc = "*Required features: `\"Win32_System_Com_StructuredStorage\"`*"]
 #[repr(transparent)]
 pub struct IDirectWriterLock(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectWriterLock {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirectWriterLock {
     #[doc = "*Required features: `\"Win32_System_Com_StructuredStorage\"`*"]
     pub unsafe fn WaitForWriteAccess(&self, dwtimeout: u32) -> ::windows::core::Result<()> {
@@ -957,11 +986,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDire
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirectWriterLock {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirectWriterLock {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -988,6 +1012,11 @@ pub struct IDirectWriterLock_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Com_StructuredStorage\"`*"]
 #[repr(transparent)]
 pub struct IEnumSTATPROPSETSTG(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnumSTATPROPSETSTG {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnumSTATPROPSETSTG {
     #[doc = "*Required features: `\"Win32_System_Com_StructuredStorage\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -1028,11 +1057,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnum
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnumSTATPROPSETSTG {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnumSTATPROPSETSTG {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1063,6 +1087,11 @@ pub struct IEnumSTATPROPSETSTG_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Com_StructuredStorage\"`*"]
 #[repr(transparent)]
 pub struct IEnumSTATPROPSTG(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnumSTATPROPSTG {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnumSTATPROPSTG {
     #[doc = "*Required features: `\"Win32_System_Com_StructuredStorage\"`*"]
     pub unsafe fn Next(&self, rgelt: &mut [STATPROPSTG], pceltfetched: *mut u32) -> ::windows::core::HRESULT {
@@ -1102,11 +1131,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnum
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnumSTATPROPSTG {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnumSTATPROPSTG {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1134,6 +1158,11 @@ pub struct IEnumSTATPROPSTG_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Com_StructuredStorage\"`*"]
 #[repr(transparent)]
 pub struct IEnumSTATSTG(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnumSTATSTG {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnumSTATSTG {
     #[doc = "*Required features: `\"Win32_System_Com_StructuredStorage\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -1174,11 +1203,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnum
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnumSTATSTG {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnumSTATSTG {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1209,6 +1233,11 @@ pub struct IEnumSTATSTG_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Com_StructuredStorage\"`*"]
 #[repr(transparent)]
 pub struct IFillLockBytes(::windows::core::IUnknown);
+impl ::core::clone::Clone for IFillLockBytes {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IFillLockBytes {
     #[doc = "*Required features: `\"Win32_System_Com_StructuredStorage\"`*"]
     pub unsafe fn FillAppend(&self, pv: *const ::core::ffi::c_void, cb: u32) -> ::windows::core::Result<u32> {
@@ -1250,11 +1279,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IFill
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IFillLockBytes {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IFillLockBytes {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1285,6 +1309,11 @@ pub struct IFillLockBytes_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Com_StructuredStorage\"`*"]
 #[repr(transparent)]
 pub struct ILayoutStorage(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILayoutStorage {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ILayoutStorage {
     #[doc = "*Required features: `\"Win32_System_Com_StructuredStorage\"`*"]
     pub unsafe fn LayoutScript(&self, pstoragelayout: &[super::StorageLayout], glfinterleavedflag: u32) -> ::windows::core::Result<()> {
@@ -1327,11 +1356,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ILayo
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ILayoutStorage {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ILayoutStorage {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1360,6 +1384,11 @@ pub struct ILayoutStorage_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Com_StructuredStorage\"`*"]
 #[repr(transparent)]
 pub struct ILockBytes(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILockBytes {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ILockBytes {
     #[doc = "*Required features: `\"Win32_System_Com_StructuredStorage\"`*"]
     pub unsafe fn ReadAt(&self, uloffset: u64, pv: *mut ::core::ffi::c_void, cb: u32, pcbread: *mut u32) -> ::windows::core::Result<()> {
@@ -1412,11 +1441,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ILock
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ILockBytes {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ILockBytes {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1450,6 +1474,11 @@ pub struct ILockBytes_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Com_StructuredStorage\"`*"]
 #[repr(transparent)]
 pub struct IPersistStorage(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPersistStorage {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPersistStorage {
     #[doc = "*Required features: `\"Win32_System_Com_StructuredStorage\"`*"]
     pub unsafe fn GetClassID(&self) -> ::windows::core::Result<::windows::core::GUID> {
@@ -1522,11 +1551,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::IPersist> for &'a IPersistStorage
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPersistStorage {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPersistStorage {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1559,6 +1583,11 @@ pub struct IPersistStorage_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Com_StructuredStorage\"`*"]
 #[repr(transparent)]
 pub struct IPropertyBag(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPropertyBag {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPropertyBag {
     #[doc = "*Required features: `\"Win32_System_Com_StructuredStorage\"`, `\"Win32_Foundation\"`, `\"Win32_System_Ole\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Ole"))]
@@ -1589,11 +1618,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IProperty
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPropertyBag {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IPropertyBag {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IPropertyBag {
@@ -1627,6 +1651,11 @@ pub struct IPropertyBag_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Com_StructuredStorage\"`*"]
 #[repr(transparent)]
 pub struct IPropertyBag2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPropertyBag2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPropertyBag2 {
     #[doc = "*Required features: `\"Win32_System_Com_StructuredStorage\"`, `\"Win32_Foundation\"`, `\"Win32_System_Ole\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Ole"))]
@@ -1672,11 +1701,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IProp
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPropertyBag2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPropertyBag2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1711,6 +1735,11 @@ pub struct IPropertyBag2_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Com_StructuredStorage\"`*"]
 #[repr(transparent)]
 pub struct IPropertySetStorage(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPropertySetStorage {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPropertySetStorage {
     #[doc = "*Required features: `\"Win32_System_Com_StructuredStorage\"`*"]
     pub unsafe fn Create(&self, rfmtid: *const ::windows::core::GUID, pclsid: *const ::windows::core::GUID, grfflags: u32, grfmode: u32) -> ::windows::core::Result<IPropertyStorage> {
@@ -1752,11 +1781,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IProp
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPropertySetStorage {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPropertySetStorage {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1784,6 +1808,11 @@ pub struct IPropertySetStorage_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Com_StructuredStorage\"`*"]
 #[repr(transparent)]
 pub struct IPropertyStorage(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPropertyStorage {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPropertyStorage {
     #[doc = "*Required features: `\"Win32_System_Com_StructuredStorage\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -1860,11 +1889,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IProp
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPropertyStorage {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPropertyStorage {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1912,6 +1936,11 @@ pub struct IPropertyStorage_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Com_StructuredStorage\"`*"]
 #[repr(transparent)]
 pub struct IRootStorage(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRootStorage {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRootStorage {
     #[doc = "*Required features: `\"Win32_System_Com_StructuredStorage\"`*"]
     pub unsafe fn SwitchToFile<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, pszfile: Param0) -> ::windows::core::Result<()> {
@@ -1938,11 +1967,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IRoot
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IRootStorage {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IRootStorage {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1967,6 +1991,11 @@ pub struct IRootStorage_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Com_StructuredStorage\"`*"]
 #[repr(transparent)]
 pub struct IStorage(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStorage {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IStorage {
     #[doc = "*Required features: `\"Win32_System_Com_StructuredStorage\"`*"]
     pub unsafe fn CreateStream<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, pwcsname: Param0, grfmode: STGM, reserved1: u32, reserved2: u32) -> ::windows::core::Result<super::IStream> {
@@ -2054,11 +2083,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IStor
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IStorage {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IStorage {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2123,6 +2147,7 @@ impl ::core::default::Default for LOCKTYPE {
 }
 unsafe impl ::windows::core::Abi for LOCKTYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for LOCKTYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2147,6 +2172,7 @@ impl ::core::fmt::Debug for OLESTREAM {
 }
 unsafe impl ::windows::core::Abi for OLESTREAM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for OLESTREAM {
     fn eq(&self, other: &Self) -> bool {
@@ -2178,6 +2204,7 @@ impl ::core::fmt::Debug for OLESTREAMVTBL {
 }
 unsafe impl ::windows::core::Abi for OLESTREAMVTBL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for OLESTREAMVTBL {
     fn eq(&self, other: &Self) -> bool {
@@ -2335,6 +2362,7 @@ impl ::core::default::Default for PIDMSI_STATUS_VALUE {
 }
 unsafe impl ::windows::core::Abi for PIDMSI_STATUS_VALUE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PIDMSI_STATUS_VALUE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2426,6 +2454,7 @@ impl ::core::fmt::Debug for PROPBAG2 {
 }
 unsafe impl ::windows::core::Abi for PROPBAG2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROPBAG2 {
     fn eq(&self, other: &Self) -> bool {
@@ -2466,6 +2495,7 @@ impl ::core::clone::Clone for PROPSPEC {
 }
 unsafe impl ::windows::core::Abi for PROPSPEC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROPSPEC {
     fn eq(&self, other: &Self) -> bool {
@@ -2492,6 +2522,7 @@ impl ::core::clone::Clone for PROPSPEC_0 {
 }
 unsafe impl ::windows::core::Abi for PROPSPEC_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROPSPEC_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -2525,6 +2556,7 @@ impl ::core::default::Default for PROPSPEC_KIND {
 }
 unsafe impl ::windows::core::Abi for PROPSPEC_KIND {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PROPSPEC_KIND {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2546,6 +2578,7 @@ impl ::core::clone::Clone for PROPVARIANT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PROPVARIANT {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for PROPVARIANT {
@@ -2577,6 +2610,7 @@ impl ::core::clone::Clone for PROPVARIANT_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PROPVARIANT_0 {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for PROPVARIANT_0 {
@@ -2611,6 +2645,7 @@ impl ::core::clone::Clone for PROPVARIANT_0_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PROPVARIANT_0_0 {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for PROPVARIANT_0_0 {
@@ -2713,6 +2748,7 @@ impl ::core::clone::Clone for PROPVARIANT_0_0_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PROPVARIANT_0_0_0 {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for PROPVARIANT_0_0_0 {
@@ -2839,6 +2875,7 @@ impl ::core::fmt::Debug for RemSNB {
 }
 unsafe impl ::windows::core::Abi for RemSNB {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RemSNB {
     fn eq(&self, other: &Self) -> bool {
@@ -2870,6 +2907,7 @@ impl ::core::fmt::Debug for SERIALIZEDPROPERTYVALUE {
 }
 unsafe impl ::windows::core::Abi for SERIALIZEDPROPERTYVALUE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SERIALIZEDPROPERTYVALUE {
     fn eq(&self, other: &Self) -> bool {
@@ -2905,6 +2943,7 @@ impl ::core::default::Default for STATFLAG {
 }
 unsafe impl ::windows::core::Abi for STATFLAG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for STATFLAG {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2940,6 +2979,7 @@ impl ::core::fmt::Debug for STATPROPSETSTG {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for STATPROPSETSTG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for STATPROPSETSTG {
@@ -2975,6 +3015,7 @@ impl ::core::fmt::Debug for STATPROPSTG {
 }
 unsafe impl ::windows::core::Abi for STATPROPSTG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for STATPROPSTG {
     fn eq(&self, other: &Self) -> bool {
@@ -3014,6 +3055,7 @@ impl ::core::default::Default for STGC {
 }
 unsafe impl ::windows::core::Abi for STGC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for STGC {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3077,6 +3119,7 @@ impl ::core::default::Default for STGFMT {
 }
 unsafe impl ::windows::core::Abi for STGFMT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for STGFMT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3136,6 +3179,7 @@ impl ::core::default::Default for STGM {
 }
 unsafe impl ::windows::core::Abi for STGM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for STGM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3193,6 +3237,7 @@ impl ::core::default::Default for STGMOVE {
 }
 unsafe impl ::windows::core::Abi for STGMOVE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for STGMOVE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3220,6 +3265,7 @@ impl ::core::fmt::Debug for STGOPTIONS {
 }
 unsafe impl ::windows::core::Abi for STGOPTIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for STGOPTIONS {
     fn eq(&self, other: &Self) -> bool {
@@ -3580,6 +3626,7 @@ impl ::core::fmt::Debug for VERSIONEDSTREAM {
 }
 unsafe impl ::windows::core::Abi for VERSIONEDSTREAM {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VERSIONEDSTREAM {
     fn eq(&self, other: &Self) -> bool {

@@ -2,6 +2,11 @@
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IStoreAcquireLicenseResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStoreAcquireLicenseResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IStoreAcquireLicenseResult {
     type Vtable = IStoreAcquireLicenseResult_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xfbd7946d_f040_4cb3_9a39_29bcecdbe22d);
@@ -16,6 +21,11 @@ pub struct IStoreAcquireLicenseResult_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IStoreAppLicense(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStoreAppLicense {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IStoreAppLicense {
     type Vtable = IStoreAppLicense_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf389f9de_73c0_45ce_9bab_b2fe3e5eafd3);
@@ -46,6 +56,11 @@ pub struct IStoreAppLicense_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IStoreAppLicense2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStoreAppLicense2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IStoreAppLicense2 {
     type Vtable = IStoreAppLicense2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb4666e91_4443_40b3_993f_28904435bdc6);
@@ -59,6 +74,11 @@ pub struct IStoreAppLicense2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IStoreAvailability(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStoreAvailability {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IStoreAvailability {
     type Vtable = IStoreAvailability_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xfa060325_0ffd_4493_ad43_f1f9918f69fa);
@@ -86,6 +106,11 @@ pub struct IStoreAvailability_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IStoreCanAcquireLicenseResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStoreCanAcquireLicenseResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IStoreCanAcquireLicenseResult {
     type Vtable = IStoreCanAcquireLicenseResult_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x3a693db3_0088_482f_86d5_bd46522663ad);
@@ -101,6 +126,11 @@ pub struct IStoreCanAcquireLicenseResult_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IStoreCollectionData(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStoreCollectionData {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IStoreCollectionData {
     type Vtable = IStoreCollectionData_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x8aa4c3b3_5bb3_441a_2ab4_4dab73d5ce67);
@@ -133,6 +163,11 @@ pub struct IStoreCollectionData_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IStoreConsumableResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStoreConsumableResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IStoreConsumableResult {
     type Vtable = IStoreConsumableResult_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xea5dab72_6a00_4052_be5b_bfdab4433352);
@@ -149,6 +184,11 @@ pub struct IStoreConsumableResult_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IStoreContext(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStoreContext {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IStoreContext {
     type Vtable = IStoreContext_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xac98b6be_f4fd_4912_babd_5035e5e8bcab);
@@ -245,6 +285,11 @@ pub struct IStoreContext_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IStoreContext2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStoreContext2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IStoreContext2 {
     type Vtable = IStoreContext2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x18bc54da_7bd9_452c_9116_3bbd06ffc63a);
@@ -261,6 +306,11 @@ pub struct IStoreContext2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IStoreContext3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStoreContext3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IStoreContext3 {
     type Vtable = IStoreContext3_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe26226ca_1a01_4730_85a6_ecc896e4ae38);
@@ -326,6 +376,11 @@ pub struct IStoreContext3_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IStoreContext4(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStoreContext4 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IStoreContext4 {
     type Vtable = IStoreContext4_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xaf9c6f69_bea1_4bf4_8e74_ae03e206c6b0);
@@ -346,6 +401,11 @@ pub struct IStoreContext4_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IStoreContextStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStoreContextStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IStoreContextStatics {
     type Vtable = IStoreContextStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9c06ee5f_15c0_4e72_9330_d6191cebd19c);
@@ -363,6 +423,11 @@ pub struct IStoreContextStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IStoreImage(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStoreImage {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IStoreImage {
     type Vtable = IStoreImage_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x081fd248_adb4_4b64_a993_784789926ed5);
@@ -383,6 +448,11 @@ pub struct IStoreImage_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IStoreLicense(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStoreLicense {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IStoreLicense {
     type Vtable = IStoreLicense_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x26dc9579_4c4f_4f30_bc89_649f60e36055);
@@ -403,6 +473,11 @@ pub struct IStoreLicense_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IStorePackageInstallOptions(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStorePackageInstallOptions {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IStorePackageInstallOptions {
     type Vtable = IStorePackageInstallOptions_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1d3d630c_0ccd_44dd_8c59_80810a729973);
@@ -417,6 +492,11 @@ pub struct IStorePackageInstallOptions_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IStorePackageLicense(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStorePackageLicense {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IStorePackageLicense {
     type Vtable = IStorePackageLicense_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x0c465714_14e1_4973_bd14_f77724271e99);
@@ -443,6 +523,11 @@ pub struct IStorePackageLicense_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IStorePackageUpdate(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStorePackageUpdate {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IStorePackageUpdate {
     type Vtable = IStorePackageUpdate_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x140fa150_3cbf_4a35_b91f_48271c31b072);
@@ -460,6 +545,11 @@ pub struct IStorePackageUpdate_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IStorePackageUpdateResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStorePackageUpdateResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IStorePackageUpdateResult {
     type Vtable = IStorePackageUpdateResult_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe79142ed_61f9_4893_b4fe_cf191603af7b);
@@ -477,6 +567,11 @@ pub struct IStorePackageUpdateResult_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IStorePackageUpdateResult2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStorePackageUpdateResult2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IStorePackageUpdateResult2 {
     type Vtable = IStorePackageUpdateResult2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x071d012e_bc62_4f2e_87ea_99d801aeaf98);
@@ -493,6 +588,11 @@ pub struct IStorePackageUpdateResult2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IStorePrice(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStorePrice {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IStorePrice {
     type Vtable = IStorePrice_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x55ba94c4_15f1_407c_8f06_006380f4df0b);
@@ -514,6 +614,11 @@ pub struct IStorePrice_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IStoreProduct(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStoreProduct {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IStoreProduct {
     type Vtable = IStoreProduct_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x320e2c52_d760_450a_a42b_67d1e901ac90);
@@ -568,6 +673,11 @@ pub struct IStoreProduct_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IStoreProductOptions(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStoreProductOptions {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IStoreProductOptions {
     type Vtable = IStoreProductOptions_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x5b34a0f9_a113_4811_8326_16199c927f31);
@@ -584,6 +694,11 @@ pub struct IStoreProductOptions_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IStoreProductPagedQueryResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStoreProductPagedQueryResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IStoreProductPagedQueryResult {
     type Vtable = IStoreProductPagedQueryResult_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc92718c5_4dd5_4869_a462_ecc6872e43c5);
@@ -606,6 +721,11 @@ pub struct IStoreProductPagedQueryResult_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IStoreProductQueryResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStoreProductQueryResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IStoreProductQueryResult {
     type Vtable = IStoreProductQueryResult_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd805e6c5_d456_4ff6_8049_9076d5165f73);
@@ -623,6 +743,11 @@ pub struct IStoreProductQueryResult_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IStoreProductResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStoreProductResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IStoreProductResult {
     type Vtable = IStoreProductResult_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb7674f73_3c87_4ee1_8201_f428359bd3af);
@@ -637,6 +762,11 @@ pub struct IStoreProductResult_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IStorePurchaseProperties(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStorePurchaseProperties {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IStorePurchaseProperties {
     type Vtable = IStorePurchaseProperties_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x836278f3_ff87_4364_a5b4_fd2153ebe43b);
@@ -653,6 +783,11 @@ pub struct IStorePurchaseProperties_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IStorePurchasePropertiesFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStorePurchasePropertiesFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IStorePurchasePropertiesFactory {
     type Vtable = IStorePurchasePropertiesFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa768f59e_fefd_489f_9a17_22a593e68b9d);
@@ -666,6 +801,11 @@ pub struct IStorePurchasePropertiesFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IStorePurchaseResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStorePurchaseResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IStorePurchaseResult {
     type Vtable = IStorePurchaseResult_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xadd28552_f96a_463d_a7bb_c20b4fca6952);
@@ -680,6 +820,11 @@ pub struct IStorePurchaseResult_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IStoreQueueItem(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStoreQueueItem {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IStoreQueueItem {
     type Vtable = IStoreQueueItem_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x56d5c32b_f830_4293_9188_cad2dcde7357);
@@ -712,6 +857,11 @@ pub struct IStoreQueueItem_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IStoreQueueItem2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStoreQueueItem2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IStoreQueueItem2 {
     type Vtable = IStoreQueueItem2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x69491ca8_1ad4_447c_ad8c_a95035f64d82);
@@ -736,6 +886,11 @@ pub struct IStoreQueueItem2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IStoreQueueItemCompletedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStoreQueueItemCompletedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IStoreQueueItemCompletedEventArgs {
     type Vtable = IStoreQueueItemCompletedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1247df6c_b44a_439b_bb07_1d3003d005c2);
@@ -749,6 +904,11 @@ pub struct IStoreQueueItemCompletedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IStoreQueueItemStatus(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStoreQueueItemStatus {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IStoreQueueItemStatus {
     type Vtable = IStoreQueueItemStatus_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9bd6796f_9cc3_4ec3_b2ef_7be433b30174);
@@ -765,6 +925,11 @@ pub struct IStoreQueueItemStatus_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IStoreRateAndReviewResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStoreRateAndReviewResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IStoreRateAndReviewResult {
     type Vtable = IStoreRateAndReviewResult_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9d209d56_a6b5_4121_9b61_ee6d0fbdbdbb);
@@ -781,6 +946,11 @@ pub struct IStoreRateAndReviewResult_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IStoreRequestHelperStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStoreRequestHelperStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IStoreRequestHelperStatics {
     type Vtable = IStoreRequestHelperStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x6ce5e5f9_a0c9_4b2c_96a6_a171c630038d);
@@ -797,6 +967,11 @@ pub struct IStoreRequestHelperStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IStoreSendRequestResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStoreSendRequestResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IStoreSendRequestResult {
     type Vtable = IStoreSendRequestResult_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc73abe60_8272_4502_8a69_6e75153a4299);
@@ -811,6 +986,11 @@ pub struct IStoreSendRequestResult_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IStoreSendRequestResult2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStoreSendRequestResult2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IStoreSendRequestResult2 {
     type Vtable = IStoreSendRequestResult2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x2901296f_c0b0_49d0_8e8d_aa940af9c10b);
@@ -827,6 +1007,11 @@ pub struct IStoreSendRequestResult2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IStoreSku(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStoreSku {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IStoreSku {
     type Vtable = IStoreSku_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x397e6f55_4440_4f03_863c_91f3fec83d79);
@@ -879,6 +1064,11 @@ pub struct IStoreSku_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IStoreSubscriptionInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStoreSubscriptionInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IStoreSubscriptionInfo {
     type Vtable = IStoreSubscriptionInfo_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x4189776a_0559_43ac_a9c6_3ab0011fb8eb);
@@ -896,6 +1086,11 @@ pub struct IStoreSubscriptionInfo_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IStoreUninstallStorePackageResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStoreUninstallStorePackageResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IStoreUninstallStorePackageResult {
     type Vtable = IStoreUninstallStorePackageResult_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9fca39fd_126f_4cda_b801_1346b8d0a260);
@@ -910,6 +1105,11 @@ pub struct IStoreUninstallStorePackageResult_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IStoreVideo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStoreVideo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IStoreVideo {
     type Vtable = IStoreVideo_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf26cb184_6f5e_4dc2_886c_3c63083c2f94);
@@ -949,11 +1149,6 @@ impl StoreAcquireLicenseResult {
         }
     }
 }
-impl ::core::clone::Clone for StoreAcquireLicenseResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for StoreAcquireLicenseResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -967,7 +1162,6 @@ impl ::core::fmt::Debug for StoreAcquireLicenseResult {
 }
 unsafe impl ::windows::core::RuntimeType for StoreAcquireLicenseResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Services.Store.StoreAcquireLicenseResult;{fbd7946d-f040-4cb3-9a39-29bcecdbe22d})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1109,11 +1303,6 @@ impl StoreAppLicense {
         }
     }
 }
-impl ::core::clone::Clone for StoreAppLicense {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for StoreAppLicense {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1127,7 +1316,6 @@ impl ::core::fmt::Debug for StoreAppLicense {
 }
 unsafe impl ::windows::core::RuntimeType for StoreAppLicense {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Services.Store.StoreAppLicense;{f389f9de-73c0-45ce-9bab-b2fe3e5eafd3})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1237,11 +1425,6 @@ impl StoreAvailability {
         }
     }
 }
-impl ::core::clone::Clone for StoreAvailability {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for StoreAvailability {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1255,7 +1438,6 @@ impl ::core::fmt::Debug for StoreAvailability {
 }
 unsafe impl ::windows::core::RuntimeType for StoreAvailability {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Services.Store.StoreAvailability;{fa060325-0ffd-4493-ad43-f1f9918f69fa})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1338,11 +1520,6 @@ impl StoreCanAcquireLicenseResult {
         }
     }
 }
-impl ::core::clone::Clone for StoreCanAcquireLicenseResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for StoreCanAcquireLicenseResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1356,7 +1533,6 @@ impl ::core::fmt::Debug for StoreCanAcquireLicenseResult {
 }
 unsafe impl ::windows::core::RuntimeType for StoreCanAcquireLicenseResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Services.Store.StoreCanAcquireLicenseResult;{3a693db3-0088-482f-86d5-bd46522663ad})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1434,6 +1610,7 @@ impl ::core::default::Default for StoreCanLicenseStatus {
 }
 unsafe impl ::windows::core::Abi for StoreCanLicenseStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for StoreCanLicenseStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1442,7 +1619,6 @@ impl ::core::fmt::Debug for StoreCanLicenseStatus {
 }
 unsafe impl ::windows::core::RuntimeType for StoreCanLicenseStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Services.Store.StoreCanLicenseStatus;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1520,11 +1696,6 @@ impl StoreCollectionData {
         }
     }
 }
-impl ::core::clone::Clone for StoreCollectionData {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for StoreCollectionData {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1538,7 +1709,6 @@ impl ::core::fmt::Debug for StoreCollectionData {
 }
 unsafe impl ::windows::core::RuntimeType for StoreCollectionData {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Services.Store.StoreCollectionData;{8aa4c3b3-5bb3-441a-2ab4-4dab73d5ce67})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1629,11 +1799,6 @@ impl StoreConsumableResult {
         }
     }
 }
-impl ::core::clone::Clone for StoreConsumableResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for StoreConsumableResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1647,7 +1812,6 @@ impl ::core::fmt::Debug for StoreConsumableResult {
 }
 unsafe impl ::windows::core::RuntimeType for StoreConsumableResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Services.Store.StoreConsumableResult;{ea5dab72-6a00-4052-be5b-bfdab4433352})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1724,6 +1888,7 @@ impl ::core::default::Default for StoreConsumableStatus {
 }
 unsafe impl ::windows::core::Abi for StoreConsumableStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for StoreConsumableStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1732,7 +1897,6 @@ impl ::core::fmt::Debug for StoreConsumableStatus {
 }
 unsafe impl ::windows::core::RuntimeType for StoreConsumableStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Services.Store.StoreConsumableStatus;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2100,11 +2264,6 @@ impl StoreContext {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for StoreContext {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for StoreContext {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2118,7 +2277,6 @@ impl ::core::fmt::Debug for StoreContext {
 }
 unsafe impl ::windows::core::RuntimeType for StoreContext {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Services.Store.StoreContext;{ac98b6be-f4fd-4912-babd-5035e5e8bcab})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2197,6 +2355,7 @@ impl ::core::default::Default for StoreDurationUnit {
 }
 unsafe impl ::windows::core::Abi for StoreDurationUnit {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for StoreDurationUnit {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2205,7 +2364,6 @@ impl ::core::fmt::Debug for StoreDurationUnit {
 }
 unsafe impl ::windows::core::RuntimeType for StoreDurationUnit {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Services.Store.StoreDurationUnit;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2256,11 +2414,6 @@ impl StoreImage {
         }
     }
 }
-impl ::core::clone::Clone for StoreImage {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for StoreImage {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2274,7 +2427,6 @@ impl ::core::fmt::Debug for StoreImage {
 }
 unsafe impl ::windows::core::RuntimeType for StoreImage {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Services.Store.StoreImage;{081fd248-adb4-4b64-a993-784789926ed5})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2374,11 +2526,6 @@ impl StoreLicense {
         }
     }
 }
-impl ::core::clone::Clone for StoreLicense {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for StoreLicense {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2392,7 +2539,6 @@ impl ::core::fmt::Debug for StoreLicense {
 }
 unsafe impl ::windows::core::RuntimeType for StoreLicense {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Services.Store.StoreLicense;{26dc9579-4c4f-4f30-bc89-649f60e36055})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2471,11 +2617,6 @@ impl StorePackageInstallOptions {
         unsafe { (::windows::core::Interface::vtable(this).SetAllowForcedAppRestart)(::core::mem::transmute_copy(this), value).ok() }
     }
 }
-impl ::core::clone::Clone for StorePackageInstallOptions {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for StorePackageInstallOptions {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2489,7 +2630,6 @@ impl ::core::fmt::Debug for StorePackageInstallOptions {
 }
 unsafe impl ::windows::core::RuntimeType for StorePackageInstallOptions {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Services.Store.StorePackageInstallOptions;{1d3d630c-0ccd-44dd-8c59-80810a729973})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2591,11 +2731,6 @@ impl StorePackageLicense {
         unsafe { (::windows::core::Interface::vtable(this).ReleaseLicense)(::core::mem::transmute_copy(this)).ok() }
     }
 }
-impl ::core::clone::Clone for StorePackageLicense {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for StorePackageLicense {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2609,7 +2744,6 @@ impl ::core::fmt::Debug for StorePackageLicense {
 }
 unsafe impl ::windows::core::RuntimeType for StorePackageLicense {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Services.Store.StorePackageLicense;{0c465714-14e1-4973-bd14-f77724271e99})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2711,11 +2845,6 @@ impl StorePackageUpdate {
         }
     }
 }
-impl ::core::clone::Clone for StorePackageUpdate {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for StorePackageUpdate {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2729,7 +2858,6 @@ impl ::core::fmt::Debug for StorePackageUpdate {
 }
 unsafe impl ::windows::core::RuntimeType for StorePackageUpdate {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Services.Store.StorePackageUpdate;{140fa150-3cbf-4a35-b91f-48271c31b072})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2814,11 +2942,6 @@ impl StorePackageUpdateResult {
         }
     }
 }
-impl ::core::clone::Clone for StorePackageUpdateResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for StorePackageUpdateResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2832,7 +2955,6 @@ impl ::core::fmt::Debug for StorePackageUpdateResult {
 }
 unsafe impl ::windows::core::RuntimeType for StorePackageUpdateResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Services.Store.StorePackageUpdateResult;{e79142ed-61f9-4893-b4fe-cf191603af7b})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2914,6 +3036,7 @@ impl ::core::default::Default for StorePackageUpdateState {
 }
 unsafe impl ::windows::core::Abi for StorePackageUpdateState {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for StorePackageUpdateState {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2922,7 +3045,6 @@ impl ::core::fmt::Debug for StorePackageUpdateState {
 }
 unsafe impl ::windows::core::RuntimeType for StorePackageUpdateState {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Services.Store.StorePackageUpdateState;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2956,10 +3078,10 @@ impl ::core::fmt::Debug for StorePackageUpdateStatus {
 }
 unsafe impl ::windows::core::Abi for StorePackageUpdateStatus {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 unsafe impl ::windows::core::RuntimeType for StorePackageUpdateStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"struct(Windows.Services.Store.StorePackageUpdateStatus;string;u8;u8;f8;f8;enum(Windows.Services.Store.StorePackageUpdateState;i4))");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(from.clone())
     }
@@ -3029,11 +3151,6 @@ impl StorePrice {
         }
     }
 }
-impl ::core::clone::Clone for StorePrice {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for StorePrice {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3047,7 +3164,6 @@ impl ::core::fmt::Debug for StorePrice {
 }
 unsafe impl ::windows::core::RuntimeType for StorePrice {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Services.Store.StorePrice;{55ba94c4-15f1-407c-8f06-006380f4df0b})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3258,11 +3374,6 @@ impl StoreProduct {
         }
     }
 }
-impl ::core::clone::Clone for StoreProduct {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for StoreProduct {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3276,7 +3387,6 @@ impl ::core::fmt::Debug for StoreProduct {
 }
 unsafe impl ::windows::core::RuntimeType for StoreProduct {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Services.Store.StoreProduct;{320e2c52-d760-450a-a42b-67d1e901ac90})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3351,11 +3461,6 @@ impl StoreProductOptions {
         }
     }
 }
-impl ::core::clone::Clone for StoreProductOptions {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for StoreProductOptions {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3369,7 +3474,6 @@ impl ::core::fmt::Debug for StoreProductOptions {
 }
 unsafe impl ::windows::core::RuntimeType for StoreProductOptions {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Services.Store.StoreProductOptions;{5b34a0f9-a113-4811-8326-16199c927f31})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3462,11 +3566,6 @@ impl StoreProductPagedQueryResult {
         }
     }
 }
-impl ::core::clone::Clone for StoreProductPagedQueryResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for StoreProductPagedQueryResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3480,7 +3579,6 @@ impl ::core::fmt::Debug for StoreProductPagedQueryResult {
 }
 unsafe impl ::windows::core::RuntimeType for StoreProductPagedQueryResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Services.Store.StoreProductPagedQueryResult;{c92718c5-4dd5-4869-a462-ecc6872e43c5})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3556,11 +3654,6 @@ impl StoreProductQueryResult {
         }
     }
 }
-impl ::core::clone::Clone for StoreProductQueryResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for StoreProductQueryResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3574,7 +3667,6 @@ impl ::core::fmt::Debug for StoreProductQueryResult {
 }
 unsafe impl ::windows::core::RuntimeType for StoreProductQueryResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Services.Store.StoreProductQueryResult;{d805e6c5-d456-4ff6-8049-9076d5165f73})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3649,11 +3741,6 @@ impl StoreProductResult {
         }
     }
 }
-impl ::core::clone::Clone for StoreProductResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for StoreProductResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3667,7 +3754,6 @@ impl ::core::fmt::Debug for StoreProductResult {
 }
 unsafe impl ::windows::core::RuntimeType for StoreProductResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Services.Store.StoreProductResult;{b7674f73-3c87-4ee1-8201-f428359bd3af})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3771,11 +3857,6 @@ impl StorePurchaseProperties {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for StorePurchaseProperties {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for StorePurchaseProperties {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3789,7 +3870,6 @@ impl ::core::fmt::Debug for StorePurchaseProperties {
 }
 unsafe impl ::windows::core::RuntimeType for StorePurchaseProperties {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Services.Store.StorePurchaseProperties;{836278f3-ff87-4364-a5b4-fd2153ebe43b})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3864,11 +3944,6 @@ impl StorePurchaseResult {
         }
     }
 }
-impl ::core::clone::Clone for StorePurchaseResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for StorePurchaseResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3882,7 +3957,6 @@ impl ::core::fmt::Debug for StorePurchaseResult {
 }
 unsafe impl ::windows::core::RuntimeType for StorePurchaseResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Services.Store.StorePurchaseResult;{add28552-f96a-463d-a7bb-c20b4fca6952})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3960,6 +4034,7 @@ impl ::core::default::Default for StorePurchaseStatus {
 }
 unsafe impl ::windows::core::Abi for StorePurchaseStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for StorePurchaseStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3968,7 +4043,6 @@ impl ::core::fmt::Debug for StorePurchaseStatus {
 }
 unsafe impl ::windows::core::RuntimeType for StorePurchaseStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Services.Store.StorePurchaseStatus;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -4067,11 +4141,6 @@ impl StoreQueueItem {
         }
     }
 }
-impl ::core::clone::Clone for StoreQueueItem {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for StoreQueueItem {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4085,7 +4154,6 @@ impl ::core::fmt::Debug for StoreQueueItem {
 }
 unsafe impl ::windows::core::RuntimeType for StoreQueueItem {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Services.Store.StoreQueueItem;{56d5c32b-f830-4293-9188-cad2dcde7357})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4152,11 +4220,6 @@ impl StoreQueueItemCompletedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for StoreQueueItemCompletedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for StoreQueueItemCompletedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4170,7 +4233,6 @@ impl ::core::fmt::Debug for StoreQueueItemCompletedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for StoreQueueItemCompletedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Services.Store.StoreQueueItemCompletedEventArgs;{1247df6c-b44a-439b-bb07-1d3003d005c2})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4258,6 +4320,7 @@ impl ::core::default::Default for StoreQueueItemExtendedState {
 }
 unsafe impl ::windows::core::Abi for StoreQueueItemExtendedState {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for StoreQueueItemExtendedState {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4266,7 +4329,6 @@ impl ::core::fmt::Debug for StoreQueueItemExtendedState {
 }
 unsafe impl ::windows::core::RuntimeType for StoreQueueItemExtendedState {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Services.Store.StoreQueueItemExtendedState;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -4293,6 +4355,7 @@ impl ::core::default::Default for StoreQueueItemKind {
 }
 unsafe impl ::windows::core::Abi for StoreQueueItemKind {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for StoreQueueItemKind {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4301,7 +4364,6 @@ impl ::core::fmt::Debug for StoreQueueItemKind {
 }
 unsafe impl ::windows::core::RuntimeType for StoreQueueItemKind {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Services.Store.StoreQueueItemKind;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -4330,6 +4392,7 @@ impl ::core::default::Default for StoreQueueItemState {
 }
 unsafe impl ::windows::core::Abi for StoreQueueItemState {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for StoreQueueItemState {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4338,7 +4401,6 @@ impl ::core::fmt::Debug for StoreQueueItemState {
 }
 unsafe impl ::windows::core::RuntimeType for StoreQueueItemState {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Services.Store.StoreQueueItemState;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -4380,11 +4442,6 @@ impl StoreQueueItemStatus {
         }
     }
 }
-impl ::core::clone::Clone for StoreQueueItemStatus {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for StoreQueueItemStatus {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4398,7 +4455,6 @@ impl ::core::fmt::Debug for StoreQueueItemStatus {
 }
 unsafe impl ::windows::core::RuntimeType for StoreQueueItemStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Services.Store.StoreQueueItemStatus;{9bd6796f-9cc3-4ec3-b2ef-7be433b30174})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4489,11 +4545,6 @@ impl StoreRateAndReviewResult {
         }
     }
 }
-impl ::core::clone::Clone for StoreRateAndReviewResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for StoreRateAndReviewResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4507,7 +4558,6 @@ impl ::core::fmt::Debug for StoreRateAndReviewResult {
 }
 unsafe impl ::windows::core::RuntimeType for StoreRateAndReviewResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Services.Store.StoreRateAndReviewResult;{9d209d56-a6b5-4121-9b61-ee6d0fbdbdbb})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4584,6 +4634,7 @@ impl ::core::default::Default for StoreRateAndReviewStatus {
 }
 unsafe impl ::windows::core::Abi for StoreRateAndReviewStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for StoreRateAndReviewStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4592,7 +4643,6 @@ impl ::core::fmt::Debug for StoreRateAndReviewStatus {
 }
 unsafe impl ::windows::core::RuntimeType for StoreRateAndReviewStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Services.Store.StoreRateAndReviewStatus;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -4647,11 +4697,6 @@ impl StoreSendRequestResult {
         }
     }
 }
-impl ::core::clone::Clone for StoreSendRequestResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for StoreSendRequestResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4665,7 +4710,6 @@ impl ::core::fmt::Debug for StoreSendRequestResult {
 }
 unsafe impl ::windows::core::RuntimeType for StoreSendRequestResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Services.Store.StoreSendRequestResult;{c73abe60-8272-4502-8a69-6e75153a4299})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4883,11 +4927,6 @@ impl StoreSku {
         }
     }
 }
-impl ::core::clone::Clone for StoreSku {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for StoreSku {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4901,7 +4940,6 @@ impl ::core::fmt::Debug for StoreSku {
 }
 unsafe impl ::windows::core::RuntimeType for StoreSku {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Services.Store.StoreSku;{397e6f55-4440-4f03-863c-91f3fec83d79})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -5000,11 +5038,6 @@ impl StoreSubscriptionInfo {
         }
     }
 }
-impl ::core::clone::Clone for StoreSubscriptionInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for StoreSubscriptionInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5018,7 +5051,6 @@ impl ::core::fmt::Debug for StoreSubscriptionInfo {
 }
 unsafe impl ::windows::core::RuntimeType for StoreSubscriptionInfo {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Services.Store.StoreSubscriptionInfo;{4189776a-0559-43ac-a9c6-3ab0011fb8eb})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -5093,11 +5125,6 @@ impl StoreUninstallStorePackageResult {
         }
     }
 }
-impl ::core::clone::Clone for StoreUninstallStorePackageResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for StoreUninstallStorePackageResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5111,7 +5138,6 @@ impl ::core::fmt::Debug for StoreUninstallStorePackageResult {
 }
 unsafe impl ::windows::core::RuntimeType for StoreUninstallStorePackageResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Services.Store.StoreUninstallStorePackageResult;{9fca39fd-126f-4cda-b801-1346b8d0a260})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -5189,6 +5215,7 @@ impl ::core::default::Default for StoreUninstallStorePackageStatus {
 }
 unsafe impl ::windows::core::Abi for StoreUninstallStorePackageStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for StoreUninstallStorePackageStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5197,7 +5224,6 @@ impl ::core::fmt::Debug for StoreUninstallStorePackageStatus {
 }
 unsafe impl ::windows::core::RuntimeType for StoreUninstallStorePackageStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Services.Store.StoreUninstallStorePackageStatus;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -5256,11 +5282,6 @@ impl StoreVideo {
         }
     }
 }
-impl ::core::clone::Clone for StoreVideo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for StoreVideo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5274,7 +5295,6 @@ impl ::core::fmt::Debug for StoreVideo {
 }
 unsafe impl ::windows::core::RuntimeType for StoreVideo {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Services.Store.StoreVideo;{f26cb184-6f5e-4dc2-886c-3c63083c2f94})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

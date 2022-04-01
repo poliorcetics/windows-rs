@@ -1317,6 +1317,11 @@ pub unsafe fn HWND_UserUnmarshal64(param0: *const u32, param1: *const u8, param2
 #[doc = "*Required features: `\"Win32_System_Com_Marshal\"`*"]
 #[repr(transparent)]
 pub struct IMarshal(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMarshal {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMarshal {
     #[doc = "*Required features: `\"Win32_System_Com_Marshal\"`*"]
     pub unsafe fn GetUnmarshalClass(&self, riid: *const ::windows::core::GUID, pv: *const ::core::ffi::c_void, dwdestcontext: u32, pvdestcontext: *mut ::core::ffi::c_void, mshlflags: u32, pcid: *mut ::windows::core::GUID) -> ::windows::core::Result<()> {
@@ -1363,11 +1368,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMars
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMarshal {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMarshal {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1397,6 +1397,11 @@ pub struct IMarshal_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Com_Marshal\"`*"]
 #[repr(transparent)]
 pub struct IMarshal2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMarshal2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMarshal2 {
     #[doc = "*Required features: `\"Win32_System_Com_Marshal\"`*"]
     pub unsafe fn GetUnmarshalClass(&self, riid: *const ::windows::core::GUID, pv: *const ::core::ffi::c_void, dwdestcontext: u32, pvdestcontext: *mut ::core::ffi::c_void, mshlflags: u32, pcid: *mut ::windows::core::GUID) -> ::windows::core::Result<()> {
@@ -1463,11 +1468,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMarshal> for &'a IMarshal2 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMarshal2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMarshal2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1491,6 +1491,11 @@ pub struct IMarshal2_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Com_Marshal\"`*"]
 #[repr(transparent)]
 pub struct IMarshalingStream(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMarshalingStream {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMarshalingStream {
     #[doc = "*Required features: `\"Win32_System_Com_Marshal\"`*"]
     pub unsafe fn Read(&self, pv: *mut ::core::ffi::c_void, cb: u32, pcbread: *mut u32) -> ::windows::core::HRESULT {
@@ -1604,11 +1609,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::IStream> for IMarshalingStream {
 impl<'a> ::windows::core::IntoParam<'a, super::IStream> for &'a IMarshalingStream {
     fn into_param(self) -> ::windows::core::Param<'a, super::IStream> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IMarshalingStream {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IMarshalingStream {
@@ -1877,6 +1877,7 @@ impl ::core::default::Default for STDMSHLFLAGS {
 }
 unsafe impl ::windows::core::Abi for STDMSHLFLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for STDMSHLFLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

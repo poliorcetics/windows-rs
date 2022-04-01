@@ -32,6 +32,7 @@ impl ::core::fmt::Debug for COLUMNSTATUS {
 }
 unsafe impl ::windows::core::Abi for COLUMNSTATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for COLUMNSTATUS {
     fn eq(&self, other: &Self) -> bool {
@@ -65,6 +66,7 @@ impl ::core::clone::Clone for CProperty {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for CProperty {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for CProperty {
@@ -99,6 +101,7 @@ impl ::core::clone::Clone for CProperty_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for CProperty_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for CProperty_0 {
@@ -312,6 +315,7 @@ impl ::core::fmt::Debug for HHNTRACK {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_UI_Controls"))]
 unsafe impl ::windows::core::Abi for HHNTRACK {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_UI_Controls"))]
 impl ::core::cmp::PartialEq for HHNTRACK {
@@ -351,6 +355,7 @@ impl ::core::fmt::Debug for HHN_NOTIFY {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_UI_Controls"))]
 unsafe impl ::windows::core::Abi for HHN_NOTIFY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_UI_Controls"))]
 impl ::core::cmp::PartialEq for HHN_NOTIFY {
@@ -544,6 +549,7 @@ impl ::core::fmt::Debug for HH_AKLINK {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for HH_AKLINK {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for HH_AKLINK {
@@ -593,6 +599,7 @@ impl ::core::fmt::Debug for HH_ENUM_CAT {
 }
 unsafe impl ::windows::core::Abi for HH_ENUM_CAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HH_ENUM_CAT {
     fn eq(&self, other: &Self) -> bool {
@@ -633,6 +640,7 @@ impl ::core::fmt::Debug for HH_ENUM_IT {
 }
 unsafe impl ::windows::core::Abi for HH_ENUM_IT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HH_ENUM_IT {
     fn eq(&self, other: &Self) -> bool {
@@ -677,6 +685,7 @@ impl ::core::fmt::Debug for HH_FTS_QUERY {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for HH_FTS_QUERY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for HH_FTS_QUERY {
@@ -714,6 +723,7 @@ impl ::core::clone::Clone for HH_GLOBAL_PROPERTY {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com", feature = "Win32_System_Ole"))]
 unsafe impl ::windows::core::Abi for HH_GLOBAL_PROPERTY {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com", feature = "Win32_System_Ole"))]
 impl ::core::cmp::PartialEq for HH_GLOBAL_PROPERTY {
@@ -756,6 +766,7 @@ impl ::core::default::Default for HH_GPROPID {
 }
 unsafe impl ::windows::core::Abi for HH_GPROPID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HH_GPROPID {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -803,6 +814,7 @@ impl ::core::fmt::Debug for HH_POPUP {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for HH_POPUP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for HH_POPUP {
@@ -856,6 +868,7 @@ impl ::core::fmt::Debug for HH_SET_INFOTYPE {
 }
 unsafe impl ::windows::core::Abi for HH_SET_INFOTYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HH_SET_INFOTYPE {
     fn eq(&self, other: &Self) -> bool {
@@ -993,6 +1006,7 @@ impl ::core::fmt::Debug for HH_WINTYPE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for HH_WINTYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for HH_WINTYPE {
@@ -1059,6 +1073,11 @@ pub const IDTB_ZOOM: u32 = 222u32;
 #[doc = "*Required features: `\"Win32_Data_HtmlHelp\"`*"]
 #[repr(transparent)]
 pub struct IITDatabase(::windows::core::IUnknown);
+impl ::core::clone::Clone for IITDatabase {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IITDatabase {
     #[doc = "*Required features: `\"Win32_Data_HtmlHelp\"`*"]
     pub unsafe fn Open<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param1: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, lpszhost: Param0, lpszmoniker: Param1, dwflags: u32) -> ::windows::core::Result<()> {
@@ -1102,11 +1121,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IITDa
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IITDatabase {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IITDatabase {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1141,6 +1155,12 @@ pub struct IITGroup(pub u8);
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IITPropList(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IITPropList {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IITPropList {
     #[doc = "*Required features: `\"Win32_Data_HtmlHelp\"`, `\"Win32_System_Com\"`*"]
@@ -1328,12 +1348,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IPersistStrea
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IITPropList {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IITPropList {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1402,6 +1416,11 @@ pub struct IITQuery(pub u8);
 #[doc = "*Required features: `\"Win32_Data_HtmlHelp\"`*"]
 #[repr(transparent)]
 pub struct IITResultSet(::windows::core::IUnknown);
+impl ::core::clone::Clone for IITResultSet {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IITResultSet {
     #[doc = "*Required features: `\"Win32_Data_HtmlHelp\"`*"]
     pub unsafe fn SetColumnPriority(&self, lcolumnindex: i32, columnpriority: PRIORITY) -> ::windows::core::Result<()> {
@@ -1546,11 +1565,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IITRe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IITResultSet {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IITResultSet {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1616,6 +1630,11 @@ pub const IITWBC_BREAK_AND_STEM: u32 = 2u32;
 #[doc = "*Required features: `\"Win32_Data_HtmlHelp\"`*"]
 #[repr(transparent)]
 pub struct IITWordWheel(::windows::core::IUnknown);
+impl ::core::clone::Clone for IITWordWheel {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IITWordWheel {
     #[doc = "*Required features: `\"Win32_Data_HtmlHelp\"`*"]
     pub unsafe fn Open<'a, Param0: ::windows::core::IntoParam<'a, IITDatabase>, Param1: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, lpitdb: Param0, lpszmoniker: Param1, dwflags: WORD_WHEEL_OPEN_FLAGS) -> ::windows::core::Result<()> {
@@ -1691,11 +1710,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IITWo
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IITWordWheel {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IITWordWheel {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1735,6 +1749,11 @@ pub struct IITWordWheel_Vtbl {
 #[doc = "*Required features: `\"Win32_Data_HtmlHelp\"`*"]
 #[repr(transparent)]
 pub struct IStemSink(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStemSink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IStemSink {
     #[doc = "*Required features: `\"Win32_Data_HtmlHelp\"`*"]
     pub unsafe fn PutAltWord<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, pwcinbuf: Param0, cwc: u32) -> ::windows::core::Result<()> {
@@ -1765,11 +1784,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IStem
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IStemSink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IStemSink {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1795,6 +1809,11 @@ pub struct IStemSink_Vtbl {
 #[doc = "*Required features: `\"Win32_Data_HtmlHelp\"`*"]
 #[repr(transparent)]
 pub struct IStemmerConfig(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStemmerConfig {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IStemmerConfig {
     #[doc = "*Required features: `\"Win32_Data_HtmlHelp\"`*"]
     pub unsafe fn SetLocaleInfo(&self, dwcodepageid: u32, lcid: u32) -> ::windows::core::Result<()> {
@@ -1838,11 +1857,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IStem
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IStemmerConfig {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IStemmerConfig {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1884,6 +1898,11 @@ pub const IT_INCLUSIVE: i32 = 0i32;
 #[doc = "*Required features: `\"Win32_Data_HtmlHelp\"`*"]
 #[repr(transparent)]
 pub struct IWordBreakerConfig(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWordBreakerConfig {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWordBreakerConfig {
     #[doc = "*Required features: `\"Win32_Data_HtmlHelp\"`*"]
     pub unsafe fn SetLocaleInfo(&self, dwcodepageid: u32, lcid: u32) -> ::windows::core::Result<()> {
@@ -1944,11 +1963,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IWordBrea
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWordBreakerConfig {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IWordBreakerConfig {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IWordBreakerConfig {
@@ -2016,6 +2030,7 @@ impl ::core::default::Default for PRIORITY {
 }
 unsafe impl ::windows::core::Abi for PRIORITY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PRIORITY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2049,6 +2064,7 @@ impl ::core::fmt::Debug for ROWSTATUS {
 }
 unsafe impl ::windows::core::Abi for ROWSTATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ROWSTATUS {
     fn eq(&self, other: &Self) -> bool {
@@ -2124,6 +2140,7 @@ impl ::core::default::Default for WORD_WHEEL_OPEN_FLAGS {
 }
 unsafe impl ::windows::core::Abi for WORD_WHEEL_OPEN_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WORD_WHEEL_OPEN_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

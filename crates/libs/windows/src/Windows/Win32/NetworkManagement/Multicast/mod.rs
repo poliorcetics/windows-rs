@@ -13,6 +13,7 @@ impl ::core::clone::Clone for IPNG_ADDRESS {
 }
 unsafe impl ::windows::core::Abi for IPNG_ADDRESS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IPNG_ADDRESS {
     fn eq(&self, other: &Self) -> bool {
@@ -52,6 +53,7 @@ impl ::core::fmt::Debug for MCAST_CLIENT_UID {
 }
 unsafe impl ::windows::core::Abi for MCAST_CLIENT_UID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MCAST_CLIENT_UID {
     fn eq(&self, other: &Self) -> bool {
@@ -84,6 +86,7 @@ impl ::core::clone::Clone for MCAST_LEASE_REQUEST {
 }
 unsafe impl ::windows::core::Abi for MCAST_LEASE_REQUEST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MCAST_LEASE_REQUEST {
     fn eq(&self, other: &Self) -> bool {
@@ -113,6 +116,7 @@ impl ::core::clone::Clone for MCAST_LEASE_RESPONSE {
 }
 unsafe impl ::windows::core::Abi for MCAST_LEASE_RESPONSE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MCAST_LEASE_RESPONSE {
     fn eq(&self, other: &Self) -> bool {
@@ -140,6 +144,7 @@ impl ::core::clone::Clone for MCAST_SCOPE_CTX {
 }
 unsafe impl ::windows::core::Abi for MCAST_SCOPE_CTX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MCAST_SCOPE_CTX {
     fn eq(&self, other: &Self) -> bool {
@@ -172,6 +177,7 @@ impl ::core::clone::Clone for MCAST_SCOPE_ENTRY {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MCAST_SCOPE_ENTRY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MCAST_SCOPE_ENTRY {

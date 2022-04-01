@@ -4,6 +4,11 @@ pub mod UI;
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICredentialFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICredentialFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICredentialFactory {
     type Vtable = ICredentialFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x54ef13a1_bf26_47b5_97dd_de779b7cad58);
@@ -17,6 +22,11 @@ pub struct ICredentialFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IKeyCredential(::windows::core::IUnknown);
+impl ::core::clone::Clone for IKeyCredential {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IKeyCredential {
     type Vtable = IKeyCredential_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9585ef8d_457b_4847_b11a_fa960bbdb138);
@@ -46,6 +56,11 @@ pub struct IKeyCredential_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IKeyCredentialAttestationResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for IKeyCredentialAttestationResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IKeyCredentialAttestationResult {
     type Vtable = IKeyCredentialAttestationResult_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x78aab3a1_a3c1_4103_b6cc_472c44171cbb);
@@ -67,6 +82,11 @@ pub struct IKeyCredentialAttestationResult_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IKeyCredentialManagerStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IKeyCredentialManagerStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IKeyCredentialManagerStatics {
     type Vtable = IKeyCredentialManagerStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x6aac468b_0ef1_4ce0_8290_4106da6a63b5);
@@ -99,6 +119,11 @@ pub struct IKeyCredentialManagerStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IKeyCredentialOperationResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for IKeyCredentialOperationResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IKeyCredentialOperationResult {
     type Vtable = IKeyCredentialOperationResult_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf53786c1_5261_4cdd_976d_cc909ac71620);
@@ -116,6 +141,11 @@ pub struct IKeyCredentialOperationResult_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IKeyCredentialRetrievalResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for IKeyCredentialRetrievalResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IKeyCredentialRetrievalResult {
     type Vtable = IKeyCredentialRetrievalResult_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x58cd7703_8d87_4249_9b58_f6598cc9644e);
@@ -130,6 +160,11 @@ pub struct IKeyCredentialRetrievalResult_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPasswordCredential(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPasswordCredential {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPasswordCredential {
     type Vtable = IPasswordCredential_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x6ab18989_c720_41a7_a6c1_feadb36329a0);
@@ -153,6 +188,11 @@ pub struct IPasswordCredential_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPasswordVault(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPasswordVault {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPasswordVault {
     type Vtable = IPasswordVault_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x61fd2c0b_c8d4_48c1_a54f_bc5a64205af2);
@@ -180,6 +220,11 @@ pub struct IPasswordVault_Vtbl {
 #[doc = "*Required features: `\"Security_Credentials\"`*"]
 #[repr(transparent)]
 pub struct IWebAccount(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWebAccount {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWebAccount {
     #[doc = "*Required features: `\"Security_Credentials\"`*"]
     pub fn WebAccountProvider(&self) -> ::windows::core::Result<WebAccountProvider> {
@@ -246,11 +291,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWebAccount {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWebAccount {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -264,7 +304,6 @@ impl ::core::fmt::Debug for IWebAccount {
 }
 unsafe impl ::windows::core::RuntimeType for IWebAccount {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{69473eb2-8031-49be-80bb-96cb46d99aba}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -284,6 +323,11 @@ pub struct IWebAccount_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWebAccount2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWebAccount2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWebAccount2 {
     type Vtable = IWebAccount2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x7b56d6f8_990b_4eb5_94a7_5621f3a8b824);
@@ -313,6 +357,11 @@ pub struct IWebAccount2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWebAccountFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWebAccountFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWebAccountFactory {
     type Vtable = IWebAccountFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xac9afb39_1de9_4e92_b78f_0581a87f6e5c);
@@ -326,6 +375,11 @@ pub struct IWebAccountFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWebAccountProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWebAccountProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWebAccountProvider {
     type Vtable = IWebAccountProvider_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x29dcc8c3_7ab9_4a7c_a336_b942f9dbf7c7);
@@ -344,6 +398,11 @@ pub struct IWebAccountProvider_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWebAccountProvider2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWebAccountProvider2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWebAccountProvider2 {
     type Vtable = IWebAccountProvider2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x4a01eb05_4e42_41d4_b518_e008a5163614);
@@ -358,6 +417,11 @@ pub struct IWebAccountProvider2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWebAccountProvider3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWebAccountProvider3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWebAccountProvider3 {
     type Vtable = IWebAccountProvider3_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xda1c518b_970d_4d49_825c_f2706f8ca7fe);
@@ -374,6 +438,11 @@ pub struct IWebAccountProvider3_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWebAccountProvider4(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWebAccountProvider4 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWebAccountProvider4 {
     type Vtable = IWebAccountProvider4_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x718fd8db_e796_4210_b74e_84d29894b080);
@@ -387,6 +456,11 @@ pub struct IWebAccountProvider4_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWebAccountProviderFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWebAccountProviderFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWebAccountProviderFactory {
     type Vtable = IWebAccountProviderFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1d767df1_e1e1_4b9a_a774_5c7c7e3bf371);
@@ -449,11 +523,6 @@ impl KeyCredential {
         }
     }
 }
-impl ::core::clone::Clone for KeyCredential {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for KeyCredential {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -467,7 +536,6 @@ impl ::core::fmt::Debug for KeyCredential {
 }
 unsafe impl ::windows::core::RuntimeType for KeyCredential {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Security.Credentials.KeyCredential;{9585ef8d-457b-4847-b11a-fa960bbdb138})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -552,11 +620,6 @@ impl KeyCredentialAttestationResult {
         }
     }
 }
-impl ::core::clone::Clone for KeyCredentialAttestationResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for KeyCredentialAttestationResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -570,7 +633,6 @@ impl ::core::fmt::Debug for KeyCredentialAttestationResult {
 }
 unsafe impl ::windows::core::RuntimeType for KeyCredentialAttestationResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Security.Credentials.KeyCredentialAttestationResult;{78aab3a1-a3c1-4103-b6cc-472c44171cbb})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -647,6 +709,7 @@ impl ::core::default::Default for KeyCredentialAttestationStatus {
 }
 unsafe impl ::windows::core::Abi for KeyCredentialAttestationStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KeyCredentialAttestationStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -655,7 +718,6 @@ impl ::core::fmt::Debug for KeyCredentialAttestationStatus {
 }
 unsafe impl ::windows::core::RuntimeType for KeyCredentialAttestationStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Security.Credentials.KeyCredentialAttestationStatus;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -681,6 +743,7 @@ impl ::core::default::Default for KeyCredentialCreationOption {
 }
 unsafe impl ::windows::core::Abi for KeyCredentialCreationOption {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KeyCredentialCreationOption {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -689,7 +752,6 @@ impl ::core::fmt::Debug for KeyCredentialCreationOption {
 }
 unsafe impl ::windows::core::RuntimeType for KeyCredentialCreationOption {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Security.Credentials.KeyCredentialCreationOption;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -768,11 +830,6 @@ impl KeyCredentialOperationResult {
         }
     }
 }
-impl ::core::clone::Clone for KeyCredentialOperationResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for KeyCredentialOperationResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -786,7 +843,6 @@ impl ::core::fmt::Debug for KeyCredentialOperationResult {
 }
 unsafe impl ::windows::core::RuntimeType for KeyCredentialOperationResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Security.Credentials.KeyCredentialOperationResult;{f53786c1-5261-4cdd-976d-cc909ac71620})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -861,11 +917,6 @@ impl KeyCredentialRetrievalResult {
         }
     }
 }
-impl ::core::clone::Clone for KeyCredentialRetrievalResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for KeyCredentialRetrievalResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -879,7 +930,6 @@ impl ::core::fmt::Debug for KeyCredentialRetrievalResult {
 }
 unsafe impl ::windows::core::RuntimeType for KeyCredentialRetrievalResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Security.Credentials.KeyCredentialRetrievalResult;{58cd7703-8d87-4249-9b58-f6598cc9644e})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -959,6 +1009,7 @@ impl ::core::default::Default for KeyCredentialStatus {
 }
 unsafe impl ::windows::core::Abi for KeyCredentialStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KeyCredentialStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -967,7 +1018,6 @@ impl ::core::fmt::Debug for KeyCredentialStatus {
 }
 unsafe impl ::windows::core::RuntimeType for KeyCredentialStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Security.Credentials.KeyCredentialStatus;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1049,11 +1099,6 @@ impl PasswordCredential {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for PasswordCredential {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PasswordCredential {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1067,7 +1112,6 @@ impl ::core::fmt::Debug for PasswordCredential {
 }
 unsafe impl ::windows::core::RuntimeType for PasswordCredential {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Security.Credentials.PasswordCredential;{6ab18989-c720-41a7-a6c1-feadb36329a0})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1217,12 +1261,6 @@ impl PasswordCredentialPropertyStore {
     }
 }
 #[cfg(feature = "Foundation_Collections")]
-impl ::core::clone::Clone for PasswordCredentialPropertyStore {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Foundation_Collections")]
 impl ::core::cmp::PartialEq for PasswordCredentialPropertyStore {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1239,7 +1277,6 @@ impl ::core::fmt::Debug for PasswordCredentialPropertyStore {
 #[cfg(feature = "Foundation_Collections")]
 unsafe impl ::windows::core::RuntimeType for PasswordCredentialPropertyStore {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Security.Credentials.PasswordCredentialPropertyStore;{8a43ed9f-f4e6-4421-acf9-1dab2986820c})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1482,11 +1519,6 @@ impl PasswordVault {
         }
     }
 }
-impl ::core::clone::Clone for PasswordVault {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PasswordVault {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1500,7 +1532,6 @@ impl ::core::fmt::Debug for PasswordVault {
 }
 unsafe impl ::windows::core::RuntimeType for PasswordVault {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Security.Credentials.PasswordVault;{61fd2c0b-c8d4-48c1-a54f-bc5a64205af2})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1639,11 +1670,6 @@ impl WebAccount {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for WebAccount {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for WebAccount {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1657,7 +1683,6 @@ impl ::core::fmt::Debug for WebAccount {
 }
 unsafe impl ::windows::core::RuntimeType for WebAccount {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Security.Credentials.WebAccount;{69473eb2-8031-49be-80bb-96cb46d99aba})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1756,6 +1781,7 @@ impl ::core::default::Default for WebAccountPictureSize {
 }
 unsafe impl ::windows::core::Abi for WebAccountPictureSize {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WebAccountPictureSize {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1764,7 +1790,6 @@ impl ::core::fmt::Debug for WebAccountPictureSize {
 }
 unsafe impl ::windows::core::RuntimeType for WebAccountPictureSize {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Security.Credentials.WebAccountPictureSize;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1845,11 +1870,6 @@ impl WebAccountProvider {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for WebAccountProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for WebAccountProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1863,7 +1883,6 @@ impl ::core::fmt::Debug for WebAccountProvider {
 }
 unsafe impl ::windows::core::RuntimeType for WebAccountProvider {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Security.Credentials.WebAccountProvider;{29dcc8c3-7ab9-4a7c-a336-b942f9dbf7c7})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1939,6 +1958,7 @@ impl ::core::default::Default for WebAccountState {
 }
 unsafe impl ::windows::core::Abi for WebAccountState {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WebAccountState {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1947,7 +1967,6 @@ impl ::core::fmt::Debug for WebAccountState {
 }
 unsafe impl ::windows::core::RuntimeType for WebAccountState {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Security.Credentials.WebAccountState;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }

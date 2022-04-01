@@ -39,6 +39,7 @@ impl ::core::default::Default for ApplicationProfileModes {
 }
 unsafe impl ::windows::core::Abi for ApplicationProfileModes {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ApplicationProfileModes {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -75,7 +76,6 @@ impl ::core::ops::Not for ApplicationProfileModes {
 }
 unsafe impl ::windows::core::RuntimeType for ApplicationProfileModes {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Phone.ApplicationModel.ApplicationProfileModes;u4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -83,6 +83,11 @@ unsafe impl ::windows::core::RuntimeType for ApplicationProfileModes {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IApplicationProfileStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IApplicationProfileStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IApplicationProfileStatics {
     type Vtable = IApplicationProfileStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd5008ab4_7e7a_11e1_a7f2_b0a14824019b);

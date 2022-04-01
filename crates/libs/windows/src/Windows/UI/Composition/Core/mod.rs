@@ -54,11 +54,6 @@ impl CompositorController {
         unsafe { (::windows::core::Interface::vtable(this).RemoveCommitNeeded)(::core::mem::transmute_copy(this), token.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for CompositorController {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for CompositorController {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -72,7 +67,6 @@ impl ::core::fmt::Debug for CompositorController {
 }
 unsafe impl ::windows::core::RuntimeType for CompositorController {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Composition.Core.CompositorController;{2d75f35a-70a7-4395-ba2d-cef0b18399f9})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -155,6 +149,11 @@ unsafe impl ::core::marker::Sync for CompositorController {}
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICompositorController(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICompositorController {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICompositorController {
     type Vtable = ICompositorController_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x2d75f35a_70a7_4395_ba2d_cef0b18399f9);

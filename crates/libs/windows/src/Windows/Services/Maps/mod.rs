@@ -40,11 +40,6 @@ impl EnhancedWaypoint {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for EnhancedWaypoint {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for EnhancedWaypoint {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -58,7 +53,6 @@ impl ::core::fmt::Debug for EnhancedWaypoint {
 }
 unsafe impl ::windows::core::RuntimeType for EnhancedWaypoint {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Services.Maps.EnhancedWaypoint;{ed268c74-5913-11e6-8b77-86f30ca893d3})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -115,6 +109,11 @@ unsafe impl ::core::marker::Sync for EnhancedWaypoint {}
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IEnhancedWaypoint(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnhancedWaypoint {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IEnhancedWaypoint {
     type Vtable = IEnhancedWaypoint_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xed268c74_5913_11e6_8b77_86f30ca893d3);
@@ -132,6 +131,11 @@ pub struct IEnhancedWaypoint_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IEnhancedWaypointFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnhancedWaypointFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IEnhancedWaypointFactory {
     type Vtable = IEnhancedWaypointFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xaf868477_a2aa_46dd_b645_23b31b8aa6c7);
@@ -148,6 +152,11 @@ pub struct IEnhancedWaypointFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IManeuverWarning(::windows::core::IUnknown);
+impl ::core::clone::Clone for IManeuverWarning {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IManeuverWarning {
     type Vtable = IManeuverWarning_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc1a36d8a_2630_4378_9e4a_6e44253dceba);
@@ -162,6 +171,11 @@ pub struct IManeuverWarning_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapAddress(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapAddress {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapAddress {
     type Vtable = IMapAddress_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xcfa7a973_a3b4_4494_b3ff_cba94db69699);
@@ -189,6 +203,11 @@ pub struct IMapAddress_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapAddress2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapAddress2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapAddress2 {
     type Vtable = IMapAddress2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x75cd6df1_e5ad_45a9_bf40_6cf256c1dd13);
@@ -202,6 +221,11 @@ pub struct IMapAddress2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapLocation(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapLocation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapLocation {
     type Vtable = IMapLocation_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x3c073f57_0da4_42e8_9ee2_a96fcf2371dc);
@@ -221,6 +245,11 @@ pub struct IMapLocation_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapLocationFinderResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapLocationFinderResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapLocationFinderResult {
     type Vtable = IMapLocationFinderResult_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x43f1f179_e8cc_45f6_bed2_54ccbf965d9a);
@@ -238,6 +267,11 @@ pub struct IMapLocationFinderResult_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapLocationFinderStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapLocationFinderStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapLocationFinderStatics {
     type Vtable = IMapLocationFinderStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x318adb5d_1c5d_4f35_a2df_aaca94959517);
@@ -262,6 +296,11 @@ pub struct IMapLocationFinderStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapLocationFinderStatics2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapLocationFinderStatics2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapLocationFinderStatics2 {
     type Vtable = IMapLocationFinderStatics2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x959a8b96_6485_4dfd_851a_33ac317e3af6);
@@ -278,6 +317,11 @@ pub struct IMapLocationFinderStatics2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapManagerStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapManagerStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapManagerStatics {
     type Vtable = IMapManagerStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x37e3e515_82b4_4d54_8fd9_af2624b3011c);
@@ -292,6 +336,11 @@ pub struct IMapManagerStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapRoute(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapRoute {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapRoute {
     type Vtable = IMapRoute_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xfb07b732_584d_4583_9c60_641fea274349);
@@ -322,6 +371,11 @@ pub struct IMapRoute_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapRoute2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapRoute2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapRoute2 {
     type Vtable = IMapRoute2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd1c5d40c_2213_4ab0_a260_46b38169beac);
@@ -336,6 +390,11 @@ pub struct IMapRoute2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapRoute3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapRoute3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapRoute3 {
     type Vtable = IMapRoute3_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x858d1eae_f2ad_429f_bb37_cd21094ffc92);
@@ -353,6 +412,11 @@ pub struct IMapRoute3_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapRoute4(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapRoute4 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapRoute4 {
     type Vtable = IMapRoute4_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x366c8ca5_3053_4fa1_80ff_d475f3ed1e6e);
@@ -366,6 +430,11 @@ pub struct IMapRoute4_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapRouteDrivingOptions(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapRouteDrivingOptions {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapRouteDrivingOptions {
     type Vtable = IMapRouteDrivingOptions_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x6815364d_c6dc_4697_a452_b18f8f0b67a1);
@@ -392,6 +461,11 @@ pub struct IMapRouteDrivingOptions_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapRouteDrivingOptions2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapRouteDrivingOptions2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapRouteDrivingOptions2 {
     type Vtable = IMapRouteDrivingOptions2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x35dc8670_c298_48d0_b5ad_825460645603);
@@ -412,6 +486,11 @@ pub struct IMapRouteDrivingOptions2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapRouteFinderResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapRouteFinderResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapRouteFinderResult {
     type Vtable = IMapRouteFinderResult_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa868a31a_9422_46ac_8ca1_b1614d4bfbe2);
@@ -426,6 +505,11 @@ pub struct IMapRouteFinderResult_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapRouteFinderResult2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapRouteFinderResult2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapRouteFinderResult2 {
     type Vtable = IMapRouteFinderResult2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x20709c6d_d90c_46c8_91c6_7d4be4efb215);
@@ -442,6 +526,11 @@ pub struct IMapRouteFinderResult2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapRouteFinderStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapRouteFinderStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapRouteFinderStatics {
     type Vtable = IMapRouteFinderStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb8a5c50f_1c64_4c3a_81eb_1f7c152afbbb);
@@ -494,6 +583,11 @@ pub struct IMapRouteFinderStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapRouteFinderStatics2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapRouteFinderStatics2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapRouteFinderStatics2 {
     type Vtable = IMapRouteFinderStatics2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xafcc2c73_7760_49af_b3bd_baf135b703e1);
@@ -510,6 +604,11 @@ pub struct IMapRouteFinderStatics2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapRouteFinderStatics3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapRouteFinderStatics3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapRouteFinderStatics3 {
     type Vtable = IMapRouteFinderStatics3_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf6098134_5913_11e6_8b77_86f30ca893d3);
@@ -530,6 +629,11 @@ pub struct IMapRouteFinderStatics3_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapRouteLeg(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapRouteLeg {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapRouteLeg {
     type Vtable = IMapRouteLeg_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x96f8b2f6_5bba_4d17_9db6_1a263fec7471);
@@ -559,6 +663,11 @@ pub struct IMapRouteLeg_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapRouteLeg2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapRouteLeg2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapRouteLeg2 {
     type Vtable = IMapRouteLeg2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x02e2062d_c9c6_45b8_8e54_1a10b57a17e8);
@@ -576,6 +685,11 @@ pub struct IMapRouteLeg2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapRouteManeuver(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapRouteManeuver {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapRouteManeuver {
     type Vtable = IMapRouteManeuver_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xed5c17f0_a6ab_4d65_a086_fa8a7e340df2);
@@ -597,6 +711,11 @@ pub struct IMapRouteManeuver_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapRouteManeuver2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapRouteManeuver2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapRouteManeuver2 {
     type Vtable = IMapRouteManeuver2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x5d7bcd9c_7c9b_41df_838b_eae21e4b05a9);
@@ -612,6 +731,11 @@ pub struct IMapRouteManeuver2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapRouteManeuver3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapRouteManeuver3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapRouteManeuver3 {
     type Vtable = IMapRouteManeuver3_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa6a138df_0483_4166_85be_b99336c11875);
@@ -628,6 +752,11 @@ pub struct IMapRouteManeuver3_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapServiceStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapServiceStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapServiceStatics {
     type Vtable = IMapServiceStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x0144ad85_c04c_4cdd_871a_a0726d097cd4);
@@ -642,6 +771,11 @@ pub struct IMapServiceStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapServiceStatics2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapServiceStatics2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapServiceStatics2 {
     type Vtable = IMapServiceStatics2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf8193eed_9c85_40a9_8896_0fc3fd2b7c2a);
@@ -655,6 +789,11 @@ pub struct IMapServiceStatics2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapServiceStatics3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapServiceStatics3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapServiceStatics3 {
     type Vtable = IMapServiceStatics3_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x0a11ce20_63a7_4854_b355_d6dcda223d1b);
@@ -668,6 +807,11 @@ pub struct IMapServiceStatics3_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapServiceStatics4(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapServiceStatics4 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapServiceStatics4 {
     type Vtable = IMapServiceStatics4_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x088a2862_6abc_420e_945f_4cfd89c67356);
@@ -682,6 +826,11 @@ pub struct IMapServiceStatics4_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPlaceInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPlaceInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPlaceInfo {
     type Vtable = IPlaceInfo_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9a0810b6_31c8_4f6a_9f18_950b4c38951a);
@@ -709,6 +858,11 @@ pub struct IPlaceInfo_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPlaceInfoCreateOptions(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPlaceInfoCreateOptions {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPlaceInfoCreateOptions {
     type Vtable = IPlaceInfoCreateOptions_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xcd33c125_67f1_4bb3_9907_ecce939b0399);
@@ -725,6 +879,11 @@ pub struct IPlaceInfoCreateOptions_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPlaceInfoStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPlaceInfoStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPlaceInfoStatics {
     type Vtable = IPlaceInfoStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x82b9ff71_6cd0_48a4_afd9_5ed82097936b);
@@ -752,6 +911,11 @@ pub struct IPlaceInfoStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPlaceInfoStatics2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPlaceInfoStatics2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPlaceInfoStatics2 {
     type Vtable = IPlaceInfoStatics2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x730f0249_4047_44a3_8f81_2550a5216370);
@@ -784,11 +948,6 @@ impl ManeuverWarning {
         }
     }
 }
-impl ::core::clone::Clone for ManeuverWarning {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ManeuverWarning {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -802,7 +961,6 @@ impl ::core::fmt::Debug for ManeuverWarning {
 }
 unsafe impl ::windows::core::RuntimeType for ManeuverWarning {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Services.Maps.ManeuverWarning;{c1a36d8a-2630-4378-9e4a-6e44253dceba})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -911,6 +1069,7 @@ impl ::core::default::Default for ManeuverWarningKind {
 }
 unsafe impl ::windows::core::Abi for ManeuverWarningKind {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ManeuverWarningKind {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -919,7 +1078,6 @@ impl ::core::fmt::Debug for ManeuverWarningKind {
 }
 unsafe impl ::windows::core::RuntimeType for ManeuverWarningKind {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Services.Maps.ManeuverWarningKind;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -948,6 +1106,7 @@ impl ::core::default::Default for ManeuverWarningSeverity {
 }
 unsafe impl ::windows::core::Abi for ManeuverWarningSeverity {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ManeuverWarningSeverity {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -956,7 +1115,6 @@ impl ::core::fmt::Debug for ManeuverWarningSeverity {
 }
 unsafe impl ::windows::core::RuntimeType for ManeuverWarningSeverity {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Services.Maps.ManeuverWarningSeverity;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1094,11 +1252,6 @@ impl MapAddress {
         }
     }
 }
-impl ::core::clone::Clone for MapAddress {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MapAddress {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1112,7 +1265,6 @@ impl ::core::fmt::Debug for MapAddress {
 }
 unsafe impl ::windows::core::RuntimeType for MapAddress {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Services.Maps.MapAddress;{cfa7a973-a3b4-4494-b3ff-cba94db69699})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1204,11 +1356,6 @@ impl MapLocation {
         }
     }
 }
-impl ::core::clone::Clone for MapLocation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MapLocation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1222,7 +1369,6 @@ impl ::core::fmt::Debug for MapLocation {
 }
 unsafe impl ::windows::core::RuntimeType for MapLocation {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Services.Maps.MapLocation;{3c073f57-0da4-42e8-9ee2-a96fcf2371dc})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1297,6 +1443,7 @@ impl ::core::default::Default for MapLocationDesiredAccuracy {
 }
 unsafe impl ::windows::core::Abi for MapLocationDesiredAccuracy {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MapLocationDesiredAccuracy {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1305,7 +1452,6 @@ impl ::core::fmt::Debug for MapLocationDesiredAccuracy {
 }
 unsafe impl ::windows::core::RuntimeType for MapLocationDesiredAccuracy {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Services.Maps.MapLocationDesiredAccuracy;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1381,11 +1527,6 @@ impl MapLocationFinderResult {
         }
     }
 }
-impl ::core::clone::Clone for MapLocationFinderResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MapLocationFinderResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1399,7 +1540,6 @@ impl ::core::fmt::Debug for MapLocationFinderResult {
 }
 unsafe impl ::windows::core::RuntimeType for MapLocationFinderResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Services.Maps.MapLocationFinderResult;{43f1f179-e8cc-45f6-bed2-54ccbf965d9a})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1479,6 +1619,7 @@ impl ::core::default::Default for MapLocationFinderStatus {
 }
 unsafe impl ::windows::core::Abi for MapLocationFinderStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MapLocationFinderStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1487,7 +1628,6 @@ impl ::core::fmt::Debug for MapLocationFinderStatus {
 }
 unsafe impl ::windows::core::RuntimeType for MapLocationFinderStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Services.Maps.MapLocationFinderStatus;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1534,6 +1674,7 @@ impl ::core::default::Default for MapManeuverNotices {
 }
 unsafe impl ::windows::core::Abi for MapManeuverNotices {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MapManeuverNotices {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1570,7 +1711,6 @@ impl ::core::ops::Not for MapManeuverNotices {
 }
 unsafe impl ::windows::core::RuntimeType for MapManeuverNotices {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Services.Maps.MapManeuverNotices;u4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1673,11 +1813,6 @@ impl MapRoute {
         }
     }
 }
-impl ::core::clone::Clone for MapRoute {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MapRoute {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1691,7 +1826,6 @@ impl ::core::fmt::Debug for MapRoute {
 }
 unsafe impl ::windows::core::RuntimeType for MapRoute {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Services.Maps.MapRoute;{fb07b732-584d-4583-9c60-641fea274349})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1826,11 +1960,6 @@ impl MapRouteDrivingOptions {
         unsafe { (::windows::core::Interface::vtable(this).SetDepartureTime)(::core::mem::transmute_copy(this), value.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for MapRouteDrivingOptions {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MapRouteDrivingOptions {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1844,7 +1973,6 @@ impl ::core::fmt::Debug for MapRouteDrivingOptions {
 }
 unsafe impl ::windows::core::RuntimeType for MapRouteDrivingOptions {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Services.Maps.MapRouteDrivingOptions;{6815364d-c6dc-4697-a452-b18f8f0b67a1})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2054,11 +2182,6 @@ impl MapRouteFinderResult {
         }
     }
 }
-impl ::core::clone::Clone for MapRouteFinderResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MapRouteFinderResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2072,7 +2195,6 @@ impl ::core::fmt::Debug for MapRouteFinderResult {
 }
 unsafe impl ::windows::core::RuntimeType for MapRouteFinderResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Services.Maps.MapRouteFinderResult;{a868a31a-9422-46ac-8ca1-b1614d4bfbe2})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2155,6 +2277,7 @@ impl ::core::default::Default for MapRouteFinderStatus {
 }
 unsafe impl ::windows::core::Abi for MapRouteFinderStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MapRouteFinderStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2163,7 +2286,6 @@ impl ::core::fmt::Debug for MapRouteFinderStatus {
 }
 unsafe impl ::windows::core::RuntimeType for MapRouteFinderStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Services.Maps.MapRouteFinderStatus;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2234,11 +2356,6 @@ impl MapRouteLeg {
         }
     }
 }
-impl ::core::clone::Clone for MapRouteLeg {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MapRouteLeg {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2252,7 +2369,6 @@ impl ::core::fmt::Debug for MapRouteLeg {
 }
 unsafe impl ::windows::core::RuntimeType for MapRouteLeg {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Services.Maps.MapRouteLeg;{96f8b2f6-5bba-4d17-9db6-1a263fec7471})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2393,11 +2509,6 @@ impl MapRouteManeuver {
         }
     }
 }
-impl ::core::clone::Clone for MapRouteManeuver {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MapRouteManeuver {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2411,7 +2522,6 @@ impl ::core::fmt::Debug for MapRouteManeuver {
 }
 unsafe impl ::windows::core::RuntimeType for MapRouteManeuver {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Services.Maps.MapRouteManeuver;{ed5c17f0-a6ab-4d65-a086-fa8a7e340df2})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2509,6 +2619,7 @@ impl ::core::default::Default for MapRouteManeuverKind {
 }
 unsafe impl ::windows::core::Abi for MapRouteManeuverKind {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MapRouteManeuverKind {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2517,7 +2628,6 @@ impl ::core::fmt::Debug for MapRouteManeuverKind {
 }
 unsafe impl ::windows::core::RuntimeType for MapRouteManeuverKind {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Services.Maps.MapRouteManeuverKind;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2545,6 +2655,7 @@ impl ::core::default::Default for MapRouteOptimization {
 }
 unsafe impl ::windows::core::Abi for MapRouteOptimization {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MapRouteOptimization {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2553,7 +2664,6 @@ impl ::core::fmt::Debug for MapRouteOptimization {
 }
 unsafe impl ::windows::core::RuntimeType for MapRouteOptimization {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Services.Maps.MapRouteOptimization;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2584,6 +2694,7 @@ impl ::core::default::Default for MapRouteRestrictions {
 }
 unsafe impl ::windows::core::Abi for MapRouteRestrictions {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MapRouteRestrictions {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2620,7 +2731,6 @@ impl ::core::ops::Not for MapRouteRestrictions {
 }
 unsafe impl ::windows::core::RuntimeType for MapRouteRestrictions {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Services.Maps.MapRouteRestrictions;u4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2709,6 +2819,7 @@ impl ::core::default::Default for MapServiceDataUsagePreference {
 }
 unsafe impl ::windows::core::Abi for MapServiceDataUsagePreference {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MapServiceDataUsagePreference {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2717,7 +2828,6 @@ impl ::core::fmt::Debug for MapServiceDataUsagePreference {
 }
 unsafe impl ::windows::core::RuntimeType for MapServiceDataUsagePreference {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Services.Maps.MapServiceDataUsagePreference;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2841,11 +2951,6 @@ impl PlaceInfo {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for PlaceInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PlaceInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2859,7 +2964,6 @@ impl ::core::fmt::Debug for PlaceInfo {
 }
 unsafe impl ::windows::core::RuntimeType for PlaceInfo {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Services.Maps.PlaceInfo;{9a0810b6-31c8-4f6a-9f18-950b4c38951a})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2951,11 +3055,6 @@ impl PlaceInfoCreateOptions {
         }
     }
 }
-impl ::core::clone::Clone for PlaceInfoCreateOptions {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PlaceInfoCreateOptions {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2969,7 +3068,6 @@ impl ::core::fmt::Debug for PlaceInfoCreateOptions {
 }
 unsafe impl ::windows::core::RuntimeType for PlaceInfoCreateOptions {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Services.Maps.PlaceInfoCreateOptions;{cd33c125-67f1-4bb3-9907-ecce939b0399})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3047,6 +3145,7 @@ impl ::core::default::Default for TrafficCongestion {
 }
 unsafe impl ::windows::core::Abi for TrafficCongestion {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TrafficCongestion {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3055,7 +3154,6 @@ impl ::core::fmt::Debug for TrafficCongestion {
 }
 unsafe impl ::windows::core::RuntimeType for TrafficCongestion {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Services.Maps.TrafficCongestion;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -3081,6 +3179,7 @@ impl ::core::default::Default for WaypointKind {
 }
 unsafe impl ::windows::core::Abi for WaypointKind {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WaypointKind {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3089,7 +3188,6 @@ impl ::core::fmt::Debug for WaypointKind {
 }
 unsafe impl ::windows::core::RuntimeType for WaypointKind {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Services.Maps.WaypointKind;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }

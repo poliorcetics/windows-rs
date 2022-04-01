@@ -46,6 +46,7 @@ impl ::core::default::Default for ATTRIBUTE_TYPE {
 }
 unsafe impl ::windows::core::Abi for ATTRIBUTE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ATTRIBUTE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -85,6 +86,7 @@ impl ::core::default::Default for DIAGNOSIS_STATUS {
 }
 unsafe impl ::windows::core::Abi for DIAGNOSIS_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DIAGNOSIS_STATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -115,6 +117,7 @@ impl ::core::fmt::Debug for DIAG_SOCKADDR {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DIAG_SOCKADDR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DIAG_SOCKADDR {
@@ -149,6 +152,7 @@ impl ::core::fmt::Debug for DiagnosticsInfo {
 }
 unsafe impl ::windows::core::Abi for DiagnosticsInfo {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DiagnosticsInfo {
     fn eq(&self, other: &Self) -> bool {
@@ -180,6 +184,7 @@ impl ::core::clone::Clone for HELPER_ATTRIBUTE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for HELPER_ATTRIBUTE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for HELPER_ATTRIBUTE {
@@ -225,6 +230,7 @@ impl ::core::clone::Clone for HELPER_ATTRIBUTE_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for HELPER_ATTRIBUTE_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for HELPER_ATTRIBUTE_0 {
@@ -266,6 +272,7 @@ impl ::core::fmt::Debug for HYPOTHESIS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for HYPOTHESIS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for HYPOTHESIS {
@@ -300,6 +307,7 @@ impl ::core::fmt::Debug for HelperAttributeInfo {
 }
 unsafe impl ::windows::core::Abi for HelperAttributeInfo {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HelperAttributeInfo {
     fn eq(&self, other: &Self) -> bool {
@@ -336,6 +344,7 @@ impl ::core::fmt::Debug for HypothesisResult {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for HypothesisResult {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for HypothesisResult {
@@ -354,6 +363,11 @@ impl ::core::default::Default for HypothesisResult {
 #[doc = "*Required features: `\"Win32_NetworkManagement_NetworkDiagnosticsFramework\"`*"]
 #[repr(transparent)]
 pub struct INetDiagExtensibleHelper(::windows::core::IUnknown);
+impl ::core::clone::Clone for INetDiagExtensibleHelper {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl INetDiagExtensibleHelper {
     #[doc = "*Required features: `\"Win32_NetworkManagement_NetworkDiagnosticsFramework\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -379,11 +393,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for INetDiagE
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a INetDiagExtensibleHelper {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for INetDiagExtensibleHelper {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for INetDiagExtensibleHelper {
@@ -413,6 +422,11 @@ pub struct INetDiagExtensibleHelper_Vtbl {
 #[doc = "*Required features: `\"Win32_NetworkManagement_NetworkDiagnosticsFramework\"`*"]
 #[repr(transparent)]
 pub struct INetDiagHelper(::windows::core::IUnknown);
+impl ::core::clone::Clone for INetDiagHelper {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl INetDiagHelper {
     #[doc = "*Required features: `\"Win32_NetworkManagement_NetworkDiagnosticsFramework\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -520,11 +534,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a INetD
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for INetDiagHelper {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for INetDiagHelper {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -596,6 +605,11 @@ pub struct INetDiagHelper_Vtbl {
 #[doc = "*Required features: `\"Win32_NetworkManagement_NetworkDiagnosticsFramework\"`*"]
 #[repr(transparent)]
 pub struct INetDiagHelperEx(::windows::core::IUnknown);
+impl ::core::clone::Clone for INetDiagHelperEx {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl INetDiagHelperEx {
     #[doc = "*Required features: `\"Win32_NetworkManagement_NetworkDiagnosticsFramework\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -631,11 +645,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a INetD
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for INetDiagHelperEx {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for INetDiagHelperEx {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -665,6 +674,11 @@ pub struct INetDiagHelperEx_Vtbl {
 #[doc = "*Required features: `\"Win32_NetworkManagement_NetworkDiagnosticsFramework\"`*"]
 #[repr(transparent)]
 pub struct INetDiagHelperInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for INetDiagHelperInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl INetDiagHelperInfo {
     #[doc = "*Required features: `\"Win32_NetworkManagement_NetworkDiagnosticsFramework\"`*"]
     pub unsafe fn GetAttributeInfo(&self, pcelt: *mut u32, pprgattributeinfos: *mut *mut HelperAttributeInfo) -> ::windows::core::Result<()> {
@@ -691,11 +705,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a INetD
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for INetDiagHelperInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for INetDiagHelperInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -720,6 +729,11 @@ pub struct INetDiagHelperInfo_Vtbl {
 #[doc = "*Required features: `\"Win32_NetworkManagement_NetworkDiagnosticsFramework\"`*"]
 #[repr(transparent)]
 pub struct INetDiagHelperUtilFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for INetDiagHelperUtilFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl INetDiagHelperUtilFactory {
     #[doc = "*Required features: `\"Win32_NetworkManagement_NetworkDiagnosticsFramework\"`*"]
     pub unsafe fn CreateUtilityInstance<T: ::windows::core::Interface>(&self) -> ::windows::core::Result<T> {
@@ -745,11 +759,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for INetDiagH
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a INetDiagHelperUtilFactory {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for INetDiagHelperUtilFactory {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for INetDiagHelperUtilFactory {
@@ -797,6 +806,7 @@ impl ::core::fmt::Debug for LIFE_TIME {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for LIFE_TIME {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for LIFE_TIME {
@@ -1088,6 +1098,7 @@ impl ::core::fmt::Debug for OCTET_STRING {
 }
 unsafe impl ::windows::core::Abi for OCTET_STRING {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for OCTET_STRING {
     fn eq(&self, other: &Self) -> bool {
@@ -1131,6 +1142,7 @@ impl ::core::default::Default for PROBLEM_TYPE {
 }
 unsafe impl ::windows::core::Abi for PROBLEM_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PROBLEM_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1166,6 +1178,7 @@ impl ::core::default::Default for REPAIR_RISK {
 }
 unsafe impl ::windows::core::Abi for REPAIR_RISK {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for REPAIR_RISK {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1197,6 +1210,7 @@ impl ::core::default::Default for REPAIR_SCOPE {
 }
 unsafe impl ::windows::core::Abi for REPAIR_SCOPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for REPAIR_SCOPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1230,6 +1244,7 @@ impl ::core::default::Default for REPAIR_STATUS {
 }
 unsafe impl ::windows::core::Abi for REPAIR_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for REPAIR_STATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1282,6 +1297,7 @@ impl ::core::clone::Clone for RepairInfo {
 }
 unsafe impl ::windows::core::Abi for RepairInfo {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RepairInfo {
     fn eq(&self, other: &Self) -> bool {
@@ -1308,6 +1324,7 @@ impl ::core::clone::Clone for RepairInfoEx {
 }
 unsafe impl ::windows::core::Abi for RepairInfoEx {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RepairInfoEx {
     fn eq(&self, other: &Self) -> bool {
@@ -1343,6 +1360,7 @@ impl ::core::fmt::Debug for RootCauseInfo {
 }
 unsafe impl ::windows::core::Abi for RootCauseInfo {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RootCauseInfo {
     fn eq(&self, other: &Self) -> bool {
@@ -1377,6 +1395,7 @@ impl ::core::fmt::Debug for ShellCommandInfo {
 }
 unsafe impl ::windows::core::Abi for ShellCommandInfo {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ShellCommandInfo {
     fn eq(&self, other: &Self) -> bool {
@@ -1416,6 +1435,7 @@ impl ::core::default::Default for UI_INFO_TYPE {
 }
 unsafe impl ::windows::core::Abi for UI_INFO_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UI_INFO_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1436,6 +1456,7 @@ impl ::core::clone::Clone for UiInfo {
 }
 unsafe impl ::windows::core::Abi for UiInfo {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for UiInfo {
     fn eq(&self, other: &Self) -> bool {
@@ -1464,6 +1485,7 @@ impl ::core::clone::Clone for UiInfo_0 {
 }
 unsafe impl ::windows::core::Abi for UiInfo_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for UiInfo_0 {
     fn eq(&self, other: &Self) -> bool {

@@ -20,6 +20,7 @@ impl ::core::default::Default for ADDED_CERT_TYPE {
 }
 unsafe impl ::windows::core::Abi for ADDED_CERT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ADDED_CERT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -47,6 +48,7 @@ impl ::core::default::Default for AlgorithmFlags {
 }
 unsafe impl ::windows::core::Abi for AlgorithmFlags {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AlgorithmFlags {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -96,6 +98,7 @@ impl ::core::default::Default for AlgorithmOperationFlags {
 }
 unsafe impl ::windows::core::Abi for AlgorithmOperationFlags {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AlgorithmOperationFlags {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -135,6 +138,7 @@ impl ::core::default::Default for AlgorithmType {
 }
 unsafe impl ::windows::core::Abi for AlgorithmType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AlgorithmType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -182,6 +186,7 @@ impl ::core::default::Default for AlternativeNameType {
 }
 unsafe impl ::windows::core::Abi for AlternativeNameType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AlternativeNameType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -236,6 +241,7 @@ impl ::core::fmt::Debug for CAINFO {
 }
 unsafe impl ::windows::core::Abi for CAINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CAINFO {
     fn eq(&self, other: &Self) -> bool {
@@ -341,6 +347,7 @@ impl ::core::default::Default for CERTADMIN_GET_ROLES_FLAGS {
 }
 unsafe impl ::windows::core::Abi for CERTADMIN_GET_ROLES_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CERTADMIN_GET_ROLES_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1270,6 +1277,7 @@ impl ::core::default::Default for CERTENROLL_OBJECTID {
 }
 unsafe impl ::windows::core::Abi for CERTENROLL_OBJECTID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CERTENROLL_OBJECTID {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1493,6 +1501,7 @@ impl ::core::default::Default for CERTENROLL_PROPERTYID {
 }
 unsafe impl ::windows::core::Abi for CERTENROLL_PROPERTYID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CERTENROLL_PROPERTYID {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1518,6 +1527,7 @@ impl ::core::fmt::Debug for CERTTRANSBLOB {
 }
 unsafe impl ::windows::core::Abi for CERTTRANSBLOB {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CERTTRANSBLOB {
     fn eq(&self, other: &Self) -> bool {
@@ -1552,6 +1562,7 @@ impl ::core::fmt::Debug for CERTVIEWRESTRICTION {
 }
 unsafe impl ::windows::core::Abi for CERTVIEWRESTRICTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CERTVIEWRESTRICTION {
     fn eq(&self, other: &Self) -> bool {
@@ -1595,6 +1606,7 @@ impl ::core::default::Default for CERT_ALT_NAME {
 }
 unsafe impl ::windows::core::Abi for CERT_ALT_NAME {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CERT_ALT_NAME {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1626,6 +1638,7 @@ impl ::core::default::Default for CERT_CREATE_REQUEST_FLAGS {
 }
 unsafe impl ::windows::core::Abi for CERT_CREATE_REQUEST_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CERT_CREATE_REQUEST_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1653,6 +1666,7 @@ impl ::core::default::Default for CERT_DELETE_ROW_FLAGS {
 }
 unsafe impl ::windows::core::Abi for CERT_DELETE_ROW_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CERT_DELETE_ROW_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1690,6 +1704,7 @@ impl ::core::default::Default for CERT_EXIT_EVENT_MASK {
 }
 unsafe impl ::windows::core::Abi for CERT_EXIT_EVENT_MASK {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CERT_EXIT_EVENT_MASK {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1753,6 +1768,7 @@ impl ::core::default::Default for CERT_GET_CONFIG_FLAGS {
 }
 unsafe impl ::windows::core::Abi for CERT_GET_CONFIG_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CERT_GET_CONFIG_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1782,6 +1798,7 @@ impl ::core::default::Default for CERT_IMPORT_FLAGS {
 }
 unsafe impl ::windows::core::Abi for CERT_IMPORT_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CERT_IMPORT_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1813,6 +1830,7 @@ impl ::core::default::Default for CERT_PROPERTY_TYPE {
 }
 unsafe impl ::windows::core::Abi for CERT_PROPERTY_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CERT_PROPERTY_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1842,6 +1860,7 @@ impl ::core::default::Default for CERT_REQUEST_OUT_TYPE {
 }
 unsafe impl ::windows::core::Abi for CERT_REQUEST_OUT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CERT_REQUEST_OUT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1871,6 +1890,7 @@ impl ::core::default::Default for CERT_VIEW_COLUMN_INDEX {
 }
 unsafe impl ::windows::core::Abi for CERT_VIEW_COLUMN_INDEX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CERT_VIEW_COLUMN_INDEX {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1904,6 +1924,7 @@ impl ::core::default::Default for CERT_VIEW_SEEK_OPERATOR_FLAGS {
 }
 unsafe impl ::windows::core::Abi for CERT_VIEW_SEEK_OPERATOR_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CERT_VIEW_SEEK_OPERATOR_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2029,6 +2050,7 @@ impl ::core::default::Default for CRLRevocationReason {
 }
 unsafe impl ::windows::core::Abi for CRLRevocationReason {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CRLRevocationReason {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2066,6 +2088,7 @@ impl ::core::default::Default for CR_DISP {
 }
 unsafe impl ::windows::core::Abi for CR_DISP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CR_DISP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2305,6 +2328,7 @@ impl ::core::default::Default for CSBACKUP_TYPE {
 }
 unsafe impl ::windows::core::Abi for CSBACKUP_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CSBACKUP_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2344,6 +2368,7 @@ impl ::core::fmt::Debug for CSEDB_RSTMAPW {
 }
 unsafe impl ::windows::core::Abi for CSEDB_RSTMAPW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CSEDB_RSTMAPW {
     fn eq(&self, other: &Self) -> bool {
@@ -2444,6 +2469,7 @@ impl ::core::default::Default for CVRC_COLUMN {
 }
 unsafe impl ::windows::core::Abi for CVRC_COLUMN {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CVRC_COLUMN {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2475,6 +2501,7 @@ impl ::core::default::Default for CVRC_TABLE {
 }
 unsafe impl ::windows::core::Abi for CVRC_TABLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CVRC_TABLE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2836,6 +2863,7 @@ impl ::core::default::Default for CommitTemplateFlags {
 }
 unsafe impl ::windows::core::Abi for CommitTemplateFlags {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CommitTemplateFlags {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2925,6 +2953,7 @@ impl ::core::default::Default for DelayRetryAction {
 }
 unsafe impl ::windows::core::Abi for DelayRetryAction {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DelayRetryAction {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3020,6 +3049,7 @@ impl ::core::default::Default for ENUM_CATYPES {
 }
 unsafe impl ::windows::core::Abi for ENUM_CATYPES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ENUM_CATYPES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3061,6 +3091,7 @@ impl ::core::default::Default for ENUM_CERT_COLUMN_VALUE_FLAGS {
 }
 unsafe impl ::windows::core::Abi for ENUM_CERT_COLUMN_VALUE_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ENUM_CERT_COLUMN_VALUE_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3172,6 +3203,7 @@ impl ::core::default::Default for EncodingType {
 }
 unsafe impl ::windows::core::Abi for EncodingType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EncodingType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3219,6 +3251,7 @@ impl ::core::default::Default for EnrollmentCAProperty {
 }
 unsafe impl ::windows::core::Abi for EnrollmentCAProperty {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EnrollmentCAProperty {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3246,6 +3279,7 @@ impl ::core::default::Default for EnrollmentDisplayStatus {
 }
 unsafe impl ::windows::core::Abi for EnrollmentDisplayStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EnrollmentDisplayStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3283,6 +3317,7 @@ impl ::core::default::Default for EnrollmentEnrollStatus {
 }
 unsafe impl ::windows::core::Abi for EnrollmentEnrollStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EnrollmentEnrollStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3310,6 +3345,7 @@ impl ::core::default::Default for EnrollmentPolicyFlags {
 }
 unsafe impl ::windows::core::Abi for EnrollmentPolicyFlags {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EnrollmentPolicyFlags {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3337,6 +3373,7 @@ impl ::core::default::Default for EnrollmentPolicyServerPropertyFlags {
 }
 unsafe impl ::windows::core::Abi for EnrollmentPolicyServerPropertyFlags {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EnrollmentPolicyServerPropertyFlags {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3364,6 +3401,7 @@ impl ::core::default::Default for EnrollmentSelectionStatus {
 }
 unsafe impl ::windows::core::Abi for EnrollmentSelectionStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EnrollmentSelectionStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3449,6 +3487,7 @@ impl ::core::default::Default for EnrollmentTemplateProperty {
 }
 unsafe impl ::windows::core::Abi for EnrollmentTemplateProperty {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EnrollmentTemplateProperty {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3559,6 +3598,7 @@ impl ::core::default::Default for FULL_RESPONSE_PROPERTY_ID {
 }
 unsafe impl ::windows::core::Abi for FULL_RESPONSE_PROPERTY_ID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FULL_RESPONSE_PROPERTY_ID {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3569,6 +3609,12 @@ impl ::core::fmt::Debug for FULL_RESPONSE_PROPERTY_ID {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IAlternativeName(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IAlternativeName {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IAlternativeName {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`*"]
@@ -3659,12 +3705,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IAlternativeName {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IAlternativeName {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3718,6 +3758,12 @@ pub struct IAlternativeName_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IAlternativeNames(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IAlternativeNames {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IAlternativeNames {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_System_Com\"`*"]
@@ -3799,12 +3845,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IAlternativeNames {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IAlternativeNames {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3845,6 +3885,12 @@ pub struct IAlternativeNames_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IBinaryConverter(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IBinaryConverter {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IBinaryConverter {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`*"]
@@ -3915,12 +3961,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IBinaryConverter {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IBinaryConverter {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3961,6 +4001,12 @@ pub struct IBinaryConverter_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IBinaryConverter2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IBinaryConverter2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IBinaryConverter2 {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`*"]
@@ -4067,12 +4113,6 @@ impl<'a> ::windows::core::IntoParam<'a, IBinaryConverter> for &'a IBinaryConvert
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IBinaryConverter2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IBinaryConverter2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4109,6 +4149,12 @@ pub struct IBinaryConverter2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ICEnroll(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ICEnroll {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ICEnroll {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`*"]
@@ -4453,12 +4499,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ICEnroll {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ICEnroll {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4663,6 +4703,12 @@ pub struct ICEnroll_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ICEnroll2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ICEnroll2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ICEnroll2 {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`*"]
@@ -5063,12 +5109,6 @@ impl<'a> ::windows::core::IntoParam<'a, ICEnroll> for &'a ICEnroll2 {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ICEnroll2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ICEnroll2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5121,6 +5161,12 @@ pub struct ICEnroll2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ICEnroll3(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ICEnroll3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ICEnroll3 {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`*"]
@@ -5618,12 +5664,6 @@ impl<'a> ::windows::core::IntoParam<'a, ICEnroll2> for &'a ICEnroll3 {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ICEnroll3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ICEnroll3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5693,6 +5733,12 @@ pub struct ICEnroll3_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ICEnroll4(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ICEnroll4 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ICEnroll4 {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`*"]
@@ -6387,12 +6433,6 @@ impl<'a> ::windows::core::IntoParam<'a, ICEnroll3> for &'a ICEnroll4 {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ICEnroll4 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ICEnroll4 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6540,6 +6580,12 @@ pub const ICF_EXISTINGROW: u32 = 131072u32;
 #[repr(transparent)]
 pub struct ICertAdmin(::windows::core::IUnknown);
 #[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ICertAdmin {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "Win32_System_Com")]
 impl ICertAdmin {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -6645,12 +6691,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ICertAdmin {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ICertAdmin {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6716,6 +6756,12 @@ pub struct ICertAdmin_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ICertAdmin2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ICertAdmin2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ICertAdmin2 {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`*"]
@@ -6908,12 +6954,6 @@ impl<'a> ::windows::core::IntoParam<'a, ICertAdmin> for &'a ICertAdmin2 {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ICertAdmin2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ICertAdmin2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6986,6 +7026,12 @@ pub struct ICertAdmin2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ICertConfig(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ICertConfig {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ICertConfig {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`*"]
@@ -7060,12 +7106,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ICertConfig {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ICertConfig {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7104,6 +7144,12 @@ pub struct ICertConfig_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ICertConfig2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ICertConfig2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ICertConfig2 {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`*"]
@@ -7207,12 +7253,6 @@ impl<'a> ::windows::core::IntoParam<'a, ICertConfig> for &'a ICertConfig2 {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ICertConfig2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ICertConfig2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7245,6 +7285,12 @@ pub struct ICertConfig2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ICertEncodeAltName(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ICertEncodeAltName {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ICertEncodeAltName {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`*"]
@@ -7333,12 +7379,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ICertEncodeAltName {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ICertEncodeAltName {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7386,6 +7426,12 @@ pub struct ICertEncodeAltName_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ICertEncodeAltName2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ICertEncodeAltName2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ICertEncodeAltName2 {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`*"]
@@ -7520,12 +7566,6 @@ impl<'a> ::windows::core::IntoParam<'a, ICertEncodeAltName> for &'a ICertEncodeA
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ICertEncodeAltName2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ICertEncodeAltName2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7570,6 +7610,12 @@ pub struct ICertEncodeAltName2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ICertEncodeBitString(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ICertEncodeBitString {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ICertEncodeBitString {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`*"]
@@ -7644,12 +7690,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ICertEncodeBitString {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ICertEncodeBitString {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7691,6 +7731,12 @@ pub struct ICertEncodeBitString_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ICertEncodeBitString2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ICertEncodeBitString2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ICertEncodeBitString2 {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`*"]
@@ -7806,12 +7852,6 @@ impl<'a> ::windows::core::IntoParam<'a, ICertEncodeBitString> for &'a ICertEncod
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ICertEncodeBitString2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ICertEncodeBitString2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7852,6 +7892,12 @@ pub struct ICertEncodeBitString2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ICertEncodeCRLDistInfo(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ICertEncodeCRLDistInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ICertEncodeCRLDistInfo {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`*"]
@@ -7949,12 +7995,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ICertEncodeCRLDistInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ICertEncodeCRLDistInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8004,6 +8044,12 @@ pub struct ICertEncodeCRLDistInfo_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ICertEncodeCRLDistInfo2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ICertEncodeCRLDistInfo2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ICertEncodeCRLDistInfo2 {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`*"]
@@ -8136,12 +8182,6 @@ impl<'a> ::windows::core::IntoParam<'a, ICertEncodeCRLDistInfo> for &'a ICertEnc
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ICertEncodeCRLDistInfo2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ICertEncodeCRLDistInfo2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8178,6 +8218,12 @@ pub struct ICertEncodeCRLDistInfo2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ICertEncodeDateArray(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ICertEncodeDateArray {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ICertEncodeDateArray {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`*"]
@@ -8259,12 +8305,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ICertEncodeDateArray {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ICertEncodeDateArray {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8305,6 +8345,12 @@ pub struct ICertEncodeDateArray_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ICertEncodeDateArray2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ICertEncodeDateArray2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ICertEncodeDateArray2 {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`*"]
@@ -8421,12 +8467,6 @@ impl<'a> ::windows::core::IntoParam<'a, ICertEncodeDateArray> for &'a ICertEncod
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ICertEncodeDateArray2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ICertEncodeDateArray2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8463,6 +8503,12 @@ pub struct ICertEncodeDateArray2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ICertEncodeLongArray(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ICertEncodeLongArray {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ICertEncodeLongArray {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`*"]
@@ -8544,12 +8590,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ICertEncodeLongArray {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ICertEncodeLongArray {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8590,6 +8630,12 @@ pub struct ICertEncodeLongArray_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ICertEncodeLongArray2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ICertEncodeLongArray2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ICertEncodeLongArray2 {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`*"]
@@ -8706,12 +8752,6 @@ impl<'a> ::windows::core::IntoParam<'a, ICertEncodeLongArray> for &'a ICertEncod
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ICertEncodeLongArray2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ICertEncodeLongArray2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8748,6 +8788,12 @@ pub struct ICertEncodeLongArray2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ICertEncodeStringArray(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ICertEncodeStringArray {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ICertEncodeStringArray {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`*"]
@@ -8836,12 +8882,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ICertEncodeStringArray {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ICertEncodeStringArray {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8889,6 +8929,12 @@ pub struct ICertEncodeStringArray_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ICertEncodeStringArray2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ICertEncodeStringArray2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ICertEncodeStringArray2 {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`*"]
@@ -9012,12 +9058,6 @@ impl<'a> ::windows::core::IntoParam<'a, ICertEncodeStringArray> for &'a ICertEnc
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ICertEncodeStringArray2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ICertEncodeStringArray2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9054,6 +9094,12 @@ pub struct ICertEncodeStringArray2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ICertExit(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ICertExit {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ICertExit {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`*"]
@@ -9122,12 +9168,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ICertExit {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ICertExit {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9165,6 +9205,12 @@ pub struct ICertExit_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ICertExit2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ICertExit2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ICertExit2 {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`*"]
@@ -9263,12 +9309,6 @@ impl<'a> ::windows::core::IntoParam<'a, ICertExit> for &'a ICertExit2 {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ICertExit2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ICertExit2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9301,6 +9341,12 @@ pub struct ICertExit2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ICertGetConfig(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ICertGetConfig {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ICertGetConfig {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`*"]
@@ -9359,12 +9405,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ICertGetConfig {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ICertGetConfig {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9397,6 +9437,12 @@ pub struct ICertGetConfig_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ICertManageModule(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ICertManageModule {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ICertManageModule {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
@@ -9465,12 +9511,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ICertManageModule {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ICertManageModule {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9511,6 +9551,12 @@ pub struct ICertManageModule_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ICertPolicy(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ICertPolicy {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ICertPolicy {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`*"]
@@ -9584,12 +9630,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ICertPolicy {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ICertPolicy {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9631,6 +9671,12 @@ pub struct ICertPolicy_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ICertPolicy2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ICertPolicy2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ICertPolicy2 {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`*"]
@@ -9734,12 +9780,6 @@ impl<'a> ::windows::core::IntoParam<'a, ICertPolicy> for &'a ICertPolicy2 {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ICertPolicy2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ICertPolicy2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9772,6 +9812,12 @@ pub struct ICertPolicy2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ICertProperties(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ICertProperties {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ICertProperties {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_System_Com\"`*"]
@@ -9858,12 +9904,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ICertProperties {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ICertProperties {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9908,6 +9948,12 @@ pub struct ICertProperties_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ICertProperty(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ICertProperty {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ICertProperty {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`*"]
@@ -9995,12 +10041,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ICertProperty {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ICertProperty {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10051,6 +10091,12 @@ pub struct ICertProperty_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ICertPropertyArchived(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ICertPropertyArchived {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ICertPropertyArchived {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`*"]
@@ -10171,12 +10217,6 @@ impl<'a> ::windows::core::IntoParam<'a, ICertProperty> for &'a ICertPropertyArch
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ICertPropertyArchived {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ICertPropertyArchived {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10207,6 +10247,12 @@ pub struct ICertPropertyArchived_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ICertPropertyArchivedKeyHash(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ICertPropertyArchivedKeyHash {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ICertPropertyArchivedKeyHash {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`*"]
@@ -10329,12 +10375,6 @@ impl<'a> ::windows::core::IntoParam<'a, ICertProperty> for &'a ICertPropertyArch
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ICertPropertyArchivedKeyHash {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ICertPropertyArchivedKeyHash {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10371,6 +10411,12 @@ pub struct ICertPropertyArchivedKeyHash_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ICertPropertyAutoEnroll(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ICertPropertyAutoEnroll {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ICertPropertyAutoEnroll {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`*"]
@@ -10493,12 +10539,6 @@ impl<'a> ::windows::core::IntoParam<'a, ICertProperty> for &'a ICertPropertyAuto
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ICertPropertyAutoEnroll {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ICertPropertyAutoEnroll {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10535,6 +10575,12 @@ pub struct ICertPropertyAutoEnroll_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ICertPropertyBackedUp(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ICertPropertyBackedUp {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ICertPropertyBackedUp {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`*"]
@@ -10664,12 +10710,6 @@ impl<'a> ::windows::core::IntoParam<'a, ICertProperty> for &'a ICertPropertyBack
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ICertPropertyBackedUp {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ICertPropertyBackedUp {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10702,6 +10742,12 @@ pub struct ICertPropertyBackedUp_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ICertPropertyDescription(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ICertPropertyDescription {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ICertPropertyDescription {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`*"]
@@ -10824,12 +10870,6 @@ impl<'a> ::windows::core::IntoParam<'a, ICertProperty> for &'a ICertPropertyDesc
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ICertPropertyDescription {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ICertPropertyDescription {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10866,6 +10906,12 @@ pub struct ICertPropertyDescription_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ICertPropertyEnrollment(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ICertPropertyEnrollment {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ICertPropertyEnrollment {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`*"]
@@ -11005,12 +11051,6 @@ impl<'a> ::windows::core::IntoParam<'a, ICertProperty> for &'a ICertPropertyEnro
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ICertPropertyEnrollment {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ICertPropertyEnrollment {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11056,6 +11096,12 @@ pub struct ICertPropertyEnrollment_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ICertPropertyEnrollmentPolicyServer(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ICertPropertyEnrollmentPolicyServer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ICertPropertyEnrollmentPolicyServer {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`*"]
@@ -11216,12 +11262,6 @@ impl<'a> ::windows::core::IntoParam<'a, ICertProperty> for &'a ICertPropertyEnro
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ICertPropertyEnrollmentPolicyServer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ICertPropertyEnrollmentPolicyServer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11274,6 +11314,12 @@ pub struct ICertPropertyEnrollmentPolicyServer_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ICertPropertyFriendlyName(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ICertPropertyFriendlyName {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ICertPropertyFriendlyName {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`*"]
@@ -11396,12 +11442,6 @@ impl<'a> ::windows::core::IntoParam<'a, ICertProperty> for &'a ICertPropertyFrie
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ICertPropertyFriendlyName {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ICertPropertyFriendlyName {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11438,6 +11478,12 @@ pub struct ICertPropertyFriendlyName_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ICertPropertyKeyProvInfo(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ICertPropertyKeyProvInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ICertPropertyKeyProvInfo {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`*"]
@@ -11560,12 +11606,6 @@ impl<'a> ::windows::core::IntoParam<'a, ICertProperty> for &'a ICertPropertyKeyP
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ICertPropertyKeyProvInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ICertPropertyKeyProvInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11602,6 +11642,12 @@ pub struct ICertPropertyKeyProvInfo_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ICertPropertyRenewal(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ICertPropertyRenewal {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ICertPropertyRenewal {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`*"]
@@ -11729,12 +11775,6 @@ impl<'a> ::windows::core::IntoParam<'a, ICertProperty> for &'a ICertPropertyRene
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ICertPropertyRenewal {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ICertPropertyRenewal {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11775,6 +11815,12 @@ pub struct ICertPropertyRenewal_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ICertPropertyRequestOriginator(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ICertPropertyRequestOriginator {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ICertPropertyRequestOriginator {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`*"]
@@ -11901,12 +11947,6 @@ impl<'a> ::windows::core::IntoParam<'a, ICertProperty> for &'a ICertPropertyRequ
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ICertPropertyRequestOriginator {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ICertPropertyRequestOriginator {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11944,6 +11984,12 @@ pub struct ICertPropertyRequestOriginator_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ICertPropertySHA1Hash(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ICertPropertySHA1Hash {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ICertPropertySHA1Hash {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`*"]
@@ -12066,12 +12112,6 @@ impl<'a> ::windows::core::IntoParam<'a, ICertProperty> for &'a ICertPropertySHA1
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ICertPropertySHA1Hash {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ICertPropertySHA1Hash {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12108,6 +12148,12 @@ pub struct ICertPropertySHA1Hash_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ICertRequest(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ICertRequest {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ICertRequest {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`*"]
@@ -12200,12 +12246,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ICertRequest {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ICertRequest {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12256,6 +12296,12 @@ pub struct ICertRequest_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ICertRequest2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ICertRequest2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ICertRequest2 {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`*"]
@@ -12408,12 +12454,6 @@ impl<'a> ::windows::core::IntoParam<'a, ICertRequest> for &'a ICertRequest2 {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ICertRequest2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ICertRequest2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12466,6 +12506,12 @@ pub struct ICertRequest2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ICertRequest3(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ICertRequest3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ICertRequest3 {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`*"]
@@ -12664,12 +12710,6 @@ impl<'a> ::windows::core::IntoParam<'a, ICertRequest2> for &'a ICertRequest3 {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ICertRequest3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ICertRequest3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12710,6 +12750,11 @@ pub struct ICertRequest3_Vtbl {
 #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`*"]
 #[repr(transparent)]
 pub struct ICertRequestD(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICertRequestD {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ICertRequestD {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`*"]
     pub unsafe fn Request<'a, Param1: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param4: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, dwflags: u32, pwszauthority: Param1, pdwrequestid: *mut u32, pdwdisposition: *mut u32, pwszattributes: Param4, pctbrequest: *const CERTTRANSBLOB, pctbcertchain: *mut CERTTRANSBLOB, pctbencodedcert: *mut CERTTRANSBLOB, pctbdispositionmessage: *mut CERTTRANSBLOB) -> ::windows::core::Result<()> {
@@ -12745,11 +12790,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ICert
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ICertRequestD {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ICertRequestD {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12776,6 +12816,11 @@ pub struct ICertRequestD_Vtbl {
 #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`*"]
 #[repr(transparent)]
 pub struct ICertRequestD2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICertRequestD2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ICertRequestD2 {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`*"]
     pub unsafe fn Request<'a, Param1: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param4: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, dwflags: u32, pwszauthority: Param1, pdwrequestid: *mut u32, pdwdisposition: *mut u32, pwszattributes: Param4, pctbrequest: *const CERTTRANSBLOB, pctbcertchain: *mut CERTTRANSBLOB, pctbencodedcert: *mut CERTTRANSBLOB, pctbdispositionmessage: *mut CERTTRANSBLOB) -> ::windows::core::Result<()> {
@@ -12848,11 +12893,6 @@ impl<'a> ::windows::core::IntoParam<'a, ICertRequestD> for &'a ICertRequestD2 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ICertRequestD2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ICertRequestD2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12881,6 +12921,12 @@ pub struct ICertRequestD2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ICertServerExit(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ICertServerExit {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ICertServerExit {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`*"]
@@ -12994,12 +13040,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ICertServerExit {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ICertServerExit {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13058,6 +13098,12 @@ pub struct ICertServerExit_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ICertServerPolicy(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ICertServerPolicy {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ICertServerPolicy {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`*"]
@@ -13181,12 +13227,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ICertServerPolicy {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ICertServerPolicy {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13253,6 +13293,12 @@ pub struct ICertServerPolicy_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ICertView(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ICertView {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ICertView {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`*"]
@@ -13344,12 +13390,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ICertView {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ICertView {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13401,6 +13441,12 @@ pub struct ICertView_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ICertView2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ICertView2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ICertView2 {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`*"]
@@ -13520,12 +13566,6 @@ impl<'a> ::windows::core::IntoParam<'a, ICertView> for &'a ICertView2 {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ICertView2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ICertView2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13555,6 +13595,12 @@ pub struct ICertView2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ICertificateAttestationChallenge(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ICertificateAttestationChallenge {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ICertificateAttestationChallenge {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`*"]
@@ -13624,12 +13670,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ICertificateAttestationChallenge {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ICertificateAttestationChallenge {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13670,6 +13710,12 @@ pub struct ICertificateAttestationChallenge_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ICertificateAttestationChallenge2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ICertificateAttestationChallenge2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ICertificateAttestationChallenge2 {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`*"]
@@ -13773,12 +13819,6 @@ impl<'a> ::windows::core::IntoParam<'a, ICertificateAttestationChallenge> for &'
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ICertificateAttestationChallenge2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ICertificateAttestationChallenge2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13815,6 +13855,12 @@ pub struct ICertificateAttestationChallenge2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ICertificatePolicies(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ICertificatePolicies {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ICertificatePolicies {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_System_Com\"`*"]
@@ -13896,12 +13942,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ICertificatePolicies {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ICertificatePolicies {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13942,6 +13982,12 @@ pub struct ICertificatePolicies_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ICertificatePolicy(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ICertificatePolicy {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ICertificatePolicy {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_System_Com\"`*"]
@@ -14011,12 +14057,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ICertificatePolicy {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ICertificatePolicy {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -14057,6 +14097,12 @@ pub struct ICertificatePolicy_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ICertificationAuthorities(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ICertificationAuthorities {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ICertificationAuthorities {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_System_Com\"`*"]
@@ -14148,12 +14194,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ICertificationAuthorities {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ICertificationAuthorities {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -14199,6 +14239,12 @@ pub struct ICertificationAuthorities_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ICertificationAuthority(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ICertificationAuthority {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ICertificationAuthority {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
@@ -14257,12 +14303,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ICertificationAuthority {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ICertificationAuthority {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -14295,6 +14335,12 @@ pub struct ICertificationAuthority_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ICryptAttribute(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ICryptAttribute {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ICryptAttribute {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_System_Com\"`*"]
@@ -14369,12 +14415,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ICryptAttribute {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ICryptAttribute {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -14419,6 +14459,12 @@ pub struct ICryptAttribute_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ICryptAttributes(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ICryptAttributes {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ICryptAttributes {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_System_Com\"`*"]
@@ -14511,12 +14557,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ICryptAttributes {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ICryptAttributes {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -14565,6 +14605,12 @@ pub struct ICryptAttributes_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ICspAlgorithm(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ICspAlgorithm {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ICspAlgorithm {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_System_Com\"`*"]
@@ -14670,12 +14716,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ICspAlgorithm {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ICspAlgorithm {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -14723,6 +14763,12 @@ pub struct ICspAlgorithm_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ICspAlgorithms(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ICspAlgorithms {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ICspAlgorithms {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_System_Com\"`*"]
@@ -14816,12 +14862,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ICspAlgorithms {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ICspAlgorithms {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -14870,6 +14910,12 @@ pub struct ICspAlgorithms_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ICspInformation(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ICspInformation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ICspInformation {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`*"]
@@ -15011,12 +15057,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ICspInformation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ICspInformation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -15080,6 +15120,12 @@ pub struct ICspInformation_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ICspInformations(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ICspInformations {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ICspInformations {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_System_Com\"`*"]
@@ -15195,12 +15241,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ICspInformations {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ICspInformations {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -15262,6 +15302,12 @@ pub struct ICspInformations_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ICspStatus(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ICspStatus {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ICspStatus {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_System_Com\"`*"]
@@ -15352,12 +15398,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ICspStatus {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ICspStatus {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -15408,6 +15448,12 @@ pub struct ICspStatus_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ICspStatuses(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ICspStatuses {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ICspStatuses {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_System_Com\"`*"]
@@ -15513,12 +15559,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ICspStatuses {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ICspStatuses {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -15574,6 +15614,11 @@ pub struct ICspStatuses_Vtbl {
 #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`*"]
 #[repr(transparent)]
 pub struct IEnroll(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnroll {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnroll {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`*"]
     pub unsafe fn createFilePKCS10WStr<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param1: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param2: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, dnname: Param0, usage: Param1, wszpkcs10filename: Param2) -> ::windows::core::Result<()> {
@@ -15891,11 +15936,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnro
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnroll {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnroll {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -16034,6 +16074,11 @@ pub struct IEnroll_Vtbl {
 #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`*"]
 #[repr(transparent)]
 pub struct IEnroll2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnroll2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnroll2 {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`*"]
     pub unsafe fn createFilePKCS10WStr<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param1: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param2: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, dnname: Param0, usage: Param1, wszpkcs10filename: Param2) -> ::windows::core::Result<()> {
@@ -16450,11 +16495,6 @@ impl<'a> ::windows::core::IntoParam<'a, IEnroll> for &'a IEnroll2 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnroll2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnroll2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -16517,6 +16557,11 @@ pub struct IEnroll2_Vtbl {
 #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`*"]
 #[repr(transparent)]
 pub struct IEnroll4(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnroll4 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnroll4 {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`*"]
     pub unsafe fn createFilePKCS10WStr<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param1: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param2: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, dnname: Param0, usage: Param1, wszpkcs10filename: Param2) -> ::windows::core::Result<()> {
@@ -17089,11 +17134,6 @@ impl<'a> ::windows::core::IntoParam<'a, IEnroll2> for &'a IEnroll4 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnroll4 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnroll4 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -17175,6 +17215,12 @@ pub struct IEnroll4_Vtbl {
 #[repr(transparent)]
 pub struct IEnumCERTVIEWATTRIBUTE(::windows::core::IUnknown);
 #[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IEnumCERTVIEWATTRIBUTE {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "Win32_System_Com")]
 impl IEnumCERTVIEWATTRIBUTE {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`*"]
     pub unsafe fn Next(&self, pindex: *mut i32) -> ::windows::core::Result<()> {
@@ -17254,12 +17300,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IEnumCERTVIEWATTRIBUTE {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IEnumCERTVIEWATTRIBUTE {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -17303,6 +17343,12 @@ pub struct IEnumCERTVIEWATTRIBUTE_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IEnumCERTVIEWCOLUMN(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IEnumCERTVIEWCOLUMN {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IEnumCERTVIEWCOLUMN {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`*"]
@@ -17400,12 +17446,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IEnumCERTVIEWCOLUMN {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IEnumCERTVIEWCOLUMN {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -17456,6 +17496,12 @@ pub struct IEnumCERTVIEWCOLUMN_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IEnumCERTVIEWEXTENSION(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IEnumCERTVIEWEXTENSION {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IEnumCERTVIEWEXTENSION {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`*"]
@@ -17540,12 +17586,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IEnumCERTVIEWEXTENSION {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IEnumCERTVIEWEXTENSION {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -17590,6 +17630,12 @@ pub struct IEnumCERTVIEWEXTENSION_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IEnumCERTVIEWROW(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IEnumCERTVIEWROW {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IEnumCERTVIEWROW {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`*"]
@@ -17682,12 +17728,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IEnumCERTVIEWROW {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IEnumCERTVIEWROW {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -17763,6 +17803,11 @@ pub const IKF_OVERWRITE: u32 = 65536u32;
 #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`*"]
 #[repr(transparent)]
 pub struct INDESPolicy(::windows::core::IUnknown);
+impl ::core::clone::Clone for INDESPolicy {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl INDESPolicy {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`*"]
     pub unsafe fn Initialize(&self) -> ::windows::core::Result<()> {
@@ -17807,11 +17852,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a INDES
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for INDESPolicy {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for INDESPolicy {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -17844,6 +17884,12 @@ pub struct INDESPolicy_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IOCSPAdmin(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IOCSPAdmin {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IOCSPAdmin {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_System_Com\"`*"]
@@ -17952,12 +17998,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IOCSPAdmin {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IOCSPAdmin {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -18026,6 +18066,12 @@ pub struct IOCSPAdmin_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IOCSPCAConfiguration(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IOCSPCAConfiguration {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IOCSPCAConfiguration {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`*"]
@@ -18206,12 +18252,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IOCSPCAConfiguration {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IOCSPCAConfiguration {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -18316,6 +18356,12 @@ pub struct IOCSPCAConfiguration_Vtbl {
 #[repr(transparent)]
 pub struct IOCSPCAConfigurationCollection(::windows::core::IUnknown);
 #[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IOCSPCAConfigurationCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "Win32_System_Com")]
 impl IOCSPCAConfigurationCollection {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`*"]
     pub unsafe fn _NewEnum(&self) -> ::windows::core::Result<::windows::core::IUnknown> {
@@ -18400,12 +18446,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IOCSPCAConfigurationCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IOCSPCAConfigurationCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -18452,6 +18492,12 @@ pub struct IOCSPCAConfigurationCollection_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IOCSPProperty(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IOCSPProperty {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IOCSPProperty {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`*"]
@@ -18526,12 +18572,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IOCSPProperty {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IOCSPProperty {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -18573,6 +18613,12 @@ pub struct IOCSPProperty_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IOCSPPropertyCollection(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IOCSPPropertyCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IOCSPPropertyCollection {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`*"]
@@ -18669,12 +18715,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IOCSPPropertyCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IOCSPPropertyCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -18729,6 +18769,12 @@ pub struct IOCSPPropertyCollection_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IObjectId(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IObjectId {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IObjectId {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`*"]
@@ -18823,12 +18869,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IObjectId {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IObjectId {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -18883,6 +18923,12 @@ pub struct IObjectId_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IObjectIds(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IObjectIds {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IObjectIds {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_System_Com\"`*"]
@@ -18969,12 +19015,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IObjectIds {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IObjectIds {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -19019,6 +19059,12 @@ pub struct IObjectIds_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IPolicyQualifier(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IPolicyQualifier {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IPolicyQualifier {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`*"]
@@ -19099,12 +19145,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IPolicyQualifier {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IPolicyQualifier {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -19150,6 +19190,12 @@ pub struct IPolicyQualifier_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IPolicyQualifiers(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IPolicyQualifiers {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IPolicyQualifiers {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_System_Com\"`*"]
@@ -19231,12 +19277,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IPolicyQualifiers {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IPolicyQualifiers {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -19293,6 +19333,12 @@ pub const ISSCERT_URLMASK_OLD: u32 = 255u32;
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ISignerCertificate(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ISignerCertificate {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ISignerCertificate {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`*"]
@@ -19402,12 +19448,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ISignerCertificate {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ISignerCertificate {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -19468,6 +19508,12 @@ pub struct ISignerCertificate_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ISignerCertificates(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ISignerCertificates {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ISignerCertificates {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_System_Com\"`*"]
@@ -19555,12 +19601,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ISignerCertificates {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ISignerCertificates {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -19605,6 +19645,12 @@ pub struct ISignerCertificates_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ISmimeCapabilities(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ISmimeCapabilities {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ISmimeCapabilities {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_System_Com\"`*"]
@@ -19695,12 +19741,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ISmimeCapabilities {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ISmimeCapabilities {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -19746,6 +19786,12 @@ pub struct ISmimeCapabilities_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ISmimeCapability(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ISmimeCapability {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ISmimeCapability {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_System_Com\"`*"]
@@ -19814,12 +19860,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ISmimeCapability {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ISmimeCapability {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -19857,6 +19897,12 @@ pub struct ISmimeCapability_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IX500DistinguishedName(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IX500DistinguishedName {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IX500DistinguishedName {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`*"]
@@ -19931,12 +19977,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IX500DistinguishedName {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IX500DistinguishedName {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -19981,6 +20021,12 @@ pub struct IX500DistinguishedName_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IX509Attribute(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IX509Attribute {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IX509Attribute {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`*"]
@@ -20050,12 +20096,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IX509Attribute {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IX509Attribute {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -20096,6 +20136,12 @@ pub struct IX509Attribute_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IX509AttributeArchiveKey(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IX509AttributeArchiveKey {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IX509AttributeArchiveKey {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`*"]
@@ -20216,12 +20262,6 @@ impl<'a> ::windows::core::IntoParam<'a, IX509Attribute> for &'a IX509AttributeAr
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IX509AttributeArchiveKey {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IX509AttributeArchiveKey {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -20267,6 +20307,12 @@ pub struct IX509AttributeArchiveKey_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IX509AttributeArchiveKeyHash(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IX509AttributeArchiveKeyHash {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IX509AttributeArchiveKeyHash {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`*"]
@@ -20376,12 +20422,6 @@ impl<'a> ::windows::core::IntoParam<'a, IX509Attribute> for &'a IX509AttributeAr
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IX509AttributeArchiveKeyHash {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IX509AttributeArchiveKeyHash {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -20422,6 +20462,12 @@ pub struct IX509AttributeArchiveKeyHash_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IX509AttributeClientId(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IX509AttributeClientId {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IX509AttributeClientId {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`*"]
@@ -20548,12 +20594,6 @@ impl<'a> ::windows::core::IntoParam<'a, IX509Attribute> for &'a IX509AttributeCl
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IX509AttributeClientId {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IX509AttributeClientId {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -20603,6 +20643,12 @@ pub struct IX509AttributeClientId_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IX509AttributeCspProvider(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IX509AttributeCspProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IX509AttributeCspProvider {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`*"]
@@ -20723,12 +20769,6 @@ impl<'a> ::windows::core::IntoParam<'a, IX509Attribute> for &'a IX509AttributeCs
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IX509AttributeCspProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IX509AttributeCspProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -20774,6 +20814,12 @@ pub struct IX509AttributeCspProvider_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IX509AttributeExtensions(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IX509AttributeExtensions {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IX509AttributeExtensions {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`*"]
@@ -20883,12 +20929,6 @@ impl<'a> ::windows::core::IntoParam<'a, IX509Attribute> for &'a IX509AttributeEx
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IX509AttributeExtensions {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IX509AttributeExtensions {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -20929,6 +20969,12 @@ pub struct IX509AttributeExtensions_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IX509AttributeOSVersion(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IX509AttributeOSVersion {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IX509AttributeOSVersion {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`*"]
@@ -21038,12 +21084,6 @@ impl<'a> ::windows::core::IntoParam<'a, IX509Attribute> for &'a IX509AttributeOS
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IX509AttributeOSVersion {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IX509AttributeOSVersion {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -21084,6 +21124,12 @@ pub struct IX509AttributeOSVersion_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IX509AttributeRenewalCertificate(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IX509AttributeRenewalCertificate {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IX509AttributeRenewalCertificate {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`*"]
@@ -21193,12 +21239,6 @@ impl<'a> ::windows::core::IntoParam<'a, IX509Attribute> for &'a IX509AttributeRe
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IX509AttributeRenewalCertificate {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IX509AttributeRenewalCertificate {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -21239,6 +21279,12 @@ pub struct IX509AttributeRenewalCertificate_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IX509Attributes(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IX509Attributes {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IX509Attributes {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_System_Com\"`*"]
@@ -21320,12 +21366,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IX509Attributes {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IX509Attributes {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -21366,6 +21406,12 @@ pub struct IX509Attributes_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IX509CertificateRequest(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IX509CertificateRequest {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IX509CertificateRequest {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`*"]
@@ -21541,12 +21587,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IX509CertificateRequest {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IX509CertificateRequest {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -21630,6 +21670,12 @@ pub struct IX509CertificateRequest_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IX509CertificateRequestCertificate(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IX509CertificateRequestCertificate {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IX509CertificateRequestCertificate {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`*"]
@@ -22062,12 +22108,6 @@ impl<'a> ::windows::core::IntoParam<'a, IX509CertificateRequestPkcs10> for &'a I
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IX509CertificateRequestCertificate {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IX509CertificateRequestCertificate {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -22128,6 +22168,12 @@ pub struct IX509CertificateRequestCertificate_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IX509CertificateRequestCertificate2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IX509CertificateRequestCertificate2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IX509CertificateRequestCertificate2 {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`*"]
@@ -22606,12 +22652,6 @@ impl<'a> ::windows::core::IntoParam<'a, IX509CertificateRequestCertificate> for 
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IX509CertificateRequestCertificate2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IX509CertificateRequestCertificate2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -22656,6 +22696,12 @@ pub struct IX509CertificateRequestCertificate2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IX509CertificateRequestCmc(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IX509CertificateRequestCmc {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IX509CertificateRequestCmc {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`*"]
@@ -23045,12 +23091,6 @@ impl<'a> ::windows::core::IntoParam<'a, IX509CertificateRequestPkcs7> for &'a IX
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IX509CertificateRequestCmc {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IX509CertificateRequestCmc {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -23150,6 +23190,12 @@ pub struct IX509CertificateRequestCmc_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IX509CertificateRequestCmc2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IX509CertificateRequestCmc2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IX509CertificateRequestCmc2 {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`*"]
@@ -23594,12 +23640,6 @@ impl<'a> ::windows::core::IntoParam<'a, IX509CertificateRequestCmc> for &'a IX50
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IX509CertificateRequestCmc2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IX509CertificateRequestCmc2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -23649,6 +23689,12 @@ pub struct IX509CertificateRequestCmc2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IX509CertificateRequestPkcs10(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IX509CertificateRequestPkcs10 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IX509CertificateRequestPkcs10 {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`*"]
@@ -24001,12 +24047,6 @@ impl<'a> ::windows::core::IntoParam<'a, IX509CertificateRequest> for &'a IX509Ce
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IX509CertificateRequestPkcs10 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IX509CertificateRequestPkcs10 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -24129,6 +24169,12 @@ pub struct IX509CertificateRequestPkcs10_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IX509CertificateRequestPkcs10V2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IX509CertificateRequestPkcs10V2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IX509CertificateRequestPkcs10V2 {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`*"]
@@ -24532,12 +24578,6 @@ impl<'a> ::windows::core::IntoParam<'a, IX509CertificateRequestPkcs10> for &'a I
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IX509CertificateRequestPkcs10V2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IX509CertificateRequestPkcs10V2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -24586,6 +24626,12 @@ pub struct IX509CertificateRequestPkcs10V2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IX509CertificateRequestPkcs10V3(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IX509CertificateRequestPkcs10V3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IX509CertificateRequestPkcs10V3 {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`*"]
@@ -25070,12 +25116,6 @@ impl<'a> ::windows::core::IntoParam<'a, IX509CertificateRequestPkcs10V2> for &'a
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IX509CertificateRequestPkcs10V3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IX509CertificateRequestPkcs10V3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -25136,6 +25176,12 @@ pub struct IX509CertificateRequestPkcs10V3_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IX509CertificateRequestPkcs10V4(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IX509CertificateRequestPkcs10V4 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IX509CertificateRequestPkcs10V4 {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`*"]
@@ -25662,12 +25708,6 @@ impl<'a> ::windows::core::IntoParam<'a, IX509CertificateRequestPkcs10V3> for &'a
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IX509CertificateRequestPkcs10V4 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IX509CertificateRequestPkcs10V4 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -25700,6 +25740,12 @@ pub struct IX509CertificateRequestPkcs10V4_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IX509CertificateRequestPkcs7(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IX509CertificateRequestPkcs7 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IX509CertificateRequestPkcs7 {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`*"]
@@ -25941,12 +25987,6 @@ impl<'a> ::windows::core::IntoParam<'a, IX509CertificateRequest> for &'a IX509Ce
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IX509CertificateRequestPkcs7 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IX509CertificateRequestPkcs7 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -26007,6 +26047,12 @@ pub struct IX509CertificateRequestPkcs7_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IX509CertificateRequestPkcs7V2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IX509CertificateRequestPkcs7V2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IX509CertificateRequestPkcs7V2 {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`*"]
@@ -26293,12 +26339,6 @@ impl<'a> ::windows::core::IntoParam<'a, IX509CertificateRequestPkcs7> for &'a IX
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IX509CertificateRequestPkcs7V2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IX509CertificateRequestPkcs7V2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -26340,6 +26380,12 @@ pub struct IX509CertificateRequestPkcs7V2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IX509CertificateRevocationList(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IX509CertificateRevocationList {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IX509CertificateRevocationList {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`*"]
@@ -26550,12 +26596,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IX509CertificateRevocationList {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IX509CertificateRevocationList {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -26667,6 +26707,12 @@ pub struct IX509CertificateRevocationList_Vtbl {
 #[repr(transparent)]
 pub struct IX509CertificateRevocationListEntries(::windows::core::IUnknown);
 #[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IX509CertificateRevocationListEntries {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "Win32_System_Com")]
 impl IX509CertificateRevocationListEntries {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -26758,12 +26804,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IX509CertificateRevocationListEntries {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IX509CertificateRevocationListEntries {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -26812,6 +26852,12 @@ pub struct IX509CertificateRevocationListEntries_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IX509CertificateRevocationListEntry(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IX509CertificateRevocationListEntry {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IX509CertificateRevocationListEntry {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`*"]
@@ -26901,12 +26947,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IX509CertificateRevocationListEntry {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IX509CertificateRevocationListEntry {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -26954,6 +26994,12 @@ pub struct IX509CertificateRevocationListEntry_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IX509CertificateTemplate(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IX509CertificateTemplate {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IX509CertificateTemplate {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
@@ -27012,12 +27058,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IX509CertificateTemplate {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IX509CertificateTemplate {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -27050,6 +27090,12 @@ pub struct IX509CertificateTemplate_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IX509CertificateTemplateWritable(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IX509CertificateTemplateWritable {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IX509CertificateTemplateWritable {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_System_Com\"`*"]
@@ -27129,12 +27175,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IX509CertificateTemplateWritable {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IX509CertificateTemplateWritable {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -27183,6 +27223,12 @@ pub struct IX509CertificateTemplateWritable_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IX509CertificateTemplates(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IX509CertificateTemplates {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IX509CertificateTemplates {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_System_Com\"`*"]
@@ -27276,12 +27322,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IX509CertificateTemplates {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IX509CertificateTemplates {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -27330,6 +27370,12 @@ pub struct IX509CertificateTemplates_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IX509EndorsementKey(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IX509EndorsementKey {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IX509EndorsementKey {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`*"]
@@ -27438,12 +27484,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IX509EndorsementKey {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IX509EndorsementKey {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -27501,6 +27541,12 @@ pub struct IX509EndorsementKey_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IX509Enrollment(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IX509Enrollment {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IX509Enrollment {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`*"]
@@ -27674,12 +27720,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IX509Enrollment {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IX509Enrollment {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -27776,6 +27816,12 @@ pub struct IX509Enrollment_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IX509Enrollment2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IX509Enrollment2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IX509Enrollment2 {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`*"]
@@ -28001,12 +28047,6 @@ impl<'a> ::windows::core::IntoParam<'a, IX509Enrollment> for &'a IX509Enrollment
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IX509Enrollment2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IX509Enrollment2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -28055,6 +28095,12 @@ pub struct IX509Enrollment2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IX509EnrollmentHelper(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IX509EnrollmentHelper {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IX509EnrollmentHelper {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`*"]
@@ -28127,12 +28173,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IX509EnrollmentHelper {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IX509EnrollmentHelper {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -28174,6 +28214,12 @@ pub struct IX509EnrollmentHelper_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IX509EnrollmentPolicyServer(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IX509EnrollmentPolicyServer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IX509EnrollmentPolicyServer {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`*"]
@@ -28353,12 +28399,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IX509EnrollmentPolicyServer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IX509EnrollmentPolicyServer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -28450,6 +28490,12 @@ pub struct IX509EnrollmentPolicyServer_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IX509EnrollmentStatus(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IX509EnrollmentStatus {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IX509EnrollmentStatus {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`*"]
@@ -28560,12 +28606,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IX509EnrollmentStatus {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IX509EnrollmentStatus {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -28618,6 +28658,12 @@ pub struct IX509EnrollmentStatus_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IX509EnrollmentWebClassFactory(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IX509EnrollmentWebClassFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IX509EnrollmentWebClassFactory {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`*"]
@@ -28676,12 +28722,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IX509EnrollmentWebClassFactory {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IX509EnrollmentWebClassFactory {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -28714,6 +28754,12 @@ pub struct IX509EnrollmentWebClassFactory_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IX509Extension(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IX509Extension {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IX509Extension {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`*"]
@@ -28792,12 +28838,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IX509Extension {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IX509Extension {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -28840,6 +28880,12 @@ pub struct IX509Extension_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IX509ExtensionAlternativeNames(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IX509ExtensionAlternativeNames {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IX509ExtensionAlternativeNames {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`*"]
@@ -28958,12 +29004,6 @@ impl<'a> ::windows::core::IntoParam<'a, IX509Extension> for &'a IX509ExtensionAl
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IX509ExtensionAlternativeNames {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IX509ExtensionAlternativeNames {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -29004,6 +29044,12 @@ pub struct IX509ExtensionAlternativeNames_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IX509ExtensionAuthorityKeyIdentifier(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IX509ExtensionAuthorityKeyIdentifier {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IX509ExtensionAuthorityKeyIdentifier {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`*"]
@@ -29122,12 +29168,6 @@ impl<'a> ::windows::core::IntoParam<'a, IX509Extension> for &'a IX509ExtensionAu
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IX509ExtensionAuthorityKeyIdentifier {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IX509ExtensionAuthorityKeyIdentifier {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -29168,6 +29208,12 @@ pub struct IX509ExtensionAuthorityKeyIdentifier_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IX509ExtensionBasicConstraints(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IX509ExtensionBasicConstraints {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IX509ExtensionBasicConstraints {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`*"]
@@ -29289,12 +29335,6 @@ impl<'a> ::windows::core::IntoParam<'a, IX509Extension> for &'a IX509ExtensionBa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IX509ExtensionBasicConstraints {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IX509ExtensionBasicConstraints {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -29330,6 +29370,12 @@ pub struct IX509ExtensionBasicConstraints_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IX509ExtensionCertificatePolicies(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IX509ExtensionCertificatePolicies {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IX509ExtensionCertificatePolicies {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`*"]
@@ -29448,12 +29494,6 @@ impl<'a> ::windows::core::IntoParam<'a, IX509Extension> for &'a IX509ExtensionCe
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IX509ExtensionCertificatePolicies {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IX509ExtensionCertificatePolicies {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -29494,6 +29534,12 @@ pub struct IX509ExtensionCertificatePolicies_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IX509ExtensionEnhancedKeyUsage(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IX509ExtensionEnhancedKeyUsage {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IX509ExtensionEnhancedKeyUsage {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`*"]
@@ -29612,12 +29658,6 @@ impl<'a> ::windows::core::IntoParam<'a, IX509Extension> for &'a IX509ExtensionEn
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IX509ExtensionEnhancedKeyUsage {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IX509ExtensionEnhancedKeyUsage {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -29658,6 +29698,12 @@ pub struct IX509ExtensionEnhancedKeyUsage_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IX509ExtensionKeyUsage(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IX509ExtensionKeyUsage {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IX509ExtensionKeyUsage {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`*"]
@@ -29774,12 +29820,6 @@ impl<'a> ::windows::core::IntoParam<'a, IX509Extension> for &'a IX509ExtensionKe
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IX509ExtensionKeyUsage {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IX509ExtensionKeyUsage {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -29814,6 +29854,12 @@ pub struct IX509ExtensionKeyUsage_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IX509ExtensionMSApplicationPolicies(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IX509ExtensionMSApplicationPolicies {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IX509ExtensionMSApplicationPolicies {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`*"]
@@ -29932,12 +29978,6 @@ impl<'a> ::windows::core::IntoParam<'a, IX509Extension> for &'a IX509ExtensionMS
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IX509ExtensionMSApplicationPolicies {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IX509ExtensionMSApplicationPolicies {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -29978,6 +30018,12 @@ pub struct IX509ExtensionMSApplicationPolicies_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IX509ExtensionSmimeCapabilities(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IX509ExtensionSmimeCapabilities {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IX509ExtensionSmimeCapabilities {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`*"]
@@ -30096,12 +30142,6 @@ impl<'a> ::windows::core::IntoParam<'a, IX509Extension> for &'a IX509ExtensionSm
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IX509ExtensionSmimeCapabilities {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IX509ExtensionSmimeCapabilities {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -30142,6 +30182,12 @@ pub struct IX509ExtensionSmimeCapabilities_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IX509ExtensionSubjectKeyIdentifier(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IX509ExtensionSubjectKeyIdentifier {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IX509ExtensionSubjectKeyIdentifier {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`*"]
@@ -30260,12 +30306,6 @@ impl<'a> ::windows::core::IntoParam<'a, IX509Extension> for &'a IX509ExtensionSu
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IX509ExtensionSubjectKeyIdentifier {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IX509ExtensionSubjectKeyIdentifier {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -30306,6 +30346,12 @@ pub struct IX509ExtensionSubjectKeyIdentifier_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IX509ExtensionTemplate(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IX509ExtensionTemplate {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IX509ExtensionTemplate {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`*"]
@@ -30434,12 +30480,6 @@ impl<'a> ::windows::core::IntoParam<'a, IX509Extension> for &'a IX509ExtensionTe
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IX509ExtensionTemplate {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IX509ExtensionTemplate {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -30482,6 +30522,12 @@ pub struct IX509ExtensionTemplate_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IX509ExtensionTemplateName(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IX509ExtensionTemplateName {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IX509ExtensionTemplateName {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`*"]
@@ -30600,12 +30646,6 @@ impl<'a> ::windows::core::IntoParam<'a, IX509Extension> for &'a IX509ExtensionTe
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IX509ExtensionTemplateName {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IX509ExtensionTemplateName {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -30646,6 +30686,12 @@ pub struct IX509ExtensionTemplateName_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IX509Extensions(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IX509Extensions {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IX509Extensions {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_System_Com\"`*"]
@@ -30738,12 +30784,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IX509Extensions {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IX509Extensions {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -30792,6 +30832,12 @@ pub struct IX509Extensions_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IX509MachineEnrollmentFactory(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IX509MachineEnrollmentFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IX509MachineEnrollmentFactory {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`*"]
@@ -30850,12 +30896,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IX509MachineEnrollmentFactory {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IX509MachineEnrollmentFactory {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -30888,6 +30928,12 @@ pub struct IX509MachineEnrollmentFactory_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IX509NameValuePair(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IX509NameValuePair {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IX509NameValuePair {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`*"]
@@ -30957,12 +31003,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IX509NameValuePair {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IX509NameValuePair {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -31003,6 +31043,12 @@ pub struct IX509NameValuePair_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IX509NameValuePairs(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IX509NameValuePairs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IX509NameValuePairs {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_System_Com\"`*"]
@@ -31084,12 +31130,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IX509NameValuePairs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IX509NameValuePairs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -31130,6 +31170,12 @@ pub struct IX509NameValuePairs_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IX509PolicyServerListManager(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IX509PolicyServerListManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IX509PolicyServerListManager {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_System_Com\"`*"]
@@ -31215,12 +31261,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IX509PolicyServerListManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IX509PolicyServerListManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -31262,6 +31302,12 @@ pub struct IX509PolicyServerListManager_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IX509PolicyServerUrl(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IX509PolicyServerUrl {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IX509PolicyServerUrl {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`*"]
@@ -31384,12 +31430,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IX509PolicyServerUrl {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IX509PolicyServerUrl {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -31445,6 +31485,12 @@ pub struct IX509PolicyServerUrl_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IX509PrivateKey(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IX509PrivateKey {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IX509PrivateKey {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`*"]
@@ -31786,12 +31832,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IX509PrivateKey {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IX509PrivateKey {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -31965,6 +32005,12 @@ pub struct IX509PrivateKey_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IX509PrivateKey2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IX509PrivateKey2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IX509PrivateKey2 {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`*"]
@@ -32381,12 +32427,6 @@ impl<'a> ::windows::core::IntoParam<'a, IX509PrivateKey> for &'a IX509PrivateKey
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IX509PrivateKey2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IX509PrivateKey2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -32443,6 +32483,12 @@ pub struct IX509PrivateKey2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IX509PublicKey(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IX509PublicKey {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IX509PublicKey {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`*"]
@@ -32534,12 +32580,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IX509PublicKey {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IX509PublicKey {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -32593,6 +32633,12 @@ pub struct IX509PublicKey_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IX509SCEPEnrollment(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IX509SCEPEnrollment {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IX509SCEPEnrollment {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`*"]
@@ -32763,12 +32809,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IX509SCEPEnrollment {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IX509SCEPEnrollment {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -32870,6 +32910,12 @@ pub struct IX509SCEPEnrollment_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IX509SCEPEnrollment2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IX509SCEPEnrollment2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IX509SCEPEnrollment2 {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`*"]
@@ -33098,12 +33144,6 @@ impl<'a> ::windows::core::IntoParam<'a, IX509SCEPEnrollment> for &'a IX509SCEPEn
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IX509SCEPEnrollment2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IX509SCEPEnrollment2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -33153,6 +33193,12 @@ pub struct IX509SCEPEnrollment2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IX509SCEPEnrollmentHelper(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IX509SCEPEnrollmentHelper {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IX509SCEPEnrollmentHelper {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`*"]
@@ -33237,12 +33283,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IX509SCEPEnrollmentHelper {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IX509SCEPEnrollmentHelper {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -33289,6 +33329,12 @@ pub struct IX509SCEPEnrollmentHelper_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IX509SignatureInformation(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IX509SignatureInformation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IX509SignatureInformation {
     #[doc = "*Required features: `\"Win32_Security_Cryptography_Certificates\"`, `\"Win32_System_Com\"`*"]
@@ -33407,12 +33453,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IX509SignatureInformation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IX509SignatureInformation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -33514,6 +33554,7 @@ impl ::core::default::Default for ImportPFXFlags {
 }
 unsafe impl ::windows::core::Abi for ImportPFXFlags {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ImportPFXFlags {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -33541,6 +33582,7 @@ impl ::core::default::Default for InnerRequestLevel {
 }
 unsafe impl ::windows::core::Abi for InnerRequestLevel {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for InnerRequestLevel {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -33572,6 +33614,7 @@ impl ::core::default::Default for InstallResponseRestrictionFlags {
 }
 unsafe impl ::windows::core::Abi for InstallResponseRestrictionFlags {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for InstallResponseRestrictionFlags {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -33631,6 +33674,7 @@ impl ::core::default::Default for KeyAttestationClaimType {
 }
 unsafe impl ::windows::core::Abi for KeyAttestationClaimType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KeyAttestationClaimType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -33664,6 +33708,7 @@ impl ::core::default::Default for KeyIdentifierHashAlgorithm {
 }
 unsafe impl ::windows::core::Abi for KeyIdentifierHashAlgorithm {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KeyIdentifierHashAlgorithm {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -33695,6 +33740,7 @@ impl ::core::default::Default for OCSPRequestFlag {
 }
 unsafe impl ::windows::core::Abi for OCSPRequestFlag {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for OCSPRequestFlag {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -33738,6 +33784,7 @@ impl ::core::default::Default for OCSPSigningFlag {
 }
 unsafe impl ::windows::core::Abi for OCSPSigningFlag {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for OCSPSigningFlag {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -33801,6 +33848,7 @@ impl ::core::default::Default for ObjectIdGroupId {
 }
 unsafe impl ::windows::core::Abi for ObjectIdGroupId {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ObjectIdGroupId {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -33830,6 +33878,7 @@ impl ::core::default::Default for ObjectIdPublicKeyFlags {
 }
 unsafe impl ::windows::core::Abi for ObjectIdPublicKeyFlags {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ObjectIdPublicKeyFlags {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -33863,6 +33912,7 @@ impl ::core::default::Default for PENDING_REQUEST_DESIRED_PROPERTY {
 }
 unsafe impl ::windows::core::Abi for PENDING_REQUEST_DESIRED_PROPERTY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PENDING_REQUEST_DESIRED_PROPERTY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -33892,6 +33942,7 @@ impl ::core::default::Default for PFXExportOptions {
 }
 unsafe impl ::windows::core::Abi for PFXExportOptions {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PFXExportOptions {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -33939,6 +33990,7 @@ impl ::core::default::Default for Pkcs10AllowedSignatureTypes {
 }
 unsafe impl ::windows::core::Abi for Pkcs10AllowedSignatureTypes {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for Pkcs10AllowedSignatureTypes {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -33970,6 +34022,7 @@ impl ::core::default::Default for PolicyQualifierType {
 }
 unsafe impl ::windows::core::Abi for PolicyQualifierType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PolicyQualifierType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -34005,6 +34058,7 @@ impl ::core::default::Default for PolicyServerUrlFlags {
 }
 unsafe impl ::windows::core::Abi for PolicyServerUrlFlags {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PolicyServerUrlFlags {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -34032,6 +34086,7 @@ impl ::core::default::Default for PolicyServerUrlPropertyID {
 }
 unsafe impl ::windows::core::Abi for PolicyServerUrlPropertyID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PolicyServerUrlPropertyID {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -34233,6 +34288,7 @@ impl ::core::default::Default for RequestClientInfoClientId {
 }
 unsafe impl ::windows::core::Abi for RequestClientInfoClientId {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RequestClientInfoClientId {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -34296,6 +34352,7 @@ impl ::core::default::Default for WebEnrollmentFlags {
 }
 unsafe impl ::windows::core::Abi for WebEnrollmentFlags {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WebEnrollmentFlags {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -34323,6 +34380,7 @@ impl ::core::default::Default for WebSecurityLevel {
 }
 unsafe impl ::windows::core::Abi for WebSecurityLevel {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WebSecurityLevel {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -34386,6 +34444,7 @@ impl ::core::default::Default for X500NameFlags {
 }
 unsafe impl ::windows::core::Abi for X500NameFlags {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for X500NameFlags {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -34417,6 +34476,7 @@ impl ::core::default::Default for X509CertificateEnrollmentContext {
 }
 unsafe impl ::windows::core::Abi for X509CertificateEnrollmentContext {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for X509CertificateEnrollmentContext {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -34478,6 +34538,7 @@ impl ::core::default::Default for X509CertificateTemplateEnrollmentFlag {
 }
 unsafe impl ::windows::core::Abi for X509CertificateTemplateEnrollmentFlag {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for X509CertificateTemplateEnrollmentFlag {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -34513,6 +34574,7 @@ impl ::core::default::Default for X509CertificateTemplateGeneralFlag {
 }
 unsafe impl ::windows::core::Abi for X509CertificateTemplateGeneralFlag {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for X509CertificateTemplateGeneralFlag {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -34576,6 +34638,7 @@ impl ::core::default::Default for X509CertificateTemplatePrivateKeyFlag {
 }
 unsafe impl ::windows::core::Abi for X509CertificateTemplatePrivateKeyFlag {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for X509CertificateTemplatePrivateKeyFlag {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -34625,6 +34688,7 @@ impl ::core::default::Default for X509CertificateTemplateSubjectNameFlag {
 }
 unsafe impl ::windows::core::Abi for X509CertificateTemplateSubjectNameFlag {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for X509CertificateTemplateSubjectNameFlag {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -34658,6 +34722,7 @@ impl ::core::default::Default for X509EnrollmentAuthFlags {
 }
 unsafe impl ::windows::core::Abi for X509EnrollmentAuthFlags {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for X509EnrollmentAuthFlags {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -34687,6 +34752,7 @@ impl ::core::default::Default for X509EnrollmentPolicyExportFlags {
 }
 unsafe impl ::windows::core::Abi for X509EnrollmentPolicyExportFlags {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for X509EnrollmentPolicyExportFlags {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -34718,6 +34784,7 @@ impl ::core::default::Default for X509EnrollmentPolicyLoadOption {
 }
 unsafe impl ::windows::core::Abi for X509EnrollmentPolicyLoadOption {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for X509EnrollmentPolicyLoadOption {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -34755,6 +34822,7 @@ impl ::core::default::Default for X509HardwareKeyUsageFlags {
 }
 unsafe impl ::windows::core::Abi for X509HardwareKeyUsageFlags {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for X509HardwareKeyUsageFlags {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -34784,6 +34852,7 @@ impl ::core::default::Default for X509KeyParametersExportType {
 }
 unsafe impl ::windows::core::Abi for X509KeyParametersExportType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for X509KeyParametersExportType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -34813,6 +34882,7 @@ impl ::core::default::Default for X509KeySpec {
 }
 unsafe impl ::windows::core::Abi for X509KeySpec {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for X509KeySpec {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -34858,6 +34928,7 @@ impl ::core::default::Default for X509KeyUsageFlags {
 }
 unsafe impl ::windows::core::Abi for X509KeyUsageFlags {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for X509KeyUsageFlags {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -34891,6 +34962,7 @@ impl ::core::default::Default for X509PrivateKeyExportFlags {
 }
 unsafe impl ::windows::core::Abi for X509PrivateKeyExportFlags {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for X509PrivateKeyExportFlags {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -34924,6 +34996,7 @@ impl ::core::default::Default for X509PrivateKeyProtection {
 }
 unsafe impl ::windows::core::Abi for X509PrivateKeyProtection {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for X509PrivateKeyProtection {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -34959,6 +35032,7 @@ impl ::core::default::Default for X509PrivateKeyUsageFlags {
 }
 unsafe impl ::windows::core::Abi for X509PrivateKeyUsageFlags {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for X509PrivateKeyUsageFlags {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -34992,6 +35066,7 @@ impl ::core::default::Default for X509PrivateKeyVerify {
 }
 unsafe impl ::windows::core::Abi for X509PrivateKeyVerify {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for X509PrivateKeyVerify {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -35053,6 +35128,7 @@ impl ::core::default::Default for X509ProviderType {
 }
 unsafe impl ::windows::core::Abi for X509ProviderType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for X509ProviderType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -35104,6 +35180,7 @@ impl ::core::default::Default for X509RequestInheritOptions {
 }
 unsafe impl ::windows::core::Abi for X509RequestInheritOptions {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for X509RequestInheritOptions {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -35137,6 +35214,7 @@ impl ::core::default::Default for X509RequestType {
 }
 unsafe impl ::windows::core::Abi for X509RequestType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for X509RequestType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -35170,6 +35248,7 @@ impl ::core::default::Default for X509SCEPDisposition {
 }
 unsafe impl ::windows::core::Abi for X509SCEPDisposition {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for X509SCEPDisposition {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -35205,6 +35284,7 @@ impl ::core::default::Default for X509SCEPFailInfo {
 }
 unsafe impl ::windows::core::Abi for X509SCEPFailInfo {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for X509SCEPFailInfo {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -35242,6 +35322,7 @@ impl ::core::default::Default for X509SCEPMessageType {
 }
 unsafe impl ::windows::core::Abi for X509SCEPMessageType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for X509SCEPMessageType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -35269,6 +35350,7 @@ impl ::core::default::Default for X509SCEPProcessMessageFlags {
 }
 unsafe impl ::windows::core::Abi for X509SCEPProcessMessageFlags {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for X509SCEPProcessMessageFlags {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -35310,6 +35392,7 @@ impl ::core::default::Default for XEKL_KEYSIZE {
 }
 unsafe impl ::windows::core::Abi for XEKL_KEYSIZE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for XEKL_KEYSIZE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -35339,6 +35422,7 @@ impl ::core::default::Default for XEKL_KEYSPEC {
 }
 unsafe impl ::windows::core::Abi for XEKL_KEYSPEC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for XEKL_KEYSPEC {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

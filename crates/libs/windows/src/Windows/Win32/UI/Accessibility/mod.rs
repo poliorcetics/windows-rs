@@ -19,6 +19,7 @@ impl ::core::fmt::Debug for ACCESSTIMEOUT {
 }
 unsafe impl ::windows::core::Abi for ACCESSTIMEOUT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ACCESSTIMEOUT {
     fn eq(&self, other: &Self) -> bool {
@@ -56,6 +57,7 @@ impl ::core::default::Default for ACC_UTILITY_STATE_FLAGS {
 }
 unsafe impl ::windows::core::Abi for ACC_UTILITY_STATE_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ACC_UTILITY_STATE_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -207,6 +209,7 @@ impl ::core::default::Default for ActiveEnd {
 }
 unsafe impl ::windows::core::Abi for ActiveEnd {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ActiveEnd {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -247,6 +250,7 @@ impl ::core::default::Default for AnimationStyle {
 }
 unsafe impl ::windows::core::Abi for AnimationStyle {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AnimationStyle {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -274,6 +278,7 @@ impl ::core::default::Default for AnnoScope {
 }
 unsafe impl ::windows::core::Abi for AnnoScope {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AnnoScope {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -389,6 +394,7 @@ impl ::core::default::Default for AsyncContentLoadedState {
 }
 unsafe impl ::windows::core::Abi for AsyncContentLoadedState {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AsyncContentLoadedState {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -417,6 +423,7 @@ impl ::core::default::Default for AutomationElementMode {
 }
 unsafe impl ::windows::core::Abi for AutomationElementMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AutomationElementMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -460,6 +467,7 @@ impl ::core::default::Default for AutomationIdentifierType {
 }
 unsafe impl ::windows::core::Abi for AutomationIdentifierType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AutomationIdentifierType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -499,6 +507,7 @@ impl ::core::default::Default for BulletStyle {
 }
 unsafe impl ::windows::core::Abi for BulletStyle {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for BulletStyle {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -545,6 +554,7 @@ impl ::core::default::Default for CapStyle {
 }
 unsafe impl ::windows::core::Abi for CapStyle {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CapStyle {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -572,6 +582,7 @@ impl ::core::default::Default for CaretBidiMode {
 }
 unsafe impl ::windows::core::Abi for CaretBidiMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CaretBidiMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -601,6 +612,7 @@ impl ::core::default::Default for CaretPosition {
 }
 unsafe impl ::windows::core::Abi for CaretPosition {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CaretPosition {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -634,6 +646,7 @@ impl ::core::default::Default for CoalesceEventsOptions {
 }
 unsafe impl ::windows::core::Abi for CoalesceEventsOptions {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CoalesceEventsOptions {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -670,6 +683,7 @@ impl ::core::default::Default for ConditionType {
 }
 unsafe impl ::windows::core::Abi for ConditionType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ConditionType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -697,6 +711,7 @@ impl ::core::default::Default for ConnectionRecoveryBehaviorOptions {
 }
 unsafe impl ::windows::core::Abi for ConnectionRecoveryBehaviorOptions {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ConnectionRecoveryBehaviorOptions {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -837,6 +852,7 @@ impl ::core::default::Default for DockPosition {
 }
 unsafe impl ::windows::core::Abi for DockPosition {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DockPosition {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -898,6 +914,7 @@ impl ::core::default::Default for EventArgsType {
 }
 unsafe impl ::windows::core::Abi for EventArgsType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EventArgsType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -957,6 +974,7 @@ impl ::core::default::Default for ExpandCollapseState {
 }
 unsafe impl ::windows::core::Abi for ExpandCollapseState {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ExpandCollapseState {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -987,6 +1005,7 @@ impl ::core::fmt::Debug for ExtendedProperty {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for ExtendedProperty {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for ExtendedProperty {
@@ -1025,6 +1044,7 @@ impl ::core::fmt::Debug for FILTERKEYS {
 }
 unsafe impl ::windows::core::Abi for FILTERKEYS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for FILTERKEYS {
     fn eq(&self, other: &Self) -> bool {
@@ -1065,6 +1085,7 @@ impl ::core::default::Default for FillType {
 }
 unsafe impl ::windows::core::Abi for FillType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FillType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1097,6 +1118,7 @@ impl ::core::default::Default for FlowDirections {
 }
 unsafe impl ::windows::core::Abi for FlowDirections {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FlowDirections {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1221,6 +1243,7 @@ impl ::core::fmt::Debug for HIGHCONTRASTA {
 }
 unsafe impl ::windows::core::Abi for HIGHCONTRASTA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HIGHCONTRASTA {
     fn eq(&self, other: &Self) -> bool {
@@ -1253,6 +1276,7 @@ impl ::core::fmt::Debug for HIGHCONTRASTW {
 }
 unsafe impl ::windows::core::Abi for HIGHCONTRASTW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HIGHCONTRASTW {
     fn eq(&self, other: &Self) -> bool {
@@ -1298,6 +1322,7 @@ impl ::core::default::Default for HIGHCONTRASTW_FLAGS {
 }
 unsafe impl ::windows::core::Abi for HIGHCONTRASTW_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HIGHCONTRASTW_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1358,6 +1383,7 @@ impl ::core::fmt::Debug for HUIAEVENT {
 }
 unsafe impl ::windows::core::Abi for HUIAEVENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[repr(transparent)]
 #[derive(:: core :: cmp :: PartialEq, :: core :: cmp :: Eq)]
@@ -1385,6 +1411,7 @@ impl ::core::fmt::Debug for HUIANODE {
 }
 unsafe impl ::windows::core::Abi for HUIANODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[repr(transparent)]
 #[derive(:: core :: cmp :: PartialEq, :: core :: cmp :: Eq)]
@@ -1412,6 +1439,7 @@ impl ::core::fmt::Debug for HUIAPATTERNOBJECT {
 }
 unsafe impl ::windows::core::Abi for HUIAPATTERNOBJECT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[repr(transparent)]
 #[derive(:: core :: cmp :: PartialEq, :: core :: cmp :: Eq)]
@@ -1439,6 +1467,7 @@ impl ::core::fmt::Debug for HUIATEXTRANGE {
 }
 unsafe impl ::windows::core::Abi for HUIATEXTRANGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[repr(transparent)]
 #[derive(:: core :: cmp :: PartialEq, :: core :: cmp :: Eq)]
@@ -1466,6 +1495,7 @@ impl ::core::fmt::Debug for HWINEVENTHOOK {
 }
 unsafe impl ::windows::core::Abi for HWINEVENTHOOK {
     type Abi = Self;
+    type DefaultType = Self;
 }
 pub const HasKeyboardFocus_Property_GUID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xcf8afd39_3f46_4800_9656_b2bf12529905);
 pub const HeaderItem_Control_GUID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe6bc12cb_7c8e_49cf_b168_4a93a32bebb0);
@@ -1517,6 +1547,7 @@ impl ::core::default::Default for HorizontalTextAlignment {
 }
 unsafe impl ::windows::core::Abi for HorizontalTextAlignment {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HorizontalTextAlignment {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1528,6 +1559,11 @@ pub const Hyperlink_Control_GUID: ::windows::core::GUID = ::windows::core::GUID:
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IAccIdentity(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAccIdentity {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAccIdentity {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn GetIdentityString(&self, dwidchild: u32, ppidstring: *mut *mut u8, pdwidstringlen: *mut u32) -> ::windows::core::Result<()> {
@@ -1554,11 +1590,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAccI
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAccIdentity {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAccIdentity {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1583,6 +1614,11 @@ pub struct IAccIdentity_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IAccPropServer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAccPropServer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAccPropServer {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com", feature = "Win32_System_Ole"))]
@@ -1608,11 +1644,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IAccPropS
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAccPropServer {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IAccPropServer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IAccPropServer {
@@ -1642,6 +1673,11 @@ pub struct IAccPropServer_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IAccPropServices(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAccPropServices {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAccPropServices {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com", feature = "Win32_System_Ole"))]
@@ -1737,11 +1773,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAccP
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAccPropServices {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAccPropServices {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1820,6 +1851,12 @@ pub struct IAccPropServices_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IAccessible(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IAccessible {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IAccessible {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`, `\"Win32_System_Com\"`*"]
@@ -1991,12 +2028,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IAccessible {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IAccessible {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2105,6 +2136,11 @@ pub struct IAccessible_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IAccessibleEx(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAccessibleEx {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAccessibleEx {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn GetObjectForChild(&self, idchild: i32) -> ::windows::core::Result<IAccessibleEx> {
@@ -2148,11 +2184,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAcce
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAccessibleEx {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAccessibleEx {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2186,6 +2217,11 @@ pub struct IAccessibleEx_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IAccessibleHandler(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAccessibleHandler {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAccessibleHandler {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -2212,11 +2248,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IAccessib
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAccessibleHandler {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IAccessibleHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IAccessibleHandler {
@@ -2246,6 +2277,11 @@ pub struct IAccessibleHandler_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IAccessibleHostingElementProviders(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAccessibleHostingElementProviders {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAccessibleHostingElementProviders {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -2279,11 +2315,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAcce
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAccessibleHostingElementProviders {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAccessibleHostingElementProviders {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2312,6 +2343,11 @@ pub struct IAccessibleHostingElementProviders_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IAccessibleWindowlessSite(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAccessibleWindowlessSite {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAccessibleWindowlessSite {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn AcquireObjectIdRange<'a, Param1: ::windows::core::IntoParam<'a, IAccessibleHandler>>(&self, rangesize: i32, prangeowner: Param1) -> ::windows::core::Result<i32> {
@@ -2355,11 +2391,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAcce
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAccessibleWindowlessSite {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAccessibleWindowlessSite {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2393,6 +2424,11 @@ pub struct IAccessibleWindowlessSite_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IAnnotationProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAnnotationProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAnnotationProvider {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn AnnotationTypeId(&self) -> ::windows::core::Result<i32> {
@@ -2443,11 +2479,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAnno
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAnnotationProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAnnotationProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2485,6 +2516,11 @@ pub struct IAnnotationProvider_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct ICustomNavigationProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICustomNavigationProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ICustomNavigationProvider {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn Navigate(&self, direction: NavigateDirection) -> ::windows::core::Result<IRawElementProviderSimple> {
@@ -2512,11 +2548,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ICust
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ICustomNavigationProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ICustomNavigationProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2541,6 +2572,11 @@ pub struct ICustomNavigationProvider_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IDockProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDockProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDockProvider {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn SetDockPosition(&self, dockposition: DockPosition) -> ::windows::core::Result<()> {
@@ -2572,11 +2608,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDock
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDockProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDockProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2602,6 +2633,11 @@ pub struct IDockProvider_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IDragProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDragProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDragProvider {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -2648,11 +2684,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDrag
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDragProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDragProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2692,6 +2723,11 @@ pub struct IDragProvider_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IDropTargetProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDropTargetProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDropTargetProvider {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -2726,11 +2762,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDrop
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDropTargetProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDropTargetProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2762,6 +2793,11 @@ pub struct IDropTargetProvider_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IExpandCollapseProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IExpandCollapseProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IExpandCollapseProvider {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn Expand(&self) -> ::windows::core::Result<()> {
@@ -2797,11 +2833,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IExpa
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IExpandCollapseProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IExpandCollapseProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2828,6 +2859,11 @@ pub struct IExpandCollapseProvider_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IGridItemProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGridItemProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IGridItemProvider {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn Row(&self) -> ::windows::core::Result<i32> {
@@ -2875,11 +2911,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IGrid
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IGridItemProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IGridItemProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2908,6 +2939,11 @@ pub struct IGridItemProvider_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IGridProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGridProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IGridProvider {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn GetItem(&self, row: i32, column: i32) -> ::windows::core::Result<IRawElementProviderSimple> {
@@ -2945,11 +2981,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IGrid
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IGridProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IGridProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2978,6 +3009,11 @@ pub const IIS_IsOleaccProxy: ::windows::core::GUID = ::windows::core::GUID::from
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IInvokeProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInvokeProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IInvokeProvider {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn Invoke(&self) -> ::windows::core::Result<()> {
@@ -3004,11 +3040,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IInvo
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IInvokeProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IInvokeProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3033,6 +3064,11 @@ pub struct IInvokeProvider_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IItemContainerProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IItemContainerProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IItemContainerProvider {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com", feature = "Win32_System_Ole"))]
@@ -3059,11 +3095,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IItemCont
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IItemContainerProvider {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IItemContainerProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IItemContainerProvider {
@@ -3093,6 +3124,11 @@ pub struct IItemContainerProvider_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct ILegacyIAccessibleProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILegacyIAccessibleProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ILegacyIAccessibleProvider {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn Select(&self, flagsselect: i32) -> ::windows::core::Result<()> {
@@ -3190,11 +3226,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ILega
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ILegacyIAccessibleProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ILegacyIAccessibleProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3256,6 +3287,11 @@ pub struct ILegacyIAccessibleProvider_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IMultipleViewProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMultipleViewProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMultipleViewProvider {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -3299,11 +3335,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMult
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMultipleViewProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMultipleViewProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3337,6 +3368,11 @@ pub struct IMultipleViewProvider_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IObjectModelProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IObjectModelProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IObjectModelProvider {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn GetUnderlyingObjectModel(&self) -> ::windows::core::Result<::windows::core::IUnknown> {
@@ -3364,11 +3400,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IObje
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IObjectModelProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IObjectModelProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3393,6 +3424,11 @@ pub struct IObjectModelProvider_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IProxyProviderWinEventHandler(::windows::core::IUnknown);
+impl ::core::clone::Clone for IProxyProviderWinEventHandler {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IProxyProviderWinEventHandler {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -3418,11 +3454,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IProxyPro
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IProxyProviderWinEventHandler {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IProxyProviderWinEventHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IProxyProviderWinEventHandler {
@@ -3452,6 +3483,11 @@ pub struct IProxyProviderWinEventHandler_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IProxyProviderWinEventSink(::windows::core::IUnknown);
+impl ::core::clone::Clone for IProxyProviderWinEventSink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IProxyProviderWinEventSink {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com", feature = "Win32_System_Ole"))]
@@ -3488,11 +3524,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IProx
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IProxyProviderWinEventSink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IProxyProviderWinEventSink {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3525,6 +3556,11 @@ pub struct IProxyProviderWinEventSink_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IRangeValueProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRangeValueProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRangeValueProvider {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn SetValue(&self, val: f64) -> ::windows::core::Result<()> {
@@ -3582,11 +3618,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IRang
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IRangeValueProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IRangeValueProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3620,6 +3651,11 @@ pub struct IRangeValueProvider_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IRawElementProviderAdviseEvents(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRawElementProviderAdviseEvents {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRawElementProviderAdviseEvents {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -3650,11 +3686,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IRawEleme
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IRawElementProviderAdviseEvents {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IRawElementProviderAdviseEvents {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IRawElementProviderAdviseEvents {
@@ -3688,6 +3719,11 @@ pub struct IRawElementProviderAdviseEvents_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IRawElementProviderFragment(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRawElementProviderFragment {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRawElementProviderFragment {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn Navigate(&self, direction: NavigateDirection) -> ::windows::core::Result<IRawElementProviderFragment> {
@@ -3741,11 +3777,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IRawE
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IRawElementProviderFragment {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IRawElementProviderFragment {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3781,6 +3812,11 @@ pub struct IRawElementProviderFragment_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IRawElementProviderFragmentRoot(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRawElementProviderFragmentRoot {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRawElementProviderFragmentRoot {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn ElementProviderFromPoint(&self, x: f64, y: f64) -> ::windows::core::Result<IRawElementProviderFragment> {
@@ -3813,11 +3849,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IRawE
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IRawElementProviderFragmentRoot {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IRawElementProviderFragmentRoot {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3843,6 +3874,11 @@ pub struct IRawElementProviderFragmentRoot_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IRawElementProviderHostingAccessibles(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRawElementProviderHostingAccessibles {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRawElementProviderHostingAccessibles {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -3869,11 +3905,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IRawEleme
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IRawElementProviderHostingAccessibles {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IRawElementProviderHostingAccessibles {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IRawElementProviderHostingAccessibles {
@@ -3903,6 +3934,11 @@ pub struct IRawElementProviderHostingAccessibles_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IRawElementProviderHwndOverride(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRawElementProviderHwndOverride {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRawElementProviderHwndOverride {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -3929,11 +3965,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IRawEleme
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IRawElementProviderHwndOverride {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IRawElementProviderHwndOverride {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IRawElementProviderHwndOverride {
@@ -3963,6 +3994,11 @@ pub struct IRawElementProviderHwndOverride_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IRawElementProviderSimple(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRawElementProviderSimple {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRawElementProviderSimple {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn ProviderOptions(&self) -> ::windows::core::Result<ProviderOptions> {
@@ -4006,11 +4042,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IRawE
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IRawElementProviderSimple {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IRawElementProviderSimple {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4041,6 +4072,11 @@ pub struct IRawElementProviderSimple_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IRawElementProviderSimple2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRawElementProviderSimple2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRawElementProviderSimple2 {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn ProviderOptions(&self) -> ::windows::core::Result<ProviderOptions> {
@@ -4108,11 +4144,6 @@ impl<'a> ::windows::core::IntoParam<'a, IRawElementProviderSimple> for &'a IRawE
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IRawElementProviderSimple2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IRawElementProviderSimple2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4137,6 +4168,11 @@ pub struct IRawElementProviderSimple2_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IRawElementProviderSimple3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRawElementProviderSimple3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRawElementProviderSimple3 {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn ProviderOptions(&self) -> ::windows::core::Result<ProviderOptions> {
@@ -4230,11 +4266,6 @@ impl<'a> ::windows::core::IntoParam<'a, IRawElementProviderSimple2> for &'a IRaw
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IRawElementProviderSimple3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IRawElementProviderSimple3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4262,6 +4293,11 @@ pub struct IRawElementProviderSimple3_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IRawElementProviderWindowlessSite(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRawElementProviderWindowlessSite {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRawElementProviderWindowlessSite {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn GetAdjacentFragment(&self, direction: NavigateDirection) -> ::windows::core::Result<IRawElementProviderFragment> {
@@ -4295,11 +4331,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IRawE
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IRawElementProviderWindowlessSite {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IRawElementProviderWindowlessSite {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4328,6 +4359,11 @@ pub struct IRawElementProviderWindowlessSite_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IRichEditUiaInformation(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRichEditUiaInformation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRichEditUiaInformation {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn GetBoundaryRectangle(&self, puiarect: *mut UiaRect) -> ::windows::core::Result<()> {
@@ -4358,11 +4394,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IRich
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IRichEditUiaInformation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IRichEditUiaInformation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4388,6 +4419,11 @@ pub struct IRichEditUiaInformation_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IRicheditWindowlessAccessibility(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRicheditWindowlessAccessibility {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRicheditWindowlessAccessibility {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn CreateProvider<'a, Param0: ::windows::core::IntoParam<'a, IRawElementProviderWindowlessSite>>(&self, psite: Param0) -> ::windows::core::Result<IRawElementProviderSimple> {
@@ -4415,11 +4451,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IRich
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IRicheditWindowlessAccessibility {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IRicheditWindowlessAccessibility {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4444,6 +4475,11 @@ pub struct IRicheditWindowlessAccessibility_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IScrollItemProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IScrollItemProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IScrollItemProvider {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn ScrollIntoView(&self) -> ::windows::core::Result<()> {
@@ -4470,11 +4506,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IScro
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IScrollItemProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IScrollItemProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4499,6 +4530,11 @@ pub struct IScrollItemProvider_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IScrollProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IScrollProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IScrollProvider {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn Scroll(&self, horizontalamount: ScrollAmount, verticalamount: ScrollAmount) -> ::windows::core::Result<()> {
@@ -4561,11 +4597,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IScro
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IScrollProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IScrollProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4603,6 +4634,11 @@ pub struct IScrollProvider_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct ISelectionItemProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISelectionItemProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISelectionItemProvider {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn Select(&self) -> ::windows::core::Result<()> {
@@ -4648,11 +4684,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISele
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISelectionItemProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISelectionItemProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4684,6 +4715,11 @@ pub struct ISelectionItemProvider_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct ISelectionProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISelectionProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISelectionProvider {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -4724,11 +4760,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISele
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISelectionProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISelectionProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4764,6 +4795,11 @@ pub struct ISelectionProvider_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct ISelectionProvider2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISelectionProvider2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISelectionProvider2 {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -4844,11 +4880,6 @@ impl<'a> ::windows::core::IntoParam<'a, ISelectionProvider> for &'a ISelectionPr
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISelectionProvider2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISelectionProvider2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4876,6 +4907,11 @@ pub struct ISelectionProvider2_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct ISpreadsheetItemProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpreadsheetItemProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISpreadsheetItemProvider {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -4916,11 +4952,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISpre
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISpreadsheetItemProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISpreadsheetItemProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4956,6 +4987,11 @@ pub struct ISpreadsheetItemProvider_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct ISpreadsheetProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpreadsheetProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISpreadsheetProvider {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn GetItemByName<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, name: Param0) -> ::windows::core::Result<IRawElementProviderSimple> {
@@ -4983,11 +5019,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISpre
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISpreadsheetProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISpreadsheetProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5012,6 +5043,11 @@ pub struct ISpreadsheetProvider_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IStylesProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStylesProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IStylesProvider {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn StyleId(&self) -> ::windows::core::Result<i32> {
@@ -5073,11 +5109,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IStyl
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IStylesProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IStylesProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5120,6 +5151,11 @@ pub struct IStylesProvider_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct ISynchronizedInputProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISynchronizedInputProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISynchronizedInputProvider {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn StartListening(&self, inputtype: SynchronizedInputType) -> ::windows::core::Result<()> {
@@ -5150,11 +5186,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISync
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISynchronizedInputProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISynchronizedInputProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5180,6 +5211,11 @@ pub struct ISynchronizedInputProvider_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct ITableItemProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITableItemProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITableItemProvider {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -5214,11 +5250,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITabl
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITableItemProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITableItemProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5250,6 +5281,11 @@ pub struct ITableItemProvider_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct ITableProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITableProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITableProvider {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -5289,11 +5325,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITabl
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITableProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITableProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5326,6 +5357,11 @@ pub struct ITableProvider_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct ITextChildProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITextChildProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITextChildProvider {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn TextContainer(&self) -> ::windows::core::Result<IRawElementProviderSimple> {
@@ -5358,11 +5394,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IText
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITextChildProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITextChildProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5388,6 +5419,11 @@ pub struct ITextChildProvider_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct ITextEditProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITextEditProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITextEditProvider {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -5472,11 +5508,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITextProvider> for &'a ITextEditProvider
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITextEditProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITextEditProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5502,6 +5533,11 @@ pub struct ITextEditProvider_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct ITextProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITextProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITextProvider {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -5556,11 +5592,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IText
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITextProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITextProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5596,6 +5627,11 @@ pub struct ITextProvider_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct ITextProvider2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITextProvider2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITextProvider2 {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -5680,11 +5716,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITextProvider> for &'a ITextProvider2 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITextProvider2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITextProvider2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5713,6 +5744,11 @@ pub struct ITextProvider2_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct ITextRangeProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITextRangeProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITextRangeProvider {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn Clone(&self) -> ::windows::core::Result<ITextRangeProvider> {
@@ -5827,11 +5863,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IText
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITextRangeProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITextRangeProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5897,6 +5928,11 @@ pub struct ITextRangeProvider_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct ITextRangeProvider2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITextRangeProvider2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITextRangeProvider2 {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn Clone(&self) -> ::windows::core::Result<ITextRangeProvider> {
@@ -6035,11 +6071,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITextRangeProvider> for &'a ITextRangePr
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITextRangeProvider2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITextRangeProvider2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6064,6 +6095,11 @@ pub struct ITextRangeProvider2_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IToggleProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IToggleProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IToggleProvider {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn Toggle(&self) -> ::windows::core::Result<()> {
@@ -6095,11 +6131,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITogg
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IToggleProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IToggleProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6125,6 +6156,11 @@ pub struct IToggleProvider_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct ITransformProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITransformProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITransformProvider {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn Move(&self, x: f64, y: f64) -> ::windows::core::Result<()> {
@@ -6177,11 +6213,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITran
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITransformProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITransformProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6220,6 +6251,11 @@ pub struct ITransformProvider_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct ITransformProvider2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITransformProvider2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITransformProvider2 {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn Move(&self, x: f64, y: f64) -> ::windows::core::Result<()> {
@@ -6321,11 +6357,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITransformProvider> for &'a ITransformPr
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITransformProvider2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITransformProvider2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6358,6 +6389,11 @@ pub struct ITransformProvider2_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IUIAutomation(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAutomation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAutomation {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -6664,11 +6700,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAu
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAutomation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAutomation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6816,6 +6847,11 @@ pub struct IUIAutomation_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IUIAutomation2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAutomation2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAutomation2 {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -7171,11 +7207,6 @@ impl<'a> ::windows::core::IntoParam<'a, IUIAutomation> for &'a IUIAutomation2 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAutomation2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAutomation2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7211,6 +7242,11 @@ pub struct IUIAutomation2_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IUIAutomation3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAutomation3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAutomation3 {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -7594,11 +7630,6 @@ impl<'a> ::windows::core::IntoParam<'a, IUIAutomation2> for &'a IUIAutomation3 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAutomation3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAutomation3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7624,6 +7655,11 @@ pub struct IUIAutomation3_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IUIAutomation4(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAutomation4 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAutomation4 {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -8035,11 +8071,6 @@ impl<'a> ::windows::core::IntoParam<'a, IUIAutomation3> for &'a IUIAutomation4 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAutomation4 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAutomation4 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8065,6 +8096,11 @@ pub struct IUIAutomation4_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IUIAutomation5(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAutomation5 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAutomation5 {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -8504,11 +8540,6 @@ impl<'a> ::windows::core::IntoParam<'a, IUIAutomation4> for &'a IUIAutomation5 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAutomation5 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAutomation5 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8534,6 +8565,11 @@ pub struct IUIAutomation5_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IUIAutomation6(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAutomation6 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAutomation6 {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -9032,11 +9068,6 @@ impl<'a> ::windows::core::IntoParam<'a, IUIAutomation5> for &'a IUIAutomation6 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAutomation6 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAutomation6 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9069,6 +9100,11 @@ pub struct IUIAutomation6_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IUIAutomationActiveTextPositionChangedEventHandler(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAutomationActiveTextPositionChangedEventHandler {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAutomationActiveTextPositionChangedEventHandler {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn HandleActiveTextPositionChangedEvent<'a, Param0: ::windows::core::IntoParam<'a, IUIAutomationElement>, Param1: ::windows::core::IntoParam<'a, IUIAutomationTextRange>>(&self, sender: Param0, range: Param1) -> ::windows::core::Result<()> {
@@ -9095,11 +9131,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAu
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAutomationActiveTextPositionChangedEventHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAutomationActiveTextPositionChangedEventHandler {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9124,6 +9155,11 @@ pub struct IUIAutomationActiveTextPositionChangedEventHandler_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IUIAutomationAndCondition(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAutomationAndCondition {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAutomationAndCondition {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn ChildCount(&self) -> ::windows::core::Result<i32> {
@@ -9181,11 +9217,6 @@ impl<'a> ::windows::core::IntoParam<'a, IUIAutomationCondition> for &'a IUIAutom
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAutomationAndCondition {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAutomationAndCondition {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9215,6 +9246,11 @@ pub struct IUIAutomationAndCondition_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IUIAutomationAnnotationPattern(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAutomationAnnotationPattern {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAutomationAnnotationPattern {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn CurrentAnnotationTypeId(&self) -> ::windows::core::Result<i32> {
@@ -9293,11 +9329,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAu
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAutomationAnnotationPattern {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAutomationAnnotationPattern {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9349,6 +9380,11 @@ pub struct IUIAutomationAnnotationPattern_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IUIAutomationBoolCondition(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAutomationBoolCondition {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAutomationBoolCondition {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -9397,11 +9433,6 @@ impl<'a> ::windows::core::IntoParam<'a, IUIAutomationCondition> for &'a IUIAutom
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAutomationBoolCondition {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAutomationBoolCondition {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9429,6 +9460,11 @@ pub struct IUIAutomationBoolCondition_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IUIAutomationCacheRequest(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAutomationCacheRequest {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAutomationCacheRequest {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn AddProperty(&self, propertyid: i32) -> ::windows::core::Result<()> {
@@ -9491,11 +9527,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAu
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAutomationCacheRequest {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAutomationCacheRequest {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9528,6 +9559,11 @@ pub struct IUIAutomationCacheRequest_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IUIAutomationChangesEventHandler(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAutomationChangesEventHandler {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAutomationChangesEventHandler {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com", feature = "Win32_System_Ole"))]
@@ -9553,11 +9589,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IUIAutoma
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAutomationChangesEventHandler {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IUIAutomationChangesEventHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IUIAutomationChangesEventHandler {
@@ -9587,6 +9618,11 @@ pub struct IUIAutomationChangesEventHandler_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IUIAutomationCondition(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAutomationCondition {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAutomationCondition {}
 impl ::core::convert::From<IUIAutomationCondition> for ::windows::core::IUnknown {
     fn from(value: IUIAutomationCondition) -> Self {
@@ -9606,11 +9642,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IUIAutoma
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAutomationCondition {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IUIAutomationCondition {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IUIAutomationCondition {
@@ -9636,6 +9667,11 @@ pub struct IUIAutomationCondition_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IUIAutomationCustomNavigationPattern(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAutomationCustomNavigationPattern {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAutomationCustomNavigationPattern {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn Navigate(&self, direction: NavigateDirection) -> ::windows::core::Result<IUIAutomationElement> {
@@ -9663,11 +9699,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAu
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAutomationCustomNavigationPattern {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAutomationCustomNavigationPattern {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9692,6 +9723,11 @@ pub struct IUIAutomationCustomNavigationPattern_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IUIAutomationDockPattern(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAutomationDockPattern {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAutomationDockPattern {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn SetDockPosition(&self, dockpos: DockPosition) -> ::windows::core::Result<()> {
@@ -9728,11 +9764,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAu
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAutomationDockPattern {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAutomationDockPattern {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9759,6 +9790,11 @@ pub struct IUIAutomationDockPattern_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IUIAutomationDragPattern(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAutomationDragPattern {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAutomationDragPattern {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -9827,11 +9863,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAu
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAutomationDragPattern {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAutomationDragPattern {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9881,6 +9912,11 @@ pub struct IUIAutomationDragPattern_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IUIAutomationDropTargetPattern(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAutomationDropTargetPattern {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAutomationDropTargetPattern {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -9927,11 +9963,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAu
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAutomationDropTargetPattern {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAutomationDropTargetPattern {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9971,6 +10002,11 @@ pub struct IUIAutomationDropTargetPattern_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IUIAutomationElement(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAutomationElement {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAutomationElement {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn SetFocus(&self) -> ::windows::core::Result<()> {
@@ -10455,11 +10491,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAu
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAutomationElement {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAutomationElement {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10727,6 +10758,11 @@ pub struct IUIAutomationElement_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IUIAutomationElement2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAutomationElement2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAutomationElement2 {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn SetFocus(&self) -> ::windows::core::Result<()> {
@@ -11263,11 +11299,6 @@ impl<'a> ::windows::core::IntoParam<'a, IUIAutomationElement> for &'a IUIAutomat
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAutomationElement2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAutomationElement2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11303,6 +11334,11 @@ pub struct IUIAutomationElement2_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IUIAutomationElement3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAutomationElement3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAutomationElement3 {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn SetFocus(&self) -> ::windows::core::Result<()> {
@@ -11875,11 +11911,6 @@ impl<'a> ::windows::core::IntoParam<'a, IUIAutomationElement2> for &'a IUIAutoma
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAutomationElement3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAutomationElement3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11912,6 +11943,11 @@ pub struct IUIAutomationElement3_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IUIAutomationElement4(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAutomationElement4 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAutomationElement4 {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn SetFocus(&self) -> ::windows::core::Result<()> {
@@ -12556,11 +12592,6 @@ impl<'a> ::windows::core::IntoParam<'a, IUIAutomationElement3> for &'a IUIAutoma
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAutomationElement4 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAutomationElement4 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12600,6 +12631,11 @@ pub struct IUIAutomationElement4_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IUIAutomationElement5(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAutomationElement5 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAutomationElement5 {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn SetFocus(&self) -> ::windows::core::Result<()> {
@@ -13286,11 +13322,6 @@ impl<'a> ::windows::core::IntoParam<'a, IUIAutomationElement4> for &'a IUIAutoma
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAutomationElement5 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAutomationElement5 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13324,6 +13355,11 @@ pub struct IUIAutomationElement5_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IUIAutomationElement6(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAutomationElement6 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAutomationElement6 {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn SetFocus(&self) -> ::windows::core::Result<()> {
@@ -14042,11 +14078,6 @@ impl<'a> ::windows::core::IntoParam<'a, IUIAutomationElement5> for &'a IUIAutoma
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAutomationElement6 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAutomationElement6 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -14078,6 +14109,11 @@ pub struct IUIAutomationElement6_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IUIAutomationElement7(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAutomationElement7 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAutomationElement7 {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn SetFocus(&self) -> ::windows::core::Result<()> {
@@ -14842,11 +14878,6 @@ impl<'a> ::windows::core::IntoParam<'a, IUIAutomationElement6> for &'a IUIAutoma
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAutomationElement7 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAutomationElement7 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -14878,6 +14909,11 @@ pub struct IUIAutomationElement7_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IUIAutomationElement8(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAutomationElement8 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAutomationElement8 {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn SetFocus(&self) -> ::windows::core::Result<()> {
@@ -15672,11 +15708,6 @@ impl<'a> ::windows::core::IntoParam<'a, IUIAutomationElement7> for &'a IUIAutoma
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAutomationElement8 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAutomationElement8 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -15702,6 +15733,11 @@ pub struct IUIAutomationElement8_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IUIAutomationElement9(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAutomationElement9 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAutomationElement9 {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn SetFocus(&self) -> ::windows::core::Result<()> {
@@ -16528,11 +16564,6 @@ impl<'a> ::windows::core::IntoParam<'a, IUIAutomationElement8> for &'a IUIAutoma
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAutomationElement9 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAutomationElement9 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -16564,6 +16595,11 @@ pub struct IUIAutomationElement9_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IUIAutomationElementArray(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAutomationElementArray {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAutomationElementArray {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn Length(&self) -> ::windows::core::Result<i32> {
@@ -16596,11 +16632,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAu
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAutomationElementArray {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAutomationElementArray {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -16626,6 +16657,11 @@ pub struct IUIAutomationElementArray_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IUIAutomationEventHandler(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAutomationEventHandler {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAutomationEventHandler {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn HandleAutomationEvent<'a, Param0: ::windows::core::IntoParam<'a, IUIAutomationElement>>(&self, sender: Param0, eventid: i32) -> ::windows::core::Result<()> {
@@ -16652,11 +16688,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAu
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAutomationEventHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAutomationEventHandler {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -16681,6 +16712,11 @@ pub struct IUIAutomationEventHandler_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IUIAutomationEventHandlerGroup(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAutomationEventHandlerGroup {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAutomationEventHandlerGroup {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn AddActiveTextPositionChangedEventHandler<'a, Param1: ::windows::core::IntoParam<'a, IUIAutomationCacheRequest>, Param2: ::windows::core::IntoParam<'a, IUIAutomationActiveTextPositionChangedEventHandler>>(&self, scope: TreeScope, cacherequest: Param1, handler: Param2) -> ::windows::core::Result<()> {
@@ -16731,11 +16767,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAu
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAutomationEventHandlerGroup {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAutomationEventHandlerGroup {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -16766,6 +16797,11 @@ pub struct IUIAutomationEventHandlerGroup_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IUIAutomationExpandCollapsePattern(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAutomationExpandCollapsePattern {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAutomationExpandCollapsePattern {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn Expand(&self) -> ::windows::core::Result<()> {
@@ -16806,11 +16842,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAu
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAutomationExpandCollapsePattern {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAutomationExpandCollapsePattern {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -16838,6 +16869,11 @@ pub struct IUIAutomationExpandCollapsePattern_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IUIAutomationFocusChangedEventHandler(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAutomationFocusChangedEventHandler {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAutomationFocusChangedEventHandler {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn HandleFocusChangedEvent<'a, Param0: ::windows::core::IntoParam<'a, IUIAutomationElement>>(&self, sender: Param0) -> ::windows::core::Result<()> {
@@ -16864,11 +16900,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAu
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAutomationFocusChangedEventHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAutomationFocusChangedEventHandler {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -16893,6 +16924,11 @@ pub struct IUIAutomationFocusChangedEventHandler_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IUIAutomationGridItemPattern(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAutomationGridItemPattern {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAutomationGridItemPattern {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn CurrentContainingGrid(&self) -> ::windows::core::Result<IUIAutomationElement> {
@@ -16965,11 +17001,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAu
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAutomationGridItemPattern {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAutomationGridItemPattern {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -17003,6 +17034,11 @@ pub struct IUIAutomationGridItemPattern_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IUIAutomationGridPattern(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAutomationGridPattern {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAutomationGridPattern {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn GetItem(&self, row: i32, column: i32) -> ::windows::core::Result<IUIAutomationElement> {
@@ -17050,11 +17086,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAu
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAutomationGridPattern {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAutomationGridPattern {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -17083,6 +17114,11 @@ pub struct IUIAutomationGridPattern_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IUIAutomationInvokePattern(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAutomationInvokePattern {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAutomationInvokePattern {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn Invoke(&self) -> ::windows::core::Result<()> {
@@ -17109,11 +17145,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAu
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAutomationInvokePattern {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAutomationInvokePattern {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -17138,6 +17169,11 @@ pub struct IUIAutomationInvokePattern_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IUIAutomationItemContainerPattern(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAutomationItemContainerPattern {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAutomationItemContainerPattern {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com", feature = "Win32_System_Ole"))]
@@ -17164,11 +17200,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IUIAutoma
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAutomationItemContainerPattern {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IUIAutomationItemContainerPattern {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IUIAutomationItemContainerPattern {
@@ -17198,6 +17229,11 @@ pub struct IUIAutomationItemContainerPattern_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IUIAutomationLegacyIAccessiblePattern(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAutomationLegacyIAccessiblePattern {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAutomationLegacyIAccessiblePattern {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn Select(&self, flagsselect: i32) -> ::windows::core::Result<()> {
@@ -17350,11 +17386,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAu
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAutomationLegacyIAccessiblePattern {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAutomationLegacyIAccessiblePattern {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -17441,6 +17472,11 @@ pub struct IUIAutomationLegacyIAccessiblePattern_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IUIAutomationMultipleViewPattern(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAutomationMultipleViewPattern {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAutomationMultipleViewPattern {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -17495,11 +17531,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAu
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAutomationMultipleViewPattern {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAutomationMultipleViewPattern {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -17538,6 +17569,11 @@ pub struct IUIAutomationMultipleViewPattern_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IUIAutomationNotCondition(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAutomationNotCondition {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAutomationNotCondition {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn GetChild(&self) -> ::windows::core::Result<IUIAutomationCondition> {
@@ -17585,11 +17621,6 @@ impl<'a> ::windows::core::IntoParam<'a, IUIAutomationCondition> for &'a IUIAutom
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAutomationNotCondition {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAutomationNotCondition {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -17614,6 +17645,11 @@ pub struct IUIAutomationNotCondition_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IUIAutomationNotificationEventHandler(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAutomationNotificationEventHandler {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAutomationNotificationEventHandler {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -17639,11 +17675,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IUIAutoma
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAutomationNotificationEventHandler {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IUIAutomationNotificationEventHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IUIAutomationNotificationEventHandler {
@@ -17673,6 +17704,11 @@ pub struct IUIAutomationNotificationEventHandler_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IUIAutomationObjectModelPattern(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAutomationObjectModelPattern {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAutomationObjectModelPattern {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn GetUnderlyingObjectModel(&self) -> ::windows::core::Result<::windows::core::IUnknown> {
@@ -17700,11 +17736,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAu
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAutomationObjectModelPattern {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAutomationObjectModelPattern {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -17729,6 +17760,11 @@ pub struct IUIAutomationObjectModelPattern_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IUIAutomationOrCondition(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAutomationOrCondition {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAutomationOrCondition {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn ChildCount(&self) -> ::windows::core::Result<i32> {
@@ -17786,11 +17822,6 @@ impl<'a> ::windows::core::IntoParam<'a, IUIAutomationCondition> for &'a IUIAutom
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAutomationOrCondition {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAutomationOrCondition {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -17820,6 +17851,11 @@ pub struct IUIAutomationOrCondition_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IUIAutomationPatternHandler(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAutomationPatternHandler {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAutomationPatternHandler {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn CreateClientWrapper<'a, Param0: ::windows::core::IntoParam<'a, IUIAutomationPatternInstance>>(&self, ppatterninstance: Param0) -> ::windows::core::Result<::windows::core::IUnknown> {
@@ -17851,11 +17887,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAu
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAutomationPatternHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAutomationPatternHandler {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -17881,6 +17912,11 @@ pub struct IUIAutomationPatternHandler_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IUIAutomationPatternInstance(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAutomationPatternInstance {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAutomationPatternInstance {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -17912,11 +17948,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAu
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAutomationPatternInstance {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAutomationPatternInstance {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -17945,6 +17976,11 @@ pub struct IUIAutomationPatternInstance_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IUIAutomationPropertyChangedEventHandler(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAutomationPropertyChangedEventHandler {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAutomationPropertyChangedEventHandler {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com", feature = "Win32_System_Ole"))]
@@ -17970,11 +18006,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IUIAutoma
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAutomationPropertyChangedEventHandler {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IUIAutomationPropertyChangedEventHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IUIAutomationPropertyChangedEventHandler {
@@ -18004,6 +18035,11 @@ pub struct IUIAutomationPropertyChangedEventHandler_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IUIAutomationPropertyCondition(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAutomationPropertyCondition {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAutomationPropertyCondition {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn PropertyId(&self) -> ::windows::core::Result<i32> {
@@ -18062,11 +18098,6 @@ impl<'a> ::windows::core::IntoParam<'a, IUIAutomationCondition> for &'a IUIAutom
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAutomationPropertyCondition {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAutomationPropertyCondition {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -18096,6 +18127,11 @@ pub struct IUIAutomationPropertyCondition_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IUIAutomationProxyFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAutomationProxyFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAutomationProxyFactory {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -18130,11 +18166,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAu
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAutomationProxyFactory {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAutomationProxyFactory {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -18166,6 +18197,11 @@ pub struct IUIAutomationProxyFactory_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IUIAutomationProxyFactoryEntry(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAutomationProxyFactoryEntry {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAutomationProxyFactoryEntry {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn ProxyFactory(&self) -> ::windows::core::Result<IUIAutomationProxyFactory> {
@@ -18257,11 +18293,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAu
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAutomationProxyFactoryEntry {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAutomationProxyFactoryEntry {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -18328,6 +18359,11 @@ pub struct IUIAutomationProxyFactoryEntry_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IUIAutomationProxyFactoryMapping(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAutomationProxyFactoryMapping {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAutomationProxyFactoryMapping {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn Count(&self) -> ::windows::core::Result<u32> {
@@ -18392,11 +18428,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAu
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAutomationProxyFactoryMapping {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAutomationProxyFactoryMapping {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -18438,6 +18469,11 @@ pub struct IUIAutomationProxyFactoryMapping_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IUIAutomationRangeValuePattern(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAutomationRangeValuePattern {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAutomationRangeValuePattern {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn SetValue(&self, val: f64) -> ::windows::core::Result<()> {
@@ -18526,11 +18562,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAu
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAutomationRangeValuePattern {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAutomationRangeValuePattern {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -18573,6 +18604,11 @@ pub struct IUIAutomationRangeValuePattern_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IUIAutomationRegistrar(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAutomationRegistrar {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAutomationRegistrar {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn RegisterProperty(&self, property: *const UIAutomationPropertyInfo) -> ::windows::core::Result<i32> {
@@ -18610,11 +18646,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAu
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAutomationRegistrar {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAutomationRegistrar {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -18644,6 +18675,11 @@ pub struct IUIAutomationRegistrar_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IUIAutomationScrollItemPattern(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAutomationScrollItemPattern {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAutomationScrollItemPattern {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn ScrollIntoView(&self) -> ::windows::core::Result<()> {
@@ -18670,11 +18706,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAu
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAutomationScrollItemPattern {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAutomationScrollItemPattern {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -18699,6 +18730,11 @@ pub struct IUIAutomationScrollItemPattern_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IUIAutomationScrollPattern(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAutomationScrollPattern {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAutomationScrollPattern {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn Scroll(&self, horizontalamount: ScrollAmount, verticalamount: ScrollAmount) -> ::windows::core::Result<()> {
@@ -18793,11 +18829,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAu
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAutomationScrollPattern {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAutomationScrollPattern {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -18847,6 +18878,11 @@ pub struct IUIAutomationScrollPattern_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IUIAutomationSelectionItemPattern(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAutomationSelectionItemPattern {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAutomationSelectionItemPattern {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn Select(&self) -> ::windows::core::Result<()> {
@@ -18903,11 +18939,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAu
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAutomationSelectionItemPattern {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAutomationSelectionItemPattern {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -18944,6 +18975,11 @@ pub struct IUIAutomationSelectionItemPattern_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IUIAutomationSelectionPattern(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAutomationSelectionPattern {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAutomationSelectionPattern {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn GetCurrentSelection(&self) -> ::windows::core::Result<IUIAutomationElementArray> {
@@ -19000,11 +19036,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAu
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAutomationSelectionPattern {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAutomationSelectionPattern {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -19046,6 +19077,11 @@ pub struct IUIAutomationSelectionPattern_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IUIAutomationSelectionPattern2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAutomationSelectionPattern2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAutomationSelectionPattern2 {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn GetCurrentSelection(&self) -> ::windows::core::Result<IUIAutomationElementArray> {
@@ -19162,11 +19198,6 @@ impl<'a> ::windows::core::IntoParam<'a, IUIAutomationSelectionPattern> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAutomationSelectionPattern2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAutomationSelectionPattern2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -19198,6 +19229,11 @@ pub struct IUIAutomationSelectionPattern2_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IUIAutomationSpreadsheetItemPattern(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAutomationSpreadsheetItemPattern {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAutomationSpreadsheetItemPattern {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -19254,11 +19290,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAu
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAutomationSpreadsheetItemPattern {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAutomationSpreadsheetItemPattern {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -19300,6 +19331,11 @@ pub struct IUIAutomationSpreadsheetItemPattern_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IUIAutomationSpreadsheetPattern(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAutomationSpreadsheetPattern {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAutomationSpreadsheetPattern {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -19326,11 +19362,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IUIAutoma
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAutomationSpreadsheetPattern {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IUIAutomationSpreadsheetPattern {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IUIAutomationSpreadsheetPattern {
@@ -19360,6 +19391,11 @@ pub struct IUIAutomationSpreadsheetPattern_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IUIAutomationStructureChangedEventHandler(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAutomationStructureChangedEventHandler {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAutomationStructureChangedEventHandler {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -19385,11 +19421,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IUIAutoma
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAutomationStructureChangedEventHandler {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IUIAutomationStructureChangedEventHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IUIAutomationStructureChangedEventHandler {
@@ -19419,6 +19450,11 @@ pub struct IUIAutomationStructureChangedEventHandler_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IUIAutomationStylesPattern(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAutomationStylesPattern {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAutomationStylesPattern {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn CurrentStyleId(&self) -> ::windows::core::Result<i32> {
@@ -19529,11 +19565,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAu
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAutomationStylesPattern {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAutomationStylesPattern {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -19603,6 +19634,11 @@ pub struct IUIAutomationStylesPattern_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IUIAutomationSynchronizedInputPattern(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAutomationSynchronizedInputPattern {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAutomationSynchronizedInputPattern {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn StartListening(&self, inputtype: SynchronizedInputType) -> ::windows::core::Result<()> {
@@ -19633,11 +19669,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAu
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAutomationSynchronizedInputPattern {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAutomationSynchronizedInputPattern {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -19663,6 +19694,11 @@ pub struct IUIAutomationSynchronizedInputPattern_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IUIAutomationTableItemPattern(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAutomationTableItemPattern {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAutomationTableItemPattern {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn GetCurrentRowHeaderItems(&self) -> ::windows::core::Result<IUIAutomationElementArray> {
@@ -19705,11 +19741,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAu
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAutomationTableItemPattern {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAutomationTableItemPattern {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -19737,6 +19768,11 @@ pub struct IUIAutomationTableItemPattern_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IUIAutomationTablePattern(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAutomationTablePattern {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAutomationTablePattern {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn GetCurrentRowHeaders(&self) -> ::windows::core::Result<IUIAutomationElementArray> {
@@ -19789,11 +19825,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAu
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAutomationTablePattern {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAutomationTablePattern {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -19823,6 +19854,11 @@ pub struct IUIAutomationTablePattern_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IUIAutomationTextChildPattern(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAutomationTextChildPattern {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAutomationTextChildPattern {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn TextContainer(&self) -> ::windows::core::Result<IUIAutomationElement> {
@@ -19855,11 +19891,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAu
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAutomationTextChildPattern {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAutomationTextChildPattern {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -19885,6 +19916,11 @@ pub struct IUIAutomationTextChildPattern_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IUIAutomationTextEditPattern(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAutomationTextEditPattern {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAutomationTextEditPattern {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -19968,11 +20004,6 @@ impl<'a> ::windows::core::IntoParam<'a, IUIAutomationTextPattern> for &'a IUIAut
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAutomationTextEditPattern {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAutomationTextEditPattern {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -19998,6 +20029,11 @@ pub struct IUIAutomationTextEditPattern_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IUIAutomationTextEditTextChangedEventHandler(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAutomationTextEditTextChangedEventHandler {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAutomationTextEditTextChangedEventHandler {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -20023,11 +20059,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IUIAutoma
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAutomationTextEditTextChangedEventHandler {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IUIAutomationTextEditTextChangedEventHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IUIAutomationTextEditTextChangedEventHandler {
@@ -20057,6 +20088,11 @@ pub struct IUIAutomationTextEditTextChangedEventHandler_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IUIAutomationTextPattern(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAutomationTextPattern {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAutomationTextPattern {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -20110,11 +20146,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAu
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAutomationTextPattern {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAutomationTextPattern {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -20147,6 +20178,11 @@ pub struct IUIAutomationTextPattern_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IUIAutomationTextPattern2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAutomationTextPattern2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAutomationTextPattern2 {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -20230,11 +20266,6 @@ impl<'a> ::windows::core::IntoParam<'a, IUIAutomationTextPattern> for &'a IUIAut
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAutomationTextPattern2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAutomationTextPattern2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -20263,6 +20294,11 @@ pub struct IUIAutomationTextPattern2_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IUIAutomationTextRange(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAutomationTextRange {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAutomationTextRange {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn Clone(&self) -> ::windows::core::Result<IUIAutomationTextRange> {
@@ -20376,11 +20412,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAu
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAutomationTextRange {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAutomationTextRange {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -20443,6 +20474,11 @@ pub struct IUIAutomationTextRange_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IUIAutomationTextRange2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAutomationTextRange2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAutomationTextRange2 {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn Clone(&self) -> ::windows::core::Result<IUIAutomationTextRange> {
@@ -20580,11 +20616,6 @@ impl<'a> ::windows::core::IntoParam<'a, IUIAutomationTextRange> for &'a IUIAutom
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAutomationTextRange2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAutomationTextRange2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -20609,6 +20640,11 @@ pub struct IUIAutomationTextRange2_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IUIAutomationTextRange3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAutomationTextRange3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAutomationTextRange3 {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn Clone(&self) -> ::windows::core::Result<IUIAutomationTextRange> {
@@ -20782,11 +20818,6 @@ impl<'a> ::windows::core::IntoParam<'a, IUIAutomationTextRange2> for &'a IUIAuto
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAutomationTextRange3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAutomationTextRange3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -20816,6 +20847,11 @@ pub struct IUIAutomationTextRange3_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IUIAutomationTextRangeArray(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAutomationTextRangeArray {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAutomationTextRangeArray {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn Length(&self) -> ::windows::core::Result<i32> {
@@ -20848,11 +20884,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAu
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAutomationTextRangeArray {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAutomationTextRangeArray {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -20878,6 +20909,11 @@ pub struct IUIAutomationTextRangeArray_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IUIAutomationTogglePattern(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAutomationTogglePattern {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAutomationTogglePattern {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn Toggle(&self) -> ::windows::core::Result<()> {
@@ -20914,11 +20950,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAu
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAutomationTogglePattern {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAutomationTogglePattern {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -20945,6 +20976,11 @@ pub struct IUIAutomationTogglePattern_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IUIAutomationTransformPattern(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAutomationTransformPattern {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAutomationTransformPattern {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn Move(&self, x: f64, y: f64) -> ::windows::core::Result<()> {
@@ -21015,11 +21051,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAu
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAutomationTransformPattern {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAutomationTransformPattern {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -21070,6 +21101,11 @@ pub struct IUIAutomationTransformPattern_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IUIAutomationTransformPattern2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAutomationTransformPattern2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAutomationTransformPattern2 {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn Move(&self, x: f64, y: f64) -> ::windows::core::Result<()> {
@@ -21210,11 +21246,6 @@ impl<'a> ::windows::core::IntoParam<'a, IUIAutomationTransformPattern> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAutomationTransformPattern2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAutomationTransformPattern2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -21254,6 +21285,11 @@ pub struct IUIAutomationTransformPattern2_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IUIAutomationTreeWalker(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAutomationTreeWalker {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAutomationTreeWalker {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn GetParentElement<'a, Param0: ::windows::core::IntoParam<'a, IUIAutomationElement>>(&self, element: Param0) -> ::windows::core::Result<IUIAutomationElement> {
@@ -21341,11 +21377,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAu
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAutomationTreeWalker {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAutomationTreeWalker {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -21382,6 +21413,11 @@ pub struct IUIAutomationTreeWalker_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IUIAutomationValuePattern(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAutomationValuePattern {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAutomationValuePattern {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -21433,11 +21469,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAu
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAutomationValuePattern {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAutomationValuePattern {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -21481,6 +21512,11 @@ pub struct IUIAutomationValuePattern_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IUIAutomationVirtualizedItemPattern(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAutomationVirtualizedItemPattern {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAutomationVirtualizedItemPattern {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn Realize(&self) -> ::windows::core::Result<()> {
@@ -21507,11 +21543,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAu
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAutomationVirtualizedItemPattern {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAutomationVirtualizedItemPattern {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -21536,6 +21567,11 @@ pub struct IUIAutomationVirtualizedItemPattern_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IUIAutomationWindowPattern(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAutomationWindowPattern {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAutomationWindowPattern {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn Close(&self) -> ::windows::core::Result<()> {
@@ -21640,11 +21676,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAu
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAutomationWindowPattern {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAutomationWindowPattern {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -21710,6 +21741,11 @@ pub struct IUIAutomationWindowPattern_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IValueProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IValueProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IValueProvider {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn SetValue<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, val: Param0) -> ::windows::core::Result<()> {
@@ -21748,11 +21784,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IValu
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IValueProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IValueProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -21785,6 +21816,11 @@ pub struct IValueProvider_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IVirtualizedItemProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVirtualizedItemProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IVirtualizedItemProvider {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn Realize(&self) -> ::windows::core::Result<()> {
@@ -21811,11 +21847,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IVirt
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IVirtualizedItemProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IVirtualizedItemProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -21840,6 +21871,11 @@ pub struct IVirtualizedItemProvider_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
 #[repr(transparent)]
 pub struct IWindowProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWindowProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWindowProvider {
     #[doc = "*Required features: `\"Win32_UI_Accessibility\"`*"]
     pub unsafe fn SetVisualState(&self, state: WindowVisualState) -> ::windows::core::Result<()> {
@@ -21908,11 +21944,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IWindowPr
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWindowProvider {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IWindowProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IWindowProvider {
@@ -22176,6 +22207,7 @@ impl ::core::default::Default for LiveSetting {
 }
 unsafe impl ::windows::core::Abi for LiveSetting {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for LiveSetting {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -22224,6 +22256,7 @@ impl ::core::fmt::Debug for MOUSEKEYS {
 }
 unsafe impl ::windows::core::Abi for MOUSEKEYS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MOUSEKEYS {
     fn eq(&self, other: &Self) -> bool {
@@ -22256,6 +22289,7 @@ impl ::core::fmt::Debug for MSAAMENUINFO {
 }
 unsafe impl ::windows::core::Abi for MSAAMENUINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MSAAMENUINFO {
     fn eq(&self, other: &Self) -> bool {
@@ -22357,6 +22391,7 @@ impl ::core::default::Default for NavigateDirection {
 }
 unsafe impl ::windows::core::Abi for NavigateDirection {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NavigateDirection {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -22387,6 +22422,7 @@ impl ::core::default::Default for NormalizeState {
 }
 unsafe impl ::windows::core::Abi for NormalizeState {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NormalizeState {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -22420,6 +22456,7 @@ impl ::core::default::Default for NotificationKind {
 }
 unsafe impl ::windows::core::Abi for NotificationKind {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NotificationKind {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -22453,6 +22490,7 @@ impl ::core::default::Default for NotificationProcessing {
 }
 unsafe impl ::windows::core::Abi for NotificationProcessing {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NotificationProcessing {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -22515,6 +22553,7 @@ impl ::core::default::Default for OrientationType {
 }
 unsafe impl ::windows::core::Abi for OrientationType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for OrientationType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -22550,6 +22589,7 @@ impl ::core::default::Default for OutlineStyles {
 }
 unsafe impl ::windows::core::Abi for OutlineStyles {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for OutlineStyles {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -22609,6 +22649,7 @@ impl ::core::default::Default for PropertyConditionFlags {
 }
 unsafe impl ::windows::core::Abi for PropertyConditionFlags {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PropertyConditionFlags {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -22651,6 +22692,7 @@ impl ::core::default::Default for ProviderOptions {
 }
 unsafe impl ::windows::core::Abi for ProviderOptions {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ProviderOptions {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -22680,6 +22722,7 @@ impl ::core::default::Default for ProviderType {
 }
 unsafe impl ::windows::core::Abi for ProviderType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ProviderType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -22890,6 +22933,7 @@ impl ::core::default::Default for RowOrColumnMajor {
 }
 unsafe impl ::windows::core::Abi for RowOrColumnMajor {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RowOrColumnMajor {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -22935,6 +22979,7 @@ impl ::core::fmt::Debug for SERIALKEYSA {
 }
 unsafe impl ::windows::core::Abi for SERIALKEYSA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SERIALKEYSA {
     fn eq(&self, other: &Self) -> bool {
@@ -22971,6 +23016,7 @@ impl ::core::fmt::Debug for SERIALKEYSW {
 }
 unsafe impl ::windows::core::Abi for SERIALKEYSW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SERIALKEYSW {
     fn eq(&self, other: &Self) -> bool {
@@ -23006,6 +23052,7 @@ impl ::core::default::Default for SERIALKEYS_FLAGS {
 }
 unsafe impl ::windows::core::Abi for SERIALKEYS_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SERIALKEYS_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -23084,6 +23131,7 @@ impl ::core::fmt::Debug for SOUNDSENTRYA {
 }
 unsafe impl ::windows::core::Abi for SOUNDSENTRYA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SOUNDSENTRYA {
     fn eq(&self, other: &Self) -> bool {
@@ -23138,6 +23186,7 @@ impl ::core::fmt::Debug for SOUNDSENTRYW {
 }
 unsafe impl ::windows::core::Abi for SOUNDSENTRYW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SOUNDSENTRYW {
     fn eq(&self, other: &Self) -> bool {
@@ -23173,6 +23222,7 @@ impl ::core::default::Default for SOUNDSENTRY_FLAGS {
 }
 unsafe impl ::windows::core::Abi for SOUNDSENTRY_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SOUNDSENTRY_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -23232,6 +23282,7 @@ impl ::core::default::Default for SOUNDSENTRY_TEXT_EFFECT {
 }
 unsafe impl ::windows::core::Abi for SOUNDSENTRY_TEXT_EFFECT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SOUNDSENTRY_TEXT_EFFECT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -23265,6 +23316,7 @@ impl ::core::default::Default for SOUNDSENTRY_WINDOWS_EFFECT {
 }
 unsafe impl ::windows::core::Abi for SOUNDSENTRY_WINDOWS_EFFECT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SOUNDSENTRY_WINDOWS_EFFECT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -23292,6 +23344,7 @@ impl ::core::default::Default for SOUND_SENTRY_GRAPHICS_EFFECT {
 }
 unsafe impl ::windows::core::Abi for SOUND_SENTRY_GRAPHICS_EFFECT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SOUND_SENTRY_GRAPHICS_EFFECT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -23321,6 +23374,7 @@ impl ::core::fmt::Debug for STICKYKEYS {
 }
 unsafe impl ::windows::core::Abi for STICKYKEYS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for STICKYKEYS {
     fn eq(&self, other: &Self) -> bool {
@@ -23400,6 +23454,7 @@ impl ::core::default::Default for STICKYKEYS_FLAGS {
 }
 unsafe impl ::windows::core::Abi for STICKYKEYS_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for STICKYKEYS_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -23505,6 +23560,7 @@ impl ::core::default::Default for SayAsInterpretAs {
 }
 unsafe impl ::windows::core::Abi for SayAsInterpretAs {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SayAsInterpretAs {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -23538,6 +23594,7 @@ impl ::core::default::Default for ScrollAmount {
 }
 unsafe impl ::windows::core::Abi for ScrollAmount {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ScrollAmount {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -23710,6 +23767,7 @@ impl ::core::default::Default for StructureChangeType {
 }
 unsafe impl ::windows::core::Abi for StructureChangeType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for StructureChangeType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -23803,6 +23861,7 @@ impl ::core::default::Default for SupportedTextSelection {
 }
 unsafe impl ::windows::core::Abi for SupportedTextSelection {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SupportedTextSelection {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -23866,6 +23925,7 @@ impl ::core::default::Default for SynchronizedInputType {
 }
 unsafe impl ::windows::core::Abi for SynchronizedInputType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SynchronizedInputType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -23893,6 +23953,7 @@ impl ::core::fmt::Debug for TOGGLEKEYS {
 }
 unsafe impl ::windows::core::Abi for TOGGLEKEYS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TOGGLEKEYS {
     fn eq(&self, other: &Self) -> bool {
@@ -23971,6 +24032,7 @@ impl ::core::default::Default for TextDecorationLineStyle {
 }
 unsafe impl ::windows::core::Abi for TextDecorationLineStyle {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TextDecorationLineStyle {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -24004,6 +24066,7 @@ impl ::core::default::Default for TextEditChangeType {
 }
 unsafe impl ::windows::core::Abi for TextEditChangeType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TextEditChangeType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -24034,6 +24097,7 @@ impl ::core::default::Default for TextPatternRangeEndpoint {
 }
 unsafe impl ::windows::core::Abi for TextPatternRangeEndpoint {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TextPatternRangeEndpoint {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -24417,6 +24481,7 @@ impl ::core::default::Default for TextUnit {
 }
 unsafe impl ::windows::core::Abi for TextUnit {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TextUnit {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -24513,6 +24578,7 @@ impl ::core::default::Default for ToggleState {
 }
 unsafe impl ::windows::core::Abi for ToggleState {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ToggleState {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -24608,6 +24674,7 @@ impl ::core::default::Default for TreeScope {
 }
 unsafe impl ::windows::core::Abi for TreeScope {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TreeScope {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -24637,6 +24704,7 @@ impl ::core::default::Default for TreeTraversalOptions {
 }
 unsafe impl ::windows::core::Abi for TreeTraversalOptions {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TreeTraversalOptions {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -25365,6 +25433,7 @@ impl ::core::fmt::Debug for UIAutomationEventInfo {
 }
 unsafe impl ::windows::core::Abi for UIAutomationEventInfo {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for UIAutomationEventInfo {
     fn eq(&self, other: &Self) -> bool {
@@ -25405,6 +25474,7 @@ impl ::core::fmt::Debug for UIAutomationMethodInfo {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for UIAutomationMethodInfo {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for UIAutomationMethodInfo {
@@ -25439,6 +25509,7 @@ impl ::core::fmt::Debug for UIAutomationParameter {
 }
 unsafe impl ::windows::core::Abi for UIAutomationParameter {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for UIAutomationParameter {
     fn eq(&self, other: &Self) -> bool {
@@ -25506,6 +25577,7 @@ impl ::core::fmt::Debug for UIAutomationPatternInfo {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for UIAutomationPatternInfo {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for UIAutomationPatternInfo {
@@ -25541,6 +25613,7 @@ impl ::core::fmt::Debug for UIAutomationPropertyInfo {
 }
 unsafe impl ::windows::core::Abi for UIAutomationPropertyInfo {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for UIAutomationPropertyInfo {
     fn eq(&self, other: &Self) -> bool {
@@ -25630,6 +25703,7 @@ impl ::core::default::Default for UIAutomationType {
 }
 unsafe impl ::windows::core::Abi for UIAutomationType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UIAutomationType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -25671,6 +25745,7 @@ impl ::core::fmt::Debug for UiaAndOrCondition {
 }
 unsafe impl ::windows::core::Abi for UiaAndOrCondition {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for UiaAndOrCondition {
     fn eq(&self, other: &Self) -> bool {
@@ -25706,6 +25781,7 @@ impl ::core::fmt::Debug for UiaAsyncContentLoadedEventArgs {
 }
 unsafe impl ::windows::core::Abi for UiaAsyncContentLoadedEventArgs {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for UiaAsyncContentLoadedEventArgs {
     fn eq(&self, other: &Self) -> bool {
@@ -25742,6 +25818,7 @@ impl ::core::fmt::Debug for UiaCacheRequest {
 }
 unsafe impl ::windows::core::Abi for UiaCacheRequest {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for UiaCacheRequest {
     fn eq(&self, other: &Self) -> bool {
@@ -25771,6 +25848,7 @@ impl ::core::clone::Clone for UiaChangeInfo {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com", feature = "Win32_System_Ole"))]
 unsafe impl ::windows::core::Abi for UiaChangeInfo {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com", feature = "Win32_System_Ole"))]
 impl ::core::cmp::PartialEq for UiaChangeInfo {
@@ -25812,6 +25890,7 @@ impl ::core::fmt::Debug for UiaChangesEventArgs {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com", feature = "Win32_System_Ole"))]
 unsafe impl ::windows::core::Abi for UiaChangesEventArgs {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com", feature = "Win32_System_Ole"))]
 impl ::core::cmp::PartialEq for UiaChangesEventArgs {
@@ -25860,6 +25939,7 @@ impl ::core::fmt::Debug for UiaCondition {
 }
 unsafe impl ::windows::core::Abi for UiaCondition {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for UiaCondition {
     fn eq(&self, other: &Self) -> bool {
@@ -25934,6 +26014,7 @@ impl ::core::fmt::Debug for UiaEventArgs {
 }
 unsafe impl ::windows::core::Abi for UiaEventArgs {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for UiaEventArgs {
     fn eq(&self, other: &Self) -> bool {
@@ -26005,6 +26086,7 @@ impl ::core::fmt::Debug for UiaFindParams {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for UiaFindParams {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for UiaFindParams {
@@ -26351,6 +26433,7 @@ impl ::core::fmt::Debug for UiaNotCondition {
 }
 unsafe impl ::windows::core::Abi for UiaNotCondition {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for UiaNotCondition {
     fn eq(&self, other: &Self) -> bool {
@@ -26397,6 +26480,7 @@ impl ::core::fmt::Debug for UiaPoint {
 }
 unsafe impl ::windows::core::Abi for UiaPoint {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for UiaPoint {
     fn eq(&self, other: &Self) -> bool {
@@ -26428,6 +26512,7 @@ impl ::core::clone::Clone for UiaPropertyChangedEventArgs {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com", feature = "Win32_System_Ole"))]
 unsafe impl ::windows::core::Abi for UiaPropertyChangedEventArgs {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com", feature = "Win32_System_Ole"))]
 impl ::core::cmp::PartialEq for UiaPropertyChangedEventArgs {
@@ -26461,6 +26546,7 @@ impl ::core::clone::Clone for UiaPropertyCondition {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com", feature = "Win32_System_Ole"))]
 unsafe impl ::windows::core::Abi for UiaPropertyCondition {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com", feature = "Win32_System_Ole"))]
 impl ::core::cmp::PartialEq for UiaPropertyCondition {
@@ -26648,6 +26734,7 @@ impl ::core::fmt::Debug for UiaRect {
 }
 unsafe impl ::windows::core::Abi for UiaRect {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for UiaRect {
     fn eq(&self, other: &Self) -> bool {
@@ -26742,6 +26829,7 @@ impl ::core::fmt::Debug for UiaStructureChangedEventArgs {
 }
 unsafe impl ::windows::core::Abi for UiaStructureChangedEventArgs {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for UiaStructureChangedEventArgs {
     fn eq(&self, other: &Self) -> bool {
@@ -26780,6 +26868,7 @@ impl ::core::fmt::Debug for UiaTextEditTextChangedEventArgs {
 #[cfg(feature = "Win32_System_Com")]
 unsafe impl ::windows::core::Abi for UiaTextEditTextChangedEventArgs {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for UiaTextEditTextChangedEventArgs {
@@ -26831,6 +26920,7 @@ impl ::core::fmt::Debug for UiaWindowClosedEventArgs {
 }
 unsafe impl ::windows::core::Abi for UiaWindowClosedEventArgs {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for UiaWindowClosedEventArgs {
     fn eq(&self, other: &Self) -> bool {
@@ -26949,6 +27039,7 @@ impl ::core::default::Default for VisualEffects {
 }
 unsafe impl ::windows::core::Abi for VisualEffects {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VisualEffects {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -27002,6 +27093,7 @@ impl ::core::default::Default for WindowInteractionState {
 }
 unsafe impl ::windows::core::Abi for WindowInteractionState {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WindowInteractionState {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -27074,6 +27166,7 @@ impl ::core::default::Default for WindowVisualState {
 }
 unsafe impl ::windows::core::Abi for WindowVisualState {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WindowVisualState {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -27117,6 +27210,7 @@ impl ::core::default::Default for ZoomUnit {
 }
 unsafe impl ::windows::core::Abi for ZoomUnit {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ZoomUnit {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

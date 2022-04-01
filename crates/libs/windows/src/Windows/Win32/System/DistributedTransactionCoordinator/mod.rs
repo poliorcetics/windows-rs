@@ -20,6 +20,7 @@ impl ::core::default::Default for APPLICATIONTYPE {
 }
 unsafe impl ::windows::core::Abi for APPLICATIONTYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for APPLICATIONTYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -49,6 +50,7 @@ impl ::core::default::Default for AUTHENTICATION_LEVEL {
 }
 unsafe impl ::windows::core::Abi for AUTHENTICATION_LEVEL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AUTHENTICATION_LEVEL {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -73,6 +75,7 @@ impl ::core::fmt::Debug for BOID {
 }
 unsafe impl ::windows::core::Abi for BOID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for BOID {
     fn eq(&self, other: &Self) -> bool {
@@ -140,6 +143,7 @@ impl ::core::default::Default for DTC_STATUS_ {
 }
 unsafe impl ::windows::core::Abi for DTC_STATUS_ {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DTC_STATUS_ {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -205,6 +209,11 @@ pub unsafe fn DtcGetTransactionManagerExW<'a, Param0: ::windows::core::IntoParam
 #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
 #[repr(transparent)]
 pub struct IDtcLuConfigure(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDtcLuConfigure {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDtcLuConfigure {
     #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
     pub unsafe fn Add(&self, puclupair: &[u8]) -> ::windows::core::Result<()> {
@@ -235,11 +244,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDtcL
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDtcLuConfigure {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDtcLuConfigure {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -265,6 +269,11 @@ pub struct IDtcLuConfigure_Vtbl {
 #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
 #[repr(transparent)]
 pub struct IDtcLuRecovery(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDtcLuRecovery {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDtcLuRecovery {}
 impl ::core::convert::From<IDtcLuRecovery> for ::windows::core::IUnknown {
     fn from(value: IDtcLuRecovery) -> Self {
@@ -284,11 +293,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IDtcLuRec
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDtcLuRecovery {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IDtcLuRecovery {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IDtcLuRecovery {
@@ -314,6 +318,11 @@ pub struct IDtcLuRecovery_Vtbl {
 #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
 #[repr(transparent)]
 pub struct IDtcLuRecoveryFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDtcLuRecoveryFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDtcLuRecoveryFactory {
     #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
     pub unsafe fn Create(&self, puclupair: &[u8]) -> ::windows::core::Result<IDtcLuRecovery> {
@@ -341,11 +350,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDtcL
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDtcLuRecoveryFactory {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDtcLuRecoveryFactory {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -370,6 +374,11 @@ pub struct IDtcLuRecoveryFactory_Vtbl {
 #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
 #[repr(transparent)]
 pub struct IDtcLuRecoveryInitiatedByDtc(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDtcLuRecoveryInitiatedByDtc {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDtcLuRecoveryInitiatedByDtc {
     #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
     pub unsafe fn GetWork(&self, pwork: *mut _DtcLu_LocalRecovery_Work, ppv: *mut *mut ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -396,11 +405,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDtcL
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDtcLuRecoveryInitiatedByDtc {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDtcLuRecoveryInitiatedByDtc {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -425,6 +429,11 @@ pub struct IDtcLuRecoveryInitiatedByDtc_Vtbl {
 #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
 #[repr(transparent)]
 pub struct IDtcLuRecoveryInitiatedByDtcStatusWork(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDtcLuRecoveryInitiatedByDtcStatusWork {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDtcLuRecoveryInitiatedByDtcStatusWork {
     #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
     pub unsafe fn HandleCheckLuStatus(&self, lrecoveryseqnum: i32) -> ::windows::core::Result<()> {
@@ -451,11 +460,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDtcL
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDtcLuRecoveryInitiatedByDtcStatusWork {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDtcLuRecoveryInitiatedByDtcStatusWork {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -480,6 +484,11 @@ pub struct IDtcLuRecoveryInitiatedByDtcStatusWork_Vtbl {
 #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
 #[repr(transparent)]
 pub struct IDtcLuRecoveryInitiatedByDtcTransWork(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDtcLuRecoveryInitiatedByDtcTransWork {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDtcLuRecoveryInitiatedByDtcTransWork {
     #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
     pub unsafe fn GetLogNameSizes(&self, pcbourlogname: *mut u32, pcbremotelogname: *mut u32) -> ::windows::core::Result<()> {
@@ -555,11 +564,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDtcL
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDtcLuRecoveryInitiatedByDtcTransWork {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDtcLuRecoveryInitiatedByDtcTransWork {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -599,6 +603,11 @@ pub struct IDtcLuRecoveryInitiatedByDtcTransWork_Vtbl {
 #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
 #[repr(transparent)]
 pub struct IDtcLuRecoveryInitiatedByLu(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDtcLuRecoveryInitiatedByLu {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDtcLuRecoveryInitiatedByLu {
     #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
     pub unsafe fn GetObjectToHandleWorkFromLu(&self) -> ::windows::core::Result<IDtcLuRecoveryInitiatedByLuWork> {
@@ -626,11 +635,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDtcL
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDtcLuRecoveryInitiatedByLu {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDtcLuRecoveryInitiatedByLu {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -655,6 +659,11 @@ pub struct IDtcLuRecoveryInitiatedByLu_Vtbl {
 #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
 #[repr(transparent)]
 pub struct IDtcLuRecoveryInitiatedByLuWork(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDtcLuRecoveryInitiatedByLuWork {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDtcLuRecoveryInitiatedByLuWork {
     #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
     pub unsafe fn HandleTheirXln(&self, lrecoveryseqnum: i32, xln: _DtcLu_Xln, premotelogname: *mut u8, cbremotelogname: u32, pourlogname: *mut u8, cbourlogname: u32, dwprotocol: u32, presponse: *mut _DtcLu_Xln_Response) -> ::windows::core::Result<()> {
@@ -709,11 +718,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDtcL
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDtcLuRecoveryInitiatedByLuWork {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDtcLuRecoveryInitiatedByLuWork {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -745,6 +749,11 @@ pub struct IDtcLuRecoveryInitiatedByLuWork_Vtbl {
 #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
 #[repr(transparent)]
 pub struct IDtcLuRmEnlistment(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDtcLuRmEnlistment {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDtcLuRmEnlistment {
     #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -792,11 +801,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDtcL
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDtcLuRmEnlistment {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDtcLuRmEnlistment {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -829,6 +833,11 @@ pub struct IDtcLuRmEnlistment_Vtbl {
 #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
 #[repr(transparent)]
 pub struct IDtcLuRmEnlistmentFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDtcLuRmEnlistmentFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDtcLuRmEnlistmentFactory {
     #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
     pub unsafe fn Create<'a, Param2: ::windows::core::IntoParam<'a, ITransaction>, Param5: ::windows::core::IntoParam<'a, IDtcLuRmEnlistmentSink>>(&self, puclupair: *mut u8, cblupair: u32, pitransaction: Param2, ptransid: *mut u8, cbtransid: u32, prmenlistmentsink: Param5, pprmenlistment: *mut ::core::option::Option<IDtcLuRmEnlistment>) -> ::windows::core::Result<()> {
@@ -855,11 +864,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDtcL
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDtcLuRmEnlistmentFactory {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDtcLuRmEnlistmentFactory {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -884,6 +888,11 @@ pub struct IDtcLuRmEnlistmentFactory_Vtbl {
 #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
 #[repr(transparent)]
 pub struct IDtcLuRmEnlistmentSink(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDtcLuRmEnlistmentSink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDtcLuRmEnlistmentSink {
     #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
     pub unsafe fn AckUnplug(&self) -> ::windows::core::Result<()> {
@@ -942,11 +951,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDtcL
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDtcLuRmEnlistmentSink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDtcLuRmEnlistmentSink {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -979,6 +983,11 @@ pub struct IDtcLuRmEnlistmentSink_Vtbl {
 #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
 #[repr(transparent)]
 pub struct IDtcLuSubordinateDtc(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDtcLuSubordinateDtc {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDtcLuSubordinateDtc {
     #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -1030,11 +1039,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDtcL
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDtcLuSubordinateDtc {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDtcLuSubordinateDtc {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1068,6 +1072,11 @@ pub struct IDtcLuSubordinateDtc_Vtbl {
 #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
 #[repr(transparent)]
 pub struct IDtcLuSubordinateDtcFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDtcLuSubordinateDtcFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDtcLuSubordinateDtcFactory {
     #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
     pub unsafe fn Create<'a, Param2: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>, Param5: ::windows::core::IntoParam<'a, ITransactionOptions>, Param9: ::windows::core::IntoParam<'a, IDtcLuSubordinateDtcSink>>(&self, puclupair: *mut u8, cblupair: u32, punktransactionouter: Param2, isolevel: i32, isoflags: u32, poptions: Param5, pptransaction: *mut ::core::option::Option<ITransaction>, ptransid: *mut u8, cbtransid: u32, psubordinatedtcsink: Param9, ppsubordinatedtc: *mut ::core::option::Option<IDtcLuSubordinateDtc>) -> ::windows::core::Result<()> {
@@ -1094,11 +1103,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDtcL
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDtcLuSubordinateDtcFactory {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDtcLuSubordinateDtcFactory {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1123,6 +1127,11 @@ pub struct IDtcLuSubordinateDtcFactory_Vtbl {
 #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
 #[repr(transparent)]
 pub struct IDtcLuSubordinateDtcSink(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDtcLuSubordinateDtcSink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDtcLuSubordinateDtcSink {
     #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
     pub unsafe fn AckUnplug(&self) -> ::windows::core::Result<()> {
@@ -1177,11 +1186,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDtcL
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDtcLuSubordinateDtcSink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDtcLuSubordinateDtcSink {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1213,6 +1217,11 @@ pub struct IDtcLuSubordinateDtcSink_Vtbl {
 #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
 #[repr(transparent)]
 pub struct IDtcNetworkAccessConfig(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDtcNetworkAccessConfig {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDtcNetworkAccessConfig {
     #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -1305,11 +1314,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDtcN
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDtcNetworkAccessConfig {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDtcNetworkAccessConfig {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1382,6 +1386,11 @@ pub struct IDtcNetworkAccessConfig_Vtbl {
 #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
 #[repr(transparent)]
 pub struct IDtcNetworkAccessConfig2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDtcNetworkAccessConfig2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDtcNetworkAccessConfig2 {
     #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -1525,11 +1534,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDtcNetworkAccessConfig> for &'a IDtcNet
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDtcNetworkAccessConfig2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDtcNetworkAccessConfig2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1571,6 +1575,11 @@ pub struct IDtcNetworkAccessConfig2_Vtbl {
 #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
 #[repr(transparent)]
 pub struct IDtcNetworkAccessConfig3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDtcNetworkAccessConfig3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDtcNetworkAccessConfig3 {
     #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -1745,11 +1754,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDtcNetworkAccessConfig2> for &'a IDtcNe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDtcNetworkAccessConfig3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDtcNetworkAccessConfig3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1781,6 +1785,11 @@ pub struct IDtcNetworkAccessConfig3_Vtbl {
 #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
 #[repr(transparent)]
 pub struct IDtcToXaHelper(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDtcToXaHelper {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDtcToXaHelper {
     #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -1814,11 +1823,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDtcT
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDtcToXaHelper {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDtcToXaHelper {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1850,6 +1854,11 @@ pub struct IDtcToXaHelper_Vtbl {
 #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
 #[repr(transparent)]
 pub struct IDtcToXaHelperFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDtcToXaHelperFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDtcToXaHelperFactory {
     #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
     pub unsafe fn Create<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCSTR>, Param1: ::windows::core::IntoParam<'a, ::windows::core::PCSTR>>(&self, pszdsn: Param0, pszclientdllname: Param1, pguidrm: *mut ::windows::core::GUID, ppxahelper: *mut ::core::option::Option<IDtcToXaHelper>) -> ::windows::core::Result<()> {
@@ -1876,11 +1885,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDtcT
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDtcToXaHelperFactory {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDtcToXaHelperFactory {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1905,6 +1909,11 @@ pub struct IDtcToXaHelperFactory_Vtbl {
 #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
 #[repr(transparent)]
 pub struct IDtcToXaHelperSinglePipe(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDtcToXaHelperSinglePipe {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDtcToXaHelperSinglePipe {
     #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
     pub unsafe fn XARMCreate<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCSTR>, Param1: ::windows::core::IntoParam<'a, ::windows::core::PCSTR>>(&self, pszdsn: Param0, pszclientdll: Param1, pdwrmcookie: *mut u32) -> ::windows::core::Result<()> {
@@ -1946,11 +1955,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDtcT
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDtcToXaHelperSinglePipe {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDtcToXaHelperSinglePipe {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1984,6 +1988,11 @@ pub struct IDtcToXaHelperSinglePipe_Vtbl {
 #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
 #[repr(transparent)]
 pub struct IDtcToXaMapper(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDtcToXaMapper {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDtcToXaMapper {
     #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
     pub unsafe fn RequestNewResourceManager<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCSTR>, Param1: ::windows::core::IntoParam<'a, ::windows::core::PCSTR>>(&self, pszdsn: Param0, pszclientdllname: Param1, pdwrmcookie: *mut u32) -> ::windows::core::Result<()> {
@@ -2023,11 +2032,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDtcT
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDtcToXaMapper {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDtcToXaMapper {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2058,6 +2062,11 @@ pub struct IDtcToXaMapper_Vtbl {
 #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
 #[repr(transparent)]
 pub struct IGetDispenser(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGetDispenser {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IGetDispenser {
     #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
     pub unsafe fn GetDispenser(&self, iid: *const ::windows::core::GUID, ppvobject: *mut *mut ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -2084,11 +2093,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IGetD
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IGetDispenser {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IGetDispenser {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2113,6 +2117,11 @@ pub struct IGetDispenser_Vtbl {
 #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
 #[repr(transparent)]
 pub struct IKernelTransaction(::windows::core::IUnknown);
+impl ::core::clone::Clone for IKernelTransaction {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IKernelTransaction {
     #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -2139,11 +2148,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IKernelTr
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IKernelTransaction {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IKernelTransaction {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IKernelTransaction {
@@ -2173,6 +2177,11 @@ pub struct IKernelTransaction_Vtbl {
 #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
 #[repr(transparent)]
 pub struct ILastResourceManager(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILastResourceManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ILastResourceManager {
     #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
     pub unsafe fn TransactionCommitted(&self, pprepinfo: &[u8]) -> ::windows::core::Result<()> {
@@ -2203,11 +2212,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ILast
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ILastResourceManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ILastResourceManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2233,6 +2237,11 @@ pub struct ILastResourceManager_Vtbl {
 #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
 #[repr(transparent)]
 pub struct IPrepareInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrepareInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPrepareInfo {
     #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
     pub unsafe fn GetPrepareInfoSize(&self, pcbprepinfo: *mut u32) -> ::windows::core::Result<()> {
@@ -2263,11 +2272,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPrep
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPrepareInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPrepareInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2293,6 +2297,11 @@ pub struct IPrepareInfo_Vtbl {
 #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
 #[repr(transparent)]
 pub struct IPrepareInfo2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrepareInfo2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPrepareInfo2 {
     #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
     pub unsafe fn GetPrepareInfoSize(&self) -> ::windows::core::Result<u32> {
@@ -2324,11 +2333,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPrep
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPrepareInfo2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPrepareInfo2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2354,6 +2358,11 @@ pub struct IPrepareInfo2_Vtbl {
 #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
 #[repr(transparent)]
 pub struct IRMHelper(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRMHelper {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRMHelper {
     #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
     pub unsafe fn RMCount(&self, dwctotalnumberofrms: u32) -> ::windows::core::Result<()> {
@@ -2385,11 +2394,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IRMHe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IRMHelper {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IRMHelper {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2418,6 +2422,11 @@ pub struct IRMHelper_Vtbl {
 #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
 #[repr(transparent)]
 pub struct IResourceManager(::windows::core::IUnknown);
+impl ::core::clone::Clone for IResourceManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IResourceManager {
     #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
     pub unsafe fn Enlist<'a, Param0: ::windows::core::IntoParam<'a, ITransaction>, Param1: ::windows::core::IntoParam<'a, ITransactionResourceAsync>>(&self, ptransaction: Param0, pres: Param1, puow: *mut BOID, pisolevel: *mut i32, ppenlist: *mut ::core::option::Option<ITransactionEnlistmentAsync>) -> ::windows::core::Result<()> {
@@ -2457,11 +2466,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IReso
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IResourceManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IResourceManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2489,6 +2493,11 @@ pub struct IResourceManager_Vtbl {
 #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
 #[repr(transparent)]
 pub struct IResourceManager2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IResourceManager2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IResourceManager2 {
     #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
     pub unsafe fn Enlist<'a, Param0: ::windows::core::IntoParam<'a, ITransaction>, Param1: ::windows::core::IntoParam<'a, ITransactionResourceAsync>>(&self, ptransaction: Param0, pres: Param1, puow: *mut BOID, pisolevel: *mut i32, ppenlist: *mut ::core::option::Option<ITransactionEnlistmentAsync>) -> ::windows::core::Result<()> {
@@ -2559,11 +2568,6 @@ impl<'a> ::windows::core::IntoParam<'a, IResourceManager> for &'a IResourceManag
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IResourceManager2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IResourceManager2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2595,6 +2599,11 @@ pub struct IResourceManager2_Vtbl {
 #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
 #[repr(transparent)]
 pub struct IResourceManagerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IResourceManagerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IResourceManagerFactory {
     #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
     pub unsafe fn Create<'a, Param1: ::windows::core::IntoParam<'a, ::windows::core::PCSTR>, Param2: ::windows::core::IntoParam<'a, IResourceManagerSink>>(&self, pguidrm: *const ::windows::core::GUID, pszrmname: Param1, piresmgrsink: Param2) -> ::windows::core::Result<IResourceManager> {
@@ -2622,11 +2631,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IReso
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IResourceManagerFactory {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IResourceManagerFactory {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2651,6 +2655,11 @@ pub struct IResourceManagerFactory_Vtbl {
 #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
 #[repr(transparent)]
 pub struct IResourceManagerFactory2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IResourceManagerFactory2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IResourceManagerFactory2 {
     #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
     pub unsafe fn Create<'a, Param1: ::windows::core::IntoParam<'a, ::windows::core::PCSTR>, Param2: ::windows::core::IntoParam<'a, IResourceManagerSink>>(&self, pguidrm: *const ::windows::core::GUID, pszrmname: Param1, piresmgrsink: Param2) -> ::windows::core::Result<IResourceManager> {
@@ -2702,11 +2711,6 @@ impl<'a> ::windows::core::IntoParam<'a, IResourceManagerFactory> for &'a IResour
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IResourceManagerFactory2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IResourceManagerFactory2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2731,6 +2735,11 @@ pub struct IResourceManagerFactory2_Vtbl {
 #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
 #[repr(transparent)]
 pub struct IResourceManagerRejoinable(::windows::core::IUnknown);
+impl ::core::clone::Clone for IResourceManagerRejoinable {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IResourceManagerRejoinable {
     #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
     pub unsafe fn Enlist<'a, Param0: ::windows::core::IntoParam<'a, ITransaction>, Param1: ::windows::core::IntoParam<'a, ITransactionResourceAsync>>(&self, ptransaction: Param0, pres: Param1, puow: *mut BOID, pisolevel: *mut i32, ppenlist: *mut ::core::option::Option<ITransactionEnlistmentAsync>) -> ::windows::core::Result<()> {
@@ -2826,11 +2835,6 @@ impl<'a> ::windows::core::IntoParam<'a, IResourceManager2> for &'a IResourceMana
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IResourceManagerRejoinable {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IResourceManagerRejoinable {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2855,6 +2859,11 @@ pub struct IResourceManagerRejoinable_Vtbl {
 #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
 #[repr(transparent)]
 pub struct IResourceManagerSink(::windows::core::IUnknown);
+impl ::core::clone::Clone for IResourceManagerSink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IResourceManagerSink {
     #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
     pub unsafe fn TMDown(&self) -> ::windows::core::Result<()> {
@@ -2879,11 +2888,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IResource
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IResourceManagerSink {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IResourceManagerSink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IResourceManagerSink {
@@ -2946,6 +2950,7 @@ impl ::core::default::Default for ISOFLAG {
 }
 unsafe impl ::windows::core::Abi for ISOFLAG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ISOFLAG {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2987,6 +2992,7 @@ impl ::core::default::Default for ISOLATIONLEVEL {
 }
 unsafe impl ::windows::core::Abi for ISOLATIONLEVEL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ISOLATIONLEVEL {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2996,6 +3002,11 @@ impl ::core::fmt::Debug for ISOLATIONLEVEL {
 #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
 #[repr(transparent)]
 pub struct ITipHelper(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITipHelper {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITipHelper {
     #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
     pub unsafe fn Pull(&self, i_psztxurl: *const u8) -> ::windows::core::Result<ITransaction> {
@@ -3033,11 +3044,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITipH
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITipHelper {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITipHelper {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3064,6 +3070,11 @@ pub struct ITipHelper_Vtbl {
 #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
 #[repr(transparent)]
 pub struct ITipPullSink(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITipPullSink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITipPullSink {
     #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
     pub unsafe fn PullComplete(&self, i_hrpull: ::windows::core::HRESULT) -> ::windows::core::Result<()> {
@@ -3090,11 +3101,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITipP
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITipPullSink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITipPullSink {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3119,6 +3125,11 @@ pub struct ITipPullSink_Vtbl {
 #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
 #[repr(transparent)]
 pub struct ITipTransaction(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITipTransaction {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITipTransaction {
     #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
     pub unsafe fn Push(&self, i_pszremotetmurl: *const u8) -> ::windows::core::Result<::windows::core::PSTR> {
@@ -3151,11 +3162,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITipT
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITipTransaction {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITipTransaction {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3181,6 +3187,11 @@ pub struct ITipTransaction_Vtbl {
 #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
 #[repr(transparent)]
 pub struct ITmNodeName(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITmNodeName {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITmNodeName {
     #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
     pub unsafe fn GetNodeNameSize(&self) -> ::windows::core::Result<u32> {
@@ -3212,11 +3223,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITmNo
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITmNodeName {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITmNodeName {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3242,6 +3248,11 @@ pub struct ITmNodeName_Vtbl {
 #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
 #[repr(transparent)]
 pub struct ITransaction(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITransaction {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITransaction {
     #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -3279,11 +3290,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITran
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITransaction {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITransaction {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3316,6 +3322,11 @@ pub struct ITransaction_Vtbl {
 #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
 #[repr(transparent)]
 pub struct ITransaction2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITransaction2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITransaction2 {
     #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -3403,11 +3414,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITransactionCloner> for &'a ITransaction
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITransaction2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITransaction2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3432,6 +3438,11 @@ pub struct ITransaction2_Vtbl {
 #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
 #[repr(transparent)]
 pub struct ITransactionCloner(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITransactionCloner {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITransactionCloner {
     #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -3494,11 +3505,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITransaction> for &'a ITransactionCloner
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITransactionCloner {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITransactionCloner {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3523,6 +3529,11 @@ pub struct ITransactionCloner_Vtbl {
 #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
 #[repr(transparent)]
 pub struct ITransactionDispenser(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITransactionDispenser {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITransactionDispenser {
     #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
     pub unsafe fn GetOptionsObject(&self) -> ::windows::core::Result<ITransactionOptions> {
@@ -3555,11 +3566,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITran
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITransactionDispenser {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITransactionDispenser {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3585,6 +3591,11 @@ pub struct ITransactionDispenser_Vtbl {
 #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
 #[repr(transparent)]
 pub struct ITransactionEnlistmentAsync(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITransactionEnlistmentAsync {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITransactionEnlistmentAsync {
     #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -3620,11 +3631,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITran
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITransactionEnlistmentAsync {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITransactionEnlistmentAsync {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3654,6 +3660,11 @@ pub struct ITransactionEnlistmentAsync_Vtbl {
 #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
 #[repr(transparent)]
 pub struct ITransactionExport(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITransactionExport {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITransactionExport {
     #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
     pub unsafe fn Export<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, punktransaction: Param0) -> ::windows::core::Result<u32> {
@@ -3685,11 +3696,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITran
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITransactionExport {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITransactionExport {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3715,6 +3721,11 @@ pub struct ITransactionExport_Vtbl {
 #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
 #[repr(transparent)]
 pub struct ITransactionExportFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITransactionExportFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITransactionExportFactory {
     #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
     pub unsafe fn GetRemoteClassId(&self) -> ::windows::core::Result<::windows::core::GUID> {
@@ -3747,11 +3758,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITran
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITransactionExportFactory {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITransactionExportFactory {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3777,6 +3783,11 @@ pub struct ITransactionExportFactory_Vtbl {
 #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
 #[repr(transparent)]
 pub struct ITransactionImport(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITransactionImport {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITransactionImport {
     #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
     pub unsafe fn Import<T: ::windows::core::Interface>(&self, rgbtransactioncookie: &[u8]) -> ::windows::core::Result<T> {
@@ -3804,11 +3815,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITran
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITransactionImport {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITransactionImport {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3833,6 +3839,11 @@ pub struct ITransactionImport_Vtbl {
 #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
 #[repr(transparent)]
 pub struct ITransactionImportWhereabouts(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITransactionImportWhereabouts {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITransactionImportWhereabouts {
     #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
     pub unsafe fn GetWhereaboutsSize(&self) -> ::windows::core::Result<u32> {
@@ -3864,11 +3875,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITran
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITransactionImportWhereabouts {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITransactionImportWhereabouts {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3894,6 +3900,11 @@ pub struct ITransactionImportWhereabouts_Vtbl {
 #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
 #[repr(transparent)]
 pub struct ITransactionLastEnlistmentAsync(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITransactionLastEnlistmentAsync {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITransactionLastEnlistmentAsync {
     #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
     pub unsafe fn TransactionOutcome(&self, xactstat: XACTSTAT, pboidreason: *const BOID) -> ::windows::core::Result<()> {
@@ -3920,11 +3931,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITran
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITransactionLastEnlistmentAsync {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITransactionLastEnlistmentAsync {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3949,6 +3955,11 @@ pub struct ITransactionLastEnlistmentAsync_Vtbl {
 #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
 #[repr(transparent)]
 pub struct ITransactionLastResourceAsync(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITransactionLastResourceAsync {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITransactionLastResourceAsync {
     #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
     pub unsafe fn DelegateCommit(&self, grfrm: u32) -> ::windows::core::Result<()> {
@@ -3979,11 +3990,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITran
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITransactionLastResourceAsync {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITransactionLastResourceAsync {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4009,6 +4015,11 @@ pub struct ITransactionLastResourceAsync_Vtbl {
 #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
 #[repr(transparent)]
 pub struct ITransactionOptions(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITransactionOptions {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITransactionOptions {
     #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
     pub unsafe fn SetOptions(&self, poptions: *const XACTOPT) -> ::windows::core::Result<()> {
@@ -4039,11 +4050,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITran
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITransactionOptions {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITransactionOptions {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4069,6 +4075,11 @@ pub struct ITransactionOptions_Vtbl {
 #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
 #[repr(transparent)]
 pub struct ITransactionOutcomeEvents(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITransactionOutcomeEvents {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITransactionOutcomeEvents {
     #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -4109,11 +4120,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITran
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITransactionOutcomeEvents {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITransactionOutcomeEvents {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4147,6 +4153,11 @@ pub struct ITransactionOutcomeEvents_Vtbl {
 #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
 #[repr(transparent)]
 pub struct ITransactionPhase0EnlistmentAsync(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITransactionPhase0EnlistmentAsync {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITransactionPhase0EnlistmentAsync {
     #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
     pub unsafe fn Enable(&self) -> ::windows::core::Result<()> {
@@ -4190,11 +4201,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITran
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITransactionPhase0EnlistmentAsync {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITransactionPhase0EnlistmentAsync {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4223,6 +4229,11 @@ pub struct ITransactionPhase0EnlistmentAsync_Vtbl {
 #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
 #[repr(transparent)]
 pub struct ITransactionPhase0Factory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITransactionPhase0Factory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITransactionPhase0Factory {
     #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
     pub unsafe fn Create<'a, Param0: ::windows::core::IntoParam<'a, ITransactionPhase0NotifyAsync>>(&self, pphase0notify: Param0) -> ::windows::core::Result<ITransactionPhase0EnlistmentAsync> {
@@ -4250,11 +4261,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITran
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITransactionPhase0Factory {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITransactionPhase0Factory {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4279,6 +4285,11 @@ pub struct ITransactionPhase0Factory_Vtbl {
 #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
 #[repr(transparent)]
 pub struct ITransactionPhase0NotifyAsync(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITransactionPhase0NotifyAsync {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITransactionPhase0NotifyAsync {
     #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -4310,11 +4321,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITran
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITransactionPhase0NotifyAsync {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITransactionPhase0NotifyAsync {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4343,6 +4349,11 @@ pub struct ITransactionPhase0NotifyAsync_Vtbl {
 #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
 #[repr(transparent)]
 pub struct ITransactionReceiver(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITransactionReceiver {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITransactionReceiver {
     #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
     pub unsafe fn UnmarshalPropagationToken(&self, rgbtoken: &[u8]) -> ::windows::core::Result<ITransaction> {
@@ -4383,11 +4394,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITran
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITransactionReceiver {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITransactionReceiver {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4415,6 +4421,11 @@ pub struct ITransactionReceiver_Vtbl {
 #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
 #[repr(transparent)]
 pub struct ITransactionReceiverFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITransactionReceiverFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITransactionReceiverFactory {
     #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
     pub unsafe fn Create(&self) -> ::windows::core::Result<ITransactionReceiver> {
@@ -4442,11 +4453,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITran
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITransactionReceiverFactory {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITransactionReceiverFactory {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4471,6 +4477,11 @@ pub struct ITransactionReceiverFactory_Vtbl {
 #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
 #[repr(transparent)]
 pub struct ITransactionResource(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITransactionResource {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITransactionResource {
     #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -4511,11 +4522,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITran
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITransactionResource {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITransactionResource {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4549,6 +4555,11 @@ pub struct ITransactionResource_Vtbl {
 #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
 #[repr(transparent)]
 pub struct ITransactionResourceAsync(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITransactionResourceAsync {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITransactionResourceAsync {
     #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -4589,11 +4600,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITran
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITransactionResourceAsync {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITransactionResourceAsync {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4627,6 +4633,11 @@ pub struct ITransactionResourceAsync_Vtbl {
 #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
 #[repr(transparent)]
 pub struct ITransactionTransmitter(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITransactionTransmitter {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITransactionTransmitter {
     #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
     pub unsafe fn Set<'a, Param0: ::windows::core::IntoParam<'a, ITransaction>>(&self, ptransaction: Param0) -> ::windows::core::Result<()> {
@@ -4670,11 +4681,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITran
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITransactionTransmitter {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITransactionTransmitter {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4703,6 +4709,11 @@ pub struct ITransactionTransmitter_Vtbl {
 #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
 #[repr(transparent)]
 pub struct ITransactionTransmitterFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITransactionTransmitterFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITransactionTransmitterFactory {
     #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
     pub unsafe fn Create(&self) -> ::windows::core::Result<ITransactionTransmitter> {
@@ -4730,11 +4741,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITran
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITransactionTransmitterFactory {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITransactionTransmitterFactory {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4759,6 +4765,11 @@ pub struct ITransactionTransmitterFactory_Vtbl {
 #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
 #[repr(transparent)]
 pub struct ITransactionVoterBallotAsync2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITransactionVoterBallotAsync2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITransactionVoterBallotAsync2 {
     #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
     pub unsafe fn VoteRequestDone(&self, hr: ::windows::core::HRESULT, pboidreason: *const BOID) -> ::windows::core::Result<()> {
@@ -4785,11 +4796,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITran
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITransactionVoterBallotAsync2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITransactionVoterBallotAsync2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4814,6 +4820,11 @@ pub struct ITransactionVoterBallotAsync2_Vtbl {
 #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
 #[repr(transparent)]
 pub struct ITransactionVoterFactory2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITransactionVoterFactory2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITransactionVoterFactory2 {
     #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
     pub unsafe fn Create<'a, Param0: ::windows::core::IntoParam<'a, ITransaction>, Param1: ::windows::core::IntoParam<'a, ITransactionVoterNotifyAsync2>>(&self, ptransaction: Param0, pvoternotify: Param1) -> ::windows::core::Result<ITransactionVoterBallotAsync2> {
@@ -4841,11 +4852,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITran
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITransactionVoterFactory2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITransactionVoterFactory2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4870,6 +4876,11 @@ pub struct ITransactionVoterFactory2_Vtbl {
 #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
 #[repr(transparent)]
 pub struct ITransactionVoterNotifyAsync2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITransactionVoterNotifyAsync2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITransactionVoterNotifyAsync2 {
     #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -4934,11 +4945,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITransactionOutcomeEvents> for &'a ITran
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITransactionVoterNotifyAsync2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITransactionVoterNotifyAsync2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4963,6 +4969,11 @@ pub struct ITransactionVoterNotifyAsync2_Vtbl {
 #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
 #[repr(transparent)]
 pub struct IXAConfig(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXAConfig {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXAConfig {
     #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
     pub unsafe fn Initialize<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::GUID>>(&self, clsidhelperdll: Param0) -> ::windows::core::Result<()> {
@@ -4993,11 +5004,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IXACo
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXAConfig {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXAConfig {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5023,6 +5029,11 @@ pub struct IXAConfig_Vtbl {
 #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
 #[repr(transparent)]
 pub struct IXAObtainRMInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXAObtainRMInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXAObtainRMInfo {
     #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
     pub unsafe fn ObtainRMInfo<'a, Param0: ::windows::core::IntoParam<'a, IRMHelper>>(&self, pirmhelper: Param0) -> ::windows::core::Result<()> {
@@ -5049,11 +5060,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IXAOb
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXAObtainRMInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXAObtainRMInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5078,6 +5084,11 @@ pub struct IXAObtainRMInfo_Vtbl {
 #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
 #[repr(transparent)]
 pub struct IXATransLookup(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXATransLookup {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXATransLookup {
     #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
     pub unsafe fn Lookup(&self) -> ::windows::core::Result<ITransaction> {
@@ -5105,11 +5116,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IXATr
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXATransLookup {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXATransLookup {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5134,6 +5140,11 @@ pub struct IXATransLookup_Vtbl {
 #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`*"]
 #[repr(transparent)]
 pub struct IXATransLookup2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXATransLookup2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXATransLookup2 {
     #[doc = "*Required features: `\"Win32_System_DistributedTransactionCoordinator\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -5160,11 +5171,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IXATransL
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IXATransLookup2 {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IXATransLookup2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IXATransLookup2 {
@@ -5216,6 +5222,7 @@ impl ::core::fmt::Debug for OLE_TM_CONFIG_PARAMS_V1 {
 }
 unsafe impl ::windows::core::Abi for OLE_TM_CONFIG_PARAMS_V1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for OLE_TM_CONFIG_PARAMS_V1 {
     fn eq(&self, other: &Self) -> bool {
@@ -5249,6 +5256,7 @@ impl ::core::fmt::Debug for OLE_TM_CONFIG_PARAMS_V2 {
 }
 unsafe impl ::windows::core::Abi for OLE_TM_CONFIG_PARAMS_V2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for OLE_TM_CONFIG_PARAMS_V2 {
     fn eq(&self, other: &Self) -> bool {
@@ -5340,6 +5348,7 @@ impl ::core::default::Default for TX_MISC_CONSTANTS {
 }
 unsafe impl ::windows::core::Abi for TX_MISC_CONSTANTS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TX_MISC_CONSTANTS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5365,6 +5374,7 @@ impl ::core::default::Default for XACTCONST {
 }
 unsafe impl ::windows::core::Abi for XACTCONST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for XACTCONST {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5396,6 +5406,7 @@ impl ::core::default::Default for XACTHEURISTIC {
 }
 unsafe impl ::windows::core::Abi for XACTHEURISTIC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for XACTHEURISTIC {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5421,6 +5432,7 @@ impl ::core::fmt::Debug for XACTOPT {
 }
 unsafe impl ::windows::core::Abi for XACTOPT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for XACTOPT {
     fn eq(&self, other: &Self) -> bool {
@@ -5454,6 +5466,7 @@ impl ::core::default::Default for XACTRM {
 }
 unsafe impl ::windows::core::Abi for XACTRM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for XACTRM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5523,6 +5536,7 @@ impl ::core::default::Default for XACTSTAT {
 }
 unsafe impl ::windows::core::Abi for XACTSTAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for XACTSTAT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5559,6 +5573,7 @@ impl ::core::fmt::Debug for XACTSTATS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for XACTSTATS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for XACTSTATS {
@@ -5603,6 +5618,7 @@ impl ::core::default::Default for XACTTC {
 }
 unsafe impl ::windows::core::Abi for XACTTC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for XACTTC {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5633,6 +5649,7 @@ impl ::core::fmt::Debug for XACTTRANSINFO {
 }
 unsafe impl ::windows::core::Abi for XACTTRANSINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for XACTTRANSINFO {
     fn eq(&self, other: &Self) -> bool {
@@ -5708,6 +5725,7 @@ impl ::core::default::Default for XACT_DTC_CONSTANTS {
 }
 unsafe impl ::windows::core::Abi for XACT_DTC_CONSTANTS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for XACT_DTC_CONSTANTS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5830,6 +5848,7 @@ impl ::core::default::Default for _DtcLu_CompareState {
 }
 unsafe impl ::windows::core::Abi for _DtcLu_CompareState {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for _DtcLu_CompareState {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5857,6 +5876,7 @@ impl ::core::default::Default for _DtcLu_CompareStates_Confirmation {
 }
 unsafe impl ::windows::core::Abi for _DtcLu_CompareStates_Confirmation {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for _DtcLu_CompareStates_Confirmation {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5882,6 +5902,7 @@ impl ::core::default::Default for _DtcLu_CompareStates_Error {
 }
 unsafe impl ::windows::core::Abi for _DtcLu_CompareStates_Error {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for _DtcLu_CompareStates_Error {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5909,6 +5930,7 @@ impl ::core::default::Default for _DtcLu_CompareStates_Response {
 }
 unsafe impl ::windows::core::Abi for _DtcLu_CompareStates_Response {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for _DtcLu_CompareStates_Response {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5938,6 +5960,7 @@ impl ::core::default::Default for _DtcLu_LocalRecovery_Work {
 }
 unsafe impl ::windows::core::Abi for _DtcLu_LocalRecovery_Work {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for _DtcLu_LocalRecovery_Work {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5965,6 +5988,7 @@ impl ::core::default::Default for _DtcLu_Xln {
 }
 unsafe impl ::windows::core::Abi for _DtcLu_Xln {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for _DtcLu_Xln {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5996,6 +6020,7 @@ impl ::core::default::Default for _DtcLu_Xln_Confirmation {
 }
 unsafe impl ::windows::core::Abi for _DtcLu_Xln_Confirmation {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for _DtcLu_Xln_Confirmation {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6025,6 +6050,7 @@ impl ::core::default::Default for _DtcLu_Xln_Error {
 }
 unsafe impl ::windows::core::Abi for _DtcLu_Xln_Error {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for _DtcLu_Xln_Error {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6056,6 +6082,7 @@ impl ::core::default::Default for _DtcLu_Xln_Response {
 }
 unsafe impl ::windows::core::Abi for _DtcLu_Xln_Response {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for _DtcLu_Xln_Response {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6080,6 +6107,7 @@ impl ::core::fmt::Debug for _ProxyConfigParams {
 }
 unsafe impl ::windows::core::Abi for _ProxyConfigParams {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for _ProxyConfigParams {
     fn eq(&self, other: &Self) -> bool {
@@ -6141,6 +6169,7 @@ impl ::core::fmt::Debug for xa_switch_t {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for xa_switch_t {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for xa_switch_t {
@@ -6182,6 +6211,7 @@ impl ::core::fmt::Debug for xid_t {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for xid_t {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for xid_t {

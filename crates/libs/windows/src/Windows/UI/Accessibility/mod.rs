@@ -2,6 +2,11 @@
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IScreenReaderPositionChangedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IScreenReaderPositionChangedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IScreenReaderPositionChangedEventArgs {
     type Vtable = IScreenReaderPositionChangedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x557eb5e5_54d0_5ccd_9fc5_ed33357f8a9f);
@@ -19,6 +24,11 @@ pub struct IScreenReaderPositionChangedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IScreenReaderService(::windows::core::IUnknown);
+impl ::core::clone::Clone for IScreenReaderService {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IScreenReaderService {
     type Vtable = IScreenReaderService_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x19475427_eac0_50d3_bdd9_9b487a226256);
@@ -59,11 +69,6 @@ impl ScreenReaderPositionChangedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for ScreenReaderPositionChangedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ScreenReaderPositionChangedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -77,7 +82,6 @@ impl ::core::fmt::Debug for ScreenReaderPositionChangedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for ScreenReaderPositionChangedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Accessibility.ScreenReaderPositionChangedEventArgs;{557eb5e5-54d0-5ccd-9fc5-ed33357f8a9f})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -166,11 +170,6 @@ impl ScreenReaderService {
         unsafe { (::windows::core::Interface::vtable(this).RemoveScreenReaderPositionChanged)(::core::mem::transmute_copy(this), token.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for ScreenReaderService {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ScreenReaderService {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -184,7 +183,6 @@ impl ::core::fmt::Debug for ScreenReaderService {
 }
 unsafe impl ::windows::core::RuntimeType for ScreenReaderService {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Accessibility.ScreenReaderService;{19475427-eac0-50d3-bdd9-9b487a226256})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

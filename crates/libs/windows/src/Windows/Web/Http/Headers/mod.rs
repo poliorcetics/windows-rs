@@ -182,11 +182,6 @@ impl HttpCacheDirectiveHeaderValueCollection {
         unsafe { (::windows::core::Interface::vtable(this).ReplaceAll)(::core::mem::transmute_copy(this), items.len() as u32, ::core::mem::transmute(items.as_ptr())).ok() }
     }
 }
-impl ::core::clone::Clone for HttpCacheDirectiveHeaderValueCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for HttpCacheDirectiveHeaderValueCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -200,7 +195,6 @@ impl ::core::fmt::Debug for HttpCacheDirectiveHeaderValueCollection {
 }
 unsafe impl ::windows::core::RuntimeType for HttpCacheDirectiveHeaderValueCollection {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Web.Http.Headers.HttpCacheDirectiveHeaderValueCollection;{9a586b89-d5d0-4fbe-bd9d-b5b3636811b4})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -425,11 +419,6 @@ impl HttpChallengeHeaderValue {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for HttpChallengeHeaderValue {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for HttpChallengeHeaderValue {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -443,7 +432,6 @@ impl ::core::fmt::Debug for HttpChallengeHeaderValue {
 }
 unsafe impl ::windows::core::RuntimeType for HttpChallengeHeaderValue {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Web.Http.Headers.HttpChallengeHeaderValue;{393361af-0f7d-4820-9fdd-a2b956eeaeab})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -646,11 +634,6 @@ impl HttpChallengeHeaderValueCollection {
         unsafe { (::windows::core::Interface::vtable(this).ReplaceAll)(::core::mem::transmute_copy(this), items.len() as u32, ::core::mem::transmute(items.as_ptr())).ok() }
     }
 }
-impl ::core::clone::Clone for HttpChallengeHeaderValueCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for HttpChallengeHeaderValueCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -664,7 +647,6 @@ impl ::core::fmt::Debug for HttpChallengeHeaderValueCollection {
 }
 unsafe impl ::windows::core::RuntimeType for HttpChallengeHeaderValueCollection {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Web.Http.Headers.HttpChallengeHeaderValueCollection;{ca9e5f81-aee0-4353-a10b-e625babd64c2})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -865,11 +847,6 @@ impl HttpConnectionOptionHeaderValue {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for HttpConnectionOptionHeaderValue {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for HttpConnectionOptionHeaderValue {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -883,7 +860,6 @@ impl ::core::fmt::Debug for HttpConnectionOptionHeaderValue {
 }
 unsafe impl ::windows::core::RuntimeType for HttpConnectionOptionHeaderValue {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Web.Http.Headers.HttpConnectionOptionHeaderValue;{cb4af27a-4e90-45eb-8dcd-fd1408f4c44f})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1086,11 +1062,6 @@ impl HttpConnectionOptionHeaderValueCollection {
         unsafe { (::windows::core::Interface::vtable(this).ReplaceAll)(::core::mem::transmute_copy(this), items.len() as u32, ::core::mem::transmute(items.as_ptr())).ok() }
     }
 }
-impl ::core::clone::Clone for HttpConnectionOptionHeaderValueCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for HttpConnectionOptionHeaderValueCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1104,7 +1075,6 @@ impl ::core::fmt::Debug for HttpConnectionOptionHeaderValueCollection {
 }
 unsafe impl ::windows::core::RuntimeType for HttpConnectionOptionHeaderValueCollection {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Web.Http.Headers.HttpConnectionOptionHeaderValueCollection;{e4f56c1d-5142-4e00-8e0f-019509337629})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1305,11 +1275,6 @@ impl HttpContentCodingHeaderValue {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for HttpContentCodingHeaderValue {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for HttpContentCodingHeaderValue {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1323,7 +1288,6 @@ impl ::core::fmt::Debug for HttpContentCodingHeaderValue {
 }
 unsafe impl ::windows::core::RuntimeType for HttpContentCodingHeaderValue {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Web.Http.Headers.HttpContentCodingHeaderValue;{bcf7f92a-9376-4d85-bccc-9f4f9acab434})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1526,11 +1490,6 @@ impl HttpContentCodingHeaderValueCollection {
         unsafe { (::windows::core::Interface::vtable(this).ReplaceAll)(::core::mem::transmute_copy(this), items.len() as u32, ::core::mem::transmute(items.as_ptr())).ok() }
     }
 }
-impl ::core::clone::Clone for HttpContentCodingHeaderValueCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for HttpContentCodingHeaderValueCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1544,7 +1503,6 @@ impl ::core::fmt::Debug for HttpContentCodingHeaderValueCollection {
 }
 unsafe impl ::windows::core::RuntimeType for HttpContentCodingHeaderValueCollection {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Web.Http.Headers.HttpContentCodingHeaderValueCollection;{7d221721-a6db-436e-8e83-91596192819c})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1761,11 +1719,6 @@ impl HttpContentCodingWithQualityHeaderValue {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for HttpContentCodingWithQualityHeaderValue {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for HttpContentCodingWithQualityHeaderValue {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1779,7 +1732,6 @@ impl ::core::fmt::Debug for HttpContentCodingWithQualityHeaderValue {
 }
 unsafe impl ::windows::core::RuntimeType for HttpContentCodingWithQualityHeaderValue {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Web.Http.Headers.HttpContentCodingWithQualityHeaderValue;{94531cd5-8b13-4d73-8651-f76b38f88495})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1982,11 +1934,6 @@ impl HttpContentCodingWithQualityHeaderValueCollection {
         unsafe { (::windows::core::Interface::vtable(this).ReplaceAll)(::core::mem::transmute_copy(this), items.len() as u32, ::core::mem::transmute(items.as_ptr())).ok() }
     }
 }
-impl ::core::clone::Clone for HttpContentCodingWithQualityHeaderValueCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for HttpContentCodingWithQualityHeaderValueCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2000,7 +1947,6 @@ impl ::core::fmt::Debug for HttpContentCodingWithQualityHeaderValueCollection {
 }
 unsafe impl ::windows::core::RuntimeType for HttpContentCodingWithQualityHeaderValueCollection {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Web.Http.Headers.HttpContentCodingWithQualityHeaderValueCollection;{7c0d753e-e899-4378-b5c8-412d820711cc})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2269,11 +2215,6 @@ impl HttpContentDispositionHeaderValue {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for HttpContentDispositionHeaderValue {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for HttpContentDispositionHeaderValue {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2287,7 +2228,6 @@ impl ::core::fmt::Debug for HttpContentDispositionHeaderValue {
 }
 unsafe impl ::windows::core::RuntimeType for HttpContentDispositionHeaderValue {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Web.Http.Headers.HttpContentDispositionHeaderValue;{f2a2eedc-2629-4b49-9908-96a168e9365e})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2597,11 +2537,6 @@ impl HttpContentHeaderCollection {
         }
     }
 }
-impl ::core::clone::Clone for HttpContentHeaderCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for HttpContentHeaderCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2615,7 +2550,6 @@ impl ::core::fmt::Debug for HttpContentHeaderCollection {
 }
 unsafe impl ::windows::core::RuntimeType for HttpContentHeaderCollection {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Web.Http.Headers.HttpContentHeaderCollection;{40612a44-47ae-4b7e-9124-69628b64aa18})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2862,11 +2796,6 @@ impl HttpContentRangeHeaderValue {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for HttpContentRangeHeaderValue {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for HttpContentRangeHeaderValue {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2880,7 +2809,6 @@ impl ::core::fmt::Debug for HttpContentRangeHeaderValue {
 }
 unsafe impl ::windows::core::RuntimeType for HttpContentRangeHeaderValue {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Web.Http.Headers.HttpContentRangeHeaderValue;{04d967d3-a4f6-495c-9530-8579fcba8aa9})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3033,11 +2961,6 @@ impl HttpCookiePairHeaderValue {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for HttpCookiePairHeaderValue {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for HttpCookiePairHeaderValue {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3051,7 +2974,6 @@ impl ::core::fmt::Debug for HttpCookiePairHeaderValue {
 }
 unsafe impl ::windows::core::RuntimeType for HttpCookiePairHeaderValue {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Web.Http.Headers.HttpCookiePairHeaderValue;{cbd46217-4b29-412b-bd90-b3d814ab8e1b})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3254,11 +3176,6 @@ impl HttpCookiePairHeaderValueCollection {
         unsafe { (::windows::core::Interface::vtable(this).ReplaceAll)(::core::mem::transmute_copy(this), items.len() as u32, ::core::mem::transmute(items.as_ptr())).ok() }
     }
 }
-impl ::core::clone::Clone for HttpCookiePairHeaderValueCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for HttpCookiePairHeaderValueCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3272,7 +3189,6 @@ impl ::core::fmt::Debug for HttpCookiePairHeaderValueCollection {
 }
 unsafe impl ::windows::core::RuntimeType for HttpCookiePairHeaderValueCollection {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Web.Http.Headers.HttpCookiePairHeaderValueCollection;{f3f44350-581e-4ecc-9f59-e507d04f06e6})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3497,11 +3413,6 @@ impl HttpCredentialsHeaderValue {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for HttpCredentialsHeaderValue {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for HttpCredentialsHeaderValue {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3515,7 +3426,6 @@ impl ::core::fmt::Debug for HttpCredentialsHeaderValue {
 }
 unsafe impl ::windows::core::RuntimeType for HttpCredentialsHeaderValue {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Web.Http.Headers.HttpCredentialsHeaderValue;{c34cc3cb-542e-4177-a6c7-b674ce193fbf})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3646,11 +3556,6 @@ impl HttpDateOrDeltaHeaderValue {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for HttpDateOrDeltaHeaderValue {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for HttpDateOrDeltaHeaderValue {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3664,7 +3569,6 @@ impl ::core::fmt::Debug for HttpDateOrDeltaHeaderValue {
 }
 unsafe impl ::windows::core::RuntimeType for HttpDateOrDeltaHeaderValue {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Web.Http.Headers.HttpDateOrDeltaHeaderValue;{eafcaa6a-c4dc-49e2-a27d-043adf5867a3})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3826,11 +3730,6 @@ impl HttpExpectationHeaderValue {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for HttpExpectationHeaderValue {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for HttpExpectationHeaderValue {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3844,7 +3743,6 @@ impl ::core::fmt::Debug for HttpExpectationHeaderValue {
 }
 unsafe impl ::windows::core::RuntimeType for HttpExpectationHeaderValue {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Web.Http.Headers.HttpExpectationHeaderValue;{4ce585cd-3a99-43af-a2e6-ec232fea9658})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4047,11 +3945,6 @@ impl HttpExpectationHeaderValueCollection {
         unsafe { (::windows::core::Interface::vtable(this).ReplaceAll)(::core::mem::transmute_copy(this), items.len() as u32, ::core::mem::transmute(items.as_ptr())).ok() }
     }
 }
-impl ::core::clone::Clone for HttpExpectationHeaderValueCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for HttpExpectationHeaderValueCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4065,7 +3958,6 @@ impl ::core::fmt::Debug for HttpExpectationHeaderValueCollection {
 }
 unsafe impl ::windows::core::RuntimeType for HttpExpectationHeaderValueCollection {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Web.Http.Headers.HttpExpectationHeaderValueCollection;{e78521b3-a0e2-4ac4-9e66-79706cb9fd58})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4336,11 +4228,6 @@ impl HttpLanguageHeaderValueCollection {
         unsafe { (::windows::core::Interface::vtable(this).ReplaceAll)(::core::mem::transmute_copy(this), items.len() as u32, ::core::mem::transmute(items.as_ptr())).ok() }
     }
 }
-impl ::core::clone::Clone for HttpLanguageHeaderValueCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for HttpLanguageHeaderValueCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4354,7 +4241,6 @@ impl ::core::fmt::Debug for HttpLanguageHeaderValueCollection {
 }
 unsafe impl ::windows::core::RuntimeType for HttpLanguageHeaderValueCollection {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Web.Http.Headers.HttpLanguageHeaderValueCollection;{9ebd7ca3-8219-44f6-9902-8c56dfd3340c})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4571,11 +4457,6 @@ impl HttpLanguageRangeWithQualityHeaderValue {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for HttpLanguageRangeWithQualityHeaderValue {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for HttpLanguageRangeWithQualityHeaderValue {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4589,7 +4470,6 @@ impl ::core::fmt::Debug for HttpLanguageRangeWithQualityHeaderValue {
 }
 unsafe impl ::windows::core::RuntimeType for HttpLanguageRangeWithQualityHeaderValue {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Web.Http.Headers.HttpLanguageRangeWithQualityHeaderValue;{7256e102-0080-4db4-a083-7de7b2e5ba4c})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4792,11 +4672,6 @@ impl HttpLanguageRangeWithQualityHeaderValueCollection {
         unsafe { (::windows::core::Interface::vtable(this).ReplaceAll)(::core::mem::transmute_copy(this), items.len() as u32, ::core::mem::transmute(items.as_ptr())).ok() }
     }
 }
-impl ::core::clone::Clone for HttpLanguageRangeWithQualityHeaderValueCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for HttpLanguageRangeWithQualityHeaderValueCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4810,7 +4685,6 @@ impl ::core::fmt::Debug for HttpLanguageRangeWithQualityHeaderValueCollection {
 }
 unsafe impl ::windows::core::RuntimeType for HttpLanguageRangeWithQualityHeaderValueCollection {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Web.Http.Headers.HttpLanguageRangeWithQualityHeaderValueCollection;{885d5abd-4b4f-480a-89ce-8aedcee6e3a0})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -5038,11 +4912,6 @@ impl HttpMediaTypeHeaderValue {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for HttpMediaTypeHeaderValue {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for HttpMediaTypeHeaderValue {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5056,7 +4925,6 @@ impl ::core::fmt::Debug for HttpMediaTypeHeaderValue {
 }
 unsafe impl ::windows::core::RuntimeType for HttpMediaTypeHeaderValue {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Web.Http.Headers.HttpMediaTypeHeaderValue;{16b28533-e728-4fcb-bdb0-08a431a14844})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -5238,11 +5106,6 @@ impl HttpMediaTypeWithQualityHeaderValue {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for HttpMediaTypeWithQualityHeaderValue {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for HttpMediaTypeWithQualityHeaderValue {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5256,7 +5119,6 @@ impl ::core::fmt::Debug for HttpMediaTypeWithQualityHeaderValue {
 }
 unsafe impl ::windows::core::RuntimeType for HttpMediaTypeWithQualityHeaderValue {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Web.Http.Headers.HttpMediaTypeWithQualityHeaderValue;{188d5e32-76be-44a0-b1cd-2074bded2dde})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -5459,11 +5321,6 @@ impl HttpMediaTypeWithQualityHeaderValueCollection {
         unsafe { (::windows::core::Interface::vtable(this).ReplaceAll)(::core::mem::transmute_copy(this), items.len() as u32, ::core::mem::transmute(items.as_ptr())).ok() }
     }
 }
-impl ::core::clone::Clone for HttpMediaTypeWithQualityHeaderValueCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for HttpMediaTypeWithQualityHeaderValueCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5477,7 +5334,6 @@ impl ::core::fmt::Debug for HttpMediaTypeWithQualityHeaderValueCollection {
 }
 unsafe impl ::windows::core::RuntimeType for HttpMediaTypeWithQualityHeaderValueCollection {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Web.Http.Headers.HttpMediaTypeWithQualityHeaderValueCollection;{3c0c6b73-1342-4587-a056-18d02ff67165})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -5748,11 +5604,6 @@ impl HttpMethodHeaderValueCollection {
         unsafe { (::windows::core::Interface::vtable(this).ReplaceAll)(::core::mem::transmute_copy(this), items.len() as u32, ::core::mem::transmute(items.as_ptr())).ok() }
     }
 }
-impl ::core::clone::Clone for HttpMethodHeaderValueCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for HttpMethodHeaderValueCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5766,7 +5617,6 @@ impl ::core::fmt::Debug for HttpMethodHeaderValueCollection {
 }
 unsafe impl ::windows::core::RuntimeType for HttpMethodHeaderValueCollection {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Web.Http.Headers.HttpMethodHeaderValueCollection;{43bc3ff4-6119-4adf-938c-34bfffcf92ed})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -5987,11 +5837,6 @@ impl HttpNameValueHeaderValue {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for HttpNameValueHeaderValue {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for HttpNameValueHeaderValue {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6005,7 +5850,6 @@ impl ::core::fmt::Debug for HttpNameValueHeaderValue {
 }
 unsafe impl ::windows::core::RuntimeType for HttpNameValueHeaderValue {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Web.Http.Headers.HttpNameValueHeaderValue;{d8ba7463-5b9a-4d1b-93f9-aa5b44ecfddf})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -6153,11 +5997,6 @@ impl HttpProductHeaderValue {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for HttpProductHeaderValue {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for HttpProductHeaderValue {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6171,7 +6010,6 @@ impl ::core::fmt::Debug for HttpProductHeaderValue {
 }
 unsafe impl ::windows::core::RuntimeType for HttpProductHeaderValue {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Web.Http.Headers.HttpProductHeaderValue;{f4feee03-ebd4-4160-b9ff-807c5183b6e6})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -6319,11 +6157,6 @@ impl HttpProductInfoHeaderValue {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for HttpProductInfoHeaderValue {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for HttpProductInfoHeaderValue {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6337,7 +6170,6 @@ impl ::core::fmt::Debug for HttpProductInfoHeaderValue {
 }
 unsafe impl ::windows::core::RuntimeType for HttpProductInfoHeaderValue {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Web.Http.Headers.HttpProductInfoHeaderValue;{1b1a8732-4c35-486a-966f-646489198e4d})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -6540,11 +6372,6 @@ impl HttpProductInfoHeaderValueCollection {
         unsafe { (::windows::core::Interface::vtable(this).ReplaceAll)(::core::mem::transmute_copy(this), items.len() as u32, ::core::mem::transmute(items.as_ptr())).ok() }
     }
 }
-impl ::core::clone::Clone for HttpProductInfoHeaderValueCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for HttpProductInfoHeaderValueCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6558,7 +6385,6 @@ impl ::core::fmt::Debug for HttpProductInfoHeaderValueCollection {
 }
 unsafe impl ::windows::core::RuntimeType for HttpProductInfoHeaderValueCollection {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Web.Http.Headers.HttpProductInfoHeaderValueCollection;{877df74a-d69b-44f8-ad4f-453af9c42ed0})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -7000,11 +6826,6 @@ impl HttpRequestHeaderCollection {
         }
     }
 }
-impl ::core::clone::Clone for HttpRequestHeaderCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for HttpRequestHeaderCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7018,7 +6839,6 @@ impl ::core::fmt::Debug for HttpRequestHeaderCollection {
 }
 unsafe impl ::windows::core::RuntimeType for HttpRequestHeaderCollection {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Web.Http.Headers.HttpRequestHeaderCollection;{af40329b-b544-469b-86b9-ac3d466fea36})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -7365,11 +7185,6 @@ impl HttpResponseHeaderCollection {
         }
     }
 }
-impl ::core::clone::Clone for HttpResponseHeaderCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for HttpResponseHeaderCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7383,7 +7198,6 @@ impl ::core::fmt::Debug for HttpResponseHeaderCollection {
 }
 unsafe impl ::windows::core::RuntimeType for HttpResponseHeaderCollection {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Web.Http.Headers.HttpResponseHeaderCollection;{7a990969-fa3f-41ed-aac6-bf957975c16b})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -7593,11 +7407,6 @@ impl HttpTransferCodingHeaderValue {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for HttpTransferCodingHeaderValue {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for HttpTransferCodingHeaderValue {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7611,7 +7420,6 @@ impl ::core::fmt::Debug for HttpTransferCodingHeaderValue {
 }
 unsafe impl ::windows::core::RuntimeType for HttpTransferCodingHeaderValue {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Web.Http.Headers.HttpTransferCodingHeaderValue;{436f32f9-3ded-42bd-b38a-5496a2511ce6})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -7814,11 +7622,6 @@ impl HttpTransferCodingHeaderValueCollection {
         unsafe { (::windows::core::Interface::vtable(this).ReplaceAll)(::core::mem::transmute_copy(this), items.len() as u32, ::core::mem::transmute(items.as_ptr())).ok() }
     }
 }
-impl ::core::clone::Clone for HttpTransferCodingHeaderValueCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for HttpTransferCodingHeaderValueCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7832,7 +7635,6 @@ impl ::core::fmt::Debug for HttpTransferCodingHeaderValueCollection {
 }
 unsafe impl ::windows::core::RuntimeType for HttpTransferCodingHeaderValueCollection {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Web.Http.Headers.HttpTransferCodingHeaderValueCollection;{202c8c34-2c03-49b8-9665-73e27cb2fc79})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -7983,6 +7785,11 @@ unsafe impl ::core::marker::Sync for HttpTransferCodingHeaderValueCollection {}
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHttpCacheDirectiveHeaderValueCollection(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpCacheDirectiveHeaderValueCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHttpCacheDirectiveHeaderValueCollection {
     type Vtable = IHttpCacheDirectiveHeaderValueCollection_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9a586b89_d5d0_4fbe_bd9d_b5b3636811b4);
@@ -8029,6 +7836,11 @@ pub struct IHttpCacheDirectiveHeaderValueCollection_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHttpChallengeHeaderValue(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpChallengeHeaderValue {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHttpChallengeHeaderValue {
     type Vtable = IHttpChallengeHeaderValue_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x393361af_0f7d_4820_9fdd_a2b956eeaeab);
@@ -8047,6 +7859,11 @@ pub struct IHttpChallengeHeaderValue_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHttpChallengeHeaderValueCollection(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpChallengeHeaderValueCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHttpChallengeHeaderValueCollection {
     type Vtable = IHttpChallengeHeaderValueCollection_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xca9e5f81_aee0_4353_a10b_e625babd64c2);
@@ -8061,6 +7878,11 @@ pub struct IHttpChallengeHeaderValueCollection_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHttpChallengeHeaderValueFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpChallengeHeaderValueFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHttpChallengeHeaderValueFactory {
     type Vtable = IHttpChallengeHeaderValueFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc452c451_d99c_40aa_9399_90eeb98fc613);
@@ -8075,6 +7897,11 @@ pub struct IHttpChallengeHeaderValueFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHttpChallengeHeaderValueStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpChallengeHeaderValueStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHttpChallengeHeaderValueStatics {
     type Vtable = IHttpChallengeHeaderValueStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf3d38a72_fc01_4d01_a008_fcb7c459d635);
@@ -8089,6 +7916,11 @@ pub struct IHttpChallengeHeaderValueStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHttpConnectionOptionHeaderValue(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpConnectionOptionHeaderValue {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHttpConnectionOptionHeaderValue {
     type Vtable = IHttpConnectionOptionHeaderValue_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xcb4af27a_4e90_45eb_8dcd_fd1408f4c44f);
@@ -8102,6 +7934,11 @@ pub struct IHttpConnectionOptionHeaderValue_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHttpConnectionOptionHeaderValueCollection(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpConnectionOptionHeaderValueCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHttpConnectionOptionHeaderValueCollection {
     type Vtable = IHttpConnectionOptionHeaderValueCollection_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe4f56c1d_5142_4e00_8e0f_019509337629);
@@ -8116,6 +7953,11 @@ pub struct IHttpConnectionOptionHeaderValueCollection_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHttpConnectionOptionHeaderValueFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpConnectionOptionHeaderValueFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHttpConnectionOptionHeaderValueFactory {
     type Vtable = IHttpConnectionOptionHeaderValueFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd93ccc1e_0b7d_4c3f_a58d_a2a1bdeabc0a);
@@ -8129,6 +7971,11 @@ pub struct IHttpConnectionOptionHeaderValueFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHttpConnectionOptionHeaderValueStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpConnectionOptionHeaderValueStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHttpConnectionOptionHeaderValueStatics {
     type Vtable = IHttpConnectionOptionHeaderValueStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xaaa75d37_a946_4b1f_85af_48b68b3c50bd);
@@ -8143,6 +7990,11 @@ pub struct IHttpConnectionOptionHeaderValueStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHttpContentCodingHeaderValue(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpContentCodingHeaderValue {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHttpContentCodingHeaderValue {
     type Vtable = IHttpContentCodingHeaderValue_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xbcf7f92a_9376_4d85_bccc_9f4f9acab434);
@@ -8156,6 +8008,11 @@ pub struct IHttpContentCodingHeaderValue_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHttpContentCodingHeaderValueCollection(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpContentCodingHeaderValueCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHttpContentCodingHeaderValueCollection {
     type Vtable = IHttpContentCodingHeaderValueCollection_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x7d221721_a6db_436e_8e83_91596192819c);
@@ -8170,6 +8027,11 @@ pub struct IHttpContentCodingHeaderValueCollection_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHttpContentCodingHeaderValueFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpContentCodingHeaderValueFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHttpContentCodingHeaderValueFactory {
     type Vtable = IHttpContentCodingHeaderValueFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc53d2bd7_332b_4350_8510_2e67a2289a5a);
@@ -8183,6 +8045,11 @@ pub struct IHttpContentCodingHeaderValueFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHttpContentCodingHeaderValueStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpContentCodingHeaderValueStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHttpContentCodingHeaderValueStatics {
     type Vtable = IHttpContentCodingHeaderValueStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x94d8602e_f9bf_42f7_aa46_ed272a41e212);
@@ -8197,6 +8064,11 @@ pub struct IHttpContentCodingHeaderValueStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHttpContentCodingWithQualityHeaderValue(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpContentCodingWithQualityHeaderValue {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHttpContentCodingWithQualityHeaderValue {
     type Vtable = IHttpContentCodingWithQualityHeaderValue_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x94531cd5_8b13_4d73_8651_f76b38f88495);
@@ -8214,6 +8086,11 @@ pub struct IHttpContentCodingWithQualityHeaderValue_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHttpContentCodingWithQualityHeaderValueCollection(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpContentCodingWithQualityHeaderValueCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHttpContentCodingWithQualityHeaderValueCollection {
     type Vtable = IHttpContentCodingWithQualityHeaderValueCollection_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x7c0d753e_e899_4378_b5c8_412d820711cc);
@@ -8228,6 +8105,11 @@ pub struct IHttpContentCodingWithQualityHeaderValueCollection_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHttpContentCodingWithQualityHeaderValueFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpContentCodingWithQualityHeaderValueFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHttpContentCodingWithQualityHeaderValueFactory {
     type Vtable = IHttpContentCodingWithQualityHeaderValueFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc45eee1a_c553_46fc_ade2_d75c1d53df7b);
@@ -8242,6 +8124,11 @@ pub struct IHttpContentCodingWithQualityHeaderValueFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHttpContentCodingWithQualityHeaderValueStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpContentCodingWithQualityHeaderValueStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHttpContentCodingWithQualityHeaderValueStatics {
     type Vtable = IHttpContentCodingWithQualityHeaderValueStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe8c9357c_8f89_4801_8e75_4c9abfc3de71);
@@ -8256,6 +8143,11 @@ pub struct IHttpContentCodingWithQualityHeaderValueStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHttpContentDispositionHeaderValue(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpContentDispositionHeaderValue {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHttpContentDispositionHeaderValue {
     type Vtable = IHttpContentDispositionHeaderValue_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf2a2eedc_2629_4b49_9908_96a168e9365e);
@@ -8288,6 +8180,11 @@ pub struct IHttpContentDispositionHeaderValue_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHttpContentDispositionHeaderValueFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpContentDispositionHeaderValueFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHttpContentDispositionHeaderValueFactory {
     type Vtable = IHttpContentDispositionHeaderValueFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9915bbc4_456c_4e81_8295_b2ab3cbcf545);
@@ -8301,6 +8198,11 @@ pub struct IHttpContentDispositionHeaderValueFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHttpContentDispositionHeaderValueStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpContentDispositionHeaderValueStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHttpContentDispositionHeaderValueStatics {
     type Vtable = IHttpContentDispositionHeaderValueStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x29c56067_5a37_46e4_b074_c5177d69ca66);
@@ -8315,6 +8217,11 @@ pub struct IHttpContentDispositionHeaderValueStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHttpContentHeaderCollection(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpContentHeaderCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHttpContentHeaderCollection {
     type Vtable = IHttpContentHeaderCollection_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x40612a44_47ae_4b7e_9124_69628b64aa18);
@@ -8377,6 +8284,11 @@ pub struct IHttpContentHeaderCollection_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHttpContentRangeHeaderValue(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpContentRangeHeaderValue {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHttpContentRangeHeaderValue {
     type Vtable = IHttpContentRangeHeaderValue_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x04d967d3_a4f6_495c_9530_8579fcba8aa9);
@@ -8403,6 +8315,11 @@ pub struct IHttpContentRangeHeaderValue_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHttpContentRangeHeaderValueFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpContentRangeHeaderValueFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHttpContentRangeHeaderValueFactory {
     type Vtable = IHttpContentRangeHeaderValueFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x3f5bd691_a03c_4456_9a6f_ef27ecd03cae);
@@ -8418,6 +8335,11 @@ pub struct IHttpContentRangeHeaderValueFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHttpContentRangeHeaderValueStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpContentRangeHeaderValueStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHttpContentRangeHeaderValueStatics {
     type Vtable = IHttpContentRangeHeaderValueStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x80a346ca_174c_4fae_821c_134cd294aa38);
@@ -8432,6 +8354,11 @@ pub struct IHttpContentRangeHeaderValueStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHttpCookiePairHeaderValue(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpCookiePairHeaderValue {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHttpCookiePairHeaderValue {
     type Vtable = IHttpCookiePairHeaderValue_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xcbd46217_4b29_412b_bd90_b3d814ab8e1b);
@@ -8447,6 +8374,11 @@ pub struct IHttpCookiePairHeaderValue_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHttpCookiePairHeaderValueCollection(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpCookiePairHeaderValueCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHttpCookiePairHeaderValueCollection {
     type Vtable = IHttpCookiePairHeaderValueCollection_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf3f44350_581e_4ecc_9f59_e507d04f06e6);
@@ -8461,6 +8393,11 @@ pub struct IHttpCookiePairHeaderValueCollection_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHttpCookiePairHeaderValueFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpCookiePairHeaderValueFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHttpCookiePairHeaderValueFactory {
     type Vtable = IHttpCookiePairHeaderValueFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x635e326f_146f_4f56_aa21_2cb7d6d58b1e);
@@ -8475,6 +8412,11 @@ pub struct IHttpCookiePairHeaderValueFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHttpCookiePairHeaderValueStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpCookiePairHeaderValueStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHttpCookiePairHeaderValueStatics {
     type Vtable = IHttpCookiePairHeaderValueStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x6e866d48_06af_4462_8158_99388d5dca81);
@@ -8489,6 +8431,11 @@ pub struct IHttpCookiePairHeaderValueStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHttpCredentialsHeaderValue(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpCredentialsHeaderValue {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHttpCredentialsHeaderValue {
     type Vtable = IHttpCredentialsHeaderValue_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc34cc3cb_542e_4177_a6c7_b674ce193fbf);
@@ -8507,6 +8454,11 @@ pub struct IHttpCredentialsHeaderValue_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHttpCredentialsHeaderValueFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpCredentialsHeaderValueFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHttpCredentialsHeaderValueFactory {
     type Vtable = IHttpCredentialsHeaderValueFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf21d9e91_4d1c_4182_bfd1_34470a62f950);
@@ -8521,6 +8473,11 @@ pub struct IHttpCredentialsHeaderValueFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHttpCredentialsHeaderValueStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpCredentialsHeaderValueStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHttpCredentialsHeaderValueStatics {
     type Vtable = IHttpCredentialsHeaderValueStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa69b2be6_ce8c_4443_a35a_1b727b131036);
@@ -8535,6 +8492,11 @@ pub struct IHttpCredentialsHeaderValueStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHttpDateOrDeltaHeaderValue(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpDateOrDeltaHeaderValue {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHttpDateOrDeltaHeaderValue {
     type Vtable = IHttpDateOrDeltaHeaderValue_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xeafcaa6a_c4dc_49e2_a27d_043adf5867a3);
@@ -8555,6 +8517,11 @@ pub struct IHttpDateOrDeltaHeaderValue_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHttpDateOrDeltaHeaderValueStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpDateOrDeltaHeaderValueStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHttpDateOrDeltaHeaderValueStatics {
     type Vtable = IHttpDateOrDeltaHeaderValueStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x7c2659a8_6672_4e90_9a9a_f39766f7f576);
@@ -8569,6 +8536,11 @@ pub struct IHttpDateOrDeltaHeaderValueStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHttpExpectationHeaderValue(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpExpectationHeaderValue {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHttpExpectationHeaderValue {
     type Vtable = IHttpExpectationHeaderValue_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x4ce585cd_3a99_43af_a2e6_ec232fea9658);
@@ -8588,6 +8560,11 @@ pub struct IHttpExpectationHeaderValue_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHttpExpectationHeaderValueCollection(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpExpectationHeaderValueCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHttpExpectationHeaderValueCollection {
     type Vtable = IHttpExpectationHeaderValueCollection_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe78521b3_a0e2_4ac4_9e66_79706cb9fd58);
@@ -8602,6 +8579,11 @@ pub struct IHttpExpectationHeaderValueCollection_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHttpExpectationHeaderValueFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpExpectationHeaderValueFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHttpExpectationHeaderValueFactory {
     type Vtable = IHttpExpectationHeaderValueFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x4ea275cb_d53e_4868_8856_1e21a5030dc0);
@@ -8616,6 +8598,11 @@ pub struct IHttpExpectationHeaderValueFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHttpExpectationHeaderValueStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpExpectationHeaderValueStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHttpExpectationHeaderValueStatics {
     type Vtable = IHttpExpectationHeaderValueStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x3019abe2_cfe5_473b_a57f_fba5b14eb257);
@@ -8630,6 +8617,11 @@ pub struct IHttpExpectationHeaderValueStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHttpLanguageHeaderValueCollection(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpLanguageHeaderValueCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHttpLanguageHeaderValueCollection {
     type Vtable = IHttpLanguageHeaderValueCollection_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9ebd7ca3_8219_44f6_9902_8c56dfd3340c);
@@ -8644,6 +8636,11 @@ pub struct IHttpLanguageHeaderValueCollection_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHttpLanguageRangeWithQualityHeaderValue(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpLanguageRangeWithQualityHeaderValue {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHttpLanguageRangeWithQualityHeaderValue {
     type Vtable = IHttpLanguageRangeWithQualityHeaderValue_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x7256e102_0080_4db4_a083_7de7b2e5ba4c);
@@ -8661,6 +8658,11 @@ pub struct IHttpLanguageRangeWithQualityHeaderValue_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHttpLanguageRangeWithQualityHeaderValueCollection(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpLanguageRangeWithQualityHeaderValueCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHttpLanguageRangeWithQualityHeaderValueCollection {
     type Vtable = IHttpLanguageRangeWithQualityHeaderValueCollection_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x885d5abd_4b4f_480a_89ce_8aedcee6e3a0);
@@ -8675,6 +8677,11 @@ pub struct IHttpLanguageRangeWithQualityHeaderValueCollection_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHttpLanguageRangeWithQualityHeaderValueFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpLanguageRangeWithQualityHeaderValueFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHttpLanguageRangeWithQualityHeaderValueFactory {
     type Vtable = IHttpLanguageRangeWithQualityHeaderValueFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x7bb83970_780f_4c83_9fe4_dc3087f6bd55);
@@ -8689,6 +8696,11 @@ pub struct IHttpLanguageRangeWithQualityHeaderValueFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHttpLanguageRangeWithQualityHeaderValueStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpLanguageRangeWithQualityHeaderValueStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHttpLanguageRangeWithQualityHeaderValueStatics {
     type Vtable = IHttpLanguageRangeWithQualityHeaderValueStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x2541e146_f308_46f5_b695_42f54024ec68);
@@ -8703,6 +8715,11 @@ pub struct IHttpLanguageRangeWithQualityHeaderValueStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHttpMediaTypeHeaderValue(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpMediaTypeHeaderValue {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHttpMediaTypeHeaderValue {
     type Vtable = IHttpMediaTypeHeaderValue_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x16b28533_e728_4fcb_bdb0_08a431a14844);
@@ -8723,6 +8740,11 @@ pub struct IHttpMediaTypeHeaderValue_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHttpMediaTypeHeaderValueFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpMediaTypeHeaderValueFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHttpMediaTypeHeaderValueFactory {
     type Vtable = IHttpMediaTypeHeaderValueFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xbed747a8_cd17_42dd_9367_ab9c5b56dd7d);
@@ -8736,6 +8758,11 @@ pub struct IHttpMediaTypeHeaderValueFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHttpMediaTypeHeaderValueStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpMediaTypeHeaderValueStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHttpMediaTypeHeaderValueStatics {
     type Vtable = IHttpMediaTypeHeaderValueStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe04d83df_1d41_4d8c_a2de_6fd2ed87399b);
@@ -8750,6 +8777,11 @@ pub struct IHttpMediaTypeHeaderValueStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHttpMediaTypeWithQualityHeaderValue(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpMediaTypeWithQualityHeaderValue {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHttpMediaTypeWithQualityHeaderValue {
     type Vtable = IHttpMediaTypeWithQualityHeaderValue_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x188d5e32_76be_44a0_b1cd_2074bded2dde);
@@ -8778,6 +8810,11 @@ pub struct IHttpMediaTypeWithQualityHeaderValue_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHttpMediaTypeWithQualityHeaderValueCollection(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpMediaTypeWithQualityHeaderValueCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHttpMediaTypeWithQualityHeaderValueCollection {
     type Vtable = IHttpMediaTypeWithQualityHeaderValueCollection_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x3c0c6b73_1342_4587_a056_18d02ff67165);
@@ -8792,6 +8829,11 @@ pub struct IHttpMediaTypeWithQualityHeaderValueCollection_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHttpMediaTypeWithQualityHeaderValueFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpMediaTypeWithQualityHeaderValueFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHttpMediaTypeWithQualityHeaderValueFactory {
     type Vtable = IHttpMediaTypeWithQualityHeaderValueFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x4c6d20f4_9457_44e6_a323_d122b958780b);
@@ -8806,6 +8848,11 @@ pub struct IHttpMediaTypeWithQualityHeaderValueFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHttpMediaTypeWithQualityHeaderValueStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpMediaTypeWithQualityHeaderValueStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHttpMediaTypeWithQualityHeaderValueStatics {
     type Vtable = IHttpMediaTypeWithQualityHeaderValueStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x5b070cd9_b560_4fc8_9835_7e6c0a657b24);
@@ -8820,6 +8867,11 @@ pub struct IHttpMediaTypeWithQualityHeaderValueStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHttpMethodHeaderValueCollection(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpMethodHeaderValueCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHttpMethodHeaderValueCollection {
     type Vtable = IHttpMethodHeaderValueCollection_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x43bc3ff4_6119_4adf_938c_34bfffcf92ed);
@@ -8834,6 +8886,11 @@ pub struct IHttpMethodHeaderValueCollection_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHttpNameValueHeaderValue(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpNameValueHeaderValue {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHttpNameValueHeaderValue {
     type Vtable = IHttpNameValueHeaderValue_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd8ba7463_5b9a_4d1b_93f9_aa5b44ecfddf);
@@ -8849,6 +8906,11 @@ pub struct IHttpNameValueHeaderValue_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHttpNameValueHeaderValueFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpNameValueHeaderValueFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHttpNameValueHeaderValueFactory {
     type Vtable = IHttpNameValueHeaderValueFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x770e2267_cbf8_4736_a925_93fbe10c7ca8);
@@ -8863,6 +8925,11 @@ pub struct IHttpNameValueHeaderValueFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHttpNameValueHeaderValueStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpNameValueHeaderValueStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHttpNameValueHeaderValueStatics {
     type Vtable = IHttpNameValueHeaderValueStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xffd4030f_1130_4152_8659_256909a9d115);
@@ -8877,6 +8944,11 @@ pub struct IHttpNameValueHeaderValueStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHttpProductHeaderValue(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpProductHeaderValue {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHttpProductHeaderValue {
     type Vtable = IHttpProductHeaderValue_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf4feee03_ebd4_4160_b9ff_807c5183b6e6);
@@ -8891,6 +8963,11 @@ pub struct IHttpProductHeaderValue_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHttpProductHeaderValueFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpProductHeaderValueFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHttpProductHeaderValueFactory {
     type Vtable = IHttpProductHeaderValueFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x611aa4f5_82bc_42fb_977b_dc00536e5e86);
@@ -8905,6 +8982,11 @@ pub struct IHttpProductHeaderValueFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHttpProductHeaderValueStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpProductHeaderValueStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHttpProductHeaderValueStatics {
     type Vtable = IHttpProductHeaderValueStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x90c33e29_befc_4337_be62_49f097975f53);
@@ -8919,6 +9001,11 @@ pub struct IHttpProductHeaderValueStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHttpProductInfoHeaderValue(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpProductInfoHeaderValue {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHttpProductInfoHeaderValue {
     type Vtable = IHttpProductInfoHeaderValue_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1b1a8732_4c35_486a_966f_646489198e4d);
@@ -8933,6 +9020,11 @@ pub struct IHttpProductInfoHeaderValue_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHttpProductInfoHeaderValueCollection(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpProductInfoHeaderValueCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHttpProductInfoHeaderValueCollection {
     type Vtable = IHttpProductInfoHeaderValueCollection_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x877df74a_d69b_44f8_ad4f_453af9c42ed0);
@@ -8947,6 +9039,11 @@ pub struct IHttpProductInfoHeaderValueCollection_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHttpProductInfoHeaderValueFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpProductInfoHeaderValueFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHttpProductInfoHeaderValueFactory {
     type Vtable = IHttpProductInfoHeaderValueFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x24220fbe_eabe_4464_b460_ec010b7c41e2);
@@ -8961,6 +9058,11 @@ pub struct IHttpProductInfoHeaderValueFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHttpProductInfoHeaderValueStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpProductInfoHeaderValueStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHttpProductInfoHeaderValueStatics {
     type Vtable = IHttpProductInfoHeaderValueStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xdb7fd857_327a_4e73_81e5_7059a302b042);
@@ -8975,6 +9077,11 @@ pub struct IHttpProductInfoHeaderValueStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHttpRequestHeaderCollection(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpRequestHeaderCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHttpRequestHeaderCollection {
     type Vtable = IHttpRequestHeaderCollection_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xaf40329b_b544_469b_86b9_ac3d466fea36);
@@ -9052,6 +9159,11 @@ pub struct IHttpRequestHeaderCollection_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHttpResponseHeaderCollection(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpResponseHeaderCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHttpResponseHeaderCollection {
     type Vtable = IHttpResponseHeaderCollection_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x7a990969_fa3f_41ed_aac6_bf957975c16b);
@@ -9098,6 +9210,11 @@ pub struct IHttpResponseHeaderCollection_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHttpTransferCodingHeaderValue(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpTransferCodingHeaderValue {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHttpTransferCodingHeaderValue {
     type Vtable = IHttpTransferCodingHeaderValue_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x436f32f9_3ded_42bd_b38a_5496a2511ce6);
@@ -9115,6 +9232,11 @@ pub struct IHttpTransferCodingHeaderValue_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHttpTransferCodingHeaderValueCollection(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpTransferCodingHeaderValueCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHttpTransferCodingHeaderValueCollection {
     type Vtable = IHttpTransferCodingHeaderValueCollection_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x202c8c34_2c03_49b8_9665_73e27cb2fc79);
@@ -9129,6 +9251,11 @@ pub struct IHttpTransferCodingHeaderValueCollection_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHttpTransferCodingHeaderValueFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpTransferCodingHeaderValueFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHttpTransferCodingHeaderValueFactory {
     type Vtable = IHttpTransferCodingHeaderValueFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xbb62dffc_e361_4f08_8e4f_c9e723de703b);
@@ -9142,6 +9269,11 @@ pub struct IHttpTransferCodingHeaderValueFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHttpTransferCodingHeaderValueStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpTransferCodingHeaderValueStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHttpTransferCodingHeaderValueStatics {
     type Vtable = IHttpTransferCodingHeaderValueStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x6ab8892a_1a98_4d32_a906_7470a9875ce5);

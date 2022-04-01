@@ -31,6 +31,7 @@ impl ::core::fmt::Debug for AUTH_VALIDATION_EX {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for AUTH_VALIDATION_EX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for AUTH_VALIDATION_EX {
@@ -627,6 +628,7 @@ impl ::core::fmt::Debug for GRE_CONFIG_PARAMS0 {
 }
 unsafe impl ::windows::core::Abi for GRE_CONFIG_PARAMS0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for GRE_CONFIG_PARAMS0 {
     fn eq(&self, other: &Self) -> bool {
@@ -665,6 +667,7 @@ impl ::core::fmt::Debug for HRASCONN {
 }
 unsafe impl ::windows::core::Abi for HRASCONN {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[repr(C)]
 #[doc = "*Required features: `\"Win32_NetworkManagement_Rras\"`, `\"Win32_Foundation\"`, `\"Win32_Security_Cryptography\"`*"]
@@ -692,6 +695,7 @@ impl ::core::fmt::Debug for IKEV2_CONFIG_PARAMS {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography"))]
 unsafe impl ::windows::core::Abi for IKEV2_CONFIG_PARAMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography"))]
 impl ::core::cmp::PartialEq for IKEV2_CONFIG_PARAMS {
@@ -750,6 +754,7 @@ impl ::core::default::Default for IKEV2_ID_PAYLOAD_TYPE {
 }
 unsafe impl ::windows::core::Abi for IKEV2_ID_PAYLOAD_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for IKEV2_ID_PAYLOAD_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -804,6 +809,7 @@ impl ::core::fmt::Debug for IKEV2_PROJECTION_INFO {
 }
 unsafe impl ::windows::core::Abi for IKEV2_PROJECTION_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IKEV2_PROJECTION_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -866,6 +872,7 @@ impl ::core::fmt::Debug for IKEV2_PROJECTION_INFO2 {
 }
 unsafe impl ::windows::core::Abi for IKEV2_PROJECTION_INFO2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IKEV2_PROJECTION_INFO2 {
     fn eq(&self, other: &Self) -> bool {
@@ -921,6 +928,7 @@ impl ::core::fmt::Debug for IKEV2_TUNNEL_CONFIG_PARAMS2 {
 #[cfg(feature = "Win32_Security_Cryptography")]
 unsafe impl ::windows::core::Abi for IKEV2_TUNNEL_CONFIG_PARAMS2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Security_Cryptography")]
 impl ::core::cmp::PartialEq for IKEV2_TUNNEL_CONFIG_PARAMS2 {
@@ -985,6 +993,7 @@ impl ::core::fmt::Debug for IKEV2_TUNNEL_CONFIG_PARAMS3 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography"))]
 unsafe impl ::windows::core::Abi for IKEV2_TUNNEL_CONFIG_PARAMS3 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography"))]
 impl ::core::cmp::PartialEq for IKEV2_TUNNEL_CONFIG_PARAMS3 {
@@ -1051,6 +1060,7 @@ impl ::core::fmt::Debug for IKEV2_TUNNEL_CONFIG_PARAMS4 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography"))]
 unsafe impl ::windows::core::Abi for IKEV2_TUNNEL_CONFIG_PARAMS4 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography"))]
 impl ::core::cmp::PartialEq for IKEV2_TUNNEL_CONFIG_PARAMS4 {
@@ -1091,6 +1101,7 @@ impl ::core::fmt::Debug for L2TP_CONFIG_PARAMS0 {
 }
 unsafe impl ::windows::core::Abi for L2TP_CONFIG_PARAMS0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for L2TP_CONFIG_PARAMS0 {
     fn eq(&self, other: &Self) -> bool {
@@ -1124,6 +1135,7 @@ impl ::core::fmt::Debug for L2TP_CONFIG_PARAMS1 {
 }
 unsafe impl ::windows::core::Abi for L2TP_CONFIG_PARAMS1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for L2TP_CONFIG_PARAMS1 {
     fn eq(&self, other: &Self) -> bool {
@@ -1158,6 +1170,7 @@ impl ::core::fmt::Debug for L2TP_TUNNEL_CONFIG_PARAMS1 {
 }
 unsafe impl ::windows::core::Abi for L2TP_TUNNEL_CONFIG_PARAMS1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for L2TP_TUNNEL_CONFIG_PARAMS1 {
     fn eq(&self, other: &Self) -> bool {
@@ -1193,6 +1206,7 @@ impl ::core::fmt::Debug for L2TP_TUNNEL_CONFIG_PARAMS2 {
 }
 unsafe impl ::windows::core::Abi for L2TP_TUNNEL_CONFIG_PARAMS2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for L2TP_TUNNEL_CONFIG_PARAMS2 {
     fn eq(&self, other: &Self) -> bool {
@@ -1248,6 +1262,7 @@ impl ::core::default::Default for MGM_ENUM_TYPES {
 }
 unsafe impl ::windows::core::Abi for MGM_ENUM_TYPES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MGM_ENUM_TYPES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1282,6 +1297,7 @@ impl ::core::fmt::Debug for MGM_IF_ENTRY {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MGM_IF_ENTRY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MGM_IF_ENTRY {
@@ -1352,6 +1368,7 @@ impl ::core::fmt::Debug for MPRAPI_ADMIN_DLL_CALLBACKS {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 unsafe impl ::windows::core::Abi for MPRAPI_ADMIN_DLL_CALLBACKS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 impl ::core::cmp::PartialEq for MPRAPI_ADMIN_DLL_CALLBACKS {
@@ -1429,6 +1446,7 @@ impl ::core::fmt::Debug for MPRAPI_OBJECT_HEADER {
 }
 unsafe impl ::windows::core::Abi for MPRAPI_OBJECT_HEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MPRAPI_OBJECT_HEADER {
     fn eq(&self, other: &Self) -> bool {
@@ -1470,6 +1488,7 @@ impl ::core::default::Default for MPRAPI_OBJECT_TYPE {
 }
 unsafe impl ::windows::core::Abi for MPRAPI_OBJECT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MPRAPI_OBJECT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1518,6 +1537,7 @@ impl ::core::fmt::Debug for MPRAPI_TUNNEL_CONFIG_PARAMS0 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography"))]
 unsafe impl ::windows::core::Abi for MPRAPI_TUNNEL_CONFIG_PARAMS0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography"))]
 impl ::core::cmp::PartialEq for MPRAPI_TUNNEL_CONFIG_PARAMS0 {
@@ -1560,6 +1580,7 @@ impl ::core::fmt::Debug for MPRAPI_TUNNEL_CONFIG_PARAMS1 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography"))]
 unsafe impl ::windows::core::Abi for MPRAPI_TUNNEL_CONFIG_PARAMS1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography"))]
 impl ::core::cmp::PartialEq for MPRAPI_TUNNEL_CONFIG_PARAMS1 {
@@ -1688,6 +1709,7 @@ impl ::core::fmt::Debug for MPR_CERT_EKU {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MPR_CERT_EKU {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MPR_CERT_EKU {
@@ -1722,6 +1744,7 @@ impl ::core::fmt::Debug for MPR_CREDENTIALSEX_0 {
 }
 unsafe impl ::windows::core::Abi for MPR_CREDENTIALSEX_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MPR_CREDENTIALSEX_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -1753,6 +1776,7 @@ impl ::core::fmt::Debug for MPR_CREDENTIALSEX_1 {
 }
 unsafe impl ::windows::core::Abi for MPR_CREDENTIALSEX_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MPR_CREDENTIALSEX_1 {
     fn eq(&self, other: &Self) -> bool {
@@ -1784,6 +1808,7 @@ impl ::core::fmt::Debug for MPR_DEVICE_0 {
 }
 unsafe impl ::windows::core::Abi for MPR_DEVICE_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MPR_DEVICE_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -1817,6 +1842,7 @@ impl ::core::fmt::Debug for MPR_DEVICE_1 {
 }
 unsafe impl ::windows::core::Abi for MPR_DEVICE_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MPR_DEVICE_1 {
     fn eq(&self, other: &Self) -> bool {
@@ -1858,6 +1884,7 @@ impl ::core::default::Default for MPR_ET {
 }
 unsafe impl ::windows::core::Abi for MPR_ET {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MPR_ET {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1887,6 +1914,7 @@ impl ::core::fmt::Debug for MPR_FILTER_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MPR_FILTER_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MPR_FILTER_0 {
@@ -1927,6 +1955,7 @@ impl ::core::fmt::Debug for MPR_IFTRANSPORT_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MPR_IFTRANSPORT_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MPR_IFTRANSPORT_0 {
@@ -1967,6 +1996,7 @@ impl ::core::fmt::Debug for MPR_IF_CUSTOMINFOEX0 {
 #[cfg(feature = "Win32_Security_Cryptography")]
 unsafe impl ::windows::core::Abi for MPR_IF_CUSTOMINFOEX0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Security_Cryptography")]
 impl ::core::cmp::PartialEq for MPR_IF_CUSTOMINFOEX0 {
@@ -2007,6 +2037,7 @@ impl ::core::fmt::Debug for MPR_IF_CUSTOMINFOEX1 {
 #[cfg(feature = "Win32_Security_Cryptography")]
 unsafe impl ::windows::core::Abi for MPR_IF_CUSTOMINFOEX1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Security_Cryptography")]
 impl ::core::cmp::PartialEq for MPR_IF_CUSTOMINFOEX1 {
@@ -2047,6 +2078,7 @@ impl ::core::fmt::Debug for MPR_IF_CUSTOMINFOEX2 {
 #[cfg(all(feature = "Win32_Networking_WinSock", feature = "Win32_Security_Cryptography"))]
 unsafe impl ::windows::core::Abi for MPR_IF_CUSTOMINFOEX2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Networking_WinSock", feature = "Win32_Security_Cryptography"))]
 impl ::core::cmp::PartialEq for MPR_IF_CUSTOMINFOEX2 {
@@ -2091,6 +2123,7 @@ impl ::core::fmt::Debug for MPR_INTERFACE_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MPR_INTERFACE_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MPR_INTERFACE_0 {
@@ -2136,6 +2169,7 @@ impl ::core::fmt::Debug for MPR_INTERFACE_1 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MPR_INTERFACE_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MPR_INTERFACE_1 {
@@ -2248,6 +2282,7 @@ impl ::core::fmt::Debug for MPR_INTERFACE_2 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MPR_INTERFACE_2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MPR_INTERFACE_2 {
@@ -2320,6 +2355,7 @@ impl ::core::clone::Clone for MPR_INTERFACE_3 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 unsafe impl ::windows::core::Abi for MPR_INTERFACE_3 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 impl ::core::cmp::PartialEq for MPR_INTERFACE_3 {
@@ -2364,6 +2400,7 @@ impl ::core::default::Default for MPR_INTERFACE_DIAL_MODE {
 }
 unsafe impl ::windows::core::Abi for MPR_INTERFACE_DIAL_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MPR_INTERFACE_DIAL_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2397,6 +2434,7 @@ impl ::core::fmt::Debug for MPR_IPINIP_INTERFACE_0 {
 }
 unsafe impl ::windows::core::Abi for MPR_IPINIP_INTERFACE_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MPR_IPINIP_INTERFACE_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -2459,6 +2497,7 @@ impl ::core::fmt::Debug for MPR_SERVER_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MPR_SERVER_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MPR_SERVER_0 {
@@ -2495,6 +2534,7 @@ impl ::core::fmt::Debug for MPR_SERVER_1 {
 }
 unsafe impl ::windows::core::Abi for MPR_SERVER_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MPR_SERVER_1 {
     fn eq(&self, other: &Self) -> bool {
@@ -2530,6 +2570,7 @@ impl ::core::fmt::Debug for MPR_SERVER_2 {
 }
 unsafe impl ::windows::core::Abi for MPR_SERVER_2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MPR_SERVER_2 {
     fn eq(&self, other: &Self) -> bool {
@@ -2571,6 +2612,7 @@ impl ::core::fmt::Debug for MPR_SERVER_EX0 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography"))]
 unsafe impl ::windows::core::Abi for MPR_SERVER_EX0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography"))]
 impl ::core::cmp::PartialEq for MPR_SERVER_EX0 {
@@ -2615,6 +2657,7 @@ impl ::core::fmt::Debug for MPR_SERVER_EX1 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography"))]
 unsafe impl ::windows::core::Abi for MPR_SERVER_EX1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography"))]
 impl ::core::cmp::PartialEq for MPR_SERVER_EX1 {
@@ -2655,6 +2698,7 @@ impl ::core::fmt::Debug for MPR_SERVER_SET_CONFIG_EX0 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography"))]
 unsafe impl ::windows::core::Abi for MPR_SERVER_SET_CONFIG_EX0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography"))]
 impl ::core::cmp::PartialEq for MPR_SERVER_SET_CONFIG_EX0 {
@@ -2695,6 +2739,7 @@ impl ::core::fmt::Debug for MPR_SERVER_SET_CONFIG_EX1 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography"))]
 unsafe impl ::windows::core::Abi for MPR_SERVER_SET_CONFIG_EX1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography"))]
 impl ::core::cmp::PartialEq for MPR_SERVER_SET_CONFIG_EX1 {
@@ -2735,6 +2780,7 @@ impl ::core::fmt::Debug for MPR_TRANSPORT_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MPR_TRANSPORT_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MPR_TRANSPORT_0 {
@@ -2776,6 +2822,7 @@ impl ::core::fmt::Debug for MPR_VPN_TRAFFIC_SELECTORS {
 #[cfg(feature = "Win32_Networking_WinSock")]
 unsafe impl ::windows::core::Abi for MPR_VPN_TRAFFIC_SELECTORS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Networking_WinSock")]
 impl ::core::cmp::PartialEq for MPR_VPN_TRAFFIC_SELECTORS {
@@ -2812,6 +2859,7 @@ impl ::core::default::Default for MPR_VPN_TS_TYPE {
 }
 unsafe impl ::windows::core::Abi for MPR_VPN_TS_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MPR_VPN_TS_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2845,6 +2893,7 @@ impl ::core::default::Default for MPR_VS {
 }
 unsafe impl ::windows::core::Abi for MPR_VS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MPR_VS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4858,6 +4907,7 @@ impl ::core::fmt::Debug for PPP_ATCP_INFO {
 }
 unsafe impl ::windows::core::Abi for PPP_ATCP_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PPP_ATCP_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -4904,6 +4954,7 @@ impl ::core::fmt::Debug for PPP_CCP_INFO {
 }
 unsafe impl ::windows::core::Abi for PPP_CCP_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PPP_CCP_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -4937,6 +4988,7 @@ impl ::core::fmt::Debug for PPP_INFO {
 }
 unsafe impl ::windows::core::Abi for PPP_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PPP_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -4972,6 +5024,7 @@ impl ::core::fmt::Debug for PPP_INFO_2 {
 }
 unsafe impl ::windows::core::Abi for PPP_INFO_2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PPP_INFO_2 {
     fn eq(&self, other: &Self) -> bool {
@@ -5006,6 +5059,7 @@ impl ::core::fmt::Debug for PPP_INFO_3 {
 }
 unsafe impl ::windows::core::Abi for PPP_INFO_3 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PPP_INFO_3 {
     fn eq(&self, other: &Self) -> bool {
@@ -5038,6 +5092,7 @@ impl ::core::fmt::Debug for PPP_IPCP_INFO {
 }
 unsafe impl ::windows::core::Abi for PPP_IPCP_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PPP_IPCP_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -5072,6 +5127,7 @@ impl ::core::fmt::Debug for PPP_IPCP_INFO2 {
 }
 unsafe impl ::windows::core::Abi for PPP_IPCP_INFO2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PPP_IPCP_INFO2 {
     fn eq(&self, other: &Self) -> bool {
@@ -5112,6 +5168,7 @@ impl ::core::fmt::Debug for PPP_IPV6_CP_INFO {
 }
 unsafe impl ::windows::core::Abi for PPP_IPV6_CP_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PPP_IPV6_CP_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -5143,6 +5200,7 @@ impl ::core::fmt::Debug for PPP_IPXCP_INFO {
 }
 unsafe impl ::windows::core::Abi for PPP_IPXCP_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PPP_IPXCP_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -5180,6 +5238,7 @@ impl ::core::default::Default for PPP_LCP {
 }
 unsafe impl ::windows::core::Abi for PPP_LCP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PPP_LCP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5244,6 +5303,7 @@ impl ::core::fmt::Debug for PPP_LCP_INFO {
 }
 unsafe impl ::windows::core::Abi for PPP_LCP_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PPP_LCP_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -5279,6 +5339,7 @@ impl ::core::default::Default for PPP_LCP_INFO_AUTH_DATA {
 }
 unsafe impl ::windows::core::Abi for PPP_LCP_INFO_AUTH_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PPP_LCP_INFO_AUTH_DATA {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5310,6 +5371,7 @@ impl ::core::fmt::Debug for PPP_NBFCP_INFO {
 }
 unsafe impl ::windows::core::Abi for PPP_NBFCP_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PPP_NBFCP_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -5396,6 +5458,7 @@ impl ::core::fmt::Debug for PPP_PROJECTION_INFO {
 }
 unsafe impl ::windows::core::Abi for PPP_PROJECTION_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PPP_PROJECTION_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -5484,6 +5547,7 @@ impl ::core::fmt::Debug for PPP_PROJECTION_INFO2 {
 }
 unsafe impl ::windows::core::Abi for PPP_PROJECTION_INFO2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PPP_PROJECTION_INFO2 {
     fn eq(&self, other: &Self) -> bool {
@@ -5515,6 +5579,7 @@ impl ::core::fmt::Debug for PPTP_CONFIG_PARAMS {
 }
 unsafe impl ::windows::core::Abi for PPTP_CONFIG_PARAMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PPTP_CONFIG_PARAMS {
     fn eq(&self, other: &Self) -> bool {
@@ -5541,6 +5606,7 @@ impl ::core::clone::Clone for PROJECTION_INFO {
 }
 unsafe impl ::windows::core::Abi for PROJECTION_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROJECTION_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -5567,6 +5633,7 @@ impl ::core::clone::Clone for PROJECTION_INFO_0 {
 }
 unsafe impl ::windows::core::Abi for PROJECTION_INFO_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROJECTION_INFO_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -5593,6 +5660,7 @@ impl ::core::clone::Clone for PROJECTION_INFO2 {
 }
 unsafe impl ::windows::core::Abi for PROJECTION_INFO2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROJECTION_INFO2 {
     fn eq(&self, other: &Self) -> bool {
@@ -5619,6 +5687,7 @@ impl ::core::clone::Clone for PROJECTION_INFO2_0 {
 }
 unsafe impl ::windows::core::Abi for PROJECTION_INFO2_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROJECTION_INFO2_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -5660,6 +5729,7 @@ impl ::core::clone::Clone for RASADPARAMS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for RASADPARAMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for RASADPARAMS {
@@ -5711,6 +5781,7 @@ impl ::core::fmt::Debug for RASAMBA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for RASAMBA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for RASAMBA {
@@ -5747,6 +5818,7 @@ impl ::core::fmt::Debug for RASAMBW {
 }
 unsafe impl ::windows::core::Abi for RASAMBW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RASAMBW {
     fn eq(&self, other: &Self) -> bool {
@@ -5784,6 +5856,7 @@ impl ::core::default::Default for RASAPIVERSION {
 }
 unsafe impl ::windows::core::Abi for RASAPIVERSION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RASAPIVERSION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5816,6 +5889,7 @@ impl ::core::fmt::Debug for RASAUTODIALENTRYA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for RASAUTODIALENTRYA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for RASAUTODIALENTRYA {
@@ -5852,6 +5926,7 @@ impl ::core::fmt::Debug for RASAUTODIALENTRYW {
 }
 unsafe impl ::windows::core::Abi for RASAUTODIALENTRYW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RASAUTODIALENTRYW {
     fn eq(&self, other: &Self) -> bool {
@@ -5940,6 +6015,7 @@ impl ::core::fmt::Debug for RASCOMMSETTINGS {
 }
 unsafe impl ::windows::core::Abi for RASCOMMSETTINGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RASCOMMSETTINGS {
     fn eq(&self, other: &Self) -> bool {
@@ -5979,6 +6055,7 @@ impl ::core::clone::Clone for RASCONNA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for RASCONNA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for RASCONNA {
@@ -6075,6 +6152,7 @@ impl ::core::default::Default for RASCONNSTATE {
 }
 unsafe impl ::windows::core::Abi for RASCONNSTATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RASCONNSTATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6106,6 +6184,7 @@ impl ::core::clone::Clone for RASCONNSTATUSA {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 unsafe impl ::windows::core::Abi for RASCONNSTATUSA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 impl ::core::cmp::PartialEq for RASCONNSTATUSA {
@@ -6146,6 +6225,7 @@ impl ::core::clone::Clone for RASCONNSTATUSW {
 #[cfg(feature = "Win32_Networking_WinSock")]
 unsafe impl ::windows::core::Abi for RASCONNSTATUSW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Networking_WinSock")]
 impl ::core::cmp::PartialEq for RASCONNSTATUSW {
@@ -6186,6 +6266,7 @@ impl ::core::default::Default for RASCONNSUBSTATE {
 }
 unsafe impl ::windows::core::Abi for RASCONNSUBSTATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RASCONNSUBSTATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6219,6 +6300,7 @@ impl ::core::clone::Clone for RASCONNW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for RASCONNW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for RASCONNW {
@@ -6261,6 +6343,7 @@ impl ::core::fmt::Debug for RASCREDENTIALSA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for RASCREDENTIALSA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for RASCREDENTIALSA {
@@ -6298,6 +6381,7 @@ impl ::core::fmt::Debug for RASCREDENTIALSW {
 }
 unsafe impl ::windows::core::Abi for RASCREDENTIALSW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RASCREDENTIALSW {
     fn eq(&self, other: &Self) -> bool {
@@ -6338,6 +6422,7 @@ impl ::core::fmt::Debug for RASCTRYINFO {
 }
 unsafe impl ::windows::core::Abi for RASCTRYINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RASCTRYINFO {
     fn eq(&self, other: &Self) -> bool {
@@ -6368,6 +6453,7 @@ impl ::core::clone::Clone for RASCUSTOMSCRIPTEXTENSIONS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for RASCUSTOMSCRIPTEXTENSIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for RASCUSTOMSCRIPTEXTENSIONS {
@@ -6416,6 +6502,7 @@ impl ::core::fmt::Debug for RASDEVINFOA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for RASDEVINFOA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for RASDEVINFOA {
@@ -6451,6 +6538,7 @@ impl ::core::fmt::Debug for RASDEVINFOW {
 }
 unsafe impl ::windows::core::Abi for RASDEVINFOW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RASDEVINFOW {
     fn eq(&self, other: &Self) -> bool {
@@ -6477,6 +6565,7 @@ impl ::core::clone::Clone for RASDEVSPECIFICINFO {
 }
 unsafe impl ::windows::core::Abi for RASDEVSPECIFICINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RASDEVSPECIFICINFO {
     fn eq(&self, other: &Self) -> bool {
@@ -6514,6 +6603,7 @@ impl ::core::clone::Clone for RASDIALDLG {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for RASDIALDLG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for RASDIALDLG {
@@ -6555,6 +6645,7 @@ impl ::core::clone::Clone for RASDIALEXTENSIONS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for RASDIALEXTENSIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for RASDIALEXTENSIONS {
@@ -6603,6 +6694,7 @@ impl ::core::clone::Clone for RASDIALPARAMSA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for RASDIALPARAMSA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for RASDIALPARAMSA {
@@ -6641,6 +6733,7 @@ impl ::core::clone::Clone for RASDIALPARAMSW {
 }
 unsafe impl ::windows::core::Abi for RASDIALPARAMSW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RASDIALPARAMSW {
     fn eq(&self, other: &Self) -> bool {
@@ -6701,6 +6794,7 @@ impl ::core::clone::Clone for RASEAPINFO {
 }
 unsafe impl ::windows::core::Abi for RASEAPINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RASEAPINFO {
     fn eq(&self, other: &Self) -> bool {
@@ -6738,6 +6832,7 @@ impl ::core::fmt::Debug for RASEAPUSERIDENTITYA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for RASEAPUSERIDENTITYA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for RASEAPUSERIDENTITYA {
@@ -6773,6 +6868,7 @@ impl ::core::fmt::Debug for RASEAPUSERIDENTITYW {
 }
 unsafe impl ::windows::core::Abi for RASEAPUSERIDENTITYW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RASEAPUSERIDENTITYW {
     fn eq(&self, other: &Self) -> bool {
@@ -6886,6 +6982,7 @@ impl ::core::clone::Clone for RASENTRYA {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 unsafe impl ::windows::core::Abi for RASENTRYA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 impl ::core::cmp::PartialEq for RASENTRYA {
@@ -6926,6 +7023,7 @@ impl ::core::clone::Clone for RASENTRYDLGA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for RASENTRYDLGA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for RASENTRYDLGA {
@@ -6966,6 +7064,7 @@ impl ::core::clone::Clone for RASENTRYDLGW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for RASENTRYDLGW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for RASENTRYDLGW {
@@ -7007,6 +7106,7 @@ impl ::core::fmt::Debug for RASENTRYNAMEA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for RASENTRYNAMEA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for RASENTRYNAMEA {
@@ -7043,6 +7143,7 @@ impl ::core::fmt::Debug for RASENTRYNAMEW {
 }
 unsafe impl ::windows::core::Abi for RASENTRYNAMEW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RASENTRYNAMEW {
     fn eq(&self, other: &Self) -> bool {
@@ -7132,6 +7233,7 @@ impl ::core::clone::Clone for RASENTRYW {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 unsafe impl ::windows::core::Abi for RASENTRYW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 impl ::core::cmp::PartialEq for RASENTRYW {
@@ -7168,6 +7270,7 @@ impl ::core::default::Default for RASENTRY_DIAL_MODE {
 }
 unsafe impl ::windows::core::Abi for RASENTRY_DIAL_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RASENTRY_DIAL_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7351,6 +7454,7 @@ impl ::core::clone::Clone for RASIKEV2_PROJECTION_INFO {
 #[cfg(feature = "Win32_Networking_WinSock")]
 unsafe impl ::windows::core::Abi for RASIKEV2_PROJECTION_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Networking_WinSock")]
 impl ::core::cmp::PartialEq for RASIKEV2_PROJECTION_INFO {
@@ -7389,6 +7493,7 @@ impl ::core::default::Default for RASIKEV_PROJECTION_INFO_FLAGS {
 }
 unsafe impl ::windows::core::Abi for RASIKEV_PROJECTION_INFO_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RASIKEV_PROJECTION_INFO_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7450,6 +7555,7 @@ impl ::core::fmt::Debug for RASIPADDR {
 }
 unsafe impl ::windows::core::Abi for RASIPADDR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RASIPADDR {
     fn eq(&self, other: &Self) -> bool {
@@ -7484,6 +7590,7 @@ impl ::core::fmt::Debug for RASIPXW {
 }
 unsafe impl ::windows::core::Abi for RASIPXW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RASIPXW {
     fn eq(&self, other: &Self) -> bool {
@@ -7548,6 +7655,7 @@ impl ::core::fmt::Debug for RASNOUSERA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for RASNOUSERA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for RASNOUSERA {
@@ -7586,6 +7694,7 @@ impl ::core::fmt::Debug for RASNOUSERW {
 }
 unsafe impl ::windows::core::Abi for RASNOUSERW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RASNOUSERW {
     fn eq(&self, other: &Self) -> bool {
@@ -7656,6 +7765,7 @@ impl ::core::clone::Clone for RASPBDLGA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for RASPBDLGA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for RASPBDLGA {
@@ -7701,6 +7811,7 @@ impl ::core::clone::Clone for RASPBDLGW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for RASPBDLGW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for RASPBDLGW {
@@ -7739,6 +7850,7 @@ impl ::core::fmt::Debug for RASPPPCCP {
 }
 unsafe impl ::windows::core::Abi for RASPPPCCP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RASPPPCCP {
     fn eq(&self, other: &Self) -> bool {
@@ -7779,6 +7891,7 @@ impl ::core::fmt::Debug for RASPPPIPA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for RASPPPIPA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for RASPPPIPA {
@@ -7817,6 +7930,7 @@ impl ::core::fmt::Debug for RASPPPIPV6 {
 }
 unsafe impl ::windows::core::Abi for RASPPPIPV6 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RASPPPIPV6 {
     fn eq(&self, other: &Self) -> bool {
@@ -7852,6 +7966,7 @@ impl ::core::fmt::Debug for RASPPPIPW {
 }
 unsafe impl ::windows::core::Abi for RASPPPIPW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RASPPPIPW {
     fn eq(&self, other: &Self) -> bool {
@@ -7889,6 +8004,7 @@ impl ::core::fmt::Debug for RASPPPIPXA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for RASPPPIPXA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for RASPPPIPXA {
@@ -7957,6 +8073,7 @@ impl ::core::fmt::Debug for RASPPPLCPA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for RASPPPLCPA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for RASPPPLCPA {
@@ -8025,6 +8142,7 @@ impl ::core::fmt::Debug for RASPPPLCPW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for RASPPPLCPW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for RASPPPLCPW {
@@ -8068,6 +8186,7 @@ impl ::core::fmt::Debug for RASPPPNBFA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for RASPPPNBFA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for RASPPPNBFA {
@@ -8106,6 +8225,7 @@ impl ::core::fmt::Debug for RASPPPNBFW {
 }
 unsafe impl ::windows::core::Abi for RASPPPNBFW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RASPPPNBFW {
     fn eq(&self, other: &Self) -> bool {
@@ -8157,6 +8277,7 @@ impl ::core::clone::Clone for RASPPP_PROJECTION_INFO {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 unsafe impl ::windows::core::Abi for RASPPP_PROJECTION_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 impl ::core::cmp::PartialEq for RASPPP_PROJECTION_INFO {
@@ -8195,6 +8316,7 @@ impl ::core::default::Default for RASPPP_PROJECTION_INFO_SERVER_AUTH_DATA {
 }
 unsafe impl ::windows::core::Abi for RASPPP_PROJECTION_INFO_SERVER_AUTH_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RASPPP_PROJECTION_INFO_SERVER_AUTH_DATA {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8226,6 +8348,7 @@ impl ::core::default::Default for RASPPP_PROJECTION_INFO_SERVER_AUTH_PROTOCOL {
 }
 unsafe impl ::windows::core::Abi for RASPPP_PROJECTION_INFO_SERVER_AUTH_PROTOCOL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RASPPP_PROJECTION_INFO_SERVER_AUTH_PROTOCOL {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8273,6 +8396,7 @@ impl ::core::default::Default for RASPROJECTION {
 }
 unsafe impl ::windows::core::Abi for RASPROJECTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RASPROJECTION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8300,6 +8424,7 @@ impl ::core::default::Default for RASPROJECTION_INFO_TYPE {
 }
 unsafe impl ::windows::core::Abi for RASPROJECTION_INFO_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RASPROJECTION_INFO_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8336,6 +8461,7 @@ impl ::core::fmt::Debug for RASSUBENTRYA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for RASSUBENTRYA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for RASSUBENTRYA {
@@ -8374,6 +8500,7 @@ impl ::core::fmt::Debug for RASSUBENTRYW {
 }
 unsafe impl ::windows::core::Abi for RASSUBENTRYW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RASSUBENTRYW {
     fn eq(&self, other: &Self) -> bool {
@@ -8404,6 +8531,7 @@ impl ::core::clone::Clone for RASTUNNELENDPOINT {
 #[cfg(feature = "Win32_Networking_WinSock")]
 unsafe impl ::windows::core::Abi for RASTUNNELENDPOINT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Networking_WinSock")]
 impl ::core::cmp::PartialEq for RASTUNNELENDPOINT {
@@ -8437,6 +8565,7 @@ impl ::core::clone::Clone for RASTUNNELENDPOINT_0 {
 #[cfg(feature = "Win32_Networking_WinSock")]
 unsafe impl ::windows::core::Abi for RASTUNNELENDPOINT_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Networking_WinSock")]
 impl ::core::cmp::PartialEq for RASTUNNELENDPOINT_0 {
@@ -8480,6 +8609,7 @@ impl ::core::clone::Clone for RASUPDATECONN {
 #[cfg(feature = "Win32_Networking_WinSock")]
 unsafe impl ::windows::core::Abi for RASUPDATECONN {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Networking_WinSock")]
 impl ::core::cmp::PartialEq for RASUPDATECONN {
@@ -8526,6 +8656,7 @@ impl ::core::fmt::Debug for RAS_CONNECTION_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for RAS_CONNECTION_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for RAS_CONNECTION_0 {
@@ -8594,6 +8725,7 @@ impl ::core::fmt::Debug for RAS_CONNECTION_1 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for RAS_CONNECTION_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for RAS_CONNECTION_1 {
@@ -8636,6 +8768,7 @@ impl ::core::fmt::Debug for RAS_CONNECTION_2 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for RAS_CONNECTION_2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for RAS_CONNECTION_2 {
@@ -8682,6 +8815,7 @@ impl ::core::fmt::Debug for RAS_CONNECTION_3 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for RAS_CONNECTION_3 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for RAS_CONNECTION_3 {
@@ -8743,6 +8877,7 @@ impl ::core::clone::Clone for RAS_CONNECTION_4 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for RAS_CONNECTION_4 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for RAS_CONNECTION_4 {
@@ -8803,6 +8938,7 @@ impl ::core::clone::Clone for RAS_CONNECTION_EX {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for RAS_CONNECTION_EX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for RAS_CONNECTION_EX {
@@ -8847,6 +8983,7 @@ impl ::core::default::Default for RAS_FLAGS {
 }
 unsafe impl ::windows::core::Abi for RAS_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RAS_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8876,6 +9013,7 @@ impl ::core::default::Default for RAS_HARDWARE_CONDITION {
 }
 unsafe impl ::windows::core::Abi for RAS_HARDWARE_CONDITION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RAS_HARDWARE_CONDITION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8943,6 +9081,7 @@ impl ::core::fmt::Debug for RAS_PORT_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for RAS_PORT_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for RAS_PORT_0 {
@@ -9013,6 +9152,7 @@ impl ::core::fmt::Debug for RAS_PORT_1 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for RAS_PORT_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for RAS_PORT_1 {
@@ -9105,6 +9245,7 @@ impl ::core::fmt::Debug for RAS_PORT_2 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for RAS_PORT_2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for RAS_PORT_2 {
@@ -9151,6 +9292,7 @@ impl ::core::default::Default for RAS_PORT_CONDITION {
 }
 unsafe impl ::windows::core::Abi for RAS_PORT_CONDITION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RAS_PORT_CONDITION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9176,6 +9318,7 @@ impl ::core::clone::Clone for RAS_PROJECTION_INFO {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 unsafe impl ::windows::core::Abi for RAS_PROJECTION_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 impl ::core::cmp::PartialEq for RAS_PROJECTION_INFO {
@@ -9209,6 +9352,7 @@ impl ::core::clone::Clone for RAS_PROJECTION_INFO_0 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 unsafe impl ::windows::core::Abi for RAS_PROJECTION_INFO_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Networking_WinSock"))]
 impl ::core::cmp::PartialEq for RAS_PROJECTION_INFO_0 {
@@ -9249,6 +9393,7 @@ impl ::core::default::Default for RAS_QUARANTINE_STATE {
 }
 unsafe impl ::windows::core::Abi for RAS_QUARANTINE_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RAS_QUARANTINE_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9280,6 +9425,7 @@ impl ::core::fmt::Debug for RAS_SECURITY_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for RAS_SECURITY_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for RAS_SECURITY_INFO {
@@ -9343,6 +9489,7 @@ impl ::core::fmt::Debug for RAS_STATS {
 }
 unsafe impl ::windows::core::Abi for RAS_STATS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RAS_STATS {
     fn eq(&self, other: &Self) -> bool {
@@ -9376,6 +9523,7 @@ impl ::core::fmt::Debug for RAS_UPDATE_CONNECTION {
 }
 unsafe impl ::windows::core::Abi for RAS_UPDATE_CONNECTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RAS_UPDATE_CONNECTION {
     fn eq(&self, other: &Self) -> bool {
@@ -9407,6 +9555,7 @@ impl ::core::fmt::Debug for RAS_USER_0 {
 }
 unsafe impl ::windows::core::Abi for RAS_USER_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RAS_USER_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -9439,6 +9588,7 @@ impl ::core::fmt::Debug for RAS_USER_1 {
 }
 unsafe impl ::windows::core::Abi for RAS_USER_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RAS_USER_1 {
     fn eq(&self, other: &Self) -> bool {
@@ -9520,6 +9670,7 @@ impl ::core::default::Default for ROUTER_CONNECTION_STATE {
 }
 unsafe impl ::windows::core::Abi for ROUTER_CONNECTION_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ROUTER_CONNECTION_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9549,6 +9700,7 @@ impl ::core::fmt::Debug for ROUTER_CUSTOM_IKEv2_POLICY0 {
 }
 unsafe impl ::windows::core::Abi for ROUTER_CUSTOM_IKEv2_POLICY0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ROUTER_CUSTOM_IKEv2_POLICY0 {
     fn eq(&self, other: &Self) -> bool {
@@ -9587,6 +9739,7 @@ impl ::core::fmt::Debug for ROUTER_IKEv2_IF_CUSTOM_CONFIG0 {
 #[cfg(feature = "Win32_Security_Cryptography")]
 unsafe impl ::windows::core::Abi for ROUTER_IKEv2_IF_CUSTOM_CONFIG0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Security_Cryptography")]
 impl ::core::cmp::PartialEq for ROUTER_IKEv2_IF_CUSTOM_CONFIG0 {
@@ -9629,6 +9782,7 @@ impl ::core::fmt::Debug for ROUTER_IKEv2_IF_CUSTOM_CONFIG1 {
 #[cfg(feature = "Win32_Security_Cryptography")]
 unsafe impl ::windows::core::Abi for ROUTER_IKEv2_IF_CUSTOM_CONFIG1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Security_Cryptography")]
 impl ::core::cmp::PartialEq for ROUTER_IKEv2_IF_CUSTOM_CONFIG1 {
@@ -9673,6 +9827,7 @@ impl ::core::fmt::Debug for ROUTER_IKEv2_IF_CUSTOM_CONFIG2 {
 #[cfg(all(feature = "Win32_Networking_WinSock", feature = "Win32_Security_Cryptography"))]
 unsafe impl ::windows::core::Abi for ROUTER_IKEv2_IF_CUSTOM_CONFIG2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Networking_WinSock", feature = "Win32_Security_Cryptography"))]
 impl ::core::cmp::PartialEq for ROUTER_IKEv2_IF_CUSTOM_CONFIG2 {
@@ -9723,6 +9878,7 @@ impl ::core::default::Default for ROUTER_INTERFACE_TYPE {
 }
 unsafe impl ::windows::core::Abi for ROUTER_INTERFACE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ROUTER_INTERFACE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9772,6 +9928,7 @@ impl ::core::fmt::Debug for ROUTING_PROTOCOL_CONFIG {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for ROUTING_PROTOCOL_CONFIG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for ROUTING_PROTOCOL_CONFIG {
@@ -9831,6 +9988,7 @@ impl ::core::fmt::Debug for RTM_DEST_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for RTM_DEST_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for RTM_DEST_INFO {
@@ -9874,6 +10032,7 @@ impl ::core::fmt::Debug for RTM_DEST_INFO_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for RTM_DEST_INFO_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for RTM_DEST_INFO_0 {
@@ -9910,6 +10069,7 @@ impl ::core::fmt::Debug for RTM_ENTITY_EXPORT_METHODS {
 }
 unsafe impl ::windows::core::Abi for RTM_ENTITY_EXPORT_METHODS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RTM_ENTITY_EXPORT_METHODS {
     fn eq(&self, other: &Self) -> bool {
@@ -9935,6 +10095,7 @@ impl ::core::clone::Clone for RTM_ENTITY_ID {
 }
 unsafe impl ::windows::core::Abi for RTM_ENTITY_ID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RTM_ENTITY_ID {
     fn eq(&self, other: &Self) -> bool {
@@ -9961,6 +10122,7 @@ impl ::core::clone::Clone for RTM_ENTITY_ID_0 {
 }
 unsafe impl ::windows::core::Abi for RTM_ENTITY_ID_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RTM_ENTITY_ID_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -9992,6 +10154,7 @@ impl ::core::fmt::Debug for RTM_ENTITY_ID_0_0 {
 }
 unsafe impl ::windows::core::Abi for RTM_ENTITY_ID_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RTM_ENTITY_ID_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -10019,6 +10182,7 @@ impl ::core::clone::Clone for RTM_ENTITY_INFO {
 }
 unsafe impl ::windows::core::Abi for RTM_ENTITY_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RTM_ENTITY_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -10051,6 +10215,7 @@ impl ::core::fmt::Debug for RTM_ENTITY_METHOD_INPUT {
 }
 unsafe impl ::windows::core::Abi for RTM_ENTITY_METHOD_INPUT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RTM_ENTITY_METHOD_INPUT {
     fn eq(&self, other: &Self) -> bool {
@@ -10084,6 +10249,7 @@ impl ::core::fmt::Debug for RTM_ENTITY_METHOD_OUTPUT {
 }
 unsafe impl ::windows::core::Abi for RTM_ENTITY_METHOD_OUTPUT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RTM_ENTITY_METHOD_OUTPUT {
     fn eq(&self, other: &Self) -> bool {
@@ -10137,6 +10303,7 @@ impl ::core::default::Default for RTM_EVENT_TYPE {
 }
 unsafe impl ::windows::core::Abi for RTM_EVENT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RTM_EVENT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10181,6 +10348,7 @@ impl ::core::fmt::Debug for RTM_NET_ADDRESS {
 }
 unsafe impl ::windows::core::Abi for RTM_NET_ADDRESS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RTM_NET_ADDRESS {
     fn eq(&self, other: &Self) -> bool {
@@ -10223,6 +10391,7 @@ impl ::core::fmt::Debug for RTM_NEXTHOP_INFO {
 }
 unsafe impl ::windows::core::Abi for RTM_NEXTHOP_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RTM_NEXTHOP_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -10254,6 +10423,7 @@ impl ::core::fmt::Debug for RTM_NEXTHOP_LIST {
 }
 unsafe impl ::windows::core::Abi for RTM_NEXTHOP_LIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RTM_NEXTHOP_LIST {
     fn eq(&self, other: &Self) -> bool {
@@ -10293,6 +10463,7 @@ impl ::core::fmt::Debug for RTM_PREF_INFO {
 }
 unsafe impl ::windows::core::Abi for RTM_PREF_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RTM_PREF_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -10326,6 +10497,7 @@ impl ::core::fmt::Debug for RTM_REGN_PROFILE {
 }
 unsafe impl ::windows::core::Abi for RTM_REGN_PROFILE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RTM_REGN_PROFILE {
     fn eq(&self, other: &Self) -> bool {
@@ -10403,6 +10575,7 @@ impl ::core::fmt::Debug for RTM_ROUTE_INFO {
 }
 unsafe impl ::windows::core::Abi for RTM_ROUTE_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RTM_ROUTE_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -12632,6 +12805,7 @@ impl ::core::fmt::Debug for SECURITY_MESSAGE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SECURITY_MESSAGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for SECURITY_MESSAGE {
@@ -12670,6 +12844,7 @@ impl ::core::default::Default for SECURITY_MESSAGE_MSG_ID {
 }
 unsafe impl ::windows::core::Abi for SECURITY_MESSAGE_MSG_ID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SECURITY_MESSAGE_MSG_ID {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12697,6 +12872,7 @@ impl ::core::fmt::Debug for SOURCE_GROUP_ENTRY {
 }
 unsafe impl ::windows::core::Abi for SOURCE_GROUP_ENTRY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SOURCE_GROUP_ENTRY {
     fn eq(&self, other: &Self) -> bool {
@@ -12733,6 +12909,7 @@ impl ::core::fmt::Debug for SSTP_CERT_INFO {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography"))]
 unsafe impl ::windows::core::Abi for SSTP_CERT_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography"))]
 impl ::core::cmp::PartialEq for SSTP_CERT_INFO {
@@ -12775,6 +12952,7 @@ impl ::core::fmt::Debug for SSTP_CONFIG_PARAMS {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography"))]
 unsafe impl ::windows::core::Abi for SSTP_CONFIG_PARAMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography"))]
 impl ::core::cmp::PartialEq for SSTP_CONFIG_PARAMS {
@@ -12808,6 +12986,7 @@ impl ::core::clone::Clone for VPN_TS_IP_ADDRESS {
 #[cfg(feature = "Win32_Networking_WinSock")]
 unsafe impl ::windows::core::Abi for VPN_TS_IP_ADDRESS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Networking_WinSock")]
 impl ::core::cmp::PartialEq for VPN_TS_IP_ADDRESS {
@@ -12841,6 +13020,7 @@ impl ::core::clone::Clone for VPN_TS_IP_ADDRESS_0 {
 #[cfg(feature = "Win32_Networking_WinSock")]
 unsafe impl ::windows::core::Abi for VPN_TS_IP_ADDRESS_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Networking_WinSock")]
 impl ::core::cmp::PartialEq for VPN_TS_IP_ADDRESS_0 {
@@ -12911,6 +13091,7 @@ impl ::core::clone::Clone for _MPR_VPN_SELECTOR {
 #[cfg(feature = "Win32_Networking_WinSock")]
 unsafe impl ::windows::core::Abi for _MPR_VPN_SELECTOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Networking_WinSock")]
 impl ::core::cmp::PartialEq for _MPR_VPN_SELECTOR {

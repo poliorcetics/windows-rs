@@ -2,6 +2,11 @@
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISyndicationAttribute(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISyndicationAttribute {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISyndicationAttribute {
     type Vtable = ISyndicationAttribute_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x71e8f969_526e_4001_9a91_e84f83161ab1);
@@ -20,6 +25,11 @@ pub struct ISyndicationAttribute_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISyndicationAttributeFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISyndicationAttributeFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISyndicationAttributeFactory {
     type Vtable = ISyndicationAttributeFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x624f1599_ed3e_420f_be86_640414886e4b);
@@ -33,6 +43,11 @@ pub struct ISyndicationAttributeFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISyndicationCategory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISyndicationCategory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISyndicationCategory {
     type Vtable = ISyndicationCategory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x8715626f_0cba_4a7f_89ff_ecb5281423b6);
@@ -51,6 +66,11 @@ pub struct ISyndicationCategory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISyndicationCategoryFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISyndicationCategoryFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISyndicationCategoryFactory {
     type Vtable = ISyndicationCategoryFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xab42802f_49e0_4525_8ab2_ab45c02528ff);
@@ -65,6 +85,11 @@ pub struct ISyndicationCategoryFactory_Vtbl {
 #[doc = "*Required features: `\"Web_Syndication\"`*"]
 #[repr(transparent)]
 pub struct ISyndicationClient(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISyndicationClient {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISyndicationClient {
     #[doc = "*Required features: `\"Web_Syndication\"`, `\"Security_Credentials\"`*"]
     #[cfg(feature = "Security_Credentials")]
@@ -190,11 +215,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISyndicationClient {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISyndicationClient {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -208,7 +228,6 @@ impl ::core::fmt::Debug for ISyndicationClient {
 }
 unsafe impl ::windows::core::RuntimeType for ISyndicationClient {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{9e18a9b7-7249-4b45-b229-7df895a5a1f5}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -252,6 +271,11 @@ pub struct ISyndicationClient_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISyndicationClientFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISyndicationClientFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISyndicationClientFactory {
     type Vtable = ISyndicationClientFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x2ec4b32c_a79b_4114_b29a_05dffbafb9a4);
@@ -268,6 +292,11 @@ pub struct ISyndicationClientFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISyndicationContent(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISyndicationContent {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISyndicationContent {
     type Vtable = ISyndicationContent_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x4641fefe_0e55_40d0_b8d0_6a2ccba9fc7c);
@@ -288,6 +317,11 @@ pub struct ISyndicationContent_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISyndicationContentFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISyndicationContentFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISyndicationContentFactory {
     type Vtable = ISyndicationContentFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x3d2fbb93_9520_4173_9388_7e2df324a8a0);
@@ -305,6 +339,11 @@ pub struct ISyndicationContentFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISyndicationErrorStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISyndicationErrorStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISyndicationErrorStatics {
     type Vtable = ISyndicationErrorStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1fbb2361_45c7_4833_8aa0_be5f3b58a7f4);
@@ -318,6 +357,11 @@ pub struct ISyndicationErrorStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISyndicationFeed(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISyndicationFeed {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISyndicationFeed {
     type Vtable = ISyndicationFeed_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x7ffe3cd2_5b66_4d62_8403_1bc10d910d6b);
@@ -406,6 +450,11 @@ pub struct ISyndicationFeed_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISyndicationFeedFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISyndicationFeedFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISyndicationFeedFactory {
     type Vtable = ISyndicationFeedFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x23472232_8be9_48b7_8934_6205131d9357);
@@ -422,6 +471,11 @@ pub struct ISyndicationFeedFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISyndicationGenerator(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISyndicationGenerator {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISyndicationGenerator {
     type Vtable = ISyndicationGenerator_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9768b379_fb2b_4f6d_b41c_088a5868825c);
@@ -446,6 +500,11 @@ pub struct ISyndicationGenerator_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISyndicationGeneratorFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISyndicationGeneratorFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISyndicationGeneratorFactory {
     type Vtable = ISyndicationGeneratorFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa34083e3_1e26_4dbc_ba9d_1ab84beff97b);
@@ -459,6 +518,11 @@ pub struct ISyndicationGeneratorFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISyndicationItem(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISyndicationItem {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISyndicationItem {
     type Vtable = ISyndicationItem_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x548db883_c384_45c1_8ae8_a378c4ec486c);
@@ -541,6 +605,11 @@ pub struct ISyndicationItem_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISyndicationItemFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISyndicationItemFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISyndicationItemFactory {
     type Vtable = ISyndicationItemFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x251d434f_7db8_487a_85e4_10d191e66ebb);
@@ -557,6 +626,11 @@ pub struct ISyndicationItemFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISyndicationLink(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISyndicationLink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISyndicationLink {
     type Vtable = ISyndicationLink_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x27553abd_a10e_41b5_86bd_9759086eb0c5);
@@ -587,6 +661,11 @@ pub struct ISyndicationLink_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISyndicationLinkFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISyndicationLinkFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISyndicationLinkFactory {
     type Vtable = ISyndicationLinkFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x5ed863d4_5535_48ac_98d4_c190995080b3);
@@ -607,6 +686,11 @@ pub struct ISyndicationLinkFactory_Vtbl {
 #[doc = "*Required features: `\"Web_Syndication\"`*"]
 #[repr(transparent)]
 pub struct ISyndicationNode(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISyndicationNode {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISyndicationNode {
     #[doc = "*Required features: `\"Web_Syndication\"`*"]
     pub fn NodeName(&self) -> ::windows::core::Result<::windows::core::HSTRING> {
@@ -743,11 +827,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISyndicationNode {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISyndicationNode {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -761,7 +840,6 @@ impl ::core::fmt::Debug for ISyndicationNode {
 }
 unsafe impl ::windows::core::RuntimeType for ISyndicationNode {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{753cef78-51f8-45c0-a9f5-f1719dec3fb2}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -806,6 +884,11 @@ pub struct ISyndicationNode_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISyndicationNodeFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISyndicationNodeFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISyndicationNodeFactory {
     type Vtable = ISyndicationNodeFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x12902188_4acb_49a8_b777_a5eb92e18a79);
@@ -819,6 +902,11 @@ pub struct ISyndicationNodeFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISyndicationPerson(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISyndicationPerson {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISyndicationPerson {
     type Vtable = ISyndicationPerson_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xfa1ee5da_a7c6_4517_a096_0143faf29327);
@@ -843,6 +931,11 @@ pub struct ISyndicationPerson_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISyndicationPersonFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISyndicationPersonFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISyndicationPersonFactory {
     type Vtable = ISyndicationPersonFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xdcf4886d_229d_4b58_a49b_f3d2f0f5c99f);
@@ -860,6 +953,11 @@ pub struct ISyndicationPersonFactory_Vtbl {
 #[doc = "*Required features: `\"Web_Syndication\"`*"]
 #[repr(transparent)]
 pub struct ISyndicationText(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISyndicationText {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISyndicationText {
     #[doc = "*Required features: `\"Web_Syndication\"`*"]
     pub fn Text(&self) -> ::windows::core::Result<::windows::core::HSTRING> {
@@ -1059,11 +1157,6 @@ impl<'a> ::windows::core::IntoParam<'a, ISyndicationNode> for &ISyndicationText 
         ::core::convert::TryInto::<ISyndicationNode>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for ISyndicationText {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISyndicationText {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1077,7 +1170,6 @@ impl ::core::fmt::Debug for ISyndicationText {
 }
 unsafe impl ::windows::core::RuntimeType for ISyndicationText {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{b9cc5e80-313a-4091-a2a6-243e0ee923f9}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1106,6 +1198,11 @@ pub struct ISyndicationText_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISyndicationTextFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISyndicationTextFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISyndicationTextFactory {
     type Vtable = ISyndicationTextFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xee7342f7_11c6_4b25_ab62_e596bd162946);
@@ -1136,10 +1233,10 @@ impl ::core::fmt::Debug for RetrievalProgress {
 }
 unsafe impl ::windows::core::Abi for RetrievalProgress {
     type Abi = Self;
+    type DefaultType = Self;
 }
 unsafe impl ::windows::core::RuntimeType for RetrievalProgress {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"struct(Windows.Web.Syndication.RetrievalProgress;u4;u4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1218,11 +1315,6 @@ impl SyndicationAttribute {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for SyndicationAttribute {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SyndicationAttribute {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1236,7 +1328,6 @@ impl ::core::fmt::Debug for SyndicationAttribute {
 }
 unsafe impl ::windows::core::RuntimeType for SyndicationAttribute {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Web.Syndication.SyndicationAttribute;{71e8f969-526e-4001-9a91-e84f83161ab1})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1454,11 +1545,6 @@ impl SyndicationCategory {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for SyndicationCategory {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SyndicationCategory {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1472,7 +1558,6 @@ impl ::core::fmt::Debug for SyndicationCategory {
 }
 unsafe impl ::windows::core::RuntimeType for SyndicationCategory {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Web.Syndication.SyndicationCategory;{8715626f-0cba-4a7f-89ff-ecb5281423b6})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1656,11 +1741,6 @@ impl SyndicationClient {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for SyndicationClient {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SyndicationClient {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1674,7 +1754,6 @@ impl ::core::fmt::Debug for SyndicationClient {
 }
 unsafe impl ::windows::core::RuntimeType for SyndicationClient {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Web.Syndication.SyndicationClient;{9e18a9b7-7249-4b45-b229-7df895a5a1f5})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1932,11 +2011,6 @@ impl SyndicationContent {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for SyndicationContent {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SyndicationContent {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1950,7 +2024,6 @@ impl ::core::fmt::Debug for SyndicationContent {
 }
 unsafe impl ::windows::core::RuntimeType for SyndicationContent {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Web.Syndication.SyndicationContent;{4641fefe-0e55-40d0-b8d0-6a2ccba9fc7c})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2092,6 +2165,7 @@ impl ::core::default::Default for SyndicationErrorStatus {
 }
 unsafe impl ::windows::core::Abi for SyndicationErrorStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SyndicationErrorStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2100,7 +2174,6 @@ impl ::core::fmt::Debug for SyndicationErrorStatus {
 }
 unsafe impl ::windows::core::RuntimeType for SyndicationErrorStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Web.Syndication.SyndicationErrorStatus;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2434,11 +2507,6 @@ impl SyndicationFeed {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for SyndicationFeed {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SyndicationFeed {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2452,7 +2520,6 @@ impl ::core::fmt::Debug for SyndicationFeed {
 }
 unsafe impl ::windows::core::RuntimeType for SyndicationFeed {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Web.Syndication.SyndicationFeed;{7ffe3cd2-5b66-4d62-8403-1bc10d910d6b})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2553,6 +2620,7 @@ impl ::core::default::Default for SyndicationFormat {
 }
 unsafe impl ::windows::core::Abi for SyndicationFormat {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SyndicationFormat {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2561,7 +2629,6 @@ impl ::core::fmt::Debug for SyndicationFormat {
 }
 unsafe impl ::windows::core::RuntimeType for SyndicationFormat {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Web.Syndication.SyndicationFormat;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2725,11 +2792,6 @@ impl SyndicationGenerator {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for SyndicationGenerator {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SyndicationGenerator {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2743,7 +2805,6 @@ impl ::core::fmt::Debug for SyndicationGenerator {
 }
 unsafe impl ::windows::core::RuntimeType for SyndicationGenerator {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Web.Syndication.SyndicationGenerator;{9768b379-fb2b-4f6d-b41c-088a5868825c})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3143,11 +3204,6 @@ impl SyndicationItem {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for SyndicationItem {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SyndicationItem {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3161,7 +3217,6 @@ impl ::core::fmt::Debug for SyndicationItem {
 }
 unsafe impl ::windows::core::RuntimeType for SyndicationItem {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Web.Syndication.SyndicationItem;{548db883-c384-45c1-8ae8-a378c4ec486c})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3444,11 +3499,6 @@ impl SyndicationLink {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for SyndicationLink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SyndicationLink {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3462,7 +3512,6 @@ impl ::core::fmt::Debug for SyndicationLink {
 }
 unsafe impl ::windows::core::RuntimeType for SyndicationLink {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Web.Syndication.SyndicationLink;{27553abd-a10e-41b5-86bd-9759086eb0c5})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3656,11 +3705,6 @@ impl SyndicationNode {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for SyndicationNode {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SyndicationNode {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3674,7 +3718,6 @@ impl ::core::fmt::Debug for SyndicationNode {
 }
 unsafe impl ::windows::core::RuntimeType for SyndicationNode {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Web.Syndication.SyndicationNode;{753cef78-51f8-45c0-a9f5-f1719dec3fb2})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3917,11 +3960,6 @@ impl SyndicationPerson {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for SyndicationPerson {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SyndicationPerson {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3935,7 +3973,6 @@ impl ::core::fmt::Debug for SyndicationPerson {
 }
 unsafe impl ::windows::core::RuntimeType for SyndicationPerson {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Web.Syndication.SyndicationPerson;{fa1ee5da-a7c6-4517-a096-0143faf29327})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4177,11 +4214,6 @@ impl SyndicationText {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for SyndicationText {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SyndicationText {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4195,7 +4227,6 @@ impl ::core::fmt::Debug for SyndicationText {
 }
 unsafe impl ::windows::core::RuntimeType for SyndicationText {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Web.Syndication.SyndicationText;{b9cc5e80-313a-4091-a2a6-243e0ee923f9})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4315,6 +4346,7 @@ impl ::core::default::Default for SyndicationTextType {
 }
 unsafe impl ::windows::core::Abi for SyndicationTextType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SyndicationTextType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4323,7 +4355,6 @@ impl ::core::fmt::Debug for SyndicationTextType {
 }
 unsafe impl ::windows::core::RuntimeType for SyndicationTextType {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Web.Syndication.SyndicationTextType;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -4349,10 +4380,10 @@ impl ::core::fmt::Debug for TransferProgress {
 }
 unsafe impl ::windows::core::Abi for TransferProgress {
     type Abi = Self;
+    type DefaultType = Self;
 }
 unsafe impl ::windows::core::RuntimeType for TransferProgress {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"struct(Windows.Web.Syndication.TransferProgress;u4;u4;u4;u4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }

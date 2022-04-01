@@ -2,6 +2,11 @@
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IInstalledVoicesStatic(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInstalledVoicesStatic {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IInstalledVoicesStatic {
     type Vtable = IInstalledVoicesStatic_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x7d526ecc_7533_4c3f_85be_888c2baeebdc);
@@ -19,6 +24,11 @@ pub struct IInstalledVoicesStatic_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IInstalledVoicesStatic2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInstalledVoicesStatic2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IInstalledVoicesStatic2 {
     type Vtable = IInstalledVoicesStatic2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x64255f2e_358d_4058_be9a_fd3fcb423530);
@@ -35,6 +45,11 @@ pub struct IInstalledVoicesStatic2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpeechSynthesisStream(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpeechSynthesisStream {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpeechSynthesisStream {
     type Vtable = ISpeechSynthesisStream_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x83e46e93_244c_4622_ba0b_6229c4d0d65d);
@@ -51,6 +66,11 @@ pub struct ISpeechSynthesisStream_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpeechSynthesizer(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpeechSynthesizer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpeechSynthesizer {
     type Vtable = ISpeechSynthesizer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xce9f7c76_97f4_4ced_ad68_d51c458e45c6);
@@ -73,6 +93,11 @@ pub struct ISpeechSynthesizer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpeechSynthesizer2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpeechSynthesizer2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpeechSynthesizer2 {
     type Vtable = ISpeechSynthesizer2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa7c5ecb2_4339_4d6a_bbf8_c7a4f1544c2e);
@@ -86,6 +111,11 @@ pub struct ISpeechSynthesizer2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpeechSynthesizerOptions(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpeechSynthesizerOptions {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpeechSynthesizerOptions {
     type Vtable = ISpeechSynthesizerOptions_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa0e23871_cc3d_43c9_91b1_ee185324d83d);
@@ -102,6 +132,11 @@ pub struct ISpeechSynthesizerOptions_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpeechSynthesizerOptions2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpeechSynthesizerOptions2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpeechSynthesizerOptions2 {
     type Vtable = ISpeechSynthesizerOptions2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1cbef60e_119c_4bed_b118_d250c3a25793);
@@ -120,6 +155,11 @@ pub struct ISpeechSynthesizerOptions2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpeechSynthesizerOptions3(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpeechSynthesizerOptions3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpeechSynthesizerOptions3 {
     type Vtable = ISpeechSynthesizerOptions3_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x401ed877_902c_4814_a582_a5d0c0769fa8);
@@ -136,6 +176,11 @@ pub struct ISpeechSynthesizerOptions3_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IVoiceInformation(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVoiceInformation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IVoiceInformation {
     type Vtable = IVoiceInformation_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb127d6a4_1291_4604_aa9c_83134083352c);
@@ -171,6 +216,7 @@ impl ::core::default::Default for SpeechAppendedSilence {
 }
 unsafe impl ::windows::core::Abi for SpeechAppendedSilence {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SpeechAppendedSilence {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -179,7 +225,6 @@ impl ::core::fmt::Debug for SpeechAppendedSilence {
 }
 unsafe impl ::windows::core::RuntimeType for SpeechAppendedSilence {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Media.SpeechSynthesis.SpeechAppendedSilence;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -205,6 +250,7 @@ impl ::core::default::Default for SpeechPunctuationSilence {
 }
 unsafe impl ::windows::core::Abi for SpeechPunctuationSilence {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SpeechPunctuationSilence {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -213,7 +259,6 @@ impl ::core::fmt::Debug for SpeechPunctuationSilence {
 }
 unsafe impl ::windows::core::RuntimeType for SpeechPunctuationSilence {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Media.SpeechSynthesis.SpeechPunctuationSilence;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -358,11 +403,6 @@ impl SpeechSynthesisStream {
         }
     }
 }
-impl ::core::clone::Clone for SpeechSynthesisStream {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SpeechSynthesisStream {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -376,7 +416,6 @@ impl ::core::fmt::Debug for SpeechSynthesisStream {
 }
 unsafe impl ::windows::core::RuntimeType for SpeechSynthesisStream {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.SpeechSynthesis.SpeechSynthesisStream;{83e46e93-244c-4622-ba0b-6229c4d0d65d})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -702,11 +741,6 @@ impl SpeechSynthesizer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for SpeechSynthesizer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SpeechSynthesizer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -720,7 +754,6 @@ impl ::core::fmt::Debug for SpeechSynthesizer {
 }
 unsafe impl ::windows::core::RuntimeType for SpeechSynthesizer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.SpeechSynthesis.SpeechSynthesizer;{ce9f7c76-97f4-4ced-ad68-d51c458e45c6})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -896,11 +929,6 @@ impl SpeechSynthesizerOptions {
         unsafe { (::windows::core::Interface::vtable(this).SetPunctuationSilence)(::core::mem::transmute_copy(this), value).ok() }
     }
 }
-impl ::core::clone::Clone for SpeechSynthesizerOptions {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SpeechSynthesizerOptions {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -914,7 +942,6 @@ impl ::core::fmt::Debug for SpeechSynthesizerOptions {
 }
 unsafe impl ::windows::core::RuntimeType for SpeechSynthesizerOptions {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.SpeechSynthesis.SpeechSynthesizerOptions;{a0e23871-cc3d-43c9-91b1-ee185324d83d})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -989,6 +1016,7 @@ impl ::core::default::Default for VoiceGender {
 }
 unsafe impl ::windows::core::Abi for VoiceGender {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VoiceGender {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -997,7 +1025,6 @@ impl ::core::fmt::Debug for VoiceGender {
 }
 unsafe impl ::windows::core::RuntimeType for VoiceGender {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Media.SpeechSynthesis.VoiceGender;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1047,11 +1074,6 @@ impl VoiceInformation {
         }
     }
 }
-impl ::core::clone::Clone for VoiceInformation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for VoiceInformation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1065,7 +1087,6 @@ impl ::core::fmt::Debug for VoiceInformation {
 }
 unsafe impl ::windows::core::RuntimeType for VoiceInformation {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.SpeechSynthesis.VoiceInformation;{b127d6a4-1291-4604-aa9c-83134083352c})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

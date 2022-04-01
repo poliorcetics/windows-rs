@@ -51,11 +51,6 @@ impl<F: FnMut(&::core::option::Option<IBindableObservableVector>, &::core::optio
         ((*this).invoke)(::core::mem::transmute(&vector), ::core::mem::transmute(&e)).into()
     }
 }
-impl ::core::clone::Clone for BindableVectorChangedEventHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for BindableVectorChangedEventHandler {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -73,7 +68,6 @@ unsafe impl ::windows::core::Interface for BindableVectorChangedEventHandler {
 }
 unsafe impl ::windows::core::RuntimeType for BindableVectorChangedEventHandler {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{624cd4e1-d007-43b1-9c03-af4d3e6258c4}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -87,6 +81,11 @@ pub struct BindableVectorChangedEventHandler_Vtbl {
 #[doc = "*Required features: `\"UI_Xaml_Interop\"`*"]
 #[repr(transparent)]
 pub struct IBindableIterable(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBindableIterable {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IBindableIterable {
     #[doc = "*Required features: `\"UI_Xaml_Interop\"`*"]
     pub fn First(&self) -> ::windows::core::Result<IBindableIterator> {
@@ -137,11 +136,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IBindableIterable {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IBindableIterable {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -155,7 +149,6 @@ impl ::core::fmt::Debug for IBindableIterable {
 }
 unsafe impl ::windows::core::RuntimeType for IBindableIterable {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{036d2c08-df29-41af-8aa2-d774be62ba6f}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -173,6 +166,11 @@ pub struct IBindableIterable_Vtbl {
 #[doc = "*Required features: `\"UI_Xaml_Interop\"`*"]
 #[repr(transparent)]
 pub struct IBindableIterator(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBindableIterator {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IBindableIterator {
     #[doc = "*Required features: `\"UI_Xaml_Interop\"`*"]
     pub fn Current(&self) -> ::windows::core::Result<::windows::core::IInspectable> {
@@ -239,11 +237,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IBindableIterator {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IBindableIterator {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -257,7 +250,6 @@ impl ::core::fmt::Debug for IBindableIterator {
 }
 unsafe impl ::windows::core::RuntimeType for IBindableIterator {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{6a1d6c07-076d-49f2-8314-f52c9c9a8331}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -277,6 +269,11 @@ pub struct IBindableIterator_Vtbl {
 #[doc = "*Required features: `\"UI_Xaml_Interop\"`*"]
 #[repr(transparent)]
 pub struct IBindableObservableVector(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBindableObservableVector {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IBindableObservableVector {
     #[doc = "*Required features: `\"UI_Xaml_Interop\"`, `\"Foundation\"`*"]
     #[cfg(feature = "Foundation")]
@@ -448,11 +445,6 @@ impl<'a> ::windows::core::IntoParam<'a, IBindableVector> for &IBindableObservabl
         ::core::convert::TryInto::<IBindableVector>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IBindableObservableVector {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IBindableObservableVector {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -466,7 +458,6 @@ impl ::core::fmt::Debug for IBindableObservableVector {
 }
 unsafe impl ::windows::core::RuntimeType for IBindableObservableVector {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{fe1eb536-7e7f-4f90-ac9a-474984aae512}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -491,6 +482,11 @@ pub struct IBindableObservableVector_Vtbl {
 #[doc = "*Required features: `\"UI_Xaml_Interop\"`*"]
 #[repr(transparent)]
 pub struct IBindableVector(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBindableVector {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IBindableVector {
     #[doc = "*Required features: `\"UI_Xaml_Interop\"`*"]
     pub fn GetAt(&self, index: u32) -> ::windows::core::Result<::windows::core::IInspectable> {
@@ -625,11 +621,6 @@ impl<'a> ::windows::core::IntoParam<'a, IBindableIterable> for &IBindableVector 
         ::core::convert::TryInto::<IBindableIterable>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IBindableVector {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IBindableVector {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -643,7 +634,6 @@ impl ::core::fmt::Debug for IBindableVector {
 }
 unsafe impl ::windows::core::RuntimeType for IBindableVector {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{393de7de-6fd0-4c0d-bb71-47244a113e93}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -670,6 +660,11 @@ pub struct IBindableVector_Vtbl {
 #[doc = "*Required features: `\"UI_Xaml_Interop\"`*"]
 #[repr(transparent)]
 pub struct IBindableVectorView(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBindableVectorView {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IBindableVectorView {
     #[doc = "*Required features: `\"UI_Xaml_Interop\"`*"]
     pub fn GetAt(&self, index: u32) -> ::windows::core::Result<::windows::core::IInspectable> {
@@ -766,11 +761,6 @@ impl<'a> ::windows::core::IntoParam<'a, IBindableIterable> for &IBindableVectorV
         ::core::convert::TryInto::<IBindableIterable>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IBindableVectorView {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IBindableVectorView {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -784,7 +774,6 @@ impl ::core::fmt::Debug for IBindableVectorView {
 }
 unsafe impl ::windows::core::RuntimeType for IBindableVectorView {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{346dd6e7-976e-4bc3-815d-ece243bc0f33}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -804,6 +793,11 @@ pub struct IBindableVectorView_Vtbl {
 #[doc = "*Required features: `\"UI_Xaml_Interop\"`*"]
 #[repr(transparent)]
 pub struct INotifyCollectionChanged(::windows::core::IUnknown);
+impl ::core::clone::Clone for INotifyCollectionChanged {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl INotifyCollectionChanged {
     #[doc = "*Required features: `\"UI_Xaml_Interop\"`, `\"Foundation\"`*"]
     #[cfg(feature = "Foundation")]
@@ -861,11 +855,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for INotifyCollectionChanged {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for INotifyCollectionChanged {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -879,7 +868,6 @@ impl ::core::fmt::Debug for INotifyCollectionChanged {
 }
 unsafe impl ::windows::core::RuntimeType for INotifyCollectionChanged {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{28b167d5-1a31-465b-9b25-d5c3ae686c40}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -904,6 +892,11 @@ pub struct INotifyCollectionChanged_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct INotifyCollectionChangedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for INotifyCollectionChangedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for INotifyCollectionChangedEventArgs {
     type Vtable = INotifyCollectionChangedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x4cf68d33_e3f2_4964_b85e_945b4f7e2f21);
@@ -921,6 +914,11 @@ pub struct INotifyCollectionChangedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct INotifyCollectionChangedEventArgsFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for INotifyCollectionChangedEventArgsFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for INotifyCollectionChangedEventArgsFactory {
     type Vtable = INotifyCollectionChangedEventArgsFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb30c3e3a_df8d_44a5_9a38_7ac0d08ce63d);
@@ -955,6 +953,7 @@ impl ::core::default::Default for NotifyCollectionChangedAction {
 }
 unsafe impl ::windows::core::Abi for NotifyCollectionChangedAction {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NotifyCollectionChangedAction {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -963,7 +962,6 @@ impl ::core::fmt::Debug for NotifyCollectionChangedAction {
 }
 unsafe impl ::windows::core::RuntimeType for NotifyCollectionChangedAction {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Xaml.Interop.NotifyCollectionChangedAction;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1033,11 +1031,6 @@ impl NotifyCollectionChangedEventArgs {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for NotifyCollectionChangedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for NotifyCollectionChangedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1051,7 +1044,6 @@ impl ::core::fmt::Debug for NotifyCollectionChangedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for NotifyCollectionChangedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Interop.NotifyCollectionChangedEventArgs;{4cf68d33-e3f2-4964-b85e-945b4f7e2f21})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1157,11 +1149,6 @@ impl<F: FnMut(&::core::option::Option<::windows::core::IInspectable>, &::core::o
         ((*this).invoke)(::core::mem::transmute(&sender), ::core::mem::transmute(&e)).into()
     }
 }
-impl ::core::clone::Clone for NotifyCollectionChangedEventHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for NotifyCollectionChangedEventHandler {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1179,7 +1166,6 @@ unsafe impl ::windows::core::Interface for NotifyCollectionChangedEventHandler {
 }
 unsafe impl ::windows::core::RuntimeType for NotifyCollectionChangedEventHandler {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{ca10b37c-f382-4591-8557-5e24965279b0}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1212,6 +1198,7 @@ impl ::core::default::Default for TypeKind {
 }
 unsafe impl ::windows::core::Abi for TypeKind {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TypeKind {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1220,7 +1207,6 @@ impl ::core::fmt::Debug for TypeKind {
 }
 unsafe impl ::windows::core::RuntimeType for TypeKind {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Xaml.Interop.TypeKind;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1243,10 +1229,10 @@ impl ::core::fmt::Debug for TypeName {
 }
 unsafe impl ::windows::core::Abi for TypeName {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 unsafe impl ::windows::core::RuntimeType for TypeName {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"struct(Windows.UI.Xaml.Interop.TypeName;string;enum(Windows.UI.Xaml.Interop.TypeKind;i4))");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(from.clone())
     }

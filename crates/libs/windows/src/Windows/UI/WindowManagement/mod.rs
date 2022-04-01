@@ -237,11 +237,6 @@ impl AppWindow {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for AppWindow {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AppWindow {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -255,7 +250,6 @@ impl ::core::fmt::Debug for AppWindow {
 }
 unsafe impl ::windows::core::RuntimeType for AppWindow {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.WindowManagement.AppWindow;{663014a6-b75e-5dbd-995c-f0117fa3fb61})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -378,11 +372,6 @@ impl AppWindowChangedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for AppWindowChangedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AppWindowChangedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -396,7 +385,6 @@ impl ::core::fmt::Debug for AppWindowChangedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for AppWindowChangedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.WindowManagement.AppWindowChangedEventArgs;{1de1f3be-a655-55ad-b2b6-eb240f880356})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -477,11 +465,6 @@ impl AppWindowCloseRequestedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for AppWindowCloseRequestedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AppWindowCloseRequestedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -495,7 +478,6 @@ impl ::core::fmt::Debug for AppWindowCloseRequestedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for AppWindowCloseRequestedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.WindowManagement.AppWindowCloseRequestedEventArgs;{e9ff01da-e7a2-57a8-8b5e-39c4003afdbb})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -562,11 +544,6 @@ impl AppWindowClosedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for AppWindowClosedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AppWindowClosedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -580,7 +557,6 @@ impl ::core::fmt::Debug for AppWindowClosedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for AppWindowClosedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.WindowManagement.AppWindowClosedEventArgs;{cc7df816-9520-5a06-821e-456ad8b358aa})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -656,6 +632,7 @@ impl ::core::default::Default for AppWindowClosedReason {
 }
 unsafe impl ::windows::core::Abi for AppWindowClosedReason {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AppWindowClosedReason {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -664,7 +641,6 @@ impl ::core::fmt::Debug for AppWindowClosedReason {
 }
 unsafe impl ::windows::core::RuntimeType for AppWindowClosedReason {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.WindowManagement.AppWindowClosedReason;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -696,11 +672,6 @@ impl AppWindowFrame {
         unsafe { (::windows::core::Interface::vtable(this).SetFrameStyle)(::core::mem::transmute_copy(this), framestyle).ok() }
     }
 }
-impl ::core::clone::Clone for AppWindowFrame {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AppWindowFrame {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -714,7 +685,6 @@ impl ::core::fmt::Debug for AppWindowFrame {
 }
 unsafe impl ::windows::core::RuntimeType for AppWindowFrame {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.WindowManagement.AppWindowFrame;{9ee22601-7e5d-52af-846b-01dc6c296567})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -789,6 +759,7 @@ impl ::core::default::Default for AppWindowFrameStyle {
 }
 unsafe impl ::windows::core::Abi for AppWindowFrameStyle {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AppWindowFrameStyle {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -797,7 +768,6 @@ impl ::core::fmt::Debug for AppWindowFrameStyle {
 }
 unsafe impl ::windows::core::RuntimeType for AppWindowFrameStyle {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.WindowManagement.AppWindowFrameStyle;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -833,11 +803,6 @@ impl AppWindowPlacement {
         }
     }
 }
-impl ::core::clone::Clone for AppWindowPlacement {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AppWindowPlacement {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -851,7 +816,6 @@ impl ::core::fmt::Debug for AppWindowPlacement {
 }
 unsafe impl ::windows::core::RuntimeType for AppWindowPlacement {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.WindowManagement.AppWindowPlacement;{03dc815e-e7a9-5857-9c03-7d670594410e})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -918,11 +882,6 @@ impl AppWindowPresentationConfiguration {
         }
     }
 }
-impl ::core::clone::Clone for AppWindowPresentationConfiguration {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AppWindowPresentationConfiguration {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -936,7 +895,6 @@ impl ::core::fmt::Debug for AppWindowPresentationConfiguration {
 }
 unsafe impl ::windows::core::RuntimeType for AppWindowPresentationConfiguration {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.WindowManagement.AppWindowPresentationConfiguration;{b5a43ee3-df33-5e67-bd31-1072457300df})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1012,6 +970,7 @@ impl ::core::default::Default for AppWindowPresentationKind {
 }
 unsafe impl ::windows::core::Abi for AppWindowPresentationKind {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AppWindowPresentationKind {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1020,7 +979,6 @@ impl ::core::fmt::Debug for AppWindowPresentationKind {
 }
 unsafe impl ::windows::core::RuntimeType for AppWindowPresentationKind {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.WindowManagement.AppWindowPresentationKind;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1062,11 +1020,6 @@ impl AppWindowPresenter {
         }
     }
 }
-impl ::core::clone::Clone for AppWindowPresenter {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AppWindowPresenter {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1080,7 +1033,6 @@ impl ::core::fmt::Debug for AppWindowPresenter {
 }
 unsafe impl ::windows::core::RuntimeType for AppWindowPresenter {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.WindowManagement.AppWindowPresenter;{5ae9ed73-e1fd-5317-ad78-5a3ed271bbde})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1362,11 +1314,6 @@ impl AppWindowTitleBar {
         unsafe { (::windows::core::Interface::vtable(this).SetPreferredVisibility)(::core::mem::transmute_copy(this), visibilitymode).ok() }
     }
 }
-impl ::core::clone::Clone for AppWindowTitleBar {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AppWindowTitleBar {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1380,7 +1327,6 @@ impl ::core::fmt::Debug for AppWindowTitleBar {
 }
 unsafe impl ::windows::core::RuntimeType for AppWindowTitleBar {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.WindowManagement.AppWindowTitleBar;{6e932c84-f644-541d-a2d7-0c262437842d})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1448,11 +1394,6 @@ impl AppWindowTitleBarOcclusion {
         }
     }
 }
-impl ::core::clone::Clone for AppWindowTitleBarOcclusion {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AppWindowTitleBarOcclusion {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1466,7 +1407,6 @@ impl ::core::fmt::Debug for AppWindowTitleBarOcclusion {
 }
 unsafe impl ::windows::core::RuntimeType for AppWindowTitleBarOcclusion {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.WindowManagement.AppWindowTitleBarOcclusion;{fea3cffd-2ccf-5fc3-aeae-f843876bf37e})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1541,6 +1481,7 @@ impl ::core::default::Default for AppWindowTitleBarVisibility {
 }
 unsafe impl ::windows::core::Abi for AppWindowTitleBarVisibility {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AppWindowTitleBarVisibility {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1549,7 +1490,6 @@ impl ::core::fmt::Debug for AppWindowTitleBarVisibility {
 }
 unsafe impl ::windows::core::RuntimeType for AppWindowTitleBarVisibility {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.WindowManagement.AppWindowTitleBarVisibility;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1574,11 +1514,6 @@ impl CompactOverlayPresentationConfiguration {
         }
     }
 }
-impl ::core::clone::Clone for CompactOverlayPresentationConfiguration {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for CompactOverlayPresentationConfiguration {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1592,7 +1527,6 @@ impl ::core::fmt::Debug for CompactOverlayPresentationConfiguration {
 }
 unsafe impl ::windows::core::RuntimeType for CompactOverlayPresentationConfiguration {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.WindowManagement.CompactOverlayPresentationConfiguration;{a7e5750f-5730-56c6-8e1f-d63ff4d7980d})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1686,11 +1620,6 @@ impl DefaultPresentationConfiguration {
         }
     }
 }
-impl ::core::clone::Clone for DefaultPresentationConfiguration {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DefaultPresentationConfiguration {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1704,7 +1633,6 @@ impl ::core::fmt::Debug for DefaultPresentationConfiguration {
 }
 unsafe impl ::windows::core::RuntimeType for DefaultPresentationConfiguration {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.WindowManagement.DefaultPresentationConfiguration;{d8c2b53b-2168-5703-a853-d525589fe2b9})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1840,11 +1768,6 @@ impl DisplayRegion {
         unsafe { (::windows::core::Interface::vtable(this).RemoveChanged)(::core::mem::transmute_copy(this), token.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for DisplayRegion {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DisplayRegion {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1858,7 +1781,6 @@ impl ::core::fmt::Debug for DisplayRegion {
 }
 unsafe impl ::windows::core::RuntimeType for DisplayRegion {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.WindowManagement.DisplayRegion;{db50c3a2-4094-5f47-8cb1-ea01ddafaa94})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1945,11 +1867,6 @@ impl FullScreenPresentationConfiguration {
         unsafe { (::windows::core::Interface::vtable(this).SetIsExclusive)(::core::mem::transmute_copy(this), value).ok() }
     }
 }
-impl ::core::clone::Clone for FullScreenPresentationConfiguration {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for FullScreenPresentationConfiguration {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1963,7 +1880,6 @@ impl ::core::fmt::Debug for FullScreenPresentationConfiguration {
 }
 unsafe impl ::windows::core::RuntimeType for FullScreenPresentationConfiguration {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.WindowManagement.FullScreenPresentationConfiguration;{43d3dcd8-d2a8-503d-a626-15533d6d5f62})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2040,6 +1956,11 @@ unsafe impl ::core::marker::Sync for FullScreenPresentationConfiguration {}
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppWindow(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppWindow {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppWindow {
     type Vtable = IAppWindow_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x663014a6_b75e_5dbd_995c_f0117fa3fb61);
@@ -2123,6 +2044,11 @@ pub struct IAppWindow_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppWindowChangedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppWindowChangedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppWindowChangedEventArgs {
     type Vtable = IAppWindowChangedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1de1f3be_a655_55ad_b2b6_eb240f880356);
@@ -2143,6 +2069,11 @@ pub struct IAppWindowChangedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppWindowCloseRequestedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppWindowCloseRequestedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppWindowCloseRequestedEventArgs {
     type Vtable = IAppWindowCloseRequestedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe9ff01da_e7a2_57a8_8b5e_39c4003afdbb);
@@ -2161,6 +2092,11 @@ pub struct IAppWindowCloseRequestedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppWindowClosedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppWindowClosedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppWindowClosedEventArgs {
     type Vtable = IAppWindowClosedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xcc7df816_9520_5a06_821e_456ad8b358aa);
@@ -2174,6 +2110,11 @@ pub struct IAppWindowClosedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppWindowFrame(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppWindowFrame {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppWindowFrame {
     type Vtable = IAppWindowFrame_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9ee22601_7e5d_52af_846b_01dc6c296567);
@@ -2190,6 +2131,11 @@ pub struct IAppWindowFrame_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppWindowFrameStyle(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppWindowFrameStyle {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppWindowFrameStyle {
     type Vtable = IAppWindowFrameStyle_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xac412946_e1ac_5230_944a_c60873dcf4a9);
@@ -2204,6 +2150,11 @@ pub struct IAppWindowFrameStyle_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppWindowPlacement(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppWindowPlacement {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppWindowPlacement {
     type Vtable = IAppWindowPlacement_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x03dc815e_e7a9_5857_9c03_7d670594410e);
@@ -2225,6 +2176,11 @@ pub struct IAppWindowPlacement_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppWindowPresentationConfiguration(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppWindowPresentationConfiguration {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppWindowPresentationConfiguration {
     type Vtable = IAppWindowPresentationConfiguration_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb5a43ee3_df33_5e67_bd31_1072457300df);
@@ -2238,6 +2194,11 @@ pub struct IAppWindowPresentationConfiguration_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppWindowPresentationConfigurationFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppWindowPresentationConfigurationFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppWindowPresentationConfigurationFactory {
     type Vtable = IAppWindowPresentationConfigurationFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xfd3606a6_7875_5de8_84ff_6351ee13dd0d);
@@ -2250,6 +2211,11 @@ pub struct IAppWindowPresentationConfigurationFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppWindowPresenter(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppWindowPresenter {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppWindowPresenter {
     type Vtable = IAppWindowPresenter_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x5ae9ed73_e1fd_5317_ad78_5a3ed271bbde);
@@ -2266,6 +2232,11 @@ pub struct IAppWindowPresenter_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppWindowStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppWindowStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppWindowStatics {
     type Vtable = IAppWindowStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xff1f3ea3_b769_50ef_9873_108cd0e89746);
@@ -2284,6 +2255,11 @@ pub struct IAppWindowStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppWindowTitleBar(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppWindowTitleBar {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppWindowTitleBar {
     type Vtable = IAppWindowTitleBar_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x6e932c84_f644_541d_a2d7_0c262437842d);
@@ -2399,6 +2375,11 @@ pub struct IAppWindowTitleBar_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppWindowTitleBarOcclusion(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppWindowTitleBarOcclusion {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppWindowTitleBarOcclusion {
     type Vtable = IAppWindowTitleBarOcclusion_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xfea3cffd_2ccf_5fc3_aeae_f843876bf37e);
@@ -2415,6 +2396,11 @@ pub struct IAppWindowTitleBarOcclusion_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppWindowTitleBarVisibility(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppWindowTitleBarVisibility {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppWindowTitleBarVisibility {
     type Vtable = IAppWindowTitleBarVisibility_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa215a4e3_6e7e_5651_8c3b_624819528154);
@@ -2429,6 +2415,11 @@ pub struct IAppWindowTitleBarVisibility_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICompactOverlayPresentationConfiguration(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICompactOverlayPresentationConfiguration {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICompactOverlayPresentationConfiguration {
     type Vtable = ICompactOverlayPresentationConfiguration_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa7e5750f_5730_56c6_8e1f_d63ff4d7980d);
@@ -2441,6 +2432,11 @@ pub struct ICompactOverlayPresentationConfiguration_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDefaultPresentationConfiguration(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDefaultPresentationConfiguration {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDefaultPresentationConfiguration {
     type Vtable = IDefaultPresentationConfiguration_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd8c2b53b_2168_5703_a853_d525589fe2b9);
@@ -2453,6 +2449,11 @@ pub struct IDefaultPresentationConfiguration_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDisplayRegion(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDisplayRegion {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDisplayRegion {
     type Vtable = IDisplayRegion_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xdb50c3a2_4094_5f47_8cb1_ea01ddafaa94);
@@ -2484,6 +2485,11 @@ pub struct IDisplayRegion_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IFullScreenPresentationConfiguration(::windows::core::IUnknown);
+impl ::core::clone::Clone for IFullScreenPresentationConfiguration {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IFullScreenPresentationConfiguration {
     type Vtable = IFullScreenPresentationConfiguration_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x43d3dcd8_d2a8_503d_a626_15533d6d5f62);
@@ -2498,6 +2504,11 @@ pub struct IFullScreenPresentationConfiguration_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWindowServicesStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWindowServicesStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWindowServicesStatics {
     type Vtable = IWindowServicesStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xcff4d519_50a6_5c64_97f6_c2d96add7f42);
@@ -2514,6 +2525,11 @@ pub struct IWindowServicesStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWindowingEnvironment(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWindowingEnvironment {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWindowingEnvironment {
     type Vtable = IWindowingEnvironment_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x264363c0_2a49_5417_b3ae_48a71c63a3bd);
@@ -2540,6 +2556,11 @@ pub struct IWindowingEnvironment_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWindowingEnvironmentAddedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWindowingEnvironmentAddedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWindowingEnvironmentAddedEventArgs {
     type Vtable = IWindowingEnvironmentAddedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xff2a5b7f_f183_5c66_99b2_429082069299);
@@ -2553,6 +2574,11 @@ pub struct IWindowingEnvironmentAddedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWindowingEnvironmentChangedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWindowingEnvironmentChangedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWindowingEnvironmentChangedEventArgs {
     type Vtable = IWindowingEnvironmentChangedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x4160cfc6_023d_5e9a_b431_350e67dc978a);
@@ -2565,6 +2591,11 @@ pub struct IWindowingEnvironmentChangedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWindowingEnvironmentRemovedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWindowingEnvironmentRemovedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWindowingEnvironmentRemovedEventArgs {
     type Vtable = IWindowingEnvironmentRemovedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x2e5b5473_beff_5e53_9316_7e775fe568b3);
@@ -2578,6 +2609,11 @@ pub struct IWindowingEnvironmentRemovedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWindowingEnvironmentStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWindowingEnvironmentStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWindowingEnvironmentStatics {
     type Vtable = IWindowingEnvironmentStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x874e9fb7_c642_55ab_8aa2_162f734a9a72);
@@ -2681,11 +2717,6 @@ impl WindowingEnvironment {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for WindowingEnvironment {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for WindowingEnvironment {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2699,7 +2730,6 @@ impl ::core::fmt::Debug for WindowingEnvironment {
 }
 unsafe impl ::windows::core::RuntimeType for WindowingEnvironment {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.WindowManagement.WindowingEnvironment;{264363c0-2a49-5417-b3ae-48a71c63a3bd})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2766,11 +2796,6 @@ impl WindowingEnvironmentAddedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for WindowingEnvironmentAddedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for WindowingEnvironmentAddedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2784,7 +2809,6 @@ impl ::core::fmt::Debug for WindowingEnvironmentAddedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for WindowingEnvironmentAddedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.WindowManagement.WindowingEnvironmentAddedEventArgs;{ff2a5b7f-f183-5c66-99b2-429082069299})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2842,11 +2866,6 @@ unsafe impl ::core::marker::Sync for WindowingEnvironmentAddedEventArgs {}
 #[repr(transparent)]
 pub struct WindowingEnvironmentChangedEventArgs(::windows::core::IUnknown);
 impl WindowingEnvironmentChangedEventArgs {}
-impl ::core::clone::Clone for WindowingEnvironmentChangedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for WindowingEnvironmentChangedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2860,7 +2879,6 @@ impl ::core::fmt::Debug for WindowingEnvironmentChangedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for WindowingEnvironmentChangedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.WindowManagement.WindowingEnvironmentChangedEventArgs;{4160cfc6-023d-5e9a-b431-350e67dc978a})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2936,6 +2954,7 @@ impl ::core::default::Default for WindowingEnvironmentKind {
 }
 unsafe impl ::windows::core::Abi for WindowingEnvironmentKind {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WindowingEnvironmentKind {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2944,7 +2963,6 @@ impl ::core::fmt::Debug for WindowingEnvironmentKind {
 }
 unsafe impl ::windows::core::RuntimeType for WindowingEnvironmentKind {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.WindowManagement.WindowingEnvironmentKind;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2962,11 +2980,6 @@ impl WindowingEnvironmentRemovedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for WindowingEnvironmentRemovedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for WindowingEnvironmentRemovedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2980,7 +2993,6 @@ impl ::core::fmt::Debug for WindowingEnvironmentRemovedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for WindowingEnvironmentRemovedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.WindowManagement.WindowingEnvironmentRemovedEventArgs;{2e5b5473-beff-5e53-9316-7e775fe568b3})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

@@ -18,6 +18,7 @@ impl ::core::fmt::Debug for CapturedMetadataExposureCompensation {
 }
 unsafe impl ::windows::core::Abi for CapturedMetadataExposureCompensation {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CapturedMetadataExposureCompensation {
     fn eq(&self, other: &Self) -> bool {
@@ -49,6 +50,7 @@ impl ::core::fmt::Debug for CapturedMetadataISOGains {
 }
 unsafe impl ::windows::core::Abi for CapturedMetadataISOGains {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CapturedMetadataISOGains {
     fn eq(&self, other: &Self) -> bool {
@@ -81,6 +83,7 @@ impl ::core::fmt::Debug for CapturedMetadataWhiteBalanceGains {
 }
 unsafe impl ::windows::core::Abi for CapturedMetadataWhiteBalanceGains {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CapturedMetadataWhiteBalanceGains {
     fn eq(&self, other: &Self) -> bool {
@@ -114,6 +117,7 @@ impl ::core::fmt::Debug for FaceCharacterization {
 }
 unsafe impl ::windows::core::Abi for FaceCharacterization {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for FaceCharacterization {
     fn eq(&self, other: &Self) -> bool {
@@ -145,6 +149,7 @@ impl ::core::fmt::Debug for FaceCharacterizationBlobHeader {
 }
 unsafe impl ::windows::core::Abi for FaceCharacterizationBlobHeader {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for FaceCharacterizationBlobHeader {
     fn eq(&self, other: &Self) -> bool {
@@ -181,6 +186,7 @@ impl ::core::fmt::Debug for FaceRectInfo {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for FaceRectInfo {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for FaceRectInfo {
@@ -215,6 +221,7 @@ impl ::core::fmt::Debug for FaceRectInfoBlobHeader {
 }
 unsafe impl ::windows::core::Abi for FaceRectInfoBlobHeader {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for FaceRectInfoBlobHeader {
     fn eq(&self, other: &Self) -> bool {
@@ -246,6 +253,7 @@ impl ::core::fmt::Debug for HistogramBlobHeader {
 }
 unsafe impl ::windows::core::Abi for HistogramBlobHeader {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HistogramBlobHeader {
     fn eq(&self, other: &Self) -> bool {
@@ -278,6 +286,7 @@ impl ::core::fmt::Debug for HistogramDataHeader {
 }
 unsafe impl ::windows::core::Abi for HistogramDataHeader {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HistogramDataHeader {
     fn eq(&self, other: &Self) -> bool {
@@ -315,6 +324,7 @@ impl ::core::fmt::Debug for HistogramGrid {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for HistogramGrid {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for HistogramGrid {
@@ -357,6 +367,7 @@ impl ::core::fmt::Debug for HistogramHeader {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for HistogramHeader {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for HistogramHeader {
@@ -375,6 +386,11 @@ impl ::core::default::Default for HistogramHeader {
 #[doc = "*Required features: `\"Win32_Media_Streaming\"`*"]
 #[repr(transparent)]
 pub struct IMFDeviceTransform(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFDeviceTransform {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFDeviceTransform {
     #[doc = "*Required features: `\"Win32_Media_Streaming\"`, `\"Win32_Media_MediaFoundation\"`*"]
     #[cfg(feature = "Win32_Media_MediaFoundation")]
@@ -501,11 +517,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFDe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMFDeviceTransform {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMFDeviceTransform {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -597,6 +608,11 @@ pub struct IMFDeviceTransform_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_Streaming\"`*"]
 #[repr(transparent)]
 pub struct IMFDeviceTransformCallback(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMFDeviceTransformCallback {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMFDeviceTransformCallback {
     #[doc = "*Required features: `\"Win32_Media_Streaming\"`, `\"Win32_Media_MediaFoundation\"`*"]
     #[cfg(feature = "Win32_Media_MediaFoundation")]
@@ -622,11 +638,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IMFDevice
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMFDeviceTransformCallback {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IMFDeviceTransformCallback {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IMFDeviceTransformCallback {
@@ -674,6 +685,7 @@ impl ::core::default::Default for MF_MEDIASOURCE_STATUS_INFO {
 }
 unsafe impl ::windows::core::Abi for MF_MEDIASOURCE_STATUS_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_MEDIASOURCE_STATUS_INFO {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -703,6 +715,7 @@ impl ::core::default::Default for MF_TRANSFER_VIDEO_FRAME_FLAGS {
 }
 unsafe impl ::windows::core::Abi for MF_TRANSFER_VIDEO_FRAME_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MF_TRANSFER_VIDEO_FRAME_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -729,6 +742,7 @@ impl ::core::fmt::Debug for MetadataTimeStamps {
 }
 unsafe impl ::windows::core::Abi for MetadataTimeStamps {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MetadataTimeStamps {
     fn eq(&self, other: &Self) -> bool {

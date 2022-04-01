@@ -26,6 +26,7 @@ impl ::core::default::Default for ATTENDEE_DISCONNECT_REASON {
 }
 unsafe impl ::windows::core::Abi for ATTENDEE_DISCONNECT_REASON {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ATTENDEE_DISCONNECT_REASON {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -53,6 +54,7 @@ impl ::core::default::Default for CHANNEL_ACCESS_ENUM {
 }
 unsafe impl ::windows::core::Abi for CHANNEL_ACCESS_ENUM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CHANNEL_ACCESS_ENUM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -82,6 +84,7 @@ impl ::core::default::Default for CHANNEL_FLAGS {
 }
 unsafe impl ::windows::core::Abi for CHANNEL_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CHANNEL_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -111,6 +114,7 @@ impl ::core::default::Default for CHANNEL_PRIORITY {
 }
 unsafe impl ::windows::core::Abi for CHANNEL_PRIORITY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CHANNEL_PRIORITY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -150,6 +154,7 @@ impl ::core::default::Default for CTRL_LEVEL {
 }
 unsafe impl ::windows::core::Abi for CTRL_LEVEL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CTRL_LEVEL {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -409,6 +414,12 @@ pub const DISPID_RDPSRAPI_PROP_WNDFLAGS: u32 = 224u32;
 #[repr(transparent)]
 pub struct IRDPSRAPIApplication(::windows::core::IUnknown);
 #[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IRDPSRAPIApplication {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "Win32_System_Com")]
 impl IRDPSRAPIApplication {
     #[doc = "*Required features: `\"Win32_System_DesktopSharing\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -491,12 +502,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IRDPSRAPI
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IRDPSRAPIApplication {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IRDPSRAPIApplication {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -537,6 +542,12 @@ pub struct IRDPSRAPIApplication_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IRDPSRAPIApplicationFilter(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IRDPSRAPIApplicationFilter {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IRDPSRAPIApplicationFilter {
     #[doc = "*Required features: `\"Win32_System_DesktopSharing\"`, `\"Win32_System_Com\"`*"]
@@ -610,12 +621,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IRDPSRAPI
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IRDPSRAPIApplicationFilter {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IRDPSRAPIApplicationFilter {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -654,6 +659,12 @@ pub struct IRDPSRAPIApplicationFilter_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IRDPSRAPIApplicationList(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IRDPSRAPIApplicationList {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IRDPSRAPIApplicationList {
     #[doc = "*Required features: `\"Win32_System_DesktopSharing\"`*"]
@@ -717,12 +728,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IRDPSRAPI
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IRDPSRAPIApplicationList {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IRDPSRAPIApplicationList {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -756,6 +761,12 @@ pub struct IRDPSRAPIApplicationList_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IRDPSRAPIAttendee(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IRDPSRAPIAttendee {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IRDPSRAPIAttendee {
     #[doc = "*Required features: `\"Win32_System_DesktopSharing\"`*"]
@@ -848,12 +859,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IRDPSRAPI
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IRDPSRAPIAttendee {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IRDPSRAPIAttendee {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -896,6 +901,12 @@ pub struct IRDPSRAPIAttendee_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IRDPSRAPIAttendeeDisconnectInfo(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IRDPSRAPIAttendeeDisconnectInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IRDPSRAPIAttendeeDisconnectInfo {
     #[doc = "*Required features: `\"Win32_System_DesktopSharing\"`, `\"Win32_System_Com\"`*"]
@@ -964,12 +975,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IRDPSRAPI
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IRDPSRAPIAttendeeDisconnectInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IRDPSRAPIAttendeeDisconnectInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1004,6 +1009,12 @@ pub struct IRDPSRAPIAttendeeDisconnectInfo_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IRDPSRAPIAttendeeManager(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IRDPSRAPIAttendeeManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IRDPSRAPIAttendeeManager {
     #[doc = "*Required features: `\"Win32_System_DesktopSharing\"`*"]
@@ -1067,12 +1078,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IRDPSRAPI
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IRDPSRAPIAttendeeManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IRDPSRAPIAttendeeManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1105,6 +1110,11 @@ pub struct IRDPSRAPIAttendeeManager_Vtbl {
 #[doc = "*Required features: `\"Win32_System_DesktopSharing\"`*"]
 #[repr(transparent)]
 pub struct IRDPSRAPIAudioStream(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRDPSRAPIAudioStream {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRDPSRAPIAudioStream {
     #[doc = "*Required features: `\"Win32_System_DesktopSharing\"`*"]
     pub unsafe fn Initialize(&self) -> ::windows::core::Result<i64> {
@@ -1148,11 +1158,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IRDPS
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IRDPSRAPIAudioStream {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IRDPSRAPIAudioStream {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1181,6 +1186,11 @@ pub struct IRDPSRAPIAudioStream_Vtbl {
 #[doc = "*Required features: `\"Win32_System_DesktopSharing\"`*"]
 #[repr(transparent)]
 pub struct IRDPSRAPIClipboardUseEvents(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRDPSRAPIClipboardUseEvents {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRDPSRAPIClipboardUseEvents {
     #[doc = "*Required features: `\"Win32_System_DesktopSharing\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -1207,11 +1217,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IRDPSRAPI
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IRDPSRAPIClipboardUseEvents {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IRDPSRAPIClipboardUseEvents {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IRDPSRAPIClipboardUseEvents {
@@ -1241,6 +1246,11 @@ pub struct IRDPSRAPIClipboardUseEvents_Vtbl {
 #[doc = "*Required features: `\"Win32_System_DesktopSharing\"`*"]
 #[repr(transparent)]
 pub struct IRDPSRAPIDebug(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRDPSRAPIDebug {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRDPSRAPIDebug {
     #[doc = "*Required features: `\"Win32_System_DesktopSharing\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -1272,11 +1282,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IRDPSRAPI
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IRDPSRAPIDebug {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IRDPSRAPIDebug {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IRDPSRAPIDebug {
@@ -1311,6 +1316,12 @@ pub struct IRDPSRAPIDebug_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IRDPSRAPIFrameBuffer(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IRDPSRAPIFrameBuffer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IRDPSRAPIFrameBuffer {
     #[doc = "*Required features: `\"Win32_System_DesktopSharing\"`*"]
@@ -1384,12 +1395,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IRDPSRAPI
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IRDPSRAPIFrameBuffer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IRDPSRAPIFrameBuffer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1425,6 +1430,12 @@ pub struct IRDPSRAPIFrameBuffer_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IRDPSRAPIInvitation(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IRDPSRAPIInvitation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IRDPSRAPIInvitation {
     #[doc = "*Required features: `\"Win32_System_DesktopSharing\"`, `\"Win32_Foundation\"`*"]
@@ -1513,12 +1524,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IRDPSRAPI
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IRDPSRAPIInvitation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IRDPSRAPIInvitation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1563,6 +1568,12 @@ pub struct IRDPSRAPIInvitation_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IRDPSRAPIInvitationManager(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IRDPSRAPIInvitationManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IRDPSRAPIInvitationManager {
     #[doc = "*Required features: `\"Win32_System_DesktopSharing\"`*"]
@@ -1637,12 +1648,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IRDPSRAPI
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IRDPSRAPIInvitationManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IRDPSRAPIInvitationManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1680,6 +1685,11 @@ pub struct IRDPSRAPIInvitationManager_Vtbl {
 #[doc = "*Required features: `\"Win32_System_DesktopSharing\"`*"]
 #[repr(transparent)]
 pub struct IRDPSRAPIPerfCounterLogger(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRDPSRAPIPerfCounterLogger {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRDPSRAPIPerfCounterLogger {
     #[doc = "*Required features: `\"Win32_System_DesktopSharing\"`*"]
     pub unsafe fn LogValue(&self, lvalue: i64) -> ::windows::core::Result<()> {
@@ -1706,11 +1716,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IRDPS
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IRDPSRAPIPerfCounterLogger {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IRDPSRAPIPerfCounterLogger {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1735,6 +1740,11 @@ pub struct IRDPSRAPIPerfCounterLogger_Vtbl {
 #[doc = "*Required features: `\"Win32_System_DesktopSharing\"`*"]
 #[repr(transparent)]
 pub struct IRDPSRAPIPerfCounterLoggingManager(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRDPSRAPIPerfCounterLoggingManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRDPSRAPIPerfCounterLoggingManager {
     #[doc = "*Required features: `\"Win32_System_DesktopSharing\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -1761,11 +1771,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IRDPSRAPI
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IRDPSRAPIPerfCounterLoggingManager {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IRDPSRAPIPerfCounterLoggingManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IRDPSRAPIPerfCounterLoggingManager {
@@ -1796,6 +1801,12 @@ pub struct IRDPSRAPIPerfCounterLoggingManager_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IRDPSRAPISessionProperties(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IRDPSRAPISessionProperties {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IRDPSRAPISessionProperties {
     #[doc = "*Required features: `\"Win32_System_DesktopSharing\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
@@ -1859,12 +1870,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IRDPSRAPI
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IRDPSRAPISessionProperties {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IRDPSRAPISessionProperties {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1901,6 +1906,12 @@ pub struct IRDPSRAPISessionProperties_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IRDPSRAPISharingSession(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IRDPSRAPISharingSession {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IRDPSRAPISharingSession {
     #[doc = "*Required features: `\"Win32_System_DesktopSharing\"`*"]
@@ -2021,12 +2032,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IRDPSRAPI
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IRDPSRAPISharingSession {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IRDPSRAPISharingSession {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2087,6 +2092,12 @@ pub struct IRDPSRAPISharingSession_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IRDPSRAPISharingSession2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IRDPSRAPISharingSession2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IRDPSRAPISharingSession2 {
     #[doc = "*Required features: `\"Win32_System_DesktopSharing\"`*"]
@@ -2247,12 +2258,6 @@ impl<'a> ::windows::core::IntoParam<'a, IRDPSRAPISharingSession> for &'a IRDPSRA
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IRDPSRAPISharingSession2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IRDPSRAPISharingSession2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2293,6 +2298,12 @@ pub struct IRDPSRAPISharingSession2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IRDPSRAPITcpConnectionInfo(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IRDPSRAPITcpConnectionInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IRDPSRAPITcpConnectionInfo {
     #[doc = "*Required features: `\"Win32_System_DesktopSharing\"`*"]
@@ -2372,12 +2383,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IRDPSRAPI
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IRDPSRAPITcpConnectionInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IRDPSRAPITcpConnectionInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2416,6 +2421,11 @@ pub struct IRDPSRAPITcpConnectionInfo_Vtbl {
 #[doc = "*Required features: `\"Win32_System_DesktopSharing\"`*"]
 #[repr(transparent)]
 pub struct IRDPSRAPITransportStream(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRDPSRAPITransportStream {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRDPSRAPITransportStream {
     #[doc = "*Required features: `\"Win32_System_DesktopSharing\"`*"]
     pub unsafe fn AllocBuffer(&self, maxpayload: i32) -> ::windows::core::Result<IRDPSRAPITransportStreamBuffer> {
@@ -2463,11 +2473,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IRDPS
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IRDPSRAPITransportStream {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IRDPSRAPITransportStream {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2497,6 +2502,11 @@ pub struct IRDPSRAPITransportStream_Vtbl {
 #[doc = "*Required features: `\"Win32_System_DesktopSharing\"`*"]
 #[repr(transparent)]
 pub struct IRDPSRAPITransportStreamBuffer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRDPSRAPITransportStreamBuffer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRDPSRAPITransportStreamBuffer {
     #[doc = "*Required features: `\"Win32_System_DesktopSharing\"`*"]
     pub unsafe fn Storage(&self) -> ::windows::core::Result<*mut u8> {
@@ -2565,11 +2575,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IRDPS
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IRDPSRAPITransportStreamBuffer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IRDPSRAPITransportStreamBuffer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2603,6 +2608,11 @@ pub struct IRDPSRAPITransportStreamBuffer_Vtbl {
 #[doc = "*Required features: `\"Win32_System_DesktopSharing\"`*"]
 #[repr(transparent)]
 pub struct IRDPSRAPITransportStreamEvents(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRDPSRAPITransportStreamEvents {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRDPSRAPITransportStreamEvents {
     #[doc = "*Required features: `\"Win32_System_DesktopSharing\"`*"]
     pub unsafe fn OnWriteCompleted<'a, Param0: ::windows::core::IntoParam<'a, IRDPSRAPITransportStreamBuffer>>(&self, pbuffer: Param0) {
@@ -2637,11 +2647,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IRDPS
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IRDPSRAPITransportStreamEvents {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IRDPSRAPITransportStreamEvents {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2669,6 +2674,12 @@ pub struct IRDPSRAPITransportStreamEvents_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IRDPSRAPIViewer(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IRDPSRAPIViewer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IRDPSRAPIViewer {
     #[doc = "*Required features: `\"Win32_System_DesktopSharing\"`, `\"Win32_Foundation\"`*"]
@@ -2794,12 +2805,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IRDPSRAPI
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IRDPSRAPIViewer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IRDPSRAPIViewer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2869,6 +2874,12 @@ pub struct IRDPSRAPIViewer_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IRDPSRAPIVirtualChannel(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IRDPSRAPIVirtualChannel {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IRDPSRAPIVirtualChannel {
     #[doc = "*Required features: `\"Win32_System_DesktopSharing\"`, `\"Win32_Foundation\"`*"]
@@ -2946,12 +2957,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IRDPSRAPI
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IRDPSRAPIVirtualChannel {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IRDPSRAPIVirtualChannel {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2991,6 +2996,12 @@ pub struct IRDPSRAPIVirtualChannel_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IRDPSRAPIVirtualChannelManager(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IRDPSRAPIVirtualChannelManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IRDPSRAPIVirtualChannelManager {
     #[doc = "*Required features: `\"Win32_System_DesktopSharing\"`*"]
@@ -3060,12 +3071,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IRDPSRAPI
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IRDPSRAPIVirtualChannelManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IRDPSRAPIVirtualChannelManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3103,6 +3108,12 @@ pub struct IRDPSRAPIVirtualChannelManager_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IRDPSRAPIWindow(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IRDPSRAPIWindow {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IRDPSRAPIWindow {
     #[doc = "*Required features: `\"Win32_System_DesktopSharing\"`*"]
@@ -3190,12 +3201,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IRDPSRAPI
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IRDPSRAPIWindow {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IRDPSRAPIWindow {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3237,6 +3242,12 @@ pub struct IRDPSRAPIWindow_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IRDPSRAPIWindowList(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IRDPSRAPIWindowList {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IRDPSRAPIWindowList {
     #[doc = "*Required features: `\"Win32_System_DesktopSharing\"`*"]
@@ -3300,12 +3311,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IRDPSRAPI
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IRDPSRAPIWindowList {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IRDPSRAPIWindowList {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3338,6 +3343,11 @@ pub struct IRDPSRAPIWindowList_Vtbl {
 #[doc = "*Required features: `\"Win32_System_DesktopSharing\"`*"]
 #[repr(transparent)]
 pub struct IRDPViewerInputSink(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRDPViewerInputSink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRDPViewerInputSink {
     #[doc = "*Required features: `\"Win32_System_DesktopSharing\"`*"]
     pub unsafe fn SendMouseButtonEvent(&self, buttontype: RDPSRAPI_MOUSE_BUTTON_TYPE, vbbuttondown: i16, xpos: u32, ypos: u32) -> ::windows::core::Result<()> {
@@ -3392,11 +3402,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IRDPV
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IRDPViewerInputSink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IRDPViewerInputSink {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3444,6 +3449,7 @@ impl ::core::default::Default for RDPENCOMAPI_ATTENDEE_FLAGS {
 }
 unsafe impl ::windows::core::Abi for RDPENCOMAPI_ATTENDEE_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RDPENCOMAPI_ATTENDEE_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3482,6 +3488,7 @@ impl ::core::default::Default for RDPSRAPI_APP_FLAGS {
 }
 unsafe impl ::windows::core::Abi for RDPSRAPI_APP_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RDPSRAPI_APP_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3509,6 +3516,7 @@ impl ::core::default::Default for RDPSRAPI_KBD_CODE_TYPE {
 }
 unsafe impl ::windows::core::Abi for RDPSRAPI_KBD_CODE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RDPSRAPI_KBD_CODE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3540,6 +3548,7 @@ impl ::core::default::Default for RDPSRAPI_KBD_SYNC_FLAG {
 }
 unsafe impl ::windows::core::Abi for RDPSRAPI_KBD_SYNC_FLAG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RDPSRAPI_KBD_SYNC_FLAG {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3575,6 +3584,7 @@ impl ::core::default::Default for RDPSRAPI_MOUSE_BUTTON_TYPE {
 }
 unsafe impl ::windows::core::Abi for RDPSRAPI_MOUSE_BUTTON_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RDPSRAPI_MOUSE_BUTTON_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3600,6 +3610,7 @@ impl ::core::default::Default for RDPSRAPI_WND_FLAGS {
 }
 unsafe impl ::windows::core::Abi for RDPSRAPI_WND_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RDPSRAPI_WND_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3614,6 +3625,12 @@ pub const RDPViewer: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct _IRDPSessionEvents(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for _IRDPSessionEvents {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl _IRDPSessionEvents {}
 #[cfg(feature = "Win32_System_Com")]
@@ -3662,12 +3679,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for _IRDPSessionE
 impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a _IRDPSessionEvents {
     fn into_param(self) -> ::windows::core::Param<'a, super::Com::IDispatch> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for _IRDPSessionEvents {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 #[cfg(feature = "Win32_System_Com")]
@@ -3726,6 +3737,7 @@ impl ::core::default::Default for __MIDL___MIDL_itf_rdpencomapi_0000_0027_0001 {
 }
 unsafe impl ::windows::core::Abi for __MIDL___MIDL_itf_rdpencomapi_0000_0027_0001 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for __MIDL___MIDL_itf_rdpencomapi_0000_0027_0001 {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3766,6 +3778,7 @@ impl ::core::fmt::Debug for __ReferenceRemainingTypes__ {
 }
 unsafe impl ::windows::core::Abi for __ReferenceRemainingTypes__ {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for __ReferenceRemainingTypes__ {
     fn eq(&self, other: &Self) -> bool {

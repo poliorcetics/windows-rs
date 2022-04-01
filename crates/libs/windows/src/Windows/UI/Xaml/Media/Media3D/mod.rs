@@ -256,11 +256,6 @@ impl CompositeTransform3D {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for CompositeTransform3D {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for CompositeTransform3D {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -274,7 +269,6 @@ impl ::core::fmt::Debug for CompositeTransform3D {
 }
 unsafe impl ::windows::core::RuntimeType for CompositeTransform3D {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Media3D.CompositeTransform3D;{8977cb01-af8d-4af5-b084-c08eb9704abe})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -371,6 +365,11 @@ unsafe impl ::core::marker::Sync for CompositeTransform3D {}
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICompositeTransform3D(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICompositeTransform3D {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICompositeTransform3D {
     type Vtable = ICompositeTransform3D_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x8977cb01_af8d_4af5_b084_c08eb9704abe);
@@ -407,6 +406,11 @@ pub struct ICompositeTransform3D_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICompositeTransform3DStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICompositeTransform3DStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICompositeTransform3DStatics {
     type Vtable = ICompositeTransform3DStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xddbf4d67_2a25_48f3_9808_c51ec3d55bec);
@@ -431,6 +435,11 @@ pub struct ICompositeTransform3DStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMatrix3DHelper(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMatrix3DHelper {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMatrix3DHelper {
     type Vtable = IMatrix3DHelper_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe48c10ef_9927_4c9b_8213_07775512ba04);
@@ -443,6 +452,11 @@ pub struct IMatrix3DHelper_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMatrix3DHelperStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMatrix3DHelperStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMatrix3DHelperStatics {
     type Vtable = IMatrix3DHelperStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9264545e_e158_4e74_8899_689160bd2f8c);
@@ -461,6 +475,11 @@ pub struct IMatrix3DHelperStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPerspectiveTransform3D(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPerspectiveTransform3D {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPerspectiveTransform3D {
     type Vtable = IPerspectiveTransform3D_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9a7b532a_30f9_40a1_96c9_c59d87f95ac3);
@@ -479,6 +498,11 @@ pub struct IPerspectiveTransform3D_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPerspectiveTransform3DStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPerspectiveTransform3DStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPerspectiveTransform3DStatics {
     type Vtable = IPerspectiveTransform3DStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x8e6f6400_620c_48c7_844d_3f0984da5b17);
@@ -494,6 +518,11 @@ pub struct IPerspectiveTransform3DStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ITransform3D(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITransform3D {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ITransform3D {
     type Vtable = ITransform3D_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xae3ed43a_a9fc_4c31_86cd_56d9ca251a69);
@@ -506,6 +535,11 @@ pub struct ITransform3D_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ITransform3DFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITransform3DFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ITransform3DFactory {
     type Vtable = ITransform3DFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x052c1f7a_8d73_48cd_bbb8_d00434caae5d);
@@ -549,10 +583,10 @@ impl ::core::fmt::Debug for Matrix3D {
 }
 unsafe impl ::windows::core::Abi for Matrix3D {
     type Abi = Self;
+    type DefaultType = Self;
 }
 unsafe impl ::windows::core::RuntimeType for Matrix3D {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"struct(Windows.UI.Xaml.Media.Media3D.Matrix3D;f8;f8;f8;f8;f8;f8;f8;f8;f8;f8;f8;f8;f8;f8;f8;f8)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -620,11 +654,6 @@ impl Matrix3DHelper {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for Matrix3DHelper {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for Matrix3DHelper {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -638,7 +667,6 @@ impl ::core::fmt::Debug for Matrix3DHelper {
 }
 unsafe impl ::windows::core::RuntimeType for Matrix3DHelper {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Media3D.Matrix3DHelper;{e48c10ef-9927-4c9b-8213-07775512ba04})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -769,11 +797,6 @@ impl PerspectiveTransform3D {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for PerspectiveTransform3D {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PerspectiveTransform3D {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -787,7 +810,6 @@ impl ::core::fmt::Debug for PerspectiveTransform3D {
 }
 unsafe impl ::windows::core::RuntimeType for PerspectiveTransform3D {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Media3D.PerspectiveTransform3D;{9a7b532a-30f9-40a1-96c9-c59d87f95ac3})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -885,11 +907,6 @@ unsafe impl ::core::marker::Sync for PerspectiveTransform3D {}
 #[repr(transparent)]
 pub struct Transform3D(::windows::core::IUnknown);
 impl Transform3D {}
-impl ::core::clone::Clone for Transform3D {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for Transform3D {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -903,7 +920,6 @@ impl ::core::fmt::Debug for Transform3D {
 }
 unsafe impl ::windows::core::RuntimeType for Transform3D {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Media3D.Transform3D;{ae3ed43a-a9fc-4c31-86cd-56d9ca251a69})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

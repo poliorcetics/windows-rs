@@ -70,6 +70,7 @@ impl ::core::default::Default for ADSI_DIALECT_ENUM {
 }
 unsafe impl ::windows::core::Abi for ADSI_DIALECT_ENUM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ADSI_DIALECT_ENUM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -104,6 +105,7 @@ impl ::core::fmt::Debug for ADSPROPERROR {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for ADSPROPERROR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for ADSPROPERROR {
@@ -145,6 +147,7 @@ impl ::core::fmt::Debug for ADSPROPINITPARAMS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for ADSPROPINITPARAMS {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for ADSPROPINITPARAMS {
@@ -235,6 +238,7 @@ impl ::core::default::Default for ADSTYPEENUM {
 }
 unsafe impl ::windows::core::Abi for ADSTYPEENUM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ADSTYPEENUM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -259,6 +263,7 @@ impl ::core::clone::Clone for ADSVALUE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for ADSVALUE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for ADSVALUE {
@@ -317,6 +322,7 @@ impl ::core::clone::Clone for ADSVALUE_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for ADSVALUE_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for ADSVALUE_0 {
@@ -363,6 +369,7 @@ impl ::core::default::Default for ADS_ACEFLAG_ENUM {
 }
 unsafe impl ::windows::core::Abi for ADS_ACEFLAG_ENUM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ADS_ACEFLAG_ENUM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -416,6 +423,7 @@ impl ::core::default::Default for ADS_ACETYPE_ENUM {
 }
 unsafe impl ::windows::core::Abi for ADS_ACETYPE_ENUM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ADS_ACETYPE_ENUM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -453,6 +461,7 @@ impl ::core::fmt::Debug for ADS_ATTR_DEF {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for ADS_ATTR_DEF {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for ADS_ATTR_DEF {
@@ -497,6 +506,7 @@ impl ::core::fmt::Debug for ADS_ATTR_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for ADS_ATTR_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for ADS_ATTR_INFO {
@@ -557,6 +567,7 @@ impl ::core::default::Default for ADS_AUTHENTICATION_ENUM {
 }
 unsafe impl ::windows::core::Abi for ADS_AUTHENTICATION_ENUM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ADS_AUTHENTICATION_ENUM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -582,6 +593,7 @@ impl ::core::fmt::Debug for ADS_BACKLINK {
 }
 unsafe impl ::windows::core::Abi for ADS_BACKLINK {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ADS_BACKLINK {
     fn eq(&self, other: &Self) -> bool {
@@ -613,6 +625,7 @@ impl ::core::fmt::Debug for ADS_CASEIGNORE_LIST {
 }
 unsafe impl ::windows::core::Abi for ADS_CASEIGNORE_LIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ADS_CASEIGNORE_LIST {
     fn eq(&self, other: &Self) -> bool {
@@ -650,6 +663,7 @@ impl ::core::default::Default for ADS_CHASE_REFERRALS_ENUM {
 }
 unsafe impl ::windows::core::Abi for ADS_CHASE_REFERRALS_ENUM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ADS_CHASE_REFERRALS_ENUM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -699,6 +713,7 @@ impl ::core::fmt::Debug for ADS_CLASS_DEF {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for ADS_CLASS_DEF {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for ADS_CLASS_DEF {
@@ -739,6 +754,7 @@ impl ::core::default::Default for ADS_DEREFENUM {
 }
 unsafe impl ::windows::core::Abi for ADS_DEREFENUM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ADS_DEREFENUM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -766,6 +782,7 @@ impl ::core::default::Default for ADS_DISPLAY_ENUM {
 }
 unsafe impl ::windows::core::Abi for ADS_DISPLAY_ENUM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ADS_DISPLAY_ENUM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -792,6 +809,7 @@ impl ::core::fmt::Debug for ADS_DN_WITH_BINARY {
 }
 unsafe impl ::windows::core::Abi for ADS_DN_WITH_BINARY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ADS_DN_WITH_BINARY {
     fn eq(&self, other: &Self) -> bool {
@@ -823,6 +841,7 @@ impl ::core::fmt::Debug for ADS_DN_WITH_STRING {
 }
 unsafe impl ::windows::core::Abi for ADS_DN_WITH_STRING {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ADS_DN_WITH_STRING {
     fn eq(&self, other: &Self) -> bool {
@@ -854,6 +873,7 @@ impl ::core::fmt::Debug for ADS_EMAIL {
 }
 unsafe impl ::windows::core::Abi for ADS_EMAIL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ADS_EMAIL {
     fn eq(&self, other: &Self) -> bool {
@@ -891,6 +911,7 @@ impl ::core::default::Default for ADS_ESCAPE_MODE_ENUM {
 }
 unsafe impl ::windows::core::Abi for ADS_ESCAPE_MODE_ENUM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ADS_ESCAPE_MODE_ENUM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -925,6 +946,7 @@ impl ::core::fmt::Debug for ADS_FAXNUMBER {
 }
 unsafe impl ::windows::core::Abi for ADS_FAXNUMBER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ADS_FAXNUMBER {
     fn eq(&self, other: &Self) -> bool {
@@ -958,6 +980,7 @@ impl ::core::default::Default for ADS_FLAGTYPE_ENUM {
 }
 unsafe impl ::windows::core::Abi for ADS_FLAGTYPE_ENUM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ADS_FLAGTYPE_ENUM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1003,6 +1026,7 @@ impl ::core::default::Default for ADS_FORMAT_ENUM {
 }
 unsafe impl ::windows::core::Abi for ADS_FORMAT_ENUM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ADS_FORMAT_ENUM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1036,6 +1060,7 @@ impl ::core::default::Default for ADS_GROUP_TYPE_ENUM {
 }
 unsafe impl ::windows::core::Abi for ADS_GROUP_TYPE_ENUM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ADS_GROUP_TYPE_ENUM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1061,6 +1086,7 @@ impl ::core::fmt::Debug for ADS_HOLD {
 }
 unsafe impl ::windows::core::Abi for ADS_HOLD {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ADS_HOLD {
     fn eq(&self, other: &Self) -> bool {
@@ -1096,6 +1122,7 @@ impl ::core::default::Default for ADS_NAME_INITTYPE_ENUM {
 }
 unsafe impl ::windows::core::Abi for ADS_NAME_INITTYPE_ENUM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ADS_NAME_INITTYPE_ENUM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1143,6 +1170,7 @@ impl ::core::default::Default for ADS_NAME_TYPE_ENUM {
 }
 unsafe impl ::windows::core::Abi for ADS_NAME_TYPE_ENUM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ADS_NAME_TYPE_ENUM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1169,6 +1197,7 @@ impl ::core::fmt::Debug for ADS_NETADDRESS {
 }
 unsafe impl ::windows::core::Abi for ADS_NETADDRESS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ADS_NETADDRESS {
     fn eq(&self, other: &Self) -> bool {
@@ -1200,6 +1229,7 @@ impl ::core::fmt::Debug for ADS_NT_SECURITY_DESCRIPTOR {
 }
 unsafe impl ::windows::core::Abi for ADS_NT_SECURITY_DESCRIPTOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ADS_NT_SECURITY_DESCRIPTOR {
     fn eq(&self, other: &Self) -> bool {
@@ -1234,6 +1264,7 @@ impl ::core::fmt::Debug for ADS_OBJECT_INFO {
 }
 unsafe impl ::windows::core::Abi for ADS_OBJECT_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ADS_OBJECT_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -1266,6 +1297,7 @@ impl ::core::fmt::Debug for ADS_OCTET_LIST {
 }
 unsafe impl ::windows::core::Abi for ADS_OCTET_LIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ADS_OCTET_LIST {
     fn eq(&self, other: &Self) -> bool {
@@ -1297,6 +1329,7 @@ impl ::core::fmt::Debug for ADS_OCTET_STRING {
 }
 unsafe impl ::windows::core::Abi for ADS_OCTET_STRING {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ADS_OCTET_STRING {
     fn eq(&self, other: &Self) -> bool {
@@ -1346,6 +1379,7 @@ impl ::core::default::Default for ADS_OPTION_ENUM {
 }
 unsafe impl ::windows::core::Abi for ADS_OPTION_ENUM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ADS_OPTION_ENUM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1373,6 +1407,7 @@ impl ::core::default::Default for ADS_PASSWORD_ENCODING_ENUM {
 }
 unsafe impl ::windows::core::Abi for ADS_PASSWORD_ENCODING_ENUM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ADS_PASSWORD_ENCODING_ENUM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1399,6 +1434,7 @@ impl ::core::fmt::Debug for ADS_PATH {
 }
 unsafe impl ::windows::core::Abi for ADS_PATH {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ADS_PATH {
     fn eq(&self, other: &Self) -> bool {
@@ -1434,6 +1470,7 @@ impl ::core::default::Default for ADS_PATHTYPE_ENUM {
 }
 unsafe impl ::windows::core::Abi for ADS_PATHTYPE_ENUM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ADS_PATHTYPE_ENUM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1458,6 +1495,7 @@ impl ::core::fmt::Debug for ADS_POSTALADDRESS {
 }
 unsafe impl ::windows::core::Abi for ADS_POSTALADDRESS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ADS_POSTALADDRESS {
     fn eq(&self, other: &Self) -> bool {
@@ -1513,6 +1551,7 @@ impl ::core::default::Default for ADS_PREFERENCES_ENUM {
 }
 unsafe impl ::windows::core::Abi for ADS_PREFERENCES_ENUM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ADS_PREFERENCES_ENUM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1544,6 +1583,7 @@ impl ::core::default::Default for ADS_PROPERTY_OPERATION_ENUM {
 }
 unsafe impl ::windows::core::Abi for ADS_PROPERTY_OPERATION_ENUM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ADS_PROPERTY_OPERATION_ENUM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1569,6 +1609,7 @@ impl ::core::fmt::Debug for ADS_PROV_SPECIFIC {
 }
 unsafe impl ::windows::core::Abi for ADS_PROV_SPECIFIC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ADS_PROV_SPECIFIC {
     fn eq(&self, other: &Self) -> bool {
@@ -1603,6 +1644,7 @@ impl ::core::fmt::Debug for ADS_REPLICAPOINTER {
 }
 unsafe impl ::windows::core::Abi for ADS_REPLICAPOINTER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ADS_REPLICAPOINTER {
     fn eq(&self, other: &Self) -> bool {
@@ -1670,6 +1712,7 @@ impl ::core::default::Default for ADS_RIGHTS_ENUM {
 }
 unsafe impl ::windows::core::Abi for ADS_RIGHTS_ENUM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ADS_RIGHTS_ENUM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1699,6 +1742,7 @@ impl ::core::default::Default for ADS_SCOPEENUM {
 }
 unsafe impl ::windows::core::Abi for ADS_SCOPEENUM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ADS_SCOPEENUM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1748,6 +1792,7 @@ impl ::core::default::Default for ADS_SD_CONTROL_ENUM {
 }
 unsafe impl ::windows::core::Abi for ADS_SD_CONTROL_ENUM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ADS_SD_CONTROL_ENUM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1777,6 +1822,7 @@ impl ::core::default::Default for ADS_SD_FORMAT_ENUM {
 }
 unsafe impl ::windows::core::Abi for ADS_SD_FORMAT_ENUM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ADS_SD_FORMAT_ENUM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1802,6 +1848,7 @@ impl ::core::default::Default for ADS_SD_REVISION_ENUM {
 }
 unsafe impl ::windows::core::Abi for ADS_SD_REVISION_ENUM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ADS_SD_REVISION_ENUM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1863,6 +1910,7 @@ impl ::core::default::Default for ADS_SEARCHPREF_ENUM {
 }
 unsafe impl ::windows::core::Abi for ADS_SEARCHPREF_ENUM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ADS_SEARCHPREF_ENUM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1894,6 +1942,7 @@ impl ::core::default::Default for ADS_SECURITY_INFO_ENUM {
 }
 unsafe impl ::windows::core::Abi for ADS_SECURITY_INFO_ENUM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ADS_SECURITY_INFO_ENUM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1925,6 +1974,7 @@ impl ::core::default::Default for ADS_SETTYPE_ENUM {
 }
 unsafe impl ::windows::core::Abi for ADS_SETTYPE_ENUM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ADS_SETTYPE_ENUM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1956,6 +2006,7 @@ impl ::core::fmt::Debug for ADS_SORTKEY {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for ADS_SORTKEY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for ADS_SORTKEY {
@@ -1994,6 +2045,7 @@ impl ::core::default::Default for ADS_STATUSENUM {
 }
 unsafe impl ::windows::core::Abi for ADS_STATUSENUM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ADS_STATUSENUM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2037,6 +2089,7 @@ impl ::core::default::Default for ADS_SYSTEMFLAG_ENUM {
 }
 unsafe impl ::windows::core::Abi for ADS_SYSTEMFLAG_ENUM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ADS_SYSTEMFLAG_ENUM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2062,6 +2115,7 @@ impl ::core::fmt::Debug for ADS_TIMESTAMP {
 }
 unsafe impl ::windows::core::Abi for ADS_TIMESTAMP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ADS_TIMESTAMP {
     fn eq(&self, other: &Self) -> bool {
@@ -2094,6 +2148,7 @@ impl ::core::fmt::Debug for ADS_TYPEDNAME {
 }
 unsafe impl ::windows::core::Abi for ADS_TYPEDNAME {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ADS_TYPEDNAME {
     fn eq(&self, other: &Self) -> bool {
@@ -2165,6 +2220,7 @@ impl ::core::default::Default for ADS_USER_FLAG_ENUM {
 }
 unsafe impl ::windows::core::Abi for ADS_USER_FLAG_ENUM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ADS_USER_FLAG_ENUM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2195,6 +2251,7 @@ impl ::core::fmt::Debug for ADS_VLV {
 }
 unsafe impl ::windows::core::Abi for ADS_VLV {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ADS_VLV {
     fn eq(&self, other: &Self) -> bool {
@@ -2614,6 +2671,7 @@ impl ::core::fmt::Debug for CQFORM {
 #[cfg(feature = "Win32_UI_WindowsAndMessaging")]
 unsafe impl ::windows::core::Abi for CQFORM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_UI_WindowsAndMessaging")]
 impl ::core::cmp::PartialEq for CQFORM {
@@ -2659,6 +2717,7 @@ impl ::core::fmt::Debug for CQPAGE {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_UI_WindowsAndMessaging"))]
 unsafe impl ::windows::core::Abi for CQPAGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_UI_WindowsAndMessaging"))]
 impl ::core::cmp::PartialEq for CQPAGE {
@@ -2736,6 +2795,7 @@ impl ::core::fmt::Debug for DOMAINDESC {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DOMAINDESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DOMAINDESC {
@@ -2777,6 +2837,7 @@ impl ::core::fmt::Debug for DOMAIN_CONTROLLER_INFOA {
 }
 unsafe impl ::windows::core::Abi for DOMAIN_CONTROLLER_INFOA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOMAIN_CONTROLLER_INFOA {
     fn eq(&self, other: &Self) -> bool {
@@ -2815,6 +2876,7 @@ impl ::core::fmt::Debug for DOMAIN_CONTROLLER_INFOW {
 }
 unsafe impl ::windows::core::Abi for DOMAIN_CONTROLLER_INFOW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOMAIN_CONTROLLER_INFOW {
     fn eq(&self, other: &Self) -> bool {
@@ -2852,6 +2914,7 @@ impl ::core::fmt::Debug for DOMAIN_TREE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DOMAIN_TREE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DOMAIN_TREE {
@@ -2901,6 +2964,7 @@ impl ::core::fmt::Debug for DSA_NEWOBJ_DISPINFO {
 #[cfg(feature = "Win32_UI_WindowsAndMessaging")]
 unsafe impl ::windows::core::Abi for DSA_NEWOBJ_DISPINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_UI_WindowsAndMessaging")]
 impl ::core::cmp::PartialEq for DSA_NEWOBJ_DISPINFO {
@@ -2969,6 +3033,7 @@ impl ::core::fmt::Debug for DSBITEMA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DSBITEMA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DSBITEMA {
@@ -3010,6 +3075,7 @@ impl ::core::fmt::Debug for DSBITEMW {
 }
 unsafe impl ::windows::core::Abi for DSBITEMW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DSBITEMW {
     fn eq(&self, other: &Self) -> bool {
@@ -3115,6 +3181,7 @@ impl ::core::fmt::Debug for DSBROWSEINFOA {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_UI_Shell"))]
 unsafe impl ::windows::core::Abi for DSBROWSEINFOA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_UI_Shell"))]
 impl ::core::cmp::PartialEq for DSBROWSEINFOA {
@@ -3183,6 +3250,7 @@ impl ::core::fmt::Debug for DSBROWSEINFOW {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_UI_Shell"))]
 unsafe impl ::windows::core::Abi for DSBROWSEINFOW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_UI_Shell"))]
 impl ::core::cmp::PartialEq for DSBROWSEINFOW {
@@ -3232,6 +3300,7 @@ impl ::core::fmt::Debug for DSCLASSCREATIONINFO {
 }
 unsafe impl ::windows::core::Abi for DSCLASSCREATIONINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DSCLASSCREATIONINFO {
     fn eq(&self, other: &Self) -> bool {
@@ -3267,6 +3336,7 @@ impl ::core::fmt::Debug for DSCOLUMN {
 }
 unsafe impl ::windows::core::Abi for DSCOLUMN {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DSCOLUMN {
     fn eq(&self, other: &Self) -> bool {
@@ -3303,6 +3373,7 @@ impl ::core::fmt::Debug for DSDISPLAYSPECOPTIONS {
 }
 unsafe impl ::windows::core::Abi for DSDISPLAYSPECOPTIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DSDISPLAYSPECOPTIONS {
     fn eq(&self, other: &Self) -> bool {
@@ -3360,6 +3431,7 @@ impl ::core::fmt::Debug for DSOBJECT {
 }
 unsafe impl ::windows::core::Abi for DSOBJECT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DSOBJECT {
     fn eq(&self, other: &Self) -> bool {
@@ -3392,6 +3464,7 @@ impl ::core::fmt::Debug for DSOBJECTNAMES {
 }
 unsafe impl ::windows::core::Abi for DSOBJECTNAMES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DSOBJECTNAMES {
     fn eq(&self, other: &Self) -> bool {
@@ -3495,6 +3568,7 @@ impl ::core::fmt::Debug for DSOP_FILTER_FLAGS {
 }
 unsafe impl ::windows::core::Abi for DSOP_FILTER_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DSOP_FILTER_FLAGS {
     fn eq(&self, other: &Self) -> bool {
@@ -3553,6 +3627,7 @@ impl ::core::fmt::Debug for DSOP_INIT_INFO {
 }
 unsafe impl ::windows::core::Abi for DSOP_INIT_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DSOP_INIT_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -3613,6 +3688,7 @@ impl ::core::fmt::Debug for DSOP_SCOPE_INIT_INFO {
 }
 unsafe impl ::windows::core::Abi for DSOP_SCOPE_INIT_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DSOP_SCOPE_INIT_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -3665,6 +3741,7 @@ impl ::core::fmt::Debug for DSOP_UPLEVEL_FILTER_FLAGS {
 }
 unsafe impl ::windows::core::Abi for DSOP_UPLEVEL_FILTER_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DSOP_UPLEVEL_FILTER_FLAGS {
     fn eq(&self, other: &Self) -> bool {
@@ -3695,6 +3772,7 @@ impl ::core::fmt::Debug for DSPROPERTYPAGEINFO {
 }
 unsafe impl ::windows::core::Abi for DSPROPERTYPAGEINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DSPROPERTYPAGEINFO {
     fn eq(&self, other: &Self) -> bool {
@@ -3759,6 +3837,7 @@ impl ::core::fmt::Debug for DSQUERYCLASSLIST {
 }
 unsafe impl ::windows::core::Abi for DSQUERYCLASSLIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DSQUERYCLASSLIST {
     fn eq(&self, other: &Self) -> bool {
@@ -3795,6 +3874,7 @@ impl ::core::fmt::Debug for DSQUERYINITPARAMS {
 }
 unsafe impl ::windows::core::Abi for DSQUERYINITPARAMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DSQUERYINITPARAMS {
     fn eq(&self, other: &Self) -> bool {
@@ -3836,6 +3916,7 @@ impl ::core::fmt::Debug for DSQUERYPARAMS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DSQUERYPARAMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DSQUERYPARAMS {
@@ -3880,6 +3961,7 @@ impl ::core::default::Default for DSROLE_MACHINE_ROLE {
 }
 unsafe impl ::windows::core::Abi for DSROLE_MACHINE_ROLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DSROLE_MACHINE_ROLE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3909,6 +3991,7 @@ impl ::core::default::Default for DSROLE_OPERATION_STATE {
 }
 unsafe impl ::windows::core::Abi for DSROLE_OPERATION_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DSROLE_OPERATION_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3933,6 +4016,7 @@ impl ::core::fmt::Debug for DSROLE_OPERATION_STATE_INFO {
 }
 unsafe impl ::windows::core::Abi for DSROLE_OPERATION_STATE_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DSROLE_OPERATION_STATE_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -3970,6 +4054,7 @@ impl ::core::fmt::Debug for DSROLE_PRIMARY_DOMAIN_INFO_BASIC {
 }
 unsafe impl ::windows::core::Abi for DSROLE_PRIMARY_DOMAIN_INFO_BASIC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DSROLE_PRIMARY_DOMAIN_INFO_BASIC {
     fn eq(&self, other: &Self) -> bool {
@@ -4005,6 +4090,7 @@ impl ::core::default::Default for DSROLE_PRIMARY_DOMAIN_INFO_LEVEL {
 }
 unsafe impl ::windows::core::Abi for DSROLE_PRIMARY_DOMAIN_INFO_LEVEL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DSROLE_PRIMARY_DOMAIN_INFO_LEVEL {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4040,6 +4126,7 @@ impl ::core::default::Default for DSROLE_SERVER_STATE {
 }
 unsafe impl ::windows::core::Abi for DSROLE_SERVER_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DSROLE_SERVER_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4067,6 +4154,7 @@ impl ::core::fmt::Debug for DSROLE_UPGRADE_STATUS_INFO {
 }
 unsafe impl ::windows::core::Abi for DSROLE_UPGRADE_STATUS_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DSROLE_UPGRADE_STATUS_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -4164,6 +4252,7 @@ impl ::core::fmt::Debug for DS_DOMAIN_CONTROLLER_INFO_1A {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DS_DOMAIN_CONTROLLER_INFO_1A {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DS_DOMAIN_CONTROLLER_INFO_1A {
@@ -4208,6 +4297,7 @@ impl ::core::fmt::Debug for DS_DOMAIN_CONTROLLER_INFO_1W {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DS_DOMAIN_CONTROLLER_INFO_1W {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DS_DOMAIN_CONTROLLER_INFO_1W {
@@ -4274,6 +4364,7 @@ impl ::core::fmt::Debug for DS_DOMAIN_CONTROLLER_INFO_2A {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DS_DOMAIN_CONTROLLER_INFO_2A {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DS_DOMAIN_CONTROLLER_INFO_2A {
@@ -4340,6 +4431,7 @@ impl ::core::fmt::Debug for DS_DOMAIN_CONTROLLER_INFO_2W {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DS_DOMAIN_CONTROLLER_INFO_2W {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DS_DOMAIN_CONTROLLER_INFO_2W {
@@ -4408,6 +4500,7 @@ impl ::core::fmt::Debug for DS_DOMAIN_CONTROLLER_INFO_3A {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DS_DOMAIN_CONTROLLER_INFO_3A {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DS_DOMAIN_CONTROLLER_INFO_3A {
@@ -4476,6 +4569,7 @@ impl ::core::fmt::Debug for DS_DOMAIN_CONTROLLER_INFO_3W {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DS_DOMAIN_CONTROLLER_INFO_3W {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DS_DOMAIN_CONTROLLER_INFO_3W {
@@ -4533,6 +4627,7 @@ impl ::core::fmt::Debug for DS_DOMAIN_TRUSTSA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DS_DOMAIN_TRUSTSA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DS_DOMAIN_TRUSTSA {
@@ -4578,6 +4673,7 @@ impl ::core::fmt::Debug for DS_DOMAIN_TRUSTSW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DS_DOMAIN_TRUSTSW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DS_DOMAIN_TRUSTSW {
@@ -4656,6 +4752,7 @@ impl ::core::default::Default for DS_KCC_TASKID {
 }
 unsafe impl ::windows::core::Abi for DS_KCC_TASKID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DS_KCC_TASKID {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4701,6 +4798,7 @@ impl ::core::default::Default for DS_MANGLE_FOR {
 }
 unsafe impl ::windows::core::Abi for DS_MANGLE_FOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DS_MANGLE_FOR {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4740,6 +4838,7 @@ impl ::core::default::Default for DS_NAME_ERROR {
 }
 unsafe impl ::windows::core::Abi for DS_NAME_ERROR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DS_NAME_ERROR {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4773,6 +4872,7 @@ impl ::core::default::Default for DS_NAME_FLAGS {
 }
 unsafe impl ::windows::core::Abi for DS_NAME_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DS_NAME_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4818,6 +4918,7 @@ impl ::core::default::Default for DS_NAME_FORMAT {
 }
 unsafe impl ::windows::core::Abi for DS_NAME_FORMAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DS_NAME_FORMAT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4843,6 +4944,7 @@ impl ::core::fmt::Debug for DS_NAME_RESULTA {
 }
 unsafe impl ::windows::core::Abi for DS_NAME_RESULTA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DS_NAME_RESULTA {
     fn eq(&self, other: &Self) -> bool {
@@ -4874,6 +4976,7 @@ impl ::core::fmt::Debug for DS_NAME_RESULTW {
 }
 unsafe impl ::windows::core::Abi for DS_NAME_RESULTW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DS_NAME_RESULTW {
     fn eq(&self, other: &Self) -> bool {
@@ -4906,6 +5009,7 @@ impl ::core::fmt::Debug for DS_NAME_RESULT_ITEMA {
 }
 unsafe impl ::windows::core::Abi for DS_NAME_RESULT_ITEMA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DS_NAME_RESULT_ITEMA {
     fn eq(&self, other: &Self) -> bool {
@@ -4938,6 +5042,7 @@ impl ::core::fmt::Debug for DS_NAME_RESULT_ITEMW {
 }
 unsafe impl ::windows::core::Abi for DS_NAME_RESULT_ITEMW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DS_NAME_RESULT_ITEMW {
     fn eq(&self, other: &Self) -> bool {
@@ -5038,6 +5143,7 @@ impl ::core::fmt::Debug for DS_REPL_ATTR_META_DATA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DS_REPL_ATTR_META_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DS_REPL_ATTR_META_DATA {
@@ -5082,6 +5188,7 @@ impl ::core::fmt::Debug for DS_REPL_ATTR_META_DATA_2 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DS_REPL_ATTR_META_DATA_2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DS_REPL_ATTR_META_DATA_2 {
@@ -5126,6 +5233,7 @@ impl ::core::fmt::Debug for DS_REPL_ATTR_META_DATA_BLOB {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DS_REPL_ATTR_META_DATA_BLOB {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DS_REPL_ATTR_META_DATA_BLOB {
@@ -5166,6 +5274,7 @@ impl ::core::fmt::Debug for DS_REPL_ATTR_VALUE_META_DATA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DS_REPL_ATTR_VALUE_META_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DS_REPL_ATTR_VALUE_META_DATA {
@@ -5206,6 +5315,7 @@ impl ::core::fmt::Debug for DS_REPL_ATTR_VALUE_META_DATA_2 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DS_REPL_ATTR_VALUE_META_DATA_2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DS_REPL_ATTR_VALUE_META_DATA_2 {
@@ -5246,6 +5356,7 @@ impl ::core::fmt::Debug for DS_REPL_ATTR_VALUE_META_DATA_EXT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DS_REPL_ATTR_VALUE_META_DATA_EXT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DS_REPL_ATTR_VALUE_META_DATA_EXT {
@@ -5280,6 +5391,7 @@ impl ::core::fmt::Debug for DS_REPL_CURSOR {
 }
 unsafe impl ::windows::core::Abi for DS_REPL_CURSOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DS_REPL_CURSOR {
     fn eq(&self, other: &Self) -> bool {
@@ -5312,6 +5424,7 @@ impl ::core::fmt::Debug for DS_REPL_CURSORS {
 }
 unsafe impl ::windows::core::Abi for DS_REPL_CURSORS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DS_REPL_CURSORS {
     fn eq(&self, other: &Self) -> bool {
@@ -5349,6 +5462,7 @@ impl ::core::fmt::Debug for DS_REPL_CURSORS_2 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DS_REPL_CURSORS_2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DS_REPL_CURSORS_2 {
@@ -5389,6 +5503,7 @@ impl ::core::fmt::Debug for DS_REPL_CURSORS_3W {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DS_REPL_CURSORS_3W {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DS_REPL_CURSORS_3W {
@@ -5429,6 +5544,7 @@ impl ::core::fmt::Debug for DS_REPL_CURSOR_2 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DS_REPL_CURSOR_2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DS_REPL_CURSOR_2 {
@@ -5470,6 +5586,7 @@ impl ::core::fmt::Debug for DS_REPL_CURSOR_3W {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DS_REPL_CURSOR_3W {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DS_REPL_CURSOR_3W {
@@ -5511,6 +5628,7 @@ impl ::core::fmt::Debug for DS_REPL_CURSOR_BLOB {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DS_REPL_CURSOR_BLOB {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DS_REPL_CURSOR_BLOB {
@@ -5571,6 +5689,7 @@ impl ::core::default::Default for DS_REPL_INFO_TYPE {
 }
 unsafe impl ::windows::core::Abi for DS_REPL_INFO_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DS_REPL_INFO_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5602,6 +5721,7 @@ impl ::core::fmt::Debug for DS_REPL_KCC_DSA_FAILURESW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DS_REPL_KCC_DSA_FAILURESW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DS_REPL_KCC_DSA_FAILURESW {
@@ -5644,6 +5764,7 @@ impl ::core::fmt::Debug for DS_REPL_KCC_DSA_FAILUREW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DS_REPL_KCC_DSA_FAILUREW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DS_REPL_KCC_DSA_FAILUREW {
@@ -5686,6 +5807,7 @@ impl ::core::fmt::Debug for DS_REPL_KCC_DSA_FAILUREW_BLOB {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DS_REPL_KCC_DSA_FAILUREW_BLOB {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DS_REPL_KCC_DSA_FAILUREW_BLOB {
@@ -5762,6 +5884,7 @@ impl ::core::fmt::Debug for DS_REPL_NEIGHBORSW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DS_REPL_NEIGHBORSW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DS_REPL_NEIGHBORSW {
@@ -5832,6 +5955,7 @@ impl ::core::fmt::Debug for DS_REPL_NEIGHBORW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DS_REPL_NEIGHBORW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DS_REPL_NEIGHBORW {
@@ -5902,6 +6026,7 @@ impl ::core::fmt::Debug for DS_REPL_NEIGHBORW_BLOB {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DS_REPL_NEIGHBORW_BLOB {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DS_REPL_NEIGHBORW_BLOB {
@@ -5942,6 +6067,7 @@ impl ::core::fmt::Debug for DS_REPL_OBJ_META_DATA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DS_REPL_OBJ_META_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DS_REPL_OBJ_META_DATA {
@@ -5982,6 +6108,7 @@ impl ::core::fmt::Debug for DS_REPL_OBJ_META_DATA_2 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DS_REPL_OBJ_META_DATA_2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DS_REPL_OBJ_META_DATA_2 {
@@ -6029,6 +6156,7 @@ impl ::core::fmt::Debug for DS_REPL_OPW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DS_REPL_OPW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DS_REPL_OPW {
@@ -6076,6 +6204,7 @@ impl ::core::fmt::Debug for DS_REPL_OPW_BLOB {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DS_REPL_OPW_BLOB {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DS_REPL_OPW_BLOB {
@@ -6118,6 +6247,7 @@ impl ::core::default::Default for DS_REPL_OP_TYPE {
 }
 unsafe impl ::windows::core::Abi for DS_REPL_OP_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DS_REPL_OP_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6149,6 +6279,7 @@ impl ::core::fmt::Debug for DS_REPL_PENDING_OPSW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DS_REPL_PENDING_OPSW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DS_REPL_PENDING_OPSW {
@@ -6193,6 +6324,7 @@ impl ::core::fmt::Debug for DS_REPL_QUEUE_STATISTICSW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DS_REPL_QUEUE_STATISTICSW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DS_REPL_QUEUE_STATISTICSW {
@@ -6253,6 +6385,7 @@ impl ::core::fmt::Debug for DS_REPL_VALUE_META_DATA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DS_REPL_VALUE_META_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DS_REPL_VALUE_META_DATA {
@@ -6315,6 +6448,7 @@ impl ::core::fmt::Debug for DS_REPL_VALUE_META_DATA_2 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DS_REPL_VALUE_META_DATA_2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DS_REPL_VALUE_META_DATA_2 {
@@ -6377,6 +6511,7 @@ impl ::core::fmt::Debug for DS_REPL_VALUE_META_DATA_BLOB {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DS_REPL_VALUE_META_DATA_BLOB {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DS_REPL_VALUE_META_DATA_BLOB {
@@ -6445,6 +6580,7 @@ impl ::core::fmt::Debug for DS_REPL_VALUE_META_DATA_BLOB_EXT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DS_REPL_VALUE_META_DATA_BLOB_EXT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DS_REPL_VALUE_META_DATA_BLOB_EXT {
@@ -6513,6 +6649,7 @@ impl ::core::fmt::Debug for DS_REPL_VALUE_META_DATA_EXT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DS_REPL_VALUE_META_DATA_EXT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DS_REPL_VALUE_META_DATA_EXT {
@@ -6571,6 +6708,7 @@ impl ::core::fmt::Debug for DS_REPSYNCALL_ERRINFOA {
 }
 unsafe impl ::windows::core::Abi for DS_REPSYNCALL_ERRINFOA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DS_REPSYNCALL_ERRINFOA {
     fn eq(&self, other: &Self) -> bool {
@@ -6604,6 +6742,7 @@ impl ::core::fmt::Debug for DS_REPSYNCALL_ERRINFOW {
 }
 unsafe impl ::windows::core::Abi for DS_REPSYNCALL_ERRINFOW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DS_REPSYNCALL_ERRINFOW {
     fn eq(&self, other: &Self) -> bool {
@@ -6639,6 +6778,7 @@ impl ::core::default::Default for DS_REPSYNCALL_ERROR {
 }
 unsafe impl ::windows::core::Abi for DS_REPSYNCALL_ERROR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DS_REPSYNCALL_ERROR {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6670,6 +6810,7 @@ impl ::core::default::Default for DS_REPSYNCALL_EVENT {
 }
 unsafe impl ::windows::core::Abi for DS_REPSYNCALL_EVENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DS_REPSYNCALL_EVENT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6706,6 +6847,7 @@ impl ::core::fmt::Debug for DS_REPSYNCALL_SYNCA {
 }
 unsafe impl ::windows::core::Abi for DS_REPSYNCALL_SYNCA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DS_REPSYNCALL_SYNCA {
     fn eq(&self, other: &Self) -> bool {
@@ -6740,6 +6882,7 @@ impl ::core::fmt::Debug for DS_REPSYNCALL_SYNCW {
 }
 unsafe impl ::windows::core::Abi for DS_REPSYNCALL_SYNCW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DS_REPSYNCALL_SYNCW {
     fn eq(&self, other: &Self) -> bool {
@@ -6774,6 +6917,7 @@ impl ::core::fmt::Debug for DS_REPSYNCALL_UPDATEA {
 }
 unsafe impl ::windows::core::Abi for DS_REPSYNCALL_UPDATEA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DS_REPSYNCALL_UPDATEA {
     fn eq(&self, other: &Self) -> bool {
@@ -6806,6 +6950,7 @@ impl ::core::fmt::Debug for DS_REPSYNCALL_UPDATEW {
 }
 unsafe impl ::windows::core::Abi for DS_REPSYNCALL_UPDATEW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DS_REPSYNCALL_UPDATEW {
     fn eq(&self, other: &Self) -> bool {
@@ -6920,6 +7065,7 @@ impl ::core::fmt::Debug for DS_SCHEMA_GUID_MAPA {
 }
 unsafe impl ::windows::core::Abi for DS_SCHEMA_GUID_MAPA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DS_SCHEMA_GUID_MAPA {
     fn eq(&self, other: &Self) -> bool {
@@ -6952,6 +7098,7 @@ impl ::core::fmt::Debug for DS_SCHEMA_GUID_MAPW {
 }
 unsafe impl ::windows::core::Abi for DS_SCHEMA_GUID_MAPW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DS_SCHEMA_GUID_MAPW {
     fn eq(&self, other: &Self) -> bool {
@@ -6994,6 +7141,7 @@ impl ::core::fmt::Debug for DS_SELECTION {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com", feature = "Win32_System_Ole"))]
 unsafe impl ::windows::core::Abi for DS_SELECTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com", feature = "Win32_System_Ole"))]
 impl ::core::cmp::PartialEq for DS_SELECTION {
@@ -7034,6 +7182,7 @@ impl ::core::fmt::Debug for DS_SELECTION_LIST {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com", feature = "Win32_System_Ole"))]
 unsafe impl ::windows::core::Abi for DS_SELECTION_LIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com", feature = "Win32_System_Ole"))]
 impl ::core::cmp::PartialEq for DS_SELECTION_LIST {
@@ -7070,6 +7219,7 @@ impl ::core::fmt::Debug for DS_SITE_COST_INFO {
 }
 unsafe impl ::windows::core::Abi for DS_SITE_COST_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DS_SITE_COST_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -7111,6 +7261,7 @@ impl ::core::default::Default for DS_SPN_NAME_TYPE {
 }
 unsafe impl ::windows::core::Abi for DS_SPN_NAME_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DS_SPN_NAME_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7140,6 +7291,7 @@ impl ::core::default::Default for DS_SPN_WRITE_OP {
 }
 unsafe impl ::windows::core::Abi for DS_SPN_WRITE_OP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DS_SPN_WRITE_OP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9183,12 +9335,19 @@ impl ::core::fmt::Debug for GetDcContextHandle {
 }
 unsafe impl ::windows::core::Abi for GetDcContextHandle {
     type Abi = Self;
+    type DefaultType = Self;
 }
 pub const Hold: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb3ad3e13_4080_11d1_a3ac_00c04fb950dc);
 #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`, `\"Win32_System_Com\"`*"]
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IADs(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IADs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IADs {
     #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`, `\"Win32_Foundation\"`*"]
@@ -9312,12 +9471,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IADs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IADs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9392,6 +9545,12 @@ pub struct IADs_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IADsADSystemInfo(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IADsADSystemInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IADsADSystemInfo {
     #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`, `\"Win32_Foundation\"`*"]
@@ -9519,12 +9678,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IADsADSystemInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IADsADSystemInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9599,6 +9752,12 @@ pub struct IADsADSystemInfo_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IADsAccessControlEntry(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IADsAccessControlEntry {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IADsAccessControlEntry {
     #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`*"]
@@ -9720,12 +9879,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IADsAccessControlEntry {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IADsAccessControlEntry {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9786,6 +9939,12 @@ pub struct IADsAccessControlEntry_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IADsAccessControlList(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IADsAccessControlList {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IADsAccessControlList {
     #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`*"]
@@ -9877,12 +10036,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IADsAccessControlList {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IADsAccessControlList {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9928,6 +10081,12 @@ pub struct IADsAccessControlList_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IADsAcl(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IADsAcl {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IADsAcl {
     #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`, `\"Win32_Foundation\"`*"]
@@ -10017,12 +10176,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IADsAcl {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IADsAcl {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10072,6 +10225,11 @@ pub struct IADsAcl_Vtbl {
 #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`*"]
 #[repr(transparent)]
 pub struct IADsAggregatee(::windows::core::IUnknown);
+impl ::core::clone::Clone for IADsAggregatee {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IADsAggregatee {
     #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`*"]
     pub unsafe fn ConnectAsAggregatee<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, pouterunknown: Param0) -> ::windows::core::Result<()> {
@@ -10110,11 +10268,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IADsA
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IADsAggregatee {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IADsAggregatee {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10142,6 +10295,11 @@ pub struct IADsAggregatee_Vtbl {
 #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`*"]
 #[repr(transparent)]
 pub struct IADsAggregator(::windows::core::IUnknown);
+impl ::core::clone::Clone for IADsAggregator {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IADsAggregator {
     #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`*"]
     pub unsafe fn ConnectAsAggregator<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, paggregatee: Param0) -> ::windows::core::Result<()> {
@@ -10172,11 +10330,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IADsA
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IADsAggregator {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IADsAggregator {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10203,6 +10356,12 @@ pub struct IADsAggregator_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IADsBackLink(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IADsBackLink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IADsBackLink {
     #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`*"]
@@ -10275,12 +10434,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IADsBackLink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IADsBackLink {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10319,6 +10472,12 @@ pub struct IADsBackLink_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IADsCaseIgnoreList(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IADsCaseIgnoreList {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IADsCaseIgnoreList {
     #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
@@ -10382,12 +10541,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IADsCaseIgnoreList {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IADsCaseIgnoreList {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10424,6 +10577,12 @@ pub struct IADsCaseIgnoreList_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IADsClass(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IADsClass {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IADsClass {
     #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`, `\"Win32_Foundation\"`*"]
@@ -10729,12 +10888,6 @@ impl<'a> ::windows::core::IntoParam<'a, IADs> for &'a IADsClass {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IADsClass {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IADsClass {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10860,6 +11013,12 @@ pub struct IADsClass_Vtbl {
 #[repr(transparent)]
 pub struct IADsCollection(::windows::core::IUnknown);
 #[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IADsCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "Win32_System_Com")]
 impl IADsCollection {
     #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`*"]
     pub unsafe fn _NewEnum(&self) -> ::windows::core::Result<::windows::core::IUnknown> {
@@ -10932,12 +11091,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IADsCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IADsCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10979,6 +11132,12 @@ pub struct IADsCollection_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IADsComputer(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IADsComputer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IADsComputer {
     #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`, `\"Win32_Foundation\"`*"]
@@ -11303,12 +11462,6 @@ impl<'a> ::windows::core::IntoParam<'a, IADs> for &'a IADsComputer {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IADsComputer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IADsComputer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11466,6 +11619,12 @@ pub struct IADsComputer_Vtbl {
 #[repr(transparent)]
 pub struct IADsComputerOperations(::windows::core::IUnknown);
 #[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IADsComputerOperations {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "Win32_System_Com")]
 impl IADsComputerOperations {
     #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -11622,12 +11781,6 @@ impl<'a> ::windows::core::IntoParam<'a, IADs> for &'a IADsComputerOperations {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IADsComputerOperations {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IADsComputerOperations {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11661,6 +11814,12 @@ pub struct IADsComputerOperations_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IADsContainer(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IADsContainer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IADsContainer {
     #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`*"]
@@ -11774,12 +11933,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IADsContainer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IADsContainer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11846,6 +11999,12 @@ pub struct IADsContainer_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IADsDNWithBinary(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IADsDNWithBinary {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IADsDNWithBinary {
     #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
@@ -11920,12 +12079,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IADsDNWithBinary {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IADsDNWithBinary {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11970,6 +12123,12 @@ pub struct IADsDNWithBinary_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IADsDNWithString(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IADsDNWithString {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IADsDNWithString {
     #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`, `\"Win32_Foundation\"`*"]
@@ -12044,12 +12203,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IADsDNWithString {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IADsDNWithString {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12094,6 +12247,12 @@ pub struct IADsDNWithString_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IADsDeleteOps(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IADsDeleteOps {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IADsDeleteOps {
     #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`*"]
@@ -12150,12 +12309,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IADsDeleteOps {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IADsDeleteOps {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12185,6 +12338,12 @@ pub struct IADsDeleteOps_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IADsDomain(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IADsDomain {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IADsDomain {
     #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`, `\"Win32_Foundation\"`*"]
@@ -12409,12 +12568,6 @@ impl<'a> ::windows::core::IntoParam<'a, IADs> for &'a IADsDomain {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IADsDomain {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IADsDomain {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12460,6 +12613,12 @@ pub struct IADsDomain_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IADsEmail(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IADsEmail {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IADsEmail {
     #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`*"]
@@ -12532,12 +12691,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IADsEmail {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IADsEmail {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12575,6 +12728,11 @@ pub struct IADsEmail_Vtbl {
 #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`*"]
 #[repr(transparent)]
 pub struct IADsExtension(::windows::core::IUnknown);
+impl ::core::clone::Clone for IADsExtension {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IADsExtension {
     #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com", feature = "Win32_System_Ole"))]
@@ -12612,11 +12770,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IADsE
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IADsExtension {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IADsExtension {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12650,6 +12803,12 @@ pub struct IADsExtension_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IADsFaxNumber(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IADsFaxNumber {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IADsFaxNumber {
     #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`, `\"Win32_Foundation\"`*"]
@@ -12724,12 +12883,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IADsFaxNumber {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IADsFaxNumber {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12774,6 +12927,12 @@ pub struct IADsFaxNumber_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IADsFileService(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IADsFileService {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IADsFileService {
     #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`, `\"Win32_Foundation\"`*"]
@@ -13091,12 +13250,6 @@ impl<'a> ::windows::core::IntoParam<'a, IADsService> for &'a IADsFileService {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IADsFileService {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IADsFileService {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13135,6 +13288,12 @@ pub struct IADsFileService_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IADsFileServiceOperations(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IADsFileServiceOperations {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IADsFileServiceOperations {
     #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`, `\"Win32_Foundation\"`*"]
@@ -13344,12 +13503,6 @@ impl<'a> ::windows::core::IntoParam<'a, IADsServiceOperations> for &'a IADsFileS
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IADsFileServiceOperations {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IADsFileServiceOperations {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13386,6 +13539,12 @@ pub struct IADsFileServiceOperations_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IADsFileShare(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IADsFileShare {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IADsFileShare {
     #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`, `\"Win32_Foundation\"`*"]
@@ -13580,12 +13739,6 @@ impl<'a> ::windows::core::IntoParam<'a, IADs> for &'a IADsFileShare {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IADsFileShare {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IADsFileShare {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13641,6 +13794,12 @@ pub struct IADsFileShare_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IADsGroup(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IADsGroup {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IADsGroup {
     #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`, `\"Win32_Foundation\"`*"]
@@ -13821,12 +13980,6 @@ impl<'a> ::windows::core::IntoParam<'a, IADs> for &'a IADsGroup {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IADsGroup {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IADsGroup {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13879,6 +14032,12 @@ pub struct IADsGroup_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IADsHold(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IADsHold {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IADsHold {
     #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`, `\"Win32_Foundation\"`*"]
@@ -13951,12 +14110,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IADsHold {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IADsHold {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13995,6 +14148,12 @@ pub struct IADsHold_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IADsLargeInteger(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IADsLargeInteger {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IADsLargeInteger {
     #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`*"]
@@ -14065,12 +14224,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IADsLargeInteger {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IADsLargeInteger {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -14103,6 +14256,12 @@ pub struct IADsLargeInteger_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IADsLocality(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IADsLocality {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IADsLocality {
     #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`, `\"Win32_Foundation\"`*"]
@@ -14294,12 +14453,6 @@ impl<'a> ::windows::core::IntoParam<'a, IADs> for &'a IADsLocality {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IADsLocality {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IADsLocality {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -14360,6 +14513,12 @@ pub struct IADsLocality_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IADsMembers(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IADsMembers {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IADsMembers {
     #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`*"]
@@ -14433,12 +14592,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IADsMembers {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IADsMembers {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -14477,6 +14630,12 @@ pub struct IADsMembers_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IADsNameTranslate(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IADsNameTranslate {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IADsNameTranslate {
     #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`*"]
@@ -14565,12 +14724,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IADsNameTranslate {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IADsNameTranslate {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -14624,6 +14777,12 @@ pub struct IADsNameTranslate_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IADsNamespaces(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IADsNamespaces {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IADsNamespaces {
     #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`, `\"Win32_Foundation\"`*"]
@@ -14782,12 +14941,6 @@ impl<'a> ::windows::core::IntoParam<'a, IADs> for &'a IADsNamespaces {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IADsNamespaces {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IADsNamespaces {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -14824,6 +14977,12 @@ pub struct IADsNamespaces_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IADsNetAddress(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IADsNetAddress {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IADsNetAddress {
     #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`*"]
@@ -14896,12 +15055,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IADsNetAddress {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IADsNetAddress {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -14940,6 +15093,12 @@ pub struct IADsNetAddress_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IADsO(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IADsO {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IADsO {
     #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`, `\"Win32_Foundation\"`*"]
@@ -15153,12 +15312,6 @@ impl<'a> ::windows::core::IntoParam<'a, IADs> for &'a IADsO {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IADsO {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IADsO {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -15235,6 +15388,12 @@ pub struct IADsO_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IADsOU(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IADsOU {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IADsOU {
     #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`, `\"Win32_Foundation\"`*"]
@@ -15459,12 +15618,6 @@ impl<'a> ::windows::core::IntoParam<'a, IADs> for &'a IADsOU {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IADsOU {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IADsOU {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -15550,6 +15703,12 @@ pub struct IADsOU_Vtbl {
 #[repr(transparent)]
 pub struct IADsObjectOptions(::windows::core::IUnknown);
 #[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IADsObjectOptions {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "Win32_System_Com")]
 impl IADsObjectOptions {
     #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com", feature = "Win32_System_Ole"))]
@@ -15612,12 +15771,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IADsObjectOptions {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IADsObjectOptions {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -15654,6 +15807,12 @@ pub struct IADsObjectOptions_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IADsOctetList(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IADsOctetList {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IADsOctetList {
     #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
@@ -15717,12 +15876,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IADsOctetList {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IADsOctetList {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -15759,6 +15912,12 @@ pub struct IADsOctetList_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IADsOpenDSObject(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IADsOpenDSObject {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IADsOpenDSObject {
     #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`*"]
@@ -15817,12 +15976,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IADsOpenDSObject {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IADsOpenDSObject {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -15855,6 +16008,12 @@ pub struct IADsOpenDSObject_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IADsPath(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IADsPath {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IADsPath {
     #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`*"]
@@ -15938,12 +16097,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IADsPath {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IADsPath {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -15990,6 +16143,12 @@ pub struct IADsPath_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IADsPathname(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IADsPathname {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IADsPathname {
     #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`, `\"Win32_Foundation\"`*"]
@@ -16098,12 +16257,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IADsPathname {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IADsPathname {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -16161,6 +16314,12 @@ pub struct IADsPathname_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IADsPostalAddress(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IADsPostalAddress {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IADsPostalAddress {
     #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
@@ -16224,12 +16383,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IADsPostalAddress {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IADsPostalAddress {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -16266,6 +16419,12 @@ pub struct IADsPostalAddress_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IADsPrintJob(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IADsPrintJob {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IADsPrintJob {
     #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`, `\"Win32_Foundation\"`*"]
@@ -16506,12 +16665,6 @@ impl<'a> ::windows::core::IntoParam<'a, IADs> for &'a IADsPrintJob {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IADsPrintJob {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IADsPrintJob {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -16585,6 +16738,12 @@ pub struct IADsPrintJob_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IADsPrintJobOperations(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IADsPrintJobOperations {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IADsPrintJobOperations {
     #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`, `\"Win32_Foundation\"`*"]
@@ -16764,12 +16923,6 @@ impl<'a> ::windows::core::IntoParam<'a, IADs> for &'a IADsPrintJobOperations {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IADsPrintJobOperations {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IADsPrintJobOperations {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -16805,6 +16958,12 @@ pub struct IADsPrintJobOperations_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IADsPrintQueue(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IADsPrintQueue {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IADsPrintQueue {
     #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`, `\"Win32_Foundation\"`*"]
@@ -17087,12 +17246,6 @@ impl<'a> ::windows::core::IntoParam<'a, IADs> for &'a IADsPrintQueue {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IADsPrintQueue {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IADsPrintQueue {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -17201,6 +17354,12 @@ pub struct IADsPrintQueue_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IADsPrintQueueOperations(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IADsPrintQueueOperations {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IADsPrintQueueOperations {
     #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`, `\"Win32_Foundation\"`*"]
@@ -17371,12 +17530,6 @@ impl<'a> ::windows::core::IntoParam<'a, IADs> for &'a IADsPrintQueueOperations {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IADsPrintQueueOperations {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IADsPrintQueueOperations {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -17413,6 +17566,12 @@ pub struct IADsPrintQueueOperations_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IADsProperty(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IADsProperty {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IADsProperty {
     #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`, `\"Win32_Foundation\"`*"]
@@ -17615,12 +17774,6 @@ impl<'a> ::windows::core::IntoParam<'a, IADs> for &'a IADsProperty {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IADsProperty {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IADsProperty {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -17675,6 +17828,12 @@ pub struct IADsProperty_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IADsPropertyEntry(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IADsPropertyEntry {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IADsPropertyEntry {
     #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`*"]
@@ -17771,12 +17930,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IADsPropertyEntry {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IADsPropertyEntry {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -17826,6 +17979,12 @@ pub struct IADsPropertyEntry_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IADsPropertyList(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IADsPropertyList {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IADsPropertyList {
     #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`*"]
@@ -17922,12 +18081,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IADsPropertyList {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IADsPropertyList {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -17980,6 +18133,12 @@ pub struct IADsPropertyList_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IADsPropertyValue(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IADsPropertyValue {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IADsPropertyValue {
     #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`*"]
@@ -18160,12 +18319,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IADsPropertyValue {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IADsPropertyValue {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -18268,6 +18421,12 @@ pub struct IADsPropertyValue_Vtbl {
 #[repr(transparent)]
 pub struct IADsPropertyValue2(::windows::core::IUnknown);
 #[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IADsPropertyValue2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "Win32_System_Com")]
 impl IADsPropertyValue2 {
     #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com", feature = "Win32_System_Ole"))]
@@ -18329,12 +18488,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IADsPropertyValue2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IADsPropertyValue2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -18371,6 +18524,12 @@ pub struct IADsPropertyValue2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IADsReplicaPointer(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IADsReplicaPointer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IADsReplicaPointer {
     #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`, `\"Win32_Foundation\"`*"]
@@ -18472,12 +18631,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IADsReplicaPointer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IADsReplicaPointer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -18528,6 +18681,12 @@ pub struct IADsReplicaPointer_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IADsResource(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IADsResource {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IADsResource {
     #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`, `\"Win32_Foundation\"`*"]
@@ -18698,12 +18857,6 @@ impl<'a> ::windows::core::IntoParam<'a, IADs> for &'a IADsResource {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IADsResource {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IADsResource {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -18745,6 +18898,12 @@ pub struct IADsResource_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IADsSecurityDescriptor(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IADsSecurityDescriptor {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IADsSecurityDescriptor {
     #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`*"]
@@ -18901,12 +19060,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IADsSecurityDescriptor {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IADsSecurityDescriptor {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -18983,6 +19136,12 @@ pub struct IADsSecurityDescriptor_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IADsSecurityUtility(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IADsSecurityUtility {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IADsSecurityUtility {
     #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
@@ -19061,12 +19220,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IADsSecurityUtility {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IADsSecurityUtility {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -19109,6 +19262,12 @@ pub struct IADsSecurityUtility_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IADsService(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IADsService {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IADsService {
     #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`, `\"Win32_Foundation\"`*"]
@@ -19382,12 +19541,6 @@ impl<'a> ::windows::core::IntoParam<'a, IADs> for &'a IADsService {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IADsService {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IADsService {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -19494,6 +19647,12 @@ pub struct IADsService_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IADsServiceOperations(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IADsServiceOperations {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IADsServiceOperations {
     #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`, `\"Win32_Foundation\"`*"]
@@ -19667,12 +19826,6 @@ impl<'a> ::windows::core::IntoParam<'a, IADs> for &'a IADsServiceOperations {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IADsServiceOperations {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IADsServiceOperations {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -19710,6 +19863,12 @@ pub struct IADsServiceOperations_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IADsSession(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IADsSession {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IADsSession {
     #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`, `\"Win32_Foundation\"`*"]
@@ -19891,12 +20050,6 @@ impl<'a> ::windows::core::IntoParam<'a, IADs> for &'a IADsSession {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IADsSession {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IADsSession {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -19943,6 +20096,12 @@ pub struct IADsSession_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IADsSyntax(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IADsSyntax {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IADsSyntax {
     #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`, `\"Win32_Foundation\"`*"]
@@ -20099,12 +20258,6 @@ impl<'a> ::windows::core::IntoParam<'a, IADs> for &'a IADsSyntax {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IADsSyntax {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IADsSyntax {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -20135,6 +20288,12 @@ pub struct IADsSyntax_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IADsTimestamp(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IADsTimestamp {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IADsTimestamp {
     #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`*"]
@@ -20205,12 +20364,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IADsTimestamp {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IADsTimestamp {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -20243,6 +20396,12 @@ pub struct IADsTimestamp_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IADsTypedName(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IADsTypedName {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IADsTypedName {
     #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`, `\"Win32_Foundation\"`*"]
@@ -20324,12 +20483,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IADsTypedName {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IADsTypedName {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -20370,6 +20523,12 @@ pub struct IADsTypedName_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IADsUser(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IADsUser {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IADsUser {
     #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`, `\"Win32_Foundation\"`*"]
@@ -20993,12 +21152,6 @@ impl<'a> ::windows::core::IntoParam<'a, IADs> for &'a IADsUser {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IADsUser {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IADsUser {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -21311,6 +21464,12 @@ pub struct IADsUser_Vtbl {
 #[repr(transparent)]
 pub struct IADsWinNTSystemInfo(::windows::core::IUnknown);
 #[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IADsWinNTSystemInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "Win32_System_Com")]
 impl IADsWinNTSystemInfo {
     #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -21386,12 +21545,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IADsWinNTSystemInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IADsWinNTSystemInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -21435,6 +21588,11 @@ pub struct IADsWinNTSystemInfo_Vtbl {
 #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`*"]
 #[repr(transparent)]
 pub struct ICommonQuery(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICommonQuery {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ICommonQuery {
     #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com_StructuredStorage\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com_StructuredStorage"))]
@@ -21460,11 +21618,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for ICommonQu
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ICommonQuery {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for ICommonQuery {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for ICommonQuery {
@@ -21494,6 +21647,11 @@ pub struct ICommonQuery_Vtbl {
 #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`*"]
 #[repr(transparent)]
 pub struct IDirectoryObject(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectoryObject {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirectoryObject {
     #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`*"]
     pub unsafe fn GetObjectInformation(&self) -> ::windows::core::Result<*mut ADS_OBJECT_INFO> {
@@ -21542,11 +21700,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDire
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirectoryObject {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirectoryObject {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -21584,6 +21737,11 @@ pub struct IDirectoryObject_Vtbl {
 #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`*"]
 #[repr(transparent)]
 pub struct IDirectorySchemaMgmt(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectorySchemaMgmt {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirectorySchemaMgmt {
     #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -21644,11 +21802,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDire
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirectorySchemaMgmt {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirectorySchemaMgmt {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -21698,6 +21851,11 @@ pub struct IDirectorySchemaMgmt_Vtbl {
 #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`*"]
 #[repr(transparent)]
 pub struct IDirectorySearch(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectorySearch {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirectorySearch {
     #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -21765,11 +21923,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDire
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirectorySearch {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirectorySearch {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -21812,6 +21965,11 @@ pub struct IDirectorySearch_Vtbl {
 #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`*"]
 #[repr(transparent)]
 pub struct IDsAdminCreateObj(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDsAdminCreateObj {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDsAdminCreateObj {
     #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -21845,11 +22003,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDsAd
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDsAdminCreateObj {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDsAdminCreateObj {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -21881,6 +22034,11 @@ pub struct IDsAdminCreateObj_Vtbl {
 #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`*"]
 #[repr(transparent)]
 pub struct IDsAdminNewObj(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDsAdminNewObj {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDsAdminNewObj {
     #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -21912,11 +22070,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDsAd
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDsAdminNewObj {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDsAdminNewObj {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -21945,6 +22098,11 @@ pub struct IDsAdminNewObj_Vtbl {
 #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`*"]
 #[repr(transparent)]
 pub struct IDsAdminNewObjExt(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDsAdminNewObjExt {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDsAdminNewObjExt {
     #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`, `\"Win32_System_Com\"`, `\"Win32_UI_WindowsAndMessaging\"`*"]
     #[cfg(all(feature = "Win32_System_Com", feature = "Win32_UI_WindowsAndMessaging"))]
@@ -21997,11 +22155,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDsAd
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDsAdminNewObjExt {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDsAdminNewObjExt {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -22049,6 +22202,11 @@ pub struct IDsAdminNewObjExt_Vtbl {
 #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`*"]
 #[repr(transparent)]
 pub struct IDsAdminNewObjPrimarySite(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDsAdminNewObjPrimarySite {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDsAdminNewObjPrimarySite {
     #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`*"]
     pub unsafe fn CreateNew<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, pszname: Param0) -> ::windows::core::Result<()> {
@@ -22079,11 +22237,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDsAd
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDsAdminNewObjPrimarySite {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDsAdminNewObjPrimarySite {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -22109,6 +22262,11 @@ pub struct IDsAdminNewObjPrimarySite_Vtbl {
 #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`*"]
 #[repr(transparent)]
 pub struct IDsAdminNotifyHandler(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDsAdminNotifyHandler {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDsAdminNotifyHandler {
     #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -22149,11 +22307,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDsAd
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDsAdminNotifyHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDsAdminNotifyHandler {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -22187,6 +22340,11 @@ pub struct IDsAdminNotifyHandler_Vtbl {
 #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`*"]
 #[repr(transparent)]
 pub struct IDsBrowseDomainTree(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDsBrowseDomainTree {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDsBrowseDomainTree {
     #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -22232,11 +22390,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDsBr
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDsBrowseDomainTree {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDsBrowseDomainTree {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -22274,6 +22427,11 @@ pub struct IDsBrowseDomainTree_Vtbl {
 #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`*"]
 #[repr(transparent)]
 pub struct IDsDisplaySpecifier(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDsDisplaySpecifier {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDsDisplaySpecifier {
     #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`*"]
     pub unsafe fn SetServer<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param1: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param2: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, pszserver: Param0, pszusername: Param1, pszpassword: Param2, dwflags: u32) -> ::windows::core::Result<()> {
@@ -22343,11 +22501,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDsDi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDsDisplaySpecifier {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDsDisplaySpecifier {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -22391,6 +22544,11 @@ pub struct IDsDisplaySpecifier_Vtbl {
 #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`*"]
 #[repr(transparent)]
 pub struct IDsObjectPicker(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDsObjectPicker {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDsObjectPicker {
     #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`*"]
     pub unsafe fn Initialize(&self, pinitinfo: *mut DSOP_INIT_INFO) -> ::windows::core::Result<()> {
@@ -22423,11 +22581,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDsOb
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDsObjectPicker {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDsObjectPicker {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -22456,6 +22609,11 @@ pub struct IDsObjectPicker_Vtbl {
 #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`*"]
 #[repr(transparent)]
 pub struct IDsObjectPickerCredentials(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDsObjectPickerCredentials {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDsObjectPickerCredentials {
     #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`*"]
     pub unsafe fn Initialize(&self, pinitinfo: *mut DSOP_INIT_INFO) -> ::windows::core::Result<()> {
@@ -22512,11 +22670,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDsObjectPicker> for &'a IDsObjectPicker
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDsObjectPickerCredentials {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDsObjectPickerCredentials {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -22542,6 +22695,12 @@ pub struct IDsObjectPickerCredentials_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IPersistQuery(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IPersistQuery {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IPersistQuery {
     #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`, `\"Win32_System_Com\"`*"]
@@ -22628,12 +22787,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IPersist> for
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IPersistQuery {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IPersistQuery {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -22668,6 +22821,11 @@ pub struct IPersistQuery_Vtbl {
 #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`*"]
 #[repr(transparent)]
 pub struct IPrivateDispatch(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrivateDispatch {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPrivateDispatch {
     #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`*"]
     pub unsafe fn ADSIInitializeDispatchManager(&self, dwextensionid: i32) -> ::windows::core::Result<()> {
@@ -22715,11 +22873,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPriv
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPrivateDispatch {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPrivateDispatch {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -22754,6 +22907,11 @@ pub struct IPrivateDispatch_Vtbl {
 #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`*"]
 #[repr(transparent)]
 pub struct IPrivateUnknown(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrivateUnknown {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPrivateUnknown {
     #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -22785,11 +22943,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPriv
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPrivateUnknown {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPrivateUnknown {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -22818,6 +22971,11 @@ pub struct IPrivateUnknown_Vtbl {
 #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`*"]
 #[repr(transparent)]
 pub struct IQueryForm(::windows::core::IUnknown);
+impl ::core::clone::Clone for IQueryForm {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IQueryForm {
     #[doc = "*Required features: `\"Win32_Networking_ActiveDirectory\"`, `\"Win32_System_Registry\"`*"]
     #[cfg(feature = "Win32_System_Registry")]
@@ -22853,11 +23011,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IQueryFor
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IQueryForm {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IQueryForm {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IQueryForm {
@@ -23038,6 +23191,7 @@ impl ::core::clone::Clone for OPENQUERYWINDOW {
 #[cfg(feature = "Win32_System_Com_StructuredStorage")]
 unsafe impl ::windows::core::Abi for OPENQUERYWINDOW {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_System_Com_StructuredStorage")]
 impl ::core::cmp::PartialEq for OPENQUERYWINDOW {
@@ -23069,6 +23223,7 @@ impl ::core::clone::Clone for OPENQUERYWINDOW_0 {
 #[cfg(feature = "Win32_System_Com_StructuredStorage")]
 unsafe impl ::windows::core::Abi for OPENQUERYWINDOW_0 {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_System_Com_StructuredStorage")]
 impl ::core::cmp::PartialEq for OPENQUERYWINDOW_0 {
@@ -23184,6 +23339,7 @@ impl ::core::fmt::Debug for SCHEDULE {
 }
 unsafe impl ::windows::core::Abi for SCHEDULE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SCHEDULE {
     fn eq(&self, other: &Self) -> bool {
@@ -23217,6 +23373,7 @@ impl ::core::fmt::Debug for SCHEDULE_HEADER {
 }
 unsafe impl ::windows::core::Abi for SCHEDULE_HEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SCHEDULE_HEADER {
     fn eq(&self, other: &Self) -> bool {
@@ -23303,6 +23460,7 @@ impl ::core::fmt::Debug for ads_search_column {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for ads_search_column {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for ads_search_column {
@@ -23337,6 +23495,7 @@ impl ::core::clone::Clone for ads_searchpref_info {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for ads_searchpref_info {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for ads_searchpref_info {

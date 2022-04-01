@@ -11,11 +11,6 @@ impl AddDeleteThemeTransition {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for AddDeleteThemeTransition {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AddDeleteThemeTransition {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -29,7 +24,6 @@ impl ::core::fmt::Debug for AddDeleteThemeTransition {
 }
 unsafe impl ::windows::core::RuntimeType for AddDeleteThemeTransition {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.AddDeleteThemeTransition;{adec852e-4424-4dab-99c1-3a04e36a3c48})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -160,11 +154,6 @@ impl BackEase {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for BackEase {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for BackEase {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -178,7 +167,6 @@ impl ::core::fmt::Debug for BackEase {
 }
 unsafe impl ::windows::core::RuntimeType for BackEase {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.BackEase;{e47796e7-f805-4a8f-81c9-38e6472caa94})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -297,11 +285,6 @@ impl BasicConnectedAnimationConfiguration {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for BasicConnectedAnimationConfiguration {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for BasicConnectedAnimationConfiguration {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -315,7 +298,6 @@ impl ::core::fmt::Debug for BasicConnectedAnimationConfiguration {
 }
 unsafe impl ::windows::core::RuntimeType for BasicConnectedAnimationConfiguration {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.BasicConnectedAnimationConfiguration;{e675f9b5-a4d6-5353-83e6-c89e7cf8d456})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -426,11 +408,6 @@ impl BeginStoryboard {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for BeginStoryboard {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for BeginStoryboard {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -444,7 +421,6 @@ impl ::core::fmt::Debug for BeginStoryboard {
 }
 unsafe impl ::windows::core::RuntimeType for BeginStoryboard {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.BeginStoryboard;{64189fcd-49ec-4e52-a6f6-55324c921053})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -595,11 +571,6 @@ impl BounceEase {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for BounceEase {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for BounceEase {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -613,7 +584,6 @@ impl ::core::fmt::Debug for BounceEase {
 }
 unsafe impl ::windows::core::RuntimeType for BounceEase {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.BounceEase;{2bf1464e-fc71-47ed-85a1-3ba9577718b4})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -719,11 +689,6 @@ impl CircleEase {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for CircleEase {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for CircleEase {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -737,7 +702,6 @@ impl ::core::fmt::Debug for CircleEase {
 }
 unsafe impl ::windows::core::RuntimeType for CircleEase {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.CircleEase;{53a3bdb2-9177-4e6e-a043-5082d889ab1f})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -853,6 +817,7 @@ impl ::core::default::Default for ClockState {
 }
 unsafe impl ::windows::core::Abi for ClockState {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ClockState {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -861,7 +826,6 @@ impl ::core::fmt::Debug for ClockState {
 }
 unsafe impl ::windows::core::RuntimeType for ClockState {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Xaml.Media.Animation.ClockState;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -989,11 +953,6 @@ impl ColorAnimation {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for ColorAnimation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ColorAnimation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1007,7 +966,6 @@ impl ::core::fmt::Debug for ColorAnimation {
 }
 unsafe impl ::windows::core::RuntimeType for ColorAnimation {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.ColorAnimation;{b8ae8a15-0f63-4694-9467-bdafac1253ea})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1147,11 +1105,6 @@ impl ColorAnimationUsingKeyFrames {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for ColorAnimationUsingKeyFrames {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ColorAnimationUsingKeyFrames {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1165,7 +1118,6 @@ impl ::core::fmt::Debug for ColorAnimationUsingKeyFrames {
 }
 unsafe impl ::windows::core::RuntimeType for ColorAnimationUsingKeyFrames {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.ColorAnimationUsingKeyFrames;{f5c82640-13c3-42aa-9ae2-7e6b51c92f95})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1311,11 +1263,6 @@ impl ColorKeyFrame {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for ColorKeyFrame {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ColorKeyFrame {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1329,7 +1276,6 @@ impl ::core::fmt::Debug for ColorKeyFrame {
 }
 unsafe impl ::windows::core::RuntimeType for ColorKeyFrame {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.ColorKeyFrame;{b51d82d9-0910-4589-a284-b0c9205858e9})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1514,12 +1460,6 @@ impl ColorKeyFrameCollection {
     }
 }
 #[cfg(feature = "Foundation_Collections")]
-impl ::core::clone::Clone for ColorKeyFrameCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Foundation_Collections")]
 impl ::core::cmp::PartialEq for ColorKeyFrameCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1536,7 +1476,6 @@ impl ::core::fmt::Debug for ColorKeyFrameCollection {
 #[cfg(feature = "Foundation_Collections")]
 unsafe impl ::windows::core::RuntimeType for ColorKeyFrameCollection {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.ColorKeyFrameCollection;pinterface({913337e9-11a1-4345-a3a2-4e7f956e222d};rc(Windows.UI.Xaml.Media.Animation.ColorKeyFrame;{b51d82d9-0910-4589-a284-b0c9205858e9})))");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1725,11 +1664,6 @@ impl CommonNavigationTransitionInfo {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for CommonNavigationTransitionInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for CommonNavigationTransitionInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1743,7 +1677,6 @@ impl ::core::fmt::Debug for CommonNavigationTransitionInfo {
 }
 unsafe impl ::windows::core::RuntimeType for CommonNavigationTransitionInfo {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.CommonNavigationTransitionInfo;{50345692-a555-4624-a361-0a91c1706473})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1911,11 +1844,6 @@ impl ConnectedAnimation {
         unsafe { (::windows::core::Interface::vtable(this).SetConfiguration)(::core::mem::transmute_copy(this), value.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for ConnectedAnimation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ConnectedAnimation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1929,7 +1857,6 @@ impl ::core::fmt::Debug for ConnectedAnimation {
 }
 unsafe impl ::windows::core::RuntimeType for ConnectedAnimation {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.ConnectedAnimation;{3518628c-f387-4c25-ac98-44e86c3cadf0})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2006,6 +1933,7 @@ impl ::core::default::Default for ConnectedAnimationComponent {
 }
 unsafe impl ::windows::core::Abi for ConnectedAnimationComponent {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ConnectedAnimationComponent {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2014,7 +1942,6 @@ impl ::core::fmt::Debug for ConnectedAnimationComponent {
 }
 unsafe impl ::windows::core::RuntimeType for ConnectedAnimationComponent {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Xaml.Media.Animation.ConnectedAnimationComponent;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2023,11 +1950,6 @@ unsafe impl ::windows::core::RuntimeType for ConnectedAnimationComponent {
 #[repr(transparent)]
 pub struct ConnectedAnimationConfiguration(::windows::core::IUnknown);
 impl ConnectedAnimationConfiguration {}
-impl ::core::clone::Clone for ConnectedAnimationConfiguration {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ConnectedAnimationConfiguration {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2041,7 +1963,6 @@ impl ::core::fmt::Debug for ConnectedAnimationConfiguration {
 }
 unsafe impl ::windows::core::RuntimeType for ConnectedAnimationConfiguration {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.ConnectedAnimationConfiguration;{00218aae-cd8c-5651-92a0-c1db95c03998})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2158,11 +2079,6 @@ impl ConnectedAnimationService {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for ConnectedAnimationService {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ConnectedAnimationService {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2176,7 +2092,6 @@ impl ::core::fmt::Debug for ConnectedAnimationService {
 }
 unsafe impl ::windows::core::RuntimeType for ConnectedAnimationService {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.ConnectedAnimationService;{1c6875c9-19bb-4d47-b9aa-66c802dcb9ff})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2287,11 +2202,6 @@ impl ContentThemeTransition {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for ContentThemeTransition {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ContentThemeTransition {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2305,7 +2215,6 @@ impl ::core::fmt::Debug for ContentThemeTransition {
 }
 unsafe impl ::windows::core::RuntimeType for ContentThemeTransition {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.ContentThemeTransition;{f66fc5c3-5915-437d-8e3b-adf8e7f0ab57})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2492,11 +2401,6 @@ impl ContinuumNavigationTransitionInfo {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for ContinuumNavigationTransitionInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ContinuumNavigationTransitionInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2510,7 +2414,6 @@ impl ::core::fmt::Debug for ContinuumNavigationTransitionInfo {
 }
 unsafe impl ::windows::core::RuntimeType for ContinuumNavigationTransitionInfo {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.ContinuumNavigationTransitionInfo;{4be1dbad-8ba6-4004-8438-8a9017978543})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2616,11 +2519,6 @@ impl CubicEase {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for CubicEase {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for CubicEase {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2634,7 +2532,6 @@ impl ::core::fmt::Debug for CubicEase {
 }
 unsafe impl ::windows::core::RuntimeType for CubicEase {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.CubicEase;{1b94fc76-dad7-4354-b1a2-7969fbf6a70d})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2753,11 +2650,6 @@ impl DirectConnectedAnimationConfiguration {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for DirectConnectedAnimationConfiguration {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DirectConnectedAnimationConfiguration {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2771,7 +2663,6 @@ impl ::core::fmt::Debug for DirectConnectedAnimationConfiguration {
 }
 unsafe impl ::windows::core::RuntimeType for DirectConnectedAnimationConfiguration {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.DirectConnectedAnimationConfiguration;{ee5d736f-5738-5d86-b770-151948cf365e})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2857,11 +2748,6 @@ impl DiscreteColorKeyFrame {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for DiscreteColorKeyFrame {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DiscreteColorKeyFrame {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2875,7 +2761,6 @@ impl ::core::fmt::Debug for DiscreteColorKeyFrame {
 }
 unsafe impl ::windows::core::RuntimeType for DiscreteColorKeyFrame {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.DiscreteColorKeyFrame;{230c08f4-e062-4cb1-8e2a-14093d73ed8c})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2981,11 +2866,6 @@ impl DiscreteDoubleKeyFrame {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for DiscreteDoubleKeyFrame {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DiscreteDoubleKeyFrame {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2999,7 +2879,6 @@ impl ::core::fmt::Debug for DiscreteDoubleKeyFrame {
 }
 unsafe impl ::windows::core::RuntimeType for DiscreteDoubleKeyFrame {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.DiscreteDoubleKeyFrame;{f5f51f3a-ad11-49ce-8e1c-08fdf1447446})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3105,11 +2984,6 @@ impl DiscreteObjectKeyFrame {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for DiscreteObjectKeyFrame {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DiscreteObjectKeyFrame {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3123,7 +2997,6 @@ impl ::core::fmt::Debug for DiscreteObjectKeyFrame {
 }
 unsafe impl ::windows::core::RuntimeType for DiscreteObjectKeyFrame {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.DiscreteObjectKeyFrame;{c7dcde89-f12d-4a9c-8199-e7a9ece3a473})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3229,11 +3102,6 @@ impl DiscretePointKeyFrame {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for DiscretePointKeyFrame {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DiscretePointKeyFrame {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3247,7 +3115,6 @@ impl ::core::fmt::Debug for DiscretePointKeyFrame {
 }
 unsafe impl ::windows::core::RuntimeType for DiscretePointKeyFrame {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.DiscretePointKeyFrame;{e0a9070d-4c42-4a90-983a-75f5a83a2fbe})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3464,11 +3331,6 @@ impl DoubleAnimation {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for DoubleAnimation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DoubleAnimation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3482,7 +3344,6 @@ impl ::core::fmt::Debug for DoubleAnimation {
 }
 unsafe impl ::windows::core::RuntimeType for DoubleAnimation {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.DoubleAnimation;{7e9f3d59-0f07-4bc9-977d-03763ff8154f})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3622,11 +3483,6 @@ impl DoubleAnimationUsingKeyFrames {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for DoubleAnimationUsingKeyFrames {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DoubleAnimationUsingKeyFrames {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3640,7 +3496,6 @@ impl ::core::fmt::Debug for DoubleAnimationUsingKeyFrames {
 }
 unsafe impl ::windows::core::RuntimeType for DoubleAnimationUsingKeyFrames {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.DoubleAnimationUsingKeyFrames;{4fee628f-bfee-4f75-83c2-a93b39488473})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3786,11 +3641,6 @@ impl DoubleKeyFrame {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for DoubleKeyFrame {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DoubleKeyFrame {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3804,7 +3654,6 @@ impl ::core::fmt::Debug for DoubleKeyFrame {
 }
 unsafe impl ::windows::core::RuntimeType for DoubleKeyFrame {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.DoubleKeyFrame;{674456fd-e81e-4f4e-b4ad-0acfed9ecd68})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3989,12 +3838,6 @@ impl DoubleKeyFrameCollection {
     }
 }
 #[cfg(feature = "Foundation_Collections")]
-impl ::core::clone::Clone for DoubleKeyFrameCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Foundation_Collections")]
 impl ::core::cmp::PartialEq for DoubleKeyFrameCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4011,7 +3854,6 @@ impl ::core::fmt::Debug for DoubleKeyFrameCollection {
 #[cfg(feature = "Foundation_Collections")]
 unsafe impl ::windows::core::RuntimeType for DoubleKeyFrameCollection {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.DoubleKeyFrameCollection;pinterface({913337e9-11a1-4345-a3a2-4e7f956e222d};rc(Windows.UI.Xaml.Media.Animation.DoubleKeyFrame;{674456fd-e81e-4f4e-b4ad-0acfed9ecd68})))");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4182,11 +4024,6 @@ impl DragItemThemeAnimation {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for DragItemThemeAnimation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DragItemThemeAnimation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4200,7 +4037,6 @@ impl ::core::fmt::Debug for DragItemThemeAnimation {
 }
 unsafe impl ::windows::core::RuntimeType for DragItemThemeAnimation {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.DragItemThemeAnimation;{0c7d5db5-7ed6-4949-b4e6-a78c9f4f978d})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4373,11 +4209,6 @@ impl DragOverThemeAnimation {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for DragOverThemeAnimation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DragOverThemeAnimation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4391,7 +4222,6 @@ impl ::core::fmt::Debug for DragOverThemeAnimation {
 }
 unsafe impl ::windows::core::RuntimeType for DragOverThemeAnimation {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.DragOverThemeAnimation;{72f762f7-7e51-4a6b-b937-dc4b4c1c5458})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4497,11 +4327,6 @@ impl DrillInNavigationTransitionInfo {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for DrillInNavigationTransitionInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DrillInNavigationTransitionInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4515,7 +4340,6 @@ impl ::core::fmt::Debug for DrillInNavigationTransitionInfo {
 }
 unsafe impl ::windows::core::RuntimeType for DrillInNavigationTransitionInfo {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.DrillInNavigationTransitionInfo;{3b86201a-45d3-463b-939e-c8595f439bcc})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4706,11 +4530,6 @@ impl DrillInThemeAnimation {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for DrillInThemeAnimation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DrillInThemeAnimation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4724,7 +4543,6 @@ impl ::core::fmt::Debug for DrillInThemeAnimation {
 }
 unsafe impl ::windows::core::RuntimeType for DrillInThemeAnimation {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.DrillInThemeAnimation;{b090b824-f1d2-41b8-87ba-78034126594c})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4915,11 +4733,6 @@ impl DrillOutThemeAnimation {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for DrillOutThemeAnimation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DrillOutThemeAnimation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4933,7 +4746,6 @@ impl ::core::fmt::Debug for DrillOutThemeAnimation {
 }
 unsafe impl ::windows::core::RuntimeType for DrillOutThemeAnimation {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.DrillOutThemeAnimation;{d890ccdf-06d3-4f7e-8e4a-4fb76e256139})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -5064,11 +4876,6 @@ impl DropTargetItemThemeAnimation {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for DropTargetItemThemeAnimation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DropTargetItemThemeAnimation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5082,7 +4889,6 @@ impl ::core::fmt::Debug for DropTargetItemThemeAnimation {
 }
 unsafe impl ::windows::core::RuntimeType for DropTargetItemThemeAnimation {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.DropTargetItemThemeAnimation;{1881c968-1824-462b-87e8-c357212b977b})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -5213,11 +5019,6 @@ impl EasingColorKeyFrame {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for EasingColorKeyFrame {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for EasingColorKeyFrame {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5231,7 +5032,6 @@ impl ::core::fmt::Debug for EasingColorKeyFrame {
 }
 unsafe impl ::windows::core::RuntimeType for EasingColorKeyFrame {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.EasingColorKeyFrame;{c733d630-f4b9-4934-9bdd-27ac5ed1cfd8})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -5362,11 +5162,6 @@ impl EasingDoubleKeyFrame {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for EasingDoubleKeyFrame {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for EasingDoubleKeyFrame {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5380,7 +5175,6 @@ impl ::core::fmt::Debug for EasingDoubleKeyFrame {
 }
 unsafe impl ::windows::core::RuntimeType for EasingDoubleKeyFrame {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.EasingDoubleKeyFrame;{965adb8d-9a54-4108-b4ff-b5a5212cb338})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -5512,11 +5306,6 @@ impl EasingFunctionBase {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for EasingFunctionBase {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for EasingFunctionBase {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5530,7 +5319,6 @@ impl ::core::fmt::Debug for EasingFunctionBase {
 }
 unsafe impl ::windows::core::RuntimeType for EasingFunctionBase {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.EasingFunctionBase;{c108383f-2c02-4151-8ecd-68ddaa3f0d9b})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -5626,6 +5414,7 @@ impl ::core::default::Default for EasingMode {
 }
 unsafe impl ::windows::core::Abi for EasingMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EasingMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5634,7 +5423,6 @@ impl ::core::fmt::Debug for EasingMode {
 }
 unsafe impl ::windows::core::RuntimeType for EasingMode {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Xaml.Media.Animation.EasingMode;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -5676,11 +5464,6 @@ impl EasingPointKeyFrame {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for EasingPointKeyFrame {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for EasingPointKeyFrame {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5694,7 +5477,6 @@ impl ::core::fmt::Debug for EasingPointKeyFrame {
 }
 unsafe impl ::windows::core::RuntimeType for EasingPointKeyFrame {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.EasingPointKeyFrame;{b3c91380-6868-4225-a70b-3981cc0b2947})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -5827,11 +5609,6 @@ impl EdgeUIThemeTransition {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for EdgeUIThemeTransition {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for EdgeUIThemeTransition {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5845,7 +5622,6 @@ impl ::core::fmt::Debug for EdgeUIThemeTransition {
 }
 unsafe impl ::windows::core::RuntimeType for EdgeUIThemeTransition {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.EdgeUIThemeTransition;{5c86c19b-49d7-19ec-cf19-83a73c6de75e})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -5996,11 +5772,6 @@ impl ElasticEase {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for ElasticEase {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ElasticEase {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6014,7 +5785,6 @@ impl ::core::fmt::Debug for ElasticEase {
 }
 unsafe impl ::windows::core::RuntimeType for ElasticEase {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.ElasticEase;{ef5ba58c-b0b6-4a6c-9ca8-fb4233f12459})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -6143,11 +5913,6 @@ impl EntranceNavigationTransitionInfo {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for EntranceNavigationTransitionInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for EntranceNavigationTransitionInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6161,7 +5926,6 @@ impl ::core::fmt::Debug for EntranceNavigationTransitionInfo {
 }
 unsafe impl ::windows::core::RuntimeType for EntranceNavigationTransitionInfo {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.EntranceNavigationTransitionInfo;{720a256b-1c8a-41ee-82ec-8a87c0cf47da})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -6332,11 +6096,6 @@ impl EntranceThemeTransition {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for EntranceThemeTransition {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for EntranceThemeTransition {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6350,7 +6109,6 @@ impl ::core::fmt::Debug for EntranceThemeTransition {
 }
 unsafe impl ::windows::core::RuntimeType for EntranceThemeTransition {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.EntranceThemeTransition;{07698c09-a8e3-419a-a01d-7410a0ae8ec8})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -6481,11 +6239,6 @@ impl ExponentialEase {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for ExponentialEase {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ExponentialEase {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6499,7 +6252,6 @@ impl ::core::fmt::Debug for ExponentialEase {
 }
 unsafe impl ::windows::core::RuntimeType for ExponentialEase {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.ExponentialEase;{7cb9e41d-f0bb-4bca-9da5-9ba3a11734c4})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -6630,11 +6382,6 @@ impl FadeInThemeAnimation {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for FadeInThemeAnimation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for FadeInThemeAnimation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6648,7 +6395,6 @@ impl ::core::fmt::Debug for FadeInThemeAnimation {
 }
 unsafe impl ::windows::core::RuntimeType for FadeInThemeAnimation {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.FadeInThemeAnimation;{6d4bc8f5-a918-4477-8078-554c68812ab8})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -6779,11 +6525,6 @@ impl FadeOutThemeAnimation {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for FadeOutThemeAnimation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for FadeOutThemeAnimation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6797,7 +6538,6 @@ impl ::core::fmt::Debug for FadeOutThemeAnimation {
 }
 unsafe impl ::windows::core::RuntimeType for FadeOutThemeAnimation {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.FadeOutThemeAnimation;{89276ba9-ffd4-45b6-9b9a-ced48951e712})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -6912,6 +6652,7 @@ impl ::core::default::Default for FillBehavior {
 }
 unsafe impl ::windows::core::Abi for FillBehavior {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FillBehavior {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6920,7 +6661,6 @@ impl ::core::fmt::Debug for FillBehavior {
 }
 unsafe impl ::windows::core::RuntimeType for FillBehavior {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Xaml.Media.Animation.FillBehavior;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -6963,11 +6703,6 @@ impl GravityConnectedAnimationConfiguration {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for GravityConnectedAnimationConfiguration {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for GravityConnectedAnimationConfiguration {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6981,7 +6716,6 @@ impl ::core::fmt::Debug for GravityConnectedAnimationConfiguration {
 }
 unsafe impl ::windows::core::RuntimeType for GravityConnectedAnimationConfiguration {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.GravityConnectedAnimationConfiguration;{c751a4b7-0459-5142-b891-aeaac1d41822})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -7058,6 +6792,11 @@ unsafe impl ::core::marker::Sync for GravityConnectedAnimationConfiguration {}
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAddDeleteThemeTransition(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAddDeleteThemeTransition {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAddDeleteThemeTransition {
     type Vtable = IAddDeleteThemeTransition_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xadec852e_4424_4dab_99c1_3a04e36a3c48);
@@ -7070,6 +6809,11 @@ pub struct IAddDeleteThemeTransition_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBackEase(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBackEase {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBackEase {
     type Vtable = IBackEase_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe47796e7_f805_4a8f_81c9_38e6472caa94);
@@ -7084,6 +6828,11 @@ pub struct IBackEase_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBackEaseStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBackEaseStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBackEaseStatics {
     type Vtable = IBackEaseStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x3c70a2ff_a0a0_4786_926c_22321f8f25b7);
@@ -7097,6 +6846,11 @@ pub struct IBackEaseStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBasicConnectedAnimationConfiguration(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBasicConnectedAnimationConfiguration {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBasicConnectedAnimationConfiguration {
     type Vtable = IBasicConnectedAnimationConfiguration_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe675f9b5_a4d6_5353_83e6_c89e7cf8d456);
@@ -7109,6 +6863,11 @@ pub struct IBasicConnectedAnimationConfiguration_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBasicConnectedAnimationConfigurationFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBasicConnectedAnimationConfigurationFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBasicConnectedAnimationConfigurationFactory {
     type Vtable = IBasicConnectedAnimationConfigurationFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x95e6844a_4377_503c_bee2_11dfcd5570e6);
@@ -7122,6 +6881,11 @@ pub struct IBasicConnectedAnimationConfigurationFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBeginStoryboard(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBeginStoryboard {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBeginStoryboard {
     type Vtable = IBeginStoryboard_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x64189fcd_49ec_4e52_a6f6_55324c921053);
@@ -7136,6 +6900,11 @@ pub struct IBeginStoryboard_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBeginStoryboardStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBeginStoryboardStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBeginStoryboardStatics {
     type Vtable = IBeginStoryboardStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x12cff18c_aa91_4c4a_b82f_df34fc57f94b);
@@ -7149,6 +6918,11 @@ pub struct IBeginStoryboardStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBounceEase(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBounceEase {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBounceEase {
     type Vtable = IBounceEase_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x2bf1464e_fc71_47ed_85a1_3ba9577718b4);
@@ -7165,6 +6939,11 @@ pub struct IBounceEase_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBounceEaseStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBounceEaseStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBounceEaseStatics {
     type Vtable = IBounceEaseStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc0701da2_4f73_41c9_b2cb_2ea3105107ff);
@@ -7179,6 +6958,11 @@ pub struct IBounceEaseStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICircleEase(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICircleEase {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICircleEase {
     type Vtable = ICircleEase_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x53a3bdb2_9177_4e6e_a043_5082d889ab1f);
@@ -7191,6 +6975,11 @@ pub struct ICircleEase_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IColorAnimation(::windows::core::IUnknown);
+impl ::core::clone::Clone for IColorAnimation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IColorAnimation {
     type Vtable = IColorAnimation_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb8ae8a15_0f63_4694_9467_bdafac1253ea);
@@ -7231,6 +7020,11 @@ pub struct IColorAnimation_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IColorAnimationStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IColorAnimationStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IColorAnimationStatics {
     type Vtable = IColorAnimationStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x55eaf6e2_87e3_4f48_958f_855b2f9ea9ec);
@@ -7248,6 +7042,11 @@ pub struct IColorAnimationStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IColorAnimationUsingKeyFrames(::windows::core::IUnknown);
+impl ::core::clone::Clone for IColorAnimationUsingKeyFrames {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IColorAnimationUsingKeyFrames {
     type Vtable = IColorAnimationUsingKeyFrames_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf5c82640_13c3_42aa_9ae2_7e6b51c92f95);
@@ -7266,6 +7065,11 @@ pub struct IColorAnimationUsingKeyFrames_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IColorAnimationUsingKeyFramesStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IColorAnimationUsingKeyFramesStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IColorAnimationUsingKeyFramesStatics {
     type Vtable = IColorAnimationUsingKeyFramesStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb4723cdc_96e9_48f9_8d92_9b648b2f1cc6);
@@ -7279,6 +7083,11 @@ pub struct IColorAnimationUsingKeyFramesStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IColorKeyFrame(::windows::core::IUnknown);
+impl ::core::clone::Clone for IColorKeyFrame {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IColorKeyFrame {
     type Vtable = IColorKeyFrame_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb51d82d9_0910_4589_a284_b0c9205858e9);
@@ -7301,6 +7110,11 @@ pub struct IColorKeyFrame_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IColorKeyFrameFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IColorKeyFrameFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IColorKeyFrameFactory {
     type Vtable = IColorKeyFrameFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x769bd88a_9cfb_4a7d_96c4_a1e7de6fdb4b);
@@ -7314,6 +7128,11 @@ pub struct IColorKeyFrameFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IColorKeyFrameStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IColorKeyFrameStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IColorKeyFrameStatics {
     type Vtable = IColorKeyFrameStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc043ae99_210c_430f_9da5_df1082692055);
@@ -7328,6 +7147,11 @@ pub struct IColorKeyFrameStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICommonNavigationTransitionInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICommonNavigationTransitionInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICommonNavigationTransitionInfo {
     type Vtable = ICommonNavigationTransitionInfo_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x50345692_a555_4624_a361_0a91c1706473);
@@ -7342,6 +7166,11 @@ pub struct ICommonNavigationTransitionInfo_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICommonNavigationTransitionInfoStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICommonNavigationTransitionInfoStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICommonNavigationTransitionInfoStatics {
     type Vtable = ICommonNavigationTransitionInfoStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1e3efe33_50be_4443_883c_e5627201c2e5);
@@ -7358,6 +7187,11 @@ pub struct ICommonNavigationTransitionInfoStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IConnectedAnimation(::windows::core::IUnknown);
+impl ::core::clone::Clone for IConnectedAnimation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IConnectedAnimation {
     type Vtable = IConnectedAnimation_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x3518628c_f387_4c25_ac98_44e86c3cadf0);
@@ -7380,6 +7214,11 @@ pub struct IConnectedAnimation_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IConnectedAnimation2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IConnectedAnimation2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IConnectedAnimation2 {
     type Vtable = IConnectedAnimation2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x5d2f8e5c_584b_4ddd_b668_973891431459);
@@ -7402,6 +7241,11 @@ pub struct IConnectedAnimation2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IConnectedAnimation3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IConnectedAnimation3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IConnectedAnimation3 {
     type Vtable = IConnectedAnimation3_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x6e3040c6_0430_59c0_a80c_cceed2e778dd);
@@ -7416,6 +7260,11 @@ pub struct IConnectedAnimation3_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IConnectedAnimationConfiguration(::windows::core::IUnknown);
+impl ::core::clone::Clone for IConnectedAnimationConfiguration {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IConnectedAnimationConfiguration {
     type Vtable = IConnectedAnimationConfiguration_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x00218aae_cd8c_5651_92a0_c1db95c03998);
@@ -7428,6 +7277,11 @@ pub struct IConnectedAnimationConfiguration_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IConnectedAnimationConfigurationFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IConnectedAnimationConfigurationFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IConnectedAnimationConfigurationFactory {
     type Vtable = IConnectedAnimationConfigurationFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x30f9b84b_dd7e_593e_bf75_e959dc0ec52a);
@@ -7440,6 +7294,11 @@ pub struct IConnectedAnimationConfigurationFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IConnectedAnimationService(::windows::core::IUnknown);
+impl ::core::clone::Clone for IConnectedAnimationService {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IConnectedAnimationService {
     type Vtable = IConnectedAnimationService_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1c6875c9_19bb_4d47_b9aa_66c802dcb9ff);
@@ -7470,6 +7329,11 @@ pub struct IConnectedAnimationService_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IConnectedAnimationServiceStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IConnectedAnimationServiceStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IConnectedAnimationServiceStatics {
     type Vtable = IConnectedAnimationServiceStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc7078ea5_d688_40e8_8f90_96a6279273d2);
@@ -7483,6 +7347,11 @@ pub struct IConnectedAnimationServiceStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IContentThemeTransition(::windows::core::IUnknown);
+impl ::core::clone::Clone for IContentThemeTransition {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IContentThemeTransition {
     type Vtable = IContentThemeTransition_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf66fc5c3_5915_437d_8e3b_adf8e7f0ab57);
@@ -7499,6 +7368,11 @@ pub struct IContentThemeTransition_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IContentThemeTransitionStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IContentThemeTransitionStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IContentThemeTransitionStatics {
     type Vtable = IContentThemeTransitionStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x0e8ee385_9a42_4459_afa9_337dc41e1587);
@@ -7513,6 +7387,11 @@ pub struct IContentThemeTransitionStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IContinuumNavigationTransitionInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IContinuumNavigationTransitionInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IContinuumNavigationTransitionInfo {
     type Vtable = IContinuumNavigationTransitionInfo_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x4be1dbad_8ba6_4004_8438_8a9017978543);
@@ -7527,6 +7406,11 @@ pub struct IContinuumNavigationTransitionInfo_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IContinuumNavigationTransitionInfoStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IContinuumNavigationTransitionInfoStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IContinuumNavigationTransitionInfoStatics {
     type Vtable = IContinuumNavigationTransitionInfoStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x3e25dd53_b18f_4bf1_b3bc_92f516f29903);
@@ -7555,6 +7439,11 @@ pub struct IContinuumNavigationTransitionInfoStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICubicEase(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICubicEase {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICubicEase {
     type Vtable = ICubicEase_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1b94fc76_dad7_4354_b1a2_7969fbf6a70d);
@@ -7567,6 +7456,11 @@ pub struct ICubicEase_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDirectConnectedAnimationConfiguration(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectConnectedAnimationConfiguration {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDirectConnectedAnimationConfiguration {
     type Vtable = IDirectConnectedAnimationConfiguration_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xee5d736f_5738_5d86_b770_151948cf365e);
@@ -7579,6 +7473,11 @@ pub struct IDirectConnectedAnimationConfiguration_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDirectConnectedAnimationConfigurationFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectConnectedAnimationConfigurationFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDirectConnectedAnimationConfigurationFactory {
     type Vtable = IDirectConnectedAnimationConfigurationFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x059263e9_d2b3_5a77_9cf4_e26d8b542608);
@@ -7592,6 +7491,11 @@ pub struct IDirectConnectedAnimationConfigurationFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDiscreteColorKeyFrame(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDiscreteColorKeyFrame {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDiscreteColorKeyFrame {
     type Vtable = IDiscreteColorKeyFrame_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x230c08f4_e062_4cb1_8e2a_14093d73ed8c);
@@ -7604,6 +7508,11 @@ pub struct IDiscreteColorKeyFrame_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDiscreteDoubleKeyFrame(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDiscreteDoubleKeyFrame {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDiscreteDoubleKeyFrame {
     type Vtable = IDiscreteDoubleKeyFrame_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf5f51f3a_ad11_49ce_8e1c_08fdf1447446);
@@ -7616,6 +7525,11 @@ pub struct IDiscreteDoubleKeyFrame_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDiscreteObjectKeyFrame(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDiscreteObjectKeyFrame {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDiscreteObjectKeyFrame {
     type Vtable = IDiscreteObjectKeyFrame_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc7dcde89_f12d_4a9c_8199_e7a9ece3a473);
@@ -7628,6 +7542,11 @@ pub struct IDiscreteObjectKeyFrame_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDiscretePointKeyFrame(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDiscretePointKeyFrame {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDiscretePointKeyFrame {
     type Vtable = IDiscretePointKeyFrame_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe0a9070d_4c42_4a90_983a_75f5a83a2fbe);
@@ -7640,6 +7559,11 @@ pub struct IDiscretePointKeyFrame_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDoubleAnimation(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDoubleAnimation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDoubleAnimation {
     type Vtable = IDoubleAnimation_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x7e9f3d59_0f07_4bc9_977d_03763ff8154f);
@@ -7680,6 +7604,11 @@ pub struct IDoubleAnimation_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDoubleAnimationStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDoubleAnimationStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDoubleAnimationStatics {
     type Vtable = IDoubleAnimationStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe27a935d_f111_43b7_b824_832b58d7786b);
@@ -7697,6 +7626,11 @@ pub struct IDoubleAnimationStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDoubleAnimationUsingKeyFrames(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDoubleAnimationUsingKeyFrames {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDoubleAnimationUsingKeyFrames {
     type Vtable = IDoubleAnimationUsingKeyFrames_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x4fee628f_bfee_4f75_83c2_a93b39488473);
@@ -7715,6 +7649,11 @@ pub struct IDoubleAnimationUsingKeyFrames_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDoubleAnimationUsingKeyFramesStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDoubleAnimationUsingKeyFramesStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDoubleAnimationUsingKeyFramesStatics {
     type Vtable = IDoubleAnimationUsingKeyFramesStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x109bf2f6_c60f_49aa_abf6_f696d492116b);
@@ -7728,6 +7667,11 @@ pub struct IDoubleAnimationUsingKeyFramesStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDoubleKeyFrame(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDoubleKeyFrame {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDoubleKeyFrame {
     type Vtable = IDoubleKeyFrame_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x674456fd_e81e_4f4e_b4ad_0acfed9ecd68);
@@ -7750,6 +7694,11 @@ pub struct IDoubleKeyFrame_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDoubleKeyFrameFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDoubleKeyFrameFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDoubleKeyFrameFactory {
     type Vtable = IDoubleKeyFrameFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xac97dec3_7538_40b9_b152_696f7fbf4722);
@@ -7763,6 +7712,11 @@ pub struct IDoubleKeyFrameFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDoubleKeyFrameStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDoubleKeyFrameStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDoubleKeyFrameStatics {
     type Vtable = IDoubleKeyFrameStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x324641b0_7d37_427a_adeb_43f38bb61a4d);
@@ -7777,6 +7731,11 @@ pub struct IDoubleKeyFrameStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDragItemThemeAnimation(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDragItemThemeAnimation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDragItemThemeAnimation {
     type Vtable = IDragItemThemeAnimation_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x0c7d5db5_7ed6_4949_b4e6_a78c9f4f978d);
@@ -7791,6 +7750,11 @@ pub struct IDragItemThemeAnimation_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDragItemThemeAnimationStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDragItemThemeAnimationStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDragItemThemeAnimationStatics {
     type Vtable = IDragItemThemeAnimationStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x6218b9f5_013a_4fb1_86fc_92bc4e8d0241);
@@ -7804,6 +7768,11 @@ pub struct IDragItemThemeAnimationStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDragOverThemeAnimation(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDragOverThemeAnimation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDragOverThemeAnimation {
     type Vtable = IDragOverThemeAnimation_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x72f762f7_7e51_4a6b_b937_dc4b4c1c5458);
@@ -7828,6 +7797,11 @@ pub struct IDragOverThemeAnimation_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDragOverThemeAnimationStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDragOverThemeAnimationStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDragOverThemeAnimationStatics {
     type Vtable = IDragOverThemeAnimationStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x146ffe57_3c9d_41d9_a5ff_8d7239516810);
@@ -7843,6 +7817,11 @@ pub struct IDragOverThemeAnimationStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDrillInNavigationTransitionInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDrillInNavigationTransitionInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDrillInNavigationTransitionInfo {
     type Vtable = IDrillInNavigationTransitionInfo_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x3b86201a_45d3_463b_939e_c8595f439bcc);
@@ -7855,6 +7834,11 @@ pub struct IDrillInNavigationTransitionInfo_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDrillInThemeAnimation(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDrillInThemeAnimation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDrillInThemeAnimation {
     type Vtable = IDrillInThemeAnimation_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb090b824_f1d2_41b8_87ba_78034126594c);
@@ -7875,6 +7859,11 @@ pub struct IDrillInThemeAnimation_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDrillInThemeAnimationStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDrillInThemeAnimationStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDrillInThemeAnimationStatics {
     type Vtable = IDrillInThemeAnimationStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc61fe488_a17a_4b11_b53b_a4f1a07d4ba9);
@@ -7891,6 +7880,11 @@ pub struct IDrillInThemeAnimationStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDrillOutThemeAnimation(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDrillOutThemeAnimation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDrillOutThemeAnimation {
     type Vtable = IDrillOutThemeAnimation_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd890ccdf_06d3_4f7e_8e4a_4fb76e256139);
@@ -7911,6 +7905,11 @@ pub struct IDrillOutThemeAnimation_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDrillOutThemeAnimationStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDrillOutThemeAnimationStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDrillOutThemeAnimationStatics {
     type Vtable = IDrillOutThemeAnimationStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xbeb5db9b_2617_4888_80dd_72fa7bb6fac3);
@@ -7927,6 +7926,11 @@ pub struct IDrillOutThemeAnimationStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDropTargetItemThemeAnimation(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDropTargetItemThemeAnimation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDropTargetItemThemeAnimation {
     type Vtable = IDropTargetItemThemeAnimation_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1881c968_1824_462b_87e8_c357212b977b);
@@ -7941,6 +7945,11 @@ pub struct IDropTargetItemThemeAnimation_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDropTargetItemThemeAnimationStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDropTargetItemThemeAnimationStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDropTargetItemThemeAnimationStatics {
     type Vtable = IDropTargetItemThemeAnimationStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xae80f486_2e56_4513_bf18_d77470164ae5);
@@ -7954,6 +7963,11 @@ pub struct IDropTargetItemThemeAnimationStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IEasingColorKeyFrame(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEasingColorKeyFrame {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IEasingColorKeyFrame {
     type Vtable = IEasingColorKeyFrame_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc733d630_f4b9_4934_9bdd_27ac5ed1cfd8);
@@ -7968,6 +7982,11 @@ pub struct IEasingColorKeyFrame_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IEasingColorKeyFrameStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEasingColorKeyFrameStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IEasingColorKeyFrameStatics {
     type Vtable = IEasingColorKeyFrameStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x6f3837fc_8e3d_4522_9b0f_003db8609851);
@@ -7981,6 +8000,11 @@ pub struct IEasingColorKeyFrameStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IEasingDoubleKeyFrame(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEasingDoubleKeyFrame {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IEasingDoubleKeyFrame {
     type Vtable = IEasingDoubleKeyFrame_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x965adb8d_9a54_4108_b4ff_b5a5212cb338);
@@ -7995,6 +8019,11 @@ pub struct IEasingDoubleKeyFrame_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IEasingDoubleKeyFrameStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEasingDoubleKeyFrameStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IEasingDoubleKeyFrameStatics {
     type Vtable = IEasingDoubleKeyFrameStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc8d3d845_dbae_4e5b_8b84_d9537398e5b1);
@@ -8008,6 +8037,11 @@ pub struct IEasingDoubleKeyFrameStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IEasingFunctionBase(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEasingFunctionBase {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IEasingFunctionBase {
     type Vtable = IEasingFunctionBase_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc108383f_2c02_4151_8ecd_68ddaa3f0d9b);
@@ -8023,6 +8057,11 @@ pub struct IEasingFunctionBase_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IEasingFunctionBaseFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEasingFunctionBaseFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IEasingFunctionBaseFactory {
     type Vtable = IEasingFunctionBaseFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1830fe6a_f01b_43e0_b61f_b452a1c66fd2);
@@ -8035,6 +8074,11 @@ pub struct IEasingFunctionBaseFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IEasingFunctionBaseStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEasingFunctionBaseStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IEasingFunctionBaseStatics {
     type Vtable = IEasingFunctionBaseStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x2a5031aa_2c50_4a1d_bb04_d75e07b71548);
@@ -8048,6 +8092,11 @@ pub struct IEasingFunctionBaseStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IEasingPointKeyFrame(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEasingPointKeyFrame {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IEasingPointKeyFrame {
     type Vtable = IEasingPointKeyFrame_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb3c91380_6868_4225_a70b_3981cc0b2947);
@@ -8062,6 +8111,11 @@ pub struct IEasingPointKeyFrame_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IEasingPointKeyFrameStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEasingPointKeyFrameStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IEasingPointKeyFrameStatics {
     type Vtable = IEasingPointKeyFrameStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe22dbfc4_080c_402c_a6b5_f48d0a98116b);
@@ -8075,6 +8129,11 @@ pub struct IEasingPointKeyFrameStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IEdgeUIThemeTransition(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEdgeUIThemeTransition {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IEdgeUIThemeTransition {
     type Vtable = IEdgeUIThemeTransition_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x5c86c19b_49d7_19ec_cf19_83a73c6de75e);
@@ -8095,6 +8154,11 @@ pub struct IEdgeUIThemeTransition_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IEdgeUIThemeTransitionStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEdgeUIThemeTransitionStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IEdgeUIThemeTransitionStatics {
     type Vtable = IEdgeUIThemeTransitionStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x16a2b13b_4705_302b_27c6_2aac92f645ac);
@@ -8108,6 +8172,11 @@ pub struct IEdgeUIThemeTransitionStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IElasticEase(::windows::core::IUnknown);
+impl ::core::clone::Clone for IElasticEase {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IElasticEase {
     type Vtable = IElasticEase_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xef5ba58c_b0b6_4a6c_9ca8_fb4233f12459);
@@ -8124,6 +8193,11 @@ pub struct IElasticEase_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IElasticEaseStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IElasticEaseStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IElasticEaseStatics {
     type Vtable = IElasticEaseStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa9f566ec_fe9c_4b2b_8e52_bb785d562185);
@@ -8138,6 +8212,11 @@ pub struct IElasticEaseStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IEntranceNavigationTransitionInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEntranceNavigationTransitionInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IEntranceNavigationTransitionInfo {
     type Vtable = IEntranceNavigationTransitionInfo_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x720a256b_1c8a_41ee_82ec_8a87c0cf47da);
@@ -8150,6 +8229,11 @@ pub struct IEntranceNavigationTransitionInfo_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IEntranceNavigationTransitionInfoStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEntranceNavigationTransitionInfoStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IEntranceNavigationTransitionInfoStatics {
     type Vtable = IEntranceNavigationTransitionInfoStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf948c27a_40c9_469f_8f33_bf45c8811f21);
@@ -8165,6 +8249,11 @@ pub struct IEntranceNavigationTransitionInfoStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IEntranceThemeTransition(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEntranceThemeTransition {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IEntranceThemeTransition {
     type Vtable = IEntranceThemeTransition_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x07698c09_a8e3_419a_a01d_7410a0ae8ec8);
@@ -8183,6 +8272,11 @@ pub struct IEntranceThemeTransition_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IEntranceThemeTransitionStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEntranceThemeTransitionStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IEntranceThemeTransitionStatics {
     type Vtable = IEntranceThemeTransitionStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x37cc0577_ff98_4aed_b86e_5ec23702f877);
@@ -8198,6 +8292,11 @@ pub struct IEntranceThemeTransitionStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IExponentialEase(::windows::core::IUnknown);
+impl ::core::clone::Clone for IExponentialEase {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IExponentialEase {
     type Vtable = IExponentialEase_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x7cb9e41d_f0bb_4bca_9da5_9ba3a11734c4);
@@ -8212,6 +8311,11 @@ pub struct IExponentialEase_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IExponentialEaseStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IExponentialEaseStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IExponentialEaseStatics {
     type Vtable = IExponentialEaseStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf37ee7e3_a761_4352_9ad6_70794567581a);
@@ -8225,6 +8329,11 @@ pub struct IExponentialEaseStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IFadeInThemeAnimation(::windows::core::IUnknown);
+impl ::core::clone::Clone for IFadeInThemeAnimation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IFadeInThemeAnimation {
     type Vtable = IFadeInThemeAnimation_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x6d4bc8f5_a918_4477_8078_554c68812ab8);
@@ -8239,6 +8348,11 @@ pub struct IFadeInThemeAnimation_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IFadeInThemeAnimationStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IFadeInThemeAnimationStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IFadeInThemeAnimationStatics {
     type Vtable = IFadeInThemeAnimationStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x7f0117e1_bea9_4923_b23a_0ddf4d7b8737);
@@ -8252,6 +8366,11 @@ pub struct IFadeInThemeAnimationStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IFadeOutThemeAnimation(::windows::core::IUnknown);
+impl ::core::clone::Clone for IFadeOutThemeAnimation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IFadeOutThemeAnimation {
     type Vtable = IFadeOutThemeAnimation_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x89276ba9_ffd4_45b6_9b9a_ced48951e712);
@@ -8266,6 +8385,11 @@ pub struct IFadeOutThemeAnimation_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IFadeOutThemeAnimationStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IFadeOutThemeAnimationStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IFadeOutThemeAnimationStatics {
     type Vtable = IFadeOutThemeAnimationStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xfe17a81a_4168_4f68_a28c_e5dd98cf680f);
@@ -8279,6 +8403,11 @@ pub struct IFadeOutThemeAnimationStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGravityConnectedAnimationConfiguration(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGravityConnectedAnimationConfiguration {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGravityConnectedAnimationConfiguration {
     type Vtable = IGravityConnectedAnimationConfiguration_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc751a4b7_0459_5142_b891_aeaac1d41822);
@@ -8291,6 +8420,11 @@ pub struct IGravityConnectedAnimationConfiguration_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGravityConnectedAnimationConfiguration2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGravityConnectedAnimationConfiguration2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGravityConnectedAnimationConfiguration2 {
     type Vtable = IGravityConnectedAnimationConfiguration2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x62333add_aed4_5fed_95ff_d128acce8be4);
@@ -8305,6 +8439,11 @@ pub struct IGravityConnectedAnimationConfiguration2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGravityConnectedAnimationConfigurationFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGravityConnectedAnimationConfigurationFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGravityConnectedAnimationConfigurationFactory {
     type Vtable = IGravityConnectedAnimationConfigurationFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe822c41f_3656_5090_92f5_c217eaacb682);
@@ -8318,6 +8457,11 @@ pub struct IGravityConnectedAnimationConfigurationFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IKeySpline(::windows::core::IUnknown);
+impl ::core::clone::Clone for IKeySpline {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IKeySpline {
     type Vtable = IKeySpline_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x77a163bb_d5ca_4a32_ba0b_7dff988e58a0);
@@ -8346,6 +8490,11 @@ pub struct IKeySpline_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IKeyTimeHelper(::windows::core::IUnknown);
+impl ::core::clone::Clone for IKeyTimeHelper {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IKeyTimeHelper {
     type Vtable = IKeyTimeHelper_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x3643e480_4823_466a_abe5_5e79c8ed77ed);
@@ -8358,6 +8507,11 @@ pub struct IKeyTimeHelper_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IKeyTimeHelperStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IKeyTimeHelperStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IKeyTimeHelperStatics {
     type Vtable = IKeyTimeHelperStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x7fa2612c_22a9_45e9_9af7_c7416efff7a5);
@@ -8374,6 +8528,11 @@ pub struct IKeyTimeHelperStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ILinearColorKeyFrame(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILinearColorKeyFrame {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ILinearColorKeyFrame {
     type Vtable = ILinearColorKeyFrame_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x66fdb6ef_ac81_4611_b1d2_61f545983f03);
@@ -8386,6 +8545,11 @@ pub struct ILinearColorKeyFrame_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ILinearDoubleKeyFrame(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILinearDoubleKeyFrame {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ILinearDoubleKeyFrame {
     type Vtable = ILinearDoubleKeyFrame_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x8efdf265_9a7b_431d_8f0c_14c56b5ea4d9);
@@ -8398,6 +8562,11 @@ pub struct ILinearDoubleKeyFrame_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ILinearPointKeyFrame(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILinearPointKeyFrame {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ILinearPointKeyFrame {
     type Vtable = ILinearPointKeyFrame_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe7c9b8ef_af24_49ee_84f1_a86600a4e319);
@@ -8410,6 +8579,11 @@ pub struct ILinearPointKeyFrame_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct INavigationThemeTransition(::windows::core::IUnknown);
+impl ::core::clone::Clone for INavigationThemeTransition {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for INavigationThemeTransition {
     type Vtable = INavigationThemeTransition_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x8833848c_4eb7_41f2_8799_9eef0a213b73);
@@ -8424,6 +8598,11 @@ pub struct INavigationThemeTransition_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct INavigationThemeTransitionStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for INavigationThemeTransitionStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for INavigationThemeTransitionStatics {
     type Vtable = INavigationThemeTransitionStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xea2f06e0_5e60_4f8e_bcaf_431487a294ab);
@@ -8437,6 +8616,11 @@ pub struct INavigationThemeTransitionStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct INavigationTransitionInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for INavigationTransitionInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for INavigationTransitionInfo {
     type Vtable = INavigationTransitionInfo_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa9b05091_ae4a_4372_8625_21b7a8b98ca4);
@@ -8449,6 +8633,11 @@ pub struct INavigationTransitionInfo_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct INavigationTransitionInfoFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for INavigationTransitionInfoFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for INavigationTransitionInfoFactory {
     type Vtable = INavigationTransitionInfoFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xedf4f8d5_af63_4fab_9d4a_87927f82dd6b);
@@ -8462,6 +8651,11 @@ pub struct INavigationTransitionInfoFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct INavigationTransitionInfoOverrides(::windows::core::IUnknown);
+impl ::core::clone::Clone for INavigationTransitionInfoOverrides {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for INavigationTransitionInfoOverrides {
     type Vtable = INavigationTransitionInfoOverrides_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd9517e6a_a9d0_4bf7_9db0_4633a69daff2);
@@ -8476,6 +8670,11 @@ pub struct INavigationTransitionInfoOverrides_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IObjectAnimationUsingKeyFrames(::windows::core::IUnknown);
+impl ::core::clone::Clone for IObjectAnimationUsingKeyFrames {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IObjectAnimationUsingKeyFrames {
     type Vtable = IObjectAnimationUsingKeyFrames_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x334a2d92_b74a_4c64_b9a6_58bcfa314f22);
@@ -8494,6 +8693,11 @@ pub struct IObjectAnimationUsingKeyFrames_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IObjectAnimationUsingKeyFramesStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IObjectAnimationUsingKeyFramesStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IObjectAnimationUsingKeyFramesStatics {
     type Vtable = IObjectAnimationUsingKeyFramesStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xeb736182_6af1_49a3_97b6_783ed97400fe);
@@ -8507,6 +8711,11 @@ pub struct IObjectAnimationUsingKeyFramesStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IObjectKeyFrame(::windows::core::IUnknown);
+impl ::core::clone::Clone for IObjectKeyFrame {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IObjectKeyFrame {
     type Vtable = IObjectKeyFrame_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9852a851_8593_48ee_a6a4_d5d4720f029a);
@@ -8529,6 +8738,11 @@ pub struct IObjectKeyFrame_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IObjectKeyFrameFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IObjectKeyFrameFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IObjectKeyFrameFactory {
     type Vtable = IObjectKeyFrameFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1626143e_3e6d_44d8_9b9a_04aea70f8492);
@@ -8542,6 +8756,11 @@ pub struct IObjectKeyFrameFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IObjectKeyFrameStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IObjectKeyFrameStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IObjectKeyFrameStatics {
     type Vtable = IObjectKeyFrameStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x2cd6ab00_5319_4286_8eed_4e755ea0cf9c);
@@ -8556,6 +8775,11 @@ pub struct IObjectKeyFrameStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPaneThemeTransition(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPaneThemeTransition {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPaneThemeTransition {
     type Vtable = IPaneThemeTransition_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x4708eb8e_4bfc_ee46_d4f9_708def3fbb2b);
@@ -8576,6 +8800,11 @@ pub struct IPaneThemeTransition_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPaneThemeTransitionStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPaneThemeTransitionStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPaneThemeTransitionStatics {
     type Vtable = IPaneThemeTransitionStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x316b382f_4be4_1797_b45c_cd900bbe0caa);
@@ -8589,6 +8818,11 @@ pub struct IPaneThemeTransitionStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPointAnimation(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPointAnimation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPointAnimation {
     type Vtable = IPointAnimation_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x30f04312_7726_4f88_b8e2_2fa54518963b);
@@ -8629,6 +8863,11 @@ pub struct IPointAnimation_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPointAnimationStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPointAnimationStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPointAnimationStatics {
     type Vtable = IPointAnimationStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x2f99b356_e737_408b_a0fd_327826d32255);
@@ -8646,6 +8885,11 @@ pub struct IPointAnimationStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPointAnimationUsingKeyFrames(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPointAnimationUsingKeyFrames {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPointAnimationUsingKeyFrames {
     type Vtable = IPointAnimationUsingKeyFrames_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9b944f72_446a_41d0_a129_41a620f4595d);
@@ -8664,6 +8908,11 @@ pub struct IPointAnimationUsingKeyFrames_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPointAnimationUsingKeyFramesStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPointAnimationUsingKeyFramesStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPointAnimationUsingKeyFramesStatics {
     type Vtable = IPointAnimationUsingKeyFramesStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x5f454c87_2390_46ea_baa7_762f4bc30d04);
@@ -8677,6 +8926,11 @@ pub struct IPointAnimationUsingKeyFramesStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPointKeyFrame(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPointKeyFrame {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPointKeyFrame {
     type Vtable = IPointKeyFrame_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xfcc88d01_7f82_4dae_8026_7b7e086878b3);
@@ -8705,6 +8959,11 @@ pub struct IPointKeyFrame_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPointKeyFrameFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPointKeyFrameFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPointKeyFrameFactory {
     type Vtable = IPointKeyFrameFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xcb214bdf_426a_4392_8355_c2ae52852623);
@@ -8718,6 +8977,11 @@ pub struct IPointKeyFrameFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPointKeyFrameStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPointKeyFrameStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPointKeyFrameStatics {
     type Vtable = IPointKeyFrameStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x95cf1b27_7965_4bec_b9fb_fbe94b65518e);
@@ -8732,6 +8996,11 @@ pub struct IPointKeyFrameStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPointerDownThemeAnimation(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPointerDownThemeAnimation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPointerDownThemeAnimation {
     type Vtable = IPointerDownThemeAnimation_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb58e714e_c49d_4788_a233_0ae85d99dd5a);
@@ -8746,6 +9015,11 @@ pub struct IPointerDownThemeAnimation_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPointerDownThemeAnimationStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPointerDownThemeAnimationStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPointerDownThemeAnimationStatics {
     type Vtable = IPointerDownThemeAnimationStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x63a7cb7b_6d46_4494_b94a_e72f3b492a61);
@@ -8759,6 +9033,11 @@ pub struct IPointerDownThemeAnimationStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPointerUpThemeAnimation(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPointerUpThemeAnimation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPointerUpThemeAnimation {
     type Vtable = IPointerUpThemeAnimation_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe9e9d07d_6340_4828_ad12_690694b9910b);
@@ -8773,6 +9052,11 @@ pub struct IPointerUpThemeAnimation_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPointerUpThemeAnimationStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPointerUpThemeAnimationStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPointerUpThemeAnimationStatics {
     type Vtable = IPointerUpThemeAnimationStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x7c618f9c_7992_4139_8bfc_0883b9727a7e);
@@ -8786,6 +9070,11 @@ pub struct IPointerUpThemeAnimationStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPopInThemeAnimation(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPopInThemeAnimation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPopInThemeAnimation {
     type Vtable = IPopInThemeAnimation_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x196938c1_1c07_4c28_8847_f9f055b32855);
@@ -8804,6 +9093,11 @@ pub struct IPopInThemeAnimation_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPopInThemeAnimationStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPopInThemeAnimationStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPopInThemeAnimationStatics {
     type Vtable = IPopInThemeAnimationStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xefaa99d3_218a_4701_977f_f1bfae8ba649);
@@ -8819,6 +9113,11 @@ pub struct IPopInThemeAnimationStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPopOutThemeAnimation(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPopOutThemeAnimation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPopOutThemeAnimation {
     type Vtable = IPopOutThemeAnimation_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x4786ab49_0e48_4e81_a2e5_cc5aa19e48d3);
@@ -8833,6 +9132,11 @@ pub struct IPopOutThemeAnimation_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPopOutThemeAnimationStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPopOutThemeAnimationStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPopOutThemeAnimationStatics {
     type Vtable = IPopOutThemeAnimationStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1d492c09_03c1_4490_99dc_909feab357fb);
@@ -8846,6 +9150,11 @@ pub struct IPopOutThemeAnimationStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPopupThemeTransition(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPopupThemeTransition {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPopupThemeTransition {
     type Vtable = IPopupThemeTransition_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x47843552_4283_545e_c791_268dca22ce4b);
@@ -8862,6 +9171,11 @@ pub struct IPopupThemeTransition_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPopupThemeTransitionStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPopupThemeTransitionStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPopupThemeTransitionStatics {
     type Vtable = IPopupThemeTransitionStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe5a1640e_490d_1505_9f6b_8fafc044dec5);
@@ -8876,6 +9190,11 @@ pub struct IPopupThemeTransitionStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPowerEase(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPowerEase {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPowerEase {
     type Vtable = IPowerEase_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x69c80579_eedf_405b_8680_d9606880c937);
@@ -8890,6 +9209,11 @@ pub struct IPowerEase_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPowerEaseStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPowerEaseStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPowerEaseStatics {
     type Vtable = IPowerEaseStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa5955103_91a2_460c_9c41_d28f6a939bda);
@@ -8903,6 +9227,11 @@ pub struct IPowerEaseStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IQuadraticEase(::windows::core::IUnknown);
+impl ::core::clone::Clone for IQuadraticEase {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IQuadraticEase {
     type Vtable = IQuadraticEase_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe1510e91_ef6d_44f0_803d_68d16de0ddfc);
@@ -8915,6 +9244,11 @@ pub struct IQuadraticEase_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IQuarticEase(::windows::core::IUnknown);
+impl ::core::clone::Clone for IQuarticEase {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IQuarticEase {
     type Vtable = IQuarticEase_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe8698814_fe42_4a05_b5b8_081f41157815);
@@ -8927,6 +9261,11 @@ pub struct IQuarticEase_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IQuinticEase(::windows::core::IUnknown);
+impl ::core::clone::Clone for IQuinticEase {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IQuinticEase {
     type Vtable = IQuinticEase_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x92ee793b_3c49_4108_aa11_ab786603da21);
@@ -8939,6 +9278,11 @@ pub struct IQuinticEase_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IReorderThemeTransition(::windows::core::IUnknown);
+impl ::core::clone::Clone for IReorderThemeTransition {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IReorderThemeTransition {
     type Vtable = IReorderThemeTransition_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf2065c6c_d052_4ad1_8362_b71b36df7497);
@@ -8951,6 +9295,11 @@ pub struct IReorderThemeTransition_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IRepeatBehaviorHelper(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRepeatBehaviorHelper {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IRepeatBehaviorHelper {
     type Vtable = IRepeatBehaviorHelper_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x6863ab72_4997_47f9_87ad_37efb75993ea);
@@ -8963,6 +9312,11 @@ pub struct IRepeatBehaviorHelper_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IRepeatBehaviorHelperStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRepeatBehaviorHelperStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IRepeatBehaviorHelperStatics {
     type Vtable = IRepeatBehaviorHelperStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x7a795033_79f3_4dd9_b267_9cf50fb51f84);
@@ -8999,6 +9353,11 @@ pub struct IRepeatBehaviorHelperStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IRepositionThemeAnimation(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRepositionThemeAnimation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IRepositionThemeAnimation {
     type Vtable = IRepositionThemeAnimation_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xecda24e8_8945_4949_a1bf_62109965a7e9);
@@ -9017,6 +9376,11 @@ pub struct IRepositionThemeAnimation_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IRepositionThemeAnimationStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRepositionThemeAnimationStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IRepositionThemeAnimationStatics {
     type Vtable = IRepositionThemeAnimationStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x4d92b1b1_860b_4bf9_a59d_1eb1ccbe8fe0);
@@ -9032,6 +9396,11 @@ pub struct IRepositionThemeAnimationStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IRepositionThemeTransition(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRepositionThemeTransition {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IRepositionThemeTransition {
     type Vtable = IRepositionThemeTransition_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x88329b82_98f3_455a_ac53_2e7083b6e22c);
@@ -9044,6 +9413,11 @@ pub struct IRepositionThemeTransition_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IRepositionThemeTransition2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRepositionThemeTransition2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IRepositionThemeTransition2 {
     type Vtable = IRepositionThemeTransition2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xcebfe864_dbea_4404_8e6e_de55ada75239);
@@ -9058,6 +9432,11 @@ pub struct IRepositionThemeTransition2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IRepositionThemeTransitionStatics2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRepositionThemeTransitionStatics2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IRepositionThemeTransitionStatics2 {
     type Vtable = IRepositionThemeTransitionStatics2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9240e930_0a19_468b_8c2a_68fab4500027);
@@ -9071,6 +9450,11 @@ pub struct IRepositionThemeTransitionStatics2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISineEase(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISineEase {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISineEase {
     type Vtable = ISineEase_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa9382962_230b_49da_9e0d_664987892343);
@@ -9083,6 +9467,11 @@ pub struct ISineEase_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISlideNavigationTransitionInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISlideNavigationTransitionInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISlideNavigationTransitionInfo {
     type Vtable = ISlideNavigationTransitionInfo_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd6ac9d77_2e03_405f_80ed_e62beef3668f);
@@ -9095,6 +9484,11 @@ pub struct ISlideNavigationTransitionInfo_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISlideNavigationTransitionInfo2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISlideNavigationTransitionInfo2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISlideNavigationTransitionInfo2 {
     type Vtable = ISlideNavigationTransitionInfo2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x90e2d9c0_5c81_5001_8013_4fbfea4bf139);
@@ -9109,6 +9503,11 @@ pub struct ISlideNavigationTransitionInfo2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISlideNavigationTransitionInfoStatics2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISlideNavigationTransitionInfoStatics2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISlideNavigationTransitionInfoStatics2 {
     type Vtable = ISlideNavigationTransitionInfoStatics2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x8a861baa_981a_5ace_9f85_cb7fde648a67);
@@ -9122,6 +9521,11 @@ pub struct ISlideNavigationTransitionInfoStatics2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISplineColorKeyFrame(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISplineColorKeyFrame {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISplineColorKeyFrame {
     type Vtable = ISplineColorKeyFrame_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1a4a5941_1fe0_473a_8efe_4316d8c86229);
@@ -9136,6 +9540,11 @@ pub struct ISplineColorKeyFrame_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISplineColorKeyFrameStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISplineColorKeyFrameStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISplineColorKeyFrameStatics {
     type Vtable = ISplineColorKeyFrameStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x61d1d997_8589_4f2f_8fbb_7d03edc98dd3);
@@ -9149,6 +9558,11 @@ pub struct ISplineColorKeyFrameStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISplineDoubleKeyFrame(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISplineDoubleKeyFrame {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISplineDoubleKeyFrame {
     type Vtable = ISplineDoubleKeyFrame_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x00d72d38_6b2b_4843_838e_c8b115eec801);
@@ -9163,6 +9577,11 @@ pub struct ISplineDoubleKeyFrame_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISplineDoubleKeyFrameStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISplineDoubleKeyFrameStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISplineDoubleKeyFrameStatics {
     type Vtable = ISplineDoubleKeyFrameStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x060a8ffc_975f_4e4e_9ec7_13c5aee02062);
@@ -9176,6 +9595,11 @@ pub struct ISplineDoubleKeyFrameStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISplinePointKeyFrame(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISplinePointKeyFrame {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISplinePointKeyFrame {
     type Vtable = ISplinePointKeyFrame_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x0f19f306_7036_494f_bc3c_780df0cc524a);
@@ -9190,6 +9614,11 @@ pub struct ISplinePointKeyFrame_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISplinePointKeyFrameStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISplinePointKeyFrameStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISplinePointKeyFrameStatics {
     type Vtable = ISplinePointKeyFrameStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe97a32c2_0a7a_4766_95cb_0d692611cb4c);
@@ -9203,6 +9632,11 @@ pub struct ISplinePointKeyFrameStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISplitCloseThemeAnimation(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISplitCloseThemeAnimation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISplitCloseThemeAnimation {
     type Vtable = ISplitCloseThemeAnimation_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x4f799518_ff39_4e90_bb74_2abd56027402);
@@ -9243,6 +9677,11 @@ pub struct ISplitCloseThemeAnimation_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISplitCloseThemeAnimationStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISplitCloseThemeAnimationStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISplitCloseThemeAnimationStatics {
     type Vtable = ISplitCloseThemeAnimationStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x7aa94de9_cc9b_4e90_a11a_0050a2216a9e);
@@ -9266,6 +9705,11 @@ pub struct ISplitCloseThemeAnimationStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISplitOpenThemeAnimation(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISplitOpenThemeAnimation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISplitOpenThemeAnimation {
     type Vtable = ISplitOpenThemeAnimation_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x785fd7aa_5456_4639_8fd2_26bae6a5ffe4);
@@ -9306,6 +9750,11 @@ pub struct ISplitOpenThemeAnimation_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISplitOpenThemeAnimationStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISplitOpenThemeAnimationStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISplitOpenThemeAnimationStatics {
     type Vtable = ISplitOpenThemeAnimationStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x8d4cfa89_3a91_458d_b0fb_4cad625cbf8d);
@@ -9329,6 +9778,11 @@ pub struct ISplitOpenThemeAnimationStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IStoryboard(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStoryboard {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IStoryboard {
     type Vtable = IStoryboard_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd45c1e6e_3594_460e_981a_32271bd3aa06);
@@ -9363,6 +9817,11 @@ pub struct IStoryboard_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IStoryboardStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStoryboardStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IStoryboardStatics {
     type Vtable = IStoryboardStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd82f07d8_73d5_4379_bd48_7e05184a8bad);
@@ -9382,6 +9841,11 @@ pub struct IStoryboardStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISuppressNavigationTransitionInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISuppressNavigationTransitionInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISuppressNavigationTransitionInfo {
     type Vtable = ISuppressNavigationTransitionInfo_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x244d7b0c_b1b7_4871_9d3e_d56203a3a5b4);
@@ -9394,6 +9858,11 @@ pub struct ISuppressNavigationTransitionInfo_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISwipeBackThemeAnimation(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISwipeBackThemeAnimation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISwipeBackThemeAnimation {
     type Vtable = ISwipeBackThemeAnimation_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa38a4214_0bca_4d2d_95f7_ceba57fbaf60);
@@ -9412,6 +9881,11 @@ pub struct ISwipeBackThemeAnimation_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISwipeBackThemeAnimationStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISwipeBackThemeAnimationStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISwipeBackThemeAnimationStatics {
     type Vtable = ISwipeBackThemeAnimationStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x693f31bf_4da6_468a_8ce0_996c9aad42e0);
@@ -9427,6 +9901,11 @@ pub struct ISwipeBackThemeAnimationStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISwipeHintThemeAnimation(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISwipeHintThemeAnimation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISwipeHintThemeAnimation {
     type Vtable = ISwipeHintThemeAnimation_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xcdd067c0_580e_4e40_be98_f202d3d84365);
@@ -9445,6 +9924,11 @@ pub struct ISwipeHintThemeAnimation_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISwipeHintThemeAnimationStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISwipeHintThemeAnimationStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISwipeHintThemeAnimationStatics {
     type Vtable = ISwipeHintThemeAnimationStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x23d61a57_9115_4d63_b04a_b89f1c744dc0);
@@ -9460,6 +9944,11 @@ pub struct ISwipeHintThemeAnimationStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ITimeline(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITimeline {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ITimeline {
     type Vtable = ITimeline_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x0bc465dc_be4d_4d0d_9549_2208b715f40d);
@@ -9510,6 +9999,11 @@ pub struct ITimeline_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ITimelineFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITimelineFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ITimelineFactory {
     type Vtable = ITimelineFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1d56bb07_bda4_478b_8ada_eb04d580cd5e);
@@ -9523,6 +10017,11 @@ pub struct ITimelineFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ITimelineStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITimelineStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ITimelineStatics {
     type Vtable = ITimelineStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa902ed4e_ef10_4d6f_9a40_93cb8895f4e5);
@@ -9543,6 +10042,11 @@ pub struct ITimelineStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ITransition(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITransition {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ITransition {
     type Vtable = ITransition_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x3c677c7c_01d0_4dce_b333_976f93312b08);
@@ -9555,6 +10059,11 @@ pub struct ITransition_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ITransitionFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITransitionFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ITransitionFactory {
     type Vtable = ITransitionFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xdc9ab2cf_3bc9_44aa_b3fc_883a83233a2c);
@@ -9606,11 +10115,6 @@ impl KeySpline {
         unsafe { (::windows::core::Interface::vtable(this).SetControlPoint2)(::core::mem::transmute_copy(this), value.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for KeySpline {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for KeySpline {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9624,7 +10128,6 @@ impl ::core::fmt::Debug for KeySpline {
 }
 unsafe impl ::windows::core::RuntimeType for KeySpline {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.KeySpline;{77a163bb-d5ca-4a32-ba0b-7dff988e58a0})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -9721,11 +10224,11 @@ impl ::core::fmt::Debug for KeyTime {
 #[cfg(feature = "Foundation")]
 unsafe impl ::windows::core::Abi for KeyTime {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Foundation")]
 unsafe impl ::windows::core::RuntimeType for KeyTime {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"struct(Windows.UI.Xaml.Media.Animation.KeyTime;struct(Windows.Foundation.TimeSpan;i8))");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -9762,11 +10265,6 @@ impl KeyTimeHelper {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for KeyTimeHelper {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for KeyTimeHelper {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9780,7 +10278,6 @@ impl ::core::fmt::Debug for KeyTimeHelper {
 }
 unsafe impl ::windows::core::RuntimeType for KeyTimeHelper {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.KeyTimeHelper;{3643e480-4823-466a-abe5-5e79c8ed77ed})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -9846,11 +10343,6 @@ impl LinearColorKeyFrame {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for LinearColorKeyFrame {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for LinearColorKeyFrame {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9864,7 +10356,6 @@ impl ::core::fmt::Debug for LinearColorKeyFrame {
 }
 unsafe impl ::windows::core::RuntimeType for LinearColorKeyFrame {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.LinearColorKeyFrame;{66fdb6ef-ac81-4611-b1d2-61f545983f03})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -9970,11 +10461,6 @@ impl LinearDoubleKeyFrame {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for LinearDoubleKeyFrame {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for LinearDoubleKeyFrame {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9988,7 +10474,6 @@ impl ::core::fmt::Debug for LinearDoubleKeyFrame {
 }
 unsafe impl ::windows::core::RuntimeType for LinearDoubleKeyFrame {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.LinearDoubleKeyFrame;{8efdf265-9a7b-431d-8f0c-14c56b5ea4d9})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -10094,11 +10579,6 @@ impl LinearPointKeyFrame {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for LinearPointKeyFrame {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for LinearPointKeyFrame {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10112,7 +10592,6 @@ impl ::core::fmt::Debug for LinearPointKeyFrame {
 }
 unsafe impl ::windows::core::RuntimeType for LinearPointKeyFrame {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.LinearPointKeyFrame;{e7c9b8ef-af24-49ee-84f1-a86600a4e319})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -10243,11 +10722,6 @@ impl NavigationThemeTransition {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for NavigationThemeTransition {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for NavigationThemeTransition {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10261,7 +10735,6 @@ impl ::core::fmt::Debug for NavigationThemeTransition {
 }
 unsafe impl ::windows::core::RuntimeType for NavigationThemeTransition {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.NavigationThemeTransition;{8833848c-4eb7-41f2-8799-9eef0a213b73})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -10359,11 +10832,6 @@ unsafe impl ::core::marker::Sync for NavigationThemeTransition {}
 #[repr(transparent)]
 pub struct NavigationTransitionInfo(::windows::core::IUnknown);
 impl NavigationTransitionInfo {}
-impl ::core::clone::Clone for NavigationTransitionInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for NavigationTransitionInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10377,7 +10845,6 @@ impl ::core::fmt::Debug for NavigationTransitionInfo {
 }
 unsafe impl ::windows::core::RuntimeType for NavigationTransitionInfo {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.NavigationTransitionInfo;{a9b05091-ae4a-4372-8625-21b7a8b98ca4})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -10497,11 +10964,6 @@ impl ObjectAnimationUsingKeyFrames {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for ObjectAnimationUsingKeyFrames {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ObjectAnimationUsingKeyFrames {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10515,7 +10977,6 @@ impl ::core::fmt::Debug for ObjectAnimationUsingKeyFrames {
 }
 unsafe impl ::windows::core::RuntimeType for ObjectAnimationUsingKeyFrames {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.ObjectAnimationUsingKeyFrames;{334a2d92-b74a-4c64-b9a6-58bcfa314f22})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -10661,11 +11122,6 @@ impl ObjectKeyFrame {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for ObjectKeyFrame {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ObjectKeyFrame {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10679,7 +11135,6 @@ impl ::core::fmt::Debug for ObjectKeyFrame {
 }
 unsafe impl ::windows::core::RuntimeType for ObjectKeyFrame {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.ObjectKeyFrame;{9852a851-8593-48ee-a6a4-d5d4720f029a})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -10864,12 +11319,6 @@ impl ObjectKeyFrameCollection {
     }
 }
 #[cfg(feature = "Foundation_Collections")]
-impl ::core::clone::Clone for ObjectKeyFrameCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Foundation_Collections")]
 impl ::core::cmp::PartialEq for ObjectKeyFrameCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10886,7 +11335,6 @@ impl ::core::fmt::Debug for ObjectKeyFrameCollection {
 #[cfg(feature = "Foundation_Collections")]
 unsafe impl ::windows::core::RuntimeType for ObjectKeyFrameCollection {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.ObjectKeyFrameCollection;pinterface({913337e9-11a1-4345-a3a2-4e7f956e222d};rc(Windows.UI.Xaml.Media.Animation.ObjectKeyFrame;{9852a851-8593-48ee-a6a4-d5d4720f029a})))");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -11059,11 +11507,6 @@ impl PaneThemeTransition {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for PaneThemeTransition {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PaneThemeTransition {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11077,7 +11520,6 @@ impl ::core::fmt::Debug for PaneThemeTransition {
 }
 unsafe impl ::windows::core::RuntimeType for PaneThemeTransition {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.PaneThemeTransition;{4708eb8e-4bfc-ee46-d4f9-708def3fbb2b})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -11294,11 +11736,6 @@ impl PointAnimation {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for PointAnimation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PointAnimation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11312,7 +11749,6 @@ impl ::core::fmt::Debug for PointAnimation {
 }
 unsafe impl ::windows::core::RuntimeType for PointAnimation {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.PointAnimation;{30f04312-7726-4f88-b8e2-2fa54518963b})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -11452,11 +11888,6 @@ impl PointAnimationUsingKeyFrames {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for PointAnimationUsingKeyFrames {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PointAnimationUsingKeyFrames {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11470,7 +11901,6 @@ impl ::core::fmt::Debug for PointAnimationUsingKeyFrames {
 }
 unsafe impl ::windows::core::RuntimeType for PointAnimationUsingKeyFrames {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.PointAnimationUsingKeyFrames;{9b944f72-446a-41d0-a129-41a620f4595d})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -11618,11 +12048,6 @@ impl PointKeyFrame {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for PointKeyFrame {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PointKeyFrame {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11636,7 +12061,6 @@ impl ::core::fmt::Debug for PointKeyFrame {
 }
 unsafe impl ::windows::core::RuntimeType for PointKeyFrame {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.PointKeyFrame;{fcc88d01-7f82-4dae-8026-7b7e086878b3})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -11821,12 +12245,6 @@ impl PointKeyFrameCollection {
     }
 }
 #[cfg(feature = "Foundation_Collections")]
-impl ::core::clone::Clone for PointKeyFrameCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Foundation_Collections")]
 impl ::core::cmp::PartialEq for PointKeyFrameCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11843,7 +12261,6 @@ impl ::core::fmt::Debug for PointKeyFrameCollection {
 #[cfg(feature = "Foundation_Collections")]
 unsafe impl ::windows::core::RuntimeType for PointKeyFrameCollection {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.PointKeyFrameCollection;pinterface({913337e9-11a1-4345-a3a2-4e7f956e222d};rc(Windows.UI.Xaml.Media.Animation.PointKeyFrame;{fcc88d01-7f82-4dae-8026-7b7e086878b3})))");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -12014,11 +12431,6 @@ impl PointerDownThemeAnimation {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for PointerDownThemeAnimation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PointerDownThemeAnimation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12032,7 +12444,6 @@ impl ::core::fmt::Debug for PointerDownThemeAnimation {
 }
 unsafe impl ::windows::core::RuntimeType for PointerDownThemeAnimation {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.PointerDownThemeAnimation;{b58e714e-c49d-4788-a233-0ae85d99dd5a})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -12163,11 +12574,6 @@ impl PointerUpThemeAnimation {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for PointerUpThemeAnimation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PointerUpThemeAnimation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12181,7 +12587,6 @@ impl ::core::fmt::Debug for PointerUpThemeAnimation {
 }
 unsafe impl ::windows::core::RuntimeType for PointerUpThemeAnimation {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.PointerUpThemeAnimation;{e9e9d07d-6340-4828-ad12-690694b9910b})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -12352,11 +12757,6 @@ impl PopInThemeAnimation {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for PopInThemeAnimation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PopInThemeAnimation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12370,7 +12770,6 @@ impl ::core::fmt::Debug for PopInThemeAnimation {
 }
 unsafe impl ::windows::core::RuntimeType for PopInThemeAnimation {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.PopInThemeAnimation;{196938c1-1c07-4c28-8847-f9f055b32855})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -12501,11 +12900,6 @@ impl PopOutThemeAnimation {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for PopOutThemeAnimation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PopOutThemeAnimation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12519,7 +12913,6 @@ impl ::core::fmt::Debug for PopOutThemeAnimation {
 }
 unsafe impl ::windows::core::RuntimeType for PopOutThemeAnimation {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.PopOutThemeAnimation;{4786ab49-0e48-4e81-a2e5-cc5aa19e48d3})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -12670,11 +13063,6 @@ impl PopupThemeTransition {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for PopupThemeTransition {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PopupThemeTransition {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12688,7 +13076,6 @@ impl ::core::fmt::Debug for PopupThemeTransition {
 }
 unsafe impl ::windows::core::RuntimeType for PopupThemeTransition {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.PopupThemeTransition;{47843552-4283-545e-c791-268dca22ce4b})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -12819,11 +13206,6 @@ impl PowerEase {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for PowerEase {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PowerEase {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12837,7 +13219,6 @@ impl ::core::fmt::Debug for PowerEase {
 }
 unsafe impl ::windows::core::RuntimeType for PowerEase {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.PowerEase;{69c80579-eedf-405b-8680-d9606880c937})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -12943,11 +13324,6 @@ impl QuadraticEase {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for QuadraticEase {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for QuadraticEase {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12961,7 +13337,6 @@ impl ::core::fmt::Debug for QuadraticEase {
 }
 unsafe impl ::windows::core::RuntimeType for QuadraticEase {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.QuadraticEase;{e1510e91-ef6d-44f0-803d-68d16de0ddfc})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -13067,11 +13442,6 @@ impl QuarticEase {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for QuarticEase {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for QuarticEase {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13085,7 +13455,6 @@ impl ::core::fmt::Debug for QuarticEase {
 }
 unsafe impl ::windows::core::RuntimeType for QuarticEase {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.QuarticEase;{e8698814-fe42-4a05-b5b8-081f41157815})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -13191,11 +13560,6 @@ impl QuinticEase {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for QuinticEase {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for QuinticEase {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13209,7 +13573,6 @@ impl ::core::fmt::Debug for QuinticEase {
 }
 unsafe impl ::windows::core::RuntimeType for QuinticEase {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.QuinticEase;{92ee793b-3c49-4108-aa11-ab786603da21})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -13315,11 +13678,6 @@ impl ReorderThemeTransition {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for ReorderThemeTransition {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ReorderThemeTransition {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13333,7 +13691,6 @@ impl ::core::fmt::Debug for ReorderThemeTransition {
 }
 unsafe impl ::windows::core::RuntimeType for ReorderThemeTransition {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.ReorderThemeTransition;{f2065c6c-d052-4ad1-8362-b71b36df7497})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -13452,11 +13809,11 @@ impl ::core::fmt::Debug for RepeatBehavior {
 #[cfg(feature = "Foundation")]
 unsafe impl ::windows::core::Abi for RepeatBehavior {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Foundation")]
 unsafe impl ::windows::core::RuntimeType for RepeatBehavior {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"struct(Windows.UI.Xaml.Media.Animation.RepeatBehavior;f8;struct(Windows.Foundation.TimeSpan;i8);enum(Windows.UI.Xaml.Media.Animation.RepeatBehaviorType;i4))");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -13533,11 +13890,6 @@ impl RepeatBehaviorHelper {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for RepeatBehaviorHelper {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for RepeatBehaviorHelper {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13551,7 +13903,6 @@ impl ::core::fmt::Debug for RepeatBehaviorHelper {
 }
 unsafe impl ::windows::core::RuntimeType for RepeatBehaviorHelper {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.RepeatBehaviorHelper;{6863ab72-4997-47f9-87ad-37efb75993ea})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -13627,6 +13978,7 @@ impl ::core::default::Default for RepeatBehaviorType {
 }
 unsafe impl ::windows::core::Abi for RepeatBehaviorType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RepeatBehaviorType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13635,7 +13987,6 @@ impl ::core::fmt::Debug for RepeatBehaviorType {
 }
 unsafe impl ::windows::core::RuntimeType for RepeatBehaviorType {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Xaml.Media.Animation.RepeatBehaviorType;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -13717,11 +14068,6 @@ impl RepositionThemeAnimation {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for RepositionThemeAnimation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for RepositionThemeAnimation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13735,7 +14081,6 @@ impl ::core::fmt::Debug for RepositionThemeAnimation {
 }
 unsafe impl ::windows::core::RuntimeType for RepositionThemeAnimation {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.RepositionThemeAnimation;{ecda24e8-8945-4949-a1bf-62109965a7e9})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -13866,11 +14211,6 @@ impl RepositionThemeTransition {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for RepositionThemeTransition {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for RepositionThemeTransition {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13884,7 +14224,6 @@ impl ::core::fmt::Debug for RepositionThemeTransition {
 }
 unsafe impl ::windows::core::RuntimeType for RepositionThemeTransition {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.RepositionThemeTransition;{88329b82-98f3-455a-ac53-2e7083b6e22c})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -13990,11 +14329,6 @@ impl SineEase {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for SineEase {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SineEase {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -14008,7 +14342,6 @@ impl ::core::fmt::Debug for SineEase {
 }
 unsafe impl ::windows::core::RuntimeType for SineEase {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.SineEase;{a9382962-230b-49da-9e0d-664987892343})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -14124,6 +14457,7 @@ impl ::core::default::Default for SlideNavigationTransitionEffect {
 }
 unsafe impl ::windows::core::Abi for SlideNavigationTransitionEffect {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SlideNavigationTransitionEffect {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14132,7 +14466,6 @@ impl ::core::fmt::Debug for SlideNavigationTransitionEffect {
 }
 unsafe impl ::windows::core::RuntimeType for SlideNavigationTransitionEffect {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Xaml.Media.Animation.SlideNavigationTransitionEffect;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -14174,11 +14507,6 @@ impl SlideNavigationTransitionInfo {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for SlideNavigationTransitionInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SlideNavigationTransitionInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -14192,7 +14520,6 @@ impl ::core::fmt::Debug for SlideNavigationTransitionInfo {
 }
 unsafe impl ::windows::core::RuntimeType for SlideNavigationTransitionInfo {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.SlideNavigationTransitionInfo;{d6ac9d77-2e03-405f-80ed-e62beef3668f})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -14323,11 +14650,6 @@ impl SplineColorKeyFrame {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for SplineColorKeyFrame {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SplineColorKeyFrame {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -14341,7 +14663,6 @@ impl ::core::fmt::Debug for SplineColorKeyFrame {
 }
 unsafe impl ::windows::core::RuntimeType for SplineColorKeyFrame {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.SplineColorKeyFrame;{1a4a5941-1fe0-473a-8efe-4316d8c86229})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -14472,11 +14793,6 @@ impl SplineDoubleKeyFrame {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for SplineDoubleKeyFrame {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SplineDoubleKeyFrame {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -14490,7 +14806,6 @@ impl ::core::fmt::Debug for SplineDoubleKeyFrame {
 }
 unsafe impl ::windows::core::RuntimeType for SplineDoubleKeyFrame {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.SplineDoubleKeyFrame;{00d72d38-6b2b-4843-838e-c8b115eec801})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -14621,11 +14936,6 @@ impl SplinePointKeyFrame {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for SplinePointKeyFrame {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SplinePointKeyFrame {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -14639,7 +14949,6 @@ impl ::core::fmt::Debug for SplinePointKeyFrame {
 }
 unsafe impl ::windows::core::RuntimeType for SplinePointKeyFrame {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.SplinePointKeyFrame;{0f19f306-7036-494f-bc3c-780df0cc524a})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -14972,11 +15281,6 @@ impl SplitCloseThemeAnimation {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for SplitCloseThemeAnimation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SplitCloseThemeAnimation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -14990,7 +15294,6 @@ impl ::core::fmt::Debug for SplitCloseThemeAnimation {
 }
 unsafe impl ::windows::core::RuntimeType for SplitCloseThemeAnimation {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.SplitCloseThemeAnimation;{4f799518-ff39-4e90-bb74-2abd56027402})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -15323,11 +15626,6 @@ impl SplitOpenThemeAnimation {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for SplitOpenThemeAnimation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SplitOpenThemeAnimation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -15341,7 +15639,6 @@ impl ::core::fmt::Debug for SplitOpenThemeAnimation {
 }
 unsafe impl ::windows::core::RuntimeType for SplitOpenThemeAnimation {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.SplitOpenThemeAnimation;{785fd7aa-5456-4639-8fd2-26bae6a5ffe4})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -15555,11 +15852,6 @@ impl Storyboard {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for Storyboard {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for Storyboard {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -15573,7 +15865,6 @@ impl ::core::fmt::Debug for Storyboard {
 }
 unsafe impl ::windows::core::RuntimeType for Storyboard {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.Storyboard;{d45c1e6e-3594-460e-981a-32271bd3aa06})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -15679,11 +15970,6 @@ impl SuppressNavigationTransitionInfo {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for SuppressNavigationTransitionInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SuppressNavigationTransitionInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -15697,7 +15983,6 @@ impl ::core::fmt::Debug for SuppressNavigationTransitionInfo {
 }
 unsafe impl ::windows::core::RuntimeType for SuppressNavigationTransitionInfo {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.SuppressNavigationTransitionInfo;{244d7b0c-b1b7-4871-9d3e-d56203a3a5b4})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -15868,11 +16153,6 @@ impl SwipeBackThemeAnimation {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for SwipeBackThemeAnimation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SwipeBackThemeAnimation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -15886,7 +16166,6 @@ impl ::core::fmt::Debug for SwipeBackThemeAnimation {
 }
 unsafe impl ::windows::core::RuntimeType for SwipeBackThemeAnimation {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.SwipeBackThemeAnimation;{a38a4214-0bca-4d2d-95f7-ceba57fbaf60})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -16057,11 +16336,6 @@ impl SwipeHintThemeAnimation {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for SwipeHintThemeAnimation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SwipeHintThemeAnimation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -16075,7 +16349,6 @@ impl ::core::fmt::Debug for SwipeHintThemeAnimation {
 }
 unsafe impl ::windows::core::RuntimeType for SwipeHintThemeAnimation {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.SwipeHintThemeAnimation;{cdd067c0-580e-4e40-be98-f202d3d84365})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -16331,11 +16604,6 @@ impl Timeline {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for Timeline {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for Timeline {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -16349,7 +16617,6 @@ impl ::core::fmt::Debug for Timeline {
 }
 unsafe impl ::windows::core::RuntimeType for Timeline {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.Timeline;{0bc465dc-be4d-4d0d-9549-2208b715f40d})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -16534,12 +16801,6 @@ impl TimelineCollection {
     }
 }
 #[cfg(feature = "Foundation_Collections")]
-impl ::core::clone::Clone for TimelineCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Foundation_Collections")]
 impl ::core::cmp::PartialEq for TimelineCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -16556,7 +16817,6 @@ impl ::core::fmt::Debug for TimelineCollection {
 #[cfg(feature = "Foundation_Collections")]
 unsafe impl ::windows::core::RuntimeType for TimelineCollection {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.TimelineCollection;pinterface({913337e9-11a1-4345-a3a2-4e7f956e222d};rc(Windows.UI.Xaml.Media.Animation.Timeline;{0bc465dc-be4d-4d0d-9549-2208b715f40d})))");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -16694,11 +16954,6 @@ unsafe impl ::core::marker::Sync for TimelineCollection {}
 #[repr(transparent)]
 pub struct Transition(::windows::core::IUnknown);
 impl Transition {}
-impl ::core::clone::Clone for Transition {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for Transition {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -16712,7 +16967,6 @@ impl ::core::fmt::Debug for Transition {
 }
 unsafe impl ::windows::core::RuntimeType for Transition {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.Transition;{3c677c7c-01d0-4dce-b333-976f93312b08})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -16897,12 +17151,6 @@ impl TransitionCollection {
     }
 }
 #[cfg(feature = "Foundation_Collections")]
-impl ::core::clone::Clone for TransitionCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Foundation_Collections")]
 impl ::core::cmp::PartialEq for TransitionCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -16919,7 +17167,6 @@ impl ::core::fmt::Debug for TransitionCollection {
 #[cfg(feature = "Foundation_Collections")]
 unsafe impl ::windows::core::RuntimeType for TransitionCollection {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Media.Animation.TransitionCollection;pinterface({913337e9-11a1-4345-a3a2-4e7f956e222d};rc(Windows.UI.Xaml.Media.Animation.Transition;{3c677c7c-01d0-4dce-b333-976f93312b08})))");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

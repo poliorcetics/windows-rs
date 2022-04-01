@@ -248,11 +248,6 @@ impl AsymmetricKeyAlgorithmProvider {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for AsymmetricKeyAlgorithmProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AsymmetricKeyAlgorithmProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -266,7 +261,6 @@ impl ::core::fmt::Debug for AsymmetricKeyAlgorithmProvider {
 }
 unsafe impl ::windows::core::RuntimeType for AsymmetricKeyAlgorithmProvider {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Security.Cryptography.Core.AsymmetricKeyAlgorithmProvider;{e8d2ff37-6259-4e88-b7e0-94191fde699e})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -341,6 +335,7 @@ impl ::core::default::Default for Capi1KdfTargetAlgorithm {
 }
 unsafe impl ::windows::core::Abi for Capi1KdfTargetAlgorithm {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for Capi1KdfTargetAlgorithm {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -349,7 +344,6 @@ impl ::core::fmt::Debug for Capi1KdfTargetAlgorithm {
 }
 unsafe impl ::windows::core::RuntimeType for Capi1KdfTargetAlgorithm {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Security.Cryptography.Core.Capi1KdfTargetAlgorithm;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -487,11 +481,6 @@ impl CryptographicHash {
         }
     }
 }
-impl ::core::clone::Clone for CryptographicHash {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for CryptographicHash {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -505,7 +494,6 @@ impl ::core::fmt::Debug for CryptographicHash {
 }
 unsafe impl ::windows::core::RuntimeType for CryptographicHash {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Security.Cryptography.Core.CryptographicHash;{5904d1b6-ad31-4603-a3a4-b1bda98e2562})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -608,11 +596,6 @@ impl CryptographicKey {
         }
     }
 }
-impl ::core::clone::Clone for CryptographicKey {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for CryptographicKey {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -626,7 +609,6 @@ impl ::core::fmt::Debug for CryptographicKey {
 }
 unsafe impl ::windows::core::RuntimeType for CryptographicKey {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Security.Cryptography.Core.CryptographicKey;{ed2a3b70-8e7b-4009-8401-ffd1a62eeb27})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -703,6 +685,7 @@ impl ::core::default::Default for CryptographicPadding {
 }
 unsafe impl ::windows::core::Abi for CryptographicPadding {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CryptographicPadding {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -711,7 +694,6 @@ impl ::core::fmt::Debug for CryptographicPadding {
 }
 unsafe impl ::windows::core::RuntimeType for CryptographicPadding {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Security.Cryptography.Core.CryptographicPadding;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -740,6 +722,7 @@ impl ::core::default::Default for CryptographicPrivateKeyBlobType {
 }
 unsafe impl ::windows::core::Abi for CryptographicPrivateKeyBlobType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CryptographicPrivateKeyBlobType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -748,7 +731,6 @@ impl ::core::fmt::Debug for CryptographicPrivateKeyBlobType {
 }
 unsafe impl ::windows::core::RuntimeType for CryptographicPrivateKeyBlobType {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Security.Cryptography.Core.CryptographicPrivateKeyBlobType;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -777,6 +759,7 @@ impl ::core::default::Default for CryptographicPublicKeyBlobType {
 }
 unsafe impl ::windows::core::Abi for CryptographicPublicKeyBlobType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CryptographicPublicKeyBlobType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -785,7 +768,6 @@ impl ::core::fmt::Debug for CryptographicPublicKeyBlobType {
 }
 unsafe impl ::windows::core::RuntimeType for CryptographicPublicKeyBlobType {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Security.Cryptography.Core.CryptographicPublicKeyBlobType;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1148,11 +1130,6 @@ impl EncryptedAndAuthenticatedData {
         }
     }
 }
-impl ::core::clone::Clone for EncryptedAndAuthenticatedData {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for EncryptedAndAuthenticatedData {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1166,7 +1143,6 @@ impl ::core::fmt::Debug for EncryptedAndAuthenticatedData {
 }
 unsafe impl ::windows::core::RuntimeType for EncryptedAndAuthenticatedData {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Security.Cryptography.Core.EncryptedAndAuthenticatedData;{6fa42fe7-1ecb-4b00-bea5-60b83f862f17})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1317,11 +1293,6 @@ impl HashAlgorithmProvider {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for HashAlgorithmProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for HashAlgorithmProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1335,7 +1306,6 @@ impl ::core::fmt::Debug for HashAlgorithmProvider {
 }
 unsafe impl ::windows::core::RuntimeType for HashAlgorithmProvider {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Security.Cryptography.Core.HashAlgorithmProvider;{be9b3080-b2c3-422b-bce1-ec90efb5d7b5})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1392,6 +1362,11 @@ unsafe impl ::core::marker::Sync for HashAlgorithmProvider {}
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAsymmetricAlgorithmNamesStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAsymmetricAlgorithmNamesStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAsymmetricAlgorithmNamesStatics {
     type Vtable = IAsymmetricAlgorithmNamesStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xcaf6fce4_67c0_46aa_84f9_752e77449f9b);
@@ -1422,6 +1397,11 @@ pub struct IAsymmetricAlgorithmNamesStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAsymmetricAlgorithmNamesStatics2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAsymmetricAlgorithmNamesStatics2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAsymmetricAlgorithmNamesStatics2 {
     type Vtable = IAsymmetricAlgorithmNamesStatics2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf141c0d6_4bff_4f23_ba66_6045b137d5df);
@@ -1437,6 +1417,11 @@ pub struct IAsymmetricAlgorithmNamesStatics2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAsymmetricKeyAlgorithmProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAsymmetricKeyAlgorithmProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAsymmetricKeyAlgorithmProvider {
     type Vtable = IAsymmetricKeyAlgorithmProvider_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe8d2ff37_6259_4e88_b7e0_94191fde699e);
@@ -1467,6 +1452,11 @@ pub struct IAsymmetricKeyAlgorithmProvider_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAsymmetricKeyAlgorithmProvider2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAsymmetricKeyAlgorithmProvider2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAsymmetricKeyAlgorithmProvider2 {
     type Vtable = IAsymmetricKeyAlgorithmProvider2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x4e322a7e_7c4d_4997_ac4f_1b848b36306e);
@@ -1481,6 +1471,11 @@ pub struct IAsymmetricKeyAlgorithmProvider2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAsymmetricKeyAlgorithmProviderStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAsymmetricKeyAlgorithmProviderStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAsymmetricKeyAlgorithmProviderStatics {
     type Vtable = IAsymmetricKeyAlgorithmProviderStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x425bde18_a7f3_47a6_a8d2_c48d6033a65c);
@@ -1494,6 +1489,11 @@ pub struct IAsymmetricKeyAlgorithmProviderStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICryptographicEngineStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICryptographicEngineStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICryptographicEngineStatics {
     type Vtable = ICryptographicEngineStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9fea0639_6ff7_4c85_a095_95eb31715eb9);
@@ -1534,6 +1534,11 @@ pub struct ICryptographicEngineStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICryptographicEngineStatics2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICryptographicEngineStatics2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICryptographicEngineStatics2 {
     type Vtable = ICryptographicEngineStatics2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x675948fe_df9f_4191_92c7_6ce6f58420e0);
@@ -1566,6 +1571,11 @@ pub struct ICryptographicEngineStatics2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICryptographicKey(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICryptographicKey {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICryptographicKey {
     type Vtable = ICryptographicKey_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xed2a3b70_8e7b_4009_8401_ffd1a62eeb27);
@@ -1595,6 +1605,11 @@ pub struct ICryptographicKey_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IEccCurveNamesStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEccCurveNamesStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IEccCurveNamesStatics {
     type Vtable = IEccCurveNamesStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb3ff930c_aeeb_409e_b7d4_9b95295aaecf);
@@ -1656,6 +1671,11 @@ pub struct IEccCurveNamesStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IEncryptedAndAuthenticatedData(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEncryptedAndAuthenticatedData {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IEncryptedAndAuthenticatedData {
     type Vtable = IEncryptedAndAuthenticatedData_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x6fa42fe7_1ecb_4b00_bea5_60b83f862f17);
@@ -1676,6 +1696,11 @@ pub struct IEncryptedAndAuthenticatedData_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHashAlgorithmNamesStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHashAlgorithmNamesStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHashAlgorithmNamesStatics {
     type Vtable = IHashAlgorithmNamesStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x6b5e0516_de96_4f0a_8d57_dcc9dae36c76);
@@ -1693,6 +1718,11 @@ pub struct IHashAlgorithmNamesStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHashAlgorithmProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHashAlgorithmProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHashAlgorithmProvider {
     type Vtable = IHashAlgorithmProvider_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xbe9b3080_b2c3_422b_bce1_ec90efb5d7b5);
@@ -1712,6 +1742,11 @@ pub struct IHashAlgorithmProvider_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHashAlgorithmProviderStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHashAlgorithmProviderStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHashAlgorithmProviderStatics {
     type Vtable = IHashAlgorithmProviderStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9fac9741_5cc4_4336_ae38_6212b75a915a);
@@ -1725,6 +1760,11 @@ pub struct IHashAlgorithmProviderStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHashComputation(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHashComputation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHashComputation {
     type Vtable = IHashComputation_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x5904d1b6_ad31_4603_a3a4_b1bda98e2562);
@@ -1745,6 +1785,11 @@ pub struct IHashComputation_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IKeyDerivationAlgorithmNamesStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IKeyDerivationAlgorithmNamesStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IKeyDerivationAlgorithmNamesStatics {
     type Vtable = IKeyDerivationAlgorithmNamesStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x7b6e363e_94d2_4739_a57b_022e0c3a402a);
@@ -1772,6 +1817,11 @@ pub struct IKeyDerivationAlgorithmNamesStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IKeyDerivationAlgorithmNamesStatics2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IKeyDerivationAlgorithmNamesStatics2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IKeyDerivationAlgorithmNamesStatics2 {
     type Vtable = IKeyDerivationAlgorithmNamesStatics2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x57953fab_6044_466f_97f4_337b7808384d);
@@ -1789,6 +1839,11 @@ pub struct IKeyDerivationAlgorithmNamesStatics2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IKeyDerivationAlgorithmProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IKeyDerivationAlgorithmProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IKeyDerivationAlgorithmProvider {
     type Vtable = IKeyDerivationAlgorithmProvider_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe1fba83b_4671_43b7_9158_763aaa98b6bf);
@@ -1806,6 +1861,11 @@ pub struct IKeyDerivationAlgorithmProvider_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IKeyDerivationAlgorithmProviderStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IKeyDerivationAlgorithmProviderStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IKeyDerivationAlgorithmProviderStatics {
     type Vtable = IKeyDerivationAlgorithmProviderStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x0a22097a_0a1c_443b_9418_b9498aeb1603);
@@ -1819,6 +1879,11 @@ pub struct IKeyDerivationAlgorithmProviderStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IKeyDerivationParameters(::windows::core::IUnknown);
+impl ::core::clone::Clone for IKeyDerivationParameters {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IKeyDerivationParameters {
     type Vtable = IKeyDerivationParameters_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x7bf05967_047b_4a8c_964a_469ffd5522e2);
@@ -1840,6 +1905,11 @@ pub struct IKeyDerivationParameters_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IKeyDerivationParameters2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IKeyDerivationParameters2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IKeyDerivationParameters2 {
     type Vtable = IKeyDerivationParameters2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xcd4166d1_417e_4f4c_b666_c0d879f3f8e0);
@@ -1854,6 +1924,11 @@ pub struct IKeyDerivationParameters2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IKeyDerivationParametersStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IKeyDerivationParametersStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IKeyDerivationParametersStatics {
     type Vtable = IKeyDerivationParametersStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xea961fbe_f37f_4146_9dfe_a456f1735f4b);
@@ -1878,6 +1953,11 @@ pub struct IKeyDerivationParametersStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IKeyDerivationParametersStatics2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IKeyDerivationParametersStatics2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IKeyDerivationParametersStatics2 {
     type Vtable = IKeyDerivationParametersStatics2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa5783dd5_58e3_4efb_b283_a1653126e1be);
@@ -1891,6 +1971,11 @@ pub struct IKeyDerivationParametersStatics2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMacAlgorithmNamesStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMacAlgorithmNamesStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMacAlgorithmNamesStatics {
     type Vtable = IMacAlgorithmNamesStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x41412678_fb1e_43a4_895e_a9026e4390a3);
@@ -1909,6 +1994,11 @@ pub struct IMacAlgorithmNamesStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMacAlgorithmProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMacAlgorithmProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMacAlgorithmProvider {
     type Vtable = IMacAlgorithmProvider_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x4a3fc5c3_1cbd_41ce_a092_aa0bc5d2d2f5);
@@ -1927,6 +2017,11 @@ pub struct IMacAlgorithmProvider_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMacAlgorithmProvider2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMacAlgorithmProvider2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMacAlgorithmProvider2 {
     type Vtable = IMacAlgorithmProvider2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x6da32a15_d931_42ed_8e7e_c301caee119c);
@@ -1943,6 +2038,11 @@ pub struct IMacAlgorithmProvider2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMacAlgorithmProviderStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMacAlgorithmProviderStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMacAlgorithmProviderStatics {
     type Vtable = IMacAlgorithmProviderStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc9bdc147_cc77_4df0_9e4e_b921e080644c);
@@ -1956,6 +2056,11 @@ pub struct IMacAlgorithmProviderStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPersistedKeyProviderStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPersistedKeyProviderStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPersistedKeyProviderStatics {
     type Vtable = IPersistedKeyProviderStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x77274814_d9d4_4cf5_b668_e0457df30894);
@@ -1976,6 +2081,11 @@ pub struct IPersistedKeyProviderStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISymmetricAlgorithmNamesStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISymmetricAlgorithmNamesStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISymmetricAlgorithmNamesStatics {
     type Vtable = ISymmetricAlgorithmNamesStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x6870727b_c996_4eae_84d7_79b2aeb73b9c);
@@ -2007,6 +2117,11 @@ pub struct ISymmetricAlgorithmNamesStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISymmetricKeyAlgorithmProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISymmetricKeyAlgorithmProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISymmetricKeyAlgorithmProvider {
     type Vtable = ISymmetricKeyAlgorithmProvider_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x3d7e4a33_3bd0_4902_8ac8_470d50d21376);
@@ -2025,6 +2140,11 @@ pub struct ISymmetricKeyAlgorithmProvider_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISymmetricKeyAlgorithmProviderStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISymmetricKeyAlgorithmProviderStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISymmetricKeyAlgorithmProviderStatics {
     type Vtable = ISymmetricKeyAlgorithmProviderStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x8d3b2326_1f37_491f_b60e_f5431b26b483);
@@ -2226,11 +2346,6 @@ impl KeyDerivationAlgorithmProvider {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for KeyDerivationAlgorithmProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for KeyDerivationAlgorithmProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2244,7 +2359,6 @@ impl ::core::fmt::Debug for KeyDerivationAlgorithmProvider {
 }
 unsafe impl ::windows::core::RuntimeType for KeyDerivationAlgorithmProvider {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Security.Cryptography.Core.KeyDerivationAlgorithmProvider;{e1fba83b-4671-43b7-9158-763aaa98b6bf})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2380,11 +2494,6 @@ impl KeyDerivationParameters {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for KeyDerivationParameters {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for KeyDerivationParameters {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2398,7 +2507,6 @@ impl ::core::fmt::Debug for KeyDerivationParameters {
 }
 unsafe impl ::windows::core::RuntimeType for KeyDerivationParameters {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Security.Cryptography.Core.KeyDerivationParameters;{7bf05967-047b-4a8c-964a-469ffd5522e2})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2557,11 +2665,6 @@ impl MacAlgorithmProvider {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for MacAlgorithmProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MacAlgorithmProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2575,7 +2678,6 @@ impl ::core::fmt::Debug for MacAlgorithmProvider {
 }
 unsafe impl ::windows::core::RuntimeType for MacAlgorithmProvider {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Security.Cryptography.Core.MacAlgorithmProvider;{4a3fc5c3-1cbd-41ce-a092-aa0bc5d2d2f5})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2844,11 +2946,6 @@ impl SymmetricKeyAlgorithmProvider {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for SymmetricKeyAlgorithmProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SymmetricKeyAlgorithmProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2862,7 +2959,6 @@ impl ::core::fmt::Debug for SymmetricKeyAlgorithmProvider {
 }
 unsafe impl ::windows::core::RuntimeType for SymmetricKeyAlgorithmProvider {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Security.Cryptography.Core.SymmetricKeyAlgorithmProvider;{3d7e4a33-3bd0-4902-8ac8-470d50d21376})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

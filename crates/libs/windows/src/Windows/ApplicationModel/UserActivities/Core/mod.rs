@@ -29,6 +29,11 @@ impl ::windows::core::RuntimeName for CoreUserActivityManager {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICoreUserActivityManagerStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICoreUserActivityManagerStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICoreUserActivityManagerStatics {
     type Vtable = ICoreUserActivityManagerStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xca3adb02_a4be_4d4d_bfa8_6795f4264efb);

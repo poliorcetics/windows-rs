@@ -114,6 +114,7 @@ pub fn gen() -> TokenStream {
 
         unsafe impl ::windows::core::Abi for BOOL {
             type Abi = Self;
+            type DefaultType = Self;
         }
 
         impl<'a> ::windows::core::IntoParam<'a, BOOL> for bool {

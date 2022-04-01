@@ -10,6 +10,11 @@ pub mod Workflow;
 #[doc = "*Required features: `\"Graphics_Printing\"`*"]
 #[repr(transparent)]
 pub struct IPrintDocumentSource(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrintDocumentSource {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPrintDocumentSource {}
 impl ::core::convert::From<IPrintDocumentSource> for ::windows::core::IUnknown {
     fn from(value: IPrintDocumentSource) -> Self {
@@ -51,11 +56,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPrintDocumentSource {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPrintDocumentSource {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -69,7 +69,6 @@ impl ::core::fmt::Debug for IPrintDocumentSource {
 }
 unsafe impl ::windows::core::RuntimeType for IPrintDocumentSource {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{dedc0c30-f1eb-47df-aae6-ed5427511f01}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -86,6 +85,11 @@ pub struct IPrintDocumentSource_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrintManager(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrintManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrintManager {
     type Vtable = IPrintManager_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xff2a9694_8c99_44fd_ae4a_19d9aa9a0f0a);
@@ -106,6 +110,11 @@ pub struct IPrintManager_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrintManagerStatic(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrintManagerStatic {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrintManagerStatic {
     type Vtable = IPrintManagerStatic_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x58185dcd_e634_4654_84f0_e0152a8217ac);
@@ -123,6 +132,11 @@ pub struct IPrintManagerStatic_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrintManagerStatic2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrintManagerStatic2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrintManagerStatic2 {
     type Vtable = IPrintManagerStatic2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x35a99955_e6ab_4139_9abd_b86a729b3598);
@@ -136,6 +150,11 @@ pub struct IPrintManagerStatic2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrintPageInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrintPageInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrintPageInfo {
     type Vtable = IPrintPageInfo_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xdd4be9c9_a6a1_4ada_930e_da872a4f23d3);
@@ -164,6 +183,11 @@ pub struct IPrintPageInfo_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrintPageRange(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrintPageRange {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrintPageRange {
     type Vtable = IPrintPageRange_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf8a06c54_6e7c_51c5_57fd_0660c2d71513);
@@ -178,6 +202,11 @@ pub struct IPrintPageRange_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrintPageRangeFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrintPageRangeFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrintPageRangeFactory {
     type Vtable = IPrintPageRangeFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x408fd45f_e047_5f85_7129_fb085a4fad14);
@@ -192,6 +221,11 @@ pub struct IPrintPageRangeFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrintPageRangeOptions(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrintPageRangeOptions {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrintPageRangeOptions {
     type Vtable = IPrintPageRangeOptions_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xce6db728_1357_46b2_a923_79f995f448fc);
@@ -210,6 +244,11 @@ pub struct IPrintPageRangeOptions_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrintTask(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrintTask {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrintTask {
     type Vtable = IPrintTask_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x61d80247_6cf6_4fad_84e2_a5e82e2d4ceb);
@@ -260,6 +299,11 @@ pub struct IPrintTask_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrintTask2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrintTask2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrintTask2 {
     type Vtable = IPrintTask2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x36234877_3e53_4d9d_8f5e_316ac8dedae1);
@@ -274,6 +318,11 @@ pub struct IPrintTask2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrintTaskCompletedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrintTaskCompletedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrintTaskCompletedEventArgs {
     type Vtable = IPrintTaskCompletedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x5bcd34af_24e9_4c10_8d07_14c346ba3fce);
@@ -287,6 +336,11 @@ pub struct IPrintTaskCompletedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrintTaskOptions(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrintTaskOptions {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrintTaskOptions {
     type Vtable = IPrintTaskOptions_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x5a0a66bb_d289_41bb_96dd_57e28338ae3f);
@@ -305,6 +359,11 @@ pub struct IPrintTaskOptions_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrintTaskOptions2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrintTaskOptions2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrintTaskOptions2 {
     type Vtable = IPrintTaskOptions2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xeb9b1606_9a36_4b59_8617_b217849262e1);
@@ -322,6 +381,11 @@ pub struct IPrintTaskOptions2_Vtbl {
 #[doc = "*Required features: `\"Graphics_Printing\"`*"]
 #[repr(transparent)]
 pub struct IPrintTaskOptionsCore(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrintTaskOptionsCore {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPrintTaskOptionsCore {
     #[doc = "*Required features: `\"Graphics_Printing\"`, `\"Foundation\"`*"]
     #[cfg(feature = "Foundation")]
@@ -373,11 +437,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPrintTaskOptionsCore {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPrintTaskOptionsCore {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -391,7 +450,6 @@ impl ::core::fmt::Debug for IPrintTaskOptionsCore {
 }
 unsafe impl ::windows::core::RuntimeType for IPrintTaskOptionsCore {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{1bdbb474-4ed1-41eb-be3c-72d18ed67337}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -412,6 +470,11 @@ pub struct IPrintTaskOptionsCore_Vtbl {
 #[doc = "*Required features: `\"Graphics_Printing\"`*"]
 #[repr(transparent)]
 pub struct IPrintTaskOptionsCoreProperties(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrintTaskOptionsCoreProperties {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPrintTaskOptionsCoreProperties {
     #[doc = "*Required features: `\"Graphics_Printing\"`*"]
     pub fn SetMediaSize(&self, value: PrintMediaSize) -> ::windows::core::Result<()> {
@@ -613,11 +676,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPrintTaskOptionsCoreProperties {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPrintTaskOptionsCoreProperties {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -631,7 +689,6 @@ impl ::core::fmt::Debug for IPrintTaskOptionsCoreProperties {
 }
 unsafe impl ::windows::core::RuntimeType for IPrintTaskOptionsCoreProperties {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{c1b71832-9e93-4e55-814b-3326a59efce1}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -672,6 +729,11 @@ pub struct IPrintTaskOptionsCoreProperties_Vtbl {
 #[doc = "*Required features: `\"Graphics_Printing\"`*"]
 #[repr(transparent)]
 pub struct IPrintTaskOptionsCoreUIConfiguration(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrintTaskOptionsCoreUIConfiguration {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPrintTaskOptionsCoreUIConfiguration {
     #[doc = "*Required features: `\"Graphics_Printing\"`, `\"Foundation_Collections\"`*"]
     #[cfg(feature = "Foundation_Collections")]
@@ -723,11 +785,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPrintTaskOptionsCoreUIConfiguration {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPrintTaskOptionsCoreUIConfiguration {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -741,7 +798,6 @@ impl ::core::fmt::Debug for IPrintTaskOptionsCoreUIConfiguration {
 }
 unsafe impl ::windows::core::RuntimeType for IPrintTaskOptionsCoreUIConfiguration {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{62e69e23-9a1e-4336-b74f-3cc7f4cff709}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -762,6 +818,11 @@ pub struct IPrintTaskOptionsCoreUIConfiguration_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrintTaskProgressingEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrintTaskProgressingEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrintTaskProgressingEventArgs {
     type Vtable = IPrintTaskProgressingEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x810cd3cb_b410_4282_a073_5ac378234174);
@@ -775,6 +836,11 @@ pub struct IPrintTaskProgressingEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrintTaskRequest(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrintTaskRequest {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrintTaskRequest {
     type Vtable = IPrintTaskRequest_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x6ff61e2e_2722_4240_a67c_f364849a17f3);
@@ -793,6 +859,11 @@ pub struct IPrintTaskRequest_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrintTaskRequestedDeferral(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrintTaskRequestedDeferral {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrintTaskRequestedDeferral {
     type Vtable = IPrintTaskRequestedDeferral_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xcfefb3f0_ce3e_42c7_9496_64800c622c44);
@@ -806,6 +877,11 @@ pub struct IPrintTaskRequestedDeferral_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrintTaskRequestedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrintTaskRequestedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrintTaskRequestedEventArgs {
     type Vtable = IPrintTaskRequestedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd0aff924_a31b_454c_a7b6_5d0cc522fc16);
@@ -819,6 +895,11 @@ pub struct IPrintTaskRequestedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrintTaskSourceRequestedArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrintTaskSourceRequestedArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrintTaskSourceRequestedArgs {
     type Vtable = IPrintTaskSourceRequestedArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf9f067be_f456_41f0_9c98_5ce73e851410);
@@ -837,6 +918,11 @@ pub struct IPrintTaskSourceRequestedArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrintTaskSourceRequestedDeferral(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrintTaskSourceRequestedDeferral {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrintTaskSourceRequestedDeferral {
     type Vtable = IPrintTaskSourceRequestedDeferral_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x4a1560d1_6992_4d9d_8555_4ca4563fb166);
@@ -850,6 +936,11 @@ pub struct IPrintTaskSourceRequestedDeferral_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrintTaskTargetDeviceSupport(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrintTaskTargetDeviceSupport {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrintTaskTargetDeviceSupport {
     type Vtable = IPrintTaskTargetDeviceSupport_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x295d70c0_c2cb_4b7d_b0ea_93095091a220);
@@ -866,6 +957,11 @@ pub struct IPrintTaskTargetDeviceSupport_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IStandardPrintTaskOptionsStatic(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStandardPrintTaskOptionsStatic {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IStandardPrintTaskOptionsStatic {
     type Vtable = IStandardPrintTaskOptionsStatic_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb4483d26_0dd0_4cd4_baff_930fc7d6a574);
@@ -891,6 +987,11 @@ pub struct IStandardPrintTaskOptionsStatic_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IStandardPrintTaskOptionsStatic2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStandardPrintTaskOptionsStatic2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IStandardPrintTaskOptionsStatic2 {
     type Vtable = IStandardPrintTaskOptionsStatic2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x3be38bf4_7a44_4269_9a52_81261e289ee9);
@@ -904,6 +1005,11 @@ pub struct IStandardPrintTaskOptionsStatic2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IStandardPrintTaskOptionsStatic3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStandardPrintTaskOptionsStatic3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IStandardPrintTaskOptionsStatic3 {
     type Vtable = IStandardPrintTaskOptionsStatic3_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xbbf68e86_3858_41b3_a799_55dd9888d475);
@@ -950,6 +1056,7 @@ impl ::core::default::Default for PrintBinding {
 }
 unsafe impl ::windows::core::Abi for PrintBinding {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PrintBinding {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -958,7 +1065,6 @@ impl ::core::fmt::Debug for PrintBinding {
 }
 unsafe impl ::windows::core::RuntimeType for PrintBinding {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Graphics.Printing.PrintBinding;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -987,6 +1093,7 @@ impl ::core::default::Default for PrintBordering {
 }
 unsafe impl ::windows::core::Abi for PrintBordering {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PrintBordering {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -995,7 +1102,6 @@ impl ::core::fmt::Debug for PrintBordering {
 }
 unsafe impl ::windows::core::RuntimeType for PrintBordering {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Graphics.Printing.PrintBordering;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1024,6 +1130,7 @@ impl ::core::default::Default for PrintCollation {
 }
 unsafe impl ::windows::core::Abi for PrintCollation {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PrintCollation {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1032,7 +1139,6 @@ impl ::core::fmt::Debug for PrintCollation {
 }
 unsafe impl ::windows::core::RuntimeType for PrintCollation {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Graphics.Printing.PrintCollation;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1062,6 +1168,7 @@ impl ::core::default::Default for PrintColorMode {
 }
 unsafe impl ::windows::core::Abi for PrintColorMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PrintColorMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1070,7 +1177,6 @@ impl ::core::fmt::Debug for PrintColorMode {
 }
 unsafe impl ::windows::core::RuntimeType for PrintColorMode {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Graphics.Printing.PrintColorMode;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1100,6 +1206,7 @@ impl ::core::default::Default for PrintDuplex {
 }
 unsafe impl ::windows::core::Abi for PrintDuplex {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PrintDuplex {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1108,7 +1215,6 @@ impl ::core::fmt::Debug for PrintDuplex {
 }
 unsafe impl ::windows::core::RuntimeType for PrintDuplex {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Graphics.Printing.PrintDuplex;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1140,6 +1246,7 @@ impl ::core::default::Default for PrintHolePunch {
 }
 unsafe impl ::windows::core::Abi for PrintHolePunch {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PrintHolePunch {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1148,7 +1255,6 @@ impl ::core::fmt::Debug for PrintHolePunch {
 }
 unsafe impl ::windows::core::RuntimeType for PrintHolePunch {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Graphics.Printing.PrintHolePunch;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1205,11 +1311,6 @@ impl PrintManager {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for PrintManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PrintManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1223,7 +1324,6 @@ impl ::core::fmt::Debug for PrintManager {
 }
 unsafe impl ::windows::core::RuntimeType for PrintManager {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Printing.PrintManager;{ff2a9694-8c99-44fd-ae4a-19d9aa9a0f0a})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1469,6 +1569,7 @@ impl ::core::default::Default for PrintMediaSize {
 }
 unsafe impl ::windows::core::Abi for PrintMediaSize {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PrintMediaSize {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1477,7 +1578,6 @@ impl ::core::fmt::Debug for PrintMediaSize {
 }
 unsafe impl ::windows::core::RuntimeType for PrintMediaSize {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Graphics.Printing.PrintMediaSize;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1533,6 +1633,7 @@ impl ::core::default::Default for PrintMediaType {
 }
 unsafe impl ::windows::core::Abi for PrintMediaType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PrintMediaType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1541,7 +1642,6 @@ impl ::core::fmt::Debug for PrintMediaType {
 }
 unsafe impl ::windows::core::RuntimeType for PrintMediaType {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Graphics.Printing.PrintMediaType;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1572,6 +1672,7 @@ impl ::core::default::Default for PrintOrientation {
 }
 unsafe impl ::windows::core::Abi for PrintOrientation {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PrintOrientation {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1580,7 +1681,6 @@ impl ::core::fmt::Debug for PrintOrientation {
 }
 unsafe impl ::windows::core::RuntimeType for PrintOrientation {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Graphics.Printing.PrintOrientation;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1611,11 +1711,11 @@ impl ::core::fmt::Debug for PrintPageDescription {
 #[cfg(feature = "Foundation")]
 unsafe impl ::windows::core::Abi for PrintPageDescription {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Foundation")]
 unsafe impl ::windows::core::RuntimeType for PrintPageDescription {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"struct(Windows.Graphics.Printing.PrintPageDescription;struct(Windows.Foundation.Size;f4;f4);struct(Windows.Foundation.Rect;f4;f4;f4;f4);u4;u4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1713,11 +1813,6 @@ impl PrintPageInfo {
         }
     }
 }
-impl ::core::clone::Clone for PrintPageInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PrintPageInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1731,7 +1826,6 @@ impl ::core::fmt::Debug for PrintPageInfo {
 }
 unsafe impl ::windows::core::RuntimeType for PrintPageInfo {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Printing.PrintPageInfo;{dd4be9c9-a6a1-4ada-930e-da872a4f23d3})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1825,11 +1919,6 @@ impl PrintPageRange {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for PrintPageRange {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PrintPageRange {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1843,7 +1932,6 @@ impl ::core::fmt::Debug for PrintPageRange {
 }
 unsafe impl ::windows::core::RuntimeType for PrintPageRange {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Printing.PrintPageRange;{f8a06c54-6e7c-51c5-57fd-0660c2d71513})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1941,11 +2029,6 @@ impl PrintPageRangeOptions {
         }
     }
 }
-impl ::core::clone::Clone for PrintPageRangeOptions {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PrintPageRangeOptions {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1959,7 +2042,6 @@ impl ::core::fmt::Debug for PrintPageRangeOptions {
 }
 unsafe impl ::windows::core::RuntimeType for PrintPageRangeOptions {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Printing.PrintPageRangeOptions;{ce6db728-1357-46b2-a923-79f995f448fc})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2042,6 +2124,7 @@ impl ::core::default::Default for PrintQuality {
 }
 unsafe impl ::windows::core::Abi for PrintQuality {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PrintQuality {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2050,7 +2133,6 @@ impl ::core::fmt::Debug for PrintQuality {
 }
 unsafe impl ::windows::core::RuntimeType for PrintQuality {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Graphics.Printing.PrintQuality;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2087,6 +2169,7 @@ impl ::core::default::Default for PrintStaple {
 }
 unsafe impl ::windows::core::Abi for PrintStaple {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PrintStaple {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2095,7 +2178,6 @@ impl ::core::fmt::Debug for PrintStaple {
 }
 unsafe impl ::windows::core::RuntimeType for PrintStaple {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Graphics.Printing.PrintStaple;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2229,11 +2311,6 @@ impl PrintTask {
         }
     }
 }
-impl ::core::clone::Clone for PrintTask {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PrintTask {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2247,7 +2324,6 @@ impl ::core::fmt::Debug for PrintTask {
 }
 unsafe impl ::windows::core::RuntimeType for PrintTask {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Printing.PrintTask;{61d80247-6cf6-4fad-84e2-a5e82e2d4ceb})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2314,11 +2390,6 @@ impl PrintTaskCompletedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for PrintTaskCompletedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PrintTaskCompletedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2332,7 +2403,6 @@ impl ::core::fmt::Debug for PrintTaskCompletedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for PrintTaskCompletedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Printing.PrintTaskCompletedEventArgs;{5bcd34af-24e9-4c10-8d07-14c346ba3fce})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2409,6 +2479,7 @@ impl ::core::default::Default for PrintTaskCompletion {
 }
 unsafe impl ::windows::core::Abi for PrintTaskCompletion {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PrintTaskCompletion {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2417,7 +2488,6 @@ impl ::core::fmt::Debug for PrintTaskCompletion {
 }
 unsafe impl ::windows::core::RuntimeType for PrintTaskCompletion {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Graphics.Printing.PrintTaskCompletion;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2643,11 +2713,6 @@ impl PrintTaskOptions {
         }
     }
 }
-impl ::core::clone::Clone for PrintTaskOptions {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PrintTaskOptions {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2661,7 +2726,6 @@ impl ::core::fmt::Debug for PrintTaskOptions {
 }
 unsafe impl ::windows::core::RuntimeType for PrintTaskOptions {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Printing.PrintTaskOptions;{1bdbb474-4ed1-41eb-be3c-72d18ed67337})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2794,11 +2858,6 @@ impl PrintTaskProgressingEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for PrintTaskProgressingEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PrintTaskProgressingEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2812,7 +2871,6 @@ impl ::core::fmt::Debug for PrintTaskProgressingEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for PrintTaskProgressingEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Printing.PrintTaskProgressingEventArgs;{810cd3cb-b410-4282-a073-5ac378234174})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2896,11 +2954,6 @@ impl PrintTaskRequest {
         }
     }
 }
-impl ::core::clone::Clone for PrintTaskRequest {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PrintTaskRequest {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2914,7 +2967,6 @@ impl ::core::fmt::Debug for PrintTaskRequest {
 }
 unsafe impl ::windows::core::RuntimeType for PrintTaskRequest {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Printing.PrintTaskRequest;{6ff61e2e-2722-4240-a67c-f364849a17f3})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2978,11 +3030,6 @@ impl PrintTaskRequestedDeferral {
         unsafe { (::windows::core::Interface::vtable(this).Complete)(::core::mem::transmute_copy(this)).ok() }
     }
 }
-impl ::core::clone::Clone for PrintTaskRequestedDeferral {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PrintTaskRequestedDeferral {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2996,7 +3043,6 @@ impl ::core::fmt::Debug for PrintTaskRequestedDeferral {
 }
 unsafe impl ::windows::core::RuntimeType for PrintTaskRequestedDeferral {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Printing.PrintTaskRequestedDeferral;{cfefb3f0-ce3e-42c7-9496-64800c622c44})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3063,11 +3109,6 @@ impl PrintTaskRequestedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for PrintTaskRequestedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PrintTaskRequestedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3081,7 +3122,6 @@ impl ::core::fmt::Debug for PrintTaskRequestedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for PrintTaskRequestedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Printing.PrintTaskRequestedEventArgs;{d0aff924-a31b-454c-a7b6-5d0cc522fc16})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3162,11 +3202,6 @@ impl PrintTaskSourceRequestedArgs {
         }
     }
 }
-impl ::core::clone::Clone for PrintTaskSourceRequestedArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PrintTaskSourceRequestedArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3180,7 +3215,6 @@ impl ::core::fmt::Debug for PrintTaskSourceRequestedArgs {
 }
 unsafe impl ::windows::core::RuntimeType for PrintTaskSourceRequestedArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Printing.PrintTaskSourceRequestedArgs;{f9f067be-f456-41f0-9c98-5ce73e851410})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3244,11 +3278,6 @@ impl PrintTaskSourceRequestedDeferral {
         unsafe { (::windows::core::Interface::vtable(this).Complete)(::core::mem::transmute_copy(this)).ok() }
     }
 }
-impl ::core::clone::Clone for PrintTaskSourceRequestedDeferral {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PrintTaskSourceRequestedDeferral {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3262,7 +3291,6 @@ impl ::core::fmt::Debug for PrintTaskSourceRequestedDeferral {
 }
 unsafe impl ::windows::core::RuntimeType for PrintTaskSourceRequestedDeferral {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Printing.PrintTaskSourceRequestedDeferral;{4a1560d1-6992-4d9d-8555-4ca4563fb166})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3368,11 +3396,6 @@ impl<F: FnMut(&::core::option::Option<PrintTaskSourceRequestedArgs>) -> ::window
         ((*this).invoke)(::core::mem::transmute(&args)).into()
     }
 }
-impl ::core::clone::Clone for PrintTaskSourceRequestedHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PrintTaskSourceRequestedHandler {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3390,7 +3413,6 @@ unsafe impl ::windows::core::Interface for PrintTaskSourceRequestedHandler {
 }
 unsafe impl ::windows::core::RuntimeType for PrintTaskSourceRequestedHandler {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{6c109fa8-5cb6-4b3a-8663-f39cb02dc9b4}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

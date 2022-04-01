@@ -169,12 +169,6 @@ impl AllJoynAboutData {
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for AllJoynAboutData {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for AllJoynAboutData {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -191,7 +185,6 @@ impl ::core::fmt::Debug for AllJoynAboutData {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for AllJoynAboutData {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.AllJoyn.AllJoynAboutData;{e5a9bf00-1fa2-4839-93ef-f9df404890f7})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -431,12 +424,6 @@ impl AllJoynAboutDataView {
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for AllJoynAboutDataView {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for AllJoynAboutDataView {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -453,7 +440,6 @@ impl ::core::fmt::Debug for AllJoynAboutDataView {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for AllJoynAboutDataView {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.AllJoyn.AllJoynAboutDataView;{6823111f-6212-4934-9c48-e19ca4984288})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -592,12 +578,6 @@ impl AllJoynAcceptSessionJoinerEventArgs {
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for AllJoynAcceptSessionJoinerEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for AllJoynAcceptSessionJoinerEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -614,7 +594,6 @@ impl ::core::fmt::Debug for AllJoynAcceptSessionJoinerEventArgs {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for AllJoynAcceptSessionJoinerEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.AllJoyn.AllJoynAcceptSessionJoinerEventArgs;{4efb5365-3e8a-4257-8f10-539ce0d56c0f})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -715,12 +694,6 @@ impl AllJoynAuthenticationCompleteEventArgs {
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for AllJoynAuthenticationCompleteEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for AllJoynAuthenticationCompleteEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -737,7 +710,6 @@ impl ::core::fmt::Debug for AllJoynAuthenticationCompleteEventArgs {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for AllJoynAuthenticationCompleteEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.AllJoyn.AllJoynAuthenticationCompleteEventArgs;{97b4701c-15dc-4b53-b6a4-7d134300d7bf})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -835,6 +807,7 @@ impl ::core::default::Default for AllJoynAuthenticationMechanism {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Abi for AllJoynAuthenticationMechanism {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "deprecated")]
 impl ::core::fmt::Debug for AllJoynAuthenticationMechanism {
@@ -845,7 +818,6 @@ impl ::core::fmt::Debug for AllJoynAuthenticationMechanism {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for AllJoynAuthenticationMechanism {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.AllJoyn.AllJoynAuthenticationMechanism;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1075,12 +1047,6 @@ impl AllJoynBusAttachment {
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for AllJoynBusAttachment {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for AllJoynBusAttachment {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1097,7 +1063,6 @@ impl ::core::fmt::Debug for AllJoynBusAttachment {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for AllJoynBusAttachment {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.AllJoyn.AllJoynBusAttachment;{f309f153-1eed-42c3-a20e-436d41fe62f6})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1192,6 +1157,7 @@ impl ::core::default::Default for AllJoynBusAttachmentState {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Abi for AllJoynBusAttachmentState {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "deprecated")]
 impl ::core::fmt::Debug for AllJoynBusAttachmentState {
@@ -1202,7 +1168,6 @@ impl ::core::fmt::Debug for AllJoynBusAttachmentState {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for AllJoynBusAttachmentState {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.AllJoyn.AllJoynBusAttachmentState;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1233,12 +1198,6 @@ impl AllJoynBusAttachmentStateChangedEventArgs {
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for AllJoynBusAttachmentStateChangedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for AllJoynBusAttachmentStateChangedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1255,7 +1214,6 @@ impl ::core::fmt::Debug for AllJoynBusAttachmentStateChangedEventArgs {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for AllJoynBusAttachmentStateChangedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.AllJoyn.AllJoynBusAttachmentStateChangedEventArgs;{d82e75f4-c02a-41ec-a8d5-eab1558953aa})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1409,12 +1367,6 @@ impl AllJoynBusObject {
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for AllJoynBusObject {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for AllJoynBusObject {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1431,7 +1383,6 @@ impl ::core::fmt::Debug for AllJoynBusObject {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for AllJoynBusObject {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.AllJoyn.AllJoynBusObject;{e8fd825e-f73a-490c-8804-04e026643047})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1528,12 +1479,6 @@ impl AllJoynBusObjectStoppedEventArgs {
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for AllJoynBusObjectStoppedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for AllJoynBusObjectStoppedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1550,7 +1495,6 @@ impl ::core::fmt::Debug for AllJoynBusObjectStoppedEventArgs {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for AllJoynBusObjectStoppedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.AllJoyn.AllJoynBusObjectStoppedEventArgs;{de102115-ef8e-4d42-b93b-a2ae74519766})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1678,12 +1622,6 @@ impl AllJoynCredentials {
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for AllJoynCredentials {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for AllJoynCredentials {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1700,7 +1638,6 @@ impl ::core::fmt::Debug for AllJoynCredentials {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for AllJoynCredentials {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.AllJoyn.AllJoynCredentials;{824650f2-a190-40b1-abab-349ec244dfaa})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1819,12 +1756,6 @@ impl AllJoynCredentialsRequestedEventArgs {
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for AllJoynCredentialsRequestedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for AllJoynCredentialsRequestedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1841,7 +1772,6 @@ impl ::core::fmt::Debug for AllJoynCredentialsRequestedEventArgs {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for AllJoynCredentialsRequestedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.AllJoyn.AllJoynCredentialsRequestedEventArgs;{6a87e34e-b069-4b80-9e1a-41bc837c65d2})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1984,12 +1914,6 @@ impl AllJoynCredentialsVerificationRequestedEventArgs {
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for AllJoynCredentialsVerificationRequestedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for AllJoynCredentialsVerificationRequestedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2006,7 +1930,6 @@ impl ::core::fmt::Debug for AllJoynCredentialsVerificationRequestedEventArgs {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for AllJoynCredentialsVerificationRequestedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.AllJoyn.AllJoynCredentialsVerificationRequestedEventArgs;{800a7612-b805-44af-a2e1-792ab655a2d0})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2103,12 +2026,6 @@ impl AllJoynMessageInfo {
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for AllJoynMessageInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for AllJoynMessageInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2125,7 +2042,6 @@ impl ::core::fmt::Debug for AllJoynMessageInfo {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for AllJoynMessageInfo {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.AllJoyn.AllJoynMessageInfo;{ff2b0127-2c12-4859-aa3a-c74461ee814c})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2222,12 +2138,6 @@ impl AllJoynProducerStoppedEventArgs {
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for AllJoynProducerStoppedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for AllJoynProducerStoppedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2244,7 +2154,6 @@ impl ::core::fmt::Debug for AllJoynProducerStoppedEventArgs {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for AllJoynProducerStoppedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.AllJoyn.AllJoynProducerStoppedEventArgs;{51309770-4937-492d-8080-236439987ceb})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2373,12 +2282,6 @@ impl AllJoynServiceInfo {
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for AllJoynServiceInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for AllJoynServiceInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2395,7 +2298,6 @@ impl ::core::fmt::Debug for AllJoynServiceInfo {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for AllJoynServiceInfo {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.AllJoyn.AllJoynServiceInfo;{4cbe8209-b93e-4182-999b-ddd000f9c575})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2492,12 +2394,6 @@ impl AllJoynServiceInfoRemovedEventArgs {
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for AllJoynServiceInfoRemovedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for AllJoynServiceInfoRemovedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2514,7 +2410,6 @@ impl ::core::fmt::Debug for AllJoynServiceInfoRemovedEventArgs {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for AllJoynServiceInfoRemovedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.AllJoyn.AllJoynServiceInfoRemovedEventArgs;{3057a95f-1d3f-41f3-8969-e32792627396})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2682,12 +2577,6 @@ impl AllJoynSession {
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for AllJoynSession {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for AllJoynSession {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2704,7 +2593,6 @@ impl ::core::fmt::Debug for AllJoynSession {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for AllJoynSession {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.AllJoyn.AllJoynSession;{e8d11b0c-c0d4-406c-88a9-a93efa85d4b1})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2801,12 +2689,6 @@ impl AllJoynSessionJoinedEventArgs {
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for AllJoynSessionJoinedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for AllJoynSessionJoinedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2823,7 +2705,6 @@ impl ::core::fmt::Debug for AllJoynSessionJoinedEventArgs {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for AllJoynSessionJoinedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.AllJoyn.AllJoynSessionJoinedEventArgs;{9e9f5bd0-b5d7-47c5-8dab-b040cc192871})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2920,12 +2801,6 @@ impl AllJoynSessionLostEventArgs {
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for AllJoynSessionLostEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for AllJoynSessionLostEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2942,7 +2817,6 @@ impl ::core::fmt::Debug for AllJoynSessionLostEventArgs {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for AllJoynSessionLostEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.AllJoyn.AllJoynSessionLostEventArgs;{e766a48a-8bb8-4954-ae67-d2fa43d1f96b})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3039,6 +2913,7 @@ impl ::core::default::Default for AllJoynSessionLostReason {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Abi for AllJoynSessionLostReason {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "deprecated")]
 impl ::core::fmt::Debug for AllJoynSessionLostReason {
@@ -3049,7 +2924,6 @@ impl ::core::fmt::Debug for AllJoynSessionLostReason {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for AllJoynSessionLostReason {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.AllJoyn.AllJoynSessionLostReason;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -3085,12 +2959,6 @@ impl AllJoynSessionMemberAddedEventArgs {
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for AllJoynSessionMemberAddedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for AllJoynSessionMemberAddedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3107,7 +2975,6 @@ impl ::core::fmt::Debug for AllJoynSessionMemberAddedEventArgs {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for AllJoynSessionMemberAddedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.AllJoyn.AllJoynSessionMemberAddedEventArgs;{49a2798a-0dd1-46c1-9cd6-27190e503a5e})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3204,12 +3071,6 @@ impl AllJoynSessionMemberRemovedEventArgs {
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for AllJoynSessionMemberRemovedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for AllJoynSessionMemberRemovedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3226,7 +3087,6 @@ impl ::core::fmt::Debug for AllJoynSessionMemberRemovedEventArgs {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for AllJoynSessionMemberRemovedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.AllJoyn.AllJoynSessionMemberRemovedEventArgs;{409a219f-aa4a-4893-b430-baa1b63c6219})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3481,6 +3341,7 @@ impl ::core::default::Default for AllJoynTrafficType {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Abi for AllJoynTrafficType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "deprecated")]
 impl ::core::fmt::Debug for AllJoynTrafficType {
@@ -3491,7 +3352,6 @@ impl ::core::fmt::Debug for AllJoynTrafficType {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for AllJoynTrafficType {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.AllJoyn.AllJoynTrafficType;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -3527,12 +3387,6 @@ impl AllJoynWatcherStoppedEventArgs {
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for AllJoynWatcherStoppedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for AllJoynWatcherStoppedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3549,7 +3403,6 @@ impl ::core::fmt::Debug for AllJoynWatcherStoppedEventArgs {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for AllJoynWatcherStoppedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.AllJoyn.AllJoynWatcherStoppedEventArgs;{c9fca03b-701d-4aa8-97dd-a2bb0a8f5fa3})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3619,6 +3472,12 @@ unsafe impl ::core::marker::Sync for AllJoynWatcherStoppedEventArgs {}
 #[cfg(feature = "deprecated")]
 #[repr(transparent)]
 pub struct IAllJoynAboutData(::windows::core::IUnknown);
+#[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for IAllJoynAboutData {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for IAllJoynAboutData {
     type Vtable = IAllJoynAboutData_Vtbl;
@@ -3719,6 +3578,12 @@ pub struct IAllJoynAboutData_Vtbl {
 #[repr(transparent)]
 pub struct IAllJoynAboutDataView(::windows::core::IUnknown);
 #[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for IAllJoynAboutDataView {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for IAllJoynAboutDataView {
     type Vtable = IAllJoynAboutDataView_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x6823111f_6212_4934_9c48_e19ca4984288);
@@ -3798,6 +3663,12 @@ pub struct IAllJoynAboutDataView_Vtbl {
 #[repr(transparent)]
 pub struct IAllJoynAboutDataViewStatics(::windows::core::IUnknown);
 #[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for IAllJoynAboutDataViewStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for IAllJoynAboutDataViewStatics {
     type Vtable = IAllJoynAboutDataViewStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x57edb688_0c5e_416e_88b5_39b32d25c47d);
@@ -3820,6 +3691,12 @@ pub struct IAllJoynAboutDataViewStatics_Vtbl {
 #[cfg(feature = "deprecated")]
 #[repr(transparent)]
 pub struct IAllJoynAcceptSessionJoiner(::windows::core::IUnknown);
+#[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for IAllJoynAcceptSessionJoiner {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "deprecated")]
 impl IAllJoynAcceptSessionJoiner {
     #[doc = "*Required features: `\"Devices_AllJoyn\"`, `\"deprecated\"`*"]
@@ -3878,12 +3755,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for IAllJoynAcceptSessionJoiner {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for IAllJoynAcceptSessionJoiner {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3900,7 +3771,6 @@ impl ::core::fmt::Debug for IAllJoynAcceptSessionJoiner {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for IAllJoynAcceptSessionJoiner {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{4da817d2-cd1d-4023-a7c4-16def89c28df}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3924,6 +3794,12 @@ pub struct IAllJoynAcceptSessionJoiner_Vtbl {
 #[cfg(feature = "deprecated")]
 #[repr(transparent)]
 pub struct IAllJoynAcceptSessionJoinerEventArgs(::windows::core::IUnknown);
+#[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for IAllJoynAcceptSessionJoinerEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for IAllJoynAcceptSessionJoinerEventArgs {
     type Vtable = IAllJoynAcceptSessionJoinerEventArgs_Vtbl;
@@ -3964,6 +3840,12 @@ pub struct IAllJoynAcceptSessionJoinerEventArgs_Vtbl {
 #[repr(transparent)]
 pub struct IAllJoynAcceptSessionJoinerEventArgsFactory(::windows::core::IUnknown);
 #[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for IAllJoynAcceptSessionJoinerEventArgsFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for IAllJoynAcceptSessionJoinerEventArgsFactory {
     type Vtable = IAllJoynAcceptSessionJoinerEventArgsFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb4435bc0_6145_429e_84db_d5bfe772b14f);
@@ -3982,6 +3864,12 @@ pub struct IAllJoynAcceptSessionJoinerEventArgsFactory_Vtbl {
 #[cfg(feature = "deprecated")]
 #[repr(transparent)]
 pub struct IAllJoynAuthenticationCompleteEventArgs(::windows::core::IUnknown);
+#[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for IAllJoynAuthenticationCompleteEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for IAllJoynAuthenticationCompleteEventArgs {
     type Vtable = IAllJoynAuthenticationCompleteEventArgs_Vtbl;
@@ -4009,6 +3897,12 @@ pub struct IAllJoynAuthenticationCompleteEventArgs_Vtbl {
 #[cfg(feature = "deprecated")]
 #[repr(transparent)]
 pub struct IAllJoynBusAttachment(::windows::core::IUnknown);
+#[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for IAllJoynBusAttachment {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for IAllJoynBusAttachment {
     type Vtable = IAllJoynBusAttachment_Vtbl;
@@ -4089,6 +3983,12 @@ pub struct IAllJoynBusAttachment_Vtbl {
 #[repr(transparent)]
 pub struct IAllJoynBusAttachment2(::windows::core::IUnknown);
 #[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for IAllJoynBusAttachment2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for IAllJoynBusAttachment2 {
     type Vtable = IAllJoynBusAttachment2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x3474cb1e_2368_43b2_b43e_6a3ac1278d98);
@@ -4128,6 +4028,12 @@ pub struct IAllJoynBusAttachment2_Vtbl {
 #[repr(transparent)]
 pub struct IAllJoynBusAttachmentFactory(::windows::core::IUnknown);
 #[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for IAllJoynBusAttachmentFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for IAllJoynBusAttachmentFactory {
     type Vtable = IAllJoynBusAttachmentFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x642ef1a4_ad85_4ddf_90ae_604452b22288);
@@ -4146,6 +4052,12 @@ pub struct IAllJoynBusAttachmentFactory_Vtbl {
 #[cfg(feature = "deprecated")]
 #[repr(transparent)]
 pub struct IAllJoynBusAttachmentStateChangedEventArgs(::windows::core::IUnknown);
+#[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for IAllJoynBusAttachmentStateChangedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for IAllJoynBusAttachmentStateChangedEventArgs {
     type Vtable = IAllJoynBusAttachmentStateChangedEventArgs_Vtbl;
@@ -4170,6 +4082,12 @@ pub struct IAllJoynBusAttachmentStateChangedEventArgs_Vtbl {
 #[repr(transparent)]
 pub struct IAllJoynBusAttachmentStatics(::windows::core::IUnknown);
 #[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for IAllJoynBusAttachmentStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for IAllJoynBusAttachmentStatics {
     type Vtable = IAllJoynBusAttachmentStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x839d4d3d_1051_40d7_872a_8d0141115b1f);
@@ -4192,6 +4110,12 @@ pub struct IAllJoynBusAttachmentStatics_Vtbl {
 #[cfg(feature = "deprecated")]
 #[repr(transparent)]
 pub struct IAllJoynBusObject(::windows::core::IUnknown);
+#[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for IAllJoynBusObject {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for IAllJoynBusObject {
     type Vtable = IAllJoynBusObject_Vtbl;
@@ -4236,6 +4160,12 @@ pub struct IAllJoynBusObject_Vtbl {
 #[repr(transparent)]
 pub struct IAllJoynBusObjectFactory(::windows::core::IUnknown);
 #[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for IAllJoynBusObjectFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for IAllJoynBusObjectFactory {
     type Vtable = IAllJoynBusObjectFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x2c2f9f0b_8e02_4f9c_ac27_ea6dad5d3b50);
@@ -4259,6 +4189,12 @@ pub struct IAllJoynBusObjectFactory_Vtbl {
 #[repr(transparent)]
 pub struct IAllJoynBusObjectStoppedEventArgs(::windows::core::IUnknown);
 #[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for IAllJoynBusObjectStoppedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for IAllJoynBusObjectStoppedEventArgs {
     type Vtable = IAllJoynBusObjectStoppedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xde102115_ef8e_4d42_b93b_a2ae74519766);
@@ -4278,6 +4214,12 @@ pub struct IAllJoynBusObjectStoppedEventArgs_Vtbl {
 #[repr(transparent)]
 pub struct IAllJoynBusObjectStoppedEventArgsFactory(::windows::core::IUnknown);
 #[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for IAllJoynBusObjectStoppedEventArgsFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for IAllJoynBusObjectStoppedEventArgsFactory {
     type Vtable = IAllJoynBusObjectStoppedEventArgsFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x6b22fd48_d0a3_4255_953a_4772b4028073);
@@ -4296,6 +4238,12 @@ pub struct IAllJoynBusObjectStoppedEventArgsFactory_Vtbl {
 #[cfg(feature = "deprecated")]
 #[repr(transparent)]
 pub struct IAllJoynCredentials(::windows::core::IUnknown);
+#[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for IAllJoynCredentials {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for IAllJoynCredentials {
     type Vtable = IAllJoynCredentials_Vtbl;
@@ -4340,6 +4288,12 @@ pub struct IAllJoynCredentials_Vtbl {
 #[repr(transparent)]
 pub struct IAllJoynCredentialsRequestedEventArgs(::windows::core::IUnknown);
 #[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for IAllJoynCredentialsRequestedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for IAllJoynCredentialsRequestedEventArgs {
     type Vtable = IAllJoynCredentialsRequestedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x6a87e34e_b069_4b80_9e1a_41bc837c65d2);
@@ -4374,6 +4328,12 @@ pub struct IAllJoynCredentialsRequestedEventArgs_Vtbl {
 #[cfg(feature = "deprecated")]
 #[repr(transparent)]
 pub struct IAllJoynCredentialsVerificationRequestedEventArgs(::windows::core::IUnknown);
+#[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for IAllJoynCredentialsVerificationRequestedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for IAllJoynCredentialsVerificationRequestedEventArgs {
     type Vtable = IAllJoynCredentialsVerificationRequestedEventArgs_Vtbl;
@@ -4422,6 +4382,12 @@ pub struct IAllJoynCredentialsVerificationRequestedEventArgs_Vtbl {
 #[repr(transparent)]
 pub struct IAllJoynMessageInfo(::windows::core::IUnknown);
 #[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for IAllJoynMessageInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for IAllJoynMessageInfo {
     type Vtable = IAllJoynMessageInfo_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xff2b0127_2c12_4859_aa3a_c74461ee814c);
@@ -4441,6 +4407,12 @@ pub struct IAllJoynMessageInfo_Vtbl {
 #[repr(transparent)]
 pub struct IAllJoynMessageInfoFactory(::windows::core::IUnknown);
 #[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for IAllJoynMessageInfoFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for IAllJoynMessageInfoFactory {
     type Vtable = IAllJoynMessageInfoFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x34664c2a_8289_43d4_b4a8_3f4de359f043);
@@ -4459,6 +4431,12 @@ pub struct IAllJoynMessageInfoFactory_Vtbl {
 #[cfg(feature = "deprecated")]
 #[repr(transparent)]
 pub struct IAllJoynProducer(::windows::core::IUnknown);
+#[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for IAllJoynProducer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "deprecated")]
 impl IAllJoynProducer {
     #[doc = "*Required features: `\"Devices_AllJoyn\"`, `\"deprecated\"`*"]
@@ -4517,12 +4495,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for IAllJoynProducer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for IAllJoynProducer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4539,7 +4511,6 @@ impl ::core::fmt::Debug for IAllJoynProducer {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for IAllJoynProducer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{9d084679-469b-495a-a710-ac50f123069f}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4564,6 +4535,12 @@ pub struct IAllJoynProducer_Vtbl {
 #[repr(transparent)]
 pub struct IAllJoynProducerStoppedEventArgs(::windows::core::IUnknown);
 #[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for IAllJoynProducerStoppedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for IAllJoynProducerStoppedEventArgs {
     type Vtable = IAllJoynProducerStoppedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x51309770_4937_492d_8080_236439987ceb);
@@ -4583,6 +4560,12 @@ pub struct IAllJoynProducerStoppedEventArgs_Vtbl {
 #[repr(transparent)]
 pub struct IAllJoynProducerStoppedEventArgsFactory(::windows::core::IUnknown);
 #[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for IAllJoynProducerStoppedEventArgsFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for IAllJoynProducerStoppedEventArgsFactory {
     type Vtable = IAllJoynProducerStoppedEventArgsFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x56529961_b219_4d6e_9f78_fa3f99fa8fe5);
@@ -4601,6 +4584,12 @@ pub struct IAllJoynProducerStoppedEventArgsFactory_Vtbl {
 #[cfg(feature = "deprecated")]
 #[repr(transparent)]
 pub struct IAllJoynServiceInfo(::windows::core::IUnknown);
+#[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for IAllJoynServiceInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for IAllJoynServiceInfo {
     type Vtable = IAllJoynServiceInfo_Vtbl;
@@ -4629,6 +4618,12 @@ pub struct IAllJoynServiceInfo_Vtbl {
 #[repr(transparent)]
 pub struct IAllJoynServiceInfoFactory(::windows::core::IUnknown);
 #[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for IAllJoynServiceInfoFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for IAllJoynServiceInfoFactory {
     type Vtable = IAllJoynServiceInfoFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x7581dabd_fe03_4f4b_94a4_f02fdcbd11b8);
@@ -4647,6 +4642,12 @@ pub struct IAllJoynServiceInfoFactory_Vtbl {
 #[cfg(feature = "deprecated")]
 #[repr(transparent)]
 pub struct IAllJoynServiceInfoRemovedEventArgs(::windows::core::IUnknown);
+#[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for IAllJoynServiceInfoRemovedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for IAllJoynServiceInfoRemovedEventArgs {
     type Vtable = IAllJoynServiceInfoRemovedEventArgs_Vtbl;
@@ -4667,6 +4668,12 @@ pub struct IAllJoynServiceInfoRemovedEventArgs_Vtbl {
 #[repr(transparent)]
 pub struct IAllJoynServiceInfoRemovedEventArgsFactory(::windows::core::IUnknown);
 #[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for IAllJoynServiceInfoRemovedEventArgsFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for IAllJoynServiceInfoRemovedEventArgsFactory {
     type Vtable = IAllJoynServiceInfoRemovedEventArgsFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x0dbf8627_9aff_4955_9227_6953baf41569);
@@ -4686,6 +4693,12 @@ pub struct IAllJoynServiceInfoRemovedEventArgsFactory_Vtbl {
 #[repr(transparent)]
 pub struct IAllJoynServiceInfoStatics(::windows::core::IUnknown);
 #[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for IAllJoynServiceInfoStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for IAllJoynServiceInfoStatics {
     type Vtable = IAllJoynServiceInfoStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x5678570a_603a_49fc_b750_0ef13609213c);
@@ -4704,6 +4717,12 @@ pub struct IAllJoynServiceInfoStatics_Vtbl {
 #[cfg(feature = "deprecated")]
 #[repr(transparent)]
 pub struct IAllJoynSession(::windows::core::IUnknown);
+#[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for IAllJoynSession {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for IAllJoynSession {
     type Vtable = IAllJoynSession_Vtbl;
@@ -4756,6 +4775,12 @@ pub struct IAllJoynSession_Vtbl {
 #[repr(transparent)]
 pub struct IAllJoynSessionJoinedEventArgs(::windows::core::IUnknown);
 #[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for IAllJoynSessionJoinedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for IAllJoynSessionJoinedEventArgs {
     type Vtable = IAllJoynSessionJoinedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9e9f5bd0_b5d7_47c5_8dab_b040cc192871);
@@ -4774,6 +4799,12 @@ pub struct IAllJoynSessionJoinedEventArgs_Vtbl {
 #[cfg(feature = "deprecated")]
 #[repr(transparent)]
 pub struct IAllJoynSessionJoinedEventArgsFactory(::windows::core::IUnknown);
+#[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for IAllJoynSessionJoinedEventArgsFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for IAllJoynSessionJoinedEventArgsFactory {
     type Vtable = IAllJoynSessionJoinedEventArgsFactory_Vtbl;
@@ -4794,6 +4825,12 @@ pub struct IAllJoynSessionJoinedEventArgsFactory_Vtbl {
 #[repr(transparent)]
 pub struct IAllJoynSessionLostEventArgs(::windows::core::IUnknown);
 #[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for IAllJoynSessionLostEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for IAllJoynSessionLostEventArgs {
     type Vtable = IAllJoynSessionLostEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe766a48a_8bb8_4954_ae67_d2fa43d1f96b);
@@ -4812,6 +4849,12 @@ pub struct IAllJoynSessionLostEventArgs_Vtbl {
 #[cfg(feature = "deprecated")]
 #[repr(transparent)]
 pub struct IAllJoynSessionLostEventArgsFactory(::windows::core::IUnknown);
+#[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for IAllJoynSessionLostEventArgsFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for IAllJoynSessionLostEventArgsFactory {
     type Vtable = IAllJoynSessionLostEventArgsFactory_Vtbl;
@@ -4832,6 +4875,12 @@ pub struct IAllJoynSessionLostEventArgsFactory_Vtbl {
 #[repr(transparent)]
 pub struct IAllJoynSessionMemberAddedEventArgs(::windows::core::IUnknown);
 #[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for IAllJoynSessionMemberAddedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for IAllJoynSessionMemberAddedEventArgs {
     type Vtable = IAllJoynSessionMemberAddedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x49a2798a_0dd1_46c1_9cd6_27190e503a5e);
@@ -4850,6 +4899,12 @@ pub struct IAllJoynSessionMemberAddedEventArgs_Vtbl {
 #[cfg(feature = "deprecated")]
 #[repr(transparent)]
 pub struct IAllJoynSessionMemberAddedEventArgsFactory(::windows::core::IUnknown);
+#[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for IAllJoynSessionMemberAddedEventArgsFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for IAllJoynSessionMemberAddedEventArgsFactory {
     type Vtable = IAllJoynSessionMemberAddedEventArgsFactory_Vtbl;
@@ -4870,6 +4925,12 @@ pub struct IAllJoynSessionMemberAddedEventArgsFactory_Vtbl {
 #[repr(transparent)]
 pub struct IAllJoynSessionMemberRemovedEventArgs(::windows::core::IUnknown);
 #[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for IAllJoynSessionMemberRemovedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for IAllJoynSessionMemberRemovedEventArgs {
     type Vtable = IAllJoynSessionMemberRemovedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x409a219f_aa4a_4893_b430_baa1b63c6219);
@@ -4889,6 +4950,12 @@ pub struct IAllJoynSessionMemberRemovedEventArgs_Vtbl {
 #[repr(transparent)]
 pub struct IAllJoynSessionMemberRemovedEventArgsFactory(::windows::core::IUnknown);
 #[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for IAllJoynSessionMemberRemovedEventArgsFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for IAllJoynSessionMemberRemovedEventArgsFactory {
     type Vtable = IAllJoynSessionMemberRemovedEventArgsFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc4d355e8_42b8_4b67_b757_d0cfcad59280);
@@ -4907,6 +4974,12 @@ pub struct IAllJoynSessionMemberRemovedEventArgsFactory_Vtbl {
 #[cfg(feature = "deprecated")]
 #[repr(transparent)]
 pub struct IAllJoynSessionStatics(::windows::core::IUnknown);
+#[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for IAllJoynSessionStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for IAllJoynSessionStatics {
     type Vtable = IAllJoynSessionStatics_Vtbl;
@@ -4930,6 +5003,12 @@ pub struct IAllJoynSessionStatics_Vtbl {
 #[cfg(feature = "deprecated")]
 #[repr(transparent)]
 pub struct IAllJoynStatusStatics(::windows::core::IUnknown);
+#[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for IAllJoynStatusStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for IAllJoynStatusStatics {
     type Vtable = IAllJoynStatusStatics_Vtbl;
@@ -5018,6 +5097,12 @@ pub struct IAllJoynStatusStatics_Vtbl {
 #[repr(transparent)]
 pub struct IAllJoynWatcherStoppedEventArgs(::windows::core::IUnknown);
 #[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for IAllJoynWatcherStoppedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for IAllJoynWatcherStoppedEventArgs {
     type Vtable = IAllJoynWatcherStoppedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc9fca03b_701d_4aa8_97dd_a2bb0a8f5fa3);
@@ -5036,6 +5121,12 @@ pub struct IAllJoynWatcherStoppedEventArgs_Vtbl {
 #[cfg(feature = "deprecated")]
 #[repr(transparent)]
 pub struct IAllJoynWatcherStoppedEventArgsFactory(::windows::core::IUnknown);
+#[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for IAllJoynWatcherStoppedEventArgsFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for IAllJoynWatcherStoppedEventArgsFactory {
     type Vtable = IAllJoynWatcherStoppedEventArgsFactory_Vtbl;

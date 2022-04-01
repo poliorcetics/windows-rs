@@ -58,6 +58,7 @@ impl ::core::default::Default for FAXROUTE_ENABLE {
 }
 unsafe impl ::windows::core::Abi for FAXROUTE_ENABLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FAXROUTE_ENABLE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -103,6 +104,7 @@ impl ::core::default::Default for FAX_ACCESS_RIGHTS_ENUM {
 }
 unsafe impl ::windows::core::Abi for FAX_ACCESS_RIGHTS_ENUM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FAX_ACCESS_RIGHTS_ENUM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -146,6 +148,7 @@ impl ::core::default::Default for FAX_ACCESS_RIGHTS_ENUM_2 {
 }
 unsafe impl ::windows::core::Abi for FAX_ACCESS_RIGHTS_ENUM_2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FAX_ACCESS_RIGHTS_ENUM_2 {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -181,6 +184,7 @@ impl ::core::default::Default for FAX_ACCOUNT_EVENTS_TYPE_ENUM {
 }
 unsafe impl ::windows::core::Abi for FAX_ACCOUNT_EVENTS_TYPE_ENUM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FAX_ACCOUNT_EVENTS_TYPE_ENUM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -236,6 +240,7 @@ impl ::core::fmt::Debug for FAX_CONFIGURATIONA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for FAX_CONFIGURATIONA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for FAX_CONFIGURATIONA {
@@ -300,6 +305,7 @@ impl ::core::fmt::Debug for FAX_CONFIGURATIONW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for FAX_CONFIGURATIONW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for FAX_CONFIGURATIONW {
@@ -344,6 +350,7 @@ impl ::core::fmt::Debug for FAX_CONTEXT_INFOA {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
 unsafe impl ::windows::core::Abi for FAX_CONTEXT_INFOA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
 impl ::core::cmp::PartialEq for FAX_CONTEXT_INFOA {
@@ -384,6 +391,7 @@ impl ::core::fmt::Debug for FAX_CONTEXT_INFOW {
 #[cfg(feature = "Win32_Graphics_Gdi")]
 unsafe impl ::windows::core::Abi for FAX_CONTEXT_INFOW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Gdi")]
 impl ::core::cmp::PartialEq for FAX_CONTEXT_INFOW {
@@ -480,6 +488,7 @@ impl ::core::fmt::Debug for FAX_COVERPAGE_INFOA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for FAX_COVERPAGE_INFOA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for FAX_COVERPAGE_INFOA {
@@ -576,6 +585,7 @@ impl ::core::fmt::Debug for FAX_COVERPAGE_INFOW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for FAX_COVERPAGE_INFOW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for FAX_COVERPAGE_INFOW {
@@ -614,6 +624,7 @@ impl ::core::default::Default for FAX_COVERPAGE_TYPE_ENUM {
 }
 unsafe impl ::windows::core::Abi for FAX_COVERPAGE_TYPE_ENUM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FAX_COVERPAGE_TYPE_ENUM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -643,6 +654,7 @@ impl ::core::default::Default for FAX_DEVICE_RECEIVE_MODE_ENUM {
 }
 unsafe impl ::windows::core::Abi for FAX_DEVICE_RECEIVE_MODE_ENUM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FAX_DEVICE_RECEIVE_MODE_ENUM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -712,6 +724,7 @@ impl ::core::fmt::Debug for FAX_DEVICE_STATUSA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for FAX_DEVICE_STATUSA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for FAX_DEVICE_STATUSA {
@@ -790,6 +803,7 @@ impl ::core::fmt::Debug for FAX_DEVICE_STATUSW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for FAX_DEVICE_STATUSW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for FAX_DEVICE_STATUSW {
@@ -831,6 +845,7 @@ impl ::core::fmt::Debug for FAX_DEV_STATUS {
 }
 unsafe impl ::windows::core::Abi for FAX_DEV_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for FAX_DEV_STATUS {
     fn eq(&self, other: &Self) -> bool {
@@ -866,6 +881,7 @@ impl ::core::default::Default for FAX_ENUM_DELIVERY_REPORT_TYPES {
 }
 unsafe impl ::windows::core::Abi for FAX_ENUM_DELIVERY_REPORT_TYPES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FAX_ENUM_DELIVERY_REPORT_TYPES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -893,6 +909,7 @@ impl ::core::default::Default for FAX_ENUM_DEVICE_ID_SOURCE {
 }
 unsafe impl ::windows::core::Abi for FAX_ENUM_DEVICE_ID_SOURCE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FAX_ENUM_DEVICE_ID_SOURCE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -924,6 +941,7 @@ impl ::core::default::Default for FAX_ENUM_JOB_COMMANDS {
 }
 unsafe impl ::windows::core::Abi for FAX_ENUM_JOB_COMMANDS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FAX_ENUM_JOB_COMMANDS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -953,6 +971,7 @@ impl ::core::default::Default for FAX_ENUM_JOB_SEND_ATTRIBUTES {
 }
 unsafe impl ::windows::core::Abi for FAX_ENUM_JOB_SEND_ATTRIBUTES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FAX_ENUM_JOB_SEND_ATTRIBUTES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -984,6 +1003,7 @@ impl ::core::default::Default for FAX_ENUM_LOG_CATEGORIES {
 }
 unsafe impl ::windows::core::Abi for FAX_ENUM_LOG_CATEGORIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FAX_ENUM_LOG_CATEGORIES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1015,6 +1035,7 @@ impl ::core::default::Default for FAX_ENUM_LOG_LEVELS {
 }
 unsafe impl ::windows::core::Abi for FAX_ENUM_LOG_LEVELS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FAX_ENUM_LOG_LEVELS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1042,6 +1063,7 @@ impl ::core::default::Default for FAX_ENUM_PORT_OPEN_TYPE {
 }
 unsafe impl ::windows::core::Abi for FAX_ENUM_PORT_OPEN_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FAX_ENUM_PORT_OPEN_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1105,6 +1127,7 @@ impl ::core::fmt::Debug for FAX_EVENTA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for FAX_EVENTA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for FAX_EVENTA {
@@ -1147,6 +1170,7 @@ impl ::core::fmt::Debug for FAX_EVENTW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for FAX_EVENTW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for FAX_EVENTW {
@@ -1212,6 +1236,7 @@ impl ::core::fmt::Debug for FAX_GLOBAL_ROUTING_INFOA {
 }
 unsafe impl ::windows::core::Abi for FAX_GLOBAL_ROUTING_INFOA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for FAX_GLOBAL_ROUTING_INFOA {
     fn eq(&self, other: &Self) -> bool {
@@ -1248,6 +1273,7 @@ impl ::core::fmt::Debug for FAX_GLOBAL_ROUTING_INFOW {
 }
 unsafe impl ::windows::core::Abi for FAX_GLOBAL_ROUTING_INFOW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for FAX_GLOBAL_ROUTING_INFOW {
     fn eq(&self, other: &Self) -> bool {
@@ -1285,6 +1311,7 @@ impl ::core::default::Default for FAX_GROUP_STATUS_ENUM {
 }
 unsafe impl ::windows::core::Abi for FAX_GROUP_STATUS_ENUM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FAX_GROUP_STATUS_ENUM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1354,6 +1381,7 @@ impl ::core::fmt::Debug for FAX_JOB_ENTRYA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for FAX_JOB_ENTRYA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for FAX_JOB_ENTRYA {
@@ -1432,6 +1460,7 @@ impl ::core::fmt::Debug for FAX_JOB_ENTRYW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for FAX_JOB_ENTRYW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for FAX_JOB_ENTRYW {
@@ -1506,6 +1535,7 @@ impl ::core::default::Default for FAX_JOB_EXTENDED_STATUS_ENUM {
 }
 unsafe impl ::windows::core::Abi for FAX_JOB_EXTENDED_STATUS_ENUM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FAX_JOB_EXTENDED_STATUS_ENUM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1545,6 +1575,7 @@ impl ::core::default::Default for FAX_JOB_OPERATIONS_ENUM {
 }
 unsafe impl ::windows::core::Abi for FAX_JOB_OPERATIONS_ENUM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FAX_JOB_OPERATIONS_ENUM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1604,6 +1635,7 @@ impl ::core::fmt::Debug for FAX_JOB_PARAMA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for FAX_JOB_PARAMA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for FAX_JOB_PARAMA {
@@ -1672,6 +1704,7 @@ impl ::core::fmt::Debug for FAX_JOB_PARAMW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for FAX_JOB_PARAMW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for FAX_JOB_PARAMW {
@@ -1728,6 +1761,7 @@ impl ::core::default::Default for FAX_JOB_STATUS_ENUM {
 }
 unsafe impl ::windows::core::Abi for FAX_JOB_STATUS_ENUM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FAX_JOB_STATUS_ENUM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1759,6 +1793,7 @@ impl ::core::default::Default for FAX_JOB_TYPE_ENUM {
 }
 unsafe impl ::windows::core::Abi for FAX_JOB_TYPE_ENUM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FAX_JOB_TYPE_ENUM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1785,6 +1820,7 @@ impl ::core::fmt::Debug for FAX_LOG_CATEGORYA {
 }
 unsafe impl ::windows::core::Abi for FAX_LOG_CATEGORYA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for FAX_LOG_CATEGORYA {
     fn eq(&self, other: &Self) -> bool {
@@ -1817,6 +1853,7 @@ impl ::core::fmt::Debug for FAX_LOG_CATEGORYW {
 }
 unsafe impl ::windows::core::Abi for FAX_LOG_CATEGORYW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for FAX_LOG_CATEGORYW {
     fn eq(&self, other: &Self) -> bool {
@@ -1854,6 +1891,7 @@ impl ::core::default::Default for FAX_LOG_LEVEL_ENUM {
 }
 unsafe impl ::windows::core::Abi for FAX_LOG_LEVEL_ENUM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FAX_LOG_LEVEL_ENUM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1886,6 +1924,7 @@ impl ::core::fmt::Debug for FAX_PORT_INFOA {
 }
 unsafe impl ::windows::core::Abi for FAX_PORT_INFOA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for FAX_PORT_INFOA {
     fn eq(&self, other: &Self) -> bool {
@@ -1924,6 +1963,7 @@ impl ::core::fmt::Debug for FAX_PORT_INFOW {
 }
 unsafe impl ::windows::core::Abi for FAX_PORT_INFOW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for FAX_PORT_INFOW {
     fn eq(&self, other: &Self) -> bool {
@@ -1980,6 +2020,7 @@ impl ::core::fmt::Debug for FAX_PRINT_INFOA {
 }
 unsafe impl ::windows::core::Abi for FAX_PRINT_INFOA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for FAX_PRINT_INFOA {
     fn eq(&self, other: &Self) -> bool {
@@ -2032,6 +2073,7 @@ impl ::core::fmt::Debug for FAX_PRINT_INFOW {
 }
 unsafe impl ::windows::core::Abi for FAX_PRINT_INFOW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for FAX_PRINT_INFOW {
     fn eq(&self, other: &Self) -> bool {
@@ -2067,6 +2109,7 @@ impl ::core::default::Default for FAX_PRIORITY_TYPE_ENUM {
 }
 unsafe impl ::windows::core::Abi for FAX_PRIORITY_TYPE_ENUM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FAX_PRIORITY_TYPE_ENUM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2104,6 +2147,7 @@ impl ::core::default::Default for FAX_PROVIDER_STATUS_ENUM {
 }
 unsafe impl ::windows::core::Abi for FAX_PROVIDER_STATUS_ENUM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FAX_PROVIDER_STATUS_ENUM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2133,6 +2177,7 @@ impl ::core::default::Default for FAX_RECEIPT_TYPE_ENUM {
 }
 unsafe impl ::windows::core::Abi for FAX_RECEIPT_TYPE_ENUM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FAX_RECEIPT_TYPE_ENUM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2161,6 +2206,7 @@ impl ::core::fmt::Debug for FAX_RECEIVE {
 }
 unsafe impl ::windows::core::Abi for FAX_RECEIVE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for FAX_RECEIVE {
     fn eq(&self, other: &Self) -> bool {
@@ -2221,6 +2267,7 @@ impl ::core::fmt::Debug for FAX_ROUTE {
 }
 unsafe impl ::windows::core::Abi for FAX_ROUTE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for FAX_ROUTE {
     fn eq(&self, other: &Self) -> bool {
@@ -2261,6 +2308,7 @@ impl ::core::fmt::Debug for FAX_ROUTE_CALLBACKROUTINES {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for FAX_ROUTE_CALLBACKROUTINES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for FAX_ROUTE_CALLBACKROUTINES {
@@ -2307,6 +2355,7 @@ impl ::core::fmt::Debug for FAX_ROUTING_METHODA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for FAX_ROUTING_METHODA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for FAX_ROUTING_METHODA {
@@ -2353,6 +2402,7 @@ impl ::core::fmt::Debug for FAX_ROUTING_METHODW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for FAX_ROUTING_METHODW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for FAX_ROUTING_METHODW {
@@ -2387,6 +2437,7 @@ impl ::core::default::Default for FAX_ROUTING_RULE_CODE_ENUM {
 }
 unsafe impl ::windows::core::Abi for FAX_ROUTING_RULE_CODE_ENUM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FAX_ROUTING_RULE_CODE_ENUM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2420,6 +2471,7 @@ impl ::core::default::Default for FAX_RULE_STATUS_ENUM {
 }
 unsafe impl ::windows::core::Abi for FAX_RULE_STATUS_ENUM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FAX_RULE_STATUS_ENUM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2449,6 +2501,7 @@ impl ::core::default::Default for FAX_SCHEDULE_TYPE_ENUM {
 }
 unsafe impl ::windows::core::Abi for FAX_SCHEDULE_TYPE_ENUM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FAX_SCHEDULE_TYPE_ENUM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2486,6 +2539,7 @@ impl ::core::fmt::Debug for FAX_SEND {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for FAX_SEND {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for FAX_SEND {
@@ -2526,6 +2580,7 @@ impl ::core::default::Default for FAX_SERVER_APIVERSION_ENUM {
 }
 unsafe impl ::windows::core::Abi for FAX_SERVER_APIVERSION_ENUM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FAX_SERVER_APIVERSION_ENUM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2571,6 +2626,7 @@ impl ::core::default::Default for FAX_SERVER_EVENTS_TYPE_ENUM {
 }
 unsafe impl ::windows::core::Abi for FAX_SERVER_EVENTS_TYPE_ENUM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FAX_SERVER_EVENTS_TYPE_ENUM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2600,6 +2656,7 @@ impl ::core::default::Default for FAX_SMTP_AUTHENTICATION_TYPE_ENUM {
 }
 unsafe impl ::windows::core::Abi for FAX_SMTP_AUTHENTICATION_TYPE_ENUM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FAX_SMTP_AUTHENTICATION_TYPE_ENUM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2625,6 +2682,7 @@ impl ::core::fmt::Debug for FAX_TIME {
 }
 unsafe impl ::windows::core::Abi for FAX_TIME {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for FAX_TIME {
     fn eq(&self, other: &Self) -> bool {
@@ -3680,6 +3738,12 @@ pub const GUID_ScanPrintImage: ::windows::core::GUID = ::windows::core::GUID::fr
 #[repr(transparent)]
 pub struct IFaxAccount(::windows::core::IUnknown);
 #[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFaxAccount {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "Win32_System_Com")]
 impl IFaxAccount {
     #[doc = "*Required features: `\"Win32_Devices_Fax\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -3752,12 +3816,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFaxAccount {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFaxAccount {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3796,6 +3854,12 @@ pub struct IFaxAccount_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFaxAccountFolders(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFaxAccountFolders {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFaxAccountFolders {
     #[doc = "*Required features: `\"Win32_Devices_Fax\"`, `\"Win32_System_Com\"`*"]
@@ -3872,12 +3936,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFaxAccountFolders {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFaxAccountFolders {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3922,6 +3980,12 @@ pub struct IFaxAccountFolders_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFaxAccountIncomingArchive(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFaxAccountIncomingArchive {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFaxAccountIncomingArchive {
     #[doc = "*Required features: `\"Win32_Devices_Fax\"`*"]
@@ -4000,12 +4064,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFaxAccountIncomingArchive {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFaxAccountIncomingArchive {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4045,6 +4103,12 @@ pub struct IFaxAccountIncomingArchive_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFaxAccountIncomingQueue(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFaxAccountIncomingQueue {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFaxAccountIncomingQueue {
     #[doc = "*Required features: `\"Win32_Devices_Fax\"`, `\"Win32_System_Com\"`*"]
@@ -4109,12 +4173,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFaxAccountIncomingQueue {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFaxAccountIncomingQueue {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4151,6 +4209,12 @@ pub struct IFaxAccountIncomingQueue_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFaxAccountNotify(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFaxAccountNotify {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFaxAccountNotify {}
 #[cfg(feature = "Win32_System_Com")]
@@ -4202,12 +4266,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFaxAccountNotify {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFaxAccountNotify {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4236,6 +4294,12 @@ pub struct IFaxAccountNotify_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFaxAccountOutgoingArchive(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFaxAccountOutgoingArchive {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFaxAccountOutgoingArchive {
     #[doc = "*Required features: `\"Win32_Devices_Fax\"`*"]
@@ -4314,12 +4378,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFaxAccountOutgoingArchive {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFaxAccountOutgoingArchive {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4359,6 +4417,12 @@ pub struct IFaxAccountOutgoingArchive_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFaxAccountOutgoingQueue(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFaxAccountOutgoingQueue {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFaxAccountOutgoingQueue {
     #[doc = "*Required features: `\"Win32_Devices_Fax\"`, `\"Win32_System_Com\"`*"]
@@ -4423,12 +4487,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFaxAccountOutgoingQueue {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFaxAccountOutgoingQueue {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4465,6 +4523,12 @@ pub struct IFaxAccountOutgoingQueue_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFaxAccountSet(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFaxAccountSet {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFaxAccountSet {
     #[doc = "*Required features: `\"Win32_Devices_Fax\"`, `\"Win32_System_Com\"`*"]
@@ -4540,12 +4604,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFaxAccountSet {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFaxAccountSet {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4590,6 +4648,12 @@ pub struct IFaxAccountSet_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFaxAccounts(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFaxAccounts {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFaxAccounts {
     #[doc = "*Required features: `\"Win32_Devices_Fax\"`*"]
@@ -4658,12 +4722,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFaxAccounts {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFaxAccounts {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4698,6 +4756,12 @@ pub struct IFaxAccounts_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFaxActivity(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFaxActivity {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFaxActivity {
     #[doc = "*Required features: `\"Win32_Devices_Fax\"`*"]
@@ -4774,12 +4838,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFaxActivity {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFaxActivity {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4813,6 +4871,12 @@ pub struct IFaxActivity_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFaxActivityLogging(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFaxActivityLogging {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFaxActivityLogging {
     #[doc = "*Required features: `\"Win32_Devices_Fax\"`*"]
@@ -4902,12 +4966,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFaxActivityLogging {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFaxActivityLogging {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4950,6 +5008,12 @@ pub struct IFaxActivityLogging_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFaxConfiguration(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFaxConfiguration {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFaxConfiguration {
     #[doc = "*Required features: `\"Win32_Devices_Fax\"`*"]
@@ -5193,12 +5257,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFaxConfiguration {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFaxConfiguration {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5275,6 +5333,12 @@ pub struct IFaxConfiguration_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFaxDevice(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFaxDevice {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFaxDevice {
     #[doc = "*Required features: `\"Win32_Devices_Fax\"`*"]
@@ -5458,12 +5522,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFaxDevice {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFaxDevice {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5555,6 +5613,12 @@ pub struct IFaxDevice_Vtbl {
 #[repr(transparent)]
 pub struct IFaxDeviceIds(::windows::core::IUnknown);
 #[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFaxDeviceIds {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "Win32_System_Com")]
 impl IFaxDeviceIds {
     #[doc = "*Required features: `\"Win32_Devices_Fax\"`*"]
     pub unsafe fn _NewEnum(&self) -> ::windows::core::Result<::windows::core::IUnknown> {
@@ -5633,12 +5697,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFaxDeviceIds {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFaxDeviceIds {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5673,6 +5731,12 @@ pub struct IFaxDeviceIds_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFaxDeviceProvider(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFaxDeviceProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFaxDeviceProvider {
     #[doc = "*Required features: `\"Win32_Devices_Fax\"`, `\"Win32_Foundation\"`*"]
@@ -5790,12 +5854,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFaxDeviceProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFaxDeviceProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5851,6 +5909,12 @@ pub struct IFaxDeviceProvider_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFaxDeviceProviders(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFaxDeviceProviders {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFaxDeviceProviders {
     #[doc = "*Required features: `\"Win32_Devices_Fax\"`*"]
@@ -5919,12 +5983,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFaxDeviceProviders {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFaxDeviceProviders {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5959,6 +6017,12 @@ pub struct IFaxDeviceProviders_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFaxDevices(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFaxDevices {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFaxDevices {
     #[doc = "*Required features: `\"Win32_Devices_Fax\"`*"]
@@ -6033,12 +6097,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFaxDevices {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFaxDevices {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6077,6 +6135,12 @@ pub struct IFaxDevices_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFaxDocument(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFaxDocument {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFaxDocument {
     #[doc = "*Required features: `\"Win32_Devices_Fax\"`, `\"Win32_Foundation\"`*"]
@@ -6302,12 +6366,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFaxDocument {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFaxDocument {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6424,6 +6482,12 @@ pub struct IFaxDocument_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFaxDocument2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFaxDocument2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFaxDocument2 {
     #[doc = "*Required features: `\"Win32_Devices_Fax\"`, `\"Win32_Foundation\"`*"]
@@ -6700,12 +6764,6 @@ impl<'a> ::windows::core::IntoParam<'a, IFaxDocument> for &'a IFaxDocument2 {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFaxDocument2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFaxDocument2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6754,6 +6812,12 @@ pub struct IFaxDocument2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFaxEventLogging(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFaxEventLogging {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFaxEventLogging {
     #[doc = "*Required features: `\"Win32_Devices_Fax\"`*"]
@@ -6850,12 +6914,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFaxEventLogging {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFaxEventLogging {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6894,6 +6952,12 @@ pub struct IFaxEventLogging_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFaxFolders(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFaxFolders {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFaxFolders {
     #[doc = "*Required features: `\"Win32_Devices_Fax\"`, `\"Win32_System_Com\"`*"]
@@ -6970,12 +7034,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFaxFolders {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFaxFolders {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7020,6 +7078,12 @@ pub struct IFaxFolders_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFaxInboundRouting(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFaxInboundRouting {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFaxInboundRouting {
     #[doc = "*Required features: `\"Win32_Devices_Fax\"`, `\"Win32_System_Com\"`*"]
@@ -7084,12 +7148,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFaxInboundRouting {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFaxInboundRouting {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7126,6 +7184,12 @@ pub struct IFaxInboundRouting_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFaxInboundRoutingExtension(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFaxInboundRoutingExtension {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFaxInboundRoutingExtension {
     #[doc = "*Required features: `\"Win32_Devices_Fax\"`, `\"Win32_Foundation\"`*"]
@@ -7237,12 +7301,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFaxInboundRoutingExtension {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFaxInboundRoutingExtension {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7294,6 +7352,12 @@ pub struct IFaxInboundRoutingExtension_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFaxInboundRoutingExtensions(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFaxInboundRoutingExtensions {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFaxInboundRoutingExtensions {
     #[doc = "*Required features: `\"Win32_Devices_Fax\"`*"]
@@ -7362,12 +7426,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFaxInboundRoutingExtensions {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFaxInboundRoutingExtensions {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7402,6 +7460,12 @@ pub struct IFaxInboundRoutingExtensions_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFaxInboundRoutingMethod(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFaxInboundRoutingMethod {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFaxInboundRoutingMethod {
     #[doc = "*Required features: `\"Win32_Devices_Fax\"`, `\"Win32_Foundation\"`*"]
@@ -7501,12 +7565,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFaxInboundRoutingMethod {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFaxInboundRoutingMethod {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7559,6 +7617,12 @@ pub struct IFaxInboundRoutingMethod_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFaxInboundRoutingMethods(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFaxInboundRoutingMethods {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFaxInboundRoutingMethods {
     #[doc = "*Required features: `\"Win32_Devices_Fax\"`*"]
@@ -7627,12 +7691,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFaxInboundRoutingMethods {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFaxInboundRoutingMethods {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7667,6 +7725,12 @@ pub struct IFaxInboundRoutingMethods_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFaxIncomingArchive(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFaxIncomingArchive {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFaxIncomingArchive {
     #[doc = "*Required features: `\"Win32_Devices_Fax\"`*"]
@@ -7805,12 +7869,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFaxIncomingArchive {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFaxIncomingArchive {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7869,6 +7927,12 @@ pub struct IFaxIncomingArchive_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFaxIncomingJob(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFaxIncomingJob {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFaxIncomingJob {
     #[doc = "*Required features: `\"Win32_Devices_Fax\"`*"]
@@ -8020,12 +8084,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFaxIncomingJob {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFaxIncomingJob {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8095,6 +8153,12 @@ pub struct IFaxIncomingJob_Vtbl {
 #[repr(transparent)]
 pub struct IFaxIncomingJobs(::windows::core::IUnknown);
 #[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFaxIncomingJobs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "Win32_System_Com")]
 impl IFaxIncomingJobs {
     #[doc = "*Required features: `\"Win32_Devices_Fax\"`*"]
     pub unsafe fn _NewEnum(&self) -> ::windows::core::Result<::windows::core::IUnknown> {
@@ -8162,12 +8226,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFaxIncomingJobs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFaxIncomingJobs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8202,6 +8260,12 @@ pub struct IFaxIncomingJobs_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFaxIncomingMessage(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFaxIncomingMessage {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFaxIncomingMessage {
     #[doc = "*Required features: `\"Win32_Devices_Fax\"`, `\"Win32_Foundation\"`*"]
@@ -8324,12 +8388,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFaxIncomingMessage {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFaxIncomingMessage {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8392,6 +8450,12 @@ pub struct IFaxIncomingMessage_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFaxIncomingMessage2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFaxIncomingMessage2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFaxIncomingMessage2 {
     #[doc = "*Required features: `\"Win32_Devices_Fax\"`, `\"Win32_Foundation\"`*"]
@@ -8617,12 +8681,6 @@ impl<'a> ::windows::core::IntoParam<'a, IFaxIncomingMessage> for &'a IFaxIncomin
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFaxIncomingMessage2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFaxIncomingMessage2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8691,6 +8749,12 @@ pub struct IFaxIncomingMessage2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFaxIncomingMessageIterator(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFaxIncomingMessageIterator {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFaxIncomingMessageIterator {
     #[doc = "*Required features: `\"Win32_Devices_Fax\"`, `\"Win32_System_Com\"`*"]
@@ -8771,12 +8835,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFaxIncomingMessageIterator {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFaxIncomingMessageIterator {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8814,6 +8872,12 @@ pub struct IFaxIncomingMessageIterator_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFaxIncomingQueue(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFaxIncomingQueue {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFaxIncomingQueue {
     #[doc = "*Required features: `\"Win32_Devices_Fax\"`*"]
@@ -8895,12 +8959,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFaxIncomingQueue {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFaxIncomingQueue {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8941,6 +8999,12 @@ pub struct IFaxIncomingQueue_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFaxJobStatus(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFaxJobStatus {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFaxJobStatus {
     #[doc = "*Required features: `\"Win32_Devices_Fax\"`*"]
@@ -9083,12 +9147,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFaxJobStatus {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFaxJobStatus {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9149,6 +9207,12 @@ pub struct IFaxJobStatus_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFaxLoggingOptions(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFaxLoggingOptions {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFaxLoggingOptions {
     #[doc = "*Required features: `\"Win32_Devices_Fax\"`, `\"Win32_System_Com\"`*"]
@@ -9213,12 +9277,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFaxLoggingOptions {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFaxLoggingOptions {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9255,6 +9313,12 @@ pub struct IFaxLoggingOptions_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFaxOutboundRouting(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFaxOutboundRouting {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFaxOutboundRouting {
     #[doc = "*Required features: `\"Win32_Devices_Fax\"`, `\"Win32_System_Com\"`*"]
@@ -9319,12 +9383,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFaxOutboundRouting {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFaxOutboundRouting {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9361,6 +9419,12 @@ pub struct IFaxOutboundRouting_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFaxOutboundRoutingGroup(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFaxOutboundRoutingGroup {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFaxOutboundRoutingGroup {
     #[doc = "*Required features: `\"Win32_Devices_Fax\"`, `\"Win32_Foundation\"`*"]
@@ -9430,12 +9494,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFaxOutboundRoutingGroup {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFaxOutboundRoutingGroup {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9473,6 +9531,12 @@ pub struct IFaxOutboundRoutingGroup_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFaxOutboundRoutingGroups(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFaxOutboundRoutingGroups {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFaxOutboundRoutingGroups {
     #[doc = "*Required features: `\"Win32_Devices_Fax\"`*"]
@@ -9552,12 +9616,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFaxOutboundRoutingGroups {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFaxOutboundRoutingGroups {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9600,6 +9658,12 @@ pub struct IFaxOutboundRoutingGroups_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFaxOutboundRoutingRule(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFaxOutboundRoutingRule {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFaxOutboundRoutingRule {
     #[doc = "*Required features: `\"Win32_Devices_Fax\"`*"]
@@ -9704,12 +9768,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFaxOutboundRoutingRule {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFaxOutboundRoutingRule {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9755,6 +9813,12 @@ pub struct IFaxOutboundRoutingRule_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFaxOutboundRoutingRules(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFaxOutboundRoutingRules {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFaxOutboundRoutingRules {
     #[doc = "*Required features: `\"Win32_Devices_Fax\"`*"]
@@ -9843,12 +9907,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFaxOutboundRoutingRules {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFaxOutboundRoutingRules {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9893,6 +9951,12 @@ pub struct IFaxOutboundRoutingRules_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFaxOutgoingArchive(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFaxOutgoingArchive {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFaxOutgoingArchive {
     #[doc = "*Required features: `\"Win32_Devices_Fax\"`*"]
@@ -10031,12 +10095,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFaxOutgoingArchive {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFaxOutgoingArchive {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10095,6 +10153,12 @@ pub struct IFaxOutgoingArchive_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFaxOutgoingJob(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFaxOutgoingJob {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFaxOutgoingJob {
     #[doc = "*Required features: `\"Win32_Devices_Fax\"`, `\"Win32_Foundation\"`*"]
@@ -10306,12 +10370,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFaxOutgoingJob {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFaxOutgoingJob {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10401,6 +10459,12 @@ pub struct IFaxOutgoingJob_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFaxOutgoingJob2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFaxOutgoingJob2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFaxOutgoingJob2 {
     #[doc = "*Required features: `\"Win32_Devices_Fax\"`, `\"Win32_Foundation\"`*"]
@@ -10652,12 +10716,6 @@ impl<'a> ::windows::core::IntoParam<'a, IFaxOutgoingJob> for &'a IFaxOutgoingJob
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFaxOutgoingJob2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFaxOutgoingJob2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10692,6 +10750,12 @@ pub struct IFaxOutgoingJob2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFaxOutgoingJobs(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFaxOutgoingJobs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFaxOutgoingJobs {
     #[doc = "*Required features: `\"Win32_Devices_Fax\"`*"]
@@ -10760,12 +10824,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFaxOutgoingJobs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFaxOutgoingJobs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10800,6 +10858,12 @@ pub struct IFaxOutgoingJobs_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFaxOutgoingMessage(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFaxOutgoingMessage {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFaxOutgoingMessage {
     #[doc = "*Required features: `\"Win32_Devices_Fax\"`, `\"Win32_Foundation\"`*"]
@@ -10955,12 +11019,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFaxOutgoingMessage {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFaxOutgoingMessage {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11038,6 +11096,12 @@ pub struct IFaxOutgoingMessage_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFaxOutgoingMessage2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFaxOutgoingMessage2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFaxOutgoingMessage2 {
     #[doc = "*Required features: `\"Win32_Devices_Fax\"`, `\"Win32_Foundation\"`*"]
@@ -11250,12 +11314,6 @@ impl<'a> ::windows::core::IntoParam<'a, IFaxOutgoingMessage> for &'a IFaxOutgoin
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFaxOutgoingMessage2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFaxOutgoingMessage2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11294,6 +11352,12 @@ pub struct IFaxOutgoingMessage2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFaxOutgoingMessageIterator(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFaxOutgoingMessageIterator {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFaxOutgoingMessageIterator {
     #[doc = "*Required features: `\"Win32_Devices_Fax\"`, `\"Win32_System_Com\"`*"]
@@ -11374,12 +11438,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFaxOutgoingMessageIterator {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFaxOutgoingMessageIterator {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11417,6 +11475,12 @@ pub struct IFaxOutgoingMessageIterator_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFaxOutgoingQueue(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFaxOutgoingQueue {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFaxOutgoingQueue {
     #[doc = "*Required features: `\"Win32_Devices_Fax\"`*"]
@@ -11579,12 +11643,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFaxOutgoingQueue {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFaxOutgoingQueue {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11643,6 +11701,12 @@ pub struct IFaxOutgoingQueue_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFaxReceiptOptions(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFaxReceiptOptions {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFaxReceiptOptions {
     #[doc = "*Required features: `\"Win32_Devices_Fax\"`*"]
@@ -11783,12 +11847,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFaxReceiptOptions {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFaxReceiptOptions {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11859,6 +11917,12 @@ pub struct IFaxReceiptOptions_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFaxRecipient(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFaxRecipient {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFaxRecipient {
     #[doc = "*Required features: `\"Win32_Devices_Fax\"`, `\"Win32_Foundation\"`*"]
@@ -11933,12 +11997,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFaxRecipient {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFaxRecipient {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11983,6 +12041,12 @@ pub struct IFaxRecipient_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFaxRecipients(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFaxRecipients {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFaxRecipients {
     #[doc = "*Required features: `\"Win32_Devices_Fax\"`*"]
@@ -12061,12 +12125,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFaxRecipients {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFaxRecipients {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12106,6 +12164,12 @@ pub struct IFaxRecipients_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFaxSecurity(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFaxSecurity {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFaxSecurity {
     #[doc = "*Required features: `\"Win32_Devices_Fax\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
@@ -12191,12 +12255,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFaxSecurity {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFaxSecurity {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12238,6 +12296,12 @@ pub struct IFaxSecurity_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFaxSecurity2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFaxSecurity2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFaxSecurity2 {
     #[doc = "*Required features: `\"Win32_Devices_Fax\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
@@ -12323,12 +12387,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFaxSecurity2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFaxSecurity2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12370,6 +12428,12 @@ pub struct IFaxSecurity2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFaxSender(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFaxSender {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFaxSender {
     #[doc = "*Required features: `\"Win32_Devices_Fax\"`, `\"Win32_Foundation\"`*"]
@@ -12606,12 +12670,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFaxSender {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFaxSender {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12770,6 +12828,12 @@ pub struct IFaxSender_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFaxServer(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFaxServer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFaxServer {
     #[doc = "*Required features: `\"Win32_Devices_Fax\"`, `\"Win32_Foundation\"`*"]
@@ -12961,12 +13025,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFaxServer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFaxServer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13072,6 +13130,12 @@ pub struct IFaxServer_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFaxServer2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFaxServer2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFaxServer2 {
     #[doc = "*Required features: `\"Win32_Devices_Fax\"`, `\"Win32_Foundation\"`*"]
@@ -13311,12 +13375,6 @@ impl<'a> ::windows::core::IntoParam<'a, IFaxServer> for &'a IFaxServer2 {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFaxServer2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFaxServer2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13361,6 +13419,12 @@ pub struct IFaxServer2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFaxServerNotify(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFaxServerNotify {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFaxServerNotify {}
 #[cfg(feature = "Win32_System_Com")]
@@ -13412,12 +13476,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFaxServerNotify {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFaxServerNotify {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13446,6 +13504,12 @@ pub struct IFaxServerNotify_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFaxServerNotify2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFaxServerNotify2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFaxServerNotify2 {}
 #[cfg(feature = "Win32_System_Com")]
@@ -13497,12 +13561,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFaxServerNotify2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFaxServerNotify2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13534,6 +13592,11 @@ pub const IS_DIGITAL_CAMERA_VAL: u32 = 1u32;
 #[doc = "*Required features: `\"Win32_Devices_Fax\"`*"]
 #[repr(transparent)]
 pub struct IStiDevice(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStiDevice {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IStiDevice {
     #[doc = "*Required features: `\"Win32_Devices_Fax\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -13633,11 +13696,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IStiD
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IStiDevice {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IStiDevice {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13696,6 +13754,11 @@ pub struct IStiDevice_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_Fax\"`*"]
 #[repr(transparent)]
 pub struct IStiDeviceControl(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStiDeviceControl {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IStiDeviceControl {
     #[doc = "*Required features: `\"Win32_Devices_Fax\"`*"]
     pub unsafe fn Initialize<'a, Param2: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, dwdevicetype: u32, dwmode: u32, pwszportname: Param2, dwflags: u32) -> ::windows::core::Result<()> {
@@ -13767,11 +13830,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IStiD
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IStiDeviceControl {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IStiDeviceControl {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13823,6 +13881,11 @@ pub struct IStiDeviceW(pub u8);
 #[doc = "*Required features: `\"Win32_Devices_Fax\"`*"]
 #[repr(transparent)]
 pub struct IStiUSD(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStiUSD {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IStiUSD {
     #[doc = "*Required features: `\"Win32_Devices_Fax\"`, `\"Win32_System_Registry\"`*"]
     #[cfg(feature = "Win32_System_Registry")]
@@ -13919,11 +13982,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IStiU
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IStiUSD {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IStiUSD {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13981,6 +14039,11 @@ pub struct IStiUSD_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_Fax\"`*"]
 #[repr(transparent)]
 pub struct IStillImageW(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStillImageW {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IStillImageW {
     #[doc = "*Required features: `\"Win32_Devices_Fax\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -14065,11 +14128,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IStillIma
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IStillImageW {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IStillImageW {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IStillImageW {
@@ -14528,6 +14586,7 @@ impl ::core::fmt::Debug for STINOTIFY {
 }
 unsafe impl ::windows::core::Abi for STINOTIFY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for STINOTIFY {
     fn eq(&self, other: &Self) -> bool {
@@ -14568,6 +14627,7 @@ impl ::core::fmt::Debug for STISUBSCRIBE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for STISUBSCRIBE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for STISUBSCRIBE {
@@ -14637,6 +14697,7 @@ impl ::core::fmt::Debug for STI_DEVICE_INFORMATIONW {
 }
 unsafe impl ::windows::core::Abi for STI_DEVICE_INFORMATIONW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for STI_DEVICE_INFORMATIONW {
     fn eq(&self, other: &Self) -> bool {
@@ -14674,6 +14735,7 @@ impl ::core::default::Default for STI_DEVICE_MJ_TYPE {
 }
 unsafe impl ::windows::core::Abi for STI_DEVICE_MJ_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for STI_DEVICE_MJ_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14703,6 +14765,7 @@ impl ::core::fmt::Debug for STI_DEVICE_STATUS {
 }
 unsafe impl ::windows::core::Abi for STI_DEVICE_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for STI_DEVICE_STATUS {
     fn eq(&self, other: &Self) -> bool {
@@ -14761,6 +14824,7 @@ impl ::core::fmt::Debug for STI_DEV_CAPS {
 }
 unsafe impl ::windows::core::Abi for STI_DEV_CAPS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for STI_DEV_CAPS {
     fn eq(&self, other: &Self) -> bool {
@@ -14795,6 +14859,7 @@ impl ::core::fmt::Debug for STI_DIAG {
 }
 unsafe impl ::windows::core::Abi for STI_DIAG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for STI_DIAG {
     fn eq(&self, other: &Self) -> bool {
@@ -14910,6 +14975,7 @@ impl ::core::fmt::Debug for STI_USD_CAPS {
 }
 unsafe impl ::windows::core::Abi for STI_USD_CAPS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for STI_USD_CAPS {
     fn eq(&self, other: &Self) -> bool {
@@ -14976,6 +15042,7 @@ impl ::core::fmt::Debug for STI_WIA_DEVICE_INFORMATIONW {
 }
 unsafe impl ::windows::core::Abi for STI_WIA_DEVICE_INFORMATIONW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for STI_WIA_DEVICE_INFORMATIONW {
     fn eq(&self, other: &Self) -> bool {
@@ -15025,6 +15092,7 @@ impl ::core::default::Default for SendToMode {
 }
 unsafe impl ::windows::core::Abi for SendToMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SendToMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -15069,6 +15137,7 @@ impl ::core::fmt::Debug for _ERROR_INFOW {
 }
 unsafe impl ::windows::core::Abi for _ERROR_INFOW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for _ERROR_INFOW {
     fn eq(&self, other: &Self) -> bool {
@@ -15085,6 +15154,12 @@ impl ::core::default::Default for _ERROR_INFOW {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct _IFaxAccountNotify(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for _IFaxAccountNotify {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl _IFaxAccountNotify {
     #[doc = "*Required features: `\"Win32_Devices_Fax\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`*"]
@@ -15192,12 +15267,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for _IFaxAccountNotify {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for _IFaxAccountNotify {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -15270,6 +15339,12 @@ pub struct _IFaxAccountNotify_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct _IFaxServerNotify2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for _IFaxServerNotify2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl _IFaxServerNotify2 {
     #[doc = "*Required features: `\"Win32_Devices_Fax\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`*"]
@@ -15449,12 +15524,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
 impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> for &'a _IFaxServerNotify2 {
     fn into_param(self) -> ::windows::core::Param<'a, super::super::System::Com::IDispatch> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for _IFaxServerNotify2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 #[cfg(feature = "Win32_System_Com")]

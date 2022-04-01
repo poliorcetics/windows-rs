@@ -55,6 +55,7 @@ impl ::core::clone::Clone for RESTOREPOINTINFOA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for RESTOREPOINTINFOA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for RESTOREPOINTINFOA {
@@ -86,6 +87,7 @@ impl ::core::clone::Clone for RESTOREPOINTINFOW {
 }
 unsafe impl ::windows::core::Abi for RESTOREPOINTINFOW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RESTOREPOINTINFOW {
     fn eq(&self, other: &Self) -> bool {
@@ -123,6 +125,7 @@ impl ::core::default::Default for RESTOREPOINTINFO_EVENT_TYPE {
 }
 unsafe impl ::windows::core::Abi for RESTOREPOINTINFO_EVENT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RESTOREPOINTINFO_EVENT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -156,6 +159,7 @@ impl ::core::default::Default for RESTOREPOINTINFO_TYPE {
 }
 unsafe impl ::windows::core::Abi for RESTOREPOINTINFO_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RESTOREPOINTINFO_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -206,6 +210,7 @@ impl ::core::clone::Clone for STATEMGRSTATUS {
 }
 unsafe impl ::windows::core::Abi for STATEMGRSTATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for STATEMGRSTATUS {
     fn eq(&self, other: &Self) -> bool {
@@ -245,6 +250,7 @@ impl ::core::clone::Clone for _RESTOREPTINFOEX {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for _RESTOREPTINFOEX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for _RESTOREPTINFOEX {

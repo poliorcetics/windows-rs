@@ -23,6 +23,7 @@ impl ::core::fmt::Debug for CORRELATION_VECTOR {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for CORRELATION_VECTOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for CORRELATION_VECTOR {

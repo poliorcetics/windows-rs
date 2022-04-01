@@ -2,6 +2,11 @@
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpatialGestureRecognizer(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpatialGestureRecognizer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpatialGestureRecognizer {
     type Vtable = ISpatialGestureRecognizer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x71605bcc_0c35_4673_adbd_cc04caa6ef45);
@@ -130,6 +135,11 @@ pub struct ISpatialGestureRecognizer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpatialGestureRecognizerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpatialGestureRecognizerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpatialGestureRecognizerFactory {
     type Vtable = ISpatialGestureRecognizerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x77214186_57b9_3150_8382_698b24e264d0);
@@ -143,6 +153,11 @@ pub struct ISpatialGestureRecognizerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpatialHoldCanceledEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpatialHoldCanceledEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpatialHoldCanceledEventArgs {
     type Vtable = ISpatialHoldCanceledEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x5dfcb667_4caa_4093_8c35_b601a839f31b);
@@ -156,6 +171,11 @@ pub struct ISpatialHoldCanceledEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpatialHoldCompletedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpatialHoldCompletedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpatialHoldCompletedEventArgs {
     type Vtable = ISpatialHoldCompletedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x3f64470b_4cfd_43da_8dc4_e64552173971);
@@ -169,6 +189,11 @@ pub struct ISpatialHoldCompletedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpatialHoldStartedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpatialHoldStartedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpatialHoldStartedEventArgs {
     type Vtable = ISpatialHoldStartedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x8e343d79_acb6_4144_8615_2cfba8a3cb3f);
@@ -186,6 +211,11 @@ pub struct ISpatialHoldStartedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpatialInteraction(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpatialInteraction {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpatialInteraction {
     type Vtable = ISpatialInteraction_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xfc967639_88e6_4646_9112_4344aaec9dfa);
@@ -199,6 +229,11 @@ pub struct ISpatialInteraction_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpatialInteractionController(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpatialInteractionController {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpatialInteractionController {
     type Vtable = ISpatialInteractionController_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x5f0e5ba3_0954_4e97_86c5_e7f30b114dfd);
@@ -220,6 +255,11 @@ pub struct ISpatialInteractionController_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpatialInteractionController2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpatialInteractionController2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpatialInteractionController2 {
     type Vtable = ISpatialInteractionController2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x35b6d924_c7a2_49b7_b72e_5436b2fb8f9c);
@@ -236,6 +276,11 @@ pub struct ISpatialInteractionController2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpatialInteractionController3(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpatialInteractionController3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpatialInteractionController3 {
     type Vtable = ISpatialInteractionController3_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x628466a0_9d91_4a0b_888d_165e670a8cd5);
@@ -252,6 +297,11 @@ pub struct ISpatialInteractionController3_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpatialInteractionControllerProperties(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpatialInteractionControllerProperties {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpatialInteractionControllerProperties {
     type Vtable = ISpatialInteractionControllerProperties_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x61056fb1_7ba9_4e35_b93f_9272cba9b28b);
@@ -271,6 +321,11 @@ pub struct ISpatialInteractionControllerProperties_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpatialInteractionDetectedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpatialInteractionDetectedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpatialInteractionDetectedEventArgs {
     type Vtable = ISpatialInteractionDetectedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x075878e4_5961_3b41_9dfb_cea5d89cc38a);
@@ -289,6 +344,11 @@ pub struct ISpatialInteractionDetectedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpatialInteractionDetectedEventArgs2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpatialInteractionDetectedEventArgs2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpatialInteractionDetectedEventArgs2 {
     type Vtable = ISpatialInteractionDetectedEventArgs2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x7b263e93_5f13_419c_97d5_834678266aa6);
@@ -302,6 +362,11 @@ pub struct ISpatialInteractionDetectedEventArgs2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpatialInteractionManager(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpatialInteractionManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpatialInteractionManager {
     type Vtable = ISpatialInteractionManager_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x32a64ea8_a15a_3995_b8bd_80513cb5adef);
@@ -366,6 +431,11 @@ pub struct ISpatialInteractionManager_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpatialInteractionManagerStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpatialInteractionManagerStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpatialInteractionManagerStatics {
     type Vtable = ISpatialInteractionManagerStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x00e31fa6_8ca2_30bf_91fe_d9cb4a008990);
@@ -379,6 +449,11 @@ pub struct ISpatialInteractionManagerStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpatialInteractionManagerStatics2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpatialInteractionManagerStatics2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpatialInteractionManagerStatics2 {
     type Vtable = ISpatialInteractionManagerStatics2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x93f16c52_b88a_5929_8d7c_48cb948b081c);
@@ -392,6 +467,11 @@ pub struct ISpatialInteractionManagerStatics2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpatialInteractionSource(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpatialInteractionSource {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpatialInteractionSource {
     type Vtable = ISpatialInteractionSource_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xfb5433ba_b0b3_3148_9f3b_e9f5de568f5d);
@@ -406,6 +486,11 @@ pub struct ISpatialInteractionSource_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpatialInteractionSource2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpatialInteractionSource2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpatialInteractionSource2 {
     type Vtable = ISpatialInteractionSource2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe4c5b70c_0470_4028_88c0_a0eb44d34efe);
@@ -426,6 +511,11 @@ pub struct ISpatialInteractionSource2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpatialInteractionSource3(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpatialInteractionSource3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpatialInteractionSource3 {
     type Vtable = ISpatialInteractionSource3_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x0406d9f9_9afd_44f9_85dc_700023a962e3);
@@ -439,6 +529,11 @@ pub struct ISpatialInteractionSource3_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpatialInteractionSource4(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpatialInteractionSource4 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpatialInteractionSource4 {
     type Vtable = ISpatialInteractionSource4_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x0073bc4d_df66_5a91_a2ba_cea3e5c58a19);
@@ -459,6 +554,11 @@ pub struct ISpatialInteractionSource4_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpatialInteractionSourceEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpatialInteractionSourceEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpatialInteractionSourceEventArgs {
     type Vtable = ISpatialInteractionSourceEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x23b786cf_ec23_3979_b27c_eb0e12feb7c7);
@@ -472,6 +572,11 @@ pub struct ISpatialInteractionSourceEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpatialInteractionSourceEventArgs2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpatialInteractionSourceEventArgs2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpatialInteractionSourceEventArgs2 {
     type Vtable = ISpatialInteractionSourceEventArgs2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd8b4b467_e648_4d52_ab49_e0d227199f63);
@@ -485,6 +590,11 @@ pub struct ISpatialInteractionSourceEventArgs2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpatialInteractionSourceLocation(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpatialInteractionSourceLocation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpatialInteractionSourceLocation {
     type Vtable = ISpatialInteractionSourceLocation_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xea4696c4_7e8b_30ca_bcc5_c77189cea30a);
@@ -505,6 +615,11 @@ pub struct ISpatialInteractionSourceLocation_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpatialInteractionSourceLocation2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpatialInteractionSourceLocation2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpatialInteractionSourceLocation2 {
     type Vtable = ISpatialInteractionSourceLocation2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x4c671045_3917_40fc_a9ac_31c9cf5ff91b);
@@ -521,6 +636,11 @@ pub struct ISpatialInteractionSourceLocation2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpatialInteractionSourceLocation3(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpatialInteractionSourceLocation3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpatialInteractionSourceLocation3 {
     type Vtable = ISpatialInteractionSourceLocation3_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x6702e65e_e915_4cfb_9c1b_0538efc86687);
@@ -539,6 +659,11 @@ pub struct ISpatialInteractionSourceLocation3_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpatialInteractionSourceProperties(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpatialInteractionSourceProperties {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpatialInteractionSourceProperties {
     type Vtable = ISpatialInteractionSourceProperties_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x05604542_3ef7_3222_9f53_63c9cb7e3bc7);
@@ -560,6 +685,11 @@ pub struct ISpatialInteractionSourceProperties_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpatialInteractionSourceState(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpatialInteractionSourceState {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpatialInteractionSourceState {
     type Vtable = ISpatialInteractionSourceState_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd5c475ef_4b63_37ec_98b9_9fc652b9d2f2);
@@ -583,6 +713,11 @@ pub struct ISpatialInteractionSourceState_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpatialInteractionSourceState2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpatialInteractionSourceState2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpatialInteractionSourceState2 {
     type Vtable = ISpatialInteractionSourceState2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x45f6d0bd_1773_492e_9ba3_8ac1cbe77c08);
@@ -600,6 +735,11 @@ pub struct ISpatialInteractionSourceState2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpatialInteractionSourceState3(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpatialInteractionSourceState3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpatialInteractionSourceState3 {
     type Vtable = ISpatialInteractionSourceState3_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf2f00bc2_bd2b_4a01_a8fb_323e0158527c);
@@ -616,6 +756,11 @@ pub struct ISpatialInteractionSourceState3_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpatialManipulationCanceledEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpatialManipulationCanceledEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpatialManipulationCanceledEventArgs {
     type Vtable = ISpatialManipulationCanceledEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x2d40d1cb_e7da_4220_b0bf_819301674780);
@@ -629,6 +774,11 @@ pub struct ISpatialManipulationCanceledEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpatialManipulationCompletedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpatialManipulationCompletedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpatialManipulationCompletedEventArgs {
     type Vtable = ISpatialManipulationCompletedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x05086802_f301_4343_9250_2fbaa5f87a37);
@@ -646,6 +796,11 @@ pub struct ISpatialManipulationCompletedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpatialManipulationDelta(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpatialManipulationDelta {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpatialManipulationDelta {
     type Vtable = ISpatialManipulationDelta_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa7ec967a_d123_3a81_a15b_992923dcbe91);
@@ -662,6 +817,11 @@ pub struct ISpatialManipulationDelta_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpatialManipulationStartedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpatialManipulationStartedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpatialManipulationStartedEventArgs {
     type Vtable = ISpatialManipulationStartedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa1d6bbce_42a5_377b_ada6_d28e3d384737);
@@ -679,6 +839,11 @@ pub struct ISpatialManipulationStartedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpatialManipulationUpdatedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpatialManipulationUpdatedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpatialManipulationUpdatedEventArgs {
     type Vtable = ISpatialManipulationUpdatedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x5f230b9b_60c6_4dc6_bdc9_9f4a6f15fe49);
@@ -696,6 +861,11 @@ pub struct ISpatialManipulationUpdatedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpatialNavigationCanceledEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpatialNavigationCanceledEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpatialNavigationCanceledEventArgs {
     type Vtable = ISpatialNavigationCanceledEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xce503edc_e8a5_46f0_92d4_3c122b35112a);
@@ -709,6 +879,11 @@ pub struct ISpatialNavigationCanceledEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpatialNavigationCompletedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpatialNavigationCompletedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpatialNavigationCompletedEventArgs {
     type Vtable = ISpatialNavigationCompletedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x012e80b7_af3b_42c2_9e41_baaa0e721f3a);
@@ -726,6 +901,11 @@ pub struct ISpatialNavigationCompletedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpatialNavigationStartedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpatialNavigationStartedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpatialNavigationStartedEventArgs {
     type Vtable = ISpatialNavigationStartedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x754a348a_fb64_4656_8ebd_9deecaafe475);
@@ -746,6 +926,11 @@ pub struct ISpatialNavigationStartedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpatialNavigationUpdatedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpatialNavigationUpdatedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpatialNavigationUpdatedEventArgs {
     type Vtable = ISpatialNavigationUpdatedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9b713fd7_839d_4a74_8732_45466fc044b5);
@@ -763,6 +948,11 @@ pub struct ISpatialNavigationUpdatedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpatialPointerInteractionSourcePose(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpatialPointerInteractionSourcePose {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpatialPointerInteractionSourcePose {
     type Vtable = ISpatialPointerInteractionSourcePose_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa7104307_2c2b_4d3a_92a7_80ced7c4a0d0);
@@ -787,6 +977,11 @@ pub struct ISpatialPointerInteractionSourcePose_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpatialPointerInteractionSourcePose2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpatialPointerInteractionSourcePose2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpatialPointerInteractionSourcePose2 {
     type Vtable = ISpatialPointerInteractionSourcePose2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xeccd86b8_52db_469f_9e3f_80c47f74bce9);
@@ -804,6 +999,11 @@ pub struct ISpatialPointerInteractionSourcePose2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpatialPointerPose(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpatialPointerPose {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpatialPointerPose {
     type Vtable = ISpatialPointerPose_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x6953a42e_c17e_357d_97a1_7269d0ed2d10);
@@ -824,6 +1024,11 @@ pub struct ISpatialPointerPose_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpatialPointerPose2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpatialPointerPose2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpatialPointerPose2 {
     type Vtable = ISpatialPointerPose2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9d202b17_954e_4e0c_96d1_b6790b6fc2fd);
@@ -837,6 +1042,11 @@ pub struct ISpatialPointerPose2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpatialPointerPose3(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpatialPointerPose3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpatialPointerPose3 {
     type Vtable = ISpatialPointerPose3_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x6342f3f0_ec49_5b4b_b8d1_d16cbb16be84);
@@ -854,6 +1064,11 @@ pub struct ISpatialPointerPose3_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpatialPointerPoseStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpatialPointerPoseStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpatialPointerPoseStatics {
     type Vtable = ISpatialPointerPoseStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa25591a9_aca1_3ee0_9816_785cfb2e3fb8);
@@ -870,6 +1085,11 @@ pub struct ISpatialPointerPoseStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpatialRecognitionEndedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpatialRecognitionEndedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpatialRecognitionEndedEventArgs {
     type Vtable = ISpatialRecognitionEndedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x0e35f5cb_3f75_43f3_ac81_d1dc2df9b1fb);
@@ -883,6 +1103,11 @@ pub struct ISpatialRecognitionEndedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpatialRecognitionStartedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpatialRecognitionStartedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpatialRecognitionStartedEventArgs {
     type Vtable = ISpatialRecognitionStartedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x24da128f_0008_4a6d_aa50_2a76f9cfb264);
@@ -901,6 +1126,11 @@ pub struct ISpatialRecognitionStartedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpatialTappedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpatialTappedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpatialTappedEventArgs {
     type Vtable = ISpatialTappedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x296d83de_f444_4aa1_b2bf_9dc88d567da6);
@@ -1169,11 +1399,6 @@ impl SpatialGestureRecognizer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for SpatialGestureRecognizer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SpatialGestureRecognizer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1187,7 +1412,6 @@ impl ::core::fmt::Debug for SpatialGestureRecognizer {
 }
 unsafe impl ::windows::core::RuntimeType for SpatialGestureRecognizer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Input.Spatial.SpatialGestureRecognizer;{71605bcc-0c35-4673-adbd-cc04caa6ef45})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1271,6 +1495,7 @@ impl ::core::default::Default for SpatialGestureSettings {
 }
 unsafe impl ::windows::core::Abi for SpatialGestureSettings {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SpatialGestureSettings {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1307,7 +1532,6 @@ impl ::core::ops::Not for SpatialGestureSettings {
 }
 unsafe impl ::windows::core::RuntimeType for SpatialGestureSettings {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Input.Spatial.SpatialGestureSettings;u4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1325,11 +1549,6 @@ impl SpatialHoldCanceledEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for SpatialHoldCanceledEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SpatialHoldCanceledEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1343,7 +1562,6 @@ impl ::core::fmt::Debug for SpatialHoldCanceledEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for SpatialHoldCanceledEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Input.Spatial.SpatialHoldCanceledEventArgs;{5dfcb667-4caa-4093-8c35-b601a839f31b})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1410,11 +1628,6 @@ impl SpatialHoldCompletedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for SpatialHoldCompletedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SpatialHoldCompletedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1428,7 +1641,6 @@ impl ::core::fmt::Debug for SpatialHoldCompletedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for SpatialHoldCompletedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Input.Spatial.SpatialHoldCompletedEventArgs;{3f64470b-4cfd-43da-8dc4-e64552173971})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1504,11 +1716,6 @@ impl SpatialHoldStartedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for SpatialHoldStartedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SpatialHoldStartedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1522,7 +1729,6 @@ impl ::core::fmt::Debug for SpatialHoldStartedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for SpatialHoldStartedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Input.Spatial.SpatialHoldStartedEventArgs;{8e343d79-acb6-4144-8615-2cfba8a3cb3f})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1589,11 +1795,6 @@ impl SpatialInteraction {
         }
     }
 }
-impl ::core::clone::Clone for SpatialInteraction {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SpatialInteraction {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1607,7 +1808,6 @@ impl ::core::fmt::Debug for SpatialInteraction {
 }
 unsafe impl ::windows::core::RuntimeType for SpatialInteraction {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Input.Spatial.SpatialInteraction;{fc967639-88e6-4646-9112-4344aaec9dfa})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1733,11 +1933,6 @@ impl SpatialInteractionController {
         }
     }
 }
-impl ::core::clone::Clone for SpatialInteractionController {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SpatialInteractionController {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1751,7 +1946,6 @@ impl ::core::fmt::Debug for SpatialInteractionController {
 }
 unsafe impl ::windows::core::RuntimeType for SpatialInteractionController {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Input.Spatial.SpatialInteractionController;{5f0e5ba3-0954-4e97-86c5-e7f30b114dfd})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1866,11 +2060,6 @@ impl SpatialInteractionControllerProperties {
         }
     }
 }
-impl ::core::clone::Clone for SpatialInteractionControllerProperties {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SpatialInteractionControllerProperties {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1884,7 +2073,6 @@ impl ::core::fmt::Debug for SpatialInteractionControllerProperties {
 }
 unsafe impl ::windows::core::RuntimeType for SpatialInteractionControllerProperties {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Input.Spatial.SpatialInteractionControllerProperties;{61056fb1-7ba9-4e35-b93f-9272cba9b28b})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1976,11 +2164,6 @@ impl SpatialInteractionDetectedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for SpatialInteractionDetectedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SpatialInteractionDetectedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1994,7 +2177,6 @@ impl ::core::fmt::Debug for SpatialInteractionDetectedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for SpatialInteractionDetectedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Input.Spatial.SpatialInteractionDetectedEventArgs;{075878e4-5961-3b41-9dfb-cea5d89cc38a})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2176,11 +2358,6 @@ impl SpatialInteractionManager {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for SpatialInteractionManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SpatialInteractionManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2194,7 +2371,6 @@ impl ::core::fmt::Debug for SpatialInteractionManager {
 }
 unsafe impl ::windows::core::RuntimeType for SpatialInteractionManager {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Input.Spatial.SpatialInteractionManager;{32a64ea8-a15a-3995-b8bd-80513cb5adef})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2273,6 +2449,7 @@ impl ::core::default::Default for SpatialInteractionPressKind {
 }
 unsafe impl ::windows::core::Abi for SpatialInteractionPressKind {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SpatialInteractionPressKind {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2281,7 +2458,6 @@ impl ::core::fmt::Debug for SpatialInteractionPressKind {
 }
 unsafe impl ::windows::core::RuntimeType for SpatialInteractionPressKind {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Input.Spatial.SpatialInteractionPressKind;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2374,11 +2550,6 @@ impl SpatialInteractionSource {
         }
     }
 }
-impl ::core::clone::Clone for SpatialInteractionSource {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SpatialInteractionSource {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2392,7 +2563,6 @@ impl ::core::fmt::Debug for SpatialInteractionSource {
 }
 unsafe impl ::windows::core::RuntimeType for SpatialInteractionSource {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Input.Spatial.SpatialInteractionSource;{fb5433ba-b0b3-3148-9f3b-e9f5de568f5d})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2467,11 +2637,6 @@ impl SpatialInteractionSourceEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for SpatialInteractionSourceEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SpatialInteractionSourceEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2485,7 +2650,6 @@ impl ::core::fmt::Debug for SpatialInteractionSourceEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for SpatialInteractionSourceEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Input.Spatial.SpatialInteractionSourceEventArgs;{23b786cf-ec23-3979-b27c-eb0e12feb7c7})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2561,6 +2725,7 @@ impl ::core::default::Default for SpatialInteractionSourceHandedness {
 }
 unsafe impl ::windows::core::Abi for SpatialInteractionSourceHandedness {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SpatialInteractionSourceHandedness {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2569,7 +2734,6 @@ impl ::core::fmt::Debug for SpatialInteractionSourceHandedness {
 }
 unsafe impl ::windows::core::RuntimeType for SpatialInteractionSourceHandedness {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Input.Spatial.SpatialInteractionSourceHandedness;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2597,6 +2761,7 @@ impl ::core::default::Default for SpatialInteractionSourceKind {
 }
 unsafe impl ::windows::core::Abi for SpatialInteractionSourceKind {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SpatialInteractionSourceKind {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2605,7 +2770,6 @@ impl ::core::fmt::Debug for SpatialInteractionSourceKind {
 }
 unsafe impl ::windows::core::RuntimeType for SpatialInteractionSourceKind {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Input.Spatial.SpatialInteractionSourceKind;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2667,11 +2831,6 @@ impl SpatialInteractionSourceLocation {
         }
     }
 }
-impl ::core::clone::Clone for SpatialInteractionSourceLocation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SpatialInteractionSourceLocation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2685,7 +2844,6 @@ impl ::core::fmt::Debug for SpatialInteractionSourceLocation {
 }
 unsafe impl ::windows::core::RuntimeType for SpatialInteractionSourceLocation {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Input.Spatial.SpatialInteractionSourceLocation;{ea4696c4-7e8b-30ca-bcc5-c77189cea30a})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2760,6 +2918,7 @@ impl ::core::default::Default for SpatialInteractionSourcePositionAccuracy {
 }
 unsafe impl ::windows::core::Abi for SpatialInteractionSourcePositionAccuracy {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SpatialInteractionSourcePositionAccuracy {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2768,7 +2927,6 @@ impl ::core::fmt::Debug for SpatialInteractionSourcePositionAccuracy {
 }
 unsafe impl ::windows::core::RuntimeType for SpatialInteractionSourcePositionAccuracy {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Input.Spatial.SpatialInteractionSourcePositionAccuracy;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2804,11 +2962,6 @@ impl SpatialInteractionSourceProperties {
         }
     }
 }
-impl ::core::clone::Clone for SpatialInteractionSourceProperties {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SpatialInteractionSourceProperties {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2822,7 +2975,6 @@ impl ::core::fmt::Debug for SpatialInteractionSourceProperties {
 }
 unsafe impl ::windows::core::RuntimeType for SpatialInteractionSourceProperties {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Input.Spatial.SpatialInteractionSourceProperties;{05604542-3ef7-3222-9f53-63c9cb7e3bc7})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2972,11 +3124,6 @@ impl SpatialInteractionSourceState {
         }
     }
 }
-impl ::core::clone::Clone for SpatialInteractionSourceState {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SpatialInteractionSourceState {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2990,7 +3137,6 @@ impl ::core::fmt::Debug for SpatialInteractionSourceState {
 }
 unsafe impl ::windows::core::RuntimeType for SpatialInteractionSourceState {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Input.Spatial.SpatialInteractionSourceState;{d5c475ef-4b63-37ec-98b9-9fc652b9d2f2})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3057,11 +3203,6 @@ impl SpatialManipulationCanceledEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for SpatialManipulationCanceledEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SpatialManipulationCanceledEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3075,7 +3216,6 @@ impl ::core::fmt::Debug for SpatialManipulationCanceledEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for SpatialManipulationCanceledEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Input.Spatial.SpatialManipulationCanceledEventArgs;{2d40d1cb-e7da-4220-b0bf-819301674780})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3151,11 +3291,6 @@ impl SpatialManipulationCompletedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for SpatialManipulationCompletedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SpatialManipulationCompletedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3169,7 +3304,6 @@ impl ::core::fmt::Debug for SpatialManipulationCompletedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for SpatialManipulationCompletedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Input.Spatial.SpatialManipulationCompletedEventArgs;{05086802-f301-4343-9250-2fbaa5f87a37})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3237,11 +3371,6 @@ impl SpatialManipulationDelta {
         }
     }
 }
-impl ::core::clone::Clone for SpatialManipulationDelta {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SpatialManipulationDelta {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3255,7 +3384,6 @@ impl ::core::fmt::Debug for SpatialManipulationDelta {
 }
 unsafe impl ::windows::core::RuntimeType for SpatialManipulationDelta {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Input.Spatial.SpatialManipulationDelta;{a7ec967a-d123-3a81-a15b-992923dcbe91})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3331,11 +3459,6 @@ impl SpatialManipulationStartedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for SpatialManipulationStartedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SpatialManipulationStartedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3349,7 +3472,6 @@ impl ::core::fmt::Debug for SpatialManipulationStartedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for SpatialManipulationStartedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Input.Spatial.SpatialManipulationStartedEventArgs;{a1d6bbce-42a5-377b-ada6-d28e3d384737})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3425,11 +3547,6 @@ impl SpatialManipulationUpdatedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for SpatialManipulationUpdatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SpatialManipulationUpdatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3443,7 +3560,6 @@ impl ::core::fmt::Debug for SpatialManipulationUpdatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for SpatialManipulationUpdatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Input.Spatial.SpatialManipulationUpdatedEventArgs;{5f230b9b-60c6-4dc6-bdc9-9f4a6f15fe49})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3510,11 +3626,6 @@ impl SpatialNavigationCanceledEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for SpatialNavigationCanceledEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SpatialNavigationCanceledEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3528,7 +3639,6 @@ impl ::core::fmt::Debug for SpatialNavigationCanceledEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for SpatialNavigationCanceledEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Input.Spatial.SpatialNavigationCanceledEventArgs;{ce503edc-e8a5-46f0-92d4-3c122b35112a})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3604,11 +3714,6 @@ impl SpatialNavigationCompletedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for SpatialNavigationCompletedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SpatialNavigationCompletedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3622,7 +3727,6 @@ impl ::core::fmt::Debug for SpatialNavigationCompletedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for SpatialNavigationCompletedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Input.Spatial.SpatialNavigationCompletedEventArgs;{012e80b7-af3b-42c2-9e41-baaa0e721f3a})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3722,11 +3826,6 @@ impl SpatialNavigationStartedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for SpatialNavigationStartedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SpatialNavigationStartedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3740,7 +3839,6 @@ impl ::core::fmt::Debug for SpatialNavigationStartedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for SpatialNavigationStartedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Input.Spatial.SpatialNavigationStartedEventArgs;{754a348a-fb64-4656-8ebd-9deecaafe475})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3816,11 +3914,6 @@ impl SpatialNavigationUpdatedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for SpatialNavigationUpdatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SpatialNavigationUpdatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3834,7 +3927,6 @@ impl ::core::fmt::Debug for SpatialNavigationUpdatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for SpatialNavigationUpdatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Input.Spatial.SpatialNavigationUpdatedEventArgs;{9b713fd7-839d-4a74-8732-45466fc044b5})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3937,11 +4029,6 @@ impl SpatialPointerInteractionSourcePose {
         }
     }
 }
-impl ::core::clone::Clone for SpatialPointerInteractionSourcePose {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SpatialPointerInteractionSourcePose {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3955,7 +4042,6 @@ impl ::core::fmt::Debug for SpatialPointerInteractionSourcePose {
 }
 unsafe impl ::windows::core::RuntimeType for SpatialPointerInteractionSourcePose {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Input.Spatial.SpatialPointerInteractionSourcePose;{a7104307-2c2b-4d3a-92a7-80ced7c4a0d0})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4070,11 +4156,6 @@ impl SpatialPointerPose {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for SpatialPointerPose {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SpatialPointerPose {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4088,7 +4169,6 @@ impl ::core::fmt::Debug for SpatialPointerPose {
 }
 unsafe impl ::windows::core::RuntimeType for SpatialPointerPose {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Input.Spatial.SpatialPointerPose;{6953a42e-c17e-357d-97a1-7269d0ed2d10})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4155,11 +4235,6 @@ impl SpatialRecognitionEndedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for SpatialRecognitionEndedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SpatialRecognitionEndedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4173,7 +4248,6 @@ impl ::core::fmt::Debug for SpatialRecognitionEndedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for SpatialRecognitionEndedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Input.Spatial.SpatialRecognitionEndedEventArgs;{0e35f5cb-3f75-43f3-ac81-d1dc2df9b1fb})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4257,11 +4331,6 @@ impl SpatialRecognitionStartedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for SpatialRecognitionStartedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SpatialRecognitionStartedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4275,7 +4344,6 @@ impl ::core::fmt::Debug for SpatialRecognitionStartedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for SpatialRecognitionStartedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Input.Spatial.SpatialRecognitionStartedEventArgs;{24da128f-0008-4a6d-aa50-2a76f9cfb264})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4359,11 +4427,6 @@ impl SpatialTappedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for SpatialTappedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SpatialTappedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4377,7 +4440,6 @@ impl ::core::fmt::Debug for SpatialTappedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for SpatialTappedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Input.Spatial.SpatialTappedEventArgs;{296d83de-f444-4aa1-b2bf-9dc88d567da6})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

@@ -18,6 +18,7 @@ impl ::core::fmt::Debug for COMDLG_FILTERSPEC {
 }
 unsafe impl ::windows::core::Abi for COMDLG_FILTERSPEC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for COMDLG_FILTERSPEC {
     fn eq(&self, other: &Self) -> bool {
@@ -81,6 +82,7 @@ impl ::core::default::Default for DEVICE_SCALE_FACTOR {
 }
 unsafe impl ::windows::core::Abi for DEVICE_SCALE_FACTOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DEVICE_SCALE_FACTOR {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -90,6 +92,11 @@ impl ::core::fmt::Debug for DEVICE_SCALE_FACTOR {
 #[doc = "*Required features: `\"Win32_UI_Shell_Common\"`*"]
 #[repr(transparent)]
 pub struct IObjectArray(::windows::core::IUnknown);
+impl ::core::clone::Clone for IObjectArray {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IObjectArray {
     #[doc = "*Required features: `\"Win32_UI_Shell_Common\"`*"]
     pub unsafe fn GetCount(&self) -> ::windows::core::Result<u32> {
@@ -122,11 +129,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IObje
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IObjectArray {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IObjectArray {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -152,6 +154,11 @@ pub struct IObjectArray_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Shell_Common\"`*"]
 #[repr(transparent)]
 pub struct IObjectCollection(::windows::core::IUnknown);
+impl ::core::clone::Clone for IObjectCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IObjectCollection {
     #[doc = "*Required features: `\"Win32_UI_Shell_Common\"`*"]
     pub unsafe fn GetCount(&self) -> ::windows::core::Result<u32> {
@@ -220,11 +227,6 @@ impl<'a> ::windows::core::IntoParam<'a, IObjectArray> for &'a IObjectCollection 
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IObjectCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IObjectCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -262,6 +264,7 @@ impl ::core::clone::Clone for ITEMIDLIST {
 }
 unsafe impl ::windows::core::Abi for ITEMIDLIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ITEMIDLIST {
     fn eq(&self, other: &Self) -> bool {
@@ -323,6 +326,7 @@ impl ::core::default::Default for PERCEIVED {
 }
 unsafe impl ::windows::core::Abi for PERCEIVED {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PERCEIVED {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -400,6 +404,7 @@ impl ::core::default::Default for SHCOLSTATE {
 }
 unsafe impl ::windows::core::Abi for SHCOLSTATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SHCOLSTATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -421,6 +426,7 @@ impl ::core::clone::Clone for SHELLDETAILS {
 }
 unsafe impl ::windows::core::Abi for SHELLDETAILS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SHELLDETAILS {
     fn eq(&self, other: &Self) -> bool {
@@ -447,6 +453,7 @@ impl ::core::clone::Clone for SHITEMID {
 }
 unsafe impl ::windows::core::Abi for SHITEMID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SHITEMID {
     fn eq(&self, other: &Self) -> bool {
@@ -473,6 +480,7 @@ impl ::core::clone::Clone for STRRET {
 }
 unsafe impl ::windows::core::Abi for STRRET {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for STRRET {
     fn eq(&self, other: &Self) -> bool {
@@ -500,6 +508,7 @@ impl ::core::clone::Clone for STRRET_0 {
 }
 unsafe impl ::windows::core::Abi for STRRET_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for STRRET_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -535,6 +544,7 @@ impl ::core::default::Default for STRRET_TYPE {
 }
 unsafe impl ::windows::core::Abi for STRRET_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for STRRET_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

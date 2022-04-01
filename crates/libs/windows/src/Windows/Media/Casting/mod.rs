@@ -87,11 +87,6 @@ impl CastingConnection {
         unsafe { (::windows::core::Interface::vtable(this).Close)(::core::mem::transmute_copy(this)).ok() }
     }
 }
-impl ::core::clone::Clone for CastingConnection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for CastingConnection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -105,7 +100,6 @@ impl ::core::fmt::Debug for CastingConnection {
 }
 unsafe impl ::windows::core::RuntimeType for CastingConnection {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.Casting.CastingConnection;{cd951653-c2f1-4498-8b78-5fb4cd3640dd})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -206,11 +200,6 @@ impl CastingConnectionErrorOccurredEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for CastingConnectionErrorOccurredEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for CastingConnectionErrorOccurredEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -224,7 +213,6 @@ impl ::core::fmt::Debug for CastingConnectionErrorOccurredEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for CastingConnectionErrorOccurredEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.Casting.CastingConnectionErrorOccurredEventArgs;{a7fb3c69-8719-4f00-81fb-961863c79a32})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -304,6 +292,7 @@ impl ::core::default::Default for CastingConnectionErrorStatus {
 }
 unsafe impl ::windows::core::Abi for CastingConnectionErrorStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CastingConnectionErrorStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -312,7 +301,6 @@ impl ::core::fmt::Debug for CastingConnectionErrorStatus {
 }
 unsafe impl ::windows::core::RuntimeType for CastingConnectionErrorStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Media.Casting.CastingConnectionErrorStatus;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -341,6 +329,7 @@ impl ::core::default::Default for CastingConnectionState {
 }
 unsafe impl ::windows::core::Abi for CastingConnectionState {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CastingConnectionState {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -349,7 +338,6 @@ impl ::core::fmt::Debug for CastingConnectionState {
 }
 unsafe impl ::windows::core::RuntimeType for CastingConnectionState {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Media.Casting.CastingConnectionState;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -437,11 +425,6 @@ impl CastingDevice {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for CastingDevice {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for CastingDevice {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -455,7 +438,6 @@ impl ::core::fmt::Debug for CastingDevice {
 }
 unsafe impl ::windows::core::RuntimeType for CastingDevice {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.Casting.CastingDevice;{de721c83-4a43-4ad1-a6d2-2492a796c3f2})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -585,11 +567,6 @@ impl CastingDevicePicker {
         unsafe { (::windows::core::Interface::vtable(this).Hide)(::core::mem::transmute_copy(this)).ok() }
     }
 }
-impl ::core::clone::Clone for CastingDevicePicker {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for CastingDevicePicker {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -603,7 +580,6 @@ impl ::core::fmt::Debug for CastingDevicePicker {
 }
 unsafe impl ::windows::core::RuntimeType for CastingDevicePicker {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.Casting.CastingDevicePicker;{dcd39924-0591-49be-aacb-4b82ee756a95})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -710,11 +686,6 @@ impl CastingDevicePickerFilter {
         }
     }
 }
-impl ::core::clone::Clone for CastingDevicePickerFilter {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for CastingDevicePickerFilter {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -728,7 +699,6 @@ impl ::core::fmt::Debug for CastingDevicePickerFilter {
 }
 unsafe impl ::windows::core::RuntimeType for CastingDevicePickerFilter {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.Casting.CastingDevicePickerFilter;{be8c619c-b563-4354-ae33-9fdaad8c6291})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -795,11 +765,6 @@ impl CastingDeviceSelectedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for CastingDeviceSelectedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for CastingDeviceSelectedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -813,7 +778,6 @@ impl ::core::fmt::Debug for CastingDeviceSelectedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for CastingDeviceSelectedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.Casting.CastingDeviceSelectedEventArgs;{dc439e86-dd57-4d0d-9400-af45e4fb3663})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -890,6 +854,7 @@ impl ::core::default::Default for CastingPlaybackTypes {
 }
 unsafe impl ::windows::core::Abi for CastingPlaybackTypes {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CastingPlaybackTypes {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -926,7 +891,6 @@ impl ::core::ops::Not for CastingPlaybackTypes {
 }
 unsafe impl ::windows::core::RuntimeType for CastingPlaybackTypes {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Media.Casting.CastingPlaybackTypes;u4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -951,11 +915,6 @@ impl CastingSource {
         unsafe { (::windows::core::Interface::vtable(this).SetPreferredSourceUri)(::core::mem::transmute_copy(this), value.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for CastingSource {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for CastingSource {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -969,7 +928,6 @@ impl ::core::fmt::Debug for CastingSource {
 }
 unsafe impl ::windows::core::RuntimeType for CastingSource {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.Casting.CastingSource;{f429ea72-3467-47e6-a027-522923e9d727})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1026,6 +984,11 @@ unsafe impl ::core::marker::Sync for CastingSource {}
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICastingConnection(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICastingConnection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICastingConnection {
     type Vtable = ICastingConnection_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xcd951653_c2f1_4498_8b78_5fb4cd3640dd);
@@ -1066,6 +1029,11 @@ pub struct ICastingConnection_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICastingConnectionErrorOccurredEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICastingConnectionErrorOccurredEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICastingConnectionErrorOccurredEventArgs {
     type Vtable = ICastingConnectionErrorOccurredEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa7fb3c69_8719_4f00_81fb_961863c79a32);
@@ -1080,6 +1048,11 @@ pub struct ICastingConnectionErrorOccurredEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICastingDevice(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICastingDevice {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICastingDevice {
     type Vtable = ICastingDevice_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xde721c83_4a43_4ad1_a6d2_2492a796c3f2);
@@ -1103,6 +1076,11 @@ pub struct ICastingDevice_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICastingDevicePicker(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICastingDevicePicker {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICastingDevicePicker {
     type Vtable = ICastingDevicePicker_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xdcd39924_0591_49be_aacb_4b82ee756a95);
@@ -1145,6 +1123,11 @@ pub struct ICastingDevicePicker_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICastingDevicePickerFilter(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICastingDevicePickerFilter {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICastingDevicePickerFilter {
     type Vtable = ICastingDevicePickerFilter_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xbe8c619c_b563_4354_ae33_9fdaad8c6291);
@@ -1167,6 +1150,11 @@ pub struct ICastingDevicePickerFilter_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICastingDeviceSelectedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICastingDeviceSelectedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICastingDeviceSelectedEventArgs {
     type Vtable = ICastingDeviceSelectedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xdc439e86_dd57_4d0d_9400_af45e4fb3663);
@@ -1180,6 +1168,11 @@ pub struct ICastingDeviceSelectedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICastingDeviceStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICastingDeviceStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICastingDeviceStatics {
     type Vtable = ICastingDeviceStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe7d958d7_4d13_4237_a365_4c4f6a4cfd2f);
@@ -1205,6 +1198,11 @@ pub struct ICastingDeviceStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICastingSource(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICastingSource {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICastingSource {
     type Vtable = ICastingSource_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf429ea72_3467_47e6_a027_522923e9d727);

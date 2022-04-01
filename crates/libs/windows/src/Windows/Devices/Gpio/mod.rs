@@ -25,11 +25,11 @@ impl ::core::fmt::Debug for GpioChangeCount {
 #[cfg(feature = "Foundation")]
 unsafe impl ::windows::core::Abi for GpioChangeCount {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Foundation")]
 unsafe impl ::windows::core::RuntimeType for GpioChangeCount {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"struct(Windows.Devices.Gpio.GpioChangeCount;u8;struct(Windows.Foundation.TimeSpan;i8))");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -120,11 +120,6 @@ impl GpioChangeCounter {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for GpioChangeCounter {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for GpioChangeCounter {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -138,7 +133,6 @@ impl ::core::fmt::Debug for GpioChangeCounter {
 }
 unsafe impl ::windows::core::RuntimeType for GpioChangeCounter {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Gpio.GpioChangeCounter;{cb5ec0de-6801-43ff-803d-4576628a8b26})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -240,6 +234,7 @@ impl ::core::default::Default for GpioChangePolarity {
 }
 unsafe impl ::windows::core::Abi for GpioChangePolarity {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GpioChangePolarity {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -248,7 +243,6 @@ impl ::core::fmt::Debug for GpioChangePolarity {
 }
 unsafe impl ::windows::core::RuntimeType for GpioChangePolarity {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.Gpio.GpioChangePolarity;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -387,11 +381,6 @@ impl GpioChangeReader {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for GpioChangeReader {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for GpioChangeReader {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -405,7 +394,6 @@ impl ::core::fmt::Debug for GpioChangeReader {
 }
 unsafe impl ::windows::core::RuntimeType for GpioChangeReader {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Gpio.GpioChangeReader;{0abc885f-e031-48e8-8590-70de78363c6d})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -509,11 +497,11 @@ impl ::core::fmt::Debug for GpioChangeRecord {
 #[cfg(feature = "Foundation")]
 unsafe impl ::windows::core::Abi for GpioChangeRecord {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Foundation")]
 unsafe impl ::windows::core::RuntimeType for GpioChangeRecord {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"struct(Windows.Devices.Gpio.GpioChangeRecord;struct(Windows.Foundation.TimeSpan;i8);enum(Windows.Devices.Gpio.GpioPinEdge;i4))");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -602,11 +590,6 @@ impl GpioController {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for GpioController {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for GpioController {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -620,7 +603,6 @@ impl ::core::fmt::Debug for GpioController {
 }
 unsafe impl ::windows::core::RuntimeType for GpioController {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Gpio.GpioController;{284012e3-7461-469c-a8bc-61d69d08a53c})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -698,6 +680,7 @@ impl ::core::default::Default for GpioOpenStatus {
 }
 unsafe impl ::windows::core::Abi for GpioOpenStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GpioOpenStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -706,7 +689,6 @@ impl ::core::fmt::Debug for GpioOpenStatus {
 }
 unsafe impl ::windows::core::RuntimeType for GpioOpenStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.Gpio.GpioOpenStatus;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -802,11 +784,6 @@ impl GpioPin {
         }
     }
 }
-impl ::core::clone::Clone for GpioPin {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for GpioPin {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -820,7 +797,6 @@ impl ::core::fmt::Debug for GpioPin {
 }
 unsafe impl ::windows::core::RuntimeType for GpioPin {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Gpio.GpioPin;{11d9b087-afae-4790-9ee9-e0eac942d201})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -927,6 +903,7 @@ impl ::core::default::Default for GpioPinDriveMode {
 }
 unsafe impl ::windows::core::Abi for GpioPinDriveMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GpioPinDriveMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -935,7 +912,6 @@ impl ::core::fmt::Debug for GpioPinDriveMode {
 }
 unsafe impl ::windows::core::RuntimeType for GpioPinDriveMode {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.Gpio.GpioPinDriveMode;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -961,6 +937,7 @@ impl ::core::default::Default for GpioPinEdge {
 }
 unsafe impl ::windows::core::Abi for GpioPinEdge {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GpioPinEdge {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -969,7 +946,6 @@ impl ::core::fmt::Debug for GpioPinEdge {
 }
 unsafe impl ::windows::core::RuntimeType for GpioPinEdge {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.Gpio.GpioPinEdge;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -995,6 +971,7 @@ impl ::core::default::Default for GpioPinValue {
 }
 unsafe impl ::windows::core::Abi for GpioPinValue {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GpioPinValue {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1003,7 +980,6 @@ impl ::core::fmt::Debug for GpioPinValue {
 }
 unsafe impl ::windows::core::RuntimeType for GpioPinValue {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.Gpio.GpioPinValue;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1021,11 +997,6 @@ impl GpioPinValueChangedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for GpioPinValueChangedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for GpioPinValueChangedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1039,7 +1010,6 @@ impl ::core::fmt::Debug for GpioPinValueChangedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for GpioPinValueChangedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Gpio.GpioPinValueChangedEventArgs;{3137aae1-703d-4059-bd24-b5b25dffb84e})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1114,6 +1084,7 @@ impl ::core::default::Default for GpioSharingMode {
 }
 unsafe impl ::windows::core::Abi for GpioSharingMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GpioSharingMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1122,7 +1093,6 @@ impl ::core::fmt::Debug for GpioSharingMode {
 }
 unsafe impl ::windows::core::RuntimeType for GpioSharingMode {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.Gpio.GpioSharingMode;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1130,6 +1100,11 @@ unsafe impl ::windows::core::RuntimeType for GpioSharingMode {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGpioChangeCounter(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGpioChangeCounter {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGpioChangeCounter {
     type Vtable = IGpioChangeCounter_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xcb5ec0de_6801_43ff_803d_4576628a8b26);
@@ -1155,6 +1130,11 @@ pub struct IGpioChangeCounter_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGpioChangeCounterFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGpioChangeCounterFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGpioChangeCounterFactory {
     type Vtable = IGpioChangeCounterFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x147d94b6_0a9e_410c_b4fa_f89f4052084d);
@@ -1168,6 +1148,11 @@ pub struct IGpioChangeCounterFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGpioChangeReader(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGpioChangeReader {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGpioChangeReader {
     type Vtable = IGpioChangeReader_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x0abc885f_e031_48e8_8590_70de78363c6d);
@@ -1206,6 +1191,11 @@ pub struct IGpioChangeReader_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGpioChangeReaderFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGpioChangeReaderFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGpioChangeReaderFactory {
     type Vtable = IGpioChangeReaderFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa9598ef3_390e_441a_9d1c_e8de0b2df0df);
@@ -1220,6 +1210,11 @@ pub struct IGpioChangeReaderFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGpioController(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGpioController {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGpioController {
     type Vtable = IGpioController_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x284012e3_7461_469c_a8bc_61d69d08a53c);
@@ -1236,6 +1231,11 @@ pub struct IGpioController_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGpioControllerStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGpioControllerStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGpioControllerStatics {
     type Vtable = IGpioControllerStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x2ed6f42e_7af7_4116_9533_c43d99a1fb64);
@@ -1249,6 +1249,11 @@ pub struct IGpioControllerStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGpioControllerStatics2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGpioControllerStatics2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGpioControllerStatics2 {
     type Vtable = IGpioControllerStatics2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x912b7d20_6ca4_4106_a373_fffd346b0e5b);
@@ -1269,6 +1274,11 @@ pub struct IGpioControllerStatics2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGpioPin(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGpioPin {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGpioPin {
     type Vtable = IGpioPin_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x11d9b087_afae_4790_9ee9_e0eac942d201);
@@ -1304,6 +1314,11 @@ pub struct IGpioPin_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGpioPinValueChangedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGpioPinValueChangedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGpioPinValueChangedEventArgs {
     type Vtable = IGpioPinValueChangedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x3137aae1_703d_4059_bd24_b5b25dffb84e);

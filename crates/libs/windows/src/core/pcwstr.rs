@@ -32,6 +32,7 @@ impl ::core::fmt::Debug for PCWSTR {
 }
 unsafe impl Abi for PCWSTR {
     type Abi = Self;
+    type DefaultType = Self;
 
     #[cfg(feature = "alloc")]
     unsafe fn drop_param(param: &mut Param<'_, Self>) {

@@ -53,6 +53,7 @@ impl ::core::fmt::Debug for EMRPIXELFORMAT {
 #[cfg(feature = "Win32_Graphics_Gdi")]
 unsafe impl ::windows::core::Abi for EMRPIXELFORMAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Gdi")]
 impl ::core::cmp::PartialEq for EMRPIXELFORMAT {
@@ -354,6 +355,7 @@ impl ::core::fmt::Debug for GLYPHMETRICSFLOAT {
 }
 unsafe impl ::windows::core::Abi for GLYPHMETRICSFLOAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for GLYPHMETRICSFLOAT {
     fn eq(&self, other: &Self) -> bool {
@@ -1598,6 +1600,7 @@ impl ::core::fmt::Debug for HGLRC {
 }
 unsafe impl ::windows::core::Abi for HGLRC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[repr(C)]
 #[doc = "*Required features: `\"Win32_Graphics_OpenGL\"`*"]
@@ -1665,6 +1668,7 @@ impl ::core::fmt::Debug for LAYERPLANEDESCRIPTOR {
 }
 unsafe impl ::windows::core::Abi for LAYERPLANEDESCRIPTOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for LAYERPLANEDESCRIPTOR {
     fn eq(&self, other: &Self) -> bool {
@@ -1732,6 +1736,7 @@ impl ::core::default::Default for PFD_FLAGS {
 }
 unsafe impl ::windows::core::Abi for PFD_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PFD_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1789,6 +1794,7 @@ impl ::core::default::Default for PFD_LAYER_TYPE {
 }
 unsafe impl ::windows::core::Abi for PFD_LAYER_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PFD_LAYER_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1816,6 +1822,7 @@ impl ::core::default::Default for PFD_PIXEL_TYPE {
 }
 unsafe impl ::windows::core::Abi for PFD_PIXEL_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PFD_PIXEL_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1926,6 +1933,7 @@ impl ::core::fmt::Debug for PIXELFORMATDESCRIPTOR {
 }
 unsafe impl ::windows::core::Abi for PIXELFORMATDESCRIPTOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PIXELFORMATDESCRIPTOR {
     fn eq(&self, other: &Self) -> bool {
@@ -1957,6 +1965,7 @@ impl ::core::fmt::Debug for POINTFLOAT {
 }
 unsafe impl ::windows::core::Abi for POINTFLOAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for POINTFLOAT {
     fn eq(&self, other: &Self) -> bool {

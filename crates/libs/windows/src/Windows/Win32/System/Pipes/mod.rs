@@ -292,6 +292,7 @@ impl ::core::default::Default for NAMED_PIPE_MODE {
 }
 unsafe impl ::windows::core::Abi for NAMED_PIPE_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NAMED_PIPE_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

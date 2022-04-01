@@ -4,6 +4,11 @@ pub mod Core;
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IThreadPoolStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IThreadPoolStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IThreadPoolStatics {
     type Vtable = IThreadPoolStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb6bf67dd_84bd_44f8_ac1c_93ebcb9dba91);
@@ -28,6 +33,11 @@ pub struct IThreadPoolStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IThreadPoolTimer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IThreadPoolTimer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IThreadPoolTimer {
     type Vtable = IThreadPoolTimer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x594ebe78_55ea_4a88_a50d_3402ae1f9cf2);
@@ -49,6 +59,11 @@ pub struct IThreadPoolTimer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IThreadPoolTimerStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IThreadPoolTimerStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IThreadPoolTimerStatics {
     type Vtable = IThreadPoolTimerStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1a8a9d02_e482_461b_b8c7_8efad1cce590);
@@ -175,11 +190,6 @@ impl ThreadPoolTimer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for ThreadPoolTimer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ThreadPoolTimer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -193,7 +203,6 @@ impl ::core::fmt::Debug for ThreadPoolTimer {
 }
 unsafe impl ::windows::core::RuntimeType for ThreadPoolTimer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.System.Threading.ThreadPoolTimer;{594ebe78-55ea-4a88-a50d-3402ae1f9cf2})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -299,11 +308,6 @@ impl<F: FnMut(&::core::option::Option<ThreadPoolTimer>) -> ::windows::core::Resu
         ((*this).invoke)(::core::mem::transmute(&timer)).into()
     }
 }
-impl ::core::clone::Clone for TimerDestroyedHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for TimerDestroyedHandler {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -321,7 +325,6 @@ unsafe impl ::windows::core::Interface for TimerDestroyedHandler {
 }
 unsafe impl ::windows::core::RuntimeType for TimerDestroyedHandler {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{34ed19fa-8384-4eb9-8209-fb5094eeec35}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -384,11 +387,6 @@ impl<F: FnMut(&::core::option::Option<ThreadPoolTimer>) -> ::windows::core::Resu
         ((*this).invoke)(::core::mem::transmute(&timer)).into()
     }
 }
-impl ::core::clone::Clone for TimerElapsedHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for TimerElapsedHandler {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -406,7 +404,6 @@ unsafe impl ::windows::core::Interface for TimerElapsedHandler {
 }
 unsafe impl ::windows::core::RuntimeType for TimerElapsedHandler {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{faaea667-fbeb-49cb-adb2-71184c556e43}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -475,12 +472,6 @@ impl<F: FnMut(&::core::option::Option<super::super::Foundation::IAsyncAction>) -
     }
 }
 #[cfg(feature = "Foundation")]
-impl ::core::clone::Clone for WorkItemHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Foundation")]
 impl ::core::cmp::PartialEq for WorkItemHandler {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -502,7 +493,6 @@ unsafe impl ::windows::core::Interface for WorkItemHandler {
 #[cfg(feature = "Foundation")]
 unsafe impl ::windows::core::RuntimeType for WorkItemHandler {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{1d1a8b8b-fa66-414f-9cbd-b65fc99d17fa}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -538,6 +528,7 @@ impl ::core::default::Default for WorkItemOptions {
 }
 unsafe impl ::windows::core::Abi for WorkItemOptions {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WorkItemOptions {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -574,7 +565,6 @@ impl ::core::ops::Not for WorkItemOptions {
 }
 unsafe impl ::windows::core::RuntimeType for WorkItemOptions {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.System.Threading.WorkItemOptions;u4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -601,6 +591,7 @@ impl ::core::default::Default for WorkItemPriority {
 }
 unsafe impl ::windows::core::Abi for WorkItemPriority {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WorkItemPriority {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -609,7 +600,6 @@ impl ::core::fmt::Debug for WorkItemPriority {
 }
 unsafe impl ::windows::core::RuntimeType for WorkItemPriority {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.System.Threading.WorkItemPriority;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }

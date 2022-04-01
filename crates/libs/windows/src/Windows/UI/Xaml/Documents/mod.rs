@@ -114,11 +114,6 @@ impl Block {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for Block {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for Block {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -132,7 +127,6 @@ impl ::core::fmt::Debug for Block {
 }
 unsafe impl ::windows::core::RuntimeType for Block {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Documents.Block;{4bce0016-dd47-4350-8cb0-e171600ac896})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -330,12 +324,6 @@ impl BlockCollection {
     }
 }
 #[cfg(feature = "Foundation_Collections")]
-impl ::core::clone::Clone for BlockCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Foundation_Collections")]
 impl ::core::cmp::PartialEq for BlockCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -352,7 +340,6 @@ impl ::core::fmt::Debug for BlockCollection {
 #[cfg(feature = "Foundation_Collections")]
 unsafe impl ::windows::core::RuntimeType for BlockCollection {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Documents.BlockCollection;pinterface({913337e9-11a1-4345-a3a2-4e7f956e222d};rc(Windows.UI.Xaml.Documents.Block;{4bce0016-dd47-4350-8cb0-e171600ac896})))");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -498,11 +485,6 @@ impl Bold {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for Bold {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for Bold {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -516,7 +498,6 @@ impl ::core::fmt::Debug for Bold {
 }
 unsafe impl ::windows::core::RuntimeType for Bold {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Documents.Bold;{ade73784-1b59-4da4-bb23-0f20e885b4bf})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -662,11 +643,6 @@ impl ContactContentLinkProvider {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for ContactContentLinkProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ContactContentLinkProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -680,7 +656,6 @@ impl ::core::fmt::Debug for ContactContentLinkProvider {
 }
 unsafe impl ::windows::core::RuntimeType for ContactContentLinkProvider {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Documents.ContactContentLinkProvider;{f92fd29b-589b-4abd-9d37-35a1468f021e})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1146,11 +1121,6 @@ impl ContentLink {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for ContentLink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ContentLink {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1164,7 +1134,6 @@ impl ::core::fmt::Debug for ContentLink {
 }
 unsafe impl ::windows::core::RuntimeType for ContentLink {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Documents.ContentLink;{6c60c3e1-528c-42f8-92be-34b8c68be304})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1305,11 +1274,6 @@ impl ContentLinkInvokedEventArgs {
         unsafe { (::windows::core::Interface::vtable(this).SetHandled)(::core::mem::transmute_copy(this), value).ok() }
     }
 }
-impl ::core::clone::Clone for ContentLinkInvokedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ContentLinkInvokedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1323,7 +1287,6 @@ impl ::core::fmt::Debug for ContentLinkInvokedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for ContentLinkInvokedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Documents.ContentLinkInvokedEventArgs;{546717c1-e8df-4593-9639-97595fdf8310})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1381,11 +1344,6 @@ unsafe impl ::core::marker::Sync for ContentLinkInvokedEventArgs {}
 #[repr(transparent)]
 pub struct ContentLinkProvider(::windows::core::IUnknown);
 impl ContentLinkProvider {}
-impl ::core::clone::Clone for ContentLinkProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ContentLinkProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1399,7 +1357,6 @@ impl ::core::fmt::Debug for ContentLinkProvider {
 }
 unsafe impl ::windows::core::RuntimeType for ContentLinkProvider {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Documents.ContentLinkProvider;{730587fd-bfdc-4cb3-904d-b65ab339bbf5})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1581,11 +1538,6 @@ impl ContentLinkProviderCollection {
         unsafe { (::windows::core::Interface::vtable(this).ReplaceAll)(::core::mem::transmute_copy(this), items.len() as u32, ::core::mem::transmute(items.as_ptr())).ok() }
     }
 }
-impl ::core::clone::Clone for ContentLinkProviderCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ContentLinkProviderCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1599,7 +1551,6 @@ impl ::core::fmt::Debug for ContentLinkProviderCollection {
 }
 unsafe impl ::windows::core::RuntimeType for ContentLinkProviderCollection {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Documents.ContentLinkProviderCollection;{f5b84d0c-a9f4-4d1a-a13c-10def1843734})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1949,11 +1900,6 @@ impl Glyphs {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for Glyphs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for Glyphs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1967,7 +1913,6 @@ impl ::core::fmt::Debug for Glyphs {
 }
 unsafe impl ::windows::core::RuntimeType for Glyphs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Documents.Glyphs;{d079498b-f2b1-4281-99a2-e4d05932b2b5})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2508,11 +2453,6 @@ impl Hyperlink {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for Hyperlink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for Hyperlink {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2526,7 +2466,6 @@ impl ::core::fmt::Debug for Hyperlink {
 }
 unsafe impl ::windows::core::RuntimeType for Hyperlink {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Documents.Hyperlink;{0fe2363b-14e9-4152-9e58-5aea5b21f08d})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2664,11 +2603,6 @@ unsafe impl ::core::marker::Sync for Hyperlink {}
 #[repr(transparent)]
 pub struct HyperlinkClickEventArgs(::windows::core::IUnknown);
 impl HyperlinkClickEventArgs {}
-impl ::core::clone::Clone for HyperlinkClickEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for HyperlinkClickEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2682,7 +2616,6 @@ impl ::core::fmt::Debug for HyperlinkClickEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for HyperlinkClickEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Documents.HyperlinkClickEventArgs;{c755916b-7bdc-4be7-b373-9240a503d870})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2759,6 +2692,11 @@ unsafe impl ::core::marker::Sync for HyperlinkClickEventArgs {}
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBlock(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBlock {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBlock {
     type Vtable = IBlock_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x4bce0016_dd47_4350_8cb0_e171600ac896);
@@ -2779,6 +2717,11 @@ pub struct IBlock_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBlock2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBlock2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBlock2 {
     type Vtable = IBlock2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x5ec7bdf3_1333_4a92_8318_6caedc12ef89);
@@ -2793,6 +2736,11 @@ pub struct IBlock2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBlockFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBlockFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBlockFactory {
     type Vtable = IBlockFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x07110532_4f59_4f3b_9ce5_25784c430507);
@@ -2806,6 +2754,11 @@ pub struct IBlockFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBlockStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBlockStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBlockStatics {
     type Vtable = IBlockStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf86a8c34_8d18_4c53_aebd_91e610a5e010);
@@ -2822,6 +2775,11 @@ pub struct IBlockStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBlockStatics2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBlockStatics2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBlockStatics2 {
     type Vtable = IBlockStatics2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xaf01a4d6_03e3_4cee_9b02_2bfc308b27a9);
@@ -2835,6 +2793,11 @@ pub struct IBlockStatics2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBold(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBold {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBold {
     type Vtable = IBold_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xade73784_1b59_4da4_bb23_0f20e885b4bf);
@@ -2847,6 +2810,11 @@ pub struct IBold_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IContactContentLinkProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IContactContentLinkProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IContactContentLinkProvider {
     type Vtable = IContactContentLinkProvider_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf92fd29b_589b_4abd_9d37_35a1468f021e);
@@ -2859,6 +2827,11 @@ pub struct IContactContentLinkProvider_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IContentLink(::windows::core::IUnknown);
+impl ::core::clone::Clone for IContentLink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IContentLink {
     type Vtable = IContentLink_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x6c60c3e1_528c_42f8_92be_34b8c68be304);
@@ -2967,6 +2940,11 @@ pub struct IContentLink_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IContentLinkInvokedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IContentLinkInvokedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IContentLinkInvokedEventArgs {
     type Vtable = IContentLinkInvokedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x546717c1_e8df_4593_9639_97595fdf8310);
@@ -2985,6 +2963,11 @@ pub struct IContentLinkInvokedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IContentLinkProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IContentLinkProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IContentLinkProvider {
     type Vtable = IContentLinkProvider_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x730587fd_bfdc_4cb3_904d_b65ab339bbf5);
@@ -2997,6 +2980,11 @@ pub struct IContentLinkProvider_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IContentLinkProviderCollection(::windows::core::IUnknown);
+impl ::core::clone::Clone for IContentLinkProviderCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IContentLinkProviderCollection {
     type Vtable = IContentLinkProviderCollection_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf5b84d0c_a9f4_4d1a_a13c_10def1843734);
@@ -3009,6 +2997,11 @@ pub struct IContentLinkProviderCollection_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IContentLinkProviderFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IContentLinkProviderFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IContentLinkProviderFactory {
     type Vtable = IContentLinkProviderFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x57d60d3b_ef1a_4e8e_839b_d36ef3a503e0);
@@ -3022,6 +3015,11 @@ pub struct IContentLinkProviderFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IContentLinkStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IContentLinkStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IContentLinkStatics {
     type Vtable = IContentLinkStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa34e3063_eb16_484e_a3df_522b9a832e6e);
@@ -3048,6 +3046,11 @@ pub struct IContentLinkStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGlyphs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGlyphs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGlyphs {
     type Vtable = IGlyphs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd079498b_f2b1_4281_99a2_e4d05932b2b5);
@@ -3094,6 +3097,11 @@ pub struct IGlyphs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGlyphs2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGlyphs2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGlyphs2 {
     type Vtable = IGlyphs2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xaa8bfe5c_3754_4bee_bbe1_4403ee9b86f0);
@@ -3110,6 +3118,11 @@ pub struct IGlyphs2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGlyphsStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGlyphsStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGlyphsStatics {
     type Vtable = IGlyphsStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x225cf4c5_fdf1_43ed_958f_414e86f103f2);
@@ -3130,6 +3143,11 @@ pub struct IGlyphsStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGlyphsStatics2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGlyphsStatics2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGlyphsStatics2 {
     type Vtable = IGlyphsStatics2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x10489aa7_1615_4a33_aa02_d7ef2aefc739);
@@ -3144,6 +3162,11 @@ pub struct IGlyphsStatics2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHyperlink(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHyperlink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHyperlink {
     type Vtable = IHyperlink_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x0fe2363b_14e9_4152_9e58_5aea5b21f08d);
@@ -3172,6 +3195,11 @@ pub struct IHyperlink_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHyperlink2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHyperlink2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHyperlink2 {
     type Vtable = IHyperlink2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x4ce9da5f_7cff_4291_b78f_dfec72490576);
@@ -3186,6 +3214,11 @@ pub struct IHyperlink2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHyperlink3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHyperlink3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHyperlink3 {
     type Vtable = IHyperlink3_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc3f157d9_e5d3_4fb7_8702_4f6d85dd9e0a);
@@ -3208,6 +3241,11 @@ pub struct IHyperlink3_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHyperlink4(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHyperlink4 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHyperlink4 {
     type Vtable = IHyperlink4_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf7d02959_82fb_400a_a407_5a4ee677988a);
@@ -3270,6 +3308,11 @@ pub struct IHyperlink4_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHyperlink5(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHyperlink5 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHyperlink5 {
     type Vtable = IHyperlink5_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x607dd7d2_0945_4328_91ee_94ccec2ea6c3);
@@ -3286,6 +3329,11 @@ pub struct IHyperlink5_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHyperlinkClickEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHyperlinkClickEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHyperlinkClickEventArgs {
     type Vtable = IHyperlinkClickEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc755916b_7bdc_4be7_b373_9240a503d870);
@@ -3298,6 +3346,11 @@ pub struct IHyperlinkClickEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHyperlinkStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHyperlinkStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHyperlinkStatics {
     type Vtable = IHyperlinkStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x3a44d3d4_fd41_41db_8c72_3b790acd9fd3);
@@ -3311,6 +3364,11 @@ pub struct IHyperlinkStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHyperlinkStatics2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHyperlinkStatics2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHyperlinkStatics2 {
     type Vtable = IHyperlinkStatics2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x5028d8b7_7adf_43ee_a4ae_9c925f755716);
@@ -3324,6 +3382,11 @@ pub struct IHyperlinkStatics2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHyperlinkStatics3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHyperlinkStatics3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHyperlinkStatics3 {
     type Vtable = IHyperlinkStatics3_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x3e15dea0_205e_4947_99a5_74e757e8e1b4);
@@ -3341,6 +3404,11 @@ pub struct IHyperlinkStatics3_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHyperlinkStatics4(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHyperlinkStatics4 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHyperlinkStatics4 {
     type Vtable = IHyperlinkStatics4_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x0476b378_8faa_4e24_b3b6_e9de4d3c708c);
@@ -3358,6 +3426,11 @@ pub struct IHyperlinkStatics4_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHyperlinkStatics5(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHyperlinkStatics5 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHyperlinkStatics5 {
     type Vtable = IHyperlinkStatics5_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x59308cea_1e49_4921_bd88_a2878d07e30e);
@@ -3372,6 +3445,11 @@ pub struct IHyperlinkStatics5_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IInline(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInline {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IInline {
     type Vtable = IInline_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x0c92712d_1bc9_4931_8cb1_1aeadf1cc685);
@@ -3384,6 +3462,11 @@ pub struct IInline_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IInlineFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInlineFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IInlineFactory {
     type Vtable = IInlineFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x4058acd1_2f90_4b8f_99dd_4218ef5f03de);
@@ -3397,6 +3480,11 @@ pub struct IInlineFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IInlineUIContainer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInlineUIContainer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IInlineUIContainer {
     type Vtable = IInlineUIContainer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1416ce81_28ee_452e_b121_5fc4f60b86a6);
@@ -3411,6 +3499,11 @@ pub struct IInlineUIContainer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IItalic(::windows::core::IUnknown);
+impl ::core::clone::Clone for IItalic {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IItalic {
     type Vtable = IItalic_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x91f4619c_fcbb_4157_802c_76f63b5fb657);
@@ -3423,6 +3516,11 @@ pub struct IItalic_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ILineBreak(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILineBreak {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ILineBreak {
     type Vtable = ILineBreak_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x645589c4_f769_41ed_895b_8a1b2fb31562);
@@ -3435,6 +3533,11 @@ pub struct ILineBreak_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IParagraph(::windows::core::IUnknown);
+impl ::core::clone::Clone for IParagraph {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IParagraph {
     type Vtable = IParagraph_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf83ef59a_fa61_4bef_ae33_0b0ad756a84d);
@@ -3453,6 +3556,11 @@ pub struct IParagraph_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IParagraphStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IParagraphStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IParagraphStatics {
     type Vtable = IParagraphStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xef08889a_535b_4e4c_8d84_283b33e98a37);
@@ -3466,6 +3574,11 @@ pub struct IParagraphStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPlaceContentLinkProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPlaceContentLinkProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPlaceContentLinkProvider {
     type Vtable = IPlaceContentLinkProvider_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x10348a4c_2366_41be_90c8_3258b53b5483);
@@ -3478,6 +3591,11 @@ pub struct IPlaceContentLinkProvider_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IRun(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRun {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IRun {
     type Vtable = IRun_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x59553c83_0e14_49bd_b84b_c526f3034349);
@@ -3494,6 +3612,11 @@ pub struct IRun_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IRunStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRunStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IRunStatics {
     type Vtable = IRunStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe9303cef_65a0_4b8d_a7f7_8fdb287b46f3);
@@ -3507,6 +3630,11 @@ pub struct IRunStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpan(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpan {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpan {
     type Vtable = ISpan_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9839d4a9_02af_4811_aa15_6bef3acac97a);
@@ -3527,6 +3655,11 @@ pub struct ISpan_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpanFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpanFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpanFactory {
     type Vtable = ISpanFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x5b916f5c_cd2d_40c0_956a_386448322f79);
@@ -3540,6 +3673,11 @@ pub struct ISpanFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ITextElement(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITextElement {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ITextElement {
     type Vtable = ITextElement_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe83b0062_d776_4f92_baea_40e77d4791d5);
@@ -3604,6 +3742,11 @@ pub struct ITextElement_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ITextElement2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITextElement2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ITextElement2 {
     type Vtable = ITextElement2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa8076aa8_f892_49f6_8cd2_89addaf06d2d);
@@ -3618,6 +3761,11 @@ pub struct ITextElement2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ITextElement3(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITextElement3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ITextElement3 {
     type Vtable = ITextElement3_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd1db340f_1bc4_4ca8_bcf7_770bff9b27ab);
@@ -3636,6 +3784,11 @@ pub struct ITextElement3_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ITextElement4(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITextElement4 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ITextElement4 {
     type Vtable = ITextElement4_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb196e222_ca0e_48a9_83bc_36ce50566ac7);
@@ -3696,6 +3849,11 @@ pub struct ITextElement4_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ITextElement5(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITextElement5 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ITextElement5 {
     type Vtable = ITextElement5_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xbd9552f3_540d_58bf_b6a8_07556aeda2ea);
@@ -3710,6 +3868,11 @@ pub struct ITextElement5_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ITextElementFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITextElementFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ITextElementFactory {
     type Vtable = ITextElementFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x35007285_cf47_4bfe_b1bc_39c93af4ae80);
@@ -3722,6 +3885,11 @@ pub struct ITextElementFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ITextElementOverrides(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITextElementOverrides {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ITextElementOverrides {
     type Vtable = ITextElementOverrides_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x0ce21ee7_4f76_4dd9_bf91_163beccf84bc);
@@ -3735,6 +3903,11 @@ pub struct ITextElementOverrides_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ITextElementStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITextElementStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ITextElementStatics {
     type Vtable = ITextElementStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x0a2f9b98_6c03_4470_a79b_3298a10482ce);
@@ -3755,6 +3928,11 @@ pub struct ITextElementStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ITextElementStatics2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITextElementStatics2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ITextElementStatics2 {
     type Vtable = ITextElementStatics2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x164297b2_982b_49e1_8c03_ca43bc4d5b6d);
@@ -3768,6 +3946,11 @@ pub struct ITextElementStatics2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ITextElementStatics3(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITextElementStatics3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ITextElementStatics3 {
     type Vtable = ITextElementStatics3_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xcfefcfaf_0fa1_45ec_9a4e_9b33664dc8b1);
@@ -3783,6 +3966,11 @@ pub struct ITextElementStatics3_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ITextElementStatics4(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITextElementStatics4 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ITextElementStatics4 {
     type Vtable = ITextElementStatics4_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xfd8f641e_6b12_40d5_b6ef_d1bd12ac9066);
@@ -3801,6 +3989,11 @@ pub struct ITextElementStatics4_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ITextHighlighter(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITextHighlighter {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ITextHighlighter {
     type Vtable = ITextHighlighter_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xba6cb54b_7d75_4535_b30d_a81a00b637a4);
@@ -3833,6 +4026,11 @@ pub struct ITextHighlighter_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ITextHighlighterBase(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITextHighlighterBase {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ITextHighlighterBase {
     type Vtable = ITextHighlighterBase_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd957601a_5f0d_4cdf_9758_97e0eb95c8fa);
@@ -3845,6 +4043,11 @@ pub struct ITextHighlighterBase_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ITextHighlighterBaseFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITextHighlighterBaseFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ITextHighlighterBaseFactory {
     type Vtable = ITextHighlighterBaseFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9592b2d0_eadc_4c74_92c8_6e896e22506d);
@@ -3857,6 +4060,11 @@ pub struct ITextHighlighterBaseFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ITextHighlighterFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITextHighlighterFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ITextHighlighterFactory {
     type Vtable = ITextHighlighterFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x70125461_9a8f_4fa0_b235_8ffaa507bef2);
@@ -3870,6 +4078,11 @@ pub struct ITextHighlighterFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ITextHighlighterStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITextHighlighterStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ITextHighlighterStatics {
     type Vtable = ITextHighlighterStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb3b009c4_3a7e_49cc_ab84_29c405488765);
@@ -3884,6 +4097,11 @@ pub struct ITextHighlighterStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ITextPointer(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITextPointer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ITextPointer {
     type Vtable = ITextPointer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xac687aa1_6a41_43ff_851e_45348aa2cf7b);
@@ -3905,6 +4123,11 @@ pub struct ITextPointer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ITypography(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITypography {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ITypography {
     type Vtable = ITypography_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x866f65d5_ea97_42ab_9288_9c01aebc7a97);
@@ -3917,6 +4140,11 @@ pub struct ITypography_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ITypographyStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITypographyStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ITypographyStatics {
     type Vtable = ITypographyStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x67b9ec88_6c57_4ce0_95f1_d4b9ed632fb4);
@@ -4058,6 +4286,11 @@ pub struct ITypographyStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IUnderline(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUnderline {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IUnderline {
     type Vtable = IUnderline_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa5fa8202_61c0_47d7_93ef_bc0b577c5f26);
@@ -4071,11 +4304,6 @@ pub struct IUnderline_Vtbl {
 #[repr(transparent)]
 pub struct Inline(::windows::core::IUnknown);
 impl Inline {}
-impl ::core::clone::Clone for Inline {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for Inline {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4089,7 +4317,6 @@ impl ::core::fmt::Debug for Inline {
 }
 unsafe impl ::windows::core::RuntimeType for Inline {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Documents.Inline;{0c92712d-1bc9-4931-8cb1-1aeadf1cc685})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4287,12 +4514,6 @@ impl InlineCollection {
     }
 }
 #[cfg(feature = "Foundation_Collections")]
-impl ::core::clone::Clone for InlineCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Foundation_Collections")]
 impl ::core::cmp::PartialEq for InlineCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4309,7 +4530,6 @@ impl ::core::fmt::Debug for InlineCollection {
 #[cfg(feature = "Foundation_Collections")]
 unsafe impl ::windows::core::RuntimeType for InlineCollection {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Documents.InlineCollection;pinterface({913337e9-11a1-4345-a3a2-4e7f956e222d};rc(Windows.UI.Xaml.Documents.Inline;{0c92712d-1bc9-4931-8cb1-1aeadf1cc685})))");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4468,11 +4688,6 @@ impl InlineUIContainer {
         unsafe { (::windows::core::Interface::vtable(this).SetChild)(::core::mem::transmute_copy(this), value.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for InlineUIContainer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for InlineUIContainer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4486,7 +4701,6 @@ impl ::core::fmt::Debug for InlineUIContainer {
 }
 unsafe impl ::windows::core::RuntimeType for InlineUIContainer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Documents.InlineUIContainer;{1416ce81-28ee-452e-b121-5fc4f60b86a6})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4612,11 +4826,6 @@ impl Italic {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for Italic {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for Italic {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4630,7 +4839,6 @@ impl ::core::fmt::Debug for Italic {
 }
 unsafe impl ::windows::core::RuntimeType for Italic {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Documents.Italic;{91f4619c-fcbb-4157-802c-76f63b5fb657})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4776,11 +4984,6 @@ impl LineBreak {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for LineBreak {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for LineBreak {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4794,7 +4997,6 @@ impl ::core::fmt::Debug for LineBreak {
 }
 unsafe impl ::windows::core::RuntimeType for LineBreak {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Documents.LineBreak;{645589c4-f769-41ed-895b-8a1b2fb31562})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4929,6 +5131,7 @@ impl ::core::default::Default for LogicalDirection {
 }
 unsafe impl ::windows::core::Abi for LogicalDirection {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for LogicalDirection {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4937,7 +5140,6 @@ impl ::core::fmt::Debug for LogicalDirection {
 }
 unsafe impl ::windows::core::RuntimeType for LogicalDirection {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Xaml.Documents.LogicalDirection;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -4988,11 +5190,6 @@ impl Paragraph {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for Paragraph {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for Paragraph {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5006,7 +5203,6 @@ impl ::core::fmt::Debug for Paragraph {
 }
 unsafe impl ::windows::core::RuntimeType for Paragraph {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Documents.Paragraph;{f83ef59a-fa61-4bef-ae33-0b0ad756a84d})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -5132,11 +5328,6 @@ impl PlaceContentLinkProvider {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for PlaceContentLinkProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PlaceContentLinkProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5150,7 +5341,6 @@ impl ::core::fmt::Debug for PlaceContentLinkProvider {
 }
 unsafe impl ::windows::core::RuntimeType for PlaceContentLinkProvider {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Documents.PlaceContentLinkProvider;{10348a4c-2366-41be-90c8-3258b53b5483})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -5294,11 +5484,6 @@ impl Run {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for Run {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for Run {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5312,7 +5497,6 @@ impl ::core::fmt::Debug for Run {
 }
 unsafe impl ::windows::core::RuntimeType for Run {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Documents.Run;{59553c83-0e14-49bd-b84b-c526f3034349})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -5466,11 +5650,6 @@ impl Span {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for Span {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for Span {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5484,7 +5663,6 @@ impl ::core::fmt::Debug for Span {
 }
 unsafe impl ::windows::core::RuntimeType for Span {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Documents.Span;{9839d4a9-02af-4811-aa15-6bef3acac97a})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -6103,11 +6281,6 @@ impl TextElement {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for TextElement {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for TextElement {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6121,7 +6294,6 @@ impl ::core::fmt::Debug for TextElement {
 }
 unsafe impl ::windows::core::RuntimeType for TextElement {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Documents.TextElement;{e83b0062-d776-4f92-baea-40e77d4791d5})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -6278,11 +6450,6 @@ impl TextHighlighter {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for TextHighlighter {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for TextHighlighter {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6296,7 +6463,6 @@ impl ::core::fmt::Debug for TextHighlighter {
 }
 unsafe impl ::windows::core::RuntimeType for TextHighlighter {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Documents.TextHighlighter;{ba6cb54b-7d75-4535-b30d-a81a00b637a4})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -6354,11 +6520,6 @@ unsafe impl ::core::marker::Sync for TextHighlighter {}
 #[repr(transparent)]
 pub struct TextHighlighterBase(::windows::core::IUnknown);
 impl TextHighlighterBase {}
-impl ::core::clone::Clone for TextHighlighterBase {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for TextHighlighterBase {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6372,7 +6533,6 @@ impl ::core::fmt::Debug for TextHighlighterBase {
 }
 unsafe impl ::windows::core::RuntimeType for TextHighlighterBase {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Documents.TextHighlighterBase;{d957601a-5f0d-4cdf-9758-97e0eb95c8fa})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -6500,11 +6660,6 @@ impl TextPointer {
         }
     }
 }
-impl ::core::clone::Clone for TextPointer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for TextPointer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6518,7 +6673,6 @@ impl ::core::fmt::Debug for TextPointer {
 }
 unsafe impl ::windows::core::RuntimeType for TextPointer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Documents.TextPointer;{ac687aa1-6a41-43ff-851e-45348aa2cf7b})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -6591,10 +6745,10 @@ impl ::core::fmt::Debug for TextRange {
 }
 unsafe impl ::windows::core::Abi for TextRange {
     type Abi = Self;
+    type DefaultType = Self;
 }
 unsafe impl ::windows::core::RuntimeType for TextRange {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"struct(Windows.UI.Xaml.Documents.TextRange;i4;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -7394,11 +7548,6 @@ impl Typography {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for Typography {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for Typography {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7412,7 +7561,6 @@ impl ::core::fmt::Debug for Typography {
 }
 unsafe impl ::windows::core::RuntimeType for Typography {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Documents.Typography;{866f65d5-ea97-42ab-9288-9c01aebc7a97})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -7478,11 +7626,6 @@ impl Underline {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for Underline {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for Underline {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7496,7 +7639,6 @@ impl ::core::fmt::Debug for Underline {
 }
 unsafe impl ::windows::core::RuntimeType for Underline {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Documents.Underline;{a5fa8202-61c0-47d7-93ef-bc0b577c5f26})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -7651,6 +7793,7 @@ impl ::core::default::Default for UnderlineStyle {
 }
 unsafe impl ::windows::core::Abi for UnderlineStyle {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UnderlineStyle {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7659,7 +7802,6 @@ impl ::core::fmt::Debug for UnderlineStyle {
 }
 unsafe impl ::windows::core::RuntimeType for UnderlineStyle {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Xaml.Documents.UnderlineStyle;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }

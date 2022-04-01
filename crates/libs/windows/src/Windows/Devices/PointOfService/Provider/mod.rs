@@ -40,11 +40,6 @@ impl BarcodeScannerDisableScannerRequest {
         }
     }
 }
-impl ::core::clone::Clone for BarcodeScannerDisableScannerRequest {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for BarcodeScannerDisableScannerRequest {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -58,7 +53,6 @@ impl ::core::fmt::Debug for BarcodeScannerDisableScannerRequest {
 }
 unsafe impl ::windows::core::RuntimeType for BarcodeScannerDisableScannerRequest {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.PointOfService.Provider.BarcodeScannerDisableScannerRequest;{88ecf7c0-37b9-4275-8e77-c8e52ae5a9c8})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -134,11 +128,6 @@ impl BarcodeScannerDisableScannerRequestEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for BarcodeScannerDisableScannerRequestEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for BarcodeScannerDisableScannerRequestEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -152,7 +141,6 @@ impl ::core::fmt::Debug for BarcodeScannerDisableScannerRequestEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for BarcodeScannerDisableScannerRequestEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.PointOfService.Provider.BarcodeScannerDisableScannerRequestEventArgs;{7006e142-e802-46f5-b604-352a15ce9232})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -247,11 +235,6 @@ impl BarcodeScannerEnableScannerRequest {
         }
     }
 }
-impl ::core::clone::Clone for BarcodeScannerEnableScannerRequest {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for BarcodeScannerEnableScannerRequest {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -265,7 +248,6 @@ impl ::core::fmt::Debug for BarcodeScannerEnableScannerRequest {
 }
 unsafe impl ::windows::core::RuntimeType for BarcodeScannerEnableScannerRequest {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.PointOfService.Provider.BarcodeScannerEnableScannerRequest;{c0b3e9ba-816a-452b-bd77-b7e453ec446d})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -341,11 +323,6 @@ impl BarcodeScannerEnableScannerRequestEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for BarcodeScannerEnableScannerRequestEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for BarcodeScannerEnableScannerRequestEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -359,7 +336,6 @@ impl ::core::fmt::Debug for BarcodeScannerEnableScannerRequestEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for BarcodeScannerEnableScannerRequestEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.PointOfService.Provider.BarcodeScannerEnableScannerRequestEventArgs;{956c9419-7b4e-4451-8c41-8e10cfbc5b41})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -474,11 +450,6 @@ impl BarcodeScannerFrameReader {
         unsafe { (::windows::core::Interface::vtable(this).Close)(::core::mem::transmute_copy(this)).ok() }
     }
 }
-impl ::core::clone::Clone for BarcodeScannerFrameReader {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for BarcodeScannerFrameReader {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -492,7 +463,6 @@ impl ::core::fmt::Debug for BarcodeScannerFrameReader {
 }
 unsafe impl ::windows::core::RuntimeType for BarcodeScannerFrameReader {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.PointOfService.Provider.BarcodeScannerFrameReader;{dbc72b07-64c3-482b-93c8-65fb33c22208})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -586,11 +556,6 @@ impl BarcodeScannerFrameReaderFrameArrivedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for BarcodeScannerFrameReaderFrameArrivedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for BarcodeScannerFrameReaderFrameArrivedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -604,7 +569,6 @@ impl ::core::fmt::Debug for BarcodeScannerFrameReaderFrameArrivedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for BarcodeScannerFrameReaderFrameArrivedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.PointOfService.Provider.BarcodeScannerFrameReaderFrameArrivedEventArgs;{b0bbd604-54fd-436d-8629-712e787223dd})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -707,11 +671,6 @@ impl BarcodeScannerGetSymbologyAttributesRequest {
         }
     }
 }
-impl ::core::clone::Clone for BarcodeScannerGetSymbologyAttributesRequest {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for BarcodeScannerGetSymbologyAttributesRequest {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -725,7 +684,6 @@ impl ::core::fmt::Debug for BarcodeScannerGetSymbologyAttributesRequest {
 }
 unsafe impl ::windows::core::RuntimeType for BarcodeScannerGetSymbologyAttributesRequest {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.PointOfService.Provider.BarcodeScannerGetSymbologyAttributesRequest;{9774c46a-58e4-4c5f-b8e9-e41467632700})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -801,11 +759,6 @@ impl BarcodeScannerGetSymbologyAttributesRequestEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for BarcodeScannerGetSymbologyAttributesRequestEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for BarcodeScannerGetSymbologyAttributesRequestEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -819,7 +772,6 @@ impl ::core::fmt::Debug for BarcodeScannerGetSymbologyAttributesRequestEventArgs
 }
 unsafe impl ::windows::core::RuntimeType for BarcodeScannerGetSymbologyAttributesRequestEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.PointOfService.Provider.BarcodeScannerGetSymbologyAttributesRequestEventArgs;{7f89de3e-fb5d-493c-b402-356b24d574a6})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -914,11 +866,6 @@ impl BarcodeScannerHideVideoPreviewRequest {
         }
     }
 }
-impl ::core::clone::Clone for BarcodeScannerHideVideoPreviewRequest {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for BarcodeScannerHideVideoPreviewRequest {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -932,7 +879,6 @@ impl ::core::fmt::Debug for BarcodeScannerHideVideoPreviewRequest {
 }
 unsafe impl ::windows::core::RuntimeType for BarcodeScannerHideVideoPreviewRequest {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.PointOfService.Provider.BarcodeScannerHideVideoPreviewRequest;{fa4ebe7f-6670-40e1-b90b-bb10d8d425fa})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1008,11 +954,6 @@ impl BarcodeScannerHideVideoPreviewRequestEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for BarcodeScannerHideVideoPreviewRequestEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for BarcodeScannerHideVideoPreviewRequestEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1026,7 +967,6 @@ impl ::core::fmt::Debug for BarcodeScannerHideVideoPreviewRequestEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for BarcodeScannerHideVideoPreviewRequestEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.PointOfService.Provider.BarcodeScannerHideVideoPreviewRequestEventArgs;{16a281fc-d6be-4bc7-9df1-33741f3eadea})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1343,11 +1283,6 @@ impl BarcodeScannerProviderConnection {
         unsafe { (::windows::core::Interface::vtable(this).Close)(::core::mem::transmute_copy(this)).ok() }
     }
 }
-impl ::core::clone::Clone for BarcodeScannerProviderConnection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for BarcodeScannerProviderConnection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1361,7 +1296,6 @@ impl ::core::fmt::Debug for BarcodeScannerProviderConnection {
 }
 unsafe impl ::windows::core::RuntimeType for BarcodeScannerProviderConnection {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.PointOfService.Provider.BarcodeScannerProviderConnection;{b44acbed-0b3a-4fa3-86c5-491ea30780eb})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1454,11 +1388,6 @@ impl BarcodeScannerProviderTriggerDetails {
         }
     }
 }
-impl ::core::clone::Clone for BarcodeScannerProviderTriggerDetails {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for BarcodeScannerProviderTriggerDetails {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1472,7 +1401,6 @@ impl ::core::fmt::Debug for BarcodeScannerProviderTriggerDetails {
 }
 unsafe impl ::windows::core::RuntimeType for BarcodeScannerProviderTriggerDetails {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.PointOfService.Provider.BarcodeScannerProviderTriggerDetails;{50856d82-24e3-48ce-99c7-70aac1cbc9f7})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1576,11 +1504,6 @@ impl BarcodeScannerSetActiveSymbologiesRequest {
         }
     }
 }
-impl ::core::clone::Clone for BarcodeScannerSetActiveSymbologiesRequest {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for BarcodeScannerSetActiveSymbologiesRequest {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1594,7 +1517,6 @@ impl ::core::fmt::Debug for BarcodeScannerSetActiveSymbologiesRequest {
 }
 unsafe impl ::windows::core::RuntimeType for BarcodeScannerSetActiveSymbologiesRequest {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.PointOfService.Provider.BarcodeScannerSetActiveSymbologiesRequest;{db3f32b9-f7da-41a1-9f79-07bcd95f0bdf})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1670,11 +1592,6 @@ impl BarcodeScannerSetActiveSymbologiesRequestEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for BarcodeScannerSetActiveSymbologiesRequestEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for BarcodeScannerSetActiveSymbologiesRequestEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1688,7 +1605,6 @@ impl ::core::fmt::Debug for BarcodeScannerSetActiveSymbologiesRequestEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for BarcodeScannerSetActiveSymbologiesRequestEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.PointOfService.Provider.BarcodeScannerSetActiveSymbologiesRequestEventArgs;{06305afa-7bf6-4d52-801a-330272f60ae1})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1799,11 +1715,6 @@ impl BarcodeScannerSetSymbologyAttributesRequest {
         }
     }
 }
-impl ::core::clone::Clone for BarcodeScannerSetSymbologyAttributesRequest {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for BarcodeScannerSetSymbologyAttributesRequest {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1817,7 +1728,6 @@ impl ::core::fmt::Debug for BarcodeScannerSetSymbologyAttributesRequest {
 }
 unsafe impl ::windows::core::RuntimeType for BarcodeScannerSetSymbologyAttributesRequest {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.PointOfService.Provider.BarcodeScannerSetSymbologyAttributesRequest;{32fb814f-a37f-48b0-acea-dce1480f12ae})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1893,11 +1803,6 @@ impl BarcodeScannerSetSymbologyAttributesRequestEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for BarcodeScannerSetSymbologyAttributesRequestEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for BarcodeScannerSetSymbologyAttributesRequestEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1911,7 +1816,6 @@ impl ::core::fmt::Debug for BarcodeScannerSetSymbologyAttributesRequestEventArgs
 }
 unsafe impl ::windows::core::RuntimeType for BarcodeScannerSetSymbologyAttributesRequestEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.PointOfService.Provider.BarcodeScannerSetSymbologyAttributesRequestEventArgs;{b2b89809-9824-47d4-85bd-d0077baa7bd2})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2006,11 +1910,6 @@ impl BarcodeScannerStartSoftwareTriggerRequest {
         }
     }
 }
-impl ::core::clone::Clone for BarcodeScannerStartSoftwareTriggerRequest {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for BarcodeScannerStartSoftwareTriggerRequest {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2024,7 +1923,6 @@ impl ::core::fmt::Debug for BarcodeScannerStartSoftwareTriggerRequest {
 }
 unsafe impl ::windows::core::RuntimeType for BarcodeScannerStartSoftwareTriggerRequest {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.PointOfService.Provider.BarcodeScannerStartSoftwareTriggerRequest;{e3fa7b27-ff62-4454-af4a-cb6144a3e3f7})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2100,11 +1998,6 @@ impl BarcodeScannerStartSoftwareTriggerRequestEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for BarcodeScannerStartSoftwareTriggerRequestEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for BarcodeScannerStartSoftwareTriggerRequestEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2118,7 +2011,6 @@ impl ::core::fmt::Debug for BarcodeScannerStartSoftwareTriggerRequestEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for BarcodeScannerStartSoftwareTriggerRequestEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.PointOfService.Provider.BarcodeScannerStartSoftwareTriggerRequestEventArgs;{2305d843-c88f-4f3b-8c3b-d3df071051ec})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2213,11 +2105,6 @@ impl BarcodeScannerStopSoftwareTriggerRequest {
         }
     }
 }
-impl ::core::clone::Clone for BarcodeScannerStopSoftwareTriggerRequest {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for BarcodeScannerStopSoftwareTriggerRequest {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2231,7 +2118,6 @@ impl ::core::fmt::Debug for BarcodeScannerStopSoftwareTriggerRequest {
 }
 unsafe impl ::windows::core::RuntimeType for BarcodeScannerStopSoftwareTriggerRequest {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.PointOfService.Provider.BarcodeScannerStopSoftwareTriggerRequest;{6f9faf35-e287-4ca8-b70d-5a91d694f668})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2307,11 +2193,6 @@ impl BarcodeScannerStopSoftwareTriggerRequestEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for BarcodeScannerStopSoftwareTriggerRequestEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for BarcodeScannerStopSoftwareTriggerRequestEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2325,7 +2206,6 @@ impl ::core::fmt::Debug for BarcodeScannerStopSoftwareTriggerRequestEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for BarcodeScannerStopSoftwareTriggerRequestEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.PointOfService.Provider.BarcodeScannerStopSoftwareTriggerRequestEventArgs;{eac34450-4eb7-481a-9273-147a273b99b8})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2400,6 +2280,7 @@ impl ::core::default::Default for BarcodeScannerTriggerState {
 }
 unsafe impl ::windows::core::Abi for BarcodeScannerTriggerState {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for BarcodeScannerTriggerState {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2408,7 +2289,6 @@ impl ::core::fmt::Debug for BarcodeScannerTriggerState {
 }
 unsafe impl ::windows::core::RuntimeType for BarcodeScannerTriggerState {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.PointOfService.Provider.BarcodeScannerTriggerState;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2458,11 +2338,6 @@ impl BarcodeScannerVideoFrame {
         unsafe { (::windows::core::Interface::vtable(this).Close)(::core::mem::transmute_copy(this)).ok() }
     }
 }
-impl ::core::clone::Clone for BarcodeScannerVideoFrame {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for BarcodeScannerVideoFrame {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2476,7 +2351,6 @@ impl ::core::fmt::Debug for BarcodeScannerVideoFrame {
 }
 unsafe impl ::windows::core::RuntimeType for BarcodeScannerVideoFrame {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.PointOfService.Provider.BarcodeScannerVideoFrame;{7e585248-9df7-4121-a175-801d8000112e})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2615,11 +2489,6 @@ impl BarcodeSymbologyAttributesBuilder {
         }
     }
 }
-impl ::core::clone::Clone for BarcodeSymbologyAttributesBuilder {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for BarcodeSymbologyAttributesBuilder {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2633,7 +2502,6 @@ impl ::core::fmt::Debug for BarcodeSymbologyAttributesBuilder {
 }
 unsafe impl ::windows::core::RuntimeType for BarcodeSymbologyAttributesBuilder {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.PointOfService.Provider.BarcodeSymbologyAttributesBuilder;{c57b0cbf-e4f5-40b9-84cf-e63fbaea42b4})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2690,6 +2558,11 @@ unsafe impl ::core::marker::Sync for BarcodeSymbologyAttributesBuilder {}
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBarcodeScannerDisableScannerRequest(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBarcodeScannerDisableScannerRequest {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBarcodeScannerDisableScannerRequest {
     type Vtable = IBarcodeScannerDisableScannerRequest_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x88ecf7c0_37b9_4275_8e77_c8e52ae5a9c8);
@@ -2710,6 +2583,11 @@ pub struct IBarcodeScannerDisableScannerRequest_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBarcodeScannerDisableScannerRequest2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBarcodeScannerDisableScannerRequest2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBarcodeScannerDisableScannerRequest2 {
     type Vtable = IBarcodeScannerDisableScannerRequest2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xccdfe625_65c3_4ccc_b457_f39c7a9ea60d);
@@ -2730,6 +2608,11 @@ pub struct IBarcodeScannerDisableScannerRequest2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBarcodeScannerDisableScannerRequestEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBarcodeScannerDisableScannerRequestEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBarcodeScannerDisableScannerRequestEventArgs {
     type Vtable = IBarcodeScannerDisableScannerRequestEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x7006e142_e802_46f5_b604_352a15ce9232);
@@ -2747,6 +2630,11 @@ pub struct IBarcodeScannerDisableScannerRequestEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBarcodeScannerEnableScannerRequest(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBarcodeScannerEnableScannerRequest {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBarcodeScannerEnableScannerRequest {
     type Vtable = IBarcodeScannerEnableScannerRequest_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc0b3e9ba_816a_452b_bd77_b7e453ec446d);
@@ -2767,6 +2655,11 @@ pub struct IBarcodeScannerEnableScannerRequest_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBarcodeScannerEnableScannerRequest2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBarcodeScannerEnableScannerRequest2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBarcodeScannerEnableScannerRequest2 {
     type Vtable = IBarcodeScannerEnableScannerRequest2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x71a4f2a8_9905_41ac_9121_b645916a84a1);
@@ -2787,6 +2680,11 @@ pub struct IBarcodeScannerEnableScannerRequest2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBarcodeScannerEnableScannerRequestEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBarcodeScannerEnableScannerRequestEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBarcodeScannerEnableScannerRequestEventArgs {
     type Vtable = IBarcodeScannerEnableScannerRequestEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x956c9419_7b4e_4451_8c41_8e10cfbc5b41);
@@ -2804,6 +2702,11 @@ pub struct IBarcodeScannerEnableScannerRequestEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBarcodeScannerFrameReader(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBarcodeScannerFrameReader {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBarcodeScannerFrameReader {
     type Vtable = IBarcodeScannerFrameReader_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xdbc72b07_64c3_482b_93c8_65fb33c22208);
@@ -2837,6 +2740,11 @@ pub struct IBarcodeScannerFrameReader_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBarcodeScannerFrameReaderFrameArrivedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBarcodeScannerFrameReaderFrameArrivedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBarcodeScannerFrameReaderFrameArrivedEventArgs {
     type Vtable = IBarcodeScannerFrameReaderFrameArrivedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb0bbd604_54fd_436d_8629_712e787223dd);
@@ -2853,6 +2761,11 @@ pub struct IBarcodeScannerFrameReaderFrameArrivedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBarcodeScannerGetSymbologyAttributesRequest(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBarcodeScannerGetSymbologyAttributesRequest {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBarcodeScannerGetSymbologyAttributesRequest {
     type Vtable = IBarcodeScannerGetSymbologyAttributesRequest_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9774c46a_58e4_4c5f_b8e9_e41467632700);
@@ -2874,6 +2787,11 @@ pub struct IBarcodeScannerGetSymbologyAttributesRequest_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBarcodeScannerGetSymbologyAttributesRequest2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBarcodeScannerGetSymbologyAttributesRequest2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBarcodeScannerGetSymbologyAttributesRequest2 {
     type Vtable = IBarcodeScannerGetSymbologyAttributesRequest2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x6a6a2b13_75a8_49fb_b852_bfb93d760af7);
@@ -2894,6 +2812,11 @@ pub struct IBarcodeScannerGetSymbologyAttributesRequest2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBarcodeScannerGetSymbologyAttributesRequestEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBarcodeScannerGetSymbologyAttributesRequestEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBarcodeScannerGetSymbologyAttributesRequestEventArgs {
     type Vtable = IBarcodeScannerGetSymbologyAttributesRequestEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x7f89de3e_fb5d_493c_b402_356b24d574a6);
@@ -2911,6 +2834,11 @@ pub struct IBarcodeScannerGetSymbologyAttributesRequestEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBarcodeScannerHideVideoPreviewRequest(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBarcodeScannerHideVideoPreviewRequest {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBarcodeScannerHideVideoPreviewRequest {
     type Vtable = IBarcodeScannerHideVideoPreviewRequest_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xfa4ebe7f_6670_40e1_b90b_bb10d8d425fa);
@@ -2931,6 +2859,11 @@ pub struct IBarcodeScannerHideVideoPreviewRequest_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBarcodeScannerHideVideoPreviewRequest2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBarcodeScannerHideVideoPreviewRequest2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBarcodeScannerHideVideoPreviewRequest2 {
     type Vtable = IBarcodeScannerHideVideoPreviewRequest2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x7e28435d_9814_431d_a2f2_d6248c5ad4b5);
@@ -2951,6 +2884,11 @@ pub struct IBarcodeScannerHideVideoPreviewRequest2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBarcodeScannerHideVideoPreviewRequestEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBarcodeScannerHideVideoPreviewRequestEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBarcodeScannerHideVideoPreviewRequestEventArgs {
     type Vtable = IBarcodeScannerHideVideoPreviewRequestEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x16a281fc_d6be_4bc7_9df1_33741f3eadea);
@@ -2968,6 +2906,11 @@ pub struct IBarcodeScannerHideVideoPreviewRequestEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBarcodeScannerProviderConnection(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBarcodeScannerProviderConnection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBarcodeScannerProviderConnection {
     type Vtable = IBarcodeScannerProviderConnection_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb44acbed_0b3a_4fa3_86c5_491ea30780eb);
@@ -3073,6 +3016,11 @@ pub struct IBarcodeScannerProviderConnection_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBarcodeScannerProviderConnection2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBarcodeScannerProviderConnection2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBarcodeScannerProviderConnection2 {
     type Vtable = IBarcodeScannerProviderConnection2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xbe9b53cd_1134_418c_a06b_04423a73f3d7);
@@ -3097,6 +3045,11 @@ pub struct IBarcodeScannerProviderConnection2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBarcodeScannerProviderTriggerDetails(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBarcodeScannerProviderTriggerDetails {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBarcodeScannerProviderTriggerDetails {
     type Vtable = IBarcodeScannerProviderTriggerDetails_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x50856d82_24e3_48ce_99c7_70aac1cbc9f7);
@@ -3110,6 +3063,11 @@ pub struct IBarcodeScannerProviderTriggerDetails_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBarcodeScannerSetActiveSymbologiesRequest(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBarcodeScannerSetActiveSymbologiesRequest {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBarcodeScannerSetActiveSymbologiesRequest {
     type Vtable = IBarcodeScannerSetActiveSymbologiesRequest_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xdb3f32b9_f7da_41a1_9f79_07bcd95f0bdf);
@@ -3134,6 +3092,11 @@ pub struct IBarcodeScannerSetActiveSymbologiesRequest_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBarcodeScannerSetActiveSymbologiesRequest2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBarcodeScannerSetActiveSymbologiesRequest2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBarcodeScannerSetActiveSymbologiesRequest2 {
     type Vtable = IBarcodeScannerSetActiveSymbologiesRequest2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf5ff6edf_fa9a_4749_b11b_e8fccb75bc6b);
@@ -3154,6 +3117,11 @@ pub struct IBarcodeScannerSetActiveSymbologiesRequest2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBarcodeScannerSetActiveSymbologiesRequestEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBarcodeScannerSetActiveSymbologiesRequestEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBarcodeScannerSetActiveSymbologiesRequestEventArgs {
     type Vtable = IBarcodeScannerSetActiveSymbologiesRequestEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x06305afa_7bf6_4d52_801a_330272f60ae1);
@@ -3171,6 +3139,11 @@ pub struct IBarcodeScannerSetActiveSymbologiesRequestEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBarcodeScannerSetSymbologyAttributesRequest(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBarcodeScannerSetSymbologyAttributesRequest {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBarcodeScannerSetSymbologyAttributesRequest {
     type Vtable = IBarcodeScannerSetSymbologyAttributesRequest_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x32fb814f_a37f_48b0_acea_dce1480f12ae);
@@ -3193,6 +3166,11 @@ pub struct IBarcodeScannerSetSymbologyAttributesRequest_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBarcodeScannerSetSymbologyAttributesRequest2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBarcodeScannerSetSymbologyAttributesRequest2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBarcodeScannerSetSymbologyAttributesRequest2 {
     type Vtable = IBarcodeScannerSetSymbologyAttributesRequest2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xdffbbfc1_dba8_4b77_be1e_b56cd72f65b3);
@@ -3213,6 +3191,11 @@ pub struct IBarcodeScannerSetSymbologyAttributesRequest2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBarcodeScannerSetSymbologyAttributesRequestEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBarcodeScannerSetSymbologyAttributesRequestEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBarcodeScannerSetSymbologyAttributesRequestEventArgs {
     type Vtable = IBarcodeScannerSetSymbologyAttributesRequestEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb2b89809_9824_47d4_85bd_d0077baa7bd2);
@@ -3230,6 +3213,11 @@ pub struct IBarcodeScannerSetSymbologyAttributesRequestEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBarcodeScannerStartSoftwareTriggerRequest(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBarcodeScannerStartSoftwareTriggerRequest {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBarcodeScannerStartSoftwareTriggerRequest {
     type Vtable = IBarcodeScannerStartSoftwareTriggerRequest_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe3fa7b27_ff62_4454_af4a_cb6144a3e3f7);
@@ -3250,6 +3238,11 @@ pub struct IBarcodeScannerStartSoftwareTriggerRequest_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBarcodeScannerStartSoftwareTriggerRequest2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBarcodeScannerStartSoftwareTriggerRequest2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBarcodeScannerStartSoftwareTriggerRequest2 {
     type Vtable = IBarcodeScannerStartSoftwareTriggerRequest2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xeb72a25c_6658_4765_a68e_327482653deb);
@@ -3270,6 +3263,11 @@ pub struct IBarcodeScannerStartSoftwareTriggerRequest2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBarcodeScannerStartSoftwareTriggerRequestEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBarcodeScannerStartSoftwareTriggerRequestEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBarcodeScannerStartSoftwareTriggerRequestEventArgs {
     type Vtable = IBarcodeScannerStartSoftwareTriggerRequestEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x2305d843_c88f_4f3b_8c3b_d3df071051ec);
@@ -3287,6 +3285,11 @@ pub struct IBarcodeScannerStartSoftwareTriggerRequestEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBarcodeScannerStopSoftwareTriggerRequest(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBarcodeScannerStopSoftwareTriggerRequest {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBarcodeScannerStopSoftwareTriggerRequest {
     type Vtable = IBarcodeScannerStopSoftwareTriggerRequest_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x6f9faf35_e287_4ca8_b70d_5a91d694f668);
@@ -3307,6 +3310,11 @@ pub struct IBarcodeScannerStopSoftwareTriggerRequest_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBarcodeScannerStopSoftwareTriggerRequest2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBarcodeScannerStopSoftwareTriggerRequest2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBarcodeScannerStopSoftwareTriggerRequest2 {
     type Vtable = IBarcodeScannerStopSoftwareTriggerRequest2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xcb57c5dd_fe50_49f8_a0b4_bdc230814da2);
@@ -3327,6 +3335,11 @@ pub struct IBarcodeScannerStopSoftwareTriggerRequest2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBarcodeScannerStopSoftwareTriggerRequestEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBarcodeScannerStopSoftwareTriggerRequestEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBarcodeScannerStopSoftwareTriggerRequestEventArgs {
     type Vtable = IBarcodeScannerStopSoftwareTriggerRequestEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xeac34450_4eb7_481a_9273_147a273b99b8);
@@ -3344,6 +3357,11 @@ pub struct IBarcodeScannerStopSoftwareTriggerRequestEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBarcodeScannerVideoFrame(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBarcodeScannerVideoFrame {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBarcodeScannerVideoFrame {
     type Vtable = IBarcodeScannerVideoFrame_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x7e585248_9df7_4121_a175_801d8000112e);
@@ -3366,6 +3384,11 @@ pub struct IBarcodeScannerVideoFrame_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBarcodeSymbologyAttributesBuilder(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBarcodeSymbologyAttributesBuilder {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBarcodeSymbologyAttributesBuilder {
     type Vtable = IBarcodeSymbologyAttributesBuilder_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc57b0cbf_e4f5_40b9_84cf_e63fbaea42b4);

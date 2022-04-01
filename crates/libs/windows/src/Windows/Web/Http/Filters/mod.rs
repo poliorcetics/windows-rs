@@ -229,11 +229,6 @@ impl HttpBaseProtocolFilter {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for HttpBaseProtocolFilter {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for HttpBaseProtocolFilter {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -247,7 +242,6 @@ impl ::core::fmt::Debug for HttpBaseProtocolFilter {
 }
 unsafe impl ::windows::core::RuntimeType for HttpBaseProtocolFilter {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Web.Http.Filters.HttpBaseProtocolFilter;{71c89b09-e131-4b54-a53c-eb43ff37e9bb})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -380,11 +374,6 @@ impl HttpCacheControl {
         unsafe { (::windows::core::Interface::vtable(this).SetWriteBehavior)(::core::mem::transmute_copy(this), value).ok() }
     }
 }
-impl ::core::clone::Clone for HttpCacheControl {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for HttpCacheControl {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -398,7 +387,6 @@ impl ::core::fmt::Debug for HttpCacheControl {
 }
 unsafe impl ::windows::core::RuntimeType for HttpCacheControl {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Web.Http.Filters.HttpCacheControl;{c77e1cb4-3cea-4eb5-ac85-04e186e63ab7})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -475,6 +463,7 @@ impl ::core::default::Default for HttpCacheReadBehavior {
 }
 unsafe impl ::windows::core::Abi for HttpCacheReadBehavior {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HttpCacheReadBehavior {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -483,7 +472,6 @@ impl ::core::fmt::Debug for HttpCacheReadBehavior {
 }
 unsafe impl ::windows::core::RuntimeType for HttpCacheReadBehavior {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Web.Http.Filters.HttpCacheReadBehavior;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -509,6 +497,7 @@ impl ::core::default::Default for HttpCacheWriteBehavior {
 }
 unsafe impl ::windows::core::Abi for HttpCacheWriteBehavior {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HttpCacheWriteBehavior {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -517,7 +506,6 @@ impl ::core::fmt::Debug for HttpCacheWriteBehavior {
 }
 unsafe impl ::windows::core::RuntimeType for HttpCacheWriteBehavior {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Web.Http.Filters.HttpCacheWriteBehavior;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -543,6 +531,7 @@ impl ::core::default::Default for HttpCookieUsageBehavior {
 }
 unsafe impl ::windows::core::Abi for HttpCookieUsageBehavior {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HttpCookieUsageBehavior {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -551,7 +540,6 @@ impl ::core::fmt::Debug for HttpCookieUsageBehavior {
 }
 unsafe impl ::windows::core::RuntimeType for HttpCookieUsageBehavior {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Web.Http.Filters.HttpCookieUsageBehavior;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -619,11 +607,6 @@ impl HttpServerCustomValidationRequestedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for HttpServerCustomValidationRequestedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for HttpServerCustomValidationRequestedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -637,7 +620,6 @@ impl ::core::fmt::Debug for HttpServerCustomValidationRequestedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for HttpServerCustomValidationRequestedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Web.Http.Filters.HttpServerCustomValidationRequestedEventArgs;{3165fe32-e7dd-48b7-a361-939c750e63cc})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -694,6 +676,11 @@ unsafe impl ::core::marker::Sync for HttpServerCustomValidationRequestedEventArg
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHttpBaseProtocolFilter(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpBaseProtocolFilter {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHttpBaseProtocolFilter {
     type Vtable = IHttpBaseProtocolFilter_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x71c89b09_e131_4b54_a53c_eb43ff37e9bb);
@@ -746,6 +733,11 @@ pub struct IHttpBaseProtocolFilter_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHttpBaseProtocolFilter2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpBaseProtocolFilter2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHttpBaseProtocolFilter2 {
     type Vtable = IHttpBaseProtocolFilter2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x2ec30013_9427_4900_a017_fa7da3b5c9ae);
@@ -760,6 +752,11 @@ pub struct IHttpBaseProtocolFilter2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHttpBaseProtocolFilter3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpBaseProtocolFilter3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHttpBaseProtocolFilter3 {
     type Vtable = IHttpBaseProtocolFilter3_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd43f4d4c_bd42_43ae_8717_ad2c8f4b2937);
@@ -774,6 +771,11 @@ pub struct IHttpBaseProtocolFilter3_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHttpBaseProtocolFilter4(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpBaseProtocolFilter4 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHttpBaseProtocolFilter4 {
     type Vtable = IHttpBaseProtocolFilter4_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9fe36ccf_2983_4893_941f_eb518ca8cef9);
@@ -795,6 +797,11 @@ pub struct IHttpBaseProtocolFilter4_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHttpBaseProtocolFilter5(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpBaseProtocolFilter5 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHttpBaseProtocolFilter5 {
     type Vtable = IHttpBaseProtocolFilter5_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x416e4993_31e3_4816_bf09_e018ee8dc1f5);
@@ -811,6 +818,11 @@ pub struct IHttpBaseProtocolFilter5_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHttpBaseProtocolFilterStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpBaseProtocolFilterStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHttpBaseProtocolFilterStatics {
     type Vtable = IHttpBaseProtocolFilterStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x6d4dee0c_e908_494e_b5a3_1263c9b8242a);
@@ -827,6 +839,11 @@ pub struct IHttpBaseProtocolFilterStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHttpCacheControl(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpCacheControl {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHttpCacheControl {
     type Vtable = IHttpCacheControl_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc77e1cb4_3cea_4eb5_ac85_04e186e63ab7);
@@ -843,6 +860,11 @@ pub struct IHttpCacheControl_Vtbl {
 #[doc = "*Required features: `\"Web_Http_Filters\"`*"]
 #[repr(transparent)]
 pub struct IHttpFilter(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpFilter {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IHttpFilter {
     #[doc = "*Required features: `\"Web_Http_Filters\"`, `\"Foundation\"`*"]
     #[cfg(feature = "Foundation")]
@@ -926,11 +948,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::Foundation::IClosab
         ::core::convert::TryInto::<super::super::super::Foundation::IClosable>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IHttpFilter {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IHttpFilter {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -944,7 +961,6 @@ impl ::core::fmt::Debug for IHttpFilter {
 }
 unsafe impl ::windows::core::RuntimeType for IHttpFilter {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{a4cb6dd5-0902-439e-bfd7-e12552b165ce}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -965,6 +981,11 @@ pub struct IHttpFilter_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHttpServerCustomValidationRequestedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpServerCustomValidationRequestedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHttpServerCustomValidationRequestedEventArgs {
     type Vtable = IHttpServerCustomValidationRequestedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x3165fe32_e7dd_48b7_a361_939c750e63cc);

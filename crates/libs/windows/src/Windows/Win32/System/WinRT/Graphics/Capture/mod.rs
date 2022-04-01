@@ -2,6 +2,11 @@
 #[doc = "*Required features: `\"Win32_System_WinRT_Graphics_Capture\"`*"]
 #[repr(transparent)]
 pub struct IGraphicsCaptureItemInterop(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGraphicsCaptureItemInterop {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IGraphicsCaptureItemInterop {
     #[doc = "*Required features: `\"Win32_System_WinRT_Graphics_Capture\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -34,11 +39,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IGraphics
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IGraphicsCaptureItemInterop {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IGraphicsCaptureItemInterop {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IGraphicsCaptureItemInterop {

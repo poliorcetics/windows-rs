@@ -2,6 +2,11 @@
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrintBindingOptionDetails(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrintBindingOptionDetails {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrintBindingOptionDetails {
     type Vtable = IPrintBindingOptionDetails_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc3f4cc98_9564_4f16_a055_a98b9a49e9d3);
@@ -18,6 +23,11 @@ pub struct IPrintBindingOptionDetails_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrintBorderingOptionDetails(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrintBorderingOptionDetails {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrintBorderingOptionDetails {
     type Vtable = IPrintBorderingOptionDetails_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x4d73bc8f_fb53_4eb2_985f_1d91de0b7639);
@@ -34,6 +44,11 @@ pub struct IPrintBorderingOptionDetails_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrintCollationOptionDetails(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrintCollationOptionDetails {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrintCollationOptionDetails {
     type Vtable = IPrintCollationOptionDetails_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd6abb166_a5a6_40dc_acc3_739f28f1e5d3);
@@ -50,6 +65,11 @@ pub struct IPrintCollationOptionDetails_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrintColorModeOptionDetails(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrintColorModeOptionDetails {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrintColorModeOptionDetails {
     type Vtable = IPrintColorModeOptionDetails_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xdba97704_f1d6_4843_a484_9b447cdcf3b6);
@@ -66,6 +86,11 @@ pub struct IPrintColorModeOptionDetails_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrintCopiesOptionDetails(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrintCopiesOptionDetails {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrintCopiesOptionDetails {
     type Vtable = IPrintCopiesOptionDetails_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x42053099_4339_4343_898d_2c47b5e0c341);
@@ -82,6 +107,11 @@ pub struct IPrintCopiesOptionDetails_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrintCustomItemDetails(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrintCustomItemDetails {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrintCustomItemDetails {
     type Vtable = IPrintCustomItemDetails_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x5704b637_5c3a_449a_aa36_b3291b1192fd);
@@ -97,6 +127,11 @@ pub struct IPrintCustomItemDetails_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrintCustomItemListOptionDetails(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrintCustomItemListOptionDetails {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrintCustomItemListOptionDetails {
     type Vtable = IPrintCustomItemListOptionDetails_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa5fafd88_58f2_4ebd_b90f_51e4f2944c5d);
@@ -110,6 +145,11 @@ pub struct IPrintCustomItemListOptionDetails_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrintCustomItemListOptionDetails2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrintCustomItemListOptionDetails2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrintCustomItemListOptionDetails2 {
     type Vtable = IPrintCustomItemListOptionDetails2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc9d6353d_651c_4a39_906e_1091a1801bf1);
@@ -126,6 +166,11 @@ pub struct IPrintCustomItemListOptionDetails2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrintCustomItemListOptionDetails3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrintCustomItemListOptionDetails3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrintCustomItemListOptionDetails3 {
     type Vtable = IPrintCustomItemListOptionDetails3_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x4fa1b53f_3c34_4868_a407_fc5eab259b21);
@@ -142,6 +187,11 @@ pub struct IPrintCustomItemListOptionDetails3_Vtbl {
 #[doc = "*Required features: `\"Graphics_Printing_OptionDetails\"`*"]
 #[repr(transparent)]
 pub struct IPrintCustomOptionDetails(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrintCustomOptionDetails {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPrintCustomOptionDetails {
     #[doc = "*Required features: `\"Graphics_Printing_OptionDetails\"`*"]
     pub fn SetDisplayName<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::HSTRING>>(&self, value: Param0) -> ::windows::core::Result<()> {
@@ -277,11 +327,6 @@ impl<'a> ::windows::core::IntoParam<'a, IPrintOptionDetails> for &IPrintCustomOp
         ::core::convert::TryInto::<IPrintOptionDetails>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IPrintCustomOptionDetails {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPrintCustomOptionDetails {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -295,7 +340,6 @@ impl ::core::fmt::Debug for IPrintCustomOptionDetails {
 }
 unsafe impl ::windows::core::RuntimeType for IPrintCustomOptionDetails {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{e32bde1c-28af-4b90-95da-a3acf320b929}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -314,6 +358,11 @@ pub struct IPrintCustomOptionDetails_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrintCustomTextOptionDetails(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrintCustomTextOptionDetails {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrintCustomTextOptionDetails {
     type Vtable = IPrintCustomTextOptionDetails_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x2ad171f8_c8bd_4905_9192_0d75136e8b31);
@@ -328,6 +377,11 @@ pub struct IPrintCustomTextOptionDetails_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrintCustomTextOptionDetails2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrintCustomTextOptionDetails2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrintCustomTextOptionDetails2 {
     type Vtable = IPrintCustomTextOptionDetails2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xcea70b54_b977_4718_8338_7ed2b0d86fe3);
@@ -344,6 +398,11 @@ pub struct IPrintCustomTextOptionDetails2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrintCustomToggleOptionDetails(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrintCustomToggleOptionDetails {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrintCustomToggleOptionDetails {
     type Vtable = IPrintCustomToggleOptionDetails_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9db4d514_e461_4608_8ee9_db6f5ed073c6);
@@ -360,6 +419,11 @@ pub struct IPrintCustomToggleOptionDetails_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrintDuplexOptionDetails(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrintDuplexOptionDetails {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrintDuplexOptionDetails {
     type Vtable = IPrintDuplexOptionDetails_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xfcd94591_d4a4_44fa_b3fe_42e0ba28d5ad);
@@ -376,6 +440,11 @@ pub struct IPrintDuplexOptionDetails_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrintHolePunchOptionDetails(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrintHolePunchOptionDetails {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrintHolePunchOptionDetails {
     type Vtable = IPrintHolePunchOptionDetails_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa6de1f18_482c_4657_9d71_8ddddbea1e1e);
@@ -392,6 +461,11 @@ pub struct IPrintHolePunchOptionDetails_Vtbl {
 #[doc = "*Required features: `\"Graphics_Printing_OptionDetails\"`*"]
 #[repr(transparent)]
 pub struct IPrintItemListOptionDetails(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrintItemListOptionDetails {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPrintItemListOptionDetails {
     #[doc = "*Required features: `\"Graphics_Printing_OptionDetails\"`, `\"Foundation_Collections\"`*"]
     #[cfg(feature = "Foundation_Collections")]
@@ -523,11 +597,6 @@ impl<'a> ::windows::core::IntoParam<'a, IPrintOptionDetails> for &IPrintItemList
         ::core::convert::TryInto::<IPrintOptionDetails>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IPrintItemListOptionDetails {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPrintItemListOptionDetails {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -541,7 +610,6 @@ impl ::core::fmt::Debug for IPrintItemListOptionDetails {
 }
 unsafe impl ::windows::core::RuntimeType for IPrintItemListOptionDetails {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{9a2257bf-fe61-43d8-a24f-a3f6ab7320e7}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -562,6 +630,11 @@ pub struct IPrintItemListOptionDetails_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrintMediaSizeOptionDetails(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrintMediaSizeOptionDetails {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrintMediaSizeOptionDetails {
     type Vtable = IPrintMediaSizeOptionDetails_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x6c8d5bcf_c0bf_47c8_b84a_628e7d0d1a1d);
@@ -578,6 +651,11 @@ pub struct IPrintMediaSizeOptionDetails_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrintMediaTypeOptionDetails(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrintMediaTypeOptionDetails {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrintMediaTypeOptionDetails {
     type Vtable = IPrintMediaTypeOptionDetails_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf8c7000b_abf3_4abc_8e86_22abc5744a43);
@@ -594,6 +672,11 @@ pub struct IPrintMediaTypeOptionDetails_Vtbl {
 #[doc = "*Required features: `\"Graphics_Printing_OptionDetails\"`*"]
 #[repr(transparent)]
 pub struct IPrintNumberOptionDetails(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrintNumberOptionDetails {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPrintNumberOptionDetails {
     #[doc = "*Required features: `\"Graphics_Printing_OptionDetails\"`*"]
     pub fn MinValue(&self) -> ::windows::core::Result<u32> {
@@ -732,11 +815,6 @@ impl<'a> ::windows::core::IntoParam<'a, IPrintOptionDetails> for &IPrintNumberOp
         ::core::convert::TryInto::<IPrintOptionDetails>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IPrintNumberOptionDetails {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPrintNumberOptionDetails {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -750,7 +828,6 @@ impl ::core::fmt::Debug for IPrintNumberOptionDetails {
 }
 unsafe impl ::windows::core::RuntimeType for IPrintNumberOptionDetails {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{4d01bbaf-645c-4de9-965f-6fc6bbc47cab}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -769,6 +846,11 @@ pub struct IPrintNumberOptionDetails_Vtbl {
 #[doc = "*Required features: `\"Graphics_Printing_OptionDetails\"`*"]
 #[repr(transparent)]
 pub struct IPrintOptionDetails(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrintOptionDetails {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPrintOptionDetails {
     #[doc = "*Required features: `\"Graphics_Printing_OptionDetails\"`*"]
     pub fn OptionId(&self) -> ::windows::core::Result<::windows::core::HSTRING> {
@@ -869,11 +951,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPrintOptionDetails {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPrintOptionDetails {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -887,7 +964,6 @@ impl ::core::fmt::Debug for IPrintOptionDetails {
 }
 unsafe impl ::windows::core::RuntimeType for IPrintOptionDetails {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{390686cf-d682-495f-adfe-d7333f5c1808}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -912,6 +988,11 @@ pub struct IPrintOptionDetails_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrintOrientationOptionDetails(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrintOrientationOptionDetails {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrintOrientationOptionDetails {
     type Vtable = IPrintOrientationOptionDetails_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x46c38879_66e0_4da0_87b4_d25457824eb7);
@@ -928,6 +1009,11 @@ pub struct IPrintOrientationOptionDetails_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrintPageRangeOptionDetails(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrintPageRangeOptionDetails {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrintPageRangeOptionDetails {
     type Vtable = IPrintPageRangeOptionDetails_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x5a19e4b7_2be8_4aa7_9ea5_defbe8713b4e);
@@ -944,6 +1030,11 @@ pub struct IPrintPageRangeOptionDetails_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrintQualityOptionDetails(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrintQualityOptionDetails {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrintQualityOptionDetails {
     type Vtable = IPrintQualityOptionDetails_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x2dd06ba1_ce1a_44e6_84f9_3a92ea1e3044);
@@ -960,6 +1051,11 @@ pub struct IPrintQualityOptionDetails_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrintStapleOptionDetails(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrintStapleOptionDetails {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrintStapleOptionDetails {
     type Vtable = IPrintStapleOptionDetails_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd43175bd_9c0b_44e0_84f6_ceebce653800);
@@ -976,6 +1072,11 @@ pub struct IPrintStapleOptionDetails_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrintTaskOptionChangedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrintTaskOptionChangedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrintTaskOptionChangedEventArgs {
     type Vtable = IPrintTaskOptionChangedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x65197d05_a5ee_4307_9407_9acad147679c);
@@ -989,6 +1090,11 @@ pub struct IPrintTaskOptionChangedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrintTaskOptionDetails(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrintTaskOptionDetails {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrintTaskOptionDetails {
     type Vtable = IPrintTaskOptionDetails_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf5720af1_a89e_42a6_81af_f8e010b38a68);
@@ -1023,6 +1129,11 @@ pub struct IPrintTaskOptionDetails_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrintTaskOptionDetails2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrintTaskOptionDetails2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrintTaskOptionDetails2 {
     type Vtable = IPrintTaskOptionDetails2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x53730a09_f968_4692_a177_c074597186db);
@@ -1036,6 +1147,11 @@ pub struct IPrintTaskOptionDetails2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrintTaskOptionDetailsStatic(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrintTaskOptionDetailsStatic {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrintTaskOptionDetailsStatic {
     type Vtable = IPrintTaskOptionDetailsStatic_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x135da193_0961_4b6e_8766_f13b7fbccd58);
@@ -1049,6 +1165,11 @@ pub struct IPrintTaskOptionDetailsStatic_Vtbl {
 #[doc = "*Required features: `\"Graphics_Printing_OptionDetails\"`*"]
 #[repr(transparent)]
 pub struct IPrintTextOptionDetails(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrintTextOptionDetails {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPrintTextOptionDetails {
     #[doc = "*Required features: `\"Graphics_Printing_OptionDetails\"`*"]
     pub fn MaxCharacters(&self) -> ::windows::core::Result<u32> {
@@ -1179,11 +1300,6 @@ impl<'a> ::windows::core::IntoParam<'a, IPrintOptionDetails> for &IPrintTextOpti
         ::core::convert::TryInto::<IPrintOptionDetails>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IPrintTextOptionDetails {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPrintTextOptionDetails {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1197,7 +1313,6 @@ impl ::core::fmt::Debug for IPrintTextOptionDetails {
 }
 unsafe impl ::windows::core::RuntimeType for IPrintTextOptionDetails {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{ad75e563-5ce4-46bc-9918-ab9fad144c5b}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1310,11 +1425,6 @@ impl PrintBindingOptionDetails {
         }
     }
 }
-impl ::core::clone::Clone for PrintBindingOptionDetails {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PrintBindingOptionDetails {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1328,7 +1438,6 @@ impl ::core::fmt::Debug for PrintBindingOptionDetails {
 }
 unsafe impl ::windows::core::RuntimeType for PrintBindingOptionDetails {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Printing.OptionDetails.PrintBindingOptionDetails;{390686cf-d682-495f-adfe-d7333f5c1808})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1524,11 +1633,6 @@ impl PrintBorderingOptionDetails {
         }
     }
 }
-impl ::core::clone::Clone for PrintBorderingOptionDetails {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PrintBorderingOptionDetails {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1542,7 +1646,6 @@ impl ::core::fmt::Debug for PrintBorderingOptionDetails {
 }
 unsafe impl ::windows::core::RuntimeType for PrintBorderingOptionDetails {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Printing.OptionDetails.PrintBorderingOptionDetails;{390686cf-d682-495f-adfe-d7333f5c1808})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1738,11 +1841,6 @@ impl PrintCollationOptionDetails {
         }
     }
 }
-impl ::core::clone::Clone for PrintCollationOptionDetails {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PrintCollationOptionDetails {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1756,7 +1854,6 @@ impl ::core::fmt::Debug for PrintCollationOptionDetails {
 }
 unsafe impl ::windows::core::RuntimeType for PrintCollationOptionDetails {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Printing.OptionDetails.PrintCollationOptionDetails;{390686cf-d682-495f-adfe-d7333f5c1808})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1952,11 +2049,6 @@ impl PrintColorModeOptionDetails {
         }
     }
 }
-impl ::core::clone::Clone for PrintColorModeOptionDetails {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PrintColorModeOptionDetails {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1970,7 +2062,6 @@ impl ::core::fmt::Debug for PrintColorModeOptionDetails {
 }
 unsafe impl ::windows::core::RuntimeType for PrintColorModeOptionDetails {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Printing.OptionDetails.PrintColorModeOptionDetails;{390686cf-d682-495f-adfe-d7333f5c1808})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2173,11 +2264,6 @@ impl PrintCopiesOptionDetails {
         }
     }
 }
-impl ::core::clone::Clone for PrintCopiesOptionDetails {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PrintCopiesOptionDetails {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2191,7 +2277,6 @@ impl ::core::fmt::Debug for PrintCopiesOptionDetails {
 }
 unsafe impl ::windows::core::RuntimeType for PrintCopiesOptionDetails {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Printing.OptionDetails.PrintCopiesOptionDetails;{390686cf-d682-495f-adfe-d7333f5c1808})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2315,11 +2400,6 @@ impl PrintCustomItemDetails {
         }
     }
 }
-impl ::core::clone::Clone for PrintCustomItemDetails {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PrintCustomItemDetails {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2333,7 +2413,6 @@ impl ::core::fmt::Debug for PrintCustomItemDetails {
 }
 unsafe impl ::windows::core::RuntimeType for PrintCustomItemDetails {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Printing.OptionDetails.PrintCustomItemDetails;{5704b637-5c3a-449a-aa36-b3291b1192fd})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2509,11 +2588,6 @@ impl PrintCustomItemListOptionDetails {
         }
     }
 }
-impl ::core::clone::Clone for PrintCustomItemListOptionDetails {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PrintCustomItemListOptionDetails {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2527,7 +2601,6 @@ impl ::core::fmt::Debug for PrintCustomItemListOptionDetails {
 }
 unsafe impl ::windows::core::RuntimeType for PrintCustomItemListOptionDetails {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Printing.OptionDetails.PrintCustomItemListOptionDetails;{390686cf-d682-495f-adfe-d7333f5c1808})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2762,11 +2835,6 @@ impl PrintCustomTextOptionDetails {
         }
     }
 }
-impl ::core::clone::Clone for PrintCustomTextOptionDetails {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PrintCustomTextOptionDetails {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2780,7 +2848,6 @@ impl ::core::fmt::Debug for PrintCustomTextOptionDetails {
 }
 unsafe impl ::windows::core::RuntimeType for PrintCustomTextOptionDetails {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Printing.OptionDetails.PrintCustomTextOptionDetails;{390686cf-d682-495f-adfe-d7333f5c1808})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2980,11 +3047,6 @@ impl PrintCustomToggleOptionDetails {
         }
     }
 }
-impl ::core::clone::Clone for PrintCustomToggleOptionDetails {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PrintCustomToggleOptionDetails {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2998,7 +3060,6 @@ impl ::core::fmt::Debug for PrintCustomToggleOptionDetails {
 }
 unsafe impl ::windows::core::RuntimeType for PrintCustomToggleOptionDetails {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Printing.OptionDetails.PrintCustomToggleOptionDetails;{390686cf-d682-495f-adfe-d7333f5c1808})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3194,11 +3255,6 @@ impl PrintDuplexOptionDetails {
         }
     }
 }
-impl ::core::clone::Clone for PrintDuplexOptionDetails {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PrintDuplexOptionDetails {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3212,7 +3268,6 @@ impl ::core::fmt::Debug for PrintDuplexOptionDetails {
 }
 unsafe impl ::windows::core::RuntimeType for PrintDuplexOptionDetails {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Printing.OptionDetails.PrintDuplexOptionDetails;{390686cf-d682-495f-adfe-d7333f5c1808})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3408,11 +3463,6 @@ impl PrintHolePunchOptionDetails {
         }
     }
 }
-impl ::core::clone::Clone for PrintHolePunchOptionDetails {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PrintHolePunchOptionDetails {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3426,7 +3476,6 @@ impl ::core::fmt::Debug for PrintHolePunchOptionDetails {
 }
 unsafe impl ::windows::core::RuntimeType for PrintHolePunchOptionDetails {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Printing.OptionDetails.PrintHolePunchOptionDetails;{390686cf-d682-495f-adfe-d7333f5c1808})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3622,11 +3671,6 @@ impl PrintMediaSizeOptionDetails {
         }
     }
 }
-impl ::core::clone::Clone for PrintMediaSizeOptionDetails {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PrintMediaSizeOptionDetails {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3640,7 +3684,6 @@ impl ::core::fmt::Debug for PrintMediaSizeOptionDetails {
 }
 unsafe impl ::windows::core::RuntimeType for PrintMediaSizeOptionDetails {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Printing.OptionDetails.PrintMediaSizeOptionDetails;{390686cf-d682-495f-adfe-d7333f5c1808})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3836,11 +3879,6 @@ impl PrintMediaTypeOptionDetails {
         }
     }
 }
-impl ::core::clone::Clone for PrintMediaTypeOptionDetails {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PrintMediaTypeOptionDetails {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3854,7 +3892,6 @@ impl ::core::fmt::Debug for PrintMediaTypeOptionDetails {
 }
 unsafe impl ::windows::core::RuntimeType for PrintMediaTypeOptionDetails {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Printing.OptionDetails.PrintMediaTypeOptionDetails;{390686cf-d682-495f-adfe-d7333f5c1808})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3974,6 +4011,7 @@ impl ::core::default::Default for PrintOptionStates {
 }
 unsafe impl ::windows::core::Abi for PrintOptionStates {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PrintOptionStates {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4010,7 +4048,6 @@ impl ::core::ops::Not for PrintOptionStates {
 }
 unsafe impl ::windows::core::RuntimeType for PrintOptionStates {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Graphics.Printing.OptionDetails.PrintOptionStates;u4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -4039,6 +4076,7 @@ impl ::core::default::Default for PrintOptionType {
 }
 unsafe impl ::windows::core::Abi for PrintOptionType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PrintOptionType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4047,7 +4085,6 @@ impl ::core::fmt::Debug for PrintOptionType {
 }
 unsafe impl ::windows::core::RuntimeType for PrintOptionType {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Graphics.Printing.OptionDetails.PrintOptionType;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -4150,11 +4187,6 @@ impl PrintOrientationOptionDetails {
         }
     }
 }
-impl ::core::clone::Clone for PrintOrientationOptionDetails {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PrintOrientationOptionDetails {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4168,7 +4200,6 @@ impl ::core::fmt::Debug for PrintOrientationOptionDetails {
 }
 unsafe impl ::windows::core::RuntimeType for PrintOrientationOptionDetails {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Printing.OptionDetails.PrintOrientationOptionDetails;{390686cf-d682-495f-adfe-d7333f5c1808})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4355,11 +4386,6 @@ impl PrintPageRangeOptionDetails {
         }
     }
 }
-impl ::core::clone::Clone for PrintPageRangeOptionDetails {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PrintPageRangeOptionDetails {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4373,7 +4399,6 @@ impl ::core::fmt::Debug for PrintPageRangeOptionDetails {
 }
 unsafe impl ::windows::core::RuntimeType for PrintPageRangeOptionDetails {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Printing.OptionDetails.PrintPageRangeOptionDetails;{390686cf-d682-495f-adfe-d7333f5c1808})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4547,11 +4572,6 @@ impl PrintQualityOptionDetails {
         }
     }
 }
-impl ::core::clone::Clone for PrintQualityOptionDetails {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PrintQualityOptionDetails {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4565,7 +4585,6 @@ impl ::core::fmt::Debug for PrintQualityOptionDetails {
 }
 unsafe impl ::windows::core::RuntimeType for PrintQualityOptionDetails {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Printing.OptionDetails.PrintQualityOptionDetails;{390686cf-d682-495f-adfe-d7333f5c1808})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4761,11 +4780,6 @@ impl PrintStapleOptionDetails {
         }
     }
 }
-impl ::core::clone::Clone for PrintStapleOptionDetails {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PrintStapleOptionDetails {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4779,7 +4793,6 @@ impl ::core::fmt::Debug for PrintStapleOptionDetails {
 }
 unsafe impl ::windows::core::RuntimeType for PrintStapleOptionDetails {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Printing.OptionDetails.PrintStapleOptionDetails;{390686cf-d682-495f-adfe-d7333f5c1808})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4890,11 +4903,6 @@ impl PrintTaskOptionChangedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for PrintTaskOptionChangedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PrintTaskOptionChangedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4908,7 +4916,6 @@ impl ::core::fmt::Debug for PrintTaskOptionChangedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for PrintTaskOptionChangedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Printing.OptionDetails.PrintTaskOptionChangedEventArgs;{65197d05-a5ee-4307-9407-9acad147679c})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -5060,11 +5067,6 @@ impl PrintTaskOptionDetails {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for PrintTaskOptionDetails {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PrintTaskOptionDetails {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5078,7 +5080,6 @@ impl ::core::fmt::Debug for PrintTaskOptionDetails {
 }
 unsafe impl ::windows::core::RuntimeType for PrintTaskOptionDetails {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Printing.OptionDetails.PrintTaskOptionDetails;{f5720af1-a89e-42a6-81af-f8e010b38a68})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

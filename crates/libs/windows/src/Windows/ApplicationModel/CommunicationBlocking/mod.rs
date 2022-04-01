@@ -89,6 +89,11 @@ impl ::windows::core::RuntimeName for CommunicationBlockingAppManager {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICommunicationBlockingAccessManagerStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICommunicationBlockingAccessManagerStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICommunicationBlockingAccessManagerStatics {
     type Vtable = ICommunicationBlockingAccessManagerStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1c969998_9d2a_5db7_edd5_0ce407fc2595);
@@ -116,6 +121,11 @@ pub struct ICommunicationBlockingAccessManagerStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICommunicationBlockingAppManagerStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICommunicationBlockingAppManagerStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICommunicationBlockingAppManagerStatics {
     type Vtable = ICommunicationBlockingAppManagerStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x77db58ec_14a6_4baa_942a_6a673d999bf2);
@@ -130,6 +140,11 @@ pub struct ICommunicationBlockingAppManagerStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICommunicationBlockingAppManagerStatics2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICommunicationBlockingAppManagerStatics2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICommunicationBlockingAppManagerStatics2 {
     type Vtable = ICommunicationBlockingAppManagerStatics2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x14a68edd_ed88_457a_a364_a3634d6f166d);

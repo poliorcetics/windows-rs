@@ -74,6 +74,7 @@ pub fn gen_win_handle(def: &TypeDef, gen: &Gen) -> TokenStream {
         }
         unsafe impl ::windows::core::Abi for #ident {
             type Abi = Self;
+            type DefaultType = Self;
         }
     };
 

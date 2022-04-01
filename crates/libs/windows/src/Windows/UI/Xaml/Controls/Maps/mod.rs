@@ -39,11 +39,6 @@ impl CustomMapTileDataSource {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for CustomMapTileDataSource {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for CustomMapTileDataSource {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -57,7 +52,6 @@ impl ::core::fmt::Debug for CustomMapTileDataSource {
 }
 unsafe impl ::windows::core::RuntimeType for CustomMapTileDataSource {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Controls.Maps.CustomMapTileDataSource;{65da384a-2db1-4be1-b155-3d0c9ecf4799})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -241,11 +235,6 @@ impl HttpMapTileDataSource {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for HttpMapTileDataSource {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for HttpMapTileDataSource {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -259,7 +248,6 @@ impl ::core::fmt::Debug for HttpMapTileDataSource {
 }
 unsafe impl ::windows::core::RuntimeType for HttpMapTileDataSource {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Controls.Maps.HttpMapTileDataSource;{9d03cb5c-fd79-4795-87be-7e54ca0b37d0})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -356,6 +344,11 @@ unsafe impl ::core::marker::Sync for HttpMapTileDataSource {}
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICustomMapTileDataSource(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICustomMapTileDataSource {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICustomMapTileDataSource {
     type Vtable = ICustomMapTileDataSource_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x65da384a_2db1_4be1_b155_3d0c9ecf4799);
@@ -376,6 +369,11 @@ pub struct ICustomMapTileDataSource_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICustomMapTileDataSourceFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICustomMapTileDataSourceFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICustomMapTileDataSourceFactory {
     type Vtable = ICustomMapTileDataSourceFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc8477947_c955_4f22_9444_a1d8d744af11);
@@ -389,6 +387,11 @@ pub struct ICustomMapTileDataSourceFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHttpMapTileDataSource(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpMapTileDataSource {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHttpMapTileDataSource {
     type Vtable = IHttpMapTileDataSource_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9d03cb5c_fd79_4795_87be_7e54ca0b37d0);
@@ -417,6 +420,11 @@ pub struct IHttpMapTileDataSource_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHttpMapTileDataSourceFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpMapTileDataSourceFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHttpMapTileDataSourceFactory {
     type Vtable = IHttpMapTileDataSourceFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x53b4b107_84dc_4291_89f8_6d0bb612a055);
@@ -431,6 +439,11 @@ pub struct IHttpMapTileDataSourceFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ILocalMapTileDataSource(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILocalMapTileDataSource {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ILocalMapTileDataSource {
     type Vtable = ILocalMapTileDataSource_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x616257b5_9108_4f12_8bf4_bb3c8f6274e5);
@@ -453,6 +466,11 @@ pub struct ILocalMapTileDataSource_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ILocalMapTileDataSourceFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILocalMapTileDataSourceFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ILocalMapTileDataSourceFactory {
     type Vtable = ILocalMapTileDataSourceFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc5cfe9fc_72ac_4839_8a0d_011f24693c79);
@@ -467,6 +485,11 @@ pub struct ILocalMapTileDataSourceFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapActualCameraChangedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapActualCameraChangedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapActualCameraChangedEventArgs {
     type Vtable = IMapActualCameraChangedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xdaa080da_b7f4_422c_a618_bbaa7c1d814c);
@@ -480,6 +503,11 @@ pub struct IMapActualCameraChangedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapActualCameraChangedEventArgs2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapActualCameraChangedEventArgs2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapActualCameraChangedEventArgs2 {
     type Vtable = IMapActualCameraChangedEventArgs2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x7ba4c7e5_10dc_455a_9d04_1d72fb6d9b93);
@@ -493,6 +521,11 @@ pub struct IMapActualCameraChangedEventArgs2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapActualCameraChangingEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapActualCameraChangingEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapActualCameraChangingEventArgs {
     type Vtable = IMapActualCameraChangingEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x6b0dbed6_93f7_4682_8de5_a47a1cc7a945);
@@ -506,6 +539,11 @@ pub struct IMapActualCameraChangingEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapActualCameraChangingEventArgs2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapActualCameraChangingEventArgs2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapActualCameraChangingEventArgs2 {
     type Vtable = IMapActualCameraChangingEventArgs2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf2867897_40ac_4e8a_a927_510f3846a47e);
@@ -519,6 +557,11 @@ pub struct IMapActualCameraChangingEventArgs2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapBillboard(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapBillboard {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapBillboard {
     type Vtable = IMapBillboard_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1694259d_0ae2_4f42_a02e_292ca835d39d);
@@ -558,6 +601,11 @@ pub struct IMapBillboard_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapBillboardFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapBillboardFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapBillboardFactory {
     type Vtable = IMapBillboardFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xbe45a4c5_8f09_4b86_ae28_783740eb8b31);
@@ -571,6 +619,11 @@ pub struct IMapBillboardFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapBillboardStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapBillboardStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapBillboardStatics {
     type Vtable = IMapBillboardStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xfdf839fe_e1f7_4fb0_8887_7da68c647333);
@@ -586,6 +639,11 @@ pub struct IMapBillboardStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapCamera(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapCamera {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapCamera {
     type Vtable = IMapCamera_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x53a6b623_c0f8_4d8b_ad1e_a59598ea840b);
@@ -614,6 +672,11 @@ pub struct IMapCamera_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapCameraFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapCameraFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapCameraFactory {
     type Vtable = IMapCameraFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xea3b0f16_83af_4ace_8e71_10ad9f1e9e7f);
@@ -642,6 +705,11 @@ pub struct IMapCameraFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapContextRequestedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapContextRequestedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapContextRequestedEventArgs {
     type Vtable = IMapContextRequestedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xfdd1b423_c961_4df2_bb57_82ee0f0bb591);
@@ -666,6 +734,11 @@ pub struct IMapContextRequestedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapControl(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapControl {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapControl {
     type Vtable = IMapControl_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x42d0b851_5256_4747_9e6c_0d11e966141e);
@@ -842,6 +915,11 @@ pub struct IMapControl_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapControl2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapControl2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapControl2 {
     type Vtable = IMapControl2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe1fd644d_96ec_4065_b0f0_75281da3654d);
@@ -972,6 +1050,11 @@ pub struct IMapControl2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapControl3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapControl3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapControl3 {
     type Vtable = IMapControl3_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x586328f8_8cdd_40ae_9338_af2a7be845e5);
@@ -992,6 +1075,11 @@ pub struct IMapControl3_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapControl4(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapControl4 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapControl4 {
     type Vtable = IMapControl4_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x068f132a_1817_466d_b7ce_419b3f8e248b);
@@ -1012,6 +1100,11 @@ pub struct IMapControl4_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapControl5(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapControl5 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapControl5 {
     type Vtable = IMapControl5_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xdd9b0ffd_7823_46a2_82c9_65ddac4f365f);
@@ -1056,6 +1149,11 @@ pub struct IMapControl5_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapControl6(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapControl6 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapControl6 {
     type Vtable = IMapControl6_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb0da89a2_1041_4bea_b88a_12ac9a82e0e2);
@@ -1084,6 +1182,11 @@ pub struct IMapControl6_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapControl7(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapControl7 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapControl7 {
     type Vtable = IMapControl7_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x0d86e453_0c1f_4f7e_ae66_4ad0b4987857);
@@ -1098,6 +1201,11 @@ pub struct IMapControl7_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapControl8(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapControl8 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapControl8 {
     type Vtable = IMapControl8_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x009e9c46_724d_53ca_9421_7a48fc731523);
@@ -1114,6 +1222,11 @@ pub struct IMapControl8_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapControlBusinessLandmarkClickEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapControlBusinessLandmarkClickEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapControlBusinessLandmarkClickEventArgs {
     type Vtable = IMapControlBusinessLandmarkClickEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x5e464922_4a1a_4797_beb7_5cf7754cb867);
@@ -1130,6 +1243,11 @@ pub struct IMapControlBusinessLandmarkClickEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapControlBusinessLandmarkPointerEnteredEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapControlBusinessLandmarkPointerEnteredEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapControlBusinessLandmarkPointerEnteredEventArgs {
     type Vtable = IMapControlBusinessLandmarkPointerEnteredEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x5e4081a6_ea98_4f95_8caf_5b42696ff504);
@@ -1146,6 +1264,11 @@ pub struct IMapControlBusinessLandmarkPointerEnteredEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapControlBusinessLandmarkPointerExitedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapControlBusinessLandmarkPointerExitedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapControlBusinessLandmarkPointerExitedEventArgs {
     type Vtable = IMapControlBusinessLandmarkPointerExitedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x2bb52caf_f24a_46d0_b463_65f719731057);
@@ -1162,6 +1285,11 @@ pub struct IMapControlBusinessLandmarkPointerExitedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapControlBusinessLandmarkRightTappedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapControlBusinessLandmarkRightTappedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapControlBusinessLandmarkRightTappedEventArgs {
     type Vtable = IMapControlBusinessLandmarkRightTappedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x59ab8ae7_f184_4ab1_b0b0_35c8bf0654b2);
@@ -1178,6 +1306,11 @@ pub struct IMapControlBusinessLandmarkRightTappedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapControlDataHelper(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapControlDataHelper {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapControlDataHelper {
     type Vtable = IMapControlDataHelper_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x8bb0f09c_14ab_486c_9de5_5a5def0205a2);
@@ -1222,6 +1355,11 @@ pub struct IMapControlDataHelper_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapControlDataHelper2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapControlDataHelper2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapControlDataHelper2 {
     type Vtable = IMapControlDataHelper2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x59ce429e_562f_4c21_a674_0f11decf0fb3);
@@ -1266,6 +1404,11 @@ pub struct IMapControlDataHelper2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapControlDataHelperFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapControlDataHelperFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapControlDataHelperFactory {
     type Vtable = IMapControlDataHelperFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x3b70aa8e_02ef_469c_bbaf_dc2158d4289b);
@@ -1279,6 +1422,11 @@ pub struct IMapControlDataHelperFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapControlDataHelperStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapControlDataHelperStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapControlDataHelperStatics {
     type Vtable = IMapControlDataHelperStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x7a6632d6_e944_4110_83cf_314d0722e2e5);
@@ -1292,6 +1440,11 @@ pub struct IMapControlDataHelperStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapControlStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapControlStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapControlStatics {
     type Vtable = IMapControlStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc2c61795_2147_4f0a_942a_5493a85de807);
@@ -1340,6 +1493,11 @@ pub struct IMapControlStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapControlStatics2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapControlStatics2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapControlStatics2 {
     type Vtable = IMapControlStatics2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x04852b93_b446_4d31_9752_1ec69a5996ae);
@@ -1361,6 +1519,11 @@ pub struct IMapControlStatics2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapControlStatics4(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapControlStatics4 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapControlStatics4 {
     type Vtable = IMapControlStatics4_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xfe785d97_5d13_4fa1_bf1d_84061768c183);
@@ -1375,6 +1538,11 @@ pub struct IMapControlStatics4_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapControlStatics5(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapControlStatics5 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapControlStatics5 {
     type Vtable = IMapControlStatics5_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x09626f00_b7dd_4189_a7f7_830c412deea3);
@@ -1390,6 +1558,11 @@ pub struct IMapControlStatics5_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapControlStatics6(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapControlStatics6 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapControlStatics6 {
     type Vtable = IMapControlStatics6_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x3ccfdd7f_24d1_40a2_8351_b3063a8c95a4);
@@ -1403,6 +1576,11 @@ pub struct IMapControlStatics6_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapControlStatics7(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapControlStatics7 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapControlStatics7 {
     type Vtable = IMapControlStatics7_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x55f1ac4d_72c2_46b2_b7ae_790260be641b);
@@ -1416,6 +1594,11 @@ pub struct IMapControlStatics7_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapControlStatics8(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapControlStatics8 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapControlStatics8 {
     type Vtable = IMapControlStatics8_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xadb7a7b0_0605_592c_bf9d_d10bdc2be47b);
@@ -1432,6 +1615,11 @@ pub struct IMapControlStatics8_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapControlTransitFeatureClickEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapControlTransitFeatureClickEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapControlTransitFeatureClickEventArgs {
     type Vtable = IMapControlTransitFeatureClickEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x76179969_b765_4622_b08a_3072745a4541);
@@ -1453,6 +1641,11 @@ pub struct IMapControlTransitFeatureClickEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapControlTransitFeaturePointerEnteredEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapControlTransitFeaturePointerEnteredEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapControlTransitFeaturePointerEnteredEventArgs {
     type Vtable = IMapControlTransitFeaturePointerEnteredEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x73911a4e_ec4f_479e_94a1_36e081d0d897);
@@ -1474,6 +1667,11 @@ pub struct IMapControlTransitFeaturePointerEnteredEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapControlTransitFeaturePointerExitedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapControlTransitFeaturePointerExitedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapControlTransitFeaturePointerExitedEventArgs {
     type Vtable = IMapControlTransitFeaturePointerExitedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x6a11258d_448d_44e7_bc69_d13d497154e9);
@@ -1495,6 +1693,11 @@ pub struct IMapControlTransitFeaturePointerExitedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapControlTransitFeatureRightTappedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapControlTransitFeatureRightTappedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapControlTransitFeatureRightTappedEventArgs {
     type Vtable = IMapControlTransitFeatureRightTappedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xaea1cc49_a729_4eae_a59a_3ec9a125a028);
@@ -1516,6 +1719,11 @@ pub struct IMapControlTransitFeatureRightTappedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapCustomExperience(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapCustomExperience {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapCustomExperience {
     type Vtable = IMapCustomExperience_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x64592866_14a3_4e5f_8883_8e9c500eeede);
@@ -1528,6 +1736,11 @@ pub struct IMapCustomExperience_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapCustomExperienceChangedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapCustomExperienceChangedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapCustomExperienceChangedEventArgs {
     type Vtable = IMapCustomExperienceChangedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb9e6fb9b_8fc1_4042_ac34_a61b38bb7514);
@@ -1540,6 +1753,11 @@ pub struct IMapCustomExperienceChangedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapCustomExperienceFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapCustomExperienceFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapCustomExperienceFactory {
     type Vtable = IMapCustomExperienceFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x7a403fb5_a1b1_4e7f_921e_3e6b8d8ebed6);
@@ -1553,6 +1771,11 @@ pub struct IMapCustomExperienceFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapElement(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapElement {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapElement {
     type Vtable = IMapElement_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd61fc4df_b245_47f2_9ac2_43c058b1c903);
@@ -1569,6 +1792,11 @@ pub struct IMapElement_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapElement2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapElement2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapElement2 {
     type Vtable = IMapElement2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x6619f261_fba6_4964_a7ff_f1af63ab9cb0);
@@ -1583,6 +1811,11 @@ pub struct IMapElement2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapElement3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapElement3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapElement3 {
     type Vtable = IMapElement3_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x13efbc59_45ed_48b4_93ad_e3f78f8cf218);
@@ -1601,6 +1834,11 @@ pub struct IMapElement3_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapElement3D(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapElement3D {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapElement3D {
     type Vtable = IMapElement3D_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x827af8d5_3843_48e2_bd00_0f0644fbe6a5);
@@ -1637,6 +1875,11 @@ pub struct IMapElement3D_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapElement3DStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapElement3DStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapElement3DStatics {
     type Vtable = IMapElement3DStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x6128011a_450f_442a_b9d9_aa815c71907a);
@@ -1654,6 +1897,11 @@ pub struct IMapElement3DStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapElement4(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapElement4 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapElement4 {
     type Vtable = IMapElement4_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x645883b6_1fc1_4ceb_93bd_dc2c960072e9);
@@ -1668,6 +1916,11 @@ pub struct IMapElement4_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapElementClickEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapElementClickEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapElementClickEventArgs {
     type Vtable = IMapElementClickEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x40168a11_d080_4519_99a1_3149fb8999d0);
@@ -1692,6 +1945,11 @@ pub struct IMapElementClickEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapElementFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapElementFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapElementFactory {
     type Vtable = IMapElementFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x4a30d007_0bd6_47a5_860b_7e7cf5f0c573);
@@ -1705,6 +1963,11 @@ pub struct IMapElementFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapElementPointerEnteredEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapElementPointerEnteredEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapElementPointerEnteredEventArgs {
     type Vtable = IMapElementPointerEnteredEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xab85dd4e_91d7_4b31_8f0a_d390c7d3a2ef);
@@ -1726,6 +1989,11 @@ pub struct IMapElementPointerEnteredEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapElementPointerExitedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapElementPointerExitedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapElementPointerExitedEventArgs {
     type Vtable = IMapElementPointerExitedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc1a45af9_60c9_4679_9119_20abc75d931f);
@@ -1747,6 +2015,11 @@ pub struct IMapElementPointerExitedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapElementStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapElementStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapElementStatics {
     type Vtable = IMapElementStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe8c71cf2_bfef_4b49_8e99_41b5e3789fd2);
@@ -1761,6 +2034,11 @@ pub struct IMapElementStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapElementStatics2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapElementStatics2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapElementStatics2 {
     type Vtable = IMapElementStatics2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9bf72f30_80fe_4f30_bcc1_fa894050f676);
@@ -1774,6 +2052,11 @@ pub struct IMapElementStatics2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapElementStatics3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapElementStatics3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapElementStatics3 {
     type Vtable = IMapElementStatics3_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe11ee92f_9742_49aa_aad8_2e466bff3796);
@@ -1789,6 +2072,11 @@ pub struct IMapElementStatics3_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapElementStatics4(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapElementStatics4 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapElementStatics4 {
     type Vtable = IMapElementStatics4_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa4296f0b_dff8_467c_9315_6f6db93ee2ba);
@@ -1802,6 +2090,11 @@ pub struct IMapElementStatics4_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapElementsLayer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapElementsLayer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapElementsLayer {
     type Vtable = IMapElementsLayer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xde79689a_01ef_46f4_ac60_7c200b552610);
@@ -1854,6 +2147,11 @@ pub struct IMapElementsLayer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapElementsLayerClickEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapElementsLayerClickEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapElementsLayerClickEventArgs {
     type Vtable = IMapElementsLayerClickEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x2ca7cf66_af1b_4c05_8c85_f74ae3d4677f);
@@ -1878,6 +2176,11 @@ pub struct IMapElementsLayerClickEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapElementsLayerContextRequestedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapElementsLayerContextRequestedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapElementsLayerContextRequestedEventArgs {
     type Vtable = IMapElementsLayerContextRequestedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xda45d0b3_7a0e_4758_808b_3a637627eb0d);
@@ -1902,6 +2205,11 @@ pub struct IMapElementsLayerContextRequestedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapElementsLayerPointerEnteredEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapElementsLayerPointerEnteredEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapElementsLayerPointerEnteredEventArgs {
     type Vtable = IMapElementsLayerPointerEnteredEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x757fc032_4694_4404_8c89_348b6b76c5e6);
@@ -1923,6 +2231,11 @@ pub struct IMapElementsLayerPointerEnteredEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapElementsLayerPointerExitedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapElementsLayerPointerExitedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapElementsLayerPointerExitedEventArgs {
     type Vtable = IMapElementsLayerPointerExitedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x92f3c6ad_03ed_4c39_af20_2a07ee1ccea6);
@@ -1944,6 +2257,11 @@ pub struct IMapElementsLayerPointerExitedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapElementsLayerStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapElementsLayerStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapElementsLayerStatics {
     type Vtable = IMapElementsLayerStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x34005727_f509_4d28_9180_911c03411d74);
@@ -1957,6 +2275,11 @@ pub struct IMapElementsLayerStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapIcon(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapIcon {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapIcon {
     type Vtable = IMapIcon_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd2096872_23d9_4a2b_8be0_69f3a85482ab);
@@ -1995,6 +2318,11 @@ pub struct IMapIcon_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapIcon2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapIcon2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapIcon2 {
     type Vtable = IMapIcon2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x611254b9_d8aa_4bbd_a316_badf06911d63);
@@ -2009,6 +2337,11 @@ pub struct IMapIcon2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapIconStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapIconStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapIconStatics {
     type Vtable = IMapIconStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xdcbc9e56_1190_4b5d_9e56_e5b6724aa328);
@@ -2024,6 +2357,11 @@ pub struct IMapIconStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapIconStatics2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapIconStatics2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapIconStatics2 {
     type Vtable = IMapIconStatics2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xff4c306a_cf76_46ab_a12f_b603b986c696);
@@ -2037,6 +2375,11 @@ pub struct IMapIconStatics2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapInputEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapInputEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapInputEventArgs {
     type Vtable = IMapInputEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9fc503a0_a8a2_4394_92e9_2247764f2f49);
@@ -2057,6 +2400,11 @@ pub struct IMapInputEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapItemsControl(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapItemsControl {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapItemsControl {
     type Vtable = IMapItemsControl_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x94c2c4d3_b335_42c5_b660_e6a07ec3bddc);
@@ -2077,6 +2425,11 @@ pub struct IMapItemsControl_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapItemsControlStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapItemsControlStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapItemsControlStatics {
     type Vtable = IMapItemsControlStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x33a859c7_789b_425c_8a0a_32385896cb4a);
@@ -2092,6 +2445,11 @@ pub struct IMapItemsControlStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapLayer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapLayer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapLayer {
     type Vtable = IMapLayer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x6d0ff9c1_a14d_4f97_8f57_46715b57683a);
@@ -2110,6 +2468,11 @@ pub struct IMapLayer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapLayerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapLayerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapLayerFactory {
     type Vtable = IMapLayerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe02a2207_dee3_47c8_9825_bd029c5752f7);
@@ -2123,6 +2486,11 @@ pub struct IMapLayerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapLayerStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapLayerStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapLayerStatics {
     type Vtable = IMapLayerStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9ca4a26b_5db9_4f0c_bdd5_b1bffdcce946);
@@ -2138,6 +2506,11 @@ pub struct IMapLayerStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapModel3D(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapModel3D {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapModel3D {
     type Vtable = IMapModel3D_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf8c541a1_ca27_4968_a2bf_9c20f06a0468);
@@ -2150,6 +2523,11 @@ pub struct IMapModel3D_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapModel3DFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapModel3DFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapModel3DFactory {
     type Vtable = IMapModel3DFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xdf7f0bcc_580a_498b_939b_0119a9dadb9e);
@@ -2163,6 +2541,11 @@ pub struct IMapModel3DFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapModel3DStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapModel3DStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapModel3DStatics {
     type Vtable = IMapModel3DStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x4834a480_8e56_4b0f_872d_7ead103187cd);
@@ -2183,6 +2566,11 @@ pub struct IMapModel3DStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapPolygon(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapPolygon {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapPolygon {
     type Vtable = IMapPolygon_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xabda2285_4926_4c3a_a5f9_19df7f69db3d);
@@ -2211,6 +2599,11 @@ pub struct IMapPolygon_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapPolygon2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapPolygon2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapPolygon2 {
     type Vtable = IMapPolygon2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x96c8a11e_636b_4018_9c2e_acc9122a01b2);
@@ -2227,6 +2620,11 @@ pub struct IMapPolygon2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapPolygonStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapPolygonStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapPolygonStatics {
     type Vtable = IMapPolygonStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x37f573be_097b_424c_87cc_2ee042fda6d2);
@@ -2242,6 +2640,11 @@ pub struct IMapPolygonStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapPolyline(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapPolyline {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapPolyline {
     type Vtable = IMapPolyline_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xfbad24a2_24df_4a86_8ffa_0f8f4d9ec17d);
@@ -2268,6 +2671,11 @@ pub struct IMapPolyline_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapPolylineStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapPolylineStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapPolylineStatics {
     type Vtable = IMapPolylineStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x61fde44b_1ddf_4303_b809_ec87f58ad065);
@@ -2282,6 +2690,11 @@ pub struct IMapPolylineStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapRightTappedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapRightTappedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapRightTappedEventArgs {
     type Vtable = IMapRightTappedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x20943171_6fe8_40a6_ad0e_297379b575a7);
@@ -2302,6 +2715,11 @@ pub struct IMapRightTappedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapRouteView(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapRouteView {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapRouteView {
     type Vtable = IMapRouteView_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x740eaec5_bacc_41e1_a67e_dd6513832049);
@@ -2322,6 +2740,11 @@ pub struct IMapRouteView_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapRouteViewFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapRouteViewFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapRouteViewFactory {
     type Vtable = IMapRouteViewFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf083addf_0066_4628_82fe_ea78c23cec1e);
@@ -2338,6 +2761,11 @@ pub struct IMapRouteViewFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapScene(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapScene {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapScene {
     type Vtable = IMapScene_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x8bba10a9_50e7_482c_9789_c688b178ac24);
@@ -2359,6 +2787,11 @@ pub struct IMapScene_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapSceneStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapSceneStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapSceneStatics {
     type Vtable = IMapSceneStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x03e4ad6c_86ec_44d9_9597_fb75b7deba0a);
@@ -2404,6 +2837,11 @@ pub struct IMapSceneStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapStyleSheet(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapStyleSheet {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapStyleSheet {
     type Vtable = IMapStyleSheet_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xae54b2bf_8991_42ed_8d58_20473deede1d);
@@ -2416,6 +2854,11 @@ pub struct IMapStyleSheet_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapStyleSheetEntriesStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapStyleSheetEntriesStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapStyleSheetEntriesStatics {
     type Vtable = IMapStyleSheetEntriesStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc9636345_ef1a_41a4_a757_bd4f43e1e4d1);
@@ -2492,6 +2935,11 @@ pub struct IMapStyleSheetEntriesStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapStyleSheetEntryStatesStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapStyleSheetEntryStatesStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapStyleSheetEntryStatesStatics {
     type Vtable = IMapStyleSheetEntryStatesStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x23ac5532_866d_4bfa_b481_39bea1de3506);
@@ -2507,6 +2955,11 @@ pub struct IMapStyleSheetEntryStatesStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapStyleSheetStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapStyleSheetStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapStyleSheetStatics {
     type Vtable = IMapStyleSheetStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xabbd00ad_0a1c_4335_82f4_61d936aa197d);
@@ -2531,6 +2984,11 @@ pub struct IMapStyleSheetStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapTargetCameraChangedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapTargetCameraChangedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapTargetCameraChangedEventArgs {
     type Vtable = IMapTargetCameraChangedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xdbf00472_e953_4fa8_97d0_ea86359057cf);
@@ -2544,6 +3002,11 @@ pub struct IMapTargetCameraChangedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapTargetCameraChangedEventArgs2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapTargetCameraChangedEventArgs2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapTargetCameraChangedEventArgs2 {
     type Vtable = IMapTargetCameraChangedEventArgs2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x97c0b332_f2b6_460b_8d91_ac020a2383dd);
@@ -2557,6 +3020,11 @@ pub struct IMapTargetCameraChangedEventArgs2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapTileBitmapRequest(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapTileBitmapRequest {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapTileBitmapRequest {
     type Vtable = IMapTileBitmapRequest_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x46733fbc_d89d_472b_b5f6_d7066b0584f4);
@@ -2578,6 +3046,11 @@ pub struct IMapTileBitmapRequest_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapTileBitmapRequestDeferral(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapTileBitmapRequestDeferral {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapTileBitmapRequestDeferral {
     type Vtable = IMapTileBitmapRequestDeferral_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xfe370542_a4ac_4efa_9665_0490b0cafdd2);
@@ -2591,6 +3064,11 @@ pub struct IMapTileBitmapRequestDeferral_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapTileBitmapRequestedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapTileBitmapRequestedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapTileBitmapRequestedEventArgs {
     type Vtable = IMapTileBitmapRequestedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x337f691d_9b02_4aa2_8b1e_cc4d91719bf3);
@@ -2607,6 +3085,11 @@ pub struct IMapTileBitmapRequestedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapTileBitmapRequestedEventArgs2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapTileBitmapRequestedEventArgs2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapTileBitmapRequestedEventArgs2 {
     type Vtable = IMapTileBitmapRequestedEventArgs2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x0261d114_246a_5296_bc85_590f53aa39c8);
@@ -2620,6 +3103,11 @@ pub struct IMapTileBitmapRequestedEventArgs2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapTileDataSource(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapTileDataSource {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapTileDataSource {
     type Vtable = IMapTileDataSource_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc03d9f5e_be1f_4c69_9969_79467a513c38);
@@ -2632,6 +3120,11 @@ pub struct IMapTileDataSource_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapTileDataSourceFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapTileDataSourceFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapTileDataSourceFactory {
     type Vtable = IMapTileDataSourceFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa3920fbd_e446_4648_a74d_fd2c5d557c06);
@@ -2645,6 +3138,11 @@ pub struct IMapTileDataSourceFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapTileSource(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapTileSource {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapTileSource {
     type Vtable = IMapTileSource_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x88a76e4e_2fdf_4567_9255_1100519c8d62);
@@ -2685,6 +3183,11 @@ pub struct IMapTileSource_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapTileSource2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapTileSource2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapTileSource2 {
     type Vtable = IMapTileSource2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x8e65ebbd_4095_5c15_99f1_1260b4e8b0a9);
@@ -2713,6 +3216,11 @@ pub struct IMapTileSource2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapTileSourceFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapTileSourceFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapTileSourceFactory {
     type Vtable = IMapTileSourceFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xcd7f811f_77fa_482b_9d34_71d31d465c48);
@@ -2736,6 +3244,11 @@ pub struct IMapTileSourceFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapTileSourceStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapTileSourceStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapTileSourceStatics {
     type Vtable = IMapTileSourceStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x93fcc93c_7035_4603_99b1_e659921b6093);
@@ -2759,6 +3272,11 @@ pub struct IMapTileSourceStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapTileSourceStatics2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapTileSourceStatics2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapTileSourceStatics2 {
     type Vtable = IMapTileSourceStatics2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x75cdd47e_669c_50fd_ad85_5ea5174cf59b);
@@ -2775,6 +3293,11 @@ pub struct IMapTileSourceStatics2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapTileUriRequest(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapTileUriRequest {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapTileUriRequest {
     type Vtable = IMapTileUriRequest_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x17402335_3127_45b8_87a7_99f87d4e2745);
@@ -2796,6 +3319,11 @@ pub struct IMapTileUriRequest_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapTileUriRequestDeferral(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapTileUriRequestDeferral {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapTileUriRequestDeferral {
     type Vtable = IMapTileUriRequestDeferral_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc117ade0_bf3e_4c51_8faa_4b593cf68eb2);
@@ -2809,6 +3337,11 @@ pub struct IMapTileUriRequestDeferral_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapTileUriRequestedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapTileUriRequestedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapTileUriRequestedEventArgs {
     type Vtable = IMapTileUriRequestedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd2147b43_1bbf_4b98_8dd3_b7834e407e0d);
@@ -2825,6 +3358,11 @@ pub struct IMapTileUriRequestedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapTileUriRequestedEventArgs2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapTileUriRequestedEventArgs2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapTileUriRequestedEventArgs2 {
     type Vtable = IMapTileUriRequestedEventArgs2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x2302185d_33b5_5a55_92f5_74a86a22efa6);
@@ -2838,6 +3376,11 @@ pub struct IMapTileUriRequestedEventArgs2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IStreetsideExperience(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStreetsideExperience {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IStreetsideExperience {
     type Vtable = IStreetsideExperience_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa558aec9_e30c_46c8_8116_484691675558);
@@ -2862,6 +3405,11 @@ pub struct IStreetsideExperience_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IStreetsideExperienceFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStreetsideExperienceFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IStreetsideExperienceFactory {
     type Vtable = IStreetsideExperienceFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x7a5bcf3c_649e_4342_9995_68a6cf5961a7);
@@ -2876,6 +3424,11 @@ pub struct IStreetsideExperienceFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IStreetsidePanorama(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStreetsidePanorama {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IStreetsidePanorama {
     type Vtable = IStreetsidePanorama_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x6fe00fd8_ad60_4664_b539_b1069f16c5af);
@@ -2892,6 +3445,11 @@ pub struct IStreetsidePanorama_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IStreetsidePanoramaStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStreetsidePanoramaStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IStreetsidePanoramaStatics {
     type Vtable = IStreetsidePanoramaStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd3b47f69_54b3_4ec5_b2a0_4f8204576507);
@@ -2977,11 +3535,6 @@ impl LocalMapTileDataSource {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for LocalMapTileDataSource {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for LocalMapTileDataSource {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2995,7 +3548,6 @@ impl ::core::fmt::Debug for LocalMapTileDataSource {
 }
 unsafe impl ::windows::core::RuntimeType for LocalMapTileDataSource {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Controls.Maps.LocalMapTileDataSource;{616257b5-9108-4f12-8bf4-bb3c8f6274e5})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3117,11 +3669,6 @@ impl MapActualCameraChangedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for MapActualCameraChangedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MapActualCameraChangedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3135,7 +3682,6 @@ impl ::core::fmt::Debug for MapActualCameraChangedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for MapActualCameraChangedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Controls.Maps.MapActualCameraChangedEventArgs;{daa080da-b7f4-422c-a618-bbaa7c1d814c})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3217,11 +3763,6 @@ impl MapActualCameraChangingEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for MapActualCameraChangingEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MapActualCameraChangingEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3235,7 +3776,6 @@ impl ::core::fmt::Debug for MapActualCameraChangingEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for MapActualCameraChangingEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Controls.Maps.MapActualCameraChangingEventArgs;{6b0dbed6-93f7-4682-8de5-a47a1cc7a945})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3312,6 +3852,7 @@ impl ::core::default::Default for MapAnimationKind {
 }
 unsafe impl ::windows::core::Abi for MapAnimationKind {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MapAnimationKind {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3320,7 +3861,6 @@ impl ::core::fmt::Debug for MapAnimationKind {
 }
 unsafe impl ::windows::core::RuntimeType for MapAnimationKind {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Xaml.Controls.Maps.MapAnimationKind;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -3434,11 +3974,6 @@ impl MapBillboard {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for MapBillboard {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MapBillboard {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3452,7 +3987,6 @@ impl ::core::fmt::Debug for MapBillboard {
 }
 unsafe impl ::windows::core::RuntimeType for MapBillboard {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Controls.Maps.MapBillboard;{1694259d-0ae2-4f42-a02e-292ca835d39d})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3655,11 +4189,6 @@ impl MapCamera {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for MapCamera {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MapCamera {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3673,7 +4202,6 @@ impl ::core::fmt::Debug for MapCamera {
 }
 unsafe impl ::windows::core::RuntimeType for MapCamera {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Controls.Maps.MapCamera;{53a6b623-c0f8-4d8b-ad1e-a59598ea840b})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3769,6 +4297,7 @@ impl ::core::default::Default for MapCameraChangeReason {
 }
 unsafe impl ::windows::core::Abi for MapCameraChangeReason {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MapCameraChangeReason {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3777,7 +4306,6 @@ impl ::core::fmt::Debug for MapCameraChangeReason {
 }
 unsafe impl ::windows::core::RuntimeType for MapCameraChangeReason {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Xaml.Controls.Maps.MapCameraChangeReason;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -3803,6 +4331,7 @@ impl ::core::default::Default for MapColorScheme {
 }
 unsafe impl ::windows::core::Abi for MapColorScheme {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MapColorScheme {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3811,7 +4340,6 @@ impl ::core::fmt::Debug for MapColorScheme {
 }
 unsafe impl ::windows::core::RuntimeType for MapColorScheme {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Xaml.Controls.Maps.MapColorScheme;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -3855,11 +4383,6 @@ impl MapContextRequestedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for MapContextRequestedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MapContextRequestedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3873,7 +4396,6 @@ impl ::core::fmt::Debug for MapContextRequestedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for MapContextRequestedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Controls.Maps.MapContextRequestedEventArgs;{fdd1b423-c961-4df2-bb57-82ee0f0bb591})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -5292,11 +5814,6 @@ impl MapControl {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for MapControl {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MapControl {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5310,7 +5827,6 @@ impl ::core::fmt::Debug for MapControl {
 }
 unsafe impl ::windows::core::RuntimeType for MapControl {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Controls.Maps.MapControl;{42d0b851-5256-4747-9e6c-0d11e966141e})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -5517,11 +6033,6 @@ impl MapControlBusinessLandmarkClickEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for MapControlBusinessLandmarkClickEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MapControlBusinessLandmarkClickEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5535,7 +6046,6 @@ impl ::core::fmt::Debug for MapControlBusinessLandmarkClickEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for MapControlBusinessLandmarkClickEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Controls.Maps.MapControlBusinessLandmarkClickEventArgs;{5e464922-4a1a-4797-beb7-5cf7754cb867})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -5610,11 +6120,6 @@ impl MapControlBusinessLandmarkPointerEnteredEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for MapControlBusinessLandmarkPointerEnteredEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MapControlBusinessLandmarkPointerEnteredEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5628,7 +6133,6 @@ impl ::core::fmt::Debug for MapControlBusinessLandmarkPointerEnteredEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for MapControlBusinessLandmarkPointerEnteredEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Controls.Maps.MapControlBusinessLandmarkPointerEnteredEventArgs;{5e4081a6-ea98-4f95-8caf-5b42696ff504})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -5703,11 +6207,6 @@ impl MapControlBusinessLandmarkPointerExitedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for MapControlBusinessLandmarkPointerExitedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MapControlBusinessLandmarkPointerExitedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5721,7 +6220,6 @@ impl ::core::fmt::Debug for MapControlBusinessLandmarkPointerExitedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for MapControlBusinessLandmarkPointerExitedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Controls.Maps.MapControlBusinessLandmarkPointerExitedEventArgs;{2bb52caf-f24a-46d0-b463-65f719731057})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -5796,11 +6294,6 @@ impl MapControlBusinessLandmarkRightTappedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for MapControlBusinessLandmarkRightTappedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MapControlBusinessLandmarkRightTappedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5814,7 +6307,6 @@ impl ::core::fmt::Debug for MapControlBusinessLandmarkRightTappedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for MapControlBusinessLandmarkRightTappedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Controls.Maps.MapControlBusinessLandmarkRightTappedEventArgs;{59ab8ae7-f184-4ab1-b0b0-35c8bf0654b2})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -6017,11 +6509,6 @@ impl MapControlDataHelper {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for MapControlDataHelper {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MapControlDataHelper {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6035,7 +6522,6 @@ impl ::core::fmt::Debug for MapControlDataHelper {
 }
 unsafe impl ::windows::core::RuntimeType for MapControlDataHelper {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Controls.Maps.MapControlDataHelper;{8bb0f09c-14ab-486c-9de5-5a5def0205a2})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -6147,11 +6633,6 @@ impl MapControlTransitFeatureClickEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for MapControlTransitFeatureClickEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MapControlTransitFeatureClickEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6165,7 +6646,6 @@ impl ::core::fmt::Debug for MapControlTransitFeatureClickEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for MapControlTransitFeatureClickEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Controls.Maps.MapControlTransitFeatureClickEventArgs;{76179969-b765-4622-b08a-3072745a4541})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -6257,11 +6737,6 @@ impl MapControlTransitFeaturePointerEnteredEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for MapControlTransitFeaturePointerEnteredEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MapControlTransitFeaturePointerEnteredEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6275,7 +6750,6 @@ impl ::core::fmt::Debug for MapControlTransitFeaturePointerEnteredEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for MapControlTransitFeaturePointerEnteredEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Controls.Maps.MapControlTransitFeaturePointerEnteredEventArgs;{73911a4e-ec4f-479e-94a1-36e081d0d897})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -6367,11 +6841,6 @@ impl MapControlTransitFeaturePointerExitedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for MapControlTransitFeaturePointerExitedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MapControlTransitFeaturePointerExitedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6385,7 +6854,6 @@ impl ::core::fmt::Debug for MapControlTransitFeaturePointerExitedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for MapControlTransitFeaturePointerExitedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Controls.Maps.MapControlTransitFeaturePointerExitedEventArgs;{6a11258d-448d-44e7-bc69-d13d497154e9})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -6477,11 +6945,6 @@ impl MapControlTransitFeatureRightTappedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for MapControlTransitFeatureRightTappedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MapControlTransitFeatureRightTappedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6495,7 +6958,6 @@ impl ::core::fmt::Debug for MapControlTransitFeatureRightTappedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for MapControlTransitFeatureRightTappedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Controls.Maps.MapControlTransitFeatureRightTappedEventArgs;{aea1cc49-a729-4eae-a59a-3ec9a125a028})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -6574,11 +7036,6 @@ impl MapCustomExperience {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for MapCustomExperience {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MapCustomExperience {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6592,7 +7049,6 @@ impl ::core::fmt::Debug for MapCustomExperience {
 }
 unsafe impl ::windows::core::RuntimeType for MapCustomExperience {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Controls.Maps.MapCustomExperience;{64592866-14a3-4e5f-8883-8e9c500eeede})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -6678,11 +7134,6 @@ impl MapCustomExperienceChangedEventArgs {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for MapCustomExperienceChangedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MapCustomExperienceChangedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6696,7 +7147,6 @@ impl ::core::fmt::Debug for MapCustomExperienceChangedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for MapCustomExperienceChangedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Controls.Maps.MapCustomExperienceChangedEventArgs;{b9e6fb9b-8fc1-4042-ac34-a61b38bb7514})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -6935,11 +7385,6 @@ impl MapElement {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for MapElement {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MapElement {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6953,7 +7398,6 @@ impl ::core::fmt::Debug for MapElement {
 }
 unsafe impl ::windows::core::RuntimeType for MapElement {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Controls.Maps.MapElement;{d61fc4df-b245-47f2-9ac2-43c058b1c903})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -7161,11 +7605,6 @@ impl MapElement3D {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for MapElement3D {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MapElement3D {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7179,7 +7618,6 @@ impl ::core::fmt::Debug for MapElement3D {
 }
 unsafe impl ::windows::core::RuntimeType for MapElement3D {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Controls.Maps.MapElement3D;{827af8d5-3843-48e2-bd00-0f0644fbe6a5})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -7312,11 +7750,6 @@ impl MapElementClickEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for MapElementClickEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MapElementClickEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7330,7 +7763,6 @@ impl ::core::fmt::Debug for MapElementClickEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for MapElementClickEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Controls.Maps.MapElementClickEventArgs;{40168a11-d080-4519-99a1-3149fb8999d0})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -7405,6 +7837,7 @@ impl ::core::default::Default for MapElementCollisionBehavior {
 }
 unsafe impl ::windows::core::Abi for MapElementCollisionBehavior {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MapElementCollisionBehavior {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7413,7 +7846,6 @@ impl ::core::fmt::Debug for MapElementCollisionBehavior {
 }
 unsafe impl ::windows::core::RuntimeType for MapElementCollisionBehavior {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Xaml.Controls.Maps.MapElementCollisionBehavior;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -7456,11 +7888,6 @@ impl MapElementPointerEnteredEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for MapElementPointerEnteredEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MapElementPointerEnteredEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7474,7 +7901,6 @@ impl ::core::fmt::Debug for MapElementPointerEnteredEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for MapElementPointerEnteredEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Controls.Maps.MapElementPointerEnteredEventArgs;{ab85dd4e-91d7-4b31-8f0a-d390c7d3a2ef})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -7566,11 +7992,6 @@ impl MapElementPointerExitedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for MapElementPointerExitedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MapElementPointerExitedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7584,7 +8005,6 @@ impl ::core::fmt::Debug for MapElementPointerExitedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for MapElementPointerExitedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Controls.Maps.MapElementPointerExitedEventArgs;{c1a45af9-60c9-4679-9119-20abc75d931f})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -7737,11 +8157,6 @@ impl MapElementsLayer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for MapElementsLayer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MapElementsLayer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7755,7 +8170,6 @@ impl ::core::fmt::Debug for MapElementsLayer {
 }
 unsafe impl ::windows::core::RuntimeType for MapElementsLayer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Controls.Maps.MapElementsLayer;{de79689a-01ef-46f4-ac60-7c200b552610})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -7888,11 +8302,6 @@ impl MapElementsLayerClickEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for MapElementsLayerClickEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MapElementsLayerClickEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7906,7 +8315,6 @@ impl ::core::fmt::Debug for MapElementsLayerClickEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for MapElementsLayerClickEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Controls.Maps.MapElementsLayerClickEventArgs;{2ca7cf66-af1b-4c05-8c85-f74ae3d4677f})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -7999,11 +8407,6 @@ impl MapElementsLayerContextRequestedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for MapElementsLayerContextRequestedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MapElementsLayerContextRequestedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8017,7 +8420,6 @@ impl ::core::fmt::Debug for MapElementsLayerContextRequestedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for MapElementsLayerContextRequestedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Controls.Maps.MapElementsLayerContextRequestedEventArgs;{da45d0b3-7a0e-4758-808b-3a637627eb0d})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -8109,11 +8511,6 @@ impl MapElementsLayerPointerEnteredEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for MapElementsLayerPointerEnteredEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MapElementsLayerPointerEnteredEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8127,7 +8524,6 @@ impl ::core::fmt::Debug for MapElementsLayerPointerEnteredEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for MapElementsLayerPointerEnteredEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Controls.Maps.MapElementsLayerPointerEnteredEventArgs;{757fc032-4694-4404-8c89-348b6b76c5e6})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -8219,11 +8615,6 @@ impl MapElementsLayerPointerExitedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for MapElementsLayerPointerExitedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MapElementsLayerPointerExitedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8237,7 +8628,6 @@ impl ::core::fmt::Debug for MapElementsLayerPointerExitedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for MapElementsLayerPointerExitedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Controls.Maps.MapElementsLayerPointerExitedEventArgs;{92f3c6ad-03ed-4c39-af20-2a07ee1ccea6})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -8412,11 +8802,6 @@ impl MapIcon {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for MapIcon {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MapIcon {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8430,7 +8815,6 @@ impl ::core::fmt::Debug for MapIcon {
 }
 unsafe impl ::windows::core::RuntimeType for MapIcon {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Controls.Maps.MapIcon;{d2096872-23d9-4a2b-8be0-69f3a85482ab})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -8554,11 +8938,6 @@ impl MapInputEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for MapInputEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MapInputEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8572,7 +8951,6 @@ impl ::core::fmt::Debug for MapInputEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for MapInputEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Controls.Maps.MapInputEventArgs;{9fc503a0-a8a2-4394-92e9-2247764f2f49})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -8673,6 +9051,7 @@ impl ::core::default::Default for MapInteractionMode {
 }
 unsafe impl ::windows::core::Abi for MapInteractionMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MapInteractionMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8681,7 +9060,6 @@ impl ::core::fmt::Debug for MapInteractionMode {
 }
 unsafe impl ::windows::core::RuntimeType for MapInteractionMode {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Xaml.Controls.Maps.MapInteractionMode;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -8759,11 +9137,6 @@ impl MapItemsControl {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for MapItemsControl {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MapItemsControl {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8777,7 +9150,6 @@ impl ::core::fmt::Debug for MapItemsControl {
 }
 unsafe impl ::windows::core::RuntimeType for MapItemsControl {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Controls.Maps.MapItemsControl;{94c2c4d3-b335-42c5-b660-e6a07ec3bddc})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -8941,11 +9313,6 @@ impl MapLayer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for MapLayer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MapLayer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8959,7 +9326,6 @@ impl ::core::fmt::Debug for MapLayer {
 }
 unsafe impl ::windows::core::RuntimeType for MapLayer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Controls.Maps.MapLayer;{6d0ff9c1-a14d-4f97-8f57-46715b57683a})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -9056,6 +9422,7 @@ impl ::core::default::Default for MapLoadingStatus {
 }
 unsafe impl ::windows::core::Abi for MapLoadingStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MapLoadingStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9064,7 +9431,6 @@ impl ::core::fmt::Debug for MapLoadingStatus {
 }
 unsafe impl ::windows::core::RuntimeType for MapLoadingStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Xaml.Controls.Maps.MapLoadingStatus;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -9115,11 +9481,6 @@ impl MapModel3D {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for MapModel3D {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MapModel3D {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9133,7 +9494,6 @@ impl ::core::fmt::Debug for MapModel3D {
 }
 unsafe impl ::windows::core::RuntimeType for MapModel3D {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Controls.Maps.MapModel3D;{f8c541a1-ca27-4968-a2bf-9c20f06a0468})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -9229,6 +9589,7 @@ impl ::core::default::Default for MapModel3DShadingOption {
 }
 unsafe impl ::windows::core::Abi for MapModel3DShadingOption {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MapModel3DShadingOption {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9237,7 +9598,6 @@ impl ::core::fmt::Debug for MapModel3DShadingOption {
 }
 unsafe impl ::windows::core::RuntimeType for MapModel3DShadingOption {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Xaml.Controls.Maps.MapModel3DShadingOption;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -9263,6 +9623,7 @@ impl ::core::default::Default for MapPanInteractionMode {
 }
 unsafe impl ::windows::core::Abi for MapPanInteractionMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MapPanInteractionMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9271,7 +9632,6 @@ impl ::core::fmt::Debug for MapPanInteractionMode {
 }
 unsafe impl ::windows::core::RuntimeType for MapPanInteractionMode {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Xaml.Controls.Maps.MapPanInteractionMode;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -9390,11 +9750,6 @@ impl MapPolygon {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for MapPolygon {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MapPolygon {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9408,7 +9763,6 @@ impl ::core::fmt::Debug for MapPolygon {
 }
 unsafe impl ::windows::core::RuntimeType for MapPolygon {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Controls.Maps.MapPolygon;{abda2285-4926-4c3a-a5f9-19df7f69db3d})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -9587,11 +9941,6 @@ impl MapPolyline {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for MapPolyline {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MapPolyline {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9605,7 +9954,6 @@ impl ::core::fmt::Debug for MapPolyline {
 }
 unsafe impl ::windows::core::RuntimeType for MapPolyline {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Controls.Maps.MapPolyline;{fbad24a2-24df-4a86-8ffa-0f8f4d9ec17d})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -9720,6 +10068,7 @@ impl ::core::default::Default for MapProjection {
 }
 unsafe impl ::windows::core::Abi for MapProjection {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MapProjection {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9728,7 +10077,6 @@ impl ::core::fmt::Debug for MapProjection {
 }
 unsafe impl ::windows::core::RuntimeType for MapProjection {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Xaml.Controls.Maps.MapProjection;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -9763,11 +10111,6 @@ impl MapRightTappedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for MapRightTappedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MapRightTappedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9781,7 +10124,6 @@ impl ::core::fmt::Debug for MapRightTappedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for MapRightTappedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Controls.Maps.MapRightTappedEventArgs;{20943171-6fe8-40a6-ad0e-297379b575a7})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -9897,11 +10239,6 @@ impl MapRouteView {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for MapRouteView {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MapRouteView {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9915,7 +10252,6 @@ impl ::core::fmt::Debug for MapRouteView {
 }
 unsafe impl ::windows::core::RuntimeType for MapRouteView {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Controls.Maps.MapRouteView;{740eaec5-bacc-41e1-a67e-dd6513832049})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -10093,11 +10429,6 @@ impl MapScene {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for MapScene {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MapScene {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10111,7 +10442,6 @@ impl ::core::fmt::Debug for MapScene {
 }
 unsafe impl ::windows::core::RuntimeType for MapScene {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Controls.Maps.MapScene;{8bba10a9-50e7-482c-9789-c688b178ac24})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -10212,6 +10542,7 @@ impl ::core::default::Default for MapStyle {
 }
 unsafe impl ::windows::core::Abi for MapStyle {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MapStyle {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10220,7 +10551,6 @@ impl ::core::fmt::Debug for MapStyle {
 }
 unsafe impl ::windows::core::RuntimeType for MapStyle {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Xaml.Controls.Maps.MapStyle;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -10299,11 +10629,6 @@ impl MapStyleSheet {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for MapStyleSheet {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MapStyleSheet {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10317,7 +10642,6 @@ impl ::core::fmt::Debug for MapStyleSheet {
 }
 unsafe impl ::windows::core::RuntimeType for MapStyleSheet {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Controls.Maps.MapStyleSheet;{ae54b2bf-8991-42ed-8d58-20473deede1d})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -10912,11 +11236,6 @@ impl MapTargetCameraChangedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for MapTargetCameraChangedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MapTargetCameraChangedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10930,7 +11249,6 @@ impl ::core::fmt::Debug for MapTargetCameraChangedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for MapTargetCameraChangedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Controls.Maps.MapTargetCameraChangedEventArgs;{dbf00472-e953-4fa8-97d0-ea86359057cf})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -11006,6 +11324,7 @@ impl ::core::default::Default for MapTileAnimationState {
 }
 unsafe impl ::windows::core::Abi for MapTileAnimationState {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MapTileAnimationState {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11014,7 +11333,6 @@ impl ::core::fmt::Debug for MapTileAnimationState {
 }
 unsafe impl ::windows::core::RuntimeType for MapTileAnimationState {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Xaml.Controls.Maps.MapTileAnimationState;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -11054,11 +11372,6 @@ impl MapTileBitmapRequest {
         }
     }
 }
-impl ::core::clone::Clone for MapTileBitmapRequest {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MapTileBitmapRequest {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11072,7 +11385,6 @@ impl ::core::fmt::Debug for MapTileBitmapRequest {
 }
 unsafe impl ::windows::core::RuntimeType for MapTileBitmapRequest {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Controls.Maps.MapTileBitmapRequest;{46733fbc-d89d-472b-b5f6-d7066b0584f4})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -11143,11 +11455,6 @@ impl MapTileBitmapRequestDeferral {
         unsafe { (::windows::core::Interface::vtable(this).Complete)(::core::mem::transmute_copy(this)).ok() }
     }
 }
-impl ::core::clone::Clone for MapTileBitmapRequestDeferral {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MapTileBitmapRequestDeferral {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11161,7 +11468,6 @@ impl ::core::fmt::Debug for MapTileBitmapRequestDeferral {
 }
 unsafe impl ::windows::core::RuntimeType for MapTileBitmapRequestDeferral {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Controls.Maps.MapTileBitmapRequestDeferral;{fe370542-a4ac-4efa-9665-0490b0cafdd2})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -11267,11 +11573,6 @@ impl MapTileBitmapRequestedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for MapTileBitmapRequestedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MapTileBitmapRequestedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11285,7 +11586,6 @@ impl ::core::fmt::Debug for MapTileBitmapRequestedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for MapTileBitmapRequestedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Controls.Maps.MapTileBitmapRequestedEventArgs;{337f691d-9b02-4aa2-8b1e-cc4d91719bf3})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -11364,11 +11664,6 @@ impl MapTileDataSource {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for MapTileDataSource {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MapTileDataSource {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11382,7 +11677,6 @@ impl ::core::fmt::Debug for MapTileDataSource {
 }
 unsafe impl ::windows::core::RuntimeType for MapTileDataSource {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Controls.Maps.MapTileDataSource;{c03d9f5e-be1f-4c69-9969-79467a513c38})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -11480,6 +11774,7 @@ impl ::core::default::Default for MapTileLayer {
 }
 unsafe impl ::windows::core::Abi for MapTileLayer {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MapTileLayer {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11488,7 +11783,6 @@ impl ::core::fmt::Debug for MapTileLayer {
 }
 unsafe impl ::windows::core::RuntimeType for MapTileLayer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Xaml.Controls.Maps.MapTileLayer;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -11906,11 +12200,6 @@ impl MapTileSource {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for MapTileSource {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MapTileSource {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11924,7 +12213,6 @@ impl ::core::fmt::Debug for MapTileSource {
 }
 unsafe impl ::windows::core::RuntimeType for MapTileSource {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Controls.Maps.MapTileSource;{88a76e4e-2fdf-4567-9255-1100519c8d62})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -12033,11 +12321,6 @@ impl MapTileUriRequest {
         }
     }
 }
-impl ::core::clone::Clone for MapTileUriRequest {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MapTileUriRequest {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12051,7 +12334,6 @@ impl ::core::fmt::Debug for MapTileUriRequest {
 }
 unsafe impl ::windows::core::RuntimeType for MapTileUriRequest {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Controls.Maps.MapTileUriRequest;{17402335-3127-45b8-87a7-99f87d4e2745})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -12122,11 +12404,6 @@ impl MapTileUriRequestDeferral {
         unsafe { (::windows::core::Interface::vtable(this).Complete)(::core::mem::transmute_copy(this)).ok() }
     }
 }
-impl ::core::clone::Clone for MapTileUriRequestDeferral {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MapTileUriRequestDeferral {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12140,7 +12417,6 @@ impl ::core::fmt::Debug for MapTileUriRequestDeferral {
 }
 unsafe impl ::windows::core::RuntimeType for MapTileUriRequestDeferral {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Controls.Maps.MapTileUriRequestDeferral;{c117ade0-bf3e-4c51-8faa-4b593cf68eb2})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -12246,11 +12522,6 @@ impl MapTileUriRequestedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for MapTileUriRequestedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MapTileUriRequestedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12264,7 +12535,6 @@ impl ::core::fmt::Debug for MapTileUriRequestedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for MapTileUriRequestedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Controls.Maps.MapTileUriRequestedEventArgs;{d2147b43-1bbf-4b98-8dd3-b7834e407e0d})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -12339,6 +12609,7 @@ impl ::core::default::Default for MapVisibleRegionKind {
 }
 unsafe impl ::windows::core::Abi for MapVisibleRegionKind {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MapVisibleRegionKind {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12347,7 +12618,6 @@ impl ::core::fmt::Debug for MapVisibleRegionKind {
 }
 unsafe impl ::windows::core::RuntimeType for MapVisibleRegionKind {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Xaml.Controls.Maps.MapVisibleRegionKind;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -12373,6 +12643,7 @@ impl ::core::default::Default for MapWatermarkMode {
 }
 unsafe impl ::windows::core::Abi for MapWatermarkMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MapWatermarkMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12381,7 +12652,6 @@ impl ::core::fmt::Debug for MapWatermarkMode {
 }
 unsafe impl ::windows::core::RuntimeType for MapWatermarkMode {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Xaml.Controls.Maps.MapWatermarkMode;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -12405,10 +12675,10 @@ impl ::core::fmt::Debug for MapZoomLevelRange {
 }
 unsafe impl ::windows::core::Abi for MapZoomLevelRange {
     type Abi = Self;
+    type DefaultType = Self;
 }
 unsafe impl ::windows::core::RuntimeType for MapZoomLevelRange {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"struct(Windows.UI.Xaml.Controls.Maps.MapZoomLevelRange;f8;f8)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -12526,11 +12796,6 @@ impl StreetsideExperience {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for StreetsideExperience {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for StreetsideExperience {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12544,7 +12809,6 @@ impl ::core::fmt::Debug for StreetsideExperience {
 }
 unsafe impl ::windows::core::RuntimeType for StreetsideExperience {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Controls.Maps.StreetsideExperience;{a558aec9-e30c-46c8-8116-484691675558})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -12673,11 +12937,6 @@ impl StreetsidePanorama {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for StreetsidePanorama {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for StreetsidePanorama {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12691,7 +12950,6 @@ impl ::core::fmt::Debug for StreetsidePanorama {
 }
 unsafe impl ::windows::core::RuntimeType for StreetsidePanorama {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Controls.Maps.StreetsidePanorama;{6fe00fd8-ad60-4664-b539-b1069f16c5af})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

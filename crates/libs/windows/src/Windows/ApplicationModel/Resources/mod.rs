@@ -6,6 +6,11 @@ pub mod Management;
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IResourceLoader(::windows::core::IUnknown);
+impl ::core::clone::Clone for IResourceLoader {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IResourceLoader {
     type Vtable = IResourceLoader_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x08524908_16ef_45ad_a602_293637d7e61a);
@@ -19,6 +24,11 @@ pub struct IResourceLoader_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IResourceLoader2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IResourceLoader2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IResourceLoader2 {
     type Vtable = IResourceLoader2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x10eb6ec6_8138_48c1_bc65_e1f14207367c);
@@ -35,6 +45,11 @@ pub struct IResourceLoader2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IResourceLoaderFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IResourceLoaderFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IResourceLoaderFactory {
     type Vtable = IResourceLoaderFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc33a3603_69dc_4285_a077_d5c0e47ccbe8);
@@ -48,6 +63,11 @@ pub struct IResourceLoaderFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IResourceLoaderStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IResourceLoaderStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IResourceLoaderStatics {
     type Vtable = IResourceLoaderStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xbf777ce1_19c8_49c2_953c_47e9227b334e);
@@ -64,6 +84,11 @@ pub struct IResourceLoaderStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IResourceLoaderStatics2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IResourceLoaderStatics2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IResourceLoaderStatics2 {
     type Vtable = IResourceLoaderStatics2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x0cc04141_6466_4989_9494_0b82dfc53f1f);
@@ -80,6 +105,11 @@ pub struct IResourceLoaderStatics2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IResourceLoaderStatics3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IResourceLoaderStatics3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IResourceLoaderStatics3 {
     type Vtable = IResourceLoaderStatics3_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x64609dfb_64ac_491b_8100_0e558d61c1d0);
@@ -96,6 +126,11 @@ pub struct IResourceLoaderStatics3_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IResourceLoaderStatics4(::windows::core::IUnknown);
+impl ::core::clone::Clone for IResourceLoaderStatics4 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IResourceLoaderStatics4 {
     type Vtable = IResourceLoaderStatics4_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9fb36c32_6c8c_4316_962e_909539b5c259);
@@ -218,11 +253,6 @@ impl ResourceLoader {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for ResourceLoader {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ResourceLoader {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -236,7 +266,6 @@ impl ::core::fmt::Debug for ResourceLoader {
 }
 unsafe impl ::windows::core::RuntimeType for ResourceLoader {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Resources.ResourceLoader;{08524908-16ef-45ad-a602-293637d7e61a})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

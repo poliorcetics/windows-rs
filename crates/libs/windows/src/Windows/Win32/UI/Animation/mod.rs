@@ -2,6 +2,11 @@
 #[doc = "*Required features: `\"Win32_UI_Animation\"`*"]
 #[repr(transparent)]
 pub struct IUIAnimationInterpolator(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAnimationInterpolator {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAnimationInterpolator {
     #[doc = "*Required features: `\"Win32_UI_Animation\"`*"]
     pub unsafe fn SetInitialValueAndVelocity(&self, initialvalue: f64, initialvelocity: f64) -> ::windows::core::Result<()> {
@@ -56,11 +61,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAn
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAnimationInterpolator {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAnimationInterpolator {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -91,6 +91,11 @@ pub struct IUIAnimationInterpolator_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Animation\"`*"]
 #[repr(transparent)]
 pub struct IUIAnimationInterpolator2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAnimationInterpolator2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAnimationInterpolator2 {
     #[doc = "*Required features: `\"Win32_UI_Animation\"`*"]
     pub unsafe fn GetDimension(&self) -> ::windows::core::Result<u32> {
@@ -151,11 +156,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAn
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAnimationInterpolator2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAnimationInterpolator2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -188,6 +188,11 @@ pub struct IUIAnimationInterpolator2_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Animation\"`*"]
 #[repr(transparent)]
 pub struct IUIAnimationLoopIterationChangeHandler2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAnimationLoopIterationChangeHandler2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAnimationLoopIterationChangeHandler2 {
     #[doc = "*Required features: `\"Win32_UI_Animation\"`*"]
     pub unsafe fn OnLoopIterationChanged<'a, Param0: ::windows::core::IntoParam<'a, IUIAnimationStoryboard2>>(&self, storyboard: Param0, id: usize, newiterationcount: u32, olditerationcount: u32) -> ::windows::core::Result<()> {
@@ -214,11 +219,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAn
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAnimationLoopIterationChangeHandler2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAnimationLoopIterationChangeHandler2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -243,6 +243,11 @@ pub struct IUIAnimationLoopIterationChangeHandler2_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Animation\"`*"]
 #[repr(transparent)]
 pub struct IUIAnimationManager(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAnimationManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAnimationManager {
     #[doc = "*Required features: `\"Win32_UI_Animation\"`*"]
     pub unsafe fn CreateAnimationVariable(&self, initialvalue: f64) -> ::windows::core::Result<IUIAnimationVariable> {
@@ -347,11 +352,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAn
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAnimationManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAnimationManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -394,6 +394,11 @@ pub struct IUIAnimationManager_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Animation\"`*"]
 #[repr(transparent)]
 pub struct IUIAnimationManager2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAnimationManager2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAnimationManager2 {
     #[doc = "*Required features: `\"Win32_UI_Animation\"`*"]
     pub unsafe fn CreateAnimationVectorVariable(&self, initialvalue: &[f64]) -> ::windows::core::Result<IUIAnimationVariable2> {
@@ -509,11 +514,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAn
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAnimationManager2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAnimationManager2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -561,6 +561,11 @@ pub struct IUIAnimationManager2_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Animation\"`*"]
 #[repr(transparent)]
 pub struct IUIAnimationManagerEventHandler(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAnimationManagerEventHandler {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAnimationManagerEventHandler {
     #[doc = "*Required features: `\"Win32_UI_Animation\"`*"]
     pub unsafe fn OnManagerStatusChanged(&self, newstatus: UI_ANIMATION_MANAGER_STATUS, previousstatus: UI_ANIMATION_MANAGER_STATUS) -> ::windows::core::Result<()> {
@@ -587,11 +592,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAn
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAnimationManagerEventHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAnimationManagerEventHandler {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -616,6 +616,11 @@ pub struct IUIAnimationManagerEventHandler_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Animation\"`*"]
 #[repr(transparent)]
 pub struct IUIAnimationManagerEventHandler2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAnimationManagerEventHandler2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAnimationManagerEventHandler2 {
     #[doc = "*Required features: `\"Win32_UI_Animation\"`*"]
     pub unsafe fn OnManagerStatusChanged(&self, newstatus: UI_ANIMATION_MANAGER_STATUS, previousstatus: UI_ANIMATION_MANAGER_STATUS) -> ::windows::core::Result<()> {
@@ -642,11 +647,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAn
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAnimationManagerEventHandler2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAnimationManagerEventHandler2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -671,6 +671,11 @@ pub struct IUIAnimationManagerEventHandler2_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Animation\"`*"]
 #[repr(transparent)]
 pub struct IUIAnimationPrimitiveInterpolation(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAnimationPrimitiveInterpolation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAnimationPrimitiveInterpolation {
     #[doc = "*Required features: `\"Win32_UI_Animation\"`*"]
     pub unsafe fn AddCubic(&self, dimension: u32, beginoffset: f64, constantcoefficient: f32, linearcoefficient: f32, quadraticcoefficient: f32, cubiccoefficient: f32) -> ::windows::core::Result<()> {
@@ -701,11 +706,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAn
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAnimationPrimitiveInterpolation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAnimationPrimitiveInterpolation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -731,6 +731,11 @@ pub struct IUIAnimationPrimitiveInterpolation_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Animation\"`*"]
 #[repr(transparent)]
 pub struct IUIAnimationPriorityComparison(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAnimationPriorityComparison {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAnimationPriorityComparison {
     #[doc = "*Required features: `\"Win32_UI_Animation\"`*"]
     pub unsafe fn HasPriority<'a, Param0: ::windows::core::IntoParam<'a, IUIAnimationStoryboard>, Param1: ::windows::core::IntoParam<'a, IUIAnimationStoryboard>>(&self, scheduledstoryboard: Param0, newstoryboard: Param1, priorityeffect: UI_ANIMATION_PRIORITY_EFFECT) -> ::windows::core::Result<()> {
@@ -757,11 +762,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAn
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAnimationPriorityComparison {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAnimationPriorityComparison {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -786,6 +786,11 @@ pub struct IUIAnimationPriorityComparison_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Animation\"`*"]
 #[repr(transparent)]
 pub struct IUIAnimationPriorityComparison2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAnimationPriorityComparison2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAnimationPriorityComparison2 {
     #[doc = "*Required features: `\"Win32_UI_Animation\"`*"]
     pub unsafe fn HasPriority<'a, Param0: ::windows::core::IntoParam<'a, IUIAnimationStoryboard2>, Param1: ::windows::core::IntoParam<'a, IUIAnimationStoryboard2>>(&self, scheduledstoryboard: Param0, newstoryboard: Param1, priorityeffect: UI_ANIMATION_PRIORITY_EFFECT) -> ::windows::core::Result<()> {
@@ -812,11 +817,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAn
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAnimationPriorityComparison2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAnimationPriorityComparison2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -841,6 +841,11 @@ pub struct IUIAnimationPriorityComparison2_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Animation\"`*"]
 #[repr(transparent)]
 pub struct IUIAnimationStoryboard(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAnimationStoryboard {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAnimationStoryboard {
     #[doc = "*Required features: `\"Win32_UI_Animation\"`*"]
     pub unsafe fn AddTransition<'a, Param0: ::windows::core::IntoParam<'a, IUIAnimationVariable>, Param1: ::windows::core::IntoParam<'a, IUIAnimationTransition>>(&self, variable: Param0, transition: Param1) -> ::windows::core::Result<()> {
@@ -936,11 +941,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAn
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAnimationStoryboard {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAnimationStoryboard {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -981,6 +981,11 @@ pub struct IUIAnimationStoryboard_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Animation\"`*"]
 #[repr(transparent)]
 pub struct IUIAnimationStoryboard2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAnimationStoryboard2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAnimationStoryboard2 {
     #[doc = "*Required features: `\"Win32_UI_Animation\"`*"]
     pub unsafe fn AddTransition<'a, Param0: ::windows::core::IntoParam<'a, IUIAnimationVariable2>, Param1: ::windows::core::IntoParam<'a, IUIAnimationTransition2>>(&self, variable: Param0, transition: Param1) -> ::windows::core::Result<()> {
@@ -1082,11 +1087,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAn
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAnimationStoryboard2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAnimationStoryboard2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1134,6 +1134,11 @@ pub struct IUIAnimationStoryboard2_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Animation\"`*"]
 #[repr(transparent)]
 pub struct IUIAnimationStoryboardEventHandler(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAnimationStoryboardEventHandler {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAnimationStoryboardEventHandler {
     #[doc = "*Required features: `\"Win32_UI_Animation\"`*"]
     pub unsafe fn OnStoryboardStatusChanged<'a, Param0: ::windows::core::IntoParam<'a, IUIAnimationStoryboard>>(&self, storyboard: Param0, newstatus: UI_ANIMATION_STORYBOARD_STATUS, previousstatus: UI_ANIMATION_STORYBOARD_STATUS) -> ::windows::core::Result<()> {
@@ -1164,11 +1169,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAn
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAnimationStoryboardEventHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAnimationStoryboardEventHandler {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1194,6 +1194,11 @@ pub struct IUIAnimationStoryboardEventHandler_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Animation\"`*"]
 #[repr(transparent)]
 pub struct IUIAnimationStoryboardEventHandler2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAnimationStoryboardEventHandler2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAnimationStoryboardEventHandler2 {
     #[doc = "*Required features: `\"Win32_UI_Animation\"`*"]
     pub unsafe fn OnStoryboardStatusChanged<'a, Param0: ::windows::core::IntoParam<'a, IUIAnimationStoryboard2>>(&self, storyboard: Param0, newstatus: UI_ANIMATION_STORYBOARD_STATUS, previousstatus: UI_ANIMATION_STORYBOARD_STATUS) -> ::windows::core::Result<()> {
@@ -1224,11 +1229,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAn
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAnimationStoryboardEventHandler2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAnimationStoryboardEventHandler2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1254,6 +1254,11 @@ pub struct IUIAnimationStoryboardEventHandler2_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Animation\"`*"]
 #[repr(transparent)]
 pub struct IUIAnimationTimer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAnimationTimer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAnimationTimer {
     #[doc = "*Required features: `\"Win32_UI_Animation\"`*"]
     pub unsafe fn SetTimerUpdateHandler<'a, Param0: ::windows::core::IntoParam<'a, IUIAnimationTimerUpdateHandler>>(&self, updatehandler: Param0, idlebehavior: UI_ANIMATION_IDLE_BEHAVIOR) -> ::windows::core::Result<()> {
@@ -1305,11 +1310,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAn
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAnimationTimer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAnimationTimer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1340,6 +1340,11 @@ pub struct IUIAnimationTimer_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Animation\"`*"]
 #[repr(transparent)]
 pub struct IUIAnimationTimerClientEventHandler(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAnimationTimerClientEventHandler {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAnimationTimerClientEventHandler {
     #[doc = "*Required features: `\"Win32_UI_Animation\"`*"]
     pub unsafe fn OnTimerClientStatusChanged(&self, newstatus: UI_ANIMATION_TIMER_CLIENT_STATUS, previousstatus: UI_ANIMATION_TIMER_CLIENT_STATUS) -> ::windows::core::Result<()> {
@@ -1366,11 +1371,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAn
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAnimationTimerClientEventHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAnimationTimerClientEventHandler {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1395,6 +1395,11 @@ pub struct IUIAnimationTimerClientEventHandler_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Animation\"`*"]
 #[repr(transparent)]
 pub struct IUIAnimationTimerEventHandler(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAnimationTimerEventHandler {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAnimationTimerEventHandler {
     #[doc = "*Required features: `\"Win32_UI_Animation\"`*"]
     pub unsafe fn OnPreUpdate(&self) -> ::windows::core::Result<()> {
@@ -1429,11 +1434,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAn
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAnimationTimerEventHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAnimationTimerEventHandler {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1460,6 +1460,11 @@ pub struct IUIAnimationTimerEventHandler_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Animation\"`*"]
 #[repr(transparent)]
 pub struct IUIAnimationTimerUpdateHandler(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAnimationTimerUpdateHandler {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAnimationTimerUpdateHandler {
     #[doc = "*Required features: `\"Win32_UI_Animation\"`*"]
     pub unsafe fn OnUpdate(&self, timenow: f64) -> ::windows::core::Result<UI_ANIMATION_UPDATE_RESULT> {
@@ -1495,11 +1500,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAn
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAnimationTimerUpdateHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAnimationTimerUpdateHandler {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1526,6 +1526,11 @@ pub struct IUIAnimationTimerUpdateHandler_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Animation\"`*"]
 #[repr(transparent)]
 pub struct IUIAnimationTransition(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAnimationTransition {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAnimationTransition {
     #[doc = "*Required features: `\"Win32_UI_Animation\"`*"]
     pub unsafe fn SetInitialValue(&self, value: f64) -> ::windows::core::Result<()> {
@@ -1565,11 +1570,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAn
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAnimationTransition {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAnimationTransition {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1597,6 +1597,11 @@ pub struct IUIAnimationTransition_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Animation\"`*"]
 #[repr(transparent)]
 pub struct IUIAnimationTransition2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAnimationTransition2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAnimationTransition2 {
     #[doc = "*Required features: `\"Win32_UI_Animation\"`*"]
     pub unsafe fn GetDimension(&self) -> ::windows::core::Result<u32> {
@@ -1649,11 +1654,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAn
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAnimationTransition2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAnimationTransition2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1684,6 +1684,11 @@ pub struct IUIAnimationTransition2_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Animation\"`*"]
 #[repr(transparent)]
 pub struct IUIAnimationTransitionFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAnimationTransitionFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAnimationTransitionFactory {
     #[doc = "*Required features: `\"Win32_UI_Animation\"`*"]
     pub unsafe fn CreateTransition<'a, Param0: ::windows::core::IntoParam<'a, IUIAnimationInterpolator>>(&self, interpolator: Param0) -> ::windows::core::Result<IUIAnimationTransition> {
@@ -1711,11 +1716,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAn
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAnimationTransitionFactory {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAnimationTransitionFactory {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1740,6 +1740,11 @@ pub struct IUIAnimationTransitionFactory_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Animation\"`*"]
 #[repr(transparent)]
 pub struct IUIAnimationTransitionFactory2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAnimationTransitionFactory2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAnimationTransitionFactory2 {
     #[doc = "*Required features: `\"Win32_UI_Animation\"`*"]
     pub unsafe fn CreateTransition<'a, Param0: ::windows::core::IntoParam<'a, IUIAnimationInterpolator2>>(&self, interpolator: Param0) -> ::windows::core::Result<IUIAnimationTransition2> {
@@ -1767,11 +1772,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAn
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAnimationTransitionFactory2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAnimationTransitionFactory2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1796,6 +1796,11 @@ pub struct IUIAnimationTransitionFactory2_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Animation\"`*"]
 #[repr(transparent)]
 pub struct IUIAnimationTransitionLibrary(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAnimationTransitionLibrary {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAnimationTransitionLibrary {
     #[doc = "*Required features: `\"Win32_UI_Animation\"`*"]
     pub unsafe fn CreateInstantaneousTransition(&self, finalvalue: f64) -> ::windows::core::Result<IUIAnimationTransition> {
@@ -1878,11 +1883,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAn
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAnimationTransitionLibrary {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAnimationTransitionLibrary {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1918,6 +1918,11 @@ pub struct IUIAnimationTransitionLibrary_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Animation\"`*"]
 #[repr(transparent)]
 pub struct IUIAnimationTransitionLibrary2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAnimationTransitionLibrary2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAnimationTransitionLibrary2 {
     #[doc = "*Required features: `\"Win32_UI_Animation\"`*"]
     pub unsafe fn CreateInstantaneousTransition(&self, finalvalue: f64) -> ::windows::core::Result<IUIAnimationTransition2> {
@@ -2035,11 +2040,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAn
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAnimationTransitionLibrary2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAnimationTransitionLibrary2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2082,6 +2082,11 @@ pub struct IUIAnimationTransitionLibrary2_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Animation\"`*"]
 #[repr(transparent)]
 pub struct IUIAnimationVariable(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAnimationVariable {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAnimationVariable {
     #[doc = "*Required features: `\"Win32_UI_Animation\"`*"]
     pub unsafe fn GetValue(&self) -> ::windows::core::Result<f64> {
@@ -2167,11 +2172,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAn
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAnimationVariable {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAnimationVariable {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2209,6 +2209,11 @@ pub struct IUIAnimationVariable_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Animation\"`*"]
 #[repr(transparent)]
 pub struct IUIAnimationVariable2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAnimationVariable2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAnimationVariable2 {
     #[doc = "*Required features: `\"Win32_UI_Animation\"`*"]
     pub unsafe fn GetDimension(&self) -> ::windows::core::Result<u32> {
@@ -2347,11 +2352,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAn
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAnimationVariable2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAnimationVariable2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2413,6 +2413,11 @@ pub struct IUIAnimationVariable2_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Animation\"`*"]
 #[repr(transparent)]
 pub struct IUIAnimationVariableChangeHandler(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAnimationVariableChangeHandler {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAnimationVariableChangeHandler {
     #[doc = "*Required features: `\"Win32_UI_Animation\"`*"]
     pub unsafe fn OnValueChanged<'a, Param0: ::windows::core::IntoParam<'a, IUIAnimationStoryboard>, Param1: ::windows::core::IntoParam<'a, IUIAnimationVariable>>(&self, storyboard: Param0, variable: Param1, newvalue: f64, previousvalue: f64) -> ::windows::core::Result<()> {
@@ -2439,11 +2444,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAn
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAnimationVariableChangeHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAnimationVariableChangeHandler {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2468,6 +2468,11 @@ pub struct IUIAnimationVariableChangeHandler_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Animation\"`*"]
 #[repr(transparent)]
 pub struct IUIAnimationVariableChangeHandler2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAnimationVariableChangeHandler2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAnimationVariableChangeHandler2 {
     #[doc = "*Required features: `\"Win32_UI_Animation\"`*"]
     pub unsafe fn OnValueChanged<'a, Param0: ::windows::core::IntoParam<'a, IUIAnimationStoryboard2>, Param1: ::windows::core::IntoParam<'a, IUIAnimationVariable2>>(&self, storyboard: Param0, variable: Param1, newvalue: *const f64, previousvalue: *const f64, cdimension: u32) -> ::windows::core::Result<()> {
@@ -2494,11 +2499,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAn
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAnimationVariableChangeHandler2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAnimationVariableChangeHandler2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2523,6 +2523,11 @@ pub struct IUIAnimationVariableChangeHandler2_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Animation\"`*"]
 #[repr(transparent)]
 pub struct IUIAnimationVariableCurveChangeHandler2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAnimationVariableCurveChangeHandler2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAnimationVariableCurveChangeHandler2 {
     #[doc = "*Required features: `\"Win32_UI_Animation\"`*"]
     pub unsafe fn OnCurveChanged<'a, Param0: ::windows::core::IntoParam<'a, IUIAnimationVariable2>>(&self, variable: Param0) -> ::windows::core::Result<()> {
@@ -2549,11 +2554,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAn
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAnimationVariableCurveChangeHandler2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAnimationVariableCurveChangeHandler2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2578,6 +2578,11 @@ pub struct IUIAnimationVariableCurveChangeHandler2_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Animation\"`*"]
 #[repr(transparent)]
 pub struct IUIAnimationVariableIntegerChangeHandler(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAnimationVariableIntegerChangeHandler {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAnimationVariableIntegerChangeHandler {
     #[doc = "*Required features: `\"Win32_UI_Animation\"`*"]
     pub unsafe fn OnIntegerValueChanged<'a, Param0: ::windows::core::IntoParam<'a, IUIAnimationStoryboard>, Param1: ::windows::core::IntoParam<'a, IUIAnimationVariable>>(&self, storyboard: Param0, variable: Param1, newvalue: i32, previousvalue: i32) -> ::windows::core::Result<()> {
@@ -2604,11 +2609,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAn
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIAnimationVariableIntegerChangeHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIAnimationVariableIntegerChangeHandler {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2633,6 +2633,11 @@ pub struct IUIAnimationVariableIntegerChangeHandler_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Animation\"`*"]
 #[repr(transparent)]
 pub struct IUIAnimationVariableIntegerChangeHandler2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIAnimationVariableIntegerChangeHandler2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIAnimationVariableIntegerChangeHandler2 {
     #[doc = "*Required features: `\"Win32_UI_Animation\"`*"]
     pub unsafe fn OnIntegerValueChanged<'a, Param0: ::windows::core::IntoParam<'a, IUIAnimationStoryboard2>, Param1: ::windows::core::IntoParam<'a, IUIAnimationVariable2>>(&self, storyboard: Param0, variable: Param1, newvalue: *const i32, previousvalue: *const i32, cdimension: u32) -> ::windows::core::Result<()> {
@@ -2657,11 +2662,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IUIAnimat
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIAnimationVariableIntegerChangeHandler2 {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IUIAnimationVariableIntegerChangeHandler2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IUIAnimationVariableIntegerChangeHandler2 {
@@ -2719,6 +2719,7 @@ impl ::core::default::Default for UI_ANIMATION_DEPENDENCIES {
 }
 unsafe impl ::windows::core::Abi for UI_ANIMATION_DEPENDENCIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UI_ANIMATION_DEPENDENCIES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2774,6 +2775,7 @@ impl ::core::default::Default for UI_ANIMATION_IDLE_BEHAVIOR {
 }
 unsafe impl ::windows::core::Abi for UI_ANIMATION_IDLE_BEHAVIOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UI_ANIMATION_IDLE_BEHAVIOR {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2801,6 +2803,7 @@ impl ::core::fmt::Debug for UI_ANIMATION_KEYFRAME {
 }
 unsafe impl ::windows::core::Abi for UI_ANIMATION_KEYFRAME {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[doc = "*Required features: `\"Win32_UI_Animation\"`*"]
 #[repr(transparent)]
@@ -2823,6 +2826,7 @@ impl ::core::default::Default for UI_ANIMATION_MANAGER_STATUS {
 }
 unsafe impl ::windows::core::Abi for UI_ANIMATION_MANAGER_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UI_ANIMATION_MANAGER_STATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2852,6 +2856,7 @@ impl ::core::default::Default for UI_ANIMATION_MODE {
 }
 unsafe impl ::windows::core::Abi for UI_ANIMATION_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UI_ANIMATION_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2879,6 +2884,7 @@ impl ::core::default::Default for UI_ANIMATION_PRIORITY_EFFECT {
 }
 unsafe impl ::windows::core::Abi for UI_ANIMATION_PRIORITY_EFFECT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UI_ANIMATION_PRIORITY_EFFECT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2912,6 +2918,7 @@ impl ::core::default::Default for UI_ANIMATION_REPEAT_MODE {
 }
 unsafe impl ::windows::core::Abi for UI_ANIMATION_REPEAT_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UI_ANIMATION_REPEAT_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2941,6 +2948,7 @@ impl ::core::default::Default for UI_ANIMATION_ROUNDING_MODE {
 }
 unsafe impl ::windows::core::Abi for UI_ANIMATION_ROUNDING_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UI_ANIMATION_ROUNDING_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2974,6 +2982,7 @@ impl ::core::default::Default for UI_ANIMATION_SCHEDULING_RESULT {
 }
 unsafe impl ::windows::core::Abi for UI_ANIMATION_SCHEDULING_RESULT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UI_ANIMATION_SCHEDULING_RESULT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3005,6 +3014,7 @@ impl ::core::default::Default for UI_ANIMATION_SLOPE {
 }
 unsafe impl ::windows::core::Abi for UI_ANIMATION_SLOPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UI_ANIMATION_SLOPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3044,6 +3054,7 @@ impl ::core::default::Default for UI_ANIMATION_STORYBOARD_STATUS {
 }
 unsafe impl ::windows::core::Abi for UI_ANIMATION_STORYBOARD_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UI_ANIMATION_STORYBOARD_STATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3071,6 +3082,7 @@ impl ::core::default::Default for UI_ANIMATION_TIMER_CLIENT_STATUS {
 }
 unsafe impl ::windows::core::Abi for UI_ANIMATION_TIMER_CLIENT_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UI_ANIMATION_TIMER_CLIENT_STATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3098,6 +3110,7 @@ impl ::core::default::Default for UI_ANIMATION_UPDATE_RESULT {
 }
 unsafe impl ::windows::core::Abi for UI_ANIMATION_UPDATE_RESULT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UI_ANIMATION_UPDATE_RESULT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

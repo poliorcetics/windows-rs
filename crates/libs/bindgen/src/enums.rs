@@ -122,6 +122,7 @@ pub fn gen(def: &TypeDef, gen: &Gen) -> TokenStream {
             #features
             unsafe impl ::windows::core::Abi for #ident {
                 type Abi = Self;
+                type DefaultType = Self;
             }
             #features
             impl ::core::fmt::Debug for #ident {
@@ -174,7 +175,6 @@ pub fn gen(def: &TypeDef, gen: &Gen) -> TokenStream {
                 #features
                 unsafe impl ::windows::core::RuntimeType for #ident {
                     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(#signature);
-                    type DefaultType = Self;
                     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
                         Ok(*from)
                     }

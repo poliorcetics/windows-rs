@@ -18,6 +18,7 @@ impl ::core::fmt::Debug for CAT_MEMBERINFO {
 }
 unsafe impl ::windows::core::Abi for CAT_MEMBERINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CAT_MEMBERINFO {
     fn eq(&self, other: &Self) -> bool {
@@ -49,6 +50,7 @@ impl ::core::fmt::Debug for CAT_MEMBERINFO2 {
 }
 unsafe impl ::windows::core::Abi for CAT_MEMBERINFO2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CAT_MEMBERINFO2 {
     fn eq(&self, other: &Self) -> bool {
@@ -94,6 +96,7 @@ impl ::core::fmt::Debug for CAT_NAMEVALUE {
 #[cfg(feature = "Win32_Security_Cryptography")]
 unsafe impl ::windows::core::Abi for CAT_NAMEVALUE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Security_Cryptography")]
 impl ::core::cmp::PartialEq for CAT_NAMEVALUE {
@@ -158,6 +161,7 @@ impl ::core::fmt::Debug for CONFIG_CI_PROV_INFO {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography"))]
 unsafe impl ::windows::core::Abi for CONFIG_CI_PROV_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography"))]
 impl ::core::cmp::PartialEq for CONFIG_CI_PROV_INFO {
@@ -199,6 +203,7 @@ impl ::core::fmt::Debug for CONFIG_CI_PROV_INFO_RESULT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for CONFIG_CI_PROV_INFO_RESULT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for CONFIG_CI_PROV_INFO_RESULT {
@@ -289,6 +294,7 @@ impl ::core::fmt::Debug for CRYPT_PROVIDER_CERT {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography"))]
 unsafe impl ::windows::core::Abi for CRYPT_PROVIDER_CERT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography"))]
 impl ::core::cmp::PartialEq for CRYPT_PROVIDER_CERT {
@@ -353,6 +359,7 @@ impl ::core::clone::Clone for CRYPT_PROVIDER_DATA {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography_Catalog", feature = "Win32_Security_Cryptography_Sip"))]
 unsafe impl ::windows::core::Abi for CRYPT_PROVIDER_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography_Catalog", feature = "Win32_Security_Cryptography_Sip"))]
 impl ::core::cmp::PartialEq for CRYPT_PROVIDER_DATA {
@@ -385,6 +392,7 @@ impl ::core::clone::Clone for CRYPT_PROVIDER_DATA_0 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography_Catalog", feature = "Win32_Security_Cryptography_Sip"))]
 unsafe impl ::windows::core::Abi for CRYPT_PROVIDER_DATA_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography_Catalog", feature = "Win32_Security_Cryptography_Sip"))]
 impl ::core::cmp::PartialEq for CRYPT_PROVIDER_DATA_0 {
@@ -421,6 +429,7 @@ impl ::core::fmt::Debug for CRYPT_PROVIDER_DEFUSAGE {
 }
 unsafe impl ::windows::core::Abi for CRYPT_PROVIDER_DEFUSAGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CRYPT_PROVIDER_DEFUSAGE {
     fn eq(&self, other: &Self) -> bool {
@@ -488,6 +497,7 @@ impl ::core::fmt::Debug for CRYPT_PROVIDER_FUNCTIONS {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography_Catalog", feature = "Win32_Security_Cryptography_Sip"))]
 unsafe impl ::windows::core::Abi for CRYPT_PROVIDER_FUNCTIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography_Catalog", feature = "Win32_Security_Cryptography_Sip"))]
 impl ::core::cmp::PartialEq for CRYPT_PROVIDER_FUNCTIONS {
@@ -524,6 +534,7 @@ impl ::core::fmt::Debug for CRYPT_PROVIDER_PRIVDATA {
 }
 unsafe impl ::windows::core::Abi for CRYPT_PROVIDER_PRIVDATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CRYPT_PROVIDER_PRIVDATA {
     fn eq(&self, other: &Self) -> bool {
@@ -558,6 +569,7 @@ impl ::core::fmt::Debug for CRYPT_PROVIDER_REGDEFUSAGE {
 }
 unsafe impl ::windows::core::Abi for CRYPT_PROVIDER_REGDEFUSAGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CRYPT_PROVIDER_REGDEFUSAGE {
     fn eq(&self, other: &Self) -> bool {
@@ -602,6 +614,7 @@ impl ::core::fmt::Debug for CRYPT_PROVIDER_SGNR {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography"))]
 unsafe impl ::windows::core::Abi for CRYPT_PROVIDER_SGNR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography"))]
 impl ::core::cmp::PartialEq for CRYPT_PROVIDER_SGNR {
@@ -664,6 +677,7 @@ impl ::core::fmt::Debug for CRYPT_PROVIDER_SIGSTATE {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography"))]
 unsafe impl ::windows::core::Abi for CRYPT_PROVIDER_SIGSTATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography"))]
 impl ::core::cmp::PartialEq for CRYPT_PROVIDER_SIGSTATE {
@@ -715,6 +729,7 @@ impl ::core::fmt::Debug for CRYPT_PROVUI_DATA {
 }
 unsafe impl ::windows::core::Abi for CRYPT_PROVUI_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CRYPT_PROVUI_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -755,6 +770,7 @@ impl ::core::fmt::Debug for CRYPT_PROVUI_FUNCS {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography_Catalog", feature = "Win32_Security_Cryptography_Sip"))]
 unsafe impl ::windows::core::Abi for CRYPT_PROVUI_FUNCS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography_Catalog", feature = "Win32_Security_Cryptography_Sip"))]
 impl ::core::cmp::PartialEq for CRYPT_PROVUI_FUNCS {
@@ -806,6 +822,7 @@ impl ::core::fmt::Debug for CRYPT_REGISTER_ACTIONID {
 }
 unsafe impl ::windows::core::Abi for CRYPT_REGISTER_ACTIONID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CRYPT_REGISTER_ACTIONID {
     fn eq(&self, other: &Self) -> bool {
@@ -838,6 +855,7 @@ impl ::core::fmt::Debug for CRYPT_TRUST_REG_ENTRY {
 }
 unsafe impl ::windows::core::Abi for CRYPT_TRUST_REG_ENTRY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CRYPT_TRUST_REG_ENTRY {
     fn eq(&self, other: &Self) -> bool {
@@ -903,6 +921,7 @@ impl ::core::fmt::Debug for DRIVER_VER_INFO {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography"))]
 unsafe impl ::windows::core::Abi for DRIVER_VER_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography"))]
 impl ::core::cmp::PartialEq for DRIVER_VER_INFO {
@@ -937,6 +956,7 @@ impl ::core::fmt::Debug for DRIVER_VER_MAJORMINOR {
 }
 unsafe impl ::windows::core::Abi for DRIVER_VER_MAJORMINOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DRIVER_VER_MAJORMINOR {
     fn eq(&self, other: &Self) -> bool {
@@ -983,6 +1003,7 @@ impl ::core::fmt::Debug for INTENT_TO_SEAL_ATTRIBUTE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for INTENT_TO_SEAL_ATTRIBUTE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for INTENT_TO_SEAL_ATTRIBUTE {
@@ -1117,6 +1138,7 @@ impl ::core::fmt::Debug for PROVDATA_SIP {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography_Catalog", feature = "Win32_Security_Cryptography_Sip"))]
 unsafe impl ::windows::core::Abi for PROVDATA_SIP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography_Catalog", feature = "Win32_Security_Cryptography_Sip"))]
 impl ::core::cmp::PartialEq for PROVDATA_SIP {
@@ -1158,6 +1180,7 @@ impl ::core::fmt::Debug for SEALING_SIGNATURE_ATTRIBUTE {
 #[cfg(feature = "Win32_Security_Cryptography")]
 unsafe impl ::windows::core::Abi for SEALING_SIGNATURE_ATTRIBUTE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Security_Cryptography")]
 impl ::core::cmp::PartialEq for SEALING_SIGNATURE_ATTRIBUTE {
@@ -1200,6 +1223,7 @@ impl ::core::fmt::Debug for SEALING_TIMESTAMP_ATTRIBUTE {
 #[cfg(feature = "Win32_Security_Cryptography")]
 unsafe impl ::windows::core::Abi for SEALING_TIMESTAMP_ATTRIBUTE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Security_Cryptography")]
 impl ::core::cmp::PartialEq for SEALING_TIMESTAMP_ATTRIBUTE {
@@ -1257,6 +1281,7 @@ impl ::core::fmt::Debug for SPC_FINANCIAL_CRITERIA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SPC_FINANCIAL_CRITERIA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for SPC_FINANCIAL_CRITERIA {
@@ -1305,6 +1330,7 @@ impl ::core::fmt::Debug for SPC_IMAGE {
 #[cfg(feature = "Win32_Security_Cryptography")]
 unsafe impl ::windows::core::Abi for SPC_IMAGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Security_Cryptography")]
 impl ::core::cmp::PartialEq for SPC_IMAGE {
@@ -1345,6 +1371,7 @@ impl ::core::fmt::Debug for SPC_INDIRECT_DATA_CONTENT {
 #[cfg(feature = "Win32_Security_Cryptography")]
 unsafe impl ::windows::core::Abi for SPC_INDIRECT_DATA_CONTENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Security_Cryptography")]
 impl ::core::cmp::PartialEq for SPC_INDIRECT_DATA_CONTENT {
@@ -1388,6 +1415,7 @@ impl ::core::clone::Clone for SPC_LINK {
 #[cfg(feature = "Win32_Security_Cryptography")]
 unsafe impl ::windows::core::Abi for SPC_LINK {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Security_Cryptography")]
 impl ::core::cmp::PartialEq for SPC_LINK {
@@ -1422,6 +1450,7 @@ impl ::core::clone::Clone for SPC_LINK_0 {
 #[cfg(feature = "Win32_Security_Cryptography")]
 unsafe impl ::windows::core::Abi for SPC_LINK_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Security_Cryptography")]
 impl ::core::cmp::PartialEq for SPC_LINK_0 {
@@ -1473,6 +1502,7 @@ impl ::core::fmt::Debug for SPC_PE_IMAGE_DATA {
 #[cfg(feature = "Win32_Security_Cryptography")]
 unsafe impl ::windows::core::Abi for SPC_PE_IMAGE_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Security_Cryptography")]
 impl ::core::cmp::PartialEq for SPC_PE_IMAGE_DATA {
@@ -1524,6 +1554,7 @@ impl ::core::fmt::Debug for SPC_SERIALIZED_OBJECT {
 #[cfg(feature = "Win32_Security_Cryptography")]
 unsafe impl ::windows::core::Abi for SPC_SERIALIZED_OBJECT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Security_Cryptography")]
 impl ::core::cmp::PartialEq for SPC_SERIALIZED_OBJECT {
@@ -1563,6 +1594,7 @@ impl ::core::fmt::Debug for SPC_SIGINFO {
 }
 unsafe impl ::windows::core::Abi for SPC_SIGINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SPC_SIGINFO {
     fn eq(&self, other: &Self) -> bool {
@@ -1605,6 +1637,7 @@ impl ::core::fmt::Debug for SPC_SP_AGENCY_INFO {
 #[cfg(feature = "Win32_Security_Cryptography")]
 unsafe impl ::windows::core::Abi for SPC_SP_AGENCY_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Security_Cryptography")]
 impl ::core::cmp::PartialEq for SPC_SP_AGENCY_INFO {
@@ -1649,6 +1682,7 @@ impl ::core::fmt::Debug for SPC_SP_OPUS_INFO {
 #[cfg(feature = "Win32_Security_Cryptography")]
 unsafe impl ::windows::core::Abi for SPC_SP_OPUS_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Security_Cryptography")]
 impl ::core::cmp::PartialEq for SPC_SP_OPUS_INFO {
@@ -1687,6 +1721,7 @@ impl ::core::fmt::Debug for SPC_STATEMENT_TYPE {
 }
 unsafe impl ::windows::core::Abi for SPC_STATEMENT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SPC_STATEMENT_TYPE {
     fn eq(&self, other: &Self) -> bool {
@@ -1809,6 +1844,7 @@ impl ::core::fmt::Debug for WINTRUST_BLOB_INFO {
 }
 unsafe impl ::windows::core::Abi for WINTRUST_BLOB_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINTRUST_BLOB_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -1864,6 +1900,7 @@ impl ::core::fmt::Debug for WINTRUST_CATALOG_INFO {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography"))]
 unsafe impl ::windows::core::Abi for WINTRUST_CATALOG_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography"))]
 impl ::core::cmp::PartialEq for WINTRUST_CATALOG_INFO {
@@ -1908,6 +1945,7 @@ impl ::core::fmt::Debug for WINTRUST_CERT_INFO {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography"))]
 unsafe impl ::windows::core::Abi for WINTRUST_CERT_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography"))]
 impl ::core::cmp::PartialEq for WINTRUST_CERT_INFO {
@@ -1954,6 +1992,7 @@ impl ::core::clone::Clone for WINTRUST_DATA {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography"))]
 unsafe impl ::windows::core::Abi for WINTRUST_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography"))]
 impl ::core::cmp::PartialEq for WINTRUST_DATA {
@@ -1990,6 +2029,7 @@ impl ::core::clone::Clone for WINTRUST_DATA_0 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography"))]
 unsafe impl ::windows::core::Abi for WINTRUST_DATA_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography"))]
 impl ::core::cmp::PartialEq for WINTRUST_DATA_0 {
@@ -2050,6 +2090,7 @@ impl ::core::default::Default for WINTRUST_DATA_PROVIDER_FLAGS {
 }
 unsafe impl ::windows::core::Abi for WINTRUST_DATA_PROVIDER_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WINTRUST_DATA_PROVIDER_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2105,6 +2146,7 @@ impl ::core::default::Default for WINTRUST_DATA_REVOCATION_CHECKS {
 }
 unsafe impl ::windows::core::Abi for WINTRUST_DATA_REVOCATION_CHECKS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WINTRUST_DATA_REVOCATION_CHECKS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2138,6 +2180,7 @@ impl ::core::default::Default for WINTRUST_DATA_STATE_ACTION {
 }
 unsafe impl ::windows::core::Abi for WINTRUST_DATA_STATE_ACTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WINTRUST_DATA_STATE_ACTION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2169,6 +2212,7 @@ impl ::core::default::Default for WINTRUST_DATA_UICHOICE {
 }
 unsafe impl ::windows::core::Abi for WINTRUST_DATA_UICHOICE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WINTRUST_DATA_UICHOICE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2196,6 +2240,7 @@ impl ::core::default::Default for WINTRUST_DATA_UICONTEXT {
 }
 unsafe impl ::windows::core::Abi for WINTRUST_DATA_UICONTEXT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WINTRUST_DATA_UICONTEXT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2229,6 +2274,7 @@ impl ::core::default::Default for WINTRUST_DATA_UNION_CHOICE {
 }
 unsafe impl ::windows::core::Abi for WINTRUST_DATA_UNION_CHOICE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WINTRUST_DATA_UNION_CHOICE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2261,6 +2307,7 @@ impl ::core::fmt::Debug for WINTRUST_FILE_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WINTRUST_FILE_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WINTRUST_FILE_INFO {
@@ -2297,6 +2344,7 @@ impl ::core::default::Default for WINTRUST_GET_DEFAULT_FOR_USAGE_ACTION {
 }
 unsafe impl ::windows::core::Abi for WINTRUST_GET_DEFAULT_FOR_USAGE_ACTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WINTRUST_GET_DEFAULT_FOR_USAGE_ACTION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2350,6 +2398,7 @@ impl ::core::default::Default for WINTRUST_POLICY_FLAGS {
 }
 unsafe impl ::windows::core::Abi for WINTRUST_POLICY_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WINTRUST_POLICY_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2411,6 +2460,7 @@ impl ::core::fmt::Debug for WINTRUST_SGNR_INFO {
 #[cfg(feature = "Win32_Security_Cryptography")]
 unsafe impl ::windows::core::Abi for WINTRUST_SGNR_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Security_Cryptography")]
 impl ::core::cmp::PartialEq for WINTRUST_SGNR_INFO {
@@ -2454,6 +2504,7 @@ impl ::core::fmt::Debug for WINTRUST_SIGNATURE_SETTINGS {
 #[cfg(feature = "Win32_Security_Cryptography")]
 unsafe impl ::windows::core::Abi for WINTRUST_SIGNATURE_SETTINGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Security_Cryptography")]
 impl ::core::cmp::PartialEq for WINTRUST_SIGNATURE_SETTINGS {
@@ -2490,6 +2541,7 @@ impl ::core::default::Default for WINTRUST_SIGNATURE_SETTINGS_FLAGS {
 }
 unsafe impl ::windows::core::Abi for WINTRUST_SIGNATURE_SETTINGS_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WINTRUST_SIGNATURE_SETTINGS_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2517,6 +2569,7 @@ impl ::core::fmt::Debug for WIN_CERTIFICATE {
 }
 unsafe impl ::windows::core::Abi for WIN_CERTIFICATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WIN_CERTIFICATE {
     fn eq(&self, other: &Self) -> bool {
@@ -2565,6 +2618,7 @@ impl ::core::fmt::Debug for WIN_SPUB_TRUSTED_PUBLISHER_DATA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WIN_SPUB_TRUSTED_PUBLISHER_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WIN_SPUB_TRUSTED_PUBLISHER_DATA {
@@ -2605,6 +2659,7 @@ impl ::core::fmt::Debug for WIN_TRUST_ACTDATA_CONTEXT_WITH_SUBJECT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WIN_TRUST_ACTDATA_CONTEXT_WITH_SUBJECT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WIN_TRUST_ACTDATA_CONTEXT_WITH_SUBJECT {
@@ -2639,6 +2694,7 @@ impl ::core::fmt::Debug for WIN_TRUST_ACTDATA_SUBJECT_ONLY {
 }
 unsafe impl ::windows::core::Abi for WIN_TRUST_ACTDATA_SUBJECT_ONLY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WIN_TRUST_ACTDATA_SUBJECT_ONLY {
     fn eq(&self, other: &Self) -> bool {
@@ -2675,6 +2731,7 @@ impl ::core::fmt::Debug for WIN_TRUST_SUBJECT_FILE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WIN_TRUST_SUBJECT_FILE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WIN_TRUST_SUBJECT_FILE {
@@ -2715,6 +2772,7 @@ impl ::core::fmt::Debug for WIN_TRUST_SUBJECT_FILE_AND_DISPLAY {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WIN_TRUST_SUBJECT_FILE_AND_DISPLAY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WIN_TRUST_SUBJECT_FILE_AND_DISPLAY {
@@ -2777,6 +2835,7 @@ impl ::core::clone::Clone for WTD_GENERIC_CHAIN_POLICY_CREATE_INFO {
 #[cfg(feature = "Win32_Security_Cryptography")]
 unsafe impl ::windows::core::Abi for WTD_GENERIC_CHAIN_POLICY_CREATE_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Security_Cryptography")]
 impl ::core::cmp::PartialEq for WTD_GENERIC_CHAIN_POLICY_CREATE_INFO {
@@ -2810,6 +2869,7 @@ impl ::core::clone::Clone for WTD_GENERIC_CHAIN_POLICY_CREATE_INFO_0 {
 #[cfg(feature = "Win32_Security_Cryptography")]
 unsafe impl ::windows::core::Abi for WTD_GENERIC_CHAIN_POLICY_CREATE_INFO_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Security_Cryptography")]
 impl ::core::cmp::PartialEq for WTD_GENERIC_CHAIN_POLICY_CREATE_INFO_0 {
@@ -2846,6 +2906,7 @@ impl ::core::clone::Clone for WTD_GENERIC_CHAIN_POLICY_DATA {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography_Catalog", feature = "Win32_Security_Cryptography_Sip"))]
 unsafe impl ::windows::core::Abi for WTD_GENERIC_CHAIN_POLICY_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography_Catalog", feature = "Win32_Security_Cryptography_Sip"))]
 impl ::core::cmp::PartialEq for WTD_GENERIC_CHAIN_POLICY_DATA {
@@ -2879,6 +2940,7 @@ impl ::core::clone::Clone for WTD_GENERIC_CHAIN_POLICY_DATA_0 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography_Catalog", feature = "Win32_Security_Cryptography_Sip"))]
 unsafe impl ::windows::core::Abi for WTD_GENERIC_CHAIN_POLICY_DATA_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography_Catalog", feature = "Win32_Security_Cryptography_Sip"))]
 impl ::core::cmp::PartialEq for WTD_GENERIC_CHAIN_POLICY_DATA_0 {
@@ -2917,6 +2979,7 @@ impl ::core::clone::Clone for WTD_GENERIC_CHAIN_POLICY_SIGNER_INFO {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography"))]
 unsafe impl ::windows::core::Abi for WTD_GENERIC_CHAIN_POLICY_SIGNER_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography"))]
 impl ::core::cmp::PartialEq for WTD_GENERIC_CHAIN_POLICY_SIGNER_INFO {
@@ -2950,6 +3013,7 @@ impl ::core::clone::Clone for WTD_GENERIC_CHAIN_POLICY_SIGNER_INFO_0 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography"))]
 unsafe impl ::windows::core::Abi for WTD_GENERIC_CHAIN_POLICY_SIGNER_INFO_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography"))]
 impl ::core::cmp::PartialEq for WTD_GENERIC_CHAIN_POLICY_SIGNER_INFO_0 {

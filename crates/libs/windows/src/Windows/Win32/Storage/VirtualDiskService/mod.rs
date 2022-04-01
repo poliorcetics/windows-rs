@@ -6,6 +6,11 @@ pub const GPT_PARTITION_NAME_LENGTH: u32 = 36u32;
 #[doc = "*Required features: `\"Win32_Storage_VirtualDiskService\"`*"]
 #[repr(transparent)]
 pub struct IEnumVdsObject(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnumVdsObject {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnumVdsObject {
     #[doc = "*Required features: `\"Win32_Storage_VirtualDiskService\"`*"]
     pub unsafe fn Next(&self, celt: u32, ppobjectarray: *mut ::core::option::Option<::windows::core::IUnknown>, pcfetched: *mut u32) -> ::windows::core::Result<()> {
@@ -45,11 +50,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnum
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnumVdsObject {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnumVdsObject {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -77,6 +77,11 @@ pub struct IEnumVdsObject_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_VirtualDiskService\"`*"]
 #[repr(transparent)]
 pub struct IVdsAdmin(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVdsAdmin {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IVdsAdmin {
     #[doc = "*Required features: `\"Win32_Storage_VirtualDiskService\"`*"]
     pub unsafe fn RegisterProvider<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::GUID>, Param1: ::windows::core::IntoParam<'a, ::windows::core::GUID>, Param2: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param4: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param5: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param6: ::windows::core::IntoParam<'a, ::windows::core::GUID>>(&self, providerid: Param0, providerclsid: Param1, pwszname: Param2, r#type: VDS_PROVIDER_TYPE, pwszmachinename: Param4, pwszversion: Param5, guidversionid: Param6) -> ::windows::core::Result<()> {
@@ -107,11 +112,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IVdsA
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IVdsAdmin {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IVdsAdmin {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -137,6 +137,11 @@ pub struct IVdsAdmin_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_VirtualDiskService\"`*"]
 #[repr(transparent)]
 pub struct IVdsAdviseSink(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVdsAdviseSink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IVdsAdviseSink {
     #[doc = "*Required features: `\"Win32_Storage_VirtualDiskService\"`*"]
     pub unsafe fn OnNotify(&self, pnotificationarray: &[VDS_NOTIFICATION]) -> ::windows::core::Result<()> {
@@ -163,11 +168,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IVdsA
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IVdsAdviseSink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IVdsAdviseSink {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -192,6 +192,11 @@ pub struct IVdsAdviseSink_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_VirtualDiskService\"`*"]
 #[repr(transparent)]
 pub struct IVdsAsync(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVdsAsync {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IVdsAsync {
     #[doc = "*Required features: `\"Win32_Storage_VirtualDiskService\"`*"]
     pub unsafe fn Cancel(&self) -> ::windows::core::Result<()> {
@@ -226,11 +231,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IVdsA
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IVdsAsync {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IVdsAsync {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -257,6 +257,11 @@ pub struct IVdsAsync_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_VirtualDiskService\"`*"]
 #[repr(transparent)]
 pub struct IVdsController(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVdsController {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IVdsController {
     #[doc = "*Required features: `\"Win32_Storage_VirtualDiskService\"`*"]
     pub unsafe fn GetProperties(&self) -> ::windows::core::Result<VDS_CONTROLLER_PROP> {
@@ -315,11 +320,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IVdsC
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IVdsController {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IVdsController {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -351,6 +351,11 @@ pub struct IVdsController_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_VirtualDiskService\"`*"]
 #[repr(transparent)]
 pub struct IVdsControllerControllerPort(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVdsControllerControllerPort {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IVdsControllerControllerPort {
     #[doc = "*Required features: `\"Win32_Storage_VirtualDiskService\"`*"]
     pub unsafe fn QueryControllerPorts(&self) -> ::windows::core::Result<IEnumVdsObject> {
@@ -378,11 +383,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IVdsC
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IVdsControllerControllerPort {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IVdsControllerControllerPort {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -407,6 +407,11 @@ pub struct IVdsControllerControllerPort_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_VirtualDiskService\"`*"]
 #[repr(transparent)]
 pub struct IVdsControllerPort(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVdsControllerPort {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IVdsControllerPort {
     #[doc = "*Required features: `\"Win32_Storage_VirtualDiskService\"`*"]
     pub unsafe fn GetProperties(&self) -> ::windows::core::Result<VDS_PORT_PROP> {
@@ -452,11 +457,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IVdsC
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IVdsControllerPort {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IVdsControllerPort {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -485,6 +485,11 @@ pub struct IVdsControllerPort_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_VirtualDiskService\"`*"]
 #[repr(transparent)]
 pub struct IVdsDrive(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVdsDrive {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IVdsDrive {
     #[doc = "*Required features: `\"Win32_Storage_VirtualDiskService\"`*"]
     pub unsafe fn GetProperties(&self) -> ::windows::core::Result<VDS_DRIVE_PROP> {
@@ -534,11 +539,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IVdsD
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IVdsDrive {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IVdsDrive {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -571,6 +571,11 @@ pub struct IVdsDrive_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_VirtualDiskService\"`*"]
 #[repr(transparent)]
 pub struct IVdsDrive2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVdsDrive2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IVdsDrive2 {
     #[doc = "*Required features: `\"Win32_Storage_VirtualDiskService\"`*"]
     pub unsafe fn GetProperties2(&self) -> ::windows::core::Result<VDS_DRIVE_PROP2> {
@@ -598,11 +603,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IVdsD
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IVdsDrive2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IVdsDrive2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -627,6 +627,11 @@ pub struct IVdsDrive2_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_VirtualDiskService\"`*"]
 #[repr(transparent)]
 pub struct IVdsHwProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVdsHwProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IVdsHwProvider {
     #[doc = "*Required features: `\"Win32_Storage_VirtualDiskService\"`*"]
     pub unsafe fn QuerySubSystems(&self) -> ::windows::core::Result<IEnumVdsObject> {
@@ -662,11 +667,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IVdsH
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IVdsHwProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IVdsHwProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -693,6 +693,11 @@ pub struct IVdsHwProvider_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_VirtualDiskService\"`*"]
 #[repr(transparent)]
 pub struct IVdsHwProviderPrivate(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVdsHwProviderPrivate {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IVdsHwProviderPrivate {
     #[doc = "*Required features: `\"Win32_Storage_VirtualDiskService\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -719,11 +724,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IVdsHwPro
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IVdsHwProviderPrivate {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IVdsHwProviderPrivate {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IVdsHwProviderPrivate {
@@ -753,6 +753,11 @@ pub struct IVdsHwProviderPrivate_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_VirtualDiskService\"`*"]
 #[repr(transparent)]
 pub struct IVdsHwProviderPrivateMpio(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVdsHwProviderPrivateMpio {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IVdsHwProviderPrivateMpio {
     #[doc = "*Required features: `\"Win32_Storage_VirtualDiskService\"`*"]
     pub unsafe fn SetAllPathStatusesFromHbaPort<'a, Param0: ::windows::core::IntoParam<'a, VDS_HBAPORT_PROP>>(&self, hbaportprop: Param0, status: VDS_PATH_STATUS) -> ::windows::core::Result<()> {
@@ -779,11 +784,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IVdsH
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IVdsHwProviderPrivateMpio {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IVdsHwProviderPrivateMpio {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -808,6 +808,11 @@ pub struct IVdsHwProviderPrivateMpio_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_VirtualDiskService\"`*"]
 #[repr(transparent)]
 pub struct IVdsHwProviderStoragePools(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVdsHwProviderStoragePools {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IVdsHwProviderStoragePools {
     #[doc = "*Required features: `\"Win32_Storage_VirtualDiskService\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -848,11 +853,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IVdsH
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IVdsHwProviderStoragePools {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IVdsHwProviderStoragePools {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -888,6 +888,11 @@ pub struct IVdsHwProviderStoragePools_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_VirtualDiskService\"`*"]
 #[repr(transparent)]
 pub struct IVdsHwProviderType(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVdsHwProviderType {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IVdsHwProviderType {
     #[doc = "*Required features: `\"Win32_Storage_VirtualDiskService\"`*"]
     pub unsafe fn GetProviderType(&self) -> ::windows::core::Result<VDS_HWPROVIDER_TYPE> {
@@ -915,11 +920,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IVdsH
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IVdsHwProviderType {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IVdsHwProviderType {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -944,6 +944,11 @@ pub struct IVdsHwProviderType_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_VirtualDiskService\"`*"]
 #[repr(transparent)]
 pub struct IVdsHwProviderType2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVdsHwProviderType2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IVdsHwProviderType2 {
     #[doc = "*Required features: `\"Win32_Storage_VirtualDiskService\"`*"]
     pub unsafe fn GetProviderType2(&self) -> ::windows::core::Result<VDS_HWPROVIDER_TYPE> {
@@ -971,11 +976,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IVdsH
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IVdsHwProviderType2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IVdsHwProviderType2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1000,6 +1000,11 @@ pub struct IVdsHwProviderType2_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_VirtualDiskService\"`*"]
 #[repr(transparent)]
 pub struct IVdsIscsiPortal(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVdsIscsiPortal {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IVdsIscsiPortal {
     #[doc = "*Required features: `\"Win32_Storage_VirtualDiskService\"`*"]
     pub unsafe fn GetProperties(&self) -> ::windows::core::Result<VDS_ISCSI_PORTAL_PROP> {
@@ -1054,11 +1059,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IVdsI
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IVdsIscsiPortal {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IVdsIscsiPortal {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1089,6 +1089,11 @@ pub struct IVdsIscsiPortal_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_VirtualDiskService\"`*"]
 #[repr(transparent)]
 pub struct IVdsIscsiPortalGroup(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVdsIscsiPortalGroup {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IVdsIscsiPortalGroup {
     #[doc = "*Required features: `\"Win32_Storage_VirtualDiskService\"`*"]
     pub unsafe fn GetProperties(&self) -> ::windows::core::Result<VDS_ISCSI_PORTALGROUP_PROP> {
@@ -1141,11 +1146,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IVdsI
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IVdsIscsiPortalGroup {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IVdsIscsiPortalGroup {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1175,6 +1175,11 @@ pub struct IVdsIscsiPortalGroup_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_VirtualDiskService\"`*"]
 #[repr(transparent)]
 pub struct IVdsIscsiTarget(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVdsIscsiTarget {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IVdsIscsiTarget {
     #[doc = "*Required features: `\"Win32_Storage_VirtualDiskService\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -1244,11 +1249,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IVdsI
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IVdsIscsiTarget {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IVdsIscsiTarget {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1285,6 +1285,11 @@ pub struct IVdsIscsiTarget_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_VirtualDiskService\"`*"]
 #[repr(transparent)]
 pub struct IVdsLun(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVdsLun {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IVdsLun {
     #[doc = "*Required features: `\"Win32_Storage_VirtualDiskService\"`*"]
     pub unsafe fn GetProperties(&self) -> ::windows::core::Result<VDS_LUN_PROP> {
@@ -1390,11 +1395,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IVdsL
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IVdsLun {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IVdsLun {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1444,6 +1444,11 @@ pub struct IVdsLun_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_VirtualDiskService\"`*"]
 #[repr(transparent)]
 pub struct IVdsLun2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVdsLun2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IVdsLun2 {
     #[doc = "*Required features: `\"Win32_Storage_VirtualDiskService\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -1477,11 +1482,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IVdsL
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IVdsLun2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IVdsLun2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1513,6 +1513,11 @@ pub struct IVdsLun2_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_VirtualDiskService\"`*"]
 #[repr(transparent)]
 pub struct IVdsLunControllerPorts(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVdsLunControllerPorts {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IVdsLunControllerPorts {
     #[doc = "*Required features: `\"Win32_Storage_VirtualDiskService\"`*"]
     pub unsafe fn AssociateControllerPorts(&self, pactivecontrollerportidarray: &[::windows::core::GUID], pinactivecontrollerportidarray: &[::windows::core::GUID]) -> ::windows::core::Result<()> {
@@ -1544,11 +1549,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IVdsL
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IVdsLunControllerPorts {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IVdsLunControllerPorts {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1574,6 +1574,11 @@ pub struct IVdsLunControllerPorts_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_VirtualDiskService\"`*"]
 #[repr(transparent)]
 pub struct IVdsLunIscsi(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVdsLunIscsi {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IVdsLunIscsi {
     #[doc = "*Required features: `\"Win32_Storage_VirtualDiskService\"`*"]
     pub unsafe fn AssociateTargets(&self, ptargetidarray: &[::windows::core::GUID]) -> ::windows::core::Result<()> {
@@ -1605,11 +1610,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IVdsL
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IVdsLunIscsi {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IVdsLunIscsi {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1635,6 +1635,11 @@ pub struct IVdsLunIscsi_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_VirtualDiskService\"`*"]
 #[repr(transparent)]
 pub struct IVdsLunMpio(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVdsLunMpio {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IVdsLunMpio {
     #[doc = "*Required features: `\"Win32_Storage_VirtualDiskService\"`*"]
     pub unsafe fn GetPathInfo(&self, pppaths: *mut *mut VDS_PATH_INFO, plnumberofpaths: *mut i32) -> ::windows::core::Result<()> {
@@ -1676,11 +1681,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IVdsL
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IVdsLunMpio {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IVdsLunMpio {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1714,6 +1714,11 @@ pub struct IVdsLunMpio_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_VirtualDiskService\"`*"]
 #[repr(transparent)]
 pub struct IVdsLunNaming(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVdsLunNaming {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IVdsLunNaming {
     #[doc = "*Required features: `\"Win32_Storage_VirtualDiskService\"`*"]
     pub unsafe fn SetFriendlyName<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, pwszfriendlyname: Param0) -> ::windows::core::Result<()> {
@@ -1740,11 +1745,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IVdsL
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IVdsLunNaming {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IVdsLunNaming {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1769,6 +1769,11 @@ pub struct IVdsLunNaming_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_VirtualDiskService\"`*"]
 #[repr(transparent)]
 pub struct IVdsLunNumber(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVdsLunNumber {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IVdsLunNumber {
     #[doc = "*Required features: `\"Win32_Storage_VirtualDiskService\"`*"]
     pub unsafe fn GetLunNumber(&self) -> ::windows::core::Result<u32> {
@@ -1796,11 +1801,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IVdsL
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IVdsLunNumber {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IVdsLunNumber {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1825,6 +1825,11 @@ pub struct IVdsLunNumber_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_VirtualDiskService\"`*"]
 #[repr(transparent)]
 pub struct IVdsLunPlex(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVdsLunPlex {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IVdsLunPlex {
     #[doc = "*Required features: `\"Win32_Storage_VirtualDiskService\"`*"]
     pub unsafe fn GetProperties(&self) -> ::windows::core::Result<VDS_LUN_PLEX_PROP> {
@@ -1873,11 +1878,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IVdsL
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IVdsLunPlex {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IVdsLunPlex {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1915,6 +1915,11 @@ pub struct IVdsLunPlex_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_VirtualDiskService\"`*"]
 #[repr(transparent)]
 pub struct IVdsMaintenance(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVdsMaintenance {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IVdsMaintenance {
     #[doc = "*Required features: `\"Win32_Storage_VirtualDiskService\"`*"]
     pub unsafe fn StartMaintenance(&self, operation: VDS_MAINTENANCE_OPERATION) -> ::windows::core::Result<()> {
@@ -1949,11 +1954,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IVdsM
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IVdsMaintenance {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IVdsMaintenance {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1980,6 +1980,11 @@ pub struct IVdsMaintenance_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_VirtualDiskService\"`*"]
 #[repr(transparent)]
 pub struct IVdsProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVdsProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IVdsProvider {
     #[doc = "*Required features: `\"Win32_Storage_VirtualDiskService\"`*"]
     pub unsafe fn GetProperties(&self) -> ::windows::core::Result<VDS_PROVIDER_PROP> {
@@ -2007,11 +2012,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IVdsP
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IVdsProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IVdsProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2036,6 +2036,11 @@ pub struct IVdsProvider_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_VirtualDiskService\"`*"]
 #[repr(transparent)]
 pub struct IVdsProviderPrivate(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVdsProviderPrivate {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IVdsProviderPrivate {
     #[doc = "*Required features: `\"Win32_Storage_VirtualDiskService\"`*"]
     pub unsafe fn GetObject<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::GUID>>(&self, objectid: Param0, r#type: VDS_OBJECT_TYPE) -> ::windows::core::Result<::windows::core::IUnknown> {
@@ -2072,11 +2077,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IVdsP
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IVdsProviderPrivate {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IVdsProviderPrivate {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2106,6 +2106,11 @@ pub struct IVdsProviderPrivate_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_VirtualDiskService\"`*"]
 #[repr(transparent)]
 pub struct IVdsProviderSupport(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVdsProviderSupport {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IVdsProviderSupport {
     #[doc = "*Required features: `\"Win32_Storage_VirtualDiskService\"`*"]
     pub unsafe fn GetVersionSupport(&self) -> ::windows::core::Result<u32> {
@@ -2133,11 +2138,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IVdsP
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IVdsProviderSupport {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IVdsProviderSupport {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2162,6 +2162,11 @@ pub struct IVdsProviderSupport_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_VirtualDiskService\"`*"]
 #[repr(transparent)]
 pub struct IVdsStoragePool(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVdsStoragePool {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IVdsStoragePool {
     #[doc = "*Required features: `\"Win32_Storage_VirtualDiskService\"`*"]
     pub unsafe fn GetProvider(&self) -> ::windows::core::Result<IVdsProvider> {
@@ -2215,11 +2220,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IVdsS
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IVdsStoragePool {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IVdsStoragePool {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2255,6 +2255,11 @@ pub struct IVdsStoragePool_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_VirtualDiskService\"`*"]
 #[repr(transparent)]
 pub struct IVdsSubSystem(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVdsSubSystem {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IVdsSubSystem {
     #[doc = "*Required features: `\"Win32_Storage_VirtualDiskService\"`*"]
     pub unsafe fn GetProperties(&self) -> ::windows::core::Result<VDS_SUB_SYSTEM_PROP> {
@@ -2335,11 +2340,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IVdsS
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IVdsSubSystem {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IVdsSubSystem {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2381,6 +2381,11 @@ pub struct IVdsSubSystem_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_VirtualDiskService\"`*"]
 #[repr(transparent)]
 pub struct IVdsSubSystem2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVdsSubSystem2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IVdsSubSystem2 {
     #[doc = "*Required features: `\"Win32_Storage_VirtualDiskService\"`*"]
     pub unsafe fn GetProperties2(&self) -> ::windows::core::Result<VDS_SUB_SYSTEM_PROP2> {
@@ -2425,11 +2430,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IVdsS
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IVdsSubSystem2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IVdsSubSystem2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2463,6 +2463,11 @@ pub struct IVdsSubSystem2_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_VirtualDiskService\"`*"]
 #[repr(transparent)]
 pub struct IVdsSubSystemInterconnect(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVdsSubSystemInterconnect {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IVdsSubSystemInterconnect {
     #[doc = "*Required features: `\"Win32_Storage_VirtualDiskService\"`*"]
     pub unsafe fn GetSupportedInterconnects(&self) -> ::windows::core::Result<u32> {
@@ -2490,11 +2495,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IVdsS
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IVdsSubSystemInterconnect {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IVdsSubSystemInterconnect {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2519,6 +2519,11 @@ pub struct IVdsSubSystemInterconnect_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_VirtualDiskService\"`*"]
 #[repr(transparent)]
 pub struct IVdsSubSystemIscsi(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVdsSubSystemIscsi {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IVdsSubSystemIscsi {
     #[doc = "*Required features: `\"Win32_Storage_VirtualDiskService\"`*"]
     pub unsafe fn QueryTargets(&self) -> ::windows::core::Result<IEnumVdsObject> {
@@ -2560,11 +2565,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IVdsS
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IVdsSubSystemIscsi {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IVdsSubSystemIscsi {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2592,6 +2592,11 @@ pub struct IVdsSubSystemIscsi_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_VirtualDiskService\"`*"]
 #[repr(transparent)]
 pub struct IVdsSubSystemNaming(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVdsSubSystemNaming {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IVdsSubSystemNaming {
     #[doc = "*Required features: `\"Win32_Storage_VirtualDiskService\"`*"]
     pub unsafe fn SetFriendlyName<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, pwszfriendlyname: Param0) -> ::windows::core::Result<()> {
@@ -2616,11 +2621,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IVdsSubSy
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IVdsSubSystemNaming {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IVdsSubSystemNaming {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IVdsSubSystemNaming {
@@ -2663,6 +2663,7 @@ impl ::core::clone::Clone for VDS_ASYNC_OUTPUT {
 }
 unsafe impl ::windows::core::Abi for VDS_ASYNC_OUTPUT {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VDS_ASYNC_OUTPUT {
     fn eq(&self, other: &Self) -> bool {
@@ -2694,6 +2695,7 @@ impl ::core::clone::Clone for VDS_ASYNC_OUTPUT_0 {
 }
 unsafe impl ::windows::core::Abi for VDS_ASYNC_OUTPUT_0 {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VDS_ASYNC_OUTPUT_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -2723,6 +2725,7 @@ impl ::core::fmt::Debug for VDS_ASYNC_OUTPUT_0_0 {
 }
 unsafe impl ::windows::core::Abi for VDS_ASYNC_OUTPUT_0_0 {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VDS_ASYNC_OUTPUT_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -2752,6 +2755,7 @@ impl ::core::fmt::Debug for VDS_ASYNC_OUTPUT_0_1 {
 }
 unsafe impl ::windows::core::Abi for VDS_ASYNC_OUTPUT_0_1 {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VDS_ASYNC_OUTPUT_0_1 {
     fn eq(&self, other: &Self) -> bool {
@@ -2783,6 +2787,7 @@ impl ::core::fmt::Debug for VDS_ASYNC_OUTPUT_0_2 {
 }
 unsafe impl ::windows::core::Abi for VDS_ASYNC_OUTPUT_0_2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VDS_ASYNC_OUTPUT_0_2 {
     fn eq(&self, other: &Self) -> bool {
@@ -2812,6 +2817,7 @@ impl ::core::fmt::Debug for VDS_ASYNC_OUTPUT_0_3 {
 }
 unsafe impl ::windows::core::Abi for VDS_ASYNC_OUTPUT_0_3 {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VDS_ASYNC_OUTPUT_0_3 {
     fn eq(&self, other: &Self) -> bool {
@@ -2841,6 +2847,7 @@ impl ::core::fmt::Debug for VDS_ASYNC_OUTPUT_0_4 {
 }
 unsafe impl ::windows::core::Abi for VDS_ASYNC_OUTPUT_0_4 {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VDS_ASYNC_OUTPUT_0_4 {
     fn eq(&self, other: &Self) -> bool {
@@ -2870,6 +2877,7 @@ impl ::core::fmt::Debug for VDS_ASYNC_OUTPUT_0_5 {
 }
 unsafe impl ::windows::core::Abi for VDS_ASYNC_OUTPUT_0_5 {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VDS_ASYNC_OUTPUT_0_5 {
     fn eq(&self, other: &Self) -> bool {
@@ -2899,6 +2907,7 @@ impl ::core::fmt::Debug for VDS_ASYNC_OUTPUT_0_6 {
 }
 unsafe impl ::windows::core::Abi for VDS_ASYNC_OUTPUT_0_6 {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VDS_ASYNC_OUTPUT_0_6 {
     fn eq(&self, other: &Self) -> bool {
@@ -2929,6 +2938,7 @@ impl ::core::fmt::Debug for VDS_ASYNC_OUTPUT_0_7 {
 }
 unsafe impl ::windows::core::Abi for VDS_ASYNC_OUTPUT_0_7 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VDS_ASYNC_OUTPUT_0_7 {
     fn eq(&self, other: &Self) -> bool {
@@ -3022,6 +3032,7 @@ impl ::core::default::Default for VDS_ASYNC_OUTPUT_TYPE {
 }
 unsafe impl ::windows::core::Abi for VDS_ASYNC_OUTPUT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VDS_ASYNC_OUTPUT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3049,6 +3060,7 @@ impl ::core::fmt::Debug for VDS_CONTROLLER_NOTIFICATION {
 }
 unsafe impl ::windows::core::Abi for VDS_CONTROLLER_NOTIFICATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VDS_CONTROLLER_NOTIFICATION {
     fn eq(&self, other: &Self) -> bool {
@@ -3084,6 +3096,7 @@ impl ::core::fmt::Debug for VDS_CONTROLLER_PROP {
 }
 unsafe impl ::windows::core::Abi for VDS_CONTROLLER_PROP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VDS_CONTROLLER_PROP {
     fn eq(&self, other: &Self) -> bool {
@@ -3125,6 +3138,7 @@ impl ::core::default::Default for VDS_CONTROLLER_STATUS {
 }
 unsafe impl ::windows::core::Abi for VDS_CONTROLLER_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VDS_CONTROLLER_STATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3150,6 +3164,7 @@ impl ::core::fmt::Debug for VDS_DISK_NOTIFICATION {
 }
 unsafe impl ::windows::core::Abi for VDS_DISK_NOTIFICATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VDS_DISK_NOTIFICATION {
     fn eq(&self, other: &Self) -> bool {
@@ -3188,6 +3203,7 @@ impl ::core::fmt::Debug for VDS_DRIVE_EXTENT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for VDS_DRIVE_EXTENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for VDS_DRIVE_EXTENT {
@@ -3230,6 +3246,7 @@ impl ::core::default::Default for VDS_DRIVE_FLAG {
 }
 unsafe impl ::windows::core::Abi for VDS_DRIVE_FLAG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VDS_DRIVE_FLAG {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3256,6 +3273,7 @@ impl ::core::fmt::Debug for VDS_DRIVE_LETTER_NOTIFICATION {
 }
 unsafe impl ::windows::core::Abi for VDS_DRIVE_LETTER_NOTIFICATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VDS_DRIVE_LETTER_NOTIFICATION {
     fn eq(&self, other: &Self) -> bool {
@@ -3287,6 +3305,7 @@ impl ::core::fmt::Debug for VDS_DRIVE_NOTIFICATION {
 }
 unsafe impl ::windows::core::Abi for VDS_DRIVE_NOTIFICATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VDS_DRIVE_NOTIFICATION {
     fn eq(&self, other: &Self) -> bool {
@@ -3325,6 +3344,7 @@ impl ::core::fmt::Debug for VDS_DRIVE_PROP {
 }
 unsafe impl ::windows::core::Abi for VDS_DRIVE_PROP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VDS_DRIVE_PROP {
     fn eq(&self, other: &Self) -> bool {
@@ -3379,6 +3399,7 @@ impl ::core::fmt::Debug for VDS_DRIVE_PROP2 {
 }
 unsafe impl ::windows::core::Abi for VDS_DRIVE_PROP2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VDS_DRIVE_PROP2 {
     fn eq(&self, other: &Self) -> bool {
@@ -3420,6 +3441,7 @@ impl ::core::default::Default for VDS_DRIVE_STATUS {
 }
 unsafe impl ::windows::core::Abi for VDS_DRIVE_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VDS_DRIVE_STATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4144,6 +4166,7 @@ impl ::core::fmt::Debug for VDS_FILE_SYSTEM_NOTIFICATION {
 }
 unsafe impl ::windows::core::Abi for VDS_FILE_SYSTEM_NOTIFICATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VDS_FILE_SYSTEM_NOTIFICATION {
     fn eq(&self, other: &Self) -> bool {
@@ -4193,6 +4216,7 @@ impl ::core::default::Default for VDS_FILE_SYSTEM_TYPE {
 }
 unsafe impl ::windows::core::Abi for VDS_FILE_SYSTEM_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VDS_FILE_SYSTEM_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4223,6 +4247,7 @@ impl ::core::fmt::Debug for VDS_HBAPORT_PROP {
 }
 unsafe impl ::windows::core::Abi for VDS_HBAPORT_PROP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VDS_HBAPORT_PROP {
     fn eq(&self, other: &Self) -> bool {
@@ -4264,6 +4289,7 @@ impl ::core::default::Default for VDS_HBAPORT_SPEED_FLAG {
 }
 unsafe impl ::windows::core::Abi for VDS_HBAPORT_SPEED_FLAG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VDS_HBAPORT_SPEED_FLAG {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4303,6 +4329,7 @@ impl ::core::default::Default for VDS_HBAPORT_STATUS {
 }
 unsafe impl ::windows::core::Abi for VDS_HBAPORT_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VDS_HBAPORT_STATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4348,6 +4375,7 @@ impl ::core::default::Default for VDS_HBAPORT_TYPE {
 }
 unsafe impl ::windows::core::Abi for VDS_HBAPORT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VDS_HBAPORT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4395,6 +4423,7 @@ impl ::core::default::Default for VDS_HEALTH {
 }
 unsafe impl ::windows::core::Abi for VDS_HEALTH {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VDS_HEALTH {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4460,6 +4489,7 @@ impl ::core::fmt::Debug for VDS_HINTS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for VDS_HINTS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for VDS_HINTS {
@@ -4560,6 +4590,7 @@ impl ::core::fmt::Debug for VDS_HINTS2 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for VDS_HINTS2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for VDS_HINTS2 {
@@ -4636,6 +4667,7 @@ impl ::core::default::Default for VDS_HWPROVIDER_TYPE {
 }
 unsafe impl ::windows::core::Abi for VDS_HWPROVIDER_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VDS_HWPROVIDER_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4664,6 +4696,7 @@ impl ::core::fmt::Debug for VDS_INTERCONNECT {
 }
 unsafe impl ::windows::core::Abi for VDS_INTERCONNECT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VDS_INTERCONNECT {
     fn eq(&self, other: &Self) -> bool {
@@ -4705,6 +4738,7 @@ impl ::core::default::Default for VDS_INTERCONNECT_ADDRESS_TYPE {
 }
 unsafe impl ::windows::core::Abi for VDS_INTERCONNECT_ADDRESS_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VDS_INTERCONNECT_ADDRESS_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4736,6 +4770,7 @@ impl ::core::default::Default for VDS_INTERCONNECT_FLAG {
 }
 unsafe impl ::windows::core::Abi for VDS_INTERCONNECT_FLAG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VDS_INTERCONNECT_FLAG {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4766,6 +4801,7 @@ impl ::core::fmt::Debug for VDS_IPADDRESS {
 }
 unsafe impl ::windows::core::Abi for VDS_IPADDRESS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VDS_IPADDRESS {
     fn eq(&self, other: &Self) -> bool {
@@ -4803,6 +4839,7 @@ impl ::core::default::Default for VDS_IPADDRESS_TYPE {
 }
 unsafe impl ::windows::core::Abi for VDS_IPADDRESS_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VDS_IPADDRESS_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4832,6 +4869,7 @@ impl ::core::default::Default for VDS_ISCSI_AUTH_TYPE {
 }
 unsafe impl ::windows::core::Abi for VDS_ISCSI_AUTH_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VDS_ISCSI_AUTH_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4857,6 +4895,7 @@ impl ::core::fmt::Debug for VDS_ISCSI_INITIATOR_ADAPTER_PROP {
 }
 unsafe impl ::windows::core::Abi for VDS_ISCSI_INITIATOR_ADAPTER_PROP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VDS_ISCSI_INITIATOR_ADAPTER_PROP {
     fn eq(&self, other: &Self) -> bool {
@@ -4889,6 +4928,7 @@ impl ::core::fmt::Debug for VDS_ISCSI_INITIATOR_PORTAL_PROP {
 }
 unsafe impl ::windows::core::Abi for VDS_ISCSI_INITIATOR_PORTAL_PROP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VDS_ISCSI_INITIATOR_PORTAL_PROP {
     fn eq(&self, other: &Self) -> bool {
@@ -4932,6 +4972,7 @@ impl ::core::default::Default for VDS_ISCSI_IPSEC_FLAG {
 }
 unsafe impl ::windows::core::Abi for VDS_ISCSI_IPSEC_FLAG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VDS_ISCSI_IPSEC_FLAG {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4957,6 +4998,7 @@ impl ::core::fmt::Debug for VDS_ISCSI_IPSEC_KEY {
 }
 unsafe impl ::windows::core::Abi for VDS_ISCSI_IPSEC_KEY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VDS_ISCSI_IPSEC_KEY {
     fn eq(&self, other: &Self) -> bool {
@@ -4990,6 +5032,7 @@ impl ::core::default::Default for VDS_ISCSI_LOGIN_FLAG {
 }
 unsafe impl ::windows::core::Abi for VDS_ISCSI_LOGIN_FLAG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VDS_ISCSI_LOGIN_FLAG {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5019,6 +5062,7 @@ impl ::core::default::Default for VDS_ISCSI_LOGIN_TYPE {
 }
 unsafe impl ::windows::core::Abi for VDS_ISCSI_LOGIN_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VDS_ISCSI_LOGIN_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5044,6 +5088,7 @@ impl ::core::fmt::Debug for VDS_ISCSI_PORTALGROUP_PROP {
 }
 unsafe impl ::windows::core::Abi for VDS_ISCSI_PORTALGROUP_PROP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VDS_ISCSI_PORTALGROUP_PROP {
     fn eq(&self, other: &Self) -> bool {
@@ -5076,6 +5121,7 @@ impl ::core::fmt::Debug for VDS_ISCSI_PORTAL_PROP {
 }
 unsafe impl ::windows::core::Abi for VDS_ISCSI_PORTAL_PROP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VDS_ISCSI_PORTAL_PROP {
     fn eq(&self, other: &Self) -> bool {
@@ -5115,6 +5161,7 @@ impl ::core::default::Default for VDS_ISCSI_PORTAL_STATUS {
 }
 unsafe impl ::windows::core::Abi for VDS_ISCSI_PORTAL_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VDS_ISCSI_PORTAL_STATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5140,6 +5187,7 @@ impl ::core::fmt::Debug for VDS_ISCSI_SHARED_SECRET {
 }
 unsafe impl ::windows::core::Abi for VDS_ISCSI_SHARED_SECRET {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VDS_ISCSI_SHARED_SECRET {
     fn eq(&self, other: &Self) -> bool {
@@ -5178,6 +5226,7 @@ impl ::core::fmt::Debug for VDS_ISCSI_TARGET_PROP {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for VDS_ISCSI_TARGET_PROP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for VDS_ISCSI_TARGET_PROP {
@@ -5226,6 +5275,7 @@ impl ::core::default::Default for VDS_LOADBALANCE_POLICY_ENUM {
 }
 unsafe impl ::windows::core::Abi for VDS_LOADBALANCE_POLICY_ENUM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VDS_LOADBALANCE_POLICY_ENUM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5267,6 +5317,7 @@ impl ::core::default::Default for VDS_LUN_FLAG {
 }
 unsafe impl ::windows::core::Abi for VDS_LUN_FLAG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VDS_LUN_FLAG {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5322,6 +5373,7 @@ impl ::core::fmt::Debug for VDS_LUN_INFORMATION {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for VDS_LUN_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for VDS_LUN_INFORMATION {
@@ -5356,6 +5408,7 @@ impl ::core::fmt::Debug for VDS_LUN_NOTIFICATION {
 }
 unsafe impl ::windows::core::Abi for VDS_LUN_NOTIFICATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VDS_LUN_NOTIFICATION {
     fn eq(&self, other: &Self) -> bool {
@@ -5387,6 +5440,7 @@ impl ::core::default::Default for VDS_LUN_PLEX_FLAG {
 }
 unsafe impl ::windows::core::Abi for VDS_LUN_PLEX_FLAG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VDS_LUN_PLEX_FLAG {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5419,6 +5473,7 @@ impl ::core::fmt::Debug for VDS_LUN_PLEX_PROP {
 }
 unsafe impl ::windows::core::Abi for VDS_LUN_PLEX_PROP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VDS_LUN_PLEX_PROP {
     fn eq(&self, other: &Self) -> bool {
@@ -5458,6 +5513,7 @@ impl ::core::default::Default for VDS_LUN_PLEX_STATUS {
 }
 unsafe impl ::windows::core::Abi for VDS_LUN_PLEX_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VDS_LUN_PLEX_STATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5517,6 +5573,7 @@ impl ::core::default::Default for VDS_LUN_PLEX_TYPE {
 }
 unsafe impl ::windows::core::Abi for VDS_LUN_PLEX_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VDS_LUN_PLEX_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5551,6 +5608,7 @@ impl ::core::fmt::Debug for VDS_LUN_PROP {
 }
 unsafe impl ::windows::core::Abi for VDS_LUN_PROP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VDS_LUN_PROP {
     fn eq(&self, other: &Self) -> bool {
@@ -5590,6 +5648,7 @@ impl ::core::default::Default for VDS_LUN_STATUS {
 }
 unsafe impl ::windows::core::Abi for VDS_LUN_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VDS_LUN_STATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5663,6 +5722,7 @@ impl ::core::default::Default for VDS_LUN_TYPE {
 }
 unsafe impl ::windows::core::Abi for VDS_LUN_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VDS_LUN_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5696,6 +5756,7 @@ impl ::core::default::Default for VDS_MAINTENANCE_OPERATION {
 }
 unsafe impl ::windows::core::Abi for VDS_MAINTENANCE_OPERATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VDS_MAINTENANCE_OPERATION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5721,6 +5782,7 @@ impl ::core::fmt::Debug for VDS_MOUNT_POINT_NOTIFICATION {
 }
 unsafe impl ::windows::core::Abi for VDS_MOUNT_POINT_NOTIFICATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VDS_MOUNT_POINT_NOTIFICATION {
     fn eq(&self, other: &Self) -> bool {
@@ -5758,6 +5820,7 @@ impl ::core::default::Default for VDS_NF_CONTROLLER {
 }
 unsafe impl ::windows::core::Abi for VDS_NF_CONTROLLER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VDS_NF_CONTROLLER {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5787,6 +5850,7 @@ impl ::core::default::Default for VDS_NF_DISK {
 }
 unsafe impl ::windows::core::Abi for VDS_NF_DISK {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VDS_NF_DISK {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5818,6 +5882,7 @@ impl ::core::default::Default for VDS_NF_DRIVE {
 }
 unsafe impl ::windows::core::Abi for VDS_NF_DRIVE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VDS_NF_DRIVE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5849,6 +5914,7 @@ impl ::core::default::Default for VDS_NF_FILE_SYSTEM {
 }
 unsafe impl ::windows::core::Abi for VDS_NF_FILE_SYSTEM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VDS_NF_FILE_SYSTEM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5880,6 +5946,7 @@ impl ::core::default::Default for VDS_NF_LUN {
 }
 unsafe impl ::windows::core::Abi for VDS_NF_LUN {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VDS_NF_LUN {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5911,6 +5978,7 @@ impl ::core::default::Default for VDS_NF_PACK {
 }
 unsafe impl ::windows::core::Abi for VDS_NF_PACK {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VDS_NF_PACK {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5948,6 +6016,7 @@ impl ::core::default::Default for VDS_NF_PORT {
 }
 unsafe impl ::windows::core::Abi for VDS_NF_PORT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VDS_NF_PORT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6002,6 +6071,7 @@ impl ::core::clone::Clone for VDS_NOTIFICATION {
 }
 unsafe impl ::windows::core::Abi for VDS_NOTIFICATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VDS_NOTIFICATION {
     fn eq(&self, other: &Self) -> bool {
@@ -6042,6 +6112,7 @@ impl ::core::clone::Clone for VDS_NOTIFICATION_0 {
 }
 unsafe impl ::windows::core::Abi for VDS_NOTIFICATION_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VDS_NOTIFICATION_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -6105,6 +6176,7 @@ impl ::core::default::Default for VDS_NOTIFICATION_TARGET_TYPE {
 }
 unsafe impl ::windows::core::Abi for VDS_NOTIFICATION_TARGET_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VDS_NOTIFICATION_TARGET_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6174,6 +6246,7 @@ impl ::core::default::Default for VDS_OBJECT_TYPE {
 }
 unsafe impl ::windows::core::Abi for VDS_OBJECT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VDS_OBJECT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6199,6 +6272,7 @@ impl ::core::fmt::Debug for VDS_PACK_NOTIFICATION {
 }
 unsafe impl ::windows::core::Abi for VDS_PACK_NOTIFICATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VDS_PACK_NOTIFICATION {
     fn eq(&self, other: &Self) -> bool {
@@ -6231,6 +6305,7 @@ impl ::core::fmt::Debug for VDS_PARTITION_NOTIFICATION {
 }
 unsafe impl ::windows::core::Abi for VDS_PARTITION_NOTIFICATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VDS_PARTITION_NOTIFICATION {
     fn eq(&self, other: &Self) -> bool {
@@ -6262,6 +6337,7 @@ impl ::core::fmt::Debug for VDS_PATH_ID {
 }
 unsafe impl ::windows::core::Abi for VDS_PATH_ID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VDS_PATH_ID {
     fn eq(&self, other: &Self) -> bool {
@@ -6292,6 +6368,7 @@ impl ::core::clone::Clone for VDS_PATH_INFO {
 }
 unsafe impl ::windows::core::Abi for VDS_PATH_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VDS_PATH_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -6318,6 +6395,7 @@ impl ::core::clone::Clone for VDS_PATH_INFO_0 {
 }
 unsafe impl ::windows::core::Abi for VDS_PATH_INFO_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VDS_PATH_INFO_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -6344,6 +6422,7 @@ impl ::core::clone::Clone for VDS_PATH_INFO_1 {
 }
 unsafe impl ::windows::core::Abi for VDS_PATH_INFO_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VDS_PATH_INFO_1 {
     fn eq(&self, other: &Self) -> bool {
@@ -6370,6 +6449,7 @@ impl ::core::clone::Clone for VDS_PATH_INFO_2 {
 }
 unsafe impl ::windows::core::Abi for VDS_PATH_INFO_2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VDS_PATH_INFO_2 {
     fn eq(&self, other: &Self) -> bool {
@@ -6407,6 +6487,7 @@ impl ::core::fmt::Debug for VDS_PATH_POLICY {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for VDS_PATH_POLICY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for VDS_PATH_POLICY {
@@ -6447,6 +6528,7 @@ impl ::core::default::Default for VDS_PATH_STATUS {
 }
 unsafe impl ::windows::core::Abi for VDS_PATH_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VDS_PATH_STATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6552,6 +6634,7 @@ impl ::core::fmt::Debug for VDS_POOL_ATTRIBUTES {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for VDS_POOL_ATTRIBUTES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for VDS_POOL_ATTRIBUTES {
@@ -6642,6 +6725,7 @@ impl ::core::fmt::Debug for VDS_POOL_CUSTOM_ATTRIBUTES {
 }
 unsafe impl ::windows::core::Abi for VDS_POOL_CUSTOM_ATTRIBUTES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VDS_POOL_CUSTOM_ATTRIBUTES {
     fn eq(&self, other: &Self) -> bool {
@@ -6673,6 +6757,7 @@ impl ::core::fmt::Debug for VDS_PORTAL_GROUP_NOTIFICATION {
 }
 unsafe impl ::windows::core::Abi for VDS_PORTAL_GROUP_NOTIFICATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VDS_PORTAL_GROUP_NOTIFICATION {
     fn eq(&self, other: &Self) -> bool {
@@ -6704,6 +6789,7 @@ impl ::core::fmt::Debug for VDS_PORTAL_NOTIFICATION {
 }
 unsafe impl ::windows::core::Abi for VDS_PORTAL_NOTIFICATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VDS_PORTAL_NOTIFICATION {
     fn eq(&self, other: &Self) -> bool {
@@ -6735,6 +6821,7 @@ impl ::core::fmt::Debug for VDS_PORT_NOTIFICATION {
 }
 unsafe impl ::windows::core::Abi for VDS_PORT_NOTIFICATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VDS_PORT_NOTIFICATION {
     fn eq(&self, other: &Self) -> bool {
@@ -6768,6 +6855,7 @@ impl ::core::fmt::Debug for VDS_PORT_PROP {
 }
 unsafe impl ::windows::core::Abi for VDS_PORT_PROP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VDS_PORT_PROP {
     fn eq(&self, other: &Self) -> bool {
@@ -6809,6 +6897,7 @@ impl ::core::default::Default for VDS_PORT_STATUS {
 }
 unsafe impl ::windows::core::Abi for VDS_PORT_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VDS_PORT_STATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6852,6 +6941,7 @@ impl ::core::default::Default for VDS_PROVIDER_FLAG {
 }
 unsafe impl ::windows::core::Abi for VDS_PROVIDER_FLAG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VDS_PROVIDER_FLAG {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6889,6 +6979,7 @@ impl ::core::default::Default for VDS_PROVIDER_LBSUPPORT_FLAG {
 }
 unsafe impl ::windows::core::Abi for VDS_PROVIDER_LBSUPPORT_FLAG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VDS_PROVIDER_LBSUPPORT_FLAG {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6920,6 +7011,7 @@ impl ::core::fmt::Debug for VDS_PROVIDER_PROP {
 }
 unsafe impl ::windows::core::Abi for VDS_PROVIDER_PROP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VDS_PROVIDER_PROP {
     fn eq(&self, other: &Self) -> bool {
@@ -6959,6 +7051,7 @@ impl ::core::default::Default for VDS_PROVIDER_TYPE {
 }
 unsafe impl ::windows::core::Abi for VDS_PROVIDER_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VDS_PROVIDER_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7020,6 +7113,7 @@ impl ::core::default::Default for VDS_RAID_TYPE {
 }
 unsafe impl ::windows::core::Abi for VDS_RAID_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VDS_RAID_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7053,6 +7147,7 @@ impl ::core::default::Default for VDS_RECOVER_ACTION {
 }
 unsafe impl ::windows::core::Abi for VDS_RECOVER_ACTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VDS_RECOVER_ACTION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7078,6 +7173,7 @@ impl ::core::fmt::Debug for VDS_SERVICE_NOTIFICATION {
 }
 unsafe impl ::windows::core::Abi for VDS_SERVICE_NOTIFICATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VDS_SERVICE_NOTIFICATION {
     fn eq(&self, other: &Self) -> bool {
@@ -7151,6 +7247,7 @@ impl ::core::default::Default for VDS_STORAGE_BUS_TYPE {
 }
 unsafe impl ::windows::core::Abi for VDS_STORAGE_BUS_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VDS_STORAGE_BUS_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7177,6 +7274,7 @@ impl ::core::fmt::Debug for VDS_STORAGE_DEVICE_ID_DESCRIPTOR {
 }
 unsafe impl ::windows::core::Abi for VDS_STORAGE_DEVICE_ID_DESCRIPTOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VDS_STORAGE_DEVICE_ID_DESCRIPTOR {
     fn eq(&self, other: &Self) -> bool {
@@ -7210,6 +7308,7 @@ impl ::core::fmt::Debug for VDS_STORAGE_IDENTIFIER {
 }
 unsafe impl ::windows::core::Abi for VDS_STORAGE_IDENTIFIER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VDS_STORAGE_IDENTIFIER {
     fn eq(&self, other: &Self) -> bool {
@@ -7247,6 +7346,7 @@ impl ::core::default::Default for VDS_STORAGE_IDENTIFIER_CODE_SET {
 }
 unsafe impl ::windows::core::Abi for VDS_STORAGE_IDENTIFIER_CODE_SET {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VDS_STORAGE_IDENTIFIER_CODE_SET {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7288,6 +7388,7 @@ impl ::core::default::Default for VDS_STORAGE_IDENTIFIER_TYPE {
 }
 unsafe impl ::windows::core::Abi for VDS_STORAGE_IDENTIFIER_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VDS_STORAGE_IDENTIFIER_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7319,6 +7420,7 @@ impl ::core::fmt::Debug for VDS_STORAGE_POOL_DRIVE_EXTENT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for VDS_STORAGE_POOL_DRIVE_EXTENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for VDS_STORAGE_POOL_DRIVE_EXTENT {
@@ -7360,6 +7462,7 @@ impl ::core::fmt::Debug for VDS_STORAGE_POOL_PROP {
 }
 unsafe impl ::windows::core::Abi for VDS_STORAGE_POOL_PROP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VDS_STORAGE_POOL_PROP {
     fn eq(&self, other: &Self) -> bool {
@@ -7397,6 +7500,7 @@ impl ::core::default::Default for VDS_STORAGE_POOL_STATUS {
 }
 unsafe impl ::windows::core::Abi for VDS_STORAGE_POOL_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VDS_STORAGE_POOL_STATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7426,6 +7530,7 @@ impl ::core::default::Default for VDS_STORAGE_POOL_TYPE {
 }
 unsafe impl ::windows::core::Abi for VDS_STORAGE_POOL_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VDS_STORAGE_POOL_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7497,6 +7602,7 @@ impl ::core::default::Default for VDS_SUB_SYSTEM_FLAG {
 }
 unsafe impl ::windows::core::Abi for VDS_SUB_SYSTEM_FLAG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VDS_SUB_SYSTEM_FLAG {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7522,6 +7628,7 @@ impl ::core::fmt::Debug for VDS_SUB_SYSTEM_NOTIFICATION {
 }
 unsafe impl ::windows::core::Abi for VDS_SUB_SYSTEM_NOTIFICATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VDS_SUB_SYSTEM_NOTIFICATION {
     fn eq(&self, other: &Self) -> bool {
@@ -7574,6 +7681,7 @@ impl ::core::fmt::Debug for VDS_SUB_SYSTEM_PROP {
 }
 unsafe impl ::windows::core::Abi for VDS_SUB_SYSTEM_PROP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VDS_SUB_SYSTEM_PROP {
     fn eq(&self, other: &Self) -> bool {
@@ -7630,6 +7738,7 @@ impl ::core::fmt::Debug for VDS_SUB_SYSTEM_PROP2 {
 }
 unsafe impl ::windows::core::Abi for VDS_SUB_SYSTEM_PROP2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VDS_SUB_SYSTEM_PROP2 {
     fn eq(&self, other: &Self) -> bool {
@@ -7671,6 +7780,7 @@ impl ::core::default::Default for VDS_SUB_SYSTEM_STATUS {
 }
 unsafe impl ::windows::core::Abi for VDS_SUB_SYSTEM_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VDS_SUB_SYSTEM_STATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7726,6 +7836,7 @@ impl ::core::default::Default for VDS_SUB_SYSTEM_SUPPORTED_RAID_TYPE_FLAG {
 }
 unsafe impl ::windows::core::Abi for VDS_SUB_SYSTEM_SUPPORTED_RAID_TYPE_FLAG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VDS_SUB_SYSTEM_SUPPORTED_RAID_TYPE_FLAG {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7819,6 +7930,7 @@ impl ::core::fmt::Debug for VDS_TARGET_NOTIFICATION {
 }
 unsafe impl ::windows::core::Abi for VDS_TARGET_NOTIFICATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VDS_TARGET_NOTIFICATION {
     fn eq(&self, other: &Self) -> bool {
@@ -7860,6 +7972,7 @@ impl ::core::default::Default for VDS_TRANSITION_STATE {
 }
 unsafe impl ::windows::core::Abi for VDS_TRANSITION_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VDS_TRANSITION_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7893,6 +8006,7 @@ impl ::core::default::Default for VDS_VERSION_SUPPORT_FLAG {
 }
 unsafe impl ::windows::core::Abi for VDS_VERSION_SUPPORT_FLAG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VDS_VERSION_SUPPORT_FLAG {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7920,6 +8034,7 @@ impl ::core::fmt::Debug for VDS_VOLUME_NOTIFICATION {
 }
 unsafe impl ::windows::core::Abi for VDS_VOLUME_NOTIFICATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VDS_VOLUME_NOTIFICATION {
     fn eq(&self, other: &Self) -> bool {
@@ -7950,6 +8065,7 @@ impl ::core::fmt::Debug for VDS_WWN {
 }
 unsafe impl ::windows::core::Abi for VDS_WWN {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VDS_WWN {
     fn eq(&self, other: &Self) -> bool {

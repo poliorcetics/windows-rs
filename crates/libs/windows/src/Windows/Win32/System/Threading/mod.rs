@@ -20,6 +20,7 @@ impl ::core::fmt::Debug for APP_MEMORY_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for APP_MEMORY_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for APP_MEMORY_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -59,6 +60,7 @@ impl ::core::default::Default for AVRT_PRIORITY {
 }
 unsafe impl ::windows::core::Abi for AVRT_PRIORITY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AVRT_PRIORITY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -378,6 +380,7 @@ impl ::core::fmt::Debug for BoundaryDescriptorHandle {
 }
 unsafe impl ::windows::core::Abi for BoundaryDescriptorHandle {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[doc = "*Required features: `\"Win32_System_Threading\"`*"]
 pub const CONDITION_VARIABLE_LOCKMODE_SHARED: u32 = 1u32;
@@ -402,6 +405,7 @@ impl ::core::default::Default for CREATE_EVENT {
 }
 unsafe impl ::windows::core::Abi for CREATE_EVENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CREATE_EVENT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -459,6 +463,7 @@ impl ::core::default::Default for CREATE_PROCESS_LOGON_FLAGS {
 }
 unsafe impl ::windows::core::Abi for CREATE_PROCESS_LOGON_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CREATE_PROCESS_LOGON_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1657,6 +1662,7 @@ impl ::core::default::Default for GET_GUI_RESOURCES_FLAGS {
 }
 unsafe impl ::windows::core::Abi for GET_GUI_RESOURCES_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GET_GUI_RESOURCES_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2599,6 +2605,7 @@ impl ::core::fmt::Debug for IO_COUNTERS {
 }
 unsafe impl ::windows::core::Abi for IO_COUNTERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IO_COUNTERS {
     fn eq(&self, other: &Self) -> bool {
@@ -2981,6 +2988,7 @@ impl ::core::fmt::Debug for LPPROC_THREAD_ATTRIBUTE_LIST {
 }
 unsafe impl ::windows::core::Abi for LPPROC_THREAD_ATTRIBUTE_LIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[doc = "*Required features: `\"Win32_System_Threading\"`*"]
 pub type LPTHREAD_START_ROUTINE = ::core::option::Option<unsafe extern "system" fn(lpthreadparameter: *mut ::core::ffi::c_void) -> u32>;
@@ -3037,6 +3045,7 @@ impl ::core::default::Default for MACHINE_ATTRIBUTES {
 }
 unsafe impl ::windows::core::Abi for MACHINE_ATTRIBUTES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MACHINE_ATTRIBUTES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3098,6 +3107,7 @@ impl ::core::default::Default for MEMORY_PRIORITY {
 }
 unsafe impl ::windows::core::Abi for MEMORY_PRIORITY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MEMORY_PRIORITY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3122,6 +3132,7 @@ impl ::core::fmt::Debug for MEMORY_PRIORITY_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for MEMORY_PRIORITY_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MEMORY_PRIORITY_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -3162,6 +3173,7 @@ impl ::core::fmt::Debug for NamespaceHandle {
 }
 unsafe impl ::windows::core::Abi for NamespaceHandle {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[doc = "*Required features: `\"Win32_System_Threading\"`, `\"Win32_Foundation\"`*"]
 #[cfg(feature = "Win32_Foundation")]
@@ -3439,6 +3451,7 @@ impl ::core::fmt::Debug for PEB {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Kernel"))]
 unsafe impl ::windows::core::Abi for PEB {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Kernel"))]
 impl ::core::cmp::PartialEq for PEB {
@@ -3479,6 +3492,7 @@ impl ::core::fmt::Debug for PEB_LDR_DATA {
 #[cfg(feature = "Win32_System_Kernel")]
 unsafe impl ::windows::core::Abi for PEB_LDR_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_System_Kernel")]
 impl ::core::cmp::PartialEq for PEB_LDR_DATA {
@@ -3526,6 +3540,7 @@ impl ::core::default::Default for POWER_REQUEST_CONTEXT_FLAGS {
 }
 unsafe impl ::windows::core::Abi for POWER_REQUEST_CONTEXT_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for POWER_REQUEST_CONTEXT_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3563,6 +3578,7 @@ impl ::core::default::Default for PROCESSINFOCLASS {
 }
 unsafe impl ::windows::core::Abi for PROCESSINFOCLASS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PROCESSINFOCLASS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3642,6 +3658,7 @@ impl ::core::default::Default for PROCESSOR_FEATURE_ID {
 }
 unsafe impl ::windows::core::Abi for PROCESSOR_FEATURE_ID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PROCESSOR_FEATURE_ID {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3707,6 +3724,7 @@ impl ::core::default::Default for PROCESS_ACCESS_RIGHTS {
 }
 unsafe impl ::windows::core::Abi for PROCESS_ACCESS_RIGHTS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PROCESS_ACCESS_RIGHTS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3762,6 +3780,7 @@ impl ::core::default::Default for PROCESS_AFFINITY_AUTO_UPDATE_FLAGS {
 }
 unsafe impl ::windows::core::Abi for PROCESS_AFFINITY_AUTO_UPDATE_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PROCESS_AFFINITY_AUTO_UPDATE_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3795,6 +3814,7 @@ impl ::core::fmt::Debug for PROCESS_BASIC_INFORMATION {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Kernel"))]
 unsafe impl ::windows::core::Abi for PROCESS_BASIC_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Kernel"))]
 impl ::core::cmp::PartialEq for PROCESS_BASIC_INFORMATION {
@@ -3889,6 +3909,7 @@ impl ::core::default::Default for PROCESS_CREATION_FLAGS {
 }
 unsafe impl ::windows::core::Abi for PROCESS_CREATION_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PROCESS_CREATION_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3946,6 +3967,7 @@ impl ::core::default::Default for PROCESS_DEP_FLAGS {
 }
 unsafe impl ::windows::core::Abi for PROCESS_DEP_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PROCESS_DEP_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3999,6 +4021,7 @@ impl ::core::fmt::Debug for PROCESS_DYNAMIC_EH_CONTINUATION_TARGET {
 }
 unsafe impl ::windows::core::Abi for PROCESS_DYNAMIC_EH_CONTINUATION_TARGET {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROCESS_DYNAMIC_EH_CONTINUATION_TARGET {
     fn eq(&self, other: &Self) -> bool {
@@ -4032,6 +4055,7 @@ impl ::core::fmt::Debug for PROCESS_DYNAMIC_EH_CONTINUATION_TARGETS_INFORMATION 
 }
 unsafe impl ::windows::core::Abi for PROCESS_DYNAMIC_EH_CONTINUATION_TARGETS_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROCESS_DYNAMIC_EH_CONTINUATION_TARGETS_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -4064,6 +4088,7 @@ impl ::core::fmt::Debug for PROCESS_DYNAMIC_ENFORCED_ADDRESS_RANGE {
 }
 unsafe impl ::windows::core::Abi for PROCESS_DYNAMIC_ENFORCED_ADDRESS_RANGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROCESS_DYNAMIC_ENFORCED_ADDRESS_RANGE {
     fn eq(&self, other: &Self) -> bool {
@@ -4097,6 +4122,7 @@ impl ::core::fmt::Debug for PROCESS_DYNAMIC_ENFORCED_ADDRESS_RANGES_INFORMATION 
 }
 unsafe impl ::windows::core::Abi for PROCESS_DYNAMIC_ENFORCED_ADDRESS_RANGES_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROCESS_DYNAMIC_ENFORCED_ADDRESS_RANGES_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -4135,6 +4161,7 @@ impl ::core::fmt::Debug for PROCESS_INFORMATION {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PROCESS_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for PROCESS_INFORMATION {
@@ -4189,6 +4216,7 @@ impl ::core::default::Default for PROCESS_INFORMATION_CLASS {
 }
 unsafe impl ::windows::core::Abi for PROCESS_INFORMATION_CLASS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PROCESS_INFORMATION_CLASS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4214,6 +4242,7 @@ impl ::core::fmt::Debug for PROCESS_LEAP_SECOND_INFO {
 }
 unsafe impl ::windows::core::Abi for PROCESS_LEAP_SECOND_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROCESS_LEAP_SECOND_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -4250,6 +4279,7 @@ impl ::core::fmt::Debug for PROCESS_MACHINE_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for PROCESS_MACHINE_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROCESS_MACHINE_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -4283,6 +4313,7 @@ impl ::core::fmt::Debug for PROCESS_MEMORY_EXHAUSTION_INFO {
 }
 unsafe impl ::windows::core::Abi for PROCESS_MEMORY_EXHAUSTION_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROCESS_MEMORY_EXHAUSTION_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -4316,6 +4347,7 @@ impl ::core::default::Default for PROCESS_MEMORY_EXHAUSTION_TYPE {
 }
 unsafe impl ::windows::core::Abi for PROCESS_MEMORY_EXHAUSTION_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PROCESS_MEMORY_EXHAUSTION_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4375,6 +4407,7 @@ impl ::core::default::Default for PROCESS_MITIGATION_POLICY {
 }
 unsafe impl ::windows::core::Abi for PROCESS_MITIGATION_POLICY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PROCESS_MITIGATION_POLICY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4402,6 +4435,7 @@ impl ::core::default::Default for PROCESS_NAME_FORMAT {
 }
 unsafe impl ::windows::core::Abi for PROCESS_NAME_FORMAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PROCESS_NAME_FORMAT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4434,6 +4468,7 @@ impl ::core::fmt::Debug for PROCESS_POWER_THROTTLING_STATE {
 }
 unsafe impl ::windows::core::Abi for PROCESS_POWER_THROTTLING_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROCESS_POWER_THROTTLING_STATE {
     fn eq(&self, other: &Self) -> bool {
@@ -4483,6 +4518,7 @@ impl ::core::default::Default for PROCESS_PROTECTION_LEVEL {
 }
 unsafe impl ::windows::core::Abi for PROCESS_PROTECTION_LEVEL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PROCESS_PROTECTION_LEVEL {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4507,6 +4543,7 @@ impl ::core::fmt::Debug for PROCESS_PROTECTION_LEVEL_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for PROCESS_PROTECTION_LEVEL_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROCESS_PROTECTION_LEVEL_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -4600,6 +4637,7 @@ impl ::core::default::Default for PROC_THREAD_ATTRIBUTE_NUM {
 }
 unsafe impl ::windows::core::Abi for PROC_THREAD_ATTRIBUTE_NUM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PROC_THREAD_ATTRIBUTE_NUM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4650,6 +4688,7 @@ impl ::core::fmt::Debug for PTP_POOL {
 }
 unsafe impl ::windows::core::Abi for PTP_POOL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[doc = "*Required features: `\"Win32_System_Threading\"`*"]
 pub type PTP_SIMPLE_CALLBACK = ::core::option::Option<unsafe extern "system" fn(instance: *mut TP_CALLBACK_INSTANCE, context: *mut ::core::ffi::c_void)>;
@@ -4697,6 +4736,7 @@ impl ::core::default::Default for QUEUE_USER_APC_FLAGS {
 }
 unsafe impl ::windows::core::Abi for QUEUE_USER_APC_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for QUEUE_USER_APC_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4872,6 +4912,7 @@ impl ::core::clone::Clone for REASON_CONTEXT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for REASON_CONTEXT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for REASON_CONTEXT {
@@ -4905,6 +4946,7 @@ impl ::core::clone::Clone for REASON_CONTEXT_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for REASON_CONTEXT_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for REASON_CONTEXT_0 {
@@ -4946,6 +4988,7 @@ impl ::core::fmt::Debug for REASON_CONTEXT_0_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for REASON_CONTEXT_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for REASON_CONTEXT_0_0 {
@@ -4983,6 +5026,7 @@ impl ::core::fmt::Debug for RTL_BARRIER {
 }
 unsafe impl ::windows::core::Abi for RTL_BARRIER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RTL_BARRIER {
     fn eq(&self, other: &Self) -> bool {
@@ -5013,6 +5057,7 @@ impl ::core::fmt::Debug for RTL_CONDITION_VARIABLE {
 }
 unsafe impl ::windows::core::Abi for RTL_CONDITION_VARIABLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RTL_CONDITION_VARIABLE {
     fn eq(&self, other: &Self) -> bool {
@@ -5053,6 +5098,7 @@ impl ::core::fmt::Debug for RTL_CRITICAL_SECTION {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Kernel"))]
 unsafe impl ::windows::core::Abi for RTL_CRITICAL_SECTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Kernel"))]
 impl ::core::cmp::PartialEq for RTL_CRITICAL_SECTION {
@@ -5099,6 +5145,7 @@ impl ::core::fmt::Debug for RTL_CRITICAL_SECTION_DEBUG {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Kernel"))]
 unsafe impl ::windows::core::Abi for RTL_CRITICAL_SECTION_DEBUG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Kernel"))]
 impl ::core::cmp::PartialEq for RTL_CRITICAL_SECTION_DEBUG {
@@ -5127,6 +5174,7 @@ impl ::core::clone::Clone for RTL_RUN_ONCE {
 }
 unsafe impl ::windows::core::Abi for RTL_RUN_ONCE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RTL_RUN_ONCE {
     fn eq(&self, other: &Self) -> bool {
@@ -5157,6 +5205,7 @@ impl ::core::fmt::Debug for RTL_SRWLOCK {
 }
 unsafe impl ::windows::core::Abi for RTL_SRWLOCK {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RTL_SRWLOCK {
     fn eq(&self, other: &Self) -> bool {
@@ -5202,6 +5251,7 @@ impl ::core::default::Default for RTL_UMS_THREAD_INFO_CLASS {
 }
 unsafe impl ::windows::core::Abi for RTL_UMS_THREAD_INFO_CLASS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RTL_UMS_THREAD_INFO_CLASS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5234,6 +5284,7 @@ impl ::core::fmt::Debug for RTL_USER_PROCESS_PARAMETERS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for RTL_USER_PROCESS_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for RTL_USER_PROCESS_PARAMETERS {
@@ -5441,6 +5492,7 @@ impl ::core::fmt::Debug for STARTUPINFOA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for STARTUPINFOA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for STARTUPINFOA {
@@ -5480,6 +5532,7 @@ impl ::core::fmt::Debug for STARTUPINFOEXA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for STARTUPINFOEXA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for STARTUPINFOEXA {
@@ -5519,6 +5572,7 @@ impl ::core::fmt::Debug for STARTUPINFOEXW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for STARTUPINFOEXW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for STARTUPINFOEXW {
@@ -5593,6 +5647,7 @@ impl ::core::fmt::Debug for STARTUPINFOW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for STARTUPINFOW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for STARTUPINFOW {
@@ -5653,6 +5708,7 @@ impl ::core::default::Default for STARTUPINFOW_FLAGS {
 }
 unsafe impl ::windows::core::Abi for STARTUPINFOW_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for STARTUPINFOW_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6459,6 +6515,7 @@ impl ::core::default::Default for THREADINFOCLASS {
 }
 unsafe impl ::windows::core::Abi for THREADINFOCLASS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for THREADINFOCLASS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6520,6 +6577,7 @@ impl ::core::default::Default for THREAD_ACCESS_RIGHTS {
 }
 unsafe impl ::windows::core::Abi for THREAD_ACCESS_RIGHTS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for THREAD_ACCESS_RIGHTS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6577,6 +6635,7 @@ impl ::core::default::Default for THREAD_CREATION_FLAGS {
 }
 unsafe impl ::windows::core::Abi for THREAD_CREATION_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for THREAD_CREATION_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6638,6 +6697,7 @@ impl ::core::default::Default for THREAD_INFORMATION_CLASS {
 }
 unsafe impl ::windows::core::Abi for THREAD_INFORMATION_CLASS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for THREAD_INFORMATION_CLASS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6668,6 +6728,7 @@ impl ::core::fmt::Debug for THREAD_POWER_THROTTLING_STATE {
 }
 unsafe impl ::windows::core::Abi for THREAD_POWER_THROTTLING_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for THREAD_POWER_THROTTLING_STATE {
     fn eq(&self, other: &Self) -> bool {
@@ -6719,6 +6780,7 @@ impl ::core::default::Default for THREAD_PRIORITY {
 }
 unsafe impl ::windows::core::Abi for THREAD_PRIORITY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for THREAD_PRIORITY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6747,6 +6809,7 @@ impl ::core::clone::Clone for TP_CALLBACK_ENVIRON_V3 {
 }
 unsafe impl ::windows::core::Abi for TP_CALLBACK_ENVIRON_V3 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TP_CALLBACK_ENVIRON_V3 {
     fn eq(&self, other: &Self) -> bool {
@@ -6775,6 +6838,7 @@ impl ::core::clone::Clone for TP_CALLBACK_ENVIRON_V3_1 {
 }
 unsafe impl ::windows::core::Abi for TP_CALLBACK_ENVIRON_V3_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TP_CALLBACK_ENVIRON_V3_1 {
     fn eq(&self, other: &Self) -> bool {
@@ -6805,6 +6869,7 @@ impl ::core::fmt::Debug for TP_CALLBACK_ENVIRON_V3_1_0 {
 }
 unsafe impl ::windows::core::Abi for TP_CALLBACK_ENVIRON_V3_1_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TP_CALLBACK_ENVIRON_V3_1_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -6846,6 +6911,7 @@ impl ::core::default::Default for TP_CALLBACK_PRIORITY {
 }
 unsafe impl ::windows::core::Abi for TP_CALLBACK_PRIORITY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TP_CALLBACK_PRIORITY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6873,6 +6939,7 @@ impl ::core::fmt::Debug for TP_POOL_STACK_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for TP_POOL_STACK_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TP_POOL_STACK_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -6947,6 +7014,7 @@ impl ::core::fmt::Debug for TimerQueueHandle {
 }
 unsafe impl ::windows::core::Abi for TimerQueueHandle {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[doc = "*Required features: `\"Win32_System_Threading\"`*"]
 #[inline]
@@ -7092,6 +7160,7 @@ impl ::core::fmt::Debug for UMS_SCHEDULER_STARTUP_INFO {
 #[cfg(feature = "Win32_System_SystemServices")]
 unsafe impl ::windows::core::Abi for UMS_SCHEDULER_STARTUP_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_System_SystemServices")]
 impl ::core::cmp::PartialEq for UMS_SCHEDULER_STARTUP_INFO {
@@ -7121,6 +7190,7 @@ impl ::core::clone::Clone for UMS_SYSTEM_THREAD_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for UMS_SYSTEM_THREAD_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for UMS_SYSTEM_THREAD_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -7147,6 +7217,7 @@ impl ::core::clone::Clone for UMS_SYSTEM_THREAD_INFORMATION_0 {
 }
 unsafe impl ::windows::core::Abi for UMS_SYSTEM_THREAD_INFORMATION_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for UMS_SYSTEM_THREAD_INFORMATION_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -7177,6 +7248,7 @@ impl ::core::fmt::Debug for UMS_SYSTEM_THREAD_INFORMATION_0_0 {
 }
 unsafe impl ::windows::core::Abi for UMS_SYSTEM_THREAD_INFORMATION_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for UMS_SYSTEM_THREAD_INFORMATION_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -7293,6 +7365,7 @@ impl ::core::default::Default for WORKER_THREAD_FLAGS {
 }
 unsafe impl ::windows::core::Abi for WORKER_THREAD_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WORKER_THREAD_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

@@ -46,6 +46,7 @@ impl ::core::fmt::Debug for SAFER_CODE_PROPERTIES_V1 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SAFER_CODE_PROPERTIES_V1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for SAFER_CODE_PROPERTIES_V1 {
@@ -118,6 +119,7 @@ impl ::core::fmt::Debug for SAFER_CODE_PROPERTIES_V2 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SAFER_CODE_PROPERTIES_V2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for SAFER_CODE_PROPERTIES_V2 {
@@ -158,6 +160,7 @@ impl ::core::default::Default for SAFER_COMPUTE_TOKEN_FROM_LEVEL_FLAGS {
 }
 unsafe impl ::windows::core::Abi for SAFER_COMPUTE_TOKEN_FROM_LEVEL_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SAFER_COMPUTE_TOKEN_FROM_LEVEL_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -236,6 +239,7 @@ impl ::core::fmt::Debug for SAFER_HASH_IDENTIFICATION {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SAFER_HASH_IDENTIFICATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for SAFER_HASH_IDENTIFICATION {
@@ -277,6 +281,7 @@ impl ::core::fmt::Debug for SAFER_HASH_IDENTIFICATION2 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SAFER_HASH_IDENTIFICATION2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for SAFER_HASH_IDENTIFICATION2 {
@@ -318,6 +323,7 @@ impl ::core::fmt::Debug for SAFER_IDENTIFICATION_HEADER {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SAFER_IDENTIFICATION_HEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for SAFER_IDENTIFICATION_HEADER {
@@ -360,6 +366,7 @@ impl ::core::default::Default for SAFER_IDENTIFICATION_TYPES {
 }
 unsafe impl ::windows::core::Abi for SAFER_IDENTIFICATION_TYPES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SAFER_IDENTIFICATION_TYPES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -433,6 +440,7 @@ impl ::core::default::Default for SAFER_OBJECT_INFO_CLASS {
 }
 unsafe impl ::windows::core::Abi for SAFER_OBJECT_INFO_CLASS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SAFER_OBJECT_INFO_CLASS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -465,6 +473,7 @@ impl ::core::fmt::Debug for SAFER_PATHNAME_IDENTIFICATION {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SAFER_PATHNAME_IDENTIFICATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for SAFER_PATHNAME_IDENTIFICATION {
@@ -515,6 +524,7 @@ impl ::core::default::Default for SAFER_POLICY_INFO_CLASS {
 }
 unsafe impl ::windows::core::Abi for SAFER_POLICY_INFO_CLASS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SAFER_POLICY_INFO_CLASS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -570,6 +580,7 @@ impl ::core::fmt::Debug for SAFER_URLZONE_IDENTIFICATION {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SAFER_URLZONE_IDENTIFICATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for SAFER_URLZONE_IDENTIFICATION {

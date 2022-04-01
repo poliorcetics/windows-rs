@@ -2,6 +2,11 @@
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IXboxLiveDeviceAddress(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXboxLiveDeviceAddress {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IXboxLiveDeviceAddress {
     type Vtable = IXboxLiveDeviceAddress_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf5bbd279_3c86_4b57_a31a_b9462408fd01);
@@ -32,6 +37,11 @@ pub struct IXboxLiveDeviceAddress_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IXboxLiveDeviceAddressStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXboxLiveDeviceAddressStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IXboxLiveDeviceAddressStatics {
     type Vtable = IXboxLiveDeviceAddressStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x5954a819_4a79_4931_827c_7f503e963263);
@@ -52,6 +62,11 @@ pub struct IXboxLiveDeviceAddressStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IXboxLiveEndpointPair(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXboxLiveEndpointPair {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IXboxLiveEndpointPair {
     type Vtable = IXboxLiveEndpointPair_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1e9a839b_813e_44e0_b87f_c87a093475e4);
@@ -85,6 +100,11 @@ pub struct IXboxLiveEndpointPair_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IXboxLiveEndpointPairCreationResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXboxLiveEndpointPairCreationResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IXboxLiveEndpointPairCreationResult {
     type Vtable = IXboxLiveEndpointPairCreationResult_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd9a8bb95_2aab_4d1e_9794_33ecc0dcf0fe);
@@ -101,6 +121,11 @@ pub struct IXboxLiveEndpointPairCreationResult_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IXboxLiveEndpointPairStateChangedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXboxLiveEndpointPairStateChangedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IXboxLiveEndpointPairStateChangedEventArgs {
     type Vtable = IXboxLiveEndpointPairStateChangedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x592e3b55_de08_44e7_ac3b_b9b9a169583a);
@@ -115,6 +140,11 @@ pub struct IXboxLiveEndpointPairStateChangedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IXboxLiveEndpointPairStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXboxLiveEndpointPairStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IXboxLiveEndpointPairStatics {
     type Vtable = IXboxLiveEndpointPairStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x64316b30_217a_4243_8ee1_6729281d27db);
@@ -129,6 +159,11 @@ pub struct IXboxLiveEndpointPairStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IXboxLiveEndpointPairTemplate(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXboxLiveEndpointPairTemplate {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IXboxLiveEndpointPairTemplate {
     type Vtable = IXboxLiveEndpointPairTemplate_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x6b286ecf_3457_40ce_b9a1_c0cfe0213ea7);
@@ -175,6 +210,11 @@ pub struct IXboxLiveEndpointPairTemplate_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IXboxLiveEndpointPairTemplateStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXboxLiveEndpointPairTemplateStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IXboxLiveEndpointPairTemplateStatics {
     type Vtable = IXboxLiveEndpointPairTemplateStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1e13137b_737b_4a23_bc64_0870f75655ba);
@@ -192,6 +232,11 @@ pub struct IXboxLiveEndpointPairTemplateStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IXboxLiveInboundEndpointPairCreatedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXboxLiveInboundEndpointPairCreatedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IXboxLiveInboundEndpointPairCreatedEventArgs {
     type Vtable = IXboxLiveInboundEndpointPairCreatedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xdc183b62_22ba_48d2_80de_c23968bd198b);
@@ -205,6 +250,11 @@ pub struct IXboxLiveInboundEndpointPairCreatedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IXboxLiveQualityOfServiceMeasurement(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXboxLiveQualityOfServiceMeasurement {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IXboxLiveQualityOfServiceMeasurement {
     type Vtable = IXboxLiveQualityOfServiceMeasurement_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x4d682bce_a5d6_47e6_a236_cfde5fbdf2ed);
@@ -254,6 +304,11 @@ pub struct IXboxLiveQualityOfServiceMeasurement_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IXboxLiveQualityOfServiceMeasurementStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXboxLiveQualityOfServiceMeasurementStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IXboxLiveQualityOfServiceMeasurementStatics {
     type Vtable = IXboxLiveQualityOfServiceMeasurementStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x6e352dca_23cf_440a_b077_5e30857a8234);
@@ -283,6 +338,11 @@ pub struct IXboxLiveQualityOfServiceMeasurementStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IXboxLiveQualityOfServiceMetricResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXboxLiveQualityOfServiceMetricResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IXboxLiveQualityOfServiceMetricResult {
     type Vtable = IXboxLiveQualityOfServiceMetricResult_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xaeec53d1_3561_4782_b0cf_d3ae29d9fa87);
@@ -299,6 +359,11 @@ pub struct IXboxLiveQualityOfServiceMetricResult_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IXboxLiveQualityOfServicePrivatePayloadResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXboxLiveQualityOfServicePrivatePayloadResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IXboxLiveQualityOfServicePrivatePayloadResult {
     type Vtable = IXboxLiveQualityOfServicePrivatePayloadResult_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x5a6302ae_6f38_41c0_9fcc_ea6cb978cafc);
@@ -429,11 +494,6 @@ impl XboxLiveDeviceAddress {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for XboxLiveDeviceAddress {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for XboxLiveDeviceAddress {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -447,7 +507,6 @@ impl ::core::fmt::Debug for XboxLiveDeviceAddress {
 }
 unsafe impl ::windows::core::RuntimeType for XboxLiveDeviceAddress {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.XboxLive.XboxLiveDeviceAddress;{f5bbd279-3c86-4b57-a31a-b9462408fd01})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -615,11 +674,6 @@ impl XboxLiveEndpointPair {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for XboxLiveEndpointPair {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for XboxLiveEndpointPair {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -633,7 +687,6 @@ impl ::core::fmt::Debug for XboxLiveEndpointPair {
 }
 unsafe impl ::windows::core::RuntimeType for XboxLiveEndpointPair {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.XboxLive.XboxLiveEndpointPair;{1e9a839b-813e-44e0-b87f-c87a093475e4})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -708,6 +761,7 @@ impl ::core::default::Default for XboxLiveEndpointPairCreationBehaviors {
 }
 unsafe impl ::windows::core::Abi for XboxLiveEndpointPairCreationBehaviors {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for XboxLiveEndpointPairCreationBehaviors {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -744,7 +798,6 @@ impl ::core::ops::Not for XboxLiveEndpointPairCreationBehaviors {
 }
 unsafe impl ::windows::core::RuntimeType for XboxLiveEndpointPairCreationBehaviors {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Networking.XboxLive.XboxLiveEndpointPairCreationBehaviors;u4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -786,11 +839,6 @@ impl XboxLiveEndpointPairCreationResult {
         }
     }
 }
-impl ::core::clone::Clone for XboxLiveEndpointPairCreationResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for XboxLiveEndpointPairCreationResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -804,7 +852,6 @@ impl ::core::fmt::Debug for XboxLiveEndpointPairCreationResult {
 }
 unsafe impl ::windows::core::RuntimeType for XboxLiveEndpointPairCreationResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.XboxLive.XboxLiveEndpointPairCreationResult;{d9a8bb95-2aab-4d1e-9794-33ecc0dcf0fe})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -886,6 +933,7 @@ impl ::core::default::Default for XboxLiveEndpointPairCreationStatus {
 }
 unsafe impl ::windows::core::Abi for XboxLiveEndpointPairCreationStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for XboxLiveEndpointPairCreationStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -894,7 +942,6 @@ impl ::core::fmt::Debug for XboxLiveEndpointPairCreationStatus {
 }
 unsafe impl ::windows::core::RuntimeType for XboxLiveEndpointPairCreationStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -925,6 +972,7 @@ impl ::core::default::Default for XboxLiveEndpointPairState {
 }
 unsafe impl ::windows::core::Abi for XboxLiveEndpointPairState {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for XboxLiveEndpointPairState {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -933,7 +981,6 @@ impl ::core::fmt::Debug for XboxLiveEndpointPairState {
 }
 unsafe impl ::windows::core::RuntimeType for XboxLiveEndpointPairState {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Networking.XboxLive.XboxLiveEndpointPairState;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -959,11 +1006,6 @@ impl XboxLiveEndpointPairStateChangedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for XboxLiveEndpointPairStateChangedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for XboxLiveEndpointPairStateChangedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -977,7 +1019,6 @@ impl ::core::fmt::Debug for XboxLiveEndpointPairStateChangedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for XboxLiveEndpointPairStateChangedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.XboxLive.XboxLiveEndpointPairStateChangedEventArgs;{592e3b55-de08-44e7-ac3b-b9b9a169583a})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1164,11 +1205,6 @@ impl XboxLiveEndpointPairTemplate {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for XboxLiveEndpointPairTemplate {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for XboxLiveEndpointPairTemplate {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1182,7 +1218,6 @@ impl ::core::fmt::Debug for XboxLiveEndpointPairTemplate {
 }
 unsafe impl ::windows::core::RuntimeType for XboxLiveEndpointPairTemplate {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate;{6b286ecf-3457-40ce-b9a1-c0cfe0213ea7})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1249,11 +1284,6 @@ impl XboxLiveInboundEndpointPairCreatedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for XboxLiveInboundEndpointPairCreatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for XboxLiveInboundEndpointPairCreatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1267,7 +1297,6 @@ impl ::core::fmt::Debug for XboxLiveInboundEndpointPairCreatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for XboxLiveInboundEndpointPairCreatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.XboxLive.XboxLiveInboundEndpointPairCreatedEventArgs;{dc183b62-22ba-48d2-80de-c23968bd198b})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1343,6 +1372,7 @@ impl ::core::default::Default for XboxLiveNetworkAccessKind {
 }
 unsafe impl ::windows::core::Abi for XboxLiveNetworkAccessKind {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for XboxLiveNetworkAccessKind {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1351,7 +1381,6 @@ impl ::core::fmt::Debug for XboxLiveNetworkAccessKind {
 }
 unsafe impl ::windows::core::RuntimeType for XboxLiveNetworkAccessKind {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Networking.XboxLive.XboxLiveNetworkAccessKind;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1560,11 +1589,6 @@ impl XboxLiveQualityOfServiceMeasurement {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for XboxLiveQualityOfServiceMeasurement {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for XboxLiveQualityOfServiceMeasurement {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1578,7 +1602,6 @@ impl ::core::fmt::Debug for XboxLiveQualityOfServiceMeasurement {
 }
 unsafe impl ::windows::core::RuntimeType for XboxLiveQualityOfServiceMeasurement {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement;{4d682bce-a5d6-47e6-a236-cfde5fbdf2ed})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1663,6 +1686,7 @@ impl ::core::default::Default for XboxLiveQualityOfServiceMeasurementStatus {
 }
 unsafe impl ::windows::core::Abi for XboxLiveQualityOfServiceMeasurementStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for XboxLiveQualityOfServiceMeasurementStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1671,7 +1695,6 @@ impl ::core::fmt::Debug for XboxLiveQualityOfServiceMeasurementStatus {
 }
 unsafe impl ::windows::core::RuntimeType for XboxLiveQualityOfServiceMeasurementStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1704,6 +1727,7 @@ impl ::core::default::Default for XboxLiveQualityOfServiceMetric {
 }
 unsafe impl ::windows::core::Abi for XboxLiveQualityOfServiceMetric {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for XboxLiveQualityOfServiceMetric {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1712,7 +1736,6 @@ impl ::core::fmt::Debug for XboxLiveQualityOfServiceMetric {
 }
 unsafe impl ::windows::core::RuntimeType for XboxLiveQualityOfServiceMetric {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1754,11 +1777,6 @@ impl XboxLiveQualityOfServiceMetricResult {
         }
     }
 }
-impl ::core::clone::Clone for XboxLiveQualityOfServiceMetricResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for XboxLiveQualityOfServiceMetricResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1772,7 +1790,6 @@ impl ::core::fmt::Debug for XboxLiveQualityOfServiceMetricResult {
 }
 unsafe impl ::windows::core::RuntimeType for XboxLiveQualityOfServiceMetricResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetricResult;{aeec53d1-3561-4782-b0cf-d3ae29d9fa87})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1856,11 +1873,6 @@ impl XboxLiveQualityOfServicePrivatePayloadResult {
         }
     }
 }
-impl ::core::clone::Clone for XboxLiveQualityOfServicePrivatePayloadResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for XboxLiveQualityOfServicePrivatePayloadResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1874,7 +1886,6 @@ impl ::core::fmt::Debug for XboxLiveQualityOfServicePrivatePayloadResult {
 }
 unsafe impl ::windows::core::RuntimeType for XboxLiveQualityOfServicePrivatePayloadResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.XboxLive.XboxLiveQualityOfServicePrivatePayloadResult;{5a6302ae-6f38-41c0-9fcc-ea6cb978cafc})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1950,6 +1961,7 @@ impl ::core::default::Default for XboxLiveSocketKind {
 }
 unsafe impl ::windows::core::Abi for XboxLiveSocketKind {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for XboxLiveSocketKind {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1958,7 +1970,6 @@ impl ::core::fmt::Debug for XboxLiveSocketKind {
 }
 unsafe impl ::windows::core::RuntimeType for XboxLiveSocketKind {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Networking.XboxLive.XboxLiveSocketKind;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }

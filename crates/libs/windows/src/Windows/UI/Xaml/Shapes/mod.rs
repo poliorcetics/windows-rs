@@ -11,11 +11,6 @@ impl Ellipse {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for Ellipse {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for Ellipse {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -29,7 +24,6 @@ impl ::core::fmt::Debug for Ellipse {
 }
 unsafe impl ::windows::core::RuntimeType for Ellipse {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Shapes.Ellipse;{70e05ac4-d38d-4bab-831f-4a22ef52ac86})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -218,6 +212,11 @@ unsafe impl ::core::marker::Sync for Ellipse {}
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IEllipse(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEllipse {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IEllipse {
     type Vtable = IEllipse_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x70e05ac4_d38d_4bab_831f_4a22ef52ac86);
@@ -230,6 +229,11 @@ pub struct IEllipse_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ILine(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILine {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ILine {
     type Vtable = ILine_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x46a5433d_4ffb_48df_8732_4e15c834816b);
@@ -250,6 +254,11 @@ pub struct ILine_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ILineStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILineStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ILineStatics {
     type Vtable = ILineStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x267c123d_6ea4_4c50_8b1d_50207aff1e8a);
@@ -266,6 +275,11 @@ pub struct ILineStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPath(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPath {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPath {
     type Vtable = IPath_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x78883609_3d57_4f3c_b8a5_6cabcac9711f);
@@ -286,6 +300,11 @@ pub struct IPath_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPathFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPathFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPathFactory {
     type Vtable = IPathFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x2340a4e3_5a86_4fc6_9a50_cbb93b828766);
@@ -299,6 +318,11 @@ pub struct IPathFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPathStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPathStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPathStatics {
     type Vtable = IPathStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf627e59d_87dc_4142_81f1_97fc7ff8641c);
@@ -312,6 +336,11 @@ pub struct IPathStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPolygon(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPolygon {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPolygon {
     type Vtable = IPolygon_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe3755c19_2e4d_4bcc_8d34_86871957fa01);
@@ -340,6 +369,11 @@ pub struct IPolygon_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPolygonStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPolygonStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPolygonStatics {
     type Vtable = IPolygonStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x362a8aab_d463_4366_9e1a_beba72810fb7);
@@ -354,6 +388,11 @@ pub struct IPolygonStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPolyline(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPolyline {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPolyline {
     type Vtable = IPolyline_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x91dc62f8_42b3_47f3_8476_c55124a7c4c6);
@@ -382,6 +421,11 @@ pub struct IPolyline_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPolylineStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPolylineStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPolylineStatics {
     type Vtable = IPolylineStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc7aa2cd1_a26c_43b0_aaa5_822fa64a11b9);
@@ -396,6 +440,11 @@ pub struct IPolylineStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IRectangle(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRectangle {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IRectangle {
     type Vtable = IRectangle_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x855bc230_8a11_4e18_a136_4bc21c7827b0);
@@ -412,6 +461,11 @@ pub struct IRectangle_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IRectangleStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRectangleStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IRectangleStatics {
     type Vtable = IRectangleStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9f25aa53_bb3a_4c3c_89db_6fbc0d1fa0cc);
@@ -426,6 +480,11 @@ pub struct IRectangleStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IShape(::windows::core::IUnknown);
+impl ::core::clone::Clone for IShape {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IShape {
     type Vtable = IShape_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x786f2b75_9aa0_454d_ae06_a2466e37c832);
@@ -512,6 +571,11 @@ pub struct IShape_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IShape2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IShape2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IShape2 {
     type Vtable = IShape2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x97248dba_49f2_49a4_a5dd_164df824db14);
@@ -528,6 +592,11 @@ pub struct IShape2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IShapeFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IShapeFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IShapeFactory {
     type Vtable = IShapeFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x4b717613_f6aa_48d5_9588_e1d188eacbc9);
@@ -541,6 +610,11 @@ pub struct IShapeFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IShapeStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IShapeStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IShapeStatics {
     type Vtable = IShapeStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1d7b4c55_9df3_48dc_9194_9d306faa6089);
@@ -658,11 +732,6 @@ impl Line {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for Line {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for Line {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -676,7 +745,6 @@ impl ::core::fmt::Debug for Line {
 }
 unsafe impl ::windows::core::RuntimeType for Line {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Shapes.Line;{46a5433d-4ffb-48df-8732-4e15c834816b})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -914,11 +982,6 @@ impl Path {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for Path {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for Path {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -932,7 +995,6 @@ impl ::core::fmt::Debug for Path {
 }
 unsafe impl ::windows::core::RuntimeType for Path {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Shapes.Path;{78883609-3d57-4f3c-b8a5-6cabcac9711f})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1179,11 +1241,6 @@ impl Polygon {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for Polygon {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for Polygon {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1197,7 +1254,6 @@ impl ::core::fmt::Debug for Polygon {
 }
 unsafe impl ::windows::core::RuntimeType for Polygon {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Shapes.Polygon;{e3755c19-2e4d-4bcc-8d34-86871957fa01})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1444,11 +1500,6 @@ impl Polyline {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for Polyline {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for Polyline {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1462,7 +1513,6 @@ impl ::core::fmt::Debug for Polyline {
 }
 unsafe impl ::windows::core::RuntimeType for Polyline {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Shapes.Polyline;{91dc62f8-42b3-47f3-8476-c55124a7c4c6})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1705,11 +1755,6 @@ impl Rectangle {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for Rectangle {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for Rectangle {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1723,7 +1768,6 @@ impl ::core::fmt::Debug for Rectangle {
 }
 unsafe impl ::windows::core::RuntimeType for Rectangle {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Shapes.Rectangle;{855bc230-8a11-4e18-a136-4bc21c7827b0})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2173,11 +2217,6 @@ impl Shape {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for Shape {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for Shape {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2191,7 +2230,6 @@ impl ::core::fmt::Debug for Shape {
 }
 unsafe impl ::windows::core::RuntimeType for Shape {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Shapes.Shape;{786f2b75-9aa0-454d-ae06-a2466e37c832})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

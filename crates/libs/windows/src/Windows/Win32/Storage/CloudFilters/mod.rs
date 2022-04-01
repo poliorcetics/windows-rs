@@ -25,6 +25,7 @@ impl ::core::default::Default for CF_CALLBACK_CANCEL_FLAGS {
 }
 unsafe impl ::windows::core::Abi for CF_CALLBACK_CANCEL_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CF_CALLBACK_CANCEL_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -80,6 +81,7 @@ impl ::core::default::Default for CF_CALLBACK_CLOSE_COMPLETION_FLAGS {
 }
 unsafe impl ::windows::core::Abi for CF_CALLBACK_CLOSE_COMPLETION_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CF_CALLBACK_CLOSE_COMPLETION_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -137,6 +139,7 @@ impl ::core::default::Default for CF_CALLBACK_DEHYDRATE_COMPLETION_FLAGS {
 }
 unsafe impl ::windows::core::Abi for CF_CALLBACK_DEHYDRATE_COMPLETION_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CF_CALLBACK_DEHYDRATE_COMPLETION_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -192,6 +195,7 @@ impl ::core::default::Default for CF_CALLBACK_DEHYDRATE_FLAGS {
 }
 unsafe impl ::windows::core::Abi for CF_CALLBACK_DEHYDRATE_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CF_CALLBACK_DEHYDRATE_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -253,6 +257,7 @@ impl ::core::default::Default for CF_CALLBACK_DEHYDRATION_REASON {
 }
 unsafe impl ::windows::core::Abi for CF_CALLBACK_DEHYDRATION_REASON {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CF_CALLBACK_DEHYDRATION_REASON {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -278,6 +283,7 @@ impl ::core::default::Default for CF_CALLBACK_DELETE_COMPLETION_FLAGS {
 }
 unsafe impl ::windows::core::Abi for CF_CALLBACK_DELETE_COMPLETION_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CF_CALLBACK_DELETE_COMPLETION_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -335,6 +341,7 @@ impl ::core::default::Default for CF_CALLBACK_DELETE_FLAGS {
 }
 unsafe impl ::windows::core::Abi for CF_CALLBACK_DELETE_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CF_CALLBACK_DELETE_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -392,6 +399,7 @@ impl ::core::default::Default for CF_CALLBACK_FETCH_DATA_FLAGS {
 }
 unsafe impl ::windows::core::Abi for CF_CALLBACK_FETCH_DATA_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CF_CALLBACK_FETCH_DATA_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -445,6 +453,7 @@ impl ::core::default::Default for CF_CALLBACK_FETCH_PLACEHOLDERS_FLAGS {
 }
 unsafe impl ::windows::core::Abi for CF_CALLBACK_FETCH_PLACEHOLDERS_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CF_CALLBACK_FETCH_PLACEHOLDERS_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -540,6 +549,7 @@ impl ::core::fmt::Debug for CF_CALLBACK_INFO {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_CorrelationVector"))]
 unsafe impl ::windows::core::Abi for CF_CALLBACK_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_CorrelationVector"))]
 impl ::core::cmp::PartialEq for CF_CALLBACK_INFO {
@@ -578,6 +588,7 @@ impl ::core::default::Default for CF_CALLBACK_OPEN_COMPLETION_FLAGS {
 }
 unsafe impl ::windows::core::Abi for CF_CALLBACK_OPEN_COMPLETION_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CF_CALLBACK_OPEN_COMPLETION_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -626,6 +637,7 @@ impl ::core::clone::Clone for CF_CALLBACK_PARAMETERS {
 }
 unsafe impl ::windows::core::Abi for CF_CALLBACK_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CF_CALLBACK_PARAMETERS {
     fn eq(&self, other: &Self) -> bool {
@@ -662,6 +674,7 @@ impl ::core::clone::Clone for CF_CALLBACK_PARAMETERS_0 {
 }
 unsafe impl ::windows::core::Abi for CF_CALLBACK_PARAMETERS_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CF_CALLBACK_PARAMETERS_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -688,6 +701,7 @@ impl ::core::clone::Clone for CF_CALLBACK_PARAMETERS_0_0 {
 }
 unsafe impl ::windows::core::Abi for CF_CALLBACK_PARAMETERS_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CF_CALLBACK_PARAMETERS_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -713,6 +727,7 @@ impl ::core::clone::Clone for CF_CALLBACK_PARAMETERS_0_0_0 {
 }
 unsafe impl ::windows::core::Abi for CF_CALLBACK_PARAMETERS_0_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CF_CALLBACK_PARAMETERS_0_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -744,6 +759,7 @@ impl ::core::fmt::Debug for CF_CALLBACK_PARAMETERS_0_0_0_0 {
 }
 unsafe impl ::windows::core::Abi for CF_CALLBACK_PARAMETERS_0_0_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CF_CALLBACK_PARAMETERS_0_0_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -774,6 +790,7 @@ impl ::core::fmt::Debug for CF_CALLBACK_PARAMETERS_0_1 {
 }
 unsafe impl ::windows::core::Abi for CF_CALLBACK_PARAMETERS_0_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CF_CALLBACK_PARAMETERS_0_1 {
     fn eq(&self, other: &Self) -> bool {
@@ -805,6 +822,7 @@ impl ::core::fmt::Debug for CF_CALLBACK_PARAMETERS_0_2 {
 }
 unsafe impl ::windows::core::Abi for CF_CALLBACK_PARAMETERS_0_2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CF_CALLBACK_PARAMETERS_0_2 {
     fn eq(&self, other: &Self) -> bool {
@@ -836,6 +854,7 @@ impl ::core::fmt::Debug for CF_CALLBACK_PARAMETERS_0_3 {
 }
 unsafe impl ::windows::core::Abi for CF_CALLBACK_PARAMETERS_0_3 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CF_CALLBACK_PARAMETERS_0_3 {
     fn eq(&self, other: &Self) -> bool {
@@ -866,6 +885,7 @@ impl ::core::fmt::Debug for CF_CALLBACK_PARAMETERS_0_4 {
 }
 unsafe impl ::windows::core::Abi for CF_CALLBACK_PARAMETERS_0_4 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CF_CALLBACK_PARAMETERS_0_4 {
     fn eq(&self, other: &Self) -> bool {
@@ -896,6 +916,7 @@ impl ::core::fmt::Debug for CF_CALLBACK_PARAMETERS_0_5 {
 }
 unsafe impl ::windows::core::Abi for CF_CALLBACK_PARAMETERS_0_5 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CF_CALLBACK_PARAMETERS_0_5 {
     fn eq(&self, other: &Self) -> bool {
@@ -932,6 +953,7 @@ impl ::core::fmt::Debug for CF_CALLBACK_PARAMETERS_0_6 {
 }
 unsafe impl ::windows::core::Abi for CF_CALLBACK_PARAMETERS_0_6 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CF_CALLBACK_PARAMETERS_0_6 {
     fn eq(&self, other: &Self) -> bool {
@@ -963,6 +985,7 @@ impl ::core::fmt::Debug for CF_CALLBACK_PARAMETERS_0_7 {
 }
 unsafe impl ::windows::core::Abi for CF_CALLBACK_PARAMETERS_0_7 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CF_CALLBACK_PARAMETERS_0_7 {
     fn eq(&self, other: &Self) -> bool {
@@ -993,6 +1016,7 @@ impl ::core::fmt::Debug for CF_CALLBACK_PARAMETERS_0_8 {
 }
 unsafe impl ::windows::core::Abi for CF_CALLBACK_PARAMETERS_0_8 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CF_CALLBACK_PARAMETERS_0_8 {
     fn eq(&self, other: &Self) -> bool {
@@ -1024,6 +1048,7 @@ impl ::core::fmt::Debug for CF_CALLBACK_PARAMETERS_0_9 {
 }
 unsafe impl ::windows::core::Abi for CF_CALLBACK_PARAMETERS_0_9 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CF_CALLBACK_PARAMETERS_0_9 {
     fn eq(&self, other: &Self) -> bool {
@@ -1055,6 +1080,7 @@ impl ::core::fmt::Debug for CF_CALLBACK_PARAMETERS_0_10 {
 }
 unsafe impl ::windows::core::Abi for CF_CALLBACK_PARAMETERS_0_10 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CF_CALLBACK_PARAMETERS_0_10 {
     fn eq(&self, other: &Self) -> bool {
@@ -1087,6 +1113,7 @@ impl ::core::fmt::Debug for CF_CALLBACK_PARAMETERS_0_11 {
 }
 unsafe impl ::windows::core::Abi for CF_CALLBACK_PARAMETERS_0_11 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CF_CALLBACK_PARAMETERS_0_11 {
     fn eq(&self, other: &Self) -> bool {
@@ -1123,6 +1150,7 @@ impl ::core::fmt::Debug for CF_CALLBACK_REGISTRATION {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_CorrelationVector"))]
 unsafe impl ::windows::core::Abi for CF_CALLBACK_REGISTRATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_CorrelationVector"))]
 impl ::core::cmp::PartialEq for CF_CALLBACK_REGISTRATION {
@@ -1157,6 +1185,7 @@ impl ::core::default::Default for CF_CALLBACK_RENAME_COMPLETION_FLAGS {
 }
 unsafe impl ::windows::core::Abi for CF_CALLBACK_RENAME_COMPLETION_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CF_CALLBACK_RENAME_COMPLETION_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1216,6 +1245,7 @@ impl ::core::default::Default for CF_CALLBACK_RENAME_FLAGS {
 }
 unsafe impl ::windows::core::Abi for CF_CALLBACK_RENAME_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CF_CALLBACK_RENAME_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1295,6 +1325,7 @@ impl ::core::default::Default for CF_CALLBACK_TYPE {
 }
 unsafe impl ::windows::core::Abi for CF_CALLBACK_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CF_CALLBACK_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1322,6 +1353,7 @@ impl ::core::default::Default for CF_CALLBACK_VALIDATE_DATA_FLAGS {
 }
 unsafe impl ::windows::core::Abi for CF_CALLBACK_VALIDATE_DATA_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CF_CALLBACK_VALIDATE_DATA_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1382,6 +1414,7 @@ impl ::core::fmt::Debug for CF_CONNECTION_KEY {
 }
 unsafe impl ::windows::core::Abi for CF_CONNECTION_KEY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[doc = "*Required features: `\"Win32_Storage_CloudFilters\"`*"]
 #[repr(transparent)]
@@ -1408,6 +1441,7 @@ impl ::core::default::Default for CF_CONNECT_FLAGS {
 }
 unsafe impl ::windows::core::Abi for CF_CONNECT_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CF_CONNECT_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1471,6 +1505,7 @@ impl ::core::default::Default for CF_CONVERT_FLAGS {
 }
 unsafe impl ::windows::core::Abi for CF_CONVERT_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CF_CONVERT_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1526,6 +1561,7 @@ impl ::core::default::Default for CF_CREATE_FLAGS {
 }
 unsafe impl ::windows::core::Abi for CF_CREATE_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CF_CREATE_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1581,6 +1617,7 @@ impl ::core::default::Default for CF_DEHYDRATE_FLAGS {
 }
 unsafe impl ::windows::core::Abi for CF_DEHYDRATE_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CF_DEHYDRATE_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1634,6 +1671,7 @@ impl ::core::fmt::Debug for CF_FILE_RANGE {
 }
 unsafe impl ::windows::core::Abi for CF_FILE_RANGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CF_FILE_RANGE {
     fn eq(&self, other: &Self) -> bool {
@@ -1670,6 +1708,7 @@ impl ::core::fmt::Debug for CF_FS_METADATA {
 #[cfg(feature = "Win32_Storage_FileSystem")]
 unsafe impl ::windows::core::Abi for CF_FS_METADATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Storage_FileSystem")]
 impl ::core::cmp::PartialEq for CF_FS_METADATA {
@@ -1706,6 +1745,7 @@ impl ::core::default::Default for CF_HARDLINK_POLICY {
 }
 unsafe impl ::windows::core::Abi for CF_HARDLINK_POLICY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CF_HARDLINK_POLICY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1759,6 +1799,7 @@ impl ::core::default::Default for CF_HYDRATE_FLAGS {
 }
 unsafe impl ::windows::core::Abi for CF_HYDRATE_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CF_HYDRATE_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1812,6 +1853,7 @@ impl ::core::fmt::Debug for CF_HYDRATION_POLICY {
 }
 unsafe impl ::windows::core::Abi for CF_HYDRATION_POLICY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CF_HYDRATION_POLICY {
     fn eq(&self, other: &Self) -> bool {
@@ -1851,6 +1893,7 @@ impl ::core::default::Default for CF_HYDRATION_POLICY_MODIFIER {
 }
 unsafe impl ::windows::core::Abi for CF_HYDRATION_POLICY_MODIFIER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CF_HYDRATION_POLICY_MODIFIER {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1903,6 +1946,7 @@ impl ::core::fmt::Debug for CF_HYDRATION_POLICY_MODIFIER_USHORT {
 }
 unsafe impl ::windows::core::Abi for CF_HYDRATION_POLICY_MODIFIER_USHORT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CF_HYDRATION_POLICY_MODIFIER_USHORT {
     fn eq(&self, other: &Self) -> bool {
@@ -1940,6 +1984,7 @@ impl ::core::default::Default for CF_HYDRATION_POLICY_PRIMARY {
 }
 unsafe impl ::windows::core::Abi for CF_HYDRATION_POLICY_PRIMARY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CF_HYDRATION_POLICY_PRIMARY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1964,6 +2009,7 @@ impl ::core::fmt::Debug for CF_HYDRATION_POLICY_PRIMARY_USHORT {
 }
 unsafe impl ::windows::core::Abi for CF_HYDRATION_POLICY_PRIMARY_USHORT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CF_HYDRATION_POLICY_PRIMARY_USHORT {
     fn eq(&self, other: &Self) -> bool {
@@ -2023,6 +2069,7 @@ impl ::core::default::Default for CF_INSYNC_POLICY {
 }
 unsafe impl ::windows::core::Abi for CF_INSYNC_POLICY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CF_INSYNC_POLICY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2078,6 +2125,7 @@ impl ::core::default::Default for CF_IN_SYNC_STATE {
 }
 unsafe impl ::windows::core::Abi for CF_IN_SYNC_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CF_IN_SYNC_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2117,6 +2165,7 @@ impl ::core::default::Default for CF_OPEN_FILE_FLAGS {
 }
 unsafe impl ::windows::core::Abi for CF_OPEN_FILE_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CF_OPEN_FILE_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2170,6 +2219,7 @@ impl ::core::default::Default for CF_OPERATION_ACK_DATA_FLAGS {
 }
 unsafe impl ::windows::core::Abi for CF_OPERATION_ACK_DATA_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CF_OPERATION_ACK_DATA_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2223,6 +2273,7 @@ impl ::core::default::Default for CF_OPERATION_ACK_DEHYDRATE_FLAGS {
 }
 unsafe impl ::windows::core::Abi for CF_OPERATION_ACK_DEHYDRATE_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CF_OPERATION_ACK_DEHYDRATE_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2276,6 +2327,7 @@ impl ::core::default::Default for CF_OPERATION_ACK_DELETE_FLAGS {
 }
 unsafe impl ::windows::core::Abi for CF_OPERATION_ACK_DELETE_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CF_OPERATION_ACK_DELETE_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2329,6 +2381,7 @@ impl ::core::default::Default for CF_OPERATION_ACK_RENAME_FLAGS {
 }
 unsafe impl ::windows::core::Abi for CF_OPERATION_ACK_RENAME_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CF_OPERATION_ACK_RENAME_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2392,6 +2445,7 @@ impl ::core::fmt::Debug for CF_OPERATION_INFO {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_CorrelationVector"))]
 unsafe impl ::windows::core::Abi for CF_OPERATION_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_CorrelationVector"))]
 impl ::core::cmp::PartialEq for CF_OPERATION_INFO {
@@ -2425,6 +2479,7 @@ impl ::core::clone::Clone for CF_OPERATION_PARAMETERS {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Storage_FileSystem"))]
 unsafe impl ::windows::core::Abi for CF_OPERATION_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Storage_FileSystem"))]
 impl ::core::cmp::PartialEq for CF_OPERATION_PARAMETERS {
@@ -2464,6 +2519,7 @@ impl ::core::clone::Clone for CF_OPERATION_PARAMETERS_0 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Storage_FileSystem"))]
 unsafe impl ::windows::core::Abi for CF_OPERATION_PARAMETERS_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Storage_FileSystem"))]
 impl ::core::cmp::PartialEq for CF_OPERATION_PARAMETERS_0 {
@@ -2505,6 +2561,7 @@ impl ::core::fmt::Debug for CF_OPERATION_PARAMETERS_0_0 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Storage_FileSystem"))]
 unsafe impl ::windows::core::Abi for CF_OPERATION_PARAMETERS_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Storage_FileSystem"))]
 impl ::core::cmp::PartialEq for CF_OPERATION_PARAMETERS_0_0 {
@@ -2546,6 +2603,7 @@ impl ::core::fmt::Debug for CF_OPERATION_PARAMETERS_0_1 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Storage_FileSystem"))]
 unsafe impl ::windows::core::Abi for CF_OPERATION_PARAMETERS_0_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Storage_FileSystem"))]
 impl ::core::cmp::PartialEq for CF_OPERATION_PARAMETERS_0_1 {
@@ -2585,6 +2643,7 @@ impl ::core::fmt::Debug for CF_OPERATION_PARAMETERS_0_2 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Storage_FileSystem"))]
 unsafe impl ::windows::core::Abi for CF_OPERATION_PARAMETERS_0_2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Storage_FileSystem"))]
 impl ::core::cmp::PartialEq for CF_OPERATION_PARAMETERS_0_2 {
@@ -2624,6 +2683,7 @@ impl ::core::fmt::Debug for CF_OPERATION_PARAMETERS_0_3 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Storage_FileSystem"))]
 unsafe impl ::windows::core::Abi for CF_OPERATION_PARAMETERS_0_3 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Storage_FileSystem"))]
 impl ::core::cmp::PartialEq for CF_OPERATION_PARAMETERS_0_3 {
@@ -2665,6 +2725,7 @@ impl ::core::fmt::Debug for CF_OPERATION_PARAMETERS_0_4 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Storage_FileSystem"))]
 unsafe impl ::windows::core::Abi for CF_OPERATION_PARAMETERS_0_4 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Storage_FileSystem"))]
 impl ::core::cmp::PartialEq for CF_OPERATION_PARAMETERS_0_4 {
@@ -2707,6 +2768,7 @@ impl ::core::fmt::Debug for CF_OPERATION_PARAMETERS_0_5 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Storage_FileSystem"))]
 unsafe impl ::windows::core::Abi for CF_OPERATION_PARAMETERS_0_5 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Storage_FileSystem"))]
 impl ::core::cmp::PartialEq for CF_OPERATION_PARAMETERS_0_5 {
@@ -2749,6 +2811,7 @@ impl ::core::fmt::Debug for CF_OPERATION_PARAMETERS_0_6 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Storage_FileSystem"))]
 unsafe impl ::windows::core::Abi for CF_OPERATION_PARAMETERS_0_6 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Storage_FileSystem"))]
 impl ::core::cmp::PartialEq for CF_OPERATION_PARAMETERS_0_6 {
@@ -2792,6 +2855,7 @@ impl ::core::fmt::Debug for CF_OPERATION_PARAMETERS_0_7 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Storage_FileSystem"))]
 unsafe impl ::windows::core::Abi for CF_OPERATION_PARAMETERS_0_7 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Storage_FileSystem"))]
 impl ::core::cmp::PartialEq for CF_OPERATION_PARAMETERS_0_7 {
@@ -2828,6 +2892,7 @@ impl ::core::default::Default for CF_OPERATION_RESTART_HYDRATION_FLAGS {
 }
 unsafe impl ::windows::core::Abi for CF_OPERATION_RESTART_HYDRATION_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CF_OPERATION_RESTART_HYDRATION_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2881,6 +2946,7 @@ impl ::core::default::Default for CF_OPERATION_RETRIEVE_DATA_FLAGS {
 }
 unsafe impl ::windows::core::Abi for CF_OPERATION_RETRIEVE_DATA_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CF_OPERATION_RETRIEVE_DATA_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2934,6 +3000,7 @@ impl ::core::default::Default for CF_OPERATION_TRANSFER_DATA_FLAGS {
 }
 unsafe impl ::windows::core::Abi for CF_OPERATION_TRANSFER_DATA_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CF_OPERATION_TRANSFER_DATA_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2991,6 +3058,7 @@ impl ::core::default::Default for CF_OPERATION_TRANSFER_PLACEHOLDERS_FLAGS {
 }
 unsafe impl ::windows::core::Abi for CF_OPERATION_TRANSFER_PLACEHOLDERS_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CF_OPERATION_TRANSFER_PLACEHOLDERS_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3058,6 +3126,7 @@ impl ::core::default::Default for CF_OPERATION_TYPE {
 }
 unsafe impl ::windows::core::Abi for CF_OPERATION_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CF_OPERATION_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3091,6 +3160,7 @@ impl ::core::default::Default for CF_PIN_STATE {
 }
 unsafe impl ::windows::core::Abi for CF_PIN_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CF_PIN_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3120,6 +3190,7 @@ impl ::core::fmt::Debug for CF_PLACEHOLDER_BASIC_INFO {
 }
 unsafe impl ::windows::core::Abi for CF_PLACEHOLDER_BASIC_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CF_PLACEHOLDER_BASIC_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -3159,6 +3230,7 @@ impl ::core::default::Default for CF_PLACEHOLDER_CREATE_FLAGS {
 }
 unsafe impl ::windows::core::Abi for CF_PLACEHOLDER_CREATE_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CF_PLACEHOLDER_CREATE_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3222,6 +3294,7 @@ impl ::core::fmt::Debug for CF_PLACEHOLDER_CREATE_INFO {
 #[cfg(feature = "Win32_Storage_FileSystem")]
 unsafe impl ::windows::core::Abi for CF_PLACEHOLDER_CREATE_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Storage_FileSystem")]
 impl ::core::cmp::PartialEq for CF_PLACEHOLDER_CREATE_INFO {
@@ -3258,6 +3331,7 @@ impl ::core::default::Default for CF_PLACEHOLDER_INFO_CLASS {
 }
 unsafe impl ::windows::core::Abi for CF_PLACEHOLDER_INFO_CLASS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CF_PLACEHOLDER_INFO_CLASS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3289,6 +3363,7 @@ impl ::core::default::Default for CF_PLACEHOLDER_MANAGEMENT_POLICY {
 }
 unsafe impl ::windows::core::Abi for CF_PLACEHOLDER_MANAGEMENT_POLICY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CF_PLACEHOLDER_MANAGEMENT_POLICY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3320,6 +3395,7 @@ impl ::core::default::Default for CF_PLACEHOLDER_RANGE_INFO_CLASS {
 }
 unsafe impl ::windows::core::Abi for CF_PLACEHOLDER_RANGE_INFO_CLASS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CF_PLACEHOLDER_RANGE_INFO_CLASS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3364,6 +3440,7 @@ impl ::core::fmt::Debug for CF_PLACEHOLDER_STANDARD_INFO {
 }
 unsafe impl ::windows::core::Abi for CF_PLACEHOLDER_STANDARD_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CF_PLACEHOLDER_STANDARD_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -3409,6 +3486,7 @@ impl ::core::default::Default for CF_PLACEHOLDER_STATE {
 }
 unsafe impl ::windows::core::Abi for CF_PLACEHOLDER_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CF_PLACEHOLDER_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3463,6 +3541,7 @@ impl ::core::fmt::Debug for CF_PLATFORM_INFO {
 }
 unsafe impl ::windows::core::Abi for CF_PLATFORM_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CF_PLATFORM_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -3494,6 +3573,7 @@ impl ::core::fmt::Debug for CF_POPULATION_POLICY {
 }
 unsafe impl ::windows::core::Abi for CF_POPULATION_POLICY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CF_POPULATION_POLICY {
     fn eq(&self, other: &Self) -> bool {
@@ -3525,6 +3605,7 @@ impl ::core::default::Default for CF_POPULATION_POLICY_MODIFIER {
 }
 unsafe impl ::windows::core::Abi for CF_POPULATION_POLICY_MODIFIER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CF_POPULATION_POLICY_MODIFIER {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3577,6 +3658,7 @@ impl ::core::fmt::Debug for CF_POPULATION_POLICY_MODIFIER_USHORT {
 }
 unsafe impl ::windows::core::Abi for CF_POPULATION_POLICY_MODIFIER_USHORT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CF_POPULATION_POLICY_MODIFIER_USHORT {
     fn eq(&self, other: &Self) -> bool {
@@ -3612,6 +3694,7 @@ impl ::core::default::Default for CF_POPULATION_POLICY_PRIMARY {
 }
 unsafe impl ::windows::core::Abi for CF_POPULATION_POLICY_PRIMARY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CF_POPULATION_POLICY_PRIMARY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3636,6 +3719,7 @@ impl ::core::fmt::Debug for CF_POPULATION_POLICY_PRIMARY_USHORT {
 }
 unsafe impl ::windows::core::Abi for CF_POPULATION_POLICY_PRIMARY_USHORT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CF_POPULATION_POLICY_PRIMARY_USHORT {
     fn eq(&self, other: &Self) -> bool {
@@ -3672,6 +3756,7 @@ impl ::core::fmt::Debug for CF_PROCESS_INFO {
 }
 unsafe impl ::windows::core::Abi for CF_PROCESS_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CF_PROCESS_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -3709,6 +3794,7 @@ impl ::core::default::Default for CF_REGISTER_FLAGS {
 }
 unsafe impl ::windows::core::Abi for CF_REGISTER_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CF_REGISTER_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3764,6 +3850,7 @@ impl ::core::default::Default for CF_REVERT_FLAGS {
 }
 unsafe impl ::windows::core::Abi for CF_REVERT_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CF_REVERT_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3817,6 +3904,7 @@ impl ::core::default::Default for CF_SET_IN_SYNC_FLAGS {
 }
 unsafe impl ::windows::core::Abi for CF_SET_IN_SYNC_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CF_SET_IN_SYNC_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3876,6 +3964,7 @@ impl ::core::default::Default for CF_SET_PIN_FLAGS {
 }
 unsafe impl ::windows::core::Abi for CF_SET_PIN_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CF_SET_PIN_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3933,6 +4022,7 @@ impl ::core::fmt::Debug for CF_SYNC_POLICIES {
 }
 unsafe impl ::windows::core::Abi for CF_SYNC_POLICIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CF_SYNC_POLICIES {
     fn eq(&self, other: &Self) -> bool {
@@ -3984,6 +4074,7 @@ impl ::core::default::Default for CF_SYNC_PROVIDER_STATUS {
 }
 unsafe impl ::windows::core::Abi for CF_SYNC_PROVIDER_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CF_SYNC_PROVIDER_STATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4043,6 +4134,7 @@ impl ::core::fmt::Debug for CF_SYNC_REGISTRATION {
 }
 unsafe impl ::windows::core::Abi for CF_SYNC_REGISTRATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CF_SYNC_REGISTRATION {
     fn eq(&self, other: &Self) -> bool {
@@ -4073,6 +4165,7 @@ impl ::core::fmt::Debug for CF_SYNC_ROOT_BASIC_INFO {
 }
 unsafe impl ::windows::core::Abi for CF_SYNC_ROOT_BASIC_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CF_SYNC_ROOT_BASIC_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -4108,6 +4201,7 @@ impl ::core::default::Default for CF_SYNC_ROOT_INFO_CLASS {
 }
 unsafe impl ::windows::core::Abi for CF_SYNC_ROOT_INFO_CLASS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CF_SYNC_ROOT_INFO_CLASS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4134,6 +4228,7 @@ impl ::core::fmt::Debug for CF_SYNC_ROOT_PROVIDER_INFO {
 }
 unsafe impl ::windows::core::Abi for CF_SYNC_ROOT_PROVIDER_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CF_SYNC_ROOT_PROVIDER_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -4184,6 +4279,7 @@ impl ::core::fmt::Debug for CF_SYNC_ROOT_STANDARD_INFO {
 }
 unsafe impl ::windows::core::Abi for CF_SYNC_ROOT_STANDARD_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CF_SYNC_ROOT_STANDARD_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -4219,6 +4315,7 @@ impl ::core::fmt::Debug for CF_SYNC_STATUS {
 }
 unsafe impl ::windows::core::Abi for CF_SYNC_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CF_SYNC_STATUS {
     fn eq(&self, other: &Self) -> bool {
@@ -4272,6 +4369,7 @@ impl ::core::default::Default for CF_UPDATE_FLAGS {
 }
 unsafe impl ::windows::core::Abi for CF_UPDATE_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CF_UPDATE_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

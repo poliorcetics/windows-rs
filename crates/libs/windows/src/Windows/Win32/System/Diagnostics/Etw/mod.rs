@@ -19,6 +19,7 @@ impl ::core::fmt::Debug for CLASSIC_EVENT_ID {
 }
 unsafe impl ::windows::core::Abi for CLASSIC_EVENT_ID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CLASSIC_EVENT_ID {
     fn eq(&self, other: &Self) -> bool {
@@ -133,6 +134,7 @@ impl ::core::default::Default for DECODING_SOURCE {
 }
 unsafe impl ::windows::core::Abi for DECODING_SOURCE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DECODING_SOURCE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -167,6 +169,7 @@ impl ::core::default::Default for ENABLECALLBACK_ENABLED_STATE {
 }
 unsafe impl ::windows::core::Abi for ENABLECALLBACK_ENABLED_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ENABLECALLBACK_ENABLED_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -196,6 +199,7 @@ impl ::core::fmt::Debug for ENABLE_TRACE_PARAMETERS {
 }
 unsafe impl ::windows::core::Abi for ENABLE_TRACE_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ENABLE_TRACE_PARAMETERS {
     fn eq(&self, other: &Self) -> bool {
@@ -230,6 +234,7 @@ impl ::core::fmt::Debug for ENABLE_TRACE_PARAMETERS_V1 {
 }
 unsafe impl ::windows::core::Abi for ENABLE_TRACE_PARAMETERS_V1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ENABLE_TRACE_PARAMETERS_V1 {
     fn eq(&self, other: &Self) -> bool {
@@ -268,6 +273,7 @@ impl ::core::clone::Clone for ETW_BUFFER_CONTEXT {
 }
 unsafe impl ::windows::core::Abi for ETW_BUFFER_CONTEXT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ETW_BUFFER_CONTEXT {
     fn eq(&self, other: &Self) -> bool {
@@ -294,6 +300,7 @@ impl ::core::clone::Clone for ETW_BUFFER_CONTEXT_0 {
 }
 unsafe impl ::windows::core::Abi for ETW_BUFFER_CONTEXT_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ETW_BUFFER_CONTEXT_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -325,6 +332,7 @@ impl ::core::fmt::Debug for ETW_BUFFER_CONTEXT_0_0 {
 }
 unsafe impl ::windows::core::Abi for ETW_BUFFER_CONTEXT_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ETW_BUFFER_CONTEXT_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -364,6 +372,7 @@ impl ::core::default::Default for ETW_COMPRESSION_RESUMPTION_MODE {
 }
 unsafe impl ::windows::core::Abi for ETW_COMPRESSION_RESUMPTION_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ETW_COMPRESSION_RESUMPTION_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -416,6 +425,7 @@ impl ::core::fmt::Debug for ETW_PMC_COUNTER_OWNER {
 }
 unsafe impl ::windows::core::Abi for ETW_PMC_COUNTER_OWNER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ETW_PMC_COUNTER_OWNER {
     fn eq(&self, other: &Self) -> bool {
@@ -448,6 +458,7 @@ impl ::core::fmt::Debug for ETW_PMC_COUNTER_OWNERSHIP_STATUS {
 }
 unsafe impl ::windows::core::Abi for ETW_PMC_COUNTER_OWNERSHIP_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ETW_PMC_COUNTER_OWNERSHIP_STATUS {
     fn eq(&self, other: &Self) -> bool {
@@ -485,6 +496,7 @@ impl ::core::default::Default for ETW_PMC_COUNTER_OWNER_TYPE {
 }
 unsafe impl ::windows::core::Abi for ETW_PMC_COUNTER_OWNER_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ETW_PMC_COUNTER_OWNER_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -518,6 +530,7 @@ impl ::core::default::Default for ETW_PROCESS_HANDLE_INFO_TYPE {
 }
 unsafe impl ::windows::core::Abi for ETW_PROCESS_HANDLE_INFO_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ETW_PROCESS_HANDLE_INFO_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -547,6 +560,7 @@ impl ::core::default::Default for ETW_PROVIDER_TRAIT_TYPE {
 }
 unsafe impl ::windows::core::Abi for ETW_PROVIDER_TRAIT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ETW_PROVIDER_TRAIT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -596,6 +610,7 @@ impl ::core::fmt::Debug for ETW_TRACE_PARTITION_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for ETW_TRACE_PARTITION_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ETW_TRACE_PARTITION_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -629,6 +644,7 @@ impl ::core::fmt::Debug for ETW_TRACE_PARTITION_INFORMATION_V2 {
 }
 unsafe impl ::windows::core::Abi for ETW_TRACE_PARTITION_INFORMATION_V2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ETW_TRACE_PARTITION_INFORMATION_V2 {
     fn eq(&self, other: &Self) -> bool {
@@ -678,6 +694,7 @@ impl ::core::default::Default for EVENTSECURITYOPERATION {
 }
 unsafe impl ::windows::core::Abi for EVENTSECURITYOPERATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EVENTSECURITYOPERATION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -709,6 +726,7 @@ impl ::core::clone::Clone for EVENT_DATA_DESCRIPTOR {
 }
 unsafe impl ::windows::core::Abi for EVENT_DATA_DESCRIPTOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EVENT_DATA_DESCRIPTOR {
     fn eq(&self, other: &Self) -> bool {
@@ -735,6 +753,7 @@ impl ::core::clone::Clone for EVENT_DATA_DESCRIPTOR_0 {
 }
 unsafe impl ::windows::core::Abi for EVENT_DATA_DESCRIPTOR_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EVENT_DATA_DESCRIPTOR_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -767,6 +786,7 @@ impl ::core::fmt::Debug for EVENT_DATA_DESCRIPTOR_0_0 {
 }
 unsafe impl ::windows::core::Abi for EVENT_DATA_DESCRIPTOR_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EVENT_DATA_DESCRIPTOR_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -811,6 +831,7 @@ impl ::core::fmt::Debug for EVENT_DESCRIPTOR {
 }
 unsafe impl ::windows::core::Abi for EVENT_DESCRIPTOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EVENT_DESCRIPTOR {
     fn eq(&self, other: &Self) -> bool {
@@ -865,6 +886,7 @@ impl ::core::fmt::Debug for EVENT_EXTENDED_ITEM_EVENT_KEY {
 }
 unsafe impl ::windows::core::Abi for EVENT_EXTENDED_ITEM_EVENT_KEY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EVENT_EXTENDED_ITEM_EVENT_KEY {
     fn eq(&self, other: &Self) -> bool {
@@ -897,6 +919,7 @@ impl ::core::fmt::Debug for EVENT_EXTENDED_ITEM_INSTANCE {
 }
 unsafe impl ::windows::core::Abi for EVENT_EXTENDED_ITEM_INSTANCE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EVENT_EXTENDED_ITEM_INSTANCE {
     fn eq(&self, other: &Self) -> bool {
@@ -927,6 +950,7 @@ impl ::core::fmt::Debug for EVENT_EXTENDED_ITEM_PEBS_INDEX {
 }
 unsafe impl ::windows::core::Abi for EVENT_EXTENDED_ITEM_PEBS_INDEX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EVENT_EXTENDED_ITEM_PEBS_INDEX {
     fn eq(&self, other: &Self) -> bool {
@@ -957,6 +981,7 @@ impl ::core::fmt::Debug for EVENT_EXTENDED_ITEM_PMC_COUNTERS {
 }
 unsafe impl ::windows::core::Abi for EVENT_EXTENDED_ITEM_PMC_COUNTERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EVENT_EXTENDED_ITEM_PMC_COUNTERS {
     fn eq(&self, other: &Self) -> bool {
@@ -987,6 +1012,7 @@ impl ::core::fmt::Debug for EVENT_EXTENDED_ITEM_PROCESS_START_KEY {
 }
 unsafe impl ::windows::core::Abi for EVENT_EXTENDED_ITEM_PROCESS_START_KEY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EVENT_EXTENDED_ITEM_PROCESS_START_KEY {
     fn eq(&self, other: &Self) -> bool {
@@ -1017,6 +1043,7 @@ impl ::core::fmt::Debug for EVENT_EXTENDED_ITEM_RELATED_ACTIVITYID {
 }
 unsafe impl ::windows::core::Abi for EVENT_EXTENDED_ITEM_RELATED_ACTIVITYID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EVENT_EXTENDED_ITEM_RELATED_ACTIVITYID {
     fn eq(&self, other: &Self) -> bool {
@@ -1049,6 +1076,7 @@ impl ::core::fmt::Debug for EVENT_EXTENDED_ITEM_STACK_KEY32 {
 }
 unsafe impl ::windows::core::Abi for EVENT_EXTENDED_ITEM_STACK_KEY32 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EVENT_EXTENDED_ITEM_STACK_KEY32 {
     fn eq(&self, other: &Self) -> bool {
@@ -1080,6 +1108,7 @@ impl ::core::fmt::Debug for EVENT_EXTENDED_ITEM_STACK_KEY64 {
 }
 unsafe impl ::windows::core::Abi for EVENT_EXTENDED_ITEM_STACK_KEY64 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EVENT_EXTENDED_ITEM_STACK_KEY64 {
     fn eq(&self, other: &Self) -> bool {
@@ -1111,6 +1140,7 @@ impl ::core::fmt::Debug for EVENT_EXTENDED_ITEM_STACK_TRACE32 {
 }
 unsafe impl ::windows::core::Abi for EVENT_EXTENDED_ITEM_STACK_TRACE32 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EVENT_EXTENDED_ITEM_STACK_TRACE32 {
     fn eq(&self, other: &Self) -> bool {
@@ -1142,6 +1172,7 @@ impl ::core::fmt::Debug for EVENT_EXTENDED_ITEM_STACK_TRACE64 {
 }
 unsafe impl ::windows::core::Abi for EVENT_EXTENDED_ITEM_STACK_TRACE64 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EVENT_EXTENDED_ITEM_STACK_TRACE64 {
     fn eq(&self, other: &Self) -> bool {
@@ -1172,6 +1203,7 @@ impl ::core::fmt::Debug for EVENT_EXTENDED_ITEM_TS_ID {
 }
 unsafe impl ::windows::core::Abi for EVENT_EXTENDED_ITEM_TS_ID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EVENT_EXTENDED_ITEM_TS_ID {
     fn eq(&self, other: &Self) -> bool {
@@ -1213,6 +1245,7 @@ impl ::core::default::Default for EVENT_FIELD_TYPE {
 }
 unsafe impl ::windows::core::Abi for EVENT_FIELD_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EVENT_FIELD_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1239,6 +1272,7 @@ impl ::core::fmt::Debug for EVENT_FILTER_DESCRIPTOR {
 }
 unsafe impl ::windows::core::Abi for EVENT_FILTER_DESCRIPTOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EVENT_FILTER_DESCRIPTOR {
     fn eq(&self, other: &Self) -> bool {
@@ -1277,6 +1311,7 @@ impl ::core::fmt::Debug for EVENT_FILTER_EVENT_ID {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for EVENT_FILTER_EVENT_ID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for EVENT_FILTER_EVENT_ID {
@@ -1320,6 +1355,7 @@ impl ::core::fmt::Debug for EVENT_FILTER_EVENT_NAME {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for EVENT_FILTER_EVENT_NAME {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for EVENT_FILTER_EVENT_NAME {
@@ -1358,6 +1394,7 @@ impl ::core::fmt::Debug for EVENT_FILTER_HEADER {
 }
 unsafe impl ::windows::core::Abi for EVENT_FILTER_HEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EVENT_FILTER_HEADER {
     fn eq(&self, other: &Self) -> bool {
@@ -1396,6 +1433,7 @@ impl ::core::fmt::Debug for EVENT_FILTER_LEVEL_KW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for EVENT_FILTER_LEVEL_KW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for EVENT_FILTER_LEVEL_KW {
@@ -1464,6 +1502,7 @@ impl ::core::clone::Clone for EVENT_HEADER {
 }
 unsafe impl ::windows::core::Abi for EVENT_HEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EVENT_HEADER {
     fn eq(&self, other: &Self) -> bool {
@@ -1490,6 +1529,7 @@ impl ::core::clone::Clone for EVENT_HEADER_0 {
 }
 unsafe impl ::windows::core::Abi for EVENT_HEADER_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EVENT_HEADER_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -1521,6 +1561,7 @@ impl ::core::fmt::Debug for EVENT_HEADER_0_0 {
 }
 unsafe impl ::windows::core::Abi for EVENT_HEADER_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EVENT_HEADER_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -1555,6 +1596,7 @@ impl ::core::fmt::Debug for EVENT_HEADER_EXTENDED_DATA_ITEM {
 }
 unsafe impl ::windows::core::Abi for EVENT_HEADER_EXTENDED_DATA_ITEM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EVENT_HEADER_EXTENDED_DATA_ITEM {
     fn eq(&self, other: &Self) -> bool {
@@ -1585,6 +1627,7 @@ impl ::core::fmt::Debug for EVENT_HEADER_EXTENDED_DATA_ITEM_0 {
 }
 unsafe impl ::windows::core::Abi for EVENT_HEADER_EXTENDED_DATA_ITEM_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EVENT_HEADER_EXTENDED_DATA_ITEM_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -1690,6 +1733,7 @@ impl ::core::default::Default for EVENT_INFO_CLASS {
 }
 unsafe impl ::windows::core::Abi for EVENT_INFO_CLASS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EVENT_INFO_CLASS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1719,6 +1763,7 @@ impl ::core::clone::Clone for EVENT_INSTANCE_HEADER {
 }
 unsafe impl ::windows::core::Abi for EVENT_INSTANCE_HEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EVENT_INSTANCE_HEADER {
     fn eq(&self, other: &Self) -> bool {
@@ -1745,6 +1790,7 @@ impl ::core::clone::Clone for EVENT_INSTANCE_HEADER_0 {
 }
 unsafe impl ::windows::core::Abi for EVENT_INSTANCE_HEADER_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EVENT_INSTANCE_HEADER_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -1776,6 +1822,7 @@ impl ::core::fmt::Debug for EVENT_INSTANCE_HEADER_0_0 {
 }
 unsafe impl ::windows::core::Abi for EVENT_INSTANCE_HEADER_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EVENT_INSTANCE_HEADER_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -1802,6 +1849,7 @@ impl ::core::clone::Clone for EVENT_INSTANCE_HEADER_1 {
 }
 unsafe impl ::windows::core::Abi for EVENT_INSTANCE_HEADER_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EVENT_INSTANCE_HEADER_1 {
     fn eq(&self, other: &Self) -> bool {
@@ -1834,6 +1882,7 @@ impl ::core::fmt::Debug for EVENT_INSTANCE_HEADER_1_0 {
 }
 unsafe impl ::windows::core::Abi for EVENT_INSTANCE_HEADER_1_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EVENT_INSTANCE_HEADER_1_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -1861,6 +1910,7 @@ impl ::core::clone::Clone for EVENT_INSTANCE_HEADER_2 {
 }
 unsafe impl ::windows::core::Abi for EVENT_INSTANCE_HEADER_2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EVENT_INSTANCE_HEADER_2 {
     fn eq(&self, other: &Self) -> bool {
@@ -1892,6 +1942,7 @@ impl ::core::fmt::Debug for EVENT_INSTANCE_HEADER_2_0 {
 }
 unsafe impl ::windows::core::Abi for EVENT_INSTANCE_HEADER_2_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EVENT_INSTANCE_HEADER_2_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -1923,6 +1974,7 @@ impl ::core::fmt::Debug for EVENT_INSTANCE_HEADER_2_1 {
 }
 unsafe impl ::windows::core::Abi for EVENT_INSTANCE_HEADER_2_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EVENT_INSTANCE_HEADER_2_1 {
     fn eq(&self, other: &Self) -> bool {
@@ -1959,6 +2011,7 @@ impl ::core::fmt::Debug for EVENT_INSTANCE_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for EVENT_INSTANCE_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for EVENT_INSTANCE_INFO {
@@ -1994,6 +2047,7 @@ impl ::core::clone::Clone for EVENT_MAP_ENTRY {
 }
 unsafe impl ::windows::core::Abi for EVENT_MAP_ENTRY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EVENT_MAP_ENTRY {
     fn eq(&self, other: &Self) -> bool {
@@ -2020,6 +2074,7 @@ impl ::core::clone::Clone for EVENT_MAP_ENTRY_0 {
 }
 unsafe impl ::windows::core::Abi for EVENT_MAP_ENTRY_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EVENT_MAP_ENTRY_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -2049,6 +2104,7 @@ impl ::core::clone::Clone for EVENT_MAP_INFO {
 }
 unsafe impl ::windows::core::Abi for EVENT_MAP_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EVENT_MAP_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -2075,6 +2131,7 @@ impl ::core::clone::Clone for EVENT_MAP_INFO_0 {
 }
 unsafe impl ::windows::core::Abi for EVENT_MAP_INFO_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EVENT_MAP_INFO_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -2109,6 +2166,7 @@ impl ::core::clone::Clone for EVENT_PROPERTY_INFO {
 }
 unsafe impl ::windows::core::Abi for EVENT_PROPERTY_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EVENT_PROPERTY_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -2136,6 +2194,7 @@ impl ::core::clone::Clone for EVENT_PROPERTY_INFO_0 {
 }
 unsafe impl ::windows::core::Abi for EVENT_PROPERTY_INFO_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EVENT_PROPERTY_INFO_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -2168,6 +2227,7 @@ impl ::core::fmt::Debug for EVENT_PROPERTY_INFO_0_0 {
 }
 unsafe impl ::windows::core::Abi for EVENT_PROPERTY_INFO_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EVENT_PROPERTY_INFO_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -2200,6 +2260,7 @@ impl ::core::fmt::Debug for EVENT_PROPERTY_INFO_0_1 {
 }
 unsafe impl ::windows::core::Abi for EVENT_PROPERTY_INFO_0_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EVENT_PROPERTY_INFO_0_1 {
     fn eq(&self, other: &Self) -> bool {
@@ -2232,6 +2293,7 @@ impl ::core::fmt::Debug for EVENT_PROPERTY_INFO_0_2 {
 }
 unsafe impl ::windows::core::Abi for EVENT_PROPERTY_INFO_0_2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EVENT_PROPERTY_INFO_0_2 {
     fn eq(&self, other: &Self) -> bool {
@@ -2258,6 +2320,7 @@ impl ::core::clone::Clone for EVENT_PROPERTY_INFO_1 {
 }
 unsafe impl ::windows::core::Abi for EVENT_PROPERTY_INFO_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EVENT_PROPERTY_INFO_1 {
     fn eq(&self, other: &Self) -> bool {
@@ -2284,6 +2347,7 @@ impl ::core::clone::Clone for EVENT_PROPERTY_INFO_2 {
 }
 unsafe impl ::windows::core::Abi for EVENT_PROPERTY_INFO_2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EVENT_PROPERTY_INFO_2 {
     fn eq(&self, other: &Self) -> bool {
@@ -2310,6 +2374,7 @@ impl ::core::clone::Clone for EVENT_PROPERTY_INFO_3 {
 }
 unsafe impl ::windows::core::Abi for EVENT_PROPERTY_INFO_3 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EVENT_PROPERTY_INFO_3 {
     fn eq(&self, other: &Self) -> bool {
@@ -2340,6 +2405,7 @@ impl ::core::fmt::Debug for EVENT_PROPERTY_INFO_3_0 {
 }
 unsafe impl ::windows::core::Abi for EVENT_PROPERTY_INFO_3_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EVENT_PROPERTY_INFO_3_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -2371,6 +2437,7 @@ impl ::core::clone::Clone for EVENT_RECORD {
 }
 unsafe impl ::windows::core::Abi for EVENT_RECORD {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EVENT_RECORD {
     fn eq(&self, other: &Self) -> bool {
@@ -2402,6 +2469,7 @@ impl ::core::clone::Clone for EVENT_TRACE {
 }
 unsafe impl ::windows::core::Abi for EVENT_TRACE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EVENT_TRACE {
     fn eq(&self, other: &Self) -> bool {
@@ -2428,6 +2496,7 @@ impl ::core::clone::Clone for EVENT_TRACE_0 {
 }
 unsafe impl ::windows::core::Abi for EVENT_TRACE_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EVENT_TRACE_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -2473,6 +2542,7 @@ impl ::core::default::Default for EVENT_TRACE_CONTROL {
 }
 unsafe impl ::windows::core::Abi for EVENT_TRACE_CONTROL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EVENT_TRACE_CONTROL {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2568,6 +2638,7 @@ impl ::core::default::Default for EVENT_TRACE_FLAG {
 }
 unsafe impl ::windows::core::Abi for EVENT_TRACE_FLAG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EVENT_TRACE_FLAG {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2630,6 +2701,7 @@ impl ::core::clone::Clone for EVENT_TRACE_HEADER {
 }
 unsafe impl ::windows::core::Abi for EVENT_TRACE_HEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EVENT_TRACE_HEADER {
     fn eq(&self, other: &Self) -> bool {
@@ -2656,6 +2728,7 @@ impl ::core::clone::Clone for EVENT_TRACE_HEADER_0 {
 }
 unsafe impl ::windows::core::Abi for EVENT_TRACE_HEADER_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EVENT_TRACE_HEADER_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -2687,6 +2760,7 @@ impl ::core::fmt::Debug for EVENT_TRACE_HEADER_0_0 {
 }
 unsafe impl ::windows::core::Abi for EVENT_TRACE_HEADER_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EVENT_TRACE_HEADER_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -2713,6 +2787,7 @@ impl ::core::clone::Clone for EVENT_TRACE_HEADER_1 {
 }
 unsafe impl ::windows::core::Abi for EVENT_TRACE_HEADER_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EVENT_TRACE_HEADER_1 {
     fn eq(&self, other: &Self) -> bool {
@@ -2745,6 +2820,7 @@ impl ::core::fmt::Debug for EVENT_TRACE_HEADER_1_0 {
 }
 unsafe impl ::windows::core::Abi for EVENT_TRACE_HEADER_1_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EVENT_TRACE_HEADER_1_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -2771,6 +2847,7 @@ impl ::core::clone::Clone for EVENT_TRACE_HEADER_2 {
 }
 unsafe impl ::windows::core::Abi for EVENT_TRACE_HEADER_2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EVENT_TRACE_HEADER_2 {
     fn eq(&self, other: &Self) -> bool {
@@ -2798,6 +2875,7 @@ impl ::core::clone::Clone for EVENT_TRACE_HEADER_3 {
 }
 unsafe impl ::windows::core::Abi for EVENT_TRACE_HEADER_3 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EVENT_TRACE_HEADER_3 {
     fn eq(&self, other: &Self) -> bool {
@@ -2829,6 +2907,7 @@ impl ::core::fmt::Debug for EVENT_TRACE_HEADER_3_0 {
 }
 unsafe impl ::windows::core::Abi for EVENT_TRACE_HEADER_3_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EVENT_TRACE_HEADER_3_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -2860,6 +2939,7 @@ impl ::core::fmt::Debug for EVENT_TRACE_HEADER_3_1 {
 }
 unsafe impl ::windows::core::Abi for EVENT_TRACE_HEADER_3_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EVENT_TRACE_HEADER_3_1 {
     fn eq(&self, other: &Self) -> bool {
@@ -2904,6 +2984,7 @@ impl ::core::clone::Clone for EVENT_TRACE_LOGFILEA {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Time"))]
 unsafe impl ::windows::core::Abi for EVENT_TRACE_LOGFILEA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Time"))]
 impl ::core::cmp::PartialEq for EVENT_TRACE_LOGFILEA {
@@ -2937,6 +3018,7 @@ impl ::core::clone::Clone for EVENT_TRACE_LOGFILEA_0 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Time"))]
 unsafe impl ::windows::core::Abi for EVENT_TRACE_LOGFILEA_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Time"))]
 impl ::core::cmp::PartialEq for EVENT_TRACE_LOGFILEA_0 {
@@ -2970,6 +3052,7 @@ impl ::core::clone::Clone for EVENT_TRACE_LOGFILEA_1 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Time"))]
 unsafe impl ::windows::core::Abi for EVENT_TRACE_LOGFILEA_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Time"))]
 impl ::core::cmp::PartialEq for EVENT_TRACE_LOGFILEA_1 {
@@ -3015,6 +3098,7 @@ impl ::core::clone::Clone for EVENT_TRACE_LOGFILEW {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Time"))]
 unsafe impl ::windows::core::Abi for EVENT_TRACE_LOGFILEW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Time"))]
 impl ::core::cmp::PartialEq for EVENT_TRACE_LOGFILEW {
@@ -3048,6 +3132,7 @@ impl ::core::clone::Clone for EVENT_TRACE_LOGFILEW_0 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Time"))]
 unsafe impl ::windows::core::Abi for EVENT_TRACE_LOGFILEW_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Time"))]
 impl ::core::cmp::PartialEq for EVENT_TRACE_LOGFILEW_0 {
@@ -3081,6 +3166,7 @@ impl ::core::clone::Clone for EVENT_TRACE_LOGFILEW_1 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Time"))]
 unsafe impl ::windows::core::Abi for EVENT_TRACE_LOGFILEW_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Time"))]
 impl ::core::cmp::PartialEq for EVENT_TRACE_LOGFILEW_1 {
@@ -3142,6 +3228,7 @@ impl ::core::clone::Clone for EVENT_TRACE_PROPERTIES {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for EVENT_TRACE_PROPERTIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for EVENT_TRACE_PROPERTIES {
@@ -3175,6 +3262,7 @@ impl ::core::clone::Clone for EVENT_TRACE_PROPERTIES_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for EVENT_TRACE_PROPERTIES_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for EVENT_TRACE_PROPERTIES_0 {
@@ -3228,6 +3316,7 @@ impl ::core::clone::Clone for EVENT_TRACE_PROPERTIES_V2 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for EVENT_TRACE_PROPERTIES_V2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for EVENT_TRACE_PROPERTIES_V2 {
@@ -3261,6 +3350,7 @@ impl ::core::clone::Clone for EVENT_TRACE_PROPERTIES_V2_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for EVENT_TRACE_PROPERTIES_V2_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for EVENT_TRACE_PROPERTIES_V2_0 {
@@ -3294,6 +3384,7 @@ impl ::core::clone::Clone for EVENT_TRACE_PROPERTIES_V2_1 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for EVENT_TRACE_PROPERTIES_V2_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for EVENT_TRACE_PROPERTIES_V2_1 {
@@ -3332,6 +3423,7 @@ impl ::core::fmt::Debug for EVENT_TRACE_PROPERTIES_V2_1_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for EVENT_TRACE_PROPERTIES_V2_1_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for EVENT_TRACE_PROPERTIES_V2_1_0 {
@@ -3365,6 +3457,7 @@ impl ::core::clone::Clone for EVENT_TRACE_PROPERTIES_V2_2 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for EVENT_TRACE_PROPERTIES_V2_2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for EVENT_TRACE_PROPERTIES_V2_2 {
@@ -3403,6 +3496,7 @@ impl ::core::fmt::Debug for EVENT_TRACE_PROPERTIES_V2_2_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for EVENT_TRACE_PROPERTIES_V2_2_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for EVENT_TRACE_PROPERTIES_V2_2_0 {
@@ -4002,6 +4096,11 @@ pub unsafe fn GetTraceLoggerHandle(buffer: *const ::core::ffi::c_void) -> u64 {
 #[doc = "*Required features: `\"Win32_System_Diagnostics_Etw\"`*"]
 #[repr(transparent)]
 pub struct ITraceEvent(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITraceEvent {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITraceEvent {
     #[doc = "*Required features: `\"Win32_System_Diagnostics_Etw\"`*"]
     pub unsafe fn Clone(&self) -> ::windows::core::Result<ITraceEvent> {
@@ -4075,11 +4174,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITrac
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITraceEvent {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITraceEvent {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4115,6 +4209,11 @@ pub struct ITraceEvent_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Diagnostics_Etw\"`*"]
 #[repr(transparent)]
 pub struct ITraceEventCallback(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITraceEventCallback {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITraceEventCallback {
     #[doc = "*Required features: `\"Win32_System_Diagnostics_Etw\"`*"]
     pub unsafe fn OnBeginProcessTrace<'a, Param0: ::windows::core::IntoParam<'a, ITraceEvent>, Param1: ::windows::core::IntoParam<'a, ITraceRelogger>>(&self, headerevent: Param0, relogger: Param1) -> ::windows::core::Result<()> {
@@ -4149,11 +4248,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITrac
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITraceEventCallback {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITraceEventCallback {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4180,6 +4274,11 @@ pub struct ITraceEventCallback_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Diagnostics_Etw\"`*"]
 #[repr(transparent)]
 pub struct ITraceRelogger(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITraceRelogger {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITraceRelogger {
     #[doc = "*Required features: `\"Win32_System_Diagnostics_Etw\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -4243,11 +4342,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for ITraceRel
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITraceRelogger {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for ITraceRelogger {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for ITraceRelogger {
@@ -4328,6 +4422,7 @@ impl ::core::default::Default for MAP_FLAGS {
 }
 unsafe impl ::windows::core::Abi for MAP_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MAP_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4355,6 +4450,7 @@ impl ::core::default::Default for MAP_VALUETYPE {
 }
 unsafe impl ::windows::core::Abi for MAP_VALUETYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MAP_VALUETYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4399,6 +4495,7 @@ impl ::core::fmt::Debug for MOF_FIELD {
 }
 unsafe impl ::windows::core::Abi for MOF_FIELD {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MOF_FIELD {
     fn eq(&self, other: &Self) -> bool {
@@ -4430,6 +4527,7 @@ impl ::core::fmt::Debug for OFFSETINSTANCEDATAANDLENGTH {
 }
 unsafe impl ::windows::core::Abi for OFFSETINSTANCEDATAANDLENGTH {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for OFFSETINSTANCEDATAANDLENGTH {
     fn eq(&self, other: &Self) -> bool {
@@ -4492,6 +4590,7 @@ impl ::core::fmt::Debug for PAYLOAD_FILTER_PREDICATE {
 }
 unsafe impl ::windows::core::Abi for PAYLOAD_FILTER_PREDICATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PAYLOAD_FILTER_PREDICATE {
     fn eq(&self, other: &Self) -> bool {
@@ -4549,6 +4648,7 @@ impl ::core::default::Default for PAYLOAD_OPERATOR {
 }
 unsafe impl ::windows::core::Abi for PAYLOAD_OPERATOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PAYLOAD_OPERATOR {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4596,6 +4696,7 @@ impl ::core::fmt::Debug for PROFILE_SOURCE_INFO {
 }
 unsafe impl ::windows::core::Abi for PROFILE_SOURCE_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROFILE_SOURCE_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -4628,6 +4729,7 @@ impl ::core::fmt::Debug for PROPERTY_DATA_DESCRIPTOR {
 }
 unsafe impl ::windows::core::Abi for PROPERTY_DATA_DESCRIPTOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROPERTY_DATA_DESCRIPTOR {
     fn eq(&self, other: &Self) -> bool {
@@ -4673,6 +4775,7 @@ impl ::core::default::Default for PROPERTY_FLAGS {
 }
 unsafe impl ::windows::core::Abi for PROPERTY_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PROPERTY_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4699,6 +4802,7 @@ impl ::core::fmt::Debug for PROVIDER_ENUMERATION_INFO {
 }
 unsafe impl ::windows::core::Abi for PROVIDER_ENUMERATION_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROVIDER_ENUMERATION_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -4731,6 +4835,7 @@ impl ::core::fmt::Debug for PROVIDER_EVENT_INFO {
 }
 unsafe impl ::windows::core::Abi for PROVIDER_EVENT_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROVIDER_EVENT_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -4763,6 +4868,7 @@ impl ::core::fmt::Debug for PROVIDER_FIELD_INFO {
 }
 unsafe impl ::windows::core::Abi for PROVIDER_FIELD_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROVIDER_FIELD_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -4795,6 +4901,7 @@ impl ::core::fmt::Debug for PROVIDER_FIELD_INFOARRAY {
 }
 unsafe impl ::windows::core::Abi for PROVIDER_FIELD_INFOARRAY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROVIDER_FIELD_INFOARRAY {
     fn eq(&self, other: &Self) -> bool {
@@ -4825,6 +4932,7 @@ impl ::core::clone::Clone for PROVIDER_FILTER_INFO {
 }
 unsafe impl ::windows::core::Abi for PROVIDER_FILTER_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROVIDER_FILTER_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -5273,6 +5381,7 @@ impl ::core::fmt::Debug for TDH_CONTEXT {
 }
 unsafe impl ::windows::core::Abi for TDH_CONTEXT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TDH_CONTEXT {
     fn eq(&self, other: &Self) -> bool {
@@ -5314,6 +5423,7 @@ impl ::core::default::Default for TDH_CONTEXT_TYPE {
 }
 unsafe impl ::windows::core::Abi for TDH_CONTEXT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TDH_CONTEXT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5346,6 +5456,7 @@ impl ::core::fmt::Debug for TDH_HANDLE {
 }
 unsafe impl ::windows::core::Abi for TDH_HANDLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[doc = "*Required features: `\"Win32_System_Diagnostics_Etw\"`*"]
 #[repr(transparent)]
@@ -5370,6 +5481,7 @@ impl ::core::default::Default for TEMPLATE_FLAGS {
 }
 unsafe impl ::windows::core::Abi for TEMPLATE_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TEMPLATE_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5419,6 +5531,7 @@ impl ::core::fmt::Debug for TRACE_ENABLE_INFO {
 }
 unsafe impl ::windows::core::Abi for TRACE_ENABLE_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TRACE_ENABLE_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -5463,6 +5576,7 @@ impl ::core::clone::Clone for TRACE_EVENT_INFO {
 }
 unsafe impl ::windows::core::Abi for TRACE_EVENT_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TRACE_EVENT_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -5489,6 +5603,7 @@ impl ::core::clone::Clone for TRACE_EVENT_INFO_0 {
 }
 unsafe impl ::windows::core::Abi for TRACE_EVENT_INFO_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TRACE_EVENT_INFO_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -5515,6 +5630,7 @@ impl ::core::clone::Clone for TRACE_EVENT_INFO_1 {
 }
 unsafe impl ::windows::core::Abi for TRACE_EVENT_INFO_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TRACE_EVENT_INFO_1 {
     fn eq(&self, other: &Self) -> bool {
@@ -5541,6 +5657,7 @@ impl ::core::clone::Clone for TRACE_EVENT_INFO_2 {
 }
 unsafe impl ::windows::core::Abi for TRACE_EVENT_INFO_2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TRACE_EVENT_INFO_2 {
     fn eq(&self, other: &Self) -> bool {
@@ -5571,6 +5688,7 @@ impl ::core::fmt::Debug for TRACE_EVENT_INFO_2_0 {
 }
 unsafe impl ::windows::core::Abi for TRACE_EVENT_INFO_2_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TRACE_EVENT_INFO_2_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -5602,6 +5720,7 @@ impl ::core::fmt::Debug for TRACE_GUID_INFO {
 }
 unsafe impl ::windows::core::Abi for TRACE_GUID_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TRACE_GUID_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -5642,6 +5761,7 @@ impl ::core::fmt::Debug for TRACE_GUID_PROPERTIES {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for TRACE_GUID_PROPERTIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for TRACE_GUID_PROPERTIES {
@@ -5681,6 +5801,7 @@ impl ::core::fmt::Debug for TRACE_GUID_REGISTRATION {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for TRACE_GUID_REGISTRATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for TRACE_GUID_REGISTRATION {
@@ -5762,6 +5883,7 @@ impl ::core::clone::Clone for TRACE_LOGFILE_HEADER {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Time"))]
 unsafe impl ::windows::core::Abi for TRACE_LOGFILE_HEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Time"))]
 impl ::core::cmp::PartialEq for TRACE_LOGFILE_HEADER {
@@ -5795,6 +5917,7 @@ impl ::core::clone::Clone for TRACE_LOGFILE_HEADER_0 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Time"))]
 unsafe impl ::windows::core::Abi for TRACE_LOGFILE_HEADER_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Time"))]
 impl ::core::cmp::PartialEq for TRACE_LOGFILE_HEADER_0 {
@@ -5836,6 +5959,7 @@ impl ::core::fmt::Debug for TRACE_LOGFILE_HEADER_0_0 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Time"))]
 unsafe impl ::windows::core::Abi for TRACE_LOGFILE_HEADER_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Time"))]
 impl ::core::cmp::PartialEq for TRACE_LOGFILE_HEADER_0_0 {
@@ -5869,6 +5993,7 @@ impl ::core::clone::Clone for TRACE_LOGFILE_HEADER_1 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Time"))]
 unsafe impl ::windows::core::Abi for TRACE_LOGFILE_HEADER_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Time"))]
 impl ::core::cmp::PartialEq for TRACE_LOGFILE_HEADER_1 {
@@ -5910,6 +6035,7 @@ impl ::core::fmt::Debug for TRACE_LOGFILE_HEADER_1_0 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Time"))]
 unsafe impl ::windows::core::Abi for TRACE_LOGFILE_HEADER_1_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Time"))]
 impl ::core::cmp::PartialEq for TRACE_LOGFILE_HEADER_1_0 {
@@ -5959,6 +6085,7 @@ impl ::core::clone::Clone for TRACE_LOGFILE_HEADER32 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Time"))]
 unsafe impl ::windows::core::Abi for TRACE_LOGFILE_HEADER32 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Time"))]
 impl ::core::cmp::PartialEq for TRACE_LOGFILE_HEADER32 {
@@ -5992,6 +6119,7 @@ impl ::core::clone::Clone for TRACE_LOGFILE_HEADER32_0 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Time"))]
 unsafe impl ::windows::core::Abi for TRACE_LOGFILE_HEADER32_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Time"))]
 impl ::core::cmp::PartialEq for TRACE_LOGFILE_HEADER32_0 {
@@ -6033,6 +6161,7 @@ impl ::core::fmt::Debug for TRACE_LOGFILE_HEADER32_0_0 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Time"))]
 unsafe impl ::windows::core::Abi for TRACE_LOGFILE_HEADER32_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Time"))]
 impl ::core::cmp::PartialEq for TRACE_LOGFILE_HEADER32_0_0 {
@@ -6066,6 +6195,7 @@ impl ::core::clone::Clone for TRACE_LOGFILE_HEADER32_1 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Time"))]
 unsafe impl ::windows::core::Abi for TRACE_LOGFILE_HEADER32_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Time"))]
 impl ::core::cmp::PartialEq for TRACE_LOGFILE_HEADER32_1 {
@@ -6107,6 +6237,7 @@ impl ::core::fmt::Debug for TRACE_LOGFILE_HEADER32_1_0 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Time"))]
 unsafe impl ::windows::core::Abi for TRACE_LOGFILE_HEADER32_1_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Time"))]
 impl ::core::cmp::PartialEq for TRACE_LOGFILE_HEADER32_1_0 {
@@ -6156,6 +6287,7 @@ impl ::core::clone::Clone for TRACE_LOGFILE_HEADER64 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Time"))]
 unsafe impl ::windows::core::Abi for TRACE_LOGFILE_HEADER64 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Time"))]
 impl ::core::cmp::PartialEq for TRACE_LOGFILE_HEADER64 {
@@ -6189,6 +6321,7 @@ impl ::core::clone::Clone for TRACE_LOGFILE_HEADER64_0 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Time"))]
 unsafe impl ::windows::core::Abi for TRACE_LOGFILE_HEADER64_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Time"))]
 impl ::core::cmp::PartialEq for TRACE_LOGFILE_HEADER64_0 {
@@ -6230,6 +6363,7 @@ impl ::core::fmt::Debug for TRACE_LOGFILE_HEADER64_0_0 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Time"))]
 unsafe impl ::windows::core::Abi for TRACE_LOGFILE_HEADER64_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Time"))]
 impl ::core::cmp::PartialEq for TRACE_LOGFILE_HEADER64_0_0 {
@@ -6263,6 +6397,7 @@ impl ::core::clone::Clone for TRACE_LOGFILE_HEADER64_1 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Time"))]
 unsafe impl ::windows::core::Abi for TRACE_LOGFILE_HEADER64_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Time"))]
 impl ::core::cmp::PartialEq for TRACE_LOGFILE_HEADER64_1 {
@@ -6304,6 +6439,7 @@ impl ::core::fmt::Debug for TRACE_LOGFILE_HEADER64_1_0 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Time"))]
 unsafe impl ::windows::core::Abi for TRACE_LOGFILE_HEADER64_1_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Time"))]
 impl ::core::cmp::PartialEq for TRACE_LOGFILE_HEADER64_1_0 {
@@ -6346,6 +6482,7 @@ impl ::core::default::Default for TRACE_MESSAGE_FLAGS {
 }
 unsafe impl ::windows::core::Abi for TRACE_MESSAGE_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TRACE_MESSAGE_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6408,6 +6545,7 @@ impl ::core::fmt::Debug for TRACE_PERIODIC_CAPTURE_STATE_INFO {
 }
 unsafe impl ::windows::core::Abi for TRACE_PERIODIC_CAPTURE_STATE_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TRACE_PERIODIC_CAPTURE_STATE_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -6439,6 +6577,7 @@ impl ::core::fmt::Debug for TRACE_PROFILE_INTERVAL {
 }
 unsafe impl ::windows::core::Abi for TRACE_PROFILE_INTERVAL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TRACE_PROFILE_INTERVAL {
     fn eq(&self, other: &Self) -> bool {
@@ -6475,6 +6614,7 @@ impl ::core::fmt::Debug for TRACE_PROVIDER_INFO {
 }
 unsafe impl ::windows::core::Abi for TRACE_PROVIDER_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TRACE_PROVIDER_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -6508,6 +6648,7 @@ impl ::core::fmt::Debug for TRACE_PROVIDER_INSTANCE_INFO {
 }
 unsafe impl ::windows::core::Abi for TRACE_PROVIDER_INSTANCE_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TRACE_PROVIDER_INSTANCE_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -6593,6 +6734,7 @@ impl ::core::default::Default for TRACE_QUERY_INFO_CLASS {
 }
 unsafe impl ::windows::core::Abi for TRACE_QUERY_INFO_CLASS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TRACE_QUERY_INFO_CLASS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6624,6 +6766,7 @@ impl ::core::fmt::Debug for TRACE_STACK_CACHING_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for TRACE_STACK_CACHING_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for TRACE_STACK_CACHING_INFO {
@@ -6658,6 +6801,7 @@ impl ::core::fmt::Debug for TRACE_VERSION_INFO {
 }
 unsafe impl ::windows::core::Abi for TRACE_VERSION_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TRACE_VERSION_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -7220,6 +7364,7 @@ impl ::core::default::Default for WMIDPREQUESTCODE {
 }
 unsafe impl ::windows::core::Abi for WMIDPREQUESTCODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WMIDPREQUESTCODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7252,6 +7397,7 @@ impl ::core::clone::Clone for WMIREGGUIDW {
 }
 unsafe impl ::windows::core::Abi for WMIREGGUIDW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WMIREGGUIDW {
     fn eq(&self, other: &Self) -> bool {
@@ -7280,6 +7426,7 @@ impl ::core::clone::Clone for WMIREGGUIDW_0 {
 }
 unsafe impl ::windows::core::Abi for WMIREGGUIDW_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WMIREGGUIDW_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -7310,6 +7457,7 @@ impl ::core::clone::Clone for WMIREGINFOW {
 }
 unsafe impl ::windows::core::Abi for WMIREGINFOW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WMIREGINFOW {
     fn eq(&self, other: &Self) -> bool {
@@ -7373,6 +7521,7 @@ impl ::core::clone::Clone for WNODE_ALL_DATA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WNODE_ALL_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WNODE_ALL_DATA {
@@ -7406,6 +7555,7 @@ impl ::core::clone::Clone for WNODE_ALL_DATA_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WNODE_ALL_DATA_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WNODE_ALL_DATA_0 {
@@ -7438,6 +7588,7 @@ impl ::core::clone::Clone for WNODE_EVENT_ITEM {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WNODE_EVENT_ITEM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WNODE_EVENT_ITEM {
@@ -7473,6 +7624,7 @@ impl ::core::clone::Clone for WNODE_EVENT_REFERENCE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WNODE_EVENT_REFERENCE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WNODE_EVENT_REFERENCE {
@@ -7506,6 +7658,7 @@ impl ::core::clone::Clone for WNODE_EVENT_REFERENCE_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WNODE_EVENT_REFERENCE_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WNODE_EVENT_REFERENCE_0 {
@@ -7590,6 +7743,7 @@ impl ::core::clone::Clone for WNODE_HEADER {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WNODE_HEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WNODE_HEADER {
@@ -7623,6 +7777,7 @@ impl ::core::clone::Clone for WNODE_HEADER_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WNODE_HEADER_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WNODE_HEADER_0 {
@@ -7662,6 +7817,7 @@ impl ::core::fmt::Debug for WNODE_HEADER_0_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WNODE_HEADER_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WNODE_HEADER_0_0 {
@@ -7696,6 +7852,7 @@ impl ::core::clone::Clone for WNODE_HEADER_1 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WNODE_HEADER_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WNODE_HEADER_1 {
@@ -7734,6 +7891,7 @@ impl ::core::clone::Clone for WNODE_METHOD_ITEM {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WNODE_METHOD_ITEM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WNODE_METHOD_ITEM {
@@ -7771,6 +7929,7 @@ impl ::core::clone::Clone for WNODE_SINGLE_INSTANCE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WNODE_SINGLE_INSTANCE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WNODE_SINGLE_INSTANCE {
@@ -7809,6 +7968,7 @@ impl ::core::clone::Clone for WNODE_SINGLE_ITEM {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WNODE_SINGLE_ITEM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WNODE_SINGLE_ITEM {
@@ -7842,6 +8002,7 @@ impl ::core::clone::Clone for WNODE_TOO_SMALL {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WNODE_TOO_SMALL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WNODE_TOO_SMALL {
@@ -7948,6 +8109,7 @@ impl ::core::default::Default for _TDH_IN_TYPE {
 }
 unsafe impl ::windows::core::Abi for _TDH_IN_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for _TDH_IN_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8053,6 +8215,7 @@ impl ::core::default::Default for _TDH_OUT_TYPE {
 }
 unsafe impl ::windows::core::Abi for _TDH_OUT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for _TDH_OUT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

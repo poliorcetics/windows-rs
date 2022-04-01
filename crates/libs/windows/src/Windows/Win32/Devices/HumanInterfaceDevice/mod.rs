@@ -60,6 +60,7 @@ impl ::core::fmt::Debug for CPOINT {
 }
 unsafe impl ::windows::core::Abi for CPOINT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CPOINT {
     fn eq(&self, other: &Self) -> bool {
@@ -273,6 +274,7 @@ impl ::core::clone::Clone for DIACTIONA {
 }
 unsafe impl ::windows::core::Abi for DIACTIONA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DIACTIONA {
     fn eq(&self, other: &Self) -> bool {
@@ -299,6 +301,7 @@ impl ::core::clone::Clone for DIACTIONA_0 {
 }
 unsafe impl ::windows::core::Abi for DIACTIONA_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DIACTIONA_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -362,6 +365,7 @@ impl ::core::fmt::Debug for DIACTIONFORMATA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DIACTIONFORMATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DIACTIONFORMATA {
@@ -428,6 +432,7 @@ impl ::core::fmt::Debug for DIACTIONFORMATW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DIACTIONFORMATW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DIACTIONFORMATW {
@@ -462,6 +467,7 @@ impl ::core::clone::Clone for DIACTIONW {
 }
 unsafe impl ::windows::core::Abi for DIACTIONW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DIACTIONW {
     fn eq(&self, other: &Self) -> bool {
@@ -488,6 +494,7 @@ impl ::core::clone::Clone for DIACTIONW_0 {
 }
 unsafe impl ::windows::core::Abi for DIACTIONW_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DIACTIONW_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -2212,6 +2219,7 @@ impl ::core::fmt::Debug for DICOLORSET {
 }
 unsafe impl ::windows::core::Abi for DICOLORSET {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DICOLORSET {
     fn eq(&self, other: &Self) -> bool {
@@ -2247,6 +2255,7 @@ impl ::core::fmt::Debug for DICONDITION {
 }
 unsafe impl ::windows::core::Abi for DICONDITION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DICONDITION {
     fn eq(&self, other: &Self) -> bool {
@@ -2296,6 +2305,7 @@ impl ::core::fmt::Debug for DICONFIGUREDEVICESPARAMSA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DICONFIGUREDEVICESPARAMSA {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DICONFIGUREDEVICESPARAMSA {
@@ -2348,6 +2358,7 @@ impl ::core::fmt::Debug for DICONFIGUREDEVICESPARAMSW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DICONFIGUREDEVICESPARAMSW {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DICONFIGUREDEVICESPARAMSW {
@@ -2381,6 +2392,7 @@ impl ::core::fmt::Debug for DICONSTANTFORCE {
 }
 unsafe impl ::windows::core::Abi for DICONSTANTFORCE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DICONSTANTFORCE {
     fn eq(&self, other: &Self) -> bool {
@@ -2414,6 +2426,7 @@ impl ::core::fmt::Debug for DICUSTOMFORCE {
 }
 unsafe impl ::windows::core::Abi for DICUSTOMFORCE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DICUSTOMFORCE {
     fn eq(&self, other: &Self) -> bool {
@@ -2461,6 +2474,7 @@ impl ::core::fmt::Debug for DIDATAFORMAT {
 }
 unsafe impl ::windows::core::Abi for DIDATAFORMAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DIDATAFORMAT {
     fn eq(&self, other: &Self) -> bool {
@@ -2551,6 +2565,7 @@ impl ::core::fmt::Debug for DIDEVCAPS {
 }
 unsafe impl ::windows::core::Abi for DIDEVCAPS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DIDEVCAPS {
     fn eq(&self, other: &Self) -> bool {
@@ -2586,6 +2601,7 @@ impl ::core::fmt::Debug for DIDEVCAPS_DX3 {
 }
 unsafe impl ::windows::core::Abi for DIDEVCAPS_DX3 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DIDEVCAPS_DX3 {
     fn eq(&self, other: &Self) -> bool {
@@ -2629,6 +2645,7 @@ impl ::core::fmt::Debug for DIDEVICEIMAGEINFOA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DIDEVICEIMAGEINFOA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DIDEVICEIMAGEINFOA {
@@ -2675,6 +2692,7 @@ impl ::core::fmt::Debug for DIDEVICEIMAGEINFOHEADERA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DIDEVICEIMAGEINFOHEADERA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DIDEVICEIMAGEINFOHEADERA {
@@ -2721,6 +2739,7 @@ impl ::core::fmt::Debug for DIDEVICEIMAGEINFOHEADERW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DIDEVICEIMAGEINFOHEADERW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DIDEVICEIMAGEINFOHEADERW {
@@ -2767,6 +2786,7 @@ impl ::core::fmt::Debug for DIDEVICEIMAGEINFOW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DIDEVICEIMAGEINFOW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DIDEVICEIMAGEINFOW {
@@ -2813,6 +2833,7 @@ impl ::core::fmt::Debug for DIDEVICEINSTANCEA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DIDEVICEINSTANCEA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DIDEVICEINSTANCEA {
@@ -2854,6 +2875,7 @@ impl ::core::fmt::Debug for DIDEVICEINSTANCEW {
 }
 unsafe impl ::windows::core::Abi for DIDEVICEINSTANCEW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DIDEVICEINSTANCEW {
     fn eq(&self, other: &Self) -> bool {
@@ -2894,6 +2916,7 @@ impl ::core::fmt::Debug for DIDEVICEINSTANCE_DX3A {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DIDEVICEINSTANCE_DX3A {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DIDEVICEINSTANCE_DX3A {
@@ -2932,6 +2955,7 @@ impl ::core::fmt::Debug for DIDEVICEINSTANCE_DX3W {
 }
 unsafe impl ::windows::core::Abi for DIDEVICEINSTANCE_DX3W {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DIDEVICEINSTANCE_DX3W {
     fn eq(&self, other: &Self) -> bool {
@@ -2966,6 +2990,7 @@ impl ::core::fmt::Debug for DIDEVICEOBJECTDATA {
 }
 unsafe impl ::windows::core::Abi for DIDEVICEOBJECTDATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DIDEVICEOBJECTDATA {
     fn eq(&self, other: &Self) -> bool {
@@ -2999,6 +3024,7 @@ impl ::core::fmt::Debug for DIDEVICEOBJECTDATA_DX3 {
 }
 unsafe impl ::windows::core::Abi for DIDEVICEOBJECTDATA_DX3 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DIDEVICEOBJECTDATA_DX3 {
     fn eq(&self, other: &Self) -> bool {
@@ -3064,6 +3090,7 @@ impl ::core::fmt::Debug for DIDEVICEOBJECTINSTANCEA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DIDEVICEOBJECTINSTANCEA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DIDEVICEOBJECTINSTANCEA {
@@ -3127,6 +3154,7 @@ impl ::core::fmt::Debug for DIDEVICEOBJECTINSTANCEW {
 }
 unsafe impl ::windows::core::Abi for DIDEVICEOBJECTINSTANCEW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DIDEVICEOBJECTINSTANCEW {
     fn eq(&self, other: &Self) -> bool {
@@ -3167,6 +3195,7 @@ impl ::core::fmt::Debug for DIDEVICEOBJECTINSTANCE_DX3A {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DIDEVICEOBJECTINSTANCE_DX3A {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DIDEVICEOBJECTINSTANCE_DX3A {
@@ -3205,6 +3234,7 @@ impl ::core::fmt::Debug for DIDEVICEOBJECTINSTANCE_DX3W {
 }
 unsafe impl ::windows::core::Abi for DIDEVICEOBJECTINSTANCE_DX3W {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DIDEVICEOBJECTINSTANCE_DX3W {
     fn eq(&self, other: &Self) -> bool {
@@ -3237,6 +3267,7 @@ impl ::core::fmt::Debug for DIDEVICESTATE {
 }
 unsafe impl ::windows::core::Abi for DIDEVICESTATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DIDEVICESTATE {
     fn eq(&self, other: &Self) -> bool {
@@ -3394,6 +3425,7 @@ impl ::core::fmt::Debug for DIDRIVERVERSIONS {
 }
 unsafe impl ::windows::core::Abi for DIDRIVERVERSIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DIDRIVERVERSIONS {
     fn eq(&self, other: &Self) -> bool {
@@ -3494,6 +3526,7 @@ impl ::core::fmt::Debug for DIEFFECT {
 }
 unsafe impl ::windows::core::Abi for DIEFFECT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DIEFFECT {
     fn eq(&self, other: &Self) -> bool {
@@ -3528,6 +3561,7 @@ impl ::core::fmt::Debug for DIEFFECTATTRIBUTES {
 }
 unsafe impl ::windows::core::Abi for DIEFFECTATTRIBUTES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DIEFFECTATTRIBUTES {
     fn eq(&self, other: &Self) -> bool {
@@ -3568,6 +3602,7 @@ impl ::core::fmt::Debug for DIEFFECTINFOA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DIEFFECTINFOA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DIEFFECTINFOA {
@@ -3606,6 +3641,7 @@ impl ::core::fmt::Debug for DIEFFECTINFOW {
 }
 unsafe impl ::windows::core::Abi for DIEFFECTINFOW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DIEFFECTINFOW {
     fn eq(&self, other: &Self) -> bool {
@@ -3662,6 +3698,7 @@ impl ::core::fmt::Debug for DIEFFECT_DX5 {
 }
 unsafe impl ::windows::core::Abi for DIEFFECT_DX5 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DIEFFECT_DX5 {
     fn eq(&self, other: &Self) -> bool {
@@ -3697,6 +3734,7 @@ impl ::core::fmt::Debug for DIEFFESCAPE {
 }
 unsafe impl ::windows::core::Abi for DIEFFESCAPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DIEFFESCAPE {
     fn eq(&self, other: &Self) -> bool {
@@ -3777,6 +3815,7 @@ impl ::core::fmt::Debug for DIENVELOPE {
 }
 unsafe impl ::windows::core::Abi for DIENVELOPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DIENVELOPE {
     fn eq(&self, other: &Self) -> bool {
@@ -3925,6 +3964,7 @@ impl ::core::fmt::Debug for DIFFDEVICEATTRIBUTES {
 }
 unsafe impl ::windows::core::Abi for DIFFDEVICEATTRIBUTES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DIFFDEVICEATTRIBUTES {
     fn eq(&self, other: &Self) -> bool {
@@ -3956,6 +3996,7 @@ impl ::core::fmt::Debug for DIFFOBJECTATTRIBUTES {
 }
 unsafe impl ::windows::core::Abi for DIFFOBJECTATTRIBUTES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DIFFOBJECTATTRIBUTES {
     fn eq(&self, other: &Self) -> bool {
@@ -3994,6 +4035,7 @@ impl ::core::fmt::Debug for DIFILEEFFECT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DIFILEEFFECT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DIFILEEFFECT {
@@ -4117,6 +4159,7 @@ impl ::core::fmt::Debug for DIHIDFFINITINFO {
 }
 unsafe impl ::windows::core::Abi for DIHIDFFINITINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DIHIDFFINITINFO {
     fn eq(&self, other: &Self) -> bool {
@@ -4163,6 +4206,7 @@ impl ::core::fmt::Debug for DIJOYCONFIG {
 }
 unsafe impl ::windows::core::Abi for DIJOYCONFIG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DIJOYCONFIG {
     fn eq(&self, other: &Self) -> bool {
@@ -4198,6 +4242,7 @@ impl ::core::fmt::Debug for DIJOYCONFIG_DX5 {
 }
 unsafe impl ::windows::core::Abi for DIJOYCONFIG_DX5 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DIJOYCONFIG_DX5 {
     fn eq(&self, other: &Self) -> bool {
@@ -4236,6 +4281,7 @@ impl ::core::fmt::Debug for DIJOYSTATE {
 }
 unsafe impl ::windows::core::Abi for DIJOYSTATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DIJOYSTATE {
     fn eq(&self, other: &Self) -> bool {
@@ -4326,6 +4372,7 @@ impl ::core::fmt::Debug for DIJOYSTATE2 {
 }
 unsafe impl ::windows::core::Abi for DIJOYSTATE2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DIJOYSTATE2 {
     fn eq(&self, other: &Self) -> bool {
@@ -4364,6 +4411,7 @@ impl ::core::fmt::Debug for DIJOYTYPEINFO {
 }
 unsafe impl ::windows::core::Abi for DIJOYTYPEINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DIJOYTYPEINFO {
     fn eq(&self, other: &Self) -> bool {
@@ -4398,6 +4446,7 @@ impl ::core::fmt::Debug for DIJOYTYPEINFO_DX5 {
 }
 unsafe impl ::windows::core::Abi for DIJOYTYPEINFO_DX5 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DIJOYTYPEINFO_DX5 {
     fn eq(&self, other: &Self) -> bool {
@@ -4434,6 +4483,7 @@ impl ::core::fmt::Debug for DIJOYTYPEINFO_DX6 {
 }
 unsafe impl ::windows::core::Abi for DIJOYTYPEINFO_DX6 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DIJOYTYPEINFO_DX6 {
     fn eq(&self, other: &Self) -> bool {
@@ -4467,6 +4517,7 @@ impl ::core::fmt::Debug for DIJOYUSERVALUES {
 }
 unsafe impl ::windows::core::Abi for DIJOYUSERVALUES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DIJOYUSERVALUES {
     fn eq(&self, other: &Self) -> bool {
@@ -5114,6 +5165,7 @@ impl ::core::fmt::Debug for DIMOUSESTATE {
 }
 unsafe impl ::windows::core::Abi for DIMOUSESTATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DIMOUSESTATE {
     fn eq(&self, other: &Self) -> bool {
@@ -5147,6 +5199,7 @@ impl ::core::fmt::Debug for DIMOUSESTATE2 {
 }
 unsafe impl ::windows::core::Abi for DIMOUSESTATE2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DIMOUSESTATE2 {
     fn eq(&self, other: &Self) -> bool {
@@ -5185,6 +5238,7 @@ impl ::core::fmt::Debug for DIOBJECTATTRIBUTES {
 }
 unsafe impl ::windows::core::Abi for DIOBJECTATTRIBUTES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DIOBJECTATTRIBUTES {
     fn eq(&self, other: &Self) -> bool {
@@ -5217,6 +5271,7 @@ impl ::core::fmt::Debug for DIOBJECTCALIBRATION {
 }
 unsafe impl ::windows::core::Abi for DIOBJECTCALIBRATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DIOBJECTCALIBRATION {
     fn eq(&self, other: &Self) -> bool {
@@ -5250,6 +5305,7 @@ impl ::core::fmt::Debug for DIOBJECTDATAFORMAT {
 }
 unsafe impl ::windows::core::Abi for DIOBJECTDATAFORMAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DIOBJECTDATAFORMAT {
     fn eq(&self, other: &Self) -> bool {
@@ -5283,6 +5339,7 @@ impl ::core::fmt::Debug for DIPERIODIC {
 }
 unsafe impl ::windows::core::Abi for DIPERIODIC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DIPERIODIC {
     fn eq(&self, other: &Self) -> bool {
@@ -5322,6 +5379,7 @@ impl ::core::fmt::Debug for DIPOVCALIBRATION {
 }
 unsafe impl ::windows::core::Abi for DIPOVCALIBRATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DIPOVCALIBRATION {
     fn eq(&self, other: &Self) -> bool {
@@ -5371,6 +5429,7 @@ impl ::core::fmt::Debug for DIPROPCAL {
 }
 unsafe impl ::windows::core::Abi for DIPROPCAL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DIPROPCAL {
     fn eq(&self, other: &Self) -> bool {
@@ -5407,6 +5466,7 @@ impl ::core::fmt::Debug for DIPROPCALPOV {
 }
 unsafe impl ::windows::core::Abi for DIPROPCALPOV {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DIPROPCALPOV {
     fn eq(&self, other: &Self) -> bool {
@@ -5439,6 +5499,7 @@ impl ::core::fmt::Debug for DIPROPCPOINTS {
 }
 unsafe impl ::windows::core::Abi for DIPROPCPOINTS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DIPROPCPOINTS {
     fn eq(&self, other: &Self) -> bool {
@@ -5470,6 +5531,7 @@ impl ::core::fmt::Debug for DIPROPDWORD {
 }
 unsafe impl ::windows::core::Abi for DIPROPDWORD {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DIPROPDWORD {
     fn eq(&self, other: &Self) -> bool {
@@ -5502,6 +5564,7 @@ impl ::core::fmt::Debug for DIPROPGUIDANDPATH {
 }
 unsafe impl ::windows::core::Abi for DIPROPGUIDANDPATH {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DIPROPGUIDANDPATH {
     fn eq(&self, other: &Self) -> bool {
@@ -5535,6 +5598,7 @@ impl ::core::fmt::Debug for DIPROPHEADER {
 }
 unsafe impl ::windows::core::Abi for DIPROPHEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DIPROPHEADER {
     fn eq(&self, other: &Self) -> bool {
@@ -5566,6 +5630,7 @@ impl ::core::fmt::Debug for DIPROPPOINTER {
 }
 unsafe impl ::windows::core::Abi for DIPROPPOINTER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DIPROPPOINTER {
     fn eq(&self, other: &Self) -> bool {
@@ -5598,6 +5663,7 @@ impl ::core::fmt::Debug for DIPROPRANGE {
 }
 unsafe impl ::windows::core::Abi for DIPROPRANGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DIPROPRANGE {
     fn eq(&self, other: &Self) -> bool {
@@ -5629,6 +5695,7 @@ impl ::core::fmt::Debug for DIPROPSTRING {
 }
 unsafe impl ::windows::core::Abi for DIPROPSTRING {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DIPROPSTRING {
     fn eq(&self, other: &Self) -> bool {
@@ -5660,6 +5727,7 @@ impl ::core::fmt::Debug for DIRAMPFORCE {
 }
 unsafe impl ::windows::core::Abi for DIRAMPFORCE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DIRAMPFORCE {
     fn eq(&self, other: &Self) -> bool {
@@ -5978,6 +6046,7 @@ impl ::core::default::Default for GPIOBUTTONS_BUTTON_TYPE {
 }
 unsafe impl ::windows::core::Abi for GPIOBUTTONS_BUTTON_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GPIOBUTTONS_BUTTON_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6044,6 +6113,7 @@ impl ::core::fmt::Debug for HIDD_ATTRIBUTES {
 }
 unsafe impl ::windows::core::Abi for HIDD_ATTRIBUTES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HIDD_ATTRIBUTES {
     fn eq(&self, other: &Self) -> bool {
@@ -6071,6 +6141,7 @@ impl ::core::clone::Clone for HIDD_CONFIGURATION {
 }
 unsafe impl ::windows::core::Abi for HIDD_CONFIGURATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HIDD_CONFIGURATION {
     fn eq(&self, other: &Self) -> bool {
@@ -6107,6 +6178,7 @@ impl ::core::fmt::Debug for HIDP_BUTTON_ARRAY_DATA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for HIDP_BUTTON_ARRAY_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for HIDP_BUTTON_ARRAY_DATA {
@@ -6153,6 +6225,7 @@ impl ::core::clone::Clone for HIDP_BUTTON_CAPS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for HIDP_BUTTON_CAPS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for HIDP_BUTTON_CAPS {
@@ -6186,6 +6259,7 @@ impl ::core::clone::Clone for HIDP_BUTTON_CAPS_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for HIDP_BUTTON_CAPS_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for HIDP_BUTTON_CAPS_0 {
@@ -6231,6 +6305,7 @@ impl ::core::fmt::Debug for HIDP_BUTTON_CAPS_0_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for HIDP_BUTTON_CAPS_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for HIDP_BUTTON_CAPS_0_0 {
@@ -6276,6 +6351,7 @@ impl ::core::fmt::Debug for HIDP_BUTTON_CAPS_0_1 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for HIDP_BUTTON_CAPS_0_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for HIDP_BUTTON_CAPS_0_1 {
@@ -6341,6 +6417,7 @@ impl ::core::fmt::Debug for HIDP_CAPS {
 }
 unsafe impl ::windows::core::Abi for HIDP_CAPS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HIDP_CAPS {
     fn eq(&self, other: &Self) -> bool {
@@ -6372,6 +6449,7 @@ impl ::core::clone::Clone for HIDP_DATA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for HIDP_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for HIDP_DATA {
@@ -6405,6 +6483,7 @@ impl ::core::clone::Clone for HIDP_DATA_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for HIDP_DATA_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for HIDP_DATA_0 {
@@ -6436,6 +6515,7 @@ impl ::core::clone::Clone for HIDP_EXTENDED_ATTRIBUTES {
 }
 unsafe impl ::windows::core::Abi for HIDP_EXTENDED_ATTRIBUTES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HIDP_EXTENDED_ATTRIBUTES {
     fn eq(&self, other: &Self) -> bool {
@@ -6469,6 +6549,7 @@ impl ::core::default::Default for HIDP_KEYBOARD_DIRECTION {
 }
 unsafe impl ::windows::core::Abi for HIDP_KEYBOARD_DIRECTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HIDP_KEYBOARD_DIRECTION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6488,6 +6569,7 @@ impl ::core::clone::Clone for HIDP_KEYBOARD_MODIFIER_STATE {
 }
 unsafe impl ::windows::core::Abi for HIDP_KEYBOARD_MODIFIER_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HIDP_KEYBOARD_MODIFIER_STATE {
     fn eq(&self, other: &Self) -> bool {
@@ -6514,6 +6596,7 @@ impl ::core::clone::Clone for HIDP_KEYBOARD_MODIFIER_STATE_0 {
 }
 unsafe impl ::windows::core::Abi for HIDP_KEYBOARD_MODIFIER_STATE_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HIDP_KEYBOARD_MODIFIER_STATE_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -6544,6 +6627,7 @@ impl ::core::fmt::Debug for HIDP_KEYBOARD_MODIFIER_STATE_0_0 {
 }
 unsafe impl ::windows::core::Abi for HIDP_KEYBOARD_MODIFIER_STATE_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HIDP_KEYBOARD_MODIFIER_STATE_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -6576,6 +6660,7 @@ impl ::core::clone::Clone for HIDP_LINK_COLLECTION_NODE {
 }
 unsafe impl ::windows::core::Abi for HIDP_LINK_COLLECTION_NODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HIDP_LINK_COLLECTION_NODE {
     fn eq(&self, other: &Self) -> bool {
@@ -6611,6 +6696,7 @@ impl ::core::default::Default for HIDP_REPORT_TYPE {
 }
 unsafe impl ::windows::core::Abi for HIDP_REPORT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HIDP_REPORT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6637,6 +6723,7 @@ impl ::core::fmt::Debug for HIDP_UNKNOWN_TOKEN {
 }
 unsafe impl ::windows::core::Abi for HIDP_UNKNOWN_TOKEN {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HIDP_UNKNOWN_TOKEN {
     fn eq(&self, other: &Self) -> bool {
@@ -6688,6 +6775,7 @@ impl ::core::clone::Clone for HIDP_VALUE_CAPS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for HIDP_VALUE_CAPS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for HIDP_VALUE_CAPS {
@@ -6721,6 +6809,7 @@ impl ::core::clone::Clone for HIDP_VALUE_CAPS_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for HIDP_VALUE_CAPS_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for HIDP_VALUE_CAPS_0 {
@@ -6766,6 +6855,7 @@ impl ::core::fmt::Debug for HIDP_VALUE_CAPS_0_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for HIDP_VALUE_CAPS_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for HIDP_VALUE_CAPS_0_0 {
@@ -6811,6 +6901,7 @@ impl ::core::fmt::Debug for HIDP_VALUE_CAPS_0_1 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for HIDP_VALUE_CAPS_0_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for HIDP_VALUE_CAPS_0_1 {
@@ -6854,6 +6945,7 @@ impl ::core::fmt::Debug for HID_COLLECTION_INFORMATION {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for HID_COLLECTION_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for HID_COLLECTION_INFORMATION {
@@ -6888,6 +6980,7 @@ impl ::core::fmt::Debug for HID_DRIVER_CONFIG {
 }
 unsafe impl ::windows::core::Abi for HID_DRIVER_CONFIG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HID_DRIVER_CONFIG {
     fn eq(&self, other: &Self) -> bool {
@@ -8146,6 +8239,7 @@ impl ::core::fmt::Debug for HID_XFER_PACKET {
 }
 unsafe impl ::windows::core::Abi for HID_XFER_PACKET {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HID_XFER_PACKET {
     fn eq(&self, other: &Self) -> bool {
@@ -8835,6 +8929,11 @@ pub unsafe fn HidP_UsageListDifference(previoususagelist: *const u16, currentusa
 #[doc = "*Required features: `\"Win32_Devices_HumanInterfaceDevice\"`*"]
 #[repr(transparent)]
 pub struct IDirectInput2A(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectInput2A {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirectInput2A {
     #[doc = "*Required features: `\"Win32_Devices_HumanInterfaceDevice\"`*"]
     pub unsafe fn CreateDevice<'a, Param2: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, param0: *const ::windows::core::GUID, param1: *mut ::core::option::Option<IDirectInputDeviceA>, param2: Param2) -> ::windows::core::Result<()> {
@@ -8904,11 +9003,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDirectInputA> for &'a IDirectInput2A {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirectInput2A {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirectInput2A {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8933,6 +9027,11 @@ pub struct IDirectInput2A_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_HumanInterfaceDevice\"`*"]
 #[repr(transparent)]
 pub struct IDirectInput2W(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectInput2W {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirectInput2W {
     #[doc = "*Required features: `\"Win32_Devices_HumanInterfaceDevice\"`*"]
     pub unsafe fn CreateDevice<'a, Param2: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, param0: *const ::windows::core::GUID, param1: *mut ::core::option::Option<IDirectInputDeviceW>, param2: Param2) -> ::windows::core::Result<()> {
@@ -9002,11 +9101,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDirectInputW> for &'a IDirectInput2W {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirectInput2W {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirectInput2W {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9031,6 +9125,11 @@ pub struct IDirectInput2W_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_HumanInterfaceDevice\"`*"]
 #[repr(transparent)]
 pub struct IDirectInput7A(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectInput7A {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirectInput7A {
     #[doc = "*Required features: `\"Win32_Devices_HumanInterfaceDevice\"`*"]
     pub unsafe fn CreateDevice<'a, Param2: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, param0: *const ::windows::core::GUID, param1: *mut ::core::option::Option<IDirectInputDeviceA>, param2: Param2) -> ::windows::core::Result<()> {
@@ -9124,11 +9223,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDirectInput2A> for &'a IDirectInput7A {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirectInput7A {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirectInput7A {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9153,6 +9247,11 @@ pub struct IDirectInput7A_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_HumanInterfaceDevice\"`*"]
 #[repr(transparent)]
 pub struct IDirectInput7W(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectInput7W {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirectInput7W {
     #[doc = "*Required features: `\"Win32_Devices_HumanInterfaceDevice\"`*"]
     pub unsafe fn CreateDevice<'a, Param2: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, param0: *const ::windows::core::GUID, param1: *mut ::core::option::Option<IDirectInputDeviceW>, param2: Param2) -> ::windows::core::Result<()> {
@@ -9246,11 +9345,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDirectInput2W> for &'a IDirectInput7W {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirectInput7W {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirectInput7W {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9275,6 +9369,11 @@ pub struct IDirectInput7W_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_HumanInterfaceDevice\"`*"]
 #[repr(transparent)]
 pub struct IDirectInput8A(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectInput8A {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirectInput8A {
     #[doc = "*Required features: `\"Win32_Devices_HumanInterfaceDevice\"`*"]
     pub unsafe fn CreateDevice<'a, Param2: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, param0: *const ::windows::core::GUID, param1: *mut ::core::option::Option<IDirectInputDevice8A>, param2: Param2) -> ::windows::core::Result<()> {
@@ -9334,11 +9433,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDire
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirectInput8A {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirectInput8A {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9385,6 +9479,11 @@ pub struct IDirectInput8A_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_HumanInterfaceDevice\"`*"]
 #[repr(transparent)]
 pub struct IDirectInput8W(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectInput8W {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirectInput8W {
     #[doc = "*Required features: `\"Win32_Devices_HumanInterfaceDevice\"`*"]
     pub unsafe fn CreateDevice<'a, Param2: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, param0: *const ::windows::core::GUID, param1: *mut ::core::option::Option<IDirectInputDevice8W>, param2: Param2) -> ::windows::core::Result<()> {
@@ -9444,11 +9543,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDire
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirectInput8W {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirectInput8W {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9495,6 +9589,11 @@ pub struct IDirectInput8W_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_HumanInterfaceDevice\"`*"]
 #[repr(transparent)]
 pub struct IDirectInputA(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectInputA {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirectInputA {
     #[doc = "*Required features: `\"Win32_Devices_HumanInterfaceDevice\"`*"]
     pub unsafe fn CreateDevice<'a, Param2: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, param0: *const ::windows::core::GUID, param1: *mut ::core::option::Option<IDirectInputDeviceA>, param2: Param2) -> ::windows::core::Result<()> {
@@ -9540,11 +9639,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDire
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirectInputA {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirectInputA {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9582,6 +9676,11 @@ pub struct IDirectInputA_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_HumanInterfaceDevice\"`*"]
 #[repr(transparent)]
 pub struct IDirectInputDevice2A(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectInputDevice2A {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirectInputDevice2A {
     #[doc = "*Required features: `\"Win32_Devices_HumanInterfaceDevice\"`*"]
     pub unsafe fn GetCapabilities(&self, param0: *mut DIDEVCAPS) -> ::windows::core::Result<()> {
@@ -9730,11 +9829,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDirectInputDeviceA> for &'a IDirectInpu
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirectInputDevice2A {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirectInputDevice2A {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9776,6 +9870,11 @@ pub struct IDirectInputDevice2A_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_HumanInterfaceDevice\"`*"]
 #[repr(transparent)]
 pub struct IDirectInputDevice2W(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectInputDevice2W {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirectInputDevice2W {
     #[doc = "*Required features: `\"Win32_Devices_HumanInterfaceDevice\"`*"]
     pub unsafe fn GetCapabilities(&self, param0: *mut DIDEVCAPS) -> ::windows::core::Result<()> {
@@ -9921,11 +10020,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDirectInputDeviceW> for &'a IDirectInpu
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirectInputDevice2W {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirectInputDevice2W {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9964,6 +10058,11 @@ pub struct IDirectInputDevice2W_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_HumanInterfaceDevice\"`*"]
 #[repr(transparent)]
 pub struct IDirectInputDevice7A(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectInputDevice7A {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirectInputDevice7A {
     #[doc = "*Required features: `\"Win32_Devices_HumanInterfaceDevice\"`*"]
     pub unsafe fn GetCapabilities(&self, param0: *mut DIDEVCAPS) -> ::windows::core::Result<()> {
@@ -10142,11 +10241,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDirectInputDevice2A> for &'a IDirectInp
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirectInputDevice7A {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirectInputDevice7A {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10178,6 +10272,11 @@ pub struct IDirectInputDevice7A_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_HumanInterfaceDevice\"`*"]
 #[repr(transparent)]
 pub struct IDirectInputDevice7W(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectInputDevice7W {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirectInputDevice7W {
     #[doc = "*Required features: `\"Win32_Devices_HumanInterfaceDevice\"`*"]
     pub unsafe fn GetCapabilities(&self, param0: *mut DIDEVCAPS) -> ::windows::core::Result<()> {
@@ -10353,11 +10452,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDirectInputDevice2W> for &'a IDirectInp
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirectInputDevice7W {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirectInputDevice7W {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10389,6 +10483,11 @@ pub struct IDirectInputDevice7W_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_HumanInterfaceDevice\"`*"]
 #[repr(transparent)]
 pub struct IDirectInputDevice8A(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectInputDevice8A {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirectInputDevice8A {
     #[doc = "*Required features: `\"Win32_Devices_HumanInterfaceDevice\"`*"]
     pub unsafe fn GetCapabilities(&self, param0: *mut DIDEVCAPS) -> ::windows::core::Result<()> {
@@ -10542,11 +10641,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDire
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirectInputDevice8A {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirectInputDevice8A {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10644,6 +10738,11 @@ pub struct IDirectInputDevice8A_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_HumanInterfaceDevice\"`*"]
 #[repr(transparent)]
 pub struct IDirectInputDevice8W(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectInputDevice8W {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirectInputDevice8W {
     #[doc = "*Required features: `\"Win32_Devices_HumanInterfaceDevice\"`*"]
     pub unsafe fn GetCapabilities(&self, param0: *mut DIDEVCAPS) -> ::windows::core::Result<()> {
@@ -10794,11 +10893,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDire
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirectInputDevice8W {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirectInputDevice8W {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10887,6 +10981,11 @@ pub struct IDirectInputDevice8W_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_HumanInterfaceDevice\"`*"]
 #[repr(transparent)]
 pub struct IDirectInputDeviceA(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectInputDeviceA {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirectInputDeviceA {
     #[doc = "*Required features: `\"Win32_Devices_HumanInterfaceDevice\"`*"]
     pub unsafe fn GetCapabilities(&self, param0: *mut DIDEVCAPS) -> ::windows::core::Result<()> {
@@ -10976,11 +11075,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDire
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirectInputDeviceA {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirectInputDeviceA {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11040,6 +11134,11 @@ pub struct IDirectInputDeviceA_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_HumanInterfaceDevice\"`*"]
 #[repr(transparent)]
 pub struct IDirectInputDeviceW(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectInputDeviceW {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirectInputDeviceW {
     #[doc = "*Required features: `\"Win32_Devices_HumanInterfaceDevice\"`*"]
     pub unsafe fn GetCapabilities(&self, param0: *mut DIDEVCAPS) -> ::windows::core::Result<()> {
@@ -11127,11 +11226,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDire
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirectInputDeviceW {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirectInputDeviceW {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11185,6 +11279,11 @@ pub struct IDirectInputDeviceW_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_HumanInterfaceDevice\"`*"]
 #[repr(transparent)]
 pub struct IDirectInputEffect(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectInputEffect {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirectInputEffect {
     #[doc = "*Required features: `\"Win32_Devices_HumanInterfaceDevice\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -11248,11 +11347,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDire
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirectInputEffect {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirectInputEffect {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11289,6 +11383,11 @@ pub struct IDirectInputEffect_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_HumanInterfaceDevice\"`*"]
 #[repr(transparent)]
 pub struct IDirectInputEffectDriver(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectInputEffectDriver {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirectInputEffectDriver {
     #[doc = "*Required features: `\"Win32_Devices_HumanInterfaceDevice\"`*"]
     pub unsafe fn DeviceID(&self, param0: u32, param1: u32, param2: u32, param3: u32, param4: *mut ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -11355,11 +11454,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDire
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirectInputEffectDriver {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirectInputEffectDriver {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11394,6 +11488,11 @@ pub struct IDirectInputEffectDriver_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_HumanInterfaceDevice\"`*"]
 #[repr(transparent)]
 pub struct IDirectInputJoyConfig(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectInputJoyConfig {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirectInputJoyConfig {
     #[doc = "*Required features: `\"Win32_Devices_HumanInterfaceDevice\"`*"]
     pub unsafe fn Acquire(&self) -> ::windows::core::Result<()> {
@@ -11485,11 +11584,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDire
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirectInputJoyConfig {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirectInputJoyConfig {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11544,6 +11638,11 @@ pub struct IDirectInputJoyConfig_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_HumanInterfaceDevice\"`*"]
 #[repr(transparent)]
 pub struct IDirectInputJoyConfig8(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectInputJoyConfig8 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirectInputJoyConfig8 {
     #[doc = "*Required features: `\"Win32_Devices_HumanInterfaceDevice\"`*"]
     pub unsafe fn Acquire(&self) -> ::windows::core::Result<()> {
@@ -11635,11 +11734,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDire
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirectInputJoyConfig8 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirectInputJoyConfig8 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11694,6 +11788,11 @@ pub struct IDirectInputJoyConfig8_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_HumanInterfaceDevice\"`*"]
 #[repr(transparent)]
 pub struct IDirectInputW(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectInputW {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirectInputW {
     #[doc = "*Required features: `\"Win32_Devices_HumanInterfaceDevice\"`*"]
     pub unsafe fn CreateDevice<'a, Param2: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, param0: *const ::windows::core::GUID, param1: *mut ::core::option::Option<IDirectInputDeviceW>, param2: Param2) -> ::windows::core::Result<()> {
@@ -11737,11 +11836,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IDirectIn
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDirectInputW {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IDirectInputW {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IDirectInputW {
@@ -11797,6 +11891,7 @@ impl ::core::fmt::Debug for INDICATOR_LIST {
 }
 unsafe impl ::windows::core::Abi for INDICATOR_LIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for INDICATOR_LIST {
     fn eq(&self, other: &Self) -> bool {
@@ -11833,6 +11928,7 @@ impl ::core::fmt::Debug for INPUT_BUTTON_ENABLE_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for INPUT_BUTTON_ENABLE_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for INPUT_BUTTON_ENABLE_INFO {
@@ -11899,6 +11995,7 @@ impl ::core::fmt::Debug for JOYCALIBRATE {
 }
 unsafe impl ::windows::core::Abi for JOYCALIBRATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for JOYCALIBRATE {
     fn eq(&self, other: &Self) -> bool {
@@ -11934,6 +12031,7 @@ impl ::core::fmt::Debug for JOYPOS {
 }
 unsafe impl ::windows::core::Abi for JOYPOS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for JOYPOS {
     fn eq(&self, other: &Self) -> bool {
@@ -11966,6 +12064,7 @@ impl ::core::fmt::Debug for JOYRANGE {
 }
 unsafe impl ::windows::core::Abi for JOYRANGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for JOYRANGE {
     fn eq(&self, other: &Self) -> bool {
@@ -12000,6 +12099,7 @@ impl ::core::fmt::Debug for JOYREGHWCONFIG {
 }
 unsafe impl ::windows::core::Abi for JOYREGHWCONFIG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for JOYREGHWCONFIG {
     fn eq(&self, other: &Self) -> bool {
@@ -12031,6 +12131,7 @@ impl ::core::fmt::Debug for JOYREGHWSETTINGS {
 }
 unsafe impl ::windows::core::Abi for JOYREGHWSETTINGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for JOYREGHWSETTINGS {
     fn eq(&self, other: &Self) -> bool {
@@ -12063,6 +12164,7 @@ impl ::core::fmt::Debug for JOYREGHWVALUES {
 }
 unsafe impl ::windows::core::Abi for JOYREGHWVALUES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for JOYREGHWVALUES {
     fn eq(&self, other: &Self) -> bool {
@@ -12095,6 +12197,7 @@ impl ::core::fmt::Debug for JOYREGUSERVALUES {
 }
 unsafe impl ::windows::core::Abi for JOYREGUSERVALUES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for JOYREGUSERVALUES {
     fn eq(&self, other: &Self) -> bool {
@@ -12298,6 +12401,7 @@ impl ::core::fmt::Debug for KEYBOARD_ATTRIBUTES {
 }
 unsafe impl ::windows::core::Abi for KEYBOARD_ATTRIBUTES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KEYBOARD_ATTRIBUTES {
     fn eq(&self, other: &Self) -> bool {
@@ -12338,6 +12442,7 @@ impl ::core::fmt::Debug for KEYBOARD_EXTENDED_ATTRIBUTES {
 }
 unsafe impl ::windows::core::Abi for KEYBOARD_EXTENDED_ATTRIBUTES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KEYBOARD_EXTENDED_ATTRIBUTES {
     fn eq(&self, other: &Self) -> bool {
@@ -12371,6 +12476,7 @@ impl ::core::fmt::Debug for KEYBOARD_ID {
 }
 unsafe impl ::windows::core::Abi for KEYBOARD_ID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KEYBOARD_ID {
     fn eq(&self, other: &Self) -> bool {
@@ -12403,6 +12509,7 @@ impl ::core::fmt::Debug for KEYBOARD_IME_STATUS {
 }
 unsafe impl ::windows::core::Abi for KEYBOARD_IME_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KEYBOARD_IME_STATUS {
     fn eq(&self, other: &Self) -> bool {
@@ -12434,6 +12541,7 @@ impl ::core::fmt::Debug for KEYBOARD_INDICATOR_PARAMETERS {
 }
 unsafe impl ::windows::core::Abi for KEYBOARD_INDICATOR_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KEYBOARD_INDICATOR_PARAMETERS {
     fn eq(&self, other: &Self) -> bool {
@@ -12465,6 +12573,7 @@ impl ::core::fmt::Debug for KEYBOARD_INDICATOR_TRANSLATION {
 }
 unsafe impl ::windows::core::Abi for KEYBOARD_INDICATOR_TRANSLATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KEYBOARD_INDICATOR_TRANSLATION {
     fn eq(&self, other: &Self) -> bool {
@@ -12499,6 +12608,7 @@ impl ::core::fmt::Debug for KEYBOARD_INPUT_DATA {
 }
 unsafe impl ::windows::core::Abi for KEYBOARD_INPUT_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KEYBOARD_INPUT_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -12543,6 +12653,7 @@ impl ::core::fmt::Debug for KEYBOARD_TYPEMATIC_PARAMETERS {
 }
 unsafe impl ::windows::core::Abi for KEYBOARD_TYPEMATIC_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KEYBOARD_TYPEMATIC_PARAMETERS {
     fn eq(&self, other: &Self) -> bool {
@@ -12573,6 +12684,7 @@ impl ::core::fmt::Debug for KEYBOARD_UNIT_ID_PARAMETER {
 }
 unsafe impl ::windows::core::Abi for KEYBOARD_UNIT_ID_PARAMETER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for KEYBOARD_UNIT_ID_PARAMETER {
     fn eq(&self, other: &Self) -> bool {
@@ -12673,6 +12785,7 @@ impl ::core::fmt::Debug for MOUSE_ATTRIBUTES {
 }
 unsafe impl ::windows::core::Abi for MOUSE_ATTRIBUTES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MOUSE_ATTRIBUTES {
     fn eq(&self, other: &Self) -> bool {
@@ -12736,6 +12849,7 @@ impl ::core::clone::Clone for MOUSE_INPUT_DATA {
 }
 unsafe impl ::windows::core::Abi for MOUSE_INPUT_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MOUSE_INPUT_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -12762,6 +12876,7 @@ impl ::core::clone::Clone for MOUSE_INPUT_DATA_0 {
 }
 unsafe impl ::windows::core::Abi for MOUSE_INPUT_DATA_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MOUSE_INPUT_DATA_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -12793,6 +12908,7 @@ impl ::core::fmt::Debug for MOUSE_INPUT_DATA_0_0 {
 }
 unsafe impl ::windows::core::Abi for MOUSE_INPUT_DATA_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MOUSE_INPUT_DATA_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -12845,6 +12961,7 @@ impl ::core::fmt::Debug for MOUSE_UNIT_ID_PARAMETER {
 }
 unsafe impl ::windows::core::Abi for MOUSE_UNIT_ID_PARAMETER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MOUSE_UNIT_ID_PARAMETER {
     fn eq(&self, other: &Self) -> bool {
@@ -12886,6 +13003,7 @@ impl ::core::fmt::Debug for USAGE_AND_PAGE {
 }
 unsafe impl ::windows::core::Abi for USAGE_AND_PAGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USAGE_AND_PAGE {
     fn eq(&self, other: &Self) -> bool {

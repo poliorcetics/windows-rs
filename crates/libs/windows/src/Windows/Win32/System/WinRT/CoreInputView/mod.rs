@@ -2,6 +2,11 @@
 #[doc = "*Required features: `\"Win32_System_WinRT_CoreInputView\"`*"]
 #[repr(transparent)]
 pub struct ICoreFrameworkInputViewInterop(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICoreFrameworkInputViewInterop {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ICoreFrameworkInputViewInterop {
     #[doc = "*Required features: `\"Win32_System_WinRT_CoreInputView\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -48,11 +53,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for ICore
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a ICoreFrameworkInputViewInterop {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IInspectable> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for ICoreFrameworkInputViewInterop {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for ICoreFrameworkInputViewInterop {

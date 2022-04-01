@@ -50,10 +50,10 @@ impl ::core::fmt::Debug for Color {
 }
 unsafe impl ::windows::core::Abi for Color {
     type Abi = Self;
+    type DefaultType = Self;
 }
 unsafe impl ::windows::core::RuntimeType for Color {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"struct(Windows.UI.Color;u1;u1;u1;u1)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -98,11 +98,6 @@ impl ColorHelper {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for ColorHelper {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ColorHelper {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -116,7 +111,6 @@ impl ::core::fmt::Debug for ColorHelper {
 }
 unsafe impl ::windows::core::RuntimeType for ColorHelper {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.ColorHelper;{193cfbe7-65c7-4540-ad08-6283ba76879a})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1167,11 +1161,6 @@ impl Colors {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for Colors {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for Colors {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1185,7 +1174,6 @@ impl ::core::fmt::Debug for Colors {
 }
 unsafe impl ::windows::core::RuntimeType for Colors {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Colors;{9b8c9326-4ca6-4ce5-8994-9eff65cabdcc})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1242,6 +1230,11 @@ unsafe impl ::core::marker::Sync for Colors {}
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IColorHelper(::windows::core::IUnknown);
+impl ::core::clone::Clone for IColorHelper {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IColorHelper {
     type Vtable = IColorHelper_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x193cfbe7_65c7_4540_ad08_6283ba76879a);
@@ -1254,6 +1247,11 @@ pub struct IColorHelper_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IColorHelperStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IColorHelperStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IColorHelperStatics {
     type Vtable = IColorHelperStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x8504dbea_fb6a_4144_a6c2_33499c9284f5);
@@ -1267,6 +1265,11 @@ pub struct IColorHelperStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IColorHelperStatics2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IColorHelperStatics2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IColorHelperStatics2 {
     type Vtable = IColorHelperStatics2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x24d9af02_6eb0_4b94_855c_fcf0818d9a16);
@@ -1280,6 +1283,11 @@ pub struct IColorHelperStatics2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IColors(::windows::core::IUnknown);
+impl ::core::clone::Clone for IColors {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IColors {
     type Vtable = IColors_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9b8c9326_4ca6_4ce5_8994_9eff65cabdcc);
@@ -1292,6 +1300,11 @@ pub struct IColors_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IColorsStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IColorsStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IColorsStatics {
     type Vtable = IColorsStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xcff52e04_cca6_4614_a17e_754910c84a99);
@@ -1445,6 +1458,11 @@ pub struct IColorsStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IUIContentRoot(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIContentRoot {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IUIContentRoot {
     type Vtable = IUIContentRoot_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1dfcbac6_b36b_5cb9_9bc5_2b7a0eddc378);
@@ -1458,6 +1476,11 @@ pub struct IUIContentRoot_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IUIContext(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIContext {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IUIContext {
     type Vtable = IUIContext_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xbb5cfacd_5bd8_59d0_a59e_1c17a4d6d243);
@@ -1480,11 +1503,6 @@ impl UIContentRoot {
         }
     }
 }
-impl ::core::clone::Clone for UIContentRoot {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for UIContentRoot {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1498,7 +1516,6 @@ impl ::core::fmt::Debug for UIContentRoot {
 }
 unsafe impl ::windows::core::RuntimeType for UIContentRoot {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.UIContentRoot;{1dfcbac6-b36b-5cb9-9bc5-2b7a0eddc378})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1556,11 +1573,6 @@ unsafe impl ::core::marker::Sync for UIContentRoot {}
 #[repr(transparent)]
 pub struct UIContext(::windows::core::IUnknown);
 impl UIContext {}
-impl ::core::clone::Clone for UIContext {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for UIContext {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1574,7 +1586,6 @@ impl ::core::fmt::Debug for UIContext {
 }
 unsafe impl ::windows::core::RuntimeType for UIContext {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.UIContext;{bb5cfacd-5bd8-59d0-a59e-1c17a4d6d243})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1646,10 +1657,10 @@ impl ::core::fmt::Debug for WindowId {
 }
 unsafe impl ::windows::core::Abi for WindowId {
     type Abi = Self;
+    type DefaultType = Self;
 }
 unsafe impl ::windows::core::RuntimeType for WindowId {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"struct(Windows.UI.WindowId;u8)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }

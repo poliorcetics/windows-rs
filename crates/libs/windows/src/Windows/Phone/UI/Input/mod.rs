@@ -17,11 +17,6 @@ impl BackPressedEventArgs {
         unsafe { (::windows::core::Interface::vtable(this).SetHandled)(::core::mem::transmute_copy(this), value).ok() }
     }
 }
-impl ::core::clone::Clone for BackPressedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for BackPressedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -35,7 +30,6 @@ impl ::core::fmt::Debug for BackPressedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for BackPressedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Phone.UI.Input.BackPressedEventArgs;{f6f555ff-64ec-42a2-b93b-2fbc0c36a121})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -93,11 +87,6 @@ unsafe impl ::core::marker::Sync for BackPressedEventArgs {}
 #[repr(transparent)]
 pub struct CameraEventArgs(::windows::core::IUnknown);
 impl CameraEventArgs {}
-impl ::core::clone::Clone for CameraEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for CameraEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -111,7 +100,6 @@ impl ::core::fmt::Debug for CameraEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for CameraEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Phone.UI.Input.CameraEventArgs;{b4063bda-201f-473d-bc69-e9e4ac57c9d0})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -237,6 +225,11 @@ impl ::windows::core::RuntimeName for HardwareButtons {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBackPressedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBackPressedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBackPressedEventArgs {
     type Vtable = IBackPressedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf6f555ff_64ec_42a2_b93b_2fbc0c36a121);
@@ -251,6 +244,11 @@ pub struct IBackPressedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICameraEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICameraEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICameraEventArgs {
     type Vtable = ICameraEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb4063bda_201f_473d_bc69_e9e4ac57c9d0);
@@ -263,6 +261,11 @@ pub struct ICameraEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHardwareButtonsStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHardwareButtonsStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHardwareButtonsStatics {
     type Vtable = IHardwareButtonsStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x594b8780_da66_4fd8_a776_7506bd0cbfa7);
@@ -283,6 +286,11 @@ pub struct IHardwareButtonsStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHardwareButtonsStatics2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHardwareButtonsStatics2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHardwareButtonsStatics2 {
     type Vtable = IHardwareButtonsStatics2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x39c6c274_993f_40dd_854c_831a8934b92e);

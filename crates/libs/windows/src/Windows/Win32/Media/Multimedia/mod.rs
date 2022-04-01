@@ -39,6 +39,7 @@ impl ::core::clone::Clone for ADPCMCOEFSET {
 }
 unsafe impl ::windows::core::Abi for ADPCMCOEFSET {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ADPCMCOEFSET {
     fn eq(&self, other: &Self) -> bool {
@@ -69,6 +70,7 @@ impl ::core::clone::Clone for ADPCMEWAVEFORMAT {
 #[cfg(feature = "Win32_Media_Audio")]
 unsafe impl ::windows::core::Abi for ADPCMEWAVEFORMAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Media_Audio")]
 impl ::core::cmp::PartialEq for ADPCMEWAVEFORMAT {
@@ -104,6 +106,7 @@ impl ::core::clone::Clone for ADPCMWAVEFORMAT {
 #[cfg(feature = "Win32_Media_Audio")]
 unsafe impl ::windows::core::Abi for ADPCMWAVEFORMAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Media_Audio")]
 impl ::core::cmp::PartialEq for ADPCMWAVEFORMAT {
@@ -136,6 +139,7 @@ impl ::core::clone::Clone for APTXWAVEFORMAT {
 #[cfg(feature = "Win32_Media_Audio")]
 unsafe impl ::windows::core::Abi for APTXWAVEFORMAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Media_Audio")]
 impl ::core::cmp::PartialEq for APTXWAVEFORMAT {
@@ -168,6 +172,7 @@ impl ::core::clone::Clone for AUDIOFILE_AF10WAVEFORMAT {
 #[cfg(feature = "Win32_Media_Audio")]
 unsafe impl ::windows::core::Abi for AUDIOFILE_AF10WAVEFORMAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Media_Audio")]
 impl ::core::cmp::PartialEq for AUDIOFILE_AF10WAVEFORMAT {
@@ -200,6 +205,7 @@ impl ::core::clone::Clone for AUDIOFILE_AF36WAVEFORMAT {
 #[cfg(feature = "Win32_Media_Audio")]
 unsafe impl ::windows::core::Abi for AUDIOFILE_AF36WAVEFORMAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Media_Audio")]
 impl ::core::cmp::PartialEq for AUDIOFILE_AF36WAVEFORMAT {
@@ -293,6 +299,7 @@ impl ::core::fmt::Debug for AVICOMPRESSOPTIONS {
 }
 unsafe impl ::windows::core::Abi for AVICOMPRESSOPTIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for AVICOMPRESSOPTIONS {
     fn eq(&self, other: &Self) -> bool {
@@ -382,6 +389,7 @@ impl ::core::fmt::Debug for AVIFILEINFOA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for AVIFILEINFOA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for AVIFILEINFOA {
@@ -439,6 +447,7 @@ impl ::core::fmt::Debug for AVIFILEINFOW {
 }
 unsafe impl ::windows::core::Abi for AVIFILEINFOW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for AVIFILEINFOW {
     fn eq(&self, other: &Self) -> bool {
@@ -801,6 +810,7 @@ impl ::core::fmt::Debug for AVISTREAMINFOA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for AVISTREAMINFOA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for AVISTREAMINFOA {
@@ -875,6 +885,7 @@ impl ::core::fmt::Debug for AVISTREAMINFOW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for AVISTREAMINFOW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for AVISTREAMINFOW {
@@ -1364,6 +1375,7 @@ impl ::core::fmt::Debug for CAPDRIVERCAPS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for CAPDRIVERCAPS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for CAPDRIVERCAPS {
@@ -1405,6 +1417,7 @@ impl ::core::fmt::Debug for CAPINFOCHUNK {
 }
 unsafe impl ::windows::core::Abi for CAPINFOCHUNK {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CAPINFOCHUNK {
     fn eq(&self, other: &Self) -> bool {
@@ -1476,6 +1489,7 @@ impl ::core::fmt::Debug for CAPSTATUS {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
 unsafe impl ::windows::core::Abi for CAPSTATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
 impl ::core::cmp::PartialEq for CAPSTATUS {
@@ -1568,6 +1582,7 @@ impl ::core::fmt::Debug for CAPTUREPARMS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for CAPTUREPARMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for CAPTUREPARMS {
@@ -1618,6 +1633,7 @@ impl ::core::fmt::Debug for CHANNEL_CAPS {
 }
 unsafe impl ::windows::core::Abi for CHANNEL_CAPS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CHANNEL_CAPS {
     fn eq(&self, other: &Self) -> bool {
@@ -1687,6 +1703,7 @@ impl ::core::fmt::Debug for COMPVARS {
 #[cfg(feature = "Win32_Graphics_Gdi")]
 unsafe impl ::windows::core::Abi for COMPVARS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Gdi")]
 impl ::core::cmp::PartialEq for COMPVARS {
@@ -1720,6 +1737,7 @@ impl ::core::clone::Clone for CONTRESCR10WAVEFORMAT {
 #[cfg(feature = "Win32_Media_Audio")]
 unsafe impl ::windows::core::Abi for CONTRESCR10WAVEFORMAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Media_Audio")]
 impl ::core::cmp::PartialEq for CONTRESCR10WAVEFORMAT {
@@ -1753,6 +1771,7 @@ impl ::core::clone::Clone for CONTRESVQLPCWAVEFORMAT {
 #[cfg(feature = "Win32_Media_Audio")]
 unsafe impl ::windows::core::Abi for CONTRESVQLPCWAVEFORMAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Media_Audio")]
 impl ::core::cmp::PartialEq for CONTRESVQLPCWAVEFORMAT {
@@ -1790,6 +1809,7 @@ impl ::core::clone::Clone for CREATIVEADPCMWAVEFORMAT {
 #[cfg(feature = "Win32_Media_Audio")]
 unsafe impl ::windows::core::Abi for CREATIVEADPCMWAVEFORMAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Media_Audio")]
 impl ::core::cmp::PartialEq for CREATIVEADPCMWAVEFORMAT {
@@ -1823,6 +1843,7 @@ impl ::core::clone::Clone for CREATIVEFASTSPEECH10WAVEFORMAT {
 #[cfg(feature = "Win32_Media_Audio")]
 unsafe impl ::windows::core::Abi for CREATIVEFASTSPEECH10WAVEFORMAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Media_Audio")]
 impl ::core::cmp::PartialEq for CREATIVEFASTSPEECH10WAVEFORMAT {
@@ -1856,6 +1877,7 @@ impl ::core::clone::Clone for CREATIVEFASTSPEECH8WAVEFORMAT {
 #[cfg(feature = "Win32_Media_Audio")]
 unsafe impl ::windows::core::Abi for CREATIVEFASTSPEECH8WAVEFORMAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Media_Audio")]
 impl ::core::cmp::PartialEq for CREATIVEFASTSPEECH8WAVEFORMAT {
@@ -1890,6 +1912,7 @@ impl ::core::clone::Clone for CSIMAADPCMWAVEFORMAT {
 #[cfg(feature = "Win32_Media_Audio")]
 unsafe impl ::windows::core::Abi for CSIMAADPCMWAVEFORMAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Media_Audio")]
 impl ::core::cmp::PartialEq for CSIMAADPCMWAVEFORMAT {
@@ -1999,6 +2022,7 @@ impl ::core::clone::Clone for DIALOGICOKIADPCMWAVEFORMAT {
 #[cfg(feature = "Win32_Media_Audio")]
 unsafe impl ::windows::core::Abi for DIALOGICOKIADPCMWAVEFORMAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Media_Audio")]
 impl ::core::cmp::PartialEq for DIALOGICOKIADPCMWAVEFORMAT {
@@ -2032,6 +2056,7 @@ impl ::core::clone::Clone for DIGIADPCMWAVEFORMAT {
 #[cfg(feature = "Win32_Media_Audio")]
 unsafe impl ::windows::core::Abi for DIGIADPCMWAVEFORMAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Media_Audio")]
 impl ::core::cmp::PartialEq for DIGIADPCMWAVEFORMAT {
@@ -2064,6 +2089,7 @@ impl ::core::clone::Clone for DIGIFIXWAVEFORMAT {
 #[cfg(feature = "Win32_Media_Audio")]
 unsafe impl ::windows::core::Abi for DIGIFIXWAVEFORMAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Media_Audio")]
 impl ::core::cmp::PartialEq for DIGIFIXWAVEFORMAT {
@@ -2097,6 +2123,7 @@ impl ::core::clone::Clone for DIGIREALWAVEFORMAT {
 #[cfg(feature = "Win32_Media_Audio")]
 unsafe impl ::windows::core::Abi for DIGIREALWAVEFORMAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Media_Audio")]
 impl ::core::cmp::PartialEq for DIGIREALWAVEFORMAT {
@@ -2129,6 +2156,7 @@ impl ::core::clone::Clone for DIGISTDWAVEFORMAT {
 #[cfg(feature = "Win32_Media_Audio")]
 unsafe impl ::windows::core::Abi for DIGISTDWAVEFORMAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Media_Audio")]
 impl ::core::cmp::PartialEq for DIGISTDWAVEFORMAT {
@@ -2166,6 +2194,7 @@ impl ::core::clone::Clone for DOLBYAC2WAVEFORMAT {
 #[cfg(feature = "Win32_Media_Audio")]
 unsafe impl ::windows::core::Abi for DOLBYAC2WAVEFORMAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Media_Audio")]
 impl ::core::cmp::PartialEq for DOLBYAC2WAVEFORMAT {
@@ -2205,6 +2234,7 @@ impl ::core::fmt::Debug for DRAWDIBTIME {
 }
 unsafe impl ::windows::core::Abi for DRAWDIBTIME {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DRAWDIBTIME {
     fn eq(&self, other: &Self) -> bool {
@@ -2244,6 +2274,7 @@ impl ::core::clone::Clone for DRMWAVEFORMAT {
 #[cfg(feature = "Win32_Media_Audio")]
 unsafe impl ::windows::core::Abi for DRMWAVEFORMAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Media_Audio")]
 impl ::core::cmp::PartialEq for DRMWAVEFORMAT {
@@ -2280,6 +2311,7 @@ impl ::core::clone::Clone for DRVCONFIGINFO {
 }
 unsafe impl ::windows::core::Abi for DRVCONFIGINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DRVCONFIGINFO {
     fn eq(&self, other: &Self) -> bool {
@@ -2308,6 +2340,7 @@ impl ::core::clone::Clone for DRVCONFIGINFOEX {
 }
 unsafe impl ::windows::core::Abi for DRVCONFIGINFOEX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DRVCONFIGINFOEX {
     fn eq(&self, other: &Self) -> bool {
@@ -2352,6 +2385,7 @@ impl ::core::clone::Clone for DRVM_IOCTL_DATA {
 }
 unsafe impl ::windows::core::Abi for DRVM_IOCTL_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DRVM_IOCTL_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -2456,6 +2490,7 @@ impl ::core::clone::Clone for DVIADPCMWAVEFORMAT {
 #[cfg(feature = "Win32_Media_Audio")]
 unsafe impl ::windows::core::Abi for DVIADPCMWAVEFORMAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Media_Audio")]
 impl ::core::cmp::PartialEq for DVIADPCMWAVEFORMAT {
@@ -2830,6 +2865,7 @@ impl ::core::clone::Clone for ECHOSC1WAVEFORMAT {
 #[cfg(feature = "Win32_Media_Audio")]
 unsafe impl ::windows::core::Abi for ECHOSC1WAVEFORMAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Media_Audio")]
 impl ::core::cmp::PartialEq for ECHOSC1WAVEFORMAT {
@@ -2863,6 +2899,7 @@ impl ::core::clone::Clone for EXBMINFOHEADER {
 #[cfg(feature = "Win32_Graphics_Gdi")]
 unsafe impl ::windows::core::Abi for EXBMINFOHEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Gdi")]
 impl ::core::cmp::PartialEq for EXBMINFOHEADER {
@@ -3043,6 +3080,7 @@ impl ::core::clone::Clone for FMTOWNS_SND_WAVEFORMAT {
 #[cfg(feature = "Win32_Media_Audio")]
 unsafe impl ::windows::core::Abi for FMTOWNS_SND_WAVEFORMAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Media_Audio")]
 impl ::core::cmp::PartialEq for FMTOWNS_SND_WAVEFORMAT {
@@ -3076,6 +3114,7 @@ impl ::core::clone::Clone for G721_ADPCMWAVEFORMAT {
 #[cfg(feature = "Win32_Media_Audio")]
 unsafe impl ::windows::core::Abi for G721_ADPCMWAVEFORMAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Media_Audio")]
 impl ::core::cmp::PartialEq for G721_ADPCMWAVEFORMAT {
@@ -3110,6 +3149,7 @@ impl ::core::clone::Clone for G723_ADPCMWAVEFORMAT {
 #[cfg(feature = "Win32_Media_Audio")]
 unsafe impl ::windows::core::Abi for G723_ADPCMWAVEFORMAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Media_Audio")]
 impl ::core::cmp::PartialEq for G723_ADPCMWAVEFORMAT {
@@ -3143,6 +3183,7 @@ impl ::core::clone::Clone for GSM610WAVEFORMAT {
 #[cfg(feature = "Win32_Media_Audio")]
 unsafe impl ::windows::core::Abi for GSM610WAVEFORMAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Media_Audio")]
 impl ::core::cmp::PartialEq for GSM610WAVEFORMAT {
@@ -3259,6 +3300,7 @@ impl ::core::fmt::Debug for HDRVR {
 }
 unsafe impl ::windows::core::Abi for HDRVR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[repr(transparent)]
 #[derive(:: core :: cmp :: PartialEq, :: core :: cmp :: Eq)]
@@ -3286,6 +3328,7 @@ impl ::core::fmt::Debug for HIC {
 }
 unsafe impl ::windows::core::Abi for HIC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[repr(transparent)]
 #[derive(:: core :: cmp :: PartialEq, :: core :: cmp :: Eq)]
@@ -3313,6 +3356,7 @@ impl ::core::fmt::Debug for HMMIO {
 }
 unsafe impl ::windows::core::Abi for HMMIO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[repr(transparent)]
 #[derive(:: core :: cmp :: PartialEq, :: core :: cmp :: Eq)]
@@ -3340,10 +3384,16 @@ impl ::core::fmt::Debug for HVIDEO {
 }
 unsafe impl ::windows::core::Abi for HVIDEO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[doc = "*Required features: `\"Win32_Media_Multimedia\"`*"]
 #[repr(transparent)]
 pub struct IAVIEditStream(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAVIEditStream {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAVIEditStream {
     #[doc = "*Required features: `\"Win32_Media_Multimedia\"`*"]
     pub unsafe fn Cut(&self, plstart: *mut i32, pllength: *mut i32, ppresult: *mut ::core::option::Option<IAVIStream>) -> ::windows::core::Result<()> {
@@ -3388,11 +3438,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAVIE
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAVIEditStream {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAVIEditStream {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3424,6 +3469,11 @@ pub struct IAVIEditStream_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_Multimedia\"`*"]
 #[repr(transparent)]
 pub struct IAVIFile(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAVIFile {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAVIFile {
     #[doc = "*Required features: `\"Win32_Media_Multimedia\"`*"]
     pub unsafe fn Info(&self, pfi: *mut AVIFILEINFOW, lsize: i32) -> ::windows::core::Result<()> {
@@ -3475,11 +3525,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAVIF
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAVIFile {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAVIFile {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3514,6 +3559,12 @@ pub struct IAVIFile_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IAVIPersistFile(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IAVIPersistFile {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IAVIPersistFile {
     #[doc = "*Required features: `\"Win32_Media_Multimedia\"`, `\"Win32_System_Com\"`*"]
@@ -3626,12 +3677,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IPersistFile>
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IAVIPersistFile {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IAVIPersistFile {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3660,6 +3705,11 @@ pub struct IAVIPersistFile_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_Multimedia\"`*"]
 #[repr(transparent)]
 pub struct IAVIStream(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAVIStream {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAVIStream {
     #[doc = "*Required features: `\"Win32_Media_Multimedia\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -3729,11 +3779,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAVIS
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAVIStream {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAVIStream {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3777,6 +3822,11 @@ pub struct IAVIStream_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_Multimedia\"`*"]
 #[repr(transparent)]
 pub struct IAVIStreaming(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAVIStreaming {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAVIStreaming {
     #[doc = "*Required features: `\"Win32_Media_Multimedia\"`*"]
     pub unsafe fn Begin(&self, lstart: i32, lend: i32, lrate: i32) -> ::windows::core::Result<()> {
@@ -3805,11 +3855,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IAVIStrea
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAVIStreaming {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IAVIStreaming {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IAVIStreaming {
@@ -3868,6 +3913,7 @@ impl ::core::fmt::Debug for ICCOMPRESS {
 #[cfg(feature = "Win32_Graphics_Gdi")]
 unsafe impl ::windows::core::Abi for ICCOMPRESS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Gdi")]
 impl ::core::cmp::PartialEq for ICCOMPRESS {
@@ -3938,6 +3984,7 @@ impl ::core::fmt::Debug for ICCOMPRESSFRAMES {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
 unsafe impl ::windows::core::Abi for ICCOMPRESSFRAMES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
 impl ::core::cmp::PartialEq for ICCOMPRESSFRAMES {
@@ -4045,6 +4092,7 @@ impl ::core::fmt::Debug for ICDECOMPRESS {
 #[cfg(feature = "Win32_Graphics_Gdi")]
 unsafe impl ::windows::core::Abi for ICDECOMPRESS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Gdi")]
 impl ::core::cmp::PartialEq for ICDECOMPRESS {
@@ -4095,6 +4143,7 @@ impl ::core::fmt::Debug for ICDECOMPRESSEX {
 #[cfg(feature = "Win32_Graphics_Gdi")]
 unsafe impl ::windows::core::Abi for ICDECOMPRESSEX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Gdi")]
 impl ::core::cmp::PartialEq for ICDECOMPRESSEX {
@@ -4142,6 +4191,7 @@ impl ::core::fmt::Debug for ICDRAW {
 }
 unsafe impl ::windows::core::Abi for ICDRAW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ICDRAW {
     fn eq(&self, other: &Self) -> bool {
@@ -4191,6 +4241,7 @@ impl ::core::fmt::Debug for ICDRAWBEGIN {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
 unsafe impl ::windows::core::Abi for ICDRAWBEGIN {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
 impl ::core::cmp::PartialEq for ICDRAWBEGIN {
@@ -4235,6 +4286,7 @@ impl ::core::fmt::Debug for ICDRAWSUGGEST {
 #[cfg(feature = "Win32_Graphics_Gdi")]
 unsafe impl ::windows::core::Abi for ICDRAWSUGGEST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Gdi")]
 impl ::core::cmp::PartialEq for ICDRAWSUGGEST {
@@ -4433,6 +4485,7 @@ impl ::core::fmt::Debug for ICINFO {
 }
 unsafe impl ::windows::core::Abi for ICINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ICINFO {
     fn eq(&self, other: &Self) -> bool {
@@ -4709,6 +4762,7 @@ impl ::core::fmt::Debug for ICOPEN {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for ICOPEN {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for ICOPEN {
@@ -4779,6 +4833,7 @@ impl ::core::fmt::Debug for ICPALETTE {
 #[cfg(feature = "Win32_Graphics_Gdi")]
 unsafe impl ::windows::core::Abi for ICPALETTE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Gdi")]
 impl ::core::cmp::PartialEq for ICPALETTE {
@@ -4840,6 +4895,7 @@ impl ::core::fmt::Debug for ICSETSTATUSPROC {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for ICSETSTATUSPROC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for ICSETSTATUSPROC {
@@ -5070,6 +5126,11 @@ pub const IDS_CAP_WRITEERROR: u32 = 414u32;
 #[doc = "*Required features: `\"Win32_Media_Multimedia\"`*"]
 #[repr(transparent)]
 pub struct IGetFrame(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGetFrame {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IGetFrame {
     #[doc = "*Required features: `\"Win32_Media_Multimedia\"`*"]
     pub unsafe fn GetFrame(&self, lpos: i32) -> *mut ::core::ffi::c_void {
@@ -5107,11 +5168,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IGetFrame
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IGetFrame {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IGetFrame {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IGetFrame {
@@ -5159,6 +5215,7 @@ impl ::core::clone::Clone for IMAADPCMWAVEFORMAT {
 #[cfg(feature = "Win32_Media_Audio")]
 unsafe impl ::windows::core::Abi for IMAADPCMWAVEFORMAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Media_Audio")]
 impl ::core::cmp::PartialEq for IMAADPCMWAVEFORMAT {
@@ -5347,6 +5404,7 @@ impl ::core::clone::Clone for JOYCAPS2A {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for JOYCAPS2A {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for JOYCAPS2A {
@@ -5401,6 +5459,7 @@ impl ::core::clone::Clone for JOYCAPS2W {
 }
 unsafe impl ::windows::core::Abi for JOYCAPS2W {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for JOYCAPS2W {
     fn eq(&self, other: &Self) -> bool {
@@ -5453,6 +5512,7 @@ impl ::core::clone::Clone for JOYCAPSA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for JOYCAPSA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for JOYCAPSA {
@@ -5504,6 +5564,7 @@ impl ::core::clone::Clone for JOYCAPSW {
 }
 unsafe impl ::windows::core::Abi for JOYCAPSW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for JOYCAPSW {
     fn eq(&self, other: &Self) -> bool {
@@ -5554,6 +5615,7 @@ impl ::core::clone::Clone for JOYINFO {
 }
 unsafe impl ::windows::core::Abi for JOYINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for JOYINFO {
     fn eq(&self, other: &Self) -> bool {
@@ -5591,6 +5653,7 @@ impl ::core::clone::Clone for JOYINFOEX {
 }
 unsafe impl ::windows::core::Abi for JOYINFOEX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for JOYINFOEX {
     fn eq(&self, other: &Self) -> bool {
@@ -5755,6 +5818,7 @@ impl ::core::clone::Clone for JPEGINFOHEADER {
 }
 unsafe impl ::windows::core::Abi for JPEGINFOHEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for JPEGINFOHEADER {
     fn eq(&self, other: &Self) -> bool {
@@ -6260,6 +6324,7 @@ impl ::core::clone::Clone for MCI_ANIM_OPEN_PARMSA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MCI_ANIM_OPEN_PARMSA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MCI_ANIM_OPEN_PARMSA {
@@ -6298,6 +6363,7 @@ impl ::core::clone::Clone for MCI_ANIM_OPEN_PARMSW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MCI_ANIM_OPEN_PARMSW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MCI_ANIM_OPEN_PARMSW {
@@ -6333,6 +6399,7 @@ impl ::core::clone::Clone for MCI_ANIM_PLAY_PARMS {
 }
 unsafe impl ::windows::core::Abi for MCI_ANIM_PLAY_PARMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MCI_ANIM_PLAY_PARMS {
     fn eq(&self, other: &Self) -> bool {
@@ -6381,6 +6448,7 @@ impl ::core::clone::Clone for MCI_ANIM_RECT_PARMS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MCI_ANIM_RECT_PARMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MCI_ANIM_RECT_PARMS {
@@ -6422,6 +6490,7 @@ impl ::core::clone::Clone for MCI_ANIM_STEP_PARMS {
 }
 unsafe impl ::windows::core::Abi for MCI_ANIM_STEP_PARMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MCI_ANIM_STEP_PARMS {
     fn eq(&self, other: &Self) -> bool {
@@ -6457,6 +6526,7 @@ impl ::core::clone::Clone for MCI_ANIM_UPDATE_PARMS {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
 unsafe impl ::windows::core::Abi for MCI_ANIM_UPDATE_PARMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
 impl ::core::cmp::PartialEq for MCI_ANIM_UPDATE_PARMS {
@@ -6504,6 +6574,7 @@ impl ::core::clone::Clone for MCI_ANIM_WINDOW_PARMSA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MCI_ANIM_WINDOW_PARMSA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MCI_ANIM_WINDOW_PARMSA {
@@ -6539,6 +6610,7 @@ impl ::core::clone::Clone for MCI_ANIM_WINDOW_PARMSW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MCI_ANIM_WINDOW_PARMSW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MCI_ANIM_WINDOW_PARMSW {
@@ -6597,6 +6669,7 @@ impl ::core::clone::Clone for MCI_BREAK_PARMS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MCI_BREAK_PARMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MCI_BREAK_PARMS {
@@ -6693,6 +6766,7 @@ impl ::core::clone::Clone for MCI_DGV_CAPTURE_PARMSA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MCI_DGV_CAPTURE_PARMSA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MCI_DGV_CAPTURE_PARMSA {
@@ -6727,6 +6801,7 @@ impl ::core::clone::Clone for MCI_DGV_CAPTURE_PARMSW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MCI_DGV_CAPTURE_PARMSW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MCI_DGV_CAPTURE_PARMSW {
@@ -6768,6 +6843,7 @@ impl ::core::clone::Clone for MCI_DGV_COPY_PARMS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MCI_DGV_COPY_PARMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MCI_DGV_COPY_PARMS {
@@ -6805,6 +6881,7 @@ impl ::core::clone::Clone for MCI_DGV_CUE_PARMS {
 }
 unsafe impl ::windows::core::Abi for MCI_DGV_CUE_PARMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MCI_DGV_CUE_PARMS {
     fn eq(&self, other: &Self) -> bool {
@@ -6843,6 +6920,7 @@ impl ::core::clone::Clone for MCI_DGV_CUT_PARMS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MCI_DGV_CUT_PARMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MCI_DGV_CUT_PARMS {
@@ -6886,6 +6964,7 @@ impl ::core::clone::Clone for MCI_DGV_DELETE_PARMS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MCI_DGV_DELETE_PARMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MCI_DGV_DELETE_PARMS {
@@ -6985,6 +7064,7 @@ impl ::core::clone::Clone for MCI_DGV_INFO_PARMSA {
 }
 unsafe impl ::windows::core::Abi for MCI_DGV_INFO_PARMSA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MCI_DGV_INFO_PARMSA {
     fn eq(&self, other: &Self) -> bool {
@@ -7013,6 +7093,7 @@ impl ::core::clone::Clone for MCI_DGV_INFO_PARMSW {
 }
 unsafe impl ::windows::core::Abi for MCI_DGV_INFO_PARMSW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MCI_DGV_INFO_PARMSW {
     fn eq(&self, other: &Self) -> bool {
@@ -7071,6 +7152,7 @@ impl ::core::clone::Clone for MCI_DGV_LIST_PARMSA {
 }
 unsafe impl ::windows::core::Abi for MCI_DGV_LIST_PARMSA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MCI_DGV_LIST_PARMSA {
     fn eq(&self, other: &Self) -> bool {
@@ -7101,6 +7183,7 @@ impl ::core::clone::Clone for MCI_DGV_LIST_PARMSW {
 }
 unsafe impl ::windows::core::Abi for MCI_DGV_LIST_PARMSW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MCI_DGV_LIST_PARMSW {
     fn eq(&self, other: &Self) -> bool {
@@ -7152,6 +7235,7 @@ impl ::core::clone::Clone for MCI_DGV_MONITOR_PARMS {
 }
 unsafe impl ::windows::core::Abi for MCI_DGV_MONITOR_PARMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MCI_DGV_MONITOR_PARMS {
     fn eq(&self, other: &Self) -> bool {
@@ -7197,6 +7281,7 @@ impl ::core::clone::Clone for MCI_DGV_OPEN_PARMSA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MCI_DGV_OPEN_PARMSA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MCI_DGV_OPEN_PARMSA {
@@ -7235,6 +7320,7 @@ impl ::core::clone::Clone for MCI_DGV_OPEN_PARMSW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MCI_DGV_OPEN_PARMSW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MCI_DGV_OPEN_PARMSW {
@@ -7281,6 +7367,7 @@ impl ::core::clone::Clone for MCI_DGV_PASTE_PARMS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MCI_DGV_PASTE_PARMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MCI_DGV_PASTE_PARMS {
@@ -7331,6 +7418,7 @@ impl ::core::clone::Clone for MCI_DGV_QUALITY_PARMSA {
 }
 unsafe impl ::windows::core::Abi for MCI_DGV_QUALITY_PARMSA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MCI_DGV_QUALITY_PARMSA {
     fn eq(&self, other: &Self) -> bool {
@@ -7360,6 +7448,7 @@ impl ::core::clone::Clone for MCI_DGV_QUALITY_PARMSW {
 }
 unsafe impl ::windows::core::Abi for MCI_DGV_QUALITY_PARMSW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MCI_DGV_QUALITY_PARMSW {
     fn eq(&self, other: &Self) -> bool {
@@ -7402,6 +7491,7 @@ impl ::core::clone::Clone for MCI_DGV_RECORD_PARMS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MCI_DGV_RECORD_PARMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MCI_DGV_RECORD_PARMS {
@@ -7439,6 +7529,7 @@ impl ::core::clone::Clone for MCI_DGV_RECT_PARMS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MCI_DGV_RECT_PARMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MCI_DGV_RECT_PARMS {
@@ -7471,6 +7562,7 @@ impl ::core::clone::Clone for MCI_DGV_RESERVE_PARMSA {
 }
 unsafe impl ::windows::core::Abi for MCI_DGV_RESERVE_PARMSA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MCI_DGV_RESERVE_PARMSA {
     fn eq(&self, other: &Self) -> bool {
@@ -7498,6 +7590,7 @@ impl ::core::clone::Clone for MCI_DGV_RESERVE_PARMSW {
 }
 unsafe impl ::windows::core::Abi for MCI_DGV_RESERVE_PARMSW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MCI_DGV_RESERVE_PARMSW {
     fn eq(&self, other: &Self) -> bool {
@@ -7535,6 +7628,7 @@ impl ::core::clone::Clone for MCI_DGV_RESTORE_PARMSA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MCI_DGV_RESTORE_PARMSA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MCI_DGV_RESTORE_PARMSA {
@@ -7569,6 +7663,7 @@ impl ::core::clone::Clone for MCI_DGV_RESTORE_PARMSW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MCI_DGV_RESTORE_PARMSW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MCI_DGV_RESTORE_PARMSW {
@@ -7607,6 +7702,7 @@ impl ::core::clone::Clone for MCI_DGV_SAVE_PARMSA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MCI_DGV_SAVE_PARMSA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MCI_DGV_SAVE_PARMSA {
@@ -7641,6 +7737,7 @@ impl ::core::clone::Clone for MCI_DGV_SAVE_PARMSW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MCI_DGV_SAVE_PARMSW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MCI_DGV_SAVE_PARMSW {
@@ -7696,6 +7793,7 @@ impl ::core::clone::Clone for MCI_DGV_SETAUDIO_PARMSA {
 }
 unsafe impl ::windows::core::Abi for MCI_DGV_SETAUDIO_PARMSA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MCI_DGV_SETAUDIO_PARMSA {
     fn eq(&self, other: &Self) -> bool {
@@ -7726,6 +7824,7 @@ impl ::core::clone::Clone for MCI_DGV_SETAUDIO_PARMSW {
 }
 unsafe impl ::windows::core::Abi for MCI_DGV_SETAUDIO_PARMSW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MCI_DGV_SETAUDIO_PARMSW {
     fn eq(&self, other: &Self) -> bool {
@@ -7821,6 +7920,7 @@ impl ::core::clone::Clone for MCI_DGV_SETVIDEO_PARMSA {
 }
 unsafe impl ::windows::core::Abi for MCI_DGV_SETVIDEO_PARMSA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MCI_DGV_SETVIDEO_PARMSA {
     fn eq(&self, other: &Self) -> bool {
@@ -7852,6 +7952,7 @@ impl ::core::clone::Clone for MCI_DGV_SETVIDEO_PARMSW {
 }
 unsafe impl ::windows::core::Abi for MCI_DGV_SETVIDEO_PARMSW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MCI_DGV_SETVIDEO_PARMSW {
     fn eq(&self, other: &Self) -> bool {
@@ -7925,6 +8026,7 @@ impl ::core::clone::Clone for MCI_DGV_SET_PARMS {
 }
 unsafe impl ::windows::core::Abi for MCI_DGV_SET_PARMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MCI_DGV_SET_PARMS {
     fn eq(&self, other: &Self) -> bool {
@@ -7965,6 +8067,7 @@ impl ::core::clone::Clone for MCI_DGV_SIGNAL_PARMS {
 }
 unsafe impl ::windows::core::Abi for MCI_DGV_SIGNAL_PARMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MCI_DGV_SIGNAL_PARMS {
     fn eq(&self, other: &Self) -> bool {
@@ -8059,6 +8162,7 @@ impl ::core::clone::Clone for MCI_DGV_STATUS_PARMSA {
 }
 unsafe impl ::windows::core::Abi for MCI_DGV_STATUS_PARMSA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MCI_DGV_STATUS_PARMSA {
     fn eq(&self, other: &Self) -> bool {
@@ -8089,6 +8193,7 @@ impl ::core::clone::Clone for MCI_DGV_STATUS_PARMSW {
 }
 unsafe impl ::windows::core::Abi for MCI_DGV_STATUS_PARMSW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MCI_DGV_STATUS_PARMSW {
     fn eq(&self, other: &Self) -> bool {
@@ -8163,6 +8268,7 @@ impl ::core::clone::Clone for MCI_DGV_STEP_PARMS {
 }
 unsafe impl ::windows::core::Abi for MCI_DGV_STEP_PARMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MCI_DGV_STEP_PARMS {
     fn eq(&self, other: &Self) -> bool {
@@ -8202,6 +8308,7 @@ impl ::core::clone::Clone for MCI_DGV_UPDATE_PARMS {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
 unsafe impl ::windows::core::Abi for MCI_DGV_UPDATE_PARMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
 impl ::core::cmp::PartialEq for MCI_DGV_UPDATE_PARMS {
@@ -8253,6 +8360,7 @@ impl ::core::clone::Clone for MCI_DGV_WINDOW_PARMSA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MCI_DGV_WINDOW_PARMSA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MCI_DGV_WINDOW_PARMSA {
@@ -8288,6 +8396,7 @@ impl ::core::clone::Clone for MCI_DGV_WINDOW_PARMSW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MCI_DGV_WINDOW_PARMSW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MCI_DGV_WINDOW_PARMSW {
@@ -8382,6 +8491,7 @@ impl ::core::clone::Clone for MCI_GENERIC_PARMS {
 }
 unsafe impl ::windows::core::Abi for MCI_GENERIC_PARMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MCI_GENERIC_PARMS {
     fn eq(&self, other: &Self) -> bool {
@@ -8429,6 +8539,7 @@ impl ::core::clone::Clone for MCI_GETDEVCAPS_PARMS {
 }
 unsafe impl ::windows::core::Abi for MCI_GETDEVCAPS_PARMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MCI_GETDEVCAPS_PARMS {
     fn eq(&self, other: &Self) -> bool {
@@ -8476,6 +8587,7 @@ impl ::core::clone::Clone for MCI_INFO_PARMSA {
 }
 unsafe impl ::windows::core::Abi for MCI_INFO_PARMSA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MCI_INFO_PARMSA {
     fn eq(&self, other: &Self) -> bool {
@@ -8503,6 +8615,7 @@ impl ::core::clone::Clone for MCI_INFO_PARMSW {
 }
 unsafe impl ::windows::core::Abi for MCI_INFO_PARMSW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MCI_INFO_PARMSW {
     fn eq(&self, other: &Self) -> bool {
@@ -8547,6 +8660,7 @@ impl ::core::clone::Clone for MCI_LOAD_PARMSA {
 }
 unsafe impl ::windows::core::Abi for MCI_LOAD_PARMSA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MCI_LOAD_PARMSA {
     fn eq(&self, other: &Self) -> bool {
@@ -8573,6 +8687,7 @@ impl ::core::clone::Clone for MCI_LOAD_PARMSW {
 }
 unsafe impl ::windows::core::Abi for MCI_LOAD_PARMSW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MCI_LOAD_PARMSW {
     fn eq(&self, other: &Self) -> bool {
@@ -8649,6 +8764,7 @@ impl ::core::clone::Clone for MCI_OPEN_DRIVER_PARMS {
 }
 unsafe impl ::windows::core::Abi for MCI_OPEN_DRIVER_PARMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MCI_OPEN_DRIVER_PARMS {
     fn eq(&self, other: &Self) -> bool {
@@ -8682,6 +8798,7 @@ impl ::core::clone::Clone for MCI_OPEN_PARMSA {
 }
 unsafe impl ::windows::core::Abi for MCI_OPEN_PARMSA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MCI_OPEN_PARMSA {
     fn eq(&self, other: &Self) -> bool {
@@ -8711,6 +8828,7 @@ impl ::core::clone::Clone for MCI_OPEN_PARMSW {
 }
 unsafe impl ::windows::core::Abi for MCI_OPEN_PARMSW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MCI_OPEN_PARMSW {
     fn eq(&self, other: &Self) -> bool {
@@ -8756,6 +8874,7 @@ impl ::core::clone::Clone for MCI_OVLY_LOAD_PARMSA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MCI_OVLY_LOAD_PARMSA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MCI_OVLY_LOAD_PARMSA {
@@ -8790,6 +8909,7 @@ impl ::core::clone::Clone for MCI_OVLY_LOAD_PARMSW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MCI_OVLY_LOAD_PARMSW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MCI_OVLY_LOAD_PARMSW {
@@ -8830,6 +8950,7 @@ impl ::core::clone::Clone for MCI_OVLY_OPEN_PARMSA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MCI_OVLY_OPEN_PARMSA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MCI_OVLY_OPEN_PARMSA {
@@ -8868,6 +8989,7 @@ impl ::core::clone::Clone for MCI_OVLY_OPEN_PARMSW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MCI_OVLY_OPEN_PARMSW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MCI_OVLY_OPEN_PARMSW {
@@ -8913,6 +9035,7 @@ impl ::core::clone::Clone for MCI_OVLY_RECT_PARMS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MCI_OVLY_RECT_PARMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MCI_OVLY_RECT_PARMS {
@@ -8947,6 +9070,7 @@ impl ::core::clone::Clone for MCI_OVLY_SAVE_PARMSA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MCI_OVLY_SAVE_PARMSA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MCI_OVLY_SAVE_PARMSA {
@@ -8981,6 +9105,7 @@ impl ::core::clone::Clone for MCI_OVLY_SAVE_PARMSW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MCI_OVLY_SAVE_PARMSW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MCI_OVLY_SAVE_PARMSW {
@@ -9036,6 +9161,7 @@ impl ::core::clone::Clone for MCI_OVLY_WINDOW_PARMSA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MCI_OVLY_WINDOW_PARMSA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MCI_OVLY_WINDOW_PARMSA {
@@ -9071,6 +9197,7 @@ impl ::core::clone::Clone for MCI_OVLY_WINDOW_PARMSW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MCI_OVLY_WINDOW_PARMSW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MCI_OVLY_WINDOW_PARMSW {
@@ -9111,6 +9238,7 @@ impl ::core::clone::Clone for MCI_PLAY_PARMS {
 }
 unsafe impl ::windows::core::Abi for MCI_PLAY_PARMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MCI_PLAY_PARMS {
     fn eq(&self, other: &Self) -> bool {
@@ -9166,6 +9294,7 @@ impl ::core::clone::Clone for MCI_RECORD_PARMS {
 }
 unsafe impl ::windows::core::Abi for MCI_RECORD_PARMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MCI_RECORD_PARMS {
     fn eq(&self, other: &Self) -> bool {
@@ -9210,6 +9339,7 @@ impl ::core::clone::Clone for MCI_SAVE_PARMSA {
 }
 unsafe impl ::windows::core::Abi for MCI_SAVE_PARMSA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MCI_SAVE_PARMSA {
     fn eq(&self, other: &Self) -> bool {
@@ -9236,6 +9366,7 @@ impl ::core::clone::Clone for MCI_SAVE_PARMSW {
 }
 unsafe impl ::windows::core::Abi for MCI_SAVE_PARMSW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MCI_SAVE_PARMSW {
     fn eq(&self, other: &Self) -> bool {
@@ -9266,6 +9397,7 @@ impl ::core::clone::Clone for MCI_SEEK_PARMS {
 }
 unsafe impl ::windows::core::Abi for MCI_SEEK_PARMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MCI_SEEK_PARMS {
     fn eq(&self, other: &Self) -> bool {
@@ -9326,6 +9458,7 @@ impl ::core::clone::Clone for MCI_SEQ_SET_PARMS {
 }
 unsafe impl ::windows::core::Abi for MCI_SEQ_SET_PARMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MCI_SEQ_SET_PARMS {
     fn eq(&self, other: &Self) -> bool {
@@ -9401,6 +9534,7 @@ impl ::core::clone::Clone for MCI_SET_PARMS {
 }
 unsafe impl ::windows::core::Abi for MCI_SET_PARMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MCI_SET_PARMS {
     fn eq(&self, other: &Self) -> bool {
@@ -9451,6 +9585,7 @@ impl ::core::clone::Clone for MCI_STATUS_PARMS {
 }
 unsafe impl ::windows::core::Abi for MCI_STATUS_PARMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MCI_STATUS_PARMS {
     fn eq(&self, other: &Self) -> bool {
@@ -9502,6 +9637,7 @@ impl ::core::clone::Clone for MCI_SYSINFO_PARMSA {
 }
 unsafe impl ::windows::core::Abi for MCI_SYSINFO_PARMSA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MCI_SYSINFO_PARMSA {
     fn eq(&self, other: &Self) -> bool {
@@ -9531,6 +9667,7 @@ impl ::core::clone::Clone for MCI_SYSINFO_PARMSW {
 }
 unsafe impl ::windows::core::Abi for MCI_SYSINFO_PARMSW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MCI_SYSINFO_PARMSW {
     fn eq(&self, other: &Self) -> bool {
@@ -9575,6 +9712,7 @@ impl ::core::clone::Clone for MCI_VD_ESCAPE_PARMSA {
 }
 unsafe impl ::windows::core::Abi for MCI_VD_ESCAPE_PARMSA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MCI_VD_ESCAPE_PARMSA {
     fn eq(&self, other: &Self) -> bool {
@@ -9601,6 +9739,7 @@ impl ::core::clone::Clone for MCI_VD_ESCAPE_PARMSW {
 }
 unsafe impl ::windows::core::Abi for MCI_VD_ESCAPE_PARMSW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MCI_VD_ESCAPE_PARMSW {
     fn eq(&self, other: &Self) -> bool {
@@ -9657,6 +9796,7 @@ impl ::core::clone::Clone for MCI_VD_PLAY_PARMS {
 }
 unsafe impl ::windows::core::Abi for MCI_VD_PLAY_PARMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MCI_VD_PLAY_PARMS {
     fn eq(&self, other: &Self) -> bool {
@@ -9709,6 +9849,7 @@ impl ::core::clone::Clone for MCI_VD_STEP_PARMS {
 }
 unsafe impl ::windows::core::Abi for MCI_VD_STEP_PARMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MCI_VD_STEP_PARMS {
     fn eq(&self, other: &Self) -> bool {
@@ -9740,6 +9881,7 @@ impl ::core::clone::Clone for MCI_WAVE_DELETE_PARMS {
 }
 unsafe impl ::windows::core::Abi for MCI_WAVE_DELETE_PARMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MCI_WAVE_DELETE_PARMS {
     fn eq(&self, other: &Self) -> bool {
@@ -9780,6 +9922,7 @@ impl ::core::clone::Clone for MCI_WAVE_OPEN_PARMSA {
 }
 unsafe impl ::windows::core::Abi for MCI_WAVE_OPEN_PARMSA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MCI_WAVE_OPEN_PARMSA {
     fn eq(&self, other: &Self) -> bool {
@@ -9810,6 +9953,7 @@ impl ::core::clone::Clone for MCI_WAVE_OPEN_PARMSW {
 }
 unsafe impl ::windows::core::Abi for MCI_WAVE_OPEN_PARMSW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MCI_WAVE_OPEN_PARMSW {
     fn eq(&self, other: &Self) -> bool {
@@ -9867,6 +10011,7 @@ impl ::core::clone::Clone for MCI_WAVE_SET_PARMS {
 }
 unsafe impl ::windows::core::Abi for MCI_WAVE_SET_PARMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MCI_WAVE_SET_PARMS {
     fn eq(&self, other: &Self) -> bool {
@@ -9921,6 +10066,7 @@ impl ::core::clone::Clone for MEDIASPACEADPCMWAVEFORMAT {
 #[cfg(feature = "Win32_Media_Audio")]
 unsafe impl ::windows::core::Abi for MEDIASPACEADPCMWAVEFORMAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Media_Audio")]
 impl ::core::cmp::PartialEq for MEDIASPACEADPCMWAVEFORMAT {
@@ -9952,6 +10098,7 @@ impl ::core::clone::Clone for MIDIOPENSTRMID {
 }
 unsafe impl ::windows::core::Abi for MIDIOPENSTRMID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MIDIOPENSTRMID {
     fn eq(&self, other: &Self) -> bool {
@@ -10023,6 +10170,7 @@ impl ::core::clone::Clone for MIXEROPENDESC {
 #[cfg(feature = "Win32_Media_Audio")]
 unsafe impl ::windows::core::Abi for MIXEROPENDESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Media_Audio")]
 impl ::core::cmp::PartialEq for MIXEROPENDESC {
@@ -10055,6 +10203,7 @@ impl ::core::clone::Clone for MMCKINFO {
 }
 unsafe impl ::windows::core::Abi for MMCKINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MMCKINFO {
     fn eq(&self, other: &Self) -> bool {
@@ -10133,6 +10282,7 @@ impl ::core::clone::Clone for MMIOINFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MMIOINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MMIOINFO {
@@ -13321,6 +13471,7 @@ impl ::core::clone::Clone for MSAUDIO1WAVEFORMAT {
 #[cfg(feature = "Win32_Media_Audio")]
 unsafe impl ::windows::core::Abi for MSAUDIO1WAVEFORMAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Media_Audio")]
 impl ::core::cmp::PartialEq for MSAUDIO1WAVEFORMAT {
@@ -13382,6 +13533,7 @@ impl ::core::clone::Clone for NMS_VBXADPCMWAVEFORMAT {
 #[cfg(feature = "Win32_Media_Audio")]
 unsafe impl ::windows::core::Abi for NMS_VBXADPCMWAVEFORMAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Media_Audio")]
 impl ::core::cmp::PartialEq for NMS_VBXADPCMWAVEFORMAT {
@@ -15824,6 +15976,7 @@ impl ::core::clone::Clone for OLIADPCMWAVEFORMAT {
 #[cfg(feature = "Win32_Media_Audio")]
 unsafe impl ::windows::core::Abi for OLIADPCMWAVEFORMAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Media_Audio")]
 impl ::core::cmp::PartialEq for OLIADPCMWAVEFORMAT {
@@ -15856,6 +16009,7 @@ impl ::core::clone::Clone for OLICELPWAVEFORMAT {
 #[cfg(feature = "Win32_Media_Audio")]
 unsafe impl ::windows::core::Abi for OLICELPWAVEFORMAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Media_Audio")]
 impl ::core::cmp::PartialEq for OLICELPWAVEFORMAT {
@@ -15888,6 +16042,7 @@ impl ::core::clone::Clone for OLIGSMWAVEFORMAT {
 #[cfg(feature = "Win32_Media_Audio")]
 unsafe impl ::windows::core::Abi for OLIGSMWAVEFORMAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Media_Audio")]
 impl ::core::cmp::PartialEq for OLIGSMWAVEFORMAT {
@@ -15920,6 +16075,7 @@ impl ::core::clone::Clone for OLIOPRWAVEFORMAT {
 #[cfg(feature = "Win32_Media_Audio")]
 unsafe impl ::windows::core::Abi for OLIOPRWAVEFORMAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Media_Audio")]
 impl ::core::cmp::PartialEq for OLIOPRWAVEFORMAT {
@@ -15952,6 +16108,7 @@ impl ::core::clone::Clone for OLISBCWAVEFORMAT {
 #[cfg(feature = "Win32_Media_Audio")]
 unsafe impl ::windows::core::Abi for OLISBCWAVEFORMAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Media_Audio")]
 impl ::core::cmp::PartialEq for OLISBCWAVEFORMAT {
@@ -16050,6 +16207,7 @@ impl ::core::clone::Clone for SIERRAADPCMWAVEFORMAT {
 #[cfg(feature = "Win32_Media_Audio")]
 unsafe impl ::windows::core::Abi for SIERRAADPCMWAVEFORMAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Media_Audio")]
 impl ::core::cmp::PartialEq for SIERRAADPCMWAVEFORMAT {
@@ -16083,6 +16241,7 @@ impl ::core::clone::Clone for SONARCWAVEFORMAT {
 #[cfg(feature = "Win32_Media_Audio")]
 unsafe impl ::windows::core::Abi for SONARCWAVEFORMAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Media_Audio")]
 impl ::core::cmp::PartialEq for SONARCWAVEFORMAT {
@@ -16151,6 +16310,7 @@ impl ::core::clone::Clone for TIMEREVENT {
 }
 unsafe impl ::windows::core::Abi for TIMEREVENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TIMEREVENT {
     fn eq(&self, other: &Self) -> bool {
@@ -16183,6 +16343,7 @@ impl ::core::clone::Clone for TRUESPEECHWAVEFORMAT {
 #[cfg(feature = "Win32_Media_Audio")]
 unsafe impl ::windows::core::Abi for TRUESPEECHWAVEFORMAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Media_Audio")]
 impl ::core::cmp::PartialEq for TRUESPEECHWAVEFORMAT {
@@ -16273,6 +16434,7 @@ impl ::core::fmt::Debug for VIDEOHDR {
 }
 unsafe impl ::windows::core::Abi for VIDEOHDR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VIDEOHDR {
     fn eq(&self, other: &Self) -> bool {
@@ -16423,6 +16585,7 @@ impl ::core::clone::Clone for WAVEOPENDESC {
 #[cfg(feature = "Win32_Media_Audio")]
 unsafe impl ::windows::core::Abi for WAVEOPENDESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Media_Audio")]
 impl ::core::cmp::PartialEq for WAVEOPENDESC {
@@ -17032,6 +17195,7 @@ impl ::core::clone::Clone for WMAUDIO2WAVEFORMAT {
 #[cfg(feature = "Win32_Media_Audio")]
 unsafe impl ::windows::core::Abi for WMAUDIO2WAVEFORMAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Media_Audio")]
 impl ::core::cmp::PartialEq for WMAUDIO2WAVEFORMAT {
@@ -17074,6 +17238,7 @@ impl ::core::clone::Clone for WMAUDIO3WAVEFORMAT {
 #[cfg(feature = "Win32_Media_Audio")]
 unsafe impl ::windows::core::Abi for WMAUDIO3WAVEFORMAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Media_Audio")]
 impl ::core::cmp::PartialEq for WMAUDIO3WAVEFORMAT {
@@ -17318,6 +17483,7 @@ impl ::core::clone::Clone for YAMAHA_ADPCMWAVEFORMAT {
 #[cfg(feature = "Win32_Media_Audio")]
 unsafe impl ::windows::core::Abi for YAMAHA_ADPCMWAVEFORMAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Media_Audio")]
 impl ::core::cmp::PartialEq for YAMAHA_ADPCMWAVEFORMAT {
@@ -18217,6 +18383,7 @@ impl ::core::fmt::Debug for s_RIFFWAVE_inst {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for s_RIFFWAVE_inst {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for s_RIFFWAVE_inst {

@@ -18,6 +18,7 @@ impl ::core::fmt::Debug for BSSID_INFO {
 }
 unsafe impl ::windows::core::Abi for BSSID_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for BSSID_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -168,6 +169,7 @@ impl ::core::fmt::Debug for DOT11EXT_APIS {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_NetworkManagement_WiFi", feature = "Win32_Security_ExtensibleAuthenticationProtocol"))]
 unsafe impl ::windows::core::Abi for DOT11EXT_APIS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_NetworkManagement_WiFi", feature = "Win32_Security_ExtensibleAuthenticationProtocol"))]
 impl ::core::cmp::PartialEq for DOT11EXT_APIS {
@@ -211,6 +213,7 @@ impl ::core::default::Default for DOT11EXT_IHV_CONNECTION_PHASE {
 }
 unsafe impl ::windows::core::Abi for DOT11EXT_IHV_CONNECTION_PHASE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DOT11EXT_IHV_CONNECTION_PHASE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -235,6 +238,7 @@ impl ::core::fmt::Debug for DOT11EXT_IHV_CONNECTIVITY_PROFILE {
 }
 unsafe impl ::windows::core::Abi for DOT11EXT_IHV_CONNECTIVITY_PROFILE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11EXT_IHV_CONNECTIVITY_PROFILE {
     fn eq(&self, other: &Self) -> bool {
@@ -271,6 +275,7 @@ impl ::core::fmt::Debug for DOT11EXT_IHV_DISCOVERY_PROFILE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DOT11EXT_IHV_DISCOVERY_PROFILE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DOT11EXT_IHV_DISCOVERY_PROFILE {
@@ -310,6 +315,7 @@ impl ::core::fmt::Debug for DOT11EXT_IHV_DISCOVERY_PROFILE_LIST {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DOT11EXT_IHV_DISCOVERY_PROFILE_LIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DOT11EXT_IHV_DISCOVERY_PROFILE_LIST {
@@ -386,6 +392,7 @@ impl ::core::fmt::Debug for DOT11EXT_IHV_HANDLERS {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_NetworkManagement_WiFi", feature = "Win32_Security_ExtensibleAuthenticationProtocol", feature = "Win32_System_RemoteDesktop"))]
 unsafe impl ::windows::core::Abi for DOT11EXT_IHV_HANDLERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_NetworkManagement_WiFi", feature = "Win32_Security_ExtensibleAuthenticationProtocol", feature = "Win32_System_RemoteDesktop"))]
 impl ::core::cmp::PartialEq for DOT11EXT_IHV_HANDLERS {
@@ -428,6 +435,7 @@ impl ::core::default::Default for DOT11EXT_IHV_INDICATION_TYPE {
 }
 unsafe impl ::windows::core::Abi for DOT11EXT_IHV_INDICATION_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DOT11EXT_IHV_INDICATION_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -460,6 +468,7 @@ impl ::core::fmt::Debug for DOT11EXT_IHV_PARAMS {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_NetworkManagement_WiFi", feature = "Win32_Security_ExtensibleAuthenticationProtocol"))]
 unsafe impl ::windows::core::Abi for DOT11EXT_IHV_PARAMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_NetworkManagement_WiFi", feature = "Win32_Security_ExtensibleAuthenticationProtocol"))]
 impl ::core::cmp::PartialEq for DOT11EXT_IHV_PARAMS {
@@ -500,6 +509,7 @@ impl ::core::fmt::Debug for DOT11EXT_IHV_PROFILE_PARAMS {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_NetworkManagement_WiFi", feature = "Win32_Security_ExtensibleAuthenticationProtocol"))]
 unsafe impl ::windows::core::Abi for DOT11EXT_IHV_PROFILE_PARAMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_NetworkManagement_WiFi", feature = "Win32_Security_ExtensibleAuthenticationProtocol"))]
 impl ::core::cmp::PartialEq for DOT11EXT_IHV_PROFILE_PARAMS {
@@ -539,6 +549,7 @@ impl ::core::fmt::Debug for DOT11EXT_IHV_SECURITY_PROFILE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DOT11EXT_IHV_SECURITY_PROFILE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DOT11EXT_IHV_SECURITY_PROFILE {
@@ -578,6 +589,7 @@ impl ::core::fmt::Debug for DOT11EXT_IHV_SSID_LIST {
 #[cfg(feature = "Win32_NetworkManagement_WiFi")]
 unsafe impl ::windows::core::Abi for DOT11EXT_IHV_SSID_LIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_WiFi")]
 impl ::core::cmp::PartialEq for DOT11EXT_IHV_SSID_LIST {
@@ -615,6 +627,7 @@ impl ::core::fmt::Debug for DOT11EXT_IHV_UI_REQUEST {
 }
 unsafe impl ::windows::core::Abi for DOT11EXT_IHV_UI_REQUEST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11EXT_IHV_UI_REQUEST {
     fn eq(&self, other: &Self) -> bool {
@@ -724,6 +737,7 @@ impl ::core::fmt::Debug for DOT11EXT_VIRTUAL_STATION_APIS {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_NetworkManagement_WiFi"))]
 unsafe impl ::windows::core::Abi for DOT11EXT_VIRTUAL_STATION_APIS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_NetworkManagement_WiFi"))]
 impl ::core::cmp::PartialEq for DOT11EXT_VIRTUAL_STATION_APIS {
@@ -767,6 +781,7 @@ impl ::core::fmt::Debug for DOT11EXT_VIRTUAL_STATION_AP_PROPERTY {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_NetworkManagement_WiFi"))]
 unsafe impl ::windows::core::Abi for DOT11EXT_VIRTUAL_STATION_AP_PROPERTY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_NetworkManagement_WiFi"))]
 impl ::core::cmp::PartialEq for DOT11EXT_VIRTUAL_STATION_AP_PROPERTY {
@@ -807,6 +822,7 @@ impl ::core::fmt::Debug for DOT11_ADAPTER {
 #[cfg(feature = "Win32_NetworkManagement_WiFi")]
 unsafe impl ::windows::core::Abi for DOT11_ADAPTER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_WiFi")]
 impl ::core::cmp::PartialEq for DOT11_ADAPTER {
@@ -841,6 +857,7 @@ impl ::core::fmt::Debug for DOT11_BSS_LIST {
 }
 unsafe impl ::windows::core::Abi for DOT11_BSS_LIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_BSS_LIST {
     fn eq(&self, other: &Self) -> bool {
@@ -877,6 +894,7 @@ impl ::core::fmt::Debug for DOT11_EAP_RESULT {
 #[cfg(feature = "Win32_Security_ExtensibleAuthenticationProtocol")]
 unsafe impl ::windows::core::Abi for DOT11_EAP_RESULT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Security_ExtensibleAuthenticationProtocol")]
 impl ::core::cmp::PartialEq for DOT11_EAP_RESULT {
@@ -911,6 +929,7 @@ impl ::core::fmt::Debug for DOT11_IHV_VERSION_INFO {
 }
 unsafe impl ::windows::core::Abi for DOT11_IHV_VERSION_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_IHV_VERSION_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -946,6 +965,7 @@ impl ::core::default::Default for DOT11_MSONEX_RESULT {
 }
 unsafe impl ::windows::core::Abi for DOT11_MSONEX_RESULT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DOT11_MSONEX_RESULT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -981,6 +1001,7 @@ impl ::core::fmt::Debug for DOT11_MSONEX_RESULT_PARAMS {
 #[cfg(all(feature = "Win32_NetworkManagement_WiFi", feature = "Win32_Security_ExtensibleAuthenticationProtocol"))]
 unsafe impl ::windows::core::Abi for DOT11_MSONEX_RESULT_PARAMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_NetworkManagement_WiFi", feature = "Win32_Security_ExtensibleAuthenticationProtocol"))]
 impl ::core::cmp::PartialEq for DOT11_MSONEX_RESULT_PARAMS {
@@ -1024,6 +1045,7 @@ impl ::core::fmt::Debug for DOT11_MSSECURITY_SETTINGS {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_NetworkManagement_WiFi", feature = "Win32_Security_ExtensibleAuthenticationProtocol"))]
 unsafe impl ::windows::core::Abi for DOT11_MSSECURITY_SETTINGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_NetworkManagement_WiFi", feature = "Win32_Security_ExtensibleAuthenticationProtocol"))]
 impl ::core::cmp::PartialEq for DOT11_MSSECURITY_SETTINGS {
@@ -1065,6 +1087,7 @@ impl ::core::fmt::Debug for DOT11_PORT_STATE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DOT11_PORT_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DOT11_PORT_STATE {
@@ -1101,6 +1124,7 @@ impl ::core::clone::Clone for DOT11_SECURITY_PACKET_HEADER {
 }
 unsafe impl ::windows::core::Abi for DOT11_SECURITY_PACKET_HEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_SECURITY_PACKET_HEADER {
     fn eq(&self, other: &Self) -> bool {
@@ -1135,6 +1159,7 @@ impl ::core::fmt::Debug for GEN_GET_NETCARD_TIME {
 }
 unsafe impl ::windows::core::Abi for GEN_GET_NETCARD_TIME {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for GEN_GET_NETCARD_TIME {
     fn eq(&self, other: &Self) -> bool {
@@ -1166,6 +1191,7 @@ impl ::core::fmt::Debug for GEN_GET_TIME_CAPS {
 }
 unsafe impl ::windows::core::Abi for GEN_GET_TIME_CAPS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for GEN_GET_TIME_CAPS {
     fn eq(&self, other: &Self) -> bool {
@@ -1440,6 +1466,7 @@ impl ::core::fmt::Debug for NDIS_802_11_AI_REQFI {
 }
 unsafe impl ::windows::core::Abi for NDIS_802_11_AI_REQFI {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDIS_802_11_AI_REQFI {
     fn eq(&self, other: &Self) -> bool {
@@ -1478,6 +1505,7 @@ impl ::core::fmt::Debug for NDIS_802_11_AI_RESFI {
 }
 unsafe impl ::windows::core::Abi for NDIS_802_11_AI_RESFI {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDIS_802_11_AI_RESFI {
     fn eq(&self, other: &Self) -> bool {
@@ -1532,6 +1560,7 @@ impl ::core::fmt::Debug for NDIS_802_11_ASSOCIATION_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for NDIS_802_11_ASSOCIATION_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDIS_802_11_ASSOCIATION_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -1563,6 +1592,7 @@ impl ::core::fmt::Debug for NDIS_802_11_AUTHENTICATION_ENCRYPTION {
 }
 unsafe impl ::windows::core::Abi for NDIS_802_11_AUTHENTICATION_ENCRYPTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDIS_802_11_AUTHENTICATION_ENCRYPTION {
     fn eq(&self, other: &Self) -> bool {
@@ -1594,6 +1624,7 @@ impl ::core::fmt::Debug for NDIS_802_11_AUTHENTICATION_EVENT {
 }
 unsafe impl ::windows::core::Abi for NDIS_802_11_AUTHENTICATION_EVENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDIS_802_11_AUTHENTICATION_EVENT {
     fn eq(&self, other: &Self) -> bool {
@@ -1649,6 +1680,7 @@ impl ::core::default::Default for NDIS_802_11_AUTHENTICATION_MODE {
 }
 unsafe impl ::windows::core::Abi for NDIS_802_11_AUTHENTICATION_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NDIS_802_11_AUTHENTICATION_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1675,6 +1707,7 @@ impl ::core::fmt::Debug for NDIS_802_11_AUTHENTICATION_REQUEST {
 }
 unsafe impl ::windows::core::Abi for NDIS_802_11_AUTHENTICATION_REQUEST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDIS_802_11_AUTHENTICATION_REQUEST {
     fn eq(&self, other: &Self) -> bool {
@@ -1716,6 +1749,7 @@ impl ::core::fmt::Debug for NDIS_802_11_BSSID_LIST {
 }
 unsafe impl ::windows::core::Abi for NDIS_802_11_BSSID_LIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDIS_802_11_BSSID_LIST {
     fn eq(&self, other: &Self) -> bool {
@@ -1747,6 +1781,7 @@ impl ::core::fmt::Debug for NDIS_802_11_BSSID_LIST_EX {
 }
 unsafe impl ::windows::core::Abi for NDIS_802_11_BSSID_LIST_EX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDIS_802_11_BSSID_LIST_EX {
     fn eq(&self, other: &Self) -> bool {
@@ -1781,6 +1816,7 @@ impl ::core::fmt::Debug for NDIS_802_11_CAPABILITY {
 }
 unsafe impl ::windows::core::Abi for NDIS_802_11_CAPABILITY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDIS_802_11_CAPABILITY {
     fn eq(&self, other: &Self) -> bool {
@@ -1815,6 +1851,7 @@ impl ::core::fmt::Debug for NDIS_802_11_CONFIGURATION {
 }
 unsafe impl ::windows::core::Abi for NDIS_802_11_CONFIGURATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDIS_802_11_CONFIGURATION {
     fn eq(&self, other: &Self) -> bool {
@@ -1848,6 +1885,7 @@ impl ::core::fmt::Debug for NDIS_802_11_CONFIGURATION_FH {
 }
 unsafe impl ::windows::core::Abi for NDIS_802_11_CONFIGURATION_FH {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDIS_802_11_CONFIGURATION_FH {
     fn eq(&self, other: &Self) -> bool {
@@ -1880,6 +1918,7 @@ impl ::core::fmt::Debug for NDIS_802_11_FIXED_IEs {
 }
 unsafe impl ::windows::core::Abi for NDIS_802_11_FIXED_IEs {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDIS_802_11_FIXED_IEs {
     fn eq(&self, other: &Self) -> bool {
@@ -1915,6 +1954,7 @@ impl ::core::fmt::Debug for NDIS_802_11_KEY {
 }
 unsafe impl ::windows::core::Abi for NDIS_802_11_KEY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDIS_802_11_KEY {
     fn eq(&self, other: &Self) -> bool {
@@ -1954,6 +1994,7 @@ impl ::core::default::Default for NDIS_802_11_MEDIA_STREAM_MODE {
 }
 unsafe impl ::windows::core::Abi for NDIS_802_11_MEDIA_STREAM_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NDIS_802_11_MEDIA_STREAM_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1985,6 +2026,7 @@ impl ::core::default::Default for NDIS_802_11_NETWORK_INFRASTRUCTURE {
 }
 unsafe impl ::windows::core::Abi for NDIS_802_11_NETWORK_INFRASTRUCTURE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NDIS_802_11_NETWORK_INFRASTRUCTURE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2020,6 +2062,7 @@ impl ::core::default::Default for NDIS_802_11_NETWORK_TYPE {
 }
 unsafe impl ::windows::core::Abi for NDIS_802_11_NETWORK_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NDIS_802_11_NETWORK_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2045,6 +2088,7 @@ impl ::core::fmt::Debug for NDIS_802_11_NETWORK_TYPE_LIST {
 }
 unsafe impl ::windows::core::Abi for NDIS_802_11_NETWORK_TYPE_LIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDIS_802_11_NETWORK_TYPE_LIST {
     fn eq(&self, other: &Self) -> bool {
@@ -2076,6 +2120,7 @@ impl ::core::fmt::Debug for NDIS_802_11_NON_BCAST_SSID_LIST {
 }
 unsafe impl ::windows::core::Abi for NDIS_802_11_NON_BCAST_SSID_LIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDIS_802_11_NON_BCAST_SSID_LIST {
     fn eq(&self, other: &Self) -> bool {
@@ -2108,6 +2153,7 @@ impl ::core::fmt::Debug for NDIS_802_11_PMKID {
 }
 unsafe impl ::windows::core::Abi for NDIS_802_11_PMKID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDIS_802_11_PMKID {
     fn eq(&self, other: &Self) -> bool {
@@ -2140,6 +2186,7 @@ impl ::core::fmt::Debug for NDIS_802_11_PMKID_CANDIDATE_LIST {
 }
 unsafe impl ::windows::core::Abi for NDIS_802_11_PMKID_CANDIDATE_LIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDIS_802_11_PMKID_CANDIDATE_LIST {
     fn eq(&self, other: &Self) -> bool {
@@ -2179,6 +2226,7 @@ impl ::core::default::Default for NDIS_802_11_POWER_MODE {
 }
 unsafe impl ::windows::core::Abi for NDIS_802_11_POWER_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NDIS_802_11_POWER_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2206,6 +2254,7 @@ impl ::core::default::Default for NDIS_802_11_PRIVACY_FILTER {
 }
 unsafe impl ::windows::core::Abi for NDIS_802_11_PRIVACY_FILTER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NDIS_802_11_PRIVACY_FILTER {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2239,6 +2288,7 @@ impl ::core::default::Default for NDIS_802_11_RADIO_STATUS {
 }
 unsafe impl ::windows::core::Abi for NDIS_802_11_RADIO_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NDIS_802_11_RADIO_STATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2264,6 +2314,7 @@ impl ::core::default::Default for NDIS_802_11_RELOAD_DEFAULTS {
 }
 unsafe impl ::windows::core::Abi for NDIS_802_11_RELOAD_DEFAULTS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NDIS_802_11_RELOAD_DEFAULTS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2290,6 +2341,7 @@ impl ::core::fmt::Debug for NDIS_802_11_REMOVE_KEY {
 }
 unsafe impl ::windows::core::Abi for NDIS_802_11_REMOVE_KEY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDIS_802_11_REMOVE_KEY {
     fn eq(&self, other: &Self) -> bool {
@@ -2321,6 +2373,7 @@ impl ::core::fmt::Debug for NDIS_802_11_SSID {
 }
 unsafe impl ::windows::core::Abi for NDIS_802_11_SSID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDIS_802_11_SSID {
     fn eq(&self, other: &Self) -> bool {
@@ -2401,6 +2454,7 @@ impl ::core::fmt::Debug for NDIS_802_11_STATISTICS {
 }
 unsafe impl ::windows::core::Abi for NDIS_802_11_STATISTICS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDIS_802_11_STATISTICS {
     fn eq(&self, other: &Self) -> bool {
@@ -2431,6 +2485,7 @@ impl ::core::fmt::Debug for NDIS_802_11_STATUS_INDICATION {
 }
 unsafe impl ::windows::core::Abi for NDIS_802_11_STATUS_INDICATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDIS_802_11_STATUS_INDICATION {
     fn eq(&self, other: &Self) -> bool {
@@ -2468,6 +2523,7 @@ impl ::core::default::Default for NDIS_802_11_STATUS_TYPE {
 }
 unsafe impl ::windows::core::Abi for NDIS_802_11_STATUS_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NDIS_802_11_STATUS_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2489,6 +2545,7 @@ impl ::core::clone::Clone for NDIS_802_11_TEST {
 }
 unsafe impl ::windows::core::Abi for NDIS_802_11_TEST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDIS_802_11_TEST {
     fn eq(&self, other: &Self) -> bool {
@@ -2515,6 +2572,7 @@ impl ::core::clone::Clone for NDIS_802_11_TEST_0 {
 }
 unsafe impl ::windows::core::Abi for NDIS_802_11_TEST_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDIS_802_11_TEST_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -2547,6 +2605,7 @@ impl ::core::fmt::Debug for NDIS_802_11_VARIABLE_IEs {
 }
 unsafe impl ::windows::core::Abi for NDIS_802_11_VARIABLE_IEs {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDIS_802_11_VARIABLE_IEs {
     fn eq(&self, other: &Self) -> bool {
@@ -2580,6 +2639,7 @@ impl ::core::fmt::Debug for NDIS_802_11_WEP {
 }
 unsafe impl ::windows::core::Abi for NDIS_802_11_WEP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDIS_802_11_WEP {
     fn eq(&self, other: &Self) -> bool {
@@ -2633,6 +2693,7 @@ impl ::core::default::Default for NDIS_802_11_WEP_STATUS {
 }
 unsafe impl ::windows::core::Abi for NDIS_802_11_WEP_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NDIS_802_11_WEP_STATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2670,6 +2731,7 @@ impl ::core::default::Default for NDIS_802_5_RING_STATE {
 }
 unsafe impl ::windows::core::Abi for NDIS_802_5_RING_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NDIS_802_5_RING_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2750,6 +2812,7 @@ impl ::core::fmt::Debug for NDIS_CO_DEVICE_PROFILE {
 }
 unsafe impl ::windows::core::Abi for NDIS_CO_DEVICE_PROFILE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDIS_CO_DEVICE_PROFILE {
     fn eq(&self, other: &Self) -> bool {
@@ -2781,6 +2844,7 @@ impl ::core::fmt::Debug for NDIS_CO_LINK_SPEED {
 }
 unsafe impl ::windows::core::Abi for NDIS_CO_LINK_SPEED {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDIS_CO_LINK_SPEED {
     fn eq(&self, other: &Self) -> bool {
@@ -2834,6 +2898,7 @@ impl ::core::default::Default for NDIS_DEVICE_POWER_STATE {
 }
 unsafe impl ::windows::core::Abi for NDIS_DEVICE_POWER_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NDIS_DEVICE_POWER_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2929,6 +2994,7 @@ impl ::core::default::Default for NDIS_FDDI_ATTACHMENT_TYPE {
 }
 unsafe impl ::windows::core::Abi for NDIS_FDDI_ATTACHMENT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NDIS_FDDI_ATTACHMENT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2972,6 +3038,7 @@ impl ::core::default::Default for NDIS_FDDI_LCONNECTION_STATE {
 }
 unsafe impl ::windows::core::Abi for NDIS_FDDI_LCONNECTION_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NDIS_FDDI_LCONNECTION_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3011,6 +3078,7 @@ impl ::core::default::Default for NDIS_FDDI_RING_MGT_STATE {
 }
 unsafe impl ::windows::core::Abi for NDIS_FDDI_RING_MGT_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NDIS_FDDI_RING_MGT_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3381,6 +3449,7 @@ impl ::core::clone::Clone for NDIS_GUID {
 }
 unsafe impl ::windows::core::Abi for NDIS_GUID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDIS_GUID {
     fn eq(&self, other: &Self) -> bool {
@@ -3407,6 +3476,7 @@ impl ::core::clone::Clone for NDIS_GUID_0 {
 }
 unsafe impl ::windows::core::Abi for NDIS_GUID_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDIS_GUID_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -3441,6 +3511,7 @@ impl ::core::fmt::Debug for NDIS_HARDWARE_CROSSTIMESTAMP {
 }
 unsafe impl ::windows::core::Abi for NDIS_HARDWARE_CROSSTIMESTAMP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDIS_HARDWARE_CROSSTIMESTAMP {
     fn eq(&self, other: &Self) -> bool {
@@ -3482,6 +3553,7 @@ impl ::core::default::Default for NDIS_HARDWARE_STATUS {
 }
 unsafe impl ::windows::core::Abi for NDIS_HARDWARE_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NDIS_HARDWARE_STATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3557,6 +3629,7 @@ impl ::core::default::Default for NDIS_INTERRUPT_MODERATION {
 }
 unsafe impl ::windows::core::Abi for NDIS_INTERRUPT_MODERATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NDIS_INTERRUPT_MODERATION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3587,6 +3660,7 @@ impl ::core::fmt::Debug for NDIS_INTERRUPT_MODERATION_PARAMETERS {
 }
 unsafe impl ::windows::core::Abi for NDIS_INTERRUPT_MODERATION_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDIS_INTERRUPT_MODERATION_PARAMETERS {
     fn eq(&self, other: &Self) -> bool {
@@ -3621,6 +3695,7 @@ impl ::core::fmt::Debug for NDIS_IPSEC_OFFLOAD_V1 {
 }
 unsafe impl ::windows::core::Abi for NDIS_IPSEC_OFFLOAD_V1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDIS_IPSEC_OFFLOAD_V1 {
     fn eq(&self, other: &Self) -> bool {
@@ -3651,6 +3726,7 @@ impl ::core::fmt::Debug for NDIS_IPSEC_OFFLOAD_V1_0 {
 }
 unsafe impl ::windows::core::Abi for NDIS_IPSEC_OFFLOAD_V1_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDIS_IPSEC_OFFLOAD_V1_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -3681,6 +3757,7 @@ impl ::core::fmt::Debug for NDIS_IPSEC_OFFLOAD_V1_1 {
 }
 unsafe impl ::windows::core::Abi for NDIS_IPSEC_OFFLOAD_V1_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDIS_IPSEC_OFFLOAD_V1_1 {
     fn eq(&self, other: &Self) -> bool {
@@ -3715,6 +3792,7 @@ impl ::core::fmt::Debug for NDIS_IPSEC_OFFLOAD_V1_2 {
 }
 unsafe impl ::windows::core::Abi for NDIS_IPSEC_OFFLOAD_V1_2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDIS_IPSEC_OFFLOAD_V1_2 {
     fn eq(&self, other: &Self) -> bool {
@@ -3752,6 +3830,7 @@ impl ::core::fmt::Debug for NDIS_IP_OPER_STATE {
 #[cfg(feature = "Win32_NetworkManagement_IpHelper")]
 unsafe impl ::windows::core::Abi for NDIS_IP_OPER_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_IpHelper")]
 impl ::core::cmp::PartialEq for NDIS_IP_OPER_STATE {
@@ -3794,6 +3873,7 @@ impl ::core::fmt::Debug for NDIS_IP_OPER_STATUS {
 #[cfg(feature = "Win32_NetworkManagement_IpHelper")]
 unsafe impl ::windows::core::Abi for NDIS_IP_OPER_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_IpHelper")]
 impl ::core::cmp::PartialEq for NDIS_IP_OPER_STATUS {
@@ -3835,6 +3915,7 @@ impl ::core::fmt::Debug for NDIS_IP_OPER_STATUS_INFO {
 #[cfg(feature = "Win32_NetworkManagement_IpHelper")]
 unsafe impl ::windows::core::Abi for NDIS_IP_OPER_STATUS_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_IpHelper")]
 impl ::core::cmp::PartialEq for NDIS_IP_OPER_STATUS_INFO {
@@ -3871,6 +3952,7 @@ impl ::core::fmt::Debug for NDIS_IRDA_PACKET_INFO {
 }
 unsafe impl ::windows::core::Abi for NDIS_IRDA_PACKET_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDIS_IRDA_PACKET_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -3915,6 +3997,7 @@ impl ::core::fmt::Debug for NDIS_LINK_PARAMETERS {
 #[cfg(feature = "Win32_NetworkManagement_IpHelper")]
 unsafe impl ::windows::core::Abi for NDIS_LINK_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_IpHelper")]
 impl ::core::cmp::PartialEq for NDIS_LINK_PARAMETERS {
@@ -3951,6 +4034,7 @@ impl ::core::fmt::Debug for NDIS_LINK_SPEED {
 }
 unsafe impl ::windows::core::Abi for NDIS_LINK_SPEED {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDIS_LINK_SPEED {
     fn eq(&self, other: &Self) -> bool {
@@ -3992,6 +4076,7 @@ impl ::core::fmt::Debug for NDIS_LINK_STATE {
 #[cfg(feature = "Win32_NetworkManagement_IpHelper")]
 unsafe impl ::windows::core::Abi for NDIS_LINK_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_IpHelper")]
 impl ::core::cmp::PartialEq for NDIS_LINK_STATE {
@@ -4068,6 +4153,7 @@ impl ::core::default::Default for NDIS_MEDIA_STATE {
 }
 unsafe impl ::windows::core::Abi for NDIS_MEDIA_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NDIS_MEDIA_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4133,6 +4219,7 @@ impl ::core::default::Default for NDIS_MEDIUM {
 }
 unsafe impl ::windows::core::Abi for NDIS_MEDIUM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NDIS_MEDIUM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4172,6 +4259,7 @@ impl ::core::default::Default for NDIS_NETWORK_CHANGE_TYPE {
 }
 unsafe impl ::windows::core::Abi for NDIS_NETWORK_CHANGE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NDIS_NETWORK_CHANGE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4300,6 +4388,7 @@ impl ::core::fmt::Debug for NDIS_OBJECT_HEADER {
 }
 unsafe impl ::windows::core::Abi for NDIS_OBJECT_HEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDIS_OBJECT_HEADER {
     fn eq(&self, other: &Self) -> bool {
@@ -4467,6 +4556,7 @@ impl ::core::fmt::Debug for NDIS_OFFLOAD {
 }
 unsafe impl ::windows::core::Abi for NDIS_OFFLOAD {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDIS_OFFLOAD {
     fn eq(&self, other: &Self) -> bool {
@@ -4527,6 +4617,7 @@ impl ::core::fmt::Debug for NDIS_OFFLOAD_PARAMETERS {
 }
 unsafe impl ::windows::core::Abi for NDIS_OFFLOAD_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDIS_OFFLOAD_PARAMETERS {
     fn eq(&self, other: &Self) -> bool {
@@ -4644,6 +4735,7 @@ impl ::core::fmt::Debug for NDIS_OPER_STATE {
 #[cfg(feature = "Win32_NetworkManagement_IpHelper")]
 unsafe impl ::windows::core::Abi for NDIS_OPER_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_IpHelper")]
 impl ::core::cmp::PartialEq for NDIS_OPER_STATE {
@@ -4731,6 +4823,7 @@ impl ::core::fmt::Debug for NDIS_PCI_DEVICE_CUSTOM_PROPERTIES {
 }
 unsafe impl ::windows::core::Abi for NDIS_PCI_DEVICE_CUSTOM_PROPERTIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDIS_PCI_DEVICE_CUSTOM_PROPERTIES {
     fn eq(&self, other: &Self) -> bool {
@@ -4816,6 +4909,7 @@ impl ::core::default::Default for NDIS_PHYSICAL_MEDIUM {
 }
 unsafe impl ::windows::core::Abi for NDIS_PHYSICAL_MEDIUM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NDIS_PHYSICAL_MEDIUM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4853,6 +4947,7 @@ impl ::core::fmt::Debug for NDIS_PM_PACKET_PATTERN {
 }
 unsafe impl ::windows::core::Abi for NDIS_PM_PACKET_PATTERN {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDIS_PM_PACKET_PATTERN {
     fn eq(&self, other: &Self) -> bool {
@@ -4931,6 +5026,7 @@ impl ::core::fmt::Debug for NDIS_PM_WAKE_UP_CAPABILITIES {
 }
 unsafe impl ::windows::core::Abi for NDIS_PM_WAKE_UP_CAPABILITIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDIS_PM_WAKE_UP_CAPABILITIES {
     fn eq(&self, other: &Self) -> bool {
@@ -5000,6 +5096,7 @@ impl ::core::fmt::Debug for NDIS_PNP_CAPABILITIES {
 }
 unsafe impl ::windows::core::Abi for NDIS_PNP_CAPABILITIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDIS_PNP_CAPABILITIES {
     fn eq(&self, other: &Self) -> bool {
@@ -5045,6 +5142,7 @@ impl ::core::fmt::Debug for NDIS_PORT {
 #[cfg(feature = "Win32_NetworkManagement_IpHelper")]
 unsafe impl ::windows::core::Abi for NDIS_PORT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_IpHelper")]
 impl ::core::cmp::PartialEq for NDIS_PORT {
@@ -5087,6 +5185,7 @@ impl ::core::fmt::Debug for NDIS_PORT_ARRAY {
 #[cfg(feature = "Win32_NetworkManagement_IpHelper")]
 unsafe impl ::windows::core::Abi for NDIS_PORT_ARRAY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_IpHelper")]
 impl ::core::cmp::PartialEq for NDIS_PORT_ARRAY {
@@ -5126,6 +5225,7 @@ impl ::core::fmt::Debug for NDIS_PORT_AUTHENTICATION_PARAMETERS {
 }
 unsafe impl ::windows::core::Abi for NDIS_PORT_AUTHENTICATION_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDIS_PORT_AUTHENTICATION_PARAMETERS {
     fn eq(&self, other: &Self) -> bool {
@@ -5165,6 +5265,7 @@ impl ::core::default::Default for NDIS_PORT_AUTHORIZATION_STATE {
 }
 unsafe impl ::windows::core::Abi for NDIS_PORT_AUTHORIZATION_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NDIS_PORT_AUTHORIZATION_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5218,6 +5319,7 @@ impl ::core::fmt::Debug for NDIS_PORT_CHARACTERISTICS {
 #[cfg(feature = "Win32_NetworkManagement_IpHelper")]
 unsafe impl ::windows::core::Abi for NDIS_PORT_CHARACTERISTICS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_IpHelper")]
 impl ::core::cmp::PartialEq for NDIS_PORT_CHARACTERISTICS {
@@ -5260,6 +5362,7 @@ impl ::core::default::Default for NDIS_PORT_CONTROL_STATE {
 }
 unsafe impl ::windows::core::Abi for NDIS_PORT_CONTROL_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NDIS_PORT_CONTROL_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5309,6 +5412,7 @@ impl ::core::fmt::Debug for NDIS_PORT_STATE {
 #[cfg(feature = "Win32_NetworkManagement_IpHelper")]
 unsafe impl ::windows::core::Abi for NDIS_PORT_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_IpHelper")]
 impl ::core::cmp::PartialEq for NDIS_PORT_STATE {
@@ -5353,6 +5457,7 @@ impl ::core::default::Default for NDIS_PORT_TYPE {
 }
 unsafe impl ::windows::core::Abi for NDIS_PORT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NDIS_PORT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5384,6 +5489,7 @@ impl ::core::default::Default for NDIS_PROCESSOR_VENDOR {
 }
 unsafe impl ::windows::core::Abi for NDIS_PROCESSOR_VENDOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NDIS_PROCESSOR_VENDOR {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5632,6 +5738,7 @@ impl ::core::fmt::Debug for NDIS_RECEIVE_HASH_PARAMETERS {
 }
 unsafe impl ::windows::core::Abi for NDIS_RECEIVE_HASH_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDIS_RECEIVE_HASH_PARAMETERS {
     fn eq(&self, other: &Self) -> bool {
@@ -5703,6 +5810,7 @@ impl ::core::fmt::Debug for NDIS_RECEIVE_SCALE_CAPABILITIES {
 }
 unsafe impl ::windows::core::Abi for NDIS_RECEIVE_SCALE_CAPABILITIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDIS_RECEIVE_SCALE_CAPABILITIES {
     fn eq(&self, other: &Self) -> bool {
@@ -5746,6 +5854,7 @@ impl ::core::fmt::Debug for NDIS_RECEIVE_SCALE_PARAMETERS {
 }
 unsafe impl ::windows::core::Abi for NDIS_RECEIVE_SCALE_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDIS_RECEIVE_SCALE_PARAMETERS {
     fn eq(&self, other: &Self) -> bool {
@@ -5817,6 +5926,7 @@ impl ::core::default::Default for NDIS_REQUEST_TYPE {
 }
 unsafe impl ::windows::core::Abi for NDIS_REQUEST_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NDIS_REQUEST_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6041,6 +6151,7 @@ impl ::core::fmt::Debug for NDIS_STATISTICS_INFO {
 }
 unsafe impl ::windows::core::Abi for NDIS_STATISTICS_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDIS_STATISTICS_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -6075,6 +6186,7 @@ impl ::core::fmt::Debug for NDIS_STATISTICS_VALUE {
 }
 unsafe impl ::windows::core::Abi for NDIS_STATISTICS_VALUE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDIS_STATISTICS_VALUE {
     fn eq(&self, other: &Self) -> bool {
@@ -6108,6 +6220,7 @@ impl ::core::fmt::Debug for NDIS_STATISTICS_VALUE_EX {
 }
 unsafe impl ::windows::core::Abi for NDIS_STATISTICS_VALUE_EX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDIS_STATISTICS_VALUE_EX {
     fn eq(&self, other: &Self) -> bool {
@@ -6147,6 +6260,7 @@ impl ::core::default::Default for NDIS_SUPPORTED_PAUSE_FUNCTIONS {
 }
 unsafe impl ::windows::core::Abi for NDIS_SUPPORTED_PAUSE_FUNCTIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NDIS_SUPPORTED_PAUSE_FUNCTIONS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6281,6 +6395,7 @@ impl ::core::fmt::Debug for NDIS_TCP_CONNECTION_OFFLOAD {
 }
 unsafe impl ::windows::core::Abi for NDIS_TCP_CONNECTION_OFFLOAD {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDIS_TCP_CONNECTION_OFFLOAD {
     fn eq(&self, other: &Self) -> bool {
@@ -6318,6 +6433,7 @@ impl ::core::fmt::Debug for NDIS_TCP_IP_CHECKSUM_OFFLOAD {
 }
 unsafe impl ::windows::core::Abi for NDIS_TCP_IP_CHECKSUM_OFFLOAD {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDIS_TCP_IP_CHECKSUM_OFFLOAD {
     fn eq(&self, other: &Self) -> bool {
@@ -6349,6 +6465,7 @@ impl ::core::fmt::Debug for NDIS_TCP_IP_CHECKSUM_OFFLOAD_0 {
 }
 unsafe impl ::windows::core::Abi for NDIS_TCP_IP_CHECKSUM_OFFLOAD_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDIS_TCP_IP_CHECKSUM_OFFLOAD_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -6380,6 +6497,7 @@ impl ::core::fmt::Debug for NDIS_TCP_IP_CHECKSUM_OFFLOAD_1 {
 }
 unsafe impl ::windows::core::Abi for NDIS_TCP_IP_CHECKSUM_OFFLOAD_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDIS_TCP_IP_CHECKSUM_OFFLOAD_1 {
     fn eq(&self, other: &Self) -> bool {
@@ -6411,6 +6529,7 @@ impl ::core::fmt::Debug for NDIS_TCP_IP_CHECKSUM_OFFLOAD_2 {
 }
 unsafe impl ::windows::core::Abi for NDIS_TCP_IP_CHECKSUM_OFFLOAD_2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDIS_TCP_IP_CHECKSUM_OFFLOAD_2 {
     fn eq(&self, other: &Self) -> bool {
@@ -6442,6 +6561,7 @@ impl ::core::fmt::Debug for NDIS_TCP_IP_CHECKSUM_OFFLOAD_3 {
 }
 unsafe impl ::windows::core::Abi for NDIS_TCP_IP_CHECKSUM_OFFLOAD_3 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDIS_TCP_IP_CHECKSUM_OFFLOAD_3 {
     fn eq(&self, other: &Self) -> bool {
@@ -6472,6 +6592,7 @@ impl ::core::fmt::Debug for NDIS_TCP_LARGE_SEND_OFFLOAD_V1 {
 }
 unsafe impl ::windows::core::Abi for NDIS_TCP_LARGE_SEND_OFFLOAD_V1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDIS_TCP_LARGE_SEND_OFFLOAD_V1 {
     fn eq(&self, other: &Self) -> bool {
@@ -6505,6 +6626,7 @@ impl ::core::fmt::Debug for NDIS_TCP_LARGE_SEND_OFFLOAD_V1_0 {
 }
 unsafe impl ::windows::core::Abi for NDIS_TCP_LARGE_SEND_OFFLOAD_V1_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDIS_TCP_LARGE_SEND_OFFLOAD_V1_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -6536,6 +6658,7 @@ impl ::core::fmt::Debug for NDIS_TCP_LARGE_SEND_OFFLOAD_V2 {
 }
 unsafe impl ::windows::core::Abi for NDIS_TCP_LARGE_SEND_OFFLOAD_V2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDIS_TCP_LARGE_SEND_OFFLOAD_V2 {
     fn eq(&self, other: &Self) -> bool {
@@ -6568,6 +6691,7 @@ impl ::core::fmt::Debug for NDIS_TCP_LARGE_SEND_OFFLOAD_V2_0 {
 }
 unsafe impl ::windows::core::Abi for NDIS_TCP_LARGE_SEND_OFFLOAD_V2_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDIS_TCP_LARGE_SEND_OFFLOAD_V2_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -6601,6 +6725,7 @@ impl ::core::fmt::Debug for NDIS_TCP_LARGE_SEND_OFFLOAD_V2_1 {
 }
 unsafe impl ::windows::core::Abi for NDIS_TCP_LARGE_SEND_OFFLOAD_V2_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDIS_TCP_LARGE_SEND_OFFLOAD_V2_1 {
     fn eq(&self, other: &Self) -> bool {
@@ -6636,6 +6761,7 @@ impl ::core::fmt::Debug for NDIS_TIMEOUT_DPC_REQUEST_CAPABILITIES {
 }
 unsafe impl ::windows::core::Abi for NDIS_TIMEOUT_DPC_REQUEST_CAPABILITIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDIS_TIMEOUT_DPC_REQUEST_CAPABILITIES {
     fn eq(&self, other: &Self) -> bool {
@@ -6678,6 +6804,7 @@ impl ::core::fmt::Debug for NDIS_TIMESTAMP_CAPABILITIES {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NDIS_TIMESTAMP_CAPABILITIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NDIS_TIMESTAMP_CAPABILITIES {
@@ -6746,6 +6873,7 @@ impl ::core::fmt::Debug for NDIS_TIMESTAMP_CAPABILITY_FLAGS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NDIS_TIMESTAMP_CAPABILITY_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NDIS_TIMESTAMP_CAPABILITY_FLAGS {
@@ -6781,6 +6909,7 @@ impl ::core::fmt::Debug for NDIS_VAR_DATA_DESC {
 }
 unsafe impl ::windows::core::Abi for NDIS_VAR_DATA_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDIS_VAR_DATA_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -6814,6 +6943,7 @@ impl ::core::default::Default for NDIS_WAN_HEADER_FORMAT {
 }
 unsafe impl ::windows::core::Abi for NDIS_WAN_HEADER_FORMAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NDIS_WAN_HEADER_FORMAT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6871,6 +7001,7 @@ impl ::core::default::Default for NDIS_WAN_MEDIUM_SUBTYPE {
 }
 unsafe impl ::windows::core::Abi for NDIS_WAN_MEDIUM_SUBTYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NDIS_WAN_MEDIUM_SUBTYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6896,6 +7027,7 @@ impl ::core::fmt::Debug for NDIS_WAN_PROTOCOL_CAPS {
 }
 unsafe impl ::windows::core::Abi for NDIS_WAN_PROTOCOL_CAPS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDIS_WAN_PROTOCOL_CAPS {
     fn eq(&self, other: &Self) -> bool {
@@ -6931,6 +7063,7 @@ impl ::core::default::Default for NDIS_WAN_QUALITY {
 }
 unsafe impl ::windows::core::Abi for NDIS_WAN_QUALITY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NDIS_WAN_QUALITY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6964,6 +7097,7 @@ impl ::core::fmt::Debug for NDIS_WLAN_BSSID {
 }
 unsafe impl ::windows::core::Abi for NDIS_WLAN_BSSID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDIS_WLAN_BSSID {
     fn eq(&self, other: &Self) -> bool {
@@ -7018,6 +7152,7 @@ impl ::core::fmt::Debug for NDIS_WLAN_BSSID_EX {
 }
 unsafe impl ::windows::core::Abi for NDIS_WLAN_BSSID_EX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDIS_WLAN_BSSID_EX {
     fn eq(&self, other: &Self) -> bool {
@@ -7069,6 +7204,7 @@ impl ::core::clone::Clone for NDIS_WMI_ENUM_ADAPTER {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_NetworkManagement_IpHelper"))]
 unsafe impl ::windows::core::Abi for NDIS_WMI_ENUM_ADAPTER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_NetworkManagement_IpHelper"))]
 impl ::core::cmp::PartialEq for NDIS_WMI_ENUM_ADAPTER {
@@ -7110,6 +7246,7 @@ impl ::core::clone::Clone for NDIS_WMI_EVENT_HEADER {
 #[cfg(feature = "Win32_NetworkManagement_IpHelper")]
 unsafe impl ::windows::core::Abi for NDIS_WMI_EVENT_HEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_IpHelper")]
 impl ::core::cmp::PartialEq for NDIS_WMI_EVENT_HEADER {
@@ -7147,6 +7284,7 @@ impl ::core::fmt::Debug for NDIS_WMI_IPSEC_OFFLOAD_V1 {
 }
 unsafe impl ::windows::core::Abi for NDIS_WMI_IPSEC_OFFLOAD_V1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDIS_WMI_IPSEC_OFFLOAD_V1 {
     fn eq(&self, other: &Self) -> bool {
@@ -7182,6 +7320,7 @@ impl ::core::fmt::Debug for NDIS_WMI_IPSEC_OFFLOAD_V1_0 {
 }
 unsafe impl ::windows::core::Abi for NDIS_WMI_IPSEC_OFFLOAD_V1_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDIS_WMI_IPSEC_OFFLOAD_V1_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -7219,6 +7358,7 @@ impl ::core::fmt::Debug for NDIS_WMI_IPSEC_OFFLOAD_V1_1 {
 }
 unsafe impl ::windows::core::Abi for NDIS_WMI_IPSEC_OFFLOAD_V1_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDIS_WMI_IPSEC_OFFLOAD_V1_1 {
     fn eq(&self, other: &Self) -> bool {
@@ -7253,6 +7393,7 @@ impl ::core::fmt::Debug for NDIS_WMI_IPSEC_OFFLOAD_V1_2 {
 }
 unsafe impl ::windows::core::Abi for NDIS_WMI_IPSEC_OFFLOAD_V1_2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDIS_WMI_IPSEC_OFFLOAD_V1_2 {
     fn eq(&self, other: &Self) -> bool {
@@ -7287,6 +7428,7 @@ impl ::core::clone::Clone for NDIS_WMI_METHOD_HEADER {
 #[cfg(feature = "Win32_NetworkManagement_IpHelper")]
 unsafe impl ::windows::core::Abi for NDIS_WMI_METHOD_HEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_IpHelper")]
 impl ::core::cmp::PartialEq for NDIS_WMI_METHOD_HEADER {
@@ -7337,6 +7479,7 @@ impl ::core::fmt::Debug for NDIS_WMI_OFFLOAD {
 }
 unsafe impl ::windows::core::Abi for NDIS_WMI_OFFLOAD {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDIS_WMI_OFFLOAD {
     fn eq(&self, other: &Self) -> bool {
@@ -7370,6 +7513,7 @@ impl ::core::fmt::Debug for NDIS_WMI_OUTPUT_INFO {
 }
 unsafe impl ::windows::core::Abi for NDIS_WMI_OUTPUT_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDIS_WMI_OUTPUT_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -7412,6 +7556,7 @@ impl ::core::clone::Clone for NDIS_WMI_SET_HEADER {
 #[cfg(feature = "Win32_NetworkManagement_IpHelper")]
 unsafe impl ::windows::core::Abi for NDIS_WMI_SET_HEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_IpHelper")]
 impl ::core::cmp::PartialEq for NDIS_WMI_SET_HEADER {
@@ -7454,6 +7599,7 @@ impl ::core::fmt::Debug for NDIS_WMI_TCP_CONNECTION_OFFLOAD {
 }
 unsafe impl ::windows::core::Abi for NDIS_WMI_TCP_CONNECTION_OFFLOAD {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDIS_WMI_TCP_CONNECTION_OFFLOAD {
     fn eq(&self, other: &Self) -> bool {
@@ -7487,6 +7633,7 @@ impl ::core::fmt::Debug for NDIS_WMI_TCP_IP_CHECKSUM_OFFLOAD {
 }
 unsafe impl ::windows::core::Abi for NDIS_WMI_TCP_IP_CHECKSUM_OFFLOAD {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDIS_WMI_TCP_IP_CHECKSUM_OFFLOAD {
     fn eq(&self, other: &Self) -> bool {
@@ -7522,6 +7669,7 @@ impl ::core::fmt::Debug for NDIS_WMI_TCP_IP_CHECKSUM_OFFLOAD_0 {
 }
 unsafe impl ::windows::core::Abi for NDIS_WMI_TCP_IP_CHECKSUM_OFFLOAD_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDIS_WMI_TCP_IP_CHECKSUM_OFFLOAD_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -7557,6 +7705,7 @@ impl ::core::fmt::Debug for NDIS_WMI_TCP_IP_CHECKSUM_OFFLOAD_1 {
 }
 unsafe impl ::windows::core::Abi for NDIS_WMI_TCP_IP_CHECKSUM_OFFLOAD_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDIS_WMI_TCP_IP_CHECKSUM_OFFLOAD_1 {
     fn eq(&self, other: &Self) -> bool {
@@ -7591,6 +7740,7 @@ impl ::core::fmt::Debug for NDIS_WMI_TCP_IP_CHECKSUM_OFFLOAD_2 {
 }
 unsafe impl ::windows::core::Abi for NDIS_WMI_TCP_IP_CHECKSUM_OFFLOAD_2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDIS_WMI_TCP_IP_CHECKSUM_OFFLOAD_2 {
     fn eq(&self, other: &Self) -> bool {
@@ -7625,6 +7775,7 @@ impl ::core::fmt::Debug for NDIS_WMI_TCP_IP_CHECKSUM_OFFLOAD_3 {
 }
 unsafe impl ::windows::core::Abi for NDIS_WMI_TCP_IP_CHECKSUM_OFFLOAD_3 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDIS_WMI_TCP_IP_CHECKSUM_OFFLOAD_3 {
     fn eq(&self, other: &Self) -> bool {
@@ -7655,6 +7806,7 @@ impl ::core::fmt::Debug for NDIS_WMI_TCP_LARGE_SEND_OFFLOAD_V1 {
 }
 unsafe impl ::windows::core::Abi for NDIS_WMI_TCP_LARGE_SEND_OFFLOAD_V1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDIS_WMI_TCP_LARGE_SEND_OFFLOAD_V1 {
     fn eq(&self, other: &Self) -> bool {
@@ -7689,6 +7841,7 @@ impl ::core::fmt::Debug for NDIS_WMI_TCP_LARGE_SEND_OFFLOAD_V1_0 {
 }
 unsafe impl ::windows::core::Abi for NDIS_WMI_TCP_LARGE_SEND_OFFLOAD_V1_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDIS_WMI_TCP_LARGE_SEND_OFFLOAD_V1_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -7720,6 +7873,7 @@ impl ::core::fmt::Debug for NDIS_WMI_TCP_LARGE_SEND_OFFLOAD_V2 {
 }
 unsafe impl ::windows::core::Abi for NDIS_WMI_TCP_LARGE_SEND_OFFLOAD_V2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDIS_WMI_TCP_LARGE_SEND_OFFLOAD_V2 {
     fn eq(&self, other: &Self) -> bool {
@@ -7752,6 +7906,7 @@ impl ::core::fmt::Debug for NDIS_WMI_TCP_LARGE_SEND_OFFLOAD_V2_0 {
 }
 unsafe impl ::windows::core::Abi for NDIS_WMI_TCP_LARGE_SEND_OFFLOAD_V2_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDIS_WMI_TCP_LARGE_SEND_OFFLOAD_V2_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -7786,6 +7941,7 @@ impl ::core::fmt::Debug for NDIS_WMI_TCP_LARGE_SEND_OFFLOAD_V2_1 {
 }
 unsafe impl ::windows::core::Abi for NDIS_WMI_TCP_LARGE_SEND_OFFLOAD_V2_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDIS_WMI_TCP_LARGE_SEND_OFFLOAD_V2_1 {
     fn eq(&self, other: &Self) -> bool {
@@ -7894,6 +8050,7 @@ impl ::core::fmt::Debug for NDK_ADAPTER_INFO {
 }
 unsafe impl ::windows::core::Abi for NDK_ADAPTER_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDK_ADAPTER_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -7935,6 +8092,7 @@ impl ::core::default::Default for NDK_RDMA_TECHNOLOGY {
 }
 unsafe impl ::windows::core::Abi for NDK_RDMA_TECHNOLOGY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NDK_RDMA_TECHNOLOGY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7960,6 +8118,7 @@ impl ::core::fmt::Debug for NDK_VERSION {
 }
 unsafe impl ::windows::core::Abi for NDK_VERSION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NDK_VERSION {
     fn eq(&self, other: &Self) -> bool {
@@ -7992,6 +8151,7 @@ impl ::core::fmt::Debug for NETWORK_ADDRESS {
 }
 unsafe impl ::windows::core::Abi for NETWORK_ADDRESS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NETWORK_ADDRESS {
     fn eq(&self, other: &Self) -> bool {
@@ -8024,6 +8184,7 @@ impl ::core::fmt::Debug for NETWORK_ADDRESS_IP {
 }
 unsafe impl ::windows::core::Abi for NETWORK_ADDRESS_IP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NETWORK_ADDRESS_IP {
     fn eq(&self, other: &Self) -> bool {
@@ -8057,6 +8218,7 @@ impl ::core::fmt::Debug for NETWORK_ADDRESS_IP6 {
 }
 unsafe impl ::windows::core::Abi for NETWORK_ADDRESS_IP6 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NETWORK_ADDRESS_IP6 {
     fn eq(&self, other: &Self) -> bool {
@@ -8089,6 +8251,7 @@ impl ::core::fmt::Debug for NETWORK_ADDRESS_IPX {
 }
 unsafe impl ::windows::core::Abi for NETWORK_ADDRESS_IPX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NETWORK_ADDRESS_IPX {
     fn eq(&self, other: &Self) -> bool {
@@ -8121,6 +8284,7 @@ impl ::core::fmt::Debug for NETWORK_ADDRESS_LIST {
 }
 unsafe impl ::windows::core::Abi for NETWORK_ADDRESS_LIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NETWORK_ADDRESS_LIST {
     fn eq(&self, other: &Self) -> bool {
@@ -8161,6 +8325,7 @@ impl ::core::fmt::Debug for OFFLOAD_ALGO_INFO {
 }
 unsafe impl ::windows::core::Abi for OFFLOAD_ALGO_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for OFFLOAD_ALGO_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -8200,6 +8365,7 @@ impl ::core::default::Default for OFFLOAD_CONF_ALGO {
 }
 unsafe impl ::windows::core::Abi for OFFLOAD_CONF_ALGO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for OFFLOAD_CONF_ALGO {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8233,6 +8399,7 @@ impl ::core::default::Default for OFFLOAD_INTEGRITY_ALGO {
 }
 unsafe impl ::windows::core::Abi for OFFLOAD_INTEGRITY_ALGO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for OFFLOAD_INTEGRITY_ALGO {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8292,6 +8459,7 @@ impl ::core::fmt::Debug for OFFLOAD_IPSEC_ADD_SA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for OFFLOAD_IPSEC_ADD_SA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for OFFLOAD_IPSEC_ADD_SA {
@@ -8364,6 +8532,7 @@ impl ::core::fmt::Debug for OFFLOAD_IPSEC_ADD_UDPESP_SA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for OFFLOAD_IPSEC_ADD_UDPESP_SA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for OFFLOAD_IPSEC_ADD_UDPESP_SA {
@@ -8402,6 +8571,7 @@ impl ::core::fmt::Debug for OFFLOAD_IPSEC_DELETE_SA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for OFFLOAD_IPSEC_DELETE_SA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for OFFLOAD_IPSEC_DELETE_SA {
@@ -8441,6 +8611,7 @@ impl ::core::fmt::Debug for OFFLOAD_IPSEC_DELETE_UDPESP_SA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for OFFLOAD_IPSEC_DELETE_UDPESP_SA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for OFFLOAD_IPSEC_DELETE_UDPESP_SA {
@@ -8475,6 +8646,7 @@ impl ::core::fmt::Debug for OFFLOAD_IPSEC_UDPESP_ENCAPTYPE_ENTRY {
 }
 unsafe impl ::windows::core::Abi for OFFLOAD_IPSEC_UDPESP_ENCAPTYPE_ENTRY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for OFFLOAD_IPSEC_UDPESP_ENCAPTYPE_ENTRY {
     fn eq(&self, other: &Self) -> bool {
@@ -8510,6 +8682,7 @@ impl ::core::default::Default for OFFLOAD_OPERATION_E {
 }
 unsafe impl ::windows::core::Abi for OFFLOAD_OPERATION_E {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for OFFLOAD_OPERATION_E {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8540,6 +8713,7 @@ impl ::core::fmt::Debug for OFFLOAD_SECURITY_ASSOCIATION {
 }
 unsafe impl ::windows::core::Abi for OFFLOAD_SECURITY_ASSOCIATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for OFFLOAD_SECURITY_ASSOCIATION {
     fn eq(&self, other: &Self) -> bool {
@@ -10111,6 +10285,7 @@ impl ::core::fmt::Debug for PMKID_CANDIDATE {
 }
 unsafe impl ::windows::core::Abi for PMKID_CANDIDATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PMKID_CANDIDATE {
     fn eq(&self, other: &Self) -> bool {
@@ -10150,6 +10325,7 @@ impl ::core::fmt::Debug for TRANSPORT_HEADER_OFFSET {
 }
 unsafe impl ::windows::core::Abi for TRANSPORT_HEADER_OFFSET {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TRANSPORT_HEADER_OFFSET {
     fn eq(&self, other: &Self) -> bool {
@@ -10183,6 +10359,7 @@ impl ::core::default::Default for UDP_ENCAP_TYPE {
 }
 unsafe impl ::windows::core::Abi for UDP_ENCAP_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UDP_ENCAP_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10219,6 +10396,7 @@ impl ::core::fmt::Debug for WDIAG_IHV_WLAN_ID {
 #[cfg(feature = "Win32_NetworkManagement_WiFi")]
 unsafe impl ::windows::core::Abi for WDIAG_IHV_WLAN_ID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_WiFi")]
 impl ::core::cmp::PartialEq for WDIAG_IHV_WLAN_ID {

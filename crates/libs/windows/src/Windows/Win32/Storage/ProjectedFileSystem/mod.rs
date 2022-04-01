@@ -38,6 +38,7 @@ impl ::core::fmt::Debug for PRJ_CALLBACKS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PRJ_CALLBACKS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for PRJ_CALLBACKS {
@@ -93,6 +94,7 @@ impl ::core::fmt::Debug for PRJ_CALLBACK_DATA {
 }
 unsafe impl ::windows::core::Abi for PRJ_CALLBACK_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PRJ_CALLBACK_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -126,6 +128,7 @@ impl ::core::default::Default for PRJ_CALLBACK_DATA_FLAGS {
 }
 unsafe impl ::windows::core::Abi for PRJ_CALLBACK_DATA_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PRJ_CALLBACK_DATA_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -148,6 +151,7 @@ impl ::core::clone::Clone for PRJ_COMPLETE_COMMAND_EXTENDED_PARAMETERS {
 }
 unsafe impl ::windows::core::Abi for PRJ_COMPLETE_COMMAND_EXTENDED_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PRJ_COMPLETE_COMMAND_EXTENDED_PARAMETERS {
     fn eq(&self, other: &Self) -> bool {
@@ -174,6 +178,7 @@ impl ::core::clone::Clone for PRJ_COMPLETE_COMMAND_EXTENDED_PARAMETERS_0 {
 }
 unsafe impl ::windows::core::Abi for PRJ_COMPLETE_COMMAND_EXTENDED_PARAMETERS_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PRJ_COMPLETE_COMMAND_EXTENDED_PARAMETERS_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -204,6 +209,7 @@ impl ::core::fmt::Debug for PRJ_COMPLETE_COMMAND_EXTENDED_PARAMETERS_0_0 {
 }
 unsafe impl ::windows::core::Abi for PRJ_COMPLETE_COMMAND_EXTENDED_PARAMETERS_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PRJ_COMPLETE_COMMAND_EXTENDED_PARAMETERS_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -234,6 +240,7 @@ impl ::core::fmt::Debug for PRJ_COMPLETE_COMMAND_EXTENDED_PARAMETERS_0_1 {
 }
 unsafe impl ::windows::core::Abi for PRJ_COMPLETE_COMMAND_EXTENDED_PARAMETERS_0_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PRJ_COMPLETE_COMMAND_EXTENDED_PARAMETERS_0_1 {
     fn eq(&self, other: &Self) -> bool {
@@ -267,6 +274,7 @@ impl ::core::default::Default for PRJ_COMPLETE_COMMAND_TYPE {
 }
 unsafe impl ::windows::core::Abi for PRJ_COMPLETE_COMMAND_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PRJ_COMPLETE_COMMAND_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -299,6 +307,7 @@ impl ::core::fmt::Debug for PRJ_DIR_ENTRY_BUFFER_HANDLE {
 }
 unsafe impl ::windows::core::Abi for PRJ_DIR_ENTRY_BUFFER_HANDLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[doc = "*Required features: `\"Win32_Storage_ProjectedFileSystem\"`*"]
 pub type PRJ_END_DIRECTORY_ENUMERATION_CB = ::core::option::Option<unsafe extern "system" fn(callbackdata: *const PRJ_CALLBACK_DATA, enumerationid: *const ::windows::core::GUID) -> ::windows::core::HRESULT>;
@@ -317,6 +326,7 @@ impl ::core::clone::Clone for PRJ_EXTENDED_INFO {
 }
 unsafe impl ::windows::core::Abi for PRJ_EXTENDED_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PRJ_EXTENDED_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -342,6 +352,7 @@ impl ::core::clone::Clone for PRJ_EXTENDED_INFO_0 {
 }
 unsafe impl ::windows::core::Abi for PRJ_EXTENDED_INFO_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PRJ_EXTENDED_INFO_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -372,6 +383,7 @@ impl ::core::fmt::Debug for PRJ_EXTENDED_INFO_0_0 {
 }
 unsafe impl ::windows::core::Abi for PRJ_EXTENDED_INFO_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PRJ_EXTENDED_INFO_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -403,6 +415,7 @@ impl ::core::default::Default for PRJ_EXT_INFO_TYPE {
 }
 unsafe impl ::windows::core::Abi for PRJ_EXT_INFO_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PRJ_EXT_INFO_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -438,6 +451,7 @@ impl ::core::fmt::Debug for PRJ_FILE_BASIC_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PRJ_FILE_BASIC_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for PRJ_FILE_BASIC_INFO {
@@ -480,6 +494,7 @@ impl ::core::default::Default for PRJ_FILE_STATE {
 }
 unsafe impl ::windows::core::Abi for PRJ_FILE_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PRJ_FILE_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -546,6 +561,7 @@ impl ::core::fmt::Debug for PRJ_NAMESPACE_VIRTUALIZATION_CONTEXT {
 }
 unsafe impl ::windows::core::Abi for PRJ_NAMESPACE_VIRTUALIZATION_CONTEXT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[doc = "*Required features: `\"Win32_Storage_ProjectedFileSystem\"`*"]
 #[repr(transparent)]
@@ -588,6 +604,7 @@ impl ::core::default::Default for PRJ_NOTIFICATION {
 }
 unsafe impl ::windows::core::Abi for PRJ_NOTIFICATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PRJ_NOTIFICATION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -616,6 +633,7 @@ impl ::core::fmt::Debug for PRJ_NOTIFICATION_MAPPING {
 }
 unsafe impl ::windows::core::Abi for PRJ_NOTIFICATION_MAPPING {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PRJ_NOTIFICATION_MAPPING {
     fn eq(&self, other: &Self) -> bool {
@@ -647,6 +665,7 @@ impl ::core::clone::Clone for PRJ_NOTIFICATION_PARAMETERS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PRJ_NOTIFICATION_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for PRJ_NOTIFICATION_PARAMETERS {
@@ -685,6 +704,7 @@ impl ::core::fmt::Debug for PRJ_NOTIFICATION_PARAMETERS_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PRJ_NOTIFICATION_PARAMETERS_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for PRJ_NOTIFICATION_PARAMETERS_0 {
@@ -723,6 +743,7 @@ impl ::core::fmt::Debug for PRJ_NOTIFICATION_PARAMETERS_1 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PRJ_NOTIFICATION_PARAMETERS_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for PRJ_NOTIFICATION_PARAMETERS_1 {
@@ -761,6 +782,7 @@ impl ::core::fmt::Debug for PRJ_NOTIFICATION_PARAMETERS_2 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PRJ_NOTIFICATION_PARAMETERS_2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for PRJ_NOTIFICATION_PARAMETERS_2 {
@@ -823,6 +845,7 @@ impl ::core::default::Default for PRJ_NOTIFY_TYPES {
 }
 unsafe impl ::windows::core::Abi for PRJ_NOTIFY_TYPES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PRJ_NOTIFY_TYPES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -876,6 +899,7 @@ impl ::core::default::Default for PRJ_PLACEHOLDER_ID {
 }
 unsafe impl ::windows::core::Abi for PRJ_PLACEHOLDER_ID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PRJ_PLACEHOLDER_ID {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -910,6 +934,7 @@ impl ::core::fmt::Debug for PRJ_PLACEHOLDER_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PRJ_PLACEHOLDER_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for PRJ_PLACEHOLDER_INFO {
@@ -949,6 +974,7 @@ impl ::core::fmt::Debug for PRJ_PLACEHOLDER_INFO_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PRJ_PLACEHOLDER_INFO_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for PRJ_PLACEHOLDER_INFO_0 {
@@ -988,6 +1014,7 @@ impl ::core::fmt::Debug for PRJ_PLACEHOLDER_INFO_1 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PRJ_PLACEHOLDER_INFO_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for PRJ_PLACEHOLDER_INFO_1 {
@@ -1027,6 +1054,7 @@ impl ::core::fmt::Debug for PRJ_PLACEHOLDER_INFO_2 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PRJ_PLACEHOLDER_INFO_2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for PRJ_PLACEHOLDER_INFO_2 {
@@ -1061,6 +1089,7 @@ impl ::core::fmt::Debug for PRJ_PLACEHOLDER_VERSION_INFO {
 }
 unsafe impl ::windows::core::Abi for PRJ_PLACEHOLDER_VERSION_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PRJ_PLACEHOLDER_VERSION_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -1096,6 +1125,7 @@ impl ::core::default::Default for PRJ_STARTVIRTUALIZING_FLAGS {
 }
 unsafe impl ::windows::core::Abi for PRJ_STARTVIRTUALIZING_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PRJ_STARTVIRTUALIZING_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1152,6 +1182,7 @@ impl ::core::fmt::Debug for PRJ_STARTVIRTUALIZING_OPTIONS {
 }
 unsafe impl ::windows::core::Abi for PRJ_STARTVIRTUALIZING_OPTIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PRJ_STARTVIRTUALIZING_OPTIONS {
     fn eq(&self, other: &Self) -> bool {
@@ -1193,6 +1224,7 @@ impl ::core::default::Default for PRJ_UPDATE_FAILURE_CAUSES {
 }
 unsafe impl ::windows::core::Abi for PRJ_UPDATE_FAILURE_CAUSES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PRJ_UPDATE_FAILURE_CAUSES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1260,6 +1292,7 @@ impl ::core::default::Default for PRJ_UPDATE_TYPES {
 }
 unsafe impl ::windows::core::Abi for PRJ_UPDATE_TYPES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PRJ_UPDATE_TYPES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1313,6 +1346,7 @@ impl ::core::fmt::Debug for PRJ_VIRTUALIZATION_INSTANCE_INFO {
 }
 unsafe impl ::windows::core::Abi for PRJ_VIRTUALIZATION_INSTANCE_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PRJ_VIRTUALIZATION_INSTANCE_INFO {
     fn eq(&self, other: &Self) -> bool {

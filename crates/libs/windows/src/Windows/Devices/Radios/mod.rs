@@ -2,6 +2,11 @@
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IRadio(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRadio {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IRadio {
     type Vtable = IRadio_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x252118df_b33e_416a_875f_1cf38ae2d83e);
@@ -29,6 +34,11 @@ pub struct IRadio_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IRadioStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRadioStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IRadioStatics {
     type Vtable = IRadioStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x5fb6a12e_67cb_46ae_aae9_65919f86eff4);
@@ -140,11 +150,6 @@ impl Radio {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for Radio {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for Radio {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -158,7 +163,6 @@ impl ::core::fmt::Debug for Radio {
 }
 unsafe impl ::windows::core::RuntimeType for Radio {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Radios.Radio;{252118df-b33e-416a-875f-1cf38ae2d83e})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -235,6 +239,7 @@ impl ::core::default::Default for RadioAccessStatus {
 }
 unsafe impl ::windows::core::Abi for RadioAccessStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RadioAccessStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -243,7 +248,6 @@ impl ::core::fmt::Debug for RadioAccessStatus {
 }
 unsafe impl ::windows::core::RuntimeType for RadioAccessStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.Radios.RadioAccessStatus;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -272,6 +276,7 @@ impl ::core::default::Default for RadioKind {
 }
 unsafe impl ::windows::core::Abi for RadioKind {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RadioKind {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -280,7 +285,6 @@ impl ::core::fmt::Debug for RadioKind {
 }
 unsafe impl ::windows::core::RuntimeType for RadioKind {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.Radios.RadioKind;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -308,6 +312,7 @@ impl ::core::default::Default for RadioState {
 }
 unsafe impl ::windows::core::Abi for RadioState {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RadioState {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -316,7 +321,6 @@ impl ::core::fmt::Debug for RadioState {
 }
 unsafe impl ::windows::core::RuntimeType for RadioState {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.Radios.RadioState;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }

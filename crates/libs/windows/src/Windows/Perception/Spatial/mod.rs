@@ -6,6 +6,11 @@ pub mod Surfaces;
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpatialAnchor(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpatialAnchor {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpatialAnchor {
     type Vtable = ISpatialAnchor_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x0529e5ce_1d34_3702_bcec_eabff578a869);
@@ -28,6 +33,11 @@ pub struct ISpatialAnchor_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpatialAnchor2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpatialAnchor2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpatialAnchor2 {
     type Vtable = ISpatialAnchor2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xed17c908_a695_4cf6_92fd_97263ba71047);
@@ -41,6 +51,11 @@ pub struct ISpatialAnchor2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpatialAnchorExportSufficiency(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpatialAnchorExportSufficiency {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpatialAnchorExportSufficiency {
     type Vtable = ISpatialAnchorExportSufficiency_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x77c25b2b_3409_4088_b91b_fdfd05d1648f);
@@ -56,6 +71,11 @@ pub struct ISpatialAnchorExportSufficiency_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpatialAnchorExporter(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpatialAnchorExporter {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpatialAnchorExporter {
     type Vtable = ISpatialAnchorExporter_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9a2a4338_24fb_4269_89c5_88304aeef20f);
@@ -76,6 +96,11 @@ pub struct ISpatialAnchorExporter_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpatialAnchorExporterStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpatialAnchorExporterStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpatialAnchorExporterStatics {
     type Vtable = ISpatialAnchorExporterStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xed2507b8_2475_439c_85ff_7fed341fdc88);
@@ -93,6 +118,11 @@ pub struct ISpatialAnchorExporterStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpatialAnchorManagerStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpatialAnchorManagerStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpatialAnchorManagerStatics {
     type Vtable = ISpatialAnchorManagerStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x88e30eab_f3b7_420b_b086_8a80c07d910d);
@@ -109,6 +139,11 @@ pub struct ISpatialAnchorManagerStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpatialAnchorRawCoordinateSystemAdjustedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpatialAnchorRawCoordinateSystemAdjustedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpatialAnchorRawCoordinateSystemAdjustedEventArgs {
     type Vtable = ISpatialAnchorRawCoordinateSystemAdjustedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa1e81eb8_56c7_3117_a2e4_81e0fcf28e00);
@@ -125,6 +160,11 @@ pub struct ISpatialAnchorRawCoordinateSystemAdjustedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpatialAnchorStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpatialAnchorStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpatialAnchorStatics {
     type Vtable = ISpatialAnchorStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa9928642_0174_311c_ae79_0e5107669f16);
@@ -146,6 +186,11 @@ pub struct ISpatialAnchorStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpatialAnchorStore(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpatialAnchorStore {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpatialAnchorStore {
     type Vtable = ISpatialAnchorStore_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb0bc3636_486a_3cb0_9e6f_1245165c4db6);
@@ -166,6 +211,12 @@ pub struct ISpatialAnchorStore_Vtbl {
 #[cfg(feature = "deprecated")]
 #[repr(transparent)]
 pub struct ISpatialAnchorTransferManagerStatics(::windows::core::IUnknown);
+#[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for ISpatialAnchorTransferManagerStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for ISpatialAnchorTransferManagerStatics {
     type Vtable = ISpatialAnchorTransferManagerStatics_Vtbl;
@@ -192,6 +243,11 @@ pub struct ISpatialAnchorTransferManagerStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpatialBoundingVolume(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpatialBoundingVolume {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpatialBoundingVolume {
     type Vtable = ISpatialBoundingVolume_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xfb2065da_68c3_33df_b7af_4c787207999c);
@@ -204,6 +260,11 @@ pub struct ISpatialBoundingVolume_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpatialBoundingVolumeStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpatialBoundingVolumeStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpatialBoundingVolumeStatics {
     type Vtable = ISpatialBoundingVolumeStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x05889117_b3e1_36d8_b017_566181a5b196);
@@ -232,6 +293,11 @@ pub struct ISpatialBoundingVolumeStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpatialCoordinateSystem(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpatialCoordinateSystem {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpatialCoordinateSystem {
     type Vtable = ISpatialCoordinateSystem_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x69ebca4b_60a3_3586_a653_59a7bd676d07);
@@ -248,6 +314,11 @@ pub struct ISpatialCoordinateSystem_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpatialEntity(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpatialEntity {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpatialEntity {
     type Vtable = ISpatialEntity_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x166de955_e1eb_454c_ba08_e6c0668ddc65);
@@ -266,6 +337,11 @@ pub struct ISpatialEntity_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpatialEntityAddedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpatialEntityAddedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpatialEntityAddedEventArgs {
     type Vtable = ISpatialEntityAddedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa397f49b_156a_4707_ac2c_d31d570ed399);
@@ -279,6 +355,11 @@ pub struct ISpatialEntityAddedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpatialEntityFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpatialEntityFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpatialEntityFactory {
     type Vtable = ISpatialEntityFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe1f1e325_349f_4225_a2f3_4b01c15fe056);
@@ -296,6 +377,11 @@ pub struct ISpatialEntityFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpatialEntityRemovedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpatialEntityRemovedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpatialEntityRemovedEventArgs {
     type Vtable = ISpatialEntityRemovedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x91741800_536d_4e9f_abf6_415b5444d651);
@@ -309,6 +395,11 @@ pub struct ISpatialEntityRemovedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpatialEntityStore(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpatialEntityStore {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpatialEntityStore {
     type Vtable = ISpatialEntityStore_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x329788ba_e513_4f06_889d_1be30ecf43e6);
@@ -330,6 +421,11 @@ pub struct ISpatialEntityStore_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpatialEntityStoreStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpatialEntityStoreStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpatialEntityStoreStatics {
     type Vtable = ISpatialEntityStoreStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x6b4b389e_7c50_4e92_8a62_4d1d4b7ccd3e);
@@ -347,6 +443,11 @@ pub struct ISpatialEntityStoreStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpatialEntityUpdatedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpatialEntityUpdatedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpatialEntityUpdatedEventArgs {
     type Vtable = ISpatialEntityUpdatedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe5671766_627b_43cb_a49f_b3be6d47deed);
@@ -360,6 +461,11 @@ pub struct ISpatialEntityUpdatedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpatialEntityWatcher(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpatialEntityWatcher {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpatialEntityWatcher {
     type Vtable = ISpatialEntityWatcher_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb3b85fa0_6d5e_4bbc_805d_5fe5b9ba1959);
@@ -407,6 +513,11 @@ pub struct ISpatialEntityWatcher_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpatialLocation(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpatialLocation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpatialLocation {
     type Vtable = ISpatialLocation_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1d81d29d_24a1_37d5_8fa1_39b4f9ad67e2);
@@ -443,6 +554,11 @@ pub struct ISpatialLocation_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpatialLocation2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpatialLocation2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpatialLocation2 {
     type Vtable = ISpatialLocation2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x117f2416_38a7_4a18_b404_ab8fabe1d78b);
@@ -463,6 +579,11 @@ pub struct ISpatialLocation2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpatialLocator(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpatialLocator {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpatialLocator {
     type Vtable = ISpatialLocator_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf6478925_9e0c_3bb6_997e_b64ecca24cf4);
@@ -519,6 +640,11 @@ pub struct ISpatialLocator_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpatialLocatorAttachedFrameOfReference(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpatialLocatorAttachedFrameOfReference {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpatialLocatorAttachedFrameOfReference {
     type Vtable = ISpatialLocatorAttachedFrameOfReference_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe1774ef6_1f4f_499c_9625_ef5e6ed7a048);
@@ -553,6 +679,11 @@ pub struct ISpatialLocatorAttachedFrameOfReference_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpatialLocatorPositionalTrackingDeactivatingEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpatialLocatorPositionalTrackingDeactivatingEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpatialLocatorPositionalTrackingDeactivatingEventArgs {
     type Vtable = ISpatialLocatorPositionalTrackingDeactivatingEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb8a84063_e3f4_368b_9061_9ea9d1d6cc16);
@@ -567,6 +698,11 @@ pub struct ISpatialLocatorPositionalTrackingDeactivatingEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpatialLocatorStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpatialLocatorStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpatialLocatorStatics {
     type Vtable = ISpatialLocatorStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb76e3340_a7c2_361b_bb82_56e93b89b1bb);
@@ -580,6 +716,11 @@ pub struct ISpatialLocatorStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpatialStageFrameOfReference(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpatialStageFrameOfReference {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpatialStageFrameOfReference {
     type Vtable = ISpatialStageFrameOfReference_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x7a8a3464_ad0d_4590_ab86_33062b674926);
@@ -600,6 +741,11 @@ pub struct ISpatialStageFrameOfReference_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpatialStageFrameOfReferenceStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpatialStageFrameOfReferenceStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpatialStageFrameOfReferenceStatics {
     type Vtable = ISpatialStageFrameOfReferenceStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf78d5c4d_a0a4_499c_8d91_a8c965d40654);
@@ -625,6 +771,11 @@ pub struct ISpatialStageFrameOfReferenceStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpatialStationaryFrameOfReference(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpatialStationaryFrameOfReference {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpatialStationaryFrameOfReference {
     type Vtable = ISpatialStationaryFrameOfReference_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x09dbccb9_bcf8_3e7f_be7e_7edccbb178a8);
@@ -707,11 +858,6 @@ impl SpatialAnchor {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for SpatialAnchor {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SpatialAnchor {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -725,7 +871,6 @@ impl ::core::fmt::Debug for SpatialAnchor {
 }
 unsafe impl ::windows::core::RuntimeType for SpatialAnchor {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Perception.Spatial.SpatialAnchor;{0529e5ce-1d34-3702-bcec-eabff578a869})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -800,6 +945,7 @@ impl ::core::default::Default for SpatialAnchorExportPurpose {
 }
 unsafe impl ::windows::core::Abi for SpatialAnchorExportPurpose {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SpatialAnchorExportPurpose {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -808,7 +954,6 @@ impl ::core::fmt::Debug for SpatialAnchorExportPurpose {
 }
 unsafe impl ::windows::core::RuntimeType for SpatialAnchorExportPurpose {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Perception.Spatial.SpatialAnchorExportPurpose;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -842,11 +987,6 @@ impl SpatialAnchorExportSufficiency {
         }
     }
 }
-impl ::core::clone::Clone for SpatialAnchorExportSufficiency {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SpatialAnchorExportSufficiency {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -860,7 +1000,6 @@ impl ::core::fmt::Debug for SpatialAnchorExportSufficiency {
 }
 unsafe impl ::windows::core::RuntimeType for SpatialAnchorExportSufficiency {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Perception.Spatial.SpatialAnchorExportSufficiency;{77c25b2b-3409-4088-b91b-fdfd05d1648f})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -957,11 +1096,6 @@ impl SpatialAnchorExporter {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for SpatialAnchorExporter {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SpatialAnchorExporter {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -975,7 +1109,6 @@ impl ::core::fmt::Debug for SpatialAnchorExporter {
 }
 unsafe impl ::windows::core::RuntimeType for SpatialAnchorExporter {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Perception.Spatial.SpatialAnchorExporter;{9a2a4338-24fb-4269-89c5-88304aeef20f})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1063,11 +1196,6 @@ impl SpatialAnchorRawCoordinateSystemAdjustedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for SpatialAnchorRawCoordinateSystemAdjustedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SpatialAnchorRawCoordinateSystemAdjustedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1081,7 +1209,6 @@ impl ::core::fmt::Debug for SpatialAnchorRawCoordinateSystemAdjustedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for SpatialAnchorRawCoordinateSystemAdjustedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Perception.Spatial.SpatialAnchorRawCoordinateSystemAdjustedEventArgs;{a1e81eb8-56c7-3117-a2e4-81e0fcf28e00})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1167,11 +1294,6 @@ impl SpatialAnchorStore {
         unsafe { (::windows::core::Interface::vtable(this).Clear)(::core::mem::transmute_copy(this)).ok() }
     }
 }
-impl ::core::clone::Clone for SpatialAnchorStore {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SpatialAnchorStore {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1185,7 +1307,6 @@ impl ::core::fmt::Debug for SpatialAnchorStore {
 }
 unsafe impl ::windows::core::RuntimeType for SpatialAnchorStore {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Perception.Spatial.SpatialAnchorStore;{b0bc3636-486a-3cb0-9e6f-1245165c4db6})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1303,11 +1424,11 @@ impl ::core::fmt::Debug for SpatialBoundingBox {
 #[cfg(feature = "Foundation_Numerics")]
 unsafe impl ::windows::core::Abi for SpatialBoundingBox {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Foundation_Numerics")]
 unsafe impl ::windows::core::RuntimeType for SpatialBoundingBox {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"struct(Windows.Perception.Spatial.SpatialBoundingBox;struct(Windows.Foundation.Numerics.Vector3;f4;f4;f4);struct(Windows.Foundation.Numerics.Vector3;f4;f4;f4))");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1354,11 +1475,11 @@ impl ::core::fmt::Debug for SpatialBoundingFrustum {
 #[cfg(feature = "Foundation_Numerics")]
 unsafe impl ::windows::core::Abi for SpatialBoundingFrustum {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Foundation_Numerics")]
 unsafe impl ::windows::core::RuntimeType for SpatialBoundingFrustum {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"struct(Windows.Perception.Spatial.SpatialBoundingFrustum;struct(Windows.Foundation.Numerics.Plane;struct(Windows.Foundation.Numerics.Vector3;f4;f4;f4);f4);struct(Windows.Foundation.Numerics.Plane;struct(Windows.Foundation.Numerics.Vector3;f4;f4;f4);f4);struct(Windows.Foundation.Numerics.Plane;struct(Windows.Foundation.Numerics.Vector3;f4;f4;f4);f4);struct(Windows.Foundation.Numerics.Plane;struct(Windows.Foundation.Numerics.Vector3;f4;f4;f4);f4);struct(Windows.Foundation.Numerics.Plane;struct(Windows.Foundation.Numerics.Vector3;f4;f4;f4);f4);struct(Windows.Foundation.Numerics.Plane;struct(Windows.Foundation.Numerics.Vector3;f4;f4;f4);f4))");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1402,11 +1523,11 @@ impl ::core::fmt::Debug for SpatialBoundingOrientedBox {
 #[cfg(feature = "Foundation_Numerics")]
 unsafe impl ::windows::core::Abi for SpatialBoundingOrientedBox {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Foundation_Numerics")]
 unsafe impl ::windows::core::RuntimeType for SpatialBoundingOrientedBox {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"struct(Windows.Perception.Spatial.SpatialBoundingOrientedBox;struct(Windows.Foundation.Numerics.Vector3;f4;f4;f4);struct(Windows.Foundation.Numerics.Vector3;f4;f4;f4);struct(Windows.Foundation.Numerics.Quaternion;f4;f4;f4;f4))");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1449,11 +1570,11 @@ impl ::core::fmt::Debug for SpatialBoundingSphere {
 #[cfg(feature = "Foundation_Numerics")]
 unsafe impl ::windows::core::Abi for SpatialBoundingSphere {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Foundation_Numerics")]
 unsafe impl ::windows::core::RuntimeType for SpatialBoundingSphere {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"struct(Windows.Perception.Spatial.SpatialBoundingSphere;struct(Windows.Foundation.Numerics.Vector3;f4;f4;f4);f4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1514,11 +1635,6 @@ impl SpatialBoundingVolume {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for SpatialBoundingVolume {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SpatialBoundingVolume {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1532,7 +1648,6 @@ impl ::core::fmt::Debug for SpatialBoundingVolume {
 }
 unsafe impl ::windows::core::RuntimeType for SpatialBoundingVolume {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Perception.Spatial.SpatialBoundingVolume;{fb2065da-68c3-33df-b7af-4c787207999c})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1600,11 +1715,6 @@ impl SpatialCoordinateSystem {
         }
     }
 }
-impl ::core::clone::Clone for SpatialCoordinateSystem {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SpatialCoordinateSystem {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1618,7 +1728,6 @@ impl ::core::fmt::Debug for SpatialCoordinateSystem {
 }
 unsafe impl ::windows::core::RuntimeType for SpatialCoordinateSystem {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Perception.Spatial.SpatialCoordinateSystem;{69ebca4b-60a3-3586-a653-59a7bd676d07})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1722,11 +1831,6 @@ impl SpatialEntity {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for SpatialEntity {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SpatialEntity {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1740,7 +1844,6 @@ impl ::core::fmt::Debug for SpatialEntity {
 }
 unsafe impl ::windows::core::RuntimeType for SpatialEntity {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Perception.Spatial.SpatialEntity;{166de955-e1eb-454c-ba08-e6c0668ddc65})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1807,11 +1910,6 @@ impl SpatialEntityAddedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for SpatialEntityAddedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SpatialEntityAddedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1825,7 +1923,6 @@ impl ::core::fmt::Debug for SpatialEntityAddedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for SpatialEntityAddedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Perception.Spatial.SpatialEntityAddedEventArgs;{a397f49b-156a-4707-ac2c-d31d570ed399})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1892,11 +1989,6 @@ impl SpatialEntityRemovedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for SpatialEntityRemovedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SpatialEntityRemovedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1910,7 +2002,6 @@ impl ::core::fmt::Debug for SpatialEntityRemovedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for SpatialEntityRemovedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Perception.Spatial.SpatialEntityRemovedEventArgs;{91741800-536d-4e9f-abf6-415b5444d651})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2015,11 +2106,6 @@ impl SpatialEntityStore {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for SpatialEntityStore {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SpatialEntityStore {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2033,7 +2119,6 @@ impl ::core::fmt::Debug for SpatialEntityStore {
 }
 unsafe impl ::windows::core::RuntimeType for SpatialEntityStore {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Perception.Spatial.SpatialEntityStore;{329788ba-e513-4f06-889d-1be30ecf43e6})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2100,11 +2185,6 @@ impl SpatialEntityUpdatedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for SpatialEntityUpdatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SpatialEntityUpdatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2118,7 +2198,6 @@ impl ::core::fmt::Debug for SpatialEntityUpdatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for SpatialEntityUpdatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Perception.Spatial.SpatialEntityUpdatedEventArgs;{e5671766-627b-43cb-a49f-b3be6d47deed})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2255,11 +2334,6 @@ impl SpatialEntityWatcher {
         unsafe { (::windows::core::Interface::vtable(this).Stop)(::core::mem::transmute_copy(this)).ok() }
     }
 }
-impl ::core::clone::Clone for SpatialEntityWatcher {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SpatialEntityWatcher {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2273,7 +2347,6 @@ impl ::core::fmt::Debug for SpatialEntityWatcher {
 }
 unsafe impl ::windows::core::RuntimeType for SpatialEntityWatcher {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Perception.Spatial.SpatialEntityWatcher;{b3b85fa0-6d5e-4bbc-805d-5fe5b9ba1959})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2352,6 +2425,7 @@ impl ::core::default::Default for SpatialEntityWatcherStatus {
 }
 unsafe impl ::windows::core::Abi for SpatialEntityWatcherStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SpatialEntityWatcherStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2360,7 +2434,6 @@ impl ::core::fmt::Debug for SpatialEntityWatcherStatus {
 }
 unsafe impl ::windows::core::RuntimeType for SpatialEntityWatcherStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Perception.Spatial.SpatialEntityWatcherStatus;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2389,6 +2462,7 @@ impl ::core::default::Default for SpatialLocatability {
 }
 unsafe impl ::windows::core::Abi for SpatialLocatability {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SpatialLocatability {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2397,7 +2471,6 @@ impl ::core::fmt::Debug for SpatialLocatability {
 }
 unsafe impl ::windows::core::RuntimeType for SpatialLocatability {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Perception.Spatial.SpatialLocatability;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2479,11 +2552,6 @@ impl SpatialLocation {
         }
     }
 }
-impl ::core::clone::Clone for SpatialLocation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SpatialLocation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2497,7 +2565,6 @@ impl ::core::fmt::Debug for SpatialLocation {
 }
 unsafe impl ::windows::core::RuntimeType for SpatialLocation {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Perception.Spatial.SpatialLocation;{1d81d29d-24a1-37d5-8fa1-39b4f9ad67e2})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2684,11 +2751,6 @@ impl SpatialLocator {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for SpatialLocator {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SpatialLocator {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2702,7 +2764,6 @@ impl ::core::fmt::Debug for SpatialLocator {
 }
 unsafe impl ::windows::core::RuntimeType for SpatialLocator {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Perception.Spatial.SpatialLocator;{f6478925-9e0c-3bb6-997e-b64ecca24cf4})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2813,11 +2874,6 @@ impl SpatialLocatorAttachedFrameOfReference {
         }
     }
 }
-impl ::core::clone::Clone for SpatialLocatorAttachedFrameOfReference {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SpatialLocatorAttachedFrameOfReference {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2831,7 +2887,6 @@ impl ::core::fmt::Debug for SpatialLocatorAttachedFrameOfReference {
 }
 unsafe impl ::windows::core::RuntimeType for SpatialLocatorAttachedFrameOfReference {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Perception.Spatial.SpatialLocatorAttachedFrameOfReference;{e1774ef6-1f4f-499c-9625-ef5e6ed7a048})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2903,11 +2958,6 @@ impl SpatialLocatorPositionalTrackingDeactivatingEventArgs {
         unsafe { (::windows::core::Interface::vtable(this).SetCanceled)(::core::mem::transmute_copy(this), value).ok() }
     }
 }
-impl ::core::clone::Clone for SpatialLocatorPositionalTrackingDeactivatingEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SpatialLocatorPositionalTrackingDeactivatingEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2921,7 +2971,6 @@ impl ::core::fmt::Debug for SpatialLocatorPositionalTrackingDeactivatingEventArg
 }
 unsafe impl ::windows::core::RuntimeType for SpatialLocatorPositionalTrackingDeactivatingEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Perception.Spatial.SpatialLocatorPositionalTrackingDeactivatingEventArgs;{b8a84063-e3f4-368b-9061-9ea9d1d6cc16})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2996,6 +3045,7 @@ impl ::core::default::Default for SpatialLookDirectionRange {
 }
 unsafe impl ::windows::core::Abi for SpatialLookDirectionRange {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SpatialLookDirectionRange {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3004,7 +3054,6 @@ impl ::core::fmt::Debug for SpatialLookDirectionRange {
 }
 unsafe impl ::windows::core::RuntimeType for SpatialLookDirectionRange {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Perception.Spatial.SpatialLookDirectionRange;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -3030,6 +3079,7 @@ impl ::core::default::Default for SpatialMovementRange {
 }
 unsafe impl ::windows::core::Abi for SpatialMovementRange {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SpatialMovementRange {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3038,7 +3088,6 @@ impl ::core::fmt::Debug for SpatialMovementRange {
 }
 unsafe impl ::windows::core::RuntimeType for SpatialMovementRange {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Perception.Spatial.SpatialMovementRange;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -3066,6 +3115,7 @@ impl ::core::default::Default for SpatialPerceptionAccessStatus {
 }
 unsafe impl ::windows::core::Abi for SpatialPerceptionAccessStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SpatialPerceptionAccessStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3074,7 +3124,6 @@ impl ::core::fmt::Debug for SpatialPerceptionAccessStatus {
 }
 unsafe impl ::windows::core::RuntimeType for SpatialPerceptionAccessStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Perception.Spatial.SpatialPerceptionAccessStatus;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -3103,11 +3152,11 @@ impl ::core::fmt::Debug for SpatialRay {
 #[cfg(feature = "Foundation_Numerics")]
 unsafe impl ::windows::core::Abi for SpatialRay {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Foundation_Numerics")]
 unsafe impl ::windows::core::RuntimeType for SpatialRay {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"struct(Windows.Perception.Spatial.SpatialRay;struct(Windows.Foundation.Numerics.Vector3;f4;f4;f4);struct(Windows.Foundation.Numerics.Vector3;f4;f4;f4))");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -3205,11 +3254,6 @@ impl SpatialStageFrameOfReference {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for SpatialStageFrameOfReference {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SpatialStageFrameOfReference {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3223,7 +3267,6 @@ impl ::core::fmt::Debug for SpatialStageFrameOfReference {
 }
 unsafe impl ::windows::core::RuntimeType for SpatialStageFrameOfReference {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Perception.Spatial.SpatialStageFrameOfReference;{7a8a3464-ad0d-4590-ab86-33062b674926})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3290,11 +3333,6 @@ impl SpatialStationaryFrameOfReference {
         }
     }
 }
-impl ::core::clone::Clone for SpatialStationaryFrameOfReference {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SpatialStationaryFrameOfReference {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3308,7 +3346,6 @@ impl ::core::fmt::Debug for SpatialStationaryFrameOfReference {
 }
 unsafe impl ::windows::core::RuntimeType for SpatialStationaryFrameOfReference {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Perception.Spatial.SpatialStationaryFrameOfReference;{09dbccb9-bcf8-3e7f-be7e-7edccbb178a8})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

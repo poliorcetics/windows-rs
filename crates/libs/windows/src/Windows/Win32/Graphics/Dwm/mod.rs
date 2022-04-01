@@ -24,6 +24,7 @@ impl ::core::default::Default for DWMFLIP3DWINDOWPOLICY {
 }
 unsafe impl ::windows::core::Abi for DWMFLIP3DWINDOWPOLICY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DWMFLIP3DWINDOWPOLICY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -55,6 +56,7 @@ impl ::core::default::Default for DWMNCRENDERINGPOLICY {
 }
 unsafe impl ::windows::core::Abi for DWMNCRENDERINGPOLICY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DWMNCRENDERINGPOLICY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -82,6 +84,7 @@ impl ::core::default::Default for DWMTRANSITION_OWNEDWINDOW_TARGET {
 }
 unsafe impl ::windows::core::Abi for DWMTRANSITION_OWNEDWINDOW_TARGET {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DWMTRANSITION_OWNEDWINDOW_TARGET {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -157,6 +160,7 @@ impl ::core::default::Default for DWMWINDOWATTRIBUTE {
 }
 unsafe impl ::windows::core::Abi for DWMWINDOWATTRIBUTE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DWMWINDOWATTRIBUTE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -189,6 +193,7 @@ impl ::core::clone::Clone for DWM_BLURBEHIND {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
 unsafe impl ::windows::core::Abi for DWM_BLURBEHIND {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
 impl ::core::cmp::PartialEq for DWM_BLURBEHIND {
@@ -240,6 +245,7 @@ impl ::core::clone::Clone for DWM_PRESENT_PARAMETERS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DWM_PRESENT_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DWM_PRESENT_PARAMETERS {
@@ -286,6 +292,7 @@ impl ::core::default::Default for DWM_SHOWCONTACT {
 }
 unsafe impl ::windows::core::Abi for DWM_SHOWCONTACT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DWM_SHOWCONTACT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -345,6 +352,7 @@ impl ::core::default::Default for DWM_SOURCE_FRAME_SAMPLING {
 }
 unsafe impl ::windows::core::Abi for DWM_SOURCE_FRAME_SAMPLING {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DWM_SOURCE_FRAME_SAMPLING {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -390,6 +398,7 @@ impl ::core::default::Default for DWM_TAB_WINDOW_REQUIREMENTS {
 }
 unsafe impl ::windows::core::Abi for DWM_TAB_WINDOW_REQUIREMENTS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DWM_TAB_WINDOW_REQUIREMENTS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -446,6 +455,7 @@ impl ::core::clone::Clone for DWM_THUMBNAIL_PROPERTIES {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DWM_THUMBNAIL_PROPERTIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DWM_THUMBNAIL_PROPERTIES {
@@ -513,6 +523,7 @@ impl ::core::clone::Clone for DWM_TIMING_INFO {
 }
 unsafe impl ::windows::core::Abi for DWM_TIMING_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DWM_TIMING_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -560,6 +571,7 @@ impl ::core::default::Default for DWM_WINDOW_CORNER_PREFERENCE {
 }
 unsafe impl ::windows::core::Abi for DWM_WINDOW_CORNER_PREFERENCE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DWM_WINDOW_CORNER_PREFERENCE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1071,6 +1083,7 @@ impl ::core::default::Default for GESTURE_TYPE {
 }
 unsafe impl ::windows::core::Abi for GESTURE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GESTURE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1095,6 +1108,7 @@ impl ::core::clone::Clone for MilMatrix3x2D {
 }
 unsafe impl ::windows::core::Abi for MilMatrix3x2D {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MilMatrix3x2D {
     fn eq(&self, other: &Self) -> bool {
@@ -1121,6 +1135,7 @@ impl ::core::clone::Clone for UNSIGNED_RATIO {
 }
 unsafe impl ::windows::core::Abi for UNSIGNED_RATIO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for UNSIGNED_RATIO {
     fn eq(&self, other: &Self) -> bool {

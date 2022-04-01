@@ -2,6 +2,11 @@
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct INamedResource(::windows::core::IUnknown);
+impl ::core::clone::Clone for INamedResource {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for INamedResource {
     type Vtable = INamedResource_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1c98c219_0b13_4240_89a5_d495dc189a00);
@@ -32,6 +37,11 @@ pub struct INamedResource_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IResourceCandidate(::windows::core::IUnknown);
+impl ::core::clone::Clone for IResourceCandidate {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IResourceCandidate {
     type Vtable = IResourceCandidate_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xaf5207d9_c433_4764_b3fd_8fa6bfbcbadc);
@@ -57,6 +67,11 @@ pub struct IResourceCandidate_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IResourceCandidate2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IResourceCandidate2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IResourceCandidate2 {
     type Vtable = IResourceCandidate2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x69e5b468_f6fc_4013_aaa2_d53f1757d3b5);
@@ -73,6 +88,11 @@ pub struct IResourceCandidate2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IResourceCandidate3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IResourceCandidate3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IResourceCandidate3 {
     type Vtable = IResourceCandidate3_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x08ae97f8_517a_4674_958c_4a3c7cd2cc6b);
@@ -86,6 +106,11 @@ pub struct IResourceCandidate3_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IResourceContext(::windows::core::IUnknown);
+impl ::core::clone::Clone for IResourceContext {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IResourceContext {
     type Vtable = IResourceContext_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x2fa22f4b_707e_4b27_ad0d_d0d8cd468fd2);
@@ -120,6 +145,11 @@ pub struct IResourceContext_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IResourceContextStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IResourceContextStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IResourceContextStatics {
     type Vtable = IResourceContextStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x98be9d6c_6338_4b31_99df_b2b442f17149);
@@ -136,6 +166,11 @@ pub struct IResourceContextStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IResourceContextStatics2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IResourceContextStatics2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IResourceContextStatics2 {
     type Vtable = IResourceContextStatics2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x41f752ef_12af_41b9_ab36_b1eb4b512460);
@@ -156,6 +191,11 @@ pub struct IResourceContextStatics2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IResourceContextStatics3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IResourceContextStatics3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IResourceContextStatics3 {
     type Vtable = IResourceContextStatics3_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x20cf492c_af0f_450b_9da6_106dd0c29a39);
@@ -169,6 +209,11 @@ pub struct IResourceContextStatics3_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IResourceContextStatics4(::windows::core::IUnknown);
+impl ::core::clone::Clone for IResourceContextStatics4 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IResourceContextStatics4 {
     type Vtable = IResourceContextStatics4_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x22eb9ccd_fb31_4bfa_b86b_df9d9d7bdc39);
@@ -185,6 +230,11 @@ pub struct IResourceContextStatics4_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IResourceManager(::windows::core::IUnknown);
+impl ::core::clone::Clone for IResourceManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IResourceManager {
     type Vtable = IResourceManager_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf744d97b_9988_44fb_abd6_5378844cfa8b);
@@ -211,6 +261,11 @@ pub struct IResourceManager_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IResourceManager2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IResourceManager2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IResourceManager2 {
     type Vtable = IResourceManager2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9d66fe6c_a4d7_4c23_9e85_675f304c252d);
@@ -231,6 +286,11 @@ pub struct IResourceManager2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IResourceManagerStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IResourceManagerStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IResourceManagerStatics {
     type Vtable = IResourceManagerStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1cc0fdfc_69ee_4e43_9901_47f12687baf7);
@@ -245,6 +305,11 @@ pub struct IResourceManagerStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IResourceMap(::windows::core::IUnknown);
+impl ::core::clone::Clone for IResourceMap {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IResourceMap {
     type Vtable = IResourceMap_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x72284824_db8c_42f8_b08c_53ff357dad82);
@@ -264,6 +329,11 @@ pub struct IResourceMap_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IResourceQualifier(::windows::core::IUnknown);
+impl ::core::clone::Clone for IResourceQualifier {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IResourceQualifier {
     type Vtable = IResourceQualifier_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x785da5b2_4afd_4376_a888_c5f9a6b7a05c);
@@ -335,11 +405,6 @@ impl NamedResource {
         }
     }
 }
-impl ::core::clone::Clone for NamedResource {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for NamedResource {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -353,7 +418,6 @@ impl ::core::fmt::Debug for NamedResource {
 }
 unsafe impl ::windows::core::RuntimeType for NamedResource {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Resources.Core.NamedResource;{1c98c219-0b13-4240-89a5-d495dc189a00})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -487,11 +551,6 @@ impl ResourceCandidate {
         }
     }
 }
-impl ::core::clone::Clone for ResourceCandidate {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ResourceCandidate {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -505,7 +564,6 @@ impl ::core::fmt::Debug for ResourceCandidate {
 }
 unsafe impl ::windows::core::RuntimeType for ResourceCandidate {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Resources.Core.ResourceCandidate;{af5207d9-c433-4764-b3fd-8fa6bfbcbadc})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -581,6 +639,7 @@ impl ::core::default::Default for ResourceCandidateKind {
 }
 unsafe impl ::windows::core::Abi for ResourceCandidateKind {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ResourceCandidateKind {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -589,7 +648,6 @@ impl ::core::fmt::Debug for ResourceCandidateKind {
 }
 unsafe impl ::windows::core::RuntimeType for ResourceCandidateKind {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.Resources.Core.ResourceCandidateKind;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -647,12 +705,6 @@ impl ResourceCandidateVectorView {
     }
 }
 #[cfg(feature = "Foundation_Collections")]
-impl ::core::clone::Clone for ResourceCandidateVectorView {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Foundation_Collections")]
 impl ::core::cmp::PartialEq for ResourceCandidateVectorView {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -669,7 +721,6 @@ impl ::core::fmt::Debug for ResourceCandidateVectorView {
 #[cfg(feature = "Foundation_Collections")]
 unsafe impl ::windows::core::RuntimeType for ResourceCandidateVectorView {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Resources.Core.ResourceCandidateVectorView;pinterface({bbe1fa4c-b0e3-4583-baef-1f1b2e483e56};rc(Windows.ApplicationModel.Resources.Core.ResourceCandidate;{af5207d9-c433-4764-b3fd-8fa6bfbcbadc})))");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -931,11 +982,6 @@ impl ResourceContext {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for ResourceContext {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ResourceContext {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -949,7 +995,6 @@ impl ::core::fmt::Debug for ResourceContext {
 }
 unsafe impl ::windows::core::RuntimeType for ResourceContext {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Resources.Core.ResourceContext;{2fa22f4b-707e-4b27-ad0d-d0d8cd468fd2})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1056,12 +1101,6 @@ impl ResourceContextLanguagesVectorView {
     }
 }
 #[cfg(feature = "Foundation_Collections")]
-impl ::core::clone::Clone for ResourceContextLanguagesVectorView {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Foundation_Collections")]
 impl ::core::cmp::PartialEq for ResourceContextLanguagesVectorView {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1078,7 +1117,6 @@ impl ::core::fmt::Debug for ResourceContextLanguagesVectorView {
 #[cfg(feature = "Foundation_Collections")]
 unsafe impl ::windows::core::RuntimeType for ResourceContextLanguagesVectorView {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Resources.Core.ResourceContextLanguagesVectorView;pinterface({bbe1fa4c-b0e3-4583-baef-1f1b2e483e56};string))");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1234,10 +1272,10 @@ impl ::core::fmt::Debug for ResourceLayoutInfo {
 }
 unsafe impl ::windows::core::Abi for ResourceLayoutInfo {
     type Abi = Self;
+    type DefaultType = Self;
 }
 unsafe impl ::windows::core::RuntimeType for ResourceLayoutInfo {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"struct(Windows.ApplicationModel.Resources.Core.ResourceLayoutInfo;u4;u4;u4;u4;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1332,11 +1370,6 @@ impl ResourceManager {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for ResourceManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ResourceManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1350,7 +1383,6 @@ impl ::core::fmt::Debug for ResourceManager {
 }
 unsafe impl ::windows::core::RuntimeType for ResourceManager {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Resources.Core.ResourceManager;{f744d97b-9988-44fb-abd6-5378844cfa8b})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1484,11 +1516,6 @@ impl ResourceMap {
         }
     }
 }
-impl ::core::clone::Clone for ResourceMap {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ResourceMap {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1502,7 +1529,6 @@ impl ::core::fmt::Debug for ResourceMap {
 }
 unsafe impl ::windows::core::RuntimeType for ResourceMap {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Resources.Core.ResourceMap;{72284824-db8c-42f8-b08c-53ff357dad82})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1668,12 +1694,6 @@ impl ResourceMapIterator {
     }
 }
 #[cfg(feature = "Foundation_Collections")]
-impl ::core::clone::Clone for ResourceMapIterator {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Foundation_Collections")]
 impl ::core::cmp::PartialEq for ResourceMapIterator {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1690,7 +1710,6 @@ impl ::core::fmt::Debug for ResourceMapIterator {
 #[cfg(feature = "Foundation_Collections")]
 unsafe impl ::windows::core::RuntimeType for ResourceMapIterator {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Resources.Core.ResourceMapIterator;pinterface({6a79e863-4300-459a-9966-cbb660963ee1};pinterface({02b51929-c1c4-4a7e-8940-0312b5c18500};string;rc(Windows.ApplicationModel.Resources.Core.NamedResource;{1c98c219-0b13-4240-89a5-d495dc189a00}))))");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1832,12 +1851,6 @@ impl ResourceMapMapView {
     }
 }
 #[cfg(feature = "Foundation_Collections")]
-impl ::core::clone::Clone for ResourceMapMapView {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Foundation_Collections")]
 impl ::core::cmp::PartialEq for ResourceMapMapView {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1854,7 +1867,6 @@ impl ::core::fmt::Debug for ResourceMapMapView {
 #[cfg(feature = "Foundation_Collections")]
 unsafe impl ::windows::core::RuntimeType for ResourceMapMapView {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Resources.Core.ResourceMapMapView;pinterface({e480ce40-a338-4ada-adcf-272272e48cb9};string;rc(Windows.ApplicationModel.Resources.Core.ResourceMap;{72284824-db8c-42f8-b08c-53ff357dad82})))");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2032,12 +2044,6 @@ impl ResourceMapMapViewIterator {
     }
 }
 #[cfg(feature = "Foundation_Collections")]
-impl ::core::clone::Clone for ResourceMapMapViewIterator {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Foundation_Collections")]
 impl ::core::cmp::PartialEq for ResourceMapMapViewIterator {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2054,7 +2060,6 @@ impl ::core::fmt::Debug for ResourceMapMapViewIterator {
 #[cfg(feature = "Foundation_Collections")]
 unsafe impl ::windows::core::RuntimeType for ResourceMapMapViewIterator {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Resources.Core.ResourceMapMapViewIterator;pinterface({6a79e863-4300-459a-9966-cbb660963ee1};pinterface({02b51929-c1c4-4a7e-8940-0312b5c18500};string;rc(Windows.ApplicationModel.Resources.Core.ResourceMap;{72284824-db8c-42f8-b08c-53ff357dad82}))))");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2191,11 +2196,6 @@ impl ResourceQualifier {
         }
     }
 }
-impl ::core::clone::Clone for ResourceQualifier {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ResourceQualifier {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2209,7 +2209,6 @@ impl ::core::fmt::Debug for ResourceQualifier {
 }
 unsafe impl ::windows::core::RuntimeType for ResourceQualifier {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Resources.Core.ResourceQualifier;{785da5b2-4afd-4376-a888-c5f9a6b7a05c})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2313,12 +2312,6 @@ impl ResourceQualifierMapView {
     }
 }
 #[cfg(feature = "Foundation_Collections")]
-impl ::core::clone::Clone for ResourceQualifierMapView {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Foundation_Collections")]
 impl ::core::cmp::PartialEq for ResourceQualifierMapView {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2335,7 +2328,6 @@ impl ::core::fmt::Debug for ResourceQualifierMapView {
 #[cfg(feature = "Foundation_Collections")]
 unsafe impl ::windows::core::RuntimeType for ResourceQualifierMapView {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Resources.Core.ResourceQualifierMapView;pinterface({e480ce40-a338-4ada-adcf-272272e48cb9};string;string))");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2558,12 +2550,6 @@ impl ResourceQualifierObservableMap {
     }
 }
 #[cfg(feature = "Foundation_Collections")]
-impl ::core::clone::Clone for ResourceQualifierObservableMap {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Foundation_Collections")]
 impl ::core::cmp::PartialEq for ResourceQualifierObservableMap {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2580,7 +2566,6 @@ impl ::core::fmt::Debug for ResourceQualifierObservableMap {
 #[cfg(feature = "Foundation_Collections")]
 unsafe impl ::windows::core::RuntimeType for ResourceQualifierObservableMap {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Resources.Core.ResourceQualifierObservableMap;pinterface({65df2bf5-bf39-41b5-aebc-5a9d865e472b};string;string))");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2761,6 +2746,7 @@ impl ::core::default::Default for ResourceQualifierPersistence {
 }
 unsafe impl ::windows::core::Abi for ResourceQualifierPersistence {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ResourceQualifierPersistence {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2769,7 +2755,6 @@ impl ::core::fmt::Debug for ResourceQualifierPersistence {
 }
 unsafe impl ::windows::core::RuntimeType for ResourceQualifierPersistence {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.Resources.Core.ResourceQualifierPersistence;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2827,12 +2812,6 @@ impl ResourceQualifierVectorView {
     }
 }
 #[cfg(feature = "Foundation_Collections")]
-impl ::core::clone::Clone for ResourceQualifierVectorView {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Foundation_Collections")]
 impl ::core::cmp::PartialEq for ResourceQualifierVectorView {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2849,7 +2828,6 @@ impl ::core::fmt::Debug for ResourceQualifierVectorView {
 #[cfg(feature = "Foundation_Collections")]
 unsafe impl ::windows::core::RuntimeType for ResourceQualifierVectorView {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Resources.Core.ResourceQualifierVectorView;pinterface({bbe1fa4c-b0e3-4583-baef-1f1b2e483e56};rc(Windows.ApplicationModel.Resources.Core.ResourceQualifier;{785da5b2-4afd-4376-a888-c5f9a6b7a05c})))");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

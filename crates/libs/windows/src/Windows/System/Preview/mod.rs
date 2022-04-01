@@ -30,6 +30,7 @@ impl ::core::default::Default for HingeState {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Abi for HingeState {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "deprecated")]
 impl ::core::fmt::Debug for HingeState {
@@ -40,7 +41,6 @@ impl ::core::fmt::Debug for HingeState {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for HingeState {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.System.Preview.HingeState;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -49,6 +49,12 @@ unsafe impl ::windows::core::RuntimeType for HingeState {
 #[cfg(feature = "deprecated")]
 #[repr(transparent)]
 pub struct ITwoPanelHingedDevicePosturePreview(::windows::core::IUnknown);
+#[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for ITwoPanelHingedDevicePosturePreview {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for ITwoPanelHingedDevicePosturePreview {
     type Vtable = ITwoPanelHingedDevicePosturePreview_Vtbl;
@@ -76,6 +82,12 @@ pub struct ITwoPanelHingedDevicePosturePreview_Vtbl {
 #[cfg(feature = "deprecated")]
 #[repr(transparent)]
 pub struct ITwoPanelHingedDevicePosturePreviewReading(::windows::core::IUnknown);
+#[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for ITwoPanelHingedDevicePosturePreviewReading {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for ITwoPanelHingedDevicePosturePreviewReading {
     type Vtable = ITwoPanelHingedDevicePosturePreviewReading_Vtbl;
@@ -116,6 +128,12 @@ pub struct ITwoPanelHingedDevicePosturePreviewReading_Vtbl {
 #[repr(transparent)]
 pub struct ITwoPanelHingedDevicePosturePreviewReadingChangedEventArgs(::windows::core::IUnknown);
 #[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for ITwoPanelHingedDevicePosturePreviewReadingChangedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for ITwoPanelHingedDevicePosturePreviewReadingChangedEventArgs {
     type Vtable = ITwoPanelHingedDevicePosturePreviewReadingChangedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x2d2d1bc6_02ce_474a_a556_a75b1cf93a03);
@@ -134,6 +152,12 @@ pub struct ITwoPanelHingedDevicePosturePreviewReadingChangedEventArgs_Vtbl {
 #[cfg(feature = "deprecated")]
 #[repr(transparent)]
 pub struct ITwoPanelHingedDevicePosturePreviewStatics(::windows::core::IUnknown);
+#[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for ITwoPanelHingedDevicePosturePreviewStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for ITwoPanelHingedDevicePosturePreviewStatics {
     type Vtable = ITwoPanelHingedDevicePosturePreviewStatics_Vtbl;
@@ -195,12 +219,6 @@ impl TwoPanelHingedDevicePosturePreview {
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for TwoPanelHingedDevicePosturePreview {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for TwoPanelHingedDevicePosturePreview {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -217,7 +235,6 @@ impl ::core::fmt::Debug for TwoPanelHingedDevicePosturePreview {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for TwoPanelHingedDevicePosturePreview {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.System.Preview.TwoPanelHingedDevicePosturePreview;{72245c31-4b39-42a6-8e73-7235ade16853})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -345,12 +362,6 @@ impl TwoPanelHingedDevicePosturePreviewReading {
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for TwoPanelHingedDevicePosturePreviewReading {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for TwoPanelHingedDevicePosturePreviewReading {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -367,7 +378,6 @@ impl ::core::fmt::Debug for TwoPanelHingedDevicePosturePreviewReading {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for TwoPanelHingedDevicePosturePreviewReading {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.System.Preview.TwoPanelHingedDevicePosturePreviewReading;{a0251452-4ad6-4b38-8426-c59a15493a7d})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -450,12 +460,6 @@ impl TwoPanelHingedDevicePosturePreviewReadingChangedEventArgs {
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for TwoPanelHingedDevicePosturePreviewReadingChangedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for TwoPanelHingedDevicePosturePreviewReadingChangedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -472,7 +476,6 @@ impl ::core::fmt::Debug for TwoPanelHingedDevicePosturePreviewReadingChangedEven
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for TwoPanelHingedDevicePosturePreviewReadingChangedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.System.Preview.TwoPanelHingedDevicePosturePreviewReadingChangedEventArgs;{2d2d1bc6-02ce-474a-a556-a75b1cf93a03})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

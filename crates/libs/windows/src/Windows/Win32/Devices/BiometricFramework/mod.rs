@@ -405,6 +405,7 @@ impl ::core::clone::Clone for WINBIO_ACCOUNT_POLICY {
 }
 unsafe impl ::windows::core::Abi for WINBIO_ACCOUNT_POLICY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINBIO_ACCOUNT_POLICY {
     fn eq(&self, other: &Self) -> bool {
@@ -436,6 +437,7 @@ impl ::core::fmt::Debug for WINBIO_ADAPTER_INTERFACE_VERSION {
 }
 unsafe impl ::windows::core::Abi for WINBIO_ADAPTER_INTERFACE_VERSION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINBIO_ADAPTER_INTERFACE_VERSION {
     fn eq(&self, other: &Self) -> bool {
@@ -467,6 +469,7 @@ impl ::core::fmt::Debug for WINBIO_ANTI_SPOOF_POLICY {
 }
 unsafe impl ::windows::core::Abi for WINBIO_ANTI_SPOOF_POLICY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINBIO_ANTI_SPOOF_POLICY {
     fn eq(&self, other: &Self) -> bool {
@@ -502,6 +505,7 @@ impl ::core::default::Default for WINBIO_ANTI_SPOOF_POLICY_ACTION {
 }
 unsafe impl ::windows::core::Abi for WINBIO_ANTI_SPOOF_POLICY_ACTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WINBIO_ANTI_SPOOF_POLICY_ACTION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -533,6 +537,7 @@ impl ::core::default::Default for WINBIO_ASYNC_NOTIFICATION_METHOD {
 }
 unsafe impl ::windows::core::Abi for WINBIO_ASYNC_NOTIFICATION_METHOD {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WINBIO_ASYNC_NOTIFICATION_METHOD {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -563,6 +568,7 @@ impl ::core::clone::Clone for WINBIO_ASYNC_RESULT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WINBIO_ASYNC_RESULT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WINBIO_ASYNC_RESULT {
@@ -615,6 +621,7 @@ impl ::core::clone::Clone for WINBIO_ASYNC_RESULT_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WINBIO_ASYNC_RESULT_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WINBIO_ASYNC_RESULT_0 {
@@ -655,6 +662,7 @@ impl ::core::fmt::Debug for WINBIO_ASYNC_RESULT_0_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WINBIO_ASYNC_RESULT_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WINBIO_ASYNC_RESULT_0_0 {
@@ -700,6 +708,7 @@ impl ::core::fmt::Debug for WINBIO_ASYNC_RESULT_0_1 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WINBIO_ASYNC_RESULT_0_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WINBIO_ASYNC_RESULT_0_1 {
@@ -733,6 +742,7 @@ impl ::core::clone::Clone for WINBIO_ASYNC_RESULT_0_2 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WINBIO_ASYNC_RESULT_0_2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WINBIO_ASYNC_RESULT_0_2 {
@@ -771,6 +781,7 @@ impl ::core::fmt::Debug for WINBIO_ASYNC_RESULT_0_3 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WINBIO_ASYNC_RESULT_0_3 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WINBIO_ASYNC_RESULT_0_3 {
@@ -809,6 +820,7 @@ impl ::core::fmt::Debug for WINBIO_ASYNC_RESULT_0_4 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WINBIO_ASYNC_RESULT_0_4 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WINBIO_ASYNC_RESULT_0_4 {
@@ -842,6 +854,7 @@ impl ::core::clone::Clone for WINBIO_ASYNC_RESULT_0_5 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WINBIO_ASYNC_RESULT_0_5 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WINBIO_ASYNC_RESULT_0_5 {
@@ -880,6 +893,7 @@ impl ::core::fmt::Debug for WINBIO_ASYNC_RESULT_0_6 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WINBIO_ASYNC_RESULT_0_6 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WINBIO_ASYNC_RESULT_0_6 {
@@ -919,6 +933,7 @@ impl ::core::fmt::Debug for WINBIO_ASYNC_RESULT_0_7 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WINBIO_ASYNC_RESULT_0_7 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WINBIO_ASYNC_RESULT_0_7 {
@@ -958,6 +973,7 @@ impl ::core::fmt::Debug for WINBIO_ASYNC_RESULT_0_8 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WINBIO_ASYNC_RESULT_0_8 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WINBIO_ASYNC_RESULT_0_8 {
@@ -992,6 +1008,7 @@ impl ::core::clone::Clone for WINBIO_ASYNC_RESULT_0_9 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WINBIO_ASYNC_RESULT_0_9 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WINBIO_ASYNC_RESULT_0_9 {
@@ -1031,6 +1048,7 @@ impl ::core::fmt::Debug for WINBIO_ASYNC_RESULT_0_10 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WINBIO_ASYNC_RESULT_0_10 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WINBIO_ASYNC_RESULT_0_10 {
@@ -1063,6 +1081,7 @@ impl ::core::clone::Clone for WINBIO_ASYNC_RESULT_0_11 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WINBIO_ASYNC_RESULT_0_11 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WINBIO_ASYNC_RESULT_0_11 {
@@ -1100,6 +1119,7 @@ impl ::core::clone::Clone for WINBIO_ASYNC_RESULT_0_12 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WINBIO_ASYNC_RESULT_0_12 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WINBIO_ASYNC_RESULT_0_12 {
@@ -1133,6 +1153,7 @@ impl ::core::clone::Clone for WINBIO_ASYNC_RESULT_0_13 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WINBIO_ASYNC_RESULT_0_13 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WINBIO_ASYNC_RESULT_0_13 {
@@ -1168,6 +1189,7 @@ impl ::core::clone::Clone for WINBIO_ASYNC_RESULT_0_14 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WINBIO_ASYNC_RESULT_0_14 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WINBIO_ASYNC_RESULT_0_14 {
@@ -1202,6 +1224,7 @@ impl ::core::clone::Clone for WINBIO_ASYNC_RESULT_0_15 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WINBIO_ASYNC_RESULT_0_15 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WINBIO_ASYNC_RESULT_0_15 {
@@ -1242,6 +1265,7 @@ impl ::core::fmt::Debug for WINBIO_ASYNC_RESULT_0_16 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WINBIO_ASYNC_RESULT_0_16 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WINBIO_ASYNC_RESULT_0_16 {
@@ -1280,6 +1304,7 @@ impl ::core::fmt::Debug for WINBIO_ASYNC_RESULT_0_17 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WINBIO_ASYNC_RESULT_0_17 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WINBIO_ASYNC_RESULT_0_17 {
@@ -1317,6 +1342,7 @@ impl ::core::clone::Clone for WINBIO_ASYNC_RESULT_0_18 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WINBIO_ASYNC_RESULT_0_18 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WINBIO_ASYNC_RESULT_0_18 {
@@ -1357,6 +1383,7 @@ impl ::core::fmt::Debug for WINBIO_ASYNC_RESULT_0_19 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WINBIO_ASYNC_RESULT_0_19 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WINBIO_ASYNC_RESULT_0_19 {
@@ -1396,6 +1423,7 @@ impl ::core::fmt::Debug for WINBIO_ASYNC_RESULT_0_20 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WINBIO_ASYNC_RESULT_0_20 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WINBIO_ASYNC_RESULT_0_20 {
@@ -1459,6 +1487,7 @@ impl ::core::fmt::Debug for WINBIO_BDB_ANSI_381_HEADER {
 }
 unsafe impl ::windows::core::Abi for WINBIO_BDB_ANSI_381_HEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINBIO_BDB_ANSI_381_HEADER {
     fn eq(&self, other: &Self) -> bool {
@@ -1497,6 +1526,7 @@ impl ::core::fmt::Debug for WINBIO_BDB_ANSI_381_RECORD {
 }
 unsafe impl ::windows::core::Abi for WINBIO_BDB_ANSI_381_RECORD {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINBIO_BDB_ANSI_381_RECORD {
     fn eq(&self, other: &Self) -> bool {
@@ -1530,6 +1560,7 @@ impl ::core::fmt::Debug for WINBIO_BIR {
 }
 unsafe impl ::windows::core::Abi for WINBIO_BIR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINBIO_BIR {
     fn eq(&self, other: &Self) -> bool {
@@ -1565,6 +1596,7 @@ impl ::core::fmt::Debug for WINBIO_BIR_DATA {
 }
 unsafe impl ::windows::core::Abi for WINBIO_BIR_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINBIO_BIR_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -1619,6 +1651,7 @@ impl ::core::fmt::Debug for WINBIO_BIR_HEADER {
 }
 unsafe impl ::windows::core::Abi for WINBIO_BIR_HEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINBIO_BIR_HEADER {
     fn eq(&self, other: &Self) -> bool {
@@ -1650,6 +1683,7 @@ impl ::core::fmt::Debug for WINBIO_BIR_HEADER_0 {
 }
 unsafe impl ::windows::core::Abi for WINBIO_BIR_HEADER_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINBIO_BIR_HEADER_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -1681,6 +1715,7 @@ impl ::core::fmt::Debug for WINBIO_BLANK_PAYLOAD {
 }
 unsafe impl ::windows::core::Abi for WINBIO_BLANK_PAYLOAD {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINBIO_BLANK_PAYLOAD {
     fn eq(&self, other: &Self) -> bool {
@@ -1715,6 +1750,7 @@ impl ::core::fmt::Debug for WINBIO_BSP_SCHEMA {
 }
 unsafe impl ::windows::core::Abi for WINBIO_BSP_SCHEMA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINBIO_BSP_SCHEMA {
     fn eq(&self, other: &Self) -> bool {
@@ -1747,6 +1783,7 @@ impl ::core::fmt::Debug for WINBIO_CALIBRATION_INFO {
 }
 unsafe impl ::windows::core::Abi for WINBIO_CALIBRATION_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINBIO_CALIBRATION_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -1781,6 +1818,7 @@ impl ::core::fmt::Debug for WINBIO_CAPTURE_DATA {
 }
 unsafe impl ::windows::core::Abi for WINBIO_CAPTURE_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINBIO_CAPTURE_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -1815,6 +1853,7 @@ impl ::core::fmt::Debug for WINBIO_CAPTURE_PARAMETERS {
 }
 unsafe impl ::windows::core::Abi for WINBIO_CAPTURE_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINBIO_CAPTURE_PARAMETERS {
     fn eq(&self, other: &Self) -> bool {
@@ -1850,6 +1889,7 @@ impl ::core::default::Default for WINBIO_COMPONENT {
 }
 unsafe impl ::windows::core::Abi for WINBIO_COMPONENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WINBIO_COMPONENT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1879,6 +1919,7 @@ impl ::core::default::Default for WINBIO_CREDENTIAL_FORMAT {
 }
 unsafe impl ::windows::core::Abi for WINBIO_CREDENTIAL_FORMAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WINBIO_CREDENTIAL_FORMAT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1906,6 +1947,7 @@ impl ::core::default::Default for WINBIO_CREDENTIAL_STATE {
 }
 unsafe impl ::windows::core::Abi for WINBIO_CREDENTIAL_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WINBIO_CREDENTIAL_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1933,6 +1975,7 @@ impl ::core::default::Default for WINBIO_CREDENTIAL_TYPE {
 }
 unsafe impl ::windows::core::Abi for WINBIO_CREDENTIAL_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WINBIO_CREDENTIAL_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1958,6 +2001,7 @@ impl ::core::fmt::Debug for WINBIO_DATA {
 }
 unsafe impl ::windows::core::Abi for WINBIO_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINBIO_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -1991,6 +2035,7 @@ impl ::core::fmt::Debug for WINBIO_DIAGNOSTICS {
 }
 unsafe impl ::windows::core::Abi for WINBIO_DIAGNOSTICS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINBIO_DIAGNOSTICS {
     fn eq(&self, other: &Self) -> bool {
@@ -2026,6 +2071,7 @@ impl ::core::fmt::Debug for WINBIO_ENCRYPTED_CAPTURE_PARAMS {
 }
 unsafe impl ::windows::core::Abi for WINBIO_ENCRYPTED_CAPTURE_PARAMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINBIO_ENCRYPTED_CAPTURE_PARAMS {
     fn eq(&self, other: &Self) -> bool {
@@ -2151,6 +2197,7 @@ impl ::core::fmt::Debug for WINBIO_ENGINE_INTERFACE {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_IO"))]
 unsafe impl ::windows::core::Abi for WINBIO_ENGINE_INTERFACE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_IO"))]
 impl ::core::cmp::PartialEq for WINBIO_ENGINE_INTERFACE {
@@ -2180,6 +2227,7 @@ impl ::core::clone::Clone for WINBIO_EVENT {
 }
 unsafe impl ::windows::core::Abi for WINBIO_EVENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINBIO_EVENT {
     fn eq(&self, other: &Self) -> bool {
@@ -2207,6 +2255,7 @@ impl ::core::clone::Clone for WINBIO_EVENT_0 {
 }
 unsafe impl ::windows::core::Abi for WINBIO_EVENT_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINBIO_EVENT_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -2237,6 +2286,7 @@ impl ::core::fmt::Debug for WINBIO_EVENT_0_0 {
 }
 unsafe impl ::windows::core::Abi for WINBIO_EVENT_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINBIO_EVENT_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -2265,6 +2315,7 @@ impl ::core::clone::Clone for WINBIO_EVENT_0_1 {
 }
 unsafe impl ::windows::core::Abi for WINBIO_EVENT_0_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINBIO_EVENT_0_1 {
     fn eq(&self, other: &Self) -> bool {
@@ -2296,6 +2347,7 @@ impl ::core::fmt::Debug for WINBIO_EVENT_0_2 {
 }
 unsafe impl ::windows::core::Abi for WINBIO_EVENT_0_2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINBIO_EVENT_0_2 {
     fn eq(&self, other: &Self) -> bool {
@@ -2323,6 +2375,7 @@ impl ::core::clone::Clone for WINBIO_EXTENDED_ENGINE_INFO {
 }
 unsafe impl ::windows::core::Abi for WINBIO_EXTENDED_ENGINE_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINBIO_EXTENDED_ENGINE_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -2352,6 +2405,7 @@ impl ::core::clone::Clone for WINBIO_EXTENDED_ENGINE_INFO_0 {
 }
 unsafe impl ::windows::core::Abi for WINBIO_EXTENDED_ENGINE_INFO_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINBIO_EXTENDED_ENGINE_INFO_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -2383,6 +2437,7 @@ impl ::core::fmt::Debug for WINBIO_EXTENDED_ENGINE_INFO_0_0 {
 }
 unsafe impl ::windows::core::Abi for WINBIO_EXTENDED_ENGINE_INFO_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINBIO_EXTENDED_ENGINE_INFO_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -2413,6 +2468,7 @@ impl ::core::fmt::Debug for WINBIO_EXTENDED_ENGINE_INFO_0_0_0 {
 }
 unsafe impl ::windows::core::Abi for WINBIO_EXTENDED_ENGINE_INFO_0_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINBIO_EXTENDED_ENGINE_INFO_0_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -2444,6 +2500,7 @@ impl ::core::fmt::Debug for WINBIO_EXTENDED_ENGINE_INFO_0_1 {
 }
 unsafe impl ::windows::core::Abi for WINBIO_EXTENDED_ENGINE_INFO_0_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINBIO_EXTENDED_ENGINE_INFO_0_1 {
     fn eq(&self, other: &Self) -> bool {
@@ -2479,6 +2536,7 @@ impl ::core::fmt::Debug for WINBIO_EXTENDED_ENGINE_INFO_0_1_0 {
 }
 unsafe impl ::windows::core::Abi for WINBIO_EXTENDED_ENGINE_INFO_0_1_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINBIO_EXTENDED_ENGINE_INFO_0_1_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -2510,6 +2568,7 @@ impl ::core::fmt::Debug for WINBIO_EXTENDED_ENGINE_INFO_0_2 {
 }
 unsafe impl ::windows::core::Abi for WINBIO_EXTENDED_ENGINE_INFO_0_2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINBIO_EXTENDED_ENGINE_INFO_0_2 {
     fn eq(&self, other: &Self) -> bool {
@@ -2540,6 +2599,7 @@ impl ::core::fmt::Debug for WINBIO_EXTENDED_ENGINE_INFO_0_2_0 {
 }
 unsafe impl ::windows::core::Abi for WINBIO_EXTENDED_ENGINE_INFO_0_2_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINBIO_EXTENDED_ENGINE_INFO_0_2_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -2571,6 +2631,7 @@ impl ::core::fmt::Debug for WINBIO_EXTENDED_ENGINE_INFO_0_3 {
 }
 unsafe impl ::windows::core::Abi for WINBIO_EXTENDED_ENGINE_INFO_0_3 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINBIO_EXTENDED_ENGINE_INFO_0_3 {
     fn eq(&self, other: &Self) -> bool {
@@ -2601,6 +2662,7 @@ impl ::core::fmt::Debug for WINBIO_EXTENDED_ENGINE_INFO_0_3_0 {
 }
 unsafe impl ::windows::core::Abi for WINBIO_EXTENDED_ENGINE_INFO_0_3_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINBIO_EXTENDED_ENGINE_INFO_0_3_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -2632,6 +2694,7 @@ impl ::core::fmt::Debug for WINBIO_EXTENDED_ENROLLMENT_PARAMETERS {
 }
 unsafe impl ::windows::core::Abi for WINBIO_EXTENDED_ENROLLMENT_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINBIO_EXTENDED_ENROLLMENT_PARAMETERS {
     fn eq(&self, other: &Self) -> bool {
@@ -2666,6 +2729,7 @@ impl ::core::clone::Clone for WINBIO_EXTENDED_ENROLLMENT_STATUS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WINBIO_EXTENDED_ENROLLMENT_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WINBIO_EXTENDED_ENROLLMENT_STATUS {
@@ -2702,6 +2766,7 @@ impl ::core::clone::Clone for WINBIO_EXTENDED_ENROLLMENT_STATUS_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WINBIO_EXTENDED_ENROLLMENT_STATUS_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WINBIO_EXTENDED_ENROLLMENT_STATUS_0 {
@@ -2742,6 +2807,7 @@ impl ::core::fmt::Debug for WINBIO_EXTENDED_ENROLLMENT_STATUS_0_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WINBIO_EXTENDED_ENROLLMENT_STATUS_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WINBIO_EXTENDED_ENROLLMENT_STATUS_0_0 {
@@ -2781,6 +2847,7 @@ impl ::core::fmt::Debug for WINBIO_EXTENDED_ENROLLMENT_STATUS_0_0_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WINBIO_EXTENDED_ENROLLMENT_STATUS_0_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WINBIO_EXTENDED_ENROLLMENT_STATUS_0_0_0 {
@@ -2824,6 +2891,7 @@ impl ::core::fmt::Debug for WINBIO_EXTENDED_ENROLLMENT_STATUS_0_1 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WINBIO_EXTENDED_ENROLLMENT_STATUS_0_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WINBIO_EXTENDED_ENROLLMENT_STATUS_0_1 {
@@ -2880,6 +2948,7 @@ impl ::core::fmt::Debug for WINBIO_EXTENDED_ENROLLMENT_STATUS_0_2 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WINBIO_EXTENDED_ENROLLMENT_STATUS_0_2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WINBIO_EXTENDED_ENROLLMENT_STATUS_0_2 {
@@ -2920,6 +2989,7 @@ impl ::core::fmt::Debug for WINBIO_EXTENDED_ENROLLMENT_STATUS_0_2_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WINBIO_EXTENDED_ENROLLMENT_STATUS_0_2_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WINBIO_EXTENDED_ENROLLMENT_STATUS_0_2_0 {
@@ -2958,6 +3028,7 @@ impl ::core::fmt::Debug for WINBIO_EXTENDED_ENROLLMENT_STATUS_0_3 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WINBIO_EXTENDED_ENROLLMENT_STATUS_0_3 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WINBIO_EXTENDED_ENROLLMENT_STATUS_0_3 {
@@ -2992,6 +3063,7 @@ impl ::core::clone::Clone for WINBIO_EXTENDED_SENSOR_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WINBIO_EXTENDED_SENSOR_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WINBIO_EXTENDED_SENSOR_INFO {
@@ -3028,6 +3100,7 @@ impl ::core::clone::Clone for WINBIO_EXTENDED_SENSOR_INFO_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WINBIO_EXTENDED_SENSOR_INFO_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WINBIO_EXTENDED_SENSOR_INFO_0 {
@@ -3069,6 +3142,7 @@ impl ::core::fmt::Debug for WINBIO_EXTENDED_SENSOR_INFO_0_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WINBIO_EXTENDED_SENSOR_INFO_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WINBIO_EXTENDED_SENSOR_INFO_0_0 {
@@ -3109,6 +3183,7 @@ impl ::core::fmt::Debug for WINBIO_EXTENDED_SENSOR_INFO_0_0_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WINBIO_EXTENDED_SENSOR_INFO_0_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WINBIO_EXTENDED_SENSOR_INFO_0_0_0 {
@@ -3147,6 +3222,7 @@ impl ::core::fmt::Debug for WINBIO_EXTENDED_SENSOR_INFO_0_1 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WINBIO_EXTENDED_SENSOR_INFO_0_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WINBIO_EXTENDED_SENSOR_INFO_0_1 {
@@ -3187,6 +3263,7 @@ impl ::core::fmt::Debug for WINBIO_EXTENDED_SENSOR_INFO_0_2 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WINBIO_EXTENDED_SENSOR_INFO_0_2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WINBIO_EXTENDED_SENSOR_INFO_0_2 {
@@ -3225,6 +3302,7 @@ impl ::core::fmt::Debug for WINBIO_EXTENDED_SENSOR_INFO_0_3 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WINBIO_EXTENDED_SENSOR_INFO_0_3 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WINBIO_EXTENDED_SENSOR_INFO_0_3 {
@@ -3255,6 +3333,7 @@ impl ::core::clone::Clone for WINBIO_EXTENDED_STORAGE_INFO {
 }
 unsafe impl ::windows::core::Abi for WINBIO_EXTENDED_STORAGE_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINBIO_EXTENDED_STORAGE_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -3284,6 +3363,7 @@ impl ::core::clone::Clone for WINBIO_EXTENDED_STORAGE_INFO_0 {
 }
 unsafe impl ::windows::core::Abi for WINBIO_EXTENDED_STORAGE_INFO_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINBIO_EXTENDED_STORAGE_INFO_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -3314,6 +3394,7 @@ impl ::core::fmt::Debug for WINBIO_EXTENDED_STORAGE_INFO_0_0 {
 }
 unsafe impl ::windows::core::Abi for WINBIO_EXTENDED_STORAGE_INFO_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINBIO_EXTENDED_STORAGE_INFO_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -3344,6 +3425,7 @@ impl ::core::fmt::Debug for WINBIO_EXTENDED_STORAGE_INFO_0_1 {
 }
 unsafe impl ::windows::core::Abi for WINBIO_EXTENDED_STORAGE_INFO_0_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINBIO_EXTENDED_STORAGE_INFO_0_1 {
     fn eq(&self, other: &Self) -> bool {
@@ -3374,6 +3456,7 @@ impl ::core::fmt::Debug for WINBIO_EXTENDED_STORAGE_INFO_0_2 {
 }
 unsafe impl ::windows::core::Abi for WINBIO_EXTENDED_STORAGE_INFO_0_2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINBIO_EXTENDED_STORAGE_INFO_0_2 {
     fn eq(&self, other: &Self) -> bool {
@@ -3404,6 +3487,7 @@ impl ::core::fmt::Debug for WINBIO_EXTENDED_STORAGE_INFO_0_3 {
 }
 unsafe impl ::windows::core::Abi for WINBIO_EXTENDED_STORAGE_INFO_0_3 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINBIO_EXTENDED_STORAGE_INFO_0_3 {
     fn eq(&self, other: &Self) -> bool {
@@ -3435,6 +3519,7 @@ impl ::core::fmt::Debug for WINBIO_EXTENDED_UNIT_STATUS {
 }
 unsafe impl ::windows::core::Abi for WINBIO_EXTENDED_UNIT_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINBIO_EXTENDED_UNIT_STATUS {
     fn eq(&self, other: &Self) -> bool {
@@ -3639,6 +3724,7 @@ impl ::core::fmt::Debug for WINBIO_FP_BU_STATE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WINBIO_FP_BU_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WINBIO_FP_BU_STATE {
@@ -3773,6 +3859,7 @@ impl ::core::fmt::Debug for WINBIO_FRAMEWORK_INTERFACE {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_IO"))]
 unsafe impl ::windows::core::Abi for WINBIO_FRAMEWORK_INTERFACE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_IO"))]
 impl ::core::cmp::PartialEq for WINBIO_FRAMEWORK_INTERFACE {
@@ -3809,6 +3896,7 @@ impl ::core::fmt::Debug for WINBIO_GESTURE_METADATA {
 }
 unsafe impl ::windows::core::Abi for WINBIO_GESTURE_METADATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINBIO_GESTURE_METADATA {
     fn eq(&self, other: &Self) -> bool {
@@ -3841,6 +3929,7 @@ impl ::core::fmt::Debug for WINBIO_GET_INDICATOR {
 }
 unsafe impl ::windows::core::Abi for WINBIO_GET_INDICATOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINBIO_GET_INDICATOR {
     fn eq(&self, other: &Self) -> bool {
@@ -3867,6 +3956,7 @@ impl ::core::clone::Clone for WINBIO_IDENTITY {
 }
 unsafe impl ::windows::core::Abi for WINBIO_IDENTITY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINBIO_IDENTITY {
     fn eq(&self, other: &Self) -> bool {
@@ -3896,6 +3986,7 @@ impl ::core::clone::Clone for WINBIO_IDENTITY_0 {
 }
 unsafe impl ::windows::core::Abi for WINBIO_IDENTITY_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINBIO_IDENTITY_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -3927,6 +4018,7 @@ impl ::core::fmt::Debug for WINBIO_IDENTITY_0_0 {
 }
 unsafe impl ::windows::core::Abi for WINBIO_IDENTITY_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINBIO_IDENTITY_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -3965,6 +4057,7 @@ impl ::core::fmt::Debug for WINBIO_NOTIFY_WAKE {
 }
 unsafe impl ::windows::core::Abi for WINBIO_NOTIFY_WAKE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINBIO_NOTIFY_WAKE {
     fn eq(&self, other: &Self) -> bool {
@@ -4020,6 +4113,7 @@ impl ::core::fmt::Debug for WINBIO_PIPELINE {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_IO"))]
 unsafe impl ::windows::core::Abi for WINBIO_PIPELINE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_IO"))]
 impl ::core::cmp::PartialEq for WINBIO_PIPELINE {
@@ -4060,6 +4154,7 @@ impl ::core::default::Default for WINBIO_POLICY_SOURCE {
 }
 unsafe impl ::windows::core::Abi for WINBIO_POLICY_SOURCE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WINBIO_POLICY_SOURCE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4087,6 +4182,7 @@ impl ::core::default::Default for WINBIO_POOL {
 }
 unsafe impl ::windows::core::Abi for WINBIO_POOL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WINBIO_POOL {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4118,6 +4214,7 @@ impl ::core::clone::Clone for WINBIO_PRESENCE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WINBIO_PRESENCE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WINBIO_PRESENCE {
@@ -4157,6 +4254,7 @@ impl ::core::fmt::Debug for WINBIO_PRESENCE_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WINBIO_PRESENCE_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WINBIO_PRESENCE_0 {
@@ -4190,6 +4288,7 @@ impl ::core::clone::Clone for WINBIO_PRESENCE_PROPERTIES {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WINBIO_PRESENCE_PROPERTIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WINBIO_PRESENCE_PROPERTIES {
@@ -4230,6 +4329,7 @@ impl ::core::fmt::Debug for WINBIO_PRESENCE_PROPERTIES_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WINBIO_PRESENCE_PROPERTIES_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WINBIO_PRESENCE_PROPERTIES_0 {
@@ -4269,6 +4369,7 @@ impl ::core::fmt::Debug for WINBIO_PRESENCE_PROPERTIES_0_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WINBIO_PRESENCE_PROPERTIES_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WINBIO_PRESENCE_PROPERTIES_0_0 {
@@ -4311,6 +4412,7 @@ impl ::core::fmt::Debug for WINBIO_PRESENCE_PROPERTIES_1 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WINBIO_PRESENCE_PROPERTIES_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WINBIO_PRESENCE_PROPERTIES_1 {
@@ -4346,6 +4448,7 @@ impl ::core::fmt::Debug for WINBIO_PRIVATE_SENSOR_TYPE_INFO {
 }
 unsafe impl ::windows::core::Abi for WINBIO_PRIVATE_SENSOR_TYPE_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINBIO_PRIVATE_SENSOR_TYPE_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -4376,6 +4479,7 @@ impl ::core::clone::Clone for WINBIO_PROTECTION_POLICY {
 }
 unsafe impl ::windows::core::Abi for WINBIO_PROTECTION_POLICY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINBIO_PROTECTION_POLICY {
     fn eq(&self, other: &Self) -> bool {
@@ -4407,6 +4511,7 @@ impl ::core::fmt::Debug for WINBIO_REGISTERED_FORMAT {
 }
 unsafe impl ::windows::core::Abi for WINBIO_REGISTERED_FORMAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINBIO_REGISTERED_FORMAT {
     fn eq(&self, other: &Self) -> bool {
@@ -4458,6 +4563,7 @@ impl ::core::fmt::Debug for WINBIO_SECURE_BUFFER_HEADER_V1 {
 }
 unsafe impl ::windows::core::Abi for WINBIO_SECURE_BUFFER_HEADER_V1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINBIO_SECURE_BUFFER_HEADER_V1 {
     fn eq(&self, other: &Self) -> bool {
@@ -4493,6 +4599,7 @@ impl ::core::fmt::Debug for WINBIO_SECURE_CONNECTION_DATA {
 }
 unsafe impl ::windows::core::Abi for WINBIO_SECURE_CONNECTION_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINBIO_SECURE_CONNECTION_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -4525,6 +4632,7 @@ impl ::core::fmt::Debug for WINBIO_SECURE_CONNECTION_PARAMS {
 }
 unsafe impl ::windows::core::Abi for WINBIO_SECURE_CONNECTION_PARAMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINBIO_SECURE_CONNECTION_PARAMS {
     fn eq(&self, other: &Self) -> bool {
@@ -4579,6 +4687,7 @@ impl ::core::fmt::Debug for WINBIO_SENSOR_ATTRIBUTES {
 }
 unsafe impl ::windows::core::Abi for WINBIO_SENSOR_ATTRIBUTES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINBIO_SENSOR_ATTRIBUTES {
     fn eq(&self, other: &Self) -> bool {
@@ -4684,6 +4793,7 @@ impl ::core::fmt::Debug for WINBIO_SENSOR_INTERFACE {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_IO"))]
 unsafe impl ::windows::core::Abi for WINBIO_SENSOR_INTERFACE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_IO"))]
 impl ::core::cmp::PartialEq for WINBIO_SENSOR_INTERFACE {
@@ -4724,6 +4834,7 @@ impl ::core::default::Default for WINBIO_SETTING_SOURCE {
 }
 unsafe impl ::windows::core::Abi for WINBIO_SETTING_SOURCE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WINBIO_SETTING_SOURCE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4749,6 +4860,7 @@ impl ::core::fmt::Debug for WINBIO_SET_INDICATOR {
 }
 unsafe impl ::windows::core::Abi for WINBIO_SET_INDICATOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINBIO_SET_INDICATOR {
     fn eq(&self, other: &Self) -> bool {
@@ -4852,6 +4964,7 @@ impl ::core::fmt::Debug for WINBIO_STORAGE_INTERFACE {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_IO"))]
 unsafe impl ::windows::core::Abi for WINBIO_STORAGE_INTERFACE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_IO"))]
 impl ::core::cmp::PartialEq for WINBIO_STORAGE_INTERFACE {
@@ -4892,6 +5005,7 @@ impl ::core::fmt::Debug for WINBIO_STORAGE_RECORD {
 }
 unsafe impl ::windows::core::Abi for WINBIO_STORAGE_RECORD {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINBIO_STORAGE_RECORD {
     fn eq(&self, other: &Self) -> bool {
@@ -4927,6 +5041,7 @@ impl ::core::fmt::Debug for WINBIO_STORAGE_SCHEMA {
 }
 unsafe impl ::windows::core::Abi for WINBIO_STORAGE_SCHEMA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINBIO_STORAGE_SCHEMA {
     fn eq(&self, other: &Self) -> bool {
@@ -4960,6 +5075,7 @@ impl ::core::fmt::Debug for WINBIO_SUPPORTED_ALGORITHMS {
 }
 unsafe impl ::windows::core::Abi for WINBIO_SUPPORTED_ALGORITHMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINBIO_SUPPORTED_ALGORITHMS {
     fn eq(&self, other: &Self) -> bool {
@@ -5012,6 +5128,7 @@ impl ::core::fmt::Debug for WINBIO_UNIT_SCHEMA {
 }
 unsafe impl ::windows::core::Abi for WINBIO_UNIT_SCHEMA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINBIO_UNIT_SCHEMA {
     fn eq(&self, other: &Self) -> bool {
@@ -5043,6 +5160,7 @@ impl ::core::fmt::Debug for WINBIO_UPDATE_FIRMWARE {
 }
 unsafe impl ::windows::core::Abi for WINBIO_UPDATE_FIRMWARE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINBIO_UPDATE_FIRMWARE {
     fn eq(&self, other: &Self) -> bool {
@@ -5074,6 +5192,7 @@ impl ::core::fmt::Debug for WINBIO_VERSION {
 }
 unsafe impl ::windows::core::Abi for WINBIO_VERSION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINBIO_VERSION {
     fn eq(&self, other: &Self) -> bool {

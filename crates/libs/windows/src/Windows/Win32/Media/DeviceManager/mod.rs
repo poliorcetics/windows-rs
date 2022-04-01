@@ -7,6 +7,11 @@ pub const EVENT_WMDM_CONTENT_TRANSFER: ::windows::core::GUID = ::windows::core::
 #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
 #[repr(transparent)]
 pub struct IComponentAuthenticate(::windows::core::IUnknown);
+impl ::core::clone::Clone for IComponentAuthenticate {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IComponentAuthenticate {
     #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
     pub unsafe fn SACAuth(&self, dwprotocolid: u32, dwpass: u32, pbdatain: &[u8], ppbdataout: *mut *mut u8, pdwdataoutlen: *mut u32) -> ::windows::core::Result<()> {
@@ -37,11 +42,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IComp
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IComponentAuthenticate {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IComponentAuthenticate {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -67,6 +67,11 @@ pub struct IComponentAuthenticate_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
 #[repr(transparent)]
 pub struct IMDSPDevice(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMDSPDevice {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMDSPDevice {
     #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
     pub unsafe fn GetName(&self, pwszname: &mut [u16]) -> ::windows::core::Result<()> {
@@ -138,11 +143,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMDSP
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMDSPDevice {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMDSPDevice {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -177,6 +177,11 @@ pub struct IMDSPDevice_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
 #[repr(transparent)]
 pub struct IMDSPDevice2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMDSPDevice2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMDSPDevice2 {
     #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
     pub unsafe fn GetName(&self, pwszname: &mut [u16]) -> ::windows::core::Result<()> {
@@ -287,11 +292,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMDSPDevice> for &'a IMDSPDevice2 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMDSPDevice2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMDSPDevice2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -325,6 +325,11 @@ pub struct IMDSPDevice2_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
 #[repr(transparent)]
 pub struct IMDSPDevice3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMDSPDevice3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMDSPDevice3 {
     #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
     pub unsafe fn GetName(&self, pwszname: &mut [u16]) -> ::windows::core::Result<()> {
@@ -481,11 +486,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMDSPDevice2> for &'a IMDSPDevice3 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMDSPDevice3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMDSPDevice3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -523,6 +523,11 @@ pub struct IMDSPDevice3_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
 #[repr(transparent)]
 pub struct IMDSPDeviceControl(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMDSPDeviceControl {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMDSPDeviceControl {
     #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
     pub unsafe fn GetDCStatus(&self) -> ::windows::core::Result<u32> {
@@ -579,11 +584,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMDSP
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMDSPDeviceControl {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMDSPDeviceControl {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -615,6 +615,11 @@ pub struct IMDSPDeviceControl_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
 #[repr(transparent)]
 pub struct IMDSPDirectTransfer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMDSPDirectTransfer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMDSPDirectTransfer {
     #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
     pub unsafe fn TransferToDevice<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param1: ::windows::core::IntoParam<'a, IWMDMOperation>, Param3: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param4: ::windows::core::IntoParam<'a, IWMDMMetaData>, Param5: ::windows::core::IntoParam<'a, IWMDMProgress>>(&self, pwszsourcefilepath: Param0, psourceoperation: Param1, fuflags: u32, pwszdestinationname: Param3, psourcemetadata: Param4, ptransferprogress: Param5) -> ::windows::core::Result<IMDSPStorage> {
@@ -642,11 +647,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMDSP
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMDSPDirectTransfer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMDSPDirectTransfer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -671,6 +671,11 @@ pub struct IMDSPDirectTransfer_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
 #[repr(transparent)]
 pub struct IMDSPEnumDevice(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMDSPEnumDevice {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMDSPEnumDevice {
     #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
     pub unsafe fn Next(&self, celt: u32, ppdevice: *mut ::core::option::Option<IMDSPDevice>, pceltfetched: *mut u32) -> ::windows::core::Result<()> {
@@ -711,11 +716,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMDSP
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMDSPEnumDevice {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMDSPEnumDevice {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -743,6 +743,11 @@ pub struct IMDSPEnumDevice_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
 #[repr(transparent)]
 pub struct IMDSPEnumStorage(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMDSPEnumStorage {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMDSPEnumStorage {
     #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
     pub unsafe fn Next(&self, celt: u32, ppstorage: *mut ::core::option::Option<IMDSPStorage>, pceltfetched: *mut u32) -> ::windows::core::Result<()> {
@@ -783,11 +788,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMDSP
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMDSPEnumStorage {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMDSPEnumStorage {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -815,6 +815,11 @@ pub struct IMDSPEnumStorage_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
 #[repr(transparent)]
 pub struct IMDSPObject(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMDSPObject {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMDSPObject {
     #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
     pub unsafe fn Open(&self, fumode: u32) -> ::windows::core::Result<()> {
@@ -869,11 +874,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMDSP
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMDSPObject {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMDSPObject {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -905,6 +905,11 @@ pub struct IMDSPObject_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
 #[repr(transparent)]
 pub struct IMDSPObject2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMDSPObject2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMDSPObject2 {
     #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
     pub unsafe fn Open(&self, fumode: u32) -> ::windows::core::Result<()> {
@@ -987,11 +992,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMDSPObject> for &'a IMDSPObject2 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMDSPObject2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMDSPObject2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1017,6 +1017,11 @@ pub struct IMDSPObject2_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
 #[repr(transparent)]
 pub struct IMDSPObjectInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMDSPObjectInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMDSPObjectInfo {
     #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
     pub unsafe fn GetPlayLength(&self) -> ::windows::core::Result<u32> {
@@ -1072,11 +1077,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMDSP
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMDSPObjectInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMDSPObjectInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1107,6 +1107,11 @@ pub struct IMDSPObjectInfo_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
 #[repr(transparent)]
 pub struct IMDSPRevoked(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMDSPRevoked {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMDSPRevoked {
     #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
     pub unsafe fn GetRevocationURL(&self, ppwszrevocationurl: *mut ::windows::core::PWSTR, pdwbufferlen: *mut u32) -> ::windows::core::Result<()> {
@@ -1133,11 +1138,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMDSP
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMDSPRevoked {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMDSPRevoked {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1162,6 +1162,11 @@ pub struct IMDSPRevoked_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
 #[repr(transparent)]
 pub struct IMDSPStorage(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMDSPStorage {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMDSPStorage {
     #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
     pub unsafe fn SetAttributes(&self, dwattributes: u32, pformat: *const _WAVEFORMATEX) -> ::windows::core::Result<()> {
@@ -1228,11 +1233,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMDSP
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMDSPStorage {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMDSPStorage {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1266,6 +1266,11 @@ pub struct IMDSPStorage_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
 #[repr(transparent)]
 pub struct IMDSPStorage2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMDSPStorage2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMDSPStorage2 {
     #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
     pub unsafe fn SetAttributes(&self, dwattributes: u32, pformat: *const _WAVEFORMATEX) -> ::windows::core::Result<()> {
@@ -1373,11 +1378,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMDSPStorage> for &'a IMDSPStorage2 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMDSPStorage2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMDSPStorage2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1414,6 +1414,11 @@ pub struct IMDSPStorage2_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
 #[repr(transparent)]
 pub struct IMDSPStorage3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMDSPStorage3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMDSPStorage3 {
     #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
     pub unsafe fn SetAttributes(&self, dwattributes: u32, pformat: *const _WAVEFORMATEX) -> ::windows::core::Result<()> {
@@ -1549,11 +1554,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMDSPStorage2> for &'a IMDSPStorage3 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMDSPStorage3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMDSPStorage3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1579,6 +1579,11 @@ pub struct IMDSPStorage3_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
 #[repr(transparent)]
 pub struct IMDSPStorage4(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMDSPStorage4 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMDSPStorage4 {
     #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
     pub unsafe fn SetAttributes(&self, dwattributes: u32, pformat: *const _WAVEFORMATEX) -> ::windows::core::Result<()> {
@@ -1761,11 +1766,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMDSPStorage3> for &'a IMDSPStorage4 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMDSPStorage4 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMDSPStorage4 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1795,6 +1795,11 @@ pub struct IMDSPStorage4_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
 #[repr(transparent)]
 pub struct IMDSPStorageGlobals(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMDSPStorageGlobals {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMDSPStorageGlobals {
     #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
     pub unsafe fn GetCapabilities(&self) -> ::windows::core::Result<u32> {
@@ -1857,11 +1862,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMDSP
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMDSPStorageGlobals {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMDSPStorageGlobals {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1894,6 +1894,11 @@ pub struct IMDSPStorageGlobals_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
 #[repr(transparent)]
 pub struct IMDServiceProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMDServiceProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMDServiceProvider {
     #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
     pub unsafe fn GetDeviceCount(&self) -> ::windows::core::Result<u32> {
@@ -1926,11 +1931,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMDSe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMDServiceProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMDServiceProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1956,6 +1956,11 @@ pub struct IMDServiceProvider_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
 #[repr(transparent)]
 pub struct IMDServiceProvider2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMDServiceProvider2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMDServiceProvider2 {
     #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
     pub unsafe fn GetDeviceCount(&self) -> ::windows::core::Result<u32> {
@@ -2012,11 +2017,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMDServiceProvider> for &'a IMDServicePr
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMDServiceProvider2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMDServiceProvider2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2041,6 +2041,11 @@ pub struct IMDServiceProvider2_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
 #[repr(transparent)]
 pub struct IMDServiceProvider3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMDServiceProvider3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMDServiceProvider3 {
     #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
     pub unsafe fn GetDeviceCount(&self) -> ::windows::core::Result<u32> {
@@ -2121,11 +2126,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMDServiceProvider2> for &'a IMDServiceP
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMDServiceProvider3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMDServiceProvider3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2152,6 +2152,11 @@ pub const IOCTL_MTP_CUSTOM_COMMAND: u32 = 827348045u32;
 #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
 #[repr(transparent)]
 pub struct ISCPSecureAuthenticate(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISCPSecureAuthenticate {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISCPSecureAuthenticate {
     #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
     pub unsafe fn GetSecureQuery(&self) -> ::windows::core::Result<ISCPSecureQuery> {
@@ -2179,11 +2184,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISCPS
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISCPSecureAuthenticate {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISCPSecureAuthenticate {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2208,6 +2208,11 @@ pub struct ISCPSecureAuthenticate_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
 #[repr(transparent)]
 pub struct ISCPSecureAuthenticate2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISCPSecureAuthenticate2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISCPSecureAuthenticate2 {
     #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
     pub unsafe fn GetSecureQuery(&self) -> ::windows::core::Result<ISCPSecureQuery> {
@@ -2260,11 +2265,6 @@ impl<'a> ::windows::core::IntoParam<'a, ISCPSecureAuthenticate> for &'a ISCPSecu
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISCPSecureAuthenticate2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISCPSecureAuthenticate2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2289,6 +2289,11 @@ pub struct ISCPSecureAuthenticate2_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
 #[repr(transparent)]
 pub struct ISCPSecureExchange(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISCPSecureExchange {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISCPSecureExchange {
     #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
     pub unsafe fn TransferContainerData(&self, pdata: &[u8], pfureadyflags: *mut u32, abmac: *mut u8) -> ::windows::core::Result<()> {
@@ -2323,11 +2328,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISCPS
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISCPSecureExchange {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISCPSecureExchange {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2354,6 +2354,11 @@ pub struct ISCPSecureExchange_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
 #[repr(transparent)]
 pub struct ISCPSecureExchange2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISCPSecureExchange2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISCPSecureExchange2 {
     #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
     pub unsafe fn TransferContainerData(&self, pdata: &[u8], pfureadyflags: *mut u32, abmac: *mut u8) -> ::windows::core::Result<()> {
@@ -2412,11 +2417,6 @@ impl<'a> ::windows::core::IntoParam<'a, ISCPSecureExchange> for &'a ISCPSecureEx
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISCPSecureExchange2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISCPSecureExchange2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2441,6 +2441,11 @@ pub struct ISCPSecureExchange2_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
 #[repr(transparent)]
 pub struct ISCPSecureExchange3(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISCPSecureExchange3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISCPSecureExchange3 {
     #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
     pub unsafe fn TransferContainerData(&self, pdata: &[u8], pfureadyflags: *mut u32, abmac: *mut u8) -> ::windows::core::Result<()> {
@@ -2532,11 +2537,6 @@ impl<'a> ::windows::core::IntoParam<'a, ISCPSecureExchange2> for &'a ISCPSecureE
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISCPSecureExchange3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISCPSecureExchange3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2563,6 +2563,11 @@ pub struct ISCPSecureExchange3_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
 #[repr(transparent)]
 pub struct ISCPSecureQuery(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISCPSecureQuery {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISCPSecureQuery {
     #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
     pub unsafe fn GetDataDemands(&self, pfuflags: *mut u32, pdwminrightsdata: *mut u32, pdwminexaminedata: *mut u32, pdwmindecidedata: *mut u32, abmac: *mut u8) -> ::windows::core::Result<()> {
@@ -2601,11 +2606,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISCPS
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISCPSecureQuery {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISCPSecureQuery {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2633,6 +2633,11 @@ pub struct ISCPSecureQuery_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
 #[repr(transparent)]
 pub struct ISCPSecureQuery2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISCPSecureQuery2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISCPSecureQuery2 {
     #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
     pub unsafe fn GetDataDemands(&self, pfuflags: *mut u32, pdwminrightsdata: *mut u32, pdwminexaminedata: *mut u32, pdwmindecidedata: *mut u32, abmac: *mut u8) -> ::windows::core::Result<()> {
@@ -2716,11 +2721,6 @@ impl<'a> ::windows::core::IntoParam<'a, ISCPSecureQuery> for &'a ISCPSecureQuery
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISCPSecureQuery2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISCPSecureQuery2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2745,6 +2745,11 @@ pub struct ISCPSecureQuery2_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
 #[repr(transparent)]
 pub struct ISCPSecureQuery3(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISCPSecureQuery3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISCPSecureQuery3 {
     #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
     pub unsafe fn GetDataDemands(&self, pfuflags: *mut u32, pdwminrightsdata: *mut u32, pdwminexaminedata: *mut u32, pdwmindecidedata: *mut u32, abmac: *mut u8) -> ::windows::core::Result<()> {
@@ -2877,11 +2882,6 @@ impl<'a> ::windows::core::IntoParam<'a, ISCPSecureQuery2> for &'a ISCPSecureQuer
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISCPSecureQuery3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISCPSecureQuery3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2907,6 +2907,11 @@ pub struct ISCPSecureQuery3_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
 #[repr(transparent)]
 pub struct ISCPSession(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISCPSession {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISCPSession {
     #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
     pub unsafe fn BeginSession<'a, Param0: ::windows::core::IntoParam<'a, IMDSPDevice>>(&self, pidevice: Param0, pctx: &[u8]) -> ::windows::core::Result<()> {
@@ -2942,11 +2947,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISCPS
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISCPSession {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISCPSession {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2973,6 +2973,11 @@ pub struct ISCPSession_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
 #[repr(transparent)]
 pub struct IWMDMDevice(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMDMDevice {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMDMDevice {
     #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
     pub unsafe fn GetName(&self, pwszname: &mut [u16]) -> ::windows::core::Result<()> {
@@ -3044,11 +3049,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWMDM
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWMDMDevice {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWMDMDevice {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3083,6 +3083,11 @@ pub struct IWMDMDevice_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
 #[repr(transparent)]
 pub struct IWMDMDevice2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMDMDevice2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMDMDevice2 {
     #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
     pub unsafe fn GetName(&self, pwszname: &mut [u16]) -> ::windows::core::Result<()> {
@@ -3193,11 +3198,6 @@ impl<'a> ::windows::core::IntoParam<'a, IWMDMDevice> for &'a IWMDMDevice2 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWMDMDevice2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWMDMDevice2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3231,6 +3231,11 @@ pub struct IWMDMDevice2_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
 #[repr(transparent)]
 pub struct IWMDMDevice3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMDMDevice3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMDMDevice3 {
     #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
     pub unsafe fn GetName(&self, pwszname: &mut [u16]) -> ::windows::core::Result<()> {
@@ -3387,11 +3392,6 @@ impl<'a> ::windows::core::IntoParam<'a, IWMDMDevice2> for &'a IWMDMDevice3 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWMDMDevice3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWMDMDevice3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3429,6 +3429,11 @@ pub struct IWMDMDevice3_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
 #[repr(transparent)]
 pub struct IWMDMDeviceControl(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMDMDeviceControl {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMDMDeviceControl {
     #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
     pub unsafe fn GetStatus(&self) -> ::windows::core::Result<u32> {
@@ -3485,11 +3490,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWMDM
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWMDMDeviceControl {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWMDMDeviceControl {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3521,6 +3521,11 @@ pub struct IWMDMDeviceControl_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
 #[repr(transparent)]
 pub struct IWMDMDeviceSession(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMDMDeviceSession {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMDMDeviceSession {
     #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
     pub unsafe fn BeginSession(&self, r#type: WMDM_SESSION_TYPE, pctx: &[u8]) -> ::windows::core::Result<()> {
@@ -3551,11 +3556,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWMDM
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWMDMDeviceSession {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWMDMDeviceSession {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3581,6 +3581,11 @@ pub struct IWMDMDeviceSession_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
 #[repr(transparent)]
 pub struct IWMDMEnumDevice(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMDMEnumDevice {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMDMEnumDevice {
     #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
     pub unsafe fn Next(&self, celt: u32, ppdevice: *mut ::core::option::Option<IWMDMDevice>, pceltfetched: *mut u32) -> ::windows::core::Result<()> {
@@ -3621,11 +3626,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWMDM
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWMDMEnumDevice {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWMDMEnumDevice {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3653,6 +3653,11 @@ pub struct IWMDMEnumDevice_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
 #[repr(transparent)]
 pub struct IWMDMEnumStorage(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMDMEnumStorage {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMDMEnumStorage {
     #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
     pub unsafe fn Next(&self, celt: u32, ppstorage: *mut ::core::option::Option<IWMDMStorage>, pceltfetched: *mut u32) -> ::windows::core::Result<()> {
@@ -3693,11 +3698,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWMDM
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWMDMEnumStorage {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWMDMEnumStorage {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3725,6 +3725,11 @@ pub struct IWMDMEnumStorage_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
 #[repr(transparent)]
 pub struct IWMDMLogger(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMDMLogger {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMDMLogger {
     #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -3786,11 +3791,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWMDM
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWMDMLogger {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWMDMLogger {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3829,6 +3829,11 @@ pub struct IWMDMLogger_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
 #[repr(transparent)]
 pub struct IWMDMMetaData(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMDMMetaData {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMDMMetaData {
     #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
     pub unsafe fn AddItem<'a, Param1: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, r#type: WMDM_TAG_DATATYPE, pwsztagname: Param1, pvalue: &[u8]) -> ::windows::core::Result<()> {
@@ -3868,11 +3873,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWMDM
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWMDMMetaData {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWMDMMetaData {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3900,6 +3900,11 @@ pub struct IWMDMMetaData_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
 #[repr(transparent)]
 pub struct IWMDMNotification(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMDMNotification {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMDMNotification {
     #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
     pub unsafe fn WMDMMessage<'a, Param1: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, dwmessagetype: u32, pwszcanonicalname: Param1) -> ::windows::core::Result<()> {
@@ -3926,11 +3931,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWMDM
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWMDMNotification {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWMDMNotification {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3955,6 +3955,11 @@ pub struct IWMDMNotification_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
 #[repr(transparent)]
 pub struct IWMDMObjectInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMDMObjectInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMDMObjectInfo {
     #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
     pub unsafe fn GetPlayLength(&self) -> ::windows::core::Result<u32> {
@@ -4010,11 +4015,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWMDM
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWMDMObjectInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWMDMObjectInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4045,6 +4045,11 @@ pub struct IWMDMObjectInfo_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
 #[repr(transparent)]
 pub struct IWMDMOperation(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMDMOperation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMDMOperation {
     #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
     pub unsafe fn BeginRead(&self) -> ::windows::core::Result<()> {
@@ -4107,11 +4112,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWMDM
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWMDMOperation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWMDMOperation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4145,6 +4145,11 @@ pub struct IWMDMOperation_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
 #[repr(transparent)]
 pub struct IWMDMOperation2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMDMOperation2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMDMOperation2 {
     #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
     pub unsafe fn BeginRead(&self) -> ::windows::core::Result<()> {
@@ -4237,11 +4242,6 @@ impl<'a> ::windows::core::IntoParam<'a, IWMDMOperation> for &'a IWMDMOperation2 
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWMDMOperation2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWMDMOperation2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4273,6 +4273,11 @@ pub struct IWMDMOperation2_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
 #[repr(transparent)]
 pub struct IWMDMOperation3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMDMOperation3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMDMOperation3 {
     #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
     pub unsafe fn BeginRead(&self) -> ::windows::core::Result<()> {
@@ -4359,11 +4364,6 @@ impl<'a> ::windows::core::IntoParam<'a, IWMDMOperation> for &'a IWMDMOperation3 
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWMDMOperation3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWMDMOperation3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4388,6 +4388,11 @@ pub struct IWMDMOperation3_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
 #[repr(transparent)]
 pub struct IWMDMProgress(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMDMProgress {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMDMProgress {
     #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
     pub unsafe fn Begin(&self, dwestimatedticks: u32) -> ::windows::core::Result<()> {
@@ -4422,11 +4427,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWMDM
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWMDMProgress {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWMDMProgress {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4453,6 +4453,11 @@ pub struct IWMDMProgress_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
 #[repr(transparent)]
 pub struct IWMDMProgress2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMDMProgress2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMDMProgress2 {
     #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
     pub unsafe fn Begin(&self, dwestimatedticks: u32) -> ::windows::core::Result<()> {
@@ -4511,11 +4516,6 @@ impl<'a> ::windows::core::IntoParam<'a, IWMDMProgress> for &'a IWMDMProgress2 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWMDMProgress2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWMDMProgress2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4540,6 +4540,11 @@ pub struct IWMDMProgress2_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
 #[repr(transparent)]
 pub struct IWMDMProgress3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMDMProgress3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMDMProgress3 {
     #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
     pub unsafe fn Begin(&self, dwestimatedticks: u32) -> ::windows::core::Result<()> {
@@ -4630,11 +4635,6 @@ impl<'a> ::windows::core::IntoParam<'a, IWMDMProgress2> for &'a IWMDMProgress3 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWMDMProgress3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWMDMProgress3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4661,6 +4661,11 @@ pub struct IWMDMProgress3_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
 #[repr(transparent)]
 pub struct IWMDMRevoked(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMDMRevoked {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMDMRevoked {
     #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
     pub unsafe fn GetRevocationURL(&self, ppwszrevocationurl: *mut ::windows::core::PWSTR, pdwbufferlen: *mut u32, pdwrevokedbitflag: *mut u32) -> ::windows::core::Result<()> {
@@ -4687,11 +4692,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWMDM
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWMDMRevoked {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWMDMRevoked {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4716,6 +4716,11 @@ pub struct IWMDMRevoked_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
 #[repr(transparent)]
 pub struct IWMDMStorage(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMDMStorage {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMDMStorage {
     #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
     pub unsafe fn SetAttributes(&self, dwattributes: u32, pformat: *const _WAVEFORMATEX) -> ::windows::core::Result<()> {
@@ -4777,11 +4782,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWMDM
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWMDMStorage {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWMDMStorage {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4814,6 +4814,11 @@ pub struct IWMDMStorage_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
 #[repr(transparent)]
 pub struct IWMDMStorage2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMDMStorage2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMDMStorage2 {
     #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
     pub unsafe fn SetAttributes(&self, dwattributes: u32, pformat: *const _WAVEFORMATEX) -> ::windows::core::Result<()> {
@@ -4910,11 +4915,6 @@ impl<'a> ::windows::core::IntoParam<'a, IWMDMStorage> for &'a IWMDMStorage2 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWMDMStorage2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWMDMStorage2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4947,6 +4947,11 @@ pub struct IWMDMStorage2_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
 #[repr(transparent)]
 pub struct IWMDMStorage3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMDMStorage3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMDMStorage3 {
     #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
     pub unsafe fn SetAttributes(&self, dwattributes: u32, pformat: *const _WAVEFORMATEX) -> ::windows::core::Result<()> {
@@ -5081,11 +5086,6 @@ impl<'a> ::windows::core::IntoParam<'a, IWMDMStorage2> for &'a IWMDMStorage3 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWMDMStorage3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWMDMStorage3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5113,6 +5113,11 @@ pub struct IWMDMStorage3_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
 #[repr(transparent)]
 pub struct IWMDMStorage4(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMDMStorage4 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMDMStorage4 {
     #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
     pub unsafe fn SetAttributes(&self, dwattributes: u32, pformat: *const _WAVEFORMATEX) -> ::windows::core::Result<()> {
@@ -5294,11 +5299,6 @@ impl<'a> ::windows::core::IntoParam<'a, IWMDMStorage3> for &'a IWMDMStorage4 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWMDMStorage4 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWMDMStorage4 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5328,6 +5328,11 @@ pub struct IWMDMStorage4_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
 #[repr(transparent)]
 pub struct IWMDMStorageControl(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMDMStorageControl {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMDMStorageControl {
     #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
     pub unsafe fn Insert<'a, Param1: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param2: ::windows::core::IntoParam<'a, IWMDMOperation>, Param3: ::windows::core::IntoParam<'a, IWMDMProgress>>(&self, fumode: u32, pwszfile: Param1, poperation: Param2, pprogress: Param3) -> ::windows::core::Result<IWMDMStorage> {
@@ -5371,11 +5376,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWMDM
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWMDMStorageControl {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWMDMStorageControl {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5404,6 +5404,11 @@ pub struct IWMDMStorageControl_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
 #[repr(transparent)]
 pub struct IWMDMStorageControl2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMDMStorageControl2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMDMStorageControl2 {
     #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
     pub unsafe fn Insert<'a, Param1: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param2: ::windows::core::IntoParam<'a, IWMDMOperation>, Param3: ::windows::core::IntoParam<'a, IWMDMProgress>>(&self, fumode: u32, pwszfile: Param1, poperation: Param2, pprogress: Param3) -> ::windows::core::Result<IWMDMStorage> {
@@ -5471,11 +5476,6 @@ impl<'a> ::windows::core::IntoParam<'a, IWMDMStorageControl> for &'a IWMDMStorag
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWMDMStorageControl2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWMDMStorageControl2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5500,6 +5500,11 @@ pub struct IWMDMStorageControl2_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
 #[repr(transparent)]
 pub struct IWMDMStorageControl3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMDMStorageControl3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMDMStorageControl3 {
     #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
     pub unsafe fn Insert<'a, Param1: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param2: ::windows::core::IntoParam<'a, IWMDMOperation>, Param3: ::windows::core::IntoParam<'a, IWMDMProgress>>(&self, fumode: u32, pwszfile: Param1, poperation: Param2, pprogress: Param3) -> ::windows::core::Result<IWMDMStorage> {
@@ -5591,11 +5596,6 @@ impl<'a> ::windows::core::IntoParam<'a, IWMDMStorageControl2> for &'a IWMDMStora
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWMDMStorageControl3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWMDMStorageControl3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5620,6 +5620,11 @@ pub struct IWMDMStorageControl3_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
 #[repr(transparent)]
 pub struct IWMDMStorageGlobals(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMDMStorageGlobals {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMDMStorageGlobals {
     #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
     pub unsafe fn GetCapabilities(&self) -> ::windows::core::Result<u32> {
@@ -5672,11 +5677,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWMDM
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWMDMStorageGlobals {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWMDMStorageGlobals {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5707,6 +5707,11 @@ pub struct IWMDMStorageGlobals_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
 #[repr(transparent)]
 pub struct IWMDeviceManager(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMDeviceManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMDeviceManager {
     #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
     pub unsafe fn GetRevision(&self) -> ::windows::core::Result<u32> {
@@ -5744,11 +5749,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWMDe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWMDeviceManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWMDeviceManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5775,6 +5775,11 @@ pub struct IWMDeviceManager_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
 #[repr(transparent)]
 pub struct IWMDeviceManager2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMDeviceManager2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMDeviceManager2 {
     #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
     pub unsafe fn GetRevision(&self) -> ::windows::core::Result<u32> {
@@ -5846,11 +5851,6 @@ impl<'a> ::windows::core::IntoParam<'a, IWMDeviceManager> for &'a IWMDeviceManag
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWMDeviceManager2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWMDeviceManager2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5877,6 +5877,11 @@ pub struct IWMDeviceManager2_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
 #[repr(transparent)]
 pub struct IWMDeviceManager3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMDeviceManager3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMDeviceManager3 {
     #[doc = "*Required features: `\"Win32_Media_DeviceManager\"`*"]
     pub unsafe fn GetRevision(&self) -> ::windows::core::Result<u32> {
@@ -5972,11 +5977,6 @@ impl<'a> ::windows::core::IntoParam<'a, IWMDeviceManager2> for &'a IWMDeviceMana
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWMDeviceManager3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWMDeviceManager3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6026,6 +6026,7 @@ impl ::core::clone::Clone for MTP_COMMAND_DATA_IN {
 }
 unsafe impl ::windows::core::Abi for MTP_COMMAND_DATA_IN {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MTP_COMMAND_DATA_IN {
     fn eq(&self, other: &Self) -> bool {
@@ -6055,6 +6056,7 @@ impl ::core::clone::Clone for MTP_COMMAND_DATA_OUT {
 }
 unsafe impl ::windows::core::Abi for MTP_COMMAND_DATA_OUT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MTP_COMMAND_DATA_OUT {
     fn eq(&self, other: &Self) -> bool {
@@ -6102,6 +6104,7 @@ impl ::core::fmt::Debug for OPAQUECOMMAND {
 }
 unsafe impl ::windows::core::Abi for OPAQUECOMMAND {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for OPAQUECOMMAND {
     fn eq(&self, other: &Self) -> bool {
@@ -6155,6 +6158,7 @@ impl ::core::fmt::Debug for WMDMDATETIME {
 }
 unsafe impl ::windows::core::Abi for WMDMDATETIME {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WMDMDATETIME {
     fn eq(&self, other: &Self) -> bool {
@@ -6261,6 +6265,7 @@ impl ::core::clone::Clone for WMDMDetermineMaxPropStringLen {
 }
 unsafe impl ::windows::core::Abi for WMDMDetermineMaxPropStringLen {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WMDMDetermineMaxPropStringLen {
     fn eq(&self, other: &Self) -> bool {
@@ -6296,6 +6301,7 @@ impl ::core::fmt::Debug for WMDMID {
 }
 unsafe impl ::windows::core::Abi for WMDMID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WMDMID {
     fn eq(&self, other: &Self) -> bool {
@@ -6336,6 +6342,7 @@ impl ::core::default::Default for WMDMMessage {
 }
 unsafe impl ::windows::core::Abi for WMDMMessage {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WMDMMessage {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6362,6 +6369,7 @@ impl ::core::fmt::Debug for WMDMMetadataView {
 }
 unsafe impl ::windows::core::Abi for WMDMMetadataView {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WMDMMetadataView {
     fn eq(&self, other: &Self) -> bool {
@@ -6398,6 +6406,7 @@ impl ::core::fmt::Debug for WMDMRIGHTS {
 }
 unsafe impl ::windows::core::Abi for WMDMRIGHTS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WMDMRIGHTS {
     fn eq(&self, other: &Self) -> bool {
@@ -6487,6 +6496,7 @@ impl ::core::default::Default for WMDM_ENUM_PROP_VALID_VALUES_FORM {
 }
 unsafe impl ::windows::core::Abi for WMDM_ENUM_PROP_VALID_VALUES_FORM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WMDM_ENUM_PROP_VALID_VALUES_FORM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6590,6 +6600,7 @@ impl ::core::default::Default for WMDM_FIND_SCOPE {
 }
 unsafe impl ::windows::core::Abi for WMDM_FIND_SCOPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WMDM_FIND_SCOPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6803,6 +6814,7 @@ impl ::core::default::Default for WMDM_FORMATCODE {
 }
 unsafe impl ::windows::core::Abi for WMDM_FORMATCODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WMDM_FORMATCODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6833,6 +6845,7 @@ impl ::core::fmt::Debug for WMDM_FORMAT_CAPABILITY {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com_StructuredStorage"))]
 unsafe impl ::windows::core::Abi for WMDM_FORMAT_CAPABILITY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com_StructuredStorage"))]
 impl ::core::cmp::PartialEq for WMDM_FORMAT_CAPABILITY {
@@ -6913,6 +6926,7 @@ impl ::core::fmt::Debug for WMDM_PROP_CONFIG {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com_StructuredStorage"))]
 unsafe impl ::windows::core::Abi for WMDM_PROP_CONFIG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com_StructuredStorage"))]
 impl ::core::cmp::PartialEq for WMDM_PROP_CONFIG {
@@ -6945,6 +6959,7 @@ impl ::core::clone::Clone for WMDM_PROP_DESC {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com_StructuredStorage"))]
 unsafe impl ::windows::core::Abi for WMDM_PROP_DESC {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com_StructuredStorage"))]
 impl ::core::cmp::PartialEq for WMDM_PROP_DESC {
@@ -6976,6 +6991,7 @@ impl ::core::clone::Clone for WMDM_PROP_DESC_0 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com_StructuredStorage"))]
 unsafe impl ::windows::core::Abi for WMDM_PROP_DESC_0 {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com_StructuredStorage"))]
 impl ::core::cmp::PartialEq for WMDM_PROP_DESC_0 {
@@ -7015,6 +7031,7 @@ impl ::core::fmt::Debug for WMDM_PROP_VALUES_ENUM {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com_StructuredStorage"))]
 unsafe impl ::windows::core::Abi for WMDM_PROP_VALUES_ENUM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com_StructuredStorage"))]
 impl ::core::cmp::PartialEq for WMDM_PROP_VALUES_ENUM {
@@ -7047,6 +7064,7 @@ impl ::core::clone::Clone for WMDM_PROP_VALUES_RANGE {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com_StructuredStorage"))]
 unsafe impl ::windows::core::Abi for WMDM_PROP_VALUES_RANGE {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com_StructuredStorage"))]
 impl ::core::cmp::PartialEq for WMDM_PROP_VALUES_RANGE {
@@ -7142,6 +7160,7 @@ impl ::core::default::Default for WMDM_SESSION_TYPE {
 }
 unsafe impl ::windows::core::Abi for WMDM_SESSION_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WMDM_SESSION_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7247,6 +7266,7 @@ impl ::core::default::Default for WMDM_STORAGE_ENUM_MODE {
 }
 unsafe impl ::windows::core::Abi for WMDM_STORAGE_ENUM_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WMDM_STORAGE_ENUM_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7292,6 +7312,7 @@ impl ::core::default::Default for WMDM_TAG_DATATYPE {
 }
 unsafe impl ::windows::core::Abi for WMDM_TAG_DATATYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WMDM_TAG_DATATYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7319,6 +7340,7 @@ impl ::core::fmt::Debug for WMFILECAPABILITIES {
 }
 unsafe impl ::windows::core::Abi for WMFILECAPABILITIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WMFILECAPABILITIES {
     fn eq(&self, other: &Self) -> bool {
@@ -7359,6 +7381,7 @@ impl ::core::fmt::Debug for _BITMAPINFOHEADER {
 }
 unsafe impl ::windows::core::Abi for _BITMAPINFOHEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for _BITMAPINFOHEADER {
     fn eq(&self, other: &Self) -> bool {
@@ -7399,6 +7422,7 @@ impl ::core::fmt::Debug for _VIDEOINFOHEADER {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for _VIDEOINFOHEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for _VIDEOINFOHEADER {
@@ -7438,6 +7462,7 @@ impl ::core::fmt::Debug for _WAVEFORMATEX {
 }
 unsafe impl ::windows::core::Abi for _WAVEFORMATEX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for _WAVEFORMATEX {
     fn eq(&self, other: &Self) -> bool {
@@ -7474,6 +7499,7 @@ impl ::core::fmt::Debug for __MACINFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for __MACINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for __MACINFO {

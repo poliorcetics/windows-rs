@@ -2,6 +2,11 @@
 #[doc = "*Required features: `\"Graphics_Effects\"`*"]
 #[repr(transparent)]
 pub struct IGraphicsEffect(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGraphicsEffect {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IGraphicsEffect {
     #[doc = "*Required features: `\"Graphics_Effects\"`*"]
     pub fn Name(&self) -> ::windows::core::Result<::windows::core::HSTRING> {
@@ -79,11 +84,6 @@ impl<'a> ::windows::core::IntoParam<'a, IGraphicsEffectSource> for &IGraphicsEff
         ::core::convert::TryInto::<IGraphicsEffectSource>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IGraphicsEffect {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IGraphicsEffect {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -97,7 +97,6 @@ impl ::core::fmt::Debug for IGraphicsEffect {
 }
 unsafe impl ::windows::core::RuntimeType for IGraphicsEffect {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{cb51c0ce-8fe6-4636-b202-861faa07d8f3}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -116,6 +115,11 @@ pub struct IGraphicsEffect_Vtbl {
 #[doc = "*Required features: `\"Graphics_Effects\"`*"]
 #[repr(transparent)]
 pub struct IGraphicsEffectSource(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGraphicsEffectSource {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IGraphicsEffectSource {}
 impl ::core::convert::From<IGraphicsEffectSource> for ::windows::core::IUnknown {
     fn from(value: IGraphicsEffectSource) -> Self {
@@ -157,11 +161,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IGraphicsEffectSource {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IGraphicsEffectSource {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -175,7 +174,6 @@ impl ::core::fmt::Debug for IGraphicsEffectSource {
 }
 unsafe impl ::windows::core::RuntimeType for IGraphicsEffectSource {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{2d8f9ddc-4339-4eb9-9216-f9deb75658a2}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

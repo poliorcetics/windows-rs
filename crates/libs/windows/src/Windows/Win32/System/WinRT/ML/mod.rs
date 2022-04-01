@@ -2,6 +2,11 @@
 #[doc = "*Required features: `\"Win32_System_WinRT_ML\"`*"]
 #[repr(transparent)]
 pub struct ILearningModelDeviceFactoryNative(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILearningModelDeviceFactoryNative {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ILearningModelDeviceFactoryNative {
     #[doc = "*Required features: `\"Win32_System_WinRT_ML\"`, `\"Win32_Graphics_Direct3D12\"`*"]
     #[cfg(feature = "Win32_Graphics_Direct3D12")]
@@ -28,11 +33,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for ILearning
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ILearningModelDeviceFactoryNative {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for ILearningModelDeviceFactoryNative {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for ILearningModelDeviceFactoryNative {
@@ -62,6 +62,11 @@ pub struct ILearningModelDeviceFactoryNative_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT_ML\"`*"]
 #[repr(transparent)]
 pub struct ILearningModelOperatorProviderNative(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILearningModelOperatorProviderNative {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ILearningModelOperatorProviderNative {
     #[doc = "*Required features: `\"Win32_System_WinRT_ML\"`, `\"Win32_AI_MachineLearning_WinML\"`*"]
     #[cfg(feature = "Win32_AI_MachineLearning_WinML")]
@@ -88,11 +93,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for ILearning
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ILearningModelOperatorProviderNative {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for ILearningModelOperatorProviderNative {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for ILearningModelOperatorProviderNative {
@@ -122,6 +122,11 @@ pub struct ILearningModelOperatorProviderNative_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT_ML\"`*"]
 #[repr(transparent)]
 pub struct ILearningModelSessionOptionsNative(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILearningModelSessionOptionsNative {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ILearningModelSessionOptionsNative {
     #[doc = "*Required features: `\"Win32_System_WinRT_ML\"`*"]
     pub unsafe fn SetIntraOpNumThreadsOverride(&self, intraopnumthreads: u32) -> ::windows::core::Result<()> {
@@ -148,11 +153,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ILear
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ILearningModelSessionOptionsNative {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ILearningModelSessionOptionsNative {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -177,6 +177,11 @@ pub struct ILearningModelSessionOptionsNative_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT_ML\"`*"]
 #[repr(transparent)]
 pub struct ITensorNative(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITensorNative {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITensorNative {
     #[doc = "*Required features: `\"Win32_System_WinRT_ML\"`*"]
     pub unsafe fn GetBuffer(&self, value: *mut *mut u8, capacity: *mut u32) -> ::windows::core::Result<()> {
@@ -209,11 +214,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITens
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITensorNative {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITensorNative {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -242,6 +242,11 @@ pub struct ITensorNative_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT_ML\"`*"]
 #[repr(transparent)]
 pub struct ITensorStaticsNative(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITensorStaticsNative {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITensorStaticsNative {
     #[doc = "*Required features: `\"Win32_System_WinRT_ML\"`, `\"Win32_Graphics_Direct3D12\"`*"]
     #[cfg(feature = "Win32_Graphics_Direct3D12")]
@@ -267,11 +272,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for ITensorSt
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITensorStaticsNative {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for ITensorStaticsNative {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for ITensorStaticsNative {

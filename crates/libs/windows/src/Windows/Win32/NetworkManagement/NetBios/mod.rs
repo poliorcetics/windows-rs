@@ -19,6 +19,7 @@ impl ::core::fmt::Debug for ACTION_HEADER {
 }
 unsafe impl ::windows::core::Abi for ACTION_HEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ACTION_HEADER {
     fn eq(&self, other: &Self) -> bool {
@@ -103,6 +104,7 @@ impl ::core::fmt::Debug for ADAPTER_STATUS {
 }
 unsafe impl ::windows::core::Abi for ADAPTER_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ADAPTER_STATUS {
     fn eq(&self, other: &Self) -> bool {
@@ -150,6 +152,7 @@ impl ::core::fmt::Debug for FIND_NAME_BUFFER {
 }
 unsafe impl ::windows::core::Abi for FIND_NAME_BUFFER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for FIND_NAME_BUFFER {
     fn eq(&self, other: &Self) -> bool {
@@ -182,6 +185,7 @@ impl ::core::fmt::Debug for FIND_NAME_HEADER {
 }
 unsafe impl ::windows::core::Abi for FIND_NAME_HEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for FIND_NAME_HEADER {
     fn eq(&self, other: &Self) -> bool {
@@ -219,6 +223,7 @@ impl ::core::fmt::Debug for LANA_ENUM {
 }
 unsafe impl ::windows::core::Abi for LANA_ENUM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for LANA_ENUM {
     fn eq(&self, other: &Self) -> bool {
@@ -257,6 +262,7 @@ impl ::core::fmt::Debug for NAME_BUFFER {
 }
 unsafe impl ::windows::core::Abi for NAME_BUFFER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NAME_BUFFER {
     fn eq(&self, other: &Self) -> bool {
@@ -329,6 +335,7 @@ impl ::core::fmt::Debug for NCB {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NCB {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 #[cfg(feature = "Win32_Foundation")]
@@ -405,6 +412,7 @@ impl ::core::fmt::Debug for NCB {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NCB {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 #[cfg(feature = "Win32_Foundation")]
@@ -599,6 +607,7 @@ impl ::core::fmt::Debug for SESSION_BUFFER {
 }
 unsafe impl ::windows::core::Abi for SESSION_BUFFER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SESSION_BUFFER {
     fn eq(&self, other: &Self) -> bool {
@@ -634,6 +643,7 @@ impl ::core::fmt::Debug for SESSION_HEADER {
 }
 unsafe impl ::windows::core::Abi for SESSION_HEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SESSION_HEADER {
     fn eq(&self, other: &Self) -> bool {

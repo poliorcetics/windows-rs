@@ -2,6 +2,11 @@
 #[doc = "*Required features: `\"Win32_Storage_OfflineFiles\"`*"]
 #[repr(transparent)]
 pub struct IEnumOfflineFilesItems(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnumOfflineFilesItems {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnumOfflineFilesItems {
     #[doc = "*Required features: `\"Win32_Storage_OfflineFiles\"`*"]
     pub unsafe fn Next(&self, celt: u32, rgelt: *mut ::core::option::Option<IOfflineFilesItem>, pceltfetched: *mut u32) -> ::windows::core::Result<()> {
@@ -41,11 +46,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnum
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnumOfflineFilesItems {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnumOfflineFilesItems {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -73,6 +73,11 @@ pub struct IEnumOfflineFilesItems_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_OfflineFiles\"`*"]
 #[repr(transparent)]
 pub struct IEnumOfflineFilesSettings(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnumOfflineFilesSettings {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnumOfflineFilesSettings {
     #[doc = "*Required features: `\"Win32_Storage_OfflineFiles\"`*"]
     pub unsafe fn Next(&self, celt: u32, rgelt: *mut ::core::option::Option<IOfflineFilesSetting>, pceltfetched: *mut u32) -> ::windows::core::Result<()> {
@@ -112,11 +117,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnum
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnumOfflineFilesSettings {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnumOfflineFilesSettings {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -144,6 +144,11 @@ pub struct IEnumOfflineFilesSettings_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_OfflineFiles\"`*"]
 #[repr(transparent)]
 pub struct IOfflineFilesCache(::windows::core::IUnknown);
+impl ::core::clone::Clone for IOfflineFilesCache {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IOfflineFilesCache {
     #[doc = "*Required features: `\"Win32_Storage_OfflineFiles\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -248,11 +253,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IOffl
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IOfflineFilesCache {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IOfflineFilesCache {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -320,6 +320,11 @@ pub struct IOfflineFilesCache_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_OfflineFiles\"`*"]
 #[repr(transparent)]
 pub struct IOfflineFilesCache2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IOfflineFilesCache2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IOfflineFilesCache2 {
     #[doc = "*Required features: `\"Win32_Storage_OfflineFiles\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -449,11 +454,6 @@ impl<'a> ::windows::core::IntoParam<'a, IOfflineFilesCache> for &'a IOfflineFile
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IOfflineFilesCache2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IOfflineFilesCache2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -481,6 +481,11 @@ pub struct IOfflineFilesCache2_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_OfflineFiles\"`*"]
 #[repr(transparent)]
 pub struct IOfflineFilesChangeInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IOfflineFilesChangeInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IOfflineFilesChangeInfo {
     #[doc = "*Required features: `\"Win32_Storage_OfflineFiles\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -538,11 +543,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IOffl
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IOfflineFilesChangeInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IOfflineFilesChangeInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -590,6 +590,11 @@ pub struct IOfflineFilesChangeInfo_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_OfflineFiles\"`*"]
 #[repr(transparent)]
 pub struct IOfflineFilesConnectionInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IOfflineFilesConnectionInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IOfflineFilesConnectionInfo {
     #[doc = "*Required features: `\"Win32_Storage_OfflineFiles\"`*"]
     pub unsafe fn GetConnectState(&self, pconnectstate: *mut OFFLINEFILES_CONNECT_STATE, pofflinereason: *mut OFFLINEFILES_OFFLINE_REASON) -> ::windows::core::Result<()> {
@@ -632,11 +637,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IOffl
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IOfflineFilesConnectionInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IOfflineFilesConnectionInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -673,6 +673,11 @@ pub struct IOfflineFilesConnectionInfo_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_OfflineFiles\"`*"]
 #[repr(transparent)]
 pub struct IOfflineFilesDirectoryItem(::windows::core::IUnknown);
+impl ::core::clone::Clone for IOfflineFilesDirectoryItem {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IOfflineFilesDirectoryItem {
     #[doc = "*Required features: `\"Win32_Storage_OfflineFiles\"`*"]
     pub unsafe fn GetItemType(&self) -> ::windows::core::Result<OFFLINEFILES_ITEM_TYPE> {
@@ -740,11 +745,6 @@ impl<'a> ::windows::core::IntoParam<'a, IOfflineFilesItem> for &'a IOfflineFiles
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IOfflineFilesDirectoryItem {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IOfflineFilesDirectoryItem {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -768,6 +768,11 @@ pub struct IOfflineFilesDirectoryItem_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_OfflineFiles\"`*"]
 #[repr(transparent)]
 pub struct IOfflineFilesDirtyInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IOfflineFilesDirtyInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IOfflineFilesDirtyInfo {
     #[doc = "*Required features: `\"Win32_Storage_OfflineFiles\"`*"]
     pub unsafe fn LocalDirtyByteCount(&self) -> ::windows::core::Result<i64> {
@@ -800,11 +805,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IOffl
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IOfflineFilesDirtyInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IOfflineFilesDirtyInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -830,6 +830,11 @@ pub struct IOfflineFilesDirtyInfo_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_OfflineFiles\"`*"]
 #[repr(transparent)]
 pub struct IOfflineFilesErrorInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IOfflineFilesErrorInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IOfflineFilesErrorInfo {
     #[doc = "*Required features: `\"Win32_Storage_OfflineFiles\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -863,11 +868,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IOffl
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IOfflineFilesErrorInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IOfflineFilesErrorInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -896,6 +896,11 @@ pub struct IOfflineFilesErrorInfo_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_OfflineFiles\"`*"]
 #[repr(transparent)]
 pub struct IOfflineFilesEvents(::windows::core::IUnknown);
+impl ::core::clone::Clone for IOfflineFilesEvents {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IOfflineFilesEvents {
     #[doc = "*Required features: `\"Win32_Storage_OfflineFiles\"`*"]
     pub unsafe fn CacheMoved<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param1: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, pszoldpath: Param0, psznewpath: Param1) -> ::windows::core::Result<()> {
@@ -1024,11 +1029,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IOffl
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IOfflineFilesEvents {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IOfflineFilesEvents {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1095,6 +1095,11 @@ pub struct IOfflineFilesEvents_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_OfflineFiles\"`*"]
 #[repr(transparent)]
 pub struct IOfflineFilesEvents2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IOfflineFilesEvents2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IOfflineFilesEvents2 {
     #[doc = "*Required features: `\"Win32_Storage_OfflineFiles\"`*"]
     pub unsafe fn CacheMoved<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param1: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, pszoldpath: Param0, psznewpath: Param1) -> ::windows::core::Result<()> {
@@ -1279,11 +1284,6 @@ impl<'a> ::windows::core::IntoParam<'a, IOfflineFilesEvents> for &'a IOfflineFil
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IOfflineFilesEvents2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IOfflineFilesEvents2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1316,6 +1316,11 @@ pub struct IOfflineFilesEvents2_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_OfflineFiles\"`*"]
 #[repr(transparent)]
 pub struct IOfflineFilesEvents3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IOfflineFilesEvents3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IOfflineFilesEvents3 {
     #[doc = "*Required features: `\"Win32_Storage_OfflineFiles\"`*"]
     pub unsafe fn CacheMoved<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param1: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, pszoldpath: Param0, psznewpath: Param1) -> ::windows::core::Result<()> {
@@ -1533,11 +1538,6 @@ impl<'a> ::windows::core::IntoParam<'a, IOfflineFilesEvents2> for &'a IOfflineFi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IOfflineFilesEvents3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IOfflineFilesEvents3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1567,6 +1567,11 @@ pub struct IOfflineFilesEvents3_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_OfflineFiles\"`*"]
 #[repr(transparent)]
 pub struct IOfflineFilesEvents4(::windows::core::IUnknown);
+impl ::core::clone::Clone for IOfflineFilesEvents4 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IOfflineFilesEvents4 {
     #[doc = "*Required features: `\"Win32_Storage_OfflineFiles\"`*"]
     pub unsafe fn CacheMoved<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param1: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, pszoldpath: Param0, psznewpath: Param1) -> ::windows::core::Result<()> {
@@ -1812,11 +1817,6 @@ impl<'a> ::windows::core::IntoParam<'a, IOfflineFilesEvents3> for &'a IOfflineFi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IOfflineFilesEvents4 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IOfflineFilesEvents4 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1842,6 +1842,11 @@ pub struct IOfflineFilesEvents4_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_OfflineFiles\"`*"]
 #[repr(transparent)]
 pub struct IOfflineFilesEventsFilter(::windows::core::IUnknown);
+impl ::core::clone::Clone for IOfflineFilesEventsFilter {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IOfflineFilesEventsFilter {
     #[doc = "*Required features: `\"Win32_Storage_OfflineFiles\"`*"]
     pub unsafe fn GetPathFilter(&self, ppszfilter: *mut ::windows::core::PWSTR, pmatch: *mut OFFLINEFILES_PATHFILTER_MATCH) -> ::windows::core::Result<()> {
@@ -1876,11 +1881,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IOffl
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IOfflineFilesEventsFilter {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IOfflineFilesEventsFilter {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1907,6 +1907,11 @@ pub struct IOfflineFilesEventsFilter_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_OfflineFiles\"`*"]
 #[repr(transparent)]
 pub struct IOfflineFilesFileItem(::windows::core::IUnknown);
+impl ::core::clone::Clone for IOfflineFilesFileItem {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IOfflineFilesFileItem {
     #[doc = "*Required features: `\"Win32_Storage_OfflineFiles\"`*"]
     pub unsafe fn GetItemType(&self) -> ::windows::core::Result<OFFLINEFILES_ITEM_TYPE> {
@@ -1986,11 +1991,6 @@ impl<'a> ::windows::core::IntoParam<'a, IOfflineFilesItem> for &'a IOfflineFiles
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IOfflineFilesFileItem {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IOfflineFilesFileItem {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2022,6 +2022,11 @@ pub struct IOfflineFilesFileItem_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_OfflineFiles\"`*"]
 #[repr(transparent)]
 pub struct IOfflineFilesFileSysInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IOfflineFilesFileSysInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IOfflineFilesFileSysInfo {
     #[doc = "*Required features: `\"Win32_Storage_OfflineFiles\"`*"]
     pub unsafe fn GetAttributes(&self, copy: OFFLINEFILES_ITEM_COPY) -> ::windows::core::Result<u32> {
@@ -2059,11 +2064,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IOffl
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IOfflineFilesFileSysInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IOfflineFilesFileSysInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2093,6 +2093,11 @@ pub struct IOfflineFilesFileSysInfo_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_OfflineFiles\"`*"]
 #[repr(transparent)]
 pub struct IOfflineFilesGhostInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IOfflineFilesGhostInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IOfflineFilesGhostInfo {
     #[doc = "*Required features: `\"Win32_Storage_OfflineFiles\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -2119,11 +2124,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IOfflineF
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IOfflineFilesGhostInfo {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IOfflineFilesGhostInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IOfflineFilesGhostInfo {
@@ -2153,6 +2153,11 @@ pub struct IOfflineFilesGhostInfo_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_OfflineFiles\"`*"]
 #[repr(transparent)]
 pub struct IOfflineFilesItem(::windows::core::IUnknown);
+impl ::core::clone::Clone for IOfflineFilesItem {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IOfflineFilesItem {
     #[doc = "*Required features: `\"Win32_Storage_OfflineFiles\"`*"]
     pub unsafe fn GetItemType(&self) -> ::windows::core::Result<OFFLINEFILES_ITEM_TYPE> {
@@ -2200,11 +2205,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IOffl
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IOfflineFilesItem {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IOfflineFilesItem {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2236,6 +2236,11 @@ pub struct IOfflineFilesItem_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_OfflineFiles\"`*"]
 #[repr(transparent)]
 pub struct IOfflineFilesItemContainer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IOfflineFilesItemContainer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IOfflineFilesItemContainer {
     #[doc = "*Required features: `\"Win32_Storage_OfflineFiles\"`*"]
     pub unsafe fn EnumItems(&self, dwqueryflags: u32) -> ::windows::core::Result<IEnumOfflineFilesItems> {
@@ -2268,11 +2273,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IOffl
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IOfflineFilesItemContainer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IOfflineFilesItemContainer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2298,6 +2298,11 @@ pub struct IOfflineFilesItemContainer_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_OfflineFiles\"`*"]
 #[repr(transparent)]
 pub struct IOfflineFilesItemFilter(::windows::core::IUnknown);
+impl ::core::clone::Clone for IOfflineFilesItemFilter {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IOfflineFilesItemFilter {
     #[doc = "*Required features: `\"Win32_Storage_OfflineFiles\"`*"]
     pub unsafe fn GetFilterFlags(&self, pullflags: *mut u64, pullmask: *mut u64) -> ::windows::core::Result<()> {
@@ -2333,11 +2338,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IOffl
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IOfflineFilesItemFilter {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IOfflineFilesItemFilter {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2367,6 +2367,11 @@ pub struct IOfflineFilesItemFilter_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_OfflineFiles\"`*"]
 #[repr(transparent)]
 pub struct IOfflineFilesPinInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IOfflineFilesPinInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IOfflineFilesPinInfo {
     #[doc = "*Required features: `\"Win32_Storage_OfflineFiles\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -2415,11 +2420,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IOffl
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IOfflineFilesPinInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IOfflineFilesPinInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2463,6 +2463,11 @@ pub struct IOfflineFilesPinInfo_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_OfflineFiles\"`*"]
 #[repr(transparent)]
 pub struct IOfflineFilesPinInfo2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IOfflineFilesPinInfo2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IOfflineFilesPinInfo2 {
     #[doc = "*Required features: `\"Win32_Storage_OfflineFiles\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -2537,11 +2542,6 @@ impl<'a> ::windows::core::IntoParam<'a, IOfflineFilesPinInfo> for &'a IOfflineFi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IOfflineFilesPinInfo2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IOfflineFilesPinInfo2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2569,6 +2569,11 @@ pub struct IOfflineFilesPinInfo2_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_OfflineFiles\"`*"]
 #[repr(transparent)]
 pub struct IOfflineFilesProgress(::windows::core::IUnknown);
+impl ::core::clone::Clone for IOfflineFilesProgress {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IOfflineFilesProgress {
     #[doc = "*Required features: `\"Win32_Storage_OfflineFiles\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -2607,11 +2612,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IOffl
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IOfflineFilesProgress {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IOfflineFilesProgress {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2644,6 +2644,11 @@ pub struct IOfflineFilesProgress_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_OfflineFiles\"`*"]
 #[repr(transparent)]
 pub struct IOfflineFilesServerItem(::windows::core::IUnknown);
+impl ::core::clone::Clone for IOfflineFilesServerItem {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IOfflineFilesServerItem {
     #[doc = "*Required features: `\"Win32_Storage_OfflineFiles\"`*"]
     pub unsafe fn GetItemType(&self) -> ::windows::core::Result<OFFLINEFILES_ITEM_TYPE> {
@@ -2711,11 +2716,6 @@ impl<'a> ::windows::core::IntoParam<'a, IOfflineFilesItem> for &'a IOfflineFiles
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IOfflineFilesServerItem {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IOfflineFilesServerItem {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2739,6 +2739,11 @@ pub struct IOfflineFilesServerItem_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_OfflineFiles\"`*"]
 #[repr(transparent)]
 pub struct IOfflineFilesSetting(::windows::core::IUnknown);
+impl ::core::clone::Clone for IOfflineFilesSetting {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IOfflineFilesSetting {
     #[doc = "*Required features: `\"Win32_Storage_OfflineFiles\"`*"]
     pub unsafe fn GetName(&self) -> ::windows::core::Result<::windows::core::PWSTR> {
@@ -2805,11 +2810,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IOffl
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IOfflineFilesSetting {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IOfflineFilesSetting {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2854,6 +2854,11 @@ pub struct IOfflineFilesSetting_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_OfflineFiles\"`*"]
 #[repr(transparent)]
 pub struct IOfflineFilesShareInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IOfflineFilesShareInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IOfflineFilesShareInfo {
     #[doc = "*Required features: `\"Win32_Storage_OfflineFiles\"`*"]
     pub unsafe fn GetShareItem(&self) -> ::windows::core::Result<IOfflineFilesShareItem> {
@@ -2892,11 +2897,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IOffl
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IOfflineFilesShareInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IOfflineFilesShareInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2926,6 +2926,11 @@ pub struct IOfflineFilesShareInfo_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_OfflineFiles\"`*"]
 #[repr(transparent)]
 pub struct IOfflineFilesShareItem(::windows::core::IUnknown);
+impl ::core::clone::Clone for IOfflineFilesShareItem {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IOfflineFilesShareItem {
     #[doc = "*Required features: `\"Win32_Storage_OfflineFiles\"`*"]
     pub unsafe fn GetItemType(&self) -> ::windows::core::Result<OFFLINEFILES_ITEM_TYPE> {
@@ -2993,11 +2998,6 @@ impl<'a> ::windows::core::IntoParam<'a, IOfflineFilesItem> for &'a IOfflineFiles
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IOfflineFilesShareItem {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IOfflineFilesShareItem {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3021,6 +3021,11 @@ pub struct IOfflineFilesShareItem_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_OfflineFiles\"`*"]
 #[repr(transparent)]
 pub struct IOfflineFilesSimpleProgress(::windows::core::IUnknown);
+impl ::core::clone::Clone for IOfflineFilesSimpleProgress {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IOfflineFilesSimpleProgress {
     #[doc = "*Required features: `\"Win32_Storage_OfflineFiles\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -3089,11 +3094,6 @@ impl<'a> ::windows::core::IntoParam<'a, IOfflineFilesProgress> for &'a IOfflineF
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IOfflineFilesSimpleProgress {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IOfflineFilesSimpleProgress {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3119,6 +3119,11 @@ pub struct IOfflineFilesSimpleProgress_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_OfflineFiles\"`*"]
 #[repr(transparent)]
 pub struct IOfflineFilesSuspend(::windows::core::IUnknown);
+impl ::core::clone::Clone for IOfflineFilesSuspend {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IOfflineFilesSuspend {
     #[doc = "*Required features: `\"Win32_Storage_OfflineFiles\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -3144,11 +3149,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IOfflineF
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IOfflineFilesSuspend {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IOfflineFilesSuspend {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IOfflineFilesSuspend {
@@ -3178,6 +3178,11 @@ pub struct IOfflineFilesSuspend_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_OfflineFiles\"`*"]
 #[repr(transparent)]
 pub struct IOfflineFilesSuspendInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IOfflineFilesSuspendInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IOfflineFilesSuspendInfo {
     #[doc = "*Required features: `\"Win32_Storage_OfflineFiles\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -3203,11 +3208,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IOfflineF
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IOfflineFilesSuspendInfo {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IOfflineFilesSuspendInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IOfflineFilesSuspendInfo {
@@ -3237,6 +3237,11 @@ pub struct IOfflineFilesSuspendInfo_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_OfflineFiles\"`*"]
 #[repr(transparent)]
 pub struct IOfflineFilesSyncConflictHandler(::windows::core::IUnknown);
+impl ::core::clone::Clone for IOfflineFilesSyncConflictHandler {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IOfflineFilesSyncConflictHandler {
     #[doc = "*Required features: `\"Win32_Storage_OfflineFiles\"`*"]
     pub unsafe fn ResolveConflict<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, pszpath: Param0, fstateknown: u32, state: OFFLINEFILES_SYNC_STATE, fchangedetails: u32, pconflictresolution: *mut OFFLINEFILES_SYNC_CONFLICT_RESOLVE, ppsznewname: *mut ::windows::core::PWSTR) -> ::windows::core::Result<()> {
@@ -3263,11 +3268,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IOffl
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IOfflineFilesSyncConflictHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IOfflineFilesSyncConflictHandler {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3292,6 +3292,11 @@ pub struct IOfflineFilesSyncConflictHandler_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_OfflineFiles\"`*"]
 #[repr(transparent)]
 pub struct IOfflineFilesSyncErrorInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IOfflineFilesSyncErrorInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IOfflineFilesSyncErrorInfo {
     #[doc = "*Required features: `\"Win32_Storage_OfflineFiles\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -3380,11 +3385,6 @@ impl<'a> ::windows::core::IntoParam<'a, IOfflineFilesErrorInfo> for &'a IOffline
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IOfflineFilesSyncErrorInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IOfflineFilesSyncErrorInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3421,6 +3421,11 @@ pub struct IOfflineFilesSyncErrorInfo_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_OfflineFiles\"`*"]
 #[repr(transparent)]
 pub struct IOfflineFilesSyncErrorItemInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IOfflineFilesSyncErrorItemInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IOfflineFilesSyncErrorItemInfo {
     #[doc = "*Required features: `\"Win32_Storage_OfflineFiles\"`*"]
     pub unsafe fn GetFileAttributes(&self) -> ::windows::core::Result<u32> {
@@ -3458,11 +3463,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IOffl
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IOfflineFilesSyncErrorItemInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IOfflineFilesSyncErrorItemInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3492,6 +3492,11 @@ pub struct IOfflineFilesSyncErrorItemInfo_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_OfflineFiles\"`*"]
 #[repr(transparent)]
 pub struct IOfflineFilesSyncProgress(::windows::core::IUnknown);
+impl ::core::clone::Clone for IOfflineFilesSyncProgress {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IOfflineFilesSyncProgress {
     #[doc = "*Required features: `\"Win32_Storage_OfflineFiles\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -3560,11 +3565,6 @@ impl<'a> ::windows::core::IntoParam<'a, IOfflineFilesProgress> for &'a IOfflineF
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IOfflineFilesSyncProgress {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IOfflineFilesSyncProgress {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3590,6 +3590,11 @@ pub struct IOfflineFilesSyncProgress_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_OfflineFiles\"`*"]
 #[repr(transparent)]
 pub struct IOfflineFilesTransparentCacheInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IOfflineFilesTransparentCacheInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IOfflineFilesTransparentCacheInfo {
     #[doc = "*Required features: `\"Win32_Storage_OfflineFiles\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -3616,11 +3621,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IOfflineF
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IOfflineFilesTransparentCacheInfo {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IOfflineFilesTransparentCacheInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IOfflineFilesTransparentCacheInfo {
@@ -3674,6 +3674,7 @@ impl ::core::default::Default for OFFLINEFILES_CACHING_MODE {
 }
 unsafe impl ::windows::core::Abi for OFFLINEFILES_CACHING_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for OFFLINEFILES_CACHING_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3723,6 +3724,7 @@ impl ::core::default::Default for OFFLINEFILES_COMPARE {
 }
 unsafe impl ::windows::core::Abi for OFFLINEFILES_COMPARE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for OFFLINEFILES_COMPARE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3756,6 +3758,7 @@ impl ::core::default::Default for OFFLINEFILES_CONNECT_STATE {
 }
 unsafe impl ::windows::core::Abi for OFFLINEFILES_CONNECT_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for OFFLINEFILES_CONNECT_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3881,6 +3884,7 @@ impl ::core::default::Default for OFFLINEFILES_EVENTS {
 }
 unsafe impl ::windows::core::Abi for OFFLINEFILES_EVENTS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for OFFLINEFILES_EVENTS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3910,6 +3914,7 @@ impl ::core::default::Default for OFFLINEFILES_ITEM_COPY {
 }
 unsafe impl ::windows::core::Abi for OFFLINEFILES_ITEM_COPY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for OFFLINEFILES_ITEM_COPY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4005,6 +4010,7 @@ impl ::core::default::Default for OFFLINEFILES_ITEM_TIME {
 }
 unsafe impl ::windows::core::Abi for OFFLINEFILES_ITEM_TIME {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for OFFLINEFILES_ITEM_TIME {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4036,6 +4042,7 @@ impl ::core::default::Default for OFFLINEFILES_ITEM_TYPE {
 }
 unsafe impl ::windows::core::Abi for OFFLINEFILES_ITEM_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for OFFLINEFILES_ITEM_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4073,6 +4080,7 @@ impl ::core::default::Default for OFFLINEFILES_OFFLINE_REASON {
 }
 unsafe impl ::windows::core::Abi for OFFLINEFILES_OFFLINE_REASON {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for OFFLINEFILES_OFFLINE_REASON {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4102,6 +4110,7 @@ impl ::core::default::Default for OFFLINEFILES_OP_RESPONSE {
 }
 unsafe impl ::windows::core::Abi for OFFLINEFILES_OP_RESPONSE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for OFFLINEFILES_OP_RESPONSE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4135,6 +4144,7 @@ impl ::core::default::Default for OFFLINEFILES_PATHFILTER_MATCH {
 }
 unsafe impl ::windows::core::Abi for OFFLINEFILES_PATHFILTER_MATCH {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for OFFLINEFILES_PATHFILTER_MATCH {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4202,6 +4212,7 @@ impl ::core::default::Default for OFFLINEFILES_SETTING_VALUE_TYPE {
 }
 unsafe impl ::windows::core::Abi for OFFLINEFILES_SETTING_VALUE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for OFFLINEFILES_SETTING_VALUE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4243,6 +4254,7 @@ impl ::core::default::Default for OFFLINEFILES_SYNC_CONFLICT_RESOLVE {
 }
 unsafe impl ::windows::core::Abi for OFFLINEFILES_SYNC_CONFLICT_RESOLVE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for OFFLINEFILES_SYNC_CONFLICT_RESOLVE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4334,6 +4346,7 @@ impl ::core::default::Default for OFFLINEFILES_SYNC_OPERATION {
 }
 unsafe impl ::windows::core::Abi for OFFLINEFILES_SYNC_OPERATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for OFFLINEFILES_SYNC_OPERATION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4467,6 +4480,7 @@ impl ::core::default::Default for OFFLINEFILES_SYNC_STATE {
 }
 unsafe impl ::windows::core::Abi for OFFLINEFILES_SYNC_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for OFFLINEFILES_SYNC_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

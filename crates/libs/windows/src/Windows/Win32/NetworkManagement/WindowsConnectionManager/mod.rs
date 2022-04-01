@@ -49,6 +49,7 @@ impl ::core::fmt::Debug for NET_INTERFACE_CONTEXT {
 }
 unsafe impl ::windows::core::Abi for NET_INTERFACE_CONTEXT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NET_INTERFACE_CONTEXT {
     fn eq(&self, other: &Self) -> bool {
@@ -86,6 +87,7 @@ impl ::core::fmt::Debug for NET_INTERFACE_CONTEXT_TABLE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NET_INTERFACE_CONTEXT_TABLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NET_INTERFACE_CONTEXT_TABLE {
@@ -182,6 +184,7 @@ impl ::core::fmt::Debug for WCM_BILLING_CYCLE_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WCM_BILLING_CYCLE_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WCM_BILLING_CYCLE_INFO {
@@ -230,6 +233,7 @@ impl ::core::default::Default for WCM_CONNECTION_COST {
 }
 unsafe impl ::windows::core::Abi for WCM_CONNECTION_COST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WCM_CONNECTION_COST {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -255,6 +259,7 @@ impl ::core::fmt::Debug for WCM_CONNECTION_COST_DATA {
 }
 unsafe impl ::windows::core::Abi for WCM_CONNECTION_COST_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WCM_CONNECTION_COST_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -292,6 +297,7 @@ impl ::core::default::Default for WCM_CONNECTION_COST_SOURCE {
 }
 unsafe impl ::windows::core::Abi for WCM_CONNECTION_COST_SOURCE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WCM_CONNECTION_COST_SOURCE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -327,6 +333,7 @@ impl ::core::fmt::Debug for WCM_DATAPLAN_STATUS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WCM_DATAPLAN_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WCM_DATAPLAN_STATUS {
@@ -373,6 +380,7 @@ impl ::core::default::Default for WCM_MEDIA_TYPE {
 }
 unsafe impl ::windows::core::Abi for WCM_MEDIA_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WCM_MEDIA_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -403,6 +411,7 @@ impl ::core::fmt::Debug for WCM_POLICY_VALUE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WCM_POLICY_VALUE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WCM_POLICY_VALUE {
@@ -438,6 +447,7 @@ impl ::core::fmt::Debug for WCM_PROFILE_INFO {
 }
 unsafe impl ::windows::core::Abi for WCM_PROFILE_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WCM_PROFILE_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -469,6 +479,7 @@ impl ::core::fmt::Debug for WCM_PROFILE_INFO_LIST {
 }
 unsafe impl ::windows::core::Abi for WCM_PROFILE_INFO_LIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WCM_PROFILE_INFO_LIST {
     fn eq(&self, other: &Self) -> bool {
@@ -512,6 +523,7 @@ impl ::core::default::Default for WCM_PROPERTY {
 }
 unsafe impl ::windows::core::Abi for WCM_PROPERTY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WCM_PROPERTY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -542,6 +554,7 @@ impl ::core::fmt::Debug for WCM_TIME_INTERVAL {
 }
 unsafe impl ::windows::core::Abi for WCM_TIME_INTERVAL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WCM_TIME_INTERVAL {
     fn eq(&self, other: &Self) -> bool {
@@ -580,6 +593,7 @@ impl ::core::fmt::Debug for WCM_USAGE_DATA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WCM_USAGE_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WCM_USAGE_DATA {

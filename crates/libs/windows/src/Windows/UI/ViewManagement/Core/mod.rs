@@ -53,11 +53,6 @@ impl CoreFrameworkInputView {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for CoreFrameworkInputView {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for CoreFrameworkInputView {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -71,7 +66,6 @@ impl ::core::fmt::Debug for CoreFrameworkInputView {
 }
 unsafe impl ::windows::core::RuntimeType for CoreFrameworkInputView {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.ViewManagement.Core.CoreFrameworkInputView;{d77c94ae-46b8-5d4a-9489-8ddec3d639a6})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -156,11 +150,6 @@ impl CoreFrameworkInputViewAnimationStartingEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for CoreFrameworkInputViewAnimationStartingEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for CoreFrameworkInputViewAnimationStartingEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -174,7 +163,6 @@ impl ::core::fmt::Debug for CoreFrameworkInputViewAnimationStartingEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for CoreFrameworkInputViewAnimationStartingEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.ViewManagement.Core.CoreFrameworkInputViewAnimationStartingEventArgs;{c0ec901c-bba4-501b-ae8b-65c9e756a719})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -250,11 +238,6 @@ impl CoreFrameworkInputViewOcclusionsChangedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for CoreFrameworkInputViewOcclusionsChangedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for CoreFrameworkInputViewOcclusionsChangedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -268,7 +251,6 @@ impl ::core::fmt::Debug for CoreFrameworkInputViewOcclusionsChangedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for CoreFrameworkInputViewOcclusionsChangedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.ViewManagement.Core.CoreFrameworkInputViewOcclusionsChangedEventArgs;{f36f4949-c82c-53d1-a75d-2b2baf0d9b0d})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -522,11 +504,6 @@ impl CoreInputView {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for CoreInputView {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for CoreInputView {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -540,7 +517,6 @@ impl ::core::fmt::Debug for CoreInputView {
 }
 unsafe impl ::windows::core::RuntimeType for CoreInputView {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.ViewManagement.Core.CoreInputView;{c770cd7a-7001-4c32-bf94-25c1f554cbf1})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -630,11 +606,6 @@ impl CoreInputViewAnimationStartingEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for CoreInputViewAnimationStartingEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for CoreInputViewAnimationStartingEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -648,7 +619,6 @@ impl ::core::fmt::Debug for CoreInputViewAnimationStartingEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for CoreInputViewAnimationStartingEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.ViewManagement.Core.CoreInputViewAnimationStartingEventArgs;{a9144af2-b55c-5ea1-b8ab-5340f3e94897})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -715,11 +685,6 @@ impl CoreInputViewHidingEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for CoreInputViewHidingEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for CoreInputViewHidingEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -733,7 +698,6 @@ impl ::core::fmt::Debug for CoreInputViewHidingEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for CoreInputViewHidingEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.ViewManagement.Core.CoreInputViewHidingEventArgs;{eada47bd-bac5-5336-848d-41083584daad})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -813,6 +777,7 @@ impl ::core::default::Default for CoreInputViewKind {
 }
 unsafe impl ::windows::core::Abi for CoreInputViewKind {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CoreInputViewKind {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -821,7 +786,6 @@ impl ::core::fmt::Debug for CoreInputViewKind {
 }
 unsafe impl ::windows::core::RuntimeType for CoreInputViewKind {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.ViewManagement.Core.CoreInputViewKind;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -848,11 +812,6 @@ impl CoreInputViewOcclusion {
         }
     }
 }
-impl ::core::clone::Clone for CoreInputViewOcclusion {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for CoreInputViewOcclusion {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -866,7 +825,6 @@ impl ::core::fmt::Debug for CoreInputViewOcclusion {
 }
 unsafe impl ::windows::core::RuntimeType for CoreInputViewOcclusion {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.ViewManagement.Core.CoreInputViewOcclusion;{cc36ce06-3865-4177-b5f5-8b65e0b9ce84})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -942,6 +900,7 @@ impl ::core::default::Default for CoreInputViewOcclusionKind {
 }
 unsafe impl ::windows::core::Abi for CoreInputViewOcclusionKind {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CoreInputViewOcclusionKind {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -950,7 +909,6 @@ impl ::core::fmt::Debug for CoreInputViewOcclusionKind {
 }
 unsafe impl ::windows::core::RuntimeType for CoreInputViewOcclusionKind {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.ViewManagement.Core.CoreInputViewOcclusionKind;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -982,11 +940,6 @@ impl CoreInputViewOcclusionsChangedEventArgs {
         unsafe { (::windows::core::Interface::vtable(this).SetHandled)(::core::mem::transmute_copy(this), value).ok() }
     }
 }
-impl ::core::clone::Clone for CoreInputViewOcclusionsChangedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for CoreInputViewOcclusionsChangedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1000,7 +953,6 @@ impl ::core::fmt::Debug for CoreInputViewOcclusionsChangedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for CoreInputViewOcclusionsChangedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.ViewManagement.Core.CoreInputViewOcclusionsChangedEventArgs;{be1027e8-b3ee-4df7-9554-89cdc66082c2})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1067,11 +1019,6 @@ impl CoreInputViewShowingEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for CoreInputViewShowingEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for CoreInputViewShowingEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1085,7 +1032,6 @@ impl ::core::fmt::Debug for CoreInputViewShowingEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for CoreInputViewShowingEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.ViewManagement.Core.CoreInputViewShowingEventArgs;{ca52261b-fb9e-5daf-a98c-262b8b76af50})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1187,11 +1133,6 @@ impl CoreInputViewTransferringXYFocusEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for CoreInputViewTransferringXYFocusEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for CoreInputViewTransferringXYFocusEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1205,7 +1146,6 @@ impl ::core::fmt::Debug for CoreInputViewTransferringXYFocusEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for CoreInputViewTransferringXYFocusEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.ViewManagement.Core.CoreInputViewTransferringXYFocusEventArgs;{04de169f-ba02-4850-8b55-d82d03ba6d7f})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1282,6 +1222,7 @@ impl ::core::default::Default for CoreInputViewXYFocusTransferDirection {
 }
 unsafe impl ::windows::core::Abi for CoreInputViewXYFocusTransferDirection {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CoreInputViewXYFocusTransferDirection {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1290,7 +1231,6 @@ impl ::core::fmt::Debug for CoreInputViewXYFocusTransferDirection {
 }
 unsafe impl ::windows::core::RuntimeType for CoreInputViewXYFocusTransferDirection {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.ViewManagement.Core.CoreInputViewXYFocusTransferDirection;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1298,6 +1238,11 @@ unsafe impl ::windows::core::RuntimeType for CoreInputViewXYFocusTransferDirecti
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICoreFrameworkInputView(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICoreFrameworkInputView {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICoreFrameworkInputView {
     type Vtable = ICoreFrameworkInputView_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd77c94ae_46b8_5d4a_9489_8ddec3d639a6);
@@ -1326,6 +1271,11 @@ pub struct ICoreFrameworkInputView_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICoreFrameworkInputViewAnimationStartingEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICoreFrameworkInputViewAnimationStartingEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICoreFrameworkInputViewAnimationStartingEventArgs {
     type Vtable = ICoreFrameworkInputViewAnimationStartingEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc0ec901c_bba4_501b_ae8b_65c9e756a719);
@@ -1347,6 +1297,11 @@ pub struct ICoreFrameworkInputViewAnimationStartingEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICoreFrameworkInputViewOcclusionsChangedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICoreFrameworkInputViewOcclusionsChangedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICoreFrameworkInputViewOcclusionsChangedEventArgs {
     type Vtable = ICoreFrameworkInputViewOcclusionsChangedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf36f4949_c82c_53d1_a75d_2b2baf0d9b0d);
@@ -1364,6 +1319,11 @@ pub struct ICoreFrameworkInputViewOcclusionsChangedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICoreFrameworkInputViewStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICoreFrameworkInputViewStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICoreFrameworkInputViewStatics {
     type Vtable = ICoreFrameworkInputViewStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x6eebd9b6_eac2_5f8b_975f_772ee3e42eeb);
@@ -1378,6 +1338,11 @@ pub struct ICoreFrameworkInputViewStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICoreInputView(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICoreInputView {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICoreInputView {
     type Vtable = ICoreInputView_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc770cd7a_7001_4c32_bf94_25c1f554cbf1);
@@ -1404,6 +1369,11 @@ pub struct ICoreInputView_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICoreInputView2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICoreInputView2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICoreInputView2 {
     type Vtable = ICoreInputView2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x0ed726c1_e09a_4ae8_aedf_dfa4857d1a01);
@@ -1436,6 +1406,11 @@ pub struct ICoreInputView2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICoreInputView3(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICoreInputView3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICoreInputView3 {
     type Vtable = ICoreInputView3_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xbc941653_3ab9_4849_8f58_46e7f0353cfc);
@@ -1451,6 +1426,11 @@ pub struct ICoreInputView3_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICoreInputView4(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICoreInputView4 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICoreInputView4 {
     type Vtable = ICoreInputView4_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x002863d6_d9ef_57eb_8cef_77f6ce1b7ee7);
@@ -1479,6 +1459,11 @@ pub struct ICoreInputView4_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICoreInputView5(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICoreInputView5 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICoreInputView5 {
     type Vtable = ICoreInputView5_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x136316e0_c6d5_5c57_811e_1ad8a99ba6ab);
@@ -1508,6 +1493,11 @@ pub struct ICoreInputView5_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICoreInputViewAnimationStartingEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICoreInputViewAnimationStartingEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICoreInputViewAnimationStartingEventArgs {
     type Vtable = ICoreInputViewAnimationStartingEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa9144af2_b55c_5ea1_b8ab_5340f3e94897);
@@ -1530,6 +1520,11 @@ pub struct ICoreInputViewAnimationStartingEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICoreInputViewHidingEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICoreInputViewHidingEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICoreInputViewHidingEventArgs {
     type Vtable = ICoreInputViewHidingEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xeada47bd_bac5_5336_848d_41083584daad);
@@ -1543,6 +1538,11 @@ pub struct ICoreInputViewHidingEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICoreInputViewOcclusion(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICoreInputViewOcclusion {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICoreInputViewOcclusion {
     type Vtable = ICoreInputViewOcclusion_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xcc36ce06_3865_4177_b5f5_8b65e0b9ce84);
@@ -1560,6 +1560,11 @@ pub struct ICoreInputViewOcclusion_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICoreInputViewOcclusionsChangedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICoreInputViewOcclusionsChangedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICoreInputViewOcclusionsChangedEventArgs {
     type Vtable = ICoreInputViewOcclusionsChangedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xbe1027e8_b3ee_4df7_9554_89cdc66082c2);
@@ -1578,6 +1583,11 @@ pub struct ICoreInputViewOcclusionsChangedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICoreInputViewShowingEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICoreInputViewShowingEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICoreInputViewShowingEventArgs {
     type Vtable = ICoreInputViewShowingEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xca52261b_fb9e_5daf_a98c_262b8b76af50);
@@ -1591,6 +1601,11 @@ pub struct ICoreInputViewShowingEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICoreInputViewStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICoreInputViewStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICoreInputViewStatics {
     type Vtable = ICoreInputViewStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x7d9b97cd_edbe_49cf_a54f_337de052907f);
@@ -1604,6 +1619,11 @@ pub struct ICoreInputViewStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICoreInputViewStatics2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICoreInputViewStatics2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICoreInputViewStatics2 {
     type Vtable = ICoreInputViewStatics2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x7ebc0862_d049_4e52_87b0_1e90e98c49ed);
@@ -1617,6 +1637,11 @@ pub struct ICoreInputViewStatics2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICoreInputViewTransferringXYFocusEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICoreInputViewTransferringXYFocusEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICoreInputViewTransferringXYFocusEventArgs {
     type Vtable = ICoreInputViewTransferringXYFocusEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x04de169f_ba02_4850_8b55_d82d03ba6d7f);
@@ -1638,6 +1663,11 @@ pub struct ICoreInputViewTransferringXYFocusEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IUISettingsController(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUISettingsController {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IUISettingsController {
     type Vtable = IUISettingsController_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x78a51ac4_15c0_5a1b_a75b_acbf9cb8bb9e);
@@ -1655,6 +1685,11 @@ pub struct IUISettingsController_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IUISettingsControllerStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUISettingsControllerStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IUISettingsControllerStatics {
     type Vtable = IUISettingsControllerStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xeb3c68cc_c220_578c_8119_7db324ed26a6);
@@ -1711,11 +1746,6 @@ impl UISettingsController {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for UISettingsController {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for UISettingsController {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1729,7 +1759,6 @@ impl ::core::fmt::Debug for UISettingsController {
 }
 unsafe impl ::windows::core::RuntimeType for UISettingsController {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.ViewManagement.Core.UISettingsController;{78a51ac4-15c0-5a1b-a75b-acbf9cb8bb9e})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

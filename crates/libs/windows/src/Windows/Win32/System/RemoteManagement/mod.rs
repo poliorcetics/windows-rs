@@ -1026,6 +1026,12 @@ pub const ERROR_WSMAN_WRONG_METADATA: u32 = 2150859233u32;
 #[repr(transparent)]
 pub struct IWSMan(::windows::core::IUnknown);
 #[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IWSMan {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "Win32_System_Com")]
 impl IWSMan {
     #[doc = "*Required features: `\"Win32_System_RemoteManagement\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com"))]
@@ -1101,12 +1107,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IWSMan {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IWSMan {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IWSMan {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1151,6 +1151,12 @@ pub struct IWSMan_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IWSManConnectionOptions(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IWSManConnectionOptions {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IWSManConnectionOptions {
     #[doc = "*Required features: `\"Win32_System_RemoteManagement\"`, `\"Win32_Foundation\"`*"]
@@ -1219,12 +1225,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IWSManCon
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IWSManConnectionOptions {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IWSManConnectionOptions {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1265,6 +1265,12 @@ pub struct IWSManConnectionOptions_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IWSManConnectionOptionsEx(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IWSManConnectionOptionsEx {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IWSManConnectionOptionsEx {
     #[doc = "*Required features: `\"Win32_System_RemoteManagement\"`, `\"Win32_Foundation\"`*"]
@@ -1368,12 +1374,6 @@ impl<'a> ::windows::core::IntoParam<'a, IWSManConnectionOptions> for &'a IWSManC
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IWSManConnectionOptionsEx {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IWSManConnectionOptionsEx {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1410,6 +1410,12 @@ pub struct IWSManConnectionOptionsEx_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IWSManConnectionOptionsEx2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IWSManConnectionOptionsEx2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IWSManConnectionOptionsEx2 {
     #[doc = "*Required features: `\"Win32_System_RemoteManagement\"`, `\"Win32_Foundation\"`*"]
@@ -1577,12 +1583,6 @@ impl<'a> ::windows::core::IntoParam<'a, IWSManConnectionOptionsEx> for &'a IWSMa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IWSManConnectionOptionsEx2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IWSManConnectionOptionsEx2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1622,6 +1622,12 @@ pub struct IWSManConnectionOptionsEx2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IWSManEnumerator(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IWSManEnumerator {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IWSManEnumerator {
     #[doc = "*Required features: `\"Win32_System_RemoteManagement\"`, `\"Win32_Foundation\"`*"]
@@ -1691,12 +1697,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IWSManEnu
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IWSManEnumerator {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IWSManEnumerator {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1734,6 +1734,12 @@ pub struct IWSManEnumerator_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IWSManEx(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IWSManEx {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IWSManEx {
     #[doc = "*Required features: `\"Win32_System_RemoteManagement\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`*"]
@@ -1936,12 +1942,6 @@ impl<'a> ::windows::core::IntoParam<'a, IWSMan> for &'a IWSManEx {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IWSManEx {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IWSManEx {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1996,6 +1996,12 @@ pub struct IWSManEx_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IWSManEx2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IWSManEx2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IWSManEx2 {
     #[doc = "*Required features: `\"Win32_System_RemoteManagement\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`*"]
@@ -2227,12 +2233,6 @@ impl<'a> ::windows::core::IntoParam<'a, IWSManEx> for &'a IWSManEx2 {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IWSManEx2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IWSManEx2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2262,6 +2262,12 @@ pub struct IWSManEx2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IWSManEx3(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IWSManEx3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IWSManEx3 {
     #[doc = "*Required features: `\"Win32_System_RemoteManagement\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`*"]
@@ -2552,12 +2558,6 @@ impl<'a> ::windows::core::IntoParam<'a, IWSManEx2> for &'a IWSManEx3 {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IWSManEx3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IWSManEx3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2593,6 +2593,12 @@ pub struct IWSManEx3_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IWSManInternal(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IWSManInternal {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IWSManInternal {
     #[doc = "*Required features: `\"Win32_System_RemoteManagement\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
@@ -2651,12 +2657,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IWSManInt
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IWSManInternal {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IWSManInternal {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2689,6 +2689,12 @@ pub struct IWSManInternal_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IWSManResourceLocator(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IWSManResourceLocator {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IWSManResourceLocator {
     #[doc = "*Required features: `\"Win32_System_RemoteManagement\"`, `\"Win32_Foundation\"`*"]
@@ -2809,12 +2815,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IWSManRes
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IWSManResourceLocator {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IWSManResourceLocator {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2888,6 +2888,11 @@ pub struct IWSManResourceLocator_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteManagement\"`*"]
 #[repr(transparent)]
 pub struct IWSManResourceLocatorInternal(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWSManResourceLocatorInternal {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWSManResourceLocatorInternal {}
 impl ::core::convert::From<IWSManResourceLocatorInternal> for ::windows::core::IUnknown {
     fn from(value: IWSManResourceLocatorInternal) -> Self {
@@ -2907,11 +2912,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IWSManRes
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWSManResourceLocatorInternal {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IWSManResourceLocatorInternal {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IWSManResourceLocatorInternal {
@@ -2938,6 +2938,12 @@ pub struct IWSManResourceLocatorInternal_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IWSManSession(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IWSManSession {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IWSManSession {
     #[doc = "*Required features: `\"Win32_System_RemoteManagement\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
@@ -3055,12 +3061,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IWSManSes
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IWSManSession {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IWSManSession {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3137,6 +3137,7 @@ impl ::core::clone::Clone for WSMAN_AUTHENTICATION_CREDENTIALS {
 }
 unsafe impl ::windows::core::Abi for WSMAN_AUTHENTICATION_CREDENTIALS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSMAN_AUTHENTICATION_CREDENTIALS {
     fn eq(&self, other: &Self) -> bool {
@@ -3163,6 +3164,7 @@ impl ::core::clone::Clone for WSMAN_AUTHENTICATION_CREDENTIALS_0 {
 }
 unsafe impl ::windows::core::Abi for WSMAN_AUTHENTICATION_CREDENTIALS_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSMAN_AUTHENTICATION_CREDENTIALS_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -3196,6 +3198,7 @@ impl ::core::fmt::Debug for WSMAN_AUTHZ_QUOTA {
 }
 unsafe impl ::windows::core::Abi for WSMAN_AUTHZ_QUOTA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSMAN_AUTHZ_QUOTA {
     fn eq(&self, other: &Self) -> bool {
@@ -3229,6 +3232,7 @@ impl ::core::fmt::Debug for WSMAN_CERTIFICATE_DETAILS {
 }
 unsafe impl ::windows::core::Abi for WSMAN_CERTIFICATE_DETAILS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSMAN_CERTIFICATE_DETAILS {
     fn eq(&self, other: &Self) -> bool {
@@ -3268,6 +3272,7 @@ impl ::core::fmt::Debug for WSMAN_COMMAND_ARG_SET {
 }
 unsafe impl ::windows::core::Abi for WSMAN_COMMAND_ARG_SET {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSMAN_COMMAND_ARG_SET {
     fn eq(&self, other: &Self) -> bool {
@@ -3293,6 +3298,7 @@ impl ::core::clone::Clone for WSMAN_CONNECT_DATA {
 }
 unsafe impl ::windows::core::Abi for WSMAN_CONNECT_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSMAN_CONNECT_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -3318,6 +3324,7 @@ impl ::core::clone::Clone for WSMAN_CREATE_SHELL_DATA {
 }
 unsafe impl ::windows::core::Abi for WSMAN_CREATE_SHELL_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSMAN_CREATE_SHELL_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -3344,6 +3351,7 @@ impl ::core::clone::Clone for WSMAN_DATA {
 }
 unsafe impl ::windows::core::Abi for WSMAN_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSMAN_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -3371,6 +3379,7 @@ impl ::core::clone::Clone for WSMAN_DATA_0 {
 }
 unsafe impl ::windows::core::Abi for WSMAN_DATA_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSMAN_DATA_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -3402,6 +3411,7 @@ impl ::core::fmt::Debug for WSMAN_DATA_BINARY {
 }
 unsafe impl ::windows::core::Abi for WSMAN_DATA_BINARY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSMAN_DATA_BINARY {
     fn eq(&self, other: &Self) -> bool {
@@ -3433,6 +3443,7 @@ impl ::core::fmt::Debug for WSMAN_DATA_TEXT {
 }
 unsafe impl ::windows::core::Abi for WSMAN_DATA_TEXT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSMAN_DATA_TEXT {
     fn eq(&self, other: &Self) -> bool {
@@ -3466,6 +3477,7 @@ impl ::core::fmt::Debug for WSMAN_ENVIRONMENT_VARIABLE {
 }
 unsafe impl ::windows::core::Abi for WSMAN_ENVIRONMENT_VARIABLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSMAN_ENVIRONMENT_VARIABLE {
     fn eq(&self, other: &Self) -> bool {
@@ -3497,6 +3509,7 @@ impl ::core::fmt::Debug for WSMAN_ENVIRONMENT_VARIABLE_SET {
 }
 unsafe impl ::windows::core::Abi for WSMAN_ENVIRONMENT_VARIABLE_SET {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSMAN_ENVIRONMENT_VARIABLE_SET {
     fn eq(&self, other: &Self) -> bool {
@@ -3531,6 +3544,7 @@ impl ::core::fmt::Debug for WSMAN_ERROR {
 }
 unsafe impl ::windows::core::Abi for WSMAN_ERROR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSMAN_ERROR {
     fn eq(&self, other: &Self) -> bool {
@@ -3562,6 +3576,7 @@ impl ::core::fmt::Debug for WSMAN_FILTER {
 }
 unsafe impl ::windows::core::Abi for WSMAN_FILTER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSMAN_FILTER {
     fn eq(&self, other: &Self) -> bool {
@@ -3605,6 +3620,7 @@ impl ::core::fmt::Debug for WSMAN_FRAGMENT {
 }
 unsafe impl ::windows::core::Abi for WSMAN_FRAGMENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSMAN_FRAGMENT {
     fn eq(&self, other: &Self) -> bool {
@@ -3636,6 +3652,7 @@ impl ::core::fmt::Debug for WSMAN_KEY {
 }
 unsafe impl ::windows::core::Abi for WSMAN_KEY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSMAN_KEY {
     fn eq(&self, other: &Self) -> bool {
@@ -3678,6 +3695,7 @@ impl ::core::fmt::Debug for WSMAN_OPERATION_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WSMAN_OPERATION_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WSMAN_OPERATION_INFO {
@@ -3722,6 +3740,7 @@ impl ::core::fmt::Debug for WSMAN_OPERATION_INFOEX {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WSMAN_OPERATION_INFOEX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WSMAN_OPERATION_INFOEX {
@@ -3766,6 +3785,7 @@ impl ::core::fmt::Debug for WSMAN_OPTION {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WSMAN_OPTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WSMAN_OPTION {
@@ -3806,6 +3826,7 @@ impl ::core::fmt::Debug for WSMAN_OPTION_SET {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WSMAN_OPTION_SET {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WSMAN_OPTION_SET {
@@ -3847,6 +3868,7 @@ impl ::core::fmt::Debug for WSMAN_OPTION_SETEX {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WSMAN_OPTION_SETEX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WSMAN_OPTION_SETEX {
@@ -3937,6 +3959,7 @@ impl ::core::fmt::Debug for WSMAN_PLUGIN_REQUEST {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WSMAN_PLUGIN_REQUEST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WSMAN_PLUGIN_REQUEST {
@@ -3993,6 +4016,7 @@ impl ::core::clone::Clone for WSMAN_PROXY_INFO {
 }
 unsafe impl ::windows::core::Abi for WSMAN_PROXY_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSMAN_PROXY_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -4021,6 +4045,7 @@ impl ::core::clone::Clone for WSMAN_RECEIVE_DATA_RESULT {
 }
 unsafe impl ::windows::core::Abi for WSMAN_RECEIVE_DATA_RESULT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSMAN_RECEIVE_DATA_RESULT {
     fn eq(&self, other: &Self) -> bool {
@@ -4048,6 +4073,7 @@ impl ::core::clone::Clone for WSMAN_RESPONSE_DATA {
 }
 unsafe impl ::windows::core::Abi for WSMAN_RESPONSE_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSMAN_RESPONSE_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -4079,6 +4105,7 @@ impl ::core::fmt::Debug for WSMAN_SELECTOR_SET {
 }
 unsafe impl ::windows::core::Abi for WSMAN_SELECTOR_SET {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSMAN_SELECTOR_SET {
     fn eq(&self, other: &Self) -> bool {
@@ -4118,6 +4145,7 @@ impl ::core::fmt::Debug for WSMAN_SENDER_DETAILS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WSMAN_SENDER_DETAILS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WSMAN_SENDER_DETAILS {
@@ -4156,6 +4184,7 @@ impl ::core::fmt::Debug for WSMAN_SHELL_ASYNC {
 }
 unsafe impl ::windows::core::Abi for WSMAN_SHELL_ASYNC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSMAN_SHELL_ASYNC {
     fn eq(&self, other: &Self) -> bool {
@@ -4188,6 +4217,7 @@ impl ::core::fmt::Debug for WSMAN_SHELL_DISCONNECT_INFO {
 }
 unsafe impl ::windows::core::Abi for WSMAN_SHELL_DISCONNECT_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSMAN_SHELL_DISCONNECT_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -4226,6 +4256,7 @@ impl ::core::fmt::Debug for WSMAN_SHELL_STARTUP_INFO_V10 {
 }
 unsafe impl ::windows::core::Abi for WSMAN_SHELL_STARTUP_INFO_V10 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSMAN_SHELL_STARTUP_INFO_V10 {
     fn eq(&self, other: &Self) -> bool {
@@ -4257,6 +4288,7 @@ impl ::core::fmt::Debug for WSMAN_SHELL_STARTUP_INFO_V11 {
 }
 unsafe impl ::windows::core::Abi for WSMAN_SHELL_STARTUP_INFO_V11 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSMAN_SHELL_STARTUP_INFO_V11 {
     fn eq(&self, other: &Self) -> bool {
@@ -4288,6 +4320,7 @@ impl ::core::fmt::Debug for WSMAN_STREAM_ID_SET {
 }
 unsafe impl ::windows::core::Abi for WSMAN_STREAM_ID_SET {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSMAN_STREAM_ID_SET {
     fn eq(&self, other: &Self) -> bool {
@@ -4325,6 +4358,7 @@ impl ::core::fmt::Debug for WSMAN_USERNAME_PASSWORD_CREDS {
 }
 unsafe impl ::windows::core::Abi for WSMAN_USERNAME_PASSWORD_CREDS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSMAN_USERNAME_PASSWORD_CREDS {
     fn eq(&self, other: &Self) -> bool {
@@ -4371,6 +4405,7 @@ impl ::core::default::Default for WSManAuthenticationFlags {
 }
 unsafe impl ::windows::core::Abi for WSManAuthenticationFlags {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WSManAuthenticationFlags {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4414,6 +4449,7 @@ impl ::core::default::Default for WSManCallbackFlags {
 }
 unsafe impl ::windows::core::Abi for WSManCallbackFlags {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WSManCallbackFlags {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4575,6 +4611,7 @@ impl ::core::default::Default for WSManDataType {
 }
 unsafe impl ::windows::core::Abi for WSManDataType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WSManDataType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4644,6 +4681,7 @@ impl ::core::default::Default for WSManEnumFlags {
 }
 unsafe impl ::windows::core::Abi for WSManEnumFlags {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WSManEnumFlags {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4880,6 +4918,7 @@ impl ::core::default::Default for WSManProxyAccessType {
 }
 unsafe impl ::windows::core::Abi for WSManProxyAccessType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WSManProxyAccessType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4911,6 +4950,7 @@ impl ::core::default::Default for WSManProxyAccessTypeFlags {
 }
 unsafe impl ::windows::core::Abi for WSManProxyAccessTypeFlags {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WSManProxyAccessTypeFlags {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4940,6 +4980,7 @@ impl ::core::default::Default for WSManProxyAuthenticationFlags {
 }
 unsafe impl ::windows::core::Abi for WSManProxyAuthenticationFlags {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WSManProxyAuthenticationFlags {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5084,6 +5125,7 @@ impl ::core::default::Default for WSManSessionFlags {
 }
 unsafe impl ::windows::core::Abi for WSManSessionFlags {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WSManSessionFlags {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5153,6 +5195,7 @@ impl ::core::default::Default for WSManSessionOption {
 }
 unsafe impl ::windows::core::Abi for WSManSessionOption {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WSManSessionOption {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5200,6 +5243,7 @@ impl ::core::default::Default for WSManShellFlag {
 }
 unsafe impl ::windows::core::Abi for WSManShellFlag {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WSManShellFlag {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

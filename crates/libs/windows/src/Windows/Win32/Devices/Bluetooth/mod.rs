@@ -50,6 +50,7 @@ impl ::core::default::Default for AUTHENTICATION_REQUIREMENTS {
 }
 unsafe impl ::windows::core::Abi for AUTHENTICATION_REQUIREMENTS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AUTHENTICATION_REQUIREMENTS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -181,6 +182,7 @@ impl ::core::clone::Clone for BLUETOOTH_ADDRESS {
 }
 unsafe impl ::windows::core::Abi for BLUETOOTH_ADDRESS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for BLUETOOTH_ADDRESS {
     fn eq(&self, other: &Self) -> bool {
@@ -207,6 +209,7 @@ impl ::core::clone::Clone for BLUETOOTH_ADDRESS_0 {
 }
 unsafe impl ::windows::core::Abi for BLUETOOTH_ADDRESS_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for BLUETOOTH_ADDRESS_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -235,6 +238,7 @@ impl ::core::clone::Clone for BLUETOOTH_AUTHENTICATE_RESPONSE {
 }
 unsafe impl ::windows::core::Abi for BLUETOOTH_AUTHENTICATE_RESPONSE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for BLUETOOTH_AUTHENTICATE_RESPONSE {
     fn eq(&self, other: &Self) -> bool {
@@ -263,6 +267,7 @@ impl ::core::clone::Clone for BLUETOOTH_AUTHENTICATE_RESPONSE_0 {
 }
 unsafe impl ::windows::core::Abi for BLUETOOTH_AUTHENTICATE_RESPONSE_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for BLUETOOTH_AUTHENTICATE_RESPONSE_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -296,6 +301,7 @@ impl ::core::clone::Clone for BLUETOOTH_AUTHENTICATION_CALLBACK_PARAMS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for BLUETOOTH_AUTHENTICATION_CALLBACK_PARAMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for BLUETOOTH_AUTHENTICATION_CALLBACK_PARAMS {
@@ -329,6 +335,7 @@ impl ::core::clone::Clone for BLUETOOTH_AUTHENTICATION_CALLBACK_PARAMS_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for BLUETOOTH_AUTHENTICATION_CALLBACK_PARAMS_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for BLUETOOTH_AUTHENTICATION_CALLBACK_PARAMS_0 {
@@ -371,6 +378,7 @@ impl ::core::default::Default for BLUETOOTH_AUTHENTICATION_METHOD {
 }
 unsafe impl ::windows::core::Abi for BLUETOOTH_AUTHENTICATION_METHOD {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for BLUETOOTH_AUTHENTICATION_METHOD {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -408,6 +416,7 @@ impl ::core::default::Default for BLUETOOTH_AUTHENTICATION_REQUIREMENTS {
 }
 unsafe impl ::windows::core::Abi for BLUETOOTH_AUTHENTICATION_REQUIREMENTS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for BLUETOOTH_AUTHENTICATION_REQUIREMENTS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -433,6 +442,7 @@ impl ::core::fmt::Debug for BLUETOOTH_COD_PAIRS {
 }
 unsafe impl ::windows::core::Abi for BLUETOOTH_COD_PAIRS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for BLUETOOTH_COD_PAIRS {
     fn eq(&self, other: &Self) -> bool {
@@ -470,6 +480,7 @@ impl ::core::clone::Clone for BLUETOOTH_DEVICE_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for BLUETOOTH_DEVICE_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for BLUETOOTH_DEVICE_INFO {
@@ -517,6 +528,7 @@ impl ::core::fmt::Debug for BLUETOOTH_DEVICE_SEARCH_PARAMS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for BLUETOOTH_DEVICE_SEARCH_PARAMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for BLUETOOTH_DEVICE_SEARCH_PARAMS {
@@ -550,6 +562,7 @@ impl ::core::fmt::Debug for BLUETOOTH_FIND_RADIO_PARAMS {
 }
 unsafe impl ::windows::core::Abi for BLUETOOTH_FIND_RADIO_PARAMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for BLUETOOTH_FIND_RADIO_PARAMS {
     fn eq(&self, other: &Self) -> bool {
@@ -598,6 +611,7 @@ impl ::core::fmt::Debug for BLUETOOTH_GATT_VALUE_CHANGED_EVENT {
 }
 unsafe impl ::windows::core::Abi for BLUETOOTH_GATT_VALUE_CHANGED_EVENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for BLUETOOTH_GATT_VALUE_CHANGED_EVENT {
     fn eq(&self, other: &Self) -> bool {
@@ -628,6 +642,7 @@ impl ::core::clone::Clone for BLUETOOTH_GATT_VALUE_CHANGED_EVENT_REGISTRATION {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for BLUETOOTH_GATT_VALUE_CHANGED_EVENT_REGISTRATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for BLUETOOTH_GATT_VALUE_CHANGED_EVENT_REGISTRATION {
@@ -670,6 +685,7 @@ impl ::core::default::Default for BLUETOOTH_IO_CAPABILITY {
 }
 unsafe impl ::windows::core::Abi for BLUETOOTH_IO_CAPABILITY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for BLUETOOTH_IO_CAPABILITY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -696,6 +712,7 @@ impl ::core::clone::Clone for BLUETOOTH_LOCAL_SERVICE_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for BLUETOOTH_LOCAL_SERVICE_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for BLUETOOTH_LOCAL_SERVICE_INFO {
@@ -737,6 +754,7 @@ impl ::core::fmt::Debug for BLUETOOTH_NUMERIC_COMPARISON_INFO {
 }
 unsafe impl ::windows::core::Abi for BLUETOOTH_NUMERIC_COMPARISON_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for BLUETOOTH_NUMERIC_COMPARISON_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -768,6 +786,7 @@ impl ::core::fmt::Debug for BLUETOOTH_OOB_DATA_INFO {
 }
 unsafe impl ::windows::core::Abi for BLUETOOTH_OOB_DATA_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for BLUETOOTH_OOB_DATA_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -798,6 +817,7 @@ impl ::core::fmt::Debug for BLUETOOTH_PASSKEY_INFO {
 }
 unsafe impl ::windows::core::Abi for BLUETOOTH_PASSKEY_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for BLUETOOTH_PASSKEY_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -829,6 +849,7 @@ impl ::core::fmt::Debug for BLUETOOTH_PIN_INFO {
 }
 unsafe impl ::windows::core::Abi for BLUETOOTH_PIN_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for BLUETOOTH_PIN_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -859,6 +880,7 @@ impl ::core::clone::Clone for BLUETOOTH_RADIO_INFO {
 }
 unsafe impl ::windows::core::Abi for BLUETOOTH_RADIO_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for BLUETOOTH_RADIO_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -924,6 +946,7 @@ impl ::core::fmt::Debug for BLUETOOTH_SELECT_DEVICE_PARAMS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for BLUETOOTH_SELECT_DEVICE_PARAMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for BLUETOOTH_SELECT_DEVICE_PARAMS {
@@ -999,6 +1022,7 @@ impl ::core::fmt::Debug for BTH_DEVICE_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for BTH_DEVICE_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for BTH_DEVICE_INFO {
@@ -1204,6 +1228,7 @@ impl ::core::fmt::Debug for BTH_HCI_EVENT_INFO {
 }
 unsafe impl ::windows::core::Abi for BTH_HCI_EVENT_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for BTH_HCI_EVENT_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -1240,6 +1265,7 @@ impl ::core::clone::Clone for BTH_INFO_REQ {
 }
 unsafe impl ::windows::core::Abi for BTH_INFO_REQ {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for BTH_INFO_REQ {
     fn eq(&self, other: &Self) -> bool {
@@ -1267,6 +1293,7 @@ impl ::core::clone::Clone for BTH_INFO_RSP {
 }
 unsafe impl ::windows::core::Abi for BTH_INFO_RSP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for BTH_INFO_RSP {
     fn eq(&self, other: &Self) -> bool {
@@ -1293,6 +1320,7 @@ impl ::core::clone::Clone for BTH_INFO_RSP_0 {
 }
 unsafe impl ::windows::core::Abi for BTH_INFO_RSP_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for BTH_INFO_RSP_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -1328,6 +1356,7 @@ impl ::core::fmt::Debug for BTH_L2CAP_EVENT_INFO {
 }
 unsafe impl ::windows::core::Abi for BTH_L2CAP_EVENT_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for BTH_L2CAP_EVENT_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -1525,6 +1554,7 @@ impl ::core::clone::Clone for BTH_LE_GATT_CHARACTERISTIC {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for BTH_LE_GATT_CHARACTERISTIC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for BTH_LE_GATT_CHARACTERISTIC {
@@ -1583,6 +1613,7 @@ impl ::core::fmt::Debug for BTH_LE_GATT_CHARACTERISTIC_VALUE {
 }
 unsafe impl ::windows::core::Abi for BTH_LE_GATT_CHARACTERISTIC_VALUE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for BTH_LE_GATT_CHARACTERISTIC_VALUE {
     fn eq(&self, other: &Self) -> bool {
@@ -1618,6 +1649,7 @@ impl ::core::clone::Clone for BTH_LE_GATT_DESCRIPTOR {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for BTH_LE_GATT_DESCRIPTOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for BTH_LE_GATT_DESCRIPTOR {
@@ -1664,6 +1696,7 @@ impl ::core::default::Default for BTH_LE_GATT_DESCRIPTOR_TYPE {
 }
 unsafe impl ::windows::core::Abi for BTH_LE_GATT_DESCRIPTOR_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for BTH_LE_GATT_DESCRIPTOR_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1691,6 +1724,7 @@ impl ::core::clone::Clone for BTH_LE_GATT_DESCRIPTOR_VALUE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for BTH_LE_GATT_DESCRIPTOR_VALUE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for BTH_LE_GATT_DESCRIPTOR_VALUE {
@@ -1726,6 +1760,7 @@ impl ::core::clone::Clone for BTH_LE_GATT_DESCRIPTOR_VALUE_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for BTH_LE_GATT_DESCRIPTOR_VALUE_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for BTH_LE_GATT_DESCRIPTOR_VALUE_0 {
@@ -1765,6 +1800,7 @@ impl ::core::fmt::Debug for BTH_LE_GATT_DESCRIPTOR_VALUE_0_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for BTH_LE_GATT_DESCRIPTOR_VALUE_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for BTH_LE_GATT_DESCRIPTOR_VALUE_0_0 {
@@ -1801,6 +1837,7 @@ impl ::core::clone::Clone for BTH_LE_GATT_DESCRIPTOR_VALUE_0_1 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for BTH_LE_GATT_DESCRIPTOR_VALUE_0_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for BTH_LE_GATT_DESCRIPTOR_VALUE_0_1 {
@@ -1840,6 +1877,7 @@ impl ::core::fmt::Debug for BTH_LE_GATT_DESCRIPTOR_VALUE_0_2 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for BTH_LE_GATT_DESCRIPTOR_VALUE_0_2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for BTH_LE_GATT_DESCRIPTOR_VALUE_0_2 {
@@ -1878,6 +1916,7 @@ impl ::core::fmt::Debug for BTH_LE_GATT_DESCRIPTOR_VALUE_0_3 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for BTH_LE_GATT_DESCRIPTOR_VALUE_0_3 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for BTH_LE_GATT_DESCRIPTOR_VALUE_0_3 {
@@ -1912,6 +1951,7 @@ impl ::core::default::Default for BTH_LE_GATT_EVENT_TYPE {
 }
 unsafe impl ::windows::core::Abi for BTH_LE_GATT_EVENT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for BTH_LE_GATT_EVENT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1936,6 +1976,7 @@ impl ::core::clone::Clone for BTH_LE_GATT_SERVICE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for BTH_LE_GATT_SERVICE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for BTH_LE_GATT_SERVICE {
@@ -1973,6 +2014,7 @@ impl ::core::clone::Clone for BTH_LE_UUID {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for BTH_LE_UUID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for BTH_LE_UUID {
@@ -2006,6 +2048,7 @@ impl ::core::clone::Clone for BTH_LE_UUID_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for BTH_LE_UUID_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for BTH_LE_UUID_0 {
@@ -2148,6 +2191,7 @@ impl ::core::clone::Clone for BTH_PING_REQ {
 }
 unsafe impl ::windows::core::Abi for BTH_PING_REQ {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for BTH_PING_REQ {
     fn eq(&self, other: &Self) -> bool {
@@ -2179,6 +2223,7 @@ impl ::core::fmt::Debug for BTH_PING_RSP {
 }
 unsafe impl ::windows::core::Abi for BTH_PING_RSP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for BTH_PING_RSP {
     fn eq(&self, other: &Self) -> bool {
@@ -2205,6 +2250,7 @@ impl ::core::clone::Clone for BTH_QUERY_DEVICE {
 }
 unsafe impl ::windows::core::Abi for BTH_QUERY_DEVICE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for BTH_QUERY_DEVICE {
     fn eq(&self, other: &Self) -> bool {
@@ -2234,6 +2280,7 @@ impl ::core::clone::Clone for BTH_QUERY_SERVICE {
 }
 unsafe impl ::windows::core::Abi for BTH_QUERY_SERVICE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for BTH_QUERY_SERVICE {
     fn eq(&self, other: &Self) -> bool {
@@ -2270,6 +2317,7 @@ impl ::core::fmt::Debug for BTH_RADIO_IN_RANGE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for BTH_RADIO_IN_RANGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for BTH_RADIO_IN_RANGE {
@@ -2309,6 +2357,7 @@ impl ::core::clone::Clone for BTH_SET_SERVICE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for BTH_SET_SERVICE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for BTH_SET_SERVICE {
@@ -3342,6 +3391,7 @@ impl ::core::fmt::Debug for HANDLE_SDP_TYPE {
 }
 unsafe impl ::windows::core::Abi for HANDLE_SDP_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[doc = "*Required features: `\"Win32_Devices_Bluetooth\"`*"]
 pub const HCCC_PROTOCOL_UUID16: u32 = 18u32;
@@ -3416,6 +3466,7 @@ impl ::core::default::Default for IO_CAPABILITY {
 }
 unsafe impl ::windows::core::Abi for IO_CAPABILITY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for IO_CAPABILITY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3505,6 +3556,7 @@ impl ::core::default::Default for NodeContainerType {
 }
 unsafe impl ::windows::core::Abi for NodeContainerType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NodeContainerType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3617,6 +3669,7 @@ impl ::core::clone::Clone for RFCOMM_COMMAND {
 }
 unsafe impl ::windows::core::Abi for RFCOMM_COMMAND {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RFCOMM_COMMAND {
     fn eq(&self, other: &Self) -> bool {
@@ -3644,6 +3697,7 @@ impl ::core::clone::Clone for RFCOMM_COMMAND_0 {
 }
 unsafe impl ::windows::core::Abi for RFCOMM_COMMAND_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RFCOMM_COMMAND_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -3679,6 +3733,7 @@ impl ::core::fmt::Debug for RFCOMM_MSC_DATA {
 }
 unsafe impl ::windows::core::Abi for RFCOMM_MSC_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RFCOMM_MSC_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -3711,6 +3766,7 @@ impl ::core::fmt::Debug for RFCOMM_RLS_DATA {
 }
 unsafe impl ::windows::core::Abi for RFCOMM_RLS_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RFCOMM_RLS_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -3747,6 +3803,7 @@ impl ::core::fmt::Debug for RFCOMM_RPN_DATA {
 }
 unsafe impl ::windows::core::Abi for RFCOMM_RPN_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RFCOMM_RPN_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -4008,6 +4065,7 @@ impl ::core::clone::Clone for SDP_ELEMENT_DATA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SDP_ELEMENT_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for SDP_ELEMENT_DATA {
@@ -4057,6 +4115,7 @@ impl ::core::clone::Clone for SDP_ELEMENT_DATA_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SDP_ELEMENT_DATA_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for SDP_ELEMENT_DATA_0 {
@@ -4096,6 +4155,7 @@ impl ::core::fmt::Debug for SDP_ELEMENT_DATA_0_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SDP_ELEMENT_DATA_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for SDP_ELEMENT_DATA_0_0 {
@@ -4135,6 +4195,7 @@ impl ::core::fmt::Debug for SDP_ELEMENT_DATA_0_1 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SDP_ELEMENT_DATA_0_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for SDP_ELEMENT_DATA_0_1 {
@@ -4174,6 +4235,7 @@ impl ::core::fmt::Debug for SDP_ELEMENT_DATA_0_2 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SDP_ELEMENT_DATA_0_2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for SDP_ELEMENT_DATA_0_2 {
@@ -4213,6 +4275,7 @@ impl ::core::fmt::Debug for SDP_ELEMENT_DATA_0_3 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SDP_ELEMENT_DATA_0_3 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for SDP_ELEMENT_DATA_0_3 {
@@ -4259,6 +4322,7 @@ impl ::core::fmt::Debug for SDP_LARGE_INTEGER_16 {
 }
 unsafe impl ::windows::core::Abi for SDP_LARGE_INTEGER_16 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SDP_LARGE_INTEGER_16 {
     fn eq(&self, other: &Self) -> bool {
@@ -4336,6 +4400,7 @@ impl ::core::default::Default for SDP_SPECIFICTYPE {
 }
 unsafe impl ::windows::core::Abi for SDP_SPECIFICTYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SDP_SPECIFICTYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4362,6 +4427,7 @@ impl ::core::fmt::Debug for SDP_STRING_TYPE_DATA {
 }
 unsafe impl ::windows::core::Abi for SDP_STRING_TYPE_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SDP_STRING_TYPE_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -4411,6 +4477,7 @@ impl ::core::default::Default for SDP_TYPE {
 }
 unsafe impl ::windows::core::Abi for SDP_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SDP_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4436,6 +4503,7 @@ impl ::core::fmt::Debug for SDP_ULARGE_INTEGER_16 {
 }
 unsafe impl ::windows::core::Abi for SDP_ULARGE_INTEGER_16 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SDP_ULARGE_INTEGER_16 {
     fn eq(&self, other: &Self) -> bool {
@@ -4486,6 +4554,7 @@ impl ::core::clone::Clone for SOCKADDR_BTH {
 }
 unsafe impl ::windows::core::Abi for SOCKADDR_BTH {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SOCKADDR_BTH {
     fn eq(&self, other: &Self) -> bool {
@@ -4566,6 +4635,7 @@ impl ::core::fmt::Debug for SdpAttributeRange {
 }
 unsafe impl ::windows::core::Abi for SdpAttributeRange {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SdpAttributeRange {
     fn eq(&self, other: &Self) -> bool {
@@ -4592,6 +4662,7 @@ impl ::core::clone::Clone for SdpQueryUuid {
 }
 unsafe impl ::windows::core::Abi for SdpQueryUuid {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SdpQueryUuid {
     fn eq(&self, other: &Self) -> bool {
@@ -4619,6 +4690,7 @@ impl ::core::clone::Clone for SdpQueryUuidUnion {
 }
 unsafe impl ::windows::core::Abi for SdpQueryUuidUnion {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SdpQueryUuidUnion {
     fn eq(&self, other: &Self) -> bool {

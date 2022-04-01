@@ -17,11 +17,6 @@ impl ApplicationDataManager {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for ApplicationDataManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ApplicationDataManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -35,7 +30,6 @@ impl ::core::fmt::Debug for ApplicationDataManager {
 }
 unsafe impl ::windows::core::RuntimeType for ApplicationDataManager {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Management.Core.ApplicationDataManager;{74d10432-2e99-4000-9a3a-64307e858129})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -92,6 +86,11 @@ unsafe impl ::core::marker::Sync for ApplicationDataManager {}
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IApplicationDataManager(::windows::core::IUnknown);
+impl ::core::clone::Clone for IApplicationDataManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IApplicationDataManager {
     type Vtable = IApplicationDataManager_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x74d10432_2e99_4000_9a3a_64307e858129);
@@ -104,6 +103,11 @@ pub struct IApplicationDataManager_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IApplicationDataManagerStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IApplicationDataManagerStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IApplicationDataManagerStatics {
     type Vtable = IApplicationDataManagerStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1e1862e3_698e_49a1_9752_dee94925b9b3);

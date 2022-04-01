@@ -23,6 +23,7 @@ impl ::core::default::Default for ExtendedExecutionReason {
 }
 unsafe impl ::windows::core::Abi for ExtendedExecutionReason {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ExtendedExecutionReason {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -31,7 +32,6 @@ impl ::core::fmt::Debug for ExtendedExecutionReason {
 }
 unsafe impl ::windows::core::RuntimeType for ExtendedExecutionReason {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.ExtendedExecution.ExtendedExecutionReason;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -57,6 +57,7 @@ impl ::core::default::Default for ExtendedExecutionResult {
 }
 unsafe impl ::windows::core::Abi for ExtendedExecutionResult {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ExtendedExecutionResult {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -65,7 +66,6 @@ impl ::core::fmt::Debug for ExtendedExecutionResult {
 }
 unsafe impl ::windows::core::RuntimeType for ExtendedExecutionResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.ExtendedExecution.ExtendedExecutionResult;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -83,11 +83,6 @@ impl ExtendedExecutionRevokedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for ExtendedExecutionRevokedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ExtendedExecutionRevokedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -101,7 +96,6 @@ impl ::core::fmt::Debug for ExtendedExecutionRevokedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for ExtendedExecutionRevokedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.ExtendedExecution.ExtendedExecutionRevokedEventArgs;{bfbc9f16-63b5-4c0b-aad6-828af5373ec3})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -176,6 +170,7 @@ impl ::core::default::Default for ExtendedExecutionRevokedReason {
 }
 unsafe impl ::windows::core::Abi for ExtendedExecutionRevokedReason {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ExtendedExecutionRevokedReason {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -184,7 +179,6 @@ impl ::core::fmt::Debug for ExtendedExecutionRevokedReason {
 }
 unsafe impl ::windows::core::RuntimeType for ExtendedExecutionRevokedReason {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.ExtendedExecution.ExtendedExecutionRevokedReason;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -270,11 +264,6 @@ impl ExtendedExecutionSession {
         }
     }
 }
-impl ::core::clone::Clone for ExtendedExecutionSession {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ExtendedExecutionSession {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -288,7 +277,6 @@ impl ::core::fmt::Debug for ExtendedExecutionSession {
 }
 unsafe impl ::windows::core::RuntimeType for ExtendedExecutionSession {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.ExtendedExecution.ExtendedExecutionSession;{af908a2d-118b-48f1-9308-0c4fc41e200f})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -371,6 +359,11 @@ unsafe impl ::core::marker::Sync for ExtendedExecutionSession {}
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IExtendedExecutionRevokedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IExtendedExecutionRevokedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IExtendedExecutionRevokedEventArgs {
     type Vtable = IExtendedExecutionRevokedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xbfbc9f16_63b5_4c0b_aad6_828af5373ec3);
@@ -384,6 +377,11 @@ pub struct IExtendedExecutionRevokedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IExtendedExecutionSession(::windows::core::IUnknown);
+impl ::core::clone::Clone for IExtendedExecutionSession {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IExtendedExecutionSession {
     type Vtable = IExtendedExecutionSession_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xaf908a2d_118b_48f1_9308_0c4fc41e200f);

@@ -22,6 +22,7 @@ impl ::core::default::Default for CH_DESCRIPTION_TYPE {
 }
 unsafe impl ::windows::core::Abi for CH_DESCRIPTION_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CH_DESCRIPTION_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -173,6 +174,7 @@ impl ::core::fmt::Debug for DOT11_ACCESSNETWORKOPTIONS {
 }
 unsafe impl ::windows::core::Abi for DOT11_ACCESSNETWORKOPTIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_ACCESSNETWORKOPTIONS {
     fn eq(&self, other: &Self) -> bool {
@@ -212,6 +214,7 @@ impl ::core::default::Default for DOT11_AC_PARAM {
 }
 unsafe impl ::windows::core::Abi for DOT11_AC_PARAM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DOT11_AC_PARAM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -245,6 +248,7 @@ impl ::core::fmt::Debug for DOT11_ADDITIONAL_IE {
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 unsafe impl ::windows::core::Abi for DOT11_ADDITIONAL_IE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 impl ::core::cmp::PartialEq for DOT11_ADDITIONAL_IE {
@@ -285,6 +289,7 @@ impl ::core::default::Default for DOT11_ADHOC_AUTH_ALGORITHM {
 }
 unsafe impl ::windows::core::Abi for DOT11_ADHOC_AUTH_ALGORITHM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DOT11_ADHOC_AUTH_ALGORITHM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -316,6 +321,7 @@ impl ::core::default::Default for DOT11_ADHOC_CIPHER_ALGORITHM {
 }
 unsafe impl ::windows::core::Abi for DOT11_ADHOC_CIPHER_ALGORITHM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DOT11_ADHOC_CIPHER_ALGORITHM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -345,6 +351,7 @@ impl ::core::default::Default for DOT11_ADHOC_CONNECT_FAIL_REASON {
 }
 unsafe impl ::windows::core::Abi for DOT11_ADHOC_CONNECT_FAIL_REASON {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DOT11_ADHOC_CONNECT_FAIL_REASON {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -378,6 +385,7 @@ impl ::core::default::Default for DOT11_ADHOC_NETWORK_CONNECTION_STATUS {
 }
 unsafe impl ::windows::core::Abi for DOT11_ADHOC_NETWORK_CONNECTION_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DOT11_ADHOC_NETWORK_CONNECTION_STATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -410,6 +418,7 @@ impl ::core::fmt::Debug for DOT11_ANQP_QUERY_COMPLETE_PARAMETERS {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_NetworkManagement_Ndis"))]
 unsafe impl ::windows::core::Abi for DOT11_ANQP_QUERY_COMPLETE_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_NetworkManagement_Ndis"))]
 impl ::core::cmp::PartialEq for DOT11_ANQP_QUERY_COMPLETE_PARAMETERS {
@@ -460,6 +469,7 @@ impl ::core::default::Default for DOT11_ANQP_QUERY_RESULT {
 }
 unsafe impl ::windows::core::Abi for DOT11_ANQP_QUERY_RESULT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DOT11_ANQP_QUERY_RESULT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -487,6 +497,7 @@ impl ::core::fmt::Debug for DOT11_AP_JOIN_REQUEST {
 }
 unsafe impl ::windows::core::Abi for DOT11_AP_JOIN_REQUEST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_AP_JOIN_REQUEST {
     fn eq(&self, other: &Self) -> bool {
@@ -574,6 +585,7 @@ impl ::core::fmt::Debug for DOT11_ASSOCIATION_COMPLETION_PARAMETERS {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_NetworkManagement_Ndis"))]
 unsafe impl ::windows::core::Abi for DOT11_ASSOCIATION_COMPLETION_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_NetworkManagement_Ndis"))]
 impl ::core::cmp::PartialEq for DOT11_ASSOCIATION_COMPLETION_PARAMETERS {
@@ -637,6 +649,7 @@ impl ::core::fmt::Debug for DOT11_ASSOCIATION_INFO_EX {
 }
 unsafe impl ::windows::core::Abi for DOT11_ASSOCIATION_INFO_EX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_ASSOCIATION_INFO_EX {
     fn eq(&self, other: &Self) -> bool {
@@ -675,6 +688,7 @@ impl ::core::fmt::Debug for DOT11_ASSOCIATION_INFO_LIST {
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 unsafe impl ::windows::core::Abi for DOT11_ASSOCIATION_INFO_LIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 impl ::core::cmp::PartialEq for DOT11_ASSOCIATION_INFO_LIST {
@@ -718,6 +732,7 @@ impl ::core::fmt::Debug for DOT11_ASSOCIATION_PARAMS {
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 unsafe impl ::windows::core::Abi for DOT11_ASSOCIATION_PARAMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 impl ::core::cmp::PartialEq for DOT11_ASSOCIATION_PARAMS {
@@ -762,6 +777,7 @@ impl ::core::fmt::Debug for DOT11_ASSOCIATION_START_PARAMETERS {
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 unsafe impl ::windows::core::Abi for DOT11_ASSOCIATION_START_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 impl ::core::cmp::PartialEq for DOT11_ASSOCIATION_START_PARAMETERS {
@@ -804,6 +820,7 @@ impl ::core::default::Default for DOT11_ASSOCIATION_STATE {
 }
 unsafe impl ::windows::core::Abi for DOT11_ASSOCIATION_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DOT11_ASSOCIATION_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -863,6 +880,7 @@ impl ::core::default::Default for DOT11_AUTH_ALGORITHM {
 }
 unsafe impl ::windows::core::Abi for DOT11_AUTH_ALGORITHM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DOT11_AUTH_ALGORITHM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -895,6 +913,7 @@ impl ::core::fmt::Debug for DOT11_AUTH_ALGORITHM_LIST {
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 unsafe impl ::windows::core::Abi for DOT11_AUTH_ALGORITHM_LIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 impl ::core::cmp::PartialEq for DOT11_AUTH_ALGORITHM_LIST {
@@ -933,6 +952,7 @@ impl ::core::fmt::Debug for DOT11_AUTH_CIPHER_PAIR {
 }
 unsafe impl ::windows::core::Abi for DOT11_AUTH_CIPHER_PAIR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_AUTH_CIPHER_PAIR {
     fn eq(&self, other: &Self) -> bool {
@@ -971,6 +991,7 @@ impl ::core::fmt::Debug for DOT11_AUTH_CIPHER_PAIR_LIST {
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 unsafe impl ::windows::core::Abi for DOT11_AUTH_CIPHER_PAIR_LIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 impl ::core::cmp::PartialEq for DOT11_AUTH_CIPHER_PAIR_LIST {
@@ -1014,6 +1035,7 @@ impl ::core::fmt::Debug for DOT11_AVAILABLE_CHANNEL_LIST {
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 unsafe impl ::windows::core::Abi for DOT11_AVAILABLE_CHANNEL_LIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 impl ::core::cmp::PartialEq for DOT11_AVAILABLE_CHANNEL_LIST {
@@ -1057,6 +1079,7 @@ impl ::core::fmt::Debug for DOT11_AVAILABLE_FREQUENCY_LIST {
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 unsafe impl ::windows::core::Abi for DOT11_AVAILABLE_FREQUENCY_LIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 impl ::core::cmp::PartialEq for DOT11_AVAILABLE_FREQUENCY_LIST {
@@ -1097,6 +1120,7 @@ impl ::core::default::Default for DOT11_BAND {
 }
 unsafe impl ::windows::core::Abi for DOT11_BAND {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DOT11_BAND {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1122,6 +1146,7 @@ impl ::core::fmt::Debug for DOT11_BSSID_CANDIDATE {
 }
 unsafe impl ::windows::core::Abi for DOT11_BSSID_CANDIDATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_BSSID_CANDIDATE {
     fn eq(&self, other: &Self) -> bool {
@@ -1160,6 +1185,7 @@ impl ::core::fmt::Debug for DOT11_BSSID_LIST {
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 unsafe impl ::windows::core::Abi for DOT11_BSSID_LIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 impl ::core::cmp::PartialEq for DOT11_BSSID_LIST {
@@ -1202,6 +1228,7 @@ impl ::core::fmt::Debug for DOT11_BSS_DESCRIPTION {
 }
 unsafe impl ::windows::core::Abi for DOT11_BSS_DESCRIPTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_BSS_DESCRIPTION {
     fn eq(&self, other: &Self) -> bool {
@@ -1243,6 +1270,7 @@ impl ::core::clone::Clone for DOT11_BSS_ENTRY {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DOT11_BSS_ENTRY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DOT11_BSS_ENTRY {
@@ -1274,6 +1302,7 @@ impl ::core::clone::Clone for DOT11_BSS_ENTRY_PHY_SPECIFIC_INFO {
 }
 unsafe impl ::windows::core::Abi for DOT11_BSS_ENTRY_PHY_SPECIFIC_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_BSS_ENTRY_PHY_SPECIFIC_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -1306,6 +1335,7 @@ impl ::core::fmt::Debug for DOT11_BSS_ENTRY_PHY_SPECIFIC_INFO_0 {
 }
 unsafe impl ::windows::core::Abi for DOT11_BSS_ENTRY_PHY_SPECIFIC_INFO_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_BSS_ENTRY_PHY_SPECIFIC_INFO_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -1341,6 +1371,7 @@ impl ::core::default::Default for DOT11_BSS_TYPE {
 }
 unsafe impl ::windows::core::Abi for DOT11_BSS_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DOT11_BSS_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1373,6 +1404,7 @@ impl ::core::fmt::Debug for DOT11_BYTE_ARRAY {
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 unsafe impl ::windows::core::Abi for DOT11_BYTE_ARRAY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 impl ::core::cmp::PartialEq for DOT11_BYTE_ARRAY {
@@ -1412,6 +1444,7 @@ impl ::core::fmt::Debug for DOT11_CAN_SUSTAIN_AP_PARAMETERS {
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 unsafe impl ::windows::core::Abi for DOT11_CAN_SUSTAIN_AP_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 impl ::core::cmp::PartialEq for DOT11_CAN_SUSTAIN_AP_PARAMETERS {
@@ -1482,6 +1515,7 @@ impl ::core::fmt::Debug for DOT11_CHANNEL_HINT {
 }
 unsafe impl ::windows::core::Abi for DOT11_CHANNEL_HINT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_CHANNEL_HINT {
     fn eq(&self, other: &Self) -> bool {
@@ -1545,6 +1579,7 @@ impl ::core::default::Default for DOT11_CIPHER_ALGORITHM {
 }
 unsafe impl ::windows::core::Abi for DOT11_CIPHER_ALGORITHM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DOT11_CIPHER_ALGORITHM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1577,6 +1612,7 @@ impl ::core::fmt::Debug for DOT11_CIPHER_ALGORITHM_LIST {
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 unsafe impl ::windows::core::Abi for DOT11_CIPHER_ALGORITHM_LIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 impl ::core::cmp::PartialEq for DOT11_CIPHER_ALGORITHM_LIST {
@@ -1624,6 +1660,7 @@ impl ::core::fmt::Debug for DOT11_CIPHER_DEFAULT_KEY_VALUE {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_NetworkManagement_Ndis"))]
 unsafe impl ::windows::core::Abi for DOT11_CIPHER_DEFAULT_KEY_VALUE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_NetworkManagement_Ndis"))]
 impl ::core::cmp::PartialEq for DOT11_CIPHER_DEFAULT_KEY_VALUE {
@@ -1670,6 +1707,7 @@ impl ::core::fmt::Debug for DOT11_CIPHER_KEY_MAPPING_KEY_VALUE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DOT11_CIPHER_KEY_MAPPING_KEY_VALUE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DOT11_CIPHER_KEY_MAPPING_KEY_VALUE {
@@ -1715,6 +1753,7 @@ impl ::core::fmt::Debug for DOT11_CONNECTION_COMPLETION_PARAMETERS {
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 unsafe impl ::windows::core::Abi for DOT11_CONNECTION_COMPLETION_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 impl ::core::cmp::PartialEq for DOT11_CONNECTION_COMPLETION_PARAMETERS {
@@ -1758,6 +1797,7 @@ impl ::core::fmt::Debug for DOT11_CONNECTION_START_PARAMETERS {
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 unsafe impl ::windows::core::Abi for DOT11_CONNECTION_START_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 impl ::core::cmp::PartialEq for DOT11_CONNECTION_START_PARAMETERS {
@@ -1821,6 +1861,7 @@ impl ::core::fmt::Debug for DOT11_COUNTERS_ENTRY {
 }
 unsafe impl ::windows::core::Abi for DOT11_COUNTERS_ENTRY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_COUNTERS_ENTRY {
     fn eq(&self, other: &Self) -> bool {
@@ -1859,6 +1900,7 @@ impl ::core::fmt::Debug for DOT11_COUNTRY_OR_REGION_STRING_LIST {
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 unsafe impl ::windows::core::Abi for DOT11_COUNTRY_OR_REGION_STRING_LIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 impl ::core::cmp::PartialEq for DOT11_COUNTRY_OR_REGION_STRING_LIST {
@@ -1895,6 +1937,7 @@ impl ::core::fmt::Debug for DOT11_CURRENT_OFFLOAD_CAPABILITY {
 }
 unsafe impl ::windows::core::Abi for DOT11_CURRENT_OFFLOAD_CAPABILITY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_CURRENT_OFFLOAD_CAPABILITY {
     fn eq(&self, other: &Self) -> bool {
@@ -1926,6 +1969,7 @@ impl ::core::fmt::Debug for DOT11_CURRENT_OPERATION_MODE {
 }
 unsafe impl ::windows::core::Abi for DOT11_CURRENT_OPERATION_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_CURRENT_OPERATION_MODE {
     fn eq(&self, other: &Self) -> bool {
@@ -1965,6 +2009,7 @@ impl ::core::fmt::Debug for DOT11_CURRENT_OPTIONAL_CAPABILITY {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DOT11_CURRENT_OPTIONAL_CAPABILITY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DOT11_CURRENT_OPTIONAL_CAPABILITY {
@@ -2000,6 +2045,7 @@ impl ::core::fmt::Debug for DOT11_DATA_RATE_MAPPING_ENTRY {
 }
 unsafe impl ::windows::core::Abi for DOT11_DATA_RATE_MAPPING_ENTRY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_DATA_RATE_MAPPING_ENTRY {
     fn eq(&self, other: &Self) -> bool {
@@ -2037,6 +2083,7 @@ impl ::core::fmt::Debug for DOT11_DATA_RATE_MAPPING_TABLE {
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 unsafe impl ::windows::core::Abi for DOT11_DATA_RATE_MAPPING_TABLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 impl ::core::cmp::PartialEq for DOT11_DATA_RATE_MAPPING_TABLE {
@@ -2105,6 +2152,7 @@ impl ::core::fmt::Debug for DOT11_DEFAULT_WEP_OFFLOAD {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DOT11_DEFAULT_WEP_OFFLOAD {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DOT11_DEFAULT_WEP_OFFLOAD {
@@ -2148,6 +2196,7 @@ impl ::core::fmt::Debug for DOT11_DEFAULT_WEP_UPLOAD {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DOT11_DEFAULT_WEP_UPLOAD {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DOT11_DEFAULT_WEP_UPLOAD {
@@ -2188,6 +2237,7 @@ impl ::core::default::Default for DOT11_DIRECTION {
 }
 unsafe impl ::windows::core::Abi for DOT11_DIRECTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DOT11_DIRECTION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2219,6 +2269,7 @@ impl ::core::fmt::Debug for DOT11_DISASSOCIATE_PEER_REQUEST {
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 unsafe impl ::windows::core::Abi for DOT11_DISASSOCIATE_PEER_REQUEST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 impl ::core::cmp::PartialEq for DOT11_DISASSOCIATE_PEER_REQUEST {
@@ -2263,6 +2314,7 @@ impl ::core::fmt::Debug for DOT11_DISASSOCIATION_PARAMETERS {
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 unsafe impl ::windows::core::Abi for DOT11_DISASSOCIATION_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 impl ::core::cmp::PartialEq for DOT11_DISASSOCIATION_PARAMETERS {
@@ -2304,6 +2356,7 @@ impl ::core::fmt::Debug for DOT11_DIVERSITY_SELECTION_RX {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DOT11_DIVERSITY_SELECTION_RX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DOT11_DIVERSITY_SELECTION_RX {
@@ -2344,6 +2397,7 @@ impl ::core::fmt::Debug for DOT11_DIVERSITY_SELECTION_RX_LIST {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DOT11_DIVERSITY_SELECTION_RX_LIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DOT11_DIVERSITY_SELECTION_RX_LIST {
@@ -2384,6 +2438,7 @@ impl ::core::default::Default for DOT11_DIVERSITY_SUPPORT {
 }
 unsafe impl ::windows::core::Abi for DOT11_DIVERSITY_SUPPORT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DOT11_DIVERSITY_SUPPORT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2413,6 +2468,7 @@ impl ::core::default::Default for DOT11_DS_INFO {
 }
 unsafe impl ::windows::core::Abi for DOT11_DS_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DOT11_DS_INFO {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2440,6 +2496,7 @@ impl ::core::fmt::Debug for DOT11_ENCAP_ENTRY {
 }
 unsafe impl ::windows::core::Abi for DOT11_ENCAP_ENTRY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_ENCAP_ENTRY {
     fn eq(&self, other: &Self) -> bool {
@@ -2480,6 +2537,7 @@ impl ::core::fmt::Debug for DOT11_ERP_PHY_ATTRIBUTES {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DOT11_ERP_PHY_ATTRIBUTES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DOT11_ERP_PHY_ATTRIBUTES {
@@ -2558,6 +2616,7 @@ impl ::core::fmt::Debug for DOT11_EXTAP_ATTRIBUTES {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_NetworkManagement_Ndis"))]
 unsafe impl ::windows::core::Abi for DOT11_EXTAP_ATTRIBUTES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_NetworkManagement_Ndis"))]
 impl ::core::cmp::PartialEq for DOT11_EXTAP_ATTRIBUTES {
@@ -2670,6 +2729,7 @@ impl ::core::fmt::Debug for DOT11_EXTSTA_ATTRIBUTES {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_NetworkManagement_Ndis"))]
 unsafe impl ::windows::core::Abi for DOT11_EXTSTA_ATTRIBUTES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_NetworkManagement_Ndis"))]
 impl ::core::cmp::PartialEq for DOT11_EXTSTA_ATTRIBUTES {
@@ -2744,6 +2804,7 @@ impl ::core::fmt::Debug for DOT11_EXTSTA_CAPABILITY {
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 unsafe impl ::windows::core::Abi for DOT11_EXTSTA_CAPABILITY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 impl ::core::cmp::PartialEq for DOT11_EXTSTA_CAPABILITY {
@@ -2804,6 +2865,7 @@ impl ::core::fmt::Debug for DOT11_EXTSTA_RECV_CONTEXT {
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 unsafe impl ::windows::core::Abi for DOT11_EXTSTA_RECV_CONTEXT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 impl ::core::cmp::PartialEq for DOT11_EXTSTA_RECV_CONTEXT {
@@ -2849,6 +2911,7 @@ impl ::core::fmt::Debug for DOT11_EXTSTA_SEND_CONTEXT {
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 unsafe impl ::windows::core::Abi for DOT11_EXTSTA_SEND_CONTEXT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 impl ::core::cmp::PartialEq for DOT11_EXTSTA_SEND_CONTEXT {
@@ -2901,6 +2964,7 @@ impl ::core::fmt::Debug for DOT11_FRAGMENT_DESCRIPTOR {
 }
 unsafe impl ::windows::core::Abi for DOT11_FRAGMENT_DESCRIPTOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_FRAGMENT_DESCRIPTOR {
     fn eq(&self, other: &Self) -> bool {
@@ -2947,6 +3011,7 @@ impl ::core::fmt::Debug for DOT11_GO_NEGOTIATION_CONFIRMATION_SEND_COMPLETE_PARA
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 unsafe impl ::windows::core::Abi for DOT11_GO_NEGOTIATION_CONFIRMATION_SEND_COMPLETE_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 impl ::core::cmp::PartialEq for DOT11_GO_NEGOTIATION_CONFIRMATION_SEND_COMPLETE_PARAMETERS {
@@ -2992,6 +3057,7 @@ impl ::core::fmt::Debug for DOT11_GO_NEGOTIATION_REQUEST_SEND_COMPLETE_PARAMETER
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 unsafe impl ::windows::core::Abi for DOT11_GO_NEGOTIATION_REQUEST_SEND_COMPLETE_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 impl ::core::cmp::PartialEq for DOT11_GO_NEGOTIATION_REQUEST_SEND_COMPLETE_PARAMETERS {
@@ -3037,6 +3103,7 @@ impl ::core::fmt::Debug for DOT11_GO_NEGOTIATION_RESPONSE_SEND_COMPLETE_PARAMETE
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 unsafe impl ::windows::core::Abi for DOT11_GO_NEGOTIATION_RESPONSE_SEND_COMPLETE_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 impl ::core::cmp::PartialEq for DOT11_GO_NEGOTIATION_RESPONSE_SEND_COMPLETE_PARAMETERS {
@@ -3075,6 +3142,7 @@ impl ::core::fmt::Debug for DOT11_HOPPING_PATTERN_ENTRY {
 }
 unsafe impl ::windows::core::Abi for DOT11_HOPPING_PATTERN_ENTRY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_HOPPING_PATTERN_ENTRY {
     fn eq(&self, other: &Self) -> bool {
@@ -3107,6 +3175,7 @@ impl ::core::fmt::Debug for DOT11_HOPPING_PATTERN_ENTRY_LIST {
 }
 unsafe impl ::windows::core::Abi for DOT11_HOPPING_PATTERN_ENTRY_LIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_HOPPING_PATTERN_ENTRY_LIST {
     fn eq(&self, other: &Self) -> bool {
@@ -3142,6 +3211,7 @@ impl ::core::default::Default for DOT11_HOP_ALGO_ADOPTED {
 }
 unsafe impl ::windows::core::Abi for DOT11_HOP_ALGO_ADOPTED {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DOT11_HOP_ALGO_ADOPTED {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3174,6 +3244,7 @@ impl ::core::fmt::Debug for DOT11_HRDSSS_PHY_ATTRIBUTES {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DOT11_HRDSSS_PHY_ATTRIBUTES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DOT11_HRDSSS_PHY_ATTRIBUTES {
@@ -3237,6 +3308,7 @@ impl ::core::fmt::Debug for DOT11_IBSS_PARAMS {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_NetworkManagement_Ndis"))]
 unsafe impl ::windows::core::Abi for DOT11_IBSS_PARAMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_NetworkManagement_Ndis"))]
 impl ::core::cmp::PartialEq for DOT11_IBSS_PARAMS {
@@ -3311,6 +3383,7 @@ impl ::core::fmt::Debug for DOT11_INCOMING_ASSOC_COMPLETION_PARAMETERS {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_NetworkManagement_Ndis"))]
 unsafe impl ::windows::core::Abi for DOT11_INCOMING_ASSOC_COMPLETION_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_NetworkManagement_Ndis"))]
 impl ::core::cmp::PartialEq for DOT11_INCOMING_ASSOC_COMPLETION_PARAMETERS {
@@ -3356,6 +3429,7 @@ impl ::core::fmt::Debug for DOT11_INCOMING_ASSOC_DECISION {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_NetworkManagement_Ndis"))]
 unsafe impl ::windows::core::Abi for DOT11_INCOMING_ASSOC_DECISION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_NetworkManagement_Ndis"))]
 impl ::core::cmp::PartialEq for DOT11_INCOMING_ASSOC_DECISION {
@@ -3404,6 +3478,7 @@ impl ::core::fmt::Debug for DOT11_INCOMING_ASSOC_DECISION_V2 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_NetworkManagement_Ndis"))]
 unsafe impl ::windows::core::Abi for DOT11_INCOMING_ASSOC_DECISION_V2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_NetworkManagement_Ndis"))]
 impl ::core::cmp::PartialEq for DOT11_INCOMING_ASSOC_DECISION_V2 {
@@ -3446,6 +3521,7 @@ impl ::core::fmt::Debug for DOT11_INCOMING_ASSOC_REQUEST_RECEIVED_PARAMETERS {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_NetworkManagement_Ndis"))]
 unsafe impl ::windows::core::Abi for DOT11_INCOMING_ASSOC_REQUEST_RECEIVED_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_NetworkManagement_Ndis"))]
 impl ::core::cmp::PartialEq for DOT11_INCOMING_ASSOC_REQUEST_RECEIVED_PARAMETERS {
@@ -3487,6 +3563,7 @@ impl ::core::fmt::Debug for DOT11_INCOMING_ASSOC_STARTED_PARAMETERS {
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 unsafe impl ::windows::core::Abi for DOT11_INCOMING_ASSOC_STARTED_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 impl ::core::cmp::PartialEq for DOT11_INCOMING_ASSOC_STARTED_PARAMETERS {
@@ -3535,6 +3612,7 @@ impl ::core::fmt::Debug for DOT11_INVITATION_REQUEST_SEND_COMPLETE_PARAMETERS {
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 unsafe impl ::windows::core::Abi for DOT11_INVITATION_REQUEST_SEND_COMPLETE_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 impl ::core::cmp::PartialEq for DOT11_INVITATION_REQUEST_SEND_COMPLETE_PARAMETERS {
@@ -3580,6 +3658,7 @@ impl ::core::fmt::Debug for DOT11_INVITATION_RESPONSE_SEND_COMPLETE_PARAMETERS {
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 unsafe impl ::windows::core::Abi for DOT11_INVITATION_RESPONSE_SEND_COMPLETE_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 impl ::core::cmp::PartialEq for DOT11_INVITATION_RESPONSE_SEND_COMPLETE_PARAMETERS {
@@ -3616,6 +3695,7 @@ impl ::core::fmt::Debug for DOT11_IV48_COUNTER {
 }
 unsafe impl ::windows::core::Abi for DOT11_IV48_COUNTER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_IV48_COUNTER {
     fn eq(&self, other: &Self) -> bool {
@@ -3649,6 +3729,7 @@ impl ::core::fmt::Debug for DOT11_JOIN_REQUEST {
 }
 unsafe impl ::windows::core::Abi for DOT11_JOIN_REQUEST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_JOIN_REQUEST {
     fn eq(&self, other: &Self) -> bool {
@@ -3681,6 +3762,7 @@ impl ::core::fmt::Debug for DOT11_KEY_ALGO_BIP {
 }
 unsafe impl ::windows::core::Abi for DOT11_KEY_ALGO_BIP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_KEY_ALGO_BIP {
     fn eq(&self, other: &Self) -> bool {
@@ -3713,6 +3795,7 @@ impl ::core::fmt::Debug for DOT11_KEY_ALGO_BIP_GMAC_256 {
 }
 unsafe impl ::windows::core::Abi for DOT11_KEY_ALGO_BIP_GMAC_256 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_KEY_ALGO_BIP_GMAC_256 {
     fn eq(&self, other: &Self) -> bool {
@@ -3745,6 +3828,7 @@ impl ::core::fmt::Debug for DOT11_KEY_ALGO_CCMP {
 }
 unsafe impl ::windows::core::Abi for DOT11_KEY_ALGO_CCMP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_KEY_ALGO_CCMP {
     fn eq(&self, other: &Self) -> bool {
@@ -3777,6 +3861,7 @@ impl ::core::fmt::Debug for DOT11_KEY_ALGO_GCMP {
 }
 unsafe impl ::windows::core::Abi for DOT11_KEY_ALGO_GCMP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_KEY_ALGO_GCMP {
     fn eq(&self, other: &Self) -> bool {
@@ -3809,6 +3894,7 @@ impl ::core::fmt::Debug for DOT11_KEY_ALGO_GCMP_256 {
 }
 unsafe impl ::windows::core::Abi for DOT11_KEY_ALGO_GCMP_256 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_KEY_ALGO_GCMP_256 {
     fn eq(&self, other: &Self) -> bool {
@@ -3842,6 +3928,7 @@ impl ::core::fmt::Debug for DOT11_KEY_ALGO_TKIP_MIC {
 }
 unsafe impl ::windows::core::Abi for DOT11_KEY_ALGO_TKIP_MIC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_KEY_ALGO_TKIP_MIC {
     fn eq(&self, other: &Self) -> bool {
@@ -3877,6 +3964,7 @@ impl ::core::default::Default for DOT11_KEY_DIRECTION {
 }
 unsafe impl ::windows::core::Abi for DOT11_KEY_DIRECTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DOT11_KEY_DIRECTION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3902,6 +3990,7 @@ impl ::core::fmt::Debug for DOT11_LINK_QUALITY_ENTRY {
 }
 unsafe impl ::windows::core::Abi for DOT11_LINK_QUALITY_ENTRY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_LINK_QUALITY_ENTRY {
     fn eq(&self, other: &Self) -> bool {
@@ -3939,6 +4028,7 @@ impl ::core::fmt::Debug for DOT11_LINK_QUALITY_PARAMETERS {
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 unsafe impl ::windows::core::Abi for DOT11_LINK_QUALITY_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 impl ::core::cmp::PartialEq for DOT11_LINK_QUALITY_PARAMETERS {
@@ -3982,6 +4072,7 @@ impl ::core::fmt::Debug for DOT11_MAC_ADDRESS_LIST {
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 unsafe impl ::windows::core::Abi for DOT11_MAC_ADDRESS_LIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 impl ::core::cmp::PartialEq for DOT11_MAC_ADDRESS_LIST {
@@ -4045,6 +4136,7 @@ impl ::core::fmt::Debug for DOT11_MAC_FRAME_STATISTICS {
 }
 unsafe impl ::windows::core::Abi for DOT11_MAC_FRAME_STATISTICS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_MAC_FRAME_STATISTICS {
     fn eq(&self, other: &Self) -> bool {
@@ -4077,6 +4169,7 @@ impl ::core::fmt::Debug for DOT11_MAC_INFO {
 }
 unsafe impl ::windows::core::Abi for DOT11_MAC_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_MAC_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -4113,6 +4206,7 @@ impl ::core::fmt::Debug for DOT11_MAC_PARAMETERS {
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 unsafe impl ::windows::core::Abi for DOT11_MAC_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 impl ::core::cmp::PartialEq for DOT11_MAC_PARAMETERS {
@@ -4156,6 +4250,7 @@ impl ::core::fmt::Debug for DOT11_MANUFACTURING_CALLBACK_PARAMETERS {
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 unsafe impl ::windows::core::Abi for DOT11_MANUFACTURING_CALLBACK_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 impl ::core::cmp::PartialEq for DOT11_MANUFACTURING_CALLBACK_PARAMETERS {
@@ -4200,6 +4295,7 @@ impl ::core::default::Default for DOT11_MANUFACTURING_CALLBACK_TYPE {
 }
 unsafe impl ::windows::core::Abi for DOT11_MANUFACTURING_CALLBACK_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DOT11_MANUFACTURING_CALLBACK_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4226,6 +4322,7 @@ impl ::core::fmt::Debug for DOT11_MANUFACTURING_FUNCTIONAL_TEST_QUERY_ADC {
 }
 unsafe impl ::windows::core::Abi for DOT11_MANUFACTURING_FUNCTIONAL_TEST_QUERY_ADC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_MANUFACTURING_FUNCTIONAL_TEST_QUERY_ADC {
     fn eq(&self, other: &Self) -> bool {
@@ -4264,6 +4361,7 @@ impl ::core::fmt::Debug for DOT11_MANUFACTURING_FUNCTIONAL_TEST_RX {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DOT11_MANUFACTURING_FUNCTIONAL_TEST_RX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DOT11_MANUFACTURING_FUNCTIONAL_TEST_RX {
@@ -4307,6 +4405,7 @@ impl ::core::fmt::Debug for DOT11_MANUFACTURING_FUNCTIONAL_TEST_TX {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DOT11_MANUFACTURING_FUNCTIONAL_TEST_TX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DOT11_MANUFACTURING_FUNCTIONAL_TEST_TX {
@@ -4351,6 +4450,7 @@ impl ::core::fmt::Debug for DOT11_MANUFACTURING_SELF_TEST_QUERY_RESULTS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DOT11_MANUFACTURING_SELF_TEST_QUERY_RESULTS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DOT11_MANUFACTURING_SELF_TEST_QUERY_RESULTS {
@@ -4389,6 +4489,7 @@ impl ::core::fmt::Debug for DOT11_MANUFACTURING_SELF_TEST_SET_PARAMS {
 }
 unsafe impl ::windows::core::Abi for DOT11_MANUFACTURING_SELF_TEST_SET_PARAMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_MANUFACTURING_SELF_TEST_SET_PARAMS {
     fn eq(&self, other: &Self) -> bool {
@@ -4424,6 +4525,7 @@ impl ::core::default::Default for DOT11_MANUFACTURING_SELF_TEST_TYPE {
 }
 unsafe impl ::windows::core::Abi for DOT11_MANUFACTURING_SELF_TEST_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DOT11_MANUFACTURING_SELF_TEST_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4450,6 +4552,7 @@ impl ::core::fmt::Debug for DOT11_MANUFACTURING_TEST {
 }
 unsafe impl ::windows::core::Abi for DOT11_MANUFACTURING_TEST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_MANUFACTURING_TEST {
     fn eq(&self, other: &Self) -> bool {
@@ -4484,6 +4587,7 @@ impl ::core::fmt::Debug for DOT11_MANUFACTURING_TEST_QUERY_DATA {
 }
 unsafe impl ::windows::core::Abi for DOT11_MANUFACTURING_TEST_QUERY_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_MANUFACTURING_TEST_QUERY_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -4519,6 +4623,7 @@ impl ::core::fmt::Debug for DOT11_MANUFACTURING_TEST_SET_DATA {
 }
 unsafe impl ::windows::core::Abi for DOT11_MANUFACTURING_TEST_SET_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_MANUFACTURING_TEST_SET_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -4550,6 +4655,7 @@ impl ::core::fmt::Debug for DOT11_MANUFACTURING_TEST_SLEEP {
 }
 unsafe impl ::windows::core::Abi for DOT11_MANUFACTURING_TEST_SLEEP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_MANUFACTURING_TEST_SLEEP {
     fn eq(&self, other: &Self) -> bool {
@@ -4603,6 +4709,7 @@ impl ::core::default::Default for DOT11_MANUFACTURING_TEST_TYPE {
 }
 unsafe impl ::windows::core::Abi for DOT11_MANUFACTURING_TEST_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DOT11_MANUFACTURING_TEST_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4641,6 +4748,7 @@ impl ::core::fmt::Debug for DOT11_MD_CAPABILITY_ENTRY_LIST {
 }
 unsafe impl ::windows::core::Abi for DOT11_MD_CAPABILITY_ENTRY_LIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_MD_CAPABILITY_ENTRY_LIST {
     fn eq(&self, other: &Self) -> bool {
@@ -4680,6 +4788,7 @@ impl ::core::fmt::Debug for DOT11_MPDU_MAX_LENGTH_INDICATION {
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 unsafe impl ::windows::core::Abi for DOT11_MPDU_MAX_LENGTH_INDICATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 impl ::core::cmp::PartialEq for DOT11_MPDU_MAX_LENGTH_INDICATION {
@@ -4718,6 +4827,7 @@ impl ::core::fmt::Debug for DOT11_MULTI_DOMAIN_CAPABILITY_ENTRY {
 }
 unsafe impl ::windows::core::Abi for DOT11_MULTI_DOMAIN_CAPABILITY_ENTRY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_MULTI_DOMAIN_CAPABILITY_ENTRY {
     fn eq(&self, other: &Self) -> bool {
@@ -4749,6 +4859,7 @@ impl ::core::fmt::Debug for DOT11_NETWORK {
 }
 unsafe impl ::windows::core::Abi for DOT11_NETWORK {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_NETWORK {
     fn eq(&self, other: &Self) -> bool {
@@ -4781,6 +4892,7 @@ impl ::core::fmt::Debug for DOT11_NETWORK_LIST {
 }
 unsafe impl ::windows::core::Abi for DOT11_NETWORK_LIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_NETWORK_LIST {
     fn eq(&self, other: &Self) -> bool {
@@ -4813,6 +4925,7 @@ impl ::core::fmt::Debug for DOT11_NIC_SPECIFIC_EXTENSION {
 }
 unsafe impl ::windows::core::Abi for DOT11_NIC_SPECIFIC_EXTENSION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_NIC_SPECIFIC_EXTENSION {
     fn eq(&self, other: &Self) -> bool {
@@ -4849,6 +4962,7 @@ impl ::core::fmt::Debug for DOT11_OFDM_PHY_ATTRIBUTES {
 }
 unsafe impl ::windows::core::Abi for DOT11_OFDM_PHY_ATTRIBUTES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_OFDM_PHY_ATTRIBUTES {
     fn eq(&self, other: &Self) -> bool {
@@ -4885,6 +4999,7 @@ impl ::core::fmt::Debug for DOT11_OFFLOAD_CAPABILITY {
 }
 unsafe impl ::windows::core::Abi for DOT11_OFFLOAD_CAPABILITY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_OFFLOAD_CAPABILITY {
     fn eq(&self, other: &Self) -> bool {
@@ -4918,6 +5033,7 @@ impl ::core::fmt::Debug for DOT11_OFFLOAD_NETWORK {
 }
 unsafe impl ::windows::core::Abi for DOT11_OFFLOAD_NETWORK {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_OFFLOAD_NETWORK {
     fn eq(&self, other: &Self) -> bool {
@@ -4959,6 +5075,7 @@ impl ::core::fmt::Debug for DOT11_OFFLOAD_NETWORK_LIST_INFO {
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 unsafe impl ::windows::core::Abi for DOT11_OFFLOAD_NETWORK_LIST_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 impl ::core::cmp::PartialEq for DOT11_OFFLOAD_NETWORK_LIST_INFO {
@@ -5000,6 +5117,7 @@ impl ::core::fmt::Debug for DOT11_OFFLOAD_NETWORK_STATUS_PARAMETERS {
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 unsafe impl ::windows::core::Abi for DOT11_OFFLOAD_NETWORK_STATUS_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 impl ::core::cmp::PartialEq for DOT11_OFFLOAD_NETWORK_STATUS_PARAMETERS {
@@ -5038,6 +5156,7 @@ impl ::core::default::Default for DOT11_OFFLOAD_TYPE {
 }
 unsafe impl ::windows::core::Abi for DOT11_OFFLOAD_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DOT11_OFFLOAD_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5063,6 +5182,7 @@ impl ::core::fmt::Debug for DOT11_OI {
 }
 unsafe impl ::windows::core::Abi for DOT11_OI {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_OI {
     fn eq(&self, other: &Self) -> bool {
@@ -5104,6 +5224,7 @@ impl ::core::fmt::Debug for DOT11_OPERATION_MODE_CAPABILITY {
 }
 unsafe impl ::windows::core::Abi for DOT11_OPERATION_MODE_CAPABILITY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_OPERATION_MODE_CAPABILITY {
     fn eq(&self, other: &Self) -> bool {
@@ -5160,6 +5281,7 @@ impl ::core::fmt::Debug for DOT11_OPTIONAL_CAPABILITY {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DOT11_OPTIONAL_CAPABILITY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DOT11_OPTIONAL_CAPABILITY {
@@ -5254,6 +5376,7 @@ impl ::core::fmt::Debug for DOT11_PEER_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DOT11_PEER_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DOT11_PEER_INFO {
@@ -5295,6 +5418,7 @@ impl ::core::fmt::Debug for DOT11_PEER_INFO_LIST {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_NetworkManagement_Ndis"))]
 unsafe impl ::windows::core::Abi for DOT11_PEER_INFO_LIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_NetworkManagement_Ndis"))]
 impl ::core::cmp::PartialEq for DOT11_PEER_INFO_LIST {
@@ -5335,6 +5459,7 @@ impl ::core::fmt::Debug for DOT11_PEER_STATISTICS {
 }
 unsafe impl ::windows::core::Abi for DOT11_PEER_STATISTICS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_PEER_STATISTICS {
     fn eq(&self, other: &Self) -> bool {
@@ -5369,6 +5494,7 @@ impl ::core::fmt::Debug for DOT11_PER_MSDU_COUNTERS {
 }
 unsafe impl ::windows::core::Abi for DOT11_PER_MSDU_COUNTERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_PER_MSDU_COUNTERS {
     fn eq(&self, other: &Self) -> bool {
@@ -5411,6 +5537,7 @@ impl ::core::clone::Clone for DOT11_PHY_ATTRIBUTES {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_NetworkManagement_Ndis"))]
 unsafe impl ::windows::core::Abi for DOT11_PHY_ATTRIBUTES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_NetworkManagement_Ndis"))]
 impl ::core::cmp::PartialEq for DOT11_PHY_ATTRIBUTES {
@@ -5445,6 +5572,7 @@ impl ::core::clone::Clone for DOT11_PHY_ATTRIBUTES_0 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_NetworkManagement_Ndis"))]
 unsafe impl ::windows::core::Abi for DOT11_PHY_ATTRIBUTES_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_NetworkManagement_Ndis"))]
 impl ::core::cmp::PartialEq for DOT11_PHY_ATTRIBUTES_0 {
@@ -5516,6 +5644,7 @@ impl ::core::fmt::Debug for DOT11_PHY_FRAME_STATISTICS {
 }
 unsafe impl ::windows::core::Abi for DOT11_PHY_FRAME_STATISTICS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_PHY_FRAME_STATISTICS {
     fn eq(&self, other: &Self) -> bool {
@@ -5547,6 +5676,7 @@ impl ::core::clone::Clone for DOT11_PHY_FREQUENCY_ADOPTED_PARAMETERS {
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 unsafe impl ::windows::core::Abi for DOT11_PHY_FREQUENCY_ADOPTED_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 impl ::core::cmp::PartialEq for DOT11_PHY_FREQUENCY_ADOPTED_PARAMETERS {
@@ -5580,6 +5710,7 @@ impl ::core::clone::Clone for DOT11_PHY_FREQUENCY_ADOPTED_PARAMETERS_0 {
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 unsafe impl ::windows::core::Abi for DOT11_PHY_FREQUENCY_ADOPTED_PARAMETERS_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 impl ::core::cmp::PartialEq for DOT11_PHY_FREQUENCY_ADOPTED_PARAMETERS_0 {
@@ -5623,6 +5754,7 @@ impl ::core::fmt::Debug for DOT11_PHY_ID_LIST {
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 unsafe impl ::windows::core::Abi for DOT11_PHY_ID_LIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 impl ::core::cmp::PartialEq for DOT11_PHY_ID_LIST {
@@ -5666,6 +5798,7 @@ impl ::core::fmt::Debug for DOT11_PHY_STATE_PARAMETERS {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_NetworkManagement_Ndis"))]
 unsafe impl ::windows::core::Abi for DOT11_PHY_STATE_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_NetworkManagement_Ndis"))]
 impl ::core::cmp::PartialEq for DOT11_PHY_STATE_PARAMETERS {
@@ -5728,6 +5861,7 @@ impl ::core::default::Default for DOT11_PHY_TYPE {
 }
 unsafe impl ::windows::core::Abi for DOT11_PHY_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DOT11_PHY_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5764,6 +5898,7 @@ impl ::core::fmt::Debug for DOT11_PHY_TYPE_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DOT11_PHY_TYPE_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DOT11_PHY_TYPE_INFO {
@@ -5805,6 +5940,7 @@ impl ::core::fmt::Debug for DOT11_PHY_TYPE_LIST {
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 unsafe impl ::windows::core::Abi for DOT11_PHY_TYPE_LIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 impl ::core::cmp::PartialEq for DOT11_PHY_TYPE_LIST {
@@ -5847,6 +5983,7 @@ impl ::core::fmt::Debug for DOT11_PMKID_CANDIDATE_LIST_PARAMETERS {
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 unsafe impl ::windows::core::Abi for DOT11_PMKID_CANDIDATE_LIST_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 impl ::core::cmp::PartialEq for DOT11_PMKID_CANDIDATE_LIST_PARAMETERS {
@@ -5884,6 +6021,7 @@ impl ::core::fmt::Debug for DOT11_PMKID_ENTRY {
 }
 unsafe impl ::windows::core::Abi for DOT11_PMKID_ENTRY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_PMKID_ENTRY {
     fn eq(&self, other: &Self) -> bool {
@@ -5922,6 +6060,7 @@ impl ::core::fmt::Debug for DOT11_PMKID_LIST {
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 unsafe impl ::windows::core::Abi for DOT11_PMKID_LIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 impl ::core::cmp::PartialEq for DOT11_PMKID_LIST {
@@ -5964,6 +6103,7 @@ impl ::core::fmt::Debug for DOT11_PORT_STATE_NOTIFICATION {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_NetworkManagement_Ndis"))]
 unsafe impl ::windows::core::Abi for DOT11_PORT_STATE_NOTIFICATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_NetworkManagement_Ndis"))]
 impl ::core::cmp::PartialEq for DOT11_PORT_STATE_NOTIFICATION {
@@ -6005,6 +6145,7 @@ impl ::core::fmt::Debug for DOT11_POWER_MGMT_AUTO_MODE_ENABLED_INFO {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_NetworkManagement_Ndis"))]
 unsafe impl ::windows::core::Abi for DOT11_POWER_MGMT_AUTO_MODE_ENABLED_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_NetworkManagement_Ndis"))]
 impl ::core::cmp::PartialEq for DOT11_POWER_MGMT_AUTO_MODE_ENABLED_INFO {
@@ -6049,6 +6190,7 @@ impl ::core::fmt::Debug for DOT11_POWER_MGMT_MODE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DOT11_POWER_MGMT_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DOT11_POWER_MGMT_MODE {
@@ -6090,6 +6232,7 @@ impl ::core::fmt::Debug for DOT11_POWER_MGMT_MODE_STATUS_INFO {
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 unsafe impl ::windows::core::Abi for DOT11_POWER_MGMT_MODE_STATUS_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 impl ::core::cmp::PartialEq for DOT11_POWER_MGMT_MODE_STATUS_INFO {
@@ -6130,6 +6273,7 @@ impl ::core::default::Default for DOT11_POWER_MODE {
 }
 unsafe impl ::windows::core::Abi for DOT11_POWER_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DOT11_POWER_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6165,6 +6309,7 @@ impl ::core::default::Default for DOT11_POWER_MODE_REASON {
 }
 unsafe impl ::windows::core::Abi for DOT11_POWER_MODE_REASON {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DOT11_POWER_MODE_REASON {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6207,6 +6352,7 @@ impl ::core::fmt::Debug for DOT11_PRIVACY_EXEMPTION {
 }
 unsafe impl ::windows::core::Abi for DOT11_PRIVACY_EXEMPTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_PRIVACY_EXEMPTION {
     fn eq(&self, other: &Self) -> bool {
@@ -6245,6 +6391,7 @@ impl ::core::fmt::Debug for DOT11_PRIVACY_EXEMPTION_LIST {
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 unsafe impl ::windows::core::Abi for DOT11_PRIVACY_EXEMPTION_LIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 impl ::core::cmp::PartialEq for DOT11_PRIVACY_EXEMPTION_LIST {
@@ -6291,6 +6438,7 @@ impl ::core::fmt::Debug for DOT11_PROVISION_DISCOVERY_REQUEST_SEND_COMPLETE_PARA
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 unsafe impl ::windows::core::Abi for DOT11_PROVISION_DISCOVERY_REQUEST_SEND_COMPLETE_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 impl ::core::cmp::PartialEq for DOT11_PROVISION_DISCOVERY_REQUEST_SEND_COMPLETE_PARAMETERS {
@@ -6336,6 +6484,7 @@ impl ::core::fmt::Debug for DOT11_PROVISION_DISCOVERY_RESPONSE_SEND_COMPLETE_PAR
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 unsafe impl ::windows::core::Abi for DOT11_PROVISION_DISCOVERY_RESPONSE_SEND_COMPLETE_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 impl ::core::cmp::PartialEq for DOT11_PROVISION_DISCOVERY_RESPONSE_SEND_COMPLETE_PARAMETERS {
@@ -6381,6 +6530,7 @@ impl ::core::fmt::Debug for DOT11_QOS_PARAMS {
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 unsafe impl ::windows::core::Abi for DOT11_QOS_PARAMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 impl ::core::cmp::PartialEq for DOT11_QOS_PARAMS {
@@ -6418,6 +6568,7 @@ impl ::core::fmt::Debug for DOT11_QOS_TX_DURATION {
 }
 unsafe impl ::windows::core::Abi for DOT11_QOS_TX_DURATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_QOS_TX_DURATION {
     fn eq(&self, other: &Self) -> bool {
@@ -6450,6 +6601,7 @@ impl ::core::fmt::Debug for DOT11_QOS_TX_MEDIUM_TIME {
 }
 unsafe impl ::windows::core::Abi for DOT11_QOS_TX_MEDIUM_TIME {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_QOS_TX_MEDIUM_TIME {
     fn eq(&self, other: &Self) -> bool {
@@ -6485,6 +6637,7 @@ impl ::core::default::Default for DOT11_RADIO_STATE {
 }
 unsafe impl ::windows::core::Abi for DOT11_RADIO_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DOT11_RADIO_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6510,6 +6663,7 @@ impl ::core::fmt::Debug for DOT11_RATE_SET {
 }
 unsafe impl ::windows::core::Abi for DOT11_RATE_SET {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_RATE_SET {
     fn eq(&self, other: &Self) -> bool {
@@ -6551,6 +6705,7 @@ impl ::core::fmt::Debug for DOT11_RECEIVED_GO_NEGOTIATION_CONFIRMATION_PARAMETER
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 unsafe impl ::windows::core::Abi for DOT11_RECEIVED_GO_NEGOTIATION_CONFIRMATION_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 impl ::core::cmp::PartialEq for DOT11_RECEIVED_GO_NEGOTIATION_CONFIRMATION_PARAMETERS {
@@ -6596,6 +6751,7 @@ impl ::core::fmt::Debug for DOT11_RECEIVED_GO_NEGOTIATION_REQUEST_PARAMETERS {
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 unsafe impl ::windows::core::Abi for DOT11_RECEIVED_GO_NEGOTIATION_REQUEST_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 impl ::core::cmp::PartialEq for DOT11_RECEIVED_GO_NEGOTIATION_REQUEST_PARAMETERS {
@@ -6641,6 +6797,7 @@ impl ::core::fmt::Debug for DOT11_RECEIVED_GO_NEGOTIATION_RESPONSE_PARAMETERS {
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 unsafe impl ::windows::core::Abi for DOT11_RECEIVED_GO_NEGOTIATION_RESPONSE_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 impl ::core::cmp::PartialEq for DOT11_RECEIVED_GO_NEGOTIATION_RESPONSE_PARAMETERS {
@@ -6687,6 +6844,7 @@ impl ::core::fmt::Debug for DOT11_RECEIVED_INVITATION_REQUEST_PARAMETERS {
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 unsafe impl ::windows::core::Abi for DOT11_RECEIVED_INVITATION_REQUEST_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 impl ::core::cmp::PartialEq for DOT11_RECEIVED_INVITATION_REQUEST_PARAMETERS {
@@ -6732,6 +6890,7 @@ impl ::core::fmt::Debug for DOT11_RECEIVED_INVITATION_RESPONSE_PARAMETERS {
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 unsafe impl ::windows::core::Abi for DOT11_RECEIVED_INVITATION_RESPONSE_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 impl ::core::cmp::PartialEq for DOT11_RECEIVED_INVITATION_RESPONSE_PARAMETERS {
@@ -6778,6 +6937,7 @@ impl ::core::fmt::Debug for DOT11_RECEIVED_PROVISION_DISCOVERY_REQUEST_PARAMETER
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 unsafe impl ::windows::core::Abi for DOT11_RECEIVED_PROVISION_DISCOVERY_REQUEST_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 impl ::core::cmp::PartialEq for DOT11_RECEIVED_PROVISION_DISCOVERY_REQUEST_PARAMETERS {
@@ -6823,6 +6983,7 @@ impl ::core::fmt::Debug for DOT11_RECEIVED_PROVISION_DISCOVERY_RESPONSE_PARAMETE
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 unsafe impl ::windows::core::Abi for DOT11_RECEIVED_PROVISION_DISCOVERY_RESPONSE_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 impl ::core::cmp::PartialEq for DOT11_RECEIVED_PROVISION_DISCOVERY_RESPONSE_PARAMETERS {
@@ -6911,6 +7072,7 @@ impl ::core::fmt::Debug for DOT11_RECV_EXTENSION_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DOT11_RECV_EXTENSION_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DOT11_RECV_EXTENSION_INFO {
@@ -6991,6 +7153,7 @@ impl ::core::fmt::Debug for DOT11_RECV_EXTENSION_INFO_V2 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DOT11_RECV_EXTENSION_INFO_V2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DOT11_RECV_EXTENSION_INFO_V2 {
@@ -7026,6 +7189,7 @@ impl ::core::fmt::Debug for DOT11_RECV_SENSITIVITY {
 }
 unsafe impl ::windows::core::Abi for DOT11_RECV_SENSITIVITY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_RECV_SENSITIVITY {
     fn eq(&self, other: &Self) -> bool {
@@ -7054,6 +7218,7 @@ impl ::core::clone::Clone for DOT11_RECV_SENSITIVITY_LIST {
 }
 unsafe impl ::windows::core::Abi for DOT11_RECV_SENSITIVITY_LIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_RECV_SENSITIVITY_LIST {
     fn eq(&self, other: &Self) -> bool {
@@ -7080,6 +7245,7 @@ impl ::core::clone::Clone for DOT11_RECV_SENSITIVITY_LIST_0 {
 }
 unsafe impl ::windows::core::Abi for DOT11_RECV_SENSITIVITY_LIST_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_RECV_SENSITIVITY_LIST_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -7112,6 +7278,7 @@ impl ::core::fmt::Debug for DOT11_REG_DOMAINS_SUPPORT_VALUE {
 }
 unsafe impl ::windows::core::Abi for DOT11_REG_DOMAINS_SUPPORT_VALUE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_REG_DOMAINS_SUPPORT_VALUE {
     fn eq(&self, other: &Self) -> bool {
@@ -7157,6 +7324,7 @@ impl ::core::fmt::Debug for DOT11_REG_DOMAIN_VALUE {
 }
 unsafe impl ::windows::core::Abi for DOT11_REG_DOMAIN_VALUE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_REG_DOMAIN_VALUE {
     fn eq(&self, other: &Self) -> bool {
@@ -7194,6 +7362,7 @@ impl ::core::fmt::Debug for DOT11_RESET_REQUEST {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DOT11_RESET_REQUEST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DOT11_RESET_REQUEST {
@@ -7232,6 +7401,7 @@ impl ::core::default::Default for DOT11_RESET_TYPE {
 }
 unsafe impl ::windows::core::Abi for DOT11_RESET_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DOT11_RESET_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7262,6 +7432,7 @@ impl ::core::fmt::Debug for DOT11_ROAMING_COMPLETION_PARAMETERS {
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 unsafe impl ::windows::core::Abi for DOT11_ROAMING_COMPLETION_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 impl ::core::cmp::PartialEq for DOT11_ROAMING_COMPLETION_PARAMETERS {
@@ -7305,6 +7476,7 @@ impl ::core::fmt::Debug for DOT11_ROAMING_START_PARAMETERS {
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 unsafe impl ::windows::core::Abi for DOT11_ROAMING_START_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 impl ::core::cmp::PartialEq for DOT11_ROAMING_START_PARAMETERS {
@@ -7342,6 +7514,7 @@ impl ::core::fmt::Debug for DOT11_RSSI_RANGE {
 }
 unsafe impl ::windows::core::Abi for DOT11_RSSI_RANGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_RSSI_RANGE {
     fn eq(&self, other: &Self) -> bool {
@@ -7403,6 +7576,7 @@ impl ::core::fmt::Debug for DOT11_SCAN_REQUEST {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DOT11_SCAN_REQUEST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DOT11_SCAN_REQUEST {
@@ -7469,6 +7643,7 @@ impl ::core::fmt::Debug for DOT11_SCAN_REQUEST_V2 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DOT11_SCAN_REQUEST_V2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DOT11_SCAN_REQUEST_V2 {
@@ -7509,6 +7684,7 @@ impl ::core::default::Default for DOT11_SCAN_TYPE {
 }
 unsafe impl ::windows::core::Abi for DOT11_SCAN_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DOT11_SCAN_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7562,6 +7738,7 @@ impl ::core::fmt::Debug for DOT11_SEND_GO_NEGOTIATION_CONFIRMATION_PARAMETERS {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_NetworkManagement_Ndis"))]
 unsafe impl ::windows::core::Abi for DOT11_SEND_GO_NEGOTIATION_CONFIRMATION_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_NetworkManagement_Ndis"))]
 impl ::core::cmp::PartialEq for DOT11_SEND_GO_NEGOTIATION_CONFIRMATION_PARAMETERS {
@@ -7622,6 +7799,7 @@ impl ::core::fmt::Debug for DOT11_SEND_GO_NEGOTIATION_REQUEST_PARAMETERS {
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 unsafe impl ::windows::core::Abi for DOT11_SEND_GO_NEGOTIATION_REQUEST_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 impl ::core::cmp::PartialEq for DOT11_SEND_GO_NEGOTIATION_REQUEST_PARAMETERS {
@@ -7690,6 +7868,7 @@ impl ::core::fmt::Debug for DOT11_SEND_GO_NEGOTIATION_RESPONSE_PARAMETERS {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_NetworkManagement_Ndis"))]
 unsafe impl ::windows::core::Abi for DOT11_SEND_GO_NEGOTIATION_RESPONSE_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_NetworkManagement_Ndis"))]
 impl ::core::cmp::PartialEq for DOT11_SEND_GO_NEGOTIATION_RESPONSE_PARAMETERS {
@@ -7758,6 +7937,7 @@ impl ::core::fmt::Debug for DOT11_SEND_INVITATION_REQUEST_PARAMETERS {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_NetworkManagement_Ndis"))]
 unsafe impl ::windows::core::Abi for DOT11_SEND_INVITATION_REQUEST_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_NetworkManagement_Ndis"))]
 impl ::core::cmp::PartialEq for DOT11_SEND_INVITATION_REQUEST_PARAMETERS {
@@ -7824,6 +8004,7 @@ impl ::core::fmt::Debug for DOT11_SEND_INVITATION_RESPONSE_PARAMETERS {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_NetworkManagement_Ndis"))]
 unsafe impl ::windows::core::Abi for DOT11_SEND_INVITATION_RESPONSE_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_NetworkManagement_Ndis"))]
 impl ::core::cmp::PartialEq for DOT11_SEND_INVITATION_RESPONSE_PARAMETERS {
@@ -7872,6 +8053,7 @@ impl ::core::fmt::Debug for DOT11_SEND_PROVISION_DISCOVERY_REQUEST_PARAMETERS {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_NetworkManagement_Ndis"))]
 unsafe impl ::windows::core::Abi for DOT11_SEND_PROVISION_DISCOVERY_REQUEST_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_NetworkManagement_Ndis"))]
 impl ::core::cmp::PartialEq for DOT11_SEND_PROVISION_DISCOVERY_REQUEST_PARAMETERS {
@@ -7918,6 +8100,7 @@ impl ::core::fmt::Debug for DOT11_SEND_PROVISION_DISCOVERY_RESPONSE_PARAMETERS {
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 unsafe impl ::windows::core::Abi for DOT11_SEND_PROVISION_DISCOVERY_RESPONSE_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 impl ::core::cmp::PartialEq for DOT11_SEND_PROVISION_DISCOVERY_RESPONSE_PARAMETERS {
@@ -7958,6 +8141,7 @@ impl ::core::fmt::Debug for DOT11_SSID {
 }
 unsafe impl ::windows::core::Abi for DOT11_SSID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_SSID {
     fn eq(&self, other: &Self) -> bool {
@@ -7996,6 +8180,7 @@ impl ::core::fmt::Debug for DOT11_SSID_LIST {
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 unsafe impl ::windows::core::Abi for DOT11_SSID_LIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 impl ::core::cmp::PartialEq for DOT11_SSID_LIST {
@@ -8036,6 +8221,7 @@ impl ::core::fmt::Debug for DOT11_START_REQUEST {
 }
 unsafe impl ::windows::core::Abi for DOT11_START_REQUEST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_START_REQUEST {
     fn eq(&self, other: &Self) -> bool {
@@ -8077,6 +8263,7 @@ impl ::core::fmt::Debug for DOT11_STATISTICS {
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 unsafe impl ::windows::core::Abi for DOT11_STATISTICS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 impl ::core::cmp::PartialEq for DOT11_STATISTICS {
@@ -8129,6 +8316,7 @@ impl ::core::fmt::Debug for DOT11_STATUS_INDICATION {
 }
 unsafe impl ::windows::core::Abi for DOT11_STATUS_INDICATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_STATUS_INDICATION {
     fn eq(&self, other: &Self) -> bool {
@@ -8199,6 +8387,7 @@ impl ::core::fmt::Debug for DOT11_STOP_AP_PARAMETERS {
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 unsafe impl ::windows::core::Abi for DOT11_STOP_AP_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 impl ::core::cmp::PartialEq for DOT11_STOP_AP_PARAMETERS {
@@ -8250,6 +8439,7 @@ impl ::core::fmt::Debug for DOT11_SUPPORTED_ANTENNA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DOT11_SUPPORTED_ANTENNA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DOT11_SUPPORTED_ANTENNA {
@@ -8290,6 +8480,7 @@ impl ::core::fmt::Debug for DOT11_SUPPORTED_ANTENNA_LIST {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DOT11_SUPPORTED_ANTENNA_LIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DOT11_SUPPORTED_ANTENNA_LIST {
@@ -8324,6 +8515,7 @@ impl ::core::fmt::Debug for DOT11_SUPPORTED_DATA_RATES_VALUE {
 }
 unsafe impl ::windows::core::Abi for DOT11_SUPPORTED_DATA_RATES_VALUE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_SUPPORTED_DATA_RATES_VALUE {
     fn eq(&self, other: &Self) -> bool {
@@ -8355,6 +8547,7 @@ impl ::core::fmt::Debug for DOT11_SUPPORTED_DATA_RATES_VALUE_V2 {
 }
 unsafe impl ::windows::core::Abi for DOT11_SUPPORTED_DATA_RATES_VALUE_V2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_SUPPORTED_DATA_RATES_VALUE_V2 {
     fn eq(&self, other: &Self) -> bool {
@@ -8385,6 +8578,7 @@ impl ::core::fmt::Debug for DOT11_SUPPORTED_DSSS_CHANNEL {
 }
 unsafe impl ::windows::core::Abi for DOT11_SUPPORTED_DSSS_CHANNEL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_SUPPORTED_DSSS_CHANNEL {
     fn eq(&self, other: &Self) -> bool {
@@ -8417,6 +8611,7 @@ impl ::core::fmt::Debug for DOT11_SUPPORTED_DSSS_CHANNEL_LIST {
 }
 unsafe impl ::windows::core::Abi for DOT11_SUPPORTED_DSSS_CHANNEL_LIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_SUPPORTED_DSSS_CHANNEL_LIST {
     fn eq(&self, other: &Self) -> bool {
@@ -8447,6 +8642,7 @@ impl ::core::fmt::Debug for DOT11_SUPPORTED_OFDM_FREQUENCY {
 }
 unsafe impl ::windows::core::Abi for DOT11_SUPPORTED_OFDM_FREQUENCY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_SUPPORTED_OFDM_FREQUENCY {
     fn eq(&self, other: &Self) -> bool {
@@ -8479,6 +8675,7 @@ impl ::core::fmt::Debug for DOT11_SUPPORTED_OFDM_FREQUENCY_LIST {
 }
 unsafe impl ::windows::core::Abi for DOT11_SUPPORTED_OFDM_FREQUENCY_LIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_SUPPORTED_OFDM_FREQUENCY_LIST {
     fn eq(&self, other: &Self) -> bool {
@@ -8511,6 +8708,7 @@ impl ::core::fmt::Debug for DOT11_SUPPORTED_PHY_TYPES {
 }
 unsafe impl ::windows::core::Abi for DOT11_SUPPORTED_PHY_TYPES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_SUPPORTED_PHY_TYPES {
     fn eq(&self, other: &Self) -> bool {
@@ -8542,6 +8740,7 @@ impl ::core::fmt::Debug for DOT11_SUPPORTED_POWER_LEVELS {
 }
 unsafe impl ::windows::core::Abi for DOT11_SUPPORTED_POWER_LEVELS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_SUPPORTED_POWER_LEVELS {
     fn eq(&self, other: &Self) -> bool {
@@ -8577,6 +8776,7 @@ impl ::core::default::Default for DOT11_TEMP_TYPE {
 }
 unsafe impl ::windows::core::Abi for DOT11_TEMP_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DOT11_TEMP_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8609,6 +8809,7 @@ impl ::core::fmt::Debug for DOT11_TKIPMIC_FAILURE_PARAMETERS {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_NetworkManagement_Ndis"))]
 unsafe impl ::windows::core::Abi for DOT11_TKIPMIC_FAILURE_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_NetworkManagement_Ndis"))]
 impl ::core::cmp::PartialEq for DOT11_TKIPMIC_FAILURE_PARAMETERS {
@@ -8646,6 +8847,7 @@ impl ::core::fmt::Debug for DOT11_UPDATE_IE {
 }
 unsafe impl ::windows::core::Abi for DOT11_UPDATE_IE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_UPDATE_IE {
     fn eq(&self, other: &Self) -> bool {
@@ -8679,6 +8881,7 @@ impl ::core::default::Default for DOT11_UPDATE_IE_OP {
 }
 unsafe impl ::windows::core::Abi for DOT11_UPDATE_IE_OP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DOT11_UPDATE_IE_OP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8704,6 +8907,7 @@ impl ::core::fmt::Debug for DOT11_VENUEINFO {
 }
 unsafe impl ::windows::core::Abi for DOT11_VENUEINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_VENUEINFO {
     fn eq(&self, other: &Self) -> bool {
@@ -8741,6 +8945,7 @@ impl ::core::fmt::Debug for DOT11_VWIFI_ATTRIBUTES {
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 unsafe impl ::windows::core::Abi for DOT11_VWIFI_ATTRIBUTES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 impl ::core::cmp::PartialEq for DOT11_VWIFI_ATTRIBUTES {
@@ -8784,6 +8989,7 @@ impl ::core::fmt::Debug for DOT11_VWIFI_COMBINATION {
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 unsafe impl ::windows::core::Abi for DOT11_VWIFI_COMBINATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 impl ::core::cmp::PartialEq for DOT11_VWIFI_COMBINATION {
@@ -8832,6 +9038,7 @@ impl ::core::fmt::Debug for DOT11_VWIFI_COMBINATION_V2 {
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 unsafe impl ::windows::core::Abi for DOT11_VWIFI_COMBINATION_V2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 impl ::core::cmp::PartialEq for DOT11_VWIFI_COMBINATION_V2 {
@@ -8875,6 +9082,7 @@ impl ::core::fmt::Debug for DOT11_VWIFI_COMBINATION_V3 {
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 unsafe impl ::windows::core::Abi for DOT11_VWIFI_COMBINATION_V3 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 impl ::core::cmp::PartialEq for DOT11_VWIFI_COMBINATION_V3 {
@@ -8943,6 +9151,7 @@ impl ::core::fmt::Debug for DOT11_WEP_OFFLOAD {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DOT11_WEP_OFFLOAD {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DOT11_WEP_OFFLOAD {
@@ -8986,6 +9195,7 @@ impl ::core::fmt::Debug for DOT11_WEP_UPLOAD {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DOT11_WEP_UPLOAD {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DOT11_WEP_UPLOAD {
@@ -9030,6 +9240,7 @@ impl ::core::fmt::Debug for DOT11_WFD_ADDITIONAL_IE {
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 unsafe impl ::windows::core::Abi for DOT11_WFD_ADDITIONAL_IE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 impl ::core::cmp::PartialEq for DOT11_WFD_ADDITIONAL_IE {
@@ -9068,6 +9279,7 @@ impl ::core::fmt::Debug for DOT11_WFD_ADVERTISED_SERVICE_DESCRIPTOR {
 }
 unsafe impl ::windows::core::Abi for DOT11_WFD_ADVERTISED_SERVICE_DESCRIPTOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_WFD_ADVERTISED_SERVICE_DESCRIPTOR {
     fn eq(&self, other: &Self) -> bool {
@@ -9099,6 +9311,7 @@ impl ::core::fmt::Debug for DOT11_WFD_ADVERTISED_SERVICE_LIST {
 }
 unsafe impl ::windows::core::Abi for DOT11_WFD_ADVERTISED_SERVICE_LIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_WFD_ADVERTISED_SERVICE_LIST {
     fn eq(&self, other: &Self) -> bool {
@@ -9130,6 +9343,7 @@ impl ::core::fmt::Debug for DOT11_WFD_ADVERTISEMENT_ID {
 }
 unsafe impl ::windows::core::Abi for DOT11_WFD_ADVERTISEMENT_ID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_WFD_ADVERTISEMENT_ID {
     fn eq(&self, other: &Self) -> bool {
@@ -9199,6 +9413,7 @@ impl ::core::fmt::Debug for DOT11_WFD_ATTRIBUTES {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_NetworkManagement_Ndis"))]
 unsafe impl ::windows::core::Abi for DOT11_WFD_ATTRIBUTES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_NetworkManagement_Ndis"))]
 impl ::core::cmp::PartialEq for DOT11_WFD_ATTRIBUTES {
@@ -9236,6 +9451,7 @@ impl ::core::fmt::Debug for DOT11_WFD_CHANNEL {
 }
 unsafe impl ::windows::core::Abi for DOT11_WFD_CHANNEL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_WFD_CHANNEL {
     fn eq(&self, other: &Self) -> bool {
@@ -9267,6 +9483,7 @@ impl ::core::fmt::Debug for DOT11_WFD_CONFIGURATION_TIMEOUT {
 }
 unsafe impl ::windows::core::Abi for DOT11_WFD_CONFIGURATION_TIMEOUT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_WFD_CONFIGURATION_TIMEOUT {
     fn eq(&self, other: &Self) -> bool {
@@ -9322,6 +9539,7 @@ impl ::core::fmt::Debug for DOT11_WFD_DEVICE_CAPABILITY_CONFIG {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_NetworkManagement_Ndis"))]
 unsafe impl ::windows::core::Abi for DOT11_WFD_DEVICE_CAPABILITY_CONFIG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_NetworkManagement_Ndis"))]
 impl ::core::cmp::PartialEq for DOT11_WFD_DEVICE_CAPABILITY_CONFIG {
@@ -9381,6 +9599,7 @@ impl ::core::clone::Clone for DOT11_WFD_DEVICE_ENTRY {
 }
 unsafe impl ::windows::core::Abi for DOT11_WFD_DEVICE_ENTRY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_WFD_DEVICE_ENTRY {
     fn eq(&self, other: &Self) -> bool {
@@ -9422,6 +9641,7 @@ impl ::core::fmt::Debug for DOT11_WFD_DEVICE_INFO {
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 unsafe impl ::windows::core::Abi for DOT11_WFD_DEVICE_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 impl ::core::cmp::PartialEq for DOT11_WFD_DEVICE_INFO {
@@ -9463,6 +9683,7 @@ impl ::core::fmt::Debug for DOT11_WFD_DEVICE_LISTEN_CHANNEL {
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 unsafe impl ::windows::core::Abi for DOT11_WFD_DEVICE_LISTEN_CHANNEL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 impl ::core::cmp::PartialEq for DOT11_WFD_DEVICE_LISTEN_CHANNEL {
@@ -9502,6 +9723,7 @@ impl ::core::fmt::Debug for DOT11_WFD_DEVICE_TYPE {
 }
 unsafe impl ::windows::core::Abi for DOT11_WFD_DEVICE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_WFD_DEVICE_TYPE {
     fn eq(&self, other: &Self) -> bool {
@@ -9544,6 +9766,7 @@ impl ::core::fmt::Debug for DOT11_WFD_DISCOVER_COMPLETE_PARAMETERS {
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 unsafe impl ::windows::core::Abi for DOT11_WFD_DISCOVER_COMPLETE_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 impl ::core::cmp::PartialEq for DOT11_WFD_DISCOVER_COMPLETE_PARAMETERS {
@@ -9581,6 +9804,7 @@ impl ::core::fmt::Debug for DOT11_WFD_DISCOVER_DEVICE_FILTER {
 }
 unsafe impl ::windows::core::Abi for DOT11_WFD_DISCOVER_DEVICE_FILTER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_WFD_DISCOVER_DEVICE_FILTER {
     fn eq(&self, other: &Self) -> bool {
@@ -9624,6 +9848,7 @@ impl ::core::fmt::Debug for DOT11_WFD_DISCOVER_REQUEST {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_NetworkManagement_Ndis"))]
 unsafe impl ::windows::core::Abi for DOT11_WFD_DISCOVER_REQUEST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_NetworkManagement_Ndis"))]
 impl ::core::cmp::PartialEq for DOT11_WFD_DISCOVER_REQUEST {
@@ -9668,6 +9893,7 @@ impl ::core::default::Default for DOT11_WFD_DISCOVER_TYPE {
 }
 unsafe impl ::windows::core::Abi for DOT11_WFD_DISCOVER_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DOT11_WFD_DISCOVER_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9692,6 +9918,7 @@ impl ::core::fmt::Debug for DOT11_WFD_GO_INTENT {
 }
 unsafe impl ::windows::core::Abi for DOT11_WFD_GO_INTENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_WFD_GO_INTENT {
     fn eq(&self, other: &Self) -> bool {
@@ -9743,6 +9970,7 @@ impl ::core::fmt::Debug for DOT11_WFD_GROUP_ID {
 }
 unsafe impl ::windows::core::Abi for DOT11_WFD_GROUP_ID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_WFD_GROUP_ID {
     fn eq(&self, other: &Self) -> bool {
@@ -9782,6 +10010,7 @@ impl ::core::fmt::Debug for DOT11_WFD_GROUP_JOIN_PARAMETERS {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_NetworkManagement_Ndis"))]
 unsafe impl ::windows::core::Abi for DOT11_WFD_GROUP_JOIN_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_NetworkManagement_Ndis"))]
 impl ::core::cmp::PartialEq for DOT11_WFD_GROUP_JOIN_PARAMETERS {
@@ -9836,6 +10065,7 @@ impl ::core::fmt::Debug for DOT11_WFD_GROUP_OWNER_CAPABILITY_CONFIG {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_NetworkManagement_Ndis"))]
 unsafe impl ::windows::core::Abi for DOT11_WFD_GROUP_OWNER_CAPABILITY_CONFIG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_NetworkManagement_Ndis"))]
 impl ::core::cmp::PartialEq for DOT11_WFD_GROUP_OWNER_CAPABILITY_CONFIG {
@@ -9894,6 +10124,7 @@ impl ::core::fmt::Debug for DOT11_WFD_GROUP_OWNER_CAPABILITY_CONFIG_V2 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_NetworkManagement_Ndis"))]
 unsafe impl ::windows::core::Abi for DOT11_WFD_GROUP_OWNER_CAPABILITY_CONFIG_V2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_NetworkManagement_Ndis"))]
 impl ::core::cmp::PartialEq for DOT11_WFD_GROUP_OWNER_CAPABILITY_CONFIG_V2 {
@@ -9933,6 +10164,7 @@ impl ::core::fmt::Debug for DOT11_WFD_GROUP_START_PARAMETERS {
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 unsafe impl ::windows::core::Abi for DOT11_WFD_GROUP_START_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 impl ::core::cmp::PartialEq for DOT11_WFD_GROUP_START_PARAMETERS {
@@ -9968,6 +10200,7 @@ impl ::core::fmt::Debug for DOT11_WFD_INVITATION_FLAGS {
 }
 unsafe impl ::windows::core::Abi for DOT11_WFD_INVITATION_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_WFD_INVITATION_FLAGS {
     fn eq(&self, other: &Self) -> bool {
@@ -10013,6 +10246,7 @@ impl ::core::default::Default for DOT11_WFD_SCAN_TYPE {
 }
 unsafe impl ::windows::core::Abi for DOT11_WFD_SCAN_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DOT11_WFD_SCAN_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10045,6 +10279,7 @@ impl ::core::fmt::Debug for DOT11_WFD_SECONDARY_DEVICE_TYPE_LIST {
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 unsafe impl ::windows::core::Abi for DOT11_WFD_SECONDARY_DEVICE_TYPE_LIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 impl ::core::cmp::PartialEq for DOT11_WFD_SECONDARY_DEVICE_TYPE_LIST {
@@ -10081,6 +10316,7 @@ impl ::core::fmt::Debug for DOT11_WFD_SERVICE_HASH_LIST {
 }
 unsafe impl ::windows::core::Abi for DOT11_WFD_SERVICE_HASH_LIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_WFD_SERVICE_HASH_LIST {
     fn eq(&self, other: &Self) -> bool {
@@ -10116,6 +10352,7 @@ impl ::core::fmt::Debug for DOT11_WFD_SESSION_ID {
 }
 unsafe impl ::windows::core::Abi for DOT11_WFD_SESSION_ID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_WFD_SESSION_ID {
     fn eq(&self, other: &Self) -> bool {
@@ -10147,6 +10384,7 @@ impl ::core::fmt::Debug for DOT11_WFD_SESSION_INFO {
 }
 unsafe impl ::windows::core::Abi for DOT11_WFD_SESSION_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_WFD_SESSION_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -10209,6 +10447,7 @@ impl ::core::fmt::Debug for DOT11_WME_AC_PARAMETERS {
 }
 unsafe impl ::windows::core::Abi for DOT11_WME_AC_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_WME_AC_PARAMETERS {
     fn eq(&self, other: &Self) -> bool {
@@ -10246,6 +10485,7 @@ impl ::core::fmt::Debug for DOT11_WME_UPDATE_IE {
 }
 unsafe impl ::windows::core::Abi for DOT11_WME_UPDATE_IE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_WME_UPDATE_IE {
     fn eq(&self, other: &Self) -> bool {
@@ -10284,6 +10524,7 @@ impl ::core::fmt::Debug for DOT11_WPA_TSC {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DOT11_WPA_TSC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DOT11_WPA_TSC {
@@ -10330,6 +10571,7 @@ impl ::core::default::Default for DOT11_WPS_CONFIG_METHOD {
 }
 unsafe impl ::windows::core::Abi for DOT11_WPS_CONFIG_METHOD {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DOT11_WPS_CONFIG_METHOD {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10355,6 +10597,7 @@ impl ::core::fmt::Debug for DOT11_WPS_DEVICE_NAME {
 }
 unsafe impl ::windows::core::Abi for DOT11_WPS_DEVICE_NAME {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOT11_WPS_DEVICE_NAME {
     fn eq(&self, other: &Self) -> bool {
@@ -10406,6 +10649,7 @@ impl ::core::default::Default for DOT11_WPS_DEVICE_PASSWORD_ID {
 }
 unsafe impl ::windows::core::Abi for DOT11_WPS_DEVICE_PASSWORD_ID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DOT11_WPS_DEVICE_PASSWORD_ID {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10607,6 +10851,11 @@ pub const GUID_DEVINTERFACE_WIFIDIRECT_DEVICE: ::windows::core::GUID = ::windows
 #[doc = "*Required features: `\"Win32_NetworkManagement_WiFi\"`*"]
 #[repr(transparent)]
 pub struct IDot11AdHocInterface(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDot11AdHocInterface {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDot11AdHocInterface {
     #[doc = "*Required features: `\"Win32_NetworkManagement_WiFi\"`*"]
     pub unsafe fn GetDeviceSignature(&self, psignature: *mut ::windows::core::GUID) -> ::windows::core::Result<()> {
@@ -10669,11 +10918,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDot1
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDot11AdHocInterface {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDot11AdHocInterface {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10706,6 +10950,11 @@ pub struct IDot11AdHocInterface_Vtbl {
 #[doc = "*Required features: `\"Win32_NetworkManagement_WiFi\"`*"]
 #[repr(transparent)]
 pub struct IDot11AdHocInterfaceNotificationSink(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDot11AdHocInterfaceNotificationSink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDot11AdHocInterfaceNotificationSink {
     #[doc = "*Required features: `\"Win32_NetworkManagement_WiFi\"`*"]
     pub unsafe fn OnConnectionStatusChange(&self, estatus: DOT11_ADHOC_NETWORK_CONNECTION_STATUS) -> ::windows::core::Result<()> {
@@ -10732,11 +10981,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDot1
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDot11AdHocInterfaceNotificationSink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDot11AdHocInterfaceNotificationSink {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10761,6 +11005,11 @@ pub struct IDot11AdHocInterfaceNotificationSink_Vtbl {
 #[doc = "*Required features: `\"Win32_NetworkManagement_WiFi\"`*"]
 #[repr(transparent)]
 pub struct IDot11AdHocManager(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDot11AdHocManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDot11AdHocManager {
     #[doc = "*Required features: `\"Win32_NetworkManagement_WiFi\"`*"]
     pub unsafe fn CreateNetwork<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param1: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param3: ::windows::core::IntoParam<'a, IDot11AdHocInterface>, Param4: ::windows::core::IntoParam<'a, IDot11AdHocSecuritySettings>>(&self, name: Param0, password: Param1, geographicalid: i32, pinterface: Param3, psecurity: Param4, pcontextguid: *const ::windows::core::GUID) -> ::windows::core::Result<IDot11AdHocNetwork> {
@@ -10808,11 +11057,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDot1
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDot11AdHocManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDot11AdHocManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10844,6 +11088,11 @@ pub struct IDot11AdHocManager_Vtbl {
 #[doc = "*Required features: `\"Win32_NetworkManagement_WiFi\"`*"]
 #[repr(transparent)]
 pub struct IDot11AdHocManagerNotificationSink(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDot11AdHocManagerNotificationSink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDot11AdHocManagerNotificationSink {
     #[doc = "*Required features: `\"Win32_NetworkManagement_WiFi\"`*"]
     pub unsafe fn OnNetworkAdd<'a, Param0: ::windows::core::IntoParam<'a, IDot11AdHocNetwork>>(&self, piadhocnetwork: Param0) -> ::windows::core::Result<()> {
@@ -10882,11 +11131,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDot1
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDot11AdHocManagerNotificationSink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDot11AdHocManagerNotificationSink {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10914,6 +11158,11 @@ pub struct IDot11AdHocManagerNotificationSink_Vtbl {
 #[doc = "*Required features: `\"Win32_NetworkManagement_WiFi\"`*"]
 #[repr(transparent)]
 pub struct IDot11AdHocNetwork(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDot11AdHocNetwork {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDot11AdHocNetwork {
     #[doc = "*Required features: `\"Win32_NetworkManagement_WiFi\"`*"]
     pub unsafe fn GetStatus(&self, estatus: *mut DOT11_ADHOC_NETWORK_CONNECTION_STATUS) -> ::windows::core::Result<()> {
@@ -10989,11 +11238,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDot1
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDot11AdHocNetwork {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDot11AdHocNetwork {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11032,6 +11276,11 @@ pub struct IDot11AdHocNetwork_Vtbl {
 #[doc = "*Required features: `\"Win32_NetworkManagement_WiFi\"`*"]
 #[repr(transparent)]
 pub struct IDot11AdHocNetworkNotificationSink(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDot11AdHocNetworkNotificationSink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDot11AdHocNetworkNotificationSink {
     #[doc = "*Required features: `\"Win32_NetworkManagement_WiFi\"`*"]
     pub unsafe fn OnStatusChange(&self, estatus: DOT11_ADHOC_NETWORK_CONNECTION_STATUS) -> ::windows::core::Result<()> {
@@ -11062,11 +11311,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDot1
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDot11AdHocNetworkNotificationSink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDot11AdHocNetworkNotificationSink {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11092,6 +11336,11 @@ pub struct IDot11AdHocNetworkNotificationSink_Vtbl {
 #[doc = "*Required features: `\"Win32_NetworkManagement_WiFi\"`*"]
 #[repr(transparent)]
 pub struct IDot11AdHocSecuritySettings(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDot11AdHocSecuritySettings {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDot11AdHocSecuritySettings {
     #[doc = "*Required features: `\"Win32_NetworkManagement_WiFi\"`*"]
     pub unsafe fn GetDot11AuthAlgorithm(&self, pauth: *mut DOT11_ADHOC_AUTH_ALGORITHM) -> ::windows::core::Result<()> {
@@ -11122,11 +11371,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDot1
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDot11AdHocSecuritySettings {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDot11AdHocSecuritySettings {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11152,6 +11396,11 @@ pub struct IDot11AdHocSecuritySettings_Vtbl {
 #[doc = "*Required features: `\"Win32_NetworkManagement_WiFi\"`*"]
 #[repr(transparent)]
 pub struct IEnumDot11AdHocInterfaces(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnumDot11AdHocInterfaces {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnumDot11AdHocInterfaces {
     #[doc = "*Required features: `\"Win32_NetworkManagement_WiFi\"`*"]
     pub unsafe fn Next(&self, rgelt: &mut [::core::option::Option<IDot11AdHocInterface>], pceltfetched: *mut u32) -> ::windows::core::Result<()> {
@@ -11191,11 +11440,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnum
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnumDot11AdHocInterfaces {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnumDot11AdHocInterfaces {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11223,6 +11467,11 @@ pub struct IEnumDot11AdHocInterfaces_Vtbl {
 #[doc = "*Required features: `\"Win32_NetworkManagement_WiFi\"`*"]
 #[repr(transparent)]
 pub struct IEnumDot11AdHocNetworks(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnumDot11AdHocNetworks {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnumDot11AdHocNetworks {
     #[doc = "*Required features: `\"Win32_NetworkManagement_WiFi\"`*"]
     pub unsafe fn Next(&self, rgelt: &mut [::core::option::Option<IDot11AdHocNetwork>], pceltfetched: *mut u32) -> ::windows::core::Result<()> {
@@ -11262,11 +11511,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnum
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnumDot11AdHocNetworks {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnumDot11AdHocNetworks {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11294,6 +11538,11 @@ pub struct IEnumDot11AdHocNetworks_Vtbl {
 #[doc = "*Required features: `\"Win32_NetworkManagement_WiFi\"`*"]
 #[repr(transparent)]
 pub struct IEnumDot11AdHocSecuritySettings(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnumDot11AdHocSecuritySettings {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnumDot11AdHocSecuritySettings {
     #[doc = "*Required features: `\"Win32_NetworkManagement_WiFi\"`*"]
     pub unsafe fn Next(&self, rgelt: &mut [::core::option::Option<IDot11AdHocSecuritySettings>], pceltfetched: *mut u32) -> ::windows::core::Result<()> {
@@ -11331,11 +11580,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IEnumDot1
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnumDot11AdHocSecuritySettings {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IEnumDot11AdHocSecuritySettings {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IEnumDot11AdHocSecuritySettings {
@@ -11388,6 +11632,7 @@ impl ::core::fmt::Debug for L2_NOTIFICATION_DATA {
 }
 unsafe impl ::windows::core::Abi for L2_NOTIFICATION_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for L2_NOTIFICATION_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -11737,6 +11982,7 @@ impl ::core::default::Default for ONEX_AUTH_IDENTITY {
 }
 unsafe impl ::windows::core::Abi for ONEX_AUTH_IDENTITY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ONEX_AUTH_IDENTITY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11788,6 +12034,7 @@ impl ::core::fmt::Debug for ONEX_AUTH_PARAMS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for ONEX_AUTH_PARAMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for ONEX_AUTH_PARAMS {
@@ -11838,6 +12085,7 @@ impl ::core::default::Default for ONEX_AUTH_RESTART_REASON {
 }
 unsafe impl ::windows::core::Abi for ONEX_AUTH_RESTART_REASON {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ONEX_AUTH_RESTART_REASON {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11873,6 +12121,7 @@ impl ::core::default::Default for ONEX_AUTH_STATUS {
 }
 unsafe impl ::windows::core::Abi for ONEX_AUTH_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ONEX_AUTH_STATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11910,6 +12159,7 @@ impl ::core::fmt::Debug for ONEX_EAP_ERROR {
 #[cfg(feature = "Win32_Security_ExtensibleAuthenticationProtocol")]
 unsafe impl ::windows::core::Abi for ONEX_EAP_ERROR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Security_ExtensibleAuthenticationProtocol")]
 impl ::core::cmp::PartialEq for ONEX_EAP_ERROR {
@@ -11948,6 +12198,7 @@ impl ::core::default::Default for ONEX_EAP_METHOD_BACKEND_SUPPORT {
 }
 unsafe impl ::windows::core::Abi for ONEX_EAP_METHOD_BACKEND_SUPPORT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ONEX_EAP_METHOD_BACKEND_SUPPORT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11981,6 +12232,7 @@ impl ::core::default::Default for ONEX_NOTIFICATION_TYPE {
 }
 unsafe impl ::windows::core::Abi for ONEX_NOTIFICATION_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ONEX_NOTIFICATION_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12048,6 +12300,7 @@ impl ::core::default::Default for ONEX_REASON_CODE {
 }
 unsafe impl ::windows::core::Abi for ONEX_REASON_CODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ONEX_REASON_CODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12082,6 +12335,7 @@ impl ::core::fmt::Debug for ONEX_RESULT_UPDATE_DATA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for ONEX_RESULT_UPDATE_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for ONEX_RESULT_UPDATE_DATA {
@@ -12117,6 +12371,7 @@ impl ::core::fmt::Debug for ONEX_STATUS {
 }
 unsafe impl ::windows::core::Abi for ONEX_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ONEX_STATUS {
     fn eq(&self, other: &Self) -> bool {
@@ -12150,6 +12405,7 @@ impl ::core::fmt::Debug for ONEX_USER_INFO {
 }
 unsafe impl ::windows::core::Abi for ONEX_USER_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ONEX_USER_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -12181,6 +12437,7 @@ impl ::core::fmt::Debug for ONEX_VARIABLE_BLOB {
 }
 unsafe impl ::windows::core::Abi for ONEX_VARIABLE_BLOB {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ONEX_VARIABLE_BLOB {
     fn eq(&self, other: &Self) -> bool {
@@ -12293,6 +12550,7 @@ impl ::core::fmt::Debug for WFDSVC_CONNECTION_CAPABILITY {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WFDSVC_CONNECTION_CAPABILITY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WFDSVC_CONNECTION_CAPABILITY {
@@ -12366,6 +12624,7 @@ impl ::core::fmt::Debug for WFD_GROUP_ID {
 }
 unsafe impl ::windows::core::Abi for WFD_GROUP_ID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WFD_GROUP_ID {
     fn eq(&self, other: &Self) -> bool {
@@ -12408,6 +12667,7 @@ impl ::core::default::Default for WFD_ROLE_TYPE {
 }
 unsafe impl ::windows::core::Abi for WFD_ROLE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WFD_ROLE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12435,6 +12695,7 @@ impl ::core::default::Default for WLAN_ADHOC_NETWORK_STATE {
 }
 unsafe impl ::windows::core::Abi for WLAN_ADHOC_NETWORK_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WLAN_ADHOC_NETWORK_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12472,6 +12733,7 @@ impl ::core::fmt::Debug for WLAN_ASSOCIATION_ATTRIBUTES {
 }
 unsafe impl ::windows::core::Abi for WLAN_ASSOCIATION_ATTRIBUTES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WLAN_ASSOCIATION_ATTRIBUTES {
     fn eq(&self, other: &Self) -> bool {
@@ -12503,6 +12765,7 @@ impl ::core::fmt::Debug for WLAN_AUTH_CIPHER_PAIR_LIST {
 }
 unsafe impl ::windows::core::Abi for WLAN_AUTH_CIPHER_PAIR_LIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WLAN_AUTH_CIPHER_PAIR_LIST {
     fn eq(&self, other: &Self) -> bool {
@@ -12548,6 +12811,7 @@ impl ::core::default::Default for WLAN_AUTOCONF_OPCODE {
 }
 unsafe impl ::windows::core::Abi for WLAN_AUTOCONF_OPCODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WLAN_AUTOCONF_OPCODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12607,6 +12871,7 @@ impl ::core::fmt::Debug for WLAN_AVAILABLE_NETWORK {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WLAN_AVAILABLE_NETWORK {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WLAN_AVAILABLE_NETWORK {
@@ -12669,6 +12934,7 @@ impl ::core::fmt::Debug for WLAN_AVAILABLE_NETWORK_LIST {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WLAN_AVAILABLE_NETWORK_LIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WLAN_AVAILABLE_NETWORK_LIST {
@@ -12709,6 +12975,7 @@ impl ::core::fmt::Debug for WLAN_AVAILABLE_NETWORK_LIST_V2 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WLAN_AVAILABLE_NETWORK_LIST_V2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WLAN_AVAILABLE_NETWORK_LIST_V2 {
@@ -12783,6 +13050,7 @@ impl ::core::fmt::Debug for WLAN_AVAILABLE_NETWORK_V2 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WLAN_AVAILABLE_NETWORK_V2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WLAN_AVAILABLE_NETWORK_V2 {
@@ -12853,6 +13121,7 @@ impl ::core::fmt::Debug for WLAN_BSS_ENTRY {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WLAN_BSS_ENTRY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WLAN_BSS_ENTRY {
@@ -12893,6 +13162,7 @@ impl ::core::fmt::Debug for WLAN_BSS_LIST {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WLAN_BSS_LIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WLAN_BSS_LIST {
@@ -12937,6 +13207,7 @@ impl ::core::fmt::Debug for WLAN_CONNECTION_ATTRIBUTES {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WLAN_CONNECTION_ATTRIBUTES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WLAN_CONNECTION_ATTRIBUTES {
@@ -12987,6 +13258,7 @@ impl ::core::default::Default for WLAN_CONNECTION_MODE {
 }
 unsafe impl ::windows::core::Abi for WLAN_CONNECTION_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WLAN_CONNECTION_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13023,6 +13295,7 @@ impl ::core::fmt::Debug for WLAN_CONNECTION_NOTIFICATION_DATA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WLAN_CONNECTION_NOTIFICATION_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WLAN_CONNECTION_NOTIFICATION_DATA {
@@ -13059,6 +13332,7 @@ impl ::core::default::Default for WLAN_CONNECTION_NOTIFICATION_FLAGS {
 }
 unsafe impl ::windows::core::Abi for WLAN_CONNECTION_NOTIFICATION_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WLAN_CONNECTION_NOTIFICATION_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13093,6 +13367,7 @@ impl ::core::fmt::Debug for WLAN_CONNECTION_PARAMETERS {
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 unsafe impl ::windows::core::Abi for WLAN_CONNECTION_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 impl ::core::cmp::PartialEq for WLAN_CONNECTION_PARAMETERS {
@@ -13138,6 +13413,7 @@ impl ::core::fmt::Debug for WLAN_CONNECTION_PARAMETERS_V2 {
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 unsafe impl ::windows::core::Abi for WLAN_CONNECTION_PARAMETERS_V2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_NetworkManagement_Ndis")]
 impl ::core::cmp::PartialEq for WLAN_CONNECTION_PARAMETERS_V2 {
@@ -13178,6 +13454,7 @@ impl ::core::fmt::Debug for WLAN_COUNTRY_OR_REGION_STRING_LIST {
 }
 unsafe impl ::windows::core::Abi for WLAN_COUNTRY_OR_REGION_STRING_LIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WLAN_COUNTRY_OR_REGION_STRING_LIST {
     fn eq(&self, other: &Self) -> bool {
@@ -13210,6 +13487,7 @@ impl ::core::fmt::Debug for WLAN_DEVICE_SERVICE_GUID_LIST {
 }
 unsafe impl ::windows::core::Abi for WLAN_DEVICE_SERVICE_GUID_LIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WLAN_DEVICE_SERVICE_GUID_LIST {
     fn eq(&self, other: &Self) -> bool {
@@ -13243,6 +13521,7 @@ impl ::core::fmt::Debug for WLAN_DEVICE_SERVICE_NOTIFICATION_DATA {
 }
 unsafe impl ::windows::core::Abi for WLAN_DEVICE_SERVICE_NOTIFICATION_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WLAN_DEVICE_SERVICE_NOTIFICATION_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -13280,6 +13559,7 @@ impl ::core::default::Default for WLAN_FILTER_LIST_TYPE {
 }
 unsafe impl ::windows::core::Abi for WLAN_FILTER_LIST_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WLAN_FILTER_LIST_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13305,6 +13585,7 @@ impl ::core::fmt::Debug for WLAN_HOSTED_NETWORK_CONNECTION_SETTINGS {
 }
 unsafe impl ::windows::core::Abi for WLAN_HOSTED_NETWORK_CONNECTION_SETTINGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WLAN_HOSTED_NETWORK_CONNECTION_SETTINGS {
     fn eq(&self, other: &Self) -> bool {
@@ -13337,6 +13618,7 @@ impl ::core::fmt::Debug for WLAN_HOSTED_NETWORK_DATA_PEER_STATE_CHANGE {
 }
 unsafe impl ::windows::core::Abi for WLAN_HOSTED_NETWORK_DATA_PEER_STATE_CHANGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WLAN_HOSTED_NETWORK_DATA_PEER_STATE_CHANGE {
     fn eq(&self, other: &Self) -> bool {
@@ -13372,6 +13654,7 @@ impl ::core::default::Default for WLAN_HOSTED_NETWORK_NOTIFICATION_CODE {
 }
 unsafe impl ::windows::core::Abi for WLAN_HOSTED_NETWORK_NOTIFICATION_CODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WLAN_HOSTED_NETWORK_NOTIFICATION_CODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13403,6 +13686,7 @@ impl ::core::default::Default for WLAN_HOSTED_NETWORK_OPCODE {
 }
 unsafe impl ::windows::core::Abi for WLAN_HOSTED_NETWORK_OPCODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WLAN_HOSTED_NETWORK_OPCODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13430,6 +13714,7 @@ impl ::core::default::Default for WLAN_HOSTED_NETWORK_PEER_AUTH_STATE {
 }
 unsafe impl ::windows::core::Abi for WLAN_HOSTED_NETWORK_PEER_AUTH_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WLAN_HOSTED_NETWORK_PEER_AUTH_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13455,6 +13740,7 @@ impl ::core::fmt::Debug for WLAN_HOSTED_NETWORK_PEER_STATE {
 }
 unsafe impl ::windows::core::Abi for WLAN_HOSTED_NETWORK_PEER_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WLAN_HOSTED_NETWORK_PEER_STATE {
     fn eq(&self, other: &Self) -> bool {
@@ -13486,6 +13772,7 @@ impl ::core::fmt::Debug for WLAN_HOSTED_NETWORK_RADIO_STATE {
 }
 unsafe impl ::windows::core::Abi for WLAN_HOSTED_NETWORK_RADIO_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WLAN_HOSTED_NETWORK_RADIO_STATE {
     fn eq(&self, other: &Self) -> bool {
@@ -13573,6 +13860,7 @@ impl ::core::default::Default for WLAN_HOSTED_NETWORK_REASON {
 }
 unsafe impl ::windows::core::Abi for WLAN_HOSTED_NETWORK_REASON {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WLAN_HOSTED_NETWORK_REASON {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13598,6 +13886,7 @@ impl ::core::fmt::Debug for WLAN_HOSTED_NETWORK_SECURITY_SETTINGS {
 }
 unsafe impl ::windows::core::Abi for WLAN_HOSTED_NETWORK_SECURITY_SETTINGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WLAN_HOSTED_NETWORK_SECURITY_SETTINGS {
     fn eq(&self, other: &Self) -> bool {
@@ -13633,6 +13922,7 @@ impl ::core::default::Default for WLAN_HOSTED_NETWORK_STATE {
 }
 unsafe impl ::windows::core::Abi for WLAN_HOSTED_NETWORK_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WLAN_HOSTED_NETWORK_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13659,6 +13949,7 @@ impl ::core::fmt::Debug for WLAN_HOSTED_NETWORK_STATE_CHANGE {
 }
 unsafe impl ::windows::core::Abi for WLAN_HOSTED_NETWORK_STATE_CHANGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WLAN_HOSTED_NETWORK_STATE_CHANGE {
     fn eq(&self, other: &Self) -> bool {
@@ -13695,6 +13986,7 @@ impl ::core::fmt::Debug for WLAN_HOSTED_NETWORK_STATUS {
 }
 unsafe impl ::windows::core::Abi for WLAN_HOSTED_NETWORK_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WLAN_HOSTED_NETWORK_STATUS {
     fn eq(&self, other: &Self) -> bool {
@@ -13728,6 +14020,7 @@ impl ::core::default::Default for WLAN_IHV_CONTROL_TYPE {
 }
 unsafe impl ::windows::core::Abi for WLAN_IHV_CONTROL_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WLAN_IHV_CONTROL_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13762,6 +14055,7 @@ impl ::core::fmt::Debug for WLAN_INTERFACE_CAPABILITY {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WLAN_INTERFACE_CAPABILITY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WLAN_INTERFACE_CAPABILITY {
@@ -13797,6 +14091,7 @@ impl ::core::fmt::Debug for WLAN_INTERFACE_INFO {
 }
 unsafe impl ::windows::core::Abi for WLAN_INTERFACE_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WLAN_INTERFACE_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -13829,6 +14124,7 @@ impl ::core::fmt::Debug for WLAN_INTERFACE_INFO_LIST {
 }
 unsafe impl ::windows::core::Abi for WLAN_INTERFACE_INFO_LIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WLAN_INTERFACE_INFO_LIST {
     fn eq(&self, other: &Self) -> bool {
@@ -13874,6 +14170,7 @@ impl ::core::default::Default for WLAN_INTERFACE_STATE {
 }
 unsafe impl ::windows::core::Abi for WLAN_INTERFACE_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WLAN_INTERFACE_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13903,6 +14200,7 @@ impl ::core::default::Default for WLAN_INTERFACE_TYPE {
 }
 unsafe impl ::windows::core::Abi for WLAN_INTERFACE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WLAN_INTERFACE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13982,6 +14280,7 @@ impl ::core::default::Default for WLAN_INTF_OPCODE {
 }
 unsafe impl ::windows::core::Abi for WLAN_INTF_OPCODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WLAN_INTF_OPCODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14030,6 +14329,7 @@ impl ::core::fmt::Debug for WLAN_MAC_FRAME_STATISTICS {
 }
 unsafe impl ::windows::core::Abi for WLAN_MAC_FRAME_STATISTICS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WLAN_MAC_FRAME_STATISTICS {
     fn eq(&self, other: &Self) -> bool {
@@ -14079,6 +14379,7 @@ impl ::core::fmt::Debug for WLAN_MSM_NOTIFICATION_DATA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WLAN_MSM_NOTIFICATION_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WLAN_MSM_NOTIFICATION_DATA {
@@ -14169,6 +14470,7 @@ impl ::core::default::Default for WLAN_NOTIFICATION_ACM {
 }
 unsafe impl ::windows::core::Abi for WLAN_NOTIFICATION_ACM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WLAN_NOTIFICATION_ACM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14230,6 +14532,7 @@ impl ::core::default::Default for WLAN_NOTIFICATION_MSM {
 }
 unsafe impl ::windows::core::Abi for WLAN_NOTIFICATION_MSM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WLAN_NOTIFICATION_MSM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14257,6 +14560,7 @@ impl ::core::default::Default for WLAN_NOTIFICATION_SECURITY {
 }
 unsafe impl ::windows::core::Abi for WLAN_NOTIFICATION_SECURITY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WLAN_NOTIFICATION_SECURITY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14306,6 +14610,7 @@ impl ::core::default::Default for WLAN_OPCODE_VALUE_TYPE {
 }
 unsafe impl ::windows::core::Abi for WLAN_OPCODE_VALUE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WLAN_OPCODE_VALUE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14339,6 +14644,7 @@ impl ::core::default::Default for WLAN_OPERATIONAL_STATE {
 }
 unsafe impl ::windows::core::Abi for WLAN_OPERATIONAL_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WLAN_OPERATIONAL_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14399,6 +14705,7 @@ impl ::core::fmt::Debug for WLAN_PHY_FRAME_STATISTICS {
 }
 unsafe impl ::windows::core::Abi for WLAN_PHY_FRAME_STATISTICS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WLAN_PHY_FRAME_STATISTICS {
     fn eq(&self, other: &Self) -> bool {
@@ -14431,6 +14738,7 @@ impl ::core::fmt::Debug for WLAN_PHY_RADIO_STATE {
 }
 unsafe impl ::windows::core::Abi for WLAN_PHY_RADIO_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WLAN_PHY_RADIO_STATE {
     fn eq(&self, other: &Self) -> bool {
@@ -14470,6 +14778,7 @@ impl ::core::default::Default for WLAN_POWER_SETTING {
 }
 unsafe impl ::windows::core::Abi for WLAN_POWER_SETTING {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WLAN_POWER_SETTING {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14503,6 +14812,7 @@ impl ::core::fmt::Debug for WLAN_PROFILE_INFO {
 }
 unsafe impl ::windows::core::Abi for WLAN_PROFILE_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WLAN_PROFILE_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -14535,6 +14845,7 @@ impl ::core::fmt::Debug for WLAN_PROFILE_INFO_LIST {
 }
 unsafe impl ::windows::core::Abi for WLAN_PROFILE_INFO_LIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WLAN_PROFILE_INFO_LIST {
     fn eq(&self, other: &Self) -> bool {
@@ -14568,6 +14879,7 @@ impl ::core::fmt::Debug for WLAN_RADIO_STATE {
 }
 unsafe impl ::windows::core::Abi for WLAN_RADIO_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WLAN_RADIO_STATE {
     fn eq(&self, other: &Self) -> bool {
@@ -14599,6 +14911,7 @@ impl ::core::fmt::Debug for WLAN_RATE_SET {
 }
 unsafe impl ::windows::core::Abi for WLAN_RATE_SET {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WLAN_RATE_SET {
     fn eq(&self, other: &Self) -> bool {
@@ -14630,6 +14943,7 @@ impl ::core::fmt::Debug for WLAN_RAW_DATA {
 }
 unsafe impl ::windows::core::Abi for WLAN_RAW_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WLAN_RAW_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -14662,6 +14976,7 @@ impl ::core::fmt::Debug for WLAN_RAW_DATA_LIST {
 }
 unsafe impl ::windows::core::Abi for WLAN_RAW_DATA_LIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WLAN_RAW_DATA_LIST {
     fn eq(&self, other: &Self) -> bool {
@@ -14693,6 +15008,7 @@ impl ::core::fmt::Debug for WLAN_RAW_DATA_LIST_0 {
 }
 unsafe impl ::windows::core::Abi for WLAN_RAW_DATA_LIST_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WLAN_RAW_DATA_LIST_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -15068,6 +15384,7 @@ impl ::core::default::Default for WLAN_SECURABLE_OBJECT {
 }
 unsafe impl ::windows::core::Abi for WLAN_SECURABLE_OBJECT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WLAN_SECURABLE_OBJECT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -15100,6 +15417,7 @@ impl ::core::fmt::Debug for WLAN_SECURITY_ATTRIBUTES {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WLAN_SECURITY_ATTRIBUTES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WLAN_SECURITY_ATTRIBUTES {
@@ -15134,6 +15452,7 @@ impl ::core::default::Default for WLAN_SET_EAPHOST_FLAGS {
 }
 unsafe impl ::windows::core::Abi for WLAN_SET_EAPHOST_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WLAN_SET_EAPHOST_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -15164,6 +15483,7 @@ impl ::core::fmt::Debug for WLAN_STATISTICS {
 }
 unsafe impl ::windows::core::Abi for WLAN_STATISTICS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WLAN_STATISTICS {
     fn eq(&self, other: &Self) -> bool {
@@ -15203,6 +15523,7 @@ impl ::core::default::Default for WL_DISPLAY_PAGES {
 }
 unsafe impl ::windows::core::Abi for WL_DISPLAY_PAGES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WL_DISPLAY_PAGES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -16036,6 +16357,7 @@ impl ::core::fmt::Debug for _DOT11_WME_AC_PARAMTERS_LIST {
 }
 unsafe impl ::windows::core::Abi for _DOT11_WME_AC_PARAMTERS_LIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for _DOT11_WME_AC_PARAMTERS_LIST {
     fn eq(&self, other: &Self) -> bool {

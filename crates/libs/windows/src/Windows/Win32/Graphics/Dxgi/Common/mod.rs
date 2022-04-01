@@ -26,6 +26,7 @@ impl ::core::default::Default for DXGI_ALPHA_MODE {
 }
 unsafe impl ::windows::core::Abi for DXGI_ALPHA_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXGI_ALPHA_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -103,6 +104,7 @@ impl ::core::default::Default for DXGI_COLOR_SPACE_TYPE {
 }
 unsafe impl ::windows::core::Abi for DXGI_COLOR_SPACE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXGI_COLOR_SPACE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -380,6 +382,7 @@ impl ::core::default::Default for DXGI_FORMAT {
 }
 unsafe impl ::windows::core::Abi for DXGI_FORMAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXGI_FORMAT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -408,6 +411,7 @@ impl ::core::fmt::Debug for DXGI_GAMMA_CONTROL {
 }
 unsafe impl ::windows::core::Abi for DXGI_GAMMA_CONTROL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DXGI_GAMMA_CONTROL {
     fn eq(&self, other: &Self) -> bool {
@@ -447,6 +451,7 @@ impl ::core::fmt::Debug for DXGI_GAMMA_CONTROL_CAPABILITIES {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DXGI_GAMMA_CONTROL_CAPABILITIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DXGI_GAMMA_CONTROL_CAPABILITIES {
@@ -481,6 +486,7 @@ impl ::core::fmt::Debug for DXGI_JPEG_AC_HUFFMAN_TABLE {
 }
 unsafe impl ::windows::core::Abi for DXGI_JPEG_AC_HUFFMAN_TABLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DXGI_JPEG_AC_HUFFMAN_TABLE {
     fn eq(&self, other: &Self) -> bool {
@@ -512,6 +518,7 @@ impl ::core::fmt::Debug for DXGI_JPEG_DC_HUFFMAN_TABLE {
 }
 unsafe impl ::windows::core::Abi for DXGI_JPEG_DC_HUFFMAN_TABLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DXGI_JPEG_DC_HUFFMAN_TABLE {
     fn eq(&self, other: &Self) -> bool {
@@ -542,6 +549,7 @@ impl ::core::fmt::Debug for DXGI_JPEG_QUANTIZATION_TABLE {
 }
 unsafe impl ::windows::core::Abi for DXGI_JPEG_QUANTIZATION_TABLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DXGI_JPEG_QUANTIZATION_TABLE {
     fn eq(&self, other: &Self) -> bool {
@@ -577,6 +585,7 @@ impl ::core::fmt::Debug for DXGI_MODE_DESC {
 }
 unsafe impl ::windows::core::Abi for DXGI_MODE_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DXGI_MODE_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -616,6 +625,7 @@ impl ::core::default::Default for DXGI_MODE_ROTATION {
 }
 unsafe impl ::windows::core::Abi for DXGI_MODE_ROTATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXGI_MODE_ROTATION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -645,6 +655,7 @@ impl ::core::default::Default for DXGI_MODE_SCALING {
 }
 unsafe impl ::windows::core::Abi for DXGI_MODE_SCALING {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXGI_MODE_SCALING {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -676,6 +687,7 @@ impl ::core::default::Default for DXGI_MODE_SCANLINE_ORDER {
 }
 unsafe impl ::windows::core::Abi for DXGI_MODE_SCANLINE_ORDER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXGI_MODE_SCANLINE_ORDER {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -701,6 +713,7 @@ impl ::core::fmt::Debug for DXGI_RATIONAL {
 }
 unsafe impl ::windows::core::Abi for DXGI_RATIONAL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DXGI_RATIONAL {
     fn eq(&self, other: &Self) -> bool {
@@ -733,6 +746,7 @@ impl ::core::fmt::Debug for DXGI_RGB {
 }
 unsafe impl ::windows::core::Abi for DXGI_RGB {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DXGI_RGB {
     fn eq(&self, other: &Self) -> bool {
@@ -764,6 +778,7 @@ impl ::core::fmt::Debug for DXGI_SAMPLE_DESC {
 }
 unsafe impl ::windows::core::Abi for DXGI_SAMPLE_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DXGI_SAMPLE_DESC {
     fn eq(&self, other: &Self) -> bool {

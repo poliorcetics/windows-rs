@@ -4,6 +4,11 @@ pub mod Services;
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWiFiDirectAdvertisement(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWiFiDirectAdvertisement {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWiFiDirectAdvertisement {
     type Vtable = IWiFiDirectAdvertisement_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xab511a2d_2a06_49a1_a584_61435c7905a6);
@@ -29,6 +34,11 @@ pub struct IWiFiDirectAdvertisement_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWiFiDirectAdvertisement2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWiFiDirectAdvertisement2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWiFiDirectAdvertisement2 {
     type Vtable = IWiFiDirectAdvertisement2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb759aa46_d816_491b_917a_b40d7dc403a2);
@@ -45,6 +55,11 @@ pub struct IWiFiDirectAdvertisement2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWiFiDirectAdvertisementPublisher(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWiFiDirectAdvertisementPublisher {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWiFiDirectAdvertisementPublisher {
     type Vtable = IWiFiDirectAdvertisementPublisher_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb35a2d1a_9b1f_45d9_925a_694d66df68ef);
@@ -69,6 +84,11 @@ pub struct IWiFiDirectAdvertisementPublisher_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWiFiDirectAdvertisementPublisherStatusChangedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWiFiDirectAdvertisementPublisherStatusChangedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWiFiDirectAdvertisementPublisherStatusChangedEventArgs {
     type Vtable = IWiFiDirectAdvertisementPublisherStatusChangedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xaafde53c_5481_46e6_90dd_32116518f192);
@@ -83,6 +103,11 @@ pub struct IWiFiDirectAdvertisementPublisherStatusChangedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWiFiDirectConnectionListener(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWiFiDirectConnectionListener {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWiFiDirectConnectionListener {
     type Vtable = IWiFiDirectConnectionListener_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x699c1b0d_8d13_4ee9_b9ec_9c72f8251f7d);
@@ -103,6 +128,11 @@ pub struct IWiFiDirectConnectionListener_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWiFiDirectConnectionParameters(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWiFiDirectConnectionParameters {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWiFiDirectConnectionParameters {
     type Vtable = IWiFiDirectConnectionParameters_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb2e55405_5702_4b16_a02c_bbcd21ef6098);
@@ -117,6 +147,11 @@ pub struct IWiFiDirectConnectionParameters_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWiFiDirectConnectionParameters2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWiFiDirectConnectionParameters2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWiFiDirectConnectionParameters2 {
     type Vtable = IWiFiDirectConnectionParameters2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xab3b0fbe_aa82_44b4_88c8_e3056b89801d);
@@ -135,6 +170,11 @@ pub struct IWiFiDirectConnectionParameters2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWiFiDirectConnectionParametersStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWiFiDirectConnectionParametersStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWiFiDirectConnectionParametersStatics {
     type Vtable = IWiFiDirectConnectionParametersStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x598af493_7642_456f_b9d8_e8a9eb1f401a);
@@ -151,6 +191,11 @@ pub struct IWiFiDirectConnectionParametersStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWiFiDirectConnectionRequest(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWiFiDirectConnectionRequest {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWiFiDirectConnectionRequest {
     type Vtable = IWiFiDirectConnectionRequest_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x8eb99605_914f_49c3_a614_d18dc5b19b43);
@@ -167,6 +212,11 @@ pub struct IWiFiDirectConnectionRequest_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWiFiDirectConnectionRequestedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWiFiDirectConnectionRequestedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWiFiDirectConnectionRequestedEventArgs {
     type Vtable = IWiFiDirectConnectionRequestedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf99d20be_d38d_484f_8215_e7b65abf244c);
@@ -180,6 +230,11 @@ pub struct IWiFiDirectConnectionRequestedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWiFiDirectDevice(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWiFiDirectDevice {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWiFiDirectDevice {
     type Vtable = IWiFiDirectDevice_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x72deaaa8_72eb_4dae_8a28_8513355d2777);
@@ -206,6 +261,11 @@ pub struct IWiFiDirectDevice_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWiFiDirectDeviceStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWiFiDirectDeviceStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWiFiDirectDeviceStatics {
     type Vtable = IWiFiDirectDeviceStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe86cb57c_3aac_4851_a792_482aaf931b04);
@@ -223,6 +283,11 @@ pub struct IWiFiDirectDeviceStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWiFiDirectDeviceStatics2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWiFiDirectDeviceStatics2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWiFiDirectDeviceStatics2 {
     type Vtable = IWiFiDirectDeviceStatics2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1a953e49_b103_437e_9226_ab67971342f9);
@@ -240,6 +305,11 @@ pub struct IWiFiDirectDeviceStatics2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWiFiDirectInformationElement(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWiFiDirectInformationElement {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWiFiDirectInformationElement {
     type Vtable = IWiFiDirectInformationElement_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xaffb72d6_76bb_497e_ac8b_dc72838bc309);
@@ -270,6 +340,11 @@ pub struct IWiFiDirectInformationElement_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWiFiDirectInformationElementStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWiFiDirectInformationElementStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWiFiDirectInformationElementStatics {
     type Vtable = IWiFiDirectInformationElementStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xdbd02f16_11a5_4e60_8caa_34772148378a);
@@ -290,6 +365,11 @@ pub struct IWiFiDirectInformationElementStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWiFiDirectLegacySettings(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWiFiDirectLegacySettings {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWiFiDirectLegacySettings {
     type Vtable = IWiFiDirectLegacySettings_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa64fdbba_f2fd_4567_a91b_f5c2f5321057);
@@ -374,11 +454,6 @@ impl WiFiDirectAdvertisement {
         }
     }
 }
-impl ::core::clone::Clone for WiFiDirectAdvertisement {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for WiFiDirectAdvertisement {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -392,7 +467,6 @@ impl ::core::fmt::Debug for WiFiDirectAdvertisement {
 }
 unsafe impl ::windows::core::RuntimeType for WiFiDirectAdvertisement {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.WiFiDirect.WiFiDirectAdvertisement;{ab511a2d-2a06-49a1-a584-61435c7905a6})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -468,6 +542,7 @@ impl ::core::default::Default for WiFiDirectAdvertisementListenStateDiscoverabil
 }
 unsafe impl ::windows::core::Abi for WiFiDirectAdvertisementListenStateDiscoverability {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WiFiDirectAdvertisementListenStateDiscoverability {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -476,7 +551,6 @@ impl ::core::fmt::Debug for WiFiDirectAdvertisementListenStateDiscoverability {
 }
 unsafe impl ::windows::core::RuntimeType for WiFiDirectAdvertisementListenStateDiscoverability {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.WiFiDirect.WiFiDirectAdvertisementListenStateDiscoverability;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -534,11 +608,6 @@ impl WiFiDirectAdvertisementPublisher {
         unsafe { (::windows::core::Interface::vtable(this).Stop)(::core::mem::transmute_copy(this)).ok() }
     }
 }
-impl ::core::clone::Clone for WiFiDirectAdvertisementPublisher {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for WiFiDirectAdvertisementPublisher {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -552,7 +621,6 @@ impl ::core::fmt::Debug for WiFiDirectAdvertisementPublisher {
 }
 unsafe impl ::windows::core::RuntimeType for WiFiDirectAdvertisementPublisher {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.WiFiDirect.WiFiDirectAdvertisementPublisher;{b35a2d1a-9b1f-45d9-925a-694d66df68ef})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -629,6 +697,7 @@ impl ::core::default::Default for WiFiDirectAdvertisementPublisherStatus {
 }
 unsafe impl ::windows::core::Abi for WiFiDirectAdvertisementPublisherStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WiFiDirectAdvertisementPublisherStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -637,7 +706,6 @@ impl ::core::fmt::Debug for WiFiDirectAdvertisementPublisherStatus {
 }
 unsafe impl ::windows::core::RuntimeType for WiFiDirectAdvertisementPublisherStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.WiFiDirect.WiFiDirectAdvertisementPublisherStatus;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -663,11 +731,6 @@ impl WiFiDirectAdvertisementPublisherStatusChangedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for WiFiDirectAdvertisementPublisherStatusChangedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for WiFiDirectAdvertisementPublisherStatusChangedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -681,7 +744,6 @@ impl ::core::fmt::Debug for WiFiDirectAdvertisementPublisherStatusChangedEventAr
 }
 unsafe impl ::windows::core::RuntimeType for WiFiDirectAdvertisementPublisherStatusChangedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.WiFiDirect.WiFiDirectAdvertisementPublisherStatusChangedEventArgs;{aafde53c-5481-46e6-90dd-32116518f192})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -757,6 +819,7 @@ impl ::core::default::Default for WiFiDirectConfigurationMethod {
 }
 unsafe impl ::windows::core::Abi for WiFiDirectConfigurationMethod {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WiFiDirectConfigurationMethod {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -765,7 +828,6 @@ impl ::core::fmt::Debug for WiFiDirectConfigurationMethod {
 }
 unsafe impl ::windows::core::RuntimeType for WiFiDirectConfigurationMethod {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.WiFiDirect.WiFiDirectConfigurationMethod;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -797,11 +859,6 @@ impl WiFiDirectConnectionListener {
         unsafe { (::windows::core::Interface::vtable(this).RemoveConnectionRequested)(::core::mem::transmute_copy(this), token.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for WiFiDirectConnectionListener {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for WiFiDirectConnectionListener {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -815,7 +872,6 @@ impl ::core::fmt::Debug for WiFiDirectConnectionListener {
 }
 unsafe impl ::windows::core::RuntimeType for WiFiDirectConnectionListener {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.WiFiDirect.WiFiDirectConnectionListener;{699c1b0d-8d13-4ee9-b9ec-9c72f8251f7d})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -929,11 +985,6 @@ impl WiFiDirectConnectionParameters {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for WiFiDirectConnectionParameters {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for WiFiDirectConnectionParameters {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -947,7 +998,6 @@ impl ::core::fmt::Debug for WiFiDirectConnectionParameters {
 }
 unsafe impl ::windows::core::RuntimeType for WiFiDirectConnectionParameters {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.WiFiDirect.WiFiDirectConnectionParameters;{b2e55405-5702-4b16-a02c-bbcd21ef6098})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1047,11 +1097,6 @@ impl WiFiDirectConnectionRequest {
         }
     }
 }
-impl ::core::clone::Clone for WiFiDirectConnectionRequest {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for WiFiDirectConnectionRequest {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1065,7 +1110,6 @@ impl ::core::fmt::Debug for WiFiDirectConnectionRequest {
 }
 unsafe impl ::windows::core::RuntimeType for WiFiDirectConnectionRequest {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.WiFiDirect.WiFiDirectConnectionRequest;{8eb99605-914f-49c3-a614-d18dc5b19b43})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1158,11 +1202,6 @@ impl WiFiDirectConnectionRequestedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for WiFiDirectConnectionRequestedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for WiFiDirectConnectionRequestedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1176,7 +1215,6 @@ impl ::core::fmt::Debug for WiFiDirectConnectionRequestedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for WiFiDirectConnectionRequestedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.WiFiDirect.WiFiDirectConnectionRequestedEventArgs;{f99d20be-d38d-484f-8215-e7b65abf244c})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1251,6 +1289,7 @@ impl ::core::default::Default for WiFiDirectConnectionStatus {
 }
 unsafe impl ::windows::core::Abi for WiFiDirectConnectionStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WiFiDirectConnectionStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1259,7 +1298,6 @@ impl ::core::fmt::Debug for WiFiDirectConnectionStatus {
 }
 unsafe impl ::windows::core::RuntimeType for WiFiDirectConnectionStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.WiFiDirect.WiFiDirectConnectionStatus;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1355,11 +1393,6 @@ impl WiFiDirectDevice {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for WiFiDirectDevice {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for WiFiDirectDevice {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1373,7 +1406,6 @@ impl ::core::fmt::Debug for WiFiDirectDevice {
 }
 unsafe impl ::windows::core::RuntimeType for WiFiDirectDevice {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.WiFiDirect.WiFiDirectDevice;{72deaaa8-72eb-4dae-8a28-8513355d2777})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1474,6 +1506,7 @@ impl ::core::default::Default for WiFiDirectDeviceSelectorType {
 }
 unsafe impl ::windows::core::Abi for WiFiDirectDeviceSelectorType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WiFiDirectDeviceSelectorType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1482,7 +1515,6 @@ impl ::core::fmt::Debug for WiFiDirectDeviceSelectorType {
 }
 unsafe impl ::windows::core::RuntimeType for WiFiDirectDeviceSelectorType {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.WiFiDirect.WiFiDirectDeviceSelectorType;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1509,6 +1541,7 @@ impl ::core::default::Default for WiFiDirectError {
 }
 unsafe impl ::windows::core::Abi for WiFiDirectError {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WiFiDirectError {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1517,7 +1550,6 @@ impl ::core::fmt::Debug for WiFiDirectError {
 }
 unsafe impl ::windows::core::RuntimeType for WiFiDirectError {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.WiFiDirect.WiFiDirectError;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1598,11 +1630,6 @@ impl WiFiDirectInformationElement {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for WiFiDirectInformationElement {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for WiFiDirectInformationElement {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1616,7 +1643,6 @@ impl ::core::fmt::Debug for WiFiDirectInformationElement {
 }
 unsafe impl ::windows::core::RuntimeType for WiFiDirectInformationElement {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.WiFiDirect.WiFiDirectInformationElement;{affb72d6-76bb-497e-ac8b-dc72838bc309})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1716,11 +1742,6 @@ impl WiFiDirectLegacySettings {
         unsafe { (::windows::core::Interface::vtable(this).SetPassphrase)(::core::mem::transmute_copy(this), value.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for WiFiDirectLegacySettings {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for WiFiDirectLegacySettings {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1734,7 +1755,6 @@ impl ::core::fmt::Debug for WiFiDirectLegacySettings {
 }
 unsafe impl ::windows::core::RuntimeType for WiFiDirectLegacySettings {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.WiFiDirect.WiFiDirectLegacySettings;{a64fdbba-f2fd-4567-a91b-f5c2f5321057})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1809,6 +1829,7 @@ impl ::core::default::Default for WiFiDirectPairingProcedure {
 }
 unsafe impl ::windows::core::Abi for WiFiDirectPairingProcedure {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WiFiDirectPairingProcedure {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1817,7 +1838,6 @@ impl ::core::fmt::Debug for WiFiDirectPairingProcedure {
 }
 unsafe impl ::windows::core::RuntimeType for WiFiDirectPairingProcedure {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.WiFiDirect.WiFiDirectPairingProcedure;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }

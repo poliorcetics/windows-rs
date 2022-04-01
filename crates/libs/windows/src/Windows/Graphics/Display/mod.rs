@@ -98,11 +98,6 @@ impl AdvancedColorInfo {
         }
     }
 }
-impl ::core::clone::Clone for AdvancedColorInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AdvancedColorInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -116,7 +111,6 @@ impl ::core::fmt::Debug for AdvancedColorInfo {
 }
 unsafe impl ::windows::core::RuntimeType for AdvancedColorInfo {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Display.AdvancedColorInfo;{8797dcfb-b229-4081-ae9a-2cc85e34ad6a})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -192,6 +186,7 @@ impl ::core::default::Default for AdvancedColorKind {
 }
 unsafe impl ::windows::core::Abi for AdvancedColorKind {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AdvancedColorKind {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -200,7 +195,6 @@ impl ::core::fmt::Debug for AdvancedColorKind {
 }
 unsafe impl ::windows::core::RuntimeType for AdvancedColorKind {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Graphics.Display.AdvancedColorKind;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -334,11 +328,6 @@ impl BrightnessOverride {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for BrightnessOverride {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for BrightnessOverride {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -352,7 +341,6 @@ impl ::core::fmt::Debug for BrightnessOverride {
 }
 unsafe impl ::windows::core::RuntimeType for BrightnessOverride {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Display.BrightnessOverride;{96c9621a-c143-4392-bedd-4a7e9574c8fd})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -453,11 +441,6 @@ impl BrightnessOverrideSettings {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for BrightnessOverrideSettings {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for BrightnessOverrideSettings {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -471,7 +454,6 @@ impl ::core::fmt::Debug for BrightnessOverrideSettings {
 }
 unsafe impl ::windows::core::RuntimeType for BrightnessOverrideSettings {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Display.BrightnessOverrideSettings;{d112ab2a-7604-4dba-bcf8-4b6f49502cb0})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -550,11 +532,6 @@ impl ColorOverrideSettings {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for ColorOverrideSettings {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ColorOverrideSettings {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -568,7 +545,6 @@ impl ::core::fmt::Debug for ColorOverrideSettings {
 }
 unsafe impl ::windows::core::RuntimeType for ColorOverrideSettings {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Display.ColorOverrideSettings;{fbefa134-4a81-4c4d-a5b6-7d1b5c4bd00b})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -643,6 +619,7 @@ impl ::core::default::Default for DisplayBrightnessOverrideOptions {
 }
 unsafe impl ::windows::core::Abi for DisplayBrightnessOverrideOptions {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DisplayBrightnessOverrideOptions {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -679,7 +656,6 @@ impl ::core::ops::Not for DisplayBrightnessOverrideOptions {
 }
 unsafe impl ::windows::core::RuntimeType for DisplayBrightnessOverrideOptions {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Graphics.Display.DisplayBrightnessOverrideOptions;u4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -706,6 +682,7 @@ impl ::core::default::Default for DisplayBrightnessOverrideScenario {
 }
 unsafe impl ::windows::core::Abi for DisplayBrightnessOverrideScenario {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DisplayBrightnessOverrideScenario {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -714,7 +691,6 @@ impl ::core::fmt::Debug for DisplayBrightnessOverrideScenario {
 }
 unsafe impl ::windows::core::RuntimeType for DisplayBrightnessOverrideScenario {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Graphics.Display.DisplayBrightnessOverrideScenario;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -742,6 +718,7 @@ impl ::core::default::Default for DisplayBrightnessScenario {
 }
 unsafe impl ::windows::core::Abi for DisplayBrightnessScenario {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DisplayBrightnessScenario {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -750,7 +727,6 @@ impl ::core::fmt::Debug for DisplayBrightnessScenario {
 }
 unsafe impl ::windows::core::RuntimeType for DisplayBrightnessScenario {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Graphics.Display.DisplayBrightnessScenario;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -775,6 +751,7 @@ impl ::core::default::Default for DisplayColorOverrideScenario {
 }
 unsafe impl ::windows::core::Abi for DisplayColorOverrideScenario {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DisplayColorOverrideScenario {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -783,7 +760,6 @@ impl ::core::fmt::Debug for DisplayColorOverrideScenario {
 }
 unsafe impl ::windows::core::RuntimeType for DisplayColorOverrideScenario {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Graphics.Display.DisplayColorOverrideScenario;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -910,11 +886,6 @@ impl DisplayEnhancementOverride {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for DisplayEnhancementOverride {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DisplayEnhancementOverride {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -928,7 +899,6 @@ impl ::core::fmt::Debug for DisplayEnhancementOverride {
 }
 unsafe impl ::windows::core::RuntimeType for DisplayEnhancementOverride {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Display.DisplayEnhancementOverride;{429594cf-d97a-4b02-a428-5c4292f7f522})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1012,11 +982,6 @@ impl DisplayEnhancementOverrideCapabilities {
         }
     }
 }
-impl ::core::clone::Clone for DisplayEnhancementOverrideCapabilities {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DisplayEnhancementOverrideCapabilities {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1030,7 +995,6 @@ impl ::core::fmt::Debug for DisplayEnhancementOverrideCapabilities {
 }
 unsafe impl ::windows::core::RuntimeType for DisplayEnhancementOverrideCapabilities {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Display.DisplayEnhancementOverrideCapabilities;{457060de-ee5a-47b7-9918-1e51e812ccc8})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1097,11 +1061,6 @@ impl DisplayEnhancementOverrideCapabilitiesChangedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for DisplayEnhancementOverrideCapabilitiesChangedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DisplayEnhancementOverrideCapabilitiesChangedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1115,7 +1074,6 @@ impl ::core::fmt::Debug for DisplayEnhancementOverrideCapabilitiesChangedEventAr
 }
 unsafe impl ::windows::core::RuntimeType for DisplayEnhancementOverrideCapabilitiesChangedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Display.DisplayEnhancementOverrideCapabilitiesChangedEventArgs;{db61e664-15fa-49da-8b77-07dbd2af585d})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1391,11 +1349,6 @@ impl DisplayInformation {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for DisplayInformation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DisplayInformation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1409,7 +1362,6 @@ impl ::core::fmt::Debug for DisplayInformation {
 }
 unsafe impl ::windows::core::RuntimeType for DisplayInformation {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Display.DisplayInformation;{bed112ae-adc3-4dc9-ae65-851f4d7d4799})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1487,6 +1439,7 @@ impl ::core::default::Default for DisplayOrientations {
 }
 unsafe impl ::windows::core::Abi for DisplayOrientations {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DisplayOrientations {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1523,7 +1476,6 @@ impl ::core::ops::Not for DisplayOrientations {
 }
 unsafe impl ::windows::core::RuntimeType for DisplayOrientations {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Graphics.Display.DisplayOrientations;u4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1728,12 +1680,6 @@ impl<F: FnMut(&::core::option::Option<::windows::core::IInspectable>) -> ::windo
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for DisplayPropertiesEventHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for DisplayPropertiesEventHandler {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1755,7 +1701,6 @@ unsafe impl ::windows::core::Interface for DisplayPropertiesEventHandler {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for DisplayPropertiesEventHandler {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{dbdd8b01-f1a1-46d1-9ee3-543bcc995980}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1787,11 +1732,6 @@ impl DisplayServices {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for DisplayServices {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DisplayServices {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1805,7 +1745,6 @@ impl ::core::fmt::Debug for DisplayServices {
 }
 unsafe impl ::windows::core::RuntimeType for DisplayServices {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Display.DisplayServices;{1b54f32b-890d-5747-bd26-fdbdeb0c8a71})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1880,6 +1819,7 @@ impl ::core::default::Default for HdrMetadataFormat {
 }
 unsafe impl ::windows::core::Abi for HdrMetadataFormat {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HdrMetadataFormat {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1888,7 +1828,6 @@ impl ::core::fmt::Debug for HdrMetadataFormat {
 }
 unsafe impl ::windows::core::RuntimeType for HdrMetadataFormat {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Graphics.Display.HdrMetadataFormat;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1896,6 +1835,11 @@ unsafe impl ::windows::core::RuntimeType for HdrMetadataFormat {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAdvancedColorInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAdvancedColorInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAdvancedColorInfo {
     type Vtable = IAdvancedColorInfo_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x8797dcfb_b229_4081_ae9a_2cc85e34ad6a);
@@ -1931,6 +1875,11 @@ pub struct IAdvancedColorInfo_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBrightnessOverride(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBrightnessOverride {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBrightnessOverride {
     type Vtable = IBrightnessOverride_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x96c9621a_c143_4392_bedd_4a7e9574c8fd);
@@ -1975,6 +1924,11 @@ pub struct IBrightnessOverride_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBrightnessOverrideSettings(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBrightnessOverrideSettings {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBrightnessOverrideSettings {
     type Vtable = IBrightnessOverrideSettings_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd112ab2a_7604_4dba_bcf8_4b6f49502cb0);
@@ -1989,6 +1943,11 @@ pub struct IBrightnessOverrideSettings_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBrightnessOverrideSettingsStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBrightnessOverrideSettingsStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBrightnessOverrideSettingsStatics {
     type Vtable = IBrightnessOverrideSettingsStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd487dc90_6f74_440b_b383_5fe96cf00b0f);
@@ -2004,6 +1963,11 @@ pub struct IBrightnessOverrideSettingsStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBrightnessOverrideStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBrightnessOverrideStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBrightnessOverrideStatics {
     type Vtable = IBrightnessOverrideStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x03a7b9ed_e1f1_4a68_a11f_946ad8ce5393);
@@ -2022,6 +1986,11 @@ pub struct IBrightnessOverrideStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IColorOverrideSettings(::windows::core::IUnknown);
+impl ::core::clone::Clone for IColorOverrideSettings {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IColorOverrideSettings {
     type Vtable = IColorOverrideSettings_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xfbefa134_4a81_4c4d_a5b6_7d1b5c4bd00b);
@@ -2035,6 +2004,11 @@ pub struct IColorOverrideSettings_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IColorOverrideSettingsStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IColorOverrideSettingsStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IColorOverrideSettingsStatics {
     type Vtable = IColorOverrideSettingsStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb068e05f_c41f_4ac9_afab_827ab6248f9a);
@@ -2048,6 +2022,11 @@ pub struct IColorOverrideSettingsStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDisplayEnhancementOverride(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDisplayEnhancementOverride {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDisplayEnhancementOverride {
     type Vtable = IDisplayEnhancementOverride_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x429594cf_d97a_4b02_a428_5c4292f7f522);
@@ -2093,6 +2072,11 @@ pub struct IDisplayEnhancementOverride_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDisplayEnhancementOverrideCapabilities(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDisplayEnhancementOverrideCapabilities {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDisplayEnhancementOverrideCapabilities {
     type Vtable = IDisplayEnhancementOverrideCapabilities_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x457060de_ee5a_47b7_9918_1e51e812ccc8);
@@ -2111,6 +2095,11 @@ pub struct IDisplayEnhancementOverrideCapabilities_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDisplayEnhancementOverrideCapabilitiesChangedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDisplayEnhancementOverrideCapabilitiesChangedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDisplayEnhancementOverrideCapabilitiesChangedEventArgs {
     type Vtable = IDisplayEnhancementOverrideCapabilitiesChangedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xdb61e664_15fa_49da_8b77_07dbd2af585d);
@@ -2124,6 +2113,11 @@ pub struct IDisplayEnhancementOverrideCapabilitiesChangedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDisplayEnhancementOverrideStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDisplayEnhancementOverrideStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDisplayEnhancementOverrideStatics {
     type Vtable = IDisplayEnhancementOverrideStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xcf5b7ec1_9791_4453_b013_29b6f778e519);
@@ -2137,6 +2131,11 @@ pub struct IDisplayEnhancementOverrideStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDisplayInformation(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDisplayInformation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDisplayInformation {
     type Vtable = IDisplayInformation_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xbed112ae_adc3_4dc9_ae65_851f4d7d4799);
@@ -2192,6 +2191,11 @@ pub struct IDisplayInformation_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDisplayInformation2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDisplayInformation2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDisplayInformation2 {
     type Vtable = IDisplayInformation2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x4dcd0021_fad1_4b8e_8edf_775887b8bf19);
@@ -2205,6 +2209,11 @@ pub struct IDisplayInformation2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDisplayInformation3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDisplayInformation3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDisplayInformation3 {
     type Vtable = IDisplayInformation3_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xdb15011d_0f09_4466_8ff3_11de9a3c929a);
@@ -2221,6 +2230,11 @@ pub struct IDisplayInformation3_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDisplayInformation4(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDisplayInformation4 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDisplayInformation4 {
     type Vtable = IDisplayInformation4_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc972ce2f_1242_46be_b536_e1aafe9e7acf);
@@ -2235,6 +2249,11 @@ pub struct IDisplayInformation4_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDisplayInformation5(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDisplayInformation5 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDisplayInformation5 {
     type Vtable = IDisplayInformation5_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x3a5442dc_2cde_4a8d_80d1_21dc5adcc1aa);
@@ -2256,6 +2275,11 @@ pub struct IDisplayInformation5_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDisplayInformationStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDisplayInformationStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDisplayInformationStatics {
     type Vtable = IDisplayInformationStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc6a02a6c_d452_44dc_ba07_96f3c6adf9d1);
@@ -2280,6 +2304,12 @@ pub struct IDisplayInformationStatics_Vtbl {
 #[cfg(feature = "deprecated")]
 #[repr(transparent)]
 pub struct IDisplayPropertiesStatics(::windows::core::IUnknown);
+#[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for IDisplayPropertiesStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for IDisplayPropertiesStatics {
     type Vtable = IDisplayPropertiesStatics_Vtbl;
@@ -2366,6 +2396,11 @@ pub struct IDisplayPropertiesStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDisplayServices(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDisplayServices {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDisplayServices {
     type Vtable = IDisplayServices_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1b54f32b_890d_5747_bd26_fdbdeb0c8a71);
@@ -2378,6 +2413,11 @@ pub struct IDisplayServices_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDisplayServicesStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDisplayServicesStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDisplayServicesStatics {
     type Vtable = IDisplayServicesStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xdc2096bf_730a_5560_b461_91c13d692e0c);
@@ -2408,10 +2448,10 @@ impl ::core::fmt::Debug for NitRange {
 }
 unsafe impl ::windows::core::Abi for NitRange {
     type Abi = Self;
+    type DefaultType = Self;
 }
 unsafe impl ::windows::core::RuntimeType for NitRange {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"struct(Windows.Graphics.Display.NitRange;f4;f4;f4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2463,6 +2503,7 @@ impl ::core::default::Default for ResolutionScale {
 }
 unsafe impl ::windows::core::Abi for ResolutionScale {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ResolutionScale {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2471,7 +2512,6 @@ impl ::core::fmt::Debug for ResolutionScale {
 }
 unsafe impl ::windows::core::RuntimeType for ResolutionScale {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Graphics.Display.ResolutionScale;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }

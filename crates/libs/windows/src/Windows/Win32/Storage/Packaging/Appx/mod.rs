@@ -26,6 +26,7 @@ impl ::core::default::Default for APPX_BUNDLE_FOOTPRINT_FILE_TYPE {
 }
 unsafe impl ::windows::core::Abi for APPX_BUNDLE_FOOTPRINT_FILE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for APPX_BUNDLE_FOOTPRINT_FILE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -53,6 +54,7 @@ impl ::core::default::Default for APPX_BUNDLE_PAYLOAD_PACKAGE_TYPE {
 }
 unsafe impl ::windows::core::Abi for APPX_BUNDLE_PAYLOAD_PACKAGE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for APPX_BUNDLE_PAYLOAD_PACKAGE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -100,6 +102,7 @@ impl ::core::default::Default for APPX_CAPABILITIES {
 }
 unsafe impl ::windows::core::Abi for APPX_CAPABILITIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for APPX_CAPABILITIES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -163,6 +166,7 @@ impl ::core::default::Default for APPX_CAPABILITY_CLASS_TYPE {
 }
 unsafe impl ::windows::core::Abi for APPX_CAPABILITY_CLASS_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for APPX_CAPABILITY_CLASS_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -196,6 +200,7 @@ impl ::core::default::Default for APPX_COMPRESSION_OPTION {
 }
 unsafe impl ::windows::core::Abi for APPX_COMPRESSION_OPTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for APPX_COMPRESSION_OPTION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -221,6 +226,7 @@ impl ::core::fmt::Debug for APPX_ENCRYPTED_EXEMPTIONS {
 }
 unsafe impl ::windows::core::Abi for APPX_ENCRYPTED_EXEMPTIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for APPX_ENCRYPTED_EXEMPTIONS {
     fn eq(&self, other: &Self) -> bool {
@@ -256,6 +262,7 @@ impl ::core::default::Default for APPX_ENCRYPTED_PACKAGE_OPTIONS {
 }
 unsafe impl ::windows::core::Abi for APPX_ENCRYPTED_PACKAGE_OPTIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for APPX_ENCRYPTED_PACKAGE_OPTIONS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -319,6 +326,7 @@ impl ::core::fmt::Debug for APPX_ENCRYPTED_PACKAGE_SETTINGS {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com"))]
 unsafe impl ::windows::core::Abi for APPX_ENCRYPTED_PACKAGE_SETTINGS {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com"))]
 impl ::core::cmp::PartialEq for APPX_ENCRYPTED_PACKAGE_SETTINGS {
@@ -363,6 +371,7 @@ impl ::core::fmt::Debug for APPX_ENCRYPTED_PACKAGE_SETTINGS2 {
 #[cfg(feature = "Win32_System_Com")]
 unsafe impl ::windows::core::Abi for APPX_ENCRYPTED_PACKAGE_SETTINGS2 {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for APPX_ENCRYPTED_PACKAGE_SETTINGS2 {
@@ -405,6 +414,7 @@ impl ::core::default::Default for APPX_FOOTPRINT_FILE_TYPE {
 }
 unsafe impl ::windows::core::Abi for APPX_FOOTPRINT_FILE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for APPX_FOOTPRINT_FILE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -432,6 +442,7 @@ impl ::core::fmt::Debug for APPX_KEY_INFO {
 }
 unsafe impl ::windows::core::Abi for APPX_KEY_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for APPX_KEY_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -471,6 +482,7 @@ impl ::core::default::Default for APPX_PACKAGE_ARCHITECTURE {
 }
 unsafe impl ::windows::core::Abi for APPX_PACKAGE_ARCHITECTURE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for APPX_PACKAGE_ARCHITECTURE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -508,6 +520,7 @@ impl ::core::default::Default for APPX_PACKAGE_ARCHITECTURE2 {
 }
 unsafe impl ::windows::core::Abi for APPX_PACKAGE_ARCHITECTURE2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for APPX_PACKAGE_ARCHITECTURE2 {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -537,6 +550,7 @@ impl ::core::default::Default for APPX_PACKAGE_EDITOR_UPDATE_PACKAGE_MANIFEST_OP
 }
 unsafe impl ::windows::core::Abi for APPX_PACKAGE_EDITOR_UPDATE_PACKAGE_MANIFEST_OPTIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for APPX_PACKAGE_EDITOR_UPDATE_PACKAGE_MANIFEST_OPTIONS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -590,6 +604,7 @@ impl ::core::default::Default for APPX_PACKAGE_EDITOR_UPDATE_PACKAGE_OPTION {
 }
 unsafe impl ::windows::core::Abi for APPX_PACKAGE_EDITOR_UPDATE_PACKAGE_OPTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for APPX_PACKAGE_EDITOR_UPDATE_PACKAGE_OPTION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -618,6 +633,7 @@ impl ::core::fmt::Debug for APPX_PACKAGE_SETTINGS {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com"))]
 unsafe impl ::windows::core::Abi for APPX_PACKAGE_SETTINGS {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com"))]
 impl ::core::cmp::PartialEq for APPX_PACKAGE_SETTINGS {
@@ -657,6 +673,7 @@ impl ::core::fmt::Debug for APPX_PACKAGE_WRITER_PAYLOAD_STREAM {
 #[cfg(feature = "Win32_System_Com")]
 unsafe impl ::windows::core::Abi for APPX_PACKAGE_WRITER_PAYLOAD_STREAM {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for APPX_PACKAGE_WRITER_PAYLOAD_STREAM {
@@ -697,6 +714,7 @@ impl ::core::default::Default for APPX_PACKAGING_CONTEXT_CHANGE_TYPE {
 }
 unsafe impl ::windows::core::Abi for APPX_PACKAGING_CONTEXT_CHANGE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for APPX_PACKAGING_CONTEXT_CHANGE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -753,6 +771,7 @@ impl ::core::default::Default for AddPackageDependencyOptions {
 }
 unsafe impl ::windows::core::Abi for AddPackageDependencyOptions {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AddPackageDependencyOptions {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -784,6 +803,7 @@ impl ::core::default::Default for AppPolicyClrCompat {
 }
 unsafe impl ::windows::core::Abi for AppPolicyClrCompat {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AppPolicyClrCompat {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -811,6 +831,7 @@ impl ::core::default::Default for AppPolicyCreateFileAccess {
 }
 unsafe impl ::windows::core::Abi for AppPolicyCreateFileAccess {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AppPolicyCreateFileAccess {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -958,6 +979,7 @@ impl ::core::default::Default for AppPolicyLifecycleManagement {
 }
 unsafe impl ::windows::core::Abi for AppPolicyLifecycleManagement {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AppPolicyLifecycleManagement {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -985,6 +1007,7 @@ impl ::core::default::Default for AppPolicyMediaFoundationCodecLoading {
 }
 unsafe impl ::windows::core::Abi for AppPolicyMediaFoundationCodecLoading {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AppPolicyMediaFoundationCodecLoading {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1012,6 +1035,7 @@ impl ::core::default::Default for AppPolicyProcessTerminationMethod {
 }
 unsafe impl ::windows::core::Abi for AppPolicyProcessTerminationMethod {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AppPolicyProcessTerminationMethod {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1039,6 +1063,7 @@ impl ::core::default::Default for AppPolicyShowDeveloperDiagnostic {
 }
 unsafe impl ::windows::core::Abi for AppPolicyShowDeveloperDiagnostic {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AppPolicyShowDeveloperDiagnostic {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1066,6 +1091,7 @@ impl ::core::default::Default for AppPolicyThreadInitializationType {
 }
 unsafe impl ::windows::core::Abi for AppPolicyThreadInitializationType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AppPolicyThreadInitializationType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1097,6 +1123,7 @@ impl ::core::default::Default for AppPolicyWindowingModel {
 }
 unsafe impl ::windows::core::Abi for AppPolicyWindowingModel {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AppPolicyWindowingModel {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1162,6 +1189,7 @@ impl ::core::default::Default for CreatePackageDependencyOptions {
 }
 unsafe impl ::windows::core::Abi for CreatePackageDependencyOptions {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CreatePackageDependencyOptions {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1208,6 +1236,7 @@ impl ::core::default::Default for DX_FEATURE_LEVEL {
 }
 unsafe impl ::windows::core::Abi for DX_FEATURE_LEVEL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DX_FEATURE_LEVEL {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1724,6 +1753,11 @@ pub unsafe fn GetStagedPackagePathByFullName2<'a, Param0: ::windows::core::IntoP
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
 #[repr(transparent)]
 pub struct IAppxBlockMapBlock(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppxBlockMapBlock {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppxBlockMapBlock {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
     pub unsafe fn GetHash(&self, buffersize: *mut u32, buffer: *mut *mut u8) -> ::windows::core::Result<()> {
@@ -1755,11 +1789,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAppx
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAppxBlockMapBlock {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAppxBlockMapBlock {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1785,6 +1814,11 @@ pub struct IAppxBlockMapBlock_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
 #[repr(transparent)]
 pub struct IAppxBlockMapBlocksEnumerator(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppxBlockMapBlocksEnumerator {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppxBlockMapBlocksEnumerator {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
     pub unsafe fn GetCurrent(&self) -> ::windows::core::Result<IAppxBlockMapBlock> {
@@ -1824,11 +1858,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAppx
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAppxBlockMapBlocksEnumerator {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAppxBlockMapBlocksEnumerator {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1861,6 +1890,11 @@ pub struct IAppxBlockMapBlocksEnumerator_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
 #[repr(transparent)]
 pub struct IAppxBlockMapFile(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppxBlockMapFile {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppxBlockMapFile {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
     pub unsafe fn GetBlocks(&self) -> ::windows::core::Result<IAppxBlockMapBlocksEnumerator> {
@@ -1909,11 +1943,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAppx
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAppxBlockMapFile {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAppxBlockMapFile {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1945,6 +1974,11 @@ pub struct IAppxBlockMapFile_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
 #[repr(transparent)]
 pub struct IAppxBlockMapFilesEnumerator(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppxBlockMapFilesEnumerator {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppxBlockMapFilesEnumerator {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
     pub unsafe fn GetCurrent(&self) -> ::windows::core::Result<IAppxBlockMapFile> {
@@ -1984,11 +2018,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAppx
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAppxBlockMapFilesEnumerator {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAppxBlockMapFilesEnumerator {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2021,6 +2050,11 @@ pub struct IAppxBlockMapFilesEnumerator_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
 #[repr(transparent)]
 pub struct IAppxBlockMapReader(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppxBlockMapReader {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppxBlockMapReader {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
     pub unsafe fn GetFile<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, filename: Param0) -> ::windows::core::Result<IAppxBlockMapFile> {
@@ -2065,11 +2099,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAppx
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAppxBlockMapReader {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAppxBlockMapReader {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2103,6 +2132,11 @@ pub struct IAppxBlockMapReader_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
 #[repr(transparent)]
 pub struct IAppxBundleFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppxBundleFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppxBundleFactory {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -2143,11 +2177,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAppx
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAppxBundleFactory {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAppxBundleFactory {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2183,6 +2212,11 @@ pub struct IAppxBundleFactory_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
 #[repr(transparent)]
 pub struct IAppxBundleManifestOptionalBundleInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppxBundleManifestOptionalBundleInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppxBundleManifestOptionalBundleInfo {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
     pub unsafe fn GetPackageId(&self) -> ::windows::core::Result<IAppxManifestPackageId> {
@@ -2220,11 +2254,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAppx
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAppxBundleManifestOptionalBundleInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAppxBundleManifestOptionalBundleInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2251,6 +2280,11 @@ pub struct IAppxBundleManifestOptionalBundleInfo_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
 #[repr(transparent)]
 pub struct IAppxBundleManifestOptionalBundleInfoEnumerator(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppxBundleManifestOptionalBundleInfoEnumerator {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppxBundleManifestOptionalBundleInfoEnumerator {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
     pub unsafe fn GetCurrent(&self) -> ::windows::core::Result<IAppxBundleManifestOptionalBundleInfo> {
@@ -2290,11 +2324,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAppx
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAppxBundleManifestOptionalBundleInfoEnumerator {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAppxBundleManifestOptionalBundleInfoEnumerator {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2327,6 +2356,11 @@ pub struct IAppxBundleManifestOptionalBundleInfoEnumerator_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
 #[repr(transparent)]
 pub struct IAppxBundleManifestPackageInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppxBundleManifestPackageInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppxBundleManifestPackageInfo {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
     pub unsafe fn GetPackageType(&self) -> ::windows::core::Result<APPX_BUNDLE_PAYLOAD_PACKAGE_TYPE> {
@@ -2379,11 +2413,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAppx
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAppxBundleManifestPackageInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAppxBundleManifestPackageInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2413,6 +2442,11 @@ pub struct IAppxBundleManifestPackageInfo_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
 #[repr(transparent)]
 pub struct IAppxBundleManifestPackageInfo2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppxBundleManifestPackageInfo2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppxBundleManifestPackageInfo2 {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -2453,11 +2487,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAppx
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAppxBundleManifestPackageInfo2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAppxBundleManifestPackageInfo2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2493,6 +2522,11 @@ pub struct IAppxBundleManifestPackageInfo2_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
 #[repr(transparent)]
 pub struct IAppxBundleManifestPackageInfo3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppxBundleManifestPackageInfo3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppxBundleManifestPackageInfo3 {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
     pub unsafe fn GetTargetDeviceFamilies(&self) -> ::windows::core::Result<IAppxManifestTargetDeviceFamiliesEnumerator> {
@@ -2520,11 +2554,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAppx
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAppxBundleManifestPackageInfo3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAppxBundleManifestPackageInfo3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2549,6 +2578,11 @@ pub struct IAppxBundleManifestPackageInfo3_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
 #[repr(transparent)]
 pub struct IAppxBundleManifestPackageInfo4(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppxBundleManifestPackageInfo4 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppxBundleManifestPackageInfo4 {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -2575,11 +2609,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IAppxBund
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAppxBundleManifestPackageInfo4 {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IAppxBundleManifestPackageInfo4 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IAppxBundleManifestPackageInfo4 {
@@ -2609,6 +2638,11 @@ pub struct IAppxBundleManifestPackageInfo4_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
 #[repr(transparent)]
 pub struct IAppxBundleManifestPackageInfoEnumerator(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppxBundleManifestPackageInfoEnumerator {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppxBundleManifestPackageInfoEnumerator {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
     pub unsafe fn GetCurrent(&self) -> ::windows::core::Result<IAppxBundleManifestPackageInfo> {
@@ -2648,11 +2682,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAppx
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAppxBundleManifestPackageInfoEnumerator {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAppxBundleManifestPackageInfoEnumerator {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2685,6 +2714,11 @@ pub struct IAppxBundleManifestPackageInfoEnumerator_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
 #[repr(transparent)]
 pub struct IAppxBundleManifestReader(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppxBundleManifestReader {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppxBundleManifestReader {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
     pub unsafe fn GetPackageId(&self) -> ::windows::core::Result<IAppxManifestPackageId> {
@@ -2723,11 +2757,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAppx
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAppxBundleManifestReader {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAppxBundleManifestReader {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2757,6 +2786,11 @@ pub struct IAppxBundleManifestReader_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
 #[repr(transparent)]
 pub struct IAppxBundleManifestReader2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppxBundleManifestReader2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppxBundleManifestReader2 {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
     pub unsafe fn GetOptionalBundles(&self) -> ::windows::core::Result<IAppxBundleManifestOptionalBundleInfoEnumerator> {
@@ -2784,11 +2818,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAppx
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAppxBundleManifestReader2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAppxBundleManifestReader2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2813,6 +2842,11 @@ pub struct IAppxBundleManifestReader2_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
 #[repr(transparent)]
 pub struct IAppxBundleReader(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppxBundleReader {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppxBundleReader {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
     pub unsafe fn GetFootprintFile(&self, filetype: APPX_BUNDLE_FOOTPRINT_FILE_TYPE) -> ::windows::core::Result<IAppxFile> {
@@ -2860,11 +2894,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAppx
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAppxBundleReader {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAppxBundleReader {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2893,6 +2922,11 @@ pub struct IAppxBundleReader_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
 #[repr(transparent)]
 pub struct IAppxBundleWriter(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppxBundleWriter {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppxBundleWriter {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -2924,11 +2958,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAppx
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAppxBundleWriter {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAppxBundleWriter {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2957,6 +2986,11 @@ pub struct IAppxBundleWriter_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
 #[repr(transparent)]
 pub struct IAppxBundleWriter2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppxBundleWriter2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppxBundleWriter2 {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -2982,11 +3016,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IAppxBund
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAppxBundleWriter2 {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IAppxBundleWriter2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IAppxBundleWriter2 {
@@ -3016,6 +3045,11 @@ pub struct IAppxBundleWriter2_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
 #[repr(transparent)]
 pub struct IAppxBundleWriter3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppxBundleWriter3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppxBundleWriter3 {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -3047,11 +3081,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAppx
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAppxBundleWriter3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAppxBundleWriter3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3080,6 +3109,11 @@ pub struct IAppxBundleWriter3_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
 #[repr(transparent)]
 pub struct IAppxBundleWriter4(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppxBundleWriter4 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppxBundleWriter4 {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com"))]
@@ -3117,11 +3151,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAppx
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAppxBundleWriter4 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAppxBundleWriter4 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3157,6 +3186,11 @@ pub struct IAppxBundleWriter4_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
 #[repr(transparent)]
 pub struct IAppxContentGroup(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppxContentGroup {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppxContentGroup {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
     pub unsafe fn GetName(&self) -> ::windows::core::Result<::windows::core::PWSTR> {
@@ -3189,11 +3223,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAppx
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAppxContentGroup {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAppxContentGroup {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3219,6 +3248,11 @@ pub struct IAppxContentGroup_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
 #[repr(transparent)]
 pub struct IAppxContentGroupFilesEnumerator(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppxContentGroupFilesEnumerator {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppxContentGroupFilesEnumerator {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
     pub unsafe fn GetCurrent(&self) -> ::windows::core::Result<::windows::core::PWSTR> {
@@ -3258,11 +3292,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAppx
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAppxContentGroupFilesEnumerator {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAppxContentGroupFilesEnumerator {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3295,6 +3324,11 @@ pub struct IAppxContentGroupFilesEnumerator_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
 #[repr(transparent)]
 pub struct IAppxContentGroupMapReader(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppxContentGroupMapReader {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppxContentGroupMapReader {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
     pub unsafe fn GetRequiredGroup(&self) -> ::windows::core::Result<IAppxContentGroup> {
@@ -3327,11 +3361,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAppx
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAppxContentGroupMapReader {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAppxContentGroupMapReader {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3357,6 +3386,11 @@ pub struct IAppxContentGroupMapReader_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
 #[repr(transparent)]
 pub struct IAppxContentGroupMapWriter(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppxContentGroupMapWriter {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppxContentGroupMapWriter {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
     pub unsafe fn AddAutomaticGroup<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, groupname: Param0) -> ::windows::core::Result<()> {
@@ -3391,11 +3425,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAppx
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAppxContentGroupMapWriter {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAppxContentGroupMapWriter {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3422,6 +3451,11 @@ pub struct IAppxContentGroupMapWriter_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
 #[repr(transparent)]
 pub struct IAppxContentGroupsEnumerator(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppxContentGroupsEnumerator {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppxContentGroupsEnumerator {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
     pub unsafe fn GetCurrent(&self) -> ::windows::core::Result<IAppxContentGroup> {
@@ -3461,11 +3495,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAppx
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAppxContentGroupsEnumerator {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAppxContentGroupsEnumerator {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3498,6 +3527,11 @@ pub struct IAppxContentGroupsEnumerator_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
 #[repr(transparent)]
 pub struct IAppxEncryptedBundleWriter(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppxEncryptedBundleWriter {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppxEncryptedBundleWriter {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -3529,11 +3563,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAppx
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAppxEncryptedBundleWriter {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAppxEncryptedBundleWriter {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3562,6 +3591,11 @@ pub struct IAppxEncryptedBundleWriter_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
 #[repr(transparent)]
 pub struct IAppxEncryptedBundleWriter2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppxEncryptedBundleWriter2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppxEncryptedBundleWriter2 {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -3587,11 +3621,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IAppxEncr
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAppxEncryptedBundleWriter2 {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IAppxEncryptedBundleWriter2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IAppxEncryptedBundleWriter2 {
@@ -3621,6 +3650,11 @@ pub struct IAppxEncryptedBundleWriter2_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
 #[repr(transparent)]
 pub struct IAppxEncryptedBundleWriter3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppxEncryptedBundleWriter3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppxEncryptedBundleWriter3 {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com"))]
@@ -3651,11 +3685,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IAppxEncr
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAppxEncryptedBundleWriter3 {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IAppxEncryptedBundleWriter3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IAppxEncryptedBundleWriter3 {
@@ -3689,6 +3718,11 @@ pub struct IAppxEncryptedBundleWriter3_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
 #[repr(transparent)]
 pub struct IAppxEncryptedPackageWriter(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppxEncryptedPackageWriter {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppxEncryptedPackageWriter {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -3720,11 +3754,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAppx
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAppxEncryptedPackageWriter {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAppxEncryptedPackageWriter {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3753,6 +3782,11 @@ pub struct IAppxEncryptedPackageWriter_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
 #[repr(transparent)]
 pub struct IAppxEncryptedPackageWriter2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppxEncryptedPackageWriter2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppxEncryptedPackageWriter2 {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -3778,11 +3812,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IAppxEncr
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAppxEncryptedPackageWriter2 {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IAppxEncryptedPackageWriter2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IAppxEncryptedPackageWriter2 {
@@ -3812,6 +3841,11 @@ pub struct IAppxEncryptedPackageWriter2_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
 #[repr(transparent)]
 pub struct IAppxEncryptionFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppxEncryptionFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppxEncryptionFactory {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com"))]
@@ -3878,11 +3912,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAppx
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAppxEncryptionFactory {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAppxEncryptionFactory {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3938,6 +3967,11 @@ pub struct IAppxEncryptionFactory_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
 #[repr(transparent)]
 pub struct IAppxEncryptionFactory2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppxEncryptionFactory2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppxEncryptionFactory2 {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com"))]
@@ -3964,11 +3998,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IAppxEncr
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAppxEncryptionFactory2 {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IAppxEncryptionFactory2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IAppxEncryptionFactory2 {
@@ -3998,6 +4027,11 @@ pub struct IAppxEncryptionFactory2_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
 #[repr(transparent)]
 pub struct IAppxEncryptionFactory3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppxEncryptionFactory3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppxEncryptionFactory3 {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -4042,11 +4076,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAppx
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAppxEncryptionFactory3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAppxEncryptionFactory3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4086,6 +4115,11 @@ pub struct IAppxEncryptionFactory3_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
 #[repr(transparent)]
 pub struct IAppxEncryptionFactory4(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppxEncryptionFactory4 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppxEncryptionFactory4 {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -4111,11 +4145,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IAppxEncr
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAppxEncryptionFactory4 {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IAppxEncryptionFactory4 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IAppxEncryptionFactory4 {
@@ -4145,6 +4174,11 @@ pub struct IAppxEncryptionFactory4_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
 #[repr(transparent)]
 pub struct IAppxFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppxFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppxFactory {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com"))]
@@ -4197,11 +4231,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAppx
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAppxFactory {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAppxFactory {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4245,6 +4274,11 @@ pub struct IAppxFactory_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
 #[repr(transparent)]
 pub struct IAppxFactory2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppxFactory2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppxFactory2 {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -4285,11 +4319,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAppx
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAppxFactory2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAppxFactory2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4325,6 +4354,11 @@ pub struct IAppxFactory2_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
 #[repr(transparent)]
 pub struct IAppxFile(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppxFile {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppxFile {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
     pub unsafe fn GetCompressionOption(&self) -> ::windows::core::Result<APPX_COMPRESSION_OPTION> {
@@ -4373,11 +4407,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAppx
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAppxFile {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAppxFile {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4409,6 +4438,11 @@ pub struct IAppxFile_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
 #[repr(transparent)]
 pub struct IAppxFilesEnumerator(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppxFilesEnumerator {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppxFilesEnumerator {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
     pub unsafe fn GetCurrent(&self) -> ::windows::core::Result<IAppxFile> {
@@ -4448,11 +4482,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAppx
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAppxFilesEnumerator {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAppxFilesEnumerator {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4485,6 +4514,11 @@ pub struct IAppxFilesEnumerator_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
 #[repr(transparent)]
 pub struct IAppxManifestApplication(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppxManifestApplication {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppxManifestApplication {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
     pub unsafe fn GetStringValue<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, name: Param0) -> ::windows::core::Result<::windows::core::PWSTR> {
@@ -4517,11 +4551,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAppx
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAppxManifestApplication {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAppxManifestApplication {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4547,6 +4576,11 @@ pub struct IAppxManifestApplication_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
 #[repr(transparent)]
 pub struct IAppxManifestApplicationsEnumerator(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppxManifestApplicationsEnumerator {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppxManifestApplicationsEnumerator {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
     pub unsafe fn GetCurrent(&self) -> ::windows::core::Result<IAppxManifestApplication> {
@@ -4586,11 +4620,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAppx
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAppxManifestApplicationsEnumerator {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAppxManifestApplicationsEnumerator {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4623,6 +4652,11 @@ pub struct IAppxManifestApplicationsEnumerator_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
 #[repr(transparent)]
 pub struct IAppxManifestCapabilitiesEnumerator(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppxManifestCapabilitiesEnumerator {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppxManifestCapabilitiesEnumerator {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
     pub unsafe fn GetCurrent(&self) -> ::windows::core::Result<::windows::core::PWSTR> {
@@ -4662,11 +4696,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAppx
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAppxManifestCapabilitiesEnumerator {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAppxManifestCapabilitiesEnumerator {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4699,6 +4728,11 @@ pub struct IAppxManifestCapabilitiesEnumerator_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
 #[repr(transparent)]
 pub struct IAppxManifestDeviceCapabilitiesEnumerator(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppxManifestDeviceCapabilitiesEnumerator {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppxManifestDeviceCapabilitiesEnumerator {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
     pub unsafe fn GetCurrent(&self) -> ::windows::core::Result<::windows::core::PWSTR> {
@@ -4738,11 +4772,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAppx
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAppxManifestDeviceCapabilitiesEnumerator {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAppxManifestDeviceCapabilitiesEnumerator {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4775,6 +4804,11 @@ pub struct IAppxManifestDeviceCapabilitiesEnumerator_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
 #[repr(transparent)]
 pub struct IAppxManifestDriverConstraint(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppxManifestDriverConstraint {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppxManifestDriverConstraint {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
     pub unsafe fn GetName(&self) -> ::windows::core::Result<::windows::core::PWSTR> {
@@ -4812,11 +4846,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAppx
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAppxManifestDriverConstraint {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAppxManifestDriverConstraint {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4843,6 +4872,11 @@ pub struct IAppxManifestDriverConstraint_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
 #[repr(transparent)]
 pub struct IAppxManifestDriverConstraintsEnumerator(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppxManifestDriverConstraintsEnumerator {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppxManifestDriverConstraintsEnumerator {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
     pub unsafe fn GetCurrent(&self) -> ::windows::core::Result<IAppxManifestDriverConstraint> {
@@ -4882,11 +4916,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAppx
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAppxManifestDriverConstraintsEnumerator {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAppxManifestDriverConstraintsEnumerator {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4919,6 +4948,11 @@ pub struct IAppxManifestDriverConstraintsEnumerator_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
 #[repr(transparent)]
 pub struct IAppxManifestDriverDependenciesEnumerator(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppxManifestDriverDependenciesEnumerator {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppxManifestDriverDependenciesEnumerator {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
     pub unsafe fn GetCurrent(&self) -> ::windows::core::Result<IAppxManifestDriverDependency> {
@@ -4958,11 +4992,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAppx
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAppxManifestDriverDependenciesEnumerator {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAppxManifestDriverDependenciesEnumerator {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4995,6 +5024,11 @@ pub struct IAppxManifestDriverDependenciesEnumerator_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
 #[repr(transparent)]
 pub struct IAppxManifestDriverDependency(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppxManifestDriverDependency {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppxManifestDriverDependency {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
     pub unsafe fn GetDriverConstraints(&self) -> ::windows::core::Result<IAppxManifestDriverConstraintsEnumerator> {
@@ -5022,11 +5056,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAppx
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAppxManifestDriverDependency {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAppxManifestDriverDependency {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5051,6 +5080,11 @@ pub struct IAppxManifestDriverDependency_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
 #[repr(transparent)]
 pub struct IAppxManifestHostRuntimeDependenciesEnumerator(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppxManifestHostRuntimeDependenciesEnumerator {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppxManifestHostRuntimeDependenciesEnumerator {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
     pub unsafe fn GetCurrent(&self) -> ::windows::core::Result<IAppxManifestHostRuntimeDependency> {
@@ -5090,11 +5124,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAppx
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAppxManifestHostRuntimeDependenciesEnumerator {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAppxManifestHostRuntimeDependenciesEnumerator {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5127,6 +5156,11 @@ pub struct IAppxManifestHostRuntimeDependenciesEnumerator_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
 #[repr(transparent)]
 pub struct IAppxManifestHostRuntimeDependency(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppxManifestHostRuntimeDependency {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppxManifestHostRuntimeDependency {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
     pub unsafe fn GetName(&self) -> ::windows::core::Result<::windows::core::PWSTR> {
@@ -5164,11 +5198,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAppx
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAppxManifestHostRuntimeDependency {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAppxManifestHostRuntimeDependency {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5195,6 +5224,11 @@ pub struct IAppxManifestHostRuntimeDependency_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
 #[repr(transparent)]
 pub struct IAppxManifestHostRuntimeDependency2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppxManifestHostRuntimeDependency2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppxManifestHostRuntimeDependency2 {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
     pub unsafe fn GetPackageFamilyName(&self) -> ::windows::core::Result<::windows::core::PWSTR> {
@@ -5222,11 +5256,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAppx
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAppxManifestHostRuntimeDependency2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAppxManifestHostRuntimeDependency2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5251,6 +5280,11 @@ pub struct IAppxManifestHostRuntimeDependency2_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
 #[repr(transparent)]
 pub struct IAppxManifestMainPackageDependenciesEnumerator(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppxManifestMainPackageDependenciesEnumerator {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppxManifestMainPackageDependenciesEnumerator {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
     pub unsafe fn GetCurrent(&self) -> ::windows::core::Result<IAppxManifestMainPackageDependency> {
@@ -5290,11 +5324,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAppx
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAppxManifestMainPackageDependenciesEnumerator {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAppxManifestMainPackageDependenciesEnumerator {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5327,6 +5356,11 @@ pub struct IAppxManifestMainPackageDependenciesEnumerator_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
 #[repr(transparent)]
 pub struct IAppxManifestMainPackageDependency(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppxManifestMainPackageDependency {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppxManifestMainPackageDependency {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
     pub unsafe fn GetName(&self) -> ::windows::core::Result<::windows::core::PWSTR> {
@@ -5364,11 +5398,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAppx
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAppxManifestMainPackageDependency {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAppxManifestMainPackageDependency {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5395,6 +5424,11 @@ pub struct IAppxManifestMainPackageDependency_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
 #[repr(transparent)]
 pub struct IAppxManifestOSPackageDependenciesEnumerator(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppxManifestOSPackageDependenciesEnumerator {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppxManifestOSPackageDependenciesEnumerator {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
     pub unsafe fn GetCurrent(&self) -> ::windows::core::Result<IAppxManifestOSPackageDependency> {
@@ -5434,11 +5468,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAppx
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAppxManifestOSPackageDependenciesEnumerator {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAppxManifestOSPackageDependenciesEnumerator {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5471,6 +5500,11 @@ pub struct IAppxManifestOSPackageDependenciesEnumerator_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
 #[repr(transparent)]
 pub struct IAppxManifestOSPackageDependency(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppxManifestOSPackageDependency {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppxManifestOSPackageDependency {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
     pub unsafe fn GetName(&self) -> ::windows::core::Result<::windows::core::PWSTR> {
@@ -5503,11 +5537,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAppx
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAppxManifestOSPackageDependency {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAppxManifestOSPackageDependency {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5533,6 +5562,11 @@ pub struct IAppxManifestOSPackageDependency_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
 #[repr(transparent)]
 pub struct IAppxManifestOptionalPackageInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppxManifestOptionalPackageInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppxManifestOptionalPackageInfo {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -5566,11 +5600,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAppx
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAppxManifestOptionalPackageInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAppxManifestOptionalPackageInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5599,6 +5628,11 @@ pub struct IAppxManifestOptionalPackageInfo_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
 #[repr(transparent)]
 pub struct IAppxManifestPackageDependenciesEnumerator(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppxManifestPackageDependenciesEnumerator {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppxManifestPackageDependenciesEnumerator {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
     pub unsafe fn GetCurrent(&self) -> ::windows::core::Result<IAppxManifestPackageDependency> {
@@ -5638,11 +5672,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAppx
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAppxManifestPackageDependenciesEnumerator {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAppxManifestPackageDependenciesEnumerator {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5675,6 +5704,11 @@ pub struct IAppxManifestPackageDependenciesEnumerator_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
 #[repr(transparent)]
 pub struct IAppxManifestPackageDependency(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppxManifestPackageDependency {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppxManifestPackageDependency {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
     pub unsafe fn GetName(&self) -> ::windows::core::Result<::windows::core::PWSTR> {
@@ -5712,11 +5746,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAppx
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAppxManifestPackageDependency {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAppxManifestPackageDependency {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5743,6 +5772,11 @@ pub struct IAppxManifestPackageDependency_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
 #[repr(transparent)]
 pub struct IAppxManifestPackageDependency2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppxManifestPackageDependency2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppxManifestPackageDependency2 {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
     pub unsafe fn GetName(&self) -> ::windows::core::Result<::windows::core::PWSTR> {
@@ -5805,11 +5839,6 @@ impl<'a> ::windows::core::IntoParam<'a, IAppxManifestPackageDependency> for &'a 
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAppxManifestPackageDependency2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAppxManifestPackageDependency2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5834,6 +5863,11 @@ pub struct IAppxManifestPackageDependency2_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
 #[repr(transparent)]
 pub struct IAppxManifestPackageDependency3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppxManifestPackageDependency3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppxManifestPackageDependency3 {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -5860,11 +5894,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IAppxMani
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAppxManifestPackageDependency3 {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IAppxManifestPackageDependency3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IAppxManifestPackageDependency3 {
@@ -5894,6 +5923,11 @@ pub struct IAppxManifestPackageDependency3_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
 #[repr(transparent)]
 pub struct IAppxManifestPackageId(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppxManifestPackageId {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppxManifestPackageId {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
     pub unsafe fn GetName(&self) -> ::windows::core::Result<::windows::core::PWSTR> {
@@ -5957,11 +5991,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAppx
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAppxManifestPackageId {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAppxManifestPackageId {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5996,6 +6025,11 @@ pub struct IAppxManifestPackageId_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
 #[repr(transparent)]
 pub struct IAppxManifestPackageId2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppxManifestPackageId2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppxManifestPackageId2 {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
     pub unsafe fn GetName(&self) -> ::windows::core::Result<::windows::core::PWSTR> {
@@ -6084,11 +6118,6 @@ impl<'a> ::windows::core::IntoParam<'a, IAppxManifestPackageId> for &'a IAppxMan
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAppxManifestPackageId2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAppxManifestPackageId2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6113,6 +6142,11 @@ pub struct IAppxManifestPackageId2_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
 #[repr(transparent)]
 pub struct IAppxManifestProperties(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppxManifestProperties {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppxManifestProperties {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -6146,11 +6180,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAppx
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAppxManifestProperties {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAppxManifestProperties {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6179,6 +6208,11 @@ pub struct IAppxManifestProperties_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
 #[repr(transparent)]
 pub struct IAppxManifestQualifiedResource(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppxManifestQualifiedResource {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppxManifestQualifiedResource {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
     pub unsafe fn GetLanguage(&self) -> ::windows::core::Result<::windows::core::PWSTR> {
@@ -6216,11 +6250,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAppx
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAppxManifestQualifiedResource {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAppxManifestQualifiedResource {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6247,6 +6276,11 @@ pub struct IAppxManifestQualifiedResource_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
 #[repr(transparent)]
 pub struct IAppxManifestQualifiedResourcesEnumerator(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppxManifestQualifiedResourcesEnumerator {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppxManifestQualifiedResourcesEnumerator {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
     pub unsafe fn GetCurrent(&self) -> ::windows::core::Result<IAppxManifestQualifiedResource> {
@@ -6286,11 +6320,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAppx
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAppxManifestQualifiedResourcesEnumerator {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAppxManifestQualifiedResourcesEnumerator {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6323,6 +6352,11 @@ pub struct IAppxManifestQualifiedResourcesEnumerator_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
 #[repr(transparent)]
 pub struct IAppxManifestReader(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppxManifestReader {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppxManifestReader {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
     pub unsafe fn GetPackageId(&self) -> ::windows::core::Result<IAppxManifestPackageId> {
@@ -6391,11 +6425,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAppx
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAppxManifestReader {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAppxManifestReader {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6431,6 +6460,11 @@ pub struct IAppxManifestReader_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
 #[repr(transparent)]
 pub struct IAppxManifestReader2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppxManifestReader2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppxManifestReader2 {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
     pub unsafe fn GetPackageId(&self) -> ::windows::core::Result<IAppxManifestPackageId> {
@@ -6524,11 +6558,6 @@ impl<'a> ::windows::core::IntoParam<'a, IAppxManifestReader> for &'a IAppxManife
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAppxManifestReader2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAppxManifestReader2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6553,6 +6582,11 @@ pub struct IAppxManifestReader2_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
 #[repr(transparent)]
 pub struct IAppxManifestReader3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppxManifestReader3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppxManifestReader3 {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
     pub unsafe fn GetPackageId(&self) -> ::windows::core::Result<IAppxManifestPackageId> {
@@ -6676,11 +6710,6 @@ impl<'a> ::windows::core::IntoParam<'a, IAppxManifestReader2> for &'a IAppxManif
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAppxManifestReader3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAppxManifestReader3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6706,6 +6735,11 @@ pub struct IAppxManifestReader3_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
 #[repr(transparent)]
 pub struct IAppxManifestReader4(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppxManifestReader4 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppxManifestReader4 {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
     pub unsafe fn GetPackageId(&self) -> ::windows::core::Result<IAppxManifestPackageId> {
@@ -6854,11 +6888,6 @@ impl<'a> ::windows::core::IntoParam<'a, IAppxManifestReader3> for &'a IAppxManif
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAppxManifestReader4 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAppxManifestReader4 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6883,6 +6912,11 @@ pub struct IAppxManifestReader4_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
 #[repr(transparent)]
 pub struct IAppxManifestReader5(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppxManifestReader5 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppxManifestReader5 {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
     pub unsafe fn GetMainPackageDependencies(&self) -> ::windows::core::Result<IAppxManifestMainPackageDependenciesEnumerator> {
@@ -6910,11 +6944,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAppx
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAppxManifestReader5 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAppxManifestReader5 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6939,6 +6968,11 @@ pub struct IAppxManifestReader5_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
 #[repr(transparent)]
 pub struct IAppxManifestReader6(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppxManifestReader6 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppxManifestReader6 {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -6965,11 +6999,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IAppxMani
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAppxManifestReader6 {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IAppxManifestReader6 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IAppxManifestReader6 {
@@ -6999,6 +7028,11 @@ pub struct IAppxManifestReader6_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
 #[repr(transparent)]
 pub struct IAppxManifestReader7(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppxManifestReader7 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppxManifestReader7 {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
     pub unsafe fn GetDriverDependencies(&self) -> ::windows::core::Result<IAppxManifestDriverDependenciesEnumerator> {
@@ -7036,11 +7070,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAppx
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAppxManifestReader7 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAppxManifestReader7 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7067,6 +7096,11 @@ pub struct IAppxManifestReader7_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
 #[repr(transparent)]
 pub struct IAppxManifestResourcesEnumerator(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppxManifestResourcesEnumerator {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppxManifestResourcesEnumerator {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
     pub unsafe fn GetCurrent(&self) -> ::windows::core::Result<::windows::core::PWSTR> {
@@ -7106,11 +7140,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAppx
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAppxManifestResourcesEnumerator {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAppxManifestResourcesEnumerator {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7143,6 +7172,11 @@ pub struct IAppxManifestResourcesEnumerator_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
 #[repr(transparent)]
 pub struct IAppxManifestTargetDeviceFamiliesEnumerator(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppxManifestTargetDeviceFamiliesEnumerator {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppxManifestTargetDeviceFamiliesEnumerator {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
     pub unsafe fn GetCurrent(&self) -> ::windows::core::Result<IAppxManifestTargetDeviceFamily> {
@@ -7182,11 +7216,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAppx
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAppxManifestTargetDeviceFamiliesEnumerator {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAppxManifestTargetDeviceFamiliesEnumerator {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7219,6 +7248,11 @@ pub struct IAppxManifestTargetDeviceFamiliesEnumerator_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
 #[repr(transparent)]
 pub struct IAppxManifestTargetDeviceFamily(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppxManifestTargetDeviceFamily {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppxManifestTargetDeviceFamily {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
     pub unsafe fn GetName(&self) -> ::windows::core::Result<::windows::core::PWSTR> {
@@ -7256,11 +7290,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAppx
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAppxManifestTargetDeviceFamily {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAppxManifestTargetDeviceFamily {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7287,6 +7316,11 @@ pub struct IAppxManifestTargetDeviceFamily_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
 #[repr(transparent)]
 pub struct IAppxPackageEditor(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppxPackageEditor {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppxPackageEditor {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
     pub unsafe fn SetWorkingDirectory<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, workingdirectory: Param0) -> ::windows::core::Result<()> {
@@ -7338,11 +7372,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAppx
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAppxPackageEditor {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAppxPackageEditor {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7387,6 +7416,11 @@ pub struct IAppxPackageEditor_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
 #[repr(transparent)]
 pub struct IAppxPackageReader(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppxPackageReader {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppxPackageReader {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
     pub unsafe fn GetBlockMap(&self) -> ::windows::core::Result<IAppxBlockMapReader> {
@@ -7434,11 +7468,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAppx
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAppxPackageReader {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAppxPackageReader {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7467,6 +7496,11 @@ pub struct IAppxPackageReader_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
 #[repr(transparent)]
 pub struct IAppxPackageWriter(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppxPackageWriter {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppxPackageWriter {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -7497,11 +7531,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IAppxPack
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAppxPackageWriter {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IAppxPackageWriter {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IAppxPackageWriter {
@@ -7535,6 +7564,11 @@ pub struct IAppxPackageWriter_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
 #[repr(transparent)]
 pub struct IAppxPackageWriter2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppxPackageWriter2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppxPackageWriter2 {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -7560,11 +7594,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IAppxPack
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAppxPackageWriter2 {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IAppxPackageWriter2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IAppxPackageWriter2 {
@@ -7594,6 +7623,11 @@ pub struct IAppxPackageWriter2_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
 #[repr(transparent)]
 pub struct IAppxPackageWriter3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppxPackageWriter3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppxPackageWriter3 {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -7619,11 +7653,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IAppxPack
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAppxPackageWriter3 {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IAppxPackageWriter3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IAppxPackageWriter3 {
@@ -7653,6 +7682,11 @@ pub struct IAppxPackageWriter3_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
 #[repr(transparent)]
 pub struct IAppxPackagingDiagnosticEventSink(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppxPackagingDiagnosticEventSink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppxPackagingDiagnosticEventSink {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
     pub unsafe fn ReportContextChange<'a, Param2: ::windows::core::IntoParam<'a, ::windows::core::PCSTR>, Param3: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param4: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, changetype: APPX_PACKAGING_CONTEXT_CHANGE_TYPE, contextid: i32, contextname: Param2, contextmessage: Param3, detailsmessage: Param4) -> ::windows::core::Result<()> {
@@ -7683,11 +7717,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAppx
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAppxPackagingDiagnosticEventSink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAppxPackagingDiagnosticEventSink {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7713,6 +7742,11 @@ pub struct IAppxPackagingDiagnosticEventSink_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
 #[repr(transparent)]
 pub struct IAppxPackagingDiagnosticEventSinkManager(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppxPackagingDiagnosticEventSinkManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppxPackagingDiagnosticEventSinkManager {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
     pub unsafe fn SetSinkForProcess<'a, Param0: ::windows::core::IntoParam<'a, IAppxPackagingDiagnosticEventSink>>(&self, sink: Param0) -> ::windows::core::Result<()> {
@@ -7739,11 +7773,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAppx
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAppxPackagingDiagnosticEventSinkManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAppxPackagingDiagnosticEventSinkManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7768,6 +7797,11 @@ pub struct IAppxPackagingDiagnosticEventSinkManager_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
 #[repr(transparent)]
 pub struct IAppxSourceContentGroupMapReader(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppxSourceContentGroupMapReader {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppxSourceContentGroupMapReader {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Appx\"`*"]
     pub unsafe fn GetRequiredGroup(&self) -> ::windows::core::Result<IAppxContentGroup> {
@@ -7798,11 +7832,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IAppxSour
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAppxSourceContentGroupMapReader {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IAppxSourceContentGroupMapReader {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IAppxSourceContentGroupMapReader {
@@ -7875,6 +7904,7 @@ impl ::core::fmt::Debug for PACKAGEDEPENDENCY_CONTEXT__ {
 }
 unsafe impl ::windows::core::Abi for PACKAGEDEPENDENCY_CONTEXT__ {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PACKAGEDEPENDENCY_CONTEXT__ {
     fn eq(&self, other: &Self) -> bool {
@@ -7928,6 +7958,7 @@ impl ::core::clone::Clone for PACKAGE_ID {
 }
 unsafe impl ::windows::core::Abi for PACKAGE_ID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PACKAGE_ID {
     fn eq(&self, other: &Self) -> bool {
@@ -7958,6 +7989,7 @@ impl ::core::clone::Clone for PACKAGE_INFO {
 }
 unsafe impl ::windows::core::Abi for PACKAGE_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PACKAGE_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -8005,6 +8037,7 @@ impl ::core::clone::Clone for PACKAGE_VERSION {
 }
 unsafe impl ::windows::core::Abi for PACKAGE_VERSION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PACKAGE_VERSION {
     fn eq(&self, other: &Self) -> bool {
@@ -8031,6 +8064,7 @@ impl ::core::clone::Clone for PACKAGE_VERSION_0 {
 }
 unsafe impl ::windows::core::Abi for PACKAGE_VERSION_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PACKAGE_VERSION_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -8064,6 +8098,7 @@ impl ::core::fmt::Debug for PACKAGE_VERSION_0_0 {
 }
 unsafe impl ::windows::core::Abi for PACKAGE_VERSION_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PACKAGE_VERSION_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -8094,6 +8129,7 @@ impl ::core::fmt::Debug for PACKAGE_VIRTUALIZATION_CONTEXT_HANDLE__ {
 }
 unsafe impl ::windows::core::Abi for PACKAGE_VIRTUALIZATION_CONTEXT_HANDLE__ {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PACKAGE_VIRTUALIZATION_CONTEXT_HANDLE__ {
     fn eq(&self, other: &Self) -> bool {
@@ -8129,6 +8165,7 @@ impl ::core::default::Default for PackageDependencyLifetimeKind {
 }
 unsafe impl ::windows::core::Abi for PackageDependencyLifetimeKind {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PackageDependencyLifetimeKind {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8166,6 +8203,7 @@ impl ::core::default::Default for PackageDependencyProcessorArchitectures {
 }
 unsafe impl ::windows::core::Abi for PackageDependencyProcessorArchitectures {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PackageDependencyProcessorArchitectures {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8278,6 +8316,7 @@ impl ::core::default::Default for PackageOrigin {
 }
 unsafe impl ::windows::core::Abi for PackageOrigin {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PackageOrigin {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8313,6 +8352,7 @@ impl ::core::default::Default for PackagePathType {
 }
 unsafe impl ::windows::core::Abi for PackagePathType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PackagePathType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8471,6 +8511,7 @@ impl ::core::fmt::Debug for _PACKAGE_INFO_REFERENCE {
 }
 unsafe impl ::windows::core::Abi for _PACKAGE_INFO_REFERENCE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for _PACKAGE_INFO_REFERENCE {
     fn eq(&self, other: &Self) -> bool {

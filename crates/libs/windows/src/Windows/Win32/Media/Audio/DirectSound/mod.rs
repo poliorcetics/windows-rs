@@ -41,6 +41,7 @@ impl ::core::fmt::Debug for DS3DBUFFER {
 #[cfg(feature = "Win32_Graphics_Direct3D")]
 unsafe impl ::windows::core::Abi for DS3DBUFFER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Direct3D")]
 impl ::core::cmp::PartialEq for DS3DBUFFER {
@@ -86,6 +87,7 @@ impl ::core::fmt::Debug for DS3DLISTENER {
 #[cfg(feature = "Win32_Graphics_Direct3D")]
 unsafe impl ::windows::core::Abi for DS3DLISTENER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Direct3D")]
 impl ::core::cmp::PartialEq for DS3DLISTENER {
@@ -159,6 +161,7 @@ impl ::core::fmt::Debug for DSBCAPS {
 }
 unsafe impl ::windows::core::Abi for DSBCAPS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DSBCAPS {
     fn eq(&self, other: &Self) -> bool {
@@ -259,6 +262,7 @@ impl ::core::fmt::Debug for DSBPOSITIONNOTIFY {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DSBPOSITIONNOTIFY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DSBPOSITIONNOTIFY {
@@ -315,6 +319,7 @@ impl ::core::fmt::Debug for DSBUFFERDESC {
 }
 unsafe impl ::windows::core::Abi for DSBUFFERDESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DSBUFFERDESC {
     fn eq(&self, other: &Self) -> bool {
@@ -349,6 +354,7 @@ impl ::core::fmt::Debug for DSBUFFERDESC1 {
 }
 unsafe impl ::windows::core::Abi for DSBUFFERDESC1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DSBUFFERDESC1 {
     fn eq(&self, other: &Self) -> bool {
@@ -431,6 +437,7 @@ impl ::core::fmt::Debug for DSCAPS {
 }
 unsafe impl ::windows::core::Abi for DSCAPS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DSCAPS {
     fn eq(&self, other: &Self) -> bool {
@@ -486,6 +493,7 @@ impl ::core::fmt::Debug for DSCBCAPS {
 }
 unsafe impl ::windows::core::Abi for DSCBCAPS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DSCBCAPS {
     fn eq(&self, other: &Self) -> bool {
@@ -534,6 +542,7 @@ impl ::core::fmt::Debug for DSCBUFFERDESC {
 }
 unsafe impl ::windows::core::Abi for DSCBUFFERDESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DSCBUFFERDESC {
     fn eq(&self, other: &Self) -> bool {
@@ -568,6 +577,7 @@ impl ::core::fmt::Debug for DSCBUFFERDESC1 {
 }
 unsafe impl ::windows::core::Abi for DSCBUFFERDESC1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DSCBUFFERDESC1 {
     fn eq(&self, other: &Self) -> bool {
@@ -601,6 +611,7 @@ impl ::core::fmt::Debug for DSCCAPS {
 }
 unsafe impl ::windows::core::Abi for DSCCAPS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DSCCAPS {
     fn eq(&self, other: &Self) -> bool {
@@ -642,6 +653,7 @@ impl ::core::fmt::Debug for DSCEFFECTDESC {
 }
 unsafe impl ::windows::core::Abi for DSCEFFECTDESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DSCEFFECTDESC {
     fn eq(&self, other: &Self) -> bool {
@@ -679,6 +691,7 @@ impl ::core::fmt::Debug for DSCFXAec {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DSCFXAec {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DSCFXAec {
@@ -717,6 +730,7 @@ impl ::core::fmt::Debug for DSCFXNoiseSuppress {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DSCFXNoiseSuppress {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DSCFXNoiseSuppress {
@@ -780,6 +794,7 @@ impl ::core::fmt::Debug for DSEFFECTDESC {
 }
 unsafe impl ::windows::core::Abi for DSEFFECTDESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DSEFFECTDESC {
     fn eq(&self, other: &Self) -> bool {
@@ -878,6 +893,7 @@ impl ::core::fmt::Debug for DSFXChorus {
 }
 unsafe impl ::windows::core::Abi for DSFXChorus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DSFXChorus {
     fn eq(&self, other: &Self) -> bool {
@@ -913,6 +929,7 @@ impl ::core::fmt::Debug for DSFXCompressor {
 }
 unsafe impl ::windows::core::Abi for DSFXCompressor {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DSFXCompressor {
     fn eq(&self, other: &Self) -> bool {
@@ -967,6 +984,7 @@ impl ::core::fmt::Debug for DSFXDistortion {
 }
 unsafe impl ::windows::core::Abi for DSFXDistortion {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DSFXDistortion {
     fn eq(&self, other: &Self) -> bool {
@@ -1021,6 +1039,7 @@ impl ::core::fmt::Debug for DSFXEcho {
 }
 unsafe impl ::windows::core::Abi for DSFXEcho {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DSFXEcho {
     fn eq(&self, other: &Self) -> bool {
@@ -1095,6 +1114,7 @@ impl ::core::fmt::Debug for DSFXFlanger {
 }
 unsafe impl ::windows::core::Abi for DSFXFlanger {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DSFXFlanger {
     fn eq(&self, other: &Self) -> bool {
@@ -1134,6 +1154,7 @@ impl ::core::fmt::Debug for DSFXGargle {
 }
 unsafe impl ::windows::core::Abi for DSFXGargle {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DSFXGargle {
     fn eq(&self, other: &Self) -> bool {
@@ -1188,6 +1209,7 @@ impl ::core::fmt::Debug for DSFXI3DL2Reverb {
 }
 unsafe impl ::windows::core::Abi for DSFXI3DL2Reverb {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DSFXI3DL2Reverb {
     fn eq(&self, other: &Self) -> bool {
@@ -1232,6 +1254,7 @@ impl ::core::fmt::Debug for DSFXParamEq {
 }
 unsafe impl ::windows::core::Abi for DSFXParamEq {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DSFXParamEq {
     fn eq(&self, other: &Self) -> bool {
@@ -1279,6 +1302,7 @@ impl ::core::fmt::Debug for DSFXWavesReverb {
 }
 unsafe impl ::windows::core::Abi for DSFXWavesReverb {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DSFXWavesReverb {
     fn eq(&self, other: &Self) -> bool {
@@ -1684,6 +1708,11 @@ pub unsafe fn GetDeviceID(pguidsrc: *const ::windows::core::GUID) -> ::windows::
 #[doc = "*Required features: `\"Win32_Media_Audio_DirectSound\"`*"]
 #[repr(transparent)]
 pub struct IDirectSound(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectSound {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirectSound {
     #[doc = "*Required features: `\"Win32_Media_Audio_DirectSound\"`*"]
     pub unsafe fn CreateSoundBuffer<'a, Param2: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, pcdsbufferdesc: *const DSBUFFERDESC, ppdsbuffer: *mut ::core::option::Option<IDirectSoundBuffer>, punkouter: Param2) -> ::windows::core::Result<()> {
@@ -1742,11 +1771,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDire
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirectSound {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirectSound {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1781,6 +1805,11 @@ pub struct IDirectSound_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_Audio_DirectSound\"`*"]
 #[repr(transparent)]
 pub struct IDirectSound3DBuffer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectSound3DBuffer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirectSound3DBuffer {
     #[doc = "*Required features: `\"Win32_Media_Audio_DirectSound\"`, `\"Win32_Graphics_Direct3D\"`*"]
     #[cfg(feature = "Win32_Graphics_Direct3D")]
@@ -1888,11 +1917,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDire
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirectSound3DBuffer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirectSound3DBuffer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1949,6 +1973,11 @@ pub struct IDirectSound3DBuffer_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_Audio_DirectSound\"`*"]
 #[repr(transparent)]
 pub struct IDirectSound3DListener(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectSound3DListener {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirectSound3DListener {
     #[doc = "*Required features: `\"Win32_Media_Audio_DirectSound\"`, `\"Win32_Graphics_Direct3D\"`*"]
     #[cfg(feature = "Win32_Graphics_Direct3D")]
@@ -2042,11 +2071,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDire
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirectSound3DListener {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirectSound3DListener {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2100,6 +2124,11 @@ pub struct IDirectSound3DListener_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_Audio_DirectSound\"`*"]
 #[repr(transparent)]
 pub struct IDirectSound8(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectSound8 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirectSound8 {
     #[doc = "*Required features: `\"Win32_Media_Audio_DirectSound\"`*"]
     pub unsafe fn CreateSoundBuffer<'a, Param2: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, pcdsbufferdesc: *const DSBUFFERDESC, ppdsbuffer: *mut ::core::option::Option<IDirectSoundBuffer>, punkouter: Param2) -> ::windows::core::Result<()> {
@@ -2183,11 +2212,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDirectSound> for &'a IDirectSound8 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirectSound8 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirectSound8 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2212,6 +2236,11 @@ pub struct IDirectSound8_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_Audio_DirectSound\"`*"]
 #[repr(transparent)]
 pub struct IDirectSoundBuffer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectSoundBuffer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirectSoundBuffer {
     #[doc = "*Required features: `\"Win32_Media_Audio_DirectSound\"`*"]
     pub unsafe fn GetCaps(&self) -> ::windows::core::Result<DSBCAPS> {
@@ -2311,11 +2340,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDire
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirectSoundBuffer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirectSoundBuffer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2357,6 +2381,11 @@ pub struct IDirectSoundBuffer_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_Audio_DirectSound\"`*"]
 #[repr(transparent)]
 pub struct IDirectSoundBuffer8(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectSoundBuffer8 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirectSoundBuffer8 {
     #[doc = "*Required features: `\"Win32_Media_Audio_DirectSound\"`*"]
     pub unsafe fn GetCaps(&self) -> ::windows::core::Result<DSBCAPS> {
@@ -2488,11 +2517,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDirectSoundBuffer> for &'a IDirectSound
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirectSoundBuffer8 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirectSoundBuffer8 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2519,6 +2543,11 @@ pub struct IDirectSoundBuffer8_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_Audio_DirectSound\"`*"]
 #[repr(transparent)]
 pub struct IDirectSoundCapture(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectSoundCapture {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirectSoundCapture {
     #[doc = "*Required features: `\"Win32_Media_Audio_DirectSound\"`*"]
     pub unsafe fn CreateCaptureBuffer<'a, Param2: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, pcdscbufferdesc: *const DSCBUFFERDESC, ppdscbuffer: *mut ::core::option::Option<IDirectSoundCaptureBuffer>, punkouter: Param2) -> ::windows::core::Result<()> {
@@ -2554,11 +2583,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDire
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirectSoundCapture {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirectSoundCapture {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2585,6 +2609,11 @@ pub struct IDirectSoundCapture_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_Audio_DirectSound\"`*"]
 #[repr(transparent)]
 pub struct IDirectSoundCaptureBuffer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectSoundCaptureBuffer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirectSoundCaptureBuffer {
     #[doc = "*Required features: `\"Win32_Media_Audio_DirectSound\"`*"]
     pub unsafe fn GetCaps(&self) -> ::windows::core::Result<DSCBCAPS> {
@@ -2645,11 +2674,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDire
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirectSoundCaptureBuffer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirectSoundCaptureBuffer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2682,6 +2706,11 @@ pub struct IDirectSoundCaptureBuffer_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_Audio_DirectSound\"`*"]
 #[repr(transparent)]
 pub struct IDirectSoundCaptureBuffer8(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectSoundCaptureBuffer8 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirectSoundCaptureBuffer8 {
     #[doc = "*Required features: `\"Win32_Media_Audio_DirectSound\"`*"]
     pub unsafe fn GetCaps(&self) -> ::windows::core::Result<DSCBCAPS> {
@@ -2770,11 +2799,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDirectSoundCaptureBuffer> for &'a IDire
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirectSoundCaptureBuffer8 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirectSoundCaptureBuffer8 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2800,6 +2824,11 @@ pub struct IDirectSoundCaptureBuffer8_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_Audio_DirectSound\"`*"]
 #[repr(transparent)]
 pub struct IDirectSoundCaptureFXAec(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectSoundCaptureFXAec {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirectSoundCaptureFXAec {
     #[doc = "*Required features: `\"Win32_Media_Audio_DirectSound\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -2842,11 +2871,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDire
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirectSoundCaptureFXAec {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirectSoundCaptureFXAec {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2880,6 +2904,11 @@ pub struct IDirectSoundCaptureFXAec_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_Audio_DirectSound\"`*"]
 #[repr(transparent)]
 pub struct IDirectSoundCaptureFXNoiseSuppress(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectSoundCaptureFXNoiseSuppress {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirectSoundCaptureFXNoiseSuppress {
     #[doc = "*Required features: `\"Win32_Media_Audio_DirectSound\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -2917,11 +2946,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDire
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirectSoundCaptureFXNoiseSuppress {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirectSoundCaptureFXNoiseSuppress {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2954,6 +2978,11 @@ pub struct IDirectSoundCaptureFXNoiseSuppress_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_Audio_DirectSound\"`*"]
 #[repr(transparent)]
 pub struct IDirectSoundFXChorus(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectSoundFXChorus {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirectSoundFXChorus {
     #[doc = "*Required features: `\"Win32_Media_Audio_DirectSound\"`*"]
     pub unsafe fn SetAllParameters(&self, pcdsfxchorus: *const DSFXChorus) -> ::windows::core::Result<()> {
@@ -2985,11 +3014,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDire
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirectSoundFXChorus {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirectSoundFXChorus {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3015,6 +3039,11 @@ pub struct IDirectSoundFXChorus_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_Audio_DirectSound\"`*"]
 #[repr(transparent)]
 pub struct IDirectSoundFXCompressor(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectSoundFXCompressor {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirectSoundFXCompressor {
     #[doc = "*Required features: `\"Win32_Media_Audio_DirectSound\"`*"]
     pub unsafe fn SetAllParameters(&self, pcdsfxcompressor: *const DSFXCompressor) -> ::windows::core::Result<()> {
@@ -3046,11 +3075,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDire
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirectSoundFXCompressor {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirectSoundFXCompressor {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3076,6 +3100,11 @@ pub struct IDirectSoundFXCompressor_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_Audio_DirectSound\"`*"]
 #[repr(transparent)]
 pub struct IDirectSoundFXDistortion(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectSoundFXDistortion {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirectSoundFXDistortion {
     #[doc = "*Required features: `\"Win32_Media_Audio_DirectSound\"`*"]
     pub unsafe fn SetAllParameters(&self, pcdsfxdistortion: *const DSFXDistortion) -> ::windows::core::Result<()> {
@@ -3107,11 +3136,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDire
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirectSoundFXDistortion {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirectSoundFXDistortion {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3137,6 +3161,11 @@ pub struct IDirectSoundFXDistortion_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_Audio_DirectSound\"`*"]
 #[repr(transparent)]
 pub struct IDirectSoundFXEcho(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectSoundFXEcho {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirectSoundFXEcho {
     #[doc = "*Required features: `\"Win32_Media_Audio_DirectSound\"`*"]
     pub unsafe fn SetAllParameters(&self, pcdsfxecho: *const DSFXEcho) -> ::windows::core::Result<()> {
@@ -3168,11 +3197,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDire
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirectSoundFXEcho {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirectSoundFXEcho {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3198,6 +3222,11 @@ pub struct IDirectSoundFXEcho_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_Audio_DirectSound\"`*"]
 #[repr(transparent)]
 pub struct IDirectSoundFXFlanger(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectSoundFXFlanger {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirectSoundFXFlanger {
     #[doc = "*Required features: `\"Win32_Media_Audio_DirectSound\"`*"]
     pub unsafe fn SetAllParameters(&self, pcdsfxflanger: *const DSFXFlanger) -> ::windows::core::Result<()> {
@@ -3229,11 +3258,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDire
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirectSoundFXFlanger {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirectSoundFXFlanger {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3259,6 +3283,11 @@ pub struct IDirectSoundFXFlanger_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_Audio_DirectSound\"`*"]
 #[repr(transparent)]
 pub struct IDirectSoundFXGargle(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectSoundFXGargle {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirectSoundFXGargle {
     #[doc = "*Required features: `\"Win32_Media_Audio_DirectSound\"`*"]
     pub unsafe fn SetAllParameters(&self, pcdsfxgargle: *const DSFXGargle) -> ::windows::core::Result<()> {
@@ -3290,11 +3319,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDire
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirectSoundFXGargle {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirectSoundFXGargle {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3320,6 +3344,11 @@ pub struct IDirectSoundFXGargle_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_Audio_DirectSound\"`*"]
 #[repr(transparent)]
 pub struct IDirectSoundFXI3DL2Reverb(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectSoundFXI3DL2Reverb {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirectSoundFXI3DL2Reverb {
     #[doc = "*Required features: `\"Win32_Media_Audio_DirectSound\"`*"]
     pub unsafe fn SetAllParameters(&self, pcdsfxi3dl2reverb: *const DSFXI3DL2Reverb) -> ::windows::core::Result<()> {
@@ -3369,11 +3398,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDire
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirectSoundFXI3DL2Reverb {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirectSoundFXI3DL2Reverb {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3403,6 +3427,11 @@ pub struct IDirectSoundFXI3DL2Reverb_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_Audio_DirectSound\"`*"]
 #[repr(transparent)]
 pub struct IDirectSoundFXParamEq(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectSoundFXParamEq {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirectSoundFXParamEq {
     #[doc = "*Required features: `\"Win32_Media_Audio_DirectSound\"`*"]
     pub unsafe fn SetAllParameters(&self, pcdsfxparameq: *const DSFXParamEq) -> ::windows::core::Result<()> {
@@ -3434,11 +3463,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDire
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirectSoundFXParamEq {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirectSoundFXParamEq {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3464,6 +3488,11 @@ pub struct IDirectSoundFXParamEq_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_Audio_DirectSound\"`*"]
 #[repr(transparent)]
 pub struct IDirectSoundFXWavesReverb(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectSoundFXWavesReverb {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirectSoundFXWavesReverb {
     #[doc = "*Required features: `\"Win32_Media_Audio_DirectSound\"`*"]
     pub unsafe fn SetAllParameters(&self, pcdsfxwavesreverb: *const DSFXWavesReverb) -> ::windows::core::Result<()> {
@@ -3495,11 +3524,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDire
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirectSoundFXWavesReverb {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirectSoundFXWavesReverb {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3525,6 +3549,11 @@ pub struct IDirectSoundFXWavesReverb_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_Audio_DirectSound\"`*"]
 #[repr(transparent)]
 pub struct IDirectSoundFullDuplex(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectSoundFullDuplex {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirectSoundFullDuplex {
     #[doc = "*Required features: `\"Win32_Media_Audio_DirectSound\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -3550,11 +3579,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IDirectSo
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDirectSoundFullDuplex {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IDirectSoundFullDuplex {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IDirectSoundFullDuplex {
@@ -3584,6 +3608,11 @@ pub struct IDirectSoundFullDuplex_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_Audio_DirectSound\"`*"]
 #[repr(transparent)]
 pub struct IDirectSoundNotify(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectSoundNotify {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirectSoundNotify {
     #[doc = "*Required features: `\"Win32_Media_Audio_DirectSound\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -3609,11 +3638,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IDirectSo
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDirectSoundNotify {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IDirectSoundNotify {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IDirectSoundNotify {

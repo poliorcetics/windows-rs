@@ -49,11 +49,6 @@ impl EyesPose {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for EyesPose {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for EyesPose {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -67,7 +62,6 @@ impl ::core::fmt::Debug for EyesPose {
 }
 unsafe impl ::windows::core::RuntimeType for EyesPose {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Perception.People.EyesPose;{682a9b23-8a1e-5b86-a060-906ffacb62a4})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -166,6 +160,7 @@ impl ::core::default::Default for HandJointKind {
 }
 unsafe impl ::windows::core::Abi for HandJointKind {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HandJointKind {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -174,7 +169,6 @@ impl ::core::fmt::Debug for HandJointKind {
 }
 unsafe impl ::windows::core::RuntimeType for HandJointKind {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Perception.People.HandJointKind;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -246,11 +240,6 @@ impl HandMeshObserver {
         }
     }
 }
-impl ::core::clone::Clone for HandMeshObserver {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for HandMeshObserver {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -264,7 +253,6 @@ impl ::core::fmt::Debug for HandMeshObserver {
 }
 unsafe impl ::windows::core::RuntimeType for HandMeshObserver {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Perception.People.HandMeshObserver;{85ae30cb-6fc3-55c4-a7b4-29e33896ca69})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -342,11 +330,11 @@ impl ::core::fmt::Debug for HandMeshVertex {
 #[cfg(feature = "Foundation_Numerics")]
 unsafe impl ::windows::core::Abi for HandMeshVertex {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Foundation_Numerics")]
 unsafe impl ::windows::core::RuntimeType for HandMeshVertex {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"struct(Windows.Perception.People.HandMeshVertex;struct(Windows.Foundation.Numerics.Vector3;f4;f4;f4);struct(Windows.Foundation.Numerics.Vector3;f4;f4;f4))");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -393,11 +381,6 @@ impl HandMeshVertexState {
         }
     }
 }
-impl ::core::clone::Clone for HandMeshVertexState {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for HandMeshVertexState {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -411,7 +394,6 @@ impl ::core::fmt::Debug for HandMeshVertexState {
 }
 unsafe impl ::windows::core::RuntimeType for HandMeshVertexState {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Perception.People.HandMeshVertexState;{046c5fef-1d8b-55de-ab2c-1cd424886d8f})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -503,11 +485,6 @@ impl HandPose {
         unsafe { (::windows::core::Interface::vtable(this).GetRelativeJoints)(::core::mem::transmute_copy(this), joints.len() as u32, ::core::mem::transmute(joints.as_ptr()), referencejoints.len() as u32, ::core::mem::transmute(referencejoints.as_ptr()), jointposes.len() as u32, ::core::mem::transmute_copy(&jointposes)).ok() }
     }
 }
-impl ::core::clone::Clone for HandPose {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for HandPose {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -521,7 +498,6 @@ impl ::core::fmt::Debug for HandPose {
 }
 unsafe impl ::windows::core::RuntimeType for HandPose {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Perception.People.HandPose;{4d98e79a-bb08-5d09-91de-df0dd3fae46c})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -607,11 +583,6 @@ impl HeadPose {
         }
     }
 }
-impl ::core::clone::Clone for HeadPose {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for HeadPose {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -625,7 +596,6 @@ impl ::core::fmt::Debug for HeadPose {
 }
 unsafe impl ::windows::core::RuntimeType for HeadPose {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Perception.People.HeadPose;{7f5ac5a5-49db-379f-9429-32a2faf34fa6})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -682,6 +652,11 @@ unsafe impl ::core::marker::Sync for HeadPose {}
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IEyesPose(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEyesPose {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IEyesPose {
     type Vtable = IEyesPose_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x682a9b23_8a1e_5b86_a060_906ffacb62a4);
@@ -700,6 +675,11 @@ pub struct IEyesPose_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IEyesPoseStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEyesPoseStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IEyesPoseStatics {
     type Vtable = IEyesPoseStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1cff7413_b21f_54c0_80c1_e60d994ca58c);
@@ -717,6 +697,11 @@ pub struct IEyesPoseStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHandMeshObserver(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHandMeshObserver {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHandMeshObserver {
     type Vtable = IHandMeshObserver_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x85ae30cb_6fc3_55c4_a7b4_29e33896ca69);
@@ -740,6 +725,11 @@ pub struct IHandMeshObserver_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHandMeshVertexState(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHandMeshVertexState {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHandMeshVertexState {
     type Vtable = IHandMeshVertexState_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x046c5fef_1d8b_55de_ab2c_1cd424886d8f);
@@ -761,6 +751,11 @@ pub struct IHandMeshVertexState_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHandPose(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHandPose {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHandPose {
     type Vtable = IHandPose_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x4d98e79a_bb08_5d09_91de_df0dd3fae46c);
@@ -789,6 +784,11 @@ pub struct IHandPose_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHeadPose(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHeadPose {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHeadPose {
     type Vtable = IHeadPose_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x7f5ac5a5_49db_379f_9429_32a2faf34fa6);
@@ -836,11 +836,11 @@ impl ::core::fmt::Debug for JointPose {
 #[cfg(feature = "Foundation_Numerics")]
 unsafe impl ::windows::core::Abi for JointPose {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Foundation_Numerics")]
 unsafe impl ::windows::core::RuntimeType for JointPose {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"struct(Windows.Perception.People.JointPose;struct(Windows.Foundation.Numerics.Quaternion;f4;f4;f4;f4);struct(Windows.Foundation.Numerics.Vector3;f4;f4;f4);f4;enum(Windows.Perception.People.JointPoseAccuracy;i4))");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -880,6 +880,7 @@ impl ::core::default::Default for JointPoseAccuracy {
 }
 unsafe impl ::windows::core::Abi for JointPoseAccuracy {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for JointPoseAccuracy {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -888,7 +889,6 @@ impl ::core::fmt::Debug for JointPoseAccuracy {
 }
 unsafe impl ::windows::core::RuntimeType for JointPoseAccuracy {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Perception.People.JointPoseAccuracy;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }

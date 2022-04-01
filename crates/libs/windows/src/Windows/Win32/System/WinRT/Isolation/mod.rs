@@ -2,6 +2,11 @@
 #[doc = "*Required features: `\"Win32_System_WinRT_Isolation\"`*"]
 #[repr(transparent)]
 pub struct IIsolatedEnvironmentInterop(::windows::core::IUnknown);
+impl ::core::clone::Clone for IIsolatedEnvironmentInterop {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IIsolatedEnvironmentInterop {
     #[doc = "*Required features: `\"Win32_System_WinRT_Isolation\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -28,11 +33,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IIsolated
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IIsolatedEnvironmentInterop {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IIsolatedEnvironmentInterop {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IIsolatedEnvironmentInterop {

@@ -104,6 +104,7 @@ impl ::core::default::Default for BGTYPE {
 }
 unsafe impl ::windows::core::Abi for BGTYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for BGTYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -133,6 +134,7 @@ impl ::core::default::Default for BORDERTYPE {
 }
 unsafe impl ::windows::core::Abi for BORDERTYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for BORDERTYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -160,6 +162,7 @@ impl ::core::fmt::Debug for BP_ANIMATIONPARAMS {
 }
 unsafe impl ::windows::core::Abi for BP_ANIMATIONPARAMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for BP_ANIMATIONPARAMS {
     fn eq(&self, other: &Self) -> bool {
@@ -197,6 +200,7 @@ impl ::core::default::Default for BP_ANIMATIONSTYLE {
 }
 unsafe impl ::windows::core::Abi for BP_ANIMATIONSTYLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for BP_ANIMATIONSTYLE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -228,6 +232,7 @@ impl ::core::default::Default for BP_BUFFERFORMAT {
 }
 unsafe impl ::windows::core::Abi for BP_BUFFERFORMAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for BP_BUFFERFORMAT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -260,6 +265,7 @@ impl ::core::fmt::Debug for BP_PAINTPARAMS {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
 unsafe impl ::windows::core::Abi for BP_PAINTPARAMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
 impl ::core::cmp::PartialEq for BP_PAINTPARAMS {
@@ -298,6 +304,7 @@ impl ::core::default::Default for BP_PAINTPARAMS_FLAGS {
 }
 unsafe impl ::windows::core::Abi for BP_PAINTPARAMS_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for BP_PAINTPARAMS_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -387,6 +394,7 @@ impl ::core::fmt::Debug for BUTTON_IMAGELIST {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for BUTTON_IMAGELIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for BUTTON_IMAGELIST {
@@ -429,6 +437,7 @@ impl ::core::default::Default for BUTTON_IMAGELIST_ALIGN {
 }
 unsafe impl ::windows::core::Abi for BUTTON_IMAGELIST_ALIGN {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for BUTTON_IMAGELIST_ALIGN {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -461,6 +470,7 @@ impl ::core::fmt::Debug for BUTTON_SPLITINFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for BUTTON_SPLITINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for BUTTON_SPLITINFO {
@@ -744,6 +754,7 @@ impl ::core::fmt::Debug for CCINFOA {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
 unsafe impl ::windows::core::Abi for CCINFOA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
 impl ::core::cmp::PartialEq for CCINFOA {
@@ -812,6 +823,7 @@ impl ::core::fmt::Debug for CCINFOW {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
 unsafe impl ::windows::core::Abi for CCINFOW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
 impl ::core::cmp::PartialEq for CCINFOW {
@@ -880,6 +892,7 @@ impl ::core::fmt::Debug for CCSTYLEA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for CCSTYLEA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for CCSTYLEA {
@@ -915,6 +928,7 @@ impl ::core::fmt::Debug for CCSTYLEFLAGA {
 }
 unsafe impl ::windows::core::Abi for CCSTYLEFLAGA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CCSTYLEFLAGA {
     fn eq(&self, other: &Self) -> bool {
@@ -947,6 +961,7 @@ impl ::core::fmt::Debug for CCSTYLEFLAGW {
 }
 unsafe impl ::windows::core::Abi for CCSTYLEFLAGW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CCSTYLEFLAGW {
     fn eq(&self, other: &Self) -> bool {
@@ -981,6 +996,7 @@ impl ::core::fmt::Debug for CCSTYLEW {
 }
 unsafe impl ::windows::core::Abi for CCSTYLEW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CCSTYLEW {
     fn eq(&self, other: &Self) -> bool {
@@ -1076,6 +1092,7 @@ impl ::core::default::Default for CLOCKPARTS {
 }
 unsafe impl ::windows::core::Abi for CLOCKPARTS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLOCKPARTS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1105,6 +1122,7 @@ impl ::core::default::Default for CLOCKSTATES {
 }
 unsafe impl ::windows::core::Abi for CLOCKSTATES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLOCKSTATES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1138,6 +1156,7 @@ impl ::core::fmt::Debug for COLORMAP {
 }
 unsafe impl ::windows::core::Abi for COLORMAP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for COLORMAP {
     fn eq(&self, other: &Self) -> bool {
@@ -1172,6 +1191,7 @@ impl ::core::fmt::Debug for COLORSCHEME {
 }
 unsafe impl ::windows::core::Abi for COLORSCHEME {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for COLORSCHEME {
     fn eq(&self, other: &Self) -> bool {
@@ -1215,6 +1235,7 @@ impl ::core::fmt::Debug for COMBOBOXEXITEMA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for COMBOBOXEXITEMA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for COMBOBOXEXITEMA {
@@ -1261,6 +1282,7 @@ impl ::core::fmt::Debug for COMBOBOXEXITEMW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for COMBOBOXEXITEMW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for COMBOBOXEXITEMW {
@@ -1305,6 +1327,7 @@ impl ::core::fmt::Debug for COMBOBOXINFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for COMBOBOXINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for COMBOBOXINFO {
@@ -1347,6 +1370,7 @@ impl ::core::default::Default for COMBOBOXINFO_BUTTON_STATE {
 }
 unsafe impl ::windows::core::Abi for COMBOBOXINFO_BUTTON_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for COMBOBOXINFO_BUTTON_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1384,6 +1408,7 @@ impl ::core::default::Default for COMBOBOX_EX_ITEM_FLAGS {
 }
 unsafe impl ::windows::core::Abi for COMBOBOX_EX_ITEM_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for COMBOBOX_EX_ITEM_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1450,6 +1475,7 @@ impl ::core::fmt::Debug for COMPAREITEMSTRUCT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for COMPAREITEMSTRUCT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for COMPAREITEMSTRUCT {
@@ -1488,6 +1514,7 @@ impl ::core::default::Default for CONTENTALIGNMENT {
 }
 unsafe impl ::windows::core::Abi for CONTENTALIGNMENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CONTENTALIGNMENT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1690,6 +1717,7 @@ impl ::core::fmt::Debug for DATETIMEPICKERINFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DATETIMEPICKERINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DATETIMEPICKERINFO {
@@ -1742,6 +1770,7 @@ impl ::core::fmt::Debug for DELETEITEMSTRUCT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DELETEITEMSTRUCT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DELETEITEMSTRUCT {
@@ -1780,6 +1809,7 @@ impl ::core::default::Default for DLG_BUTTON_CHECK_STATE {
 }
 unsafe impl ::windows::core::Abi for DLG_BUTTON_CHECK_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DLG_BUTTON_CHECK_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1821,6 +1851,7 @@ impl ::core::default::Default for DLG_DIR_LIST_FILE_TYPE {
 }
 unsafe impl ::windows::core::Abi for DLG_DIR_LIST_FILE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DLG_DIR_LIST_FILE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1886,6 +1917,7 @@ impl ::core::default::Default for DPAMM_MESSAGE {
 }
 unsafe impl ::windows::core::Abi for DPAMM_MESSAGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DPAMM_MESSAGE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1919,6 +1951,7 @@ impl ::core::fmt::Debug for DPASTREAMINFO {
 }
 unsafe impl ::windows::core::Abi for DPASTREAMINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DPASTREAMINFO {
     fn eq(&self, other: &Self) -> bool {
@@ -2242,6 +2275,7 @@ impl ::core::fmt::Debug for DRAGLISTINFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DRAGLISTINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DRAGLISTINFO {
@@ -2282,6 +2316,7 @@ impl ::core::default::Default for DRAGLISTINFO_NOTIFICATION_FLAGS {
 }
 unsafe impl ::windows::core::Abi for DRAGLISTINFO_NOTIFICATION_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DRAGLISTINFO_NOTIFICATION_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2321,6 +2356,7 @@ impl ::core::fmt::Debug for DRAWITEMSTRUCT {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
 unsafe impl ::windows::core::Abi for DRAWITEMSTRUCT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
 impl ::core::cmp::PartialEq for DRAWITEMSTRUCT {
@@ -2367,6 +2403,7 @@ impl ::core::default::Default for DRAWITEMSTRUCT_CTL_TYPE {
 }
 unsafe impl ::windows::core::Abi for DRAWITEMSTRUCT_CTL_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DRAWITEMSTRUCT_CTL_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2396,6 +2433,7 @@ impl ::core::default::Default for DRAW_THEME_PARENT_BACKGROUND_FLAGS {
 }
 unsafe impl ::windows::core::Abi for DRAW_THEME_PARENT_BACKGROUND_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DRAW_THEME_PARENT_BACKGROUND_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2647,6 +2685,7 @@ impl ::core::fmt::Debug for DTBGOPTS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DTBGOPTS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DTBGOPTS {
@@ -2781,6 +2820,7 @@ impl ::core::fmt::Debug for DTTOPTS {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
 unsafe impl ::windows::core::Abi for DTTOPTS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
 impl ::core::cmp::PartialEq for DTTOPTS {
@@ -3160,6 +3200,7 @@ impl ::core::default::Default for EC_ENDOFLINE {
 }
 unsafe impl ::windows::core::Abi for EC_ENDOFLINE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EC_ENDOFLINE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3187,6 +3228,7 @@ impl ::core::default::Default for EC_SEARCHWEB_ENTRYPOINT {
 }
 unsafe impl ::windows::core::Abi for EC_SEARCHWEB_ENTRYPOINT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EC_SEARCHWEB_ENTRYPOINT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3214,6 +3256,7 @@ impl ::core::fmt::Debug for EDITBALLOONTIP {
 }
 unsafe impl ::windows::core::Abi for EDITBALLOONTIP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EDITBALLOONTIP {
     fn eq(&self, other: &Self) -> bool {
@@ -3257,6 +3300,7 @@ impl ::core::default::Default for EDITBALLOONTIP_ICON {
 }
 unsafe impl ::windows::core::Abi for EDITBALLOONTIP_ICON {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EDITBALLOONTIP_ICON {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3286,6 +3330,7 @@ impl ::core::default::Default for EMPTYMARKUPPARTS {
 }
 unsafe impl ::windows::core::Abi for EMPTYMARKUPPARTS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EMPTYMARKUPPARTS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3447,6 +3492,7 @@ impl ::core::default::Default for ENABLE_SCROLL_BAR_ARROWS {
 }
 unsafe impl ::windows::core::Abi for ENABLE_SCROLL_BAR_ARROWS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ENABLE_SCROLL_BAR_ARROWS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3630,6 +3676,7 @@ impl ::core::default::Default for FEEDBACK_TYPE {
 }
 unsafe impl ::windows::core::Abi for FEEDBACK_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FEEDBACK_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3665,6 +3712,7 @@ impl ::core::default::Default for FILLTYPE {
 }
 unsafe impl ::windows::core::Abi for FILLTYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FILLTYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3868,6 +3916,7 @@ impl ::core::default::Default for GET_THEME_BITMAP_FLAGS {
 }
 unsafe impl ::windows::core::Abi for GET_THEME_BITMAP_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GET_THEME_BITMAP_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3897,6 +3946,7 @@ impl ::core::default::Default for GLYPHFONTSIZINGTYPE {
 }
 unsafe impl ::windows::core::Abi for GLYPHFONTSIZINGTYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GLYPHFONTSIZINGTYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3926,6 +3976,7 @@ impl ::core::default::Default for GLYPHTYPE {
 }
 unsafe impl ::windows::core::Abi for GLYPHTYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GLYPHTYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3965,6 +4016,7 @@ impl ::core::default::Default for GRIDCELLBACKGROUNDSTATES {
 }
 unsafe impl ::windows::core::Abi for GRIDCELLBACKGROUNDSTATES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GRIDCELLBACKGROUNDSTATES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4002,6 +4054,7 @@ impl ::core::default::Default for GRIDCELLSTATES {
 }
 unsafe impl ::windows::core::Abi for GRIDCELLSTATES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GRIDCELLSTATES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4035,6 +4088,7 @@ impl ::core::default::Default for GRIDCELLUPPERSTATES {
 }
 unsafe impl ::windows::core::Abi for GRIDCELLUPPERSTATES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GRIDCELLUPPERSTATES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4742,6 +4796,7 @@ impl ::core::default::Default for HALIGN {
 }
 unsafe impl ::windows::core::Abi for HALIGN {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HALIGN {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4813,6 +4868,7 @@ impl ::core::fmt::Debug for HDHITTESTINFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for HDHITTESTINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for HDHITTESTINFO {
@@ -4864,6 +4920,7 @@ impl ::core::fmt::Debug for HDITEMA {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
 unsafe impl ::windows::core::Abi for HDITEMA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
 impl ::core::cmp::PartialEq for HDITEMA {
@@ -4913,6 +4970,7 @@ impl ::core::fmt::Debug for HDITEMW {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
 unsafe impl ::windows::core::Abi for HDITEMW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
 impl ::core::cmp::PartialEq for HDITEMW {
@@ -4967,6 +5025,7 @@ impl ::core::default::Default for HDI_MASK {
 }
 unsafe impl ::windows::core::Abi for HDI_MASK {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HDI_MASK {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5025,6 +5084,7 @@ impl ::core::fmt::Debug for HDLAYOUT {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_UI_WindowsAndMessaging"))]
 unsafe impl ::windows::core::Abi for HDLAYOUT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_UI_WindowsAndMessaging"))]
 impl ::core::cmp::PartialEq for HDLAYOUT {
@@ -5132,6 +5192,7 @@ impl ::core::fmt::Debug for HDPA {
 }
 unsafe impl ::windows::core::Abi for HDPA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[repr(transparent)]
 #[derive(:: core :: cmp :: PartialEq, :: core :: cmp :: Eq)]
@@ -5159,6 +5220,7 @@ impl ::core::fmt::Debug for HDSA {
 }
 unsafe impl ::windows::core::Abi for HDSA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[doc = "*Required features: `\"Win32_UI_Controls\"`*"]
 pub const HDSIL_NORMAL: u32 = 0u32;
@@ -5205,6 +5267,7 @@ impl ::core::fmt::Debug for HD_TEXTFILTERA {
 }
 unsafe impl ::windows::core::Abi for HD_TEXTFILTERA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HD_TEXTFILTERA {
     fn eq(&self, other: &Self) -> bool {
@@ -5236,6 +5299,7 @@ impl ::core::fmt::Debug for HD_TEXTFILTERW {
 }
 unsafe impl ::windows::core::Abi for HD_TEXTFILTERW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HD_TEXTFILTERW {
     fn eq(&self, other: &Self) -> bool {
@@ -5271,6 +5335,7 @@ impl ::core::default::Default for HEADER_CONTROL_NOTIFICATION_BUTTON {
 }
 unsafe impl ::windows::core::Abi for HEADER_CONTROL_NOTIFICATION_BUTTON {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HEADER_CONTROL_NOTIFICATION_BUTTON {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5329,6 +5394,7 @@ impl ::core::fmt::Debug for HIMAGELIST {
 }
 unsafe impl ::windows::core::Abi for HIMAGELIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[doc = "*Required features: `\"Win32_UI_Controls\"`*"]
 #[inline]
@@ -5418,6 +5484,7 @@ impl ::core::fmt::Debug for HPROPSHEETPAGE {
 }
 unsafe impl ::windows::core::Abi for HPROPSHEETPAGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[repr(transparent)]
 #[derive(:: core :: cmp :: PartialEq, :: core :: cmp :: Eq)]
@@ -5445,6 +5512,7 @@ impl ::core::fmt::Debug for HSYNTHETICPOINTERDEVICE {
 }
 unsafe impl ::windows::core::Abi for HSYNTHETICPOINTERDEVICE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[repr(transparent)]
 #[derive(:: core :: cmp :: PartialEq, :: core :: cmp :: Eq)]
@@ -5467,6 +5535,7 @@ impl ::core::fmt::Debug for HTREEITEM {
 }
 unsafe impl ::windows::core::Abi for HTREEITEM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[doc = "*Required features: `\"Win32_UI_Controls\"`*"]
 pub const HTTB_BACKGROUNDSEG: u32 = 0u32;
@@ -5507,6 +5576,7 @@ impl ::core::default::Default for HYPERLINKSTATES {
 }
 unsafe impl ::windows::core::Abi for HYPERLINKSTATES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HYPERLINKSTATES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5556,6 +5626,7 @@ impl ::core::default::Default for ICONEFFECT {
 }
 unsafe impl ::windows::core::Abi for ICONEFFECT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ICONEFFECT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5589,6 +5660,11 @@ pub const ID_PSRESTARTWINDOWS: u32 = 2u32;
 #[doc = "*Required features: `\"Win32_UI_Controls\"`*"]
 #[repr(transparent)]
 pub struct IImageList(::windows::core::IUnknown);
+impl ::core::clone::Clone for IImageList {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IImageList {
     #[doc = "*Required features: `\"Win32_UI_Controls\"`, `\"Win32_Graphics_Gdi\"`*"]
     #[cfg(feature = "Win32_Graphics_Gdi")]
@@ -5750,11 +5826,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IImag
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IImageList {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IImageList {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5843,6 +5914,11 @@ pub struct IImageList_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Controls\"`*"]
 #[repr(transparent)]
 pub struct IImageList2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IImageList2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IImageList2 {
     #[doc = "*Required features: `\"Win32_UI_Controls\"`, `\"Win32_Graphics_Gdi\"`*"]
     #[cfg(feature = "Win32_Graphics_Gdi")]
@@ -6074,11 +6150,6 @@ impl<'a> ::windows::core::IntoParam<'a, IImageList> for &'a IImageList2 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IImageList2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IImageList2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6218,6 +6289,7 @@ impl ::core::fmt::Debug for IMAGEINFO {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
 unsafe impl ::windows::core::Abi for IMAGEINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
 impl ::core::cmp::PartialEq for IMAGEINFO {
@@ -6254,6 +6326,7 @@ impl ::core::default::Default for IMAGELAYOUT {
 }
 unsafe impl ::windows::core::Abi for IMAGELAYOUT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for IMAGELAYOUT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6317,6 +6390,7 @@ impl ::core::fmt::Debug for IMAGELISTDRAWPARAMS {
 #[cfg(feature = "Win32_Graphics_Gdi")]
 unsafe impl ::windows::core::Abi for IMAGELISTDRAWPARAMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Gdi")]
 impl ::core::cmp::PartialEq for IMAGELISTDRAWPARAMS {
@@ -6353,6 +6427,7 @@ impl ::core::fmt::Debug for IMAGELISTSTATS {
 }
 unsafe impl ::windows::core::Abi for IMAGELISTSTATS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IMAGELISTSTATS {
     fn eq(&self, other: &Self) -> bool {
@@ -6408,6 +6483,7 @@ impl ::core::default::Default for IMAGELIST_CREATION_FLAGS {
 }
 unsafe impl ::windows::core::Abi for IMAGELIST_CREATION_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for IMAGELIST_CREATION_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6465,6 +6541,7 @@ impl ::core::default::Default for IMAGESELECTTYPE {
 }
 unsafe impl ::windows::core::Abi for IMAGESELECTTYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for IMAGESELECTTYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6492,6 +6569,7 @@ impl ::core::default::Default for IMAGE_LIST_COPY_FLAGS {
 }
 unsafe impl ::windows::core::Abi for IMAGE_LIST_COPY_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for IMAGE_LIST_COPY_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6527,6 +6605,7 @@ impl ::core::default::Default for IMAGE_LIST_DRAW_STYLE {
 }
 unsafe impl ::windows::core::Abi for IMAGE_LIST_DRAW_STYLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for IMAGE_LIST_DRAW_STYLE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6582,6 +6661,7 @@ impl ::core::default::Default for IMAGE_LIST_ITEM_FLAGS {
 }
 unsafe impl ::windows::core::Abi for IMAGE_LIST_ITEM_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for IMAGE_LIST_ITEM_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6609,6 +6689,7 @@ impl ::core::fmt::Debug for INITCOMMONCONTROLSEX {
 }
 unsafe impl ::windows::core::Abi for INITCOMMONCONTROLSEX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for INITCOMMONCONTROLSEX {
     fn eq(&self, other: &Self) -> bool {
@@ -6672,6 +6753,7 @@ impl ::core::default::Default for INITCOMMONCONTROLSEX_ICC {
 }
 unsafe impl ::windows::core::Abi for INITCOMMONCONTROLSEX_ICC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for INITCOMMONCONTROLSEX_ICC {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6725,6 +6807,7 @@ impl ::core::fmt::Debug for INTLIST {
 }
 unsafe impl ::windows::core::Abi for INTLIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for INTLIST {
     fn eq(&self, other: &Self) -> bool {
@@ -7522,6 +7605,7 @@ impl ::core::fmt::Debug for LHITTESTINFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for LHITTESTINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for LHITTESTINFO {
@@ -7564,6 +7648,7 @@ impl ::core::default::Default for LINKPARTS {
 }
 unsafe impl ::windows::core::Abi for LINKPARTS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for LINKPARTS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7603,6 +7688,7 @@ impl ::core::fmt::Debug for LITEM {
 }
 unsafe impl ::windows::core::Abi for LITEM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for LITEM {
     fn eq(&self, other: &Self) -> bool {
@@ -7648,6 +7734,7 @@ impl ::core::default::Default for LOGOFFBUTTONSSTATES {
 }
 unsafe impl ::windows::core::Abi for LOGOFFBUTTONSSTATES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for LOGOFFBUTTONSSTATES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7740,6 +7827,7 @@ impl ::core::fmt::Debug for LVBKIMAGEA {
 #[cfg(feature = "Win32_Graphics_Gdi")]
 unsafe impl ::windows::core::Abi for LVBKIMAGEA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Gdi")]
 impl ::core::cmp::PartialEq for LVBKIMAGEA {
@@ -7783,6 +7871,7 @@ impl ::core::fmt::Debug for LVBKIMAGEW {
 #[cfg(feature = "Win32_Graphics_Gdi")]
 unsafe impl ::windows::core::Abi for LVBKIMAGEW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Gdi")]
 impl ::core::cmp::PartialEq for LVBKIMAGEW {
@@ -7838,6 +7927,7 @@ impl ::core::fmt::Debug for LVCOLUMNA {
 }
 unsafe impl ::windows::core::Abi for LVCOLUMNA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for LVCOLUMNA {
     fn eq(&self, other: &Self) -> bool {
@@ -7878,6 +7968,7 @@ impl ::core::fmt::Debug for LVCOLUMNW {
 }
 unsafe impl ::windows::core::Abi for LVCOLUMNW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for LVCOLUMNW {
     fn eq(&self, other: &Self) -> bool {
@@ -7929,6 +8020,7 @@ impl ::core::default::Default for LVCOLUMNW_FORMAT {
 }
 unsafe impl ::windows::core::Abi for LVCOLUMNW_FORMAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for LVCOLUMNW_FORMAT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7998,6 +8090,7 @@ impl ::core::default::Default for LVCOLUMNW_MASK {
 }
 unsafe impl ::windows::core::Abi for LVCOLUMNW_MASK {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for LVCOLUMNW_MASK {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8061,6 +8154,7 @@ impl ::core::fmt::Debug for LVFINDINFOA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for LVFINDINFOA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for LVFINDINFOA {
@@ -8103,6 +8197,7 @@ impl ::core::fmt::Debug for LVFINDINFOW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for LVFINDINFOW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for LVFINDINFOW {
@@ -8147,6 +8242,7 @@ impl ::core::default::Default for LVFINDINFOW_FLAGS {
 }
 unsafe impl ::windows::core::Abi for LVFINDINFOW_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for LVFINDINFOW_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8204,6 +8300,7 @@ impl ::core::fmt::Debug for LVFOOTERINFO {
 }
 unsafe impl ::windows::core::Abi for LVFOOTERINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for LVFOOTERINFO {
     fn eq(&self, other: &Self) -> bool {
@@ -8239,6 +8336,7 @@ impl ::core::fmt::Debug for LVFOOTERITEM {
 }
 unsafe impl ::windows::core::Abi for LVFOOTERITEM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for LVFOOTERITEM {
     fn eq(&self, other: &Self) -> bool {
@@ -8272,6 +8370,7 @@ impl ::core::default::Default for LVFOOTERITEM_MASK {
 }
 unsafe impl ::windows::core::Abi for LVFOOTERITEM_MASK {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for LVFOOTERITEM_MASK {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8390,6 +8489,7 @@ impl ::core::fmt::Debug for LVGROUP {
 }
 unsafe impl ::windows::core::Abi for LVGROUP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for LVGROUP {
     fn eq(&self, other: &Self) -> bool {
@@ -8431,6 +8531,7 @@ impl ::core::fmt::Debug for LVGROUPMETRICS {
 }
 unsafe impl ::windows::core::Abi for LVGROUPMETRICS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for LVGROUPMETRICS {
     fn eq(&self, other: &Self) -> bool {
@@ -8468,6 +8569,7 @@ impl ::core::default::Default for LVGROUP_MASK {
 }
 unsafe impl ::windows::core::Abi for LVGROUP_MASK {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for LVGROUP_MASK {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8547,6 +8649,7 @@ impl ::core::fmt::Debug for LVHITTESTINFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for LVHITTESTINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for LVHITTESTINFO {
@@ -8613,6 +8716,7 @@ impl ::core::default::Default for LVHITTESTINFO_FLAGS {
 }
 unsafe impl ::windows::core::Abi for LVHITTESTINFO_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for LVHITTESTINFO_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8689,6 +8793,7 @@ impl ::core::fmt::Debug for LVINSERTGROUPSORTED {
 }
 unsafe impl ::windows::core::Abi for LVINSERTGROUPSORTED {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for LVINSERTGROUPSORTED {
     fn eq(&self, other: &Self) -> bool {
@@ -8722,6 +8827,7 @@ impl ::core::fmt::Debug for LVINSERTMARK {
 }
 unsafe impl ::windows::core::Abi for LVINSERTMARK {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for LVINSERTMARK {
     fn eq(&self, other: &Self) -> bool {
@@ -8811,6 +8917,7 @@ impl ::core::fmt::Debug for LVITEMA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for LVITEMA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for LVITEMA {
@@ -8847,6 +8954,7 @@ impl ::core::default::Default for LVITEMA_GROUP_ID {
 }
 unsafe impl ::windows::core::Abi for LVITEMA_GROUP_ID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for LVITEMA_GROUP_ID {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8872,6 +8980,7 @@ impl ::core::fmt::Debug for LVITEMINDEX {
 }
 unsafe impl ::windows::core::Abi for LVITEMINDEX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for LVITEMINDEX {
     fn eq(&self, other: &Self) -> bool {
@@ -8937,6 +9046,7 @@ impl ::core::fmt::Debug for LVITEMW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for LVITEMW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for LVITEMW {
@@ -9326,6 +9436,7 @@ impl ::core::fmt::Debug for LVSETINFOTIP {
 }
 unsafe impl ::windows::core::Abi for LVSETINFOTIP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for LVSETINFOTIP {
     fn eq(&self, other: &Self) -> bool {
@@ -9476,6 +9587,7 @@ impl ::core::fmt::Debug for LVTILEINFO {
 }
 unsafe impl ::windows::core::Abi for LVTILEINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for LVTILEINFO {
     fn eq(&self, other: &Self) -> bool {
@@ -9516,6 +9628,7 @@ impl ::core::fmt::Debug for LVTILEVIEWINFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for LVTILEVIEWINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for LVTILEVIEWINFO {
@@ -9550,6 +9663,7 @@ impl ::core::default::Default for LVTILEVIEWINFO_FLAGS {
 }
 unsafe impl ::windows::core::Abi for LVTILEVIEWINFO_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for LVTILEVIEWINFO_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9649,6 +9763,7 @@ impl ::core::fmt::Debug for MARGINS {
 }
 unsafe impl ::windows::core::Abi for MARGINS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MARGINS {
     fn eq(&self, other: &Self) -> bool {
@@ -9682,6 +9797,7 @@ impl ::core::default::Default for MARKUPTEXTSTATES {
 }
 unsafe impl ::windows::core::Abi for MARKUPTEXTSTATES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MARKUPTEXTSTATES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9732,6 +9848,7 @@ impl ::core::fmt::Debug for MCGRIDINFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MCGRIDINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MCGRIDINFO {
@@ -9770,6 +9887,7 @@ impl ::core::default::Default for MCGRIDINFO_FLAGS {
 }
 unsafe impl ::windows::core::Abi for MCGRIDINFO_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MCGRIDINFO_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9839,6 +9957,7 @@ impl ::core::default::Default for MCGRIDINFO_PART {
 }
 unsafe impl ::windows::core::Abi for MCGRIDINFO_PART {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MCGRIDINFO_PART {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9875,6 +9994,7 @@ impl ::core::fmt::Debug for MCHITTESTINFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MCHITTESTINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MCHITTESTINFO {
@@ -10035,6 +10155,7 @@ impl ::core::fmt::Debug for MEASUREITEMSTRUCT {
 }
 unsafe impl ::windows::core::Abi for MEASUREITEMSTRUCT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MEASUREITEMSTRUCT {
     fn eq(&self, other: &Self) -> bool {
@@ -10068,6 +10189,7 @@ impl ::core::default::Default for MENUBANDPARTS {
 }
 unsafe impl ::windows::core::Abi for MENUBANDPARTS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MENUBANDPARTS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10103,6 +10225,7 @@ impl ::core::default::Default for MENUBANDSTATES {
 }
 unsafe impl ::windows::core::Abi for MENUBANDSTATES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MENUBANDSTATES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10148,6 +10271,7 @@ impl ::core::default::Default for MONTHCALPARTS {
 }
 unsafe impl ::windows::core::Abi for MONTHCALPARTS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MONTHCALPARTS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10183,6 +10307,7 @@ impl ::core::default::Default for MOREPROGRAMSARROWBACKSTATES {
 }
 unsafe impl ::windows::core::Abi for MOREPROGRAMSARROWBACKSTATES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MOREPROGRAMSARROWBACKSTATES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10212,6 +10337,7 @@ impl ::core::default::Default for MOREPROGRAMSARROWSTATES {
 }
 unsafe impl ::windows::core::Abi for MOREPROGRAMSARROWSTATES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MOREPROGRAMSARROWSTATES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10245,6 +10371,7 @@ impl ::core::default::Default for MOREPROGRAMSTABSTATES {
 }
 unsafe impl ::windows::core::Abi for MOREPROGRAMSTABSTATES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MOREPROGRAMSTABSTATES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10316,6 +10443,7 @@ impl ::core::default::Default for NAVNEXTSTATES {
 }
 unsafe impl ::windows::core::Abi for NAVNEXTSTATES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NAVNEXTSTATES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10347,6 +10475,7 @@ impl ::core::default::Default for NAVPREVSTATES {
 }
 unsafe impl ::windows::core::Abi for NAVPREVSTATES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NAVPREVSTATES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10397,6 +10526,7 @@ impl ::core::fmt::Debug for NMBCDROPDOWN {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NMBCDROPDOWN {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NMBCDROPDOWN {
@@ -10436,6 +10566,7 @@ impl ::core::fmt::Debug for NMBCHOTITEM {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NMBCHOTITEM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NMBCHOTITEM {
@@ -10476,6 +10607,7 @@ impl ::core::fmt::Debug for NMCBEDRAGBEGINA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NMCBEDRAGBEGINA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NMCBEDRAGBEGINA {
@@ -10516,6 +10648,7 @@ impl ::core::fmt::Debug for NMCBEDRAGBEGINW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NMCBEDRAGBEGINW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NMCBEDRAGBEGINW {
@@ -10558,6 +10691,7 @@ impl ::core::fmt::Debug for NMCBEENDEDITA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NMCBEENDEDITA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NMCBEENDEDITA {
@@ -10600,6 +10734,7 @@ impl ::core::fmt::Debug for NMCBEENDEDITW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NMCBEENDEDITW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NMCBEENDEDITW {
@@ -10641,6 +10776,7 @@ impl ::core::fmt::Debug for NMCHAR {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NMCHAR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NMCHAR {
@@ -10680,6 +10816,7 @@ impl ::core::fmt::Debug for NMCOMBOBOXEXA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NMCOMBOBOXEXA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NMCOMBOBOXEXA {
@@ -10719,6 +10856,7 @@ impl ::core::fmt::Debug for NMCOMBOBOXEXW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NMCOMBOBOXEXW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NMCOMBOBOXEXW {
@@ -10763,6 +10901,7 @@ impl ::core::fmt::Debug for NMCUSTOMDRAW {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
 unsafe impl ::windows::core::Abi for NMCUSTOMDRAW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
 impl ::core::cmp::PartialEq for NMCUSTOMDRAW {
@@ -10811,6 +10950,7 @@ impl ::core::default::Default for NMCUSTOMDRAW_DRAW_STAGE {
 }
 unsafe impl ::windows::core::Abi for NMCUSTOMDRAW_DRAW_STAGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NMCUSTOMDRAW_DRAW_STAGE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10843,6 +10983,7 @@ impl ::core::fmt::Debug for NMCUSTOMSPLITRECTINFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NMCUSTOMSPLITRECTINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NMCUSTOMSPLITRECTINFO {
@@ -10887,6 +11028,7 @@ impl ::core::fmt::Debug for NMCUSTOMTEXT {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
 unsafe impl ::windows::core::Abi for NMCUSTOMTEXT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
 impl ::core::cmp::PartialEq for NMCUSTOMTEXT {
@@ -10927,6 +11069,7 @@ impl ::core::fmt::Debug for NMDATETIMECHANGE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NMDATETIMECHANGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NMDATETIMECHANGE {
@@ -10969,6 +11112,7 @@ impl ::core::fmt::Debug for NMDATETIMEFORMATA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NMDATETIMEFORMATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NMDATETIMEFORMATA {
@@ -11009,6 +11153,7 @@ impl ::core::fmt::Debug for NMDATETIMEFORMATQUERYA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NMDATETIMEFORMATQUERYA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NMDATETIMEFORMATQUERYA {
@@ -11049,6 +11194,7 @@ impl ::core::fmt::Debug for NMDATETIMEFORMATQUERYW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NMDATETIMEFORMATQUERYW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NMDATETIMEFORMATQUERYW {
@@ -11091,6 +11237,7 @@ impl ::core::fmt::Debug for NMDATETIMEFORMATW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NMDATETIMEFORMATW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NMDATETIMEFORMATW {
@@ -11132,6 +11279,7 @@ impl ::core::fmt::Debug for NMDATETIMESTRINGA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NMDATETIMESTRINGA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NMDATETIMESTRINGA {
@@ -11173,6 +11321,7 @@ impl ::core::fmt::Debug for NMDATETIMESTRINGW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NMDATETIMESTRINGW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NMDATETIMESTRINGW {
@@ -11214,6 +11363,7 @@ impl ::core::fmt::Debug for NMDATETIMEWMKEYDOWNA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NMDATETIMEWMKEYDOWNA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NMDATETIMEWMKEYDOWNA {
@@ -11255,6 +11405,7 @@ impl ::core::fmt::Debug for NMDATETIMEWMKEYDOWNW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NMDATETIMEWMKEYDOWNW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NMDATETIMEWMKEYDOWNW {
@@ -11296,6 +11447,7 @@ impl ::core::fmt::Debug for NMDAYSTATE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NMDAYSTATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NMDAYSTATE {
@@ -11340,6 +11492,7 @@ impl ::core::fmt::Debug for NMHDDISPINFOA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NMHDDISPINFOA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NMHDDISPINFOA {
@@ -11384,6 +11537,7 @@ impl ::core::fmt::Debug for NMHDDISPINFOW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NMHDDISPINFOW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NMHDDISPINFOW {
@@ -11424,6 +11578,7 @@ impl ::core::fmt::Debug for NMHDFILTERBTNCLICK {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NMHDFILTERBTNCLICK {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NMHDFILTERBTNCLICK {
@@ -11464,6 +11619,7 @@ impl ::core::fmt::Debug for NMHDR {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NMHDR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NMHDR {
@@ -11505,6 +11661,7 @@ impl ::core::fmt::Debug for NMHEADERA {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
 unsafe impl ::windows::core::Abi for NMHEADERA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
 impl ::core::cmp::PartialEq for NMHEADERA {
@@ -11546,6 +11703,7 @@ impl ::core::fmt::Debug for NMHEADERW {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
 unsafe impl ::windows::core::Abi for NMHEADERW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
 impl ::core::cmp::PartialEq for NMHEADERW {
@@ -11586,6 +11744,7 @@ impl ::core::fmt::Debug for NMIPADDRESS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NMIPADDRESS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NMIPADDRESS {
@@ -11632,6 +11791,7 @@ impl ::core::fmt::Debug for NMITEMACTIVATE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NMITEMACTIVATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NMITEMACTIVATE {
@@ -11672,6 +11832,7 @@ impl ::core::fmt::Debug for NMKEY {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NMKEY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NMKEY {
@@ -11711,6 +11872,7 @@ impl ::core::fmt::Debug for NMLINK {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NMLINK {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NMLINK {
@@ -11756,6 +11918,7 @@ impl ::core::fmt::Debug for NMLISTVIEW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NMLISTVIEW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NMLISTVIEW {
@@ -11796,6 +11959,7 @@ impl ::core::fmt::Debug for NMLVCACHEHINT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NMLVCACHEHINT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NMLVCACHEHINT {
@@ -11845,6 +12009,7 @@ impl ::core::fmt::Debug for NMLVCUSTOMDRAW {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
 unsafe impl ::windows::core::Abi for NMLVCUSTOMDRAW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
 impl ::core::cmp::PartialEq for NMLVCUSTOMDRAW {
@@ -11883,6 +12048,7 @@ impl ::core::default::Default for NMLVCUSTOMDRAW_ALIGN {
 }
 unsafe impl ::windows::core::Abi for NMLVCUSTOMDRAW_ALIGN {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NMLVCUSTOMDRAW_ALIGN {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11912,6 +12078,7 @@ impl ::core::default::Default for NMLVCUSTOMDRAW_ITEM_TYPE {
 }
 unsafe impl ::windows::core::Abi for NMLVCUSTOMDRAW_ITEM_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NMLVCUSTOMDRAW_ITEM_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11942,6 +12109,7 @@ impl ::core::fmt::Debug for NMLVDISPINFOA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NMLVDISPINFOA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NMLVDISPINFOA {
@@ -11981,6 +12149,7 @@ impl ::core::fmt::Debug for NMLVDISPINFOW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NMLVDISPINFOW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NMLVDISPINFOW {
@@ -12021,6 +12190,7 @@ impl ::core::fmt::Debug for NMLVEMPTYMARKUP {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NMLVEMPTYMARKUP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NMLVEMPTYMARKUP {
@@ -12055,6 +12225,7 @@ impl ::core::default::Default for NMLVEMPTYMARKUP_FLAGS {
 }
 unsafe impl ::windows::core::Abi for NMLVEMPTYMARKUP_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NMLVEMPTYMARKUP_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12086,6 +12257,7 @@ impl ::core::fmt::Debug for NMLVFINDITEMA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NMLVFINDITEMA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NMLVFINDITEMA {
@@ -12126,6 +12298,7 @@ impl ::core::fmt::Debug for NMLVFINDITEMW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NMLVFINDITEMW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NMLVFINDITEMW {
@@ -12170,6 +12343,7 @@ impl ::core::fmt::Debug for NMLVGETINFOTIPA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NMLVGETINFOTIPA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NMLVGETINFOTIPA {
@@ -12214,6 +12388,7 @@ impl ::core::fmt::Debug for NMLVGETINFOTIPW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NMLVGETINFOTIPW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NMLVGETINFOTIPW {
@@ -12248,6 +12423,7 @@ impl ::core::clone::Clone for NMLVKEYDOWN {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NMLVKEYDOWN {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NMLVKEYDOWN {
@@ -12289,6 +12465,7 @@ impl ::core::fmt::Debug for NMLVLINK {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NMLVLINK {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NMLVLINK {
@@ -12331,6 +12508,7 @@ impl ::core::fmt::Debug for NMLVODSTATECHANGE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NMLVODSTATECHANGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NMLVODSTATECHANGE {
@@ -12371,6 +12549,7 @@ impl ::core::fmt::Debug for NMLVSCROLL {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NMLVSCROLL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NMLVSCROLL {
@@ -12413,6 +12592,7 @@ impl ::core::fmt::Debug for NMMOUSE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NMMOUSE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NMMOUSE {
@@ -12456,6 +12636,7 @@ impl ::core::fmt::Debug for NMOBJECTNOTIFY {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NMOBJECTNOTIFY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NMOBJECTNOTIFY {
@@ -12497,6 +12678,7 @@ impl ::core::fmt::Debug for NMPGCALCSIZE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NMPGCALCSIZE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NMPGCALCSIZE {
@@ -12533,6 +12715,7 @@ impl ::core::default::Default for NMPGCALCSIZE_FLAGS {
 }
 unsafe impl ::windows::core::Abi for NMPGCALCSIZE_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NMPGCALCSIZE_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12565,6 +12748,7 @@ impl ::core::fmt::Debug for NMPGHOTITEM {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NMPGHOTITEM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NMPGHOTITEM {
@@ -12603,6 +12787,7 @@ impl ::core::clone::Clone for NMPGSCROLL {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NMPGSCROLL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NMPGSCROLL {
@@ -12643,6 +12828,7 @@ impl ::core::default::Default for NMPGSCROLL_DIR {
 }
 unsafe impl ::windows::core::Abi for NMPGSCROLL_DIR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NMPGSCROLL_DIR {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12674,6 +12860,7 @@ impl ::core::default::Default for NMPGSCROLL_KEYS {
 }
 unsafe impl ::windows::core::Abi for NMPGSCROLL_KEYS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NMPGSCROLL_KEYS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12734,6 +12921,7 @@ impl ::core::fmt::Debug for NMRBAUTOSIZE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NMRBAUTOSIZE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NMRBAUTOSIZE {
@@ -12777,6 +12965,7 @@ impl ::core::fmt::Debug for NMREBAR {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NMREBAR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NMREBAR {
@@ -12821,6 +13010,7 @@ impl ::core::fmt::Debug for NMREBARAUTOBREAK {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NMREBARAUTOBREAK {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NMREBARAUTOBREAK {
@@ -12864,6 +13054,7 @@ impl ::core::fmt::Debug for NMREBARCHEVRON {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NMREBARCHEVRON {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NMREBARCHEVRON {
@@ -12906,6 +13097,7 @@ impl ::core::fmt::Debug for NMREBARCHILDSIZE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NMREBARCHILDSIZE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NMREBARCHILDSIZE {
@@ -12945,6 +13137,7 @@ impl ::core::fmt::Debug for NMREBARSPLITTER {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NMREBARSPLITTER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NMREBARSPLITTER {
@@ -12983,6 +13176,7 @@ impl ::core::default::Default for NMREBAR_MASK_FLAGS {
 }
 unsafe impl ::windows::core::Abi for NMREBAR_MASK_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NMREBAR_MASK_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13043,6 +13237,7 @@ impl ::core::fmt::Debug for NMSEARCHWEB {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NMSEARCHWEB {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NMSEARCHWEB {
@@ -13083,6 +13278,7 @@ impl ::core::fmt::Debug for NMSELCHANGE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NMSELCHANGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NMSELCHANGE {
@@ -13149,6 +13345,7 @@ impl ::core::fmt::Debug for NMTBCUSTOMDRAW {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
 unsafe impl ::windows::core::Abi for NMTBCUSTOMDRAW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
 impl ::core::cmp::PartialEq for NMTBCUSTOMDRAW {
@@ -13193,6 +13390,7 @@ impl ::core::fmt::Debug for NMTBDISPINFOA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NMTBDISPINFOA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NMTBDISPINFOA {
@@ -13237,6 +13435,7 @@ impl ::core::fmt::Debug for NMTBDISPINFOW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NMTBDISPINFOW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NMTBDISPINFOW {
@@ -13275,6 +13474,7 @@ impl ::core::default::Default for NMTBDISPINFOW_MASK {
 }
 unsafe impl ::windows::core::Abi for NMTBDISPINFOW_MASK {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NMTBDISPINFOW_MASK {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13336,6 +13536,7 @@ impl ::core::fmt::Debug for NMTBGETINFOTIPA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NMTBGETINFOTIPA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NMTBGETINFOTIPA {
@@ -13378,6 +13579,7 @@ impl ::core::fmt::Debug for NMTBGETINFOTIPW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NMTBGETINFOTIPW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NMTBGETINFOTIPW {
@@ -13419,6 +13621,7 @@ impl ::core::fmt::Debug for NMTBHOTITEM {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NMTBHOTITEM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NMTBHOTITEM {
@@ -13471,6 +13674,7 @@ impl ::core::default::Default for NMTBHOTITEM_FLAGS {
 }
 unsafe impl ::windows::core::Abi for NMTBHOTITEM_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NMTBHOTITEM_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13535,6 +13739,7 @@ impl ::core::fmt::Debug for NMTBRESTORE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NMTBRESTORE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NMTBRESTORE {
@@ -13579,6 +13784,7 @@ impl ::core::fmt::Debug for NMTBSAVE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NMTBSAVE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NMTBSAVE {
@@ -13613,6 +13819,7 @@ impl ::core::clone::Clone for NMTCKEYDOWN {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NMTCKEYDOWN {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NMTCKEYDOWN {
@@ -13656,6 +13863,7 @@ impl ::core::fmt::Debug for NMTOOLBARA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NMTOOLBARA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NMTOOLBARA {
@@ -13699,6 +13907,7 @@ impl ::core::fmt::Debug for NMTOOLBARW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NMTOOLBARW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NMTOOLBARW {
@@ -13738,6 +13947,7 @@ impl ::core::fmt::Debug for NMTOOLTIPSCREATED {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NMTOOLTIPSCREATED {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NMTOOLTIPSCREATED {
@@ -13778,6 +13988,7 @@ impl ::core::fmt::Debug for NMTRBTHUMBPOSCHANGING {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NMTRBTHUMBPOSCHANGING {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NMTRBTHUMBPOSCHANGING {
@@ -13820,6 +14031,7 @@ impl ::core::fmt::Debug for NMTREEVIEWA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NMTREEVIEWA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NMTREEVIEWA {
@@ -13862,6 +14074,7 @@ impl ::core::fmt::Debug for NMTREEVIEWW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NMTREEVIEWW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NMTREEVIEWW {
@@ -13901,6 +14114,7 @@ impl ::core::fmt::Debug for NMTTCUSTOMDRAW {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
 unsafe impl ::windows::core::Abi for NMTTCUSTOMDRAW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
 impl ::core::cmp::PartialEq for NMTTCUSTOMDRAW {
@@ -13944,6 +14158,7 @@ impl ::core::fmt::Debug for NMTTDISPINFOA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NMTTDISPINFOA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NMTTDISPINFOA {
@@ -13987,6 +14202,7 @@ impl ::core::fmt::Debug for NMTTDISPINFOW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NMTTDISPINFOW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NMTTDISPINFOW {
@@ -14031,6 +14247,7 @@ impl ::core::fmt::Debug for NMTVASYNCDRAW {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
 unsafe impl ::windows::core::Abi for NMTVASYNCDRAW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
 impl ::core::cmp::PartialEq for NMTVASYNCDRAW {
@@ -14072,6 +14289,7 @@ impl ::core::fmt::Debug for NMTVCUSTOMDRAW {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
 unsafe impl ::windows::core::Abi for NMTVCUSTOMDRAW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
 impl ::core::cmp::PartialEq for NMTVCUSTOMDRAW {
@@ -14111,6 +14329,7 @@ impl ::core::fmt::Debug for NMTVDISPINFOA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NMTVDISPINFOA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NMTVDISPINFOA {
@@ -14150,6 +14369,7 @@ impl ::core::fmt::Debug for NMTVDISPINFOEXA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NMTVDISPINFOEXA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NMTVDISPINFOEXA {
@@ -14189,6 +14409,7 @@ impl ::core::fmt::Debug for NMTVDISPINFOEXW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NMTVDISPINFOEXW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NMTVDISPINFOEXW {
@@ -14228,6 +14449,7 @@ impl ::core::fmt::Debug for NMTVDISPINFOW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NMTVDISPINFOW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NMTVDISPINFOW {
@@ -14270,6 +14492,7 @@ impl ::core::fmt::Debug for NMTVGETINFOTIPA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NMTVGETINFOTIPA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NMTVGETINFOTIPA {
@@ -14312,6 +14535,7 @@ impl ::core::fmt::Debug for NMTVGETINFOTIPW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NMTVGETINFOTIPW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NMTVGETINFOTIPW {
@@ -14355,6 +14579,7 @@ impl ::core::fmt::Debug for NMTVITEMCHANGE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NMTVITEMCHANGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NMTVITEMCHANGE {
@@ -14389,6 +14614,7 @@ impl ::core::clone::Clone for NMTVKEYDOWN {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NMTVKEYDOWN {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NMTVKEYDOWN {
@@ -14430,6 +14656,7 @@ impl ::core::fmt::Debug for NMTVSTATEIMAGECHANGING {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NMTVSTATEIMAGECHANGING {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NMTVSTATEIMAGECHANGING {
@@ -14470,6 +14697,7 @@ impl ::core::fmt::Debug for NMUPDOWN {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NMUPDOWN {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NMUPDOWN {
@@ -14510,6 +14738,7 @@ impl ::core::fmt::Debug for NMVIEWCHANGE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NMVIEWCHANGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NMVIEWCHANGE {
@@ -14574,6 +14803,7 @@ impl ::core::default::Default for OFFSETTYPE {
 }
 unsafe impl ::windows::core::Abi for OFFSETTYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for OFFSETTYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14607,6 +14837,7 @@ impl ::core::default::Default for OPENBOXSTATES {
 }
 unsafe impl ::windows::core::Abi for OPENBOXSTATES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for OPENBOXSTATES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14634,6 +14865,7 @@ impl ::core::default::Default for OPEN_THEME_DATA_FLAGS {
 }
 unsafe impl ::windows::core::Abi for OPEN_THEME_DATA_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for OPEN_THEME_DATA_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14723,6 +14955,7 @@ impl ::core::default::Default for PAGEPARTS {
 }
 unsafe impl ::windows::core::Abi for PAGEPARTS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PAGEPARTS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14784,6 +15017,7 @@ impl ::core::fmt::Debug for PBRANGE {
 }
 unsafe impl ::windows::core::Abi for PBRANGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PBRANGE {
     fn eq(&self, other: &Self) -> bool {
@@ -14914,6 +15148,7 @@ impl ::core::fmt::Debug for POINTER_DEVICE_CURSOR_INFO {
 }
 unsafe impl ::windows::core::Abi for POINTER_DEVICE_CURSOR_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for POINTER_DEVICE_CURSOR_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -14951,6 +15186,7 @@ impl ::core::default::Default for POINTER_DEVICE_CURSOR_TYPE {
 }
 unsafe impl ::windows::core::Abi for POINTER_DEVICE_CURSOR_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for POINTER_DEVICE_CURSOR_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14986,6 +15222,7 @@ impl ::core::fmt::Debug for POINTER_DEVICE_INFO {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
 unsafe impl ::windows::core::Abi for POINTER_DEVICE_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
 impl ::core::cmp::PartialEq for POINTER_DEVICE_INFO {
@@ -15026,6 +15263,7 @@ impl ::core::fmt::Debug for POINTER_DEVICE_PROPERTY {
 }
 unsafe impl ::windows::core::Abi for POINTER_DEVICE_PROPERTY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for POINTER_DEVICE_PROPERTY {
     fn eq(&self, other: &Self) -> bool {
@@ -15065,6 +15303,7 @@ impl ::core::default::Default for POINTER_DEVICE_TYPE {
 }
 unsafe impl ::windows::core::Abi for POINTER_DEVICE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for POINTER_DEVICE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -15094,6 +15333,7 @@ impl ::core::default::Default for POINTER_FEEDBACK_MODE {
 }
 unsafe impl ::windows::core::Abi for POINTER_FEEDBACK_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for POINTER_FEEDBACK_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -15118,6 +15358,7 @@ impl ::core::clone::Clone for POINTER_TYPE_INFO {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_UI_Input_Pointer", feature = "Win32_UI_WindowsAndMessaging"))]
 unsafe impl ::windows::core::Abi for POINTER_TYPE_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_UI_Input_Pointer", feature = "Win32_UI_WindowsAndMessaging"))]
 impl ::core::cmp::PartialEq for POINTER_TYPE_INFO {
@@ -15151,6 +15392,7 @@ impl ::core::clone::Clone for POINTER_TYPE_INFO_0 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_UI_Input_Pointer", feature = "Win32_UI_WindowsAndMessaging"))]
 unsafe impl ::windows::core::Abi for POINTER_TYPE_INFO_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_UI_Input_Pointer", feature = "Win32_UI_WindowsAndMessaging"))]
 impl ::core::cmp::PartialEq for POINTER_TYPE_INFO_0 {
@@ -15205,6 +15447,7 @@ impl ::core::default::Default for PROPERTYORIGIN {
 }
 unsafe impl ::windows::core::Abi for PROPERTYORIGIN {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PROPERTYORIGIN {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -15237,6 +15480,7 @@ impl ::core::clone::Clone for PROPSHEETHEADERA_V1 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 unsafe impl ::windows::core::Abi for PROPSHEETHEADERA_V1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 impl ::core::cmp::PartialEq for PROPSHEETHEADERA_V1 {
@@ -15270,6 +15514,7 @@ impl ::core::clone::Clone for PROPSHEETHEADERA_V1_0 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 unsafe impl ::windows::core::Abi for PROPSHEETHEADERA_V1_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 impl ::core::cmp::PartialEq for PROPSHEETHEADERA_V1_0 {
@@ -15303,6 +15548,7 @@ impl ::core::clone::Clone for PROPSHEETHEADERA_V1_1 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 unsafe impl ::windows::core::Abi for PROPSHEETHEADERA_V1_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 impl ::core::cmp::PartialEq for PROPSHEETHEADERA_V1_1 {
@@ -15336,6 +15582,7 @@ impl ::core::clone::Clone for PROPSHEETHEADERA_V1_2 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 unsafe impl ::windows::core::Abi for PROPSHEETHEADERA_V1_2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 impl ::core::cmp::PartialEq for PROPSHEETHEADERA_V1_2 {
@@ -15380,6 +15627,7 @@ impl ::core::clone::Clone for PROPSHEETHEADERA_V2 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 unsafe impl ::windows::core::Abi for PROPSHEETHEADERA_V2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 impl ::core::cmp::PartialEq for PROPSHEETHEADERA_V2 {
@@ -15413,6 +15661,7 @@ impl ::core::clone::Clone for PROPSHEETHEADERA_V2_0 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 unsafe impl ::windows::core::Abi for PROPSHEETHEADERA_V2_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 impl ::core::cmp::PartialEq for PROPSHEETHEADERA_V2_0 {
@@ -15446,6 +15695,7 @@ impl ::core::clone::Clone for PROPSHEETHEADERA_V2_1 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 unsafe impl ::windows::core::Abi for PROPSHEETHEADERA_V2_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 impl ::core::cmp::PartialEq for PROPSHEETHEADERA_V2_1 {
@@ -15479,6 +15729,7 @@ impl ::core::clone::Clone for PROPSHEETHEADERA_V2_2 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 unsafe impl ::windows::core::Abi for PROPSHEETHEADERA_V2_2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 impl ::core::cmp::PartialEq for PROPSHEETHEADERA_V2_2 {
@@ -15512,6 +15763,7 @@ impl ::core::clone::Clone for PROPSHEETHEADERA_V2_3 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 unsafe impl ::windows::core::Abi for PROPSHEETHEADERA_V2_3 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 impl ::core::cmp::PartialEq for PROPSHEETHEADERA_V2_3 {
@@ -15545,6 +15797,7 @@ impl ::core::clone::Clone for PROPSHEETHEADERA_V2_4 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 unsafe impl ::windows::core::Abi for PROPSHEETHEADERA_V2_4 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 impl ::core::cmp::PartialEq for PROPSHEETHEADERA_V2_4 {
@@ -15586,6 +15839,7 @@ impl ::core::clone::Clone for PROPSHEETHEADERW_V1 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 unsafe impl ::windows::core::Abi for PROPSHEETHEADERW_V1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 impl ::core::cmp::PartialEq for PROPSHEETHEADERW_V1 {
@@ -15619,6 +15873,7 @@ impl ::core::clone::Clone for PROPSHEETHEADERW_V1_0 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 unsafe impl ::windows::core::Abi for PROPSHEETHEADERW_V1_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 impl ::core::cmp::PartialEq for PROPSHEETHEADERW_V1_0 {
@@ -15652,6 +15907,7 @@ impl ::core::clone::Clone for PROPSHEETHEADERW_V1_1 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 unsafe impl ::windows::core::Abi for PROPSHEETHEADERW_V1_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 impl ::core::cmp::PartialEq for PROPSHEETHEADERW_V1_1 {
@@ -15685,6 +15941,7 @@ impl ::core::clone::Clone for PROPSHEETHEADERW_V1_2 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 unsafe impl ::windows::core::Abi for PROPSHEETHEADERW_V1_2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 impl ::core::cmp::PartialEq for PROPSHEETHEADERW_V1_2 {
@@ -15729,6 +15986,7 @@ impl ::core::clone::Clone for PROPSHEETHEADERW_V2 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 unsafe impl ::windows::core::Abi for PROPSHEETHEADERW_V2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 impl ::core::cmp::PartialEq for PROPSHEETHEADERW_V2 {
@@ -15762,6 +16020,7 @@ impl ::core::clone::Clone for PROPSHEETHEADERW_V2_0 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 unsafe impl ::windows::core::Abi for PROPSHEETHEADERW_V2_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 impl ::core::cmp::PartialEq for PROPSHEETHEADERW_V2_0 {
@@ -15795,6 +16054,7 @@ impl ::core::clone::Clone for PROPSHEETHEADERW_V2_1 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 unsafe impl ::windows::core::Abi for PROPSHEETHEADERW_V2_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 impl ::core::cmp::PartialEq for PROPSHEETHEADERW_V2_1 {
@@ -15828,6 +16088,7 @@ impl ::core::clone::Clone for PROPSHEETHEADERW_V2_2 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 unsafe impl ::windows::core::Abi for PROPSHEETHEADERW_V2_2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 impl ::core::cmp::PartialEq for PROPSHEETHEADERW_V2_2 {
@@ -15861,6 +16122,7 @@ impl ::core::clone::Clone for PROPSHEETHEADERW_V2_3 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 unsafe impl ::windows::core::Abi for PROPSHEETHEADERW_V2_3 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 impl ::core::cmp::PartialEq for PROPSHEETHEADERW_V2_3 {
@@ -15894,6 +16156,7 @@ impl ::core::clone::Clone for PROPSHEETHEADERW_V2_4 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 unsafe impl ::windows::core::Abi for PROPSHEETHEADERW_V2_4 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 impl ::core::cmp::PartialEq for PROPSHEETHEADERW_V2_4 {
@@ -15939,6 +16202,7 @@ impl ::core::clone::Clone for PROPSHEETPAGEA {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 unsafe impl ::windows::core::Abi for PROPSHEETPAGEA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 impl ::core::cmp::PartialEq for PROPSHEETPAGEA {
@@ -15972,6 +16236,7 @@ impl ::core::clone::Clone for PROPSHEETPAGEA_0 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 unsafe impl ::windows::core::Abi for PROPSHEETPAGEA_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 impl ::core::cmp::PartialEq for PROPSHEETPAGEA_0 {
@@ -16005,6 +16270,7 @@ impl ::core::clone::Clone for PROPSHEETPAGEA_1 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 unsafe impl ::windows::core::Abi for PROPSHEETPAGEA_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 impl ::core::cmp::PartialEq for PROPSHEETPAGEA_1 {
@@ -16038,6 +16304,7 @@ impl ::core::clone::Clone for PROPSHEETPAGEA_2 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 unsafe impl ::windows::core::Abi for PROPSHEETPAGEA_2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 impl ::core::cmp::PartialEq for PROPSHEETPAGEA_2 {
@@ -16079,6 +16346,7 @@ impl ::core::clone::Clone for PROPSHEETPAGEA_V1 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 unsafe impl ::windows::core::Abi for PROPSHEETPAGEA_V1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 impl ::core::cmp::PartialEq for PROPSHEETPAGEA_V1 {
@@ -16112,6 +16380,7 @@ impl ::core::clone::Clone for PROPSHEETPAGEA_V1_0 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 unsafe impl ::windows::core::Abi for PROPSHEETPAGEA_V1_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 impl ::core::cmp::PartialEq for PROPSHEETPAGEA_V1_0 {
@@ -16145,6 +16414,7 @@ impl ::core::clone::Clone for PROPSHEETPAGEA_V1_1 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 unsafe impl ::windows::core::Abi for PROPSHEETPAGEA_V1_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 impl ::core::cmp::PartialEq for PROPSHEETPAGEA_V1_1 {
@@ -16188,6 +16458,7 @@ impl ::core::clone::Clone for PROPSHEETPAGEA_V2 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 unsafe impl ::windows::core::Abi for PROPSHEETPAGEA_V2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 impl ::core::cmp::PartialEq for PROPSHEETPAGEA_V2 {
@@ -16221,6 +16492,7 @@ impl ::core::clone::Clone for PROPSHEETPAGEA_V2_0 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 unsafe impl ::windows::core::Abi for PROPSHEETPAGEA_V2_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 impl ::core::cmp::PartialEq for PROPSHEETPAGEA_V2_0 {
@@ -16254,6 +16526,7 @@ impl ::core::clone::Clone for PROPSHEETPAGEA_V2_1 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 unsafe impl ::windows::core::Abi for PROPSHEETPAGEA_V2_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 impl ::core::cmp::PartialEq for PROPSHEETPAGEA_V2_1 {
@@ -16298,6 +16571,7 @@ impl ::core::clone::Clone for PROPSHEETPAGEA_V3 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 unsafe impl ::windows::core::Abi for PROPSHEETPAGEA_V3 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 impl ::core::cmp::PartialEq for PROPSHEETPAGEA_V3 {
@@ -16331,6 +16605,7 @@ impl ::core::clone::Clone for PROPSHEETPAGEA_V3_0 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 unsafe impl ::windows::core::Abi for PROPSHEETPAGEA_V3_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 impl ::core::cmp::PartialEq for PROPSHEETPAGEA_V3_0 {
@@ -16364,6 +16639,7 @@ impl ::core::clone::Clone for PROPSHEETPAGEA_V3_1 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 unsafe impl ::windows::core::Abi for PROPSHEETPAGEA_V3_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 impl ::core::cmp::PartialEq for PROPSHEETPAGEA_V3_1 {
@@ -16409,6 +16685,7 @@ impl ::core::clone::Clone for PROPSHEETPAGEW {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 unsafe impl ::windows::core::Abi for PROPSHEETPAGEW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 impl ::core::cmp::PartialEq for PROPSHEETPAGEW {
@@ -16442,6 +16719,7 @@ impl ::core::clone::Clone for PROPSHEETPAGEW_0 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 unsafe impl ::windows::core::Abi for PROPSHEETPAGEW_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 impl ::core::cmp::PartialEq for PROPSHEETPAGEW_0 {
@@ -16475,6 +16753,7 @@ impl ::core::clone::Clone for PROPSHEETPAGEW_1 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 unsafe impl ::windows::core::Abi for PROPSHEETPAGEW_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 impl ::core::cmp::PartialEq for PROPSHEETPAGEW_1 {
@@ -16508,6 +16787,7 @@ impl ::core::clone::Clone for PROPSHEETPAGEW_2 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 unsafe impl ::windows::core::Abi for PROPSHEETPAGEW_2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 impl ::core::cmp::PartialEq for PROPSHEETPAGEW_2 {
@@ -16549,6 +16829,7 @@ impl ::core::clone::Clone for PROPSHEETPAGEW_V1 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 unsafe impl ::windows::core::Abi for PROPSHEETPAGEW_V1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 impl ::core::cmp::PartialEq for PROPSHEETPAGEW_V1 {
@@ -16582,6 +16863,7 @@ impl ::core::clone::Clone for PROPSHEETPAGEW_V1_0 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 unsafe impl ::windows::core::Abi for PROPSHEETPAGEW_V1_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 impl ::core::cmp::PartialEq for PROPSHEETPAGEW_V1_0 {
@@ -16615,6 +16897,7 @@ impl ::core::clone::Clone for PROPSHEETPAGEW_V1_1 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 unsafe impl ::windows::core::Abi for PROPSHEETPAGEW_V1_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 impl ::core::cmp::PartialEq for PROPSHEETPAGEW_V1_1 {
@@ -16658,6 +16941,7 @@ impl ::core::clone::Clone for PROPSHEETPAGEW_V2 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 unsafe impl ::windows::core::Abi for PROPSHEETPAGEW_V2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 impl ::core::cmp::PartialEq for PROPSHEETPAGEW_V2 {
@@ -16691,6 +16975,7 @@ impl ::core::clone::Clone for PROPSHEETPAGEW_V2_0 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 unsafe impl ::windows::core::Abi for PROPSHEETPAGEW_V2_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 impl ::core::cmp::PartialEq for PROPSHEETPAGEW_V2_0 {
@@ -16724,6 +17009,7 @@ impl ::core::clone::Clone for PROPSHEETPAGEW_V2_1 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 unsafe impl ::windows::core::Abi for PROPSHEETPAGEW_V2_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 impl ::core::cmp::PartialEq for PROPSHEETPAGEW_V2_1 {
@@ -16768,6 +17054,7 @@ impl ::core::clone::Clone for PROPSHEETPAGEW_V3 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 unsafe impl ::windows::core::Abi for PROPSHEETPAGEW_V3 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 impl ::core::cmp::PartialEq for PROPSHEETPAGEW_V3 {
@@ -16801,6 +17088,7 @@ impl ::core::clone::Clone for PROPSHEETPAGEW_V3_0 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 unsafe impl ::windows::core::Abi for PROPSHEETPAGEW_V3_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 impl ::core::cmp::PartialEq for PROPSHEETPAGEW_V3_0 {
@@ -16834,6 +17122,7 @@ impl ::core::clone::Clone for PROPSHEETPAGEW_V3_1 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 unsafe impl ::windows::core::Abi for PROPSHEETPAGEW_V3_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
 impl ::core::cmp::PartialEq for PROPSHEETPAGEW_V3_1 {
@@ -16907,6 +17196,7 @@ impl ::core::fmt::Debug for PSHNOTIFY {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PSHNOTIFY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for PSHNOTIFY {
@@ -17097,6 +17387,7 @@ impl ::core::default::Default for PSPCB_MESSAGE {
 }
 unsafe impl ::windows::core::Abi for PSPCB_MESSAGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PSPCB_MESSAGE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -17273,6 +17564,7 @@ impl ::core::fmt::Debug for RBHITTESTINFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for RBHITTESTINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for RBHITTESTINFO {
@@ -17483,6 +17775,7 @@ impl ::core::fmt::Debug for REBARBANDINFOA {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
 unsafe impl ::windows::core::Abi for REBARBANDINFOA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
 impl ::core::cmp::PartialEq for REBARBANDINFOA {
@@ -17565,6 +17858,7 @@ impl ::core::fmt::Debug for REBARBANDINFOW {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
 unsafe impl ::windows::core::Abi for REBARBANDINFOW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
 impl ::core::cmp::PartialEq for REBARBANDINFOW {
@@ -17606,6 +17900,7 @@ impl ::core::fmt::Debug for REBARINFO {
 }
 unsafe impl ::windows::core::Abi for REBARINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for REBARINFO {
     fn eq(&self, other: &Self) -> bool {
@@ -17743,6 +18038,7 @@ impl ::core::default::Default for SIZINGTYPE {
 }
 unsafe impl ::windows::core::Abi for SIZINGTYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SIZINGTYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -17776,6 +18072,7 @@ impl ::core::default::Default for SOFTWAREEXPLORERSTATES {
 }
 unsafe impl ::windows::core::Abi for SOFTWAREEXPLORERSTATES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SOFTWAREEXPLORERSTATES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -17837,6 +18134,7 @@ impl ::core::default::Default for STARTPANELPARTS {
 }
 unsafe impl ::windows::core::Abi for STARTPANELPARTS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for STARTPANELPARTS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -17862,6 +18160,7 @@ impl ::core::default::Default for STATICPARTS {
 }
 unsafe impl ::windows::core::Abi for STATICPARTS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for STATICPARTS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -18084,6 +18383,7 @@ impl ::core::default::Default for TASKBANDPARTS {
 }
 unsafe impl ::windows::core::Abi for TASKBANDPARTS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TASKBANDPARTS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -18123,6 +18423,7 @@ impl ::core::default::Default for TASKBARPARTS {
 }
 unsafe impl ::windows::core::Abi for TASKBARPARTS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TASKBARPARTS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -18169,6 +18470,7 @@ impl ::core::clone::Clone for TASKDIALOGCONFIG {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_UI_WindowsAndMessaging"))]
 unsafe impl ::windows::core::Abi for TASKDIALOGCONFIG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_UI_WindowsAndMessaging"))]
 impl ::core::cmp::PartialEq for TASKDIALOGCONFIG {
@@ -18202,6 +18504,7 @@ impl ::core::clone::Clone for TASKDIALOGCONFIG_0 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_UI_WindowsAndMessaging"))]
 unsafe impl ::windows::core::Abi for TASKDIALOGCONFIG_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_UI_WindowsAndMessaging"))]
 impl ::core::cmp::PartialEq for TASKDIALOGCONFIG_0 {
@@ -18235,6 +18538,7 @@ impl ::core::clone::Clone for TASKDIALOGCONFIG_1 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_UI_WindowsAndMessaging"))]
 unsafe impl ::windows::core::Abi for TASKDIALOGCONFIG_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_UI_WindowsAndMessaging"))]
 impl ::core::cmp::PartialEq for TASKDIALOGCONFIG_1 {
@@ -18264,6 +18568,7 @@ impl ::core::clone::Clone for TASKDIALOG_BUTTON {
 }
 unsafe impl ::windows::core::Abi for TASKDIALOG_BUTTON {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TASKDIALOG_BUTTON {
     fn eq(&self, other: &Self) -> bool {
@@ -18305,6 +18610,7 @@ impl ::core::default::Default for TASKDIALOG_COMMON_BUTTON_FLAGS {
 }
 unsafe impl ::windows::core::Abi for TASKDIALOG_COMMON_BUTTON_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TASKDIALOG_COMMON_BUTTON_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -18336,6 +18642,7 @@ impl ::core::default::Default for TASKDIALOG_ELEMENTS {
 }
 unsafe impl ::windows::core::Abi for TASKDIALOG_ELEMENTS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TASKDIALOG_ELEMENTS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -18395,6 +18702,7 @@ impl ::core::default::Default for TASKDIALOG_FLAGS {
 }
 unsafe impl ::windows::core::Abi for TASKDIALOG_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TASKDIALOG_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -18422,6 +18730,7 @@ impl ::core::default::Default for TASKDIALOG_ICON_ELEMENTS {
 }
 unsafe impl ::windows::core::Abi for TASKDIALOG_ICON_ELEMENTS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TASKDIALOG_ICON_ELEMENTS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -18475,6 +18784,7 @@ impl ::core::default::Default for TASKDIALOG_MESSAGES {
 }
 unsafe impl ::windows::core::Abi for TASKDIALOG_MESSAGES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TASKDIALOG_MESSAGES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -18520,6 +18830,7 @@ impl ::core::default::Default for TASKDIALOG_NOTIFICATIONS {
 }
 unsafe impl ::windows::core::Abi for TASKDIALOG_NOTIFICATIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TASKDIALOG_NOTIFICATIONS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -18548,6 +18859,7 @@ impl ::core::fmt::Debug for TA_CUBIC_BEZIER {
 }
 unsafe impl ::windows::core::Abi for TA_CUBIC_BEZIER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TA_CUBIC_BEZIER {
     fn eq(&self, other: &Self) -> bool {
@@ -18589,6 +18901,7 @@ impl ::core::default::Default for TA_PROPERTY {
 }
 unsafe impl ::windows::core::Abi for TA_PROPERTY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TA_PROPERTY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -18624,6 +18937,7 @@ impl ::core::default::Default for TA_PROPERTY_FLAG {
 }
 unsafe impl ::windows::core::Abi for TA_PROPERTY_FLAG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TA_PROPERTY_FLAG {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -18676,6 +18990,7 @@ impl ::core::fmt::Debug for TA_TIMINGFUNCTION {
 }
 unsafe impl ::windows::core::Abi for TA_TIMINGFUNCTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TA_TIMINGFUNCTION {
     fn eq(&self, other: &Self) -> bool {
@@ -18709,6 +19024,7 @@ impl ::core::default::Default for TA_TIMINGFUNCTION_TYPE {
 }
 unsafe impl ::windows::core::Abi for TA_TIMINGFUNCTION_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TA_TIMINGFUNCTION_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -18737,6 +19053,7 @@ impl ::core::fmt::Debug for TA_TRANSFORM {
 }
 unsafe impl ::windows::core::Abi for TA_TRANSFORM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TA_TRANSFORM {
     fn eq(&self, other: &Self) -> bool {
@@ -18773,6 +19090,7 @@ impl ::core::fmt::Debug for TA_TRANSFORM_2D {
 }
 unsafe impl ::windows::core::Abi for TA_TRANSFORM_2D {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TA_TRANSFORM_2D {
     fn eq(&self, other: &Self) -> bool {
@@ -18811,6 +19129,7 @@ impl ::core::fmt::Debug for TA_TRANSFORM_CLIP {
 }
 unsafe impl ::windows::core::Abi for TA_TRANSFORM_CLIP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TA_TRANSFORM_CLIP {
     fn eq(&self, other: &Self) -> bool {
@@ -18848,6 +19167,7 @@ impl ::core::default::Default for TA_TRANSFORM_FLAG {
 }
 unsafe impl ::windows::core::Abi for TA_TRANSFORM_FLAG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TA_TRANSFORM_FLAG {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -18874,6 +19194,7 @@ impl ::core::fmt::Debug for TA_TRANSFORM_OPACITY {
 }
 unsafe impl ::windows::core::Abi for TA_TRANSFORM_OPACITY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TA_TRANSFORM_OPACITY {
     fn eq(&self, other: &Self) -> bool {
@@ -18911,6 +19232,7 @@ impl ::core::default::Default for TA_TRANSFORM_TYPE {
 }
 unsafe impl ::windows::core::Abi for TA_TRANSFORM_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TA_TRANSFORM_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -18941,6 +19263,7 @@ impl ::core::fmt::Debug for TBADDBITMAP {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for TBADDBITMAP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for TBADDBITMAP {
@@ -18987,6 +19310,7 @@ impl ::core::fmt::Debug for TBBUTTON {
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 unsafe impl ::windows::core::Abi for TBBUTTON {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 impl ::core::cmp::PartialEq for TBBUTTON {
@@ -19031,6 +19355,7 @@ impl ::core::fmt::Debug for TBBUTTON {
 #[cfg(target_arch = "x86")]
 unsafe impl ::windows::core::Abi for TBBUTTON {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 impl ::core::cmp::PartialEq for TBBUTTON {
@@ -19073,6 +19398,7 @@ impl ::core::fmt::Debug for TBBUTTONINFOA {
 }
 unsafe impl ::windows::core::Abi for TBBUTTONINFOA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TBBUTTONINFOA {
     fn eq(&self, other: &Self) -> bool {
@@ -19112,6 +19438,7 @@ impl ::core::fmt::Debug for TBBUTTONINFOW {
 }
 unsafe impl ::windows::core::Abi for TBBUTTONINFOW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TBBUTTONINFOW {
     fn eq(&self, other: &Self) -> bool {
@@ -19157,6 +19484,7 @@ impl ::core::default::Default for TBBUTTONINFOW_MASK {
 }
 unsafe impl ::windows::core::Abi for TBBUTTONINFOW_MASK {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TBBUTTONINFOW_MASK {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -19238,6 +19566,7 @@ impl ::core::fmt::Debug for TBINSERTMARK {
 }
 unsafe impl ::windows::core::Abi for TBINSERTMARK {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TBINSERTMARK {
     fn eq(&self, other: &Self) -> bool {
@@ -19273,6 +19602,7 @@ impl ::core::default::Default for TBINSERTMARK_FLAGS {
 }
 unsafe impl ::windows::core::Abi for TBINSERTMARK_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TBINSERTMARK_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -19304,6 +19634,7 @@ impl ::core::fmt::Debug for TBMETRICS {
 }
 unsafe impl ::windows::core::Abi for TBMETRICS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TBMETRICS {
     fn eq(&self, other: &Self) -> bool {
@@ -19423,6 +19754,7 @@ impl ::core::fmt::Debug for TBREPLACEBITMAP {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for TBREPLACEBITMAP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for TBREPLACEBITMAP {
@@ -19463,6 +19795,7 @@ impl ::core::fmt::Debug for TBSAVEPARAMSA {
 #[cfg(feature = "Win32_System_Registry")]
 unsafe impl ::windows::core::Abi for TBSAVEPARAMSA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_System_Registry")]
 impl ::core::cmp::PartialEq for TBSAVEPARAMSA {
@@ -19503,6 +19836,7 @@ impl ::core::fmt::Debug for TBSAVEPARAMSW {
 #[cfg(feature = "Win32_System_Registry")]
 unsafe impl ::windows::core::Abi for TBSAVEPARAMSW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_System_Registry")]
 impl ::core::cmp::PartialEq for TBSAVEPARAMSW {
@@ -19882,6 +20216,7 @@ impl ::core::fmt::Debug for TCHITTESTINFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for TCHITTESTINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for TCHITTESTINFO {
@@ -19922,6 +20257,7 @@ impl ::core::default::Default for TCHITTESTINFO_FLAGS {
 }
 unsafe impl ::windows::core::Abi for TCHITTESTINFO_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TCHITTESTINFO_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -19961,6 +20297,7 @@ impl ::core::fmt::Debug for TCITEMA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for TCITEMA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for TCITEMA {
@@ -19999,6 +20336,7 @@ impl ::core::fmt::Debug for TCITEMHEADERA {
 }
 unsafe impl ::windows::core::Abi for TCITEMHEADERA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TCITEMHEADERA {
     fn eq(&self, other: &Self) -> bool {
@@ -20038,6 +20376,7 @@ impl ::core::default::Default for TCITEMHEADERA_MASK {
 }
 unsafe impl ::windows::core::Abi for TCITEMHEADERA_MASK {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TCITEMHEADERA_MASK {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -20095,6 +20434,7 @@ impl ::core::fmt::Debug for TCITEMHEADERW {
 }
 unsafe impl ::windows::core::Abi for TCITEMHEADERW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TCITEMHEADERW {
     fn eq(&self, other: &Self) -> bool {
@@ -20136,6 +20476,7 @@ impl ::core::fmt::Debug for TCITEMW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for TCITEMW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for TCITEMW {
@@ -20290,6 +20631,7 @@ impl ::core::default::Default for TEXTSHADOWTYPE {
 }
 unsafe impl ::windows::core::Abi for TEXTSHADOWTYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TEXTSHADOWTYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -20319,6 +20661,7 @@ impl ::core::default::Default for THEMESIZE {
 }
 unsafe impl ::windows::core::Abi for THEMESIZE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for THEMESIZE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -20856,6 +21199,7 @@ impl ::core::default::Default for THEME_PROPERTY_SYMBOL_ID {
 }
 unsafe impl ::windows::core::Abi for THEME_PROPERTY_SYMBOL_ID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for THEME_PROPERTY_SYMBOL_ID {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -20901,6 +21245,7 @@ impl ::core::fmt::Debug for TOUCH_HIT_TESTING_INPUT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for TOUCH_HIT_TESTING_INPUT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for TOUCH_HIT_TESTING_INPUT {
@@ -20940,6 +21285,7 @@ impl ::core::fmt::Debug for TOUCH_HIT_TESTING_PROXIMITY_EVALUATION {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for TOUCH_HIT_TESTING_PROXIMITY_EVALUATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for TOUCH_HIT_TESTING_PROXIMITY_EVALUATION {
@@ -20992,6 +21338,7 @@ impl ::core::default::Default for TRAILINGGRIDCELLSTATES {
 }
 unsafe impl ::windows::core::Abi for TRAILINGGRIDCELLSTATES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TRAILINGGRIDCELLSTATES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -21025,6 +21372,7 @@ impl ::core::default::Default for TRAILINGGRIDCELLUPPERSTATES {
 }
 unsafe impl ::windows::core::Abi for TRAILINGGRIDCELLUPPERSTATES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TRAILINGGRIDCELLUPPERSTATES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -21052,6 +21400,7 @@ impl ::core::default::Default for TRAYNOTIFYPARTS {
 }
 unsafe impl ::windows::core::Abi for TRAYNOTIFYPARTS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TRAYNOTIFYPARTS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -21081,6 +21430,7 @@ impl ::core::default::Default for TRUESIZESCALINGTYPE {
 }
 unsafe impl ::windows::core::Abi for TRUESIZESCALINGTYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TRUESIZESCALINGTYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -21118,6 +21468,7 @@ impl ::core::fmt::Debug for TTGETTITLE {
 }
 unsafe impl ::windows::core::Abi for TTGETTITLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TTGETTITLE {
     fn eq(&self, other: &Self) -> bool {
@@ -21155,6 +21506,7 @@ impl ::core::fmt::Debug for TTHITTESTINFOA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for TTHITTESTINFOA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for TTHITTESTINFOA {
@@ -21195,6 +21547,7 @@ impl ::core::fmt::Debug for TTHITTESTINFOW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for TTHITTESTINFOW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for TTHITTESTINFOW {
@@ -21367,6 +21720,7 @@ impl ::core::fmt::Debug for TTTOOLINFOA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for TTTOOLINFOA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for TTTOOLINFOA {
@@ -21413,6 +21767,7 @@ impl ::core::fmt::Debug for TTTOOLINFOW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for TTTOOLINFOW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for TTTOOLINFOW {
@@ -21461,6 +21816,7 @@ impl ::core::default::Default for TTTOOLINFO_FLAGS {
 }
 unsafe impl ::windows::core::Abi for TTTOOLINFO_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TTTOOLINFO_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -21538,6 +21894,7 @@ impl ::core::fmt::Debug for TVGETITEMPARTRECTINFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for TVGETITEMPARTRECTINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for TVGETITEMPARTRECTINFO {
@@ -21602,6 +21959,7 @@ impl ::core::fmt::Debug for TVHITTESTINFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for TVHITTESTINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for TVHITTESTINFO {
@@ -21658,6 +22016,7 @@ impl ::core::default::Default for TVHITTESTINFO_FLAGS {
 }
 unsafe impl ::windows::core::Abi for TVHITTESTINFO_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TVHITTESTINFO_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -21711,6 +22070,7 @@ impl ::core::clone::Clone for TVINSERTSTRUCTA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for TVINSERTSTRUCTA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for TVINSERTSTRUCTA {
@@ -21744,6 +22104,7 @@ impl ::core::clone::Clone for TVINSERTSTRUCTA_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for TVINSERTSTRUCTA_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for TVINSERTSTRUCTA_0 {
@@ -21778,6 +22139,7 @@ impl ::core::clone::Clone for TVINSERTSTRUCTW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for TVINSERTSTRUCTW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for TVINSERTSTRUCTW {
@@ -21811,6 +22173,7 @@ impl ::core::clone::Clone for TVINSERTSTRUCTW_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for TVINSERTSTRUCTW_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for TVINSERTSTRUCTW_0 {
@@ -21884,6 +22247,7 @@ impl ::core::fmt::Debug for TVITEMA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for TVITEMA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for TVITEMA {
@@ -21952,6 +22316,7 @@ impl ::core::fmt::Debug for TVITEMEXA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for TVITEMEXA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for TVITEMEXA {
@@ -22020,6 +22385,7 @@ impl ::core::fmt::Debug for TVITEMEXW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for TVITEMEXW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for TVITEMEXW {
@@ -22060,6 +22426,7 @@ impl ::core::default::Default for TVITEMEXW_CHILDREN {
 }
 unsafe impl ::windows::core::Abi for TVITEMEXW_CHILDREN {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TVITEMEXW_CHILDREN {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -22085,6 +22452,7 @@ impl ::core::default::Default for TVITEMPART {
 }
 unsafe impl ::windows::core::Abi for TVITEMPART {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TVITEMPART {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -22123,6 +22491,7 @@ impl ::core::fmt::Debug for TVITEMW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for TVITEMW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for TVITEMW {
@@ -22177,6 +22546,7 @@ impl ::core::default::Default for TVITEM_MASK {
 }
 unsafe impl ::windows::core::Abi for TVITEM_MASK {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TVITEM_MASK {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -22382,6 +22752,7 @@ impl ::core::fmt::Debug for TVSORTCB {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for TVSORTCB {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for TVSORTCB {
@@ -22503,6 +22874,7 @@ impl ::core::fmt::Debug for UDACCEL {
 }
 unsafe impl ::windows::core::Abi for UDACCEL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for UDACCEL {
     fn eq(&self, other: &Self) -> bool {
@@ -22600,6 +22972,7 @@ impl ::core::fmt::Debug for USAGE_PROPERTIES {
 }
 unsafe impl ::windows::core::Abi for USAGE_PROPERTIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USAGE_PROPERTIES {
     fn eq(&self, other: &Self) -> bool {
@@ -22665,6 +23038,7 @@ impl ::core::default::Default for VALIGN {
 }
 unsafe impl ::windows::core::Abi for VALIGN {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VALIGN {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -22824,6 +23198,7 @@ impl ::core::default::Default for WINDOWTHEMEATTRIBUTETYPE {
 }
 unsafe impl ::windows::core::Abi for WINDOWTHEMEATTRIBUTETYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WINDOWTHEMEATTRIBUTETYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -22879,6 +23254,7 @@ impl ::core::default::Default for WORD_BREAK_ACTION {
 }
 unsafe impl ::windows::core::Abi for WORD_BREAK_ACTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WORD_BREAK_ACTION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -22926,6 +23302,7 @@ impl ::core::default::Default for WSB_PROP {
 }
 unsafe impl ::windows::core::Abi for WSB_PROP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WSB_PROP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -22953,6 +23330,7 @@ impl ::core::fmt::Debug for WTA_OPTIONS {
 }
 unsafe impl ::windows::core::Abi for WTA_OPTIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WTA_OPTIONS {
     fn eq(&self, other: &Self) -> bool {
@@ -22994,6 +23372,7 @@ impl ::core::default::Default for _LI_METRIC {
 }
 unsafe impl ::windows::core::Abi for _LI_METRIC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for _LI_METRIC {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

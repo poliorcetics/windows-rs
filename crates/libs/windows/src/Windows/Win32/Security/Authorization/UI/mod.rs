@@ -53,6 +53,7 @@ impl ::core::fmt::Debug for EFFPERM_RESULT_LIST {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for EFFPERM_RESULT_LIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for EFFPERM_RESULT_LIST {
@@ -101,6 +102,11 @@ pub unsafe fn EditSecurityAdvanced<'a, Param0: ::windows::core::IntoParam<'a, su
 #[doc = "*Required features: `\"Win32_Security_Authorization_UI\"`*"]
 #[repr(transparent)]
 pub struct IEffectivePermission(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEffectivePermission {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEffectivePermission {
     #[doc = "*Required features: `\"Win32_Security_Authorization_UI\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -126,11 +132,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IEffectiv
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEffectivePermission {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IEffectivePermission {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IEffectivePermission {
@@ -160,6 +161,11 @@ pub struct IEffectivePermission_Vtbl {
 #[doc = "*Required features: `\"Win32_Security_Authorization_UI\"`*"]
 #[repr(transparent)]
 pub struct IEffectivePermission2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEffectivePermission2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEffectivePermission2 {
     #[doc = "*Required features: `\"Win32_Security_Authorization_UI\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -220,11 +226,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEffe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEffectivePermission2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEffectivePermission2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -268,6 +269,11 @@ pub struct IEffectivePermission2_Vtbl {
 #[doc = "*Required features: `\"Win32_Security_Authorization_UI\"`*"]
 #[repr(transparent)]
 pub struct ISecurityInformation(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISecurityInformation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISecurityInformation {
     #[doc = "*Required features: `\"Win32_Security_Authorization_UI\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -321,11 +327,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISecu
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISecurityInformation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISecurityInformation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -365,6 +366,11 @@ pub struct ISecurityInformation_Vtbl {
 #[doc = "*Required features: `\"Win32_Security_Authorization_UI\"`*"]
 #[repr(transparent)]
 pub struct ISecurityInformation2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISecurityInformation2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISecurityInformation2 {
     #[doc = "*Required features: `\"Win32_Security_Authorization_UI\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -395,11 +401,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for ISecurity
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISecurityInformation2 {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for ISecurityInformation2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for ISecurityInformation2 {
@@ -433,6 +434,11 @@ pub struct ISecurityInformation2_Vtbl {
 #[doc = "*Required features: `\"Win32_Security_Authorization_UI\"`*"]
 #[repr(transparent)]
 pub struct ISecurityInformation3(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISecurityInformation3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISecurityInformation3 {
     #[doc = "*Required features: `\"Win32_Security_Authorization_UI\"`*"]
     pub unsafe fn GetFullResourceName(&self) -> ::windows::core::Result<::windows::core::PWSTR> {
@@ -465,11 +471,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISecu
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISecurityInformation3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISecurityInformation3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -498,6 +499,11 @@ pub struct ISecurityInformation3_Vtbl {
 #[doc = "*Required features: `\"Win32_Security_Authorization_UI\"`*"]
 #[repr(transparent)]
 pub struct ISecurityInformation4(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISecurityInformation4 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISecurityInformation4 {
     #[doc = "*Required features: `\"Win32_Security_Authorization_UI\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -523,11 +529,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for ISecurity
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISecurityInformation4 {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for ISecurityInformation4 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for ISecurityInformation4 {
@@ -557,6 +558,11 @@ pub struct ISecurityInformation4_Vtbl {
 #[doc = "*Required features: `\"Win32_Security_Authorization_UI\"`*"]
 #[repr(transparent)]
 pub struct ISecurityObjectTypeInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISecurityObjectTypeInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISecurityObjectTypeInfo {
     #[doc = "*Required features: `\"Win32_Security_Authorization_UI\"`*"]
     pub unsafe fn GetInheritSource(&self, si: u32, pacl: *mut super::super::ACL, ppinheritarray: *mut *mut super::INHERITED_FROMA) -> ::windows::core::Result<()> {
@@ -581,11 +587,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for ISecurity
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISecurityObjectTypeInfo {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for ISecurityObjectTypeInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for ISecurityObjectTypeInfo {
@@ -632,6 +633,7 @@ impl ::core::default::Default for SECURITY_INFO_PAGE_FLAGS {
 }
 unsafe impl ::windows::core::Abi for SECURITY_INFO_PAGE_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SECURITY_INFO_PAGE_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -695,6 +697,7 @@ impl ::core::fmt::Debug for SECURITY_OBJECT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SECURITY_OBJECT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for SECURITY_OBJECT {
@@ -744,6 +747,7 @@ impl ::core::fmt::Debug for SID_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SID_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for SID_INFO {
@@ -783,6 +787,7 @@ impl ::core::fmt::Debug for SID_INFO_LIST {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SID_INFO_LIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for SID_INFO_LIST {
@@ -819,6 +824,7 @@ impl ::core::fmt::Debug for SI_ACCESS {
 }
 unsafe impl ::windows::core::Abi for SI_ACCESS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SI_ACCESS {
     fn eq(&self, other: &Self) -> bool {
@@ -865,6 +871,7 @@ impl ::core::fmt::Debug for SI_INHERIT_TYPE {
 }
 unsafe impl ::windows::core::Abi for SI_INHERIT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SI_INHERIT_TYPE {
     fn eq(&self, other: &Self) -> bool {
@@ -911,6 +918,7 @@ impl ::core::fmt::Debug for SI_OBJECT_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SI_OBJECT_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for SI_OBJECT_INFO {
@@ -971,6 +979,7 @@ impl ::core::default::Default for SI_OBJECT_INFO_FLAGS {
 }
 unsafe impl ::windows::core::Abi for SI_OBJECT_INFO_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SI_OBJECT_INFO_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1040,6 +1049,7 @@ impl ::core::default::Default for SI_PAGE_ACTIVATED {
 }
 unsafe impl ::windows::core::Abi for SI_PAGE_ACTIVATED {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SI_PAGE_ACTIVATED {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1079,6 +1089,7 @@ impl ::core::default::Default for SI_PAGE_TYPE {
 }
 unsafe impl ::windows::core::Abi for SI_PAGE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SI_PAGE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

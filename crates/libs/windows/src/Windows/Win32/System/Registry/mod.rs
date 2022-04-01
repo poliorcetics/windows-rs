@@ -131,6 +131,7 @@ impl ::core::fmt::Debug for DSKTLSYSTEMTIME {
 }
 unsafe impl ::windows::core::Abi for DSKTLSYSTEMTIME {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DSKTLSYSTEMTIME {
     fn eq(&self, other: &Self) -> bool {
@@ -198,6 +199,7 @@ impl ::core::fmt::Debug for HKEY {
 }
 unsafe impl ::windows::core::Abi for HKEY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[doc = "*Required features: `\"Win32_System_Registry\"`*"]
 pub const HKEY_CLASSES_ROOT: HKEY = HKEY(-2147483648i32 as _);
@@ -1878,6 +1880,7 @@ impl ::core::default::Default for REG_CREATE_KEY_DISPOSITION {
 }
 unsafe impl ::windows::core::Abi for REG_CREATE_KEY_DISPOSITION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for REG_CREATE_KEY_DISPOSITION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1915,6 +1918,7 @@ impl ::core::default::Default for REG_NOTIFY_FILTER {
 }
 unsafe impl ::windows::core::Abi for REG_NOTIFY_FILTER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for REG_NOTIFY_FILTER {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1980,6 +1984,7 @@ impl ::core::default::Default for REG_OPEN_CREATE_OPTIONS {
 }
 unsafe impl ::windows::core::Abi for REG_OPEN_CREATE_OPTIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for REG_OPEN_CREATE_OPTIONS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2037,6 +2042,7 @@ impl ::core::default::Default for REG_RESTORE_KEY_FLAGS {
 }
 unsafe impl ::windows::core::Abi for REG_RESTORE_KEY_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for REG_RESTORE_KEY_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2086,6 +2092,7 @@ impl ::core::default::Default for REG_SAM_FLAGS {
 }
 unsafe impl ::windows::core::Abi for REG_SAM_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for REG_SAM_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2143,6 +2150,7 @@ impl ::core::default::Default for REG_SAVE_FORMAT {
 }
 unsafe impl ::windows::core::Abi for REG_SAVE_FORMAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for REG_SAVE_FORMAT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2198,6 +2206,7 @@ impl ::core::default::Default for REG_VALUE_TYPE {
 }
 unsafe impl ::windows::core::Abi for REG_VALUE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for REG_VALUE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2243,6 +2252,7 @@ impl ::core::default::Default for RRF_RT {
 }
 unsafe impl ::windows::core::Abi for RRF_RT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RRF_RT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3552,6 +3562,7 @@ impl ::core::fmt::Debug for VALENTA {
 }
 unsafe impl ::windows::core::Abi for VALENTA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VALENTA {
     fn eq(&self, other: &Self) -> bool {
@@ -3585,6 +3596,7 @@ impl ::core::fmt::Debug for VALENTW {
 }
 unsafe impl ::windows::core::Abi for VALENTW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VALENTW {
     fn eq(&self, other: &Self) -> bool {
@@ -3632,6 +3644,7 @@ impl ::core::fmt::Debug for provider_info {
 }
 unsafe impl ::windows::core::Abi for provider_info {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for provider_info {
     fn eq(&self, other: &Self) -> bool {
@@ -3665,6 +3678,7 @@ impl ::core::fmt::Debug for pvalueA {
 }
 unsafe impl ::windows::core::Abi for pvalueA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for pvalueA {
     fn eq(&self, other: &Self) -> bool {
@@ -3698,6 +3712,7 @@ impl ::core::fmt::Debug for pvalueW {
 }
 unsafe impl ::windows::core::Abi for pvalueW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for pvalueW {
     fn eq(&self, other: &Self) -> bool {
@@ -3730,6 +3745,7 @@ impl ::core::fmt::Debug for val_context {
 }
 unsafe impl ::windows::core::Abi for val_context {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for val_context {
     fn eq(&self, other: &Self) -> bool {

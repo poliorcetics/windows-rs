@@ -7,7 +7,7 @@ use bindings::*;
 /// implemented manually.
 ///
 /// # Safety
-pub unsafe trait Interface: Sized {
+pub unsafe trait Interface: Sized + Clone {
     #[doc(hidden)]
     type Vtable;
 

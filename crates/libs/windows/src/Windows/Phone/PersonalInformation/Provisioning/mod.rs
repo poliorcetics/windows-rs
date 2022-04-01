@@ -43,6 +43,11 @@ impl ::windows::core::RuntimeName for ContactPartnerProvisioningManager {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IContactPartnerProvisioningManagerStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IContactPartnerProvisioningManagerStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IContactPartnerProvisioningManagerStatics {
     type Vtable = IContactPartnerProvisioningManagerStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc0d79a21_01af_4fd3_98cd_b3d656de15f4);
@@ -63,6 +68,11 @@ pub struct IContactPartnerProvisioningManagerStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IContactPartnerProvisioningManagerStatics2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IContactPartnerProvisioningManagerStatics2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IContactPartnerProvisioningManagerStatics2 {
     type Vtable = IContactPartnerProvisioningManagerStatics2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc26155f7_55ed_475d_9334_c5d484c30f1a);
@@ -79,6 +89,11 @@ pub struct IContactPartnerProvisioningManagerStatics2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMessagePartnerProvisioningManagerStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMessagePartnerProvisioningManagerStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMessagePartnerProvisioningManagerStatics {
     type Vtable = IMessagePartnerProvisioningManagerStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x8a1b0850_73c5_457c_bc59_ed7d615c05a4);

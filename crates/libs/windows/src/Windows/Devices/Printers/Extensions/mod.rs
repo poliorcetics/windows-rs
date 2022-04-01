@@ -2,6 +2,11 @@
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrint3DWorkflow(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrint3DWorkflow {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrint3DWorkflow {
     type Vtable = IPrint3DWorkflow_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc56f74bd_3669_4a66_ab42_c8151930cd34);
@@ -26,6 +31,11 @@ pub struct IPrint3DWorkflow_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrint3DWorkflow2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrint3DWorkflow2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrint3DWorkflow2 {
     type Vtable = IPrint3DWorkflow2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa2a6c54f_8ac1_4918_9741_e34f3004239e);
@@ -46,6 +56,11 @@ pub struct IPrint3DWorkflow2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrint3DWorkflowPrintRequestedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrint3DWorkflowPrintRequestedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrint3DWorkflowPrintRequestedEventArgs {
     type Vtable = IPrint3DWorkflowPrintRequestedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x19f8c858_5ac8_4b55_8a5f_e61567dafb4d);
@@ -62,6 +77,11 @@ pub struct IPrint3DWorkflowPrintRequestedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrint3DWorkflowPrinterChangedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrint3DWorkflowPrinterChangedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrint3DWorkflowPrinterChangedEventArgs {
     type Vtable = IPrint3DWorkflowPrinterChangedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x45226402_95fc_4847_93b3_134dbf5c60f7);
@@ -75,6 +95,11 @@ pub struct IPrint3DWorkflowPrinterChangedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrintExtensionContextStatic(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrintExtensionContextStatic {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrintExtensionContextStatic {
     type Vtable = IPrintExtensionContextStatic_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe70d9fc1_ff79_4aa4_8c9b_0c93aedfde8a);
@@ -88,6 +113,11 @@ pub struct IPrintExtensionContextStatic_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrintNotificationEventDetails(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrintNotificationEventDetails {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrintNotificationEventDetails {
     type Vtable = IPrintNotificationEventDetails_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe00e4c8a_4828_4da1_8bb8_8672df8515e7);
@@ -103,6 +133,11 @@ pub struct IPrintNotificationEventDetails_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrintTaskConfiguration(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrintTaskConfiguration {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrintTaskConfiguration {
     type Vtable = IPrintTaskConfiguration_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe3c22451_3aa4_4885_9240_311f5f8fbe9d);
@@ -124,6 +159,11 @@ pub struct IPrintTaskConfiguration_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrintTaskConfigurationSaveRequest(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrintTaskConfigurationSaveRequest {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrintTaskConfigurationSaveRequest {
     type Vtable = IPrintTaskConfigurationSaveRequest_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xeeaf2fcb_621e_4b62_ac77_b281cce08d60);
@@ -143,6 +183,11 @@ pub struct IPrintTaskConfigurationSaveRequest_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrintTaskConfigurationSaveRequestedDeferral(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrintTaskConfigurationSaveRequestedDeferral {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrintTaskConfigurationSaveRequestedDeferral {
     type Vtable = IPrintTaskConfigurationSaveRequestedDeferral_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe959d568_f729_44a4_871d_bd0628696a33);
@@ -156,6 +201,11 @@ pub struct IPrintTaskConfigurationSaveRequestedDeferral_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrintTaskConfigurationSaveRequestedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrintTaskConfigurationSaveRequestedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrintTaskConfigurationSaveRequestedEventArgs {
     type Vtable = IPrintTaskConfigurationSaveRequestedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe06c2879_0d61_4938_91d0_96a45bee8479);
@@ -230,11 +280,6 @@ impl Print3DWorkflow {
         unsafe { (::windows::core::Interface::vtable(this).RemovePrinterChanged)(::core::mem::transmute_copy(this), eventcookie.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for Print3DWorkflow {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for Print3DWorkflow {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -248,7 +293,6 @@ impl ::core::fmt::Debug for Print3DWorkflow {
 }
 unsafe impl ::windows::core::RuntimeType for Print3DWorkflow {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Printers.Extensions.Print3DWorkflow;{c56f74bd-3669-4a66-ab42-c8151930cd34})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -328,6 +372,7 @@ impl ::core::default::Default for Print3DWorkflowDetail {
 }
 unsafe impl ::windows::core::Abi for Print3DWorkflowDetail {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for Print3DWorkflowDetail {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -336,7 +381,6 @@ impl ::core::fmt::Debug for Print3DWorkflowDetail {
 }
 unsafe impl ::windows::core::RuntimeType for Print3DWorkflowDetail {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.Printers.Extensions.Print3DWorkflowDetail;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -369,11 +413,6 @@ impl Print3DWorkflowPrintRequestedEventArgs {
         unsafe { (::windows::core::Interface::vtable(this).SetSourceChanged)(::core::mem::transmute_copy(this), value).ok() }
     }
 }
-impl ::core::clone::Clone for Print3DWorkflowPrintRequestedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for Print3DWorkflowPrintRequestedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -387,7 +426,6 @@ impl ::core::fmt::Debug for Print3DWorkflowPrintRequestedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for Print3DWorkflowPrintRequestedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Printers.Extensions.Print3DWorkflowPrintRequestedEventArgs;{19f8c858-5ac8-4b55-8a5f-e61567dafb4d})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -454,11 +492,6 @@ impl Print3DWorkflowPrinterChangedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for Print3DWorkflowPrinterChangedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for Print3DWorkflowPrinterChangedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -472,7 +505,6 @@ impl ::core::fmt::Debug for Print3DWorkflowPrinterChangedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for Print3DWorkflowPrinterChangedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Printers.Extensions.Print3DWorkflowPrinterChangedEventArgs;{45226402-95fc-4847-93b3-134dbf5c60f7})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -550,6 +582,7 @@ impl ::core::default::Default for Print3DWorkflowStatus {
 }
 unsafe impl ::windows::core::Abi for Print3DWorkflowStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for Print3DWorkflowStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -558,7 +591,6 @@ impl ::core::fmt::Debug for Print3DWorkflowStatus {
 }
 unsafe impl ::windows::core::RuntimeType for Print3DWorkflowStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.Printers.Extensions.Print3DWorkflowStatus;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -608,11 +640,6 @@ impl PrintNotificationEventDetails {
         unsafe { (::windows::core::Interface::vtable(this).SetEventData)(::core::mem::transmute_copy(this), value.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for PrintNotificationEventDetails {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PrintNotificationEventDetails {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -626,7 +653,6 @@ impl ::core::fmt::Debug for PrintNotificationEventDetails {
 }
 unsafe impl ::windows::core::RuntimeType for PrintNotificationEventDetails {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Printers.Extensions.PrintNotificationEventDetails;{e00e4c8a-4828-4da1-8bb8-8672df8515e7})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -708,11 +734,6 @@ impl PrintTaskConfiguration {
         unsafe { (::windows::core::Interface::vtable(this).RemoveSaveRequested)(::core::mem::transmute_copy(this), eventcookie.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for PrintTaskConfiguration {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PrintTaskConfiguration {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -726,7 +747,6 @@ impl ::core::fmt::Debug for PrintTaskConfiguration {
 }
 unsafe impl ::windows::core::RuntimeType for PrintTaskConfiguration {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Printers.Extensions.PrintTaskConfiguration;{e3c22451-3aa4-4885-9240-311f5f8fbe9d})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -810,11 +830,6 @@ impl PrintTaskConfigurationSaveRequest {
         }
     }
 }
-impl ::core::clone::Clone for PrintTaskConfigurationSaveRequest {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PrintTaskConfigurationSaveRequest {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -828,7 +843,6 @@ impl ::core::fmt::Debug for PrintTaskConfigurationSaveRequest {
 }
 unsafe impl ::windows::core::RuntimeType for PrintTaskConfigurationSaveRequest {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Printers.Extensions.PrintTaskConfigurationSaveRequest;{eeaf2fcb-621e-4b62-ac77-b281cce08d60})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -890,11 +904,6 @@ impl PrintTaskConfigurationSaveRequestedDeferral {
         unsafe { (::windows::core::Interface::vtable(this).Complete)(::core::mem::transmute_copy(this)).ok() }
     }
 }
-impl ::core::clone::Clone for PrintTaskConfigurationSaveRequestedDeferral {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PrintTaskConfigurationSaveRequestedDeferral {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -908,7 +917,6 @@ impl ::core::fmt::Debug for PrintTaskConfigurationSaveRequestedDeferral {
 }
 unsafe impl ::windows::core::RuntimeType for PrintTaskConfigurationSaveRequestedDeferral {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Printers.Extensions.PrintTaskConfigurationSaveRequestedDeferral;{e959d568-f729-44a4-871d-bd0628696a33})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -973,11 +981,6 @@ impl PrintTaskConfigurationSaveRequestedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for PrintTaskConfigurationSaveRequestedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PrintTaskConfigurationSaveRequestedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -991,7 +994,6 @@ impl ::core::fmt::Debug for PrintTaskConfigurationSaveRequestedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for PrintTaskConfigurationSaveRequestedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Printers.Extensions.PrintTaskConfigurationSaveRequestedEventArgs;{e06c2879-0d61-4938-91d0-96a45bee8479})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

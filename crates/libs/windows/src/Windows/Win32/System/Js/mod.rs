@@ -533,6 +533,7 @@ impl ::core::default::Default for JsErrorCode {
 }
 unsafe impl ::windows::core::Abi for JsErrorCode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for JsErrorCode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -972,6 +973,7 @@ impl ::core::default::Default for JsMemoryEventType {
 }
 unsafe impl ::windows::core::Abi for JsMemoryEventType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for JsMemoryEventType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1121,6 +1123,7 @@ impl ::core::default::Default for JsRuntimeAttributes {
 }
 unsafe impl ::windows::core::Abi for JsRuntimeAttributes {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for JsRuntimeAttributes {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1150,6 +1153,7 @@ impl ::core::default::Default for JsRuntimeVersion {
 }
 unsafe impl ::windows::core::Abi for JsRuntimeVersion {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for JsRuntimeVersion {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1437,6 +1441,7 @@ impl ::core::default::Default for JsValueType {
 }
 unsafe impl ::windows::core::Abi for JsValueType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for JsValueType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

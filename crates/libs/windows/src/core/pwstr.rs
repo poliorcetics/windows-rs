@@ -32,4 +32,5 @@ impl ::core::fmt::Debug for PWSTR {
 }
 unsafe impl Abi for PWSTR {
     type Abi = Self;
+    type DefaultType = Self;
 }

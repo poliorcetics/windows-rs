@@ -8,6 +8,11 @@ pub const CLSID_MILBitmapEffectOuterGlow: ::windows::core::GUID = ::windows::cor
 #[doc = "*Required features: `\"Win32_UI_Wpf\"`*"]
 #[repr(transparent)]
 pub struct IMILBitmapEffect(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMILBitmapEffect {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMILBitmapEffect {
     #[doc = "*Required features: `\"Win32_UI_Wpf\"`, `\"Win32_Graphics_Imaging\"`*"]
     #[cfg(feature = "Win32_Graphics_Imaging")]
@@ -46,11 +51,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMILB
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMILBitmapEffect {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMILBitmapEffect {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -83,6 +83,11 @@ pub struct IMILBitmapEffect_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Wpf\"`*"]
 #[repr(transparent)]
 pub struct IMILBitmapEffectConnections(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMILBitmapEffectConnections {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMILBitmapEffectConnections {
     #[doc = "*Required features: `\"Win32_UI_Wpf\"`*"]
     pub unsafe fn GetInputConnector(&self, uiindex: u32) -> ::windows::core::Result<IMILBitmapEffectInputConnector> {
@@ -115,11 +120,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMILB
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMILBitmapEffectConnections {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMILBitmapEffectConnections {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -145,6 +145,11 @@ pub struct IMILBitmapEffectConnections_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Wpf\"`*"]
 #[repr(transparent)]
 pub struct IMILBitmapEffectConnectionsInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMILBitmapEffectConnectionsInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMILBitmapEffectConnectionsInfo {
     #[doc = "*Required features: `\"Win32_UI_Wpf\"`*"]
     pub unsafe fn GetNumberInputs(&self) -> ::windows::core::Result<u32> {
@@ -187,11 +192,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMILB
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMILBitmapEffectConnectionsInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMILBitmapEffectConnectionsInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -219,6 +219,11 @@ pub struct IMILBitmapEffectConnectionsInfo_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Wpf\"`*"]
 #[repr(transparent)]
 pub struct IMILBitmapEffectConnector(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMILBitmapEffectConnector {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMILBitmapEffectConnector {
     #[doc = "*Required features: `\"Win32_UI_Wpf\"`*"]
     pub unsafe fn GetIndex(&self) -> ::windows::core::Result<u32> {
@@ -291,11 +296,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMILBitmapEffectConnectorInfo> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMILBitmapEffectConnector {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMILBitmapEffectConnector {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -321,6 +321,11 @@ pub struct IMILBitmapEffectConnector_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Wpf\"`*"]
 #[repr(transparent)]
 pub struct IMILBitmapEffectConnectorInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMILBitmapEffectConnectorInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMILBitmapEffectConnectorInfo {
     #[doc = "*Required features: `\"Win32_UI_Wpf\"`*"]
     pub unsafe fn GetIndex(&self) -> ::windows::core::Result<u32> {
@@ -363,11 +368,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMILB
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMILBitmapEffectConnectorInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMILBitmapEffectConnectorInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -395,6 +395,11 @@ pub struct IMILBitmapEffectConnectorInfo_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Wpf\"`*"]
 #[repr(transparent)]
 pub struct IMILBitmapEffectEvents(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMILBitmapEffectEvents {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMILBitmapEffectEvents {
     #[doc = "*Required features: `\"Win32_UI_Wpf\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -426,11 +431,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMILB
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMILBitmapEffectEvents {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMILBitmapEffectEvents {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -459,6 +459,11 @@ pub struct IMILBitmapEffectEvents_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Wpf\"`*"]
 #[repr(transparent)]
 pub struct IMILBitmapEffectFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMILBitmapEffectFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMILBitmapEffectFactory {
     #[doc = "*Required features: `\"Win32_UI_Wpf\"`*"]
     pub unsafe fn CreateEffect(&self, pguideffect: *const ::windows::core::GUID) -> ::windows::core::Result<IMILBitmapEffect> {
@@ -496,11 +501,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMILB
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMILBitmapEffectFactory {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMILBitmapEffectFactory {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -527,6 +527,11 @@ pub struct IMILBitmapEffectFactory_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Wpf\"`*"]
 #[repr(transparent)]
 pub struct IMILBitmapEffectGroup(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMILBitmapEffectGroup {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMILBitmapEffectGroup {
     #[doc = "*Required features: `\"Win32_UI_Wpf\"`*"]
     pub unsafe fn GetInteriorInputConnector(&self, uiindex: u32) -> ::windows::core::Result<IMILBitmapEffectOutputConnector> {
@@ -563,11 +568,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMILB
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMILBitmapEffectGroup {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMILBitmapEffectGroup {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -594,6 +594,11 @@ pub struct IMILBitmapEffectGroup_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Wpf\"`*"]
 #[repr(transparent)]
 pub struct IMILBitmapEffectGroupImpl(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMILBitmapEffectGroupImpl {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMILBitmapEffectGroupImpl {
     #[doc = "*Required features: `\"Win32_UI_Wpf\"`*"]
     pub unsafe fn Preprocess<'a, Param0: ::windows::core::IntoParam<'a, IMILBitmapEffectRenderContext>>(&self, pcontext: Param0) -> ::windows::core::Result<()> {
@@ -630,11 +635,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMILB
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMILBitmapEffectGroupImpl {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMILBitmapEffectGroupImpl {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -661,6 +661,11 @@ pub struct IMILBitmapEffectGroupImpl_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Wpf\"`*"]
 #[repr(transparent)]
 pub struct IMILBitmapEffectImpl(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMILBitmapEffectImpl {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMILBitmapEffectImpl {
     #[doc = "*Required features: `\"Win32_UI_Wpf\"`*"]
     pub unsafe fn IsInPlaceModificationAllowed<'a, Param0: ::windows::core::IntoParam<'a, IMILBitmapEffectOutputConnector>>(&self, poutputconnector: Param0) -> ::windows::core::Result<i16> {
@@ -717,11 +722,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMILB
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMILBitmapEffectImpl {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMILBitmapEffectImpl {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -761,6 +761,11 @@ pub struct IMILBitmapEffectImpl_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Wpf\"`*"]
 #[repr(transparent)]
 pub struct IMILBitmapEffectInputConnector(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMILBitmapEffectInputConnector {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMILBitmapEffectInputConnector {
     #[doc = "*Required features: `\"Win32_UI_Wpf\"`*"]
     pub unsafe fn GetIndex(&self) -> ::windows::core::Result<u32> {
@@ -862,11 +867,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMILBitmapEffectConnector> for &'a IMILB
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMILBitmapEffectInputConnector {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMILBitmapEffectInputConnector {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -892,6 +892,11 @@ pub struct IMILBitmapEffectInputConnector_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Wpf\"`*"]
 #[repr(transparent)]
 pub struct IMILBitmapEffectInteriorInputConnector(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMILBitmapEffectInteriorInputConnector {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMILBitmapEffectInteriorInputConnector {
     #[doc = "*Required features: `\"Win32_UI_Wpf\"`*"]
     pub unsafe fn GetInputConnector(&self) -> ::windows::core::Result<IMILBitmapEffectInputConnector> {
@@ -919,11 +924,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMILB
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMILBitmapEffectInteriorInputConnector {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMILBitmapEffectInteriorInputConnector {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -948,6 +948,11 @@ pub struct IMILBitmapEffectInteriorInputConnector_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Wpf\"`*"]
 #[repr(transparent)]
 pub struct IMILBitmapEffectInteriorOutputConnector(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMILBitmapEffectInteriorOutputConnector {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMILBitmapEffectInteriorOutputConnector {
     #[doc = "*Required features: `\"Win32_UI_Wpf\"`*"]
     pub unsafe fn GetOutputConnector(&self) -> ::windows::core::Result<IMILBitmapEffectOutputConnector> {
@@ -975,11 +980,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMILB
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMILBitmapEffectInteriorOutputConnector {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMILBitmapEffectInteriorOutputConnector {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1004,6 +1004,11 @@ pub struct IMILBitmapEffectInteriorOutputConnector_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Wpf\"`*"]
 #[repr(transparent)]
 pub struct IMILBitmapEffectOutputConnector(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMILBitmapEffectOutputConnector {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMILBitmapEffectOutputConnector {
     #[doc = "*Required features: `\"Win32_UI_Wpf\"`*"]
     pub unsafe fn GetIndex(&self) -> ::windows::core::Result<u32> {
@@ -1106,11 +1111,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMILBitmapEffectConnector> for &'a IMILB
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMILBitmapEffectOutputConnector {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMILBitmapEffectOutputConnector {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1136,6 +1136,11 @@ pub struct IMILBitmapEffectOutputConnector_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Wpf\"`*"]
 #[repr(transparent)]
 pub struct IMILBitmapEffectOutputConnectorImpl(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMILBitmapEffectOutputConnectorImpl {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMILBitmapEffectOutputConnectorImpl {
     #[doc = "*Required features: `\"Win32_UI_Wpf\"`*"]
     pub unsafe fn AddBackLink<'a, Param0: ::windows::core::IntoParam<'a, IMILBitmapEffectInputConnector>>(&self, pconnection: Param0) -> ::windows::core::Result<()> {
@@ -1166,11 +1171,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMILB
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMILBitmapEffectOutputConnectorImpl {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMILBitmapEffectOutputConnectorImpl {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1196,6 +1196,11 @@ pub struct IMILBitmapEffectOutputConnectorImpl_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Wpf\"`*"]
 #[repr(transparent)]
 pub struct IMILBitmapEffectPrimitive(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMILBitmapEffectPrimitive {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMILBitmapEffectPrimitive {
     #[doc = "*Required features: `\"Win32_UI_Wpf\"`, `\"Win32_Graphics_Imaging\"`*"]
     #[cfg(feature = "Win32_Graphics_Imaging")]
@@ -1246,11 +1251,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMILB
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMILBitmapEffectPrimitive {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMILBitmapEffectPrimitive {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1286,6 +1286,11 @@ pub struct IMILBitmapEffectPrimitive_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Wpf\"`*"]
 #[repr(transparent)]
 pub struct IMILBitmapEffectPrimitiveImpl(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMILBitmapEffectPrimitiveImpl {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMILBitmapEffectPrimitiveImpl {
     #[doc = "*Required features: `\"Win32_UI_Wpf\"`*"]
     pub unsafe fn IsDirty(&self, uioutputindex: u32, pfdirty: *mut i16) -> ::windows::core::HRESULT {
@@ -1317,11 +1322,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMILB
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMILBitmapEffectPrimitiveImpl {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMILBitmapEffectPrimitiveImpl {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1347,6 +1347,11 @@ pub struct IMILBitmapEffectPrimitiveImpl_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Wpf\"`*"]
 #[repr(transparent)]
 pub struct IMILBitmapEffectRenderContext(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMILBitmapEffectRenderContext {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMILBitmapEffectRenderContext {
     #[doc = "*Required features: `\"Win32_UI_Wpf\"`*"]
     pub unsafe fn SetOutputPixelFormat(&self, format: *const ::windows::core::GUID) -> ::windows::core::Result<()> {
@@ -1403,11 +1408,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMILB
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMILBitmapEffectRenderContext {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMILBitmapEffectRenderContext {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1439,6 +1439,11 @@ pub struct IMILBitmapEffectRenderContext_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Wpf\"`*"]
 #[repr(transparent)]
 pub struct IMILBitmapEffectRenderContextImpl(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMILBitmapEffectRenderContextImpl {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMILBitmapEffectRenderContextImpl {
     #[doc = "*Required features: `\"Win32_UI_Wpf\"`*"]
     pub unsafe fn GetUseSoftwareRenderer(&self) -> ::windows::core::Result<i16> {
@@ -1482,11 +1487,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMILB
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMILBitmapEffectRenderContextImpl {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMILBitmapEffectRenderContextImpl {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1515,6 +1515,11 @@ pub struct IMILBitmapEffectRenderContextImpl_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Wpf\"`*"]
 #[repr(transparent)]
 pub struct IMILBitmapEffects(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMILBitmapEffects {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMILBitmapEffects {
     #[doc = "*Required features: `\"Win32_UI_Wpf\"`*"]
     pub unsafe fn _NewEnum(&self) -> ::windows::core::Result<::windows::core::IUnknown> {
@@ -1555,11 +1560,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IMILBitma
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMILBitmapEffects {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IMILBitmapEffects {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IMILBitmapEffects {
@@ -1621,6 +1621,7 @@ impl ::core::fmt::Debug for MILMatrixF {
 }
 unsafe impl ::windows::core::Abi for MILMatrixF {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MILMatrixF {
     fn eq(&self, other: &Self) -> bool {
@@ -1652,6 +1653,7 @@ impl ::core::fmt::Debug for MilPoint2D {
 }
 unsafe impl ::windows::core::Abi for MilPoint2D {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MilPoint2D {
     fn eq(&self, other: &Self) -> bool {
@@ -1685,6 +1687,7 @@ impl ::core::fmt::Debug for MilRectD {
 }
 unsafe impl ::windows::core::Abi for MilRectD {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MilRectD {
     fn eq(&self, other: &Self) -> bool {

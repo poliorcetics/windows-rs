@@ -2,6 +2,11 @@
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Opc\"`*"]
 #[repr(transparent)]
 pub struct IOpcCertificateEnumerator(::windows::core::IUnknown);
+impl ::core::clone::Clone for IOpcCertificateEnumerator {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IOpcCertificateEnumerator {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Opc\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -44,11 +49,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IOpcC
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IOpcCertificateEnumerator {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IOpcCertificateEnumerator {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -85,6 +85,11 @@ pub struct IOpcCertificateEnumerator_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Opc\"`*"]
 #[repr(transparent)]
 pub struct IOpcCertificateSet(::windows::core::IUnknown);
+impl ::core::clone::Clone for IOpcCertificateSet {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IOpcCertificateSet {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Opc\"`, `\"Win32_Foundation\"`, `\"Win32_Security_Cryptography\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography"))]
@@ -122,11 +127,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IOpcC
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IOpcCertificateSet {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IOpcCertificateSet {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -159,6 +159,11 @@ pub struct IOpcCertificateSet_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Opc\"`*"]
 #[repr(transparent)]
 pub struct IOpcDigitalSignature(::windows::core::IUnknown);
+impl ::core::clone::Clone for IOpcDigitalSignature {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IOpcDigitalSignature {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Opc\"`*"]
     pub unsafe fn GetNamespaces(&self, prefixes: *mut *mut ::windows::core::PWSTR, namespaces: *mut *mut ::windows::core::PWSTR, count: *mut u32) -> ::windows::core::Result<()> {
@@ -252,11 +257,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IOpcD
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IOpcDigitalSignature {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IOpcDigitalSignature {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -298,6 +298,11 @@ pub struct IOpcDigitalSignature_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Opc\"`*"]
 #[repr(transparent)]
 pub struct IOpcDigitalSignatureEnumerator(::windows::core::IUnknown);
+impl ::core::clone::Clone for IOpcDigitalSignatureEnumerator {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IOpcDigitalSignatureEnumerator {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Opc\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -342,11 +347,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IOpcD
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IOpcDigitalSignatureEnumerator {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IOpcDigitalSignatureEnumerator {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -380,6 +380,11 @@ pub struct IOpcDigitalSignatureEnumerator_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Opc\"`*"]
 #[repr(transparent)]
 pub struct IOpcDigitalSignatureManager(::windows::core::IUnknown);
+impl ::core::clone::Clone for IOpcDigitalSignatureManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IOpcDigitalSignatureManager {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Opc\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -445,11 +450,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IOpcD
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IOpcDigitalSignatureManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IOpcDigitalSignatureManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -499,6 +499,11 @@ pub struct IOpcDigitalSignatureManager_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Opc\"`*"]
 #[repr(transparent)]
 pub struct IOpcFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IOpcFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IOpcFactory {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Opc\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -560,11 +565,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IOpcF
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IOpcFactory {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IOpcFactory {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -610,6 +610,11 @@ pub struct IOpcFactory_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Opc\"`*"]
 #[repr(transparent)]
 pub struct IOpcPackage(::windows::core::IUnknown);
+impl ::core::clone::Clone for IOpcPackage {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IOpcPackage {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Opc\"`*"]
     pub unsafe fn GetPartSet(&self) -> ::windows::core::Result<IOpcPartSet> {
@@ -642,11 +647,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IOpcP
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IOpcPackage {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IOpcPackage {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -672,6 +672,11 @@ pub struct IOpcPackage_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Opc\"`*"]
 #[repr(transparent)]
 pub struct IOpcPart(::windows::core::IUnknown);
+impl ::core::clone::Clone for IOpcPart {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IOpcPart {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Opc\"`*"]
     pub unsafe fn GetRelationshipSet(&self) -> ::windows::core::Result<IOpcRelationshipSet> {
@@ -721,11 +726,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IOpcP
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IOpcPart {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IOpcPart {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -760,6 +760,11 @@ pub struct IOpcPart_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Opc\"`*"]
 #[repr(transparent)]
 pub struct IOpcPartEnumerator(::windows::core::IUnknown);
+impl ::core::clone::Clone for IOpcPartEnumerator {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IOpcPartEnumerator {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Opc\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -804,11 +809,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IOpcP
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IOpcPartEnumerator {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IOpcPartEnumerator {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -842,6 +842,11 @@ pub struct IOpcPartEnumerator_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Opc\"`*"]
 #[repr(transparent)]
 pub struct IOpcPartSet(::windows::core::IUnknown);
+impl ::core::clone::Clone for IOpcPartSet {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IOpcPartSet {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Opc\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -892,11 +897,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IOpcP
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IOpcPartSet {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IOpcPartSet {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -938,6 +938,12 @@ pub struct IOpcPartSet_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IOpcPartUri(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IOpcPartUri {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IOpcPartUri {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Opc\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`*"]
@@ -1197,12 +1203,6 @@ impl<'a> ::windows::core::IntoParam<'a, IOpcUri> for &'a IOpcPartUri {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IOpcPartUri {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IOpcPartUri {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1242,6 +1242,11 @@ pub struct IOpcPartUri_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Opc\"`*"]
 #[repr(transparent)]
 pub struct IOpcRelationship(::windows::core::IUnknown);
+impl ::core::clone::Clone for IOpcRelationship {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IOpcRelationship {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Opc\"`*"]
     pub unsafe fn GetId(&self) -> ::windows::core::Result<::windows::core::PWSTR> {
@@ -1291,11 +1296,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IOpcR
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IOpcRelationship {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IOpcRelationship {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1330,6 +1330,11 @@ pub struct IOpcRelationship_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Opc\"`*"]
 #[repr(transparent)]
 pub struct IOpcRelationshipEnumerator(::windows::core::IUnknown);
+impl ::core::clone::Clone for IOpcRelationshipEnumerator {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IOpcRelationshipEnumerator {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Opc\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -1374,11 +1379,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IOpcR
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IOpcRelationshipEnumerator {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IOpcRelationshipEnumerator {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1412,6 +1412,11 @@ pub struct IOpcRelationshipEnumerator_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Opc\"`*"]
 #[repr(transparent)]
 pub struct IOpcRelationshipSelector(::windows::core::IUnknown);
+impl ::core::clone::Clone for IOpcRelationshipSelector {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IOpcRelationshipSelector {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Opc\"`*"]
     pub unsafe fn GetSelectorType(&self) -> ::windows::core::Result<OPC_RELATIONSHIP_SELECTOR> {
@@ -1444,11 +1449,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IOpcR
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IOpcRelationshipSelector {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IOpcRelationshipSelector {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1474,6 +1474,11 @@ pub struct IOpcRelationshipSelector_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Opc\"`*"]
 #[repr(transparent)]
 pub struct IOpcRelationshipSelectorEnumerator(::windows::core::IUnknown);
+impl ::core::clone::Clone for IOpcRelationshipSelectorEnumerator {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IOpcRelationshipSelectorEnumerator {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Opc\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -1518,11 +1523,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IOpcR
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IOpcRelationshipSelectorEnumerator {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IOpcRelationshipSelectorEnumerator {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1556,6 +1556,11 @@ pub struct IOpcRelationshipSelectorEnumerator_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Opc\"`*"]
 #[repr(transparent)]
 pub struct IOpcRelationshipSelectorSet(::windows::core::IUnknown);
+impl ::core::clone::Clone for IOpcRelationshipSelectorSet {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IOpcRelationshipSelectorSet {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Opc\"`*"]
     pub unsafe fn Create<'a, Param1: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, selector: OPC_RELATIONSHIP_SELECTOR, selectioncriterion: Param1) -> ::windows::core::Result<IOpcRelationshipSelector> {
@@ -1592,11 +1597,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IOpcR
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IOpcRelationshipSelectorSet {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IOpcRelationshipSelectorSet {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1623,6 +1623,11 @@ pub struct IOpcRelationshipSelectorSet_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Opc\"`*"]
 #[repr(transparent)]
 pub struct IOpcRelationshipSet(::windows::core::IUnknown);
+impl ::core::clone::Clone for IOpcRelationshipSet {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IOpcRelationshipSet {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Opc\"`*"]
     pub unsafe fn GetRelationship<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, relationshipidentifier: Param0) -> ::windows::core::Result<IOpcRelationship> {
@@ -1682,11 +1687,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IOpcR
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IOpcRelationshipSet {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IOpcRelationshipSet {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1726,6 +1726,11 @@ pub struct IOpcRelationshipSet_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Opc\"`*"]
 #[repr(transparent)]
 pub struct IOpcSignatureCustomObject(::windows::core::IUnknown);
+impl ::core::clone::Clone for IOpcSignatureCustomObject {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IOpcSignatureCustomObject {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Opc\"`*"]
     pub unsafe fn GetXml(&self, xmlmarkup: *mut *mut u8, count: *mut u32) -> ::windows::core::Result<()> {
@@ -1752,11 +1757,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IOpcS
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IOpcSignatureCustomObject {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IOpcSignatureCustomObject {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1781,6 +1781,11 @@ pub struct IOpcSignatureCustomObject_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Opc\"`*"]
 #[repr(transparent)]
 pub struct IOpcSignatureCustomObjectEnumerator(::windows::core::IUnknown);
+impl ::core::clone::Clone for IOpcSignatureCustomObjectEnumerator {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IOpcSignatureCustomObjectEnumerator {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Opc\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -1825,11 +1830,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IOpcS
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IOpcSignatureCustomObjectEnumerator {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IOpcSignatureCustomObjectEnumerator {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1863,6 +1863,11 @@ pub struct IOpcSignatureCustomObjectEnumerator_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Opc\"`*"]
 #[repr(transparent)]
 pub struct IOpcSignatureCustomObjectSet(::windows::core::IUnknown);
+impl ::core::clone::Clone for IOpcSignatureCustomObjectSet {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IOpcSignatureCustomObjectSet {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Opc\"`*"]
     pub unsafe fn Create(&self, xmlmarkup: &[u8]) -> ::windows::core::Result<IOpcSignatureCustomObject> {
@@ -1899,11 +1904,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IOpcS
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IOpcSignatureCustomObjectSet {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IOpcSignatureCustomObjectSet {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1930,6 +1930,11 @@ pub struct IOpcSignatureCustomObjectSet_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Opc\"`*"]
 #[repr(transparent)]
 pub struct IOpcSignaturePartReference(::windows::core::IUnknown);
+impl ::core::clone::Clone for IOpcSignaturePartReference {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IOpcSignaturePartReference {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Opc\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -1977,11 +1982,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IOpcS
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IOpcSignaturePartReference {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IOpcSignaturePartReference {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2013,6 +2013,11 @@ pub struct IOpcSignaturePartReference_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Opc\"`*"]
 #[repr(transparent)]
 pub struct IOpcSignaturePartReferenceEnumerator(::windows::core::IUnknown);
+impl ::core::clone::Clone for IOpcSignaturePartReferenceEnumerator {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IOpcSignaturePartReferenceEnumerator {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Opc\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -2057,11 +2062,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IOpcS
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IOpcSignaturePartReferenceEnumerator {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IOpcSignaturePartReferenceEnumerator {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2095,6 +2095,11 @@ pub struct IOpcSignaturePartReferenceEnumerator_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Opc\"`*"]
 #[repr(transparent)]
 pub struct IOpcSignaturePartReferenceSet(::windows::core::IUnknown);
+impl ::core::clone::Clone for IOpcSignaturePartReferenceSet {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IOpcSignaturePartReferenceSet {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Opc\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -2132,11 +2137,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IOpcS
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IOpcSignaturePartReferenceSet {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IOpcSignaturePartReferenceSet {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2166,6 +2166,11 @@ pub struct IOpcSignaturePartReferenceSet_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Opc\"`*"]
 #[repr(transparent)]
 pub struct IOpcSignatureReference(::windows::core::IUnknown);
+impl ::core::clone::Clone for IOpcSignatureReference {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IOpcSignatureReference {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Opc\"`*"]
     pub unsafe fn GetId(&self) -> ::windows::core::Result<::windows::core::PWSTR> {
@@ -2218,11 +2223,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IOpcS
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IOpcSignatureReference {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IOpcSignatureReference {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2255,6 +2255,11 @@ pub struct IOpcSignatureReference_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Opc\"`*"]
 #[repr(transparent)]
 pub struct IOpcSignatureReferenceEnumerator(::windows::core::IUnknown);
+impl ::core::clone::Clone for IOpcSignatureReferenceEnumerator {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IOpcSignatureReferenceEnumerator {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Opc\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -2299,11 +2304,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IOpcS
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IOpcSignatureReferenceEnumerator {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IOpcSignatureReferenceEnumerator {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2337,6 +2337,11 @@ pub struct IOpcSignatureReferenceEnumerator_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Opc\"`*"]
 #[repr(transparent)]
 pub struct IOpcSignatureReferenceSet(::windows::core::IUnknown);
+impl ::core::clone::Clone for IOpcSignatureReferenceSet {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IOpcSignatureReferenceSet {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Opc\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -2374,11 +2379,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IOpcS
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IOpcSignatureReferenceSet {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IOpcSignatureReferenceSet {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2408,6 +2408,11 @@ pub struct IOpcSignatureReferenceSet_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Opc\"`*"]
 #[repr(transparent)]
 pub struct IOpcSignatureRelationshipReference(::windows::core::IUnknown);
+impl ::core::clone::Clone for IOpcSignatureRelationshipReference {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IOpcSignatureRelationshipReference {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Opc\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -2460,11 +2465,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IOpcS
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IOpcSignatureRelationshipReference {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IOpcSignatureRelationshipReference {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2497,6 +2497,11 @@ pub struct IOpcSignatureRelationshipReference_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Opc\"`*"]
 #[repr(transparent)]
 pub struct IOpcSignatureRelationshipReferenceEnumerator(::windows::core::IUnknown);
+impl ::core::clone::Clone for IOpcSignatureRelationshipReferenceEnumerator {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IOpcSignatureRelationshipReferenceEnumerator {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Opc\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -2541,11 +2546,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IOpcS
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IOpcSignatureRelationshipReferenceEnumerator {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IOpcSignatureRelationshipReferenceEnumerator {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2579,6 +2579,11 @@ pub struct IOpcSignatureRelationshipReferenceEnumerator_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Opc\"`*"]
 #[repr(transparent)]
 pub struct IOpcSignatureRelationshipReferenceSet(::windows::core::IUnknown);
+impl ::core::clone::Clone for IOpcSignatureRelationshipReferenceSet {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IOpcSignatureRelationshipReferenceSet {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Opc\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -2621,11 +2626,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IOpcS
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IOpcSignatureRelationshipReferenceSet {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IOpcSignatureRelationshipReferenceSet {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2656,6 +2656,11 @@ pub struct IOpcSignatureRelationshipReferenceSet_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Packaging_Opc\"`*"]
 #[repr(transparent)]
 pub struct IOpcSigningOptions(::windows::core::IUnknown);
+impl ::core::clone::Clone for IOpcSigningOptions {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IOpcSigningOptions {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Opc\"`*"]
     pub unsafe fn GetSignatureId(&self) -> ::windows::core::Result<::windows::core::PWSTR> {
@@ -2759,11 +2764,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IOpcS
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IOpcSigningOptions {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IOpcSigningOptions {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2811,6 +2811,12 @@ pub struct IOpcSigningOptions_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IOpcUri(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IOpcUri {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IOpcUri {
     #[doc = "*Required features: `\"Win32_Storage_Packaging_Opc\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`*"]
@@ -3028,12 +3034,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IUri> 
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IOpcUri {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IOpcUri {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3093,6 +3093,7 @@ impl ::core::default::Default for OPC_CANONICALIZATION_METHOD {
 }
 unsafe impl ::windows::core::Abi for OPC_CANONICALIZATION_METHOD {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for OPC_CANONICALIZATION_METHOD {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3122,6 +3123,7 @@ impl ::core::default::Default for OPC_CERTIFICATE_EMBEDDING_OPTION {
 }
 unsafe impl ::windows::core::Abi for OPC_CERTIFICATE_EMBEDDING_OPTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for OPC_CERTIFICATE_EMBEDDING_OPTION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3155,6 +3157,7 @@ impl ::core::default::Default for OPC_COMPRESSION_OPTIONS {
 }
 unsafe impl ::windows::core::Abi for OPC_COMPRESSION_OPTIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for OPC_COMPRESSION_OPTIONS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3388,6 +3391,7 @@ impl ::core::default::Default for OPC_READ_FLAGS {
 }
 unsafe impl ::windows::core::Abi for OPC_READ_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for OPC_READ_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3443,6 +3447,7 @@ impl ::core::default::Default for OPC_RELATIONSHIPS_SIGNING_OPTION {
 }
 unsafe impl ::windows::core::Abi for OPC_RELATIONSHIPS_SIGNING_OPTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for OPC_RELATIONSHIPS_SIGNING_OPTION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3470,6 +3475,7 @@ impl ::core::default::Default for OPC_RELATIONSHIP_SELECTOR {
 }
 unsafe impl ::windows::core::Abi for OPC_RELATIONSHIP_SELECTOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for OPC_RELATIONSHIP_SELECTOR {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3505,6 +3511,7 @@ impl ::core::default::Default for OPC_SIGNATURE_TIME_FORMAT {
 }
 unsafe impl ::windows::core::Abi for OPC_SIGNATURE_TIME_FORMAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for OPC_SIGNATURE_TIME_FORMAT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3532,6 +3539,7 @@ impl ::core::default::Default for OPC_SIGNATURE_VALIDATION_RESULT {
 }
 unsafe impl ::windows::core::Abi for OPC_SIGNATURE_VALIDATION_RESULT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for OPC_SIGNATURE_VALIDATION_RESULT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3559,6 +3567,7 @@ impl ::core::default::Default for OPC_STREAM_IO_MODE {
 }
 unsafe impl ::windows::core::Abi for OPC_STREAM_IO_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for OPC_STREAM_IO_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3586,6 +3595,7 @@ impl ::core::default::Default for OPC_URI_TARGET_MODE {
 }
 unsafe impl ::windows::core::Abi for OPC_URI_TARGET_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for OPC_URI_TARGET_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3613,6 +3623,7 @@ impl ::core::default::Default for OPC_WRITE_FLAGS {
 }
 unsafe impl ::windows::core::Abi for OPC_WRITE_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for OPC_WRITE_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

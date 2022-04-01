@@ -227,6 +227,7 @@ impl ::core::fmt::Debug for CONTACT_AGGREGATION_BLOB {
 }
 unsafe impl ::windows::core::Abi for CONTACT_AGGREGATION_BLOB {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CONTACT_AGGREGATION_BLOB {
     fn eq(&self, other: &Self) -> bool {
@@ -262,6 +263,7 @@ impl ::core::default::Default for CONTACT_AGGREGATION_COLLECTION_OPTIONS {
 }
 unsafe impl ::windows::core::Abi for CONTACT_AGGREGATION_COLLECTION_OPTIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CONTACT_AGGREGATION_COLLECTION_OPTIONS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -289,6 +291,7 @@ impl ::core::default::Default for CONTACT_AGGREGATION_CREATE_OR_OPEN_OPTIONS {
 }
 unsafe impl ::windows::core::Abi for CONTACT_AGGREGATION_CREATE_OR_OPEN_OPTIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CONTACT_AGGREGATION_CREATE_OR_OPEN_OPTIONS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -300,6 +303,11 @@ pub const ContactManager: ::windows::core::GUID = ::windows::core::GUID::from_u1
 #[doc = "*Required features: `\"Win32_System_Contacts\"`*"]
 #[repr(transparent)]
 pub struct IContact(::windows::core::IUnknown);
+impl ::core::clone::Clone for IContact {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IContact {
     #[doc = "*Required features: `\"Win32_System_Contacts\"`*"]
     pub unsafe fn GetContactID(&self, pszcontactid: &mut [u16], pdwcchcontactidrequired: *mut u32) -> ::windows::core::Result<()> {
@@ -334,11 +342,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ICont
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IContact {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IContact {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -365,6 +368,11 @@ pub struct IContact_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Contacts\"`*"]
 #[repr(transparent)]
 pub struct IContactAggregationAggregate(::windows::core::IUnknown);
+impl ::core::clone::Clone for IContactAggregationAggregate {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IContactAggregationAggregate {
     #[doc = "*Required features: `\"Win32_System_Contacts\"`*"]
     pub unsafe fn Save(&self) -> ::windows::core::Result<()> {
@@ -428,11 +436,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ICont
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IContactAggregationAggregate {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IContactAggregationAggregate {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -465,6 +468,11 @@ pub struct IContactAggregationAggregate_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Contacts\"`*"]
 #[repr(transparent)]
 pub struct IContactAggregationAggregateCollection(::windows::core::IUnknown);
+impl ::core::clone::Clone for IContactAggregationAggregateCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IContactAggregationAggregateCollection {
     #[doc = "*Required features: `\"Win32_System_Contacts\"`*"]
     pub unsafe fn FindFirst(&self) -> ::windows::core::Result<IContactAggregationAggregate> {
@@ -507,11 +515,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ICont
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IContactAggregationAggregateCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IContactAggregationAggregateCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -539,6 +542,11 @@ pub struct IContactAggregationAggregateCollection_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Contacts\"`*"]
 #[repr(transparent)]
 pub struct IContactAggregationContact(::windows::core::IUnknown);
+impl ::core::clone::Clone for IContactAggregationContact {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IContactAggregationContact {
     #[doc = "*Required features: `\"Win32_System_Contacts\"`*"]
     pub unsafe fn Delete(&self) -> ::windows::core::Result<()> {
@@ -644,11 +652,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ICont
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IContactAggregationContact {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IContactAggregationContact {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -696,6 +699,11 @@ pub struct IContactAggregationContact_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Contacts\"`*"]
 #[repr(transparent)]
 pub struct IContactAggregationContactCollection(::windows::core::IUnknown);
+impl ::core::clone::Clone for IContactAggregationContactCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IContactAggregationContactCollection {
     #[doc = "*Required features: `\"Win32_System_Contacts\"`*"]
     pub unsafe fn FindFirst(&self) -> ::windows::core::Result<IContactAggregationContact> {
@@ -743,11 +751,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ICont
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IContactAggregationContactCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IContactAggregationContactCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -776,6 +779,11 @@ pub struct IContactAggregationContactCollection_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Contacts\"`*"]
 #[repr(transparent)]
 pub struct IContactAggregationGroup(::windows::core::IUnknown);
+impl ::core::clone::Clone for IContactAggregationGroup {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IContactAggregationGroup {
     #[doc = "*Required features: `\"Win32_System_Contacts\"`*"]
     pub unsafe fn Delete(&self) -> ::windows::core::Result<()> {
@@ -842,11 +850,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ICont
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IContactAggregationGroup {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IContactAggregationGroup {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -880,6 +883,11 @@ pub struct IContactAggregationGroup_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Contacts\"`*"]
 #[repr(transparent)]
 pub struct IContactAggregationGroupCollection(::windows::core::IUnknown);
+impl ::core::clone::Clone for IContactAggregationGroupCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IContactAggregationGroupCollection {
     #[doc = "*Required features: `\"Win32_System_Contacts\"`*"]
     pub unsafe fn FindFirst(&self) -> ::windows::core::Result<IContactAggregationGroup> {
@@ -922,11 +930,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ICont
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IContactAggregationGroupCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IContactAggregationGroupCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -954,6 +957,11 @@ pub struct IContactAggregationGroupCollection_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Contacts\"`*"]
 #[repr(transparent)]
 pub struct IContactAggregationLink(::windows::core::IUnknown);
+impl ::core::clone::Clone for IContactAggregationLink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IContactAggregationLink {
     #[doc = "*Required features: `\"Win32_System_Contacts\"`*"]
     pub unsafe fn Delete(&self) -> ::windows::core::Result<()> {
@@ -1054,11 +1062,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ICont
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IContactAggregationLink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IContactAggregationLink {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1105,6 +1108,11 @@ pub struct IContactAggregationLink_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Contacts\"`*"]
 #[repr(transparent)]
 pub struct IContactAggregationLinkCollection(::windows::core::IUnknown);
+impl ::core::clone::Clone for IContactAggregationLinkCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IContactAggregationLinkCollection {
     #[doc = "*Required features: `\"Win32_System_Contacts\"`*"]
     pub unsafe fn FindFirst(&self) -> ::windows::core::Result<IContactAggregationLink> {
@@ -1147,11 +1155,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ICont
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IContactAggregationLinkCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IContactAggregationLinkCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1179,6 +1182,11 @@ pub struct IContactAggregationLinkCollection_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Contacts\"`*"]
 #[repr(transparent)]
 pub struct IContactAggregationManager(::windows::core::IUnknown);
+impl ::core::clone::Clone for IContactAggregationManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IContactAggregationManager {
     #[doc = "*Required features: `\"Win32_System_Contacts\"`*"]
     pub unsafe fn GetVersionInfo(&self, plmajorversion: *mut i32, plminorversion: *mut i32) -> ::windows::core::Result<()> {
@@ -1274,11 +1282,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ICont
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IContactAggregationManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IContactAggregationManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1320,6 +1323,11 @@ pub struct IContactAggregationManager_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Contacts\"`*"]
 #[repr(transparent)]
 pub struct IContactAggregationServerPerson(::windows::core::IUnknown);
+impl ::core::clone::Clone for IContactAggregationServerPerson {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IContactAggregationServerPerson {
     #[doc = "*Required features: `\"Win32_System_Contacts\"`*"]
     pub unsafe fn Delete(&self) -> ::windows::core::Result<()> {
@@ -1447,11 +1455,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ICont
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IContactAggregationServerPerson {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IContactAggregationServerPerson {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1504,6 +1507,11 @@ pub struct IContactAggregationServerPerson_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Contacts\"`*"]
 #[repr(transparent)]
 pub struct IContactAggregationServerPersonCollection(::windows::core::IUnknown);
+impl ::core::clone::Clone for IContactAggregationServerPersonCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IContactAggregationServerPersonCollection {
     #[doc = "*Required features: `\"Win32_System_Contacts\"`*"]
     pub unsafe fn FindFirst(&self) -> ::windows::core::Result<IContactAggregationServerPerson> {
@@ -1556,11 +1564,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ICont
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IContactAggregationServerPersonCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IContactAggregationServerPersonCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1590,6 +1593,11 @@ pub struct IContactAggregationServerPersonCollection_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Contacts\"`*"]
 #[repr(transparent)]
 pub struct IContactCollection(::windows::core::IUnknown);
+impl ::core::clone::Clone for IContactCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IContactCollection {
     #[doc = "*Required features: `\"Win32_System_Contacts\"`*"]
     pub unsafe fn Reset(&self) -> ::windows::core::Result<()> {
@@ -1625,11 +1633,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ICont
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IContactCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IContactCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1656,6 +1659,11 @@ pub struct IContactCollection_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Contacts\"`*"]
 #[repr(transparent)]
 pub struct IContactManager(::windows::core::IUnknown);
+impl ::core::clone::Clone for IContactManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IContactManager {
     #[doc = "*Required features: `\"Win32_System_Contacts\"`*"]
     pub unsafe fn Initialize<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param1: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, pszappname: Param0, pszappversion: Param1) -> ::windows::core::Result<()> {
@@ -1705,11 +1713,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ICont
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IContactManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IContactManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1739,6 +1742,11 @@ pub struct IContactManager_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Contacts\"`*"]
 #[repr(transparent)]
 pub struct IContactProperties(::windows::core::IUnknown);
+impl ::core::clone::Clone for IContactProperties {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IContactProperties {
     #[doc = "*Required features: `\"Win32_System_Contacts\"`*"]
     pub unsafe fn GetString<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, pszpropertyname: Param0, dwflags: u32, pszvalue: &mut [u16], pdwcchpropertyvaluerequired: *mut u32) -> ::windows::core::Result<()> {
@@ -1819,11 +1827,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ICont
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IContactProperties {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IContactProperties {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1878,6 +1881,11 @@ pub struct IContactProperties_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Contacts\"`*"]
 #[repr(transparent)]
 pub struct IContactPropertyCollection(::windows::core::IUnknown);
+impl ::core::clone::Clone for IContactPropertyCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IContactPropertyCollection {
     #[doc = "*Required features: `\"Win32_System_Contacts\"`*"]
     pub unsafe fn Reset(&self) -> ::windows::core::Result<()> {
@@ -1927,11 +1935,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IContactP
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IContactPropertyCollection {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IContactPropertyCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IContactPropertyCollection {

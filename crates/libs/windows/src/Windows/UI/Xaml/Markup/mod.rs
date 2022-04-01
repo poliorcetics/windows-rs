@@ -2,6 +2,11 @@
 #[doc = "*Required features: `\"UI_Xaml_Markup\"`*"]
 #[repr(transparent)]
 pub struct IComponentConnector(::windows::core::IUnknown);
+impl ::core::clone::Clone for IComponentConnector {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IComponentConnector {
     #[doc = "*Required features: `\"UI_Xaml_Markup\"`*"]
     pub fn Connect<'a, Param1: ::windows::core::IntoParam<'a, ::windows::core::IInspectable>>(&self, connectionid: i32, target: Param1) -> ::windows::core::Result<()> {
@@ -49,11 +54,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IComponentConnector {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IComponentConnector {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -67,7 +67,6 @@ impl ::core::fmt::Debug for IComponentConnector {
 }
 unsafe impl ::windows::core::RuntimeType for IComponentConnector {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{f6790987-e6e5-47f2-92c6-eccce4ba159a}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -85,6 +84,11 @@ pub struct IComponentConnector_Vtbl {
 #[doc = "*Required features: `\"UI_Xaml_Markup\"`*"]
 #[repr(transparent)]
 pub struct IComponentConnector2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IComponentConnector2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IComponentConnector2 {
     #[doc = "*Required features: `\"UI_Xaml_Markup\"`*"]
     pub fn GetBindingConnector<'a, Param1: ::windows::core::IntoParam<'a, ::windows::core::IInspectable>>(&self, connectionid: i32, target: Param1) -> ::windows::core::Result<IComponentConnector> {
@@ -135,11 +139,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IComponentConnector2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IComponentConnector2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -153,7 +152,6 @@ impl ::core::fmt::Debug for IComponentConnector2 {
 }
 unsafe impl ::windows::core::RuntimeType for IComponentConnector2 {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{dc8f368b-eccc-498e-b139-91142254d7ae}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -171,6 +169,11 @@ pub struct IComponentConnector2_Vtbl {
 #[doc = "*Required features: `\"UI_Xaml_Markup\"`*"]
 #[repr(transparent)]
 pub struct IDataTemplateComponent(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDataTemplateComponent {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDataTemplateComponent {
     #[doc = "*Required features: `\"UI_Xaml_Markup\"`*"]
     pub fn Recycle(&self) -> ::windows::core::Result<()> {
@@ -223,11 +226,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDataTemplateComponent {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDataTemplateComponent {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -241,7 +239,6 @@ impl ::core::fmt::Debug for IDataTemplateComponent {
 }
 unsafe impl ::windows::core::RuntimeType for IDataTemplateComponent {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{08429dc8-8ab0-4747-aa9a-feadfc8da8e1}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -260,6 +257,11 @@ pub struct IDataTemplateComponent_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMarkupExtension(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMarkupExtension {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMarkupExtension {
     type Vtable = IMarkupExtension_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1ee3416d_562b_486e_9ee5_0f0cbcc8048c);
@@ -272,6 +274,11 @@ pub struct IMarkupExtension_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMarkupExtensionFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMarkupExtensionFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMarkupExtensionFactory {
     type Vtable = IMarkupExtensionFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x65329c05_fb5a_4567_9d55_5cdfbada2739);
@@ -285,6 +292,11 @@ pub struct IMarkupExtensionFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMarkupExtensionOverrides(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMarkupExtensionOverrides {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMarkupExtensionOverrides {
     type Vtable = IMarkupExtensionOverrides_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x393779bf_b9c0_4ffb_a57f_58e7356e425f);
@@ -298,6 +310,11 @@ pub struct IMarkupExtensionOverrides_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IXamlBinaryWriter(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXamlBinaryWriter {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IXamlBinaryWriter {
     type Vtable = IXamlBinaryWriter_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x829d2ad3_620a_46f6_845d_436a05927100);
@@ -310,6 +327,11 @@ pub struct IXamlBinaryWriter_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IXamlBinaryWriterStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXamlBinaryWriterStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IXamlBinaryWriterStatics {
     type Vtable = IXamlBinaryWriterStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x0d8ed07a_9b82_4aa8_b68b_026f2de1cc86);
@@ -326,6 +348,11 @@ pub struct IXamlBinaryWriterStatics_Vtbl {
 #[doc = "*Required features: `\"UI_Xaml_Markup\"`*"]
 #[repr(transparent)]
 pub struct IXamlBindScopeDiagnostics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXamlBindScopeDiagnostics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXamlBindScopeDiagnostics {
     #[doc = "*Required features: `\"UI_Xaml_Markup\"`*"]
     pub fn Disable(&self, linenumber: i32, columnnumber: i32) -> ::windows::core::Result<()> {
@@ -373,11 +400,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXamlBindScopeDiagnostics {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXamlBindScopeDiagnostics {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -391,7 +413,6 @@ impl ::core::fmt::Debug for IXamlBindScopeDiagnostics {
 }
 unsafe impl ::windows::core::RuntimeType for IXamlBindScopeDiagnostics {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{f264a29d-bded-43aa-a5b0-26ac21a81eb8}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -409,6 +430,11 @@ pub struct IXamlBindScopeDiagnostics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IXamlBindingHelper(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXamlBindingHelper {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IXamlBindingHelper {
     type Vtable = IXamlBindingHelper_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xfaa6fb06_8ab9_4ef7_8ae7_fbd30bbfd06d);
@@ -421,6 +447,11 @@ pub struct IXamlBindingHelper_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IXamlBindingHelperStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXamlBindingHelperStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IXamlBindingHelperStatics {
     type Vtable = IXamlBindingHelperStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf65cfb71_c80c_4ffa_86ee_558754ee336d);
@@ -477,6 +508,11 @@ pub struct IXamlBindingHelperStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IXamlMarkupHelper(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXamlMarkupHelper {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IXamlMarkupHelper {
     type Vtable = IXamlMarkupHelper_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd0e6673c_5342_44ef_85a7_ed327a739d9a);
@@ -489,6 +525,11 @@ pub struct IXamlMarkupHelper_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IXamlMarkupHelperStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXamlMarkupHelperStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IXamlMarkupHelperStatics {
     type Vtable = IXamlMarkupHelperStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc9bc3725_f34f_445c_81a2_6b72a5e8f072);
@@ -502,6 +543,11 @@ pub struct IXamlMarkupHelperStatics_Vtbl {
 #[doc = "*Required features: `\"UI_Xaml_Markup\"`*"]
 #[repr(transparent)]
 pub struct IXamlMember(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXamlMember {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXamlMember {
     #[doc = "*Required features: `\"UI_Xaml_Markup\"`*"]
     pub fn IsAttachable(&self) -> ::windows::core::Result<bool> {
@@ -605,11 +651,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXamlMember {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXamlMember {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -623,7 +664,6 @@ impl ::core::fmt::Debug for IXamlMember {
 }
 unsafe impl ::windows::core::RuntimeType for IXamlMember {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{c541f58c-43a9-4216-b718-e0b11b14e93e}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -648,6 +688,11 @@ pub struct IXamlMember_Vtbl {
 #[doc = "*Required features: `\"UI_Xaml_Markup\"`*"]
 #[repr(transparent)]
 pub struct IXamlMetadataProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXamlMetadataProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXamlMetadataProvider {
     #[doc = "*Required features: `\"UI_Xaml_Markup\"`, `\"UI_Xaml_Interop\"`*"]
     #[cfg(feature = "UI_Xaml_Interop")]
@@ -715,11 +760,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXamlMetadataProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXamlMetadataProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -733,7 +773,6 @@ impl ::core::fmt::Debug for IXamlMetadataProvider {
 }
 unsafe impl ::windows::core::RuntimeType for IXamlMetadataProvider {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{b3765d69-68a5-4b32-8861-fdb90c1f5836}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -756,6 +795,11 @@ pub struct IXamlMetadataProvider_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IXamlReader(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXamlReader {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IXamlReader {
     type Vtable = IXamlReader_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x24374cf1_cceb_48bf_a514_41b0186f84c2);
@@ -768,6 +812,11 @@ pub struct IXamlReader_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IXamlReaderStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXamlReaderStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IXamlReaderStatics {
     type Vtable = IXamlReaderStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9891c6bd_534f_4955_b85a_8a8dc0dca602);
@@ -782,6 +831,11 @@ pub struct IXamlReaderStatics_Vtbl {
 #[doc = "*Required features: `\"UI_Xaml_Markup\"`*"]
 #[repr(transparent)]
 pub struct IXamlType(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXamlType {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXamlType {
     #[doc = "*Required features: `\"UI_Xaml_Markup\"`*"]
     pub fn BaseType(&self) -> ::windows::core::Result<IXamlType> {
@@ -960,11 +1014,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXamlType {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXamlType {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -978,7 +1027,6 @@ impl ::core::fmt::Debug for IXamlType {
 }
 unsafe impl ::windows::core::RuntimeType for IXamlType {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{7920eab1-a2e5-479a-bd50-6cef3c0b4970}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1016,6 +1064,11 @@ pub struct IXamlType_Vtbl {
 #[doc = "*Required features: `\"UI_Xaml_Markup\"`*"]
 #[repr(transparent)]
 pub struct IXamlType2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXamlType2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXamlType2 {
     #[doc = "*Required features: `\"UI_Xaml_Markup\"`*"]
     pub fn BoxedType(&self) -> ::windows::core::Result<IXamlType> {
@@ -1224,11 +1277,6 @@ impl<'a> ::windows::core::IntoParam<'a, IXamlType> for &IXamlType2 {
         ::core::convert::TryInto::<IXamlType>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IXamlType2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXamlType2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1242,7 +1290,6 @@ impl ::core::fmt::Debug for IXamlType2 {
 }
 unsafe impl ::windows::core::RuntimeType for IXamlType2 {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{9f0c6e3b-433b-56ad-8f69-78a4dd3e64f9}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1282,11 +1329,6 @@ impl MarkupExtension {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for MarkupExtension {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MarkupExtension {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1300,7 +1342,6 @@ impl ::core::fmt::Debug for MarkupExtension {
 }
 unsafe impl ::windows::core::RuntimeType for MarkupExtension {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Markup.MarkupExtension;{1ee3416d-562b-486e-9ee5-0f0cbcc8048c})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1372,11 +1413,6 @@ impl XamlBinaryWriter {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for XamlBinaryWriter {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for XamlBinaryWriter {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1390,7 +1426,6 @@ impl ::core::fmt::Debug for XamlBinaryWriter {
 }
 unsafe impl ::windows::core::RuntimeType for XamlBinaryWriter {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Markup.XamlBinaryWriter;{829d2ad3-620a-46f6-845d-436a05927100})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1464,10 +1499,10 @@ impl ::core::fmt::Debug for XamlBinaryWriterErrorInformation {
 }
 unsafe impl ::windows::core::Abi for XamlBinaryWriterErrorInformation {
     type Abi = Self;
+    type DefaultType = Self;
 }
 unsafe impl ::windows::core::RuntimeType for XamlBinaryWriterErrorInformation {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"struct(Windows.UI.Xaml.Markup.XamlBinaryWriterErrorInformation;u4;u4;u4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1601,11 +1636,6 @@ impl XamlBindingHelper {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for XamlBindingHelper {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for XamlBindingHelper {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1619,7 +1649,6 @@ impl ::core::fmt::Debug for XamlBindingHelper {
 }
 unsafe impl ::windows::core::RuntimeType for XamlBindingHelper {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Markup.XamlBindingHelper;{faa6fb06-8ab9-4ef7-8ae7-fbd30bbfd06d})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1687,11 +1716,6 @@ impl XamlMarkupHelper {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for XamlMarkupHelper {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for XamlMarkupHelper {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1705,7 +1729,6 @@ impl ::core::fmt::Debug for XamlMarkupHelper {
 }
 unsafe impl ::windows::core::RuntimeType for XamlMarkupHelper {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Markup.XamlMarkupHelper;{d0e6673c-5342-44ef-85a7-ed327a739d9a})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1783,11 +1806,6 @@ impl XamlReader {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for XamlReader {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for XamlReader {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1801,7 +1819,6 @@ impl ::core::fmt::Debug for XamlReader {
 }
 unsafe impl ::windows::core::RuntimeType for XamlReader {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Markup.XamlReader;{24374cf1-cceb-48bf-a514-41b0186f84c2})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1873,10 +1890,10 @@ impl ::core::fmt::Debug for XmlnsDefinition {
 }
 unsafe impl ::windows::core::Abi for XmlnsDefinition {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 unsafe impl ::windows::core::RuntimeType for XmlnsDefinition {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"struct(Windows.UI.Xaml.Markup.XmlnsDefinition;string;string)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(from.clone())
     }

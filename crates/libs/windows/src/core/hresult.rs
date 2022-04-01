@@ -90,11 +90,11 @@ impl HRESULT {
 
 unsafe impl Abi for HRESULT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 
 unsafe impl RuntimeType for HRESULT {
     const SIGNATURE: ConstBuffer = ConstBuffer::from_slice(b"struct(Windows.Foundation.HResult;i32)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> Result<Self> {
         Ok(*from)
     }

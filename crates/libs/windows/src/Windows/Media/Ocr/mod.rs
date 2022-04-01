@@ -2,6 +2,11 @@
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IOcrEngine(::windows::core::IUnknown);
+impl ::core::clone::Clone for IOcrEngine {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IOcrEngine {
     type Vtable = IOcrEngine_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x5a14bc41_5b76_3140_b680_8825562683ac);
@@ -22,6 +27,11 @@ pub struct IOcrEngine_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IOcrEngineStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IOcrEngineStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IOcrEngineStatics {
     type Vtable = IOcrEngineStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x5bffa85a_3384_3540_9940_699120d428a8);
@@ -48,6 +58,11 @@ pub struct IOcrEngineStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IOcrLine(::windows::core::IUnknown);
+impl ::core::clone::Clone for IOcrLine {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IOcrLine {
     type Vtable = IOcrLine_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x0043a16f_e31f_3a24_899c_d444bd088124);
@@ -65,6 +80,11 @@ pub struct IOcrLine_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IOcrResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for IOcrResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IOcrResult {
     type Vtable = IOcrResult_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9bd235b2_175b_3d6a_92e2_388c206e2f63);
@@ -86,6 +106,11 @@ pub struct IOcrResult_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IOcrWord(::windows::core::IUnknown);
+impl ::core::clone::Clone for IOcrWord {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IOcrWord {
     type Vtable = IOcrWord_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x3c2a477a_5cd9_3525_ba2a_23d1e0a68a1d);
@@ -166,11 +191,6 @@ impl OcrEngine {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for OcrEngine {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for OcrEngine {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -184,7 +204,6 @@ impl ::core::fmt::Debug for OcrEngine {
 }
 unsafe impl ::windows::core::RuntimeType for OcrEngine {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.Ocr.OcrEngine;{5a14bc41-5b76-3140-b680-8825562683ac})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -260,11 +279,6 @@ impl OcrLine {
         }
     }
 }
-impl ::core::clone::Clone for OcrLine {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for OcrLine {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -278,7 +292,6 @@ impl ::core::fmt::Debug for OcrLine {
 }
 unsafe impl ::windows::core::RuntimeType for OcrLine {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.Ocr.OcrLine;{0043a16f-e31f-3a24-899c-d444bd088124})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -363,11 +376,6 @@ impl OcrResult {
         }
     }
 }
-impl ::core::clone::Clone for OcrResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for OcrResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -381,7 +389,6 @@ impl ::core::fmt::Debug for OcrResult {
 }
 unsafe impl ::windows::core::RuntimeType for OcrResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.Ocr.OcrResult;{9bd235b2-175b-3d6a-92e2-388c206e2f63})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -457,11 +464,6 @@ impl OcrWord {
         }
     }
 }
-impl ::core::clone::Clone for OcrWord {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for OcrWord {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -475,7 +477,6 @@ impl ::core::fmt::Debug for OcrWord {
 }
 unsafe impl ::windows::core::RuntimeType for OcrWord {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.Ocr.OcrWord;{3c2a477a-5cd9-3525-ba2a-23d1e0a68a1d})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

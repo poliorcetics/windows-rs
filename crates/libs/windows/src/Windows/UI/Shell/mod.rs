@@ -21,6 +21,11 @@ impl ::windows::core::RuntimeName for AdaptiveCardBuilder {
 #[doc = "*Required features: `\"UI_Shell\"`*"]
 #[repr(transparent)]
 pub struct IAdaptiveCard(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAdaptiveCard {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAdaptiveCard {
     #[doc = "*Required features: `\"UI_Shell\"`*"]
     pub fn ToJson(&self) -> ::windows::core::Result<::windows::core::HSTRING> {
@@ -71,11 +76,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAdaptiveCard {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAdaptiveCard {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -89,7 +89,6 @@ impl ::core::fmt::Debug for IAdaptiveCard {
 }
 unsafe impl ::windows::core::RuntimeType for IAdaptiveCard {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{72d0568c-a274-41cd-82a8-989d40b9b05e}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -107,6 +106,11 @@ pub struct IAdaptiveCard_Vtbl {
 #[doc = "*Required features: `\"UI_Shell\"`*"]
 #[repr(transparent)]
 pub struct IAdaptiveCardBuilderStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAdaptiveCardBuilderStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAdaptiveCardBuilderStatics {
     #[doc = "*Required features: `\"UI_Shell\"`*"]
     pub fn CreateAdaptiveCardFromJson<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::HSTRING>>(&self, value: Param0) -> ::windows::core::Result<IAdaptiveCard> {
@@ -157,11 +161,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAdaptiveCardBuilderStatics {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAdaptiveCardBuilderStatics {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -175,7 +174,6 @@ impl ::core::fmt::Debug for IAdaptiveCardBuilderStatics {
 }
 unsafe impl ::windows::core::RuntimeType for IAdaptiveCardBuilderStatics {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{766d8f08-d3fe-4347-a0bc-b9ea9a6dc28e}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -193,6 +191,11 @@ pub struct IAdaptiveCardBuilderStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISecurityAppManager(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISecurityAppManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISecurityAppManager {
     type Vtable = ISecurityAppManager_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x96ac500c_aed4_561d_bde8_953520343a2d);
@@ -214,6 +217,11 @@ pub struct ISecurityAppManager_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IShareWindowCommandEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IShareWindowCommandEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IShareWindowCommandEventArgs {
     type Vtable = IShareWindowCommandEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x4578dc09_a523_5756_a995_e4feb991fff0);
@@ -229,6 +237,11 @@ pub struct IShareWindowCommandEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IShareWindowCommandSource(::windows::core::IUnknown);
+impl ::core::clone::Clone for IShareWindowCommandSource {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IShareWindowCommandSource {
     type Vtable = IShareWindowCommandSource_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xcb3b7ae3_6b9c_561e_bccc_61e68e0abfef);
@@ -260,6 +273,11 @@ pub struct IShareWindowCommandSource_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IShareWindowCommandSourceStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IShareWindowCommandSourceStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IShareWindowCommandSourceStatics {
     type Vtable = IShareWindowCommandSourceStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb0eb6656_9cac_517c_b6c7_8ef715084295);
@@ -273,6 +291,11 @@ pub struct IShareWindowCommandSourceStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ITaskbarManager(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITaskbarManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ITaskbarManager {
     type Vtable = ITaskbarManager_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x87490a19_1ad9_49f4_b2e8_86738dc5ac40);
@@ -303,6 +326,11 @@ pub struct ITaskbarManager_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ITaskbarManager2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITaskbarManager2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ITaskbarManager2 {
     type Vtable = ITaskbarManager2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x79f0a06e_7b02_4911_918c_dee0bbd20ba4);
@@ -327,6 +355,11 @@ pub struct ITaskbarManager2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ITaskbarManagerStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITaskbarManagerStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ITaskbarManagerStatics {
     type Vtable = ITaskbarManagerStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xdb32ab74_de52_4fe6_b7b6_95ff9f8395df);
@@ -357,6 +390,7 @@ impl ::core::default::Default for SecurityAppKind {
 }
 unsafe impl ::windows::core::Abi for SecurityAppKind {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SecurityAppKind {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -365,7 +399,6 @@ impl ::core::fmt::Debug for SecurityAppKind {
 }
 unsafe impl ::windows::core::RuntimeType for SecurityAppKind {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Shell.SecurityAppKind;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -402,11 +435,6 @@ impl SecurityAppManager {
         unsafe { (::windows::core::Interface::vtable(this).UpdateState)(::core::mem::transmute_copy(this), kind, guidregistration.into_param().abi(), state, substatus, detailsuri.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for SecurityAppManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SecurityAppManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -420,7 +448,6 @@ impl ::core::fmt::Debug for SecurityAppManager {
 }
 unsafe impl ::windows::core::RuntimeType for SecurityAppManager {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Shell.SecurityAppManager;{96ac500c-aed4-561d-bde8-953520343a2d})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -495,6 +522,7 @@ impl ::core::default::Default for SecurityAppState {
 }
 unsafe impl ::windows::core::Abi for SecurityAppState {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SecurityAppState {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -503,7 +531,6 @@ impl ::core::fmt::Debug for SecurityAppState {
 }
 unsafe impl ::windows::core::RuntimeType for SecurityAppState {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Shell.SecurityAppState;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -531,6 +558,7 @@ impl ::core::default::Default for SecurityAppSubstatus {
 }
 unsafe impl ::windows::core::Abi for SecurityAppSubstatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SecurityAppSubstatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -539,7 +567,6 @@ impl ::core::fmt::Debug for SecurityAppSubstatus {
 }
 unsafe impl ::windows::core::RuntimeType for SecurityAppSubstatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Shell.SecurityAppSubstatus;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -566,6 +593,7 @@ impl ::core::default::Default for ShareWindowCommand {
 }
 unsafe impl ::windows::core::Abi for ShareWindowCommand {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ShareWindowCommand {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -574,7 +602,6 @@ impl ::core::fmt::Debug for ShareWindowCommand {
 }
 unsafe impl ::windows::core::RuntimeType for ShareWindowCommand {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Shell.ShareWindowCommand;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -605,11 +632,6 @@ impl ShareWindowCommandEventArgs {
         unsafe { (::windows::core::Interface::vtable(this).SetCommand)(::core::mem::transmute_copy(this), value).ok() }
     }
 }
-impl ::core::clone::Clone for ShareWindowCommandEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ShareWindowCommandEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -623,7 +645,6 @@ impl ::core::fmt::Debug for ShareWindowCommandEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for ShareWindowCommandEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Shell.ShareWindowCommandEventArgs;{4578dc09-a523-5756-a995-e4feb991fff0})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -739,11 +760,6 @@ impl ShareWindowCommandSource {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for ShareWindowCommandSource {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ShareWindowCommandSource {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -757,7 +773,6 @@ impl ::core::fmt::Debug for ShareWindowCommandSource {
 }
 unsafe impl ::windows::core::RuntimeType for ShareWindowCommandSource {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Shell.ShareWindowCommandSource;{cb3b7ae3-6b9c-561e-bccc-61e68e0abfef})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -907,11 +922,6 @@ impl TaskbarManager {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for TaskbarManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for TaskbarManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -925,7 +935,6 @@ impl ::core::fmt::Debug for TaskbarManager {
 }
 unsafe impl ::windows::core::RuntimeType for TaskbarManager {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Shell.TaskbarManager;{87490a19-1ad9-49f4-b2e8-86738dc5ac40})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

@@ -22,11 +22,6 @@ impl ComponentLoadFailedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for ComponentLoadFailedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ComponentLoadFailedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -40,7 +35,6 @@ impl ::core::fmt::Debug for ComponentLoadFailedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for ComponentLoadFailedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.Protection.ComponentLoadFailedEventArgs;{95972e93-7746-417e-8495-f031bbc5862c})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -146,11 +140,6 @@ impl<F: FnMut(&::core::option::Option<MediaProtectionManager>, &::core::option::
         ((*this).invoke)(::core::mem::transmute(&sender), ::core::mem::transmute(&e)).into()
     }
 }
-impl ::core::clone::Clone for ComponentLoadFailedEventHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ComponentLoadFailedEventHandler {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -168,7 +157,6 @@ unsafe impl ::windows::core::Interface for ComponentLoadFailedEventHandler {
 }
 unsafe impl ::windows::core::RuntimeType for ComponentLoadFailedEventHandler {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{95da643c-6db9-424b-86ca-091af432081c}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -224,6 +212,7 @@ impl ::core::default::Default for GraphicsTrustStatus {
 }
 unsafe impl ::windows::core::Abi for GraphicsTrustStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GraphicsTrustStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -232,7 +221,6 @@ impl ::core::fmt::Debug for GraphicsTrustStatus {
 }
 unsafe impl ::windows::core::RuntimeType for GraphicsTrustStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Media.Protection.GraphicsTrustStatus;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -259,6 +247,7 @@ impl ::core::default::Default for HdcpProtection {
 }
 unsafe impl ::windows::core::Abi for HdcpProtection {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HdcpProtection {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -267,7 +256,6 @@ impl ::core::fmt::Debug for HdcpProtection {
 }
 unsafe impl ::windows::core::RuntimeType for HdcpProtection {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Media.Protection.HdcpProtection;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -331,11 +319,6 @@ impl HdcpSession {
         unsafe { (::windows::core::Interface::vtable(this).RemoveProtectionChanged)(::core::mem::transmute_copy(this), token.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for HdcpSession {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for HdcpSession {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -349,7 +332,6 @@ impl ::core::fmt::Debug for HdcpSession {
 }
 unsafe impl ::windows::core::RuntimeType for HdcpSession {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.Protection.HdcpSession;{718845e9-64d7-426d-809b-1be461941a2a})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -452,6 +434,7 @@ impl ::core::default::Default for HdcpSetProtectionResult {
 }
 unsafe impl ::windows::core::Abi for HdcpSetProtectionResult {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HdcpSetProtectionResult {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -460,7 +443,6 @@ impl ::core::fmt::Debug for HdcpSetProtectionResult {
 }
 unsafe impl ::windows::core::RuntimeType for HdcpSetProtectionResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Media.Protection.HdcpSetProtectionResult;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -468,6 +450,11 @@ unsafe impl ::windows::core::RuntimeType for HdcpSetProtectionResult {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IComponentLoadFailedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IComponentLoadFailedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IComponentLoadFailedEventArgs {
     type Vtable = IComponentLoadFailedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x95972e93_7746_417e_8495_f031bbc5862c);
@@ -482,6 +469,11 @@ pub struct IComponentLoadFailedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IComponentRenewalStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IComponentRenewalStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IComponentRenewalStatics {
     type Vtable = IComponentRenewalStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x6ffbcd67_b795_48c5_8b7b_a7c4efe202e3);
@@ -498,6 +490,11 @@ pub struct IComponentRenewalStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHdcpSession(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHdcpSession {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHdcpSession {
     type Vtable = IHdcpSession_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x718845e9_64d7_426d_809b_1be461941a2a);
@@ -527,6 +524,11 @@ pub struct IHdcpSession_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMediaProtectionManager(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMediaProtectionManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMediaProtectionManager {
     type Vtable = IMediaProtectionManager_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x45694947_c741_434b_a79e_474c12d93d2f);
@@ -567,6 +569,11 @@ pub struct IMediaProtectionManager_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMediaProtectionPMPServer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMediaProtectionPMPServer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMediaProtectionPMPServer {
     type Vtable = IMediaProtectionPMPServer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x0c111226_7b26_4d31_95bb_9c1b08ef7fc0);
@@ -583,6 +590,11 @@ pub struct IMediaProtectionPMPServer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMediaProtectionPMPServerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMediaProtectionPMPServerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMediaProtectionPMPServerFactory {
     type Vtable = IMediaProtectionPMPServerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x602c8e5e_f7d2_487e_af91_dbc4252b2182);
@@ -599,6 +611,11 @@ pub struct IMediaProtectionPMPServerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMediaProtectionServiceCompletion(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMediaProtectionServiceCompletion {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMediaProtectionServiceCompletion {
     type Vtable = IMediaProtectionServiceCompletion_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x8b5cca18_cfd5_44ee_a2ed_df76010c14b5);
@@ -612,6 +629,11 @@ pub struct IMediaProtectionServiceCompletion_Vtbl {
 #[doc = "*Required features: `\"Media_Protection\"`*"]
 #[repr(transparent)]
 pub struct IMediaProtectionServiceRequest(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMediaProtectionServiceRequest {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMediaProtectionServiceRequest {
     #[doc = "*Required features: `\"Media_Protection\"`*"]
     pub fn ProtectionSystem(&self) -> ::windows::core::Result<::windows::core::GUID> {
@@ -670,11 +692,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMediaProtectionServiceRequest {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMediaProtectionServiceRequest {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -688,7 +705,6 @@ impl ::core::fmt::Debug for IMediaProtectionServiceRequest {
 }
 unsafe impl ::windows::core::RuntimeType for IMediaProtectionServiceRequest {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{b1de0ea6-2094-478d-87a4-8b95200f85c6}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -707,6 +723,11 @@ pub struct IMediaProtectionServiceRequest_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IProtectionCapabilities(::windows::core::IUnknown);
+impl ::core::clone::Clone for IProtectionCapabilities {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IProtectionCapabilities {
     type Vtable = IProtectionCapabilities_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc7ac5d7e_7480_4d29_a464_7bcd913dd8e4);
@@ -720,6 +741,11 @@ pub struct IProtectionCapabilities_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IRevocationAndRenewalInformation(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRevocationAndRenewalInformation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IRevocationAndRenewalInformation {
     type Vtable = IRevocationAndRenewalInformation_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf3a1937b_2501_439e_a6e7_6fc95e175fcf);
@@ -736,6 +762,11 @@ pub struct IRevocationAndRenewalInformation_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IRevocationAndRenewalItem(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRevocationAndRenewalItem {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IRevocationAndRenewalItem {
     type Vtable = IRevocationAndRenewalItem_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x3099c20c_3cf0_49ea_902d_caf32d2dde2c);
@@ -753,6 +784,11 @@ pub struct IRevocationAndRenewalItem_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IServiceRequestedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IServiceRequestedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IServiceRequestedEventArgs {
     type Vtable = IServiceRequestedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x34283baf_abb4_4fc1_bd89_93f106573a49);
@@ -767,6 +803,11 @@ pub struct IServiceRequestedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IServiceRequestedEventArgs2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IServiceRequestedEventArgs2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IServiceRequestedEventArgs2 {
     type Vtable = IServiceRequestedEventArgs2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x553c69d6_fafe_4128_8dfa_130e398a13a7);
@@ -846,11 +887,6 @@ impl MediaProtectionManager {
         }
     }
 }
-impl ::core::clone::Clone for MediaProtectionManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MediaProtectionManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -864,7 +900,6 @@ impl ::core::fmt::Debug for MediaProtectionManager {
 }
 unsafe impl ::windows::core::RuntimeType for MediaProtectionManager {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.Protection.MediaProtectionManager;{45694947-c741-434b-a79e-474c12d93d2f})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -945,11 +980,6 @@ impl MediaProtectionPMPServer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for MediaProtectionPMPServer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MediaProtectionPMPServer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -963,7 +993,6 @@ impl ::core::fmt::Debug for MediaProtectionPMPServer {
 }
 unsafe impl ::windows::core::RuntimeType for MediaProtectionPMPServer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.Protection.MediaProtectionPMPServer;{0c111226-7b26-4d31-95bb-9c1b08ef7fc0})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1027,11 +1056,6 @@ impl MediaProtectionServiceCompletion {
         unsafe { (::windows::core::Interface::vtable(this).Complete)(::core::mem::transmute_copy(this), success).ok() }
     }
 }
-impl ::core::clone::Clone for MediaProtectionServiceCompletion {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MediaProtectionServiceCompletion {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1045,7 +1069,6 @@ impl ::core::fmt::Debug for MediaProtectionServiceCompletion {
 }
 unsafe impl ::windows::core::RuntimeType for MediaProtectionServiceCompletion {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.Protection.MediaProtectionServiceCompletion;{8b5cca18-cfd5-44ee-a2ed-df76010c14b5})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1119,11 +1142,6 @@ impl ProtectionCapabilities {
         }
     }
 }
-impl ::core::clone::Clone for ProtectionCapabilities {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ProtectionCapabilities {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1137,7 +1155,6 @@ impl ::core::fmt::Debug for ProtectionCapabilities {
 }
 unsafe impl ::windows::core::RuntimeType for ProtectionCapabilities {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.Protection.ProtectionCapabilities;{c7ac5d7e-7480-4d29-a464-7bcd913dd8e4})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1213,6 +1230,7 @@ impl ::core::default::Default for ProtectionCapabilityResult {
 }
 unsafe impl ::windows::core::Abi for ProtectionCapabilityResult {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ProtectionCapabilityResult {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1221,7 +1239,6 @@ impl ::core::fmt::Debug for ProtectionCapabilityResult {
 }
 unsafe impl ::windows::core::RuntimeType for ProtectionCapabilityResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Media.Protection.ProtectionCapabilityResult;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1278,11 +1295,6 @@ impl<F: FnMut(&::core::option::Option<MediaProtectionManager>) -> ::windows::cor
         ((*this).invoke)(::core::mem::transmute(&sender)).into()
     }
 }
-impl ::core::clone::Clone for RebootNeededEventHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for RebootNeededEventHandler {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1300,7 +1312,6 @@ unsafe impl ::windows::core::Interface for RebootNeededEventHandler {
 }
 unsafe impl ::windows::core::RuntimeType for RebootNeededEventHandler {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{64e12a45-973b-4a3a-b260-91898a49a82c}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1335,6 +1346,7 @@ impl ::core::default::Default for RenewalStatus {
 }
 unsafe impl ::windows::core::Abi for RenewalStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RenewalStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1343,7 +1355,6 @@ impl ::core::fmt::Debug for RenewalStatus {
 }
 unsafe impl ::windows::core::RuntimeType for RenewalStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Media.Protection.RenewalStatus;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1362,11 +1373,6 @@ impl RevocationAndRenewalInformation {
         }
     }
 }
-impl ::core::clone::Clone for RevocationAndRenewalInformation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for RevocationAndRenewalInformation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1380,7 +1386,6 @@ impl ::core::fmt::Debug for RevocationAndRenewalInformation {
 }
 unsafe impl ::windows::core::RuntimeType for RevocationAndRenewalInformation {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.Protection.RevocationAndRenewalInformation;{f3a1937b-2501-439e-a6e7-6fc95e175fcf})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1479,11 +1484,6 @@ impl RevocationAndRenewalItem {
         }
     }
 }
-impl ::core::clone::Clone for RevocationAndRenewalItem {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for RevocationAndRenewalItem {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1497,7 +1497,6 @@ impl ::core::fmt::Debug for RevocationAndRenewalItem {
 }
 unsafe impl ::windows::core::RuntimeType for RevocationAndRenewalItem {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.Protection.RevocationAndRenewalItem;{3099c20c-3cf0-49ea-902d-caf32d2dde2c})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1585,6 +1584,7 @@ impl ::core::default::Default for RevocationAndRenewalReasons {
 }
 unsafe impl ::windows::core::Abi for RevocationAndRenewalReasons {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RevocationAndRenewalReasons {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1621,7 +1621,6 @@ impl ::core::ops::Not for RevocationAndRenewalReasons {
 }
 unsafe impl ::windows::core::RuntimeType for RevocationAndRenewalReasons {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Media.Protection.RevocationAndRenewalReasons;u4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1656,11 +1655,6 @@ impl ServiceRequestedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for ServiceRequestedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ServiceRequestedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1674,7 +1668,6 @@ impl ::core::fmt::Debug for ServiceRequestedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for ServiceRequestedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.Protection.ServiceRequestedEventArgs;{34283baf-abb4-4fc1-bd89-93f106573a49})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1780,11 +1773,6 @@ impl<F: FnMut(&::core::option::Option<MediaProtectionManager>, &::core::option::
         ((*this).invoke)(::core::mem::transmute(&sender), ::core::mem::transmute(&e)).into()
     }
 }
-impl ::core::clone::Clone for ServiceRequestedEventHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ServiceRequestedEventHandler {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1802,7 +1790,6 @@ unsafe impl ::windows::core::Interface for ServiceRequestedEventHandler {
 }
 unsafe impl ::windows::core::RuntimeType for ServiceRequestedEventHandler {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{d2d690ba-cac9-48e1-95c0-d38495a84055}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

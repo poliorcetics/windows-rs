@@ -72,11 +72,6 @@ impl HttpDiagnosticProvider {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for HttpDiagnosticProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for HttpDiagnosticProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -90,7 +85,6 @@ impl ::core::fmt::Debug for HttpDiagnosticProvider {
 }
 unsafe impl ::windows::core::RuntimeType for HttpDiagnosticProvider {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Web.Http.Diagnostics.HttpDiagnosticProvider;{bd811501-a056-4d39-b174-833b7b03b02c})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -207,11 +201,6 @@ impl HttpDiagnosticProviderRequestResponseCompletedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for HttpDiagnosticProviderRequestResponseCompletedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for HttpDiagnosticProviderRequestResponseCompletedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -225,7 +214,6 @@ impl ::core::fmt::Debug for HttpDiagnosticProviderRequestResponseCompletedEventA
 }
 unsafe impl ::windows::core::RuntimeType for HttpDiagnosticProviderRequestResponseCompletedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Web.Http.Diagnostics.HttpDiagnosticProviderRequestResponseCompletedEventArgs;{735f98ee-94f6-4532-b26e-61e1b1e4efd4})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -365,11 +353,6 @@ impl HttpDiagnosticProviderRequestResponseTimestamps {
         }
     }
 }
-impl ::core::clone::Clone for HttpDiagnosticProviderRequestResponseTimestamps {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for HttpDiagnosticProviderRequestResponseTimestamps {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -383,7 +366,6 @@ impl ::core::fmt::Debug for HttpDiagnosticProviderRequestResponseTimestamps {
 }
 unsafe impl ::windows::core::RuntimeType for HttpDiagnosticProviderRequestResponseTimestamps {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Web.Http.Diagnostics.HttpDiagnosticProviderRequestResponseTimestamps;{e0afde10-55cf-4c01-91d4-a20557d849f0})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -500,11 +482,6 @@ impl HttpDiagnosticProviderRequestSentEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for HttpDiagnosticProviderRequestSentEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for HttpDiagnosticProviderRequestSentEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -518,7 +495,6 @@ impl ::core::fmt::Debug for HttpDiagnosticProviderRequestSentEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for HttpDiagnosticProviderRequestSentEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Web.Http.Diagnostics.HttpDiagnosticProviderRequestSentEventArgs;{3f5196d0-4c1f-4ebe-a57a-06930771c50d})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -602,11 +578,6 @@ impl HttpDiagnosticProviderResponseReceivedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for HttpDiagnosticProviderResponseReceivedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for HttpDiagnosticProviderResponseReceivedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -620,7 +591,6 @@ impl ::core::fmt::Debug for HttpDiagnosticProviderResponseReceivedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for HttpDiagnosticProviderResponseReceivedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Web.Http.Diagnostics.HttpDiagnosticProviderResponseReceivedEventArgs;{a0a2566c-ab5f-4d66-bb2d-084cf41635d0})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -706,6 +676,7 @@ impl ::core::default::Default for HttpDiagnosticRequestInitiator {
 }
 unsafe impl ::windows::core::Abi for HttpDiagnosticRequestInitiator {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HttpDiagnosticRequestInitiator {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -714,7 +685,6 @@ impl ::core::fmt::Debug for HttpDiagnosticRequestInitiator {
 }
 unsafe impl ::windows::core::RuntimeType for HttpDiagnosticRequestInitiator {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Web.Http.Diagnostics.HttpDiagnosticRequestInitiator;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -749,11 +719,6 @@ impl HttpDiagnosticSourceLocation {
         }
     }
 }
-impl ::core::clone::Clone for HttpDiagnosticSourceLocation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for HttpDiagnosticSourceLocation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -767,7 +732,6 @@ impl ::core::fmt::Debug for HttpDiagnosticSourceLocation {
 }
 unsafe impl ::windows::core::RuntimeType for HttpDiagnosticSourceLocation {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Web.Http.Diagnostics.HttpDiagnosticSourceLocation;{54a9d260-8860-423f-b6fa-d77716f647a7})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -824,6 +788,11 @@ unsafe impl ::core::marker::Sync for HttpDiagnosticSourceLocation {}
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHttpDiagnosticProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpDiagnosticProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHttpDiagnosticProvider {
     type Vtable = IHttpDiagnosticProvider_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xbd811501_a056_4d39_b174_833b7b03b02c);
@@ -862,6 +831,11 @@ pub struct IHttpDiagnosticProvider_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHttpDiagnosticProviderRequestResponseCompletedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpDiagnosticProviderRequestResponseCompletedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHttpDiagnosticProviderRequestResponseCompletedEventArgs {
     type Vtable = IHttpDiagnosticProviderRequestResponseCompletedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x735f98ee_94f6_4532_b26e_61e1b1e4efd4);
@@ -887,6 +861,11 @@ pub struct IHttpDiagnosticProviderRequestResponseCompletedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHttpDiagnosticProviderRequestResponseTimestamps(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpDiagnosticProviderRequestResponseTimestamps {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHttpDiagnosticProviderRequestResponseTimestamps {
     type Vtable = IHttpDiagnosticProviderRequestResponseTimestamps_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe0afde10_55cf_4c01_91d4_a20557d849f0);
@@ -935,6 +914,11 @@ pub struct IHttpDiagnosticProviderRequestResponseTimestamps_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHttpDiagnosticProviderRequestSentEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpDiagnosticProviderRequestSentEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHttpDiagnosticProviderRequestSentEventArgs {
     type Vtable = IHttpDiagnosticProviderRequestSentEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x3f5196d0_4c1f_4ebe_a57a_06930771c50d);
@@ -960,6 +944,11 @@ pub struct IHttpDiagnosticProviderRequestSentEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHttpDiagnosticProviderResponseReceivedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpDiagnosticProviderResponseReceivedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHttpDiagnosticProviderResponseReceivedEventArgs {
     type Vtable = IHttpDiagnosticProviderResponseReceivedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa0a2566c_ab5f_4d66_bb2d_084cf41635d0);
@@ -978,6 +967,11 @@ pub struct IHttpDiagnosticProviderResponseReceivedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHttpDiagnosticProviderStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpDiagnosticProviderStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHttpDiagnosticProviderStatics {
     type Vtable = IHttpDiagnosticProviderStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x5b824ec1_6a6c_47cc_afec_1e86bc26053b);
@@ -994,6 +988,11 @@ pub struct IHttpDiagnosticProviderStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHttpDiagnosticSourceLocation(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHttpDiagnosticSourceLocation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHttpDiagnosticSourceLocation {
     type Vtable = IHttpDiagnosticSourceLocation_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x54a9d260_8860_423f_b6fa_d77716f647a7);

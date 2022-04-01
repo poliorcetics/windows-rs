@@ -22,6 +22,7 @@ impl ::core::default::Default for DeviceDiscoveryMechanism {
 }
 unsafe impl ::windows::core::Abi for DeviceDiscoveryMechanism {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DeviceDiscoveryMechanism {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -31,6 +32,11 @@ impl ::core::fmt::Debug for DeviceDiscoveryMechanism {
 #[doc = "*Required features: `\"Win32_Devices_WebServicesOnDevices\"`*"]
 #[repr(transparent)]
 pub struct IWSDAddress(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWSDAddress {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWSDAddress {
     #[doc = "*Required features: `\"Win32_Devices_WebServicesOnDevices\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -62,11 +68,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWSDA
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWSDAddress {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWSDAddress {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -95,6 +96,11 @@ pub struct IWSDAddress_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_WebServicesOnDevices\"`*"]
 #[repr(transparent)]
 pub struct IWSDAsyncCallback(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWSDAsyncCallback {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWSDAsyncCallback {
     #[doc = "*Required features: `\"Win32_Devices_WebServicesOnDevices\"`*"]
     pub unsafe fn AsyncOperationComplete<'a, Param0: ::windows::core::IntoParam<'a, IWSDAsyncResult>, Param1: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, pasyncresult: Param0, pasyncstate: Param1) -> ::windows::core::Result<()> {
@@ -121,11 +127,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWSDA
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWSDAsyncCallback {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWSDAsyncCallback {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -150,6 +151,11 @@ pub struct IWSDAsyncCallback_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_WebServicesOnDevices\"`*"]
 #[repr(transparent)]
 pub struct IWSDAsyncResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWSDAsyncResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWSDAsyncResult {
     #[doc = "*Required features: `\"Win32_Devices_WebServicesOnDevices\"`*"]
     pub unsafe fn SetCallback<'a, Param0: ::windows::core::IntoParam<'a, IWSDAsyncCallback>, Param1: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, pcallback: Param0, pasyncstate: Param1) -> ::windows::core::Result<()> {
@@ -204,11 +210,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWSDA
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWSDAsyncResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWSDAsyncResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -242,6 +243,11 @@ pub struct IWSDAsyncResult_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_WebServicesOnDevices\"`*"]
 #[repr(transparent)]
 pub struct IWSDAttachment(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWSDAttachment {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWSDAttachment {}
 impl ::core::convert::From<IWSDAttachment> for ::windows::core::IUnknown {
     fn from(value: IWSDAttachment) -> Self {
@@ -261,11 +267,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IWSDAttac
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWSDAttachment {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IWSDAttachment {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IWSDAttachment {
@@ -291,6 +292,11 @@ pub struct IWSDAttachment_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_WebServicesOnDevices\"`*"]
 #[repr(transparent)]
 pub struct IWSDDeviceHost(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWSDDeviceHost {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWSDDeviceHost {
     #[doc = "*Required features: `\"Win32_Devices_WebServicesOnDevices\"`*"]
     pub unsafe fn Init<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param1: ::windows::core::IntoParam<'a, IWSDXMLContext>>(&self, pszlocalid: Param0, pcontext: Param1, pphostaddresses: &[::core::option::Option<IWSDAddress>]) -> ::windows::core::Result<()> {
@@ -362,11 +368,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWSDD
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWSDDeviceHost {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWSDDeviceHost {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -405,6 +406,11 @@ pub struct IWSDDeviceHost_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_WebServicesOnDevices\"`*"]
 #[repr(transparent)]
 pub struct IWSDDeviceHostNotify(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWSDDeviceHostNotify {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWSDDeviceHostNotify {
     #[doc = "*Required features: `\"Win32_Devices_WebServicesOnDevices\"`*"]
     pub unsafe fn GetService<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, pszserviceid: Param0) -> ::windows::core::Result<::windows::core::IUnknown> {
@@ -432,11 +438,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWSDD
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWSDDeviceHostNotify {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWSDDeviceHostNotify {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -461,6 +462,11 @@ pub struct IWSDDeviceHostNotify_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_WebServicesOnDevices\"`*"]
 #[repr(transparent)]
 pub struct IWSDDeviceProxy(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWSDDeviceProxy {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWSDDeviceProxy {
     #[doc = "*Required features: `\"Win32_Devices_WebServicesOnDevices\"`*"]
     pub unsafe fn Init<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param1: ::windows::core::IntoParam<'a, IWSDAddress>, Param2: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param3: ::windows::core::IntoParam<'a, IWSDXMLContext>, Param4: ::windows::core::IntoParam<'a, IWSDDeviceProxy>>(&self, pszdeviceid: Param0, pdeviceaddress: Param1, pszlocalid: Param2, pcontext: Param3, psponsor: Param4) -> ::windows::core::Result<()> {
@@ -531,11 +537,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWSDD
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWSDDeviceProxy {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWSDDeviceProxy {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -569,6 +570,11 @@ pub struct IWSDDeviceProxy_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_WebServicesOnDevices\"`*"]
 #[repr(transparent)]
 pub struct IWSDEndpointProxy(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWSDEndpointProxy {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWSDEndpointProxy {
     #[doc = "*Required features: `\"Win32_Devices_WebServicesOnDevices\"`*"]
     pub unsafe fn SendOneWayRequest(&self, pbody: *const ::core::ffi::c_void, poperation: *const WSD_OPERATION) -> ::windows::core::Result<()> {
@@ -623,11 +629,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWSDE
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWSDEndpointProxy {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWSDEndpointProxy {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -661,6 +662,11 @@ pub struct IWSDEndpointProxy_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_WebServicesOnDevices\"`*"]
 #[repr(transparent)]
 pub struct IWSDEventingStatus(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWSDEventingStatus {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWSDEventingStatus {
     #[doc = "*Required features: `\"Win32_Devices_WebServicesOnDevices\"`*"]
     pub unsafe fn SubscriptionRenewed<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, pszsubscriptionaction: Param0) {
@@ -695,11 +701,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWSDE
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWSDEventingStatus {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWSDEventingStatus {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -726,6 +727,11 @@ pub struct IWSDEventingStatus_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_WebServicesOnDevices\"`*"]
 #[repr(transparent)]
 pub struct IWSDHttpAddress(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWSDHttpAddress {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWSDHttpAddress {
     #[doc = "*Required features: `\"Win32_Devices_WebServicesOnDevices\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -839,11 +845,6 @@ impl<'a> ::windows::core::IntoParam<'a, IWSDTransportAddress> for &'a IWSDHttpAd
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWSDHttpAddress {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWSDHttpAddress {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -874,6 +875,11 @@ pub struct IWSDHttpAddress_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_WebServicesOnDevices\"`*"]
 #[repr(transparent)]
 pub struct IWSDHttpAuthParameters(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWSDHttpAuthParameters {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWSDHttpAuthParameters {
     #[doc = "*Required features: `\"Win32_Devices_WebServicesOnDevices\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -907,11 +913,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWSDH
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWSDHttpAuthParameters {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWSDHttpAuthParameters {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -940,6 +941,11 @@ pub struct IWSDHttpAuthParameters_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_WebServicesOnDevices\"`*"]
 #[repr(transparent)]
 pub struct IWSDHttpMessageParameters(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWSDHttpMessageParameters {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWSDHttpMessageParameters {
     #[doc = "*Required features: `\"Win32_Devices_WebServicesOnDevices\"`*"]
     pub unsafe fn GetLocalAddress(&self) -> ::windows::core::Result<IWSDAddress> {
@@ -1045,11 +1051,6 @@ impl<'a> ::windows::core::IntoParam<'a, IWSDMessageParameters> for &'a IWSDHttpM
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWSDHttpMessageParameters {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWSDHttpMessageParameters {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1082,6 +1083,11 @@ pub struct IWSDHttpMessageParameters_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_WebServicesOnDevices\"`*"]
 #[repr(transparent)]
 pub struct IWSDInboundAttachment(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWSDInboundAttachment {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWSDInboundAttachment {
     #[doc = "*Required features: `\"Win32_Devices_WebServicesOnDevices\"`*"]
     pub unsafe fn Read(&self, pbuffer: &mut [u8], pdwnumberofbytesread: *mut u32) -> ::windows::core::Result<()> {
@@ -1132,11 +1138,6 @@ impl<'a> ::windows::core::IntoParam<'a, IWSDAttachment> for &'a IWSDInboundAttac
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWSDInboundAttachment {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWSDInboundAttachment {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1162,6 +1163,11 @@ pub struct IWSDInboundAttachment_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_WebServicesOnDevices\"`*"]
 #[repr(transparent)]
 pub struct IWSDMessageParameters(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWSDMessageParameters {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWSDMessageParameters {
     #[doc = "*Required features: `\"Win32_Devices_WebServicesOnDevices\"`*"]
     pub unsafe fn GetLocalAddress(&self) -> ::windows::core::Result<IWSDAddress> {
@@ -1207,11 +1213,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWSDM
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWSDMessageParameters {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWSDMessageParameters {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1240,6 +1241,11 @@ pub struct IWSDMessageParameters_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_WebServicesOnDevices\"`*"]
 #[repr(transparent)]
 pub struct IWSDMetadataExchange(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWSDMetadataExchange {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWSDMetadataExchange {
     #[doc = "*Required features: `\"Win32_Devices_WebServicesOnDevices\"`*"]
     pub unsafe fn GetMetadata(&self) -> ::windows::core::Result<*mut WSD_METADATA_SECTION_LIST> {
@@ -1267,11 +1273,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWSDM
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWSDMetadataExchange {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWSDMetadataExchange {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1296,6 +1297,11 @@ pub struct IWSDMetadataExchange_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_WebServicesOnDevices\"`*"]
 #[repr(transparent)]
 pub struct IWSDOutboundAttachment(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWSDOutboundAttachment {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWSDOutboundAttachment {
     #[doc = "*Required features: `\"Win32_Devices_WebServicesOnDevices\"`*"]
     pub unsafe fn Write(&self, pbuffer: &[u8]) -> ::windows::core::Result<u32> {
@@ -1351,11 +1357,6 @@ impl<'a> ::windows::core::IntoParam<'a, IWSDAttachment> for &'a IWSDOutboundAtta
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWSDOutboundAttachment {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWSDOutboundAttachment {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1382,6 +1383,11 @@ pub struct IWSDOutboundAttachment_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_WebServicesOnDevices\"`*"]
 #[repr(transparent)]
 pub struct IWSDSSLClientCertificate(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWSDSSLClientCertificate {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWSDSSLClientCertificate {
     #[doc = "*Required features: `\"Win32_Devices_WebServicesOnDevices\"`, `\"Win32_Foundation\"`, `\"Win32_Security_Cryptography\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography"))]
@@ -1416,11 +1422,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWSDS
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWSDSSLClientCertificate {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWSDSSLClientCertificate {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1452,6 +1453,11 @@ pub struct IWSDSSLClientCertificate_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_WebServicesOnDevices\"`*"]
 #[repr(transparent)]
 pub struct IWSDScopeMatchingRule(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWSDScopeMatchingRule {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWSDScopeMatchingRule {
     #[doc = "*Required features: `\"Win32_Devices_WebServicesOnDevices\"`*"]
     pub unsafe fn GetScopeRule(&self) -> ::windows::core::Result<::windows::core::PWSTR> {
@@ -1485,11 +1491,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWSDS
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWSDScopeMatchingRule {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWSDScopeMatchingRule {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1518,6 +1519,11 @@ pub struct IWSDScopeMatchingRule_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_WebServicesOnDevices\"`*"]
 #[repr(transparent)]
 pub struct IWSDServiceMessaging(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWSDServiceMessaging {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWSDServiceMessaging {
     #[doc = "*Required features: `\"Win32_Devices_WebServicesOnDevices\"`*"]
     pub unsafe fn SendResponse<'a, Param2: ::windows::core::IntoParam<'a, IWSDMessageParameters>>(&self, pbody: *const ::core::ffi::c_void, poperation: *const WSD_OPERATION, pmessageparameters: Param2) -> ::windows::core::Result<()> {
@@ -1548,11 +1554,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWSDS
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWSDServiceMessaging {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWSDServiceMessaging {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1578,6 +1579,11 @@ pub struct IWSDServiceMessaging_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_WebServicesOnDevices\"`*"]
 #[repr(transparent)]
 pub struct IWSDServiceProxy(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWSDServiceProxy {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWSDServiceProxy {
     #[doc = "*Required features: `\"Win32_Devices_WebServicesOnDevices\"`*"]
     pub unsafe fn GetMetadata(&self) -> ::windows::core::Result<*mut WSD_METADATA_SECTION_LIST> {
@@ -1658,11 +1664,6 @@ impl<'a> ::windows::core::IntoParam<'a, IWSDMetadataExchange> for &'a IWSDServic
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWSDServiceProxy {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWSDServiceProxy {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1693,6 +1694,11 @@ pub struct IWSDServiceProxy_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_WebServicesOnDevices\"`*"]
 #[repr(transparent)]
 pub struct IWSDServiceProxyEventing(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWSDServiceProxyEventing {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWSDServiceProxyEventing {
     #[doc = "*Required features: `\"Win32_Devices_WebServicesOnDevices\"`*"]
     pub unsafe fn GetMetadata(&self) -> ::windows::core::Result<*mut WSD_METADATA_SECTION_LIST> {
@@ -1853,11 +1859,6 @@ impl<'a> ::windows::core::IntoParam<'a, IWSDServiceProxy> for &'a IWSDServicePro
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWSDServiceProxyEventing {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWSDServiceProxyEventing {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1917,6 +1918,11 @@ pub struct IWSDServiceProxyEventing_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_WebServicesOnDevices\"`*"]
 #[repr(transparent)]
 pub struct IWSDSignatureProperty(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWSDSignatureProperty {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWSDSignatureProperty {
     #[doc = "*Required features: `\"Win32_Devices_WebServicesOnDevices\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -1963,11 +1969,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWSDS
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWSDSignatureProperty {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWSDSignatureProperty {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2002,6 +2003,11 @@ pub struct IWSDSignatureProperty_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_WebServicesOnDevices\"`*"]
 #[repr(transparent)]
 pub struct IWSDTransportAddress(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWSDTransportAddress {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWSDTransportAddress {
     #[doc = "*Required features: `\"Win32_Devices_WebServicesOnDevices\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -2077,11 +2083,6 @@ impl<'a> ::windows::core::IntoParam<'a, IWSDAddress> for &'a IWSDTransportAddres
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWSDTransportAddress {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWSDTransportAddress {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2113,6 +2114,11 @@ pub struct IWSDTransportAddress_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_WebServicesOnDevices\"`*"]
 #[repr(transparent)]
 pub struct IWSDUdpAddress(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWSDUdpAddress {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWSDUdpAddress {
     #[doc = "*Required features: `\"Win32_Devices_WebServicesOnDevices\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -2255,11 +2261,6 @@ impl<'a> ::windows::core::IntoParam<'a, IWSDTransportAddress> for &'a IWSDUdpAdd
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWSDUdpAddress {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWSDUdpAddress {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2302,6 +2303,11 @@ pub struct IWSDUdpAddress_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_WebServicesOnDevices\"`*"]
 #[repr(transparent)]
 pub struct IWSDUdpMessageParameters(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWSDUdpMessageParameters {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWSDUdpMessageParameters {
     #[doc = "*Required features: `\"Win32_Devices_WebServicesOnDevices\"`*"]
     pub unsafe fn GetLocalAddress(&self) -> ::windows::core::Result<IWSDAddress> {
@@ -2376,11 +2382,6 @@ impl<'a> ::windows::core::IntoParam<'a, IWSDMessageParameters> for &'a IWSDUdpMe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWSDUdpMessageParameters {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWSDUdpMessageParameters {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2406,6 +2407,11 @@ pub struct IWSDUdpMessageParameters_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_WebServicesOnDevices\"`*"]
 #[repr(transparent)]
 pub struct IWSDXMLContext(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWSDXMLContext {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWSDXMLContext {
     #[doc = "*Required features: `\"Win32_Devices_WebServicesOnDevices\"`*"]
     pub unsafe fn AddNamespace<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param1: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, pszuri: Param0, pszsuggestedprefix: Param1) -> ::windows::core::Result<*mut WSDXML_NAMESPACE> {
@@ -2446,11 +2452,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWSDX
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWSDXMLContext {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWSDXMLContext {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2478,6 +2479,11 @@ pub struct IWSDXMLContext_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_WebServicesOnDevices\"`*"]
 #[repr(transparent)]
 pub struct IWSDiscoveredService(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWSDiscoveredService {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWSDiscoveredService {
     #[doc = "*Required features: `\"Win32_Devices_WebServicesOnDevices\"`*"]
     pub unsafe fn GetEndpointReference(&self) -> ::windows::core::Result<*mut WSD_ENDPOINT_REFERENCE> {
@@ -2554,11 +2560,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWSDi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWSDiscoveredService {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWSDiscoveredService {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2593,6 +2594,11 @@ pub struct IWSDiscoveredService_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_WebServicesOnDevices\"`*"]
 #[repr(transparent)]
 pub struct IWSDiscoveryProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWSDiscoveryProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWSDiscoveryProvider {
     #[doc = "*Required features: `\"Win32_Devices_WebServicesOnDevices\"`*"]
     pub unsafe fn SetAddressFamily(&self, dwaddressfamily: u32) -> ::windows::core::Result<()> {
@@ -2644,11 +2650,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWSDi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWSDiscoveryProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWSDiscoveryProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2679,6 +2680,11 @@ pub struct IWSDiscoveryProvider_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_WebServicesOnDevices\"`*"]
 #[repr(transparent)]
 pub struct IWSDiscoveryProviderNotify(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWSDiscoveryProviderNotify {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWSDiscoveryProviderNotify {
     #[doc = "*Required features: `\"Win32_Devices_WebServicesOnDevices\"`*"]
     pub unsafe fn Add<'a, Param0: ::windows::core::IntoParam<'a, IWSDiscoveredService>>(&self, pservice: Param0) -> ::windows::core::Result<()> {
@@ -2717,11 +2723,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWSDi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWSDiscoveryProviderNotify {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWSDiscoveryProviderNotify {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2749,6 +2750,11 @@ pub struct IWSDiscoveryProviderNotify_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_WebServicesOnDevices\"`*"]
 #[repr(transparent)]
 pub struct IWSDiscoveryPublisher(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWSDiscoveryPublisher {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWSDiscoveryPublisher {
     #[doc = "*Required features: `\"Win32_Devices_WebServicesOnDevices\"`*"]
     pub unsafe fn SetAddressFamily(&self, dwaddressfamily: u32) -> ::windows::core::Result<()> {
@@ -2876,11 +2882,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWSDi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWSDiscoveryPublisher {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWSDiscoveryPublisher {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2917,6 +2918,11 @@ pub struct IWSDiscoveryPublisher_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_WebServicesOnDevices\"`*"]
 #[repr(transparent)]
 pub struct IWSDiscoveryPublisherNotify(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWSDiscoveryPublisherNotify {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWSDiscoveryPublisherNotify {
     #[doc = "*Required features: `\"Win32_Devices_WebServicesOnDevices\"`*"]
     pub unsafe fn ProbeHandler<'a, Param1: ::windows::core::IntoParam<'a, IWSDMessageParameters>>(&self, psoap: *const WSD_SOAP_MESSAGE, pmessageparameters: Param1) -> ::windows::core::Result<()> {
@@ -2945,11 +2951,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IWSDiscov
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWSDiscoveryPublisherNotify {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IWSDiscoveryPublisherNotify {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IWSDiscoveryPublisherNotify {
@@ -2994,6 +2995,7 @@ impl ::core::fmt::Debug for REQUESTBODY_GetStatus {
 }
 unsafe impl ::windows::core::Abi for REQUESTBODY_GetStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for REQUESTBODY_GetStatus {
     fn eq(&self, other: &Self) -> bool {
@@ -3030,6 +3032,7 @@ impl ::core::fmt::Debug for REQUESTBODY_Renew {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for REQUESTBODY_Renew {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for REQUESTBODY_Renew {
@@ -3072,6 +3075,7 @@ impl ::core::fmt::Debug for REQUESTBODY_Subscribe {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for REQUESTBODY_Subscribe {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for REQUESTBODY_Subscribe {
@@ -3105,6 +3109,7 @@ impl ::core::fmt::Debug for REQUESTBODY_Unsubscribe {
 }
 unsafe impl ::windows::core::Abi for REQUESTBODY_Unsubscribe {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for REQUESTBODY_Unsubscribe {
     fn eq(&self, other: &Self) -> bool {
@@ -3135,6 +3140,7 @@ impl ::core::fmt::Debug for RESPONSEBODY_GetMetadata {
 }
 unsafe impl ::windows::core::Abi for RESPONSEBODY_GetMetadata {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RESPONSEBODY_GetMetadata {
     fn eq(&self, other: &Self) -> bool {
@@ -3171,6 +3177,7 @@ impl ::core::fmt::Debug for RESPONSEBODY_GetStatus {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for RESPONSEBODY_GetStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for RESPONSEBODY_GetStatus {
@@ -3210,6 +3217,7 @@ impl ::core::fmt::Debug for RESPONSEBODY_Renew {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for RESPONSEBODY_Renew {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for RESPONSEBODY_Renew {
@@ -3250,6 +3258,7 @@ impl ::core::fmt::Debug for RESPONSEBODY_Subscribe {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for RESPONSEBODY_Subscribe {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for RESPONSEBODY_Subscribe {
@@ -3286,6 +3295,7 @@ impl ::core::fmt::Debug for RESPONSEBODY_SubscriptionEnd {
 }
 unsafe impl ::windows::core::Abi for RESPONSEBODY_SubscriptionEnd {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RESPONSEBODY_SubscriptionEnd {
     fn eq(&self, other: &Self) -> bool {
@@ -3616,6 +3626,7 @@ impl ::core::default::Default for WSDEventType {
 }
 unsafe impl ::windows::core::Abi for WSDEventType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WSDEventType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3715,6 +3726,7 @@ impl ::core::default::Default for WSDUdpMessageType {
 }
 unsafe impl ::windows::core::Abi for WSDUdpMessageType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WSDUdpMessageType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3743,6 +3755,7 @@ impl ::core::fmt::Debug for WSDUdpRetransmitParams {
 }
 unsafe impl ::windows::core::Abi for WSDUdpRetransmitParams {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSDUdpRetransmitParams {
     fn eq(&self, other: &Self) -> bool {
@@ -3904,6 +3917,7 @@ impl ::core::fmt::Debug for WSDXML_ATTRIBUTE {
 }
 unsafe impl ::windows::core::Abi for WSDXML_ATTRIBUTE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSDXML_ATTRIBUTE {
     fn eq(&self, other: &Self) -> bool {
@@ -3938,6 +3952,7 @@ impl ::core::fmt::Debug for WSDXML_ELEMENT {
 }
 unsafe impl ::windows::core::Abi for WSDXML_ELEMENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSDXML_ELEMENT {
     fn eq(&self, other: &Self) -> bool {
@@ -3969,6 +3984,7 @@ impl ::core::fmt::Debug for WSDXML_ELEMENT_LIST {
 }
 unsafe impl ::windows::core::Abi for WSDXML_ELEMENT_LIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSDXML_ELEMENT_LIST {
     fn eq(&self, other: &Self) -> bool {
@@ -4000,6 +4016,7 @@ impl ::core::fmt::Debug for WSDXML_NAME {
 }
 unsafe impl ::windows::core::Abi for WSDXML_NAME {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSDXML_NAME {
     fn eq(&self, other: &Self) -> bool {
@@ -4034,6 +4051,7 @@ impl ::core::fmt::Debug for WSDXML_NAMESPACE {
 }
 unsafe impl ::windows::core::Abi for WSDXML_NAMESPACE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSDXML_NAMESPACE {
     fn eq(&self, other: &Self) -> bool {
@@ -4070,6 +4088,7 @@ impl ::core::fmt::Debug for WSDXML_NODE {
 }
 unsafe impl ::windows::core::Abi for WSDXML_NODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSDXML_NODE {
     fn eq(&self, other: &Self) -> bool {
@@ -4193,6 +4212,7 @@ impl ::core::default::Default for WSDXML_OP {
 }
 unsafe impl ::windows::core::Abi for WSDXML_OP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WSDXML_OP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4220,6 +4240,7 @@ impl ::core::fmt::Debug for WSDXML_PREFIX_MAPPING {
 }
 unsafe impl ::windows::core::Abi for WSDXML_PREFIX_MAPPING {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSDXML_PREFIX_MAPPING {
     fn eq(&self, other: &Self) -> bool {
@@ -4251,6 +4272,7 @@ impl ::core::fmt::Debug for WSDXML_TEXT {
 }
 unsafe impl ::windows::core::Abi for WSDXML_TEXT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSDXML_TEXT {
     fn eq(&self, other: &Self) -> bool {
@@ -4282,6 +4304,7 @@ impl ::core::fmt::Debug for WSDXML_TYPE {
 }
 unsafe impl ::windows::core::Abi for WSDXML_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSDXML_TYPE {
     fn eq(&self, other: &Self) -> bool {
@@ -4314,6 +4337,7 @@ impl ::core::fmt::Debug for WSD_APP_SEQUENCE {
 }
 unsafe impl ::windows::core::Abi for WSD_APP_SEQUENCE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSD_APP_SEQUENCE {
     fn eq(&self, other: &Self) -> bool {
@@ -4345,6 +4369,7 @@ impl ::core::fmt::Debug for WSD_BYE {
 }
 unsafe impl ::windows::core::Abi for WSD_BYE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSD_BYE {
     fn eq(&self, other: &Self) -> bool {
@@ -4376,6 +4401,7 @@ impl ::core::fmt::Debug for WSD_CONFIG_ADDRESSES {
 }
 unsafe impl ::windows::core::Abi for WSD_CONFIG_ADDRESSES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSD_CONFIG_ADDRESSES {
     fn eq(&self, other: &Self) -> bool {
@@ -4408,6 +4434,7 @@ impl ::core::fmt::Debug for WSD_CONFIG_PARAM {
 }
 unsafe impl ::windows::core::Abi for WSD_CONFIG_PARAM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSD_CONFIG_PARAM {
     fn eq(&self, other: &Self) -> bool {
@@ -4463,6 +4490,7 @@ impl ::core::default::Default for WSD_CONFIG_PARAM_TYPE {
 }
 unsafe impl ::windows::core::Abi for WSD_CONFIG_PARAM_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WSD_CONFIG_PARAM_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4503,6 +4531,7 @@ impl ::core::fmt::Debug for WSD_DATETIME {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WSD_DATETIME {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WSD_DATETIME {
@@ -4554,6 +4583,7 @@ impl ::core::fmt::Debug for WSD_DURATION {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WSD_DURATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WSD_DURATION {
@@ -4592,6 +4622,7 @@ impl ::core::fmt::Debug for WSD_ENDPOINT_REFERENCE {
 }
 unsafe impl ::windows::core::Abi for WSD_ENDPOINT_REFERENCE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSD_ENDPOINT_REFERENCE {
     fn eq(&self, other: &Self) -> bool {
@@ -4623,6 +4654,7 @@ impl ::core::fmt::Debug for WSD_ENDPOINT_REFERENCE_LIST {
 }
 unsafe impl ::windows::core::Abi for WSD_ENDPOINT_REFERENCE_LIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSD_ENDPOINT_REFERENCE_LIST {
     fn eq(&self, other: &Self) -> bool {
@@ -4666,6 +4698,7 @@ impl ::core::fmt::Debug for WSD_EVENT {
 }
 unsafe impl ::windows::core::Abi for WSD_EVENT {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSD_EVENT {
     fn eq(&self, other: &Self) -> bool {
@@ -4698,6 +4731,7 @@ impl ::core::fmt::Debug for WSD_EVENTING_DELIVERY_MODE {
 }
 unsafe impl ::windows::core::Abi for WSD_EVENTING_DELIVERY_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSD_EVENTING_DELIVERY_MODE {
     fn eq(&self, other: &Self) -> bool {
@@ -4728,6 +4762,7 @@ impl ::core::fmt::Debug for WSD_EVENTING_DELIVERY_MODE_PUSH {
 }
 unsafe impl ::windows::core::Abi for WSD_EVENTING_DELIVERY_MODE_PUSH {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSD_EVENTING_DELIVERY_MODE_PUSH {
     fn eq(&self, other: &Self) -> bool {
@@ -4764,6 +4799,7 @@ impl ::core::fmt::Debug for WSD_EVENTING_EXPIRES {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WSD_EVENTING_EXPIRES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WSD_EVENTING_EXPIRES {
@@ -4799,6 +4835,7 @@ impl ::core::fmt::Debug for WSD_EVENTING_FILTER {
 }
 unsafe impl ::windows::core::Abi for WSD_EVENTING_FILTER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSD_EVENTING_FILTER {
     fn eq(&self, other: &Self) -> bool {
@@ -4829,6 +4866,7 @@ impl ::core::fmt::Debug for WSD_EVENTING_FILTER_ACTION {
 }
 unsafe impl ::windows::core::Abi for WSD_EVENTING_FILTER_ACTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSD_EVENTING_FILTER_ACTION {
     fn eq(&self, other: &Self) -> bool {
@@ -4860,6 +4898,7 @@ impl ::core::fmt::Debug for WSD_HANDLER_CONTEXT {
 }
 unsafe impl ::windows::core::Abi for WSD_HANDLER_CONTEXT {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSD_HANDLER_CONTEXT {
     fn eq(&self, other: &Self) -> bool {
@@ -4891,6 +4930,7 @@ impl ::core::fmt::Debug for WSD_HEADER_RELATESTO {
 }
 unsafe impl ::windows::core::Abi for WSD_HEADER_RELATESTO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSD_HEADER_RELATESTO {
     fn eq(&self, other: &Self) -> bool {
@@ -4926,6 +4966,7 @@ impl ::core::fmt::Debug for WSD_HELLO {
 }
 unsafe impl ::windows::core::Abi for WSD_HELLO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSD_HELLO {
     fn eq(&self, other: &Self) -> bool {
@@ -4957,6 +4998,7 @@ impl ::core::fmt::Debug for WSD_HOST_METADATA {
 }
 unsafe impl ::windows::core::Abi for WSD_HOST_METADATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSD_HOST_METADATA {
     fn eq(&self, other: &Self) -> bool {
@@ -4988,6 +5030,7 @@ impl ::core::fmt::Debug for WSD_LOCALIZED_STRING {
 }
 unsafe impl ::windows::core::Abi for WSD_LOCALIZED_STRING {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSD_LOCALIZED_STRING {
     fn eq(&self, other: &Self) -> bool {
@@ -5019,6 +5062,7 @@ impl ::core::fmt::Debug for WSD_LOCALIZED_STRING_LIST {
 }
 unsafe impl ::windows::core::Abi for WSD_LOCALIZED_STRING_LIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSD_LOCALIZED_STRING_LIST {
     fn eq(&self, other: &Self) -> bool {
@@ -5054,6 +5098,7 @@ impl ::core::fmt::Debug for WSD_METADATA_SECTION {
 }
 unsafe impl ::windows::core::Abi for WSD_METADATA_SECTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSD_METADATA_SECTION {
     fn eq(&self, other: &Self) -> bool {
@@ -5085,6 +5130,7 @@ impl ::core::fmt::Debug for WSD_METADATA_SECTION_LIST {
 }
 unsafe impl ::windows::core::Abi for WSD_METADATA_SECTION_LIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSD_METADATA_SECTION_LIST {
     fn eq(&self, other: &Self) -> bool {
@@ -5116,6 +5162,7 @@ impl ::core::fmt::Debug for WSD_NAME_LIST {
 }
 unsafe impl ::windows::core::Abi for WSD_NAME_LIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSD_NAME_LIST {
     fn eq(&self, other: &Self) -> bool {
@@ -5148,6 +5195,7 @@ impl ::core::fmt::Debug for WSD_OPERATION {
 }
 unsafe impl ::windows::core::Abi for WSD_OPERATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSD_OPERATION {
     fn eq(&self, other: &Self) -> bool {
@@ -5181,6 +5229,7 @@ impl ::core::fmt::Debug for WSD_PORT_TYPE {
 }
 unsafe impl ::windows::core::Abi for WSD_PORT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSD_PORT_TYPE {
     fn eq(&self, other: &Self) -> bool {
@@ -5213,6 +5262,7 @@ impl ::core::fmt::Debug for WSD_PROBE {
 }
 unsafe impl ::windows::core::Abi for WSD_PROBE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSD_PROBE {
     fn eq(&self, other: &Self) -> bool {
@@ -5248,6 +5298,7 @@ impl ::core::fmt::Debug for WSD_PROBE_MATCH {
 }
 unsafe impl ::windows::core::Abi for WSD_PROBE_MATCH {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSD_PROBE_MATCH {
     fn eq(&self, other: &Self) -> bool {
@@ -5279,6 +5330,7 @@ impl ::core::fmt::Debug for WSD_PROBE_MATCHES {
 }
 unsafe impl ::windows::core::Abi for WSD_PROBE_MATCHES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSD_PROBE_MATCHES {
     fn eq(&self, other: &Self) -> bool {
@@ -5310,6 +5362,7 @@ impl ::core::fmt::Debug for WSD_PROBE_MATCH_LIST {
 }
 unsafe impl ::windows::core::Abi for WSD_PROBE_MATCH_LIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSD_PROBE_MATCH_LIST {
     fn eq(&self, other: &Self) -> bool {
@@ -5349,6 +5402,7 @@ impl ::core::default::Default for WSD_PROTOCOL_TYPE {
 }
 unsafe impl ::windows::core::Abi for WSD_PROTOCOL_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WSD_PROTOCOL_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5373,6 +5427,7 @@ impl ::core::fmt::Debug for WSD_REFERENCE_PARAMETERS {
 }
 unsafe impl ::windows::core::Abi for WSD_REFERENCE_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSD_REFERENCE_PARAMETERS {
     fn eq(&self, other: &Self) -> bool {
@@ -5403,6 +5458,7 @@ impl ::core::fmt::Debug for WSD_REFERENCE_PROPERTIES {
 }
 unsafe impl ::windows::core::Abi for WSD_REFERENCE_PROPERTIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSD_REFERENCE_PROPERTIES {
     fn eq(&self, other: &Self) -> bool {
@@ -5435,6 +5491,7 @@ impl ::core::fmt::Debug for WSD_RELATIONSHIP_METADATA {
 }
 unsafe impl ::windows::core::Abi for WSD_RELATIONSHIP_METADATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSD_RELATIONSHIP_METADATA {
     fn eq(&self, other: &Self) -> bool {
@@ -5466,6 +5523,7 @@ impl ::core::fmt::Debug for WSD_RESOLVE {
 }
 unsafe impl ::windows::core::Abi for WSD_RESOLVE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSD_RESOLVE {
     fn eq(&self, other: &Self) -> bool {
@@ -5501,6 +5559,7 @@ impl ::core::fmt::Debug for WSD_RESOLVE_MATCH {
 }
 unsafe impl ::windows::core::Abi for WSD_RESOLVE_MATCH {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSD_RESOLVE_MATCH {
     fn eq(&self, other: &Self) -> bool {
@@ -5532,6 +5591,7 @@ impl ::core::fmt::Debug for WSD_RESOLVE_MATCHES {
 }
 unsafe impl ::windows::core::Abi for WSD_RESOLVE_MATCHES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSD_RESOLVE_MATCHES {
     fn eq(&self, other: &Self) -> bool {
@@ -5563,6 +5623,7 @@ impl ::core::fmt::Debug for WSD_SCOPES {
 }
 unsafe impl ::windows::core::Abi for WSD_SCOPES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSD_SCOPES {
     fn eq(&self, other: &Self) -> bool {
@@ -5605,6 +5666,7 @@ impl ::core::fmt::Debug for WSD_SECURITY_CERT_VALIDATION {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography"))]
 unsafe impl ::windows::core::Abi for WSD_SECURITY_CERT_VALIDATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography"))]
 impl ::core::cmp::PartialEq for WSD_SECURITY_CERT_VALIDATION {
@@ -5647,6 +5709,7 @@ impl ::core::fmt::Debug for WSD_SECURITY_CERT_VALIDATION_V1 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography"))]
 unsafe impl ::windows::core::Abi for WSD_SECURITY_CERT_VALIDATION_V1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography"))]
 impl ::core::cmp::PartialEq for WSD_SECURITY_CERT_VALIDATION_V1 {
@@ -5692,6 +5755,7 @@ impl ::core::fmt::Debug for WSD_SECURITY_SIGNATURE_VALIDATION {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography"))]
 unsafe impl ::windows::core::Abi for WSD_SECURITY_SIGNATURE_VALIDATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography"))]
 impl ::core::cmp::PartialEq for WSD_SECURITY_SIGNATURE_VALIDATION {
@@ -5728,6 +5792,7 @@ impl ::core::fmt::Debug for WSD_SERVICE_METADATA {
 }
 unsafe impl ::windows::core::Abi for WSD_SERVICE_METADATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSD_SERVICE_METADATA {
     fn eq(&self, other: &Self) -> bool {
@@ -5759,6 +5824,7 @@ impl ::core::fmt::Debug for WSD_SERVICE_METADATA_LIST {
 }
 unsafe impl ::windows::core::Abi for WSD_SERVICE_METADATA_LIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSD_SERVICE_METADATA_LIST {
     fn eq(&self, other: &Self) -> bool {
@@ -5793,6 +5859,7 @@ impl ::core::fmt::Debug for WSD_SOAP_FAULT {
 }
 unsafe impl ::windows::core::Abi for WSD_SOAP_FAULT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSD_SOAP_FAULT {
     fn eq(&self, other: &Self) -> bool {
@@ -5824,6 +5891,7 @@ impl ::core::fmt::Debug for WSD_SOAP_FAULT_CODE {
 }
 unsafe impl ::windows::core::Abi for WSD_SOAP_FAULT_CODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSD_SOAP_FAULT_CODE {
     fn eq(&self, other: &Self) -> bool {
@@ -5854,6 +5922,7 @@ impl ::core::fmt::Debug for WSD_SOAP_FAULT_REASON {
 }
 unsafe impl ::windows::core::Abi for WSD_SOAP_FAULT_REASON {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSD_SOAP_FAULT_REASON {
     fn eq(&self, other: &Self) -> bool {
@@ -5885,6 +5954,7 @@ impl ::core::fmt::Debug for WSD_SOAP_FAULT_SUBCODE {
 }
 unsafe impl ::windows::core::Abi for WSD_SOAP_FAULT_SUBCODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSD_SOAP_FAULT_SUBCODE {
     fn eq(&self, other: &Self) -> bool {
@@ -5923,6 +5993,7 @@ impl ::core::fmt::Debug for WSD_SOAP_HEADER {
 }
 unsafe impl ::windows::core::Abi for WSD_SOAP_HEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSD_SOAP_HEADER {
     fn eq(&self, other: &Self) -> bool {
@@ -5955,6 +6026,7 @@ impl ::core::fmt::Debug for WSD_SOAP_MESSAGE {
 }
 unsafe impl ::windows::core::Abi for WSD_SOAP_MESSAGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSD_SOAP_MESSAGE {
     fn eq(&self, other: &Self) -> bool {
@@ -5993,6 +6065,7 @@ impl ::core::fmt::Debug for WSD_SYNCHRONOUS_RESPONSE_CONTEXT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WSD_SYNCHRONOUS_RESPONSE_CONTEXT {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WSD_SYNCHRONOUS_RESPONSE_CONTEXT {
@@ -6029,6 +6102,7 @@ impl ::core::fmt::Debug for WSD_THIS_DEVICE_METADATA {
 }
 unsafe impl ::windows::core::Abi for WSD_THIS_DEVICE_METADATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSD_THIS_DEVICE_METADATA {
     fn eq(&self, other: &Self) -> bool {
@@ -6065,6 +6139,7 @@ impl ::core::fmt::Debug for WSD_THIS_MODEL_METADATA {
 }
 unsafe impl ::windows::core::Abi for WSD_THIS_MODEL_METADATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSD_THIS_MODEL_METADATA {
     fn eq(&self, other: &Self) -> bool {
@@ -6095,6 +6170,7 @@ impl ::core::fmt::Debug for WSD_UNKNOWN_LOOKUP {
 }
 unsafe impl ::windows::core::Abi for WSD_UNKNOWN_LOOKUP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSD_UNKNOWN_LOOKUP {
     fn eq(&self, other: &Self) -> bool {
@@ -6126,6 +6202,7 @@ impl ::core::fmt::Debug for WSD_URI_LIST {
 }
 unsafe impl ::windows::core::Abi for WSD_URI_LIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WSD_URI_LIST {
     fn eq(&self, other: &Self) -> bool {

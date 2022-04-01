@@ -21,6 +21,7 @@ impl ::core::fmt::Debug for ENUM_PAGE_FILE_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for ENUM_PAGE_FILE_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ENUM_PAGE_FILE_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -58,6 +59,7 @@ impl ::core::default::Default for ENUM_PROCESS_MODULES_EX_FLAGS {
 }
 unsafe impl ::windows::core::Abi for ENUM_PROCESS_MODULES_EX_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ENUM_PROCESS_MODULES_EX_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -485,6 +487,7 @@ impl ::core::fmt::Debug for MODULEINFO {
 }
 unsafe impl ::windows::core::Abi for MODULEINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MODULEINFO {
     fn eq(&self, other: &Self) -> bool {
@@ -549,6 +552,7 @@ impl ::core::fmt::Debug for PERFORMANCE_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for PERFORMANCE_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PERFORMANCE_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -599,6 +603,7 @@ impl ::core::fmt::Debug for PROCESS_MEMORY_COUNTERS {
 }
 unsafe impl ::windows::core::Abi for PROCESS_MEMORY_COUNTERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROCESS_MEMORY_COUNTERS {
     fn eq(&self, other: &Self) -> bool {
@@ -651,6 +656,7 @@ impl ::core::fmt::Debug for PROCESS_MEMORY_COUNTERS_EX {
 }
 unsafe impl ::windows::core::Abi for PROCESS_MEMORY_COUNTERS_EX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PROCESS_MEMORY_COUNTERS_EX {
     fn eq(&self, other: &Self) -> bool {
@@ -679,6 +685,7 @@ impl ::core::clone::Clone for PSAPI_WORKING_SET_BLOCK {
 }
 unsafe impl ::windows::core::Abi for PSAPI_WORKING_SET_BLOCK {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PSAPI_WORKING_SET_BLOCK {
     fn eq(&self, other: &Self) -> bool {
@@ -709,6 +716,7 @@ impl ::core::fmt::Debug for PSAPI_WORKING_SET_BLOCK_0 {
 }
 unsafe impl ::windows::core::Abi for PSAPI_WORKING_SET_BLOCK_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PSAPI_WORKING_SET_BLOCK_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -735,6 +743,7 @@ impl ::core::clone::Clone for PSAPI_WORKING_SET_EX_BLOCK {
 }
 unsafe impl ::windows::core::Abi for PSAPI_WORKING_SET_EX_BLOCK {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PSAPI_WORKING_SET_EX_BLOCK {
     fn eq(&self, other: &Self) -> bool {
@@ -761,6 +770,7 @@ impl ::core::clone::Clone for PSAPI_WORKING_SET_EX_BLOCK_0 {
 }
 unsafe impl ::windows::core::Abi for PSAPI_WORKING_SET_EX_BLOCK_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PSAPI_WORKING_SET_EX_BLOCK_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -791,6 +801,7 @@ impl ::core::fmt::Debug for PSAPI_WORKING_SET_EX_BLOCK_0_0 {
 }
 unsafe impl ::windows::core::Abi for PSAPI_WORKING_SET_EX_BLOCK_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PSAPI_WORKING_SET_EX_BLOCK_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -821,6 +832,7 @@ impl ::core::fmt::Debug for PSAPI_WORKING_SET_EX_BLOCK_0_1 {
 }
 unsafe impl ::windows::core::Abi for PSAPI_WORKING_SET_EX_BLOCK_0_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PSAPI_WORKING_SET_EX_BLOCK_0_1 {
     fn eq(&self, other: &Self) -> bool {
@@ -847,6 +859,7 @@ impl ::core::clone::Clone for PSAPI_WORKING_SET_EX_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for PSAPI_WORKING_SET_EX_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PSAPI_WORKING_SET_EX_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -873,6 +886,7 @@ impl ::core::clone::Clone for PSAPI_WORKING_SET_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for PSAPI_WORKING_SET_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PSAPI_WORKING_SET_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -904,6 +918,7 @@ impl ::core::fmt::Debug for PSAPI_WS_WATCH_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for PSAPI_WS_WATCH_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PSAPI_WS_WATCH_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -936,6 +951,7 @@ impl ::core::fmt::Debug for PSAPI_WS_WATCH_INFORMATION_EX {
 }
 unsafe impl ::windows::core::Abi for PSAPI_WS_WATCH_INFORMATION_EX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PSAPI_WS_WATCH_INFORMATION_EX {
     fn eq(&self, other: &Self) -> bool {

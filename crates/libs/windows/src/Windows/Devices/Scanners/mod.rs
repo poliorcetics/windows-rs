@@ -2,6 +2,11 @@
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IImageScanner(::windows::core::IUnknown);
+impl ::core::clone::Clone for IImageScanner {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IImageScanner {
     type Vtable = IImageScanner_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x53a88f78_5298_48a0_8da3_8087519665e0);
@@ -29,6 +34,11 @@ pub struct IImageScanner_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IImageScannerFeederConfiguration(::windows::core::IUnknown);
+impl ::core::clone::Clone for IImageScannerFeederConfiguration {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IImageScannerFeederConfiguration {
     type Vtable = IImageScannerFeederConfiguration_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x74bdacee_fa97_4c17_8280_40e39c6dcc67);
@@ -76,6 +86,11 @@ pub struct IImageScannerFeederConfiguration_Vtbl {
 #[doc = "*Required features: `\"Devices_Scanners\"`*"]
 #[repr(transparent)]
 pub struct IImageScannerFormatConfiguration(::windows::core::IUnknown);
+impl ::core::clone::Clone for IImageScannerFormatConfiguration {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IImageScannerFormatConfiguration {
     #[doc = "*Required features: `\"Devices_Scanners\"`*"]
     pub fn DefaultFormat(&self) -> ::windows::core::Result<ImageScannerFormat> {
@@ -147,11 +162,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IImageScannerFormatConfiguration {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IImageScannerFormatConfiguration {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -165,7 +175,6 @@ impl ::core::fmt::Debug for IImageScannerFormatConfiguration {
 }
 unsafe impl ::windows::core::RuntimeType for IImageScannerFormatConfiguration {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{ae275d11-dadf-4010-bf10-cca5c83dcbb0}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -186,6 +195,11 @@ pub struct IImageScannerFormatConfiguration_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IImageScannerPreviewResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for IImageScannerPreviewResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IImageScannerPreviewResult {
     type Vtable = IImageScannerPreviewResult_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x08b7fe8e_8891_441d_be9c_176fa109c8bb);
@@ -200,6 +214,11 @@ pub struct IImageScannerPreviewResult_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IImageScannerScanResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for IImageScannerScanResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IImageScannerScanResult {
     type Vtable = IImageScannerScanResult_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc91624cd_9037_4e48_84c1_ac0975076bc5);
@@ -216,6 +235,11 @@ pub struct IImageScannerScanResult_Vtbl {
 #[doc = "*Required features: `\"Devices_Scanners\"`*"]
 #[repr(transparent)]
 pub struct IImageScannerSourceConfiguration(::windows::core::IUnknown);
+impl ::core::clone::Clone for IImageScannerSourceConfiguration {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IImageScannerSourceConfiguration {
     #[doc = "*Required features: `\"Devices_Scanners\"`, `\"Foundation\"`*"]
     #[cfg(feature = "Foundation")]
@@ -527,11 +551,6 @@ impl<'a> ::windows::core::IntoParam<'a, IImageScannerFormatConfiguration> for &I
         ::core::convert::TryInto::<IImageScannerFormatConfiguration>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IImageScannerSourceConfiguration {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IImageScannerSourceConfiguration {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -545,7 +564,6 @@ impl ::core::fmt::Debug for IImageScannerSourceConfiguration {
 }
 unsafe impl ::windows::core::RuntimeType for IImageScannerSourceConfiguration {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{bfb50055-0b44-4c82-9e89-205f9c234e59}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -603,6 +621,11 @@ pub struct IImageScannerSourceConfiguration_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IImageScannerStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IImageScannerStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IImageScannerStatics {
     type Vtable = IImageScannerStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xbc57e70e_d804_4477_9fb5_b911b5473897);
@@ -716,11 +739,6 @@ impl ImageScanner {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for ImageScanner {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ImageScanner {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -734,7 +752,6 @@ impl ::core::fmt::Debug for ImageScanner {
 }
 unsafe impl ::windows::core::RuntimeType for ImageScanner {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Scanners.ImageScanner;{53a88f78-5298-48a0-8da3-8087519665e0})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -822,11 +839,6 @@ impl ImageScannerAutoConfiguration {
         }
     }
 }
-impl ::core::clone::Clone for ImageScannerAutoConfiguration {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ImageScannerAutoConfiguration {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -840,7 +852,6 @@ impl ::core::fmt::Debug for ImageScannerAutoConfiguration {
 }
 unsafe impl ::windows::core::RuntimeType for ImageScannerAutoConfiguration {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Scanners.ImageScannerAutoConfiguration;{ae275d11-dadf-4010-bf10-cca5c83dcbb0})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -938,6 +949,7 @@ impl ::core::default::Default for ImageScannerAutoCroppingMode {
 }
 unsafe impl ::windows::core::Abi for ImageScannerAutoCroppingMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ImageScannerAutoCroppingMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -946,7 +958,6 @@ impl ::core::fmt::Debug for ImageScannerAutoCroppingMode {
 }
 unsafe impl ::windows::core::RuntimeType for ImageScannerAutoCroppingMode {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.Scanners.ImageScannerAutoCroppingMode;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -974,6 +985,7 @@ impl ::core::default::Default for ImageScannerColorMode {
 }
 unsafe impl ::windows::core::Abi for ImageScannerColorMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ImageScannerColorMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -982,7 +994,6 @@ impl ::core::fmt::Debug for ImageScannerColorMode {
 }
 unsafe impl ::windows::core::RuntimeType for ImageScannerColorMode {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.Scanners.ImageScannerColorMode;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1363,11 +1374,6 @@ impl ImageScannerFeederConfiguration {
         unsafe { (::windows::core::Interface::vtable(this).SetContrast)(::core::mem::transmute_copy(this), value).ok() }
     }
 }
-impl ::core::clone::Clone for ImageScannerFeederConfiguration {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ImageScannerFeederConfiguration {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1381,7 +1387,6 @@ impl ::core::fmt::Debug for ImageScannerFeederConfiguration {
 }
 unsafe impl ::windows::core::RuntimeType for ImageScannerFeederConfiguration {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Scanners.ImageScannerFeederConfiguration;{ae275d11-dadf-4010-bf10-cca5c83dcbb0})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1731,11 +1736,6 @@ impl ImageScannerFlatbedConfiguration {
         unsafe { (::windows::core::Interface::vtable(this).SetContrast)(::core::mem::transmute_copy(this), value).ok() }
     }
 }
-impl ::core::clone::Clone for ImageScannerFlatbedConfiguration {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ImageScannerFlatbedConfiguration {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1749,7 +1749,6 @@ impl ::core::fmt::Debug for ImageScannerFlatbedConfiguration {
 }
 unsafe impl ::windows::core::RuntimeType for ImageScannerFlatbedConfiguration {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Scanners.ImageScannerFlatbedConfiguration;{ae275d11-dadf-4010-bf10-cca5c83dcbb0})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1873,6 +1872,7 @@ impl ::core::default::Default for ImageScannerFormat {
 }
 unsafe impl ::windows::core::Abi for ImageScannerFormat {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ImageScannerFormat {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1881,7 +1881,6 @@ impl ::core::fmt::Debug for ImageScannerFormat {
 }
 unsafe impl ::windows::core::RuntimeType for ImageScannerFormat {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.Scanners.ImageScannerFormat;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1907,11 +1906,6 @@ impl ImageScannerPreviewResult {
         }
     }
 }
-impl ::core::clone::Clone for ImageScannerPreviewResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ImageScannerPreviewResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1925,7 +1919,6 @@ impl ::core::fmt::Debug for ImageScannerPreviewResult {
 }
 unsafe impl ::windows::core::RuntimeType for ImageScannerPreviewResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Scanners.ImageScannerPreviewResult;{08b7fe8e-8891-441d-be9c-176fa109c8bb})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1998,10 +1991,10 @@ impl ::core::fmt::Debug for ImageScannerResolution {
 }
 unsafe impl ::windows::core::Abi for ImageScannerResolution {
     type Abi = Self;
+    type DefaultType = Self;
 }
 unsafe impl ::windows::core::RuntimeType for ImageScannerResolution {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"struct(Windows.Devices.Scanners.ImageScannerResolution;f4;f4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2031,11 +2024,6 @@ impl ImageScannerScanResult {
         }
     }
 }
-impl ::core::clone::Clone for ImageScannerScanResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ImageScannerScanResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2049,7 +2037,6 @@ impl ::core::fmt::Debug for ImageScannerScanResult {
 }
 unsafe impl ::windows::core::RuntimeType for ImageScannerScanResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Scanners.ImageScannerScanResult;{c91624cd-9037-4e48-84c1-ac0975076bc5})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2126,6 +2113,7 @@ impl ::core::default::Default for ImageScannerScanSource {
 }
 unsafe impl ::windows::core::Abi for ImageScannerScanSource {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ImageScannerScanSource {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2134,7 +2122,6 @@ impl ::core::fmt::Debug for ImageScannerScanSource {
 }
 unsafe impl ::windows::core::RuntimeType for ImageScannerScanSource {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.Scanners.ImageScannerScanSource;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }

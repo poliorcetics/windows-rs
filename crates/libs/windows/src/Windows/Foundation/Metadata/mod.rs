@@ -113,6 +113,7 @@ impl ::core::default::Default for AttributeTargets {
 }
 unsafe impl ::windows::core::Abi for AttributeTargets {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AttributeTargets {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -149,7 +150,6 @@ impl ::core::ops::Not for AttributeTargets {
 }
 unsafe impl ::windows::core::RuntimeType for AttributeTargets {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Foundation.Metadata.AttributeTargets;u4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -175,6 +175,7 @@ impl ::core::default::Default for CompositionType {
 }
 unsafe impl ::windows::core::Abi for CompositionType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CompositionType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -183,7 +184,6 @@ impl ::core::fmt::Debug for CompositionType {
 }
 unsafe impl ::windows::core::RuntimeType for CompositionType {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Foundation.Metadata.CompositionType;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -209,6 +209,7 @@ impl ::core::default::Default for DeprecationType {
 }
 unsafe impl ::windows::core::Abi for DeprecationType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DeprecationType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -217,7 +218,6 @@ impl ::core::fmt::Debug for DeprecationType {
 }
 unsafe impl ::windows::core::RuntimeType for DeprecationType {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Foundation.Metadata.DeprecationType;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -245,6 +245,7 @@ impl ::core::default::Default for FeatureStage {
 }
 unsafe impl ::windows::core::Abi for FeatureStage {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FeatureStage {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -253,7 +254,6 @@ impl ::core::fmt::Debug for FeatureStage {
 }
 unsafe impl ::windows::core::RuntimeType for FeatureStage {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Foundation.Metadata.FeatureStage;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -280,6 +280,7 @@ impl ::core::default::Default for GCPressureAmount {
 }
 unsafe impl ::windows::core::Abi for GCPressureAmount {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GCPressureAmount {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -288,7 +289,6 @@ impl ::core::fmt::Debug for GCPressureAmount {
 }
 unsafe impl ::windows::core::RuntimeType for GCPressureAmount {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Foundation.Metadata.GCPressureAmount;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -296,6 +296,11 @@ unsafe impl ::windows::core::RuntimeType for GCPressureAmount {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IApiInformationStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IApiInformationStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IApiInformationStatics {
     type Vtable = IApiInformationStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x997439fe_f681_4a11_b416_c13a47e8ba36);
@@ -338,6 +343,7 @@ impl ::core::default::Default for MarshalingType {
 }
 unsafe impl ::windows::core::Abi for MarshalingType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MarshalingType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -346,7 +352,6 @@ impl ::core::fmt::Debug for MarshalingType {
 }
 unsafe impl ::windows::core::RuntimeType for MarshalingType {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Foundation.Metadata.MarshalingType;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -372,6 +377,7 @@ impl ::core::default::Default for Platform {
 }
 unsafe impl ::windows::core::Abi for Platform {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for Platform {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -380,7 +386,6 @@ impl ::core::fmt::Debug for Platform {
 }
 unsafe impl ::windows::core::RuntimeType for Platform {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Foundation.Metadata.Platform;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -408,6 +413,7 @@ impl ::core::default::Default for ThreadingModel {
 }
 unsafe impl ::windows::core::Abi for ThreadingModel {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ThreadingModel {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -416,7 +422,6 @@ impl ::core::fmt::Debug for ThreadingModel {
 }
 unsafe impl ::windows::core::RuntimeType for ThreadingModel {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Foundation.Metadata.ThreadingModel;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }

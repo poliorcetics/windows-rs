@@ -10,6 +10,11 @@ pub mod UI;
 #[doc = "*Required features: `\"Web\"`*"]
 #[repr(transparent)]
 pub struct IUriToStreamResolver(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUriToStreamResolver {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUriToStreamResolver {
     #[doc = "*Required features: `\"Web\"`, `\"Foundation\"`, `\"Storage_Streams\"`*"]
     #[cfg(all(feature = "Foundation", feature = "Storage_Streams"))]
@@ -61,11 +66,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUriToStreamResolver {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUriToStreamResolver {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -79,7 +79,6 @@ impl ::core::fmt::Debug for IUriToStreamResolver {
 }
 unsafe impl ::windows::core::RuntimeType for IUriToStreamResolver {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{b0aba86a-9aeb-4d3a-9590-003e3ca7e290}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -100,6 +99,11 @@ pub struct IUriToStreamResolver_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWebErrorStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWebErrorStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWebErrorStatics {
     type Vtable = IWebErrorStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xfe616766_bf27_4064_87b7_6563bb11ce2e);
@@ -203,6 +207,7 @@ impl ::core::default::Default for WebErrorStatus {
 }
 unsafe impl ::windows::core::Abi for WebErrorStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WebErrorStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -211,7 +216,6 @@ impl ::core::fmt::Debug for WebErrorStatus {
 }
 unsafe impl ::windows::core::RuntimeType for WebErrorStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Web.WebErrorStatus;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }

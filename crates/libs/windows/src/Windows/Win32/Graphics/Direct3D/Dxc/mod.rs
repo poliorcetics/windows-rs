@@ -71,6 +71,7 @@ impl ::core::default::Default for DXC_CP {
 }
 unsafe impl ::windows::core::Abi for DXC_CP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXC_CP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -124,6 +125,7 @@ impl ::core::default::Default for DXC_OUT_KIND {
 }
 unsafe impl ::windows::core::Abi for DXC_OUT_KIND {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXC_OUT_KIND {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -149,6 +151,7 @@ impl ::core::fmt::Debug for DxcArgPair {
 }
 unsafe impl ::windows::core::Abi for DxcArgPair {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DxcArgPair {
     fn eq(&self, other: &Self) -> bool {
@@ -181,6 +184,7 @@ impl ::core::fmt::Debug for DxcBuffer {
 }
 unsafe impl ::windows::core::Abi for DxcBuffer {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DxcBuffer {
     fn eq(&self, other: &Self) -> bool {
@@ -246,6 +250,7 @@ impl ::core::fmt::Debug for DxcDefine {
 }
 unsafe impl ::windows::core::Abi for DxcDefine {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DxcDefine {
     fn eq(&self, other: &Self) -> bool {
@@ -277,6 +282,7 @@ impl ::core::fmt::Debug for DxcShaderHash {
 }
 unsafe impl ::windows::core::Abi for DxcShaderHash {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DxcShaderHash {
     fn eq(&self, other: &Self) -> bool {
@@ -308,6 +314,11 @@ pub const DxcVersionInfoFlags_None: u32 = 0u32;
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D_Dxc\"`*"]
 #[repr(transparent)]
 pub struct IDxcAssembler(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDxcAssembler {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDxcAssembler {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D_Dxc\"`*"]
     pub unsafe fn AssembleToContainer<'a, Param0: ::windows::core::IntoParam<'a, IDxcBlob>>(&self, pshader: Param0) -> ::windows::core::Result<IDxcOperationResult> {
@@ -335,11 +346,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDxcA
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDxcAssembler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDxcAssembler {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -364,6 +370,11 @@ pub struct IDxcAssembler_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D_Dxc\"`*"]
 #[repr(transparent)]
 pub struct IDxcBlob(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDxcBlob {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDxcBlob {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D_Dxc\"`*"]
     pub unsafe fn GetBufferPointer(&self) -> *mut ::core::ffi::c_void {
@@ -394,11 +405,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDxcB
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDxcBlob {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDxcBlob {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -424,6 +430,11 @@ pub struct IDxcBlob_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D_Dxc\"`*"]
 #[repr(transparent)]
 pub struct IDxcBlobEncoding(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDxcBlobEncoding {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDxcBlobEncoding {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D_Dxc\"`*"]
     pub unsafe fn GetBufferPointer(&self) -> *mut ::core::ffi::c_void {
@@ -479,11 +490,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDxcBlob> for &'a IDxcBlobEncoding {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDxcBlobEncoding {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDxcBlobEncoding {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -511,6 +517,11 @@ pub struct IDxcBlobEncoding_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D_Dxc\"`*"]
 #[repr(transparent)]
 pub struct IDxcBlobUtf16(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDxcBlobUtf16 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDxcBlobUtf16 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D_Dxc\"`*"]
     pub unsafe fn GetBufferPointer(&self) -> *mut ::core::ffi::c_void {
@@ -594,11 +605,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDxcBlobEncoding> for &'a IDxcBlobUtf16 
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDxcBlobUtf16 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDxcBlobUtf16 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -624,6 +630,11 @@ pub struct IDxcBlobUtf16_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D_Dxc\"`*"]
 #[repr(transparent)]
 pub struct IDxcBlobUtf8(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDxcBlobUtf8 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDxcBlobUtf8 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D_Dxc\"`*"]
     pub unsafe fn GetBufferPointer(&self) -> *mut ::core::ffi::c_void {
@@ -707,11 +718,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDxcBlobEncoding> for &'a IDxcBlobUtf8 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDxcBlobUtf8 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDxcBlobUtf8 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -737,6 +743,11 @@ pub struct IDxcBlobUtf8_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D_Dxc\"`*"]
 #[repr(transparent)]
 pub struct IDxcCompiler(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDxcCompiler {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDxcCompiler {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D_Dxc\"`*"]
     pub unsafe fn Compile<'a, Param0: ::windows::core::IntoParam<'a, IDxcBlob>, Param1: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param2: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param3: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param8: ::windows::core::IntoParam<'a, IDxcIncludeHandler>>(&self, psource: Param0, psourcename: Param1, pentrypoint: Param2, ptargetprofile: Param3, parguments: &[::windows::core::PWSTR], pdefines: &[DxcDefine], pincludehandler: Param8) -> ::windows::core::Result<IDxcOperationResult> {
@@ -774,11 +785,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDxcC
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDxcCompiler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDxcCompiler {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -805,6 +811,11 @@ pub struct IDxcCompiler_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D_Dxc\"`*"]
 #[repr(transparent)]
 pub struct IDxcCompiler2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDxcCompiler2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDxcCompiler2 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D_Dxc\"`*"]
     pub unsafe fn Compile<'a, Param0: ::windows::core::IntoParam<'a, IDxcBlob>, Param1: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param2: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param3: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param8: ::windows::core::IntoParam<'a, IDxcIncludeHandler>>(&self, psource: Param0, psourcename: Param1, pentrypoint: Param2, ptargetprofile: Param3, parguments: &[::windows::core::PWSTR], pdefines: &[DxcDefine], pincludehandler: Param8) -> ::windows::core::Result<IDxcOperationResult> {
@@ -881,11 +892,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDxcCompiler> for &'a IDxcCompiler2 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDxcCompiler2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDxcCompiler2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -910,6 +916,11 @@ pub struct IDxcCompiler2_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D_Dxc\"`*"]
 #[repr(transparent)]
 pub struct IDxcCompiler3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDxcCompiler3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDxcCompiler3 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D_Dxc\"`*"]
     pub unsafe fn Compile<'a, Param3: ::windows::core::IntoParam<'a, IDxcIncludeHandler>>(&self, psource: *const DxcBuffer, parguments: &[::windows::core::PWSTR], pincludehandler: Param3, riid: *const ::windows::core::GUID, ppresult: *mut *mut ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -940,11 +951,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDxcC
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDxcCompiler3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDxcCompiler3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -970,6 +976,11 @@ pub struct IDxcCompiler3_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D_Dxc\"`*"]
 #[repr(transparent)]
 pub struct IDxcCompilerArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDxcCompilerArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDxcCompilerArgs {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D_Dxc\"`*"]
     pub unsafe fn GetArguments(&self) -> *mut ::windows::core::PWSTR {
@@ -1012,11 +1023,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDxcC
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDxcCompilerArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDxcCompilerArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1045,6 +1051,11 @@ pub struct IDxcCompilerArgs_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D_Dxc\"`*"]
 #[repr(transparent)]
 pub struct IDxcContainerBuilder(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDxcContainerBuilder {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDxcContainerBuilder {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D_Dxc\"`*"]
     pub unsafe fn Load<'a, Param0: ::windows::core::IntoParam<'a, IDxcBlob>>(&self, pdxilcontainerheader: Param0) -> ::windows::core::Result<()> {
@@ -1084,11 +1095,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDxcC
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDxcContainerBuilder {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDxcContainerBuilder {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1116,6 +1122,11 @@ pub struct IDxcContainerBuilder_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D_Dxc\"`*"]
 #[repr(transparent)]
 pub struct IDxcContainerReflection(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDxcContainerReflection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDxcContainerReflection {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D_Dxc\"`*"]
     pub unsafe fn Load<'a, Param0: ::windows::core::IntoParam<'a, IDxcBlob>>(&self, pcontainer: Param0) -> ::windows::core::Result<()> {
@@ -1166,11 +1177,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDxcC
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDxcContainerReflection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDxcContainerReflection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1200,6 +1206,11 @@ pub struct IDxcContainerReflection_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D_Dxc\"`*"]
 #[repr(transparent)]
 pub struct IDxcExtraOutputs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDxcExtraOutputs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDxcExtraOutputs {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D_Dxc\"`*"]
     pub unsafe fn GetOutputCount(&self) -> u32 {
@@ -1230,11 +1241,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDxcE
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDxcExtraOutputs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDxcExtraOutputs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1260,6 +1266,11 @@ pub struct IDxcExtraOutputs_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D_Dxc\"`*"]
 #[repr(transparent)]
 pub struct IDxcIncludeHandler(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDxcIncludeHandler {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDxcIncludeHandler {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D_Dxc\"`*"]
     pub unsafe fn LoadSource<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, pfilename: Param0) -> ::windows::core::Result<IDxcBlob> {
@@ -1287,11 +1298,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDxcI
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDxcIncludeHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDxcIncludeHandler {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1316,6 +1322,11 @@ pub struct IDxcIncludeHandler_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D_Dxc\"`*"]
 #[repr(transparent)]
 pub struct IDxcLibrary(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDxcLibrary {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDxcLibrary {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D_Dxc\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -1390,11 +1401,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDxcL
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDxcLibrary {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDxcLibrary {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1437,6 +1443,11 @@ pub struct IDxcLibrary_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D_Dxc\"`*"]
 #[repr(transparent)]
 pub struct IDxcLinker(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDxcLinker {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDxcLinker {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D_Dxc\"`*"]
     pub unsafe fn RegisterLibrary<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param1: ::windows::core::IntoParam<'a, IDxcBlob>>(&self, plibname: Param0, plib: Param1) -> ::windows::core::Result<()> {
@@ -1468,11 +1479,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDxcL
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDxcLinker {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDxcLinker {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1498,6 +1504,11 @@ pub struct IDxcLinker_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D_Dxc\"`*"]
 #[repr(transparent)]
 pub struct IDxcOperationResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDxcOperationResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDxcOperationResult {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D_Dxc\"`*"]
     pub unsafe fn GetStatus(&self) -> ::windows::core::Result<::windows::core::HRESULT> {
@@ -1535,11 +1546,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDxcO
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDxcOperationResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDxcOperationResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1566,6 +1572,11 @@ pub struct IDxcOperationResult_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D_Dxc\"`*"]
 #[repr(transparent)]
 pub struct IDxcOptimizer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDxcOptimizer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDxcOptimizer {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D_Dxc\"`*"]
     pub unsafe fn GetAvailablePassCount(&self) -> ::windows::core::Result<u32> {
@@ -1602,11 +1613,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDxcO
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDxcOptimizer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDxcOptimizer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1633,6 +1639,11 @@ pub struct IDxcOptimizer_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D_Dxc\"`*"]
 #[repr(transparent)]
 pub struct IDxcOptimizerPass(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDxcOptimizerPass {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDxcOptimizerPass {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D_Dxc\"`*"]
     pub unsafe fn GetOptionName(&self) -> ::windows::core::Result<::windows::core::PWSTR> {
@@ -1680,11 +1691,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDxcO
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDxcOptimizerPass {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDxcOptimizerPass {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1713,6 +1719,11 @@ pub struct IDxcOptimizerPass_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D_Dxc\"`*"]
 #[repr(transparent)]
 pub struct IDxcPdbUtils(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDxcPdbUtils {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDxcPdbUtils {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D_Dxc\"`*"]
     pub unsafe fn Load<'a, Param0: ::windows::core::IntoParam<'a, IDxcBlob>>(&self, ppdbordxil: Param0) -> ::windows::core::Result<()> {
@@ -1859,11 +1870,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDxcP
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDxcPdbUtils {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDxcPdbUtils {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1941,6 +1947,11 @@ pub struct IDxcPdbUtils_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D_Dxc\"`*"]
 #[repr(transparent)]
 pub struct IDxcResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDxcResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDxcResult {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D_Dxc\"`*"]
     pub unsafe fn GetStatus(&self) -> ::windows::core::Result<::windows::core::HRESULT> {
@@ -2019,11 +2030,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDxcOperationResult> for &'a IDxcResult 
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDxcResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDxcResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2055,6 +2061,11 @@ pub struct IDxcResult_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D_Dxc\"`*"]
 #[repr(transparent)]
 pub struct IDxcUtils(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDxcUtils {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDxcUtils {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D_Dxc\"`*"]
     pub unsafe fn CreateBlobFromBlob<'a, Param0: ::windows::core::IntoParam<'a, IDxcBlob>>(&self, pblob: Param0, offset: u32, length: u32) -> ::windows::core::Result<IDxcBlob> {
@@ -2141,11 +2152,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDxcU
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDxcUtils {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDxcUtils {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2188,6 +2194,11 @@ pub struct IDxcUtils_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D_Dxc\"`*"]
 #[repr(transparent)]
 pub struct IDxcValidator(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDxcValidator {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDxcValidator {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D_Dxc\"`*"]
     pub unsafe fn Validate<'a, Param0: ::windows::core::IntoParam<'a, IDxcBlob>>(&self, pshader: Param0, flags: u32) -> ::windows::core::Result<IDxcOperationResult> {
@@ -2215,11 +2226,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDxcV
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDxcValidator {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDxcValidator {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2244,6 +2250,11 @@ pub struct IDxcValidator_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D_Dxc\"`*"]
 #[repr(transparent)]
 pub struct IDxcValidator2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDxcValidator2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDxcValidator2 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D_Dxc\"`*"]
     pub unsafe fn Validate<'a, Param0: ::windows::core::IntoParam<'a, IDxcBlob>>(&self, pshader: Param0, flags: u32) -> ::windows::core::Result<IDxcOperationResult> {
@@ -2296,11 +2307,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDxcValidator> for &'a IDxcValidator2 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDxcValidator2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDxcValidator2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2325,6 +2331,11 @@ pub struct IDxcValidator2_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D_Dxc\"`*"]
 #[repr(transparent)]
 pub struct IDxcVersionInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDxcVersionInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDxcVersionInfo {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D_Dxc\"`*"]
     pub unsafe fn GetVersion(&self, pmajor: *mut u32, pminor: *mut u32) -> ::windows::core::Result<()> {
@@ -2356,11 +2367,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDxcV
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDxcVersionInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDxcVersionInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2386,6 +2392,11 @@ pub struct IDxcVersionInfo_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D_Dxc\"`*"]
 #[repr(transparent)]
 pub struct IDxcVersionInfo2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDxcVersionInfo2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDxcVersionInfo2 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D_Dxc\"`*"]
     pub unsafe fn GetVersion(&self, pmajor: *mut u32, pminor: *mut u32) -> ::windows::core::Result<()> {
@@ -2441,11 +2452,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDxcVersionInfo> for &'a IDxcVersionInfo
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDxcVersionInfo2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDxcVersionInfo2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2470,6 +2476,11 @@ pub struct IDxcVersionInfo2_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D_Dxc\"`*"]
 #[repr(transparent)]
 pub struct IDxcVersionInfo3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDxcVersionInfo3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDxcVersionInfo3 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D_Dxc\"`*"]
     pub unsafe fn GetCustomVersionString(&self) -> ::windows::core::Result<*mut i8> {
@@ -2495,11 +2506,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IDxcVersi
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDxcVersionInfo3 {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IDxcVersionInfo3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IDxcVersionInfo3 {

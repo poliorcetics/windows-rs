@@ -981,6 +981,7 @@ impl ::core::default::Default for FEEDS_BACKGROUNDSYNC_ACTION {
 }
 unsafe impl ::windows::core::Abi for FEEDS_BACKGROUNDSYNC_ACTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FEEDS_BACKGROUNDSYNC_ACTION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1008,6 +1009,7 @@ impl ::core::default::Default for FEEDS_BACKGROUNDSYNC_STATUS {
 }
 unsafe impl ::windows::core::Abi for FEEDS_BACKGROUNDSYNC_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FEEDS_BACKGROUNDSYNC_STATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1063,6 +1065,7 @@ impl ::core::default::Default for FEEDS_DOWNLOAD_ERROR {
 }
 unsafe impl ::windows::core::Abi for FEEDS_DOWNLOAD_ERROR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FEEDS_DOWNLOAD_ERROR {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1096,6 +1099,7 @@ impl ::core::default::Default for FEEDS_DOWNLOAD_STATUS {
 }
 unsafe impl ::windows::core::Abi for FEEDS_DOWNLOAD_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FEEDS_DOWNLOAD_STATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1125,6 +1129,7 @@ impl ::core::default::Default for FEEDS_ERROR_CODE {
 }
 unsafe impl ::windows::core::Abi for FEEDS_ERROR_CODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FEEDS_ERROR_CODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1152,6 +1157,7 @@ impl ::core::default::Default for FEEDS_EVENTS_ITEM_COUNT_FLAGS {
 }
 unsafe impl ::windows::core::Abi for FEEDS_EVENTS_ITEM_COUNT_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FEEDS_EVENTS_ITEM_COUNT_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1179,6 +1185,7 @@ impl ::core::default::Default for FEEDS_EVENTS_MASK {
 }
 unsafe impl ::windows::core::Abi for FEEDS_EVENTS_MASK {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FEEDS_EVENTS_MASK {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1208,6 +1215,7 @@ impl ::core::default::Default for FEEDS_EVENTS_SCOPE {
 }
 unsafe impl ::windows::core::Abi for FEEDS_EVENTS_SCOPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FEEDS_EVENTS_SCOPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1239,6 +1247,7 @@ impl ::core::default::Default for FEEDS_SYNC_SETTING {
 }
 unsafe impl ::windows::core::Abi for FEEDS_SYNC_SETTING {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FEEDS_SYNC_SETTING {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1268,6 +1277,7 @@ impl ::core::default::Default for FEEDS_XML_FILTER_FLAGS {
 }
 unsafe impl ::windows::core::Abi for FEEDS_XML_FILTER_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FEEDS_XML_FILTER_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1295,6 +1305,7 @@ impl ::core::default::Default for FEEDS_XML_INCLUDE_FLAGS {
 }
 unsafe impl ::windows::core::Abi for FEEDS_XML_INCLUDE_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FEEDS_XML_INCLUDE_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1324,6 +1335,7 @@ impl ::core::default::Default for FEEDS_XML_SORT_ORDER {
 }
 unsafe impl ::windows::core::Abi for FEEDS_XML_SORT_ORDER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FEEDS_XML_SORT_ORDER {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1353,6 +1365,7 @@ impl ::core::default::Default for FEEDS_XML_SORT_PROPERTY {
 }
 unsafe impl ::windows::core::Abi for FEEDS_XML_SORT_PROPERTY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FEEDS_XML_SORT_PROPERTY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1366,6 +1379,12 @@ pub const FeedsManager: ::windows::core::GUID = ::windows::core::GUID::from_u128
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFeed(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFeed {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFeed {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`, `\"Win32_Foundation\"`*"]
@@ -1646,12 +1665,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFeed {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFeed {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1787,6 +1800,12 @@ pub struct IFeed_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFeed2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFeed2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFeed2 {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`, `\"Win32_Foundation\"`*"]
@@ -2123,12 +2142,6 @@ impl<'a> ::windows::core::IntoParam<'a, IFeed> for &'a IFeed2 {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFeed2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFeed2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2175,6 +2188,12 @@ pub struct IFeed2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFeedEnclosure(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFeedEnclosure {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFeedEnclosure {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`, `\"Win32_Foundation\"`*"]
@@ -2295,12 +2314,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFeedEnclosure {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFeedEnclosure {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2363,6 +2376,12 @@ pub struct IFeedEnclosure_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFeedEvents(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFeedEvents {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFeedEvents {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
@@ -2454,12 +2473,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFeedEvents {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFeedEvents {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2517,6 +2530,12 @@ pub struct IFeedEvents_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFeedFolder(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFeedFolder {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFeedFolder {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`, `\"Win32_System_Com\"`*"]
@@ -2670,12 +2689,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFeedFolder {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFeedFolder {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2764,6 +2777,12 @@ pub struct IFeedFolder_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFeedFolderEvents(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFeedFolderEvents {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFeedFolderEvents {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
@@ -2895,12 +2914,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFeedFolderEvents {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFeedFolderEvents {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2990,6 +3003,12 @@ pub struct IFeedFolderEvents_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFeedItem(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFeedItem {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFeedItem {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`, `\"Win32_Foundation\"`*"]
@@ -3135,12 +3154,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFeedItem {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFeedItem {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3216,6 +3229,12 @@ pub struct IFeedItem_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFeedItem2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFeedItem2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFeedItem2 {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`, `\"Win32_Foundation\"`*"]
@@ -3390,12 +3409,6 @@ impl<'a> ::windows::core::IntoParam<'a, IFeedItem> for &'a IFeedItem2 {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFeedItem2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFeedItem2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3425,6 +3438,12 @@ pub struct IFeedItem2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFeedsEnum(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFeedsEnum {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFeedsEnum {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
@@ -3494,12 +3513,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFeedsEnum {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFeedsEnum {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3537,6 +3550,12 @@ pub struct IFeedsEnum_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFeedsManager(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFeedsManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFeedsManager {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`, `\"Win32_System_Com\"`*"]
@@ -3674,12 +3693,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFeedsManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFeedsManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3757,6 +3770,11 @@ pub const IOCTL_WMP_METADATA_ROUND_TRIP: u32 = 827346263u32;
 #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
 #[repr(transparent)]
 pub struct IWMPAudioRenderConfig(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMPAudioRenderConfig {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMPAudioRenderConfig {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -3787,11 +3805,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IWMPAudio
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWMPAudioRenderConfig {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IWMPAudioRenderConfig {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IWMPAudioRenderConfig {
@@ -3826,6 +3839,12 @@ pub struct IWMPAudioRenderConfig_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IWMPCdrom(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IWMPCdrom {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IWMPCdrom {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`, `\"Win32_Foundation\"`*"]
@@ -3893,12 +3912,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IWMPCdrom {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IWMPCdrom {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3935,6 +3948,11 @@ pub struct IWMPCdrom_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
 #[repr(transparent)]
 pub struct IWMPCdromBurn(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMPCdromBurn {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMPCdromBurn {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -4020,11 +4038,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWMPC
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWMPCdromBurn {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWMPCdromBurn {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4081,6 +4094,12 @@ pub struct IWMPCdromBurn_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IWMPCdromCollection(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IWMPCdromCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IWMPCdromCollection {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
@@ -4149,12 +4168,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IWMPCdromCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IWMPCdromCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4191,6 +4204,11 @@ pub struct IWMPCdromCollection_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
 #[repr(transparent)]
 pub struct IWMPCdromRip(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMPCdromRip {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMPCdromRip {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
     pub unsafe fn ripState(&self, pwmprs: *mut WMPRipState) -> ::windows::core::Result<()> {
@@ -4229,11 +4247,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWMPC
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWMPCdromRip {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWMPCdromRip {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4262,6 +4275,12 @@ pub struct IWMPCdromRip_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IWMPClosedCaption(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IWMPClosedCaption {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IWMPClosedCaption {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`, `\"Win32_Foundation\"`*"]
@@ -4354,12 +4373,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IWMPClosedCaption {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IWMPClosedCaption {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4420,6 +4433,12 @@ pub struct IWMPClosedCaption_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IWMPClosedCaption2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IWMPClosedCaption2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IWMPClosedCaption2 {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`, `\"Win32_Foundation\"`*"]
@@ -4558,12 +4577,6 @@ impl<'a> ::windows::core::IntoParam<'a, IWMPClosedCaption> for &'a IWMPClosedCap
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IWMPClosedCaption2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IWMPClosedCaption2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4602,6 +4615,11 @@ pub struct IWMPClosedCaption2_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
 #[repr(transparent)]
 pub struct IWMPContentContainer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMPContentContainer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMPContentContainer {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
     pub unsafe fn GetID(&self) -> ::windows::core::Result<u32> {
@@ -4657,11 +4675,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWMPC
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWMPContentContainer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWMPContentContainer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4700,6 +4713,11 @@ pub struct IWMPContentContainer_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
 #[repr(transparent)]
 pub struct IWMPContentContainerList(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMPContentContainerList {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMPContentContainerList {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
     pub unsafe fn GetTransactionType(&self) -> ::windows::core::Result<WMPTransactionType> {
@@ -4737,11 +4755,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWMPC
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWMPContentContainerList {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWMPContentContainerList {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4768,6 +4781,11 @@ pub struct IWMPContentContainerList_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
 #[repr(transparent)]
 pub struct IWMPContentPartner(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMPContentPartner {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMPContentPartner {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
     pub unsafe fn SetCallback<'a, Param0: ::windows::core::IntoParam<'a, IWMPContentPartnerCallback>>(&self, pcallback: Param0) -> ::windows::core::Result<()> {
@@ -4904,11 +4922,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWMPC
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWMPContentPartner {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWMPContentPartner {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5009,6 +5022,11 @@ pub struct IWMPContentPartner_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
 #[repr(transparent)]
 pub struct IWMPContentPartnerCallback(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMPContentPartnerCallback {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMPContentPartnerCallback {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com", feature = "Win32_System_Ole"))]
@@ -5090,11 +5108,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWMPC
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWMPContentPartnerCallback {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWMPContentPartnerCallback {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5153,6 +5166,12 @@ pub struct IWMPContentPartnerCallback_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IWMPControls(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IWMPControls {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IWMPControls {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`, `\"Win32_Foundation\"`*"]
@@ -5275,12 +5294,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IWMPControls {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IWMPControls {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5340,6 +5353,12 @@ pub struct IWMPControls_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IWMPControls2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IWMPControls2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IWMPControls2 {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`, `\"Win32_Foundation\"`*"]
@@ -5490,12 +5509,6 @@ impl<'a> ::windows::core::IntoParam<'a, IWMPControls> for &'a IWMPControls2 {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IWMPControls2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IWMPControls2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5525,6 +5538,12 @@ pub struct IWMPControls2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IWMPControls3(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IWMPControls3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IWMPControls3 {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`, `\"Win32_Foundation\"`*"]
@@ -5743,12 +5762,6 @@ impl<'a> ::windows::core::IntoParam<'a, IWMPControls2> for &'a IWMPControls3 {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IWMPControls3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IWMPControls3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5798,6 +5811,11 @@ pub struct IWMPControls3_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
 #[repr(transparent)]
 pub struct IWMPConvert(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMPConvert {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMPConvert {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -5828,11 +5846,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IWMPConve
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWMPConvert {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IWMPConvert {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IWMPConvert {
@@ -5867,6 +5880,12 @@ pub struct IWMPConvert_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IWMPCore(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IWMPCore {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IWMPCore {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
@@ -6030,12 +6049,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IWMPCore {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IWMPCore {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6136,6 +6149,12 @@ pub struct IWMPCore_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IWMPCore2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IWMPCore2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IWMPCore2 {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
@@ -6329,12 +6348,6 @@ impl<'a> ::windows::core::IntoParam<'a, IWMPCore> for &'a IWMPCore2 {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IWMPCore2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IWMPCore2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6367,6 +6380,12 @@ pub struct IWMPCore2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IWMPCore3(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IWMPCore3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IWMPCore3 {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
@@ -6596,12 +6615,6 @@ impl<'a> ::windows::core::IntoParam<'a, IWMPCore2> for &'a IWMPCore3 {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IWMPCore3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IWMPCore3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6638,6 +6651,12 @@ pub struct IWMPCore3_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IWMPDVD(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IWMPDVD {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IWMPDVD {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`, `\"Win32_Foundation\"`*"]
@@ -6716,12 +6735,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IWMPDVD {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IWMPDVD {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6762,6 +6775,12 @@ pub struct IWMPDVD_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IWMPDownloadCollection(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IWMPDownloadCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IWMPDownloadCollection {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
@@ -6842,12 +6861,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IWMPDownloadCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IWMPDownloadCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6888,6 +6901,12 @@ pub struct IWMPDownloadCollection_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IWMPDownloadItem(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IWMPDownloadItem {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IWMPDownloadItem {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`, `\"Win32_Foundation\"`*"]
@@ -6974,12 +6993,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IWMPDownloadItem {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IWMPDownloadItem {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7022,6 +7035,12 @@ pub struct IWMPDownloadItem_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IWMPDownloadItem2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IWMPDownloadItem2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IWMPDownloadItem2 {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`, `\"Win32_Foundation\"`*"]
@@ -7137,12 +7156,6 @@ impl<'a> ::windows::core::IntoParam<'a, IWMPDownloadItem> for &'a IWMPDownloadIt
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IWMPDownloadItem2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IWMPDownloadItem2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7175,6 +7188,12 @@ pub struct IWMPDownloadItem2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IWMPDownloadManager(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IWMPDownloadManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IWMPDownloadManager {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`, `\"Win32_System_Com\"`*"]
@@ -7239,12 +7258,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IWMPDownloadManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IWMPDownloadManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7280,6 +7293,11 @@ pub struct IWMPDownloadManager_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
 #[repr(transparent)]
 pub struct IWMPEffects(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMPEffects {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMPEffects {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`, `\"Win32_Foundation\"`, `\"Win32_Graphics_Gdi\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
@@ -7352,11 +7370,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWMPE
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWMPEffects {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWMPEffects {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7409,6 +7422,11 @@ pub struct IWMPEffects_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
 #[repr(transparent)]
 pub struct IWMPEffects2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMPEffects2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMPEffects2 {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`, `\"Win32_Foundation\"`, `\"Win32_Graphics_Gdi\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
@@ -7530,11 +7548,6 @@ impl<'a> ::windows::core::IntoParam<'a, IWMPEffects> for &'a IWMPEffects2 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWMPEffects2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWMPEffects2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7580,6 +7593,12 @@ pub struct IWMPEffects2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IWMPError(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IWMPError {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IWMPError {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
@@ -7650,12 +7669,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IWMPError {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IWMPError {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7691,6 +7704,12 @@ pub struct IWMPError_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IWMPErrorItem(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IWMPErrorItem {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IWMPErrorItem {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
@@ -7766,12 +7785,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IWMPErrorItem {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IWMPErrorItem {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7814,6 +7827,12 @@ pub struct IWMPErrorItem_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IWMPErrorItem2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IWMPErrorItem2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IWMPErrorItem2 {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
@@ -7917,12 +7936,6 @@ impl<'a> ::windows::core::IntoParam<'a, IWMPErrorItem> for &'a IWMPErrorItem2 {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IWMPErrorItem2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IWMPErrorItem2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7951,6 +7964,11 @@ pub struct IWMPErrorItem2_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
 #[repr(transparent)]
 pub struct IWMPEvents(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMPEvents {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMPEvents {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
     pub unsafe fn OpenStateChange(&self, newstate: i32) {
@@ -8170,11 +8188,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWMPE
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWMPEvents {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWMPEvents {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8294,6 +8307,11 @@ pub struct IWMPEvents_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
 #[repr(transparent)]
 pub struct IWMPEvents2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMPEvents2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMPEvents2 {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
     pub unsafe fn OpenStateChange(&self, newstate: i32) {
@@ -8558,11 +8576,6 @@ impl<'a> ::windows::core::IntoParam<'a, IWMPEvents> for &'a IWMPEvents2 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWMPEvents2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWMPEvents2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8595,6 +8608,11 @@ pub struct IWMPEvents2_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
 #[repr(transparent)]
 pub struct IWMPEvents3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMPEvents3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMPEvents3 {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
     pub unsafe fn OpenStateChange(&self, newstate: i32) {
@@ -8928,11 +8946,6 @@ impl<'a> ::windows::core::IntoParam<'a, IWMPEvents2> for &'a IWMPEvents3 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWMPEvents3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWMPEvents3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8982,6 +8995,11 @@ pub struct IWMPEvents3_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
 #[repr(transparent)]
 pub struct IWMPEvents4(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMPEvents4 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMPEvents4 {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
     pub unsafe fn OpenStateChange(&self, newstate: i32) {
@@ -9339,11 +9357,6 @@ impl<'a> ::windows::core::IntoParam<'a, IWMPEvents3> for &'a IWMPEvents4 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWMPEvents4 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWMPEvents4 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9368,6 +9381,11 @@ pub struct IWMPEvents4_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
 #[repr(transparent)]
 pub struct IWMPFolderMonitorServices(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMPFolderMonitorServices {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMPFolderMonitorServices {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
     pub unsafe fn count(&self, plcount: *mut i32) -> ::windows::core::Result<()> {
@@ -9437,11 +9455,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWMPF
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWMPFolderMonitorServices {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWMPFolderMonitorServices {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9485,6 +9498,11 @@ pub struct IWMPFolderMonitorServices_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
 #[repr(transparent)]
 pub struct IWMPGraphCreation(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMPGraphCreation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMPGraphCreation {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
     pub unsafe fn GraphCreationPreRender<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>, Param1: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, pfiltergraph: Param0, preserved: Param1) -> ::windows::core::Result<()> {
@@ -9519,11 +9537,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWMPG
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWMPGraphCreation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWMPGraphCreation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9550,6 +9563,11 @@ pub struct IWMPGraphCreation_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
 #[repr(transparent)]
 pub struct IWMPLibrary(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMPLibrary {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMPLibrary {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -9591,11 +9609,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWMPL
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWMPLibrary {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWMPLibrary {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9629,6 +9642,11 @@ pub struct IWMPLibrary_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
 #[repr(transparent)]
 pub struct IWMPLibrary2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMPLibrary2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMPLibrary2 {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -9695,11 +9713,6 @@ impl<'a> ::windows::core::IntoParam<'a, IWMPLibrary> for &'a IWMPLibrary2 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWMPLibrary2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWMPLibrary2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9727,6 +9740,11 @@ pub struct IWMPLibrary2_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
 #[repr(transparent)]
 pub struct IWMPLibraryServices(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMPLibraryServices {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMPLibraryServices {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
     pub unsafe fn getCountByType(&self, wmplt: WMPLibraryType, plcount: *mut i32) -> ::windows::core::Result<()> {
@@ -9758,11 +9776,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWMPL
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWMPLibraryServices {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWMPLibraryServices {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9788,6 +9801,11 @@ pub struct IWMPLibraryServices_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
 #[repr(transparent)]
 pub struct IWMPLibrarySharingServices(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMPLibrarySharingServices {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMPLibrarySharingServices {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
     pub unsafe fn isLibraryShared(&self, pvbshared: *mut i16) -> ::windows::core::Result<()> {
@@ -9822,11 +9840,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWMPL
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWMPLibrarySharingServices {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWMPLibrarySharingServices {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9854,6 +9867,12 @@ pub struct IWMPLibrarySharingServices_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IWMPMedia(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IWMPMedia {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IWMPMedia {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`, `\"Win32_System_Com\"`*"]
@@ -9990,12 +10009,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IWMPMedia {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IWMPMedia {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10078,6 +10091,12 @@ pub struct IWMPMedia_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IWMPMedia2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IWMPMedia2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IWMPMedia2 {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`, `\"Win32_System_Com\"`*"]
@@ -10244,12 +10263,6 @@ impl<'a> ::windows::core::IntoParam<'a, IWMPMedia> for &'a IWMPMedia2 {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IWMPMedia2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IWMPMedia2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10282,6 +10295,12 @@ pub struct IWMPMedia2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IWMPMedia3(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IWMPMedia3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IWMPMedia3 {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`, `\"Win32_System_Com\"`*"]
@@ -10482,12 +10501,6 @@ impl<'a> ::windows::core::IntoParam<'a, IWMPMedia2> for &'a IWMPMedia3 {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IWMPMedia3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IWMPMedia3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10524,6 +10537,12 @@ pub struct IWMPMedia3_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IWMPMediaCollection(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IWMPMediaCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IWMPMediaCollection {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`*"]
@@ -10644,12 +10663,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IWMPMediaCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IWMPMediaCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10726,6 +10739,12 @@ pub struct IWMPMediaCollection_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IWMPMediaCollection2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IWMPMediaCollection2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IWMPMediaCollection2 {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`*"]
@@ -10894,12 +10913,6 @@ impl<'a> ::windows::core::IntoParam<'a, IWMPMediaCollection> for &'a IWMPMediaCo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IWMPMediaCollection2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IWMPMediaCollection2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10943,6 +10956,11 @@ pub struct IWMPMediaCollection2_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
 #[repr(transparent)]
 pub struct IWMPMediaPluginRegistrar(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMPMediaPluginRegistrar {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMPMediaPluginRegistrar {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
     pub unsafe fn WMPRegisterPlayerPlugin<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param1: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param2: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param4: ::windows::core::IntoParam<'a, ::windows::core::GUID>, Param5: ::windows::core::IntoParam<'a, ::windows::core::GUID>>(&self, pwszfriendlyname: Param0, pwszdescription: Param1, pwszuninstallstring: Param2, dwpriority: u32, guidplugintype: Param4, clsid: Param5, cmediatypes: u32, pmediatypes: *mut ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -10973,11 +10991,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWMPM
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWMPMediaPluginRegistrar {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWMPMediaPluginRegistrar {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11004,6 +11017,12 @@ pub struct IWMPMediaPluginRegistrar_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IWMPMetadataPicture(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IWMPMetadataPicture {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IWMPMetadataPicture {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`, `\"Win32_Foundation\"`*"]
@@ -11076,12 +11095,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IWMPMetadataPicture {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IWMPMetadataPicture {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11126,6 +11139,12 @@ pub struct IWMPMetadataPicture_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IWMPMetadataText(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IWMPMetadataText {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IWMPMetadataText {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`, `\"Win32_Foundation\"`*"]
@@ -11188,12 +11207,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IWMPMetadataText {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IWMPMetadataText {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11230,6 +11243,12 @@ pub struct IWMPMetadataText_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IWMPNetwork(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IWMPNetwork {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IWMPNetwork {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
@@ -11405,12 +11424,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IWMPNetwork {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IWMPNetwork {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11499,6 +11512,11 @@ pub struct IWMPNetwork_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
 #[repr(transparent)]
 pub struct IWMPNodeRealEstate(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMPNodeRealEstate {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMPNodeRealEstate {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -11556,11 +11574,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWMPN
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWMPNodeRealEstate {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWMPNodeRealEstate {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11612,6 +11625,11 @@ pub struct IWMPNodeRealEstate_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
 #[repr(transparent)]
 pub struct IWMPNodeRealEstateHost(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMPNodeRealEstateHost {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMPNodeRealEstateHost {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -11642,11 +11660,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IWMPNodeR
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWMPNodeRealEstateHost {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IWMPNodeRealEstateHost {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IWMPNodeRealEstateHost {
@@ -11680,6 +11693,11 @@ pub struct IWMPNodeRealEstateHost_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
 #[repr(transparent)]
 pub struct IWMPNodeWindowed(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMPNodeWindowed {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMPNodeWindowed {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
     pub unsafe fn SetOwnerWindow(&self, hwnd: isize) -> ::windows::core::Result<()> {
@@ -11710,11 +11728,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWMPN
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWMPNodeWindowed {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWMPNodeWindowed {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11740,6 +11753,11 @@ pub struct IWMPNodeWindowed_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
 #[repr(transparent)]
 pub struct IWMPNodeWindowedHost(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMPNodeWindowedHost {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMPNodeWindowedHost {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -11765,11 +11783,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IWMPNodeW
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWMPNodeWindowedHost {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IWMPNodeWindowedHost {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IWMPNodeWindowedHost {
@@ -11799,6 +11812,11 @@ pub struct IWMPNodeWindowedHost_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
 #[repr(transparent)]
 pub struct IWMPNodeWindowless(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMPNodeWindowless {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMPNodeWindowless {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -11851,11 +11869,6 @@ impl<'a> ::windows::core::IntoParam<'a, IWMPWindowMessageSink> for &'a IWMPNodeW
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWMPNodeWindowless {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWMPNodeWindowless {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11883,6 +11896,11 @@ pub struct IWMPNodeWindowless_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
 #[repr(transparent)]
 pub struct IWMPNodeWindowlessHost(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMPNodeWindowlessHost {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMPNodeWindowlessHost {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -11908,11 +11926,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IWMPNodeW
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWMPNodeWindowlessHost {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IWMPNodeWindowlessHost {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IWMPNodeWindowlessHost {
@@ -11943,6 +11956,12 @@ pub struct IWMPNodeWindowlessHost_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IWMPPlayer(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IWMPPlayer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IWMPPlayer {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
@@ -12164,12 +12183,6 @@ impl<'a> ::windows::core::IntoParam<'a, IWMPCore> for &'a IWMPPlayer {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IWMPPlayer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IWMPPlayer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12212,6 +12225,12 @@ pub struct IWMPPlayer_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IWMPPlayer2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IWMPPlayer2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IWMPPlayer2 {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
@@ -12449,12 +12468,6 @@ impl<'a> ::windows::core::IntoParam<'a, IWMPCore> for &'a IWMPPlayer2 {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IWMPPlayer2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IWMPPlayer2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12501,6 +12514,12 @@ pub struct IWMPPlayer2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IWMPPlayer3(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IWMPPlayer3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IWMPPlayer3 {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
@@ -12768,12 +12787,6 @@ impl<'a> ::windows::core::IntoParam<'a, IWMPCore2> for &'a IWMPPlayer3 {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IWMPPlayer3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IWMPPlayer3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12820,6 +12833,12 @@ pub struct IWMPPlayer3_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IWMPPlayer4(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IWMPPlayer4 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IWMPPlayer4 {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
@@ -13138,12 +13157,6 @@ impl<'a> ::windows::core::IntoParam<'a, IWMPCore3> for &'a IWMPPlayer4 {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IWMPPlayer4 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IWMPPlayer4 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13199,6 +13212,12 @@ pub struct IWMPPlayer4_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IWMPPlayerApplication(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IWMPPlayerApplication {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IWMPPlayerApplication {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
@@ -13267,12 +13286,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IWMPPlayerApplication {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IWMPPlayerApplication {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13304,6 +13317,11 @@ pub struct IWMPPlayerApplication_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
 #[repr(transparent)]
 pub struct IWMPPlayerServices(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMPPlayerServices {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMPPlayerServices {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -13341,11 +13359,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWMPP
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWMPPlayerServices {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWMPPlayerServices {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13381,6 +13394,11 @@ pub struct IWMPPlayerServices_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
 #[repr(transparent)]
 pub struct IWMPPlayerServices2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMPPlayerServices2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMPPlayerServices2 {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -13443,11 +13461,6 @@ impl<'a> ::windows::core::IntoParam<'a, IWMPPlayerServices> for &'a IWMPPlayerSe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWMPPlayerServices2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWMPPlayerServices2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13476,6 +13489,12 @@ pub struct IWMPPlayerServices2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IWMPPlaylist(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IWMPPlaylist {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IWMPPlaylist {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
@@ -13595,12 +13614,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IWMPPlaylist {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IWMPPlaylist {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13674,6 +13687,12 @@ pub struct IWMPPlaylist_Vtbl {
 #[repr(transparent)]
 pub struct IWMPPlaylistArray(::windows::core::IUnknown);
 #[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IWMPPlaylistArray {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "Win32_System_Com")]
 impl IWMPPlaylistArray {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
     pub unsafe fn count(&self, plcount: *mut i32) -> ::windows::core::Result<()> {
@@ -13735,12 +13754,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IWMPPlaylistArray {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IWMPPlaylistArray {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13774,6 +13787,12 @@ pub struct IWMPPlaylistArray_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IWMPPlaylistCollection(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IWMPPlaylistCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IWMPPlaylistCollection {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`*"]
@@ -13865,12 +13884,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IWMPPlaylistCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IWMPPlaylistCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13926,6 +13939,11 @@ pub struct IWMPPlaylistCollection_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
 #[repr(transparent)]
 pub struct IWMPPlugin(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMPPlugin {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMPPlugin {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
     pub unsafe fn Init(&self, dwplaybackcontext: usize) -> ::windows::core::Result<()> {
@@ -13972,11 +13990,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWMPP
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWMPPlugin {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWMPPlugin {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -14006,6 +14019,11 @@ pub struct IWMPPlugin_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
 #[repr(transparent)]
 pub struct IWMPPluginEnable(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMPPluginEnable {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMPPluginEnable {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -14036,11 +14054,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IWMPPlugi
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWMPPluginEnable {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IWMPPluginEnable {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IWMPPluginEnable {
@@ -14074,6 +14087,11 @@ pub struct IWMPPluginEnable_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
 #[repr(transparent)]
 pub struct IWMPPluginUI(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMPPluginUI {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMPPluginUI {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -14130,11 +14148,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWMPP
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWMPPluginUI {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWMPPluginUI {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -14184,6 +14197,12 @@ pub struct IWMPPluginUI_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IWMPQuery(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IWMPQuery {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IWMPQuery {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`, `\"Win32_Foundation\"`*"]
@@ -14245,12 +14264,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IWMPQuery {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IWMPQuery {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -14283,6 +14296,11 @@ pub struct IWMPQuery_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
 #[repr(transparent)]
 pub struct IWMPRemoteMediaServices(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMPRemoteMediaServices {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMPRemoteMediaServices {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -14325,11 +14343,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWMPR
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWMPRemoteMediaServices {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWMPRemoteMediaServices {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -14369,6 +14382,11 @@ pub struct IWMPRemoteMediaServices_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
 #[repr(transparent)]
 pub struct IWMPRenderConfig(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMPRenderConfig {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMPRenderConfig {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -14399,11 +14417,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IWMPRende
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWMPRenderConfig {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IWMPRenderConfig {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IWMPRenderConfig {
@@ -14437,6 +14450,11 @@ pub struct IWMPRenderConfig_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
 #[repr(transparent)]
 pub struct IWMPServices(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMPServices {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMPServices {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
     pub unsafe fn GetStreamTime(&self, prt: *mut i64) -> ::windows::core::Result<()> {
@@ -14467,11 +14485,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWMPS
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWMPServices {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWMPServices {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -14498,6 +14511,12 @@ pub struct IWMPServices_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IWMPSettings(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IWMPSettings {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IWMPSettings {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`, `\"Win32_Foundation\"`*"]
@@ -14649,12 +14668,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IWMPSettings {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IWMPSettings {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -14727,6 +14740,12 @@ pub struct IWMPSettings_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IWMPSettings2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IWMPSettings2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IWMPSettings2 {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`, `\"Win32_Foundation\"`*"]
@@ -14916,12 +14935,6 @@ impl<'a> ::windows::core::IntoParam<'a, IWMPSettings> for &'a IWMPSettings2 {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IWMPSettings2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IWMPSettings2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -14958,6 +14971,11 @@ pub struct IWMPSettings2_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
 #[repr(transparent)]
 pub struct IWMPSkinManager(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMPSkinManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMPSkinManager {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -14983,11 +15001,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IWMPSkinM
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWMPSkinManager {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IWMPSkinManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IWMPSkinManager {
@@ -15018,6 +15031,12 @@ pub struct IWMPSkinManager_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IWMPStringCollection(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IWMPStringCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IWMPStringCollection {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
@@ -15079,12 +15098,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IWMPStringCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IWMPStringCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -15118,6 +15131,12 @@ pub struct IWMPStringCollection_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IWMPStringCollection2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IWMPStringCollection2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IWMPStringCollection2 {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
@@ -15223,12 +15242,6 @@ impl<'a> ::windows::core::IntoParam<'a, IWMPStringCollection> for &'a IWMPString
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IWMPStringCollection2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IWMPStringCollection2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -15272,6 +15285,11 @@ pub struct IWMPStringCollection2_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
 #[repr(transparent)]
 pub struct IWMPSubscriptionService(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMPSubscriptionService {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMPSubscriptionService {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com"))]
@@ -15314,11 +15332,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWMPS
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWMPSubscriptionService {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWMPSubscriptionService {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -15358,6 +15371,11 @@ pub struct IWMPSubscriptionService_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
 #[repr(transparent)]
 pub struct IWMPSubscriptionService2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMPSubscriptionService2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMPSubscriptionService2 {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com"))]
@@ -15438,11 +15456,6 @@ impl<'a> ::windows::core::IntoParam<'a, IWMPSubscriptionService> for &'a IWMPSub
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWMPSubscriptionService2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWMPSubscriptionService2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -15476,6 +15489,11 @@ pub struct IWMPSubscriptionService2_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
 #[repr(transparent)]
 pub struct IWMPSubscriptionServiceCallback(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMPSubscriptionServiceCallback {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMPSubscriptionServiceCallback {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
     pub unsafe fn onComplete(&self, hrresult: ::windows::core::HRESULT) -> ::windows::core::Result<()> {
@@ -15502,11 +15520,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWMPS
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWMPSubscriptionServiceCallback {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWMPSubscriptionServiceCallback {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -15531,6 +15544,11 @@ pub struct IWMPSubscriptionServiceCallback_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
 #[repr(transparent)]
 pub struct IWMPSyncDevice(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMPSyncDevice {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMPSyncDevice {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -15622,11 +15640,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWMPS
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWMPSyncDevice {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWMPSyncDevice {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -15681,6 +15694,11 @@ pub struct IWMPSyncDevice_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
 #[repr(transparent)]
 pub struct IWMPSyncDevice2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMPSyncDevice2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMPSyncDevice2 {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -15797,11 +15815,6 @@ impl<'a> ::windows::core::IntoParam<'a, IWMPSyncDevice> for &'a IWMPSyncDevice2 
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWMPSyncDevice2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWMPSyncDevice2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -15829,6 +15842,11 @@ pub struct IWMPSyncDevice2_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
 #[repr(transparent)]
 pub struct IWMPSyncDevice3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMPSyncDevice3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMPSyncDevice3 {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -15974,11 +15992,6 @@ impl<'a> ::windows::core::IntoParam<'a, IWMPSyncDevice2> for &'a IWMPSyncDevice3
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWMPSyncDevice3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWMPSyncDevice3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -16007,6 +16020,11 @@ pub struct IWMPSyncDevice3_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
 #[repr(transparent)]
 pub struct IWMPSyncServices(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMPSyncServices {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMPSyncServices {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
     pub unsafe fn deviceCount(&self, plcount: *mut i32) -> ::windows::core::Result<()> {
@@ -16038,11 +16056,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWMPS
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWMPSyncServices {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWMPSyncServices {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -16068,6 +16081,11 @@ pub struct IWMPSyncServices_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
 #[repr(transparent)]
 pub struct IWMPTranscodePolicy(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMPTranscodePolicy {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMPTranscodePolicy {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
     pub unsafe fn allowTranscode(&self, pvballow: *mut i16) -> ::windows::core::Result<()> {
@@ -16094,11 +16112,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWMPT
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWMPTranscodePolicy {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWMPTranscodePolicy {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -16123,6 +16136,11 @@ pub struct IWMPTranscodePolicy_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
 #[repr(transparent)]
 pub struct IWMPUserEventSink(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMPUserEventSink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMPUserEventSink {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
     pub unsafe fn NotifyUserEvent(&self, eventcode: i32) -> ::windows::core::Result<()> {
@@ -16149,11 +16167,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWMPU
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWMPUserEventSink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWMPUserEventSink {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -16178,6 +16191,11 @@ pub struct IWMPUserEventSink_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
 #[repr(transparent)]
 pub struct IWMPVideoRenderConfig(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMPVideoRenderConfig {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMPVideoRenderConfig {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`, `\"Win32_Media_MediaFoundation\"`*"]
     #[cfg(feature = "Win32_Media_MediaFoundation")]
@@ -16203,11 +16221,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IWMPVideo
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWMPVideoRenderConfig {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IWMPVideoRenderConfig {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IWMPVideoRenderConfig {
@@ -16237,6 +16250,11 @@ pub struct IWMPVideoRenderConfig_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
 #[repr(transparent)]
 pub struct IWMPWindowMessageSink(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWMPWindowMessageSink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWMPWindowMessageSink {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -16262,11 +16280,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IWMPWindo
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWMPWindowMessageSink {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IWMPWindowMessageSink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IWMPWindowMessageSink {
@@ -16296,6 +16309,11 @@ pub struct IWMPWindowMessageSink_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
 #[repr(transparent)]
 pub struct IXFeed(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXFeed {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXFeed {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -16534,11 +16552,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IXFee
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXFeed {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXFeed {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -16633,6 +16646,11 @@ pub struct IXFeed_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
 #[repr(transparent)]
 pub struct IXFeed2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXFeed2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXFeed2 {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -16920,11 +16938,6 @@ impl<'a> ::windows::core::IntoParam<'a, IXFeed> for &'a IXFeed2 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXFeed2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXFeed2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -16957,6 +16970,11 @@ pub struct IXFeed2_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
 #[repr(transparent)]
 pub struct IXFeedEnclosure(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXFeedEnclosure {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXFeedEnclosure {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
     pub unsafe fn Url(&self) -> ::windows::core::Result<::windows::core::PWSTR> {
@@ -17040,11 +17058,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IXFee
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXFeedEnclosure {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXFeedEnclosure {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -17081,6 +17094,11 @@ pub struct IXFeedEnclosure_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
 #[repr(transparent)]
 pub struct IXFeedEvents(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXFeedEvents {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXFeedEvents {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
     pub unsafe fn Error(&self) -> ::windows::core::Result<()> {
@@ -17135,11 +17153,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IXFee
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXFeedEvents {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXFeedEvents {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -17171,6 +17184,11 @@ pub struct IXFeedEvents_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
 #[repr(transparent)]
 pub struct IXFeedFolder(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXFeedFolder {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXFeedFolder {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
     pub unsafe fn Feeds(&self) -> ::windows::core::Result<IXFeedsEnum> {
@@ -17281,11 +17299,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IXFee
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXFeedFolder {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXFeedFolder {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -17336,6 +17349,11 @@ pub struct IXFeedFolder_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
 #[repr(transparent)]
 pub struct IXFeedFolderEvents(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXFeedFolderEvents {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXFeedFolderEvents {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
     pub unsafe fn Error(&self) -> ::windows::core::Result<()> {
@@ -17422,11 +17440,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IXFee
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXFeedFolderEvents {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXFeedFolderEvents {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -17466,6 +17479,11 @@ pub struct IXFeedFolderEvents_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
 #[repr(transparent)]
 pub struct IXFeedItem(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXFeedItem {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXFeedItem {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -17577,11 +17595,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IXFee
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXFeedItem {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXFeedItem {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -17640,6 +17653,11 @@ pub struct IXFeedItem_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
 #[repr(transparent)]
 pub struct IXFeedItem2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXFeedItem2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXFeedItem2 {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -17776,11 +17794,6 @@ impl<'a> ::windows::core::IntoParam<'a, IXFeedItem> for &'a IXFeedItem2 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXFeedItem2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXFeedItem2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -17805,6 +17818,11 @@ pub struct IXFeedItem2_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
 #[repr(transparent)]
 pub struct IXFeedsEnum(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXFeedsEnum {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXFeedsEnum {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
     pub unsafe fn Count(&self) -> ::windows::core::Result<u32> {
@@ -17837,11 +17855,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IXFee
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXFeedsEnum {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXFeedsEnum {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -17867,6 +17880,11 @@ pub struct IXFeedsEnum_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
 #[repr(transparent)]
 pub struct IXFeedsManager(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXFeedsManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXFeedsManager {
     #[doc = "*Required features: `\"Win32_Media_MediaPlayer\"`*"]
     pub unsafe fn RootFolder<T: ::windows::core::Interface>(&self) -> ::windows::core::Result<T> {
@@ -17966,11 +17984,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IXFeedsMa
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IXFeedsManager {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IXFeedsManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IXFeedsManager {
@@ -18104,6 +18117,7 @@ impl ::core::default::Default for PlayerState {
 }
 unsafe impl ::windows::core::Abi for PlayerState {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PlayerState {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -18153,6 +18167,7 @@ impl ::core::fmt::Debug for TimedLevel {
 }
 unsafe impl ::windows::core::Abi for TimedLevel {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TimedLevel {
     fn eq(&self, other: &Self) -> bool {
@@ -18188,6 +18203,7 @@ impl ::core::default::Default for WMPAccountType {
 }
 unsafe impl ::windows::core::Abi for WMPAccountType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WMPAccountType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -18215,6 +18231,7 @@ impl ::core::default::Default for WMPBurnFormat {
 }
 unsafe impl ::windows::core::Abi for WMPBurnFormat {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WMPBurnFormat {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -18258,6 +18275,7 @@ impl ::core::default::Default for WMPBurnState {
 }
 unsafe impl ::windows::core::Abi for WMPBurnState {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WMPBurnState {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -18311,6 +18329,7 @@ impl ::core::default::Default for WMPCallbackNotification {
 }
 unsafe impl ::windows::core::Abi for WMPCallbackNotification {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WMPCallbackNotification {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -18340,6 +18359,7 @@ impl ::core::fmt::Debug for WMPContextMenuInfo {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WMPContextMenuInfo {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WMPContextMenuInfo {
@@ -18386,6 +18406,7 @@ impl ::core::default::Default for WMPDeviceStatus {
 }
 unsafe impl ::windows::core::Abi for WMPDeviceStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WMPDeviceStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -18417,6 +18438,7 @@ impl ::core::default::Default for WMPFolderScanState {
 }
 unsafe impl ::windows::core::Abi for WMPFolderScanState {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WMPFolderScanState {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -18463,6 +18485,7 @@ impl ::core::default::Default for WMPLibraryType {
 }
 unsafe impl ::windows::core::Abi for WMPLibraryType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WMPLibraryType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -18532,6 +18555,7 @@ impl ::core::default::Default for WMPOpenState {
 }
 unsafe impl ::windows::core::Abi for WMPOpenState {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WMPOpenState {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -18563,6 +18587,7 @@ impl ::core::default::Default for WMPPartnerNotification {
 }
 unsafe impl ::windows::core::Abi for WMPPartnerNotification {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WMPPartnerNotification {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -18612,6 +18637,7 @@ impl ::core::default::Default for WMPPlayState {
 }
 unsafe impl ::windows::core::Abi for WMPPlayState {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WMPPlayState {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -18659,6 +18685,7 @@ impl ::core::default::Default for WMPPlaylistChangeEventType {
 }
 unsafe impl ::windows::core::Abi for WMPPlaylistChangeEventType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WMPPlaylistChangeEventType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -18684,6 +18711,7 @@ impl ::core::default::Default for WMPPlugin_Caps {
 }
 unsafe impl ::windows::core::Abi for WMPPlugin_Caps {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WMPPlugin_Caps {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -18714,6 +18742,7 @@ impl ::core::default::Default for WMPRipState {
 }
 unsafe impl ::windows::core::Abi for WMPRipState {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WMPRipState {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -18743,6 +18772,7 @@ impl ::core::default::Default for WMPServices_StreamState {
 }
 unsafe impl ::windows::core::Abi for WMPServices_StreamState {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WMPServices_StreamState {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -18774,6 +18804,7 @@ impl ::core::default::Default for WMPStreamingType {
 }
 unsafe impl ::windows::core::Abi for WMPStreamingType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WMPStreamingType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -18811,6 +18842,7 @@ impl ::core::default::Default for WMPStringCollectionChangeEventType {
 }
 unsafe impl ::windows::core::Abi for WMPStringCollectionChangeEventType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WMPStringCollectionChangeEventType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -18844,6 +18876,7 @@ impl ::core::default::Default for WMPSubscriptionDownloadState {
 }
 unsafe impl ::windows::core::Abi for WMPSubscriptionDownloadState {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WMPSubscriptionDownloadState {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -18875,6 +18908,7 @@ impl ::core::default::Default for WMPSubscriptionServiceEvent {
 }
 unsafe impl ::windows::core::Abi for WMPSubscriptionServiceEvent {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WMPSubscriptionServiceEvent {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -18908,6 +18942,7 @@ impl ::core::default::Default for WMPSyncState {
 }
 unsafe impl ::windows::core::Abi for WMPSyncState {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WMPSyncState {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -18939,6 +18974,7 @@ impl ::core::default::Default for WMPTaskType {
 }
 unsafe impl ::windows::core::Abi for WMPTaskType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WMPTaskType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -18968,6 +19004,7 @@ impl ::core::default::Default for WMPTemplateSize {
 }
 unsafe impl ::windows::core::Abi for WMPTemplateSize {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WMPTemplateSize {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -18997,6 +19034,7 @@ impl ::core::default::Default for WMPTransactionType {
 }
 unsafe impl ::windows::core::Abi for WMPTransactionType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WMPTransactionType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -19034,6 +19072,7 @@ impl ::core::clone::Clone for WMP_WMDM_METADATA_ROUND_TRIP_DEVICE2PC {
 }
 unsafe impl ::windows::core::Abi for WMP_WMDM_METADATA_ROUND_TRIP_DEVICE2PC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WMP_WMDM_METADATA_ROUND_TRIP_DEVICE2PC {
     fn eq(&self, other: &Self) -> bool {
@@ -19060,6 +19099,7 @@ impl ::core::clone::Clone for WMP_WMDM_METADATA_ROUND_TRIP_PC2DEVICE {
 }
 unsafe impl ::windows::core::Abi for WMP_WMDM_METADATA_ROUND_TRIP_PC2DEVICE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WMP_WMDM_METADATA_ROUND_TRIP_PC2DEVICE {
     fn eq(&self, other: &Self) -> bool {
@@ -19152,6 +19192,12 @@ pub const WindowsMediaPlayer: ::windows::core::GUID = ::windows::core::GUID::fro
 #[repr(transparent)]
 pub struct _WMPOCXEvents(::windows::core::IUnknown);
 #[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for _WMPOCXEvents {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "Win32_System_Com")]
 impl _WMPOCXEvents {}
 #[cfg(feature = "Win32_System_Com")]
 impl ::core::convert::From<_WMPOCXEvents> for ::windows::core::IUnknown {
@@ -19199,12 +19245,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
 impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> for &'a _WMPOCXEvents {
     fn into_param(self) -> ::windows::core::Param<'a, super::super::System::Com::IDispatch> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for _WMPOCXEvents {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 #[cfg(feature = "Win32_System_Com")]

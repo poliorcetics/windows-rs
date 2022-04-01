@@ -49,6 +49,7 @@ impl ::core::fmt::Debug for HARDWARE_COUNTER_DATA {
 }
 unsafe impl ::windows::core::Abi for HARDWARE_COUNTER_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HARDWARE_COUNTER_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -82,6 +83,7 @@ impl ::core::default::Default for HARDWARE_COUNTER_TYPE {
 }
 unsafe impl ::windows::core::Abi for HARDWARE_COUNTER_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HARDWARE_COUNTER_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -114,6 +116,7 @@ impl ::core::fmt::Debug for PERFORMANCE_DATA {
 }
 unsafe impl ::windows::core::Abi for PERFORMANCE_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PERFORMANCE_DATA {
     fn eq(&self, other: &Self) -> bool {

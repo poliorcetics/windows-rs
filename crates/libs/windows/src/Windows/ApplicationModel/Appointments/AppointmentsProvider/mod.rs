@@ -40,11 +40,6 @@ impl AddAppointmentOperation {
         unsafe { (::windows::core::Interface::vtable(this).DismissUI)(::core::mem::transmute_copy(this)).ok() }
     }
 }
-impl ::core::clone::Clone for AddAppointmentOperation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AddAppointmentOperation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -58,7 +53,6 @@ impl ::core::fmt::Debug for AddAppointmentOperation {
 }
 unsafe impl ::windows::core::RuntimeType for AddAppointmentOperation {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Appointments.AppointmentsProvider.AddAppointmentOperation;{ec4a9af3-620d-4c69-add7-9794e918081f})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -167,6 +161,11 @@ impl ::windows::core::RuntimeName for AppointmentsProviderLaunchActionVerbs {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAddAppointmentOperation(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAddAppointmentOperation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAddAppointmentOperation {
     type Vtable = IAddAppointmentOperation_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xec4a9af3_620d_4c69_add7_9794e918081f);
@@ -185,6 +184,11 @@ pub struct IAddAppointmentOperation_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppointmentsProviderLaunchActionVerbsStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppointmentsProviderLaunchActionVerbsStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppointmentsProviderLaunchActionVerbsStatics {
     type Vtable = IAppointmentsProviderLaunchActionVerbsStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x36dbba28_9e2e_49c6_8ef7_3ab7a5dcc8b8);
@@ -201,6 +205,11 @@ pub struct IAppointmentsProviderLaunchActionVerbsStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppointmentsProviderLaunchActionVerbsStatics2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppointmentsProviderLaunchActionVerbsStatics2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppointmentsProviderLaunchActionVerbsStatics2 {
     type Vtable = IAppointmentsProviderLaunchActionVerbsStatics2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xef9049a4_af21_473c_88dc_76cd89f60ca5);
@@ -214,6 +223,11 @@ pub struct IAppointmentsProviderLaunchActionVerbsStatics2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IRemoveAppointmentOperation(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRemoveAppointmentOperation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IRemoveAppointmentOperation {
     type Vtable = IRemoveAppointmentOperation_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x08b66aba_fe33_46cd_a50c_a8ffb3260537);
@@ -236,6 +250,11 @@ pub struct IRemoveAppointmentOperation_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IReplaceAppointmentOperation(::windows::core::IUnknown);
+impl ::core::clone::Clone for IReplaceAppointmentOperation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IReplaceAppointmentOperation {
     type Vtable = IReplaceAppointmentOperation_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf4903d9b_9e61_4de2_a732_2687c07d1de8);
@@ -306,11 +325,6 @@ impl RemoveAppointmentOperation {
         unsafe { (::windows::core::Interface::vtable(this).DismissUI)(::core::mem::transmute_copy(this)).ok() }
     }
 }
-impl ::core::clone::Clone for RemoveAppointmentOperation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for RemoveAppointmentOperation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -324,7 +338,6 @@ impl ::core::fmt::Debug for RemoveAppointmentOperation {
 }
 unsafe impl ::windows::core::RuntimeType for RemoveAppointmentOperation {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Appointments.AppointmentsProvider.RemoveAppointmentOperation;{08b66aba-fe33-46cd-a50c-a8ffb3260537})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -436,11 +449,6 @@ impl ReplaceAppointmentOperation {
         unsafe { (::windows::core::Interface::vtable(this).DismissUI)(::core::mem::transmute_copy(this)).ok() }
     }
 }
-impl ::core::clone::Clone for ReplaceAppointmentOperation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ReplaceAppointmentOperation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -454,7 +462,6 @@ impl ::core::fmt::Debug for ReplaceAppointmentOperation {
 }
 unsafe impl ::windows::core::RuntimeType for ReplaceAppointmentOperation {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Appointments.AppointmentsProvider.ReplaceAppointmentOperation;{f4903d9b-9e61-4de2-a732-2687c07d1de8})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

@@ -69,11 +69,6 @@ impl ContactDataProviderConnection {
         unsafe { (::windows::core::Interface::vtable(this).RemoveDeleteContactRequested)(::core::mem::transmute_copy(this), token.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for ContactDataProviderConnection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ContactDataProviderConnection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -87,7 +82,6 @@ impl ::core::fmt::Debug for ContactDataProviderConnection {
 }
 unsafe impl ::windows::core::RuntimeType for ContactDataProviderConnection {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Contacts.DataProvider.ContactDataProviderConnection;{1a398a52-8c9d-4d6f-a4e0-111e9a125a30})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -154,11 +148,6 @@ impl ContactDataProviderTriggerDetails {
         }
     }
 }
-impl ::core::clone::Clone for ContactDataProviderTriggerDetails {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ContactDataProviderTriggerDetails {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -172,7 +161,6 @@ impl ::core::fmt::Debug for ContactDataProviderTriggerDetails {
 }
 unsafe impl ::windows::core::RuntimeType for ContactDataProviderTriggerDetails {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Contacts.DataProvider.ContactDataProviderTriggerDetails;{527104be-3c62-43c8-9ae7-db531685cd99})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -265,11 +253,6 @@ impl ContactListCreateOrUpdateContactRequest {
         }
     }
 }
-impl ::core::clone::Clone for ContactListCreateOrUpdateContactRequest {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ContactListCreateOrUpdateContactRequest {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -283,7 +266,6 @@ impl ::core::fmt::Debug for ContactListCreateOrUpdateContactRequest {
 }
 unsafe impl ::windows::core::RuntimeType for ContactListCreateOrUpdateContactRequest {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Contacts.DataProvider.ContactListCreateOrUpdateContactRequest;{b4af411f-c849-47d0-b119-91cf605b2f2a})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -359,11 +341,6 @@ impl ContactListCreateOrUpdateContactRequestEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for ContactListCreateOrUpdateContactRequestEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ContactListCreateOrUpdateContactRequestEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -377,7 +354,6 @@ impl ::core::fmt::Debug for ContactListCreateOrUpdateContactRequestEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for ContactListCreateOrUpdateContactRequestEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Contacts.DataProvider.ContactListCreateOrUpdateContactRequestEventArgs;{851c1690-1a51-4b0c-aeef-1240ac5bed75})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -470,11 +446,6 @@ impl ContactListDeleteContactRequest {
         }
     }
 }
-impl ::core::clone::Clone for ContactListDeleteContactRequest {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ContactListDeleteContactRequest {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -488,7 +459,6 @@ impl ::core::fmt::Debug for ContactListDeleteContactRequest {
 }
 unsafe impl ::windows::core::RuntimeType for ContactListDeleteContactRequest {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Contacts.DataProvider.ContactListDeleteContactRequest;{5e114687-ce03-4de5-8557-9ccf552d472a})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -564,11 +534,6 @@ impl ContactListDeleteContactRequestEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for ContactListDeleteContactRequestEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ContactListDeleteContactRequestEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -582,7 +547,6 @@ impl ::core::fmt::Debug for ContactListDeleteContactRequestEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for ContactListDeleteContactRequestEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Contacts.DataProvider.ContactListDeleteContactRequestEventArgs;{b22054a1-e8fa-4db5-9389-2d12ee7d15ee})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -700,11 +664,6 @@ impl ContactListServerSearchReadBatchRequest {
         }
     }
 }
-impl ::core::clone::Clone for ContactListServerSearchReadBatchRequest {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ContactListServerSearchReadBatchRequest {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -718,7 +677,6 @@ impl ::core::fmt::Debug for ContactListServerSearchReadBatchRequest {
 }
 unsafe impl ::windows::core::RuntimeType for ContactListServerSearchReadBatchRequest {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Contacts.DataProvider.ContactListServerSearchReadBatchRequest;{ba776a97-4030-4925-9fb4-143b295e653b})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -794,11 +752,6 @@ impl ContactListServerSearchReadBatchRequestEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for ContactListServerSearchReadBatchRequestEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ContactListServerSearchReadBatchRequestEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -812,7 +765,6 @@ impl ::core::fmt::Debug for ContactListServerSearchReadBatchRequestEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for ContactListServerSearchReadBatchRequestEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Contacts.DataProvider.ContactListServerSearchReadBatchRequestEventArgs;{1a27e87b-69d7-4e4e-8042-861cba61471e})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -897,11 +849,6 @@ impl ContactListSyncManagerSyncRequest {
         }
     }
 }
-impl ::core::clone::Clone for ContactListSyncManagerSyncRequest {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ContactListSyncManagerSyncRequest {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -915,7 +862,6 @@ impl ::core::fmt::Debug for ContactListSyncManagerSyncRequest {
 }
 unsafe impl ::windows::core::RuntimeType for ContactListSyncManagerSyncRequest {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Contacts.DataProvider.ContactListSyncManagerSyncRequest;{3c0e57a4-c4e7-4970-9a8f-9a66a2bb6c1a})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -991,11 +937,6 @@ impl ContactListSyncManagerSyncRequestEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for ContactListSyncManagerSyncRequestEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ContactListSyncManagerSyncRequestEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1009,7 +950,6 @@ impl ::core::fmt::Debug for ContactListSyncManagerSyncRequestEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for ContactListSyncManagerSyncRequestEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Contacts.DataProvider.ContactListSyncManagerSyncRequestEventArgs;{158e4dac-446d-4f10-afc2-02683ec533a6})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1066,6 +1006,11 @@ unsafe impl ::core::marker::Sync for ContactListSyncManagerSyncRequestEventArgs 
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IContactDataProviderConnection(::windows::core::IUnknown);
+impl ::core::clone::Clone for IContactDataProviderConnection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IContactDataProviderConnection {
     type Vtable = IContactDataProviderConnection_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1a398a52_8c9d_4d6f_a4e0_111e9a125a30);
@@ -1095,6 +1040,11 @@ pub struct IContactDataProviderConnection_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IContactDataProviderConnection2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IContactDataProviderConnection2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IContactDataProviderConnection2 {
     type Vtable = IContactDataProviderConnection2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa1d327b0_196c_4bfd_8f0f_c68d67f249d3);
@@ -1123,6 +1073,11 @@ pub struct IContactDataProviderConnection2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IContactDataProviderTriggerDetails(::windows::core::IUnknown);
+impl ::core::clone::Clone for IContactDataProviderTriggerDetails {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IContactDataProviderTriggerDetails {
     type Vtable = IContactDataProviderTriggerDetails_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x527104be_3c62_43c8_9ae7_db531685cd99);
@@ -1136,6 +1091,11 @@ pub struct IContactDataProviderTriggerDetails_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IContactListCreateOrUpdateContactRequest(::windows::core::IUnknown);
+impl ::core::clone::Clone for IContactListCreateOrUpdateContactRequest {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IContactListCreateOrUpdateContactRequest {
     type Vtable = IContactListCreateOrUpdateContactRequest_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb4af411f_c849_47d0_b119_91cf605b2f2a);
@@ -1158,6 +1118,11 @@ pub struct IContactListCreateOrUpdateContactRequest_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IContactListCreateOrUpdateContactRequestEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IContactListCreateOrUpdateContactRequestEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IContactListCreateOrUpdateContactRequestEventArgs {
     type Vtable = IContactListCreateOrUpdateContactRequestEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x851c1690_1a51_4b0c_aeef_1240ac5bed75);
@@ -1175,6 +1140,11 @@ pub struct IContactListCreateOrUpdateContactRequestEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IContactListDeleteContactRequest(::windows::core::IUnknown);
+impl ::core::clone::Clone for IContactListDeleteContactRequest {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IContactListDeleteContactRequest {
     type Vtable = IContactListDeleteContactRequest_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x5e114687_ce03_4de5_8557_9ccf552d472a);
@@ -1197,6 +1167,11 @@ pub struct IContactListDeleteContactRequest_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IContactListDeleteContactRequestEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IContactListDeleteContactRequestEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IContactListDeleteContactRequestEventArgs {
     type Vtable = IContactListDeleteContactRequestEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb22054a1_e8fa_4db5_9389_2d12ee7d15ee);
@@ -1214,6 +1189,11 @@ pub struct IContactListDeleteContactRequestEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IContactListServerSearchReadBatchRequest(::windows::core::IUnknown);
+impl ::core::clone::Clone for IContactListServerSearchReadBatchRequest {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IContactListServerSearchReadBatchRequest {
     type Vtable = IContactListServerSearchReadBatchRequest_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xba776a97_4030_4925_9fb4_143b295e653b);
@@ -1242,6 +1222,11 @@ pub struct IContactListServerSearchReadBatchRequest_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IContactListServerSearchReadBatchRequestEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IContactListServerSearchReadBatchRequestEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IContactListServerSearchReadBatchRequestEventArgs {
     type Vtable = IContactListServerSearchReadBatchRequestEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1a27e87b_69d7_4e4e_8042_861cba61471e);
@@ -1259,6 +1244,11 @@ pub struct IContactListServerSearchReadBatchRequestEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IContactListSyncManagerSyncRequest(::windows::core::IUnknown);
+impl ::core::clone::Clone for IContactListSyncManagerSyncRequest {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IContactListSyncManagerSyncRequest {
     type Vtable = IContactListSyncManagerSyncRequest_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x3c0e57a4_c4e7_4970_9a8f_9a66a2bb6c1a);
@@ -1280,6 +1270,11 @@ pub struct IContactListSyncManagerSyncRequest_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IContactListSyncManagerSyncRequestEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IContactListSyncManagerSyncRequestEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IContactListSyncManagerSyncRequestEventArgs {
     type Vtable = IContactListSyncManagerSyncRequestEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x158e4dac_446d_4f10_afc2_02683ec533a6);

@@ -8,6 +8,12 @@ pub const ComponentUtil: ::windows::core::GUID = ::windows::core::GUID::from_u12
 #[repr(transparent)]
 pub struct ICatalog(::windows::core::IUnknown);
 #[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ICatalog {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "Win32_System_Com")]
 impl ICatalog {
     #[doc = "*Required features: `\"Win32_System_TransactionServer\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com"))]
@@ -79,12 +85,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a ICatalog 
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ICatalog {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ICatalog {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -123,6 +123,12 @@ pub struct ICatalog_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IComponentUtil(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IComponentUtil {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IComponentUtil {
     #[doc = "*Required features: `\"Win32_System_TransactionServer\"`, `\"Win32_Foundation\"`*"]
@@ -195,12 +201,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IComponen
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IComponentUtil {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IComponentUtil {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -245,6 +245,12 @@ pub struct IComponentUtil_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IPackageUtil(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IPackageUtil {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IPackageUtil {
     #[doc = "*Required features: `\"Win32_System_TransactionServer\"`, `\"Win32_Foundation\"`*"]
@@ -312,12 +318,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IPackageU
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IPackageUtil {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IPackageUtil {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -358,6 +358,12 @@ pub struct IPackageUtil_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IRemoteComponentUtil(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IRemoteComponentUtil {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IRemoteComponentUtil {
     #[doc = "*Required features: `\"Win32_System_TransactionServer\"`, `\"Win32_Foundation\"`*"]
@@ -420,12 +426,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IRemoteCo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IRemoteComponentUtil {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IRemoteComponentUtil {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -462,6 +462,12 @@ pub struct IRemoteComponentUtil_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IRoleAssociationUtil(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IRoleAssociationUtil {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IRoleAssociationUtil {
     #[doc = "*Required features: `\"Win32_System_TransactionServer\"`, `\"Win32_Foundation\"`*"]
@@ -524,12 +530,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IRoleAsso
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IRoleAssociationUtil {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IRoleAssociationUtil {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -584,6 +584,7 @@ impl ::core::default::Default for __MIDL___MIDL_itf_mtxadmin_0107_0001 {
 }
 unsafe impl ::windows::core::Abi for __MIDL___MIDL_itf_mtxadmin_0107_0001 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for __MIDL___MIDL_itf_mtxadmin_0107_0001 {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -609,6 +610,7 @@ impl ::core::default::Default for __MIDL___MIDL_itf_mtxadmin_0107_0002 {
 }
 unsafe impl ::windows::core::Abi for __MIDL___MIDL_itf_mtxadmin_0107_0002 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for __MIDL___MIDL_itf_mtxadmin_0107_0002 {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -722,6 +724,7 @@ impl ::core::default::Default for __MIDL___MIDL_itf_mtxadmin_0107_0003 {
 }
 unsafe impl ::windows::core::Abi for __MIDL___MIDL_itf_mtxadmin_0107_0003 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for __MIDL___MIDL_itf_mtxadmin_0107_0003 {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

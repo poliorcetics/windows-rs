@@ -2,6 +2,11 @@
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ILanguageFont(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILanguageFont {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ILanguageFont {
     type Vtable = ILanguageFont_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb12e5c3a_b76d_459b_beeb_901151cd77d1);
@@ -28,6 +33,11 @@ pub struct ILanguageFont_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ILanguageFontGroup(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILanguageFontGroup {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ILanguageFontGroup {
     type Vtable = ILanguageFontGroup_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf33a7fc3_3a5c_4aea_b9ff_b39fb242f7f6);
@@ -51,6 +61,11 @@ pub struct ILanguageFontGroup_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ILanguageFontGroupFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILanguageFontGroupFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ILanguageFontGroupFactory {
     type Vtable = ILanguageFontGroupFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xfcaeac67_4e77_49c7_b856_dde934fc735b);
@@ -109,11 +124,6 @@ impl LanguageFont {
         }
     }
 }
-impl ::core::clone::Clone for LanguageFont {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for LanguageFont {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -127,7 +137,6 @@ impl ::core::fmt::Debug for LanguageFont {
 }
 unsafe impl ::windows::core::RuntimeType for LanguageFont {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Globalization.Fonts.LanguageFont;{b12e5c3a-b76d-459b-beeb-901151cd77d1})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -286,11 +295,6 @@ impl LanguageFontGroup {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for LanguageFontGroup {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for LanguageFontGroup {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -304,7 +308,6 @@ impl ::core::fmt::Debug for LanguageFontGroup {
 }
 unsafe impl ::windows::core::RuntimeType for LanguageFontGroup {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Globalization.Fonts.LanguageFontGroup;{f33a7fc3-3a5c-4aea-b9ff-b39fb242f7f6})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

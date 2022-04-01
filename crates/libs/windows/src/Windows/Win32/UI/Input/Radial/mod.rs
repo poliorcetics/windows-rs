@@ -2,6 +2,11 @@
 #[doc = "*Required features: `\"Win32_UI_Input_Radial\"`*"]
 #[repr(transparent)]
 pub struct IRadialControllerConfigurationInterop(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRadialControllerConfigurationInterop {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRadialControllerConfigurationInterop {
     #[doc = "*Required features: `\"Win32_UI_Input_Radial\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -50,11 +55,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IRadialControllerConfigurationInterop {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IRadialControllerConfigurationInterop {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -82,6 +82,11 @@ pub struct IRadialControllerConfigurationInterop_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Input_Radial\"`*"]
 #[repr(transparent)]
 pub struct IRadialControllerIndependentInputSourceInterop(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRadialControllerIndependentInputSourceInterop {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRadialControllerIndependentInputSourceInterop {
     #[doc = "*Required features: `\"Win32_UI_Input_Radial\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -130,11 +135,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IRadialControllerIndependentInputSourceInterop {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IRadialControllerIndependentInputSourceInterop {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -162,6 +162,11 @@ pub struct IRadialControllerIndependentInputSourceInterop_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Input_Radial\"`*"]
 #[repr(transparent)]
 pub struct IRadialControllerInterop(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRadialControllerInterop {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRadialControllerInterop {
     #[doc = "*Required features: `\"Win32_UI_Input_Radial\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -208,11 +213,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for IRadi
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a IRadialControllerInterop {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IInspectable> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IRadialControllerInterop {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IRadialControllerInterop {

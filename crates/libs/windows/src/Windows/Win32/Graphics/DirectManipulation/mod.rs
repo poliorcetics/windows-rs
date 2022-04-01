@@ -29,6 +29,7 @@ impl ::core::default::Default for DIRECTMANIPULATION_AUTOSCROLL_CONFIGURATION {
 }
 unsafe impl ::windows::core::Abi for DIRECTMANIPULATION_AUTOSCROLL_CONFIGURATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DIRECTMANIPULATION_AUTOSCROLL_CONFIGURATION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -70,6 +71,7 @@ impl ::core::default::Default for DIRECTMANIPULATION_CONFIGURATION {
 }
 unsafe impl ::windows::core::Abi for DIRECTMANIPULATION_CONFIGURATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DIRECTMANIPULATION_CONFIGURATION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -103,6 +105,7 @@ impl ::core::default::Default for DIRECTMANIPULATION_DRAG_DROP_CONFIGURATION {
 }
 unsafe impl ::windows::core::Abi for DIRECTMANIPULATION_DRAG_DROP_CONFIGURATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DIRECTMANIPULATION_DRAG_DROP_CONFIGURATION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -138,6 +141,7 @@ impl ::core::default::Default for DIRECTMANIPULATION_DRAG_DROP_STATUS {
 }
 unsafe impl ::windows::core::Abi for DIRECTMANIPULATION_DRAG_DROP_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DIRECTMANIPULATION_DRAG_DROP_STATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -171,6 +175,7 @@ impl ::core::default::Default for DIRECTMANIPULATION_GESTURE_CONFIGURATION {
 }
 unsafe impl ::windows::core::Abi for DIRECTMANIPULATION_GESTURE_CONFIGURATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DIRECTMANIPULATION_GESTURE_CONFIGURATION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -200,6 +205,7 @@ impl ::core::default::Default for DIRECTMANIPULATION_HITTEST_TYPE {
 }
 unsafe impl ::windows::core::Abi for DIRECTMANIPULATION_HITTEST_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DIRECTMANIPULATION_HITTEST_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -233,6 +239,7 @@ impl ::core::default::Default for DIRECTMANIPULATION_HORIZONTALALIGNMENT {
 }
 unsafe impl ::windows::core::Abi for DIRECTMANIPULATION_HORIZONTALALIGNMENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DIRECTMANIPULATION_HORIZONTALALIGNMENT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -260,6 +267,7 @@ impl ::core::default::Default for DIRECTMANIPULATION_INPUT_MODE {
 }
 unsafe impl ::windows::core::Abi for DIRECTMANIPULATION_INPUT_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DIRECTMANIPULATION_INPUT_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -297,6 +305,7 @@ impl ::core::default::Default for DIRECTMANIPULATION_INTERACTION_TYPE {
 }
 unsafe impl ::windows::core::Abi for DIRECTMANIPULATION_INTERACTION_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DIRECTMANIPULATION_INTERACTION_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -336,6 +345,7 @@ impl ::core::default::Default for DIRECTMANIPULATION_MOTION_TYPES {
 }
 unsafe impl ::windows::core::Abi for DIRECTMANIPULATION_MOTION_TYPES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DIRECTMANIPULATION_MOTION_TYPES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -367,6 +377,7 @@ impl ::core::default::Default for DIRECTMANIPULATION_SNAPPOINT_COORDINATE {
 }
 unsafe impl ::windows::core::Abi for DIRECTMANIPULATION_SNAPPOINT_COORDINATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DIRECTMANIPULATION_SNAPPOINT_COORDINATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -398,6 +409,7 @@ impl ::core::default::Default for DIRECTMANIPULATION_SNAPPOINT_TYPE {
 }
 unsafe impl ::windows::core::Abi for DIRECTMANIPULATION_SNAPPOINT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DIRECTMANIPULATION_SNAPPOINT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -435,6 +447,7 @@ impl ::core::default::Default for DIRECTMANIPULATION_STATUS {
 }
 unsafe impl ::windows::core::Abi for DIRECTMANIPULATION_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DIRECTMANIPULATION_STATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -468,6 +481,7 @@ impl ::core::default::Default for DIRECTMANIPULATION_VERTICALALIGNMENT {
 }
 unsafe impl ::windows::core::Abi for DIRECTMANIPULATION_VERTICALALIGNMENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DIRECTMANIPULATION_VERTICALALIGNMENT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -503,6 +517,7 @@ impl ::core::default::Default for DIRECTMANIPULATION_VIEWPORT_OPTIONS {
 }
 unsafe impl ::windows::core::Abi for DIRECTMANIPULATION_VIEWPORT_OPTIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DIRECTMANIPULATION_VIEWPORT_OPTIONS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -517,6 +532,11 @@ pub const DirectManipulationViewport: ::windows::core::GUID = ::windows::core::G
 #[doc = "*Required features: `\"Win32_Graphics_DirectManipulation\"`*"]
 #[repr(transparent)]
 pub struct IDirectManipulationAutoScrollBehavior(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectManipulationAutoScrollBehavior {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirectManipulationAutoScrollBehavior {
     #[doc = "*Required features: `\"Win32_Graphics_DirectManipulation\"`*"]
     pub unsafe fn SetConfiguration(&self, motiontypes: DIRECTMANIPULATION_MOTION_TYPES, scrollmotion: DIRECTMANIPULATION_AUTOSCROLL_CONFIGURATION) -> ::windows::core::Result<()> {
@@ -543,11 +563,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDire
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirectManipulationAutoScrollBehavior {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirectManipulationAutoScrollBehavior {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -572,6 +587,11 @@ pub struct IDirectManipulationAutoScrollBehavior_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectManipulation\"`*"]
 #[repr(transparent)]
 pub struct IDirectManipulationCompositor(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectManipulationCompositor {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirectManipulationCompositor {
     #[doc = "*Required features: `\"Win32_Graphics_DirectManipulation\"`*"]
     pub unsafe fn AddContent<'a, Param0: ::windows::core::IntoParam<'a, IDirectManipulationContent>, Param1: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>, Param2: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>, Param3: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, content: Param0, device: Param1, parentvisual: Param2, childvisual: Param3) -> ::windows::core::Result<()> {
@@ -610,11 +630,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDire
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirectManipulationCompositor {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirectManipulationCompositor {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -642,6 +657,11 @@ pub struct IDirectManipulationCompositor_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectManipulation\"`*"]
 #[repr(transparent)]
 pub struct IDirectManipulationCompositor2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectManipulationCompositor2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirectManipulationCompositor2 {
     #[doc = "*Required features: `\"Win32_Graphics_DirectManipulation\"`*"]
     pub unsafe fn AddContent<'a, Param0: ::windows::core::IntoParam<'a, IDirectManipulationContent>, Param1: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>, Param2: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>, Param3: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, content: Param0, device: Param1, parentvisual: Param2, childvisual: Param3) -> ::windows::core::Result<()> {
@@ -704,11 +724,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDirectManipulationCompositor> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirectManipulationCompositor2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirectManipulationCompositor2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -733,6 +748,11 @@ pub struct IDirectManipulationCompositor2_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectManipulation\"`*"]
 #[repr(transparent)]
 pub struct IDirectManipulationContent(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectManipulationContent {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirectManipulationContent {
     #[doc = "*Required features: `\"Win32_Graphics_DirectManipulation\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -791,11 +811,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDire
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirectManipulationContent {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirectManipulationContent {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -833,6 +848,11 @@ pub struct IDirectManipulationContent_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectManipulation\"`*"]
 #[repr(transparent)]
 pub struct IDirectManipulationDeferContactService(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectManipulationDeferContactService {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirectManipulationDeferContactService {
     #[doc = "*Required features: `\"Win32_Graphics_DirectManipulation\"`*"]
     pub unsafe fn DeferContact(&self, pointerid: u32, timeout: u32) -> ::windows::core::Result<()> {
@@ -867,11 +887,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDire
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirectManipulationDeferContactService {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirectManipulationDeferContactService {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -898,6 +913,11 @@ pub struct IDirectManipulationDeferContactService_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectManipulation\"`*"]
 #[repr(transparent)]
 pub struct IDirectManipulationDragDropBehavior(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectManipulationDragDropBehavior {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirectManipulationDragDropBehavior {
     #[doc = "*Required features: `\"Win32_Graphics_DirectManipulation\"`*"]
     pub unsafe fn SetConfiguration(&self, configuration: DIRECTMANIPULATION_DRAG_DROP_CONFIGURATION) -> ::windows::core::Result<()> {
@@ -929,11 +949,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDire
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirectManipulationDragDropBehavior {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirectManipulationDragDropBehavior {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -959,6 +974,11 @@ pub struct IDirectManipulationDragDropBehavior_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectManipulation\"`*"]
 #[repr(transparent)]
 pub struct IDirectManipulationDragDropEventHandler(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectManipulationDragDropEventHandler {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirectManipulationDragDropEventHandler {
     #[doc = "*Required features: `\"Win32_Graphics_DirectManipulation\"`*"]
     pub unsafe fn OnDragDropStatusChange<'a, Param0: ::windows::core::IntoParam<'a, IDirectManipulationViewport2>>(&self, viewport: Param0, current: DIRECTMANIPULATION_DRAG_DROP_STATUS, previous: DIRECTMANIPULATION_DRAG_DROP_STATUS) -> ::windows::core::Result<()> {
@@ -985,11 +1005,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDire
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirectManipulationDragDropEventHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirectManipulationDragDropEventHandler {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1014,6 +1029,11 @@ pub struct IDirectManipulationDragDropEventHandler_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectManipulation\"`*"]
 #[repr(transparent)]
 pub struct IDirectManipulationFrameInfoProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectManipulationFrameInfoProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirectManipulationFrameInfoProvider {
     #[doc = "*Required features: `\"Win32_Graphics_DirectManipulation\"`*"]
     pub unsafe fn GetNextFrameInfo(&self, time: *mut u64, processtime: *mut u64, compositiontime: *mut u64) -> ::windows::core::Result<()> {
@@ -1040,11 +1060,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDire
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirectManipulationFrameInfoProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirectManipulationFrameInfoProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1069,6 +1084,11 @@ pub struct IDirectManipulationFrameInfoProvider_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectManipulation\"`*"]
 #[repr(transparent)]
 pub struct IDirectManipulationInteractionEventHandler(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectManipulationInteractionEventHandler {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirectManipulationInteractionEventHandler {
     #[doc = "*Required features: `\"Win32_Graphics_DirectManipulation\"`*"]
     pub unsafe fn OnInteraction<'a, Param0: ::windows::core::IntoParam<'a, IDirectManipulationViewport2>>(&self, viewport: Param0, interaction: DIRECTMANIPULATION_INTERACTION_TYPE) -> ::windows::core::Result<()> {
@@ -1095,11 +1115,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDire
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirectManipulationInteractionEventHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirectManipulationInteractionEventHandler {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1124,6 +1139,11 @@ pub struct IDirectManipulationInteractionEventHandler_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectManipulation\"`*"]
 #[repr(transparent)]
 pub struct IDirectManipulationManager(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectManipulationManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirectManipulationManager {
     #[doc = "*Required features: `\"Win32_Graphics_DirectManipulation\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -1183,11 +1203,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDire
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirectManipulationManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirectManipulationManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1233,6 +1248,11 @@ pub struct IDirectManipulationManager_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectManipulation\"`*"]
 #[repr(transparent)]
 pub struct IDirectManipulationManager2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectManipulationManager2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirectManipulationManager2 {
     #[doc = "*Required features: `\"Win32_Graphics_DirectManipulation\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -1317,11 +1337,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDirectManipulationManager> for &'a IDir
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirectManipulationManager2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirectManipulationManager2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1346,6 +1361,11 @@ pub struct IDirectManipulationManager2_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectManipulation\"`*"]
 #[repr(transparent)]
 pub struct IDirectManipulationManager3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectManipulationManager3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirectManipulationManager3 {
     #[doc = "*Required features: `\"Win32_Graphics_DirectManipulation\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -1455,11 +1475,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDirectManipulationManager2> for &'a IDi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirectManipulationManager3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirectManipulationManager3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1484,6 +1499,11 @@ pub struct IDirectManipulationManager3_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectManipulation\"`*"]
 #[repr(transparent)]
 pub struct IDirectManipulationPrimaryContent(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectManipulationPrimaryContent {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirectManipulationPrimaryContent {
     #[doc = "*Required features: `\"Win32_Graphics_DirectManipulation\"`*"]
     pub unsafe fn SetSnapInterval(&self, motion: DIRECTMANIPULATION_MOTION_TYPES, interval: f32, offset: f32) -> ::windows::core::Result<()> {
@@ -1542,11 +1562,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDire
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirectManipulationPrimaryContent {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirectManipulationPrimaryContent {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1579,6 +1594,11 @@ pub struct IDirectManipulationPrimaryContent_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectManipulation\"`*"]
 #[repr(transparent)]
 pub struct IDirectManipulationUpdateHandler(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectManipulationUpdateHandler {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirectManipulationUpdateHandler {
     #[doc = "*Required features: `\"Win32_Graphics_DirectManipulation\"`*"]
     pub unsafe fn Update(&self) -> ::windows::core::Result<()> {
@@ -1605,11 +1625,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDire
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirectManipulationUpdateHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirectManipulationUpdateHandler {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1634,6 +1649,11 @@ pub struct IDirectManipulationUpdateHandler_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectManipulation\"`*"]
 #[repr(transparent)]
 pub struct IDirectManipulationUpdateManager(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectManipulationUpdateManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirectManipulationUpdateManager {
     #[doc = "*Required features: `\"Win32_Graphics_DirectManipulation\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -1670,11 +1690,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDire
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirectManipulationUpdateManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirectManipulationUpdateManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1704,6 +1719,11 @@ pub struct IDirectManipulationUpdateManager_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectManipulation\"`*"]
 #[repr(transparent)]
 pub struct IDirectManipulationViewport(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectManipulationViewport {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirectManipulationViewport {
     #[doc = "*Required features: `\"Win32_Graphics_DirectManipulation\"`*"]
     pub unsafe fn Enable(&self) -> ::windows::core::Result<()> {
@@ -1846,11 +1866,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDire
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirectManipulationViewport {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirectManipulationViewport {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1914,6 +1929,11 @@ pub struct IDirectManipulationViewport_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectManipulation\"`*"]
 #[repr(transparent)]
 pub struct IDirectManipulationViewport2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectManipulationViewport2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirectManipulationViewport2 {
     #[doc = "*Required features: `\"Win32_Graphics_DirectManipulation\"`*"]
     pub unsafe fn Enable(&self) -> ::windows::core::Result<()> {
@@ -2089,11 +2109,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDirectManipulationViewport> for &'a IDi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirectManipulationViewport2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirectManipulationViewport2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2120,6 +2135,11 @@ pub struct IDirectManipulationViewport2_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectManipulation\"`*"]
 #[repr(transparent)]
 pub struct IDirectManipulationViewportEventHandler(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirectManipulationViewportEventHandler {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirectManipulationViewportEventHandler {
     #[doc = "*Required features: `\"Win32_Graphics_DirectManipulation\"`*"]
     pub unsafe fn OnViewportStatusChanged<'a, Param0: ::windows::core::IntoParam<'a, IDirectManipulationViewport>>(&self, viewport: Param0, current: DIRECTMANIPULATION_STATUS, previous: DIRECTMANIPULATION_STATUS) -> ::windows::core::Result<()> {
@@ -2152,11 +2172,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IDirectMa
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDirectManipulationViewportEventHandler {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IDirectManipulationViewportEventHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IDirectManipulationViewportEventHandler {

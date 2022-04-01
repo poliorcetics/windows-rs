@@ -43,6 +43,7 @@ impl ::core::fmt::Debug for BIDIOPTIONS {
 }
 unsafe impl ::windows::core::Abi for BIDIOPTIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for BIDIOPTIONS {
     fn eq(&self, other: &Self) -> bool {
@@ -114,6 +115,7 @@ impl ::core::default::Default for CARET_FLAGS {
 }
 unsafe impl ::windows::core::Abi for CARET_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CARET_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -138,6 +140,7 @@ impl ::core::clone::Clone for CARET_INFO {
 #[cfg(feature = "Win32_Graphics_Gdi")]
 unsafe impl ::windows::core::Abi for CARET_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Gdi")]
 impl ::core::cmp::PartialEq for CARET_INFO {
@@ -224,6 +227,7 @@ impl ::core::default::Default for CFE_EFFECTS {
 }
 unsafe impl ::windows::core::Abi for CFE_EFFECTS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CFE_EFFECTS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -361,6 +365,7 @@ impl ::core::default::Default for CFM_MASK {
 }
 unsafe impl ::windows::core::Abi for CFM_MASK {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CFM_MASK {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -420,6 +425,7 @@ impl ::core::fmt::Debug for CHANGENOTIFY {
 }
 unsafe impl ::windows::core::Abi for CHANGENOTIFY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CHANGENOTIFY {
     fn eq(&self, other: &Self) -> bool {
@@ -457,6 +463,7 @@ impl ::core::default::Default for CHANGETYPE {
 }
 unsafe impl ::windows::core::Abi for CHANGETYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CHANGETYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -491,6 +498,7 @@ impl ::core::clone::Clone for CHARFORMAT2A {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for CHARFORMAT2A {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for CHARFORMAT2A {
@@ -524,6 +532,7 @@ impl ::core::clone::Clone for CHARFORMAT2A_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for CHARFORMAT2A_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for CHARFORMAT2A_0 {
@@ -563,6 +572,7 @@ impl ::core::clone::Clone for CHARFORMAT2W {
 }
 unsafe impl ::windows::core::Abi for CHARFORMAT2W {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CHARFORMAT2W {
     fn eq(&self, other: &Self) -> bool {
@@ -589,6 +599,7 @@ impl ::core::clone::Clone for CHARFORMAT2W_0 {
 }
 unsafe impl ::windows::core::Abi for CHARFORMAT2W_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CHARFORMAT2W_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -632,6 +643,7 @@ impl ::core::fmt::Debug for CHARFORMATA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for CHARFORMATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for CHARFORMATA {
@@ -673,6 +685,7 @@ impl ::core::fmt::Debug for CHARFORMATW {
 }
 unsafe impl ::windows::core::Abi for CHARFORMATW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CHARFORMATW {
     fn eq(&self, other: &Self) -> bool {
@@ -704,6 +717,7 @@ impl ::core::fmt::Debug for CHARRANGE {
 }
 unsafe impl ::windows::core::Abi for CHARRANGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CHARRANGE {
     fn eq(&self, other: &Self) -> bool {
@@ -734,6 +748,7 @@ impl ::core::clone::Clone for CLIPBOARDFORMAT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for CLIPBOARDFORMAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for CLIPBOARDFORMAT {
@@ -769,6 +784,7 @@ impl ::core::fmt::Debug for COMPCOLOR {
 }
 unsafe impl ::windows::core::Abi for COMPCOLOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for COMPCOLOR {
     fn eq(&self, other: &Self) -> bool {
@@ -848,6 +864,7 @@ impl ::core::clone::Clone for EDITSTREAM {
 }
 unsafe impl ::windows::core::Abi for EDITSTREAM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EDITSTREAM {
     fn eq(&self, other: &Self) -> bool {
@@ -1127,6 +1144,7 @@ impl ::core::clone::Clone for ENCORRECTTEXT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for ENCORRECTTEXT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for ENCORRECTTEXT {
@@ -1160,6 +1178,7 @@ impl ::core::clone::Clone for ENDCOMPOSITIONNOTIFY {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for ENDCOMPOSITIONNOTIFY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for ENDCOMPOSITIONNOTIFY {
@@ -1196,6 +1215,7 @@ impl ::core::default::Default for ENDCOMPOSITIONNOTIFY_CODE {
 }
 unsafe impl ::windows::core::Abi for ENDCOMPOSITIONNOTIFY_CODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ENDCOMPOSITIONNOTIFY_CODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1222,6 +1242,7 @@ impl ::core::clone::Clone for ENDROPFILES {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for ENDROPFILES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for ENDROPFILES {
@@ -1258,6 +1279,7 @@ impl ::core::clone::Clone for ENLINK {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for ENLINK {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for ENLINK {
@@ -1291,6 +1313,7 @@ impl ::core::clone::Clone for ENLOWFIRTF {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for ENLOWFIRTF {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for ENLOWFIRTF {
@@ -1376,6 +1399,7 @@ impl ::core::clone::Clone for ENOLEOPFAILED {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for ENOLEOPFAILED {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for ENOLEOPFAILED {
@@ -1412,6 +1436,7 @@ impl ::core::clone::Clone for ENPROTECTED {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for ENPROTECTED {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for ENPROTECTED {
@@ -1446,6 +1471,7 @@ impl ::core::clone::Clone for ENSAVECLIPBOARD {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for ENSAVECLIPBOARD {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for ENSAVECLIPBOARD {
@@ -1545,6 +1571,7 @@ impl ::core::clone::Clone for FINDTEXTA {
 }
 unsafe impl ::windows::core::Abi for FINDTEXTA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for FINDTEXTA {
     fn eq(&self, other: &Self) -> bool {
@@ -1572,6 +1599,7 @@ impl ::core::clone::Clone for FINDTEXTEXA {
 }
 unsafe impl ::windows::core::Abi for FINDTEXTEXA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for FINDTEXTEXA {
     fn eq(&self, other: &Self) -> bool {
@@ -1599,6 +1627,7 @@ impl ::core::clone::Clone for FINDTEXTEXW {
 }
 unsafe impl ::windows::core::Abi for FINDTEXTEXW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for FINDTEXTEXW {
     fn eq(&self, other: &Self) -> bool {
@@ -1625,6 +1654,7 @@ impl ::core::clone::Clone for FINDTEXTW {
 }
 unsafe impl ::windows::core::Abi for FINDTEXTW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for FINDTEXTW {
     fn eq(&self, other: &Self) -> bool {
@@ -1658,6 +1688,7 @@ impl ::core::clone::Clone for FORMATRANGE {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
 unsafe impl ::windows::core::Abi for FORMATRANGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
 impl ::core::cmp::PartialEq for FORMATRANGE {
@@ -1711,6 +1742,7 @@ impl ::core::clone::Clone for GETCONTEXTMENUEX {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for GETCONTEXTMENUEX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for GETCONTEXTMENUEX {
@@ -1743,6 +1775,7 @@ impl ::core::clone::Clone for GETTEXTEX {
 }
 unsafe impl ::windows::core::Abi for GETTEXTEX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for GETTEXTEX {
     fn eq(&self, other: &Self) -> bool {
@@ -1782,6 +1815,7 @@ impl ::core::default::Default for GETTEXTEX_FLAGS {
 }
 unsafe impl ::windows::core::Abi for GETTEXTEX_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GETTEXTEX_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1807,6 +1841,7 @@ impl ::core::fmt::Debug for GETTEXTLENGTHEX {
 }
 unsafe impl ::windows::core::Abi for GETTEXTLENGTHEX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for GETTEXTLENGTHEX {
     fn eq(&self, other: &Self) -> bool {
@@ -1848,6 +1883,7 @@ impl ::core::default::Default for GETTEXTLENGTHEX_FLAGS {
 }
 unsafe impl ::windows::core::Abi for GETTEXTLENGTHEX_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GETTEXTLENGTHEX_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1897,6 +1933,7 @@ impl ::core::clone::Clone for HYPHENATEINFO {
 }
 unsafe impl ::windows::core::Abi for HYPHENATEINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HYPHENATEINFO {
     fn eq(&self, other: &Self) -> bool {
@@ -1940,6 +1977,7 @@ impl ::core::fmt::Debug for IMECOMPTEXT {
 }
 unsafe impl ::windows::core::Abi for IMECOMPTEXT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IMECOMPTEXT {
     fn eq(&self, other: &Self) -> bool {
@@ -1971,6 +2009,7 @@ impl ::core::default::Default for IMECOMPTEXT_FLAGS {
 }
 unsafe impl ::windows::core::Abi for IMECOMPTEXT_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for IMECOMPTEXT_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2028,6 +2067,11 @@ pub const IMF_VERTICAL: u32 = 32u32;
 #[doc = "*Required features: `\"Win32_UI_Controls_RichEdit\"`*"]
 #[repr(transparent)]
 pub struct IRichEditOle(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRichEditOle {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRichEditOle {
     #[doc = "*Required features: `\"Win32_UI_Controls_RichEdit\"`, `\"Win32_System_Ole\"`*"]
     #[cfg(feature = "Win32_System_Ole")]
@@ -2123,11 +2167,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IRich
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IRichEditOle {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IRichEditOle {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2191,6 +2230,11 @@ pub struct IRichEditOle_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Controls_RichEdit\"`*"]
 #[repr(transparent)]
 pub struct IRichEditOleCallback(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRichEditOleCallback {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRichEditOleCallback {
     #[doc = "*Required features: `\"Win32_UI_Controls_RichEdit\"`, `\"Win32_System_Com_StructuredStorage\"`*"]
     #[cfg(feature = "Win32_System_Com_StructuredStorage")]
@@ -2264,11 +2308,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IRich
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IRichEditOleCallback {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IRichEditOleCallback {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2332,6 +2371,11 @@ pub struct IRichEditOleCallback_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Controls_RichEdit\"`*"]
 #[repr(transparent)]
 pub struct IRicheditUiaOverrides(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRicheditUiaOverrides {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRicheditUiaOverrides {
     #[doc = "*Required features: `\"Win32_UI_Controls_RichEdit\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com", feature = "Win32_System_Ole"))]
@@ -2357,11 +2401,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IRichedit
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IRicheditUiaOverrides {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IRicheditUiaOverrides {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IRicheditUiaOverrides {
@@ -2392,6 +2431,12 @@ pub struct IRicheditUiaOverrides_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITextDisplays(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITextDisplays {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITextDisplays {}
 #[cfg(feature = "Win32_System_Com")]
@@ -2443,12 +2488,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITextDisplays {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITextDisplays {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2477,6 +2516,12 @@ pub struct ITextDisplays_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITextDocument(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITextDocument {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITextDocument {
     #[doc = "*Required features: `\"Win32_UI_Controls_RichEdit\"`, `\"Win32_Foundation\"`*"]
@@ -2624,12 +2669,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITextDocument {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITextDocument {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2698,6 +2737,12 @@ pub struct ITextDocument_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITextDocument2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITextDocument2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITextDocument2 {
     #[doc = "*Required features: `\"Win32_UI_Controls_RichEdit\"`, `\"Win32_Foundation\"`*"]
@@ -3081,12 +3126,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITextDocument> for &'a ITextDocument2 {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITextDocument2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITextDocument2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3195,6 +3234,12 @@ pub struct ITextDocument2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITextDocument2Old(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITextDocument2Old {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITextDocument2Old {
     #[doc = "*Required features: `\"Win32_UI_Controls_RichEdit\"`, `\"Win32_Foundation\"`*"]
@@ -3476,12 +3521,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITextDocument> for &'a ITextDocument2Old
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITextDocument2Old {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITextDocument2Old {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3546,6 +3585,12 @@ pub struct ITextDocument2Old_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITextFont(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITextFont {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITextFont {
     #[doc = "*Required features: `\"Win32_UI_Controls_RichEdit\"`, `\"Win32_System_Com\"`*"]
@@ -3851,12 +3896,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITextFont {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITextFont {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3955,6 +3994,12 @@ pub struct ITextFont_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITextFont2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITextFont2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITextFont2 {
     #[doc = "*Required features: `\"Win32_UI_Controls_RichEdit\"`, `\"Win32_System_Com\"`*"]
@@ -4493,12 +4538,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITextFont> for &'a ITextFont2 {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITextFont2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITextFont2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4581,6 +4620,11 @@ pub struct ITextFont2_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Controls_RichEdit\"`*"]
 #[repr(transparent)]
 pub struct ITextHost(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITextHost {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITextHost {
     #[doc = "*Required features: `\"Win32_UI_Controls_RichEdit\"`, `\"Win32_Graphics_Gdi\"`*"]
     #[cfg(feature = "Win32_Graphics_Gdi")]
@@ -4782,11 +4826,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IText
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITextHost {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITextHost {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4915,6 +4954,11 @@ pub struct ITextHost_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Controls_RichEdit\"`*"]
 #[repr(transparent)]
 pub struct ITextHost2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITextHost2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITextHost2 {
     #[doc = "*Required features: `\"Win32_UI_Controls_RichEdit\"`, `\"Win32_Graphics_Gdi\"`*"]
     #[cfg(feature = "Win32_Graphics_Gdi")]
@@ -5189,11 +5233,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITextHost> for &'a ITextHost2 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITextHost2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITextHost2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5245,6 +5284,12 @@ pub struct ITextHost2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITextPara(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITextPara {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITextPara {
     #[doc = "*Required features: `\"Win32_UI_Controls_RichEdit\"`, `\"Win32_System_Com\"`*"]
@@ -5516,12 +5561,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITextPara {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITextPara {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5607,6 +5646,12 @@ pub struct ITextPara_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITextPara2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITextPara2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITextPara2 {
     #[doc = "*Required features: `\"Win32_UI_Controls_RichEdit\"`, `\"Win32_System_Com\"`*"]
@@ -5977,12 +6022,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITextPara> for &'a ITextPara2 {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITextPara2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITextPara2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6036,6 +6075,12 @@ pub struct ITextPara2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITextRange(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITextRange {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITextRange {
     #[doc = "*Required features: `\"Win32_UI_Controls_RichEdit\"`, `\"Win32_Foundation\"`*"]
@@ -6352,12 +6397,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITextRange {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITextRange {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6512,6 +6551,12 @@ pub struct ITextRange_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITextRange2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITextRange2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITextRange2 {
     #[doc = "*Required features: `\"Win32_UI_Controls_RichEdit\"`, `\"Win32_Foundation\"`*"]
@@ -7117,12 +7162,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITextSelection> for &'a ITextRange2 {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITextRange2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITextRange2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7236,6 +7275,12 @@ pub struct ITextRange2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITextRow(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITextRow {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITextRow {
     #[doc = "*Required features: `\"Win32_UI_Controls_RichEdit\"`*"]
@@ -7494,12 +7539,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITextRow {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITextRow {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7577,6 +7616,12 @@ pub struct ITextRow_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITextSelection(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITextSelection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITextSelection {
     #[doc = "*Required features: `\"Win32_UI_Controls_RichEdit\"`, `\"Win32_Foundation\"`*"]
@@ -7966,12 +8011,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITextRange> for &'a ITextSelection {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITextSelection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITextSelection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8013,6 +8052,12 @@ pub struct ITextSelection_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITextSelection2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITextSelection2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITextSelection2 {
     #[doc = "*Required features: `\"Win32_UI_Controls_RichEdit\"`, `\"Win32_Foundation\"`*"]
@@ -8642,12 +8687,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITextRange2> for &'a ITextSelection2 {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITextSelection2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITextSelection2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8675,6 +8714,11 @@ pub struct ITextSelection2_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Controls_RichEdit\"`*"]
 #[repr(transparent)]
 pub struct ITextServices(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITextServices {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITextServices {
     #[doc = "*Required features: `\"Win32_UI_Controls_RichEdit\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -8780,11 +8824,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IText
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITextServices {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITextServices {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8856,6 +8895,11 @@ pub struct ITextServices_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Controls_RichEdit\"`*"]
 #[repr(transparent)]
 pub struct ITextServices2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITextServices2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITextServices2 {
     #[doc = "*Required features: `\"Win32_UI_Controls_RichEdit\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -8991,11 +9035,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITextServices> for &'a ITextServices2 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITextServices2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITextServices2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9027,6 +9066,11 @@ pub struct ITextServices2_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Controls_RichEdit\"`*"]
 #[repr(transparent)]
 pub struct ITextStory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITextStory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITextStory {
     #[doc = "*Required features: `\"Win32_UI_Controls_RichEdit\"`*"]
     pub unsafe fn GetActive(&self) -> ::windows::core::Result<i32> {
@@ -9107,11 +9151,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IText
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITextStory {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITextStory {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9157,6 +9196,12 @@ pub struct ITextStory_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITextStoryRanges(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITextStoryRanges {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITextStoryRanges {
     #[doc = "*Required features: `\"Win32_UI_Controls_RichEdit\"`*"]
@@ -9225,12 +9270,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITextStoryRanges {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITextStoryRanges {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9265,6 +9304,12 @@ pub struct ITextStoryRanges_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITextStoryRanges2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITextStoryRanges2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITextStoryRanges2 {
     #[doc = "*Required features: `\"Win32_UI_Controls_RichEdit\"`*"]
@@ -9363,12 +9408,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITextStoryRanges> for &'a ITextStoryRang
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITextStoryRanges2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITextStoryRanges2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9401,6 +9440,12 @@ pub struct ITextStoryRanges2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITextStrings(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITextStrings {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITextStrings {
     #[doc = "*Required features: `\"Win32_UI_Controls_RichEdit\"`, `\"Win32_System_Com\"`*"]
@@ -9533,12 +9578,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITextStrings {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITextStrings {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9638,6 +9677,7 @@ impl ::core::default::Default for KHYPH {
 }
 unsafe impl ::windows::core::Abi for KHYPH {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KHYPH {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9693,6 +9733,7 @@ impl ::core::default::Default for MANCODE {
 }
 unsafe impl ::windows::core::Abi for MANCODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MANCODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9725,6 +9766,7 @@ impl ::core::clone::Clone for MSGFILTER {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MSGFILTER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MSGFILTER {
@@ -9759,6 +9801,7 @@ impl ::core::clone::Clone for OBJECTPOSITIONS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for OBJECTPOSITIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for OBJECTPOSITIONS {
@@ -9853,6 +9896,7 @@ impl ::core::default::Default for OBJECTTYPE {
 }
 unsafe impl ::windows::core::Abi for OBJECTTYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for OBJECTTYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9883,6 +9927,7 @@ impl ::core::clone::Clone for PARAFORMAT {
 }
 unsafe impl ::windows::core::Abi for PARAFORMAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PARAFORMAT {
     fn eq(&self, other: &Self) -> bool {
@@ -9909,6 +9954,7 @@ impl ::core::clone::Clone for PARAFORMAT_0 {
 }
 unsafe impl ::windows::core::Abi for PARAFORMAT_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PARAFORMAT_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -9948,6 +9994,7 @@ impl ::core::clone::Clone for PARAFORMAT2 {
 }
 unsafe impl ::windows::core::Abi for PARAFORMAT2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PARAFORMAT2 {
     fn eq(&self, other: &Self) -> bool {
@@ -9983,6 +10030,7 @@ impl ::core::default::Default for PARAFORMAT_ALIGNMENT {
 }
 unsafe impl ::windows::core::Abi for PARAFORMAT_ALIGNMENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PARAFORMAT_ALIGNMENT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10020,6 +10068,7 @@ impl ::core::default::Default for PARAFORMAT_BORDERS {
 }
 unsafe impl ::windows::core::Abi for PARAFORMAT_BORDERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PARAFORMAT_BORDERS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10087,6 +10136,7 @@ impl ::core::default::Default for PARAFORMAT_MASK {
 }
 unsafe impl ::windows::core::Abi for PARAFORMAT_MASK {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PARAFORMAT_MASK {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10150,6 +10200,7 @@ impl ::core::default::Default for PARAFORMAT_NUMBERING_STYLE {
 }
 unsafe impl ::windows::core::Abi for PARAFORMAT_NUMBERING_STYLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PARAFORMAT_NUMBERING_STYLE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10199,6 +10250,7 @@ impl ::core::default::Default for PARAFORMAT_SHADING_STYLE {
 }
 unsafe impl ::windows::core::Abi for PARAFORMAT_SHADING_STYLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PARAFORMAT_SHADING_STYLE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10301,6 +10353,7 @@ impl ::core::clone::Clone for PUNCTUATION {
 }
 unsafe impl ::windows::core::Abi for PUNCTUATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PUNCTUATION {
     fn eq(&self, other: &Self) -> bool {
@@ -10364,6 +10417,7 @@ impl ::core::fmt::Debug for REOBJECT {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com_StructuredStorage", feature = "Win32_System_Ole"))]
 unsafe impl ::windows::core::Abi for REOBJECT {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com_StructuredStorage", feature = "Win32_System_Ole"))]
 impl ::core::cmp::PartialEq for REOBJECT {
@@ -10434,6 +10488,7 @@ impl ::core::default::Default for REOBJECT_FLAGS {
 }
 unsafe impl ::windows::core::Abi for REOBJECT_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for REOBJECT_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10490,6 +10545,7 @@ impl ::core::clone::Clone for REPASTESPECIAL {
 #[cfg(feature = "Win32_System_Com")]
 unsafe impl ::windows::core::Abi for REPASTESPECIAL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for REPASTESPECIAL {
@@ -10523,6 +10579,7 @@ impl ::core::clone::Clone for REQRESIZE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for REQRESIZE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for REQRESIZE {
@@ -10562,6 +10619,7 @@ pub struct RICHEDIT_IMAGE_PARAMETERS {
 #[cfg(all(feature = "Win32_Graphics_Gdi", feature = "Win32_System_Com"))]
 unsafe impl ::windows::core::Abi for RICHEDIT_IMAGE_PARAMETERS {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Graphics_Gdi", feature = "Win32_System_Com"))]
 impl ::core::cmp::PartialEq for RICHEDIT_IMAGE_PARAMETERS {
@@ -10606,6 +10664,7 @@ impl ::core::default::Default for RICH_EDIT_GET_CONTEXT_MENU_SEL_TYPE {
 }
 unsafe impl ::windows::core::Abi for RICH_EDIT_GET_CONTEXT_MENU_SEL_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RICH_EDIT_GET_CONTEXT_MENU_SEL_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10667,6 +10726,7 @@ impl ::core::default::Default for RICH_EDIT_GET_OBJECT_FLAGS {
 }
 unsafe impl ::windows::core::Abi for RICH_EDIT_GET_OBJECT_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RICH_EDIT_GET_OBJECT_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10746,6 +10806,7 @@ impl ::core::clone::Clone for SELCHANGE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SELCHANGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for SELCHANGE {
@@ -10866,6 +10927,7 @@ impl ::core::fmt::Debug for SETTEXTEX {
 }
 unsafe impl ::windows::core::Abi for SETTEXTEX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SETTEXTEX {
     fn eq(&self, other: &Self) -> bool {
@@ -10966,6 +11028,7 @@ impl ::core::fmt::Debug for TABLECELLPARMS {
 }
 unsafe impl ::windows::core::Abi for TABLECELLPARMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TABLECELLPARMS {
     fn eq(&self, other: &Self) -> bool {
@@ -11006,6 +11069,7 @@ impl ::core::fmt::Debug for TABLEROWPARMS {
 }
 unsafe impl ::windows::core::Abi for TABLEROWPARMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TABLEROWPARMS {
     fn eq(&self, other: &Self) -> bool {
@@ -11047,6 +11111,7 @@ impl ::core::default::Default for TEXTMODE {
 }
 unsafe impl ::windows::core::Abi for TEXTMODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TEXTMODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11067,6 +11132,7 @@ impl ::core::clone::Clone for TEXTRANGEA {
 }
 unsafe impl ::windows::core::Abi for TEXTRANGEA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TEXTRANGEA {
     fn eq(&self, other: &Self) -> bool {
@@ -11093,6 +11159,7 @@ impl ::core::clone::Clone for TEXTRANGEW {
 }
 unsafe impl ::windows::core::Abi for TEXTRANGEW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TEXTRANGEW {
     fn eq(&self, other: &Self) -> bool {
@@ -11136,6 +11203,7 @@ impl ::core::default::Default for TXTBACKSTYLE {
 }
 unsafe impl ::windows::core::Abi for TXTBACKSTYLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TXTBACKSTYLE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11227,6 +11295,7 @@ impl ::core::default::Default for TXTHITRESULT {
 }
 unsafe impl ::windows::core::Abi for TXTHITRESULT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TXTHITRESULT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11264,6 +11333,7 @@ impl ::core::default::Default for TXTNATURALSIZE {
 }
 unsafe impl ::windows::core::Abi for TXTNATURALSIZE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TXTNATURALSIZE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11291,6 +11361,7 @@ impl ::core::default::Default for TXTVIEW {
 }
 unsafe impl ::windows::core::Abi for TXTVIEW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TXTVIEW {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11328,6 +11399,7 @@ impl ::core::default::Default for UNDONAMEID {
 }
 unsafe impl ::windows::core::Abi for UNDONAMEID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UNDONAMEID {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11378,6 +11450,7 @@ impl ::core::clone::Clone for _grouptypingchange {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for _grouptypingchange {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for _grouptypingchange {
@@ -11415,6 +11488,7 @@ impl ::core::fmt::Debug for hyphresult {
 }
 unsafe impl ::windows::core::Abi for hyphresult {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for hyphresult {
     fn eq(&self, other: &Self) -> bool {
@@ -12614,6 +12688,7 @@ impl ::core::default::Default for tomConstants {
 }
 unsafe impl ::windows::core::Abi for tomConstants {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for tomConstants {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

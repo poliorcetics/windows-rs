@@ -2,6 +2,11 @@
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IXamlDirect(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXamlDirect {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IXamlDirect {
     type Vtable = IXamlDirect_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x5ffa1295_add2_590f_a051_70989b866ade);
@@ -114,6 +119,11 @@ pub struct IXamlDirect_Vtbl {
 #[doc = "*Required features: `\"UI_Xaml_Core_Direct\"`*"]
 #[repr(transparent)]
 pub struct IXamlDirectObject(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXamlDirectObject {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXamlDirectObject {}
 impl ::core::convert::From<IXamlDirectObject> for ::windows::core::IUnknown {
     fn from(value: IXamlDirectObject) -> Self {
@@ -155,11 +165,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXamlDirectObject {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXamlDirectObject {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -173,7 +178,6 @@ impl ::core::fmt::Debug for IXamlDirectObject {
 }
 unsafe impl ::windows::core::RuntimeType for IXamlDirectObject {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{10614a82-cee4-4645-ba25-d071ce778355}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -190,6 +194,11 @@ pub struct IXamlDirectObject_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IXamlDirectStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXamlDirectStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IXamlDirectStatics {
     type Vtable = IXamlDirectStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x321887cc_14e4_5c6f_878d_fbb604ad7d17);
@@ -568,11 +577,6 @@ impl XamlDirect {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for XamlDirect {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for XamlDirect {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -586,7 +590,6 @@ impl ::core::fmt::Debug for XamlDirect {
 }
 unsafe impl ::windows::core::RuntimeType for XamlDirect {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Core.Direct.XamlDirect;{5ffa1295-add2-590f-a051-70989b866ade})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -797,6 +800,7 @@ impl ::core::default::Default for XamlEventIndex {
 }
 unsafe impl ::windows::core::Abi for XamlEventIndex {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for XamlEventIndex {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -805,7 +809,6 @@ impl ::core::fmt::Debug for XamlEventIndex {
 }
 unsafe impl ::windows::core::RuntimeType for XamlEventIndex {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Xaml.Core.Direct.XamlEventIndex;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2498,6 +2501,7 @@ impl ::core::default::Default for XamlPropertyIndex {
 }
 unsafe impl ::windows::core::Abi for XamlPropertyIndex {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for XamlPropertyIndex {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2506,7 +2510,6 @@ impl ::core::fmt::Debug for XamlPropertyIndex {
 }
 unsafe impl ::windows::core::RuntimeType for XamlPropertyIndex {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Xaml.Core.Direct.XamlPropertyIndex;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2780,6 +2783,7 @@ impl ::core::default::Default for XamlTypeIndex {
 }
 unsafe impl ::windows::core::Abi for XamlTypeIndex {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for XamlTypeIndex {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2788,7 +2792,6 @@ impl ::core::fmt::Debug for XamlTypeIndex {
 }
 unsafe impl ::windows::core::RuntimeType for XamlTypeIndex {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Xaml.Core.Direct.XamlTypeIndex;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }

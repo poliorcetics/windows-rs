@@ -39,6 +39,7 @@ impl ::core::default::Default for AutoPathFormat {
 }
 unsafe impl ::windows::core::Abi for AutoPathFormat {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AutoPathFormat {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -86,6 +87,7 @@ impl ::core::default::Default for ClockType {
 }
 unsafe impl ::windows::core::Abi for ClockType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ClockType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -121,6 +123,7 @@ impl ::core::default::Default for CommitMode {
 }
 unsafe impl ::windows::core::Abi for CommitMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CommitMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -137,6 +140,12 @@ pub const Counters: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct DICounterItem(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for DICounterItem {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl DICounterItem {}
 #[cfg(feature = "Win32_System_Com")]
@@ -188,12 +197,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a DICounter
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for DICounterItem {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for DICounterItem {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -227,6 +230,12 @@ pub const DIID_DISystemMonitorInternal: ::windows::core::GUID = ::windows::core:
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct DILogFileItem(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for DILogFileItem {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl DILogFileItem {}
 #[cfg(feature = "Win32_System_Com")]
@@ -278,12 +287,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a DILogFile
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for DILogFileItem {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for DILogFileItem {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -312,6 +315,12 @@ pub struct DILogFileItem_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct DISystemMonitor(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for DISystemMonitor {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl DISystemMonitor {}
 #[cfg(feature = "Win32_System_Com")]
@@ -363,12 +372,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a DISystemM
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for DISystemMonitor {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for DISystemMonitor {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -397,6 +400,12 @@ pub struct DISystemMonitor_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct DISystemMonitorEvents(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for DISystemMonitorEvents {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl DISystemMonitorEvents {}
 #[cfg(feature = "Win32_System_Com")]
@@ -448,12 +457,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a DISystemM
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for DISystemMonitorEvents {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for DISystemMonitorEvents {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -482,6 +485,12 @@ pub struct DISystemMonitorEvents_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct DISystemMonitorInternal(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for DISystemMonitorInternal {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl DISystemMonitorInternal {}
 #[cfg(feature = "Win32_System_Com")]
@@ -530,12 +539,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for DISystemMonit
 impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a DISystemMonitorInternal {
     fn into_param(self) -> ::windows::core::Param<'a, super::Com::IDispatch> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for DISystemMonitorInternal {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 #[cfg(feature = "Win32_System_Com")]
@@ -592,6 +595,7 @@ impl ::core::default::Default for DataCollectorSetStatus {
 }
 unsafe impl ::windows::core::Abi for DataCollectorSetStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DataCollectorSetStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -625,6 +629,7 @@ impl ::core::default::Default for DataCollectorType {
 }
 unsafe impl ::windows::core::Abi for DataCollectorType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DataCollectorType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -658,6 +663,7 @@ impl ::core::default::Default for DataManagerSteps {
 }
 unsafe impl ::windows::core::Abi for DataManagerSteps {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DataManagerSteps {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -689,6 +695,7 @@ impl ::core::default::Default for DataSourceTypeConstants {
 }
 unsafe impl ::windows::core::Abi for DataSourceTypeConstants {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DataSourceTypeConstants {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -722,6 +729,7 @@ impl ::core::default::Default for DisplayTypeConstants {
 }
 unsafe impl ::windows::core::Abi for DisplayTypeConstants {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DisplayTypeConstants {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -753,6 +761,7 @@ impl ::core::default::Default for FileFormat {
 }
 unsafe impl ::windows::core::Abi for FileFormat {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FileFormat {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -786,6 +795,7 @@ impl ::core::default::Default for FolderActionSteps {
 }
 unsafe impl ::windows::core::Abi for FolderActionSteps {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FolderActionSteps {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -800,6 +810,12 @@ pub const H_WBEM_DATASOURCE: i32 = -1i32;
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IAlertDataCollector(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IAlertDataCollector {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IAlertDataCollector {
     #[doc = "*Required features: `\"Win32_System_Performance\"`, `\"Win32_System_Com\"`*"]
@@ -1087,12 +1103,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDataCollector> for &'a IAlertDataCollec
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IAlertDataCollector {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IAlertDataCollector {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1167,6 +1177,12 @@ pub struct IAlertDataCollector_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IApiTracingDataCollector(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IApiTracingDataCollector {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IApiTracingDataCollector {
     #[doc = "*Required features: `\"Win32_System_Performance\"`, `\"Win32_System_Com\"`*"]
@@ -1445,12 +1461,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDataCollector> for &'a IApiTracingDataC
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IApiTracingDataCollector {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IApiTracingDataCollector {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1523,6 +1533,12 @@ pub struct IApiTracingDataCollector_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IConfigurationDataCollector(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IConfigurationDataCollector {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IConfigurationDataCollector {
     #[doc = "*Required features: `\"Win32_System_Performance\"`, `\"Win32_System_Com\"`*"]
@@ -1817,12 +1833,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDataCollector> for &'a IConfigurationDa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IConfigurationDataCollector {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IConfigurationDataCollector {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1892,6 +1902,11 @@ pub struct IConfigurationDataCollector_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Performance\"`*"]
 #[repr(transparent)]
 pub struct ICounterItem(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICounterItem {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ICounterItem {
     #[doc = "*Required features: `\"Win32_System_Performance\"`*"]
     pub unsafe fn Value(&self) -> ::windows::core::Result<f64> {
@@ -1969,11 +1984,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ICoun
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ICounterItem {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ICounterItem {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2012,6 +2022,11 @@ pub struct ICounterItem_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Performance\"`*"]
 #[repr(transparent)]
 pub struct ICounterItem2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICounterItem2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ICounterItem2 {
     #[doc = "*Required features: `\"Win32_System_Performance\"`*"]
     pub unsafe fn Value(&self) -> ::windows::core::Result<f64> {
@@ -2133,11 +2148,6 @@ impl<'a> ::windows::core::IntoParam<'a, ICounterItem> for &'a ICounterItem2 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ICounterItem2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ICounterItem2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2170,6 +2180,12 @@ pub struct ICounterItem2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ICounters(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ICounters {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ICounters {
     #[doc = "*Required features: `\"Win32_System_Performance\"`*"]
@@ -2249,12 +2265,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a ICounters
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ICounters {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ICounters {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2297,6 +2307,12 @@ pub struct ICounters_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IDataCollector(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IDataCollector {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IDataCollector {
     #[doc = "*Required features: `\"Win32_System_Performance\"`, `\"Win32_System_Com\"`*"]
@@ -2478,12 +2494,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IDataColl
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IDataCollector {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IDataCollector {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2579,6 +2589,12 @@ pub struct IDataCollector_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IDataCollectorCollection(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IDataCollectorCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IDataCollectorCollection {
     #[doc = "*Required features: `\"Win32_System_Performance\"`*"]
@@ -2677,12 +2693,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IDataColl
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IDataCollectorCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IDataCollectorCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2738,6 +2748,12 @@ pub struct IDataCollectorCollection_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IDataCollectorSet(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IDataCollectorSet {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IDataCollectorSet {
     #[doc = "*Required features: `\"Win32_System_Performance\"`, `\"Win32_System_Com\"`*"]
@@ -3102,12 +3118,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IDataColl
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IDataCollectorSet {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IDataCollectorSet {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3311,6 +3321,12 @@ pub struct IDataCollectorSet_Vtbl {
 #[repr(transparent)]
 pub struct IDataCollectorSetCollection(::windows::core::IUnknown);
 #[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IDataCollectorSetCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "Win32_System_Com")]
 impl IDataCollectorSetCollection {
     #[doc = "*Required features: `\"Win32_System_Performance\"`*"]
     pub unsafe fn Count(&self) -> ::windows::core::Result<i32> {
@@ -3402,12 +3418,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IDataColl
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IDataCollectorSetCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IDataCollectorSetCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3459,6 +3469,12 @@ pub struct IDataCollectorSetCollection_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IDataManager(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IDataManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IDataManager {
     #[doc = "*Required features: `\"Win32_System_Performance\"`*"]
@@ -3637,12 +3653,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IDataMana
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IDataManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IDataManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3736,6 +3746,12 @@ pub struct IDataManager_Vtbl {
 #[repr(transparent)]
 pub struct IFolderAction(::windows::core::IUnknown);
 #[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFolderAction {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "Win32_System_Com")]
 impl IFolderAction {
     #[doc = "*Required features: `\"Win32_System_Performance\"`*"]
     pub unsafe fn Age(&self) -> ::windows::core::Result<u32> {
@@ -3825,12 +3841,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IFolderAc
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFolderAction {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFolderAction {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3873,6 +3883,12 @@ pub struct IFolderAction_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFolderActionCollection(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFolderActionCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFolderActionCollection {
     #[doc = "*Required features: `\"Win32_System_Performance\"`*"]
@@ -3966,12 +3982,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IFolderAc
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFolderActionCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFolderActionCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4022,6 +4032,11 @@ pub struct IFolderActionCollection_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Performance\"`*"]
 #[repr(transparent)]
 pub struct ILogFileItem(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILogFileItem {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ILogFileItem {
     #[doc = "*Required features: `\"Win32_System_Performance\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -4048,11 +4063,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for ILogFileI
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ILogFileItem {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for ILogFileItem {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for ILogFileItem {
@@ -4083,6 +4093,12 @@ pub struct ILogFileItem_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ILogFiles(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ILogFiles {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ILogFiles {
     #[doc = "*Required features: `\"Win32_System_Performance\"`*"]
@@ -4162,12 +4178,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a ILogFiles
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ILogFiles {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ILogFiles {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4210,6 +4220,12 @@ pub struct ILogFiles_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IPerformanceCounterDataCollector(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IPerformanceCounterDataCollector {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IPerformanceCounterDataCollector {
     #[doc = "*Required features: `\"Win32_System_Performance\"`, `\"Win32_System_Com\"`*"]
@@ -4464,12 +4480,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDataCollector> for &'a IPerformanceCoun
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IPerformanceCounterDataCollector {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IPerformanceCounterDataCollector {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4520,6 +4530,12 @@ pub struct IPerformanceCounterDataCollector_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ISchedule(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ISchedule {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ISchedule {
     #[doc = "*Required features: `\"Win32_System_Performance\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
@@ -4614,12 +4630,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a ISchedule
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ISchedule {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ISchedule {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4674,6 +4684,12 @@ pub struct ISchedule_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IScheduleCollection(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IScheduleCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IScheduleCollection {
     #[doc = "*Required features: `\"Win32_System_Performance\"`*"]
@@ -4767,12 +4783,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a ISchedule
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IScheduleCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IScheduleCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4823,6 +4833,11 @@ pub struct IScheduleCollection_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Performance\"`*"]
 #[repr(transparent)]
 pub struct ISystemMonitor(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISystemMonitor {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISystemMonitor {
     #[doc = "*Required features: `\"Win32_System_Performance\"`*"]
     pub unsafe fn Appearance(&self) -> ::windows::core::Result<i32> {
@@ -5200,11 +5215,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISyst
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISystemMonitor {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISystemMonitor {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5349,6 +5359,11 @@ pub struct ISystemMonitor_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Performance\"`*"]
 #[repr(transparent)]
 pub struct ISystemMonitor2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISystemMonitor2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISystemMonitor2 {
     #[doc = "*Required features: `\"Win32_System_Performance\"`*"]
     pub unsafe fn Appearance(&self) -> ::windows::core::Result<i32> {
@@ -5836,11 +5851,6 @@ impl<'a> ::windows::core::IntoParam<'a, ISystemMonitor> for &'a ISystemMonitor2 
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISystemMonitor2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISystemMonitor2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5893,6 +5903,11 @@ pub struct ISystemMonitor2_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Performance\"`*"]
 #[repr(transparent)]
 pub struct ISystemMonitorEvents(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISystemMonitorEvents {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISystemMonitorEvents {
     #[doc = "*Required features: `\"Win32_System_Performance\"`*"]
     pub unsafe fn OnCounterSelected(&self, index: i32) {
@@ -5935,11 +5950,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISyst
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISystemMonitorEvents {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISystemMonitorEvents {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5969,6 +5979,12 @@ pub struct ISystemMonitorEvents_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITraceDataCollector(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITraceDataCollector {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITraceDataCollector {
     #[doc = "*Required features: `\"Win32_System_Performance\"`, `\"Win32_System_Com\"`*"]
@@ -6358,12 +6374,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDataCollector> for &'a ITraceDataCollec
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITraceDataCollector {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITraceDataCollector {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6441,6 +6451,12 @@ pub struct ITraceDataCollector_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITraceDataProvider(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITraceDataProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITraceDataProvider {
     #[doc = "*Required features: `\"Win32_System_Performance\"`, `\"Win32_Foundation\"`*"]
@@ -6593,12 +6609,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a ITraceDat
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITraceDataProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITraceDataProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6685,6 +6695,12 @@ pub struct ITraceDataProvider_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITraceDataProviderCollection(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITraceDataProviderCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITraceDataProviderCollection {
     #[doc = "*Required features: `\"Win32_System_Performance\"`*"]
@@ -6788,12 +6804,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a ITraceDat
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITraceDataProviderCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITraceDataProviderCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6853,6 +6863,12 @@ pub struct ITraceDataProviderCollection_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IValueMap(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IValueMap {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IValueMap {
     #[doc = "*Required features: `\"Win32_System_Performance\"`*"]
@@ -6977,12 +6993,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IValueMap
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IValueMap {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IValueMap {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7052,6 +7062,12 @@ pub struct IValueMap_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IValueMapItem(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IValueMapItem {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IValueMapItem {
     #[doc = "*Required features: `\"Win32_System_Performance\"`, `\"Win32_Foundation\"`*"]
@@ -7152,12 +7168,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for IValueMapItem
 impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IValueMapItem {
     fn into_param(self) -> ::windows::core::Param<'a, super::Com::IDispatch> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IValueMapItem {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 #[cfg(feature = "Win32_System_Com")]
@@ -7331,6 +7341,7 @@ impl ::core::fmt::Debug for PDH_BROWSE_DLG_CONFIG_A {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PDH_BROWSE_DLG_CONFIG_A {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for PDH_BROWSE_DLG_CONFIG_A {
@@ -7389,6 +7400,7 @@ impl ::core::fmt::Debug for PDH_BROWSE_DLG_CONFIG_HA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PDH_BROWSE_DLG_CONFIG_HA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for PDH_BROWSE_DLG_CONFIG_HA {
@@ -7447,6 +7459,7 @@ impl ::core::fmt::Debug for PDH_BROWSE_DLG_CONFIG_HW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PDH_BROWSE_DLG_CONFIG_HW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for PDH_BROWSE_DLG_CONFIG_HW {
@@ -7505,6 +7518,7 @@ impl ::core::fmt::Debug for PDH_BROWSE_DLG_CONFIG_W {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PDH_BROWSE_DLG_CONFIG_W {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for PDH_BROWSE_DLG_CONFIG_W {
@@ -7560,6 +7574,7 @@ impl ::core::clone::Clone for PDH_COUNTER_INFO_A {
 }
 unsafe impl ::windows::core::Abi for PDH_COUNTER_INFO_A {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PDH_COUNTER_INFO_A {
     fn eq(&self, other: &Self) -> bool {
@@ -7587,6 +7602,7 @@ impl ::core::clone::Clone for PDH_COUNTER_INFO_A_0 {
 }
 unsafe impl ::windows::core::Abi for PDH_COUNTER_INFO_A_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PDH_COUNTER_INFO_A_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -7622,6 +7638,7 @@ impl ::core::fmt::Debug for PDH_COUNTER_INFO_A_0_0 {
 }
 unsafe impl ::windows::core::Abi for PDH_COUNTER_INFO_A_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PDH_COUNTER_INFO_A_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -7658,6 +7675,7 @@ impl ::core::clone::Clone for PDH_COUNTER_INFO_W {
 }
 unsafe impl ::windows::core::Abi for PDH_COUNTER_INFO_W {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PDH_COUNTER_INFO_W {
     fn eq(&self, other: &Self) -> bool {
@@ -7685,6 +7703,7 @@ impl ::core::clone::Clone for PDH_COUNTER_INFO_W_0 {
 }
 unsafe impl ::windows::core::Abi for PDH_COUNTER_INFO_W_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PDH_COUNTER_INFO_W_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -7720,6 +7739,7 @@ impl ::core::fmt::Debug for PDH_COUNTER_INFO_W_0_0 {
 }
 unsafe impl ::windows::core::Abi for PDH_COUNTER_INFO_W_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PDH_COUNTER_INFO_W_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -7755,6 +7775,7 @@ impl ::core::fmt::Debug for PDH_COUNTER_PATH_ELEMENTS_A {
 }
 unsafe impl ::windows::core::Abi for PDH_COUNTER_PATH_ELEMENTS_A {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PDH_COUNTER_PATH_ELEMENTS_A {
     fn eq(&self, other: &Self) -> bool {
@@ -7790,6 +7811,7 @@ impl ::core::fmt::Debug for PDH_COUNTER_PATH_ELEMENTS_W {
 }
 unsafe impl ::windows::core::Abi for PDH_COUNTER_PATH_ELEMENTS_W {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PDH_COUNTER_PATH_ELEMENTS_W {
     fn eq(&self, other: &Self) -> bool {
@@ -7843,6 +7865,7 @@ impl ::core::fmt::Debug for PDH_DATA_ITEM_PATH_ELEMENTS_A {
 }
 unsafe impl ::windows::core::Abi for PDH_DATA_ITEM_PATH_ELEMENTS_A {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PDH_DATA_ITEM_PATH_ELEMENTS_A {
     fn eq(&self, other: &Self) -> bool {
@@ -7876,6 +7899,7 @@ impl ::core::fmt::Debug for PDH_DATA_ITEM_PATH_ELEMENTS_W {
 }
 unsafe impl ::windows::core::Abi for PDH_DATA_ITEM_PATH_ELEMENTS_W {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PDH_DATA_ITEM_PATH_ELEMENTS_W {
     fn eq(&self, other: &Self) -> bool {
@@ -7915,6 +7939,7 @@ impl ::core::default::Default for PDH_DLL_VERSION {
 }
 unsafe impl ::windows::core::Abi for PDH_DLL_VERSION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PDH_DLL_VERSION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7952,6 +7977,7 @@ impl ::core::default::Default for PDH_FMT {
 }
 unsafe impl ::windows::core::Abi for PDH_FMT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PDH_FMT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7972,6 +7998,7 @@ impl ::core::clone::Clone for PDH_FMT_COUNTERVALUE {
 }
 unsafe impl ::windows::core::Abi for PDH_FMT_COUNTERVALUE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PDH_FMT_COUNTERVALUE {
     fn eq(&self, other: &Self) -> bool {
@@ -8001,6 +8028,7 @@ impl ::core::clone::Clone for PDH_FMT_COUNTERVALUE_0 {
 }
 unsafe impl ::windows::core::Abi for PDH_FMT_COUNTERVALUE_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PDH_FMT_COUNTERVALUE_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -8027,6 +8055,7 @@ impl ::core::clone::Clone for PDH_FMT_COUNTERVALUE_ITEM_A {
 }
 unsafe impl ::windows::core::Abi for PDH_FMT_COUNTERVALUE_ITEM_A {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PDH_FMT_COUNTERVALUE_ITEM_A {
     fn eq(&self, other: &Self) -> bool {
@@ -8053,6 +8082,7 @@ impl ::core::clone::Clone for PDH_FMT_COUNTERVALUE_ITEM_W {
 }
 unsafe impl ::windows::core::Abi for PDH_FMT_COUNTERVALUE_ITEM_W {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PDH_FMT_COUNTERVALUE_ITEM_W {
     fn eq(&self, other: &Self) -> bool {
@@ -8112,6 +8142,7 @@ impl ::core::default::Default for PDH_LOG {
 }
 unsafe impl ::windows::core::Abi for PDH_LOG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PDH_LOG {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8155,6 +8186,7 @@ impl ::core::clone::Clone for PDH_LOG_SERVICE_QUERY_INFO_A {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PDH_LOG_SERVICE_QUERY_INFO_A {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for PDH_LOG_SERVICE_QUERY_INFO_A {
@@ -8188,6 +8220,7 @@ impl ::core::clone::Clone for PDH_LOG_SERVICE_QUERY_INFO_A_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PDH_LOG_SERVICE_QUERY_INFO_A_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for PDH_LOG_SERVICE_QUERY_INFO_A_0 {
@@ -8233,6 +8266,7 @@ impl ::core::fmt::Debug for PDH_LOG_SERVICE_QUERY_INFO_A_0_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PDH_LOG_SERVICE_QUERY_INFO_A_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for PDH_LOG_SERVICE_QUERY_INFO_A_0_0 {
@@ -8291,6 +8325,7 @@ impl ::core::fmt::Debug for PDH_LOG_SERVICE_QUERY_INFO_A_0_1 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PDH_LOG_SERVICE_QUERY_INFO_A_0_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for PDH_LOG_SERVICE_QUERY_INFO_A_0_1 {
@@ -8331,6 +8366,7 @@ impl ::core::clone::Clone for PDH_LOG_SERVICE_QUERY_INFO_W {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PDH_LOG_SERVICE_QUERY_INFO_W {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for PDH_LOG_SERVICE_QUERY_INFO_W {
@@ -8364,6 +8400,7 @@ impl ::core::clone::Clone for PDH_LOG_SERVICE_QUERY_INFO_W_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PDH_LOG_SERVICE_QUERY_INFO_W_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for PDH_LOG_SERVICE_QUERY_INFO_W_0 {
@@ -8409,6 +8446,7 @@ impl ::core::fmt::Debug for PDH_LOG_SERVICE_QUERY_INFO_W_0_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PDH_LOG_SERVICE_QUERY_INFO_W_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for PDH_LOG_SERVICE_QUERY_INFO_W_0_0 {
@@ -8467,6 +8505,7 @@ impl ::core::fmt::Debug for PDH_LOG_SERVICE_QUERY_INFO_W_0_1 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PDH_LOG_SERVICE_QUERY_INFO_W_0_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for PDH_LOG_SERVICE_QUERY_INFO_W_0_1 {
@@ -8511,6 +8550,7 @@ impl ::core::default::Default for PDH_LOG_TYPE {
 }
 unsafe impl ::windows::core::Abi for PDH_LOG_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PDH_LOG_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8582,6 +8622,7 @@ impl ::core::default::Default for PDH_PATH_FLAGS {
 }
 unsafe impl ::windows::core::Abi for PDH_PATH_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PDH_PATH_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8641,6 +8682,7 @@ impl ::core::fmt::Debug for PDH_RAW_COUNTER {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PDH_RAW_COUNTER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for PDH_RAW_COUNTER {
@@ -8680,6 +8722,7 @@ impl ::core::fmt::Debug for PDH_RAW_COUNTER_ITEM_A {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PDH_RAW_COUNTER_ITEM_A {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for PDH_RAW_COUNTER_ITEM_A {
@@ -8719,6 +8762,7 @@ impl ::core::fmt::Debug for PDH_RAW_COUNTER_ITEM_W {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PDH_RAW_COUNTER_ITEM_W {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for PDH_RAW_COUNTER_ITEM_W {
@@ -8755,6 +8799,7 @@ impl ::core::fmt::Debug for PDH_RAW_LOG_RECORD {
 }
 unsafe impl ::windows::core::Abi for PDH_RAW_LOG_RECORD {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PDH_RAW_LOG_RECORD {
     fn eq(&self, other: &Self) -> bool {
@@ -8792,6 +8837,7 @@ impl ::core::default::Default for PDH_SELECT_DATA_SOURCE_FLAGS {
 }
 unsafe impl ::windows::core::Abi for PDH_SELECT_DATA_SOURCE_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PDH_SELECT_DATA_SOURCE_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8833,6 +8879,7 @@ impl ::core::clone::Clone for PDH_STATISTICS {
 }
 unsafe impl ::windows::core::Abi for PDH_STATISTICS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PDH_STATISTICS {
     fn eq(&self, other: &Self) -> bool {
@@ -8867,6 +8914,7 @@ impl ::core::fmt::Debug for PDH_TIME_INFO {
 }
 unsafe impl ::windows::core::Abi for PDH_TIME_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PDH_TIME_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -8942,6 +8990,7 @@ impl ::core::fmt::Debug for PERF_COUNTERSET_INFO {
 }
 unsafe impl ::windows::core::Abi for PERF_COUNTERSET_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PERF_COUNTERSET_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -8976,6 +9025,7 @@ impl ::core::fmt::Debug for PERF_COUNTERSET_INSTANCE {
 }
 unsafe impl ::windows::core::Abi for PERF_COUNTERSET_INSTANCE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PERF_COUNTERSET_INSTANCE {
     fn eq(&self, other: &Self) -> bool {
@@ -9012,6 +9062,7 @@ impl ::core::fmt::Debug for PERF_COUNTERSET_REG_INFO {
 }
 unsafe impl ::windows::core::Abi for PERF_COUNTERSET_REG_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PERF_COUNTERSET_REG_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -9053,6 +9104,7 @@ impl ::core::default::Default for PERF_COUNTER_AGGREGATE_FUNC {
 }
 unsafe impl ::windows::core::Abi for PERF_COUNTER_AGGREGATE_FUNC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PERF_COUNTER_AGGREGATE_FUNC {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9079,6 +9131,7 @@ impl ::core::fmt::Debug for PERF_COUNTER_BLOCK {
 }
 unsafe impl ::windows::core::Abi for PERF_COUNTER_BLOCK {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PERF_COUNTER_BLOCK {
     fn eq(&self, other: &Self) -> bool {
@@ -9110,6 +9163,7 @@ impl ::core::fmt::Debug for PERF_COUNTER_DATA {
 }
 unsafe impl ::windows::core::Abi for PERF_COUNTER_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PERF_COUNTER_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -9165,6 +9219,7 @@ impl ::core::fmt::Debug for PERF_COUNTER_DEFINITION {
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 unsafe impl ::windows::core::Abi for PERF_COUNTER_DEFINITION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 impl ::core::cmp::PartialEq for PERF_COUNTER_DEFINITION {
@@ -9223,6 +9278,7 @@ impl ::core::fmt::Debug for PERF_COUNTER_DEFINITION {
 #[cfg(target_arch = "x86")]
 unsafe impl ::windows::core::Abi for PERF_COUNTER_DEFINITION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 impl ::core::cmp::PartialEq for PERF_COUNTER_DEFINITION {
@@ -9263,6 +9319,7 @@ impl ::core::fmt::Debug for PERF_COUNTER_HEADER {
 }
 unsafe impl ::windows::core::Abi for PERF_COUNTER_HEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PERF_COUNTER_HEADER {
     fn eq(&self, other: &Self) -> bool {
@@ -9303,6 +9360,7 @@ impl ::core::fmt::Debug for PERF_COUNTER_IDENTIFIER {
 }
 unsafe impl ::windows::core::Abi for PERF_COUNTER_IDENTIFIER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PERF_COUNTER_IDENTIFIER {
     fn eq(&self, other: &Self) -> bool {
@@ -9339,6 +9397,7 @@ impl ::core::fmt::Debug for PERF_COUNTER_IDENTITY {
 }
 unsafe impl ::windows::core::Abi for PERF_COUNTER_IDENTITY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PERF_COUNTER_IDENTITY {
     fn eq(&self, other: &Self) -> bool {
@@ -9375,6 +9434,7 @@ impl ::core::fmt::Debug for PERF_COUNTER_INFO {
 }
 unsafe impl ::windows::core::Abi for PERF_COUNTER_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PERF_COUNTER_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -9421,6 +9481,7 @@ impl ::core::fmt::Debug for PERF_COUNTER_REG_INFO {
 }
 unsafe impl ::windows::core::Abi for PERF_COUNTER_REG_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PERF_COUNTER_REG_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -9486,6 +9547,7 @@ impl ::core::fmt::Debug for PERF_DATA_BLOCK {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PERF_DATA_BLOCK {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for PERF_DATA_BLOCK {
@@ -9529,6 +9591,7 @@ impl ::core::fmt::Debug for PERF_DATA_HEADER {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PERF_DATA_HEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for PERF_DATA_HEADER {
@@ -9577,6 +9640,7 @@ impl ::core::default::Default for PERF_DETAIL {
 }
 unsafe impl ::windows::core::Abi for PERF_DETAIL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PERF_DETAIL {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9620,6 +9684,7 @@ impl ::core::fmt::Debug for PERF_INSTANCE_DEFINITION {
 }
 unsafe impl ::windows::core::Abi for PERF_INSTANCE_DEFINITION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PERF_INSTANCE_DEFINITION {
     fn eq(&self, other: &Self) -> bool {
@@ -9651,6 +9716,7 @@ impl ::core::fmt::Debug for PERF_INSTANCE_HEADER {
 }
 unsafe impl ::windows::core::Abi for PERF_INSTANCE_HEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PERF_INSTANCE_HEADER {
     fn eq(&self, other: &Self) -> bool {
@@ -9696,6 +9762,7 @@ impl ::core::fmt::Debug for PERF_MULTI_COUNTERS {
 }
 unsafe impl ::windows::core::Abi for PERF_MULTI_COUNTERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PERF_MULTI_COUNTERS {
     fn eq(&self, other: &Self) -> bool {
@@ -9727,6 +9794,7 @@ impl ::core::fmt::Debug for PERF_MULTI_INSTANCES {
 }
 unsafe impl ::windows::core::Abi for PERF_MULTI_INSTANCES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PERF_MULTI_INSTANCES {
     fn eq(&self, other: &Self) -> bool {
@@ -9802,6 +9870,7 @@ impl ::core::fmt::Debug for PERF_OBJECT_TYPE {
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 unsafe impl ::windows::core::Abi for PERF_OBJECT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 impl ::core::cmp::PartialEq for PERF_OBJECT_TYPE {
@@ -9868,6 +9937,7 @@ impl ::core::fmt::Debug for PERF_OBJECT_TYPE {
 #[cfg(target_arch = "x86")]
 unsafe impl ::windows::core::Abi for PERF_OBJECT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 impl ::core::cmp::PartialEq for PERF_OBJECT_TYPE {
@@ -9906,6 +9976,7 @@ impl ::core::fmt::Debug for PERF_PROVIDER_CONTEXT {
 }
 unsafe impl ::windows::core::Abi for PERF_PROVIDER_CONTEXT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PERF_PROVIDER_CONTEXT {
     fn eq(&self, other: &Self) -> bool {
@@ -9953,6 +10024,7 @@ impl ::core::fmt::Debug for PERF_STRING_BUFFER_HEADER {
 }
 unsafe impl ::windows::core::Abi for PERF_STRING_BUFFER_HEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PERF_STRING_BUFFER_HEADER {
     fn eq(&self, other: &Self) -> bool {
@@ -9984,6 +10056,7 @@ impl ::core::fmt::Debug for PERF_STRING_COUNTER_HEADER {
 }
 unsafe impl ::windows::core::Abi for PERF_STRING_COUNTER_HEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PERF_STRING_COUNTER_HEADER {
     fn eq(&self, other: &Self) -> bool {
@@ -11487,6 +11560,7 @@ impl ::core::default::Default for PerfCounterDataType {
 }
 unsafe impl ::windows::core::Abi for PerfCounterDataType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PerfCounterDataType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11663,6 +11737,7 @@ impl ::core::fmt::Debug for PerfProviderHandle {
 }
 unsafe impl ::windows::core::Abi for PerfProviderHandle {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[doc = "*Required features: `\"Win32_System_Performance\"`, `\"Win32_Foundation\"`*"]
 #[cfg(feature = "Win32_Foundation")]
@@ -11733,6 +11808,7 @@ impl ::core::fmt::Debug for PerfQueryHandle {
 }
 unsafe impl ::windows::core::Abi for PerfQueryHandle {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[doc = "*Required features: `\"Win32_System_Performance\"`, `\"Win32_Foundation\"`*"]
 #[cfg(feature = "Win32_Foundation")]
@@ -11786,6 +11862,7 @@ impl ::core::default::Default for PerfRegInfoType {
 }
 unsafe impl ::windows::core::Abi for PerfRegInfoType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PerfRegInfoType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11945,6 +12022,7 @@ impl ::core::default::Default for REAL_TIME_DATA_SOURCE_ID_FLAGS {
 }
 unsafe impl ::windows::core::Abi for REAL_TIME_DATA_SOURCE_ID_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for REAL_TIME_DATA_SOURCE_ID_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11978,6 +12056,7 @@ impl ::core::default::Default for ReportValueTypeConstants {
 }
 unsafe impl ::windows::core::Abi for ReportValueTypeConstants {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ReportValueTypeConstants {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12005,6 +12084,7 @@ impl ::core::default::Default for ResourcePolicy {
 }
 unsafe impl ::windows::core::Abi for ResourcePolicy {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ResourcePolicy {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12082,6 +12162,7 @@ impl ::core::default::Default for StreamMode {
 }
 unsafe impl ::windows::core::Abi for StreamMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for StreamMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12113,6 +12194,7 @@ impl ::core::default::Default for SysmonBatchReason {
 }
 unsafe impl ::windows::core::Abi for SysmonBatchReason {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SysmonBatchReason {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12146,6 +12228,7 @@ impl ::core::default::Default for SysmonDataType {
 }
 unsafe impl ::windows::core::Abi for SysmonDataType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SysmonDataType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12183,6 +12266,7 @@ impl ::core::default::Default for SysmonFileType {
 }
 unsafe impl ::windows::core::Abi for SysmonFileType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SysmonFileType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12280,6 +12364,7 @@ impl ::core::default::Default for ValueMapType {
 }
 unsafe impl ::windows::core::Abi for ValueMapType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ValueMapType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12329,6 +12414,7 @@ impl ::core::default::Default for WeekDays {
 }
 unsafe impl ::windows::core::Abi for WeekDays {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WeekDays {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12338,6 +12424,11 @@ impl ::core::fmt::Debug for WeekDays {
 #[doc = "*Required features: `\"Win32_System_Performance\"`*"]
 #[repr(transparent)]
 pub struct _ICounterItemUnion(::windows::core::IUnknown);
+impl ::core::clone::Clone for _ICounterItemUnion {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl _ICounterItemUnion {
     #[doc = "*Required features: `\"Win32_System_Performance\"`*"]
     pub unsafe fn Value(&self) -> ::windows::core::Result<f64> {
@@ -12439,11 +12530,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a _ICou
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for _ICounterItemUnion {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for _ICounterItemUnion {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12490,6 +12576,11 @@ pub struct _ICounterItemUnion_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Performance\"`*"]
 #[repr(transparent)]
 pub struct _ISystemMonitorUnion(::windows::core::IUnknown);
+impl ::core::clone::Clone for _ISystemMonitorUnion {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl _ISystemMonitorUnion {
     #[doc = "*Required features: `\"Win32_System_Performance\"`*"]
     pub unsafe fn Appearance(&self) -> ::windows::core::Result<i32> {
@@ -12955,11 +13046,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for _ISystemM
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a _ISystemMonitorUnion {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for _ISystemMonitorUnion {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for _ISystemMonitorUnion {

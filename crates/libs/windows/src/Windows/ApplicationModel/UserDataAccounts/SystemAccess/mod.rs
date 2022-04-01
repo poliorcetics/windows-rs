@@ -21,6 +21,7 @@ impl ::core::default::Default for DeviceAccountAuthenticationType {
 }
 unsafe impl ::windows::core::Abi for DeviceAccountAuthenticationType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DeviceAccountAuthenticationType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -29,7 +30,6 @@ impl ::core::fmt::Debug for DeviceAccountAuthenticationType {
 }
 unsafe impl ::windows::core::RuntimeType for DeviceAccountAuthenticationType {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.UserDataAccounts.SystemAccess.DeviceAccountAuthenticationType;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -629,11 +629,6 @@ impl DeviceAccountConfiguration {
         unsafe { (::windows::core::Interface::vtable(this).SetIsSyncScheduleManagedBySystem)(::core::mem::transmute_copy(this), value).ok() }
     }
 }
-impl ::core::clone::Clone for DeviceAccountConfiguration {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DeviceAccountConfiguration {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -647,7 +642,6 @@ impl ::core::fmt::Debug for DeviceAccountConfiguration {
 }
 unsafe impl ::windows::core::RuntimeType for DeviceAccountConfiguration {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.UserDataAccounts.SystemAccess.DeviceAccountConfiguration;{ad0123a3-fbdc-4d1b-be43-5a27ea4a1b63})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -724,6 +718,7 @@ impl ::core::default::Default for DeviceAccountIconId {
 }
 unsafe impl ::windows::core::Abi for DeviceAccountIconId {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DeviceAccountIconId {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -732,7 +727,6 @@ impl ::core::fmt::Debug for DeviceAccountIconId {
 }
 unsafe impl ::windows::core::RuntimeType for DeviceAccountIconId {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.UserDataAccounts.SystemAccess.DeviceAccountIconId;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -763,6 +757,7 @@ impl ::core::default::Default for DeviceAccountMailAgeFilter {
 }
 unsafe impl ::windows::core::Abi for DeviceAccountMailAgeFilter {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DeviceAccountMailAgeFilter {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -771,7 +766,6 @@ impl ::core::fmt::Debug for DeviceAccountMailAgeFilter {
 }
 unsafe impl ::windows::core::RuntimeType for DeviceAccountMailAgeFilter {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.UserDataAccounts.SystemAccess.DeviceAccountMailAgeFilter;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -798,6 +792,7 @@ impl ::core::default::Default for DeviceAccountServerType {
 }
 unsafe impl ::windows::core::Abi for DeviceAccountServerType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DeviceAccountServerType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -806,7 +801,6 @@ impl ::core::fmt::Debug for DeviceAccountServerType {
 }
 unsafe impl ::windows::core::RuntimeType for DeviceAccountServerType {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.UserDataAccounts.SystemAccess.DeviceAccountServerType;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -837,6 +831,7 @@ impl ::core::default::Default for DeviceAccountSyncScheduleKind {
 }
 unsafe impl ::windows::core::Abi for DeviceAccountSyncScheduleKind {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DeviceAccountSyncScheduleKind {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -845,7 +840,6 @@ impl ::core::fmt::Debug for DeviceAccountSyncScheduleKind {
 }
 unsafe impl ::windows::core::RuntimeType for DeviceAccountSyncScheduleKind {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.UserDataAccounts.SystemAccess.DeviceAccountSyncScheduleKind;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -853,6 +847,11 @@ unsafe impl ::windows::core::RuntimeType for DeviceAccountSyncScheduleKind {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDeviceAccountConfiguration(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDeviceAccountConfiguration {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDeviceAccountConfiguration {
     type Vtable = IDeviceAccountConfiguration_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xad0123a3_fbdc_4d1b_be43_5a27ea4a1b63);
@@ -897,6 +896,11 @@ pub struct IDeviceAccountConfiguration_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDeviceAccountConfiguration2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDeviceAccountConfiguration2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDeviceAccountConfiguration2 {
     type Vtable = IDeviceAccountConfiguration2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf2b2e5a6_728d_4a4a_8945_2bf8580136de);
@@ -989,6 +993,11 @@ pub struct IDeviceAccountConfiguration2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IUserDataAccountSystemAccessManagerStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUserDataAccountSystemAccessManagerStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IUserDataAccountSystemAccessManagerStatics {
     type Vtable = IUserDataAccountSystemAccessManagerStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9d6b11b9_cbe5_45f5_822b_c267b81dbdb6);
@@ -1005,6 +1014,11 @@ pub struct IUserDataAccountSystemAccessManagerStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IUserDataAccountSystemAccessManagerStatics2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUserDataAccountSystemAccessManagerStatics2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IUserDataAccountSystemAccessManagerStatics2 {
     type Vtable = IUserDataAccountSystemAccessManagerStatics2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x943f854d_4b4e_439f_83d3_979b27c05ac7);

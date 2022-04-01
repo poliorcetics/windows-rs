@@ -62,6 +62,7 @@ impl ::core::default::Default for ActivationKind {
 }
 unsafe impl ::windows::core::Abi for ActivationKind {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ActivationKind {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -70,7 +71,6 @@ impl ::core::fmt::Debug for ActivationKind {
 }
 unsafe impl ::windows::core::RuntimeType for ActivationKind {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.Activation.ActivationKind;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -99,6 +99,7 @@ impl ::core::default::Default for ApplicationExecutionState {
 }
 unsafe impl ::windows::core::Abi for ApplicationExecutionState {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ApplicationExecutionState {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -107,7 +108,6 @@ impl ::core::fmt::Debug for ApplicationExecutionState {
 }
 unsafe impl ::windows::core::RuntimeType for ApplicationExecutionState {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.Activation.ApplicationExecutionState;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -167,11 +167,6 @@ impl AppointmentsProviderAddAppointmentActivatedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for AppointmentsProviderAddAppointmentActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AppointmentsProviderAddAppointmentActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -185,7 +180,6 @@ impl ::core::fmt::Debug for AppointmentsProviderAddAppointmentActivatedEventArgs
 }
 unsafe impl ::windows::core::RuntimeType for AppointmentsProviderAddAppointmentActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Activation.AppointmentsProviderAddAppointmentActivatedEventArgs;{a2861367-cee5-4e4d-9ed7-41c34ec18b02})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -382,11 +376,6 @@ impl AppointmentsProviderRemoveAppointmentActivatedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for AppointmentsProviderRemoveAppointmentActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AppointmentsProviderRemoveAppointmentActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -400,7 +389,6 @@ impl ::core::fmt::Debug for AppointmentsProviderRemoveAppointmentActivatedEventA
 }
 unsafe impl ::windows::core::RuntimeType for AppointmentsProviderRemoveAppointmentActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Activation.AppointmentsProviderRemoveAppointmentActivatedEventArgs;{751f3ab8-0b8e-451c-9f15-966e699bac25})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -597,11 +585,6 @@ impl AppointmentsProviderReplaceAppointmentActivatedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for AppointmentsProviderReplaceAppointmentActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AppointmentsProviderReplaceAppointmentActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -615,7 +598,6 @@ impl ::core::fmt::Debug for AppointmentsProviderReplaceAppointmentActivatedEvent
 }
 unsafe impl ::windows::core::RuntimeType for AppointmentsProviderReplaceAppointmentActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Activation.AppointmentsProviderReplaceAppointmentActivatedEventArgs;{1551b7d4-a981-4067-8a62-0524e4ade121})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -828,11 +810,6 @@ impl AppointmentsProviderShowAppointmentDetailsActivatedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for AppointmentsProviderShowAppointmentDetailsActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AppointmentsProviderShowAppointmentDetailsActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -846,7 +823,6 @@ impl ::core::fmt::Debug for AppointmentsProviderShowAppointmentDetailsActivatedE
 }
 unsafe impl ::windows::core::RuntimeType for AppointmentsProviderShowAppointmentDetailsActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Activation.AppointmentsProviderShowAppointmentDetailsActivatedEventArgs;{3958f065-9841-4ca5-999b-885198b9ef2a})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1052,11 +1028,6 @@ impl AppointmentsProviderShowTimeFrameActivatedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for AppointmentsProviderShowTimeFrameActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AppointmentsProviderShowTimeFrameActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1070,7 +1041,6 @@ impl ::core::fmt::Debug for AppointmentsProviderShowTimeFrameActivatedEventArgs 
 }
 unsafe impl ::windows::core::RuntimeType for AppointmentsProviderShowTimeFrameActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Activation.AppointmentsProviderShowTimeFrameActivatedEventArgs;{9baeaba6-0e0b-49aa-babc-12b1dc774986})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1226,11 +1196,6 @@ impl BackgroundActivatedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for BackgroundActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for BackgroundActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1244,7 +1209,6 @@ impl ::core::fmt::Debug for BackgroundActivatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for BackgroundActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Activation.BackgroundActivatedEventArgs;{ab14bee0-e760-440e-a91c-44796de3a92d})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1366,11 +1330,6 @@ impl BarcodeScannerPreviewActivatedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for BarcodeScannerPreviewActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for BarcodeScannerPreviewActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1384,7 +1343,6 @@ impl ::core::fmt::Debug for BarcodeScannerPreviewActivatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for BarcodeScannerPreviewActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Activation.BarcodeScannerPreviewActivatedEventArgs;{6772797c-99bf-4349-af22-e4123560371c})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1551,11 +1509,6 @@ impl CachedFileUpdaterActivatedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for CachedFileUpdaterActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for CachedFileUpdaterActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1569,7 +1522,6 @@ impl ::core::fmt::Debug for CachedFileUpdaterActivatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for CachedFileUpdaterActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Activation.CachedFileUpdaterActivatedEventArgs;{d06eb1c7-3805-4ecb-b757-6cf15e26fef3})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1734,11 +1686,6 @@ impl CameraSettingsActivatedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for CameraSettingsActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for CameraSettingsActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1752,7 +1699,6 @@ impl ::core::fmt::Debug for CameraSettingsActivatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for CameraSettingsActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Activation.CameraSettingsActivatedEventArgs;{fb67a508-2dad-490a-9170-dca036eb114b})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1896,11 +1842,6 @@ impl CommandLineActivatedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for CommandLineActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for CommandLineActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1914,7 +1855,6 @@ impl ::core::fmt::Debug for CommandLineActivatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for CommandLineActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Activation.CommandLineActivatedEventArgs;{4506472c-006a-48eb-8afb-d07ab25e3366})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2077,11 +2017,6 @@ impl CommandLineActivationOperation {
         }
     }
 }
-impl ::core::clone::Clone for CommandLineActivationOperation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for CommandLineActivationOperation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2095,7 +2030,6 @@ impl ::core::fmt::Debug for CommandLineActivationOperation {
 }
 unsafe impl ::windows::core::RuntimeType for CommandLineActivationOperation {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Activation.CommandLineActivationOperation;{994b2841-c59e-4f69-bcfd-b61ed4e622eb})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2211,11 +2145,6 @@ impl ContactCallActivatedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for ContactCallActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ContactCallActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2229,7 +2158,6 @@ impl ::core::fmt::Debug for ContactCallActivatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for ContactCallActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Activation.ContactCallActivatedEventArgs;{c2df14c7-30eb-41c6-b3bc-5b1694f9dab3})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2404,11 +2332,6 @@ impl ContactMapActivatedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for ContactMapActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ContactMapActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2422,7 +2345,6 @@ impl ::core::fmt::Debug for ContactMapActivatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for ContactMapActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Activation.ContactMapActivatedEventArgs;{b32bf870-eee7-4ad2-aaf1-a87effcf00a4})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2604,11 +2526,6 @@ impl ContactMessageActivatedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for ContactMessageActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ContactMessageActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2622,7 +2539,6 @@ impl ::core::fmt::Debug for ContactMessageActivatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for ContactMessageActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Activation.ContactMessageActivatedEventArgs;{de598db2-0e03-43b0-bf56-bcc40b3162df})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2798,11 +2714,6 @@ impl ContactPanelActivatedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for ContactPanelActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ContactPanelActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2816,7 +2727,6 @@ impl ::core::fmt::Debug for ContactPanelActivatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for ContactPanelActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Activation.ContactPanelActivatedEventArgs;{52bb63e4-d3d4-4b63-8051-4af2082cab80})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2974,11 +2884,6 @@ impl ContactPickerActivatedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for ContactPickerActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ContactPickerActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2992,7 +2897,6 @@ impl ::core::fmt::Debug for ContactPickerActivatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for ContactPickerActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Activation.ContactPickerActivatedEventArgs;{ce57aae7-6449-45a7-971f-d113be7a8936})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3152,11 +3056,6 @@ impl ContactPostActivatedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for ContactPostActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ContactPostActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3170,7 +3069,6 @@ impl ::core::fmt::Debug for ContactPostActivatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for ContactPostActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Activation.ContactPostActivatedEventArgs;{b35a3c67-f1e7-4655-ad6e-4857588f552f})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3352,11 +3250,6 @@ impl ContactVideoCallActivatedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for ContactVideoCallActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ContactVideoCallActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3370,7 +3263,6 @@ impl ::core::fmt::Debug for ContactVideoCallActivatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for ContactVideoCallActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Activation.ContactVideoCallActivatedEventArgs;{61079db8-e3e7-4b4f-858d-5c63a96ef684})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3561,11 +3453,6 @@ impl DeviceActivatedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for DeviceActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DeviceActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3579,7 +3466,6 @@ impl ::core::fmt::Debug for DeviceActivatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for DeviceActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Activation.DeviceActivatedEventArgs;{cd50b9a9-ce10-44d2-8234-c355a073ef33})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3790,11 +3676,6 @@ impl DevicePairingActivatedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for DevicePairingActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DevicePairingActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3808,7 +3689,6 @@ impl ::core::fmt::Debug for DevicePairingActivatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for DevicePairingActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Activation.DevicePairingActivatedEventArgs;{eba0d1e4-ecc6-4148-94ed-f4b37ec05b3e})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4007,11 +3887,6 @@ impl DialReceiverActivatedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for DialReceiverActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DialReceiverActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4025,7 +3900,6 @@ impl ::core::fmt::Debug for DialReceiverActivatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for DialReceiverActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Activation.DialReceiverActivatedEventArgs;{fb777ed7-85ee-456e-a44d-85d730e70aed})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4300,11 +4174,6 @@ impl FileActivatedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for FileActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for FileActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4318,7 +4187,6 @@ impl ::core::fmt::Debug for FileActivatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for FileActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Activation.FileActivatedEventArgs;{bb2afc33-93b1-42ed-8b26-236dd9c78496})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4581,11 +4449,6 @@ impl FileOpenPickerActivatedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for FileOpenPickerActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for FileOpenPickerActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4599,7 +4462,6 @@ impl ::core::fmt::Debug for FileOpenPickerActivatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for FileOpenPickerActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Activation.FileOpenPickerActivatedEventArgs;{72827082-5525-4bf2-bc09-1f5095d4964d})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4800,12 +4662,6 @@ impl FileOpenPickerContinuationEventArgs {
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for FileOpenPickerContinuationEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for FileOpenPickerContinuationEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4822,7 +4678,6 @@ impl ::core::fmt::Debug for FileOpenPickerContinuationEventArgs {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for FileOpenPickerContinuationEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Activation.FileOpenPickerContinuationEventArgs;{f0fa3f3a-d4e8-4ad3-9c34-2308f32fcec9})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -5055,11 +4910,6 @@ impl FileSavePickerActivatedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for FileSavePickerActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for FileSavePickerActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5073,7 +4923,6 @@ impl ::core::fmt::Debug for FileSavePickerActivatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for FileSavePickerActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Activation.FileSavePickerActivatedEventArgs;{81c19cf1-74e6-4387-82eb-bb8fd64b4346})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -5274,12 +5123,6 @@ impl FileSavePickerContinuationEventArgs {
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for FileSavePickerContinuationEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for FileSavePickerContinuationEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5296,7 +5139,6 @@ impl ::core::fmt::Debug for FileSavePickerContinuationEventArgs {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for FileSavePickerContinuationEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Activation.FileSavePickerContinuationEventArgs;{2c846fe1-3bad-4f33-8c8b-e46fae824b4b})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -5525,12 +5367,6 @@ impl FolderPickerContinuationEventArgs {
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for FolderPickerContinuationEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for FolderPickerContinuationEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5547,7 +5383,6 @@ impl ::core::fmt::Debug for FolderPickerContinuationEventArgs {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for FolderPickerContinuationEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Activation.FolderPickerContinuationEventArgs;{51882366-9f4b-498f-beb0-42684f6e1c29})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -5720,6 +5555,11 @@ unsafe impl ::core::marker::Sync for FolderPickerContinuationEventArgs {}
 #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
 #[repr(transparent)]
 pub struct IActivatedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IActivatedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IActivatedEventArgs {
     #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
     pub fn Kind(&self) -> ::windows::core::Result<ActivationKind> {
@@ -5786,11 +5626,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5804,7 +5639,6 @@ impl ::core::fmt::Debug for IActivatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for IActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{cf651713-cd08-4fd8-b697-a281b6544e2e}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -5824,6 +5658,11 @@ pub struct IActivatedEventArgs_Vtbl {
 #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
 #[repr(transparent)]
 pub struct IActivatedEventArgsWithUser(::windows::core::IUnknown);
+impl ::core::clone::Clone for IActivatedEventArgsWithUser {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IActivatedEventArgsWithUser {
     #[doc = "*Required features: `\"ApplicationModel_Activation\"`, `\"System\"`*"]
     #[cfg(feature = "System")]
@@ -5921,11 +5760,6 @@ impl<'a> ::windows::core::IntoParam<'a, IActivatedEventArgs> for &IActivatedEven
         ::core::convert::TryInto::<IActivatedEventArgs>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IActivatedEventArgsWithUser {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IActivatedEventArgsWithUser {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5939,7 +5773,6 @@ impl ::core::fmt::Debug for IActivatedEventArgsWithUser {
 }
 unsafe impl ::windows::core::RuntimeType for IActivatedEventArgsWithUser {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{1cf09b9e-9962-4936-80ff-afc8e8ae5c8c}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -5960,6 +5793,11 @@ pub struct IActivatedEventArgsWithUser_Vtbl {
 #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
 #[repr(transparent)]
 pub struct IApplicationViewActivatedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IApplicationViewActivatedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IApplicationViewActivatedEventArgs {
     #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
     pub fn CurrentlyShownApplicationViewId(&self) -> ::windows::core::Result<i32> {
@@ -6056,11 +5894,6 @@ impl<'a> ::windows::core::IntoParam<'a, IActivatedEventArgs> for &IApplicationVi
         ::core::convert::TryInto::<IActivatedEventArgs>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IApplicationViewActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IApplicationViewActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6074,7 +5907,6 @@ impl ::core::fmt::Debug for IApplicationViewActivatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for IApplicationViewActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{930cef4b-b829-40fc-88f4-8513e8a64738}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -6092,6 +5924,11 @@ pub struct IApplicationViewActivatedEventArgs_Vtbl {
 #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
 #[repr(transparent)]
 pub struct IAppointmentsProviderActivatedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppointmentsProviderActivatedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppointmentsProviderActivatedEventArgs {
     #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
     pub fn Verb(&self) -> ::windows::core::Result<::windows::core::HSTRING> {
@@ -6188,11 +6025,6 @@ impl<'a> ::windows::core::IntoParam<'a, IActivatedEventArgs> for &IAppointmentsP
         ::core::convert::TryInto::<IActivatedEventArgs>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IAppointmentsProviderActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAppointmentsProviderActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6206,7 +6038,6 @@ impl ::core::fmt::Debug for IAppointmentsProviderActivatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for IAppointmentsProviderActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{3364c405-933c-4e7d-a034-500fb8dcd9f3}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -6224,6 +6055,11 @@ pub struct IAppointmentsProviderActivatedEventArgs_Vtbl {
 #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
 #[repr(transparent)]
 pub struct IAppointmentsProviderAddAppointmentActivatedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppointmentsProviderAddAppointmentActivatedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppointmentsProviderAddAppointmentActivatedEventArgs {
     #[doc = "*Required features: `\"ApplicationModel_Activation\"`, `\"ApplicationModel_Appointments_AppointmentsProvider\"`*"]
     #[cfg(feature = "ApplicationModel_Appointments_AppointmentsProvider")]
@@ -6351,11 +6187,6 @@ impl<'a> ::windows::core::IntoParam<'a, IAppointmentsProviderActivatedEventArgs>
         ::core::convert::TryInto::<IAppointmentsProviderActivatedEventArgs>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IAppointmentsProviderAddAppointmentActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAppointmentsProviderAddAppointmentActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6369,7 +6200,6 @@ impl ::core::fmt::Debug for IAppointmentsProviderAddAppointmentActivatedEventArg
 }
 unsafe impl ::windows::core::RuntimeType for IAppointmentsProviderAddAppointmentActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{a2861367-cee5-4e4d-9ed7-41c34ec18b02}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -6390,6 +6220,11 @@ pub struct IAppointmentsProviderAddAppointmentActivatedEventArgs_Vtbl {
 #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
 #[repr(transparent)]
 pub struct IAppointmentsProviderRemoveAppointmentActivatedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppointmentsProviderRemoveAppointmentActivatedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppointmentsProviderRemoveAppointmentActivatedEventArgs {
     #[doc = "*Required features: `\"ApplicationModel_Activation\"`, `\"ApplicationModel_Appointments_AppointmentsProvider\"`*"]
     #[cfg(feature = "ApplicationModel_Appointments_AppointmentsProvider")]
@@ -6517,11 +6352,6 @@ impl<'a> ::windows::core::IntoParam<'a, IAppointmentsProviderActivatedEventArgs>
         ::core::convert::TryInto::<IAppointmentsProviderActivatedEventArgs>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IAppointmentsProviderRemoveAppointmentActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAppointmentsProviderRemoveAppointmentActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6535,7 +6365,6 @@ impl ::core::fmt::Debug for IAppointmentsProviderRemoveAppointmentActivatedEvent
 }
 unsafe impl ::windows::core::RuntimeType for IAppointmentsProviderRemoveAppointmentActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{751f3ab8-0b8e-451c-9f15-966e699bac25}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -6556,6 +6385,11 @@ pub struct IAppointmentsProviderRemoveAppointmentActivatedEventArgs_Vtbl {
 #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
 #[repr(transparent)]
 pub struct IAppointmentsProviderReplaceAppointmentActivatedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppointmentsProviderReplaceAppointmentActivatedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppointmentsProviderReplaceAppointmentActivatedEventArgs {
     #[doc = "*Required features: `\"ApplicationModel_Activation\"`, `\"ApplicationModel_Appointments_AppointmentsProvider\"`*"]
     #[cfg(feature = "ApplicationModel_Appointments_AppointmentsProvider")]
@@ -6683,11 +6517,6 @@ impl<'a> ::windows::core::IntoParam<'a, IAppointmentsProviderActivatedEventArgs>
         ::core::convert::TryInto::<IAppointmentsProviderActivatedEventArgs>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IAppointmentsProviderReplaceAppointmentActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAppointmentsProviderReplaceAppointmentActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6701,7 +6530,6 @@ impl ::core::fmt::Debug for IAppointmentsProviderReplaceAppointmentActivatedEven
 }
 unsafe impl ::windows::core::RuntimeType for IAppointmentsProviderReplaceAppointmentActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{1551b7d4-a981-4067-8a62-0524e4ade121}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -6722,6 +6550,11 @@ pub struct IAppointmentsProviderReplaceAppointmentActivatedEventArgs_Vtbl {
 #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
 #[repr(transparent)]
 pub struct IAppointmentsProviderShowAppointmentDetailsActivatedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppointmentsProviderShowAppointmentDetailsActivatedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppointmentsProviderShowAppointmentDetailsActivatedEventArgs {
     #[doc = "*Required features: `\"ApplicationModel_Activation\"`, `\"Foundation\"`*"]
     #[cfg(feature = "Foundation")]
@@ -6865,11 +6698,6 @@ impl<'a> ::windows::core::IntoParam<'a, IAppointmentsProviderActivatedEventArgs>
         ::core::convert::TryInto::<IAppointmentsProviderActivatedEventArgs>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IAppointmentsProviderShowAppointmentDetailsActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAppointmentsProviderShowAppointmentDetailsActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6883,7 +6711,6 @@ impl ::core::fmt::Debug for IAppointmentsProviderShowAppointmentDetailsActivated
 }
 unsafe impl ::windows::core::RuntimeType for IAppointmentsProviderShowAppointmentDetailsActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{3958f065-9841-4ca5-999b-885198b9ef2a}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -6906,6 +6733,11 @@ pub struct IAppointmentsProviderShowAppointmentDetailsActivatedEventArgs_Vtbl {
 #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
 #[repr(transparent)]
 pub struct IAppointmentsProviderShowTimeFrameActivatedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppointmentsProviderShowTimeFrameActivatedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAppointmentsProviderShowTimeFrameActivatedEventArgs {
     #[doc = "*Required features: `\"ApplicationModel_Activation\"`, `\"Foundation\"`*"]
     #[cfg(feature = "Foundation")]
@@ -7042,11 +6874,6 @@ impl<'a> ::windows::core::IntoParam<'a, IAppointmentsProviderActivatedEventArgs>
         ::core::convert::TryInto::<IAppointmentsProviderActivatedEventArgs>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IAppointmentsProviderShowTimeFrameActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAppointmentsProviderShowTimeFrameActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7060,7 +6887,6 @@ impl ::core::fmt::Debug for IAppointmentsProviderShowTimeFrameActivatedEventArgs
 }
 unsafe impl ::windows::core::RuntimeType for IAppointmentsProviderShowTimeFrameActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{9baeaba6-0e0b-49aa-babc-12b1dc774986}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -7085,6 +6911,11 @@ pub struct IAppointmentsProviderShowTimeFrameActivatedEventArgs_Vtbl {
 #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
 #[repr(transparent)]
 pub struct IBackgroundActivatedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBackgroundActivatedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IBackgroundActivatedEventArgs {
     #[doc = "*Required features: `\"ApplicationModel_Activation\"`, `\"ApplicationModel_Background\"`*"]
     #[cfg(feature = "ApplicationModel_Background")]
@@ -7136,11 +6967,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IBackgroundActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IBackgroundActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7154,7 +6980,6 @@ impl ::core::fmt::Debug for IBackgroundActivatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for IBackgroundActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{ab14bee0-e760-440e-a91c-44796de3a92d}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -7175,6 +7000,11 @@ pub struct IBackgroundActivatedEventArgs_Vtbl {
 #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
 #[repr(transparent)]
 pub struct IBarcodeScannerPreviewActivatedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBarcodeScannerPreviewActivatedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IBarcodeScannerPreviewActivatedEventArgs {
     #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
     pub fn ConnectionId(&self) -> ::windows::core::Result<::windows::core::HSTRING> {
@@ -7271,11 +7101,6 @@ impl<'a> ::windows::core::IntoParam<'a, IActivatedEventArgs> for &IBarcodeScanne
         ::core::convert::TryInto::<IActivatedEventArgs>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IBarcodeScannerPreviewActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IBarcodeScannerPreviewActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7289,7 +7114,6 @@ impl ::core::fmt::Debug for IBarcodeScannerPreviewActivatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for IBarcodeScannerPreviewActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{6772797c-99bf-4349-af22-e4123560371c}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -7307,6 +7131,11 @@ pub struct IBarcodeScannerPreviewActivatedEventArgs_Vtbl {
 #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
 #[repr(transparent)]
 pub struct ICachedFileUpdaterActivatedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICachedFileUpdaterActivatedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ICachedFileUpdaterActivatedEventArgs {
     #[doc = "*Required features: `\"ApplicationModel_Activation\"`, `\"Storage_Provider\"`*"]
     #[cfg(feature = "Storage_Provider")]
@@ -7404,11 +7233,6 @@ impl<'a> ::windows::core::IntoParam<'a, IActivatedEventArgs> for &ICachedFileUpd
         ::core::convert::TryInto::<IActivatedEventArgs>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for ICachedFileUpdaterActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ICachedFileUpdaterActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7422,7 +7246,6 @@ impl ::core::fmt::Debug for ICachedFileUpdaterActivatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for ICachedFileUpdaterActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{d06eb1c7-3805-4ecb-b757-6cf15e26fef3}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -7443,6 +7266,11 @@ pub struct ICachedFileUpdaterActivatedEventArgs_Vtbl {
 #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
 #[repr(transparent)]
 pub struct ICameraSettingsActivatedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICameraSettingsActivatedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ICameraSettingsActivatedEventArgs {
     #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
     pub fn VideoDeviceController(&self) -> ::windows::core::Result<::windows::core::IInspectable> {
@@ -7547,11 +7375,6 @@ impl<'a> ::windows::core::IntoParam<'a, IActivatedEventArgs> for &ICameraSetting
         ::core::convert::TryInto::<IActivatedEventArgs>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for ICameraSettingsActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ICameraSettingsActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7565,7 +7388,6 @@ impl ::core::fmt::Debug for ICameraSettingsActivatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for ICameraSettingsActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{fb67a508-2dad-490a-9170-dca036eb114b}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -7584,6 +7406,11 @@ pub struct ICameraSettingsActivatedEventArgs_Vtbl {
 #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
 #[repr(transparent)]
 pub struct ICommandLineActivatedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICommandLineActivatedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ICommandLineActivatedEventArgs {
     #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
     pub fn Operation(&self) -> ::windows::core::Result<CommandLineActivationOperation> {
@@ -7680,11 +7507,6 @@ impl<'a> ::windows::core::IntoParam<'a, IActivatedEventArgs> for &ICommandLineAc
         ::core::convert::TryInto::<IActivatedEventArgs>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for ICommandLineActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ICommandLineActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7698,7 +7520,6 @@ impl ::core::fmt::Debug for ICommandLineActivatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for ICommandLineActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{4506472c-006a-48eb-8afb-d07ab25e3366}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -7716,6 +7537,11 @@ pub struct ICommandLineActivatedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICommandLineActivationOperation(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICommandLineActivationOperation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICommandLineActivationOperation {
     type Vtable = ICommandLineActivationOperation_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x994b2841_c59e_4f69_bcfd_b61ed4e622eb);
@@ -7736,6 +7562,11 @@ pub struct ICommandLineActivationOperation_Vtbl {
 #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
 #[repr(transparent)]
 pub struct IContactActivatedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IContactActivatedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IContactActivatedEventArgs {
     #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
     pub fn Verb(&self) -> ::windows::core::Result<::windows::core::HSTRING> {
@@ -7832,11 +7663,6 @@ impl<'a> ::windows::core::IntoParam<'a, IActivatedEventArgs> for &IContactActiva
         ::core::convert::TryInto::<IActivatedEventArgs>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IContactActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IContactActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7850,7 +7676,6 @@ impl ::core::fmt::Debug for IContactActivatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for IContactActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{d627a1c4-c025-4c41-9def-f1eafad075e7}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -7868,6 +7693,11 @@ pub struct IContactActivatedEventArgs_Vtbl {
 #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
 #[repr(transparent)]
 pub struct IContactCallActivatedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IContactCallActivatedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IContactCallActivatedEventArgs {
     #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
     pub fn ServiceId(&self) -> ::windows::core::Result<::windows::core::HSTRING> {
@@ -8011,11 +7841,6 @@ impl<'a> ::windows::core::IntoParam<'a, IContactActivatedEventArgs> for &IContac
         ::core::convert::TryInto::<IContactActivatedEventArgs>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IContactCallActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IContactCallActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8029,7 +7854,6 @@ impl ::core::fmt::Debug for IContactCallActivatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for IContactCallActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{c2df14c7-30eb-41c6-b3bc-5b1694f9dab3}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -8052,6 +7876,11 @@ pub struct IContactCallActivatedEventArgs_Vtbl {
 #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
 #[repr(transparent)]
 pub struct IContactMapActivatedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IContactMapActivatedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IContactMapActivatedEventArgs {
     #[doc = "*Required features: `\"ApplicationModel_Activation\"`, `\"ApplicationModel_Contacts\"`*"]
     #[cfg(feature = "ApplicationModel_Contacts")]
@@ -8188,11 +8017,6 @@ impl<'a> ::windows::core::IntoParam<'a, IContactActivatedEventArgs> for &IContac
         ::core::convert::TryInto::<IContactActivatedEventArgs>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IContactMapActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IContactMapActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8206,7 +8030,6 @@ impl ::core::fmt::Debug for IContactMapActivatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for IContactMapActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{b32bf870-eee7-4ad2-aaf1-a87effcf00a4}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -8231,6 +8054,11 @@ pub struct IContactMapActivatedEventArgs_Vtbl {
 #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
 #[repr(transparent)]
 pub struct IContactMessageActivatedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IContactMessageActivatedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IContactMessageActivatedEventArgs {
     #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
     pub fn ServiceId(&self) -> ::windows::core::Result<::windows::core::HSTRING> {
@@ -8374,11 +8202,6 @@ impl<'a> ::windows::core::IntoParam<'a, IContactActivatedEventArgs> for &IContac
         ::core::convert::TryInto::<IContactActivatedEventArgs>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IContactMessageActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IContactMessageActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8392,7 +8215,6 @@ impl ::core::fmt::Debug for IContactMessageActivatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for IContactMessageActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{de598db2-0e03-43b0-bf56-bcc40b3162df}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -8415,6 +8237,11 @@ pub struct IContactMessageActivatedEventArgs_Vtbl {
 #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
 #[repr(transparent)]
 pub struct IContactPanelActivatedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IContactPanelActivatedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IContactPanelActivatedEventArgs {
     #[doc = "*Required features: `\"ApplicationModel_Activation\"`, `\"ApplicationModel_Contacts\"`*"]
     #[cfg(feature = "ApplicationModel_Contacts")]
@@ -8475,11 +8302,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IContactPanelActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IContactPanelActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8493,7 +8315,6 @@ impl ::core::fmt::Debug for IContactPanelActivatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for IContactPanelActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{52bb63e4-d3d4-4b63-8051-4af2082cab80}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -8518,6 +8339,11 @@ pub struct IContactPanelActivatedEventArgs_Vtbl {
 #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
 #[repr(transparent)]
 pub struct IContactPickerActivatedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IContactPickerActivatedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IContactPickerActivatedEventArgs {
     #[doc = "*Required features: `\"ApplicationModel_Activation\"`, `\"ApplicationModel_Contacts_Provider\"`*"]
     #[cfg(feature = "ApplicationModel_Contacts_Provider")]
@@ -8615,11 +8441,6 @@ impl<'a> ::windows::core::IntoParam<'a, IActivatedEventArgs> for &IContactPicker
         ::core::convert::TryInto::<IActivatedEventArgs>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IContactPickerActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IContactPickerActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8633,7 +8454,6 @@ impl ::core::fmt::Debug for IContactPickerActivatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for IContactPickerActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{ce57aae7-6449-45a7-971f-d113be7a8936}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -8654,6 +8474,11 @@ pub struct IContactPickerActivatedEventArgs_Vtbl {
 #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
 #[repr(transparent)]
 pub struct IContactPostActivatedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IContactPostActivatedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IContactPostActivatedEventArgs {
     #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
     pub fn ServiceId(&self) -> ::windows::core::Result<::windows::core::HSTRING> {
@@ -8797,11 +8622,6 @@ impl<'a> ::windows::core::IntoParam<'a, IContactActivatedEventArgs> for &IContac
         ::core::convert::TryInto::<IContactActivatedEventArgs>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IContactPostActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IContactPostActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8815,7 +8635,6 @@ impl ::core::fmt::Debug for IContactPostActivatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for IContactPostActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{b35a3c67-f1e7-4655-ad6e-4857588f552f}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -8838,6 +8657,11 @@ pub struct IContactPostActivatedEventArgs_Vtbl {
 #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
 #[repr(transparent)]
 pub struct IContactVideoCallActivatedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IContactVideoCallActivatedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IContactVideoCallActivatedEventArgs {
     #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
     pub fn ServiceId(&self) -> ::windows::core::Result<::windows::core::HSTRING> {
@@ -8981,11 +8805,6 @@ impl<'a> ::windows::core::IntoParam<'a, IContactActivatedEventArgs> for &IContac
         ::core::convert::TryInto::<IContactActivatedEventArgs>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IContactVideoCallActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IContactVideoCallActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8999,7 +8818,6 @@ impl ::core::fmt::Debug for IContactVideoCallActivatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for IContactVideoCallActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{61079db8-e3e7-4b4f-858d-5c63a96ef684}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -9022,6 +8840,11 @@ pub struct IContactVideoCallActivatedEventArgs_Vtbl {
 #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
 #[repr(transparent)]
 pub struct IContactsProviderActivatedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IContactsProviderActivatedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IContactsProviderActivatedEventArgs {
     #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
     pub fn Verb(&self) -> ::windows::core::Result<::windows::core::HSTRING> {
@@ -9118,11 +8941,6 @@ impl<'a> ::windows::core::IntoParam<'a, IActivatedEventArgs> for &IContactsProvi
         ::core::convert::TryInto::<IActivatedEventArgs>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IContactsProviderActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IContactsProviderActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9136,7 +8954,6 @@ impl ::core::fmt::Debug for IContactsProviderActivatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for IContactsProviderActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{4580dca8-5750-4916-aa52-c0829521eb94}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -9154,6 +8971,11 @@ pub struct IContactsProviderActivatedEventArgs_Vtbl {
 #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
 #[repr(transparent)]
 pub struct IContinuationActivatedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IContinuationActivatedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IContinuationActivatedEventArgs {
     #[doc = "*Required features: `\"ApplicationModel_Activation\"`, `\"Foundation_Collections\"`*"]
     #[cfg(feature = "Foundation_Collections")]
@@ -9251,11 +9073,6 @@ impl<'a> ::windows::core::IntoParam<'a, IActivatedEventArgs> for &IContinuationA
         ::core::convert::TryInto::<IActivatedEventArgs>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IContinuationActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IContinuationActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9269,7 +9086,6 @@ impl ::core::fmt::Debug for IContinuationActivatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for IContinuationActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{e58106b5-155f-4a94-a742-c7e08f4e188c}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -9290,6 +9106,11 @@ pub struct IContinuationActivatedEventArgs_Vtbl {
 #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
 #[repr(transparent)]
 pub struct IDeviceActivatedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDeviceActivatedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDeviceActivatedEventArgs {
     #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
     pub fn DeviceInformationId(&self) -> ::windows::core::Result<::windows::core::HSTRING> {
@@ -9394,11 +9215,6 @@ impl<'a> ::windows::core::IntoParam<'a, IActivatedEventArgs> for &IDeviceActivat
         ::core::convert::TryInto::<IActivatedEventArgs>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IDeviceActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDeviceActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9412,7 +9228,6 @@ impl ::core::fmt::Debug for IDeviceActivatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for IDeviceActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{cd50b9a9-ce10-44d2-8234-c355a073ef33}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -9431,6 +9246,11 @@ pub struct IDeviceActivatedEventArgs_Vtbl {
 #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
 #[repr(transparent)]
 pub struct IDevicePairingActivatedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDevicePairingActivatedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDevicePairingActivatedEventArgs {
     #[doc = "*Required features: `\"ApplicationModel_Activation\"`, `\"Devices_Enumeration\"`*"]
     #[cfg(feature = "Devices_Enumeration")]
@@ -9528,11 +9348,6 @@ impl<'a> ::windows::core::IntoParam<'a, IActivatedEventArgs> for &IDevicePairing
         ::core::convert::TryInto::<IActivatedEventArgs>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IDevicePairingActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDevicePairingActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9546,7 +9361,6 @@ impl ::core::fmt::Debug for IDevicePairingActivatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for IDevicePairingActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{eba0d1e4-ecc6-4148-94ed-f4b37ec05b3e}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -9567,6 +9381,11 @@ pub struct IDevicePairingActivatedEventArgs_Vtbl {
 #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
 #[repr(transparent)]
 pub struct IDialReceiverActivatedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDialReceiverActivatedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDialReceiverActivatedEventArgs {
     #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
     pub fn AppName(&self) -> ::windows::core::Result<::windows::core::HSTRING> {
@@ -9701,11 +9520,6 @@ impl<'a> ::windows::core::IntoParam<'a, ILaunchActivatedEventArgs> for &IDialRec
         ::core::convert::TryInto::<ILaunchActivatedEventArgs>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IDialReceiverActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDialReceiverActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9719,7 +9533,6 @@ impl ::core::fmt::Debug for IDialReceiverActivatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for IDialReceiverActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{fb777ed7-85ee-456e-a44d-85d730e70aed}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -9737,6 +9550,11 @@ pub struct IDialReceiverActivatedEventArgs_Vtbl {
 #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
 #[repr(transparent)]
 pub struct IFileActivatedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IFileActivatedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IFileActivatedEventArgs {
     #[doc = "*Required features: `\"ApplicationModel_Activation\"`, `\"Foundation_Collections\"`, `\"Storage\"`*"]
     #[cfg(all(feature = "Foundation_Collections", feature = "Storage"))]
@@ -9842,11 +9660,6 @@ impl<'a> ::windows::core::IntoParam<'a, IActivatedEventArgs> for &IFileActivated
         ::core::convert::TryInto::<IActivatedEventArgs>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IFileActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IFileActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9860,7 +9673,6 @@ impl ::core::fmt::Debug for IFileActivatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for IFileActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{bb2afc33-93b1-42ed-8b26-236dd9c78496}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -9882,6 +9694,11 @@ pub struct IFileActivatedEventArgs_Vtbl {
 #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
 #[repr(transparent)]
 pub struct IFileActivatedEventArgsWithCallerPackageFamilyName(::windows::core::IUnknown);
+impl ::core::clone::Clone for IFileActivatedEventArgsWithCallerPackageFamilyName {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IFileActivatedEventArgsWithCallerPackageFamilyName {
     #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
     pub fn CallerPackageFamilyName(&self) -> ::windows::core::Result<::windows::core::HSTRING> {
@@ -9978,11 +9795,6 @@ impl<'a> ::windows::core::IntoParam<'a, IActivatedEventArgs> for &IFileActivated
         ::core::convert::TryInto::<IActivatedEventArgs>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IFileActivatedEventArgsWithCallerPackageFamilyName {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IFileActivatedEventArgsWithCallerPackageFamilyName {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9996,7 +9808,6 @@ impl ::core::fmt::Debug for IFileActivatedEventArgsWithCallerPackageFamilyName {
 }
 unsafe impl ::windows::core::RuntimeType for IFileActivatedEventArgsWithCallerPackageFamilyName {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{2d60f06b-d25f-4d25-8653-e1c5e1108309}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -10014,6 +9825,11 @@ pub struct IFileActivatedEventArgsWithCallerPackageFamilyName_Vtbl {
 #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
 #[repr(transparent)]
 pub struct IFileActivatedEventArgsWithNeighboringFiles(::windows::core::IUnknown);
+impl ::core::clone::Clone for IFileActivatedEventArgsWithNeighboringFiles {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IFileActivatedEventArgsWithNeighboringFiles {
     #[doc = "*Required features: `\"ApplicationModel_Activation\"`, `\"Storage_Search\"`*"]
     #[cfg(feature = "Storage_Search")]
@@ -10150,11 +9966,6 @@ impl<'a> ::windows::core::IntoParam<'a, IFileActivatedEventArgs> for &IFileActiv
         ::core::convert::TryInto::<IFileActivatedEventArgs>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IFileActivatedEventArgsWithNeighboringFiles {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IFileActivatedEventArgsWithNeighboringFiles {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10168,7 +9979,6 @@ impl ::core::fmt::Debug for IFileActivatedEventArgsWithNeighboringFiles {
 }
 unsafe impl ::windows::core::RuntimeType for IFileActivatedEventArgsWithNeighboringFiles {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{433ba1a4-e1e2-48fd-b7fc-b5d6eee65033}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -10189,6 +9999,11 @@ pub struct IFileActivatedEventArgsWithNeighboringFiles_Vtbl {
 #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
 #[repr(transparent)]
 pub struct IFileOpenPickerActivatedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IFileOpenPickerActivatedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IFileOpenPickerActivatedEventArgs {
     #[doc = "*Required features: `\"ApplicationModel_Activation\"`, `\"Storage_Pickers_Provider\"`*"]
     #[cfg(feature = "Storage_Pickers_Provider")]
@@ -10286,11 +10101,6 @@ impl<'a> ::windows::core::IntoParam<'a, IActivatedEventArgs> for &IFileOpenPicke
         ::core::convert::TryInto::<IActivatedEventArgs>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IFileOpenPickerActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IFileOpenPickerActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10304,7 +10114,6 @@ impl ::core::fmt::Debug for IFileOpenPickerActivatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for IFileOpenPickerActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{72827082-5525-4bf2-bc09-1f5095d4964d}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -10325,6 +10134,11 @@ pub struct IFileOpenPickerActivatedEventArgs_Vtbl {
 #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
 #[repr(transparent)]
 pub struct IFileOpenPickerActivatedEventArgs2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IFileOpenPickerActivatedEventArgs2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IFileOpenPickerActivatedEventArgs2 {
     #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
     pub fn CallerPackageFamilyName(&self) -> ::windows::core::Result<::windows::core::HSTRING> {
@@ -10375,11 +10189,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IFileOpenPickerActivatedEventArgs2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IFileOpenPickerActivatedEventArgs2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10393,7 +10202,6 @@ impl ::core::fmt::Debug for IFileOpenPickerActivatedEventArgs2 {
 }
 unsafe impl ::windows::core::RuntimeType for IFileOpenPickerActivatedEventArgs2 {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{5e731f66-8d1f-45fb-af1d-73205c8fc7a1}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -10412,6 +10220,12 @@ pub struct IFileOpenPickerActivatedEventArgs2_Vtbl {
 #[cfg(feature = "deprecated")]
 #[repr(transparent)]
 pub struct IFileOpenPickerContinuationEventArgs(::windows::core::IUnknown);
+#[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for IFileOpenPickerContinuationEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "deprecated")]
 impl IFileOpenPickerContinuationEventArgs {
     #[doc = "*Required features: `\"ApplicationModel_Activation\"`, `\"Foundation_Collections\"`, `\"Storage\"`, `\"deprecated\"`*"]
@@ -10558,12 +10372,6 @@ impl<'a> ::windows::core::IntoParam<'a, IContinuationActivatedEventArgs> for &IF
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for IFileOpenPickerContinuationEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for IFileOpenPickerContinuationEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10580,7 +10388,6 @@ impl ::core::fmt::Debug for IFileOpenPickerContinuationEventArgs {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for IFileOpenPickerContinuationEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{f0fa3f3a-d4e8-4ad3-9c34-2308f32fcec9}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -10603,6 +10410,11 @@ pub struct IFileOpenPickerContinuationEventArgs_Vtbl {
 #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
 #[repr(transparent)]
 pub struct IFileSavePickerActivatedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IFileSavePickerActivatedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IFileSavePickerActivatedEventArgs {
     #[doc = "*Required features: `\"ApplicationModel_Activation\"`, `\"Storage_Pickers_Provider\"`*"]
     #[cfg(feature = "Storage_Pickers_Provider")]
@@ -10700,11 +10512,6 @@ impl<'a> ::windows::core::IntoParam<'a, IActivatedEventArgs> for &IFileSavePicke
         ::core::convert::TryInto::<IActivatedEventArgs>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IFileSavePickerActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IFileSavePickerActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10718,7 +10525,6 @@ impl ::core::fmt::Debug for IFileSavePickerActivatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for IFileSavePickerActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{81c19cf1-74e6-4387-82eb-bb8fd64b4346}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -10739,6 +10545,11 @@ pub struct IFileSavePickerActivatedEventArgs_Vtbl {
 #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
 #[repr(transparent)]
 pub struct IFileSavePickerActivatedEventArgs2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IFileSavePickerActivatedEventArgs2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IFileSavePickerActivatedEventArgs2 {
     #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
     pub fn CallerPackageFamilyName(&self) -> ::windows::core::Result<::windows::core::HSTRING> {
@@ -10797,11 +10608,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IFileSavePickerActivatedEventArgs2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IFileSavePickerActivatedEventArgs2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10815,7 +10621,6 @@ impl ::core::fmt::Debug for IFileSavePickerActivatedEventArgs2 {
 }
 unsafe impl ::windows::core::RuntimeType for IFileSavePickerActivatedEventArgs2 {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{6b73fe13-2cf2-4d48-8cbc-af67d23f1ce7}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -10835,6 +10640,12 @@ pub struct IFileSavePickerActivatedEventArgs2_Vtbl {
 #[cfg(feature = "deprecated")]
 #[repr(transparent)]
 pub struct IFileSavePickerContinuationEventArgs(::windows::core::IUnknown);
+#[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for IFileSavePickerContinuationEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "deprecated")]
 impl IFileSavePickerContinuationEventArgs {
     #[doc = "*Required features: `\"ApplicationModel_Activation\"`, `\"Storage\"`, `\"deprecated\"`*"]
@@ -10981,12 +10792,6 @@ impl<'a> ::windows::core::IntoParam<'a, IContinuationActivatedEventArgs> for &IF
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for IFileSavePickerContinuationEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for IFileSavePickerContinuationEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11003,7 +10808,6 @@ impl ::core::fmt::Debug for IFileSavePickerContinuationEventArgs {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for IFileSavePickerContinuationEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{2c846fe1-3bad-4f33-8c8b-e46fae824b4b}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -11027,6 +10831,12 @@ pub struct IFileSavePickerContinuationEventArgs_Vtbl {
 #[cfg(feature = "deprecated")]
 #[repr(transparent)]
 pub struct IFolderPickerContinuationEventArgs(::windows::core::IUnknown);
+#[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for IFolderPickerContinuationEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "deprecated")]
 impl IFolderPickerContinuationEventArgs {
     #[doc = "*Required features: `\"ApplicationModel_Activation\"`, `\"Storage\"`, `\"deprecated\"`*"]
@@ -11173,12 +10983,6 @@ impl<'a> ::windows::core::IntoParam<'a, IContinuationActivatedEventArgs> for &IF
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for IFolderPickerContinuationEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for IFolderPickerContinuationEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11195,7 +10999,6 @@ impl ::core::fmt::Debug for IFolderPickerContinuationEventArgs {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for IFolderPickerContinuationEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{51882366-9f4b-498f-beb0-42684f6e1c29}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -11218,6 +11021,11 @@ pub struct IFolderPickerContinuationEventArgs_Vtbl {
 #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
 #[repr(transparent)]
 pub struct ILaunchActivatedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILaunchActivatedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ILaunchActivatedEventArgs {
     #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
     pub fn Arguments(&self) -> ::windows::core::Result<::windows::core::HSTRING> {
@@ -11322,11 +11130,6 @@ impl<'a> ::windows::core::IntoParam<'a, IActivatedEventArgs> for &ILaunchActivat
         ::core::convert::TryInto::<IActivatedEventArgs>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for ILaunchActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ILaunchActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11340,7 +11143,6 @@ impl ::core::fmt::Debug for ILaunchActivatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for ILaunchActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{fbc93e26-a14a-4b4f-82b0-33bed920af52}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -11359,6 +11161,11 @@ pub struct ILaunchActivatedEventArgs_Vtbl {
 #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
 #[repr(transparent)]
 pub struct ILaunchActivatedEventArgs2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILaunchActivatedEventArgs2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ILaunchActivatedEventArgs2 {
     #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
     pub fn TileActivatedInfo(&self) -> ::windows::core::Result<TileActivatedInfo> {
@@ -11493,11 +11300,6 @@ impl<'a> ::windows::core::IntoParam<'a, ILaunchActivatedEventArgs> for &ILaunchA
         ::core::convert::TryInto::<ILaunchActivatedEventArgs>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for ILaunchActivatedEventArgs2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ILaunchActivatedEventArgs2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11511,7 +11313,6 @@ impl ::core::fmt::Debug for ILaunchActivatedEventArgs2 {
 }
 unsafe impl ::windows::core::RuntimeType for ILaunchActivatedEventArgs2 {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{0fd37ebc-9dc9-46b5-9ace-bd95d4565345}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -11529,6 +11330,11 @@ pub struct ILaunchActivatedEventArgs2_Vtbl {
 #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
 #[repr(transparent)]
 pub struct ILockScreenActivatedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILockScreenActivatedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ILockScreenActivatedEventArgs {
     #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
     pub fn Info(&self) -> ::windows::core::Result<::windows::core::IInspectable> {
@@ -11625,11 +11431,6 @@ impl<'a> ::windows::core::IntoParam<'a, IActivatedEventArgs> for &ILockScreenAct
         ::core::convert::TryInto::<IActivatedEventArgs>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for ILockScreenActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ILockScreenActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11643,7 +11444,6 @@ impl ::core::fmt::Debug for ILockScreenActivatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for ILockScreenActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{3ca77966-6108-4a41-8220-ee7d133c8532}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -11661,6 +11461,11 @@ pub struct ILockScreenActivatedEventArgs_Vtbl {
 #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
 #[repr(transparent)]
 pub struct ILockScreenCallActivatedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILockScreenCallActivatedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ILockScreenCallActivatedEventArgs {
     #[doc = "*Required features: `\"ApplicationModel_Activation\"`, `\"ApplicationModel_Calls\"`*"]
     #[cfg(feature = "ApplicationModel_Calls")]
@@ -11796,11 +11601,6 @@ impl<'a> ::windows::core::IntoParam<'a, ILaunchActivatedEventArgs> for &ILockScr
         ::core::convert::TryInto::<ILaunchActivatedEventArgs>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for ILockScreenCallActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ILockScreenCallActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11814,7 +11614,6 @@ impl ::core::fmt::Debug for ILockScreenCallActivatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for ILockScreenCallActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{06f37fbe-b5f2-448b-b13e-e328ac1c516a}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -11835,6 +11634,11 @@ pub struct ILockScreenCallActivatedEventArgs_Vtbl {
 #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
 #[repr(transparent)]
 pub struct IPhoneCallActivatedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPhoneCallActivatedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPhoneCallActivatedEventArgs {
     #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
     pub fn LineId(&self) -> ::windows::core::Result<::windows::core::GUID> {
@@ -11931,11 +11735,6 @@ impl<'a> ::windows::core::IntoParam<'a, IActivatedEventArgs> for &IPhoneCallActi
         ::core::convert::TryInto::<IActivatedEventArgs>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IPhoneCallActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPhoneCallActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11949,7 +11748,6 @@ impl ::core::fmt::Debug for IPhoneCallActivatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for IPhoneCallActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{54615221-a3c1-4ced-b62f-8c60523619ad}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -11967,6 +11765,11 @@ pub struct IPhoneCallActivatedEventArgs_Vtbl {
 #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
 #[repr(transparent)]
 pub struct IPickerReturnedActivatedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPickerReturnedActivatedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPickerReturnedActivatedEventArgs {
     #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
     pub fn PickerOperationId(&self) -> ::windows::core::Result<::windows::core::HSTRING> {
@@ -12063,11 +11866,6 @@ impl<'a> ::windows::core::IntoParam<'a, IActivatedEventArgs> for &IPickerReturne
         ::core::convert::TryInto::<IActivatedEventArgs>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IPickerReturnedActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPickerReturnedActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12081,7 +11879,6 @@ impl ::core::fmt::Debug for IPickerReturnedActivatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for IPickerReturnedActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{360defb9-a9d3-4984-a4ed-9ec734604921}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -12099,6 +11896,11 @@ pub struct IPickerReturnedActivatedEventArgs_Vtbl {
 #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
 #[repr(transparent)]
 pub struct IPrelaunchActivatedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrelaunchActivatedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPrelaunchActivatedEventArgs {
     #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
     pub fn PrelaunchActivated(&self) -> ::windows::core::Result<bool> {
@@ -12195,11 +11997,6 @@ impl<'a> ::windows::core::IntoParam<'a, IActivatedEventArgs> for &IPrelaunchActi
         ::core::convert::TryInto::<IActivatedEventArgs>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IPrelaunchActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPrelaunchActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12213,7 +12010,6 @@ impl ::core::fmt::Debug for IPrelaunchActivatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for IPrelaunchActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{0c44717b-19f7-48d6-b046-cf22826eaa74}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -12231,6 +12027,11 @@ pub struct IPrelaunchActivatedEventArgs_Vtbl {
 #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
 #[repr(transparent)]
 pub struct IPrint3DWorkflowActivatedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrint3DWorkflowActivatedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPrint3DWorkflowActivatedEventArgs {
     #[doc = "*Required features: `\"ApplicationModel_Activation\"`, `\"Devices_Printers_Extensions\"`*"]
     #[cfg(feature = "Devices_Printers_Extensions")]
@@ -12328,11 +12129,6 @@ impl<'a> ::windows::core::IntoParam<'a, IActivatedEventArgs> for &IPrint3DWorkfl
         ::core::convert::TryInto::<IActivatedEventArgs>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IPrint3DWorkflowActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPrint3DWorkflowActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12346,7 +12142,6 @@ impl ::core::fmt::Debug for IPrint3DWorkflowActivatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for IPrint3DWorkflowActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{3f57e78b-f2ac-4619-8302-ef855e1c9b90}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -12367,6 +12162,11 @@ pub struct IPrint3DWorkflowActivatedEventArgs_Vtbl {
 #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
 #[repr(transparent)]
 pub struct IPrintTaskSettingsActivatedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrintTaskSettingsActivatedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPrintTaskSettingsActivatedEventArgs {
     #[doc = "*Required features: `\"ApplicationModel_Activation\"`, `\"Devices_Printers_Extensions\"`*"]
     #[cfg(feature = "Devices_Printers_Extensions")]
@@ -12464,11 +12264,6 @@ impl<'a> ::windows::core::IntoParam<'a, IActivatedEventArgs> for &IPrintTaskSett
         ::core::convert::TryInto::<IActivatedEventArgs>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IPrintTaskSettingsActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPrintTaskSettingsActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12482,7 +12277,6 @@ impl ::core::fmt::Debug for IPrintTaskSettingsActivatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for IPrintTaskSettingsActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{ee30a0c9-ce56-4865-ba8e-8954ac271107}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -12503,6 +12297,11 @@ pub struct IPrintTaskSettingsActivatedEventArgs_Vtbl {
 #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
 #[repr(transparent)]
 pub struct IProtocolActivatedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IProtocolActivatedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IProtocolActivatedEventArgs {
     #[doc = "*Required features: `\"ApplicationModel_Activation\"`, `\"Foundation\"`*"]
     #[cfg(feature = "Foundation")]
@@ -12600,11 +12399,6 @@ impl<'a> ::windows::core::IntoParam<'a, IActivatedEventArgs> for &IProtocolActiv
         ::core::convert::TryInto::<IActivatedEventArgs>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IProtocolActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IProtocolActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12618,7 +12412,6 @@ impl ::core::fmt::Debug for IProtocolActivatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for IProtocolActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{6095f4dd-b7c0-46ab-81fe-d90f36d00d24}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -12639,6 +12432,11 @@ pub struct IProtocolActivatedEventArgs_Vtbl {
 #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
 #[repr(transparent)]
 pub struct IProtocolActivatedEventArgsWithCallerPackageFamilyNameAndData(::windows::core::IUnknown);
+impl ::core::clone::Clone for IProtocolActivatedEventArgsWithCallerPackageFamilyNameAndData {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IProtocolActivatedEventArgsWithCallerPackageFamilyNameAndData {
     #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
     pub fn CallerPackageFamilyName(&self) -> ::windows::core::Result<::windows::core::HSTRING> {
@@ -12744,11 +12542,6 @@ impl<'a> ::windows::core::IntoParam<'a, IActivatedEventArgs> for &IProtocolActiv
         ::core::convert::TryInto::<IActivatedEventArgs>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IProtocolActivatedEventArgsWithCallerPackageFamilyNameAndData {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IProtocolActivatedEventArgsWithCallerPackageFamilyNameAndData {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12762,7 +12555,6 @@ impl ::core::fmt::Debug for IProtocolActivatedEventArgsWithCallerPackageFamilyNa
 }
 unsafe impl ::windows::core::RuntimeType for IProtocolActivatedEventArgsWithCallerPackageFamilyNameAndData {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{d84a0c12-5c8f-438c-83cb-c28fcc0b2fdb}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -12784,6 +12576,11 @@ pub struct IProtocolActivatedEventArgsWithCallerPackageFamilyNameAndData_Vtbl {
 #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
 #[repr(transparent)]
 pub struct IProtocolForResultsActivatedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IProtocolForResultsActivatedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IProtocolForResultsActivatedEventArgs {
     #[doc = "*Required features: `\"ApplicationModel_Activation\"`, `\"System\"`*"]
     #[cfg(feature = "System")]
@@ -12881,11 +12678,6 @@ impl<'a> ::windows::core::IntoParam<'a, IActivatedEventArgs> for &IProtocolForRe
         ::core::convert::TryInto::<IActivatedEventArgs>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IProtocolForResultsActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IProtocolForResultsActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12899,7 +12691,6 @@ impl ::core::fmt::Debug for IProtocolForResultsActivatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for IProtocolForResultsActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{e75132c2-7ae7-4517-80ac-dbe8d7cc5b9c}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -12920,6 +12711,11 @@ pub struct IProtocolForResultsActivatedEventArgs_Vtbl {
 #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
 #[repr(transparent)]
 pub struct IRestrictedLaunchActivatedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRestrictedLaunchActivatedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRestrictedLaunchActivatedEventArgs {
     #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
     pub fn SharedContext(&self) -> ::windows::core::Result<::windows::core::IInspectable> {
@@ -13016,11 +12812,6 @@ impl<'a> ::windows::core::IntoParam<'a, IActivatedEventArgs> for &IRestrictedLau
         ::core::convert::TryInto::<IActivatedEventArgs>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IRestrictedLaunchActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IRestrictedLaunchActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13034,7 +12825,6 @@ impl ::core::fmt::Debug for IRestrictedLaunchActivatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for IRestrictedLaunchActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{e0b7ac81-bfc3-4344-a5da-19fd5a27baae}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -13052,6 +12842,11 @@ pub struct IRestrictedLaunchActivatedEventArgs_Vtbl {
 #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
 #[repr(transparent)]
 pub struct ISearchActivatedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISearchActivatedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISearchActivatedEventArgs {
     #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
     pub fn QueryText(&self) -> ::windows::core::Result<::windows::core::HSTRING> {
@@ -13156,11 +12951,6 @@ impl<'a> ::windows::core::IntoParam<'a, IActivatedEventArgs> for &ISearchActivat
         ::core::convert::TryInto::<IActivatedEventArgs>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for ISearchActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISearchActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13174,7 +12964,6 @@ impl ::core::fmt::Debug for ISearchActivatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for ISearchActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{8cb36951-58c8-43e3-94bc-41d33f8b630e}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -13193,6 +12982,11 @@ pub struct ISearchActivatedEventArgs_Vtbl {
 #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
 #[repr(transparent)]
 pub struct ISearchActivatedEventArgsWithLinguisticDetails(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISearchActivatedEventArgsWithLinguisticDetails {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISearchActivatedEventArgsWithLinguisticDetails {
     #[doc = "*Required features: `\"ApplicationModel_Activation\"`, `\"ApplicationModel_Search\"`*"]
     #[cfg(feature = "ApplicationModel_Search")]
@@ -13244,11 +13038,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISearchActivatedEventArgsWithLinguisticDetails {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISearchActivatedEventArgsWithLinguisticDetails {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13262,7 +13051,6 @@ impl ::core::fmt::Debug for ISearchActivatedEventArgsWithLinguisticDetails {
 }
 unsafe impl ::windows::core::RuntimeType for ISearchActivatedEventArgsWithLinguisticDetails {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{c09f33da-08ab-4931-9b7c-451025f21f81}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -13283,6 +13071,11 @@ pub struct ISearchActivatedEventArgsWithLinguisticDetails_Vtbl {
 #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
 #[repr(transparent)]
 pub struct IShareTargetActivatedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IShareTargetActivatedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IShareTargetActivatedEventArgs {
     #[doc = "*Required features: `\"ApplicationModel_Activation\"`, `\"ApplicationModel_DataTransfer_ShareTarget\"`*"]
     #[cfg(feature = "ApplicationModel_DataTransfer_ShareTarget")]
@@ -13380,11 +13173,6 @@ impl<'a> ::windows::core::IntoParam<'a, IActivatedEventArgs> for &IShareTargetAc
         ::core::convert::TryInto::<IActivatedEventArgs>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IShareTargetActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IShareTargetActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13398,7 +13186,6 @@ impl ::core::fmt::Debug for IShareTargetActivatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for IShareTargetActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{4bdaf9c8-cdb2-4acb-bfc3-6648563378ec}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -13419,6 +13206,11 @@ pub struct IShareTargetActivatedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISplashScreen(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISplashScreen {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISplashScreen {
     type Vtable = ISplashScreen_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xca4d975c_d4d6_43f0_97c0_0833c6391c24);
@@ -13443,6 +13235,11 @@ pub struct ISplashScreen_Vtbl {
 #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
 #[repr(transparent)]
 pub struct IStartupTaskActivatedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStartupTaskActivatedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IStartupTaskActivatedEventArgs {
     #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
     pub fn TaskId(&self) -> ::windows::core::Result<::windows::core::HSTRING> {
@@ -13539,11 +13336,6 @@ impl<'a> ::windows::core::IntoParam<'a, IActivatedEventArgs> for &IStartupTaskAc
         ::core::convert::TryInto::<IActivatedEventArgs>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IStartupTaskActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IStartupTaskActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13557,7 +13349,6 @@ impl ::core::fmt::Debug for IStartupTaskActivatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for IStartupTaskActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{03b11a58-5276-4d91-8621-54611864d5fa}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -13575,6 +13366,11 @@ pub struct IStartupTaskActivatedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ITileActivatedInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITileActivatedInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ITileActivatedInfo {
     type Vtable = ITileActivatedInfo_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x80e4a3b1_3980_4f17_b738_89194e0b8f65);
@@ -13591,6 +13387,11 @@ pub struct ITileActivatedInfo_Vtbl {
 #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
 #[repr(transparent)]
 pub struct IToastNotificationActivatedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IToastNotificationActivatedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IToastNotificationActivatedEventArgs {
     #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
     pub fn Argument(&self) -> ::windows::core::Result<::windows::core::HSTRING> {
@@ -13696,11 +13497,6 @@ impl<'a> ::windows::core::IntoParam<'a, IActivatedEventArgs> for &IToastNotifica
         ::core::convert::TryInto::<IActivatedEventArgs>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IToastNotificationActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IToastNotificationActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13714,7 +13510,6 @@ impl ::core::fmt::Debug for IToastNotificationActivatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for IToastNotificationActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{92a86f82-5290-431d-be85-c4aaeeb8685f}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -13736,6 +13531,11 @@ pub struct IToastNotificationActivatedEventArgs_Vtbl {
 #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
 #[repr(transparent)]
 pub struct IUserDataAccountProviderActivatedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUserDataAccountProviderActivatedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUserDataAccountProviderActivatedEventArgs {
     #[doc = "*Required features: `\"ApplicationModel_Activation\"`, `\"ApplicationModel_UserDataAccounts_Provider\"`*"]
     #[cfg(feature = "ApplicationModel_UserDataAccounts_Provider")]
@@ -13833,11 +13633,6 @@ impl<'a> ::windows::core::IntoParam<'a, IActivatedEventArgs> for &IUserDataAccou
         ::core::convert::TryInto::<IActivatedEventArgs>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IUserDataAccountProviderActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUserDataAccountProviderActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13851,7 +13646,6 @@ impl ::core::fmt::Debug for IUserDataAccountProviderActivatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for IUserDataAccountProviderActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{1bc9f723-8ef1-4a51-a63a-fe711eeab607}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -13872,6 +13666,11 @@ pub struct IUserDataAccountProviderActivatedEventArgs_Vtbl {
 #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
 #[repr(transparent)]
 pub struct IViewSwitcherProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IViewSwitcherProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IViewSwitcherProvider {
     #[doc = "*Required features: `\"ApplicationModel_Activation\"`, `\"UI_ViewManagement\"`*"]
     #[cfg(feature = "UI_ViewManagement")]
@@ -13969,11 +13768,6 @@ impl<'a> ::windows::core::IntoParam<'a, IActivatedEventArgs> for &IViewSwitcherP
         ::core::convert::TryInto::<IActivatedEventArgs>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IViewSwitcherProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IViewSwitcherProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13987,7 +13781,6 @@ impl ::core::fmt::Debug for IViewSwitcherProvider {
 }
 unsafe impl ::windows::core::RuntimeType for IViewSwitcherProvider {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{33f288a6-5c2c-4d27-bac7-7536088f1219}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -14008,6 +13801,11 @@ pub struct IViewSwitcherProvider_Vtbl {
 #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
 #[repr(transparent)]
 pub struct IVoiceCommandActivatedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVoiceCommandActivatedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IVoiceCommandActivatedEventArgs {
     #[doc = "*Required features: `\"ApplicationModel_Activation\"`, `\"Media_SpeechRecognition\"`*"]
     #[cfg(feature = "Media_SpeechRecognition")]
@@ -14105,11 +13903,6 @@ impl<'a> ::windows::core::IntoParam<'a, IActivatedEventArgs> for &IVoiceCommandA
         ::core::convert::TryInto::<IActivatedEventArgs>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IVoiceCommandActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IVoiceCommandActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -14123,7 +13916,6 @@ impl ::core::fmt::Debug for IVoiceCommandActivatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for IVoiceCommandActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{ab92dcfd-8d43-4de6-9775-20704b581b00}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -14144,6 +13936,11 @@ pub struct IVoiceCommandActivatedEventArgs_Vtbl {
 #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
 #[repr(transparent)]
 pub struct IWalletActionActivatedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWalletActionActivatedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWalletActionActivatedEventArgs {
     #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
     pub fn ItemId(&self) -> ::windows::core::Result<::windows::core::HSTRING> {
@@ -14257,11 +14054,6 @@ impl<'a> ::windows::core::IntoParam<'a, IActivatedEventArgs> for &IWalletActionA
         ::core::convert::TryInto::<IActivatedEventArgs>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IWalletActionActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWalletActionActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -14275,7 +14067,6 @@ impl ::core::fmt::Debug for IWalletActionActivatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for IWalletActionActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{fcfc027b-1a1a-4d22-923f-ae6f45fa52d9}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -14298,6 +14089,11 @@ pub struct IWalletActionActivatedEventArgs_Vtbl {
 #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
 #[repr(transparent)]
 pub struct IWebAccountProviderActivatedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWebAccountProviderActivatedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWebAccountProviderActivatedEventArgs {
     #[doc = "*Required features: `\"ApplicationModel_Activation\"`, `\"Security_Authentication_Web_Provider\"`*"]
     #[cfg(feature = "Security_Authentication_Web_Provider")]
@@ -14395,11 +14191,6 @@ impl<'a> ::windows::core::IntoParam<'a, IActivatedEventArgs> for &IWebAccountPro
         ::core::convert::TryInto::<IActivatedEventArgs>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IWebAccountProviderActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWebAccountProviderActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -14413,7 +14204,6 @@ impl ::core::fmt::Debug for IWebAccountProviderActivatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for IWebAccountProviderActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{72b71774-98ea-4ccf-9752-46d9051004f1}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -14434,6 +14224,11 @@ pub struct IWebAccountProviderActivatedEventArgs_Vtbl {
 #[doc = "*Required features: `\"ApplicationModel_Activation\"`*"]
 #[repr(transparent)]
 pub struct IWebAuthenticationBrokerContinuationEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWebAuthenticationBrokerContinuationEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWebAuthenticationBrokerContinuationEventArgs {
     #[doc = "*Required features: `\"ApplicationModel_Activation\"`, `\"Security_Authentication_Web\"`*"]
     #[cfg(feature = "Security_Authentication_Web")]
@@ -14562,11 +14357,6 @@ impl<'a> ::windows::core::IntoParam<'a, IContinuationActivatedEventArgs> for &IW
         ::core::convert::TryInto::<IContinuationActivatedEventArgs>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IWebAuthenticationBrokerContinuationEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWebAuthenticationBrokerContinuationEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -14580,7 +14370,6 @@ impl ::core::fmt::Debug for IWebAuthenticationBrokerContinuationEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for IWebAuthenticationBrokerContinuationEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{75dda3d4-7714-453d-b7ff-b95e3a1709da}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -14685,11 +14474,6 @@ impl LaunchActivatedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for LaunchActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for LaunchActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -14703,7 +14487,6 @@ impl ::core::fmt::Debug for LaunchActivatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for LaunchActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Activation.LaunchActivatedEventArgs;{fbc93e26-a14a-4b4f-82b0-33bed920af52})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -14957,11 +14740,6 @@ impl LockScreenActivatedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for LockScreenActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for LockScreenActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -14975,7 +14753,6 @@ impl ::core::fmt::Debug for LockScreenActivatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for LockScreenActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Activation.LockScreenActivatedEventArgs;{3ca77966-6108-4a41-8220-ee7d133c8532})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -15166,11 +14943,6 @@ impl LockScreenCallActivatedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for LockScreenCallActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for LockScreenCallActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -15184,7 +14956,6 @@ impl ::core::fmt::Debug for LockScreenCallActivatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for LockScreenCallActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Activation.LockScreenCallActivatedEventArgs;{06f37fbe-b5f2-448b-b13e-e328ac1c516a})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -15377,11 +15148,6 @@ impl LockScreenComponentActivatedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for LockScreenComponentActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for LockScreenComponentActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -15395,7 +15161,6 @@ impl ::core::fmt::Debug for LockScreenComponentActivatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for LockScreenComponentActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Activation.LockScreenComponentActivatedEventArgs;{cf651713-cd08-4fd8-b697-a281b6544e2e})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -15517,11 +15282,6 @@ impl PhoneCallActivatedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for PhoneCallActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PhoneCallActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -15535,7 +15295,6 @@ impl ::core::fmt::Debug for PhoneCallActivatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for PhoneCallActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Activation.PhoneCallActivatedEventArgs;{54615221-a3c1-4ced-b62f-8c60523619ad})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -15692,11 +15451,6 @@ impl PickerReturnedActivatedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for PickerReturnedActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PickerReturnedActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -15710,7 +15464,6 @@ impl ::core::fmt::Debug for PickerReturnedActivatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for PickerReturnedActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Activation.PickerReturnedActivatedEventArgs;{360defb9-a9d3-4984-a4ed-9ec734604921})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -15846,11 +15599,6 @@ impl Print3DWorkflowActivatedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for Print3DWorkflowActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for Print3DWorkflowActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -15864,7 +15612,6 @@ impl ::core::fmt::Debug for Print3DWorkflowActivatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for Print3DWorkflowActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Activation.Print3DWorkflowActivatedEventArgs;{3f57e78b-f2ac-4619-8302-ef855e1c9b90})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -16000,11 +15747,6 @@ impl PrintTaskSettingsActivatedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for PrintTaskSettingsActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PrintTaskSettingsActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -16018,7 +15760,6 @@ impl ::core::fmt::Debug for PrintTaskSettingsActivatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for PrintTaskSettingsActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Activation.PrintTaskSettingsActivatedEventArgs;{ee30a0c9-ce56-4865-ba8e-8954ac271107})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -16197,11 +15938,6 @@ impl ProtocolActivatedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for ProtocolActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ProtocolActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -16215,7 +15951,6 @@ impl ::core::fmt::Debug for ProtocolActivatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for ProtocolActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Activation.ProtocolActivatedEventArgs;{6095f4dd-b7c0-46ab-81fe-d90f36d00d24})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -16491,11 +16226,6 @@ impl ProtocolForResultsActivatedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for ProtocolForResultsActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ProtocolForResultsActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -16509,7 +16239,6 @@ impl ::core::fmt::Debug for ProtocolForResultsActivatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for ProtocolForResultsActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Activation.ProtocolForResultsActivatedEventArgs;{e75132c2-7ae7-4517-80ac-dbe8d7cc5b9c})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -16763,11 +16492,6 @@ impl RestrictedLaunchActivatedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for RestrictedLaunchActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for RestrictedLaunchActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -16781,7 +16505,6 @@ impl ::core::fmt::Debug for RestrictedLaunchActivatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for RestrictedLaunchActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Activation.RestrictedLaunchActivatedEventArgs;{e0b7ac81-bfc3-4344-a5da-19fd5a27baae})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -16981,11 +16704,6 @@ impl SearchActivatedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for SearchActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SearchActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -16999,7 +16717,6 @@ impl ::core::fmt::Debug for SearchActivatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for SearchActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Activation.SearchActivatedEventArgs;{8cb36951-58c8-43e3-94bc-41d33f8b630e})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -17232,11 +16949,6 @@ impl ShareTargetActivatedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for ShareTargetActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ShareTargetActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -17250,7 +16962,6 @@ impl ::core::fmt::Debug for ShareTargetActivatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for ShareTargetActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Activation.ShareTargetActivatedEventArgs;{4bdaf9c8-cdb2-4acb-bfc3-6648563378ec})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -17399,11 +17110,6 @@ impl SplashScreen {
         unsafe { (::windows::core::Interface::vtable(this).RemoveDismissed)(::core::mem::transmute_copy(this), cookie.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for SplashScreen {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SplashScreen {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -17417,7 +17123,6 @@ impl ::core::fmt::Debug for SplashScreen {
 }
 unsafe impl ::windows::core::RuntimeType for SplashScreen {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Activation.SplashScreen;{ca4d975c-d4d6-43f0-97c0-0833c6391c24})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -17515,11 +17220,6 @@ impl StartupTaskActivatedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for StartupTaskActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for StartupTaskActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -17533,7 +17233,6 @@ impl ::core::fmt::Debug for StartupTaskActivatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for StartupTaskActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Activation.StartupTaskActivatedEventArgs;{03b11a58-5276-4d91-8621-54611864d5fa})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -17667,11 +17366,6 @@ impl TileActivatedInfo {
         }
     }
 }
-impl ::core::clone::Clone for TileActivatedInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for TileActivatedInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -17685,7 +17379,6 @@ impl ::core::fmt::Debug for TileActivatedInfo {
 }
 unsafe impl ::windows::core::RuntimeType for TileActivatedInfo {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Activation.TileActivatedInfo;{80e4a3b1-3980-4f17-b738-89194e0b8f65})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -17802,11 +17495,6 @@ impl ToastNotificationActivatedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for ToastNotificationActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ToastNotificationActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -17820,7 +17508,6 @@ impl ::core::fmt::Debug for ToastNotificationActivatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for ToastNotificationActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Activation.ToastNotificationActivatedEventArgs;{92a86f82-5290-431d-be85-c4aaeeb8685f})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -18000,11 +17687,6 @@ impl UserDataAccountProviderActivatedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for UserDataAccountProviderActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for UserDataAccountProviderActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -18018,7 +17700,6 @@ impl ::core::fmt::Debug for UserDataAccountProviderActivatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for UserDataAccountProviderActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Activation.UserDataAccountProviderActivatedEventArgs;{1bc9f723-8ef1-4a51-a63a-fe711eeab607})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -18163,11 +17844,6 @@ impl VoiceCommandActivatedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for VoiceCommandActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for VoiceCommandActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -18181,7 +17857,6 @@ impl ::core::fmt::Debug for VoiceCommandActivatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for VoiceCommandActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Activation.VoiceCommandActivatedEventArgs;{ab92dcfd-8d43-4de6-9775-20704b581b00})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -18355,11 +18030,6 @@ impl WalletActionActivatedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for WalletActionActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for WalletActionActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -18373,7 +18043,6 @@ impl ::core::fmt::Debug for WalletActionActivatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for WalletActionActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Activation.WalletActionActivatedEventArgs;{fcfc027b-1a1a-4d22-923f-ae6f45fa52d9})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -18518,11 +18187,6 @@ impl WebAccountProviderActivatedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for WebAccountProviderActivatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for WebAccountProviderActivatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -18536,7 +18200,6 @@ impl ::core::fmt::Debug for WebAccountProviderActivatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for WebAccountProviderActivatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Activation.WebAccountProviderActivatedEventArgs;{72b71774-98ea-4ccf-9752-46d9051004f1})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -18703,11 +18366,6 @@ impl WebAuthenticationBrokerContinuationEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for WebAuthenticationBrokerContinuationEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for WebAuthenticationBrokerContinuationEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -18721,7 +18379,6 @@ impl ::core::fmt::Debug for WebAuthenticationBrokerContinuationEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for WebAuthenticationBrokerContinuationEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Activation.WebAuthenticationBrokerContinuationEventArgs;{75dda3d4-7714-453d-b7ff-b95e3a1709da})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

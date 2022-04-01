@@ -59,11 +59,6 @@ impl<F: FnMut(&::core::option::Option<IAsyncAction>, AsyncStatus) -> ::windows::
         ((*this).invoke)(::core::mem::transmute(&asyncinfo), asyncstatus).into()
     }
 }
-impl ::core::clone::Clone for AsyncActionCompletedHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AsyncActionCompletedHandler {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -81,7 +76,6 @@ unsafe impl ::windows::core::Interface for AsyncActionCompletedHandler {
 }
 unsafe impl ::windows::core::RuntimeType for AsyncActionCompletedHandler {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{a4ed5c81-76c9-40bd-8be6-b1d90fb20ae7}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -150,11 +144,6 @@ impl<TProgress: ::windows::core::RuntimeType + 'static, F: FnMut(&::core::option
         ((*this).invoke)(::core::mem::transmute(&asyncinfo), ::core::mem::transmute(&progressinfo)).into()
     }
 }
-impl<TProgress: ::windows::core::RuntimeType + 'static> ::core::clone::Clone for AsyncActionProgressHandler<TProgress> {
-    fn clone(&self) -> Self {
-        Self(self.0.clone(), ::core::marker::PhantomData::<TProgress>)
-    }
-}
 impl<TProgress: ::windows::core::RuntimeType + 'static> ::core::cmp::PartialEq for AsyncActionProgressHandler<TProgress> {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -172,7 +161,6 @@ unsafe impl<TProgress: ::windows::core::RuntimeType + 'static> ::windows::core::
 }
 unsafe impl<TProgress: ::windows::core::RuntimeType + 'static> ::windows::core::RuntimeType for AsyncActionProgressHandler<TProgress> {
     const SIGNATURE: ::windows::core::ConstBuffer = { ::windows::core::ConstBuffer::new().push_slice(b"pinterface(").push_slice(b"{6d844858-0cff-4590-ae89-95a5a5c8b4b8}").push_slice(b";").push_other(<TProgress as ::windows::core::RuntimeType>::SIGNATURE).push_slice(b")") };
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -245,11 +233,6 @@ impl<TProgress: ::windows::core::RuntimeType + 'static, F: FnMut(&::core::option
         ((*this).invoke)(::core::mem::transmute(&asyncinfo), asyncstatus).into()
     }
 }
-impl<TProgress: ::windows::core::RuntimeType + 'static> ::core::clone::Clone for AsyncActionWithProgressCompletedHandler<TProgress> {
-    fn clone(&self) -> Self {
-        Self(self.0.clone(), ::core::marker::PhantomData::<TProgress>)
-    }
-}
 impl<TProgress: ::windows::core::RuntimeType + 'static> ::core::cmp::PartialEq for AsyncActionWithProgressCompletedHandler<TProgress> {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -267,7 +250,6 @@ unsafe impl<TProgress: ::windows::core::RuntimeType + 'static> ::windows::core::
 }
 unsafe impl<TProgress: ::windows::core::RuntimeType + 'static> ::windows::core::RuntimeType for AsyncActionWithProgressCompletedHandler<TProgress> {
     const SIGNATURE: ::windows::core::ConstBuffer = { ::windows::core::ConstBuffer::new().push_slice(b"pinterface(").push_slice(b"{9c029f91-cc84-44fd-ac26-0a6c4e555281}").push_slice(b";").push_other(<TProgress as ::windows::core::RuntimeType>::SIGNATURE).push_slice(b")") };
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -340,11 +322,6 @@ impl<TResult: ::windows::core::RuntimeType + 'static, F: FnMut(&::core::option::
         ((*this).invoke)(::core::mem::transmute(&asyncinfo), asyncstatus).into()
     }
 }
-impl<TResult: ::windows::core::RuntimeType + 'static> ::core::clone::Clone for AsyncOperationCompletedHandler<TResult> {
-    fn clone(&self) -> Self {
-        Self(self.0.clone(), ::core::marker::PhantomData::<TResult>)
-    }
-}
 impl<TResult: ::windows::core::RuntimeType + 'static> ::core::cmp::PartialEq for AsyncOperationCompletedHandler<TResult> {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -362,7 +339,6 @@ unsafe impl<TResult: ::windows::core::RuntimeType + 'static> ::windows::core::In
 }
 unsafe impl<TResult: ::windows::core::RuntimeType + 'static> ::windows::core::RuntimeType for AsyncOperationCompletedHandler<TResult> {
     const SIGNATURE: ::windows::core::ConstBuffer = { ::windows::core::ConstBuffer::new().push_slice(b"pinterface(").push_slice(b"{fcdcf02c-e5d8-4478-915a-4d90b74b83a5}").push_slice(b";").push_other(<TResult as ::windows::core::RuntimeType>::SIGNATURE).push_slice(b")") };
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -438,11 +414,6 @@ impl<TResult: ::windows::core::RuntimeType + 'static, TProgress: ::windows::core
         ((*this).invoke)(::core::mem::transmute(&asyncinfo), ::core::mem::transmute(&progressinfo)).into()
     }
 }
-impl<TResult: ::windows::core::RuntimeType + 'static, TProgress: ::windows::core::RuntimeType + 'static> ::core::clone::Clone for AsyncOperationProgressHandler<TResult, TProgress> {
-    fn clone(&self) -> Self {
-        Self(self.0.clone(), ::core::marker::PhantomData::<TResult>, ::core::marker::PhantomData::<TProgress>)
-    }
-}
 impl<TResult: ::windows::core::RuntimeType + 'static, TProgress: ::windows::core::RuntimeType + 'static> ::core::cmp::PartialEq for AsyncOperationProgressHandler<TResult, TProgress> {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -460,7 +431,6 @@ unsafe impl<TResult: ::windows::core::RuntimeType + 'static, TProgress: ::window
 }
 unsafe impl<TResult: ::windows::core::RuntimeType + 'static, TProgress: ::windows::core::RuntimeType + 'static> ::windows::core::RuntimeType for AsyncOperationProgressHandler<TResult, TProgress> {
     const SIGNATURE: ::windows::core::ConstBuffer = { ::windows::core::ConstBuffer::new().push_slice(b"pinterface(").push_slice(b"{55690902-0aab-421a-8778-f8ce5026d758}").push_slice(b";").push_other(<TResult as ::windows::core::RuntimeType>::SIGNATURE).push_slice(b";").push_other(<TProgress as ::windows::core::RuntimeType>::SIGNATURE).push_slice(b")") };
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -538,11 +508,6 @@ impl<TResult: ::windows::core::RuntimeType + 'static, TProgress: ::windows::core
         ((*this).invoke)(::core::mem::transmute(&asyncinfo), asyncstatus).into()
     }
 }
-impl<TResult: ::windows::core::RuntimeType + 'static, TProgress: ::windows::core::RuntimeType + 'static> ::core::clone::Clone for AsyncOperationWithProgressCompletedHandler<TResult, TProgress> {
-    fn clone(&self) -> Self {
-        Self(self.0.clone(), ::core::marker::PhantomData::<TResult>, ::core::marker::PhantomData::<TProgress>)
-    }
-}
 impl<TResult: ::windows::core::RuntimeType + 'static, TProgress: ::windows::core::RuntimeType + 'static> ::core::cmp::PartialEq for AsyncOperationWithProgressCompletedHandler<TResult, TProgress> {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -560,7 +525,6 @@ unsafe impl<TResult: ::windows::core::RuntimeType + 'static, TProgress: ::window
 }
 unsafe impl<TResult: ::windows::core::RuntimeType + 'static, TProgress: ::windows::core::RuntimeType + 'static> ::windows::core::RuntimeType for AsyncOperationWithProgressCompletedHandler<TResult, TProgress> {
     const SIGNATURE: ::windows::core::ConstBuffer = { ::windows::core::ConstBuffer::new().push_slice(b"pinterface(").push_slice(b"{e85df41d-6aa7-46e3-a8e2-f009d840c627}").push_slice(b";").push_other(<TResult as ::windows::core::RuntimeType>::SIGNATURE).push_slice(b";").push_other(<TProgress as ::windows::core::RuntimeType>::SIGNATURE).push_slice(b")") };
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -600,6 +564,7 @@ impl ::core::default::Default for AsyncStatus {
 }
 unsafe impl ::windows::core::Abi for AsyncStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AsyncStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -608,7 +573,6 @@ impl ::core::fmt::Debug for AsyncStatus {
 }
 unsafe impl ::windows::core::RuntimeType for AsyncStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Foundation.AsyncStatus;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -631,10 +595,10 @@ impl ::core::fmt::Debug for DateTime {
 }
 unsafe impl ::windows::core::Abi for DateTime {
     type Abi = Self;
+    type DefaultType = Self;
 }
 unsafe impl ::windows::core::RuntimeType for DateTime {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"struct(Windows.Foundation.DateTime;i8)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -677,11 +641,6 @@ impl Deferral {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for Deferral {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for Deferral {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -695,7 +654,6 @@ impl ::core::fmt::Debug for Deferral {
 }
 unsafe impl ::windows::core::RuntimeType for Deferral {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Foundation.Deferral;{d6269732-3b7f-46a7-b40b-4fdca2a2c693})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -823,11 +781,6 @@ impl<F: FnMut() -> ::windows::core::Result<()> + ::core::marker::Send + 'static>
         ((*this).invoke)().into()
     }
 }
-impl ::core::clone::Clone for DeferralCompletedHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DeferralCompletedHandler {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -845,7 +798,6 @@ unsafe impl ::windows::core::Interface for DeferralCompletedHandler {
 }
 unsafe impl ::windows::core::RuntimeType for DeferralCompletedHandler {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{ed32a372-f3c8-4faa-9cfb-470148da3888}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -914,11 +866,6 @@ impl<T: ::windows::core::RuntimeType + 'static, F: FnMut(&::core::option::Option
         ((*this).invoke)(::core::mem::transmute(&sender), ::core::mem::transmute(&args)).into()
     }
 }
-impl<T: ::windows::core::RuntimeType + 'static> ::core::clone::Clone for EventHandler<T> {
-    fn clone(&self) -> Self {
-        Self(self.0.clone(), ::core::marker::PhantomData::<T>)
-    }
-}
 impl<T: ::windows::core::RuntimeType + 'static> ::core::cmp::PartialEq for EventHandler<T> {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -936,7 +883,6 @@ unsafe impl<T: ::windows::core::RuntimeType + 'static> ::windows::core::Interfac
 }
 unsafe impl<T: ::windows::core::RuntimeType + 'static> ::windows::core::RuntimeType for EventHandler<T> {
     const SIGNATURE: ::windows::core::ConstBuffer = { ::windows::core::ConstBuffer::new().push_slice(b"pinterface(").push_slice(b"{9de1c535-6ae1-11e0-84e1-18a905bcc53f}").push_slice(b";").push_other(<T as ::windows::core::RuntimeType>::SIGNATURE).push_slice(b")") };
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -969,10 +915,10 @@ impl ::core::fmt::Debug for EventRegistrationToken {
 }
 unsafe impl ::windows::core::Abi for EventRegistrationToken {
     type Abi = Self;
+    type DefaultType = Self;
 }
 unsafe impl ::windows::core::RuntimeType for EventRegistrationToken {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"struct(Windows.Foundation.EventRegistrationToken;i8)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1024,6 +970,11 @@ impl ::windows::core::RuntimeName for GuidHelper {
 #[doc = "*Required features: `\"Foundation\"`*"]
 #[repr(transparent)]
 pub struct IAsyncAction(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAsyncAction {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAsyncAction {
     #[doc = "*Required features: `\"Foundation\"`*"]
     pub fn SetCompleted<'a, Param0: ::windows::core::IntoParam<'a, AsyncActionCompletedHandler>>(&self, handler: Param0) -> ::windows::core::Result<()> {
@@ -1140,11 +1091,6 @@ impl<'a> ::windows::core::IntoParam<'a, IAsyncInfo> for &IAsyncAction {
         ::core::convert::TryInto::<IAsyncInfo>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IAsyncAction {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAsyncAction {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1158,7 +1104,6 @@ impl ::core::fmt::Debug for IAsyncAction {
 }
 unsafe impl ::windows::core::RuntimeType for IAsyncAction {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{5a648006-843a-4da9-865b-9d26e5dfad7b}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1211,6 +1156,11 @@ pub struct IAsyncAction_Vtbl {
 pub struct IAsyncActionWithProgress<TProgress>(::windows::core::IUnknown, ::core::marker::PhantomData<TProgress>)
 where
     TProgress: ::windows::core::RuntimeType + 'static;
+impl<TProgress: ::windows::core::RuntimeType + 'static> ::core::clone::Clone for IAsyncActionWithProgress<TProgress> {
+    fn clone(&self) -> Self {
+        Self(self.0.clone(), ::core::marker::PhantomData::<TProgress>)
+    }
+}
 impl<TProgress: ::windows::core::RuntimeType + 'static> IAsyncActionWithProgress<TProgress> {
     #[doc = "*Required features: `\"Foundation\"`*"]
     pub fn SetProgress<'a, Param0: ::windows::core::IntoParam<'a, AsyncActionProgressHandler<TProgress>>>(&self, handler: Param0) -> ::windows::core::Result<()> {
@@ -1340,11 +1290,6 @@ impl<'a, TProgress: ::windows::core::RuntimeType + 'static> ::windows::core::Int
         ::core::convert::TryInto::<IAsyncInfo>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl<TProgress: ::windows::core::RuntimeType + 'static> ::core::clone::Clone for IAsyncActionWithProgress<TProgress> {
-    fn clone(&self) -> Self {
-        Self(self.0.clone(), ::core::marker::PhantomData::<TProgress>)
-    }
-}
 impl<TProgress: ::windows::core::RuntimeType + 'static> ::core::cmp::PartialEq for IAsyncActionWithProgress<TProgress> {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1358,7 +1303,6 @@ impl<TProgress: ::windows::core::RuntimeType + 'static> ::core::fmt::Debug for I
 }
 unsafe impl<TProgress: ::windows::core::RuntimeType + 'static> ::windows::core::RuntimeType for IAsyncActionWithProgress<TProgress> {
     const SIGNATURE: ::windows::core::ConstBuffer = { ::windows::core::ConstBuffer::new().push_slice(b"pinterface(").push_slice(b"{1f6db258-e803-48a1-9546-eb7353398884}").push_slice(b";").push_other(<TProgress as ::windows::core::RuntimeType>::SIGNATURE).push_slice(b")") };
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1415,6 +1359,11 @@ where
 #[doc = "*Required features: `\"Foundation\"`*"]
 #[repr(transparent)]
 pub struct IAsyncInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAsyncInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAsyncInfo {
     #[doc = "*Required features: `\"Foundation\"`*"]
     pub fn Id(&self) -> ::windows::core::Result<u32> {
@@ -1491,11 +1440,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAsyncInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAsyncInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1509,7 +1453,6 @@ impl ::core::fmt::Debug for IAsyncInfo {
 }
 unsafe impl ::windows::core::RuntimeType for IAsyncInfo {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{00000036-0000-0000-c000-000000000046}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1533,6 +1476,11 @@ pub struct IAsyncInfo_Vtbl {
 pub struct IAsyncOperation<TResult>(::windows::core::IUnknown, ::core::marker::PhantomData<TResult>)
 where
     TResult: ::windows::core::RuntimeType + 'static;
+impl<TResult: ::windows::core::RuntimeType + 'static> ::core::clone::Clone for IAsyncOperation<TResult> {
+    fn clone(&self) -> Self {
+        Self(self.0.clone(), ::core::marker::PhantomData::<TResult>)
+    }
+}
 impl<TResult: ::windows::core::RuntimeType + 'static> IAsyncOperation<TResult> {
     #[doc = "*Required features: `\"Foundation\"`*"]
     pub fn SetCompleted<'a, Param0: ::windows::core::IntoParam<'a, AsyncOperationCompletedHandler<TResult>>>(&self, handler: Param0) -> ::windows::core::Result<()> {
@@ -1652,11 +1600,6 @@ impl<'a, TResult: ::windows::core::RuntimeType + 'static> ::windows::core::IntoP
         ::core::convert::TryInto::<IAsyncInfo>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl<TResult: ::windows::core::RuntimeType + 'static> ::core::clone::Clone for IAsyncOperation<TResult> {
-    fn clone(&self) -> Self {
-        Self(self.0.clone(), ::core::marker::PhantomData::<TResult>)
-    }
-}
 impl<TResult: ::windows::core::RuntimeType + 'static> ::core::cmp::PartialEq for IAsyncOperation<TResult> {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1670,7 +1613,6 @@ impl<TResult: ::windows::core::RuntimeType + 'static> ::core::fmt::Debug for IAs
 }
 unsafe impl<TResult: ::windows::core::RuntimeType + 'static> ::windows::core::RuntimeType for IAsyncOperation<TResult> {
     const SIGNATURE: ::windows::core::ConstBuffer = { ::windows::core::ConstBuffer::new().push_slice(b"pinterface(").push_slice(b"{9fc2b0bb-e446-44e2-aa61-9cab8f636af2}").push_slice(b";").push_other(<TResult as ::windows::core::RuntimeType>::SIGNATURE).push_slice(b")") };
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1728,6 +1670,11 @@ pub struct IAsyncOperationWithProgress<TResult, TProgress>(::windows::core::IUnk
 where
     TResult: ::windows::core::RuntimeType + 'static,
     TProgress: ::windows::core::RuntimeType + 'static;
+impl<TResult: ::windows::core::RuntimeType + 'static, TProgress: ::windows::core::RuntimeType + 'static> ::core::clone::Clone for IAsyncOperationWithProgress<TResult, TProgress> {
+    fn clone(&self) -> Self {
+        Self(self.0.clone(), ::core::marker::PhantomData::<TResult>, ::core::marker::PhantomData::<TProgress>)
+    }
+}
 impl<TResult: ::windows::core::RuntimeType + 'static, TProgress: ::windows::core::RuntimeType + 'static> IAsyncOperationWithProgress<TResult, TProgress> {
     #[doc = "*Required features: `\"Foundation\"`*"]
     pub fn SetProgress<'a, Param0: ::windows::core::IntoParam<'a, AsyncOperationProgressHandler<TResult, TProgress>>>(&self, handler: Param0) -> ::windows::core::Result<()> {
@@ -1860,11 +1807,6 @@ impl<'a, TResult: ::windows::core::RuntimeType + 'static, TProgress: ::windows::
         ::core::convert::TryInto::<IAsyncInfo>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl<TResult: ::windows::core::RuntimeType + 'static, TProgress: ::windows::core::RuntimeType + 'static> ::core::clone::Clone for IAsyncOperationWithProgress<TResult, TProgress> {
-    fn clone(&self) -> Self {
-        Self(self.0.clone(), ::core::marker::PhantomData::<TResult>, ::core::marker::PhantomData::<TProgress>)
-    }
-}
 impl<TResult: ::windows::core::RuntimeType + 'static, TProgress: ::windows::core::RuntimeType + 'static> ::core::cmp::PartialEq for IAsyncOperationWithProgress<TResult, TProgress> {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1878,7 +1820,6 @@ impl<TResult: ::windows::core::RuntimeType + 'static, TProgress: ::windows::core
 }
 unsafe impl<TResult: ::windows::core::RuntimeType + 'static, TProgress: ::windows::core::RuntimeType + 'static> ::windows::core::RuntimeType for IAsyncOperationWithProgress<TResult, TProgress> {
     const SIGNATURE: ::windows::core::ConstBuffer = { ::windows::core::ConstBuffer::new().push_slice(b"pinterface(").push_slice(b"{b5d036d7-e297-498f-ba60-0289e76e23dd}").push_slice(b";").push_other(<TResult as ::windows::core::RuntimeType>::SIGNATURE).push_slice(b";").push_other(<TProgress as ::windows::core::RuntimeType>::SIGNATURE).push_slice(b")") };
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1937,6 +1878,11 @@ where
 #[doc = "*Required features: `\"Foundation\"`*"]
 #[repr(transparent)]
 pub struct IClosable(::windows::core::IUnknown);
+impl ::core::clone::Clone for IClosable {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IClosable {
     #[doc = "*Required features: `\"Foundation\"`*"]
     pub fn Close(&self) -> ::windows::core::Result<()> {
@@ -1984,11 +1930,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IClosable {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IClosable {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2002,7 +1943,6 @@ impl ::core::fmt::Debug for IClosable {
 }
 unsafe impl ::windows::core::RuntimeType for IClosable {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{30d5a829-7fa4-4026-83bb-d75bae4ea99e}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2020,6 +1960,11 @@ pub struct IClosable_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDeferral(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDeferral {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDeferral {
     type Vtable = IDeferral_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd6269732_3b7f_46a7_b40b_4fdca2a2c693);
@@ -2033,6 +1978,11 @@ pub struct IDeferral_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDeferralFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDeferralFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDeferralFactory {
     type Vtable = IDeferralFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x65a1ecc5_3fb5_4832_8ca9_f061b281d13a);
@@ -2046,6 +1996,11 @@ pub struct IDeferralFactory_Vtbl {
 #[doc = "*Required features: `\"Foundation\"`*"]
 #[repr(transparent)]
 pub struct IGetActivationFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGetActivationFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IGetActivationFactory {
     #[doc = "*Required features: `\"Foundation\"`*"]
     pub fn GetActivationFactory<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::HSTRING>>(&self, activatableclassid: Param0) -> ::windows::core::Result<::windows::core::IInspectable> {
@@ -2096,11 +2051,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IGetActivationFactory {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IGetActivationFactory {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2114,7 +2064,6 @@ impl ::core::fmt::Debug for IGetActivationFactory {
 }
 unsafe impl ::windows::core::RuntimeType for IGetActivationFactory {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{4edb8ee2-96dd-49a7-94f7-4607ddab8e3c}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2132,6 +2081,11 @@ pub struct IGetActivationFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGuidHelperStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGuidHelperStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGuidHelperStatics {
     type Vtable = IGuidHelperStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x59c7966b_ae52_5283_ad7f_a1b9e9678add);
@@ -2147,6 +2101,11 @@ pub struct IGuidHelperStatics_Vtbl {
 #[doc = "*Required features: `\"Foundation\"`*"]
 #[repr(transparent)]
 pub struct IMemoryBuffer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMemoryBuffer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMemoryBuffer {
     #[doc = "*Required features: `\"Foundation\"`*"]
     pub fn CreateReference(&self) -> ::windows::core::Result<IMemoryBufferReference> {
@@ -2224,11 +2183,6 @@ impl<'a> ::windows::core::IntoParam<'a, IClosable> for &IMemoryBuffer {
         ::core::convert::TryInto::<IClosable>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IMemoryBuffer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMemoryBuffer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2242,7 +2196,6 @@ impl ::core::fmt::Debug for IMemoryBuffer {
 }
 unsafe impl ::windows::core::RuntimeType for IMemoryBuffer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{fbc4dd2a-245b-11e4-af98-689423260cf8}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2260,6 +2213,11 @@ pub struct IMemoryBuffer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMemoryBufferFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMemoryBufferFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMemoryBufferFactory {
     type Vtable = IMemoryBufferFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xfbc4dd2b_245b_11e4_af98_689423260cf8);
@@ -2273,6 +2231,11 @@ pub struct IMemoryBufferFactory_Vtbl {
 #[doc = "*Required features: `\"Foundation\"`*"]
 #[repr(transparent)]
 pub struct IMemoryBufferReference(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMemoryBufferReference {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMemoryBufferReference {
     #[doc = "*Required features: `\"Foundation\"`*"]
     pub fn Capacity(&self) -> ::windows::core::Result<u32> {
@@ -2363,11 +2326,6 @@ impl<'a> ::windows::core::IntoParam<'a, IClosable> for &IMemoryBufferReference {
         ::core::convert::TryInto::<IClosable>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IMemoryBufferReference {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMemoryBufferReference {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2381,7 +2339,6 @@ impl ::core::fmt::Debug for IMemoryBufferReference {
 }
 unsafe impl ::windows::core::RuntimeType for IMemoryBufferReference {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{fbc4dd29-245b-11e4-af98-689423260cf8}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2401,6 +2358,11 @@ pub struct IMemoryBufferReference_Vtbl {
 #[doc = "*Required features: `\"Foundation\"`*"]
 #[repr(transparent)]
 pub struct IPropertyValue(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPropertyValue {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPropertyValue {
     #[doc = "*Required features: `\"Foundation\"`*"]
     pub fn Type(&self) -> ::windows::core::Result<PropertyType> {
@@ -2698,11 +2660,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPropertyValue {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPropertyValue {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2716,7 +2673,6 @@ impl ::core::fmt::Debug for IPropertyValue {
 }
 unsafe impl ::windows::core::RuntimeType for IPropertyValue {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{4bd682dd-7554-40e9-9a9b-82654ede7e62}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2772,6 +2728,11 @@ pub struct IPropertyValue_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPropertyValueStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPropertyValueStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPropertyValueStatics {
     type Vtable = IPropertyValueStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x629bdbc8_d932_4ff4_96b9_8d96c5c1e858);
@@ -2825,6 +2786,11 @@ pub struct IPropertyValueStatics_Vtbl {
 pub struct IReference<T>(::windows::core::IUnknown, ::core::marker::PhantomData<T>)
 where
     T: ::windows::core::RuntimeType + 'static;
+impl<T: ::windows::core::RuntimeType + 'static> ::core::clone::Clone for IReference<T> {
+    fn clone(&self) -> Self {
+        Self(self.0.clone(), ::core::marker::PhantomData::<T>)
+    }
+}
 impl<T: ::windows::core::RuntimeType + 'static> IReference<T> {
     #[doc = "*Required features: `\"Foundation\"`*"]
     pub fn Value(&self) -> ::windows::core::Result<T> {
@@ -3152,11 +3118,6 @@ impl<'a, T: ::windows::core::RuntimeType + 'static> ::windows::core::IntoParam<'
         ::core::convert::TryInto::<IPropertyValue>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl<T: ::windows::core::RuntimeType + 'static> ::core::clone::Clone for IReference<T> {
-    fn clone(&self) -> Self {
-        Self(self.0.clone(), ::core::marker::PhantomData::<T>)
-    }
-}
 impl<T: ::windows::core::RuntimeType + 'static> ::core::cmp::PartialEq for IReference<T> {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3170,7 +3131,6 @@ impl<T: ::windows::core::RuntimeType + 'static> ::core::fmt::Debug for IReferenc
 }
 unsafe impl<T: ::windows::core::RuntimeType + 'static> ::windows::core::RuntimeType for IReference<T> {
     const SIGNATURE: ::windows::core::ConstBuffer = { ::windows::core::ConstBuffer::new().push_slice(b"pinterface(").push_slice(b"{61c17706-2d65-11e0-9ae8-d48564015472}").push_slice(b";").push_other(<T as ::windows::core::RuntimeType>::SIGNATURE).push_slice(b")") };
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3194,6 +3154,11 @@ where
 pub struct IReferenceArray<T>(::windows::core::IUnknown, ::core::marker::PhantomData<T>)
 where
     T: ::windows::core::RuntimeType + 'static;
+impl<T: ::windows::core::RuntimeType + 'static> ::core::clone::Clone for IReferenceArray<T> {
+    fn clone(&self) -> Self {
+        Self(self.0.clone(), ::core::marker::PhantomData::<T>)
+    }
+}
 impl<T: ::windows::core::RuntimeType + 'static> IReferenceArray<T> {
     #[doc = "*Required features: `\"Foundation\"`*"]
     pub fn Value(&self) -> ::windows::core::Result<::windows::core::Array<T>> {
@@ -3521,11 +3486,6 @@ impl<'a, T: ::windows::core::RuntimeType + 'static> ::windows::core::IntoParam<'
         ::core::convert::TryInto::<IPropertyValue>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl<T: ::windows::core::RuntimeType + 'static> ::core::clone::Clone for IReferenceArray<T> {
-    fn clone(&self) -> Self {
-        Self(self.0.clone(), ::core::marker::PhantomData::<T>)
-    }
-}
 impl<T: ::windows::core::RuntimeType + 'static> ::core::cmp::PartialEq for IReferenceArray<T> {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3539,7 +3499,6 @@ impl<T: ::windows::core::RuntimeType + 'static> ::core::fmt::Debug for IReferenc
 }
 unsafe impl<T: ::windows::core::RuntimeType + 'static> ::windows::core::RuntimeType for IReferenceArray<T> {
     const SIGNATURE: ::windows::core::ConstBuffer = { ::windows::core::ConstBuffer::new().push_slice(b"pinterface(").push_slice(b"{61c17707-2d65-11e0-9ae8-d48564015472}").push_slice(b";").push_other(<T as ::windows::core::RuntimeType>::SIGNATURE).push_slice(b")") };
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3561,6 +3520,11 @@ where
 #[doc = "*Required features: `\"Foundation\"`*"]
 #[repr(transparent)]
 pub struct IStringable(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStringable {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IStringable {
     #[doc = "*Required features: `\"Foundation\"`*"]
     pub fn ToString(&self) -> ::windows::core::Result<::windows::core::HSTRING> {
@@ -3611,11 +3575,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IStringable {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IStringable {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3629,7 +3588,6 @@ impl ::core::fmt::Debug for IStringable {
 }
 unsafe impl ::windows::core::RuntimeType for IStringable {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{96369f54-8eb6-48f0-abce-c1b211e627c3}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3647,6 +3605,11 @@ pub struct IStringable_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IUriEscapeStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUriEscapeStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IUriEscapeStatics {
     type Vtable = IUriEscapeStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc1d432ba_c824_4452_a7fd_512bc3bbe9a1);
@@ -3661,6 +3624,11 @@ pub struct IUriEscapeStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IUriRuntimeClass(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUriRuntimeClass {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IUriRuntimeClass {
     type Vtable = IUriRuntimeClass_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9e365e57_48b2_4160_956f_c7385120bbfc);
@@ -3690,6 +3658,11 @@ pub struct IUriRuntimeClass_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IUriRuntimeClassFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUriRuntimeClassFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IUriRuntimeClassFactory {
     type Vtable = IUriRuntimeClassFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x44a9796f_723e_4fdf_a218_033e75b0c084);
@@ -3704,6 +3677,11 @@ pub struct IUriRuntimeClassFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IUriRuntimeClassWithAbsoluteCanonicalUri(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUriRuntimeClassWithAbsoluteCanonicalUri {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IUriRuntimeClassWithAbsoluteCanonicalUri {
     type Vtable = IUriRuntimeClassWithAbsoluteCanonicalUri_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x758d9661_221c_480f_a339_50656673f46f);
@@ -3718,6 +3696,11 @@ pub struct IUriRuntimeClassWithAbsoluteCanonicalUri_Vtbl {
 #[doc = "*Required features: `\"Foundation\"`*"]
 #[repr(transparent)]
 pub struct IWwwFormUrlDecoderEntry(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWwwFormUrlDecoderEntry {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWwwFormUrlDecoderEntry {
     #[doc = "*Required features: `\"Foundation\"`*"]
     pub fn Name(&self) -> ::windows::core::Result<::windows::core::HSTRING> {
@@ -3776,11 +3759,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWwwFormUrlDecoderEntry {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWwwFormUrlDecoderEntry {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3794,7 +3772,6 @@ impl ::core::fmt::Debug for IWwwFormUrlDecoderEntry {
 }
 unsafe impl ::windows::core::RuntimeType for IWwwFormUrlDecoderEntry {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{125e7431-f678-4e8e-b670-20a9b06c512d}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3813,6 +3790,11 @@ pub struct IWwwFormUrlDecoderEntry_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWwwFormUrlDecoderRuntimeClass(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWwwFormUrlDecoderRuntimeClass {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWwwFormUrlDecoderRuntimeClass {
     type Vtable = IWwwFormUrlDecoderRuntimeClass_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd45a0451_f225_4542_9296_0e1df5d254df);
@@ -3826,6 +3808,11 @@ pub struct IWwwFormUrlDecoderRuntimeClass_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWwwFormUrlDecoderRuntimeClassFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWwwFormUrlDecoderRuntimeClassFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWwwFormUrlDecoderRuntimeClassFactory {
     type Vtable = IWwwFormUrlDecoderRuntimeClassFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x5b8c6b3d_24ae_41b5_a1bf_f0c3d544845b);
@@ -3866,11 +3853,6 @@ impl MemoryBuffer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for MemoryBuffer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MemoryBuffer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3884,7 +3866,6 @@ impl ::core::fmt::Debug for MemoryBuffer {
 }
 unsafe impl ::windows::core::RuntimeType for MemoryBuffer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Foundation.MemoryBuffer;{fbc4dd2a-245b-11e4-af98-689423260cf8})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4001,10 +3982,10 @@ impl ::core::fmt::Debug for Point {
 }
 unsafe impl ::windows::core::Abi for Point {
     type Abi = Self;
+    type DefaultType = Self;
 }
 unsafe impl ::windows::core::RuntimeType for Point {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"struct(Windows.Foundation.Point;f4;f4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -4080,6 +4061,7 @@ impl ::core::default::Default for PropertyType {
 }
 unsafe impl ::windows::core::Abi for PropertyType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PropertyType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4088,7 +4070,6 @@ impl ::core::fmt::Debug for PropertyType {
 }
 unsafe impl ::windows::core::RuntimeType for PropertyType {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Foundation.PropertyType;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -4399,10 +4380,10 @@ impl ::core::fmt::Debug for Rect {
 }
 unsafe impl ::windows::core::Abi for Rect {
     type Abi = Self;
+    type DefaultType = Self;
 }
 unsafe impl ::windows::core::RuntimeType for Rect {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"struct(Windows.Foundation.Rect;f4;f4;f4;f4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -4437,10 +4418,10 @@ impl ::core::fmt::Debug for Size {
 }
 unsafe impl ::windows::core::Abi for Size {
     type Abi = Self;
+    type DefaultType = Self;
 }
 unsafe impl ::windows::core::RuntimeType for Size {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"struct(Windows.Foundation.Size;f4;f4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -4474,10 +4455,10 @@ impl ::core::fmt::Debug for TimeSpan {
 }
 unsafe impl ::windows::core::Abi for TimeSpan {
     type Abi = Self;
+    type DefaultType = Self;
 }
 unsafe impl ::windows::core::RuntimeType for TimeSpan {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"struct(Windows.Foundation.TimeSpan;i8)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -4569,11 +4550,6 @@ impl<TSender: ::windows::core::RuntimeType + 'static, TResult: ::windows::core::
         ((*this).invoke)(::core::mem::transmute(&sender), ::core::mem::transmute(&args)).into()
     }
 }
-impl<TSender: ::windows::core::RuntimeType + 'static, TResult: ::windows::core::RuntimeType + 'static> ::core::clone::Clone for TypedEventHandler<TSender, TResult> {
-    fn clone(&self) -> Self {
-        Self(self.0.clone(), ::core::marker::PhantomData::<TSender>, ::core::marker::PhantomData::<TResult>)
-    }
-}
 impl<TSender: ::windows::core::RuntimeType + 'static, TResult: ::windows::core::RuntimeType + 'static> ::core::cmp::PartialEq for TypedEventHandler<TSender, TResult> {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4591,7 +4567,6 @@ unsafe impl<TSender: ::windows::core::RuntimeType + 'static, TResult: ::windows:
 }
 unsafe impl<TSender: ::windows::core::RuntimeType + 'static, TResult: ::windows::core::RuntimeType + 'static> ::windows::core::RuntimeType for TypedEventHandler<TSender, TResult> {
     const SIGNATURE: ::windows::core::ConstBuffer = { ::windows::core::ConstBuffer::new().push_slice(b"pinterface(").push_slice(b"{9de1c534-6ae1-11e0-84e1-18a905bcc53f}").push_slice(b";").push_other(<TSender as ::windows::core::RuntimeType>::SIGNATURE).push_slice(b";").push_other(<TResult as ::windows::core::RuntimeType>::SIGNATURE).push_slice(b")") };
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4811,11 +4786,6 @@ impl Uri {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for Uri {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for Uri {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4829,7 +4799,6 @@ impl ::core::fmt::Debug for Uri {
 }
 unsafe impl ::windows::core::RuntimeType for Uri {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Foundation.Uri;{9e365e57-48b2-4160-956f-c7385120bbfc})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4975,11 +4944,6 @@ impl WwwFormUrlDecoder {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for WwwFormUrlDecoder {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for WwwFormUrlDecoder {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4993,7 +4957,6 @@ impl ::core::fmt::Debug for WwwFormUrlDecoder {
 }
 unsafe impl ::windows::core::RuntimeType for WwwFormUrlDecoder {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Foundation.WwwFormUrlDecoder;{d45a0451-f225-4542-9296-0e1df5d254df})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -5136,11 +5099,6 @@ impl WwwFormUrlDecoderEntry {
         }
     }
 }
-impl ::core::clone::Clone for WwwFormUrlDecoderEntry {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for WwwFormUrlDecoderEntry {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5154,7 +5112,6 @@ impl ::core::fmt::Debug for WwwFormUrlDecoderEntry {
 }
 unsafe impl ::windows::core::RuntimeType for WwwFormUrlDecoderEntry {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Foundation.WwwFormUrlDecoderEntry;{125e7431-f678-4e8e-b670-20a9b06c512d})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

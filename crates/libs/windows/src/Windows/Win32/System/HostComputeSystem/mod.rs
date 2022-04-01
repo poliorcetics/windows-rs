@@ -18,6 +18,7 @@ impl ::core::default::Default for HCS_CREATE_OPTIONS {
 }
 unsafe impl ::windows::core::Abi for HCS_CREATE_OPTIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HCS_CREATE_OPTIONS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -52,6 +53,7 @@ impl ::core::fmt::Debug for HCS_CREATE_OPTIONS_1 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security"))]
 unsafe impl ::windows::core::Abi for HCS_CREATE_OPTIONS_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security"))]
 impl ::core::cmp::PartialEq for HCS_CREATE_OPTIONS_1 {
@@ -87,6 +89,7 @@ impl ::core::fmt::Debug for HCS_EVENT {
 }
 unsafe impl ::windows::core::Abi for HCS_EVENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HCS_EVENT {
     fn eq(&self, other: &Self) -> bool {
@@ -122,6 +125,7 @@ impl ::core::default::Default for HCS_EVENT_OPTIONS {
 }
 unsafe impl ::windows::core::Abi for HCS_EVENT_OPTIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HCS_EVENT_OPTIONS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -193,6 +197,7 @@ impl ::core::default::Default for HCS_EVENT_TYPE {
 }
 unsafe impl ::windows::core::Abi for HCS_EVENT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HCS_EVENT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -258,6 +263,7 @@ impl ::core::default::Default for HCS_NOTIFICATIONS {
 }
 unsafe impl ::windows::core::Abi for HCS_NOTIFICATIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HCS_NOTIFICATIONS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -287,6 +293,7 @@ impl ::core::default::Default for HCS_NOTIFICATION_FLAGS {
 }
 unsafe impl ::windows::core::Abi for HCS_NOTIFICATION_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HCS_NOTIFICATION_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -319,6 +326,7 @@ impl ::core::fmt::Debug for HCS_OPERATION {
 }
 unsafe impl ::windows::core::Abi for HCS_OPERATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[doc = "*Required features: `\"Win32_System_HostComputeSystem\"`*"]
 pub type HCS_OPERATION_COMPLETION = ::core::option::Option<unsafe extern "system" fn(operation: HCS_OPERATION, context: *const ::core::ffi::c_void)>;
@@ -373,6 +381,7 @@ impl ::core::default::Default for HCS_OPERATION_TYPE {
 }
 unsafe impl ::windows::core::Abi for HCS_OPERATION_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HCS_OPERATION_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -405,6 +414,7 @@ impl ::core::fmt::Debug for HCS_PROCESS {
 }
 unsafe impl ::windows::core::Abi for HCS_PROCESS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[repr(C)]
 #[doc = "*Required features: `\"Win32_System_HostComputeSystem\"`, `\"Win32_Foundation\"`*"]
@@ -433,6 +443,7 @@ impl ::core::fmt::Debug for HCS_PROCESS_INFORMATION {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for HCS_PROCESS_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for HCS_PROCESS_INFORMATION {
@@ -474,6 +485,7 @@ impl ::core::fmt::Debug for HCS_SYSTEM {
 }
 unsafe impl ::windows::core::Abi for HCS_SYSTEM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[doc = "*Required features: `\"Win32_System_HostComputeSystem\"`*"]
 #[inline]

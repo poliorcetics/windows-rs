@@ -4,6 +4,12 @@
 #[repr(transparent)]
 pub struct IWSCDefaultProduct(::windows::core::IUnknown);
 #[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IWSCDefaultProduct {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "Win32_System_Com")]
 impl IWSCDefaultProduct {
     #[doc = "*Required features: `\"Win32_System_SecurityCenter\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -60,12 +66,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IWSCDefau
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IWSCDefaultProduct {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IWSCDefaultProduct {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -98,6 +98,12 @@ pub struct IWSCDefaultProduct_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IWSCProductList(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IWSCProductList {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IWSCProductList {
     #[doc = "*Required features: `\"Win32_System_SecurityCenter\"`*"]
@@ -165,12 +171,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IWSCProdu
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IWSCProductList {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IWSCProductList {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -205,6 +205,12 @@ pub struct IWSCProductList_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IWscProduct(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IWscProduct {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IWscProduct {
     #[doc = "*Required features: `\"Win32_System_SecurityCenter\"`, `\"Win32_Foundation\"`*"]
@@ -297,12 +303,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IWscProdu
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IWscProduct {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IWscProduct {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -353,6 +353,12 @@ pub struct IWscProduct_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IWscProduct2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IWscProduct2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IWscProduct2 {
     #[doc = "*Required features: `\"Win32_System_SecurityCenter\"`, `\"Win32_Foundation\"`*"]
@@ -499,12 +505,6 @@ impl<'a> ::windows::core::IntoParam<'a, IWscProduct> for &'a IWscProduct2 {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IWscProduct2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IWscProduct2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -539,6 +539,12 @@ pub struct IWscProduct2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IWscProduct3(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IWscProduct3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IWscProduct3 {
     #[doc = "*Required features: `\"Win32_System_SecurityCenter\"`, `\"Win32_Foundation\"`*"]
@@ -714,12 +720,6 @@ impl<'a> ::windows::core::IntoParam<'a, IWscProduct2> for &'a IWscProduct3 {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IWscProduct3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IWscProduct3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -768,6 +768,7 @@ impl ::core::default::Default for SECURITY_PRODUCT_TYPE {
 }
 unsafe impl ::windows::core::Abi for SECURITY_PRODUCT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SECURITY_PRODUCT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -801,6 +802,7 @@ impl ::core::default::Default for WSC_SECURITY_PRODUCT_STATE {
 }
 unsafe impl ::windows::core::Abi for WSC_SECURITY_PRODUCT_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WSC_SECURITY_PRODUCT_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -832,6 +834,7 @@ impl ::core::default::Default for WSC_SECURITY_PRODUCT_SUBSTATUS {
 }
 unsafe impl ::windows::core::Abi for WSC_SECURITY_PRODUCT_SUBSTATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WSC_SECURITY_PRODUCT_SUBSTATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -873,6 +876,7 @@ impl ::core::default::Default for WSC_SECURITY_PROVIDER {
 }
 unsafe impl ::windows::core::Abi for WSC_SECURITY_PROVIDER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WSC_SECURITY_PROVIDER {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -904,6 +908,7 @@ impl ::core::default::Default for WSC_SECURITY_PROVIDER_HEALTH {
 }
 unsafe impl ::windows::core::Abi for WSC_SECURITY_PROVIDER_HEALTH {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WSC_SECURITY_PROVIDER_HEALTH {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -931,6 +936,7 @@ impl ::core::default::Default for WSC_SECURITY_SIGNATURE_STATUS {
 }
 unsafe impl ::windows::core::Abi for WSC_SECURITY_SIGNATURE_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WSC_SECURITY_SIGNATURE_STATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

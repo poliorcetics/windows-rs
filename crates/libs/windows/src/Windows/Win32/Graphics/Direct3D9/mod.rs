@@ -43,6 +43,7 @@ impl ::core::clone::Clone for D3DADAPTER_IDENTIFIER9 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3DADAPTER_IDENTIFIER9 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 #[cfg(feature = "Win32_Foundation")]
@@ -91,6 +92,7 @@ impl ::core::clone::Clone for D3DADAPTER_IDENTIFIER9 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3DADAPTER_IDENTIFIER9 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 #[cfg(feature = "Win32_Foundation")]
@@ -127,6 +129,7 @@ impl ::core::clone::Clone for D3DAES_CTR_IV {
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 unsafe impl ::windows::core::Abi for D3DAES_CTR_IV {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 impl ::core::cmp::PartialEq for D3DAES_CTR_IV {
@@ -160,6 +163,7 @@ impl ::core::clone::Clone for D3DAES_CTR_IV {
 #[cfg(target_arch = "x86")]
 unsafe impl ::windows::core::Abi for D3DAES_CTR_IV {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 impl ::core::cmp::PartialEq for D3DAES_CTR_IV {
@@ -198,6 +202,7 @@ impl ::core::default::Default for D3DAUTHENTICATEDCHANNELTYPE {
 }
 unsafe impl ::windows::core::Abi for D3DAUTHENTICATEDCHANNELTYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3DAUTHENTICATEDCHANNELTYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -230,6 +235,7 @@ impl ::core::fmt::Debug for D3DAUTHENTICATEDCHANNEL_CONFIGURECRYPTOSESSION {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3DAUTHENTICATEDCHANNEL_CONFIGURECRYPTOSESSION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3DAUTHENTICATEDCHANNEL_CONFIGURECRYPTOSESSION {
@@ -270,6 +276,7 @@ impl ::core::fmt::Debug for D3DAUTHENTICATEDCHANNEL_CONFIGUREINITIALIZE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3DAUTHENTICATEDCHANNEL_CONFIGUREINITIALIZE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3DAUTHENTICATEDCHANNEL_CONFIGUREINITIALIZE {
@@ -303,6 +310,7 @@ impl ::core::clone::Clone for D3DAUTHENTICATEDCHANNEL_CONFIGUREPROTECTION {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3DAUTHENTICATEDCHANNEL_CONFIGUREPROTECTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3DAUTHENTICATEDCHANNEL_CONFIGUREPROTECTION {
@@ -344,6 +352,7 @@ impl ::core::fmt::Debug for D3DAUTHENTICATEDCHANNEL_CONFIGURESHAREDRESOURCE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3DAUTHENTICATEDCHANNEL_CONFIGURESHAREDRESOURCE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3DAUTHENTICATEDCHANNEL_CONFIGURESHAREDRESOURCE {
@@ -383,6 +392,7 @@ impl ::core::fmt::Debug for D3DAUTHENTICATEDCHANNEL_CONFIGUREUNCOMPRESSEDENCRYPT
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3DAUTHENTICATEDCHANNEL_CONFIGUREUNCOMPRESSEDENCRYPTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3DAUTHENTICATEDCHANNEL_CONFIGUREUNCOMPRESSEDENCRYPTION {
@@ -424,6 +434,7 @@ impl ::core::fmt::Debug for D3DAUTHENTICATEDCHANNEL_CONFIGURE_INPUT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3DAUTHENTICATEDCHANNEL_CONFIGURE_INPUT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3DAUTHENTICATEDCHANNEL_CONFIGURE_INPUT {
@@ -466,6 +477,7 @@ impl ::core::fmt::Debug for D3DAUTHENTICATEDCHANNEL_CONFIGURE_OUTPUT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3DAUTHENTICATEDCHANNEL_CONFIGURE_OUTPUT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3DAUTHENTICATEDCHANNEL_CONFIGURE_OUTPUT {
@@ -504,6 +516,7 @@ impl ::core::default::Default for D3DAUTHENTICATEDCHANNEL_PROCESSIDENTIFIERTYPE 
 }
 unsafe impl ::windows::core::Abi for D3DAUTHENTICATEDCHANNEL_PROCESSIDENTIFIERTYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3DAUTHENTICATEDCHANNEL_PROCESSIDENTIFIERTYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -523,6 +536,7 @@ impl ::core::clone::Clone for D3DAUTHENTICATEDCHANNEL_PROTECTION_FLAGS {
 }
 unsafe impl ::windows::core::Abi for D3DAUTHENTICATEDCHANNEL_PROTECTION_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3DAUTHENTICATEDCHANNEL_PROTECTION_FLAGS {
     fn eq(&self, other: &Self) -> bool {
@@ -549,6 +563,7 @@ impl ::core::clone::Clone for D3DAUTHENTICATEDCHANNEL_PROTECTION_FLAGS_0 {
 }
 unsafe impl ::windows::core::Abi for D3DAUTHENTICATEDCHANNEL_PROTECTION_FLAGS_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3DAUTHENTICATEDCHANNEL_PROTECTION_FLAGS_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -579,6 +594,7 @@ impl ::core::fmt::Debug for D3DAUTHENTICATEDCHANNEL_PROTECTION_FLAGS_0_0 {
 }
 unsafe impl ::windows::core::Abi for D3DAUTHENTICATEDCHANNEL_PROTECTION_FLAGS_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3DAUTHENTICATEDCHANNEL_PROTECTION_FLAGS_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -615,6 +631,7 @@ impl ::core::fmt::Debug for D3DAUTHENTICATEDCHANNEL_QUERYCHANNELTYPE_OUTPUT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3DAUTHENTICATEDCHANNEL_QUERYCHANNELTYPE_OUTPUT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3DAUTHENTICATEDCHANNEL_QUERYCHANNELTYPE_OUTPUT {
@@ -654,6 +671,7 @@ impl ::core::fmt::Debug for D3DAUTHENTICATEDCHANNEL_QUERYCRYPTOSESSION_INPUT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3DAUTHENTICATEDCHANNEL_QUERYCRYPTOSESSION_INPUT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3DAUTHENTICATEDCHANNEL_QUERYCRYPTOSESSION_INPUT {
@@ -695,6 +713,7 @@ impl ::core::fmt::Debug for D3DAUTHENTICATEDCHANNEL_QUERYCRYPTOSESSION_OUTPUT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3DAUTHENTICATEDCHANNEL_QUERYCRYPTOSESSION_OUTPUT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3DAUTHENTICATEDCHANNEL_QUERYCRYPTOSESSION_OUTPUT {
@@ -734,6 +753,7 @@ impl ::core::fmt::Debug for D3DAUTHENTICATEDCHANNEL_QUERYDEVICEHANDLE_OUTPUT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3DAUTHENTICATEDCHANNEL_QUERYDEVICEHANDLE_OUTPUT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3DAUTHENTICATEDCHANNEL_QUERYDEVICEHANDLE_OUTPUT {
@@ -773,6 +793,7 @@ impl ::core::fmt::Debug for D3DAUTHENTICATEDCHANNEL_QUERYEVICTIONENCRYPTIONGUIDC
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3DAUTHENTICATEDCHANNEL_QUERYEVICTIONENCRYPTIONGUIDCOUNT_OUTPUT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3DAUTHENTICATEDCHANNEL_QUERYEVICTIONENCRYPTIONGUIDCOUNT_OUTPUT {
@@ -812,6 +833,7 @@ impl ::core::fmt::Debug for D3DAUTHENTICATEDCHANNEL_QUERYEVICTIONENCRYPTIONGUID_
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3DAUTHENTICATEDCHANNEL_QUERYEVICTIONENCRYPTIONGUID_INPUT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3DAUTHENTICATEDCHANNEL_QUERYEVICTIONENCRYPTIONGUID_INPUT {
@@ -852,6 +874,7 @@ impl ::core::fmt::Debug for D3DAUTHENTICATEDCHANNEL_QUERYEVICTIONENCRYPTIONGUID_
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3DAUTHENTICATEDCHANNEL_QUERYEVICTIONENCRYPTIONGUID_OUTPUT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3DAUTHENTICATEDCHANNEL_QUERYEVICTIONENCRYPTIONGUID_OUTPUT {
@@ -893,6 +916,7 @@ impl ::core::fmt::Debug for D3DAUTHENTICATEDCHANNEL_QUERYINFOBUSTYPE_OUTPUT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3DAUTHENTICATEDCHANNEL_QUERYINFOBUSTYPE_OUTPUT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3DAUTHENTICATEDCHANNEL_QUERYINFOBUSTYPE_OUTPUT {
@@ -933,6 +957,7 @@ impl ::core::fmt::Debug for D3DAUTHENTICATEDCHANNEL_QUERYOUTPUTIDCOUNT_INPUT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3DAUTHENTICATEDCHANNEL_QUERYOUTPUTIDCOUNT_INPUT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3DAUTHENTICATEDCHANNEL_QUERYOUTPUTIDCOUNT_INPUT {
@@ -974,6 +999,7 @@ impl ::core::fmt::Debug for D3DAUTHENTICATEDCHANNEL_QUERYOUTPUTIDCOUNT_OUTPUT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3DAUTHENTICATEDCHANNEL_QUERYOUTPUTIDCOUNT_OUTPUT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3DAUTHENTICATEDCHANNEL_QUERYOUTPUTIDCOUNT_OUTPUT {
@@ -1015,6 +1041,7 @@ impl ::core::fmt::Debug for D3DAUTHENTICATEDCHANNEL_QUERYOUTPUTID_INPUT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3DAUTHENTICATEDCHANNEL_QUERYOUTPUTID_INPUT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3DAUTHENTICATEDCHANNEL_QUERYOUTPUTID_INPUT {
@@ -1055,6 +1082,7 @@ impl ::core::clone::Clone for D3DAUTHENTICATEDCHANNEL_QUERYOUTPUTID_OUTPUT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3DAUTHENTICATEDCHANNEL_QUERYOUTPUTID_OUTPUT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 #[cfg(feature = "Win32_Foundation")]
@@ -1098,6 +1126,7 @@ impl ::core::clone::Clone for D3DAUTHENTICATEDCHANNEL_QUERYOUTPUTID_OUTPUT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3DAUTHENTICATEDCHANNEL_QUERYOUTPUTID_OUTPUT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 #[cfg(feature = "Win32_Foundation")]
@@ -1134,6 +1163,7 @@ impl ::core::clone::Clone for D3DAUTHENTICATEDCHANNEL_QUERYPROTECTION_OUTPUT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3DAUTHENTICATEDCHANNEL_QUERYPROTECTION_OUTPUT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3DAUTHENTICATEDCHANNEL_QUERYPROTECTION_OUTPUT {
@@ -1173,6 +1203,7 @@ impl ::core::fmt::Debug for D3DAUTHENTICATEDCHANNEL_QUERYRESTRICTEDSHAREDRESOURC
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3DAUTHENTICATEDCHANNEL_QUERYRESTRICTEDSHAREDRESOURCEPROCESSCOUNT_OUTPUT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3DAUTHENTICATEDCHANNEL_QUERYRESTRICTEDSHAREDRESOURCEPROCESSCOUNT_OUTPUT {
@@ -1212,6 +1243,7 @@ impl ::core::fmt::Debug for D3DAUTHENTICATEDCHANNEL_QUERYRESTRICTEDSHAREDRESOURC
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3DAUTHENTICATEDCHANNEL_QUERYRESTRICTEDSHAREDRESOURCEPROCESS_INPUT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3DAUTHENTICATEDCHANNEL_QUERYRESTRICTEDSHAREDRESOURCEPROCESS_INPUT {
@@ -1253,6 +1285,7 @@ impl ::core::fmt::Debug for D3DAUTHENTICATEDCHANNEL_QUERYRESTRICTEDSHAREDRESOURC
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3DAUTHENTICATEDCHANNEL_QUERYRESTRICTEDSHAREDRESOURCEPROCESS_OUTPUT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3DAUTHENTICATEDCHANNEL_QUERYRESTRICTEDSHAREDRESOURCEPROCESS_OUTPUT {
@@ -1292,6 +1325,7 @@ impl ::core::fmt::Debug for D3DAUTHENTICATEDCHANNEL_QUERYUNCOMPRESSEDENCRYPTIONL
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3DAUTHENTICATEDCHANNEL_QUERYUNCOMPRESSEDENCRYPTIONLEVEL_OUTPUT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3DAUTHENTICATEDCHANNEL_QUERYUNCOMPRESSEDENCRYPTIONLEVEL_OUTPUT {
@@ -1331,6 +1365,7 @@ impl ::core::fmt::Debug for D3DAUTHENTICATEDCHANNEL_QUERYUNRESTRICTEDPROTECTEDSH
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3DAUTHENTICATEDCHANNEL_QUERYUNRESTRICTEDPROTECTEDSHAREDRESOURCECOUNT_OUTPUT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3DAUTHENTICATEDCHANNEL_QUERYUNRESTRICTEDPROTECTEDSHAREDRESOURCECOUNT_OUTPUT {
@@ -1371,6 +1406,7 @@ impl ::core::fmt::Debug for D3DAUTHENTICATEDCHANNEL_QUERY_INPUT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3DAUTHENTICATEDCHANNEL_QUERY_INPUT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3DAUTHENTICATEDCHANNEL_QUERY_INPUT {
@@ -1413,6 +1449,7 @@ impl ::core::fmt::Debug for D3DAUTHENTICATEDCHANNEL_QUERY_OUTPUT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3DAUTHENTICATEDCHANNEL_QUERY_OUTPUT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3DAUTHENTICATEDCHANNEL_QUERY_OUTPUT {
@@ -1471,6 +1508,7 @@ impl ::core::default::Default for D3DBACKBUFFER_TYPE {
 }
 unsafe impl ::windows::core::Abi for D3DBACKBUFFER_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3DBACKBUFFER_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1502,6 +1540,7 @@ impl ::core::default::Default for D3DBASISTYPE {
 }
 unsafe impl ::windows::core::Abi for D3DBASISTYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3DBASISTYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1561,6 +1600,7 @@ impl ::core::default::Default for D3DBLEND {
 }
 unsafe impl ::windows::core::Abi for D3DBLEND {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3DBLEND {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1596,6 +1636,7 @@ impl ::core::default::Default for D3DBLENDOP {
 }
 unsafe impl ::windows::core::Abi for D3DBLENDOP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3DBLENDOP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1625,6 +1666,7 @@ impl ::core::fmt::Debug for D3DBOX {
 }
 unsafe impl ::windows::core::Abi for D3DBOX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3DBOX {
     fn eq(&self, other: &Self) -> bool {
@@ -1676,6 +1718,7 @@ impl ::core::default::Default for D3DBUSTYPE {
 }
 unsafe impl ::windows::core::Abi for D3DBUSTYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3DBUSTYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1866,6 +1909,7 @@ impl ::core::fmt::Debug for D3DCAPS9 {
 }
 unsafe impl ::windows::core::Abi for D3DCAPS9 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3DCAPS9 {
     fn eq(&self, other: &Self) -> bool {
@@ -1901,6 +1945,7 @@ impl ::core::fmt::Debug for D3DCLIPSTATUS9 {
 }
 unsafe impl ::windows::core::Abi for D3DCLIPSTATUS9 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3DCLIPSTATUS9 {
     fn eq(&self, other: &Self) -> bool {
@@ -1948,6 +1993,7 @@ impl ::core::default::Default for D3DCMPFUNC {
 }
 unsafe impl ::windows::core::Abi for D3DCMPFUNC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3DCMPFUNC {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1975,6 +2021,7 @@ impl ::core::fmt::Debug for D3DCOLORVALUE {
 }
 unsafe impl ::windows::core::Abi for D3DCOLORVALUE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3DCOLORVALUE {
     fn eq(&self, other: &Self) -> bool {
@@ -2008,6 +2055,7 @@ impl ::core::fmt::Debug for D3DCOMPOSERECTDESC {
 }
 unsafe impl ::windows::core::Abi for D3DCOMPOSERECTDESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3DCOMPOSERECTDESC {
     fn eq(&self, other: &Self) -> bool {
@@ -2041,6 +2089,7 @@ impl ::core::fmt::Debug for D3DCOMPOSERECTDESTINATION {
 }
 unsafe impl ::windows::core::Abi for D3DCOMPOSERECTDESTINATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3DCOMPOSERECTDESTINATION {
     fn eq(&self, other: &Self) -> bool {
@@ -2080,6 +2129,7 @@ impl ::core::default::Default for D3DCOMPOSERECTSOP {
 }
 unsafe impl ::windows::core::Abi for D3DCOMPOSERECTSOP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3DCOMPOSERECTSOP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2197,6 +2247,7 @@ impl ::core::default::Default for D3DCUBEMAP_FACES {
 }
 unsafe impl ::windows::core::Abi for D3DCUBEMAP_FACES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3DCUBEMAP_FACES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2228,6 +2279,7 @@ impl ::core::default::Default for D3DCULL {
 }
 unsafe impl ::windows::core::Abi for D3DCULL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3DCULL {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2263,6 +2315,7 @@ impl ::core::default::Default for D3DDEBUGMONITORTOKENS {
 }
 unsafe impl ::windows::core::Abi for D3DDEBUGMONITORTOKENS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3DDEBUGMONITORTOKENS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2300,6 +2353,7 @@ impl ::core::default::Default for D3DDECLMETHOD {
 }
 unsafe impl ::windows::core::Abi for D3DDECLMETHOD {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3DDECLMETHOD {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2359,6 +2413,7 @@ impl ::core::default::Default for D3DDECLTYPE {
 }
 unsafe impl ::windows::core::Abi for D3DDECLTYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3DDECLTYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2410,6 +2465,7 @@ impl ::core::default::Default for D3DDECLUSAGE {
 }
 unsafe impl ::windows::core::Abi for D3DDECLUSAGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3DDECLUSAGE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2443,6 +2499,7 @@ impl ::core::default::Default for D3DDEGREETYPE {
 }
 unsafe impl ::windows::core::Abi for D3DDEGREETYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3DDEGREETYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2499,6 +2556,7 @@ impl ::core::fmt::Debug for D3DDEVICE_CREATION_PARAMETERS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3DDEVICE_CREATION_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3DDEVICE_CREATION_PARAMETERS {
@@ -2536,6 +2594,7 @@ impl ::core::fmt::Debug for D3DDEVINFO_D3D9BANDWIDTHTIMINGS {
 }
 unsafe impl ::windows::core::Abi for D3DDEVINFO_D3D9BANDWIDTHTIMINGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3DDEVINFO_D3D9BANDWIDTHTIMINGS {
     fn eq(&self, other: &Self) -> bool {
@@ -2567,6 +2626,7 @@ impl ::core::fmt::Debug for D3DDEVINFO_D3D9CACHEUTILIZATION {
 }
 unsafe impl ::windows::core::Abi for D3DDEVINFO_D3D9CACHEUTILIZATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3DDEVINFO_D3D9CACHEUTILIZATION {
     fn eq(&self, other: &Self) -> bool {
@@ -2607,6 +2667,7 @@ impl ::core::fmt::Debug for D3DDEVINFO_D3D9INTERFACETIMINGS {
 }
 unsafe impl ::windows::core::Abi for D3DDEVINFO_D3D9INTERFACETIMINGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3DDEVINFO_D3D9INTERFACETIMINGS {
     fn eq(&self, other: &Self) -> bool {
@@ -2640,6 +2701,7 @@ impl ::core::fmt::Debug for D3DDEVINFO_D3D9PIPELINETIMINGS {
 }
 unsafe impl ::windows::core::Abi for D3DDEVINFO_D3D9PIPELINETIMINGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3DDEVINFO_D3D9PIPELINETIMINGS {
     fn eq(&self, other: &Self) -> bool {
@@ -2671,6 +2733,7 @@ impl ::core::fmt::Debug for D3DDEVINFO_D3D9STAGETIMINGS {
 }
 unsafe impl ::windows::core::Abi for D3DDEVINFO_D3D9STAGETIMINGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3DDEVINFO_D3D9STAGETIMINGS {
     fn eq(&self, other: &Self) -> bool {
@@ -2702,6 +2765,7 @@ impl ::core::fmt::Debug for D3DDEVINFO_D3DVERTEXSTATS {
 }
 unsafe impl ::windows::core::Abi for D3DDEVINFO_D3DVERTEXSTATS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3DDEVINFO_D3DVERTEXSTATS {
     fn eq(&self, other: &Self) -> bool {
@@ -2737,6 +2801,7 @@ impl ::core::fmt::Debug for D3DDEVINFO_RESOURCEMANAGER {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3DDEVINFO_RESOURCEMANAGER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3DDEVINFO_RESOURCEMANAGER {
@@ -2773,6 +2838,7 @@ impl ::core::fmt::Debug for D3DDEVINFO_VCACHE {
 }
 unsafe impl ::windows::core::Abi for D3DDEVINFO_VCACHE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3DDEVINFO_VCACHE {
     fn eq(&self, other: &Self) -> bool {
@@ -2812,6 +2878,7 @@ impl ::core::default::Default for D3DDEVTYPE {
 }
 unsafe impl ::windows::core::Abi for D3DDEVTYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3DDEVTYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2839,6 +2906,7 @@ impl ::core::fmt::Debug for D3DDISPLAYMODE {
 }
 unsafe impl ::windows::core::Abi for D3DDISPLAYMODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3DDISPLAYMODE {
     fn eq(&self, other: &Self) -> bool {
@@ -2874,6 +2942,7 @@ impl ::core::fmt::Debug for D3DDISPLAYMODEEX {
 }
 unsafe impl ::windows::core::Abi for D3DDISPLAYMODEEX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3DDISPLAYMODEEX {
     fn eq(&self, other: &Self) -> bool {
@@ -2906,6 +2975,7 @@ impl ::core::fmt::Debug for D3DDISPLAYMODEFILTER {
 }
 unsafe impl ::windows::core::Abi for D3DDISPLAYMODEFILTER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3DDISPLAYMODEFILTER {
     fn eq(&self, other: &Self) -> bool {
@@ -2943,6 +3013,7 @@ impl ::core::default::Default for D3DDISPLAYROTATION {
 }
 unsafe impl ::windows::core::Abi for D3DDISPLAYROTATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3DDISPLAYROTATION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2991,6 +3062,7 @@ impl ::core::fmt::Debug for D3DENCRYPTED_BLOCK_INFO {
 }
 unsafe impl ::windows::core::Abi for D3DENCRYPTED_BLOCK_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3DENCRYPTED_BLOCK_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -3032,6 +3104,7 @@ impl ::core::default::Default for D3DFILLMODE {
 }
 unsafe impl ::windows::core::Abi for D3DFILLMODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3DFILLMODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3069,6 +3142,7 @@ impl ::core::default::Default for D3DFOGMODE {
 }
 unsafe impl ::windows::core::Abi for D3DFOGMODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3DFOGMODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3224,6 +3298,7 @@ impl ::core::default::Default for D3DFORMAT {
 }
 unsafe impl ::windows::core::Abi for D3DFORMAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3DFORMAT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3260,6 +3335,7 @@ impl ::core::fmt::Debug for D3DGAMMARAMP {
 }
 unsafe impl ::windows::core::Abi for D3DGAMMARAMP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3DGAMMARAMP {
     fn eq(&self, other: &Self) -> bool {
@@ -3296,6 +3372,7 @@ impl ::core::fmt::Debug for D3DINDEXBUFFER_DESC {
 }
 unsafe impl ::windows::core::Abi for D3DINDEXBUFFER_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3DINDEXBUFFER_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -3349,6 +3426,7 @@ impl ::core::fmt::Debug for D3DLIGHT9 {
 #[cfg(feature = "Win32_Graphics_Direct3D")]
 unsafe impl ::windows::core::Abi for D3DLIGHT9 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Direct3D")]
 impl ::core::cmp::PartialEq for D3DLIGHT9 {
@@ -3389,6 +3467,7 @@ impl ::core::default::Default for D3DLIGHTTYPE {
 }
 unsafe impl ::windows::core::Abi for D3DLIGHTTYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3DLIGHTTYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3427,6 +3506,7 @@ impl ::core::fmt::Debug for D3DLOCKED_BOX {
 }
 unsafe impl ::windows::core::Abi for D3DLOCKED_BOX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3DLOCKED_BOX {
     fn eq(&self, other: &Self) -> bool {
@@ -3458,6 +3538,7 @@ impl ::core::fmt::Debug for D3DLOCKED_RECT {
 }
 unsafe impl ::windows::core::Abi for D3DLOCKED_RECT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3DLOCKED_RECT {
     fn eq(&self, other: &Self) -> bool {
@@ -3504,6 +3585,7 @@ impl ::core::fmt::Debug for D3DMATERIAL9 {
 }
 unsafe impl ::windows::core::Abi for D3DMATERIAL9 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3DMATERIAL9 {
     fn eq(&self, other: &Self) -> bool {
@@ -3541,6 +3623,7 @@ impl ::core::default::Default for D3DMATERIALCOLORSOURCE {
 }
 unsafe impl ::windows::core::Abi for D3DMATERIALCOLORSOURCE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3DMATERIALCOLORSOURCE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3568,6 +3651,7 @@ impl ::core::clone::Clone for D3DMEMORYPRESSURE {
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 unsafe impl ::windows::core::Abi for D3DMEMORYPRESSURE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 impl ::core::cmp::PartialEq for D3DMEMORYPRESSURE {
@@ -3602,6 +3686,7 @@ impl ::core::clone::Clone for D3DMEMORYPRESSURE {
 #[cfg(target_arch = "x86")]
 unsafe impl ::windows::core::Abi for D3DMEMORYPRESSURE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 impl ::core::cmp::PartialEq for D3DMEMORYPRESSURE {
@@ -3672,6 +3757,7 @@ impl ::core::default::Default for D3DMULTISAMPLE_TYPE {
 }
 unsafe impl ::windows::core::Abi for D3DMULTISAMPLE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3DMULTISAMPLE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3717,6 +3803,7 @@ impl ::core::default::Default for D3DPATCHEDGESTYLE {
 }
 unsafe impl ::windows::core::Abi for D3DPATCHEDGESTYLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3DPATCHEDGESTYLE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3883,6 +3970,7 @@ impl ::core::default::Default for D3DPOOL {
 }
 unsafe impl ::windows::core::Abi for D3DPOOL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3DPOOL {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3942,6 +4030,7 @@ impl ::core::clone::Clone for D3DPRESENTSTATS {
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 unsafe impl ::windows::core::Abi for D3DPRESENTSTATS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 impl ::core::cmp::PartialEq for D3DPRESENTSTATS {
@@ -3978,6 +4067,7 @@ impl ::core::clone::Clone for D3DPRESENTSTATS {
 #[cfg(target_arch = "x86")]
 unsafe impl ::windows::core::Abi for D3DPRESENTSTATS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 impl ::core::cmp::PartialEq for D3DPRESENTSTATS {
@@ -4072,6 +4162,7 @@ impl ::core::fmt::Debug for D3DPRESENT_PARAMETERS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3DPRESENT_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3DPRESENT_PARAMETERS {
@@ -4126,6 +4217,7 @@ impl ::core::default::Default for D3DPRIMITIVETYPE {
 }
 unsafe impl ::windows::core::Abi for D3DPRIMITIVETYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3DPRIMITIVETYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4180,6 +4272,7 @@ impl ::core::fmt::Debug for D3DPSHADERCAPS2_0 {
 }
 unsafe impl ::windows::core::Abi for D3DPSHADERCAPS2_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3DPSHADERCAPS2_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -4265,6 +4358,7 @@ impl ::core::default::Default for D3DQUERYTYPE {
 }
 unsafe impl ::windows::core::Abi for D3DQUERYTYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3DQUERYTYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4290,6 +4384,7 @@ impl ::core::fmt::Debug for D3DRANGE {
 }
 unsafe impl ::windows::core::Abi for D3DRANGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3DRANGE {
     fn eq(&self, other: &Self) -> bool {
@@ -4326,6 +4421,7 @@ impl ::core::fmt::Debug for D3DRASTER_STATUS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3DRASTER_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3DRASTER_STATUS {
@@ -4362,6 +4458,7 @@ impl ::core::fmt::Debug for D3DRECT {
 }
 unsafe impl ::windows::core::Abi for D3DRECT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3DRECT {
     fn eq(&self, other: &Self) -> bool {
@@ -4398,6 +4495,7 @@ impl ::core::fmt::Debug for D3DRECTPATCH_INFO {
 }
 unsafe impl ::windows::core::Abi for D3DRECTPATCH_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3DRECTPATCH_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -4635,6 +4733,7 @@ impl ::core::default::Default for D3DRENDERSTATETYPE {
 }
 unsafe impl ::windows::core::Abi for D3DRENDERSTATETYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3DRENDERSTATETYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4686,6 +4785,7 @@ impl ::core::fmt::Debug for D3DRESOURCESTATS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for D3DRESOURCESTATS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for D3DRESOURCESTATS {
@@ -4734,6 +4834,7 @@ impl ::core::default::Default for D3DRESOURCETYPE {
 }
 unsafe impl ::windows::core::Abi for D3DRESOURCETYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3DRESOURCETYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4787,6 +4888,7 @@ impl ::core::default::Default for D3DSAMPLERSTATETYPE {
 }
 unsafe impl ::windows::core::Abi for D3DSAMPLERSTATETYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3DSAMPLERSTATETYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4820,6 +4922,7 @@ impl ::core::default::Default for D3DSAMPLER_TEXTURE_TYPE {
 }
 unsafe impl ::windows::core::Abi for D3DSAMPLER_TEXTURE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3DSAMPLER_TEXTURE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4849,6 +4952,7 @@ impl ::core::default::Default for D3DSCANLINEORDERING {
 }
 unsafe impl ::windows::core::Abi for D3DSCANLINEORDERING {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3DSCANLINEORDERING {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4884,6 +4988,7 @@ impl ::core::default::Default for D3DSHADEMODE {
 }
 unsafe impl ::windows::core::Abi for D3DSHADEMODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3DSHADEMODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4915,6 +5020,7 @@ impl ::core::default::Default for D3DSHADER_ADDRESSMODE_TYPE {
 }
 unsafe impl ::windows::core::Abi for D3DSHADER_ADDRESSMODE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3DSHADER_ADDRESSMODE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4954,6 +5060,7 @@ impl ::core::default::Default for D3DSHADER_COMPARISON {
 }
 unsafe impl ::windows::core::Abi for D3DSHADER_COMPARISON {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3DSHADER_COMPARISON {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5151,6 +5258,7 @@ impl ::core::default::Default for D3DSHADER_INSTRUCTION_OPCODE_TYPE {
 }
 unsafe impl ::windows::core::Abi for D3DSHADER_INSTRUCTION_OPCODE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3DSHADER_INSTRUCTION_OPCODE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5180,6 +5288,7 @@ impl ::core::default::Default for D3DSHADER_MIN_PRECISION {
 }
 unsafe impl ::windows::core::Abi for D3DSHADER_MIN_PRECISION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3DSHADER_MIN_PRECISION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5207,6 +5316,7 @@ impl ::core::default::Default for D3DSHADER_MISCTYPE_OFFSETS {
 }
 unsafe impl ::windows::core::Abi for D3DSHADER_MISCTYPE_OFFSETS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3DSHADER_MISCTYPE_OFFSETS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5276,6 +5386,7 @@ impl ::core::default::Default for D3DSHADER_PARAM_REGISTER_TYPE {
 }
 unsafe impl ::windows::core::Abi for D3DSHADER_PARAM_REGISTER_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3DSHADER_PARAM_REGISTER_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5329,6 +5440,7 @@ impl ::core::default::Default for D3DSHADER_PARAM_SRCMOD_TYPE {
 }
 unsafe impl ::windows::core::Abi for D3DSHADER_PARAM_SRCMOD_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3DSHADER_PARAM_SRCMOD_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5430,6 +5542,7 @@ impl ::core::default::Default for D3DSTATEBLOCKTYPE {
 }
 unsafe impl ::windows::core::Abi for D3DSTATEBLOCKTYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3DSTATEBLOCKTYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5473,6 +5586,7 @@ impl ::core::default::Default for D3DSTENCILOP {
 }
 unsafe impl ::windows::core::Abi for D3DSTENCILOP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3DSTENCILOP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5508,6 +5622,7 @@ impl ::core::fmt::Debug for D3DSURFACE_DESC {
 }
 unsafe impl ::windows::core::Abi for D3DSURFACE_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3DSURFACE_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -5549,6 +5664,7 @@ impl ::core::default::Default for D3DSWAPEFFECT {
 }
 unsafe impl ::windows::core::Abi for D3DSWAPEFFECT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3DSWAPEFFECT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5592,6 +5708,7 @@ impl ::core::default::Default for D3DTEXTUREADDRESS {
 }
 unsafe impl ::windows::core::Abi for D3DTEXTUREADDRESS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3DTEXTUREADDRESS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5631,6 +5748,7 @@ impl ::core::default::Default for D3DTEXTUREFILTERTYPE {
 }
 unsafe impl ::windows::core::Abi for D3DTEXTUREFILTERTYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3DTEXTUREFILTERTYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5708,6 +5826,7 @@ impl ::core::default::Default for D3DTEXTUREOP {
 }
 unsafe impl ::windows::core::Abi for D3DTEXTUREOP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3DTEXTUREOP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5769,6 +5888,7 @@ impl ::core::default::Default for D3DTEXTURESTAGESTATETYPE {
 }
 unsafe impl ::windows::core::Abi for D3DTEXTURESTAGESTATETYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3DTEXTURESTAGESTATETYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5806,6 +5926,7 @@ impl ::core::default::Default for D3DTEXTURETRANSFORMFLAGS {
 }
 unsafe impl ::windows::core::Abi for D3DTEXTURETRANSFORMFLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3DTEXTURETRANSFORMFLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5851,6 +5972,7 @@ impl ::core::default::Default for D3DTRANSFORMSTATETYPE {
 }
 unsafe impl ::windows::core::Abi for D3DTRANSFORMSTATETYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3DTRANSFORMSTATETYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5878,6 +6000,7 @@ impl ::core::fmt::Debug for D3DTRIPATCH_INFO {
 }
 unsafe impl ::windows::core::Abi for D3DTRIPATCH_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3DTRIPATCH_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -5969,6 +6092,7 @@ impl ::core::default::Default for D3DVERTEXBLENDFLAGS {
 }
 unsafe impl ::windows::core::Abi for D3DVERTEXBLENDFLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3DVERTEXBLENDFLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5998,6 +6122,7 @@ impl ::core::fmt::Debug for D3DVERTEXBUFFER_DESC {
 }
 unsafe impl ::windows::core::Abi for D3DVERTEXBUFFER_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3DVERTEXBUFFER_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -6033,6 +6158,7 @@ impl ::core::fmt::Debug for D3DVERTEXELEMENT9 {
 }
 unsafe impl ::windows::core::Abi for D3DVERTEXELEMENT9 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3DVERTEXELEMENT9 {
     fn eq(&self, other: &Self) -> bool {
@@ -6076,6 +6202,7 @@ impl ::core::fmt::Debug for D3DVIEWPORT9 {
 }
 unsafe impl ::windows::core::Abi for D3DVIEWPORT9 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3DVIEWPORT9 {
     fn eq(&self, other: &Self) -> bool {
@@ -6112,6 +6239,7 @@ impl ::core::fmt::Debug for D3DVOLUME_DESC {
 }
 unsafe impl ::windows::core::Abi for D3DVOLUME_DESC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3DVOLUME_DESC {
     fn eq(&self, other: &Self) -> bool {
@@ -6159,6 +6287,7 @@ impl ::core::fmt::Debug for D3DVSHADERCAPS2_0 {
 }
 unsafe impl ::windows::core::Abi for D3DVSHADERCAPS2_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3DVSHADERCAPS2_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -6196,6 +6325,7 @@ impl ::core::default::Default for D3DVS_ADDRESSMODE_TYPE {
 }
 unsafe impl ::windows::core::Abi for D3DVS_ADDRESSMODE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3DVS_ADDRESSMODE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6227,6 +6357,7 @@ impl ::core::default::Default for D3DVS_RASTOUT_OFFSETS {
 }
 unsafe impl ::windows::core::Abi for D3DVS_RASTOUT_OFFSETS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3DVS_RASTOUT_OFFSETS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6270,6 +6401,7 @@ impl ::core::default::Default for D3DZBUFFERTYPE {
 }
 unsafe impl ::windows::core::Abi for D3DZBUFFERTYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for D3DZBUFFERTYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6296,6 +6428,7 @@ impl ::core::fmt::Debug for D3D_OMAC {
 }
 unsafe impl ::windows::core::Abi for D3D_OMAC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D_OMAC {
     fn eq(&self, other: &Self) -> bool {
@@ -6344,6 +6477,11 @@ pub unsafe fn Direct3DCreate9Ex(sdkversion: u32) -> ::windows::core::Result<IDir
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D9\"`*"]
 #[repr(transparent)]
 pub struct IDirect3D9(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirect3D9 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirect3D9 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D9\"`*"]
     pub unsafe fn RegisterSoftwareDevice(&self, pinitializefunction: *mut ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -6427,11 +6565,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDire
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirect3D9 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirect3D9 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6484,6 +6617,11 @@ pub struct IDirect3D9_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D9\"`*"]
 #[repr(transparent)]
 pub struct IDirect3D9Ex(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirect3D9Ex {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirect3D9Ex {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D9\"`*"]
     pub unsafe fn RegisterSoftwareDevice(&self, pinitializefunction: *mut ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -6609,11 +6747,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDirect3D9> for &'a IDirect3D9Ex {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirect3D9Ex {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirect3D9Ex {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6648,6 +6781,11 @@ pub struct IDirect3D9Ex_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D9\"`*"]
 #[repr(transparent)]
 pub struct IDirect3DBaseTexture9(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirect3DBaseTexture9 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirect3DBaseTexture9 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D9\"`*"]
     pub unsafe fn GetDevice(&self) -> ::windows::core::Result<IDirect3DDevice9> {
@@ -6747,11 +6885,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDirect3DResource9> for &'a IDirect3DBas
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirect3DBaseTexture9 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirect3DBaseTexture9 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6781,6 +6914,11 @@ pub struct IDirect3DBaseTexture9_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D9\"`*"]
 #[repr(transparent)]
 pub struct IDirect3DCubeTexture9(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirect3DCubeTexture9 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirect3DCubeTexture9 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D9\"`*"]
     pub unsafe fn GetDevice(&self) -> ::windows::core::Result<IDirect3DDevice9> {
@@ -6923,11 +7061,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDirect3DBaseTexture9> for &'a IDirect3D
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirect3DCubeTexture9 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirect3DCubeTexture9 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6962,6 +7095,11 @@ pub struct IDirect3DCubeTexture9_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D9\"`*"]
 #[repr(transparent)]
 pub struct IDirect3DDevice9(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirect3DDevice9 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirect3DDevice9 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D9\"`*"]
     pub unsafe fn TestCooperativeLevel(&self) -> ::windows::core::Result<()> {
@@ -7499,11 +7637,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDire
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirect3DDevice9 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirect3DDevice9 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7748,6 +7881,11 @@ pub struct IDirect3DDevice9_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D9\"`*"]
 #[repr(transparent)]
 pub struct IDirect3DDevice9Ex(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirect3DDevice9Ex {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirect3DDevice9Ex {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D9\"`*"]
     pub unsafe fn TestCooperativeLevel(&self) -> ::windows::core::Result<()> {
@@ -8371,11 +8509,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDirect3DDevice9> for &'a IDirect3DDevic
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirect3DDevice9Ex {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirect3DDevice9Ex {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8432,6 +8565,11 @@ pub struct IDirect3DDevice9Ex_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D9\"`*"]
 #[repr(transparent)]
 pub struct IDirect3DIndexBuffer9(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirect3DIndexBuffer9 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirect3DIndexBuffer9 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D9\"`*"]
     pub unsafe fn GetDevice(&self) -> ::windows::core::Result<IDirect3DDevice9> {
@@ -8519,11 +8657,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDirect3DResource9> for &'a IDirect3DInd
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirect3DIndexBuffer9 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirect3DIndexBuffer9 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8550,6 +8683,11 @@ pub struct IDirect3DIndexBuffer9_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D9\"`*"]
 #[repr(transparent)]
 pub struct IDirect3DPixelShader9(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirect3DPixelShader9 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirect3DPixelShader9 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D9\"`*"]
     pub unsafe fn GetDevice(&self) -> ::windows::core::Result<IDirect3DDevice9> {
@@ -8581,11 +8719,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDire
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirect3DPixelShader9 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirect3DPixelShader9 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8611,6 +8744,11 @@ pub struct IDirect3DPixelShader9_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D9\"`*"]
 #[repr(transparent)]
 pub struct IDirect3DQuery9(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirect3DQuery9 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirect3DQuery9 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D9\"`*"]
     pub unsafe fn GetDevice(&self) -> ::windows::core::Result<IDirect3DDevice9> {
@@ -8654,11 +8792,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDire
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirect3DQuery9 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirect3DQuery9 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8687,6 +8820,11 @@ pub struct IDirect3DQuery9_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D9\"`*"]
 #[repr(transparent)]
 pub struct IDirect3DResource9(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirect3DResource9 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirect3DResource9 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D9\"`*"]
     pub unsafe fn GetDevice(&self) -> ::windows::core::Result<IDirect3DDevice9> {
@@ -8742,11 +8880,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDire
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirect3DResource9 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirect3DResource9 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8778,6 +8911,11 @@ pub struct IDirect3DResource9_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D9\"`*"]
 #[repr(transparent)]
 pub struct IDirect3DStateBlock9(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirect3DStateBlock9 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirect3DStateBlock9 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D9\"`*"]
     pub unsafe fn GetDevice(&self) -> ::windows::core::Result<IDirect3DDevice9> {
@@ -8813,11 +8951,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDire
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirect3DStateBlock9 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirect3DStateBlock9 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8844,6 +8977,11 @@ pub struct IDirect3DStateBlock9_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D9\"`*"]
 #[repr(transparent)]
 pub struct IDirect3DSurface9(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirect3DSurface9 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirect3DSurface9 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D9\"`*"]
     pub unsafe fn GetDevice(&self) -> ::windows::core::Result<IDirect3DDevice9> {
@@ -8946,11 +9084,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDirect3DResource9> for &'a IDirect3DSur
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirect3DSurface9 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirect3DSurface9 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8989,6 +9122,11 @@ pub struct IDirect3DSurface9_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D9\"`*"]
 #[repr(transparent)]
 pub struct IDirect3DSwapChain9(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirect3DSwapChain9 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirect3DSwapChain9 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D9\"`, `\"Win32_Foundation\"`, `\"Win32_Graphics_Gdi\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
@@ -9044,11 +9182,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDire
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirect3DSwapChain9 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirect3DSwapChain9 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9088,6 +9221,11 @@ pub struct IDirect3DSwapChain9_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D9\"`*"]
 #[repr(transparent)]
 pub struct IDirect3DSwapChain9Ex(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirect3DSwapChain9Ex {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirect3DSwapChain9Ex {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D9\"`, `\"Win32_Foundation\"`, `\"Win32_Graphics_Gdi\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Gdi"))]
@@ -9175,11 +9313,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDirect3DSwapChain9> for &'a IDirect3DSw
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirect3DSwapChain9Ex {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirect3DSwapChain9Ex {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9206,6 +9339,11 @@ pub struct IDirect3DSwapChain9Ex_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D9\"`*"]
 #[repr(transparent)]
 pub struct IDirect3DTexture9(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirect3DTexture9 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirect3DTexture9 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D9\"`*"]
     pub unsafe fn GetDevice(&self) -> ::windows::core::Result<IDirect3DDevice9> {
@@ -9348,11 +9486,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDirect3DBaseTexture9> for &'a IDirect3D
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirect3DTexture9 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirect3DTexture9 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9387,6 +9520,11 @@ pub struct IDirect3DTexture9_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D9\"`*"]
 #[repr(transparent)]
 pub struct IDirect3DVertexBuffer9(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirect3DVertexBuffer9 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirect3DVertexBuffer9 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D9\"`*"]
     pub unsafe fn GetDevice(&self) -> ::windows::core::Result<IDirect3DDevice9> {
@@ -9474,11 +9612,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDirect3DResource9> for &'a IDirect3DVer
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirect3DVertexBuffer9 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirect3DVertexBuffer9 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9505,6 +9638,11 @@ pub struct IDirect3DVertexBuffer9_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D9\"`*"]
 #[repr(transparent)]
 pub struct IDirect3DVertexDeclaration9(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirect3DVertexDeclaration9 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirect3DVertexDeclaration9 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D9\"`*"]
     pub unsafe fn GetDevice(&self) -> ::windows::core::Result<IDirect3DDevice9> {
@@ -9536,11 +9674,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDire
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirect3DVertexDeclaration9 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirect3DVertexDeclaration9 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9566,6 +9699,11 @@ pub struct IDirect3DVertexDeclaration9_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D9\"`*"]
 #[repr(transparent)]
 pub struct IDirect3DVertexShader9(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirect3DVertexShader9 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirect3DVertexShader9 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D9\"`*"]
     pub unsafe fn GetDevice(&self) -> ::windows::core::Result<IDirect3DDevice9> {
@@ -9597,11 +9735,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDire
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirect3DVertexShader9 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirect3DVertexShader9 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9627,6 +9760,11 @@ pub struct IDirect3DVertexShader9_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D9\"`*"]
 #[repr(transparent)]
 pub struct IDirect3DVolume9(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirect3DVolume9 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirect3DVolume9 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D9\"`*"]
     pub unsafe fn GetDevice(&self) -> ::windows::core::Result<IDirect3DDevice9> {
@@ -9682,11 +9820,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDire
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDirect3DVolume9 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDirect3DVolume9 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9718,6 +9851,11 @@ pub struct IDirect3DVolume9_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D9\"`*"]
 #[repr(transparent)]
 pub struct IDirect3DVolumeTexture9(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDirect3DVolumeTexture9 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDirect3DVolumeTexture9 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D9\"`*"]
     pub unsafe fn GetDevice(&self) -> ::windows::core::Result<IDirect3DDevice9> {
@@ -9856,11 +9994,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDirect3DBaseTexture9> for IDirect3DVolu
 impl<'a> ::windows::core::IntoParam<'a, IDirect3DBaseTexture9> for &'a IDirect3DVolumeTexture9 {
     fn into_param(self) -> ::windows::core::Param<'a, IDirect3DBaseTexture9> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IDirect3DVolumeTexture9 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IDirect3DVolumeTexture9 {

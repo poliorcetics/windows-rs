@@ -2,6 +2,11 @@
 #[doc = "*Required features: `\"Win32_System_WinRT_Display\"`*"]
 #[repr(transparent)]
 pub struct IDisplayDeviceInterop(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDisplayDeviceInterop {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDisplayDeviceInterop {
     #[doc = "*Required features: `\"Win32_System_WinRT_Display\"`, `\"Win32_Foundation\"`, `\"Win32_Security\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security"))]
@@ -36,11 +41,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDisp
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDisplayDeviceInterop {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDisplayDeviceInterop {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -72,6 +72,11 @@ pub struct IDisplayDeviceInterop_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT_Display\"`*"]
 #[repr(transparent)]
 pub struct IDisplayPathInterop(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDisplayPathInterop {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDisplayPathInterop {
     #[doc = "*Required features: `\"Win32_System_WinRT_Display\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -103,11 +108,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IDisplayP
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDisplayPathInterop {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IDisplayPathInterop {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IDisplayPathInterop {

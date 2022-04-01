@@ -4,6 +4,12 @@
 #[repr(transparent)]
 pub struct IEnumNetworkConnections(::windows::core::IUnknown);
 #[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IEnumNetworkConnections {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "Win32_System_Com")]
 impl IEnumNetworkConnections {
     #[doc = "*Required features: `\"Win32_Networking_NetworkListManager\"`, `\"Win32_System_Ole\"`*"]
     #[cfg(feature = "Win32_System_Ole")]
@@ -80,12 +86,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IEnumNetworkConnections {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IEnumNetworkConnections {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -128,6 +128,12 @@ pub struct IEnumNetworkConnections_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IEnumNetworks(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IEnumNetworks {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IEnumNetworks {
     #[doc = "*Required features: `\"Win32_Networking_NetworkListManager\"`, `\"Win32_System_Ole\"`*"]
@@ -205,12 +211,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IEnumNetworks {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IEnumNetworks {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -253,6 +253,12 @@ pub struct IEnumNetworks_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct INetwork(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for INetwork {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl INetwork {
     #[doc = "*Required features: `\"Win32_Networking_NetworkListManager\"`, `\"Win32_Foundation\"`*"]
@@ -371,12 +377,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for INetwork {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for INetwork {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -433,6 +433,12 @@ pub struct INetwork_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct INetworkConnection(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for INetworkConnection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl INetworkConnection {
     #[doc = "*Required features: `\"Win32_Networking_NetworkListManager\"`, `\"Win32_System_Com\"`*"]
@@ -521,12 +527,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for INetworkConnection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for INetworkConnection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -564,6 +564,11 @@ pub struct INetworkConnection_Vtbl {
 #[doc = "*Required features: `\"Win32_Networking_NetworkListManager\"`*"]
 #[repr(transparent)]
 pub struct INetworkConnectionCost(::windows::core::IUnknown);
+impl ::core::clone::Clone for INetworkConnectionCost {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl INetworkConnectionCost {
     #[doc = "*Required features: `\"Win32_Networking_NetworkListManager\"`*"]
     pub unsafe fn GetCost(&self) -> ::windows::core::Result<u32> {
@@ -597,11 +602,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a INetw
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for INetworkConnectionCost {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for INetworkConnectionCost {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -630,6 +630,11 @@ pub struct INetworkConnectionCost_Vtbl {
 #[doc = "*Required features: `\"Win32_Networking_NetworkListManager\"`*"]
 #[repr(transparent)]
 pub struct INetworkConnectionCostEvents(::windows::core::IUnknown);
+impl ::core::clone::Clone for INetworkConnectionCostEvents {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl INetworkConnectionCostEvents {
     #[doc = "*Required features: `\"Win32_Networking_NetworkListManager\"`*"]
     pub unsafe fn ConnectionCostChanged<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::GUID>>(&self, connectionid: Param0, newcost: u32) -> ::windows::core::Result<()> {
@@ -660,11 +665,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a INetw
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for INetworkConnectionCostEvents {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for INetworkConnectionCostEvents {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -690,6 +690,11 @@ pub struct INetworkConnectionCostEvents_Vtbl {
 #[doc = "*Required features: `\"Win32_Networking_NetworkListManager\"`*"]
 #[repr(transparent)]
 pub struct INetworkConnectionEvents(::windows::core::IUnknown);
+impl ::core::clone::Clone for INetworkConnectionEvents {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl INetworkConnectionEvents {
     #[doc = "*Required features: `\"Win32_Networking_NetworkListManager\"`*"]
     pub unsafe fn NetworkConnectionConnectivityChanged<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::GUID>>(&self, connectionid: Param0, newconnectivity: NLM_CONNECTIVITY) -> ::windows::core::Result<()> {
@@ -720,11 +725,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a INetw
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for INetworkConnectionEvents {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for INetworkConnectionEvents {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -750,6 +750,11 @@ pub struct INetworkConnectionEvents_Vtbl {
 #[doc = "*Required features: `\"Win32_Networking_NetworkListManager\"`*"]
 #[repr(transparent)]
 pub struct INetworkCostManager(::windows::core::IUnknown);
+impl ::core::clone::Clone for INetworkCostManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl INetworkCostManager {
     #[doc = "*Required features: `\"Win32_Networking_NetworkListManager\"`*"]
     pub unsafe fn GetCost(&self, pcost: *mut u32, pdestipaddr: *const NLM_SOCKADDR) -> ::windows::core::Result<()> {
@@ -785,11 +790,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a INetw
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for INetworkCostManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for INetworkCostManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -819,6 +819,11 @@ pub struct INetworkCostManager_Vtbl {
 #[doc = "*Required features: `\"Win32_Networking_NetworkListManager\"`*"]
 #[repr(transparent)]
 pub struct INetworkCostManagerEvents(::windows::core::IUnknown);
+impl ::core::clone::Clone for INetworkCostManagerEvents {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl INetworkCostManagerEvents {
     #[doc = "*Required features: `\"Win32_Networking_NetworkListManager\"`*"]
     pub unsafe fn CostChanged(&self, newcost: u32, pdestaddr: *const NLM_SOCKADDR) -> ::windows::core::Result<()> {
@@ -849,11 +854,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a INetw
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for INetworkCostManagerEvents {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for INetworkCostManagerEvents {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -879,6 +879,11 @@ pub struct INetworkCostManagerEvents_Vtbl {
 #[doc = "*Required features: `\"Win32_Networking_NetworkListManager\"`*"]
 #[repr(transparent)]
 pub struct INetworkEvents(::windows::core::IUnknown);
+impl ::core::clone::Clone for INetworkEvents {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl INetworkEvents {
     #[doc = "*Required features: `\"Win32_Networking_NetworkListManager\"`*"]
     pub unsafe fn NetworkAdded<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::GUID>>(&self, networkid: Param0) -> ::windows::core::Result<()> {
@@ -917,11 +922,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a INetw
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for INetworkEvents {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for INetworkEvents {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -950,6 +950,12 @@ pub struct INetworkEvents_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct INetworkListManager(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for INetworkListManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl INetworkListManager {
     #[doc = "*Required features: `\"Win32_Networking_NetworkListManager\"`, `\"Win32_System_Com\"`*"]
@@ -1049,12 +1055,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for INetworkListManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for INetworkListManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1103,6 +1103,11 @@ pub struct INetworkListManager_Vtbl {
 #[doc = "*Required features: `\"Win32_Networking_NetworkListManager\"`*"]
 #[repr(transparent)]
 pub struct INetworkListManagerEvents(::windows::core::IUnknown);
+impl ::core::clone::Clone for INetworkListManagerEvents {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl INetworkListManagerEvents {
     #[doc = "*Required features: `\"Win32_Networking_NetworkListManager\"`*"]
     pub unsafe fn ConnectivityChanged(&self, newconnectivity: NLM_CONNECTIVITY) -> ::windows::core::Result<()> {
@@ -1127,11 +1132,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for INetworkL
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a INetworkListManagerEvents {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for INetworkListManagerEvents {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for INetworkListManagerEvents {
@@ -1214,6 +1214,7 @@ impl ::core::default::Default for NLM_CONNECTION_COST {
 }
 unsafe impl ::windows::core::Abi for NLM_CONNECTION_COST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NLM_CONNECTION_COST {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1239,6 +1240,7 @@ impl ::core::default::Default for NLM_CONNECTION_PROPERTY_CHANGE {
 }
 unsafe impl ::windows::core::Abi for NLM_CONNECTION_PROPERTY_CHANGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NLM_CONNECTION_PROPERTY_CHANGE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1280,6 +1282,7 @@ impl ::core::default::Default for NLM_CONNECTIVITY {
 }
 unsafe impl ::windows::core::Abi for NLM_CONNECTIVITY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NLM_CONNECTIVITY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1316,6 +1319,7 @@ impl ::core::fmt::Debug for NLM_DATAPLAN_STATUS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NLM_DATAPLAN_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NLM_DATAPLAN_STATUS {
@@ -1354,6 +1358,7 @@ impl ::core::default::Default for NLM_DOMAIN_TYPE {
 }
 unsafe impl ::windows::core::Abi for NLM_DOMAIN_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NLM_DOMAIN_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1383,6 +1388,7 @@ impl ::core::default::Default for NLM_ENUM_NETWORK {
 }
 unsafe impl ::windows::core::Abi for NLM_ENUM_NETWORK {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NLM_ENUM_NETWORK {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1412,6 +1418,7 @@ impl ::core::default::Default for NLM_INTERNET_CONNECTIVITY {
 }
 unsafe impl ::windows::core::Abi for NLM_INTERNET_CONNECTIVITY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NLM_INTERNET_CONNECTIVITY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1443,6 +1450,7 @@ impl ::core::default::Default for NLM_NETWORK_CATEGORY {
 }
 unsafe impl ::windows::core::Abi for NLM_NETWORK_CATEGORY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NLM_NETWORK_CATEGORY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1472,6 +1480,7 @@ impl ::core::default::Default for NLM_NETWORK_CLASS {
 }
 unsafe impl ::windows::core::Abi for NLM_NETWORK_CLASS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NLM_NETWORK_CLASS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1505,6 +1514,7 @@ impl ::core::default::Default for NLM_NETWORK_PROPERTY_CHANGE {
 }
 unsafe impl ::windows::core::Abi for NLM_NETWORK_PROPERTY_CHANGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NLM_NETWORK_PROPERTY_CHANGE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1532,6 +1542,7 @@ impl ::core::fmt::Debug for NLM_SIMULATED_PROFILE_INFO {
 }
 unsafe impl ::windows::core::Abi for NLM_SIMULATED_PROFILE_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NLM_SIMULATED_PROFILE_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -1562,6 +1573,7 @@ impl ::core::fmt::Debug for NLM_SOCKADDR {
 }
 unsafe impl ::windows::core::Abi for NLM_SOCKADDR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NLM_SOCKADDR {
     fn eq(&self, other: &Self) -> bool {
@@ -1600,6 +1612,7 @@ impl ::core::fmt::Debug for NLM_USAGE_DATA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NLM_USAGE_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NLM_USAGE_DATA {

@@ -20,6 +20,7 @@ impl ::core::default::Default for EDefaultDevmodeType {
 }
 unsafe impl ::windows::core::Abi for EDefaultDevmodeType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EDefaultDevmodeType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -49,6 +50,7 @@ impl ::core::default::Default for EPrintTicketScope {
 }
 unsafe impl ::windows::core::Abi for EPrintTicketScope {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EPrintTicketScope {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

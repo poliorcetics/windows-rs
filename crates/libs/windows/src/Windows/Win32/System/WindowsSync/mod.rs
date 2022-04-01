@@ -24,6 +24,7 @@ impl ::core::default::Default for CONFLICT_RESOLUTION_POLICY {
 }
 unsafe impl ::windows::core::Abi for CONFLICT_RESOLUTION_POLICY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CONFLICT_RESOLUTION_POLICY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -55,6 +56,7 @@ impl ::core::default::Default for CONSTRAINT_CONFLICT_REASON {
 }
 unsafe impl ::windows::core::Abi for CONSTRAINT_CONFLICT_REASON {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CONSTRAINT_CONFLICT_REASON {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -82,6 +84,7 @@ impl ::core::default::Default for FILTERING_TYPE {
 }
 unsafe impl ::windows::core::Abi for FILTERING_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FILTERING_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -107,6 +110,7 @@ impl ::core::default::Default for FILTER_COMBINATION_TYPE {
 }
 unsafe impl ::windows::core::Abi for FILTER_COMBINATION_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FILTER_COMBINATION_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -116,6 +120,11 @@ impl ::core::fmt::Debug for FILTER_COMBINATION_TYPE {
 #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
 #[repr(transparent)]
 pub struct IAsynchronousDataRetriever(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAsynchronousDataRetriever {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAsynchronousDataRetriever {
     #[doc = "*Required features: `\"Win32_System_WindowsSync\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -155,11 +164,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAsyn
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAsynchronousDataRetriever {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAsynchronousDataRetriever {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -190,6 +194,11 @@ pub struct IAsynchronousDataRetriever_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
 #[repr(transparent)]
 pub struct IChangeConflict(::windows::core::IUnknown);
+impl ::core::clone::Clone for IChangeConflict {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IChangeConflict {
     #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
     pub unsafe fn GetDestinationProviderConflictingChange(&self) -> ::windows::core::Result<ISyncChange> {
@@ -248,11 +257,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IChan
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IChangeConflict {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IChangeConflict {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -284,6 +288,11 @@ pub struct IChangeConflict_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
 #[repr(transparent)]
 pub struct IChangeUnitException(::windows::core::IUnknown);
+impl ::core::clone::Clone for IChangeUnitException {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IChangeUnitException {
     #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
     pub unsafe fn GetItemId(&self, pbitemid: *mut u8, pcbidsize: *mut u32) -> ::windows::core::Result<()> {
@@ -318,11 +327,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IChan
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IChangeUnitException {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IChangeUnitException {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -349,6 +353,11 @@ pub struct IChangeUnitException_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
 #[repr(transparent)]
 pub struct IChangeUnitListFilterInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IChangeUnitListFilterInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IChangeUnitListFilterInfo {
     #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
     pub unsafe fn Serialize(&self, pbbuffer: *mut u8, pcbbuffer: *mut u32) -> ::windows::core::Result<()> {
@@ -407,11 +416,6 @@ impl<'a> ::windows::core::IntoParam<'a, ISyncFilterInfo> for &'a IChangeUnitList
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IChangeUnitListFilterInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IChangeUnitListFilterInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -438,6 +442,11 @@ pub struct IChangeUnitListFilterInfo_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
 #[repr(transparent)]
 pub struct IClockVector(::windows::core::IUnknown);
+impl ::core::clone::Clone for IClockVector {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IClockVector {
     #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
     pub unsafe fn GetClockVectorElements(&self, riid: *const ::windows::core::GUID, ppienumclockvector: *mut *mut ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -468,11 +477,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ICloc
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IClockVector {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IClockVector {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -498,6 +502,11 @@ pub struct IClockVector_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
 #[repr(transparent)]
 pub struct IClockVectorElement(::windows::core::IUnknown);
+impl ::core::clone::Clone for IClockVectorElement {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IClockVectorElement {
     #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
     pub unsafe fn GetReplicaKey(&self, pdwreplicakey: *mut u32) -> ::windows::core::Result<()> {
@@ -528,11 +537,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ICloc
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IClockVectorElement {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IClockVectorElement {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -558,6 +562,11 @@ pub struct IClockVectorElement_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
 #[repr(transparent)]
 pub struct ICombinedFilterInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICombinedFilterInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ICombinedFilterInfo {
     #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
     pub unsafe fn Serialize(&self, pbbuffer: *mut u8, pcbbuffer: *mut u32) -> ::windows::core::Result<()> {
@@ -617,11 +626,6 @@ impl<'a> ::windows::core::IntoParam<'a, ISyncFilterInfo> for &'a ICombinedFilter
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ICombinedFilterInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ICombinedFilterInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -648,6 +652,11 @@ pub struct ICombinedFilterInfo_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
 #[repr(transparent)]
 pub struct IConstraintConflict(::windows::core::IUnknown);
+impl ::core::clone::Clone for IConstraintConflict {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IConstraintConflict {
     #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
     pub unsafe fn GetDestinationProviderConflictingChange(&self) -> ::windows::core::Result<ISyncChange> {
@@ -724,11 +733,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ICons
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IConstraintConflict {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IConstraintConflict {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -764,6 +768,11 @@ pub struct IConstraintConflict_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
 #[repr(transparent)]
 pub struct IConstructReplicaKeyMap(::windows::core::IUnknown);
+impl ::core::clone::Clone for IConstructReplicaKeyMap {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IConstructReplicaKeyMap {
     #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
     pub unsafe fn FindOrAddReplica(&self, pbreplicaid: *const u8, pdwreplicakey: *mut u32) -> ::windows::core::Result<()> {
@@ -790,11 +799,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ICons
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IConstructReplicaKeyMap {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IConstructReplicaKeyMap {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -819,6 +823,11 @@ pub struct IConstructReplicaKeyMap_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
 #[repr(transparent)]
 pub struct ICoreFragment(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICoreFragment {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ICoreFragment {
     #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
     pub unsafe fn NextColumn(&self, pchangeunitid: *mut u8, pchangeunitidsize: *mut u32) -> ::windows::core::Result<()> {
@@ -861,11 +870,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ICore
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ICoreFragment {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ICoreFragment {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -894,6 +898,11 @@ pub struct ICoreFragment_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
 #[repr(transparent)]
 pub struct ICoreFragmentInspector(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICoreFragmentInspector {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ICoreFragmentInspector {
     #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
     pub unsafe fn NextCoreFragments(&self, requestedcount: u32, ppicorefragments: *mut ::core::option::Option<ICoreFragment>, pfetchedcount: *mut u32) -> ::windows::core::Result<()> {
@@ -924,11 +933,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ICore
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ICoreFragmentInspector {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ICoreFragmentInspector {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -954,6 +958,11 @@ pub struct ICoreFragmentInspector_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
 #[repr(transparent)]
 pub struct ICustomFilterInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICustomFilterInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ICustomFilterInfo {
     #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
     pub unsafe fn Serialize(&self, pbbuffer: *mut u8, pcbbuffer: *mut u32) -> ::windows::core::Result<()> {
@@ -1005,11 +1014,6 @@ impl<'a> ::windows::core::IntoParam<'a, ISyncFilterInfo> for &'a ICustomFilterIn
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ICustomFilterInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ICustomFilterInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1057,6 +1061,7 @@ impl ::core::fmt::Debug for ID_PARAMETERS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for ID_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for ID_PARAMETERS {
@@ -1096,6 +1101,7 @@ impl ::core::fmt::Debug for ID_PARAMETER_PAIR {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for ID_PARAMETER_PAIR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for ID_PARAMETER_PAIR {
@@ -1114,6 +1120,11 @@ impl ::core::default::Default for ID_PARAMETER_PAIR {
 #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
 #[repr(transparent)]
 pub struct IDataRetrieverCallback(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDataRetrieverCallback {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDataRetrieverCallback {
     #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
     pub unsafe fn LoadChangeDataComplete<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, punkdata: Param0) -> ::windows::core::Result<()> {
@@ -1144,11 +1155,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IData
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDataRetrieverCallback {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDataRetrieverCallback {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1174,6 +1180,11 @@ pub struct IDataRetrieverCallback_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
 #[repr(transparent)]
 pub struct IEnumChangeUnitExceptions(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnumChangeUnitExceptions {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnumChangeUnitExceptions {
     #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
     pub unsafe fn Next(&self, cexceptions: u32, ppchangeunitexception: *mut ::core::option::Option<IChangeUnitException>, pcfetched: *mut u32) -> ::windows::core::Result<()> {
@@ -1213,11 +1224,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnum
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnumChangeUnitExceptions {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnumChangeUnitExceptions {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1245,6 +1251,11 @@ pub struct IEnumChangeUnitExceptions_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
 #[repr(transparent)]
 pub struct IEnumClockVector(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnumClockVector {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnumClockVector {
     #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
     pub unsafe fn Next(&self, cclockvectorelements: u32, ppiclockvectorelements: *mut ::core::option::Option<IClockVectorElement>, pcfetched: *mut u32) -> ::windows::core::Result<()> {
@@ -1284,11 +1295,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnum
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnumClockVector {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnumClockVector {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1316,6 +1322,11 @@ pub struct IEnumClockVector_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
 #[repr(transparent)]
 pub struct IEnumFeedClockVector(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnumFeedClockVector {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnumFeedClockVector {
     #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
     pub unsafe fn Next(&self, cclockvectorelements: u32, ppiclockvectorelements: *mut ::core::option::Option<IFeedClockVectorElement>, pcfetched: *mut u32) -> ::windows::core::Result<()> {
@@ -1355,11 +1366,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnum
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnumFeedClockVector {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnumFeedClockVector {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1387,6 +1393,11 @@ pub struct IEnumFeedClockVector_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
 #[repr(transparent)]
 pub struct IEnumItemIds(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnumItemIds {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnumItemIds {
     #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
     pub unsafe fn Next(&self, pbitemid: *mut u8, pcbitemidsize: *mut u32) -> ::windows::core::Result<()> {
@@ -1413,11 +1424,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnum
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnumItemIds {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnumItemIds {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1442,6 +1448,11 @@ pub struct IEnumItemIds_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
 #[repr(transparent)]
 pub struct IEnumRangeExceptions(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnumRangeExceptions {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnumRangeExceptions {
     #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
     pub unsafe fn Next(&self, cexceptions: u32, pprangeexception: *mut ::core::option::Option<IRangeException>, pcfetched: *mut u32) -> ::windows::core::Result<()> {
@@ -1481,11 +1492,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnum
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnumRangeExceptions {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnumRangeExceptions {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1513,6 +1519,11 @@ pub struct IEnumRangeExceptions_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
 #[repr(transparent)]
 pub struct IEnumSingleItemExceptions(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnumSingleItemExceptions {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnumSingleItemExceptions {
     #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
     pub unsafe fn Next(&self, cexceptions: u32, ppsingleitemexception: *mut ::core::option::Option<ISingleItemException>, pcfetched: *mut u32) -> ::windows::core::Result<()> {
@@ -1552,11 +1563,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnum
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnumSingleItemExceptions {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnumSingleItemExceptions {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1584,6 +1590,11 @@ pub struct IEnumSingleItemExceptions_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
 #[repr(transparent)]
 pub struct IEnumSyncChangeUnits(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnumSyncChangeUnits {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnumSyncChangeUnits {
     #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
     pub unsafe fn Next(&self, cchanges: u32, ppchangeunit: *mut ::core::option::Option<ISyncChangeUnit>, pcfetched: *mut u32) -> ::windows::core::Result<()> {
@@ -1623,11 +1634,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnum
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnumSyncChangeUnits {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnumSyncChangeUnits {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1655,6 +1661,11 @@ pub struct IEnumSyncChangeUnits_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
 #[repr(transparent)]
 pub struct IEnumSyncChanges(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnumSyncChanges {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnumSyncChanges {
     #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
     pub unsafe fn Next(&self, cchanges: u32, ppchange: *mut ::core::option::Option<ISyncChange>, pcfetched: *mut u32) -> ::windows::core::Result<()> {
@@ -1694,11 +1705,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnum
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnumSyncChanges {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnumSyncChanges {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1726,6 +1732,11 @@ pub struct IEnumSyncChanges_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
 #[repr(transparent)]
 pub struct IEnumSyncProviderConfigUIInfos(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnumSyncProviderConfigUIInfos {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnumSyncProviderConfigUIInfos {
     #[doc = "*Required features: `\"Win32_System_WindowsSync\"`, `\"Win32_UI_Shell_PropertiesSystem\"`*"]
     #[cfg(feature = "Win32_UI_Shell_PropertiesSystem")]
@@ -1766,11 +1777,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnum
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnumSyncProviderConfigUIInfos {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnumSyncProviderConfigUIInfos {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1801,6 +1807,11 @@ pub struct IEnumSyncProviderConfigUIInfos_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
 #[repr(transparent)]
 pub struct IEnumSyncProviderInfos(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnumSyncProviderInfos {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnumSyncProviderInfos {
     #[doc = "*Required features: `\"Win32_System_WindowsSync\"`, `\"Win32_UI_Shell_PropertiesSystem\"`*"]
     #[cfg(feature = "Win32_UI_Shell_PropertiesSystem")]
@@ -1841,11 +1852,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnum
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnumSyncProviderInfos {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnumSyncProviderInfos {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1876,6 +1882,11 @@ pub struct IEnumSyncProviderInfos_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
 #[repr(transparent)]
 pub struct IFeedClockVector(::windows::core::IUnknown);
+impl ::core::clone::Clone for IFeedClockVector {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IFeedClockVector {
     #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
     pub unsafe fn GetClockVectorElements(&self, riid: *const ::windows::core::GUID, ppienumclockvector: *mut *mut ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -1935,11 +1946,6 @@ impl<'a> ::windows::core::IntoParam<'a, IClockVector> for &'a IFeedClockVector {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IFeedClockVector {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IFeedClockVector {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1968,6 +1974,11 @@ pub struct IFeedClockVector_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
 #[repr(transparent)]
 pub struct IFeedClockVectorElement(::windows::core::IUnknown);
+impl ::core::clone::Clone for IFeedClockVectorElement {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IFeedClockVectorElement {
     #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
     pub unsafe fn GetReplicaKey(&self, pdwreplicakey: *mut u32) -> ::windows::core::Result<()> {
@@ -2026,11 +2037,6 @@ impl<'a> ::windows::core::IntoParam<'a, IClockVectorElement> for &'a IFeedClockV
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IFeedClockVectorElement {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IFeedClockVectorElement {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2056,6 +2062,11 @@ pub struct IFeedClockVectorElement_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
 #[repr(transparent)]
 pub struct IFilterKeyMap(::windows::core::IUnknown);
+impl ::core::clone::Clone for IFilterKeyMap {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IFilterKeyMap {
     #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
     pub unsafe fn GetCount(&self, pdwcount: *mut u32) -> ::windows::core::Result<()> {
@@ -2095,11 +2106,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IFilt
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IFilterKeyMap {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IFilterKeyMap {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2127,6 +2133,11 @@ pub struct IFilterKeyMap_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
 #[repr(transparent)]
 pub struct IFilterRequestCallback(::windows::core::IUnknown);
+impl ::core::clone::Clone for IFilterRequestCallback {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IFilterRequestCallback {
     #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
     pub unsafe fn RequestFilter<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, pfilter: Param0, filteringtype: FILTERING_TYPE) -> ::windows::core::Result<()> {
@@ -2153,11 +2164,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IFilt
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IFilterRequestCallback {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IFilterRequestCallback {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2182,6 +2188,11 @@ pub struct IFilterRequestCallback_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
 #[repr(transparent)]
 pub struct IFilterTrackingProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IFilterTrackingProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IFilterTrackingProvider {
     #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
     pub unsafe fn SpecifyTrackedFilters<'a, Param0: ::windows::core::IntoParam<'a, IFilterTrackingRequestCallback>>(&self, pcallback: Param0) -> ::windows::core::Result<()> {
@@ -2212,11 +2223,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IFilt
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IFilterTrackingProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IFilterTrackingProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2242,6 +2248,11 @@ pub struct IFilterTrackingProvider_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
 #[repr(transparent)]
 pub struct IFilterTrackingRequestCallback(::windows::core::IUnknown);
+impl ::core::clone::Clone for IFilterTrackingRequestCallback {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IFilterTrackingRequestCallback {
     #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
     pub unsafe fn RequestTrackedFilter<'a, Param0: ::windows::core::IntoParam<'a, ISyncFilter>>(&self, pfilter: Param0) -> ::windows::core::Result<()> {
@@ -2268,11 +2279,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IFilt
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IFilterTrackingRequestCallback {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IFilterTrackingRequestCallback {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2297,6 +2303,11 @@ pub struct IFilterTrackingRequestCallback_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
 #[repr(transparent)]
 pub struct IFilterTrackingSyncChangeBuilder(::windows::core::IUnknown);
+impl ::core::clone::Clone for IFilterTrackingSyncChangeBuilder {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IFilterTrackingSyncChangeBuilder {
     #[doc = "*Required features: `\"Win32_System_WindowsSync\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -2328,11 +2339,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IFilt
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IFilterTrackingSyncChangeBuilder {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IFilterTrackingSyncChangeBuilder {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2361,6 +2367,11 @@ pub struct IFilterTrackingSyncChangeBuilder_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
 #[repr(transparent)]
 pub struct IForgottenKnowledge(::windows::core::IUnknown);
+impl ::core::clone::Clone for IForgottenKnowledge {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IForgottenKnowledge {
     #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
     pub unsafe fn GetOwnerReplicaId(&self, pbreplicaid: *mut u8, pcbidsize: *mut u32) -> ::windows::core::Result<()> {
@@ -2510,11 +2521,6 @@ impl<'a> ::windows::core::IntoParam<'a, ISyncKnowledge> for &'a IForgottenKnowle
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IForgottenKnowledge {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IForgottenKnowledge {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2539,6 +2545,11 @@ pub struct IForgottenKnowledge_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
 #[repr(transparent)]
 pub struct IKnowledgeSyncProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IKnowledgeSyncProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IKnowledgeSyncProvider {
     #[doc = "*Required features: `\"Win32_System_WindowsSync\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -2614,11 +2625,6 @@ impl<'a> ::windows::core::IntoParam<'a, ISyncProvider> for &'a IKnowledgeSyncPro
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IKnowledgeSyncProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IKnowledgeSyncProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2649,6 +2655,11 @@ pub struct IKnowledgeSyncProvider_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
 #[repr(transparent)]
 pub struct ILoadChangeContext(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILoadChangeContext {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ILoadChangeContext {
     #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
     pub unsafe fn GetSyncChange(&self) -> ::windows::core::Result<ISyncChange> {
@@ -2684,11 +2695,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ILoad
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ILoadChangeContext {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ILoadChangeContext {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2715,6 +2721,11 @@ pub struct ILoadChangeContext_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
 #[repr(transparent)]
 pub struct IProviderConverter(::windows::core::IUnknown);
+impl ::core::clone::Clone for IProviderConverter {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IProviderConverter {
     #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
     pub unsafe fn Initialize<'a, Param0: ::windows::core::IntoParam<'a, ISyncProvider>>(&self, pisyncprovider: Param0) -> ::windows::core::Result<()> {
@@ -2741,11 +2752,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IProv
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IProviderConverter {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IProviderConverter {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2770,6 +2776,11 @@ pub struct IProviderConverter_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
 #[repr(transparent)]
 pub struct IRangeException(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRangeException {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRangeException {
     #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
     pub unsafe fn GetClosedRangeStart(&self, pbclosedrangestart: *mut u8, pcbidsize: *mut u32) -> ::windows::core::Result<()> {
@@ -2804,11 +2815,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IRang
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IRangeException {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IRangeException {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2835,6 +2841,11 @@ pub struct IRangeException_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
 #[repr(transparent)]
 pub struct IRecoverableError(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRecoverableError {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRecoverableError {
     #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
     pub unsafe fn GetStage(&self, pstage: *mut SYNC_PROGRESS_STAGE) -> ::windows::core::Result<()> {
@@ -2878,11 +2889,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IReco
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IRecoverableError {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IRecoverableError {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2911,6 +2917,11 @@ pub struct IRecoverableError_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
 #[repr(transparent)]
 pub struct IRecoverableErrorData(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRecoverableErrorData {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRecoverableErrorData {
     #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
     pub unsafe fn Initialize<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param1: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, pcszitemdisplayname: Param0, pcszerrordescription: Param1) -> ::windows::core::Result<()> {
@@ -2945,11 +2956,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IReco
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IRecoverableErrorData {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IRecoverableErrorData {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2976,6 +2982,11 @@ pub struct IRecoverableErrorData_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
 #[repr(transparent)]
 pub struct IRegisteredSyncProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRegisteredSyncProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRegisteredSyncProvider {
     #[doc = "*Required features: `\"Win32_System_WindowsSync\"`, `\"Win32_UI_Shell_PropertiesSystem\"`*"]
     #[cfg(feature = "Win32_UI_Shell_PropertiesSystem")]
@@ -3012,11 +3023,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IRegi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IRegisteredSyncProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IRegisteredSyncProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3046,6 +3052,11 @@ pub struct IRegisteredSyncProvider_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
 #[repr(transparent)]
 pub struct IReplicaKeyMap(::windows::core::IUnknown);
+impl ::core::clone::Clone for IReplicaKeyMap {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IReplicaKeyMap {
     #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
     pub unsafe fn LookupReplicaKey(&self, pbreplicaid: *const u8, pdwreplicakey: *mut u32) -> ::windows::core::Result<()> {
@@ -3080,11 +3091,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IRepl
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IReplicaKeyMap {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IReplicaKeyMap {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3111,6 +3117,11 @@ pub struct IReplicaKeyMap_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
 #[repr(transparent)]
 pub struct IRequestFilteredSync(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRequestFilteredSync {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRequestFilteredSync {
     #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
     pub unsafe fn SpecifyFilter<'a, Param0: ::windows::core::IntoParam<'a, IFilterRequestCallback>>(&self, pcallback: Param0) -> ::windows::core::Result<()> {
@@ -3137,11 +3148,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IRequ
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IRequestFilteredSync {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IRequestFilteredSync {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3166,6 +3172,11 @@ pub struct IRequestFilteredSync_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
 #[repr(transparent)]
 pub struct ISingleItemException(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISingleItemException {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISingleItemException {
     #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
     pub unsafe fn GetItemId(&self, pbitemid: *mut u8, pcbidsize: *mut u32) -> ::windows::core::Result<()> {
@@ -3196,11 +3207,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISing
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISingleItemException {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISingleItemException {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3226,6 +3232,11 @@ pub struct ISingleItemException_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
 #[repr(transparent)]
 pub struct ISupportFilteredSync(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISupportFilteredSync {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISupportFilteredSync {
     #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
     pub unsafe fn AddFilter<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, pfilter: Param0, filteringtype: FILTERING_TYPE) -> ::windows::core::Result<()> {
@@ -3252,11 +3263,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISupp
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISupportFilteredSync {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISupportFilteredSync {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3281,6 +3287,11 @@ pub struct ISupportFilteredSync_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
 #[repr(transparent)]
 pub struct ISupportLastWriteTime(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISupportLastWriteTime {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISupportLastWriteTime {
     #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
     pub unsafe fn GetItemChangeTime(&self, pbitemid: *const u8, pulltimestamp: *mut u64) -> ::windows::core::Result<()> {
@@ -3311,11 +3322,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISupp
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISupportLastWriteTime {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISupportLastWriteTime {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3341,6 +3347,11 @@ pub struct ISupportLastWriteTime_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
 #[repr(transparent)]
 pub struct ISyncCallback(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISyncCallback {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISyncCallback {
     #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
     pub unsafe fn OnProgress(&self, provider: SYNC_PROVIDER_ROLE, syncstage: SYNC_PROGRESS_STAGE, dwcompletedwork: u32, dwtotalwork: u32) -> ::windows::core::Result<()> {
@@ -3383,11 +3394,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISync
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISyncCallback {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISyncCallback {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3416,6 +3422,11 @@ pub struct ISyncCallback_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
 #[repr(transparent)]
 pub struct ISyncCallback2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISyncCallback2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISyncCallback2 {
     #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
     pub unsafe fn OnProgress(&self, provider: SYNC_PROVIDER_ROLE, syncstage: SYNC_PROGRESS_STAGE, dwcompletedwork: u32, dwtotalwork: u32) -> ::windows::core::Result<()> {
@@ -3486,11 +3497,6 @@ impl<'a> ::windows::core::IntoParam<'a, ISyncCallback> for &'a ISyncCallback2 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISyncCallback2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISyncCallback2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3516,6 +3522,11 @@ pub struct ISyncCallback2_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
 #[repr(transparent)]
 pub struct ISyncChange(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISyncChange {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISyncChange {
     #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
     pub unsafe fn GetOwnerReplicaId(&self, pbreplicaid: *mut u8, pcbidsize: *mut u32) -> ::windows::core::Result<()> {
@@ -3581,11 +3592,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISync
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISyncChange {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISyncChange {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3619,6 +3625,11 @@ pub struct ISyncChange_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
 #[repr(transparent)]
 pub struct ISyncChangeBatch(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISyncChangeBatch {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISyncChangeBatch {
     #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
     pub unsafe fn GetChangeEnumerator(&self) -> ::windows::core::Result<IEnumSyncChanges> {
@@ -3737,11 +3748,6 @@ impl<'a> ::windows::core::IntoParam<'a, ISyncChangeBatchBase> for &'a ISyncChang
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISyncChangeBatch {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISyncChangeBatch {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3771,6 +3777,11 @@ pub struct ISyncChangeBatch_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
 #[repr(transparent)]
 pub struct ISyncChangeBatch2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISyncChangeBatch2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISyncChangeBatch2 {
     #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
     pub unsafe fn GetChangeEnumerator(&self) -> ::windows::core::Result<IEnumSyncChanges> {
@@ -3919,11 +3930,6 @@ impl<'a> ::windows::core::IntoParam<'a, ISyncChangeBatch> for &'a ISyncChangeBat
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISyncChangeBatch2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISyncChangeBatch2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3949,6 +3955,11 @@ pub struct ISyncChangeBatch2_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
 #[repr(transparent)]
 pub struct ISyncChangeBatchAdvanced(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISyncChangeBatchAdvanced {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISyncChangeBatchAdvanced {
     #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
     pub unsafe fn GetFilterInfo(&self) -> ::windows::core::Result<ISyncFilterInfo> {
@@ -3990,11 +4001,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISync
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISyncChangeBatchAdvanced {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISyncChangeBatchAdvanced {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4025,6 +4031,11 @@ pub struct ISyncChangeBatchAdvanced_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
 #[repr(transparent)]
 pub struct ISyncChangeBatchBase(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISyncChangeBatchBase {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISyncChangeBatchBase {
     #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
     pub unsafe fn GetChangeEnumerator(&self) -> ::windows::core::Result<IEnumSyncChanges> {
@@ -4109,11 +4120,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISync
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISyncChangeBatchBase {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISyncChangeBatchBase {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4154,6 +4160,11 @@ pub struct ISyncChangeBatchBase_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
 #[repr(transparent)]
 pub struct ISyncChangeBatchBase2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISyncChangeBatchBase2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISyncChangeBatchBase2 {
     #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
     pub unsafe fn GetChangeEnumerator(&self) -> ::windows::core::Result<IEnumSyncChanges> {
@@ -4262,11 +4273,6 @@ impl<'a> ::windows::core::IntoParam<'a, ISyncChangeBatchBase> for &'a ISyncChang
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISyncChangeBatchBase2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISyncChangeBatchBase2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4291,6 +4297,11 @@ pub struct ISyncChangeBatchBase2_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
 #[repr(transparent)]
 pub struct ISyncChangeBatchWithFilterKeyMap(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISyncChangeBatchWithFilterKeyMap {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISyncChangeBatchWithFilterKeyMap {
     #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
     pub unsafe fn GetFilterKeyMap(&self) -> ::windows::core::Result<IFilterKeyMap> {
@@ -4351,11 +4362,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISync
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISyncChangeBatchWithFilterKeyMap {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISyncChangeBatchWithFilterKeyMap {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4387,6 +4393,11 @@ pub struct ISyncChangeBatchWithFilterKeyMap_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
 #[repr(transparent)]
 pub struct ISyncChangeBatchWithPrerequisite(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISyncChangeBatchWithPrerequisite {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISyncChangeBatchWithPrerequisite {
     #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
     pub unsafe fn GetChangeEnumerator(&self) -> ::windows::core::Result<IEnumSyncChanges> {
@@ -4505,11 +4516,6 @@ impl<'a> ::windows::core::IntoParam<'a, ISyncChangeBatchBase> for &'a ISyncChang
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISyncChangeBatchWithPrerequisite {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISyncChangeBatchWithPrerequisite {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4536,6 +4542,11 @@ pub struct ISyncChangeBatchWithPrerequisite_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
 #[repr(transparent)]
 pub struct ISyncChangeBuilder(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISyncChangeBuilder {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISyncChangeBuilder {
     #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
     pub unsafe fn AddChangeUnitMetadata(&self, pbchangeunitid: *const u8, pchangeunitversion: *const SYNC_VERSION) -> ::windows::core::Result<()> {
@@ -4562,11 +4573,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISync
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISyncChangeBuilder {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISyncChangeBuilder {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4591,6 +4597,11 @@ pub struct ISyncChangeBuilder_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
 #[repr(transparent)]
 pub struct ISyncChangeUnit(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISyncChangeUnit {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISyncChangeUnit {
     #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
     pub unsafe fn GetItemChange(&self) -> ::windows::core::Result<ISyncChange> {
@@ -4626,11 +4637,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISync
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISyncChangeUnit {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISyncChangeUnit {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4657,6 +4663,11 @@ pub struct ISyncChangeUnit_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
 #[repr(transparent)]
 pub struct ISyncChangeWithFilterKeyMap(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISyncChangeWithFilterKeyMap {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISyncChangeWithFilterKeyMap {
     #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
     pub unsafe fn GetFilterCount(&self, pdwfiltercount: *mut u32) -> ::windows::core::Result<()> {
@@ -4723,11 +4734,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISync
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISyncChangeWithFilterKeyMap {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISyncChangeWithFilterKeyMap {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4766,6 +4772,11 @@ pub struct ISyncChangeWithFilterKeyMap_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
 #[repr(transparent)]
 pub struct ISyncChangeWithPrerequisite(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISyncChangeWithPrerequisite {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISyncChangeWithPrerequisite {
     #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
     pub unsafe fn GetPrerequisiteKnowledge(&self) -> ::windows::core::Result<ISyncKnowledge> {
@@ -4798,11 +4809,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISync
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISyncChangeWithPrerequisite {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISyncChangeWithPrerequisite {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4828,6 +4834,11 @@ pub struct ISyncChangeWithPrerequisite_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
 #[repr(transparent)]
 pub struct ISyncConstraintCallback(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISyncConstraintCallback {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISyncConstraintCallback {
     #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
     pub unsafe fn OnConstraintConflict<'a, Param0: ::windows::core::IntoParam<'a, IConstraintConflict>>(&self, pconflict: Param0) -> ::windows::core::Result<()> {
@@ -4854,11 +4865,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISync
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISyncConstraintCallback {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISyncConstraintCallback {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4883,6 +4889,11 @@ pub struct ISyncConstraintCallback_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
 #[repr(transparent)]
 pub struct ISyncDataConverter(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISyncDataConverter {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISyncDataConverter {
     #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
     pub unsafe fn ConvertDataRetrieverFromProviderFormat<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>, Param1: ::windows::core::IntoParam<'a, IEnumSyncChanges>>(&self, punkdataretrieverin: Param0, penumsyncchanges: Param1) -> ::windows::core::Result<::windows::core::IUnknown> {
@@ -4925,11 +4936,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISync
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISyncDataConverter {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISyncDataConverter {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4957,6 +4963,11 @@ pub struct ISyncDataConverter_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
 #[repr(transparent)]
 pub struct ISyncFilter(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISyncFilter {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISyncFilter {
     #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
     pub unsafe fn IsIdentical<'a, Param0: ::windows::core::IntoParam<'a, ISyncFilter>>(&self, psyncfilter: Param0) -> ::windows::core::Result<()> {
@@ -4987,11 +4998,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISync
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISyncFilter {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISyncFilter {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5017,6 +5023,11 @@ pub struct ISyncFilter_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
 #[repr(transparent)]
 pub struct ISyncFilterDeserializer(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISyncFilterDeserializer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISyncFilterDeserializer {
     #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
     pub unsafe fn DeserializeSyncFilter(&self, pbsyncfilter: *const u8, dwcbsyncfilter: u32) -> ::windows::core::Result<ISyncFilter> {
@@ -5044,11 +5055,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISync
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISyncFilterDeserializer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISyncFilterDeserializer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5073,6 +5079,11 @@ pub struct ISyncFilterDeserializer_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
 #[repr(transparent)]
 pub struct ISyncFilterInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISyncFilterInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISyncFilterInfo {
     #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
     pub unsafe fn Serialize(&self, pbbuffer: *mut u8, pcbbuffer: *mut u32) -> ::windows::core::Result<()> {
@@ -5099,11 +5110,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISync
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISyncFilterInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISyncFilterInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5128,6 +5134,11 @@ pub struct ISyncFilterInfo_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
 #[repr(transparent)]
 pub struct ISyncFilterInfo2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISyncFilterInfo2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISyncFilterInfo2 {
     #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
     pub unsafe fn Serialize(&self, pbbuffer: *mut u8, pcbbuffer: *mut u32) -> ::windows::core::Result<()> {
@@ -5178,11 +5189,6 @@ impl<'a> ::windows::core::IntoParam<'a, ISyncFilterInfo> for &'a ISyncFilterInfo
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISyncFilterInfo2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISyncFilterInfo2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5207,6 +5213,11 @@ pub struct ISyncFilterInfo2_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
 #[repr(transparent)]
 pub struct ISyncFullEnumerationChange(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISyncFullEnumerationChange {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISyncFullEnumerationChange {
     #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
     pub unsafe fn GetLearnedKnowledgeAfterRecoveryComplete(&self) -> ::windows::core::Result<ISyncKnowledge> {
@@ -5239,11 +5250,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISync
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISyncFullEnumerationChange {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISyncFullEnumerationChange {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5269,6 +5275,11 @@ pub struct ISyncFullEnumerationChange_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
 #[repr(transparent)]
 pub struct ISyncFullEnumerationChangeBatch(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISyncFullEnumerationChangeBatch {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISyncFullEnumerationChangeBatch {
     #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
     pub unsafe fn GetChangeEnumerator(&self) -> ::windows::core::Result<IEnumSyncChanges> {
@@ -5386,11 +5397,6 @@ impl<'a> ::windows::core::IntoParam<'a, ISyncChangeBatchBase> for &'a ISyncFullE
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISyncFullEnumerationChangeBatch {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISyncFullEnumerationChangeBatch {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5417,6 +5423,11 @@ pub struct ISyncFullEnumerationChangeBatch_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
 #[repr(transparent)]
 pub struct ISyncFullEnumerationChangeBatch2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISyncFullEnumerationChangeBatch2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISyncFullEnumerationChangeBatch2 {
     #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
     pub unsafe fn GetChangeEnumerator(&self) -> ::windows::core::Result<IEnumSyncChanges> {
@@ -5559,11 +5570,6 @@ impl<'a> ::windows::core::IntoParam<'a, ISyncFullEnumerationChangeBatch> for &'a
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISyncFullEnumerationChangeBatch2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISyncFullEnumerationChangeBatch2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5588,6 +5594,11 @@ pub struct ISyncFullEnumerationChangeBatch2_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
 #[repr(transparent)]
 pub struct ISyncKnowledge(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISyncKnowledge {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISyncKnowledge {
     #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
     pub unsafe fn GetOwnerReplicaId(&self, pbreplicaid: *mut u8, pcbidsize: *mut u32) -> ::windows::core::Result<()> {
@@ -5713,11 +5724,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISync
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISyncKnowledge {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISyncKnowledge {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5768,6 +5774,11 @@ pub struct ISyncKnowledge_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
 #[repr(transparent)]
 pub struct ISyncKnowledge2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISyncKnowledge2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISyncKnowledge2 {
     #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
     pub unsafe fn GetOwnerReplicaId(&self, pbreplicaid: *mut u8, pcbidsize: *mut u32) -> ::windows::core::Result<()> {
@@ -5974,11 +5985,6 @@ impl<'a> ::windows::core::IntoParam<'a, ISyncKnowledge> for &'a ISyncKnowledge2 
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISyncKnowledge2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISyncKnowledge2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6019,6 +6025,11 @@ pub struct ISyncKnowledge2_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
 #[repr(transparent)]
 pub struct ISyncMergeTombstoneChange(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISyncMergeTombstoneChange {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISyncMergeTombstoneChange {
     #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
     pub unsafe fn GetWinnerItemId(&self, pbwinneritemid: *mut u8, pcbidsize: *mut u32) -> ::windows::core::Result<()> {
@@ -6045,11 +6056,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISync
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISyncMergeTombstoneChange {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISyncMergeTombstoneChange {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6074,6 +6080,11 @@ pub struct ISyncMergeTombstoneChange_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
 #[repr(transparent)]
 pub struct ISyncProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISyncProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISyncProvider {
     #[doc = "*Required features: `\"Win32_System_WindowsSync\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -6099,11 +6110,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for ISyncProv
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISyncProvider {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for ISyncProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for ISyncProvider {
@@ -6133,6 +6139,11 @@ pub struct ISyncProvider_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
 #[repr(transparent)]
 pub struct ISyncProviderConfigUI(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISyncProviderConfigUI {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISyncProviderConfigUI {
     #[doc = "*Required features: `\"Win32_System_WindowsSync\"`, `\"Win32_UI_Shell_PropertiesSystem\"`*"]
     #[cfg(feature = "Win32_UI_Shell_PropertiesSystem")]
@@ -6177,11 +6188,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISync
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISyncProviderConfigUI {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISyncProviderConfigUI {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6222,6 +6228,12 @@ pub struct ISyncProviderConfigUI_Vtbl {
 #[cfg(feature = "Win32_UI_Shell_PropertiesSystem")]
 #[repr(transparent)]
 pub struct ISyncProviderConfigUIInfo(::windows::core::IUnknown);
+#[cfg(feature = "Win32_UI_Shell_PropertiesSystem")]
+impl ::core::clone::Clone for ISyncProviderConfigUIInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_UI_Shell_PropertiesSystem")]
 impl ISyncProviderConfigUIInfo {
     #[doc = "*Required features: `\"Win32_System_WindowsSync\"`, `\"Win32_UI_Shell_PropertiesSystem\"`*"]
@@ -6307,12 +6319,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::UI::Shell::PropertiesSyste
     }
 }
 #[cfg(feature = "Win32_UI_Shell_PropertiesSystem")]
-impl ::core::clone::Clone for ISyncProviderConfigUIInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_UI_Shell_PropertiesSystem")]
 impl ::core::cmp::PartialEq for ISyncProviderConfigUIInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6342,6 +6348,12 @@ pub struct ISyncProviderConfigUIInfo_Vtbl {
 #[cfg(feature = "Win32_UI_Shell_PropertiesSystem")]
 #[repr(transparent)]
 pub struct ISyncProviderInfo(::windows::core::IUnknown);
+#[cfg(feature = "Win32_UI_Shell_PropertiesSystem")]
+impl ::core::clone::Clone for ISyncProviderInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_UI_Shell_PropertiesSystem")]
 impl ISyncProviderInfo {
     #[doc = "*Required features: `\"Win32_System_WindowsSync\"`, `\"Win32_UI_Shell_PropertiesSystem\"`*"]
@@ -6427,12 +6439,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::UI::Shell::PropertiesSyste
     }
 }
 #[cfg(feature = "Win32_UI_Shell_PropertiesSystem")]
-impl ::core::clone::Clone for ISyncProviderInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_UI_Shell_PropertiesSystem")]
 impl ::core::cmp::PartialEq for ISyncProviderInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6461,6 +6467,11 @@ pub struct ISyncProviderInfo_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
 #[repr(transparent)]
 pub struct ISyncProviderRegistration(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISyncProviderRegistration {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISyncProviderRegistration {
     #[doc = "*Required features: `\"Win32_System_WindowsSync\"`, `\"Win32_Foundation\"`, `\"Win32_UI_Shell_PropertiesSystem\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_UI_Shell_PropertiesSystem"))]
@@ -6566,11 +6577,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISync
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISyncProviderRegistration {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISyncProviderRegistration {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6634,6 +6640,11 @@ pub struct ISyncProviderRegistration_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
 #[repr(transparent)]
 pub struct ISyncRegistrationChange(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISyncRegistrationChange {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISyncRegistrationChange {
     #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
     pub unsafe fn GetEvent(&self) -> ::windows::core::Result<SYNC_REGISTRATION_EVENT> {
@@ -6666,11 +6677,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISync
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISyncRegistrationChange {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISyncRegistrationChange {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6696,6 +6702,11 @@ pub struct ISyncRegistrationChange_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
 #[repr(transparent)]
 pub struct ISyncSessionExtendedErrorInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISyncSessionExtendedErrorInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISyncSessionExtendedErrorInfo {
     #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
     pub unsafe fn GetSyncProviderWithError(&self) -> ::windows::core::Result<ISyncProvider> {
@@ -6723,11 +6734,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISync
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISyncSessionExtendedErrorInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISyncSessionExtendedErrorInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6752,6 +6758,11 @@ pub struct ISyncSessionExtendedErrorInfo_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
 #[repr(transparent)]
 pub struct ISyncSessionState(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISyncSessionState {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISyncSessionState {
     #[doc = "*Required features: `\"Win32_System_WindowsSync\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -6803,11 +6814,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISync
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISyncSessionState {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISyncSessionState {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6841,6 +6847,11 @@ pub struct ISyncSessionState_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
 #[repr(transparent)]
 pub struct ISyncSessionState2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISyncSessionState2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISyncSessionState2 {
     #[doc = "*Required features: `\"Win32_System_WindowsSync\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -6921,11 +6932,6 @@ impl<'a> ::windows::core::IntoParam<'a, ISyncSessionState> for &'a ISyncSessionS
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISyncSessionState2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISyncSessionState2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6954,6 +6960,11 @@ pub struct ISyncSessionState2_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WindowsSync\"`*"]
 #[repr(transparent)]
 pub struct ISynchronousDataRetriever(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISynchronousDataRetriever {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISynchronousDataRetriever {
     #[doc = "*Required features: `\"Win32_System_WindowsSync\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -6984,11 +6995,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for ISynchron
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISynchronousDataRetriever {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for ISynchronousDataRetriever {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for ISynchronousDataRetriever {
@@ -7041,6 +7047,7 @@ impl ::core::default::Default for KNOWLEDGE_COOKIE_COMPARISON_RESULT {
 }
 unsafe impl ::windows::core::Abi for KNOWLEDGE_COOKIE_COMPARISON_RESULT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KNOWLEDGE_COOKIE_COMPARISON_RESULT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7150,6 +7157,7 @@ impl ::core::default::Default for SYNC_CONSTRAINT_RESOLVE_ACTION {
 }
 unsafe impl ::windows::core::Abi for SYNC_CONSTRAINT_RESOLVE_ACTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SYNC_CONSTRAINT_RESOLVE_ACTION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7180,6 +7188,7 @@ impl ::core::fmt::Debug for SYNC_FILTER_CHANGE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SYNC_FILTER_CHANGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for SYNC_FILTER_CHANGE {
@@ -7226,6 +7235,7 @@ impl ::core::default::Default for SYNC_FULL_ENUMERATION_ACTION {
 }
 unsafe impl ::windows::core::Abi for SYNC_FULL_ENUMERATION_ACTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SYNC_FULL_ENUMERATION_ACTION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7255,6 +7265,7 @@ impl ::core::default::Default for SYNC_PROGRESS_STAGE {
 }
 unsafe impl ::windows::core::Abi for SYNC_PROGRESS_STAGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SYNC_PROGRESS_STAGE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7282,6 +7293,7 @@ impl ::core::default::Default for SYNC_PROVIDER_ROLE {
 }
 unsafe impl ::windows::core::Abi for SYNC_PROVIDER_ROLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SYNC_PROVIDER_ROLE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7307,6 +7319,7 @@ impl ::core::fmt::Debug for SYNC_RANGE {
 }
 unsafe impl ::windows::core::Abi for SYNC_RANGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SYNC_RANGE {
     fn eq(&self, other: &Self) -> bool {
@@ -7350,6 +7363,7 @@ impl ::core::default::Default for SYNC_REGISTRATION_EVENT {
 }
 unsafe impl ::windows::core::Abi for SYNC_REGISTRATION_EVENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SYNC_REGISTRATION_EVENT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7385,6 +7399,7 @@ impl ::core::default::Default for SYNC_RESOLVE_ACTION {
 }
 unsafe impl ::windows::core::Abi for SYNC_RESOLVE_ACTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SYNC_RESOLVE_ACTION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7414,6 +7429,7 @@ impl ::core::default::Default for SYNC_SERIALIZATION_VERSION {
 }
 unsafe impl ::windows::core::Abi for SYNC_SERIALIZATION_VERSION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SYNC_SERIALIZATION_VERSION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7441,6 +7457,7 @@ impl ::core::fmt::Debug for SYNC_SESSION_STATISTICS {
 }
 unsafe impl ::windows::core::Abi for SYNC_SESSION_STATISTICS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SYNC_SESSION_STATISTICS {
     fn eq(&self, other: &Self) -> bool {
@@ -7472,6 +7489,7 @@ impl ::core::default::Default for SYNC_STATISTICS {
 }
 unsafe impl ::windows::core::Abi for SYNC_STATISTICS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SYNC_STATISTICS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7497,6 +7515,7 @@ impl ::core::fmt::Debug for SYNC_TIME {
 }
 unsafe impl ::windows::core::Abi for SYNC_TIME {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SYNC_TIME {
     fn eq(&self, other: &Self) -> bool {
@@ -7528,6 +7547,7 @@ impl ::core::fmt::Debug for SYNC_VERSION {
 }
 unsafe impl ::windows::core::Abi for SYNC_VERSION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SYNC_VERSION {
     fn eq(&self, other: &Self) -> bool {
@@ -7573,6 +7593,7 @@ impl ::core::fmt::Debug for SyncProviderConfigUIConfiguration {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SyncProviderConfigUIConfiguration {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for SyncProviderConfigUIConfiguration {
@@ -7612,6 +7633,7 @@ impl ::core::fmt::Debug for SyncProviderConfiguration {
 }
 unsafe impl ::windows::core::Abi for SyncProviderConfiguration {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SyncProviderConfiguration {
     fn eq(&self, other: &Self) -> bool {

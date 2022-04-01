@@ -22,6 +22,7 @@ impl ::core::default::Default for DWRITE_AUTOMATIC_FONT_AXES {
 }
 unsafe impl ::windows::core::Abi for DWRITE_AUTOMATIC_FONT_AXES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DWRITE_AUTOMATIC_FONT_AXES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -91,6 +92,7 @@ impl ::core::default::Default for DWRITE_BASELINE {
 }
 unsafe impl ::windows::core::Abi for DWRITE_BASELINE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DWRITE_BASELINE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -122,6 +124,7 @@ impl ::core::default::Default for DWRITE_BREAK_CONDITION {
 }
 unsafe impl ::windows::core::Abi for DWRITE_BREAK_CONDITION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DWRITE_BREAK_CONDITION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -148,6 +151,7 @@ impl ::core::fmt::Debug for DWRITE_CARET_METRICS {
 }
 unsafe impl ::windows::core::Abi for DWRITE_CARET_METRICS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DWRITE_CARET_METRICS {
     fn eq(&self, other: &Self) -> bool {
@@ -180,6 +184,7 @@ impl ::core::fmt::Debug for DWRITE_CLUSTER_METRICS {
 }
 unsafe impl ::windows::core::Abi for DWRITE_CLUSTER_METRICS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DWRITE_CLUSTER_METRICS {
     fn eq(&self, other: &Self) -> bool {
@@ -213,6 +218,7 @@ impl ::core::fmt::Debug for DWRITE_COLOR_F {
 }
 unsafe impl ::windows::core::Abi for DWRITE_COLOR_F {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DWRITE_COLOR_F {
     fn eq(&self, other: &Self) -> bool {
@@ -258,6 +264,7 @@ impl ::core::fmt::Debug for DWRITE_COLOR_GLYPH_RUN {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DWRITE_COLOR_GLYPH_RUN {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DWRITE_COLOR_GLYPH_RUN {
@@ -296,6 +303,7 @@ impl ::core::fmt::Debug for DWRITE_COLOR_GLYPH_RUN1 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DWRITE_COLOR_GLYPH_RUN1 {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DWRITE_COLOR_GLYPH_RUN1 {
@@ -334,6 +342,7 @@ impl ::core::default::Default for DWRITE_CONTAINER_TYPE {
 }
 unsafe impl ::windows::core::Abi for DWRITE_CONTAINER_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DWRITE_CONTAINER_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -371,6 +380,7 @@ impl ::core::default::Default for DWRITE_FACTORY_TYPE {
 }
 unsafe impl ::windows::core::Abi for DWRITE_FACTORY_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DWRITE_FACTORY_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -396,6 +406,7 @@ impl ::core::fmt::Debug for DWRITE_FILE_FRAGMENT {
 }
 unsafe impl ::windows::core::Abi for DWRITE_FILE_FRAGMENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DWRITE_FILE_FRAGMENT {
     fn eq(&self, other: &Self) -> bool {
@@ -433,6 +444,7 @@ impl ::core::default::Default for DWRITE_FLOW_DIRECTION {
 }
 unsafe impl ::windows::core::Abi for DWRITE_FLOW_DIRECTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DWRITE_FLOW_DIRECTION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -462,6 +474,7 @@ impl ::core::default::Default for DWRITE_FONT_AXIS_ATTRIBUTES {
 }
 unsafe impl ::windows::core::Abi for DWRITE_FONT_AXIS_ATTRIBUTES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DWRITE_FONT_AXIS_ATTRIBUTES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -516,6 +529,7 @@ impl ::core::fmt::Debug for DWRITE_FONT_AXIS_RANGE {
 }
 unsafe impl ::windows::core::Abi for DWRITE_FONT_AXIS_RANGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DWRITE_FONT_AXIS_RANGE {
     fn eq(&self, other: &Self) -> bool {
@@ -555,6 +569,7 @@ impl ::core::default::Default for DWRITE_FONT_AXIS_TAG {
 }
 unsafe impl ::windows::core::Abi for DWRITE_FONT_AXIS_TAG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DWRITE_FONT_AXIS_TAG {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -580,6 +595,7 @@ impl ::core::fmt::Debug for DWRITE_FONT_AXIS_VALUE {
 }
 unsafe impl ::windows::core::Abi for DWRITE_FONT_AXIS_VALUE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DWRITE_FONT_AXIS_VALUE {
     fn eq(&self, other: &Self) -> bool {
@@ -627,6 +643,7 @@ impl ::core::default::Default for DWRITE_FONT_FACE_TYPE {
 }
 unsafe impl ::windows::core::Abi for DWRITE_FONT_FACE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DWRITE_FONT_FACE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -654,6 +671,7 @@ impl ::core::default::Default for DWRITE_FONT_FAMILY_MODEL {
 }
 unsafe impl ::windows::core::Abi for DWRITE_FONT_FAMILY_MODEL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DWRITE_FONT_FAMILY_MODEL {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -679,6 +697,7 @@ impl ::core::fmt::Debug for DWRITE_FONT_FEATURE {
 }
 unsafe impl ::windows::core::Abi for DWRITE_FONT_FEATURE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DWRITE_FONT_FEATURE {
     fn eq(&self, other: &Self) -> bool {
@@ -870,6 +889,7 @@ impl ::core::default::Default for DWRITE_FONT_FEATURE_TAG {
 }
 unsafe impl ::windows::core::Abi for DWRITE_FONT_FEATURE_TAG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DWRITE_FONT_FEATURE_TAG {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -911,6 +931,7 @@ impl ::core::default::Default for DWRITE_FONT_FILE_TYPE {
 }
 unsafe impl ::windows::core::Abi for DWRITE_FONT_FILE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DWRITE_FONT_FILE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -940,6 +961,7 @@ impl ::core::default::Default for DWRITE_FONT_LINE_GAP_USAGE {
 }
 unsafe impl ::windows::core::Abi for DWRITE_FONT_LINE_GAP_USAGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DWRITE_FONT_LINE_GAP_USAGE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -984,6 +1006,7 @@ impl ::core::fmt::Debug for DWRITE_FONT_METRICS {
 }
 unsafe impl ::windows::core::Abi for DWRITE_FONT_METRICS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DWRITE_FONT_METRICS {
     fn eq(&self, other: &Self) -> bool {
@@ -1047,6 +1070,7 @@ impl ::core::fmt::Debug for DWRITE_FONT_METRICS1 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DWRITE_FONT_METRICS1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DWRITE_FONT_METRICS1 {
@@ -1082,6 +1106,7 @@ impl ::core::fmt::Debug for DWRITE_FONT_PROPERTY {
 }
 unsafe impl ::windows::core::Abi for DWRITE_FONT_PROPERTY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DWRITE_FONT_PROPERTY {
     fn eq(&self, other: &Self) -> bool {
@@ -1149,6 +1174,7 @@ impl ::core::default::Default for DWRITE_FONT_PROPERTY_ID {
 }
 unsafe impl ::windows::core::Abi for DWRITE_FONT_PROPERTY_ID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DWRITE_FONT_PROPERTY_ID {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1178,6 +1204,7 @@ impl ::core::default::Default for DWRITE_FONT_SIMULATIONS {
 }
 unsafe impl ::windows::core::Abi for DWRITE_FONT_SIMULATIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DWRITE_FONT_SIMULATIONS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1239,6 +1266,7 @@ impl ::core::default::Default for DWRITE_FONT_SOURCE_TYPE {
 }
 unsafe impl ::windows::core::Abi for DWRITE_FONT_SOURCE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DWRITE_FONT_SOURCE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1284,6 +1312,7 @@ impl ::core::default::Default for DWRITE_FONT_STRETCH {
 }
 unsafe impl ::windows::core::Abi for DWRITE_FONT_STRETCH {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DWRITE_FONT_STRETCH {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1313,6 +1342,7 @@ impl ::core::default::Default for DWRITE_FONT_STYLE {
 }
 unsafe impl ::windows::core::Abi for DWRITE_FONT_STYLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DWRITE_FONT_STYLE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1370,6 +1400,7 @@ impl ::core::default::Default for DWRITE_FONT_WEIGHT {
 }
 unsafe impl ::windows::core::Abi for DWRITE_FONT_WEIGHT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DWRITE_FONT_WEIGHT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1407,6 +1438,7 @@ impl ::core::fmt::Debug for DWRITE_GLYPH_IMAGE_DATA {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Direct2D_Common"))]
 unsafe impl ::windows::core::Abi for DWRITE_GLYPH_IMAGE_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Direct2D_Common"))]
 impl ::core::cmp::PartialEq for DWRITE_GLYPH_IMAGE_DATA {
@@ -1457,6 +1489,7 @@ impl ::core::default::Default for DWRITE_GLYPH_IMAGE_FORMATS {
 }
 unsafe impl ::windows::core::Abi for DWRITE_GLYPH_IMAGE_FORMATS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DWRITE_GLYPH_IMAGE_FORMATS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1515,6 +1548,7 @@ impl ::core::fmt::Debug for DWRITE_GLYPH_METRICS {
 }
 unsafe impl ::windows::core::Abi for DWRITE_GLYPH_METRICS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DWRITE_GLYPH_METRICS {
     fn eq(&self, other: &Self) -> bool {
@@ -1546,6 +1580,7 @@ impl ::core::fmt::Debug for DWRITE_GLYPH_OFFSET {
 }
 unsafe impl ::windows::core::Abi for DWRITE_GLYPH_OFFSET {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DWRITE_GLYPH_OFFSET {
     fn eq(&self, other: &Self) -> bool {
@@ -1583,6 +1618,7 @@ impl ::core::default::Default for DWRITE_GLYPH_ORIENTATION_ANGLE {
 }
 unsafe impl ::windows::core::Abi for DWRITE_GLYPH_ORIENTATION_ANGLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DWRITE_GLYPH_ORIENTATION_ANGLE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1626,6 +1662,7 @@ impl ::core::fmt::Debug for DWRITE_GLYPH_RUN {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DWRITE_GLYPH_RUN {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DWRITE_GLYPH_RUN {
@@ -1663,6 +1700,7 @@ impl ::core::fmt::Debug for DWRITE_GLYPH_RUN_DESCRIPTION {
 }
 unsafe impl ::windows::core::Abi for DWRITE_GLYPH_RUN_DESCRIPTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DWRITE_GLYPH_RUN_DESCRIPTION {
     fn eq(&self, other: &Self) -> bool {
@@ -1698,6 +1736,7 @@ impl ::core::default::Default for DWRITE_GRID_FIT_MODE {
 }
 unsafe impl ::windows::core::Abi for DWRITE_GRID_FIT_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DWRITE_GRID_FIT_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1735,6 +1774,7 @@ impl ::core::fmt::Debug for DWRITE_HIT_TEST_METRICS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DWRITE_HIT_TEST_METRICS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DWRITE_HIT_TEST_METRICS {
@@ -1817,6 +1857,7 @@ impl ::core::default::Default for DWRITE_INFORMATIONAL_STRING_ID {
 }
 unsafe impl ::windows::core::Abi for DWRITE_INFORMATIONAL_STRING_ID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DWRITE_INFORMATIONAL_STRING_ID {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1849,6 +1890,7 @@ impl ::core::fmt::Debug for DWRITE_INLINE_OBJECT_METRICS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DWRITE_INLINE_OBJECT_METRICS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DWRITE_INLINE_OBJECT_METRICS {
@@ -1885,6 +1927,7 @@ impl ::core::fmt::Debug for DWRITE_JUSTIFICATION_OPPORTUNITY {
 }
 unsafe impl ::windows::core::Abi for DWRITE_JUSTIFICATION_OPPORTUNITY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DWRITE_JUSTIFICATION_OPPORTUNITY {
     fn eq(&self, other: &Self) -> bool {
@@ -1915,6 +1958,7 @@ impl ::core::fmt::Debug for DWRITE_LINE_BREAKPOINT {
 }
 unsafe impl ::windows::core::Abi for DWRITE_LINE_BREAKPOINT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DWRITE_LINE_BREAKPOINT {
     fn eq(&self, other: &Self) -> bool {
@@ -1955,6 +1999,7 @@ impl ::core::fmt::Debug for DWRITE_LINE_METRICS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DWRITE_LINE_METRICS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DWRITE_LINE_METRICS {
@@ -1995,6 +2040,7 @@ impl ::core::fmt::Debug for DWRITE_LINE_METRICS1 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DWRITE_LINE_METRICS1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DWRITE_LINE_METRICS1 {
@@ -2032,6 +2078,7 @@ impl ::core::fmt::Debug for DWRITE_LINE_SPACING {
 }
 unsafe impl ::windows::core::Abi for DWRITE_LINE_SPACING {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DWRITE_LINE_SPACING {
     fn eq(&self, other: &Self) -> bool {
@@ -2067,6 +2114,7 @@ impl ::core::default::Default for DWRITE_LINE_SPACING_METHOD {
 }
 unsafe impl ::windows::core::Abi for DWRITE_LINE_SPACING_METHOD {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DWRITE_LINE_SPACING_METHOD {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2096,6 +2144,7 @@ impl ::core::default::Default for DWRITE_LOCALITY {
 }
 unsafe impl ::windows::core::Abi for DWRITE_LOCALITY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DWRITE_LOCALITY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2125,6 +2174,7 @@ impl ::core::fmt::Debug for DWRITE_MATRIX {
 }
 unsafe impl ::windows::core::Abi for DWRITE_MATRIX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DWRITE_MATRIX {
     fn eq(&self, other: &Self) -> bool {
@@ -2160,6 +2210,7 @@ impl ::core::default::Default for DWRITE_MEASURING_MODE {
 }
 unsafe impl ::windows::core::Abi for DWRITE_MEASURING_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DWRITE_MEASURING_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2193,6 +2244,7 @@ impl ::core::default::Default for DWRITE_NUMBER_SUBSTITUTION_METHOD {
 }
 unsafe impl ::windows::core::Abi for DWRITE_NUMBER_SUBSTITUTION_METHOD {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DWRITE_NUMBER_SUBSTITUTION_METHOD {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2220,6 +2272,7 @@ impl ::core::default::Default for DWRITE_OPTICAL_ALIGNMENT {
 }
 unsafe impl ::windows::core::Abi for DWRITE_OPTICAL_ALIGNMENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DWRITE_OPTICAL_ALIGNMENT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2247,6 +2300,7 @@ impl ::core::default::Default for DWRITE_OUTLINE_THRESHOLD {
 }
 unsafe impl ::windows::core::Abi for DWRITE_OUTLINE_THRESHOLD {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DWRITE_OUTLINE_THRESHOLD {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2274,6 +2328,7 @@ impl ::core::fmt::Debug for DWRITE_OVERHANG_METRICS {
 }
 unsafe impl ::windows::core::Abi for DWRITE_OVERHANG_METRICS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DWRITE_OVERHANG_METRICS {
     fn eq(&self, other: &Self) -> bool {
@@ -2304,6 +2359,7 @@ impl ::core::clone::Clone for DWRITE_PANOSE {
 }
 unsafe impl ::windows::core::Abi for DWRITE_PANOSE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DWRITE_PANOSE {
     fn eq(&self, other: &Self) -> bool {
@@ -2343,6 +2399,7 @@ impl ::core::fmt::Debug for DWRITE_PANOSE_0 {
 }
 unsafe impl ::windows::core::Abi for DWRITE_PANOSE_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DWRITE_PANOSE_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -2382,6 +2439,7 @@ impl ::core::fmt::Debug for DWRITE_PANOSE_1 {
 }
 unsafe impl ::windows::core::Abi for DWRITE_PANOSE_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DWRITE_PANOSE_1 {
     fn eq(&self, other: &Self) -> bool {
@@ -2421,6 +2479,7 @@ impl ::core::fmt::Debug for DWRITE_PANOSE_2 {
 }
 unsafe impl ::windows::core::Abi for DWRITE_PANOSE_2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DWRITE_PANOSE_2 {
     fn eq(&self, other: &Self) -> bool {
@@ -2460,6 +2519,7 @@ impl ::core::fmt::Debug for DWRITE_PANOSE_3 {
 }
 unsafe impl ::windows::core::Abi for DWRITE_PANOSE_3 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DWRITE_PANOSE_3 {
     fn eq(&self, other: &Self) -> bool {
@@ -2527,6 +2587,7 @@ impl ::core::default::Default for DWRITE_PANOSE_ARM_STYLE {
 }
 unsafe impl ::windows::core::Abi for DWRITE_PANOSE_ARM_STYLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DWRITE_PANOSE_ARM_STYLE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2570,6 +2631,7 @@ impl ::core::default::Default for DWRITE_PANOSE_ASPECT {
 }
 unsafe impl ::windows::core::Abi for DWRITE_PANOSE_ASPECT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DWRITE_PANOSE_ASPECT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2607,6 +2669,7 @@ impl ::core::default::Default for DWRITE_PANOSE_ASPECT_RATIO {
 }
 unsafe impl ::windows::core::Abi for DWRITE_PANOSE_ASPECT_RATIO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DWRITE_PANOSE_ASPECT_RATIO {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2642,6 +2705,7 @@ impl ::core::default::Default for DWRITE_PANOSE_CHARACTER_RANGES {
 }
 unsafe impl ::windows::core::Abi for DWRITE_PANOSE_CHARACTER_RANGES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DWRITE_PANOSE_CHARACTER_RANGES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2693,6 +2757,7 @@ impl ::core::default::Default for DWRITE_PANOSE_CONTRAST {
 }
 unsafe impl ::windows::core::Abi for DWRITE_PANOSE_CONTRAST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DWRITE_PANOSE_CONTRAST {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2742,6 +2807,7 @@ impl ::core::default::Default for DWRITE_PANOSE_DECORATIVE_CLASS {
 }
 unsafe impl ::windows::core::Abi for DWRITE_PANOSE_DECORATIVE_CLASS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DWRITE_PANOSE_DECORATIVE_CLASS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2797,6 +2863,7 @@ impl ::core::default::Default for DWRITE_PANOSE_DECORATIVE_TOPOLOGY {
 }
 unsafe impl ::windows::core::Abi for DWRITE_PANOSE_DECORATIVE_TOPOLOGY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DWRITE_PANOSE_DECORATIVE_TOPOLOGY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2834,6 +2901,7 @@ impl ::core::default::Default for DWRITE_PANOSE_FAMILY {
 }
 unsafe impl ::windows::core::Abi for DWRITE_PANOSE_FAMILY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DWRITE_PANOSE_FAMILY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2873,6 +2941,7 @@ impl ::core::default::Default for DWRITE_PANOSE_FILL {
 }
 unsafe impl ::windows::core::Abi for DWRITE_PANOSE_FILL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DWRITE_PANOSE_FILL {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2924,6 +2993,7 @@ impl ::core::default::Default for DWRITE_PANOSE_FINIALS {
 }
 unsafe impl ::windows::core::Abi for DWRITE_PANOSE_FINIALS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DWRITE_PANOSE_FINIALS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2979,6 +3049,7 @@ impl ::core::default::Default for DWRITE_PANOSE_LETTERFORM {
 }
 unsafe impl ::windows::core::Abi for DWRITE_PANOSE_LETTERFORM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DWRITE_PANOSE_LETTERFORM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3020,6 +3091,7 @@ impl ::core::default::Default for DWRITE_PANOSE_LINING {
 }
 unsafe impl ::windows::core::Abi for DWRITE_PANOSE_LINING {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DWRITE_PANOSE_LINING {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3071,6 +3143,7 @@ impl ::core::default::Default for DWRITE_PANOSE_MIDLINE {
 }
 unsafe impl ::windows::core::Abi for DWRITE_PANOSE_MIDLINE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DWRITE_PANOSE_MIDLINE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3114,6 +3187,7 @@ impl ::core::default::Default for DWRITE_PANOSE_PROPORTION {
 }
 unsafe impl ::windows::core::Abi for DWRITE_PANOSE_PROPORTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DWRITE_PANOSE_PROPORTION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3165,6 +3239,7 @@ impl ::core::default::Default for DWRITE_PANOSE_SCRIPT_FORM {
 }
 unsafe impl ::windows::core::Abi for DWRITE_PANOSE_SCRIPT_FORM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DWRITE_PANOSE_SCRIPT_FORM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3210,6 +3285,7 @@ impl ::core::default::Default for DWRITE_PANOSE_SCRIPT_TOPOLOGY {
 }
 unsafe impl ::windows::core::Abi for DWRITE_PANOSE_SCRIPT_TOPOLOGY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DWRITE_PANOSE_SCRIPT_TOPOLOGY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3271,6 +3347,7 @@ impl ::core::default::Default for DWRITE_PANOSE_SERIF_STYLE {
 }
 unsafe impl ::windows::core::Abi for DWRITE_PANOSE_SERIF_STYLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DWRITE_PANOSE_SERIF_STYLE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3302,6 +3379,7 @@ impl ::core::default::Default for DWRITE_PANOSE_SPACING {
 }
 unsafe impl ::windows::core::Abi for DWRITE_PANOSE_SPACING {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DWRITE_PANOSE_SPACING {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3347,6 +3425,7 @@ impl ::core::default::Default for DWRITE_PANOSE_STROKE_VARIATION {
 }
 unsafe impl ::windows::core::Abi for DWRITE_PANOSE_STROKE_VARIATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DWRITE_PANOSE_STROKE_VARIATION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3390,6 +3469,7 @@ impl ::core::default::Default for DWRITE_PANOSE_SYMBOL_ASPECT_RATIO {
 }
 unsafe impl ::windows::core::Abi for DWRITE_PANOSE_SYMBOL_ASPECT_RATIO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DWRITE_PANOSE_SYMBOL_ASPECT_RATIO {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3439,6 +3519,7 @@ impl ::core::default::Default for DWRITE_PANOSE_SYMBOL_KIND {
 }
 unsafe impl ::windows::core::Abi for DWRITE_PANOSE_SYMBOL_KIND {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DWRITE_PANOSE_SYMBOL_KIND {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3482,6 +3563,7 @@ impl ::core::default::Default for DWRITE_PANOSE_TOOL_KIND {
 }
 unsafe impl ::windows::core::Abi for DWRITE_PANOSE_TOOL_KIND {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DWRITE_PANOSE_TOOL_KIND {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3531,6 +3613,7 @@ impl ::core::default::Default for DWRITE_PANOSE_WEIGHT {
 }
 unsafe impl ::windows::core::Abi for DWRITE_PANOSE_WEIGHT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DWRITE_PANOSE_WEIGHT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3568,6 +3651,7 @@ impl ::core::default::Default for DWRITE_PANOSE_XASCENT {
 }
 unsafe impl ::windows::core::Abi for DWRITE_PANOSE_XASCENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DWRITE_PANOSE_XASCENT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3611,6 +3695,7 @@ impl ::core::default::Default for DWRITE_PANOSE_XHEIGHT {
 }
 unsafe impl ::windows::core::Abi for DWRITE_PANOSE_XHEIGHT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DWRITE_PANOSE_XHEIGHT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3640,6 +3725,7 @@ impl ::core::default::Default for DWRITE_PARAGRAPH_ALIGNMENT {
 }
 unsafe impl ::windows::core::Abi for DWRITE_PARAGRAPH_ALIGNMENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DWRITE_PARAGRAPH_ALIGNMENT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3669,6 +3755,7 @@ impl ::core::default::Default for DWRITE_PIXEL_GEOMETRY {
 }
 unsafe impl ::windows::core::Abi for DWRITE_PIXEL_GEOMETRY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DWRITE_PIXEL_GEOMETRY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3700,6 +3787,7 @@ impl ::core::default::Default for DWRITE_READING_DIRECTION {
 }
 unsafe impl ::windows::core::Abi for DWRITE_READING_DIRECTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DWRITE_READING_DIRECTION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3745,6 +3833,7 @@ impl ::core::default::Default for DWRITE_RENDERING_MODE {
 }
 unsafe impl ::windows::core::Abi for DWRITE_RENDERING_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DWRITE_RENDERING_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3784,6 +3873,7 @@ impl ::core::default::Default for DWRITE_RENDERING_MODE1 {
 }
 unsafe impl ::windows::core::Abi for DWRITE_RENDERING_MODE1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DWRITE_RENDERING_MODE1 {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3809,6 +3899,7 @@ impl ::core::fmt::Debug for DWRITE_SCRIPT_ANALYSIS {
 }
 unsafe impl ::windows::core::Abi for DWRITE_SCRIPT_ANALYSIS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DWRITE_SCRIPT_ANALYSIS {
     fn eq(&self, other: &Self) -> bool {
@@ -3843,6 +3934,7 @@ impl ::core::fmt::Debug for DWRITE_SCRIPT_PROPERTIES {
 }
 unsafe impl ::windows::core::Abi for DWRITE_SCRIPT_PROPERTIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DWRITE_SCRIPT_PROPERTIES {
     fn eq(&self, other: &Self) -> bool {
@@ -3876,6 +3968,7 @@ impl ::core::default::Default for DWRITE_SCRIPT_SHAPES {
 }
 unsafe impl ::windows::core::Abi for DWRITE_SCRIPT_SHAPES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DWRITE_SCRIPT_SHAPES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3928,6 +4021,7 @@ impl ::core::fmt::Debug for DWRITE_SHAPING_GLYPH_PROPERTIES {
 }
 unsafe impl ::windows::core::Abi for DWRITE_SHAPING_GLYPH_PROPERTIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DWRITE_SHAPING_GLYPH_PROPERTIES {
     fn eq(&self, other: &Self) -> bool {
@@ -3958,6 +4052,7 @@ impl ::core::fmt::Debug for DWRITE_SHAPING_TEXT_PROPERTIES {
 }
 unsafe impl ::windows::core::Abi for DWRITE_SHAPING_TEXT_PROPERTIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DWRITE_SHAPING_TEXT_PROPERTIES {
     fn eq(&self, other: &Self) -> bool {
@@ -3994,6 +4089,7 @@ impl ::core::fmt::Debug for DWRITE_STRIKETHROUGH {
 }
 unsafe impl ::windows::core::Abi for DWRITE_STRIKETHROUGH {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DWRITE_STRIKETHROUGH {
     fn eq(&self, other: &Self) -> bool {
@@ -4027,6 +4123,7 @@ impl ::core::default::Default for DWRITE_TEXTURE_TYPE {
 }
 unsafe impl ::windows::core::Abi for DWRITE_TEXTURE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DWRITE_TEXTURE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4058,6 +4155,7 @@ impl ::core::default::Default for DWRITE_TEXT_ALIGNMENT {
 }
 unsafe impl ::windows::core::Abi for DWRITE_TEXT_ALIGNMENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DWRITE_TEXT_ALIGNMENT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4085,6 +4183,7 @@ impl ::core::default::Default for DWRITE_TEXT_ANTIALIAS_MODE {
 }
 unsafe impl ::windows::core::Abi for DWRITE_TEXT_ANTIALIAS_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DWRITE_TEXT_ANTIALIAS_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4117,6 +4216,7 @@ impl ::core::fmt::Debug for DWRITE_TEXT_METRICS {
 }
 unsafe impl ::windows::core::Abi for DWRITE_TEXT_METRICS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DWRITE_TEXT_METRICS {
     fn eq(&self, other: &Self) -> bool {
@@ -4148,6 +4248,7 @@ impl ::core::fmt::Debug for DWRITE_TEXT_METRICS1 {
 }
 unsafe impl ::windows::core::Abi for DWRITE_TEXT_METRICS1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DWRITE_TEXT_METRICS1 {
     fn eq(&self, other: &Self) -> bool {
@@ -4179,6 +4280,7 @@ impl ::core::fmt::Debug for DWRITE_TEXT_RANGE {
 }
 unsafe impl ::windows::core::Abi for DWRITE_TEXT_RANGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DWRITE_TEXT_RANGE {
     fn eq(&self, other: &Self) -> bool {
@@ -4211,6 +4313,7 @@ impl ::core::fmt::Debug for DWRITE_TRIMMING {
 }
 unsafe impl ::windows::core::Abi for DWRITE_TRIMMING {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DWRITE_TRIMMING {
     fn eq(&self, other: &Self) -> bool {
@@ -4246,6 +4349,7 @@ impl ::core::default::Default for DWRITE_TRIMMING_GRANULARITY {
 }
 unsafe impl ::windows::core::Abi for DWRITE_TRIMMING_GRANULARITY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DWRITE_TRIMMING_GRANULARITY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4271,6 +4375,7 @@ impl ::core::fmt::Debug for DWRITE_TYPOGRAPHIC_FEATURES {
 }
 unsafe impl ::windows::core::Abi for DWRITE_TYPOGRAPHIC_FEATURES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DWRITE_TYPOGRAPHIC_FEATURES {
     fn eq(&self, other: &Self) -> bool {
@@ -4308,6 +4413,7 @@ impl ::core::fmt::Debug for DWRITE_UNDERLINE {
 }
 unsafe impl ::windows::core::Abi for DWRITE_UNDERLINE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DWRITE_UNDERLINE {
     fn eq(&self, other: &Self) -> bool {
@@ -4339,6 +4445,7 @@ impl ::core::fmt::Debug for DWRITE_UNICODE_RANGE {
 }
 unsafe impl ::windows::core::Abi for DWRITE_UNICODE_RANGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DWRITE_UNICODE_RANGE {
     fn eq(&self, other: &Self) -> bool {
@@ -4372,6 +4479,7 @@ impl ::core::default::Default for DWRITE_VERTICAL_GLYPH_ORIENTATION {
 }
 unsafe impl ::windows::core::Abi for DWRITE_VERTICAL_GLYPH_ORIENTATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DWRITE_VERTICAL_GLYPH_ORIENTATION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4405,6 +4513,7 @@ impl ::core::default::Default for DWRITE_WORD_WRAPPING {
 }
 unsafe impl ::windows::core::Abi for DWRITE_WORD_WRAPPING {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DWRITE_WORD_WRAPPING {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4431,6 +4540,11 @@ pub const FACILITY_DWRITE: u32 = 2200u32;
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteAsyncResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteAsyncResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteAsyncResult {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -4462,11 +4576,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDWri
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteAsyncResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteAsyncResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4495,6 +4604,11 @@ pub struct IDWriteAsyncResult_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteBitmapRenderTarget(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteBitmapRenderTarget {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteBitmapRenderTarget {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -4555,11 +4669,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDWri
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteBitmapRenderTarget {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteBitmapRenderTarget {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4600,6 +4709,11 @@ pub struct IDWriteBitmapRenderTarget_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteBitmapRenderTarget1(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteBitmapRenderTarget1 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteBitmapRenderTarget1 {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -4688,11 +4802,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDWriteBitmapRenderTarget> for &'a IDWri
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteBitmapRenderTarget1 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteBitmapRenderTarget1 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4718,6 +4827,11 @@ pub struct IDWriteBitmapRenderTarget1_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteColorGlyphRunEnumerator(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteColorGlyphRunEnumerator {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteColorGlyphRunEnumerator {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -4752,11 +4866,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDWri
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteColorGlyphRunEnumerator {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteColorGlyphRunEnumerator {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4788,6 +4897,11 @@ pub struct IDWriteColorGlyphRunEnumerator_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteColorGlyphRunEnumerator1(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteColorGlyphRunEnumerator1 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteColorGlyphRunEnumerator1 {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -4848,11 +4962,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDWriteColorGlyphRunEnumerator> for &'a 
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteColorGlyphRunEnumerator1 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteColorGlyphRunEnumerator1 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4880,6 +4989,11 @@ pub struct IDWriteColorGlyphRunEnumerator1_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteFactory {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -5008,11 +5122,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDWri
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteFactory {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteFactory {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5075,6 +5184,11 @@ pub struct IDWriteFactory_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteFactory1(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteFactory1 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteFactory1 {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -5233,11 +5347,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDWriteFactory> for &'a IDWriteFactory1 
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteFactory1 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteFactory1 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5266,6 +5375,11 @@ pub struct IDWriteFactory1_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteFactory2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteFactory2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteFactory2 {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -5471,11 +5585,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDWriteFactory1> for &'a IDWriteFactory2
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteFactory2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteFactory2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5510,6 +5619,11 @@ pub struct IDWriteFactory2_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteFactory3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteFactory3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteFactory3 {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -5782,11 +5896,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDWriteFactory2> for &'a IDWriteFactory3
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteFactory3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteFactory3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5828,6 +5937,11 @@ pub struct IDWriteFactory3_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteFactory4(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteFactory4 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteFactory4 {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -6138,11 +6252,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDWriteFactory3> for &'a IDWriteFactory4
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteFactory4 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteFactory4 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6178,6 +6287,11 @@ pub struct IDWriteFactory4_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteFactory5(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteFactory5 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteFactory5 {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -6532,11 +6646,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDWriteFactory4> for &'a IDWriteFactory5
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteFactory5 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteFactory5 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6565,6 +6674,11 @@ pub struct IDWriteFactory5_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteFactory6(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteFactory6 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteFactory6 {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -6976,11 +7090,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDWriteFactory5> for &'a IDWriteFactory6
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteFactory6 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteFactory6 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7017,6 +7126,11 @@ pub struct IDWriteFactory6_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteFactory7(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteFactory7 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteFactory7 {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -7460,11 +7574,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDWriteFactory6> for &'a IDWriteFactory7
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteFactory7 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteFactory7 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7496,6 +7605,11 @@ pub struct IDWriteFactory7_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteFont(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteFont {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteFont {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
     pub unsafe fn GetFontFamily(&self) -> ::windows::core::Result<IDWriteFontFamily> {
@@ -7569,11 +7683,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDWri
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteFont {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteFont {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7617,6 +7726,11 @@ pub struct IDWriteFont_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteFont1(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteFont1 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteFont1 {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
     pub unsafe fn GetFontFamily(&self) -> ::windows::core::Result<IDWriteFontFamily> {
@@ -7728,11 +7842,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDWriteFont> for &'a IDWriteFont1 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteFont1 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteFont1 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7766,6 +7875,11 @@ pub struct IDWriteFont1_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteFont2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteFont2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteFont2 {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
     pub unsafe fn GetFontFamily(&self) -> ::windows::core::Result<IDWriteFontFamily> {
@@ -7902,11 +8016,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDWriteFont1> for &'a IDWriteFont2 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteFont2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteFont2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7934,6 +8043,11 @@ pub struct IDWriteFont2_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteFont3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteFont3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteFont3 {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
     pub unsafe fn GetFontFamily(&self) -> ::windows::core::Result<IDWriteFontFamily> {
@@ -8114,11 +8228,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDWriteFont2> for &'a IDWriteFont3 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteFont3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteFont3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8153,6 +8262,11 @@ pub struct IDWriteFont3_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteFontCollection(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteFontCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteFontCollection {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
     pub unsafe fn GetFontFamilyCount(&self) -> u32 {
@@ -8194,11 +8308,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDWri
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteFontCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteFontCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8229,6 +8338,11 @@ pub struct IDWriteFontCollection_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteFontCollection1(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteFontCollection1 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteFontCollection1 {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
     pub unsafe fn GetFontFamilyCount(&self) -> u32 {
@@ -8300,11 +8414,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDWriteFontCollection> for &'a IDWriteFo
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteFontCollection1 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteFontCollection1 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8330,6 +8439,11 @@ pub struct IDWriteFontCollection1_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteFontCollection2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteFontCollection2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteFontCollection2 {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
     pub unsafe fn GetFontFamilyCount(&self) -> u32 {
@@ -8440,11 +8554,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDWriteFontCollection1> for &'a IDWriteF
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteFontCollection2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteFontCollection2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8472,6 +8581,11 @@ pub struct IDWriteFontCollection2_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteFontCollection3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteFontCollection3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteFontCollection3 {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
     pub unsafe fn GetFontFamilyCount(&self) -> u32 {
@@ -8607,11 +8721,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDWriteFontCollection2> for &'a IDWriteF
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteFontCollection3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteFontCollection3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8639,6 +8748,11 @@ pub struct IDWriteFontCollection3_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteFontCollectionLoader(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteFontCollectionLoader {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteFontCollectionLoader {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
     pub unsafe fn CreateEnumeratorFromKey<'a, Param0: ::windows::core::IntoParam<'a, IDWriteFactory>>(&self, factory: Param0, collectionkey: *const ::core::ffi::c_void, collectionkeysize: u32) -> ::windows::core::Result<IDWriteFontFileEnumerator> {
@@ -8666,11 +8780,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDWri
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteFontCollectionLoader {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteFontCollectionLoader {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8695,6 +8804,11 @@ pub struct IDWriteFontCollectionLoader_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteFontDownloadListener(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteFontDownloadListener {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteFontDownloadListener {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
     pub unsafe fn DownloadCompleted<'a, Param0: ::windows::core::IntoParam<'a, IDWriteFontDownloadQueue>, Param1: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, downloadqueue: Param0, context: Param1, downloadresult: ::windows::core::HRESULT) {
@@ -8721,11 +8835,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDWri
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteFontDownloadListener {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteFontDownloadListener {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8750,6 +8859,11 @@ pub struct IDWriteFontDownloadListener_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteFontDownloadQueue(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteFontDownloadQueue {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteFontDownloadQueue {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
     pub unsafe fn AddListener<'a, Param0: ::windows::core::IntoParam<'a, IDWriteFontDownloadListener>>(&self, listener: Param0) -> ::windows::core::Result<u32> {
@@ -8798,11 +8912,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDWri
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteFontDownloadQueue {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteFontDownloadQueue {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8835,6 +8944,11 @@ pub struct IDWriteFontDownloadQueue_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteFontFace(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteFontFace {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteFontFace {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
     pub unsafe fn GetType(&self) -> DWRITE_FONT_FACE_TYPE {
@@ -8924,11 +9038,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDWri
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteFontFace {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteFontFace {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8982,6 +9091,11 @@ pub struct IDWriteFontFace_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteFontFace1(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteFontFace1 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteFontFace1 {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
     pub unsafe fn GetType(&self) -> DWRITE_FONT_FACE_TYPE {
@@ -9149,11 +9263,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDWriteFontFace> for &'a IDWriteFontFace
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteFontFace1 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteFontFace1 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9213,6 +9322,11 @@ pub struct IDWriteFontFace1_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteFontFace2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteFontFace2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteFontFace2 {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
     pub unsafe fn GetType(&self) -> DWRITE_FONT_FACE_TYPE {
@@ -9422,11 +9536,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDWriteFontFace1> for &'a IDWriteFontFac
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteFontFace2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteFontFace2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9461,6 +9570,11 @@ pub struct IDWriteFontFace2_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteFontFace3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteFontFace3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteFontFace3 {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
     pub unsafe fn GetType(&self) -> DWRITE_FONT_FACE_TYPE {
@@ -9758,11 +9872,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDWriteFontFace2> for &'a IDWriteFontFac
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteFontFace3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteFontFace3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9821,6 +9930,11 @@ pub struct IDWriteFontFace3_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteFontFace4(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteFontFace4 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteFontFace4 {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
     pub unsafe fn GetType(&self) -> DWRITE_FONT_FACE_TYPE {
@@ -10156,11 +10270,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDWriteFontFace3> for &'a IDWriteFontFac
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteFontFace4 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteFontFace4 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10191,6 +10300,11 @@ pub struct IDWriteFontFace4_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteFontFace5(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteFontFace5 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteFontFace5 {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
     pub unsafe fn GetType(&self) -> DWRITE_FONT_FACE_TYPE {
@@ -10569,11 +10683,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDWriteFontFace4> for &'a IDWriteFontFac
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteFontFace5 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteFontFace5 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10608,6 +10717,11 @@ pub struct IDWriteFontFace5_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteFontFace6(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteFontFace6 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteFontFace6 {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
     pub unsafe fn GetType(&self) -> DWRITE_FONT_FACE_TYPE {
@@ -11016,11 +11130,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDWriteFontFace5> for &'a IDWriteFontFac
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteFontFace6 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteFontFace6 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11046,6 +11155,11 @@ pub struct IDWriteFontFace6_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteFontFaceReference(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteFontFaceReference {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteFontFaceReference {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
     pub unsafe fn CreateFontFace(&self) -> ::windows::core::Result<IDWriteFontFace3> {
@@ -11130,11 +11244,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDWri
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteFontFaceReference {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteFontFaceReference {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11178,6 +11287,11 @@ pub struct IDWriteFontFaceReference_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteFontFaceReference1(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteFontFaceReference1 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteFontFaceReference1 {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
     pub unsafe fn CreateFontFace(&self) -> ::windows::core::Result<IDWriteFontFace3> {
@@ -11295,11 +11409,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDWriteFontFaceReference> for &'a IDWrit
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteFontFaceReference1 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteFontFaceReference1 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11326,6 +11435,11 @@ pub struct IDWriteFontFaceReference1_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteFontFallback(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteFontFallback {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteFontFallback {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
     pub unsafe fn MapCharacters<'a, Param0: ::windows::core::IntoParam<'a, IDWriteTextAnalysisSource>, Param3: ::windows::core::IntoParam<'a, IDWriteFontCollection>, Param4: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, analysissource: Param0, textposition: u32, textlength: u32, basefontcollection: Param3, basefamilyname: Param4, baseweight: DWRITE_FONT_WEIGHT, basestyle: DWRITE_FONT_STYLE, basestretch: DWRITE_FONT_STRETCH, mappedlength: *mut u32, mappedfont: *mut ::core::option::Option<IDWriteFont>, scale: *mut f32) -> ::windows::core::Result<()> {
@@ -11352,11 +11466,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDWri
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteFontFallback {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteFontFallback {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11381,6 +11490,11 @@ pub struct IDWriteFontFallback_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteFontFallback1(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteFontFallback1 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteFontFallback1 {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
     pub unsafe fn MapCharacters<'a, Param0: ::windows::core::IntoParam<'a, IDWriteTextAnalysisSource>, Param3: ::windows::core::IntoParam<'a, IDWriteFontCollection>, Param4: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, analysissource: Param0, textposition: u32, textlength: u32, basefontcollection: Param3, basefamilyname: Param4, baseweight: DWRITE_FONT_WEIGHT, basestyle: DWRITE_FONT_STYLE, basestretch: DWRITE_FONT_STRETCH, mappedlength: *mut u32, mappedfont: *mut ::core::option::Option<IDWriteFont>, scale: *mut f32) -> ::windows::core::Result<()> {
@@ -11431,11 +11545,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDWriteFontFallback> for &'a IDWriteFont
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteFontFallback1 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteFontFallback1 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11460,6 +11569,11 @@ pub struct IDWriteFontFallback1_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteFontFallbackBuilder(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteFontFallbackBuilder {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteFontFallbackBuilder {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
     pub unsafe fn AddMapping<'a, Param4: ::windows::core::IntoParam<'a, IDWriteFontCollection>, Param5: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param6: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, ranges: &[DWRITE_UNICODE_RANGE], targetfamilynames: &[*const u16], fontcollection: Param4, localename: Param5, basefamilyname: Param6, scale: f32) -> ::windows::core::Result<()> {
@@ -11495,11 +11609,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDWri
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteFontFallbackBuilder {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteFontFallbackBuilder {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11526,6 +11635,11 @@ pub struct IDWriteFontFallbackBuilder_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteFontFamily(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteFontFamily {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteFontFamily {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
     pub unsafe fn GetFontCollection(&self) -> ::windows::core::Result<IDWriteFontCollection> {
@@ -11597,11 +11711,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDWriteFontList> for &'a IDWriteFontFami
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteFontFamily {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteFontFamily {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11628,6 +11737,11 @@ pub struct IDWriteFontFamily_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteFontFamily1(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteFontFamily1 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteFontFamily1 {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
     pub unsafe fn GetFontCollection(&self) -> ::windows::core::Result<IDWriteFontCollection> {
@@ -11733,11 +11847,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDWriteFontFamily> for &'a IDWriteFontFa
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteFontFamily1 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteFontFamily1 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11764,6 +11873,11 @@ pub struct IDWriteFontFamily1_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteFontFamily2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteFontFamily2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteFontFamily2 {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
     pub unsafe fn GetFontCollection(&self) -> ::windows::core::Result<IDWriteFontCollection> {
@@ -11899,11 +12013,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDWriteFontFamily1> for &'a IDWriteFontF
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteFontFamily2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteFontFamily2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11929,6 +12038,11 @@ pub struct IDWriteFontFamily2_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteFontFile(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteFontFile {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteFontFile {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
     pub unsafe fn GetReferenceKey(&self, fontfilereferencekey: *mut *mut ::core::ffi::c_void, fontfilereferencekeysize: *mut u32) -> ::windows::core::Result<()> {
@@ -11965,11 +12079,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDWri
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteFontFile {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteFontFile {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11999,6 +12108,11 @@ pub struct IDWriteFontFile_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteFontFileEnumerator(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteFontFileEnumerator {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteFontFileEnumerator {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -12032,11 +12146,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDWri
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteFontFileEnumerator {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteFontFileEnumerator {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12065,6 +12174,11 @@ pub struct IDWriteFontFileEnumerator_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteFontFileLoader(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteFontFileLoader {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteFontFileLoader {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
     pub unsafe fn CreateStreamFromKey(&self, fontfilereferencekey: *const ::core::ffi::c_void, fontfilereferencekeysize: u32) -> ::windows::core::Result<IDWriteFontFileStream> {
@@ -12092,11 +12206,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDWri
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteFontFileLoader {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteFontFileLoader {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12121,6 +12230,11 @@ pub struct IDWriteFontFileLoader_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteFontFileStream(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteFontFileStream {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteFontFileStream {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
     pub unsafe fn ReadFileFragment(&self, fragmentstart: *mut *mut ::core::ffi::c_void, fileoffset: u64, fragmentsize: u64, fragmentcontext: *mut *mut ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -12161,11 +12275,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDWri
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteFontFileStream {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteFontFileStream {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12193,6 +12302,11 @@ pub struct IDWriteFontFileStream_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteFontList(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteFontList {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteFontList {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
     pub unsafe fn GetFontCollection(&self) -> ::windows::core::Result<IDWriteFontCollection> {
@@ -12229,11 +12343,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDWri
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteFontList {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteFontList {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12260,6 +12369,11 @@ pub struct IDWriteFontList_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteFontList1(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteFontList1 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteFontList1 {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
     pub unsafe fn GetFontCollection(&self) -> ::windows::core::Result<IDWriteFontCollection> {
@@ -12330,11 +12444,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDWriteFontList> for &'a IDWriteFontList
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteFontList1 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteFontList1 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12361,6 +12470,11 @@ pub struct IDWriteFontList1_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteFontList2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteFontList2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteFontList2 {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
     pub unsafe fn GetFontCollection(&self) -> ::windows::core::Result<IDWriteFontCollection> {
@@ -12456,11 +12570,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDWriteFontList1> for &'a IDWriteFontLis
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteFontList2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteFontList2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12485,6 +12594,11 @@ pub struct IDWriteFontList2_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteFontResource(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteFontResource {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteFontResource {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
     pub unsafe fn GetFontFile(&self) -> ::windows::core::Result<IDWriteFontFile> {
@@ -12560,11 +12674,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDWri
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteFontResource {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteFontResource {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12603,6 +12712,11 @@ pub struct IDWriteFontResource_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteFontSet(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteFontSet {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteFontSet {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
     pub unsafe fn GetFontCount(&self) -> u32 {
@@ -12674,11 +12788,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDWri
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteFontSet {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteFontSet {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12721,6 +12830,11 @@ pub struct IDWriteFontSet_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteFontSet1(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteFontSet1 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteFontSet1 {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
     pub unsafe fn GetFontCount(&self) -> u32 {
@@ -12876,11 +12990,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDWriteFontSet> for &'a IDWriteFontSet1 
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteFontSet1 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteFontSet1 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12929,6 +13038,11 @@ pub struct IDWriteFontSet1_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteFontSet2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteFontSet2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteFontSet2 {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
     pub unsafe fn GetFontCount(&self) -> u32 {
@@ -13109,11 +13223,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDWriteFontSet1> for &'a IDWriteFontSet2
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteFontSet2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteFontSet2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13141,6 +13250,11 @@ pub struct IDWriteFontSet2_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteFontSet3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteFontSet3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteFontSet3 {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
     pub unsafe fn GetFontCount(&self) -> u32 {
@@ -13353,11 +13467,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDWriteFontSet2> for &'a IDWriteFontSet3
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteFontSet3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteFontSet3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13384,6 +13493,11 @@ pub struct IDWriteFontSet3_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteFontSetBuilder(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteFontSetBuilder {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteFontSetBuilder {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
     pub unsafe fn AddFontFaceReference<'a, Param0: ::windows::core::IntoParam<'a, IDWriteFontFaceReference>>(&self, fontfacereference: Param0, properties: &[DWRITE_FONT_PROPERTY]) -> ::windows::core::Result<()> {
@@ -13423,11 +13537,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDWri
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteFontSetBuilder {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteFontSetBuilder {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13455,6 +13564,11 @@ pub struct IDWriteFontSetBuilder_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteFontSetBuilder1(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteFontSetBuilder1 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteFontSetBuilder1 {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
     pub unsafe fn AddFontFaceReference<'a, Param0: ::windows::core::IntoParam<'a, IDWriteFontFaceReference>>(&self, fontfacereference: Param0, properties: &[DWRITE_FONT_PROPERTY]) -> ::windows::core::Result<()> {
@@ -13518,11 +13632,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDWriteFontSetBuilder> for &'a IDWriteFo
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteFontSetBuilder1 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteFontSetBuilder1 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13547,6 +13656,11 @@ pub struct IDWriteFontSetBuilder1_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteFontSetBuilder2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteFontSetBuilder2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteFontSetBuilder2 {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
     pub unsafe fn AddFontFaceReference<'a, Param0: ::windows::core::IntoParam<'a, IDWriteFontFaceReference>>(&self, fontfacereference: Param0, properties: &[DWRITE_FONT_PROPERTY]) -> ::windows::core::Result<()> {
@@ -13638,11 +13752,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDWriteFontSetBuilder1> for &'a IDWriteF
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteFontSetBuilder2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteFontSetBuilder2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13668,6 +13777,11 @@ pub struct IDWriteFontSetBuilder2_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteGdiInterop(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteGdiInterop {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteGdiInterop {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`, `\"Win32_Graphics_Gdi\"`*"]
     #[cfg(feature = "Win32_Graphics_Gdi")]
@@ -13719,11 +13833,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDWri
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteGdiInterop {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteGdiInterop {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13767,6 +13876,11 @@ pub struct IDWriteGdiInterop_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteGdiInterop1(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteGdiInterop1 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteGdiInterop1 {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`, `\"Win32_Graphics_Gdi\"`*"]
     #[cfg(feature = "Win32_Graphics_Gdi")]
@@ -13862,11 +13976,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDWriteGdiInterop> for &'a IDWriteGdiInt
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteGdiInterop1 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteGdiInterop1 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13906,6 +14015,11 @@ pub struct IDWriteGdiInterop1_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteGlyphRunAnalysis(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteGlyphRunAnalysis {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteGlyphRunAnalysis {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -13943,11 +14057,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDWri
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteGlyphRunAnalysis {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteGlyphRunAnalysis {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13980,6 +14089,11 @@ pub struct IDWriteGlyphRunAnalysis_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteInMemoryFontFileLoader(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteInMemoryFontFileLoader {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteInMemoryFontFileLoader {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
     pub unsafe fn CreateStreamFromKey(&self, fontfilereferencekey: *const ::core::ffi::c_void, fontfilereferencekeysize: u32) -> ::windows::core::Result<IDWriteFontFileStream> {
@@ -14036,11 +14150,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDWriteFontFileLoader> for &'a IDWriteIn
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteInMemoryFontFileLoader {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteInMemoryFontFileLoader {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -14066,6 +14175,11 @@ pub struct IDWriteInMemoryFontFileLoader_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteInlineObject(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteInlineObject {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteInlineObject {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -14108,11 +14222,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDWri
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteInlineObject {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteInlineObject {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -14146,6 +14255,11 @@ pub struct IDWriteInlineObject_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteLocalFontFileLoader(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteLocalFontFileLoader {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteLocalFontFileLoader {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
     pub unsafe fn CreateStreamFromKey(&self, fontfilereferencekey: *const ::core::ffi::c_void, fontfilereferencekeysize: u32) -> ::windows::core::Result<IDWriteFontFileStream> {
@@ -14208,11 +14322,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDWriteFontFileLoader> for &'a IDWriteLo
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteLocalFontFileLoader {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteLocalFontFileLoader {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -14242,6 +14351,11 @@ pub struct IDWriteLocalFontFileLoader_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteLocalizedStrings(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteLocalizedStrings {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteLocalizedStrings {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
     pub unsafe fn GetCount(&self) -> u32 {
@@ -14291,11 +14405,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDWri
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteLocalizedStrings {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteLocalizedStrings {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -14328,6 +14437,11 @@ pub struct IDWriteLocalizedStrings_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteNumberSubstitution(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteNumberSubstitution {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteNumberSubstitution {}
 impl ::core::convert::From<IDWriteNumberSubstitution> for ::windows::core::IUnknown {
     fn from(value: IDWriteNumberSubstitution) -> Self {
@@ -14347,11 +14461,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IDWriteNu
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDWriteNumberSubstitution {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IDWriteNumberSubstitution {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IDWriteNumberSubstitution {
@@ -14377,6 +14486,11 @@ pub struct IDWriteNumberSubstitution_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWritePixelSnapping(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWritePixelSnapping {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWritePixelSnapping {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -14415,11 +14529,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDWri
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWritePixelSnapping {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWritePixelSnapping {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -14449,6 +14558,11 @@ pub struct IDWritePixelSnapping_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteRemoteFontFileLoader(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteRemoteFontFileLoader {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteRemoteFontFileLoader {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
     pub unsafe fn CreateStreamFromKey(&self, fontfilereferencekey: *const ::core::ffi::c_void, fontfilereferencekeysize: u32) -> ::windows::core::Result<IDWriteFontFileStream> {
@@ -14511,11 +14625,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDWriteFontFileLoader> for &'a IDWriteRe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteRemoteFontFileLoader {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteRemoteFontFileLoader {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -14542,6 +14651,11 @@ pub struct IDWriteRemoteFontFileLoader_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteRemoteFontFileStream(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteRemoteFontFileStream {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteRemoteFontFileStream {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
     pub unsafe fn ReadFileFragment(&self, fragmentstart: *mut *mut ::core::ffi::c_void, fileoffset: u64, fragmentsize: u64, fragmentcontext: *mut *mut ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -14621,11 +14735,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDWriteFontFileStream> for &'a IDWriteRe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteRemoteFontFileStream {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteRemoteFontFileStream {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -14656,6 +14765,11 @@ pub struct IDWriteRemoteFontFileStream_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteRenderingParams(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteRenderingParams {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteRenderingParams {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
     pub unsafe fn GetGamma(&self) -> f32 {
@@ -14698,11 +14812,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDWri
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteRenderingParams {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteRenderingParams {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -14731,6 +14840,11 @@ pub struct IDWriteRenderingParams_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteRenderingParams1(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteRenderingParams1 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteRenderingParams1 {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
     pub unsafe fn GetGamma(&self) -> f32 {
@@ -14797,11 +14911,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDWriteRenderingParams> for &'a IDWriteR
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteRenderingParams1 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteRenderingParams1 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -14826,6 +14935,11 @@ pub struct IDWriteRenderingParams1_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteRenderingParams2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteRenderingParams2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteRenderingParams2 {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
     pub unsafe fn GetGamma(&self) -> f32 {
@@ -14916,11 +15030,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDWriteRenderingParams1> for &'a IDWrite
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteRenderingParams2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteRenderingParams2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -14945,6 +15054,11 @@ pub struct IDWriteRenderingParams2_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteRenderingParams3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteRenderingParams3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteRenderingParams3 {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
     pub unsafe fn GetGamma(&self) -> f32 {
@@ -15059,11 +15173,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDWriteRenderingParams2> for &'a IDWrite
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteRenderingParams3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteRenderingParams3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -15088,6 +15197,11 @@ pub struct IDWriteRenderingParams3_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteStringList(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteStringList {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteStringList {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
     pub unsafe fn GetCount(&self) -> u32 {
@@ -15132,11 +15246,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDWri
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteStringList {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteStringList {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -15165,6 +15274,11 @@ pub struct IDWriteStringList_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteTextAnalysisSink(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteTextAnalysisSink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteTextAnalysisSink {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
     pub unsafe fn SetScriptAnalysis(&self, textposition: u32, textlength: u32, scriptanalysis: *const DWRITE_SCRIPT_ANALYSIS) -> ::windows::core::Result<()> {
@@ -15203,11 +15317,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDWri
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteTextAnalysisSink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteTextAnalysisSink {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -15235,6 +15344,11 @@ pub struct IDWriteTextAnalysisSink_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteTextAnalysisSink1(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteTextAnalysisSink1 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteTextAnalysisSink1 {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
     pub unsafe fn SetScriptAnalysis(&self, textposition: u32, textlength: u32, scriptanalysis: *const DWRITE_SCRIPT_ANALYSIS) -> ::windows::core::Result<()> {
@@ -15298,11 +15412,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDWriteTextAnalysisSink> for &'a IDWrite
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteTextAnalysisSink1 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteTextAnalysisSink1 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -15330,6 +15439,11 @@ pub struct IDWriteTextAnalysisSink1_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteTextAnalysisSource(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteTextAnalysisSource {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteTextAnalysisSource {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
     pub unsafe fn GetTextAtPosition(&self, textposition: u32, textstring: *mut *mut u16, textlength: *mut u32) -> ::windows::core::Result<()> {
@@ -15372,11 +15486,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDWri
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteTextAnalysisSource {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteTextAnalysisSource {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -15405,6 +15514,11 @@ pub struct IDWriteTextAnalysisSource_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteTextAnalysisSource1(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteTextAnalysisSource1 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteTextAnalysisSource1 {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
     pub unsafe fn GetTextAtPosition(&self, textposition: u32, textstring: *mut *mut u16, textlength: *mut u32) -> ::windows::core::Result<()> {
@@ -15471,11 +15585,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDWriteTextAnalysisSource> for &'a IDWri
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteTextAnalysisSource1 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteTextAnalysisSource1 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -15500,6 +15609,11 @@ pub struct IDWriteTextAnalysisSource1_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteTextAnalyzer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteTextAnalyzer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteTextAnalyzer {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
     pub unsafe fn AnalyzeScript<'a, Param0: ::windows::core::IntoParam<'a, IDWriteTextAnalysisSource>, Param3: ::windows::core::IntoParam<'a, IDWriteTextAnalysisSink>>(&self, analysissource: Param0, textposition: u32, textlength: u32, analysissink: Param3) -> ::windows::core::Result<()> {
@@ -15680,11 +15794,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDWri
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteTextAnalyzer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteTextAnalyzer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -15747,6 +15856,11 @@ pub struct IDWriteTextAnalyzer_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteTextAnalyzer1(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteTextAnalyzer1 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteTextAnalyzer1 {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
     pub unsafe fn AnalyzeScript<'a, Param0: ::windows::core::IntoParam<'a, IDWriteTextAnalysisSource>, Param3: ::windows::core::IntoParam<'a, IDWriteTextAnalysisSink>>(&self, analysissource: Param0, textposition: u32, textlength: u32, analysissink: Param3) -> ::windows::core::Result<()> {
@@ -16022,11 +16136,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDWriteTextAnalyzer> for &'a IDWriteText
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteTextAnalyzer1 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteTextAnalyzer1 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -16068,6 +16177,11 @@ pub struct IDWriteTextAnalyzer1_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteTextAnalyzer2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteTextAnalyzer2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteTextAnalyzer2 {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
     pub unsafe fn AnalyzeScript<'a, Param0: ::windows::core::IntoParam<'a, IDWriteTextAnalysisSource>, Param3: ::windows::core::IntoParam<'a, IDWriteTextAnalysisSink>>(&self, analysissource: Param0, textposition: u32, textlength: u32, analysissink: Param3) -> ::windows::core::Result<()> {
@@ -16377,11 +16491,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDWriteTextAnalyzer1> for &'a IDWriteTex
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteTextAnalyzer2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteTextAnalyzer2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -16411,6 +16520,11 @@ pub struct IDWriteTextAnalyzer2_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteTextFormat(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteTextFormat {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteTextFormat {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
     pub unsafe fn SetTextAlignment(&self, textalignment: DWRITE_TEXT_ALIGNMENT) -> ::windows::core::Result<()> {
@@ -16534,11 +16648,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDWri
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteTextFormat {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteTextFormat {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -16587,6 +16696,11 @@ pub struct IDWriteTextFormat_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteTextFormat1(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteTextFormat1 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteTextFormat1 {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
     pub unsafe fn SetTextAlignment(&self, textalignment: DWRITE_TEXT_ALIGNMENT) -> ::windows::core::Result<()> {
@@ -16765,11 +16879,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDWriteTextFormat> for &'a IDWriteTextFo
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteTextFormat1 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteTextFormat1 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -16807,6 +16916,11 @@ pub struct IDWriteTextFormat1_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteTextFormat2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteTextFormat2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteTextFormat2 {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
     pub unsafe fn SetTextAlignment(&self, textalignment: DWRITE_TEXT_ALIGNMENT) -> ::windows::core::Result<()> {
@@ -17014,11 +17128,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDWriteTextFormat1> for &'a IDWriteTextF
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteTextFormat2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteTextFormat2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -17044,6 +17153,11 @@ pub struct IDWriteTextFormat2_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteTextFormat3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteTextFormat3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteTextFormat3 {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
     pub unsafe fn SetTextAlignment(&self, textalignment: DWRITE_TEXT_ALIGNMENT) -> ::windows::core::Result<()> {
@@ -17291,11 +17405,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDWriteTextFormat2> for &'a IDWriteTextF
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteTextFormat3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteTextFormat3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -17324,6 +17433,11 @@ pub struct IDWriteTextFormat3_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteTextLayout(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteTextLayout {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteTextLayout {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
     pub unsafe fn SetTextAlignment(&self, textalignment: DWRITE_TEXT_ALIGNMENT) -> ::windows::core::Result<()> {
@@ -17634,11 +17748,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDWriteTextFormat> for &'a IDWriteTextLa
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteTextLayout {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteTextLayout {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -17725,6 +17834,11 @@ pub struct IDWriteTextLayout_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteTextLayout1(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteTextLayout1 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteTextLayout1 {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
     pub unsafe fn SetTextAlignment(&self, textalignment: DWRITE_TEXT_ALIGNMENT) -> ::windows::core::Result<()> {
@@ -18073,11 +18187,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDWriteTextLayout> for &'a IDWriteTextLa
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteTextLayout1 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteTextLayout1 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -18111,6 +18220,11 @@ pub struct IDWriteTextLayout1_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteTextLayout2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteTextLayout2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteTextLayout2 {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
     pub unsafe fn SetTextAlignment(&self, textalignment: DWRITE_TEXT_ALIGNMENT) -> ::windows::core::Result<()> {
@@ -18519,11 +18633,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDWriteTextLayout1> for &'a IDWriteTextL
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteTextLayout2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteTextLayout2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -18562,6 +18671,11 @@ pub struct IDWriteTextLayout2_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteTextLayout3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteTextLayout3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteTextLayout3 {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
     pub unsafe fn SetTextAlignment(&self, textalignment: DWRITE_TEXT_ALIGNMENT) -> ::windows::core::Result<()> {
@@ -19008,11 +19122,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDWriteTextLayout2> for &'a IDWriteTextL
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteTextLayout3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteTextLayout3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -19043,6 +19152,11 @@ pub struct IDWriteTextLayout3_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteTextLayout4(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteTextLayout4 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteTextLayout4 {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
     pub unsafe fn SetTextAlignment(&self, textalignment: DWRITE_TEXT_ALIGNMENT) -> ::windows::core::Result<()> {
@@ -19529,11 +19643,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDWriteTextLayout3> for &'a IDWriteTextL
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteTextLayout4 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteTextLayout4 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -19562,6 +19671,11 @@ pub struct IDWriteTextLayout4_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteTextRenderer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteTextRenderer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteTextRenderer {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -19638,11 +19752,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDWritePixelSnapping> for &'a IDWriteTex
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteTextRenderer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteTextRenderer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -19676,6 +19785,11 @@ pub struct IDWriteTextRenderer_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteTextRenderer1(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteTextRenderer1 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteTextRenderer1 {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -19790,11 +19904,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDWriteTextRenderer> for &'a IDWriteText
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDWriteTextRenderer1 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDWriteTextRenderer1 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -19828,6 +19937,11 @@ pub struct IDWriteTextRenderer1_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
 #[repr(transparent)]
 pub struct IDWriteTypography(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDWriteTypography {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDWriteTypography {
     #[doc = "*Required features: `\"Win32_Graphics_DirectWrite\"`*"]
     pub unsafe fn AddFontFeature<'a, Param0: ::windows::core::IntoParam<'a, DWRITE_FONT_FEATURE>>(&self, fontfeature: Param0) -> ::windows::core::Result<()> {
@@ -19861,11 +19975,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IDWriteTy
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDWriteTypography {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IDWriteTypography {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IDWriteTypography {

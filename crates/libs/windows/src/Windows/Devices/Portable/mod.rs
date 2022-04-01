@@ -2,6 +2,11 @@
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IServiceDeviceStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IServiceDeviceStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IServiceDeviceStatics {
     type Vtable = IServiceDeviceStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa88214e1_59c7_4a20_aba6_9f6707937230);
@@ -16,6 +21,11 @@ pub struct IServiceDeviceStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IStorageDeviceStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStorageDeviceStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IStorageDeviceStatics {
     type Vtable = IStorageDeviceStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x5ece44ee_1b23_4dd2_8652_bc164f003128);
@@ -82,6 +92,7 @@ impl ::core::default::Default for ServiceDeviceType {
 }
 unsafe impl ::windows::core::Abi for ServiceDeviceType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ServiceDeviceType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -90,7 +101,6 @@ impl ::core::fmt::Debug for ServiceDeviceType {
 }
 unsafe impl ::windows::core::RuntimeType for ServiceDeviceType {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.Portable.ServiceDeviceType;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }

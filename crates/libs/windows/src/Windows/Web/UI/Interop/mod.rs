@@ -2,6 +2,11 @@
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWebViewControlAcceleratorKeyPressedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWebViewControlAcceleratorKeyPressedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWebViewControlAcceleratorKeyPressedEventArgs {
     type Vtable = IWebViewControlAcceleratorKeyPressedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x77a2a53e_7c74_437d_a290_3ac0d8cd5655);
@@ -29,6 +34,11 @@ pub struct IWebViewControlAcceleratorKeyPressedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWebViewControlMoveFocusRequestedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWebViewControlMoveFocusRequestedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWebViewControlMoveFocusRequestedEventArgs {
     type Vtable = IWebViewControlMoveFocusRequestedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x6b2a340d_4bd0_405e_b7c1_1e72a492f446);
@@ -42,6 +52,11 @@ pub struct IWebViewControlMoveFocusRequestedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWebViewControlProcess(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWebViewControlProcess {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWebViewControlProcess {
     type Vtable = IWebViewControlProcess_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x02c723ec_98d6_424a_b63e_c6136c36a0f2);
@@ -74,6 +89,11 @@ pub struct IWebViewControlProcess_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWebViewControlProcessFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWebViewControlProcessFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWebViewControlProcessFactory {
     type Vtable = IWebViewControlProcessFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x47b65cf9_a2d2_453c_b097_f6779d4b8e02);
@@ -87,6 +107,11 @@ pub struct IWebViewControlProcessFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWebViewControlProcessOptions(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWebViewControlProcessOptions {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWebViewControlProcessOptions {
     type Vtable = IWebViewControlProcessOptions_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1cca72a7_3bd6_4826_8261_6c8189505d89);
@@ -103,6 +128,11 @@ pub struct IWebViewControlProcessOptions_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWebViewControlSite(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWebViewControlSite {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWebViewControlSite {
     type Vtable = IWebViewControlSite_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x133f47c6_12dc_4898_bd47_04967de648ba);
@@ -146,6 +176,11 @@ pub struct IWebViewControlSite_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWebViewControlSite2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWebViewControlSite2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWebViewControlSite2 {
     type Vtable = IWebViewControlSite2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd13b2e3f_48ee_4730_8243_d2ed0c05606a);
@@ -718,11 +753,6 @@ impl WebViewControl {
         unsafe { (::windows::core::Interface::vtable(this).RemoveLostFocus)(::core::mem::transmute_copy(this), token.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for WebViewControl {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for WebViewControl {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -736,7 +766,6 @@ impl ::core::fmt::Debug for WebViewControl {
 }
 unsafe impl ::windows::core::RuntimeType for WebViewControl {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Web.UI.Interop.WebViewControl;{3f921316-bc70-4bda-9136-c94370899fab})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -885,11 +914,6 @@ impl WebViewControlAcceleratorKeyPressedEventArgs {
         unsafe { (::windows::core::Interface::vtable(this).SetHandled)(::core::mem::transmute_copy(this), value).ok() }
     }
 }
-impl ::core::clone::Clone for WebViewControlAcceleratorKeyPressedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for WebViewControlAcceleratorKeyPressedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -903,7 +927,6 @@ impl ::core::fmt::Debug for WebViewControlAcceleratorKeyPressedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for WebViewControlAcceleratorKeyPressedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Web.UI.Interop.WebViewControlAcceleratorKeyPressedEventArgs;{77a2a53e-7c74-437d-a290-3ac0d8cd5655})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -976,6 +999,7 @@ impl ::core::default::Default for WebViewControlAcceleratorKeyRoutingStage {
 }
 unsafe impl ::windows::core::Abi for WebViewControlAcceleratorKeyRoutingStage {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WebViewControlAcceleratorKeyRoutingStage {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -984,7 +1008,6 @@ impl ::core::fmt::Debug for WebViewControlAcceleratorKeyRoutingStage {
 }
 unsafe impl ::windows::core::RuntimeType for WebViewControlAcceleratorKeyRoutingStage {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Web.UI.Interop.WebViewControlAcceleratorKeyRoutingStage;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1011,6 +1034,7 @@ impl ::core::default::Default for WebViewControlMoveFocusReason {
 }
 unsafe impl ::windows::core::Abi for WebViewControlMoveFocusReason {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WebViewControlMoveFocusReason {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1019,7 +1043,6 @@ impl ::core::fmt::Debug for WebViewControlMoveFocusReason {
 }
 unsafe impl ::windows::core::RuntimeType for WebViewControlMoveFocusReason {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Web.UI.Interop.WebViewControlMoveFocusReason;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1037,11 +1060,6 @@ impl WebViewControlMoveFocusRequestedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for WebViewControlMoveFocusRequestedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for WebViewControlMoveFocusRequestedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1055,7 +1073,6 @@ impl ::core::fmt::Debug for WebViewControlMoveFocusRequestedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for WebViewControlMoveFocusRequestedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Web.UI.Interop.WebViewControlMoveFocusRequestedEventArgs;{6b2a340d-4bd0-405e-b7c1-1e72a492f446})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1193,11 +1210,6 @@ impl WebViewControlProcess {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for WebViewControlProcess {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for WebViewControlProcess {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1211,7 +1223,6 @@ impl ::core::fmt::Debug for WebViewControlProcess {
 }
 unsafe impl ::windows::core::RuntimeType for WebViewControlProcess {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Web.UI.Interop.WebViewControlProcess;{02c723ec-98d6-424a-b63e-c6136c36a0f2})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1285,6 +1296,7 @@ impl ::core::default::Default for WebViewControlProcessCapabilityState {
 }
 unsafe impl ::windows::core::Abi for WebViewControlProcessCapabilityState {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WebViewControlProcessCapabilityState {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1293,7 +1305,6 @@ impl ::core::fmt::Debug for WebViewControlProcessCapabilityState {
 }
 unsafe impl ::windows::core::RuntimeType for WebViewControlProcessCapabilityState {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Web.UI.Interop.WebViewControlProcessCapabilityState;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1336,11 +1347,6 @@ impl WebViewControlProcessOptions {
         }
     }
 }
-impl ::core::clone::Clone for WebViewControlProcessOptions {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for WebViewControlProcessOptions {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1354,7 +1360,6 @@ impl ::core::fmt::Debug for WebViewControlProcessOptions {
 }
 unsafe impl ::windows::core::RuntimeType for WebViewControlProcessOptions {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Web.UI.Interop.WebViewControlProcessOptions;{1cca72a7-3bd6-4826-8261-6c8189505d89})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

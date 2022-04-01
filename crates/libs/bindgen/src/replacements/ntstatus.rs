@@ -60,6 +60,7 @@ pub fn gen() -> TokenStream {
         }
         unsafe impl ::windows::core::Abi for NTSTATUS {
             type Abi = Self;
+            type DefaultType = Self;
         }
     }
 }

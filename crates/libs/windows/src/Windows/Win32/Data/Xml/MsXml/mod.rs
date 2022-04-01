@@ -1137,6 +1137,7 @@ impl ::core::default::Default for DOMNodeType {
 }
 unsafe impl ::windows::core::Abi for DOMNodeType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DOMNodeType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1157,6 +1158,12 @@ pub const FreeThreadedXMLHTTP60: ::windows::core::GUID = ::windows::core::GUID::
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IMXAttributes(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IMXAttributes {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IMXAttributes {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`, `\"Win32_Foundation\"`*"]
@@ -1262,12 +1269,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IMXAttributes {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IMXAttributes {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1333,6 +1334,11 @@ pub struct IMXAttributes_Vtbl {
 #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`*"]
 #[repr(transparent)]
 pub struct IMXNamespaceManager(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMXNamespaceManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMXNamespaceManager {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`*"]
     pub unsafe fn putAllowOverride(&self, foverride: i16) -> ::windows::core::Result<()> {
@@ -1398,11 +1404,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMXNa
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMXNamespaceManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMXNamespaceManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1443,6 +1444,12 @@ pub struct IMXNamespaceManager_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IMXNamespacePrefixes(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IMXNamespacePrefixes {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IMXNamespacePrefixes {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`, `\"Win32_Foundation\"`*"]
@@ -1511,12 +1518,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IMXNamespacePrefixes {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IMXNamespacePrefixes {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1551,6 +1552,12 @@ pub struct IMXNamespacePrefixes_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IMXReaderControl(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IMXReaderControl {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IMXReaderControl {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`*"]
@@ -1615,12 +1622,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IMXReaderControl {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IMXReaderControl {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1652,6 +1653,12 @@ pub struct IMXReaderControl_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IMXSchemaDeclHandler(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IMXSchemaDeclHandler {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IMXSchemaDeclHandler {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`, `\"Win32_System_Com\"`*"]
@@ -1709,12 +1716,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IMXSchemaDeclHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IMXSchemaDeclHandler {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1747,6 +1748,12 @@ pub struct IMXSchemaDeclHandler_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IMXWriter(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IMXWriter {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IMXWriter {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
@@ -1881,12 +1888,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IMXWriter {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IMXWriter {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1950,6 +1951,12 @@ pub struct IMXWriter_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IMXXMLFilter(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IMXXMLFilter {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IMXXMLFilter {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`, `\"Win32_Foundation\"`*"]
@@ -2060,12 +2067,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IMXXMLFilter {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IMXXMLFilter {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2117,6 +2118,11 @@ pub struct IMXXMLFilter_Vtbl {
 #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`*"]
 #[repr(transparent)]
 pub struct ISAXAttributes(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISAXAttributes {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISAXAttributes {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`*"]
     pub unsafe fn getLength(&self) -> ::windows::core::Result<i32> {
@@ -2194,11 +2200,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISAXA
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISAXAttributes {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISAXAttributes {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2235,6 +2236,11 @@ pub struct ISAXAttributes_Vtbl {
 #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`*"]
 #[repr(transparent)]
 pub struct ISAXContentHandler(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISAXContentHandler {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISAXContentHandler {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`*"]
     pub unsafe fn putDocumentLocator<'a, Param0: ::windows::core::IntoParam<'a, ISAXLocator>>(&self, plocator: Param0) -> ::windows::core::Result<()> {
@@ -2301,11 +2307,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISAXC
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISAXContentHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISAXContentHandler {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2340,6 +2341,11 @@ pub struct ISAXContentHandler_Vtbl {
 #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`*"]
 #[repr(transparent)]
 pub struct ISAXDTDHandler(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISAXDTDHandler {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISAXDTDHandler {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`*"]
     pub unsafe fn notationDecl<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param2: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param4: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, pwchname: Param0, cchname: i32, pwchpublicid: Param2, cchpublicid: i32, pwchsystemid: Param4, cchsystemid: i32) -> ::windows::core::Result<()> {
@@ -2370,11 +2376,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISAXD
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISAXDTDHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISAXDTDHandler {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2400,6 +2401,11 @@ pub struct ISAXDTDHandler_Vtbl {
 #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`*"]
 #[repr(transparent)]
 pub struct ISAXDeclHandler(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISAXDeclHandler {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISAXDeclHandler {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`*"]
     pub unsafe fn elementDecl<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param2: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, pwchname: Param0, cchname: i32, pwchmodel: Param2, cchmodel: i32) -> ::windows::core::Result<()> {
@@ -2438,11 +2444,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISAXD
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISAXDeclHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISAXDeclHandler {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2470,6 +2471,11 @@ pub struct ISAXDeclHandler_Vtbl {
 #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`*"]
 #[repr(transparent)]
 pub struct ISAXEntityResolver(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISAXEntityResolver {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISAXEntityResolver {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com", feature = "Win32_System_Ole"))]
@@ -2496,11 +2502,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for ISAXEntit
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISAXEntityResolver {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for ISAXEntityResolver {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for ISAXEntityResolver {
@@ -2530,6 +2531,11 @@ pub struct ISAXEntityResolver_Vtbl {
 #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`*"]
 #[repr(transparent)]
 pub struct ISAXErrorHandler(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISAXErrorHandler {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISAXErrorHandler {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`*"]
     pub unsafe fn error<'a, Param0: ::windows::core::IntoParam<'a, ISAXLocator>, Param1: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, plocator: Param0, pwcherrormessage: Param1, hrerrorcode: ::windows::core::HRESULT) -> ::windows::core::Result<()> {
@@ -2564,11 +2570,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISAXE
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISAXErrorHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISAXErrorHandler {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2595,6 +2596,11 @@ pub struct ISAXErrorHandler_Vtbl {
 #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`*"]
 #[repr(transparent)]
 pub struct ISAXLexicalHandler(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISAXLexicalHandler {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISAXLexicalHandler {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`*"]
     pub unsafe fn startDTD<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param2: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param4: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, pwchname: Param0, cchname: i32, pwchpublicid: Param2, cchpublicid: i32, pwchsystemid: Param4, cchsystemid: i32) -> ::windows::core::Result<()> {
@@ -2645,11 +2651,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISAXL
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISAXLexicalHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISAXLexicalHandler {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2680,6 +2681,11 @@ pub struct ISAXLexicalHandler_Vtbl {
 #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`*"]
 #[repr(transparent)]
 pub struct ISAXLocator(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISAXLocator {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISAXLocator {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`*"]
     pub unsafe fn getColumnNumber(&self) -> ::windows::core::Result<i32> {
@@ -2722,11 +2728,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISAXL
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISAXLocator {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISAXLocator {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2754,6 +2755,11 @@ pub struct ISAXLocator_Vtbl {
 #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`*"]
 #[repr(transparent)]
 pub struct ISAXXMLFilter(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISAXXMLFilter {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISAXXMLFilter {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`*"]
     pub unsafe fn getFeature<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, pwchname: Param0) -> ::windows::core::Result<i16> {
@@ -2888,11 +2894,6 @@ impl<'a> ::windows::core::IntoParam<'a, ISAXXMLReader> for &'a ISAXXMLFilter {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISAXXMLFilter {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISAXXMLFilter {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2918,6 +2919,11 @@ pub struct ISAXXMLFilter_Vtbl {
 #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`*"]
 #[repr(transparent)]
 pub struct ISAXXMLReader(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISAXXMLReader {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISAXXMLReader {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`*"]
     pub unsafe fn getFeature<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, pwchname: Param0) -> ::windows::core::Result<i16> {
@@ -3023,11 +3029,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISAXX
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISAXXMLReader {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISAXXMLReader {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3079,6 +3080,12 @@ pub struct ISAXXMLReader_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ISchema(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ISchema {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ISchema {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`, `\"Win32_Foundation\"`*"]
@@ -3249,12 +3256,6 @@ impl<'a> ::windows::core::IntoParam<'a, ISchemaItem> for &'a ISchema {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ISchema {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ISchema {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3319,6 +3320,12 @@ pub struct ISchema_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ISchemaAny(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ISchemaAny {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ISchemaAny {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`, `\"Win32_Foundation\"`*"]
@@ -3482,12 +3489,6 @@ impl<'a> ::windows::core::IntoParam<'a, ISchemaParticle> for &'a ISchemaAny {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ISchemaAny {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ISchemaAny {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3521,6 +3522,12 @@ pub struct ISchemaAny_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ISchemaAttribute(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ISchemaAttribute {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ISchemaAttribute {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`, `\"Win32_Foundation\"`*"]
@@ -3671,12 +3678,6 @@ impl<'a> ::windows::core::IntoParam<'a, ISchemaItem> for &'a ISchemaAttribute {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ISchemaAttribute {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ISchemaAttribute {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3723,6 +3724,12 @@ pub struct ISchemaAttribute_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ISchemaAttributeGroup(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ISchemaAttributeGroup {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ISchemaAttributeGroup {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`, `\"Win32_Foundation\"`*"]
@@ -3851,12 +3858,6 @@ impl<'a> ::windows::core::IntoParam<'a, ISchemaItem> for &'a ISchemaAttributeGro
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ISchemaAttributeGroup {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ISchemaAttributeGroup {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3893,6 +3894,12 @@ pub struct ISchemaAttributeGroup_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ISchemaComplexType(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ISchemaComplexType {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ISchemaComplexType {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`, `\"Win32_Foundation\"`*"]
@@ -4164,12 +4171,6 @@ impl<'a> ::windows::core::IntoParam<'a, ISchemaType> for &'a ISchemaComplexType 
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ISchemaComplexType {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ISchemaComplexType {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4213,6 +4214,12 @@ pub struct ISchemaComplexType_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ISchemaElement(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ISchemaElement {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ISchemaElement {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`, `\"Win32_Foundation\"`*"]
@@ -4426,12 +4433,6 @@ impl<'a> ::windows::core::IntoParam<'a, ISchemaParticle> for &'a ISchemaElement 
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ISchemaElement {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ISchemaElement {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4489,6 +4490,12 @@ pub struct ISchemaElement_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ISchemaIdentityConstraint(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ISchemaIdentityConstraint {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ISchemaIdentityConstraint {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`, `\"Win32_Foundation\"`*"]
@@ -4623,12 +4630,6 @@ impl<'a> ::windows::core::IntoParam<'a, ISchemaItem> for &'a ISchemaIdentityCons
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ISchemaIdentityConstraint {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ISchemaIdentityConstraint {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4669,6 +4670,12 @@ pub struct ISchemaIdentityConstraint_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ISchemaItem(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ISchemaItem {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ISchemaItem {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`, `\"Win32_Foundation\"`*"]
@@ -4761,12 +4768,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ISchemaItem {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ISchemaItem {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4817,6 +4818,12 @@ pub struct ISchemaItem_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ISchemaItemCollection(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ISchemaItemCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ISchemaItemCollection {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`, `\"Win32_System_Com\"`*"]
@@ -4897,12 +4904,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ISchemaItemCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ISchemaItemCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4945,6 +4946,12 @@ pub struct ISchemaItemCollection_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ISchemaModelGroup(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ISchemaModelGroup {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ISchemaModelGroup {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`, `\"Win32_Foundation\"`*"]
@@ -5103,12 +5110,6 @@ impl<'a> ::windows::core::IntoParam<'a, ISchemaParticle> for &'a ISchemaModelGro
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ISchemaModelGroup {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ISchemaModelGroup {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5141,6 +5142,12 @@ pub struct ISchemaModelGroup_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ISchemaNotation(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ISchemaNotation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ISchemaNotation {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`, `\"Win32_Foundation\"`*"]
@@ -5269,12 +5276,6 @@ impl<'a> ::windows::core::IntoParam<'a, ISchemaItem> for &'a ISchemaNotation {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ISchemaNotation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ISchemaNotation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5311,6 +5312,12 @@ pub struct ISchemaNotation_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ISchemaParticle(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ISchemaParticle {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ISchemaParticle {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`, `\"Win32_Foundation\"`*"]
@@ -5439,12 +5446,6 @@ impl<'a> ::windows::core::IntoParam<'a, ISchemaItem> for &'a ISchemaParticle {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ISchemaParticle {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ISchemaParticle {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5481,6 +5482,12 @@ pub struct ISchemaParticle_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ISchemaStringCollection(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ISchemaStringCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ISchemaStringCollection {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`, `\"Win32_Foundation\"`*"]
@@ -5549,12 +5556,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ISchemaStringCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ISchemaStringCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5589,6 +5590,12 @@ pub struct ISchemaStringCollection_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ISchemaType(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ISchemaType {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ISchemaType {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`, `\"Win32_Foundation\"`*"]
@@ -5803,12 +5810,6 @@ impl<'a> ::windows::core::IntoParam<'a, ISchemaItem> for &'a ISchemaType {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ISchemaType {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ISchemaType {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5893,6 +5894,12 @@ pub struct ISchemaType_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IServerXMLHTTPRequest(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IServerXMLHTTPRequest {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IServerXMLHTTPRequest {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
@@ -6066,12 +6073,6 @@ impl<'a> ::windows::core::IntoParam<'a, IXMLHTTPRequest> for &'a IServerXMLHTTPR
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IServerXMLHTTPRequest {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IServerXMLHTTPRequest {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6113,6 +6114,12 @@ pub struct IServerXMLHTTPRequest_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IServerXMLHTTPRequest2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IServerXMLHTTPRequest2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IServerXMLHTTPRequest2 {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
@@ -6320,12 +6327,6 @@ impl<'a> ::windows::core::IntoParam<'a, IServerXMLHTTPRequest> for &'a IServerXM
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IServerXMLHTTPRequest2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IServerXMLHTTPRequest2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6362,6 +6363,12 @@ pub struct IServerXMLHTTPRequest2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IVBMXNamespaceManager(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IVBMXNamespaceManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IVBMXNamespaceManager {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`*"]
@@ -6469,12 +6476,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IVBMXNamespaceManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IVBMXNamespaceManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6532,6 +6533,12 @@ pub struct IVBMXNamespaceManager_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IVBSAXAttributes(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IVBSAXAttributes {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IVBSAXAttributes {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`*"]
@@ -6655,12 +6662,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IVBSAXAttributes {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IVBSAXAttributes {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6734,6 +6735,12 @@ pub struct IVBSAXAttributes_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IVBSAXContentHandler(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IVBSAXContentHandler {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IVBSAXContentHandler {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`, `\"Win32_System_Com\"`*"]
@@ -6839,12 +6846,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IVBSAXContentHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IVBSAXContentHandler {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6912,6 +6913,12 @@ pub struct IVBSAXContentHandler_Vtbl {
 #[repr(transparent)]
 pub struct IVBSAXDTDHandler(::windows::core::IUnknown);
 #[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IVBSAXDTDHandler {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "Win32_System_Com")]
 impl IVBSAXDTDHandler {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -6973,12 +6980,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IVBSAXDTDHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IVBSAXDTDHandler {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7015,6 +7016,12 @@ pub struct IVBSAXDTDHandler_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IVBSAXDeclHandler(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IVBSAXDeclHandler {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IVBSAXDeclHandler {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`, `\"Win32_Foundation\"`*"]
@@ -7087,12 +7094,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IVBSAXDeclHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IVBSAXDeclHandler {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7137,6 +7138,12 @@ pub struct IVBSAXDeclHandler_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IVBSAXEntityResolver(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IVBSAXEntityResolver {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IVBSAXEntityResolver {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
@@ -7194,12 +7201,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IVBSAXEntityResolver {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IVBSAXEntityResolver {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7232,6 +7233,12 @@ pub struct IVBSAXEntityResolver_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IVBSAXErrorHandler(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IVBSAXErrorHandler {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IVBSAXErrorHandler {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`*"]
@@ -7299,12 +7306,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IVBSAXErrorHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IVBSAXErrorHandler {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7345,6 +7346,12 @@ pub struct IVBSAXErrorHandler_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IVBSAXLexicalHandler(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IVBSAXLexicalHandler {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IVBSAXLexicalHandler {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`, `\"Win32_Foundation\"`*"]
@@ -7429,12 +7436,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IVBSAXLexicalHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IVBSAXLexicalHandler {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7482,6 +7483,12 @@ pub struct IVBSAXLexicalHandler_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IVBSAXLocator(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IVBSAXLocator {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IVBSAXLocator {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`*"]
@@ -7556,12 +7563,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IVBSAXLocator {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IVBSAXLocator {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7600,6 +7601,12 @@ pub struct IVBSAXLocator_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IVBSAXXMLFilter(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IVBSAXXMLFilter {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IVBSAXXMLFilter {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`, `\"Win32_System_Com\"`*"]
@@ -7663,12 +7670,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IVBSAXXMLFilter {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IVBSAXXMLFilter {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7705,6 +7706,12 @@ pub struct IVBSAXXMLFilter_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IVBSAXXMLReader(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IVBSAXXMLReader {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IVBSAXXMLReader {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`, `\"Win32_Foundation\"`*"]
@@ -7855,12 +7862,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IVBSAXXMLReader {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IVBSAXXMLReader {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7962,6 +7963,12 @@ pub struct IVBSAXXMLReader_Vtbl {
 #[repr(transparent)]
 pub struct IXMLAttribute(::windows::core::IUnknown);
 #[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IXMLAttribute {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "Win32_System_Com")]
 impl IXMLAttribute {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -8025,12 +8032,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IXMLAttribute {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IXMLAttribute {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8067,6 +8068,12 @@ pub struct IXMLAttribute_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IXMLDOMAttribute(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IXMLDOMAttribute {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IXMLDOMAttribute {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`, `\"Win32_Foundation\"`*"]
@@ -8350,12 +8357,6 @@ impl<'a> ::windows::core::IntoParam<'a, IXMLDOMNode> for &'a IXMLDOMAttribute {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IXMLDOMAttribute {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IXMLDOMAttribute {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8396,6 +8397,12 @@ pub struct IXMLDOMAttribute_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IXMLDOMCDATASection(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IXMLDOMCDATASection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IXMLDOMCDATASection {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`, `\"Win32_Foundation\"`*"]
@@ -8756,12 +8763,6 @@ impl<'a> ::windows::core::IntoParam<'a, IXMLDOMText> for &'a IXMLDOMCDATASection
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IXMLDOMCDATASection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IXMLDOMCDATASection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8790,6 +8791,12 @@ pub struct IXMLDOMCDATASection_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IXMLDOMCharacterData(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IXMLDOMCharacterData {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IXMLDOMCharacterData {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`, `\"Win32_Foundation\"`*"]
@@ -9096,12 +9103,6 @@ impl<'a> ::windows::core::IntoParam<'a, IXMLDOMNode> for &'a IXMLDOMCharacterDat
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IXMLDOMCharacterData {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IXMLDOMCharacterData {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9156,6 +9157,12 @@ pub struct IXMLDOMCharacterData_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IXMLDOMComment(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IXMLDOMComment {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IXMLDOMComment {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`, `\"Win32_Foundation\"`*"]
@@ -9486,12 +9493,6 @@ impl<'a> ::windows::core::IntoParam<'a, IXMLDOMCharacterData> for &'a IXMLDOMCom
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IXMLDOMComment {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IXMLDOMComment {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9520,6 +9521,12 @@ pub struct IXMLDOMComment_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IXMLDOMDocument(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IXMLDOMDocument {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IXMLDOMDocument {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`, `\"Win32_Foundation\"`*"]
@@ -9958,12 +9965,6 @@ impl<'a> ::windows::core::IntoParam<'a, IXMLDOMNode> for &'a IXMLDOMDocument {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IXMLDOMDocument {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IXMLDOMDocument {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10094,6 +10095,12 @@ pub struct IXMLDOMDocument_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IXMLDOMDocument2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IXMLDOMDocument2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IXMLDOMDocument2 {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`, `\"Win32_Foundation\"`*"]
@@ -10590,12 +10597,6 @@ impl<'a> ::windows::core::IntoParam<'a, IXMLDOMDocument> for &'a IXMLDOMDocument
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IXMLDOMDocument2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IXMLDOMDocument2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10648,6 +10649,12 @@ pub struct IXMLDOMDocument2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IXMLDOMDocument3(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IXMLDOMDocument3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IXMLDOMDocument3 {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`, `\"Win32_Foundation\"`*"]
@@ -11180,12 +11187,6 @@ impl<'a> ::windows::core::IntoParam<'a, IXMLDOMDocument2> for &'a IXMLDOMDocumen
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IXMLDOMDocument3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IXMLDOMDocument3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11222,6 +11223,12 @@ pub struct IXMLDOMDocument3_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IXMLDOMDocumentFragment(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IXMLDOMDocumentFragment {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IXMLDOMDocumentFragment {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`, `\"Win32_Foundation\"`*"]
@@ -11490,12 +11497,6 @@ impl<'a> ::windows::core::IntoParam<'a, IXMLDOMNode> for &'a IXMLDOMDocumentFrag
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IXMLDOMDocumentFragment {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IXMLDOMDocumentFragment {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11524,6 +11525,12 @@ pub struct IXMLDOMDocumentFragment_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IXMLDOMDocumentType(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IXMLDOMDocumentType {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IXMLDOMDocumentType {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`, `\"Win32_Foundation\"`*"]
@@ -11809,12 +11816,6 @@ impl<'a> ::windows::core::IntoParam<'a, IXMLDOMNode> for &'a IXMLDOMDocumentType
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IXMLDOMDocumentType {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IXMLDOMDocumentType {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11855,6 +11856,12 @@ pub struct IXMLDOMDocumentType_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IXMLDOMElement(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IXMLDOMElement {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IXMLDOMElement {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`, `\"Win32_Foundation\"`*"]
@@ -12171,12 +12178,6 @@ impl<'a> ::windows::core::IntoParam<'a, IXMLDOMNode> for &'a IXMLDOMElement {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IXMLDOMElement {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IXMLDOMElement {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12238,6 +12239,12 @@ pub struct IXMLDOMElement_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IXMLDOMEntity(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IXMLDOMEntity {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IXMLDOMEntity {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`, `\"Win32_Foundation\"`*"]
@@ -12521,12 +12528,6 @@ impl<'a> ::windows::core::IntoParam<'a, IXMLDOMNode> for &'a IXMLDOMEntity {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IXMLDOMEntity {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IXMLDOMEntity {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12567,6 +12568,12 @@ pub struct IXMLDOMEntity_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IXMLDOMEntityReference(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IXMLDOMEntityReference {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IXMLDOMEntityReference {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`, `\"Win32_Foundation\"`*"]
@@ -12835,12 +12842,6 @@ impl<'a> ::windows::core::IntoParam<'a, IXMLDOMNode> for &'a IXMLDOMEntityRefere
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IXMLDOMEntityReference {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IXMLDOMEntityReference {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12869,6 +12870,12 @@ pub struct IXMLDOMEntityReference_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IXMLDOMImplementation(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IXMLDOMImplementation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IXMLDOMImplementation {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`, `\"Win32_Foundation\"`*"]
@@ -12926,12 +12933,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IXMLDOMImplementation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IXMLDOMImplementation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12964,6 +12965,12 @@ pub struct IXMLDOMImplementation_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IXMLDOMNamedNodeMap(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IXMLDOMNamedNodeMap {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IXMLDOMNamedNodeMap {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`*"]
@@ -13071,12 +13078,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IXMLDOMNamedNodeMap {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IXMLDOMNamedNodeMap {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13136,6 +13137,12 @@ pub struct IXMLDOMNamedNodeMap_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IXMLDOMNode(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IXMLDOMNode {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IXMLDOMNode {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`, `\"Win32_Foundation\"`*"]
@@ -13380,12 +13387,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IXMLDOMNode {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IXMLDOMNode {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13547,6 +13548,12 @@ pub struct IXMLDOMNode_Vtbl {
 #[repr(transparent)]
 pub struct IXMLDOMNodeList(::windows::core::IUnknown);
 #[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IXMLDOMNodeList {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "Win32_System_Com")]
 impl IXMLDOMNodeList {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -13623,12 +13630,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IXMLDOMNodeList {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IXMLDOMNodeList {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13668,6 +13669,12 @@ pub struct IXMLDOMNodeList_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IXMLDOMNotation(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IXMLDOMNotation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IXMLDOMNotation {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`, `\"Win32_Foundation\"`*"]
@@ -13946,12 +13953,6 @@ impl<'a> ::windows::core::IntoParam<'a, IXMLDOMNode> for &'a IXMLDOMNotation {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IXMLDOMNotation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IXMLDOMNotation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13988,6 +13989,12 @@ pub struct IXMLDOMNotation_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IXMLDOMParseError(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IXMLDOMParseError {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IXMLDOMParseError {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`*"]
@@ -14071,12 +14078,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IXMLDOMParseError {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IXMLDOMParseError {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -14121,6 +14122,12 @@ pub struct IXMLDOMParseError_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IXMLDOMParseError2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IXMLDOMParseError2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IXMLDOMParseError2 {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`*"]
@@ -14251,12 +14258,6 @@ impl<'a> ::windows::core::IntoParam<'a, IXMLDOMParseError> for &'a IXMLDOMParseE
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IXMLDOMParseError2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IXMLDOMParseError2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -14298,6 +14299,12 @@ pub struct IXMLDOMParseError2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IXMLDOMParseErrorCollection(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IXMLDOMParseErrorCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IXMLDOMParseErrorCollection {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`, `\"Win32_System_Com\"`*"]
@@ -14376,12 +14383,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IXMLDOMParseErrorCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IXMLDOMParseErrorCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -14421,6 +14422,12 @@ pub struct IXMLDOMParseErrorCollection_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IXMLDOMProcessingInstruction(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IXMLDOMProcessingInstruction {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IXMLDOMProcessingInstruction {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`, `\"Win32_Foundation\"`*"]
@@ -14704,12 +14711,6 @@ impl<'a> ::windows::core::IntoParam<'a, IXMLDOMNode> for &'a IXMLDOMProcessingIn
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IXMLDOMProcessingInstruction {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IXMLDOMProcessingInstruction {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -14750,6 +14751,12 @@ pub struct IXMLDOMProcessingInstruction_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IXMLDOMSchemaCollection(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IXMLDOMSchemaCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IXMLDOMSchemaCollection {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
@@ -14839,12 +14846,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IXMLDOMSchemaCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IXMLDOMSchemaCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -14895,6 +14896,12 @@ pub struct IXMLDOMSchemaCollection_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IXMLDOMSchemaCollection2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IXMLDOMSchemaCollection2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IXMLDOMSchemaCollection2 {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
@@ -15033,12 +15040,6 @@ impl<'a> ::windows::core::IntoParam<'a, IXMLDOMSchemaCollection> for &'a IXMLDOM
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IXMLDOMSchemaCollection2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IXMLDOMSchemaCollection2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -15078,6 +15079,12 @@ pub struct IXMLDOMSchemaCollection2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IXMLDOMSelection(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IXMLDOMSelection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IXMLDOMSelection {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`, `\"Win32_System_Com\"`*"]
@@ -15240,12 +15247,6 @@ impl<'a> ::windows::core::IntoParam<'a, IXMLDOMNodeList> for &'a IXMLDOMSelectio
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IXMLDOMSelection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IXMLDOMSelection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -15315,6 +15316,12 @@ pub struct IXMLDOMSelection_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IXMLDOMText(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IXMLDOMText {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IXMLDOMText {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`, `\"Win32_Foundation\"`*"]
@@ -15651,12 +15658,6 @@ impl<'a> ::windows::core::IntoParam<'a, IXMLDOMCharacterData> for &'a IXMLDOMTex
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IXMLDOMText {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IXMLDOMText {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -15689,6 +15690,12 @@ pub struct IXMLDOMText_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IXMLDSOControl(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IXMLDSOControl {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IXMLDSOControl {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`, `\"Win32_System_Com\"`*"]
@@ -15766,12 +15773,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IXMLDSOControl {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IXMLDSOControl {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -15817,6 +15818,12 @@ pub struct IXMLDSOControl_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IXMLDocument(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IXMLDocument {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IXMLDocument {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`, `\"Win32_System_Com\"`*"]
@@ -15950,12 +15957,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IXMLDocument {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IXMLDocument {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -16037,6 +16038,12 @@ pub struct IXMLDocument_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IXMLDocument2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IXMLDocument2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IXMLDocument2 {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`, `\"Win32_System_Com\"`*"]
@@ -16179,12 +16186,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IXMLDocument2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IXMLDocument2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -16268,6 +16269,12 @@ pub struct IXMLDocument2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IXMLElement(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IXMLElement {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IXMLElement {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`, `\"Win32_Foundation\"`*"]
@@ -16385,12 +16392,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IXMLElement {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IXMLElement {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -16464,6 +16465,12 @@ pub struct IXMLElement_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IXMLElement2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IXMLElement2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IXMLElement2 {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`, `\"Win32_Foundation\"`*"]
@@ -16587,12 +16594,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IXMLElement2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IXMLElement2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -16671,6 +16672,12 @@ pub struct IXMLElement2_Vtbl {
 #[repr(transparent)]
 pub struct IXMLElementCollection(::windows::core::IUnknown);
 #[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IXMLElementCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "Win32_System_Com")]
 impl IXMLElementCollection {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`*"]
     pub unsafe fn Setlength(&self, v: i32) -> ::windows::core::Result<()> {
@@ -16742,12 +16749,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IXMLElementCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IXMLElementCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -16782,6 +16783,11 @@ pub struct IXMLElementCollection_Vtbl {
 #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`*"]
 #[repr(transparent)]
 pub struct IXMLError(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXMLError {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXMLError {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -16807,11 +16813,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IXMLError
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IXMLError {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IXMLError {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IXMLError {
@@ -16842,6 +16843,12 @@ pub struct IXMLError_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IXMLHTTPRequest(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IXMLHTTPRequest {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IXMLHTTPRequest {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
@@ -16970,12 +16977,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IXMLHTTPRequest {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IXMLHTTPRequest {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -17050,6 +17051,11 @@ pub struct IXMLHTTPRequest_Vtbl {
 #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`*"]
 #[repr(transparent)]
 pub struct IXMLHTTPRequest2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXMLHTTPRequest2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXMLHTTPRequest2 {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`*"]
     pub unsafe fn Open<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param1: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param2: ::windows::core::IntoParam<'a, IXMLHTTPRequest2Callback>, Param3: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param4: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param5: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param6: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, pwszmethod: Param0, pwszurl: Param1, pstatuscallback: Param2, pwszusername: Param3, pwszpassword: Param4, pwszproxyusername: Param5, pwszproxypassword: Param6) -> ::windows::core::Result<()> {
@@ -17119,11 +17125,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IXMLH
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXMLHTTPRequest2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXMLHTTPRequest2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -17169,6 +17170,11 @@ pub struct IXMLHTTPRequest2_Vtbl {
 #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`*"]
 #[repr(transparent)]
 pub struct IXMLHTTPRequest2Callback(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXMLHTTPRequest2Callback {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXMLHTTPRequest2Callback {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`*"]
     pub unsafe fn OnRedirect<'a, Param0: ::windows::core::IntoParam<'a, IXMLHTTPRequest2>, Param1: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, pxhr: Param0, pwszredirecturl: Param1) -> ::windows::core::Result<()> {
@@ -17213,11 +17219,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IXMLH
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXMLHTTPRequest2Callback {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXMLHTTPRequest2Callback {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -17252,6 +17253,11 @@ pub struct IXMLHTTPRequest2Callback_Vtbl {
 #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`*"]
 #[repr(transparent)]
 pub struct IXMLHTTPRequest3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXMLHTTPRequest3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXMLHTTPRequest3 {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`*"]
     pub unsafe fn Open<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param1: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param2: ::windows::core::IntoParam<'a, IXMLHTTPRequest2Callback>, Param3: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param4: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param5: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param6: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, pwszmethod: Param0, pwszurl: Param1, pstatuscallback: Param2, pwszusername: Param3, pwszpassword: Param4, pwszproxyusername: Param5, pwszproxypassword: Param6) -> ::windows::core::Result<()> {
@@ -17345,11 +17351,6 @@ impl<'a> ::windows::core::IntoParam<'a, IXMLHTTPRequest2> for &'a IXMLHTTPReques
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXMLHTTPRequest3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXMLHTTPRequest3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -17374,6 +17375,11 @@ pub struct IXMLHTTPRequest3_Vtbl {
 #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`*"]
 #[repr(transparent)]
 pub struct IXMLHTTPRequest3Callback(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXMLHTTPRequest3Callback {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXMLHTTPRequest3Callback {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`*"]
     pub unsafe fn OnRedirect<'a, Param0: ::windows::core::IntoParam<'a, IXMLHTTPRequest2>, Param1: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, pxhr: Param0, pwszredirecturl: Param1) -> ::windows::core::Result<()> {
@@ -17446,11 +17452,6 @@ impl<'a> ::windows::core::IntoParam<'a, IXMLHTTPRequest2Callback> for &'a IXMLHT
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXMLHTTPRequest3Callback {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXMLHTTPRequest3Callback {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -17477,6 +17478,12 @@ pub struct IXMLHTTPRequest3Callback_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IXMLHttpRequest(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IXMLHttpRequest {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IXMLHttpRequest {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
@@ -17605,12 +17612,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IXMLHttpRequest {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IXMLHttpRequest {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -17686,6 +17687,12 @@ pub struct IXMLHttpRequest_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IXSLProcessor(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IXSLProcessor {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IXSLProcessor {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
@@ -17813,12 +17820,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IXSLProcessor {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IXSLProcessor {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -17895,6 +17896,12 @@ pub struct IXSLProcessor_Vtbl {
 #[repr(transparent)]
 pub struct IXSLTemplate(::windows::core::IUnknown);
 #[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IXSLTemplate {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "Win32_System_Com")]
 impl IXSLTemplate {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -17963,12 +17970,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IXSLTemplate {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IXSLTemplate {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -18009,6 +18010,12 @@ pub struct IXSLTemplate_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IXTLRuntime(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IXTLRuntime {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IXTLRuntime {
     #[doc = "*Required features: `\"Win32_Data_Xml_MsXml\"`, `\"Win32_Foundation\"`*"]
@@ -18322,12 +18329,6 @@ impl<'a> ::windows::core::IntoParam<'a, IXMLDOMNode> for &'a IXTLRuntime {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IXTLRuntime {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IXTLRuntime {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -18418,6 +18419,7 @@ impl ::core::default::Default for SCHEMACONTENTTYPE {
 }
 unsafe impl ::windows::core::Abi for SCHEMACONTENTTYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SCHEMACONTENTTYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -18457,6 +18459,7 @@ impl ::core::default::Default for SCHEMADERIVATIONMETHOD {
 }
 unsafe impl ::windows::core::Abi for SCHEMADERIVATIONMETHOD {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SCHEMADERIVATIONMETHOD {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -18488,6 +18491,7 @@ impl ::core::default::Default for SCHEMAPROCESSCONTENTS {
 }
 unsafe impl ::windows::core::Abi for SCHEMAPROCESSCONTENTS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SCHEMAPROCESSCONTENTS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -18519,6 +18523,7 @@ impl ::core::default::Default for SCHEMATYPEVARIETY {
 }
 unsafe impl ::windows::core::Abi for SCHEMATYPEVARIETY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SCHEMATYPEVARIETY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -18548,6 +18553,7 @@ impl ::core::default::Default for SCHEMAUSE {
 }
 unsafe impl ::windows::core::Abi for SCHEMAUSE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SCHEMAUSE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -18579,6 +18585,7 @@ impl ::core::default::Default for SCHEMAWHITESPACE {
 }
 unsafe impl ::windows::core::Abi for SCHEMAWHITESPACE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SCHEMAWHITESPACE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -18612,6 +18619,7 @@ impl ::core::default::Default for SERVERXMLHTTP_OPTION {
 }
 unsafe impl ::windows::core::Abi for SERVERXMLHTTP_OPTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SERVERXMLHTTP_OPTION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -18781,6 +18789,7 @@ impl ::core::default::Default for SOMITEMTYPE {
 }
 unsafe impl ::windows::core::Abi for SOMITEMTYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SOMITEMTYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -18812,6 +18821,7 @@ impl ::core::default::Default for SXH_PROXY_SETTING {
 }
 unsafe impl ::windows::core::Abi for SXH_PROXY_SETTING {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SXH_PROXY_SETTING {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -18845,6 +18855,7 @@ impl ::core::default::Default for SXH_SERVER_CERT_OPTION {
 }
 unsafe impl ::windows::core::Abi for SXH_SERVER_CERT_OPTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SXH_SERVER_CERT_OPTION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -18875,6 +18886,7 @@ impl ::core::default::Default for XHR_AUTH {
 }
 unsafe impl ::windows::core::Abi for XHR_AUTH {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for XHR_AUTH {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -18900,6 +18912,7 @@ impl ::core::fmt::Debug for XHR_CERT {
 }
 unsafe impl ::windows::core::Abi for XHR_CERT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for XHR_CERT {
     fn eq(&self, other: &Self) -> bool {
@@ -18939,6 +18952,7 @@ impl ::core::default::Default for XHR_CERT_ERROR_FLAG {
 }
 unsafe impl ::windows::core::Abi for XHR_CERT_ERROR_FLAG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for XHR_CERT_ERROR_FLAG {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -18972,6 +18986,7 @@ impl ::core::default::Default for XHR_CERT_IGNORE_FLAG {
 }
 unsafe impl ::windows::core::Abi for XHR_CERT_IGNORE_FLAG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for XHR_CERT_IGNORE_FLAG {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -19006,6 +19021,7 @@ impl ::core::fmt::Debug for XHR_COOKIE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for XHR_COOKIE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for XHR_COOKIE {
@@ -19062,6 +19078,7 @@ impl ::core::default::Default for XHR_COOKIE_FLAG {
 }
 unsafe impl ::windows::core::Abi for XHR_COOKIE_FLAG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for XHR_COOKIE_FLAG {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -19097,6 +19114,7 @@ impl ::core::default::Default for XHR_COOKIE_STATE {
 }
 unsafe impl ::windows::core::Abi for XHR_COOKIE_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for XHR_COOKIE_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -19126,6 +19144,7 @@ impl ::core::default::Default for XHR_CRED_PROMPT {
 }
 unsafe impl ::windows::core::Abi for XHR_CRED_PROMPT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for XHR_CRED_PROMPT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -19173,6 +19192,7 @@ impl ::core::default::Default for XHR_PROPERTY {
 }
 unsafe impl ::windows::core::Abi for XHR_PROPERTY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for XHR_PROPERTY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -19187,6 +19207,12 @@ pub const XHR_PROP_ONDATA_NEVER: u64 = 18446744073709551615u64;
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct XMLDOMDocumentEvents(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for XMLDOMDocumentEvents {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl XMLDOMDocumentEvents {}
 #[cfg(feature = "Win32_System_Com")]
@@ -19235,12 +19261,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
 impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispatch> for &'a XMLDOMDocumentEvents {
     fn into_param(self) -> ::windows::core::Param<'a, super::super::super::System::Com::IDispatch> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for XMLDOMDocumentEvents {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 #[cfg(feature = "Win32_System_Com")]
@@ -19301,6 +19321,7 @@ impl ::core::default::Default for XMLEMEM_TYPE {
 }
 unsafe impl ::windows::core::Abi for XMLEMEM_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for XMLEMEM_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -19347,6 +19368,7 @@ impl ::core::fmt::Debug for XML_ERROR {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for XML_ERROR {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for XML_ERROR {
@@ -19425,6 +19447,7 @@ impl ::core::fmt::Debug for __msxml6_ReferenceRemainingTypes__ {
 }
 unsafe impl ::windows::core::Abi for __msxml6_ReferenceRemainingTypes__ {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for __msxml6_ReferenceRemainingTypes__ {
     fn eq(&self, other: &Self) -> bool {

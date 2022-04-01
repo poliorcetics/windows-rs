@@ -127,6 +127,7 @@ pub fn gen() -> TokenStream {
         }
         unsafe impl ::windows::core::Abi for BSTR {
             type Abi = ::core::mem::ManuallyDrop<Self>;
+            type DefaultType = Self;
         }
         #[cfg(feature = "alloc")]
         impl<'a> ::windows::core::IntoParam<'a, BSTR> for &str {

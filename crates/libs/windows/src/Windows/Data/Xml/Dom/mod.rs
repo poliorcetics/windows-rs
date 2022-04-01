@@ -256,11 +256,6 @@ impl DtdEntity {
         unsafe { (::windows::core::Interface::vtable(this).SetInnerText)(::core::mem::transmute_copy(this), value.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for DtdEntity {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DtdEntity {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -274,7 +269,6 @@ impl ::core::fmt::Debug for DtdEntity {
 }
 unsafe impl ::windows::core::RuntimeType for DtdEntity {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Data.Xml.Dom.DtdEntity;{6a0b5ffc-63b4-480f-9e6a-8a92816aade4})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -643,11 +637,6 @@ impl DtdNotation {
         unsafe { (::windows::core::Interface::vtable(this).SetInnerText)(::core::mem::transmute_copy(this), value.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for DtdNotation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DtdNotation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -661,7 +650,6 @@ impl ::core::fmt::Debug for DtdNotation {
 }
 unsafe impl ::windows::core::RuntimeType for DtdNotation {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Data.Xml.Dom.DtdNotation;{8cb4e04d-6d46-4edb-ab73-df83c51ad397})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -784,6 +772,11 @@ unsafe impl ::core::marker::Sync for DtdNotation {}
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDtdEntity(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDtdEntity {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDtdEntity {
     type Vtable = IDtdEntity_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x6a0b5ffc_63b4_480f_9e6a_8a92816aade4);
@@ -799,6 +792,11 @@ pub struct IDtdEntity_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDtdNotation(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDtdNotation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDtdNotation {
     type Vtable = IDtdNotation_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x8cb4e04d_6d46_4edb_ab73_df83c51ad397);
@@ -813,6 +811,11 @@ pub struct IDtdNotation_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IXmlAttribute(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXmlAttribute {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IXmlAttribute {
     type Vtable = IXmlAttribute_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xac144aa4_b4f1_4db6_b206_8a22c308db0a);
@@ -829,6 +832,11 @@ pub struct IXmlAttribute_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IXmlCDataSection(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXmlCDataSection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IXmlCDataSection {
     type Vtable = IXmlCDataSection_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x4d04b46f_c8bd_45b4_8899_0400d7c2c60f);
@@ -841,6 +849,11 @@ pub struct IXmlCDataSection_Vtbl {
 #[doc = "*Required features: `\"Data_Xml_Dom\"`*"]
 #[repr(transparent)]
 pub struct IXmlCharacterData(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXmlCharacterData {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXmlCharacterData {
     #[doc = "*Required features: `\"Data_Xml_Dom\"`*"]
     pub fn Data(&self) -> ::windows::core::Result<::windows::core::HSTRING> {
@@ -1226,11 +1239,6 @@ impl<'a> ::windows::core::IntoParam<'a, IXmlNodeSerializer> for &IXmlCharacterDa
         ::core::convert::TryInto::<IXmlNodeSerializer>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IXmlCharacterData {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXmlCharacterData {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1244,7 +1252,6 @@ impl ::core::fmt::Debug for IXmlCharacterData {
 }
 unsafe impl ::windows::core::RuntimeType for IXmlCharacterData {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{132e42ab-4e36-4df6-b1c8-0ce62fd88b26}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1269,6 +1276,11 @@ pub struct IXmlCharacterData_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IXmlComment(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXmlComment {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IXmlComment {
     type Vtable = IXmlComment_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xbca474d5_b61f_4611_9cac_2e92e3476d47);
@@ -1281,6 +1293,11 @@ pub struct IXmlComment_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IXmlDocument(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXmlDocument {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IXmlDocument {
     type Vtable = IXmlDocument_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf7f3a506_1e87_42d6_bcfb_b8c809fa5494);
@@ -1310,6 +1327,11 @@ pub struct IXmlDocument_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IXmlDocumentFragment(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXmlDocumentFragment {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IXmlDocumentFragment {
     type Vtable = IXmlDocumentFragment_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe2ea6a96_0c21_44a5_8bc9_9e4a262708ec);
@@ -1322,6 +1344,11 @@ pub struct IXmlDocumentFragment_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IXmlDocumentIO(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXmlDocumentIO {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IXmlDocumentIO {
     type Vtable = IXmlDocumentIO_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x6cd0e74e_ee65_4489_9ebf_ca43e87ba637);
@@ -1340,6 +1367,11 @@ pub struct IXmlDocumentIO_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IXmlDocumentIO2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXmlDocumentIO2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IXmlDocumentIO2 {
     type Vtable = IXmlDocumentIO2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x5d034661_7bd8_4ad5_9ebf_81e6347263b1);
@@ -1360,6 +1392,11 @@ pub struct IXmlDocumentIO2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IXmlDocumentStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXmlDocumentStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IXmlDocumentStatics {
     type Vtable = IXmlDocumentStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x5543d254_d757_4b79_9539_232b18f50bf1);
@@ -1388,6 +1425,11 @@ pub struct IXmlDocumentStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IXmlDocumentType(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXmlDocumentType {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IXmlDocumentType {
     type Vtable = IXmlDocumentType_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf7342425_9781_4964_8e94_9b1c6dfc9bc7);
@@ -1403,6 +1445,11 @@ pub struct IXmlDocumentType_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IXmlDomImplementation(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXmlDomImplementation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IXmlDomImplementation {
     type Vtable = IXmlDomImplementation_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x6de58132_f11d_4fbb_8cc6_583cba93112f);
@@ -1416,6 +1463,11 @@ pub struct IXmlDomImplementation_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IXmlElement(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXmlElement {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IXmlElement {
     type Vtable = IXmlElement_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x2dfb8a1f_6b10_4ef8_9f83_efcce8faec37);
@@ -1441,6 +1493,11 @@ pub struct IXmlElement_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IXmlEntityReference(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXmlEntityReference {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IXmlEntityReference {
     type Vtable = IXmlEntityReference_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x2e2f47bc_c3d0_4ccf_bb86_0ab8c36a61cf);
@@ -1453,6 +1510,11 @@ pub struct IXmlEntityReference_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IXmlLoadSettings(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXmlLoadSettings {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IXmlLoadSettings {
     type Vtable = IXmlLoadSettings_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x58aa07a8_fed6_46f7_b4c5_fb1ba72108d6);
@@ -1475,6 +1537,11 @@ pub struct IXmlLoadSettings_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IXmlNamedNodeMap(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXmlNamedNodeMap {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IXmlNamedNodeMap {
     type Vtable = IXmlNamedNodeMap_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb3a69eb0_aab0_4b82_a6fa_b1453f7c021b);
@@ -1495,6 +1562,11 @@ pub struct IXmlNamedNodeMap_Vtbl {
 #[doc = "*Required features: `\"Data_Xml_Dom\"`*"]
 #[repr(transparent)]
 pub struct IXmlNode(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXmlNode {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXmlNode {
     #[doc = "*Required features: `\"Data_Xml_Dom\"`*"]
     pub fn NodeValue(&self) -> ::windows::core::Result<::windows::core::IInspectable> {
@@ -1809,11 +1881,6 @@ impl<'a> ::windows::core::IntoParam<'a, IXmlNodeSerializer> for &IXmlNode {
         ::core::convert::TryInto::<IXmlNodeSerializer>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IXmlNode {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXmlNode {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1827,7 +1894,6 @@ impl ::core::fmt::Debug for IXmlNode {
 }
 unsafe impl ::windows::core::RuntimeType for IXmlNode {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{1c741d59-2122-47d5-a856-83f3d4214875}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1867,6 +1933,11 @@ pub struct IXmlNode_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IXmlNodeList(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXmlNodeList {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IXmlNodeList {
     type Vtable = IXmlNodeList_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x8c60ad77_83a4_4ec1_9c54_7ba429e13da6);
@@ -1881,6 +1952,11 @@ pub struct IXmlNodeList_Vtbl {
 #[doc = "*Required features: `\"Data_Xml_Dom\"`*"]
 #[repr(transparent)]
 pub struct IXmlNodeSelector(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXmlNodeSelector {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXmlNodeSelector {
     #[doc = "*Required features: `\"Data_Xml_Dom\"`*"]
     pub fn SelectSingleNode<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::HSTRING>>(&self, xpath: Param0) -> ::windows::core::Result<IXmlNode> {
@@ -1955,11 +2031,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXmlNodeSelector {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXmlNodeSelector {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1973,7 +2044,6 @@ impl ::core::fmt::Debug for IXmlNodeSelector {
 }
 unsafe impl ::windows::core::RuntimeType for IXmlNodeSelector {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{63dbba8b-d0db-4fe1-b745-f9433afdc25b}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1994,6 +2064,11 @@ pub struct IXmlNodeSelector_Vtbl {
 #[doc = "*Required features: `\"Data_Xml_Dom\"`*"]
 #[repr(transparent)]
 pub struct IXmlNodeSerializer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXmlNodeSerializer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXmlNodeSerializer {
     #[doc = "*Required features: `\"Data_Xml_Dom\"`*"]
     pub fn GetXml(&self) -> ::windows::core::Result<::windows::core::HSTRING> {
@@ -2057,11 +2132,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXmlNodeSerializer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXmlNodeSerializer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2075,7 +2145,6 @@ impl ::core::fmt::Debug for IXmlNodeSerializer {
 }
 unsafe impl ::windows::core::RuntimeType for IXmlNodeSerializer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{5cc5b382-e6dd-4991-abef-06d8d2e7bd0c}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2095,6 +2164,11 @@ pub struct IXmlNodeSerializer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IXmlProcessingInstruction(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXmlProcessingInstruction {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IXmlProcessingInstruction {
     type Vtable = IXmlProcessingInstruction_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x2707fd1e_1e92_4ece_b6f4_26f069078ddc);
@@ -2110,6 +2184,11 @@ pub struct IXmlProcessingInstruction_Vtbl {
 #[doc = "*Required features: `\"Data_Xml_Dom\"`*"]
 #[repr(transparent)]
 pub struct IXmlText(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXmlText {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXmlText {
     #[doc = "*Required features: `\"Data_Xml_Dom\"`*"]
     pub fn SplitText(&self, offset: u32) -> ::windows::core::Result<IXmlText> {
@@ -2525,11 +2604,6 @@ impl<'a> ::windows::core::IntoParam<'a, IXmlNodeSerializer> for &IXmlText {
         ::core::convert::TryInto::<IXmlNodeSerializer>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IXmlText {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXmlText {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2543,7 +2617,6 @@ impl ::core::fmt::Debug for IXmlText {
 }
 unsafe impl ::windows::core::RuntimeType for IXmlText {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{f931a4cb-308d-4760-a1d5-43b67450ac7e}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2590,6 +2663,7 @@ impl ::core::default::Default for NodeType {
 }
 unsafe impl ::windows::core::Abi for NodeType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NodeType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2598,7 +2672,6 @@ impl ::core::fmt::Debug for NodeType {
 }
 unsafe impl ::windows::core::RuntimeType for NodeType {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Data.Xml.Dom.NodeType;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2865,11 +2938,6 @@ impl XmlAttribute {
         unsafe { (::windows::core::Interface::vtable(this).SetInnerText)(::core::mem::transmute_copy(this), value.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for XmlAttribute {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for XmlAttribute {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2883,7 +2951,6 @@ impl ::core::fmt::Debug for XmlAttribute {
 }
 unsafe impl ::windows::core::RuntimeType for XmlAttribute {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Data.Xml.Dom.XmlAttribute;{ac144aa4-b4f1-4db6-b206-8a22c308db0a})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3293,11 +3360,6 @@ impl XmlCDataSection {
         }
     }
 }
-impl ::core::clone::Clone for XmlCDataSection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for XmlCDataSection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3311,7 +3373,6 @@ impl ::core::fmt::Debug for XmlCDataSection {
 }
 unsafe impl ::windows::core::RuntimeType for XmlCDataSection {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Data.Xml.Dom.XmlCDataSection;{4d04b46f-c8bd-45b4-8899-0400d7c2c60f})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3757,11 +3818,6 @@ impl XmlComment {
         unsafe { (::windows::core::Interface::vtable(this).SetInnerText)(::core::mem::transmute_copy(this), value.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for XmlComment {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for XmlComment {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3775,7 +3831,6 @@ impl ::core::fmt::Debug for XmlComment {
 }
 unsafe impl ::windows::core::RuntimeType for XmlComment {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Data.Xml.Dom.XmlComment;{bca474d5-b61f-4611-9cac-2e92e3476d47})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4361,11 +4416,6 @@ impl XmlDocument {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for XmlDocument {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for XmlDocument {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4379,7 +4429,6 @@ impl ::core::fmt::Debug for XmlDocument {
 }
 unsafe impl ::windows::core::RuntimeType for XmlDocument {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Data.Xml.Dom.XmlDocument;{f7f3a506-1e87-42d6-bcfb-b8c809fa5494})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4732,11 +4781,6 @@ impl XmlDocumentFragment {
         unsafe { (::windows::core::Interface::vtable(this).SetInnerText)(::core::mem::transmute_copy(this), value.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for XmlDocumentFragment {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for XmlDocumentFragment {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4750,7 +4794,6 @@ impl ::core::fmt::Debug for XmlDocumentFragment {
 }
 unsafe impl ::windows::core::RuntimeType for XmlDocumentFragment {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Data.Xml.Dom.XmlDocumentFragment;{e2ea6a96-0c21-44a5-8bc9-9e4a262708ec})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -5127,11 +5170,6 @@ impl XmlDocumentType {
         unsafe { (::windows::core::Interface::vtable(this).SetInnerText)(::core::mem::transmute_copy(this), value.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for XmlDocumentType {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for XmlDocumentType {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5145,7 +5183,6 @@ impl ::core::fmt::Debug for XmlDocumentType {
 }
 unsafe impl ::windows::core::RuntimeType for XmlDocumentType {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Data.Xml.Dom.XmlDocumentType;{f7342425-9781-4964-8e94-9b1c6dfc9bc7})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -5278,11 +5315,6 @@ impl XmlDomImplementation {
         }
     }
 }
-impl ::core::clone::Clone for XmlDomImplementation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for XmlDomImplementation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5296,7 +5328,6 @@ impl ::core::fmt::Debug for XmlDomImplementation {
 }
 unsafe impl ::windows::core::RuntimeType for XmlDomImplementation {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Data.Xml.Dom.XmlDomImplementation;{6de58132-f11d-4fbb-8cc6-583cba93112f})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -5675,11 +5706,6 @@ impl XmlElement {
         unsafe { (::windows::core::Interface::vtable(this).SetInnerText)(::core::mem::transmute_copy(this), value.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for XmlElement {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for XmlElement {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5693,7 +5719,6 @@ impl ::core::fmt::Debug for XmlElement {
 }
 unsafe impl ::windows::core::RuntimeType for XmlElement {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Data.Xml.Dom.XmlElement;{2dfb8a1f-6b10-4ef8-9f83-efcce8faec37})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -6046,11 +6071,6 @@ impl XmlEntityReference {
         unsafe { (::windows::core::Interface::vtable(this).SetInnerText)(::core::mem::transmute_copy(this), value.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for XmlEntityReference {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for XmlEntityReference {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6064,7 +6084,6 @@ impl ::core::fmt::Debug for XmlEntityReference {
 }
 unsafe impl ::windows::core::RuntimeType for XmlEntityReference {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Data.Xml.Dom.XmlEntityReference;{2e2f47bc-c3d0-4ccf-bb86-0ab8c36a61cf})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -6261,11 +6280,6 @@ impl XmlLoadSettings {
         unsafe { (::windows::core::Interface::vtable(this).SetElementContentWhiteSpace)(::core::mem::transmute_copy(this), value).ok() }
     }
 }
-impl ::core::clone::Clone for XmlLoadSettings {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for XmlLoadSettings {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6279,7 +6293,6 @@ impl ::core::fmt::Debug for XmlLoadSettings {
 }
 unsafe impl ::windows::core::RuntimeType for XmlLoadSettings {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Data.Xml.Dom.XmlLoadSettings;{58aa07a8-fed6-46f7-b4c5-fb1ba72108d6})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -6447,11 +6460,6 @@ impl XmlNamedNodeMap {
         }
     }
 }
-impl ::core::clone::Clone for XmlNamedNodeMap {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for XmlNamedNodeMap {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6465,7 +6473,6 @@ impl ::core::fmt::Debug for XmlNamedNodeMap {
 }
 unsafe impl ::windows::core::RuntimeType for XmlNamedNodeMap {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Data.Xml.Dom.XmlNamedNodeMap;{b3a69eb0-aab0-4b82-a6fa-b1453f7c021b})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -6653,11 +6660,6 @@ impl XmlNodeList {
         }
     }
 }
-impl ::core::clone::Clone for XmlNodeList {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for XmlNodeList {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6671,7 +6673,6 @@ impl ::core::fmt::Debug for XmlNodeList {
 }
 unsafe impl ::windows::core::RuntimeType for XmlNodeList {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Data.Xml.Dom.XmlNodeList;{8c60ad77-83a4-4ec1-9c54-7ba429e13da6})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -7047,11 +7048,6 @@ impl XmlProcessingInstruction {
         unsafe { (::windows::core::Interface::vtable(this).SetData)(::core::mem::transmute_copy(this), value.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for XmlProcessingInstruction {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for XmlProcessingInstruction {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7065,7 +7061,6 @@ impl ::core::fmt::Debug for XmlProcessingInstruction {
 }
 unsafe impl ::windows::core::RuntimeType for XmlProcessingInstruction {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Data.Xml.Dom.XmlProcessingInstruction;{2707fd1e-1e92-4ece-b6f4-26f069078ddc})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -7475,11 +7470,6 @@ impl XmlText {
         }
     }
 }
-impl ::core::clone::Clone for XmlText {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for XmlText {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7493,7 +7483,6 @@ impl ::core::fmt::Debug for XmlText {
 }
 unsafe impl ::windows::core::RuntimeType for XmlText {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Data.Xml.Dom.XmlText;{f931a4cb-308d-4760-a1d5-43b67450ac7e})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

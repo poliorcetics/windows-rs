@@ -18,6 +18,7 @@ impl ::core::fmt::Debug for NV_MEMORY_RANGE {
 }
 unsafe impl ::windows::core::Abi for NV_MEMORY_RANGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NV_MEMORY_RANGE {
     fn eq(&self, other: &Self) -> bool {

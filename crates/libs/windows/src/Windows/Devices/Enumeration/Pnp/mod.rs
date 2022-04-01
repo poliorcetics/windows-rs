@@ -2,6 +2,11 @@
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPnpObject(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPnpObject {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPnpObject {
     type Vtable = IPnpObject_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x95c66258_733b_4a8f_93a3_db078ac870c1);
@@ -21,6 +26,11 @@ pub struct IPnpObject_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPnpObjectStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPnpObjectStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPnpObjectStatics {
     type Vtable = IPnpObjectStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb3c32a3d_d168_4660_bbf3_a733b14b6e01);
@@ -53,6 +63,11 @@ pub struct IPnpObjectStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPnpObjectUpdate(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPnpObjectUpdate {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPnpObjectUpdate {
     type Vtable = IPnpObjectUpdate_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x6f59e812_001e_4844_bcc6_432886856a17);
@@ -71,6 +86,11 @@ pub struct IPnpObjectUpdate_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPnpObjectWatcher(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPnpObjectWatcher {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPnpObjectWatcher {
     type Vtable = IPnpObjectWatcher_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x83c95ca8_4772_4a7a_aca8_e48c42a89c44);
@@ -203,11 +223,6 @@ impl PnpObject {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for PnpObject {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PnpObject {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -221,7 +236,6 @@ impl ::core::fmt::Debug for PnpObject {
 }
 unsafe impl ::windows::core::RuntimeType for PnpObject {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Enumeration.Pnp.PnpObject;{95c66258-733b-4a8f-93a3-db078ac870c1})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -328,12 +342,6 @@ impl PnpObjectCollection {
     }
 }
 #[cfg(feature = "Foundation_Collections")]
-impl ::core::clone::Clone for PnpObjectCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Foundation_Collections")]
 impl ::core::cmp::PartialEq for PnpObjectCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -350,7 +358,6 @@ impl ::core::fmt::Debug for PnpObjectCollection {
 #[cfg(feature = "Foundation_Collections")]
 unsafe impl ::windows::core::RuntimeType for PnpObjectCollection {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Enumeration.Pnp.PnpObjectCollection;pinterface({bbe1fa4c-b0e3-4583-baef-1f1b2e483e56};rc(Windows.Devices.Enumeration.Pnp.PnpObject;{95c66258-733b-4a8f-93a3-db078ac870c1})))");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -512,6 +519,7 @@ impl ::core::default::Default for PnpObjectType {
 }
 unsafe impl ::windows::core::Abi for PnpObjectType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PnpObjectType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -520,7 +528,6 @@ impl ::core::fmt::Debug for PnpObjectType {
 }
 unsafe impl ::windows::core::RuntimeType for PnpObjectType {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.Enumeration.Pnp.PnpObjectType;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -555,11 +562,6 @@ impl PnpObjectUpdate {
         }
     }
 }
-impl ::core::clone::Clone for PnpObjectUpdate {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PnpObjectUpdate {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -573,7 +575,6 @@ impl ::core::fmt::Debug for PnpObjectUpdate {
 }
 unsafe impl ::windows::core::RuntimeType for PnpObjectUpdate {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Enumeration.Pnp.PnpObjectUpdate;{6f59e812-001e-4844-bcc6-432886856a17})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -725,11 +726,6 @@ impl PnpObjectWatcher {
         unsafe { (::windows::core::Interface::vtable(this).Stop)(::core::mem::transmute_copy(this)).ok() }
     }
 }
-impl ::core::clone::Clone for PnpObjectWatcher {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PnpObjectWatcher {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -743,7 +739,6 @@ impl ::core::fmt::Debug for PnpObjectWatcher {
 }
 unsafe impl ::windows::core::RuntimeType for PnpObjectWatcher {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Enumeration.Pnp.PnpObjectWatcher;{83c95ca8-4772-4a7a-aca8-e48c42a89c44})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

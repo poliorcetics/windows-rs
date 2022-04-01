@@ -64,6 +64,11 @@ pub mod WiFiDirect;
 #[doc = "*Required features: `\"Devices\"`*"]
 #[repr(transparent)]
 pub struct ILowLevelDevicesAggregateProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILowLevelDevicesAggregateProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ILowLevelDevicesAggregateProvider {
     #[doc = "*Required features: `\"Devices\"`, `\"Devices_Adc_Provider\"`*"]
     #[cfg(feature = "Devices_Adc_Provider")]
@@ -151,11 +156,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ILowLevelDevicesAggregateProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ILowLevelDevicesAggregateProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -169,7 +169,6 @@ impl ::core::fmt::Debug for ILowLevelDevicesAggregateProvider {
 }
 unsafe impl ::windows::core::RuntimeType for ILowLevelDevicesAggregateProvider {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{a73e561c-aac1-4ec7-a852-479f7060d01f}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -206,6 +205,11 @@ pub struct ILowLevelDevicesAggregateProvider_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ILowLevelDevicesAggregateProviderFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILowLevelDevicesAggregateProviderFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ILowLevelDevicesAggregateProviderFactory {
     type Vtable = ILowLevelDevicesAggregateProviderFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9ac4aaf6_3473_465e_96d5_36281a2c57af);
@@ -222,6 +226,11 @@ pub struct ILowLevelDevicesAggregateProviderFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ILowLevelDevicesController(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILowLevelDevicesController {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ILowLevelDevicesController {
     type Vtable = ILowLevelDevicesController_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x2ec23dd4_179b_45de_9b39_3ae02527de52);
@@ -234,6 +243,11 @@ pub struct ILowLevelDevicesController_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ILowLevelDevicesControllerStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILowLevelDevicesControllerStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ILowLevelDevicesControllerStatics {
     type Vtable = ILowLevelDevicesControllerStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x093e926a_fccb_4394_a697_19de637c2db3);
@@ -308,11 +322,6 @@ impl LowLevelDevicesAggregateProvider {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for LowLevelDevicesAggregateProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for LowLevelDevicesAggregateProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -326,7 +335,6 @@ impl ::core::fmt::Debug for LowLevelDevicesAggregateProvider {
 }
 unsafe impl ::windows::core::RuntimeType for LowLevelDevicesAggregateProvider {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.LowLevelDevicesAggregateProvider;{a73e561c-aac1-4ec7-a852-479f7060d01f})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -423,11 +431,6 @@ impl LowLevelDevicesController {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for LowLevelDevicesController {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for LowLevelDevicesController {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -441,7 +444,6 @@ impl ::core::fmt::Debug for LowLevelDevicesController {
 }
 unsafe impl ::windows::core::RuntimeType for LowLevelDevicesController {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.LowLevelDevicesController;{2ec23dd4-179b-45de-9b39-3ae02527de52})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

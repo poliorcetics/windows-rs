@@ -20,6 +20,7 @@ impl ::core::default::Default for ANCHOR_CHANGE_HISTORY_FLAGS {
 }
 unsafe impl ::windows::core::Abi for ANCHOR_CHANGE_HISTORY_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ANCHOR_CHANGE_HISTORY_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -110,6 +111,7 @@ impl ::core::default::Default for GET_TEXT_AND_PROPERTY_UPDATES_FLAGS {
 }
 unsafe impl ::windows::core::Abi for GET_TEXT_AND_PROPERTY_UPDATES_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GET_TEXT_AND_PROPERTY_UPDATES_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -245,10 +247,16 @@ impl ::core::fmt::Debug for HKL {
 }
 unsafe impl ::windows::core::Abi for HKL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct IAccClientDocMgr(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAccClientDocMgr {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAccClientDocMgr {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -294,11 +302,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAccC
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAccClientDocMgr {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAccClientDocMgr {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -335,6 +338,11 @@ pub struct IAccClientDocMgr_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct IAccDictionary(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAccDictionary {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAccDictionary {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -384,11 +392,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAccD
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAccDictionary {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAccDictionary {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -429,6 +432,11 @@ pub struct IAccDictionary_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct IAccServerDocMgr(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAccServerDocMgr {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAccServerDocMgr {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn NewDocument<'a, Param1: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, riid: *const ::windows::core::GUID, punk: Param1) -> ::windows::core::Result<()> {
@@ -463,11 +471,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAccS
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAccServerDocMgr {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAccServerDocMgr {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -494,6 +497,11 @@ pub struct IAccServerDocMgr_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct IAccStore(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAccStore {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAccStore {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn Register<'a, Param1: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, riid: *const ::windows::core::GUID, punk: Param1) -> ::windows::core::Result<()> {
@@ -551,11 +559,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAccS
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAccStore {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAccStore {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -595,6 +598,11 @@ pub struct IAccStore_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct IAnchor(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAnchor {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAnchor {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn SetGravity(&self, gravity: TsGravity) -> ::windows::core::Result<()> {
@@ -669,11 +677,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAnch
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAnchor {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAnchor {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -714,6 +717,11 @@ pub struct IAnchor_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct IClonableWrapper(::windows::core::IUnknown);
+impl ::core::clone::Clone for IClonableWrapper {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IClonableWrapper {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn CloneNewWrapper<T: ::windows::core::Interface>(&self) -> ::windows::core::Result<T> {
@@ -741,11 +749,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IClon
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IClonableWrapper {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IClonableWrapper {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -770,6 +773,11 @@ pub struct IClonableWrapper_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ICoCreateLocally(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICoCreateLocally {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ICoCreateLocally {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com", feature = "Win32_System_Ole"))]
@@ -795,11 +803,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for ICoCreate
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ICoCreateLocally {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for ICoCreateLocally {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for ICoCreateLocally {
@@ -829,6 +832,11 @@ pub struct ICoCreateLocally_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ICoCreatedLocally(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICoCreatedLocally {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ICoCreatedLocally {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com", feature = "Win32_System_Ole"))]
@@ -854,11 +862,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for ICoCreate
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ICoCreatedLocally {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for ICoCreatedLocally {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for ICoCreatedLocally {
@@ -888,6 +891,11 @@ pub struct ICoCreatedLocally_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct IDocWrap(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDocWrap {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDocWrap {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn SetDoc<'a, Param1: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, riid: *const ::windows::core::GUID, punk: Param1) -> ::windows::core::Result<()> {
@@ -919,11 +927,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDocW
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDocWrap {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDocWrap {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -949,6 +952,11 @@ pub struct IDocWrap_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct IEnumITfCompositionView(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnumITfCompositionView {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnumITfCompositionView {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn Clone(&self) -> ::windows::core::Result<IEnumITfCompositionView> {
@@ -988,11 +996,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnum
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnumITfCompositionView {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnumITfCompositionView {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1020,6 +1023,11 @@ pub struct IEnumITfCompositionView_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct IEnumSpeechCommands(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnumSpeechCommands {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnumSpeechCommands {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn Clone(&self) -> ::windows::core::Result<IEnumSpeechCommands> {
@@ -1059,11 +1067,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnum
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnumSpeechCommands {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnumSpeechCommands {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1091,6 +1094,11 @@ pub struct IEnumSpeechCommands_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct IEnumTfCandidates(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnumTfCandidates {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnumTfCandidates {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn Clone(&self) -> ::windows::core::Result<IEnumTfCandidates> {
@@ -1130,11 +1138,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnum
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnumTfCandidates {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnumTfCandidates {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1162,6 +1165,11 @@ pub struct IEnumTfCandidates_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct IEnumTfContextViews(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnumTfContextViews {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnumTfContextViews {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn Clone(&self) -> ::windows::core::Result<IEnumTfContextViews> {
@@ -1201,11 +1209,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnum
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnumTfContextViews {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnumTfContextViews {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1233,6 +1236,11 @@ pub struct IEnumTfContextViews_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct IEnumTfContexts(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnumTfContexts {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnumTfContexts {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn Clone(&self) -> ::windows::core::Result<IEnumTfContexts> {
@@ -1272,11 +1280,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnum
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnumTfContexts {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnumTfContexts {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1304,6 +1307,11 @@ pub struct IEnumTfContexts_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct IEnumTfDisplayAttributeInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnumTfDisplayAttributeInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnumTfDisplayAttributeInfo {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn Clone(&self) -> ::windows::core::Result<IEnumTfDisplayAttributeInfo> {
@@ -1343,11 +1351,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnum
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnumTfDisplayAttributeInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnumTfDisplayAttributeInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1375,6 +1378,11 @@ pub struct IEnumTfDisplayAttributeInfo_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct IEnumTfDocumentMgrs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnumTfDocumentMgrs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnumTfDocumentMgrs {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn Clone(&self) -> ::windows::core::Result<IEnumTfDocumentMgrs> {
@@ -1414,11 +1422,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnum
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnumTfDocumentMgrs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnumTfDocumentMgrs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1446,6 +1449,11 @@ pub struct IEnumTfDocumentMgrs_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct IEnumTfFunctionProviders(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnumTfFunctionProviders {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnumTfFunctionProviders {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn Clone(&self) -> ::windows::core::Result<IEnumTfFunctionProviders> {
@@ -1485,11 +1493,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnum
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnumTfFunctionProviders {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnumTfFunctionProviders {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1517,6 +1520,11 @@ pub struct IEnumTfFunctionProviders_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct IEnumTfInputProcessorProfiles(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnumTfInputProcessorProfiles {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnumTfInputProcessorProfiles {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn Clone(&self) -> ::windows::core::Result<IEnumTfInputProcessorProfiles> {
@@ -1556,11 +1564,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnum
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnumTfInputProcessorProfiles {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnumTfInputProcessorProfiles {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1588,6 +1591,11 @@ pub struct IEnumTfInputProcessorProfiles_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct IEnumTfLangBarItems(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnumTfLangBarItems {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnumTfLangBarItems {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn Clone(&self) -> ::windows::core::Result<IEnumTfLangBarItems> {
@@ -1627,11 +1635,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnum
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnumTfLangBarItems {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnumTfLangBarItems {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1659,6 +1662,11 @@ pub struct IEnumTfLangBarItems_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct IEnumTfLanguageProfiles(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnumTfLanguageProfiles {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnumTfLanguageProfiles {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn Clone(&self) -> ::windows::core::Result<IEnumTfLanguageProfiles> {
@@ -1699,11 +1707,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnum
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnumTfLanguageProfiles {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnumTfLanguageProfiles {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1734,6 +1737,11 @@ pub struct IEnumTfLanguageProfiles_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct IEnumTfLatticeElements(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnumTfLatticeElements {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnumTfLatticeElements {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn Clone(&self) -> ::windows::core::Result<IEnumTfLatticeElements> {
@@ -1774,11 +1782,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnum
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnumTfLatticeElements {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnumTfLatticeElements {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1809,6 +1812,11 @@ pub struct IEnumTfLatticeElements_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct IEnumTfProperties(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnumTfProperties {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnumTfProperties {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn Clone(&self) -> ::windows::core::Result<IEnumTfProperties> {
@@ -1848,11 +1856,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnum
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnumTfProperties {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnumTfProperties {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1880,6 +1883,11 @@ pub struct IEnumTfProperties_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct IEnumTfPropertyValue(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnumTfPropertyValue {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnumTfPropertyValue {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn Clone(&self) -> ::windows::core::Result<IEnumTfPropertyValue> {
@@ -1920,11 +1928,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnum
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnumTfPropertyValue {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnumTfPropertyValue {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1955,6 +1958,11 @@ pub struct IEnumTfPropertyValue_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct IEnumTfRanges(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnumTfRanges {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnumTfRanges {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn Clone(&self) -> ::windows::core::Result<IEnumTfRanges> {
@@ -1994,11 +2002,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnum
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnumTfRanges {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnumTfRanges {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2026,6 +2029,11 @@ pub struct IEnumTfRanges_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct IEnumTfUIElements(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnumTfUIElements {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnumTfUIElements {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn Clone(&self) -> ::windows::core::Result<IEnumTfUIElements> {
@@ -2065,11 +2073,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnum
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnumTfUIElements {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnumTfUIElements {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2097,6 +2100,11 @@ pub struct IEnumTfUIElements_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct IInternalDocWrap(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInternalDocWrap {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IInternalDocWrap {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn NotifyRevoke(&self) -> ::windows::core::Result<()> {
@@ -2121,11 +2129,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IInternal
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IInternalDocWrap {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IInternalDocWrap {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IInternalDocWrap {
@@ -2176,6 +2179,7 @@ impl ::core::default::Default for INSERT_TEXT_AT_SELECTION_FLAGS {
 }
 unsafe impl ::windows::core::Abi for INSERT_TEXT_AT_SELECTION_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for INSERT_TEXT_AT_SELECTION_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2185,6 +2189,11 @@ impl ::core::fmt::Debug for INSERT_TEXT_AT_SELECTION_FLAGS {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ISpeechCommandProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpeechCommandProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISpeechCommandProvider {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn EnumSpeechCommands(&self, langid: u16) -> ::windows::core::Result<IEnumSpeechCommands> {
@@ -2216,11 +2225,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISpee
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISpeechCommandProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISpeechCommandProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2246,6 +2250,11 @@ pub struct ISpeechCommandProvider_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITextStoreACP(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITextStoreACP {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITextStoreACP {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn AdviseSink<'a, Param1: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, riid: *const ::windows::core::GUID, punk: Param1, dwmask: u32) -> ::windows::core::Result<()> {
@@ -2396,11 +2405,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IText
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITextStoreACP {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITextStoreACP {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2486,6 +2490,11 @@ pub struct ITextStoreACP_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITextStoreACP2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITextStoreACP2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITextStoreACP2 {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn AdviseSink<'a, Param1: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, riid: *const ::windows::core::GUID, punk: Param1, dwmask: u32) -> ::windows::core::Result<()> {
@@ -2630,11 +2639,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IText
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITextStoreACP2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITextStoreACP2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2716,6 +2720,11 @@ pub struct ITextStoreACP2_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITextStoreACPEx(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITextStoreACPEx {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITextStoreACPEx {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -2741,11 +2750,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for ITextStor
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITextStoreACPEx {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for ITextStoreACPEx {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for ITextStoreACPEx {
@@ -2775,6 +2779,11 @@ pub struct ITextStoreACPEx_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITextStoreACPServices(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITextStoreACPServices {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITextStoreACPServices {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -2816,11 +2825,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IText
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITextStoreACPServices {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITextStoreACPServices {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2854,6 +2858,11 @@ pub struct ITextStoreACPServices_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITextStoreACPSink(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITextStoreACPSink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITextStoreACPSink {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn OnTextChange(&self, dwflags: TEXT_STORE_TEXT_CHANGE_FLAGS, pchange: *const TS_TEXTCHANGE) -> ::windows::core::Result<()> {
@@ -2908,11 +2917,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IText
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITextStoreACPSink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITextStoreACPSink {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2944,6 +2948,11 @@ pub struct ITextStoreACPSink_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITextStoreACPSinkEx(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITextStoreACPSinkEx {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITextStoreACPSinkEx {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn OnTextChange(&self, dwflags: TEXT_STORE_TEXT_CHANGE_FLAGS, pchange: *const TS_TEXTCHANGE) -> ::windows::core::Result<()> {
@@ -3022,11 +3031,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITextStoreACPSink> for &'a ITextStoreACP
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITextStoreACPSinkEx {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITextStoreACPSinkEx {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3051,6 +3055,11 @@ pub struct ITextStoreACPSinkEx_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITextStoreAnchor(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITextStoreAnchor {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITextStoreAnchor {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn AdviseSink<'a, Param1: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, riid: *const ::windows::core::GUID, punk: Param1, dwmask: u32) -> ::windows::core::Result<()> {
@@ -3205,11 +3214,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IText
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITextStoreAnchor {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITextStoreAnchor {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3299,6 +3303,11 @@ pub struct ITextStoreAnchor_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITextStoreAnchorEx(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITextStoreAnchorEx {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITextStoreAnchorEx {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -3324,11 +3333,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for ITextStor
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITextStoreAnchorEx {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for ITextStoreAnchorEx {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for ITextStoreAnchorEx {
@@ -3358,6 +3362,11 @@ pub struct ITextStoreAnchorEx_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITextStoreAnchorSink(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITextStoreAnchorSink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITextStoreAnchorSink {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn OnTextChange<'a, Param1: ::windows::core::IntoParam<'a, IAnchor>, Param2: ::windows::core::IntoParam<'a, IAnchor>>(&self, dwflags: TEXT_STORE_CHANGE_FLAGS, pastart: Param1, paend: Param2) -> ::windows::core::Result<()> {
@@ -3412,11 +3421,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IText
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITextStoreAnchorSink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITextStoreAnchorSink {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3448,6 +3452,11 @@ pub struct ITextStoreAnchorSink_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITextStoreSinkAnchorEx(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITextStoreSinkAnchorEx {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITextStoreSinkAnchorEx {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn OnTextChange<'a, Param1: ::windows::core::IntoParam<'a, IAnchor>, Param2: ::windows::core::IntoParam<'a, IAnchor>>(&self, dwflags: TEXT_STORE_CHANGE_FLAGS, pastart: Param1, paend: Param2) -> ::windows::core::Result<()> {
@@ -3526,11 +3535,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITextStoreAnchorSink> for &'a ITextStore
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITextStoreSinkAnchorEx {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITextStoreSinkAnchorEx {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3555,6 +3559,11 @@ pub struct ITextStoreSinkAnchorEx_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfActiveLanguageProfileNotifySink(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfActiveLanguageProfileNotifySink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfActiveLanguageProfileNotifySink {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -3580,11 +3589,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for ITfActive
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfActiveLanguageProfileNotifySink {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for ITfActiveLanguageProfileNotifySink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for ITfActiveLanguageProfileNotifySink {
@@ -3614,6 +3618,11 @@ pub struct ITfActiveLanguageProfileNotifySink_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfCandidateList(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfCandidateList {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfCandidateList {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn EnumCandidates(&self) -> ::windows::core::Result<IEnumTfCandidates> {
@@ -3655,11 +3664,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfCa
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfCandidateList {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfCandidateList {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3687,6 +3691,11 @@ pub struct ITfCandidateList_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfCandidateListUIElement(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfCandidateListUIElement {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfCandidateListUIElement {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -3790,11 +3799,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITfUIElement> for &'a ITfCandidateListUI
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfCandidateListUIElement {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfCandidateListUIElement {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3829,6 +3833,11 @@ pub struct ITfCandidateListUIElement_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfCandidateListUIElementBehavior(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfCandidateListUIElementBehavior {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfCandidateListUIElementBehavior {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -3964,11 +3973,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITfCandidateListUIElement> for &'a ITfCa
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfCandidateListUIElementBehavior {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfCandidateListUIElementBehavior {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3995,6 +3999,11 @@ pub struct ITfCandidateListUIElementBehavior_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfCandidateString(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfCandidateString {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfCandidateString {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -4028,11 +4037,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfCa
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfCandidateString {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfCandidateString {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4061,6 +4065,11 @@ pub struct ITfCandidateString_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfCategoryMgr(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfCategoryMgr {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfCategoryMgr {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn RegisterCategory(&self, rclsid: *const ::windows::core::GUID, rcatid: *const ::windows::core::GUID, rguid: *const ::windows::core::GUID) -> ::windows::core::Result<()> {
@@ -4150,11 +4159,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfCa
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfCategoryMgr {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfCategoryMgr {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4204,6 +4208,11 @@ pub struct ITfCategoryMgr_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfCleanupContextDurationSink(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfCleanupContextDurationSink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfCleanupContextDurationSink {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn OnStartCleanupContext(&self) -> ::windows::core::Result<()> {
@@ -4234,11 +4243,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfCl
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfCleanupContextDurationSink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfCleanupContextDurationSink {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4264,6 +4268,11 @@ pub struct ITfCleanupContextDurationSink_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfCleanupContextSink(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfCleanupContextSink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfCleanupContextSink {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn OnCleanupContext<'a, Param1: ::windows::core::IntoParam<'a, ITfContext>>(&self, ecwrite: u32, pic: Param1) -> ::windows::core::Result<()> {
@@ -4290,11 +4299,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfCl
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfCleanupContextSink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfCleanupContextSink {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4319,6 +4323,11 @@ pub struct ITfCleanupContextSink_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfClientId(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfClientId {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfClientId {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn GetClientId(&self, rclsid: *const ::windows::core::GUID) -> ::windows::core::Result<u32> {
@@ -4346,11 +4355,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfCl
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfClientId {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfClientId {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4375,6 +4379,11 @@ pub struct ITfClientId_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfCompartment(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfCompartment {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfCompartment {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com", feature = "Win32_System_Ole"))]
@@ -4408,11 +4417,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfCo
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfCompartment {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfCompartment {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4444,6 +4448,11 @@ pub struct ITfCompartment_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfCompartmentEventSink(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfCompartmentEventSink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfCompartmentEventSink {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn OnChange(&self, rguid: *const ::windows::core::GUID) -> ::windows::core::Result<()> {
@@ -4470,11 +4479,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfCo
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfCompartmentEventSink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfCompartmentEventSink {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4499,6 +4503,11 @@ pub struct ITfCompartmentEventSink_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfCompartmentMgr(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfCompartmentMgr {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfCompartmentMgr {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn GetCompartment(&self, rguid: *const ::windows::core::GUID) -> ::windows::core::Result<ITfCompartment> {
@@ -4536,11 +4545,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfCo
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfCompartmentMgr {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfCompartmentMgr {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4570,6 +4574,11 @@ pub struct ITfCompartmentMgr_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfComposition(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfComposition {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfComposition {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn GetRange(&self) -> ::windows::core::Result<ITfRange> {
@@ -4609,11 +4618,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfCo
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfComposition {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfComposition {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4641,6 +4645,11 @@ pub struct ITfComposition_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfCompositionSink(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfCompositionSink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfCompositionSink {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn OnCompositionTerminated<'a, Param1: ::windows::core::IntoParam<'a, ITfComposition>>(&self, ecwrite: u32, pcomposition: Param1) -> ::windows::core::Result<()> {
@@ -4667,11 +4676,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfCo
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfCompositionSink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfCompositionSink {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4696,6 +4700,11 @@ pub struct ITfCompositionSink_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfCompositionView(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfCompositionView {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfCompositionView {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn GetOwnerClsid(&self) -> ::windows::core::Result<::windows::core::GUID> {
@@ -4728,11 +4737,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfCo
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfCompositionView {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfCompositionView {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4758,6 +4762,11 @@ pub struct ITfCompositionView_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfConfigureSystemKeystrokeFeed(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfConfigureSystemKeystrokeFeed {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfConfigureSystemKeystrokeFeed {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn DisableSystemKeystrokeFeed(&self) -> ::windows::core::Result<()> {
@@ -4788,11 +4797,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfCo
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfConfigureSystemKeystrokeFeed {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfConfigureSystemKeystrokeFeed {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4818,6 +4822,11 @@ pub struct ITfConfigureSystemKeystrokeFeed_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfContext(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfContext {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfContext {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn RequestEditSession<'a, Param1: ::windows::core::IntoParam<'a, ITfEditSession>>(&self, tid: u32, pes: Param1, dwflags: TF_CONTEXT_EDIT_CONTEXT_FLAGS) -> ::windows::core::Result<::windows::core::HRESULT> {
@@ -4916,11 +4925,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfCo
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfContext {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfContext {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4968,6 +4972,11 @@ pub struct ITfContext_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfContextComposition(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfContextComposition {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfContextComposition {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn StartComposition<'a, Param1: ::windows::core::IntoParam<'a, ITfRange>, Param2: ::windows::core::IntoParam<'a, ITfCompositionSink>>(&self, ecwrite: u32, pcompositionrange: Param1, psink: Param2) -> ::windows::core::Result<ITfComposition> {
@@ -5010,11 +5019,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfCo
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfContextComposition {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfContextComposition {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5042,6 +5046,11 @@ pub struct ITfContextComposition_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfContextKeyEventSink(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfContextKeyEventSink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfContextKeyEventSink {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -5088,11 +5097,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfCo
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfContextKeyEventSink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfContextKeyEventSink {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5132,6 +5136,11 @@ pub struct ITfContextKeyEventSink_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfContextOwner(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfContextOwner {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfContextOwner {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -5188,11 +5197,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfCo
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfContextOwner {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfContextOwner {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5237,6 +5241,11 @@ pub struct ITfContextOwner_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfContextOwnerCompositionServices(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfContextOwnerCompositionServices {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfContextOwnerCompositionServices {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn StartComposition<'a, Param1: ::windows::core::IntoParam<'a, ITfRange>, Param2: ::windows::core::IntoParam<'a, ITfCompositionSink>>(&self, ecwrite: u32, pcompositionrange: Param1, psink: Param2) -> ::windows::core::Result<ITfComposition> {
@@ -5303,11 +5312,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITfContextComposition> for &'a ITfContex
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfContextOwnerCompositionServices {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfContextOwnerCompositionServices {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5332,6 +5336,11 @@ pub struct ITfContextOwnerCompositionServices_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfContextOwnerCompositionSink(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfContextOwnerCompositionSink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfContextOwnerCompositionSink {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -5368,11 +5377,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfCo
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfContextOwnerCompositionSink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfContextOwnerCompositionSink {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5402,6 +5406,11 @@ pub struct ITfContextOwnerCompositionSink_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfContextOwnerServices(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfContextOwnerServices {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfContextOwnerServices {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn OnLayoutChange(&self) -> ::windows::core::Result<()> {
@@ -5455,11 +5464,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfCo
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfContextOwnerServices {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfContextOwnerServices {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5496,6 +5500,11 @@ pub struct ITfContextOwnerServices_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfContextView(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfContextView {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfContextView {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -5541,11 +5550,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfCo
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfContextView {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfContextView {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5585,6 +5589,11 @@ pub struct ITfContextView_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfCreatePropertyStore(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfCreatePropertyStore {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfCreatePropertyStore {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -5619,11 +5628,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfCr
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfCreatePropertyStore {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfCreatePropertyStore {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5655,6 +5659,11 @@ pub struct ITfCreatePropertyStore_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfDisplayAttributeInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfDisplayAttributeInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfDisplayAttributeInfo {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn GetGUID(&self) -> ::windows::core::Result<::windows::core::GUID> {
@@ -5703,11 +5712,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfDi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfDisplayAttributeInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfDisplayAttributeInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5745,6 +5749,11 @@ pub struct ITfDisplayAttributeInfo_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfDisplayAttributeMgr(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfDisplayAttributeMgr {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfDisplayAttributeMgr {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn OnUpdateInfo(&self) -> ::windows::core::Result<()> {
@@ -5780,11 +5789,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfDi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfDisplayAttributeMgr {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfDisplayAttributeMgr {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5811,6 +5815,11 @@ pub struct ITfDisplayAttributeMgr_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfDisplayAttributeNotifySink(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfDisplayAttributeNotifySink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfDisplayAttributeNotifySink {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn OnUpdateInfo(&self) -> ::windows::core::Result<()> {
@@ -5837,11 +5846,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfDi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfDisplayAttributeNotifySink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfDisplayAttributeNotifySink {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5866,6 +5870,11 @@ pub struct ITfDisplayAttributeNotifySink_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfDisplayAttributeProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfDisplayAttributeProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfDisplayAttributeProvider {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn EnumDisplayAttributeInfo(&self) -> ::windows::core::Result<IEnumTfDisplayAttributeInfo> {
@@ -5898,11 +5907,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfDi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfDisplayAttributeProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfDisplayAttributeProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5928,6 +5932,11 @@ pub struct ITfDisplayAttributeProvider_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfDocumentMgr(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfDocumentMgr {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfDocumentMgr {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn CreateContext<'a, Param2: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, tidowner: u32, dwflags: u32, punk: Param2, ppic: *mut ::core::option::Option<ITfContext>, pectextstore: *mut u32) -> ::windows::core::Result<()> {
@@ -5977,11 +5986,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfDo
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfDocumentMgr {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfDocumentMgr {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6011,6 +6015,11 @@ pub struct ITfDocumentMgr_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfEditRecord(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfEditRecord {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfEditRecord {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -6044,11 +6053,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfEd
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfEditRecord {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfEditRecord {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6077,6 +6081,11 @@ pub struct ITfEditRecord_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfEditSession(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfEditSession {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfEditSession {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn DoEditSession(&self, ec: u32) -> ::windows::core::Result<()> {
@@ -6103,11 +6112,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfEd
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfEditSession {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfEditSession {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6132,6 +6136,11 @@ pub struct ITfEditSession_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfEditTransactionSink(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfEditTransactionSink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfEditTransactionSink {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn OnStartEditTransaction<'a, Param0: ::windows::core::IntoParam<'a, ITfContext>>(&self, pic: Param0) -> ::windows::core::Result<()> {
@@ -6162,11 +6171,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfEd
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfEditTransactionSink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfEditTransactionSink {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6192,6 +6196,11 @@ pub struct ITfEditTransactionSink_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfFnAdviseText(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfFnAdviseText {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfFnAdviseText {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -6248,11 +6257,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITfFunction> for &'a ITfFnAdviseText {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfFnAdviseText {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfFnAdviseText {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6278,6 +6282,11 @@ pub struct ITfFnAdviseText_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfFnBalloon(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfFnBalloon {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfFnBalloon {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn UpdateBalloon(&self, style: TfLBBalloonStyle, pch: &[u16]) -> ::windows::core::Result<()> {
@@ -6304,11 +6313,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfFn
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfFnBalloon {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfFnBalloon {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6333,6 +6337,11 @@ pub struct ITfFnBalloon_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfFnConfigure(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfFnConfigure {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfFnConfigure {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -6386,11 +6395,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITfFunction> for &'a ITfFnConfigure {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfFnConfigure {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfFnConfigure {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6418,6 +6422,11 @@ pub struct ITfFnConfigure_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfFnConfigureRegisterEudc(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfFnConfigureRegisterEudc {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfFnConfigureRegisterEudc {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -6471,11 +6480,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITfFunction> for &'a ITfFnConfigureRegis
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfFnConfigureRegisterEudc {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfFnConfigureRegisterEudc {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6503,6 +6507,11 @@ pub struct ITfFnConfigureRegisterEudc_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfFnConfigureRegisterWord(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfFnConfigureRegisterWord {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfFnConfigureRegisterWord {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -6556,11 +6565,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITfFunction> for &'a ITfFnConfigureRegis
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfFnConfigureRegisterWord {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfFnConfigureRegisterWord {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6588,6 +6592,11 @@ pub struct ITfFnConfigureRegisterWord_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfFnCustomSpeechCommand(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfFnCustomSpeechCommand {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfFnCustomSpeechCommand {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -6640,11 +6649,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITfFunction> for &'a ITfFnCustomSpeechCo
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfFnCustomSpeechCommand {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfFnCustomSpeechCommand {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6669,6 +6673,11 @@ pub struct ITfFnCustomSpeechCommand_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfFnGetLinguisticAlternates(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfFnGetLinguisticAlternates {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfFnGetLinguisticAlternates {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -6722,11 +6731,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITfFunction> for &'a ITfFnGetLinguisticA
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfFnGetLinguisticAlternates {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfFnGetLinguisticAlternates {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6751,6 +6755,11 @@ pub struct ITfFnGetLinguisticAlternates_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfFnGetPreferredTouchKeyboardLayout(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfFnGetPreferredTouchKeyboardLayout {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfFnGetPreferredTouchKeyboardLayout {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -6803,11 +6812,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITfFunction> for &'a ITfFnGetPreferredTo
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfFnGetPreferredTouchKeyboardLayout {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfFnGetPreferredTouchKeyboardLayout {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6832,6 +6836,11 @@ pub struct ITfFnGetPreferredTouchKeyboardLayout_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfFnGetSAPIObject(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfFnGetSAPIObject {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfFnGetSAPIObject {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -6885,11 +6894,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITfFunction> for &'a ITfFnGetSAPIObject 
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfFnGetSAPIObject {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfFnGetSAPIObject {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6914,6 +6918,11 @@ pub struct ITfFnGetSAPIObject_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfFnLMInternal(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfFnLMInternal {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfFnLMInternal {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -7021,11 +7030,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITfFnLMProcessor> for &'a ITfFnLMInterna
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfFnLMInternal {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfFnLMInternal {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7050,6 +7054,11 @@ pub struct ITfFnLMInternal_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfFnLMProcessor(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfFnLMProcessor {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfFnLMProcessor {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -7133,11 +7142,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITfFunction> for &'a ITfFnLMProcessor {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfFnLMProcessor {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfFnLMProcessor {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7180,6 +7184,11 @@ pub struct ITfFnLMProcessor_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfFnLangProfileUtil(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfFnLangProfileUtil {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfFnLangProfileUtil {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -7238,11 +7247,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITfFunction> for &'a ITfFnLangProfileUti
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfFnLangProfileUtil {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfFnLangProfileUtil {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7271,6 +7275,11 @@ pub struct ITfFnLangProfileUtil_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfFnPlayBack(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfFnPlayBack {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfFnPlayBack {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -7328,11 +7337,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITfFunction> for &'a ITfFnPlayBack {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfFnPlayBack {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfFnPlayBack {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7361,6 +7365,11 @@ pub struct ITfFnPlayBack_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfFnPropertyUIStatus(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfFnPropertyUIStatus {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfFnPropertyUIStatus {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -7418,11 +7427,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITfFunction> for &'a ITfFnPropertyUIStat
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfFnPropertyUIStatus {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfFnPropertyUIStatus {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7448,6 +7452,11 @@ pub struct ITfFnPropertyUIStatus_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfFnReconversion(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfFnReconversion {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfFnReconversion {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -7510,11 +7519,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITfFunction> for &'a ITfFnReconversion {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfFnReconversion {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfFnReconversion {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7544,6 +7548,11 @@ pub struct ITfFnReconversion_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfFnSearchCandidateProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfFnSearchCandidateProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfFnSearchCandidateProvider {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -7603,11 +7612,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITfFunction> for &'a ITfFnSearchCandidat
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfFnSearchCandidateProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfFnSearchCandidateProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7639,6 +7643,11 @@ pub struct ITfFnSearchCandidateProvider_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfFnShowHelp(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfFnShowHelp {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfFnShowHelp {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -7692,11 +7701,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITfFunction> for &'a ITfFnShowHelp {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfFnShowHelp {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfFnShowHelp {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7724,6 +7728,11 @@ pub struct ITfFnShowHelp_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfFunction(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfFunction {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfFunction {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -7750,11 +7759,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for ITfFuncti
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfFunction {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for ITfFunction {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for ITfFunction {
@@ -7784,6 +7788,11 @@ pub struct ITfFunction_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfFunctionProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfFunctionProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfFunctionProvider {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn GetType(&self) -> ::windows::core::Result<::windows::core::GUID> {
@@ -7822,11 +7831,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfFu
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfFunctionProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfFunctionProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7856,6 +7860,11 @@ pub struct ITfFunctionProvider_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfInputProcessorProfileActivationSink(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfInputProcessorProfileActivationSink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfInputProcessorProfileActivationSink {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn OnActivated<'a, Param5: ::windows::core::IntoParam<'a, HKL>>(&self, dwprofiletype: u32, langid: u16, clsid: *const ::windows::core::GUID, catid: *const ::windows::core::GUID, guidprofile: *const ::windows::core::GUID, hkl: Param5, dwflags: u32) -> ::windows::core::Result<()> {
@@ -7882,11 +7891,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfIn
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfInputProcessorProfileActivationSink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfInputProcessorProfileActivationSink {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7911,6 +7915,11 @@ pub struct ITfInputProcessorProfileActivationSink_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfInputProcessorProfileMgr(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfInputProcessorProfileMgr {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfInputProcessorProfileMgr {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn ActivateProfile<'a, Param4: ::windows::core::IntoParam<'a, HKL>>(&self, dwprofiletype: u32, langid: u16, clsid: *const ::windows::core::GUID, guidprofile: *const ::windows::core::GUID, hkl: Param4, dwflags: u32) -> ::windows::core::Result<()> {
@@ -7984,11 +7993,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfIn
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfInputProcessorProfileMgr {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfInputProcessorProfileMgr {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8023,6 +8027,11 @@ pub struct ITfInputProcessorProfileMgr_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfInputProcessorProfileSubstituteLayout(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfInputProcessorProfileSubstituteLayout {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfInputProcessorProfileSubstituteLayout {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn GetSubstituteKeyboardLayout(&self, rclsid: *const ::windows::core::GUID, langid: u16, guidprofile: *const ::windows::core::GUID) -> ::windows::core::Result<HKL> {
@@ -8050,11 +8059,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfIn
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfInputProcessorProfileSubstituteLayout {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfInputProcessorProfileSubstituteLayout {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8079,6 +8083,11 @@ pub struct ITfInputProcessorProfileSubstituteLayout_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfInputProcessorProfiles(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfInputProcessorProfiles {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfInputProcessorProfiles {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn Register(&self, rclsid: *const ::windows::core::GUID) -> ::windows::core::Result<()> {
@@ -8183,11 +8192,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfIn
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfInputProcessorProfiles {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfInputProcessorProfiles {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8244,6 +8248,11 @@ pub struct ITfInputProcessorProfiles_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfInputProcessorProfilesEx(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfInputProcessorProfilesEx {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfInputProcessorProfilesEx {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn Register(&self, rclsid: *const ::windows::core::GUID) -> ::windows::core::Result<()> {
@@ -8372,11 +8381,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITfInputProcessorProfiles> for &'a ITfIn
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfInputProcessorProfilesEx {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfInputProcessorProfilesEx {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8401,6 +8405,11 @@ pub struct ITfInputProcessorProfilesEx_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfInputScope(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfInputScope {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfInputScope {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn GetInputScopes(&self, pprginputscopes: *mut *mut InputScope, pccount: *mut u32) -> ::windows::core::Result<()> {
@@ -8450,11 +8459,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfIn
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfInputScope {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfInputScope {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8495,6 +8499,11 @@ pub struct ITfInputScope_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfInputScope2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfInputScope2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfInputScope2 {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn GetInputScopes(&self, pprginputscopes: *mut *mut InputScope, pccount: *mut u32) -> ::windows::core::Result<()> {
@@ -8570,11 +8579,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITfInputScope> for &'a ITfInputScope2 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfInputScope2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfInputScope2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8602,6 +8606,11 @@ pub struct ITfInputScope2_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfInsertAtSelection(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfInsertAtSelection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfInsertAtSelection {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn InsertTextAtSelection(&self, ec: u32, dwflags: INSERT_TEXT_AT_SELECTION_FLAGS, pchtext: &[u16]) -> ::windows::core::Result<ITfRange> {
@@ -8635,11 +8644,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfIn
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfInsertAtSelection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfInsertAtSelection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8668,6 +8672,11 @@ pub struct ITfInsertAtSelection_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfIntegratableCandidateListUIElement(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfIntegratableCandidateListUIElement {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfIntegratableCandidateListUIElement {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn SetIntegrationStyle<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::GUID>>(&self, guidintegrationstyle: Param0) -> ::windows::core::Result<()> {
@@ -8715,11 +8724,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfIn
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfIntegratableCandidateListUIElement {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfIntegratableCandidateListUIElement {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8754,6 +8758,11 @@ pub struct ITfIntegratableCandidateListUIElement_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfKeyEventSink(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfKeyEventSink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfKeyEventSink {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -8811,11 +8820,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfKe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfKeyEventSink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfKeyEventSink {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8863,6 +8867,11 @@ pub struct ITfKeyEventSink_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfKeyTraceEventSink(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfKeyTraceEventSink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfKeyTraceEventSink {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -8893,11 +8902,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for ITfKeyTra
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfKeyTraceEventSink {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for ITfKeyTraceEventSink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for ITfKeyTraceEventSink {
@@ -8931,6 +8935,11 @@ pub struct ITfKeyTraceEventSink_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfKeystrokeMgr(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfKeystrokeMgr {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfKeystrokeMgr {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -9026,11 +9035,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfKe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfKeystrokeMgr {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfKeystrokeMgr {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9092,6 +9096,11 @@ pub struct ITfKeystrokeMgr_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfLMLattice(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfLMLattice {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfLMLattice {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -9125,11 +9134,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfLM
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfLMLattice {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfLMLattice {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9158,6 +9162,11 @@ pub struct ITfLMLattice_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfLangBarEventSink(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfLangBarEventSink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfLangBarEventSink {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn OnSetFocus(&self, dwthreadid: u32) -> ::windows::core::Result<()> {
@@ -9207,11 +9216,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfLa
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfLangBarEventSink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfLangBarEventSink {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9247,6 +9251,11 @@ pub struct ITfLangBarEventSink_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfLangBarItem(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfLangBarItem {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfLangBarItem {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn GetInfo(&self) -> ::windows::core::Result<TF_LANGBARITEMINFO> {
@@ -9290,11 +9299,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfLa
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfLangBarItem {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfLangBarItem {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9328,6 +9332,11 @@ pub struct ITfLangBarItem_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfLangBarItemBalloon(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfLangBarItemBalloon {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfLangBarItemBalloon {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn GetInfo(&self) -> ::windows::core::Result<TF_LANGBARITEMINFO> {
@@ -9408,11 +9417,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITfLangBarItem> for &'a ITfLangBarItemBa
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfLangBarItemBalloon {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfLangBarItemBalloon {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9448,6 +9452,11 @@ pub struct ITfLangBarItemBalloon_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfLangBarItemBitmap(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfLangBarItemBitmap {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfLangBarItemBitmap {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn GetInfo(&self) -> ::windows::core::Result<TF_LANGBARITEMINFO> {
@@ -9527,11 +9536,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITfLangBarItem> for &'a ITfLangBarItemBi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfLangBarItemBitmap {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfLangBarItemBitmap {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9567,6 +9571,11 @@ pub struct ITfLangBarItemBitmap_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfLangBarItemBitmapButton(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfLangBarItemBitmapButton {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfLangBarItemBitmapButton {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn GetInfo(&self) -> ::windows::core::Result<TF_LANGBARITEMINFO> {
@@ -9660,11 +9669,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITfLangBarItem> for &'a ITfLangBarItemBi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfLangBarItemBitmapButton {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfLangBarItemBitmapButton {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9706,6 +9710,11 @@ pub struct ITfLangBarItemBitmapButton_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfLangBarItemButton(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfLangBarItemButton {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfLangBarItemButton {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn GetInfo(&self) -> ::windows::core::Result<TF_LANGBARITEMINFO> {
@@ -9794,11 +9803,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITfLangBarItem> for &'a ITfLangBarItemBu
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfLangBarItemButton {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfLangBarItemButton {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9836,6 +9840,11 @@ pub struct ITfLangBarItemButton_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfLangBarItemMgr(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfLangBarItemMgr {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfLangBarItemMgr {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn EnumItems(&self) -> ::windows::core::Result<IEnumTfLangBarItems> {
@@ -9911,11 +9920,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfLa
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfLangBarItemMgr {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfLangBarItemMgr {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9954,6 +9958,11 @@ pub struct ITfLangBarItemMgr_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfLangBarItemSink(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfLangBarItemSink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfLangBarItemSink {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn OnUpdate(&self, dwflags: u32) -> ::windows::core::Result<()> {
@@ -9980,11 +9989,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfLa
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfLangBarItemSink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfLangBarItemSink {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10009,6 +10013,11 @@ pub struct ITfLangBarItemSink_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfLangBarMgr(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfLangBarMgr {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfLangBarMgr {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -10071,11 +10080,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfLa
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfLangBarMgr {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfLangBarMgr {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10114,6 +10118,11 @@ pub struct ITfLangBarMgr_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfLanguageProfileNotifySink(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfLanguageProfileNotifySink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfLanguageProfileNotifySink {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -10146,11 +10155,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfLa
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfLanguageProfileNotifySink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfLanguageProfileNotifySink {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10179,6 +10183,11 @@ pub struct ITfLanguageProfileNotifySink_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfMSAAControl(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfMSAAControl {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfMSAAControl {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn SystemEnableMSAA(&self) -> ::windows::core::Result<()> {
@@ -10209,11 +10218,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfMS
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfMSAAControl {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfMSAAControl {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10239,6 +10243,11 @@ pub struct ITfMSAAControl_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfMenu(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfMenu {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfMenu {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`, `\"Win32_Graphics_Gdi\"`*"]
     #[cfg(feature = "Win32_Graphics_Gdi")]
@@ -10264,11 +10273,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for ITfMenu {
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfMenu {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for ITfMenu {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for ITfMenu {
@@ -10298,6 +10302,11 @@ pub struct ITfMenu_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfMessagePump(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfMessagePump {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfMessagePump {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`, `\"Win32_Foundation\"`, `\"Win32_UI_WindowsAndMessaging\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_UI_WindowsAndMessaging"))]
@@ -10340,11 +10349,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfMe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfMessagePump {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfMessagePump {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10384,6 +10388,11 @@ pub struct ITfMessagePump_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfMouseSink(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfMouseSink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfMouseSink {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -10410,11 +10419,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for ITfMouseS
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfMouseSink {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for ITfMouseSink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for ITfMouseSink {
@@ -10444,6 +10448,11 @@ pub struct ITfMouseSink_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfMouseTracker(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfMouseTracker {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfMouseTracker {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn AdviseMouseSink<'a, Param0: ::windows::core::IntoParam<'a, ITfRange>, Param1: ::windows::core::IntoParam<'a, ITfMouseSink>>(&self, range: Param0, psink: Param1) -> ::windows::core::Result<u32> {
@@ -10475,11 +10484,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfMo
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfMouseTracker {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfMouseTracker {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10505,6 +10509,11 @@ pub struct ITfMouseTracker_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfMouseTrackerACP(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfMouseTrackerACP {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfMouseTrackerACP {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn AdviseMouseSink<'a, Param0: ::windows::core::IntoParam<'a, ITfRangeACP>, Param1: ::windows::core::IntoParam<'a, ITfMouseSink>>(&self, range: Param0, psink: Param1) -> ::windows::core::Result<u32> {
@@ -10536,11 +10545,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfMo
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfMouseTrackerACP {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfMouseTrackerACP {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10566,6 +10570,11 @@ pub struct ITfMouseTrackerACP_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfPersistentPropertyLoaderACP(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfPersistentPropertyLoaderACP {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfPersistentPropertyLoaderACP {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -10592,11 +10601,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for ITfPersis
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfPersistentPropertyLoaderACP {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for ITfPersistentPropertyLoaderACP {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for ITfPersistentPropertyLoaderACP {
@@ -10626,6 +10630,11 @@ pub struct ITfPersistentPropertyLoaderACP_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfPreservedKeyNotifySink(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfPreservedKeyNotifySink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfPreservedKeyNotifySink {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn OnUpdated(&self, pprekey: *const TF_PRESERVEDKEY) -> ::windows::core::Result<()> {
@@ -10652,11 +10661,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfPr
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfPreservedKeyNotifySink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfPreservedKeyNotifySink {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10681,6 +10685,11 @@ pub struct ITfPreservedKeyNotifySink_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfProperty(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfProperty {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfProperty {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn GetType(&self) -> ::windows::core::Result<::windows::core::GUID> {
@@ -10760,11 +10769,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITfReadOnlyProperty> for &'a ITfProperty
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfProperty {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfProperty {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10795,6 +10799,11 @@ pub struct ITfProperty_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfPropertyStore(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfPropertyStore {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfPropertyStore {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn GetType(&self) -> ::windows::core::Result<::windows::core::GUID> {
@@ -10866,11 +10875,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfPr
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfPropertyStore {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfPropertyStore {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10915,6 +10919,11 @@ pub struct ITfPropertyStore_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfQueryEmbedded(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfQueryEmbedded {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfQueryEmbedded {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com"))]
@@ -10941,11 +10950,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for ITfQueryE
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfQueryEmbedded {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for ITfQueryEmbedded {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for ITfQueryEmbedded {
@@ -10975,6 +10979,11 @@ pub struct ITfQueryEmbedded_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfRange(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfRange {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfRange {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn GetText(&self, ec: u32, dwflags: u32, pchtext: &mut [u16], pcch: *mut u32) -> ::windows::core::Result<()> {
@@ -11105,11 +11114,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfRa
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfRange {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfRange {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11179,6 +11183,11 @@ pub struct ITfRange_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfRangeACP(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfRangeACP {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfRangeACP {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn GetText(&self, ec: u32, dwflags: u32, pchtext: &mut [u16], pcch: *mut u32) -> ::windows::core::Result<()> {
@@ -11337,11 +11346,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITfRange> for &'a ITfRangeACP {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfRangeACP {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfRangeACP {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11367,6 +11371,11 @@ pub struct ITfRangeACP_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfRangeBackup(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfRangeBackup {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfRangeBackup {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn Restore<'a, Param1: ::windows::core::IntoParam<'a, ITfRange>>(&self, ec: u32, prange: Param1) -> ::windows::core::Result<()> {
@@ -11393,11 +11402,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfRa
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfRangeBackup {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfRangeBackup {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11422,6 +11426,11 @@ pub struct ITfRangeBackup_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfReadOnlyProperty(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfReadOnlyProperty {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfReadOnlyProperty {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn GetType(&self) -> ::windows::core::Result<::windows::core::GUID> {
@@ -11464,11 +11473,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfRe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfReadOnlyProperty {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfReadOnlyProperty {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11499,6 +11503,11 @@ pub struct ITfReadOnlyProperty_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfReadingInformationUIElement(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfReadingInformationUIElement {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfReadingInformationUIElement {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -11595,11 +11604,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITfUIElement> for &'a ITfReadingInformat
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfReadingInformationUIElement {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfReadingInformationUIElement {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11635,6 +11639,11 @@ pub struct ITfReadingInformationUIElement_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfReverseConversion(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfReverseConversion {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfReverseConversion {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn DoReverseConversion<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, lpstr: Param0) -> ::windows::core::Result<ITfReverseConversionList> {
@@ -11662,11 +11671,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfRe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfReverseConversion {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfReverseConversion {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11691,6 +11695,11 @@ pub struct ITfReverseConversion_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfReverseConversionList(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfReverseConversionList {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfReverseConversionList {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn GetLength(&self) -> ::windows::core::Result<u32> {
@@ -11724,11 +11733,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfRe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfReverseConversionList {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfReverseConversionList {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11757,6 +11761,11 @@ pub struct ITfReverseConversionList_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfReverseConversionMgr(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfReverseConversionMgr {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfReverseConversionMgr {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn GetReverseConversion(&self, langid: u16, guidprofile: *const ::windows::core::GUID, dwflag: u32) -> ::windows::core::Result<ITfReverseConversion> {
@@ -11784,11 +11793,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfRe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfReverseConversionMgr {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfReverseConversionMgr {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11813,6 +11817,11 @@ pub struct ITfReverseConversionMgr_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfSource(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfSource {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfSource {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn AdviseSink<'a, Param1: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, riid: *const ::windows::core::GUID, punk: Param1) -> ::windows::core::Result<u32> {
@@ -11844,11 +11853,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfSo
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfSource {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfSource {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11874,6 +11878,11 @@ pub struct ITfSource_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfSourceSingle(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfSourceSingle {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfSourceSingle {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn AdviseSingleSink<'a, Param2: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, tid: u32, riid: *const ::windows::core::GUID, punk: Param2) -> ::windows::core::Result<()> {
@@ -11904,11 +11913,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfSo
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfSourceSingle {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfSourceSingle {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11934,6 +11938,11 @@ pub struct ITfSourceSingle_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfSpeechUIServer(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfSpeechUIServer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfSpeechUIServer {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn Initialize(&self) -> ::windows::core::Result<()> {
@@ -11969,11 +11978,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfSp
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfSpeechUIServer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfSpeechUIServer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12003,6 +12007,11 @@ pub struct ITfSpeechUIServer_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfStatusSink(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfStatusSink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfStatusSink {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn OnStatusChange<'a, Param0: ::windows::core::IntoParam<'a, ITfContext>>(&self, pic: Param0, dwflags: u32) -> ::windows::core::Result<()> {
@@ -12029,11 +12038,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfSt
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfStatusSink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfStatusSink {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12058,6 +12062,11 @@ pub struct ITfStatusSink_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfSystemDeviceTypeLangBarItem(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfSystemDeviceTypeLangBarItem {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfSystemDeviceTypeLangBarItem {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn SetIconMode(&self, dwflags: LANG_BAR_ITEM_ICON_MODE_FLAGS) -> ::windows::core::Result<()> {
@@ -12089,11 +12098,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfSy
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfSystemDeviceTypeLangBarItem {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfSystemDeviceTypeLangBarItem {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12119,6 +12123,11 @@ pub struct ITfSystemDeviceTypeLangBarItem_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfSystemLangBarItem(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfSystemLangBarItem {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfSystemLangBarItem {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`, `\"Win32_UI_WindowsAndMessaging\"`*"]
     #[cfg(feature = "Win32_UI_WindowsAndMessaging")]
@@ -12150,11 +12159,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfSy
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfSystemLangBarItem {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfSystemLangBarItem {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12183,6 +12187,11 @@ pub struct ITfSystemLangBarItem_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfSystemLangBarItemSink(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfSystemLangBarItemSink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfSystemLangBarItemSink {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn InitMenu<'a, Param0: ::windows::core::IntoParam<'a, ITfMenu>>(&self, pmenu: Param0) -> ::windows::core::Result<()> {
@@ -12213,11 +12222,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfSy
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfSystemLangBarItemSink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfSystemLangBarItemSink {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12243,6 +12247,11 @@ pub struct ITfSystemLangBarItemSink_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfSystemLangBarItemText(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfSystemLangBarItemText {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfSystemLangBarItemText {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn SetItemText(&self, pch: &[u16]) -> ::windows::core::Result<()> {
@@ -12275,11 +12284,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfSy
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfSystemLangBarItemText {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfSystemLangBarItemText {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12308,6 +12312,11 @@ pub struct ITfSystemLangBarItemText_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfTextEditSink(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfTextEditSink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfTextEditSink {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn OnEndEdit<'a, Param0: ::windows::core::IntoParam<'a, ITfContext>, Param2: ::windows::core::IntoParam<'a, ITfEditRecord>>(&self, pic: Param0, ecreadonly: u32, peditrecord: Param2) -> ::windows::core::Result<()> {
@@ -12334,11 +12343,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfTe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfTextEditSink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfTextEditSink {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12363,6 +12367,11 @@ pub struct ITfTextEditSink_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfTextInputProcessor(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfTextInputProcessor {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfTextInputProcessor {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn Activate<'a, Param0: ::windows::core::IntoParam<'a, ITfThreadMgr>>(&self, ptim: Param0, tid: u32) -> ::windows::core::Result<()> {
@@ -12393,11 +12402,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfTe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfTextInputProcessor {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfTextInputProcessor {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12423,6 +12427,11 @@ pub struct ITfTextInputProcessor_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfTextInputProcessorEx(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfTextInputProcessorEx {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfTextInputProcessorEx {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn Activate<'a, Param0: ::windows::core::IntoParam<'a, ITfThreadMgr>>(&self, ptim: Param0, tid: u32) -> ::windows::core::Result<()> {
@@ -12477,11 +12486,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITfTextInputProcessor> for &'a ITfTextIn
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfTextInputProcessorEx {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfTextInputProcessorEx {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12506,6 +12510,11 @@ pub struct ITfTextInputProcessorEx_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfTextLayoutSink(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfTextLayoutSink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfTextLayoutSink {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn OnLayoutChange<'a, Param0: ::windows::core::IntoParam<'a, ITfContext>, Param2: ::windows::core::IntoParam<'a, ITfContextView>>(&self, pic: Param0, lcode: TfLayoutCode, pview: Param2) -> ::windows::core::Result<()> {
@@ -12532,11 +12541,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfTe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfTextLayoutSink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfTextLayoutSink {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12561,6 +12565,11 @@ pub struct ITfTextLayoutSink_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfThreadFocusSink(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfThreadFocusSink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfThreadFocusSink {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn OnSetThreadFocus(&self) -> ::windows::core::Result<()> {
@@ -12591,11 +12600,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfTh
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfThreadFocusSink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfThreadFocusSink {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12621,6 +12625,11 @@ pub struct ITfThreadFocusSink_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfThreadMgr(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfThreadMgr {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfThreadMgr {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn Activate(&self) -> ::windows::core::Result<u32> {
@@ -12698,11 +12707,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfTh
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfThreadMgr {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfThreadMgr {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12743,6 +12747,11 @@ pub struct ITfThreadMgr_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfThreadMgr2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfThreadMgr2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfThreadMgr2 {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn Activate(&self) -> ::windows::core::Result<u32> {
@@ -12831,11 +12840,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfTh
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfThreadMgr2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfThreadMgr2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12876,6 +12880,11 @@ pub struct ITfThreadMgr2_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfThreadMgrEventSink(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfThreadMgrEventSink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfThreadMgrEventSink {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn OnInitDocumentMgr<'a, Param0: ::windows::core::IntoParam<'a, ITfDocumentMgr>>(&self, pdim: Param0) -> ::windows::core::Result<()> {
@@ -12918,11 +12927,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfTh
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfThreadMgrEventSink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfThreadMgrEventSink {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12951,6 +12955,11 @@ pub struct ITfThreadMgrEventSink_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfThreadMgrEx(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfThreadMgrEx {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfThreadMgrEx {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn Activate(&self) -> ::windows::core::Result<u32> {
@@ -13057,11 +13066,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITfThreadMgr> for &'a ITfThreadMgrEx {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfThreadMgrEx {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfThreadMgrEx {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13087,6 +13091,11 @@ pub struct ITfThreadMgrEx_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfToolTipUIElement(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfToolTipUIElement {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfToolTipUIElement {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -13157,11 +13166,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITfUIElement> for &'a ITfToolTipUIElemen
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfToolTipUIElement {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfToolTipUIElement {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13189,6 +13193,11 @@ pub struct ITfToolTipUIElement_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfTransitoryExtensionSink(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfTransitoryExtensionSink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfTransitoryExtensionSink {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -13215,11 +13224,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for ITfTransi
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfTransitoryExtensionSink {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for ITfTransitoryExtensionSink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for ITfTransitoryExtensionSink {
@@ -13249,6 +13253,11 @@ pub struct ITfTransitoryExtensionSink_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfTransitoryExtensionUIElement(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfTransitoryExtensionUIElement {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfTransitoryExtensionUIElement {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -13318,11 +13327,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITfUIElement> for &'a ITfTransitoryExten
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfTransitoryExtensionUIElement {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfTransitoryExtensionUIElement {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13347,6 +13351,11 @@ pub struct ITfTransitoryExtensionUIElement_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfUIElement(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfUIElement {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfUIElement {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -13391,11 +13400,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfUI
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfUIElement {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfUIElement {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13432,6 +13436,11 @@ pub struct ITfUIElement_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfUIElementMgr(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfUIElementMgr {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfUIElementMgr {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -13477,11 +13486,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfUI
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfUIElementMgr {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfUIElementMgr {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13513,6 +13517,11 @@ pub struct ITfUIElementMgr_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct ITfUIElementSink(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITfUIElementSink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITfUIElementSink {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -13548,11 +13557,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITfUI
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITfUIElementSink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITfUIElementSink {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13582,6 +13586,11 @@ pub struct ITfUIElementSink_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct IUIManagerEventSink(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUIManagerEventSink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUIManagerEventSink {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -13632,11 +13641,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUIMa
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUIManagerEventSink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUIManagerEventSink {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13678,6 +13682,11 @@ pub struct IUIManagerEventSink_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
 #[repr(transparent)]
 pub struct IVersionInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVersionInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IVersionInfo {
     #[doc = "*Required features: `\"Win32_UI_TextServices\"`*"]
     pub unsafe fn GetSubcomponentCount(&self, ulsub: u32) -> ::windows::core::Result<u32> {
@@ -13724,11 +13733,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IVersionI
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IVersionInfo {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IVersionInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IVersionInfo {
@@ -13941,6 +13945,7 @@ impl ::core::default::Default for InputScope {
 }
 unsafe impl ::windows::core::Abi for InputScope {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for InputScope {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13968,6 +13973,7 @@ impl ::core::default::Default for LANG_BAR_ITEM_ICON_MODE_FLAGS {
 }
 unsafe impl ::windows::core::Abi for LANG_BAR_ITEM_ICON_MODE_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for LANG_BAR_ITEM_ICON_MODE_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13997,6 +14003,7 @@ impl ::core::default::Default for TEXT_STORE_CHANGE_FLAGS {
 }
 unsafe impl ::windows::core::Abi for TEXT_STORE_CHANGE_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TEXT_STORE_CHANGE_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14052,6 +14059,7 @@ impl ::core::default::Default for TEXT_STORE_LOCK_FLAGS {
 }
 unsafe impl ::windows::core::Abi for TEXT_STORE_LOCK_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TEXT_STORE_LOCK_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14079,6 +14087,7 @@ impl ::core::default::Default for TEXT_STORE_TEXT_CHANGE_FLAGS {
 }
 unsafe impl ::windows::core::Abi for TEXT_STORE_TEXT_CHANGE_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TEXT_STORE_TEXT_CHANGE_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14158,6 +14167,7 @@ impl ::core::default::Default for TF_CONTEXT_EDIT_CONTEXT_FLAGS {
 }
 unsafe impl ::windows::core::Abi for TF_CONTEXT_EDIT_CONTEXT_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TF_CONTEXT_EDIT_CONTEXT_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14245,6 +14255,7 @@ impl ::core::default::Default for TF_DA_ATTR_INFO {
 }
 unsafe impl ::windows::core::Abi for TF_DA_ATTR_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TF_DA_ATTR_INFO {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14265,6 +14276,7 @@ impl ::core::clone::Clone for TF_DA_COLOR {
 }
 unsafe impl ::windows::core::Abi for TF_DA_COLOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TF_DA_COLOR {
     fn eq(&self, other: &Self) -> bool {
@@ -14291,6 +14303,7 @@ impl ::core::clone::Clone for TF_DA_COLOR_0 {
 }
 unsafe impl ::windows::core::Abi for TF_DA_COLOR_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TF_DA_COLOR_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -14326,6 +14339,7 @@ impl ::core::default::Default for TF_DA_COLORTYPE {
 }
 unsafe impl ::windows::core::Abi for TF_DA_COLORTYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TF_DA_COLORTYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14359,6 +14373,7 @@ impl ::core::default::Default for TF_DA_LINESTYLE {
 }
 unsafe impl ::windows::core::Abi for TF_DA_LINESTYLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TF_DA_LINESTYLE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14399,6 +14414,7 @@ impl ::core::clone::Clone for TF_DISPLAYATTRIBUTE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for TF_DISPLAYATTRIBUTE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for TF_DISPLAYATTRIBUTE {
@@ -14485,6 +14501,7 @@ impl ::core::fmt::Debug for TF_HALTCOND {
 }
 unsafe impl ::windows::core::Abi for TF_HALTCOND {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TF_HALTCOND {
     fn eq(&self, other: &Self) -> bool {
@@ -14527,6 +14544,7 @@ impl ::core::fmt::Debug for TF_INPUTPROCESSORPROFILE {
 }
 unsafe impl ::windows::core::Abi for TF_INPUTPROCESSORPROFILE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TF_INPUTPROCESSORPROFILE {
     fn eq(&self, other: &Self) -> bool {
@@ -14599,6 +14617,7 @@ impl ::core::fmt::Debug for TF_LANGBARITEMINFO {
 }
 unsafe impl ::windows::core::Abi for TF_LANGBARITEMINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TF_LANGBARITEMINFO {
     fn eq(&self, other: &Self) -> bool {
@@ -14638,6 +14657,7 @@ impl ::core::fmt::Debug for TF_LANGUAGEPROFILE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for TF_LANGUAGEPROFILE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for TF_LANGUAGEPROFILE {
@@ -14675,6 +14695,7 @@ impl ::core::fmt::Debug for TF_LBBALLOONINFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for TF_LBBALLOONINFO {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for TF_LBBALLOONINFO {
@@ -14761,6 +14782,7 @@ impl ::core::clone::Clone for TF_LMLATTELEMENT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for TF_LMLATTELEMENT {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for TF_LMLATTELEMENT {
@@ -14793,6 +14815,7 @@ impl ::core::clone::Clone for TF_LMLATTELEMENT_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for TF_LMLATTELEMENT_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for TF_LMLATTELEMENT_0 {
@@ -14855,6 +14878,7 @@ impl ::core::fmt::Debug for TF_PERSISTENT_PROPERTY_HEADER_ACP {
 }
 unsafe impl ::windows::core::Abi for TF_PERSISTENT_PROPERTY_HEADER_ACP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TF_PERSISTENT_PROPERTY_HEADER_ACP {
     fn eq(&self, other: &Self) -> bool {
@@ -14888,6 +14912,7 @@ impl ::core::fmt::Debug for TF_PRESERVEDKEY {
 }
 unsafe impl ::windows::core::Abi for TF_PRESERVEDKEY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TF_PRESERVEDKEY {
     fn eq(&self, other: &Self) -> bool {
@@ -14936,6 +14961,7 @@ impl ::core::clone::Clone for TF_PROPERTYVAL {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com", feature = "Win32_System_Ole"))]
 unsafe impl ::windows::core::Abi for TF_PROPERTYVAL {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com", feature = "Win32_System_Ole"))]
 impl ::core::cmp::PartialEq for TF_PROPERTYVAL {
@@ -15007,6 +15033,7 @@ impl ::core::fmt::Debug for TF_SELECTION {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for TF_SELECTION {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for TF_SELECTION {
@@ -15046,6 +15073,7 @@ impl ::core::fmt::Debug for TF_SELECTIONSTYLE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for TF_SELECTIONSTYLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for TF_SELECTIONSTYLE {
@@ -15204,6 +15232,7 @@ impl ::core::default::Default for TKBLayoutType {
 }
 unsafe impl ::windows::core::Abi for TKBLayoutType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TKBLayoutType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -15329,6 +15358,7 @@ impl ::core::clone::Clone for TS_ATTRVAL {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com", feature = "Win32_System_Ole"))]
 unsafe impl ::windows::core::Abi for TS_ATTRVAL {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com", feature = "Win32_System_Ole"))]
 impl ::core::cmp::PartialEq for TS_ATTRVAL {
@@ -15417,6 +15447,7 @@ impl ::core::fmt::Debug for TS_RUNINFO {
 }
 unsafe impl ::windows::core::Abi for TS_RUNINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TS_RUNINFO {
     fn eq(&self, other: &Self) -> bool {
@@ -15471,6 +15502,7 @@ impl ::core::fmt::Debug for TS_SELECTIONSTYLE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for TS_SELECTIONSTYLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for TS_SELECTIONSTYLE {
@@ -15511,6 +15543,7 @@ impl ::core::fmt::Debug for TS_SELECTION_ACP {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for TS_SELECTION_ACP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for TS_SELECTION_ACP {
@@ -15549,6 +15582,7 @@ impl ::core::fmt::Debug for TS_SELECTION_ANCHOR {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for TS_SELECTION_ANCHOR {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for TS_SELECTION_ANCHOR {
@@ -15605,6 +15639,7 @@ impl ::core::fmt::Debug for TS_STATUS {
 }
 unsafe impl ::windows::core::Abi for TS_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TS_STATUS {
     fn eq(&self, other: &Self) -> bool {
@@ -15645,6 +15680,7 @@ impl ::core::fmt::Debug for TS_TEXTCHANGE {
 }
 unsafe impl ::windows::core::Abi for TS_TEXTCHANGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TS_TEXTCHANGE {
     fn eq(&self, other: &Self) -> bool {
@@ -15682,6 +15718,7 @@ impl ::core::default::Default for TfActiveSelEnd {
 }
 unsafe impl ::windows::core::Abi for TfActiveSelEnd {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TfActiveSelEnd {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -15709,6 +15746,7 @@ impl ::core::default::Default for TfAnchor {
 }
 unsafe impl ::windows::core::Abi for TfAnchor {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TfAnchor {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -15738,6 +15776,7 @@ impl ::core::default::Default for TfCandidateResult {
 }
 unsafe impl ::windows::core::Abi for TfCandidateResult {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TfCandidateResult {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -15765,6 +15804,7 @@ impl ::core::default::Default for TfGravity {
 }
 unsafe impl ::windows::core::Abi for TfGravity {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TfGravity {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -15792,6 +15832,7 @@ impl ::core::default::Default for TfIntegratableCandidateListSelectionStyle {
 }
 unsafe impl ::windows::core::Abi for TfIntegratableCandidateListSelectionStyle {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TfIntegratableCandidateListSelectionStyle {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -15821,6 +15862,7 @@ impl ::core::default::Default for TfLBBalloonStyle {
 }
 unsafe impl ::windows::core::Abi for TfLBBalloonStyle {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TfLBBalloonStyle {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -15848,6 +15890,7 @@ impl ::core::default::Default for TfLBIClick {
 }
 unsafe impl ::windows::core::Abi for TfLBIClick {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TfLBIClick {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -15877,6 +15920,7 @@ impl ::core::default::Default for TfLayoutCode {
 }
 unsafe impl ::windows::core::Abi for TfLayoutCode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TfLayoutCode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -15912,6 +15956,7 @@ impl ::core::default::Default for TfSapiObject {
 }
 unsafe impl ::windows::core::Abi for TfSapiObject {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TfSapiObject {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -15939,6 +15984,7 @@ impl ::core::default::Default for TfShiftDir {
 }
 unsafe impl ::windows::core::Abi for TfShiftDir {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TfShiftDir {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -15968,6 +16014,7 @@ impl ::core::default::Default for TsActiveSelEnd {
 }
 unsafe impl ::windows::core::Abi for TsActiveSelEnd {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TsActiveSelEnd {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -15995,6 +16042,7 @@ impl ::core::default::Default for TsGravity {
 }
 unsafe impl ::windows::core::Abi for TsGravity {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TsGravity {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -16024,6 +16072,7 @@ impl ::core::default::Default for TsLayoutCode {
 }
 unsafe impl ::windows::core::Abi for TsLayoutCode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TsLayoutCode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -16053,6 +16102,7 @@ impl ::core::default::Default for TsRunType {
 }
 unsafe impl ::windows::core::Abi for TsRunType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TsRunType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -16080,6 +16130,7 @@ impl ::core::default::Default for TsShiftDir {
 }
 unsafe impl ::windows::core::Abi for TsShiftDir {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TsShiftDir {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

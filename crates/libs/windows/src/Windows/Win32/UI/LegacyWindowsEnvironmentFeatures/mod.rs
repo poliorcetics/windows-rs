@@ -22,6 +22,11 @@ pub const EVCF_USERCONSENTOBTAINED: u32 = 128u32;
 #[doc = "*Required features: `\"Win32_UI_LegacyWindowsEnvironmentFeatures\"`*"]
 #[repr(transparent)]
 pub struct IADesktopP2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IADesktopP2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IADesktopP2 {
     #[doc = "*Required features: `\"Win32_UI_LegacyWindowsEnvironmentFeatures\"`*"]
     pub unsafe fn ReReadWallpaper(&self) -> ::windows::core::Result<()> {
@@ -61,11 +66,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IADes
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IADesktopP2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IADesktopP2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -96,6 +96,11 @@ pub struct IADesktopP2_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_LegacyWindowsEnvironmentFeatures\"`*"]
 #[repr(transparent)]
 pub struct IActiveDesktopP(::windows::core::IUnknown);
+impl ::core::clone::Clone for IActiveDesktopP {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IActiveDesktopP {
     #[doc = "*Required features: `\"Win32_UI_LegacyWindowsEnvironmentFeatures\"`*"]
     pub unsafe fn SetSafeMode(&self, dwflags: u32) -> ::windows::core::Result<()> {
@@ -134,11 +139,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IActi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IActiveDesktopP {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IActiveDesktopP {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -166,6 +166,11 @@ pub struct IActiveDesktopP_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_LegacyWindowsEnvironmentFeatures\"`*"]
 #[repr(transparent)]
 pub struct IBriefcaseInitiator(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBriefcaseInitiator {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IBriefcaseInitiator {
     #[doc = "*Required features: `\"Win32_UI_LegacyWindowsEnvironmentFeatures\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -191,11 +196,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IBriefcas
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IBriefcaseInitiator {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IBriefcaseInitiator {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IBriefcaseInitiator {
@@ -225,6 +225,11 @@ pub struct IBriefcaseInitiator_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_LegacyWindowsEnvironmentFeatures\"`*"]
 #[repr(transparent)]
 pub struct IEmptyVolumeCache(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEmptyVolumeCache {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEmptyVolumeCache {
     #[doc = "*Required features: `\"Win32_UI_LegacyWindowsEnvironmentFeatures\"`, `\"Win32_System_Registry\"`*"]
     #[cfg(feature = "Win32_System_Registry")]
@@ -270,11 +275,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEmpt
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEmptyVolumeCache {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEmptyVolumeCache {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -309,6 +309,11 @@ pub struct IEmptyVolumeCache_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_LegacyWindowsEnvironmentFeatures\"`*"]
 #[repr(transparent)]
 pub struct IEmptyVolumeCache2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEmptyVolumeCache2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEmptyVolumeCache2 {
     #[doc = "*Required features: `\"Win32_UI_LegacyWindowsEnvironmentFeatures\"`, `\"Win32_System_Registry\"`*"]
     #[cfg(feature = "Win32_System_Registry")]
@@ -379,11 +384,6 @@ impl<'a> ::windows::core::IntoParam<'a, IEmptyVolumeCache> for &'a IEmptyVolumeC
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEmptyVolumeCache2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEmptyVolumeCache2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -411,6 +411,11 @@ pub struct IEmptyVolumeCache2_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_LegacyWindowsEnvironmentFeatures\"`*"]
 #[repr(transparent)]
 pub struct IEmptyVolumeCacheCallBack(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEmptyVolumeCacheCallBack {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEmptyVolumeCacheCallBack {
     #[doc = "*Required features: `\"Win32_UI_LegacyWindowsEnvironmentFeatures\"`*"]
     pub unsafe fn ScanProgress<'a, Param2: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, dwlspaceused: u64, dwflags: u32, pcwszstatus: Param2) -> ::windows::core::Result<()> {
@@ -441,11 +446,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEmpt
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEmptyVolumeCacheCallBack {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEmptyVolumeCacheCallBack {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -471,6 +471,11 @@ pub struct IEmptyVolumeCacheCallBack_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_LegacyWindowsEnvironmentFeatures\"`*"]
 #[repr(transparent)]
 pub struct IReconcilableObject(::windows::core::IUnknown);
+impl ::core::clone::Clone for IReconcilableObject {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IReconcilableObject {
     #[doc = "*Required features: `\"Win32_UI_LegacyWindowsEnvironmentFeatures\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com_StructuredStorage\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com_StructuredStorage"))]
@@ -503,11 +508,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IReco
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IReconcilableObject {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IReconcilableObject {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -536,6 +536,11 @@ pub struct IReconcilableObject_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_LegacyWindowsEnvironmentFeatures\"`*"]
 #[repr(transparent)]
 pub struct IReconcileInitiator(::windows::core::IUnknown);
+impl ::core::clone::Clone for IReconcileInitiator {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IReconcileInitiator {
     #[doc = "*Required features: `\"Win32_UI_LegacyWindowsEnvironmentFeatures\"`*"]
     pub unsafe fn SetAbortCallback<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, punkforabort: Param0) -> ::windows::core::Result<()> {
@@ -564,11 +569,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IReconcil
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IReconcileInitiator {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IReconcileInitiator {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IReconcileInitiator {
@@ -644,6 +644,7 @@ impl ::core::default::Default for _reconcilef {
 }
 unsafe impl ::windows::core::Abi for _reconcilef {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for _reconcilef {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

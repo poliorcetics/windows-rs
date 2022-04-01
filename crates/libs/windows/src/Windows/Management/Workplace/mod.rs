@@ -2,6 +2,11 @@
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMdmAllowPolicyStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMdmAllowPolicyStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMdmAllowPolicyStatics {
     type Vtable = IMdmAllowPolicyStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc39709e7_741c_41f2_a4b6_314c31502586);
@@ -18,6 +23,11 @@ pub struct IMdmAllowPolicyStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMdmPolicyStatics2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMdmPolicyStatics2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMdmPolicyStatics2 {
     type Vtable = IMdmPolicyStatics2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc99c7526_03d4_49f9_a993_43efccd265c4);
@@ -31,6 +41,11 @@ pub struct IMdmPolicyStatics2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWorkplaceSettingsStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWorkplaceSettingsStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWorkplaceSettingsStatics {
     type Vtable = IWorkplaceSettingsStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe4676ffd_2d92_4c08_bad4_f6590b54a6d3);
@@ -115,6 +130,7 @@ impl ::core::default::Default for MessagingSyncPolicy {
 }
 unsafe impl ::windows::core::Abi for MessagingSyncPolicy {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MessagingSyncPolicy {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -123,7 +139,6 @@ impl ::core::fmt::Debug for MessagingSyncPolicy {
 }
 unsafe impl ::windows::core::RuntimeType for MessagingSyncPolicy {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Management.Workplace.MessagingSyncPolicy;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }

@@ -22,6 +22,7 @@ impl ::core::default::Default for I2cBusSpeed {
 }
 unsafe impl ::windows::core::Abi for I2cBusSpeed {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for I2cBusSpeed {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -30,7 +31,6 @@ impl ::core::fmt::Debug for I2cBusSpeed {
 }
 unsafe impl ::windows::core::RuntimeType for I2cBusSpeed {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.I2c.I2cBusSpeed;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -91,11 +91,6 @@ impl I2cConnectionSettings {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for I2cConnectionSettings {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for I2cConnectionSettings {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -109,7 +104,6 @@ impl ::core::fmt::Debug for I2cConnectionSettings {
 }
 unsafe impl ::windows::core::RuntimeType for I2cConnectionSettings {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.I2c.I2cConnectionSettings;{f2db1307-ab6f-4639-a767-54536dc3460f})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -197,11 +191,6 @@ impl I2cController {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for I2cController {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for I2cController {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -215,7 +204,6 @@ impl ::core::fmt::Debug for I2cController {
 }
 unsafe impl ::windows::core::RuntimeType for I2cController {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.I2c.I2cController;{c48ab1b2-87a0-4166-8e3e-b4b8f97cd729})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -362,11 +350,6 @@ impl I2cDevice {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for I2cDevice {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for I2cDevice {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -380,7 +363,6 @@ impl ::core::fmt::Debug for I2cDevice {
 }
 unsafe impl ::windows::core::RuntimeType for I2cDevice {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.I2c.I2cDevice;{8636c136-b9c5-4f70-9449-cc46dc6f57eb})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -481,6 +463,7 @@ impl ::core::default::Default for I2cSharingMode {
 }
 unsafe impl ::windows::core::Abi for I2cSharingMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for I2cSharingMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -489,7 +472,6 @@ impl ::core::fmt::Debug for I2cSharingMode {
 }
 unsafe impl ::windows::core::RuntimeType for I2cSharingMode {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.I2c.I2cSharingMode;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -513,10 +495,10 @@ impl ::core::fmt::Debug for I2cTransferResult {
 }
 unsafe impl ::windows::core::Abi for I2cTransferResult {
     type Abi = Self;
+    type DefaultType = Self;
 }
 unsafe impl ::windows::core::RuntimeType for I2cTransferResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"struct(Windows.Devices.I2c.I2cTransferResult;enum(Windows.Devices.I2c.I2cTransferStatus;i4);u4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -556,6 +538,7 @@ impl ::core::default::Default for I2cTransferStatus {
 }
 unsafe impl ::windows::core::Abi for I2cTransferStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for I2cTransferStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -564,7 +547,6 @@ impl ::core::fmt::Debug for I2cTransferStatus {
 }
 unsafe impl ::windows::core::RuntimeType for I2cTransferStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.I2c.I2cTransferStatus;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -572,6 +554,11 @@ unsafe impl ::windows::core::RuntimeType for I2cTransferStatus {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct II2cConnectionSettings(::windows::core::IUnknown);
+impl ::core::clone::Clone for II2cConnectionSettings {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for II2cConnectionSettings {
     type Vtable = II2cConnectionSettings_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf2db1307_ab6f_4639_a767_54536dc3460f);
@@ -590,6 +577,11 @@ pub struct II2cConnectionSettings_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct II2cConnectionSettingsFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for II2cConnectionSettingsFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for II2cConnectionSettingsFactory {
     type Vtable = II2cConnectionSettingsFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x81b586b3_9693_41b1_a243_ded4f6e66926);
@@ -603,6 +595,11 @@ pub struct II2cConnectionSettingsFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct II2cController(::windows::core::IUnknown);
+impl ::core::clone::Clone for II2cController {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for II2cController {
     type Vtable = II2cController_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc48ab1b2_87a0_4166_8e3e_b4b8f97cd729);
@@ -616,6 +613,11 @@ pub struct II2cController_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct II2cControllerStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for II2cControllerStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for II2cControllerStatics {
     type Vtable = II2cControllerStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x40fc0365_5f05_4e7e_84bd_100db8e0aec5);
@@ -636,6 +638,11 @@ pub struct II2cControllerStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct II2cDevice(::windows::core::IUnknown);
+impl ::core::clone::Clone for II2cDevice {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for II2cDevice {
     type Vtable = II2cDevice_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x8636c136_b9c5_4f70_9449_cc46dc6f57eb);
@@ -656,6 +663,11 @@ pub struct II2cDevice_Vtbl {
 #[doc = "*Required features: `\"Devices_I2c\"`*"]
 #[repr(transparent)]
 pub struct II2cDeviceStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for II2cDeviceStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl II2cDeviceStatics {
     #[doc = "*Required features: `\"Devices_I2c\"`*"]
     pub fn GetDeviceSelector(&self) -> ::windows::core::Result<::windows::core::HSTRING> {
@@ -723,11 +735,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for II2cDeviceStatics {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for II2cDeviceStatics {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -741,7 +748,6 @@ impl ::core::fmt::Debug for II2cDeviceStatics {
 }
 unsafe impl ::windows::core::RuntimeType for II2cDeviceStatics {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{91a33be3-7334-4512-96bc-fbae9459f5f6}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

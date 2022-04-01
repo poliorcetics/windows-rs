@@ -2,6 +2,11 @@
 #[doc = "*Required features: `\"Win32_System_WinRT_Pdf\"`*"]
 #[repr(transparent)]
 pub struct IPdfRendererNative(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPdfRendererNative {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPdfRendererNative {
     #[doc = "*Required features: `\"Win32_System_WinRT_Pdf\"`, `\"Win32_Foundation\"`, `\"Win32_Graphics_Direct2D_Common\"`, `\"Win32_Graphics_Dxgi\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Direct2D_Common", feature = "Win32_Graphics_Dxgi"))]
@@ -32,11 +37,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IPdfRende
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPdfRendererNative {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IPdfRendererNative {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IPdfRendererNative {
@@ -94,6 +94,7 @@ impl ::core::fmt::Debug for PDF_RENDER_PARAMS {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Direct2D_Common"))]
 unsafe impl ::windows::core::Abi for PDF_RENDER_PARAMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Graphics_Direct2D_Common"))]
 impl ::core::cmp::PartialEq for PDF_RENDER_PARAMS {

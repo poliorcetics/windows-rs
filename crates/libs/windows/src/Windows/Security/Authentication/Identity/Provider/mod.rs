@@ -4,6 +4,12 @@
 #[repr(transparent)]
 pub struct ISecondaryAuthenticationFactorAuthentication(::windows::core::IUnknown);
 #[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for ISecondaryAuthenticationFactorAuthentication {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for ISecondaryAuthenticationFactorAuthentication {
     type Vtable = ISecondaryAuthenticationFactorAuthentication_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x020a16e5_6a25_40a3_8c00_50a023f619d1);
@@ -43,6 +49,12 @@ pub struct ISecondaryAuthenticationFactorAuthentication_Vtbl {
 #[repr(transparent)]
 pub struct ISecondaryAuthenticationFactorAuthenticationResult(::windows::core::IUnknown);
 #[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for ISecondaryAuthenticationFactorAuthenticationResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for ISecondaryAuthenticationFactorAuthenticationResult {
     type Vtable = ISecondaryAuthenticationFactorAuthenticationResult_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9cbb5987_ef6d_4bc2_bf49_4617515a0f9a);
@@ -66,6 +78,12 @@ pub struct ISecondaryAuthenticationFactorAuthenticationResult_Vtbl {
 #[repr(transparent)]
 pub struct ISecondaryAuthenticationFactorAuthenticationStageChangedEventArgs(::windows::core::IUnknown);
 #[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for ISecondaryAuthenticationFactorAuthenticationStageChangedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for ISecondaryAuthenticationFactorAuthenticationStageChangedEventArgs {
     type Vtable = ISecondaryAuthenticationFactorAuthenticationStageChangedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd4a5ee56_7291_4073_bc1f_ccb8f5afdf96);
@@ -84,6 +102,12 @@ pub struct ISecondaryAuthenticationFactorAuthenticationStageChangedEventArgs_Vtb
 #[cfg(feature = "deprecated")]
 #[repr(transparent)]
 pub struct ISecondaryAuthenticationFactorAuthenticationStageInfo(::windows::core::IUnknown);
+#[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for ISecondaryAuthenticationFactorAuthenticationStageInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for ISecondaryAuthenticationFactorAuthenticationStageInfo {
     type Vtable = ISecondaryAuthenticationFactorAuthenticationStageInfo_Vtbl;
@@ -111,6 +135,12 @@ pub struct ISecondaryAuthenticationFactorAuthenticationStageInfo_Vtbl {
 #[cfg(feature = "deprecated")]
 #[repr(transparent)]
 pub struct ISecondaryAuthenticationFactorAuthenticationStatics(::windows::core::IUnknown);
+#[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for ISecondaryAuthenticationFactorAuthenticationStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for ISecondaryAuthenticationFactorAuthenticationStatics {
     type Vtable = ISecondaryAuthenticationFactorAuthenticationStatics_Vtbl;
@@ -147,6 +177,12 @@ pub struct ISecondaryAuthenticationFactorAuthenticationStatics_Vtbl {
 #[repr(transparent)]
 pub struct ISecondaryAuthenticationFactorDevicePresenceMonitoringRegistrationStatics(::windows::core::IUnknown);
 #[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for ISecondaryAuthenticationFactorDevicePresenceMonitoringRegistrationStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for ISecondaryAuthenticationFactorDevicePresenceMonitoringRegistrationStatics {
     type Vtable = ISecondaryAuthenticationFactorDevicePresenceMonitoringRegistrationStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x90499a19_7ef2_4523_951c_a417a24acf93);
@@ -177,6 +213,12 @@ pub struct ISecondaryAuthenticationFactorDevicePresenceMonitoringRegistrationSta
 #[cfg(feature = "deprecated")]
 #[repr(transparent)]
 pub struct ISecondaryAuthenticationFactorInfo(::windows::core::IUnknown);
+#[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for ISecondaryAuthenticationFactorInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for ISecondaryAuthenticationFactorInfo {
     type Vtable = ISecondaryAuthenticationFactorInfo_Vtbl;
@@ -209,6 +251,12 @@ pub struct ISecondaryAuthenticationFactorInfo_Vtbl {
 #[repr(transparent)]
 pub struct ISecondaryAuthenticationFactorInfo2(::windows::core::IUnknown);
 #[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for ISecondaryAuthenticationFactorInfo2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for ISecondaryAuthenticationFactorInfo2 {
     type Vtable = ISecondaryAuthenticationFactorInfo2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x14d981a3_fc26_4ff7_abc3_48e82a512a0a);
@@ -236,6 +284,12 @@ pub struct ISecondaryAuthenticationFactorInfo2_Vtbl {
 #[repr(transparent)]
 pub struct ISecondaryAuthenticationFactorRegistration(::windows::core::IUnknown);
 #[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for ISecondaryAuthenticationFactorRegistration {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for ISecondaryAuthenticationFactorRegistration {
     type Vtable = ISecondaryAuthenticationFactorRegistration_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9f4cbbb4_8cba_48b0_840d_dbb22a54c678);
@@ -259,6 +313,12 @@ pub struct ISecondaryAuthenticationFactorRegistration_Vtbl {
 #[repr(transparent)]
 pub struct ISecondaryAuthenticationFactorRegistrationResult(::windows::core::IUnknown);
 #[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for ISecondaryAuthenticationFactorRegistrationResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for ISecondaryAuthenticationFactorRegistrationResult {
     type Vtable = ISecondaryAuthenticationFactorRegistrationResult_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa4fe35f0_ade3_4981_af6b_ec195921682a);
@@ -281,6 +341,12 @@ pub struct ISecondaryAuthenticationFactorRegistrationResult_Vtbl {
 #[cfg(feature = "deprecated")]
 #[repr(transparent)]
 pub struct ISecondaryAuthenticationFactorRegistrationStatics(::windows::core::IUnknown);
+#[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for ISecondaryAuthenticationFactorRegistrationStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for ISecondaryAuthenticationFactorRegistrationStatics {
     type Vtable = ISecondaryAuthenticationFactorRegistrationStatics_Vtbl;
@@ -413,12 +479,6 @@ impl SecondaryAuthenticationFactorAuthentication {
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for SecondaryAuthenticationFactorAuthentication {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for SecondaryAuthenticationFactorAuthentication {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -435,7 +495,6 @@ impl ::core::fmt::Debug for SecondaryAuthenticationFactorAuthentication {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for SecondaryAuthenticationFactorAuthentication {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Security.Authentication.Identity.Provider.SecondaryAuthenticationFactorAuthentication;{020a16e5-6a25-40a3-8c00-50a023f619d1})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -555,6 +614,7 @@ impl ::core::default::Default for SecondaryAuthenticationFactorAuthenticationMes
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Abi for SecondaryAuthenticationFactorAuthenticationMessage {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "deprecated")]
 impl ::core::fmt::Debug for SecondaryAuthenticationFactorAuthenticationMessage {
@@ -565,7 +625,6 @@ impl ::core::fmt::Debug for SecondaryAuthenticationFactorAuthenticationMessage {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for SecondaryAuthenticationFactorAuthenticationMessage {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Security.Authentication.Identity.Provider.SecondaryAuthenticationFactorAuthenticationMessage;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -596,12 +655,6 @@ impl SecondaryAuthenticationFactorAuthenticationResult {
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for SecondaryAuthenticationFactorAuthenticationResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for SecondaryAuthenticationFactorAuthenticationResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -618,7 +671,6 @@ impl ::core::fmt::Debug for SecondaryAuthenticationFactorAuthenticationResult {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for SecondaryAuthenticationFactorAuthenticationResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Security.Authentication.Identity.Provider.SecondaryAuthenticationFactorAuthenticationResult;{9cbb5987-ef6d-4bc2-bf49-4617515a0f9a})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -711,6 +763,7 @@ impl ::core::default::Default for SecondaryAuthenticationFactorAuthenticationSce
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Abi for SecondaryAuthenticationFactorAuthenticationScenario {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "deprecated")]
 impl ::core::fmt::Debug for SecondaryAuthenticationFactorAuthenticationScenario {
@@ -721,7 +774,6 @@ impl ::core::fmt::Debug for SecondaryAuthenticationFactorAuthenticationScenario 
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for SecondaryAuthenticationFactorAuthenticationScenario {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Security.Authentication.Identity.Provider.SecondaryAuthenticationFactorAuthenticationScenario;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -760,6 +812,7 @@ impl ::core::default::Default for SecondaryAuthenticationFactorAuthenticationSta
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Abi for SecondaryAuthenticationFactorAuthenticationStage {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "deprecated")]
 impl ::core::fmt::Debug for SecondaryAuthenticationFactorAuthenticationStage {
@@ -770,7 +823,6 @@ impl ::core::fmt::Debug for SecondaryAuthenticationFactorAuthenticationStage {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for SecondaryAuthenticationFactorAuthenticationStage {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Security.Authentication.Identity.Provider.SecondaryAuthenticationFactorAuthenticationStage;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -792,12 +844,6 @@ impl SecondaryAuthenticationFactorAuthenticationStageChangedEventArgs {
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for SecondaryAuthenticationFactorAuthenticationStageChangedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for SecondaryAuthenticationFactorAuthenticationStageChangedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -814,7 +860,6 @@ impl ::core::fmt::Debug for SecondaryAuthenticationFactorAuthenticationStageChan
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for SecondaryAuthenticationFactorAuthenticationStageChangedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Security.Authentication.Identity.Provider.SecondaryAuthenticationFactorAuthenticationStageChangedEventArgs;{d4a5ee56-7291-4073-bc1f-ccb8f5afdf96})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -915,12 +960,6 @@ impl SecondaryAuthenticationFactorAuthenticationStageInfo {
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for SecondaryAuthenticationFactorAuthenticationStageInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for SecondaryAuthenticationFactorAuthenticationStageInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -937,7 +976,6 @@ impl ::core::fmt::Debug for SecondaryAuthenticationFactorAuthenticationStageInfo
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for SecondaryAuthenticationFactorAuthenticationStageInfo {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Security.Authentication.Identity.Provider.SecondaryAuthenticationFactorAuthenticationStageInfo;{56fec28b-e8aa-4c0f-8e4c-a559e73add88})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1033,6 +1071,7 @@ impl ::core::default::Default for SecondaryAuthenticationFactorAuthenticationSta
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Abi for SecondaryAuthenticationFactorAuthenticationStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "deprecated")]
 impl ::core::fmt::Debug for SecondaryAuthenticationFactorAuthenticationStatus {
@@ -1043,7 +1082,6 @@ impl ::core::fmt::Debug for SecondaryAuthenticationFactorAuthenticationStatus {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for SecondaryAuthenticationFactorAuthenticationStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Security.Authentication.Identity.Provider.SecondaryAuthenticationFactorAuthenticationStatus;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1081,6 +1119,7 @@ impl ::core::default::Default for SecondaryAuthenticationFactorDeviceCapabilitie
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Abi for SecondaryAuthenticationFactorDeviceCapabilities {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "deprecated")]
 impl ::core::fmt::Debug for SecondaryAuthenticationFactorDeviceCapabilities {
@@ -1119,7 +1158,6 @@ impl ::core::ops::Not for SecondaryAuthenticationFactorDeviceCapabilities {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for SecondaryAuthenticationFactorDeviceCapabilities {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Security.Authentication.Identity.Provider.SecondaryAuthenticationFactorDeviceCapabilities;u4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1151,6 +1189,7 @@ impl ::core::default::Default for SecondaryAuthenticationFactorDeviceFindScope {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Abi for SecondaryAuthenticationFactorDeviceFindScope {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "deprecated")]
 impl ::core::fmt::Debug for SecondaryAuthenticationFactorDeviceFindScope {
@@ -1161,7 +1200,6 @@ impl ::core::fmt::Debug for SecondaryAuthenticationFactorDeviceFindScope {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for SecondaryAuthenticationFactorDeviceFindScope {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Security.Authentication.Identity.Provider.SecondaryAuthenticationFactorDeviceFindScope;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1193,6 +1231,7 @@ impl ::core::default::Default for SecondaryAuthenticationFactorDevicePresence {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Abi for SecondaryAuthenticationFactorDevicePresence {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "deprecated")]
 impl ::core::fmt::Debug for SecondaryAuthenticationFactorDevicePresence {
@@ -1203,7 +1242,6 @@ impl ::core::fmt::Debug for SecondaryAuthenticationFactorDevicePresence {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for SecondaryAuthenticationFactorDevicePresence {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Security.Authentication.Identity.Provider.SecondaryAuthenticationFactorDevicePresence;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1236,6 +1274,7 @@ impl ::core::default::Default for SecondaryAuthenticationFactorDevicePresenceMon
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Abi for SecondaryAuthenticationFactorDevicePresenceMonitoringMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "deprecated")]
 impl ::core::fmt::Debug for SecondaryAuthenticationFactorDevicePresenceMonitoringMode {
@@ -1246,7 +1285,6 @@ impl ::core::fmt::Debug for SecondaryAuthenticationFactorDevicePresenceMonitorin
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for SecondaryAuthenticationFactorDevicePresenceMonitoringMode {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Security.Authentication.Identity.Provider.SecondaryAuthenticationFactorDevicePresenceMonitoringMode;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1279,6 +1317,7 @@ impl ::core::default::Default for SecondaryAuthenticationFactorDevicePresenceMon
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Abi for SecondaryAuthenticationFactorDevicePresenceMonitoringRegistrationStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "deprecated")]
 impl ::core::fmt::Debug for SecondaryAuthenticationFactorDevicePresenceMonitoringRegistrationStatus {
@@ -1289,7 +1328,6 @@ impl ::core::fmt::Debug for SecondaryAuthenticationFactorDevicePresenceMonitorin
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for SecondaryAuthenticationFactorDevicePresenceMonitoringRegistrationStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Security.Authentication.Identity.Provider.SecondaryAuthenticationFactorDevicePresenceMonitoringRegistrationStatus;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1322,6 +1360,7 @@ impl ::core::default::Default for SecondaryAuthenticationFactorFinishAuthenticat
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Abi for SecondaryAuthenticationFactorFinishAuthenticationStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "deprecated")]
 impl ::core::fmt::Debug for SecondaryAuthenticationFactorFinishAuthenticationStatus {
@@ -1332,7 +1371,6 @@ impl ::core::fmt::Debug for SecondaryAuthenticationFactorFinishAuthenticationSta
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for SecondaryAuthenticationFactorFinishAuthenticationStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Security.Authentication.Identity.Provider.SecondaryAuthenticationFactorFinishAuthenticationStatus;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1408,12 +1446,6 @@ impl SecondaryAuthenticationFactorInfo {
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for SecondaryAuthenticationFactorInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for SecondaryAuthenticationFactorInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1430,7 +1462,6 @@ impl ::core::fmt::Debug for SecondaryAuthenticationFactorInfo {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for SecondaryAuthenticationFactorInfo {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Security.Authentication.Identity.Provider.SecondaryAuthenticationFactorInfo;{1e2ba861-8533-4fce-839b-ecb72410ac14})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1598,12 +1629,6 @@ impl SecondaryAuthenticationFactorRegistration {
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for SecondaryAuthenticationFactorRegistration {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for SecondaryAuthenticationFactorRegistration {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1620,7 +1645,6 @@ impl ::core::fmt::Debug for SecondaryAuthenticationFactorRegistration {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for SecondaryAuthenticationFactorRegistration {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Security.Authentication.Identity.Provider.SecondaryAuthenticationFactorRegistration;{9f4cbbb4-8cba-48b0-840d-dbb22a54c678})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1712,12 +1736,6 @@ impl SecondaryAuthenticationFactorRegistrationResult {
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for SecondaryAuthenticationFactorRegistrationResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for SecondaryAuthenticationFactorRegistrationResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1734,7 +1752,6 @@ impl ::core::fmt::Debug for SecondaryAuthenticationFactorRegistrationResult {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for SecondaryAuthenticationFactorRegistrationResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Security.Authentication.Identity.Provider.SecondaryAuthenticationFactorRegistrationResult;{a4fe35f0-ade3-4981-af6b-ec195921682a})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1830,6 +1847,7 @@ impl ::core::default::Default for SecondaryAuthenticationFactorRegistrationStatu
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Abi for SecondaryAuthenticationFactorRegistrationStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "deprecated")]
 impl ::core::fmt::Debug for SecondaryAuthenticationFactorRegistrationStatus {
@@ -1840,7 +1858,6 @@ impl ::core::fmt::Debug for SecondaryAuthenticationFactorRegistrationStatus {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for SecondaryAuthenticationFactorRegistrationStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Security.Authentication.Identity.Provider.SecondaryAuthenticationFactorRegistrationStatus;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }

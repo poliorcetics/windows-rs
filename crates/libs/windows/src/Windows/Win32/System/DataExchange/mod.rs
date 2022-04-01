@@ -77,6 +77,7 @@ impl ::core::fmt::Debug for CONVCONTEXT {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security"))]
 unsafe impl ::windows::core::Abi for CONVCONTEXT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security"))]
 impl ::core::cmp::PartialEq for CONVCONTEXT {
@@ -147,6 +148,7 @@ impl ::core::fmt::Debug for CONVINFO {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security"))]
 unsafe impl ::windows::core::Abi for CONVINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security"))]
 impl ::core::cmp::PartialEq for CONVINFO {
@@ -213,6 +215,7 @@ impl ::core::default::Default for CONVINFO_CONVERSATION_STATE {
 }
 unsafe impl ::windows::core::Abi for CONVINFO_CONVERSATION_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CONVINFO_CONVERSATION_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -254,6 +257,7 @@ impl ::core::default::Default for CONVINFO_STATUS {
 }
 unsafe impl ::windows::core::Abi for CONVINFO_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CONVINFO_STATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -308,6 +312,7 @@ impl ::core::fmt::Debug for COPYDATASTRUCT {
 }
 unsafe impl ::windows::core::Abi for COPYDATASTRUCT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for COPYDATASTRUCT {
     fn eq(&self, other: &Self) -> bool {
@@ -388,6 +393,7 @@ impl ::core::fmt::Debug for DDEACK {
 }
 unsafe impl ::windows::core::Abi for DDEACK {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DDEACK {
     fn eq(&self, other: &Self) -> bool {
@@ -419,6 +425,7 @@ impl ::core::fmt::Debug for DDEADVISE {
 }
 unsafe impl ::windows::core::Abi for DDEADVISE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DDEADVISE {
     fn eq(&self, other: &Self) -> bool {
@@ -451,6 +458,7 @@ impl ::core::fmt::Debug for DDEDATA {
 }
 unsafe impl ::windows::core::Abi for DDEDATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DDEDATA {
     fn eq(&self, other: &Self) -> bool {
@@ -482,6 +490,7 @@ impl ::core::fmt::Debug for DDELN {
 }
 unsafe impl ::windows::core::Abi for DDELN {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DDELN {
     fn eq(&self, other: &Self) -> bool {
@@ -515,6 +524,7 @@ impl ::core::fmt::Debug for DDEML_MSG_HOOK_DATA {
 }
 unsafe impl ::windows::core::Abi for DDEML_MSG_HOOK_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DDEML_MSG_HOOK_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -547,6 +557,7 @@ impl ::core::fmt::Debug for DDEPOKE {
 }
 unsafe impl ::windows::core::Abi for DDEPOKE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DDEPOKE {
     fn eq(&self, other: &Self) -> bool {
@@ -579,6 +590,7 @@ impl ::core::fmt::Debug for DDEUP {
 }
 unsafe impl ::windows::core::Abi for DDEUP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DDEUP {
     fn eq(&self, other: &Self) -> bool {
@@ -638,6 +650,7 @@ impl ::core::default::Default for DDE_CLIENT_TRANSACTION_TYPE {
 }
 unsafe impl ::windows::core::Abi for DDE_CLIENT_TRANSACTION_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DDE_CLIENT_TRANSACTION_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -669,6 +682,7 @@ impl ::core::default::Default for DDE_ENABLE_CALLBACK_CMD {
 }
 unsafe impl ::windows::core::Abi for DDE_ENABLE_CALLBACK_CMD {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DDE_ENABLE_CALLBACK_CMD {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -754,6 +768,7 @@ impl ::core::default::Default for DDE_INITIALIZE_COMMAND {
 }
 unsafe impl ::windows::core::Abi for DDE_INITIALIZE_COMMAND {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DDE_INITIALIZE_COMMAND {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -813,6 +828,7 @@ impl ::core::default::Default for DDE_NAME_SERVICE_CMD {
 }
 unsafe impl ::windows::core::Abi for DDE_NAME_SERVICE_CMD {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DDE_NAME_SERVICE_CMD {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1723,6 +1739,7 @@ impl ::core::fmt::Debug for HCONV {
 }
 unsafe impl ::windows::core::Abi for HCONV {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[repr(transparent)]
 #[derive(:: core :: cmp :: PartialEq, :: core :: cmp :: Eq)]
@@ -1750,6 +1767,7 @@ impl ::core::fmt::Debug for HCONVLIST {
 }
 unsafe impl ::windows::core::Abi for HCONVLIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[doc = "*Required features: `\"Win32_System_DataExchange\"`*"]
 pub const HDATA_APPOWNED: u32 = 1u32;
@@ -1779,6 +1797,7 @@ impl ::core::fmt::Debug for HDDEDATA {
 }
 unsafe impl ::windows::core::Abi for HDDEDATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[repr(transparent)]
 #[derive(:: core :: cmp :: PartialEq, :: core :: cmp :: Eq)]
@@ -1806,6 +1825,7 @@ impl ::core::fmt::Debug for HSZ {
 }
 unsafe impl ::windows::core::Abi for HSZ {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[repr(C)]
 #[doc = "*Required features: `\"Win32_System_DataExchange\"`*"]
@@ -1826,6 +1846,7 @@ impl ::core::fmt::Debug for HSZPAIR {
 }
 unsafe impl ::windows::core::Abi for HSZPAIR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HSZPAIR {
     fn eq(&self, other: &Self) -> bool {
@@ -1911,6 +1932,7 @@ impl ::core::fmt::Debug for METAFILEPICT {
 #[cfg(feature = "Win32_Graphics_Gdi")]
 unsafe impl ::windows::core::Abi for METAFILEPICT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Gdi")]
 impl ::core::cmp::PartialEq for METAFILEPICT {
@@ -1973,6 +1995,7 @@ impl ::core::fmt::Debug for MONCBSTRUCT {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security"))]
 unsafe impl ::windows::core::Abi for MONCBSTRUCT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security"))]
 impl ::core::cmp::PartialEq for MONCBSTRUCT {
@@ -2018,6 +2041,7 @@ impl ::core::fmt::Debug for MONCONVSTRUCT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MONCONVSTRUCT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MONCONVSTRUCT {
@@ -2059,6 +2083,7 @@ impl ::core::fmt::Debug for MONERRSTRUCT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MONERRSTRUCT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MONERRSTRUCT {
@@ -2102,6 +2127,7 @@ impl ::core::fmt::Debug for MONHSZSTRUCTA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MONHSZSTRUCTA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MONHSZSTRUCTA {
@@ -2145,6 +2171,7 @@ impl ::core::fmt::Debug for MONHSZSTRUCTW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MONHSZSTRUCTW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MONHSZSTRUCTW {
@@ -2194,6 +2221,7 @@ impl ::core::fmt::Debug for MONLINKSTRUCT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MONLINKSTRUCT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MONLINKSTRUCT {
@@ -2239,6 +2267,7 @@ impl ::core::fmt::Debug for MONMSGSTRUCT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MONMSGSTRUCT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MONMSGSTRUCT {

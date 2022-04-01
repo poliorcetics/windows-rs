@@ -2,6 +2,11 @@
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpatialGraphInteropFrameOfReferencePreview(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpatialGraphInteropFrameOfReferencePreview {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpatialGraphInteropFrameOfReferencePreview {
     type Vtable = ISpatialGraphInteropFrameOfReferencePreview_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa8271b23_735f_5729_a98e_e64ed189abc5);
@@ -20,6 +25,11 @@ pub struct ISpatialGraphInteropFrameOfReferencePreview_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpatialGraphInteropPreviewStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpatialGraphInteropPreviewStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpatialGraphInteropPreviewStatics {
     type Vtable = ISpatialGraphInteropPreviewStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc042644c_20d8_4ed0_aef7_6805b8e53f55);
@@ -42,6 +52,11 @@ pub struct ISpatialGraphInteropPreviewStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISpatialGraphInteropPreviewStatics2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpatialGraphInteropPreviewStatics2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISpatialGraphInteropPreviewStatics2 {
     type Vtable = ISpatialGraphInteropPreviewStatics2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x2490b15f_6cbd_4b1e_b765_31e462a32df2);
@@ -90,11 +105,6 @@ impl SpatialGraphInteropFrameOfReferencePreview {
         }
     }
 }
-impl ::core::clone::Clone for SpatialGraphInteropFrameOfReferencePreview {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SpatialGraphInteropFrameOfReferencePreview {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -108,7 +118,6 @@ impl ::core::fmt::Debug for SpatialGraphInteropFrameOfReferencePreview {
 }
 unsafe impl ::windows::core::RuntimeType for SpatialGraphInteropFrameOfReferencePreview {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Perception.Spatial.Preview.SpatialGraphInteropFrameOfReferencePreview;{a8271b23-735f-5729-a98e-e64ed189abc5})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

@@ -46,6 +46,7 @@ impl ::core::default::Default for BaseValueSource {
 }
 unsafe impl ::windows::core::Abi for BaseValueSource {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for BaseValueSource {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -78,6 +79,7 @@ impl ::core::fmt::Debug for BitmapDescription {
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 unsafe impl ::windows::core::Abi for BitmapDescription {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 impl ::core::cmp::PartialEq for BitmapDescription {
@@ -117,6 +119,7 @@ impl ::core::fmt::Debug for CollectionElementValue {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for CollectionElementValue {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for CollectionElementValue {
@@ -157,6 +160,7 @@ impl ::core::fmt::Debug for EnumType {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com"))]
 unsafe impl ::windows::core::Abi for EnumType {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com"))]
 impl ::core::cmp::PartialEq for EnumType {
@@ -175,6 +179,11 @@ impl ::core::default::Default for EnumType {
 #[doc = "*Required features: `\"Win32_UI_Xaml_Diagnostics\"`*"]
 #[repr(transparent)]
 pub struct IBitmapData(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBitmapData {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IBitmapData {
     #[doc = "*Required features: `\"Win32_UI_Xaml_Diagnostics\"`*"]
     pub unsafe fn CopyBytesTo(&self, sourceoffsetinbytes: u32, pvbytes: &mut [u8], numberofbytescopied: *mut u32) -> ::windows::core::Result<()> {
@@ -218,11 +227,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IBitm
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IBitmapData {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IBitmapData {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -256,6 +260,11 @@ pub struct IBitmapData_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Xaml_Diagnostics\"`*"]
 #[repr(transparent)]
 pub struct IVisualTreeService(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVisualTreeService {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IVisualTreeService {
     #[doc = "*Required features: `\"Win32_UI_Xaml_Diagnostics\"`*"]
     pub unsafe fn AdviseVisualTreeChange<'a, Param0: ::windows::core::IntoParam<'a, IVisualTreeServiceCallback>>(&self, pcallback: Param0) -> ::windows::core::Result<()> {
@@ -332,11 +341,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IVisu
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IVisualTreeService {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IVisualTreeService {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -384,6 +388,11 @@ pub struct IVisualTreeService_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Xaml_Diagnostics\"`*"]
 #[repr(transparent)]
 pub struct IVisualTreeService2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVisualTreeService2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IVisualTreeService2 {
     #[doc = "*Required features: `\"Win32_UI_Xaml_Diagnostics\"`*"]
     pub unsafe fn AdviseVisualTreeChange<'a, Param0: ::windows::core::IntoParam<'a, IVisualTreeServiceCallback>>(&self, pcallback: Param0) -> ::windows::core::Result<()> {
@@ -499,11 +508,6 @@ impl<'a> ::windows::core::IntoParam<'a, IVisualTreeService> for &'a IVisualTreeS
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IVisualTreeService2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IVisualTreeService2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -531,6 +535,11 @@ pub struct IVisualTreeService2_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Xaml_Diagnostics\"`*"]
 #[repr(transparent)]
 pub struct IVisualTreeService3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVisualTreeService3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IVisualTreeService3 {
     #[doc = "*Required features: `\"Win32_UI_Xaml_Diagnostics\"`*"]
     pub unsafe fn AdviseVisualTreeChange<'a, Param0: ::windows::core::IntoParam<'a, IVisualTreeServiceCallback>>(&self, pcallback: Param0) -> ::windows::core::Result<()> {
@@ -684,11 +693,6 @@ impl<'a> ::windows::core::IntoParam<'a, IVisualTreeService2> for &'a IVisualTree
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IVisualTreeService3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IVisualTreeService3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -719,6 +723,11 @@ pub struct IVisualTreeService3_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Xaml_Diagnostics\"`*"]
 #[repr(transparent)]
 pub struct IVisualTreeServiceCallback(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVisualTreeServiceCallback {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IVisualTreeServiceCallback {
     #[doc = "*Required features: `\"Win32_UI_Xaml_Diagnostics\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -744,11 +753,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IVisualTr
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IVisualTreeServiceCallback {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IVisualTreeServiceCallback {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IVisualTreeServiceCallback {
@@ -778,6 +782,11 @@ pub struct IVisualTreeServiceCallback_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Xaml_Diagnostics\"`*"]
 #[repr(transparent)]
 pub struct IVisualTreeServiceCallback2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVisualTreeServiceCallback2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IVisualTreeServiceCallback2 {
     #[doc = "*Required features: `\"Win32_UI_Xaml_Diagnostics\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -829,11 +838,6 @@ impl<'a> ::windows::core::IntoParam<'a, IVisualTreeServiceCallback> for &'a IVis
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IVisualTreeServiceCallback2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IVisualTreeServiceCallback2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -858,6 +862,11 @@ pub struct IVisualTreeServiceCallback2_Vtbl {
 #[doc = "*Required features: `\"Win32_UI_Xaml_Diagnostics\"`*"]
 #[repr(transparent)]
 pub struct IXamlDiagnostics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXamlDiagnostics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXamlDiagnostics {
     #[doc = "*Required features: `\"Win32_UI_Xaml_Diagnostics\"`*"]
     pub unsafe fn GetDispatcher(&self) -> ::windows::core::Result<::windows::core::IInspectable> {
@@ -919,11 +928,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IXamlDiag
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IXamlDiagnostics {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IXamlDiagnostics {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IXamlDiagnostics {
@@ -1015,6 +1019,7 @@ impl ::core::default::Default for MetadataBit {
 }
 unsafe impl ::windows::core::Abi for MetadataBit {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MetadataBit {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1041,6 +1046,7 @@ impl ::core::fmt::Debug for ParentChildRelation {
 }
 unsafe impl ::windows::core::Abi for ParentChildRelation {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ParentChildRelation {
     fn eq(&self, other: &Self) -> bool {
@@ -1078,6 +1084,7 @@ impl ::core::fmt::Debug for PropertyChainSource {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PropertyChainSource {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for PropertyChainSource {
@@ -1134,6 +1141,7 @@ impl ::core::fmt::Debug for PropertyChainValue {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PropertyChainValue {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for PropertyChainValue {
@@ -1170,6 +1178,7 @@ impl ::core::default::Default for RenderTargetBitmapOptions {
 }
 unsafe impl ::windows::core::Abi for RenderTargetBitmapOptions {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RenderTargetBitmapOptions {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1197,6 +1206,7 @@ impl ::core::default::Default for ResourceType {
 }
 unsafe impl ::windows::core::Abi for ResourceType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ResourceType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1234,6 +1244,7 @@ impl ::core::fmt::Debug for SourceInfo {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SourceInfo {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for SourceInfo {
@@ -1274,6 +1285,7 @@ impl ::core::fmt::Debug for VisualElement {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for VisualElement {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for VisualElement {
@@ -1312,6 +1324,7 @@ impl ::core::default::Default for VisualElementState {
 }
 unsafe impl ::windows::core::Abi for VisualElementState {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VisualElementState {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1339,6 +1352,7 @@ impl ::core::default::Default for VisualMutationType {
 }
 unsafe impl ::windows::core::Abi for VisualMutationType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VisualMutationType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

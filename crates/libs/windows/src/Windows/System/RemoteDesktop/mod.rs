@@ -4,6 +4,11 @@ pub mod Input;
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IInteractiveSessionStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInteractiveSessionStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IInteractiveSessionStatics {
     type Vtable = IInteractiveSessionStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x60884631_dd3a_4576_9c8d_e8027618bdce);

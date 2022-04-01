@@ -72,6 +72,7 @@ impl ::core::default::Default for FH_BACKUP_STATUS {
 }
 unsafe impl ::windows::core::Abi for FH_BACKUP_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FH_BACKUP_STATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -111,6 +112,7 @@ impl ::core::default::Default for FH_DEVICE_VALIDATION_RESULT {
 }
 unsafe impl ::windows::core::Abi for FH_DEVICE_VALIDATION_RESULT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FH_DEVICE_VALIDATION_RESULT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -142,6 +144,7 @@ impl ::core::default::Default for FH_LOCAL_POLICY_TYPE {
 }
 unsafe impl ::windows::core::Abi for FH_LOCAL_POLICY_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FH_LOCAL_POLICY_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -171,6 +174,7 @@ impl ::core::default::Default for FH_PROTECTED_ITEM_CATEGORY {
 }
 unsafe impl ::windows::core::Abi for FH_PROTECTED_ITEM_CATEGORY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FH_PROTECTED_ITEM_CATEGORY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -202,6 +206,7 @@ impl ::core::default::Default for FH_RETENTION_TYPES {
 }
 unsafe impl ::windows::core::Abi for FH_RETENTION_TYPES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FH_RETENTION_TYPES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -271,6 +276,7 @@ impl ::core::default::Default for FH_TARGET_DRIVE_TYPES {
 }
 unsafe impl ::windows::core::Abi for FH_TARGET_DRIVE_TYPES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FH_TARGET_DRIVE_TYPES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -302,6 +308,7 @@ impl ::core::default::Default for FH_TARGET_PROPERTY_TYPE {
 }
 unsafe impl ::windows::core::Abi for FH_TARGET_PROPERTY_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FH_TARGET_PROPERTY_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -335,6 +342,7 @@ impl ::core::default::Default for FhBackupStopReason {
 }
 unsafe impl ::windows::core::Abi for FhBackupStopReason {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FhBackupStopReason {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -452,6 +460,11 @@ pub unsafe fn FhServiceUnblockBackup<'a, Param0: ::windows::core::IntoParam<'a, 
 #[doc = "*Required features: `\"Win32_Storage_FileHistory\"`*"]
 #[repr(transparent)]
 pub struct IFhConfigMgr(::windows::core::IUnknown);
+impl ::core::clone::Clone for IFhConfigMgr {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IFhConfigMgr {
     #[doc = "*Required features: `\"Win32_Storage_FileHistory\"`*"]
     pub unsafe fn LoadConfiguration(&self) -> ::windows::core::Result<()> {
@@ -542,11 +555,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IFhCo
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IFhConfigMgr {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IFhConfigMgr {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -605,6 +613,11 @@ pub struct IFhConfigMgr_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_FileHistory\"`*"]
 #[repr(transparent)]
 pub struct IFhReassociation(::windows::core::IUnknown);
+impl ::core::clone::Clone for IFhReassociation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IFhReassociation {
     #[doc = "*Required features: `\"Win32_Storage_FileHistory\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -652,11 +665,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IFhRe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IFhReassociation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IFhReassociation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -697,6 +705,11 @@ pub struct IFhReassociation_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_FileHistory\"`*"]
 #[repr(transparent)]
 pub struct IFhScopeIterator(::windows::core::IUnknown);
+impl ::core::clone::Clone for IFhScopeIterator {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IFhScopeIterator {
     #[doc = "*Required features: `\"Win32_Storage_FileHistory\"`*"]
     pub unsafe fn MoveToNextItem(&self) -> ::windows::core::Result<()> {
@@ -729,11 +742,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IFhSc
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IFhScopeIterator {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IFhScopeIterator {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -762,6 +770,11 @@ pub struct IFhScopeIterator_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_FileHistory\"`*"]
 #[repr(transparent)]
 pub struct IFhTarget(::windows::core::IUnknown);
+impl ::core::clone::Clone for IFhTarget {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IFhTarget {
     #[doc = "*Required features: `\"Win32_Storage_FileHistory\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -793,11 +806,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IFhTarget
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IFhTarget {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IFhTarget {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IFhTarget {

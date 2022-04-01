@@ -16,10 +16,10 @@ impl ::core::fmt::Debug for DateTime {
 }
 unsafe impl ::windows::core::Abi for DateTime {
     type Abi = Self;
+    type DefaultType = Self;
 }
 unsafe impl ::windows::core::RuntimeType for DateTime {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"struct(Windows.Foundation.DateTime;i8)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -37,6 +37,11 @@ impl ::core::default::Default for DateTime {
 }
 #[repr(transparent)]
 pub struct IPropertyValue(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPropertyValue {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPropertyValue {
     pub fn Type(&self) -> ::windows::core::Result<PropertyType> {
         let this = self;
@@ -295,11 +300,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPropertyValue {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPropertyValue {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -313,7 +313,6 @@ impl ::core::fmt::Debug for IPropertyValue {
 }
 unsafe impl ::windows::core::RuntimeType for IPropertyValue {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{4bd682dd-7554-40e9-9a9b-82654ede7e62}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -369,6 +368,11 @@ pub struct IPropertyValue_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPropertyValueStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPropertyValueStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPropertyValueStatics {
     type Vtable = IPropertyValueStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x629bdbc8_d932_4ff4_96b9_8d96c5c1e858);
@@ -421,6 +425,11 @@ pub struct IPropertyValueStatics_Vtbl {
 pub struct IReference<T>(::windows::core::IUnknown, ::core::marker::PhantomData<T>)
 where
     T: ::windows::core::RuntimeType + 'static;
+impl<T: ::windows::core::RuntimeType + 'static> ::core::clone::Clone for IReference<T> {
+    fn clone(&self) -> Self {
+        Self(self.0.clone(), ::core::marker::PhantomData::<T>)
+    }
+}
 impl<T: ::windows::core::RuntimeType + 'static> IReference<T> {
     pub fn Value(&self) -> ::windows::core::Result<T> {
         let this = self;
@@ -492,11 +501,6 @@ impl<'a, T: ::windows::core::RuntimeType + 'static> ::windows::core::IntoParam<'
         ::core::convert::TryInto::<IPropertyValue>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl<T: ::windows::core::RuntimeType + 'static> ::core::clone::Clone for IReference<T> {
-    fn clone(&self) -> Self {
-        Self(self.0.clone(), ::core::marker::PhantomData::<T>)
-    }
-}
 impl<T: ::windows::core::RuntimeType + 'static> ::core::cmp::PartialEq for IReference<T> {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -510,7 +514,6 @@ impl<T: ::windows::core::RuntimeType + 'static> ::core::fmt::Debug for IReferenc
 }
 unsafe impl<T: ::windows::core::RuntimeType + 'static> ::windows::core::RuntimeType for IReference<T> {
     const SIGNATURE: ::windows::core::ConstBuffer = { ::windows::core::ConstBuffer::new().push_slice(b"pinterface(").push_slice(b"{61c17706-2d65-11e0-9ae8-d48564015472}").push_slice(b";").push_other(<T as ::windows::core::RuntimeType>::SIGNATURE).push_slice(b")") };
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -531,6 +534,11 @@ where
 }
 #[repr(transparent)]
 pub struct IStringable(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStringable {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IStringable {
     pub fn ToString(&self) -> ::windows::core::Result<::windows::core::HSTRING> {
         let this = self;
@@ -580,11 +588,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IStringable {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IStringable {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -598,7 +601,6 @@ impl ::core::fmt::Debug for IStringable {
 }
 unsafe impl ::windows::core::RuntimeType for IStringable {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{96369f54-8eb6-48f0-abce-c1b211e627c3}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -631,10 +633,10 @@ impl ::core::fmt::Debug for Point {
 }
 unsafe impl ::windows::core::Abi for Point {
     type Abi = Self;
+    type DefaultType = Self;
 }
 unsafe impl ::windows::core::RuntimeType for Point {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"struct(Windows.Foundation.Point;f4;f4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -709,6 +711,7 @@ impl ::core::default::Default for PropertyType {
 }
 unsafe impl ::windows::core::Abi for PropertyType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PropertyType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -717,7 +720,6 @@ impl ::core::fmt::Debug for PropertyType {
 }
 unsafe impl ::windows::core::RuntimeType for PropertyType {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Foundation.PropertyType;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -986,10 +988,10 @@ impl ::core::fmt::Debug for Rect {
 }
 unsafe impl ::windows::core::Abi for Rect {
     type Abi = Self;
+    type DefaultType = Self;
 }
 unsafe impl ::windows::core::RuntimeType for Rect {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"struct(Windows.Foundation.Rect;f4;f4;f4;f4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1023,10 +1025,10 @@ impl ::core::fmt::Debug for Size {
 }
 unsafe impl ::windows::core::Abi for Size {
     type Abi = Self;
+    type DefaultType = Self;
 }
 unsafe impl ::windows::core::RuntimeType for Size {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"struct(Windows.Foundation.Size;f4;f4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1059,10 +1061,10 @@ impl ::core::fmt::Debug for TimeSpan {
 }
 unsafe impl ::windows::core::Abi for TimeSpan {
     type Abi = Self;
+    type DefaultType = Self;
 }
 unsafe impl ::windows::core::RuntimeType for TimeSpan {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"struct(Windows.Foundation.TimeSpan;i8)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1187,6 +1189,7 @@ impl ::core::ops::Not for BOOL {
 }
 unsafe impl ::windows::core::Abi for BOOL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl<'a> ::windows::core::IntoParam<'a, BOOL> for bool {
     fn into_param(self) -> ::windows::core::Param<'a, BOOL> {
@@ -1309,6 +1312,7 @@ impl ::core::ops::Drop for BSTR {
 }
 unsafe impl ::windows::core::Abi for BSTR {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "alloc")]
 impl<'a> ::windows::core::IntoParam<'a, BSTR> for &str {
@@ -1379,6 +1383,7 @@ impl ::core::fmt::Debug for HANDLE {
 }
 unsafe impl ::windows::core::Abi for HANDLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[repr(transparent)]
 #[derive(:: core :: cmp :: PartialEq, :: core :: cmp :: Eq)]
@@ -1401,6 +1406,7 @@ impl ::core::fmt::Debug for HINSTANCE {
 }
 unsafe impl ::windows::core::Abi for HINSTANCE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 pub const S_OK: ::windows::core::HRESULT = ::windows::core::HRESULT(0i32);
 #[inline]
@@ -1458,6 +1464,7 @@ impl ::core::default::Default for WIN32_ERROR {
 }
 unsafe impl ::windows::core::Abi for WIN32_ERROR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WIN32_ERROR {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1515,6 +1522,7 @@ impl ::core::fmt::Debug for SECURITY_ATTRIBUTES {
 }
 unsafe impl ::windows::core::Abi for SECURITY_ATTRIBUTES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SECURITY_ATTRIBUTES {
     fn eq(&self, other: &Self) -> bool {
@@ -1583,6 +1591,11 @@ pub unsafe fn GetErrorInfo(dwreserved: u32) -> ::windows::core::Result<IErrorInf
 }
 #[repr(transparent)]
 pub struct IAgileObject(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAgileObject {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAgileObject {}
 impl ::core::convert::From<IAgileObject> for ::windows::core::IUnknown {
     fn from(value: IAgileObject) -> Self {
@@ -1602,11 +1615,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IAgileObj
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAgileObject {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IAgileObject {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IAgileObject {
@@ -1631,6 +1639,11 @@ pub struct IAgileObject_Vtbl {
 }
 #[repr(transparent)]
 pub struct IErrorInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IErrorInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IErrorInfo {
     pub unsafe fn GetGUID(&self) -> ::windows::core::Result<::windows::core::GUID> {
         let mut result__: ::windows::core::GUID = ::core::mem::zeroed();
@@ -1671,11 +1684,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IErrorInf
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IErrorInfo {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IErrorInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IErrorInfo {
@@ -1738,6 +1746,7 @@ impl ::core::default::Default for FORMAT_MESSAGE_OPTIONS {
 }
 unsafe impl ::windows::core::Abi for FORMAT_MESSAGE_OPTIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FORMAT_MESSAGE_OPTIONS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1871,6 +1880,7 @@ impl ::core::default::Default for HEAP_FLAGS {
 }
 unsafe impl ::windows::core::Abi for HEAP_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HEAP_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1957,6 +1967,7 @@ impl ::core::fmt::Debug for HeapHandle {
 }
 unsafe impl ::windows::core::Abi for HeapHandle {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[inline]
 pub unsafe fn CreateEventA<'a, Param1: ::windows::core::IntoParam<'a, BOOL>, Param2: ::windows::core::IntoParam<'a, BOOL>, Param3: ::windows::core::IntoParam<'a, ::windows::core::PCSTR>>(lpeventattributes: *const SECURITY_ATTRIBUTES, bmanualreset: Param1, binitialstate: Param2, lpname: Param3) -> ::windows::core::Result<HANDLE> {
@@ -2000,6 +2011,11 @@ pub unsafe fn WaitForSingleObject<'a, Param0: ::windows::core::IntoParam<'a, HAN
 }
 #[repr(transparent)]
 pub struct IAgileReference(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAgileReference {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAgileReference {
     pub unsafe fn Resolve<T: ::windows::core::Interface>(&self) -> ::windows::core::Result<T> {
         let mut result__ = ::core::option::Option::None;
@@ -2024,11 +2040,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IAgileRef
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAgileReference {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IAgileReference {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IAgileReference {
@@ -2070,6 +2081,7 @@ impl ::core::default::Default for AgileReferenceOptions {
 }
 unsafe impl ::windows::core::Abi for AgileReferenceOptions {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AgileReferenceOptions {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2092,6 +2104,11 @@ pub unsafe fn RoGetAgileReference<'a, Param2: ::windows::core::IntoParam<'a, ::w
 }
 #[repr(transparent)]
 pub struct ILanguageExceptionErrorInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILanguageExceptionErrorInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ILanguageExceptionErrorInfo {
     pub unsafe fn GetLanguageException(&self) -> ::windows::core::Result<::windows::core::IUnknown> {
         let mut result__: *mut ::core::ffi::c_void = ::core::mem::zeroed();
@@ -2118,11 +2135,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ILang
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ILanguageExceptionErrorInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ILanguageExceptionErrorInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2146,6 +2158,11 @@ pub struct ILanguageExceptionErrorInfo_Vtbl {
 }
 #[repr(transparent)]
 pub struct ILanguageExceptionErrorInfo2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILanguageExceptionErrorInfo2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ILanguageExceptionErrorInfo2 {
     pub unsafe fn GetLanguageException(&self) -> ::windows::core::Result<::windows::core::IUnknown> {
         let mut result__: *mut ::core::ffi::c_void = ::core::mem::zeroed();
@@ -2203,11 +2220,6 @@ impl<'a> ::windows::core::IntoParam<'a, ILanguageExceptionErrorInfo> for &'a ILa
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ILanguageExceptionErrorInfo2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ILanguageExceptionErrorInfo2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2233,6 +2245,11 @@ pub struct ILanguageExceptionErrorInfo2_Vtbl {
 }
 #[repr(transparent)]
 pub struct IRestrictedErrorInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRestrictedErrorInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRestrictedErrorInfo {
     pub unsafe fn GetErrorDetails(&self, description: *mut BSTR, error: *mut ::windows::core::HRESULT, restricteddescription: *mut BSTR, capabilitysid: *mut BSTR) -> ::windows::core::Result<()> {
         (::windows::core::Interface::vtable(self).GetErrorDetails)(::core::mem::transmute_copy(self), ::core::mem::transmute(description), ::core::mem::transmute(error), ::core::mem::transmute(restricteddescription), ::core::mem::transmute(capabilitysid)).ok()
@@ -2262,11 +2279,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IRest
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IRestrictedErrorInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IRestrictedErrorInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2293,6 +2305,11 @@ pub struct IRestrictedErrorInfo_Vtbl {
 }
 #[repr(transparent)]
 pub struct IWeakReference(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWeakReference {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWeakReference {
     pub unsafe fn Resolve<T: ::windows::core::Interface>(&self) -> ::windows::core::Result<T> {
         let mut result__ = ::core::option::Option::None;
@@ -2319,11 +2336,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWeak
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWeakReference {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWeakReference {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2347,6 +2359,11 @@ pub struct IWeakReference_Vtbl {
 }
 #[repr(transparent)]
 pub struct IWeakReferenceSource(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWeakReferenceSource {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWeakReferenceSource {
     pub unsafe fn GetWeakReference(&self) -> ::windows::core::Result<IWeakReference> {
         let mut result__: ::windows::core::RawPtr = ::core::mem::zeroed();
@@ -2371,11 +2388,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IWeakRefe
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWeakReferenceSource {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IWeakReferenceSource {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IWeakReferenceSource {

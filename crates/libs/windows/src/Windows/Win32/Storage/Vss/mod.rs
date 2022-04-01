@@ -17,6 +17,11 @@ pub unsafe fn CreateVssExpressWriterInternal() -> ::windows::core::Result<IVssEx
 #[doc = "*Required features: `\"Win32_Storage_Vss\"`*"]
 #[repr(transparent)]
 pub struct IVssAdmin(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVssAdmin {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IVssAdmin {
     #[doc = "*Required features: `\"Win32_Storage_Vss\"`*"]
     pub unsafe fn RegisterProvider<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::GUID>, Param1: ::windows::core::IntoParam<'a, ::windows::core::GUID>, Param5: ::windows::core::IntoParam<'a, ::windows::core::GUID>>(&self, pproviderid: Param0, classid: Param1, pwszprovidername: *const u16, eprovidertype: VSS_PROVIDER_TYPE, pwszproviderversion: *const u16, providerversionid: Param5) -> ::windows::core::Result<()> {
@@ -56,11 +61,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IVssA
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IVssAdmin {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IVssAdmin {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -88,6 +88,11 @@ pub struct IVssAdmin_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Vss\"`*"]
 #[repr(transparent)]
 pub struct IVssAdminEx(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVssAdminEx {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IVssAdminEx {
     #[doc = "*Required features: `\"Win32_Storage_Vss\"`*"]
     pub unsafe fn RegisterProvider<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::GUID>, Param1: ::windows::core::IntoParam<'a, ::windows::core::GUID>, Param5: ::windows::core::IntoParam<'a, ::windows::core::GUID>>(&self, pproviderid: Param0, classid: Param1, pwszprovidername: *const u16, eprovidertype: VSS_PROVIDER_TYPE, pwszproviderversion: *const u16, providerversionid: Param5) -> ::windows::core::Result<()> {
@@ -161,11 +166,6 @@ impl<'a> ::windows::core::IntoParam<'a, IVssAdmin> for &'a IVssAdminEx {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IVssAdminEx {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IVssAdminEx {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -192,6 +192,11 @@ pub struct IVssAdminEx_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Vss\"`*"]
 #[repr(transparent)]
 pub struct IVssAsync(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVssAsync {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IVssAsync {
     #[doc = "*Required features: `\"Win32_Storage_Vss\"`*"]
     pub unsafe fn Cancel(&self) -> ::windows::core::Result<()> {
@@ -226,11 +231,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IVssA
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IVssAsync {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IVssAsync {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -257,6 +257,11 @@ pub struct IVssAsync_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Vss\"`*"]
 #[repr(transparent)]
 pub struct IVssComponent(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVssComponent {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IVssComponent {
     #[doc = "*Required features: `\"Win32_Storage_Vss\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -449,11 +454,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IVssC
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IVssComponent {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IVssComponent {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -563,6 +563,11 @@ pub struct IVssComponent_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Vss\"`*"]
 #[repr(transparent)]
 pub struct IVssComponentEx(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVssComponentEx {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IVssComponentEx {
     #[doc = "*Required features: `\"Win32_Storage_Vss\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -811,11 +816,6 @@ impl<'a> ::windows::core::IntoParam<'a, IVssComponent> for &'a IVssComponentEx {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IVssComponentEx {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IVssComponentEx {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -858,6 +858,11 @@ pub struct IVssComponentEx_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Vss\"`*"]
 #[repr(transparent)]
 pub struct IVssComponentEx2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVssComponentEx2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IVssComponentEx2 {
     #[doc = "*Required features: `\"Win32_Storage_Vss\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -1135,11 +1140,6 @@ impl<'a> ::windows::core::IntoParam<'a, IVssComponentEx> for &'a IVssComponentEx
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IVssComponentEx2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IVssComponentEx2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1168,6 +1168,11 @@ pub struct IVssComponentEx2_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Vss\"`*"]
 #[repr(transparent)]
 pub struct IVssCreateExpressWriterMetadata(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVssCreateExpressWriterMetadata {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IVssCreateExpressWriterMetadata {
     #[doc = "*Required features: `\"Win32_Storage_Vss\"`*"]
     pub unsafe fn AddExcludeFiles<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param1: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, wszpath: Param0, wszfilespec: Param1, brecursive: u8) -> ::windows::core::Result<()> {
@@ -1220,11 +1225,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IVssC
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IVssCreateExpressWriterMetadata {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IVssCreateExpressWriterMetadata {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1258,6 +1258,11 @@ pub struct IVssCreateExpressWriterMetadata_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Vss\"`*"]
 #[repr(transparent)]
 pub struct IVssCreateWriterMetadata(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVssCreateWriterMetadata {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IVssCreateWriterMetadata {
     #[doc = "*Required features: `\"Win32_Storage_Vss\"`*"]
     pub unsafe fn AddIncludeFiles<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param1: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param3: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, wszpath: Param0, wszfilespec: Param1, brecursive: u8, wszalternatelocation: Param3) -> ::windows::core::Result<()> {
@@ -1311,11 +1316,6 @@ impl IVssCreateWriterMetadata {
         (::windows::core::Interface::vtable(self).SaveAsXML)(::core::mem::transmute_copy(self), ::core::mem::transmute(pbstrxml)).ok()
     }
 }
-impl ::core::clone::Clone for IVssCreateWriterMetadata {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IVssCreateWriterMetadata {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1356,6 +1356,11 @@ pub struct IVssCreateWriterMetadata_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Vss\"`*"]
 #[repr(transparent)]
 pub struct IVssDifferentialSoftwareSnapshotMgmt(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVssDifferentialSoftwareSnapshotMgmt {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IVssDifferentialSoftwareSnapshotMgmt {
     #[doc = "*Required features: `\"Win32_Storage_Vss\"`*"]
     pub unsafe fn AddDiffArea(&self, pwszvolumename: *const u16, pwszdiffareavolumename: *const u16, llmaximumdiffspace: i64) -> ::windows::core::Result<()> {
@@ -1406,11 +1411,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IVssD
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IVssDifferentialSoftwareSnapshotMgmt {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IVssDifferentialSoftwareSnapshotMgmt {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1440,6 +1440,11 @@ pub struct IVssDifferentialSoftwareSnapshotMgmt_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Vss\"`*"]
 #[repr(transparent)]
 pub struct IVssDifferentialSoftwareSnapshotMgmt2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVssDifferentialSoftwareSnapshotMgmt2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IVssDifferentialSoftwareSnapshotMgmt2 {
     #[doc = "*Required features: `\"Win32_Storage_Vss\"`*"]
     pub unsafe fn AddDiffArea(&self, pwszvolumename: *const u16, pwszdiffareavolumename: *const u16, llmaximumdiffspace: i64) -> ::windows::core::Result<()> {
@@ -1528,11 +1533,6 @@ impl<'a> ::windows::core::IntoParam<'a, IVssDifferentialSoftwareSnapshotMgmt> fo
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IVssDifferentialSoftwareSnapshotMgmt2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IVssDifferentialSoftwareSnapshotMgmt2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1563,6 +1563,11 @@ pub struct IVssDifferentialSoftwareSnapshotMgmt2_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Vss\"`*"]
 #[repr(transparent)]
 pub struct IVssDifferentialSoftwareSnapshotMgmt3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVssDifferentialSoftwareSnapshotMgmt3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IVssDifferentialSoftwareSnapshotMgmt3 {
     #[doc = "*Required features: `\"Win32_Storage_Vss\"`*"]
     pub unsafe fn AddDiffArea(&self, pwszvolumename: *const u16, pwszdiffareavolumename: *const u16, llmaximumdiffspace: i64) -> ::windows::core::Result<()> {
@@ -1693,11 +1698,6 @@ impl<'a> ::windows::core::IntoParam<'a, IVssDifferentialSoftwareSnapshotMgmt2> f
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IVssDifferentialSoftwareSnapshotMgmt3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IVssDifferentialSoftwareSnapshotMgmt3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1729,6 +1729,11 @@ pub struct IVssDifferentialSoftwareSnapshotMgmt3_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Vss\"`*"]
 #[repr(transparent)]
 pub struct IVssEnumMgmtObject(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVssEnumMgmtObject {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IVssEnumMgmtObject {
     #[doc = "*Required features: `\"Win32_Storage_Vss\"`*"]
     pub unsafe fn Next(&self, rgelt: &mut [VSS_MGMT_OBJECT_PROP], pceltfetched: *mut u32) -> ::windows::core::Result<()> {
@@ -1767,11 +1772,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IVssE
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IVssEnumMgmtObject {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IVssEnumMgmtObject {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1799,6 +1799,11 @@ pub struct IVssEnumMgmtObject_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Vss\"`*"]
 #[repr(transparent)]
 pub struct IVssEnumObject(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVssEnumObject {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IVssEnumObject {
     #[doc = "*Required features: `\"Win32_Storage_Vss\"`*"]
     pub unsafe fn Next(&self, rgelt: &mut [VSS_OBJECT_PROP], pceltfetched: *mut u32) -> ::windows::core::Result<()> {
@@ -1837,11 +1842,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IVssE
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IVssEnumObject {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IVssEnumObject {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1871,6 +1871,11 @@ pub struct IVssExamineWriterMetadata(pub u8);
 #[doc = "*Required features: `\"Win32_Storage_Vss\"`*"]
 #[repr(transparent)]
 pub struct IVssExpressWriter(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVssExpressWriter {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IVssExpressWriter {
     #[doc = "*Required features: `\"Win32_Storage_Vss\"`*"]
     pub unsafe fn CreateMetadata<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::GUID>, Param1: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, writerid: Param0, writername: Param1, usagetype: VSS_USAGE_TYPE, versionmajor: u32, versionminor: u32, reserved: u32) -> ::windows::core::Result<IVssCreateExpressWriterMetadata> {
@@ -1910,11 +1915,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IVssE
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IVssExpressWriter {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IVssExpressWriter {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1942,6 +1942,11 @@ pub struct IVssExpressWriter_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Vss\"`*"]
 #[repr(transparent)]
 pub struct IVssFileShareSnapshotProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVssFileShareSnapshotProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IVssFileShareSnapshotProvider {
     #[doc = "*Required features: `\"Win32_Storage_Vss\"`*"]
     pub unsafe fn SetContext(&self, lcontext: i32) -> ::windows::core::Result<()> {
@@ -2003,11 +2008,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IVssF
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IVssFileShareSnapshotProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IVssFileShareSnapshotProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2051,6 +2051,11 @@ pub struct IVssFileShareSnapshotProvider_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Vss\"`*"]
 #[repr(transparent)]
 pub struct IVssHardwareSnapshotProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVssHardwareSnapshotProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IVssHardwareSnapshotProvider {
     #[doc = "*Required features: `\"Win32_Storage_Vss\"`, `\"Win32_Foundation\"`, `\"Win32_Storage_VirtualDiskService\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Storage_VirtualDiskService"))]
@@ -2103,11 +2108,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IVssH
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IVssHardwareSnapshotProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IVssHardwareSnapshotProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2155,6 +2155,11 @@ pub struct IVssHardwareSnapshotProvider_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Vss\"`*"]
 #[repr(transparent)]
 pub struct IVssHardwareSnapshotProviderEx(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVssHardwareSnapshotProviderEx {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IVssHardwareSnapshotProviderEx {
     #[doc = "*Required features: `\"Win32_Storage_Vss\"`, `\"Win32_Foundation\"`, `\"Win32_Storage_VirtualDiskService\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Storage_VirtualDiskService"))]
@@ -2248,11 +2253,6 @@ impl<'a> ::windows::core::IntoParam<'a, IVssHardwareSnapshotProvider> for &'a IV
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IVssHardwareSnapshotProviderEx {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IVssHardwareSnapshotProviderEx {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2289,6 +2289,11 @@ pub struct IVssHardwareSnapshotProviderEx_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Vss\"`*"]
 #[repr(transparent)]
 pub struct IVssProviderCreateSnapshotSet(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVssProviderCreateSnapshotSet {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IVssProviderCreateSnapshotSet {
     #[doc = "*Required features: `\"Win32_Storage_Vss\"`*"]
     pub unsafe fn EndPrepareSnapshots<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::GUID>>(&self, snapshotsetid: Param0) -> ::windows::core::Result<()> {
@@ -2339,11 +2344,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IVssP
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IVssProviderCreateSnapshotSet {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IVssProviderCreateSnapshotSet {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2374,6 +2374,11 @@ pub struct IVssProviderCreateSnapshotSet_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Vss\"`*"]
 #[repr(transparent)]
 pub struct IVssProviderNotifications(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVssProviderNotifications {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IVssProviderNotifications {
     #[doc = "*Required features: `\"Win32_Storage_Vss\"`*"]
     pub unsafe fn OnLoad<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, pcallback: Param0) -> ::windows::core::Result<()> {
@@ -2405,11 +2410,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IVssP
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IVssProviderNotifications {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IVssProviderNotifications {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2438,6 +2438,11 @@ pub struct IVssProviderNotifications_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Vss\"`*"]
 #[repr(transparent)]
 pub struct IVssSnapshotMgmt(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVssSnapshotMgmt {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IVssSnapshotMgmt {
     #[doc = "*Required features: `\"Win32_Storage_Vss\"`*"]
     pub unsafe fn GetProviderMgmtInterface<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::GUID>>(&self, providerid: Param0, interfaceid: *const ::windows::core::GUID) -> ::windows::core::Result<::windows::core::IUnknown> {
@@ -2475,11 +2480,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IVssS
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IVssSnapshotMgmt {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IVssSnapshotMgmt {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2506,6 +2506,11 @@ pub struct IVssSnapshotMgmt_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Vss\"`*"]
 #[repr(transparent)]
 pub struct IVssSnapshotMgmt2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVssSnapshotMgmt2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IVssSnapshotMgmt2 {
     #[doc = "*Required features: `\"Win32_Storage_Vss\"`*"]
     pub unsafe fn GetMinDiffAreaSize(&self) -> ::windows::core::Result<i64> {
@@ -2533,11 +2538,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IVssS
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IVssSnapshotMgmt2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IVssSnapshotMgmt2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2562,6 +2562,11 @@ pub struct IVssSnapshotMgmt2_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Vss\"`*"]
 #[repr(transparent)]
 pub struct IVssSoftwareSnapshotProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVssSoftwareSnapshotProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IVssSoftwareSnapshotProvider {
     #[doc = "*Required features: `\"Win32_Storage_Vss\"`*"]
     pub unsafe fn SetContext(&self, lcontext: i32) -> ::windows::core::Result<()> {
@@ -2632,11 +2637,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IVssS
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IVssSoftwareSnapshotProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IVssSoftwareSnapshotProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2682,6 +2682,11 @@ pub struct IVssSoftwareSnapshotProvider_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Vss\"`*"]
 #[repr(transparent)]
 pub struct IVssWMDependency(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVssWMDependency {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IVssWMDependency {
     #[doc = "*Required features: `\"Win32_Storage_Vss\"`*"]
     pub unsafe fn GetWriterId(&self, pwriterid: *mut ::windows::core::GUID) -> ::windows::core::Result<()> {
@@ -2718,11 +2723,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IVssW
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IVssWMDependency {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IVssWMDependency {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2755,6 +2755,11 @@ pub struct IVssWMDependency_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Vss\"`*"]
 #[repr(transparent)]
 pub struct IVssWMFiledesc(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVssWMFiledesc {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IVssWMFiledesc {
     #[doc = "*Required features: `\"Win32_Storage_Vss\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -2805,11 +2810,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IVssW
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IVssWMFiledesc {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IVssWMFiledesc {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2847,6 +2847,11 @@ pub struct IVssWMFiledesc_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Vss\"`*"]
 #[repr(transparent)]
 pub struct IVssWriterComponents(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVssWriterComponents {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IVssWriterComponents {
     #[doc = "*Required features: `\"Win32_Storage_Vss\"`*"]
     pub unsafe fn GetComponentCount(&self, pccomponents: *mut u32) -> ::windows::core::Result<()> {
@@ -2860,11 +2865,6 @@ impl IVssWriterComponents {
     pub unsafe fn GetComponent(&self, icomponent: u32) -> ::windows::core::Result<IVssComponent> {
         let mut result__: ::windows::core::RawPtr = ::core::mem::zeroed();
         (::windows::core::Interface::vtable(self).GetComponent)(::core::mem::transmute_copy(self), ::core::mem::transmute(icomponent), ::core::mem::transmute(&mut result__)).from_abi::<IVssComponent>(result__)
-    }
-}
-impl ::core::clone::Clone for IVssWriterComponents {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IVssWriterComponents {
@@ -2892,6 +2892,11 @@ pub struct IVssWriterComponents_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Vss\"`*"]
 #[repr(transparent)]
 pub struct IVssWriterImpl(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVssWriterImpl {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IVssWriterImpl {
     #[doc = "*Required features: `\"Win32_Storage_Vss\"`*"]
     pub unsafe fn Initialize<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::GUID>, Param1: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param2: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, writerid: Param0, wszwritername: Param1, wszwriterinstancename: Param2, dwmajorversion: u32, dwminorversion: u32, ut: VSS_USAGE_TYPE, st: VSS_SOURCE_TYPE, nlevel: VSS_APPLICATION_LEVEL, dwtimeout: u32, aws: VSS_ALTERNATE_WRITER_STATE, biothrottlingonly: u8) -> ::windows::core::Result<()> {
@@ -3006,11 +3011,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IVssW
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IVssWriterImpl {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IVssWriterImpl {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3079,6 +3079,7 @@ impl ::core::default::Default for VSS_ALTERNATE_WRITER_STATE {
 }
 unsafe impl ::windows::core::Abi for VSS_ALTERNATE_WRITER_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VSS_ALTERNATE_WRITER_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3114,6 +3115,7 @@ impl ::core::default::Default for VSS_APPLICATION_LEVEL {
 }
 unsafe impl ::windows::core::Abi for VSS_APPLICATION_LEVEL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VSS_APPLICATION_LEVEL {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3173,6 +3175,7 @@ impl ::core::default::Default for VSS_BACKUP_SCHEMA {
 }
 unsafe impl ::windows::core::Abi for VSS_BACKUP_SCHEMA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VSS_BACKUP_SCHEMA {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3210,6 +3213,7 @@ impl ::core::default::Default for VSS_BACKUP_TYPE {
 }
 unsafe impl ::windows::core::Abi for VSS_BACKUP_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VSS_BACKUP_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3239,6 +3243,7 @@ impl ::core::default::Default for VSS_COMPONENT_FLAGS {
 }
 unsafe impl ::windows::core::Abi for VSS_COMPONENT_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VSS_COMPONENT_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3268,6 +3273,7 @@ impl ::core::default::Default for VSS_COMPONENT_TYPE {
 }
 unsafe impl ::windows::core::Abi for VSS_COMPONENT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VSS_COMPONENT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3296,6 +3302,7 @@ impl ::core::fmt::Debug for VSS_DIFF_AREA_PROP {
 }
 unsafe impl ::windows::core::Abi for VSS_DIFF_AREA_PROP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VSS_DIFF_AREA_PROP {
     fn eq(&self, other: &Self) -> bool {
@@ -3329,6 +3336,7 @@ impl ::core::fmt::Debug for VSS_DIFF_VOLUME_PROP {
 }
 unsafe impl ::windows::core::Abi for VSS_DIFF_VOLUME_PROP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VSS_DIFF_VOLUME_PROP {
     fn eq(&self, other: &Self) -> bool {
@@ -3520,6 +3528,7 @@ impl ::core::default::Default for VSS_FILE_RESTORE_STATUS {
 }
 unsafe impl ::windows::core::Abi for VSS_FILE_RESTORE_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VSS_FILE_RESTORE_STATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3565,6 +3574,7 @@ impl ::core::default::Default for VSS_FILE_SPEC_BACKUP_TYPE {
 }
 unsafe impl ::windows::core::Abi for VSS_FILE_SPEC_BACKUP_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VSS_FILE_SPEC_BACKUP_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3604,6 +3614,7 @@ impl ::core::default::Default for VSS_HARDWARE_OPTIONS {
 }
 unsafe impl ::windows::core::Abi for VSS_HARDWARE_OPTIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VSS_HARDWARE_OPTIONS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3624,6 +3635,7 @@ impl ::core::clone::Clone for VSS_MGMT_OBJECT_PROP {
 }
 unsafe impl ::windows::core::Abi for VSS_MGMT_OBJECT_PROP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VSS_MGMT_OBJECT_PROP {
     fn eq(&self, other: &Self) -> bool {
@@ -3661,6 +3673,7 @@ impl ::core::default::Default for VSS_MGMT_OBJECT_TYPE {
 }
 unsafe impl ::windows::core::Abi for VSS_MGMT_OBJECT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VSS_MGMT_OBJECT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3682,6 +3695,7 @@ impl ::core::clone::Clone for VSS_MGMT_OBJECT_UNION {
 }
 unsafe impl ::windows::core::Abi for VSS_MGMT_OBJECT_UNION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VSS_MGMT_OBJECT_UNION {
     fn eq(&self, other: &Self) -> bool {
@@ -3708,6 +3722,7 @@ impl ::core::clone::Clone for VSS_OBJECT_PROP {
 }
 unsafe impl ::windows::core::Abi for VSS_OBJECT_PROP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VSS_OBJECT_PROP {
     fn eq(&self, other: &Self) -> bool {
@@ -3749,6 +3764,7 @@ impl ::core::default::Default for VSS_OBJECT_TYPE {
 }
 unsafe impl ::windows::core::Abi for VSS_OBJECT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VSS_OBJECT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3769,6 +3785,7 @@ impl ::core::clone::Clone for VSS_OBJECT_UNION {
 }
 unsafe impl ::windows::core::Abi for VSS_OBJECT_UNION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VSS_OBJECT_UNION {
     fn eq(&self, other: &Self) -> bool {
@@ -3832,6 +3849,7 @@ impl ::core::default::Default for VSS_PROTECTION_FAULT {
 }
 unsafe impl ::windows::core::Abi for VSS_PROTECTION_FAULT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VSS_PROTECTION_FAULT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3859,6 +3877,7 @@ impl ::core::default::Default for VSS_PROTECTION_LEVEL {
 }
 unsafe impl ::windows::core::Abi for VSS_PROTECTION_LEVEL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VSS_PROTECTION_LEVEL {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3902,6 +3921,7 @@ impl ::core::default::Default for VSS_PROVIDER_CAPABILITIES {
 }
 unsafe impl ::windows::core::Abi for VSS_PROVIDER_CAPABILITIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VSS_PROVIDER_CAPABILITIES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3931,6 +3951,7 @@ impl ::core::fmt::Debug for VSS_PROVIDER_PROP {
 }
 unsafe impl ::windows::core::Abi for VSS_PROVIDER_PROP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VSS_PROVIDER_PROP {
     fn eq(&self, other: &Self) -> bool {
@@ -3970,6 +3991,7 @@ impl ::core::default::Default for VSS_PROVIDER_TYPE {
 }
 unsafe impl ::windows::core::Abi for VSS_PROVIDER_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VSS_PROVIDER_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3997,6 +4019,7 @@ impl ::core::default::Default for VSS_RECOVERY_OPTIONS {
 }
 unsafe impl ::windows::core::Abi for VSS_RECOVERY_OPTIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VSS_RECOVERY_OPTIONS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4038,6 +4061,7 @@ impl ::core::default::Default for VSS_RESTOREMETHOD_ENUM {
 }
 unsafe impl ::windows::core::Abi for VSS_RESTOREMETHOD_ENUM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VSS_RESTOREMETHOD_ENUM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4071,6 +4095,7 @@ impl ::core::default::Default for VSS_RESTORE_TARGET {
 }
 unsafe impl ::windows::core::Abi for VSS_RESTORE_TARGET {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VSS_RESTORE_TARGET {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4102,6 +4127,7 @@ impl ::core::default::Default for VSS_RESTORE_TYPE {
 }
 unsafe impl ::windows::core::Abi for VSS_RESTORE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VSS_RESTORE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4133,6 +4159,7 @@ impl ::core::default::Default for VSS_ROLLFORWARD_TYPE {
 }
 unsafe impl ::windows::core::Abi for VSS_ROLLFORWARD_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VSS_ROLLFORWARD_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4160,6 +4187,7 @@ impl ::core::default::Default for VSS_SNAPSHOT_COMPATIBILITY {
 }
 unsafe impl ::windows::core::Abi for VSS_SNAPSHOT_COMPATIBILITY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VSS_SNAPSHOT_COMPATIBILITY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4197,6 +4225,7 @@ impl ::core::default::Default for VSS_SNAPSHOT_CONTEXT {
 }
 unsafe impl ::windows::core::Abi for VSS_SNAPSHOT_CONTEXT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VSS_SNAPSHOT_CONTEXT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4247,6 +4276,7 @@ impl ::core::fmt::Debug for VSS_SNAPSHOT_PROP {
 }
 unsafe impl ::windows::core::Abi for VSS_SNAPSHOT_PROP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VSS_SNAPSHOT_PROP {
     fn eq(&self, other: &Self) -> bool {
@@ -4304,6 +4334,7 @@ impl ::core::default::Default for VSS_SNAPSHOT_PROPERTY_ID {
 }
 unsafe impl ::windows::core::Abi for VSS_SNAPSHOT_PROPERTY_ID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VSS_SNAPSHOT_PROPERTY_ID {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4361,6 +4392,7 @@ impl ::core::default::Default for VSS_SNAPSHOT_STATE {
 }
 unsafe impl ::windows::core::Abi for VSS_SNAPSHOT_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VSS_SNAPSHOT_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4392,6 +4424,7 @@ impl ::core::default::Default for VSS_SOURCE_TYPE {
 }
 unsafe impl ::windows::core::Abi for VSS_SOURCE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VSS_SOURCE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4425,6 +4458,7 @@ impl ::core::default::Default for VSS_SUBSCRIBE_MASK {
 }
 unsafe impl ::windows::core::Abi for VSS_SUBSCRIBE_MASK {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VSS_SUBSCRIBE_MASK {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4466,6 +4500,7 @@ impl ::core::default::Default for VSS_USAGE_TYPE {
 }
 unsafe impl ::windows::core::Abi for VSS_USAGE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VSS_USAGE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4491,6 +4526,7 @@ impl ::core::fmt::Debug for VSS_VOLUME_PROP {
 }
 unsafe impl ::windows::core::Abi for VSS_VOLUME_PROP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VSS_VOLUME_PROP {
     fn eq(&self, other: &Self) -> bool {
@@ -4531,6 +4567,7 @@ impl ::core::fmt::Debug for VSS_VOLUME_PROTECTION_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for VSS_VOLUME_PROTECTION_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for VSS_VOLUME_PROTECTION_INFO {
@@ -4601,6 +4638,7 @@ impl ::core::default::Default for VSS_VOLUME_SNAPSHOT_ATTRIBUTES {
 }
 unsafe impl ::windows::core::Abi for VSS_VOLUME_SNAPSHOT_ATTRIBUTES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VSS_VOLUME_SNAPSHOT_ATTRIBUTES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4632,6 +4670,7 @@ impl ::core::default::Default for VSS_WRITERRESTORE_ENUM {
 }
 unsafe impl ::windows::core::Abi for VSS_WRITERRESTORE_ENUM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VSS_WRITERRESTORE_ENUM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4689,6 +4728,7 @@ impl ::core::default::Default for VSS_WRITER_STATE {
 }
 unsafe impl ::windows::core::Abi for VSS_WRITER_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VSS_WRITER_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

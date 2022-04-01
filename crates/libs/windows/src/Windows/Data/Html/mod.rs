@@ -21,6 +21,11 @@ impl ::windows::core::RuntimeName for HtmlUtilities {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHtmlUtilities(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHtmlUtilities {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHtmlUtilities {
     type Vtable = IHtmlUtilities_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xfec00add_2399_4fac_b5a7_05e9acd7181d);

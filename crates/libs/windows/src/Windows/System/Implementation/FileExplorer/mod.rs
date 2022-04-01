@@ -2,6 +2,11 @@
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISysStorageProviderEventReceivedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISysStorageProviderEventReceivedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISysStorageProviderEventReceivedEventArgs {
     type Vtable = ISysStorageProviderEventReceivedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe132d1b9_7b9d_5820_9728_4262b5289142);
@@ -15,6 +20,11 @@ pub struct ISysStorageProviderEventReceivedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISysStorageProviderEventReceivedEventArgsFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISysStorageProviderEventReceivedEventArgsFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISysStorageProviderEventReceivedEventArgsFactory {
     type Vtable = ISysStorageProviderEventReceivedEventArgsFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xde1a780e_e975_5f68_bcc6_fb46281c6a61);
@@ -28,6 +38,11 @@ pub struct ISysStorageProviderEventReceivedEventArgsFactory_Vtbl {
 #[doc = "*Required features: `\"System_Implementation_FileExplorer\"`*"]
 #[repr(transparent)]
 pub struct ISysStorageProviderEventSource(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISysStorageProviderEventSource {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISysStorageProviderEventSource {
     #[doc = "*Required features: `\"System_Implementation_FileExplorer\"`, `\"Foundation\"`*"]
     #[cfg(feature = "Foundation")]
@@ -85,11 +100,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISysStorageProviderEventSource {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISysStorageProviderEventSource {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -103,7 +113,6 @@ impl ::core::fmt::Debug for ISysStorageProviderEventSource {
 }
 unsafe impl ::windows::core::RuntimeType for ISysStorageProviderEventSource {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{1f36c476-9546-536a-8381-2f9a2c08cedd}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -128,6 +137,11 @@ pub struct ISysStorageProviderEventSource_Vtbl {
 #[doc = "*Required features: `\"System_Implementation_FileExplorer\"`*"]
 #[repr(transparent)]
 pub struct ISysStorageProviderHandlerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISysStorageProviderHandlerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISysStorageProviderHandlerFactory {
     #[doc = "*Required features: `\"System_Implementation_FileExplorer\"`*"]
     pub fn GetHttpRequestProvider<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::HSTRING>>(&self, syncrootid: Param0) -> ::windows::core::Result<ISysStorageProviderHttpRequestProvider> {
@@ -186,11 +200,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISysStorageProviderHandlerFactory {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISysStorageProviderHandlerFactory {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -204,7 +213,6 @@ impl ::core::fmt::Debug for ISysStorageProviderHandlerFactory {
 }
 unsafe impl ::windows::core::RuntimeType for ISysStorageProviderHandlerFactory {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{ee798431-8213-5e89-a623-14d8c72b8a61}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -223,6 +231,11 @@ pub struct ISysStorageProviderHandlerFactory_Vtbl {
 #[doc = "*Required features: `\"System_Implementation_FileExplorer\"`*"]
 #[repr(transparent)]
 pub struct ISysStorageProviderHttpRequestProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISysStorageProviderHttpRequestProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISysStorageProviderHttpRequestProvider {
     #[doc = "*Required features: `\"System_Implementation_FileExplorer\"`, `\"Foundation\"`, `\"Web_Http\"`*"]
     #[cfg(all(feature = "Foundation", feature = "Web_Http"))]
@@ -274,11 +287,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISysStorageProviderHttpRequestProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISysStorageProviderHttpRequestProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -292,7 +300,6 @@ impl ::core::fmt::Debug for ISysStorageProviderHttpRequestProvider {
 }
 unsafe impl ::windows::core::RuntimeType for ISysStorageProviderHttpRequestProvider {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{cb6fefb6-e76a-5c25-a33e-3e78a6e0e0ce}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -335,11 +342,6 @@ impl SysStorageProviderEventReceivedEventArgs {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for SysStorageProviderEventReceivedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SysStorageProviderEventReceivedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -353,7 +355,6 @@ impl ::core::fmt::Debug for SysStorageProviderEventReceivedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for SysStorageProviderEventReceivedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.System.Implementation.FileExplorer.SysStorageProviderEventReceivedEventArgs;{e132d1b9-7b9d-5820-9728-4262b5289142})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

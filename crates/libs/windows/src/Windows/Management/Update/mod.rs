@@ -2,6 +2,11 @@
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPreviewBuildsManager(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPreviewBuildsManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPreviewBuildsManager {
     type Vtable = IPreviewBuildsManager_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xfa07dd61_7e4f_59f7_7c9f_def9051c5f62);
@@ -21,6 +26,11 @@ pub struct IPreviewBuildsManager_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPreviewBuildsManagerStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPreviewBuildsManagerStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPreviewBuildsManagerStatics {
     type Vtable = IPreviewBuildsManagerStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x3e422887_b112_5a70_7da1_97d78d32aa29);
@@ -35,6 +45,11 @@ pub struct IPreviewBuildsManagerStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPreviewBuildsState(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPreviewBuildsState {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPreviewBuildsState {
     type Vtable = IPreviewBuildsState_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa2f2903e_b223_5f63_7546_3e8eac070a2e);
@@ -102,11 +117,6 @@ impl PreviewBuildsManager {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for PreviewBuildsManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PreviewBuildsManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -120,7 +130,6 @@ impl ::core::fmt::Debug for PreviewBuildsManager {
 }
 unsafe impl ::windows::core::RuntimeType for PreviewBuildsManager {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Management.Update.PreviewBuildsManager;{fa07dd61-7e4f-59f7-7c9f-def9051c5f62})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -188,11 +197,6 @@ impl PreviewBuildsState {
         }
     }
 }
-impl ::core::clone::Clone for PreviewBuildsState {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PreviewBuildsState {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -206,7 +210,6 @@ impl ::core::fmt::Debug for PreviewBuildsState {
 }
 unsafe impl ::windows::core::RuntimeType for PreviewBuildsState {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Management.Update.PreviewBuildsState;{a2f2903e-b223-5f63-7546-3e8eac070a2e})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

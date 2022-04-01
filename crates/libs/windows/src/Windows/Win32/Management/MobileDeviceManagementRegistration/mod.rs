@@ -169,6 +169,7 @@ impl ::core::fmt::Debug for MANAGEMENT_REGISTRATION_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MANAGEMENT_REGISTRATION_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MANAGEMENT_REGISTRATION_INFO {
@@ -203,6 +204,7 @@ impl ::core::fmt::Debug for MANAGEMENT_SERVICE_INFO {
 }
 unsafe impl ::windows::core::Abi for MANAGEMENT_SERVICE_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MANAGEMENT_SERVICE_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -358,6 +360,7 @@ impl ::core::default::Default for REGISTRATION_INFORMATION_CLASS {
 }
 unsafe impl ::windows::core::Abi for REGISTRATION_INFORMATION_CLASS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for REGISTRATION_INFORMATION_CLASS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

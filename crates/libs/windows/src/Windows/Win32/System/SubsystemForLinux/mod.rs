@@ -24,6 +24,7 @@ impl ::core::default::Default for WSL_DISTRIBUTION_FLAGS {
 }
 unsafe impl ::windows::core::Abi for WSL_DISTRIBUTION_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WSL_DISTRIBUTION_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

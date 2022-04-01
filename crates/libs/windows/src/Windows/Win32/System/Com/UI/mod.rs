@@ -2,6 +2,11 @@
 #[doc = "*Required features: `\"Win32_System_Com_UI\"`*"]
 #[repr(transparent)]
 pub struct IDummyHICONIncluder(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDummyHICONIncluder {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDummyHICONIncluder {
     #[doc = "*Required features: `\"Win32_System_Com_UI\"`, `\"Win32_Graphics_Gdi\"`, `\"Win32_UI_WindowsAndMessaging\"`*"]
     #[cfg(all(feature = "Win32_Graphics_Gdi", feature = "Win32_UI_WindowsAndMessaging"))]
@@ -27,11 +32,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IDummyHIC
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDummyHICONIncluder {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IDummyHICONIncluder {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IDummyHICONIncluder {
@@ -61,6 +61,11 @@ pub struct IDummyHICONIncluder_Vtbl {
 #[doc = "*Required features: `\"Win32_System_Com_UI\"`*"]
 #[repr(transparent)]
 pub struct IThumbnailExtractor(::windows::core::IUnknown);
+impl ::core::clone::Clone for IThumbnailExtractor {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IThumbnailExtractor {
     #[doc = "*Required features: `\"Win32_System_Com_UI\"`, `\"Win32_Graphics_Gdi\"`, `\"Win32_System_Com_StructuredStorage\"`*"]
     #[cfg(all(feature = "Win32_Graphics_Gdi", feature = "Win32_System_Com_StructuredStorage"))]
@@ -91,11 +96,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IThumbnai
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IThumbnailExtractor {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IThumbnailExtractor {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IThumbnailExtractor {

@@ -28,6 +28,7 @@ impl ::core::default::Default for WNV_CA_NOTIFICATION_TYPE {
 }
 unsafe impl ::windows::core::Abi for WNV_CA_NOTIFICATION_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WNV_CA_NOTIFICATION_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -57,6 +58,7 @@ impl ::core::clone::Clone for WNV_CUSTOMER_ADDRESS_CHANGE_PARAM {
 #[cfg(all(feature = "Win32_NetworkManagement_WindowsFilteringPlatform", feature = "Win32_Networking_WinSock"))]
 unsafe impl ::windows::core::Abi for WNV_CUSTOMER_ADDRESS_CHANGE_PARAM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_NetworkManagement_WindowsFilteringPlatform", feature = "Win32_Networking_WinSock"))]
 impl ::core::cmp::PartialEq for WNV_CUSTOMER_ADDRESS_CHANGE_PARAM {
@@ -89,6 +91,7 @@ impl ::core::clone::Clone for WNV_IP_ADDRESS {
 #[cfg(feature = "Win32_Networking_WinSock")]
 unsafe impl ::windows::core::Abi for WNV_IP_ADDRESS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Networking_WinSock")]
 impl ::core::cmp::PartialEq for WNV_IP_ADDRESS {
@@ -123,6 +126,7 @@ impl ::core::clone::Clone for WNV_IP_ADDRESS_0 {
 #[cfg(feature = "Win32_Networking_WinSock")]
 unsafe impl ::windows::core::Abi for WNV_IP_ADDRESS_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Networking_WinSock")]
 impl ::core::cmp::PartialEq for WNV_IP_ADDRESS_0 {
@@ -159,6 +163,7 @@ impl ::core::fmt::Debug for WNV_NOTIFICATION_PARAM {
 }
 unsafe impl ::windows::core::Abi for WNV_NOTIFICATION_PARAM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WNV_NOTIFICATION_PARAM {
     fn eq(&self, other: &Self) -> bool {
@@ -196,6 +201,7 @@ impl ::core::default::Default for WNV_NOTIFICATION_TYPE {
 }
 unsafe impl ::windows::core::Abi for WNV_NOTIFICATION_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WNV_NOTIFICATION_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -220,6 +226,7 @@ impl ::core::clone::Clone for WNV_OBJECT_CHANGE_PARAM {
 #[cfg(all(feature = "Win32_NetworkManagement_WindowsFilteringPlatform", feature = "Win32_Networking_WinSock"))]
 unsafe impl ::windows::core::Abi for WNV_OBJECT_CHANGE_PARAM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_NetworkManagement_WindowsFilteringPlatform", feature = "Win32_Networking_WinSock"))]
 impl ::core::cmp::PartialEq for WNV_OBJECT_CHANGE_PARAM {
@@ -253,6 +260,7 @@ impl ::core::clone::Clone for WNV_OBJECT_CHANGE_PARAM_0 {
 #[cfg(all(feature = "Win32_NetworkManagement_WindowsFilteringPlatform", feature = "Win32_Networking_WinSock"))]
 unsafe impl ::windows::core::Abi for WNV_OBJECT_CHANGE_PARAM_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_NetworkManagement_WindowsFilteringPlatform", feature = "Win32_Networking_WinSock"))]
 impl ::core::cmp::PartialEq for WNV_OBJECT_CHANGE_PARAM_0 {
@@ -288,6 +296,7 @@ impl ::core::fmt::Debug for WNV_OBJECT_HEADER {
 }
 unsafe impl ::windows::core::Abi for WNV_OBJECT_HEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WNV_OBJECT_HEADER {
     fn eq(&self, other: &Self) -> bool {
@@ -323,6 +332,7 @@ impl ::core::default::Default for WNV_OBJECT_TYPE {
 }
 unsafe impl ::windows::core::Abi for WNV_OBJECT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WNV_OBJECT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -350,6 +360,7 @@ impl ::core::clone::Clone for WNV_POLICY_MISMATCH_PARAM {
 #[cfg(feature = "Win32_Networking_WinSock")]
 unsafe impl ::windows::core::Abi for WNV_POLICY_MISMATCH_PARAM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Networking_WinSock")]
 impl ::core::cmp::PartialEq for WNV_POLICY_MISMATCH_PARAM {
@@ -384,6 +395,7 @@ impl ::core::clone::Clone for WNV_PROVIDER_ADDRESS_CHANGE_PARAM {
 #[cfg(feature = "Win32_Networking_WinSock")]
 unsafe impl ::windows::core::Abi for WNV_PROVIDER_ADDRESS_CHANGE_PARAM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Networking_WinSock")]
 impl ::core::cmp::PartialEq for WNV_PROVIDER_ADDRESS_CHANGE_PARAM {
@@ -422,6 +434,7 @@ impl ::core::clone::Clone for WNV_REDIRECT_PARAM {
 #[cfg(feature = "Win32_Networking_WinSock")]
 unsafe impl ::windows::core::Abi for WNV_REDIRECT_PARAM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Networking_WinSock")]
 impl ::core::cmp::PartialEq for WNV_REDIRECT_PARAM {

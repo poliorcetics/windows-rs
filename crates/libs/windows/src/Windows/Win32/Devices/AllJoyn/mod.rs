@@ -1017,6 +1017,7 @@ impl ::core::default::Default for QStatus {
 }
 unsafe impl ::windows::core::Abi for QStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for QStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1052,6 +1053,7 @@ impl ::core::default::Default for alljoyn_about_announceflag {
 }
 unsafe impl ::windows::core::Abi for alljoyn_about_announceflag {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for alljoyn_about_announceflag {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1079,6 +1081,7 @@ impl ::core::fmt::Debug for alljoyn_aboutdata {
 }
 unsafe impl ::windows::core::Abi for alljoyn_aboutdata {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[doc = "*Required features: `\"Win32_Devices_AllJoyn\"`*"]
 #[inline]
@@ -1717,6 +1720,7 @@ impl ::core::fmt::Debug for alljoyn_aboutdatalistener {
 }
 unsafe impl ::windows::core::Abi for alljoyn_aboutdatalistener {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[repr(C)]
 #[doc = "*Required features: `\"Win32_Devices_AllJoyn\"`*"]
@@ -1737,6 +1741,7 @@ impl ::core::fmt::Debug for alljoyn_aboutdatalistener_callbacks {
 }
 unsafe impl ::windows::core::Abi for alljoyn_aboutdatalistener_callbacks {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for alljoyn_aboutdatalistener_callbacks {
     fn eq(&self, other: &Self) -> bool {
@@ -1998,6 +2003,7 @@ impl ::core::fmt::Debug for alljoyn_aboutlistener {
 }
 unsafe impl ::windows::core::Abi for alljoyn_aboutlistener {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[repr(C)]
 #[doc = "*Required features: `\"Win32_Devices_AllJoyn\"`*"]
@@ -2017,6 +2023,7 @@ impl ::core::fmt::Debug for alljoyn_aboutlistener_callback {
 }
 unsafe impl ::windows::core::Abi for alljoyn_aboutlistener_callback {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for alljoyn_aboutlistener_callback {
     fn eq(&self, other: &Self) -> bool {
@@ -2078,6 +2085,7 @@ impl ::core::fmt::Debug for alljoyn_aboutobj {
 }
 unsafe impl ::windows::core::Abi for alljoyn_aboutobj {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[doc = "*Required features: `\"Win32_Devices_AllJoyn\"`*"]
 #[inline]
@@ -2170,6 +2178,7 @@ impl ::core::fmt::Debug for alljoyn_aboutobjectdescription {
 }
 unsafe impl ::windows::core::Abi for alljoyn_aboutobjectdescription {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[doc = "*Required features: `\"Win32_Devices_AllJoyn\"`*"]
 #[inline]
@@ -2360,6 +2369,7 @@ impl ::core::fmt::Debug for alljoyn_aboutproxy {
 }
 unsafe impl ::windows::core::Abi for alljoyn_aboutproxy {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[doc = "*Required features: `\"Win32_Devices_AllJoyn\"`*"]
 #[inline]
@@ -2456,6 +2466,7 @@ impl ::core::default::Default for alljoyn_applicationstate {
 }
 unsafe impl ::windows::core::Abi for alljoyn_applicationstate {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for alljoyn_applicationstate {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2483,6 +2494,7 @@ impl ::core::fmt::Debug for alljoyn_applicationstatelistener {
 }
 unsafe impl ::windows::core::Abi for alljoyn_applicationstatelistener {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[repr(C)]
 #[doc = "*Required features: `\"Win32_Devices_AllJoyn\"`*"]
@@ -2502,6 +2514,7 @@ impl ::core::fmt::Debug for alljoyn_applicationstatelistener_callbacks {
 }
 unsafe impl ::windows::core::Abi for alljoyn_applicationstatelistener_callbacks {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for alljoyn_applicationstatelistener_callbacks {
     fn eq(&self, other: &Self) -> bool {
@@ -2565,6 +2578,7 @@ impl ::core::fmt::Debug for alljoyn_authlistener {
 }
 unsafe impl ::windows::core::Abi for alljoyn_authlistener {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[doc = "*Required features: `\"Win32_Devices_AllJoyn\"`*"]
 pub type alljoyn_authlistener_authenticationcomplete_ptr = ::core::option::Option<unsafe extern "system" fn(context: *const ::core::ffi::c_void, authmechanism: ::windows::core::PCSTR, peername: ::windows::core::PCSTR, success: i32)>;
@@ -2589,6 +2603,7 @@ impl ::core::fmt::Debug for alljoyn_authlistener_callbacks {
 }
 unsafe impl ::windows::core::Abi for alljoyn_authlistener_callbacks {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for alljoyn_authlistener_callbacks {
     fn eq(&self, other: &Self) -> bool {
@@ -2702,6 +2717,7 @@ impl ::core::fmt::Debug for alljoyn_authlistenerasync_callbacks {
 }
 unsafe impl ::windows::core::Abi for alljoyn_authlistenerasync_callbacks {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for alljoyn_authlistenerasync_callbacks {
     fn eq(&self, other: &Self) -> bool {
@@ -2763,6 +2779,7 @@ impl ::core::fmt::Debug for alljoyn_autopinger {
 }
 unsafe impl ::windows::core::Abi for alljoyn_autopinger {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[doc = "*Required features: `\"Win32_Devices_AllJoyn\"`*"]
 #[inline]
@@ -2915,6 +2932,7 @@ impl ::core::fmt::Debug for alljoyn_busattachment {
 }
 unsafe impl ::windows::core::Abi for alljoyn_busattachment {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[doc = "*Required features: `\"Win32_Devices_AllJoyn\"`*"]
 #[inline]
@@ -4089,6 +4107,7 @@ impl ::core::fmt::Debug for alljoyn_buslistener {
 }
 unsafe impl ::windows::core::Abi for alljoyn_buslistener {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[doc = "*Required features: `\"Win32_Devices_AllJoyn\"`*"]
 pub type alljoyn_buslistener_bus_disconnected_ptr = ::core::option::Option<unsafe extern "system" fn(context: *const ::core::ffi::c_void)>;
@@ -4130,6 +4149,7 @@ impl ::core::fmt::Debug for alljoyn_buslistener_callbacks {
 }
 unsafe impl ::windows::core::Abi for alljoyn_buslistener_callbacks {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for alljoyn_buslistener_callbacks {
     fn eq(&self, other: &Self) -> bool {
@@ -4201,6 +4221,7 @@ impl ::core::fmt::Debug for alljoyn_busobject {
 }
 unsafe impl ::windows::core::Abi for alljoyn_busobject {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[doc = "*Required features: `\"Win32_Devices_AllJoyn\"`*"]
 #[inline]
@@ -4279,6 +4300,7 @@ impl ::core::fmt::Debug for alljoyn_busobject_callbacks {
 }
 unsafe impl ::windows::core::Abi for alljoyn_busobject_callbacks {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for alljoyn_busobject_callbacks {
     fn eq(&self, other: &Self) -> bool {
@@ -4464,6 +4486,7 @@ impl ::core::fmt::Debug for alljoyn_busobject_methodentry {
 }
 unsafe impl ::windows::core::Abi for alljoyn_busobject_methodentry {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for alljoyn_busobject_methodentry {
     fn eq(&self, other: &Self) -> bool {
@@ -4574,6 +4597,7 @@ impl ::core::fmt::Debug for alljoyn_certificateid {
 }
 unsafe impl ::windows::core::Abi for alljoyn_certificateid {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for alljoyn_certificateid {
     fn eq(&self, other: &Self) -> bool {
@@ -4605,6 +4629,7 @@ impl ::core::fmt::Debug for alljoyn_certificateidarray {
 }
 unsafe impl ::windows::core::Abi for alljoyn_certificateidarray {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for alljoyn_certificateidarray {
     fn eq(&self, other: &Self) -> bool {
@@ -4640,6 +4665,7 @@ impl ::core::default::Default for alljoyn_claimcapability_masks {
 }
 unsafe impl ::windows::core::Abi for alljoyn_claimcapability_masks {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for alljoyn_claimcapability_masks {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4667,6 +4693,7 @@ impl ::core::default::Default for alljoyn_claimcapabilityadditionalinfo_masks {
 }
 unsafe impl ::windows::core::Abi for alljoyn_claimcapabilityadditionalinfo_masks {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for alljoyn_claimcapabilityadditionalinfo_masks {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4694,6 +4721,7 @@ impl ::core::fmt::Debug for alljoyn_credentials {
 }
 unsafe impl ::windows::core::Abi for alljoyn_credentials {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[doc = "*Required features: `\"Win32_Devices_AllJoyn\"`*"]
 #[inline]
@@ -4996,6 +5024,7 @@ impl ::core::fmt::Debug for alljoyn_interfacedescription {
 }
 unsafe impl ::windows::core::Abi for alljoyn_interfacedescription {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[doc = "*Required features: `\"Win32_Devices_AllJoyn\"`*"]
 #[inline]
@@ -5539,6 +5568,7 @@ impl ::core::fmt::Debug for alljoyn_interfacedescription_member {
 }
 unsafe impl ::windows::core::Abi for alljoyn_interfacedescription_member {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for alljoyn_interfacedescription_member {
     fn eq(&self, other: &Self) -> bool {
@@ -5670,6 +5700,7 @@ impl ::core::fmt::Debug for alljoyn_interfacedescription_property {
 }
 unsafe impl ::windows::core::Abi for alljoyn_interfacedescription_property {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for alljoyn_interfacedescription_property {
     fn eq(&self, other: &Self) -> bool {
@@ -5761,6 +5792,7 @@ impl ::core::default::Default for alljoyn_interfacedescription_securitypolicy {
 }
 unsafe impl ::windows::core::Abi for alljoyn_interfacedescription_securitypolicy {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for alljoyn_interfacedescription_securitypolicy {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5930,6 +5962,7 @@ impl ::core::fmt::Debug for alljoyn_keystore {
 }
 unsafe impl ::windows::core::Abi for alljoyn_keystore {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[repr(transparent)]
 #[derive(:: core :: cmp :: PartialEq, :: core :: cmp :: Eq)]
@@ -5952,6 +5985,7 @@ impl ::core::fmt::Debug for alljoyn_keystorelistener {
 }
 unsafe impl ::windows::core::Abi for alljoyn_keystorelistener {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[doc = "*Required features: `\"Win32_Devices_AllJoyn\"`*"]
 pub type alljoyn_keystorelistener_acquireexclusivelock_ptr = ::core::option::Option<unsafe extern "system" fn(context: *const ::core::ffi::c_void, listener: alljoyn_keystorelistener) -> QStatus>;
@@ -5974,6 +6008,7 @@ impl ::core::fmt::Debug for alljoyn_keystorelistener_callbacks {
 }
 unsafe impl ::windows::core::Abi for alljoyn_keystorelistener_callbacks {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for alljoyn_keystorelistener_callbacks {
     fn eq(&self, other: &Self) -> bool {
@@ -6069,6 +6104,7 @@ impl ::core::fmt::Debug for alljoyn_keystorelistener_with_synchronization_callba
 }
 unsafe impl ::windows::core::Abi for alljoyn_keystorelistener_with_synchronization_callbacks {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for alljoyn_keystorelistener_with_synchronization_callbacks {
     fn eq(&self, other: &Self) -> bool {
@@ -6114,6 +6150,7 @@ impl ::core::fmt::Debug for alljoyn_manifestarray {
 }
 unsafe impl ::windows::core::Abi for alljoyn_manifestarray {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for alljoyn_manifestarray {
     fn eq(&self, other: &Self) -> bool {
@@ -6147,6 +6184,7 @@ impl ::core::fmt::Debug for alljoyn_message {
 }
 unsafe impl ::windows::core::Abi for alljoyn_message {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[doc = "*Required features: `\"Win32_Devices_AllJoyn\"`*"]
 #[inline]
@@ -6615,6 +6653,7 @@ impl ::core::default::Default for alljoyn_messagetype {
 }
 unsafe impl ::windows::core::Abi for alljoyn_messagetype {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for alljoyn_messagetype {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6642,6 +6681,7 @@ impl ::core::fmt::Debug for alljoyn_msgarg {
 }
 unsafe impl ::windows::core::Abi for alljoyn_msgarg {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[doc = "*Required features: `\"Win32_Devices_AllJoyn\"`*"]
 #[inline]
@@ -7770,6 +7810,7 @@ impl ::core::fmt::Debug for alljoyn_observer {
 }
 unsafe impl ::windows::core::Abi for alljoyn_observer {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[doc = "*Required features: `\"Win32_Devices_AllJoyn\"`*"]
 #[inline]
@@ -7908,6 +7949,7 @@ impl ::core::fmt::Debug for alljoyn_observerlistener {
 }
 unsafe impl ::windows::core::Abi for alljoyn_observerlistener {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[repr(C)]
 #[doc = "*Required features: `\"Win32_Devices_AllJoyn\"`*"]
@@ -7928,6 +7970,7 @@ impl ::core::fmt::Debug for alljoyn_observerlistener_callback {
 }
 unsafe impl ::windows::core::Abi for alljoyn_observerlistener_callback {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for alljoyn_observerlistener_callback {
     fn eq(&self, other: &Self) -> bool {
@@ -8003,6 +8046,7 @@ impl ::core::fmt::Debug for alljoyn_permissionconfigurationlistener {
 }
 unsafe impl ::windows::core::Abi for alljoyn_permissionconfigurationlistener {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[repr(C)]
 #[doc = "*Required features: `\"Win32_Devices_AllJoyn\"`*"]
@@ -8025,6 +8069,7 @@ impl ::core::fmt::Debug for alljoyn_permissionconfigurationlistener_callbacks {
 }
 unsafe impl ::windows::core::Abi for alljoyn_permissionconfigurationlistener_callbacks {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for alljoyn_permissionconfigurationlistener_callbacks {
     fn eq(&self, other: &Self) -> bool {
@@ -8094,6 +8139,7 @@ impl ::core::fmt::Debug for alljoyn_permissionconfigurator {
 }
 unsafe impl ::windows::core::Abi for alljoyn_permissionconfigurator {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[doc = "*Required features: `\"Win32_Devices_AllJoyn\"`*"]
 #[inline]
@@ -8578,6 +8624,7 @@ impl ::core::fmt::Debug for alljoyn_pinglistener {
 }
 unsafe impl ::windows::core::Abi for alljoyn_pinglistener {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[repr(C)]
 #[doc = "*Required features: `\"Win32_Devices_AllJoyn\"`*"]
@@ -8598,6 +8645,7 @@ impl ::core::fmt::Debug for alljoyn_pinglistener_callback {
 }
 unsafe impl ::windows::core::Abi for alljoyn_pinglistener_callback {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for alljoyn_pinglistener_callback {
     fn eq(&self, other: &Self) -> bool {
@@ -8659,6 +8707,7 @@ impl ::core::fmt::Debug for alljoyn_proxybusobject {
 }
 unsafe impl ::windows::core::Abi for alljoyn_proxybusobject {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[doc = "*Required features: `\"Win32_Devices_AllJoyn\"`*"]
 #[inline]
@@ -9139,6 +9188,7 @@ impl ::core::fmt::Debug for alljoyn_proxybusobject_ref {
 }
 unsafe impl ::windows::core::Abi for alljoyn_proxybusobject_ref {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[doc = "*Required features: `\"Win32_Devices_AllJoyn\"`*"]
 #[inline]
@@ -9357,6 +9407,7 @@ impl ::core::fmt::Debug for alljoyn_securityapplicationproxy {
 }
 unsafe impl ::windows::core::Abi for alljoyn_securityapplicationproxy {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[doc = "*Required features: `\"Win32_Devices_AllJoyn\"`*"]
 #[inline]
@@ -9743,6 +9794,7 @@ impl ::core::fmt::Debug for alljoyn_sessionlistener {
 }
 unsafe impl ::windows::core::Abi for alljoyn_sessionlistener {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[repr(C)]
 #[doc = "*Required features: `\"Win32_Devices_AllJoyn\"`*"]
@@ -9764,6 +9816,7 @@ impl ::core::fmt::Debug for alljoyn_sessionlistener_callbacks {
 }
 unsafe impl ::windows::core::Abi for alljoyn_sessionlistener_callbacks {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for alljoyn_sessionlistener_callbacks {
     fn eq(&self, other: &Self) -> bool {
@@ -9839,6 +9892,7 @@ impl ::core::default::Default for alljoyn_sessionlostreason {
 }
 unsafe impl ::windows::core::Abi for alljoyn_sessionlostreason {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for alljoyn_sessionlostreason {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9866,6 +9920,7 @@ impl ::core::fmt::Debug for alljoyn_sessionopts {
 }
 unsafe impl ::windows::core::Abi for alljoyn_sessionopts {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[doc = "*Required features: `\"Win32_Devices_AllJoyn\"`*"]
 #[inline]
@@ -10056,6 +10111,7 @@ impl ::core::fmt::Debug for alljoyn_sessionportlistener {
 }
 unsafe impl ::windows::core::Abi for alljoyn_sessionportlistener {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[doc = "*Required features: `\"Win32_Devices_AllJoyn\"`*"]
 pub type alljoyn_sessionportlistener_acceptsessionjoiner_ptr = ::core::option::Option<unsafe extern "system" fn(context: *const ::core::ffi::c_void, sessionport: u16, joiner: ::windows::core::PCSTR, opts: alljoyn_sessionopts) -> i32>;
@@ -10078,6 +10134,7 @@ impl ::core::fmt::Debug for alljoyn_sessionportlistener_callbacks {
 }
 unsafe impl ::windows::core::Abi for alljoyn_sessionportlistener_callbacks {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for alljoyn_sessionportlistener_callbacks {
     fn eq(&self, other: &Self) -> bool {
@@ -10215,6 +10272,7 @@ impl ::core::default::Default for alljoyn_typeid {
 }
 unsafe impl ::windows::core::Abi for alljoyn_typeid {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for alljoyn_typeid {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

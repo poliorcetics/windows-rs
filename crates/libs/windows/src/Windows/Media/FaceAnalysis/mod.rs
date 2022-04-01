@@ -13,11 +13,6 @@ impl DetectedFace {
         }
     }
 }
-impl ::core::clone::Clone for DetectedFace {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DetectedFace {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -31,7 +26,6 @@ impl ::core::fmt::Debug for DetectedFace {
 }
 unsafe impl ::windows::core::RuntimeType for DetectedFace {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.FaceAnalysis.DetectedFace;{8200d454-66bc-34df-9410-e89400195414})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -174,11 +168,6 @@ impl FaceDetector {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for FaceDetector {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for FaceDetector {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -192,7 +181,6 @@ impl ::core::fmt::Debug for FaceDetector {
 }
 unsafe impl ::windows::core::RuntimeType for FaceDetector {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.FaceAnalysis.FaceDetector;{16b672dc-fe6f-3117-8d95-c3f04d51630c})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -326,11 +314,6 @@ impl FaceTracker {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for FaceTracker {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for FaceTracker {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -344,7 +327,6 @@ impl ::core::fmt::Debug for FaceTracker {
 }
 unsafe impl ::windows::core::RuntimeType for FaceTracker {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.FaceAnalysis.FaceTracker;{6ba67d8c-a841-4420-93e6-2420a1884fcf})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -401,6 +383,11 @@ unsafe impl ::core::marker::Sync for FaceTracker {}
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDetectedFace(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDetectedFace {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDetectedFace {
     type Vtable = IDetectedFace_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x8200d454_66bc_34df_9410_e89400195414);
@@ -417,6 +404,11 @@ pub struct IDetectedFace_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IFaceDetector(::windows::core::IUnknown);
+impl ::core::clone::Clone for IFaceDetector {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IFaceDetector {
     type Vtable = IFaceDetector_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x16b672dc_fe6f_3117_8d95_c3f04d51630c);
@@ -453,6 +445,11 @@ pub struct IFaceDetector_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IFaceDetectorStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IFaceDetectorStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IFaceDetectorStatics {
     type Vtable = IFaceDetectorStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xbc042d67_9047_33f6_881b_6746c1b218b8);
@@ -478,6 +475,11 @@ pub struct IFaceDetectorStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IFaceTracker(::windows::core::IUnknown);
+impl ::core::clone::Clone for IFaceTracker {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IFaceTracker {
     type Vtable = IFaceTracker_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x6ba67d8c_a841_4420_93e6_2420a1884fcf);
@@ -510,6 +512,11 @@ pub struct IFaceTracker_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IFaceTrackerStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IFaceTrackerStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IFaceTrackerStatics {
     type Vtable = IFaceTrackerStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe9629198_1801_3fa5_932e_31d767af6c4d);

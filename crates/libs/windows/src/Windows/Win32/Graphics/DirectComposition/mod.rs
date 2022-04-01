@@ -26,6 +26,7 @@ impl ::core::default::Default for COMPOSITION_FRAME_ID_TYPE {
 }
 unsafe impl ::windows::core::Abi for COMPOSITION_FRAME_ID_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for COMPOSITION_FRAME_ID_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -52,6 +53,7 @@ impl ::core::fmt::Debug for COMPOSITION_FRAME_STATS {
 }
 unsafe impl ::windows::core::Abi for COMPOSITION_FRAME_STATS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for COMPOSITION_FRAME_STATS {
     fn eq(&self, other: &Self) -> bool {
@@ -85,6 +87,7 @@ impl ::core::fmt::Debug for COMPOSITION_STATS {
 }
 unsafe impl ::windows::core::Abi for COMPOSITION_STATS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for COMPOSITION_STATS {
     fn eq(&self, other: &Self) -> bool {
@@ -126,6 +129,7 @@ impl ::core::fmt::Debug for COMPOSITION_TARGET_ID {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for COMPOSITION_TARGET_ID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for COMPOSITION_TARGET_ID {
@@ -163,6 +167,7 @@ impl ::core::fmt::Debug for COMPOSITION_TARGET_STATS {
 }
 unsafe impl ::windows::core::Abi for COMPOSITION_TARGET_STATS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for COMPOSITION_TARGET_STATS {
     fn eq(&self, other: &Self) -> bool {
@@ -198,6 +203,7 @@ impl ::core::default::Default for DCOMPOSITION_BACKFACE_VISIBILITY {
 }
 unsafe impl ::windows::core::Abi for DCOMPOSITION_BACKFACE_VISIBILITY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DCOMPOSITION_BACKFACE_VISIBILITY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -227,6 +233,7 @@ impl ::core::default::Default for DCOMPOSITION_BITMAP_INTERPOLATION_MODE {
 }
 unsafe impl ::windows::core::Abi for DCOMPOSITION_BITMAP_INTERPOLATION_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DCOMPOSITION_BITMAP_INTERPOLATION_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -256,6 +263,7 @@ impl ::core::default::Default for DCOMPOSITION_BORDER_MODE {
 }
 unsafe impl ::windows::core::Abi for DCOMPOSITION_BORDER_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DCOMPOSITION_BORDER_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -287,6 +295,7 @@ impl ::core::default::Default for DCOMPOSITION_COMPOSITE_MODE {
 }
 unsafe impl ::windows::core::Abi for DCOMPOSITION_COMPOSITE_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DCOMPOSITION_COMPOSITE_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -318,6 +327,7 @@ impl ::core::default::Default for DCOMPOSITION_DEPTH_MODE {
 }
 unsafe impl ::windows::core::Abi for DCOMPOSITION_DEPTH_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DCOMPOSITION_DEPTH_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -351,6 +361,7 @@ impl ::core::fmt::Debug for DCOMPOSITION_FRAME_STATISTICS {
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 unsafe impl ::windows::core::Abi for DCOMPOSITION_FRAME_STATISTICS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
 impl ::core::cmp::PartialEq for DCOMPOSITION_FRAME_STATISTICS {
@@ -391,6 +402,7 @@ impl ::core::default::Default for DCOMPOSITION_OPACITY_MODE {
 }
 unsafe impl ::windows::core::Abi for DCOMPOSITION_OPACITY_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DCOMPOSITION_OPACITY_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -567,6 +579,7 @@ impl ::core::fmt::Debug for DCompositionInkTrailPoint {
 }
 unsafe impl ::windows::core::Abi for DCompositionInkTrailPoint {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DCompositionInkTrailPoint {
     fn eq(&self, other: &Self) -> bool {
@@ -597,6 +610,11 @@ pub unsafe fn DCompositionWaitForCompositorClock(handles: &[super::super::Founda
 #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`*"]
 #[repr(transparent)]
 pub struct IDCompositionAffineTransform2DEffect(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDCompositionAffineTransform2DEffect {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDCompositionAffineTransform2DEffect {
     #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`*"]
     pub unsafe fn SetInput<'a, Param1: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, index: u32, input: Param1, flags: u32) -> ::windows::core::Result<()> {
@@ -694,11 +712,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDCompositionFilterEffect> for &'a IDCom
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDCompositionAffineTransform2DEffect {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDCompositionAffineTransform2DEffect {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -738,6 +751,11 @@ pub struct IDCompositionAffineTransform2DEffect_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`*"]
 #[repr(transparent)]
 pub struct IDCompositionAnimation(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDCompositionAnimation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDCompositionAnimation {
     #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`*"]
     pub unsafe fn Reset(&self) -> ::windows::core::Result<()> {
@@ -784,11 +802,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDCom
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDCompositionAnimation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDCompositionAnimation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -818,6 +831,11 @@ pub struct IDCompositionAnimation_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`*"]
 #[repr(transparent)]
 pub struct IDCompositionArithmeticCompositeEffect(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDCompositionArithmeticCompositeEffect {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDCompositionArithmeticCompositeEffect {
     #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`*"]
     pub unsafe fn SetInput<'a, Param1: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, index: u32, input: Param1, flags: u32) -> ::windows::core::Result<()> {
@@ -926,11 +944,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDCompositionFilterEffect> for &'a IDCom
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDCompositionArithmeticCompositeEffect {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDCompositionArithmeticCompositeEffect {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -970,6 +983,11 @@ pub struct IDCompositionArithmeticCompositeEffect_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`*"]
 #[repr(transparent)]
 pub struct IDCompositionBlendEffect(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDCompositionBlendEffect {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDCompositionBlendEffect {
     #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`*"]
     pub unsafe fn SetInput<'a, Param1: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, index: u32, input: Param1, flags: u32) -> ::windows::core::Result<()> {
@@ -1041,11 +1059,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDCompositionFilterEffect> for &'a IDCom
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDCompositionBlendEffect {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDCompositionBlendEffect {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1073,6 +1086,11 @@ pub struct IDCompositionBlendEffect_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`*"]
 #[repr(transparent)]
 pub struct IDCompositionBrightnessEffect(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDCompositionBrightnessEffect {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDCompositionBrightnessEffect {
     #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`*"]
     pub unsafe fn SetInput<'a, Param1: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, index: u32, input: Param1, flags: u32) -> ::windows::core::Result<()> {
@@ -1181,11 +1199,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDCompositionFilterEffect> for &'a IDCom
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDCompositionBrightnessEffect {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDCompositionBrightnessEffect {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1225,6 +1238,11 @@ pub struct IDCompositionBrightnessEffect_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`*"]
 #[repr(transparent)]
 pub struct IDCompositionClip(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDCompositionClip {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDCompositionClip {}
 impl ::core::convert::From<IDCompositionClip> for ::windows::core::IUnknown {
     fn from(value: IDCompositionClip) -> Self {
@@ -1244,11 +1262,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IDComposi
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDCompositionClip {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IDCompositionClip {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IDCompositionClip {
@@ -1274,6 +1287,11 @@ pub struct IDCompositionClip_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`*"]
 #[repr(transparent)]
 pub struct IDCompositionColorMatrixEffect(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDCompositionColorMatrixEffect {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDCompositionColorMatrixEffect {
     #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`*"]
     pub unsafe fn SetInput<'a, Param1: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, index: u32, input: Param1, flags: u32) -> ::windows::core::Result<()> {
@@ -1363,11 +1381,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDCompositionFilterEffect> for &'a IDCom
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDCompositionColorMatrixEffect {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDCompositionColorMatrixEffect {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1405,6 +1418,11 @@ pub struct IDCompositionColorMatrixEffect_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`*"]
 #[repr(transparent)]
 pub struct IDCompositionCompositeEffect(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDCompositionCompositeEffect {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDCompositionCompositeEffect {
     #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`*"]
     pub unsafe fn SetInput<'a, Param1: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, index: u32, input: Param1, flags: u32) -> ::windows::core::Result<()> {
@@ -1476,11 +1494,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDCompositionFilterEffect> for &'a IDCom
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDCompositionCompositeEffect {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDCompositionCompositeEffect {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1508,6 +1521,11 @@ pub struct IDCompositionCompositeEffect_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`*"]
 #[repr(transparent)]
 pub struct IDCompositionDelegatedInkTrail(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDCompositionDelegatedInkTrail {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDCompositionDelegatedInkTrail {
     #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`*"]
     pub unsafe fn AddTrailPoints(&self, inkpoints: &[DCompositionInkTrailPoint]) -> ::windows::core::Result<u32> {
@@ -1549,11 +1567,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDCom
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDCompositionDelegatedInkTrail {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDCompositionDelegatedInkTrail {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1584,6 +1597,11 @@ pub struct IDCompositionDelegatedInkTrail_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`*"]
 #[repr(transparent)]
 pub struct IDCompositionDesktopDevice(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDCompositionDesktopDevice {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDCompositionDesktopDevice {
     #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`*"]
     pub unsafe fn Commit(&self) -> ::windows::core::Result<()> {
@@ -1750,11 +1768,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDCompositionDevice2> for &'a IDComposit
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDCompositionDesktopDevice {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDCompositionDesktopDevice {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1790,6 +1803,11 @@ pub struct IDCompositionDesktopDevice_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`*"]
 #[repr(transparent)]
 pub struct IDCompositionDevice(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDCompositionDevice {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDCompositionDevice {
     #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`*"]
     pub unsafe fn Commit(&self) -> ::windows::core::Result<()> {
@@ -1937,11 +1955,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDCom
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDCompositionDevice {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDCompositionDevice {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2010,6 +2023,11 @@ pub struct IDCompositionDevice_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`*"]
 #[repr(transparent)]
 pub struct IDCompositionDevice2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDCompositionDevice2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDCompositionDevice2 {
     #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`*"]
     pub unsafe fn Commit(&self) -> ::windows::core::Result<()> {
@@ -2138,11 +2156,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDCom
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDCompositionDevice2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDCompositionDevice2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2196,6 +2209,11 @@ pub struct IDCompositionDevice2_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`*"]
 #[repr(transparent)]
 pub struct IDCompositionDevice3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDCompositionDevice3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDCompositionDevice3 {
     #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`*"]
     pub unsafe fn Commit(&self) -> ::windows::core::Result<()> {
@@ -2409,11 +2427,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDCompositionDevice2> for &'a IDComposit
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDCompositionDevice3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDCompositionDevice3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2450,6 +2463,11 @@ pub struct IDCompositionDevice3_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`*"]
 #[repr(transparent)]
 pub struct IDCompositionDeviceDebug(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDCompositionDeviceDebug {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDCompositionDeviceDebug {
     #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`*"]
     pub unsafe fn EnableDebugCounters(&self) -> ::windows::core::Result<()> {
@@ -2480,11 +2498,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDCom
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDCompositionDeviceDebug {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDCompositionDeviceDebug {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2510,6 +2523,11 @@ pub struct IDCompositionDeviceDebug_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`*"]
 #[repr(transparent)]
 pub struct IDCompositionEffect(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDCompositionEffect {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDCompositionEffect {}
 impl ::core::convert::From<IDCompositionEffect> for ::windows::core::IUnknown {
     fn from(value: IDCompositionEffect) -> Self {
@@ -2529,11 +2547,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IDComposi
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDCompositionEffect {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IDCompositionEffect {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IDCompositionEffect {
@@ -2559,6 +2572,11 @@ pub struct IDCompositionEffect_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`*"]
 #[repr(transparent)]
 pub struct IDCompositionEffectGroup(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDCompositionEffectGroup {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDCompositionEffectGroup {
     #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`*"]
     pub unsafe fn SetOpacity<'a, Param0: ::windows::core::IntoParam<'a, IDCompositionAnimation>>(&self, animation: Param0) -> ::windows::core::Result<()> {
@@ -2613,11 +2631,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDCompositionEffect> for &'a IDCompositi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDCompositionEffectGroup {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDCompositionEffectGroup {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2644,6 +2657,11 @@ pub struct IDCompositionEffectGroup_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`*"]
 #[repr(transparent)]
 pub struct IDCompositionFilterEffect(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDCompositionFilterEffect {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDCompositionFilterEffect {
     #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`*"]
     pub unsafe fn SetInput<'a, Param1: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, index: u32, input: Param1, flags: u32) -> ::windows::core::Result<()> {
@@ -2690,11 +2708,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDCompositionEffect> for &'a IDCompositi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDCompositionFilterEffect {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDCompositionFilterEffect {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2719,6 +2732,11 @@ pub struct IDCompositionFilterEffect_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`*"]
 #[repr(transparent)]
 pub struct IDCompositionGaussianBlurEffect(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDCompositionGaussianBlurEffect {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDCompositionGaussianBlurEffect {
     #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`*"]
     pub unsafe fn SetInput<'a, Param1: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, index: u32, input: Param1, flags: u32) -> ::windows::core::Result<()> {
@@ -2798,11 +2816,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDCompositionFilterEffect> for &'a IDCom
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDCompositionGaussianBlurEffect {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDCompositionGaussianBlurEffect {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2832,6 +2845,11 @@ pub struct IDCompositionGaussianBlurEffect_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`*"]
 #[repr(transparent)]
 pub struct IDCompositionHueRotationEffect(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDCompositionHueRotationEffect {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDCompositionHueRotationEffect {
     #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`*"]
     pub unsafe fn SetInput<'a, Param1: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, index: u32, input: Param1, flags: u32) -> ::windows::core::Result<()> {
@@ -2906,11 +2924,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDCompositionFilterEffect> for &'a IDCom
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDCompositionHueRotationEffect {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDCompositionHueRotationEffect {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2936,6 +2949,11 @@ pub struct IDCompositionHueRotationEffect_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`*"]
 #[repr(transparent)]
 pub struct IDCompositionInkTrailDevice(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDCompositionInkTrailDevice {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDCompositionInkTrailDevice {
     #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`*"]
     pub unsafe fn CreateDelegatedInkTrail(&self) -> ::windows::core::Result<IDCompositionDelegatedInkTrail> {
@@ -2968,11 +2986,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDCom
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDCompositionInkTrailDevice {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDCompositionInkTrailDevice {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2998,6 +3011,11 @@ pub struct IDCompositionInkTrailDevice_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`*"]
 #[repr(transparent)]
 pub struct IDCompositionLinearTransferEffect(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDCompositionLinearTransferEffect {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDCompositionLinearTransferEffect {
     #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`*"]
     pub unsafe fn SetInput<'a, Param1: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, index: u32, input: Param1, flags: u32) -> ::windows::core::Result<()> {
@@ -3153,11 +3171,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDCompositionFilterEffect> for &'a IDCom
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDCompositionLinearTransferEffect {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDCompositionLinearTransferEffect {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3217,6 +3230,11 @@ pub struct IDCompositionLinearTransferEffect_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`*"]
 #[repr(transparent)]
 pub struct IDCompositionMatrixTransform(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDCompositionMatrixTransform {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDCompositionMatrixTransform {
     #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`, `\"Foundation_Numerics\"`*"]
     #[cfg(feature = "Foundation_Numerics")]
@@ -3312,11 +3330,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDCompositionTransform> for &'a IDCompos
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDCompositionMatrixTransform {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDCompositionMatrixTransform {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3346,6 +3359,11 @@ pub struct IDCompositionMatrixTransform_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`*"]
 #[repr(transparent)]
 pub struct IDCompositionMatrixTransform3D(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDCompositionMatrixTransform3D {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDCompositionMatrixTransform3D {
     #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`, `\"Win32_Graphics_Direct3D\"`*"]
     #[cfg(feature = "Win32_Graphics_Direct3D")]
@@ -3421,11 +3439,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDCompositionTransform3D> for &'a IDComp
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDCompositionMatrixTransform3D {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDCompositionMatrixTransform3D {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3455,6 +3468,11 @@ pub struct IDCompositionMatrixTransform3D_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`*"]
 #[repr(transparent)]
 pub struct IDCompositionRectangleClip(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDCompositionRectangleClip {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDCompositionRectangleClip {
     #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`*"]
     pub unsafe fn SetLeft<'a, Param0: ::windows::core::IntoParam<'a, IDCompositionAnimation>>(&self, animation: Param0) -> ::windows::core::Result<()> {
@@ -3593,11 +3611,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDCompositionClip> for &'a IDComposition
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDCompositionRectangleClip {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDCompositionRectangleClip {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3645,6 +3658,11 @@ pub struct IDCompositionRectangleClip_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`*"]
 #[repr(transparent)]
 pub struct IDCompositionRotateTransform(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDCompositionRotateTransform {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDCompositionRotateTransform {
     #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`*"]
     pub unsafe fn SetAngle<'a, Param0: ::windows::core::IntoParam<'a, IDCompositionAnimation>>(&self, animation: Param0) -> ::windows::core::Result<()> {
@@ -3751,11 +3769,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDCompositionTransform> for &'a IDCompos
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDCompositionRotateTransform {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDCompositionRotateTransform {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3785,6 +3798,11 @@ pub struct IDCompositionRotateTransform_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`*"]
 #[repr(transparent)]
 pub struct IDCompositionRotateTransform3D(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDCompositionRotateTransform3D {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDCompositionRotateTransform3D {
     #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`*"]
     pub unsafe fn SetAngle<'a, Param0: ::windows::core::IntoParam<'a, IDCompositionAnimation>>(&self, animation: Param0) -> ::windows::core::Result<()> {
@@ -3903,11 +3921,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDCompositionTransform3D> for &'a IDComp
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDCompositionRotateTransform3D {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDCompositionRotateTransform3D {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3945,6 +3958,11 @@ pub struct IDCompositionRotateTransform3D_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`*"]
 #[repr(transparent)]
 pub struct IDCompositionSaturationEffect(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDCompositionSaturationEffect {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDCompositionSaturationEffect {
     #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`*"]
     pub unsafe fn SetInput<'a, Param1: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, index: u32, input: Param1, flags: u32) -> ::windows::core::Result<()> {
@@ -4019,11 +4037,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDCompositionFilterEffect> for &'a IDCom
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDCompositionSaturationEffect {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDCompositionSaturationEffect {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4049,6 +4062,11 @@ pub struct IDCompositionSaturationEffect_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`*"]
 #[repr(transparent)]
 pub struct IDCompositionScaleTransform(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDCompositionScaleTransform {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDCompositionScaleTransform {
     #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`*"]
     pub unsafe fn SetScaleX<'a, Param0: ::windows::core::IntoParam<'a, IDCompositionAnimation>>(&self, animation: Param0) -> ::windows::core::Result<()> {
@@ -4163,11 +4181,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDCompositionTransform> for &'a IDCompos
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDCompositionScaleTransform {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDCompositionScaleTransform {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4199,6 +4212,11 @@ pub struct IDCompositionScaleTransform_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`*"]
 #[repr(transparent)]
 pub struct IDCompositionScaleTransform3D(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDCompositionScaleTransform3D {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDCompositionScaleTransform3D {
     #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`*"]
     pub unsafe fn SetScaleX<'a, Param0: ::windows::core::IntoParam<'a, IDCompositionAnimation>>(&self, animation: Param0) -> ::windows::core::Result<()> {
@@ -4309,11 +4327,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDCompositionTransform3D> for &'a IDComp
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDCompositionScaleTransform3D {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDCompositionScaleTransform3D {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4349,6 +4362,11 @@ pub struct IDCompositionScaleTransform3D_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`*"]
 #[repr(transparent)]
 pub struct IDCompositionShadowEffect(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDCompositionShadowEffect {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDCompositionShadowEffect {
     #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`*"]
     pub unsafe fn SetInput<'a, Param1: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, index: u32, input: Param1, flags: u32) -> ::windows::core::Result<()> {
@@ -4460,11 +4478,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDCompositionFilterEffect> for &'a IDCom
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDCompositionShadowEffect {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDCompositionShadowEffect {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4502,6 +4515,11 @@ pub struct IDCompositionShadowEffect_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`*"]
 #[repr(transparent)]
 pub struct IDCompositionSkewTransform(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDCompositionSkewTransform {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDCompositionSkewTransform {
     #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`*"]
     pub unsafe fn SetAngleX<'a, Param0: ::windows::core::IntoParam<'a, IDCompositionAnimation>>(&self, animation: Param0) -> ::windows::core::Result<()> {
@@ -4616,11 +4634,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDCompositionTransform> for &'a IDCompos
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDCompositionSkewTransform {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDCompositionSkewTransform {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4652,6 +4665,11 @@ pub struct IDCompositionSkewTransform_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`*"]
 #[repr(transparent)]
 pub struct IDCompositionSurface(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDCompositionSurface {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDCompositionSurface {
     #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -4696,11 +4714,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDCom
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDCompositionSurface {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDCompositionSurface {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4735,6 +4748,11 @@ pub struct IDCompositionSurface_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`*"]
 #[repr(transparent)]
 pub struct IDCompositionSurfaceFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDCompositionSurfaceFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDCompositionSurfaceFactory {
     #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`, `\"Win32_Graphics_Dxgi_Common\"`*"]
     #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
@@ -4769,11 +4787,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDCom
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDCompositionSurfaceFactory {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDCompositionSurfaceFactory {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4805,6 +4818,11 @@ pub struct IDCompositionSurfaceFactory_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`*"]
 #[repr(transparent)]
 pub struct IDCompositionTableTransferEffect(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDCompositionTableTransferEffect {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDCompositionTableTransferEffect {
     #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`*"]
     pub unsafe fn SetInput<'a, Param1: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, index: u32, input: Param1, flags: u32) -> ::windows::core::Result<()> {
@@ -4944,11 +4962,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDCompositionFilterEffect> for &'a IDCom
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDCompositionTableTransferEffect {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDCompositionTableTransferEffect {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5004,6 +5017,11 @@ pub struct IDCompositionTableTransferEffect_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`*"]
 #[repr(transparent)]
 pub struct IDCompositionTarget(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDCompositionTarget {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDCompositionTarget {
     #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`*"]
     pub unsafe fn SetRoot<'a, Param0: ::windows::core::IntoParam<'a, IDCompositionVisual>>(&self, visual: Param0) -> ::windows::core::Result<()> {
@@ -5030,11 +5048,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDCom
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDCompositionTarget {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDCompositionTarget {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5059,6 +5072,11 @@ pub struct IDCompositionTarget_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`*"]
 #[repr(transparent)]
 pub struct IDCompositionTransform(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDCompositionTransform {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDCompositionTransform {}
 impl ::core::convert::From<IDCompositionTransform> for ::windows::core::IUnknown {
     fn from(value: IDCompositionTransform) -> Self {
@@ -5120,11 +5138,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDCompositionTransform3D> for &'a IDComp
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDCompositionTransform {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDCompositionTransform {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5148,6 +5161,11 @@ pub struct IDCompositionTransform_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`*"]
 #[repr(transparent)]
 pub struct IDCompositionTransform3D(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDCompositionTransform3D {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDCompositionTransform3D {}
 impl ::core::convert::From<IDCompositionTransform3D> for ::windows::core::IUnknown {
     fn from(value: IDCompositionTransform3D) -> Self {
@@ -5189,11 +5207,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDCompositionEffect> for &'a IDCompositi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDCompositionTransform3D {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDCompositionTransform3D {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5217,6 +5230,11 @@ pub struct IDCompositionTransform3D_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`*"]
 #[repr(transparent)]
 pub struct IDCompositionTranslateTransform(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDCompositionTranslateTransform {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDCompositionTranslateTransform {
     #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`*"]
     pub unsafe fn SetOffsetX<'a, Param0: ::windows::core::IntoParam<'a, IDCompositionAnimation>>(&self, animation: Param0) -> ::windows::core::Result<()> {
@@ -5315,11 +5333,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDCompositionTransform> for &'a IDCompos
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDCompositionTranslateTransform {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDCompositionTranslateTransform {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5347,6 +5360,11 @@ pub struct IDCompositionTranslateTransform_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`*"]
 #[repr(transparent)]
 pub struct IDCompositionTranslateTransform3D(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDCompositionTranslateTransform3D {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDCompositionTranslateTransform3D {
     #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`*"]
     pub unsafe fn SetOffsetX<'a, Param0: ::windows::core::IntoParam<'a, IDCompositionAnimation>>(&self, animation: Param0) -> ::windows::core::Result<()> {
@@ -5433,11 +5451,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDCompositionTransform3D> for &'a IDComp
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDCompositionTranslateTransform3D {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDCompositionTranslateTransform3D {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5467,6 +5480,11 @@ pub struct IDCompositionTranslateTransform3D_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`*"]
 #[repr(transparent)]
 pub struct IDCompositionTurbulenceEffect(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDCompositionTurbulenceEffect {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDCompositionTurbulenceEffect {
     #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`*"]
     pub unsafe fn SetInput<'a, Param1: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, index: u32, input: Param1, flags: u32) -> ::windows::core::Result<()> {
@@ -5566,11 +5584,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDCompositionFilterEffect> for &'a IDCom
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDCompositionTurbulenceEffect {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDCompositionTurbulenceEffect {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5616,6 +5629,11 @@ pub struct IDCompositionTurbulenceEffect_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`*"]
 #[repr(transparent)]
 pub struct IDCompositionVirtualSurface(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDCompositionVirtualSurface {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDCompositionVirtualSurface {
     #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -5689,11 +5707,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDCompositionSurface> for &'a IDComposit
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDCompositionVirtualSurface {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDCompositionVirtualSurface {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5722,6 +5735,11 @@ pub struct IDCompositionVirtualSurface_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`*"]
 #[repr(transparent)]
 pub struct IDCompositionVisual(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDCompositionVisual {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDCompositionVisual {
     #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`*"]
     pub unsafe fn SetOffsetX<'a, Param0: ::windows::core::IntoParam<'a, IDCompositionAnimation>>(&self, animation: Param0) -> ::windows::core::Result<()> {
@@ -5815,11 +5833,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDCom
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDCompositionVisual {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDCompositionVisual {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5869,6 +5882,11 @@ pub struct IDCompositionVisual_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`*"]
 #[repr(transparent)]
 pub struct IDCompositionVisual2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDCompositionVisual2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDCompositionVisual2 {
     #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`*"]
     pub unsafe fn SetOffsetX<'a, Param0: ::windows::core::IntoParam<'a, IDCompositionAnimation>>(&self, animation: Param0) -> ::windows::core::Result<()> {
@@ -5990,11 +6008,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDCompositionVisual> for &'a IDCompositi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDCompositionVisual2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDCompositionVisual2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6020,6 +6033,11 @@ pub struct IDCompositionVisual2_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`*"]
 #[repr(transparent)]
 pub struct IDCompositionVisual3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDCompositionVisual3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDCompositionVisual3 {
     #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`*"]
     pub unsafe fn SetOffsetX<'a, Param0: ::windows::core::IntoParam<'a, IDCompositionAnimation>>(&self, animation: Param0) -> ::windows::core::Result<()> {
@@ -6232,11 +6250,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDCompositionVisualDebug> for &'a IDComp
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDCompositionVisual3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDCompositionVisual3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6274,6 +6287,11 @@ pub struct IDCompositionVisual3_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`*"]
 #[repr(transparent)]
 pub struct IDCompositionVisualDebug(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDCompositionVisualDebug {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDCompositionVisualDebug {
     #[doc = "*Required features: `\"Win32_Graphics_DirectComposition\"`*"]
     pub unsafe fn SetOffsetX<'a, Param0: ::windows::core::IntoParam<'a, IDCompositionAnimation>>(&self, animation: Param0) -> ::windows::core::Result<()> {
@@ -6430,11 +6448,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDCompositionVisual2> for IDCompositionV
 impl<'a> ::windows::core::IntoParam<'a, IDCompositionVisual2> for &'a IDCompositionVisualDebug {
     fn into_param(self) -> ::windows::core::Param<'a, IDCompositionVisual2> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IDCompositionVisualDebug {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IDCompositionVisualDebug {

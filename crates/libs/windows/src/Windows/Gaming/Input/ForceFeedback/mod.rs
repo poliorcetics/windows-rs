@@ -61,11 +61,6 @@ impl ConditionForceEffect {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for ConditionForceEffect {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ConditionForceEffect {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -79,7 +74,6 @@ impl ::core::fmt::Debug for ConditionForceEffect {
 }
 unsafe impl ::windows::core::RuntimeType for ConditionForceEffect {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Gaming.Input.ForceFeedback.ConditionForceEffect;{a17fba0c-2ae4-48c2-8063-eabd0777cb89})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -178,6 +172,7 @@ impl ::core::default::Default for ConditionForceEffectKind {
 }
 unsafe impl ::windows::core::Abi for ConditionForceEffectKind {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ConditionForceEffectKind {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -186,7 +181,6 @@ impl ::core::fmt::Debug for ConditionForceEffectKind {
 }
 unsafe impl ::windows::core::RuntimeType for ConditionForceEffectKind {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Gaming.Input.ForceFeedback.ConditionForceEffectKind;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -246,11 +240,6 @@ impl ConstantForceEffect {
         unsafe { (::windows::core::Interface::vtable(this).Stop)(::core::mem::transmute_copy(this)).ok() }
     }
 }
-impl ::core::clone::Clone for ConstantForceEffect {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ConstantForceEffect {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -264,7 +253,6 @@ impl ::core::fmt::Debug for ConstantForceEffect {
 }
 unsafe impl ::windows::core::RuntimeType for ConstantForceEffect {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Gaming.Input.ForceFeedback.ConstantForceEffect;{a17fba0c-2ae4-48c2-8063-eabd0777cb89})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -363,6 +351,7 @@ impl ::core::default::Default for ForceFeedbackEffectAxes {
 }
 unsafe impl ::windows::core::Abi for ForceFeedbackEffectAxes {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ForceFeedbackEffectAxes {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -399,7 +388,6 @@ impl ::core::ops::Not for ForceFeedbackEffectAxes {
 }
 unsafe impl ::windows::core::RuntimeType for ForceFeedbackEffectAxes {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Gaming.Input.ForceFeedback.ForceFeedbackEffectAxes;u4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -427,6 +415,7 @@ impl ::core::default::Default for ForceFeedbackEffectState {
 }
 unsafe impl ::windows::core::Abi for ForceFeedbackEffectState {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ForceFeedbackEffectState {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -435,7 +424,6 @@ impl ::core::fmt::Debug for ForceFeedbackEffectState {
 }
 unsafe impl ::windows::core::RuntimeType for ForceFeedbackEffectState {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Gaming.Input.ForceFeedback.ForceFeedbackEffectState;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -462,6 +450,7 @@ impl ::core::default::Default for ForceFeedbackLoadEffectResult {
 }
 unsafe impl ::windows::core::Abi for ForceFeedbackLoadEffectResult {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ForceFeedbackLoadEffectResult {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -470,7 +459,6 @@ impl ::core::fmt::Debug for ForceFeedbackLoadEffectResult {
 }
 unsafe impl ::windows::core::RuntimeType for ForceFeedbackLoadEffectResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Gaming.Input.ForceFeedback.ForceFeedbackLoadEffectResult;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -577,11 +565,6 @@ impl ForceFeedbackMotor {
         }
     }
 }
-impl ::core::clone::Clone for ForceFeedbackMotor {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ForceFeedbackMotor {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -595,7 +578,6 @@ impl ::core::fmt::Debug for ForceFeedbackMotor {
 }
 unsafe impl ::windows::core::RuntimeType for ForceFeedbackMotor {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Gaming.Input.ForceFeedback.ForceFeedbackMotor;{8d3d417c-a5ea-4516-8026-2b00f74ef6e5})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -652,6 +634,11 @@ unsafe impl ::core::marker::Sync for ForceFeedbackMotor {}
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IConditionForceEffect(::windows::core::IUnknown);
+impl ::core::clone::Clone for IConditionForceEffect {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IConditionForceEffect {
     type Vtable = IConditionForceEffect_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x32d1ea68_3695_4e69_85c0_cd1944189140);
@@ -669,6 +656,11 @@ pub struct IConditionForceEffect_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IConditionForceEffectFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IConditionForceEffectFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IConditionForceEffectFactory {
     type Vtable = IConditionForceEffectFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x91a99264_1810_4eb6_a773_bfd3b8cddbab);
@@ -682,6 +674,11 @@ pub struct IConditionForceEffectFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IConstantForceEffect(::windows::core::IUnknown);
+impl ::core::clone::Clone for IConstantForceEffect {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IConstantForceEffect {
     type Vtable = IConstantForceEffect_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9bfa0140_f3c7_415c_b068_0f068734bce0);
@@ -702,6 +699,11 @@ pub struct IConstantForceEffect_Vtbl {
 #[doc = "*Required features: `\"Gaming_Input_ForceFeedback\"`*"]
 #[repr(transparent)]
 pub struct IForceFeedbackEffect(::windows::core::IUnknown);
+impl ::core::clone::Clone for IForceFeedbackEffect {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IForceFeedbackEffect {
     #[doc = "*Required features: `\"Gaming_Input_ForceFeedback\"`*"]
     pub fn Gain(&self) -> ::windows::core::Result<f64> {
@@ -775,11 +777,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IForceFeedbackEffect {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IForceFeedbackEffect {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -793,7 +790,6 @@ impl ::core::fmt::Debug for IForceFeedbackEffect {
 }
 unsafe impl ::windows::core::RuntimeType for IForceFeedbackEffect {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{a17fba0c-2ae4-48c2-8063-eabd0777cb89}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -815,6 +811,11 @@ pub struct IForceFeedbackEffect_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IForceFeedbackMotor(::windows::core::IUnknown);
+impl ::core::clone::Clone for IForceFeedbackMotor {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IForceFeedbackMotor {
     type Vtable = IForceFeedbackMotor_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x8d3d417c_a5ea_4516_8026_2b00f74ef6e5);
@@ -855,6 +856,11 @@ pub struct IForceFeedbackMotor_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPeriodicForceEffect(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPeriodicForceEffect {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPeriodicForceEffect {
     type Vtable = IPeriodicForceEffect_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x5c5138d7_fc75_4d52_9a0a_efe4cab5fe64);
@@ -876,6 +882,11 @@ pub struct IPeriodicForceEffect_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPeriodicForceEffectFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPeriodicForceEffectFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPeriodicForceEffectFactory {
     type Vtable = IPeriodicForceEffectFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x6f62eb1a_9851_477b_b318_35ecaa15070f);
@@ -889,6 +900,11 @@ pub struct IPeriodicForceEffectFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IRampForceEffect(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRampForceEffect {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IRampForceEffect {
     type Vtable = IRampForceEffect_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf1f81259_1ca6_4080_b56d_b43f3354d052);
@@ -974,11 +990,6 @@ impl PeriodicForceEffect {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for PeriodicForceEffect {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PeriodicForceEffect {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -992,7 +1003,6 @@ impl ::core::fmt::Debug for PeriodicForceEffect {
 }
 unsafe impl ::windows::core::RuntimeType for PeriodicForceEffect {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Gaming.Input.ForceFeedback.PeriodicForceEffect;{a17fba0c-2ae4-48c2-8063-eabd0777cb89})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1092,6 +1102,7 @@ impl ::core::default::Default for PeriodicForceEffectKind {
 }
 unsafe impl ::windows::core::Abi for PeriodicForceEffectKind {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PeriodicForceEffectKind {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1100,7 +1111,6 @@ impl ::core::fmt::Debug for PeriodicForceEffectKind {
 }
 unsafe impl ::windows::core::RuntimeType for PeriodicForceEffectKind {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Gaming.Input.ForceFeedback.PeriodicForceEffectKind;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1172,11 +1182,6 @@ impl RampForceEffect {
         unsafe { (::windows::core::Interface::vtable(this).SetParametersWithEnvelope)(::core::mem::transmute_copy(this), startvector.into_param().abi(), endvector.into_param().abi(), attackgain, sustaingain, releasegain, startdelay.into_param().abi(), attackduration.into_param().abi(), sustainduration.into_param().abi(), releaseduration.into_param().abi(), repeatcount).ok() }
     }
 }
-impl ::core::clone::Clone for RampForceEffect {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for RampForceEffect {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1190,7 +1195,6 @@ impl ::core::fmt::Debug for RampForceEffect {
 }
 unsafe impl ::windows::core::RuntimeType for RampForceEffect {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Gaming.Input.ForceFeedback.RampForceEffect;{a17fba0c-2ae4-48c2-8063-eabd0777cb89})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

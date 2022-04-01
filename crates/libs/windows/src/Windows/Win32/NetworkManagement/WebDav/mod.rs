@@ -22,6 +22,7 @@ impl ::core::default::Default for AUTHNEXTSTEP {
 }
 unsafe impl ::windows::core::Abi for AUTHNEXTSTEP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AUTHNEXTSTEP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -62,6 +63,7 @@ impl ::core::fmt::Debug for DAV_CALLBACK_AUTH_BLOB {
 }
 unsafe impl ::windows::core::Abi for DAV_CALLBACK_AUTH_BLOB {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DAV_CALLBACK_AUTH_BLOB {
     fn eq(&self, other: &Self) -> bool {
@@ -95,6 +97,7 @@ impl ::core::fmt::Debug for DAV_CALLBACK_AUTH_UNP {
 }
 unsafe impl ::windows::core::Abi for DAV_CALLBACK_AUTH_UNP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DAV_CALLBACK_AUTH_UNP {
     fn eq(&self, other: &Self) -> bool {
@@ -133,6 +136,7 @@ impl ::core::fmt::Debug for DAV_CALLBACK_CRED {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DAV_CALLBACK_CRED {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DAV_CALLBACK_CRED {

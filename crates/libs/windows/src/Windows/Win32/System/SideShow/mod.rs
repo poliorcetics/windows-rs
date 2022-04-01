@@ -17,6 +17,7 @@ impl ::core::clone::Clone for APPLICATION_EVENT_DATA {
 }
 unsafe impl ::windows::core::Abi for APPLICATION_EVENT_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for APPLICATION_EVENT_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -49,6 +50,7 @@ impl ::core::clone::Clone for CONTENT_MISSING_EVENT_DATA {
 }
 unsafe impl ::windows::core::Abi for CONTENT_MISSING_EVENT_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CONTENT_MISSING_EVENT_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -75,6 +77,7 @@ impl ::core::clone::Clone for DEVICE_USER_CHANGE_EVENT_DATA {
 }
 unsafe impl ::windows::core::Abi for DEVICE_USER_CHANGE_EVENT_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DEVICE_USER_CHANGE_EVENT_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -103,6 +106,7 @@ impl ::core::clone::Clone for EVENT_DATA_HEADER {
 }
 unsafe impl ::windows::core::Abi for EVENT_DATA_HEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EVENT_DATA_HEADER {
     fn eq(&self, other: &Self) -> bool {
@@ -119,6 +123,11 @@ pub const GUID_DEVINTERFACE_SIDESHOW: ::windows::core::GUID = ::windows::core::G
 #[doc = "*Required features: `\"Win32_System_SideShow\"`*"]
 #[repr(transparent)]
 pub struct ISideShowBulkCapabilities(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISideShowBulkCapabilities {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISideShowBulkCapabilities {
     #[doc = "*Required features: `\"Win32_System_SideShow\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com_StructuredStorage\"`, `\"Win32_UI_Shell_PropertiesSystem\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com_StructuredStorage", feature = "Win32_UI_Shell_PropertiesSystem"))]
@@ -170,11 +179,6 @@ impl<'a> ::windows::core::IntoParam<'a, ISideShowCapabilities> for &'a ISideShow
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISideShowBulkCapabilities {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISideShowBulkCapabilities {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -199,6 +203,11 @@ pub struct ISideShowBulkCapabilities_Vtbl {
 #[doc = "*Required features: `\"Win32_System_SideShow\"`*"]
 #[repr(transparent)]
 pub struct ISideShowCapabilities(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISideShowCapabilities {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISideShowCapabilities {
     #[doc = "*Required features: `\"Win32_System_SideShow\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com_StructuredStorage\"`, `\"Win32_UI_Shell_PropertiesSystem\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com_StructuredStorage", feature = "Win32_UI_Shell_PropertiesSystem"))]
@@ -224,11 +233,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for ISideShow
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISideShowCapabilities {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for ISideShowCapabilities {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for ISideShowCapabilities {
@@ -258,6 +262,11 @@ pub struct ISideShowCapabilities_Vtbl {
 #[doc = "*Required features: `\"Win32_System_SideShow\"`*"]
 #[repr(transparent)]
 pub struct ISideShowCapabilitiesCollection(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISideShowCapabilitiesCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISideShowCapabilitiesCollection {
     #[doc = "*Required features: `\"Win32_System_SideShow\"`*"]
     pub unsafe fn GetCount(&self) -> ::windows::core::Result<u32> {
@@ -290,11 +299,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISide
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISideShowCapabilitiesCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISideShowCapabilitiesCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -320,6 +324,11 @@ pub struct ISideShowCapabilitiesCollection_Vtbl {
 #[doc = "*Required features: `\"Win32_System_SideShow\"`*"]
 #[repr(transparent)]
 pub struct ISideShowContent(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISideShowContent {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISideShowContent {
     #[doc = "*Required features: `\"Win32_System_SideShow\"`*"]
     pub unsafe fn GetContent<'a, Param0: ::windows::core::IntoParam<'a, ISideShowCapabilities>>(&self, in_picapabilities: Param0, out_pdwsize: *mut u32, out_ppbdata: *mut *mut u8) -> ::windows::core::Result<()> {
@@ -357,11 +366,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISide
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISideShowContent {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISideShowContent {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -391,6 +395,11 @@ pub struct ISideShowContent_Vtbl {
 #[doc = "*Required features: `\"Win32_System_SideShow\"`*"]
 #[repr(transparent)]
 pub struct ISideShowContentManager(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISideShowContentManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISideShowContentManager {
     #[doc = "*Required features: `\"Win32_System_SideShow\"`*"]
     pub unsafe fn Add<'a, Param0: ::windows::core::IntoParam<'a, ISideShowContent>>(&self, in_picontent: Param0) -> ::windows::core::Result<()> {
@@ -434,11 +443,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISide
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISideShowContentManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISideShowContentManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -467,6 +471,11 @@ pub struct ISideShowContentManager_Vtbl {
 #[doc = "*Required features: `\"Win32_System_SideShow\"`*"]
 #[repr(transparent)]
 pub struct ISideShowEvents(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISideShowEvents {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISideShowEvents {
     #[doc = "*Required features: `\"Win32_System_SideShow\"`*"]
     pub unsafe fn ContentMissing(&self, in_contentid: u32) -> ::windows::core::Result<ISideShowContent> {
@@ -506,11 +515,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISide
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISideShowEvents {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISideShowEvents {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -538,6 +542,11 @@ pub struct ISideShowEvents_Vtbl {
 #[doc = "*Required features: `\"Win32_System_SideShow\"`*"]
 #[repr(transparent)]
 pub struct ISideShowKeyCollection(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISideShowKeyCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISideShowKeyCollection {
     #[doc = "*Required features: `\"Win32_System_SideShow\"`, `\"Win32_UI_Shell_PropertiesSystem\"`*"]
     #[cfg(feature = "Win32_UI_Shell_PropertiesSystem")]
@@ -582,11 +591,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISide
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISideShowKeyCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISideShowKeyCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -621,6 +625,11 @@ pub struct ISideShowKeyCollection_Vtbl {
 #[doc = "*Required features: `\"Win32_System_SideShow\"`*"]
 #[repr(transparent)]
 pub struct ISideShowNotification(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISideShowNotification {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISideShowNotification {
     #[doc = "*Required features: `\"Win32_System_SideShow\"`*"]
     pub unsafe fn NotificationId(&self) -> ::windows::core::Result<u32> {
@@ -692,11 +701,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISide
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISideShowNotification {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISideShowNotification {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -742,6 +746,11 @@ pub struct ISideShowNotification_Vtbl {
 #[doc = "*Required features: `\"Win32_System_SideShow\"`*"]
 #[repr(transparent)]
 pub struct ISideShowNotificationManager(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISideShowNotificationManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISideShowNotificationManager {
     #[doc = "*Required features: `\"Win32_System_SideShow\"`*"]
     pub unsafe fn Show<'a, Param0: ::windows::core::IntoParam<'a, ISideShowNotification>>(&self, in_pinotification: Param0) -> ::windows::core::Result<()> {
@@ -776,11 +785,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISide
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISideShowNotificationManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISideShowNotificationManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -807,6 +811,11 @@ pub struct ISideShowNotificationManager_Vtbl {
 #[doc = "*Required features: `\"Win32_System_SideShow\"`*"]
 #[repr(transparent)]
 pub struct ISideShowPropVariantCollection(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISideShowPropVariantCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISideShowPropVariantCollection {
     #[doc = "*Required features: `\"Win32_System_SideShow\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com_StructuredStorage\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com_StructuredStorage"))]
@@ -851,11 +860,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISide
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISideShowPropVariantCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISideShowPropVariantCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -890,6 +894,11 @@ pub struct ISideShowPropVariantCollection_Vtbl {
 #[doc = "*Required features: `\"Win32_System_SideShow\"`*"]
 #[repr(transparent)]
 pub struct ISideShowSession(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISideShowSession {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISideShowSession {
     #[doc = "*Required features: `\"Win32_System_SideShow\"`*"]
     pub unsafe fn RegisterContent(&self, in_applicationid: *const ::windows::core::GUID, in_endpointid: *const ::windows::core::GUID) -> ::windows::core::Result<ISideShowContentManager> {
@@ -920,11 +929,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for ISideShow
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISideShowSession {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for ISideShowSession {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for ISideShowSession {
@@ -963,6 +967,7 @@ impl ::core::clone::Clone for NEW_EVENT_DATA_AVAILABLE {
 }
 unsafe impl ::windows::core::Abi for NEW_EVENT_DATA_AVAILABLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NEW_EVENT_DATA_AVAILABLE {
     fn eq(&self, other: &Self) -> bool {
@@ -1016,6 +1021,7 @@ impl ::core::default::Default for SCF_BUTTON_IDS {
 }
 unsafe impl ::windows::core::Abi for SCF_BUTTON_IDS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SCF_BUTTON_IDS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1044,6 +1050,7 @@ impl ::core::fmt::Debug for SCF_CONTEXTMENU_EVENT {
 }
 unsafe impl ::windows::core::Abi for SCF_CONTEXTMENU_EVENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SCF_CONTEXTMENU_EVENT {
     fn eq(&self, other: &Self) -> bool {
@@ -1075,6 +1082,7 @@ impl ::core::fmt::Debug for SCF_EVENT_HEADER {
 }
 unsafe impl ::windows::core::Abi for SCF_EVENT_HEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SCF_EVENT_HEADER {
     fn eq(&self, other: &Self) -> bool {
@@ -1110,6 +1118,7 @@ impl ::core::default::Default for SCF_EVENT_IDS {
 }
 unsafe impl ::windows::core::Abi for SCF_EVENT_IDS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SCF_EVENT_IDS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1137,6 +1146,7 @@ impl ::core::fmt::Debug for SCF_MENUACTION_EVENT {
 }
 unsafe impl ::windows::core::Abi for SCF_MENUACTION_EVENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SCF_MENUACTION_EVENT {
     fn eq(&self, other: &Self) -> bool {
@@ -1169,6 +1179,7 @@ impl ::core::fmt::Debug for SCF_NAVIGATION_EVENT {
 }
 unsafe impl ::windows::core::Abi for SCF_NAVIGATION_EVENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SCF_NAVIGATION_EVENT {
     fn eq(&self, other: &Self) -> bool {
@@ -1245,6 +1256,7 @@ impl ::core::default::Default for SIDESHOW_COLOR_TYPE {
 }
 unsafe impl ::windows::core::Abi for SIDESHOW_COLOR_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SIDESHOW_COLOR_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1280,6 +1292,7 @@ impl ::core::default::Default for SIDESHOW_SCREEN_TYPE {
 }
 unsafe impl ::windows::core::Abi for SIDESHOW_SCREEN_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SIDESHOW_SCREEN_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

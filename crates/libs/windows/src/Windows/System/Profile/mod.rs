@@ -69,11 +69,6 @@ impl AnalyticsVersionInfo {
         }
     }
 }
-impl ::core::clone::Clone for AnalyticsVersionInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AnalyticsVersionInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -87,7 +82,6 @@ impl ::core::fmt::Debug for AnalyticsVersionInfo {
 }
 unsafe impl ::windows::core::RuntimeType for AnalyticsVersionInfo {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.System.Profile.AnalyticsVersionInfo;{926130b8-9955-4c74-bdc1-7cd0decf9b03})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -232,11 +226,6 @@ impl HardwareToken {
         }
     }
 }
-impl ::core::clone::Clone for HardwareToken {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for HardwareToken {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -250,7 +239,6 @@ impl ::core::fmt::Debug for HardwareToken {
 }
 unsafe impl ::windows::core::RuntimeType for HardwareToken {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.System.Profile.HardwareToken;{28f6d4c0-fb12-40a4-8167-7f4e03d2724c})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -307,6 +295,11 @@ unsafe impl ::core::marker::Sync for HardwareToken {}
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAnalyticsInfoStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAnalyticsInfoStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAnalyticsInfoStatics {
     type Vtable = IAnalyticsInfoStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1d5ee066_188d_5ba9_4387_acaeb0e7e305);
@@ -321,6 +314,11 @@ pub struct IAnalyticsInfoStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAnalyticsInfoStatics2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAnalyticsInfoStatics2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAnalyticsInfoStatics2 {
     type Vtable = IAnalyticsInfoStatics2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x101704ea_a7f9_46d2_ab94_016865afdb25);
@@ -337,6 +335,11 @@ pub struct IAnalyticsInfoStatics2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAnalyticsVersionInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAnalyticsVersionInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAnalyticsVersionInfo {
     type Vtable = IAnalyticsVersionInfo_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x926130b8_9955_4c74_bdc1_7cd0decf9b03);
@@ -351,6 +354,11 @@ pub struct IAnalyticsVersionInfo_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAnalyticsVersionInfo2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAnalyticsVersionInfo2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAnalyticsVersionInfo2 {
     type Vtable = IAnalyticsVersionInfo2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x76e915b1_ff36_407c_9f57_160d3e540747);
@@ -364,6 +372,11 @@ pub struct IAnalyticsVersionInfo2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppApplicabilityStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppApplicabilityStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppApplicabilityStatics {
     type Vtable = IAppApplicabilityStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1664a082_0f38_5c99_83e4_48995970861c);
@@ -380,6 +393,11 @@ pub struct IAppApplicabilityStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IEducationSettingsStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEducationSettingsStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IEducationSettingsStatics {
     type Vtable = IEducationSettingsStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xfc53f0ef_4d3e_4e13_9b23_505f4d091e92);
@@ -393,6 +411,11 @@ pub struct IEducationSettingsStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHardwareIdentificationStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHardwareIdentificationStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHardwareIdentificationStatics {
     type Vtable = IHardwareIdentificationStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x971260e0_f170_4a42_bd55_a900b212dae2);
@@ -409,6 +432,11 @@ pub struct IHardwareIdentificationStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHardwareToken(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHardwareToken {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHardwareToken {
     type Vtable = IHardwareToken_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x28f6d4c0_fb12_40a4_8167_7f4e03d2724c);
@@ -433,6 +461,11 @@ pub struct IHardwareToken_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IKnownRetailInfoPropertiesStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IKnownRetailInfoPropertiesStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IKnownRetailInfoPropertiesStatics {
     type Vtable = IKnownRetailInfoPropertiesStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x99571178_500f_487e_8e75_29e551728712);
@@ -467,6 +500,11 @@ pub struct IKnownRetailInfoPropertiesStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPlatformDiagnosticsAndUsageDataSettingsStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPlatformDiagnosticsAndUsageDataSettingsStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPlatformDiagnosticsAndUsageDataSettingsStatics {
     type Vtable = IPlatformDiagnosticsAndUsageDataSettingsStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb6e24c1b_7b1c_4b32_8c62_a66597ce723a);
@@ -489,6 +527,11 @@ pub struct IPlatformDiagnosticsAndUsageDataSettingsStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IRetailInfoStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRetailInfoStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IRetailInfoStatics {
     type Vtable = IRetailInfoStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x0712c6b8_8b92_4f2a_8499_031f1798d6ef);
@@ -506,6 +549,11 @@ pub struct IRetailInfoStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISharedModeSettingsStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISharedModeSettingsStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISharedModeSettingsStatics {
     type Vtable = ISharedModeSettingsStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x893df40e_cad6_4d50_8c49_6fcfc03edb29);
@@ -519,6 +567,11 @@ pub struct ISharedModeSettingsStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISharedModeSettingsStatics2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISharedModeSettingsStatics2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISharedModeSettingsStatics2 {
     type Vtable = ISharedModeSettingsStatics2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x608988a4_ccf1_4ee8_a5e2_fd6a1d0cfac8);
@@ -532,6 +585,11 @@ pub struct ISharedModeSettingsStatics2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISystemIdentificationInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISystemIdentificationInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISystemIdentificationInfo {
     type Vtable = ISystemIdentificationInfo_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x0c659e7d_c3c2_4d33_a2df_21bc41916eb3);
@@ -549,6 +607,11 @@ pub struct ISystemIdentificationInfo_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISystemIdentificationStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISystemIdentificationStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISystemIdentificationStatics {
     type Vtable = ISystemIdentificationStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x5581f42a_d3df_4d93_a37d_c41a616c6d01);
@@ -563,6 +626,11 @@ pub struct ISystemIdentificationStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISystemSetupInfoStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISystemSetupInfoStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISystemSetupInfoStatics {
     type Vtable = ISystemSetupInfoStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x2c9620a8_1d88_5e2d_a324_a543af4247ee);
@@ -584,6 +652,11 @@ pub struct ISystemSetupInfoStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IUnsupportedAppRequirement(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUnsupportedAppRequirement {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IUnsupportedAppRequirement {
     type Vtable = IUnsupportedAppRequirement_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x6182445c_894b_5cbc_8976_a98e0a9b998d);
@@ -598,6 +671,11 @@ pub struct IUnsupportedAppRequirement_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWindowsIntegrityPolicyStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWindowsIntegrityPolicyStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWindowsIntegrityPolicyStatics {
     type Vtable = IWindowsIntegrityPolicyStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x7d1d81db_8d63_4789_9ea5_ddcf65a94f3c);
@@ -808,6 +886,7 @@ impl ::core::default::Default for PlatformDataCollectionLevel {
 }
 unsafe impl ::windows::core::Abi for PlatformDataCollectionLevel {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PlatformDataCollectionLevel {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -816,7 +895,6 @@ impl ::core::fmt::Debug for PlatformDataCollectionLevel {
 }
 unsafe impl ::windows::core::RuntimeType for PlatformDataCollectionLevel {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.System.Profile.PlatformDataCollectionLevel;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -966,11 +1044,6 @@ impl SystemIdentificationInfo {
         }
     }
 }
-impl ::core::clone::Clone for SystemIdentificationInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SystemIdentificationInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -984,7 +1057,6 @@ impl ::core::fmt::Debug for SystemIdentificationInfo {
 }
 unsafe impl ::windows::core::RuntimeType for SystemIdentificationInfo {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.System.Profile.SystemIdentificationInfo;{0c659e7d-c3c2-4d33-a2df-21bc41916eb3})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1061,6 +1133,7 @@ impl ::core::default::Default for SystemIdentificationSource {
 }
 unsafe impl ::windows::core::Abi for SystemIdentificationSource {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SystemIdentificationSource {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1069,7 +1142,6 @@ impl ::core::fmt::Debug for SystemIdentificationSource {
 }
 unsafe impl ::windows::core::RuntimeType for SystemIdentificationSource {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.System.Profile.SystemIdentificationSource;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1096,6 +1168,7 @@ impl ::core::default::Default for SystemOutOfBoxExperienceState {
 }
 unsafe impl ::windows::core::Abi for SystemOutOfBoxExperienceState {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SystemOutOfBoxExperienceState {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1104,7 +1177,6 @@ impl ::core::fmt::Debug for SystemOutOfBoxExperienceState {
 }
 unsafe impl ::windows::core::RuntimeType for SystemOutOfBoxExperienceState {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.System.Profile.SystemOutOfBoxExperienceState;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1162,11 +1234,6 @@ impl UnsupportedAppRequirement {
         }
     }
 }
-impl ::core::clone::Clone for UnsupportedAppRequirement {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for UnsupportedAppRequirement {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1180,7 +1247,6 @@ impl ::core::fmt::Debug for UnsupportedAppRequirement {
 }
 unsafe impl ::windows::core::RuntimeType for UnsupportedAppRequirement {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.System.Profile.UnsupportedAppRequirement;{6182445c-894b-5cbc-8976-a98e0a9b998d})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1255,6 +1321,7 @@ impl ::core::default::Default for UnsupportedAppRequirementReasons {
 }
 unsafe impl ::windows::core::Abi for UnsupportedAppRequirementReasons {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UnsupportedAppRequirementReasons {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1291,7 +1358,6 @@ impl ::core::ops::Not for UnsupportedAppRequirementReasons {
 }
 unsafe impl ::windows::core::RuntimeType for UnsupportedAppRequirementReasons {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.System.Profile.UnsupportedAppRequirementReasons;u4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }

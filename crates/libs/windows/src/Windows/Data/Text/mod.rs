@@ -23,6 +23,7 @@ impl ::core::default::Default for AlternateNormalizationFormat {
 }
 unsafe impl ::windows::core::Abi for AlternateNormalizationFormat {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AlternateNormalizationFormat {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -31,7 +32,6 @@ impl ::core::fmt::Debug for AlternateNormalizationFormat {
 }
 unsafe impl ::windows::core::RuntimeType for AlternateNormalizationFormat {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Data.Text.AlternateNormalizationFormat;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -65,11 +65,6 @@ impl AlternateWordForm {
         }
     }
 }
-impl ::core::clone::Clone for AlternateWordForm {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AlternateWordForm {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -83,7 +78,6 @@ impl ::core::fmt::Debug for AlternateWordForm {
 }
 unsafe impl ::windows::core::RuntimeType for AlternateWordForm {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Data.Text.AlternateWordForm;{47396c1e-51b9-4207-9146-248e636a1d1d})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -140,6 +134,11 @@ unsafe impl ::core::marker::Sync for AlternateWordForm {}
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAlternateWordForm(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAlternateWordForm {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAlternateWordForm {
     type Vtable = IAlternateWordForm_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x47396c1e_51b9_4207_9146_248e636a1d1d);
@@ -155,6 +154,11 @@ pub struct IAlternateWordForm_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISelectableWordSegment(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISelectableWordSegment {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISelectableWordSegment {
     type Vtable = ISelectableWordSegment_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x916a4cb7_8aa7_4c78_b374_5dedb752e60b);
@@ -169,6 +173,11 @@ pub struct ISelectableWordSegment_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISelectableWordsSegmenter(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISelectableWordsSegmenter {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISelectableWordsSegmenter {
     type Vtable = ISelectableWordsSegmenter_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf6dc31e7_4b13_45c5_8897_7d71269e085d);
@@ -191,6 +200,11 @@ pub struct ISelectableWordsSegmenter_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISelectableWordsSegmenterFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISelectableWordsSegmenterFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISelectableWordsSegmenterFactory {
     type Vtable = ISelectableWordsSegmenterFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x8c7a7648_6057_4339_bc70_f210010a4150);
@@ -204,6 +218,11 @@ pub struct ISelectableWordsSegmenterFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISemanticTextQuery(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISemanticTextQuery {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISemanticTextQuery {
     type Vtable = ISemanticTextQuery_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x6a1cab51_1fb2_4909_80b8_35731a2b3e7f);
@@ -224,6 +243,11 @@ pub struct ISemanticTextQuery_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISemanticTextQueryFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISemanticTextQueryFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISemanticTextQueryFactory {
     type Vtable = ISemanticTextQueryFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x238c0503_f995_4587_8777_a2b7d80acfef);
@@ -238,6 +262,11 @@ pub struct ISemanticTextQueryFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ITextConversionGenerator(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITextConversionGenerator {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ITextConversionGenerator {
     type Vtable = ITextConversionGenerator_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x03606a5e_2aa9_4ab6_af8b_a562b63a8992);
@@ -260,6 +289,11 @@ pub struct ITextConversionGenerator_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ITextConversionGeneratorFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITextConversionGeneratorFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ITextConversionGeneratorFactory {
     type Vtable = ITextConversionGeneratorFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xfcaa3781_3083_49ab_be15_56dfbbb74d6f);
@@ -273,6 +307,11 @@ pub struct ITextConversionGeneratorFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ITextPhoneme(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITextPhoneme {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ITextPhoneme {
     type Vtable = ITextPhoneme_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9362a40a_9b7a_4569_94cf_d84f2f38cf9b);
@@ -287,6 +326,11 @@ pub struct ITextPhoneme_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ITextPredictionGenerator(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITextPredictionGenerator {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ITextPredictionGenerator {
     type Vtable = ITextPredictionGenerator_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x5eacab07_abf1_4cb6_9d9e_326f2b468756);
@@ -309,6 +353,11 @@ pub struct ITextPredictionGenerator_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ITextPredictionGenerator2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITextPredictionGenerator2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ITextPredictionGenerator2 {
     type Vtable = ITextPredictionGenerator2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb84723b8_2c77_486a_900a_a3453eedc15d);
@@ -337,6 +386,11 @@ pub struct ITextPredictionGenerator2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ITextPredictionGeneratorFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITextPredictionGeneratorFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ITextPredictionGeneratorFactory {
     type Vtable = ITextPredictionGeneratorFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x7257b416_8ba2_4751_9d30_9d85435653a2);
@@ -350,6 +404,11 @@ pub struct ITextPredictionGeneratorFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ITextReverseConversionGenerator(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITextReverseConversionGenerator {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ITextReverseConversionGenerator {
     type Vtable = ITextReverseConversionGenerator_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x51e7f514_9c51_4d86_ae1b_b498fbad8313);
@@ -368,6 +427,11 @@ pub struct ITextReverseConversionGenerator_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ITextReverseConversionGenerator2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITextReverseConversionGenerator2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ITextReverseConversionGenerator2 {
     type Vtable = ITextReverseConversionGenerator2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1aafd2ec_85d6_46fd_828a_3a4830fa6e18);
@@ -384,6 +448,11 @@ pub struct ITextReverseConversionGenerator2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ITextReverseConversionGeneratorFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITextReverseConversionGeneratorFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ITextReverseConversionGeneratorFactory {
     type Vtable = ITextReverseConversionGeneratorFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x63bed326_1fda_41f6_89d5_23ddea3c729a);
@@ -397,6 +466,11 @@ pub struct ITextReverseConversionGeneratorFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IUnicodeCharactersStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUnicodeCharactersStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IUnicodeCharactersStatics {
     type Vtable = IUnicodeCharactersStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x97909e87_9291_4f91_b6c8_b6e359d7a7fb);
@@ -426,6 +500,11 @@ pub struct IUnicodeCharactersStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWordSegment(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWordSegment {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWordSegment {
     type Vtable = IWordSegment_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd2d4ba6d_987c_4cc0_b6bd_d49a11b38f9a);
@@ -444,6 +523,11 @@ pub struct IWordSegment_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWordsSegmenter(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWordsSegmenter {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWordsSegmenter {
     type Vtable = IWordsSegmenter_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x86b4d4d1_b2fe_4e34_a81d_66640300454f);
@@ -466,6 +550,11 @@ pub struct IWordsSegmenter_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IWordsSegmenterFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWordsSegmenterFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IWordsSegmenterFactory {
     type Vtable = IWordsSegmenterFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe6977274_fc35_455c_8bfb_6d7f4653ca97);
@@ -497,11 +586,6 @@ impl SelectableWordSegment {
         }
     }
 }
-impl ::core::clone::Clone for SelectableWordSegment {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SelectableWordSegment {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -515,7 +599,6 @@ impl ::core::fmt::Debug for SelectableWordSegment {
 }
 unsafe impl ::windows::core::RuntimeType for SelectableWordSegment {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Data.Text.SelectableWordSegment;{916a4cb7-8aa7-4c78-b374-5dedb752e60b})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -627,12 +710,6 @@ impl<F: FnMut(&::core::option::Option<super::super::Foundation::Collections::IIt
     }
 }
 #[cfg(feature = "Foundation_Collections")]
-impl ::core::clone::Clone for SelectableWordSegmentsTokenizingHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Foundation_Collections")]
 impl ::core::cmp::PartialEq for SelectableWordSegmentsTokenizingHandler {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -654,7 +731,6 @@ unsafe impl ::windows::core::Interface for SelectableWordSegmentsTokenizingHandl
 #[cfg(feature = "Foundation_Collections")]
 unsafe impl ::windows::core::RuntimeType for SelectableWordSegmentsTokenizingHandler {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{3a3dfc9c-aede-4dc7-9e6c-41c044bd3592}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -717,11 +793,6 @@ impl SelectableWordsSegmenter {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for SelectableWordsSegmenter {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SelectableWordsSegmenter {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -735,7 +806,6 @@ impl ::core::fmt::Debug for SelectableWordsSegmenter {
 }
 unsafe impl ::windows::core::RuntimeType for SelectableWordsSegmenter {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Data.Text.SelectableWordsSegmenter;{f6dc31e7-4b13-45c5-8897-7d71269e085d})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -831,11 +901,6 @@ impl SemanticTextQuery {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for SemanticTextQuery {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SemanticTextQuery {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -849,7 +914,6 @@ impl ::core::fmt::Debug for SemanticTextQuery {
 }
 unsafe impl ::windows::core::RuntimeType for SemanticTextQuery {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Data.Text.SemanticTextQuery;{6a1cab51-1fb2-4909-80b8-35731a2b3e7f})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -954,11 +1018,6 @@ impl TextConversionGenerator {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for TextConversionGenerator {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for TextConversionGenerator {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -972,7 +1031,6 @@ impl ::core::fmt::Debug for TextConversionGenerator {
 }
 unsafe impl ::windows::core::RuntimeType for TextConversionGenerator {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Data.Text.TextConversionGenerator;{03606a5e-2aa9-4ab6-af8b-a562b63a8992})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1047,11 +1105,6 @@ impl TextPhoneme {
         }
     }
 }
-impl ::core::clone::Clone for TextPhoneme {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for TextPhoneme {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1065,7 +1118,6 @@ impl ::core::fmt::Debug for TextPhoneme {
 }
 unsafe impl ::windows::core::RuntimeType for TextPhoneme {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Data.Text.TextPhoneme;{9362a40a-9b7a-4569-94cf-d84f2f38cf9b})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1203,11 +1255,6 @@ impl TextPredictionGenerator {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for TextPredictionGenerator {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for TextPredictionGenerator {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1221,7 +1268,6 @@ impl ::core::fmt::Debug for TextPredictionGenerator {
 }
 unsafe impl ::windows::core::RuntimeType for TextPredictionGenerator {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Data.Text.TextPredictionGenerator;{5eacab07-abf1-4cb6-9d9e-326f2b468756})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1297,6 +1343,7 @@ impl ::core::default::Default for TextPredictionOptions {
 }
 unsafe impl ::windows::core::Abi for TextPredictionOptions {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TextPredictionOptions {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1333,7 +1380,6 @@ impl ::core::ops::Not for TextPredictionOptions {
 }
 unsafe impl ::windows::core::RuntimeType for TextPredictionOptions {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Data.Text.TextPredictionOptions;u4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1389,11 +1435,6 @@ impl TextReverseConversionGenerator {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for TextReverseConversionGenerator {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for TextReverseConversionGenerator {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1407,7 +1448,6 @@ impl ::core::fmt::Debug for TextReverseConversionGenerator {
 }
 unsafe impl ::windows::core::RuntimeType for TextReverseConversionGenerator {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Data.Text.TextReverseConversionGenerator;{51e7f514-9c51-4d86-ae1b-b498fbad8313})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1480,10 +1520,10 @@ impl ::core::fmt::Debug for TextSegment {
 }
 unsafe impl ::windows::core::Abi for TextSegment {
     type Abi = Self;
+    type DefaultType = Self;
 }
 unsafe impl ::windows::core::RuntimeType for TextSegment {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"struct(Windows.Data.Text.TextSegment;u4;u4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1676,6 +1716,7 @@ impl ::core::default::Default for UnicodeGeneralCategory {
 }
 unsafe impl ::windows::core::Abi for UnicodeGeneralCategory {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UnicodeGeneralCategory {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1684,7 +1725,6 @@ impl ::core::fmt::Debug for UnicodeGeneralCategory {
 }
 unsafe impl ::windows::core::RuntimeType for UnicodeGeneralCategory {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Data.Text.UnicodeGeneralCategory;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1712,6 +1752,7 @@ impl ::core::default::Default for UnicodeNumericType {
 }
 unsafe impl ::windows::core::Abi for UnicodeNumericType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UnicodeNumericType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1720,7 +1761,6 @@ impl ::core::fmt::Debug for UnicodeNumericType {
 }
 unsafe impl ::windows::core::RuntimeType for UnicodeNumericType {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Data.Text.UnicodeNumericType;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1755,11 +1795,6 @@ impl WordSegment {
         }
     }
 }
-impl ::core::clone::Clone for WordSegment {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for WordSegment {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1773,7 +1808,6 @@ impl ::core::fmt::Debug for WordSegment {
 }
 unsafe impl ::windows::core::RuntimeType for WordSegment {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Data.Text.WordSegment;{d2d4ba6d-987c-4cc0-b6bd-d49a11b38f9a})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1885,12 +1919,6 @@ impl<F: FnMut(&::core::option::Option<super::super::Foundation::Collections::IIt
     }
 }
 #[cfg(feature = "Foundation_Collections")]
-impl ::core::clone::Clone for WordSegmentsTokenizingHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Foundation_Collections")]
 impl ::core::cmp::PartialEq for WordSegmentsTokenizingHandler {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1912,7 +1940,6 @@ unsafe impl ::windows::core::Interface for WordSegmentsTokenizingHandler {
 #[cfg(feature = "Foundation_Collections")]
 unsafe impl ::windows::core::RuntimeType for WordSegmentsTokenizingHandler {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{a5dd6357-bf2a-4c4f-a31f-29e71c6f8b35}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1975,11 +2002,6 @@ impl WordsSegmenter {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for WordsSegmenter {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for WordsSegmenter {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1993,7 +2015,6 @@ impl ::core::fmt::Debug for WordsSegmenter {
 }
 unsafe impl ::windows::core::RuntimeType for WordsSegmenter {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Data.Text.WordsSegmenter;{86b4d4d1-b2fe-4e34-a81d-66640300454f})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

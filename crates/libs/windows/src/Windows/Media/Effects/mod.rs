@@ -28,11 +28,6 @@ impl AudioCaptureEffectsManager {
         }
     }
 }
-impl ::core::clone::Clone for AudioCaptureEffectsManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AudioCaptureEffectsManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -46,7 +41,6 @@ impl ::core::fmt::Debug for AudioCaptureEffectsManager {
 }
 unsafe impl ::windows::core::RuntimeType for AudioCaptureEffectsManager {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.Effects.AudioCaptureEffectsManager;{8f85c271-038d-4393-8298-540110608eef})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -113,11 +107,6 @@ impl AudioEffect {
         }
     }
 }
-impl ::core::clone::Clone for AudioEffect {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AudioEffect {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -131,7 +120,6 @@ impl ::core::fmt::Debug for AudioEffect {
 }
 unsafe impl ::windows::core::RuntimeType for AudioEffect {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.Effects.AudioEffect;{34aafa51-9207-4055-be93-6e5734a86ae4})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -227,11 +215,6 @@ impl AudioEffectDefinition {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for AudioEffectDefinition {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AudioEffectDefinition {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -245,7 +228,6 @@ impl ::core::fmt::Debug for AudioEffectDefinition {
 }
 unsafe impl ::windows::core::RuntimeType for AudioEffectDefinition {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.Effects.AudioEffectDefinition;{e4d7f974-7d80-4f73-9089-e31c9db9c294})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -360,6 +342,7 @@ impl ::core::default::Default for AudioEffectType {
 }
 unsafe impl ::windows::core::Abi for AudioEffectType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AudioEffectType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -368,7 +351,6 @@ impl ::core::fmt::Debug for AudioEffectType {
 }
 unsafe impl ::windows::core::RuntimeType for AudioEffectType {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Media.Effects.AudioEffectType;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -470,11 +452,6 @@ impl AudioRenderEffectsManager {
         unsafe { (::windows::core::Interface::vtable(this).ShowSettingsUI)(::core::mem::transmute_copy(this)).ok() }
     }
 }
-impl ::core::clone::Clone for AudioRenderEffectsManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AudioRenderEffectsManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -488,7 +465,6 @@ impl ::core::fmt::Debug for AudioRenderEffectsManager {
 }
 unsafe impl ::windows::core::RuntimeType for AudioRenderEffectsManager {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.Effects.AudioRenderEffectsManager;{4dc98966-8751-42b2-bfcb-39ca7864bd47})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -581,11 +557,6 @@ impl CompositeVideoFrameContext {
         }
     }
 }
-impl ::core::clone::Clone for CompositeVideoFrameContext {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for CompositeVideoFrameContext {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -599,7 +570,6 @@ impl ::core::fmt::Debug for CompositeVideoFrameContext {
 }
 unsafe impl ::windows::core::RuntimeType for CompositeVideoFrameContext {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.Effects.CompositeVideoFrameContext;{6c30024b-f514-4278-a5f7-b9188049d110})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -656,6 +626,11 @@ unsafe impl ::core::marker::Sync for CompositeVideoFrameContext {}
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAudioCaptureEffectsManager(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAudioCaptureEffectsManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAudioCaptureEffectsManager {
     type Vtable = IAudioCaptureEffectsManager_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x8f85c271_038d_4393_8298_540110608eef);
@@ -680,6 +655,11 @@ pub struct IAudioCaptureEffectsManager_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAudioEffect(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAudioEffect {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAudioEffect {
     type Vtable = IAudioEffect_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x34aafa51_9207_4055_be93_6e5734a86ae4);
@@ -693,6 +673,11 @@ pub struct IAudioEffect_Vtbl {
 #[doc = "*Required features: `\"Media_Effects\"`*"]
 #[repr(transparent)]
 pub struct IAudioEffectDefinition(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAudioEffectDefinition {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAudioEffectDefinition {
     #[doc = "*Required features: `\"Media_Effects\"`*"]
     pub fn ActivatableClassId(&self) -> ::windows::core::Result<::windows::core::HSTRING> {
@@ -752,11 +737,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAudioEffectDefinition {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAudioEffectDefinition {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -770,7 +750,6 @@ impl ::core::fmt::Debug for IAudioEffectDefinition {
 }
 unsafe impl ::windows::core::RuntimeType for IAudioEffectDefinition {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{e4d7f974-7d80-4f73-9089-e31c9db9c294}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -792,6 +771,11 @@ pub struct IAudioEffectDefinition_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAudioEffectDefinitionFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAudioEffectDefinitionFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAudioEffectDefinitionFactory {
     type Vtable = IAudioEffectDefinitionFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x8e1da646_e705_45ed_8a2b_fc4e4f405a97);
@@ -809,6 +793,11 @@ pub struct IAudioEffectDefinitionFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAudioEffectsManagerStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAudioEffectsManagerStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAudioEffectsManagerStatics {
     type Vtable = IAudioEffectsManagerStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x66406c04_86fa_47cc_a315_f489d8c3fe10);
@@ -837,6 +826,11 @@ pub struct IAudioEffectsManagerStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAudioRenderEffectsManager(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAudioRenderEffectsManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAudioRenderEffectsManager {
     type Vtable = IAudioRenderEffectsManager_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x4dc98966_8751_42b2_bfcb_39ca7864bd47);
@@ -863,6 +857,12 @@ pub struct IAudioRenderEffectsManager_Vtbl {
 #[repr(transparent)]
 pub struct IAudioRenderEffectsManager2(::windows::core::IUnknown);
 #[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for IAudioRenderEffectsManager2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for IAudioRenderEffectsManager2 {
     type Vtable = IAudioRenderEffectsManager2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa844cd09_5ecc_44b3_bb4e_1db07287139c);
@@ -888,6 +888,11 @@ pub struct IAudioRenderEffectsManager2_Vtbl {
 #[doc = "*Required features: `\"Media_Effects\"`*"]
 #[repr(transparent)]
 pub struct IBasicAudioEffect(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBasicAudioEffect {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IBasicAudioEffect {
     #[doc = "*Required features: `\"Media_Effects\"`*"]
     pub fn UseInputFrameForOutput(&self) -> ::windows::core::Result<bool> {
@@ -996,11 +1001,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::IMediaExtension> for &IBasicAudio
         ::core::convert::TryInto::<super::IMediaExtension>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IBasicAudioEffect {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IBasicAudioEffect {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1014,7 +1014,6 @@ impl ::core::fmt::Debug for IBasicAudioEffect {
 }
 unsafe impl ::windows::core::RuntimeType for IBasicAudioEffect {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{8c062c53-6bc0-48b8-a99a-4b41550f1359}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1043,6 +1042,11 @@ pub struct IBasicAudioEffect_Vtbl {
 #[doc = "*Required features: `\"Media_Effects\"`*"]
 #[repr(transparent)]
 pub struct IBasicVideoEffect(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBasicVideoEffect {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IBasicVideoEffect {
     #[doc = "*Required features: `\"Media_Effects\"`*"]
     pub fn IsReadOnly(&self) -> ::windows::core::Result<bool> {
@@ -1167,11 +1171,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::IMediaExtension> for &IBasicVideo
         ::core::convert::TryInto::<super::IMediaExtension>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IBasicVideoEffect {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IBasicVideoEffect {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1185,7 +1184,6 @@ impl ::core::fmt::Debug for IBasicVideoEffect {
 }
 unsafe impl ::windows::core::RuntimeType for IBasicVideoEffect {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{8262c7ef-b360-40be-949b-2ff42ff35693}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1216,6 +1214,11 @@ pub struct IBasicVideoEffect_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICompositeVideoFrameContext(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICompositeVideoFrameContext {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICompositeVideoFrameContext {
     type Vtable = ICompositeVideoFrameContext_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x6c30024b_f514_4278_a5f7_b9188049d110);
@@ -1238,6 +1241,11 @@ pub struct ICompositeVideoFrameContext_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IProcessAudioFrameContext(::windows::core::IUnknown);
+impl ::core::clone::Clone for IProcessAudioFrameContext {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IProcessAudioFrameContext {
     type Vtable = IProcessAudioFrameContext_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x4cd92946_1222_4a27_a586_fb3e20273255);
@@ -1252,6 +1260,11 @@ pub struct IProcessAudioFrameContext_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IProcessVideoFrameContext(::windows::core::IUnknown);
+impl ::core::clone::Clone for IProcessVideoFrameContext {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IProcessVideoFrameContext {
     type Vtable = IProcessVideoFrameContext_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x276f0e2b_6461_401e_ba78_0fdad6114eec);
@@ -1266,6 +1279,11 @@ pub struct IProcessVideoFrameContext_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISlowMotionEffectDefinition(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISlowMotionEffectDefinition {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISlowMotionEffectDefinition {
     type Vtable = ISlowMotionEffectDefinition_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x35053cd0_176c_4763_82c4_1b02dbe31737);
@@ -1280,6 +1298,11 @@ pub struct ISlowMotionEffectDefinition_Vtbl {
 #[doc = "*Required features: `\"Media_Effects\"`*"]
 #[repr(transparent)]
 pub struct IVideoCompositor(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVideoCompositor {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IVideoCompositor {
     #[doc = "*Required features: `\"Media_Effects\"`*"]
     pub fn TimeIndependent(&self) -> ::windows::core::Result<bool> {
@@ -1379,11 +1402,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::IMediaExtension> for &IVideoCompo
         ::core::convert::TryInto::<super::IMediaExtension>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IVideoCompositor {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IVideoCompositor {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1397,7 +1415,6 @@ impl ::core::fmt::Debug for IVideoCompositor {
 }
 unsafe impl ::windows::core::RuntimeType for IVideoCompositor {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{8510b43e-420c-420f-96c7-7c98bba1fc55}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1422,6 +1439,11 @@ pub struct IVideoCompositor_Vtbl {
 #[doc = "*Required features: `\"Media_Effects\"`*"]
 #[repr(transparent)]
 pub struct IVideoCompositorDefinition(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVideoCompositorDefinition {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IVideoCompositorDefinition {
     #[doc = "*Required features: `\"Media_Effects\"`*"]
     pub fn ActivatableClassId(&self) -> ::windows::core::Result<::windows::core::HSTRING> {
@@ -1481,11 +1503,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IVideoCompositorDefinition {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IVideoCompositorDefinition {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1499,7 +1516,6 @@ impl ::core::fmt::Debug for IVideoCompositorDefinition {
 }
 unsafe impl ::windows::core::RuntimeType for IVideoCompositorDefinition {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{7946b8d0-2010-4ae3-9ab2-2cef42edd4d2}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1521,6 +1537,11 @@ pub struct IVideoCompositorDefinition_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IVideoCompositorDefinitionFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVideoCompositorDefinitionFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IVideoCompositorDefinitionFactory {
     type Vtable = IVideoCompositorDefinitionFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x4366fd10_68b8_4d52_89b6_02a968cca899);
@@ -1538,6 +1559,11 @@ pub struct IVideoCompositorDefinitionFactory_Vtbl {
 #[doc = "*Required features: `\"Media_Effects\"`*"]
 #[repr(transparent)]
 pub struct IVideoEffectDefinition(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVideoEffectDefinition {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IVideoEffectDefinition {
     #[doc = "*Required features: `\"Media_Effects\"`*"]
     pub fn ActivatableClassId(&self) -> ::windows::core::Result<::windows::core::HSTRING> {
@@ -1597,11 +1623,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IVideoEffectDefinition {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IVideoEffectDefinition {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1615,7 +1636,6 @@ impl ::core::fmt::Debug for IVideoEffectDefinition {
 }
 unsafe impl ::windows::core::RuntimeType for IVideoEffectDefinition {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{39f38cf0-8d0f-4f3e-84fc-2d46a5297943}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1637,6 +1657,11 @@ pub struct IVideoEffectDefinition_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IVideoEffectDefinitionFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVideoEffectDefinitionFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IVideoEffectDefinitionFactory {
     type Vtable = IVideoEffectDefinitionFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x81439b4e_6e33_428f_9d21_b5aafef7617c);
@@ -1654,6 +1679,11 @@ pub struct IVideoEffectDefinitionFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IVideoTransformEffectDefinition(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVideoTransformEffectDefinition {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IVideoTransformEffectDefinition {
     type Vtable = IVideoTransformEffectDefinition_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9664bb6a_1ea6_4aa6_8074_abe8851ecae2);
@@ -1714,6 +1744,11 @@ pub struct IVideoTransformEffectDefinition_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IVideoTransformEffectDefinition2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVideoTransformEffectDefinition2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IVideoTransformEffectDefinition2 {
     type Vtable = IVideoTransformEffectDefinition2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf0a8089f_66c8_4694_9fd9_1136abf7444a);
@@ -1727,6 +1762,11 @@ pub struct IVideoTransformEffectDefinition2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IVideoTransformSphericalProjection(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVideoTransformSphericalProjection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IVideoTransformSphericalProjection {
     type Vtable = IVideoTransformSphericalProjection_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xcf4401f0_9bf2_4c39_9f41_e022514a8468);
@@ -1787,6 +1827,7 @@ impl ::core::default::Default for MediaEffectClosedReason {
 }
 unsafe impl ::windows::core::Abi for MediaEffectClosedReason {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MediaEffectClosedReason {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1795,7 +1836,6 @@ impl ::core::fmt::Debug for MediaEffectClosedReason {
 }
 unsafe impl ::windows::core::RuntimeType for MediaEffectClosedReason {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Media.Effects.MediaEffectClosedReason;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1822,6 +1862,7 @@ impl ::core::default::Default for MediaMemoryTypes {
 }
 unsafe impl ::windows::core::Abi for MediaMemoryTypes {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MediaMemoryTypes {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1830,7 +1871,6 @@ impl ::core::fmt::Debug for MediaMemoryTypes {
 }
 unsafe impl ::windows::core::RuntimeType for MediaMemoryTypes {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Media.Effects.MediaMemoryTypes;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1856,11 +1896,6 @@ impl ProcessAudioFrameContext {
         }
     }
 }
-impl ::core::clone::Clone for ProcessAudioFrameContext {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ProcessAudioFrameContext {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1874,7 +1909,6 @@ impl ::core::fmt::Debug for ProcessAudioFrameContext {
 }
 unsafe impl ::windows::core::RuntimeType for ProcessAudioFrameContext {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.Effects.ProcessAudioFrameContext;{4cd92946-1222-4a27-a586-fb3e20273255})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1949,11 +1983,6 @@ impl ProcessVideoFrameContext {
         }
     }
 }
-impl ::core::clone::Clone for ProcessVideoFrameContext {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ProcessVideoFrameContext {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1967,7 +1996,6 @@ impl ::core::fmt::Debug for ProcessVideoFrameContext {
 }
 unsafe impl ::windows::core::RuntimeType for ProcessVideoFrameContext {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.Effects.ProcessVideoFrameContext;{276f0e2b-6461-401e-ba78-0fdad6114eec})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2063,11 +2091,6 @@ impl SlowMotionEffectDefinition {
         }
     }
 }
-impl ::core::clone::Clone for SlowMotionEffectDefinition {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SlowMotionEffectDefinition {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2081,7 +2104,6 @@ impl ::core::fmt::Debug for SlowMotionEffectDefinition {
 }
 unsafe impl ::windows::core::RuntimeType for SlowMotionEffectDefinition {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.Effects.SlowMotionEffectDefinition;{35053cd0-176c-4763-82c4-1b02dbe31737})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2199,11 +2221,6 @@ impl VideoCompositorDefinition {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for VideoCompositorDefinition {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for VideoCompositorDefinition {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2217,7 +2234,6 @@ impl ::core::fmt::Debug for VideoCompositorDefinition {
 }
 unsafe impl ::windows::core::RuntimeType for VideoCompositorDefinition {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.Effects.VideoCompositorDefinition;{7946b8d0-2010-4ae3-9ab2-2cef42edd4d2})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2335,11 +2351,6 @@ impl VideoEffectDefinition {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for VideoEffectDefinition {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for VideoEffectDefinition {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2353,7 +2364,6 @@ impl ::core::fmt::Debug for VideoEffectDefinition {
 }
 unsafe impl ::windows::core::RuntimeType for VideoEffectDefinition {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.Effects.VideoEffectDefinition;{39f38cf0-8d0f-4f3e-84fc-2d46a5297943})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2556,11 +2566,6 @@ impl VideoTransformEffectDefinition {
         }
     }
 }
-impl ::core::clone::Clone for VideoTransformEffectDefinition {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for VideoTransformEffectDefinition {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2574,7 +2579,6 @@ impl ::core::fmt::Debug for VideoTransformEffectDefinition {
 }
 unsafe impl ::windows::core::RuntimeType for VideoTransformEffectDefinition {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.Effects.VideoTransformEffectDefinition;{39f38cf0-8d0f-4f3e-84fc-2d46a5297943})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2726,11 +2730,6 @@ impl VideoTransformSphericalProjection {
         unsafe { (::windows::core::Interface::vtable(this).SetViewOrientation)(::core::mem::transmute_copy(this), value.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for VideoTransformSphericalProjection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for VideoTransformSphericalProjection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2744,7 +2743,6 @@ impl ::core::fmt::Debug for VideoTransformSphericalProjection {
 }
 unsafe impl ::windows::core::RuntimeType for VideoTransformSphericalProjection {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.Effects.VideoTransformSphericalProjection;{cf4401f0-9bf2-4c39-9f41-e022514a8468})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

@@ -96,6 +96,7 @@ impl ::core::default::Default for DEVICE_CAPABILITIES {
 }
 unsafe impl ::windows::core::Abi for DEVICE_CAPABILITIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DEVICE_CAPABILITIES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -124,6 +125,7 @@ impl ::core::fmt::Debug for DOCINFOA {
 }
 unsafe impl ::windows::core::Abi for DOCINFOA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOCINFOA {
     fn eq(&self, other: &Self) -> bool {
@@ -158,6 +160,7 @@ impl ::core::fmt::Debug for DOCINFOW {
 }
 unsafe impl ::windows::core::Abi for DOCINFOW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DOCINFOW {
     fn eq(&self, other: &Self) -> bool {
@@ -196,6 +199,7 @@ impl ::core::fmt::Debug for DRAWPATRECT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for DRAWPATRECT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for DRAWPATRECT {
@@ -327,10 +331,16 @@ impl ::core::fmt::Debug for HPTPROVIDER {
 }
 unsafe impl ::windows::core::Abi for HPTPROVIDER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
 #[repr(transparent)]
 pub struct IXpsDocumentPackageTarget(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXpsDocumentPackageTarget {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXpsDocumentPackageTarget {
     #[doc = "*Required features: `\"Win32_Storage_Xps\"`, `\"Win32_Storage_Packaging_Opc\"`, `\"Win32_System_Com\"`*"]
     #[cfg(all(feature = "Win32_Storage_Packaging_Opc", feature = "Win32_System_Com"))]
@@ -369,11 +379,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IXpsD
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXpsDocumentPackageTarget {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXpsDocumentPackageTarget {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -403,6 +408,11 @@ pub struct IXpsDocumentPackageTarget_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
 #[repr(transparent)]
 pub struct IXpsDocumentPackageTarget3D(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXpsDocumentPackageTarget3D {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXpsDocumentPackageTarget3D {
     #[doc = "*Required features: `\"Win32_Storage_Xps\"`, `\"Win32_Storage_Packaging_Opc\"`, `\"Win32_System_Com\"`*"]
     #[cfg(all(feature = "Win32_Storage_Packaging_Opc", feature = "Win32_System_Com"))]
@@ -436,11 +446,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IXpsD
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXpsDocumentPackageTarget3D {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXpsDocumentPackageTarget3D {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -469,6 +474,11 @@ pub struct IXpsDocumentPackageTarget3D_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
 #[repr(transparent)]
 pub struct IXpsOMBrush(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXpsOMBrush {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXpsOMBrush {
     #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
     pub unsafe fn GetOwner(&self) -> ::windows::core::Result<::windows::core::IUnknown> {
@@ -530,11 +540,6 @@ impl<'a> ::windows::core::IntoParam<'a, IXpsOMShareable> for &'a IXpsOMBrush {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXpsOMBrush {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXpsOMBrush {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -560,6 +565,11 @@ pub struct IXpsOMBrush_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
 #[repr(transparent)]
 pub struct IXpsOMCanvas(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXpsOMCanvas {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXpsOMCanvas {
     #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
     pub unsafe fn GetOwner(&self) -> ::windows::core::Result<::windows::core::IUnknown> {
@@ -812,11 +822,6 @@ impl<'a> ::windows::core::IntoParam<'a, IXpsOMVisual> for &'a IXpsOMCanvas {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXpsOMCanvas {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXpsOMCanvas {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -859,6 +864,11 @@ pub struct IXpsOMCanvas_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
 #[repr(transparent)]
 pub struct IXpsOMColorProfileResource(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXpsOMColorProfileResource {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXpsOMColorProfileResource {
     #[doc = "*Required features: `\"Win32_Storage_Xps\"`, `\"Win32_Storage_Packaging_Opc\"`, `\"Win32_System_Com\"`*"]
     #[cfg(all(feature = "Win32_Storage_Packaging_Opc", feature = "Win32_System_Com"))]
@@ -943,11 +953,6 @@ impl<'a> ::windows::core::IntoParam<'a, IXpsOMResource> for &'a IXpsOMColorProfi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXpsOMColorProfileResource {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXpsOMColorProfileResource {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -979,6 +984,11 @@ pub struct IXpsOMColorProfileResource_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
 #[repr(transparent)]
 pub struct IXpsOMColorProfileResourceCollection(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXpsOMColorProfileResourceCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXpsOMColorProfileResourceCollection {
     #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
     pub unsafe fn GetCount(&self) -> ::windows::core::Result<u32> {
@@ -1033,11 +1043,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IXpsO
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXpsOMColorProfileResourceCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXpsOMColorProfileResourceCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1071,6 +1076,11 @@ pub struct IXpsOMColorProfileResourceCollection_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
 #[repr(transparent)]
 pub struct IXpsOMCoreProperties(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXpsOMCoreProperties {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXpsOMCoreProperties {
     #[doc = "*Required features: `\"Win32_Storage_Xps\"`, `\"Win32_Storage_Packaging_Opc\"`, `\"Win32_System_Com\"`*"]
     #[cfg(all(feature = "Win32_Storage_Packaging_Opc", feature = "Win32_System_Com"))]
@@ -1284,11 +1294,6 @@ impl<'a> ::windows::core::IntoParam<'a, IXpsOMPart> for &'a IXpsOMCoreProperties
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXpsOMCoreProperties {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXpsOMCoreProperties {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1364,6 +1369,11 @@ pub struct IXpsOMCoreProperties_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
 #[repr(transparent)]
 pub struct IXpsOMDashCollection(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXpsOMDashCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXpsOMDashCollection {
     #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
     pub unsafe fn GetCount(&self) -> ::windows::core::Result<u32> {
@@ -1412,11 +1422,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IXpsO
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXpsOMDashCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXpsOMDashCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1446,6 +1451,11 @@ pub struct IXpsOMDashCollection_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
 #[repr(transparent)]
 pub struct IXpsOMDictionary(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXpsOMDictionary {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXpsOMDictionary {
     #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
     pub unsafe fn GetOwner(&self) -> ::windows::core::Result<::windows::core::IUnknown> {
@@ -1513,11 +1523,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IXpsO
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXpsOMDictionary {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXpsOMDictionary {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1551,6 +1556,11 @@ pub struct IXpsOMDictionary_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
 #[repr(transparent)]
 pub struct IXpsOMDocument(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXpsOMDocument {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXpsOMDocument {
     #[doc = "*Required features: `\"Win32_Storage_Xps\"`, `\"Win32_Storage_Packaging_Opc\"`, `\"Win32_System_Com\"`*"]
     #[cfg(all(feature = "Win32_Storage_Packaging_Opc", feature = "Win32_System_Com"))]
@@ -1642,11 +1652,6 @@ impl<'a> ::windows::core::IntoParam<'a, IXpsOMPart> for &'a IXpsOMDocument {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXpsOMDocument {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXpsOMDocument {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1678,6 +1683,11 @@ pub struct IXpsOMDocument_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
 #[repr(transparent)]
 pub struct IXpsOMDocumentCollection(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXpsOMDocumentCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXpsOMDocumentCollection {
     #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
     pub unsafe fn GetCount(&self) -> ::windows::core::Result<u32> {
@@ -1726,11 +1736,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IXpsO
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXpsOMDocumentCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXpsOMDocumentCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1760,6 +1765,11 @@ pub struct IXpsOMDocumentCollection_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
 #[repr(transparent)]
 pub struct IXpsOMDocumentSequence(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXpsOMDocumentSequence {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXpsOMDocumentSequence {
     #[doc = "*Required features: `\"Win32_Storage_Xps\"`, `\"Win32_Storage_Packaging_Opc\"`, `\"Win32_System_Com\"`*"]
     #[cfg(all(feature = "Win32_Storage_Packaging_Opc", feature = "Win32_System_Com"))]
@@ -1832,11 +1842,6 @@ impl<'a> ::windows::core::IntoParam<'a, IXpsOMPart> for &'a IXpsOMDocumentSequen
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXpsOMDocumentSequence {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXpsOMDocumentSequence {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1864,6 +1869,11 @@ pub struct IXpsOMDocumentSequence_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
 #[repr(transparent)]
 pub struct IXpsOMDocumentStructureResource(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXpsOMDocumentStructureResource {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXpsOMDocumentStructureResource {
     #[doc = "*Required features: `\"Win32_Storage_Xps\"`, `\"Win32_Storage_Packaging_Opc\"`, `\"Win32_System_Com\"`*"]
     #[cfg(all(feature = "Win32_Storage_Packaging_Opc", feature = "Win32_System_Com"))]
@@ -1953,11 +1963,6 @@ impl<'a> ::windows::core::IntoParam<'a, IXpsOMResource> for &'a IXpsOMDocumentSt
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXpsOMDocumentStructureResource {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXpsOMDocumentStructureResource {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1990,6 +1995,11 @@ pub struct IXpsOMDocumentStructureResource_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
 #[repr(transparent)]
 pub struct IXpsOMFontResource(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXpsOMFontResource {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXpsOMFontResource {
     #[doc = "*Required features: `\"Win32_Storage_Xps\"`, `\"Win32_Storage_Packaging_Opc\"`, `\"Win32_System_Com\"`*"]
     #[cfg(all(feature = "Win32_Storage_Packaging_Opc", feature = "Win32_System_Com"))]
@@ -2079,11 +2089,6 @@ impl<'a> ::windows::core::IntoParam<'a, IXpsOMResource> for &'a IXpsOMFontResour
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXpsOMFontResource {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXpsOMFontResource {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2116,6 +2121,11 @@ pub struct IXpsOMFontResource_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
 #[repr(transparent)]
 pub struct IXpsOMFontResourceCollection(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXpsOMFontResourceCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXpsOMFontResourceCollection {
     #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
     pub unsafe fn GetCount(&self) -> ::windows::core::Result<u32> {
@@ -2170,11 +2180,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IXpsO
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXpsOMFontResourceCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXpsOMFontResourceCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2208,6 +2213,11 @@ pub struct IXpsOMFontResourceCollection_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
 #[repr(transparent)]
 pub struct IXpsOMGeometry(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXpsOMGeometry {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXpsOMGeometry {
     #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
     pub unsafe fn GetOwner(&self) -> ::windows::core::Result<::windows::core::IUnknown> {
@@ -2302,11 +2312,6 @@ impl<'a> ::windows::core::IntoParam<'a, IXpsOMShareable> for &'a IXpsOMGeometry 
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXpsOMGeometry {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXpsOMGeometry {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2339,6 +2344,11 @@ pub struct IXpsOMGeometry_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
 #[repr(transparent)]
 pub struct IXpsOMGeometryFigure(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXpsOMGeometryFigure {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXpsOMGeometryFigure {
     #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
     pub unsafe fn GetOwner(&self) -> ::windows::core::Result<IXpsOMGeometry> {
@@ -2435,11 +2445,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IXpsO
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXpsOMGeometryFigure {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXpsOMGeometryFigure {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2496,6 +2501,11 @@ pub struct IXpsOMGeometryFigure_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
 #[repr(transparent)]
 pub struct IXpsOMGeometryFigureCollection(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXpsOMGeometryFigureCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXpsOMGeometryFigureCollection {
     #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
     pub unsafe fn GetCount(&self) -> ::windows::core::Result<u32> {
@@ -2544,11 +2554,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IXpsO
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXpsOMGeometryFigureCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXpsOMGeometryFigureCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2578,6 +2583,11 @@ pub struct IXpsOMGeometryFigureCollection_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
 #[repr(transparent)]
 pub struct IXpsOMGlyphs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXpsOMGlyphs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXpsOMGlyphs {
     #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
     pub unsafe fn GetOwner(&self) -> ::windows::core::Result<::windows::core::IUnknown> {
@@ -2894,11 +2904,6 @@ impl<'a> ::windows::core::IntoParam<'a, IXpsOMVisual> for &'a IXpsOMGlyphs {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXpsOMGlyphs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXpsOMGlyphs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2952,6 +2957,11 @@ pub struct IXpsOMGlyphs_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
 #[repr(transparent)]
 pub struct IXpsOMGlyphsEditor(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXpsOMGlyphsEditor {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXpsOMGlyphsEditor {
     #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
     pub unsafe fn ApplyEdits(&self) -> ::windows::core::Result<()> {
@@ -3055,11 +3065,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IXpsO
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXpsOMGlyphsEditor {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXpsOMGlyphsEditor {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3107,6 +3112,11 @@ pub struct IXpsOMGlyphsEditor_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
 #[repr(transparent)]
 pub struct IXpsOMGradientBrush(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXpsOMGradientBrush {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXpsOMGradientBrush {
     #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
     pub unsafe fn GetOwner(&self) -> ::windows::core::Result<::windows::core::IUnknown> {
@@ -3234,11 +3244,6 @@ impl<'a> ::windows::core::IntoParam<'a, IXpsOMBrush> for &'a IXpsOMGradientBrush
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXpsOMGradientBrush {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXpsOMGradientBrush {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3272,6 +3277,11 @@ pub struct IXpsOMGradientBrush_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
 #[repr(transparent)]
 pub struct IXpsOMGradientStop(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXpsOMGradientStop {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXpsOMGradientStop {
     #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
     pub unsafe fn GetOwner(&self) -> ::windows::core::Result<IXpsOMGradientBrush> {
@@ -3321,11 +3331,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IXpsO
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXpsOMGradientStop {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXpsOMGradientStop {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3355,6 +3360,11 @@ pub struct IXpsOMGradientStop_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
 #[repr(transparent)]
 pub struct IXpsOMGradientStopCollection(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXpsOMGradientStopCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXpsOMGradientStopCollection {
     #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
     pub unsafe fn GetCount(&self) -> ::windows::core::Result<u32> {
@@ -3403,11 +3413,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IXpsO
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXpsOMGradientStopCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXpsOMGradientStopCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3437,6 +3442,11 @@ pub struct IXpsOMGradientStopCollection_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
 #[repr(transparent)]
 pub struct IXpsOMImageBrush(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXpsOMImageBrush {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXpsOMImageBrush {
     #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
     pub unsafe fn GetOwner(&self) -> ::windows::core::Result<::windows::core::IUnknown> {
@@ -3611,11 +3621,6 @@ impl<'a> ::windows::core::IntoParam<'a, IXpsOMTileBrush> for &'a IXpsOMImageBrus
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXpsOMImageBrush {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXpsOMImageBrush {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3644,6 +3649,11 @@ pub struct IXpsOMImageBrush_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
 #[repr(transparent)]
 pub struct IXpsOMImageResource(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXpsOMImageResource {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXpsOMImageResource {
     #[doc = "*Required features: `\"Win32_Storage_Xps\"`, `\"Win32_Storage_Packaging_Opc\"`, `\"Win32_System_Com\"`*"]
     #[cfg(all(feature = "Win32_Storage_Packaging_Opc", feature = "Win32_System_Com"))]
@@ -3733,11 +3743,6 @@ impl<'a> ::windows::core::IntoParam<'a, IXpsOMResource> for &'a IXpsOMImageResou
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXpsOMImageResource {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXpsOMImageResource {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3770,6 +3775,11 @@ pub struct IXpsOMImageResource_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
 #[repr(transparent)]
 pub struct IXpsOMImageResourceCollection(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXpsOMImageResourceCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXpsOMImageResourceCollection {
     #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
     pub unsafe fn GetCount(&self) -> ::windows::core::Result<u32> {
@@ -3824,11 +3834,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IXpsO
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXpsOMImageResourceCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXpsOMImageResourceCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3862,6 +3867,11 @@ pub struct IXpsOMImageResourceCollection_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
 #[repr(transparent)]
 pub struct IXpsOMLinearGradientBrush(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXpsOMLinearGradientBrush {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXpsOMLinearGradientBrush {
     #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
     pub unsafe fn GetOwner(&self) -> ::windows::core::Result<::windows::core::IUnknown> {
@@ -4032,11 +4042,6 @@ impl<'a> ::windows::core::IntoParam<'a, IXpsOMGradientBrush> for &'a IXpsOMLinea
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXpsOMLinearGradientBrush {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXpsOMLinearGradientBrush {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4065,6 +4070,11 @@ pub struct IXpsOMLinearGradientBrush_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
 #[repr(transparent)]
 pub struct IXpsOMMatrixTransform(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXpsOMMatrixTransform {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXpsOMMatrixTransform {
     #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
     pub unsafe fn GetOwner(&self) -> ::windows::core::Result<::windows::core::IUnknown> {
@@ -4131,11 +4141,6 @@ impl<'a> ::windows::core::IntoParam<'a, IXpsOMShareable> for &'a IXpsOMMatrixTra
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXpsOMMatrixTransform {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXpsOMMatrixTransform {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4162,6 +4167,11 @@ pub struct IXpsOMMatrixTransform_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
 #[repr(transparent)]
 pub struct IXpsOMNameCollection(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXpsOMNameCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXpsOMNameCollection {
     #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
     pub unsafe fn GetCount(&self) -> ::windows::core::Result<u32> {
@@ -4194,11 +4204,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IXpsO
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXpsOMNameCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXpsOMNameCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4224,6 +4229,11 @@ pub struct IXpsOMNameCollection_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
 #[repr(transparent)]
 pub struct IXpsOMObjectFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXpsOMObjectFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXpsOMObjectFactory {
     #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
     pub unsafe fn CreatePackage(&self) -> ::windows::core::Result<IXpsOMPackage> {
@@ -4473,11 +4483,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IXpsO
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXpsOMObjectFactory {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXpsOMObjectFactory {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4598,6 +4603,11 @@ pub struct IXpsOMObjectFactory_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
 #[repr(transparent)]
 pub struct IXpsOMObjectFactory1(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXpsOMObjectFactory1 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXpsOMObjectFactory1 {
     #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
     pub unsafe fn CreatePackage(&self) -> ::windows::core::Result<IXpsOMPackage> {
@@ -4972,11 +4982,6 @@ impl<'a> ::windows::core::IntoParam<'a, IXpsOMObjectFactory> for &'a IXpsOMObjec
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXpsOMObjectFactory1 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXpsOMObjectFactory1 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5036,6 +5041,11 @@ pub struct IXpsOMObjectFactory1_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
 #[repr(transparent)]
 pub struct IXpsOMPackage(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXpsOMPackage {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXpsOMPackage {
     #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
     pub unsafe fn GetDocumentSequence(&self) -> ::windows::core::Result<IXpsOMDocumentSequence> {
@@ -5106,11 +5116,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IXpsO
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXpsOMPackage {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXpsOMPackage {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5156,6 +5161,11 @@ pub struct IXpsOMPackage_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
 #[repr(transparent)]
 pub struct IXpsOMPackage1(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXpsOMPackage1 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXpsOMPackage1 {
     #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
     pub unsafe fn GetDocumentSequence(&self) -> ::windows::core::Result<IXpsOMDocumentSequence> {
@@ -5261,11 +5271,6 @@ impl<'a> ::windows::core::IntoParam<'a, IXpsOMPackage> for &'a IXpsOMPackage1 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXpsOMPackage1 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXpsOMPackage1 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5298,6 +5303,11 @@ pub struct IXpsOMPackage1_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
 #[repr(transparent)]
 pub struct IXpsOMPackageTarget(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXpsOMPackageTarget {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXpsOMPackageTarget {
     #[doc = "*Required features: `\"Win32_Storage_Xps\"`, `\"Win32_Storage_Packaging_Opc\"`, `\"Win32_System_Com\"`*"]
     #[cfg(all(feature = "Win32_Storage_Packaging_Opc", feature = "Win32_System_Com"))]
@@ -5324,11 +5334,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IXpsOMPac
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IXpsOMPackageTarget {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IXpsOMPackageTarget {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IXpsOMPackageTarget {
@@ -5358,6 +5363,11 @@ pub struct IXpsOMPackageTarget_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
 #[repr(transparent)]
 pub struct IXpsOMPackageWriter(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXpsOMPackageWriter {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXpsOMPackageWriter {
     #[doc = "*Required features: `\"Win32_Storage_Xps\"`, `\"Win32_Storage_Packaging_Opc\"`, `\"Win32_System_Com\"`*"]
     #[cfg(all(feature = "Win32_Storage_Packaging_Opc", feature = "Win32_System_Com"))]
@@ -5403,11 +5413,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IXpsO
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXpsOMPackageWriter {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXpsOMPackageWriter {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5442,6 +5447,11 @@ pub struct IXpsOMPackageWriter_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
 #[repr(transparent)]
 pub struct IXpsOMPackageWriter3D(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXpsOMPackageWriter3D {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXpsOMPackageWriter3D {
     #[doc = "*Required features: `\"Win32_Storage_Xps\"`, `\"Win32_Storage_Packaging_Opc\"`, `\"Win32_System_Com\"`*"]
     #[cfg(all(feature = "Win32_Storage_Packaging_Opc", feature = "Win32_System_Com"))]
@@ -5517,11 +5527,6 @@ impl<'a> ::windows::core::IntoParam<'a, IXpsOMPackageWriter> for &'a IXpsOMPacka
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXpsOMPackageWriter3D {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXpsOMPackageWriter3D {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5553,6 +5558,11 @@ pub struct IXpsOMPackageWriter3D_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
 #[repr(transparent)]
 pub struct IXpsOMPage(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXpsOMPage {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXpsOMPage {
     #[doc = "*Required features: `\"Win32_Storage_Xps\"`, `\"Win32_Storage_Packaging_Opc\"`, `\"Win32_System_Com\"`*"]
     #[cfg(all(feature = "Win32_Storage_Packaging_Opc", feature = "Win32_System_Com"))]
@@ -5710,11 +5720,6 @@ impl<'a> ::windows::core::IntoParam<'a, IXpsOMPart> for &'a IXpsOMPage {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXpsOMPage {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXpsOMPage {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5769,6 +5774,11 @@ pub struct IXpsOMPage_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
 #[repr(transparent)]
 pub struct IXpsOMPage1(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXpsOMPage1 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXpsOMPage1 {
     #[doc = "*Required features: `\"Win32_Storage_Xps\"`, `\"Win32_Storage_Packaging_Opc\"`, `\"Win32_System_Com\"`*"]
     #[cfg(all(feature = "Win32_Storage_Packaging_Opc", feature = "Win32_System_Com"))]
@@ -5956,11 +5966,6 @@ impl<'a> ::windows::core::IntoParam<'a, IXpsOMPage> for &'a IXpsOMPage1 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXpsOMPage1 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXpsOMPage1 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5989,6 +5994,11 @@ pub struct IXpsOMPage1_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
 #[repr(transparent)]
 pub struct IXpsOMPageReference(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXpsOMPageReference {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXpsOMPageReference {
     #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
     pub unsafe fn GetOwner(&self) -> ::windows::core::Result<IXpsOMDocument> {
@@ -6092,11 +6102,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IXpsO
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXpsOMPageReference {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXpsOMPageReference {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6143,6 +6148,11 @@ pub struct IXpsOMPageReference_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
 #[repr(transparent)]
 pub struct IXpsOMPageReferenceCollection(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXpsOMPageReferenceCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXpsOMPageReferenceCollection {
     #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
     pub unsafe fn GetCount(&self) -> ::windows::core::Result<u32> {
@@ -6191,11 +6201,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IXpsO
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXpsOMPageReferenceCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXpsOMPageReferenceCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6225,6 +6230,11 @@ pub struct IXpsOMPageReferenceCollection_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
 #[repr(transparent)]
 pub struct IXpsOMPart(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXpsOMPart {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXpsOMPart {
     #[doc = "*Required features: `\"Win32_Storage_Xps\"`, `\"Win32_Storage_Packaging_Opc\"`, `\"Win32_System_Com\"`*"]
     #[cfg(all(feature = "Win32_Storage_Packaging_Opc", feature = "Win32_System_Com"))]
@@ -6258,11 +6268,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IXpsO
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXpsOMPart {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXpsOMPart {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6294,6 +6299,11 @@ pub struct IXpsOMPart_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
 #[repr(transparent)]
 pub struct IXpsOMPartResources(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXpsOMPartResources {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXpsOMPartResources {
     #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
     pub unsafe fn GetFontResources(&self) -> ::windows::core::Result<IXpsOMFontResourceCollection> {
@@ -6336,11 +6346,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IXpsO
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXpsOMPartResources {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXpsOMPartResources {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6368,6 +6373,11 @@ pub struct IXpsOMPartResources_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
 #[repr(transparent)]
 pub struct IXpsOMPartUriCollection(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXpsOMPartUriCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXpsOMPartUriCollection {
     #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
     pub unsafe fn GetCount(&self) -> ::windows::core::Result<u32> {
@@ -6420,11 +6430,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IXpsO
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXpsOMPartUriCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXpsOMPartUriCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6466,6 +6471,11 @@ pub struct IXpsOMPartUriCollection_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
 #[repr(transparent)]
 pub struct IXpsOMPath(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXpsOMPath {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXpsOMPath {
     #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
     pub unsafe fn GetOwner(&self) -> ::windows::core::Result<::windows::core::IUnknown> {
@@ -6827,11 +6837,6 @@ impl<'a> ::windows::core::IntoParam<'a, IXpsOMVisual> for &'a IXpsOMPath {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXpsOMPath {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXpsOMPath {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6898,6 +6903,11 @@ pub struct IXpsOMPath_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
 #[repr(transparent)]
 pub struct IXpsOMPrintTicketResource(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXpsOMPrintTicketResource {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXpsOMPrintTicketResource {
     #[doc = "*Required features: `\"Win32_Storage_Xps\"`, `\"Win32_Storage_Packaging_Opc\"`, `\"Win32_System_Com\"`*"]
     #[cfg(all(feature = "Win32_Storage_Packaging_Opc", feature = "Win32_System_Com"))]
@@ -6982,11 +6992,6 @@ impl<'a> ::windows::core::IntoParam<'a, IXpsOMResource> for &'a IXpsOMPrintTicke
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXpsOMPrintTicketResource {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXpsOMPrintTicketResource {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7018,6 +7023,11 @@ pub struct IXpsOMPrintTicketResource_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
 #[repr(transparent)]
 pub struct IXpsOMRadialGradientBrush(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXpsOMRadialGradientBrush {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXpsOMRadialGradientBrush {
     #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
     pub unsafe fn GetOwner(&self) -> ::windows::core::Result<::windows::core::IUnknown> {
@@ -7197,11 +7207,6 @@ impl<'a> ::windows::core::IntoParam<'a, IXpsOMGradientBrush> for &'a IXpsOMRadia
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXpsOMRadialGradientBrush {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXpsOMRadialGradientBrush {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7232,6 +7237,11 @@ pub struct IXpsOMRadialGradientBrush_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
 #[repr(transparent)]
 pub struct IXpsOMRemoteDictionaryResource(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXpsOMRemoteDictionaryResource {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXpsOMRemoteDictionaryResource {
     #[doc = "*Required features: `\"Win32_Storage_Xps\"`, `\"Win32_Storage_Packaging_Opc\"`, `\"Win32_System_Com\"`*"]
     #[cfg(all(feature = "Win32_Storage_Packaging_Opc", feature = "Win32_System_Com"))]
@@ -7314,11 +7324,6 @@ impl<'a> ::windows::core::IntoParam<'a, IXpsOMResource> for &'a IXpsOMRemoteDict
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXpsOMRemoteDictionaryResource {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXpsOMRemoteDictionaryResource {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7344,6 +7349,11 @@ pub struct IXpsOMRemoteDictionaryResource_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
 #[repr(transparent)]
 pub struct IXpsOMRemoteDictionaryResource1(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXpsOMRemoteDictionaryResource1 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXpsOMRemoteDictionaryResource1 {
     #[doc = "*Required features: `\"Win32_Storage_Xps\"`, `\"Win32_Storage_Packaging_Opc\"`, `\"Win32_System_Com\"`*"]
     #[cfg(all(feature = "Win32_Storage_Packaging_Opc", feature = "Win32_System_Com"))]
@@ -7456,11 +7466,6 @@ impl<'a> ::windows::core::IntoParam<'a, IXpsOMRemoteDictionaryResource> for &'a 
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXpsOMRemoteDictionaryResource1 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXpsOMRemoteDictionaryResource1 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7489,6 +7494,11 @@ pub struct IXpsOMRemoteDictionaryResource1_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
 #[repr(transparent)]
 pub struct IXpsOMRemoteDictionaryResourceCollection(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXpsOMRemoteDictionaryResourceCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXpsOMRemoteDictionaryResourceCollection {
     #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
     pub unsafe fn GetCount(&self) -> ::windows::core::Result<u32> {
@@ -7543,11 +7553,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IXpsO
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXpsOMRemoteDictionaryResourceCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXpsOMRemoteDictionaryResourceCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7581,6 +7586,11 @@ pub struct IXpsOMRemoteDictionaryResourceCollection_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
 #[repr(transparent)]
 pub struct IXpsOMResource(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXpsOMResource {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXpsOMResource {
     #[doc = "*Required features: `\"Win32_Storage_Xps\"`, `\"Win32_Storage_Packaging_Opc\"`, `\"Win32_System_Com\"`*"]
     #[cfg(all(feature = "Win32_Storage_Packaging_Opc", feature = "Win32_System_Com"))]
@@ -7634,11 +7644,6 @@ impl<'a> ::windows::core::IntoParam<'a, IXpsOMPart> for &'a IXpsOMResource {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXpsOMResource {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXpsOMResource {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7662,6 +7667,11 @@ pub struct IXpsOMResource_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
 #[repr(transparent)]
 pub struct IXpsOMShareable(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXpsOMShareable {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXpsOMShareable {
     #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
     pub unsafe fn GetOwner(&self) -> ::windows::core::Result<::windows::core::IUnknown> {
@@ -7694,11 +7704,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IXpsO
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXpsOMShareable {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXpsOMShareable {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7724,6 +7729,11 @@ pub struct IXpsOMShareable_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
 #[repr(transparent)]
 pub struct IXpsOMSignatureBlockResource(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXpsOMSignatureBlockResource {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXpsOMSignatureBlockResource {
     #[doc = "*Required features: `\"Win32_Storage_Xps\"`, `\"Win32_Storage_Packaging_Opc\"`, `\"Win32_System_Com\"`*"]
     #[cfg(all(feature = "Win32_Storage_Packaging_Opc", feature = "Win32_System_Com"))]
@@ -7813,11 +7823,6 @@ impl<'a> ::windows::core::IntoParam<'a, IXpsOMResource> for &'a IXpsOMSignatureB
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXpsOMSignatureBlockResource {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXpsOMSignatureBlockResource {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7850,6 +7855,11 @@ pub struct IXpsOMSignatureBlockResource_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
 #[repr(transparent)]
 pub struct IXpsOMSignatureBlockResourceCollection(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXpsOMSignatureBlockResourceCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXpsOMSignatureBlockResourceCollection {
     #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
     pub unsafe fn GetCount(&self) -> ::windows::core::Result<u32> {
@@ -7904,11 +7914,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IXpsO
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXpsOMSignatureBlockResourceCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXpsOMSignatureBlockResourceCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7942,6 +7947,11 @@ pub struct IXpsOMSignatureBlockResourceCollection_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
 #[repr(transparent)]
 pub struct IXpsOMSolidColorBrush(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXpsOMSolidColorBrush {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXpsOMSolidColorBrush {
     #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
     pub unsafe fn GetOwner(&self) -> ::windows::core::Result<::windows::core::IUnknown> {
@@ -8036,11 +8046,6 @@ impl<'a> ::windows::core::IntoParam<'a, IXpsOMBrush> for &'a IXpsOMSolidColorBru
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXpsOMSolidColorBrush {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXpsOMSolidColorBrush {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8067,6 +8072,11 @@ pub struct IXpsOMSolidColorBrush_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
 #[repr(transparent)]
 pub struct IXpsOMStoryFragmentsResource(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXpsOMStoryFragmentsResource {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXpsOMStoryFragmentsResource {
     #[doc = "*Required features: `\"Win32_Storage_Xps\"`, `\"Win32_Storage_Packaging_Opc\"`, `\"Win32_System_Com\"`*"]
     #[cfg(all(feature = "Win32_Storage_Packaging_Opc", feature = "Win32_System_Com"))]
@@ -8156,11 +8166,6 @@ impl<'a> ::windows::core::IntoParam<'a, IXpsOMResource> for &'a IXpsOMStoryFragm
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXpsOMStoryFragmentsResource {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXpsOMStoryFragmentsResource {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8193,6 +8198,11 @@ pub struct IXpsOMStoryFragmentsResource_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
 #[repr(transparent)]
 pub struct IXpsOMThumbnailGenerator(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXpsOMThumbnailGenerator {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXpsOMThumbnailGenerator {
     #[doc = "*Required features: `\"Win32_Storage_Xps\"`, `\"Win32_Storage_Packaging_Opc\"`, `\"Win32_System_Com\"`*"]
     #[cfg(all(feature = "Win32_Storage_Packaging_Opc", feature = "Win32_System_Com"))]
@@ -8219,11 +8229,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IXpsOMThu
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IXpsOMThumbnailGenerator {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IXpsOMThumbnailGenerator {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IXpsOMThumbnailGenerator {
@@ -8253,6 +8258,11 @@ pub struct IXpsOMThumbnailGenerator_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
 #[repr(transparent)]
 pub struct IXpsOMTileBrush(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXpsOMTileBrush {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXpsOMTileBrush {
     #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
     pub unsafe fn GetOwner(&self) -> ::windows::core::Result<::windows::core::IUnknown> {
@@ -8384,11 +8394,6 @@ impl<'a> ::windows::core::IntoParam<'a, IXpsOMBrush> for &'a IXpsOMTileBrush {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXpsOMTileBrush {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXpsOMTileBrush {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8423,6 +8428,11 @@ pub struct IXpsOMTileBrush_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
 #[repr(transparent)]
 pub struct IXpsOMVisual(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXpsOMVisual {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXpsOMVisual {
     #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
     pub unsafe fn GetOwner(&self) -> ::windows::core::Result<::windows::core::IUnknown> {
@@ -8593,11 +8603,6 @@ impl<'a> ::windows::core::IntoParam<'a, IXpsOMShareable> for &'a IXpsOMVisual {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXpsOMVisual {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXpsOMVisual {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8658,6 +8663,11 @@ pub struct IXpsOMVisual_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
 #[repr(transparent)]
 pub struct IXpsOMVisualBrush(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXpsOMVisualBrush {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXpsOMVisualBrush {
     #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
     pub unsafe fn GetOwner(&self) -> ::windows::core::Result<::windows::core::IUnknown> {
@@ -8837,11 +8847,6 @@ impl<'a> ::windows::core::IntoParam<'a, IXpsOMTileBrush> for &'a IXpsOMVisualBru
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXpsOMVisualBrush {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXpsOMVisualBrush {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8871,6 +8876,11 @@ pub struct IXpsOMVisualBrush_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
 #[repr(transparent)]
 pub struct IXpsOMVisualCollection(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXpsOMVisualCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXpsOMVisualCollection {
     #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
     pub unsafe fn GetCount(&self) -> ::windows::core::Result<u32> {
@@ -8919,11 +8929,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IXpsO
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXpsOMVisualCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXpsOMVisualCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8953,6 +8958,11 @@ pub struct IXpsOMVisualCollection_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
 #[repr(transparent)]
 pub struct IXpsSignature(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXpsSignature {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXpsSignature {
     #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
     pub unsafe fn GetSignatureId(&self) -> ::windows::core::Result<::windows::core::PWSTR> {
@@ -9038,11 +9048,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IXpsS
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXpsSignature {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXpsSignature {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9096,6 +9101,11 @@ pub struct IXpsSignature_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
 #[repr(transparent)]
 pub struct IXpsSignatureBlock(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXpsSignatureBlock {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXpsSignatureBlock {
     #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
     pub unsafe fn GetRequests(&self) -> ::windows::core::Result<IXpsSignatureRequestCollection> {
@@ -9145,11 +9155,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IXpsS
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXpsSignatureBlock {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXpsSignatureBlock {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9184,6 +9189,11 @@ pub struct IXpsSignatureBlock_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
 #[repr(transparent)]
 pub struct IXpsSignatureBlockCollection(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXpsSignatureBlockCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXpsSignatureBlockCollection {
     #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
     pub unsafe fn GetCount(&self) -> ::windows::core::Result<u32> {
@@ -9220,11 +9230,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IXpsS
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXpsSignatureBlockCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXpsSignatureBlockCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9251,6 +9256,11 @@ pub struct IXpsSignatureBlockCollection_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
 #[repr(transparent)]
 pub struct IXpsSignatureCollection(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXpsSignatureCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXpsSignatureCollection {
     #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
     pub unsafe fn GetCount(&self) -> ::windows::core::Result<u32> {
@@ -9287,11 +9297,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IXpsS
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXpsSignatureCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXpsSignatureCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9318,6 +9323,11 @@ pub struct IXpsSignatureCollection_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
 #[repr(transparent)]
 pub struct IXpsSignatureManager(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXpsSignatureManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXpsSignatureManager {
     #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
     pub unsafe fn LoadPackageFile<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, filename: Param0) -> ::windows::core::Result<()> {
@@ -9397,11 +9407,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IXpsS
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXpsSignatureManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXpsSignatureManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9457,6 +9462,11 @@ pub struct IXpsSignatureManager_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
 #[repr(transparent)]
 pub struct IXpsSignatureRequest(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXpsSignatureRequest {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXpsSignatureRequest {
     #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
     pub unsafe fn GetIntent(&self) -> ::windows::core::Result<::windows::core::PWSTR> {
@@ -9534,11 +9544,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IXpsS
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXpsSignatureRequest {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXpsSignatureRequest {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9577,6 +9582,11 @@ pub struct IXpsSignatureRequest_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
 #[repr(transparent)]
 pub struct IXpsSignatureRequestCollection(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXpsSignatureRequestCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXpsSignatureRequestCollection {
     #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
     pub unsafe fn GetCount(&self) -> ::windows::core::Result<u32> {
@@ -9613,11 +9623,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IXpsS
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXpsSignatureRequestCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXpsSignatureRequestCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9644,6 +9649,11 @@ pub struct IXpsSignatureRequestCollection_Vtbl {
 #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
 #[repr(transparent)]
 pub struct IXpsSigningOptions(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXpsSigningOptions {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXpsSigningOptions {
     #[doc = "*Required features: `\"Win32_Storage_Xps\"`*"]
     pub unsafe fn GetSignatureId(&self) -> ::windows::core::Result<::windows::core::PWSTR> {
@@ -9751,11 +9761,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IXpsS
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IXpsSigningOptions {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IXpsSigningOptions {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9833,6 +9838,7 @@ impl ::core::default::Default for PRINT_WINDOW_FLAGS {
 }
 unsafe impl ::windows::core::Abi for PRINT_WINDOW_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PRINT_WINDOW_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9861,6 +9867,7 @@ impl ::core::fmt::Debug for PSFEATURE_CUSTPAPER {
 }
 unsafe impl ::windows::core::Abi for PSFEATURE_CUSTPAPER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PSFEATURE_CUSTPAPER {
     fn eq(&self, other: &Self) -> bool {
@@ -9897,6 +9904,7 @@ impl ::core::fmt::Debug for PSFEATURE_OUTPUT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PSFEATURE_OUTPUT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for PSFEATURE_OUTPUT {
@@ -9932,6 +9940,7 @@ impl ::core::fmt::Debug for PSINJECTDATA {
 }
 unsafe impl ::windows::core::Abi for PSINJECTDATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PSINJECTDATA {
     fn eq(&self, other: &Self) -> bool {
@@ -10023,6 +10032,7 @@ impl ::core::default::Default for PSINJECT_POINT {
 }
 unsafe impl ::windows::core::Abi for PSINJECT_POINT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PSINJECT_POINT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10146,6 +10156,7 @@ impl ::core::clone::Clone for XPS_COLOR {
 }
 unsafe impl ::windows::core::Abi for XPS_COLOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for XPS_COLOR {
     fn eq(&self, other: &Self) -> bool {
@@ -10173,6 +10184,7 @@ impl ::core::clone::Clone for XPS_COLOR_0 {
 }
 unsafe impl ::windows::core::Abi for XPS_COLOR_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for XPS_COLOR_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -10204,6 +10216,7 @@ impl ::core::fmt::Debug for XPS_COLOR_0_0 {
 }
 unsafe impl ::windows::core::Abi for XPS_COLOR_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for XPS_COLOR_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -10237,6 +10250,7 @@ impl ::core::fmt::Debug for XPS_COLOR_0_1 {
 }
 unsafe impl ::windows::core::Abi for XPS_COLOR_0_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for XPS_COLOR_0_1 {
     fn eq(&self, other: &Self) -> bool {
@@ -10270,6 +10284,7 @@ impl ::core::fmt::Debug for XPS_COLOR_0_2 {
 }
 unsafe impl ::windows::core::Abi for XPS_COLOR_0_2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for XPS_COLOR_0_2 {
     fn eq(&self, other: &Self) -> bool {
@@ -10303,6 +10318,7 @@ impl ::core::default::Default for XPS_COLOR_INTERPOLATION {
 }
 unsafe impl ::windows::core::Abi for XPS_COLOR_INTERPOLATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for XPS_COLOR_INTERPOLATION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10332,6 +10348,7 @@ impl ::core::default::Default for XPS_COLOR_TYPE {
 }
 unsafe impl ::windows::core::Abi for XPS_COLOR_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for XPS_COLOR_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10357,6 +10374,7 @@ impl ::core::fmt::Debug for XPS_DASH {
 }
 unsafe impl ::windows::core::Abi for XPS_DASH {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for XPS_DASH {
     fn eq(&self, other: &Self) -> bool {
@@ -10394,6 +10412,7 @@ impl ::core::default::Default for XPS_DASH_CAP {
 }
 unsafe impl ::windows::core::Abi for XPS_DASH_CAP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for XPS_DASH_CAP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10423,6 +10442,7 @@ impl ::core::default::Default for XPS_DOCUMENT_TYPE {
 }
 unsafe impl ::windows::core::Abi for XPS_DOCUMENT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for XPS_DOCUMENT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10620,6 +10640,7 @@ impl ::core::default::Default for XPS_FILL_RULE {
 }
 unsafe impl ::windows::core::Abi for XPS_FILL_RULE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for XPS_FILL_RULE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10651,6 +10672,7 @@ impl ::core::default::Default for XPS_FONT_EMBEDDING {
 }
 unsafe impl ::windows::core::Abi for XPS_FONT_EMBEDDING {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for XPS_FONT_EMBEDDING {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10678,6 +10700,7 @@ impl ::core::fmt::Debug for XPS_GLYPH_INDEX {
 }
 unsafe impl ::windows::core::Abi for XPS_GLYPH_INDEX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for XPS_GLYPH_INDEX {
     fn eq(&self, other: &Self) -> bool {
@@ -10711,6 +10734,7 @@ impl ::core::fmt::Debug for XPS_GLYPH_MAPPING {
 }
 unsafe impl ::windows::core::Abi for XPS_GLYPH_MAPPING {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for XPS_GLYPH_MAPPING {
     fn eq(&self, other: &Self) -> bool {
@@ -10750,6 +10774,7 @@ impl ::core::default::Default for XPS_IMAGE_TYPE {
 }
 unsafe impl ::windows::core::Abi for XPS_IMAGE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for XPS_IMAGE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10777,6 +10802,7 @@ impl ::core::default::Default for XPS_INTERLEAVING {
 }
 unsafe impl ::windows::core::Abi for XPS_INTERLEAVING {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for XPS_INTERLEAVING {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10808,6 +10834,7 @@ impl ::core::default::Default for XPS_LINE_CAP {
 }
 unsafe impl ::windows::core::Abi for XPS_LINE_CAP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for XPS_LINE_CAP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10837,6 +10864,7 @@ impl ::core::default::Default for XPS_LINE_JOIN {
 }
 unsafe impl ::windows::core::Abi for XPS_LINE_JOIN {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for XPS_LINE_JOIN {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10866,6 +10894,7 @@ impl ::core::fmt::Debug for XPS_MATRIX {
 }
 unsafe impl ::windows::core::Abi for XPS_MATRIX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for XPS_MATRIX {
     fn eq(&self, other: &Self) -> bool {
@@ -10915,6 +10944,7 @@ impl ::core::default::Default for XPS_OBJECT_TYPE {
 }
 unsafe impl ::windows::core::Abi for XPS_OBJECT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for XPS_OBJECT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10940,6 +10970,7 @@ impl ::core::fmt::Debug for XPS_POINT {
 }
 unsafe impl ::windows::core::Abi for XPS_POINT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for XPS_POINT {
     fn eq(&self, other: &Self) -> bool {
@@ -10973,6 +11004,7 @@ impl ::core::fmt::Debug for XPS_RECT {
 }
 unsafe impl ::windows::core::Abi for XPS_RECT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for XPS_RECT {
     fn eq(&self, other: &Self) -> bool {
@@ -11008,6 +11040,7 @@ impl ::core::default::Default for XPS_SEGMENT_STROKE_PATTERN {
 }
 unsafe impl ::windows::core::Abi for XPS_SEGMENT_STROKE_PATTERN {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for XPS_SEGMENT_STROKE_PATTERN {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11045,6 +11078,7 @@ impl ::core::default::Default for XPS_SEGMENT_TYPE {
 }
 unsafe impl ::windows::core::Abi for XPS_SEGMENT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for XPS_SEGMENT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11078,6 +11112,7 @@ impl ::core::default::Default for XPS_SIGNATURE_STATUS {
 }
 unsafe impl ::windows::core::Abi for XPS_SIGNATURE_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for XPS_SIGNATURE_STATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11105,6 +11140,7 @@ impl ::core::default::Default for XPS_SIGN_FLAGS {
 }
 unsafe impl ::windows::core::Abi for XPS_SIGN_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for XPS_SIGN_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11140,6 +11176,7 @@ impl ::core::default::Default for XPS_SIGN_POLICY {
 }
 unsafe impl ::windows::core::Abi for XPS_SIGN_POLICY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for XPS_SIGN_POLICY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11165,6 +11202,7 @@ impl ::core::fmt::Debug for XPS_SIZE {
 }
 unsafe impl ::windows::core::Abi for XPS_SIZE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for XPS_SIZE {
     fn eq(&self, other: &Self) -> bool {
@@ -11200,6 +11238,7 @@ impl ::core::default::Default for XPS_SPREAD_METHOD {
 }
 unsafe impl ::windows::core::Abi for XPS_SPREAD_METHOD {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for XPS_SPREAD_METHOD {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11231,6 +11270,7 @@ impl ::core::default::Default for XPS_STYLE_SIMULATION {
 }
 unsafe impl ::windows::core::Abi for XPS_STYLE_SIMULATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for XPS_STYLE_SIMULATION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11262,6 +11302,7 @@ impl ::core::default::Default for XPS_THUMBNAIL_SIZE {
 }
 unsafe impl ::windows::core::Abi for XPS_THUMBNAIL_SIZE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for XPS_THUMBNAIL_SIZE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11295,6 +11336,7 @@ impl ::core::default::Default for XPS_TILE_MODE {
 }
 unsafe impl ::windows::core::Abi for XPS_TILE_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for XPS_TILE_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

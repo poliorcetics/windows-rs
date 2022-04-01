@@ -26,6 +26,7 @@ impl ::core::default::Default for HANDLE_ACCESS_OPTIONS {
 }
 unsafe impl ::windows::core::Abi for HANDLE_ACCESS_OPTIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HANDLE_ACCESS_OPTIONS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -87,6 +88,7 @@ impl ::core::default::Default for HANDLE_CREATION_OPTIONS {
 }
 unsafe impl ::windows::core::Abi for HANDLE_CREATION_OPTIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HANDLE_CREATION_OPTIONS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -126,6 +128,7 @@ impl ::core::default::Default for HANDLE_OPTIONS {
 }
 unsafe impl ::windows::core::Abi for HANDLE_OPTIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HANDLE_OPTIONS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -185,6 +188,7 @@ impl ::core::default::Default for HANDLE_SHARING_OPTIONS {
 }
 unsafe impl ::windows::core::Abi for HANDLE_SHARING_OPTIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HANDLE_SHARING_OPTIONS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -222,6 +226,11 @@ impl ::core::ops::Not for HANDLE_SHARING_OPTIONS {
 #[doc = "*Required features: `\"Win32_System_WinRT_Storage\"`*"]
 #[repr(transparent)]
 pub struct IOplockBreakingHandler(::windows::core::IUnknown);
+impl ::core::clone::Clone for IOplockBreakingHandler {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IOplockBreakingHandler {
     #[doc = "*Required features: `\"Win32_System_WinRT_Storage\"`*"]
     pub unsafe fn OplockBreaking(&self) -> ::windows::core::Result<()> {
@@ -248,11 +257,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IOplo
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IOplockBreakingHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IOplockBreakingHandler {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -277,6 +281,11 @@ pub struct IOplockBreakingHandler_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT_Storage\"`*"]
 #[repr(transparent)]
 pub struct IRandomAccessStreamFileAccessMode(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRandomAccessStreamFileAccessMode {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRandomAccessStreamFileAccessMode {
     #[doc = "*Required features: `\"Win32_System_WinRT_Storage\"`*"]
     pub unsafe fn GetMode(&self) -> ::windows::core::Result<u32> {
@@ -304,11 +313,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IRand
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IRandomAccessStreamFileAccessMode {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IRandomAccessStreamFileAccessMode {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -333,6 +337,11 @@ pub struct IRandomAccessStreamFileAccessMode_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT_Storage\"`*"]
 #[repr(transparent)]
 pub struct IStorageFolderHandleAccess(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStorageFolderHandleAccess {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IStorageFolderHandleAccess {
     #[doc = "*Required features: `\"Win32_System_WinRT_Storage\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -359,11 +368,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IStorageF
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IStorageFolderHandleAccess {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IStorageFolderHandleAccess {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IStorageFolderHandleAccess {
@@ -393,6 +397,11 @@ pub struct IStorageFolderHandleAccess_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT_Storage\"`*"]
 #[repr(transparent)]
 pub struct IStorageItemHandleAccess(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStorageItemHandleAccess {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IStorageItemHandleAccess {
     #[doc = "*Required features: `\"Win32_System_WinRT_Storage\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -419,11 +428,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IStorageI
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IStorageItemHandleAccess {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IStorageItemHandleAccess {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IStorageItemHandleAccess {
@@ -453,6 +457,11 @@ pub struct IStorageItemHandleAccess_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT_Storage\"`*"]
 #[repr(transparent)]
 pub struct IUnbufferedFileHandleOplockCallback(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUnbufferedFileHandleOplockCallback {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUnbufferedFileHandleOplockCallback {
     #[doc = "*Required features: `\"Win32_System_WinRT_Storage\"`*"]
     pub unsafe fn OnBrokenCallback(&self) -> ::windows::core::Result<()> {
@@ -479,11 +488,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUnbu
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUnbufferedFileHandleOplockCallback {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUnbufferedFileHandleOplockCallback {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -508,6 +512,11 @@ pub struct IUnbufferedFileHandleOplockCallback_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT_Storage\"`*"]
 #[repr(transparent)]
 pub struct IUnbufferedFileHandleProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUnbufferedFileHandleProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUnbufferedFileHandleProvider {
     #[doc = "*Required features: `\"Win32_System_WinRT_Storage\"`*"]
     pub unsafe fn OpenUnbufferedFileHandle<'a, Param0: ::windows::core::IntoParam<'a, IUnbufferedFileHandleOplockCallback>>(&self, oplockbreakcallback: Param0) -> ::windows::core::Result<usize> {
@@ -537,11 +546,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IUnbuffer
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUnbufferedFileHandleProvider {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IUnbufferedFileHandleProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IUnbufferedFileHandleProvider {

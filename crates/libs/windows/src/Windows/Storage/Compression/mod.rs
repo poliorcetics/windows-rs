@@ -24,6 +24,7 @@ impl ::core::default::Default for CompressAlgorithm {
 }
 unsafe impl ::windows::core::Abi for CompressAlgorithm {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CompressAlgorithm {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -32,7 +33,6 @@ impl ::core::fmt::Debug for CompressAlgorithm {
 }
 unsafe impl ::windows::core::RuntimeType for CompressAlgorithm {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Storage.Compression.CompressAlgorithm;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -105,11 +105,6 @@ impl Compressor {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for Compressor {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for Compressor {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -123,7 +118,6 @@ impl ::core::fmt::Debug for Compressor {
 }
 unsafe impl ::windows::core::RuntimeType for Compressor {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Storage.Compression.Compressor;{0ac3645a-57ac-4ee1-b702-84d39d5424e0})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -271,11 +265,6 @@ impl Decompressor {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for Decompressor {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for Decompressor {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -289,7 +278,6 @@ impl ::core::fmt::Debug for Decompressor {
 }
 unsafe impl ::windows::core::RuntimeType for Decompressor {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Storage.Compression.Decompressor;{b883fe46-d68a-4c8b-ada0-4ee813fc5283})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -398,6 +386,11 @@ unsafe impl ::core::marker::Sync for Decompressor {}
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICompressor(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICompressor {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICompressor {
     type Vtable = ICompressor_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x0ac3645a_57ac_4ee1_b702_84d39d5424e0);
@@ -418,6 +411,11 @@ pub struct ICompressor_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICompressorFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICompressorFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICompressorFactory {
     type Vtable = ICompressorFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x5f3d96a4_2cfb_442c_a8ba_d7d11b039da0);
@@ -438,6 +436,11 @@ pub struct ICompressorFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDecompressor(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDecompressor {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDecompressor {
     type Vtable = IDecompressor_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb883fe46_d68a_4c8b_ada0_4ee813fc5283);
@@ -454,6 +457,11 @@ pub struct IDecompressor_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDecompressorFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDecompressorFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDecompressorFactory {
     type Vtable = IDecompressorFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x5337e252_1da2_42e1_8834_0379d28d742f);

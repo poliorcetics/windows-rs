@@ -25,6 +25,7 @@ impl ::core::default::Default for AuthenticationProtocol {
 }
 unsafe impl ::windows::core::Abi for AuthenticationProtocol {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AuthenticationProtocol {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -33,7 +34,6 @@ impl ::core::fmt::Debug for AuthenticationProtocol {
 }
 unsafe impl ::windows::core::RuntimeType for AuthenticationProtocol {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Security.Credentials.UI.AuthenticationProtocol;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -218,11 +218,6 @@ impl CredentialPickerOptions {
         }
     }
 }
-impl ::core::clone::Clone for CredentialPickerOptions {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for CredentialPickerOptions {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -236,7 +231,6 @@ impl ::core::fmt::Debug for CredentialPickerOptions {
 }
 unsafe impl ::windows::core::RuntimeType for CredentialPickerOptions {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Security.Credentials.UI.CredentialPickerOptions;{965a0b4c-95fa-467f-992b-0b22e5859bf6})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -350,11 +344,6 @@ impl CredentialPickerResults {
         }
     }
 }
-impl ::core::clone::Clone for CredentialPickerResults {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for CredentialPickerResults {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -368,7 +357,6 @@ impl ::core::fmt::Debug for CredentialPickerResults {
 }
 unsafe impl ::windows::core::RuntimeType for CredentialPickerResults {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Security.Credentials.UI.CredentialPickerResults;{1948f99a-cc30-410c-9c38-cc0884c5b3d7})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -442,6 +430,7 @@ impl ::core::default::Default for CredentialSaveOption {
 }
 unsafe impl ::windows::core::Abi for CredentialSaveOption {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CredentialSaveOption {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -450,7 +439,6 @@ impl ::core::fmt::Debug for CredentialSaveOption {
 }
 unsafe impl ::windows::core::RuntimeType for CredentialSaveOption {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Security.Credentials.UI.CredentialSaveOption;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -458,6 +446,11 @@ unsafe impl ::windows::core::RuntimeType for CredentialSaveOption {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICredentialPickerOptions(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICredentialPickerOptions {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICredentialPickerOptions {
     type Vtable = ICredentialPickerOptions_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x965a0b4c_95fa_467f_992b_0b22e5859bf6);
@@ -496,6 +489,11 @@ pub struct ICredentialPickerOptions_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICredentialPickerResults(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICredentialPickerResults {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICredentialPickerResults {
     type Vtable = ICredentialPickerResults_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1948f99a_cc30_410c_9c38_cc0884c5b3d7);
@@ -518,6 +516,11 @@ pub struct ICredentialPickerResults_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICredentialPickerStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICredentialPickerStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICredentialPickerStatics {
     type Vtable = ICredentialPickerStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xaa3a5c73_c9ea_4782_99fb_e6d7e938e12d);
@@ -542,6 +545,11 @@ pub struct ICredentialPickerStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IUserConsentVerifierStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUserConsentVerifierStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IUserConsentVerifierStatics {
     type Vtable = IUserConsentVerifierStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xaf4f3f91_564c_4ddc_b8b5_973447627c65);
@@ -585,6 +593,7 @@ impl ::core::default::Default for UserConsentVerificationResult {
 }
 unsafe impl ::windows::core::Abi for UserConsentVerificationResult {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UserConsentVerificationResult {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -593,7 +602,6 @@ impl ::core::fmt::Debug for UserConsentVerificationResult {
 }
 unsafe impl ::windows::core::RuntimeType for UserConsentVerificationResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Security.Credentials.UI.UserConsentVerificationResult;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -650,6 +658,7 @@ impl ::core::default::Default for UserConsentVerifierAvailability {
 }
 unsafe impl ::windows::core::Abi for UserConsentVerifierAvailability {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UserConsentVerifierAvailability {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -658,7 +667,6 @@ impl ::core::fmt::Debug for UserConsentVerifierAvailability {
 }
 unsafe impl ::windows::core::RuntimeType for UserConsentVerifierAvailability {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Security.Credentials.UI.UserConsentVerifierAvailability;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }

@@ -24,11 +24,6 @@ impl GpioPinProviderValueChangedEventArgs {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for GpioPinProviderValueChangedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for GpioPinProviderValueChangedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -42,7 +37,6 @@ impl ::core::fmt::Debug for GpioPinProviderValueChangedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for GpioPinProviderValueChangedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Gpio.Provider.GpioPinProviderValueChangedEventArgs;{32a6d6f2-3d5b-44cd-8fbe-13a69f2edb24})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -99,6 +93,11 @@ unsafe impl ::core::marker::Sync for GpioPinProviderValueChangedEventArgs {}
 #[doc = "*Required features: `\"Devices_Gpio_Provider\"`*"]
 #[repr(transparent)]
 pub struct IGpioControllerProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGpioControllerProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IGpioControllerProvider {
     #[doc = "*Required features: `\"Devices_Gpio_Provider\"`*"]
     pub fn PinCount(&self) -> ::windows::core::Result<i32> {
@@ -157,11 +156,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IGpioControllerProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IGpioControllerProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -175,7 +169,6 @@ impl ::core::fmt::Debug for IGpioControllerProvider {
 }
 unsafe impl ::windows::core::RuntimeType for IGpioControllerProvider {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{ad11cec7-19ea-4b21-874f-b91aed4a25db}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -194,6 +187,11 @@ pub struct IGpioControllerProvider_Vtbl {
 #[doc = "*Required features: `\"Devices_Gpio_Provider\"`*"]
 #[repr(transparent)]
 pub struct IGpioPinProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGpioPinProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IGpioPinProvider {
     #[doc = "*Required features: `\"Devices_Gpio_Provider\"`, `\"Foundation\"`*"]
     #[cfg(feature = "Foundation")]
@@ -316,11 +314,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IGpioPinProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IGpioPinProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -334,7 +327,6 @@ impl ::core::fmt::Debug for IGpioPinProvider {
 }
 unsafe impl ::windows::core::RuntimeType for IGpioPinProvider {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{42344cb7-6abc-40ff-9ce7-73b85301b900}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -374,6 +366,11 @@ pub struct IGpioPinProvider_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGpioPinProviderValueChangedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGpioPinProviderValueChangedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGpioPinProviderValueChangedEventArgs {
     type Vtable = IGpioPinProviderValueChangedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x32a6d6f2_3d5b_44cd_8fbe_13a69f2edb24);
@@ -387,6 +384,11 @@ pub struct IGpioPinProviderValueChangedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGpioPinProviderValueChangedEventArgsFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGpioPinProviderValueChangedEventArgsFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGpioPinProviderValueChangedEventArgsFactory {
     type Vtable = IGpioPinProviderValueChangedEventArgsFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x3ecb0b59_568c_4392_b24a_8a59a902b1f1);
@@ -400,6 +402,11 @@ pub struct IGpioPinProviderValueChangedEventArgsFactory_Vtbl {
 #[doc = "*Required features: `\"Devices_Gpio_Provider\"`*"]
 #[repr(transparent)]
 pub struct IGpioProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGpioProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IGpioProvider {
     #[doc = "*Required features: `\"Devices_Gpio_Provider\"`, `\"Foundation_Collections\"`*"]
     #[cfg(feature = "Foundation_Collections")]
@@ -451,11 +458,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IGpioProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IGpioProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -469,7 +471,6 @@ impl ::core::fmt::Debug for IGpioProvider {
 }
 unsafe impl ::windows::core::RuntimeType for IGpioProvider {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{44e82707-08ca-434a-afe0-d61580446f7e}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -514,6 +515,7 @@ impl ::core::default::Default for ProviderGpioPinDriveMode {
 }
 unsafe impl ::windows::core::Abi for ProviderGpioPinDriveMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ProviderGpioPinDriveMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -522,7 +524,6 @@ impl ::core::fmt::Debug for ProviderGpioPinDriveMode {
 }
 unsafe impl ::windows::core::RuntimeType for ProviderGpioPinDriveMode {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.Gpio.Provider.ProviderGpioPinDriveMode;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -548,6 +549,7 @@ impl ::core::default::Default for ProviderGpioPinEdge {
 }
 unsafe impl ::windows::core::Abi for ProviderGpioPinEdge {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ProviderGpioPinEdge {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -556,7 +558,6 @@ impl ::core::fmt::Debug for ProviderGpioPinEdge {
 }
 unsafe impl ::windows::core::RuntimeType for ProviderGpioPinEdge {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.Gpio.Provider.ProviderGpioPinEdge;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -582,6 +583,7 @@ impl ::core::default::Default for ProviderGpioPinValue {
 }
 unsafe impl ::windows::core::Abi for ProviderGpioPinValue {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ProviderGpioPinValue {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -590,7 +592,6 @@ impl ::core::fmt::Debug for ProviderGpioPinValue {
 }
 unsafe impl ::windows::core::RuntimeType for ProviderGpioPinValue {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.Gpio.Provider.ProviderGpioPinValue;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -616,6 +617,7 @@ impl ::core::default::Default for ProviderGpioSharingMode {
 }
 unsafe impl ::windows::core::Abi for ProviderGpioSharingMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ProviderGpioSharingMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -624,7 +626,6 @@ impl ::core::fmt::Debug for ProviderGpioSharingMode {
 }
 unsafe impl ::windows::core::RuntimeType for ProviderGpioSharingMode {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.Gpio.Provider.ProviderGpioSharingMode;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }

@@ -104,6 +104,7 @@ impl ::core::default::Default for GameServiceGameOutcome {
 }
 unsafe impl ::windows::core::Abi for GameServiceGameOutcome {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GameServiceGameOutcome {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -112,7 +113,6 @@ impl ::core::fmt::Debug for GameServiceGameOutcome {
 }
 unsafe impl ::windows::core::RuntimeType for GameServiceGameOutcome {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Phone.System.UserProfile.GameServices.Core.GameServiceGameOutcome;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -131,11 +131,6 @@ impl GameServicePropertyCollection {
         }
     }
 }
-impl ::core::clone::Clone for GameServicePropertyCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for GameServicePropertyCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -149,7 +144,6 @@ impl ::core::fmt::Debug for GameServicePropertyCollection {
 }
 unsafe impl ::windows::core::RuntimeType for GameServicePropertyCollection {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Phone.System.UserProfile.GameServices.Core.GameServicePropertyCollection;{07e57fc8-debb-4609-9cc8-529d16bc2bd9})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -224,6 +218,7 @@ impl ::core::default::Default for GameServiceScoreKind {
 }
 unsafe impl ::windows::core::Abi for GameServiceScoreKind {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GameServiceScoreKind {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -232,7 +227,6 @@ impl ::core::fmt::Debug for GameServiceScoreKind {
 }
 unsafe impl ::windows::core::RuntimeType for GameServiceScoreKind {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Phone.System.UserProfile.GameServices.Core.GameServiceScoreKind;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -240,6 +234,11 @@ unsafe impl ::windows::core::RuntimeType for GameServiceScoreKind {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGameService(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGameService {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGameService {
     type Vtable = IGameService_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x2e2d5098_48a9_4efc_afd6_8e6da09003fb);
@@ -278,6 +277,11 @@ pub struct IGameService_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGameService2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGameService2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGameService2 {
     type Vtable = IGameService2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd2364ef6_ea17_4be5_8d8a_c860885e051f);
@@ -295,6 +299,11 @@ pub struct IGameService2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGameServicePropertyCollection(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGameServicePropertyCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGameServicePropertyCollection {
     type Vtable = IGameServicePropertyCollection_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x07e57fc8_debb_4609_9cc8_529d16bc2bd9);

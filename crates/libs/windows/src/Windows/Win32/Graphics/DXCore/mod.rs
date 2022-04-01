@@ -23,6 +23,7 @@ impl ::core::fmt::Debug for DXCoreAdapterMemoryBudget {
 }
 unsafe impl ::windows::core::Abi for DXCoreAdapterMemoryBudget {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DXCoreAdapterMemoryBudget {
     fn eq(&self, other: &Self) -> bool {
@@ -54,6 +55,7 @@ impl ::core::fmt::Debug for DXCoreAdapterMemoryBudgetNodeSegmentGroup {
 }
 unsafe impl ::windows::core::Abi for DXCoreAdapterMemoryBudgetNodeSegmentGroup {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DXCoreAdapterMemoryBudgetNodeSegmentGroup {
     fn eq(&self, other: &Self) -> bool {
@@ -89,6 +91,7 @@ impl ::core::default::Default for DXCoreAdapterPreference {
 }
 unsafe impl ::windows::core::Abi for DXCoreAdapterPreference {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXCoreAdapterPreference {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -142,6 +145,7 @@ impl ::core::default::Default for DXCoreAdapterProperty {
 }
 unsafe impl ::windows::core::Abi for DXCoreAdapterProperty {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXCoreAdapterProperty {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -169,6 +173,7 @@ impl ::core::default::Default for DXCoreAdapterState {
 }
 unsafe impl ::windows::core::Abi for DXCoreAdapterState {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXCoreAdapterState {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -211,6 +216,7 @@ impl ::core::fmt::Debug for DXCoreHardwareID {
 }
 unsafe impl ::windows::core::Abi for DXCoreHardwareID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DXCoreHardwareID {
     fn eq(&self, other: &Self) -> bool {
@@ -245,6 +251,7 @@ impl ::core::fmt::Debug for DXCoreHardwareIDParts {
 }
 unsafe impl ::windows::core::Abi for DXCoreHardwareIDParts {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DXCoreHardwareIDParts {
     fn eq(&self, other: &Self) -> bool {
@@ -282,6 +289,7 @@ impl ::core::default::Default for DXCoreNotificationType {
 }
 unsafe impl ::windows::core::Abi for DXCoreNotificationType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXCoreNotificationType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -309,6 +317,7 @@ impl ::core::default::Default for DXCoreSegmentGroup {
 }
 unsafe impl ::windows::core::Abi for DXCoreSegmentGroup {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DXCoreSegmentGroup {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -318,6 +327,11 @@ impl ::core::fmt::Debug for DXCoreSegmentGroup {
 #[doc = "*Required features: `\"Win32_Graphics_DXCore\"`*"]
 #[repr(transparent)]
 pub struct IDXCoreAdapter(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDXCoreAdapter {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDXCoreAdapter {
     #[doc = "*Required features: `\"Win32_Graphics_DXCore\"`*"]
     pub unsafe fn IsValid(&self) -> bool {
@@ -382,11 +396,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDXCo
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDXCoreAdapter {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDXCoreAdapter {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -420,6 +429,11 @@ pub struct IDXCoreAdapter_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DXCore\"`*"]
 #[repr(transparent)]
 pub struct IDXCoreAdapterFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDXCoreAdapterFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDXCoreAdapterFactory {
     #[doc = "*Required features: `\"Win32_Graphics_DXCore\"`*"]
     pub unsafe fn CreateAdapterList<T: ::windows::core::Interface>(&self, filterattributes: &[::windows::core::GUID]) -> ::windows::core::Result<T> {
@@ -466,11 +480,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDXCo
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDXCoreAdapterFactory {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDXCoreAdapterFactory {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -502,6 +511,11 @@ pub struct IDXCoreAdapterFactory_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_DXCore\"`*"]
 #[repr(transparent)]
 pub struct IDXCoreAdapterList(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDXCoreAdapterList {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDXCoreAdapterList {
     #[doc = "*Required features: `\"Win32_Graphics_DXCore\"`*"]
     pub unsafe fn GetAdapter<T: ::windows::core::Interface>(&self, index: u32) -> ::windows::core::Result<T> {
@@ -548,11 +562,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IDXCoreAd
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDXCoreAdapterList {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IDXCoreAdapterList {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IDXCoreAdapterList {

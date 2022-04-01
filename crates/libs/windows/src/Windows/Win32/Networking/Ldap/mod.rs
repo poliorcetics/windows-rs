@@ -37,6 +37,7 @@ impl ::core::fmt::Debug for LDAPAPIFeatureInfoA {
 }
 unsafe impl ::windows::core::Abi for LDAPAPIFeatureInfoA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for LDAPAPIFeatureInfoA {
     fn eq(&self, other: &Self) -> bool {
@@ -69,6 +70,7 @@ impl ::core::fmt::Debug for LDAPAPIFeatureInfoW {
 }
 unsafe impl ::windows::core::Abi for LDAPAPIFeatureInfoW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for LDAPAPIFeatureInfoW {
     fn eq(&self, other: &Self) -> bool {
@@ -130,6 +132,7 @@ impl ::core::fmt::Debug for LDAPMessage {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for LDAPMessage {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for LDAPMessage {
@@ -180,6 +183,7 @@ impl ::core::fmt::Debug for LDAP_BERVAL {
 }
 unsafe impl ::windows::core::Abi for LDAP_BERVAL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for LDAP_BERVAL {
     fn eq(&self, other: &Self) -> bool {
@@ -584,6 +588,7 @@ impl ::core::fmt::Debug for LDAP_REFERRAL_CALLBACK {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for LDAP_REFERRAL_CALLBACK {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for LDAP_REFERRAL_CALLBACK {
@@ -766,6 +771,7 @@ impl ::core::default::Default for LDAP_RETCODE {
 }
 unsafe impl ::windows::core::Abi for LDAP_RETCODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for LDAP_RETCODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -975,6 +981,7 @@ impl ::core::fmt::Debug for LDAP_TIMEVAL {
 }
 unsafe impl ::windows::core::Abi for LDAP_TIMEVAL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for LDAP_TIMEVAL {
     fn eq(&self, other: &Self) -> bool {
@@ -1295,6 +1302,7 @@ impl ::core::fmt::Debug for berelement {
 }
 unsafe impl ::windows::core::Abi for berelement {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for berelement {
     fn eq(&self, other: &Self) -> bool {
@@ -1399,6 +1407,7 @@ impl ::core::fmt::Debug for ldap {
 }
 unsafe impl ::windows::core::Abi for ldap {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ldap {
     fn eq(&self, other: &Self) -> bool {
@@ -1432,6 +1441,7 @@ impl ::core::fmt::Debug for ldap_0 {
 }
 unsafe impl ::windows::core::Abi for ldap_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ldap_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -4707,6 +4717,7 @@ impl ::core::fmt::Debug for ldap_version_info {
 }
 unsafe impl ::windows::core::Abi for ldap_version_info {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ldap_version_info {
     fn eq(&self, other: &Self) -> bool {
@@ -4742,6 +4753,7 @@ impl ::core::fmt::Debug for ldapapiinfoA {
 }
 unsafe impl ::windows::core::Abi for ldapapiinfoA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ldapapiinfoA {
     fn eq(&self, other: &Self) -> bool {
@@ -4777,6 +4789,7 @@ impl ::core::fmt::Debug for ldapapiinfoW {
 }
 unsafe impl ::windows::core::Abi for ldapapiinfoW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ldapapiinfoW {
     fn eq(&self, other: &Self) -> bool {
@@ -4814,6 +4827,7 @@ impl ::core::fmt::Debug for ldapcontrolA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for ldapcontrolA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for ldapcontrolA {
@@ -4854,6 +4868,7 @@ impl ::core::fmt::Debug for ldapcontrolW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for ldapcontrolW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for ldapcontrolW {
@@ -4884,6 +4899,7 @@ impl ::core::clone::Clone for ldapmodA {
 }
 unsafe impl ::windows::core::Abi for ldapmodA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ldapmodA {
     fn eq(&self, other: &Self) -> bool {
@@ -4910,6 +4926,7 @@ impl ::core::clone::Clone for ldapmodA_0 {
 }
 unsafe impl ::windows::core::Abi for ldapmodA_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ldapmodA_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -4937,6 +4954,7 @@ impl ::core::clone::Clone for ldapmodW {
 }
 unsafe impl ::windows::core::Abi for ldapmodW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ldapmodW {
     fn eq(&self, other: &Self) -> bool {
@@ -4963,6 +4981,7 @@ impl ::core::clone::Clone for ldapmodW_0 {
 }
 unsafe impl ::windows::core::Abi for ldapmodW_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ldapmodW_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -5002,6 +5021,7 @@ impl ::core::fmt::Debug for ldapsortkeyA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for ldapsortkeyA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for ldapsortkeyA {
@@ -5042,6 +5062,7 @@ impl ::core::fmt::Debug for ldapsortkeyW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for ldapsortkeyW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for ldapsortkeyW {
@@ -5082,6 +5103,7 @@ impl ::core::fmt::Debug for ldapvlvinfo {
 }
 unsafe impl ::windows::core::Abi for ldapvlvinfo {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ldapvlvinfo {
     fn eq(&self, other: &Self) -> bool {

@@ -109,6 +109,7 @@ impl ::core::default::Default for GameListCategory {
 }
 unsafe impl ::windows::core::Abi for GameListCategory {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GameListCategory {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -117,7 +118,6 @@ impl ::core::fmt::Debug for GameListCategory {
 }
 unsafe impl ::windows::core::RuntimeType for GameListCategory {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Gaming.Preview.GamesEnumeration.GameListCategory;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -174,11 +174,6 @@ impl<F: FnMut(&::core::option::Option<GameListEntry>) -> ::windows::core::Result
         ((*this).invoke)(::core::mem::transmute(&game)).into()
     }
 }
-impl ::core::clone::Clone for GameListChangedEventHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for GameListChangedEventHandler {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -196,7 +191,6 @@ unsafe impl ::windows::core::Interface for GameListChangedEventHandler {
 }
 unsafe impl ::windows::core::RuntimeType for GameListChangedEventHandler {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{25f6a421-d8f5-4d91-b40e-53d5e86fde64}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -324,11 +318,6 @@ impl GameListEntry {
         }
     }
 }
-impl ::core::clone::Clone for GameListEntry {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for GameListEntry {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -342,7 +331,6 @@ impl ::core::fmt::Debug for GameListEntry {
 }
 unsafe impl ::windows::core::RuntimeType for GameListEntry {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Gaming.Preview.GamesEnumeration.GameListEntry;{735924d3-811f-4494-b69c-c641a0c61543})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -441,6 +429,7 @@ impl ::core::default::Default for GameListEntryLaunchableState {
 }
 unsafe impl ::windows::core::Abi for GameListEntryLaunchableState {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GameListEntryLaunchableState {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -449,7 +438,6 @@ impl ::core::fmt::Debug for GameListEntryLaunchableState {
 }
 unsafe impl ::windows::core::RuntimeType for GameListEntryLaunchableState {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Gaming.Preview.GamesEnumeration.GameListEntryLaunchableState;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -506,11 +494,6 @@ impl<F: FnMut(&::windows::core::HSTRING) -> ::windows::core::Result<()> + ::core
         ((*this).invoke)(::core::mem::transmute(&identifier)).into()
     }
 }
-impl ::core::clone::Clone for GameListRemovedEventHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for GameListRemovedEventHandler {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -528,7 +511,6 @@ unsafe impl ::windows::core::Interface for GameListRemovedEventHandler {
 }
 unsafe impl ::windows::core::RuntimeType for GameListRemovedEventHandler {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{10c5648f-6c8f-4712-9b38-474bc22e76d8}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -678,11 +660,6 @@ impl GameModeConfiguration {
         }
     }
 }
-impl ::core::clone::Clone for GameModeConfiguration {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for GameModeConfiguration {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -696,7 +673,6 @@ impl ::core::fmt::Debug for GameModeConfiguration {
 }
 unsafe impl ::windows::core::RuntimeType for GameModeConfiguration {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Gaming.Preview.GamesEnumeration.GameModeConfiguration;{78e591af-b142-4ef0-8830-55bc2be4f5ea})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -785,11 +761,6 @@ impl GameModeUserConfiguration {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for GameModeUserConfiguration {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for GameModeUserConfiguration {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -803,7 +774,6 @@ impl ::core::fmt::Debug for GameModeUserConfiguration {
 }
 unsafe impl ::windows::core::RuntimeType for GameModeUserConfiguration {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Gaming.Preview.GamesEnumeration.GameModeUserConfiguration;{72d34af4-756b-470f-a0c2-ba62a90795db})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -860,6 +830,11 @@ unsafe impl ::core::marker::Sync for GameModeUserConfiguration {}
 #[doc = "*Required features: `\"Gaming_Preview_GamesEnumeration\"`*"]
 #[repr(transparent)]
 pub struct IGameListEntry(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGameListEntry {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IGameListEntry {
     #[doc = "*Required features: `\"Gaming_Preview_GamesEnumeration\"`, `\"ApplicationModel\"`*"]
     #[cfg(feature = "ApplicationModel")]
@@ -946,11 +921,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IGameListEntry {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IGameListEntry {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -964,7 +934,6 @@ impl ::core::fmt::Debug for IGameListEntry {
 }
 unsafe impl ::windows::core::RuntimeType for IGameListEntry {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{735924d3-811f-4494-b69c-c641a0c61543}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -998,6 +967,11 @@ pub struct IGameListEntry_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGameListEntry2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGameListEntry2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGameListEntry2 {
     type Vtable = IGameListEntry2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd84a8f8b_8749_4a25_90d3_f6c5a427886d);
@@ -1030,6 +1004,11 @@ pub struct IGameListEntry2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGameListStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGameListStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGameListStatics {
     type Vtable = IGameListStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x2ddd0f6f_9c66_4b05_945c_d6ed78491b8c);
@@ -1074,6 +1053,11 @@ pub struct IGameListStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGameListStatics2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGameListStatics2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGameListStatics2 {
     type Vtable = IGameListStatics2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x395f2098_ea1a_45aa_9268_a83905686f27);
@@ -1094,6 +1078,11 @@ pub struct IGameListStatics2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGameModeConfiguration(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGameModeConfiguration {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGameModeConfiguration {
     type Vtable = IGameModeConfiguration_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x78e591af_b142_4ef0_8830_55bc2be4f5ea);
@@ -1166,6 +1155,11 @@ pub struct IGameModeConfiguration_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGameModeUserConfiguration(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGameModeUserConfiguration {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGameModeUserConfiguration {
     type Vtable = IGameModeUserConfiguration_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x72d34af4_756b_470f_a0c2_ba62a90795db);
@@ -1186,6 +1180,11 @@ pub struct IGameModeUserConfiguration_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGameModeUserConfigurationStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGameModeUserConfigurationStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGameModeUserConfigurationStatics {
     type Vtable = IGameModeUserConfigurationStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x6e50d97c_66ea_478e_a4a1_f57c0e8d00e7);

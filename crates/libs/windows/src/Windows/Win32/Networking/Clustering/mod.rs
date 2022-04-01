@@ -577,6 +577,7 @@ impl ::core::default::Default for CLCTL_CODES {
 }
 unsafe impl ::windows::core::Abi for CLCTL_CODES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLCTL_CODES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -646,6 +647,7 @@ impl ::core::fmt::Debug for CLRES_CALLBACK_FUNCTION_TABLE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for CLRES_CALLBACK_FUNCTION_TABLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for CLRES_CALLBACK_FUNCTION_TABLE {
@@ -680,6 +682,7 @@ impl ::core::clone::Clone for CLRES_FUNCTION_TABLE {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Registry"))]
 unsafe impl ::windows::core::Abi for CLRES_FUNCTION_TABLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Registry"))]
 impl ::core::cmp::PartialEq for CLRES_FUNCTION_TABLE {
@@ -715,6 +718,7 @@ impl ::core::clone::Clone for CLRES_FUNCTION_TABLE_0 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Registry"))]
 unsafe impl ::windows::core::Abi for CLRES_FUNCTION_TABLE_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Registry"))]
 impl ::core::cmp::PartialEq for CLRES_FUNCTION_TABLE_0 {
@@ -775,6 +779,7 @@ impl ::core::fmt::Debug for CLRES_V1_FUNCTIONS {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Registry"))]
 unsafe impl ::windows::core::Abi for CLRES_V1_FUNCTIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Registry"))]
 impl ::core::cmp::PartialEq for CLRES_V1_FUNCTIONS {
@@ -837,6 +842,7 @@ impl ::core::fmt::Debug for CLRES_V2_FUNCTIONS {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Registry"))]
 unsafe impl ::windows::core::Abi for CLRES_V2_FUNCTIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Registry"))]
 impl ::core::cmp::PartialEq for CLRES_V2_FUNCTIONS {
@@ -899,6 +905,7 @@ impl ::core::fmt::Debug for CLRES_V3_FUNCTIONS {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Registry"))]
 unsafe impl ::windows::core::Abi for CLRES_V3_FUNCTIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Registry"))]
 impl ::core::cmp::PartialEq for CLRES_V3_FUNCTIONS {
@@ -965,6 +972,7 @@ impl ::core::fmt::Debug for CLRES_V4_FUNCTIONS {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Registry"))]
 unsafe impl ::windows::core::Abi for CLRES_V4_FUNCTIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Registry"))]
 impl ::core::cmp::PartialEq for CLRES_V4_FUNCTIONS {
@@ -1021,6 +1029,7 @@ impl ::core::default::Default for CLUADMEX_OBJECT_TYPE {
 }
 unsafe impl ::windows::core::Abi for CLUADMEX_OBJECT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLUADMEX_OBJECT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1142,6 +1151,7 @@ impl ::core::default::Default for CLUSCTL_AFFINITYRULE_CODES {
 }
 unsafe impl ::windows::core::Abi for CLUSCTL_AFFINITYRULE_CODES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLUSCTL_AFFINITYRULE_CODES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1241,6 +1251,7 @@ impl ::core::default::Default for CLUSCTL_CLUSTER_CODES {
 }
 unsafe impl ::windows::core::Abi for CLUSCTL_CLUSTER_CODES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLUSCTL_CLUSTER_CODES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1288,6 +1299,7 @@ impl ::core::default::Default for CLUSCTL_GROUPSET_CODES {
 }
 unsafe impl ::windows::core::Abi for CLUSCTL_GROUPSET_CODES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLUSCTL_GROUPSET_CODES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1353,6 +1365,7 @@ impl ::core::default::Default for CLUSCTL_GROUP_CODES {
 }
 unsafe impl ::windows::core::Abi for CLUSCTL_GROUP_CODES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLUSCTL_GROUP_CODES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1384,6 +1397,7 @@ impl ::core::fmt::Debug for CLUSCTL_GROUP_GET_LAST_MOVE_TIME_OUTPUT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for CLUSCTL_GROUP_GET_LAST_MOVE_TIME_OUTPUT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for CLUSCTL_GROUP_GET_LAST_MOVE_TIME_OUTPUT {
@@ -1454,6 +1468,7 @@ impl ::core::default::Default for CLUSCTL_NETINTERFACE_CODES {
 }
 unsafe impl ::windows::core::Abi for CLUSCTL_NETINTERFACE_CODES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLUSCTL_NETINTERFACE_CODES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1511,6 +1526,7 @@ impl ::core::default::Default for CLUSCTL_NETWORK_CODES {
 }
 unsafe impl ::windows::core::Abi for CLUSCTL_NETWORK_CODES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLUSCTL_NETWORK_CODES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1582,6 +1598,7 @@ impl ::core::default::Default for CLUSCTL_NODE_CODES {
 }
 unsafe impl ::windows::core::Abi for CLUSCTL_NODE_CODES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLUSCTL_NODE_CODES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1829,6 +1846,7 @@ impl ::core::default::Default for CLUSCTL_RESOURCE_CODES {
 }
 unsafe impl ::windows::core::Abi for CLUSCTL_RESOURCE_CODES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLUSCTL_RESOURCE_CODES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1855,6 +1873,7 @@ impl ::core::fmt::Debug for CLUSCTL_RESOURCE_STATE_CHANGE_REASON_STRUCT {
 }
 unsafe impl ::windows::core::Abi for CLUSCTL_RESOURCE_STATE_CHANGE_REASON_STRUCT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CLUSCTL_RESOURCE_STATE_CHANGE_REASON_STRUCT {
     fn eq(&self, other: &Self) -> bool {
@@ -2016,6 +2035,7 @@ impl ::core::default::Default for CLUSCTL_RESOURCE_TYPE_CODES {
 }
 unsafe impl ::windows::core::Abi for CLUSCTL_RESOURCE_TYPE_CODES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLUSCTL_RESOURCE_TYPE_CODES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2047,6 +2067,7 @@ impl ::core::fmt::Debug for CLUSCTL_RESOURCE_TYPE_STORAGE_GET_AVAILABLE_DISKS_EX
 }
 unsafe impl ::windows::core::Abi for CLUSCTL_RESOURCE_TYPE_STORAGE_GET_AVAILABLE_DISKS_EX2_INPUT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CLUSCTL_RESOURCE_TYPE_STORAGE_GET_AVAILABLE_DISKS_EX2_INPUT {
     fn eq(&self, other: &Self) -> bool {
@@ -2144,6 +2165,7 @@ impl ::core::default::Default for CLUSGROUP_TYPE {
 }
 unsafe impl ::windows::core::Abi for CLUSGROUP_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLUSGROUP_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2190,6 +2212,7 @@ impl ::core::clone::Clone for CLUSPROP_BINARY {
 }
 unsafe impl ::windows::core::Abi for CLUSPROP_BINARY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CLUSPROP_BINARY {
     fn eq(&self, other: &Self) -> bool {
@@ -2246,6 +2269,7 @@ impl ::core::clone::Clone for CLUSPROP_BUFFER_HELPER {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_SystemServices"))]
 unsafe impl ::windows::core::Abi for CLUSPROP_BUFFER_HELPER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_SystemServices"))]
 impl ::core::cmp::PartialEq for CLUSPROP_BUFFER_HELPER {
@@ -2275,6 +2299,7 @@ impl ::core::clone::Clone for CLUSPROP_DWORD {
 }
 unsafe impl ::windows::core::Abi for CLUSPROP_DWORD {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CLUSPROP_DWORD {
     fn eq(&self, other: &Self) -> bool {
@@ -2305,6 +2330,7 @@ impl ::core::clone::Clone for CLUSPROP_FILETIME {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for CLUSPROP_FILETIME {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for CLUSPROP_FILETIME {
@@ -2334,6 +2360,7 @@ impl ::core::clone::Clone for CLUSPROP_FTSET_INFO {
 }
 unsafe impl ::windows::core::Abi for CLUSPROP_FTSET_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CLUSPROP_FTSET_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -2369,6 +2396,7 @@ impl ::core::default::Default for CLUSPROP_IPADDR_ENABLENETBIOS {
 }
 unsafe impl ::windows::core::Abi for CLUSPROP_IPADDR_ENABLENETBIOS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLUSPROP_IPADDR_ENABLENETBIOS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2389,6 +2417,7 @@ impl ::core::clone::Clone for CLUSPROP_LARGE_INTEGER {
 }
 unsafe impl ::windows::core::Abi for CLUSPROP_LARGE_INTEGER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CLUSPROP_LARGE_INTEGER {
     fn eq(&self, other: &Self) -> bool {
@@ -2415,6 +2444,7 @@ impl ::core::clone::Clone for CLUSPROP_LIST {
 }
 unsafe impl ::windows::core::Abi for CLUSPROP_LIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CLUSPROP_LIST {
     fn eq(&self, other: &Self) -> bool {
@@ -2441,6 +2471,7 @@ impl ::core::clone::Clone for CLUSPROP_LONG {
 }
 unsafe impl ::windows::core::Abi for CLUSPROP_LONG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CLUSPROP_LONG {
     fn eq(&self, other: &Self) -> bool {
@@ -2467,6 +2498,7 @@ impl ::core::clone::Clone for CLUSPROP_PARTITION_INFO {
 }
 unsafe impl ::windows::core::Abi for CLUSPROP_PARTITION_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CLUSPROP_PARTITION_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -2493,6 +2525,7 @@ impl ::core::clone::Clone for CLUSPROP_PARTITION_INFO_EX {
 }
 unsafe impl ::windows::core::Abi for CLUSPROP_PARTITION_INFO_EX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CLUSPROP_PARTITION_INFO_EX {
     fn eq(&self, other: &Self) -> bool {
@@ -2519,6 +2552,7 @@ impl ::core::clone::Clone for CLUSPROP_PARTITION_INFO_EX2 {
 }
 unsafe impl ::windows::core::Abi for CLUSPROP_PARTITION_INFO_EX2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CLUSPROP_PARTITION_INFO_EX2 {
     fn eq(&self, other: &Self) -> bool {
@@ -2564,6 +2598,7 @@ impl ::core::default::Default for CLUSPROP_PIFLAGS {
 }
 unsafe impl ::windows::core::Abi for CLUSPROP_PIFLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLUSPROP_PIFLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2585,6 +2620,7 @@ impl ::core::clone::Clone for CLUSPROP_REQUIRED_DEPENDENCY {
 }
 unsafe impl ::windows::core::Abi for CLUSPROP_REQUIRED_DEPENDENCY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CLUSPROP_REQUIRED_DEPENDENCY {
     fn eq(&self, other: &Self) -> bool {
@@ -2611,6 +2647,7 @@ impl ::core::clone::Clone for CLUSPROP_RESOURCE_CLASS {
 }
 unsafe impl ::windows::core::Abi for CLUSPROP_RESOURCE_CLASS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CLUSPROP_RESOURCE_CLASS {
     fn eq(&self, other: &Self) -> bool {
@@ -2637,6 +2674,7 @@ impl ::core::clone::Clone for CLUSPROP_RESOURCE_CLASS_INFO {
 }
 unsafe impl ::windows::core::Abi for CLUSPROP_RESOURCE_CLASS_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CLUSPROP_RESOURCE_CLASS_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -2663,6 +2701,7 @@ impl ::core::clone::Clone for CLUSPROP_SCSI_ADDRESS {
 }
 unsafe impl ::windows::core::Abi for CLUSPROP_SCSI_ADDRESS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CLUSPROP_SCSI_ADDRESS {
     fn eq(&self, other: &Self) -> bool {
@@ -2693,6 +2732,7 @@ impl ::core::clone::Clone for CLUSPROP_SECURITY_DESCRIPTOR {
 #[cfg(feature = "Win32_System_SystemServices")]
 unsafe impl ::windows::core::Abi for CLUSPROP_SECURITY_DESCRIPTOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_System_SystemServices")]
 impl ::core::cmp::PartialEq for CLUSPROP_SECURITY_DESCRIPTOR {
@@ -2726,6 +2766,7 @@ impl ::core::clone::Clone for CLUSPROP_SECURITY_DESCRIPTOR_0 {
 #[cfg(feature = "Win32_System_SystemServices")]
 unsafe impl ::windows::core::Abi for CLUSPROP_SECURITY_DESCRIPTOR_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_System_SystemServices")]
 impl ::core::cmp::PartialEq for CLUSPROP_SECURITY_DESCRIPTOR_0 {
@@ -2755,6 +2796,7 @@ impl ::core::clone::Clone for CLUSPROP_SYNTAX {
 }
 unsafe impl ::windows::core::Abi for CLUSPROP_SYNTAX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CLUSPROP_SYNTAX {
     fn eq(&self, other: &Self) -> bool {
@@ -2786,6 +2828,7 @@ impl ::core::fmt::Debug for CLUSPROP_SYNTAX_0 {
 }
 unsafe impl ::windows::core::Abi for CLUSPROP_SYNTAX_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CLUSPROP_SYNTAX_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -2812,6 +2855,7 @@ impl ::core::clone::Clone for CLUSPROP_SZ {
 }
 unsafe impl ::windows::core::Abi for CLUSPROP_SZ {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CLUSPROP_SZ {
     fn eq(&self, other: &Self) -> bool {
@@ -2838,6 +2882,7 @@ impl ::core::clone::Clone for CLUSPROP_ULARGE_INTEGER {
 }
 unsafe impl ::windows::core::Abi for CLUSPROP_ULARGE_INTEGER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CLUSPROP_ULARGE_INTEGER {
     fn eq(&self, other: &Self) -> bool {
@@ -2864,6 +2909,7 @@ impl ::core::clone::Clone for CLUSPROP_VALUE {
 }
 unsafe impl ::windows::core::Abi for CLUSPROP_VALUE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CLUSPROP_VALUE {
     fn eq(&self, other: &Self) -> bool {
@@ -2890,6 +2936,7 @@ impl ::core::clone::Clone for CLUSPROP_WORD {
 }
 unsafe impl ::windows::core::Abi for CLUSPROP_WORD {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CLUSPROP_WORD {
     fn eq(&self, other: &Self) -> bool {
@@ -3547,6 +3594,7 @@ impl ::core::default::Default for CLUSTERSET_OBJECT_TYPE {
 }
 unsafe impl ::windows::core::Abi for CLUSTERSET_OBJECT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLUSTERSET_OBJECT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3591,6 +3639,7 @@ impl ::core::fmt::Debug for CLUSTERVERSIONINFO {
 }
 unsafe impl ::windows::core::Abi for CLUSTERVERSIONINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CLUSTERVERSIONINFO {
     fn eq(&self, other: &Self) -> bool {
@@ -3626,6 +3675,7 @@ impl ::core::fmt::Debug for CLUSTERVERSIONINFO_NT4 {
 }
 unsafe impl ::windows::core::Abi for CLUSTERVERSIONINFO_NT4 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CLUSTERVERSIONINFO_NT4 {
     fn eq(&self, other: &Self) -> bool {
@@ -3666,6 +3716,7 @@ impl ::core::fmt::Debug for CLUSTER_AVAILABILITY_SET_CONFIG {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for CLUSTER_AVAILABILITY_SET_CONFIG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for CLUSTER_AVAILABILITY_SET_CONFIG {
@@ -3705,6 +3756,7 @@ impl ::core::fmt::Debug for CLUSTER_BATCH_COMMAND {
 }
 unsafe impl ::windows::core::Abi for CLUSTER_BATCH_COMMAND {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CLUSTER_BATCH_COMMAND {
     fn eq(&self, other: &Self) -> bool {
@@ -3800,6 +3852,7 @@ impl ::core::default::Default for CLUSTER_CHANGE {
 }
 unsafe impl ::windows::core::Abi for CLUSTER_CHANGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLUSTER_CHANGE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3851,6 +3904,7 @@ impl ::core::default::Default for CLUSTER_CHANGE_CLUSTER_V2 {
 }
 unsafe impl ::windows::core::Abi for CLUSTER_CHANGE_CLUSTER_V2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLUSTER_CHANGE_CLUSTER_V2 {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3894,6 +3948,7 @@ impl ::core::default::Default for CLUSTER_CHANGE_GROUPSET_V2 {
 }
 unsafe impl ::windows::core::Abi for CLUSTER_CHANGE_GROUPSET_V2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLUSTER_CHANGE_GROUPSET_V2 {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3939,6 +3994,7 @@ impl ::core::default::Default for CLUSTER_CHANGE_GROUP_V2 {
 }
 unsafe impl ::windows::core::Abi for CLUSTER_CHANGE_GROUP_V2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLUSTER_CHANGE_GROUP_V2 {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3974,6 +4030,7 @@ impl ::core::default::Default for CLUSTER_CHANGE_NETINTERFACE_V2 {
 }
 unsafe impl ::windows::core::Abi for CLUSTER_CHANGE_NETINTERFACE_V2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLUSTER_CHANGE_NETINTERFACE_V2 {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4009,6 +4066,7 @@ impl ::core::default::Default for CLUSTER_CHANGE_NETWORK_V2 {
 }
 unsafe impl ::windows::core::Abi for CLUSTER_CHANGE_NETWORK_V2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLUSTER_CHANGE_NETWORK_V2 {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4040,6 +4098,7 @@ impl ::core::default::Default for CLUSTER_CHANGE_NODE_UPGRADE_PHASE_V2 {
 }
 unsafe impl ::windows::core::Abi for CLUSTER_CHANGE_NODE_UPGRADE_PHASE_V2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLUSTER_CHANGE_NODE_UPGRADE_PHASE_V2 {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4081,6 +4140,7 @@ impl ::core::default::Default for CLUSTER_CHANGE_NODE_V2 {
 }
 unsafe impl ::windows::core::Abi for CLUSTER_CHANGE_NODE_V2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLUSTER_CHANGE_NODE_V2 {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4108,6 +4168,7 @@ impl ::core::default::Default for CLUSTER_CHANGE_QUORUM_V2 {
 }
 unsafe impl ::windows::core::Abi for CLUSTER_CHANGE_QUORUM_V2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLUSTER_CHANGE_QUORUM_V2 {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4143,6 +4204,7 @@ impl ::core::default::Default for CLUSTER_CHANGE_REGISTRY_V2 {
 }
 unsafe impl ::windows::core::Abi for CLUSTER_CHANGE_REGISTRY_V2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLUSTER_CHANGE_REGISTRY_V2 {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4180,6 +4242,7 @@ impl ::core::default::Default for CLUSTER_CHANGE_RESOURCE_TYPE_V2 {
 }
 unsafe impl ::windows::core::Abi for CLUSTER_CHANGE_RESOURCE_TYPE_V2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLUSTER_CHANGE_RESOURCE_TYPE_V2 {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4227,6 +4290,7 @@ impl ::core::default::Default for CLUSTER_CHANGE_RESOURCE_V2 {
 }
 unsafe impl ::windows::core::Abi for CLUSTER_CHANGE_RESOURCE_V2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLUSTER_CHANGE_RESOURCE_V2 {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4258,6 +4322,7 @@ impl ::core::default::Default for CLUSTER_CHANGE_SHARED_VOLUME_V2 {
 }
 unsafe impl ::windows::core::Abi for CLUSTER_CHANGE_SHARED_VOLUME_V2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLUSTER_CHANGE_SHARED_VOLUME_V2 {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4283,6 +4348,7 @@ impl ::core::default::Default for CLUSTER_CHANGE_SPACEPORT_V2 {
 }
 unsafe impl ::windows::core::Abi for CLUSTER_CHANGE_SPACEPORT_V2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLUSTER_CHANGE_SPACEPORT_V2 {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4314,6 +4380,7 @@ impl ::core::default::Default for CLUSTER_CLOUD_TYPE {
 }
 unsafe impl ::windows::core::Abi for CLUSTER_CLOUD_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLUSTER_CLOUD_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4361,6 +4428,7 @@ impl ::core::default::Default for CLUSTER_CONTROL_OBJECT {
 }
 unsafe impl ::windows::core::Abi for CLUSTER_CONTROL_OBJECT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLUSTER_CONTROL_OBJECT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4386,6 +4454,7 @@ impl ::core::fmt::Debug for CLUSTER_CREATE_GROUP_INFO {
 }
 unsafe impl ::windows::core::Abi for CLUSTER_CREATE_GROUP_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CLUSTER_CREATE_GROUP_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -4435,6 +4504,7 @@ impl ::core::default::Default for CLUSTER_CSV_VOLUME_FAULT_STATE {
 }
 unsafe impl ::windows::core::Abi for CLUSTER_CSV_VOLUME_FAULT_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLUSTER_CSV_VOLUME_FAULT_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4482,6 +4552,7 @@ impl ::core::default::Default for CLUSTER_ENUM {
 }
 unsafe impl ::windows::core::Abi for CLUSTER_ENUM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLUSTER_ENUM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4511,6 +4582,7 @@ impl ::core::fmt::Debug for CLUSTER_ENUM_ITEM {
 }
 unsafe impl ::windows::core::Abi for CLUSTER_ENUM_ITEM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CLUSTER_ENUM_ITEM {
     fn eq(&self, other: &Self) -> bool {
@@ -4550,6 +4622,7 @@ impl ::core::default::Default for CLUSTER_GROUP_AUTOFAILBACK_TYPE {
 }
 unsafe impl ::windows::core::Abi for CLUSTER_GROUP_AUTOFAILBACK_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLUSTER_GROUP_AUTOFAILBACK_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4579,6 +4652,7 @@ impl ::core::default::Default for CLUSTER_GROUP_ENUM {
 }
 unsafe impl ::windows::core::Abi for CLUSTER_GROUP_ENUM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLUSTER_GROUP_ENUM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4629,6 +4703,7 @@ impl ::core::fmt::Debug for CLUSTER_GROUP_ENUM_ITEM {
 }
 unsafe impl ::windows::core::Abi for CLUSTER_GROUP_ENUM_ITEM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CLUSTER_GROUP_ENUM_ITEM {
     fn eq(&self, other: &Self) -> bool {
@@ -4670,6 +4745,7 @@ impl ::core::default::Default for CLUSTER_GROUP_PRIORITY {
 }
 unsafe impl ::windows::core::Abi for CLUSTER_GROUP_PRIORITY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLUSTER_GROUP_PRIORITY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4705,6 +4781,7 @@ impl ::core::default::Default for CLUSTER_GROUP_STATE {
 }
 unsafe impl ::windows::core::Abi for CLUSTER_GROUP_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLUSTER_GROUP_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4741,6 +4818,7 @@ impl ::core::fmt::Debug for CLUSTER_HEALTH_FAULT {
 }
 unsafe impl ::windows::core::Abi for CLUSTER_HEALTH_FAULT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CLUSTER_HEALTH_FAULT {
     fn eq(&self, other: &Self) -> bool {
@@ -4774,6 +4852,7 @@ impl ::core::fmt::Debug for CLUSTER_HEALTH_FAULT_ARRAY {
 }
 unsafe impl ::windows::core::Abi for CLUSTER_HEALTH_FAULT_ARRAY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CLUSTER_HEALTH_FAULT_ARRAY {
     fn eq(&self, other: &Self) -> bool {
@@ -4837,6 +4916,7 @@ impl ::core::fmt::Debug for CLUSTER_IP_ENTRY {
 }
 unsafe impl ::windows::core::Abi for CLUSTER_IP_ENTRY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CLUSTER_IP_ENTRY {
     fn eq(&self, other: &Self) -> bool {
@@ -4874,6 +4954,7 @@ impl ::core::fmt::Debug for CLUSTER_MEMBERSHIP_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for CLUSTER_MEMBERSHIP_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for CLUSTER_MEMBERSHIP_INFO {
@@ -4912,6 +4993,7 @@ impl ::core::default::Default for CLUSTER_MGMT_POINT_RESTYPE {
 }
 unsafe impl ::windows::core::Abi for CLUSTER_MGMT_POINT_RESTYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLUSTER_MGMT_POINT_RESTYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4943,6 +5025,7 @@ impl ::core::default::Default for CLUSTER_MGMT_POINT_TYPE {
 }
 unsafe impl ::windows::core::Abi for CLUSTER_MGMT_POINT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLUSTER_MGMT_POINT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4982,6 +5065,7 @@ impl ::core::default::Default for CLUSTER_NETINTERFACE_STATE {
 }
 unsafe impl ::windows::core::Abi for CLUSTER_NETINTERFACE_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLUSTER_NETINTERFACE_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5009,6 +5093,7 @@ impl ::core::default::Default for CLUSTER_NETWORK_ENUM {
 }
 unsafe impl ::windows::core::Abi for CLUSTER_NETWORK_ENUM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLUSTER_NETWORK_ENUM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5040,6 +5125,7 @@ impl ::core::default::Default for CLUSTER_NETWORK_ROLE {
 }
 unsafe impl ::windows::core::Abi for CLUSTER_NETWORK_ROLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLUSTER_NETWORK_ROLE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5073,6 +5159,7 @@ impl ::core::default::Default for CLUSTER_NETWORK_STATE {
 }
 unsafe impl ::windows::core::Abi for CLUSTER_NETWORK_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLUSTER_NETWORK_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5106,6 +5193,7 @@ impl ::core::default::Default for CLUSTER_NODE_DRAIN_STATUS {
 }
 unsafe impl ::windows::core::Abi for CLUSTER_NODE_DRAIN_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLUSTER_NODE_DRAIN_STATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5137,6 +5225,7 @@ impl ::core::default::Default for CLUSTER_NODE_ENUM {
 }
 unsafe impl ::windows::core::Abi for CLUSTER_NODE_ENUM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLUSTER_NODE_ENUM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5168,6 +5257,7 @@ impl ::core::default::Default for CLUSTER_NODE_RESUME_FAILBACK_TYPE {
 }
 unsafe impl ::windows::core::Abi for CLUSTER_NODE_RESUME_FAILBACK_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLUSTER_NODE_RESUME_FAILBACK_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5201,6 +5291,7 @@ impl ::core::default::Default for CLUSTER_NODE_STATE {
 }
 unsafe impl ::windows::core::Abi for CLUSTER_NODE_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLUSTER_NODE_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5240,6 +5331,7 @@ impl ::core::default::Default for CLUSTER_NODE_STATUS {
 }
 unsafe impl ::windows::core::Abi for CLUSTER_NODE_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLUSTER_NODE_STATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5267,6 +5359,7 @@ impl ::core::default::Default for CLUSTER_NOTIFICATIONS_VERSION {
 }
 unsafe impl ::windows::core::Abi for CLUSTER_NOTIFICATIONS_VERSION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLUSTER_NOTIFICATIONS_VERSION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5316,6 +5409,7 @@ impl ::core::default::Default for CLUSTER_OBJECT_TYPE {
 }
 unsafe impl ::windows::core::Abi for CLUSTER_OBJECT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLUSTER_OBJECT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5371,6 +5465,7 @@ impl ::core::default::Default for CLUSTER_PROPERTY_FORMAT {
 }
 unsafe impl ::windows::core::Abi for CLUSTER_PROPERTY_FORMAT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLUSTER_PROPERTY_FORMAT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5448,6 +5543,7 @@ impl ::core::default::Default for CLUSTER_PROPERTY_SYNTAX {
 }
 unsafe impl ::windows::core::Abi for CLUSTER_PROPERTY_SYNTAX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLUSTER_PROPERTY_SYNTAX {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5507,6 +5603,7 @@ impl ::core::default::Default for CLUSTER_PROPERTY_TYPE {
 }
 unsafe impl ::windows::core::Abi for CLUSTER_PROPERTY_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLUSTER_PROPERTY_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5534,6 +5631,7 @@ impl ::core::default::Default for CLUSTER_QUORUM_TYPE {
 }
 unsafe impl ::windows::core::Abi for CLUSTER_QUORUM_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLUSTER_QUORUM_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5561,6 +5659,7 @@ impl ::core::default::Default for CLUSTER_QUORUM_VALUE {
 }
 unsafe impl ::windows::core::Abi for CLUSTER_QUORUM_VALUE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLUSTER_QUORUM_VALUE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5590,6 +5689,7 @@ impl ::core::fmt::Debug for CLUSTER_READ_BATCH_COMMAND {
 }
 unsafe impl ::windows::core::Abi for CLUSTER_READ_BATCH_COMMAND {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CLUSTER_READ_BATCH_COMMAND {
     fn eq(&self, other: &Self) -> bool {
@@ -5659,6 +5759,7 @@ impl ::core::default::Default for CLUSTER_REG_COMMAND {
 }
 unsafe impl ::windows::core::Abi for CLUSTER_REG_COMMAND {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLUSTER_REG_COMMAND {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5690,6 +5791,7 @@ impl ::core::default::Default for CLUSTER_RESOURCE_APPLICATION_STATE {
 }
 unsafe impl ::windows::core::Abi for CLUSTER_RESOURCE_APPLICATION_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLUSTER_RESOURCE_APPLICATION_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5721,6 +5823,7 @@ impl ::core::default::Default for CLUSTER_RESOURCE_CLASS {
 }
 unsafe impl ::windows::core::Abi for CLUSTER_RESOURCE_CLASS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLUSTER_RESOURCE_CLASS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5750,6 +5853,7 @@ impl ::core::default::Default for CLUSTER_RESOURCE_CREATE_FLAGS {
 }
 unsafe impl ::windows::core::Abi for CLUSTER_RESOURCE_CREATE_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLUSTER_RESOURCE_CREATE_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5779,6 +5883,7 @@ impl ::core::default::Default for CLUSTER_RESOURCE_EMBEDDED_FAILURE_ACTION {
 }
 unsafe impl ::windows::core::Abi for CLUSTER_RESOURCE_EMBEDDED_FAILURE_ACTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLUSTER_RESOURCE_EMBEDDED_FAILURE_ACTION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5810,6 +5915,7 @@ impl ::core::default::Default for CLUSTER_RESOURCE_ENUM {
 }
 unsafe impl ::windows::core::Abi for CLUSTER_RESOURCE_ENUM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLUSTER_RESOURCE_ENUM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5860,6 +5966,7 @@ impl ::core::fmt::Debug for CLUSTER_RESOURCE_ENUM_ITEM {
 }
 unsafe impl ::windows::core::Abi for CLUSTER_RESOURCE_ENUM_ITEM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CLUSTER_RESOURCE_ENUM_ITEM {
     fn eq(&self, other: &Self) -> bool {
@@ -5901,6 +6008,7 @@ impl ::core::default::Default for CLUSTER_RESOURCE_RESTART_ACTION {
 }
 unsafe impl ::windows::core::Abi for CLUSTER_RESOURCE_RESTART_ACTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLUSTER_RESOURCE_RESTART_ACTION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5942,6 +6050,7 @@ impl ::core::default::Default for CLUSTER_RESOURCE_STATE {
 }
 unsafe impl ::windows::core::Abi for CLUSTER_RESOURCE_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLUSTER_RESOURCE_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5977,6 +6086,7 @@ impl ::core::default::Default for CLUSTER_RESOURCE_STATE_CHANGE_REASON {
 }
 unsafe impl ::windows::core::Abi for CLUSTER_RESOURCE_STATE_CHANGE_REASON {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLUSTER_RESOURCE_STATE_CHANGE_REASON {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6006,6 +6116,7 @@ impl ::core::default::Default for CLUSTER_RESOURCE_TYPE_ENUM {
 }
 unsafe impl ::windows::core::Abi for CLUSTER_RESOURCE_TYPE_ENUM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLUSTER_RESOURCE_TYPE_ENUM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6093,6 +6204,7 @@ impl ::core::default::Default for CLUSTER_ROLE {
 }
 unsafe impl ::windows::core::Abi for CLUSTER_ROLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLUSTER_ROLE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6122,6 +6234,7 @@ impl ::core::default::Default for CLUSTER_ROLE_STATE {
 }
 unsafe impl ::windows::core::Abi for CLUSTER_ROLE_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLUSTER_ROLE_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6221,6 +6334,7 @@ impl ::core::default::Default for CLUSTER_SETUP_PHASE {
 }
 unsafe impl ::windows::core::Abi for CLUSTER_SETUP_PHASE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLUSTER_SETUP_PHASE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6250,6 +6364,7 @@ impl ::core::default::Default for CLUSTER_SETUP_PHASE_SEVERITY {
 }
 unsafe impl ::windows::core::Abi for CLUSTER_SETUP_PHASE_SEVERITY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLUSTER_SETUP_PHASE_SEVERITY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6281,6 +6396,7 @@ impl ::core::default::Default for CLUSTER_SETUP_PHASE_TYPE {
 }
 unsafe impl ::windows::core::Abi for CLUSTER_SETUP_PHASE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLUSTER_SETUP_PHASE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6316,6 +6432,7 @@ impl ::core::fmt::Debug for CLUSTER_SET_PASSWORD_STATUS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for CLUSTER_SET_PASSWORD_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for CLUSTER_SET_PASSWORD_STATUS {
@@ -6354,6 +6471,7 @@ impl ::core::default::Default for CLUSTER_SHARED_VOLUME_BACKUP_STATE {
 }
 unsafe impl ::windows::core::Abi for CLUSTER_SHARED_VOLUME_BACKUP_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLUSTER_SHARED_VOLUME_BACKUP_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6374,6 +6492,7 @@ impl ::core::clone::Clone for CLUSTER_SHARED_VOLUME_RENAME_GUID_INPUT {
 }
 unsafe impl ::windows::core::Abi for CLUSTER_SHARED_VOLUME_RENAME_GUID_INPUT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CLUSTER_SHARED_VOLUME_RENAME_GUID_INPUT {
     fn eq(&self, other: &Self) -> bool {
@@ -6400,6 +6519,7 @@ impl ::core::clone::Clone for CLUSTER_SHARED_VOLUME_RENAME_INPUT {
 }
 unsafe impl ::windows::core::Abi for CLUSTER_SHARED_VOLUME_RENAME_INPUT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CLUSTER_SHARED_VOLUME_RENAME_INPUT {
     fn eq(&self, other: &Self) -> bool {
@@ -6431,6 +6551,7 @@ impl ::core::fmt::Debug for CLUSTER_SHARED_VOLUME_RENAME_INPUT_GUID_NAME {
 }
 unsafe impl ::windows::core::Abi for CLUSTER_SHARED_VOLUME_RENAME_INPUT_GUID_NAME {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CLUSTER_SHARED_VOLUME_RENAME_INPUT_GUID_NAME {
     fn eq(&self, other: &Self) -> bool {
@@ -6461,6 +6582,7 @@ impl ::core::fmt::Debug for CLUSTER_SHARED_VOLUME_RENAME_INPUT_NAME {
 }
 unsafe impl ::windows::core::Abi for CLUSTER_SHARED_VOLUME_RENAME_INPUT_NAME {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CLUSTER_SHARED_VOLUME_RENAME_INPUT_NAME {
     fn eq(&self, other: &Self) -> bool {
@@ -6500,6 +6622,7 @@ impl ::core::default::Default for CLUSTER_SHARED_VOLUME_RENAME_INPUT_TYPE {
 }
 unsafe impl ::windows::core::Abi for CLUSTER_SHARED_VOLUME_RENAME_INPUT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLUSTER_SHARED_VOLUME_RENAME_INPUT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6520,6 +6643,7 @@ impl ::core::clone::Clone for CLUSTER_SHARED_VOLUME_RENAME_INPUT_VOLUME {
 }
 unsafe impl ::windows::core::Abi for CLUSTER_SHARED_VOLUME_RENAME_INPUT_VOLUME {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CLUSTER_SHARED_VOLUME_RENAME_INPUT_VOLUME {
     fn eq(&self, other: &Self) -> bool {
@@ -6548,6 +6672,7 @@ impl ::core::clone::Clone for CLUSTER_SHARED_VOLUME_RENAME_INPUT_VOLUME_0 {
 }
 unsafe impl ::windows::core::Abi for CLUSTER_SHARED_VOLUME_RENAME_INPUT_VOLUME_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CLUSTER_SHARED_VOLUME_RENAME_INPUT_VOLUME_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -6585,6 +6710,7 @@ impl ::core::default::Default for CLUSTER_SHARED_VOLUME_SNAPSHOT_STATE {
 }
 unsafe impl ::windows::core::Abi for CLUSTER_SHARED_VOLUME_SNAPSHOT_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLUSTER_SHARED_VOLUME_SNAPSHOT_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6618,6 +6744,7 @@ impl ::core::default::Default for CLUSTER_SHARED_VOLUME_STATE {
 }
 unsafe impl ::windows::core::Abi for CLUSTER_SHARED_VOLUME_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLUSTER_SHARED_VOLUME_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6644,6 +6771,7 @@ impl ::core::fmt::Debug for CLUSTER_SHARED_VOLUME_STATE_INFO {
 }
 unsafe impl ::windows::core::Abi for CLUSTER_SHARED_VOLUME_STATE_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CLUSTER_SHARED_VOLUME_STATE_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -6679,6 +6807,7 @@ impl ::core::fmt::Debug for CLUSTER_SHARED_VOLUME_STATE_INFO_EX {
 }
 unsafe impl ::windows::core::Abi for CLUSTER_SHARED_VOLUME_STATE_INFO_EX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CLUSTER_SHARED_VOLUME_STATE_INFO_EX {
     fn eq(&self, other: &Self) -> bool {
@@ -6722,6 +6851,7 @@ impl ::core::default::Default for CLUSTER_STORAGENODE_STATE {
 }
 unsafe impl ::windows::core::Abi for CLUSTER_STORAGENODE_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLUSTER_STORAGENODE_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6755,6 +6885,7 @@ impl ::core::default::Default for CLUSTER_UPGRADE_PHASE {
 }
 unsafe impl ::windows::core::Abi for CLUSTER_UPGRADE_PHASE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLUSTER_UPGRADE_PHASE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6779,6 +6910,7 @@ impl ::core::fmt::Debug for CLUSTER_VALIDATE_CSV_FILENAME {
 }
 unsafe impl ::windows::core::Abi for CLUSTER_VALIDATE_CSV_FILENAME {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CLUSTER_VALIDATE_CSV_FILENAME {
     fn eq(&self, other: &Self) -> bool {
@@ -6809,6 +6941,7 @@ impl ::core::fmt::Debug for CLUSTER_VALIDATE_DIRECTORY {
 }
 unsafe impl ::windows::core::Abi for CLUSTER_VALIDATE_DIRECTORY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CLUSTER_VALIDATE_DIRECTORY {
     fn eq(&self, other: &Self) -> bool {
@@ -6839,6 +6972,7 @@ impl ::core::fmt::Debug for CLUSTER_VALIDATE_NETNAME {
 }
 unsafe impl ::windows::core::Abi for CLUSTER_VALIDATE_NETNAME {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CLUSTER_VALIDATE_NETNAME {
     fn eq(&self, other: &Self) -> bool {
@@ -6869,6 +7003,7 @@ impl ::core::fmt::Debug for CLUSTER_VALIDATE_PATH {
 }
 unsafe impl ::windows::core::Abi for CLUSTER_VALIDATE_PATH {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CLUSTER_VALIDATE_PATH {
     fn eq(&self, other: &Self) -> bool {
@@ -6926,6 +7061,7 @@ impl ::core::default::Default for CLUS_AFFINITY_RULE_TYPE {
 }
 unsafe impl ::windows::core::Abi for CLUS_AFFINITY_RULE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLUS_AFFINITY_RULE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6991,6 +7127,7 @@ impl ::core::default::Default for CLUS_CHARACTERISTICS {
 }
 unsafe impl ::windows::core::Abi for CLUS_CHARACTERISTICS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLUS_CHARACTERISTICS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7018,6 +7155,7 @@ impl ::core::fmt::Debug for CLUS_CHKDSK_INFO {
 }
 unsafe impl ::windows::core::Abi for CLUS_CHKDSK_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CLUS_CHKDSK_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -7050,6 +7188,7 @@ impl ::core::fmt::Debug for CLUS_CREATE_INFRASTRUCTURE_FILESERVER_INPUT {
 }
 unsafe impl ::windows::core::Abi for CLUS_CREATE_INFRASTRUCTURE_FILESERVER_INPUT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CLUS_CREATE_INFRASTRUCTURE_FILESERVER_INPUT {
     fn eq(&self, other: &Self) -> bool {
@@ -7080,6 +7219,7 @@ impl ::core::fmt::Debug for CLUS_CREATE_INFRASTRUCTURE_FILESERVER_OUTPUT {
 }
 unsafe impl ::windows::core::Abi for CLUS_CREATE_INFRASTRUCTURE_FILESERVER_OUTPUT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CLUS_CREATE_INFRASTRUCTURE_FILESERVER_OUTPUT {
     fn eq(&self, other: &Self) -> bool {
@@ -7116,6 +7256,7 @@ impl ::core::fmt::Debug for CLUS_CSV_MAINTENANCE_MODE_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for CLUS_CSV_MAINTENANCE_MODE_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for CLUS_CSV_MAINTENANCE_MODE_INFO {
@@ -7154,6 +7295,7 @@ impl ::core::fmt::Debug for CLUS_CSV_VOLUME_INFO {
 }
 unsafe impl ::windows::core::Abi for CLUS_CSV_VOLUME_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CLUS_CSV_VOLUME_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -7186,6 +7328,7 @@ impl ::core::fmt::Debug for CLUS_CSV_VOLUME_NAME {
 }
 unsafe impl ::windows::core::Abi for CLUS_CSV_VOLUME_NAME {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CLUS_CSV_VOLUME_NAME {
     fn eq(&self, other: &Self) -> bool {
@@ -7217,6 +7360,7 @@ impl ::core::fmt::Debug for CLUS_DISK_NUMBER_INFO {
 }
 unsafe impl ::windows::core::Abi for CLUS_DISK_NUMBER_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CLUS_DISK_NUMBER_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -7253,6 +7397,7 @@ impl ::core::fmt::Debug for CLUS_DNN_LEADER_STATUS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for CLUS_DNN_LEADER_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for CLUS_DNN_LEADER_STATUS {
@@ -7287,6 +7432,7 @@ impl ::core::fmt::Debug for CLUS_DNN_SODAFS_CLONE_STATUS {
 }
 unsafe impl ::windows::core::Abi for CLUS_DNN_SODAFS_CLONE_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CLUS_DNN_SODAFS_CLONE_STATUS {
     fn eq(&self, other: &Self) -> bool {
@@ -7318,6 +7464,7 @@ impl ::core::default::Default for CLUS_FLAGS {
 }
 unsafe impl ::windows::core::Abi for CLUS_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLUS_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7345,6 +7492,7 @@ impl ::core::fmt::Debug for CLUS_FORCE_QUORUM_INFO {
 }
 unsafe impl ::windows::core::Abi for CLUS_FORCE_QUORUM_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CLUS_FORCE_QUORUM_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -7376,6 +7524,7 @@ impl ::core::fmt::Debug for CLUS_FTSET_INFO {
 }
 unsafe impl ::windows::core::Abi for CLUS_FTSET_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CLUS_FTSET_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -7413,6 +7562,7 @@ impl ::core::default::Default for CLUS_GROUP_START_SETTING {
 }
 unsafe impl ::windows::core::Abi for CLUS_GROUP_START_SETTING {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLUS_GROUP_START_SETTING {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7448,6 +7598,7 @@ impl ::core::fmt::Debug for CLUS_MAINTENANCE_MODE_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for CLUS_MAINTENANCE_MODE_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for CLUS_MAINTENANCE_MODE_INFO {
@@ -7489,6 +7640,7 @@ impl ::core::fmt::Debug for CLUS_MAINTENANCE_MODE_INFOEX {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for CLUS_MAINTENANCE_MODE_INFOEX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for CLUS_MAINTENANCE_MODE_INFOEX {
@@ -7552,6 +7704,7 @@ impl ::core::fmt::Debug for CLUS_NETNAME_IP_INFO_ENTRY {
 }
 unsafe impl ::windows::core::Abi for CLUS_NETNAME_IP_INFO_ENTRY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CLUS_NETNAME_IP_INFO_ENTRY {
     fn eq(&self, other: &Self) -> bool {
@@ -7584,6 +7737,7 @@ impl ::core::fmt::Debug for CLUS_NETNAME_IP_INFO_FOR_MULTICHANNEL {
 }
 unsafe impl ::windows::core::Abi for CLUS_NETNAME_IP_INFO_FOR_MULTICHANNEL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CLUS_NETNAME_IP_INFO_FOR_MULTICHANNEL {
     fn eq(&self, other: &Self) -> bool {
@@ -7617,6 +7771,7 @@ impl ::core::fmt::Debug for CLUS_NETNAME_PWD_INFO {
 }
 unsafe impl ::windows::core::Abi for CLUS_NETNAME_PWD_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CLUS_NETNAME_PWD_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -7650,6 +7805,7 @@ impl ::core::fmt::Debug for CLUS_NETNAME_PWD_INFOEX {
 }
 unsafe impl ::windows::core::Abi for CLUS_NETNAME_PWD_INFOEX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CLUS_NETNAME_PWD_INFOEX {
     fn eq(&self, other: &Self) -> bool {
@@ -7687,6 +7843,7 @@ impl ::core::fmt::Debug for CLUS_NETNAME_VS_TOKEN_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for CLUS_NETNAME_VS_TOKEN_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for CLUS_NETNAME_VS_TOKEN_INFO {
@@ -7732,6 +7889,7 @@ impl ::core::fmt::Debug for CLUS_PARTITION_INFO {
 }
 unsafe impl ::windows::core::Abi for CLUS_PARTITION_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CLUS_PARTITION_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -7786,6 +7944,7 @@ impl ::core::fmt::Debug for CLUS_PARTITION_INFO_EX {
 }
 unsafe impl ::windows::core::Abi for CLUS_PARTITION_INFO_EX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CLUS_PARTITION_INFO_EX {
     fn eq(&self, other: &Self) -> bool {
@@ -7818,6 +7977,7 @@ impl ::core::fmt::Debug for CLUS_PARTITION_INFO_EX2 {
 }
 unsafe impl ::windows::core::Abi for CLUS_PARTITION_INFO_EX2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CLUS_PARTITION_INFO_EX2 {
     fn eq(&self, other: &Self) -> bool {
@@ -7850,6 +8010,7 @@ impl ::core::fmt::Debug for CLUS_PROVIDER_STATE_CHANGE_INFO {
 }
 unsafe impl ::windows::core::Abi for CLUS_PROVIDER_STATE_CHANGE_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CLUS_PROVIDER_STATE_CHANGE_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -7903,6 +8064,7 @@ impl ::core::clone::Clone for CLUS_RESOURCE_CLASS_INFO {
 }
 unsafe impl ::windows::core::Abi for CLUS_RESOURCE_CLASS_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CLUS_RESOURCE_CLASS_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -7929,6 +8091,7 @@ impl ::core::clone::Clone for CLUS_RESOURCE_CLASS_INFO_0 {
 }
 unsafe impl ::windows::core::Abi for CLUS_RESOURCE_CLASS_INFO_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CLUS_RESOURCE_CLASS_INFO_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -7955,6 +8118,7 @@ impl ::core::clone::Clone for CLUS_RESOURCE_CLASS_INFO_0_0 {
 }
 unsafe impl ::windows::core::Abi for CLUS_RESOURCE_CLASS_INFO_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CLUS_RESOURCE_CLASS_INFO_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -7981,6 +8145,7 @@ impl ::core::clone::Clone for CLUS_RESOURCE_CLASS_INFO_0_0_0 {
 }
 unsafe impl ::windows::core::Abi for CLUS_RESOURCE_CLASS_INFO_0_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CLUS_RESOURCE_CLASS_INFO_0_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -8012,6 +8177,7 @@ impl ::core::default::Default for CLUS_RESSUBCLASS {
 }
 unsafe impl ::windows::core::Abi for CLUS_RESSUBCLASS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLUS_RESSUBCLASS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8037,6 +8203,7 @@ impl ::core::default::Default for CLUS_RESSUBCLASS_NETWORK {
 }
 unsafe impl ::windows::core::Abi for CLUS_RESSUBCLASS_NETWORK {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLUS_RESSUBCLASS_NETWORK {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8066,6 +8233,7 @@ impl ::core::default::Default for CLUS_RESSUBCLASS_STORAGE {
 }
 unsafe impl ::windows::core::Abi for CLUS_RESSUBCLASS_STORAGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLUS_RESSUBCLASS_STORAGE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8195,6 +8363,7 @@ impl ::core::clone::Clone for CLUS_SCSI_ADDRESS {
 }
 unsafe impl ::windows::core::Abi for CLUS_SCSI_ADDRESS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CLUS_SCSI_ADDRESS {
     fn eq(&self, other: &Self) -> bool {
@@ -8221,6 +8390,7 @@ impl ::core::clone::Clone for CLUS_SCSI_ADDRESS_0 {
 }
 unsafe impl ::windows::core::Abi for CLUS_SCSI_ADDRESS_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CLUS_SCSI_ADDRESS_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -8254,6 +8424,7 @@ impl ::core::fmt::Debug for CLUS_SCSI_ADDRESS_0_0 {
 }
 unsafe impl ::windows::core::Abi for CLUS_SCSI_ADDRESS_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CLUS_SCSI_ADDRESS_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -8291,6 +8462,7 @@ impl ::core::fmt::Debug for CLUS_SET_MAINTENANCE_MODE_INPUT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for CLUS_SET_MAINTENANCE_MODE_INPUT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for CLUS_SET_MAINTENANCE_MODE_INPUT {
@@ -8326,6 +8498,7 @@ impl ::core::fmt::Debug for CLUS_SHARED_VOLUME_BACKUP_MODE {
 }
 unsafe impl ::windows::core::Abi for CLUS_SHARED_VOLUME_BACKUP_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CLUS_SHARED_VOLUME_BACKUP_MODE {
     fn eq(&self, other: &Self) -> bool {
@@ -8363,6 +8536,7 @@ impl ::core::fmt::Debug for CLUS_STARTING_PARAMS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for CLUS_STARTING_PARAMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for CLUS_STARTING_PARAMS {
@@ -8396,6 +8570,7 @@ impl ::core::fmt::Debug for CLUS_STORAGE_GET_AVAILABLE_DRIVELETTERS {
 }
 unsafe impl ::windows::core::Abi for CLUS_STORAGE_GET_AVAILABLE_DRIVELETTERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CLUS_STORAGE_GET_AVAILABLE_DRIVELETTERS {
     fn eq(&self, other: &Self) -> bool {
@@ -8427,6 +8602,7 @@ impl ::core::fmt::Debug for CLUS_STORAGE_REMAP_DRIVELETTER {
 }
 unsafe impl ::windows::core::Abi for CLUS_STORAGE_REMAP_DRIVELETTER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CLUS_STORAGE_REMAP_DRIVELETTER {
     fn eq(&self, other: &Self) -> bool {
@@ -8458,6 +8634,7 @@ impl ::core::fmt::Debug for CLUS_STORAGE_SET_DRIVELETTER {
 }
 unsafe impl ::windows::core::Abi for CLUS_STORAGE_SET_DRIVELETTER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CLUS_STORAGE_SET_DRIVELETTER {
     fn eq(&self, other: &Self) -> bool {
@@ -8494,6 +8671,7 @@ impl ::core::fmt::Debug for CLUS_WORKER {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for CLUS_WORKER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for CLUS_WORKER {
@@ -8542,6 +8720,7 @@ impl ::core::fmt::Debug for CREATE_CLUSTER_CONFIG {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for CREATE_CLUSTER_CONFIG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for CREATE_CLUSTER_CONFIG {
@@ -8590,6 +8769,7 @@ impl ::core::fmt::Debug for CREATE_CLUSTER_NAME_ACCOUNT {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for CREATE_CLUSTER_NAME_ACCOUNT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for CREATE_CLUSTER_NAME_ACCOUNT {
@@ -10770,6 +10950,7 @@ impl ::core::default::Default for FAILURE_TYPE {
 }
 unsafe impl ::windows::core::Abi for FAILURE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FAILURE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10797,6 +10978,7 @@ impl ::core::fmt::Debug for FILESHARE_CHANGE {
 }
 unsafe impl ::windows::core::Abi for FILESHARE_CHANGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for FILESHARE_CHANGE {
     fn eq(&self, other: &Self) -> bool {
@@ -10834,6 +11016,7 @@ impl ::core::default::Default for FILESHARE_CHANGE_ENUM {
 }
 unsafe impl ::windows::core::Abi for FILESHARE_CHANGE_ENUM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FILESHARE_CHANGE_ENUM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10859,6 +11042,7 @@ impl ::core::fmt::Debug for FILESHARE_CHANGE_LIST {
 }
 unsafe impl ::windows::core::Abi for FILESHARE_CHANGE_LIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for FILESHARE_CHANGE_LIST {
     fn eq(&self, other: &Self) -> bool {
@@ -10948,6 +11132,7 @@ impl ::core::fmt::Debug for GET_OPERATION_CONTEXT_PARAMS {
 }
 unsafe impl ::windows::core::Abi for GET_OPERATION_CONTEXT_PARAMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for GET_OPERATION_CONTEXT_PARAMS {
     fn eq(&self, other: &Self) -> bool {
@@ -10987,6 +11172,7 @@ impl ::core::fmt::Debug for GROUP_FAILURE_INFO {
 }
 unsafe impl ::windows::core::Abi for GROUP_FAILURE_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for GROUP_FAILURE_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -11018,6 +11204,7 @@ impl ::core::fmt::Debug for GROUP_FAILURE_INFO_BUFFER {
 }
 unsafe impl ::windows::core::Abi for GROUP_FAILURE_INFO_BUFFER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for GROUP_FAILURE_INFO_BUFFER {
     fn eq(&self, other: &Self) -> bool {
@@ -11057,6 +11244,7 @@ impl ::core::default::Default for GRP_PLACEMENT_OPTIONS {
 }
 unsafe impl ::windows::core::Abi for GRP_PLACEMENT_OPTIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GRP_PLACEMENT_OPTIONS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11507,6 +11695,11 @@ pub const HCI_UPGRADE_BIT: u32 = 32768u32;
 #[doc = "*Required features: `\"Win32_Networking_Clustering\"`*"]
 #[repr(transparent)]
 pub struct IGetClusterDataInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGetClusterDataInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IGetClusterDataInfo {
     #[doc = "*Required features: `\"Win32_Networking_Clustering\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -11542,11 +11735,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IGetC
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IGetClusterDataInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IGetClusterDataInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11576,6 +11764,11 @@ pub struct IGetClusterDataInfo_Vtbl {
 #[doc = "*Required features: `\"Win32_Networking_Clustering\"`*"]
 #[repr(transparent)]
 pub struct IGetClusterGroupInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGetClusterGroupInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IGetClusterGroupInfo {
     #[doc = "*Required features: `\"Win32_Networking_Clustering\"`*"]
     pub unsafe fn GetGroupHandle(&self, lobjindex: i32) -> *mut _HGROUP {
@@ -11602,11 +11795,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IGetC
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IGetClusterGroupInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IGetClusterGroupInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11631,6 +11819,11 @@ pub struct IGetClusterGroupInfo_Vtbl {
 #[doc = "*Required features: `\"Win32_Networking_Clustering\"`*"]
 #[repr(transparent)]
 pub struct IGetClusterNetInterfaceInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGetClusterNetInterfaceInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IGetClusterNetInterfaceInfo {
     #[doc = "*Required features: `\"Win32_Networking_Clustering\"`*"]
     pub unsafe fn GetNetInterfaceHandle(&self, lobjindex: i32) -> *mut _HNETINTERFACE {
@@ -11657,11 +11850,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IGetC
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IGetClusterNetInterfaceInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IGetClusterNetInterfaceInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11686,6 +11874,11 @@ pub struct IGetClusterNetInterfaceInfo_Vtbl {
 #[doc = "*Required features: `\"Win32_Networking_Clustering\"`*"]
 #[repr(transparent)]
 pub struct IGetClusterNetworkInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGetClusterNetworkInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IGetClusterNetworkInfo {
     #[doc = "*Required features: `\"Win32_Networking_Clustering\"`*"]
     pub unsafe fn GetNetworkHandle(&self, lobjindex: i32) -> *mut _HNETWORK {
@@ -11712,11 +11905,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IGetC
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IGetClusterNetworkInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IGetClusterNetworkInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11741,6 +11929,11 @@ pub struct IGetClusterNetworkInfo_Vtbl {
 #[doc = "*Required features: `\"Win32_Networking_Clustering\"`*"]
 #[repr(transparent)]
 pub struct IGetClusterNodeInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGetClusterNodeInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IGetClusterNodeInfo {
     #[doc = "*Required features: `\"Win32_Networking_Clustering\"`*"]
     pub unsafe fn GetNodeHandle(&self, lobjindex: i32) -> *mut _HNODE {
@@ -11767,11 +11960,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IGetC
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IGetClusterNodeInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IGetClusterNodeInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11796,6 +11984,11 @@ pub struct IGetClusterNodeInfo_Vtbl {
 #[doc = "*Required features: `\"Win32_Networking_Clustering\"`*"]
 #[repr(transparent)]
 pub struct IGetClusterObjectInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGetClusterObjectInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IGetClusterObjectInfo {
     #[doc = "*Required features: `\"Win32_Networking_Clustering\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -11827,11 +12020,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IGetC
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IGetClusterObjectInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IGetClusterObjectInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11860,6 +12048,11 @@ pub struct IGetClusterObjectInfo_Vtbl {
 #[doc = "*Required features: `\"Win32_Networking_Clustering\"`*"]
 #[repr(transparent)]
 pub struct IGetClusterResourceInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGetClusterResourceInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IGetClusterResourceInfo {
     #[doc = "*Required features: `\"Win32_Networking_Clustering\"`*"]
     pub unsafe fn GetResourceHandle(&self, lobjindex: i32) -> *mut _HRESOURCE {
@@ -11896,11 +12089,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IGetC
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IGetClusterResourceInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IGetClusterResourceInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11933,6 +12121,11 @@ pub struct IGetClusterResourceInfo_Vtbl {
 #[doc = "*Required features: `\"Win32_Networking_Clustering\"`*"]
 #[repr(transparent)]
 pub struct IGetClusterUIInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGetClusterUIInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IGetClusterUIInfo {
     #[doc = "*Required features: `\"Win32_Networking_Clustering\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -11974,11 +12167,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IGetC
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IGetClusterUIInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IGetClusterUIInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12016,6 +12204,12 @@ pub struct IGetClusterUIInfo_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ISClusApplication(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ISClusApplication {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ISClusApplication {
     #[doc = "*Required features: `\"Win32_Networking_Clustering\"`, `\"Win32_System_Com\"`*"]
@@ -12086,12 +12280,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ISClusApplication {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ISClusApplication {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12132,6 +12320,12 @@ pub struct ISClusApplication_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ISClusCryptoKeys(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ISClusCryptoKeys {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ISClusCryptoKeys {
     #[doc = "*Required features: `\"Win32_Networking_Clustering\"`*"]
@@ -12214,12 +12408,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ISClusCryptoKeys {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ISClusCryptoKeys {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12263,6 +12451,12 @@ pub struct ISClusCryptoKeys_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ISClusDisk(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ISClusDisk {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ISClusDisk {
     #[doc = "*Required features: `\"Win32_Networking_Clustering\"`*"]
@@ -12337,12 +12531,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ISClusDisk {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ISClusDisk {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12381,6 +12569,12 @@ pub struct ISClusDisk_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ISClusDisks(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ISClusDisks {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ISClusDisks {
     #[doc = "*Required features: `\"Win32_Networking_Clustering\"`*"]
@@ -12449,12 +12643,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ISClusDisks {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ISClusDisks {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12489,6 +12677,12 @@ pub struct ISClusDisks_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ISClusNetInterface(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ISClusNetInterface {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ISClusNetInterface {
     #[doc = "*Required features: `\"Win32_Networking_Clustering\"`, `\"Win32_System_Com\"`*"]
@@ -12587,12 +12781,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ISClusNetInterface {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ISClusNetInterface {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12647,6 +12835,12 @@ pub struct ISClusNetInterface_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ISClusNetInterfaces(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ISClusNetInterfaces {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ISClusNetInterfaces {
     #[doc = "*Required features: `\"Win32_Networking_Clustering\"`*"]
@@ -12719,12 +12913,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ISClusNetInterfaces {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ISClusNetInterfaces {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12760,6 +12948,12 @@ pub struct ISClusNetInterfaces_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ISClusNetwork(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ISClusNetwork {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ISClusNetwork {
     #[doc = "*Required features: `\"Win32_Networking_Clustering\"`, `\"Win32_System_Com\"`*"]
@@ -12875,12 +13069,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ISClusNetwork {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ISClusNetwork {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12947,6 +13135,12 @@ pub struct ISClusNetwork_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ISClusNetworkNetInterfaces(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ISClusNetworkNetInterfaces {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ISClusNetworkNetInterfaces {
     #[doc = "*Required features: `\"Win32_Networking_Clustering\"`*"]
@@ -13019,12 +13213,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ISClusNetworkNetInterfaces {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ISClusNetworkNetInterfaces {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13060,6 +13248,12 @@ pub struct ISClusNetworkNetInterfaces_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ISClusNetworks(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ISClusNetworks {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ISClusNetworks {
     #[doc = "*Required features: `\"Win32_Networking_Clustering\"`*"]
@@ -13132,12 +13326,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ISClusNetworks {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ISClusNetworks {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13173,6 +13361,12 @@ pub struct ISClusNetworks_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ISClusNode(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ISClusNode {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ISClusNode {
     #[doc = "*Required features: `\"Win32_Networking_Clustering\"`, `\"Win32_System_Com\"`*"]
@@ -13301,12 +13495,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ISClusNode {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ISClusNode {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13376,6 +13564,12 @@ pub struct ISClusNode_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ISClusNodeNetInterfaces(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ISClusNodeNetInterfaces {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ISClusNodeNetInterfaces {
     #[doc = "*Required features: `\"Win32_Networking_Clustering\"`*"]
@@ -13448,12 +13642,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ISClusNodeNetInterfaces {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ISClusNodeNetInterfaces {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13489,6 +13677,12 @@ pub struct ISClusNodeNetInterfaces_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ISClusNodes(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ISClusNodes {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ISClusNodes {
     #[doc = "*Required features: `\"Win32_Networking_Clustering\"`*"]
@@ -13561,12 +13755,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ISClusNodes {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ISClusNodes {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13602,6 +13790,12 @@ pub struct ISClusNodes_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ISClusPartition(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ISClusPartition {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ISClusPartition {
     #[doc = "*Required features: `\"Win32_Networking_Clustering\"`*"]
@@ -13692,12 +13886,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ISClusPartition {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ISClusPartition {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13742,6 +13930,12 @@ pub struct ISClusPartition_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ISClusPartitionEx(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ISClusPartitionEx {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ISClusPartitionEx {
     #[doc = "*Required features: `\"Win32_Networking_Clustering\"`*"]
@@ -13882,12 +14076,6 @@ impl<'a> ::windows::core::IntoParam<'a, ISClusPartition> for &'a ISClusPartition
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ISClusPartitionEx {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ISClusPartitionEx {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13924,6 +14112,12 @@ pub struct ISClusPartitionEx_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ISClusPartitions(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ISClusPartitions {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ISClusPartitions {
     #[doc = "*Required features: `\"Win32_Networking_Clustering\"`*"]
@@ -13992,12 +14186,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ISClusPartitions {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ISClusPartitions {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -14032,6 +14220,12 @@ pub struct ISClusPartitions_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ISClusProperties(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ISClusProperties {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ISClusProperties {
     #[doc = "*Required features: `\"Win32_Networking_Clustering\"`*"]
@@ -14145,12 +14339,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ISClusProperties {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ISClusProperties {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -14214,6 +14402,12 @@ pub struct ISClusProperties_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ISClusProperty(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ISClusProperty {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ISClusProperty {
     #[doc = "*Required features: `\"Win32_Networking_Clustering\"`, `\"Win32_Foundation\"`*"]
@@ -14345,12 +14539,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ISClusProperty {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ISClusProperty {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -14418,6 +14606,12 @@ pub struct ISClusProperty_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ISClusPropertyValue(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ISClusPropertyValue {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ISClusPropertyValue {
     #[doc = "*Required features: `\"Win32_Networking_Clustering\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
@@ -14515,12 +14709,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ISClusPropertyValue {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ISClusPropertyValue {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -14567,6 +14755,12 @@ pub struct ISClusPropertyValue_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ISClusPropertyValueData(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ISClusPropertyValueData {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ISClusPropertyValueData {
     #[doc = "*Required features: `\"Win32_Networking_Clustering\"`*"]
@@ -14646,12 +14840,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ISClusPropertyValueData {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ISClusPropertyValueData {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -14694,6 +14882,12 @@ pub struct ISClusPropertyValueData_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ISClusPropertyValues(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ISClusPropertyValues {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ISClusPropertyValues {
     #[doc = "*Required features: `\"Win32_Networking_Clustering\"`*"]
@@ -14773,12 +14967,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ISClusPropertyValues {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ISClusPropertyValues {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -14821,6 +15009,12 @@ pub struct ISClusPropertyValues_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ISClusRefObject(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ISClusRefObject {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ISClusRefObject {
     #[doc = "*Required features: `\"Win32_Networking_Clustering\"`*"]
@@ -14878,12 +15072,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ISClusRefObject {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ISClusRefObject {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -14913,6 +15101,12 @@ pub struct ISClusRefObject_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ISClusRegistryKeys(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ISClusRegistryKeys {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ISClusRegistryKeys {
     #[doc = "*Required features: `\"Win32_Networking_Clustering\"`*"]
@@ -14995,12 +15189,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ISClusRegistryKeys {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ISClusRegistryKeys {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -15044,6 +15232,12 @@ pub struct ISClusRegistryKeys_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ISClusResDependencies(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ISClusResDependencies {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ISClusResDependencies {
     #[doc = "*Required features: `\"Win32_Networking_Clustering\"`*"]
@@ -15137,12 +15331,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ISClusResDependencies {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ISClusResDependencies {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -15194,6 +15382,12 @@ pub struct ISClusResDependencies_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ISClusResDependents(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ISClusResDependents {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ISClusResDependents {
     #[doc = "*Required features: `\"Win32_Networking_Clustering\"`*"]
@@ -15287,12 +15481,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ISClusResDependents {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ISClusResDependents {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -15344,6 +15532,12 @@ pub struct ISClusResDependents_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ISClusResGroup(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ISClusResGroup {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ISClusResGroup {
     #[doc = "*Required features: `\"Win32_Networking_Clustering\"`, `\"Win32_System_Com\"`*"]
@@ -15487,12 +15681,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ISClusResGroup {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ISClusResGroup {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -15576,6 +15764,12 @@ pub struct ISClusResGroup_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ISClusResGroupPreferredOwnerNodes(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ISClusResGroupPreferredOwnerNodes {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ISClusResGroupPreferredOwnerNodes {
     #[doc = "*Required features: `\"Win32_Networking_Clustering\"`*"]
@@ -15673,12 +15867,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ISClusResGroupPreferredOwnerNodes {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ISClusResGroupPreferredOwnerNodes {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -15731,6 +15919,12 @@ pub struct ISClusResGroupPreferredOwnerNodes_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ISClusResGroupResources(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ISClusResGroupResources {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ISClusResGroupResources {
     #[doc = "*Required features: `\"Win32_Networking_Clustering\"`*"]
@@ -15814,12 +16008,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ISClusResGroupResources {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ISClusResGroupResources {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -15863,6 +16051,12 @@ pub struct ISClusResGroupResources_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ISClusResGroups(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ISClusResGroups {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ISClusResGroups {
     #[doc = "*Required features: `\"Win32_Networking_Clustering\"`*"]
@@ -15946,12 +16140,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ISClusResGroups {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ISClusResGroups {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -15995,6 +16183,12 @@ pub struct ISClusResGroups_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ISClusResPossibleOwnerNodes(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ISClusResPossibleOwnerNodes {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ISClusResPossibleOwnerNodes {
     #[doc = "*Required features: `\"Win32_Networking_Clustering\"`*"]
@@ -16083,12 +16277,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ISClusResPossibleOwnerNodes {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ISClusResPossibleOwnerNodes {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -16136,6 +16324,12 @@ pub struct ISClusResPossibleOwnerNodes_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ISClusResType(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ISClusResType {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ISClusResType {
     #[doc = "*Required features: `\"Win32_Networking_Clustering\"`, `\"Win32_System_Com\"`*"]
@@ -16246,12 +16440,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ISClusResType {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ISClusResType {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -16317,6 +16505,12 @@ pub struct ISClusResType_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ISClusResTypePossibleOwnerNodes(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ISClusResTypePossibleOwnerNodes {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ISClusResTypePossibleOwnerNodes {
     #[doc = "*Required features: `\"Win32_Networking_Clustering\"`*"]
@@ -16389,12 +16583,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ISClusResTypePossibleOwnerNodes {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ISClusResTypePossibleOwnerNodes {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -16430,6 +16618,12 @@ pub struct ISClusResTypePossibleOwnerNodes_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ISClusResTypeResources(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ISClusResTypeResources {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ISClusResTypeResources {
     #[doc = "*Required features: `\"Win32_Networking_Clustering\"`*"]
@@ -16513,12 +16707,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ISClusResTypeResources {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ISClusResTypeResources {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -16562,6 +16750,12 @@ pub struct ISClusResTypeResources_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ISClusResTypes(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ISClusResTypes {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ISClusResTypes {
     #[doc = "*Required features: `\"Win32_Networking_Clustering\"`*"]
@@ -16645,12 +16839,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ISClusResTypes {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ISClusResTypes {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -16694,6 +16882,12 @@ pub struct ISClusResTypes_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ISClusResource(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ISClusResource {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ISClusResource {
     #[doc = "*Required features: `\"Win32_Networking_Clustering\"`, `\"Win32_System_Com\"`*"]
@@ -16924,12 +17118,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ISClusResource {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ISClusResource {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -17069,6 +17257,12 @@ pub struct ISClusResource_Vtbl {
 #[repr(transparent)]
 pub struct ISClusResources(::windows::core::IUnknown);
 #[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ISClusResources {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "Win32_System_Com")]
 impl ISClusResources {
     #[doc = "*Required features: `\"Win32_Networking_Clustering\"`*"]
     pub unsafe fn Count(&self) -> ::windows::core::Result<i32> {
@@ -17151,12 +17345,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ISClusResources {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ISClusResources {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -17200,6 +17388,12 @@ pub struct ISClusResources_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ISClusScsiAddress(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ISClusScsiAddress {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ISClusScsiAddress {
     #[doc = "*Required features: `\"Win32_Networking_Clustering\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
@@ -17276,12 +17470,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ISClusScsiAddress {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ISClusScsiAddress {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -17326,6 +17514,12 @@ pub struct ISClusScsiAddress_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ISClusVersion(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ISClusVersion {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ISClusVersion {
     #[doc = "*Required features: `\"Win32_Networking_Clustering\"`, `\"Win32_Foundation\"`*"]
@@ -17432,12 +17626,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ISClusVersion {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ISClusVersion {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -17488,6 +17676,12 @@ pub struct ISClusVersion_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ISCluster(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ISCluster {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ISCluster {
     #[doc = "*Required features: `\"Win32_Networking_Clustering\"`, `\"Win32_System_Com\"`*"]
@@ -17658,12 +17852,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ISCluster {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ISCluster {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -17768,6 +17956,12 @@ pub struct ISCluster_Vtbl {
 #[repr(transparent)]
 pub struct ISClusterNames(::windows::core::IUnknown);
 #[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ISClusterNames {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "Win32_System_Com")]
 impl ISClusterNames {
     #[doc = "*Required features: `\"Win32_Networking_Clustering\"`*"]
     pub unsafe fn Count(&self) -> ::windows::core::Result<i32> {
@@ -17845,12 +18039,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ISClusterNames {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ISClusterNames {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -17890,6 +18078,12 @@ pub struct ISClusterNames_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ISDomainNames(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ISDomainNames {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ISDomainNames {
     #[doc = "*Required features: `\"Win32_Networking_Clustering\"`*"]
@@ -17962,12 +18156,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ISDomainNames {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ISDomainNames {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -18002,6 +18190,11 @@ pub struct ISDomainNames_Vtbl {
 #[doc = "*Required features: `\"Win32_Networking_Clustering\"`*"]
 #[repr(transparent)]
 pub struct IWCContextMenuCallback(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWCContextMenuCallback {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWCContextMenuCallback {
     #[doc = "*Required features: `\"Win32_Networking_Clustering\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -18027,11 +18220,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IWCContex
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWCContextMenuCallback {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IWCContextMenuCallback {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IWCContextMenuCallback {
@@ -18061,6 +18249,11 @@ pub struct IWCContextMenuCallback_Vtbl {
 #[doc = "*Required features: `\"Win32_Networking_Clustering\"`*"]
 #[repr(transparent)]
 pub struct IWCPropertySheetCallback(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWCPropertySheetCallback {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWCPropertySheetCallback {
     #[doc = "*Required features: `\"Win32_Networking_Clustering\"`*"]
     pub unsafe fn AddPropertySheetPage(&self, hpage: *const i32) -> ::windows::core::Result<()> {
@@ -18087,11 +18280,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWCPr
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWCPropertySheetCallback {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWCPropertySheetCallback {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -18116,6 +18304,11 @@ pub struct IWCPropertySheetCallback_Vtbl {
 #[doc = "*Required features: `\"Win32_Networking_Clustering\"`*"]
 #[repr(transparent)]
 pub struct IWCWizard97Callback(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWCWizard97Callback {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWCWizard97Callback {
     #[doc = "*Required features: `\"Win32_Networking_Clustering\"`*"]
     pub unsafe fn AddWizard97Page(&self, hpage: *const i32) -> ::windows::core::Result<()> {
@@ -18147,11 +18340,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWCWi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWCWizard97Callback {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWCWizard97Callback {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -18180,6 +18368,11 @@ pub struct IWCWizard97Callback_Vtbl {
 #[doc = "*Required features: `\"Win32_Networking_Clustering\"`*"]
 #[repr(transparent)]
 pub struct IWCWizardCallback(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWCWizardCallback {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWCWizardCallback {
     #[doc = "*Required features: `\"Win32_Networking_Clustering\"`*"]
     pub unsafe fn AddWizardPage(&self, hpage: *const i32) -> ::windows::core::Result<()> {
@@ -18211,11 +18404,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWCWi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWCWizardCallback {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWCWizardCallback {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -18244,6 +18432,11 @@ pub struct IWCWizardCallback_Vtbl {
 #[doc = "*Required features: `\"Win32_Networking_Clustering\"`*"]
 #[repr(transparent)]
 pub struct IWEExtendContextMenu(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWEExtendContextMenu {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWEExtendContextMenu {
     #[doc = "*Required features: `\"Win32_Networking_Clustering\"`*"]
     pub unsafe fn AddContextMenuItems<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>, Param1: ::windows::core::IntoParam<'a, IWCContextMenuCallback>>(&self, pidata: Param0, picallback: Param1) -> ::windows::core::Result<()> {
@@ -18270,11 +18463,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWEEx
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWEExtendContextMenu {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWEExtendContextMenu {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -18299,6 +18487,11 @@ pub struct IWEExtendContextMenu_Vtbl {
 #[doc = "*Required features: `\"Win32_Networking_Clustering\"`*"]
 #[repr(transparent)]
 pub struct IWEExtendPropertySheet(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWEExtendPropertySheet {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWEExtendPropertySheet {
     #[doc = "*Required features: `\"Win32_Networking_Clustering\"`*"]
     pub unsafe fn CreatePropertySheetPages<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>, Param1: ::windows::core::IntoParam<'a, IWCPropertySheetCallback>>(&self, pidata: Param0, picallback: Param1) -> ::windows::core::Result<()> {
@@ -18325,11 +18518,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWEEx
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWEExtendPropertySheet {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWEExtendPropertySheet {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -18354,6 +18542,11 @@ pub struct IWEExtendPropertySheet_Vtbl {
 #[doc = "*Required features: `\"Win32_Networking_Clustering\"`*"]
 #[repr(transparent)]
 pub struct IWEExtendWizard(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWEExtendWizard {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWEExtendWizard {
     #[doc = "*Required features: `\"Win32_Networking_Clustering\"`*"]
     pub unsafe fn CreateWizardPages<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>, Param1: ::windows::core::IntoParam<'a, IWCWizardCallback>>(&self, pidata: Param0, picallback: Param1) -> ::windows::core::Result<()> {
@@ -18380,11 +18573,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWEEx
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWEExtendWizard {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWEExtendWizard {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -18409,6 +18597,11 @@ pub struct IWEExtendWizard_Vtbl {
 #[doc = "*Required features: `\"Win32_Networking_Clustering\"`*"]
 #[repr(transparent)]
 pub struct IWEExtendWizard97(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWEExtendWizard97 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWEExtendWizard97 {
     #[doc = "*Required features: `\"Win32_Networking_Clustering\"`*"]
     pub unsafe fn CreateWizard97Pages<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>, Param1: ::windows::core::IntoParam<'a, IWCWizard97Callback>>(&self, pidata: Param0, picallback: Param1) -> ::windows::core::Result<()> {
@@ -18435,11 +18628,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWEEx
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWEExtendWizard97 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWEExtendWizard97 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -18464,6 +18652,11 @@ pub struct IWEExtendWizard97_Vtbl {
 #[doc = "*Required features: `\"Win32_Networking_Clustering\"`*"]
 #[repr(transparent)]
 pub struct IWEInvokeCommand(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWEInvokeCommand {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWEInvokeCommand {
     #[doc = "*Required features: `\"Win32_Networking_Clustering\"`*"]
     pub unsafe fn InvokeCommand<'a, Param1: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, ncommandid: u32, pidata: Param1) -> ::windows::core::Result<()> {
@@ -18488,11 +18681,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IWEInvoke
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWEInvokeCommand {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IWEInvokeCommand {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IWEInvokeCommand {
@@ -18586,6 +18774,7 @@ impl ::core::default::Default for LOG_LEVEL {
 }
 unsafe impl ::windows::core::Abi for LOG_LEVEL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for LOG_LEVEL {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -18623,6 +18812,7 @@ impl ::core::default::Default for MAINTENANCE_MODE_TYPE_ENUM {
 }
 unsafe impl ::windows::core::Abi for MAINTENANCE_MODE_TYPE_ENUM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MAINTENANCE_MODE_TYPE_ENUM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -18675,6 +18865,7 @@ impl ::core::fmt::Debug for MONITOR_STATE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MONITOR_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MONITOR_STATE {
@@ -18749,6 +18940,7 @@ impl ::core::default::Default for NODE_CLUSTER_STATE {
 }
 unsafe impl ::windows::core::Abi for NODE_CLUSTER_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NODE_CLUSTER_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -18774,6 +18966,7 @@ impl ::core::fmt::Debug for NOTIFY_FILTER_AND_TYPE {
 }
 unsafe impl ::windows::core::Abi for NOTIFY_FILTER_AND_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NOTIFY_FILTER_AND_TYPE {
     fn eq(&self, other: &Self) -> bool {
@@ -18830,6 +19023,7 @@ impl ::core::fmt::Debug for NodeUtilizationInfoElement {
 }
 unsafe impl ::windows::core::Abi for NodeUtilizationInfoElement {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NodeUtilizationInfoElement {
     fn eq(&self, other: &Self) -> bool {
@@ -19744,6 +19938,7 @@ impl ::core::default::Default for PLACEMENT_OPTIONS {
 }
 unsafe impl ::windows::core::Abi for PLACEMENT_OPTIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PLACEMENT_OPTIONS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -19797,6 +19992,7 @@ impl ::core::fmt::Debug for POST_UPGRADE_VERSION_INFO {
 }
 unsafe impl ::windows::core::Abi for POST_UPGRADE_VERSION_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for POST_UPGRADE_VERSION_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -20149,6 +20345,7 @@ impl ::core::fmt::Debug for PaxosTagCStruct {
 }
 unsafe impl ::windows::core::Abi for PaxosTagCStruct {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PaxosTagCStruct {
     fn eq(&self, other: &Self) -> bool {
@@ -20207,6 +20404,7 @@ impl ::core::default::Default for RESDLL_CONTEXT_OPERATION_TYPE {
 }
 unsafe impl ::windows::core::Abi for RESDLL_CONTEXT_OPERATION_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RESDLL_CONTEXT_OPERATION_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -20236,6 +20434,7 @@ impl ::core::default::Default for RESOURCE_EXIT_STATE {
 }
 unsafe impl ::windows::core::Abi for RESOURCE_EXIT_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RESOURCE_EXIT_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -20261,6 +20460,7 @@ impl ::core::fmt::Debug for RESOURCE_FAILURE_INFO {
 }
 unsafe impl ::windows::core::Abi for RESOURCE_FAILURE_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RESOURCE_FAILURE_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -20292,6 +20492,7 @@ impl ::core::fmt::Debug for RESOURCE_FAILURE_INFO_BUFFER {
 }
 unsafe impl ::windows::core::Abi for RESOURCE_FAILURE_INFO_BUFFER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RESOURCE_FAILURE_INFO_BUFFER {
     fn eq(&self, other: &Self) -> bool {
@@ -20355,6 +20556,7 @@ impl ::core::default::Default for RESOURCE_MONITOR_STATE {
 }
 unsafe impl ::windows::core::Abi for RESOURCE_MONITOR_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RESOURCE_MONITOR_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -20387,6 +20589,7 @@ impl ::core::fmt::Debug for RESOURCE_STATUS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for RESOURCE_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for RESOURCE_STATUS {
@@ -20430,6 +20633,7 @@ impl ::core::fmt::Debug for RESOURCE_STATUS_EX {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for RESOURCE_STATUS_EX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for RESOURCE_STATUS_EX {
@@ -20469,6 +20673,7 @@ impl ::core::fmt::Debug for RESOURCE_TERMINAL_FAILURE_INFO_BUFFER {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for RESOURCE_TERMINAL_FAILURE_INFO_BUFFER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for RESOURCE_TERMINAL_FAILURE_INFO_BUFFER {
@@ -20513,6 +20718,7 @@ impl ::core::fmt::Debug for RESUTIL_FILETIME_DATA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for RESUTIL_FILETIME_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for RESUTIL_FILETIME_DATA {
@@ -20548,6 +20754,7 @@ impl ::core::fmt::Debug for RESUTIL_LARGEINT_DATA {
 }
 unsafe impl ::windows::core::Abi for RESUTIL_LARGEINT_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RESUTIL_LARGEINT_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -20584,6 +20791,7 @@ impl ::core::clone::Clone for RESUTIL_PROPERTY_ITEM {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for RESUTIL_PROPERTY_ITEM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for RESUTIL_PROPERTY_ITEM {
@@ -20621,6 +20829,7 @@ impl ::core::clone::Clone for RESUTIL_PROPERTY_ITEM_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for RESUTIL_PROPERTY_ITEM_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for RESUTIL_PROPERTY_ITEM_0 {
@@ -20664,6 +20873,7 @@ impl ::core::fmt::Debug for RESUTIL_ULARGEINT_DATA {
 }
 unsafe impl ::windows::core::Abi for RESUTIL_ULARGEINT_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RESUTIL_ULARGEINT_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -22339,6 +22549,7 @@ impl ::core::fmt::Debug for ResourceUtilizationInfoElement {
 }
 unsafe impl ::windows::core::Abi for ResourceUtilizationInfoElement {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ResourceUtilizationInfoElement {
     fn eq(&self, other: &Self) -> bool {
@@ -22454,6 +22665,7 @@ impl ::core::default::Default for SR_DISK_REPLICATION_ELIGIBLE {
 }
 unsafe impl ::windows::core::Abi for SR_DISK_REPLICATION_ELIGIBLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SR_DISK_REPLICATION_ELIGIBLE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -22493,6 +22705,7 @@ impl ::core::default::Default for SR_REPLICATED_DISK_TYPE {
 }
 unsafe impl ::windows::core::Abi for SR_REPLICATED_DISK_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SR_REPLICATED_DISK_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -22548,6 +22761,7 @@ impl ::core::fmt::Debug for SR_RESOURCE_TYPE_ADD_REPLICATION_GROUP {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SR_RESOURCE_TYPE_ADD_REPLICATION_GROUP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for SR_RESOURCE_TYPE_ADD_REPLICATION_GROUP {
@@ -22582,6 +22796,7 @@ impl ::core::fmt::Debug for SR_RESOURCE_TYPE_ADD_REPLICATION_GROUP_RESULT {
 }
 unsafe impl ::windows::core::Abi for SR_RESOURCE_TYPE_ADD_REPLICATION_GROUP_RESULT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SR_RESOURCE_TYPE_ADD_REPLICATION_GROUP_RESULT {
     fn eq(&self, other: &Self) -> bool {
@@ -22613,6 +22828,7 @@ impl ::core::fmt::Debug for SR_RESOURCE_TYPE_DISK_INFO {
 }
 unsafe impl ::windows::core::Abi for SR_RESOURCE_TYPE_DISK_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SR_RESOURCE_TYPE_DISK_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -22644,6 +22860,7 @@ impl ::core::fmt::Debug for SR_RESOURCE_TYPE_ELIGIBLE_DISKS_RESULT {
 }
 unsafe impl ::windows::core::Abi for SR_RESOURCE_TYPE_ELIGIBLE_DISKS_RESULT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SR_RESOURCE_TYPE_ELIGIBLE_DISKS_RESULT {
     fn eq(&self, other: &Self) -> bool {
@@ -22680,6 +22897,7 @@ impl ::core::fmt::Debug for SR_RESOURCE_TYPE_QUERY_ELIGIBLE_LOGDISKS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SR_RESOURCE_TYPE_QUERY_ELIGIBLE_LOGDISKS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for SR_RESOURCE_TYPE_QUERY_ELIGIBLE_LOGDISKS {
@@ -22719,6 +22937,7 @@ impl ::core::fmt::Debug for SR_RESOURCE_TYPE_QUERY_ELIGIBLE_SOURCE_DATADISKS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SR_RESOURCE_TYPE_QUERY_ELIGIBLE_SOURCE_DATADISKS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for SR_RESOURCE_TYPE_QUERY_ELIGIBLE_SOURCE_DATADISKS {
@@ -22760,6 +22979,7 @@ impl ::core::fmt::Debug for SR_RESOURCE_TYPE_QUERY_ELIGIBLE_TARGET_DATADISKS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SR_RESOURCE_TYPE_QUERY_ELIGIBLE_TARGET_DATADISKS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for SR_RESOURCE_TYPE_QUERY_ELIGIBLE_TARGET_DATADISKS {
@@ -22796,6 +23016,7 @@ impl ::core::fmt::Debug for SR_RESOURCE_TYPE_REPLICATED_DISK {
 }
 unsafe impl ::windows::core::Abi for SR_RESOURCE_TYPE_REPLICATED_DISK {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SR_RESOURCE_TYPE_REPLICATED_DISK {
     fn eq(&self, other: &Self) -> bool {
@@ -22827,6 +23048,7 @@ impl ::core::fmt::Debug for SR_RESOURCE_TYPE_REPLICATED_DISKS_RESULT {
 }
 unsafe impl ::windows::core::Abi for SR_RESOURCE_TYPE_REPLICATED_DISKS_RESULT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SR_RESOURCE_TYPE_REPLICATED_DISKS_RESULT {
     fn eq(&self, other: &Self) -> bool {
@@ -22858,6 +23080,7 @@ impl ::core::fmt::Debug for SR_RESOURCE_TYPE_REPLICATED_PARTITION_ARRAY {
 }
 unsafe impl ::windows::core::Abi for SR_RESOURCE_TYPE_REPLICATED_PARTITION_ARRAY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SR_RESOURCE_TYPE_REPLICATED_PARTITION_ARRAY {
     fn eq(&self, other: &Self) -> bool {
@@ -22889,6 +23112,7 @@ impl ::core::fmt::Debug for SR_RESOURCE_TYPE_REPLICATED_PARTITION_INFO {
 }
 unsafe impl ::windows::core::Abi for SR_RESOURCE_TYPE_REPLICATED_PARTITION_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SR_RESOURCE_TYPE_REPLICATED_PARTITION_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -23104,6 +23328,7 @@ impl ::core::default::Default for VM_RESDLL_CONTEXT {
 }
 unsafe impl ::windows::core::Abi for VM_RESDLL_CONTEXT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VM_RESDLL_CONTEXT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -23143,6 +23368,7 @@ impl ::core::fmt::Debug for WitnessTagHelper {
 }
 unsafe impl ::windows::core::Abi for WitnessTagHelper {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WitnessTagHelper {
     fn eq(&self, other: &Self) -> bool {
@@ -23175,6 +23401,7 @@ impl ::core::fmt::Debug for WitnessTagUpdateHelper {
 }
 unsafe impl ::windows::core::Abi for WitnessTagUpdateHelper {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WitnessTagUpdateHelper {
     fn eq(&self, other: &Self) -> bool {

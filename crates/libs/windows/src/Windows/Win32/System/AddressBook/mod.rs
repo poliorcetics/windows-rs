@@ -24,6 +24,7 @@ impl ::core::fmt::Debug for ADRENTRY {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com"))]
 unsafe impl ::windows::core::Abi for ADRENTRY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com"))]
 impl ::core::cmp::PartialEq for ADRENTRY {
@@ -63,6 +64,7 @@ impl ::core::fmt::Debug for ADRLIST {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com"))]
 unsafe impl ::windows::core::Abi for ADRLIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com"))]
 impl ::core::cmp::PartialEq for ADRLIST {
@@ -137,6 +139,7 @@ impl ::core::fmt::Debug for ADRPARM {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com"))]
 unsafe impl ::windows::core::Abi for ADRPARM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com"))]
 impl ::core::cmp::PartialEq for ADRPARM {
@@ -232,6 +235,7 @@ impl ::core::fmt::Debug for DTBLBUTTON {
 }
 unsafe impl ::windows::core::Abi for DTBLBUTTON {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DTBLBUTTON {
     fn eq(&self, other: &Self) -> bool {
@@ -264,6 +268,7 @@ impl ::core::fmt::Debug for DTBLCHECKBOX {
 }
 unsafe impl ::windows::core::Abi for DTBLCHECKBOX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DTBLCHECKBOX {
     fn eq(&self, other: &Self) -> bool {
@@ -298,6 +303,7 @@ impl ::core::fmt::Debug for DTBLCOMBOBOX {
 }
 unsafe impl ::windows::core::Abi for DTBLCOMBOBOX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DTBLCOMBOBOX {
     fn eq(&self, other: &Self) -> bool {
@@ -331,6 +337,7 @@ impl ::core::fmt::Debug for DTBLDDLBX {
 }
 unsafe impl ::windows::core::Abi for DTBLDDLBX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DTBLDDLBX {
     fn eq(&self, other: &Self) -> bool {
@@ -364,6 +371,7 @@ impl ::core::fmt::Debug for DTBLEDIT {
 }
 unsafe impl ::windows::core::Abi for DTBLEDIT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DTBLEDIT {
     fn eq(&self, other: &Self) -> bool {
@@ -395,6 +403,7 @@ impl ::core::fmt::Debug for DTBLGROUPBOX {
 }
 unsafe impl ::windows::core::Abi for DTBLGROUPBOX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DTBLGROUPBOX {
     fn eq(&self, other: &Self) -> bool {
@@ -426,6 +435,7 @@ impl ::core::fmt::Debug for DTBLLABEL {
 }
 unsafe impl ::windows::core::Abi for DTBLLABEL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DTBLLABEL {
     fn eq(&self, other: &Self) -> bool {
@@ -458,6 +468,7 @@ impl ::core::fmt::Debug for DTBLLBX {
 }
 unsafe impl ::windows::core::Abi for DTBLLBX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DTBLLBX {
     fn eq(&self, other: &Self) -> bool {
@@ -489,6 +500,7 @@ impl ::core::fmt::Debug for DTBLMVDDLBX {
 }
 unsafe impl ::windows::core::Abi for DTBLMVDDLBX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DTBLMVDDLBX {
     fn eq(&self, other: &Self) -> bool {
@@ -520,6 +532,7 @@ impl ::core::fmt::Debug for DTBLMVLISTBOX {
 }
 unsafe impl ::windows::core::Abi for DTBLMVLISTBOX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DTBLMVLISTBOX {
     fn eq(&self, other: &Self) -> bool {
@@ -553,6 +566,7 @@ impl ::core::fmt::Debug for DTBLPAGE {
 }
 unsafe impl ::windows::core::Abi for DTBLPAGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DTBLPAGE {
     fn eq(&self, other: &Self) -> bool {
@@ -587,6 +601,7 @@ impl ::core::fmt::Debug for DTBLRADIOBUTTON {
 }
 unsafe impl ::windows::core::Abi for DTBLRADIOBUTTON {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DTBLRADIOBUTTON {
     fn eq(&self, other: &Self) -> bool {
@@ -618,6 +633,7 @@ impl ::core::clone::Clone for DTCTL {
 }
 unsafe impl ::windows::core::Abi for DTCTL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DTCTL {
     fn eq(&self, other: &Self) -> bool {
@@ -655,6 +671,7 @@ impl ::core::clone::Clone for DTCTL_0 {
 }
 unsafe impl ::windows::core::Abi for DTCTL_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DTCTL_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -683,6 +700,7 @@ impl ::core::clone::Clone for DTPAGE {
 }
 unsafe impl ::windows::core::Abi for DTPAGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DTPAGE {
     fn eq(&self, other: &Self) -> bool {
@@ -709,6 +727,7 @@ impl ::core::clone::Clone for DTPAGE_0 {
 }
 unsafe impl ::windows::core::Abi for DTPAGE_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DTPAGE_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -768,6 +787,7 @@ impl ::core::fmt::Debug for ENTRYID {
 }
 unsafe impl ::windows::core::Abi for ENTRYID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ENTRYID {
     fn eq(&self, other: &Self) -> bool {
@@ -802,6 +822,7 @@ impl ::core::fmt::Debug for ERROR_NOTIFICATION {
 }
 unsafe impl ::windows::core::Abi for ERROR_NOTIFICATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ERROR_NOTIFICATION {
     fn eq(&self, other: &Self) -> bool {
@@ -834,6 +855,7 @@ impl ::core::fmt::Debug for EXTENDED_NOTIFICATION {
 }
 unsafe impl ::windows::core::Abi for EXTENDED_NOTIFICATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for EXTENDED_NOTIFICATION {
     fn eq(&self, other: &Self) -> bool {
@@ -1065,6 +1087,7 @@ impl ::core::fmt::Debug for FLATENTRY {
 }
 unsafe impl ::windows::core::Abi for FLATENTRY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for FLATENTRY {
     fn eq(&self, other: &Self) -> bool {
@@ -1097,6 +1120,7 @@ impl ::core::fmt::Debug for FLATENTRYLIST {
 }
 unsafe impl ::windows::core::Abi for FLATENTRYLIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for FLATENTRYLIST {
     fn eq(&self, other: &Self) -> bool {
@@ -1129,6 +1153,7 @@ impl ::core::fmt::Debug for FLATMTSIDLIST {
 }
 unsafe impl ::windows::core::Abi for FLATMTSIDLIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for FLATMTSIDLIST {
     fn eq(&self, other: &Self) -> bool {
@@ -1332,6 +1357,7 @@ impl ::core::default::Default for Gender {
 }
 unsafe impl ::windows::core::Abi for Gender {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for Gender {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1473,6 +1499,11 @@ pub unsafe fn HrThisThreadAdviseSink<'a, Param0: ::windows::core::IntoParam<'a, 
 #[doc = "*Required features: `\"Win32_System_AddressBook\"`*"]
 #[repr(transparent)]
 pub struct IABContainer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IABContainer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IABContainer {
     #[doc = "*Required features: `\"Win32_System_AddressBook\"`*"]
     pub unsafe fn GetLastError(&self, hresult: ::windows::core::HRESULT, ulflags: u32, lppmapierror: *mut *mut MAPIERROR) -> ::windows::core::Result<()> {
@@ -1624,11 +1655,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMAPIContainer> for &'a IABContainer {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IABContainer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IABContainer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1659,6 +1685,11 @@ pub struct IABContainer_Vtbl {
 #[doc = "*Required features: `\"Win32_System_AddressBook\"`*"]
 #[repr(transparent)]
 pub struct IAddrBook(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAddrBook {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAddrBook {
     #[doc = "*Required features: `\"Win32_System_AddressBook\"`*"]
     pub unsafe fn GetLastError(&self, hresult: ::windows::core::HRESULT, ulflags: u32, lppmapierror: *mut *mut MAPIERROR) -> ::windows::core::Result<()> {
@@ -1826,11 +1857,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMAPIProp> for &'a IAddrBook {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAddrBook {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAddrBook {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1893,6 +1919,11 @@ pub struct IAddrBook_Vtbl {
 #[doc = "*Required features: `\"Win32_System_AddressBook\"`*"]
 #[repr(transparent)]
 pub struct IAttach(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAttach {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAttach {
     #[doc = "*Required features: `\"Win32_System_AddressBook\"`*"]
     pub unsafe fn GetLastError(&self, hresult: ::windows::core::HRESULT, ulflags: u32, lppmapierror: *mut *mut MAPIERROR) -> ::windows::core::Result<()> {
@@ -1981,11 +2012,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMAPIProp> for &'a IAttach {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAttach {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAttach {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2009,6 +2035,11 @@ pub struct IAttach_Vtbl {
 #[doc = "*Required features: `\"Win32_System_AddressBook\"`*"]
 #[repr(transparent)]
 pub struct IDistList(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDistList {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDistList {
     #[doc = "*Required features: `\"Win32_System_AddressBook\"`*"]
     pub unsafe fn GetLastError(&self, hresult: ::windows::core::HRESULT, ulflags: u32, lppmapierror: *mut *mut MAPIERROR) -> ::windows::core::Result<()> {
@@ -2160,11 +2191,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMAPIContainer> for &'a IDistList {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDistList {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDistList {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2195,6 +2221,11 @@ pub struct IDistList_Vtbl {
 #[doc = "*Required features: `\"Win32_System_AddressBook\"`*"]
 #[repr(transparent)]
 pub struct IMAPIAdviseSink(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMAPIAdviseSink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMAPIAdviseSink {
     #[doc = "*Required features: `\"Win32_System_AddressBook\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com"))]
@@ -2220,11 +2251,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IMAPIAdvi
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMAPIAdviseSink {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IMAPIAdviseSink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IMAPIAdviseSink {
@@ -2254,6 +2280,11 @@ pub struct IMAPIAdviseSink_Vtbl {
 #[doc = "*Required features: `\"Win32_System_AddressBook\"`*"]
 #[repr(transparent)]
 pub struct IMAPIContainer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMAPIContainer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMAPIContainer {
     #[doc = "*Required features: `\"Win32_System_AddressBook\"`*"]
     pub unsafe fn GetLastError(&self, hresult: ::windows::core::HRESULT, ulflags: u32, lppmapierror: *mut *mut MAPIERROR) -> ::windows::core::Result<()> {
@@ -2366,11 +2397,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMAPIProp> for &'a IMAPIContainer {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMAPIContainer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMAPIContainer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2405,6 +2431,11 @@ pub struct IMAPIContainer_Vtbl {
 #[doc = "*Required features: `\"Win32_System_AddressBook\"`*"]
 #[repr(transparent)]
 pub struct IMAPIControl(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMAPIControl {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMAPIControl {
     #[doc = "*Required features: `\"Win32_System_AddressBook\"`*"]
     pub unsafe fn GetLastError(&self, hresult: ::windows::core::HRESULT, ulflags: u32) -> ::windows::core::Result<*mut MAPIERROR> {
@@ -2440,11 +2471,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMAPI
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMAPIControl {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMAPIControl {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2471,6 +2497,11 @@ pub struct IMAPIControl_Vtbl {
 #[doc = "*Required features: `\"Win32_System_AddressBook\"`*"]
 #[repr(transparent)]
 pub struct IMAPIFolder(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMAPIFolder {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMAPIFolder {
     #[doc = "*Required features: `\"Win32_System_AddressBook\"`*"]
     pub unsafe fn GetLastError(&self, hresult: ::windows::core::HRESULT, ulflags: u32, lppmapierror: *mut *mut MAPIERROR) -> ::windows::core::Result<()> {
@@ -2650,11 +2681,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMAPIContainer> for &'a IMAPIFolder {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMAPIFolder {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMAPIFolder {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2689,6 +2715,11 @@ pub struct IMAPIFolder_Vtbl {
 #[doc = "*Required features: `\"Win32_System_AddressBook\"`*"]
 #[repr(transparent)]
 pub struct IMAPIProgress(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMAPIProgress {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMAPIProgress {
     #[doc = "*Required features: `\"Win32_System_AddressBook\"`*"]
     pub unsafe fn Progress(&self, ulvalue: u32, ulcount: u32, ultotal: u32) -> ::windows::core::Result<()> {
@@ -2731,11 +2762,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMAPI
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMAPIProgress {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMAPIProgress {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2764,6 +2790,11 @@ pub struct IMAPIProgress_Vtbl {
 #[doc = "*Required features: `\"Win32_System_AddressBook\"`*"]
 #[repr(transparent)]
 pub struct IMAPIProp(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMAPIProp {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMAPIProp {
     #[doc = "*Required features: `\"Win32_System_AddressBook\"`*"]
     pub unsafe fn GetLastError(&self, hresult: ::windows::core::HRESULT, ulflags: u32, lppmapierror: *mut *mut MAPIERROR) -> ::windows::core::Result<()> {
@@ -2832,11 +2863,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMAPI
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMAPIProp {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMAPIProp {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2877,6 +2903,11 @@ pub struct IMAPIProp_Vtbl {
 #[doc = "*Required features: `\"Win32_System_AddressBook\"`*"]
 #[repr(transparent)]
 pub struct IMAPIStatus(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMAPIStatus {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMAPIStatus {
     #[doc = "*Required features: `\"Win32_System_AddressBook\"`*"]
     pub unsafe fn GetLastError(&self, hresult: ::windows::core::HRESULT, ulflags: u32, lppmapierror: *mut *mut MAPIERROR) -> ::windows::core::Result<()> {
@@ -2981,11 +3012,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMAPIProp> for &'a IMAPIStatus {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMAPIStatus {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMAPIStatus {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3013,6 +3039,11 @@ pub struct IMAPIStatus_Vtbl {
 #[doc = "*Required features: `\"Win32_System_AddressBook\"`*"]
 #[repr(transparent)]
 pub struct IMAPITable(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMAPITable {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMAPITable {
     #[doc = "*Required features: `\"Win32_System_AddressBook\"`*"]
     pub unsafe fn GetLastError(&self, hresult: ::windows::core::HRESULT, ulflags: u32, lppmapierror: *mut *mut MAPIERROR) -> ::windows::core::Result<()> {
@@ -3129,11 +3160,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IMAPITabl
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMAPITable {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IMAPITable {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IMAPITable {
@@ -3318,6 +3344,11 @@ pub const IMAPI_S_IMAGE_FEATURE_NOT_SUPPORTED: ::windows::core::HRESULT = ::wind
 #[doc = "*Required features: `\"Win32_System_AddressBook\"`*"]
 #[repr(transparent)]
 pub struct IMailUser(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMailUser {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMailUser {
     #[doc = "*Required features: `\"Win32_System_AddressBook\"`*"]
     pub unsafe fn GetLastError(&self, hresult: ::windows::core::HRESULT, ulflags: u32, lppmapierror: *mut *mut MAPIERROR) -> ::windows::core::Result<()> {
@@ -3406,11 +3437,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMAPIProp> for &'a IMailUser {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMailUser {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMailUser {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3434,6 +3460,11 @@ pub struct IMailUser_Vtbl {
 #[doc = "*Required features: `\"Win32_System_AddressBook\"`*"]
 #[repr(transparent)]
 pub struct IMessage(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMessage {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMessage {
     #[doc = "*Required features: `\"Win32_System_AddressBook\"`*"]
     pub unsafe fn GetLastError(&self, hresult: ::windows::core::HRESULT, ulflags: u32, lppmapierror: *mut *mut MAPIERROR) -> ::windows::core::Result<()> {
@@ -3558,11 +3589,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMAPIProp> for &'a IMessage {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMessage {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMessage {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3597,6 +3623,11 @@ pub struct IMessage_Vtbl {
 #[doc = "*Required features: `\"Win32_System_AddressBook\"`*"]
 #[repr(transparent)]
 pub struct IMsgStore(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMsgStore {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMsgStore {
     #[doc = "*Required features: `\"Win32_System_AddressBook\"`*"]
     pub unsafe fn GetLastError(&self, hresult: ::windows::core::HRESULT, ulflags: u32, lppmapierror: *mut *mut MAPIERROR) -> ::windows::core::Result<()> {
@@ -3742,11 +3773,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMAPIProp> for &'a IMsgStore {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMsgStore {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMsgStore {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3786,6 +3812,11 @@ pub struct IMsgStore_Vtbl {
 #[doc = "*Required features: `\"Win32_System_AddressBook\"`*"]
 #[repr(transparent)]
 pub struct IProfSect(::windows::core::IUnknown);
+impl ::core::clone::Clone for IProfSect {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IProfSect {
     #[doc = "*Required features: `\"Win32_System_AddressBook\"`*"]
     pub unsafe fn GetLastError(&self, hresult: ::windows::core::HRESULT, ulflags: u32, lppmapierror: *mut *mut MAPIERROR) -> ::windows::core::Result<()> {
@@ -3874,11 +3905,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMAPIProp> for &'a IProfSect {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IProfSect {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IProfSect {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3902,6 +3928,11 @@ pub struct IProfSect_Vtbl {
 #[doc = "*Required features: `\"Win32_System_AddressBook\"`*"]
 #[repr(transparent)]
 pub struct IPropData(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPropData {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPropData {
     #[doc = "*Required features: `\"Win32_System_AddressBook\"`*"]
     pub unsafe fn GetLastError(&self, hresult: ::windows::core::HRESULT, ulflags: u32, lppmapierror: *mut *mut MAPIERROR) -> ::windows::core::Result<()> {
@@ -4006,11 +4037,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMAPIProp> for &'a IPropData {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPropData {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPropData {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4038,6 +4064,11 @@ pub struct IPropData_Vtbl {
 #[doc = "*Required features: `\"Win32_System_AddressBook\"`*"]
 #[repr(transparent)]
 pub struct IProviderAdmin(::windows::core::IUnknown);
+impl ::core::clone::Clone for IProviderAdmin {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IProviderAdmin {
     #[doc = "*Required features: `\"Win32_System_AddressBook\"`*"]
     pub unsafe fn GetLastError(&self, hresult: ::windows::core::HRESULT, ulflags: u32) -> ::windows::core::Result<*mut MAPIERROR> {
@@ -4085,11 +4116,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IProv
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IProviderAdmin {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IProviderAdmin {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4121,6 +4147,11 @@ pub struct IProviderAdmin_Vtbl {
 #[doc = "*Required features: `\"Win32_System_AddressBook\"`*"]
 #[repr(transparent)]
 pub struct ITableData(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITableData {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITableData {
     #[doc = "*Required features: `\"Win32_System_AddressBook\"`*"]
     pub unsafe fn HrGetView(&self, lpssortorderset: *mut SSortOrderSet, lpfcallerrelease: *mut CALLERRELEASE, ulcallerdata: u32, lppmapitable: *mut ::core::option::Option<IMAPITable>) -> ::windows::core::Result<()> {
@@ -4187,11 +4218,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITabl
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITableData {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITableData {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4248,6 +4274,11 @@ pub struct ITableData_Vtbl {
 #[doc = "*Required features: `\"Win32_System_AddressBook\"`*"]
 #[repr(transparent)]
 pub struct IWABExtInit(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWABExtInit {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWABExtInit {
     #[doc = "*Required features: `\"Win32_System_AddressBook\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -4273,11 +4304,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IWABExtIn
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWABExtInit {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IWABExtInit {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IWABExtInit {
@@ -4307,6 +4333,11 @@ pub struct IWABExtInit_Vtbl {
 #[doc = "*Required features: `\"Win32_System_AddressBook\"`*"]
 #[repr(transparent)]
 pub struct IWABOBJECT_(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWABOBJECT_ {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWABOBJECT_ {
     #[doc = "*Required features: `\"Win32_System_AddressBook\"`*"]
     pub unsafe fn QueryInterface(&self, riid: *const ::windows::core::GUID, ppvobj: *mut *mut ::core::ffi::c_void) -> ::windows::core::Result<()> {
@@ -4378,11 +4409,6 @@ impl IWABOBJECT_ {
     #[cfg(feature = "Win32_Foundation")]
     pub unsafe fn SetMe<'a, Param0: ::windows::core::IntoParam<'a, IAddrBook>, Param2: ::windows::core::IntoParam<'a, SBinary>, Param3: ::windows::core::IntoParam<'a, super::super::Foundation::HWND>>(&self, lpiab: Param0, ulflags: u32, sbeid: Param2, hwnd: Param3) -> ::windows::core::Result<()> {
         (::windows::core::Interface::vtable(self).SetMe)(::core::mem::transmute_copy(self), lpiab.into_param().abi(), ::core::mem::transmute(ulflags), sbeid.into_param().abi(), hwnd.into_param().abi()).ok()
-    }
-}
-impl ::core::clone::Clone for IWABOBJECT_ {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IWABOBJECT_ {
@@ -4475,6 +4501,11 @@ pub type IWABOBJECT_VCardRetrieve_METHOD = ::core::option::Option<unsafe extern 
 #[doc = "*Required features: `\"Win32_System_AddressBook\"`*"]
 #[repr(transparent)]
 pub struct IWABObject(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWABObject {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWABObject {
     #[doc = "*Required features: `\"Win32_System_AddressBook\"`*"]
     pub unsafe fn GetLastError(&self, hresult: ::windows::core::HRESULT, ulflags: u32, lppmapierror: *mut *mut MAPIERROR) -> ::windows::core::Result<()> {
@@ -4554,11 +4585,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IWABObjec
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWABObject {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IWABObject {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IWABObject {
@@ -4710,6 +4736,7 @@ impl ::core::fmt::Debug for MAPIERROR {
 }
 unsafe impl ::windows::core::Abi for MAPIERROR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MAPIERROR {
     fn eq(&self, other: &Self) -> bool {
@@ -4766,6 +4793,7 @@ impl ::core::clone::Clone for MAPINAMEID {
 }
 unsafe impl ::windows::core::Abi for MAPINAMEID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MAPINAMEID {
     fn eq(&self, other: &Self) -> bool {
@@ -4792,6 +4820,7 @@ impl ::core::clone::Clone for MAPINAMEID_0 {
 }
 unsafe impl ::windows::core::Abi for MAPINAMEID_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MAPINAMEID_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -4822,6 +4851,7 @@ impl ::core::fmt::Debug for MAPIUID {
 }
 unsafe impl ::windows::core::Abi for MAPIUID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MAPIUID {
     fn eq(&self, other: &Self) -> bool {
@@ -4891,6 +4921,7 @@ impl ::core::fmt::Debug for MTSID {
 }
 unsafe impl ::windows::core::Abi for MTSID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MTSID {
     fn eq(&self, other: &Self) -> bool {
@@ -4931,6 +4962,7 @@ impl ::core::fmt::Debug for NEWMAIL_NOTIFICATION {
 }
 unsafe impl ::windows::core::Abi for NEWMAIL_NOTIFICATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NEWMAIL_NOTIFICATION {
     fn eq(&self, other: &Self) -> bool {
@@ -4962,6 +4994,7 @@ impl ::core::clone::Clone for NOTIFICATION {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com"))]
 unsafe impl ::windows::core::Abi for NOTIFICATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com"))]
 impl ::core::cmp::PartialEq for NOTIFICATION {
@@ -4999,6 +5032,7 @@ impl ::core::clone::Clone for NOTIFICATION_0 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com"))]
 unsafe impl ::windows::core::Abi for NOTIFICATION_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com"))]
 impl ::core::cmp::PartialEq for NOTIFICATION_0 {
@@ -5033,6 +5067,7 @@ impl ::core::fmt::Debug for NOTIFKEY {
 }
 unsafe impl ::windows::core::Abi for NOTIFKEY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NOTIFKEY {
     fn eq(&self, other: &Self) -> bool {
@@ -5072,6 +5107,7 @@ impl ::core::fmt::Debug for OBJECT_NOTIFICATION {
 }
 unsafe impl ::windows::core::Abi for OBJECT_NOTIFICATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for OBJECT_NOTIFICATION {
     fn eq(&self, other: &Self) -> bool {
@@ -5188,6 +5224,7 @@ impl ::core::fmt::Debug for SAndRestriction {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com"))]
 unsafe impl ::windows::core::Abi for SAndRestriction {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com"))]
 impl ::core::cmp::PartialEq for SAndRestriction {
@@ -5222,6 +5259,7 @@ impl ::core::fmt::Debug for SAppTimeArray {
 }
 unsafe impl ::windows::core::Abi for SAppTimeArray {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SAppTimeArray {
     fn eq(&self, other: &Self) -> bool {
@@ -5253,6 +5291,7 @@ impl ::core::fmt::Debug for SBinary {
 }
 unsafe impl ::windows::core::Abi for SBinary {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SBinary {
     fn eq(&self, other: &Self) -> bool {
@@ -5284,6 +5323,7 @@ impl ::core::fmt::Debug for SBinaryArray {
 }
 unsafe impl ::windows::core::Abi for SBinaryArray {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SBinaryArray {
     fn eq(&self, other: &Self) -> bool {
@@ -5316,6 +5356,7 @@ impl ::core::fmt::Debug for SBitMaskRestriction {
 }
 unsafe impl ::windows::core::Abi for SBitMaskRestriction {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SBitMaskRestriction {
     fn eq(&self, other: &Self) -> bool {
@@ -5353,6 +5394,7 @@ impl ::core::fmt::Debug for SCommentRestriction {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com"))]
 unsafe impl ::windows::core::Abi for SCommentRestriction {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com"))]
 impl ::core::cmp::PartialEq for SCommentRestriction {
@@ -5388,6 +5430,7 @@ impl ::core::fmt::Debug for SComparePropsRestriction {
 }
 unsafe impl ::windows::core::Abi for SComparePropsRestriction {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SComparePropsRestriction {
     fn eq(&self, other: &Self) -> bool {
@@ -5425,6 +5468,7 @@ impl ::core::fmt::Debug for SContentRestriction {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com"))]
 unsafe impl ::windows::core::Abi for SContentRestriction {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com"))]
 impl ::core::cmp::PartialEq for SContentRestriction {
@@ -5464,6 +5508,7 @@ impl ::core::fmt::Debug for SCurrencyArray {
 #[cfg(feature = "Win32_System_Com")]
 unsafe impl ::windows::core::Abi for SCurrencyArray {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for SCurrencyArray {
@@ -5503,6 +5548,7 @@ impl ::core::fmt::Debug for SDateTimeArray {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SDateTimeArray {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for SDateTimeArray {
@@ -5537,6 +5583,7 @@ impl ::core::fmt::Debug for SDoubleArray {
 }
 unsafe impl ::windows::core::Abi for SDoubleArray {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SDoubleArray {
     fn eq(&self, other: &Self) -> bool {
@@ -5573,6 +5620,7 @@ impl ::core::fmt::Debug for SExistRestriction {
 }
 unsafe impl ::windows::core::Abi for SExistRestriction {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SExistRestriction {
     fn eq(&self, other: &Self) -> bool {
@@ -5604,6 +5652,7 @@ impl ::core::fmt::Debug for SGuidArray {
 }
 unsafe impl ::windows::core::Abi for SGuidArray {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SGuidArray {
     fn eq(&self, other: &Self) -> bool {
@@ -5635,6 +5684,7 @@ impl ::core::fmt::Debug for SLPSTRArray {
 }
 unsafe impl ::windows::core::Abi for SLPSTRArray {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SLPSTRArray {
     fn eq(&self, other: &Self) -> bool {
@@ -5666,6 +5716,7 @@ impl ::core::fmt::Debug for SLargeIntegerArray {
 }
 unsafe impl ::windows::core::Abi for SLargeIntegerArray {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SLargeIntegerArray {
     fn eq(&self, other: &Self) -> bool {
@@ -5697,6 +5748,7 @@ impl ::core::fmt::Debug for SLongArray {
 }
 unsafe impl ::windows::core::Abi for SLongArray {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SLongArray {
     fn eq(&self, other: &Self) -> bool {
@@ -5733,6 +5785,7 @@ impl ::core::fmt::Debug for SNotRestriction {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com"))]
 unsafe impl ::windows::core::Abi for SNotRestriction {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com"))]
 impl ::core::cmp::PartialEq for SNotRestriction {
@@ -5772,6 +5825,7 @@ impl ::core::fmt::Debug for SOrRestriction {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com"))]
 unsafe impl ::windows::core::Abi for SOrRestriction {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com"))]
 impl ::core::cmp::PartialEq for SOrRestriction {
@@ -5807,6 +5861,7 @@ impl ::core::fmt::Debug for SPropProblem {
 }
 unsafe impl ::windows::core::Abi for SPropProblem {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SPropProblem {
     fn eq(&self, other: &Self) -> bool {
@@ -5838,6 +5893,7 @@ impl ::core::fmt::Debug for SPropProblemArray {
 }
 unsafe impl ::windows::core::Abi for SPropProblemArray {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SPropProblemArray {
     fn eq(&self, other: &Self) -> bool {
@@ -5869,6 +5925,7 @@ impl ::core::fmt::Debug for SPropTagArray {
 }
 unsafe impl ::windows::core::Abi for SPropTagArray {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SPropTagArray {
     fn eq(&self, other: &Self) -> bool {
@@ -5900,6 +5957,7 @@ impl ::core::clone::Clone for SPropValue {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com"))]
 unsafe impl ::windows::core::Abi for SPropValue {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com"))]
 impl ::core::cmp::PartialEq for SPropValue {
@@ -5940,6 +5998,7 @@ impl ::core::fmt::Debug for SPropertyRestriction {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com"))]
 unsafe impl ::windows::core::Abi for SPropertyRestriction {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com"))]
 impl ::core::cmp::PartialEq for SPropertyRestriction {
@@ -5974,6 +6033,7 @@ impl ::core::fmt::Debug for SRealArray {
 }
 unsafe impl ::windows::core::Abi for SRealArray {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SRealArray {
     fn eq(&self, other: &Self) -> bool {
@@ -6004,6 +6064,7 @@ impl ::core::clone::Clone for SRestriction {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com"))]
 unsafe impl ::windows::core::Abi for SRestriction {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com"))]
 impl ::core::cmp::PartialEq for SRestriction {
@@ -6046,6 +6107,7 @@ impl ::core::clone::Clone for SRestriction_0 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com"))]
 unsafe impl ::windows::core::Abi for SRestriction_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com"))]
 impl ::core::cmp::PartialEq for SRestriction_0 {
@@ -6086,6 +6148,7 @@ impl ::core::fmt::Debug for SRow {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com"))]
 unsafe impl ::windows::core::Abi for SRow {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com"))]
 impl ::core::cmp::PartialEq for SRow {
@@ -6125,6 +6188,7 @@ impl ::core::fmt::Debug for SRowSet {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com"))]
 unsafe impl ::windows::core::Abi for SRowSet {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com"))]
 impl ::core::cmp::PartialEq for SRowSet {
@@ -6159,6 +6223,7 @@ impl ::core::fmt::Debug for SShortArray {
 }
 unsafe impl ::windows::core::Abi for SShortArray {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SShortArray {
     fn eq(&self, other: &Self) -> bool {
@@ -6191,6 +6256,7 @@ impl ::core::fmt::Debug for SSizeRestriction {
 }
 unsafe impl ::windows::core::Abi for SSizeRestriction {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SSizeRestriction {
     fn eq(&self, other: &Self) -> bool {
@@ -6222,6 +6288,7 @@ impl ::core::fmt::Debug for SSortOrder {
 }
 unsafe impl ::windows::core::Abi for SSortOrder {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SSortOrder {
     fn eq(&self, other: &Self) -> bool {
@@ -6255,6 +6322,7 @@ impl ::core::fmt::Debug for SSortOrderSet {
 }
 unsafe impl ::windows::core::Abi for SSortOrderSet {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SSortOrderSet {
     fn eq(&self, other: &Self) -> bool {
@@ -6291,6 +6359,7 @@ impl ::core::fmt::Debug for SSubRestriction {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com"))]
 unsafe impl ::windows::core::Abi for SSubRestriction {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com"))]
 impl ::core::cmp::PartialEq for SSubRestriction {
@@ -6332,6 +6401,7 @@ impl ::core::fmt::Debug for STATUS_OBJECT_NOTIFICATION {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com"))]
 unsafe impl ::windows::core::Abi for STATUS_OBJECT_NOTIFICATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com"))]
 impl ::core::cmp::PartialEq for STATUS_OBJECT_NOTIFICATION {
@@ -6366,6 +6436,7 @@ impl ::core::fmt::Debug for SWStringArray {
 }
 unsafe impl ::windows::core::Abi for SWStringArray {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SWStringArray {
     fn eq(&self, other: &Self) -> bool {
@@ -6619,6 +6690,7 @@ impl ::core::clone::Clone for TABLE_NOTIFICATION {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com"))]
 unsafe impl ::windows::core::Abi for TABLE_NOTIFICATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com"))]
 impl ::core::cmp::PartialEq for TABLE_NOTIFICATION {
@@ -6750,6 +6822,7 @@ impl ::core::fmt::Debug for WABEXTDISPLAY {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WABEXTDISPLAY {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WABEXTDISPLAY {
@@ -6790,6 +6863,7 @@ impl ::core::fmt::Debug for WABIMPORTPARAM {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WABIMPORTPARAM {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WABIMPORTPARAM {
@@ -6854,6 +6928,7 @@ impl ::core::fmt::Debug for WAB_PARAM {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WAB_PARAM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WAB_PARAM {
@@ -6951,6 +7026,7 @@ impl ::core::clone::Clone for _PV {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com"))]
 unsafe impl ::windows::core::Abi for _PV {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com"))]
 impl ::core::cmp::PartialEq for _PV {
@@ -6987,6 +7063,7 @@ impl ::core::fmt::Debug for _flaglist {
 }
 unsafe impl ::windows::core::Abi for _flaglist {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for _flaglist {
     fn eq(&self, other: &Self) -> bool {

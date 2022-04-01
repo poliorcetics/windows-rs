@@ -20,6 +20,7 @@ impl ::core::default::Default for ICS_TARGETTYPE {
 }
 unsafe impl ::windows::core::Abi for ICS_TARGETTYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ICS_TARGETTYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -30,6 +31,12 @@ impl ::core::fmt::Debug for ICS_TARGETTYPE {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IDynamicPortMapping(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IDynamicPortMapping {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IDynamicPortMapping {
     #[doc = "*Required features: `\"Win32_NetworkManagement_WindowsFirewall\"`, `\"Win32_Foundation\"`*"]
@@ -155,12 +162,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IDynamicPortMapping {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IDynamicPortMapping {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -224,6 +225,12 @@ pub struct IDynamicPortMapping_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IDynamicPortMappingCollection(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IDynamicPortMappingCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IDynamicPortMappingCollection {
     #[doc = "*Required features: `\"Win32_NetworkManagement_WindowsFirewall\"`*"]
@@ -303,12 +310,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IDynamicPortMappingCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IDynamicPortMappingCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -350,6 +351,11 @@ pub struct IDynamicPortMappingCollection_Vtbl {
 #[doc = "*Required features: `\"Win32_NetworkManagement_WindowsFirewall\"`*"]
 #[repr(transparent)]
 pub struct IEnumNetConnection(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnumNetConnection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnumNetConnection {
     #[doc = "*Required features: `\"Win32_NetworkManagement_WindowsFirewall\"`*"]
     pub unsafe fn Next(&self, rgelt: &mut [::core::option::Option<INetConnection>], pceltfetched: *mut u32) -> ::windows::core::Result<()> {
@@ -389,11 +395,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnum
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnumNetConnection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnumNetConnection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -421,6 +422,11 @@ pub struct IEnumNetConnection_Vtbl {
 #[doc = "*Required features: `\"Win32_NetworkManagement_WindowsFirewall\"`*"]
 #[repr(transparent)]
 pub struct IEnumNetSharingEveryConnection(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnumNetSharingEveryConnection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnumNetSharingEveryConnection {
     #[doc = "*Required features: `\"Win32_NetworkManagement_WindowsFirewall\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com", feature = "Win32_System_Ole"))]
@@ -461,11 +467,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnum
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnumNetSharingEveryConnection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnumNetSharingEveryConnection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -496,6 +497,11 @@ pub struct IEnumNetSharingEveryConnection_Vtbl {
 #[doc = "*Required features: `\"Win32_NetworkManagement_WindowsFirewall\"`*"]
 #[repr(transparent)]
 pub struct IEnumNetSharingPortMapping(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnumNetSharingPortMapping {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnumNetSharingPortMapping {
     #[doc = "*Required features: `\"Win32_NetworkManagement_WindowsFirewall\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com", feature = "Win32_System_Ole"))]
@@ -536,11 +542,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnum
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnumNetSharingPortMapping {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnumNetSharingPortMapping {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -571,6 +572,11 @@ pub struct IEnumNetSharingPortMapping_Vtbl {
 #[doc = "*Required features: `\"Win32_NetworkManagement_WindowsFirewall\"`*"]
 #[repr(transparent)]
 pub struct IEnumNetSharingPrivateConnection(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnumNetSharingPrivateConnection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnumNetSharingPrivateConnection {
     #[doc = "*Required features: `\"Win32_NetworkManagement_WindowsFirewall\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com", feature = "Win32_System_Ole"))]
@@ -611,11 +617,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnum
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnumNetSharingPrivateConnection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnumNetSharingPrivateConnection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -646,6 +647,11 @@ pub struct IEnumNetSharingPrivateConnection_Vtbl {
 #[doc = "*Required features: `\"Win32_NetworkManagement_WindowsFirewall\"`*"]
 #[repr(transparent)]
 pub struct IEnumNetSharingPublicConnection(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnumNetSharingPublicConnection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnumNetSharingPublicConnection {
     #[doc = "*Required features: `\"Win32_NetworkManagement_WindowsFirewall\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com", feature = "Win32_System_Ole"))]
@@ -686,11 +692,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnum
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnumNetSharingPublicConnection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnumNetSharingPublicConnection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -722,6 +723,12 @@ pub struct IEnumNetSharingPublicConnection_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct INATEventManager(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for INATEventManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl INATEventManager {
     #[doc = "*Required features: `\"Win32_NetworkManagement_WindowsFirewall\"`*"]
@@ -782,12 +789,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for INATEventManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for INATEventManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -817,6 +818,11 @@ pub struct INATEventManager_Vtbl {
 #[doc = "*Required features: `\"Win32_NetworkManagement_WindowsFirewall\"`*"]
 #[repr(transparent)]
 pub struct INATExternalIPAddressCallback(::windows::core::IUnknown);
+impl ::core::clone::Clone for INATExternalIPAddressCallback {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl INATExternalIPAddressCallback {
     #[doc = "*Required features: `\"Win32_NetworkManagement_WindowsFirewall\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -842,11 +848,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for INATExter
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a INATExternalIPAddressCallback {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for INATExternalIPAddressCallback {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for INATExternalIPAddressCallback {
@@ -876,6 +877,11 @@ pub struct INATExternalIPAddressCallback_Vtbl {
 #[doc = "*Required features: `\"Win32_NetworkManagement_WindowsFirewall\"`*"]
 #[repr(transparent)]
 pub struct INATNumberOfEntriesCallback(::windows::core::IUnknown);
+impl ::core::clone::Clone for INATNumberOfEntriesCallback {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl INATNumberOfEntriesCallback {
     #[doc = "*Required features: `\"Win32_NetworkManagement_WindowsFirewall\"`*"]
     pub unsafe fn NewNumberOfEntries(&self, lnewnumberofentries: i32) -> ::windows::core::Result<()> {
@@ -900,11 +906,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for INATNumbe
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a INATNumberOfEntriesCallback {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for INATNumberOfEntriesCallback {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for INATNumberOfEntriesCallback {
@@ -947,6 +948,7 @@ impl ::core::fmt::Debug for INET_FIREWALL_AC_BINARIES {
 }
 unsafe impl ::windows::core::Abi for INET_FIREWALL_AC_BINARIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for INET_FIREWALL_AC_BINARIES {
     fn eq(&self, other: &Self) -> bool {
@@ -983,6 +985,7 @@ impl ::core::fmt::Debug for INET_FIREWALL_AC_CAPABILITIES {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security"))]
 unsafe impl ::windows::core::Abi for INET_FIREWALL_AC_CAPABILITIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security"))]
 impl ::core::cmp::PartialEq for INET_FIREWALL_AC_CAPABILITIES {
@@ -1020,6 +1023,7 @@ impl ::core::clone::Clone for INET_FIREWALL_AC_CHANGE {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security"))]
 unsafe impl ::windows::core::Abi for INET_FIREWALL_AC_CHANGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security"))]
 impl ::core::cmp::PartialEq for INET_FIREWALL_AC_CHANGE {
@@ -1053,6 +1057,7 @@ impl ::core::clone::Clone for INET_FIREWALL_AC_CHANGE_0 {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security"))]
 unsafe impl ::windows::core::Abi for INET_FIREWALL_AC_CHANGE_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security"))]
 impl ::core::cmp::PartialEq for INET_FIREWALL_AC_CHANGE_0 {
@@ -1093,6 +1098,7 @@ impl ::core::default::Default for INET_FIREWALL_AC_CHANGE_TYPE {
 }
 unsafe impl ::windows::core::Abi for INET_FIREWALL_AC_CHANGE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for INET_FIREWALL_AC_CHANGE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1124,6 +1130,7 @@ impl ::core::default::Default for INET_FIREWALL_AC_CREATION_TYPE {
 }
 unsafe impl ::windows::core::Abi for INET_FIREWALL_AC_CREATION_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for INET_FIREWALL_AC_CREATION_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1161,6 +1168,7 @@ impl ::core::fmt::Debug for INET_FIREWALL_APP_CONTAINER {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security"))]
 unsafe impl ::windows::core::Abi for INET_FIREWALL_APP_CONTAINER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security"))]
 impl ::core::cmp::PartialEq for INET_FIREWALL_APP_CONTAINER {
@@ -1179,6 +1187,11 @@ impl ::core::default::Default for INET_FIREWALL_APP_CONTAINER {
 #[doc = "*Required features: `\"Win32_NetworkManagement_WindowsFirewall\"`*"]
 #[repr(transparent)]
 pub struct INetConnection(::windows::core::IUnknown);
+impl ::core::clone::Clone for INetConnection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl INetConnection {
     #[doc = "*Required features: `\"Win32_NetworkManagement_WindowsFirewall\"`*"]
     pub unsafe fn Connect(&self) -> ::windows::core::Result<()> {
@@ -1232,11 +1245,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a INetC
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for INetConnection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for INetConnection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1267,6 +1275,11 @@ pub struct INetConnection_Vtbl {
 #[doc = "*Required features: `\"Win32_NetworkManagement_WindowsFirewall\"`*"]
 #[repr(transparent)]
 pub struct INetConnectionConnectUi(::windows::core::IUnknown);
+impl ::core::clone::Clone for INetConnectionConnectUi {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl INetConnectionConnectUi {
     #[doc = "*Required features: `\"Win32_NetworkManagement_WindowsFirewall\"`*"]
     pub unsafe fn SetConnection<'a, Param0: ::windows::core::IntoParam<'a, INetConnection>>(&self, pcon: Param0) -> ::windows::core::Result<()> {
@@ -1303,11 +1316,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a INetC
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for INetConnectionConnectUi {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for INetConnectionConnectUi {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1340,6 +1348,11 @@ pub struct INetConnectionConnectUi_Vtbl {
 #[doc = "*Required features: `\"Win32_NetworkManagement_WindowsFirewall\"`*"]
 #[repr(transparent)]
 pub struct INetConnectionManager(::windows::core::IUnknown);
+impl ::core::clone::Clone for INetConnectionManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl INetConnectionManager {
     #[doc = "*Required features: `\"Win32_NetworkManagement_WindowsFirewall\"`*"]
     pub unsafe fn EnumConnections(&self, flags: NETCONMGR_ENUM_FLAGS) -> ::windows::core::Result<IEnumNetConnection> {
@@ -1367,11 +1380,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a INetC
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for INetConnectionManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for INetConnectionManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1397,6 +1405,12 @@ pub struct INetConnectionManager_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct INetConnectionProps(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for INetConnectionProps {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl INetConnectionProps {
     #[doc = "*Required features: `\"Win32_NetworkManagement_WindowsFirewall\"`, `\"Win32_Foundation\"`*"]
@@ -1482,12 +1496,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for INetConnectionProps {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for INetConnectionProps {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1531,6 +1539,12 @@ pub struct INetConnectionProps_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct INetFwAuthorizedApplication(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for INetFwAuthorizedApplication {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl INetFwAuthorizedApplication {
     #[doc = "*Required features: `\"Win32_NetworkManagement_WindowsFirewall\"`, `\"Win32_Foundation\"`*"]
@@ -1643,12 +1657,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for INetFwAuthorizedApplication {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for INetFwAuthorizedApplication {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1707,6 +1715,12 @@ pub struct INetFwAuthorizedApplication_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct INetFwAuthorizedApplications(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for INetFwAuthorizedApplications {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl INetFwAuthorizedApplications {
     #[doc = "*Required features: `\"Win32_NetworkManagement_WindowsFirewall\"`*"]
@@ -1785,12 +1799,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for INetFwAuthorizedApplications {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for INetFwAuthorizedApplications {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1833,6 +1841,12 @@ pub struct INetFwAuthorizedApplications_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct INetFwIcmpSettings(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for INetFwIcmpSettings {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl INetFwIcmpSettings {
     #[doc = "*Required features: `\"Win32_NetworkManagement_WindowsFirewall\"`*"]
@@ -1975,12 +1989,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for INetFwIcmpSettings {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for INetFwIcmpSettings {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2029,6 +2037,12 @@ pub struct INetFwIcmpSettings_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct INetFwMgr(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for INetFwMgr {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl INetFwMgr {
     #[doc = "*Required features: `\"Win32_NetworkManagement_WindowsFirewall\"`, `\"Win32_System_Com\"`*"]
@@ -2106,12 +2120,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for INetFwMgr {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for INetFwMgr {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2154,6 +2162,12 @@ pub struct INetFwMgr_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct INetFwOpenPort(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for INetFwOpenPort {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl INetFwOpenPort {
     #[doc = "*Required features: `\"Win32_NetworkManagement_WindowsFirewall\"`, `\"Win32_Foundation\"`*"]
@@ -2278,12 +2292,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for INetFwOpenPort {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for INetFwOpenPort {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2339,6 +2347,12 @@ pub struct INetFwOpenPort_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct INetFwOpenPorts(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for INetFwOpenPorts {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl INetFwOpenPorts {
     #[doc = "*Required features: `\"Win32_NetworkManagement_WindowsFirewall\"`*"]
@@ -2416,12 +2430,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for INetFwOpenPorts {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for INetFwOpenPorts {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2461,6 +2469,12 @@ pub struct INetFwOpenPorts_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct INetFwPolicy(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for INetFwPolicy {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl INetFwPolicy {
     #[doc = "*Required features: `\"Win32_NetworkManagement_WindowsFirewall\"`, `\"Win32_System_Com\"`*"]
@@ -2525,12 +2539,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for INetFwPolicy {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for INetFwPolicy {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2567,6 +2575,12 @@ pub struct INetFwPolicy_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct INetFwPolicy2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for INetFwPolicy2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl INetFwPolicy2 {
     #[doc = "*Required features: `\"Win32_NetworkManagement_WindowsFirewall\"`*"]
@@ -2727,12 +2741,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for INetFwPolicy2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for INetFwPolicy2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2804,6 +2812,12 @@ pub struct INetFwPolicy2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct INetFwProduct(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for INetFwProduct {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl INetFwProduct {
     #[doc = "*Required features: `\"Win32_NetworkManagement_WindowsFirewall\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
@@ -2884,12 +2898,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for INetFwProduct {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for INetFwProduct {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2938,6 +2946,12 @@ pub struct INetFwProduct_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct INetFwProducts(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for INetFwProducts {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl INetFwProducts {
     #[doc = "*Required features: `\"Win32_NetworkManagement_WindowsFirewall\"`*"]
@@ -3012,12 +3026,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for INetFwProducts {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for INetFwProducts {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3056,6 +3064,12 @@ pub struct INetFwProducts_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct INetFwProfile(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for INetFwProfile {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl INetFwProfile {
     #[doc = "*Required features: `\"Win32_NetworkManagement_WindowsFirewall\"`*"]
@@ -3179,12 +3193,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for INetFwProfile {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for INetFwProfile {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3242,6 +3250,12 @@ pub struct INetFwProfile_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct INetFwRemoteAdminSettings(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for INetFwRemoteAdminSettings {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl INetFwRemoteAdminSettings {
     #[doc = "*Required features: `\"Win32_NetworkManagement_WindowsFirewall\"`*"]
@@ -3332,12 +3346,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for INetFwRemoteAdminSettings {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for INetFwRemoteAdminSettings {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3380,6 +3388,12 @@ pub struct INetFwRemoteAdminSettings_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct INetFwRule(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for INetFwRule {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl INetFwRule {
     #[doc = "*Required features: `\"Win32_NetworkManagement_WindowsFirewall\"`, `\"Win32_Foundation\"`*"]
@@ -3618,12 +3632,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for INetFwRule {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for INetFwRule {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3760,6 +3768,12 @@ pub struct INetFwRule_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct INetFwRule2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for INetFwRule2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl INetFwRule2 {
     #[doc = "*Required features: `\"Win32_NetworkManagement_WindowsFirewall\"`, `\"Win32_Foundation\"`*"]
@@ -4031,12 +4045,6 @@ impl<'a> ::windows::core::IntoParam<'a, INetFwRule> for &'a INetFwRule2 {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for INetFwRule2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for INetFwRule2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4067,6 +4075,12 @@ pub struct INetFwRule2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct INetFwRule3(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for INetFwRule3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl INetFwRule3 {
     #[doc = "*Required features: `\"Win32_NetworkManagement_WindowsFirewall\"`, `\"Win32_Foundation\"`*"]
@@ -4426,12 +4440,6 @@ impl<'a> ::windows::core::IntoParam<'a, INetFwRule2> for &'a INetFwRule3 {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for INetFwRule3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for INetFwRule3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4502,6 +4510,12 @@ pub struct INetFwRule3_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct INetFwRules(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for INetFwRules {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl INetFwRules {
     #[doc = "*Required features: `\"Win32_NetworkManagement_WindowsFirewall\"`*"]
@@ -4580,12 +4594,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for INetFwRules {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for INetFwRules {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4628,6 +4636,12 @@ pub struct INetFwRules_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct INetFwService(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for INetFwService {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl INetFwService {
     #[doc = "*Required features: `\"Win32_NetworkManagement_WindowsFirewall\"`, `\"Win32_Foundation\"`*"]
@@ -4740,12 +4754,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for INetFwService {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for INetFwService {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4798,6 +4806,12 @@ pub struct INetFwService_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct INetFwServiceRestriction(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for INetFwServiceRestriction {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl INetFwServiceRestriction {
     #[doc = "*Required features: `\"Win32_NetworkManagement_WindowsFirewall\"`, `\"Win32_Foundation\"`*"]
@@ -4867,12 +4881,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for INetFwServiceRestriction {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for INetFwServiceRestriction {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4913,6 +4921,12 @@ pub struct INetFwServiceRestriction_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct INetFwServices(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for INetFwServices {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl INetFwServices {
     #[doc = "*Required features: `\"Win32_NetworkManagement_WindowsFirewall\"`*"]
@@ -4981,12 +4995,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for INetFwServices {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for INetFwServices {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5021,6 +5029,12 @@ pub struct INetFwServices_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct INetSharingConfiguration(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for INetSharingConfiguration {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl INetSharingConfiguration {
     #[doc = "*Required features: `\"Win32_NetworkManagement_WindowsFirewall\"`*"]
@@ -5121,12 +5135,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for INetSharingConfiguration {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for INetSharingConfiguration {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5174,6 +5182,12 @@ pub struct INetSharingConfiguration_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct INetSharingEveryConnectionCollection(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for INetSharingEveryConnectionCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl INetSharingEveryConnectionCollection {
     #[doc = "*Required features: `\"Win32_NetworkManagement_WindowsFirewall\"`*"]
@@ -5236,12 +5250,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for INetSharingEveryConnectionCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for INetSharingEveryConnectionCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5272,6 +5280,12 @@ pub struct INetSharingEveryConnectionCollection_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct INetSharingManager(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for INetSharingManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl INetSharingManager {
     #[doc = "*Required features: `\"Win32_NetworkManagement_WindowsFirewall\"`*"]
@@ -5359,12 +5373,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for INetSharingManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for INetSharingManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5414,6 +5422,12 @@ pub struct INetSharingManager_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct INetSharingPortMapping(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for INetSharingPortMapping {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl INetSharingPortMapping {
     #[doc = "*Required features: `\"Win32_NetworkManagement_WindowsFirewall\"`*"]
@@ -5484,12 +5498,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for INetSharingPortMapping {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for INetSharingPortMapping {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5525,6 +5533,12 @@ pub struct INetSharingPortMapping_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct INetSharingPortMappingCollection(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for INetSharingPortMappingCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl INetSharingPortMappingCollection {
     #[doc = "*Required features: `\"Win32_NetworkManagement_WindowsFirewall\"`*"]
@@ -5587,12 +5601,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for INetSharingPortMappingCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for INetSharingPortMappingCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5623,6 +5631,12 @@ pub struct INetSharingPortMappingCollection_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct INetSharingPortMappingProps(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for INetSharingPortMappingProps {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl INetSharingPortMappingProps {
     #[doc = "*Required features: `\"Win32_NetworkManagement_WindowsFirewall\"`, `\"Win32_Foundation\"`*"]
@@ -5718,12 +5732,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for INetSharingPortMappingProps {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for INetSharingPortMappingProps {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5769,6 +5777,12 @@ pub struct INetSharingPortMappingProps_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct INetSharingPrivateConnectionCollection(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for INetSharingPrivateConnectionCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl INetSharingPrivateConnectionCollection {
     #[doc = "*Required features: `\"Win32_NetworkManagement_WindowsFirewall\"`*"]
@@ -5831,12 +5845,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for INetSharingPrivateConnectionCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for INetSharingPrivateConnectionCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5867,6 +5875,12 @@ pub struct INetSharingPrivateConnectionCollection_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct INetSharingPublicConnectionCollection(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for INetSharingPublicConnectionCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl INetSharingPublicConnectionCollection {
     #[doc = "*Required features: `\"Win32_NetworkManagement_WindowsFirewall\"`*"]
@@ -5929,12 +5943,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for INetSharingPublicConnectionCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for INetSharingPublicConnectionCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5965,6 +5973,12 @@ pub struct INetSharingPublicConnectionCollection_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IStaticPortMapping(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IStaticPortMapping {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IStaticPortMapping {
     #[doc = "*Required features: `\"Win32_NetworkManagement_WindowsFirewall\"`, `\"Win32_Foundation\"`*"]
@@ -6074,12 +6088,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IStaticPortMapping {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IStaticPortMapping {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6137,6 +6145,12 @@ pub struct IStaticPortMapping_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IStaticPortMappingCollection(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IStaticPortMappingCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IStaticPortMappingCollection {
     #[doc = "*Required features: `\"Win32_NetworkManagement_WindowsFirewall\"`*"]
@@ -6216,12 +6230,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IStaticPortMappingCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IStaticPortMappingCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6264,6 +6272,12 @@ pub struct IStaticPortMappingCollection_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IUPnPNAT(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IUPnPNAT {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IUPnPNAT {
     #[doc = "*Required features: `\"Win32_NetworkManagement_WindowsFirewall\"`, `\"Win32_System_Com\"`*"]
@@ -6334,12 +6348,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IUPnPNAT {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IUPnPNAT {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6397,6 +6405,7 @@ impl ::core::default::Default for NETCONMGR_ENUM_FLAGS {
 }
 unsafe impl ::windows::core::Abi for NETCONMGR_ENUM_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NETCONMGR_ENUM_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6426,6 +6435,7 @@ impl ::core::default::Default for NETCONUI_CONNECT_FLAGS {
 }
 unsafe impl ::windows::core::Abi for NETCONUI_CONNECT_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NETCONUI_CONNECT_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6491,6 +6501,7 @@ impl ::core::default::Default for NETCON_CHARACTERISTIC_FLAGS {
 }
 unsafe impl ::windows::core::Abi for NETCON_CHARACTERISTIC_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NETCON_CHARACTERISTIC_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6536,6 +6547,7 @@ impl ::core::default::Default for NETCON_MEDIATYPE {
 }
 unsafe impl ::windows::core::Abi for NETCON_MEDIATYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NETCON_MEDIATYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6567,6 +6579,7 @@ impl ::core::fmt::Debug for NETCON_PROPERTIES {
 }
 unsafe impl ::windows::core::Abi for NETCON_PROPERTIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NETCON_PROPERTIES {
     fn eq(&self, other: &Self) -> bool {
@@ -6628,6 +6641,7 @@ impl ::core::default::Default for NETCON_STATUS {
 }
 unsafe impl ::windows::core::Abi for NETCON_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NETCON_STATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6665,6 +6679,7 @@ impl ::core::default::Default for NETCON_TYPE {
 }
 unsafe impl ::windows::core::Abi for NETCON_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NETCON_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6698,6 +6713,7 @@ impl ::core::default::Default for NETISO_ERROR_TYPE {
 }
 unsafe impl ::windows::core::Abi for NETISO_ERROR_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NETISO_ERROR_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6725,6 +6741,7 @@ impl ::core::default::Default for NETISO_FLAG {
 }
 unsafe impl ::windows::core::Abi for NETISO_FLAG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NETISO_FLAG {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6758,6 +6775,7 @@ impl ::core::default::Default for NET_FW_ACTION {
 }
 unsafe impl ::windows::core::Abi for NET_FW_ACTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NET_FW_ACTION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6791,6 +6809,7 @@ impl ::core::default::Default for NET_FW_AUTHENTICATE_TYPE {
 }
 unsafe impl ::windows::core::Abi for NET_FW_AUTHENTICATE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NET_FW_AUTHENTICATE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6822,6 +6841,7 @@ impl ::core::default::Default for NET_FW_EDGE_TRAVERSAL_TYPE {
 }
 unsafe impl ::windows::core::Abi for NET_FW_EDGE_TRAVERSAL_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NET_FW_EDGE_TRAVERSAL_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6851,6 +6871,7 @@ impl ::core::default::Default for NET_FW_IP_PROTOCOL {
 }
 unsafe impl ::windows::core::Abi for NET_FW_IP_PROTOCOL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NET_FW_IP_PROTOCOL {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6882,6 +6903,7 @@ impl ::core::default::Default for NET_FW_IP_VERSION {
 }
 unsafe impl ::windows::core::Abi for NET_FW_IP_VERSION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NET_FW_IP_VERSION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6911,6 +6933,7 @@ impl ::core::default::Default for NET_FW_MODIFY_STATE {
 }
 unsafe impl ::windows::core::Abi for NET_FW_MODIFY_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NET_FW_MODIFY_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6942,6 +6965,7 @@ impl ::core::default::Default for NET_FW_POLICY_TYPE {
 }
 unsafe impl ::windows::core::Abi for NET_FW_POLICY_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NET_FW_POLICY_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6973,6 +6997,7 @@ impl ::core::default::Default for NET_FW_PROFILE_TYPE {
 }
 unsafe impl ::windows::core::Abi for NET_FW_PROFILE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NET_FW_PROFILE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7004,6 +7029,7 @@ impl ::core::default::Default for NET_FW_PROFILE_TYPE2 {
 }
 unsafe impl ::windows::core::Abi for NET_FW_PROFILE_TYPE2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NET_FW_PROFILE_TYPE2 {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7037,6 +7063,7 @@ impl ::core::default::Default for NET_FW_RULE_CATEGORY {
 }
 unsafe impl ::windows::core::Abi for NET_FW_RULE_CATEGORY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NET_FW_RULE_CATEGORY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7066,6 +7093,7 @@ impl ::core::default::Default for NET_FW_RULE_DIRECTION {
 }
 unsafe impl ::windows::core::Abi for NET_FW_RULE_DIRECTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NET_FW_RULE_DIRECTION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7097,6 +7125,7 @@ impl ::core::default::Default for NET_FW_SCOPE {
 }
 unsafe impl ::windows::core::Abi for NET_FW_SCOPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NET_FW_SCOPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7130,6 +7159,7 @@ impl ::core::default::Default for NET_FW_SERVICE_TYPE {
 }
 unsafe impl ::windows::core::Abi for NET_FW_SERVICE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NET_FW_SERVICE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7302,6 +7332,7 @@ impl ::core::default::Default for SHARINGCONNECTIONTYPE {
 }
 unsafe impl ::windows::core::Abi for SHARINGCONNECTIONTYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SHARINGCONNECTIONTYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7329,6 +7360,7 @@ impl ::core::default::Default for SHARINGCONNECTION_ENUM_FLAGS {
 }
 unsafe impl ::windows::core::Abi for SHARINGCONNECTION_ENUM_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SHARINGCONNECTION_ENUM_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7359,6 +7391,7 @@ impl ::core::fmt::Debug for _tag_FW_DYNAMIC_KEYWORD_ADDRESS0 {
 }
 unsafe impl ::windows::core::Abi for _tag_FW_DYNAMIC_KEYWORD_ADDRESS0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for _tag_FW_DYNAMIC_KEYWORD_ADDRESS0 {
     fn eq(&self, other: &Self) -> bool {
@@ -7392,6 +7425,7 @@ impl ::core::fmt::Debug for _tag_FW_DYNAMIC_KEYWORD_ADDRESS_DATA0 {
 }
 unsafe impl ::windows::core::Abi for _tag_FW_DYNAMIC_KEYWORD_ADDRESS_DATA0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for _tag_FW_DYNAMIC_KEYWORD_ADDRESS_DATA0 {
     fn eq(&self, other: &Self) -> bool {
@@ -7427,6 +7461,7 @@ impl ::core::default::Default for _tag_FW_DYNAMIC_KEYWORD_ADDRESS_ENUM_FLAGS {
 }
 unsafe impl ::windows::core::Abi for _tag_FW_DYNAMIC_KEYWORD_ADDRESS_ENUM_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for _tag_FW_DYNAMIC_KEYWORD_ADDRESS_ENUM_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7452,6 +7487,7 @@ impl ::core::default::Default for _tag_FW_DYNAMIC_KEYWORD_ADDRESS_FLAGS {
 }
 unsafe impl ::windows::core::Abi for _tag_FW_DYNAMIC_KEYWORD_ADDRESS_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for _tag_FW_DYNAMIC_KEYWORD_ADDRESS_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7481,6 +7517,7 @@ impl ::core::default::Default for _tag_FW_DYNAMIC_KEYWORD_ORIGIN_TYPE {
 }
 unsafe impl ::windows::core::Abi for _tag_FW_DYNAMIC_KEYWORD_ORIGIN_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for _tag_FW_DYNAMIC_KEYWORD_ORIGIN_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

@@ -21,6 +21,11 @@ impl ::windows::core::RuntimeName for ClassicAppManager {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IClassicAppManagerStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IClassicAppManagerStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IClassicAppManagerStatics {
     type Vtable = IClassicAppManagerStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe2fad668_882c_4f33_b035_0df7b90d67e6);
@@ -34,6 +39,11 @@ pub struct IClassicAppManagerStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IInstalledClassicAppInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInstalledClassicAppInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IInstalledClassicAppInfo {
     type Vtable = IInstalledClassicAppInfo_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x0a7d3da3_65d0_4086_80d6_0610d760207d);
@@ -66,11 +76,6 @@ impl InstalledClassicAppInfo {
         }
     }
 }
-impl ::core::clone::Clone for InstalledClassicAppInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for InstalledClassicAppInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -84,7 +89,6 @@ impl ::core::fmt::Debug for InstalledClassicAppInfo {
 }
 unsafe impl ::windows::core::RuntimeType for InstalledClassicAppInfo {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Management.Deployment.Preview.InstalledClassicAppInfo;{0a7d3da3-65d0-4086-80d6-0610d760207d})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

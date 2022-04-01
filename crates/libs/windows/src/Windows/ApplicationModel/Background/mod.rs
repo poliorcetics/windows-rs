@@ -50,11 +50,6 @@ impl ActivitySensorTrigger {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for ActivitySensorTrigger {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ActivitySensorTrigger {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -68,7 +63,6 @@ impl ::core::fmt::Debug for ActivitySensorTrigger {
 }
 unsafe impl ::windows::core::RuntimeType for ActivitySensorTrigger {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Background.ActivitySensorTrigger;{d0dd4342-e37b-4823-a5fe-6b31dfefdeb0})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -167,6 +161,7 @@ impl ::core::default::Default for AlarmAccessStatus {
 }
 unsafe impl ::windows::core::Abi for AlarmAccessStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AlarmAccessStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -175,7 +170,6 @@ impl ::core::fmt::Debug for AlarmAccessStatus {
 }
 unsafe impl ::windows::core::RuntimeType for AlarmAccessStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.Background.AlarmAccessStatus;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -237,11 +231,6 @@ impl AppBroadcastTrigger {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for AppBroadcastTrigger {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AppBroadcastTrigger {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -255,7 +244,6 @@ impl ::core::fmt::Debug for AppBroadcastTrigger {
 }
 unsafe impl ::windows::core::RuntimeType for AppBroadcastTrigger {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Background.AppBroadcastTrigger;{74d4f496-8d37-44ec-9481-2a0b9854eb48})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -416,11 +404,6 @@ impl AppBroadcastTriggerProviderInfo {
         }
     }
 }
-impl ::core::clone::Clone for AppBroadcastTriggerProviderInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AppBroadcastTriggerProviderInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -434,7 +417,6 @@ impl ::core::fmt::Debug for AppBroadcastTriggerProviderInfo {
 }
 unsafe impl ::windows::core::RuntimeType for AppBroadcastTriggerProviderInfo {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Background.AppBroadcastTriggerProviderInfo;{f219352d-9de8-4420-9ce2-5eff8f17376b})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -518,11 +500,6 @@ impl ApplicationTrigger {
         }
     }
 }
-impl ::core::clone::Clone for ApplicationTrigger {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ApplicationTrigger {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -536,7 +513,6 @@ impl ::core::fmt::Debug for ApplicationTrigger {
 }
 unsafe impl ::windows::core::RuntimeType for ApplicationTrigger {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Background.ApplicationTrigger;{0b468630-9574-492c-9e93-1a3ae6335fe9})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -626,11 +602,6 @@ impl ApplicationTriggerDetails {
         }
     }
 }
-impl ::core::clone::Clone for ApplicationTriggerDetails {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ApplicationTriggerDetails {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -644,7 +615,6 @@ impl ::core::fmt::Debug for ApplicationTriggerDetails {
 }
 unsafe impl ::windows::core::RuntimeType for ApplicationTriggerDetails {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Background.ApplicationTriggerDetails;{97dc6ab2-2219-4a9e-9c5e-41d047f76e82})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -721,6 +691,7 @@ impl ::core::default::Default for ApplicationTriggerResult {
 }
 unsafe impl ::windows::core::Abi for ApplicationTriggerResult {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ApplicationTriggerResult {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -729,7 +700,6 @@ impl ::core::fmt::Debug for ApplicationTriggerResult {
 }
 unsafe impl ::windows::core::RuntimeType for ApplicationTriggerResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.Background.ApplicationTriggerResult;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -746,11 +716,6 @@ impl AppointmentStoreNotificationTrigger {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for AppointmentStoreNotificationTrigger {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AppointmentStoreNotificationTrigger {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -764,7 +729,6 @@ impl ::core::fmt::Debug for AppointmentStoreNotificationTrigger {
 }
 unsafe impl ::windows::core::RuntimeType for AppointmentStoreNotificationTrigger {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Background.AppointmentStoreNotificationTrigger;{64d4040c-c201-42ad-aa2a-e21ba3425b6d})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -861,6 +825,7 @@ impl ::core::default::Default for BackgroundAccessRequestKind {
 }
 unsafe impl ::windows::core::Abi for BackgroundAccessRequestKind {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for BackgroundAccessRequestKind {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -869,7 +834,6 @@ impl ::core::fmt::Debug for BackgroundAccessRequestKind {
 }
 unsafe impl ::windows::core::RuntimeType for BackgroundAccessRequestKind {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.Background.BackgroundAccessRequestKind;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -901,6 +865,7 @@ impl ::core::default::Default for BackgroundAccessStatus {
 }
 unsafe impl ::windows::core::Abi for BackgroundAccessStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for BackgroundAccessStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -909,7 +874,6 @@ impl ::core::fmt::Debug for BackgroundAccessStatus {
 }
 unsafe impl ::windows::core::RuntimeType for BackgroundAccessStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.Background.BackgroundAccessStatus;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1104,11 +1068,6 @@ impl BackgroundTaskBuilder {
         unsafe { (::windows::core::Interface::vtable(this).SetTaskEntryPointClsid)(::core::mem::transmute_copy(this), taskentrypoint.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for BackgroundTaskBuilder {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for BackgroundTaskBuilder {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1122,7 +1081,6 @@ impl ::core::fmt::Debug for BackgroundTaskBuilder {
 }
 unsafe impl ::windows::core::RuntimeType for BackgroundTaskBuilder {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Background.BackgroundTaskBuilder;{0351550e-3e64-4572-a93a-84075a37c917})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1226,11 +1184,6 @@ impl<F: FnMut(&::core::option::Option<IBackgroundTaskInstance>, BackgroundTaskCa
         ((*this).invoke)(::core::mem::transmute(&sender), reason).into()
     }
 }
-impl ::core::clone::Clone for BackgroundTaskCanceledEventHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for BackgroundTaskCanceledEventHandler {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1248,7 +1201,6 @@ unsafe impl ::windows::core::Interface for BackgroundTaskCanceledEventHandler {
 }
 unsafe impl ::windows::core::RuntimeType for BackgroundTaskCanceledEventHandler {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{a6c4bac0-51f8-4c57-ac3f-156dd1680c4f}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1290,6 +1242,7 @@ impl ::core::default::Default for BackgroundTaskCancellationReason {
 }
 unsafe impl ::windows::core::Abi for BackgroundTaskCancellationReason {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for BackgroundTaskCancellationReason {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1298,7 +1251,6 @@ impl ::core::fmt::Debug for BackgroundTaskCancellationReason {
 }
 unsafe impl ::windows::core::RuntimeType for BackgroundTaskCancellationReason {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.Background.BackgroundTaskCancellationReason;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1321,11 +1273,6 @@ impl BackgroundTaskCompletedEventArgs {
         unsafe { (::windows::core::Interface::vtable(this).CheckResult)(::core::mem::transmute_copy(this)).ok() }
     }
 }
-impl ::core::clone::Clone for BackgroundTaskCompletedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for BackgroundTaskCompletedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1339,7 +1286,6 @@ impl ::core::fmt::Debug for BackgroundTaskCompletedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for BackgroundTaskCompletedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Background.BackgroundTaskCompletedEventArgs;{565d25cf-f209-48f4-9967-2b184f7bfbf0})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1445,11 +1391,6 @@ impl<F: FnMut(&::core::option::Option<BackgroundTaskRegistration>, &::core::opti
         ((*this).invoke)(::core::mem::transmute(&sender), ::core::mem::transmute(&args)).into()
     }
 }
-impl ::core::clone::Clone for BackgroundTaskCompletedEventHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for BackgroundTaskCompletedEventHandler {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1467,7 +1408,6 @@ unsafe impl ::windows::core::Interface for BackgroundTaskCompletedEventHandler {
 }
 unsafe impl ::windows::core::RuntimeType for BackgroundTaskCompletedEventHandler {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{5b38e929-a086-46a7-a678-439135822bcf}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1488,11 +1428,6 @@ impl BackgroundTaskDeferral {
         unsafe { (::windows::core::Interface::vtable(this).Complete)(::core::mem::transmute_copy(this)).ok() }
     }
 }
-impl ::core::clone::Clone for BackgroundTaskDeferral {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for BackgroundTaskDeferral {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1506,7 +1441,6 @@ impl ::core::fmt::Debug for BackgroundTaskDeferral {
 }
 unsafe impl ::windows::core::RuntimeType for BackgroundTaskDeferral {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Background.BackgroundTaskDeferral;{93cc156d-af27-4dd3-846e-24ee40cadd25})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1581,11 +1515,6 @@ impl BackgroundTaskProgressEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for BackgroundTaskProgressEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for BackgroundTaskProgressEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1599,7 +1528,6 @@ impl ::core::fmt::Debug for BackgroundTaskProgressEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for BackgroundTaskProgressEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Background.BackgroundTaskProgressEventArgs;{fb1468ac-8332-4d0a-9532-03eae684da31})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1705,11 +1633,6 @@ impl<F: FnMut(&::core::option::Option<BackgroundTaskRegistration>, &::core::opti
         ((*this).invoke)(::core::mem::transmute(&sender), ::core::mem::transmute(&args)).into()
     }
 }
-impl ::core::clone::Clone for BackgroundTaskProgressEventHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for BackgroundTaskProgressEventHandler {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1727,7 +1650,6 @@ unsafe impl ::windows::core::Interface for BackgroundTaskProgressEventHandler {
 }
 unsafe impl ::windows::core::RuntimeType for BackgroundTaskProgressEventHandler {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{46e0683c-8a88-4c99-804c-76897f6277a6}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1843,11 +1765,6 @@ impl BackgroundTaskRegistration {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for BackgroundTaskRegistration {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for BackgroundTaskRegistration {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1861,7 +1778,6 @@ impl ::core::fmt::Debug for BackgroundTaskRegistration {
 }
 unsafe impl ::windows::core::RuntimeType for BackgroundTaskRegistration {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Background.BackgroundTaskRegistration;{10654cc2-a26e-43bf-8c12-1fb40dbfbfa0})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2045,11 +1961,6 @@ impl BackgroundTaskRegistrationGroup {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for BackgroundTaskRegistrationGroup {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for BackgroundTaskRegistrationGroup {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2063,7 +1974,6 @@ impl ::core::fmt::Debug for BackgroundTaskRegistrationGroup {
 }
 unsafe impl ::windows::core::RuntimeType for BackgroundTaskRegistrationGroup {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Background.BackgroundTaskRegistrationGroup;{2ab1919a-871b-4167-8a76-055cd67b5b23})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2139,6 +2049,7 @@ impl ::core::default::Default for BackgroundTaskThrottleCounter {
 }
 unsafe impl ::windows::core::Abi for BackgroundTaskThrottleCounter {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for BackgroundTaskThrottleCounter {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2147,7 +2058,6 @@ impl ::core::fmt::Debug for BackgroundTaskThrottleCounter {
 }
 unsafe impl ::windows::core::RuntimeType for BackgroundTaskThrottleCounter {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.Background.BackgroundTaskThrottleCounter;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2193,6 +2103,7 @@ impl ::core::default::Default for BackgroundWorkCostValue {
 }
 unsafe impl ::windows::core::Abi for BackgroundWorkCostValue {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for BackgroundWorkCostValue {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2201,7 +2112,6 @@ impl ::core::fmt::Debug for BackgroundWorkCostValue {
 }
 unsafe impl ::windows::core::RuntimeType for BackgroundWorkCostValue {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.Background.BackgroundWorkCostValue;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2281,11 +2191,6 @@ impl BluetoothLEAdvertisementPublisherTrigger {
         unsafe { (::windows::core::Interface::vtable(this).SetIncludeTransmitPowerLevel)(::core::mem::transmute_copy(this), value).ok() }
     }
 }
-impl ::core::clone::Clone for BluetoothLEAdvertisementPublisherTrigger {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for BluetoothLEAdvertisementPublisherTrigger {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2299,7 +2204,6 @@ impl ::core::fmt::Debug for BluetoothLEAdvertisementPublisherTrigger {
 }
 unsafe impl ::windows::core::RuntimeType for BluetoothLEAdvertisementPublisherTrigger {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Background.BluetoothLEAdvertisementPublisherTrigger;{ab3e2612-25d3-48ae-8724-d81877ae6129})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2466,11 +2370,6 @@ impl BluetoothLEAdvertisementWatcherTrigger {
         unsafe { (::windows::core::Interface::vtable(this).SetAllowExtendedAdvertisements)(::core::mem::transmute_copy(this), value).ok() }
     }
 }
-impl ::core::clone::Clone for BluetoothLEAdvertisementWatcherTrigger {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for BluetoothLEAdvertisementWatcherTrigger {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2484,7 +2383,6 @@ impl ::core::fmt::Debug for BluetoothLEAdvertisementWatcherTrigger {
 }
 unsafe impl ::windows::core::RuntimeType for BluetoothLEAdvertisementWatcherTrigger {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Background.BluetoothLEAdvertisementWatcherTrigger;{1aab1819-bce1-48eb-a827-59fb7cee52a6})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2572,11 +2470,6 @@ impl CachedFileUpdaterTrigger {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for CachedFileUpdaterTrigger {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for CachedFileUpdaterTrigger {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2590,7 +2483,6 @@ impl ::core::fmt::Debug for CachedFileUpdaterTrigger {
 }
 unsafe impl ::windows::core::RuntimeType for CachedFileUpdaterTrigger {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Background.CachedFileUpdaterTrigger;{e21caeeb-32f2-4d31-b553-b9e01bde37e0})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2697,11 +2589,6 @@ impl CachedFileUpdaterTriggerDetails {
         }
     }
 }
-impl ::core::clone::Clone for CachedFileUpdaterTriggerDetails {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for CachedFileUpdaterTriggerDetails {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2715,7 +2602,6 @@ impl ::core::fmt::Debug for CachedFileUpdaterTriggerDetails {
 }
 unsafe impl ::windows::core::RuntimeType for CachedFileUpdaterTriggerDetails {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Background.CachedFileUpdaterTriggerDetails;{71838c13-1314-47b4-9597-dc7e248c17cc})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2781,11 +2667,6 @@ impl ChatMessageNotificationTrigger {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for ChatMessageNotificationTrigger {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ChatMessageNotificationTrigger {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2799,7 +2680,6 @@ impl ::core::fmt::Debug for ChatMessageNotificationTrigger {
 }
 unsafe impl ::windows::core::RuntimeType for ChatMessageNotificationTrigger {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Background.ChatMessageNotificationTrigger;{513b43bf-1d40-5c5d-78f5-c923fee3739e})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2887,11 +2767,6 @@ impl ChatMessageReceivedNotificationTrigger {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for ChatMessageReceivedNotificationTrigger {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ChatMessageReceivedNotificationTrigger {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2905,7 +2780,6 @@ impl ::core::fmt::Debug for ChatMessageReceivedNotificationTrigger {
 }
 unsafe impl ::windows::core::RuntimeType for ChatMessageReceivedNotificationTrigger {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Background.ChatMessageReceivedNotificationTrigger;{3ea3760e-baf5-4077-88e9-060cf6f0c6d5})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2993,11 +2867,6 @@ impl CommunicationBlockingAppSetAsActiveTrigger {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for CommunicationBlockingAppSetAsActiveTrigger {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for CommunicationBlockingAppSetAsActiveTrigger {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3011,7 +2880,6 @@ impl ::core::fmt::Debug for CommunicationBlockingAppSetAsActiveTrigger {
 }
 unsafe impl ::windows::core::RuntimeType for CommunicationBlockingAppSetAsActiveTrigger {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Background.CommunicationBlockingAppSetAsActiveTrigger;{fb91f28a-16a5-486d-974c-7835a8477be2})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3099,11 +2967,6 @@ impl ContactStoreNotificationTrigger {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for ContactStoreNotificationTrigger {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ContactStoreNotificationTrigger {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3117,7 +2980,6 @@ impl ::core::fmt::Debug for ContactStoreNotificationTrigger {
 }
 unsafe impl ::windows::core::RuntimeType for ContactStoreNotificationTrigger {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Background.ContactStoreNotificationTrigger;{c833419b-4705-4571-9a16-06b997bf9c96})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3227,11 +3089,6 @@ impl ContentPrefetchTrigger {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for ContentPrefetchTrigger {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ContentPrefetchTrigger {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3245,7 +3102,6 @@ impl ::core::fmt::Debug for ContentPrefetchTrigger {
 }
 unsafe impl ::windows::core::RuntimeType for ContentPrefetchTrigger {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Background.ContentPrefetchTrigger;{710627ee-04fa-440b-80c0-173202199e5d})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3331,11 +3187,6 @@ impl ConversationalAgentTrigger {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for ConversationalAgentTrigger {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ConversationalAgentTrigger {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3349,7 +3200,6 @@ impl ::core::fmt::Debug for ConversationalAgentTrigger {
 }
 unsafe impl ::windows::core::RuntimeType for ConversationalAgentTrigger {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Background.ConversationalAgentTrigger;{84b3a058-6027-4b87-9790-bdf3f757dbd7})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3456,11 +3306,6 @@ impl CustomSystemEventTrigger {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for CustomSystemEventTrigger {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for CustomSystemEventTrigger {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3474,7 +3319,6 @@ impl ::core::fmt::Debug for CustomSystemEventTrigger {
 }
 unsafe impl ::windows::core::RuntimeType for CustomSystemEventTrigger {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Background.CustomSystemEventTrigger;{f3596798-cf6b-4ef4-a0ca-29cf4a278c87})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3569,6 +3413,7 @@ impl ::core::default::Default for CustomSystemEventTriggerRecurrence {
 }
 unsafe impl ::windows::core::Abi for CustomSystemEventTriggerRecurrence {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CustomSystemEventTriggerRecurrence {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3577,7 +3422,6 @@ impl ::core::fmt::Debug for CustomSystemEventTriggerRecurrence {
 }
 unsafe impl ::windows::core::RuntimeType for CustomSystemEventTriggerRecurrence {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.Background.CustomSystemEventTriggerRecurrence;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -3629,11 +3473,6 @@ impl DeviceConnectionChangeTrigger {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for DeviceConnectionChangeTrigger {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DeviceConnectionChangeTrigger {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3647,7 +3486,6 @@ impl ::core::fmt::Debug for DeviceConnectionChangeTrigger {
 }
 unsafe impl ::windows::core::RuntimeType for DeviceConnectionChangeTrigger {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Background.DeviceConnectionChangeTrigger;{90875e64-3cdd-4efb-ab1c-5b3b6a60ce34})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3763,12 +3601,6 @@ impl DeviceManufacturerNotificationTrigger {
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for DeviceManufacturerNotificationTrigger {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for DeviceManufacturerNotificationTrigger {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3785,7 +3617,6 @@ impl ::core::fmt::Debug for DeviceManufacturerNotificationTrigger {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for DeviceManufacturerNotificationTrigger {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Background.DeviceManufacturerNotificationTrigger;{81278ab5-41ab-16da-86c2-7f7bf0912f5b})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3903,11 +3734,6 @@ impl DeviceServicingTrigger {
         }
     }
 }
-impl ::core::clone::Clone for DeviceServicingTrigger {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DeviceServicingTrigger {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3921,7 +3747,6 @@ impl ::core::fmt::Debug for DeviceServicingTrigger {
 }
 unsafe impl ::windows::core::RuntimeType for DeviceServicingTrigger {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Background.DeviceServicingTrigger;{1ab217ad-6e34-49d3-9e6f-17f1b6dfa881})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4020,6 +3845,7 @@ impl ::core::default::Default for DeviceTriggerResult {
 }
 unsafe impl ::windows::core::Abi for DeviceTriggerResult {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DeviceTriggerResult {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4028,7 +3854,6 @@ impl ::core::fmt::Debug for DeviceTriggerResult {
 }
 unsafe impl ::windows::core::RuntimeType for DeviceTriggerResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.Background.DeviceTriggerResult;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -4063,11 +3888,6 @@ impl DeviceUseTrigger {
         }
     }
 }
-impl ::core::clone::Clone for DeviceUseTrigger {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DeviceUseTrigger {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4081,7 +3901,6 @@ impl ::core::fmt::Debug for DeviceUseTrigger {
 }
 unsafe impl ::windows::core::RuntimeType for DeviceUseTrigger {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Background.DeviceUseTrigger;{0da68011-334f-4d57-b6ec-6dca64b412e4})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4161,11 +3980,6 @@ unsafe impl ::core::marker::Sync for DeviceUseTrigger {}
 #[repr(transparent)]
 pub struct DeviceWatcherTrigger(::windows::core::IUnknown);
 impl DeviceWatcherTrigger {}
-impl ::core::clone::Clone for DeviceWatcherTrigger {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DeviceWatcherTrigger {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4179,7 +3993,6 @@ impl ::core::fmt::Debug for DeviceWatcherTrigger {
 }
 unsafe impl ::windows::core::RuntimeType for DeviceWatcherTrigger {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Background.DeviceWatcherTrigger;{a4617fdd-8573-4260-befc-5bec89cb693d})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4265,11 +4078,6 @@ impl EmailStoreNotificationTrigger {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for EmailStoreNotificationTrigger {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for EmailStoreNotificationTrigger {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4283,7 +4091,6 @@ impl ::core::fmt::Debug for EmailStoreNotificationTrigger {
 }
 unsafe impl ::windows::core::RuntimeType for EmailStoreNotificationTrigger {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Background.EmailStoreNotificationTrigger;{986d06da-47eb-4268-a4f2-f3f77188388a})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4408,11 +4215,6 @@ impl GattCharacteristicNotificationTrigger {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for GattCharacteristicNotificationTrigger {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for GattCharacteristicNotificationTrigger {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4426,7 +4228,6 @@ impl ::core::fmt::Debug for GattCharacteristicNotificationTrigger {
 }
 unsafe impl ::windows::core::RuntimeType for GattCharacteristicNotificationTrigger {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Background.GattCharacteristicNotificationTrigger;{e25f8fc8-0696-474f-a732-f292b0cebc5d})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4552,11 +4353,6 @@ impl GattServiceProviderTrigger {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for GattServiceProviderTrigger {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for GattServiceProviderTrigger {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4570,7 +4366,6 @@ impl ::core::fmt::Debug for GattServiceProviderTrigger {
 }
 unsafe impl ::windows::core::RuntimeType for GattServiceProviderTrigger {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Background.GattServiceProviderTrigger;{ddc6a3e9-1557-4bd8-8542-468aa0c696f6})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4668,11 +4463,6 @@ impl GattServiceProviderTriggerResult {
         }
     }
 }
-impl ::core::clone::Clone for GattServiceProviderTriggerResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for GattServiceProviderTriggerResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4686,7 +4476,6 @@ impl ::core::fmt::Debug for GattServiceProviderTriggerResult {
 }
 unsafe impl ::windows::core::RuntimeType for GattServiceProviderTriggerResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Background.GattServiceProviderTriggerResult;{3c4691b1-b198-4e84-bad4-cf4ad299ed3a})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4767,11 +4556,6 @@ impl GeovisitTrigger {
         unsafe { (::windows::core::Interface::vtable(this).SetMonitoringScope)(::core::mem::transmute_copy(this), value).ok() }
     }
 }
-impl ::core::clone::Clone for GeovisitTrigger {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for GeovisitTrigger {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4785,7 +4569,6 @@ impl ::core::fmt::Debug for GeovisitTrigger {
 }
 unsafe impl ::windows::core::RuntimeType for GeovisitTrigger {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Background.GeovisitTrigger;{4818edaa-04e1-4127-9a4c-19351b8a80a4})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4864,6 +4647,11 @@ unsafe impl ::core::marker::Sync for GeovisitTrigger {}
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IActivitySensorTrigger(::windows::core::IUnknown);
+impl ::core::clone::Clone for IActivitySensorTrigger {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IActivitySensorTrigger {
     type Vtable = IActivitySensorTrigger_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd0dd4342_e37b_4823_a5fe_6b31dfefdeb0);
@@ -4886,6 +4674,11 @@ pub struct IActivitySensorTrigger_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IActivitySensorTriggerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IActivitySensorTriggerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IActivitySensorTriggerFactory {
     type Vtable = IActivitySensorTriggerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa72691c3_3837_44f7_831b_0132cc872bc3);
@@ -4899,6 +4692,11 @@ pub struct IActivitySensorTriggerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAlarmApplicationManagerStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAlarmApplicationManagerStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAlarmApplicationManagerStatics {
     type Vtable = IAlarmApplicationManagerStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xca03fa3b_cce6_4de2_b09b_9628bd33bbbe);
@@ -4916,6 +4714,11 @@ pub struct IAlarmApplicationManagerStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppBroadcastTrigger(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppBroadcastTrigger {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppBroadcastTrigger {
     type Vtable = IAppBroadcastTrigger_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x74d4f496_8d37_44ec_9481_2a0b9854eb48);
@@ -4930,6 +4733,11 @@ pub struct IAppBroadcastTrigger_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppBroadcastTriggerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppBroadcastTriggerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppBroadcastTriggerFactory {
     type Vtable = IAppBroadcastTriggerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x280b9f44_22f4_4618_a02e_e7e411eb7238);
@@ -4943,6 +4751,11 @@ pub struct IAppBroadcastTriggerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppBroadcastTriggerProviderInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppBroadcastTriggerProviderInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppBroadcastTriggerProviderInfo {
     type Vtable = IAppBroadcastTriggerProviderInfo_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf219352d_9de8_4420_9ce2_5eff8f17376b);
@@ -4973,6 +4786,11 @@ pub struct IAppBroadcastTriggerProviderInfo_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IApplicationTrigger(::windows::core::IUnknown);
+impl ::core::clone::Clone for IApplicationTrigger {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IApplicationTrigger {
     type Vtable = IApplicationTrigger_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x0b468630_9574_492c_9e93_1a3ae6335fe9);
@@ -4993,6 +4811,11 @@ pub struct IApplicationTrigger_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IApplicationTriggerDetails(::windows::core::IUnknown);
+impl ::core::clone::Clone for IApplicationTriggerDetails {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IApplicationTriggerDetails {
     type Vtable = IApplicationTriggerDetails_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x97dc6ab2_2219_4a9e_9c5e_41d047f76e82);
@@ -5009,6 +4832,11 @@ pub struct IApplicationTriggerDetails_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppointmentStoreNotificationTrigger(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppointmentStoreNotificationTrigger {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppointmentStoreNotificationTrigger {
     type Vtable = IAppointmentStoreNotificationTrigger_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x64d4040c_c201_42ad_aa2a_e21ba3425b6d);
@@ -5021,6 +4849,11 @@ pub struct IAppointmentStoreNotificationTrigger_Vtbl {
 #[doc = "*Required features: `\"ApplicationModel_Background\"`*"]
 #[repr(transparent)]
 pub struct IBackgroundCondition(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBackgroundCondition {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IBackgroundCondition {}
 impl ::core::convert::From<IBackgroundCondition> for ::windows::core::IUnknown {
     fn from(value: IBackgroundCondition) -> Self {
@@ -5062,11 +4895,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IBackgroundCondition {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IBackgroundCondition {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5080,7 +4908,6 @@ impl ::core::fmt::Debug for IBackgroundCondition {
 }
 unsafe impl ::windows::core::RuntimeType for IBackgroundCondition {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{ae48a1ee-8951-400a-8302-9c9c9a2a3a3b}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -5097,6 +4924,11 @@ pub struct IBackgroundCondition_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBackgroundExecutionManagerStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBackgroundExecutionManagerStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBackgroundExecutionManagerStatics {
     type Vtable = IBackgroundExecutionManagerStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe826ea58_66a9_4d41_83d4_b4c18c87b846);
@@ -5121,6 +4953,11 @@ pub struct IBackgroundExecutionManagerStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBackgroundExecutionManagerStatics2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBackgroundExecutionManagerStatics2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBackgroundExecutionManagerStatics2 {
     type Vtable = IBackgroundExecutionManagerStatics2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x469b24ef_9bbb_4e18_999a_fd6512931be9);
@@ -5137,6 +4974,11 @@ pub struct IBackgroundExecutionManagerStatics2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBackgroundExecutionManagerStatics3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBackgroundExecutionManagerStatics3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBackgroundExecutionManagerStatics3 {
     type Vtable = IBackgroundExecutionManagerStatics3_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x98a5d3f6_5a25_5b6c_9192_d77a43dfedc4);
@@ -5155,6 +4997,11 @@ pub struct IBackgroundExecutionManagerStatics3_Vtbl {
 #[doc = "*Required features: `\"ApplicationModel_Background\"`*"]
 #[repr(transparent)]
 pub struct IBackgroundTask(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBackgroundTask {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IBackgroundTask {
     #[doc = "*Required features: `\"ApplicationModel_Background\"`*"]
     pub fn Run<'a, Param0: ::windows::core::IntoParam<'a, IBackgroundTaskInstance>>(&self, taskinstance: Param0) -> ::windows::core::Result<()> {
@@ -5202,11 +5049,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IBackgroundTask {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IBackgroundTask {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5220,7 +5062,6 @@ impl ::core::fmt::Debug for IBackgroundTask {
 }
 unsafe impl ::windows::core::RuntimeType for IBackgroundTask {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{7d13d534-fd12-43ce-8c22-ea1ff13c06df}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -5238,6 +5079,11 @@ pub struct IBackgroundTask_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBackgroundTaskBuilder(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBackgroundTaskBuilder {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBackgroundTaskBuilder {
     type Vtable = IBackgroundTaskBuilder_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x0351550e_3e64_4572_a93a_84075a37c917);
@@ -5257,6 +5103,11 @@ pub struct IBackgroundTaskBuilder_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBackgroundTaskBuilder2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBackgroundTaskBuilder2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBackgroundTaskBuilder2 {
     type Vtable = IBackgroundTaskBuilder2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x6ae7cfb1_104f_406d_8db6_844a570f42bb);
@@ -5271,6 +5122,11 @@ pub struct IBackgroundTaskBuilder2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBackgroundTaskBuilder3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBackgroundTaskBuilder3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBackgroundTaskBuilder3 {
     type Vtable = IBackgroundTaskBuilder3_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x28c74f4a_8ba9_4c09_a24f_19683e2c924c);
@@ -5285,6 +5141,11 @@ pub struct IBackgroundTaskBuilder3_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBackgroundTaskBuilder4(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBackgroundTaskBuilder4 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBackgroundTaskBuilder4 {
     type Vtable = IBackgroundTaskBuilder4_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x4755e522_cba2_4e35_bd16_a6da7f1c19aa);
@@ -5299,6 +5160,11 @@ pub struct IBackgroundTaskBuilder4_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBackgroundTaskBuilder5(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBackgroundTaskBuilder5 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBackgroundTaskBuilder5 {
     type Vtable = IBackgroundTaskBuilder5_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x077103f6_99f5_4af4_bcad_4731d0330d43);
@@ -5312,6 +5178,11 @@ pub struct IBackgroundTaskBuilder5_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBackgroundTaskCompletedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBackgroundTaskCompletedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBackgroundTaskCompletedEventArgs {
     type Vtable = IBackgroundTaskCompletedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x565d25cf_f209_48f4_9967_2b184f7bfbf0);
@@ -5326,6 +5197,11 @@ pub struct IBackgroundTaskCompletedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBackgroundTaskDeferral(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBackgroundTaskDeferral {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBackgroundTaskDeferral {
     type Vtable = IBackgroundTaskDeferral_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x93cc156d_af27_4dd3_846e_24ee40cadd25);
@@ -5339,6 +5215,11 @@ pub struct IBackgroundTaskDeferral_Vtbl {
 #[doc = "*Required features: `\"ApplicationModel_Background\"`*"]
 #[repr(transparent)]
 pub struct IBackgroundTaskInstance(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBackgroundTaskInstance {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IBackgroundTaskInstance {
     #[doc = "*Required features: `\"ApplicationModel_Background\"`*"]
     pub fn InstanceId(&self) -> ::windows::core::Result<::windows::core::GUID> {
@@ -5449,11 +5330,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IBackgroundTaskInstance {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IBackgroundTaskInstance {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5467,7 +5343,6 @@ impl ::core::fmt::Debug for IBackgroundTaskInstance {
 }
 unsafe impl ::windows::core::RuntimeType for IBackgroundTaskInstance {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{865bda7a-21d8-4573-8f32-928a1b0641f6}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -5499,6 +5374,11 @@ pub struct IBackgroundTaskInstance_Vtbl {
 #[doc = "*Required features: `\"ApplicationModel_Background\"`*"]
 #[repr(transparent)]
 pub struct IBackgroundTaskInstance2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBackgroundTaskInstance2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IBackgroundTaskInstance2 {
     #[doc = "*Required features: `\"ApplicationModel_Background\"`*"]
     pub fn GetThrottleCount(&self, counter: BackgroundTaskThrottleCounter) -> ::windows::core::Result<u32> {
@@ -5639,11 +5519,6 @@ impl<'a> ::windows::core::IntoParam<'a, IBackgroundTaskInstance> for &IBackgroun
         ::core::convert::TryInto::<IBackgroundTaskInstance>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IBackgroundTaskInstance2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IBackgroundTaskInstance2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5657,7 +5532,6 @@ impl ::core::fmt::Debug for IBackgroundTaskInstance2 {
 }
 unsafe impl ::windows::core::RuntimeType for IBackgroundTaskInstance2 {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{4f7d0176-0c76-4fb4-896d-5de1864122f6}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -5675,6 +5549,11 @@ pub struct IBackgroundTaskInstance2_Vtbl {
 #[doc = "*Required features: `\"ApplicationModel_Background\"`*"]
 #[repr(transparent)]
 pub struct IBackgroundTaskInstance4(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBackgroundTaskInstance4 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IBackgroundTaskInstance4 {
     #[doc = "*Required features: `\"ApplicationModel_Background\"`, `\"System\"`*"]
     #[cfg(feature = "System")]
@@ -5816,11 +5695,6 @@ impl<'a> ::windows::core::IntoParam<'a, IBackgroundTaskInstance> for &IBackgroun
         ::core::convert::TryInto::<IBackgroundTaskInstance>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IBackgroundTaskInstance4 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IBackgroundTaskInstance4 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5834,7 +5708,6 @@ impl ::core::fmt::Debug for IBackgroundTaskInstance4 {
 }
 unsafe impl ::windows::core::RuntimeType for IBackgroundTaskInstance4 {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{7f29f23c-aa04-4b08-97b0-06d874cdabf5}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -5855,6 +5728,11 @@ pub struct IBackgroundTaskInstance4_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBackgroundTaskProgressEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBackgroundTaskProgressEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBackgroundTaskProgressEventArgs {
     type Vtable = IBackgroundTaskProgressEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xfb1468ac_8332_4d0a_9532_03eae684da31);
@@ -5869,6 +5747,11 @@ pub struct IBackgroundTaskProgressEventArgs_Vtbl {
 #[doc = "*Required features: `\"ApplicationModel_Background\"`*"]
 #[repr(transparent)]
 pub struct IBackgroundTaskRegistration(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBackgroundTaskRegistration {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IBackgroundTaskRegistration {
     #[doc = "*Required features: `\"ApplicationModel_Background\"`*"]
     pub fn TaskId(&self) -> ::windows::core::Result<::windows::core::GUID> {
@@ -5962,11 +5845,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IBackgroundTaskRegistration {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IBackgroundTaskRegistration {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5980,7 +5858,6 @@ impl ::core::fmt::Debug for IBackgroundTaskRegistration {
 }
 unsafe impl ::windows::core::RuntimeType for IBackgroundTaskRegistration {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{10654cc2-a26e-43bf-8c12-1fb40dbfbfa0}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -6016,6 +5893,11 @@ pub struct IBackgroundTaskRegistration_Vtbl {
 #[doc = "*Required features: `\"ApplicationModel_Background\"`*"]
 #[repr(transparent)]
 pub struct IBackgroundTaskRegistration2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBackgroundTaskRegistration2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IBackgroundTaskRegistration2 {
     #[doc = "*Required features: `\"ApplicationModel_Background\"`*"]
     pub fn Trigger(&self) -> ::windows::core::Result<IBackgroundTrigger> {
@@ -6139,11 +6021,6 @@ impl<'a> ::windows::core::IntoParam<'a, IBackgroundTaskRegistration> for &IBackg
         ::core::convert::TryInto::<IBackgroundTaskRegistration>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IBackgroundTaskRegistration2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IBackgroundTaskRegistration2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6157,7 +6034,6 @@ impl ::core::fmt::Debug for IBackgroundTaskRegistration2 {
 }
 unsafe impl ::windows::core::RuntimeType for IBackgroundTaskRegistration2 {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{6138c703-bb86-4112-afc3-7f939b166e3b}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -6175,6 +6051,11 @@ pub struct IBackgroundTaskRegistration2_Vtbl {
 #[doc = "*Required features: `\"ApplicationModel_Background\"`*"]
 #[repr(transparent)]
 pub struct IBackgroundTaskRegistration3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBackgroundTaskRegistration3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IBackgroundTaskRegistration3 {
     #[doc = "*Required features: `\"ApplicationModel_Background\"`*"]
     pub fn TaskGroup(&self) -> ::windows::core::Result<BackgroundTaskRegistrationGroup> {
@@ -6298,11 +6179,6 @@ impl<'a> ::windows::core::IntoParam<'a, IBackgroundTaskRegistration> for &IBackg
         ::core::convert::TryInto::<IBackgroundTaskRegistration>::try_into(self).map(::windows::core::Param::Owned).unwrap_or(::windows::core::Param::None)
     }
 }
-impl ::core::clone::Clone for IBackgroundTaskRegistration3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IBackgroundTaskRegistration3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6316,7 +6192,6 @@ impl ::core::fmt::Debug for IBackgroundTaskRegistration3 {
 }
 unsafe impl ::windows::core::RuntimeType for IBackgroundTaskRegistration3 {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{fe338195-9423-4d8b-830d-b1dd2c7badd5}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -6334,6 +6209,11 @@ pub struct IBackgroundTaskRegistration3_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBackgroundTaskRegistrationGroup(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBackgroundTaskRegistrationGroup {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBackgroundTaskRegistrationGroup {
     type Vtable = IBackgroundTaskRegistrationGroup_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x2ab1919a_871b_4167_8a76_055cd67b5b23);
@@ -6360,6 +6240,11 @@ pub struct IBackgroundTaskRegistrationGroup_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBackgroundTaskRegistrationGroupFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBackgroundTaskRegistrationGroupFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBackgroundTaskRegistrationGroupFactory {
     type Vtable = IBackgroundTaskRegistrationGroupFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x83d92b69_44cf_4631_9740_03c7d8741bc5);
@@ -6374,6 +6259,11 @@ pub struct IBackgroundTaskRegistrationGroupFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBackgroundTaskRegistrationStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBackgroundTaskRegistrationStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBackgroundTaskRegistrationStatics {
     type Vtable = IBackgroundTaskRegistrationStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x4c542f69_b000_42ba_a093_6a563c65e3f8);
@@ -6390,6 +6280,11 @@ pub struct IBackgroundTaskRegistrationStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBackgroundTaskRegistrationStatics2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBackgroundTaskRegistrationStatics2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBackgroundTaskRegistrationStatics2 {
     type Vtable = IBackgroundTaskRegistrationStatics2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x174b671e_b20d_4fa9_ad9a_e93ad6c71e01);
@@ -6407,6 +6302,11 @@ pub struct IBackgroundTaskRegistrationStatics2_Vtbl {
 #[doc = "*Required features: `\"ApplicationModel_Background\"`*"]
 #[repr(transparent)]
 pub struct IBackgroundTrigger(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBackgroundTrigger {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IBackgroundTrigger {}
 impl ::core::convert::From<IBackgroundTrigger> for ::windows::core::IUnknown {
     fn from(value: IBackgroundTrigger) -> Self {
@@ -6448,11 +6348,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IBackgroundTrigger {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IBackgroundTrigger {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6466,7 +6361,6 @@ impl ::core::fmt::Debug for IBackgroundTrigger {
 }
 unsafe impl ::windows::core::RuntimeType for IBackgroundTrigger {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{84b3a058-6027-4b87-9790-bdf3f757dbd7}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -6483,6 +6377,11 @@ pub struct IBackgroundTrigger_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBackgroundWorkCostStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBackgroundWorkCostStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBackgroundWorkCostStatics {
     type Vtable = IBackgroundWorkCostStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc740a662_c310_4b82_b3e3_3bcfb9e4c77d);
@@ -6496,6 +6395,11 @@ pub struct IBackgroundWorkCostStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBluetoothLEAdvertisementPublisherTrigger(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBluetoothLEAdvertisementPublisherTrigger {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBluetoothLEAdvertisementPublisherTrigger {
     type Vtable = IBluetoothLEAdvertisementPublisherTrigger_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xab3e2612_25d3_48ae_8724_d81877ae6129);
@@ -6512,6 +6416,11 @@ pub struct IBluetoothLEAdvertisementPublisherTrigger_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBluetoothLEAdvertisementPublisherTrigger2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBluetoothLEAdvertisementPublisherTrigger2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBluetoothLEAdvertisementPublisherTrigger2 {
     type Vtable = IBluetoothLEAdvertisementPublisherTrigger2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xaa28d064_38f4_597d_b597_4e55588c6503);
@@ -6538,6 +6447,11 @@ pub struct IBluetoothLEAdvertisementPublisherTrigger2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBluetoothLEAdvertisementWatcherTrigger(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBluetoothLEAdvertisementWatcherTrigger {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBluetoothLEAdvertisementWatcherTrigger {
     type Vtable = IBluetoothLEAdvertisementWatcherTrigger_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1aab1819_bce1_48eb_a827_59fb7cee52a6);
@@ -6582,6 +6496,11 @@ pub struct IBluetoothLEAdvertisementWatcherTrigger_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBluetoothLEAdvertisementWatcherTrigger2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBluetoothLEAdvertisementWatcherTrigger2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBluetoothLEAdvertisementWatcherTrigger2 {
     type Vtable = IBluetoothLEAdvertisementWatcherTrigger2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x39b56799_eb39_5ab6_9932_aa9e4549604d);
@@ -6596,6 +6515,11 @@ pub struct IBluetoothLEAdvertisementWatcherTrigger2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICachedFileUpdaterTrigger(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICachedFileUpdaterTrigger {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICachedFileUpdaterTrigger {
     type Vtable = ICachedFileUpdaterTrigger_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe21caeeb_32f2_4d31_b553_b9e01bde37e0);
@@ -6608,6 +6532,11 @@ pub struct ICachedFileUpdaterTrigger_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICachedFileUpdaterTriggerDetails(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICachedFileUpdaterTriggerDetails {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICachedFileUpdaterTriggerDetails {
     type Vtable = ICachedFileUpdaterTriggerDetails_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x71838c13_1314_47b4_9597_dc7e248c17cc);
@@ -6629,6 +6558,11 @@ pub struct ICachedFileUpdaterTriggerDetails_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IChatMessageNotificationTrigger(::windows::core::IUnknown);
+impl ::core::clone::Clone for IChatMessageNotificationTrigger {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IChatMessageNotificationTrigger {
     type Vtable = IChatMessageNotificationTrigger_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x513b43bf_1d40_5c5d_78f5_c923fee3739e);
@@ -6641,6 +6575,11 @@ pub struct IChatMessageNotificationTrigger_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IChatMessageReceivedNotificationTrigger(::windows::core::IUnknown);
+impl ::core::clone::Clone for IChatMessageReceivedNotificationTrigger {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IChatMessageReceivedNotificationTrigger {
     type Vtable = IChatMessageReceivedNotificationTrigger_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x3ea3760e_baf5_4077_88e9_060cf6f0c6d5);
@@ -6653,6 +6592,11 @@ pub struct IChatMessageReceivedNotificationTrigger_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICommunicationBlockingAppSetAsActiveTrigger(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICommunicationBlockingAppSetAsActiveTrigger {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICommunicationBlockingAppSetAsActiveTrigger {
     type Vtable = ICommunicationBlockingAppSetAsActiveTrigger_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xfb91f28a_16a5_486d_974c_7835a8477be2);
@@ -6665,6 +6609,11 @@ pub struct ICommunicationBlockingAppSetAsActiveTrigger_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IContactStoreNotificationTrigger(::windows::core::IUnknown);
+impl ::core::clone::Clone for IContactStoreNotificationTrigger {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IContactStoreNotificationTrigger {
     type Vtable = IContactStoreNotificationTrigger_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc833419b_4705_4571_9a16_06b997bf9c96);
@@ -6677,6 +6626,11 @@ pub struct IContactStoreNotificationTrigger_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IContentPrefetchTrigger(::windows::core::IUnknown);
+impl ::core::clone::Clone for IContentPrefetchTrigger {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IContentPrefetchTrigger {
     type Vtable = IContentPrefetchTrigger_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x710627ee_04fa_440b_80c0_173202199e5d);
@@ -6693,6 +6647,11 @@ pub struct IContentPrefetchTrigger_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IContentPrefetchTriggerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IContentPrefetchTriggerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IContentPrefetchTriggerFactory {
     type Vtable = IContentPrefetchTriggerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc2643eda_8a03_409e_b8c4_88814c28ccb6);
@@ -6709,6 +6668,11 @@ pub struct IContentPrefetchTriggerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICustomSystemEventTrigger(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICustomSystemEventTrigger {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICustomSystemEventTrigger {
     type Vtable = ICustomSystemEventTrigger_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf3596798_cf6b_4ef4_a0ca_29cf4a278c87);
@@ -6723,6 +6687,11 @@ pub struct ICustomSystemEventTrigger_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICustomSystemEventTriggerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICustomSystemEventTriggerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICustomSystemEventTriggerFactory {
     type Vtable = ICustomSystemEventTriggerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x6bcb16c5_f2dc_41b2_9efd_b96bdcd13ced);
@@ -6736,6 +6705,11 @@ pub struct ICustomSystemEventTriggerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDeviceConnectionChangeTrigger(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDeviceConnectionChangeTrigger {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDeviceConnectionChangeTrigger {
     type Vtable = IDeviceConnectionChangeTrigger_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x90875e64_3cdd_4efb_ab1c_5b3b6a60ce34);
@@ -6752,6 +6726,11 @@ pub struct IDeviceConnectionChangeTrigger_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDeviceConnectionChangeTriggerStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDeviceConnectionChangeTriggerStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDeviceConnectionChangeTriggerStatics {
     type Vtable = IDeviceConnectionChangeTriggerStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc3ea246a_4efd_4498_aa60_a4e4e3b17ab9);
@@ -6769,6 +6748,12 @@ pub struct IDeviceConnectionChangeTriggerStatics_Vtbl {
 #[cfg(feature = "deprecated")]
 #[repr(transparent)]
 pub struct IDeviceManufacturerNotificationTrigger(::windows::core::IUnknown);
+#[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for IDeviceManufacturerNotificationTrigger {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for IDeviceManufacturerNotificationTrigger {
     type Vtable = IDeviceManufacturerNotificationTrigger_Vtbl;
@@ -6793,6 +6778,12 @@ pub struct IDeviceManufacturerNotificationTrigger_Vtbl {
 #[repr(transparent)]
 pub struct IDeviceManufacturerNotificationTriggerFactory(::windows::core::IUnknown);
 #[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for IDeviceManufacturerNotificationTriggerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for IDeviceManufacturerNotificationTriggerFactory {
     type Vtable = IDeviceManufacturerNotificationTriggerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x7955de75_25bb_4153_a1a2_3029fcabb652);
@@ -6810,6 +6801,11 @@ pub struct IDeviceManufacturerNotificationTriggerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDeviceServicingTrigger(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDeviceServicingTrigger {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDeviceServicingTrigger {
     type Vtable = IDeviceServicingTrigger_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1ab217ad_6e34_49d3_9e6f_17f1b6dfa881);
@@ -6830,6 +6826,11 @@ pub struct IDeviceServicingTrigger_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDeviceUseTrigger(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDeviceUseTrigger {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDeviceUseTrigger {
     type Vtable = IDeviceUseTrigger_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x0da68011_334f_4d57_b6ec_6dca64b412e4);
@@ -6850,6 +6851,11 @@ pub struct IDeviceUseTrigger_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDeviceWatcherTrigger(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDeviceWatcherTrigger {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDeviceWatcherTrigger {
     type Vtable = IDeviceWatcherTrigger_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa4617fdd_8573_4260_befc_5bec89cb693d);
@@ -6862,6 +6868,11 @@ pub struct IDeviceWatcherTrigger_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IEmailStoreNotificationTrigger(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEmailStoreNotificationTrigger {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IEmailStoreNotificationTrigger {
     type Vtable = IEmailStoreNotificationTrigger_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x986d06da_47eb_4268_a4f2_f3f77188388a);
@@ -6874,6 +6885,11 @@ pub struct IEmailStoreNotificationTrigger_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGattCharacteristicNotificationTrigger(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGattCharacteristicNotificationTrigger {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGattCharacteristicNotificationTrigger {
     type Vtable = IGattCharacteristicNotificationTrigger_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe25f8fc8_0696_474f_a732_f292b0cebc5d);
@@ -6890,6 +6906,11 @@ pub struct IGattCharacteristicNotificationTrigger_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGattCharacteristicNotificationTrigger2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGattCharacteristicNotificationTrigger2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGattCharacteristicNotificationTrigger2 {
     type Vtable = IGattCharacteristicNotificationTrigger2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9322a2c4_ae0e_42f2_b28c_f51372e69245);
@@ -6906,6 +6927,11 @@ pub struct IGattCharacteristicNotificationTrigger2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGattCharacteristicNotificationTriggerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGattCharacteristicNotificationTriggerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGattCharacteristicNotificationTriggerFactory {
     type Vtable = IGattCharacteristicNotificationTriggerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x57ba1995_b143_4575_9f6b_fd59d93ace1a);
@@ -6922,6 +6948,11 @@ pub struct IGattCharacteristicNotificationTriggerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGattCharacteristicNotificationTriggerFactory2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGattCharacteristicNotificationTriggerFactory2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGattCharacteristicNotificationTriggerFactory2 {
     type Vtable = IGattCharacteristicNotificationTriggerFactory2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x5998e91f_8a53_4e9f_a32c_23cd33664cee);
@@ -6938,6 +6969,11 @@ pub struct IGattCharacteristicNotificationTriggerFactory2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGattServiceProviderTrigger(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGattServiceProviderTrigger {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGattServiceProviderTrigger {
     type Vtable = IGattServiceProviderTrigger_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xddc6a3e9_1557_4bd8_8542_468aa0c696f6);
@@ -6963,6 +6999,11 @@ pub struct IGattServiceProviderTrigger_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGattServiceProviderTriggerResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGattServiceProviderTriggerResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGattServiceProviderTriggerResult {
     type Vtable = IGattServiceProviderTriggerResult_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x3c4691b1_b198_4e84_bad4_cf4ad299ed3a);
@@ -6980,6 +7021,11 @@ pub struct IGattServiceProviderTriggerResult_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGattServiceProviderTriggerStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGattServiceProviderTriggerStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGattServiceProviderTriggerStatics {
     type Vtable = IGattServiceProviderTriggerStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb413a36a_e294_4591_a5a6_64891a828153);
@@ -6996,6 +7042,11 @@ pub struct IGattServiceProviderTriggerStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGeovisitTrigger(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGeovisitTrigger {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGeovisitTrigger {
     type Vtable = IGeovisitTrigger_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x4818edaa_04e1_4127_9a4c_19351b8a80a4);
@@ -7016,6 +7067,11 @@ pub struct IGeovisitTrigger_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ILocationTrigger(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILocationTrigger {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ILocationTrigger {
     type Vtable = ILocationTrigger_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x47666a1c_6877_481e_8026_ff7e14a811a0);
@@ -7029,6 +7085,11 @@ pub struct ILocationTrigger_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ILocationTriggerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILocationTriggerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ILocationTriggerFactory {
     type Vtable = ILocationTriggerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1106bb07_ff69_4e09_aa8b_1384ea475e98);
@@ -7042,6 +7103,11 @@ pub struct ILocationTriggerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMaintenanceTrigger(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMaintenanceTrigger {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMaintenanceTrigger {
     type Vtable = IMaintenanceTrigger_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x68184c83_fc22_4ce5_841a_7239a9810047);
@@ -7056,6 +7122,11 @@ pub struct IMaintenanceTrigger_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMaintenanceTriggerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMaintenanceTriggerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMaintenanceTriggerFactory {
     type Vtable = IMaintenanceTriggerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x4b3ddb2e_97dd_4629_88b0_b06cf9482ae5);
@@ -7069,6 +7140,11 @@ pub struct IMaintenanceTriggerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMediaProcessingTrigger(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMediaProcessingTrigger {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMediaProcessingTrigger {
     type Vtable = IMediaProcessingTrigger_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9a95be65_8a52_4b30_9011_cf38040ea8b0);
@@ -7089,6 +7165,11 @@ pub struct IMediaProcessingTrigger_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct INetworkOperatorHotspotAuthenticationTrigger(::windows::core::IUnknown);
+impl ::core::clone::Clone for INetworkOperatorHotspotAuthenticationTrigger {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for INetworkOperatorHotspotAuthenticationTrigger {
     type Vtable = INetworkOperatorHotspotAuthenticationTrigger_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe756c791_3001_4de5_83c7_de61d88831d0);
@@ -7101,6 +7182,11 @@ pub struct INetworkOperatorHotspotAuthenticationTrigger_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct INetworkOperatorNotificationTrigger(::windows::core::IUnknown);
+impl ::core::clone::Clone for INetworkOperatorNotificationTrigger {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for INetworkOperatorNotificationTrigger {
     type Vtable = INetworkOperatorNotificationTrigger_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x90089cc6_63cd_480c_95d1_6e6aef801e4a);
@@ -7114,6 +7200,11 @@ pub struct INetworkOperatorNotificationTrigger_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct INetworkOperatorNotificationTriggerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for INetworkOperatorNotificationTriggerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for INetworkOperatorNotificationTriggerFactory {
     type Vtable = INetworkOperatorNotificationTriggerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x0a223e00_27d7_4353_adb9_9265aaea579d);
@@ -7127,6 +7218,11 @@ pub struct INetworkOperatorNotificationTriggerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPhoneTrigger(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPhoneTrigger {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPhoneTrigger {
     type Vtable = IPhoneTrigger_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x8dcfe99b_d4c5_49f1_b7d3_82e87a0e9dde);
@@ -7144,6 +7240,11 @@ pub struct IPhoneTrigger_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPhoneTriggerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPhoneTriggerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPhoneTriggerFactory {
     type Vtable = IPhoneTriggerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa0d93cda_5fc1_48fb_a546_32262040157b);
@@ -7160,6 +7261,11 @@ pub struct IPhoneTriggerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPushNotificationTriggerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPushNotificationTriggerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPushNotificationTriggerFactory {
     type Vtable = IPushNotificationTriggerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x6dd8ed1b_458e_4fc2_bc2e_d5664f77ed19);
@@ -7173,6 +7279,11 @@ pub struct IPushNotificationTriggerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IRcsEndUserMessageAvailableTrigger(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRcsEndUserMessageAvailableTrigger {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IRcsEndUserMessageAvailableTrigger {
     type Vtable = IRcsEndUserMessageAvailableTrigger_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x986d0d6a_b2f6_467f_a978_a44091c11a66);
@@ -7185,6 +7296,11 @@ pub struct IRcsEndUserMessageAvailableTrigger_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IRfcommConnectionTrigger(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRfcommConnectionTrigger {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IRfcommConnectionTrigger {
     type Vtable = IRfcommConnectionTrigger_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe8c4cae2_0b53_4464_9394_fd875654de64);
@@ -7225,6 +7341,12 @@ pub struct IRfcommConnectionTrigger_Vtbl {
 #[repr(transparent)]
 pub struct ISecondaryAuthenticationFactorAuthenticationTrigger(::windows::core::IUnknown);
 #[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for ISecondaryAuthenticationFactorAuthenticationTrigger {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for ISecondaryAuthenticationFactorAuthenticationTrigger {
     type Vtable = ISecondaryAuthenticationFactorAuthenticationTrigger_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf237f327_5181_4f24_96a7_700a4e5fac62);
@@ -7238,6 +7360,11 @@ pub struct ISecondaryAuthenticationFactorAuthenticationTrigger_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISensorDataThresholdTrigger(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISensorDataThresholdTrigger {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISensorDataThresholdTrigger {
     type Vtable = ISensorDataThresholdTrigger_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x5bc0f372_d48b_4b7f_abec_15f9bacc12e2);
@@ -7250,6 +7377,11 @@ pub struct ISensorDataThresholdTrigger_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISensorDataThresholdTriggerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISensorDataThresholdTriggerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISensorDataThresholdTriggerFactory {
     type Vtable = ISensorDataThresholdTriggerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x921fe675_7df0_4da3_97b3_e544ee857fe6);
@@ -7266,6 +7398,11 @@ pub struct ISensorDataThresholdTriggerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISmartCardTrigger(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISmartCardTrigger {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISmartCardTrigger {
     type Vtable = ISmartCardTrigger_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf53bc5ac_84ca_4972_8ce9_e58f97b37a50);
@@ -7282,6 +7419,11 @@ pub struct ISmartCardTrigger_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISmartCardTriggerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISmartCardTriggerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISmartCardTriggerFactory {
     type Vtable = ISmartCardTriggerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x63bf54c3_89c1_4e00_a9d3_97c629269dad);
@@ -7298,6 +7440,11 @@ pub struct ISmartCardTriggerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISmsMessageReceivedTriggerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISmsMessageReceivedTriggerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISmsMessageReceivedTriggerFactory {
     type Vtable = ISmsMessageReceivedTriggerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xea3ad8c8_6ba4_4ab2_8d21_bc6b09c77564);
@@ -7314,6 +7461,11 @@ pub struct ISmsMessageReceivedTriggerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISocketActivityTrigger(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISocketActivityTrigger {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISocketActivityTrigger {
     type Vtable = ISocketActivityTrigger_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa9bbf810_9dde_4f8a_83e3_b0e0e7a50d70);
@@ -7327,6 +7479,11 @@ pub struct ISocketActivityTrigger_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IStorageLibraryChangeTrackerTriggerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStorageLibraryChangeTrackerTriggerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IStorageLibraryChangeTrackerTriggerFactory {
     type Vtable = IStorageLibraryChangeTrackerTriggerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1eb0ffd0_5a85_499e_a888_824607124f50);
@@ -7343,6 +7500,11 @@ pub struct IStorageLibraryChangeTrackerTriggerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IStorageLibraryContentChangedTrigger(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStorageLibraryContentChangedTrigger {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IStorageLibraryContentChangedTrigger {
     type Vtable = IStorageLibraryContentChangedTrigger_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1637e0a7_829c_45bc_929b_a1e7ea78d89b);
@@ -7355,6 +7517,11 @@ pub struct IStorageLibraryContentChangedTrigger_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IStorageLibraryContentChangedTriggerStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStorageLibraryContentChangedTriggerStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IStorageLibraryContentChangedTriggerStatics {
     type Vtable = IStorageLibraryContentChangedTriggerStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x7f9f1b39_5f90_4e12_914e_a7d8e0bbfb18);
@@ -7375,6 +7542,11 @@ pub struct IStorageLibraryContentChangedTriggerStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISystemCondition(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISystemCondition {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISystemCondition {
     type Vtable = ISystemCondition_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc15fb476_89c5_420b_abd3_fb3030472128);
@@ -7388,6 +7560,11 @@ pub struct ISystemCondition_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISystemConditionFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISystemConditionFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISystemConditionFactory {
     type Vtable = ISystemConditionFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd269d1f1_05a7_49ae_87d7_16b2b8b9a553);
@@ -7401,6 +7578,11 @@ pub struct ISystemConditionFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISystemTrigger(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISystemTrigger {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISystemTrigger {
     type Vtable = ISystemTrigger_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1d80c776_3748_4463_8d7e_276dc139ac1c);
@@ -7415,6 +7597,11 @@ pub struct ISystemTrigger_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISystemTriggerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISystemTriggerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISystemTriggerFactory {
     type Vtable = ISystemTriggerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe80423d4_8791_4579_8126_87ec8aaa407a);
@@ -7428,6 +7615,11 @@ pub struct ISystemTriggerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ITimeTrigger(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITimeTrigger {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ITimeTrigger {
     type Vtable = ITimeTrigger_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x656e5556_0b2a_4377_ba70_3b45a935547f);
@@ -7442,6 +7634,11 @@ pub struct ITimeTrigger_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ITimeTriggerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITimeTriggerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ITimeTriggerFactory {
     type Vtable = ITimeTriggerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x38c682fe_9b54_45e6_b2f3_269b87a6f734);
@@ -7455,6 +7652,11 @@ pub struct ITimeTriggerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IToastNotificationActionTriggerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IToastNotificationActionTriggerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IToastNotificationActionTriggerFactory {
     type Vtable = IToastNotificationActionTriggerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb09dfc27_6480_4349_8125_97b3efaa0a3a);
@@ -7468,6 +7670,11 @@ pub struct IToastNotificationActionTriggerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IToastNotificationHistoryChangedTriggerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IToastNotificationHistoryChangedTriggerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IToastNotificationHistoryChangedTriggerFactory {
     type Vtable = IToastNotificationHistoryChangedTriggerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x81c6faad_8797_4785_81b4_b0cccb73d1d9);
@@ -7481,6 +7688,11 @@ pub struct IToastNotificationHistoryChangedTriggerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IUserNotificationChangedTriggerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUserNotificationChangedTriggerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IUserNotificationChangedTriggerFactory {
     type Vtable = IUserNotificationChangedTriggerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xcad4436c_69ab_4e18_a48a_5ed2ac435957);
@@ -7519,11 +7731,6 @@ impl LocationTrigger {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for LocationTrigger {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for LocationTrigger {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7537,7 +7744,6 @@ impl ::core::fmt::Debug for LocationTrigger {
 }
 unsafe impl ::windows::core::RuntimeType for LocationTrigger {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Background.LocationTrigger;{47666a1c-6877-481e-8026-ff7e14a811a0})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -7633,6 +7839,7 @@ impl ::core::default::Default for LocationTriggerType {
 }
 unsafe impl ::windows::core::Abi for LocationTriggerType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for LocationTriggerType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7641,7 +7848,6 @@ impl ::core::fmt::Debug for LocationTriggerType {
 }
 unsafe impl ::windows::core::RuntimeType for LocationTriggerType {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.Background.LocationTriggerType;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -7679,11 +7885,6 @@ impl MaintenanceTrigger {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for MaintenanceTrigger {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MaintenanceTrigger {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7697,7 +7898,6 @@ impl ::core::fmt::Debug for MaintenanceTrigger {
 }
 unsafe impl ::windows::core::RuntimeType for MaintenanceTrigger {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Background.MaintenanceTrigger;{68184c83-fc22-4ce5-841a-7239a9810047})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -7801,11 +8001,6 @@ impl MediaProcessingTrigger {
         }
     }
 }
-impl ::core::clone::Clone for MediaProcessingTrigger {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MediaProcessingTrigger {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7819,7 +8014,6 @@ impl ::core::fmt::Debug for MediaProcessingTrigger {
 }
 unsafe impl ::windows::core::RuntimeType for MediaProcessingTrigger {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Background.MediaProcessingTrigger;{9a95be65-8a52-4b30-9011-cf38040ea8b0})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -7916,6 +8110,7 @@ impl ::core::default::Default for MediaProcessingTriggerResult {
 }
 unsafe impl ::windows::core::Abi for MediaProcessingTriggerResult {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MediaProcessingTriggerResult {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7924,7 +8119,6 @@ impl ::core::fmt::Debug for MediaProcessingTriggerResult {
 }
 unsafe impl ::windows::core::RuntimeType for MediaProcessingTriggerResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.Background.MediaProcessingTriggerResult;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -7941,11 +8135,6 @@ impl MobileBroadbandDeviceServiceNotificationTrigger {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for MobileBroadbandDeviceServiceNotificationTrigger {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MobileBroadbandDeviceServiceNotificationTrigger {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7959,7 +8148,6 @@ impl ::core::fmt::Debug for MobileBroadbandDeviceServiceNotificationTrigger {
 }
 unsafe impl ::windows::core::RuntimeType for MobileBroadbandDeviceServiceNotificationTrigger {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Background.MobileBroadbandDeviceServiceNotificationTrigger;{84b3a058-6027-4b87-9790-bdf3f757dbd7})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -8047,11 +8235,6 @@ impl MobileBroadbandPcoDataChangeTrigger {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for MobileBroadbandPcoDataChangeTrigger {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MobileBroadbandPcoDataChangeTrigger {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8065,7 +8248,6 @@ impl ::core::fmt::Debug for MobileBroadbandPcoDataChangeTrigger {
 }
 unsafe impl ::windows::core::RuntimeType for MobileBroadbandPcoDataChangeTrigger {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Background.MobileBroadbandPcoDataChangeTrigger;{84b3a058-6027-4b87-9790-bdf3f757dbd7})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -8153,11 +8335,6 @@ impl MobileBroadbandPinLockStateChangeTrigger {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for MobileBroadbandPinLockStateChangeTrigger {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MobileBroadbandPinLockStateChangeTrigger {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8171,7 +8348,6 @@ impl ::core::fmt::Debug for MobileBroadbandPinLockStateChangeTrigger {
 }
 unsafe impl ::windows::core::RuntimeType for MobileBroadbandPinLockStateChangeTrigger {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Background.MobileBroadbandPinLockStateChangeTrigger;{84b3a058-6027-4b87-9790-bdf3f757dbd7})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -8259,11 +8435,6 @@ impl MobileBroadbandRadioStateChangeTrigger {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for MobileBroadbandRadioStateChangeTrigger {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MobileBroadbandRadioStateChangeTrigger {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8277,7 +8448,6 @@ impl ::core::fmt::Debug for MobileBroadbandRadioStateChangeTrigger {
 }
 unsafe impl ::windows::core::RuntimeType for MobileBroadbandRadioStateChangeTrigger {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Background.MobileBroadbandRadioStateChangeTrigger;{84b3a058-6027-4b87-9790-bdf3f757dbd7})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -8365,11 +8535,6 @@ impl MobileBroadbandRegistrationStateChangeTrigger {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for MobileBroadbandRegistrationStateChangeTrigger {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MobileBroadbandRegistrationStateChangeTrigger {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8383,7 +8548,6 @@ impl ::core::fmt::Debug for MobileBroadbandRegistrationStateChangeTrigger {
 }
 unsafe impl ::windows::core::RuntimeType for MobileBroadbandRegistrationStateChangeTrigger {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Background.MobileBroadbandRegistrationStateChangeTrigger;{84b3a058-6027-4b87-9790-bdf3f757dbd7})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -8471,11 +8635,6 @@ impl NetworkOperatorDataUsageTrigger {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for NetworkOperatorDataUsageTrigger {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for NetworkOperatorDataUsageTrigger {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8489,7 +8648,6 @@ impl ::core::fmt::Debug for NetworkOperatorDataUsageTrigger {
 }
 unsafe impl ::windows::core::RuntimeType for NetworkOperatorDataUsageTrigger {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Background.NetworkOperatorDataUsageTrigger;{84b3a058-6027-4b87-9790-bdf3f757dbd7})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -8577,11 +8735,6 @@ impl NetworkOperatorHotspotAuthenticationTrigger {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for NetworkOperatorHotspotAuthenticationTrigger {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for NetworkOperatorHotspotAuthenticationTrigger {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8595,7 +8748,6 @@ impl ::core::fmt::Debug for NetworkOperatorHotspotAuthenticationTrigger {
 }
 unsafe impl ::windows::core::RuntimeType for NetworkOperatorHotspotAuthenticationTrigger {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Background.NetworkOperatorHotspotAuthenticationTrigger;{e756c791-3001-4de5-83c7-de61d88831d0})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -8694,11 +8846,6 @@ impl NetworkOperatorNotificationTrigger {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for NetworkOperatorNotificationTrigger {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for NetworkOperatorNotificationTrigger {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8712,7 +8859,6 @@ impl ::core::fmt::Debug for NetworkOperatorNotificationTrigger {
 }
 unsafe impl ::windows::core::RuntimeType for NetworkOperatorNotificationTrigger {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Background.NetworkOperatorNotificationTrigger;{90089cc6-63cd-480c-95d1-6e6aef801e4a})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -8798,11 +8944,6 @@ impl PaymentAppCanMakePaymentTrigger {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for PaymentAppCanMakePaymentTrigger {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PaymentAppCanMakePaymentTrigger {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8816,7 +8957,6 @@ impl ::core::fmt::Debug for PaymentAppCanMakePaymentTrigger {
 }
 unsafe impl ::windows::core::RuntimeType for PaymentAppCanMakePaymentTrigger {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Background.PaymentAppCanMakePaymentTrigger;{84b3a058-6027-4b87-9790-bdf3f757dbd7})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -8927,11 +9067,6 @@ impl PhoneTrigger {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for PhoneTrigger {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PhoneTrigger {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8945,7 +9080,6 @@ impl ::core::fmt::Debug for PhoneTrigger {
 }
 unsafe impl ::windows::core::RuntimeType for PhoneTrigger {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Background.PhoneTrigger;{8dcfe99b-d4c5-49f1-b7d3-82e87a0e9dde})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -9045,11 +9179,6 @@ impl PushNotificationTrigger {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for PushNotificationTrigger {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PushNotificationTrigger {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9063,7 +9192,6 @@ impl ::core::fmt::Debug for PushNotificationTrigger {
 }
 unsafe impl ::windows::core::RuntimeType for PushNotificationTrigger {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Background.PushNotificationTrigger;{84b3a058-6027-4b87-9790-bdf3f757dbd7})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -9151,11 +9279,6 @@ impl RcsEndUserMessageAvailableTrigger {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for RcsEndUserMessageAvailableTrigger {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for RcsEndUserMessageAvailableTrigger {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9169,7 +9292,6 @@ impl ::core::fmt::Debug for RcsEndUserMessageAvailableTrigger {
 }
 unsafe impl ::windows::core::RuntimeType for RcsEndUserMessageAvailableTrigger {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Background.RcsEndUserMessageAvailableTrigger;{986d0d6a-b2f6-467f-a978-a44091c11a66})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -9318,11 +9440,6 @@ impl RfcommConnectionTrigger {
         unsafe { (::windows::core::Interface::vtable(this).SetRemoteHostName)(::core::mem::transmute_copy(this), value.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for RfcommConnectionTrigger {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for RfcommConnectionTrigger {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9336,7 +9453,6 @@ impl ::core::fmt::Debug for RfcommConnectionTrigger {
 }
 unsafe impl ::windows::core::RuntimeType for RfcommConnectionTrigger {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Background.RfcommConnectionTrigger;{e8c4cae2-0b53-4464-9394-fd875654de64})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -9427,12 +9543,6 @@ impl SecondaryAuthenticationFactorAuthenticationTrigger {
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for SecondaryAuthenticationFactorAuthenticationTrigger {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for SecondaryAuthenticationFactorAuthenticationTrigger {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9449,7 +9559,6 @@ impl ::core::fmt::Debug for SecondaryAuthenticationFactorAuthenticationTrigger {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for SecondaryAuthenticationFactorAuthenticationTrigger {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Background.SecondaryAuthenticationFactorAuthenticationTrigger;{f237f327-5181-4f24-96a7-700a4e5fac62})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -9555,11 +9664,6 @@ impl SensorDataThresholdTrigger {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for SensorDataThresholdTrigger {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SensorDataThresholdTrigger {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9573,7 +9677,6 @@ impl ::core::fmt::Debug for SensorDataThresholdTrigger {
 }
 unsafe impl ::windows::core::RuntimeType for SensorDataThresholdTrigger {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Background.SensorDataThresholdTrigger;{5bc0f372-d48b-4b7f-abec-15f9bacc12e2})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -9676,11 +9779,6 @@ impl SmartCardTrigger {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for SmartCardTrigger {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SmartCardTrigger {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9694,7 +9792,6 @@ impl ::core::fmt::Debug for SmartCardTrigger {
 }
 unsafe impl ::windows::core::RuntimeType for SmartCardTrigger {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Background.SmartCardTrigger;{f53bc5ac-84ca-4972-8ce9-e58f97b37a50})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -9786,11 +9883,6 @@ impl SmsMessageReceivedTrigger {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for SmsMessageReceivedTrigger {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SmsMessageReceivedTrigger {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9804,7 +9896,6 @@ impl ::core::fmt::Debug for SmsMessageReceivedTrigger {
 }
 unsafe impl ::windows::core::RuntimeType for SmsMessageReceivedTrigger {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Background.SmsMessageReceivedTrigger;{84b3a058-6027-4b87-9790-bdf3f757dbd7})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -9900,11 +9991,6 @@ impl SocketActivityTrigger {
         }
     }
 }
-impl ::core::clone::Clone for SocketActivityTrigger {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SocketActivityTrigger {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9918,7 +10004,6 @@ impl ::core::fmt::Debug for SocketActivityTrigger {
 }
 unsafe impl ::windows::core::RuntimeType for SocketActivityTrigger {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Background.SocketActivityTrigger;{84b3a058-6027-4b87-9790-bdf3f757dbd7})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -10012,11 +10097,6 @@ impl StorageLibraryChangeTrackerTrigger {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for StorageLibraryChangeTrackerTrigger {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for StorageLibraryChangeTrackerTrigger {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10030,7 +10110,6 @@ impl ::core::fmt::Debug for StorageLibraryChangeTrackerTrigger {
 }
 unsafe impl ::windows::core::RuntimeType for StorageLibraryChangeTrackerTrigger {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Background.StorageLibraryChangeTrackerTrigger;{84b3a058-6027-4b87-9790-bdf3f757dbd7})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -10132,11 +10211,6 @@ impl StorageLibraryContentChangedTrigger {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for StorageLibraryContentChangedTrigger {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for StorageLibraryContentChangedTrigger {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10150,7 +10224,6 @@ impl ::core::fmt::Debug for StorageLibraryContentChangedTrigger {
 }
 unsafe impl ::windows::core::RuntimeType for StorageLibraryContentChangedTrigger {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Background.StorageLibraryContentChangedTrigger;{1637e0a7-829c-45bc-929b-a1e7ea78d89b})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -10249,11 +10322,6 @@ impl SystemCondition {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for SystemCondition {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SystemCondition {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10267,7 +10335,6 @@ impl ::core::fmt::Debug for SystemCondition {
 }
 unsafe impl ::windows::core::RuntimeType for SystemCondition {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Background.SystemCondition;{c15fb476-89c5-420b-abd3-fb3030472128})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -10369,6 +10436,7 @@ impl ::core::default::Default for SystemConditionType {
 }
 unsafe impl ::windows::core::Abi for SystemConditionType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SystemConditionType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10377,7 +10445,6 @@ impl ::core::fmt::Debug for SystemConditionType {
 }
 unsafe impl ::windows::core::RuntimeType for SystemConditionType {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.Background.SystemConditionType;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -10415,11 +10482,6 @@ impl SystemTrigger {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for SystemTrigger {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SystemTrigger {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10433,7 +10495,6 @@ impl ::core::fmt::Debug for SystemTrigger {
 }
 unsafe impl ::windows::core::RuntimeType for SystemTrigger {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Background.SystemTrigger;{1d80c776-3748-4463-8d7e-276dc139ac1c})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -10542,6 +10603,7 @@ impl ::core::default::Default for SystemTriggerType {
 }
 unsafe impl ::windows::core::Abi for SystemTriggerType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SystemTriggerType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10550,7 +10612,6 @@ impl ::core::fmt::Debug for SystemTriggerType {
 }
 unsafe impl ::windows::core::RuntimeType for SystemTriggerType {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.Background.SystemTriggerType;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -10567,11 +10628,6 @@ impl TetheringEntitlementCheckTrigger {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for TetheringEntitlementCheckTrigger {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for TetheringEntitlementCheckTrigger {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10585,7 +10641,6 @@ impl ::core::fmt::Debug for TetheringEntitlementCheckTrigger {
 }
 unsafe impl ::windows::core::RuntimeType for TetheringEntitlementCheckTrigger {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Background.TetheringEntitlementCheckTrigger;{84b3a058-6027-4b87-9790-bdf3f757dbd7})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -10694,11 +10749,6 @@ impl TimeTrigger {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for TimeTrigger {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for TimeTrigger {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10712,7 +10762,6 @@ impl ::core::fmt::Debug for TimeTrigger {
 }
 unsafe impl ::windows::core::RuntimeType for TimeTrigger {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Background.TimeTrigger;{656e5556-0b2a-4377-ba70-3b45a935547f})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -10810,11 +10859,6 @@ impl ToastNotificationActionTrigger {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for ToastNotificationActionTrigger {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ToastNotificationActionTrigger {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10828,7 +10872,6 @@ impl ::core::fmt::Debug for ToastNotificationActionTrigger {
 }
 unsafe impl ::windows::core::RuntimeType for ToastNotificationActionTrigger {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Background.ToastNotificationActionTrigger;{84b3a058-6027-4b87-9790-bdf3f757dbd7})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -10928,11 +10971,6 @@ impl ToastNotificationHistoryChangedTrigger {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for ToastNotificationHistoryChangedTrigger {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ToastNotificationHistoryChangedTrigger {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10946,7 +10984,6 @@ impl ::core::fmt::Debug for ToastNotificationHistoryChangedTrigger {
 }
 unsafe impl ::windows::core::RuntimeType for ToastNotificationHistoryChangedTrigger {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Background.ToastNotificationHistoryChangedTrigger;{84b3a058-6027-4b87-9790-bdf3f757dbd7})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -11040,11 +11077,6 @@ impl UserNotificationChangedTrigger {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for UserNotificationChangedTrigger {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for UserNotificationChangedTrigger {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11058,7 +11090,6 @@ impl ::core::fmt::Debug for UserNotificationChangedTrigger {
 }
 unsafe impl ::windows::core::RuntimeType for UserNotificationChangedTrigger {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Background.UserNotificationChangedTrigger;{84b3a058-6027-4b87-9790-bdf3f757dbd7})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

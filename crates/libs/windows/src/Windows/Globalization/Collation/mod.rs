@@ -20,11 +20,6 @@ impl CharacterGrouping {
         }
     }
 }
-impl ::core::clone::Clone for CharacterGrouping {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for CharacterGrouping {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -38,7 +33,6 @@ impl ::core::fmt::Debug for CharacterGrouping {
 }
 unsafe impl ::windows::core::RuntimeType for CharacterGrouping {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Globalization.Collation.CharacterGrouping;{fae761bb-805d-4bb0-95bb-c1f7c3e8eb8e})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -169,11 +163,6 @@ impl CharacterGroupings {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for CharacterGroupings {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for CharacterGroupings {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -187,7 +176,6 @@ impl ::core::fmt::Debug for CharacterGroupings {
 }
 unsafe impl ::windows::core::RuntimeType for CharacterGroupings {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Globalization.Collation.CharacterGroupings;{b8d20a75-d4cf-4055-80e5-ce169c226496})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -312,6 +300,11 @@ unsafe impl ::core::marker::Sync for CharacterGroupings {}
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICharacterGrouping(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICharacterGrouping {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICharacterGrouping {
     type Vtable = ICharacterGrouping_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xfae761bb_805d_4bb0_95bb_c1f7c3e8eb8e);
@@ -326,6 +319,11 @@ pub struct ICharacterGrouping_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICharacterGroupings(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICharacterGroupings {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICharacterGroupings {
     type Vtable = ICharacterGroupings_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb8d20a75_d4cf_4055_80e5_ce169c226496);
@@ -339,6 +337,11 @@ pub struct ICharacterGroupings_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICharacterGroupingsFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICharacterGroupingsFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICharacterGroupingsFactory {
     type Vtable = ICharacterGroupingsFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x99ea9fd9_886d_4401_9f98_69c82d4c2f78);

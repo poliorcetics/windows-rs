@@ -41,10 +41,16 @@ impl ::core::fmt::Debug for HSWDEVICE {
 }
 unsafe impl ::windows::core::Abi for HSWDEVICE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[doc = "*Required features: `\"Win32_Devices_Enumeration_Pnp\"`*"]
 #[repr(transparent)]
 pub struct IUPnPAddressFamilyControl(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUPnPAddressFamilyControl {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUPnPAddressFamilyControl {
     #[doc = "*Required features: `\"Win32_Devices_Enumeration_Pnp\"`*"]
     pub unsafe fn SetAddressFamily(&self, dwflags: i32) -> ::windows::core::Result<()> {
@@ -76,11 +82,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUPnP
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUPnPAddressFamilyControl {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUPnPAddressFamilyControl {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -106,6 +107,11 @@ pub struct IUPnPAddressFamilyControl_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_Enumeration_Pnp\"`*"]
 #[repr(transparent)]
 pub struct IUPnPAsyncResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUPnPAsyncResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUPnPAsyncResult {
     #[doc = "*Required features: `\"Win32_Devices_Enumeration_Pnp\"`*"]
     pub unsafe fn AsyncOperationComplete(&self, ullrequestid: u64) -> ::windows::core::Result<()> {
@@ -130,11 +136,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IUPnPAsyn
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUPnPAsyncResult {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IUPnPAsyncResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IUPnPAsyncResult {
@@ -162,6 +163,12 @@ pub struct IUPnPAsyncResult_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IUPnPDescriptionDocument(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IUPnPDescriptionDocument {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IUPnPDescriptionDocument {
     #[doc = "*Required features: `\"Win32_Devices_Enumeration_Pnp\"`*"]
@@ -250,12 +257,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IUPnPDescriptionDocument {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IUPnPDescriptionDocument {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -302,6 +303,11 @@ pub struct IUPnPDescriptionDocument_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_Enumeration_Pnp\"`*"]
 #[repr(transparent)]
 pub struct IUPnPDescriptionDocumentCallback(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUPnPDescriptionDocumentCallback {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUPnPDescriptionDocumentCallback {
     #[doc = "*Required features: `\"Win32_Devices_Enumeration_Pnp\"`*"]
     pub unsafe fn LoadComplete(&self, hrloadresult: ::windows::core::HRESULT) -> ::windows::core::Result<()> {
@@ -326,11 +332,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IUPnPDesc
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUPnPDescriptionDocumentCallback {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IUPnPDescriptionDocumentCallback {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IUPnPDescriptionDocumentCallback {
@@ -358,6 +359,12 @@ pub struct IUPnPDescriptionDocumentCallback_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IUPnPDevice(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IUPnPDevice {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IUPnPDevice {
     #[doc = "*Required features: `\"Win32_Devices_Enumeration_Pnp\"`*"]
@@ -522,12 +529,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IUPnPDevice {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IUPnPDevice {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -625,6 +626,11 @@ pub struct IUPnPDevice_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_Enumeration_Pnp\"`*"]
 #[repr(transparent)]
 pub struct IUPnPDeviceControl(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUPnPDeviceControl {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUPnPDeviceControl {
     #[doc = "*Required features: `\"Win32_Devices_Enumeration_Pnp\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -658,11 +664,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUPnP
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUPnPDeviceControl {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUPnPDeviceControl {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -694,6 +695,11 @@ pub struct IUPnPDeviceControl_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_Enumeration_Pnp\"`*"]
 #[repr(transparent)]
 pub struct IUPnPDeviceControlHttpHeaders(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUPnPDeviceControlHttpHeaders {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUPnPDeviceControlHttpHeaders {
     #[doc = "*Required features: `\"Win32_Devices_Enumeration_Pnp\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -720,11 +726,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IUPnPDevi
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUPnPDeviceControlHttpHeaders {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IUPnPDeviceControlHttpHeaders {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IUPnPDeviceControlHttpHeaders {
@@ -754,6 +755,11 @@ pub struct IUPnPDeviceControlHttpHeaders_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_Enumeration_Pnp\"`*"]
 #[repr(transparent)]
 pub struct IUPnPDeviceDocumentAccess(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUPnPDeviceDocumentAccess {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUPnPDeviceDocumentAccess {
     #[doc = "*Required features: `\"Win32_Devices_Enumeration_Pnp\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -780,11 +786,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IUPnPDevi
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUPnPDeviceDocumentAccess {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IUPnPDeviceDocumentAccess {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IUPnPDeviceDocumentAccess {
@@ -814,6 +815,11 @@ pub struct IUPnPDeviceDocumentAccess_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_Enumeration_Pnp\"`*"]
 #[repr(transparent)]
 pub struct IUPnPDeviceDocumentAccessEx(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUPnPDeviceDocumentAccessEx {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUPnPDeviceDocumentAccessEx {
     #[doc = "*Required features: `\"Win32_Devices_Enumeration_Pnp\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -840,11 +846,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IUPnPDevi
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUPnPDeviceDocumentAccessEx {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IUPnPDeviceDocumentAccessEx {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IUPnPDeviceDocumentAccessEx {
@@ -875,6 +876,12 @@ pub struct IUPnPDeviceDocumentAccessEx_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IUPnPDeviceFinder(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IUPnPDeviceFinder {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IUPnPDeviceFinder {
     #[doc = "*Required features: `\"Win32_Devices_Enumeration_Pnp\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`*"]
@@ -953,12 +960,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IUPnPDeviceFinder {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IUPnPDeviceFinder {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1000,6 +1001,11 @@ pub struct IUPnPDeviceFinder_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_Enumeration_Pnp\"`*"]
 #[repr(transparent)]
 pub struct IUPnPDeviceFinderAddCallbackWithInterface(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUPnPDeviceFinderAddCallbackWithInterface {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUPnPDeviceFinderAddCallbackWithInterface {
     #[doc = "*Required features: `\"Win32_Devices_Enumeration_Pnp\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -1025,11 +1031,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IUPnPDevi
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUPnPDeviceFinderAddCallbackWithInterface {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IUPnPDeviceFinderAddCallbackWithInterface {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IUPnPDeviceFinderAddCallbackWithInterface {
@@ -1059,6 +1060,11 @@ pub struct IUPnPDeviceFinderAddCallbackWithInterface_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_Enumeration_Pnp\"`*"]
 #[repr(transparent)]
 pub struct IUPnPDeviceFinderCallback(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUPnPDeviceFinderCallback {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUPnPDeviceFinderCallback {
     #[doc = "*Required features: `\"Win32_Devices_Enumeration_Pnp\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -1095,11 +1101,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUPnP
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUPnPDeviceFinderCallback {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUPnPDeviceFinderCallback {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1132,6 +1133,11 @@ pub struct IUPnPDeviceFinderCallback_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_Enumeration_Pnp\"`*"]
 #[repr(transparent)]
 pub struct IUPnPDeviceProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUPnPDeviceProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUPnPDeviceProvider {
     #[doc = "*Required features: `\"Win32_Devices_Enumeration_Pnp\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -1163,11 +1169,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUPnP
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUPnPDeviceProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUPnPDeviceProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1197,6 +1198,12 @@ pub struct IUPnPDeviceProvider_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IUPnPDevices(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IUPnPDevices {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IUPnPDevices {
     #[doc = "*Required features: `\"Win32_Devices_Enumeration_Pnp\"`*"]
@@ -1265,12 +1272,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IUPnPDevices {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IUPnPDevices {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1304,6 +1305,11 @@ pub struct IUPnPDevices_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_Enumeration_Pnp\"`*"]
 #[repr(transparent)]
 pub struct IUPnPEventSink(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUPnPEventSink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUPnPEventSink {
     #[doc = "*Required features: `\"Win32_Devices_Enumeration_Pnp\"`*"]
     pub unsafe fn OnStateChanged(&self, rgdispidchanges: &[i32]) -> ::windows::core::Result<()> {
@@ -1335,11 +1341,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUPnP
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUPnPEventSink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUPnPEventSink {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1368,6 +1369,11 @@ pub struct IUPnPEventSink_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_Enumeration_Pnp\"`*"]
 #[repr(transparent)]
 pub struct IUPnPEventSource(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUPnPEventSource {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUPnPEventSource {
     #[doc = "*Required features: `\"Win32_Devices_Enumeration_Pnp\"`*"]
     pub unsafe fn Advise<'a, Param0: ::windows::core::IntoParam<'a, IUPnPEventSink>>(&self, pessubscriber: Param0) -> ::windows::core::Result<()> {
@@ -1398,11 +1404,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUPnP
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUPnPEventSource {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUPnPEventSource {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1428,6 +1429,11 @@ pub struct IUPnPEventSource_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_Enumeration_Pnp\"`*"]
 #[repr(transparent)]
 pub struct IUPnPHttpHeaderControl(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUPnPHttpHeaderControl {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUPnPHttpHeaderControl {
     #[doc = "*Required features: `\"Win32_Devices_Enumeration_Pnp\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -1453,11 +1459,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IUPnPHttp
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUPnPHttpHeaderControl {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IUPnPHttpHeaderControl {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IUPnPHttpHeaderControl {
@@ -1487,6 +1488,11 @@ pub struct IUPnPHttpHeaderControl_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_Enumeration_Pnp\"`*"]
 #[repr(transparent)]
 pub struct IUPnPRegistrar(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUPnPRegistrar {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUPnPRegistrar {
     #[doc = "*Required features: `\"Win32_Devices_Enumeration_Pnp\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -1542,11 +1548,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUPnP
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUPnPRegistrar {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUPnPRegistrar {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1594,6 +1595,11 @@ pub struct IUPnPRegistrar_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_Enumeration_Pnp\"`*"]
 #[repr(transparent)]
 pub struct IUPnPRemoteEndpointInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUPnPRemoteEndpointInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUPnPRemoteEndpointInfo {
     #[doc = "*Required features: `\"Win32_Devices_Enumeration_Pnp\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -1634,11 +1640,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUPnP
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUPnPRemoteEndpointInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUPnPRemoteEndpointInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1674,6 +1675,11 @@ pub struct IUPnPRemoteEndpointInfo_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_Enumeration_Pnp\"`*"]
 #[repr(transparent)]
 pub struct IUPnPReregistrar(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUPnPReregistrar {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUPnPReregistrar {
     #[doc = "*Required features: `\"Win32_Devices_Enumeration_Pnp\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -1704,11 +1710,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IUPnPRere
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUPnPReregistrar {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IUPnPReregistrar {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IUPnPReregistrar {
@@ -1743,6 +1744,12 @@ pub struct IUPnPReregistrar_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IUPnPService(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IUPnPService {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IUPnPService {
     #[doc = "*Required features: `\"Win32_Devices_Enumeration_Pnp\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
@@ -1827,12 +1834,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IUPnPService {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IUPnPService {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1878,6 +1879,11 @@ pub struct IUPnPService_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_Enumeration_Pnp\"`*"]
 #[repr(transparent)]
 pub struct IUPnPServiceAsync(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUPnPServiceAsync {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUPnPServiceAsync {
     #[doc = "*Required features: `\"Win32_Devices_Enumeration_Pnp\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com", feature = "Win32_System_Ole"))]
@@ -1946,11 +1952,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUPnP
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUPnPServiceAsync {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUPnPServiceAsync {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1998,6 +1999,11 @@ pub struct IUPnPServiceAsync_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_Enumeration_Pnp\"`*"]
 #[repr(transparent)]
 pub struct IUPnPServiceCallback(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUPnPServiceCallback {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUPnPServiceCallback {
     #[doc = "*Required features: `\"Win32_Devices_Enumeration_Pnp\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com", feature = "Win32_System_Ole"))]
@@ -2028,11 +2034,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IUPnPServ
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUPnPServiceCallback {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IUPnPServiceCallback {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IUPnPServiceCallback {
@@ -2066,6 +2067,11 @@ pub struct IUPnPServiceCallback_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_Enumeration_Pnp\"`*"]
 #[repr(transparent)]
 pub struct IUPnPServiceDocumentAccess(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUPnPServiceDocumentAccess {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUPnPServiceDocumentAccess {
     #[doc = "*Required features: `\"Win32_Devices_Enumeration_Pnp\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -2100,11 +2106,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUPnP
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IUPnPServiceDocumentAccess {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IUPnPServiceDocumentAccess {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2136,6 +2137,11 @@ pub struct IUPnPServiceDocumentAccess_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_Enumeration_Pnp\"`*"]
 #[repr(transparent)]
 pub struct IUPnPServiceEnumProperty(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUPnPServiceEnumProperty {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUPnPServiceEnumProperty {
     #[doc = "*Required features: `\"Win32_Devices_Enumeration_Pnp\"`*"]
     pub unsafe fn SetServiceEnumProperty(&self, dwmask: u32) -> ::windows::core::Result<()> {
@@ -2160,11 +2166,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IUPnPServ
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUPnPServiceEnumProperty {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IUPnPServiceEnumProperty {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IUPnPServiceEnumProperty {
@@ -2192,6 +2193,12 @@ pub struct IUPnPServiceEnumProperty_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IUPnPServices(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IUPnPServices {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IUPnPServices {
     #[doc = "*Required features: `\"Win32_Devices_Enumeration_Pnp\"`*"]
@@ -2260,12 +2267,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::super::System::Com::IDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IUPnPServices {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IUPnPServices {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2325,6 +2326,7 @@ impl ::core::default::Default for SW_DEVICE_CAPABILITIES {
 }
 unsafe impl ::windows::core::Abi for SW_DEVICE_CAPABILITIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SW_DEVICE_CAPABILITIES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2364,6 +2366,7 @@ impl ::core::fmt::Debug for SW_DEVICE_CREATE_INFO {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security"))]
 unsafe impl ::windows::core::Abi for SW_DEVICE_CREATE_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security"))]
 impl ::core::cmp::PartialEq for SW_DEVICE_CREATE_INFO {
@@ -2402,6 +2405,7 @@ impl ::core::default::Default for SW_DEVICE_LIFETIME {
 }
 unsafe impl ::windows::core::Abi for SW_DEVICE_LIFETIME {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SW_DEVICE_LIFETIME {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

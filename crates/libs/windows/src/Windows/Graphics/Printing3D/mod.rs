@@ -2,6 +2,11 @@
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrint3DManager(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrint3DManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrint3DManager {
     type Vtable = IPrint3DManager_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x4d2fcb0a_7366_4971_8bd5_17c4e3e8c6c0);
@@ -22,6 +27,11 @@ pub struct IPrint3DManager_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrint3DManagerStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrint3DManagerStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrint3DManagerStatics {
     type Vtable = IPrint3DManagerStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x0ef1cafe_a9ad_4c08_a917_1d1f863eabcb);
@@ -39,6 +49,11 @@ pub struct IPrint3DManagerStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrint3DTask(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrint3DTask {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrint3DTask {
     type Vtable = IPrint3DTask_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x8ce3d080_2118_4c28_80de_f426d70191ae);
@@ -76,6 +91,11 @@ pub struct IPrint3DTask_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrint3DTaskCompletedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrint3DTaskCompletedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrint3DTaskCompletedEventArgs {
     type Vtable = IPrint3DTaskCompletedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xcc1914af_2614_4f1d_accc_d6fc4fda5455);
@@ -90,6 +110,11 @@ pub struct IPrint3DTaskCompletedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrint3DTaskRequest(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrint3DTaskRequest {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrint3DTaskRequest {
     type Vtable = IPrint3DTaskRequest_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x2595c46f_2245_4c5a_8731_0d604dc6bc3c);
@@ -103,6 +128,11 @@ pub struct IPrint3DTaskRequest_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrint3DTaskRequestedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrint3DTaskRequestedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrint3DTaskRequestedEventArgs {
     type Vtable = IPrint3DTaskRequestedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x150cb77f_18c5_40d7_9f40_fab3096e05a9);
@@ -116,6 +146,11 @@ pub struct IPrint3DTaskRequestedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrint3DTaskSourceChangedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrint3DTaskSourceChangedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrint3DTaskSourceChangedEventArgs {
     type Vtable = IPrint3DTaskSourceChangedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x5bcd34af_24e9_4c10_8d07_14c346ba3fcf);
@@ -129,6 +164,11 @@ pub struct IPrint3DTaskSourceChangedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrint3DTaskSourceRequestedArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrint3DTaskSourceRequestedArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrint3DTaskSourceRequestedArgs {
     type Vtable = IPrint3DTaskSourceRequestedArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc77c9aba_24af_424d_a3bf_92250c355602);
@@ -142,6 +182,11 @@ pub struct IPrint3DTaskSourceRequestedArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrinting3D3MFPackage(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrinting3D3MFPackage {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrinting3D3MFPackage {
     type Vtable = IPrinting3D3MFPackage_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf64dd5c8_2ab7_45a9_a1b7_267e948d5b18);
@@ -188,6 +233,11 @@ pub struct IPrinting3D3MFPackage_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrinting3D3MFPackage2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrinting3D3MFPackage2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrinting3D3MFPackage2 {
     type Vtable = IPrinting3D3MFPackage2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x965c7ac4_93cb_4430_92b8_789cd454f883);
@@ -202,6 +252,11 @@ pub struct IPrinting3D3MFPackage2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrinting3D3MFPackageStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrinting3D3MFPackageStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrinting3D3MFPackageStatics {
     type Vtable = IPrinting3D3MFPackageStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x7058d9af_7a9a_4787_b817_f6f459214823);
@@ -218,6 +273,11 @@ pub struct IPrinting3D3MFPackageStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrinting3DBaseMaterial(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrinting3DBaseMaterial {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrinting3DBaseMaterial {
     type Vtable = IPrinting3DBaseMaterial_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd0f0e743_c50c_4bcb_9d04_fc16adcea2c9);
@@ -234,6 +294,11 @@ pub struct IPrinting3DBaseMaterial_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrinting3DBaseMaterialGroup(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrinting3DBaseMaterialGroup {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrinting3DBaseMaterialGroup {
     type Vtable = IPrinting3DBaseMaterialGroup_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x94f070b8_2515_4a8d_a1f0_d0fc13d06021);
@@ -251,6 +316,11 @@ pub struct IPrinting3DBaseMaterialGroup_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrinting3DBaseMaterialGroupFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrinting3DBaseMaterialGroupFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrinting3DBaseMaterialGroupFactory {
     type Vtable = IPrinting3DBaseMaterialGroupFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x5c1546dc_8697_4193_976b_84bb4116e5bf);
@@ -264,6 +334,11 @@ pub struct IPrinting3DBaseMaterialGroupFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrinting3DBaseMaterialStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrinting3DBaseMaterialStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrinting3DBaseMaterialStatics {
     type Vtable = IPrinting3DBaseMaterialStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x815a47bc_374a_476d_be92_3ecfd1cb9776);
@@ -278,6 +353,11 @@ pub struct IPrinting3DBaseMaterialStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrinting3DColorMaterial(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrinting3DColorMaterial {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrinting3DColorMaterial {
     type Vtable = IPrinting3DColorMaterial_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe1899928_7ce7_4285_a35d_f145c9510c7b);
@@ -292,6 +372,11 @@ pub struct IPrinting3DColorMaterial_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrinting3DColorMaterial2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrinting3DColorMaterial2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrinting3DColorMaterial2 {
     type Vtable = IPrinting3DColorMaterial2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xfab0e852_0aef_44e9_9ddd_36eeea5acd44);
@@ -312,6 +397,11 @@ pub struct IPrinting3DColorMaterial2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrinting3DColorMaterialGroup(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrinting3DColorMaterialGroup {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrinting3DColorMaterialGroup {
     type Vtable = IPrinting3DColorMaterialGroup_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x001a6bd0_aadf_4226_afe9_f369a0b45004);
@@ -329,6 +419,11 @@ pub struct IPrinting3DColorMaterialGroup_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrinting3DColorMaterialGroupFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrinting3DColorMaterialGroupFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrinting3DColorMaterialGroupFactory {
     type Vtable = IPrinting3DColorMaterialGroupFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x71d38d6d_b1ea_4a5b_bc54_19c65f3df044);
@@ -342,6 +437,11 @@ pub struct IPrinting3DColorMaterialGroupFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrinting3DComponent(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrinting3DComponent {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrinting3DComponent {
     type Vtable = IPrinting3DComponent_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x7e287845_bf7f_4cdb_a27f_30a01437fede);
@@ -368,6 +468,11 @@ pub struct IPrinting3DComponent_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrinting3DComponentWithMatrix(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrinting3DComponentWithMatrix {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrinting3DComponentWithMatrix {
     type Vtable = IPrinting3DComponentWithMatrix_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x3279f335_0ef0_456b_9a21_49bebe8b51c2);
@@ -390,6 +495,11 @@ pub struct IPrinting3DComponentWithMatrix_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrinting3DCompositeMaterial(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrinting3DCompositeMaterial {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrinting3DCompositeMaterial {
     type Vtable = IPrinting3DCompositeMaterial_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x462238dd_562e_4f6c_882d_f4d841fd63c7);
@@ -406,6 +516,11 @@ pub struct IPrinting3DCompositeMaterial_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrinting3DCompositeMaterialGroup(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrinting3DCompositeMaterialGroup {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrinting3DCompositeMaterialGroup {
     type Vtable = IPrinting3DCompositeMaterialGroup_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x8d946a5b_40f1_496d_a5fb_340a5a678e30);
@@ -427,6 +542,11 @@ pub struct IPrinting3DCompositeMaterialGroup_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrinting3DCompositeMaterialGroup2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrinting3DCompositeMaterialGroup2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrinting3DCompositeMaterialGroup2 {
     type Vtable = IPrinting3DCompositeMaterialGroup2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x06e86d62_7d3b_41e1_944c_bafde4555483);
@@ -441,6 +561,11 @@ pub struct IPrinting3DCompositeMaterialGroup2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrinting3DCompositeMaterialGroupFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrinting3DCompositeMaterialGroupFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrinting3DCompositeMaterialGroupFactory {
     type Vtable = IPrinting3DCompositeMaterialGroupFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd08ecd13_92ff_43aa_a627_8d43c22c817e);
@@ -454,6 +579,11 @@ pub struct IPrinting3DCompositeMaterialGroupFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrinting3DFaceReductionOptions(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrinting3DFaceReductionOptions {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrinting3DFaceReductionOptions {
     type Vtable = IPrinting3DFaceReductionOptions_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xbbfed397_2d74_46f7_be85_99a67bbb6629);
@@ -472,6 +602,11 @@ pub struct IPrinting3DFaceReductionOptions_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrinting3DMaterial(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrinting3DMaterial {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrinting3DMaterial {
     type Vtable = IPrinting3DMaterial_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x378db256_ed62_4952_b85b_03567d7c465e);
@@ -504,6 +639,11 @@ pub struct IPrinting3DMaterial_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrinting3DMesh(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrinting3DMesh {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrinting3DMesh {
     type Vtable = IPrinting3DMesh_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x192e90dc_0228_2e01_bc20_c5290cbf32c4);
@@ -560,6 +700,11 @@ pub struct IPrinting3DMesh_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrinting3DMeshVerificationResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrinting3DMeshVerificationResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrinting3DMeshVerificationResult {
     type Vtable = IPrinting3DMeshVerificationResult_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x195671ba_e93a_4e8a_a46f_dea8e852197e);
@@ -581,6 +726,11 @@ pub struct IPrinting3DMeshVerificationResult_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrinting3DModel(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrinting3DModel {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrinting3DModel {
     type Vtable = IPrinting3DModel_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x2d012ef0_52fb_919a_77b0_4b1a3b80324f);
@@ -626,6 +776,11 @@ pub struct IPrinting3DModel_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrinting3DModel2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrinting3DModel2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrinting3DModel2 {
     type Vtable = IPrinting3DModel2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc92069c7_c841_47f3_a84e_a149fd08b657);
@@ -662,6 +817,11 @@ pub struct IPrinting3DModel2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrinting3DModelTexture(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrinting3DModelTexture {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrinting3DModelTexture {
     type Vtable = IPrinting3DModelTexture_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x5dafcf01_b59d_483c_97bb_a4d546d1c75c);
@@ -680,6 +840,11 @@ pub struct IPrinting3DModelTexture_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrinting3DMultiplePropertyMaterial(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrinting3DMultiplePropertyMaterial {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrinting3DMultiplePropertyMaterial {
     type Vtable = IPrinting3DMultiplePropertyMaterial_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x25a6254b_c6e9_484d_a214_a25e5776ba62);
@@ -696,6 +861,11 @@ pub struct IPrinting3DMultiplePropertyMaterial_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrinting3DMultiplePropertyMaterialGroup(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrinting3DMultiplePropertyMaterialGroup {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrinting3DMultiplePropertyMaterialGroup {
     type Vtable = IPrinting3DMultiplePropertyMaterialGroup_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf0950519_aeb9_4515_a39b_a088fbbb277c);
@@ -717,6 +887,11 @@ pub struct IPrinting3DMultiplePropertyMaterialGroup_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrinting3DMultiplePropertyMaterialGroupFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrinting3DMultiplePropertyMaterialGroupFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrinting3DMultiplePropertyMaterialGroupFactory {
     type Vtable = IPrinting3DMultiplePropertyMaterialGroupFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x323e196e_d4c6_451e_a814_4d78a210fe53);
@@ -730,6 +905,11 @@ pub struct IPrinting3DMultiplePropertyMaterialGroupFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrinting3DTexture2CoordMaterial(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrinting3DTexture2CoordMaterial {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrinting3DTexture2CoordMaterial {
     type Vtable = IPrinting3DTexture2CoordMaterial_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x8d844bfb_07e9_4986_9833_8dd3d48c6859);
@@ -748,6 +928,11 @@ pub struct IPrinting3DTexture2CoordMaterial_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrinting3DTexture2CoordMaterialGroup(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrinting3DTexture2CoordMaterialGroup {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrinting3DTexture2CoordMaterialGroup {
     type Vtable = IPrinting3DTexture2CoordMaterialGroup_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x627d7ca7_6d90_4fb9_9fc4_9feff3dfa892);
@@ -765,6 +950,11 @@ pub struct IPrinting3DTexture2CoordMaterialGroup_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrinting3DTexture2CoordMaterialGroup2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrinting3DTexture2CoordMaterialGroup2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrinting3DTexture2CoordMaterialGroup2 {
     type Vtable = IPrinting3DTexture2CoordMaterialGroup2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x69fbdbba_b12e_429b_8386_df5284f6e80f);
@@ -779,6 +969,11 @@ pub struct IPrinting3DTexture2CoordMaterialGroup2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrinting3DTexture2CoordMaterialGroupFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrinting3DTexture2CoordMaterialGroupFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrinting3DTexture2CoordMaterialGroupFactory {
     type Vtable = IPrinting3DTexture2CoordMaterialGroupFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xcbb049b0_468a_4c6f_b2a2_8eb8ba8dea48);
@@ -792,6 +987,11 @@ pub struct IPrinting3DTexture2CoordMaterialGroupFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPrinting3DTextureResource(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrinting3DTextureResource {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPrinting3DTextureResource {
     type Vtable = IPrinting3DTextureResource_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa70df32d_6ab1_44ae_bc45_a27382c0d38c);
@@ -851,11 +1051,6 @@ impl Print3DManager {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for Print3DManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for Print3DManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -869,7 +1064,6 @@ impl ::core::fmt::Debug for Print3DManager {
 }
 unsafe impl ::windows::core::RuntimeType for Print3DManager {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Printing3D.Print3DManager;{4d2fcb0a-7366-4971-8bd5-17c4e3e8c6c0})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -981,11 +1175,6 @@ impl Print3DTask {
         unsafe { (::windows::core::Interface::vtable(this).RemoveSourceChanged)(::core::mem::transmute_copy(this), eventcookie.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for Print3DTask {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for Print3DTask {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -999,7 +1188,6 @@ impl ::core::fmt::Debug for Print3DTask {
 }
 unsafe impl ::windows::core::RuntimeType for Print3DTask {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Printing3D.Print3DTask;{8ce3d080-2118-4c28-80de-f426d70191ae})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1074,11 +1262,6 @@ impl Print3DTaskCompletedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for Print3DTaskCompletedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for Print3DTaskCompletedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1092,7 +1275,6 @@ impl ::core::fmt::Debug for Print3DTaskCompletedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for Print3DTaskCompletedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Printing3D.Print3DTaskCompletedEventArgs;{cc1914af-2614-4f1d-accc-d6fc4fda5455})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1170,6 +1352,7 @@ impl ::core::default::Default for Print3DTaskCompletion {
 }
 unsafe impl ::windows::core::Abi for Print3DTaskCompletion {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for Print3DTaskCompletion {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1178,7 +1361,6 @@ impl ::core::fmt::Debug for Print3DTaskCompletion {
 }
 unsafe impl ::windows::core::RuntimeType for Print3DTaskCompletion {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Graphics.Printing3D.Print3DTaskCompletion;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1209,6 +1391,7 @@ impl ::core::default::Default for Print3DTaskDetail {
 }
 unsafe impl ::windows::core::Abi for Print3DTaskDetail {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for Print3DTaskDetail {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1217,7 +1400,6 @@ impl ::core::fmt::Debug for Print3DTaskDetail {
 }
 unsafe impl ::windows::core::RuntimeType for Print3DTaskDetail {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Graphics.Printing3D.Print3DTaskDetail;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1235,11 +1417,6 @@ impl Print3DTaskRequest {
         }
     }
 }
-impl ::core::clone::Clone for Print3DTaskRequest {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for Print3DTaskRequest {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1253,7 +1430,6 @@ impl ::core::fmt::Debug for Print3DTaskRequest {
 }
 unsafe impl ::windows::core::RuntimeType for Print3DTaskRequest {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Printing3D.Print3DTaskRequest;{2595c46f-2245-4c5a-8731-0d604dc6bc3c})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1320,11 +1496,6 @@ impl Print3DTaskRequestedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for Print3DTaskRequestedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for Print3DTaskRequestedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1338,7 +1509,6 @@ impl ::core::fmt::Debug for Print3DTaskRequestedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for Print3DTaskRequestedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Printing3D.Print3DTaskRequestedEventArgs;{150cb77f-18c5-40d7-9f40-fab3096e05a9})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1405,11 +1575,6 @@ impl Print3DTaskSourceChangedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for Print3DTaskSourceChangedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for Print3DTaskSourceChangedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1423,7 +1588,6 @@ impl ::core::fmt::Debug for Print3DTaskSourceChangedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for Print3DTaskSourceChangedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Printing3D.Print3DTaskSourceChangedEventArgs;{5bcd34af-24e9-4c10-8d07-14c346ba3fcf})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1487,11 +1651,6 @@ impl Print3DTaskSourceRequestedArgs {
         unsafe { (::windows::core::Interface::vtable(this).SetSource)(::core::mem::transmute_copy(this), source.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for Print3DTaskSourceRequestedArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for Print3DTaskSourceRequestedArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1505,7 +1664,6 @@ impl ::core::fmt::Debug for Print3DTaskSourceRequestedArgs {
 }
 unsafe impl ::windows::core::RuntimeType for Print3DTaskSourceRequestedArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Printing3D.Print3DTaskSourceRequestedArgs;{c77c9aba-24af-424d-a3bf-92250c355602})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1611,11 +1769,6 @@ impl<F: FnMut(&::core::option::Option<Print3DTaskSourceRequestedArgs>) -> ::wind
         ((*this).invoke)(::core::mem::transmute(&args)).into()
     }
 }
-impl ::core::clone::Clone for Print3DTaskSourceRequestedHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for Print3DTaskSourceRequestedHandler {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1633,7 +1786,6 @@ unsafe impl ::windows::core::Interface for Print3DTaskSourceRequestedHandler {
 }
 unsafe impl ::windows::core::RuntimeType for Print3DTaskSourceRequestedHandler {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{e9175e70-c917-46de-bb51-d9a94db3711f}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1761,11 +1913,6 @@ impl Printing3D3MFPackage {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for Printing3D3MFPackage {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for Printing3D3MFPackage {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1779,7 +1926,6 @@ impl ::core::fmt::Debug for Printing3D3MFPackage {
 }
 unsafe impl ::windows::core::RuntimeType for Printing3D3MFPackage {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Printing3D.Printing3D3MFPackage;{f64dd5c8-2ab7-45a9-a1b7-267e948d5b18})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1890,11 +2036,6 @@ impl Printing3DBaseMaterial {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for Printing3DBaseMaterial {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for Printing3DBaseMaterial {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1908,7 +2049,6 @@ impl ::core::fmt::Debug for Printing3DBaseMaterial {
 }
 unsafe impl ::windows::core::RuntimeType for Printing3DBaseMaterial {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Printing3D.Printing3DBaseMaterial;{d0f0e743-c50c-4bcb-9d04-fc16adcea2c9})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1996,11 +2136,6 @@ impl Printing3DBaseMaterialGroup {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for Printing3DBaseMaterialGroup {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for Printing3DBaseMaterialGroup {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2014,7 +2149,6 @@ impl ::core::fmt::Debug for Printing3DBaseMaterialGroup {
 }
 unsafe impl ::windows::core::RuntimeType for Printing3DBaseMaterialGroup {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Printing3D.Printing3DBaseMaterialGroup;{94f070b8-2515-4a8d-a1f0-d0fc13d06021})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2087,10 +2221,10 @@ impl ::core::fmt::Debug for Printing3DBufferDescription {
 }
 unsafe impl ::windows::core::Abi for Printing3DBufferDescription {
     type Abi = Self;
+    type DefaultType = Self;
 }
 unsafe impl ::windows::core::RuntimeType for Printing3DBufferDescription {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"struct(Windows.Graphics.Printing3D.Printing3DBufferDescription;enum(Windows.Graphics.Printing3D.Printing3DBufferFormat;i4);u4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2132,6 +2266,7 @@ impl ::core::default::Default for Printing3DBufferFormat {
 }
 unsafe impl ::windows::core::Abi for Printing3DBufferFormat {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for Printing3DBufferFormat {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2140,7 +2275,6 @@ impl ::core::fmt::Debug for Printing3DBufferFormat {
 }
 unsafe impl ::windows::core::RuntimeType for Printing3DBufferFormat {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Graphics.Printing3D.Printing3DBufferFormat;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2185,11 +2319,6 @@ impl Printing3DColorMaterial {
         unsafe { (::windows::core::Interface::vtable(this).SetColor)(::core::mem::transmute_copy(this), value.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for Printing3DColorMaterial {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for Printing3DColorMaterial {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2203,7 +2332,6 @@ impl ::core::fmt::Debug for Printing3DColorMaterial {
 }
 unsafe impl ::windows::core::RuntimeType for Printing3DColorMaterial {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Printing3D.Printing3DColorMaterial;{e1899928-7ce7-4285-a35d-f145c9510c7b})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2291,11 +2419,6 @@ impl Printing3DColorMaterialGroup {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for Printing3DColorMaterialGroup {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for Printing3DColorMaterialGroup {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2309,7 +2432,6 @@ impl ::core::fmt::Debug for Printing3DColorMaterialGroup {
 }
 unsafe impl ::windows::core::RuntimeType for Printing3DColorMaterialGroup {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Printing3D.Printing3DColorMaterialGroup;{001a6bd0-aadf-4226-afe9-f369a0b45004})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2449,11 +2571,6 @@ impl Printing3DComponent {
         unsafe { (::windows::core::Interface::vtable(this).SetPartNumber)(::core::mem::transmute_copy(this), value.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for Printing3DComponent {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for Printing3DComponent {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2467,7 +2584,6 @@ impl ::core::fmt::Debug for Printing3DComponent {
 }
 unsafe impl ::windows::core::RuntimeType for Printing3DComponent {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Printing3D.Printing3DComponent;{7e287845-bf7f-4cdb-a27f-30a01437fede})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2561,11 +2677,6 @@ impl Printing3DComponentWithMatrix {
         unsafe { (::windows::core::Interface::vtable(this).SetMatrix)(::core::mem::transmute_copy(this), value.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for Printing3DComponentWithMatrix {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for Printing3DComponentWithMatrix {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2579,7 +2690,6 @@ impl ::core::fmt::Debug for Printing3DComponentWithMatrix {
 }
 unsafe impl ::windows::core::RuntimeType for Printing3DComponentWithMatrix {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Printing3D.Printing3DComponentWithMatrix;{3279f335-0ef0-456b-9a21-49bebe8b51c2})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2654,11 +2764,6 @@ impl Printing3DCompositeMaterial {
         }
     }
 }
-impl ::core::clone::Clone for Printing3DCompositeMaterial {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for Printing3DCompositeMaterial {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2672,7 +2777,6 @@ impl ::core::fmt::Debug for Printing3DCompositeMaterial {
 }
 unsafe impl ::windows::core::RuntimeType for Printing3DCompositeMaterial {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Printing3D.Printing3DCompositeMaterial;{462238dd-562e-4f6c-882d-f4d841fd63c7})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2782,11 +2886,6 @@ impl Printing3DCompositeMaterialGroup {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for Printing3DCompositeMaterialGroup {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for Printing3DCompositeMaterialGroup {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2800,7 +2899,6 @@ impl ::core::fmt::Debug for Printing3DCompositeMaterialGroup {
 }
 unsafe impl ::windows::core::RuntimeType for Printing3DCompositeMaterialGroup {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Printing3D.Printing3DCompositeMaterialGroup;{8d946a5b-40f1-496d-a5fb-340a5a678e30})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2905,11 +3003,6 @@ impl Printing3DFaceReductionOptions {
         unsafe { (::windows::core::Interface::vtable(this).SetMaxEdgeLength)(::core::mem::transmute_copy(this), value).ok() }
     }
 }
-impl ::core::clone::Clone for Printing3DFaceReductionOptions {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for Printing3DFaceReductionOptions {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2923,7 +3016,6 @@ impl ::core::fmt::Debug for Printing3DFaceReductionOptions {
 }
 unsafe impl ::windows::core::RuntimeType for Printing3DFaceReductionOptions {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Printing3D.Printing3DFaceReductionOptions;{bbfed397-2d74-46f7-be85-99a67bbb6629})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3034,11 +3126,6 @@ impl Printing3DMaterial {
         }
     }
 }
-impl ::core::clone::Clone for Printing3DMaterial {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for Printing3DMaterial {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3052,7 +3139,6 @@ impl ::core::fmt::Debug for Printing3DMaterial {
 }
 unsafe impl ::windows::core::RuntimeType for Printing3DMaterial {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Printing3D.Printing3DMaterial;{378db256-ed62-4952-b85b-03567d7c465e})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3279,11 +3365,6 @@ impl Printing3DMesh {
         }
     }
 }
-impl ::core::clone::Clone for Printing3DMesh {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for Printing3DMesh {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3297,7 +3378,6 @@ impl ::core::fmt::Debug for Printing3DMesh {
 }
 unsafe impl ::windows::core::RuntimeType for Printing3DMesh {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Printing3D.Printing3DMesh;{192e90dc-0228-2e01-bc20-c5290cbf32c4})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3372,6 +3452,7 @@ impl ::core::default::Default for Printing3DMeshVerificationMode {
 }
 unsafe impl ::windows::core::Abi for Printing3DMeshVerificationMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for Printing3DMeshVerificationMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3380,7 +3461,6 @@ impl ::core::fmt::Debug for Printing3DMeshVerificationMode {
 }
 unsafe impl ::windows::core::RuntimeType for Printing3DMeshVerificationMode {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Graphics.Printing3D.Printing3DMeshVerificationMode;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -3416,11 +3496,6 @@ impl Printing3DMeshVerificationResult {
         }
     }
 }
-impl ::core::clone::Clone for Printing3DMeshVerificationResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for Printing3DMeshVerificationResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3434,7 +3509,6 @@ impl ::core::fmt::Debug for Printing3DMeshVerificationResult {
 }
 unsafe impl ::windows::core::RuntimeType for Printing3DMeshVerificationResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Printing3D.Printing3DMeshVerificationResult;{195671ba-e93a-4e8a-a46f-dea8e852197e})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3668,11 +3742,6 @@ impl Printing3DModel {
         }
     }
 }
-impl ::core::clone::Clone for Printing3DModel {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for Printing3DModel {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3686,7 +3755,6 @@ impl ::core::fmt::Debug for Printing3DModel {
 }
 unsafe impl ::windows::core::RuntimeType for Printing3DModel {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Printing3D.Printing3DModel;{2d012ef0-52fb-919a-77b0-4b1a3b80324f})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3791,11 +3859,6 @@ impl Printing3DModelTexture {
         unsafe { (::windows::core::Interface::vtable(this).SetTileStyleV)(::core::mem::transmute_copy(this), value).ok() }
     }
 }
-impl ::core::clone::Clone for Printing3DModelTexture {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for Printing3DModelTexture {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3809,7 +3872,6 @@ impl ::core::fmt::Debug for Printing3DModelTexture {
 }
 unsafe impl ::windows::core::RuntimeType for Printing3DModelTexture {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Printing3D.Printing3DModelTexture;{5dafcf01-b59d-483c-97bb-a4d546d1c75c})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3888,6 +3950,7 @@ impl ::core::default::Default for Printing3DModelUnit {
 }
 unsafe impl ::windows::core::Abi for Printing3DModelUnit {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for Printing3DModelUnit {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3896,7 +3959,6 @@ impl ::core::fmt::Debug for Printing3DModelUnit {
 }
 unsafe impl ::windows::core::RuntimeType for Printing3DModelUnit {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Graphics.Printing3D.Printing3DModelUnit;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -3922,11 +3984,6 @@ impl Printing3DMultiplePropertyMaterial {
         }
     }
 }
-impl ::core::clone::Clone for Printing3DMultiplePropertyMaterial {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for Printing3DMultiplePropertyMaterial {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3940,7 +3997,6 @@ impl ::core::fmt::Debug for Printing3DMultiplePropertyMaterial {
 }
 unsafe impl ::windows::core::RuntimeType for Printing3DMultiplePropertyMaterial {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Printing3D.Printing3DMultiplePropertyMaterial;{25a6254b-c6e9-484d-a214-a25e5776ba62})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4037,11 +4093,6 @@ impl Printing3DMultiplePropertyMaterialGroup {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for Printing3DMultiplePropertyMaterialGroup {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for Printing3DMultiplePropertyMaterialGroup {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4055,7 +4106,6 @@ impl ::core::fmt::Debug for Printing3DMultiplePropertyMaterialGroup {
 }
 unsafe impl ::windows::core::RuntimeType for Printing3DMultiplePropertyMaterialGroup {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Printing3D.Printing3DMultiplePropertyMaterialGroup;{f0950519-aeb9-4515-a39b-a088fbbb277c})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4131,6 +4181,7 @@ impl ::core::default::Default for Printing3DObjectType {
 }
 unsafe impl ::windows::core::Abi for Printing3DObjectType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for Printing3DObjectType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4139,7 +4190,6 @@ impl ::core::fmt::Debug for Printing3DObjectType {
 }
 unsafe impl ::windows::core::RuntimeType for Printing3DObjectType {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Graphics.Printing3D.Printing3DObjectType;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -4166,6 +4216,7 @@ impl ::core::default::Default for Printing3DPackageCompression {
 }
 unsafe impl ::windows::core::Abi for Printing3DPackageCompression {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for Printing3DPackageCompression {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4174,7 +4225,6 @@ impl ::core::fmt::Debug for Printing3DPackageCompression {
 }
 unsafe impl ::windows::core::RuntimeType for Printing3DPackageCompression {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Graphics.Printing3D.Printing3DPackageCompression;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -4230,11 +4280,6 @@ impl Printing3DTexture2CoordMaterial {
         unsafe { (::windows::core::Interface::vtable(this).SetV)(::core::mem::transmute_copy(this), value).ok() }
     }
 }
-impl ::core::clone::Clone for Printing3DTexture2CoordMaterial {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for Printing3DTexture2CoordMaterial {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4248,7 +4293,6 @@ impl ::core::fmt::Debug for Printing3DTexture2CoordMaterial {
 }
 unsafe impl ::windows::core::RuntimeType for Printing3DTexture2CoordMaterial {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Printing3D.Printing3DTexture2CoordMaterial;{8d844bfb-07e9-4986-9833-8dd3d48c6859})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4349,11 +4393,6 @@ impl Printing3DTexture2CoordMaterialGroup {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for Printing3DTexture2CoordMaterialGroup {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for Printing3DTexture2CoordMaterialGroup {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4367,7 +4406,6 @@ impl ::core::fmt::Debug for Printing3DTexture2CoordMaterialGroup {
 }
 unsafe impl ::windows::core::RuntimeType for Printing3DTexture2CoordMaterialGroup {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Printing3D.Printing3DTexture2CoordMaterialGroup;{627d7ca7-6d90-4fb9-9fc4-9feff3dfa892})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4444,6 +4482,7 @@ impl ::core::default::Default for Printing3DTextureEdgeBehavior {
 }
 unsafe impl ::windows::core::Abi for Printing3DTextureEdgeBehavior {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for Printing3DTextureEdgeBehavior {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4452,7 +4491,6 @@ impl ::core::fmt::Debug for Printing3DTextureEdgeBehavior {
 }
 unsafe impl ::windows::core::RuntimeType for Printing3DTextureEdgeBehavior {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Graphics.Printing3D.Printing3DTextureEdgeBehavior;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -4497,11 +4535,6 @@ impl Printing3DTextureResource {
         unsafe { (::windows::core::Interface::vtable(this).SetName)(::core::mem::transmute_copy(this), value.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for Printing3DTextureResource {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for Printing3DTextureResource {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4515,7 +4548,6 @@ impl ::core::fmt::Debug for Printing3DTextureResource {
 }
 unsafe impl ::windows::core::RuntimeType for Printing3DTextureResource {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Graphics.Printing3D.Printing3DTextureResource;{a70df32d-6ab1-44ae-bc45-a27382c0d38c})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

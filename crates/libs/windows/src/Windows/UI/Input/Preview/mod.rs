@@ -4,6 +4,11 @@ pub mod Injection;
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IInputActivationListenerPreviewStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInputActivationListenerPreviewStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IInputActivationListenerPreviewStatics {
     type Vtable = IInputActivationListenerPreviewStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf0551ce5_0de6_5be0_a589_f737201a4582);

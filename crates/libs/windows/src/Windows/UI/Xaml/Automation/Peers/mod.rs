@@ -21,6 +21,7 @@ impl ::core::default::Default for AccessibilityView {
 }
 unsafe impl ::windows::core::Abi for AccessibilityView {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AccessibilityView {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -29,7 +30,6 @@ impl ::core::fmt::Debug for AccessibilityView {
 }
 unsafe impl ::windows::core::RuntimeType for AccessibilityView {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Xaml.Automation.Peers.AccessibilityView;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -172,11 +172,6 @@ impl AppBarAutomationPeer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for AppBarAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AppBarAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -190,7 +185,6 @@ impl ::core::fmt::Debug for AppBarAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for AppBarAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.AppBarAutomationPeer;{8b4acfeb-89fa-4f13-84be-35ca5b7c9590})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -430,11 +424,6 @@ impl AppBarButtonAutomationPeer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for AppBarButtonAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AppBarButtonAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -448,7 +437,6 @@ impl ::core::fmt::Debug for AppBarButtonAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for AppBarButtonAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.AppBarButtonAutomationPeer;{443262b2-4f6d-4b76-9d2e-3eff777e8864})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -681,11 +669,6 @@ impl AppBarToggleButtonAutomationPeer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for AppBarToggleButtonAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AppBarToggleButtonAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -699,7 +682,6 @@ impl ::core::fmt::Debug for AppBarToggleButtonAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for AppBarToggleButtonAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.AppBarToggleButtonAutomationPeer;{8464efad-9655-4aff-9550-63ae9ec8fe9c})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -903,11 +885,6 @@ impl AutoSuggestBoxAutomationPeer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for AutoSuggestBoxAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AutoSuggestBoxAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -921,7 +898,6 @@ impl ::core::fmt::Debug for AutoSuggestBoxAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for AutoSuggestBoxAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.AutoSuggestBoxAutomationPeer;{2f32c302-f99b-491d-9726-a5e181643efa})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1121,6 +1097,7 @@ impl ::core::default::Default for AutomationControlType {
 }
 unsafe impl ::windows::core::Abi for AutomationControlType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AutomationControlType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1129,7 +1106,6 @@ impl ::core::fmt::Debug for AutomationControlType {
 }
 unsafe impl ::windows::core::RuntimeType for AutomationControlType {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Xaml.Automation.Peers.AutomationControlType;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1183,6 +1159,7 @@ impl ::core::default::Default for AutomationEvents {
 }
 unsafe impl ::windows::core::Abi for AutomationEvents {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AutomationEvents {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1191,7 +1168,6 @@ impl ::core::fmt::Debug for AutomationEvents {
 }
 unsafe impl ::windows::core::RuntimeType for AutomationEvents {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Xaml.Automation.Peers.AutomationEvents;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1225,6 +1201,7 @@ impl ::core::default::Default for AutomationHeadingLevel {
 }
 unsafe impl ::windows::core::Abi for AutomationHeadingLevel {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AutomationHeadingLevel {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1233,7 +1210,6 @@ impl ::core::fmt::Debug for AutomationHeadingLevel {
 }
 unsafe impl ::windows::core::RuntimeType for AutomationHeadingLevel {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Xaml.Automation.Peers.AutomationHeadingLevel;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1263,6 +1239,7 @@ impl ::core::default::Default for AutomationLandmarkType {
 }
 unsafe impl ::windows::core::Abi for AutomationLandmarkType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AutomationLandmarkType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1271,7 +1248,6 @@ impl ::core::fmt::Debug for AutomationLandmarkType {
 }
 unsafe impl ::windows::core::RuntimeType for AutomationLandmarkType {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Xaml.Automation.Peers.AutomationLandmarkType;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1298,6 +1274,7 @@ impl ::core::default::Default for AutomationLiveSetting {
 }
 unsafe impl ::windows::core::Abi for AutomationLiveSetting {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AutomationLiveSetting {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1306,7 +1283,6 @@ impl ::core::fmt::Debug for AutomationLiveSetting {
 }
 unsafe impl ::windows::core::RuntimeType for AutomationLiveSetting {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Xaml.Automation.Peers.AutomationLiveSetting;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1335,6 +1311,7 @@ impl ::core::default::Default for AutomationNavigationDirection {
 }
 unsafe impl ::windows::core::Abi for AutomationNavigationDirection {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AutomationNavigationDirection {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1343,7 +1320,6 @@ impl ::core::fmt::Debug for AutomationNavigationDirection {
 }
 unsafe impl ::windows::core::RuntimeType for AutomationNavigationDirection {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Xaml.Automation.Peers.AutomationNavigationDirection;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1372,6 +1348,7 @@ impl ::core::default::Default for AutomationNotificationKind {
 }
 unsafe impl ::windows::core::Abi for AutomationNotificationKind {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AutomationNotificationKind {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1380,7 +1357,6 @@ impl ::core::fmt::Debug for AutomationNotificationKind {
 }
 unsafe impl ::windows::core::RuntimeType for AutomationNotificationKind {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Xaml.Automation.Peers.AutomationNotificationKind;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1409,6 +1385,7 @@ impl ::core::default::Default for AutomationNotificationProcessing {
 }
 unsafe impl ::windows::core::Abi for AutomationNotificationProcessing {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AutomationNotificationProcessing {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1417,7 +1394,6 @@ impl ::core::fmt::Debug for AutomationNotificationProcessing {
 }
 unsafe impl ::windows::core::RuntimeType for AutomationNotificationProcessing {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Xaml.Automation.Peers.AutomationNotificationProcessing;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1444,6 +1420,7 @@ impl ::core::default::Default for AutomationOrientation {
 }
 unsafe impl ::windows::core::Abi for AutomationOrientation {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AutomationOrientation {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1452,7 +1429,6 @@ impl ::core::fmt::Debug for AutomationOrientation {
 }
 unsafe impl ::windows::core::RuntimeType for AutomationOrientation {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Xaml.Automation.Peers.AutomationOrientation;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1915,11 +1891,6 @@ impl AutomationPeer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for AutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1933,7 +1904,6 @@ impl ::core::fmt::Debug for AutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for AutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.AutomationPeer;{35aac87a-62ee-4d3e-a24c-2bc8432d68b7})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2083,11 +2053,6 @@ impl AutomationPeerAnnotation {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for AutomationPeerAnnotation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AutomationPeerAnnotation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2101,7 +2066,6 @@ impl ::core::fmt::Debug for AutomationPeerAnnotation {
 }
 unsafe impl ::windows::core::RuntimeType for AutomationPeerAnnotation {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.AutomationPeerAnnotation;{0c456061-52cf-43fa-82f8-07f137351e5a})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2200,6 +2164,7 @@ impl ::core::default::Default for AutomationStructureChangeType {
 }
 unsafe impl ::windows::core::Abi for AutomationStructureChangeType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AutomationStructureChangeType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2208,7 +2173,6 @@ impl ::core::fmt::Debug for AutomationStructureChangeType {
 }
 unsafe impl ::windows::core::RuntimeType for AutomationStructureChangeType {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Xaml.Automation.Peers.AutomationStructureChangeType;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2246,11 +2210,6 @@ impl ButtonAutomationPeer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for ButtonAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ButtonAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2264,7 +2223,6 @@ impl ::core::fmt::Debug for ButtonAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for ButtonAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.ButtonAutomationPeer;{fb77efbe-39ec-4508-8ac3-51a1424027d7})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2428,11 +2386,6 @@ unsafe impl ::core::marker::Sync for ButtonAutomationPeer {}
 #[repr(transparent)]
 pub struct ButtonBaseAutomationPeer(::windows::core::IUnknown);
 impl ButtonBaseAutomationPeer {}
-impl ::core::clone::Clone for ButtonBaseAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ButtonBaseAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2446,7 +2399,6 @@ impl ::core::fmt::Debug for ButtonBaseAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for ButtonBaseAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.ButtonBaseAutomationPeer;{a4f3b5b6-7585-4e0b-96d2-08cf6f28befa})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2617,11 +2569,6 @@ impl CalendarDatePickerAutomationPeer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for CalendarDatePickerAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for CalendarDatePickerAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2635,7 +2582,6 @@ impl ::core::fmt::Debug for CalendarDatePickerAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for CalendarDatePickerAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.CalendarDatePickerAutomationPeer;{40d8938e-db5e-4b03-beba-d10f62419787})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2828,11 +2774,6 @@ impl CaptureElementAutomationPeer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for CaptureElementAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for CaptureElementAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2846,7 +2787,6 @@ impl ::core::fmt::Debug for CaptureElementAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for CaptureElementAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.CaptureElementAutomationPeer;{dcc44ee0-fa45-45c6-8bb7-320d808f5958})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2987,11 +2927,6 @@ impl CheckBoxAutomationPeer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for CheckBoxAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for CheckBoxAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3005,7 +2940,6 @@ impl ::core::fmt::Debug for CheckBoxAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for CheckBoxAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.CheckBoxAutomationPeer;{eb15bc42-c0a9-46c6-ac24-b83de429c733})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3212,11 +3146,6 @@ impl ColorPickerSliderAutomationPeer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for ColorPickerSliderAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ColorPickerSliderAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3230,7 +3159,6 @@ impl ::core::fmt::Debug for ColorPickerSliderAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for ColorPickerSliderAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.ColorPickerSliderAutomationPeer;{a514215a-7293-4577-924c-47d4e0bf9b90})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3437,11 +3365,6 @@ impl ColorSpectrumAutomationPeer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for ColorSpectrumAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ColorSpectrumAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3455,7 +3378,6 @@ impl ::core::fmt::Debug for ColorSpectrumAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for ColorSpectrumAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.ColorSpectrumAutomationPeer;{15d5ba03-010d-4ff7-9087-f4dd09f831b7})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3716,11 +3638,6 @@ impl ComboBoxAutomationPeer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for ComboBoxAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ComboBoxAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3734,7 +3651,6 @@ impl ::core::fmt::Debug for ComboBoxAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for ComboBoxAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.ComboBoxAutomationPeer;{7eb40d0b-75c5-4263-ba6a-d4a54fb0f239})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4045,11 +3961,6 @@ impl ComboBoxItemAutomationPeer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for ComboBoxItemAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ComboBoxItemAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4063,7 +3974,6 @@ impl ::core::fmt::Debug for ComboBoxItemAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for ComboBoxItemAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.ComboBoxItemAutomationPeer;{12ddc76e-9552-446a-82ee-938cc371800f})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4208,11 +4118,6 @@ impl ComboBoxItemDataAutomationPeer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for ComboBoxItemDataAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ComboBoxItemDataAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4226,7 +4131,6 @@ impl ::core::fmt::Debug for ComboBoxItemDataAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for ComboBoxItemDataAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.ComboBoxItemDataAutomationPeer;{4fef6df2-289c-4c04-831b-5a668c6d7104})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4465,11 +4369,6 @@ impl DatePickerAutomationPeer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for DatePickerAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DatePickerAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4483,7 +4382,6 @@ impl ::core::fmt::Debug for DatePickerAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for DatePickerAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.DatePickerAutomationPeer;{d07d357f-a0b9-45dc-991a-76c505e7d0f5})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4601,11 +4499,6 @@ unsafe impl ::core::marker::Sync for DatePickerAutomationPeer {}
 #[repr(transparent)]
 pub struct DatePickerFlyoutPresenterAutomationPeer(::windows::core::IUnknown);
 impl DatePickerFlyoutPresenterAutomationPeer {}
-impl ::core::clone::Clone for DatePickerFlyoutPresenterAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for DatePickerFlyoutPresenterAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4619,7 +4512,6 @@ impl ::core::fmt::Debug for DatePickerFlyoutPresenterAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for DatePickerFlyoutPresenterAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.DatePickerFlyoutPresenterAutomationPeer;{752aed38-c2bf-4880-82b2-a6c05e90c135})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -4760,11 +4652,6 @@ impl FlipViewAutomationPeer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for FlipViewAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for FlipViewAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4778,7 +4665,6 @@ impl ::core::fmt::Debug for FlipViewAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for FlipViewAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.FlipViewAutomationPeer;{8ec0353a-4284-4b00-aef8-a2688ea5e3c4})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -5011,11 +4897,6 @@ impl FlipViewItemAutomationPeer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for FlipViewItemAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for FlipViewItemAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5029,7 +4910,6 @@ impl ::core::fmt::Debug for FlipViewItemAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for FlipViewItemAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.FlipViewItemAutomationPeer;{c83034de-fa08-4bd3-aeb2-d2e5bfa04df9})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -5174,11 +5054,6 @@ impl FlipViewItemDataAutomationPeer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for FlipViewItemDataAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for FlipViewItemDataAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5192,7 +5067,6 @@ impl ::core::fmt::Debug for FlipViewItemDataAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for FlipViewItemDataAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.FlipViewItemDataAutomationPeer;{b0986175-00bc-4118-8a6f-16ee9c15d968})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -5431,11 +5305,6 @@ impl FlyoutPresenterAutomationPeer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for FlyoutPresenterAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for FlyoutPresenterAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5449,7 +5318,6 @@ impl ::core::fmt::Debug for FlyoutPresenterAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for FlyoutPresenterAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.FlyoutPresenterAutomationPeer;{a01840b4-5fca-456f-98ea-300eb40b585e})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -5615,11 +5483,6 @@ impl FrameworkElementAutomationPeer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for FrameworkElementAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for FrameworkElementAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5633,7 +5496,6 @@ impl ::core::fmt::Debug for FrameworkElementAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for FrameworkElementAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.FrameworkElementAutomationPeer;{b90ad781-bfeb-4451-bd47-9f3a63ebd24a})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -5754,11 +5616,6 @@ impl GridViewAutomationPeer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for GridViewAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for GridViewAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5772,7 +5629,6 @@ impl ::core::fmt::Debug for GridViewAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for GridViewAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.GridViewAutomationPeer;{1c4401a4-d951-49ca-8f82-c7f3c60681b0})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -6051,11 +5907,6 @@ impl GridViewHeaderItemAutomationPeer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for GridViewHeaderItemAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for GridViewHeaderItemAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6069,7 +5920,6 @@ impl ::core::fmt::Debug for GridViewHeaderItemAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for GridViewHeaderItemAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.GridViewHeaderItemAutomationPeer;{e3dcef3a-e08a-48e7-b23a-2be5b66e474e})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -6230,11 +6080,6 @@ impl GridViewItemAutomationPeer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for GridViewItemAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for GridViewItemAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6248,7 +6093,6 @@ impl ::core::fmt::Debug for GridViewItemAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for GridViewItemAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.GridViewItemAutomationPeer;{93ef2d07-346c-4166-a4ba-bc6a181e7f33})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -6393,11 +6237,6 @@ impl GridViewItemDataAutomationPeer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for GridViewItemDataAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for GridViewItemDataAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6411,7 +6250,6 @@ impl ::core::fmt::Debug for GridViewItemDataAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for GridViewItemDataAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.GridViewItemDataAutomationPeer;{f3f4868f-29d4-4094-8c54-ea61a88294a4})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -6650,11 +6488,6 @@ impl GroupItemAutomationPeer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for GroupItemAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for GroupItemAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6668,7 +6501,6 @@ impl ::core::fmt::Debug for GroupItemAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for GroupItemAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.GroupItemAutomationPeer;{1914fe6d-0740-4236-9ee1-38cf19c1c388})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -6809,11 +6641,6 @@ impl HubAutomationPeer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for HubAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for HubAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6827,7 +6654,6 @@ impl ::core::fmt::Debug for HubAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for HubAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.HubAutomationPeer;{4ddee056-4ebc-4620-a05d-903e3c9a4ead})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -6974,11 +6800,6 @@ impl HubSectionAutomationPeer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for HubSectionAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for HubSectionAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6992,7 +6813,6 @@ impl ::core::fmt::Debug for HubSectionAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for HubSectionAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.HubSectionAutomationPeer;{16d91ff7-7431-4d82-83ce-cfa3192b0f18})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -7165,11 +6985,6 @@ impl HyperlinkButtonAutomationPeer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for HyperlinkButtonAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for HyperlinkButtonAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7183,7 +6998,6 @@ impl ::core::fmt::Debug for HyperlinkButtonAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for HyperlinkButtonAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.HyperlinkButtonAutomationPeer;{aa7afcb1-0edf-46d9-aa9e-0eb21d140097})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -7346,6 +7160,11 @@ unsafe impl ::core::marker::Sync for HyperlinkButtonAutomationPeer {}
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppBarAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppBarAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppBarAutomationPeer {
     type Vtable = IAppBarAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x8b4acfeb_89fa_4f13_84be_35ca5b7c9590);
@@ -7358,6 +7177,11 @@ pub struct IAppBarAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppBarAutomationPeerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppBarAutomationPeerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppBarAutomationPeerFactory {
     type Vtable = IAppBarAutomationPeerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x8360f4e2_e396_4517_af5d_f4cf34c54edf);
@@ -7374,6 +7198,11 @@ pub struct IAppBarAutomationPeerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppBarButtonAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppBarButtonAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppBarButtonAutomationPeer {
     type Vtable = IAppBarButtonAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x443262b2_4f6d_4b76_9d2e_3eff777e8864);
@@ -7386,6 +7215,11 @@ pub struct IAppBarButtonAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppBarButtonAutomationPeerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppBarButtonAutomationPeerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppBarButtonAutomationPeerFactory {
     type Vtable = IAppBarButtonAutomationPeerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xaef0342a_acb7_42dc_97e3_847071865fd6);
@@ -7402,6 +7236,11 @@ pub struct IAppBarButtonAutomationPeerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppBarToggleButtonAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppBarToggleButtonAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppBarToggleButtonAutomationPeer {
     type Vtable = IAppBarToggleButtonAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x8464efad_9655_4aff_9550_63ae9ec8fe9c);
@@ -7414,6 +7253,11 @@ pub struct IAppBarToggleButtonAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppBarToggleButtonAutomationPeerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppBarToggleButtonAutomationPeerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppBarToggleButtonAutomationPeerFactory {
     type Vtable = IAppBarToggleButtonAutomationPeerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd6f9139d_02c1_4221_9591_7d4efeb74701);
@@ -7430,6 +7274,11 @@ pub struct IAppBarToggleButtonAutomationPeerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAutoSuggestBoxAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAutoSuggestBoxAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAutoSuggestBoxAutomationPeer {
     type Vtable = IAutoSuggestBoxAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x2f32c302_f99b_491d_9726_a5e181643efa);
@@ -7442,6 +7291,11 @@ pub struct IAutoSuggestBoxAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAutoSuggestBoxAutomationPeerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAutoSuggestBoxAutomationPeerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAutoSuggestBoxAutomationPeerFactory {
     type Vtable = IAutoSuggestBoxAutomationPeerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x80046849_18e7_4475_b362_4bbd53d24562);
@@ -7458,6 +7312,11 @@ pub struct IAutoSuggestBoxAutomationPeerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAutomationPeer {
     type Vtable = IAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x35aac87a_62ee_4d3e_a24c_2bc8432d68b7);
@@ -7518,6 +7377,11 @@ pub struct IAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAutomationPeer2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAutomationPeer2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAutomationPeer2 {
     type Vtable = IAutomationPeer2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xea1f89c7_ebf5_4ab8_88f7_680d821dac61);
@@ -7530,6 +7394,11 @@ pub struct IAutomationPeer2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAutomationPeer3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAutomationPeer3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAutomationPeer3 {
     type Vtable = IAutomationPeer3_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd3cfb977_0084_41d7_a221_28158d3bc32c);
@@ -7566,6 +7435,11 @@ pub struct IAutomationPeer3_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAutomationPeer4(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAutomationPeer4 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAutomationPeer4 {
     type Vtable = IAutomationPeer4_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x761ce752_73c1_4f44_be75_43c49ec0d4d5);
@@ -7580,6 +7454,11 @@ pub struct IAutomationPeer4_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAutomationPeer5(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAutomationPeer5 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAutomationPeer5 {
     type Vtable = IAutomationPeer5_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf632e1c6_0a3f_4574_9fef_cdc151765674);
@@ -7595,6 +7474,11 @@ pub struct IAutomationPeer5_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAutomationPeer6(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAutomationPeer6 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAutomationPeer6 {
     type Vtable = IAutomationPeer6_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xcaf8608f_13ff_42fb_866d_22206434cc6b);
@@ -7608,6 +7492,11 @@ pub struct IAutomationPeer6_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAutomationPeer7(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAutomationPeer7 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAutomationPeer7 {
     type Vtable = IAutomationPeer7_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x796b3287_e642_48ab_b223_5208b41da9d6);
@@ -7621,6 +7510,11 @@ pub struct IAutomationPeer7_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAutomationPeer8(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAutomationPeer8 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAutomationPeer8 {
     type Vtable = IAutomationPeer8_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x5c6a1fe6_9a55_4d7f_9498_cfe429e92da8);
@@ -7634,6 +7528,11 @@ pub struct IAutomationPeer8_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAutomationPeer9(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAutomationPeer9 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAutomationPeer9 {
     type Vtable = IAutomationPeer9_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xdf2e0265_1d74_57fa_8094_f81c2f626b8c);
@@ -7647,6 +7546,11 @@ pub struct IAutomationPeer9_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAutomationPeerAnnotation(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAutomationPeerAnnotation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAutomationPeerAnnotation {
     type Vtable = IAutomationPeerAnnotation_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x0c456061_52cf_43fa_82f8_07f137351e5a);
@@ -7663,6 +7567,11 @@ pub struct IAutomationPeerAnnotation_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAutomationPeerAnnotationFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAutomationPeerAnnotationFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAutomationPeerAnnotationFactory {
     type Vtable = IAutomationPeerAnnotationFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf59c439e_c65b_43cd_9009_03fc023363a7);
@@ -7677,6 +7586,11 @@ pub struct IAutomationPeerAnnotationFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAutomationPeerAnnotationStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAutomationPeerAnnotationStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAutomationPeerAnnotationStatics {
     type Vtable = IAutomationPeerAnnotationStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x8809a87d_09b2_4d45_b78b_1d3b3b09f661);
@@ -7691,6 +7605,11 @@ pub struct IAutomationPeerAnnotationStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAutomationPeerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAutomationPeerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAutomationPeerFactory {
     type Vtable = IAutomationPeerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x20c27545_a88b_43c8_bc24_cea9dafd04a3);
@@ -7704,6 +7623,11 @@ pub struct IAutomationPeerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAutomationPeerOverrides(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAutomationPeerOverrides {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAutomationPeerOverrides {
     type Vtable = IAutomationPeerOverrides_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xbea93e67_dbee_4f7b_af0d_a79aae5333bf);
@@ -7755,6 +7679,11 @@ pub struct IAutomationPeerOverrides_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAutomationPeerOverrides2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAutomationPeerOverrides2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAutomationPeerOverrides2 {
     type Vtable = IAutomationPeerOverrides2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x2603682a_9da6_4023_b496_496e5ef228d2);
@@ -7772,6 +7701,11 @@ pub struct IAutomationPeerOverrides2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAutomationPeerOverrides3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAutomationPeerOverrides3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAutomationPeerOverrides3 {
     type Vtable = IAutomationPeerOverrides3_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb6f0c4ad_4d39_49e6_bb91_d924eefd8538);
@@ -7797,6 +7731,11 @@ pub struct IAutomationPeerOverrides3_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAutomationPeerOverrides4(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAutomationPeerOverrides4 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAutomationPeerOverrides4 {
     type Vtable = IAutomationPeerOverrides4_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb186cda2_5d46_4bcd_a811_269ad15b3aee);
@@ -7811,6 +7750,11 @@ pub struct IAutomationPeerOverrides4_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAutomationPeerOverrides5(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAutomationPeerOverrides5 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAutomationPeerOverrides5 {
     type Vtable = IAutomationPeerOverrides5_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x2c847c85_781e_49f7_9fef_b9e14d014707);
@@ -7838,6 +7782,11 @@ pub struct IAutomationPeerOverrides5_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAutomationPeerOverrides6(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAutomationPeerOverrides6 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAutomationPeerOverrides6 {
     type Vtable = IAutomationPeerOverrides6_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe98babe7_f6ff_444c_9c0d_277eaf0ad9c0);
@@ -7851,6 +7800,11 @@ pub struct IAutomationPeerOverrides6_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAutomationPeerOverrides8(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAutomationPeerOverrides8 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAutomationPeerOverrides8 {
     type Vtable = IAutomationPeerOverrides8_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x0e1ebbd4_a003_4936_8175_f5457c07f0c6);
@@ -7864,6 +7818,11 @@ pub struct IAutomationPeerOverrides8_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAutomationPeerOverrides9(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAutomationPeerOverrides9 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAutomationPeerOverrides9 {
     type Vtable = IAutomationPeerOverrides9_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf3709e8b_091a_5db5_b896_ff78f01990c9);
@@ -7877,6 +7836,11 @@ pub struct IAutomationPeerOverrides9_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAutomationPeerProtected(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAutomationPeerProtected {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAutomationPeerProtected {
     type Vtable = IAutomationPeerProtected_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf4b40e52_642f_4629_a54a_ea5d2349c448);
@@ -7897,6 +7861,11 @@ pub struct IAutomationPeerProtected_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAutomationPeerStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAutomationPeerStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAutomationPeerStatics {
     type Vtable = IAutomationPeerStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x562f7fb0_a331_4a9c_9dec_bfb7586fffff);
@@ -7910,6 +7879,11 @@ pub struct IAutomationPeerStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAutomationPeerStatics3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAutomationPeerStatics3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAutomationPeerStatics3 {
     type Vtable = IAutomationPeerStatics3_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x572c5714_7f87_4271_819f_6cf4c4d022d0);
@@ -7923,6 +7897,11 @@ pub struct IAutomationPeerStatics3_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IButtonAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IButtonAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IButtonAutomationPeer {
     type Vtable = IButtonAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xfb77efbe_39ec_4508_8ac3_51a1424027d7);
@@ -7935,6 +7914,11 @@ pub struct IButtonAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IButtonAutomationPeerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IButtonAutomationPeerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IButtonAutomationPeerFactory {
     type Vtable = IButtonAutomationPeerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x3fdb9f49_f4ab_4780_8644_03376299a175);
@@ -7951,6 +7935,11 @@ pub struct IButtonAutomationPeerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IButtonBaseAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IButtonBaseAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IButtonBaseAutomationPeer {
     type Vtable = IButtonBaseAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa4f3b5b6_7585_4e0b_96d2_08cf6f28befa);
@@ -7963,6 +7952,11 @@ pub struct IButtonBaseAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IButtonBaseAutomationPeerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IButtonBaseAutomationPeerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IButtonBaseAutomationPeerFactory {
     type Vtable = IButtonBaseAutomationPeerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x8a04091e_e6b2_4c60_a759_c13ca45165ed);
@@ -7979,6 +7973,11 @@ pub struct IButtonBaseAutomationPeerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICalendarDatePickerAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICalendarDatePickerAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICalendarDatePickerAutomationPeer {
     type Vtable = ICalendarDatePickerAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x40d8938e_db5e_4b03_beba_d10f62419787);
@@ -7991,6 +7990,11 @@ pub struct ICalendarDatePickerAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICalendarDatePickerAutomationPeerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICalendarDatePickerAutomationPeerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICalendarDatePickerAutomationPeerFactory {
     type Vtable = ICalendarDatePickerAutomationPeerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xab705dd2_d293_45bf_9f19_26f7603a5e9b);
@@ -8007,6 +8011,11 @@ pub struct ICalendarDatePickerAutomationPeerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICaptureElementAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICaptureElementAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICaptureElementAutomationPeer {
     type Vtable = ICaptureElementAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xdcc44ee0_fa45_45c6_8bb7_320d808f5958);
@@ -8019,6 +8028,11 @@ pub struct ICaptureElementAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICaptureElementAutomationPeerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICaptureElementAutomationPeerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICaptureElementAutomationPeerFactory {
     type Vtable = ICaptureElementAutomationPeerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9b92ef48_85e9_4869_b175_8f7cf45a6d9f);
@@ -8035,6 +8049,11 @@ pub struct ICaptureElementAutomationPeerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICheckBoxAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICheckBoxAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICheckBoxAutomationPeer {
     type Vtable = ICheckBoxAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xeb15bc42_c0a9_46c6_ac24_b83de429c733);
@@ -8047,6 +8066,11 @@ pub struct ICheckBoxAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICheckBoxAutomationPeerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICheckBoxAutomationPeerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICheckBoxAutomationPeerFactory {
     type Vtable = ICheckBoxAutomationPeerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb75c775d_eb8f_44ef_a27c_e26ac7de8333);
@@ -8063,6 +8087,11 @@ pub struct ICheckBoxAutomationPeerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IColorPickerSliderAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IColorPickerSliderAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IColorPickerSliderAutomationPeer {
     type Vtable = IColorPickerSliderAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa514215a_7293_4577_924c_47d4e0bf9b90);
@@ -8075,6 +8104,11 @@ pub struct IColorPickerSliderAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IColorPickerSliderAutomationPeerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IColorPickerSliderAutomationPeerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IColorPickerSliderAutomationPeerFactory {
     type Vtable = IColorPickerSliderAutomationPeerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1a55c77e_9dd6_45a3_9042_b40200fea1a9);
@@ -8091,6 +8125,11 @@ pub struct IColorPickerSliderAutomationPeerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IColorSpectrumAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IColorSpectrumAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IColorSpectrumAutomationPeer {
     type Vtable = IColorSpectrumAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x15d5ba03_010d_4ff7_9087_f4dd09f831b7);
@@ -8103,6 +8142,11 @@ pub struct IColorSpectrumAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IColorSpectrumAutomationPeerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IColorSpectrumAutomationPeerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IColorSpectrumAutomationPeerFactory {
     type Vtable = IColorSpectrumAutomationPeerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x0ac400e1_b743_4496_837a_8889e6ac6497);
@@ -8119,6 +8163,11 @@ pub struct IColorSpectrumAutomationPeerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IComboBoxAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IComboBoxAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IComboBoxAutomationPeer {
     type Vtable = IComboBoxAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x7eb40d0b_75c5_4263_ba6a_d4a54fb0f239);
@@ -8131,6 +8180,11 @@ pub struct IComboBoxAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IComboBoxAutomationPeerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IComboBoxAutomationPeerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IComboBoxAutomationPeerFactory {
     type Vtable = IComboBoxAutomationPeerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x098e5b0d_1b90_40b9_9be3_b23267eb13cf);
@@ -8147,6 +8201,11 @@ pub struct IComboBoxAutomationPeerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IComboBoxItemAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IComboBoxItemAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IComboBoxItemAutomationPeer {
     type Vtable = IComboBoxItemAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x12ddc76e_9552_446a_82ee_938cc371800f);
@@ -8159,6 +8218,11 @@ pub struct IComboBoxItemAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IComboBoxItemAutomationPeerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IComboBoxItemAutomationPeerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IComboBoxItemAutomationPeerFactory {
     type Vtable = IComboBoxItemAutomationPeerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x134ac7fc_397a_403f_a6ec_1ce8beda15e5);
@@ -8175,6 +8239,11 @@ pub struct IComboBoxItemAutomationPeerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IComboBoxItemDataAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IComboBoxItemDataAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IComboBoxItemDataAutomationPeer {
     type Vtable = IComboBoxItemDataAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x4fef6df2_289c_4c04_831b_5a668c6d7104);
@@ -8187,6 +8256,11 @@ pub struct IComboBoxItemDataAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IComboBoxItemDataAutomationPeerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IComboBoxItemDataAutomationPeerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IComboBoxItemDataAutomationPeerFactory {
     type Vtable = IComboBoxItemDataAutomationPeerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x14a8d4f6_469a_41ba_9d93_44a1a55da872);
@@ -8200,6 +8274,11 @@ pub struct IComboBoxItemDataAutomationPeerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDatePickerAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDatePickerAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDatePickerAutomationPeer {
     type Vtable = IDatePickerAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd07d357f_a0b9_45dc_991a_76c505e7d0f5);
@@ -8212,6 +8291,11 @@ pub struct IDatePickerAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDatePickerAutomationPeerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDatePickerAutomationPeerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDatePickerAutomationPeerFactory {
     type Vtable = IDatePickerAutomationPeerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe5667d19_9157_4436_9f4d_7fb99174b48e);
@@ -8228,6 +8312,11 @@ pub struct IDatePickerAutomationPeerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IDatePickerFlyoutPresenterAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDatePickerFlyoutPresenterAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IDatePickerFlyoutPresenterAutomationPeer {
     type Vtable = IDatePickerFlyoutPresenterAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x752aed38_c2bf_4880_82b2_a6c05e90c135);
@@ -8240,6 +8329,11 @@ pub struct IDatePickerFlyoutPresenterAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IFlipViewAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IFlipViewAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IFlipViewAutomationPeer {
     type Vtable = IFlipViewAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x8ec0353a_4284_4b00_aef8_a2688ea5e3c4);
@@ -8252,6 +8346,11 @@ pub struct IFlipViewAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IFlipViewAutomationPeerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IFlipViewAutomationPeerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IFlipViewAutomationPeerFactory {
     type Vtable = IFlipViewAutomationPeerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x4395ab0d_8d83_483c_88eb_e2617b0d293f);
@@ -8268,6 +8367,11 @@ pub struct IFlipViewAutomationPeerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IFlipViewItemAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IFlipViewItemAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IFlipViewItemAutomationPeer {
     type Vtable = IFlipViewItemAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc83034de_fa08_4bd3_aeb2_d2e5bfa04df9);
@@ -8280,6 +8384,11 @@ pub struct IFlipViewItemAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IFlipViewItemAutomationPeerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IFlipViewItemAutomationPeerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IFlipViewItemAutomationPeerFactory {
     type Vtable = IFlipViewItemAutomationPeerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x69109356_d0e5_4c10_a09c_ad0bf1b0cb01);
@@ -8296,6 +8405,11 @@ pub struct IFlipViewItemAutomationPeerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IFlipViewItemDataAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IFlipViewItemDataAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IFlipViewItemDataAutomationPeer {
     type Vtable = IFlipViewItemDataAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb0986175_00bc_4118_8a6f_16ee9c15d968);
@@ -8308,6 +8422,11 @@ pub struct IFlipViewItemDataAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IFlipViewItemDataAutomationPeerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IFlipViewItemDataAutomationPeerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IFlipViewItemDataAutomationPeerFactory {
     type Vtable = IFlipViewItemDataAutomationPeerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x3c864393_0aea_4e78_bc11_b775cac4114c);
@@ -8321,6 +8440,11 @@ pub struct IFlipViewItemDataAutomationPeerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IFlyoutPresenterAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IFlyoutPresenterAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IFlyoutPresenterAutomationPeer {
     type Vtable = IFlyoutPresenterAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa01840b4_5fca_456f_98ea_300eb40b585e);
@@ -8333,6 +8457,11 @@ pub struct IFlyoutPresenterAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IFlyoutPresenterAutomationPeerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IFlyoutPresenterAutomationPeerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IFlyoutPresenterAutomationPeerFactory {
     type Vtable = IFlyoutPresenterAutomationPeerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf350155f_8924_44c0_ba44_653fe79f1efb);
@@ -8349,6 +8478,11 @@ pub struct IFlyoutPresenterAutomationPeerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IFrameworkElementAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IFrameworkElementAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IFrameworkElementAutomationPeer {
     type Vtable = IFrameworkElementAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb90ad781_bfeb_4451_bd47_9f3a63ebd24a);
@@ -8362,6 +8496,11 @@ pub struct IFrameworkElementAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IFrameworkElementAutomationPeerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IFrameworkElementAutomationPeerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IFrameworkElementAutomationPeerFactory {
     type Vtable = IFrameworkElementAutomationPeerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x0db9b8bc_b812_48e3_af1f_dbc57600c325);
@@ -8375,6 +8514,11 @@ pub struct IFrameworkElementAutomationPeerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IFrameworkElementAutomationPeerStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IFrameworkElementAutomationPeerStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IFrameworkElementAutomationPeerStatics {
     type Vtable = IFrameworkElementAutomationPeerStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb9c0b997_2820_44a1_a5a8_9b801edc269e);
@@ -8389,6 +8533,11 @@ pub struct IFrameworkElementAutomationPeerStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGridViewAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGridViewAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGridViewAutomationPeer {
     type Vtable = IGridViewAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1c4401a4_d951_49ca_8f82_c7f3c60681b0);
@@ -8401,6 +8550,11 @@ pub struct IGridViewAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGridViewAutomationPeerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGridViewAutomationPeerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGridViewAutomationPeerFactory {
     type Vtable = IGridViewAutomationPeerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x8aca59dd_22a7_4800_894b_c1f485f38953);
@@ -8417,6 +8571,11 @@ pub struct IGridViewAutomationPeerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGridViewHeaderItemAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGridViewHeaderItemAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGridViewHeaderItemAutomationPeer {
     type Vtable = IGridViewHeaderItemAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe3dcef3a_e08a_48e7_b23a_2be5b66e474e);
@@ -8429,6 +8588,11 @@ pub struct IGridViewHeaderItemAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGridViewHeaderItemAutomationPeerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGridViewHeaderItemAutomationPeerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGridViewHeaderItemAutomationPeerFactory {
     type Vtable = IGridViewHeaderItemAutomationPeerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x2c80b4d2_ffc2_4157_88dd_59cd92e39715);
@@ -8445,6 +8609,11 @@ pub struct IGridViewHeaderItemAutomationPeerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGridViewItemAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGridViewItemAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGridViewItemAutomationPeer {
     type Vtable = IGridViewItemAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x93ef2d07_346c_4166_a4ba_bc6a181e7f33);
@@ -8457,6 +8626,11 @@ pub struct IGridViewItemAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGridViewItemAutomationPeerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGridViewItemAutomationPeerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGridViewItemAutomationPeerFactory {
     type Vtable = IGridViewItemAutomationPeerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xfafec376_f22e_466d_913c_ae24ccdb160f);
@@ -8473,6 +8647,11 @@ pub struct IGridViewItemAutomationPeerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGridViewItemDataAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGridViewItemDataAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGridViewItemDataAutomationPeer {
     type Vtable = IGridViewItemDataAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf3f4868f_29d4_4094_8c54_ea61a88294a4);
@@ -8485,6 +8664,11 @@ pub struct IGridViewItemDataAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGridViewItemDataAutomationPeerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGridViewItemDataAutomationPeerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGridViewItemDataAutomationPeerFactory {
     type Vtable = IGridViewItemDataAutomationPeerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa65e7a88_770d_402c_996f_67506af2a4af);
@@ -8498,6 +8682,11 @@ pub struct IGridViewItemDataAutomationPeerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGroupItemAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGroupItemAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGroupItemAutomationPeer {
     type Vtable = IGroupItemAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1914fe6d_0740_4236_9ee1_38cf19c1c388);
@@ -8510,6 +8699,11 @@ pub struct IGroupItemAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGroupItemAutomationPeerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGroupItemAutomationPeerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGroupItemAutomationPeerFactory {
     type Vtable = IGroupItemAutomationPeerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x56a64567_f21c_4c90_b379_15a27c7f8409);
@@ -8526,6 +8720,11 @@ pub struct IGroupItemAutomationPeerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHubAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHubAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHubAutomationPeer {
     type Vtable = IHubAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x4ddee056_4ebc_4620_a05d_903e3c9a4ead);
@@ -8538,6 +8737,11 @@ pub struct IHubAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHubAutomationPeerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHubAutomationPeerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHubAutomationPeerFactory {
     type Vtable = IHubAutomationPeerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc762d43f_79dd_43ee_8777_8d08b39aa065);
@@ -8554,6 +8758,11 @@ pub struct IHubAutomationPeerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHubSectionAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHubSectionAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHubSectionAutomationPeer {
     type Vtable = IHubSectionAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x16d91ff7_7431_4d82_83ce_cfa3192b0f18);
@@ -8566,6 +8775,11 @@ pub struct IHubSectionAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHubSectionAutomationPeerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHubSectionAutomationPeerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHubSectionAutomationPeerFactory {
     type Vtable = IHubSectionAutomationPeerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc68e27e8_17ec_4329_91ae_2d0b2339d498);
@@ -8582,6 +8796,11 @@ pub struct IHubSectionAutomationPeerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHyperlinkButtonAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHyperlinkButtonAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHyperlinkButtonAutomationPeer {
     type Vtable = IHyperlinkButtonAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xaa7afcb1_0edf_46d9_aa9e_0eb21d140097);
@@ -8594,6 +8813,11 @@ pub struct IHyperlinkButtonAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHyperlinkButtonAutomationPeerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHyperlinkButtonAutomationPeerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHyperlinkButtonAutomationPeerFactory {
     type Vtable = IHyperlinkButtonAutomationPeerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x59bc1661_c182_49af_9526_44b88e628455);
@@ -8610,6 +8834,11 @@ pub struct IHyperlinkButtonAutomationPeerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IImageAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IImageAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IImageAutomationPeer {
     type Vtable = IImageAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9b0bbf8c_60a2_48bf_ab2c_1a52a451d2d4);
@@ -8622,6 +8851,11 @@ pub struct IImageAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IImageAutomationPeerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IImageAutomationPeerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IImageAutomationPeerFactory {
     type Vtable = IImageAutomationPeerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x90304003_687d_47bf_b3a2_4babcad8ef50);
@@ -8638,6 +8872,11 @@ pub struct IImageAutomationPeerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IInkToolbarAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInkToolbarAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IInkToolbarAutomationPeer {
     type Vtable = IInkToolbarAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x123baaa4_f2e8_4bcb_9382_5dfdd11fe45f);
@@ -8650,6 +8889,11 @@ pub struct IInkToolbarAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IItemAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IItemAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IItemAutomationPeer {
     type Vtable = IItemAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x953c34f6_3b31_47a7_b3bf_25d3ae99c317);
@@ -8664,6 +8908,11 @@ pub struct IItemAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IItemAutomationPeerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IItemAutomationPeerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IItemAutomationPeerFactory {
     type Vtable = IItemAutomationPeerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x29065073_de3d_4d3f_97b4_4d6f9d53444d);
@@ -8677,6 +8926,11 @@ pub struct IItemAutomationPeerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IItemsControlAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IItemsControlAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IItemsControlAutomationPeer {
     type Vtable = IItemsControlAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x96e76bf1_37f7_4088_925d_65268e83e34d);
@@ -8689,6 +8943,11 @@ pub struct IItemsControlAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IItemsControlAutomationPeer2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IItemsControlAutomationPeer2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IItemsControlAutomationPeer2 {
     type Vtable = IItemsControlAutomationPeer2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc48d8917_95a8_47b8_a517_bf891a6c039b);
@@ -8702,6 +8961,11 @@ pub struct IItemsControlAutomationPeer2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IItemsControlAutomationPeerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IItemsControlAutomationPeerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IItemsControlAutomationPeerFactory {
     type Vtable = IItemsControlAutomationPeerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x4038a259_2e1a_49ca_a533_c64f181577e6);
@@ -8718,6 +8982,11 @@ pub struct IItemsControlAutomationPeerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IItemsControlAutomationPeerOverrides2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IItemsControlAutomationPeerOverrides2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IItemsControlAutomationPeerOverrides2 {
     type Vtable = IItemsControlAutomationPeerOverrides2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x361dc0e8_b56f_45e9_80fe_10a0fb0fe177);
@@ -8731,6 +9000,11 @@ pub struct IItemsControlAutomationPeerOverrides2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IListBoxAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IListBoxAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IListBoxAutomationPeer {
     type Vtable = IListBoxAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x8cd0d608_b402_4a6e_bd9a_343f8845eb32);
@@ -8743,6 +9017,11 @@ pub struct IListBoxAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IListBoxAutomationPeerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IListBoxAutomationPeerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IListBoxAutomationPeerFactory {
     type Vtable = IListBoxAutomationPeerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe2362185_7df6_49f7_8abc_4c33f1a3d46e);
@@ -8759,6 +9038,11 @@ pub struct IListBoxAutomationPeerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IListBoxItemAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IListBoxItemAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IListBoxItemAutomationPeer {
     type Vtable = IListBoxItemAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1bc6e1c6_2997_42df_99eb_92bc1dd149fb);
@@ -8771,6 +9055,11 @@ pub struct IListBoxItemAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IListBoxItemAutomationPeerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IListBoxItemAutomationPeerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IListBoxItemAutomationPeerFactory {
     type Vtable = IListBoxItemAutomationPeerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x509f9dd8_b0aa_443f_a110_41209af44f1c);
@@ -8787,6 +9076,11 @@ pub struct IListBoxItemAutomationPeerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IListBoxItemDataAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IListBoxItemDataAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IListBoxItemDataAutomationPeer {
     type Vtable = IListBoxItemDataAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xfd7d5fee_fde0_482a_8084_dcebba5b9806);
@@ -8799,6 +9093,11 @@ pub struct IListBoxItemDataAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IListBoxItemDataAutomationPeerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IListBoxItemDataAutomationPeerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IListBoxItemDataAutomationPeerFactory {
     type Vtable = IListBoxItemDataAutomationPeerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd7924e16_bd8d_4662_a995_20ff9a056093);
@@ -8812,6 +9111,11 @@ pub struct IListBoxItemDataAutomationPeerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IListPickerFlyoutPresenterAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IListPickerFlyoutPresenterAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IListPickerFlyoutPresenterAutomationPeer {
     type Vtable = IListPickerFlyoutPresenterAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x56dfdc58_2395_4060_8047_8ea463698a24);
@@ -8824,6 +9128,11 @@ pub struct IListPickerFlyoutPresenterAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IListViewAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IListViewAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IListViewAutomationPeer {
     type Vtable = IListViewAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x73cecc87_c0dc_4260_9148_75e9864a7230);
@@ -8836,6 +9145,11 @@ pub struct IListViewAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IListViewAutomationPeerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IListViewAutomationPeerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IListViewAutomationPeerFactory {
     type Vtable = IListViewAutomationPeerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x65f39174_eaa2_4e44_8be6_4cca28cd0288);
@@ -8852,6 +9166,11 @@ pub struct IListViewAutomationPeerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IListViewBaseAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IListViewBaseAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IListViewBaseAutomationPeer {
     type Vtable = IListViewBaseAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x87ec7649_b83d_4e55_9afd_bd835e748f5c);
@@ -8864,6 +9183,11 @@ pub struct IListViewBaseAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IListViewBaseAutomationPeerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IListViewBaseAutomationPeerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IListViewBaseAutomationPeerFactory {
     type Vtable = IListViewBaseAutomationPeerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x70d3c2be_8950_4647_9362_fd002f8ff82e);
@@ -8880,6 +9204,11 @@ pub struct IListViewBaseAutomationPeerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IListViewBaseHeaderItemAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IListViewBaseHeaderItemAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IListViewBaseHeaderItemAutomationPeer {
     type Vtable = IListViewBaseHeaderItemAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x7cb8b732_c1f0_4a3c_bc14_85dd48dedb85);
@@ -8892,6 +9221,11 @@ pub struct IListViewBaseHeaderItemAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IListViewBaseHeaderItemAutomationPeerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IListViewBaseHeaderItemAutomationPeerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IListViewBaseHeaderItemAutomationPeerFactory {
     type Vtable = IListViewBaseHeaderItemAutomationPeerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x40ec995f_d631_4004_832e_6d8643e51561);
@@ -8908,6 +9242,11 @@ pub struct IListViewBaseHeaderItemAutomationPeerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IListViewHeaderItemAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IListViewHeaderItemAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IListViewHeaderItemAutomationPeer {
     type Vtable = IListViewHeaderItemAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x67ab1e4b_ad61_4c88_ba45_0f3a8d061f8f);
@@ -8920,6 +9259,11 @@ pub struct IListViewHeaderItemAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IListViewHeaderItemAutomationPeerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IListViewHeaderItemAutomationPeerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IListViewHeaderItemAutomationPeerFactory {
     type Vtable = IListViewHeaderItemAutomationPeerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x07668694_2ca5_4be4_a8b9_592d48f76087);
@@ -8936,6 +9280,11 @@ pub struct IListViewHeaderItemAutomationPeerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IListViewItemAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IListViewItemAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IListViewItemAutomationPeer {
     type Vtable = IListViewItemAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xca114e70_a16d_4d09_a1cf_1856ef98a9ec);
@@ -8948,6 +9297,11 @@ pub struct IListViewItemAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IListViewItemAutomationPeerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IListViewItemAutomationPeerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IListViewItemAutomationPeerFactory {
     type Vtable = IListViewItemAutomationPeerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc47dfbc0_facc_4024_a73b_17ec4e662654);
@@ -8964,6 +9318,11 @@ pub struct IListViewItemAutomationPeerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IListViewItemDataAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IListViewItemDataAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IListViewItemDataAutomationPeer {
     type Vtable = IListViewItemDataAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x15a8d7fd_d7a5_4a6c_963c_6f7ce464671a);
@@ -8976,6 +9335,11 @@ pub struct IListViewItemDataAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IListViewItemDataAutomationPeerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IListViewItemDataAutomationPeerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IListViewItemDataAutomationPeerFactory {
     type Vtable = IListViewItemDataAutomationPeerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd0db12bb_d715_4523_acc0_1e1072d8e32b);
@@ -8989,6 +9353,11 @@ pub struct IListViewItemDataAutomationPeerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ILoopingSelectorAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILoopingSelectorAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ILoopingSelectorAutomationPeer {
     type Vtable = ILoopingSelectorAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x50b406ca_bae9_4816_8a3a_0cb4f96478a2);
@@ -9001,6 +9370,11 @@ pub struct ILoopingSelectorAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ILoopingSelectorItemAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILoopingSelectorItemAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ILoopingSelectorItemAutomationPeer {
     type Vtable = ILoopingSelectorItemAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd3fa68bf_04cf_4f4c_8d3e_4780a19d4788);
@@ -9013,6 +9387,11 @@ pub struct ILoopingSelectorItemAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ILoopingSelectorItemDataAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILoopingSelectorItemDataAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ILoopingSelectorItemDataAutomationPeer {
     type Vtable = ILoopingSelectorItemDataAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xef567e32_7cd2_4d32_9590_1f588d5ef38d);
@@ -9025,6 +9404,11 @@ pub struct ILoopingSelectorItemDataAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMapControlAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMapControlAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMapControlAutomationPeer {
     type Vtable = IMapControlAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x425beee4_f2e8_4bcb_9382_5dfdd11fe45f);
@@ -9037,6 +9421,11 @@ pub struct IMapControlAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMediaElementAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMediaElementAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMediaElementAutomationPeer {
     type Vtable = IMediaElementAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xba0b9fc2_a6e2_41a5_b17a_d1594613efba);
@@ -9049,6 +9438,11 @@ pub struct IMediaElementAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMediaElementAutomationPeerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMediaElementAutomationPeerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMediaElementAutomationPeerFactory {
     type Vtable = IMediaElementAutomationPeerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb2ad3b28_7575_4173_9bc7_80367a164ed2);
@@ -9065,6 +9459,11 @@ pub struct IMediaElementAutomationPeerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMediaPlayerElementAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMediaPlayerElementAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMediaPlayerElementAutomationPeer {
     type Vtable = IMediaPlayerElementAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x02bed209_3f65_4fdd_b5ca_c4750d4e6ea4);
@@ -9077,6 +9476,11 @@ pub struct IMediaPlayerElementAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMediaPlayerElementAutomationPeerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMediaPlayerElementAutomationPeerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMediaPlayerElementAutomationPeerFactory {
     type Vtable = IMediaPlayerElementAutomationPeerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x08848077_82af_4d19_b170_282a9e0e7f37);
@@ -9093,6 +9497,11 @@ pub struct IMediaPlayerElementAutomationPeerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMediaTransportControlsAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMediaTransportControlsAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMediaTransportControlsAutomationPeer {
     type Vtable = IMediaTransportControlsAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa3ad8d93_79f8_4958_a3c8_980defb83d15);
@@ -9105,6 +9514,11 @@ pub struct IMediaTransportControlsAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMediaTransportControlsAutomationPeerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMediaTransportControlsAutomationPeerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMediaTransportControlsAutomationPeerFactory {
     type Vtable = IMediaTransportControlsAutomationPeerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf41cb003_e103_4ab0_812a_a08fbdb570ce);
@@ -9121,6 +9535,11 @@ pub struct IMediaTransportControlsAutomationPeerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMenuBarAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMenuBarAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMenuBarAutomationPeer {
     type Vtable = IMenuBarAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x4b6adcf1_f274_5592_85a8_7b099e99b320);
@@ -9133,6 +9552,11 @@ pub struct IMenuBarAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMenuBarAutomationPeerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMenuBarAutomationPeerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMenuBarAutomationPeerFactory {
     type Vtable = IMenuBarAutomationPeerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x2a094871_4a9b_5a0b_9fda_7bc3ae957c53);
@@ -9149,6 +9573,11 @@ pub struct IMenuBarAutomationPeerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMenuBarItemAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMenuBarItemAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMenuBarItemAutomationPeer {
     type Vtable = IMenuBarItemAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x0fce49b4_cff5_5c4b_98ee_e75fdddf799a);
@@ -9161,6 +9590,11 @@ pub struct IMenuBarItemAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMenuBarItemAutomationPeerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMenuBarItemAutomationPeerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMenuBarItemAutomationPeerFactory {
     type Vtable = IMenuBarItemAutomationPeerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc9c77746_130f_5b19_83a6_61db584613aa);
@@ -9177,6 +9611,11 @@ pub struct IMenuBarItemAutomationPeerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMenuFlyoutItemAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMenuFlyoutItemAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMenuFlyoutItemAutomationPeer {
     type Vtable = IMenuFlyoutItemAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1fc19462_21df_456e_aa11_8fac6b4b2af6);
@@ -9189,6 +9628,11 @@ pub struct IMenuFlyoutItemAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMenuFlyoutItemAutomationPeerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMenuFlyoutItemAutomationPeerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMenuFlyoutItemAutomationPeerFactory {
     type Vtable = IMenuFlyoutItemAutomationPeerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd08bfcb8_20d1_45d8_a2c2_2f130df714e0);
@@ -9205,6 +9649,11 @@ pub struct IMenuFlyoutItemAutomationPeerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMenuFlyoutPresenterAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMenuFlyoutPresenterAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMenuFlyoutPresenterAutomationPeer {
     type Vtable = IMenuFlyoutPresenterAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe244a871_fcbb_48fc_8a93_41ea134b53ce);
@@ -9217,6 +9666,11 @@ pub struct IMenuFlyoutPresenterAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IMenuFlyoutPresenterAutomationPeerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMenuFlyoutPresenterAutomationPeerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IMenuFlyoutPresenterAutomationPeerFactory {
     type Vtable = IMenuFlyoutPresenterAutomationPeerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x07b5172d_761d_452b_9e6d_fa2a8be0ad26);
@@ -9233,6 +9687,11 @@ pub struct IMenuFlyoutPresenterAutomationPeerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct INavigationViewItemAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for INavigationViewItemAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for INavigationViewItemAutomationPeer {
     type Vtable = INavigationViewItemAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x309847a5_9971_4d8d_a81c_085c7086a1b9);
@@ -9245,6 +9704,11 @@ pub struct INavigationViewItemAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct INavigationViewItemAutomationPeerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for INavigationViewItemAutomationPeerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for INavigationViewItemAutomationPeerFactory {
     type Vtable = INavigationViewItemAutomationPeerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x0bc2835d_aa38_4f97_9664_e6fc821d81ed);
@@ -9261,6 +9725,11 @@ pub struct INavigationViewItemAutomationPeerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPasswordBoxAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPasswordBoxAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPasswordBoxAutomationPeer {
     type Vtable = IPasswordBoxAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x684f065e_3df3_4b9f_82ad_8819db3b218a);
@@ -9273,6 +9742,11 @@ pub struct IPasswordBoxAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPasswordBoxAutomationPeerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPasswordBoxAutomationPeerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPasswordBoxAutomationPeerFactory {
     type Vtable = IPasswordBoxAutomationPeerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xac3d7ede_dca4_481c_b520_4a9b3f3b179c);
@@ -9289,6 +9763,11 @@ pub struct IPasswordBoxAutomationPeerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPersonPictureAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPersonPictureAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPersonPictureAutomationPeer {
     type Vtable = IPersonPictureAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x27156d4c_a66f_4aaf_8286_4f796d30628c);
@@ -9301,6 +9780,11 @@ pub struct IPersonPictureAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPersonPictureAutomationPeerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPersonPictureAutomationPeerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPersonPictureAutomationPeerFactory {
     type Vtable = IPersonPictureAutomationPeerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa95f1f6d_2524_44a4_97fd_1181130100ad);
@@ -9317,6 +9801,11 @@ pub struct IPersonPictureAutomationPeerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPickerFlyoutPresenterAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPickerFlyoutPresenterAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPickerFlyoutPresenterAutomationPeer {
     type Vtable = IPickerFlyoutPresenterAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x28414bf7_8382_4eae_93c1_d6f035aa8155);
@@ -9329,6 +9818,11 @@ pub struct IPickerFlyoutPresenterAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPivotAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPivotAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPivotAutomationPeer {
     type Vtable = IPivotAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe715a8f8_3b9d_402c_81e2_6e912ef58981);
@@ -9341,6 +9835,11 @@ pub struct IPivotAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPivotAutomationPeerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPivotAutomationPeerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPivotAutomationPeerFactory {
     type Vtable = IPivotAutomationPeerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x3efe0f94_0c91_4341_b9ac_1b56b4e6b84f);
@@ -9357,6 +9856,11 @@ pub struct IPivotAutomationPeerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPivotItemAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPivotItemAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPivotItemAutomationPeer {
     type Vtable = IPivotItemAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1a4241ad_5d55_4d27_b40f_2d37506fbe78);
@@ -9369,6 +9873,11 @@ pub struct IPivotItemAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPivotItemAutomationPeerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPivotItemAutomationPeerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPivotItemAutomationPeerFactory {
     type Vtable = IPivotItemAutomationPeerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf2810471_183f_416b_b41a_1e5a958a91f4);
@@ -9385,6 +9894,11 @@ pub struct IPivotItemAutomationPeerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPivotItemDataAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPivotItemDataAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPivotItemDataAutomationPeer {
     type Vtable = IPivotItemDataAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa2a3b788_ea1d_48b7_88ee_f08b6aa07fee);
@@ -9397,6 +9911,11 @@ pub struct IPivotItemDataAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPivotItemDataAutomationPeerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPivotItemDataAutomationPeerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPivotItemDataAutomationPeerFactory {
     type Vtable = IPivotItemDataAutomationPeerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x517a2480_d3b6_412e_82b6_94a0a84c13b0);
@@ -9410,6 +9929,11 @@ pub struct IPivotItemDataAutomationPeerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IProgressBarAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IProgressBarAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IProgressBarAutomationPeer {
     type Vtable = IProgressBarAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x93f48f86_d840_4fb6_ac2f_5f779b854b0d);
@@ -9422,6 +9946,11 @@ pub struct IProgressBarAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IProgressBarAutomationPeerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IProgressBarAutomationPeerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IProgressBarAutomationPeerFactory {
     type Vtable = IProgressBarAutomationPeerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x364679ab_b80f_41b4_8eea_2f5251bc739c);
@@ -9438,6 +9967,11 @@ pub struct IProgressBarAutomationPeerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IProgressRingAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IProgressRingAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IProgressRingAutomationPeer {
     type Vtable = IProgressRingAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xbc305eee_39d3_4eeb_ac33_2394de123e2e);
@@ -9450,6 +9984,11 @@ pub struct IProgressRingAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IProgressRingAutomationPeerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IProgressRingAutomationPeerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IProgressRingAutomationPeerFactory {
     type Vtable = IProgressRingAutomationPeerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf3db204b_157e_40bc_9593_55bc5c71a4f6);
@@ -9466,6 +10005,11 @@ pub struct IProgressRingAutomationPeerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IRadioButtonAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRadioButtonAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IRadioButtonAutomationPeer {
     type Vtable = IRadioButtonAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x7e6a5ed8_0b30_4743_b102_dcdf548e3131);
@@ -9478,6 +10022,11 @@ pub struct IRadioButtonAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IRadioButtonAutomationPeerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRadioButtonAutomationPeerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IRadioButtonAutomationPeerFactory {
     type Vtable = IRadioButtonAutomationPeerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x4940c4fd_3d88_49ca_8f31_924187af0bfe);
@@ -9494,6 +10043,11 @@ pub struct IRadioButtonAutomationPeerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IRangeBaseAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRangeBaseAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IRangeBaseAutomationPeer {
     type Vtable = IRangeBaseAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe454b549_4b2c_42ad_b04b_d35947d1ee50);
@@ -9506,6 +10060,11 @@ pub struct IRangeBaseAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IRangeBaseAutomationPeerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRangeBaseAutomationPeerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IRangeBaseAutomationPeerFactory {
     type Vtable = IRangeBaseAutomationPeerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x827c7601_3078_4479_95ea_91374ca06207);
@@ -9522,6 +10081,11 @@ pub struct IRangeBaseAutomationPeerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IRatingControlAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRatingControlAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IRatingControlAutomationPeer {
     type Vtable = IRatingControlAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x3d14349a_9963_4a47_823c_f457cb3209d5);
@@ -9534,6 +10098,11 @@ pub struct IRatingControlAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IRatingControlAutomationPeerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRatingControlAutomationPeerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IRatingControlAutomationPeerFactory {
     type Vtable = IRatingControlAutomationPeerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf179f272_9846_4632_8b9c_be6fa8d3c9bb);
@@ -9550,6 +10119,11 @@ pub struct IRatingControlAutomationPeerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IRepeatButtonAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRepeatButtonAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IRepeatButtonAutomationPeer {
     type Vtable = IRepeatButtonAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x29e41ad5_a8ac_4e8a_83d8_09e37e054257);
@@ -9562,6 +10136,11 @@ pub struct IRepeatButtonAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IRepeatButtonAutomationPeerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRepeatButtonAutomationPeerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IRepeatButtonAutomationPeerFactory {
     type Vtable = IRepeatButtonAutomationPeerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x6a6ff9d4_575e_4e60_bdd6_ec14419b4ff6);
@@ -9578,6 +10157,11 @@ pub struct IRepeatButtonAutomationPeerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IRichEditBoxAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRichEditBoxAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IRichEditBoxAutomationPeer {
     type Vtable = IRichEditBoxAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc69f5c04_16ee_467a_a833_c3da8458ad64);
@@ -9590,6 +10174,11 @@ pub struct IRichEditBoxAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IRichEditBoxAutomationPeerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRichEditBoxAutomationPeerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IRichEditBoxAutomationPeerFactory {
     type Vtable = IRichEditBoxAutomationPeerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x752c8399_d296_4d87_9020_a4750e885b3c);
@@ -9606,6 +10195,11 @@ pub struct IRichEditBoxAutomationPeerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IRichTextBlockAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRichTextBlockAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IRichTextBlockAutomationPeer {
     type Vtable = IRichTextBlockAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x93a01a9c_9609_41fa_82f3_909c09f49a72);
@@ -9618,6 +10212,11 @@ pub struct IRichTextBlockAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IRichTextBlockAutomationPeerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRichTextBlockAutomationPeerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IRichTextBlockAutomationPeerFactory {
     type Vtable = IRichTextBlockAutomationPeerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x2038ae61_1389_467a_aed6_37334da9622b);
@@ -9634,6 +10233,11 @@ pub struct IRichTextBlockAutomationPeerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IRichTextBlockOverflowAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRichTextBlockOverflowAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IRichTextBlockOverflowAutomationPeer {
     type Vtable = IRichTextBlockOverflowAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x8c9a409a_2736_437b_ab36_a16a202f105d);
@@ -9646,6 +10250,11 @@ pub struct IRichTextBlockOverflowAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IRichTextBlockOverflowAutomationPeerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRichTextBlockOverflowAutomationPeerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IRichTextBlockOverflowAutomationPeerFactory {
     type Vtable = IRichTextBlockOverflowAutomationPeerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xbd5eb663_2c14_4665_adef_f2b033947beb);
@@ -9662,6 +10271,11 @@ pub struct IRichTextBlockOverflowAutomationPeerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IScrollBarAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IScrollBarAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IScrollBarAutomationPeer {
     type Vtable = IScrollBarAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x69e0c369_bbe7_41f2_87ca_aad813fe550e);
@@ -9674,6 +10288,11 @@ pub struct IScrollBarAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IScrollBarAutomationPeerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IScrollBarAutomationPeerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IScrollBarAutomationPeerFactory {
     type Vtable = IScrollBarAutomationPeerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe1302110_afeb_4595_8e3d_edc0844a2b21);
@@ -9690,6 +10309,11 @@ pub struct IScrollBarAutomationPeerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IScrollViewerAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IScrollViewerAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IScrollViewerAutomationPeer {
     type Vtable = IScrollViewerAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd985f259_1b09_4e88_88fd_421750dc6b45);
@@ -9702,6 +10326,11 @@ pub struct IScrollViewerAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IScrollViewerAutomationPeerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IScrollViewerAutomationPeerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IScrollViewerAutomationPeerFactory {
     type Vtable = IScrollViewerAutomationPeerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x270dff7d_d96d_48f9_a36a_c252aa9c4670);
@@ -9718,6 +10347,11 @@ pub struct IScrollViewerAutomationPeerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISearchBoxAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISearchBoxAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISearchBoxAutomationPeer {
     type Vtable = ISearchBoxAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x854011a4_18a6_4f30_939b_8871afa3f5e9);
@@ -9730,6 +10364,11 @@ pub struct ISearchBoxAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISearchBoxAutomationPeerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISearchBoxAutomationPeerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISearchBoxAutomationPeerFactory {
     type Vtable = ISearchBoxAutomationPeerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb3c01430_7faa_41bb_8e91_7c761c5267f1);
@@ -9746,6 +10385,11 @@ pub struct ISearchBoxAutomationPeerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISelectorAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISelectorAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISelectorAutomationPeer {
     type Vtable = ISelectorAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x162ac829_7115_43ec_b383_a7b71644069d);
@@ -9758,6 +10402,11 @@ pub struct ISelectorAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISelectorAutomationPeerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISelectorAutomationPeerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISelectorAutomationPeerFactory {
     type Vtable = ISelectorAutomationPeerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x7b525646_829b_4dcc_bd52_5a8d0399387a);
@@ -9774,6 +10423,11 @@ pub struct ISelectorAutomationPeerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISelectorItemAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISelectorItemAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISelectorItemAutomationPeer {
     type Vtable = ISelectorItemAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xae8b3477_860a_45bb_bf7c_e1b27419d1dd);
@@ -9786,6 +10440,11 @@ pub struct ISelectorItemAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISelectorItemAutomationPeerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISelectorItemAutomationPeerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISelectorItemAutomationPeerFactory {
     type Vtable = ISelectorItemAutomationPeerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x66d7edfb_786d_4362_a964_ebfb21776c30);
@@ -9799,6 +10458,11 @@ pub struct ISelectorItemAutomationPeerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISemanticZoomAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISemanticZoomAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISemanticZoomAutomationPeer {
     type Vtable = ISemanticZoomAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x3c2fac6c_a977_47fc_b44e_2754c0b2bea9);
@@ -9811,6 +10475,11 @@ pub struct ISemanticZoomAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISemanticZoomAutomationPeerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISemanticZoomAutomationPeerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISemanticZoomAutomationPeerFactory {
     type Vtable = ISemanticZoomAutomationPeerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf518d44d_a493_4496_b077_9674c7f4c5fa);
@@ -9827,6 +10496,11 @@ pub struct ISemanticZoomAutomationPeerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISettingsFlyoutAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISettingsFlyoutAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISettingsFlyoutAutomationPeer {
     type Vtable = ISettingsFlyoutAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd0de0cdb_30cf_47a6_a5eb_9c77f0b0d6dd);
@@ -9839,6 +10513,11 @@ pub struct ISettingsFlyoutAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISettingsFlyoutAutomationPeerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISettingsFlyoutAutomationPeerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISettingsFlyoutAutomationPeerFactory {
     type Vtable = ISettingsFlyoutAutomationPeerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf94762bd_8a14_40e4_94a7_3f33c922e945);
@@ -9855,6 +10534,11 @@ pub struct ISettingsFlyoutAutomationPeerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISliderAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISliderAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISliderAutomationPeer {
     type Vtable = ISliderAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xec30015a_d611_46d0_ae4f_6ecf27dfbaa5);
@@ -9867,6 +10551,11 @@ pub struct ISliderAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISliderAutomationPeerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISliderAutomationPeerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISliderAutomationPeerFactory {
     type Vtable = ISliderAutomationPeerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x971b8056_9a7a_4df9_95fa_6f5c04c91cac);
@@ -9883,6 +10572,11 @@ pub struct ISliderAutomationPeerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ITextBlockAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITextBlockAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ITextBlockAutomationPeer {
     type Vtable = ITextBlockAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xbe2057f5_6715_4e69_a050_92bd0ce232a9);
@@ -9895,6 +10589,11 @@ pub struct ITextBlockAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ITextBlockAutomationPeerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITextBlockAutomationPeerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ITextBlockAutomationPeerFactory {
     type Vtable = ITextBlockAutomationPeerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x76bf924b_7ca0_4b01_bc5c_a8cf4d3691de);
@@ -9911,6 +10610,11 @@ pub struct ITextBlockAutomationPeerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ITextBoxAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITextBoxAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ITextBoxAutomationPeer {
     type Vtable = ITextBoxAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x3a4f1ca0_5e5d_4d26_9067_e740bf657a9f);
@@ -9923,6 +10627,11 @@ pub struct ITextBoxAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ITextBoxAutomationPeerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITextBoxAutomationPeerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ITextBoxAutomationPeerFactory {
     type Vtable = ITextBoxAutomationPeerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x01f0c067_966b_4130_b872_469e42bd4a7f);
@@ -9939,6 +10648,11 @@ pub struct ITextBoxAutomationPeerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IThumbAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IThumbAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IThumbAutomationPeer {
     type Vtable = IThumbAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xdc2949b5_b45e_4d6d_892f_d9422c950efb);
@@ -9951,6 +10665,11 @@ pub struct IThumbAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IThumbAutomationPeerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IThumbAutomationPeerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IThumbAutomationPeerFactory {
     type Vtable = IThumbAutomationPeerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x970743ff_af41_4600_b55d_26d43df860e1);
@@ -9967,6 +10686,11 @@ pub struct IThumbAutomationPeerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ITimePickerAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITimePickerAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ITimePickerAutomationPeer {
     type Vtable = ITimePickerAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa43d44ef_3285_4df7_b4a4_e4cdf36a3a17);
@@ -9979,6 +10703,11 @@ pub struct ITimePickerAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ITimePickerAutomationPeerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITimePickerAutomationPeerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ITimePickerAutomationPeerFactory {
     type Vtable = ITimePickerAutomationPeerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x978f6671_47f8_40a7_9e21_68128b16b4fd);
@@ -9995,6 +10724,11 @@ pub struct ITimePickerAutomationPeerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ITimePickerFlyoutPresenterAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITimePickerFlyoutPresenterAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ITimePickerFlyoutPresenterAutomationPeer {
     type Vtable = ITimePickerFlyoutPresenterAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xda93ee27_82f1_4701_8706_be297bf06043);
@@ -10007,6 +10741,11 @@ pub struct ITimePickerFlyoutPresenterAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IToggleButtonAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IToggleButtonAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IToggleButtonAutomationPeer {
     type Vtable = IToggleButtonAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x62dbe6c5_bc0a_45bb_bf77_ea0f1502891f);
@@ -10019,6 +10758,11 @@ pub struct IToggleButtonAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IToggleButtonAutomationPeerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IToggleButtonAutomationPeerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IToggleButtonAutomationPeerFactory {
     type Vtable = IToggleButtonAutomationPeerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc9218cc4_ad4b_4d03_a6a4_7d59e6360004);
@@ -10035,6 +10779,11 @@ pub struct IToggleButtonAutomationPeerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IToggleMenuFlyoutItemAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IToggleMenuFlyoutItemAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IToggleMenuFlyoutItemAutomationPeer {
     type Vtable = IToggleMenuFlyoutItemAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x6b57eafe_6af1_4903_8373_3437bf352345);
@@ -10047,6 +10796,11 @@ pub struct IToggleMenuFlyoutItemAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IToggleMenuFlyoutItemAutomationPeerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IToggleMenuFlyoutItemAutomationPeerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IToggleMenuFlyoutItemAutomationPeerFactory {
     type Vtable = IToggleMenuFlyoutItemAutomationPeerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x94364b77_8f6c_4837_aae3_94d010d8d162);
@@ -10063,6 +10817,11 @@ pub struct IToggleMenuFlyoutItemAutomationPeerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IToggleSwitchAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IToggleSwitchAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IToggleSwitchAutomationPeer {
     type Vtable = IToggleSwitchAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc011f174_e89e_4790_bf9a_78ebb5f59e9f);
@@ -10075,6 +10834,11 @@ pub struct IToggleSwitchAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IToggleSwitchAutomationPeerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IToggleSwitchAutomationPeerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IToggleSwitchAutomationPeerFactory {
     type Vtable = IToggleSwitchAutomationPeerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x31f933e3_fef8_4419_9df5_d9ef7196ea34);
@@ -10091,6 +10855,11 @@ pub struct IToggleSwitchAutomationPeerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ITreeViewItemAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITreeViewItemAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ITreeViewItemAutomationPeer {
     type Vtable = ITreeViewItemAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x2331d648_b617_437f_920c_71d450503e65);
@@ -10103,6 +10872,11 @@ pub struct ITreeViewItemAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ITreeViewItemAutomationPeerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITreeViewItemAutomationPeerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ITreeViewItemAutomationPeerFactory {
     type Vtable = ITreeViewItemAutomationPeerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x73d388bf_1d01_4159_82c0_2b2996dbfdce);
@@ -10119,6 +10893,11 @@ pub struct ITreeViewItemAutomationPeerFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ITreeViewListAutomationPeer(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITreeViewListAutomationPeer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ITreeViewListAutomationPeer {
     type Vtable = ITreeViewListAutomationPeer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x71c1b5bc_bb29_4479_a8a8_606be6b823ae);
@@ -10131,6 +10910,11 @@ pub struct ITreeViewListAutomationPeer_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ITreeViewListAutomationPeerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITreeViewListAutomationPeerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ITreeViewListAutomationPeerFactory {
     type Vtable = ITreeViewListAutomationPeerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x00f597e2_f811_475a_bfe6_290fe707fa88);
@@ -10171,11 +10955,6 @@ impl ImageAutomationPeer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for ImageAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ImageAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10189,7 +10968,6 @@ impl ::core::fmt::Debug for ImageAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for ImageAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.ImageAutomationPeer;{9b0bbf8c-60a2-48bf-ab2c-1a52a451d2d4})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -10307,11 +11085,6 @@ unsafe impl ::core::marker::Sync for ImageAutomationPeer {}
 #[repr(transparent)]
 pub struct InkToolbarAutomationPeer(::windows::core::IUnknown);
 impl InkToolbarAutomationPeer {}
-impl ::core::clone::Clone for InkToolbarAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for InkToolbarAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10325,7 +11098,6 @@ impl ::core::fmt::Debug for InkToolbarAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for InkToolbarAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.InkToolbarAutomationPeer;{123baaa4-f2e8-4bcb-9382-5dfdd11fe45f})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -10486,11 +11258,6 @@ impl ItemAutomationPeer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for ItemAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ItemAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10504,7 +11271,6 @@ impl ::core::fmt::Debug for ItemAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for ItemAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.ItemAutomationPeer;{953c34f6-3b31-47a7-b3bf-25d3ae99c317})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -10668,11 +11434,6 @@ impl ItemsControlAutomationPeer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for ItemsControlAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ItemsControlAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10686,7 +11447,6 @@ impl ::core::fmt::Debug for ItemsControlAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for ItemsControlAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.ItemsControlAutomationPeer;{96e76bf1-37f7-4088-925d-65268e83e34d})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -10853,11 +11613,6 @@ impl ListBoxAutomationPeer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for ListBoxAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ListBoxAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10871,7 +11626,6 @@ impl ::core::fmt::Debug for ListBoxAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for ListBoxAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.ListBoxAutomationPeer;{8cd0d608-b402-4a6e-bd9a-343f8845eb32})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -11104,11 +11858,6 @@ impl ListBoxItemAutomationPeer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for ListBoxItemAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ListBoxItemAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11122,7 +11871,6 @@ impl ::core::fmt::Debug for ListBoxItemAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for ListBoxItemAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.ListBoxItemAutomationPeer;{1bc6e1c6-2997-42df-99eb-92bc1dd149fb})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -11267,11 +12015,6 @@ impl ListBoxItemDataAutomationPeer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for ListBoxItemDataAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ListBoxItemDataAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11285,7 +12028,6 @@ impl ::core::fmt::Debug for ListBoxItemDataAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for ListBoxItemDataAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.ListBoxItemDataAutomationPeer;{fd7d5fee-fde0-482a-8084-dcebba5b9806})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -11501,11 +12243,6 @@ unsafe impl ::core::marker::Sync for ListBoxItemDataAutomationPeer {}
 #[repr(transparent)]
 pub struct ListPickerFlyoutPresenterAutomationPeer(::windows::core::IUnknown);
 impl ListPickerFlyoutPresenterAutomationPeer {}
-impl ::core::clone::Clone for ListPickerFlyoutPresenterAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ListPickerFlyoutPresenterAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11519,7 +12256,6 @@ impl ::core::fmt::Debug for ListPickerFlyoutPresenterAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for ListPickerFlyoutPresenterAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.ListPickerFlyoutPresenterAutomationPeer;{56dfdc58-2395-4060-8047-8ea463698a24})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -11660,11 +12396,6 @@ impl ListViewAutomationPeer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for ListViewAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ListViewAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11678,7 +12409,6 @@ impl ::core::fmt::Debug for ListViewAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for ListViewAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.ListViewAutomationPeer;{73cecc87-c0dc-4260-9148-75e9864a7230})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -11975,11 +12705,6 @@ impl ListViewBaseAutomationPeer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for ListViewBaseAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ListViewBaseAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11993,7 +12718,6 @@ impl ::core::fmt::Debug for ListViewBaseAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for ListViewBaseAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.ListViewBaseAutomationPeer;{87ec7649-b83d-4e55-9afd-bd835e748f5c})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -12229,11 +12953,6 @@ unsafe impl ::core::marker::Sync for ListViewBaseAutomationPeer {}
 #[repr(transparent)]
 pub struct ListViewBaseHeaderItemAutomationPeer(::windows::core::IUnknown);
 impl ListViewBaseHeaderItemAutomationPeer {}
-impl ::core::clone::Clone for ListViewBaseHeaderItemAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ListViewBaseHeaderItemAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12247,7 +12966,6 @@ impl ::core::fmt::Debug for ListViewBaseHeaderItemAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for ListViewBaseHeaderItemAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.ListViewBaseHeaderItemAutomationPeer;{7cb8b732-c1f0-4a3c-bc14-85dd48dedb85})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -12388,11 +13106,6 @@ impl ListViewHeaderItemAutomationPeer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for ListViewHeaderItemAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ListViewHeaderItemAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12406,7 +13119,6 @@ impl ::core::fmt::Debug for ListViewHeaderItemAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for ListViewHeaderItemAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.ListViewHeaderItemAutomationPeer;{67ab1e4b-ad61-4c88-ba45-0f3a8d061f8f})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -12567,11 +13279,6 @@ impl ListViewItemAutomationPeer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for ListViewItemAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ListViewItemAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12585,7 +13292,6 @@ impl ::core::fmt::Debug for ListViewItemAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for ListViewItemAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.ListViewItemAutomationPeer;{ca114e70-a16d-4d09-a1cf-1856ef98a9ec})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -12730,11 +13436,6 @@ impl ListViewItemDataAutomationPeer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for ListViewItemDataAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ListViewItemDataAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12748,7 +13449,6 @@ impl ::core::fmt::Debug for ListViewItemDataAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for ListViewItemDataAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.ListViewItemDataAutomationPeer;{15a8d7fd-d7a5-4a6c-963c-6f7ce464671a})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -13088,11 +13788,6 @@ impl LoopingSelectorAutomationPeer {
         }
     }
 }
-impl ::core::clone::Clone for LoopingSelectorAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for LoopingSelectorAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13106,7 +13801,6 @@ impl ::core::fmt::Debug for LoopingSelectorAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for LoopingSelectorAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.LoopingSelectorAutomationPeer;{50b406ca-bae9-4816-8a3a-0cb4f96478a2})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -13371,11 +14065,6 @@ impl LoopingSelectorItemAutomationPeer {
         unsafe { (::windows::core::Interface::vtable(this).Select)(::core::mem::transmute_copy(this)).ok() }
     }
 }
-impl ::core::clone::Clone for LoopingSelectorItemAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for LoopingSelectorItemAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13389,7 +14078,6 @@ impl ::core::fmt::Debug for LoopingSelectorItemAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for LoopingSelectorItemAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.LoopingSelectorItemAutomationPeer;{d3fa68bf-04cf-4f4c-8d3e-4780a19d4788})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -13566,11 +14254,6 @@ impl LoopingSelectorItemDataAutomationPeer {
         unsafe { (::windows::core::Interface::vtable(this).Realize)(::core::mem::transmute_copy(this)).ok() }
     }
 }
-impl ::core::clone::Clone for LoopingSelectorItemDataAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for LoopingSelectorItemDataAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13584,7 +14267,6 @@ impl ::core::fmt::Debug for LoopingSelectorItemDataAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for LoopingSelectorItemDataAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.LoopingSelectorItemDataAutomationPeer;{ef567e32-7cd2-4d32-9590-1f588d5ef38d})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -13868,11 +14550,6 @@ impl MapControlAutomationPeer {
         unsafe { (::windows::core::Interface::vtable(this).ZoomByUnit)(::core::mem::transmute_copy(this), zoomunit).ok() }
     }
 }
-impl ::core::clone::Clone for MapControlAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MapControlAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13886,7 +14563,6 @@ impl ::core::fmt::Debug for MapControlAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for MapControlAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.MapControlAutomationPeer;{425beee4-f2e8-4bcb-9382-5dfdd11fe45f})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -14105,11 +14781,6 @@ impl MediaElementAutomationPeer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for MediaElementAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MediaElementAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -14123,7 +14794,6 @@ impl ::core::fmt::Debug for MediaElementAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for MediaElementAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.MediaElementAutomationPeer;{ba0b9fc2-a6e2-41a5-b17a-d1594613efba})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -14264,11 +14934,6 @@ impl MediaPlayerElementAutomationPeer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for MediaPlayerElementAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MediaPlayerElementAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -14282,7 +14947,6 @@ impl ::core::fmt::Debug for MediaPlayerElementAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for MediaPlayerElementAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.MediaPlayerElementAutomationPeer;{02bed209-3f65-4fdd-b5ca-c4750d4e6ea4})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -14423,11 +15087,6 @@ impl MediaTransportControlsAutomationPeer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for MediaTransportControlsAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MediaTransportControlsAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -14441,7 +15100,6 @@ impl ::core::fmt::Debug for MediaTransportControlsAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for MediaTransportControlsAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.MediaTransportControlsAutomationPeer;{a3ad8d93-79f8-4958-a3c8-980defb83d15})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -14582,11 +15240,6 @@ impl MenuBarAutomationPeer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for MenuBarAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MenuBarAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -14600,7 +15253,6 @@ impl ::core::fmt::Debug for MenuBarAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for MenuBarAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.MenuBarAutomationPeer;{4b6adcf1-f274-5592-85a8-7b099e99b320})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -14768,11 +15420,6 @@ impl MenuBarItemAutomationPeer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for MenuBarItemAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MenuBarItemAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -14786,7 +15433,6 @@ impl ::core::fmt::Debug for MenuBarItemAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for MenuBarItemAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.MenuBarItemAutomationPeer;{0fce49b4-cff5-5c4b-98ee-e75fdddf799a})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -14985,11 +15631,6 @@ impl MenuFlyoutItemAutomationPeer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for MenuFlyoutItemAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MenuFlyoutItemAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -15003,7 +15644,6 @@ impl ::core::fmt::Debug for MenuFlyoutItemAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for MenuFlyoutItemAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.MenuFlyoutItemAutomationPeer;{1fc19462-21df-456e-aa11-8fac6b4b2af6})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -15170,11 +15810,6 @@ impl MenuFlyoutPresenterAutomationPeer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for MenuFlyoutPresenterAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for MenuFlyoutPresenterAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -15188,7 +15823,6 @@ impl ::core::fmt::Debug for MenuFlyoutPresenterAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for MenuFlyoutPresenterAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.MenuFlyoutPresenterAutomationPeer;{e244a871-fcbb-48fc-8a93-41ea134b53ce})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -15375,11 +16009,6 @@ impl NavigationViewItemAutomationPeer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for NavigationViewItemAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for NavigationViewItemAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -15393,7 +16022,6 @@ impl ::core::fmt::Debug for NavigationViewItemAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for NavigationViewItemAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.NavigationViewItemAutomationPeer;{309847a5-9971-4d8d-a81c-085c7086a1b9})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -15554,11 +16182,6 @@ impl PasswordBoxAutomationPeer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for PasswordBoxAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PasswordBoxAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -15572,7 +16195,6 @@ impl ::core::fmt::Debug for PasswordBoxAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for PasswordBoxAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.PasswordBoxAutomationPeer;{684f065e-3df3-4b9f-82ad-8819db3b218a})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -15739,6 +16361,7 @@ impl ::core::default::Default for PatternInterface {
 }
 unsafe impl ::windows::core::Abi for PatternInterface {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PatternInterface {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -15747,7 +16370,6 @@ impl ::core::fmt::Debug for PatternInterface {
 }
 unsafe impl ::windows::core::RuntimeType for PatternInterface {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Xaml.Automation.Peers.PatternInterface;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -15779,11 +16401,6 @@ impl PersonPictureAutomationPeer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for PersonPictureAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PersonPictureAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -15797,7 +16414,6 @@ impl ::core::fmt::Debug for PersonPictureAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for PersonPictureAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.PersonPictureAutomationPeer;{27156d4c-a66f-4aaf-8286-4f796d30628c})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -15915,11 +16531,6 @@ unsafe impl ::core::marker::Sync for PersonPictureAutomationPeer {}
 #[repr(transparent)]
 pub struct PickerFlyoutPresenterAutomationPeer(::windows::core::IUnknown);
 impl PickerFlyoutPresenterAutomationPeer {}
-impl ::core::clone::Clone for PickerFlyoutPresenterAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PickerFlyoutPresenterAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -15933,7 +16544,6 @@ impl ::core::fmt::Debug for PickerFlyoutPresenterAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for PickerFlyoutPresenterAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.PickerFlyoutPresenterAutomationPeer;{28414bf7-8382-4eae-93c1-d6f035aa8155})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -16158,11 +16768,6 @@ impl PivotAutomationPeer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for PivotAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PivotAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -16176,7 +16781,6 @@ impl ::core::fmt::Debug for PivotAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for PivotAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.PivotAutomationPeer;{e715a8f8-3b9d-402c-81e2-6e912ef58981})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -16406,11 +17010,6 @@ impl PivotItemAutomationPeer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for PivotItemAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PivotItemAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -16424,7 +17023,6 @@ impl ::core::fmt::Debug for PivotItemAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for PivotItemAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.PivotItemAutomationPeer;{1a4241ad-5d55-4d27-b40f-2d37506fbe78})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -16603,11 +17201,6 @@ impl PivotItemDataAutomationPeer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for PivotItemDataAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PivotItemDataAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -16621,7 +17214,6 @@ impl ::core::fmt::Debug for PivotItemDataAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for PivotItemDataAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.PivotItemDataAutomationPeer;{a2a3b788-ea1d-48b7-88ee-f08b6aa07fee})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -16840,11 +17432,6 @@ impl ProgressBarAutomationPeer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for ProgressBarAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ProgressBarAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -16858,7 +17445,6 @@ impl ::core::fmt::Debug for ProgressBarAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for ProgressBarAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.ProgressBarAutomationPeer;{93f48f86-d840-4fb6-ac2f-5f779b854b0d})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -17045,11 +17631,6 @@ impl ProgressRingAutomationPeer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for ProgressRingAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ProgressRingAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -17063,7 +17644,6 @@ impl ::core::fmt::Debug for ProgressRingAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for ProgressRingAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.ProgressRingAutomationPeer;{bc305eee-39d3-4eeb-ac33-2394de123e2e})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -17240,11 +17820,6 @@ impl RadioButtonAutomationPeer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for RadioButtonAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for RadioButtonAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -17258,7 +17833,6 @@ impl ::core::fmt::Debug for RadioButtonAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for RadioButtonAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.RadioButtonAutomationPeer;{7e6a5ed8-0b30-4743-b102-dcdf548e3131})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -17551,11 +18125,6 @@ impl RangeBaseAutomationPeer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for RangeBaseAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for RangeBaseAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -17569,7 +18138,6 @@ impl ::core::fmt::Debug for RangeBaseAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for RangeBaseAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.RangeBaseAutomationPeer;{e454b549-4b2c-42ad-b04b-d35947d1ee50})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -17736,11 +18304,6 @@ impl RatingControlAutomationPeer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for RatingControlAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for RatingControlAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -17754,7 +18317,6 @@ impl ::core::fmt::Debug for RatingControlAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for RatingControlAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.RatingControlAutomationPeer;{3d14349a-9963-4a47-823c-f457cb3209d5})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -17887,10 +18449,10 @@ impl ::core::fmt::Debug for RawElementProviderRuntimeId {
 }
 unsafe impl ::windows::core::Abi for RawElementProviderRuntimeId {
     type Abi = Self;
+    type DefaultType = Self;
 }
 unsafe impl ::windows::core::RuntimeType for RawElementProviderRuntimeId {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"struct(Windows.UI.Xaml.Automation.Peers.RawElementProviderRuntimeId;u4;u4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -17939,11 +18501,6 @@ impl RepeatButtonAutomationPeer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for RepeatButtonAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for RepeatButtonAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -17957,7 +18514,6 @@ impl ::core::fmt::Debug for RepeatButtonAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for RepeatButtonAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.RepeatButtonAutomationPeer;{29e41ad5-a8ac-4e8a-83d8-09e37e054257})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -18144,11 +18700,6 @@ impl RichEditBoxAutomationPeer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for RichEditBoxAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for RichEditBoxAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -18162,7 +18713,6 @@ impl ::core::fmt::Debug for RichEditBoxAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for RichEditBoxAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.RichEditBoxAutomationPeer;{c69f5c04-16ee-467a-a833-c3da8458ad64})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -18303,11 +18853,6 @@ impl RichTextBlockAutomationPeer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for RichTextBlockAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for RichTextBlockAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -18321,7 +18866,6 @@ impl ::core::fmt::Debug for RichTextBlockAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for RichTextBlockAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.RichTextBlockAutomationPeer;{93a01a9c-9609-41fa-82f3-909c09f49a72})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -18462,11 +19006,6 @@ impl RichTextBlockOverflowAutomationPeer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for RichTextBlockOverflowAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for RichTextBlockOverflowAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -18480,7 +19019,6 @@ impl ::core::fmt::Debug for RichTextBlockOverflowAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for RichTextBlockOverflowAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.RichTextBlockOverflowAutomationPeer;{8c9a409a-2736-437b-ab36-a16a202f105d})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -18621,11 +19159,6 @@ impl ScrollBarAutomationPeer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for ScrollBarAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ScrollBarAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -18639,7 +19172,6 @@ impl ::core::fmt::Debug for ScrollBarAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for ScrollBarAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.ScrollBarAutomationPeer;{69e0c369-bbe7-41f2-87ca-aad813fe550e})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -18892,11 +19424,6 @@ impl ScrollViewerAutomationPeer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for ScrollViewerAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ScrollViewerAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -18910,7 +19437,6 @@ impl ::core::fmt::Debug for ScrollViewerAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for ScrollViewerAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.ScrollViewerAutomationPeer;{d985f259-1b09-4e88-88fd-421750dc6b45})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -19077,11 +19603,6 @@ impl SearchBoxAutomationPeer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for SearchBoxAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SearchBoxAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -19095,7 +19616,6 @@ impl ::core::fmt::Debug for SearchBoxAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for SearchBoxAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.SearchBoxAutomationPeer;{854011a4-18a6-4f30-939b-8871afa3f5e9})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -19263,11 +19783,6 @@ impl SelectorAutomationPeer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for SelectorAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SelectorAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -19281,7 +19796,6 @@ impl ::core::fmt::Debug for SelectorAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for SelectorAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.SelectorAutomationPeer;{162ac829-7115-43ec-b383-a7b71644069d})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -19528,11 +20042,6 @@ impl SelectorItemAutomationPeer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for SelectorItemAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SelectorItemAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -19546,7 +20055,6 @@ impl ::core::fmt::Debug for SelectorItemAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for SelectorItemAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.SelectorItemAutomationPeer;{ae8b3477-860a-45bb-bf7c-e1b27419d1dd})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -19754,11 +20262,6 @@ impl SemanticZoomAutomationPeer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for SemanticZoomAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SemanticZoomAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -19772,7 +20275,6 @@ impl ::core::fmt::Debug for SemanticZoomAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for SemanticZoomAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.SemanticZoomAutomationPeer;{3c2fac6c-a977-47fc-b44e-2754c0b2bea9})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -19939,11 +20441,6 @@ impl SettingsFlyoutAutomationPeer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for SettingsFlyoutAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SettingsFlyoutAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -19957,7 +20454,6 @@ impl ::core::fmt::Debug for SettingsFlyoutAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for SettingsFlyoutAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.SettingsFlyoutAutomationPeer;{d0de0cdb-30cf-47a6-a5eb-9c77f0b0d6dd})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -20098,11 +20594,6 @@ impl SliderAutomationPeer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for SliderAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SliderAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -20116,7 +20607,6 @@ impl ::core::fmt::Debug for SliderAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for SliderAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.SliderAutomationPeer;{ec30015a-d611-46d0-ae4f-6ecf27dfbaa5})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -20303,11 +20793,6 @@ impl TextBlockAutomationPeer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for TextBlockAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for TextBlockAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -20321,7 +20806,6 @@ impl ::core::fmt::Debug for TextBlockAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for TextBlockAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.TextBlockAutomationPeer;{be2057f5-6715-4e69-a050-92bd0ce232a9})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -20462,11 +20946,6 @@ impl TextBoxAutomationPeer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for TextBoxAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for TextBoxAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -20480,7 +20959,6 @@ impl ::core::fmt::Debug for TextBoxAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for TextBoxAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.TextBoxAutomationPeer;{3a4f1ca0-5e5d-4d26-9067-e740bf657a9f})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -20621,11 +21099,6 @@ impl ThumbAutomationPeer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for ThumbAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ThumbAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -20639,7 +21112,6 @@ impl ::core::fmt::Debug for ThumbAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for ThumbAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.ThumbAutomationPeer;{dc2949b5-b45e-4d6d-892f-d9422c950efb})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -20780,11 +21252,6 @@ impl TimePickerAutomationPeer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for TimePickerAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for TimePickerAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -20798,7 +21265,6 @@ impl ::core::fmt::Debug for TimePickerAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for TimePickerAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.TimePickerAutomationPeer;{a43d44ef-3285-4df7-b4a4-e4cdf36a3a17})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -20916,11 +21382,6 @@ unsafe impl ::core::marker::Sync for TimePickerAutomationPeer {}
 #[repr(transparent)]
 pub struct TimePickerFlyoutPresenterAutomationPeer(::windows::core::IUnknown);
 impl TimePickerFlyoutPresenterAutomationPeer {}
-impl ::core::clone::Clone for TimePickerFlyoutPresenterAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for TimePickerFlyoutPresenterAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -20934,7 +21395,6 @@ impl ::core::fmt::Debug for TimePickerFlyoutPresenterAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for TimePickerFlyoutPresenterAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.TimePickerFlyoutPresenterAutomationPeer;{da93ee27-82f1-4701-8706-be297bf06043})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -21090,11 +21550,6 @@ impl ToggleButtonAutomationPeer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for ToggleButtonAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ToggleButtonAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -21108,7 +21563,6 @@ impl ::core::fmt::Debug for ToggleButtonAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for ToggleButtonAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.ToggleButtonAutomationPeer;{62dbe6c5-bc0a-45bb-bf77-ea0f1502891f})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -21310,11 +21764,6 @@ impl ToggleMenuFlyoutItemAutomationPeer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for ToggleMenuFlyoutItemAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ToggleMenuFlyoutItemAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -21328,7 +21777,6 @@ impl ::core::fmt::Debug for ToggleMenuFlyoutItemAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for ToggleMenuFlyoutItemAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.ToggleMenuFlyoutItemAutomationPeer;{6b57eafe-6af1-4903-8373-3437bf352345})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -21510,11 +21958,6 @@ impl ToggleSwitchAutomationPeer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for ToggleSwitchAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ToggleSwitchAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -21528,7 +21971,6 @@ impl ::core::fmt::Debug for ToggleSwitchAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for ToggleSwitchAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.ToggleSwitchAutomationPeer;{c011f174-e89e-4790-bf9a-78ebb5f59e9f})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -21716,11 +22158,6 @@ impl TreeViewItemAutomationPeer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for TreeViewItemAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for TreeViewItemAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -21734,7 +22171,6 @@ impl ::core::fmt::Debug for TreeViewItemAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for TreeViewItemAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.TreeViewItemAutomationPeer;{2331d648-b617-437f-920c-71d450503e65})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -21921,11 +22357,6 @@ impl TreeViewListAutomationPeer {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for TreeViewListAutomationPeer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for TreeViewListAutomationPeer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -21939,7 +22370,6 @@ impl ::core::fmt::Debug for TreeViewListAutomationPeer {
 }
 unsafe impl ::windows::core::RuntimeType for TreeViewListAutomationPeer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Automation.Peers.TreeViewListAutomationPeer;{71c1b5bc-bb29-4479-a8a8-606be6b823ae})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

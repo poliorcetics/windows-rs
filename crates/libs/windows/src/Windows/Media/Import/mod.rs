@@ -2,6 +2,11 @@
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPhotoImportDeleteImportedItemsFromSourceResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPhotoImportDeleteImportedItemsFromSourceResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPhotoImportDeleteImportedItemsFromSourceResult {
     type Vtable = IPhotoImportDeleteImportedItemsFromSourceResult_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf4e112f8_843d_428a_a1a6_81510292b0ae);
@@ -30,6 +35,11 @@ pub struct IPhotoImportDeleteImportedItemsFromSourceResult_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPhotoImportFindItemsResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPhotoImportFindItemsResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPhotoImportFindItemsResult {
     type Vtable = IPhotoImportFindItemsResult_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x3915e647_6c78_492b_844e_8fe5e8f6bfb9);
@@ -96,6 +106,11 @@ pub struct IPhotoImportFindItemsResult_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPhotoImportFindItemsResult2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPhotoImportFindItemsResult2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPhotoImportFindItemsResult2 {
     type Vtable = IPhotoImportFindItemsResult2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xfbdd6a3b_ecf9_406a_815e_5015625b0a88);
@@ -112,6 +127,11 @@ pub struct IPhotoImportFindItemsResult2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPhotoImportImportItemsResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPhotoImportImportItemsResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPhotoImportImportItemsResult {
     type Vtable = IPhotoImportImportItemsResult_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe4d4f478_d419_4443_a84e_f06a850c0b00);
@@ -144,6 +164,11 @@ pub struct IPhotoImportImportItemsResult_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPhotoImportItem(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPhotoImportItem {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPhotoImportItem {
     type Vtable = IPhotoImportItem_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa9d07e76_9bfc_43b8_b356_633b6a988c9e);
@@ -187,6 +212,11 @@ pub struct IPhotoImportItem_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPhotoImportItem2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPhotoImportItem2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPhotoImportItem2 {
     type Vtable = IPhotoImportItem2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf1053505_f53b_46a3_9e30_3610791a9110);
@@ -200,6 +230,11 @@ pub struct IPhotoImportItem2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPhotoImportItemImportedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPhotoImportItemImportedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPhotoImportItemImportedEventArgs {
     type Vtable = IPhotoImportItemImportedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x42cb2fdd_7d68_47b5_bc7c_ceb73e0c77dc);
@@ -213,6 +248,11 @@ pub struct IPhotoImportItemImportedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPhotoImportManagerStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPhotoImportManagerStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPhotoImportManagerStatics {
     type Vtable = IPhotoImportManagerStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x2771903d_a046_4f06_9b9c_bfd662e83287);
@@ -237,6 +277,11 @@ pub struct IPhotoImportManagerStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPhotoImportOperation(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPhotoImportOperation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPhotoImportOperation {
     type Vtable = IPhotoImportOperation_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd9f797e4_a09a_4ee4_a4b1_20940277a5be);
@@ -263,6 +308,11 @@ pub struct IPhotoImportOperation_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPhotoImportSelectionChangedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPhotoImportSelectionChangedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPhotoImportSelectionChangedEventArgs {
     type Vtable = IPhotoImportSelectionChangedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x10461782_fa9d_4c30_8bc9_4d64911572d5);
@@ -276,6 +326,11 @@ pub struct IPhotoImportSelectionChangedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPhotoImportSession(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPhotoImportSession {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPhotoImportSession {
     type Vtable = IPhotoImportSession_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xaa63916e_ecdb_4efe_94c6_5f5cafe34cfb);
@@ -308,6 +363,11 @@ pub struct IPhotoImportSession_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPhotoImportSession2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPhotoImportSession2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPhotoImportSession2 {
     type Vtable = IPhotoImportSession2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x2a526710_3ec6_469d_a375_2b9f4785391e);
@@ -324,6 +384,11 @@ pub struct IPhotoImportSession2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPhotoImportSidecar(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPhotoImportSidecar {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPhotoImportSidecar {
     type Vtable = IPhotoImportSidecar_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x46d7d757_f802_44c7_9c98_7a71f4bc1486);
@@ -342,6 +407,11 @@ pub struct IPhotoImportSidecar_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPhotoImportSource(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPhotoImportSource {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPhotoImportSource {
     type Vtable = IPhotoImportSource_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1f8ea35e_145b_4cd6_87f1_54965a982fef);
@@ -386,6 +456,11 @@ pub struct IPhotoImportSource_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPhotoImportSourceStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPhotoImportSourceStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPhotoImportSourceStatics {
     type Vtable = IPhotoImportSourceStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x0528e586_32d8_467c_8cee_23a1b2f43e85);
@@ -406,6 +481,11 @@ pub struct IPhotoImportSourceStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPhotoImportStorageMedium(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPhotoImportStorageMedium {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPhotoImportStorageMedium {
     type Vtable = IPhotoImportStorageMedium_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf2b9b093_fc85_487f_87c2_58d675d05b07);
@@ -426,6 +506,11 @@ pub struct IPhotoImportStorageMedium_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPhotoImportVideoSegment(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPhotoImportVideoSegment {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPhotoImportVideoSegment {
     type Vtable = IPhotoImportVideoSegment_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x623c0289_321a_41d8_9166_8c62a333276c);
@@ -468,6 +553,7 @@ impl ::core::default::Default for PhotoImportAccessMode {
 }
 unsafe impl ::windows::core::Abi for PhotoImportAccessMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PhotoImportAccessMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -476,7 +562,6 @@ impl ::core::fmt::Debug for PhotoImportAccessMode {
 }
 unsafe impl ::windows::core::RuntimeType for PhotoImportAccessMode {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Media.Import.PhotoImportAccessMode;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -504,6 +589,7 @@ impl ::core::default::Default for PhotoImportConnectionTransport {
 }
 unsafe impl ::windows::core::Abi for PhotoImportConnectionTransport {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PhotoImportConnectionTransport {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -512,7 +598,6 @@ impl ::core::fmt::Debug for PhotoImportConnectionTransport {
 }
 unsafe impl ::windows::core::RuntimeType for PhotoImportConnectionTransport {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Media.Import.PhotoImportConnectionTransport;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -539,6 +624,7 @@ impl ::core::default::Default for PhotoImportContentType {
 }
 unsafe impl ::windows::core::Abi for PhotoImportContentType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PhotoImportContentType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -547,7 +633,6 @@ impl ::core::fmt::Debug for PhotoImportContentType {
 }
 unsafe impl ::windows::core::RuntimeType for PhotoImportContentType {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Media.Import.PhotoImportContentType;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -575,6 +660,7 @@ impl ::core::default::Default for PhotoImportContentTypeFilter {
 }
 unsafe impl ::windows::core::Abi for PhotoImportContentTypeFilter {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PhotoImportContentTypeFilter {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -583,7 +669,6 @@ impl ::core::fmt::Debug for PhotoImportContentTypeFilter {
 }
 unsafe impl ::windows::core::RuntimeType for PhotoImportContentTypeFilter {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Media.Import.PhotoImportContentTypeFilter;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -698,11 +783,6 @@ impl PhotoImportDeleteImportedItemsFromSourceResult {
         }
     }
 }
-impl ::core::clone::Clone for PhotoImportDeleteImportedItemsFromSourceResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PhotoImportDeleteImportedItemsFromSourceResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -716,7 +796,6 @@ impl ::core::fmt::Debug for PhotoImportDeleteImportedItemsFromSourceResult {
 }
 unsafe impl ::windows::core::RuntimeType for PhotoImportDeleteImportedItemsFromSourceResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.Import.PhotoImportDeleteImportedItemsFromSourceResult;{f4e112f8-843d-428a-a1a6-81510292b0ae})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1037,11 +1116,6 @@ impl PhotoImportFindItemsResult {
         unsafe { (::windows::core::Interface::vtable(this).AddItemsInDateRangeToSelection)(::core::mem::transmute_copy(this), rangestart.into_param().abi(), rangelength.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for PhotoImportFindItemsResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PhotoImportFindItemsResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1055,7 +1129,6 @@ impl ::core::fmt::Debug for PhotoImportFindItemsResult {
 }
 unsafe impl ::windows::core::RuntimeType for PhotoImportFindItemsResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.Import.PhotoImportFindItemsResult;{3915e647-6c78-492b-844e-8fe5e8f6bfb9})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1228,11 +1301,6 @@ impl PhotoImportImportItemsResult {
         }
     }
 }
-impl ::core::clone::Clone for PhotoImportImportItemsResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PhotoImportImportItemsResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1246,7 +1314,6 @@ impl ::core::fmt::Debug for PhotoImportImportItemsResult {
 }
 unsafe impl ::windows::core::RuntimeType for PhotoImportImportItemsResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.Import.PhotoImportImportItemsResult;{e4d4f478-d419-4443-a84e-f06a850c0b00})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1323,6 +1390,7 @@ impl ::core::default::Default for PhotoImportImportMode {
 }
 unsafe impl ::windows::core::Abi for PhotoImportImportMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PhotoImportImportMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1331,7 +1399,6 @@ impl ::core::fmt::Debug for PhotoImportImportMode {
 }
 unsafe impl ::windows::core::RuntimeType for PhotoImportImportMode {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Media.Import.PhotoImportImportMode;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1456,11 +1523,6 @@ impl PhotoImportItem {
         }
     }
 }
-impl ::core::clone::Clone for PhotoImportItem {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PhotoImportItem {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1474,7 +1536,6 @@ impl ::core::fmt::Debug for PhotoImportItem {
 }
 unsafe impl ::windows::core::RuntimeType for PhotoImportItem {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.Import.PhotoImportItem;{a9d07e76-9bfc-43b8-b356-633b6a988c9e})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1541,11 +1602,6 @@ impl PhotoImportItemImportedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for PhotoImportItemImportedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PhotoImportItemImportedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1559,7 +1615,6 @@ impl ::core::fmt::Debug for PhotoImportItemImportedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for PhotoImportItemImportedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.Import.PhotoImportItemImportedEventArgs;{42cb2fdd-7d68-47b5-bc7c-ceb73e0c77dc})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1635,6 +1690,7 @@ impl ::core::default::Default for PhotoImportItemSelectionMode {
 }
 unsafe impl ::windows::core::Abi for PhotoImportItemSelectionMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PhotoImportItemSelectionMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1643,7 +1699,6 @@ impl ::core::fmt::Debug for PhotoImportItemSelectionMode {
 }
 unsafe impl ::windows::core::RuntimeType for PhotoImportItemSelectionMode {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Media.Import.PhotoImportItemSelectionMode;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1732,11 +1787,6 @@ impl PhotoImportOperation {
         }
     }
 }
-impl ::core::clone::Clone for PhotoImportOperation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PhotoImportOperation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1750,7 +1800,6 @@ impl ::core::fmt::Debug for PhotoImportOperation {
 }
 unsafe impl ::windows::core::RuntimeType for PhotoImportOperation {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.Import.PhotoImportOperation;{d9f797e4-a09a-4ee4-a4b1-20940277a5be})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1826,6 +1875,7 @@ impl ::core::default::Default for PhotoImportPowerSource {
 }
 unsafe impl ::windows::core::Abi for PhotoImportPowerSource {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PhotoImportPowerSource {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1834,7 +1884,6 @@ impl ::core::fmt::Debug for PhotoImportPowerSource {
 }
 unsafe impl ::windows::core::RuntimeType for PhotoImportPowerSource {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Media.Import.PhotoImportPowerSource;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1861,10 +1910,10 @@ impl ::core::fmt::Debug for PhotoImportProgress {
 }
 unsafe impl ::windows::core::Abi for PhotoImportProgress {
     type Abi = Self;
+    type DefaultType = Self;
 }
 unsafe impl ::windows::core::RuntimeType for PhotoImportProgress {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"struct(Windows.Media.Import.PhotoImportProgress;u4;u4;u8;u8;f8)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1893,11 +1942,6 @@ impl PhotoImportSelectionChangedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for PhotoImportSelectionChangedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PhotoImportSelectionChangedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1911,7 +1955,6 @@ impl ::core::fmt::Debug for PhotoImportSelectionChangedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for PhotoImportSelectionChangedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.Import.PhotoImportSelectionChangedEventArgs;{10461782-fa9d-4c30-8bc9-4d64911572d5})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2081,11 +2124,6 @@ impl PhotoImportSession {
         }
     }
 }
-impl ::core::clone::Clone for PhotoImportSession {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PhotoImportSession {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2099,7 +2137,6 @@ impl ::core::fmt::Debug for PhotoImportSession {
 }
 unsafe impl ::windows::core::RuntimeType for PhotoImportSession {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.Import.PhotoImportSession;{aa63916e-ecdb-4efe-94c6-5f5cafe34cfb})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2209,11 +2246,6 @@ impl PhotoImportSidecar {
         }
     }
 }
-impl ::core::clone::Clone for PhotoImportSidecar {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PhotoImportSidecar {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2227,7 +2259,6 @@ impl ::core::fmt::Debug for PhotoImportSidecar {
 }
 unsafe impl ::windows::core::RuntimeType for PhotoImportSidecar {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.Import.PhotoImportSidecar;{46d7d757-f802-44c7-9c98-7a71f4bc1486})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2448,11 +2479,6 @@ impl PhotoImportSource {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for PhotoImportSource {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PhotoImportSource {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2466,7 +2492,6 @@ impl ::core::fmt::Debug for PhotoImportSource {
 }
 unsafe impl ::windows::core::RuntimeType for PhotoImportSource {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.Import.PhotoImportSource;{1f8ea35e-145b-4cd6-87f1-54965a982fef})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2546,6 +2571,7 @@ impl ::core::default::Default for PhotoImportSourceType {
 }
 unsafe impl ::windows::core::Abi for PhotoImportSourceType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PhotoImportSourceType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2554,7 +2580,6 @@ impl ::core::fmt::Debug for PhotoImportSourceType {
 }
 unsafe impl ::windows::core::RuntimeType for PhotoImportSourceType {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Media.Import.PhotoImportSourceType;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2582,6 +2607,7 @@ impl ::core::default::Default for PhotoImportStage {
 }
 unsafe impl ::windows::core::Abi for PhotoImportStage {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PhotoImportStage {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2590,7 +2616,6 @@ impl ::core::fmt::Debug for PhotoImportStage {
 }
 unsafe impl ::windows::core::RuntimeType for PhotoImportStage {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Media.Import.PhotoImportStage;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2661,11 +2686,6 @@ impl PhotoImportStorageMedium {
         unsafe { (::windows::core::Interface::vtable(this).Refresh)(::core::mem::transmute_copy(this)).ok() }
     }
 }
-impl ::core::clone::Clone for PhotoImportStorageMedium {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PhotoImportStorageMedium {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2679,7 +2699,6 @@ impl ::core::fmt::Debug for PhotoImportStorageMedium {
 }
 unsafe impl ::windows::core::RuntimeType for PhotoImportStorageMedium {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.Import.PhotoImportStorageMedium;{f2b9b093-fc85-487f-87c2-58d675d05b07})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2755,6 +2774,7 @@ impl ::core::default::Default for PhotoImportStorageMediumType {
 }
 unsafe impl ::windows::core::Abi for PhotoImportStorageMediumType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PhotoImportStorageMediumType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2763,7 +2783,6 @@ impl ::core::fmt::Debug for PhotoImportStorageMediumType {
 }
 unsafe impl ::windows::core::RuntimeType for PhotoImportStorageMediumType {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Media.Import.PhotoImportStorageMediumType;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2791,6 +2810,7 @@ impl ::core::default::Default for PhotoImportSubfolderCreationMode {
 }
 unsafe impl ::windows::core::Abi for PhotoImportSubfolderCreationMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PhotoImportSubfolderCreationMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2799,7 +2819,6 @@ impl ::core::fmt::Debug for PhotoImportSubfolderCreationMode {
 }
 unsafe impl ::windows::core::RuntimeType for PhotoImportSubfolderCreationMode {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Media.Import.PhotoImportSubfolderCreationMode;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2826,6 +2845,7 @@ impl ::core::default::Default for PhotoImportSubfolderDateFormat {
 }
 unsafe impl ::windows::core::Abi for PhotoImportSubfolderDateFormat {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PhotoImportSubfolderDateFormat {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2834,7 +2854,6 @@ impl ::core::fmt::Debug for PhotoImportSubfolderDateFormat {
 }
 unsafe impl ::windows::core::RuntimeType for PhotoImportSubfolderDateFormat {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Media.Import.PhotoImportSubfolderDateFormat;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2886,11 +2905,6 @@ impl PhotoImportVideoSegment {
         }
     }
 }
-impl ::core::clone::Clone for PhotoImportVideoSegment {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PhotoImportVideoSegment {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2904,7 +2918,6 @@ impl ::core::fmt::Debug for PhotoImportVideoSegment {
 }
 unsafe impl ::windows::core::RuntimeType for PhotoImportVideoSegment {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Media.Import.PhotoImportVideoSegment;{623c0289-321a-41d8-9166-8c62a333276c})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

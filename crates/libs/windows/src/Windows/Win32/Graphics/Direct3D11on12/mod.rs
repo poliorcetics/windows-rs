@@ -35,6 +35,7 @@ impl ::core::fmt::Debug for D3D11_RESOURCE_FLAGS {
 }
 unsafe impl ::windows::core::Abi for D3D11_RESOURCE_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for D3D11_RESOURCE_FLAGS {
     fn eq(&self, other: &Self) -> bool {
@@ -50,6 +51,11 @@ impl ::core::default::Default for D3D11_RESOURCE_FLAGS {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D11on12\"`*"]
 #[repr(transparent)]
 pub struct ID3D11On12Device(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D11On12Device {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D11On12Device {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D11on12\"`, `\"Win32_Graphics_Direct3D12\"`*"]
     #[cfg(feature = "Win32_Graphics_Direct3D12")]
@@ -87,11 +93,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ID3D1
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D11On12Device {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D11On12Device {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -127,6 +128,11 @@ pub struct ID3D11On12Device_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D11on12\"`*"]
 #[repr(transparent)]
 pub struct ID3D11On12Device1(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D11On12Device1 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D11On12Device1 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D11on12\"`, `\"Win32_Graphics_Direct3D12\"`*"]
     #[cfg(feature = "Win32_Graphics_Direct3D12")]
@@ -189,11 +195,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D11On12Device> for &'a ID3D11On12Devi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ID3D11On12Device1 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ID3D11On12Device1 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -218,6 +219,11 @@ pub struct ID3D11On12Device1_Vtbl {
 #[doc = "*Required features: `\"Win32_Graphics_Direct3D11on12\"`*"]
 #[repr(transparent)]
 pub struct ID3D11On12Device2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ID3D11On12Device2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ID3D11On12Device2 {
     #[doc = "*Required features: `\"Win32_Graphics_Direct3D11on12\"`, `\"Win32_Graphics_Direct3D12\"`*"]
     #[cfg(feature = "Win32_Graphics_Direct3D12")]
@@ -309,11 +315,6 @@ impl<'a> ::windows::core::IntoParam<'a, ID3D11On12Device1> for ID3D11On12Device2
 impl<'a> ::windows::core::IntoParam<'a, ID3D11On12Device1> for &'a ID3D11On12Device2 {
     fn into_param(self) -> ::windows::core::Param<'a, ID3D11On12Device1> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for ID3D11On12Device2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for ID3D11On12Device2 {

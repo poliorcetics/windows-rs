@@ -25,6 +25,7 @@ impl ::core::default::Default for AltitudeReferenceSystem {
 }
 unsafe impl ::windows::core::Abi for AltitudeReferenceSystem {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AltitudeReferenceSystem {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -33,7 +34,6 @@ impl ::core::fmt::Debug for AltitudeReferenceSystem {
 }
 unsafe impl ::windows::core::RuntimeType for AltitudeReferenceSystem {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.Geolocation.AltitudeReferenceSystem;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -58,10 +58,10 @@ impl ::core::fmt::Debug for BasicGeoposition {
 }
 unsafe impl ::windows::core::Abi for BasicGeoposition {
     type Abi = Self;
+    type DefaultType = Self;
 }
 unsafe impl ::windows::core::RuntimeType for BasicGeoposition {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"struct(Windows.Devices.Geolocation.BasicGeoposition;f8;f8;f8)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -123,11 +123,6 @@ impl CivicAddress {
         }
     }
 }
-impl ::core::clone::Clone for CivicAddress {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for CivicAddress {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -141,7 +136,6 @@ impl ::core::fmt::Debug for CivicAddress {
 }
 unsafe impl ::windows::core::RuntimeType for CivicAddress {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Geolocation.CivicAddress;{a8567a1a-64f4-4d48-bcea-f6b008eca34c})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -319,11 +313,6 @@ impl GeoboundingBox {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for GeoboundingBox {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for GeoboundingBox {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -337,7 +326,6 @@ impl ::core::fmt::Debug for GeoboundingBox {
 }
 unsafe impl ::windows::core::RuntimeType for GeoboundingBox {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Geolocation.GeoboundingBox;{0896c80b-274f-43da-9a06-cbfcdaeb4ec2})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -484,11 +472,6 @@ impl Geocircle {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for Geocircle {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for Geocircle {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -502,7 +485,6 @@ impl ::core::fmt::Debug for Geocircle {
 }
 unsafe impl ::windows::core::RuntimeType for Geocircle {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Geolocation.Geocircle;{39e45843-a7f9-4e63-92a7-ba0c28d124b1})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -695,11 +677,6 @@ impl Geocoordinate {
         }
     }
 }
-impl ::core::clone::Clone for Geocoordinate {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for Geocoordinate {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -713,7 +690,6 @@ impl ::core::fmt::Debug for Geocoordinate {
 }
 unsafe impl ::windows::core::RuntimeType for Geocoordinate {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Geolocation.Geocoordinate;{ee21a3aa-976a-4c70-803d-083ea55bcbc4})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -817,11 +793,6 @@ impl GeocoordinateSatelliteData {
         }
     }
 }
-impl ::core::clone::Clone for GeocoordinateSatelliteData {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for GeocoordinateSatelliteData {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -835,7 +806,6 @@ impl ::core::fmt::Debug for GeocoordinateSatelliteData {
 }
 unsafe impl ::windows::core::RuntimeType for GeocoordinateSatelliteData {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Geolocation.GeocoordinateSatelliteData;{c32a74d9-2608-474c-912c-06dd490f4af7})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -911,6 +881,7 @@ impl ::core::default::Default for GeolocationAccessStatus {
 }
 unsafe impl ::windows::core::Abi for GeolocationAccessStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GeolocationAccessStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -919,7 +890,6 @@ impl ::core::fmt::Debug for GeolocationAccessStatus {
 }
 unsafe impl ::windows::core::RuntimeType for GeolocationAccessStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.Geolocation.GeolocationAccessStatus;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1105,11 +1075,6 @@ impl Geolocator {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for Geolocator {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for Geolocator {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1123,7 +1088,6 @@ impl ::core::fmt::Debug for Geolocator {
 }
 unsafe impl ::windows::core::RuntimeType for Geolocator {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Geolocation.Geolocator;{a9c3bf62-4524-4989-8aa9-de019d2e551f})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1244,11 +1208,6 @@ impl Geopath {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for Geopath {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for Geopath {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1262,7 +1221,6 @@ impl ::core::fmt::Debug for Geopath {
 }
 unsafe impl ::windows::core::RuntimeType for Geopath {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Geolocation.Geopath;{e53fd7b9-2da4-4714-a652-de8593289898})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1401,11 +1359,6 @@ impl Geopoint {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for Geopoint {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for Geopoint {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1419,7 +1372,6 @@ impl ::core::fmt::Debug for Geopoint {
 }
 unsafe impl ::windows::core::RuntimeType for Geopoint {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Geolocation.Geopoint;{6bfa00eb-e56e-49bb-9caf-cbaa78a8bcef})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1524,11 +1476,6 @@ impl Geoposition {
         }
     }
 }
-impl ::core::clone::Clone for Geoposition {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for Geoposition {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1542,7 +1489,6 @@ impl ::core::fmt::Debug for Geoposition {
 }
 unsafe impl ::windows::core::RuntimeType for Geoposition {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Geolocation.Geoposition;{c18d0454-7d41-4ff7-a957-9dffb4ef7f5b})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1619,6 +1565,7 @@ impl ::core::default::Default for GeoshapeType {
 }
 unsafe impl ::windows::core::Abi for GeoshapeType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GeoshapeType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1627,7 +1574,6 @@ impl ::core::fmt::Debug for GeoshapeType {
 }
 unsafe impl ::windows::core::RuntimeType for GeoshapeType {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.Geolocation.GeoshapeType;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1662,11 +1608,6 @@ impl Geovisit {
         }
     }
 }
-impl ::core::clone::Clone for Geovisit {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for Geovisit {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1680,7 +1621,6 @@ impl ::core::fmt::Debug for Geovisit {
 }
 unsafe impl ::windows::core::RuntimeType for Geovisit {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Geolocation.Geovisit;{b1877a76-9ef6-41ab-a0dd-793ece76e2de})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1792,11 +1732,6 @@ impl GeovisitMonitor {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for GeovisitMonitor {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for GeovisitMonitor {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1810,7 +1745,6 @@ impl ::core::fmt::Debug for GeovisitMonitor {
 }
 unsafe impl ::windows::core::RuntimeType for GeovisitMonitor {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Geolocation.GeovisitMonitor;{80118aaf-5944-4591-83c1-396647f54f2c})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1877,11 +1811,6 @@ impl GeovisitStateChangedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for GeovisitStateChangedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for GeovisitStateChangedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1895,7 +1824,6 @@ impl ::core::fmt::Debug for GeovisitStateChangedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for GeovisitStateChangedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Geolocation.GeovisitStateChangedEventArgs;{ceb4d1ff-8b53-4968-beed-4cecd029ce15})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1963,11 +1891,6 @@ impl GeovisitTriggerDetails {
         }
     }
 }
-impl ::core::clone::Clone for GeovisitTriggerDetails {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for GeovisitTriggerDetails {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1981,7 +1904,6 @@ impl ::core::fmt::Debug for GeovisitTriggerDetails {
 }
 unsafe impl ::windows::core::RuntimeType for GeovisitTriggerDetails {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Geolocation.GeovisitTriggerDetails;{ea770d9e-d1c9-454b-99b7-b2f8cdd2482f})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2038,6 +1960,11 @@ unsafe impl ::core::marker::Sync for GeovisitTriggerDetails {}
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ICivicAddress(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICivicAddress {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ICivicAddress {
     type Vtable = ICivicAddress_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa8567a1a_64f4_4d48_bcea_f6b008eca34c);
@@ -2058,6 +1985,11 @@ pub struct ICivicAddress_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGeoboundingBox(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGeoboundingBox {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGeoboundingBox {
     type Vtable = IGeoboundingBox_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x0896c80b_274f_43da_9a06_cbfcdaeb4ec2);
@@ -2075,6 +2007,11 @@ pub struct IGeoboundingBox_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGeoboundingBoxFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGeoboundingBoxFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGeoboundingBoxFactory {
     type Vtable = IGeoboundingBoxFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x4dfba589_0411_4abc_b3b5_5bbccb57d98c);
@@ -2090,6 +2027,11 @@ pub struct IGeoboundingBoxFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGeoboundingBoxStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGeoboundingBoxStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGeoboundingBoxStatics {
     type Vtable = IGeoboundingBoxStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x67b80708_e61a_4cd0_841b_93233792b5ca);
@@ -2114,6 +2056,11 @@ pub struct IGeoboundingBoxStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGeocircle(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGeocircle {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGeocircle {
     type Vtable = IGeocircle_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x39e45843_a7f9_4e63_92a7_ba0c28d124b1);
@@ -2128,6 +2075,11 @@ pub struct IGeocircle_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGeocircleFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGeocircleFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGeocircleFactory {
     type Vtable = IGeocircleFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xafd6531f_72b1_4f7d_87cc_4ed4c9849c05);
@@ -2143,6 +2095,11 @@ pub struct IGeocircleFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGeocoordinate(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGeocoordinate {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGeocoordinate {
     type Vtable = IGeocoordinate_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xee21a3aa_976a_4c70_803d_083ea55bcbc4);
@@ -2184,6 +2141,11 @@ pub struct IGeocoordinate_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGeocoordinateSatelliteData(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGeocoordinateSatelliteData {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGeocoordinateSatelliteData {
     type Vtable = IGeocoordinateSatelliteData_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc32a74d9_2608_474c_912c_06dd490f4af7);
@@ -2208,6 +2170,11 @@ pub struct IGeocoordinateSatelliteData_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGeocoordinateSatelliteData2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGeocoordinateSatelliteData2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGeocoordinateSatelliteData2 {
     type Vtable = IGeocoordinateSatelliteData2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x761c8cfd_a19d_5a51_80f5_71676115483e);
@@ -2228,6 +2195,11 @@ pub struct IGeocoordinateSatelliteData2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGeocoordinateWithPoint(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGeocoordinateWithPoint {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGeocoordinateWithPoint {
     type Vtable = IGeocoordinateWithPoint_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xfeea0525_d22c_4d46_b527_0b96066fc7db);
@@ -2241,6 +2213,11 @@ pub struct IGeocoordinateWithPoint_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGeocoordinateWithPositionData(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGeocoordinateWithPositionData {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGeocoordinateWithPositionData {
     type Vtable = IGeocoordinateWithPositionData_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x95e634be_dbd6_40ac_b8f2_a65c0340d9a6);
@@ -2255,6 +2232,11 @@ pub struct IGeocoordinateWithPositionData_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGeocoordinateWithPositionSourceTimestamp(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGeocoordinateWithPositionSourceTimestamp {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGeocoordinateWithPositionSourceTimestamp {
     type Vtable = IGeocoordinateWithPositionSourceTimestamp_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x8543fc02_c9f1_4610_afe0_8bc3a6a87036);
@@ -2271,6 +2253,11 @@ pub struct IGeocoordinateWithPositionSourceTimestamp_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGeocoordinateWithRemoteSource(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGeocoordinateWithRemoteSource {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGeocoordinateWithRemoteSource {
     type Vtable = IGeocoordinateWithRemoteSource_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x397cebd7_ee38_5f3b_8900_c4a7bc9cf953);
@@ -2284,6 +2271,11 @@ pub struct IGeocoordinateWithRemoteSource_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGeolocator(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGeolocator {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGeolocator {
     type Vtable = IGeolocator_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa9c3bf62_4524_4989_8aa9_de019d2e551f);
@@ -2327,6 +2319,11 @@ pub struct IGeolocator_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGeolocator2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGeolocator2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGeolocator2 {
     type Vtable = IGeolocator2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd1b42e6d_8891_43b4_ad36_27c6fe9a97b1);
@@ -2340,6 +2337,11 @@ pub struct IGeolocator2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGeolocatorStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGeolocatorStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGeolocatorStatics {
     type Vtable = IGeolocatorStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9a8e7571_2df5_4591_9f87_eb5fd894e9b7);
@@ -2364,6 +2366,11 @@ pub struct IGeolocatorStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGeolocatorStatics2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGeolocatorStatics2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGeolocatorStatics2 {
     type Vtable = IGeolocatorStatics2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x993011a2_fa1c_4631_a71d_0dbeb1250d9c);
@@ -2385,6 +2392,11 @@ pub struct IGeolocatorStatics2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGeolocatorWithScalarAccuracy(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGeolocatorWithScalarAccuracy {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGeolocatorWithScalarAccuracy {
     type Vtable = IGeolocatorWithScalarAccuracy_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x96f5d3c1_b80f_460a_994d_a96c47a51aa4);
@@ -2405,6 +2417,11 @@ pub struct IGeolocatorWithScalarAccuracy_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGeopath(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGeopath {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGeopath {
     type Vtable = IGeopath_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xe53fd7b9_2da4_4714_a652_de8593289898);
@@ -2421,6 +2438,11 @@ pub struct IGeopath_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGeopathFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGeopathFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGeopathFactory {
     type Vtable = IGeopathFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x27bea9c8_c7e7_4359_9b9b_fca3e05ef593);
@@ -2445,6 +2467,11 @@ pub struct IGeopathFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGeopoint(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGeopoint {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGeopoint {
     type Vtable = IGeopoint_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x6bfa00eb_e56e_49bb_9caf_cbaa78a8bcef);
@@ -2458,6 +2485,11 @@ pub struct IGeopoint_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGeopointFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGeopointFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGeopointFactory {
     type Vtable = IGeopointFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xdb6b8d33_76bd_4e30_8af7_a844dc37b7a0);
@@ -2473,6 +2505,11 @@ pub struct IGeopointFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGeoposition(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGeoposition {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGeoposition {
     type Vtable = IGeoposition_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc18d0454_7d41_4ff7_a957_9dffb4ef7f5b);
@@ -2487,6 +2524,11 @@ pub struct IGeoposition_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGeoposition2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGeoposition2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGeoposition2 {
     type Vtable = IGeoposition2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x7f62f697_8671_4b0d_86f8_474a8496187c);
@@ -2500,6 +2542,11 @@ pub struct IGeoposition2_Vtbl {
 #[doc = "*Required features: `\"Devices_Geolocation\"`*"]
 #[repr(transparent)]
 pub struct IGeoshape(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGeoshape {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IGeoshape {
     #[doc = "*Required features: `\"Devices_Geolocation\"`*"]
     pub fn GeoshapeType(&self) -> ::windows::core::Result<GeoshapeType> {
@@ -2566,11 +2613,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IGeoshape {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IGeoshape {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2584,7 +2626,6 @@ impl ::core::fmt::Debug for IGeoshape {
 }
 unsafe impl ::windows::core::RuntimeType for IGeoshape {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{c99ca2af-c729-43c1-8fab-d6dec914df7e}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2604,6 +2645,11 @@ pub struct IGeoshape_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGeovisit(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGeovisit {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGeovisit {
     type Vtable = IGeovisit_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb1877a76_9ef6_41ab_a0dd_793ece76e2de);
@@ -2622,6 +2668,11 @@ pub struct IGeovisit_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGeovisitMonitor(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGeovisitMonitor {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGeovisitMonitor {
     type Vtable = IGeovisitMonitor_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x80118aaf_5944_4591_83c1_396647f54f2c);
@@ -2645,6 +2696,11 @@ pub struct IGeovisitMonitor_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGeovisitMonitorStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGeovisitMonitorStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGeovisitMonitorStatics {
     type Vtable = IGeovisitMonitorStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xbcf976a7_bbf2_4cdd_95cf_554c82edfb87);
@@ -2661,6 +2717,11 @@ pub struct IGeovisitMonitorStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGeovisitStateChangedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGeovisitStateChangedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGeovisitStateChangedEventArgs {
     type Vtable = IGeovisitStateChangedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xceb4d1ff_8b53_4968_beed_4cecd029ce15);
@@ -2674,6 +2735,11 @@ pub struct IGeovisitStateChangedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGeovisitTriggerDetails(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGeovisitTriggerDetails {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGeovisitTriggerDetails {
     type Vtable = IGeovisitTriggerDetails_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xea770d9e_d1c9_454b_99b7_b2f8cdd2482f);
@@ -2690,6 +2756,11 @@ pub struct IGeovisitTriggerDetails_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPositionChangedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPositionChangedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPositionChangedEventArgs {
     type Vtable = IPositionChangedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x37859ce5_9d1e_46c5_bf3b_6ad8cac1a093);
@@ -2703,6 +2774,11 @@ pub struct IPositionChangedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IStatusChangedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IStatusChangedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IStatusChangedEventArgs {
     type Vtable = IStatusChangedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x3453d2da_8c93_4111_a205_9aecfc9be5c0);
@@ -2716,6 +2792,11 @@ pub struct IStatusChangedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IVenueData(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVenueData {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IVenueData {
     type Vtable = IVenueData_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x66f39187_60e3_4b2f_b527_4f53f1c3c677);
@@ -2748,6 +2829,7 @@ impl ::core::default::Default for PositionAccuracy {
 }
 unsafe impl ::windows::core::Abi for PositionAccuracy {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PositionAccuracy {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2756,7 +2838,6 @@ impl ::core::fmt::Debug for PositionAccuracy {
 }
 unsafe impl ::windows::core::RuntimeType for PositionAccuracy {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.Geolocation.PositionAccuracy;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2774,11 +2855,6 @@ impl PositionChangedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for PositionChangedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PositionChangedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2792,7 +2868,6 @@ impl ::core::fmt::Debug for PositionChangedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for PositionChangedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Geolocation.PositionChangedEventArgs;{37859ce5-9d1e-46c5-bf3b-6ad8cac1a093})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2872,6 +2947,7 @@ impl ::core::default::Default for PositionSource {
 }
 unsafe impl ::windows::core::Abi for PositionSource {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PositionSource {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2880,7 +2956,6 @@ impl ::core::fmt::Debug for PositionSource {
 }
 unsafe impl ::windows::core::RuntimeType for PositionSource {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.Geolocation.PositionSource;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2910,6 +2985,7 @@ impl ::core::default::Default for PositionStatus {
 }
 unsafe impl ::windows::core::Abi for PositionStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PositionStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2918,7 +2994,6 @@ impl ::core::fmt::Debug for PositionStatus {
 }
 unsafe impl ::windows::core::RuntimeType for PositionStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.Geolocation.PositionStatus;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2936,11 +3011,6 @@ impl StatusChangedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for StatusChangedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for StatusChangedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2954,7 +3024,6 @@ impl ::core::fmt::Debug for StatusChangedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for StatusChangedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Geolocation.StatusChangedEventArgs;{3453d2da-8c93-4111-a205-9aecfc9be5c0})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3029,11 +3098,6 @@ impl VenueData {
         }
     }
 }
-impl ::core::clone::Clone for VenueData {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for VenueData {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3047,7 +3111,6 @@ impl ::core::fmt::Debug for VenueData {
 }
 unsafe impl ::windows::core::RuntimeType for VenueData {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Geolocation.VenueData;{66f39187-60e3-4b2f-b527-4f53f1c3c677})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -3122,6 +3185,7 @@ impl ::core::default::Default for VisitMonitoringScope {
 }
 unsafe impl ::windows::core::Abi for VisitMonitoringScope {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VisitMonitoringScope {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3130,7 +3194,6 @@ impl ::core::fmt::Debug for VisitMonitoringScope {
 }
 unsafe impl ::windows::core::RuntimeType for VisitMonitoringScope {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.Geolocation.VisitMonitoringScope;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -3158,6 +3221,7 @@ impl ::core::default::Default for VisitStateChange {
 }
 unsafe impl ::windows::core::Abi for VisitStateChange {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VisitStateChange {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3166,7 +3230,6 @@ impl ::core::fmt::Debug for VisitStateChange {
 }
 unsafe impl ::windows::core::RuntimeType for VisitStateChange {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.Geolocation.VisitStateChange;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }

@@ -2,6 +2,11 @@
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IInkAnalysisInkBullet(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInkAnalysisInkBullet {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IInkAnalysisInkBullet {
     type Vtable = IInkAnalysisInkBullet_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xee049368_6110_4136_95f9_ee809fc20030);
@@ -15,6 +20,11 @@ pub struct IInkAnalysisInkBullet_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IInkAnalysisInkDrawing(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInkAnalysisInkDrawing {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IInkAnalysisInkDrawing {
     type Vtable = IInkAnalysisInkDrawing_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x6a85ed1f_1fe4_4e15_898c_8e112377e021);
@@ -36,6 +46,11 @@ pub struct IInkAnalysisInkDrawing_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IInkAnalysisInkWord(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInkAnalysisInkWord {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IInkAnalysisInkWord {
     type Vtable = IInkAnalysisInkWord_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x4bd228ad_83af_4034_8f3b_f8687dfff436);
@@ -53,6 +68,11 @@ pub struct IInkAnalysisInkWord_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IInkAnalysisLine(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInkAnalysisLine {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IInkAnalysisLine {
     type Vtable = IInkAnalysisLine_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa06d048d_2b8d_4754_ad5a_d0871193a956);
@@ -67,6 +87,11 @@ pub struct IInkAnalysisLine_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IInkAnalysisListItem(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInkAnalysisListItem {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IInkAnalysisListItem {
     type Vtable = IInkAnalysisListItem_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb4e3c23f_c4c3_4c3a_a1a6_9d85547ee586);
@@ -80,6 +105,11 @@ pub struct IInkAnalysisListItem_Vtbl {
 #[doc = "*Required features: `\"UI_Input_Inking_Analysis\"`*"]
 #[repr(transparent)]
 pub struct IInkAnalysisNode(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInkAnalysisNode {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IInkAnalysisNode {
     #[doc = "*Required features: `\"UI_Input_Inking_Analysis\"`*"]
     pub fn Id(&self) -> ::windows::core::Result<u32> {
@@ -182,11 +212,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IInkAnalysisNode {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IInkAnalysisNode {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -200,7 +225,6 @@ impl ::core::fmt::Debug for IInkAnalysisNode {
 }
 unsafe impl ::windows::core::RuntimeType for IInkAnalysisNode {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{30831f05-5f64-4a2c-ba37-4f4887879574}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -236,6 +260,11 @@ pub struct IInkAnalysisNode_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IInkAnalysisParagraph(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInkAnalysisParagraph {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IInkAnalysisParagraph {
     type Vtable = IInkAnalysisParagraph_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd9ad045c_0cd1_4dd4_a68b_eb1f12b3d727);
@@ -249,6 +278,11 @@ pub struct IInkAnalysisParagraph_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IInkAnalysisResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInkAnalysisResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IInkAnalysisResult {
     type Vtable = IInkAnalysisResult_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x8948ba79_a243_4aa3_a294_1f98bd0ff580);
@@ -262,6 +296,11 @@ pub struct IInkAnalysisResult_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IInkAnalysisRoot(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInkAnalysisRoot {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IInkAnalysisRoot {
     type Vtable = IInkAnalysisRoot_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x3fb6a3c4_2fde_4061_8502_a90f32545b84);
@@ -279,6 +318,11 @@ pub struct IInkAnalysisRoot_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IInkAnalysisWritingRegion(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInkAnalysisWritingRegion {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IInkAnalysisWritingRegion {
     type Vtable = IInkAnalysisWritingRegion_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xdd6d6231_bd16_4663_b5ae_941d3043ef5b);
@@ -292,6 +336,11 @@ pub struct IInkAnalysisWritingRegion_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IInkAnalyzer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInkAnalyzer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IInkAnalyzer {
     type Vtable = IInkAnalyzer_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf12b8f95_0866_4dc5_8c77_f88614dfe38c);
@@ -323,6 +372,11 @@ pub struct IInkAnalyzer_Vtbl {
 #[doc = "*Required features: `\"UI_Input_Inking_Analysis\"`*"]
 #[repr(transparent)]
 pub struct IInkAnalyzerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IInkAnalyzerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IInkAnalyzerFactory {
     #[doc = "*Required features: `\"UI_Input_Inking_Analysis\"`*"]
     pub fn CreateAnalyzer(&self) -> ::windows::core::Result<InkAnalyzer> {
@@ -373,11 +427,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IInkAnalyzerFactory {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IInkAnalyzerFactory {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -391,7 +440,6 @@ impl ::core::fmt::Debug for IInkAnalyzerFactory {
 }
 unsafe impl ::windows::core::RuntimeType for IInkAnalyzerFactory {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{29138686-1963-49d8-9589-e14384c769e3}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -440,6 +488,7 @@ impl ::core::default::Default for InkAnalysisDrawingKind {
 }
 unsafe impl ::windows::core::Abi for InkAnalysisDrawingKind {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for InkAnalysisDrawingKind {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -448,7 +497,6 @@ impl ::core::fmt::Debug for InkAnalysisDrawingKind {
 }
 unsafe impl ::windows::core::RuntimeType for InkAnalysisDrawingKind {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Input.Inking.Analysis.InkAnalysisDrawingKind;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -526,11 +574,6 @@ impl InkAnalysisInkBullet {
         }
     }
 }
-impl ::core::clone::Clone for InkAnalysisInkBullet {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for InkAnalysisInkBullet {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -544,7 +587,6 @@ impl ::core::fmt::Debug for InkAnalysisInkBullet {
 }
 unsafe impl ::windows::core::RuntimeType for InkAnalysisInkBullet {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Input.Inking.Analysis.InkAnalysisInkBullet;{ee049368-6110-4136-95f9-ee809fc20030})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -711,11 +753,6 @@ impl InkAnalysisInkDrawing {
         }
     }
 }
-impl ::core::clone::Clone for InkAnalysisInkDrawing {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for InkAnalysisInkDrawing {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -729,7 +766,6 @@ impl ::core::fmt::Debug for InkAnalysisInkDrawing {
 }
 unsafe impl ::windows::core::RuntimeType for InkAnalysisInkDrawing {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Input.Inking.Analysis.InkAnalysisInkDrawing;{6a85ed1f-1fe4-4e15-898c-8e112377e021})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -887,11 +923,6 @@ impl InkAnalysisInkWord {
         }
     }
 }
-impl ::core::clone::Clone for InkAnalysisInkWord {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for InkAnalysisInkWord {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -905,7 +936,6 @@ impl ::core::fmt::Debug for InkAnalysisInkWord {
 }
 unsafe impl ::windows::core::RuntimeType for InkAnalysisInkWord {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Input.Inking.Analysis.InkAnalysisInkWord;{4bd228ad-83af-4034-8f3b-f8687dfff436})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1062,11 +1092,6 @@ impl InkAnalysisLine {
         }
     }
 }
-impl ::core::clone::Clone for InkAnalysisLine {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for InkAnalysisLine {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1080,7 +1105,6 @@ impl ::core::fmt::Debug for InkAnalysisLine {
 }
 unsafe impl ::windows::core::RuntimeType for InkAnalysisLine {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Input.Inking.Analysis.InkAnalysisLine;{a06d048d-2b8d-4754-ad5a-d0871193a956})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1229,11 +1253,6 @@ impl InkAnalysisListItem {
         }
     }
 }
-impl ::core::clone::Clone for InkAnalysisListItem {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for InkAnalysisListItem {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1247,7 +1266,6 @@ impl ::core::fmt::Debug for InkAnalysisListItem {
 }
 unsafe impl ::windows::core::RuntimeType for InkAnalysisListItem {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Input.Inking.Analysis.InkAnalysisListItem;{b4e3c23f-c4c3-4c3a-a1a6-9d85547ee586})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1388,11 +1406,6 @@ impl InkAnalysisNode {
         }
     }
 }
-impl ::core::clone::Clone for InkAnalysisNode {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for InkAnalysisNode {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1406,7 +1419,6 @@ impl ::core::fmt::Debug for InkAnalysisNode {
 }
 unsafe impl ::windows::core::RuntimeType for InkAnalysisNode {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Input.Inking.Analysis.InkAnalysisNode;{30831f05-5f64-4a2c-ba37-4f4887879574})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1510,6 +1522,7 @@ impl ::core::default::Default for InkAnalysisNodeKind {
 }
 unsafe impl ::windows::core::Abi for InkAnalysisNodeKind {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for InkAnalysisNodeKind {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1518,7 +1531,6 @@ impl ::core::fmt::Debug for InkAnalysisNodeKind {
 }
 unsafe impl ::windows::core::RuntimeType for InkAnalysisNodeKind {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Input.Inking.Analysis.InkAnalysisNodeKind;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1596,11 +1608,6 @@ impl InkAnalysisParagraph {
         }
     }
 }
-impl ::core::clone::Clone for InkAnalysisParagraph {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for InkAnalysisParagraph {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1614,7 +1621,6 @@ impl ::core::fmt::Debug for InkAnalysisParagraph {
 }
 unsafe impl ::windows::core::RuntimeType for InkAnalysisParagraph {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Input.Inking.Analysis.InkAnalysisParagraph;{d9ad045c-0cd1-4dd4-a68b-eb1f12b3d727})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1703,11 +1709,6 @@ impl InkAnalysisResult {
         }
     }
 }
-impl ::core::clone::Clone for InkAnalysisResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for InkAnalysisResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1721,7 +1722,6 @@ impl ::core::fmt::Debug for InkAnalysisResult {
 }
 unsafe impl ::windows::core::RuntimeType for InkAnalysisResult {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Input.Inking.Analysis.InkAnalysisResult;{8948ba79-a243-4aa3-a294-1f98bd0ff580})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1857,11 +1857,6 @@ impl InkAnalysisRoot {
         }
     }
 }
-impl ::core::clone::Clone for InkAnalysisRoot {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for InkAnalysisRoot {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1875,7 +1870,6 @@ impl ::core::fmt::Debug for InkAnalysisRoot {
 }
 unsafe impl ::windows::core::RuntimeType for InkAnalysisRoot {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Input.Inking.Analysis.InkAnalysisRoot;{3fb6a3c4-2fde-4061-8502-a90f32545b84})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1972,6 +1966,7 @@ impl ::core::default::Default for InkAnalysisStatus {
 }
 unsafe impl ::windows::core::Abi for InkAnalysisStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for InkAnalysisStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1980,7 +1975,6 @@ impl ::core::fmt::Debug for InkAnalysisStatus {
 }
 unsafe impl ::windows::core::RuntimeType for InkAnalysisStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Input.Inking.Analysis.InkAnalysisStatus;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2007,6 +2001,7 @@ impl ::core::default::Default for InkAnalysisStrokeKind {
 }
 unsafe impl ::windows::core::Abi for InkAnalysisStrokeKind {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for InkAnalysisStrokeKind {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2015,7 +2010,6 @@ impl ::core::fmt::Debug for InkAnalysisStrokeKind {
 }
 unsafe impl ::windows::core::RuntimeType for InkAnalysisStrokeKind {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Input.Inking.Analysis.InkAnalysisStrokeKind;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -2093,11 +2087,6 @@ impl InkAnalysisWritingRegion {
         }
     }
 }
-impl ::core::clone::Clone for InkAnalysisWritingRegion {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for InkAnalysisWritingRegion {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2111,7 +2100,6 @@ impl ::core::fmt::Debug for InkAnalysisWritingRegion {
 }
 unsafe impl ::windows::core::RuntimeType for InkAnalysisWritingRegion {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Input.Inking.Analysis.InkAnalysisWritingRegion;{dd6d6231-bd16-4663-b5ae-941d3043ef5b})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -2261,11 +2249,6 @@ impl InkAnalyzer {
         }
     }
 }
-impl ::core::clone::Clone for InkAnalyzer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for InkAnalyzer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2279,7 +2262,6 @@ impl ::core::fmt::Debug for InkAnalyzer {
 }
 unsafe impl ::windows::core::RuntimeType for InkAnalyzer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Input.Inking.Analysis.InkAnalyzer;{f12b8f95-0866-4dc5-8c77-f88614dfe38c})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

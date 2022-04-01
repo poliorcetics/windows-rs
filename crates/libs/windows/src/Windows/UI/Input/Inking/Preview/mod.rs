@@ -2,6 +2,11 @@
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPalmRejectionDelayZonePreview(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPalmRejectionDelayZonePreview {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPalmRejectionDelayZonePreview {
     type Vtable = IPalmRejectionDelayZonePreview_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x62b496cb_539d_5343_a65f_41f5300ec70c);
@@ -14,6 +19,11 @@ pub struct IPalmRejectionDelayZonePreview_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPalmRejectionDelayZonePreviewStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPalmRejectionDelayZonePreviewStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPalmRejectionDelayZonePreviewStatics {
     type Vtable = IPalmRejectionDelayZonePreviewStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xcdef5ee0_93d0_53a9_8f0e_9a379f8f7530);
@@ -63,11 +73,6 @@ impl PalmRejectionDelayZonePreview {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for PalmRejectionDelayZonePreview {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PalmRejectionDelayZonePreview {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -81,7 +86,6 @@ impl ::core::fmt::Debug for PalmRejectionDelayZonePreview {
 }
 unsafe impl ::windows::core::RuntimeType for PalmRejectionDelayZonePreview {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Input.Inking.Preview.PalmRejectionDelayZonePreview;{62b496cb-539d-5343-a65f-41f5300ec70c})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

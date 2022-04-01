@@ -21,6 +21,7 @@ impl ::core::default::Default for BluetoothEventTriggeringMode {
 }
 unsafe impl ::windows::core::Abi for BluetoothEventTriggeringMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for BluetoothEventTriggeringMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -29,7 +30,6 @@ impl ::core::fmt::Debug for BluetoothEventTriggeringMode {
 }
 unsafe impl ::windows::core::RuntimeType for BluetoothEventTriggeringMode {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.Bluetooth.Background.BluetoothEventTriggeringMode;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -65,11 +65,6 @@ impl BluetoothLEAdvertisementPublisherTriggerDetails {
         }
     }
 }
-impl ::core::clone::Clone for BluetoothLEAdvertisementPublisherTriggerDetails {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for BluetoothLEAdvertisementPublisherTriggerDetails {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -83,7 +78,6 @@ impl ::core::fmt::Debug for BluetoothLEAdvertisementPublisherTriggerDetails {
 }
 unsafe impl ::windows::core::RuntimeType for BluetoothLEAdvertisementPublisherTriggerDetails {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Bluetooth.Background.BluetoothLEAdvertisementPublisherTriggerDetails;{610eca86-3480-41c9-a918-7ddadf207e00})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -167,11 +161,6 @@ impl BluetoothLEAdvertisementWatcherTriggerDetails {
         }
     }
 }
-impl ::core::clone::Clone for BluetoothLEAdvertisementWatcherTriggerDetails {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for BluetoothLEAdvertisementWatcherTriggerDetails {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -185,7 +174,6 @@ impl ::core::fmt::Debug for BluetoothLEAdvertisementWatcherTriggerDetails {
 }
 unsafe impl ::windows::core::RuntimeType for BluetoothLEAdvertisementWatcherTriggerDetails {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Bluetooth.Background.BluetoothLEAdvertisementWatcherTriggerDetails;{a7db5ad7-2257-4e69-9784-fee645c1dce0})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -287,11 +275,6 @@ impl GattCharacteristicNotificationTriggerDetails {
         }
     }
 }
-impl ::core::clone::Clone for GattCharacteristicNotificationTriggerDetails {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for GattCharacteristicNotificationTriggerDetails {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -305,7 +288,6 @@ impl ::core::fmt::Debug for GattCharacteristicNotificationTriggerDetails {
 }
 unsafe impl ::windows::core::RuntimeType for GattCharacteristicNotificationTriggerDetails {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Bluetooth.Background.GattCharacteristicNotificationTriggerDetails;{9ba03b18-0fec-436a-93b1-f46c697532a2})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -399,11 +381,6 @@ impl GattServiceProviderConnection {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for GattServiceProviderConnection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for GattServiceProviderConnection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -417,7 +394,6 @@ impl ::core::fmt::Debug for GattServiceProviderConnection {
 }
 unsafe impl ::windows::core::RuntimeType for GattServiceProviderConnection {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Bluetooth.Background.GattServiceProviderConnection;{7fa1b9b9-2f13-40b5-9582-8eb78e98ef13})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -484,11 +460,6 @@ impl GattServiceProviderTriggerDetails {
         }
     }
 }
-impl ::core::clone::Clone for GattServiceProviderTriggerDetails {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for GattServiceProviderTriggerDetails {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -502,7 +473,6 @@ impl ::core::fmt::Debug for GattServiceProviderTriggerDetails {
 }
 unsafe impl ::windows::core::RuntimeType for GattServiceProviderTriggerDetails {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Bluetooth.Background.GattServiceProviderTriggerDetails;{ae8c0625-05ff-4afb-b16a-de95f3cf0158})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -559,6 +529,11 @@ unsafe impl ::core::marker::Sync for GattServiceProviderTriggerDetails {}
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBluetoothLEAdvertisementPublisherTriggerDetails(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBluetoothLEAdvertisementPublisherTriggerDetails {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBluetoothLEAdvertisementPublisherTriggerDetails {
     type Vtable = IBluetoothLEAdvertisementPublisherTriggerDetails_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x610eca86_3480_41c9_a918_7ddadf207e00);
@@ -576,6 +551,11 @@ pub struct IBluetoothLEAdvertisementPublisherTriggerDetails_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBluetoothLEAdvertisementPublisherTriggerDetails2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBluetoothLEAdvertisementPublisherTriggerDetails2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBluetoothLEAdvertisementPublisherTriggerDetails2 {
     type Vtable = IBluetoothLEAdvertisementPublisherTriggerDetails2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd4a3d025_c601_42d6_9829_4ccb3f5cd77f);
@@ -592,6 +572,11 @@ pub struct IBluetoothLEAdvertisementPublisherTriggerDetails2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IBluetoothLEAdvertisementWatcherTriggerDetails(::windows::core::IUnknown);
+impl ::core::clone::Clone for IBluetoothLEAdvertisementWatcherTriggerDetails {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IBluetoothLEAdvertisementWatcherTriggerDetails {
     type Vtable = IBluetoothLEAdvertisementWatcherTriggerDetails_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xa7db5ad7_2257_4e69_9784_fee645c1dce0);
@@ -610,6 +595,11 @@ pub struct IBluetoothLEAdvertisementWatcherTriggerDetails_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGattCharacteristicNotificationTriggerDetails(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGattCharacteristicNotificationTriggerDetails {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGattCharacteristicNotificationTriggerDetails {
     type Vtable = IGattCharacteristicNotificationTriggerDetails_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9ba03b18_0fec_436a_93b1_f46c697532a2);
@@ -630,6 +620,11 @@ pub struct IGattCharacteristicNotificationTriggerDetails_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGattCharacteristicNotificationTriggerDetails2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGattCharacteristicNotificationTriggerDetails2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGattCharacteristicNotificationTriggerDetails2 {
     type Vtable = IGattCharacteristicNotificationTriggerDetails2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x727a50dc_949d_454a_b192_983467e3d50f);
@@ -648,6 +643,11 @@ pub struct IGattCharacteristicNotificationTriggerDetails2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGattServiceProviderConnection(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGattServiceProviderConnection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGattServiceProviderConnection {
     type Vtable = IGattServiceProviderConnection_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x7fa1b9b9_2f13_40b5_9582_8eb78e98ef13);
@@ -666,6 +666,11 @@ pub struct IGattServiceProviderConnection_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGattServiceProviderConnectionStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGattServiceProviderConnectionStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGattServiceProviderConnectionStatics {
     type Vtable = IGattServiceProviderConnectionStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x3d509f4b_0b0e_4466_b8cd_6ebdda1fa17d);
@@ -682,6 +687,11 @@ pub struct IGattServiceProviderConnectionStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IGattServiceProviderTriggerDetails(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGattServiceProviderTriggerDetails {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IGattServiceProviderTriggerDetails {
     type Vtable = IGattServiceProviderTriggerDetails_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xae8c0625_05ff_4afb_b16a_de95f3cf0158);
@@ -695,6 +705,11 @@ pub struct IGattServiceProviderTriggerDetails_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IRfcommConnectionTriggerDetails(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRfcommConnectionTriggerDetails {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IRfcommConnectionTriggerDetails {
     type Vtable = IRfcommConnectionTriggerDetails_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf922734d_2e3c_4efc_ab59_fc5cf96f97e3);
@@ -713,6 +728,11 @@ pub struct IRfcommConnectionTriggerDetails_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IRfcommInboundConnectionInformation(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRfcommInboundConnectionInformation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IRfcommInboundConnectionInformation {
     type Vtable = IRfcommInboundConnectionInformation_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x6d3e75a8_5429_4059_92e3_1e8b65528707);
@@ -743,6 +763,11 @@ pub struct IRfcommInboundConnectionInformation_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IRfcommOutboundConnectionInformation(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRfcommOutboundConnectionInformation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IRfcommOutboundConnectionInformation {
     type Vtable = IRfcommOutboundConnectionInformation_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb091227b_f434_4cb0_99b1_4ab8cedaedd7);
@@ -790,11 +815,6 @@ impl RfcommConnectionTriggerDetails {
         }
     }
 }
-impl ::core::clone::Clone for RfcommConnectionTriggerDetails {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for RfcommConnectionTriggerDetails {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -808,7 +828,6 @@ impl ::core::fmt::Debug for RfcommConnectionTriggerDetails {
 }
 unsafe impl ::windows::core::RuntimeType for RfcommConnectionTriggerDetails {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Bluetooth.Background.RfcommConnectionTriggerDetails;{f922734d-2e3c-4efc-ab59-fc5cf96f97e3})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -910,11 +929,6 @@ impl RfcommInboundConnectionInformation {
         unsafe { (::windows::core::Interface::vtable(this).SetServiceCapabilities)(::core::mem::transmute_copy(this), value).ok() }
     }
 }
-impl ::core::clone::Clone for RfcommInboundConnectionInformation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for RfcommInboundConnectionInformation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -928,7 +942,6 @@ impl ::core::fmt::Debug for RfcommInboundConnectionInformation {
 }
 unsafe impl ::windows::core::RuntimeType for RfcommInboundConnectionInformation {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Bluetooth.Background.RfcommInboundConnectionInformation;{6d3e75a8-5429-4059-92e3-1e8b65528707})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1002,11 +1015,6 @@ impl RfcommOutboundConnectionInformation {
         unsafe { (::windows::core::Interface::vtable(this).SetRemoteServiceId)(::core::mem::transmute_copy(this), value.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for RfcommOutboundConnectionInformation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for RfcommOutboundConnectionInformation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1020,7 +1028,6 @@ impl ::core::fmt::Debug for RfcommOutboundConnectionInformation {
 }
 unsafe impl ::windows::core::RuntimeType for RfcommOutboundConnectionInformation {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Bluetooth.Background.RfcommOutboundConnectionInformation;{b091227b-f434-4cb0-99b1-4ab8cedaedd7})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

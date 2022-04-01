@@ -272,6 +272,7 @@ impl ::core::fmt::Debug for CHARSETINFO {
 }
 unsafe impl ::windows::core::Abi for CHARSETINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CHARSETINFO {
     fn eq(&self, other: &Self) -> bool {
@@ -330,6 +331,7 @@ impl ::core::default::Default for COMPARE_STRING_FLAGS {
 }
 unsafe impl ::windows::core::Abi for COMPARE_STRING_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for COMPARE_STRING_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -389,6 +391,7 @@ impl ::core::default::Default for CORRECTIVE_ACTION {
 }
 unsafe impl ::windows::core::Abi for CORRECTIVE_ACTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CORRECTIVE_ACTION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -415,6 +418,7 @@ impl ::core::fmt::Debug for CPINFO {
 }
 unsafe impl ::windows::core::Abi for CPINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CPINFO {
     fn eq(&self, other: &Self) -> bool {
@@ -455,6 +459,7 @@ impl ::core::fmt::Debug for CPINFOEXA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for CPINFOEXA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for CPINFOEXA {
@@ -493,6 +498,7 @@ impl ::core::fmt::Debug for CPINFOEXW {
 }
 unsafe impl ::windows::core::Abi for CPINFOEXW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CPINFOEXW {
     fn eq(&self, other: &Self) -> bool {
@@ -784,6 +790,7 @@ impl ::core::fmt::Debug for CURRENCYFMTA {
 }
 unsafe impl ::windows::core::Abi for CURRENCYFMTA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CURRENCYFMTA {
     fn eq(&self, other: &Self) -> bool {
@@ -821,6 +828,7 @@ impl ::core::fmt::Debug for CURRENCYFMTW {
 }
 unsafe impl ::windows::core::Abi for CURRENCYFMTW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CURRENCYFMTW {
     fn eq(&self, other: &Self) -> bool {
@@ -941,6 +949,7 @@ impl ::core::fmt::Debug for DetectEncodingInfo {
 }
 unsafe impl ::windows::core::Abi for DetectEncodingInfo {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DetectEncodingInfo {
     fn eq(&self, other: &Self) -> bool {
@@ -986,6 +995,7 @@ impl ::core::fmt::Debug for ENUMTEXTMETRICA {
 #[cfg(feature = "Win32_Graphics_Gdi")]
 unsafe impl ::windows::core::Abi for ENUMTEXTMETRICA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Gdi")]
 impl ::core::cmp::PartialEq for ENUMTEXTMETRICA {
@@ -1025,6 +1035,7 @@ impl ::core::fmt::Debug for ENUMTEXTMETRICW {
 #[cfg(feature = "Win32_Graphics_Gdi")]
 unsafe impl ::windows::core::Abi for ENUMTEXTMETRICW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Gdi")]
 impl ::core::cmp::PartialEq for ENUMTEXTMETRICW {
@@ -1075,6 +1086,7 @@ impl ::core::default::Default for ENUM_DATE_FORMATS_FLAGS {
 }
 unsafe impl ::windows::core::Abi for ENUM_DATE_FORMATS_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ENUM_DATE_FORMATS_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1102,6 +1114,7 @@ impl ::core::default::Default for ENUM_SYSTEM_CODE_PAGES_FLAGS {
 }
 unsafe impl ::windows::core::Abi for ENUM_SYSTEM_CODE_PAGES_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ENUM_SYSTEM_CODE_PAGES_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1129,6 +1142,7 @@ impl ::core::default::Default for ENUM_SYSTEM_LANGUAGE_GROUPS_FLAGS {
 }
 unsafe impl ::windows::core::Abi for ENUM_SYSTEM_LANGUAGE_GROUPS_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ENUM_SYSTEM_LANGUAGE_GROUPS_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1569,6 +1583,7 @@ impl ::core::fmt::Debug for FILEMUIINFO {
 }
 unsafe impl ::windows::core::Abi for FILEMUIINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for FILEMUIINFO {
     fn eq(&self, other: &Self) -> bool {
@@ -1616,6 +1631,7 @@ impl ::core::default::Default for FOLD_STRING_MAP_FLAGS {
 }
 unsafe impl ::windows::core::Abi for FOLD_STRING_MAP_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FOLD_STRING_MAP_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1669,6 +1685,7 @@ impl ::core::fmt::Debug for FONTSIGNATURE {
 }
 unsafe impl ::windows::core::Abi for FONTSIGNATURE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for FONTSIGNATURE {
     fn eq(&self, other: &Self) -> bool {
@@ -1780,6 +1797,7 @@ impl ::core::fmt::Debug for GOFFSET {
 }
 unsafe impl ::windows::core::Abi for GOFFSET {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for GOFFSET {
     fn eq(&self, other: &Self) -> bool {
@@ -2651,6 +2669,7 @@ impl ::core::fmt::Debug for HIMC {
 }
 unsafe impl ::windows::core::Abi for HIMC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[repr(transparent)]
 #[derive(:: core :: cmp :: PartialEq, :: core :: cmp :: Eq)]
@@ -2678,6 +2697,7 @@ impl ::core::fmt::Debug for HIMCC {
 }
 unsafe impl ::windows::core::Abi for HIMCC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[repr(transparent)]
 #[derive(:: core :: cmp :: PartialEq, :: core :: cmp :: Eq)]
@@ -2705,10 +2725,16 @@ impl ::core::fmt::Debug for HSAVEDUILANGUAGES {
 }
 unsafe impl ::windows::core::Abi for HSAVEDUILANGUAGES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[doc = "*Required features: `\"Win32_Globalization\"`*"]
 #[repr(transparent)]
 pub struct IComprehensiveSpellCheckProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IComprehensiveSpellCheckProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IComprehensiveSpellCheckProvider {
     #[doc = "*Required features: `\"Win32_Globalization\"`*"]
     pub unsafe fn ComprehensiveCheck<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, text: Param0) -> ::windows::core::Result<IEnumSpellingError> {
@@ -2734,11 +2760,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IComprehe
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IComprehensiveSpellCheckProvider {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IComprehensiveSpellCheckProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IComprehensiveSpellCheckProvider {
@@ -2773,6 +2794,11 @@ pub const IDN_USE_STD3_ASCII_RULES: u32 = 2u32;
 #[doc = "*Required features: `\"Win32_Globalization\"`*"]
 #[repr(transparent)]
 pub struct IEnumCodePage(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnumCodePage {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnumCodePage {
     #[doc = "*Required features: `\"Win32_Globalization\"`*"]
     pub unsafe fn Clone(&self) -> ::windows::core::Result<IEnumCodePage> {
@@ -2812,11 +2838,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnum
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnumCodePage {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnumCodePage {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2844,6 +2865,11 @@ pub struct IEnumCodePage_Vtbl {
 #[doc = "*Required features: `\"Win32_Globalization\"`*"]
 #[repr(transparent)]
 pub struct IEnumRfc1766(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnumRfc1766 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnumRfc1766 {
     #[doc = "*Required features: `\"Win32_Globalization\"`*"]
     pub unsafe fn Clone(&self) -> ::windows::core::Result<IEnumRfc1766> {
@@ -2883,11 +2909,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnum
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnumRfc1766 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnumRfc1766 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2915,6 +2936,11 @@ pub struct IEnumRfc1766_Vtbl {
 #[doc = "*Required features: `\"Win32_Globalization\"`*"]
 #[repr(transparent)]
 pub struct IEnumScript(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnumScript {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnumScript {
     #[doc = "*Required features: `\"Win32_Globalization\"`*"]
     pub unsafe fn Clone(&self) -> ::windows::core::Result<IEnumScript> {
@@ -2954,11 +2980,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnum
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnumScript {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnumScript {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2986,6 +3007,11 @@ pub struct IEnumScript_Vtbl {
 #[doc = "*Required features: `\"Win32_Globalization\"`*"]
 #[repr(transparent)]
 pub struct IEnumSpellingError(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnumSpellingError {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnumSpellingError {
     #[doc = "*Required features: `\"Win32_Globalization\"`*"]
     pub unsafe fn Next(&self) -> ::windows::core::Result<ISpellingError> {
@@ -3011,11 +3037,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IEnumSpel
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnumSpellingError {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IEnumSpellingError {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IEnumSpellingError {
@@ -3066,6 +3087,11 @@ pub const IME_CMODE_ROMAN: u32 = 16u32;
 #[doc = "*Required features: `\"Win32_Globalization\"`*"]
 #[repr(transparent)]
 pub struct IMLangCodePages(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMLangCodePages {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMLangCodePages {
     #[doc = "*Required features: `\"Win32_Globalization\"`*"]
     pub unsafe fn GetCharCodePages(&self, chsrc: u16) -> ::windows::core::Result<u32> {
@@ -3107,11 +3133,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMLan
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMLangCodePages {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMLangCodePages {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3139,6 +3160,11 @@ pub struct IMLangCodePages_Vtbl {
 #[doc = "*Required features: `\"Win32_Globalization\"`*"]
 #[repr(transparent)]
 pub struct IMLangConvertCharset(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMLangConvertCharset {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMLangConvertCharset {
     #[doc = "*Required features: `\"Win32_Globalization\"`*"]
     pub unsafe fn Initialize(&self, uisrccodepage: u32, uidstcodepage: u32, dwproperty: u32) -> ::windows::core::Result<()> {
@@ -3192,11 +3218,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMLan
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMLangConvertCharset {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMLangConvertCharset {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3227,6 +3248,11 @@ pub struct IMLangConvertCharset_Vtbl {
 #[doc = "*Required features: `\"Win32_Globalization\"`*"]
 #[repr(transparent)]
 pub struct IMLangFontLink(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMLangFontLink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMLangFontLink {
     #[doc = "*Required features: `\"Win32_Globalization\"`*"]
     pub unsafe fn GetCharCodePages(&self, chsrc: u16) -> ::windows::core::Result<u32> {
@@ -3309,11 +3335,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMLangCodePages> for &'a IMLangFontLink 
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMLangFontLink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMLangFontLink {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3350,6 +3371,11 @@ pub struct IMLangFontLink_Vtbl {
 #[doc = "*Required features: `\"Win32_Globalization\"`*"]
 #[repr(transparent)]
 pub struct IMLangFontLink2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMLangFontLink2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMLangFontLink2 {
     #[doc = "*Required features: `\"Win32_Globalization\"`*"]
     pub unsafe fn GetCharCodePages(&self, chsrc: u16) -> ::windows::core::Result<u32> {
@@ -3447,11 +3473,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMLangCodePages> for &'a IMLangFontLink2
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMLangFontLink2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMLangFontLink2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3494,6 +3515,11 @@ pub struct IMLangFontLink2_Vtbl {
 #[doc = "*Required features: `\"Win32_Globalization\"`*"]
 #[repr(transparent)]
 pub struct IMLangLineBreakConsole(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMLangLineBreakConsole {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMLangLineBreakConsole {
     #[doc = "*Required features: `\"Win32_Globalization\"`*"]
     pub unsafe fn BreakLineML<'a, Param0: ::windows::core::IntoParam<'a, IMLangString>>(&self, psrcmlstr: Param0, lsrcpos: i32, lsrclen: i32, cmincolumns: i32, cmaxcolumns: i32, pllinelen: *mut i32, plskiplen: *mut i32) -> ::windows::core::Result<()> {
@@ -3528,11 +3554,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMLan
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMLangLineBreakConsole {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMLangLineBreakConsole {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3559,6 +3580,11 @@ pub struct IMLangLineBreakConsole_Vtbl {
 #[doc = "*Required features: `\"Win32_Globalization\"`*"]
 #[repr(transparent)]
 pub struct IMLangString(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMLangString {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMLangString {
     #[doc = "*Required features: `\"Win32_Globalization\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -3599,11 +3625,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMLan
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMLangString {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMLangString {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3634,6 +3655,11 @@ pub struct IMLangString_Vtbl {
 #[doc = "*Required features: `\"Win32_Globalization\"`*"]
 #[repr(transparent)]
 pub struct IMLangStringAStr(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMLangStringAStr {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMLangStringAStr {
     #[doc = "*Required features: `\"Win32_Globalization\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -3726,11 +3752,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMLangString> for &'a IMLangStringAStr {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMLangStringAStr {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMLangStringAStr {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3762,6 +3783,11 @@ pub struct IMLangStringAStr_Vtbl {
 #[doc = "*Required features: `\"Win32_Globalization\"`*"]
 #[repr(transparent)]
 pub struct IMLangStringBufA(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMLangStringBufA {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMLangStringBufA {
     #[doc = "*Required features: `\"Win32_Globalization\"`*"]
     pub unsafe fn GetStatus(&self, plflags: *mut i32, pcchbuf: *mut i32) -> ::windows::core::Result<()> {
@@ -3806,11 +3832,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMLan
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMLangStringBufA {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMLangStringBufA {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3842,6 +3863,11 @@ pub struct IMLangStringBufA_Vtbl {
 #[doc = "*Required features: `\"Win32_Globalization\"`*"]
 #[repr(transparent)]
 pub struct IMLangStringBufW(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMLangStringBufW {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMLangStringBufW {
     #[doc = "*Required features: `\"Win32_Globalization\"`*"]
     pub unsafe fn GetStatus(&self, plflags: *mut i32, pcchbuf: *mut i32) -> ::windows::core::Result<()> {
@@ -3885,11 +3911,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMLan
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMLangStringBufW {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMLangStringBufW {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3918,6 +3939,11 @@ pub struct IMLangStringBufW_Vtbl {
 #[doc = "*Required features: `\"Win32_Globalization\"`*"]
 #[repr(transparent)]
 pub struct IMLangStringWStr(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMLangStringWStr {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMLangStringWStr {
     #[doc = "*Required features: `\"Win32_Globalization\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -4010,11 +4036,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMLangString> for &'a IMLangStringWStr {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMLangStringWStr {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMLangStringWStr {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4046,6 +4067,11 @@ pub struct IMLangStringWStr_Vtbl {
 #[doc = "*Required features: `\"Win32_Globalization\"`*"]
 #[repr(transparent)]
 pub struct IMultiLanguage(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMultiLanguage {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMultiLanguage {
     #[doc = "*Required features: `\"Win32_Globalization\"`*"]
     pub unsafe fn GetNumberOfCodePageInfo(&self) -> ::windows::core::Result<u32> {
@@ -4140,11 +4166,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMult
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMultiLanguage {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMultiLanguage {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4192,6 +4213,11 @@ pub struct IMultiLanguage_Vtbl {
 #[doc = "*Required features: `\"Win32_Globalization\"`*"]
 #[repr(transparent)]
 pub struct IMultiLanguage2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMultiLanguage2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMultiLanguage2 {
     #[doc = "*Required features: `\"Win32_Globalization\"`*"]
     pub unsafe fn GetNumberOfCodePageInfo(&self) -> ::windows::core::Result<u32> {
@@ -4340,11 +4366,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMult
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMultiLanguage2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMultiLanguage2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4416,6 +4437,11 @@ pub struct IMultiLanguage2_Vtbl {
 #[doc = "*Required features: `\"Win32_Globalization\"`*"]
 #[repr(transparent)]
 pub struct IMultiLanguage3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMultiLanguage3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMultiLanguage3 {
     #[doc = "*Required features: `\"Win32_Globalization\"`*"]
     pub unsafe fn GetNumberOfCodePageInfo(&self) -> ::windows::core::Result<u32> {
@@ -4593,11 +4619,6 @@ impl<'a> ::windows::core::IntoParam<'a, IMultiLanguage2> for &'a IMultiLanguage3
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMultiLanguage3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMultiLanguage3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4626,6 +4647,11 @@ pub struct IMultiLanguage3_Vtbl {
 #[doc = "*Required features: `\"Win32_Globalization\"`*"]
 #[repr(transparent)]
 pub struct IOptionDescription(::windows::core::IUnknown);
+impl ::core::clone::Clone for IOptionDescription {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IOptionDescription {
     #[doc = "*Required features: `\"Win32_Globalization\"`*"]
     pub unsafe fn Id(&self) -> ::windows::core::Result<::windows::core::PWSTR> {
@@ -4667,11 +4693,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IOptionDe
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IOptionDescription {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IOptionDescription {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IOptionDescription {
@@ -4748,6 +4769,7 @@ impl ::core::default::Default for IS_TEXT_UNICODE_RESULT {
 }
 unsafe impl ::windows::core::Abi for IS_TEXT_UNICODE_RESULT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for IS_TEXT_UNICODE_RESULT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4803,6 +4825,7 @@ impl ::core::default::Default for IS_VALID_LOCALE_FLAGS {
 }
 unsafe impl ::windows::core::Abi for IS_VALID_LOCALE_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for IS_VALID_LOCALE_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4812,6 +4835,11 @@ impl ::core::fmt::Debug for IS_VALID_LOCALE_FLAGS {
 #[doc = "*Required features: `\"Win32_Globalization\"`*"]
 #[repr(transparent)]
 pub struct ISpellCheckProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpellCheckProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISpellCheckProvider {
     #[doc = "*Required features: `\"Win32_Globalization\"`*"]
     pub unsafe fn LanguageTag(&self) -> ::windows::core::Result<::windows::core::PWSTR> {
@@ -4885,11 +4913,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISpel
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISpellCheckProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISpellCheckProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4932,6 +4955,11 @@ pub struct ISpellCheckProvider_Vtbl {
 #[doc = "*Required features: `\"Win32_Globalization\"`*"]
 #[repr(transparent)]
 pub struct ISpellCheckProviderFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpellCheckProviderFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISpellCheckProviderFactory {
     #[doc = "*Required features: `\"Win32_Globalization\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -4971,11 +4999,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISpel
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISpellCheckProviderFactory {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISpellCheckProviderFactory {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5008,6 +5031,11 @@ pub struct ISpellCheckProviderFactory_Vtbl {
 #[doc = "*Required features: `\"Win32_Globalization\"`*"]
 #[repr(transparent)]
 pub struct ISpellChecker(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpellChecker {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISpellChecker {
     #[doc = "*Required features: `\"Win32_Globalization\"`*"]
     pub unsafe fn LanguageTag(&self) -> ::windows::core::Result<::windows::core::PWSTR> {
@@ -5098,11 +5126,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISpel
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISpellChecker {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISpellChecker {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5146,6 +5169,11 @@ pub struct ISpellChecker_Vtbl {
 #[doc = "*Required features: `\"Win32_Globalization\"`*"]
 #[repr(transparent)]
 pub struct ISpellChecker2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpellChecker2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISpellChecker2 {
     #[doc = "*Required features: `\"Win32_Globalization\"`*"]
     pub unsafe fn LanguageTag(&self) -> ::windows::core::Result<::windows::core::PWSTR> {
@@ -5260,11 +5288,6 @@ impl<'a> ::windows::core::IntoParam<'a, ISpellChecker> for &'a ISpellChecker2 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISpellChecker2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISpellChecker2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5289,6 +5312,11 @@ pub struct ISpellChecker2_Vtbl {
 #[doc = "*Required features: `\"Win32_Globalization\"`*"]
 #[repr(transparent)]
 pub struct ISpellCheckerChangedEventHandler(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpellCheckerChangedEventHandler {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISpellCheckerChangedEventHandler {
     #[doc = "*Required features: `\"Win32_Globalization\"`*"]
     pub unsafe fn Invoke<'a, Param0: ::windows::core::IntoParam<'a, ISpellChecker>>(&self, sender: Param0) -> ::windows::core::Result<()> {
@@ -5315,11 +5343,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISpel
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISpellCheckerChangedEventHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISpellCheckerChangedEventHandler {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5344,6 +5367,11 @@ pub struct ISpellCheckerChangedEventHandler_Vtbl {
 #[doc = "*Required features: `\"Win32_Globalization\"`*"]
 #[repr(transparent)]
 pub struct ISpellCheckerFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpellCheckerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISpellCheckerFactory {
     #[doc = "*Required features: `\"Win32_Globalization\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -5383,11 +5411,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISpel
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISpellCheckerFactory {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISpellCheckerFactory {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5420,6 +5443,11 @@ pub struct ISpellCheckerFactory_Vtbl {
 #[doc = "*Required features: `\"Win32_Globalization\"`*"]
 #[repr(transparent)]
 pub struct ISpellingError(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISpellingError {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISpellingError {
     #[doc = "*Required features: `\"Win32_Globalization\"`*"]
     pub unsafe fn StartIndex(&self) -> ::windows::core::Result<u32> {
@@ -5462,11 +5490,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISpel
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISpellingError {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISpellingError {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5494,6 +5517,11 @@ pub struct ISpellingError_Vtbl {
 #[doc = "*Required features: `\"Win32_Globalization\"`*"]
 #[repr(transparent)]
 pub struct IUserDictionariesRegistrar(::windows::core::IUnknown);
+impl ::core::clone::Clone for IUserDictionariesRegistrar {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IUserDictionariesRegistrar {
     #[doc = "*Required features: `\"Win32_Globalization\"`*"]
     pub unsafe fn RegisterUserDictionary<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param1: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, dictionarypath: Param0, languagetag: Param1) -> ::windows::core::Result<()> {
@@ -5522,11 +5550,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IUserDict
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IUserDictionariesRegistrar {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IUserDictionariesRegistrar {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IUserDictionariesRegistrar {
@@ -5911,6 +5934,7 @@ impl ::core::fmt::Debug for LOCALESIGNATURE {
 }
 unsafe impl ::windows::core::Abi for LOCALESIGNATURE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for LOCALESIGNATURE {
     fn eq(&self, other: &Self) -> bool {
@@ -6334,6 +6358,7 @@ impl ::core::fmt::Debug for MAPPING_DATA_RANGE {
 }
 unsafe impl ::windows::core::Abi for MAPPING_DATA_RANGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MAPPING_DATA_RANGE {
     fn eq(&self, other: &Self) -> bool {
@@ -6384,6 +6409,7 @@ impl ::core::fmt::Debug for MAPPING_ENUM_OPTIONS {
 }
 unsafe impl ::windows::core::Abi for MAPPING_ENUM_OPTIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MAPPING_ENUM_OPTIONS {
     fn eq(&self, other: &Self) -> bool {
@@ -6446,6 +6472,7 @@ impl ::core::fmt::Debug for MAPPING_OPTIONS {
 }
 unsafe impl ::windows::core::Abi for MAPPING_OPTIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MAPPING_OPTIONS {
     fn eq(&self, other: &Self) -> bool {
@@ -6483,6 +6510,7 @@ impl ::core::fmt::Debug for MAPPING_PROPERTY_BAG {
 }
 unsafe impl ::windows::core::Abi for MAPPING_PROPERTY_BAG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MAPPING_PROPERTY_BAG {
     fn eq(&self, other: &Self) -> bool {
@@ -6563,6 +6591,7 @@ impl ::core::fmt::Debug for MAPPING_SERVICE_INFO {
 }
 unsafe impl ::windows::core::Abi for MAPPING_SERVICE_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MAPPING_SERVICE_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -6634,6 +6663,7 @@ impl ::core::default::Default for MIMECONTF {
 }
 unsafe impl ::windows::core::Abi for MIMECONTF {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MIMECONTF {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6678,6 +6708,7 @@ impl ::core::fmt::Debug for MIMECPINFO {
 }
 unsafe impl ::windows::core::Abi for MIMECPINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MIMECPINFO {
     fn eq(&self, other: &Self) -> bool {
@@ -6710,6 +6741,7 @@ impl ::core::fmt::Debug for MIMECSETINFO {
 }
 unsafe impl ::windows::core::Abi for MIMECSETINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MIMECSETINFO {
     fn eq(&self, other: &Self) -> bool {
@@ -6753,6 +6785,7 @@ impl ::core::default::Default for MLDETECTCP {
 }
 unsafe impl ::windows::core::Abi for MLDETECTCP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MLDETECTCP {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6780,6 +6813,7 @@ impl ::core::default::Default for MLSTR_FLAGS {
 }
 unsafe impl ::windows::core::Abi for MLSTR_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MLSTR_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6877,6 +6911,7 @@ impl ::core::default::Default for MULTI_BYTE_TO_WIDE_CHAR_FLAGS {
 }
 unsafe impl ::windows::core::Abi for MULTI_BYTE_TO_WIDE_CHAR_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MULTI_BYTE_TO_WIDE_CHAR_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7019,6 +7054,7 @@ impl ::core::fmt::Debug for NEWTEXTMETRICEXA {
 #[cfg(feature = "Win32_Graphics_Gdi")]
 unsafe impl ::windows::core::Abi for NEWTEXTMETRICEXA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Gdi")]
 impl ::core::cmp::PartialEq for NEWTEXTMETRICEXA {
@@ -7058,6 +7094,7 @@ impl ::core::fmt::Debug for NEWTEXTMETRICEXW {
 #[cfg(feature = "Win32_Graphics_Gdi")]
 unsafe impl ::windows::core::Abi for NEWTEXTMETRICEXW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Graphics_Gdi")]
 impl ::core::cmp::PartialEq for NEWTEXTMETRICEXW {
@@ -7095,6 +7132,7 @@ impl ::core::fmt::Debug for NLSVERSIONINFO {
 }
 unsafe impl ::windows::core::Abi for NLSVERSIONINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NLSVERSIONINFO {
     fn eq(&self, other: &Self) -> bool {
@@ -7129,6 +7167,7 @@ impl ::core::fmt::Debug for NLSVERSIONINFOEX {
 }
 unsafe impl ::windows::core::Abi for NLSVERSIONINFOEX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NLSVERSIONINFOEX {
     fn eq(&self, other: &Self) -> bool {
@@ -7174,6 +7213,7 @@ impl ::core::default::Default for NORM_FORM {
 }
 unsafe impl ::windows::core::Abi for NORM_FORM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NORM_FORM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7203,6 +7243,7 @@ impl ::core::fmt::Debug for NUMBERFMTA {
 }
 unsafe impl ::windows::core::Abi for NUMBERFMTA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NUMBERFMTA {
     fn eq(&self, other: &Self) -> bool {
@@ -7238,6 +7279,7 @@ impl ::core::fmt::Debug for NUMBERFMTW {
 }
 unsafe impl ::windows::core::Abi for NUMBERFMTW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NUMBERFMTW {
     fn eq(&self, other: &Self) -> bool {
@@ -7307,6 +7349,7 @@ impl ::core::fmt::Debug for RFC1766INFO {
 }
 unsafe impl ::windows::core::Abi for RFC1766INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RFC1766INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -7452,6 +7495,7 @@ impl ::core::default::Default for SCRIPTCONTF {
 }
 unsafe impl ::windows::core::Abi for SCRIPTCONTF {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SCRIPTCONTF {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7485,6 +7529,7 @@ impl ::core::default::Default for SCRIPTFONTCONTF {
 }
 unsafe impl ::windows::core::Abi for SCRIPTFONTCONTF {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SCRIPTFONTCONTF {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7513,6 +7558,7 @@ impl ::core::fmt::Debug for SCRIPTINFO {
 }
 unsafe impl ::windows::core::Abi for SCRIPTINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SCRIPTINFO {
     fn eq(&self, other: &Self) -> bool {
@@ -7544,6 +7590,7 @@ impl ::core::fmt::Debug for SCRIPT_ANALYSIS {
 }
 unsafe impl ::windows::core::Abi for SCRIPT_ANALYSIS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SCRIPT_ANALYSIS {
     fn eq(&self, other: &Self) -> bool {
@@ -7574,6 +7621,7 @@ impl ::core::fmt::Debug for SCRIPT_CONTROL {
 }
 unsafe impl ::windows::core::Abi for SCRIPT_CONTROL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SCRIPT_CONTROL {
     fn eq(&self, other: &Self) -> bool {
@@ -7606,6 +7654,7 @@ impl ::core::fmt::Debug for SCRIPT_DIGITSUBSTITUTE {
 }
 unsafe impl ::windows::core::Abi for SCRIPT_DIGITSUBSTITUTE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SCRIPT_DIGITSUBSTITUTE {
     fn eq(&self, other: &Self) -> bool {
@@ -7649,6 +7698,7 @@ impl ::core::fmt::Debug for SCRIPT_FONTPROPERTIES {
 }
 unsafe impl ::windows::core::Abi for SCRIPT_FONTPROPERTIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SCRIPT_FONTPROPERTIES {
     fn eq(&self, other: &Self) -> bool {
@@ -7684,6 +7734,7 @@ impl ::core::default::Default for SCRIPT_IS_COMPLEX_FLAGS {
 }
 unsafe impl ::windows::core::Abi for SCRIPT_IS_COMPLEX_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SCRIPT_IS_COMPLEX_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7709,6 +7760,7 @@ impl ::core::fmt::Debug for SCRIPT_ITEM {
 }
 unsafe impl ::windows::core::Abi for SCRIPT_ITEM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SCRIPT_ITEM {
     fn eq(&self, other: &Self) -> bool {
@@ -7770,6 +7822,7 @@ impl ::core::default::Default for SCRIPT_JUSTIFY {
 }
 unsafe impl ::windows::core::Abi for SCRIPT_JUSTIFY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SCRIPT_JUSTIFY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7794,6 +7847,7 @@ impl ::core::fmt::Debug for SCRIPT_LOGATTR {
 }
 unsafe impl ::windows::core::Abi for SCRIPT_LOGATTR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SCRIPT_LOGATTR {
     fn eq(&self, other: &Self) -> bool {
@@ -7825,6 +7879,7 @@ impl ::core::fmt::Debug for SCRIPT_PROPERTIES {
 }
 unsafe impl ::windows::core::Abi for SCRIPT_PROPERTIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SCRIPT_PROPERTIES {
     fn eq(&self, other: &Self) -> bool {
@@ -7855,6 +7910,7 @@ impl ::core::fmt::Debug for SCRIPT_STATE {
 }
 unsafe impl ::windows::core::Abi for SCRIPT_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SCRIPT_STATE {
     fn eq(&self, other: &Self) -> bool {
@@ -7888,6 +7944,7 @@ impl ::core::fmt::Debug for SCRIPT_TABDEF {
 }
 unsafe impl ::windows::core::Abi for SCRIPT_TABDEF {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SCRIPT_TABDEF {
     fn eq(&self, other: &Self) -> bool {
@@ -7922,6 +7979,7 @@ impl ::core::fmt::Debug for SCRIPT_VISATTR {
 }
 unsafe impl ::windows::core::Abi for SCRIPT_VISATTR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for SCRIPT_VISATTR {
     fn eq(&self, other: &Self) -> bool {
@@ -8005,6 +8063,7 @@ impl ::core::default::Default for SYSGEOCLASS {
 }
 unsafe impl ::windows::core::Abi for SYSGEOCLASS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SYSGEOCLASS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8064,6 +8123,7 @@ impl ::core::default::Default for SYSGEOTYPE {
 }
 unsafe impl ::windows::core::Abi for SYSGEOTYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SYSGEOTYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8089,6 +8149,7 @@ impl ::core::default::Default for SYSNLS_FUNCTION {
 }
 unsafe impl ::windows::core::Abi for SYSNLS_FUNCTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SYSNLS_FUNCTION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8917,6 +8978,7 @@ impl ::core::default::Default for TIME_FORMAT_FLAGS {
 }
 unsafe impl ::windows::core::Abi for TIME_FORMAT_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TIME_FORMAT_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8976,6 +9038,7 @@ impl ::core::default::Default for TRANSLATE_CHARSET_INFO_FLAGS {
 }
 unsafe impl ::windows::core::Abi for TRANSLATE_CHARSET_INFO_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TRANSLATE_CHARSET_INFO_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9028,6 +9091,7 @@ impl ::core::default::Default for UAcceptResult {
 }
 unsafe impl ::windows::core::Abi for UAcceptResult {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UAcceptResult {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9059,6 +9123,7 @@ impl ::core::default::Default for UAlphabeticIndexLabelType {
 }
 unsafe impl ::windows::core::Abi for UAlphabeticIndexLabelType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UAlphabeticIndexLabelType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9114,6 +9179,7 @@ impl ::core::default::Default for UBiDiDirection {
 }
 unsafe impl ::windows::core::Abi for UBiDiDirection {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UBiDiDirection {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9141,6 +9207,7 @@ impl ::core::default::Default for UBiDiMirroring {
 }
 unsafe impl ::windows::core::Abi for UBiDiMirroring {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UBiDiMirroring {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9168,6 +9235,7 @@ impl ::core::default::Default for UBiDiOrder {
 }
 unsafe impl ::windows::core::Abi for UBiDiOrder {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UBiDiOrder {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9205,6 +9273,7 @@ impl ::core::default::Default for UBiDiReorderingMode {
 }
 unsafe impl ::windows::core::Abi for UBiDiReorderingMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UBiDiReorderingMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9236,6 +9305,7 @@ impl ::core::default::Default for UBiDiReorderingOption {
 }
 unsafe impl ::windows::core::Abi for UBiDiReorderingOption {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UBiDiReorderingOption {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9267,6 +9337,7 @@ impl ::core::default::Default for UBidiPairedBracketType {
 }
 unsafe impl ::windows::core::Abi for UBidiPairedBracketType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UBidiPairedBracketType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9914,6 +9985,7 @@ impl ::core::default::Default for UBlockCode {
 }
 unsafe impl ::windows::core::Abi for UBlockCode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UBlockCode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9947,6 +10019,7 @@ impl ::core::default::Default for UBreakIteratorType {
 }
 unsafe impl ::windows::core::Abi for UBreakIteratorType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UBreakIteratorType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10164,6 +10237,7 @@ impl ::core::default::Default for UCPMapRangeOption {
 }
 unsafe impl ::windows::core::Abi for UCPMapRangeOption {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UCPMapRangeOption {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10209,6 +10283,7 @@ impl ::core::clone::Clone for UCPTrie {
 }
 unsafe impl ::windows::core::Abi for UCPTrie {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for UCPTrie {
     fn eq(&self, other: &Self) -> bool {
@@ -10237,6 +10312,7 @@ impl ::core::clone::Clone for UCPTrieData {
 }
 unsafe impl ::windows::core::Abi for UCPTrieData {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for UCPTrieData {
     fn eq(&self, other: &Self) -> bool {
@@ -10272,6 +10348,7 @@ impl ::core::default::Default for UCPTrieType {
 }
 unsafe impl ::windows::core::Abi for UCPTrieType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UCPTrieType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10303,6 +10380,7 @@ impl ::core::default::Default for UCPTrieValueWidth {
 }
 unsafe impl ::windows::core::Abi for UCPTrieValueWidth {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UCPTrieValueWidth {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10330,6 +10408,7 @@ impl ::core::default::Default for UCalendarAMPMs {
 }
 unsafe impl ::windows::core::Abi for UCalendarAMPMs {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UCalendarAMPMs {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10363,6 +10442,7 @@ impl ::core::default::Default for UCalendarAttribute {
 }
 unsafe impl ::windows::core::Abi for UCalendarAttribute {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UCalendarAttribute {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10436,6 +10516,7 @@ impl ::core::default::Default for UCalendarDateFields {
 }
 unsafe impl ::windows::core::Abi for UCalendarDateFields {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UCalendarDateFields {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10473,6 +10554,7 @@ impl ::core::default::Default for UCalendarDaysOfWeek {
 }
 unsafe impl ::windows::core::Abi for UCalendarDaysOfWeek {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UCalendarDaysOfWeek {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10504,6 +10586,7 @@ impl ::core::default::Default for UCalendarDisplayNameType {
 }
 unsafe impl ::windows::core::Abi for UCalendarDisplayNameType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UCalendarDisplayNameType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10539,6 +10622,7 @@ impl ::core::default::Default for UCalendarLimitType {
 }
 unsafe impl ::windows::core::Abi for UCalendarLimitType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UCalendarLimitType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10588,6 +10672,7 @@ impl ::core::default::Default for UCalendarMonths {
 }
 unsafe impl ::windows::core::Abi for UCalendarMonths {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UCalendarMonths {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10617,6 +10702,7 @@ impl ::core::default::Default for UCalendarType {
 }
 unsafe impl ::windows::core::Abi for UCalendarType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UCalendarType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10646,6 +10732,7 @@ impl ::core::default::Default for UCalendarWallTimeOption {
 }
 unsafe impl ::windows::core::Abi for UCalendarWallTimeOption {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UCalendarWallTimeOption {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10677,6 +10764,7 @@ impl ::core::default::Default for UCalendarWeekdayType {
 }
 unsafe impl ::windows::core::Abi for UCalendarWeekdayType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UCalendarWeekdayType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10766,6 +10854,7 @@ impl ::core::default::Default for UCharCategory {
 }
 unsafe impl ::windows::core::Abi for UCharCategory {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UCharCategory {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10835,6 +10924,7 @@ impl ::core::default::Default for UCharDirection {
 }
 unsafe impl ::windows::core::Abi for UCharDirection {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UCharDirection {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10893,6 +10983,7 @@ impl ::core::fmt::Debug for UCharIterator {
 }
 unsafe impl ::windows::core::Abi for UCharIterator {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for UCharIterator {
     fn eq(&self, other: &Self) -> bool {
@@ -10946,6 +11037,7 @@ impl ::core::default::Default for UCharIteratorOrigin {
 }
 unsafe impl ::windows::core::Abi for UCharIteratorOrigin {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UCharIteratorOrigin {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10981,6 +11073,7 @@ impl ::core::default::Default for UCharNameChoice {
 }
 unsafe impl ::windows::core::Abi for UCharNameChoice {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UCharNameChoice {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11026,6 +11119,7 @@ impl ::core::default::Default for UColAttribute {
 }
 unsafe impl ::windows::core::Abi for UColAttribute {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UColAttribute {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11079,6 +11173,7 @@ impl ::core::default::Default for UColAttributeValue {
 }
 unsafe impl ::windows::core::Abi for UColAttributeValue {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UColAttributeValue {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11108,6 +11203,7 @@ impl ::core::default::Default for UColBoundMode {
 }
 unsafe impl ::windows::core::Abi for UColBoundMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UColBoundMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11149,6 +11245,7 @@ impl ::core::default::Default for UColReorderCode {
 }
 unsafe impl ::windows::core::Abi for UColReorderCode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UColReorderCode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11176,6 +11273,7 @@ impl ::core::default::Default for UColRuleOption {
 }
 unsafe impl ::windows::core::Abi for UColRuleOption {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UColRuleOption {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11207,6 +11305,7 @@ impl ::core::default::Default for UCollationResult {
 }
 unsafe impl ::windows::core::Abi for UCollationResult {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UCollationResult {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11248,6 +11347,7 @@ impl ::core::default::Default for UConverterCallbackReason {
 }
 unsafe impl ::windows::core::Abi for UConverterCallbackReason {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UConverterCallbackReason {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11281,6 +11381,7 @@ impl ::core::fmt::Debug for UConverterFromUnicodeArgs {
 }
 unsafe impl ::windows::core::Abi for UConverterFromUnicodeArgs {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for UConverterFromUnicodeArgs {
     fn eq(&self, other: &Self) -> bool {
@@ -11314,6 +11415,7 @@ impl ::core::default::Default for UConverterPlatform {
 }
 unsafe impl ::windows::core::Abi for UConverterPlatform {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UConverterPlatform {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11349,6 +11451,7 @@ impl ::core::fmt::Debug for UConverterToUnicodeArgs {
 }
 unsafe impl ::windows::core::Abi for UConverterToUnicodeArgs {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for UConverterToUnicodeArgs {
     fn eq(&self, other: &Self) -> bool {
@@ -11452,6 +11555,7 @@ impl ::core::default::Default for UConverterType {
 }
 unsafe impl ::windows::core::Abi for UConverterType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UConverterType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11479,6 +11583,7 @@ impl ::core::default::Default for UConverterUnicodeSet {
 }
 unsafe impl ::windows::core::Abi for UConverterUnicodeSet {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UConverterUnicodeSet {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11512,6 +11617,7 @@ impl ::core::default::Default for UCurrCurrencyType {
 }
 unsafe impl ::windows::core::Abi for UCurrCurrencyType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UCurrCurrencyType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11541,6 +11647,7 @@ impl ::core::default::Default for UCurrNameStyle {
 }
 unsafe impl ::windows::core::Abi for UCurrNameStyle {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UCurrNameStyle {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11572,6 +11679,7 @@ impl ::core::default::Default for UCurrencySpacing {
 }
 unsafe impl ::windows::core::Abi for UCurrencySpacing {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UCurrencySpacing {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11599,6 +11707,7 @@ impl ::core::default::Default for UCurrencyUsage {
 }
 unsafe impl ::windows::core::Abi for UCurrencyUsage {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UCurrencyUsage {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11730,6 +11839,7 @@ impl ::core::default::Default for UDateAbsoluteUnit {
 }
 unsafe impl ::windows::core::Abi for UDateAbsoluteUnit {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UDateAbsoluteUnit {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11767,6 +11877,7 @@ impl ::core::default::Default for UDateDirection {
 }
 unsafe impl ::windows::core::Abi for UDateDirection {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UDateDirection {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11800,6 +11911,7 @@ impl ::core::default::Default for UDateFormatBooleanAttribute {
 }
 unsafe impl ::windows::core::Abi for UDateFormatBooleanAttribute {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UDateFormatBooleanAttribute {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11895,6 +12007,7 @@ impl ::core::default::Default for UDateFormatField {
 }
 unsafe impl ::windows::core::Abi for UDateFormatField {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UDateFormatField {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11942,6 +12055,7 @@ impl ::core::default::Default for UDateFormatStyle {
 }
 unsafe impl ::windows::core::Abi for UDateFormatStyle {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UDateFormatStyle {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12021,6 +12135,7 @@ impl ::core::default::Default for UDateFormatSymbolType {
 }
 unsafe impl ::windows::core::Abi for UDateFormatSymbolType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UDateFormatSymbolType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12054,6 +12169,7 @@ impl ::core::default::Default for UDateRelativeDateTimeFormatterStyle {
 }
 unsafe impl ::windows::core::Abi for UDateRelativeDateTimeFormatterStyle {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UDateRelativeDateTimeFormatterStyle {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12093,6 +12209,7 @@ impl ::core::default::Default for UDateRelativeUnit {
 }
 unsafe impl ::windows::core::Abi for UDateRelativeUnit {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UDateRelativeUnit {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12122,6 +12239,7 @@ impl ::core::default::Default for UDateTimePGDisplayWidth {
 }
 unsafe impl ::windows::core::Abi for UDateTimePGDisplayWidth {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UDateTimePGDisplayWidth {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12151,6 +12269,7 @@ impl ::core::default::Default for UDateTimePatternConflict {
 }
 unsafe impl ::windows::core::Abi for UDateTimePatternConflict {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UDateTimePatternConflict {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12208,6 +12327,7 @@ impl ::core::default::Default for UDateTimePatternField {
 }
 unsafe impl ::windows::core::Abi for UDateTimePatternField {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UDateTimePatternField {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12237,6 +12357,7 @@ impl ::core::default::Default for UDateTimePatternMatchOptions {
 }
 unsafe impl ::windows::core::Abi for UDateTimePatternMatchOptions {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UDateTimePatternMatchOptions {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12280,6 +12401,7 @@ impl ::core::default::Default for UDateTimeScale {
 }
 unsafe impl ::windows::core::Abi for UDateTimeScale {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UDateTimeScale {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12339,6 +12461,7 @@ impl ::core::default::Default for UDecompositionType {
 }
 unsafe impl ::windows::core::Abi for UDecompositionType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UDecompositionType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12366,6 +12489,7 @@ impl ::core::default::Default for UDialectHandling {
 }
 unsafe impl ::windows::core::Abi for UDialectHandling {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UDialectHandling {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12411,6 +12535,7 @@ impl ::core::default::Default for UDisplayContext {
 }
 unsafe impl ::windows::core::Abi for UDisplayContext {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UDisplayContext {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12442,6 +12567,7 @@ impl ::core::default::Default for UDisplayContextType {
 }
 unsafe impl ::windows::core::Abi for UDisplayContextType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UDisplayContextType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12477,6 +12603,7 @@ impl ::core::default::Default for UEastAsianWidth {
 }
 unsafe impl ::windows::core::Abi for UEastAsianWidth {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UEastAsianWidth {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12808,6 +12935,7 @@ impl ::core::default::Default for UErrorCode {
 }
 unsafe impl ::windows::core::Abi for UErrorCode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UErrorCode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12847,6 +12975,7 @@ impl ::core::default::Default for UFieldCategory {
 }
 unsafe impl ::windows::core::Abi for UFieldCategory {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UFieldCategory {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12873,6 +13002,7 @@ impl ::core::fmt::Debug for UFieldPosition {
 }
 unsafe impl ::windows::core::Abi for UFieldPosition {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for UFieldPosition {
     fn eq(&self, other: &Self) -> bool {
@@ -12918,6 +13048,7 @@ impl ::core::default::Default for UFormattableType {
 }
 unsafe impl ::windows::core::Abi for UFormattableType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UFormattableType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12959,6 +13090,7 @@ impl ::core::default::Default for UGender {
 }
 unsafe impl ::windows::core::Abi for UGender {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UGender {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13020,6 +13152,7 @@ impl ::core::default::Default for UGraphemeClusterBreak {
 }
 unsafe impl ::windows::core::Abi for UGraphemeClusterBreak {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UGraphemeClusterBreak {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13055,6 +13188,7 @@ impl ::core::default::Default for UHangulSyllableType {
 }
 unsafe impl ::windows::core::Abi for UHangulSyllableType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UHangulSyllableType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13088,6 +13222,7 @@ impl ::core::fmt::Debug for UIDNAInfo {
 }
 unsafe impl ::windows::core::Abi for UIDNAInfo {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for UIDNAInfo {
     fn eq(&self, other: &Self) -> bool {
@@ -13201,6 +13336,7 @@ impl ::core::default::Default for UIndicPositionalCategory {
 }
 unsafe impl ::windows::core::Abi for UIndicPositionalCategory {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UIndicPositionalCategory {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13296,6 +13432,7 @@ impl ::core::default::Default for UIndicSyllabicCategory {
 }
 unsafe impl ::windows::core::Abi for UIndicSyllabicCategory {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UIndicSyllabicCategory {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13525,6 +13662,7 @@ impl ::core::default::Default for UJoiningGroup {
 }
 unsafe impl ::windows::core::Abi for UJoiningGroup {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UJoiningGroup {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13560,6 +13698,7 @@ impl ::core::default::Default for UJoiningType {
 }
 unsafe impl ::windows::core::Abi for UJoiningType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UJoiningType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13653,6 +13792,7 @@ impl ::core::default::Default for ULayoutType {
 }
 unsafe impl ::windows::core::Abi for ULayoutType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ULayoutType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13764,6 +13904,7 @@ impl ::core::default::Default for ULineBreak {
 }
 unsafe impl ::windows::core::Abi for ULineBreak {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ULineBreak {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13795,6 +13936,7 @@ impl ::core::default::Default for ULineBreakTag {
 }
 unsafe impl ::windows::core::Abi for ULineBreakTag {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ULineBreakTag {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13824,6 +13966,7 @@ impl ::core::default::Default for UListFormatterField {
 }
 unsafe impl ::windows::core::Abi for UListFormatterField {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UListFormatterField {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13853,6 +13996,7 @@ impl ::core::default::Default for UListFormatterType {
 }
 unsafe impl ::windows::core::Abi for UListFormatterType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UListFormatterType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13882,6 +14026,7 @@ impl ::core::default::Default for UListFormatterWidth {
 }
 unsafe impl ::windows::core::Abi for UListFormatterWidth {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UListFormatterWidth {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13911,6 +14056,7 @@ impl ::core::default::Default for ULocAvailableType {
 }
 unsafe impl ::windows::core::Abi for ULocAvailableType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ULocAvailableType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13938,6 +14084,7 @@ impl ::core::default::Default for ULocDataLocaleType {
 }
 unsafe impl ::windows::core::Abi for ULocDataLocaleType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ULocDataLocaleType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13971,6 +14118,7 @@ impl ::core::default::Default for ULocaleDataDelimiterType {
 }
 unsafe impl ::windows::core::Abi for ULocaleDataDelimiterType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ULocaleDataDelimiterType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14002,6 +14150,7 @@ impl ::core::default::Default for ULocaleDataExemplarSetType {
 }
 unsafe impl ::windows::core::Abi for ULocaleDataExemplarSetType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ULocaleDataExemplarSetType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14041,6 +14190,7 @@ impl ::core::default::Default for UMeasureFormatWidth {
 }
 unsafe impl ::windows::core::Abi for UMeasureFormatWidth {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UMeasureFormatWidth {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14070,6 +14220,7 @@ impl ::core::default::Default for UMeasurementSystem {
 }
 unsafe impl ::windows::core::Abi for UMeasurementSystem {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UMeasurementSystem {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14103,6 +14254,7 @@ impl ::core::default::Default for UMessagePatternApostropheMode {
 }
 unsafe impl ::windows::core::Abi for UMessagePatternApostropheMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UMessagePatternApostropheMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14138,6 +14290,7 @@ impl ::core::default::Default for UMessagePatternArgType {
 }
 unsafe impl ::windows::core::Abi for UMessagePatternArgType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UMessagePatternArgType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14189,6 +14342,7 @@ impl ::core::default::Default for UMessagePatternPartType {
 }
 unsafe impl ::windows::core::Abi for UMessagePatternPartType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UMessagePatternPartType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14218,6 +14372,7 @@ impl ::core::fmt::Debug for UNICODERANGE {
 }
 unsafe impl ::windows::core::Abi for UNICODERANGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for UNICODERANGE {
     fn eq(&self, other: &Self) -> bool {
@@ -14259,6 +14414,7 @@ impl ::core::default::Default for UNormalization2Mode {
 }
 unsafe impl ::windows::core::Abi for UNormalization2Mode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UNormalization2Mode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14288,6 +14444,7 @@ impl ::core::default::Default for UNormalizationCheckResult {
 }
 unsafe impl ::windows::core::Abi for UNormalizationCheckResult {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UNormalizationCheckResult {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14327,6 +14484,7 @@ impl ::core::default::Default for UNormalizationMode {
 }
 unsafe impl ::windows::core::Abi for UNormalizationMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UNormalizationMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14356,6 +14514,7 @@ impl ::core::default::Default for UNumberCompactStyle {
 }
 unsafe impl ::windows::core::Abi for UNumberCompactStyle {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UNumberCompactStyle {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14385,6 +14544,7 @@ impl ::core::default::Default for UNumberDecimalSeparatorDisplay {
 }
 unsafe impl ::windows::core::Abi for UNumberDecimalSeparatorDisplay {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UNumberDecimalSeparatorDisplay {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14466,6 +14626,7 @@ impl ::core::default::Default for UNumberFormatAttribute {
 }
 unsafe impl ::windows::core::Abi for UNumberFormatAttribute {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UNumberFormatAttribute {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14491,6 +14652,7 @@ impl ::core::default::Default for UNumberFormatAttributeValue {
 }
 unsafe impl ::windows::core::Abi for UNumberFormatAttributeValue {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UNumberFormatAttributeValue {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14540,6 +14702,7 @@ impl ::core::default::Default for UNumberFormatFields {
 }
 unsafe impl ::windows::core::Abi for UNumberFormatFields {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UNumberFormatFields {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14571,6 +14734,7 @@ impl ::core::default::Default for UNumberFormatPadPosition {
 }
 unsafe impl ::windows::core::Abi for UNumberFormatPadPosition {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UNumberFormatPadPosition {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14610,6 +14774,7 @@ impl ::core::default::Default for UNumberFormatRoundingMode {
 }
 unsafe impl ::windows::core::Abi for UNumberFormatRoundingMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UNumberFormatRoundingMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14671,6 +14836,7 @@ impl ::core::default::Default for UNumberFormatStyle {
 }
 unsafe impl ::windows::core::Abi for UNumberFormatStyle {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UNumberFormatStyle {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14750,6 +14916,7 @@ impl ::core::default::Default for UNumberFormatSymbol {
 }
 unsafe impl ::windows::core::Abi for UNumberFormatSymbol {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UNumberFormatSymbol {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14789,6 +14956,7 @@ impl ::core::default::Default for UNumberFormatTextAttribute {
 }
 unsafe impl ::windows::core::Abi for UNumberFormatTextAttribute {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UNumberFormatTextAttribute {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14824,6 +14992,7 @@ impl ::core::default::Default for UNumberGroupingStrategy {
 }
 unsafe impl ::windows::core::Abi for UNumberGroupingStrategy {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UNumberGroupingStrategy {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14855,6 +15024,7 @@ impl ::core::default::Default for UNumberRangeCollapse {
 }
 unsafe impl ::windows::core::Abi for UNumberRangeCollapse {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UNumberRangeCollapse {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14886,6 +15056,7 @@ impl ::core::default::Default for UNumberRangeIdentityFallback {
 }
 unsafe impl ::windows::core::Abi for UNumberRangeIdentityFallback {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UNumberRangeIdentityFallback {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14915,6 +15086,7 @@ impl ::core::default::Default for UNumberRangeIdentityResult {
 }
 unsafe impl ::windows::core::Abi for UNumberRangeIdentityResult {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UNumberRangeIdentityResult {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14954,6 +15126,7 @@ impl ::core::default::Default for UNumberSignDisplay {
 }
 unsafe impl ::windows::core::Abi for UNumberSignDisplay {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UNumberSignDisplay {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14989,6 +15162,7 @@ impl ::core::default::Default for UNumberUnitWidth {
 }
 unsafe impl ::windows::core::Abi for UNumberUnitWidth {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UNumberUnitWidth {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -15022,6 +15196,7 @@ impl ::core::default::Default for UNumericType {
 }
 unsafe impl ::windows::core::Abi for UNumericType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UNumericType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -15049,6 +15224,7 @@ impl ::core::fmt::Debug for UParseError {
 }
 unsafe impl ::windows::core::Abi for UParseError {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for UParseError {
     fn eq(&self, other: &Self) -> bool {
@@ -15084,6 +15260,7 @@ impl ::core::default::Default for UPluralType {
 }
 unsafe impl ::windows::core::Abi for UPluralType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UPluralType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -15331,6 +15508,7 @@ impl ::core::default::Default for UProperty {
 }
 unsafe impl ::windows::core::Abi for UProperty {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UProperty {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -15358,6 +15536,7 @@ impl ::core::default::Default for UPropertyNameChoice {
 }
 unsafe impl ::windows::core::Abi for UPropertyNameChoice {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UPropertyNameChoice {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -15401,6 +15580,7 @@ impl ::core::default::Default for URegexpFlag {
 }
 unsafe impl ::windows::core::Abi for URegexpFlag {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for URegexpFlag {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -15440,6 +15620,7 @@ impl ::core::default::Default for URegionType {
 }
 unsafe impl ::windows::core::Abi for URegionType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for URegionType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -15471,6 +15652,7 @@ impl ::core::default::Default for URelativeDateTimeFormatterField {
 }
 unsafe impl ::windows::core::Abi for URelativeDateTimeFormatterField {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for URelativeDateTimeFormatterField {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -15524,6 +15706,7 @@ impl ::core::default::Default for URelativeDateTimeUnit {
 }
 unsafe impl ::windows::core::Abi for URelativeDateTimeUnit {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for URelativeDateTimeUnit {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -15553,6 +15736,7 @@ impl ::core::fmt::Debug for UReplaceableCallbacks {
 }
 unsafe impl ::windows::core::Abi for UReplaceableCallbacks {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for UReplaceableCallbacks {
     fn eq(&self, other: &Self) -> bool {
@@ -15598,6 +15782,7 @@ impl ::core::default::Default for UResType {
 }
 unsafe impl ::windows::core::Abi for UResType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UResType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -15637,6 +15822,7 @@ impl ::core::default::Default for URestrictionLevel {
 }
 unsafe impl ::windows::core::Abi for URestrictionLevel {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for URestrictionLevel {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -16074,6 +16260,7 @@ impl ::core::default::Default for UScriptCode {
 }
 unsafe impl ::windows::core::Abi for UScriptCode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UScriptCode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -16109,6 +16296,7 @@ impl ::core::default::Default for UScriptUsage {
 }
 unsafe impl ::windows::core::Abi for UScriptUsage {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UScriptUsage {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -16138,6 +16326,7 @@ impl ::core::default::Default for USearchAttribute {
 }
 unsafe impl ::windows::core::Abi for USearchAttribute {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for USearchAttribute {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -16173,6 +16362,7 @@ impl ::core::default::Default for USearchAttributeValue {
 }
 unsafe impl ::windows::core::Abi for USearchAttributeValue {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for USearchAttributeValue {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -16226,6 +16416,7 @@ impl ::core::default::Default for USentenceBreak {
 }
 unsafe impl ::windows::core::Abi for USentenceBreak {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for USentenceBreak {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -16257,6 +16448,7 @@ impl ::core::default::Default for USentenceBreakTag {
 }
 unsafe impl ::windows::core::Abi for USentenceBreakTag {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for USentenceBreakTag {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -16284,6 +16476,7 @@ impl ::core::fmt::Debug for USerializedSet {
 }
 unsafe impl ::windows::core::Abi for USerializedSet {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USerializedSet {
     fn eq(&self, other: &Self) -> bool {
@@ -16321,6 +16514,7 @@ impl ::core::default::Default for USetSpanCondition {
 }
 unsafe impl ::windows::core::Abi for USetSpanCondition {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for USetSpanCondition {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -16370,6 +16564,7 @@ impl ::core::default::Default for USpoofChecks {
 }
 unsafe impl ::windows::core::Abi for USpoofChecks {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for USpoofChecks {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -16425,6 +16620,7 @@ impl ::core::default::Default for UStringPrepProfileType {
 }
 unsafe impl ::windows::core::Abi for UStringPrepProfileType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UStringPrepProfileType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -16454,6 +16650,7 @@ impl ::core::default::Default for UStringTrieBuildOption {
 }
 unsafe impl ::windows::core::Abi for UStringTrieBuildOption {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UStringTrieBuildOption {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -16485,6 +16682,7 @@ impl ::core::default::Default for UStringTrieResult {
 }
 unsafe impl ::windows::core::Abi for UStringTrieResult {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UStringTrieResult {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -16514,6 +16712,7 @@ impl ::core::default::Default for USystemTimeZoneType {
 }
 unsafe impl ::windows::core::Abi for USystemTimeZoneType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for USystemTimeZoneType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -16614,6 +16813,7 @@ impl ::core::fmt::Debug for UText {
 }
 unsafe impl ::windows::core::Abi for UText {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for UText {
     fn eq(&self, other: &Self) -> bool {
@@ -16686,6 +16886,7 @@ impl ::core::fmt::Debug for UTextFuncs {
 }
 unsafe impl ::windows::core::Abi for UTextFuncs {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for UTextFuncs {
     fn eq(&self, other: &Self) -> bool {
@@ -16735,6 +16936,7 @@ impl ::core::default::Default for UTimeScaleValue {
 }
 unsafe impl ::windows::core::Abi for UTimeScaleValue {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UTimeScaleValue {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -16772,6 +16974,7 @@ impl ::core::default::Default for UTimeZoneFormatGMTOffsetPatternType {
 }
 unsafe impl ::windows::core::Abi for UTimeZoneFormatGMTOffsetPatternType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UTimeZoneFormatGMTOffsetPatternType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -16801,6 +17004,7 @@ impl ::core::default::Default for UTimeZoneFormatParseOption {
 }
 unsafe impl ::windows::core::Abi for UTimeZoneFormatParseOption {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UTimeZoneFormatParseOption {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -16864,6 +17068,7 @@ impl ::core::default::Default for UTimeZoneFormatStyle {
 }
 unsafe impl ::windows::core::Abi for UTimeZoneFormatStyle {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UTimeZoneFormatStyle {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -16893,6 +17098,7 @@ impl ::core::default::Default for UTimeZoneFormatTimeType {
 }
 unsafe impl ::windows::core::Abi for UTimeZoneFormatTimeType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UTimeZoneFormatTimeType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -16932,6 +17138,7 @@ impl ::core::default::Default for UTimeZoneNameType {
 }
 unsafe impl ::windows::core::Abi for UTimeZoneNameType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UTimeZoneNameType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -16963,6 +17170,7 @@ impl ::core::default::Default for UTimeZoneTransitionType {
 }
 unsafe impl ::windows::core::Abi for UTimeZoneTransitionType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UTimeZoneTransitionType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -17046,6 +17254,7 @@ impl ::core::default::Default for UTraceFunctionNumber {
 }
 unsafe impl ::windows::core::Abi for UTraceFunctionNumber {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UTraceFunctionNumber {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -17081,6 +17290,7 @@ impl ::core::default::Default for UTraceLevel {
 }
 unsafe impl ::windows::core::Abi for UTraceLevel {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UTraceLevel {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -17108,6 +17318,7 @@ impl ::core::default::Default for UTransDirection {
 }
 unsafe impl ::windows::core::Abi for UTransDirection {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UTransDirection {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -17135,6 +17346,7 @@ impl ::core::fmt::Debug for UTransPosition {
 }
 unsafe impl ::windows::core::Abi for UTransPosition {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for UTransPosition {
     fn eq(&self, other: &Self) -> bool {
@@ -17172,6 +17384,7 @@ impl ::core::default::Default for UVerticalOrientation {
 }
 unsafe impl ::windows::core::Abi for UVerticalOrientation {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UVerticalOrientation {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -17215,6 +17428,7 @@ impl ::core::default::Default for UWordBreak {
 }
 unsafe impl ::windows::core::Abi for UWordBreak {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UWordBreak {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -17284,6 +17498,7 @@ impl ::core::default::Default for UWordBreakValues {
 }
 unsafe impl ::windows::core::Abi for UWordBreakValues {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for UWordBreakValues {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -17624,6 +17839,7 @@ impl ::core::default::Default for WORDLIST_TYPE {
 }
 unsafe impl ::windows::core::Abi for WORDLIST_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WORDLIST_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -17831,6 +18047,7 @@ impl ::core::fmt::Debug for opentype_feature_record {
 }
 unsafe impl ::windows::core::Abi for opentype_feature_record {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for opentype_feature_record {
     fn eq(&self, other: &Self) -> bool {
@@ -17861,6 +18078,7 @@ impl ::core::fmt::Debug for script_charprop {
 }
 unsafe impl ::windows::core::Abi for script_charprop {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for script_charprop {
     fn eq(&self, other: &Self) -> bool {
@@ -17892,6 +18110,7 @@ impl ::core::fmt::Debug for script_glyphprop {
 }
 unsafe impl ::windows::core::Abi for script_glyphprop {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for script_glyphprop {
     fn eq(&self, other: &Self) -> bool {
@@ -17935,6 +18154,7 @@ impl ::core::default::Default for tagMLCONVCHARF {
 }
 unsafe impl ::windows::core::Abi for tagMLCONVCHARF {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for tagMLCONVCHARF {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -17974,6 +18194,7 @@ impl ::core::default::Default for tagMLCPF {
 }
 unsafe impl ::windows::core::Abi for tagMLCPF {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for tagMLCPF {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -17999,6 +18220,7 @@ impl ::core::fmt::Debug for tagSCRIPFONTINFO {
 }
 unsafe impl ::windows::core::Abi for tagSCRIPFONTINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for tagSCRIPFONTINFO {
     fn eq(&self, other: &Self) -> bool {
@@ -18030,6 +18252,7 @@ impl ::core::fmt::Debug for textrange_properties {
 }
 unsafe impl ::windows::core::Abi for textrange_properties {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for textrange_properties {
     fn eq(&self, other: &Self) -> bool {

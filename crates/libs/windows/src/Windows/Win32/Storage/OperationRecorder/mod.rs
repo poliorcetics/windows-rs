@@ -19,6 +19,7 @@ impl ::core::fmt::Debug for OPERATION_END_PARAMETERS {
 }
 unsafe impl ::windows::core::Abi for OPERATION_END_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for OPERATION_END_PARAMETERS {
     fn eq(&self, other: &Self) -> bool {
@@ -50,6 +51,7 @@ impl ::core::default::Default for OPERATION_END_PARAMETERS_FLAGS {
 }
 unsafe impl ::windows::core::Abi for OPERATION_END_PARAMETERS_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for OPERATION_END_PARAMETERS_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -103,6 +105,7 @@ impl ::core::default::Default for OPERATION_START_FLAGS {
 }
 unsafe impl ::windows::core::Abi for OPERATION_START_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for OPERATION_START_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -157,6 +160,7 @@ impl ::core::fmt::Debug for OPERATION_START_PARAMETERS {
 }
 unsafe impl ::windows::core::Abi for OPERATION_START_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for OPERATION_START_PARAMETERS {
     fn eq(&self, other: &Self) -> bool {

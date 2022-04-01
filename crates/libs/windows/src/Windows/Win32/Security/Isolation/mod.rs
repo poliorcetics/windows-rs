@@ -110,6 +110,11 @@ pub unsafe fn GetAppContainerRegistryLocation(desiredaccess: u32) -> ::windows::
 #[doc = "*Required features: `\"Win32_Security_Isolation\"`*"]
 #[repr(transparent)]
 pub struct IIsolatedAppLauncher(::windows::core::IUnknown);
+impl ::core::clone::Clone for IIsolatedAppLauncher {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IIsolatedAppLauncher {
     #[doc = "*Required features: `\"Win32_Security_Isolation\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -135,11 +140,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IIsolated
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IIsolatedAppLauncher {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IIsolatedAppLauncher {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IIsolatedAppLauncher {
@@ -239,6 +239,7 @@ impl ::core::fmt::Debug for IsolatedAppLauncherTelemetryParameters {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for IsolatedAppLauncherTelemetryParameters {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for IsolatedAppLauncherTelemetryParameters {

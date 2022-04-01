@@ -2,6 +2,11 @@
 #[doc = "*Required features: `\"Win32_UI_Notifications\"`*"]
 #[repr(transparent)]
 pub struct INotificationActivationCallback(::windows::core::IUnknown);
+impl ::core::clone::Clone for INotificationActivationCallback {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl INotificationActivationCallback {
     #[doc = "*Required features: `\"Win32_UI_Notifications\"`*"]
     pub unsafe fn Activate<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param1: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, appusermodelid: Param0, invokedargs: Param1, data: &[NOTIFICATION_USER_INPUT_DATA]) -> ::windows::core::Result<()> {
@@ -26,11 +31,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for INotifica
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a INotificationActivationCallback {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for INotificationActivationCallback {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for INotificationActivationCallback {
@@ -73,6 +73,7 @@ impl ::core::fmt::Debug for NOTIFICATION_USER_INPUT_DATA {
 }
 unsafe impl ::windows::core::Abi for NOTIFICATION_USER_INPUT_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for NOTIFICATION_USER_INPUT_DATA {
     fn eq(&self, other: &Self) -> bool {

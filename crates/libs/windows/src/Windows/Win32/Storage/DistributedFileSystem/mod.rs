@@ -25,6 +25,7 @@ impl ::core::fmt::Debug for DFS_GET_PKT_ENTRY_STATE_ARG {
 }
 unsafe impl ::windows::core::Abi for DFS_GET_PKT_ENTRY_STATE_ARG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DFS_GET_PKT_ENTRY_STATE_ARG {
     fn eq(&self, other: &Self) -> bool {
@@ -55,6 +56,7 @@ impl ::core::fmt::Debug for DFS_INFO_1 {
 }
 unsafe impl ::windows::core::Abi for DFS_INFO_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DFS_INFO_1 {
     fn eq(&self, other: &Self) -> bool {
@@ -85,6 +87,7 @@ impl ::core::fmt::Debug for DFS_INFO_100 {
 }
 unsafe impl ::windows::core::Abi for DFS_INFO_100 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DFS_INFO_100 {
     fn eq(&self, other: &Self) -> bool {
@@ -115,6 +118,7 @@ impl ::core::fmt::Debug for DFS_INFO_101 {
 }
 unsafe impl ::windows::core::Abi for DFS_INFO_101 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DFS_INFO_101 {
     fn eq(&self, other: &Self) -> bool {
@@ -145,6 +149,7 @@ impl ::core::fmt::Debug for DFS_INFO_102 {
 }
 unsafe impl ::windows::core::Abi for DFS_INFO_102 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DFS_INFO_102 {
     fn eq(&self, other: &Self) -> bool {
@@ -176,6 +181,7 @@ impl ::core::fmt::Debug for DFS_INFO_103 {
 }
 unsafe impl ::windows::core::Abi for DFS_INFO_103 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DFS_INFO_103 {
     fn eq(&self, other: &Self) -> bool {
@@ -206,6 +212,7 @@ impl ::core::fmt::Debug for DFS_INFO_104 {
 }
 unsafe impl ::windows::core::Abi for DFS_INFO_104 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DFS_INFO_104 {
     fn eq(&self, other: &Self) -> bool {
@@ -240,6 +247,7 @@ impl ::core::fmt::Debug for DFS_INFO_105 {
 }
 unsafe impl ::windows::core::Abi for DFS_INFO_105 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DFS_INFO_105 {
     fn eq(&self, other: &Self) -> bool {
@@ -271,6 +279,7 @@ impl ::core::fmt::Debug for DFS_INFO_106 {
 }
 unsafe impl ::windows::core::Abi for DFS_INFO_106 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DFS_INFO_106 {
     fn eq(&self, other: &Self) -> bool {
@@ -312,6 +321,7 @@ impl ::core::fmt::Debug for DFS_INFO_107 {
 #[cfg(feature = "Win32_Security")]
 unsafe impl ::windows::core::Abi for DFS_INFO_107 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Security")]
 impl ::core::cmp::PartialEq for DFS_INFO_107 {
@@ -351,6 +361,7 @@ impl ::core::fmt::Debug for DFS_INFO_150 {
 #[cfg(feature = "Win32_Security")]
 unsafe impl ::windows::core::Abi for DFS_INFO_150 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Security")]
 impl ::core::cmp::PartialEq for DFS_INFO_150 {
@@ -389,6 +400,7 @@ impl ::core::fmt::Debug for DFS_INFO_1_32 {
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 unsafe impl ::windows::core::Abi for DFS_INFO_1_32 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 impl ::core::cmp::PartialEq for DFS_INFO_1_32 {
@@ -425,6 +437,7 @@ impl ::core::fmt::Debug for DFS_INFO_2 {
 }
 unsafe impl ::windows::core::Abi for DFS_INFO_2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DFS_INFO_2 {
     fn eq(&self, other: &Self) -> bool {
@@ -455,6 +468,7 @@ impl ::core::fmt::Debug for DFS_INFO_200 {
 }
 unsafe impl ::windows::core::Abi for DFS_INFO_200 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DFS_INFO_200 {
     fn eq(&self, other: &Self) -> bool {
@@ -493,6 +507,7 @@ impl ::core::fmt::Debug for DFS_INFO_2_32 {
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 unsafe impl ::windows::core::Abi for DFS_INFO_2_32 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 impl ::core::cmp::PartialEq for DFS_INFO_2_32 {
@@ -530,6 +545,7 @@ impl ::core::fmt::Debug for DFS_INFO_3 {
 }
 unsafe impl ::windows::core::Abi for DFS_INFO_3 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DFS_INFO_3 {
     fn eq(&self, other: &Self) -> bool {
@@ -561,6 +577,7 @@ impl ::core::fmt::Debug for DFS_INFO_300 {
 }
 unsafe impl ::windows::core::Abi for DFS_INFO_300 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DFS_INFO_300 {
     fn eq(&self, other: &Self) -> bool {
@@ -600,6 +617,7 @@ impl ::core::fmt::Debug for DFS_INFO_3_32 {
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 unsafe impl ::windows::core::Abi for DFS_INFO_3_32 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 impl ::core::cmp::PartialEq for DFS_INFO_3_32 {
@@ -639,6 +657,7 @@ impl ::core::fmt::Debug for DFS_INFO_4 {
 }
 unsafe impl ::windows::core::Abi for DFS_INFO_4 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DFS_INFO_4 {
     fn eq(&self, other: &Self) -> bool {
@@ -680,6 +699,7 @@ impl ::core::fmt::Debug for DFS_INFO_4_32 {
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 unsafe impl ::windows::core::Abi for DFS_INFO_4_32 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 impl ::core::cmp::PartialEq for DFS_INFO_4_32 {
@@ -720,6 +740,7 @@ impl ::core::fmt::Debug for DFS_INFO_5 {
 }
 unsafe impl ::windows::core::Abi for DFS_INFO_5 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DFS_INFO_5 {
     fn eq(&self, other: &Self) -> bool {
@@ -752,6 +773,7 @@ impl ::core::fmt::Debug for DFS_INFO_50 {
 }
 unsafe impl ::windows::core::Abi for DFS_INFO_50 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DFS_INFO_50 {
     fn eq(&self, other: &Self) -> bool {
@@ -790,6 +812,7 @@ impl ::core::fmt::Debug for DFS_INFO_6 {
 }
 unsafe impl ::windows::core::Abi for DFS_INFO_6 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DFS_INFO_6 {
     fn eq(&self, other: &Self) -> bool {
@@ -820,6 +843,7 @@ impl ::core::fmt::Debug for DFS_INFO_7 {
 }
 unsafe impl ::windows::core::Abi for DFS_INFO_7 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DFS_INFO_7 {
     fn eq(&self, other: &Self) -> bool {
@@ -864,6 +888,7 @@ impl ::core::fmt::Debug for DFS_INFO_8 {
 #[cfg(feature = "Win32_Security")]
 unsafe impl ::windows::core::Abi for DFS_INFO_8 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Security")]
 impl ::core::cmp::PartialEq for DFS_INFO_8 {
@@ -912,6 +937,7 @@ impl ::core::fmt::Debug for DFS_INFO_9 {
 #[cfg(feature = "Win32_Security")]
 unsafe impl ::windows::core::Abi for DFS_INFO_9 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Security")]
 impl ::core::cmp::PartialEq for DFS_INFO_9 {
@@ -952,6 +978,7 @@ impl ::core::default::Default for DFS_NAMESPACE_VERSION_ORIGIN {
 }
 unsafe impl ::windows::core::Abi for DFS_NAMESPACE_VERSION_ORIGIN {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DFS_NAMESPACE_VERSION_ORIGIN {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -991,6 +1018,7 @@ impl ::core::fmt::Debug for DFS_SITELIST_INFO {
 }
 unsafe impl ::windows::core::Abi for DFS_SITELIST_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DFS_SITELIST_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -1022,6 +1050,7 @@ impl ::core::fmt::Debug for DFS_SITENAME_INFO {
 }
 unsafe impl ::windows::core::Abi for DFS_SITENAME_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DFS_SITENAME_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -1058,6 +1087,7 @@ impl ::core::fmt::Debug for DFS_STORAGE_INFO {
 }
 unsafe impl ::windows::core::Abi for DFS_STORAGE_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DFS_STORAGE_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -1095,6 +1125,7 @@ impl ::core::fmt::Debug for DFS_STORAGE_INFO_0_32 {
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 unsafe impl ::windows::core::Abi for DFS_STORAGE_INFO_0_32 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 impl ::core::cmp::PartialEq for DFS_STORAGE_INFO_0_32 {
@@ -1131,6 +1162,7 @@ impl ::core::fmt::Debug for DFS_STORAGE_INFO_1 {
 }
 unsafe impl ::windows::core::Abi for DFS_STORAGE_INFO_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DFS_STORAGE_INFO_1 {
     fn eq(&self, other: &Self) -> bool {
@@ -1174,6 +1206,7 @@ impl ::core::fmt::Debug for DFS_SUPPORTED_NAMESPACE_VERSION_INFO {
 }
 unsafe impl ::windows::core::Abi for DFS_SUPPORTED_NAMESPACE_VERSION_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DFS_SUPPORTED_NAMESPACE_VERSION_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -1206,6 +1239,7 @@ impl ::core::fmt::Debug for DFS_TARGET_PRIORITY {
 }
 unsafe impl ::windows::core::Abi for DFS_TARGET_PRIORITY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DFS_TARGET_PRIORITY {
     fn eq(&self, other: &Self) -> bool {
@@ -1247,6 +1281,7 @@ impl ::core::default::Default for DFS_TARGET_PRIORITY_CLASS {
 }
 unsafe impl ::windows::core::Abi for DFS_TARGET_PRIORITY_CLASS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DFS_TARGET_PRIORITY_CLASS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

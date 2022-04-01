@@ -22,6 +22,7 @@ impl ::core::default::Default for DRMATTESTTYPE {
 }
 unsafe impl ::windows::core::Abi for DRMATTESTTYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DRMATTESTTYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -167,6 +168,7 @@ impl ::core::fmt::Debug for DRMBOUNDLICENSEPARAMS {
 }
 unsafe impl ::windows::core::Abi for DRMBOUNDLICENSEPARAMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DRMBOUNDLICENSEPARAMS {
     fn eq(&self, other: &Self) -> bool {
@@ -568,6 +570,7 @@ impl ::core::default::Default for DRMENCODINGTYPE {
 }
 unsafe impl ::windows::core::Abi for DRMENCODINGTYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DRMENCODINGTYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -640,6 +643,7 @@ impl ::core::default::Default for DRMGLOBALOPTIONS {
 }
 unsafe impl ::windows::core::Abi for DRMGLOBALOPTIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DRMGLOBALOPTIONS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1157,6 +1161,7 @@ impl ::core::fmt::Debug for DRMID {
 }
 unsafe impl ::windows::core::Abi for DRMID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DRMID {
     fn eq(&self, other: &Self) -> bool {
@@ -1325,6 +1330,7 @@ impl ::core::default::Default for DRMSECURITYPROVIDERTYPE {
 }
 unsafe impl ::windows::core::Abi for DRMSECURITYPROVIDERTYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DRMSECURITYPROVIDERTYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1352,6 +1358,7 @@ impl ::core::default::Default for DRMSPECTYPE {
 }
 unsafe impl ::windows::core::Abi for DRMSPECTYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DRMSPECTYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1481,6 +1488,7 @@ impl ::core::default::Default for DRMTIMETYPE {
 }
 unsafe impl ::windows::core::Abi for DRMTIMETYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DRMTIMETYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1535,6 +1543,7 @@ impl ::core::fmt::Debug for DRM_ACTSERV_INFO {
 }
 unsafe impl ::windows::core::Abi for DRM_ACTSERV_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DRM_ACTSERV_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -1591,6 +1600,7 @@ impl ::core::fmt::Debug for DRM_CLIENT_VERSION_INFO {
 }
 unsafe impl ::windows::core::Abi for DRM_CLIENT_VERSION_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DRM_CLIENT_VERSION_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -1630,6 +1640,7 @@ impl ::core::default::Default for DRM_DISTRIBUTION_POINT_INFO {
 }
 unsafe impl ::windows::core::Abi for DRM_DISTRIBUTION_POINT_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DRM_DISTRIBUTION_POINT_INFO {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1691,6 +1702,7 @@ impl ::core::fmt::Debug for DRM_LICENSE_ACQ_DATA {
 }
 unsafe impl ::windows::core::Abi for DRM_LICENSE_ACQ_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DRM_LICENSE_ACQ_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -1768,6 +1780,7 @@ impl ::core::default::Default for DRM_STATUS_MSG {
 }
 unsafe impl ::windows::core::Abi for DRM_STATUS_MSG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DRM_STATUS_MSG {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1799,6 +1812,7 @@ impl ::core::default::Default for DRM_USAGEPOLICY_TYPE {
 }
 unsafe impl ::windows::core::Abi for DRM_USAGEPOLICY_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DRM_USAGEPOLICY_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

@@ -2,6 +2,11 @@
 #[doc = "*Required features: `\"Win32_System_WinRT_Printing\"`*"]
 #[repr(transparent)]
 pub struct IPrintManagerInterop(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrintManagerInterop {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPrintManagerInterop {
     #[doc = "*Required features: `\"Win32_System_WinRT_Printing\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -56,11 +61,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPrintManagerInterop {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPrintManagerInterop {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -92,6 +92,11 @@ pub struct IPrintManagerInterop_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT_Printing\"`*"]
 #[repr(transparent)]
 pub struct IPrintWorkflowConfigurationNative(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrintWorkflowConfigurationNative {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPrintWorkflowConfigurationNative {
     #[doc = "*Required features: `\"Win32_System_WinRT_Printing\"`, `\"Win32_Graphics_Printing\"`, `\"Win32_System_Com\"`*"]
     #[cfg(all(feature = "Win32_Graphics_Printing", feature = "Win32_System_Com"))]
@@ -132,11 +137,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPrin
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPrintWorkflowConfigurationNative {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPrintWorkflowConfigurationNative {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -172,6 +172,11 @@ pub struct IPrintWorkflowConfigurationNative_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT_Printing\"`*"]
 #[repr(transparent)]
 pub struct IPrintWorkflowObjectModelSourceFileContentNative(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrintWorkflowObjectModelSourceFileContentNative {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPrintWorkflowObjectModelSourceFileContentNative {
     #[doc = "*Required features: `\"Win32_System_WinRT_Printing\"`*"]
     pub unsafe fn StartXpsOMGeneration<'a, Param0: ::windows::core::IntoParam<'a, IPrintWorkflowXpsReceiver>>(&self, receiver: Param0) -> ::windows::core::Result<()> {
@@ -204,11 +209,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPrin
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPrintWorkflowObjectModelSourceFileContentNative {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPrintWorkflowObjectModelSourceFileContentNative {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -237,6 +237,11 @@ pub struct IPrintWorkflowObjectModelSourceFileContentNative_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT_Printing\"`*"]
 #[repr(transparent)]
 pub struct IPrintWorkflowXpsObjectModelTargetPackageNative(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrintWorkflowXpsObjectModelTargetPackageNative {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPrintWorkflowXpsObjectModelTargetPackageNative {
     #[doc = "*Required features: `\"Win32_System_WinRT_Printing\"`, `\"Win32_Storage_Xps\"`*"]
     #[cfg(feature = "Win32_Storage_Xps")]
@@ -263,11 +268,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IPrintWor
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPrintWorkflowXpsObjectModelTargetPackageNative {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IPrintWorkflowXpsObjectModelTargetPackageNative {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IPrintWorkflowXpsObjectModelTargetPackageNative {
@@ -297,6 +297,11 @@ pub struct IPrintWorkflowXpsObjectModelTargetPackageNative_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT_Printing\"`*"]
 #[repr(transparent)]
 pub struct IPrintWorkflowXpsReceiver(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrintWorkflowXpsReceiver {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPrintWorkflowXpsReceiver {
     #[doc = "*Required features: `\"Win32_System_WinRT_Printing\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -342,11 +347,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPrin
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPrintWorkflowXpsReceiver {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPrintWorkflowXpsReceiver {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -384,6 +384,11 @@ pub struct IPrintWorkflowXpsReceiver_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT_Printing\"`*"]
 #[repr(transparent)]
 pub struct IPrintWorkflowXpsReceiver2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrintWorkflowXpsReceiver2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPrintWorkflowXpsReceiver2 {
     #[doc = "*Required features: `\"Win32_System_WinRT_Printing\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -453,11 +458,6 @@ impl<'a> ::windows::core::IntoParam<'a, IPrintWorkflowXpsReceiver> for &'a IPrin
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPrintWorkflowXpsReceiver2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPrintWorkflowXpsReceiver2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -482,6 +482,11 @@ pub struct IPrintWorkflowXpsReceiver2_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT_Printing\"`*"]
 #[repr(transparent)]
 pub struct IPrinting3DManagerInterop(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPrinting3DManagerInterop {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPrinting3DManagerInterop {
     #[doc = "*Required features: `\"Win32_System_WinRT_Printing\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -534,11 +539,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for IPrin
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a IPrinting3DManagerInterop {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IInspectable> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IPrinting3DManagerInterop {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IPrinting3DManagerInterop {

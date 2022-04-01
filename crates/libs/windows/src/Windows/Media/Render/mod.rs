@@ -30,6 +30,7 @@ impl ::core::default::Default for AudioRenderCategory {
 }
 unsafe impl ::windows::core::Abi for AudioRenderCategory {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AudioRenderCategory {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -38,7 +39,6 @@ impl ::core::fmt::Debug for AudioRenderCategory {
 }
 unsafe impl ::windows::core::RuntimeType for AudioRenderCategory {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Media.Render.AudioRenderCategory;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }

@@ -21,6 +21,7 @@ impl ::core::default::Default for AdrClientDisplayFlags {
 }
 unsafe impl ::windows::core::Abi for AdrClientDisplayFlags {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AdrClientDisplayFlags {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -50,6 +51,7 @@ impl ::core::default::Default for AdrClientErrorType {
 }
 unsafe impl ::windows::core::Abi for AdrClientErrorType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AdrClientErrorType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -81,6 +83,7 @@ impl ::core::default::Default for AdrClientFlags {
 }
 unsafe impl ::windows::core::Abi for AdrClientFlags {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AdrClientFlags {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -114,6 +117,7 @@ impl ::core::default::Default for AdrEmailFlags {
 }
 unsafe impl ::windows::core::Abi for AdrEmailFlags {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AdrEmailFlags {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -124,6 +128,12 @@ impl ::core::fmt::Debug for AdrEmailFlags {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct DIFsrmClassificationEvents(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for DIFsrmClassificationEvents {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl DIFsrmClassificationEvents {}
 #[cfg(feature = "Win32_System_Com")]
@@ -172,12 +182,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
 impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> for &'a DIFsrmClassificationEvents {
     fn into_param(self) -> ::windows::core::Param<'a, super::super::System::Com::IDispatch> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for DIFsrmClassificationEvents {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 #[cfg(feature = "Win32_System_Com")]
@@ -523,6 +527,7 @@ impl ::core::default::Default for FsrmAccountType {
 }
 unsafe impl ::windows::core::Abi for FsrmAccountType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FsrmAccountType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -556,6 +561,7 @@ impl ::core::default::Default for FsrmActionType {
 }
 unsafe impl ::windows::core::Abi for FsrmActionType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FsrmActionType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -589,6 +595,7 @@ impl ::core::default::Default for FsrmClassificationLoggingFlags {
 }
 unsafe impl ::windows::core::Abi for FsrmClassificationLoggingFlags {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FsrmClassificationLoggingFlags {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -621,6 +628,7 @@ impl ::core::default::Default for FsrmCollectionState {
 }
 unsafe impl ::windows::core::Abi for FsrmCollectionState {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FsrmCollectionState {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -648,6 +656,7 @@ impl ::core::default::Default for FsrmCommitOptions {
 }
 unsafe impl ::windows::core::Abi for FsrmCommitOptions {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FsrmCommitOptions {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -683,6 +692,7 @@ impl ::core::default::Default for FsrmEnumOptions {
 }
 unsafe impl ::windows::core::Abi for FsrmEnumOptions {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FsrmEnumOptions {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -714,6 +724,7 @@ impl ::core::default::Default for FsrmEventType {
 }
 unsafe impl ::windows::core::Abi for FsrmEventType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FsrmEventType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -745,6 +756,7 @@ impl ::core::default::Default for FsrmExecutionOption {
 }
 unsafe impl ::windows::core::Abi for FsrmExecutionOption {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FsrmExecutionOption {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -773,6 +785,7 @@ impl ::core::default::Default for FsrmFileConditionType {
 }
 unsafe impl ::windows::core::Abi for FsrmFileConditionType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FsrmFileConditionType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -806,6 +819,7 @@ impl ::core::default::Default for FsrmFileManagementLoggingFlags {
 }
 unsafe impl ::windows::core::Abi for FsrmFileManagementLoggingFlags {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FsrmFileManagementLoggingFlags {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -837,6 +851,7 @@ impl ::core::default::Default for FsrmFileManagementType {
 }
 unsafe impl ::windows::core::Abi for FsrmFileManagementType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FsrmFileManagementType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -862,6 +877,7 @@ impl ::core::default::Default for FsrmFileScreenFlags {
 }
 unsafe impl ::windows::core::Abi for FsrmFileScreenFlags {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FsrmFileScreenFlags {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -893,6 +909,7 @@ impl ::core::default::Default for FsrmFileStreamingInterfaceType {
 }
 unsafe impl ::windows::core::Abi for FsrmFileStreamingInterfaceType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FsrmFileStreamingInterfaceType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -922,6 +939,7 @@ impl ::core::default::Default for FsrmFileStreamingMode {
 }
 unsafe impl ::windows::core::Abi for FsrmFileStreamingMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FsrmFileStreamingMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -957,6 +975,7 @@ impl ::core::default::Default for FsrmFileSystemPropertyId {
 }
 unsafe impl ::windows::core::Abi for FsrmFileSystemPropertyId {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FsrmFileSystemPropertyId {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -990,6 +1009,7 @@ impl ::core::default::Default for FsrmGetFilePropertyOptions {
 }
 unsafe impl ::windows::core::Abi for FsrmGetFilePropertyOptions {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FsrmGetFilePropertyOptions {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1033,6 +1053,7 @@ impl ::core::default::Default for FsrmPipelineModuleType {
 }
 unsafe impl ::windows::core::Abi for FsrmPipelineModuleType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FsrmPipelineModuleType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1060,6 +1081,7 @@ impl ::core::default::Default for FsrmPropertyBagField {
 }
 unsafe impl ::windows::core::Abi for FsrmPropertyBagField {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FsrmPropertyBagField {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1091,6 +1113,7 @@ impl ::core::default::Default for FsrmPropertyBagFlags {
 }
 unsafe impl ::windows::core::Abi for FsrmPropertyBagFlags {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FsrmPropertyBagFlags {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1142,6 +1165,7 @@ impl ::core::default::Default for FsrmPropertyConditionType {
 }
 unsafe impl ::windows::core::Abi for FsrmPropertyConditionType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FsrmPropertyConditionType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1169,6 +1193,7 @@ impl ::core::default::Default for FsrmPropertyDefinitionAppliesTo {
 }
 unsafe impl ::windows::core::Abi for FsrmPropertyDefinitionAppliesTo {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FsrmPropertyDefinitionAppliesTo {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1198,6 +1223,7 @@ impl ::core::default::Default for FsrmPropertyDefinitionFlags {
 }
 unsafe impl ::windows::core::Abi for FsrmPropertyDefinitionFlags {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FsrmPropertyDefinitionFlags {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1239,6 +1265,7 @@ impl ::core::default::Default for FsrmPropertyDefinitionType {
 }
 unsafe impl ::windows::core::Abi for FsrmPropertyDefinitionType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FsrmPropertyDefinitionType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1302,6 +1329,7 @@ impl ::core::default::Default for FsrmPropertyFlags {
 }
 unsafe impl ::windows::core::Abi for FsrmPropertyFlags {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FsrmPropertyFlags {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1331,6 +1359,7 @@ impl ::core::default::Default for FsrmPropertyValueType {
 }
 unsafe impl ::windows::core::Abi for FsrmPropertyValueType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FsrmPropertyValueType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1362,6 +1391,7 @@ impl ::core::default::Default for FsrmQuotaFlags {
 }
 unsafe impl ::windows::core::Abi for FsrmQuotaFlags {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FsrmQuotaFlags {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1403,6 +1433,7 @@ impl ::core::default::Default for FsrmReportFilter {
 }
 unsafe impl ::windows::core::Abi for FsrmReportFilter {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FsrmReportFilter {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1438,6 +1469,7 @@ impl ::core::default::Default for FsrmReportFormat {
 }
 unsafe impl ::windows::core::Abi for FsrmReportFormat {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FsrmReportFormat {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1469,6 +1501,7 @@ impl ::core::default::Default for FsrmReportGenerationContext {
 }
 unsafe impl ::windows::core::Abi for FsrmReportGenerationContext {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FsrmReportGenerationContext {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1516,6 +1549,7 @@ impl ::core::default::Default for FsrmReportLimit {
 }
 unsafe impl ::windows::core::Abi for FsrmReportLimit {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FsrmReportLimit {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1548,6 +1582,7 @@ impl ::core::default::Default for FsrmReportRunningStatus {
 }
 unsafe impl ::windows::core::Abi for FsrmReportRunningStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FsrmReportRunningStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1600,6 +1635,7 @@ impl ::core::default::Default for FsrmReportType {
 }
 unsafe impl ::windows::core::Abi for FsrmReportType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FsrmReportType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1631,6 +1667,7 @@ impl ::core::default::Default for FsrmRuleFlags {
 }
 unsafe impl ::windows::core::Abi for FsrmRuleFlags {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FsrmRuleFlags {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1660,6 +1697,7 @@ impl ::core::default::Default for FsrmRuleType {
 }
 unsafe impl ::windows::core::Abi for FsrmRuleType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FsrmRuleType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1694,6 +1732,7 @@ impl ::core::default::Default for FsrmStorageModuleCaps {
 }
 unsafe impl ::windows::core::Abi for FsrmStorageModuleCaps {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FsrmStorageModuleCaps {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1727,6 +1766,7 @@ impl ::core::default::Default for FsrmStorageModuleType {
 }
 unsafe impl ::windows::core::Abi for FsrmStorageModuleType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FsrmStorageModuleType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1754,6 +1794,7 @@ impl ::core::default::Default for FsrmTemplateApplyOptions {
 }
 unsafe impl ::windows::core::Abi for FsrmTemplateApplyOptions {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FsrmTemplateApplyOptions {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1764,6 +1805,12 @@ impl ::core::fmt::Debug for FsrmTemplateApplyOptions {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFsrmAccessDeniedRemediationClient(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFsrmAccessDeniedRemediationClient {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmAccessDeniedRemediationClient {
     #[doc = "*Required features: `\"Win32_Storage_FileServerResourceManager\"`, `\"Win32_Foundation\"`*"]
@@ -1822,12 +1869,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFsrmAccessDeniedRemediationClient {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFsrmAccessDeniedRemediationClient {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1860,6 +1901,12 @@ pub struct IFsrmAccessDeniedRemediationClient_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFsrmAction(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFsrmAction {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmAction {
     #[doc = "*Required features: `\"Win32_Storage_FileServerResourceManager\"`*"]
@@ -1935,12 +1982,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFsrmAction {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFsrmAction {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1974,6 +2015,12 @@ pub struct IFsrmAction_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFsrmActionCommand(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFsrmActionCommand {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmActionCommand {
     #[doc = "*Required features: `\"Win32_Storage_FileServerResourceManager\"`*"]
@@ -2142,12 +2189,6 @@ impl<'a> ::windows::core::IntoParam<'a, IFsrmAction> for &'a IFsrmActionCommand 
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFsrmActionCommand {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFsrmActionCommand {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2208,6 +2249,12 @@ pub struct IFsrmActionCommand_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFsrmActionEmail(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFsrmActionEmail {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmActionEmail {
     #[doc = "*Required features: `\"Win32_Storage_FileServerResourceManager\"`*"]
@@ -2384,12 +2431,6 @@ impl<'a> ::windows::core::IntoParam<'a, IFsrmAction> for &'a IFsrmActionEmail {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFsrmActionEmail {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFsrmActionEmail {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2474,6 +2515,12 @@ pub struct IFsrmActionEmail_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFsrmActionEmail2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFsrmActionEmail2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmActionEmail2 {
     #[doc = "*Required features: `\"Win32_Storage_FileServerResourceManager\"`*"]
@@ -2683,12 +2730,6 @@ impl<'a> ::windows::core::IntoParam<'a, IFsrmActionEmail> for &'a IFsrmActionEma
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFsrmActionEmail2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFsrmActionEmail2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2719,6 +2760,12 @@ pub struct IFsrmActionEmail2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFsrmActionEventLog(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFsrmActionEventLog {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmActionEventLog {
     #[doc = "*Required features: `\"Win32_Storage_FileServerResourceManager\"`*"]
@@ -2838,12 +2885,6 @@ impl<'a> ::windows::core::IntoParam<'a, IFsrmAction> for &'a IFsrmActionEventLog
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFsrmActionEventLog {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFsrmActionEventLog {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2882,6 +2923,12 @@ pub struct IFsrmActionEventLog_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFsrmActionReport(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFsrmActionReport {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmActionReport {
     #[doc = "*Required features: `\"Win32_Storage_FileServerResourceManager\"`*"]
@@ -3003,12 +3050,6 @@ impl<'a> ::windows::core::IntoParam<'a, IFsrmAction> for &'a IFsrmActionReport {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFsrmActionReport {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFsrmActionReport {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3053,6 +3094,12 @@ pub struct IFsrmActionReport_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFsrmAutoApplyQuota(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFsrmAutoApplyQuota {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmAutoApplyQuota {
     #[doc = "*Required features: `\"Win32_Storage_FileServerResourceManager\"`*"]
@@ -3302,12 +3349,6 @@ impl<'a> ::windows::core::IntoParam<'a, IFsrmQuotaObject> for &'a IFsrmAutoApply
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFsrmAutoApplyQuota {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFsrmAutoApplyQuota {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3348,6 +3389,12 @@ pub struct IFsrmAutoApplyQuota_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFsrmClassificationManager(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFsrmClassificationManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmClassificationManager {
     #[doc = "*Required features: `\"Win32_Storage_FileServerResourceManager\"`, `\"Win32_System_Com\"`*"]
@@ -3547,12 +3594,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFsrmClassificationManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFsrmClassificationManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3668,6 +3709,12 @@ pub struct IFsrmClassificationManager_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFsrmClassificationManager2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFsrmClassificationManager2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmClassificationManager2 {
     #[doc = "*Required features: `\"Win32_Storage_FileServerResourceManager\"`, `\"Win32_System_Com\"`*"]
@@ -3896,12 +3943,6 @@ impl<'a> ::windows::core::IntoParam<'a, IFsrmClassificationManager> for &'a IFsr
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFsrmClassificationManager2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFsrmClassificationManager2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3934,6 +3975,12 @@ pub struct IFsrmClassificationManager2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFsrmClassificationRule(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFsrmClassificationRule {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmClassificationRule {
     #[doc = "*Required features: `\"Win32_Storage_FileServerResourceManager\"`*"]
@@ -4153,12 +4200,6 @@ impl<'a> ::windows::core::IntoParam<'a, IFsrmRule> for &'a IFsrmClassificationRu
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFsrmClassificationRule {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFsrmClassificationRule {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4205,6 +4246,12 @@ pub struct IFsrmClassificationRule_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFsrmClassifierModuleDefinition(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFsrmClassifierModuleDefinition {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmClassifierModuleDefinition {
     #[doc = "*Required features: `\"Win32_Storage_FileServerResourceManager\"`*"]
@@ -4458,12 +4505,6 @@ impl<'a> ::windows::core::IntoParam<'a, IFsrmPipelineModuleDefinition> for &'a I
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFsrmClassifierModuleDefinition {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFsrmClassifierModuleDefinition {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4510,6 +4551,12 @@ pub struct IFsrmClassifierModuleDefinition_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFsrmClassifierModuleImplementation(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFsrmClassifierModuleImplementation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmClassifierModuleImplementation {
     #[doc = "*Required features: `\"Win32_Storage_FileServerResourceManager\"`, `\"Win32_System_Com\"`*"]
@@ -4626,12 +4673,6 @@ impl<'a> ::windows::core::IntoParam<'a, IFsrmPipelineModuleImplementation> for &
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFsrmClassifierModuleImplementation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFsrmClassifierModuleImplementation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4681,6 +4722,12 @@ pub struct IFsrmClassifierModuleImplementation_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFsrmCollection(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFsrmCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmCollection {
     #[doc = "*Required features: `\"Win32_Storage_FileServerResourceManager\"`*"]
@@ -4769,12 +4816,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFsrmCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFsrmCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4816,6 +4857,12 @@ pub struct IFsrmCollection_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFsrmCommittableCollection(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFsrmCommittableCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmCommittableCollection {
     #[doc = "*Required features: `\"Win32_Storage_FileServerResourceManager\"`*"]
@@ -4977,12 +5024,6 @@ impl<'a> ::windows::core::IntoParam<'a, IFsrmMutableCollection> for &'a IFsrmCom
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFsrmCommittableCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFsrmCommittableCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5015,6 +5056,12 @@ pub struct IFsrmCommittableCollection_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFsrmDerivedObjectsResult(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFsrmDerivedObjectsResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmDerivedObjectsResult {
     #[doc = "*Required features: `\"Win32_Storage_FileServerResourceManager\"`, `\"Win32_System_Com\"`*"]
@@ -5079,12 +5126,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFsrmDerivedObjectsResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFsrmDerivedObjectsResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5121,6 +5162,12 @@ pub struct IFsrmDerivedObjectsResult_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFsrmExportImport(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFsrmExportImport {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmExportImport {
     #[doc = "*Required features: `\"Win32_Storage_FileServerResourceManager\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
@@ -5206,12 +5253,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFsrmExportImport {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFsrmExportImport {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5264,6 +5305,12 @@ pub struct IFsrmExportImport_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFsrmFileCondition(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFsrmFileCondition {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmFileCondition {
     #[doc = "*Required features: `\"Win32_Storage_FileServerResourceManager\"`*"]
@@ -5325,12 +5372,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFsrmFileCondition {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFsrmFileCondition {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5361,6 +5402,12 @@ pub struct IFsrmFileCondition_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFsrmFileConditionProperty(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFsrmFileConditionProperty {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmFileConditionProperty {
     #[doc = "*Required features: `\"Win32_Storage_FileServerResourceManager\"`*"]
@@ -5495,12 +5542,6 @@ impl<'a> ::windows::core::IntoParam<'a, IFsrmFileCondition> for &'a IFsrmFileCon
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFsrmFileConditionProperty {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFsrmFileConditionProperty {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5551,6 +5592,12 @@ pub struct IFsrmFileConditionProperty_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFsrmFileGroup(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFsrmFileGroup {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmFileGroup {
     #[doc = "*Required features: `\"Win32_Storage_FileServerResourceManager\"`*"]
@@ -5684,12 +5731,6 @@ impl<'a> ::windows::core::IntoParam<'a, IFsrmObject> for &'a IFsrmFileGroup {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFsrmFileGroup {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFsrmFileGroup {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5742,6 +5783,12 @@ pub struct IFsrmFileGroup_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFsrmFileGroupImported(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFsrmFileGroupImported {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmFileGroupImported {
     #[doc = "*Required features: `\"Win32_Storage_FileServerResourceManager\"`*"]
@@ -5908,12 +5955,6 @@ impl<'a> ::windows::core::IntoParam<'a, IFsrmFileGroup> for &'a IFsrmFileGroupIm
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFsrmFileGroupImported {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFsrmFileGroupImported {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5944,6 +5985,12 @@ pub struct IFsrmFileGroupImported_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFsrmFileGroupManager(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFsrmFileGroupManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmFileGroupManager {
     #[doc = "*Required features: `\"Win32_Storage_FileServerResourceManager\"`, `\"Win32_System_Com\"`*"]
@@ -6026,12 +6073,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFsrmFileGroupManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFsrmFileGroupManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6080,6 +6121,12 @@ pub struct IFsrmFileGroupManager_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFsrmFileManagementJob(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFsrmFileManagementJob {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmFileManagementJob {
     #[doc = "*Required features: `\"Win32_Storage_FileServerResourceManager\"`*"]
@@ -6429,12 +6476,6 @@ impl<'a> ::windows::core::IntoParam<'a, IFsrmObject> for &'a IFsrmFileManagement
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFsrmFileManagementJob {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFsrmFileManagementJob {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6588,6 +6629,12 @@ pub struct IFsrmFileManagementJob_Vtbl {
 #[repr(transparent)]
 pub struct IFsrmFileManagementJobManager(::windows::core::IUnknown);
 #[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFsrmFileManagementJobManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "Win32_System_Com")]
 impl IFsrmFileManagementJobManager {
     #[doc = "*Required features: `\"Win32_Storage_FileServerResourceManager\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -6669,12 +6716,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFsrmFileManagementJobManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFsrmFileManagementJobManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6723,6 +6764,12 @@ pub struct IFsrmFileManagementJobManager_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFsrmFileScreen(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFsrmFileScreen {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmFileScreen {
     #[doc = "*Required features: `\"Win32_Storage_FileServerResourceManager\"`*"]
@@ -6913,12 +6960,6 @@ impl<'a> ::windows::core::IntoParam<'a, IFsrmFileScreenBase> for &'a IFsrmFileSc
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFsrmFileScreen {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFsrmFileScreen {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6968,6 +7009,12 @@ pub struct IFsrmFileScreen_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFsrmFileScreenBase(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFsrmFileScreenBase {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmFileScreenBase {
     #[doc = "*Required features: `\"Win32_Storage_FileServerResourceManager\"`*"]
@@ -7100,12 +7147,6 @@ impl<'a> ::windows::core::IntoParam<'a, IFsrmObject> for &'a IFsrmFileScreenBase
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFsrmFileScreenBase {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFsrmFileScreenBase {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7152,6 +7193,12 @@ pub struct IFsrmFileScreenBase_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFsrmFileScreenException(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFsrmFileScreenException {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmFileScreenException {
     #[doc = "*Required features: `\"Win32_Storage_FileServerResourceManager\"`*"]
@@ -7269,12 +7316,6 @@ impl<'a> ::windows::core::IntoParam<'a, IFsrmObject> for &'a IFsrmFileScreenExce
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFsrmFileScreenException {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFsrmFileScreenException {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7315,6 +7356,12 @@ pub struct IFsrmFileScreenException_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFsrmFileScreenManager(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFsrmFileScreenManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmFileScreenManager {
     #[doc = "*Required features: `\"Win32_Storage_FileServerResourceManager\"`, `\"Win32_System_Com\"`*"]
@@ -7421,12 +7468,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFsrmFileScreenManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFsrmFileScreenManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7491,6 +7532,12 @@ pub struct IFsrmFileScreenManager_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFsrmFileScreenTemplate(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFsrmFileScreenTemplate {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmFileScreenTemplate {
     #[doc = "*Required features: `\"Win32_Storage_FileServerResourceManager\"`*"]
@@ -7669,12 +7716,6 @@ impl<'a> ::windows::core::IntoParam<'a, IFsrmFileScreenBase> for &'a IFsrmFileSc
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFsrmFileScreenTemplate {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFsrmFileScreenTemplate {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7719,6 +7760,12 @@ pub struct IFsrmFileScreenTemplate_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFsrmFileScreenTemplateImported(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFsrmFileScreenTemplateImported {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmFileScreenTemplateImported {
     #[doc = "*Required features: `\"Win32_Storage_FileServerResourceManager\"`*"]
@@ -7930,12 +7977,6 @@ impl<'a> ::windows::core::IntoParam<'a, IFsrmFileScreenTemplate> for &'a IFsrmFi
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFsrmFileScreenTemplateImported {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFsrmFileScreenTemplateImported {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7966,6 +8007,12 @@ pub struct IFsrmFileScreenTemplateImported_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFsrmFileScreenTemplateManager(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFsrmFileScreenTemplateManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmFileScreenTemplateManager {
     #[doc = "*Required features: `\"Win32_Storage_FileServerResourceManager\"`, `\"Win32_System_Com\"`*"]
@@ -8048,12 +8095,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFsrmFileScreenTemplateManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFsrmFileScreenTemplateManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8102,6 +8143,12 @@ pub struct IFsrmFileScreenTemplateManager_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFsrmMutableCollection(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFsrmMutableCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmMutableCollection {
     #[doc = "*Required features: `\"Win32_Storage_FileServerResourceManager\"`*"]
@@ -8233,12 +8280,6 @@ impl<'a> ::windows::core::IntoParam<'a, IFsrmCollection> for &'a IFsrmMutableCol
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFsrmMutableCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFsrmMutableCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8277,6 +8318,12 @@ pub struct IFsrmMutableCollection_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFsrmObject(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFsrmObject {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmObject {
     #[doc = "*Required features: `\"Win32_Storage_FileServerResourceManager\"`*"]
@@ -8353,12 +8400,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFsrmObject {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFsrmObject {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8398,6 +8439,12 @@ pub struct IFsrmObject_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFsrmPathMapper(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFsrmPathMapper {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmPathMapper {
     #[doc = "*Required features: `\"Win32_Storage_FileServerResourceManager\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`*"]
@@ -8456,12 +8503,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFsrmPathMapper {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFsrmPathMapper {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8494,6 +8535,12 @@ pub struct IFsrmPathMapper_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFsrmPipelineModuleConnector(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFsrmPipelineModuleConnector {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmPipelineModuleConnector {
     #[doc = "*Required features: `\"Win32_Storage_FileServerResourceManager\"`, `\"Win32_System_Com\"`*"]
@@ -8574,12 +8621,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFsrmPipelineModuleConnector {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFsrmPipelineModuleConnector {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8625,6 +8666,12 @@ pub struct IFsrmPipelineModuleConnector_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFsrmPipelineModuleDefinition(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFsrmPipelineModuleDefinition {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmPipelineModuleDefinition {
     #[doc = "*Required features: `\"Win32_Storage_FileServerResourceManager\"`*"]
@@ -8823,12 +8870,6 @@ impl<'a> ::windows::core::IntoParam<'a, IFsrmObject> for &'a IFsrmPipelineModule
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFsrmPipelineModuleDefinition {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFsrmPipelineModuleDefinition {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8913,6 +8954,12 @@ pub struct IFsrmPipelineModuleDefinition_Vtbl {
 #[repr(transparent)]
 pub struct IFsrmPipelineModuleImplementation(::windows::core::IUnknown);
 #[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFsrmPipelineModuleImplementation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "Win32_System_Com")]
 impl IFsrmPipelineModuleImplementation {
     #[doc = "*Required features: `\"Win32_Storage_FileServerResourceManager\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -8974,12 +9021,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFsrmPipelineModuleImplementation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFsrmPipelineModuleImplementation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9013,6 +9054,12 @@ pub struct IFsrmPipelineModuleImplementation_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFsrmProperty(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFsrmProperty {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmProperty {
     #[doc = "*Required features: `\"Win32_Storage_FileServerResourceManager\"`, `\"Win32_Foundation\"`*"]
@@ -9088,12 +9135,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFsrmProperty {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFsrmProperty {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9135,6 +9176,12 @@ pub struct IFsrmProperty_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFsrmPropertyBag(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFsrmPropertyBag {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmPropertyBag {
     #[doc = "*Required features: `\"Win32_Storage_FileServerResourceManager\"`, `\"Win32_Foundation\"`*"]
@@ -9308,12 +9355,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFsrmPropertyBag {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFsrmPropertyBag {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9417,6 +9458,12 @@ pub struct IFsrmPropertyBag_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFsrmPropertyBag2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFsrmPropertyBag2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmPropertyBag2 {
     #[doc = "*Required features: `\"Win32_Storage_FileServerResourceManager\"`, `\"Win32_Foundation\"`*"]
@@ -9626,12 +9673,6 @@ impl<'a> ::windows::core::IntoParam<'a, IFsrmPropertyBag> for &'a IFsrmPropertyB
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFsrmPropertyBag2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFsrmPropertyBag2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9668,6 +9709,12 @@ pub struct IFsrmPropertyBag2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFsrmPropertyCondition(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFsrmPropertyCondition {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmPropertyCondition {
     #[doc = "*Required features: `\"Win32_Storage_FileServerResourceManager\"`, `\"Win32_Foundation\"`*"]
@@ -9755,12 +9802,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFsrmPropertyCondition {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFsrmPropertyCondition {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9808,6 +9849,12 @@ pub struct IFsrmPropertyCondition_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFsrmPropertyDefinition(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFsrmPropertyDefinition {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmPropertyDefinition {
     #[doc = "*Required features: `\"Win32_Storage_FileServerResourceManager\"`*"]
@@ -9961,12 +10008,6 @@ impl<'a> ::windows::core::IntoParam<'a, IFsrmObject> for &'a IFsrmPropertyDefini
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFsrmPropertyDefinition {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFsrmPropertyDefinition {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10029,6 +10070,12 @@ pub struct IFsrmPropertyDefinition_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFsrmPropertyDefinition2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFsrmPropertyDefinition2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmPropertyDefinition2 {
     #[doc = "*Required features: `\"Win32_Storage_FileServerResourceManager\"`*"]
@@ -10233,12 +10280,6 @@ impl<'a> ::windows::core::IntoParam<'a, IFsrmPropertyDefinition> for &'a IFsrmPr
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFsrmPropertyDefinition2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFsrmPropertyDefinition2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10281,6 +10322,12 @@ pub struct IFsrmPropertyDefinition2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFsrmPropertyDefinitionValue(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFsrmPropertyDefinitionValue {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmPropertyDefinitionValue {
     #[doc = "*Required features: `\"Win32_Storage_FileServerResourceManager\"`, `\"Win32_Foundation\"`*"]
@@ -10357,12 +10404,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFsrmPropertyDefinitionValue {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFsrmPropertyDefinitionValue {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10407,6 +10448,12 @@ pub struct IFsrmPropertyDefinitionValue_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFsrmQuota(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFsrmQuota {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmQuota {
     #[doc = "*Required features: `\"Win32_Storage_FileServerResourceManager\"`*"]
@@ -10664,12 +10711,6 @@ impl<'a> ::windows::core::IntoParam<'a, IFsrmQuotaObject> for &'a IFsrmQuota {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFsrmQuota {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFsrmQuota {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10709,6 +10750,12 @@ pub struct IFsrmQuota_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFsrmQuotaBase(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFsrmQuotaBase {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmQuotaBase {
     #[doc = "*Required features: `\"Win32_Storage_FileServerResourceManager\"`*"]
@@ -10859,12 +10906,6 @@ impl<'a> ::windows::core::IntoParam<'a, IFsrmObject> for &'a IFsrmQuotaBase {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFsrmQuotaBase {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFsrmQuotaBase {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10918,6 +10959,12 @@ pub struct IFsrmQuotaBase_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFsrmQuotaManager(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFsrmQuotaManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmQuotaManager {
     #[doc = "*Required features: `\"Win32_Storage_FileServerResourceManager\"`, `\"Win32_System_Com\"`*"]
@@ -11041,12 +11088,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFsrmQuotaManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFsrmQuotaManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11123,6 +11164,12 @@ pub struct IFsrmQuotaManager_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFsrmQuotaManagerEx(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFsrmQuotaManagerEx {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmQuotaManagerEx {
     #[doc = "*Required features: `\"Win32_Storage_FileServerResourceManager\"`, `\"Win32_System_Com\"`*"]
@@ -11276,12 +11323,6 @@ impl<'a> ::windows::core::IntoParam<'a, IFsrmQuotaManager> for &'a IFsrmQuotaMan
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFsrmQuotaManagerEx {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFsrmQuotaManagerEx {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11314,6 +11355,12 @@ pub struct IFsrmQuotaManagerEx_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFsrmQuotaObject(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFsrmQuotaObject {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmQuotaObject {
     #[doc = "*Required features: `\"Win32_Storage_FileServerResourceManager\"`*"]
@@ -11522,12 +11569,6 @@ impl<'a> ::windows::core::IntoParam<'a, IFsrmQuotaBase> for &'a IFsrmQuotaObject
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFsrmQuotaObject {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFsrmQuotaObject {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11577,6 +11618,12 @@ pub struct IFsrmQuotaObject_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFsrmQuotaTemplate(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFsrmQuotaTemplate {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmQuotaTemplate {
     #[doc = "*Required features: `\"Win32_Storage_FileServerResourceManager\"`*"]
@@ -11773,12 +11820,6 @@ impl<'a> ::windows::core::IntoParam<'a, IFsrmQuotaBase> for &'a IFsrmQuotaTempla
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFsrmQuotaTemplate {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFsrmQuotaTemplate {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11823,6 +11864,12 @@ pub struct IFsrmQuotaTemplate_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFsrmQuotaTemplateImported(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFsrmQuotaTemplateImported {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmQuotaTemplateImported {
     #[doc = "*Required features: `\"Win32_Storage_FileServerResourceManager\"`*"]
@@ -12052,12 +12099,6 @@ impl<'a> ::windows::core::IntoParam<'a, IFsrmQuotaTemplate> for &'a IFsrmQuotaTe
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFsrmQuotaTemplateImported {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFsrmQuotaTemplateImported {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12088,6 +12129,12 @@ pub struct IFsrmQuotaTemplateImported_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFsrmQuotaTemplateManager(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFsrmQuotaTemplateManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmQuotaTemplateManager {
     #[doc = "*Required features: `\"Win32_Storage_FileServerResourceManager\"`, `\"Win32_System_Com\"`*"]
@@ -12170,12 +12217,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFsrmQuotaTemplateManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFsrmQuotaTemplateManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12224,6 +12265,12 @@ pub struct IFsrmQuotaTemplateManager_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFsrmReport(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFsrmReport {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmReport {
     #[doc = "*Required features: `\"Win32_Storage_FileServerResourceManager\"`*"]
@@ -12324,12 +12371,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFsrmReport {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFsrmReport {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12388,6 +12429,12 @@ pub struct IFsrmReport_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFsrmReportJob(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFsrmReportJob {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmReportJob {
     #[doc = "*Required features: `\"Win32_Storage_FileServerResourceManager\"`*"]
@@ -12579,12 +12626,6 @@ impl<'a> ::windows::core::IntoParam<'a, IFsrmObject> for &'a IFsrmReportJob {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFsrmReportJob {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFsrmReportJob {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12666,6 +12707,12 @@ pub struct IFsrmReportJob_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFsrmReportManager(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFsrmReportManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmReportManager {
     #[doc = "*Required features: `\"Win32_Storage_FileServerResourceManager\"`, `\"Win32_System_Com\"`*"]
@@ -12774,12 +12821,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFsrmReportManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFsrmReportManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12845,6 +12886,12 @@ pub struct IFsrmReportManager_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFsrmReportScheduler(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFsrmReportScheduler {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmReportScheduler {
     #[doc = "*Required features: `\"Win32_Storage_FileServerResourceManager\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
@@ -12917,12 +12964,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFsrmReportScheduler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFsrmReportScheduler {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12967,6 +13008,12 @@ pub struct IFsrmReportScheduler_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFsrmRule(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFsrmRule {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmRule {
     #[doc = "*Required features: `\"Win32_Storage_FileServerResourceManager\"`*"]
@@ -13131,12 +13178,6 @@ impl<'a> ::windows::core::IntoParam<'a, IFsrmObject> for &'a IFsrmRule {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFsrmRule {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFsrmRule {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13204,6 +13245,12 @@ pub struct IFsrmRule_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFsrmSetting(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFsrmSetting {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmSetting {
     #[doc = "*Required features: `\"Win32_Storage_FileServerResourceManager\"`, `\"Win32_Foundation\"`*"]
@@ -13321,12 +13368,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFsrmSetting {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFsrmSetting {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13389,6 +13430,12 @@ pub struct IFsrmSetting_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFsrmStorageModuleDefinition(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFsrmStorageModuleDefinition {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmStorageModuleDefinition {
     #[doc = "*Required features: `\"Win32_Storage_FileServerResourceManager\"`*"]
@@ -13638,12 +13685,6 @@ impl<'a> ::windows::core::IntoParam<'a, IFsrmPipelineModuleDefinition> for &'a I
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFsrmStorageModuleDefinition {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IFsrmStorageModuleDefinition {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13678,6 +13719,12 @@ pub struct IFsrmStorageModuleDefinition_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IFsrmStorageModuleImplementation(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IFsrmStorageModuleImplementation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmStorageModuleImplementation {
     #[doc = "*Required features: `\"Win32_Storage_FileServerResourceManager\"`, `\"Win32_System_Com\"`*"]
@@ -13776,12 +13823,6 @@ impl<'a> ::windows::core::IntoParam<'a, IFsrmPipelineModuleImplementation> for I
 impl<'a> ::windows::core::IntoParam<'a, IFsrmPipelineModuleImplementation> for &'a IFsrmStorageModuleImplementation {
     fn into_param(self) -> ::windows::core::Param<'a, IFsrmPipelineModuleImplementation> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IFsrmStorageModuleImplementation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 #[cfg(feature = "Win32_System_Com")]

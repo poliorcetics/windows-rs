@@ -3,6 +3,11 @@ pub const CLSID_XMLGraphBuilder: ::windows::core::GUID = ::windows::core::GUID::
 #[doc = "*Required features: `\"Win32_Media_DirectShow_Xml\"`*"]
 #[repr(transparent)]
 pub struct IXMLGraphBuilder(::windows::core::IUnknown);
+impl ::core::clone::Clone for IXMLGraphBuilder {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IXMLGraphBuilder {
     #[doc = "*Required features: `\"Win32_Media_DirectShow_Xml\"`, `\"Win32_Data_Xml_MsXml\"`, `\"Win32_System_Com\"`*"]
     #[cfg(all(feature = "Win32_Data_Xml_MsXml", feature = "Win32_System_Com"))]
@@ -37,11 +42,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IXMLGraph
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IXMLGraphBuilder {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IXMLGraphBuilder {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IXMLGraphBuilder {

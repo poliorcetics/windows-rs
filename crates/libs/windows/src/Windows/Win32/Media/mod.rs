@@ -51,10 +51,16 @@ impl ::core::fmt::Debug for HTASK {
 }
 unsafe impl ::windows::core::Abi for HTASK {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[doc = "*Required features: `\"Win32_Media\"`*"]
 #[repr(transparent)]
 pub struct IReferenceClock(::windows::core::IUnknown);
+impl ::core::clone::Clone for IReferenceClock {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IReferenceClock {
     #[doc = "*Required features: `\"Win32_Media\"`*"]
     pub unsafe fn GetTime(&self) -> ::windows::core::Result<i64> {
@@ -98,11 +104,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IRefe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IReferenceClock {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IReferenceClock {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -136,6 +137,11 @@ pub struct IReferenceClock_Vtbl {
 #[doc = "*Required features: `\"Win32_Media\"`*"]
 #[repr(transparent)]
 pub struct IReferenceClock2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IReferenceClock2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IReferenceClock2 {
     #[doc = "*Required features: `\"Win32_Media\"`*"]
     pub unsafe fn GetTime(&self) -> ::windows::core::Result<i64> {
@@ -199,11 +205,6 @@ impl<'a> ::windows::core::IntoParam<'a, IReferenceClock> for &'a IReferenceClock
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IReferenceClock2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IReferenceClock2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -227,6 +228,11 @@ pub struct IReferenceClock2_Vtbl {
 #[doc = "*Required features: `\"Win32_Media\"`*"]
 #[repr(transparent)]
 pub struct IReferenceClockTimerControl(::windows::core::IUnknown);
+impl ::core::clone::Clone for IReferenceClockTimerControl {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IReferenceClockTimerControl {
     #[doc = "*Required features: `\"Win32_Media\"`*"]
     pub unsafe fn SetDefaultTimerResolution(&self, timerresolution: i64) -> ::windows::core::Result<()> {
@@ -256,11 +262,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IReferenc
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IReferenceClockTimerControl {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IReferenceClockTimerControl {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IReferenceClockTimerControl {
@@ -374,6 +375,7 @@ impl ::core::clone::Clone for MMTIME {
 }
 unsafe impl ::windows::core::Abi for MMTIME {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MMTIME {
     fn eq(&self, other: &Self) -> bool {
@@ -404,6 +406,7 @@ impl ::core::clone::Clone for MMTIME_0 {
 }
 unsafe impl ::windows::core::Abi for MMTIME_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MMTIME_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -429,6 +432,7 @@ impl ::core::clone::Clone for MMTIME_0_0 {
 }
 unsafe impl ::windows::core::Abi for MMTIME_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MMTIME_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -465,6 +469,7 @@ impl ::core::fmt::Debug for MMTIME_0_1 {
 }
 unsafe impl ::windows::core::Abi for MMTIME_0_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MMTIME_0_1 {
     fn eq(&self, other: &Self) -> bool {
@@ -594,6 +599,7 @@ impl ::core::fmt::Debug for TIMECAPS {
 }
 unsafe impl ::windows::core::Abi for TIMECAPS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TIMECAPS {
     fn eq(&self, other: &Self) -> bool {
@@ -620,6 +626,7 @@ impl ::core::clone::Clone for TIMECODE {
 }
 unsafe impl ::windows::core::Abi for TIMECODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TIMECODE {
     fn eq(&self, other: &Self) -> bool {
@@ -652,6 +659,7 @@ impl ::core::fmt::Debug for TIMECODE_0 {
 }
 unsafe impl ::windows::core::Abi for TIMECODE_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TIMECODE_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -680,6 +688,7 @@ impl ::core::clone::Clone for TIMECODE_SAMPLE {
 }
 unsafe impl ::windows::core::Abi for TIMECODE_SAMPLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TIMECODE_SAMPLE {
     fn eq(&self, other: &Self) -> bool {
@@ -715,6 +724,7 @@ impl ::core::default::Default for TIMECODE_SAMPLE_FLAGS {
 }
 unsafe impl ::windows::core::Abi for TIMECODE_SAMPLE_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TIMECODE_SAMPLE_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

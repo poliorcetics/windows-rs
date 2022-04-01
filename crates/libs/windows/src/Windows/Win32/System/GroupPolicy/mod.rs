@@ -22,6 +22,7 @@ impl ::core::default::Default for APPSTATE {
 }
 unsafe impl ::windows::core::Abi for APPSTATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for APPSTATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -101,6 +102,7 @@ impl ::core::fmt::Debug for CriticalPolicySectionHandle {
 }
 unsafe impl ::windows::core::Abi for CriticalPolicySectionHandle {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[doc = "*Required features: `\"Win32_System_GroupPolicy\"`*"]
 #[inline]
@@ -241,6 +243,7 @@ impl ::core::default::Default for GPMBackupType {
 }
 unsafe impl ::windows::core::Abi for GPMBackupType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GPMBackupType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -275,6 +278,7 @@ impl ::core::default::Default for GPMDestinationOption {
 }
 unsafe impl ::windows::core::Abi for GPMDestinationOption {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GPMDestinationOption {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -313,6 +317,7 @@ impl ::core::default::Default for GPMEntryType {
 }
 unsafe impl ::windows::core::Abi for GPMEntryType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GPMEntryType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -382,6 +387,7 @@ impl ::core::default::Default for GPMPermissionType {
 }
 unsafe impl ::windows::core::Abi for GPMPermissionType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GPMPermissionType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -412,6 +418,7 @@ impl ::core::default::Default for GPMRSOPMode {
 }
 unsafe impl ::windows::core::Abi for GPMRSOPMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GPMRSOPMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -447,6 +454,7 @@ impl ::core::default::Default for GPMReportType {
 }
 unsafe impl ::windows::core::Abi for GPMReportType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GPMReportType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -474,6 +482,7 @@ impl ::core::default::Default for GPMReportingOptions {
 }
 unsafe impl ::windows::core::Abi for GPMReportingOptions {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GPMReportingOptions {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -506,6 +515,7 @@ impl ::core::default::Default for GPMSOMType {
 }
 unsafe impl ::windows::core::Abi for GPMSOMType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GPMSOMType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -538,6 +548,7 @@ impl ::core::default::Default for GPMSearchOperation {
 }
 unsafe impl ::windows::core::Abi for GPMSearchOperation {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GPMSearchOperation {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -591,6 +602,7 @@ impl ::core::default::Default for GPMSearchProperty {
 }
 unsafe impl ::windows::core::Abi for GPMSearchProperty {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GPMSearchProperty {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -623,6 +635,7 @@ impl ::core::default::Default for GPMStarterGPOType {
 }
 unsafe impl ::windows::core::Abi for GPMStarterGPOType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GPMStarterGPOType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -680,6 +693,7 @@ impl ::core::fmt::Debug for GPOBROWSEINFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for GPOBROWSEINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for GPOBROWSEINFO {
@@ -760,6 +774,7 @@ impl ::core::default::Default for GPO_LINK {
 }
 unsafe impl ::windows::core::Abi for GPO_LINK {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GPO_LINK {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -839,6 +854,7 @@ impl ::core::default::Default for GROUP_POLICY_HINT_TYPE {
 }
 unsafe impl ::windows::core::Abi for GROUP_POLICY_HINT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GROUP_POLICY_HINT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -894,6 +910,7 @@ impl ::core::fmt::Debug for GROUP_POLICY_OBJECTA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for GROUP_POLICY_OBJECTA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for GROUP_POLICY_OBJECTA {
@@ -958,6 +975,7 @@ impl ::core::fmt::Debug for GROUP_POLICY_OBJECTW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for GROUP_POLICY_OBJECTW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for GROUP_POLICY_OBJECTW {
@@ -1000,6 +1018,7 @@ impl ::core::default::Default for GROUP_POLICY_OBJECT_TYPE {
 }
 unsafe impl ::windows::core::Abi for GROUP_POLICY_OBJECT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for GROUP_POLICY_OBJECT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1143,6 +1162,11 @@ pub unsafe fn GetManagedApplications(pcategory: *const ::windows::core::GUID, dw
 #[doc = "*Required features: `\"Win32_System_GroupPolicy\"`*"]
 #[repr(transparent)]
 pub struct IGPEInformation(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGPEInformation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IGPEInformation {
     #[doc = "*Required features: `\"Win32_System_GroupPolicy\"`*"]
     pub unsafe fn GetName(&self, pszname: &mut [u16]) -> ::windows::core::Result<()> {
@@ -1203,11 +1227,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IGPEI
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IGPEInformation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IGPEInformation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1247,6 +1266,12 @@ pub struct IGPEInformation_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IGPM(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IGPM {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IGPM {
     #[doc = "*Required features: `\"Win32_System_GroupPolicy\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`*"]
@@ -1370,12 +1395,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IGPM {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IGPM {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IGPM {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1452,6 +1471,12 @@ pub struct IGPM_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IGPM2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IGPM2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IGPM2 {
     #[doc = "*Required features: `\"Win32_System_GroupPolicy\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`*"]
@@ -1610,12 +1635,6 @@ impl<'a> ::windows::core::IntoParam<'a, IGPM> for &'a IGPM2 {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IGPM2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IGPM2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1652,6 +1671,12 @@ pub struct IGPM2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IGPMAsyncCancel(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IGPMAsyncCancel {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IGPMAsyncCancel {
     #[doc = "*Required features: `\"Win32_System_GroupPolicy\"`*"]
@@ -1708,12 +1733,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IGPMAsync
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IGPMAsyncCancel {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IGPMAsyncCancel {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1743,6 +1762,12 @@ pub struct IGPMAsyncCancel_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IGPMAsyncProgress(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IGPMAsyncProgress {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IGPMAsyncProgress {
     #[doc = "*Required features: `\"Win32_System_GroupPolicy\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
@@ -1800,12 +1825,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IGPMAsync
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IGPMAsyncProgress {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IGPMAsyncProgress {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1838,6 +1857,12 @@ pub struct IGPMAsyncProgress_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IGPMBackup(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IGPMBackup {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IGPMBackup {
     #[doc = "*Required features: `\"Win32_System_GroupPolicy\"`, `\"Win32_Foundation\"`*"]
@@ -1946,12 +1971,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IGPMBacku
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IGPMBackup {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IGPMBackup {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2014,6 +2033,12 @@ pub struct IGPMBackup_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IGPMBackupCollection(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IGPMBackupCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IGPMBackupCollection {
     #[doc = "*Required features: `\"Win32_System_GroupPolicy\"`*"]
@@ -2083,12 +2108,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IGPMBacku
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IGPMBackupCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IGPMBackupCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2126,6 +2145,12 @@ pub struct IGPMBackupCollection_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IGPMBackupDir(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IGPMBackupDir {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IGPMBackupDir {
     #[doc = "*Required features: `\"Win32_System_GroupPolicy\"`, `\"Win32_Foundation\"`*"]
@@ -2196,12 +2221,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IGPMBacku
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IGPMBackupDir {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IGPMBackupDir {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2242,6 +2261,12 @@ pub struct IGPMBackupDir_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IGPMBackupDirEx(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IGPMBackupDirEx {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IGPMBackupDirEx {
     #[doc = "*Required features: `\"Win32_System_GroupPolicy\"`, `\"Win32_Foundation\"`*"]
@@ -2317,12 +2342,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IGPMBacku
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IGPMBackupDirEx {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IGPMBackupDirEx {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2364,6 +2383,12 @@ pub struct IGPMBackupDirEx_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IGPMCSECollection(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IGPMCSECollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IGPMCSECollection {
     #[doc = "*Required features: `\"Win32_System_GroupPolicy\"`*"]
@@ -2433,12 +2458,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IGPMCSECo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IGPMCSECollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IGPMCSECollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2476,6 +2495,12 @@ pub struct IGPMCSECollection_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IGPMClientSideExtension(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IGPMClientSideExtension {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IGPMClientSideExtension {
     #[doc = "*Required features: `\"Win32_System_GroupPolicy\"`, `\"Win32_Foundation\"`*"]
@@ -2550,12 +2575,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IGPMClien
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IGPMClientSideExtension {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IGPMClientSideExtension {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2594,6 +2613,12 @@ pub struct IGPMClientSideExtension_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IGPMConstants(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IGPMConstants {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IGPMConstants {
     #[doc = "*Required features: `\"Win32_System_GroupPolicy\"`*"]
@@ -2946,12 +2971,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IGPMConst
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IGPMConstants {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IGPMConstants {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3040,6 +3059,12 @@ pub struct IGPMConstants_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IGPMConstants2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IGPMConstants2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IGPMConstants2 {
     #[doc = "*Required features: `\"Win32_System_GroupPolicy\"`*"]
@@ -3491,12 +3516,6 @@ impl<'a> ::windows::core::IntoParam<'a, IGPMConstants> for &'a IGPMConstants2 {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IGPMConstants2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IGPMConstants2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3540,6 +3559,12 @@ pub struct IGPMConstants2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IGPMDomain(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IGPMDomain {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IGPMDomain {
     #[doc = "*Required features: `\"Win32_System_GroupPolicy\"`, `\"Win32_Foundation\"`*"]
@@ -3651,12 +3676,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IGPMDomai
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IGPMDomain {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IGPMDomain {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3725,6 +3744,12 @@ pub struct IGPMDomain_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IGPMDomain2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IGPMDomain2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IGPMDomain2 {
     #[doc = "*Required features: `\"Win32_System_GroupPolicy\"`, `\"Win32_Foundation\"`*"]
@@ -3894,12 +3919,6 @@ impl<'a> ::windows::core::IntoParam<'a, IGPMDomain> for &'a IGPMDomain2 {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IGPMDomain2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IGPMDomain2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3952,6 +3971,12 @@ pub struct IGPMDomain2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IGPMDomain3(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IGPMDomain3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IGPMDomain3 {
     #[doc = "*Required features: `\"Win32_System_GroupPolicy\"`, `\"Win32_Foundation\"`*"]
@@ -4165,12 +4190,6 @@ impl<'a> ::windows::core::IntoParam<'a, IGPMDomain2> for &'a IGPMDomain3 {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IGPMDomain3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IGPMDomain3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4212,6 +4231,12 @@ pub struct IGPMDomain3_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IGPMGPO(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IGPMGPO {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IGPMGPO {
     #[doc = "*Required features: `\"Win32_System_GroupPolicy\"`, `\"Win32_Foundation\"`*"]
@@ -4413,12 +4438,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IGPMGPO {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IGPMGPO {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IGPMGPO {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4524,6 +4543,12 @@ pub struct IGPMGPO_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IGPMGPO2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IGPMGPO2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IGPMGPO2 {
     #[doc = "*Required features: `\"Win32_System_GroupPolicy\"`, `\"Win32_Foundation\"`*"]
@@ -4760,12 +4785,6 @@ impl<'a> ::windows::core::IntoParam<'a, IGPMGPO> for &'a IGPMGPO2 {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IGPMGPO2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IGPMGPO2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4802,6 +4821,12 @@ pub struct IGPMGPO2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IGPMGPO3(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IGPMGPO3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IGPMGPO3 {
     #[doc = "*Required features: `\"Win32_System_GroupPolicy\"`, `\"Win32_Foundation\"`*"]
@@ -5077,12 +5102,6 @@ impl<'a> ::windows::core::IntoParam<'a, IGPMGPO2> for &'a IGPMGPO3 {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IGPMGPO3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IGPMGPO3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5120,6 +5139,12 @@ pub struct IGPMGPO3_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IGPMGPOCollection(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IGPMGPOCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IGPMGPOCollection {
     #[doc = "*Required features: `\"Win32_System_GroupPolicy\"`*"]
@@ -5189,12 +5214,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IGPMGPOCo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IGPMGPOCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IGPMGPOCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5232,6 +5251,12 @@ pub struct IGPMGPOCollection_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IGPMGPOLink(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IGPMGPOLink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IGPMGPOLink {
     #[doc = "*Required features: `\"Win32_System_GroupPolicy\"`, `\"Win32_Foundation\"`*"]
@@ -5329,12 +5354,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IGPMGPOLi
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IGPMGPOLink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IGPMGPOLink {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5381,6 +5400,12 @@ pub struct IGPMGPOLink_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IGPMGPOLinksCollection(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IGPMGPOLinksCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IGPMGPOLinksCollection {
     #[doc = "*Required features: `\"Win32_System_GroupPolicy\"`*"]
@@ -5450,12 +5475,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IGPMGPOLi
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IGPMGPOLinksCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IGPMGPOLinksCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5493,6 +5512,12 @@ pub struct IGPMGPOLinksCollection_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IGPMMapEntry(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IGPMMapEntry {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IGPMMapEntry {
     #[doc = "*Required features: `\"Win32_System_GroupPolicy\"`, `\"Win32_Foundation\"`*"]
@@ -5567,12 +5592,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IGPMMapEn
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IGPMMapEntry {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IGPMMapEntry {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5611,6 +5630,12 @@ pub struct IGPMMapEntry_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IGPMMapEntryCollection(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IGPMMapEntryCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IGPMMapEntryCollection {
     #[doc = "*Required features: `\"Win32_System_GroupPolicy\"`*"]
@@ -5680,12 +5705,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IGPMMapEn
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IGPMMapEntryCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IGPMMapEntryCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5723,6 +5742,12 @@ pub struct IGPMMapEntryCollection_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IGPMMigrationTable(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IGPMMigrationTable {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IGPMMigrationTable {
     #[doc = "*Required features: `\"Win32_System_GroupPolicy\"`, `\"Win32_Foundation\"`*"]
@@ -5820,12 +5845,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IGPMMigra
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IGPMMigrationTable {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IGPMMigrationTable {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5886,6 +5905,12 @@ pub struct IGPMMigrationTable_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IGPMPermission(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IGPMPermission {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IGPMPermission {
     #[doc = "*Required features: `\"Win32_System_GroupPolicy\"`*"]
@@ -5964,12 +5989,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IGPMPermi
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IGPMPermission {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IGPMPermission {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6006,6 +6025,12 @@ pub struct IGPMPermission_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IGPMRSOP(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IGPMRSOP {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IGPMRSOP {
     #[doc = "*Required features: `\"Win32_System_GroupPolicy\"`*"]
@@ -6244,12 +6269,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IGPMRSOP 
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IGPMRSOP {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IGPMRSOP {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6398,6 +6417,12 @@ pub struct IGPMRSOP_Vtbl {
 #[repr(transparent)]
 pub struct IGPMResult(::windows::core::IUnknown);
 #[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IGPMResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "Win32_System_Com")]
 impl IGPMResult {
     #[doc = "*Required features: `\"Win32_System_GroupPolicy\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -6465,12 +6490,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IGPMResul
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IGPMResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IGPMResult {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6508,6 +6527,12 @@ pub struct IGPMResult_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IGPMSOM(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IGPMSOM {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IGPMSOM {
     #[doc = "*Required features: `\"Win32_System_GroupPolicy\"`*"]
@@ -6615,12 +6640,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IGPMSOM {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IGPMSOM {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IGPMSOM {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6680,6 +6699,12 @@ pub struct IGPMSOM_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IGPMSOMCollection(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IGPMSOMCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IGPMSOMCollection {
     #[doc = "*Required features: `\"Win32_System_GroupPolicy\"`*"]
@@ -6749,12 +6774,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IGPMSOMCo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IGPMSOMCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IGPMSOMCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6792,6 +6811,12 @@ pub struct IGPMSOMCollection_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IGPMSearchCriteria(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IGPMSearchCriteria {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IGPMSearchCriteria {
     #[doc = "*Required features: `\"Win32_System_GroupPolicy\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
@@ -6849,12 +6874,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IGPMSearc
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IGPMSearchCriteria {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IGPMSearchCriteria {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6887,6 +6906,12 @@ pub struct IGPMSearchCriteria_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IGPMSecurityInfo(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IGPMSecurityInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IGPMSecurityInfo {
     #[doc = "*Required features: `\"Win32_System_GroupPolicy\"`*"]
@@ -6971,12 +6996,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IGPMSecur
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IGPMSecurityInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IGPMSecurityInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7026,6 +7045,12 @@ pub struct IGPMSecurityInfo_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IGPMSitesContainer(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IGPMSitesContainer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IGPMSitesContainer {
     #[doc = "*Required features: `\"Win32_System_GroupPolicy\"`, `\"Win32_Foundation\"`*"]
@@ -7108,12 +7133,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IGPMSites
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IGPMSitesContainer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IGPMSitesContainer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7162,6 +7181,12 @@ pub struct IGPMSitesContainer_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IGPMStarterGPO(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IGPMStarterGPO {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IGPMStarterGPO {
     #[doc = "*Required features: `\"Win32_System_GroupPolicy\"`, `\"Win32_Foundation\"`*"]
@@ -7328,12 +7353,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IGPMStart
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IGPMStarterGPO {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IGPMStarterGPO {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7428,6 +7447,12 @@ pub struct IGPMStarterGPO_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IGPMStarterGPOBackup(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IGPMStarterGPOBackup {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IGPMStarterGPOBackup {
     #[doc = "*Required features: `\"Win32_System_GroupPolicy\"`, `\"Win32_Foundation\"`*"]
@@ -7541,12 +7566,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IGPMStart
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IGPMStarterGPOBackup {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IGPMStarterGPOBackup {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7610,6 +7629,12 @@ pub struct IGPMStarterGPOBackup_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IGPMStarterGPOBackupCollection(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IGPMStarterGPOBackupCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IGPMStarterGPOBackupCollection {
     #[doc = "*Required features: `\"Win32_System_GroupPolicy\"`*"]
@@ -7679,12 +7704,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IGPMStart
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IGPMStarterGPOBackupCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IGPMStarterGPOBackupCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7722,6 +7741,12 @@ pub struct IGPMStarterGPOBackupCollection_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IGPMStarterGPOCollection(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IGPMStarterGPOCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IGPMStarterGPOCollection {
     #[doc = "*Required features: `\"Win32_System_GroupPolicy\"`*"]
@@ -7791,12 +7816,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IGPMStart
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IGPMStarterGPOCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IGPMStarterGPOCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7834,6 +7853,12 @@ pub struct IGPMStarterGPOCollection_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IGPMStatusMessage(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IGPMStatusMessage {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IGPMStatusMessage {
     #[doc = "*Required features: `\"Win32_System_GroupPolicy\"`, `\"Win32_Foundation\"`*"]
@@ -7918,12 +7943,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IGPMStatu
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IGPMStatusMessage {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IGPMStatusMessage {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7970,6 +7989,12 @@ pub struct IGPMStatusMessage_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IGPMStatusMsgCollection(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IGPMStatusMsgCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IGPMStatusMsgCollection {
     #[doc = "*Required features: `\"Win32_System_GroupPolicy\"`*"]
@@ -8039,12 +8064,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IGPMStatu
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IGPMStatusMsgCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IGPMStatusMsgCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8082,6 +8101,12 @@ pub struct IGPMStatusMsgCollection_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IGPMTrustee(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IGPMTrustee {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IGPMTrustee {
     #[doc = "*Required features: `\"Win32_System_GroupPolicy\"`, `\"Win32_Foundation\"`*"]
@@ -8163,12 +8188,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IGPMTrust
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IGPMTrustee {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IGPMTrustee {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8214,6 +8233,12 @@ pub struct IGPMTrustee_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IGPMWMIFilter(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IGPMWMIFilter {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IGPMWMIFilter {
     #[doc = "*Required features: `\"Win32_System_GroupPolicy\"`, `\"Win32_Foundation\"`*"]
@@ -8311,12 +8336,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IGPMWMIFi
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IGPMWMIFilter {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IGPMWMIFilter {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8377,6 +8396,12 @@ pub struct IGPMWMIFilter_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IGPMWMIFilterCollection(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IGPMWMIFilterCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IGPMWMIFilterCollection {
     #[doc = "*Required features: `\"Win32_System_GroupPolicy\"`*"]
@@ -8446,12 +8471,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IGPMWMIFi
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IGPMWMIFilterCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IGPMWMIFilterCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8488,6 +8507,11 @@ pub struct IGPMWMIFilterCollection_Vtbl {
 #[doc = "*Required features: `\"Win32_System_GroupPolicy\"`*"]
 #[repr(transparent)]
 pub struct IGroupPolicyObject(::windows::core::IUnknown);
+impl ::core::clone::Clone for IGroupPolicyObject {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IGroupPolicyObject {
     #[doc = "*Required features: `\"Win32_System_GroupPolicy\"`*"]
     pub unsafe fn New<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param1: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, pszdomainname: Param0, pszdisplayname: Param1, dwflags: u32) -> ::windows::core::Result<()> {
@@ -8585,11 +8609,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IGrou
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IGroupPolicyObject {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IGroupPolicyObject {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8651,6 +8670,7 @@ impl ::core::clone::Clone for INSTALLDATA {
 }
 unsafe impl ::windows::core::Abi for INSTALLDATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for INSTALLDATA {
     fn eq(&self, other: &Self) -> bool {
@@ -8679,6 +8699,7 @@ impl ::core::clone::Clone for INSTALLSPEC {
 }
 unsafe impl ::windows::core::Abi for INSTALLSPEC {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for INSTALLSPEC {
     fn eq(&self, other: &Self) -> bool {
@@ -8710,6 +8731,7 @@ impl ::core::fmt::Debug for INSTALLSPEC_0 {
 }
 unsafe impl ::windows::core::Abi for INSTALLSPEC_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for INSTALLSPEC_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -8741,6 +8763,7 @@ impl ::core::fmt::Debug for INSTALLSPEC_1 {
 }
 unsafe impl ::windows::core::Abi for INSTALLSPEC_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for INSTALLSPEC_1 {
     fn eq(&self, other: &Self) -> bool {
@@ -8778,6 +8801,7 @@ impl ::core::default::Default for INSTALLSPECTYPE {
 }
 unsafe impl ::windows::core::Abi for INSTALLSPECTYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for INSTALLSPECTYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8787,6 +8811,11 @@ impl ::core::fmt::Debug for INSTALLSPECTYPE {
 #[doc = "*Required features: `\"Win32_System_GroupPolicy\"`*"]
 #[repr(transparent)]
 pub struct IRSOPInformation(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRSOPInformation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRSOPInformation {
     #[doc = "*Required features: `\"Win32_System_GroupPolicy\"`*"]
     pub unsafe fn GetNamespace(&self, dwsection: u32, pszname: &mut [u16]) -> ::windows::core::Result<()> {
@@ -8820,11 +8849,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IRSOPInfo
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IRSOPInformation {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IRSOPInformation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IRSOPInformation {
@@ -8899,6 +8923,7 @@ impl ::core::fmt::Debug for LOCALMANAGEDAPPLICATION {
 }
 unsafe impl ::windows::core::Abi for LOCALMANAGEDAPPLICATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for LOCALMANAGEDAPPLICATION {
     fn eq(&self, other: &Self) -> bool {
@@ -8995,6 +9020,7 @@ impl ::core::fmt::Debug for MANAGEDAPPLICATION {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for MANAGEDAPPLICATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for MANAGEDAPPLICATION {
@@ -9075,6 +9101,7 @@ impl ::core::fmt::Debug for POLICYSETTINGSTATUSINFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for POLICYSETTINGSTATUSINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for POLICYSETTINGSTATUSINFO {
@@ -9181,6 +9208,7 @@ impl ::core::fmt::Debug for RSOP_TARGET {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com", feature = "Win32_System_Wmi"))]
 unsafe impl ::windows::core::Abi for RSOP_TARGET {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com", feature = "Win32_System_Wmi"))]
 impl ::core::cmp::PartialEq for RSOP_TARGET {
@@ -9331,6 +9359,7 @@ impl ::core::default::Default for SETTINGSTATUS {
 }
 unsafe impl ::windows::core::Abi for SETTINGSTATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SETTINGSTATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

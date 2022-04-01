@@ -21,6 +21,7 @@ impl ::core::default::Default for DELETE_OBJECT_OPTIONS {
 }
 unsafe impl ::windows::core::Abi for DELETE_OBJECT_OPTIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DELETE_OBJECT_OPTIONS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -60,6 +61,7 @@ impl ::core::default::Default for DEVICE_RADIO_STATE {
 }
 unsafe impl ::windows::core::Abi for DEVICE_RADIO_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DEVICE_RADIO_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -222,6 +224,11 @@ pub const GUID_DEVINTERFACE_WPD_SERVICE: ::windows::core::GUID = ::windows::core
 #[doc = "*Required features: `\"Win32_Devices_PortableDevices\"`*"]
 #[repr(transparent)]
 pub struct IConnectionRequestCallback(::windows::core::IUnknown);
+impl ::core::clone::Clone for IConnectionRequestCallback {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IConnectionRequestCallback {
     #[doc = "*Required features: `\"Win32_Devices_PortableDevices\"`*"]
     pub unsafe fn OnComplete(&self, hrstatus: ::windows::core::HRESULT) -> ::windows::core::Result<()> {
@@ -248,11 +255,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IConn
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IConnectionRequestCallback {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IConnectionRequestCallback {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -277,6 +279,11 @@ pub struct IConnectionRequestCallback_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_PortableDevices\"`*"]
 #[repr(transparent)]
 pub struct IEnumPortableDeviceConnectors(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnumPortableDeviceConnectors {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnumPortableDeviceConnectors {
     #[doc = "*Required features: `\"Win32_Devices_PortableDevices\"`*"]
     pub unsafe fn Next(&self, pconnectors: &mut [::core::option::Option<IPortableDeviceConnector>], pcfetched: *mut u32) -> ::windows::core::Result<()> {
@@ -316,11 +323,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnum
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnumPortableDeviceConnectors {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnumPortableDeviceConnectors {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -348,6 +350,11 @@ pub struct IEnumPortableDeviceConnectors_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_PortableDevices\"`*"]
 #[repr(transparent)]
 pub struct IEnumPortableDeviceObjectIDs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnumPortableDeviceObjectIDs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnumPortableDeviceObjectIDs {
     #[doc = "*Required features: `\"Win32_Devices_PortableDevices\"`*"]
     pub unsafe fn Next(&self, pobjids: &mut [::windows::core::PWSTR], pcfetched: *mut u32) -> ::windows::core::HRESULT {
@@ -391,11 +398,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnum
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnumPortableDeviceObjectIDs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnumPortableDeviceObjectIDs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -424,6 +426,11 @@ pub struct IEnumPortableDeviceObjectIDs_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_PortableDevices\"`*"]
 #[repr(transparent)]
 pub struct IMediaRadioManager(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMediaRadioManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMediaRadioManager {
     #[doc = "*Required features: `\"Win32_Devices_PortableDevices\"`*"]
     pub unsafe fn GetRadioInstances(&self) -> ::windows::core::Result<IRadioInstanceCollection> {
@@ -455,11 +462,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMedi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IMediaRadioManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IMediaRadioManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -485,6 +487,11 @@ pub struct IMediaRadioManager_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_PortableDevices\"`*"]
 #[repr(transparent)]
 pub struct IMediaRadioManagerNotifySink(::windows::core::IUnknown);
+impl ::core::clone::Clone for IMediaRadioManagerNotifySink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IMediaRadioManagerNotifySink {
     #[doc = "*Required features: `\"Win32_Devices_PortableDevices\"`*"]
     pub unsafe fn OnInstanceAdd<'a, Param0: ::windows::core::IntoParam<'a, IRadioInstance>>(&self, pradioinstance: Param0) -> ::windows::core::Result<()> {
@@ -519,11 +526,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IMediaRad
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IMediaRadioManagerNotifySink {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IMediaRadioManagerNotifySink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IMediaRadioManagerNotifySink {
@@ -562,6 +564,11 @@ pub const IOCTL_WPD_MESSAGE_READ_ACCESS: u32 = 4210952u32;
 #[doc = "*Required features: `\"Win32_Devices_PortableDevices\"`*"]
 #[repr(transparent)]
 pub struct IPortableDevice(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPortableDevice {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPortableDevice {
     #[doc = "*Required features: `\"Win32_Devices_PortableDevices\"`*"]
     pub unsafe fn Open<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param1: ::windows::core::IntoParam<'a, IPortableDeviceValues>>(&self, pszpnpdeviceid: Param0, pclientinfo: Param1) -> ::windows::core::Result<()> {
@@ -625,11 +632,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPort
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPortableDevice {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPortableDevice {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -662,6 +664,11 @@ pub struct IPortableDevice_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_PortableDevices\"`*"]
 #[repr(transparent)]
 pub struct IPortableDeviceCapabilities(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPortableDeviceCapabilities {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPortableDeviceCapabilities {
     #[doc = "*Required features: `\"Win32_Devices_PortableDevices\"`*"]
     pub unsafe fn GetSupportedCommands(&self) -> ::windows::core::Result<IPortableDeviceKeyCollection> {
@@ -740,11 +747,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPort
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPortableDeviceCapabilities {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPortableDeviceCapabilities {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -785,6 +787,11 @@ pub struct IPortableDeviceCapabilities_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_PortableDevices\"`*"]
 #[repr(transparent)]
 pub struct IPortableDeviceConnector(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPortableDeviceConnector {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPortableDeviceConnector {
     #[doc = "*Required features: `\"Win32_Devices_PortableDevices\"`*"]
     pub unsafe fn Connect<'a, Param0: ::windows::core::IntoParam<'a, IConnectionRequestCallback>>(&self, pcallback: Param0) -> ::windows::core::Result<()> {
@@ -834,11 +841,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPort
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPortableDeviceConnector {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPortableDeviceConnector {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -874,6 +876,11 @@ pub struct IPortableDeviceConnector_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_PortableDevices\"`*"]
 #[repr(transparent)]
 pub struct IPortableDeviceContent(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPortableDeviceContent {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPortableDeviceContent {
     #[doc = "*Required features: `\"Win32_Devices_PortableDevices\"`*"]
     pub unsafe fn EnumObjects<'a, Param1: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param2: ::windows::core::IntoParam<'a, IPortableDeviceValues>>(&self, dwflags: u32, pszparentobjectid: Param1, pfilter: Param2) -> ::windows::core::Result<IEnumPortableDeviceObjectIDs> {
@@ -941,11 +948,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPort
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPortableDeviceContent {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPortableDeviceContent {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -982,6 +984,11 @@ pub struct IPortableDeviceContent_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_PortableDevices\"`*"]
 #[repr(transparent)]
 pub struct IPortableDeviceContent2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPortableDeviceContent2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPortableDeviceContent2 {
     #[doc = "*Required features: `\"Win32_Devices_PortableDevices\"`*"]
     pub unsafe fn EnumObjects<'a, Param1: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param2: ::windows::core::IntoParam<'a, IPortableDeviceValues>>(&self, dwflags: u32, pszparentobjectid: Param1, pfilter: Param2) -> ::windows::core::Result<IEnumPortableDeviceObjectIDs> {
@@ -1074,11 +1081,6 @@ impl<'a> ::windows::core::IntoParam<'a, IPortableDeviceContent> for &'a IPortabl
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPortableDeviceContent2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPortableDeviceContent2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1107,6 +1109,12 @@ pub struct IPortableDeviceContent2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IPortableDeviceDataStream(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IPortableDeviceDataStream {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IPortableDeviceDataStream {
     #[doc = "*Required features: `\"Win32_Devices_PortableDevices\"`, `\"Win32_System_Com\"`*"]
@@ -1249,12 +1257,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IStream> for 
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IPortableDeviceDataStream {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IPortableDeviceDataStream {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1284,6 +1286,11 @@ pub struct IPortableDeviceDataStream_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_PortableDevices\"`*"]
 #[repr(transparent)]
 pub struct IPortableDeviceDispatchFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPortableDeviceDispatchFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPortableDeviceDispatchFactory {
     #[doc = "*Required features: `\"Win32_Devices_PortableDevices\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -1310,11 +1317,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IPortable
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPortableDeviceDispatchFactory {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IPortableDeviceDispatchFactory {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IPortableDeviceDispatchFactory {
@@ -1344,6 +1346,11 @@ pub struct IPortableDeviceDispatchFactory_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_PortableDevices\"`*"]
 #[repr(transparent)]
 pub struct IPortableDeviceEventCallback(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPortableDeviceEventCallback {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPortableDeviceEventCallback {
     #[doc = "*Required features: `\"Win32_Devices_PortableDevices\"`*"]
     pub unsafe fn OnEvent<'a, Param0: ::windows::core::IntoParam<'a, IPortableDeviceValues>>(&self, peventparameters: Param0) -> ::windows::core::Result<()> {
@@ -1370,11 +1377,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPort
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPortableDeviceEventCallback {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPortableDeviceEventCallback {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1399,6 +1401,11 @@ pub struct IPortableDeviceEventCallback_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_PortableDevices\"`*"]
 #[repr(transparent)]
 pub struct IPortableDeviceKeyCollection(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPortableDeviceKeyCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPortableDeviceKeyCollection {
     #[doc = "*Required features: `\"Win32_Devices_PortableDevices\"`*"]
     pub unsafe fn GetCount(&self, pcelems: *const u32) -> ::windows::core::Result<()> {
@@ -1443,11 +1450,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPort
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPortableDeviceKeyCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPortableDeviceKeyCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1482,6 +1484,11 @@ pub struct IPortableDeviceKeyCollection_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_PortableDevices\"`*"]
 #[repr(transparent)]
 pub struct IPortableDeviceManager(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPortableDeviceManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPortableDeviceManager {
     #[doc = "*Required features: `\"Win32_Devices_PortableDevices\"`*"]
     pub unsafe fn GetDevices(&self, ppnpdeviceids: *mut ::windows::core::PWSTR, pcpnpdeviceids: *mut u32) -> ::windows::core::Result<()> {
@@ -1532,11 +1539,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPort
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPortableDeviceManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPortableDeviceManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1567,6 +1569,11 @@ pub struct IPortableDeviceManager_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_PortableDevices\"`*"]
 #[repr(transparent)]
 pub struct IPortableDevicePropVariantCollection(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPortableDevicePropVariantCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPortableDevicePropVariantCollection {
     #[doc = "*Required features: `\"Win32_Devices_PortableDevices\"`*"]
     pub unsafe fn GetCount(&self, pcelems: *const u32) -> ::windows::core::Result<()> {
@@ -1620,11 +1627,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPort
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPortableDevicePropVariantCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPortableDevicePropVariantCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1661,6 +1663,11 @@ pub struct IPortableDevicePropVariantCollection_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_PortableDevices\"`*"]
 #[repr(transparent)]
 pub struct IPortableDeviceProperties(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPortableDeviceProperties {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPortableDeviceProperties {
     #[doc = "*Required features: `\"Win32_Devices_PortableDevices\"`*"]
     pub unsafe fn GetSupportedProperties<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, pszobjectid: Param0) -> ::windows::core::Result<IPortableDeviceKeyCollection> {
@@ -1712,11 +1719,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPort
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPortableDeviceProperties {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPortableDeviceProperties {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1749,6 +1751,11 @@ pub struct IPortableDeviceProperties_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_PortableDevices\"`*"]
 #[repr(transparent)]
 pub struct IPortableDevicePropertiesBulk(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPortableDevicePropertiesBulk {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPortableDevicePropertiesBulk {
     #[doc = "*Required features: `\"Win32_Devices_PortableDevices\"`*"]
     pub unsafe fn QueueGetValuesByObjectList<'a, Param0: ::windows::core::IntoParam<'a, IPortableDevicePropVariantCollection>, Param1: ::windows::core::IntoParam<'a, IPortableDeviceKeyCollection>, Param2: ::windows::core::IntoParam<'a, IPortableDevicePropertiesBulkCallback>>(&self, pobjectids: Param0, pkeys: Param1, pcallback: Param2) -> ::windows::core::Result<::windows::core::GUID> {
@@ -1794,11 +1801,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPort
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPortableDevicePropertiesBulk {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPortableDevicePropertiesBulk {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1827,6 +1829,11 @@ pub struct IPortableDevicePropertiesBulk_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_PortableDevices\"`*"]
 #[repr(transparent)]
 pub struct IPortableDevicePropertiesBulkCallback(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPortableDevicePropertiesBulkCallback {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPortableDevicePropertiesBulkCallback {
     #[doc = "*Required features: `\"Win32_Devices_PortableDevices\"`*"]
     pub unsafe fn OnStart(&self, pcontext: *const ::windows::core::GUID) -> ::windows::core::Result<()> {
@@ -1861,11 +1868,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPort
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPortableDevicePropertiesBulkCallback {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPortableDevicePropertiesBulkCallback {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1892,6 +1894,11 @@ pub struct IPortableDevicePropertiesBulkCallback_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_PortableDevices\"`*"]
 #[repr(transparent)]
 pub struct IPortableDeviceResources(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPortableDeviceResources {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPortableDeviceResources {
     #[doc = "*Required features: `\"Win32_Devices_PortableDevices\"`*"]
     pub unsafe fn GetSupportedResources<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, pszobjectid: Param0) -> ::windows::core::Result<IPortableDeviceKeyCollection> {
@@ -1943,11 +1950,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPort
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPortableDeviceResources {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPortableDeviceResources {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1986,6 +1988,11 @@ pub struct IPortableDeviceResources_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_PortableDevices\"`*"]
 #[repr(transparent)]
 pub struct IPortableDeviceService(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPortableDeviceService {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPortableDeviceService {
     #[doc = "*Required features: `\"Win32_Devices_PortableDevices\"`*"]
     pub unsafe fn Open<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param1: ::windows::core::IntoParam<'a, IPortableDeviceValues>>(&self, pszpnpserviceid: Param0, pclientinfo: Param1) -> ::windows::core::Result<()> {
@@ -2059,11 +2066,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPort
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPortableDeviceService {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPortableDeviceService {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2098,6 +2100,11 @@ pub struct IPortableDeviceService_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_PortableDevices\"`*"]
 #[repr(transparent)]
 pub struct IPortableDeviceServiceActivation(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPortableDeviceServiceActivation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPortableDeviceServiceActivation {
     #[doc = "*Required features: `\"Win32_Devices_PortableDevices\"`*"]
     pub unsafe fn OpenAsync<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param1: ::windows::core::IntoParam<'a, IPortableDeviceValues>, Param2: ::windows::core::IntoParam<'a, IPortableDeviceServiceOpenCallback>>(&self, pszpnpserviceid: Param0, pclientinfo: Param1, pcallback: Param2) -> ::windows::core::Result<()> {
@@ -2128,11 +2135,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPort
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPortableDeviceServiceActivation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPortableDeviceServiceActivation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2158,6 +2160,11 @@ pub struct IPortableDeviceServiceActivation_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_PortableDevices\"`*"]
 #[repr(transparent)]
 pub struct IPortableDeviceServiceCapabilities(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPortableDeviceServiceCapabilities {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPortableDeviceServiceCapabilities {
     #[doc = "*Required features: `\"Win32_Devices_PortableDevices\"`*"]
     pub unsafe fn GetSupportedMethods(&self) -> ::windows::core::Result<IPortableDevicePropVariantCollection> {
@@ -2263,11 +2270,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPort
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPortableDeviceServiceCapabilities {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPortableDeviceServiceCapabilities {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2319,6 +2321,11 @@ pub struct IPortableDeviceServiceCapabilities_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_PortableDevices\"`*"]
 #[repr(transparent)]
 pub struct IPortableDeviceServiceManager(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPortableDeviceServiceManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPortableDeviceServiceManager {
     #[doc = "*Required features: `\"Win32_Devices_PortableDevices\"`*"]
     pub unsafe fn GetDeviceServices<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, pszpnpdeviceid: Param0, guidservicecategory: *const ::windows::core::GUID, pservices: *mut ::windows::core::PWSTR, pcservices: *mut u32) -> ::windows::core::Result<()> {
@@ -2350,11 +2357,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPort
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPortableDeviceServiceManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPortableDeviceServiceManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2380,6 +2382,11 @@ pub struct IPortableDeviceServiceManager_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_PortableDevices\"`*"]
 #[repr(transparent)]
 pub struct IPortableDeviceServiceMethodCallback(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPortableDeviceServiceMethodCallback {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPortableDeviceServiceMethodCallback {
     #[doc = "*Required features: `\"Win32_Devices_PortableDevices\"`*"]
     pub unsafe fn OnComplete<'a, Param1: ::windows::core::IntoParam<'a, IPortableDeviceValues>>(&self, hrstatus: ::windows::core::HRESULT, presults: Param1) -> ::windows::core::Result<()> {
@@ -2406,11 +2413,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPort
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPortableDeviceServiceMethodCallback {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPortableDeviceServiceMethodCallback {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2435,6 +2437,11 @@ pub struct IPortableDeviceServiceMethodCallback_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_PortableDevices\"`*"]
 #[repr(transparent)]
 pub struct IPortableDeviceServiceMethods(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPortableDeviceServiceMethods {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPortableDeviceServiceMethods {
     #[doc = "*Required features: `\"Win32_Devices_PortableDevices\"`*"]
     pub unsafe fn Invoke<'a, Param1: ::windows::core::IntoParam<'a, IPortableDeviceValues>>(&self, method: *const ::windows::core::GUID, pparameters: Param1, ppresults: *mut ::core::option::Option<IPortableDeviceValues>) -> ::windows::core::Result<()> {
@@ -2469,11 +2476,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPort
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPortableDeviceServiceMethods {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPortableDeviceServiceMethods {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2500,6 +2502,11 @@ pub struct IPortableDeviceServiceMethods_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_PortableDevices\"`*"]
 #[repr(transparent)]
 pub struct IPortableDeviceServiceOpenCallback(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPortableDeviceServiceOpenCallback {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPortableDeviceServiceOpenCallback {
     #[doc = "*Required features: `\"Win32_Devices_PortableDevices\"`*"]
     pub unsafe fn OnComplete(&self, hrstatus: ::windows::core::HRESULT) -> ::windows::core::Result<()> {
@@ -2526,11 +2533,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPort
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPortableDeviceServiceOpenCallback {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPortableDeviceServiceOpenCallback {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2555,6 +2557,11 @@ pub struct IPortableDeviceServiceOpenCallback_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_PortableDevices\"`*"]
 #[repr(transparent)]
 pub struct IPortableDeviceUnitsStream(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPortableDeviceUnitsStream {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPortableDeviceUnitsStream {
     #[doc = "*Required features: `\"Win32_Devices_PortableDevices\"`*"]
     pub unsafe fn SeekInUnits(&self, dlibmove: i64, units: WPD_STREAM_UNITS, dworigin: u32) -> ::windows::core::Result<u64> {
@@ -2586,11 +2593,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPort
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPortableDeviceUnitsStream {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPortableDeviceUnitsStream {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2616,6 +2618,11 @@ pub struct IPortableDeviceUnitsStream_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_PortableDevices\"`*"]
 #[repr(transparent)]
 pub struct IPortableDeviceValues(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPortableDeviceValues {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPortableDeviceValues {
     #[doc = "*Required features: `\"Win32_Devices_PortableDevices\"`*"]
     pub unsafe fn GetCount(&self, pcelt: *const u32) -> ::windows::core::Result<()> {
@@ -2852,11 +2859,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPort
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPortableDeviceValues {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPortableDeviceValues {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3034,6 +3036,11 @@ pub struct IPortableDeviceValues_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_PortableDevices\"`*"]
 #[repr(transparent)]
 pub struct IPortableDeviceValuesCollection(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPortableDeviceValuesCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IPortableDeviceValuesCollection {
     #[doc = "*Required features: `\"Win32_Devices_PortableDevices\"`*"]
     pub unsafe fn GetCount(&self, pcelems: *const u32) -> ::windows::core::Result<()> {
@@ -3077,11 +3084,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IPort
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IPortableDeviceValuesCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IPortableDeviceValuesCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3111,6 +3113,12 @@ pub struct IPortableDeviceValuesCollection_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IPortableDeviceWebControl(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IPortableDeviceWebControl {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IPortableDeviceWebControl {
     #[doc = "*Required features: `\"Win32_Devices_PortableDevices\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`*"]
@@ -3174,12 +3182,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IPortableDeviceWebControl {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IPortableDeviceWebControl {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3215,6 +3217,11 @@ pub struct IPortableDeviceWebControl_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_PortableDevices\"`*"]
 #[repr(transparent)]
 pub struct IRadioInstance(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRadioInstance {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRadioInstance {
     #[doc = "*Required features: `\"Win32_Devices_PortableDevices\"`*"]
     pub unsafe fn GetRadioManagerSignature(&self) -> ::windows::core::Result<::windows::core::GUID> {
@@ -3273,11 +3280,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IRadi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IRadioInstance {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IRadioInstance {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3320,6 +3322,11 @@ pub struct IRadioInstance_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_PortableDevices\"`*"]
 #[repr(transparent)]
 pub struct IRadioInstanceCollection(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRadioInstanceCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRadioInstanceCollection {
     #[doc = "*Required features: `\"Win32_Devices_PortableDevices\"`*"]
     pub unsafe fn GetCount(&self) -> ::windows::core::Result<u32> {
@@ -3352,11 +3359,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IRadi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IRadioInstanceCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IRadioInstanceCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3382,6 +3384,11 @@ pub struct IRadioInstanceCollection_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_PortableDevices\"`*"]
 #[repr(transparent)]
 pub struct IWpdSerializer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWpdSerializer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWpdSerializer {
     #[doc = "*Required features: `\"Win32_Devices_PortableDevices\"`*"]
     pub unsafe fn GetIPortableDeviceValuesFromBuffer(&self, pbuffer: &[u8]) -> ::windows::core::Result<IPortableDeviceValues> {
@@ -3420,11 +3427,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IWpdSeria
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWpdSerializer {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IWpdSerializer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IWpdSerializer {
@@ -4203,6 +4205,7 @@ impl ::core::default::Default for SMS_MESSAGE_TYPES {
 }
 unsafe impl ::windows::core::Abi for SMS_MESSAGE_TYPES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SMS_MESSAGE_TYPES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4242,6 +4245,7 @@ impl ::core::default::Default for SYSTEM_RADIO_STATE {
 }
 unsafe impl ::windows::core::Abi for SYSTEM_RADIO_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SYSTEM_RADIO_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4373,6 +4377,7 @@ impl ::core::default::Default for WPD_BITRATE_TYPES {
 }
 unsafe impl ::windows::core::Abi for WPD_BITRATE_TYPES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WPD_BITRATE_TYPES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4404,6 +4409,7 @@ impl ::core::default::Default for WPD_CAPTURE_MODES {
 }
 unsafe impl ::windows::core::Abi for WPD_CAPTURE_MODES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WPD_CAPTURE_MODES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4514,6 +4520,7 @@ impl ::core::default::Default for WPD_COLOR_CORRECTED_STATUS_VALUES {
 }
 unsafe impl ::windows::core::Abi for WPD_COLOR_CORRECTED_STATUS_VALUES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WPD_COLOR_CORRECTED_STATUS_VALUES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4545,6 +4552,7 @@ impl ::core::fmt::Debug for WPD_COMMAND_ACCESS_LOOKUP_ENTRY {
 #[cfg(feature = "Win32_UI_Shell_PropertiesSystem")]
 unsafe impl ::windows::core::Abi for WPD_COMMAND_ACCESS_LOOKUP_ENTRY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_UI_Shell_PropertiesSystem")]
 impl ::core::cmp::PartialEq for WPD_COMMAND_ACCESS_LOOKUP_ENTRY {
@@ -4587,6 +4595,7 @@ impl ::core::default::Default for WPD_COMMAND_ACCESS_TYPES {
 }
 unsafe impl ::windows::core::Abi for WPD_COMMAND_ACCESS_TYPES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WPD_COMMAND_ACCESS_TYPES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5132,6 +5141,7 @@ impl ::core::default::Default for WPD_CROPPED_STATUS_VALUES {
 }
 unsafe impl ::windows::core::Abi for WPD_CROPPED_STATUS_VALUES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WPD_CROPPED_STATUS_VALUES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5222,6 +5232,7 @@ impl ::core::default::Default for WPD_DEVICE_TRANSPORTS {
 }
 unsafe impl ::windows::core::Abi for WPD_DEVICE_TRANSPORTS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WPD_DEVICE_TRANSPORTS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5262,6 +5273,7 @@ impl ::core::default::Default for WPD_DEVICE_TYPES {
 }
 unsafe impl ::windows::core::Abi for WPD_DEVICE_TYPES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WPD_DEVICE_TYPES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5297,6 +5309,7 @@ impl ::core::default::Default for WPD_EFFECT_MODES {
 }
 unsafe impl ::windows::core::Abi for WPD_EFFECT_MODES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WPD_EFFECT_MODES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5406,6 +5419,7 @@ impl ::core::default::Default for WPD_EXPOSURE_METERING_MODES {
 }
 unsafe impl ::windows::core::Abi for WPD_EXPOSURE_METERING_MODES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WPD_EXPOSURE_METERING_MODES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5445,6 +5459,7 @@ impl ::core::default::Default for WPD_EXPOSURE_PROGRAM_MODES {
 }
 unsafe impl ::windows::core::Abi for WPD_EXPOSURE_PROGRAM_MODES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WPD_EXPOSURE_PROGRAM_MODES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5482,6 +5497,7 @@ impl ::core::default::Default for WPD_FLASH_MODES {
 }
 unsafe impl ::windows::core::Abi for WPD_FLASH_MODES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WPD_FLASH_MODES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5511,6 +5527,7 @@ impl ::core::default::Default for WPD_FOCUS_METERING_MODES {
 }
 unsafe impl ::windows::core::Abi for WPD_FOCUS_METERING_MODES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WPD_FOCUS_METERING_MODES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5542,6 +5559,7 @@ impl ::core::default::Default for WPD_FOCUS_MODES {
 }
 unsafe impl ::windows::core::Abi for WPD_FOCUS_MODES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WPD_FOCUS_MODES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5771,6 +5789,7 @@ impl ::core::default::Default for WPD_META_GENRES {
 }
 unsafe impl ::windows::core::Abi for WPD_META_GENRES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WPD_META_GENRES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -5989,6 +6008,7 @@ impl ::core::default::Default for WPD_OPERATION_STATES {
 }
 unsafe impl ::windows::core::Abi for WPD_OPERATION_STATES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WPD_OPERATION_STATES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6075,6 +6095,7 @@ impl ::core::default::Default for WPD_PARAMETER_USAGE_TYPES {
 }
 unsafe impl ::windows::core::Abi for WPD_PARAMETER_USAGE_TYPES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WPD_PARAMETER_USAGE_TYPES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6102,6 +6123,7 @@ impl ::core::default::Default for WPD_POWER_SOURCES {
 }
 unsafe impl ::windows::core::Abi for WPD_POWER_SOURCES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WPD_POWER_SOURCES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6578,6 +6600,7 @@ impl ::core::default::Default for WPD_RENDERING_INFORMATION_PROFILE_ENTRY_TYPES 
 }
 unsafe impl ::windows::core::Abi for WPD_RENDERING_INFORMATION_PROFILE_ENTRY_TYPES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WPD_RENDERING_INFORMATION_PROFILE_ENTRY_TYPES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6669,6 +6692,7 @@ impl ::core::default::Default for WPD_SECTION_DATA_UNITS_VALUES {
 }
 unsafe impl ::windows::core::Abi for WPD_SECTION_DATA_UNITS_VALUES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WPD_SECTION_DATA_UNITS_VALUES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6695,6 +6719,7 @@ impl ::core::default::Default for WPD_SERVICE_INHERITANCE_TYPES {
 }
 unsafe impl ::windows::core::Abi for WPD_SERVICE_INHERITANCE_TYPES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WPD_SERVICE_INHERITANCE_TYPES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6731,6 +6756,7 @@ impl ::core::default::Default for WPD_SMS_ENCODING_TYPES {
 }
 unsafe impl ::windows::core::Abi for WPD_SMS_ENCODING_TYPES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WPD_SMS_ENCODING_TYPES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6864,6 +6890,7 @@ impl ::core::default::Default for WPD_STORAGE_ACCESS_CAPABILITY_VALUES {
 }
 unsafe impl ::windows::core::Abi for WPD_STORAGE_ACCESS_CAPABILITY_VALUES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WPD_STORAGE_ACCESS_CAPABILITY_VALUES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6925,6 +6952,7 @@ impl ::core::default::Default for WPD_STORAGE_TYPE_VALUES {
 }
 unsafe impl ::windows::core::Abi for WPD_STORAGE_TYPE_VALUES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WPD_STORAGE_TYPE_VALUES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6958,6 +6986,7 @@ impl ::core::default::Default for WPD_STREAM_UNITS {
 }
 unsafe impl ::windows::core::Abi for WPD_STREAM_UNITS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WPD_STREAM_UNITS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7047,6 +7076,7 @@ impl ::core::default::Default for WPD_VIDEO_SCAN_TYPES {
 }
 unsafe impl ::windows::core::Abi for WPD_VIDEO_SCAN_TYPES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WPD_VIDEO_SCAN_TYPES {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7086,6 +7116,7 @@ impl ::core::default::Default for WPD_WHITE_BALANCE_SETTINGS {
 }
 unsafe impl ::windows::core::Abi for WPD_WHITE_BALANCE_SETTINGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WPD_WHITE_BALANCE_SETTINGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7119,6 +7150,7 @@ impl ::core::default::Default for WpdAttributeForm {
 }
 unsafe impl ::windows::core::Abi for WpdAttributeForm {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WpdAttributeForm {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7152,6 +7184,7 @@ impl ::core::default::Default for WpdParameterAttributeForm {
 }
 unsafe impl ::windows::core::Abi for WpdParameterAttributeForm {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WpdParameterAttributeForm {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

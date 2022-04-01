@@ -4,6 +4,11 @@ pub const E_SURFACE_CONTENTS_LOST: u32 = 2150301728u32;
 #[doc = "*Required features: `\"Win32_System_WinRT_Xaml\"`*"]
 #[repr(transparent)]
 pub struct IDesktopWindowXamlSourceNative(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDesktopWindowXamlSourceNative {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDesktopWindowXamlSourceNative {
     #[doc = "*Required features: `\"Win32_System_WinRT_Xaml\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -37,11 +42,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDesk
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDesktopWindowXamlSourceNative {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDesktopWindowXamlSourceNative {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -73,6 +73,11 @@ pub struct IDesktopWindowXamlSourceNative_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT_Xaml\"`*"]
 #[repr(transparent)]
 pub struct IDesktopWindowXamlSourceNative2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDesktopWindowXamlSourceNative2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDesktopWindowXamlSourceNative2 {
     #[doc = "*Required features: `\"Win32_System_WinRT_Xaml\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -131,11 +136,6 @@ impl<'a> ::windows::core::IntoParam<'a, IDesktopWindowXamlSourceNative> for &'a 
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IDesktopWindowXamlSourceNative2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IDesktopWindowXamlSourceNative2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -163,6 +163,11 @@ pub struct IDesktopWindowXamlSourceNative2_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT_Xaml\"`*"]
 #[repr(transparent)]
 pub struct IFindReferenceTargetsCallback(::windows::core::IUnknown);
+impl ::core::clone::Clone for IFindReferenceTargetsCallback {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IFindReferenceTargetsCallback {
     #[doc = "*Required features: `\"Win32_System_WinRT_Xaml\"`*"]
     pub unsafe fn FoundTrackerTarget<'a, Param0: ::windows::core::IntoParam<'a, IReferenceTrackerTarget>>(&self, target: Param0) -> ::windows::core::Result<()> {
@@ -189,11 +194,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IFind
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IFindReferenceTargetsCallback {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IFindReferenceTargetsCallback {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -218,6 +218,11 @@ pub struct IFindReferenceTargetsCallback_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT_Xaml\"`*"]
 #[repr(transparent)]
 pub struct IReferenceTracker(::windows::core::IUnknown);
+impl ::core::clone::Clone for IReferenceTracker {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IReferenceTracker {
     #[doc = "*Required features: `\"Win32_System_WinRT_Xaml\"`*"]
     pub unsafe fn ConnectFromTrackerSource(&self) -> ::windows::core::Result<()> {
@@ -269,11 +274,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IRefe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IReferenceTracker {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IReferenceTracker {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -304,6 +304,11 @@ pub struct IReferenceTracker_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT_Xaml\"`*"]
 #[repr(transparent)]
 pub struct IReferenceTrackerExtension(::windows::core::IUnknown);
+impl ::core::clone::Clone for IReferenceTrackerExtension {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IReferenceTrackerExtension {}
 impl ::core::convert::From<IReferenceTrackerExtension> for ::windows::core::IUnknown {
     fn from(value: IReferenceTrackerExtension) -> Self {
@@ -323,11 +328,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IReferenc
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IReferenceTrackerExtension {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IReferenceTrackerExtension {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IReferenceTrackerExtension {
@@ -353,6 +353,11 @@ pub struct IReferenceTrackerExtension_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT_Xaml\"`*"]
 #[repr(transparent)]
 pub struct IReferenceTrackerHost(::windows::core::IUnknown);
+impl ::core::clone::Clone for IReferenceTrackerHost {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IReferenceTrackerHost {
     #[doc = "*Required features: `\"Win32_System_WinRT_Xaml\"`*"]
     pub unsafe fn DisconnectUnusedReferenceSources(&self, options: XAML_REFERENCETRACKER_DISCONNECT) -> ::windows::core::Result<()> {
@@ -400,11 +405,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IRefe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IReferenceTrackerHost {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IReferenceTrackerHost {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -434,6 +434,11 @@ pub struct IReferenceTrackerHost_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT_Xaml\"`*"]
 #[repr(transparent)]
 pub struct IReferenceTrackerManager(::windows::core::IUnknown);
+impl ::core::clone::Clone for IReferenceTrackerManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IReferenceTrackerManager {
     #[doc = "*Required features: `\"Win32_System_WinRT_Xaml\"`*"]
     pub unsafe fn ReferenceTrackingStarted(&self) -> ::windows::core::Result<()> {
@@ -472,11 +477,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IRefe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IReferenceTrackerManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IReferenceTrackerManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -504,6 +504,11 @@ pub struct IReferenceTrackerManager_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT_Xaml\"`*"]
 #[repr(transparent)]
 pub struct IReferenceTrackerTarget(::windows::core::IUnknown);
+impl ::core::clone::Clone for IReferenceTrackerTarget {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IReferenceTrackerTarget {
     #[doc = "*Required features: `\"Win32_System_WinRT_Xaml\"`*"]
     pub unsafe fn AddRefFromReferenceTracker(&self) -> u32 {
@@ -542,11 +547,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IRefe
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IReferenceTrackerTarget {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IReferenceTrackerTarget {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -574,6 +574,11 @@ pub struct IReferenceTrackerTarget_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT_Xaml\"`*"]
 #[repr(transparent)]
 pub struct ISurfaceImageSourceManagerNative(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISurfaceImageSourceManagerNative {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISurfaceImageSourceManagerNative {
     #[doc = "*Required features: `\"Win32_System_WinRT_Xaml\"`*"]
     pub unsafe fn FlushAllSurfacesWithDevice<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, device: Param0) -> ::windows::core::Result<()> {
@@ -600,11 +605,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISurf
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISurfaceImageSourceManagerNative {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISurfaceImageSourceManagerNative {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -629,6 +629,11 @@ pub struct ISurfaceImageSourceManagerNative_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT_Xaml\"`*"]
 #[repr(transparent)]
 pub struct ISurfaceImageSourceNative(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISurfaceImageSourceNative {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISurfaceImageSourceNative {
     #[doc = "*Required features: `\"Win32_System_WinRT_Xaml\"`, `\"Win32_Graphics_Dxgi\"`*"]
     #[cfg(feature = "Win32_Graphics_Dxgi")]
@@ -665,11 +670,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISurf
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISurfaceImageSourceNative {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISurfaceImageSourceNative {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -702,6 +702,11 @@ pub struct ISurfaceImageSourceNative_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT_Xaml\"`*"]
 #[repr(transparent)]
 pub struct ISurfaceImageSourceNativeWithD2D(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISurfaceImageSourceNativeWithD2D {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISurfaceImageSourceNativeWithD2D {
     #[doc = "*Required features: `\"Win32_System_WinRT_Xaml\"`*"]
     pub unsafe fn SetDevice<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, device: Param0) -> ::windows::core::Result<()> {
@@ -745,11 +750,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISurf
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISurfaceImageSourceNativeWithD2D {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISurfaceImageSourceNativeWithD2D {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -781,6 +781,11 @@ pub struct ISurfaceImageSourceNativeWithD2D_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT_Xaml\"`*"]
 #[repr(transparent)]
 pub struct ISwapChainBackgroundPanelNative(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISwapChainBackgroundPanelNative {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISwapChainBackgroundPanelNative {
     #[doc = "*Required features: `\"Win32_System_WinRT_Xaml\"`, `\"Win32_Graphics_Dxgi\"`*"]
     #[cfg(feature = "Win32_Graphics_Dxgi")]
@@ -806,11 +811,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for ISwapChai
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISwapChainBackgroundPanelNative {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for ISwapChainBackgroundPanelNative {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for ISwapChainBackgroundPanelNative {
@@ -840,6 +840,11 @@ pub struct ISwapChainBackgroundPanelNative_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT_Xaml\"`*"]
 #[repr(transparent)]
 pub struct ISwapChainPanelNative(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISwapChainPanelNative {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISwapChainPanelNative {
     #[doc = "*Required features: `\"Win32_System_WinRT_Xaml\"`, `\"Win32_Graphics_Dxgi\"`*"]
     #[cfg(feature = "Win32_Graphics_Dxgi")]
@@ -865,11 +870,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for ISwapChai
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISwapChainPanelNative {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for ISwapChainPanelNative {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for ISwapChainPanelNative {
@@ -899,6 +899,11 @@ pub struct ISwapChainPanelNative_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT_Xaml\"`*"]
 #[repr(transparent)]
 pub struct ISwapChainPanelNative2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISwapChainPanelNative2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISwapChainPanelNative2 {
     #[doc = "*Required features: `\"Win32_System_WinRT_Xaml\"`, `\"Win32_Graphics_Dxgi\"`*"]
     #[cfg(feature = "Win32_Graphics_Dxgi")]
@@ -951,11 +956,6 @@ impl<'a> ::windows::core::IntoParam<'a, ISwapChainPanelNative> for &'a ISwapChai
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISwapChainPanelNative2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISwapChainPanelNative2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -983,6 +983,11 @@ pub struct ISwapChainPanelNative2_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT_Xaml\"`*"]
 #[repr(transparent)]
 pub struct ITrackerOwner(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITrackerOwner {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITrackerOwner {
     #[doc = "*Required features: `\"Win32_System_WinRT_Xaml\"`*"]
     pub unsafe fn CreateTrackerHandle(&self) -> ::windows::core::Result<*mut TrackerHandle__> {
@@ -1022,11 +1027,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITrac
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITrackerOwner {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITrackerOwner {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1054,6 +1054,11 @@ pub struct ITrackerOwner_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT_Xaml\"`*"]
 #[repr(transparent)]
 pub struct IVirtualSurfaceImageSourceNative(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVirtualSurfaceImageSourceNative {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IVirtualSurfaceImageSourceNative {
     #[doc = "*Required features: `\"Win32_System_WinRT_Xaml\"`, `\"Win32_Graphics_Dxgi\"`*"]
     #[cfg(feature = "Win32_Graphics_Dxgi")]
@@ -1139,11 +1144,6 @@ impl<'a> ::windows::core::IntoParam<'a, ISurfaceImageSourceNative> for &'a IVirt
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IVirtualSurfaceImageSourceNative {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IVirtualSurfaceImageSourceNative {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1182,6 +1182,11 @@ pub struct IVirtualSurfaceImageSourceNative_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT_Xaml\"`*"]
 #[repr(transparent)]
 pub struct IVirtualSurfaceUpdatesCallbackNative(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVirtualSurfaceUpdatesCallbackNative {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IVirtualSurfaceUpdatesCallbackNative {
     #[doc = "*Required features: `\"Win32_System_WinRT_Xaml\"`*"]
     pub unsafe fn UpdatesNeeded(&self) -> ::windows::core::Result<()> {
@@ -1206,11 +1211,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IVirtualS
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IVirtualSurfaceUpdatesCallbackNative {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IVirtualSurfaceUpdatesCallbackNative {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IVirtualSurfaceUpdatesCallbackNative {
@@ -1252,6 +1252,7 @@ impl ::core::fmt::Debug for TrackerHandle__ {
 }
 unsafe impl ::windows::core::Abi for TrackerHandle__ {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TrackerHandle__ {
     fn eq(&self, other: &Self) -> bool {
@@ -1285,6 +1286,7 @@ impl ::core::default::Default for XAML_REFERENCETRACKER_DISCONNECT {
 }
 unsafe impl ::windows::core::Abi for XAML_REFERENCETRACKER_DISCONNECT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for XAML_REFERENCETRACKER_DISCONNECT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

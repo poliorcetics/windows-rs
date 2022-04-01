@@ -55,6 +55,7 @@ impl ::core::default::Default for CROSS_SLIDE_FLAGS {
 }
 unsafe impl ::windows::core::Abi for CROSS_SLIDE_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CROSS_SLIDE_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -108,6 +109,7 @@ impl ::core::fmt::Debug for CROSS_SLIDE_PARAMETER {
 }
 unsafe impl ::windows::core::Abi for CROSS_SLIDE_PARAMETER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CROSS_SLIDE_PARAMETER {
     fn eq(&self, other: &Self) -> bool {
@@ -149,6 +151,7 @@ impl ::core::default::Default for CROSS_SLIDE_THRESHOLD {
 }
 unsafe impl ::windows::core::Abi for CROSS_SLIDE_THRESHOLD {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CROSS_SLIDE_THRESHOLD {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -345,6 +348,7 @@ impl ::core::fmt::Debug for HINTERACTIONCONTEXT {
 }
 unsafe impl ::windows::core::Abi for HINTERACTIONCONTEXT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[doc = "*Required features: `\"Win32_UI_InteractionContext\"`*"]
 #[repr(transparent)]
@@ -373,6 +377,7 @@ impl ::core::default::Default for HOLD_PARAMETER {
 }
 unsafe impl ::windows::core::Abi for HOLD_PARAMETER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HOLD_PARAMETER {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -410,6 +415,7 @@ impl ::core::default::Default for INERTIA_PARAMETER {
 }
 unsafe impl ::windows::core::Abi for INERTIA_PARAMETER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for INERTIA_PARAMETER {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -434,6 +440,7 @@ impl ::core::fmt::Debug for INTERACTION_ARGUMENTS_CROSS_SLIDE {
 }
 unsafe impl ::windows::core::Abi for INTERACTION_ARGUMENTS_CROSS_SLIDE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for INTERACTION_ARGUMENTS_CROSS_SLIDE {
     fn eq(&self, other: &Self) -> bool {
@@ -467,6 +474,7 @@ impl ::core::fmt::Debug for INTERACTION_ARGUMENTS_MANIPULATION {
 }
 unsafe impl ::windows::core::Abi for INTERACTION_ARGUMENTS_MANIPULATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for INTERACTION_ARGUMENTS_MANIPULATION {
     fn eq(&self, other: &Self) -> bool {
@@ -497,6 +505,7 @@ impl ::core::fmt::Debug for INTERACTION_ARGUMENTS_TAP {
 }
 unsafe impl ::windows::core::Abi for INTERACTION_ARGUMENTS_TAP {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for INTERACTION_ARGUMENTS_TAP {
     fn eq(&self, other: &Self) -> bool {
@@ -582,6 +591,7 @@ impl ::core::default::Default for INTERACTION_CONFIGURATION_FLAGS {
 }
 unsafe impl ::windows::core::Abi for INTERACTION_CONFIGURATION_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for INTERACTION_CONFIGURATION_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -635,6 +645,7 @@ impl ::core::fmt::Debug for INTERACTION_CONTEXT_CONFIGURATION {
 }
 unsafe impl ::windows::core::Abi for INTERACTION_CONTEXT_CONFIGURATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for INTERACTION_CONTEXT_CONFIGURATION {
     fn eq(&self, other: &Self) -> bool {
@@ -669,6 +680,7 @@ impl ::core::clone::Clone for INTERACTION_CONTEXT_OUTPUT {
 #[cfg(feature = "Win32_UI_WindowsAndMessaging")]
 unsafe impl ::windows::core::Abi for INTERACTION_CONTEXT_OUTPUT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_UI_WindowsAndMessaging")]
 impl ::core::cmp::PartialEq for INTERACTION_CONTEXT_OUTPUT {
@@ -703,6 +715,7 @@ impl ::core::clone::Clone for INTERACTION_CONTEXT_OUTPUT_0 {
 #[cfg(feature = "Win32_UI_WindowsAndMessaging")]
 unsafe impl ::windows::core::Abi for INTERACTION_CONTEXT_OUTPUT_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_UI_WindowsAndMessaging")]
 impl ::core::cmp::PartialEq for INTERACTION_CONTEXT_OUTPUT_0 {
@@ -742,6 +755,7 @@ impl ::core::clone::Clone for INTERACTION_CONTEXT_OUTPUT2 {
 #[cfg(feature = "Win32_UI_WindowsAndMessaging")]
 unsafe impl ::windows::core::Abi for INTERACTION_CONTEXT_OUTPUT2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_UI_WindowsAndMessaging")]
 impl ::core::cmp::PartialEq for INTERACTION_CONTEXT_OUTPUT2 {
@@ -776,6 +790,7 @@ impl ::core::clone::Clone for INTERACTION_CONTEXT_OUTPUT2_0 {
 #[cfg(feature = "Win32_UI_WindowsAndMessaging")]
 unsafe impl ::windows::core::Abi for INTERACTION_CONTEXT_OUTPUT2_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_UI_WindowsAndMessaging")]
 impl ::core::cmp::PartialEq for INTERACTION_CONTEXT_OUTPUT2_0 {
@@ -822,6 +837,7 @@ impl ::core::default::Default for INTERACTION_CONTEXT_PROPERTY {
 }
 unsafe impl ::windows::core::Abi for INTERACTION_CONTEXT_PROPERTY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for INTERACTION_CONTEXT_PROPERTY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -857,6 +873,7 @@ impl ::core::default::Default for INTERACTION_FLAGS {
 }
 unsafe impl ::windows::core::Abi for INTERACTION_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for INTERACTION_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -924,6 +941,7 @@ impl ::core::default::Default for INTERACTION_ID {
 }
 unsafe impl ::windows::core::Abi for INTERACTION_ID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for INTERACTION_ID {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -955,6 +973,7 @@ impl ::core::default::Default for INTERACTION_STATE {
 }
 unsafe impl ::windows::core::Abi for INTERACTION_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for INTERACTION_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -986,6 +1005,7 @@ impl ::core::default::Default for MANIPULATION_RAILS_STATE {
 }
 unsafe impl ::windows::core::Abi for MANIPULATION_RAILS_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MANIPULATION_RAILS_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1014,6 +1034,7 @@ impl ::core::fmt::Debug for MANIPULATION_TRANSFORM {
 }
 unsafe impl ::windows::core::Abi for MANIPULATION_TRANSFORM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MANIPULATION_TRANSFORM {
     fn eq(&self, other: &Self) -> bool {
@@ -1047,6 +1068,7 @@ impl ::core::fmt::Debug for MANIPULATION_VELOCITY {
 }
 unsafe impl ::windows::core::Abi for MANIPULATION_VELOCITY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MANIPULATION_VELOCITY {
     fn eq(&self, other: &Self) -> bool {
@@ -1090,6 +1112,7 @@ impl ::core::default::Default for MOUSE_WHEEL_PARAMETER {
 }
 unsafe impl ::windows::core::Abi for MOUSE_WHEEL_PARAMETER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MOUSE_WHEEL_PARAMETER {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1360,6 +1383,7 @@ impl ::core::default::Default for TAP_PARAMETER {
 }
 unsafe impl ::windows::core::Abi for TAP_PARAMETER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TAP_PARAMETER {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1389,6 +1413,7 @@ impl ::core::default::Default for TRANSLATION_PARAMETER {
 }
 unsafe impl ::windows::core::Abi for TRANSLATION_PARAMETER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TRANSLATION_PARAMETER {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

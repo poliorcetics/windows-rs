@@ -2,6 +2,11 @@
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISceneLightingEffect(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISceneLightingEffect {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISceneLightingEffect {
     type Vtable = ISceneLightingEffect_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x91bb5e52_95d1_4f8b_9a5a_6408b24b8c6a);
@@ -30,6 +35,11 @@ pub struct ISceneLightingEffect_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISceneLightingEffect2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISceneLightingEffect2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISceneLightingEffect2 {
     type Vtable = ISceneLightingEffect2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9e270e81_72f0_4c5c_95f8_8a6e0024f409);
@@ -148,11 +158,6 @@ impl SceneLightingEffect {
         unsafe { (::windows::core::Interface::vtable(this).SetReflectanceModel)(::core::mem::transmute_copy(this), value).ok() }
     }
 }
-impl ::core::clone::Clone for SceneLightingEffect {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SceneLightingEffect {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -166,7 +171,6 @@ impl ::core::fmt::Debug for SceneLightingEffect {
 }
 unsafe impl ::windows::core::RuntimeType for SceneLightingEffect {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Composition.Effects.SceneLightingEffect;{91bb5e52-95d1-4f8b-9a5a-6408b24b8c6a})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -293,6 +297,7 @@ impl ::core::default::Default for SceneLightingEffectReflectanceModel {
 }
 unsafe impl ::windows::core::Abi for SceneLightingEffectReflectanceModel {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SceneLightingEffectReflectanceModel {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -301,7 +306,6 @@ impl ::core::fmt::Debug for SceneLightingEffectReflectanceModel {
 }
 unsafe impl ::windows::core::RuntimeType for SceneLightingEffectReflectanceModel {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Composition.Effects.SceneLightingEffectReflectanceModel;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }

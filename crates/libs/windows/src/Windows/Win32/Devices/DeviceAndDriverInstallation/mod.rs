@@ -22,6 +22,7 @@ impl ::core::clone::Clone for BUSNUMBER_DES {
 }
 unsafe impl ::windows::core::Abi for BUSNUMBER_DES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for BUSNUMBER_DES {
     fn eq(&self, other: &Self) -> bool {
@@ -50,6 +51,7 @@ impl ::core::clone::Clone for BUSNUMBER_RANGE {
 }
 unsafe impl ::windows::core::Abi for BUSNUMBER_RANGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for BUSNUMBER_RANGE {
     fn eq(&self, other: &Self) -> bool {
@@ -76,6 +78,7 @@ impl ::core::clone::Clone for BUSNUMBER_RESOURCE {
 }
 unsafe impl ::windows::core::Abi for BUSNUMBER_RESOURCE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for BUSNUMBER_RESOURCE {
     fn eq(&self, other: &Self) -> bool {
@@ -109,6 +112,7 @@ impl ::core::clone::Clone for CABINET_INFO_A {
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 unsafe impl ::windows::core::Abi for CABINET_INFO_A {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 impl ::core::cmp::PartialEq for CABINET_INFO_A {
@@ -145,6 +149,7 @@ impl ::core::clone::Clone for CABINET_INFO_A {
 #[cfg(target_arch = "x86")]
 unsafe impl ::windows::core::Abi for CABINET_INFO_A {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 impl ::core::cmp::PartialEq for CABINET_INFO_A {
@@ -181,6 +186,7 @@ impl ::core::clone::Clone for CABINET_INFO_W {
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 unsafe impl ::windows::core::Abi for CABINET_INFO_W {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 impl ::core::cmp::PartialEq for CABINET_INFO_W {
@@ -217,6 +223,7 @@ impl ::core::clone::Clone for CABINET_INFO_W {
 #[cfg(target_arch = "x86")]
 unsafe impl ::windows::core::Abi for CABINET_INFO_W {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 impl ::core::cmp::PartialEq for CABINET_INFO_W {
@@ -2860,6 +2867,7 @@ impl ::core::default::Default for CM_NOTIFY_ACTION {
 }
 unsafe impl ::windows::core::Abi for CM_NOTIFY_ACTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CM_NOTIFY_ACTION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -2881,6 +2889,7 @@ impl ::core::clone::Clone for CM_NOTIFY_EVENT_DATA {
 }
 unsafe impl ::windows::core::Abi for CM_NOTIFY_EVENT_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CM_NOTIFY_EVENT_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -2908,6 +2917,7 @@ impl ::core::clone::Clone for CM_NOTIFY_EVENT_DATA_0 {
 }
 unsafe impl ::windows::core::Abi for CM_NOTIFY_EVENT_DATA_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CM_NOTIFY_EVENT_DATA_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -2941,6 +2951,7 @@ impl ::core::fmt::Debug for CM_NOTIFY_EVENT_DATA_0_0 {
 }
 unsafe impl ::windows::core::Abi for CM_NOTIFY_EVENT_DATA_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CM_NOTIFY_EVENT_DATA_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -2971,6 +2982,7 @@ impl ::core::fmt::Debug for CM_NOTIFY_EVENT_DATA_0_1 {
 }
 unsafe impl ::windows::core::Abi for CM_NOTIFY_EVENT_DATA_0_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CM_NOTIFY_EVENT_DATA_0_1 {
     fn eq(&self, other: &Self) -> bool {
@@ -3002,6 +3014,7 @@ impl ::core::fmt::Debug for CM_NOTIFY_EVENT_DATA_0_2 {
 }
 unsafe impl ::windows::core::Abi for CM_NOTIFY_EVENT_DATA_0_2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CM_NOTIFY_EVENT_DATA_0_2 {
     fn eq(&self, other: &Self) -> bool {
@@ -3035,6 +3048,7 @@ impl ::core::clone::Clone for CM_NOTIFY_FILTER {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for CM_NOTIFY_FILTER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for CM_NOTIFY_FILTER {
@@ -3069,6 +3083,7 @@ impl ::core::clone::Clone for CM_NOTIFY_FILTER_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for CM_NOTIFY_FILTER_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for CM_NOTIFY_FILTER_0 {
@@ -3107,6 +3122,7 @@ impl ::core::fmt::Debug for CM_NOTIFY_FILTER_0_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for CM_NOTIFY_FILTER_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for CM_NOTIFY_FILTER_0_0 {
@@ -3145,6 +3161,7 @@ impl ::core::fmt::Debug for CM_NOTIFY_FILTER_0_1 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for CM_NOTIFY_FILTER_0_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for CM_NOTIFY_FILTER_0_1 {
@@ -3183,6 +3200,7 @@ impl ::core::fmt::Debug for CM_NOTIFY_FILTER_0_2 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for CM_NOTIFY_FILTER_0_2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for CM_NOTIFY_FILTER_0_2 {
@@ -3227,6 +3245,7 @@ impl ::core::default::Default for CM_NOTIFY_FILTER_TYPE {
 }
 unsafe impl ::windows::core::Abi for CM_NOTIFY_FILTER_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CM_NOTIFY_FILTER_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4497,6 +4516,7 @@ impl ::core::clone::Clone for COINSTALLER_CONTEXT_DATA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for COINSTALLER_CONTEXT_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 #[cfg(feature = "Win32_Foundation")]
@@ -4538,6 +4558,7 @@ impl ::core::clone::Clone for COINSTALLER_CONTEXT_DATA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for COINSTALLER_CONTEXT_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 #[cfg(feature = "Win32_Foundation")]
@@ -4705,6 +4726,7 @@ impl ::core::default::Default for CONFIGRET {
 }
 unsafe impl ::windows::core::Abi for CONFIGRET {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CONFIGRET {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4739,6 +4761,7 @@ impl ::core::fmt::Debug for CONFLICT_DETAILS_A {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for CONFLICT_DETAILS_A {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for CONFLICT_DETAILS_A {
@@ -4777,6 +4800,7 @@ impl ::core::fmt::Debug for CONFLICT_DETAILS_W {
 }
 unsafe impl ::windows::core::Abi for CONFLICT_DETAILS_W {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CONFLICT_DETAILS_W {
     fn eq(&self, other: &Self) -> bool {
@@ -4833,6 +4857,7 @@ impl ::core::clone::Clone for CS_DES {
 }
 unsafe impl ::windows::core::Abi for CS_DES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CS_DES {
     fn eq(&self, other: &Self) -> bool {
@@ -4858,6 +4883,7 @@ impl ::core::clone::Clone for CS_RESOURCE {
 }
 unsafe impl ::windows::core::Abi for CS_RESOURCE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CS_RESOURCE {
     fn eq(&self, other: &Self) -> bool {
@@ -4889,6 +4915,7 @@ impl ::core::clone::Clone for Connection_Des_s {
 }
 unsafe impl ::windows::core::Abi for Connection_Des_s {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for Connection_Des_s {
     fn eq(&self, other: &Self) -> bool {
@@ -4914,6 +4941,7 @@ impl ::core::clone::Clone for Connection_Resource_s {
 }
 unsafe impl ::windows::core::Abi for Connection_Resource_s {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for Connection_Resource_s {
     fn eq(&self, other: &Self) -> bool {
@@ -5336,6 +5364,7 @@ impl ::core::clone::Clone for DMA_DES {
 }
 unsafe impl ::windows::core::Abi for DMA_DES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DMA_DES {
     fn eq(&self, other: &Self) -> bool {
@@ -5363,6 +5392,7 @@ impl ::core::clone::Clone for DMA_RANGE {
 }
 unsafe impl ::windows::core::Abi for DMA_RANGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DMA_RANGE {
     fn eq(&self, other: &Self) -> bool {
@@ -5389,6 +5419,7 @@ impl ::core::clone::Clone for DMA_RESOURCE {
 }
 unsafe impl ::windows::core::Abi for DMA_RESOURCE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DMA_RESOURCE {
     fn eq(&self, other: &Self) -> bool {
@@ -5605,6 +5636,7 @@ impl ::core::clone::Clone for DevPrivate_Des_s {
 }
 unsafe impl ::windows::core::Abi for DevPrivate_Des_s {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DevPrivate_Des_s {
     fn eq(&self, other: &Self) -> bool {
@@ -5632,6 +5664,7 @@ impl ::core::clone::Clone for DevPrivate_Range_s {
 }
 unsafe impl ::windows::core::Abi for DevPrivate_Range_s {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DevPrivate_Range_s {
     fn eq(&self, other: &Self) -> bool {
@@ -5658,6 +5691,7 @@ impl ::core::clone::Clone for DevPrivate_Resource_s {
 }
 unsafe impl ::windows::core::Abi for DevPrivate_Resource_s {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DevPrivate_Resource_s {
     fn eq(&self, other: &Self) -> bool {
@@ -5845,6 +5879,7 @@ impl ::core::clone::Clone for FILEPATHS_A {
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 unsafe impl ::windows::core::Abi for FILEPATHS_A {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 impl ::core::cmp::PartialEq for FILEPATHS_A {
@@ -5880,6 +5915,7 @@ impl ::core::clone::Clone for FILEPATHS_A {
 #[cfg(target_arch = "x86")]
 unsafe impl ::windows::core::Abi for FILEPATHS_A {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 impl ::core::cmp::PartialEq for FILEPATHS_A {
@@ -5918,6 +5954,7 @@ impl ::core::clone::Clone for FILEPATHS_SIGNERINFO_A {
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 unsafe impl ::windows::core::Abi for FILEPATHS_SIGNERINFO_A {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 impl ::core::cmp::PartialEq for FILEPATHS_SIGNERINFO_A {
@@ -5956,6 +5993,7 @@ impl ::core::clone::Clone for FILEPATHS_SIGNERINFO_A {
 #[cfg(target_arch = "x86")]
 unsafe impl ::windows::core::Abi for FILEPATHS_SIGNERINFO_A {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 impl ::core::cmp::PartialEq for FILEPATHS_SIGNERINFO_A {
@@ -5994,6 +6032,7 @@ impl ::core::clone::Clone for FILEPATHS_SIGNERINFO_W {
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 unsafe impl ::windows::core::Abi for FILEPATHS_SIGNERINFO_W {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 impl ::core::cmp::PartialEq for FILEPATHS_SIGNERINFO_W {
@@ -6032,6 +6071,7 @@ impl ::core::clone::Clone for FILEPATHS_SIGNERINFO_W {
 #[cfg(target_arch = "x86")]
 unsafe impl ::windows::core::Abi for FILEPATHS_SIGNERINFO_W {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 impl ::core::cmp::PartialEq for FILEPATHS_SIGNERINFO_W {
@@ -6067,6 +6107,7 @@ impl ::core::clone::Clone for FILEPATHS_W {
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 unsafe impl ::windows::core::Abi for FILEPATHS_W {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 impl ::core::cmp::PartialEq for FILEPATHS_W {
@@ -6102,6 +6143,7 @@ impl ::core::clone::Clone for FILEPATHS_W {
 #[cfg(target_arch = "x86")]
 unsafe impl ::windows::core::Abi for FILEPATHS_W {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 impl ::core::cmp::PartialEq for FILEPATHS_W {
@@ -6152,6 +6194,7 @@ impl ::core::clone::Clone for FILE_IN_CABINET_INFO_A {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for FILE_IN_CABINET_INFO_A {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 #[cfg(feature = "Win32_Foundation")]
@@ -6197,6 +6240,7 @@ impl ::core::clone::Clone for FILE_IN_CABINET_INFO_A {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for FILE_IN_CABINET_INFO_A {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 #[cfg(feature = "Win32_Foundation")]
@@ -6238,6 +6282,7 @@ impl ::core::clone::Clone for FILE_IN_CABINET_INFO_W {
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 unsafe impl ::windows::core::Abi for FILE_IN_CABINET_INFO_W {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 impl ::core::cmp::PartialEq for FILE_IN_CABINET_INFO_W {
@@ -6276,6 +6321,7 @@ impl ::core::clone::Clone for FILE_IN_CABINET_INFO_W {
 #[cfg(target_arch = "x86")]
 unsafe impl ::windows::core::Abi for FILE_IN_CABINET_INFO_W {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 impl ::core::cmp::PartialEq for FILE_IN_CABINET_INFO_W {
@@ -6583,6 +6629,7 @@ impl ::core::fmt::Debug for HCMNOTIFICATION {
 }
 unsafe impl ::windows::core::Abi for HCMNOTIFICATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[repr(C, packed(1))]
 #[doc = "*Required features: `\"Win32_Devices_DeviceAndDriverInstallation\"`, `\"Win32_Foundation\"`*"]
@@ -6603,6 +6650,7 @@ impl ::core::clone::Clone for HWProfileInfo_sA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for HWProfileInfo_sA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for HWProfileInfo_sA {
@@ -6633,6 +6681,7 @@ impl ::core::clone::Clone for HWProfileInfo_sW {
 }
 unsafe impl ::windows::core::Abi for HWProfileInfo_sW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HWProfileInfo_sW {
     fn eq(&self, other: &Self) -> bool {
@@ -6733,6 +6782,7 @@ impl ::core::clone::Clone for INFCONTEXT {
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 unsafe impl ::windows::core::Abi for INFCONTEXT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 impl ::core::cmp::PartialEq for INFCONTEXT {
@@ -6768,6 +6818,7 @@ impl ::core::clone::Clone for INFCONTEXT {
 #[cfg(target_arch = "x86")]
 unsafe impl ::windows::core::Abi for INFCONTEXT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 impl ::core::cmp::PartialEq for INFCONTEXT {
@@ -7198,6 +7249,7 @@ impl ::core::clone::Clone for IO_DES {
 }
 unsafe impl ::windows::core::Abi for IO_DES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IO_DES {
     fn eq(&self, other: &Self) -> bool {
@@ -7228,6 +7280,7 @@ impl ::core::clone::Clone for IO_RANGE {
 }
 unsafe impl ::windows::core::Abi for IO_RANGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IO_RANGE {
     fn eq(&self, other: &Self) -> bool {
@@ -7254,6 +7307,7 @@ impl ::core::clone::Clone for IO_RESOURCE {
 }
 unsafe impl ::windows::core::Abi for IO_RESOURCE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IO_RESOURCE {
     fn eq(&self, other: &Self) -> bool {
@@ -7283,6 +7337,7 @@ impl ::core::clone::Clone for IRQ_DES_32 {
 }
 unsafe impl ::windows::core::Abi for IRQ_DES_32 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IRQ_DES_32 {
     fn eq(&self, other: &Self) -> bool {
@@ -7312,6 +7367,7 @@ impl ::core::clone::Clone for IRQ_DES_64 {
 }
 unsafe impl ::windows::core::Abi for IRQ_DES_64 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IRQ_DES_64 {
     fn eq(&self, other: &Self) -> bool {
@@ -7339,6 +7395,7 @@ impl ::core::clone::Clone for IRQ_RANGE {
 }
 unsafe impl ::windows::core::Abi for IRQ_RANGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IRQ_RANGE {
     fn eq(&self, other: &Self) -> bool {
@@ -7365,6 +7422,7 @@ impl ::core::clone::Clone for IRQ_RESOURCE_32 {
 }
 unsafe impl ::windows::core::Abi for IRQ_RESOURCE_32 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IRQ_RESOURCE_32 {
     fn eq(&self, other: &Self) -> bool {
@@ -7391,6 +7449,7 @@ impl ::core::clone::Clone for IRQ_RESOURCE_64 {
 }
 unsafe impl ::windows::core::Abi for IRQ_RESOURCE_64 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IRQ_RESOURCE_64 {
     fn eq(&self, other: &Self) -> bool {
@@ -7543,6 +7602,7 @@ impl ::core::clone::Clone for MEM_DES {
 }
 unsafe impl ::windows::core::Abi for MEM_DES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MEM_DES {
     fn eq(&self, other: &Self) -> bool {
@@ -7573,6 +7633,7 @@ impl ::core::clone::Clone for MEM_RANGE {
 }
 unsafe impl ::windows::core::Abi for MEM_RANGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MEM_RANGE {
     fn eq(&self, other: &Self) -> bool {
@@ -7599,6 +7660,7 @@ impl ::core::clone::Clone for MEM_RESOURCE {
 }
 unsafe impl ::windows::core::Abi for MEM_RESOURCE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MEM_RESOURCE {
     fn eq(&self, other: &Self) -> bool {
@@ -7630,6 +7692,7 @@ impl ::core::clone::Clone for MFCARD_DES {
 }
 unsafe impl ::windows::core::Abi for MFCARD_DES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MFCARD_DES {
     fn eq(&self, other: &Self) -> bool {
@@ -7655,6 +7718,7 @@ impl ::core::clone::Clone for MFCARD_RESOURCE {
 }
 unsafe impl ::windows::core::Abi for MFCARD_RESOURCE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for MFCARD_RESOURCE {
     fn eq(&self, other: &Self) -> bool {
@@ -7687,6 +7751,7 @@ impl ::core::clone::Clone for Mem_Large_Des_s {
 }
 unsafe impl ::windows::core::Abi for Mem_Large_Des_s {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for Mem_Large_Des_s {
     fn eq(&self, other: &Self) -> bool {
@@ -7717,6 +7782,7 @@ impl ::core::clone::Clone for Mem_Large_Range_s {
 }
 unsafe impl ::windows::core::Abi for Mem_Large_Range_s {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for Mem_Large_Range_s {
     fn eq(&self, other: &Self) -> bool {
@@ -7743,6 +7809,7 @@ impl ::core::clone::Clone for Mem_Large_Resource_s {
 }
 unsafe impl ::windows::core::Abi for Mem_Large_Resource_s {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for Mem_Large_Resource_s {
     fn eq(&self, other: &Self) -> bool {
@@ -7830,6 +7897,7 @@ impl ::core::default::Default for OEM_SOURCE_MEDIA_TYPE {
 }
 unsafe impl ::windows::core::Abi for OEM_SOURCE_MEDIA_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for OEM_SOURCE_MEDIA_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -7860,6 +7928,7 @@ impl ::core::clone::Clone for PCCARD_DES {
 }
 unsafe impl ::windows::core::Abi for PCCARD_DES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PCCARD_DES {
     fn eq(&self, other: &Self) -> bool {
@@ -7885,6 +7954,7 @@ impl ::core::clone::Clone for PCCARD_RESOURCE {
 }
 unsafe impl ::windows::core::Abi for PCCARD_RESOURCE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PCCARD_RESOURCE {
     fn eq(&self, other: &Self) -> bool {
@@ -7951,6 +8021,7 @@ impl ::core::default::Default for PNP_VETO_TYPE {
 }
 unsafe impl ::windows::core::Abi for PNP_VETO_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PNP_VETO_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8038,6 +8109,7 @@ impl ::core::default::Default for SETUP_DI_BUILD_DRIVER_DRIVER_TYPE {
 }
 unsafe impl ::windows::core::Abi for SETUP_DI_BUILD_DRIVER_DRIVER_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SETUP_DI_BUILD_DRIVER_DRIVER_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8065,6 +8137,7 @@ impl ::core::default::Default for SETUP_FILE_OPERATION {
 }
 unsafe impl ::windows::core::Abi for SETUP_FILE_OPERATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SETUP_FILE_OPERATION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8115,6 +8188,7 @@ impl ::core::clone::Clone for SOURCE_MEDIA_A {
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 unsafe impl ::windows::core::Abi for SOURCE_MEDIA_A {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 impl ::core::cmp::PartialEq for SOURCE_MEDIA_A {
@@ -8152,6 +8226,7 @@ impl ::core::clone::Clone for SOURCE_MEDIA_A {
 #[cfg(target_arch = "x86")]
 unsafe impl ::windows::core::Abi for SOURCE_MEDIA_A {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 impl ::core::cmp::PartialEq for SOURCE_MEDIA_A {
@@ -8189,6 +8264,7 @@ impl ::core::clone::Clone for SOURCE_MEDIA_W {
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 unsafe impl ::windows::core::Abi for SOURCE_MEDIA_W {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 impl ::core::cmp::PartialEq for SOURCE_MEDIA_W {
@@ -8226,6 +8302,7 @@ impl ::core::clone::Clone for SOURCE_MEDIA_W {
 #[cfg(target_arch = "x86")]
 unsafe impl ::windows::core::Abi for SOURCE_MEDIA_W {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 impl ::core::cmp::PartialEq for SOURCE_MEDIA_W {
@@ -8585,6 +8662,7 @@ impl ::core::clone::Clone for SP_ALTPLATFORM_INFO_V1 {
 #[cfg(feature = "Win32_System_Diagnostics_Debug")]
 unsafe impl ::windows::core::Abi for SP_ALTPLATFORM_INFO_V1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 #[cfg(feature = "Win32_System_Diagnostics_Debug")]
@@ -8629,6 +8707,7 @@ impl ::core::clone::Clone for SP_ALTPLATFORM_INFO_V1 {
 #[cfg(feature = "Win32_System_Diagnostics_Debug")]
 unsafe impl ::windows::core::Abi for SP_ALTPLATFORM_INFO_V1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 #[cfg(feature = "Win32_System_Diagnostics_Debug")]
@@ -8675,6 +8754,7 @@ impl ::core::clone::Clone for SP_ALTPLATFORM_INFO_V2 {
 #[cfg(feature = "Win32_System_Diagnostics_Debug")]
 unsafe impl ::windows::core::Abi for SP_ALTPLATFORM_INFO_V2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 #[cfg(feature = "Win32_System_Diagnostics_Debug")]
@@ -8715,6 +8795,7 @@ impl ::core::clone::Clone for SP_ALTPLATFORM_INFO_V2_0 {
 #[cfg(feature = "Win32_System_Diagnostics_Debug")]
 unsafe impl ::windows::core::Abi for SP_ALTPLATFORM_INFO_V2_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 #[cfg(feature = "Win32_System_Diagnostics_Debug")]
@@ -8761,6 +8842,7 @@ impl ::core::clone::Clone for SP_ALTPLATFORM_INFO_V2 {
 #[cfg(feature = "Win32_System_Diagnostics_Debug")]
 unsafe impl ::windows::core::Abi for SP_ALTPLATFORM_INFO_V2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 #[cfg(feature = "Win32_System_Diagnostics_Debug")]
@@ -8801,6 +8883,7 @@ impl ::core::clone::Clone for SP_ALTPLATFORM_INFO_V2_0 {
 #[cfg(feature = "Win32_System_Diagnostics_Debug")]
 unsafe impl ::windows::core::Abi for SP_ALTPLATFORM_INFO_V2_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 #[cfg(feature = "Win32_System_Diagnostics_Debug")]
@@ -8846,6 +8929,7 @@ impl ::core::clone::Clone for SP_ALTPLATFORM_INFO_V3 {
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 unsafe impl ::windows::core::Abi for SP_ALTPLATFORM_INFO_V3 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 impl ::core::cmp::PartialEq for SP_ALTPLATFORM_INFO_V3 {
@@ -8879,6 +8963,7 @@ impl ::core::clone::Clone for SP_ALTPLATFORM_INFO_V3_0 {
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 unsafe impl ::windows::core::Abi for SP_ALTPLATFORM_INFO_V3_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 impl ::core::cmp::PartialEq for SP_ALTPLATFORM_INFO_V3_0 {
@@ -8921,6 +9006,7 @@ impl ::core::clone::Clone for SP_ALTPLATFORM_INFO_V3 {
 #[cfg(target_arch = "x86")]
 unsafe impl ::windows::core::Abi for SP_ALTPLATFORM_INFO_V3 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 impl ::core::cmp::PartialEq for SP_ALTPLATFORM_INFO_V3 {
@@ -8954,6 +9040,7 @@ impl ::core::clone::Clone for SP_ALTPLATFORM_INFO_V3_0 {
 #[cfg(target_arch = "x86")]
 unsafe impl ::windows::core::Abi for SP_ALTPLATFORM_INFO_V3_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 impl ::core::cmp::PartialEq for SP_ALTPLATFORM_INFO_V3_0 {
@@ -8998,6 +9085,7 @@ impl ::core::clone::Clone for SP_BACKUP_QUEUE_PARAMS_V1_A {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SP_BACKUP_QUEUE_PARAMS_V1_A {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 #[cfg(feature = "Win32_Foundation")]
@@ -9039,6 +9127,7 @@ impl ::core::clone::Clone for SP_BACKUP_QUEUE_PARAMS_V1_A {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SP_BACKUP_QUEUE_PARAMS_V1_A {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 #[cfg(feature = "Win32_Foundation")]
@@ -9076,6 +9165,7 @@ impl ::core::clone::Clone for SP_BACKUP_QUEUE_PARAMS_V1_W {
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 unsafe impl ::windows::core::Abi for SP_BACKUP_QUEUE_PARAMS_V1_W {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 impl ::core::cmp::PartialEq for SP_BACKUP_QUEUE_PARAMS_V1_W {
@@ -9110,6 +9200,7 @@ impl ::core::clone::Clone for SP_BACKUP_QUEUE_PARAMS_V1_W {
 #[cfg(target_arch = "x86")]
 unsafe impl ::windows::core::Abi for SP_BACKUP_QUEUE_PARAMS_V1_W {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 impl ::core::cmp::PartialEq for SP_BACKUP_QUEUE_PARAMS_V1_W {
@@ -9149,6 +9240,7 @@ impl ::core::clone::Clone for SP_BACKUP_QUEUE_PARAMS_V2_A {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SP_BACKUP_QUEUE_PARAMS_V2_A {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 #[cfg(feature = "Win32_Foundation")]
@@ -9191,6 +9283,7 @@ impl ::core::clone::Clone for SP_BACKUP_QUEUE_PARAMS_V2_A {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SP_BACKUP_QUEUE_PARAMS_V2_A {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 #[cfg(feature = "Win32_Foundation")]
@@ -9229,6 +9322,7 @@ impl ::core::clone::Clone for SP_BACKUP_QUEUE_PARAMS_V2_W {
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 unsafe impl ::windows::core::Abi for SP_BACKUP_QUEUE_PARAMS_V2_W {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 impl ::core::cmp::PartialEq for SP_BACKUP_QUEUE_PARAMS_V2_W {
@@ -9264,6 +9358,7 @@ impl ::core::clone::Clone for SP_BACKUP_QUEUE_PARAMS_V2_W {
 #[cfg(target_arch = "x86")]
 unsafe impl ::windows::core::Abi for SP_BACKUP_QUEUE_PARAMS_V2_W {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 impl ::core::cmp::PartialEq for SP_BACKUP_QUEUE_PARAMS_V2_W {
@@ -9304,6 +9399,7 @@ impl ::core::clone::Clone for SP_CLASSIMAGELIST_DATA {
 #[cfg(feature = "Win32_UI_Controls")]
 unsafe impl ::windows::core::Abi for SP_CLASSIMAGELIST_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 #[cfg(feature = "Win32_UI_Controls")]
@@ -9345,6 +9441,7 @@ impl ::core::clone::Clone for SP_CLASSIMAGELIST_DATA {
 #[cfg(feature = "Win32_UI_Controls")]
 unsafe impl ::windows::core::Abi for SP_CLASSIMAGELIST_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 #[cfg(feature = "Win32_UI_Controls")]
@@ -9381,6 +9478,7 @@ impl ::core::clone::Clone for SP_CLASSINSTALL_HEADER {
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 unsafe impl ::windows::core::Abi for SP_CLASSINSTALL_HEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 impl ::core::cmp::PartialEq for SP_CLASSINSTALL_HEADER {
@@ -9414,6 +9512,7 @@ impl ::core::clone::Clone for SP_CLASSINSTALL_HEADER {
 #[cfg(target_arch = "x86")]
 unsafe impl ::windows::core::Abi for SP_CLASSINSTALL_HEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 impl ::core::cmp::PartialEq for SP_CLASSINSTALL_HEADER {
@@ -9502,6 +9601,7 @@ impl ::core::default::Default for SP_COPY_STYLE {
 }
 unsafe impl ::windows::core::Abi for SP_COPY_STYLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SP_COPY_STYLE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9559,6 +9659,7 @@ impl ::core::clone::Clone for SP_DETECTDEVICE_PARAMS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SP_DETECTDEVICE_PARAMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 #[cfg(feature = "Win32_Foundation")]
@@ -9600,6 +9701,7 @@ impl ::core::clone::Clone for SP_DETECTDEVICE_PARAMS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SP_DETECTDEVICE_PARAMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 #[cfg(feature = "Win32_Foundation")]
@@ -9638,6 +9740,7 @@ impl ::core::clone::Clone for SP_DEVICE_INTERFACE_DATA {
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 unsafe impl ::windows::core::Abi for SP_DEVICE_INTERFACE_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 impl ::core::cmp::PartialEq for SP_DEVICE_INTERFACE_DATA {
@@ -9673,6 +9776,7 @@ impl ::core::clone::Clone for SP_DEVICE_INTERFACE_DATA {
 #[cfg(target_arch = "x86")]
 unsafe impl ::windows::core::Abi for SP_DEVICE_INTERFACE_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 impl ::core::cmp::PartialEq for SP_DEVICE_INTERFACE_DATA {
@@ -9710,6 +9814,7 @@ impl ::core::clone::Clone for SP_DEVICE_INTERFACE_DETAIL_DATA_A {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SP_DEVICE_INTERFACE_DETAIL_DATA_A {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 #[cfg(feature = "Win32_Foundation")]
@@ -9750,6 +9855,7 @@ impl ::core::clone::Clone for SP_DEVICE_INTERFACE_DETAIL_DATA_A {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SP_DEVICE_INTERFACE_DETAIL_DATA_A {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 #[cfg(feature = "Win32_Foundation")]
@@ -9786,6 +9892,7 @@ impl ::core::clone::Clone for SP_DEVICE_INTERFACE_DETAIL_DATA_W {
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 unsafe impl ::windows::core::Abi for SP_DEVICE_INTERFACE_DETAIL_DATA_W {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 impl ::core::cmp::PartialEq for SP_DEVICE_INTERFACE_DETAIL_DATA_W {
@@ -9819,6 +9926,7 @@ impl ::core::clone::Clone for SP_DEVICE_INTERFACE_DETAIL_DATA_W {
 #[cfg(target_arch = "x86")]
 unsafe impl ::windows::core::Abi for SP_DEVICE_INTERFACE_DETAIL_DATA_W {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 impl ::core::cmp::PartialEq for SP_DEVICE_INTERFACE_DETAIL_DATA_W {
@@ -9854,6 +9962,7 @@ impl ::core::clone::Clone for SP_DEVINFO_DATA {
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 unsafe impl ::windows::core::Abi for SP_DEVINFO_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 impl ::core::cmp::PartialEq for SP_DEVINFO_DATA {
@@ -9889,6 +9998,7 @@ impl ::core::clone::Clone for SP_DEVINFO_DATA {
 #[cfg(target_arch = "x86")]
 unsafe impl ::windows::core::Abi for SP_DEVINFO_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 impl ::core::cmp::PartialEq for SP_DEVINFO_DATA {
@@ -9928,6 +10038,7 @@ impl ::core::clone::Clone for SP_DEVINFO_LIST_DETAIL_DATA_A {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SP_DEVINFO_LIST_DETAIL_DATA_A {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 #[cfg(feature = "Win32_Foundation")]
@@ -9970,6 +10081,7 @@ impl ::core::clone::Clone for SP_DEVINFO_LIST_DETAIL_DATA_A {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SP_DEVINFO_LIST_DETAIL_DATA_A {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 #[cfg(feature = "Win32_Foundation")]
@@ -10012,6 +10124,7 @@ impl ::core::clone::Clone for SP_DEVINFO_LIST_DETAIL_DATA_W {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SP_DEVINFO_LIST_DETAIL_DATA_W {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 #[cfg(feature = "Win32_Foundation")]
@@ -10054,6 +10167,7 @@ impl ::core::clone::Clone for SP_DEVINFO_LIST_DETAIL_DATA_W {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SP_DEVINFO_LIST_DETAIL_DATA_W {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 #[cfg(feature = "Win32_Foundation")]
@@ -10102,6 +10216,7 @@ impl ::core::clone::Clone for SP_DEVINSTALL_PARAMS_A {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SP_DEVINSTALL_PARAMS_A {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 #[cfg(feature = "Win32_Foundation")]
@@ -10150,6 +10265,7 @@ impl ::core::clone::Clone for SP_DEVINSTALL_PARAMS_A {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SP_DEVINSTALL_PARAMS_A {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 #[cfg(feature = "Win32_Foundation")]
@@ -10198,6 +10314,7 @@ impl ::core::clone::Clone for SP_DEVINSTALL_PARAMS_W {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SP_DEVINSTALL_PARAMS_W {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 #[cfg(feature = "Win32_Foundation")]
@@ -10246,6 +10363,7 @@ impl ::core::clone::Clone for SP_DEVINSTALL_PARAMS_W {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SP_DEVINSTALL_PARAMS_W {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 #[cfg(feature = "Win32_Foundation")]
@@ -10290,6 +10408,7 @@ impl ::core::clone::Clone for SP_DRVINFO_DATA_V1_A {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SP_DRVINFO_DATA_V1_A {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 #[cfg(feature = "Win32_Foundation")]
@@ -10334,6 +10453,7 @@ impl ::core::clone::Clone for SP_DRVINFO_DATA_V1_A {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SP_DRVINFO_DATA_V1_A {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 #[cfg(feature = "Win32_Foundation")]
@@ -10374,6 +10494,7 @@ impl ::core::clone::Clone for SP_DRVINFO_DATA_V1_W {
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 unsafe impl ::windows::core::Abi for SP_DRVINFO_DATA_V1_W {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 impl ::core::cmp::PartialEq for SP_DRVINFO_DATA_V1_W {
@@ -10411,6 +10532,7 @@ impl ::core::clone::Clone for SP_DRVINFO_DATA_V1_W {
 #[cfg(target_arch = "x86")]
 unsafe impl ::windows::core::Abi for SP_DRVINFO_DATA_V1_W {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 impl ::core::cmp::PartialEq for SP_DRVINFO_DATA_V1_W {
@@ -10454,6 +10576,7 @@ impl ::core::clone::Clone for SP_DRVINFO_DATA_V2_A {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SP_DRVINFO_DATA_V2_A {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 #[cfg(feature = "Win32_Foundation")]
@@ -10500,6 +10623,7 @@ impl ::core::clone::Clone for SP_DRVINFO_DATA_V2_A {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SP_DRVINFO_DATA_V2_A {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 #[cfg(feature = "Win32_Foundation")]
@@ -10546,6 +10670,7 @@ impl ::core::clone::Clone for SP_DRVINFO_DATA_V2_W {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SP_DRVINFO_DATA_V2_W {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 #[cfg(feature = "Win32_Foundation")]
@@ -10592,6 +10717,7 @@ impl ::core::clone::Clone for SP_DRVINFO_DATA_V2_W {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SP_DRVINFO_DATA_V2_W {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 #[cfg(feature = "Win32_Foundation")]
@@ -10639,6 +10765,7 @@ impl ::core::clone::Clone for SP_DRVINFO_DETAIL_DATA_A {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SP_DRVINFO_DETAIL_DATA_A {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 #[cfg(feature = "Win32_Foundation")]
@@ -10686,6 +10813,7 @@ impl ::core::clone::Clone for SP_DRVINFO_DETAIL_DATA_A {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SP_DRVINFO_DETAIL_DATA_A {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 #[cfg(feature = "Win32_Foundation")]
@@ -10733,6 +10861,7 @@ impl ::core::clone::Clone for SP_DRVINFO_DETAIL_DATA_W {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SP_DRVINFO_DETAIL_DATA_W {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 #[cfg(feature = "Win32_Foundation")]
@@ -10780,6 +10909,7 @@ impl ::core::clone::Clone for SP_DRVINFO_DETAIL_DATA_W {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SP_DRVINFO_DETAIL_DATA_W {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 #[cfg(feature = "Win32_Foundation")]
@@ -10819,6 +10949,7 @@ impl ::core::clone::Clone for SP_DRVINSTALL_PARAMS {
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 unsafe impl ::windows::core::Abi for SP_DRVINSTALL_PARAMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 impl ::core::cmp::PartialEq for SP_DRVINSTALL_PARAMS {
@@ -10855,6 +10986,7 @@ impl ::core::clone::Clone for SP_DRVINSTALL_PARAMS {
 #[cfg(target_arch = "x86")]
 unsafe impl ::windows::core::Abi for SP_DRVINSTALL_PARAMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 impl ::core::cmp::PartialEq for SP_DRVINSTALL_PARAMS {
@@ -10889,6 +11021,7 @@ impl ::core::clone::Clone for SP_ENABLECLASS_PARAMS {
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 unsafe impl ::windows::core::Abi for SP_ENABLECLASS_PARAMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 impl ::core::cmp::PartialEq for SP_ENABLECLASS_PARAMS {
@@ -10923,6 +11056,7 @@ impl ::core::clone::Clone for SP_ENABLECLASS_PARAMS {
 #[cfg(target_arch = "x86")]
 unsafe impl ::windows::core::Abi for SP_ENABLECLASS_PARAMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 impl ::core::cmp::PartialEq for SP_ENABLECLASS_PARAMS {
@@ -10966,6 +11100,7 @@ impl ::core::clone::Clone for SP_FILE_COPY_PARAMS_A {
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 unsafe impl ::windows::core::Abi for SP_FILE_COPY_PARAMS_A {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 impl ::core::cmp::PartialEq for SP_FILE_COPY_PARAMS_A {
@@ -11009,6 +11144,7 @@ impl ::core::clone::Clone for SP_FILE_COPY_PARAMS_A {
 #[cfg(target_arch = "x86")]
 unsafe impl ::windows::core::Abi for SP_FILE_COPY_PARAMS_A {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 impl ::core::cmp::PartialEq for SP_FILE_COPY_PARAMS_A {
@@ -11052,6 +11188,7 @@ impl ::core::clone::Clone for SP_FILE_COPY_PARAMS_W {
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 unsafe impl ::windows::core::Abi for SP_FILE_COPY_PARAMS_W {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 impl ::core::cmp::PartialEq for SP_FILE_COPY_PARAMS_W {
@@ -11095,6 +11232,7 @@ impl ::core::clone::Clone for SP_FILE_COPY_PARAMS_W {
 #[cfg(target_arch = "x86")]
 unsafe impl ::windows::core::Abi for SP_FILE_COPY_PARAMS_W {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 impl ::core::cmp::PartialEq for SP_FILE_COPY_PARAMS_W {
@@ -11131,6 +11269,7 @@ impl ::core::clone::Clone for SP_INF_INFORMATION {
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 unsafe impl ::windows::core::Abi for SP_INF_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 impl ::core::cmp::PartialEq for SP_INF_INFORMATION {
@@ -11165,6 +11304,7 @@ impl ::core::clone::Clone for SP_INF_INFORMATION {
 #[cfg(target_arch = "x86")]
 unsafe impl ::windows::core::Abi for SP_INF_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 impl ::core::cmp::PartialEq for SP_INF_INFORMATION {
@@ -11204,6 +11344,7 @@ impl ::core::clone::Clone for SP_INF_SIGNER_INFO_V1_A {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SP_INF_SIGNER_INFO_V1_A {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 #[cfg(feature = "Win32_Foundation")]
@@ -11246,6 +11387,7 @@ impl ::core::clone::Clone for SP_INF_SIGNER_INFO_V1_A {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SP_INF_SIGNER_INFO_V1_A {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 #[cfg(feature = "Win32_Foundation")]
@@ -11284,6 +11426,7 @@ impl ::core::clone::Clone for SP_INF_SIGNER_INFO_V1_W {
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 unsafe impl ::windows::core::Abi for SP_INF_SIGNER_INFO_V1_W {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 impl ::core::cmp::PartialEq for SP_INF_SIGNER_INFO_V1_W {
@@ -11319,6 +11462,7 @@ impl ::core::clone::Clone for SP_INF_SIGNER_INFO_V1_W {
 #[cfg(target_arch = "x86")]
 unsafe impl ::windows::core::Abi for SP_INF_SIGNER_INFO_V1_W {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 impl ::core::cmp::PartialEq for SP_INF_SIGNER_INFO_V1_W {
@@ -11359,6 +11503,7 @@ impl ::core::clone::Clone for SP_INF_SIGNER_INFO_V2_A {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SP_INF_SIGNER_INFO_V2_A {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 #[cfg(feature = "Win32_Foundation")]
@@ -11402,6 +11547,7 @@ impl ::core::clone::Clone for SP_INF_SIGNER_INFO_V2_A {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SP_INF_SIGNER_INFO_V2_A {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 #[cfg(feature = "Win32_Foundation")]
@@ -11441,6 +11587,7 @@ impl ::core::clone::Clone for SP_INF_SIGNER_INFO_V2_W {
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 unsafe impl ::windows::core::Abi for SP_INF_SIGNER_INFO_V2_W {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 impl ::core::cmp::PartialEq for SP_INF_SIGNER_INFO_V2_W {
@@ -11477,6 +11624,7 @@ impl ::core::clone::Clone for SP_INF_SIGNER_INFO_V2_W {
 #[cfg(target_arch = "x86")]
 unsafe impl ::windows::core::Abi for SP_INF_SIGNER_INFO_V2_W {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 impl ::core::cmp::PartialEq for SP_INF_SIGNER_INFO_V2_W {
@@ -11515,6 +11663,7 @@ impl ::core::default::Default for SP_INF_STYLE {
 }
 unsafe impl ::windows::core::Abi for SP_INF_STYLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SP_INF_STYLE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11549,6 +11698,7 @@ impl ::core::clone::Clone for SP_INSTALLWIZARD_DATA {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_UI_Controls"))]
 unsafe impl ::windows::core::Abi for SP_INSTALLWIZARD_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_UI_Controls"))]
@@ -11595,6 +11745,7 @@ impl ::core::clone::Clone for SP_INSTALLWIZARD_DATA {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_UI_Controls"))]
 unsafe impl ::windows::core::Abi for SP_INSTALLWIZARD_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_UI_Controls"))]
@@ -11640,6 +11791,7 @@ impl ::core::clone::Clone for SP_NEWDEVICEWIZARD_DATA {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_UI_Controls"))]
 unsafe impl ::windows::core::Abi for SP_NEWDEVICEWIZARD_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_UI_Controls"))]
@@ -11683,6 +11835,7 @@ impl ::core::clone::Clone for SP_NEWDEVICEWIZARD_DATA {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_UI_Controls"))]
 unsafe impl ::windows::core::Abi for SP_NEWDEVICEWIZARD_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_UI_Controls"))]
@@ -11724,6 +11877,7 @@ impl ::core::clone::Clone for SP_ORIGINAL_FILE_INFO_A {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SP_ORIGINAL_FILE_INFO_A {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 #[cfg(feature = "Win32_Foundation")]
@@ -11765,6 +11919,7 @@ impl ::core::clone::Clone for SP_ORIGINAL_FILE_INFO_A {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SP_ORIGINAL_FILE_INFO_A {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 #[cfg(feature = "Win32_Foundation")]
@@ -11802,6 +11957,7 @@ impl ::core::clone::Clone for SP_ORIGINAL_FILE_INFO_W {
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 unsafe impl ::windows::core::Abi for SP_ORIGINAL_FILE_INFO_W {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 impl ::core::cmp::PartialEq for SP_ORIGINAL_FILE_INFO_W {
@@ -11836,6 +11992,7 @@ impl ::core::clone::Clone for SP_ORIGINAL_FILE_INFO_W {
 #[cfg(target_arch = "x86")]
 unsafe impl ::windows::core::Abi for SP_ORIGINAL_FILE_INFO_W {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 impl ::core::cmp::PartialEq for SP_ORIGINAL_FILE_INFO_W {
@@ -11869,6 +12026,7 @@ impl ::core::clone::Clone for SP_POWERMESSAGEWAKE_PARAMS_A {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SP_POWERMESSAGEWAKE_PARAMS_A {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for SP_POWERMESSAGEWAKE_PARAMS_A {
@@ -11902,6 +12060,7 @@ impl ::core::clone::Clone for SP_POWERMESSAGEWAKE_PARAMS_W {
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 unsafe impl ::windows::core::Abi for SP_POWERMESSAGEWAKE_PARAMS_W {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 impl ::core::cmp::PartialEq for SP_POWERMESSAGEWAKE_PARAMS_W {
@@ -11935,6 +12094,7 @@ impl ::core::clone::Clone for SP_POWERMESSAGEWAKE_PARAMS_W {
 #[cfg(target_arch = "x86")]
 unsafe impl ::windows::core::Abi for SP_POWERMESSAGEWAKE_PARAMS_W {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 impl ::core::cmp::PartialEq for SP_POWERMESSAGEWAKE_PARAMS_W {
@@ -11970,6 +12130,7 @@ impl ::core::clone::Clone for SP_PROPCHANGE_PARAMS {
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 unsafe impl ::windows::core::Abi for SP_PROPCHANGE_PARAMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 impl ::core::cmp::PartialEq for SP_PROPCHANGE_PARAMS {
@@ -12005,6 +12166,7 @@ impl ::core::clone::Clone for SP_PROPCHANGE_PARAMS {
 #[cfg(target_arch = "x86")]
 unsafe impl ::windows::core::Abi for SP_PROPCHANGE_PARAMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 impl ::core::cmp::PartialEq for SP_PROPCHANGE_PARAMS {
@@ -12040,6 +12202,7 @@ impl ::core::clone::Clone for SP_PROPSHEETPAGE_REQUEST {
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 unsafe impl ::windows::core::Abi for SP_PROPSHEETPAGE_REQUEST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 impl ::core::cmp::PartialEq for SP_PROPSHEETPAGE_REQUEST {
@@ -12075,6 +12238,7 @@ impl ::core::clone::Clone for SP_PROPSHEETPAGE_REQUEST {
 #[cfg(target_arch = "x86")]
 unsafe impl ::windows::core::Abi for SP_PROPSHEETPAGE_REQUEST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 impl ::core::cmp::PartialEq for SP_PROPSHEETPAGE_REQUEST {
@@ -12110,6 +12274,7 @@ impl ::core::clone::Clone for SP_REGISTER_CONTROL_STATUSA {
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 unsafe impl ::windows::core::Abi for SP_REGISTER_CONTROL_STATUSA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 impl ::core::cmp::PartialEq for SP_REGISTER_CONTROL_STATUSA {
@@ -12145,6 +12310,7 @@ impl ::core::clone::Clone for SP_REGISTER_CONTROL_STATUSA {
 #[cfg(target_arch = "x86")]
 unsafe impl ::windows::core::Abi for SP_REGISTER_CONTROL_STATUSA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 impl ::core::cmp::PartialEq for SP_REGISTER_CONTROL_STATUSA {
@@ -12180,6 +12346,7 @@ impl ::core::clone::Clone for SP_REGISTER_CONTROL_STATUSW {
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 unsafe impl ::windows::core::Abi for SP_REGISTER_CONTROL_STATUSW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 impl ::core::cmp::PartialEq for SP_REGISTER_CONTROL_STATUSW {
@@ -12215,6 +12382,7 @@ impl ::core::clone::Clone for SP_REGISTER_CONTROL_STATUSW {
 #[cfg(target_arch = "x86")]
 unsafe impl ::windows::core::Abi for SP_REGISTER_CONTROL_STATUSW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 impl ::core::cmp::PartialEq for SP_REGISTER_CONTROL_STATUSW {
@@ -12249,6 +12417,7 @@ impl ::core::clone::Clone for SP_REMOVEDEVICE_PARAMS {
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 unsafe impl ::windows::core::Abi for SP_REMOVEDEVICE_PARAMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 impl ::core::cmp::PartialEq for SP_REMOVEDEVICE_PARAMS {
@@ -12283,6 +12452,7 @@ impl ::core::clone::Clone for SP_REMOVEDEVICE_PARAMS {
 #[cfg(target_arch = "x86")]
 unsafe impl ::windows::core::Abi for SP_REMOVEDEVICE_PARAMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 impl ::core::cmp::PartialEq for SP_REMOVEDEVICE_PARAMS {
@@ -12320,6 +12490,7 @@ impl ::core::clone::Clone for SP_SELECTDEVICE_PARAMS_A {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SP_SELECTDEVICE_PARAMS_A {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for SP_SELECTDEVICE_PARAMS_A {
@@ -12356,6 +12527,7 @@ impl ::core::clone::Clone for SP_SELECTDEVICE_PARAMS_W {
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 unsafe impl ::windows::core::Abi for SP_SELECTDEVICE_PARAMS_W {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 impl ::core::cmp::PartialEq for SP_SELECTDEVICE_PARAMS_W {
@@ -12392,6 +12564,7 @@ impl ::core::clone::Clone for SP_SELECTDEVICE_PARAMS_W {
 #[cfg(target_arch = "x86")]
 unsafe impl ::windows::core::Abi for SP_SELECTDEVICE_PARAMS_W {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 impl ::core::cmp::PartialEq for SP_SELECTDEVICE_PARAMS_W {
@@ -12426,6 +12599,7 @@ impl ::core::clone::Clone for SP_TROUBLESHOOTER_PARAMS_A {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for SP_TROUBLESHOOTER_PARAMS_A {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for SP_TROUBLESHOOTER_PARAMS_A {
@@ -12460,6 +12634,7 @@ impl ::core::clone::Clone for SP_TROUBLESHOOTER_PARAMS_W {
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 unsafe impl ::windows::core::Abi for SP_TROUBLESHOOTER_PARAMS_W {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 impl ::core::cmp::PartialEq for SP_TROUBLESHOOTER_PARAMS_W {
@@ -12494,6 +12669,7 @@ impl ::core::clone::Clone for SP_TROUBLESHOOTER_PARAMS_W {
 #[cfg(target_arch = "x86")]
 unsafe impl ::windows::core::Abi for SP_TROUBLESHOOTER_PARAMS_W {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 impl ::core::cmp::PartialEq for SP_TROUBLESHOOTER_PARAMS_W {
@@ -12528,6 +12704,7 @@ impl ::core::clone::Clone for SP_UNREMOVEDEVICE_PARAMS {
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 unsafe impl ::windows::core::Abi for SP_UNREMOVEDEVICE_PARAMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(any(target_arch = "aarch64", target_arch = "x86_64"))]
 impl ::core::cmp::PartialEq for SP_UNREMOVEDEVICE_PARAMS {
@@ -12562,6 +12739,7 @@ impl ::core::clone::Clone for SP_UNREMOVEDEVICE_PARAMS {
 #[cfg(target_arch = "x86")]
 unsafe impl ::windows::core::Abi for SP_UNREMOVEDEVICE_PARAMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(target_arch = "x86")]
 impl ::core::cmp::PartialEq for SP_UNREMOVEDEVICE_PARAMS {
@@ -15516,6 +15694,7 @@ impl ::core::default::Default for SetupFileLogInfo {
 }
 unsafe impl ::windows::core::Abi for SetupFileLogInfo {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SetupFileLogInfo {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

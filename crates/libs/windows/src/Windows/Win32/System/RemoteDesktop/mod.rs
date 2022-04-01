@@ -54,6 +54,7 @@ impl ::core::fmt::Debug for AAAccountingData {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for AAAccountingData {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for AAAccountingData {
@@ -94,6 +95,7 @@ impl ::core::default::Default for AAAccountingDataType {
 }
 unsafe impl ::windows::core::Abi for AAAccountingDataType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AAAccountingDataType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -143,6 +145,7 @@ impl ::core::default::Default for AAAuthSchemes {
 }
 unsafe impl ::windows::core::Abi for AAAuthSchemes {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AAAuthSchemes {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -172,6 +175,7 @@ impl ::core::default::Default for AATrustClassID {
 }
 unsafe impl ::windows::core::Abi for AATrustClassID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AATrustClassID {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -204,6 +208,7 @@ impl ::core::fmt::Debug for AE_CURRENT_POSITION {
 }
 unsafe impl ::windows::core::Abi for AE_CURRENT_POSITION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for AE_CURRENT_POSITION {
     fn eq(&self, other: &Self) -> bool {
@@ -241,6 +246,7 @@ impl ::core::default::Default for AE_POSITION_FLAGS {
 }
 unsafe impl ::windows::core::Abi for AE_POSITION_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AE_POSITION_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -266,6 +272,7 @@ impl ::core::fmt::Debug for BITMAP_RENDERER_STATISTICS {
 }
 unsafe impl ::windows::core::Abi for BITMAP_RENDERER_STATISTICS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for BITMAP_RENDERER_STATISTICS {
     fn eq(&self, other: &Self) -> bool {
@@ -300,6 +307,7 @@ impl ::core::clone::Clone for CHANNEL_DEF {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for CHANNEL_DEF {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for CHANNEL_DEF {
@@ -343,6 +351,7 @@ impl ::core::fmt::Debug for CHANNEL_ENTRY_POINTS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for CHANNEL_ENTRY_POINTS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for CHANNEL_ENTRY_POINTS {
@@ -427,6 +436,7 @@ impl ::core::fmt::Debug for CHANNEL_PDU_HEADER {
 }
 unsafe impl ::windows::core::Abi for CHANNEL_PDU_HEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CHANNEL_PDU_HEADER {
     fn eq(&self, other: &Self) -> bool {
@@ -505,6 +515,7 @@ impl ::core::fmt::Debug for CLIENT_DISPLAY {
 }
 unsafe impl ::windows::core::Abi for CLIENT_DISPLAY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CLIENT_DISPLAY {
     fn eq(&self, other: &Self) -> bool {
@@ -540,6 +551,7 @@ impl ::core::default::Default for CLIENT_MESSAGE_TYPE {
 }
 unsafe impl ::windows::core::Abi for CLIENT_MESSAGE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CLIENT_MESSAGE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -581,6 +593,7 @@ impl ::core::default::Default for CONNECTION_CHANGE_NOTIFICATION {
 }
 unsafe impl ::windows::core::Abi for CONNECTION_CHANGE_NOTIFICATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CONNECTION_CHANGE_NOTIFICATION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -691,11 +704,18 @@ impl ::core::fmt::Debug for HwtsVirtualChannelHandle {
 }
 unsafe impl ::windows::core::Abi for HwtsVirtualChannelHandle {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`, `\"Win32_System_Com\"`*"]
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IADsTSUserEx(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IADsTSUserEx {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IADsTSUserEx {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`, `\"Win32_Foundation\"`*"]
@@ -893,12 +913,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IADsTSUse
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IADsTSUserEx {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IADsTSUserEx {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -986,6 +1000,11 @@ pub struct IADsTSUserEx_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct IAudioDeviceEndpoint(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAudioDeviceEndpoint {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAudioDeviceEndpoint {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
     pub unsafe fn SetBuffer(&self, maxperiod: i64, u32latencycoefficient: u32) -> ::windows::core::Result<()> {
@@ -1028,11 +1047,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAudi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAudioDeviceEndpoint {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAudioDeviceEndpoint {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1066,6 +1080,11 @@ pub struct IAudioDeviceEndpoint_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct IAudioEndpoint(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAudioEndpoint {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAudioEndpoint {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`, `\"Win32_Media_Audio\"`*"]
     #[cfg(feature = "Win32_Media_Audio")]
@@ -1113,11 +1132,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAudi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAudioEndpoint {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAudioEndpoint {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1152,6 +1166,11 @@ pub struct IAudioEndpoint_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct IAudioEndpointControl(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAudioEndpointControl {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAudioEndpointControl {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
     pub unsafe fn Start(&self) -> ::windows::core::Result<()> {
@@ -1186,11 +1205,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAudi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAudioEndpointControl {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAudioEndpointControl {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1217,6 +1231,11 @@ pub struct IAudioEndpointControl_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct IAudioEndpointRT(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAudioEndpointRT {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAudioEndpointRT {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
     pub unsafe fn GetCurrentPadding(&self, ppadding: *mut i64, paecurrentposition: *mut AE_CURRENT_POSITION) {
@@ -1255,11 +1274,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAudi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAudioEndpointRT {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAudioEndpointRT {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1287,6 +1301,11 @@ pub struct IAudioEndpointRT_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct IAudioInputEndpointRT(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAudioInputEndpointRT {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAudioInputEndpointRT {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`, `\"Win32_Media_Audio_Apo\"`*"]
     #[cfg(feature = "Win32_Media_Audio_Apo")]
@@ -1322,11 +1341,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAudi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAudioInputEndpointRT {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAudioInputEndpointRT {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1356,6 +1370,11 @@ pub struct IAudioInputEndpointRT_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct IAudioOutputEndpointRT(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAudioOutputEndpointRT {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAudioOutputEndpointRT {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
     pub unsafe fn GetOutputDataPointer(&self, u32framecount: u32, paetimestamp: *const AE_CURRENT_POSITION) -> usize {
@@ -1391,11 +1410,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAudi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAudioOutputEndpointRT {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAudioOutputEndpointRT {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1426,6 +1440,12 @@ pub struct IAudioOutputEndpointRT_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IRemoteDesktopClient(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IRemoteDesktopClient {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IRemoteDesktopClient {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
@@ -1527,12 +1547,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IRemoteDe
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IRemoteDesktopClient {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IRemoteDesktopClient {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1589,6 +1603,12 @@ pub struct IRemoteDesktopClient_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IRemoteDesktopClientActions(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IRemoteDesktopClientActions {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IRemoteDesktopClientActions {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
@@ -1659,12 +1679,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IRemoteDe
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IRemoteDesktopClientActions {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IRemoteDesktopClientActions {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1700,6 +1714,12 @@ pub struct IRemoteDesktopClientActions_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IRemoteDesktopClientSettings(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IRemoteDesktopClientSettings {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IRemoteDesktopClientSettings {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`, `\"Win32_Foundation\"`*"]
@@ -1774,12 +1794,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IRemoteDe
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IRemoteDesktopClientSettings {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IRemoteDesktopClientSettings {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1824,6 +1838,12 @@ pub struct IRemoteDesktopClientSettings_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IRemoteDesktopClientTouchPointer(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IRemoteDesktopClientTouchPointer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IRemoteDesktopClientTouchPointer {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
@@ -1903,12 +1923,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IRemoteDe
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IRemoteDesktopClientTouchPointer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IRemoteDesktopClientTouchPointer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1942,6 +1956,11 @@ pub struct IRemoteDesktopClientTouchPointer_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct IRemoteSystemAdditionalInfoProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRemoteSystemAdditionalInfoProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRemoteSystemAdditionalInfoProvider {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
     pub unsafe fn GetAdditionalInfo<T: ::windows::core::Interface>(&self, deduplicationid: *mut ::windows::core::HSTRING) -> ::windows::core::Result<T> {
@@ -1969,11 +1988,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IRemo
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IRemoteSystemAdditionalInfoProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IRemoteSystemAdditionalInfoProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1998,6 +2012,11 @@ pub struct IRemoteSystemAdditionalInfoProvider_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct ITSGAccountingEngine(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITSGAccountingEngine {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITSGAccountingEngine {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -2023,11 +2042,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for ITSGAccou
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITSGAccountingEngine {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for ITSGAccountingEngine {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for ITSGAccountingEngine {
@@ -2057,6 +2071,11 @@ pub struct ITSGAccountingEngine_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct ITSGAuthenticateUserSink(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITSGAuthenticateUserSink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITSGAuthenticateUserSink {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -2096,11 +2115,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITSGA
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITSGAuthenticateUserSink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITSGAuthenticateUserSink {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2131,6 +2145,11 @@ pub struct ITSGAuthenticateUserSink_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct ITSGAuthenticationEngine(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITSGAuthenticationEngine {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITSGAuthenticationEngine {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
     pub unsafe fn AuthenticateUser<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::GUID>, Param4: ::windows::core::IntoParam<'a, ITSGAuthenticateUserSink>>(&self, mainsessionid: Param0, cookiedata: *const u8, numcookiebytes: u32, context: usize, psink: Param4) -> ::windows::core::Result<()> {
@@ -2161,11 +2180,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITSGA
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITSGAuthenticationEngine {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITSGAuthenticationEngine {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2191,6 +2205,11 @@ pub struct ITSGAuthenticationEngine_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct ITSGAuthorizeConnectionSink(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITSGAuthorizeConnectionSink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITSGAuthorizeConnectionSink {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
     pub unsafe fn OnConnectionAuthorized<'a, Param1: ::windows::core::IntoParam<'a, ::windows::core::GUID>>(&self, hrin: ::windows::core::HRESULT, mainsessionid: Param1, pbsohresponse: &[u8], idletimeout: u32, sessiontimeout: u32, sessiontimeoutaction: SESSION_TIMEOUT_ACTION_TYPE, trustclass: AATrustClassID, policyattributes: *const u32) -> ::windows::core::Result<()> {
@@ -2217,11 +2236,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITSGA
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITSGAuthorizeConnectionSink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITSGAuthorizeConnectionSink {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2246,6 +2260,11 @@ pub struct ITSGAuthorizeConnectionSink_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct ITSGAuthorizeResourceSink(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITSGAuthorizeResourceSink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITSGAuthorizeResourceSink {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -2271,11 +2290,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for ITSGAutho
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITSGAuthorizeResourceSink {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for ITSGAuthorizeResourceSink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for ITSGAuthorizeResourceSink {
@@ -2305,6 +2319,11 @@ pub struct ITSGAuthorizeResourceSink_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct ITSGPolicyEngine(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITSGPolicyEngine {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITSGPolicyEngine {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -2362,11 +2381,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITSGP
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITSGPolicyEngine {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITSGPolicyEngine {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2403,6 +2417,11 @@ pub struct ITSGPolicyEngine_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct ITsSbBaseNotifySink(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITsSbBaseNotifySink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITsSbBaseNotifySink {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
     pub unsafe fn OnError(&self, hrerror: ::windows::core::HRESULT) -> ::windows::core::Result<()> {
@@ -2433,11 +2452,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITsSb
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITsSbBaseNotifySink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITsSbBaseNotifySink {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2463,6 +2477,11 @@ pub struct ITsSbBaseNotifySink_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct ITsSbClientConnection(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITsSbClientConnection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITsSbClientConnection {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -2568,11 +2587,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITsSb
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITsSbClientConnection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITsSbClientConnection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2639,6 +2653,12 @@ pub struct ITsSbClientConnection_Vtbl {
 #[cfg(feature = "Win32_System_Com_StructuredStorage")]
 #[repr(transparent)]
 pub struct ITsSbClientConnectionPropertySet(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com_StructuredStorage")]
+impl ::core::clone::Clone for ITsSbClientConnectionPropertySet {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com_StructuredStorage")]
 impl ITsSbClientConnectionPropertySet {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com_StructuredStorage\"`, `\"Win32_System_Ole\"`*"]
@@ -2725,12 +2745,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITsSbPropertySet> for &'a ITsSbClientCon
     }
 }
 #[cfg(feature = "Win32_System_Com_StructuredStorage")]
-impl ::core::clone::Clone for ITsSbClientConnectionPropertySet {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com_StructuredStorage")]
 impl ::core::cmp::PartialEq for ITsSbClientConnectionPropertySet {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2758,6 +2772,11 @@ pub struct ITsSbClientConnectionPropertySet_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct ITsSbEnvironment(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITsSbEnvironment {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITsSbEnvironment {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -2802,11 +2821,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITsSb
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITsSbEnvironment {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITsSbEnvironment {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2844,6 +2858,12 @@ pub struct ITsSbEnvironment_Vtbl {
 #[cfg(feature = "Win32_System_Com_StructuredStorage")]
 #[repr(transparent)]
 pub struct ITsSbEnvironmentPropertySet(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com_StructuredStorage")]
+impl ::core::clone::Clone for ITsSbEnvironmentPropertySet {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com_StructuredStorage")]
 impl ITsSbEnvironmentPropertySet {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com_StructuredStorage\"`, `\"Win32_System_Ole\"`*"]
@@ -2930,12 +2950,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITsSbPropertySet> for &'a ITsSbEnvironme
     }
 }
 #[cfg(feature = "Win32_System_Com_StructuredStorage")]
-impl ::core::clone::Clone for ITsSbEnvironmentPropertySet {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com_StructuredStorage")]
 impl ::core::cmp::PartialEq for ITsSbEnvironmentPropertySet {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2963,6 +2977,11 @@ pub struct ITsSbEnvironmentPropertySet_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct ITsSbFilterPluginStore(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITsSbFilterPluginStore {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITsSbFilterPluginStore {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`, `\"Win32_System_Com_StructuredStorage\"`*"]
     #[cfg(feature = "Win32_System_Com_StructuredStorage")]
@@ -3001,11 +3020,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITsSb
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITsSbFilterPluginStore {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITsSbFilterPluginStore {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3041,6 +3055,11 @@ pub struct ITsSbFilterPluginStore_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct ITsSbGenericNotifySink(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITsSbGenericNotifySink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITsSbGenericNotifySink {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
     pub unsafe fn OnCompleted(&self, status: ::windows::core::HRESULT) -> ::windows::core::Result<()> {
@@ -3073,11 +3092,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITsSb
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITsSbGenericNotifySink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITsSbGenericNotifySink {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3106,6 +3120,11 @@ pub struct ITsSbGenericNotifySink_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct ITsSbGlobalStore(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITsSbGlobalStore {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITsSbGlobalStore {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -3165,11 +3184,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITsSb
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITsSbGlobalStore {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITsSbGlobalStore {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3221,6 +3235,11 @@ pub struct ITsSbGlobalStore_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct ITsSbLoadBalanceResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITsSbLoadBalanceResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITsSbLoadBalanceResult {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -3247,11 +3266,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for ITsSbLoad
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITsSbLoadBalanceResult {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for ITsSbLoadBalanceResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for ITsSbLoadBalanceResult {
@@ -3281,6 +3295,11 @@ pub struct ITsSbLoadBalanceResult_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct ITsSbLoadBalancing(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITsSbLoadBalancing {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITsSbLoadBalancing {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`, `\"Win32_System_Com_StructuredStorage\"`*"]
     #[cfg(feature = "Win32_System_Com_StructuredStorage")]
@@ -3336,11 +3355,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITsSbPlugin> for &'a ITsSbLoadBalancing 
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITsSbLoadBalancing {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITsSbLoadBalancing {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3365,6 +3379,11 @@ pub struct ITsSbLoadBalancing_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct ITsSbLoadBalancingNotifySink(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITsSbLoadBalancingNotifySink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITsSbLoadBalancingNotifySink {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
     pub unsafe fn OnError(&self, hrerror: ::windows::core::HRESULT) -> ::windows::core::Result<()> {
@@ -3420,11 +3439,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITsSbBaseNotifySink> for &'a ITsSbLoadBa
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITsSbLoadBalancingNotifySink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITsSbLoadBalancingNotifySink {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3452,6 +3466,11 @@ pub struct ITsSbLoadBalancingNotifySink_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct ITsSbOrchestration(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITsSbOrchestration {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITsSbOrchestration {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`, `\"Win32_System_Com_StructuredStorage\"`*"]
     #[cfg(feature = "Win32_System_Com_StructuredStorage")]
@@ -3507,11 +3526,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITsSbPlugin> for &'a ITsSbOrchestration 
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITsSbOrchestration {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITsSbOrchestration {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3536,6 +3550,11 @@ pub struct ITsSbOrchestration_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct ITsSbOrchestrationNotifySink(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITsSbOrchestrationNotifySink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITsSbOrchestrationNotifySink {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
     pub unsafe fn OnError(&self, hrerror: ::windows::core::HRESULT) -> ::windows::core::Result<()> {
@@ -3590,11 +3609,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITsSbBaseNotifySink> for &'a ITsSbOrches
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITsSbOrchestrationNotifySink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITsSbOrchestrationNotifySink {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3619,6 +3633,11 @@ pub struct ITsSbOrchestrationNotifySink_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct ITsSbPlacement(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITsSbPlacement {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITsSbPlacement {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`, `\"Win32_System_Com_StructuredStorage\"`*"]
     #[cfg(feature = "Win32_System_Com_StructuredStorage")]
@@ -3674,11 +3693,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITsSbPlugin> for &'a ITsSbPlacement {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITsSbPlacement {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITsSbPlacement {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3703,6 +3717,11 @@ pub struct ITsSbPlacement_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct ITsSbPlacementNotifySink(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITsSbPlacementNotifySink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITsSbPlacementNotifySink {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
     pub unsafe fn OnError(&self, hrerror: ::windows::core::HRESULT) -> ::windows::core::Result<()> {
@@ -3757,11 +3776,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITsSbBaseNotifySink> for &'a ITsSbPlacem
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITsSbPlacementNotifySink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITsSbPlacementNotifySink {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3786,6 +3800,11 @@ pub struct ITsSbPlacementNotifySink_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct ITsSbPlugin(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITsSbPlugin {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITsSbPlugin {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`, `\"Win32_System_Com_StructuredStorage\"`*"]
     #[cfg(feature = "Win32_System_Com_StructuredStorage")]
@@ -3817,11 +3836,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITsSb
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITsSbPlugin {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITsSbPlugin {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3850,6 +3864,11 @@ pub struct ITsSbPlugin_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct ITsSbPluginNotifySink(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITsSbPluginNotifySink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITsSbPluginNotifySink {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
     pub unsafe fn OnError(&self, hrerror: ::windows::core::HRESULT) -> ::windows::core::Result<()> {
@@ -3908,11 +3927,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITsSbBaseNotifySink> for &'a ITsSbPlugin
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITsSbPluginNotifySink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITsSbPluginNotifySink {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3939,6 +3953,12 @@ pub struct ITsSbPluginNotifySink_Vtbl {
 #[cfg(feature = "Win32_System_Com_StructuredStorage")]
 #[repr(transparent)]
 pub struct ITsSbPluginPropertySet(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com_StructuredStorage")]
+impl ::core::clone::Clone for ITsSbPluginPropertySet {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com_StructuredStorage")]
 impl ITsSbPluginPropertySet {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com_StructuredStorage\"`, `\"Win32_System_Ole\"`*"]
@@ -4025,12 +4045,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITsSbPropertySet> for &'a ITsSbPluginPro
     }
 }
 #[cfg(feature = "Win32_System_Com_StructuredStorage")]
-impl ::core::clone::Clone for ITsSbPluginPropertySet {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com_StructuredStorage")]
 impl ::core::cmp::PartialEq for ITsSbPluginPropertySet {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4059,6 +4073,12 @@ pub struct ITsSbPluginPropertySet_Vtbl {
 #[cfg(feature = "Win32_System_Com_StructuredStorage")]
 #[repr(transparent)]
 pub struct ITsSbPropertySet(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com_StructuredStorage")]
+impl ::core::clone::Clone for ITsSbPropertySet {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com_StructuredStorage")]
 impl ITsSbPropertySet {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com_StructuredStorage\"`, `\"Win32_System_Ole\"`*"]
@@ -4121,12 +4141,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::StructuredStorage::IProperty
     }
 }
 #[cfg(feature = "Win32_System_Com_StructuredStorage")]
-impl ::core::clone::Clone for ITsSbPropertySet {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com_StructuredStorage")]
 impl ::core::cmp::PartialEq for ITsSbPropertySet {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4154,6 +4168,11 @@ pub struct ITsSbPropertySet_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct ITsSbProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITsSbProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITsSbProvider {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -4243,11 +4262,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITsSb
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITsSbProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITsSbProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4310,6 +4324,11 @@ pub struct ITsSbProvider_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct ITsSbProvisioning(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITsSbProvisioning {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITsSbProvisioning {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`, `\"Win32_System_Com_StructuredStorage\"`*"]
     #[cfg(feature = "Win32_System_Com_StructuredStorage")]
@@ -4381,11 +4400,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITsSbPlugin> for &'a ITsSbProvisioning {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITsSbProvisioning {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITsSbProvisioning {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4425,6 +4439,11 @@ pub struct ITsSbProvisioning_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct ITsSbProvisioningPluginNotifySink(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITsSbProvisioningPluginNotifySink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITsSbProvisioningPluginNotifySink {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
     pub unsafe fn OnJobCreated(&self, pvmnotifyinfo: *const VM_NOTIFY_INFO) -> ::windows::core::Result<()> {
@@ -4474,11 +4493,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITsSb
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITsSbProvisioningPluginNotifySink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITsSbProvisioningPluginNotifySink {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4517,6 +4531,11 @@ pub struct ITsSbProvisioningPluginNotifySink_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct ITsSbResourceNotification(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITsSbResourceNotification {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITsSbResourceNotification {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
     pub unsafe fn NotifySessionChange<'a, Param1: ::windows::core::IntoParam<'a, ITsSbSession>>(&self, changetype: TSSESSION_STATE, psession: Param1) -> ::windows::core::Result<()> {
@@ -4551,11 +4570,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITsSb
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITsSbResourceNotification {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITsSbResourceNotification {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4582,6 +4596,11 @@ pub struct ITsSbResourceNotification_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct ITsSbResourceNotificationEx(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITsSbResourceNotificationEx {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITsSbResourceNotificationEx {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -4619,11 +4638,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITsSb
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITsSbResourceNotificationEx {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITsSbResourceNotificationEx {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4659,6 +4673,11 @@ pub struct ITsSbResourceNotificationEx_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct ITsSbResourcePlugin(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITsSbResourcePlugin {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITsSbResourcePlugin {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`, `\"Win32_System_Com_StructuredStorage\"`*"]
     #[cfg(feature = "Win32_System_Com_StructuredStorage")]
@@ -4710,11 +4729,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITsSbPlugin> for &'a ITsSbResourcePlugin
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITsSbResourcePlugin {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITsSbResourcePlugin {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4738,6 +4752,11 @@ pub struct ITsSbResourcePlugin_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct ITsSbResourcePluginStore(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITsSbResourcePluginStore {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITsSbResourcePluginStore {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -4900,11 +4919,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITsSb
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITsSbResourcePluginStore {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITsSbResourcePluginStore {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5019,6 +5033,11 @@ pub struct ITsSbResourcePluginStore_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct ITsSbServiceNotification(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITsSbServiceNotification {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITsSbServiceNotification {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
     pub unsafe fn NotifyServiceFailure(&self) -> ::windows::core::Result<()> {
@@ -5049,11 +5068,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITsSb
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITsSbServiceNotification {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITsSbServiceNotification {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5079,6 +5093,11 @@ pub struct ITsSbServiceNotification_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct ITsSbSession(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITsSbSession {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITsSbSession {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
     pub unsafe fn SessionId(&self) -> ::windows::core::Result<u32> {
@@ -5189,11 +5208,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITsSb
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITsSbSession {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITsSbSession {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5264,6 +5278,11 @@ pub struct ITsSbSession_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct ITsSbTarget(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITsSbTarget {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITsSbTarget {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -5384,11 +5403,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITsSb
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITsSbTarget {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITsSbTarget {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5468,6 +5482,12 @@ pub struct ITsSbTarget_Vtbl {
 #[cfg(feature = "Win32_System_Com_StructuredStorage")]
 #[repr(transparent)]
 pub struct ITsSbTargetPropertySet(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com_StructuredStorage")]
+impl ::core::clone::Clone for ITsSbTargetPropertySet {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com_StructuredStorage")]
 impl ITsSbTargetPropertySet {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com_StructuredStorage\"`, `\"Win32_System_Ole\"`*"]
@@ -5554,12 +5574,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITsSbPropertySet> for &'a ITsSbTargetPro
     }
 }
 #[cfg(feature = "Win32_System_Com_StructuredStorage")]
-impl ::core::clone::Clone for ITsSbTargetPropertySet {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com_StructuredStorage")]
 impl ::core::cmp::PartialEq for ITsSbTargetPropertySet {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5587,6 +5601,11 @@ pub struct ITsSbTargetPropertySet_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct ITsSbTaskInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITsSbTaskInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITsSbTaskInfo {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -5662,11 +5681,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITsSb
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITsSbTaskInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITsSbTaskInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5723,6 +5737,11 @@ pub struct ITsSbTaskInfo_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct ITsSbTaskPlugin(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITsSbTaskPlugin {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITsSbTaskPlugin {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`, `\"Win32_System_Com_StructuredStorage\"`*"]
     #[cfg(feature = "Win32_System_Com_StructuredStorage")]
@@ -5783,11 +5802,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITsSbPlugin> for &'a ITsSbTaskPlugin {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITsSbTaskPlugin {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITsSbTaskPlugin {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5816,6 +5830,11 @@ pub struct ITsSbTaskPlugin_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct ITsSbTaskPluginNotifySink(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITsSbTaskPluginNotifySink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITsSbTaskPluginNotifySink {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
     pub unsafe fn OnError(&self, hrerror: ::windows::core::HRESULT) -> ::windows::core::Result<()> {
@@ -5897,11 +5916,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITsSbBaseNotifySink> for &'a ITsSbTaskPl
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITsSbTaskPluginNotifySink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITsSbTaskPluginNotifySink {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5941,6 +5955,11 @@ pub struct ITsSbTaskPluginNotifySink_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct IWRdsEnhancedFastReconnectArbitrator(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWRdsEnhancedFastReconnectArbitrator {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWRdsEnhancedFastReconnectArbitrator {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
     pub unsafe fn GetSessionForEnhancedFastReconnect(&self, psessionidarray: *const i32, dwsessioncount: u32) -> ::windows::core::Result<i32> {
@@ -5968,11 +5987,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWRds
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWRdsEnhancedFastReconnectArbitrator {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWRdsEnhancedFastReconnectArbitrator {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5997,6 +6011,11 @@ pub struct IWRdsEnhancedFastReconnectArbitrator_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct IWRdsGraphicsChannel(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWRdsGraphicsChannel {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWRdsGraphicsChannel {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
     pub unsafe fn Write<'a, Param2: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, cbsize: u32, pbuffer: *const u8, pcontext: Param2) -> ::windows::core::Result<()> {
@@ -6031,11 +6050,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWRds
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWRdsGraphicsChannel {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWRdsGraphicsChannel {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6062,6 +6076,11 @@ pub struct IWRdsGraphicsChannel_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct IWRdsGraphicsChannelEvents(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWRdsGraphicsChannelEvents {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWRdsGraphicsChannelEvents {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
     pub unsafe fn OnDataReceived(&self, cbsize: u32, pbuffer: *const u8) -> ::windows::core::Result<()> {
@@ -6105,11 +6124,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWRds
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWRdsGraphicsChannelEvents {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWRdsGraphicsChannelEvents {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6141,6 +6155,11 @@ pub struct IWRdsGraphicsChannelEvents_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct IWRdsGraphicsChannelManager(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWRdsGraphicsChannelManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWRdsGraphicsChannelManager {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
     pub unsafe fn CreateChannel(&self, pszchannelname: *const u8, channeltype: WRdsGraphicsChannelType) -> ::windows::core::Result<IWRdsGraphicsChannel> {
@@ -6168,11 +6187,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWRds
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWRdsGraphicsChannelManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWRdsGraphicsChannelManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6197,6 +6211,11 @@ pub struct IWRdsGraphicsChannelManager_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct IWRdsProtocolConnection(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWRdsProtocolConnection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWRdsProtocolConnection {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
     pub unsafe fn GetLogonErrorRedirector(&self) -> ::windows::core::Result<IWRdsProtocolLogonErrorRedirector> {
@@ -6333,11 +6352,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWRds
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWRdsProtocolConnection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWRdsProtocolConnection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6409,6 +6423,11 @@ pub struct IWRdsProtocolConnection_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct IWRdsProtocolConnectionCallback(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWRdsProtocolConnectionCallback {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWRdsProtocolConnectionCallback {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
     pub unsafe fn OnReady(&self) -> ::windows::core::Result<()> {
@@ -6452,11 +6471,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWRds
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWRdsProtocolConnectionCallback {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWRdsProtocolConnectionCallback {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6485,6 +6499,11 @@ pub struct IWRdsProtocolConnectionCallback_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct IWRdsProtocolConnectionSettings(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWRdsProtocolConnectionSettings {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWRdsProtocolConnectionSettings {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
     pub unsafe fn SetConnectionSetting<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::GUID>>(&self, propertyid: Param0, ppropertyentriesin: *const WTS_PROPERTY_VALUE) -> ::windows::core::Result<()> {
@@ -6516,11 +6535,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWRds
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWRdsProtocolConnectionSettings {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWRdsProtocolConnectionSettings {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6546,6 +6560,11 @@ pub struct IWRdsProtocolConnectionSettings_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct IWRdsProtocolLicenseConnection(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWRdsProtocolLicenseConnection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWRdsProtocolLicenseConnection {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -6585,11 +6604,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWRds
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWRdsProtocolLicenseConnection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWRdsProtocolLicenseConnection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6620,6 +6634,11 @@ pub struct IWRdsProtocolLicenseConnection_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct IWRdsProtocolListener(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWRdsProtocolListener {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWRdsProtocolListener {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
     pub unsafe fn GetSettings(&self, wrdslistenersettinglevel: WRDS_LISTENER_SETTING_LEVEL) -> ::windows::core::Result<WRDS_LISTENER_SETTINGS> {
@@ -6655,11 +6674,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWRds
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWRdsProtocolListener {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWRdsProtocolListener {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6686,6 +6700,11 @@ pub struct IWRdsProtocolListener_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct IWRdsProtocolListenerCallback(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWRdsProtocolListenerCallback {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWRdsProtocolListenerCallback {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -6712,11 +6731,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IWRdsProt
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWRdsProtocolListenerCallback {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IWRdsProtocolListenerCallback {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IWRdsProtocolListenerCallback {
@@ -6746,6 +6760,11 @@ pub struct IWRdsProtocolListenerCallback_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct IWRdsProtocolLogonErrorRedirector(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWRdsProtocolLogonErrorRedirector {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWRdsProtocolLogonErrorRedirector {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
     pub unsafe fn OnBeginPainting(&self) -> ::windows::core::Result<()> {
@@ -6787,11 +6806,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWRds
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWRdsProtocolLogonErrorRedirector {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWRdsProtocolLogonErrorRedirector {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6819,6 +6833,11 @@ pub struct IWRdsProtocolLogonErrorRedirector_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct IWRdsProtocolManager(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWRdsProtocolManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWRdsProtocolManager {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -6876,11 +6895,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWRds
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWRdsProtocolManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWRdsProtocolManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6918,6 +6932,11 @@ pub struct IWRdsProtocolManager_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct IWRdsProtocolSettings(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWRdsProtocolSettings {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWRdsProtocolSettings {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -6951,11 +6970,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWRds
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWRdsProtocolSettings {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWRdsProtocolSettings {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6987,6 +7001,11 @@ pub struct IWRdsProtocolSettings_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct IWRdsProtocolShadowCallback(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWRdsProtocolShadowCallback {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWRdsProtocolShadowCallback {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
     pub unsafe fn StopShadow(&self) -> ::windows::core::Result<()> {
@@ -7031,11 +7050,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWRds
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWRdsProtocolShadowCallback {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWRdsProtocolShadowCallback {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7061,6 +7075,11 @@ pub struct IWRdsProtocolShadowCallback_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct IWRdsProtocolShadowConnection(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWRdsProtocolShadowConnection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWRdsProtocolShadowConnection {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
     pub unsafe fn Start<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param4: ::windows::core::IntoParam<'a, IWRdsProtocolShadowCallback>>(&self, ptargetservername: Param0, targetsessionid: u32, hotkeyvk: u8, hotkeymodifiers: u16, pshadowcallback: Param4) -> ::windows::core::Result<()> {
@@ -7095,11 +7114,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWRds
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWRdsProtocolShadowConnection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWRdsProtocolShadowConnection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7126,6 +7140,11 @@ pub struct IWRdsProtocolShadowConnection_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct IWRdsWddmIddProps(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWRdsWddmIddProps {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWRdsWddmIddProps {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
     pub unsafe fn GetHardwareId(&self, pdisplaydriverhardwareid: &[u16]) -> ::windows::core::Result<()> {
@@ -7166,11 +7185,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWRds
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWRdsWddmIddProps {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWRdsWddmIddProps {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7204,6 +7218,11 @@ pub struct IWRdsWddmIddProps_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct IWTSBitmapRenderService(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWTSBitmapRenderService {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWTSBitmapRenderService {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
     pub unsafe fn GetMappedRenderer<'a, Param1: ::windows::core::IntoParam<'a, IWTSBitmapRendererCallback>>(&self, mappingid: u64, pmappedrenderercallback: Param1) -> ::windows::core::Result<IWTSBitmapRenderer> {
@@ -7231,11 +7250,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWTSB
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWTSBitmapRenderService {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWTSBitmapRenderService {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7260,6 +7274,11 @@ pub struct IWTSBitmapRenderService_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct IWTSBitmapRenderer(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWTSBitmapRenderer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWTSBitmapRenderer {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
     pub unsafe fn Render<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::GUID>>(&self, imageformat: Param0, dwwidth: u32, dwheight: u32, cbstride: i32, pimagebuffer: &[u8]) -> ::windows::core::Result<()> {
@@ -7295,11 +7314,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWTSB
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWTSBitmapRenderer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWTSBitmapRenderer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7326,6 +7340,11 @@ pub struct IWTSBitmapRenderer_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct IWTSBitmapRendererCallback(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWTSBitmapRendererCallback {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWTSBitmapRendererCallback {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -7351,11 +7370,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IWTSBitma
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWTSBitmapRendererCallback {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IWTSBitmapRendererCallback {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IWTSBitmapRendererCallback {
@@ -7385,6 +7399,11 @@ pub struct IWTSBitmapRendererCallback_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct IWTSListener(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWTSListener {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWTSListener {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`, `\"Win32_System_Com_StructuredStorage\"`*"]
     #[cfg(feature = "Win32_System_Com_StructuredStorage")]
@@ -7411,11 +7430,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IWTSListe
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWTSListener {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IWTSListener {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IWTSListener {
@@ -7445,6 +7459,11 @@ pub struct IWTSListener_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct IWTSListenerCallback(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWTSListenerCallback {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWTSListenerCallback {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -7470,11 +7489,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IWTSListe
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWTSListenerCallback {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IWTSListenerCallback {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IWTSListenerCallback {
@@ -7504,6 +7518,11 @@ pub struct IWTSListenerCallback_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct IWTSPlugin(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWTSPlugin {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWTSPlugin {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
     pub unsafe fn Initialize<'a, Param0: ::windows::core::IntoParam<'a, IWTSVirtualChannelManager>>(&self, pchannelmgr: Param0) -> ::windows::core::Result<()> {
@@ -7542,11 +7561,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWTSP
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWTSPlugin {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWTSPlugin {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7574,6 +7588,11 @@ pub struct IWTSPlugin_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct IWTSPluginServiceProvider(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWTSPluginServiceProvider {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWTSPluginServiceProvider {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
     pub unsafe fn GetService<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::GUID>>(&self, serviceid: Param0) -> ::windows::core::Result<::windows::core::IUnknown> {
@@ -7601,11 +7620,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWTSP
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWTSPluginServiceProvider {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWTSPluginServiceProvider {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7630,6 +7644,11 @@ pub struct IWTSPluginServiceProvider_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct IWTSProtocolConnection(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWTSProtocolConnection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWTSProtocolConnection {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
     pub unsafe fn GetLogonErrorRedirector(&self) -> ::windows::core::Result<IWTSProtocolLogonErrorRedirector> {
@@ -7761,11 +7780,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWTSP
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWTSProtocolConnection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWTSProtocolConnection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7836,6 +7850,11 @@ pub struct IWTSProtocolConnection_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct IWTSProtocolConnectionCallback(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWTSProtocolConnectionCallback {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWTSProtocolConnectionCallback {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
     pub unsafe fn OnReady(&self) -> ::windows::core::Result<()> {
@@ -7878,11 +7897,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWTSP
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWTSProtocolConnectionCallback {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWTSProtocolConnectionCallback {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7911,6 +7925,11 @@ pub struct IWTSProtocolConnectionCallback_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct IWTSProtocolLicenseConnection(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWTSProtocolLicenseConnection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWTSProtocolLicenseConnection {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -7950,11 +7969,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWTSP
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWTSProtocolLicenseConnection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWTSProtocolLicenseConnection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7985,6 +7999,11 @@ pub struct IWTSProtocolLicenseConnection_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct IWTSProtocolListener(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWTSProtocolListener {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWTSProtocolListener {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
     pub unsafe fn StartListen<'a, Param0: ::windows::core::IntoParam<'a, IWTSProtocolListenerCallback>>(&self, pcallback: Param0) -> ::windows::core::Result<()> {
@@ -8015,11 +8034,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWTSP
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWTSProtocolListener {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWTSProtocolListener {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8045,6 +8059,11 @@ pub struct IWTSProtocolListener_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct IWTSProtocolListenerCallback(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWTSProtocolListenerCallback {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWTSProtocolListenerCallback {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
     pub unsafe fn OnConnected<'a, Param0: ::windows::core::IntoParam<'a, IWTSProtocolConnection>>(&self, pconnection: Param0) -> ::windows::core::Result<IWTSProtocolConnectionCallback> {
@@ -8072,11 +8091,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWTSP
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWTSProtocolListenerCallback {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWTSProtocolListenerCallback {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8101,6 +8115,11 @@ pub struct IWTSProtocolListenerCallback_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct IWTSProtocolLogonErrorRedirector(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWTSProtocolLogonErrorRedirector {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWTSProtocolLogonErrorRedirector {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
     pub unsafe fn OnBeginPainting(&self) -> ::windows::core::Result<()> {
@@ -8142,11 +8161,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWTSP
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWTSProtocolLogonErrorRedirector {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWTSProtocolLogonErrorRedirector {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8174,6 +8188,11 @@ pub struct IWTSProtocolLogonErrorRedirector_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct IWTSProtocolManager(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWTSProtocolManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWTSProtocolManager {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
     pub unsafe fn CreateListener<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, wszlistenername: Param0) -> ::windows::core::Result<IWTSProtocolListener> {
@@ -8217,11 +8236,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWTSP
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWTSProtocolManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWTSProtocolManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8250,6 +8264,11 @@ pub struct IWTSProtocolManager_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct IWTSProtocolShadowCallback(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWTSProtocolShadowCallback {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWTSProtocolShadowCallback {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
     pub unsafe fn StopShadow(&self) -> ::windows::core::Result<()> {
@@ -8294,11 +8313,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWTSP
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWTSProtocolShadowCallback {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWTSProtocolShadowCallback {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8324,6 +8338,11 @@ pub struct IWTSProtocolShadowCallback_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct IWTSProtocolShadowConnection(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWTSProtocolShadowConnection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWTSProtocolShadowConnection {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
     pub unsafe fn Start<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>, Param4: ::windows::core::IntoParam<'a, IWTSProtocolShadowCallback>>(&self, ptargetservername: Param0, targetsessionid: u32, hotkeyvk: u8, hotkeymodifiers: u16, pshadowcallback: Param4) -> ::windows::core::Result<()> {
@@ -8358,11 +8377,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWTSP
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWTSProtocolShadowConnection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWTSProtocolShadowConnection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8389,6 +8403,11 @@ pub struct IWTSProtocolShadowConnection_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct IWTSSBPlugin(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWTSSBPlugin {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWTSSBPlugin {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
     pub unsafe fn Initialize(&self) -> ::windows::core::Result<u32> {
@@ -8437,11 +8456,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWTSS
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWTSSBPlugin {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWTSSBPlugin {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8474,6 +8488,11 @@ pub struct IWTSSBPlugin_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct IWTSVirtualChannel(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWTSVirtualChannel {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWTSVirtualChannel {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
     pub unsafe fn Write<'a, Param2: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, pbuffer: &[u8], preserved: Param2) -> ::windows::core::Result<()> {
@@ -8504,11 +8523,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWTSV
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWTSVirtualChannel {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWTSVirtualChannel {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8534,6 +8548,11 @@ pub struct IWTSVirtualChannel_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct IWTSVirtualChannelCallback(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWTSVirtualChannelCallback {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWTSVirtualChannelCallback {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
     pub unsafe fn OnDataReceived(&self, pbuffer: &[u8]) -> ::windows::core::Result<()> {
@@ -8564,11 +8583,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWTSV
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWTSVirtualChannelCallback {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWTSVirtualChannelCallback {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8594,6 +8608,11 @@ pub struct IWTSVirtualChannelCallback_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct IWTSVirtualChannelManager(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWTSVirtualChannelManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWTSVirtualChannelManager {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
     pub unsafe fn CreateListener<'a, Param2: ::windows::core::IntoParam<'a, IWTSListenerCallback>>(&self, pszchannelname: *const u8, uflags: u32, plistenercallback: Param2) -> ::windows::core::Result<IWTSListener> {
@@ -8621,11 +8640,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWTSV
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWTSVirtualChannelManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWTSVirtualChannelManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8650,6 +8664,11 @@ pub struct IWTSVirtualChannelManager_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct IWorkspace(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWorkspace {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWorkspace {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -8688,11 +8707,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWork
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWorkspace {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWorkspace {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8725,6 +8739,11 @@ pub struct IWorkspace_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct IWorkspace2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWorkspace2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWorkspace2 {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -8788,11 +8807,6 @@ impl<'a> ::windows::core::IntoParam<'a, IWorkspace> for &'a IWorkspace2 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWorkspace2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWorkspace2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8820,6 +8834,11 @@ pub struct IWorkspace2_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct IWorkspace3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWorkspace3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWorkspace3 {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -8914,11 +8933,6 @@ impl<'a> ::windows::core::IntoParam<'a, IWorkspace2> for &'a IWorkspace3 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWorkspace3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWorkspace3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8950,6 +8964,11 @@ pub struct IWorkspace3_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct IWorkspaceClientExt(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWorkspaceClientExt {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWorkspaceClientExt {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -8988,11 +9007,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWork
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWorkspaceClientExt {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWorkspaceClientExt {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9025,6 +9039,11 @@ pub struct IWorkspaceClientExt_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct IWorkspaceRegistration(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWorkspaceRegistration {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWorkspaceRegistration {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
     pub unsafe fn AddResource<'a, Param0: ::windows::core::IntoParam<'a, IWorkspaceClientExt>>(&self, punk: Param0) -> ::windows::core::Result<u32> {
@@ -9056,11 +9075,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWork
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWorkspaceRegistration {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWorkspaceRegistration {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9086,6 +9100,11 @@ pub struct IWorkspaceRegistration_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct IWorkspaceRegistration2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWorkspaceRegistration2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWorkspaceRegistration2 {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
     pub unsafe fn AddResource<'a, Param0: ::windows::core::IntoParam<'a, IWorkspaceClientExt>>(&self, punk: Param0) -> ::windows::core::Result<u32> {
@@ -9146,11 +9165,6 @@ impl<'a> ::windows::core::IntoParam<'a, IWorkspaceRegistration> for &'a IWorkspa
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWorkspaceRegistration2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWorkspaceRegistration2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9179,6 +9193,11 @@ pub struct IWorkspaceRegistration2_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct IWorkspaceReportMessage(::windows::core::IUnknown);
+impl ::core::clone::Clone for IWorkspaceReportMessage {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IWorkspaceReportMessage {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -9217,11 +9236,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IWork
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IWorkspaceReportMessage {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IWorkspaceReportMessage {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9258,6 +9272,12 @@ pub struct IWorkspaceReportMessage_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IWorkspaceResTypeRegistry(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IWorkspaceResTypeRegistry {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IWorkspaceResTypeRegistry {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`, `\"Win32_Foundation\"`*"]
@@ -9337,12 +9357,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IWorkspac
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IWorkspaceResTypeRegistry {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IWorkspaceResTypeRegistry {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9391,6 +9405,12 @@ pub struct IWorkspaceResTypeRegistry_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IWorkspaceScriptable(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IWorkspaceScriptable {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IWorkspaceScriptable {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`, `\"Win32_Foundation\"`*"]
@@ -9479,12 +9499,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IWorkspac
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IWorkspaceScriptable {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IWorkspaceScriptable {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9538,6 +9552,12 @@ pub struct IWorkspaceScriptable_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IWorkspaceScriptable2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IWorkspaceScriptable2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IWorkspaceScriptable2 {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`, `\"Win32_Foundation\"`*"]
@@ -9660,12 +9680,6 @@ impl<'a> ::windows::core::IntoParam<'a, IWorkspaceScriptable> for &'a IWorkspace
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IWorkspaceScriptable2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IWorkspaceScriptable2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9702,6 +9716,12 @@ pub struct IWorkspaceScriptable2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IWorkspaceScriptable3(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IWorkspaceScriptable3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IWorkspaceScriptable3 {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`, `\"Win32_Foundation\"`*"]
@@ -9866,12 +9886,6 @@ impl<'a> ::windows::core::IntoParam<'a, IWorkspaceScriptable2> for &'a IWorkspac
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IWorkspaceScriptable3 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IWorkspaceScriptable3 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9904,6 +9918,11 @@ pub struct IWorkspaceScriptable3_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct ItsPubPlugin(::windows::core::IUnknown);
+impl ::core::clone::Clone for ItsPubPlugin {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ItsPubPlugin {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
     pub unsafe fn GetResourceList<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, userid: Param0, pceapplistsize: *mut i32, resourcelist: *mut *mut pluginResource) -> ::windows::core::Result<()> {
@@ -9956,11 +9975,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ItsPu
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ItsPubPlugin {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ItsPubPlugin {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9996,6 +10010,11 @@ pub struct ItsPubPlugin_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
 #[repr(transparent)]
 pub struct ItsPubPlugin2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ItsPubPlugin2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ItsPubPlugin2 {
     #[doc = "*Required features: `\"Win32_System_RemoteDesktop\"`*"]
     pub unsafe fn GetResourceList<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, userid: Param0, pceapplistsize: *mut i32, resourcelist: *mut *mut pluginResource) -> ::windows::core::Result<()> {
@@ -10085,11 +10104,6 @@ impl<'a> ::windows::core::IntoParam<'a, ItsPubPlugin> for &'a ItsPubPlugin2 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ItsPubPlugin2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ItsPubPlugin2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10145,6 +10159,7 @@ impl ::core::default::Default for KeyCombinationType {
 }
 unsafe impl ::windows::core::Abi for KeyCombinationType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for KeyCombinationType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10214,6 +10229,7 @@ impl ::core::default::Default for PLUGIN_TYPE {
 }
 unsafe impl ::windows::core::Abi for PLUGIN_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PLUGIN_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10263,6 +10279,7 @@ impl ::core::default::Default for PasswordEncodingType {
 }
 unsafe impl ::windows::core::Abi for PasswordEncodingType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PasswordEncodingType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10302,6 +10319,7 @@ impl ::core::default::Default for PolicyAttributeType {
 }
 unsafe impl ::windows::core::Abi for PolicyAttributeType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PolicyAttributeType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10359,6 +10377,7 @@ impl ::core::default::Default for RDV_TASK_STATUS {
 }
 unsafe impl ::windows::core::Abi for RDV_TASK_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RDV_TASK_STATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10396,6 +10415,7 @@ impl ::core::default::Default for RD_FARM_TYPE {
 }
 unsafe impl ::windows::core::Abi for RD_FARM_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RD_FARM_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10444,6 +10464,7 @@ impl ::core::clone::Clone for RFX_GFX_MONITOR_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for RFX_GFX_MONITOR_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for RFX_GFX_MONITOR_INFO {
@@ -10472,6 +10493,7 @@ impl ::core::clone::Clone for RFX_GFX_MSG_CLIENT_DESKTOP_INFO_REQUEST {
 }
 unsafe impl ::windows::core::Abi for RFX_GFX_MSG_CLIENT_DESKTOP_INFO_REQUEST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RFX_GFX_MSG_CLIENT_DESKTOP_INFO_REQUEST {
     fn eq(&self, other: &Self) -> bool {
@@ -10505,6 +10527,7 @@ impl ::core::clone::Clone for RFX_GFX_MSG_CLIENT_DESKTOP_INFO_RESPONSE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for RFX_GFX_MSG_CLIENT_DESKTOP_INFO_RESPONSE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for RFX_GFX_MSG_CLIENT_DESKTOP_INFO_RESPONSE {
@@ -10533,6 +10556,7 @@ impl ::core::clone::Clone for RFX_GFX_MSG_DESKTOP_CONFIG_CHANGE_CONFIRM {
 }
 unsafe impl ::windows::core::Abi for RFX_GFX_MSG_DESKTOP_CONFIG_CHANGE_CONFIRM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RFX_GFX_MSG_DESKTOP_CONFIG_CHANGE_CONFIRM {
     fn eq(&self, other: &Self) -> bool {
@@ -10562,6 +10586,7 @@ impl ::core::clone::Clone for RFX_GFX_MSG_DESKTOP_CONFIG_CHANGE_NOTIFY {
 }
 unsafe impl ::windows::core::Abi for RFX_GFX_MSG_DESKTOP_CONFIG_CHANGE_NOTIFY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RFX_GFX_MSG_DESKTOP_CONFIG_CHANGE_NOTIFY {
     fn eq(&self, other: &Self) -> bool {
@@ -10589,6 +10614,7 @@ impl ::core::clone::Clone for RFX_GFX_MSG_DESKTOP_INPUT_RESET {
 }
 unsafe impl ::windows::core::Abi for RFX_GFX_MSG_DESKTOP_INPUT_RESET {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RFX_GFX_MSG_DESKTOP_INPUT_RESET {
     fn eq(&self, other: &Self) -> bool {
@@ -10615,6 +10641,7 @@ impl ::core::clone::Clone for RFX_GFX_MSG_DESKTOP_RESEND_REQUEST {
 }
 unsafe impl ::windows::core::Abi for RFX_GFX_MSG_DESKTOP_RESEND_REQUEST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RFX_GFX_MSG_DESKTOP_RESEND_REQUEST {
     fn eq(&self, other: &Self) -> bool {
@@ -10641,6 +10668,7 @@ impl ::core::clone::Clone for RFX_GFX_MSG_DISCONNECT_NOTIFY {
 }
 unsafe impl ::windows::core::Abi for RFX_GFX_MSG_DISCONNECT_NOTIFY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RFX_GFX_MSG_DISCONNECT_NOTIFY {
     fn eq(&self, other: &Self) -> bool {
@@ -10667,6 +10695,7 @@ impl ::core::clone::Clone for RFX_GFX_MSG_HEADER {
 }
 unsafe impl ::windows::core::Abi for RFX_GFX_MSG_HEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RFX_GFX_MSG_HEADER {
     fn eq(&self, other: &Self) -> bool {
@@ -10697,6 +10726,7 @@ impl ::core::clone::Clone for RFX_GFX_MSG_RDP_DATA {
 }
 unsafe impl ::windows::core::Abi for RFX_GFX_MSG_RDP_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RFX_GFX_MSG_RDP_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -10725,6 +10755,7 @@ impl ::core::clone::Clone for RFX_GFX_RECT {
 }
 unsafe impl ::windows::core::Abi for RFX_GFX_RECT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RFX_GFX_RECT {
     fn eq(&self, other: &Self) -> bool {
@@ -10766,6 +10797,7 @@ impl ::core::default::Default for RemoteActionType {
 }
 unsafe impl ::windows::core::Abi for RemoteActionType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RemoteActionType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10795,6 +10827,7 @@ impl ::core::default::Default for SESSION_TIMEOUT_ACTION_TYPE {
 }
 unsafe impl ::windows::core::Abi for SESSION_TIMEOUT_ACTION_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SESSION_TIMEOUT_ACTION_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10822,6 +10855,7 @@ impl ::core::default::Default for SnapshotEncodingType {
 }
 unsafe impl ::windows::core::Abi for SnapshotEncodingType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SnapshotEncodingType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10851,6 +10885,7 @@ impl ::core::default::Default for SnapshotFormatType {
 }
 unsafe impl ::windows::core::Abi for SnapshotFormatType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SnapshotFormatType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10896,6 +10931,7 @@ impl ::core::default::Default for TARGET_CHANGE_TYPE {
 }
 unsafe impl ::windows::core::Abi for TARGET_CHANGE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TARGET_CHANGE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10925,6 +10961,7 @@ impl ::core::default::Default for TARGET_OWNER {
 }
 unsafe impl ::windows::core::Abi for TARGET_OWNER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TARGET_OWNER {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -10958,6 +10995,7 @@ impl ::core::default::Default for TARGET_PATCH_STATE {
 }
 unsafe impl ::windows::core::Abi for TARGET_PATCH_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TARGET_PATCH_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11003,6 +11041,7 @@ impl ::core::default::Default for TARGET_STATE {
 }
 unsafe impl ::windows::core::Abi for TARGET_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TARGET_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11032,6 +11071,7 @@ impl ::core::default::Default for TARGET_TYPE {
 }
 unsafe impl ::windows::core::Abi for TARGET_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TARGET_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11059,6 +11099,7 @@ impl ::core::default::Default for TSPUB_PLUGIN_PD_ASSIGNMENT_TYPE {
 }
 unsafe impl ::windows::core::Abi for TSPUB_PLUGIN_PD_ASSIGNMENT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TSPUB_PLUGIN_PD_ASSIGNMENT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11086,6 +11127,7 @@ impl ::core::default::Default for TSPUB_PLUGIN_PD_RESOLUTION_TYPE {
 }
 unsafe impl ::windows::core::Abi for TSPUB_PLUGIN_PD_RESOLUTION_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TSPUB_PLUGIN_PD_RESOLUTION_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11117,6 +11159,7 @@ impl ::core::default::Default for TSSB_NOTIFICATION_TYPE {
 }
 unsafe impl ::windows::core::Abi for TSSB_NOTIFICATION_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TSSB_NOTIFICATION_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11146,6 +11189,7 @@ impl ::core::default::Default for TSSD_AddrV46Type {
 }
 unsafe impl ::windows::core::Abi for TSSD_AddrV46Type {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TSSD_AddrV46Type {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11173,6 +11217,7 @@ impl ::core::fmt::Debug for TSSD_ConnectionPoint {
 }
 unsafe impl ::windows::core::Abi for TSSD_ConnectionPoint {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TSSD_ConnectionPoint {
     fn eq(&self, other: &Self) -> bool {
@@ -11226,6 +11271,7 @@ impl ::core::default::Default for TSSESSION_STATE {
 }
 unsafe impl ::windows::core::Abi for TSSESSION_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TSSESSION_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11256,6 +11302,7 @@ impl ::core::default::Default for TS_SB_SORT_BY {
 }
 unsafe impl ::windows::core::Abi for TS_SB_SORT_BY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TS_SB_SORT_BY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11297,6 +11344,7 @@ impl ::core::default::Default for VM_HOST_NOTIFY_STATUS {
 }
 unsafe impl ::windows::core::Abi for VM_HOST_NOTIFY_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VM_HOST_NOTIFY_STATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11322,6 +11370,7 @@ impl ::core::fmt::Debug for VM_NOTIFY_ENTRY {
 }
 unsafe impl ::windows::core::Abi for VM_NOTIFY_ENTRY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VM_NOTIFY_ENTRY {
     fn eq(&self, other: &Self) -> bool {
@@ -11353,6 +11402,7 @@ impl ::core::fmt::Debug for VM_NOTIFY_INFO {
 }
 unsafe impl ::windows::core::Abi for VM_NOTIFY_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VM_NOTIFY_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -11392,6 +11442,7 @@ impl ::core::default::Default for VM_NOTIFY_STATUS {
 }
 unsafe impl ::windows::core::Abi for VM_NOTIFY_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for VM_NOTIFY_STATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11417,6 +11468,7 @@ impl ::core::fmt::Debug for VM_PATCH_INFO {
 }
 unsafe impl ::windows::core::Abi for VM_PATCH_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VM_PATCH_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -11460,6 +11512,7 @@ impl ::core::clone::Clone for WRDS_CONNECTION_SETTING {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WRDS_CONNECTION_SETTING {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WRDS_CONNECTION_SETTING {
@@ -11493,6 +11546,7 @@ impl ::core::clone::Clone for WRDS_CONNECTION_SETTINGS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WRDS_CONNECTION_SETTINGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WRDS_CONNECTION_SETTINGS {
@@ -11589,6 +11643,7 @@ impl ::core::clone::Clone for WRDS_CONNECTION_SETTINGS_1 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WRDS_CONNECTION_SETTINGS_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WRDS_CONNECTION_SETTINGS_1 {
@@ -11625,6 +11680,7 @@ impl ::core::default::Default for WRDS_CONNECTION_SETTING_LEVEL {
 }
 unsafe impl ::windows::core::Abi for WRDS_CONNECTION_SETTING_LEVEL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WRDS_CONNECTION_SETTING_LEVEL {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11665,6 +11721,7 @@ impl ::core::fmt::Debug for WRDS_DYNAMIC_TIME_ZONE_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for WRDS_DYNAMIC_TIME_ZONE_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WRDS_DYNAMIC_TIME_ZONE_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -11702,6 +11759,7 @@ impl ::core::clone::Clone for WRDS_LISTENER_SETTING {
 }
 unsafe impl ::windows::core::Abi for WRDS_LISTENER_SETTING {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WRDS_LISTENER_SETTING {
     fn eq(&self, other: &Self) -> bool {
@@ -11728,6 +11786,7 @@ impl ::core::clone::Clone for WRDS_LISTENER_SETTINGS {
 }
 unsafe impl ::windows::core::Abi for WRDS_LISTENER_SETTINGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WRDS_LISTENER_SETTINGS {
     fn eq(&self, other: &Self) -> bool {
@@ -11760,6 +11819,7 @@ impl ::core::fmt::Debug for WRDS_LISTENER_SETTINGS_1 {
 }
 unsafe impl ::windows::core::Abi for WRDS_LISTENER_SETTINGS_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WRDS_LISTENER_SETTINGS_1 {
     fn eq(&self, other: &Self) -> bool {
@@ -11793,6 +11853,7 @@ impl ::core::default::Default for WRDS_LISTENER_SETTING_LEVEL {
 }
 unsafe impl ::windows::core::Abi for WRDS_LISTENER_SETTING_LEVEL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WRDS_LISTENER_SETTING_LEVEL {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -11851,6 +11912,7 @@ impl ::core::clone::Clone for WRDS_SETTING {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WRDS_SETTING {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WRDS_SETTING {
@@ -11885,6 +11947,7 @@ impl ::core::clone::Clone for WRDS_SETTINGS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WRDS_SETTINGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WRDS_SETTINGS {
@@ -11985,6 +12048,7 @@ impl ::core::fmt::Debug for WRDS_SETTINGS_1 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WRDS_SETTINGS_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WRDS_SETTINGS_1 {
@@ -12021,6 +12085,7 @@ impl ::core::default::Default for WRDS_SETTING_LEVEL {
 }
 unsafe impl ::windows::core::Abi for WRDS_SETTING_LEVEL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WRDS_SETTING_LEVEL {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12052,6 +12117,7 @@ impl ::core::default::Default for WRDS_SETTING_STATUS {
 }
 unsafe impl ::windows::core::Abi for WRDS_SETTING_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WRDS_SETTING_STATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12083,6 +12149,7 @@ impl ::core::default::Default for WRDS_SETTING_TYPE {
 }
 unsafe impl ::windows::core::Abi for WRDS_SETTING_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WRDS_SETTING_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12120,6 +12187,7 @@ impl ::core::default::Default for WRdsGraphicsChannelType {
 }
 unsafe impl ::windows::core::Abi for WRdsGraphicsChannelType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WRdsGraphicsChannelType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -12189,6 +12257,7 @@ impl ::core::fmt::Debug for WTSCLIENTA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WTSCLIENTA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WTSCLIENTA {
@@ -12260,6 +12329,7 @@ impl ::core::fmt::Debug for WTSCLIENTW {
 }
 unsafe impl ::windows::core::Abi for WTSCLIENTW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WTSCLIENTW {
     fn eq(&self, other: &Self) -> bool {
@@ -12317,6 +12387,7 @@ impl ::core::fmt::Debug for WTSCONFIGINFOA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WTSCONFIGINFOA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WTSCONFIGINFOA {
@@ -12372,6 +12443,7 @@ impl ::core::fmt::Debug for WTSCONFIGINFOW {
 }
 unsafe impl ::windows::core::Abi for WTSCONFIGINFOW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WTSCONFIGINFOW {
     fn eq(&self, other: &Self) -> bool {
@@ -12827,6 +12899,7 @@ impl ::core::fmt::Debug for WTSINFOA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WTSINFOA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WTSINFOA {
@@ -12860,6 +12933,7 @@ impl ::core::clone::Clone for WTSINFOEXA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WTSINFOEXA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WTSINFOEXA {
@@ -12889,6 +12963,7 @@ impl ::core::clone::Clone for WTSINFOEXW {
 }
 unsafe impl ::windows::core::Abi for WTSINFOEXW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WTSINFOEXW {
     fn eq(&self, other: &Self) -> bool {
@@ -12958,6 +13033,7 @@ impl ::core::fmt::Debug for WTSINFOEX_LEVEL1_A {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WTSINFOEX_LEVEL1_A {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WTSINFOEX_LEVEL1_A {
@@ -13025,6 +13101,7 @@ impl ::core::fmt::Debug for WTSINFOEX_LEVEL1_W {
 }
 unsafe impl ::windows::core::Abi for WTSINFOEX_LEVEL1_W {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WTSINFOEX_LEVEL1_W {
     fn eq(&self, other: &Self) -> bool {
@@ -13054,6 +13131,7 @@ impl ::core::clone::Clone for WTSINFOEX_LEVEL_A {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WTSINFOEX_LEVEL_A {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WTSINFOEX_LEVEL_A {
@@ -13082,6 +13160,7 @@ impl ::core::clone::Clone for WTSINFOEX_LEVEL_W {
 }
 unsafe impl ::windows::core::Abi for WTSINFOEX_LEVEL_W {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WTSINFOEX_LEVEL_W {
     fn eq(&self, other: &Self) -> bool {
@@ -13144,6 +13223,7 @@ impl ::core::fmt::Debug for WTSINFOW {
 }
 unsafe impl ::windows::core::Abi for WTSINFOW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WTSINFOW {
     fn eq(&self, other: &Self) -> bool {
@@ -13256,6 +13336,7 @@ impl ::core::fmt::Debug for WTSLISTENERCONFIGA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WTSLISTENERCONFIGA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WTSLISTENERCONFIGA {
@@ -13351,6 +13432,7 @@ impl ::core::fmt::Debug for WTSLISTENERCONFIGW {
 }
 unsafe impl ::windows::core::Abi for WTSLISTENERCONFIGW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WTSLISTENERCONFIGW {
     fn eq(&self, other: &Self) -> bool {
@@ -13600,6 +13682,7 @@ impl ::core::default::Default for WTSSBX_ADDRESS_FAMILY {
 }
 unsafe impl ::windows::core::Abi for WTSSBX_ADDRESS_FAMILY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WTSSBX_ADDRESS_FAMILY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13627,6 +13710,7 @@ impl ::core::fmt::Debug for WTSSBX_IP_ADDRESS {
 }
 unsafe impl ::windows::core::Abi for WTSSBX_IP_ADDRESS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WTSSBX_IP_ADDRESS {
     fn eq(&self, other: &Self) -> bool {
@@ -13660,6 +13744,7 @@ impl ::core::fmt::Debug for WTSSBX_MACHINE_CONNECT_INFO {
 }
 unsafe impl ::windows::core::Abi for WTSSBX_MACHINE_CONNECT_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WTSSBX_MACHINE_CONNECT_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -13695,6 +13780,7 @@ impl ::core::default::Default for WTSSBX_MACHINE_DRAIN {
 }
 unsafe impl ::windows::core::Abi for WTSSBX_MACHINE_DRAIN {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WTSSBX_MACHINE_DRAIN {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13726,6 +13812,7 @@ impl ::core::fmt::Debug for WTSSBX_MACHINE_INFO {
 }
 unsafe impl ::windows::core::Abi for WTSSBX_MACHINE_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WTSSBX_MACHINE_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -13761,6 +13848,7 @@ impl ::core::default::Default for WTSSBX_MACHINE_SESSION_MODE {
 }
 unsafe impl ::windows::core::Abi for WTSSBX_MACHINE_SESSION_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WTSSBX_MACHINE_SESSION_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13790,6 +13878,7 @@ impl ::core::default::Default for WTSSBX_MACHINE_STATE {
 }
 unsafe impl ::windows::core::Abi for WTSSBX_MACHINE_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WTSSBX_MACHINE_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13821,6 +13910,7 @@ impl ::core::default::Default for WTSSBX_NOTIFICATION_TYPE {
 }
 unsafe impl ::windows::core::Abi for WTSSBX_NOTIFICATION_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WTSSBX_NOTIFICATION_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13856,6 +13946,7 @@ impl ::core::fmt::Debug for WTSSBX_SESSION_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WTSSBX_SESSION_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WTSSBX_SESSION_INFO {
@@ -13894,6 +13985,7 @@ impl ::core::default::Default for WTSSBX_SESSION_STATE {
 }
 unsafe impl ::windows::core::Abi for WTSSBX_SESSION_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WTSSBX_SESSION_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -13919,6 +14011,7 @@ impl ::core::fmt::Debug for WTSSESSION_NOTIFICATION {
 }
 unsafe impl ::windows::core::Abi for WTSSESSION_NOTIFICATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WTSSESSION_NOTIFICATION {
     fn eq(&self, other: &Self) -> bool {
@@ -14170,6 +14263,7 @@ impl ::core::fmt::Debug for WTSUSERCONFIGA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WTSUSERCONFIGA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WTSUSERCONFIGA {
@@ -14239,6 +14333,7 @@ impl ::core::fmt::Debug for WTSUSERCONFIGW {
 }
 unsafe impl ::windows::core::Abi for WTSUSERCONFIGW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WTSUSERCONFIGW {
     fn eq(&self, other: &Self) -> bool {
@@ -14433,6 +14528,7 @@ impl ::core::clone::Clone for WTS_CACHE_STATS {
 }
 unsafe impl ::windows::core::Abi for WTS_CACHE_STATS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WTS_CACHE_STATS {
     fn eq(&self, other: &Self) -> bool {
@@ -14460,6 +14556,7 @@ impl ::core::clone::Clone for WTS_CACHE_STATS_UN {
 }
 unsafe impl ::windows::core::Abi for WTS_CACHE_STATS_UN {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WTS_CACHE_STATS_UN {
     fn eq(&self, other: &Self) -> bool {
@@ -14495,6 +14592,7 @@ impl ::core::default::Default for WTS_CERT_TYPE {
 }
 unsafe impl ::windows::core::Abi for WTS_CERT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WTS_CERT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14536,6 +14634,7 @@ impl ::core::fmt::Debug for WTS_CLIENT_ADDRESS {
 }
 unsafe impl ::windows::core::Abi for WTS_CLIENT_ADDRESS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WTS_CLIENT_ADDRESS {
     fn eq(&self, other: &Self) -> bool {
@@ -14619,6 +14718,7 @@ impl ::core::clone::Clone for WTS_CLIENT_DATA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WTS_CLIENT_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WTS_CLIENT_DATA {
@@ -14654,6 +14754,7 @@ impl ::core::fmt::Debug for WTS_CLIENT_DISPLAY {
 }
 unsafe impl ::windows::core::Abi for WTS_CLIENT_DISPLAY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WTS_CLIENT_DISPLAY {
     fn eq(&self, other: &Self) -> bool {
@@ -14727,6 +14828,7 @@ impl ::core::default::Default for WTS_CONFIG_CLASS {
 }
 unsafe impl ::windows::core::Abi for WTS_CONFIG_CLASS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WTS_CONFIG_CLASS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14752,6 +14854,7 @@ impl ::core::default::Default for WTS_CONFIG_SOURCE {
 }
 unsafe impl ::windows::core::Abi for WTS_CONFIG_SOURCE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WTS_CONFIG_SOURCE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14795,6 +14898,7 @@ impl ::core::default::Default for WTS_CONNECTSTATE_CLASS {
 }
 unsafe impl ::windows::core::Abi for WTS_CONNECTSTATE_CLASS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WTS_CONNECTSTATE_CLASS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14826,6 +14930,7 @@ impl ::core::fmt::Debug for WTS_DISPLAY_IOCTL {
 }
 unsafe impl ::windows::core::Abi for WTS_DISPLAY_IOCTL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WTS_DISPLAY_IOCTL {
     fn eq(&self, other: &Self) -> bool {
@@ -14947,6 +15052,7 @@ impl ::core::default::Default for WTS_INFO_CLASS {
 }
 unsafe impl ::windows::core::Abi for WTS_INFO_CLASS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WTS_INFO_CLASS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -14987,6 +15093,7 @@ impl ::core::fmt::Debug for WTS_LICENSE_CAPABILITIES {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WTS_LICENSE_CAPABILITIES {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WTS_LICENSE_CAPABILITIES {
@@ -15039,6 +15146,7 @@ impl ::core::default::Default for WTS_LOGON_ERROR_REDIRECTOR_RESPONSE {
 }
 unsafe impl ::windows::core::Abi for WTS_LOGON_ERROR_REDIRECTOR_RESPONSE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WTS_LOGON_ERROR_REDIRECTOR_RESPONSE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -15120,6 +15228,7 @@ impl ::core::fmt::Debug for WTS_POLICY_DATA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WTS_POLICY_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WTS_POLICY_DATA {
@@ -15161,6 +15270,7 @@ impl ::core::fmt::Debug for WTS_PROCESS_INFOA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WTS_PROCESS_INFOA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WTS_PROCESS_INFOA {
@@ -15202,6 +15312,7 @@ impl ::core::fmt::Debug for WTS_PROCESS_INFOW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WTS_PROCESS_INFOW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WTS_PROCESS_INFOW {
@@ -15264,6 +15375,7 @@ impl ::core::fmt::Debug for WTS_PROCESS_INFO_EXA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WTS_PROCESS_INFO_EXA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WTS_PROCESS_INFO_EXA {
@@ -15326,6 +15438,7 @@ impl ::core::fmt::Debug for WTS_PROCESS_INFO_EXW {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WTS_PROCESS_INFO_EXW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WTS_PROCESS_INFO_EXW {
@@ -15361,6 +15474,7 @@ impl ::core::clone::Clone for WTS_PROPERTY_VALUE {
 }
 unsafe impl ::windows::core::Abi for WTS_PROPERTY_VALUE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WTS_PROPERTY_VALUE {
     fn eq(&self, other: &Self) -> bool {
@@ -15389,6 +15503,7 @@ impl ::core::clone::Clone for WTS_PROPERTY_VALUE_0 {
 }
 unsafe impl ::windows::core::Abi for WTS_PROPERTY_VALUE_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WTS_PROPERTY_VALUE_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -15420,6 +15535,7 @@ impl ::core::fmt::Debug for WTS_PROPERTY_VALUE_0_0 {
 }
 unsafe impl ::windows::core::Abi for WTS_PROPERTY_VALUE_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WTS_PROPERTY_VALUE_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -15451,6 +15567,7 @@ impl ::core::fmt::Debug for WTS_PROPERTY_VALUE_0_1 {
 }
 unsafe impl ::windows::core::Abi for WTS_PROPERTY_VALUE_0_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WTS_PROPERTY_VALUE_0_1 {
     fn eq(&self, other: &Self) -> bool {
@@ -15482,6 +15599,7 @@ impl ::core::fmt::Debug for WTS_PROTOCOL_CACHE {
 }
 unsafe impl ::windows::core::Abi for WTS_PROTOCOL_CACHE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WTS_PROTOCOL_CACHE {
     fn eq(&self, other: &Self) -> bool {
@@ -15548,6 +15666,7 @@ impl ::core::fmt::Debug for WTS_PROTOCOL_COUNTERS {
 }
 unsafe impl ::windows::core::Abi for WTS_PROTOCOL_COUNTERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WTS_PROTOCOL_COUNTERS {
     fn eq(&self, other: &Self) -> bool {
@@ -15580,6 +15699,7 @@ impl ::core::clone::Clone for WTS_PROTOCOL_STATUS {
 }
 unsafe impl ::windows::core::Abi for WTS_PROTOCOL_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WTS_PROTOCOL_STATUS {
     fn eq(&self, other: &Self) -> bool {
@@ -15625,6 +15745,7 @@ impl ::core::default::Default for WTS_RCM_DRAIN_STATE {
 }
 unsafe impl ::windows::core::Abi for WTS_RCM_DRAIN_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WTS_RCM_DRAIN_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -15654,6 +15775,7 @@ impl ::core::default::Default for WTS_RCM_SERVICE_STATE {
 }
 unsafe impl ::windows::core::Abi for WTS_RCM_SERVICE_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WTS_RCM_SERVICE_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -15700,6 +15822,7 @@ impl ::core::fmt::Debug for WTS_SERVER_INFOA {
 }
 unsafe impl ::windows::core::Abi for WTS_SERVER_INFOA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WTS_SERVER_INFOA {
     fn eq(&self, other: &Self) -> bool {
@@ -15730,6 +15853,7 @@ impl ::core::fmt::Debug for WTS_SERVER_INFOW {
 }
 unsafe impl ::windows::core::Abi for WTS_SERVER_INFOW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WTS_SERVER_INFOW {
     fn eq(&self, other: &Self) -> bool {
@@ -15761,6 +15885,7 @@ impl ::core::fmt::Debug for WTS_SERVICE_STATE {
 }
 unsafe impl ::windows::core::Abi for WTS_SERVICE_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WTS_SERVICE_STATE {
     fn eq(&self, other: &Self) -> bool {
@@ -15798,6 +15923,7 @@ impl ::core::fmt::Debug for WTS_SESSION_ADDRESS {
 }
 unsafe impl ::windows::core::Abi for WTS_SESSION_ADDRESS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WTS_SESSION_ADDRESS {
     fn eq(&self, other: &Self) -> bool {
@@ -15829,6 +15955,7 @@ impl ::core::fmt::Debug for WTS_SESSION_ID {
 }
 unsafe impl ::windows::core::Abi for WTS_SESSION_ID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WTS_SESSION_ID {
     fn eq(&self, other: &Self) -> bool {
@@ -15861,6 +15988,7 @@ impl ::core::fmt::Debug for WTS_SESSION_INFOA {
 }
 unsafe impl ::windows::core::Abi for WTS_SESSION_INFOA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WTS_SESSION_INFOA {
     fn eq(&self, other: &Self) -> bool {
@@ -15893,6 +16021,7 @@ impl ::core::fmt::Debug for WTS_SESSION_INFOW {
 }
 unsafe impl ::windows::core::Abi for WTS_SESSION_INFOW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WTS_SESSION_INFOW {
     fn eq(&self, other: &Self) -> bool {
@@ -15930,6 +16059,7 @@ impl ::core::fmt::Debug for WTS_SESSION_INFO_1A {
 }
 unsafe impl ::windows::core::Abi for WTS_SESSION_INFO_1A {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WTS_SESSION_INFO_1A {
     fn eq(&self, other: &Self) -> bool {
@@ -15967,6 +16097,7 @@ impl ::core::fmt::Debug for WTS_SESSION_INFO_1W {
 }
 unsafe impl ::windows::core::Abi for WTS_SESSION_INFO_1W {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WTS_SESSION_INFO_1W {
     fn eq(&self, other: &Self) -> bool {
@@ -16000,6 +16131,7 @@ impl ::core::fmt::Debug for WTS_SMALL_RECT {
 }
 unsafe impl ::windows::core::Abi for WTS_SMALL_RECT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WTS_SMALL_RECT {
     fn eq(&self, other: &Self) -> bool {
@@ -16026,6 +16158,7 @@ impl ::core::clone::Clone for WTS_SOCKADDR {
 }
 unsafe impl ::windows::core::Abi for WTS_SOCKADDR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WTS_SOCKADDR {
     fn eq(&self, other: &Self) -> bool {
@@ -16052,6 +16185,7 @@ impl ::core::clone::Clone for WTS_SOCKADDR_0 {
 }
 unsafe impl ::windows::core::Abi for WTS_SOCKADDR_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WTS_SOCKADDR_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -16084,6 +16218,7 @@ impl ::core::fmt::Debug for WTS_SOCKADDR_0_0 {
 }
 unsafe impl ::windows::core::Abi for WTS_SOCKADDR_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WTS_SOCKADDR_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -16117,6 +16252,7 @@ impl ::core::fmt::Debug for WTS_SOCKADDR_0_1 {
 }
 unsafe impl ::windows::core::Abi for WTS_SOCKADDR_0_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WTS_SOCKADDR_0_1 {
     fn eq(&self, other: &Self) -> bool {
@@ -16154,6 +16290,7 @@ impl ::core::fmt::Debug for WTS_SYSTEMTIME {
 }
 unsafe impl ::windows::core::Abi for WTS_SYSTEMTIME {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WTS_SYSTEMTIME {
     fn eq(&self, other: &Self) -> bool {
@@ -16190,6 +16327,7 @@ impl ::core::fmt::Debug for WTS_TIME_ZONE_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for WTS_TIME_ZONE_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WTS_TIME_ZONE_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -16225,6 +16363,7 @@ impl ::core::default::Default for WTS_TYPE_CLASS {
 }
 unsafe impl ::windows::core::Abi for WTS_TYPE_CLASS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WTS_TYPE_CLASS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -16253,6 +16392,7 @@ impl ::core::fmt::Debug for WTS_USER_CREDENTIAL {
 }
 unsafe impl ::windows::core::Abi for WTS_USER_CREDENTIAL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WTS_USER_CREDENTIAL {
     fn eq(&self, other: &Self) -> bool {
@@ -16285,6 +16425,7 @@ impl ::core::fmt::Debug for WTS_USER_DATA {
 }
 unsafe impl ::windows::core::Abi for WTS_USER_DATA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WTS_USER_DATA {
     fn eq(&self, other: &Self) -> bool {
@@ -16324,6 +16465,7 @@ impl ::core::fmt::Debug for WTS_VALIDATION_INFORMATIONA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for WTS_VALIDATION_INFORMATIONA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for WTS_VALIDATION_INFORMATIONA {
@@ -16361,6 +16503,7 @@ impl ::core::fmt::Debug for WTS_VALIDATION_INFORMATIONW {
 }
 unsafe impl ::windows::core::Abi for WTS_VALIDATION_INFORMATIONW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WTS_VALIDATION_INFORMATIONW {
     fn eq(&self, other: &Self) -> bool {
@@ -16402,6 +16545,7 @@ impl ::core::default::Default for WTS_VIRTUAL_CLASS {
 }
 unsafe impl ::windows::core::Abi for WTS_VIRTUAL_CLASS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WTS_VIRTUAL_CLASS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -16423,6 +16567,12 @@ pub const Workspace: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct _ITSWkspEvents(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for _ITSWkspEvents {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl _ITSWkspEvents {}
 #[cfg(feature = "Win32_System_Com")]
@@ -16474,12 +16624,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a _ITSWkspE
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for _ITSWkspEvents {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for _ITSWkspEvents {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -16528,6 +16672,7 @@ impl ::core::fmt::Debug for _WTS_PRODUCT_INFOA {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for _WTS_PRODUCT_INFOA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for _WTS_PRODUCT_INFOA {
@@ -16562,6 +16707,7 @@ impl ::core::fmt::Debug for _WTS_PRODUCT_INFOW {
 }
 unsafe impl ::windows::core::Abi for _WTS_PRODUCT_INFOW {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for _WTS_PRODUCT_INFOW {
     fn eq(&self, other: &Self) -> bool {
@@ -16614,6 +16760,7 @@ impl ::core::fmt::Debug for pluginResource {
 }
 unsafe impl ::windows::core::Abi for pluginResource {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for pluginResource {
     fn eq(&self, other: &Self) -> bool {
@@ -16649,6 +16796,7 @@ impl ::core::fmt::Debug for pluginResource2 {
 }
 unsafe impl ::windows::core::Abi for pluginResource2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for pluginResource2 {
     fn eq(&self, other: &Self) -> bool {
@@ -16682,6 +16830,7 @@ impl ::core::fmt::Debug for pluginResource2FileAssociation {
 }
 unsafe impl ::windows::core::Abi for pluginResource2FileAssociation {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for pluginResource2FileAssociation {
     fn eq(&self, other: &Self) -> bool {

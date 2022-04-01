@@ -20,6 +20,7 @@ impl ::core::default::Default for TextPatternRangeEndpoint {
 }
 unsafe impl ::windows::core::Abi for TextPatternRangeEndpoint {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TextPatternRangeEndpoint {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -28,7 +29,6 @@ impl ::core::fmt::Debug for TextPatternRangeEndpoint {
 }
 unsafe impl ::windows::core::RuntimeType for TextPatternRangeEndpoint {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Xaml.Automation.Text.TextPatternRangeEndpoint;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -59,6 +59,7 @@ impl ::core::default::Default for TextUnit {
 }
 unsafe impl ::windows::core::Abi for TextUnit {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TextUnit {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -67,7 +68,6 @@ impl ::core::fmt::Debug for TextUnit {
 }
 unsafe impl ::windows::core::RuntimeType for TextUnit {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Xaml.Automation.Text.TextUnit;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }

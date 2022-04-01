@@ -4,16 +4,9 @@ pub fn gen_std_traits(def: &TypeDef, cfg: &Cfg, gen: &Gen) -> TokenStream {
     let ident = gen_type_ident(def, gen);
     let name = ident.as_str();
     let constraints = gen_type_constraints(def, gen);
-    let phantoms = gen_phantoms(def, gen);
     let cfg = gen.cfg(cfg);
 
     quote! {
-        #cfg
-        impl<#(#constraints)*> ::core::clone::Clone for #ident {
-            fn clone(&self) -> Self {
-                Self(self.0.clone(), #(#phantoms)*)
-            }
-        }
         #cfg
         impl<#(#constraints)*> ::core::cmp::PartialEq for #ident {
             fn eq(&self, other: &Self) -> bool {
@@ -78,7 +71,6 @@ pub fn gen_runtime_trait(def: &TypeDef, cfg: &Cfg, gen: &Gen) -> TokenStream {
             #cfg
             unsafe impl<#(#constraints)*> ::windows::core::RuntimeType for #name {
                 const SIGNATURE: ::windows::core::ConstBuffer = #type_signature;
-                type DefaultType = ::core::option::Option<Self>;
                 fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
                     from.as_ref().cloned().ok_or(::windows::core::Error::OK)
                 }

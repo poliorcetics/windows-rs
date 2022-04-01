@@ -18,6 +18,7 @@ impl ::core::fmt::Debug for CATALOG_INFO {
 }
 unsafe impl ::windows::core::Abi for CATALOG_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CATALOG_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -53,6 +54,7 @@ impl ::core::fmt::Debug for CRYPTCATATTRIBUTE {
 }
 unsafe impl ::windows::core::Abi for CRYPTCATATTRIBUTE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CRYPTCATATTRIBUTE {
     fn eq(&self, other: &Self) -> bool {
@@ -94,6 +96,7 @@ impl ::core::fmt::Debug for CRYPTCATCDF {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for CRYPTCATCDF {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for CRYPTCATCDF {
@@ -154,6 +157,7 @@ impl ::core::fmt::Debug for CRYPTCATMEMBER {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography_Sip"))]
 unsafe impl ::windows::core::Abi for CRYPTCATMEMBER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Security_Cryptography_Sip"))]
 impl ::core::cmp::PartialEq for CRYPTCATMEMBER {
@@ -201,6 +205,7 @@ impl ::core::fmt::Debug for CRYPTCATSTORE {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for CRYPTCATSTORE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for CRYPTCATSTORE {
@@ -301,6 +306,7 @@ impl ::core::default::Default for CRYPTCAT_OPEN_FLAGS {
 }
 unsafe impl ::windows::core::Abi for CRYPTCAT_OPEN_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CRYPTCAT_OPEN_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -356,6 +362,7 @@ impl ::core::default::Default for CRYPTCAT_VERSION {
 }
 unsafe impl ::windows::core::Abi for CRYPTCAT_VERSION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CRYPTCAT_VERSION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

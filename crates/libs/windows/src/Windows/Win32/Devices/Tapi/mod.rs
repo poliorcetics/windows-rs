@@ -20,6 +20,7 @@ impl ::core::default::Default for ACDGROUP_EVENT {
 }
 unsafe impl ::windows::core::Abi for ACDGROUP_EVENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ACDGROUP_EVENT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -47,6 +48,7 @@ impl ::core::default::Default for ACDQUEUE_EVENT {
 }
 unsafe impl ::windows::core::Abi for ACDQUEUE_EVENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ACDQUEUE_EVENT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -166,6 +168,7 @@ impl ::core::default::Default for ADDRESS_CAPABILITY {
 }
 unsafe impl ::windows::core::Abi for ADDRESS_CAPABILITY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ADDRESS_CAPABILITY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -201,6 +204,7 @@ impl ::core::default::Default for ADDRESS_CAPABILITY_STRING {
 }
 unsafe impl ::windows::core::Abi for ADDRESS_CAPABILITY_STRING {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ADDRESS_CAPABILITY_STRING {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -244,6 +248,7 @@ impl ::core::default::Default for ADDRESS_EVENT {
 }
 unsafe impl ::windows::core::Abi for ADDRESS_EVENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ADDRESS_EVENT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -271,6 +276,7 @@ impl ::core::default::Default for ADDRESS_STATE {
 }
 unsafe impl ::windows::core::Abi for ADDRESS_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for ADDRESS_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -298,6 +304,7 @@ impl ::core::default::Default for AGENTHANDLER_EVENT {
 }
 unsafe impl ::windows::core::Abi for AGENTHANDLER_EVENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AGENTHANDLER_EVENT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -333,6 +340,7 @@ impl ::core::default::Default for AGENT_EVENT {
 }
 unsafe impl ::windows::core::Abi for AGENT_EVENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AGENT_EVENT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -368,6 +376,7 @@ impl ::core::default::Default for AGENT_SESSION_EVENT {
 }
 unsafe impl ::windows::core::Abi for AGENT_SESSION_EVENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AGENT_SESSION_EVENT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -401,6 +410,7 @@ impl ::core::default::Default for AGENT_SESSION_STATE {
 }
 unsafe impl ::windows::core::Abi for AGENT_SESSION_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AGENT_SESSION_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -436,6 +446,7 @@ impl ::core::default::Default for AGENT_STATE {
 }
 unsafe impl ::windows::core::Abi for AGENT_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for AGENT_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -471,6 +482,7 @@ impl ::core::default::Default for CALLHUB_EVENT {
 }
 unsafe impl ::windows::core::Abi for CALLHUB_EVENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CALLHUB_EVENT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -498,6 +510,7 @@ impl ::core::default::Default for CALLHUB_STATE {
 }
 unsafe impl ::windows::core::Abi for CALLHUB_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CALLHUB_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -577,6 +590,7 @@ impl ::core::default::Default for CALLINFOCHANGE_CAUSE {
 }
 unsafe impl ::windows::core::Abi for CALLINFOCHANGE_CAUSE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CALLINFOCHANGE_CAUSE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -612,6 +626,7 @@ impl ::core::default::Default for CALLINFO_BUFFER {
 }
 unsafe impl ::windows::core::Abi for CALLINFO_BUFFER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CALLINFO_BUFFER {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -685,6 +700,7 @@ impl ::core::default::Default for CALLINFO_LONG {
 }
 unsafe impl ::windows::core::Abi for CALLINFO_LONG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CALLINFO_LONG {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -736,6 +752,7 @@ impl ::core::default::Default for CALLINFO_STRING {
 }
 unsafe impl ::windows::core::Abi for CALLINFO_STRING {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CALLINFO_STRING {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -773,6 +790,7 @@ impl ::core::default::Default for CALL_MEDIA_EVENT {
 }
 unsafe impl ::windows::core::Abi for CALL_MEDIA_EVENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CALL_MEDIA_EVENT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -812,6 +830,7 @@ impl ::core::default::Default for CALL_MEDIA_EVENT_CAUSE {
 }
 unsafe impl ::windows::core::Abi for CALL_MEDIA_EVENT_CAUSE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CALL_MEDIA_EVENT_CAUSE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -841,6 +860,7 @@ impl ::core::default::Default for CALL_NOTIFICATION_EVENT {
 }
 unsafe impl ::windows::core::Abi for CALL_NOTIFICATION_EVENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CALL_NOTIFICATION_EVENT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -868,6 +888,7 @@ impl ::core::default::Default for CALL_PRIVILEGE {
 }
 unsafe impl ::windows::core::Abi for CALL_PRIVILEGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CALL_PRIVILEGE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -907,6 +928,7 @@ impl ::core::default::Default for CALL_STATE {
 }
 unsafe impl ::windows::core::Abi for CALL_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CALL_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -948,6 +970,7 @@ impl ::core::default::Default for CALL_STATE_EVENT_CAUSE {
 }
 unsafe impl ::windows::core::Abi for CALL_STATE_EVENT_CAUSE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for CALL_STATE_EVENT_CAUSE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -975,6 +998,7 @@ impl ::core::default::Default for DIRECTORY_OBJECT_TYPE {
 }
 unsafe impl ::windows::core::Abi for DIRECTORY_OBJECT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DIRECTORY_OBJECT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1002,6 +1026,7 @@ impl ::core::default::Default for DIRECTORY_TYPE {
 }
 unsafe impl ::windows::core::Abi for DIRECTORY_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DIRECTORY_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1031,6 +1056,7 @@ impl ::core::default::Default for DISCONNECT_CODE {
 }
 unsafe impl ::windows::core::Abi for DISCONNECT_CODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DISCONNECT_CODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1061,6 +1087,7 @@ impl ::core::default::Default for FINISH_MODE {
 }
 unsafe impl ::windows::core::Abi for FINISH_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FINISH_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1092,6 +1119,7 @@ impl ::core::default::Default for FT_STATE_EVENT_CAUSE {
 }
 unsafe impl ::windows::core::Abi for FT_STATE_EVENT_CAUSE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FT_STATE_EVENT_CAUSE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1121,6 +1149,7 @@ impl ::core::default::Default for FULLDUPLEX_SUPPORT {
 }
 unsafe impl ::windows::core::Abi for FULLDUPLEX_SUPPORT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for FULLDUPLEX_SUPPORT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1162,6 +1191,7 @@ impl ::core::fmt::Debug for HDRVCALL__ {
 }
 unsafe impl ::windows::core::Abi for HDRVCALL__ {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HDRVCALL__ {
     fn eq(&self, other: &Self) -> bool {
@@ -1192,6 +1222,7 @@ impl ::core::fmt::Debug for HDRVDIALOGINSTANCE__ {
 }
 unsafe impl ::windows::core::Abi for HDRVDIALOGINSTANCE__ {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HDRVDIALOGINSTANCE__ {
     fn eq(&self, other: &Self) -> bool {
@@ -1222,6 +1253,7 @@ impl ::core::fmt::Debug for HDRVLINE__ {
 }
 unsafe impl ::windows::core::Abi for HDRVLINE__ {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HDRVLINE__ {
     fn eq(&self, other: &Self) -> bool {
@@ -1252,6 +1284,7 @@ impl ::core::fmt::Debug for HDRVMSPLINE__ {
 }
 unsafe impl ::windows::core::Abi for HDRVMSPLINE__ {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HDRVMSPLINE__ {
     fn eq(&self, other: &Self) -> bool {
@@ -1282,6 +1315,7 @@ impl ::core::fmt::Debug for HDRVPHONE__ {
 }
 unsafe impl ::windows::core::Abi for HDRVPHONE__ {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HDRVPHONE__ {
     fn eq(&self, other: &Self) -> bool {
@@ -1312,6 +1346,7 @@ impl ::core::fmt::Debug for HPROVIDER__ {
 }
 unsafe impl ::windows::core::Abi for HPROVIDER__ {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HPROVIDER__ {
     fn eq(&self, other: &Self) -> bool {
@@ -1342,6 +1377,7 @@ impl ::core::fmt::Debug for HTAPICALL__ {
 }
 unsafe impl ::windows::core::Abi for HTAPICALL__ {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HTAPICALL__ {
     fn eq(&self, other: &Self) -> bool {
@@ -1372,6 +1408,7 @@ impl ::core::fmt::Debug for HTAPILINE__ {
 }
 unsafe impl ::windows::core::Abi for HTAPILINE__ {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HTAPILINE__ {
     fn eq(&self, other: &Self) -> bool {
@@ -1402,6 +1439,7 @@ impl ::core::fmt::Debug for HTAPIPHONE__ {
 }
 unsafe impl ::windows::core::Abi for HTAPIPHONE__ {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for HTAPIPHONE__ {
     fn eq(&self, other: &Self) -> bool {
@@ -1465,6 +1503,11 @@ pub const IDISPTAPICALLCENTER: u32 = 131072u32;
 #[doc = "*Required features: `\"Win32_Devices_Tapi\"`*"]
 #[repr(transparent)]
 pub struct IEnumACDGroup(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnumACDGroup {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnumACDGroup {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -1505,11 +1548,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnum
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnumACDGroup {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnumACDGroup {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1540,6 +1578,11 @@ pub struct IEnumACDGroup_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_Tapi\"`*"]
 #[repr(transparent)]
 pub struct IEnumAddress(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnumAddress {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnumAddress {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -1580,11 +1623,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnum
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnumAddress {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnumAddress {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1615,6 +1653,11 @@ pub struct IEnumAddress_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_Tapi\"`*"]
 #[repr(transparent)]
 pub struct IEnumAgent(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnumAgent {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnumAgent {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -1655,11 +1698,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnum
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnumAgent {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnumAgent {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1690,6 +1728,11 @@ pub struct IEnumAgent_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_Tapi\"`*"]
 #[repr(transparent)]
 pub struct IEnumAgentHandler(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnumAgentHandler {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnumAgentHandler {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -1730,11 +1773,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnum
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnumAgentHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnumAgentHandler {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1765,6 +1803,11 @@ pub struct IEnumAgentHandler_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_Tapi\"`*"]
 #[repr(transparent)]
 pub struct IEnumAgentSession(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnumAgentSession {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnumAgentSession {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -1805,11 +1848,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnum
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnumAgentSession {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnumAgentSession {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1840,6 +1878,11 @@ pub struct IEnumAgentSession_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_Tapi\"`*"]
 #[repr(transparent)]
 pub struct IEnumBstr(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnumBstr {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnumBstr {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -1880,11 +1923,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnum
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnumBstr {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnumBstr {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1915,6 +1953,11 @@ pub struct IEnumBstr_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_Tapi\"`*"]
 #[repr(transparent)]
 pub struct IEnumCall(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnumCall {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnumCall {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -1955,11 +1998,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnum
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnumCall {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnumCall {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1990,6 +2028,11 @@ pub struct IEnumCall_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_Tapi\"`*"]
 #[repr(transparent)]
 pub struct IEnumCallHub(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnumCallHub {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnumCallHub {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -2030,11 +2073,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnum
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnumCallHub {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnumCallHub {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2065,6 +2103,11 @@ pub struct IEnumCallHub_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_Tapi\"`*"]
 #[repr(transparent)]
 pub struct IEnumCallingCard(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnumCallingCard {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnumCallingCard {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -2105,11 +2148,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnum
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnumCallingCard {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnumCallingCard {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2140,6 +2178,11 @@ pub struct IEnumCallingCard_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_Tapi\"`*"]
 #[repr(transparent)]
 pub struct IEnumDialableAddrs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnumDialableAddrs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnumDialableAddrs {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -2180,11 +2223,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnum
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnumDialableAddrs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnumDialableAddrs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2215,6 +2253,11 @@ pub struct IEnumDialableAddrs_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_Tapi\"`*"]
 #[repr(transparent)]
 pub struct IEnumDirectory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnumDirectory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnumDirectory {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -2255,11 +2298,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnum
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnumDirectory {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnumDirectory {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2290,6 +2328,11 @@ pub struct IEnumDirectory_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_Tapi\"`*"]
 #[repr(transparent)]
 pub struct IEnumDirectoryObject(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnumDirectoryObject {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnumDirectoryObject {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -2330,11 +2373,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnum
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnumDirectoryObject {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnumDirectoryObject {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2365,6 +2403,11 @@ pub struct IEnumDirectoryObject_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_Tapi\"`*"]
 #[repr(transparent)]
 pub struct IEnumLocation(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnumLocation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnumLocation {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -2405,11 +2448,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnum
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnumLocation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnumLocation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2440,6 +2478,11 @@ pub struct IEnumLocation_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_Tapi\"`*"]
 #[repr(transparent)]
 pub struct IEnumMcastScope(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnumMcastScope {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnumMcastScope {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -2480,11 +2523,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnum
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnumMcastScope {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnumMcastScope {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2515,6 +2553,11 @@ pub struct IEnumMcastScope_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_Tapi\"`*"]
 #[repr(transparent)]
 pub struct IEnumPhone(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnumPhone {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnumPhone {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -2555,11 +2598,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnum
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnumPhone {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnumPhone {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2590,6 +2628,11 @@ pub struct IEnumPhone_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_Tapi\"`*"]
 #[repr(transparent)]
 pub struct IEnumPluggableSuperclassInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnumPluggableSuperclassInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnumPluggableSuperclassInfo {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -2630,11 +2673,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnum
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnumPluggableSuperclassInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnumPluggableSuperclassInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2665,6 +2703,11 @@ pub struct IEnumPluggableSuperclassInfo_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_Tapi\"`*"]
 #[repr(transparent)]
 pub struct IEnumPluggableTerminalClassInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnumPluggableTerminalClassInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnumPluggableTerminalClassInfo {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -2705,11 +2748,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnum
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnumPluggableTerminalClassInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnumPluggableTerminalClassInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2740,6 +2778,11 @@ pub struct IEnumPluggableTerminalClassInfo_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_Tapi\"`*"]
 #[repr(transparent)]
 pub struct IEnumQueue(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnumQueue {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnumQueue {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -2780,11 +2823,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnum
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnumQueue {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnumQueue {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2815,6 +2853,11 @@ pub struct IEnumQueue_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_Tapi\"`*"]
 #[repr(transparent)]
 pub struct IEnumStream(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnumStream {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnumStream {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -2855,11 +2898,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnum
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnumStream {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnumStream {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2890,6 +2928,11 @@ pub struct IEnumStream_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_Tapi\"`*"]
 #[repr(transparent)]
 pub struct IEnumSubStream(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnumSubStream {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnumSubStream {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -2930,11 +2973,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnum
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnumSubStream {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnumSubStream {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2965,6 +3003,11 @@ pub struct IEnumSubStream_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_Tapi\"`*"]
 #[repr(transparent)]
 pub struct IEnumTerminal(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnumTerminal {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnumTerminal {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -3005,11 +3048,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnum
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnumTerminal {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnumTerminal {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3040,6 +3078,11 @@ pub struct IEnumTerminal_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_Tapi\"`*"]
 #[repr(transparent)]
 pub struct IEnumTerminalClass(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEnumTerminalClass {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IEnumTerminalClass {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`*"]
     pub unsafe fn Next(&self, pelements: &mut [::windows::core::GUID], pceltfetched: *mut u32) -> ::windows::core::Result<()> {
@@ -3079,11 +3122,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IEnum
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IEnumTerminalClass {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IEnumTerminalClass {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3112,6 +3150,12 @@ pub struct IEnumTerminalClass_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IMcastAddressAllocation(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IMcastAddressAllocation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IMcastAddressAllocation {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
@@ -3204,12 +3248,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IMcastAddressAllocation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IMcastAddressAllocation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3263,6 +3301,12 @@ pub struct IMcastAddressAllocation_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IMcastLeaseInfo(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IMcastLeaseInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IMcastLeaseInfo {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`, `\"Win32_Foundation\"`*"]
@@ -3366,12 +3410,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IMcastLeaseInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IMcastLeaseInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3419,6 +3457,12 @@ pub struct IMcastLeaseInfo_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IMcastScope(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IMcastScope {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IMcastScope {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`*"]
@@ -3497,12 +3541,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IMcastScope {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IMcastScope {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3543,6 +3581,12 @@ pub const INTERFACEMASK: u32 = 16711680u32;
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITACDGroup(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITACDGroup {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITACDGroup {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`, `\"Win32_Foundation\"`*"]
@@ -3612,12 +3656,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITACDGroup {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITACDGroup {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3655,6 +3693,12 @@ pub struct ITACDGroup_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITACDGroupEvent(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITACDGroupEvent {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITACDGroupEvent {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`, `\"Win32_System_Com\"`*"]
@@ -3718,12 +3762,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITACDGroupEvent {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITACDGroupEvent {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3756,6 +3794,11 @@ pub struct ITACDGroupEvent_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_Tapi\"`*"]
 #[repr(transparent)]
 pub struct ITAMMediaFormat(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITAMMediaFormat {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITAMMediaFormat {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`, `\"Win32_Foundation\"`, `\"Win32_Media_DirectShow\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Media_DirectShow"))]
@@ -3787,11 +3830,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for ITAMMedia
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITAMMediaFormat {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for ITAMMediaFormat {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for ITAMMediaFormat {
@@ -3826,6 +3864,12 @@ pub struct ITAMMediaFormat_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITASRTerminalEvent(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITASRTerminalEvent {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITASRTerminalEvent {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`, `\"Win32_System_Com\"`*"]
@@ -3895,12 +3939,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITASRTerminalEvent {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITASRTerminalEvent {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3938,6 +3976,12 @@ pub struct ITASRTerminalEvent_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITAddress(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITAddress {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITAddress {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`*"]
@@ -4071,12 +4115,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITAddress {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITAddress {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4147,6 +4185,12 @@ pub struct ITAddress_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITAddress2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITAddress2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITAddress2 {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`*"]
@@ -4356,12 +4400,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITAddress> for &'a ITAddress2 {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITAddress2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITAddress2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4415,6 +4453,12 @@ pub struct ITAddress2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITAddressCapabilities(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITAddressCapabilities {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITAddressCapabilities {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`*"]
@@ -4511,12 +4555,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITAddressCapabilities {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITAddressCapabilities {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4565,6 +4603,12 @@ pub struct ITAddressCapabilities_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITAddressDeviceSpecificEvent(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITAddressDeviceSpecificEvent {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITAddressDeviceSpecificEvent {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`, `\"Win32_System_Com\"`*"]
@@ -4644,12 +4688,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITAddressDeviceSpecificEvent {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITAddressDeviceSpecificEvent {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4689,6 +4727,12 @@ pub struct ITAddressDeviceSpecificEvent_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITAddressEvent(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITAddressEvent {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITAddressEvent {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`, `\"Win32_System_Com\"`*"]
@@ -4758,12 +4802,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITAddressEvent {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITAddressEvent {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4801,6 +4839,12 @@ pub struct ITAddressEvent_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITAddressTranslation(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITAddressTranslation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITAddressTranslation {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`*"]
@@ -4886,12 +4930,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITAddressTranslation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITAddressTranslation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4938,6 +4976,12 @@ pub struct ITAddressTranslation_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITAddressTranslationInfo(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITAddressTranslationInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITAddressTranslationInfo {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`, `\"Win32_Foundation\"`*"]
@@ -5017,12 +5061,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITAddressTranslationInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITAddressTranslationInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5062,6 +5100,12 @@ pub struct ITAddressTranslationInfo_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITAgent(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITAgent {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITAgent {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`*"]
@@ -5203,12 +5247,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITAgent {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITAgent {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5273,6 +5311,12 @@ pub struct ITAgent_Vtbl {
 #[repr(transparent)]
 pub struct ITAgentEvent(::windows::core::IUnknown);
 #[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITAgentEvent {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "Win32_System_Com")]
 impl ITAgentEvent {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -5335,12 +5379,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITAgentEvent {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITAgentEvent {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5374,6 +5412,12 @@ pub struct ITAgentEvent_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITAgentHandler(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITAgentHandler {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITAgentHandler {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`, `\"Win32_Foundation\"`*"]
@@ -5466,12 +5510,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITAgentHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITAgentHandler {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5522,6 +5560,12 @@ pub struct ITAgentHandler_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITAgentHandlerEvent(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITAgentHandlerEvent {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITAgentHandlerEvent {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`, `\"Win32_System_Com\"`*"]
@@ -5585,12 +5629,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITAgentHandlerEvent {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITAgentHandlerEvent {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5624,6 +5662,12 @@ pub struct ITAgentHandlerEvent_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITAgentSession(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITAgentSession {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITAgentSession {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`, `\"Win32_System_Com\"`*"]
@@ -5764,12 +5808,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITAgentSession {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITAgentSession {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5827,6 +5865,12 @@ pub struct ITAgentSession_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITAgentSessionEvent(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITAgentSessionEvent {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITAgentSessionEvent {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`, `\"Win32_System_Com\"`*"]
@@ -5890,12 +5934,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITAgentSessionEvent {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITAgentSessionEvent {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5928,6 +5966,11 @@ pub struct ITAgentSessionEvent_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_Tapi\"`*"]
 #[repr(transparent)]
 pub struct ITAllocatorProperties(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITAllocatorProperties {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITAllocatorProperties {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`, `\"Win32_Media_DirectShow\"`*"]
     #[cfg(feature = "Win32_Media_DirectShow")]
@@ -5981,11 +6024,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITAll
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITAllocatorProperties {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITAllocatorProperties {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6028,6 +6066,12 @@ pub struct ITAllocatorProperties_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITAutomatedPhoneControl(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITAutomatedPhoneControl {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITAutomatedPhoneControl {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`*"]
@@ -6226,12 +6270,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITAutomatedPhoneControl {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITAutomatedPhoneControl {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6302,6 +6340,12 @@ pub struct ITAutomatedPhoneControl_Vtbl {
 #[repr(transparent)]
 pub struct ITBasicAudioTerminal(::windows::core::IUnknown);
 #[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITBasicAudioTerminal {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "Win32_System_Com")]
 impl ITBasicAudioTerminal {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`*"]
     pub unsafe fn SetVolume(&self, lvolume: i32) -> ::windows::core::Result<()> {
@@ -6371,12 +6415,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITBasicAudioTerminal {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITBasicAudioTerminal {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6409,6 +6447,12 @@ pub struct ITBasicAudioTerminal_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITBasicCallControl(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITBasicCallControl {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITBasicCallControl {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`*"]
@@ -6543,12 +6587,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITBasicCallControl {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITBasicCallControl {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6622,6 +6660,12 @@ pub struct ITBasicCallControl_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITBasicCallControl2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITBasicCallControl2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITBasicCallControl2 {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`*"]
@@ -6796,12 +6840,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITBasicCallControl> for &'a ITBasicCallC
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITBasicCallControl2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITBasicCallControl2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6842,6 +6880,12 @@ pub struct ITBasicCallControl2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITCallHub(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITCallHub {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITCallHub {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`*"]
@@ -6919,12 +6963,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITCallHub {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITCallHub {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6961,6 +6999,12 @@ pub struct ITCallHub_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITCallHubEvent(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITCallHubEvent {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITCallHubEvent {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`*"]
@@ -7030,12 +7074,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITCallHubEvent {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITCallHubEvent {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7073,6 +7111,12 @@ pub struct ITCallHubEvent_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITCallInfo(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITCallInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITCallInfo {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`, `\"Win32_System_Com\"`*"]
@@ -7190,12 +7234,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITCallInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITCallInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7255,6 +7293,12 @@ pub struct ITCallInfo_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITCallInfo2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITCallInfo2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITCallInfo2 {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`, `\"Win32_System_Com\"`*"]
@@ -7405,12 +7449,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITCallInfo> for &'a ITCallInfo2 {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITCallInfo2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITCallInfo2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7441,6 +7479,12 @@ pub struct ITCallInfo2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITCallInfoChangeEvent(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITCallInfoChangeEvent {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITCallInfoChangeEvent {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`, `\"Win32_System_Com\"`*"]
@@ -7509,12 +7553,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITCallInfoChangeEvent {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITCallInfoChangeEvent {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7549,6 +7587,12 @@ pub struct ITCallInfoChangeEvent_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITCallMediaEvent(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITCallMediaEvent {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITCallMediaEvent {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`, `\"Win32_System_Com\"`*"]
@@ -7634,12 +7678,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITCallMediaEvent {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITCallMediaEvent {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7683,6 +7721,12 @@ pub struct ITCallMediaEvent_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITCallNotificationEvent(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITCallNotificationEvent {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITCallNotificationEvent {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`, `\"Win32_System_Com\"`*"]
@@ -7751,12 +7795,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITCallNotificationEvent {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITCallNotificationEvent {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7791,6 +7829,12 @@ pub struct ITCallNotificationEvent_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITCallStateEvent(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITCallStateEvent {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITCallStateEvent {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`, `\"Win32_System_Com\"`*"]
@@ -7864,12 +7908,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITCallStateEvent {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITCallStateEvent {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7905,6 +7943,12 @@ pub struct ITCallStateEvent_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITCallingCard(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITCallingCard {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITCallingCard {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`*"]
@@ -7996,12 +8040,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITCallingCard {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITCallingCard {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8049,6 +8087,12 @@ pub struct ITCallingCard_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITCollection(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITCollection {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`*"]
@@ -8117,12 +8161,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8157,6 +8195,12 @@ pub struct ITCollection_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITCollection2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITCollection2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITCollection2 {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`*"]
@@ -8258,12 +8302,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITCollection> for &'a ITCollection2 {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITCollection2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITCollection2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8297,6 +8335,12 @@ pub struct ITCollection2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITCustomTone(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITCustomTone {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITCustomTone {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`*"]
@@ -8385,12 +8429,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITCustomTone {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITCustomTone {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8427,6 +8465,12 @@ pub struct ITCustomTone_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITDetectTone(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITDetectTone {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITDetectTone {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`*"]
@@ -8506,12 +8550,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITDetectTone {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITDetectTone {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8546,6 +8584,12 @@ pub struct ITDetectTone_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITDigitDetectionEvent(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITDigitDetectionEvent {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITDigitDetectionEvent {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`, `\"Win32_System_Com\"`*"]
@@ -8624,12 +8668,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITDigitDetectionEvent {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITDigitDetectionEvent {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8666,6 +8704,12 @@ pub struct ITDigitDetectionEvent_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITDigitGenerationEvent(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITDigitGenerationEvent {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITDigitGenerationEvent {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`, `\"Win32_System_Com\"`*"]
@@ -8739,12 +8783,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITDigitGenerationEvent {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITDigitGenerationEvent {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8780,6 +8818,12 @@ pub struct ITDigitGenerationEvent_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITDigitsGatheredEvent(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITDigitsGatheredEvent {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITDigitsGatheredEvent {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`, `\"Win32_System_Com\"`*"]
@@ -8859,12 +8903,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITDigitsGatheredEvent {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITDigitsGatheredEvent {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -8904,6 +8942,12 @@ pub struct ITDigitsGatheredEvent_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITDirectory(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITDirectory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITDirectory {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`*"]
@@ -9026,12 +9070,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITDirectory {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITDirectory {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9098,6 +9136,12 @@ pub struct ITDirectory_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITDirectoryObject(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITDirectoryObject {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITDirectoryObject {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`*"]
@@ -9188,12 +9232,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITDirectoryObject {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITDirectoryObject {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9244,6 +9282,12 @@ pub struct ITDirectoryObject_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITDirectoryObjectConference(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITDirectoryObjectConference {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITDirectoryObjectConference {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`, `\"Win32_Foundation\"`*"]
@@ -9371,12 +9415,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITDirectoryObjectConference {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITDirectoryObjectConference {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9442,6 +9480,12 @@ pub struct ITDirectoryObjectConference_Vtbl {
 #[repr(transparent)]
 pub struct ITDirectoryObjectUser(::windows::core::IUnknown);
 #[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITDirectoryObjectUser {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "Win32_System_Com")]
 impl ITDirectoryObjectUser {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -9504,12 +9548,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITDirectoryObjectUser {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITDirectoryObjectUser {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9546,6 +9584,12 @@ pub struct ITDirectoryObjectUser_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITDispatchMapper(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITDispatchMapper {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITDispatchMapper {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`*"]
@@ -9604,12 +9648,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITDispatchMapper {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITDispatchMapper {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9642,6 +9680,12 @@ pub struct ITDispatchMapper_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITFileTerminalEvent(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITFileTerminalEvent {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITFileTerminalEvent {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`, `\"Win32_System_Com\"`*"]
@@ -9727,12 +9771,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITFileTerminalEvent {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITFileTerminalEvent {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9776,6 +9814,12 @@ pub struct ITFileTerminalEvent_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITFileTrack(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITFileTrack {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITFileTrack {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`, `\"Win32_Foundation\"`, `\"Win32_Media_DirectShow\"`*"]
@@ -9862,12 +9906,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITFileTrack {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITFileTrack {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -9920,6 +9958,12 @@ pub struct ITFileTrack_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITForwardInformation(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITForwardInformation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITForwardInformation {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`*"]
@@ -10007,12 +10051,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITForwardInformation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITForwardInformation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10060,6 +10098,12 @@ pub struct ITForwardInformation_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITForwardInformation2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITForwardInformation2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITForwardInformation2 {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`*"]
@@ -10191,12 +10235,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITForwardInformation> for &'a ITForwardI
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITForwardInformation2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITForwardInformation2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10235,6 +10273,12 @@ pub struct ITForwardInformation2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITILSConfig(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITILSConfig {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITILSConfig {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`*"]
@@ -10296,12 +10340,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITILSConfig {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITILSConfig {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10331,6 +10369,11 @@ pub struct ITILSConfig_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_Tapi\"`*"]
 #[repr(transparent)]
 pub struct ITLegacyAddressMediaControl(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITLegacyAddressMediaControl {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITLegacyAddressMediaControl {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -10368,11 +10411,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITLeg
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITLegacyAddressMediaControl {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITLegacyAddressMediaControl {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10408,6 +10446,11 @@ pub struct ITLegacyAddressMediaControl_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_Tapi\"`*"]
 #[repr(transparent)]
 pub struct ITLegacyAddressMediaControl2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITLegacyAddressMediaControl2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITLegacyAddressMediaControl2 {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -10475,11 +10518,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITLegacyAddressMediaControl> for &'a ITL
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITLegacyAddressMediaControl2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITLegacyAddressMediaControl2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10512,6 +10550,12 @@ pub struct ITLegacyAddressMediaControl2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITLegacyCallMediaControl(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITLegacyCallMediaControl {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITLegacyCallMediaControl {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`*"]
@@ -10586,12 +10630,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITLegacyCallMediaControl {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITLegacyCallMediaControl {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10631,6 +10669,12 @@ pub struct ITLegacyCallMediaControl_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITLegacyCallMediaControl2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITLegacyCallMediaControl2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITLegacyCallMediaControl2 {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`*"]
@@ -10779,12 +10823,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITLegacyCallMediaControl> for &'a ITLega
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITLegacyCallMediaControl2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITLegacyCallMediaControl2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10845,6 +10883,12 @@ pub struct ITLegacyCallMediaControl2_Vtbl {
 #[repr(transparent)]
 pub struct ITLegacyWaveSupport(::windows::core::IUnknown);
 #[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITLegacyWaveSupport {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "Win32_System_Com")]
 impl ITLegacyWaveSupport {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`*"]
     pub unsafe fn IsFullDuplex(&self) -> ::windows::core::Result<FULLDUPLEX_SUPPORT> {
@@ -10901,12 +10945,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITLegacyWaveSupport {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITLegacyWaveSupport {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -10936,6 +10974,12 @@ pub struct ITLegacyWaveSupport_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITLocationInfo(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITLocationInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITLocationInfo {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`*"]
@@ -11049,12 +11093,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITLocationInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITLocationInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11111,6 +11149,11 @@ pub struct ITLocationInfo_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_Tapi\"`*"]
 #[repr(transparent)]
 pub struct ITMSPAddress(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITMSPAddress {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITMSPAddress {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`*"]
     pub unsafe fn Initialize(&self, hevent: *const i32) -> ::windows::core::Result<()> {
@@ -11158,11 +11201,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITMSP
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITMSPAddress {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITMSPAddress {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11193,6 +11231,12 @@ pub struct ITMSPAddress_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITMediaControl(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITMediaControl {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITMediaControl {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`*"]
@@ -11262,12 +11306,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITMediaControl {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITMediaControl {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11300,6 +11338,12 @@ pub struct ITMediaControl_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITMediaPlayback(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITMediaPlayback {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITMediaPlayback {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
@@ -11363,12 +11407,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITMediaPlayback {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITMediaPlayback {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11405,6 +11443,12 @@ pub struct ITMediaPlayback_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITMediaRecord(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITMediaRecord {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITMediaRecord {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`, `\"Win32_Foundation\"`*"]
@@ -11468,12 +11512,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITMediaRecord {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITMediaRecord {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11510,6 +11548,12 @@ pub struct ITMediaRecord_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITMediaSupport(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITMediaSupport {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITMediaSupport {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`*"]
@@ -11572,12 +11616,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITMediaSupport {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITMediaSupport {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11608,6 +11646,12 @@ pub struct ITMediaSupport_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITMultiTrackTerminal(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITMultiTrackTerminal {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITMultiTrackTerminal {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
@@ -11692,12 +11736,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITMultiTrackTerminal {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITMultiTrackTerminal {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -11741,6 +11779,12 @@ pub struct ITMultiTrackTerminal_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITPhone(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITPhone {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITPhone {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`*"]
@@ -11956,12 +12000,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITPhone {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITPhone {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12057,6 +12095,12 @@ pub struct ITPhone_Vtbl {
 #[repr(transparent)]
 pub struct ITPhoneDeviceSpecificEvent(::windows::core::IUnknown);
 #[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITPhoneDeviceSpecificEvent {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "Win32_System_Com")]
 impl ITPhoneDeviceSpecificEvent {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -12129,12 +12173,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITPhoneDeviceSpecificEvent {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITPhoneDeviceSpecificEvent {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12170,6 +12208,12 @@ pub struct ITPhoneDeviceSpecificEvent_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITPhoneEvent(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITPhoneEvent {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITPhoneEvent {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`, `\"Win32_System_Com\"`*"]
@@ -12270,12 +12314,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITPhoneEvent {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITPhoneEvent {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12322,6 +12360,12 @@ pub struct ITPhoneEvent_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITPluggableTerminalClassInfo(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITPluggableTerminalClassInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITPluggableTerminalClassInfo {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`, `\"Win32_Foundation\"`*"]
@@ -12414,12 +12458,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITPluggableTerminalClassInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITPluggableTerminalClassInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12469,6 +12507,11 @@ pub struct ITPluggableTerminalClassInfo_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_Tapi\"`*"]
 #[repr(transparent)]
 pub struct ITPluggableTerminalEventSink(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITPluggableTerminalEventSink {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITPluggableTerminalEventSink {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -12494,11 +12537,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for ITPluggab
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITPluggableTerminalEventSink {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for ITPluggableTerminalEventSink {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for ITPluggableTerminalEventSink {
@@ -12528,6 +12566,11 @@ pub struct ITPluggableTerminalEventSink_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_Tapi\"`*"]
 #[repr(transparent)]
 pub struct ITPluggableTerminalEventSinkRegistration(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITPluggableTerminalEventSinkRegistration {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITPluggableTerminalEventSinkRegistration {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`*"]
     pub unsafe fn RegisterSink<'a, Param0: ::windows::core::IntoParam<'a, ITPluggableTerminalEventSink>>(&self, peventsink: Param0) -> ::windows::core::Result<()> {
@@ -12558,11 +12601,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITPlu
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ITPluggableTerminalEventSinkRegistration {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ITPluggableTerminalEventSinkRegistration {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12589,6 +12627,12 @@ pub struct ITPluggableTerminalEventSinkRegistration_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITPluggableTerminalSuperclassInfo(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITPluggableTerminalSuperclassInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITPluggableTerminalSuperclassInfo {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`, `\"Win32_Foundation\"`*"]
@@ -12653,12 +12697,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITPluggableTerminalSuperclassInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITPluggableTerminalSuperclassInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12695,6 +12733,12 @@ pub struct ITPluggableTerminalSuperclassInfo_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITPrivateEvent(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITPrivateEvent {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITPrivateEvent {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`, `\"Win32_System_Com\"`*"]
@@ -12776,12 +12820,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITPrivateEvent {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITPrivateEvent {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12827,6 +12865,12 @@ pub struct ITPrivateEvent_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITQOSEvent(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITQOSEvent {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITQOSEvent {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`, `\"Win32_System_Com\"`*"]
@@ -12895,12 +12939,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITQOSEvent {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITQOSEvent {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -12935,6 +12973,12 @@ pub struct ITQOSEvent_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITQueue(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITQueue {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITQueue {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`*"]
@@ -13047,12 +13091,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITQueue {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITQueue {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13096,6 +13134,12 @@ pub struct ITQueue_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITQueueEvent(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITQueueEvent {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITQueueEvent {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`, `\"Win32_System_Com\"`*"]
@@ -13159,12 +13203,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITQueueEvent {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITQueueEvent {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13198,6 +13236,12 @@ pub struct ITQueueEvent_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITRendezvous(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITRendezvous {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITRendezvous {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
@@ -13273,12 +13317,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITRendezvous {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITRendezvous {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13320,6 +13358,12 @@ pub struct ITRendezvous_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITRequest(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITRequest {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITRequest {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`, `\"Win32_Foundation\"`*"]
@@ -13377,12 +13421,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITRequest {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITRequest {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13415,6 +13453,12 @@ pub struct ITRequest_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITRequestEvent(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITRequestEvent {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITRequestEvent {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`*"]
@@ -13501,12 +13545,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITRequestEvent {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITRequestEvent {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13553,6 +13591,12 @@ pub struct ITRequestEvent_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITScriptableAudioFormat(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITScriptableAudioFormat {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITScriptableAudioFormat {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`*"]
@@ -13659,12 +13703,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITScriptableAudioFormat {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITScriptableAudioFormat {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13705,6 +13743,12 @@ pub struct ITScriptableAudioFormat_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITStaticAudioTerminal(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITStaticAudioTerminal {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITStaticAudioTerminal {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`*"]
@@ -13762,12 +13806,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITStaticAudioTerminal {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITStaticAudioTerminal {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13797,6 +13835,12 @@ pub struct ITStaticAudioTerminal_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITStream(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITStream {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITStream {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`*"]
@@ -13898,12 +13942,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITStream {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITStream {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -13954,6 +13992,12 @@ pub struct ITStream_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITStreamControl(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITStreamControl {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITStreamControl {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`, `\"Win32_System_Com\"`*"]
@@ -14028,12 +14072,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITStreamControl {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITStreamControl {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -14075,6 +14113,12 @@ pub struct ITStreamControl_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITSubStream(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITSubStream {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITSubStream {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`*"]
@@ -14166,12 +14210,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITSubStream {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITSubStream {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -14220,6 +14258,12 @@ pub struct ITSubStream_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITSubStreamControl(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITSubStreamControl {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITSubStreamControl {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`, `\"Win32_System_Com\"`*"]
@@ -14294,12 +14338,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITSubStreamControl {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITSubStreamControl {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -14341,6 +14379,12 @@ pub struct ITSubStreamControl_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITTAPI(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITTAPI {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITTAPI {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`*"]
@@ -14473,12 +14517,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITTAPI {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITTAPI {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -14547,6 +14585,12 @@ pub struct ITTAPI_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITTAPI2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITTAPI2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITTAPI2 {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`*"]
@@ -14720,12 +14764,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITTAPI> for &'a ITTAPI2 {
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITTAPI2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITTAPI2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -14763,6 +14801,12 @@ pub struct ITTAPI2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITTAPICallCenter(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITTAPICallCenter {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITTAPICallCenter {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`*"]
@@ -14826,12 +14870,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITTAPICallCenter {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITTAPICallCenter {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -14865,6 +14903,12 @@ pub struct ITTAPICallCenter_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITTAPIDispatchEventNotification(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITTAPIDispatchEventNotification {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITTAPIDispatchEventNotification {}
 #[cfg(feature = "Win32_System_Com")]
@@ -14916,12 +14960,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITTAPIDispatchEventNotification {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITTAPIDispatchEventNotification {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -14949,6 +14987,11 @@ pub struct ITTAPIDispatchEventNotification_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_Tapi\"`*"]
 #[repr(transparent)]
 pub struct ITTAPIEventNotification(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITTAPIEventNotification {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITTAPIEventNotification {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -14974,11 +15017,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for ITTAPIEve
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITTAPIEventNotification {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for ITTAPIEventNotification {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for ITTAPIEventNotification {
@@ -15009,6 +15047,12 @@ pub struct ITTAPIEventNotification_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITTAPIObjectEvent(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITTAPIObjectEvent {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITTAPIObjectEvent {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`, `\"Win32_System_Com\"`*"]
@@ -15083,12 +15127,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITTAPIObjectEvent {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITTAPIObjectEvent {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -15127,6 +15165,12 @@ pub struct ITTAPIObjectEvent_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITTAPIObjectEvent2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITTAPIObjectEvent2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITTAPIObjectEvent2 {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`, `\"Win32_System_Com\"`*"]
@@ -15231,12 +15275,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITTAPIObjectEvent> for &'a ITTAPIObjectE
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITTAPIObjectEvent2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITTAPIObjectEvent2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -15269,6 +15307,12 @@ pub struct ITTAPIObjectEvent2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITTTSTerminalEvent(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITTTSTerminalEvent {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITTTSTerminalEvent {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`, `\"Win32_System_Com\"`*"]
@@ -15338,12 +15382,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITTTSTerminalEvent {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITTTSTerminalEvent {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -15381,6 +15419,12 @@ pub struct ITTTSTerminalEvent_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITTerminal(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITTerminal {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITTerminal {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`, `\"Win32_Foundation\"`*"]
@@ -15465,12 +15509,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITTerminal {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITTerminal {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -15511,6 +15549,12 @@ pub struct ITTerminal_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITTerminalSupport(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITTerminalSupport {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITTerminalSupport {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
@@ -15597,12 +15641,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITTerminalSupport {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITTerminalSupport {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -15649,6 +15687,12 @@ pub struct ITTerminalSupport_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITTerminalSupport2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITTerminalSupport2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITTerminalSupport2 {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
@@ -15781,12 +15825,6 @@ impl<'a> ::windows::core::IntoParam<'a, ITTerminalSupport> for &'a ITTerminalSup
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITTerminalSupport2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITTerminalSupport2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -15825,6 +15863,12 @@ pub struct ITTerminalSupport2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITToneDetectionEvent(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITToneDetectionEvent {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITToneDetectionEvent {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`, `\"Win32_System_Com\"`*"]
@@ -15898,12 +15942,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITToneDetectionEvent {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITToneDetectionEvent {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -15939,6 +15977,12 @@ pub struct ITToneDetectionEvent_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct ITToneTerminalEvent(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for ITToneTerminalEvent {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl ITToneTerminalEvent {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`, `\"Win32_System_Com\"`*"]
@@ -16008,12 +16052,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::super::System::Com::IDispatch> fo
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for ITToneTerminalEvent {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for ITToneTerminalEvent {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -16050,6 +16088,11 @@ pub struct ITToneTerminalEvent_Vtbl {
 #[doc = "*Required features: `\"Win32_Devices_Tapi\"`*"]
 #[repr(transparent)]
 pub struct ITnef(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITnef {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITnef {
     #[doc = "*Required features: `\"Win32_Devices_Tapi\"`, `\"Win32_System_AddressBook\"`*"]
     #[cfg(feature = "Win32_System_AddressBook")]
@@ -16105,11 +16148,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for ITnef {
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITnef {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for ITnef {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for ITnef {
@@ -16294,6 +16332,7 @@ impl ::core::clone::Clone for LINEADDRESSCAPS {
 }
 unsafe impl ::windows::core::Abi for LINEADDRESSCAPS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for LINEADDRESSCAPS {
     fn eq(&self, other: &Self) -> bool {
@@ -16366,6 +16405,7 @@ impl ::core::clone::Clone for LINEADDRESSSTATUS {
 }
 unsafe impl ::windows::core::Abi for LINEADDRESSSTATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for LINEADDRESSSTATUS {
     fn eq(&self, other: &Self) -> bool {
@@ -16431,6 +16471,7 @@ impl ::core::clone::Clone for LINEAGENTACTIVITYENTRY {
 }
 unsafe impl ::windows::core::Abi for LINEAGENTACTIVITYENTRY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for LINEAGENTACTIVITYENTRY {
     fn eq(&self, other: &Self) -> bool {
@@ -16461,6 +16502,7 @@ impl ::core::clone::Clone for LINEAGENTACTIVITYLIST {
 }
 unsafe impl ::windows::core::Abi for LINEAGENTACTIVITYLIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for LINEAGENTACTIVITYLIST {
     fn eq(&self, other: &Self) -> bool {
@@ -16500,6 +16542,7 @@ impl ::core::clone::Clone for LINEAGENTCAPS {
 }
 unsafe impl ::windows::core::Abi for LINEAGENTCAPS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for LINEAGENTCAPS {
     fn eq(&self, other: &Self) -> bool {
@@ -16531,6 +16574,7 @@ impl ::core::clone::Clone for LINEAGENTENTRY {
 }
 unsafe impl ::windows::core::Abi for LINEAGENTENTRY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for LINEAGENTENTRY {
     fn eq(&self, other: &Self) -> bool {
@@ -16570,6 +16614,7 @@ impl ::core::clone::Clone for LINEAGENTGROUPENTRY {
 }
 unsafe impl ::windows::core::Abi for LINEAGENTGROUPENTRY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for LINEAGENTGROUPENTRY {
     fn eq(&self, other: &Self) -> bool {
@@ -16598,6 +16643,7 @@ impl ::core::clone::Clone for LINEAGENTGROUPENTRY_0 {
 }
 unsafe impl ::windows::core::Abi for LINEAGENTGROUPENTRY_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for LINEAGENTGROUPENTRY_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -16628,6 +16674,7 @@ impl ::core::clone::Clone for LINEAGENTGROUPLIST {
 }
 unsafe impl ::windows::core::Abi for LINEAGENTGROUPLIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for LINEAGENTGROUPLIST {
     fn eq(&self, other: &Self) -> bool {
@@ -16669,6 +16716,7 @@ impl ::core::clone::Clone for LINEAGENTINFO {
 #[cfg(feature = "Win32_System_Com")]
 unsafe impl ::windows::core::Abi for LINEAGENTINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for LINEAGENTINFO {
@@ -16702,6 +16750,7 @@ impl ::core::clone::Clone for LINEAGENTLIST {
 }
 unsafe impl ::windows::core::Abi for LINEAGENTLIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for LINEAGENTLIST {
     fn eq(&self, other: &Self) -> bool {
@@ -16730,6 +16779,7 @@ impl ::core::clone::Clone for LINEAGENTSESSIONENTRY {
 }
 unsafe impl ::windows::core::Abi for LINEAGENTSESSIONENTRY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for LINEAGENTSESSIONENTRY {
     fn eq(&self, other: &Self) -> bool {
@@ -16775,6 +16825,7 @@ impl ::core::clone::Clone for LINEAGENTSESSIONINFO {
 #[cfg(feature = "Win32_System_Com")]
 unsafe impl ::windows::core::Abi for LINEAGENTSESSIONINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for LINEAGENTSESSIONINFO {
@@ -16808,6 +16859,7 @@ impl ::core::clone::Clone for LINEAGENTSESSIONLIST {
 }
 unsafe impl ::windows::core::Abi for LINEAGENTSESSIONLIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for LINEAGENTSESSIONLIST {
     fn eq(&self, other: &Self) -> bool {
@@ -16898,6 +16950,7 @@ impl ::core::clone::Clone for LINEAGENTSTATUS {
 }
 unsafe impl ::windows::core::Abi for LINEAGENTSTATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for LINEAGENTSTATUS {
     fn eq(&self, other: &Self) -> bool {
@@ -16962,6 +17015,7 @@ impl ::core::clone::Clone for LINEAPPINFO {
 }
 unsafe impl ::windows::core::Abi for LINEAPPINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for LINEAPPINFO {
     fn eq(&self, other: &Self) -> bool {
@@ -17192,6 +17246,7 @@ impl ::core::clone::Clone for LINECALLINFO {
 }
 unsafe impl ::windows::core::Abi for LINECALLINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for LINECALLINFO {
     fn eq(&self, other: &Self) -> bool {
@@ -17284,6 +17339,7 @@ impl ::core::clone::Clone for LINECALLLIST {
 }
 unsafe impl ::windows::core::Abi for LINECALLLIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for LINECALLLIST {
     fn eq(&self, other: &Self) -> bool {
@@ -17379,6 +17435,7 @@ impl ::core::clone::Clone for LINECALLPARAMS {
 }
 unsafe impl ::windows::core::Abi for LINECALLPARAMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for LINECALLPARAMS {
     fn eq(&self, other: &Self) -> bool {
@@ -17512,6 +17569,7 @@ impl ::core::clone::Clone for LINECALLSTATUS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for LINECALLSTATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for LINECALLSTATUS {
@@ -17542,6 +17600,7 @@ impl ::core::clone::Clone for LINECALLTREATMENTENTRY {
 }
 unsafe impl ::windows::core::Abi for LINECALLTREATMENTENTRY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for LINECALLTREATMENTENTRY {
     fn eq(&self, other: &Self) -> bool {
@@ -17585,6 +17644,7 @@ impl ::core::clone::Clone for LINECARDENTRY {
 }
 unsafe impl ::windows::core::Abi for LINECARDENTRY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for LINECARDENTRY {
     fn eq(&self, other: &Self) -> bool {
@@ -17634,6 +17694,7 @@ impl ::core::clone::Clone for LINECOUNTRYENTRY {
 }
 unsafe impl ::windows::core::Abi for LINECOUNTRYENTRY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for LINECOUNTRYENTRY {
     fn eq(&self, other: &Self) -> bool {
@@ -17664,6 +17725,7 @@ impl ::core::clone::Clone for LINECOUNTRYLIST {
 }
 unsafe impl ::windows::core::Abi for LINECOUNTRYLIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for LINECOUNTRYLIST {
     fn eq(&self, other: &Self) -> bool {
@@ -17771,6 +17833,7 @@ impl ::core::clone::Clone for LINEDEVCAPS {
 }
 unsafe impl ::windows::core::Abi for LINEDEVCAPS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for LINEDEVCAPS {
     fn eq(&self, other: &Self) -> bool {
@@ -17867,6 +17930,7 @@ impl ::core::clone::Clone for LINEDEVSTATUS {
 }
 unsafe impl ::windows::core::Abi for LINEDEVSTATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for LINEDEVSTATUS {
     fn eq(&self, other: &Self) -> bool {
@@ -17903,6 +17967,7 @@ impl ::core::clone::Clone for LINEDIALPARAMS {
 }
 unsafe impl ::windows::core::Abi for LINEDIALPARAMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for LINEDIALPARAMS {
     fn eq(&self, other: &Self) -> bool {
@@ -18193,6 +18258,7 @@ impl ::core::clone::Clone for LINEEXTENSIONID {
 }
 unsafe impl ::windows::core::Abi for LINEEXTENSIONID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for LINEEXTENSIONID {
     fn eq(&self, other: &Self) -> bool {
@@ -18241,6 +18307,7 @@ impl ::core::clone::Clone for LINEFORWARD {
 }
 unsafe impl ::windows::core::Abi for LINEFORWARD {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for LINEFORWARD {
     fn eq(&self, other: &Self) -> bool {
@@ -18268,6 +18335,7 @@ impl ::core::clone::Clone for LINEFORWARDLIST {
 }
 unsafe impl ::windows::core::Abi for LINEFORWARDLIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for LINEFORWARDLIST {
     fn eq(&self, other: &Self) -> bool {
@@ -18346,6 +18414,7 @@ impl ::core::clone::Clone for LINEGENERATETONE {
 }
 unsafe impl ::windows::core::Abi for LINEGENERATETONE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for LINEGENERATETONE {
     fn eq(&self, other: &Self) -> bool {
@@ -18392,6 +18461,7 @@ impl ::core::clone::Clone for LINEINITIALIZEEXPARAMS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for LINEINITIALIZEEXPARAMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for LINEINITIALIZEEXPARAMS {
@@ -18425,6 +18495,7 @@ impl ::core::clone::Clone for LINEINITIALIZEEXPARAMS_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for LINEINITIALIZEEXPARAMS_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for LINEINITIALIZEEXPARAMS_0 {
@@ -18469,6 +18540,7 @@ impl ::core::clone::Clone for LINELOCATIONENTRY {
 }
 unsafe impl ::windows::core::Abi for LINELOCATIONENTRY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for LINELOCATIONENTRY {
     fn eq(&self, other: &Self) -> bool {
@@ -18499,6 +18571,7 @@ impl ::core::clone::Clone for LINEMEDIACONTROLCALLSTATE {
 }
 unsafe impl ::windows::core::Abi for LINEMEDIACONTROLCALLSTATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for LINEMEDIACONTROLCALLSTATE {
     fn eq(&self, other: &Self) -> bool {
@@ -18526,6 +18599,7 @@ impl ::core::clone::Clone for LINEMEDIACONTROLDIGIT {
 }
 unsafe impl ::windows::core::Abi for LINEMEDIACONTROLDIGIT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for LINEMEDIACONTROLDIGIT {
     fn eq(&self, other: &Self) -> bool {
@@ -18553,6 +18627,7 @@ impl ::core::clone::Clone for LINEMEDIACONTROLMEDIA {
 }
 unsafe impl ::windows::core::Abi for LINEMEDIACONTROLMEDIA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for LINEMEDIACONTROLMEDIA {
     fn eq(&self, other: &Self) -> bool {
@@ -18583,6 +18658,7 @@ impl ::core::clone::Clone for LINEMEDIACONTROLTONE {
 }
 unsafe impl ::windows::core::Abi for LINEMEDIACONTROLTONE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for LINEMEDIACONTROLTONE {
     fn eq(&self, other: &Self) -> bool {
@@ -18665,6 +18741,7 @@ impl ::core::clone::Clone for LINEMESSAGE {
 }
 unsafe impl ::windows::core::Abi for LINEMESSAGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for LINEMESSAGE {
     fn eq(&self, other: &Self) -> bool {
@@ -18694,6 +18771,7 @@ impl ::core::clone::Clone for LINEMONITORTONE {
 }
 unsafe impl ::windows::core::Abi for LINEMONITORTONE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for LINEMONITORTONE {
     fn eq(&self, other: &Self) -> bool {
@@ -18733,6 +18811,7 @@ impl ::core::clone::Clone for LINEPROVIDERENTRY {
 }
 unsafe impl ::windows::core::Abi for LINEPROVIDERENTRY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for LINEPROVIDERENTRY {
     fn eq(&self, other: &Self) -> bool {
@@ -18763,6 +18842,7 @@ impl ::core::clone::Clone for LINEPROVIDERLIST {
 }
 unsafe impl ::windows::core::Abi for LINEPROVIDERLIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for LINEPROVIDERLIST {
     fn eq(&self, other: &Self) -> bool {
@@ -18799,6 +18879,7 @@ impl ::core::clone::Clone for LINEPROXYREQUEST {
 #[cfg(feature = "Win32_System_Com")]
 unsafe impl ::windows::core::Abi for LINEPROXYREQUEST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for LINEPROXYREQUEST {
@@ -18850,6 +18931,7 @@ impl ::core::clone::Clone for LINEPROXYREQUEST_0 {
 #[cfg(feature = "Win32_System_Com")]
 unsafe impl ::windows::core::Abi for LINEPROXYREQUEST_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for LINEPROXYREQUEST_0 {
@@ -18885,6 +18967,7 @@ impl ::core::clone::Clone for LINEPROXYREQUEST_0_0 {
 #[cfg(feature = "Win32_System_Com")]
 unsafe impl ::windows::core::Abi for LINEPROXYREQUEST_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for LINEPROXYREQUEST_0_0 {
@@ -18922,6 +19005,7 @@ impl ::core::clone::Clone for LINEPROXYREQUEST_0_1 {
 #[cfg(feature = "Win32_System_Com")]
 unsafe impl ::windows::core::Abi for LINEPROXYREQUEST_0_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for LINEPROXYREQUEST_0_1 {
@@ -18958,6 +19042,7 @@ impl ::core::clone::Clone for LINEPROXYREQUEST_0_2 {
 #[cfg(feature = "Win32_System_Com")]
 unsafe impl ::windows::core::Abi for LINEPROXYREQUEST_0_2 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for LINEPROXYREQUEST_0_2 {
@@ -18991,6 +19076,7 @@ impl ::core::clone::Clone for LINEPROXYREQUEST_0_3 {
 #[cfg(feature = "Win32_System_Com")]
 unsafe impl ::windows::core::Abi for LINEPROXYREQUEST_0_3 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for LINEPROXYREQUEST_0_3 {
@@ -19024,6 +19110,7 @@ impl ::core::clone::Clone for LINEPROXYREQUEST_0_4 {
 #[cfg(feature = "Win32_System_Com")]
 unsafe impl ::windows::core::Abi for LINEPROXYREQUEST_0_4 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for LINEPROXYREQUEST_0_4 {
@@ -19057,6 +19144,7 @@ impl ::core::clone::Clone for LINEPROXYREQUEST_0_5 {
 #[cfg(feature = "Win32_System_Com")]
 unsafe impl ::windows::core::Abi for LINEPROXYREQUEST_0_5 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for LINEPROXYREQUEST_0_5 {
@@ -19090,6 +19178,7 @@ impl ::core::clone::Clone for LINEPROXYREQUEST_0_6 {
 #[cfg(feature = "Win32_System_Com")]
 unsafe impl ::windows::core::Abi for LINEPROXYREQUEST_0_6 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for LINEPROXYREQUEST_0_6 {
@@ -19123,6 +19212,7 @@ impl ::core::clone::Clone for LINEPROXYREQUEST_0_7 {
 #[cfg(feature = "Win32_System_Com")]
 unsafe impl ::windows::core::Abi for LINEPROXYREQUEST_0_7 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for LINEPROXYREQUEST_0_7 {
@@ -19156,6 +19246,7 @@ impl ::core::clone::Clone for LINEPROXYREQUEST_0_8 {
 #[cfg(feature = "Win32_System_Com")]
 unsafe impl ::windows::core::Abi for LINEPROXYREQUEST_0_8 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for LINEPROXYREQUEST_0_8 {
@@ -19189,6 +19280,7 @@ impl ::core::clone::Clone for LINEPROXYREQUEST_0_9 {
 #[cfg(feature = "Win32_System_Com")]
 unsafe impl ::windows::core::Abi for LINEPROXYREQUEST_0_9 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for LINEPROXYREQUEST_0_9 {
@@ -19221,6 +19313,7 @@ impl ::core::clone::Clone for LINEPROXYREQUEST_0_10 {
 #[cfg(feature = "Win32_System_Com")]
 unsafe impl ::windows::core::Abi for LINEPROXYREQUEST_0_10 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for LINEPROXYREQUEST_0_10 {
@@ -19254,6 +19347,7 @@ impl ::core::clone::Clone for LINEPROXYREQUEST_0_11 {
 #[cfg(feature = "Win32_System_Com")]
 unsafe impl ::windows::core::Abi for LINEPROXYREQUEST_0_11 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for LINEPROXYREQUEST_0_11 {
@@ -19287,6 +19381,7 @@ impl ::core::clone::Clone for LINEPROXYREQUEST_0_12 {
 #[cfg(feature = "Win32_System_Com")]
 unsafe impl ::windows::core::Abi for LINEPROXYREQUEST_0_12 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for LINEPROXYREQUEST_0_12 {
@@ -19320,6 +19415,7 @@ impl ::core::clone::Clone for LINEPROXYREQUEST_0_13 {
 #[cfg(feature = "Win32_System_Com")]
 unsafe impl ::windows::core::Abi for LINEPROXYREQUEST_0_13 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for LINEPROXYREQUEST_0_13 {
@@ -19353,6 +19449,7 @@ impl ::core::clone::Clone for LINEPROXYREQUEST_0_14 {
 #[cfg(feature = "Win32_System_Com")]
 unsafe impl ::windows::core::Abi for LINEPROXYREQUEST_0_14 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for LINEPROXYREQUEST_0_14 {
@@ -19386,6 +19483,7 @@ impl ::core::clone::Clone for LINEPROXYREQUEST_0_15 {
 #[cfg(feature = "Win32_System_Com")]
 unsafe impl ::windows::core::Abi for LINEPROXYREQUEST_0_15 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for LINEPROXYREQUEST_0_15 {
@@ -19420,6 +19518,7 @@ impl ::core::clone::Clone for LINEPROXYREQUEST_0_16 {
 #[cfg(feature = "Win32_System_Com")]
 unsafe impl ::windows::core::Abi for LINEPROXYREQUEST_0_16 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for LINEPROXYREQUEST_0_16 {
@@ -19454,6 +19553,7 @@ impl ::core::clone::Clone for LINEPROXYREQUEST_0_17 {
 #[cfg(feature = "Win32_System_Com")]
 unsafe impl ::windows::core::Abi for LINEPROXYREQUEST_0_17 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for LINEPROXYREQUEST_0_17 {
@@ -19488,6 +19588,7 @@ impl ::core::clone::Clone for LINEPROXYREQUEST_0_18 {
 #[cfg(feature = "Win32_System_Com")]
 unsafe impl ::windows::core::Abi for LINEPROXYREQUEST_0_18 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for LINEPROXYREQUEST_0_18 {
@@ -19521,6 +19622,7 @@ impl ::core::clone::Clone for LINEPROXYREQUEST_0_19 {
 #[cfg(feature = "Win32_System_Com")]
 unsafe impl ::windows::core::Abi for LINEPROXYREQUEST_0_19 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for LINEPROXYREQUEST_0_19 {
@@ -19554,6 +19656,7 @@ impl ::core::clone::Clone for LINEPROXYREQUESTLIST {
 }
 unsafe impl ::windows::core::Abi for LINEPROXYREQUESTLIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for LINEPROXYREQUESTLIST {
     fn eq(&self, other: &Self) -> bool {
@@ -19635,6 +19738,7 @@ impl ::core::clone::Clone for LINEQUEUEENTRY {
 }
 unsafe impl ::windows::core::Abi for LINEQUEUEENTRY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for LINEQUEUEENTRY {
     fn eq(&self, other: &Self) -> bool {
@@ -19672,6 +19776,7 @@ impl ::core::clone::Clone for LINEQUEUEINFO {
 }
 unsafe impl ::windows::core::Abi for LINEQUEUEINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for LINEQUEUEINFO {
     fn eq(&self, other: &Self) -> bool {
@@ -19702,6 +19807,7 @@ impl ::core::clone::Clone for LINEQUEUELIST {
 }
 unsafe impl ::windows::core::Abi for LINEQUEUELIST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for LINEQUEUELIST {
     fn eq(&self, other: &Self) -> bool {
@@ -19752,6 +19858,7 @@ impl ::core::fmt::Debug for LINEREQMAKECALL {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for LINEREQMAKECALL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for LINEREQMAKECALL {
@@ -19793,6 +19900,7 @@ impl ::core::clone::Clone for LINEREQMEDIACALL {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for LINEREQMEDIACALL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for LINEREQMEDIACALL {
@@ -19849,6 +19957,7 @@ impl ::core::clone::Clone for LINETERMCAPS {
 }
 unsafe impl ::windows::core::Abi for LINETERMCAPS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for LINETERMCAPS {
     fn eq(&self, other: &Self) -> bool {
@@ -19930,6 +20039,7 @@ impl ::core::clone::Clone for LINETRANSLATECAPS {
 }
 unsafe impl ::windows::core::Abi for LINETRANSLATECAPS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for LINETRANSLATECAPS {
     fn eq(&self, other: &Self) -> bool {
@@ -19972,6 +20082,7 @@ impl ::core::clone::Clone for LINETRANSLATEOUTPUT {
 }
 unsafe impl ::windows::core::Abi for LINETRANSLATEOUTPUT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for LINETRANSLATEOUTPUT {
     fn eq(&self, other: &Self) -> bool {
@@ -20096,6 +20207,7 @@ impl ::core::default::Default for MSP_ADDRESS_EVENT {
 }
 unsafe impl ::windows::core::Abi for MSP_ADDRESS_EVENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MSP_ADDRESS_EVENT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -20131,6 +20243,7 @@ impl ::core::default::Default for MSP_CALL_EVENT {
 }
 unsafe impl ::windows::core::Abi for MSP_CALL_EVENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MSP_CALL_EVENT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -20170,6 +20283,7 @@ impl ::core::default::Default for MSP_CALL_EVENT_CAUSE {
 }
 unsafe impl ::windows::core::Abi for MSP_CALL_EVENT_CAUSE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MSP_CALL_EVENT_CAUSE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -20209,6 +20323,7 @@ impl ::core::default::Default for MSP_EVENT {
 }
 unsafe impl ::windows::core::Abi for MSP_EVENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MSP_EVENT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -20233,6 +20348,7 @@ impl ::core::clone::Clone for MSP_EVENT_INFO {
 #[cfg(feature = "Win32_System_Com")]
 unsafe impl ::windows::core::Abi for MSP_EVENT_INFO {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for MSP_EVENT_INFO {
@@ -20270,6 +20386,7 @@ impl ::core::clone::Clone for MSP_EVENT_INFO_0 {
 #[cfg(feature = "Win32_System_Com")]
 unsafe impl ::windows::core::Abi for MSP_EVENT_INFO_0 {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for MSP_EVENT_INFO_0 {
@@ -20307,6 +20424,7 @@ impl ::core::fmt::Debug for MSP_EVENT_INFO_0_0 {
 #[cfg(feature = "Win32_System_Com")]
 unsafe impl ::windows::core::Abi for MSP_EVENT_INFO_0_0 {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for MSP_EVENT_INFO_0_0 {
@@ -20344,6 +20462,7 @@ impl ::core::fmt::Debug for MSP_EVENT_INFO_0_1 {
 #[cfg(feature = "Win32_System_Com")]
 unsafe impl ::windows::core::Abi for MSP_EVENT_INFO_0_1 {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for MSP_EVENT_INFO_0_1 {
@@ -20384,6 +20503,7 @@ impl ::core::fmt::Debug for MSP_EVENT_INFO_0_2 {
 #[cfg(feature = "Win32_System_Com")]
 unsafe impl ::windows::core::Abi for MSP_EVENT_INFO_0_2 {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for MSP_EVENT_INFO_0_2 {
@@ -20430,6 +20550,7 @@ impl ::core::fmt::Debug for MSP_EVENT_INFO_0_3 {
 #[cfg(feature = "Win32_System_Com")]
 unsafe impl ::windows::core::Abi for MSP_EVENT_INFO_0_3 {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for MSP_EVENT_INFO_0_3 {
@@ -20467,6 +20588,7 @@ impl ::core::fmt::Debug for MSP_EVENT_INFO_0_4 {
 #[cfg(feature = "Win32_System_Com")]
 unsafe impl ::windows::core::Abi for MSP_EVENT_INFO_0_4 {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for MSP_EVENT_INFO_0_4 {
@@ -20504,6 +20626,7 @@ impl ::core::fmt::Debug for MSP_EVENT_INFO_0_5 {
 #[cfg(feature = "Win32_System_Com")]
 unsafe impl ::windows::core::Abi for MSP_EVENT_INFO_0_5 {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for MSP_EVENT_INFO_0_5 {
@@ -20543,6 +20666,7 @@ impl ::core::fmt::Debug for MSP_EVENT_INFO_0_6 {
 #[cfg(feature = "Win32_System_Com")]
 unsafe impl ::windows::core::Abi for MSP_EVENT_INFO_0_6 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for MSP_EVENT_INFO_0_6 {
@@ -20580,6 +20704,7 @@ impl ::core::fmt::Debug for MSP_EVENT_INFO_0_7 {
 #[cfg(feature = "Win32_System_Com")]
 unsafe impl ::windows::core::Abi for MSP_EVENT_INFO_0_7 {
     type Abi = ::core::mem::ManuallyDrop<Self>;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for MSP_EVENT_INFO_0_7 {
@@ -20617,6 +20742,7 @@ impl ::core::clone::Clone for NSID {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NSID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NSID {
@@ -20650,6 +20776,7 @@ impl ::core::clone::Clone for NSID_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for NSID_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for NSID_0 {
@@ -20817,6 +20944,7 @@ impl ::core::clone::Clone for PHONEBUTTONINFO {
 }
 unsafe impl ::windows::core::Abi for PHONEBUTTONINFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PHONEBUTTONINFO {
     fn eq(&self, other: &Self) -> bool {
@@ -20909,6 +21037,7 @@ impl ::core::clone::Clone for PHONECAPS {
 }
 unsafe impl ::windows::core::Abi for PHONECAPS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PHONECAPS {
     fn eq(&self, other: &Self) -> bool {
@@ -20940,6 +21069,7 @@ impl ::core::default::Default for PHONECAPS_BUFFER {
 }
 unsafe impl ::windows::core::Abi for PHONECAPS_BUFFER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PHONECAPS_BUFFER {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -20981,6 +21111,7 @@ impl ::core::default::Default for PHONECAPS_LONG {
 }
 unsafe impl ::windows::core::Abi for PHONECAPS_LONG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PHONECAPS_LONG {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -21010,6 +21141,7 @@ impl ::core::default::Default for PHONECAPS_STRING {
 }
 unsafe impl ::windows::core::Abi for PHONECAPS_STRING {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PHONECAPS_STRING {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -21106,6 +21238,7 @@ impl ::core::clone::Clone for PHONEEXTENSIONID {
 }
 unsafe impl ::windows::core::Abi for PHONEEXTENSIONID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PHONEEXTENSIONID {
     fn eq(&self, other: &Self) -> bool {
@@ -21220,6 +21353,7 @@ impl ::core::clone::Clone for PHONEINITIALIZEEXPARAMS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PHONEINITIALIZEEXPARAMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for PHONEINITIALIZEEXPARAMS {
@@ -21253,6 +21387,7 @@ impl ::core::clone::Clone for PHONEINITIALIZEEXPARAMS_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for PHONEINITIALIZEEXPARAMS_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for PHONEINITIALIZEEXPARAMS_0 {
@@ -21302,6 +21437,7 @@ impl ::core::clone::Clone for PHONEMESSAGE {
 }
 unsafe impl ::windows::core::Abi for PHONEMESSAGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PHONEMESSAGE {
     fn eq(&self, other: &Self) -> bool {
@@ -21404,6 +21540,7 @@ impl ::core::clone::Clone for PHONESTATUS {
 }
 unsafe impl ::windows::core::Abi for PHONESTATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PHONESTATUS {
     fn eq(&self, other: &Self) -> bool {
@@ -21535,6 +21672,7 @@ impl ::core::default::Default for PHONE_BUTTON_FUNCTION {
 }
 unsafe impl ::windows::core::Abi for PHONE_BUTTON_FUNCTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PHONE_BUTTON_FUNCTION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -21570,6 +21708,7 @@ impl ::core::default::Default for PHONE_BUTTON_MODE {
 }
 unsafe impl ::windows::core::Abi for PHONE_BUTTON_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PHONE_BUTTON_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -21601,6 +21740,7 @@ impl ::core::default::Default for PHONE_BUTTON_STATE {
 }
 unsafe impl ::windows::core::Abi for PHONE_BUTTON_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PHONE_BUTTON_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -21656,6 +21796,7 @@ impl ::core::default::Default for PHONE_EVENT {
 }
 unsafe impl ::windows::core::Abi for PHONE_EVENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PHONE_EVENT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -21685,6 +21826,7 @@ impl ::core::default::Default for PHONE_HOOK_SWITCH_DEVICE {
 }
 unsafe impl ::windows::core::Abi for PHONE_HOOK_SWITCH_DEVICE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PHONE_HOOK_SWITCH_DEVICE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -21716,6 +21858,7 @@ impl ::core::default::Default for PHONE_HOOK_SWITCH_STATE {
 }
 unsafe impl ::windows::core::Abi for PHONE_HOOK_SWITCH_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PHONE_HOOK_SWITCH_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -21755,6 +21898,7 @@ impl ::core::default::Default for PHONE_LAMP_MODE {
 }
 unsafe impl ::windows::core::Abi for PHONE_LAMP_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PHONE_LAMP_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -21782,6 +21926,7 @@ impl ::core::default::Default for PHONE_PRIVILEGE {
 }
 unsafe impl ::windows::core::Abi for PHONE_PRIVILEGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PHONE_PRIVILEGE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -21855,6 +22000,7 @@ impl ::core::default::Default for PHONE_TONE {
 }
 unsafe impl ::windows::core::Abi for PHONE_TONE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PHONE_TONE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -21900,6 +22046,7 @@ impl ::core::default::Default for QOS_EVENT {
 }
 unsafe impl ::windows::core::Abi for QOS_EVENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for QOS_EVENT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -21929,6 +22076,7 @@ impl ::core::default::Default for QOS_SERVICE_LEVEL {
 }
 unsafe impl ::windows::core::Abi for QOS_SERVICE_LEVEL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for QOS_SERVICE_LEVEL {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -21970,6 +22118,7 @@ impl ::core::default::Default for RND_ADVERTISING_SCOPE {
 }
 unsafe impl ::windows::core::Abi for RND_ADVERTISING_SCOPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RND_ADVERTISING_SCOPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -22019,6 +22168,7 @@ impl ::core::fmt::Debug for STnefProblem {
 }
 unsafe impl ::windows::core::Abi for STnefProblem {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for STnefProblem {
     fn eq(&self, other: &Self) -> bool {
@@ -22050,6 +22200,7 @@ impl ::core::fmt::Debug for STnefProblemArray {
 }
 unsafe impl ::windows::core::Abi for STnefProblemArray {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for STnefProblemArray {
     fn eq(&self, other: &Self) -> bool {
@@ -22164,6 +22315,7 @@ impl ::core::default::Default for TAPIOBJECT_EVENT {
 }
 unsafe impl ::windows::core::Abi for TAPIOBJECT_EVENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TAPIOBJECT_EVENT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -22193,6 +22345,7 @@ impl ::core::fmt::Debug for TAPI_CUSTOMTONE {
 }
 unsafe impl ::windows::core::Abi for TAPI_CUSTOMTONE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TAPI_CUSTOMTONE {
     fn eq(&self, other: &Self) -> bool {
@@ -22227,6 +22380,7 @@ impl ::core::fmt::Debug for TAPI_DETECTTONE {
 }
 unsafe impl ::windows::core::Abi for TAPI_DETECTTONE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TAPI_DETECTTONE {
     fn eq(&self, other: &Self) -> bool {
@@ -22308,6 +22462,7 @@ impl ::core::default::Default for TAPI_EVENT {
 }
 unsafe impl ::windows::core::Abi for TAPI_EVENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TAPI_EVENT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -22521,6 +22676,7 @@ impl ::core::default::Default for TAPI_GATHERTERM {
 }
 unsafe impl ::windows::core::Abi for TAPI_GATHERTERM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TAPI_GATHERTERM {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -22558,6 +22714,7 @@ impl ::core::default::Default for TAPI_OBJECT_TYPE {
 }
 unsafe impl ::windows::core::Abi for TAPI_OBJECT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TAPI_OBJECT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -22591,6 +22748,7 @@ impl ::core::default::Default for TAPI_TONEMODE {
 }
 unsafe impl ::windows::core::Abi for TAPI_TONEMODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TAPI_TONEMODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -22624,6 +22782,7 @@ impl ::core::default::Default for TERMINAL_DIRECTION {
 }
 unsafe impl ::windows::core::Abi for TERMINAL_DIRECTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TERMINAL_DIRECTION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -22655,6 +22814,7 @@ impl ::core::default::Default for TERMINAL_MEDIA_STATE {
 }
 unsafe impl ::windows::core::Abi for TERMINAL_MEDIA_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TERMINAL_MEDIA_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -22682,6 +22842,7 @@ impl ::core::default::Default for TERMINAL_STATE {
 }
 unsafe impl ::windows::core::Abi for TERMINAL_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TERMINAL_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -22709,6 +22870,7 @@ impl ::core::default::Default for TERMINAL_TYPE {
 }
 unsafe impl ::windows::core::Abi for TERMINAL_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TERMINAL_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -22962,6 +23124,7 @@ impl ::core::fmt::Debug for TUISPICREATEDIALOGINSTANCEPARAMS {
 }
 unsafe impl ::windows::core::Abi for TUISPICREATEDIALOGINSTANCEPARAMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for TUISPICREATEDIALOGINSTANCEPARAMS {
     fn eq(&self, other: &Self) -> bool {
@@ -23002,6 +23165,7 @@ impl ::core::clone::Clone for VARSTRING {
 }
 unsafe impl ::windows::core::Abi for VARSTRING {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for VARSTRING {
     fn eq(&self, other: &Self) -> bool {
@@ -23041,6 +23205,7 @@ impl ::core::fmt::Debug for _ADDR_ALIAS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for _ADDR_ALIAS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for _ADDR_ALIAS {
@@ -23075,6 +23240,7 @@ impl ::core::clone::Clone for _dtr {
 }
 unsafe impl ::windows::core::Abi for _dtr {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for _dtr {
     fn eq(&self, other: &Self) -> bool {
@@ -23104,6 +23270,7 @@ impl ::core::clone::Clone for _renddata {
 }
 unsafe impl ::windows::core::Abi for _renddata {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for _renddata {
     fn eq(&self, other: &Self) -> bool {
@@ -23137,6 +23304,7 @@ impl ::core::fmt::Debug for _trp {
 }
 unsafe impl ::windows::core::Abi for _trp {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for _trp {
     fn eq(&self, other: &Self) -> bool {
@@ -25894,6 +26062,7 @@ impl ::core::clone::Clone for linereqmakecallW_tag {
 }
 unsafe impl ::windows::core::Abi for linereqmakecallW_tag {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for linereqmakecallW_tag {
     fn eq(&self, other: &Self) -> bool {
@@ -25932,6 +26101,7 @@ impl ::core::clone::Clone for linereqmediacallW_tag {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for linereqmediacallW_tag {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for linereqmediacallW_tag {

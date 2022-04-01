@@ -70,11 +70,6 @@ impl AppExtension {
         }
     }
 }
-impl ::core::clone::Clone for AppExtension {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AppExtension {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -88,7 +83,6 @@ impl ::core::fmt::Debug for AppExtension {
 }
 unsafe impl ::windows::core::RuntimeType for AppExtension {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.AppExtensions.AppExtension;{8450902c-15ed-4faf-93ea-2237bbf8cbd6})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -252,11 +246,6 @@ impl AppExtensionCatalog {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for AppExtensionCatalog {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AppExtensionCatalog {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -270,7 +259,6 @@ impl ::core::fmt::Debug for AppExtensionCatalog {
 }
 unsafe impl ::windows::core::RuntimeType for AppExtensionCatalog {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.AppExtensions.AppExtensionCatalog;{97872032-8426-4ad1-9084-92e88c2da200})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -352,11 +340,6 @@ impl AppExtensionPackageInstalledEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for AppExtensionPackageInstalledEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AppExtensionPackageInstalledEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -370,7 +353,6 @@ impl ::core::fmt::Debug for AppExtensionPackageInstalledEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for AppExtensionPackageInstalledEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.AppExtensions.AppExtensionPackageInstalledEventArgs;{39e59234-3351-4a8d-9745-e7d3dd45bc48})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -445,11 +427,6 @@ impl AppExtensionPackageStatusChangedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for AppExtensionPackageStatusChangedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AppExtensionPackageStatusChangedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -463,7 +440,6 @@ impl ::core::fmt::Debug for AppExtensionPackageStatusChangedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for AppExtensionPackageStatusChangedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.AppExtensions.AppExtensionPackageStatusChangedEventArgs;{1ce17433-1153-44fd-87b1-8ae1050303df})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -538,11 +514,6 @@ impl AppExtensionPackageUninstallingEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for AppExtensionPackageUninstallingEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AppExtensionPackageUninstallingEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -556,7 +527,6 @@ impl ::core::fmt::Debug for AppExtensionPackageUninstallingEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for AppExtensionPackageUninstallingEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.AppExtensions.AppExtensionPackageUninstallingEventArgs;{60f160c5-171e-40ff-ae98-ab2c20dd4d75})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -640,11 +610,6 @@ impl AppExtensionPackageUpdatedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for AppExtensionPackageUpdatedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AppExtensionPackageUpdatedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -658,7 +623,6 @@ impl ::core::fmt::Debug for AppExtensionPackageUpdatedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for AppExtensionPackageUpdatedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.AppExtensions.AppExtensionPackageUpdatedEventArgs;{3a83c43f-797e-44b5-ba24-a4c8b5a543d7})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -733,11 +697,6 @@ impl AppExtensionPackageUpdatingEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for AppExtensionPackageUpdatingEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for AppExtensionPackageUpdatingEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -751,7 +710,6 @@ impl ::core::fmt::Debug for AppExtensionPackageUpdatingEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for AppExtensionPackageUpdatingEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.AppExtensions.AppExtensionPackageUpdatingEventArgs;{7ed59329-1a65-4800-a700-b321009e306a})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -808,6 +766,11 @@ unsafe impl ::core::marker::Sync for AppExtensionPackageUpdatingEventArgs {}
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppExtension(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppExtension {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppExtension {
     type Vtable = IAppExtension_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x8450902c_15ed_4faf_93ea_2237bbf8cbd6);
@@ -833,6 +796,11 @@ pub struct IAppExtension_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppExtension2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppExtension2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppExtension2 {
     type Vtable = IAppExtension2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xab3b15f0_14f9_4b9f_9419_a349a242ef38);
@@ -846,6 +814,11 @@ pub struct IAppExtension2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppExtensionCatalog(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppExtensionCatalog {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppExtensionCatalog {
     type Vtable = IAppExtensionCatalog_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x97872032_8426_4ad1_9084_92e88c2da200);
@@ -906,6 +879,11 @@ pub struct IAppExtensionCatalog_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppExtensionCatalogStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppExtensionCatalogStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppExtensionCatalogStatics {
     type Vtable = IAppExtensionCatalogStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x3c36668a_5f18_4f0b_9ce5_cab61d196f11);
@@ -919,6 +897,11 @@ pub struct IAppExtensionCatalogStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppExtensionPackageInstalledEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppExtensionPackageInstalledEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppExtensionPackageInstalledEventArgs {
     type Vtable = IAppExtensionPackageInstalledEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x39e59234_3351_4a8d_9745_e7d3dd45bc48);
@@ -937,6 +920,11 @@ pub struct IAppExtensionPackageInstalledEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppExtensionPackageStatusChangedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppExtensionPackageStatusChangedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppExtensionPackageStatusChangedEventArgs {
     type Vtable = IAppExtensionPackageStatusChangedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1ce17433_1153_44fd_87b1_8ae1050303df);
@@ -951,6 +939,11 @@ pub struct IAppExtensionPackageStatusChangedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppExtensionPackageUninstallingEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppExtensionPackageUninstallingEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppExtensionPackageUninstallingEventArgs {
     type Vtable = IAppExtensionPackageUninstallingEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x60f160c5_171e_40ff_ae98_ab2c20dd4d75);
@@ -965,6 +958,11 @@ pub struct IAppExtensionPackageUninstallingEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppExtensionPackageUpdatedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppExtensionPackageUpdatedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppExtensionPackageUpdatedEventArgs {
     type Vtable = IAppExtensionPackageUpdatedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x3a83c43f_797e_44b5_ba24_a4c8b5a543d7);
@@ -983,6 +981,11 @@ pub struct IAppExtensionPackageUpdatedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IAppExtensionPackageUpdatingEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAppExtensionPackageUpdatingEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IAppExtensionPackageUpdatingEventArgs {
     type Vtable = IAppExtensionPackageUpdatingEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x7ed59329_1a65_4800_a700_b321009e306a);

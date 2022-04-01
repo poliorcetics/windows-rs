@@ -2,6 +2,11 @@
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IRemoteTextConnection(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRemoteTextConnection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IRemoteTextConnection {
     type Vtable = IRemoteTextConnection_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x4e7bb02a_183e_5e66_b5e4_3e6e5c570cf1);
@@ -19,6 +24,11 @@ pub struct IRemoteTextConnection_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IRemoteTextConnectionFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRemoteTextConnectionFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IRemoteTextConnectionFactory {
     type Vtable = IRemoteTextConnectionFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x88e075c2_0cae_596c_850f_78d345cd728b);
@@ -80,11 +90,6 @@ impl RemoteTextConnection {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for RemoteTextConnection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for RemoteTextConnection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -98,7 +103,6 @@ impl ::core::fmt::Debug for RemoteTextConnection {
 }
 unsafe impl ::windows::core::RuntimeType for RemoteTextConnection {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.System.RemoteDesktop.Input.RemoteTextConnection;{4e7bb02a-183e-5e66-b5e4-3e6e5c570cf1})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -240,11 +244,6 @@ impl<F: FnMut(&[u8]) -> ::windows::core::Result<bool> + ::core::marker::Send + '
         }
     }
 }
-impl ::core::clone::Clone for RemoteTextConnectionDataHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for RemoteTextConnectionDataHandler {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -262,7 +261,6 @@ unsafe impl ::windows::core::Interface for RemoteTextConnectionDataHandler {
 }
 unsafe impl ::windows::core::RuntimeType for RemoteTextConnectionDataHandler {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{099ffbc8-8bcb-41b5-b056-57e77021bf1b}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

@@ -2,6 +2,11 @@
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISystemUpdateItem(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISystemUpdateItem {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISystemUpdateItem {
     type Vtable = ISystemUpdateItem_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x779740eb_5624_519e_a8e2_09e9173b3fb7);
@@ -22,6 +27,11 @@ pub struct ISystemUpdateItem_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISystemUpdateLastErrorInfo(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISystemUpdateLastErrorInfo {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISystemUpdateLastErrorInfo {
     type Vtable = ISystemUpdateLastErrorInfo_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x7ee887f7_8a44_5b6e_bd07_7aece4116ea9);
@@ -37,6 +47,11 @@ pub struct ISystemUpdateLastErrorInfo_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ISystemUpdateManagerStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISystemUpdateManagerStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ISystemUpdateManagerStatics {
     type Vtable = ISystemUpdateManagerStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb2d3fcef_2971_51be_b41a_8bd703bb701a);
@@ -127,6 +142,7 @@ impl ::core::default::Default for SystemUpdateAttentionRequiredReason {
 }
 unsafe impl ::windows::core::Abi for SystemUpdateAttentionRequiredReason {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SystemUpdateAttentionRequiredReason {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -135,7 +151,6 @@ impl ::core::fmt::Debug for SystemUpdateAttentionRequiredReason {
 }
 unsafe impl ::windows::core::RuntimeType for SystemUpdateAttentionRequiredReason {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.System.Update.SystemUpdateAttentionRequiredReason;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -209,11 +224,6 @@ impl SystemUpdateItem {
         }
     }
 }
-impl ::core::clone::Clone for SystemUpdateItem {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SystemUpdateItem {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -227,7 +237,6 @@ impl ::core::fmt::Debug for SystemUpdateItem {
 }
 unsafe impl ::windows::core::RuntimeType for SystemUpdateItem {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.System.Update.SystemUpdateItem;{779740eb-5624-519e-a8e2-09e9173b3fb7})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -309,6 +318,7 @@ impl ::core::default::Default for SystemUpdateItemState {
 }
 unsafe impl ::windows::core::Abi for SystemUpdateItemState {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SystemUpdateItemState {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -317,7 +327,6 @@ impl ::core::fmt::Debug for SystemUpdateItemState {
 }
 unsafe impl ::windows::core::RuntimeType for SystemUpdateItemState {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.System.Update.SystemUpdateItemState;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -351,11 +360,6 @@ impl SystemUpdateLastErrorInfo {
         }
     }
 }
-impl ::core::clone::Clone for SystemUpdateLastErrorInfo {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for SystemUpdateLastErrorInfo {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -369,7 +373,6 @@ impl ::core::fmt::Debug for SystemUpdateLastErrorInfo {
 }
 unsafe impl ::windows::core::RuntimeType for SystemUpdateLastErrorInfo {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.System.Update.SystemUpdateLastErrorInfo;{7ee887f7-8a44-5b6e-bd07-7aece4116ea9})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -633,6 +636,7 @@ impl ::core::default::Default for SystemUpdateManagerState {
 }
 unsafe impl ::windows::core::Abi for SystemUpdateManagerState {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SystemUpdateManagerState {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -641,7 +645,6 @@ impl ::core::fmt::Debug for SystemUpdateManagerState {
 }
 unsafe impl ::windows::core::RuntimeType for SystemUpdateManagerState {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.System.Update.SystemUpdateManagerState;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -667,6 +670,7 @@ impl ::core::default::Default for SystemUpdateStartInstallAction {
 }
 unsafe impl ::windows::core::Abi for SystemUpdateStartInstallAction {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for SystemUpdateStartInstallAction {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -675,7 +679,6 @@ impl ::core::fmt::Debug for SystemUpdateStartInstallAction {
 }
 unsafe impl ::windows::core::RuntimeType for SystemUpdateStartInstallAction {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.System.Update.SystemUpdateStartInstallAction;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }

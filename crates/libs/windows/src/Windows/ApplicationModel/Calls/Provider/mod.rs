@@ -2,6 +2,11 @@
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPhoneCallOrigin(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPhoneCallOrigin {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPhoneCallOrigin {
     type Vtable = IPhoneCallOrigin_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x20613479_0ef9_4454_871c_afb66a14b6a5);
@@ -20,6 +25,11 @@ pub struct IPhoneCallOrigin_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPhoneCallOrigin2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPhoneCallOrigin2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPhoneCallOrigin2 {
     type Vtable = IPhoneCallOrigin2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x04c7e980_9ac2_4768_b536_b68da4957d02);
@@ -34,6 +44,11 @@ pub struct IPhoneCallOrigin2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPhoneCallOrigin3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPhoneCallOrigin3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPhoneCallOrigin3 {
     type Vtable = IPhoneCallOrigin3_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x49330fb4_d1a7_43a2_aeee_c07b6dbaf068);
@@ -54,6 +69,11 @@ pub struct IPhoneCallOrigin3_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPhoneCallOriginManagerStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPhoneCallOriginManagerStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPhoneCallOriginManagerStatics {
     type Vtable = IPhoneCallOriginManagerStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xccfc5a0a_9af7_6149_39d0_e076fcce1395);
@@ -69,6 +89,11 @@ pub struct IPhoneCallOriginManagerStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPhoneCallOriginManagerStatics2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPhoneCallOriginManagerStatics2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPhoneCallOriginManagerStatics2 {
     type Vtable = IPhoneCallOriginManagerStatics2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x8bf3ee3f_40f4_4380_8c7c_aea2c9b8dd7a);
@@ -85,6 +110,11 @@ pub struct IPhoneCallOriginManagerStatics2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPhoneCallOriginManagerStatics3(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPhoneCallOriginManagerStatics3 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPhoneCallOriginManagerStatics3 {
     type Vtable = IPhoneCallOriginManagerStatics3_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x2ed69764_a6e3_50f0_b76a_d67cb39bdfde);
@@ -174,11 +204,6 @@ impl PhoneCallOrigin {
         unsafe { (::windows::core::Interface::vtable(this).SetDisplayPicture)(::core::mem::transmute_copy(this), value.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for PhoneCallOrigin {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PhoneCallOrigin {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -192,7 +217,6 @@ impl ::core::fmt::Debug for PhoneCallOrigin {
 }
 unsafe impl ::windows::core::RuntimeType for PhoneCallOrigin {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Calls.Provider.PhoneCallOrigin;{20613479-0ef9-4454-871c-afb66a14b6a5})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

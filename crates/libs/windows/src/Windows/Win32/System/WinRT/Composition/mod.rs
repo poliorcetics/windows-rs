@@ -2,6 +2,11 @@
 #[doc = "*Required features: `\"Win32_System_WinRT_Composition\"`*"]
 #[repr(transparent)]
 pub struct ICompositionCapabilitiesInteropFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICompositionCapabilitiesInteropFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ICompositionCapabilitiesInteropFactory {
     #[doc = "*Required features: `\"Win32_System_WinRT_Composition\"`, `\"UI_Composition\"`, `\"Win32_Foundation\"`*"]
     #[cfg(all(feature = "UI_Composition", feature = "Win32_Foundation"))]
@@ -50,11 +55,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ICompositionCapabilitiesInteropFactory {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ICompositionCapabilitiesInteropFactory {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -82,6 +82,11 @@ pub struct ICompositionCapabilitiesInteropFactory_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT_Composition\"`*"]
 #[repr(transparent)]
 pub struct ICompositionDrawingSurfaceInterop(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICompositionDrawingSurfaceInterop {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ICompositionDrawingSurfaceInterop {
     #[doc = "*Required features: `\"Win32_System_WinRT_Composition\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -131,11 +136,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IComp
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ICompositionDrawingSurfaceInterop {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ICompositionDrawingSurfaceInterop {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -174,6 +174,11 @@ pub struct ICompositionDrawingSurfaceInterop_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT_Composition\"`*"]
 #[repr(transparent)]
 pub struct ICompositionDrawingSurfaceInterop2(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICompositionDrawingSurfaceInterop2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ICompositionDrawingSurfaceInterop2 {
     #[doc = "*Required features: `\"Win32_System_WinRT_Composition\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -248,11 +253,6 @@ impl<'a> ::windows::core::IntoParam<'a, ICompositionDrawingSurfaceInterop> for &
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ICompositionDrawingSurfaceInterop2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ICompositionDrawingSurfaceInterop2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -280,6 +280,11 @@ pub struct ICompositionDrawingSurfaceInterop2_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT_Composition\"`*"]
 #[repr(transparent)]
 pub struct ICompositionGraphicsDeviceInterop(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICompositionGraphicsDeviceInterop {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ICompositionGraphicsDeviceInterop {
     #[doc = "*Required features: `\"Win32_System_WinRT_Composition\"`*"]
     pub unsafe fn GetRenderingDevice(&self) -> ::windows::core::Result<::windows::core::IUnknown> {
@@ -311,11 +316,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IComp
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ICompositionGraphicsDeviceInterop {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ICompositionGraphicsDeviceInterop {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -341,6 +341,11 @@ pub struct ICompositionGraphicsDeviceInterop_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT_Composition\"`*"]
 #[repr(transparent)]
 pub struct ICompositorDesktopInterop(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICompositorDesktopInterop {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ICompositorDesktopInterop {
     #[doc = "*Required features: `\"Win32_System_WinRT_Composition\"`, `\"UI_Composition_Desktop\"`, `\"Win32_Foundation\"`*"]
     #[cfg(all(feature = "UI_Composition_Desktop", feature = "Win32_Foundation"))]
@@ -373,11 +378,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IComp
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ICompositorDesktopInterop {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ICompositorDesktopInterop {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -406,6 +406,11 @@ pub struct ICompositorDesktopInterop_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT_Composition\"`*"]
 #[repr(transparent)]
 pub struct ICompositorInterop(::windows::core::IUnknown);
+impl ::core::clone::Clone for ICompositorInterop {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ICompositorInterop {
     #[doc = "*Required features: `\"Win32_System_WinRT_Composition\"`, `\"UI_Composition\"`, `\"Win32_Foundation\"`*"]
     #[cfg(all(feature = "UI_Composition", feature = "Win32_Foundation"))]
@@ -446,11 +451,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IComp
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ICompositorInterop {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ICompositorInterop {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -486,6 +486,11 @@ pub struct ICompositorInterop_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT_Composition\"`*"]
 #[repr(transparent)]
 pub struct IDesktopWindowTargetInterop(::windows::core::IUnknown);
+impl ::core::clone::Clone for IDesktopWindowTargetInterop {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IDesktopWindowTargetInterop {
     #[doc = "*Required features: `\"Win32_System_WinRT_Composition\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -512,11 +517,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IDesktopW
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IDesktopWindowTargetInterop {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IDesktopWindowTargetInterop {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IDesktopWindowTargetInterop {
@@ -546,6 +546,11 @@ pub struct IDesktopWindowTargetInterop_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT_Composition\"`*"]
 #[repr(transparent)]
 pub struct ISwapChainInterop(::windows::core::IUnknown);
+impl ::core::clone::Clone for ISwapChainInterop {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ISwapChainInterop {
     #[doc = "*Required features: `\"Win32_System_WinRT_Composition\"`*"]
     pub unsafe fn SetSwapChain<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::IUnknown>>(&self, swapchain: Param0) -> ::windows::core::Result<()> {
@@ -572,11 +577,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ISwap
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ISwapChainInterop {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ISwapChainInterop {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -601,6 +601,11 @@ pub struct ISwapChainInterop_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT_Composition\"`*"]
 #[repr(transparent)]
 pub struct IVisualInteractionSourceInterop(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVisualInteractionSourceInterop {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IVisualInteractionSourceInterop {
     #[doc = "*Required features: `\"Win32_System_WinRT_Composition\"`, `\"Win32_Foundation\"`, `\"Win32_UI_Input_Pointer\"`, `\"Win32_UI_WindowsAndMessaging\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_UI_Input_Pointer", feature = "Win32_UI_WindowsAndMessaging"))]
@@ -626,11 +631,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IVisualIn
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IVisualInteractionSourceInterop {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IVisualInteractionSourceInterop {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IVisualInteractionSourceInterop {

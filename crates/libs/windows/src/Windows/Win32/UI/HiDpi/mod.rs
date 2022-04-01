@@ -52,6 +52,7 @@ impl ::core::default::Default for DIALOG_CONTROL_DPI_CHANGE_BEHAVIORS {
 }
 unsafe impl ::windows::core::Abi for DIALOG_CONTROL_DPI_CHANGE_BEHAVIORS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DIALOG_CONTROL_DPI_CHANGE_BEHAVIORS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -111,6 +112,7 @@ impl ::core::default::Default for DIALOG_DPI_CHANGE_BEHAVIORS {
 }
 unsafe impl ::windows::core::Abi for DIALOG_DPI_CHANGE_BEHAVIORS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DIALOG_DPI_CHANGE_BEHAVIORS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -170,6 +172,7 @@ impl ::core::default::Default for DPI_AWARENESS {
 }
 unsafe impl ::windows::core::Abi for DPI_AWARENESS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DPI_AWARENESS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -202,6 +205,7 @@ impl ::core::fmt::Debug for DPI_AWARENESS_CONTEXT {
 }
 unsafe impl ::windows::core::Abi for DPI_AWARENESS_CONTEXT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[doc = "*Required features: `\"Win32_UI_HiDpi\"`*"]
 pub const DPI_AWARENESS_CONTEXT_PER_MONITOR_AWARE: DPI_AWARENESS_CONTEXT = DPI_AWARENESS_CONTEXT(-3i32 as _);
@@ -236,6 +240,7 @@ impl ::core::default::Default for DPI_HOSTING_BEHAVIOR {
 }
 unsafe impl ::windows::core::Abi for DPI_HOSTING_BEHAVIOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DPI_HOSTING_BEHAVIOR {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -532,6 +537,7 @@ impl ::core::default::Default for MONITOR_DPI_TYPE {
 }
 unsafe impl ::windows::core::Abi for MONITOR_DPI_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for MONITOR_DPI_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -576,6 +582,7 @@ impl ::core::default::Default for PROCESS_DPI_AWARENESS {
 }
 unsafe impl ::windows::core::Abi for PROCESS_DPI_AWARENESS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PROCESS_DPI_AWARENESS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

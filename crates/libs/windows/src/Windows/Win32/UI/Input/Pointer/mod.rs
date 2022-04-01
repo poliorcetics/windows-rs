@@ -364,6 +364,7 @@ impl ::core::fmt::Debug for INPUT_INJECTION_VALUE {
 }
 unsafe impl ::windows::core::Abi for INPUT_INJECTION_VALUE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for INPUT_INJECTION_VALUE {
     fn eq(&self, other: &Self) -> bool {
@@ -389,6 +390,7 @@ impl ::core::clone::Clone for INPUT_TRANSFORM {
 }
 unsafe impl ::windows::core::Abi for INPUT_TRANSFORM {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for INPUT_TRANSFORM {
     fn eq(&self, other: &Self) -> bool {
@@ -415,6 +417,7 @@ impl ::core::clone::Clone for INPUT_TRANSFORM_0 {
 }
 unsafe impl ::windows::core::Abi for INPUT_TRANSFORM_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for INPUT_TRANSFORM_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -460,6 +463,7 @@ impl ::core::fmt::Debug for INPUT_TRANSFORM_0_0 {
 }
 unsafe impl ::windows::core::Abi for INPUT_TRANSFORM_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for INPUT_TRANSFORM_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -571,6 +575,7 @@ impl ::core::default::Default for POINTER_BUTTON_CHANGE_TYPE {
 }
 unsafe impl ::windows::core::Abi for POINTER_BUTTON_CHANGE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for POINTER_BUTTON_CHANGE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -632,6 +637,7 @@ impl ::core::default::Default for POINTER_FLAGS {
 }
 unsafe impl ::windows::core::Abi for POINTER_FLAGS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for POINTER_FLAGS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -721,6 +727,7 @@ impl ::core::fmt::Debug for POINTER_INFO {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_UI_WindowsAndMessaging"))]
 unsafe impl ::windows::core::Abi for POINTER_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_UI_WindowsAndMessaging"))]
 impl ::core::cmp::PartialEq for POINTER_INFO {
@@ -765,6 +772,7 @@ impl ::core::fmt::Debug for POINTER_PEN_INFO {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_UI_WindowsAndMessaging"))]
 unsafe impl ::windows::core::Abi for POINTER_PEN_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_UI_WindowsAndMessaging"))]
 impl ::core::cmp::PartialEq for POINTER_PEN_INFO {
@@ -809,6 +817,7 @@ impl ::core::fmt::Debug for POINTER_TOUCH_INFO {
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_UI_WindowsAndMessaging"))]
 unsafe impl ::windows::core::Abi for POINTER_TOUCH_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(all(feature = "Win32_Foundation", feature = "Win32_UI_WindowsAndMessaging"))]
 impl ::core::cmp::PartialEq for POINTER_TOUCH_INFO {
@@ -862,6 +871,7 @@ impl ::core::default::Default for TOUCH_FEEDBACK_MODE {
 }
 unsafe impl ::windows::core::Abi for TOUCH_FEEDBACK_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for TOUCH_FEEDBACK_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {

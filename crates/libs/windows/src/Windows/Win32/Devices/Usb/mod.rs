@@ -20,6 +20,7 @@ impl ::core::fmt::Debug for ALTERNATE_INTERFACE {
 }
 unsafe impl ::windows::core::Abi for ALTERNATE_INTERFACE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for ALTERNATE_INTERFACE {
     fn eq(&self, other: &Self) -> bool {
@@ -70,6 +71,7 @@ impl ::core::clone::Clone for BM_REQUEST_TYPE {
 }
 unsafe impl ::windows::core::Abi for BM_REQUEST_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for BM_REQUEST_TYPE {
     fn eq(&self, other: &Self) -> bool {
@@ -100,6 +102,7 @@ impl ::core::fmt::Debug for BM_REQUEST_TYPE_0 {
 }
 unsafe impl ::windows::core::Abi for BM_REQUEST_TYPE_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for BM_REQUEST_TYPE_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -134,6 +137,7 @@ impl ::core::fmt::Debug for CHANNEL_INFO {
 }
 unsafe impl ::windows::core::Abi for CHANNEL_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for CHANNEL_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -167,6 +171,7 @@ impl ::core::fmt::Debug for DEVICE_DESCRIPTOR {
 }
 unsafe impl ::windows::core::Abi for DEVICE_DESCRIPTOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DEVICE_DESCRIPTOR {
     fn eq(&self, other: &Self) -> bool {
@@ -201,6 +206,7 @@ impl ::core::fmt::Debug for DRV_VERSION {
 }
 unsafe impl ::windows::core::Abi for DRV_VERSION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for DRV_VERSION {
     fn eq(&self, other: &Self) -> bool {
@@ -449,6 +455,7 @@ impl ::core::fmt::Debug for IO_BLOCK {
 }
 unsafe impl ::windows::core::Abi for IO_BLOCK {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IO_BLOCK {
     fn eq(&self, other: &Self) -> bool {
@@ -485,6 +492,7 @@ impl ::core::fmt::Debug for IO_BLOCK_EX {
 }
 unsafe impl ::windows::core::Abi for IO_BLOCK_EX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for IO_BLOCK_EX {
     fn eq(&self, other: &Self) -> bool {
@@ -548,6 +556,7 @@ impl ::core::clone::Clone for OS_STRING {
 }
 unsafe impl ::windows::core::Abi for OS_STRING {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for OS_STRING {
     fn eq(&self, other: &Self) -> bool {
@@ -574,6 +583,7 @@ impl ::core::clone::Clone for OS_STRING_0 {
 }
 unsafe impl ::windows::core::Abi for OS_STRING_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for OS_STRING_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -612,6 +622,7 @@ impl ::core::clone::Clone for PACKET_PARAMETERS {
 }
 unsafe impl ::windows::core::Abi for PACKET_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for PACKET_PARAMETERS {
     fn eq(&self, other: &Self) -> bool {
@@ -651,6 +662,7 @@ impl ::core::default::Default for PIPE_TYPE {
 }
 unsafe impl ::windows::core::Abi for PIPE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PIPE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -710,6 +722,7 @@ impl ::core::default::Default for RAW_PIPE_TYPE {
 }
 unsafe impl ::windows::core::Abi for RAW_PIPE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RAW_PIPE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -730,6 +743,7 @@ impl ::core::clone::Clone for RAW_RESET_PORT_PARAMETERS {
 }
 unsafe impl ::windows::core::Abi for RAW_RESET_PORT_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RAW_RESET_PORT_PARAMETERS {
     fn eq(&self, other: &Self) -> bool {
@@ -757,6 +771,7 @@ impl ::core::clone::Clone for RAW_ROOTPORT_FEATURE {
 }
 unsafe impl ::windows::core::Abi for RAW_ROOTPORT_FEATURE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RAW_ROOTPORT_FEATURE {
     fn eq(&self, other: &Self) -> bool {
@@ -783,6 +798,7 @@ impl ::core::clone::Clone for RAW_ROOTPORT_PARAMETERS {
 }
 unsafe impl ::windows::core::Abi for RAW_ROOTPORT_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for RAW_ROOTPORT_PARAMETERS {
     fn eq(&self, other: &Self) -> bool {
@@ -814,6 +830,7 @@ impl ::core::clone::Clone for URB {
 }
 unsafe impl ::windows::core::Abi for URB {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for URB {
     fn eq(&self, other: &Self) -> bool {
@@ -859,6 +876,7 @@ impl ::core::clone::Clone for URB_0 {
 }
 unsafe impl ::windows::core::Abi for URB_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for URB_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -1016,6 +1034,7 @@ impl ::core::clone::Clone for USBD_DEVICE_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for USBD_DEVICE_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USBD_DEVICE_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -1055,6 +1074,7 @@ impl ::core::clone::Clone for USBD_ENDPOINT_OFFLOAD_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for USBD_ENDPOINT_OFFLOAD_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USBD_ENDPOINT_OFFLOAD_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -1090,6 +1110,7 @@ impl ::core::default::Default for USBD_ENDPOINT_OFFLOAD_MODE {
 }
 unsafe impl ::windows::core::Abi for USBD_ENDPOINT_OFFLOAD_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for USBD_ENDPOINT_OFFLOAD_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1123,6 +1144,7 @@ impl ::core::fmt::Debug for USBD_INTERFACE_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for USBD_INTERFACE_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USBD_INTERFACE_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -1155,6 +1177,7 @@ impl ::core::fmt::Debug for USBD_ISO_PACKET_DESCRIPTOR {
 }
 unsafe impl ::windows::core::Abi for USBD_ISO_PACKET_DESCRIPTOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USBD_ISO_PACKET_DESCRIPTOR {
     fn eq(&self, other: &Self) -> bool {
@@ -1213,6 +1236,7 @@ impl ::core::fmt::Debug for USBD_PIPE_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for USBD_PIPE_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USBD_PIPE_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -1250,6 +1274,7 @@ impl ::core::default::Default for USBD_PIPE_TYPE {
 }
 unsafe impl ::windows::core::Abi for USBD_PIPE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for USBD_PIPE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1285,6 +1310,7 @@ impl ::core::fmt::Debug for USBD_STREAM_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for USBD_STREAM_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USBD_STREAM_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -1322,6 +1348,7 @@ impl ::core::fmt::Debug for USBD_VERSION_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for USBD_VERSION_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USBD_VERSION_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -1359,6 +1386,7 @@ impl ::core::fmt::Debug for USBFN_BUS_CONFIGURATION_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for USBFN_BUS_CONFIGURATION_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for USBFN_BUS_CONFIGURATION_INFO {
@@ -1401,6 +1429,7 @@ impl ::core::default::Default for USBFN_BUS_SPEED {
 }
 unsafe impl ::windows::core::Abi for USBFN_BUS_SPEED {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for USBFN_BUS_SPEED {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1429,6 +1458,7 @@ impl ::core::clone::Clone for USBFN_CLASS_INFORMATION_PACKET {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for USBFN_CLASS_INFORMATION_PACKET {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for USBFN_CLASS_INFORMATION_PACKET {
@@ -1466,6 +1496,7 @@ impl ::core::clone::Clone for USBFN_CLASS_INFORMATION_PACKET_EX {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for USBFN_CLASS_INFORMATION_PACKET_EX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for USBFN_CLASS_INFORMATION_PACKET_EX {
@@ -1496,6 +1527,7 @@ impl ::core::clone::Clone for USBFN_CLASS_INTERFACE {
 }
 unsafe impl ::windows::core::Abi for USBFN_CLASS_INTERFACE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USBFN_CLASS_INTERFACE {
     fn eq(&self, other: &Self) -> bool {
@@ -1524,6 +1556,7 @@ impl ::core::clone::Clone for USBFN_CLASS_INTERFACE_EX {
 }
 unsafe impl ::windows::core::Abi for USBFN_CLASS_INTERFACE_EX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USBFN_CLASS_INTERFACE_EX {
     fn eq(&self, other: &Self) -> bool {
@@ -1569,6 +1602,7 @@ impl ::core::default::Default for USBFN_DEVICE_STATE {
 }
 unsafe impl ::windows::core::Abi for USBFN_DEVICE_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for USBFN_DEVICE_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1604,6 +1638,7 @@ impl ::core::default::Default for USBFN_DIRECTION {
 }
 unsafe impl ::windows::core::Abi for USBFN_DIRECTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for USBFN_DIRECTION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1653,6 +1688,7 @@ impl ::core::default::Default for USBFN_EVENT {
 }
 unsafe impl ::windows::core::Abi for USBFN_EVENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for USBFN_EVENT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1680,6 +1716,7 @@ impl ::core::fmt::Debug for USBFN_INTERFACE_INFO {
 }
 unsafe impl ::windows::core::Abi for USBFN_INTERFACE_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USBFN_INTERFACE_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -1708,6 +1745,7 @@ impl ::core::clone::Clone for USBFN_NOTIFICATION {
 }
 unsafe impl ::windows::core::Abi for USBFN_NOTIFICATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USBFN_NOTIFICATION {
     fn eq(&self, other: &Self) -> bool {
@@ -1737,6 +1775,7 @@ impl ::core::clone::Clone for USBFN_NOTIFICATION_0 {
 }
 unsafe impl ::windows::core::Abi for USBFN_NOTIFICATION_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USBFN_NOTIFICATION_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -1763,6 +1802,7 @@ impl ::core::clone::Clone for USBFN_PIPE_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for USBFN_PIPE_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USBFN_PIPE_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -1806,6 +1846,7 @@ impl ::core::default::Default for USBFN_PORT_TYPE {
 }
 unsafe impl ::windows::core::Abi for USBFN_PORT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for USBFN_PORT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1831,6 +1872,7 @@ impl ::core::fmt::Debug for USBFN_USB_STRING {
 }
 unsafe impl ::windows::core::Abi for USBFN_USB_STRING {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USBFN_USB_STRING {
     fn eq(&self, other: &Self) -> bool {
@@ -1863,6 +1905,7 @@ impl ::core::fmt::Debug for USBSCAN_GET_DESCRIPTOR {
 }
 unsafe impl ::windows::core::Abi for USBSCAN_GET_DESCRIPTOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USBSCAN_GET_DESCRIPTOR {
     fn eq(&self, other: &Self) -> bool {
@@ -1894,6 +1937,7 @@ impl ::core::fmt::Debug for USBSCAN_PIPE_CONFIGURATION {
 }
 unsafe impl ::windows::core::Abi for USBSCAN_PIPE_CONFIGURATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USBSCAN_PIPE_CONFIGURATION {
     fn eq(&self, other: &Self) -> bool {
@@ -1927,6 +1971,7 @@ impl ::core::fmt::Debug for USBSCAN_PIPE_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for USBSCAN_PIPE_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USBSCAN_PIPE_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -1959,6 +2004,7 @@ impl ::core::fmt::Debug for USBSCAN_TIMEOUT {
 }
 unsafe impl ::windows::core::Abi for USBSCAN_TIMEOUT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USBSCAN_TIMEOUT {
     fn eq(&self, other: &Self) -> bool {
@@ -1985,6 +2031,7 @@ impl ::core::clone::Clone for USBUSER_BANDWIDTH_INFO_REQUEST {
 }
 unsafe impl ::windows::core::Abi for USBUSER_BANDWIDTH_INFO_REQUEST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USBUSER_BANDWIDTH_INFO_REQUEST {
     fn eq(&self, other: &Self) -> bool {
@@ -2015,6 +2062,7 @@ impl ::core::clone::Clone for USBUSER_BUS_STATISTICS_0_REQUEST {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for USBUSER_BUS_STATISTICS_0_REQUEST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for USBUSER_BUS_STATISTICS_0_REQUEST {
@@ -2046,6 +2094,7 @@ impl ::core::clone::Clone for USBUSER_CLOSE_RAW_DEVICE {
 }
 unsafe impl ::windows::core::Abi for USBUSER_CLOSE_RAW_DEVICE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USBUSER_CLOSE_RAW_DEVICE {
     fn eq(&self, other: &Self) -> bool {
@@ -2072,6 +2121,7 @@ impl ::core::clone::Clone for USBUSER_CONTROLLER_INFO_0 {
 }
 unsafe impl ::windows::core::Abi for USBUSER_CONTROLLER_INFO_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USBUSER_CONTROLLER_INFO_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -2098,6 +2148,7 @@ impl ::core::clone::Clone for USBUSER_CONTROLLER_UNICODE_NAME {
 }
 unsafe impl ::windows::core::Abi for USBUSER_CONTROLLER_UNICODE_NAME {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USBUSER_CONTROLLER_UNICODE_NAME {
     fn eq(&self, other: &Self) -> bool {
@@ -2136,6 +2187,7 @@ impl ::core::clone::Clone for USBUSER_GET_DRIVER_VERSION {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for USBUSER_GET_DRIVER_VERSION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for USBUSER_GET_DRIVER_VERSION {
@@ -2171,6 +2223,7 @@ impl ::core::clone::Clone for USBUSER_GET_USB2HW_VERSION {
 }
 unsafe impl ::windows::core::Abi for USBUSER_GET_USB2HW_VERSION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USBUSER_GET_USB2HW_VERSION {
     fn eq(&self, other: &Self) -> bool {
@@ -2203,6 +2256,7 @@ impl ::core::clone::Clone for USBUSER_OPEN_RAW_DEVICE {
 }
 unsafe impl ::windows::core::Abi for USBUSER_OPEN_RAW_DEVICE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USBUSER_OPEN_RAW_DEVICE {
     fn eq(&self, other: &Self) -> bool {
@@ -2245,6 +2299,7 @@ impl ::core::clone::Clone for USBUSER_PASS_THRU_REQUEST {
 }
 unsafe impl ::windows::core::Abi for USBUSER_PASS_THRU_REQUEST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USBUSER_PASS_THRU_REQUEST {
     fn eq(&self, other: &Self) -> bool {
@@ -2275,6 +2330,7 @@ impl ::core::clone::Clone for USBUSER_POWER_INFO_REQUEST {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for USBUSER_POWER_INFO_REQUEST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for USBUSER_POWER_INFO_REQUEST {
@@ -2304,6 +2360,7 @@ impl ::core::clone::Clone for USBUSER_RAW_RESET_ROOT_PORT {
 }
 unsafe impl ::windows::core::Abi for USBUSER_RAW_RESET_ROOT_PORT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USBUSER_RAW_RESET_ROOT_PORT {
     fn eq(&self, other: &Self) -> bool {
@@ -2330,6 +2387,7 @@ impl ::core::clone::Clone for USBUSER_REFRESH_HCT_REG {
 }
 unsafe impl ::windows::core::Abi for USBUSER_REFRESH_HCT_REG {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USBUSER_REFRESH_HCT_REG {
     fn eq(&self, other: &Self) -> bool {
@@ -2358,6 +2416,7 @@ impl ::core::clone::Clone for USBUSER_REQUEST_HEADER {
 }
 unsafe impl ::windows::core::Abi for USBUSER_REQUEST_HEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USBUSER_REQUEST_HEADER {
     fn eq(&self, other: &Self) -> bool {
@@ -2384,6 +2443,7 @@ impl ::core::clone::Clone for USBUSER_ROOTPORT_FEATURE_REQUEST {
 }
 unsafe impl ::windows::core::Abi for USBUSER_ROOTPORT_FEATURE_REQUEST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USBUSER_ROOTPORT_FEATURE_REQUEST {
     fn eq(&self, other: &Self) -> bool {
@@ -2410,6 +2470,7 @@ impl ::core::clone::Clone for USBUSER_ROOTPORT_PARAMETERS {
 }
 unsafe impl ::windows::core::Abi for USBUSER_ROOTPORT_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USBUSER_ROOTPORT_PARAMETERS {
     fn eq(&self, other: &Self) -> bool {
@@ -2436,6 +2497,7 @@ impl ::core::clone::Clone for USBUSER_SEND_ONE_PACKET {
 }
 unsafe impl ::windows::core::Abi for USBUSER_SEND_ONE_PACKET {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USBUSER_SEND_ONE_PACKET {
     fn eq(&self, other: &Self) -> bool {
@@ -2462,6 +2524,7 @@ impl ::core::clone::Clone for USBUSER_SEND_RAW_COMMAND {
 }
 unsafe impl ::windows::core::Abi for USBUSER_SEND_RAW_COMMAND {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USBUSER_SEND_RAW_COMMAND {
     fn eq(&self, other: &Self) -> bool {
@@ -2498,6 +2561,7 @@ impl ::core::clone::Clone for USB_20_PORT_CHANGE {
 }
 unsafe impl ::windows::core::Abi for USB_20_PORT_CHANGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_20_PORT_CHANGE {
     fn eq(&self, other: &Self) -> bool {
@@ -2523,6 +2587,7 @@ impl ::core::clone::Clone for USB_20_PORT_CHANGE_0 {
 }
 unsafe impl ::windows::core::Abi for USB_20_PORT_CHANGE_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_20_PORT_CHANGE_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -2549,6 +2614,7 @@ impl ::core::clone::Clone for USB_20_PORT_STATUS {
 }
 unsafe impl ::windows::core::Abi for USB_20_PORT_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_20_PORT_STATUS {
     fn eq(&self, other: &Self) -> bool {
@@ -2574,6 +2640,7 @@ impl ::core::clone::Clone for USB_20_PORT_STATUS_0 {
 }
 unsafe impl ::windows::core::Abi for USB_20_PORT_STATUS_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_20_PORT_STATUS_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -2619,6 +2686,7 @@ impl ::core::clone::Clone for USB_30_HUB_DESCRIPTOR {
 }
 unsafe impl ::windows::core::Abi for USB_30_HUB_DESCRIPTOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_30_HUB_DESCRIPTOR {
     fn eq(&self, other: &Self) -> bool {
@@ -2647,6 +2715,7 @@ impl ::core::clone::Clone for USB_30_PORT_CHANGE {
 }
 unsafe impl ::windows::core::Abi for USB_30_PORT_CHANGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_30_PORT_CHANGE {
     fn eq(&self, other: &Self) -> bool {
@@ -2672,6 +2741,7 @@ impl ::core::clone::Clone for USB_30_PORT_CHANGE_0 {
 }
 unsafe impl ::windows::core::Abi for USB_30_PORT_CHANGE_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_30_PORT_CHANGE_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -2698,6 +2768,7 @@ impl ::core::clone::Clone for USB_30_PORT_STATUS {
 }
 unsafe impl ::windows::core::Abi for USB_30_PORT_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_30_PORT_STATUS {
     fn eq(&self, other: &Self) -> bool {
@@ -2723,6 +2794,7 @@ impl ::core::clone::Clone for USB_30_PORT_STATUS_0 {
 }
 unsafe impl ::windows::core::Abi for USB_30_PORT_STATUS_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_30_PORT_STATUS_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -2760,6 +2832,7 @@ impl ::core::clone::Clone for USB_BANDWIDTH_INFO {
 }
 unsafe impl ::windows::core::Abi for USB_BANDWIDTH_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_BANDWIDTH_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -2788,6 +2861,7 @@ impl ::core::clone::Clone for USB_BOS_DESCRIPTOR {
 }
 unsafe impl ::windows::core::Abi for USB_BOS_DESCRIPTOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_BOS_DESCRIPTOR {
     fn eq(&self, other: &Self) -> bool {
@@ -2834,6 +2908,7 @@ impl ::core::clone::Clone for USB_BUS_STATISTICS_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for USB_BUS_STATISTICS_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for USB_BUS_STATISTICS_0 {
@@ -2870,6 +2945,7 @@ impl ::core::clone::Clone for USB_CLOSE_RAW_DEVICE_PARAMETERS {
 }
 unsafe impl ::windows::core::Abi for USB_CLOSE_RAW_DEVICE_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_CLOSE_RAW_DEVICE_PARAMETERS {
     fn eq(&self, other: &Self) -> bool {
@@ -2901,6 +2977,7 @@ impl ::core::fmt::Debug for USB_COMMON_DESCRIPTOR {
 }
 unsafe impl ::windows::core::Abi for USB_COMMON_DESCRIPTOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_COMMON_DESCRIPTOR {
     fn eq(&self, other: &Self) -> bool {
@@ -2933,6 +3010,7 @@ impl ::core::clone::Clone for USB_CONFIGURATION_DESCRIPTOR {
 }
 unsafe impl ::windows::core::Abi for USB_CONFIGURATION_DESCRIPTOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_CONFIGURATION_DESCRIPTOR {
     fn eq(&self, other: &Self) -> bool {
@@ -2972,6 +3050,7 @@ impl ::core::clone::Clone for USB_CONFIGURATION_POWER_DESCRIPTOR {
 }
 unsafe impl ::windows::core::Abi for USB_CONFIGURATION_POWER_DESCRIPTOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_CONFIGURATION_POWER_DESCRIPTOR {
     fn eq(&self, other: &Self) -> bool {
@@ -3067,6 +3146,7 @@ impl ::core::default::Default for USB_CONTROLLER_FLAVOR {
 }
 unsafe impl ::windows::core::Abi for USB_CONTROLLER_FLAVOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for USB_CONTROLLER_FLAVOR {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -3091,6 +3171,7 @@ impl ::core::clone::Clone for USB_CONTROLLER_INFO_0 {
 }
 unsafe impl ::windows::core::Abi for USB_CONTROLLER_INFO_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_CONTROLLER_INFO_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -3130,6 +3211,7 @@ impl ::core::clone::Clone for USB_DEFAULT_PIPE_SETUP_PACKET {
 }
 unsafe impl ::windows::core::Abi for USB_DEFAULT_PIPE_SETUP_PACKET {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_DEFAULT_PIPE_SETUP_PACKET {
     fn eq(&self, other: &Self) -> bool {
@@ -3156,6 +3238,7 @@ impl ::core::clone::Clone for USB_DEFAULT_PIPE_SETUP_PACKET_0 {
 }
 unsafe impl ::windows::core::Abi for USB_DEFAULT_PIPE_SETUP_PACKET_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_DEFAULT_PIPE_SETUP_PACKET_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -3187,6 +3270,7 @@ impl ::core::fmt::Debug for USB_DEFAULT_PIPE_SETUP_PACKET_0_0 {
 }
 unsafe impl ::windows::core::Abi for USB_DEFAULT_PIPE_SETUP_PACKET_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_DEFAULT_PIPE_SETUP_PACKET_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -3213,6 +3297,7 @@ impl ::core::clone::Clone for USB_DEFAULT_PIPE_SETUP_PACKET_1 {
 }
 unsafe impl ::windows::core::Abi for USB_DEFAULT_PIPE_SETUP_PACKET_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_DEFAULT_PIPE_SETUP_PACKET_1 {
     fn eq(&self, other: &Self) -> bool {
@@ -3244,6 +3329,7 @@ impl ::core::fmt::Debug for USB_DEFAULT_PIPE_SETUP_PACKET_1_0 {
 }
 unsafe impl ::windows::core::Abi for USB_DEFAULT_PIPE_SETUP_PACKET_1_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_DEFAULT_PIPE_SETUP_PACKET_1_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -3282,6 +3368,7 @@ impl ::core::clone::Clone for USB_DEVICE_CAPABILITY_BILLBOARD_DESCRIPTOR {
 }
 unsafe impl ::windows::core::Abi for USB_DEVICE_CAPABILITY_BILLBOARD_DESCRIPTOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_DEVICE_CAPABILITY_BILLBOARD_DESCRIPTOR {
     fn eq(&self, other: &Self) -> bool {
@@ -3309,6 +3396,7 @@ impl ::core::clone::Clone for USB_DEVICE_CAPABILITY_BILLBOARD_DESCRIPTOR_0 {
 }
 unsafe impl ::windows::core::Abi for USB_DEVICE_CAPABILITY_BILLBOARD_DESCRIPTOR_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_DEVICE_CAPABILITY_BILLBOARD_DESCRIPTOR_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -3335,6 +3423,7 @@ impl ::core::clone::Clone for USB_DEVICE_CAPABILITY_BILLBOARD_DESCRIPTOR_1 {
 }
 unsafe impl ::windows::core::Abi for USB_DEVICE_CAPABILITY_BILLBOARD_DESCRIPTOR_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_DEVICE_CAPABILITY_BILLBOARD_DESCRIPTOR_1 {
     fn eq(&self, other: &Self) -> bool {
@@ -3360,6 +3449,7 @@ impl ::core::clone::Clone for USB_DEVICE_CAPABILITY_BILLBOARD_DESCRIPTOR_1_0 {
 }
 unsafe impl ::windows::core::Abi for USB_DEVICE_CAPABILITY_BILLBOARD_DESCRIPTOR_1_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_DEVICE_CAPABILITY_BILLBOARD_DESCRIPTOR_1_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -3396,6 +3486,7 @@ impl ::core::fmt::Debug for USB_DEVICE_CAPABILITY_CONTAINER_ID_DESCRIPTOR {
 }
 unsafe impl ::windows::core::Abi for USB_DEVICE_CAPABILITY_CONTAINER_ID_DESCRIPTOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_DEVICE_CAPABILITY_CONTAINER_ID_DESCRIPTOR {
     fn eq(&self, other: &Self) -> bool {
@@ -3428,6 +3519,7 @@ impl ::core::fmt::Debug for USB_DEVICE_CAPABILITY_DESCRIPTOR {
 }
 unsafe impl ::windows::core::Abi for USB_DEVICE_CAPABILITY_DESCRIPTOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_DEVICE_CAPABILITY_DESCRIPTOR {
     fn eq(&self, other: &Self) -> bool {
@@ -3461,6 +3553,7 @@ impl ::core::clone::Clone for USB_DEVICE_CAPABILITY_FIRMWARE_STATUS_DESCRIPTOR {
 }
 unsafe impl ::windows::core::Abi for USB_DEVICE_CAPABILITY_FIRMWARE_STATUS_DESCRIPTOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_DEVICE_CAPABILITY_FIRMWARE_STATUS_DESCRIPTOR {
     fn eq(&self, other: &Self) -> bool {
@@ -3487,6 +3580,7 @@ impl ::core::clone::Clone for USB_DEVICE_CAPABILITY_FIRMWARE_STATUS_DESCRIPTOR_0
 }
 unsafe impl ::windows::core::Abi for USB_DEVICE_CAPABILITY_FIRMWARE_STATUS_DESCRIPTOR_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_DEVICE_CAPABILITY_FIRMWARE_STATUS_DESCRIPTOR_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -3512,6 +3606,7 @@ impl ::core::clone::Clone for USB_DEVICE_CAPABILITY_FIRMWARE_STATUS_DESCRIPTOR_0
 }
 unsafe impl ::windows::core::Abi for USB_DEVICE_CAPABILITY_FIRMWARE_STATUS_DESCRIPTOR_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_DEVICE_CAPABILITY_FIRMWARE_STATUS_DESCRIPTOR_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -3553,6 +3648,7 @@ impl ::core::clone::Clone for USB_DEVICE_CAPABILITY_PD_CONSUMER_PORT_DESCRIPTOR 
 }
 unsafe impl ::windows::core::Abi for USB_DEVICE_CAPABILITY_PD_CONSUMER_PORT_DESCRIPTOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_DEVICE_CAPABILITY_PD_CONSUMER_PORT_DESCRIPTOR {
     fn eq(&self, other: &Self) -> bool {
@@ -3579,6 +3675,7 @@ impl ::core::clone::Clone for USB_DEVICE_CAPABILITY_PD_CONSUMER_PORT_DESCRIPTOR_
 }
 unsafe impl ::windows::core::Abi for USB_DEVICE_CAPABILITY_PD_CONSUMER_PORT_DESCRIPTOR_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_DEVICE_CAPABILITY_PD_CONSUMER_PORT_DESCRIPTOR_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -3604,6 +3701,7 @@ impl ::core::clone::Clone for USB_DEVICE_CAPABILITY_PD_CONSUMER_PORT_DESCRIPTOR_
 }
 unsafe impl ::windows::core::Abi for USB_DEVICE_CAPABILITY_PD_CONSUMER_PORT_DESCRIPTOR_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_DEVICE_CAPABILITY_PD_CONSUMER_PORT_DESCRIPTOR_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -3638,6 +3736,7 @@ impl ::core::clone::Clone for USB_DEVICE_CAPABILITY_PLATFORM_DESCRIPTOR {
 }
 unsafe impl ::windows::core::Abi for USB_DEVICE_CAPABILITY_PLATFORM_DESCRIPTOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_DEVICE_CAPABILITY_PLATFORM_DESCRIPTOR {
     fn eq(&self, other: &Self) -> bool {
@@ -3674,6 +3773,7 @@ impl ::core::clone::Clone for USB_DEVICE_CAPABILITY_POWER_DELIVERY_DESCRIPTOR {
 }
 unsafe impl ::windows::core::Abi for USB_DEVICE_CAPABILITY_POWER_DELIVERY_DESCRIPTOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_DEVICE_CAPABILITY_POWER_DELIVERY_DESCRIPTOR {
     fn eq(&self, other: &Self) -> bool {
@@ -3700,6 +3800,7 @@ impl ::core::clone::Clone for USB_DEVICE_CAPABILITY_POWER_DELIVERY_DESCRIPTOR_0 
 }
 unsafe impl ::windows::core::Abi for USB_DEVICE_CAPABILITY_POWER_DELIVERY_DESCRIPTOR_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_DEVICE_CAPABILITY_POWER_DELIVERY_DESCRIPTOR_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -3725,6 +3826,7 @@ impl ::core::clone::Clone for USB_DEVICE_CAPABILITY_POWER_DELIVERY_DESCRIPTOR_0_
 }
 unsafe impl ::windows::core::Abi for USB_DEVICE_CAPABILITY_POWER_DELIVERY_DESCRIPTOR_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_DEVICE_CAPABILITY_POWER_DELIVERY_DESCRIPTOR_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -3753,6 +3855,7 @@ impl ::core::clone::Clone for USB_DEVICE_CAPABILITY_SUPERSPEEDPLUS_SPEED {
 }
 unsafe impl ::windows::core::Abi for USB_DEVICE_CAPABILITY_SUPERSPEEDPLUS_SPEED {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_DEVICE_CAPABILITY_SUPERSPEEDPLUS_SPEED {
     fn eq(&self, other: &Self) -> bool {
@@ -3778,6 +3881,7 @@ impl ::core::clone::Clone for USB_DEVICE_CAPABILITY_SUPERSPEEDPLUS_SPEED_0 {
 }
 unsafe impl ::windows::core::Abi for USB_DEVICE_CAPABILITY_SUPERSPEEDPLUS_SPEED_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_DEVICE_CAPABILITY_SUPERSPEEDPLUS_SPEED_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -3832,6 +3936,7 @@ impl ::core::clone::Clone for USB_DEVICE_CAPABILITY_SUPERSPEEDPLUS_USB_DESCRIPTO
 }
 unsafe impl ::windows::core::Abi for USB_DEVICE_CAPABILITY_SUPERSPEEDPLUS_USB_DESCRIPTOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_DEVICE_CAPABILITY_SUPERSPEEDPLUS_USB_DESCRIPTOR {
     fn eq(&self, other: &Self) -> bool {
@@ -3858,6 +3963,7 @@ impl ::core::clone::Clone for USB_DEVICE_CAPABILITY_SUPERSPEEDPLUS_USB_DESCRIPTO
 }
 unsafe impl ::windows::core::Abi for USB_DEVICE_CAPABILITY_SUPERSPEEDPLUS_USB_DESCRIPTOR_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_DEVICE_CAPABILITY_SUPERSPEEDPLUS_USB_DESCRIPTOR_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -3883,6 +3989,7 @@ impl ::core::clone::Clone for USB_DEVICE_CAPABILITY_SUPERSPEEDPLUS_USB_DESCRIPTO
 }
 unsafe impl ::windows::core::Abi for USB_DEVICE_CAPABILITY_SUPERSPEEDPLUS_USB_DESCRIPTOR_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_DEVICE_CAPABILITY_SUPERSPEEDPLUS_USB_DESCRIPTOR_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -3909,6 +4016,7 @@ impl ::core::clone::Clone for USB_DEVICE_CAPABILITY_SUPERSPEEDPLUS_USB_DESCRIPTO
 }
 unsafe impl ::windows::core::Abi for USB_DEVICE_CAPABILITY_SUPERSPEEDPLUS_USB_DESCRIPTOR_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_DEVICE_CAPABILITY_SUPERSPEEDPLUS_USB_DESCRIPTOR_1 {
     fn eq(&self, other: &Self) -> bool {
@@ -3934,6 +4042,7 @@ impl ::core::clone::Clone for USB_DEVICE_CAPABILITY_SUPERSPEEDPLUS_USB_DESCRIPTO
 }
 unsafe impl ::windows::core::Abi for USB_DEVICE_CAPABILITY_SUPERSPEEDPLUS_USB_DESCRIPTOR_1_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_DEVICE_CAPABILITY_SUPERSPEEDPLUS_USB_DESCRIPTOR_1_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -3986,6 +4095,7 @@ impl ::core::clone::Clone for USB_DEVICE_CAPABILITY_SUPERSPEED_USB_DESCRIPTOR {
 }
 unsafe impl ::windows::core::Abi for USB_DEVICE_CAPABILITY_SUPERSPEED_USB_DESCRIPTOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_DEVICE_CAPABILITY_SUPERSPEED_USB_DESCRIPTOR {
     fn eq(&self, other: &Self) -> bool {
@@ -4018,6 +4128,7 @@ impl ::core::clone::Clone for USB_DEVICE_CAPABILITY_USB20_EXTENSION_DESCRIPTOR {
 }
 unsafe impl ::windows::core::Abi for USB_DEVICE_CAPABILITY_USB20_EXTENSION_DESCRIPTOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_DEVICE_CAPABILITY_USB20_EXTENSION_DESCRIPTOR {
     fn eq(&self, other: &Self) -> bool {
@@ -4044,6 +4155,7 @@ impl ::core::clone::Clone for USB_DEVICE_CAPABILITY_USB20_EXTENSION_DESCRIPTOR_0
 }
 unsafe impl ::windows::core::Abi for USB_DEVICE_CAPABILITY_USB20_EXTENSION_DESCRIPTOR_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_DEVICE_CAPABILITY_USB20_EXTENSION_DESCRIPTOR_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -4069,6 +4181,7 @@ impl ::core::clone::Clone for USB_DEVICE_CAPABILITY_USB20_EXTENSION_DESCRIPTOR_0
 }
 unsafe impl ::windows::core::Abi for USB_DEVICE_CAPABILITY_USB20_EXTENSION_DESCRIPTOR_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_DEVICE_CAPABILITY_USB20_EXTENSION_DESCRIPTOR_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -4159,6 +4272,7 @@ impl ::core::clone::Clone for USB_DEVICE_DESCRIPTOR {
 }
 unsafe impl ::windows::core::Abi for USB_DEVICE_DESCRIPTOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_DEVICE_DESCRIPTOR {
     fn eq(&self, other: &Self) -> bool {
@@ -4196,6 +4310,7 @@ impl ::core::clone::Clone for USB_DEVICE_QUALIFIER_DESCRIPTOR {
 }
 unsafe impl ::windows::core::Abi for USB_DEVICE_QUALIFIER_DESCRIPTOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_DEVICE_QUALIFIER_DESCRIPTOR {
     fn eq(&self, other: &Self) -> bool {
@@ -4235,6 +4350,7 @@ impl ::core::default::Default for USB_DEVICE_SPEED {
 }
 unsafe impl ::windows::core::Abi for USB_DEVICE_SPEED {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for USB_DEVICE_SPEED {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4255,6 +4371,7 @@ impl ::core::clone::Clone for USB_DEVICE_STATUS {
 }
 unsafe impl ::windows::core::Abi for USB_DEVICE_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_DEVICE_STATUS {
     fn eq(&self, other: &Self) -> bool {
@@ -4280,6 +4397,7 @@ impl ::core::clone::Clone for USB_DEVICE_STATUS_0 {
 }
 unsafe impl ::windows::core::Abi for USB_DEVICE_STATUS_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_DEVICE_STATUS_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -4313,6 +4431,7 @@ impl ::core::default::Default for USB_DEVICE_TYPE {
 }
 unsafe impl ::windows::core::Abi for USB_DEVICE_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for USB_DEVICE_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -4347,6 +4466,7 @@ impl ::core::clone::Clone for USB_DRIVER_VERSION_PARAMETERS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for USB_DRIVER_VERSION_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for USB_DRIVER_VERSION_PARAMETERS {
@@ -4384,6 +4504,7 @@ impl ::core::clone::Clone for USB_ENDPOINT_DESCRIPTOR {
 }
 unsafe impl ::windows::core::Abi for USB_ENDPOINT_DESCRIPTOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_ENDPOINT_DESCRIPTOR {
     fn eq(&self, other: &Self) -> bool {
@@ -4414,6 +4535,7 @@ impl ::core::clone::Clone for USB_ENDPOINT_STATUS {
 }
 unsafe impl ::windows::core::Abi for USB_ENDPOINT_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_ENDPOINT_STATUS {
     fn eq(&self, other: &Self) -> bool {
@@ -4439,6 +4561,7 @@ impl ::core::clone::Clone for USB_ENDPOINT_STATUS_0 {
 }
 unsafe impl ::windows::core::Abi for USB_ENDPOINT_STATUS_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_ENDPOINT_STATUS_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -4556,6 +4679,7 @@ impl ::core::clone::Clone for USB_FRAME_NUMBER_AND_QPC_FOR_TIME_SYNC_INFORMATION
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for USB_FRAME_NUMBER_AND_QPC_FOR_TIME_SYNC_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for USB_FRAME_NUMBER_AND_QPC_FOR_TIME_SYNC_INFORMATION {
@@ -4585,6 +4709,7 @@ impl ::core::clone::Clone for USB_FUNCTION_SUSPEND_OPTIONS {
 }
 unsafe impl ::windows::core::Abi for USB_FUNCTION_SUSPEND_OPTIONS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_FUNCTION_SUSPEND_OPTIONS {
     fn eq(&self, other: &Self) -> bool {
@@ -4615,6 +4740,7 @@ impl ::core::fmt::Debug for USB_FUNCTION_SUSPEND_OPTIONS_0 {
 }
 unsafe impl ::windows::core::Abi for USB_FUNCTION_SUSPEND_OPTIONS_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_FUNCTION_SUSPEND_OPTIONS_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -4718,6 +4844,7 @@ impl ::core::clone::Clone for USB_HIGH_SPEED_MAXPACKET {
 }
 unsafe impl ::windows::core::Abi for USB_HIGH_SPEED_MAXPACKET {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_HIGH_SPEED_MAXPACKET {
     fn eq(&self, other: &Self) -> bool {
@@ -4743,6 +4870,7 @@ impl ::core::clone::Clone for USB_HIGH_SPEED_MAXPACKET_0 {
 }
 unsafe impl ::windows::core::Abi for USB_HIGH_SPEED_MAXPACKET_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_HIGH_SPEED_MAXPACKET_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -4769,6 +4897,7 @@ impl ::core::clone::Clone for USB_HUB_30_PORT_REMOTE_WAKE_MASK {
 }
 unsafe impl ::windows::core::Abi for USB_HUB_30_PORT_REMOTE_WAKE_MASK {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_HUB_30_PORT_REMOTE_WAKE_MASK {
     fn eq(&self, other: &Self) -> bool {
@@ -4799,6 +4928,7 @@ impl ::core::fmt::Debug for USB_HUB_30_PORT_REMOTE_WAKE_MASK_0 {
 }
 unsafe impl ::windows::core::Abi for USB_HUB_30_PORT_REMOTE_WAKE_MASK_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_HUB_30_PORT_REMOTE_WAKE_MASK_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -4825,6 +4955,7 @@ impl ::core::clone::Clone for USB_HUB_CHANGE {
 }
 unsafe impl ::windows::core::Abi for USB_HUB_CHANGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_HUB_CHANGE {
     fn eq(&self, other: &Self) -> bool {
@@ -4850,6 +4981,7 @@ impl ::core::clone::Clone for USB_HUB_CHANGE_0 {
 }
 unsafe impl ::windows::core::Abi for USB_HUB_CHANGE_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_HUB_CHANGE_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -4883,6 +5015,7 @@ impl ::core::clone::Clone for USB_HUB_DESCRIPTOR {
 }
 unsafe impl ::windows::core::Abi for USB_HUB_DESCRIPTOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_HUB_DESCRIPTOR {
     fn eq(&self, other: &Self) -> bool {
@@ -4909,6 +5042,7 @@ impl ::core::clone::Clone for USB_HUB_STATUS {
 }
 unsafe impl ::windows::core::Abi for USB_HUB_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_HUB_STATUS {
     fn eq(&self, other: &Self) -> bool {
@@ -4934,6 +5068,7 @@ impl ::core::clone::Clone for USB_HUB_STATUS_0 {
 }
 unsafe impl ::windows::core::Abi for USB_HUB_STATUS_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_HUB_STATUS_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -4960,6 +5095,7 @@ impl ::core::clone::Clone for USB_HUB_STATUS_AND_CHANGE {
 }
 unsafe impl ::windows::core::Abi for USB_HUB_STATUS_AND_CHANGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_HUB_STATUS_AND_CHANGE {
     fn eq(&self, other: &Self) -> bool {
@@ -4986,6 +5122,7 @@ impl ::core::clone::Clone for USB_HUB_STATUS_AND_CHANGE_0 {
 }
 unsafe impl ::windows::core::Abi for USB_HUB_STATUS_AND_CHANGE_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_HUB_STATUS_AND_CHANGE_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -5019,6 +5156,7 @@ impl ::core::fmt::Debug for USB_IDLE_CALLBACK_INFO {
 }
 unsafe impl ::windows::core::Abi for USB_IDLE_CALLBACK_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_IDLE_CALLBACK_INFO {
     fn eq(&self, other: &Self) -> bool {
@@ -5060,6 +5198,7 @@ impl ::core::fmt::Debug for USB_INTERFACE_ASSOCIATION_DESCRIPTOR {
 }
 unsafe impl ::windows::core::Abi for USB_INTERFACE_ASSOCIATION_DESCRIPTOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_INTERFACE_ASSOCIATION_DESCRIPTOR {
     fn eq(&self, other: &Self) -> bool {
@@ -5100,6 +5239,7 @@ impl ::core::fmt::Debug for USB_INTERFACE_DESCRIPTOR {
 }
 unsafe impl ::windows::core::Abi for USB_INTERFACE_DESCRIPTOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_INTERFACE_DESCRIPTOR {
     fn eq(&self, other: &Self) -> bool {
@@ -5138,6 +5278,7 @@ impl ::core::clone::Clone for USB_INTERFACE_POWER_DESCRIPTOR {
 }
 unsafe impl ::windows::core::Abi for USB_INTERFACE_POWER_DESCRIPTOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_INTERFACE_POWER_DESCRIPTOR {
     fn eq(&self, other: &Self) -> bool {
@@ -5166,6 +5307,7 @@ impl ::core::clone::Clone for USB_INTERFACE_STATUS {
 }
 unsafe impl ::windows::core::Abi for USB_INTERFACE_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_INTERFACE_STATUS {
     fn eq(&self, other: &Self) -> bool {
@@ -5191,6 +5333,7 @@ impl ::core::clone::Clone for USB_INTERFACE_STATUS_0 {
 }
 unsafe impl ::windows::core::Abi for USB_INTERFACE_STATUS_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_INTERFACE_STATUS_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -5219,6 +5362,7 @@ impl ::core::clone::Clone for USB_OPEN_RAW_DEVICE_PARAMETERS {
 }
 unsafe impl ::windows::core::Abi for USB_OPEN_RAW_DEVICE_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_OPEN_RAW_DEVICE_PARAMETERS {
     fn eq(&self, other: &Self) -> bool {
@@ -5270,6 +5414,7 @@ impl ::core::clone::Clone for USB_PASS_THRU_PARAMETERS {
 }
 unsafe impl ::windows::core::Abi for USB_PASS_THRU_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_PASS_THRU_PARAMETERS {
     fn eq(&self, other: &Self) -> bool {
@@ -5309,6 +5454,7 @@ impl ::core::clone::Clone for USB_PORT_CHANGE {
 }
 unsafe impl ::windows::core::Abi for USB_PORT_CHANGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_PORT_CHANGE {
     fn eq(&self, other: &Self) -> bool {
@@ -5335,6 +5481,7 @@ impl ::core::clone::Clone for USB_PORT_EXT_STATUS {
 }
 unsafe impl ::windows::core::Abi for USB_PORT_EXT_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_PORT_EXT_STATUS {
     fn eq(&self, other: &Self) -> bool {
@@ -5360,6 +5507,7 @@ impl ::core::clone::Clone for USB_PORT_EXT_STATUS_0 {
 }
 unsafe impl ::windows::core::Abi for USB_PORT_EXT_STATUS_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_PORT_EXT_STATUS_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -5386,6 +5534,7 @@ impl ::core::clone::Clone for USB_PORT_EXT_STATUS_AND_CHANGE {
 }
 unsafe impl ::windows::core::Abi for USB_PORT_EXT_STATUS_AND_CHANGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_PORT_EXT_STATUS_AND_CHANGE {
     fn eq(&self, other: &Self) -> bool {
@@ -5412,6 +5561,7 @@ impl ::core::clone::Clone for USB_PORT_EXT_STATUS_AND_CHANGE_0 {
 }
 unsafe impl ::windows::core::Abi for USB_PORT_EXT_STATUS_AND_CHANGE_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_PORT_EXT_STATUS_AND_CHANGE_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -5439,6 +5589,7 @@ impl ::core::clone::Clone for USB_PORT_STATUS {
 }
 unsafe impl ::windows::core::Abi for USB_PORT_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_PORT_STATUS {
     fn eq(&self, other: &Self) -> bool {
@@ -5465,6 +5616,7 @@ impl ::core::clone::Clone for USB_PORT_STATUS_AND_CHANGE {
 }
 unsafe impl ::windows::core::Abi for USB_PORT_STATUS_AND_CHANGE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_PORT_STATUS_AND_CHANGE {
     fn eq(&self, other: &Self) -> bool {
@@ -5491,6 +5643,7 @@ impl ::core::clone::Clone for USB_PORT_STATUS_AND_CHANGE_0 {
 }
 unsafe impl ::windows::core::Abi for USB_PORT_STATUS_AND_CHANGE_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_PORT_STATUS_AND_CHANGE_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -5545,6 +5698,7 @@ impl ::core::clone::Clone for USB_POWER_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for USB_POWER_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for USB_POWER_INFO {
@@ -5649,6 +5803,7 @@ impl ::core::clone::Clone for USB_SEND_RAW_COMMAND_PARAMETERS {
 }
 unsafe impl ::windows::core::Abi for USB_SEND_RAW_COMMAND_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_SEND_RAW_COMMAND_PARAMETERS {
     fn eq(&self, other: &Self) -> bool {
@@ -5681,6 +5836,7 @@ impl ::core::clone::Clone for USB_START_TRACKING_FOR_TIME_SYNC_INFORMATION {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for USB_START_TRACKING_FOR_TIME_SYNC_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for USB_START_TRACKING_FOR_TIME_SYNC_INFORMATION {
@@ -5721,6 +5877,7 @@ impl ::core::clone::Clone for USB_STOP_TRACKING_FOR_TIME_SYNC_INFORMATION {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for USB_STOP_TRACKING_FOR_TIME_SYNC_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for USB_STOP_TRACKING_FOR_TIME_SYNC_INFORMATION {
@@ -5751,6 +5908,7 @@ impl ::core::clone::Clone for USB_STRING_DESCRIPTOR {
 }
 unsafe impl ::windows::core::Abi for USB_STRING_DESCRIPTOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_STRING_DESCRIPTOR {
     fn eq(&self, other: &Self) -> bool {
@@ -5787,6 +5945,7 @@ impl ::core::clone::Clone for USB_SUPERSPEEDPLUS_ISOCH_ENDPOINT_COMPANION_DESCRI
 }
 unsafe impl ::windows::core::Abi for USB_SUPERSPEEDPLUS_ISOCH_ENDPOINT_COMPANION_DESCRIPTOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_SUPERSPEEDPLUS_ISOCH_ENDPOINT_COMPANION_DESCRIPTOR {
     fn eq(&self, other: &Self) -> bool {
@@ -5818,6 +5977,7 @@ impl ::core::clone::Clone for USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR {
 }
 unsafe impl ::windows::core::Abi for USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR {
     fn eq(&self, other: &Self) -> bool {
@@ -5845,6 +6005,7 @@ impl ::core::clone::Clone for USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR_0 {
 }
 unsafe impl ::windows::core::Abi for USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -5875,6 +6036,7 @@ impl ::core::fmt::Debug for USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR_0_0 {
 }
 unsafe impl ::windows::core::Abi for USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR_0_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR_0_0 {
     fn eq(&self, other: &Self) -> bool {
@@ -5905,6 +6067,7 @@ impl ::core::fmt::Debug for USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR_0_1 {
 }
 unsafe impl ::windows::core::Abi for USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR_0_1 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR_0_1 {
     fn eq(&self, other: &Self) -> bool {
@@ -5963,6 +6126,7 @@ impl ::core::clone::Clone for USB_UNICODE_NAME {
 }
 unsafe impl ::windows::core::Abi for USB_UNICODE_NAME {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_UNICODE_NAME {
     fn eq(&self, other: &Self) -> bool {
@@ -5997,6 +6161,7 @@ impl ::core::fmt::Debug for USB_USB2HW_VERSION_PARAMETERS {
 }
 unsafe impl ::windows::core::Abi for USB_USB2HW_VERSION_PARAMETERS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for USB_USB2HW_VERSION_PARAMETERS {
     fn eq(&self, other: &Self) -> bool {
@@ -6048,6 +6213,7 @@ impl ::core::default::Default for USB_USER_ERROR_CODE {
 }
 unsafe impl ::windows::core::Abi for USB_USER_ERROR_CODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for USB_USER_ERROR_CODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6097,6 +6263,7 @@ impl ::core::default::Default for WDMUSB_POWER_STATE {
 }
 unsafe impl ::windows::core::Abi for WDMUSB_POWER_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for WDMUSB_POWER_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -6124,6 +6291,7 @@ impl ::core::fmt::Debug for WINUSB_PIPE_INFORMATION {
 }
 unsafe impl ::windows::core::Abi for WINUSB_PIPE_INFORMATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINUSB_PIPE_INFORMATION {
     fn eq(&self, other: &Self) -> bool {
@@ -6158,6 +6326,7 @@ impl ::core::fmt::Debug for WINUSB_PIPE_INFORMATION_EX {
 }
 unsafe impl ::windows::core::Abi for WINUSB_PIPE_INFORMATION_EX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINUSB_PIPE_INFORMATION_EX {
     fn eq(&self, other: &Self) -> bool {
@@ -6187,6 +6356,7 @@ impl ::core::clone::Clone for WINUSB_SETUP_PACKET {
 }
 unsafe impl ::windows::core::Abi for WINUSB_SETUP_PACKET {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for WINUSB_SETUP_PACKET {
     fn eq(&self, other: &Self) -> bool {
@@ -6745,6 +6915,7 @@ impl ::core::fmt::Debug for _URB_BULK_OR_INTERRUPT_TRANSFER {
 }
 unsafe impl ::windows::core::Abi for _URB_BULK_OR_INTERRUPT_TRANSFER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for _URB_BULK_OR_INTERRUPT_TRANSFER {
     fn eq(&self, other: &Self) -> bool {
@@ -6801,6 +6972,7 @@ impl ::core::fmt::Debug for _URB_CONTROL_DESCRIPTOR_REQUEST {
 }
 unsafe impl ::windows::core::Abi for _URB_CONTROL_DESCRIPTOR_REQUEST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for _URB_CONTROL_DESCRIPTOR_REQUEST {
     fn eq(&self, other: &Self) -> bool {
@@ -6842,6 +7014,7 @@ impl ::core::fmt::Debug for _URB_CONTROL_FEATURE_REQUEST {
 }
 unsafe impl ::windows::core::Abi for _URB_CONTROL_FEATURE_REQUEST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for _URB_CONTROL_FEATURE_REQUEST {
     fn eq(&self, other: &Self) -> bool {
@@ -6880,6 +7053,7 @@ impl ::core::fmt::Debug for _URB_CONTROL_GET_CONFIGURATION_REQUEST {
 }
 unsafe impl ::windows::core::Abi for _URB_CONTROL_GET_CONFIGURATION_REQUEST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for _URB_CONTROL_GET_CONFIGURATION_REQUEST {
     fn eq(&self, other: &Self) -> bool {
@@ -6920,6 +7094,7 @@ impl ::core::fmt::Debug for _URB_CONTROL_GET_INTERFACE_REQUEST {
 }
 unsafe impl ::windows::core::Abi for _URB_CONTROL_GET_INTERFACE_REQUEST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for _URB_CONTROL_GET_INTERFACE_REQUEST {
     fn eq(&self, other: &Self) -> bool {
@@ -6960,6 +7135,7 @@ impl ::core::fmt::Debug for _URB_CONTROL_GET_STATUS_REQUEST {
 }
 unsafe impl ::windows::core::Abi for _URB_CONTROL_GET_STATUS_REQUEST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for _URB_CONTROL_GET_STATUS_REQUEST {
     fn eq(&self, other: &Self) -> bool {
@@ -6998,6 +7174,7 @@ impl ::core::fmt::Debug for _URB_CONTROL_TRANSFER {
 }
 unsafe impl ::windows::core::Abi for _URB_CONTROL_TRANSFER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for _URB_CONTROL_TRANSFER {
     fn eq(&self, other: &Self) -> bool {
@@ -7036,6 +7213,7 @@ impl ::core::fmt::Debug for _URB_CONTROL_TRANSFER_EX {
 }
 unsafe impl ::windows::core::Abi for _URB_CONTROL_TRANSFER_EX {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for _URB_CONTROL_TRANSFER_EX {
     fn eq(&self, other: &Self) -> bool {
@@ -7092,6 +7270,7 @@ impl ::core::fmt::Debug for _URB_CONTROL_VENDOR_OR_CLASS_REQUEST {
 }
 unsafe impl ::windows::core::Abi for _URB_CONTROL_VENDOR_OR_CLASS_REQUEST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for _URB_CONTROL_VENDOR_OR_CLASS_REQUEST {
     fn eq(&self, other: &Self) -> bool {
@@ -7122,6 +7301,7 @@ impl ::core::fmt::Debug for _URB_FRAME_LENGTH_CONTROL {
 }
 unsafe impl ::windows::core::Abi for _URB_FRAME_LENGTH_CONTROL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for _URB_FRAME_LENGTH_CONTROL {
     fn eq(&self, other: &Self) -> bool {
@@ -7153,6 +7333,7 @@ impl ::core::fmt::Debug for _URB_GET_CURRENT_FRAME_NUMBER {
 }
 unsafe impl ::windows::core::Abi for _URB_GET_CURRENT_FRAME_NUMBER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for _URB_GET_CURRENT_FRAME_NUMBER {
     fn eq(&self, other: &Self) -> bool {
@@ -7185,6 +7366,7 @@ impl ::core::fmt::Debug for _URB_GET_FRAME_LENGTH {
 }
 unsafe impl ::windows::core::Abi for _URB_GET_FRAME_LENGTH {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for _URB_GET_FRAME_LENGTH {
     fn eq(&self, other: &Self) -> bool {
@@ -7218,6 +7400,7 @@ impl ::core::fmt::Debug for _URB_GET_ISOCH_PIPE_TRANSFER_PATH_DELAYS {
 }
 unsafe impl ::windows::core::Abi for _URB_GET_ISOCH_PIPE_TRANSFER_PATH_DELAYS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for _URB_GET_ISOCH_PIPE_TRANSFER_PATH_DELAYS {
     fn eq(&self, other: &Self) -> bool {
@@ -7248,6 +7431,7 @@ impl ::core::fmt::Debug for _URB_HCD_AREA {
 }
 unsafe impl ::windows::core::Abi for _URB_HCD_AREA {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for _URB_HCD_AREA {
     fn eq(&self, other: &Self) -> bool {
@@ -7282,6 +7466,7 @@ impl ::core::fmt::Debug for _URB_HEADER {
 }
 unsafe impl ::windows::core::Abi for _URB_HEADER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for _URB_HEADER {
     fn eq(&self, other: &Self) -> bool {
@@ -7336,6 +7521,7 @@ impl ::core::fmt::Debug for _URB_ISOCH_TRANSFER {
 }
 unsafe impl ::windows::core::Abi for _URB_ISOCH_TRANSFER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for _URB_ISOCH_TRANSFER {
     fn eq(&self, other: &Self) -> bool {
@@ -7371,6 +7557,7 @@ impl ::core::fmt::Debug for _URB_OPEN_STATIC_STREAMS {
 }
 unsafe impl ::windows::core::Abi for _URB_OPEN_STATIC_STREAMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for _URB_OPEN_STATIC_STREAMS {
     fn eq(&self, other: &Self) -> bool {
@@ -7429,6 +7616,7 @@ impl ::core::fmt::Debug for _URB_OS_FEATURE_DESCRIPTOR_REQUEST {
 }
 unsafe impl ::windows::core::Abi for _URB_OS_FEATURE_DESCRIPTOR_REQUEST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for _URB_OS_FEATURE_DESCRIPTOR_REQUEST {
     fn eq(&self, other: &Self) -> bool {
@@ -7461,6 +7649,7 @@ impl ::core::fmt::Debug for _URB_PIPE_REQUEST {
 }
 unsafe impl ::windows::core::Abi for _URB_PIPE_REQUEST {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for _URB_PIPE_REQUEST {
     fn eq(&self, other: &Self) -> bool {
@@ -7494,6 +7683,7 @@ impl ::core::fmt::Debug for _URB_SELECT_CONFIGURATION {
 }
 unsafe impl ::windows::core::Abi for _URB_SELECT_CONFIGURATION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for _URB_SELECT_CONFIGURATION {
     fn eq(&self, other: &Self) -> bool {
@@ -7526,6 +7716,7 @@ impl ::core::fmt::Debug for _URB_SELECT_INTERFACE {
 }
 unsafe impl ::windows::core::Abi for _URB_SELECT_INTERFACE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for _URB_SELECT_INTERFACE {
     fn eq(&self, other: &Self) -> bool {
@@ -7557,6 +7748,7 @@ impl ::core::fmt::Debug for _URB_SET_FRAME_LENGTH {
 }
 unsafe impl ::windows::core::Abi for _URB_SET_FRAME_LENGTH {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for _URB_SET_FRAME_LENGTH {
     fn eq(&self, other: &Self) -> bool {

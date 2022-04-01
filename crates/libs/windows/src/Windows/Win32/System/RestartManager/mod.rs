@@ -40,6 +40,7 @@ impl ::core::default::Default for RM_APP_STATUS {
 }
 unsafe impl ::windows::core::Abi for RM_APP_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RM_APP_STATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -77,6 +78,7 @@ impl ::core::default::Default for RM_APP_TYPE {
 }
 unsafe impl ::windows::core::Abi for RM_APP_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RM_APP_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -106,6 +108,7 @@ impl ::core::default::Default for RM_FILTER_ACTION {
 }
 unsafe impl ::windows::core::Abi for RM_FILTER_ACTION {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RM_FILTER_ACTION {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -132,6 +135,7 @@ impl ::core::clone::Clone for RM_FILTER_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for RM_FILTER_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for RM_FILTER_INFO {
@@ -166,6 +170,7 @@ impl ::core::clone::Clone for RM_FILTER_INFO_0 {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for RM_FILTER_INFO_0 {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for RM_FILTER_INFO_0 {
@@ -206,6 +211,7 @@ impl ::core::default::Default for RM_FILTER_TRIGGER {
 }
 unsafe impl ::windows::core::Abi for RM_FILTER_TRIGGER {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RM_FILTER_TRIGGER {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -245,6 +251,7 @@ impl ::core::fmt::Debug for RM_PROCESS_INFO {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for RM_PROCESS_INFO {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for RM_PROCESS_INFO {
@@ -289,6 +296,7 @@ impl ::core::default::Default for RM_REBOOT_REASON {
 }
 unsafe impl ::windows::core::Abi for RM_REBOOT_REASON {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RM_REBOOT_REASON {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -316,6 +324,7 @@ impl ::core::default::Default for RM_SHUTDOWN_TYPE {
 }
 unsafe impl ::windows::core::Abi for RM_SHUTDOWN_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RM_SHUTDOWN_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -346,6 +355,7 @@ impl ::core::fmt::Debug for RM_UNIQUE_PROCESS {
 #[cfg(feature = "Win32_Foundation")]
 unsafe impl ::windows::core::Abi for RM_UNIQUE_PROCESS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Foundation")]
 impl ::core::cmp::PartialEq for RM_UNIQUE_PROCESS {

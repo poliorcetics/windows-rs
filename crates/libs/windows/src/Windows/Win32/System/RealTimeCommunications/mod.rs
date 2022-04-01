@@ -8,6 +8,11 @@ pub const FACILITY_SIP_STATUS_CODE: u32 = 239u32;
 #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`*"]
 #[repr(transparent)]
 pub struct INetworkTransportSettings(::windows::core::IUnknown);
+impl ::core::clone::Clone for INetworkTransportSettings {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl INetworkTransportSettings {
     #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`, `\"Win32_Networking_WinSock\"`*"]
     #[cfg(feature = "Win32_Networking_WinSock")]
@@ -38,11 +43,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for INetworkT
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a INetworkTransportSettings {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for INetworkTransportSettings {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for INetworkTransportSettings {
@@ -76,6 +76,11 @@ pub struct INetworkTransportSettings_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`*"]
 #[repr(transparent)]
 pub struct INotificationTransportSync(::windows::core::IUnknown);
+impl ::core::clone::Clone for INotificationTransportSync {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl INotificationTransportSync {
     #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`*"]
     pub unsafe fn CompleteDelivery(&self) -> ::windows::core::Result<()> {
@@ -106,11 +111,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a INoti
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for INotificationTransportSync {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for INotificationTransportSync {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -136,6 +136,11 @@ pub struct INotificationTransportSync_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`*"]
 #[repr(transparent)]
 pub struct IRTCBuddy(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRTCBuddy {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRTCBuddy {
     #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -231,11 +236,6 @@ impl<'a> ::windows::core::IntoParam<'a, IRTCPresenceContact> for &'a IRTCBuddy {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IRTCBuddy {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IRTCBuddy {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -264,6 +264,11 @@ pub struct IRTCBuddy_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`*"]
 #[repr(transparent)]
 pub struct IRTCBuddy2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRTCBuddy2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRTCBuddy2 {
     #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -421,11 +426,6 @@ impl<'a> ::windows::core::IntoParam<'a, IRTCBuddy> for &'a IRTCBuddy2 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IRTCBuddy2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IRTCBuddy2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -467,6 +467,12 @@ pub struct IRTCBuddy2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IRTCBuddyEvent(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IRTCBuddyEvent {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IRTCBuddyEvent {
     #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`*"]
@@ -524,12 +530,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IRTCBuddy
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IRTCBuddyEvent {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IRTCBuddyEvent {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -559,6 +559,12 @@ pub struct IRTCBuddyEvent_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IRTCBuddyEvent2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IRTCBuddyEvent2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IRTCBuddyEvent2 {
     #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`*"]
@@ -656,12 +662,6 @@ impl<'a> ::windows::core::IntoParam<'a, IRTCBuddyEvent> for &'a IRTCBuddyEvent2 
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IRTCBuddyEvent2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IRTCBuddyEvent2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -695,6 +695,11 @@ pub struct IRTCBuddyEvent2_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`*"]
 #[repr(transparent)]
 pub struct IRTCBuddyGroup(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRTCBuddyGroup {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRTCBuddyGroup {
     #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -763,11 +768,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IRTCB
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IRTCBuddyGroup {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IRTCBuddyGroup {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -816,6 +816,12 @@ pub struct IRTCBuddyGroup_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IRTCBuddyGroupEvent(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IRTCBuddyGroupEvent {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IRTCBuddyGroupEvent {
     #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`*"]
@@ -888,12 +894,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IRTCBuddy
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IRTCBuddyGroupEvent {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IRTCBuddyGroupEvent {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -925,6 +925,11 @@ pub struct IRTCBuddyGroupEvent_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`*"]
 #[repr(transparent)]
 pub struct IRTCClient(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRTCClient {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRTCClient {
     #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`*"]
     pub unsafe fn Initialize(&self) -> ::windows::core::Result<()> {
@@ -1147,11 +1152,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IRTCC
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IRTCClient {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IRTCClient {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1250,6 +1250,11 @@ pub struct IRTCClient_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`*"]
 #[repr(transparent)]
 pub struct IRTCClient2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRTCClient2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRTCClient2 {
     #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`*"]
     pub unsafe fn Initialize(&self) -> ::windows::core::Result<()> {
@@ -1552,11 +1557,6 @@ impl<'a> ::windows::core::IntoParam<'a, IRTCClient> for &'a IRTCClient2 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IRTCClient2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IRTCClient2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1603,6 +1603,12 @@ pub struct IRTCClient2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IRTCClientEvent(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IRTCClientEvent {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IRTCClientEvent {
     #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`*"]
@@ -1665,12 +1671,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IRTCClien
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IRTCClientEvent {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IRTCClientEvent {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1700,6 +1700,11 @@ pub struct IRTCClientEvent_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`*"]
 #[repr(transparent)]
 pub struct IRTCClientPortManagement(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRTCClientPortManagement {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRTCClientPortManagement {
     #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -1736,11 +1741,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IRTCC
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IRTCClientPortManagement {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IRTCClientPortManagement {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1773,6 +1773,11 @@ pub struct IRTCClientPortManagement_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`*"]
 #[repr(transparent)]
 pub struct IRTCClientPresence(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRTCClientPresence {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRTCClientPresence {
     #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com", feature = "Win32_System_Ole"))]
@@ -1887,11 +1892,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IRTCC
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IRTCClientPresence {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IRTCClientPresence {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1963,6 +1963,11 @@ pub struct IRTCClientPresence_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`*"]
 #[repr(transparent)]
 pub struct IRTCClientPresence2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRTCClientPresence2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRTCClientPresence2 {
     #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`, `\"Win32_Foundation\"`, `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_System_Com", feature = "Win32_System_Ole"))]
@@ -2177,11 +2182,6 @@ impl<'a> ::windows::core::IntoParam<'a, IRTCClientPresence> for &'a IRTCClientPr
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IRTCClientPresence2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IRTCClientPresence2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2256,6 +2256,11 @@ pub struct IRTCClientPresence2_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`*"]
 #[repr(transparent)]
 pub struct IRTCClientProvisioning(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRTCClientProvisioning {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRTCClientProvisioning {
     #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -2313,11 +2318,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IRTCC
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IRTCClientProvisioning {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IRTCClientProvisioning {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2357,6 +2357,11 @@ pub struct IRTCClientProvisioning_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`*"]
 #[repr(transparent)]
 pub struct IRTCClientProvisioning2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRTCClientProvisioning2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRTCClientProvisioning2 {
     #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -2438,11 +2443,6 @@ impl<'a> ::windows::core::IntoParam<'a, IRTCClientProvisioning> for &'a IRTCClie
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IRTCClientProvisioning2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IRTCClientProvisioning2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2468,6 +2468,12 @@ pub struct IRTCClientProvisioning2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IRTCCollection(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IRTCCollection {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IRTCCollection {
     #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`*"]
@@ -2536,12 +2542,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IRTCColle
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IRTCCollection {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IRTCCollection {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2576,6 +2576,12 @@ pub struct IRTCCollection_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IRTCDispatchEventNotification(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IRTCDispatchEventNotification {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IRTCDispatchEventNotification {}
 #[cfg(feature = "Win32_System_Com")]
@@ -2627,12 +2633,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IRTCDispa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IRTCDispatchEventNotification {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IRTCDispatchEventNotification {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2660,6 +2660,11 @@ pub struct IRTCDispatchEventNotification_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`*"]
 #[repr(transparent)]
 pub struct IRTCEnumBuddies(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRTCEnumBuddies {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRTCEnumBuddies {
     #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`*"]
     pub unsafe fn Next(&self, ppelements: &mut [::core::option::Option<IRTCBuddy>], pceltfetched: *mut u32) -> ::windows::core::Result<()> {
@@ -2699,11 +2704,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IRTCE
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IRTCEnumBuddies {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IRTCEnumBuddies {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2731,6 +2731,11 @@ pub struct IRTCEnumBuddies_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`*"]
 #[repr(transparent)]
 pub struct IRTCEnumGroups(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRTCEnumGroups {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRTCEnumGroups {
     #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`*"]
     pub unsafe fn Next(&self, ppelements: &mut [::core::option::Option<IRTCBuddyGroup>], pceltfetched: *mut u32) -> ::windows::core::Result<()> {
@@ -2770,11 +2775,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IRTCE
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IRTCEnumGroups {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IRTCEnumGroups {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2802,6 +2802,11 @@ pub struct IRTCEnumGroups_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`*"]
 #[repr(transparent)]
 pub struct IRTCEnumParticipants(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRTCEnumParticipants {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRTCEnumParticipants {
     #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`*"]
     pub unsafe fn Next(&self, ppelements: &mut [::core::option::Option<IRTCParticipant>], pceltfetched: *mut u32) -> ::windows::core::Result<()> {
@@ -2841,11 +2846,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IRTCE
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IRTCEnumParticipants {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IRTCEnumParticipants {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2873,6 +2873,11 @@ pub struct IRTCEnumParticipants_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`*"]
 #[repr(transparent)]
 pub struct IRTCEnumPresenceDevices(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRTCEnumPresenceDevices {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRTCEnumPresenceDevices {
     #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`*"]
     pub unsafe fn Next(&self, ppelements: &mut [::core::option::Option<IRTCPresenceDevice>], pceltfetched: *mut u32) -> ::windows::core::Result<()> {
@@ -2912,11 +2917,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IRTCE
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IRTCEnumPresenceDevices {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IRTCEnumPresenceDevices {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -2944,6 +2944,11 @@ pub struct IRTCEnumPresenceDevices_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`*"]
 #[repr(transparent)]
 pub struct IRTCEnumProfiles(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRTCEnumProfiles {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRTCEnumProfiles {
     #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`*"]
     pub unsafe fn Next(&self, ppelements: &mut [::core::option::Option<IRTCProfile>], pceltfetched: *mut u32) -> ::windows::core::Result<()> {
@@ -2983,11 +2988,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IRTCE
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IRTCEnumProfiles {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IRTCEnumProfiles {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3015,6 +3015,11 @@ pub struct IRTCEnumProfiles_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`*"]
 #[repr(transparent)]
 pub struct IRTCEnumUserSearchResults(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRTCEnumUserSearchResults {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRTCEnumUserSearchResults {
     #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`*"]
     pub unsafe fn Next(&self, ppelements: &mut [::core::option::Option<IRTCUserSearchResult>], pceltfetched: *mut u32) -> ::windows::core::Result<()> {
@@ -3054,11 +3059,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IRTCE
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IRTCEnumUserSearchResults {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IRTCEnumUserSearchResults {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3086,6 +3086,11 @@ pub struct IRTCEnumUserSearchResults_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`*"]
 #[repr(transparent)]
 pub struct IRTCEnumWatchers(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRTCEnumWatchers {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRTCEnumWatchers {
     #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`*"]
     pub unsafe fn Next(&self, ppelements: &mut [::core::option::Option<IRTCWatcher>], pceltfetched: *mut u32) -> ::windows::core::Result<()> {
@@ -3125,11 +3130,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IRTCE
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IRTCEnumWatchers {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IRTCEnumWatchers {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3157,6 +3157,11 @@ pub struct IRTCEnumWatchers_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`*"]
 #[repr(transparent)]
 pub struct IRTCEventNotification(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRTCEventNotification {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRTCEventNotification {
     #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`, `\"Win32_System_Com\"`*"]
     #[cfg(feature = "Win32_System_Com")]
@@ -3182,11 +3187,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IRTCEvent
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IRTCEventNotification {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IRTCEventNotification {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IRTCEventNotification {
@@ -3217,6 +3217,12 @@ pub struct IRTCEventNotification_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IRTCInfoEvent(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IRTCInfoEvent {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IRTCInfoEvent {
     #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`*"]
@@ -3291,12 +3297,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IRTCInfoE
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IRTCInfoEvent {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IRTCInfoEvent {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3335,6 +3335,12 @@ pub struct IRTCInfoEvent_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IRTCIntensityEvent(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IRTCIntensityEvent {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IRTCIntensityEvent {
     #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`*"]
@@ -3407,12 +3413,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IRTCInten
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IRTCIntensityEvent {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IRTCIntensityEvent {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3445,6 +3445,12 @@ pub struct IRTCIntensityEvent_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IRTCMediaEvent(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IRTCMediaEvent {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IRTCMediaEvent {
     #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`*"]
@@ -3512,12 +3518,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IRTCMedia
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IRTCMediaEvent {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IRTCMediaEvent {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3549,6 +3549,12 @@ pub struct IRTCMediaEvent_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IRTCMediaRequestEvent(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IRTCMediaRequestEvent {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IRTCMediaRequestEvent {
     #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`*"]
@@ -3634,12 +3640,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IRTCMedia
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IRTCMediaRequestEvent {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IRTCMediaRequestEvent {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3675,6 +3675,12 @@ pub struct IRTCMediaRequestEvent_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IRTCMessagingEvent(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IRTCMessagingEvent {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IRTCMessagingEvent {
     #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`*"]
@@ -3759,12 +3765,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IRTCMessa
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IRTCMessagingEvent {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IRTCMessagingEvent {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3804,6 +3804,11 @@ pub struct IRTCMessagingEvent_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`*"]
 #[repr(transparent)]
 pub struct IRTCParticipant(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRTCParticipant {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRTCParticipant {
     #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -3853,11 +3858,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IRTCP
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IRTCParticipant {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IRTCParticipant {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3893,6 +3893,12 @@ pub struct IRTCParticipant_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IRTCParticipantStateChangeEvent(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IRTCParticipantStateChangeEvent {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IRTCParticipantStateChangeEvent {
     #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`*"]
@@ -3960,12 +3966,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IRTCParti
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IRTCParticipantStateChangeEvent {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IRTCParticipantStateChangeEvent {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -3996,6 +3996,11 @@ pub struct IRTCParticipantStateChangeEvent_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`*"]
 #[repr(transparent)]
 pub struct IRTCPortManager(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRTCPortManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRTCPortManager {
     #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -4033,11 +4038,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IRTCP
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IRTCPortManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IRTCPortManager {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4073,6 +4073,11 @@ pub struct IRTCPortManager_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`*"]
 #[repr(transparent)]
 pub struct IRTCPresenceContact(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRTCPresenceContact {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRTCPresenceContact {
     #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -4137,11 +4142,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IRTCP
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IRTCPresenceContact {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IRTCPresenceContact {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4192,6 +4192,12 @@ pub struct IRTCPresenceContact_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IRTCPresenceDataEvent(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IRTCPresenceDataEvent {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IRTCPresenceDataEvent {
     #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`*"]
@@ -4260,12 +4266,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IRTCPrese
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IRTCPresenceDataEvent {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IRTCPresenceDataEvent {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4302,6 +4302,11 @@ pub struct IRTCPresenceDataEvent_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`*"]
 #[repr(transparent)]
 pub struct IRTCPresenceDevice(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRTCPresenceDevice {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRTCPresenceDevice {
     #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`*"]
     pub unsafe fn Status(&self) -> ::windows::core::Result<RTC_PRESENCE_STATUS> {
@@ -4346,11 +4351,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IRTCP
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IRTCPresenceDevice {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IRTCPresenceDevice {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4388,6 +4388,12 @@ pub struct IRTCPresenceDevice_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IRTCPresencePropertyEvent(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IRTCPresencePropertyEvent {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IRTCPresencePropertyEvent {
     #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`*"]
@@ -4462,12 +4468,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IRTCPrese
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IRTCPresencePropertyEvent {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IRTCPresencePropertyEvent {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4506,6 +4506,12 @@ pub struct IRTCPresencePropertyEvent_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IRTCPresenceStatusEvent(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IRTCPresenceStatusEvent {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IRTCPresenceStatusEvent {
     #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`*"]
@@ -4574,12 +4580,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IRTCPrese
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IRTCPresenceStatusEvent {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IRTCPresenceStatusEvent {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4616,6 +4616,11 @@ pub struct IRTCPresenceStatusEvent_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`*"]
 #[repr(transparent)]
 pub struct IRTCProfile(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRTCProfile {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRTCProfile {
     #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -4742,11 +4747,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IRTCP
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IRTCProfile {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IRTCProfile {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -4833,6 +4833,11 @@ pub struct IRTCProfile_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`*"]
 #[repr(transparent)]
 pub struct IRTCProfile2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRTCProfile2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRTCProfile2 {
     #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -4999,11 +5004,6 @@ impl<'a> ::windows::core::IntoParam<'a, IRTCProfile> for &'a IRTCProfile2 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IRTCProfile2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IRTCProfile2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5038,6 +5038,12 @@ pub struct IRTCProfile2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IRTCProfileEvent(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IRTCProfileEvent {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IRTCProfileEvent {
     #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`*"]
@@ -5105,12 +5111,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IRTCProfi
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IRTCProfileEvent {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IRTCProfileEvent {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5142,6 +5142,12 @@ pub struct IRTCProfileEvent_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IRTCProfileEvent2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IRTCProfileEvent2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IRTCProfileEvent2 {
     #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`*"]
@@ -5238,12 +5244,6 @@ impl<'a> ::windows::core::IntoParam<'a, IRTCProfileEvent> for &'a IRTCProfileEve
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IRTCProfileEvent2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IRTCProfileEvent2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5273,6 +5273,12 @@ pub struct IRTCProfileEvent2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IRTCReInviteEvent(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IRTCReInviteEvent {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IRTCReInviteEvent {
     #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`*"]
@@ -5349,12 +5355,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IRTCReInv
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IRTCReInviteEvent {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IRTCReInviteEvent {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5394,6 +5394,12 @@ pub struct IRTCReInviteEvent_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IRTCRegistrationStateChangeEvent(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IRTCRegistrationStateChangeEvent {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IRTCRegistrationStateChangeEvent {
     #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`*"]
@@ -5467,12 +5473,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IRTCRegis
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IRTCRegistrationStateChangeEvent {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IRTCRegistrationStateChangeEvent {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5508,6 +5508,12 @@ pub struct IRTCRegistrationStateChangeEvent_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IRTCRoamingEvent(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IRTCRoamingEvent {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IRTCRoamingEvent {
     #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`*"]
@@ -5581,12 +5587,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IRTCRoami
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IRTCRoamingEvent {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IRTCRoamingEvent {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5621,6 +5621,11 @@ pub struct IRTCRoamingEvent_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`*"]
 #[repr(transparent)]
 pub struct IRTCSession(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRTCSession {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRTCSession {
     #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`*"]
     pub unsafe fn Client(&self) -> ::windows::core::Result<IRTCClient> {
@@ -5740,11 +5745,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IRTCS
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IRTCSession {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IRTCSession {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -5809,6 +5809,11 @@ pub struct IRTCSession_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`*"]
 #[repr(transparent)]
 pub struct IRTCSession2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRTCSession2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRTCSession2 {
     #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`*"]
     pub unsafe fn Client(&self) -> ::windows::core::Result<IRTCClient> {
@@ -5977,11 +5982,6 @@ impl<'a> ::windows::core::IntoParam<'a, IRTCSession> for &'a IRTCSession2 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IRTCSession2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IRTCSession2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6020,6 +6020,11 @@ pub struct IRTCSession2_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`*"]
 #[repr(transparent)]
 pub struct IRTCSessionCallControl(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRTCSessionCallControl {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRTCSessionCallControl {
     #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`*"]
     pub unsafe fn Hold(&self, lcookie: isize) -> ::windows::core::Result<()> {
@@ -6087,11 +6092,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IRTCS
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IRTCSessionCallControl {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IRTCSessionCallControl {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6142,6 +6142,11 @@ pub struct IRTCSessionCallControl_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`*"]
 #[repr(transparent)]
 pub struct IRTCSessionDescriptionManager(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRTCSessionDescriptionManager {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRTCSessionDescriptionManager {
     #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -6167,11 +6172,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IRTCSessi
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IRTCSessionDescriptionManager {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IRTCSessionDescriptionManager {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IRTCSessionDescriptionManager {
@@ -6202,6 +6202,12 @@ pub struct IRTCSessionDescriptionManager_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IRTCSessionOperationCompleteEvent(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IRTCSessionOperationCompleteEvent {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IRTCSessionOperationCompleteEvent {
     #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`*"]
@@ -6275,12 +6281,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IRTCSessi
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IRTCSessionOperationCompleteEvent {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IRTCSessionOperationCompleteEvent {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6316,6 +6316,12 @@ pub struct IRTCSessionOperationCompleteEvent_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IRTCSessionOperationCompleteEvent2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IRTCSessionOperationCompleteEvent2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IRTCSessionOperationCompleteEvent2 {
     #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`*"]
@@ -6423,12 +6429,6 @@ impl<'a> ::windows::core::IntoParam<'a, IRTCSessionOperationCompleteEvent> for &
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IRTCSessionOperationCompleteEvent2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IRTCSessionOperationCompleteEvent2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6461,6 +6461,11 @@ pub struct IRTCSessionOperationCompleteEvent2_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`*"]
 #[repr(transparent)]
 pub struct IRTCSessionPortManagement(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRTCSessionPortManagement {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRTCSessionPortManagement {
     #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`*"]
     pub unsafe fn SetPortManager<'a, Param0: ::windows::core::IntoParam<'a, IRTCPortManager>>(&self, pportmanager: Param0) -> ::windows::core::Result<()> {
@@ -6485,11 +6490,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IRTCSessi
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IRTCSessionPortManagement {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IRTCSessionPortManagement {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IRTCSessionPortManagement {
@@ -6517,6 +6517,12 @@ pub struct IRTCSessionPortManagement_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IRTCSessionReferStatusEvent(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IRTCSessionReferStatusEvent {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IRTCSessionReferStatusEvent {
     #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`*"]
@@ -6590,12 +6596,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IRTCSessi
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IRTCSessionReferStatusEvent {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IRTCSessionReferStatusEvent {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6631,6 +6631,12 @@ pub struct IRTCSessionReferStatusEvent_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IRTCSessionReferredEvent(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IRTCSessionReferredEvent {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IRTCSessionReferredEvent {
     #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`*"]
@@ -6718,12 +6724,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IRTCSessi
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IRTCSessionReferredEvent {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IRTCSessionReferredEvent {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6768,6 +6768,12 @@ pub struct IRTCSessionReferredEvent_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IRTCSessionStateChangeEvent(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IRTCSessionStateChangeEvent {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IRTCSessionStateChangeEvent {
     #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`*"]
@@ -6841,12 +6847,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IRTCSessi
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IRTCSessionStateChangeEvent {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IRTCSessionStateChangeEvent {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -6882,6 +6882,12 @@ pub struct IRTCSessionStateChangeEvent_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IRTCSessionStateChangeEvent2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IRTCSessionStateChangeEvent2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IRTCSessionStateChangeEvent2 {
     #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`*"]
@@ -6999,12 +7005,6 @@ impl<'a> ::windows::core::IntoParam<'a, IRTCSessionStateChangeEvent> for &'a IRT
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IRTCSessionStateChangeEvent2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IRTCSessionStateChangeEvent2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7039,6 +7039,11 @@ pub struct IRTCSessionStateChangeEvent2_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`*"]
 #[repr(transparent)]
 pub struct IRTCUserSearch(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRTCUserSearch {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRTCUserSearch {
     #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`*"]
     pub unsafe fn CreateQuery(&self) -> ::windows::core::Result<IRTCUserSearchQuery> {
@@ -7070,11 +7075,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IRTCU
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IRTCUserSearch {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IRTCUserSearch {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7100,6 +7100,11 @@ pub struct IRTCUserSearch_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`*"]
 #[repr(transparent)]
 pub struct IRTCUserSearchQuery(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRTCUserSearchQuery {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRTCUserSearchQuery {
     #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -7159,11 +7164,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IRTCU
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IRTCUserSearchQuery {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IRTCUserSearchQuery {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7209,6 +7209,11 @@ pub struct IRTCUserSearchQuery_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`*"]
 #[repr(transparent)]
 pub struct IRTCUserSearchResult(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRTCUserSearchResult {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRTCUserSearchResult {
     #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -7235,11 +7240,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IRTCUserS
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IRTCUserSearchResult {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IRTCUserSearchResult {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IRTCUserSearchResult {
@@ -7270,6 +7270,12 @@ pub struct IRTCUserSearchResult_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IRTCUserSearchResultsEvent(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IRTCUserSearchResultsEvent {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IRTCUserSearchResultsEvent {
     #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`*"]
@@ -7358,12 +7364,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IRTCUserS
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IRTCUserSearchResultsEvent {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IRTCUserSearchResultsEvent {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7401,6 +7401,11 @@ pub struct IRTCUserSearchResultsEvent_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`*"]
 #[repr(transparent)]
 pub struct IRTCWatcher(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRTCWatcher {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRTCWatcher {
     #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -7494,11 +7499,6 @@ impl<'a> ::windows::core::IntoParam<'a, IRTCPresenceContact> for &'a IRTCWatcher
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IRTCWatcher {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IRTCWatcher {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7524,6 +7524,11 @@ pub struct IRTCWatcher_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`*"]
 #[repr(transparent)]
 pub struct IRTCWatcher2(::windows::core::IUnknown);
+impl ::core::clone::Clone for IRTCWatcher2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IRTCWatcher2 {
     #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -7647,11 +7652,6 @@ impl<'a> ::windows::core::IntoParam<'a, IRTCWatcher> for &'a IRTCWatcher2 {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IRTCWatcher2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IRTCWatcher2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7678,6 +7678,12 @@ pub struct IRTCWatcher2_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IRTCWatcherEvent(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IRTCWatcherEvent {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IRTCWatcherEvent {
     #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`*"]
@@ -7735,12 +7741,6 @@ impl<'a> ::windows::core::IntoParam<'a, super::Com::IDispatch> for &'a IRTCWatch
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IRTCWatcherEvent {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IRTCWatcherEvent {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7770,6 +7770,12 @@ pub struct IRTCWatcherEvent_Vtbl {
 #[cfg(feature = "Win32_System_Com")]
 #[repr(transparent)]
 pub struct IRTCWatcherEvent2(::windows::core::IUnknown);
+#[cfg(feature = "Win32_System_Com")]
+impl ::core::clone::Clone for IRTCWatcherEvent2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "Win32_System_Com")]
 impl IRTCWatcherEvent2 {
     #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`*"]
@@ -7861,12 +7867,6 @@ impl<'a> ::windows::core::IntoParam<'a, IRTCWatcherEvent> for &'a IRTCWatcherEve
     }
 }
 #[cfg(feature = "Win32_System_Com")]
-impl ::core::clone::Clone for IRTCWatcherEvent2 {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "Win32_System_Com")]
 impl ::core::cmp::PartialEq for IRTCWatcherEvent2 {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -7896,6 +7896,11 @@ pub struct IRTCWatcherEvent2_Vtbl {
 #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`*"]
 #[repr(transparent)]
 pub struct ITransportSettingsInternal(::windows::core::IUnknown);
+impl ::core::clone::Clone for ITransportSettingsInternal {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ITransportSettingsInternal {
     #[doc = "*Required features: `\"Win32_System_RealTimeCommunications\"`, `\"Win32_Networking_WinSock\"`*"]
     #[cfg(feature = "Win32_Networking_WinSock")]
@@ -7926,11 +7931,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for ITranspor
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a ITransportSettingsInternal {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for ITransportSettingsInternal {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for ITransportSettingsInternal {
@@ -8105,6 +8105,7 @@ impl ::core::default::Default for RTC_ACE_SCOPE {
 }
 unsafe impl ::windows::core::Abi for RTC_ACE_SCOPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RTC_ACE_SCOPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8136,6 +8137,7 @@ impl ::core::default::Default for RTC_ANSWER_MODE {
 }
 unsafe impl ::windows::core::Abi for RTC_ANSWER_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RTC_ANSWER_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8163,6 +8165,7 @@ impl ::core::default::Default for RTC_AUDIO_DEVICE {
 }
 unsafe impl ::windows::core::Abi for RTC_AUDIO_DEVICE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RTC_AUDIO_DEVICE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8198,6 +8201,7 @@ impl ::core::default::Default for RTC_BUDDY_EVENT_TYPE {
 }
 unsafe impl ::windows::core::Abi for RTC_BUDDY_EVENT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RTC_BUDDY_EVENT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8229,6 +8233,7 @@ impl ::core::default::Default for RTC_BUDDY_SUBSCRIPTION_TYPE {
 }
 unsafe impl ::windows::core::Abi for RTC_BUDDY_SUBSCRIPTION_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RTC_BUDDY_SUBSCRIPTION_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8260,6 +8265,7 @@ impl ::core::default::Default for RTC_CLIENT_EVENT_TYPE {
 }
 unsafe impl ::windows::core::Abi for RTC_CLIENT_EVENT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RTC_CLIENT_EVENT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8317,6 +8323,7 @@ impl ::core::default::Default for RTC_DTMF {
 }
 unsafe impl ::windows::core::Abi for RTC_DTMF {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RTC_DTMF {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8384,6 +8391,7 @@ impl ::core::default::Default for RTC_EVENT {
 }
 unsafe impl ::windows::core::Abi for RTC_EVENT {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RTC_EVENT {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8793,6 +8801,7 @@ impl ::core::default::Default for RTC_GROUP_EVENT_TYPE {
 }
 unsafe impl ::windows::core::Abi for RTC_GROUP_EVENT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RTC_GROUP_EVENT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8822,6 +8831,7 @@ impl ::core::default::Default for RTC_LISTEN_MODE {
 }
 unsafe impl ::windows::core::Abi for RTC_LISTEN_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RTC_LISTEN_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8859,6 +8869,7 @@ impl ::core::default::Default for RTC_MEDIA_EVENT_REASON {
 }
 unsafe impl ::windows::core::Abi for RTC_MEDIA_EVENT_REASON {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RTC_MEDIA_EVENT_REASON {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8888,6 +8899,7 @@ impl ::core::default::Default for RTC_MEDIA_EVENT_TYPE {
 }
 unsafe impl ::windows::core::Abi for RTC_MEDIA_EVENT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RTC_MEDIA_EVENT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8915,6 +8927,7 @@ impl ::core::default::Default for RTC_MESSAGING_EVENT_TYPE {
 }
 unsafe impl ::windows::core::Abi for RTC_MESSAGING_EVENT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RTC_MESSAGING_EVENT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8942,6 +8955,7 @@ impl ::core::default::Default for RTC_MESSAGING_USER_STATUS {
 }
 unsafe impl ::windows::core::Abi for RTC_MESSAGING_USER_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RTC_MESSAGING_USER_STATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -8969,6 +8983,7 @@ impl ::core::default::Default for RTC_OFFER_WATCHER_MODE {
 }
 unsafe impl ::windows::core::Abi for RTC_OFFER_WATCHER_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RTC_OFFER_WATCHER_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9010,6 +9025,7 @@ impl ::core::default::Default for RTC_PARTICIPANT_STATE {
 }
 unsafe impl ::windows::core::Abi for RTC_PARTICIPANT_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RTC_PARTICIPANT_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9043,6 +9059,7 @@ impl ::core::default::Default for RTC_PORT_TYPE {
 }
 unsafe impl ::windows::core::Abi for RTC_PORT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RTC_PORT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9076,6 +9093,7 @@ impl ::core::default::Default for RTC_PRESENCE_PROPERTY {
 }
 unsafe impl ::windows::core::Abi for RTC_PRESENCE_PROPERTY {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RTC_PRESENCE_PROPERTY {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9115,6 +9133,7 @@ impl ::core::default::Default for RTC_PRESENCE_STATUS {
 }
 unsafe impl ::windows::core::Abi for RTC_PRESENCE_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RTC_PRESENCE_STATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9142,6 +9161,7 @@ impl ::core::default::Default for RTC_PRIVACY_MODE {
 }
 unsafe impl ::windows::core::Abi for RTC_PRIVACY_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RTC_PRIVACY_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9169,6 +9189,7 @@ impl ::core::default::Default for RTC_PROFILE_EVENT_TYPE {
 }
 unsafe impl ::windows::core::Abi for RTC_PROFILE_EVENT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RTC_PROFILE_EVENT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9202,6 +9223,7 @@ impl ::core::default::Default for RTC_PROVIDER_URI {
 }
 unsafe impl ::windows::core::Abi for RTC_PROVIDER_URI {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RTC_PROVIDER_URI {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9243,6 +9265,7 @@ impl ::core::default::Default for RTC_REGISTRATION_STATE {
 }
 unsafe impl ::windows::core::Abi for RTC_REGISTRATION_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RTC_REGISTRATION_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9272,6 +9295,7 @@ impl ::core::default::Default for RTC_REINVITE_STATE {
 }
 unsafe impl ::windows::core::Abi for RTC_REINVITE_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RTC_REINVITE_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9301,6 +9325,7 @@ impl ::core::default::Default for RTC_RING_TYPE {
 }
 unsafe impl ::windows::core::Abi for RTC_RING_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RTC_RING_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9334,6 +9359,7 @@ impl ::core::default::Default for RTC_ROAMING_EVENT_TYPE {
 }
 unsafe impl ::windows::core::Abi for RTC_ROAMING_EVENT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RTC_ROAMING_EVENT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9363,6 +9389,7 @@ impl ::core::default::Default for RTC_SECURITY_LEVEL {
 }
 unsafe impl ::windows::core::Abi for RTC_SECURITY_LEVEL {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RTC_SECURITY_LEVEL {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9390,6 +9417,7 @@ impl ::core::default::Default for RTC_SECURITY_TYPE {
 }
 unsafe impl ::windows::core::Abi for RTC_SECURITY_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RTC_SECURITY_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9425,6 +9453,7 @@ impl ::core::default::Default for RTC_SESSION_REFER_STATUS {
 }
 unsafe impl ::windows::core::Abi for RTC_SESSION_REFER_STATUS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RTC_SESSION_REFER_STATUS {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9464,6 +9493,7 @@ impl ::core::default::Default for RTC_SESSION_STATE {
 }
 unsafe impl ::windows::core::Abi for RTC_SESSION_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RTC_SESSION_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9499,6 +9529,7 @@ impl ::core::default::Default for RTC_SESSION_TYPE {
 }
 unsafe impl ::windows::core::Abi for RTC_SESSION_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RTC_SESSION_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9528,6 +9559,7 @@ impl ::core::default::Default for RTC_T120_APPLET {
 }
 unsafe impl ::windows::core::Abi for RTC_T120_APPLET {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RTC_T120_APPLET {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9567,6 +9599,7 @@ impl ::core::default::Default for RTC_TERMINATE_REASON {
 }
 unsafe impl ::windows::core::Abi for RTC_TERMINATE_REASON {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RTC_TERMINATE_REASON {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9610,6 +9643,7 @@ impl ::core::default::Default for RTC_USER_SEARCH_COLUMN {
 }
 unsafe impl ::windows::core::Abi for RTC_USER_SEARCH_COLUMN {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RTC_USER_SEARCH_COLUMN {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9637,6 +9671,7 @@ impl ::core::default::Default for RTC_USER_SEARCH_PREFERENCE {
 }
 unsafe impl ::windows::core::Abi for RTC_USER_SEARCH_PREFERENCE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RTC_USER_SEARCH_PREFERENCE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9664,6 +9699,7 @@ impl ::core::default::Default for RTC_VIDEO_DEVICE {
 }
 unsafe impl ::windows::core::Abi for RTC_VIDEO_DEVICE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RTC_VIDEO_DEVICE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9697,6 +9733,7 @@ impl ::core::default::Default for RTC_WATCHER_EVENT_TYPE {
 }
 unsafe impl ::windows::core::Abi for RTC_WATCHER_EVENT_TYPE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RTC_WATCHER_EVENT_TYPE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9724,6 +9761,7 @@ impl ::core::default::Default for RTC_WATCHER_MATCH_MODE {
 }
 unsafe impl ::windows::core::Abi for RTC_WATCHER_MATCH_MODE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RTC_WATCHER_MATCH_MODE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9759,6 +9797,7 @@ impl ::core::default::Default for RTC_WATCHER_STATE {
 }
 unsafe impl ::windows::core::Abi for RTC_WATCHER_STATE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for RTC_WATCHER_STATE {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -9792,6 +9831,7 @@ impl ::core::fmt::Debug for TRANSPORT_SETTING {
 #[cfg(feature = "Win32_Networking_WinSock")]
 unsafe impl ::windows::core::Abi for TRANSPORT_SETTING {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "Win32_Networking_WinSock")]
 impl ::core::cmp::PartialEq for TRANSPORT_SETTING {

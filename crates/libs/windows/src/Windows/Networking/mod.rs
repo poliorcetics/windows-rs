@@ -38,6 +38,7 @@ impl ::core::default::Default for DomainNameType {
 }
 unsafe impl ::windows::core::Abi for DomainNameType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for DomainNameType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -46,7 +47,6 @@ impl ::core::fmt::Debug for DomainNameType {
 }
 unsafe impl ::windows::core::RuntimeType for DomainNameType {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Networking.DomainNameType;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -120,11 +120,6 @@ impl EndpointPair {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for EndpointPair {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for EndpointPair {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -138,7 +133,6 @@ impl ::core::fmt::Debug for EndpointPair {
 }
 unsafe impl ::windows::core::RuntimeType for EndpointPair {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.EndpointPair;{33a0aa36-f8fa-4b30-b856-76517c3bd06d})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -279,11 +273,6 @@ impl HostName {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for HostName {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for HostName {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -297,7 +286,6 @@ impl ::core::fmt::Debug for HostName {
 }
 unsafe impl ::windows::core::RuntimeType for HostName {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Networking.HostName;{bf8ecaad-ed96-49a7-9084-d416cae88dcb})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -398,6 +386,7 @@ impl ::core::default::Default for HostNameSortOptions {
 }
 unsafe impl ::windows::core::Abi for HostNameSortOptions {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HostNameSortOptions {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -434,7 +423,6 @@ impl ::core::ops::Not for HostNameSortOptions {
 }
 unsafe impl ::windows::core::RuntimeType for HostNameSortOptions {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Networking.HostNameSortOptions;u4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -462,6 +450,7 @@ impl ::core::default::Default for HostNameType {
 }
 unsafe impl ::windows::core::Abi for HostNameType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for HostNameType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -470,7 +459,6 @@ impl ::core::fmt::Debug for HostNameType {
 }
 unsafe impl ::windows::core::RuntimeType for HostNameType {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Networking.HostNameType;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -478,6 +466,11 @@ unsafe impl ::windows::core::RuntimeType for HostNameType {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IEndpointPair(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEndpointPair {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IEndpointPair {
     type Vtable = IEndpointPair_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x33a0aa36_f8fa_4b30_b856_76517c3bd06d);
@@ -498,6 +491,11 @@ pub struct IEndpointPair_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IEndpointPairFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IEndpointPairFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IEndpointPairFactory {
     type Vtable = IEndpointPairFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb609d971_64e0_442b_aa6f_cc8c8f181f78);
@@ -511,6 +509,11 @@ pub struct IEndpointPairFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHostName(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHostName {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHostName {
     type Vtable = IHostName_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xbf8ecaad_ed96_49a7_9084_d416cae88dcb);
@@ -532,6 +535,11 @@ pub struct IHostName_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHostNameFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHostNameFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHostNameFactory {
     type Vtable = IHostNameFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x458c23ed_712f_4576_adf1_c20b2c643558);
@@ -545,6 +553,11 @@ pub struct IHostNameFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IHostNameStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHostNameStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IHostNameStatics {
     type Vtable = IHostNameStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf68cd4bf_a388_4e8b_91ea_54dd6dd901c0);

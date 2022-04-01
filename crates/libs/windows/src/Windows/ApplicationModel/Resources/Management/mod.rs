@@ -2,6 +2,11 @@
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IIndexedResourceCandidate(::windows::core::IUnknown);
+impl ::core::clone::Clone for IIndexedResourceCandidate {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IIndexedResourceCandidate {
     type Vtable = IIndexedResourceCandidate_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x0e619ef3_faec_4414_a9d7_54acd5953f29);
@@ -29,6 +34,11 @@ pub struct IIndexedResourceCandidate_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IIndexedResourceQualifier(::windows::core::IUnknown);
+impl ::core::clone::Clone for IIndexedResourceQualifier {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IIndexedResourceQualifier {
     type Vtable = IIndexedResourceQualifier_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xdae3bb9b_d304_497f_a168_a340042c8adb);
@@ -44,6 +54,12 @@ pub struct IIndexedResourceQualifier_Vtbl {
 #[cfg(feature = "deprecated")]
 #[repr(transparent)]
 pub struct IResourceIndexer(::windows::core::IUnknown);
+#[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for IResourceIndexer {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for IResourceIndexer {
     type Vtable = IResourceIndexer_Vtbl;
@@ -68,6 +84,12 @@ pub struct IResourceIndexer_Vtbl {
 #[repr(transparent)]
 pub struct IResourceIndexerFactory(::windows::core::IUnknown);
 #[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for IResourceIndexerFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for IResourceIndexerFactory {
     type Vtable = IResourceIndexerFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb8de3f09_31cd_4d97_bd30_8d39f742bc61);
@@ -86,6 +108,12 @@ pub struct IResourceIndexerFactory_Vtbl {
 #[cfg(feature = "deprecated")]
 #[repr(transparent)]
 pub struct IResourceIndexerFactory2(::windows::core::IUnknown);
+#[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for IResourceIndexerFactory2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for IResourceIndexerFactory2 {
     type Vtable = IResourceIndexerFactory2_Vtbl;
@@ -157,11 +185,6 @@ impl IndexedResourceCandidate {
         }
     }
 }
-impl ::core::clone::Clone for IndexedResourceCandidate {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IndexedResourceCandidate {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -175,7 +198,6 @@ impl ::core::fmt::Debug for IndexedResourceCandidate {
 }
 unsafe impl ::windows::core::RuntimeType for IndexedResourceCandidate {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Resources.Management.IndexedResourceCandidate;{0e619ef3-faec-4414-a9d7-54acd5953f29})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -250,11 +272,6 @@ impl IndexedResourceQualifier {
         }
     }
 }
-impl ::core::clone::Clone for IndexedResourceQualifier {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IndexedResourceQualifier {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -268,7 +285,6 @@ impl ::core::fmt::Debug for IndexedResourceQualifier {
 }
 unsafe impl ::windows::core::RuntimeType for IndexedResourceQualifier {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Resources.Management.IndexedResourceQualifier;{dae3bb9b-d304-497f-a168-a340042c8adb})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -344,6 +360,7 @@ impl ::core::default::Default for IndexedResourceType {
 }
 unsafe impl ::windows::core::Abi for IndexedResourceType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for IndexedResourceType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -352,7 +369,6 @@ impl ::core::fmt::Debug for IndexedResourceType {
 }
 unsafe impl ::windows::core::RuntimeType for IndexedResourceType {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.Resources.Management.IndexedResourceType;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -411,12 +427,6 @@ impl ResourceIndexer {
     }
 }
 #[cfg(feature = "deprecated")]
-impl ::core::clone::Clone for ResourceIndexer {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
-#[cfg(feature = "deprecated")]
 impl ::core::cmp::PartialEq for ResourceIndexer {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -433,7 +443,6 @@ impl ::core::fmt::Debug for ResourceIndexer {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::RuntimeType for ResourceIndexer {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.ApplicationModel.Resources.Management.ResourceIndexer;{2d4cf9a5-e32f-4ab2-8748-96350a016da3})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

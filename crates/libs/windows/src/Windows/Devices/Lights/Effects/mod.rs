@@ -2,6 +2,11 @@
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ILampArrayBitmapEffect(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILampArrayBitmapEffect {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ILampArrayBitmapEffect {
     type Vtable = ILampArrayBitmapEffect_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x3238e065_d877_4627_89e5_2a88f7052fa6);
@@ -50,6 +55,11 @@ pub struct ILampArrayBitmapEffect_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ILampArrayBitmapEffectFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILampArrayBitmapEffectFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ILampArrayBitmapEffectFactory {
     type Vtable = ILampArrayBitmapEffectFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x13608090_e336_4c8f_9053_a92407ca7b1d);
@@ -63,6 +73,11 @@ pub struct ILampArrayBitmapEffectFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ILampArrayBitmapRequestedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILampArrayBitmapRequestedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ILampArrayBitmapRequestedEventArgs {
     type Vtable = ILampArrayBitmapRequestedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xc8b4af9e_fe63_4d51_babd_619defb454ba);
@@ -83,6 +98,11 @@ pub struct ILampArrayBitmapRequestedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ILampArrayBlinkEffect(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILampArrayBlinkEffect {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ILampArrayBlinkEffect {
     type Vtable = ILampArrayBlinkEffect_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xebbf35f6_2fc5_4bb3_b3c3_6221a7680d13);
@@ -147,6 +167,11 @@ pub struct ILampArrayBlinkEffect_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ILampArrayBlinkEffectFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILampArrayBlinkEffectFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ILampArrayBlinkEffectFactory {
     type Vtable = ILampArrayBlinkEffectFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x879f1d97_9f50_49b2_a56f_013aa08d55e0);
@@ -160,6 +185,11 @@ pub struct ILampArrayBlinkEffectFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ILampArrayColorRampEffect(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILampArrayColorRampEffect {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ILampArrayColorRampEffect {
     type Vtable = ILampArrayColorRampEffect_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x2b004437_40a7_432e_a0b9_0d570c2153ff);
@@ -198,6 +228,11 @@ pub struct ILampArrayColorRampEffect_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ILampArrayColorRampEffectFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILampArrayColorRampEffectFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ILampArrayColorRampEffectFactory {
     type Vtable = ILampArrayColorRampEffectFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x520bd133_0c74_4df5_bea7_4899e0266b0f);
@@ -211,6 +246,11 @@ pub struct ILampArrayColorRampEffectFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ILampArrayCustomEffect(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILampArrayCustomEffect {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ILampArrayCustomEffect {
     type Vtable = ILampArrayCustomEffect_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xec579170_3c34_4876_818b_5765f78b0ee4);
@@ -247,6 +287,11 @@ pub struct ILampArrayCustomEffect_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ILampArrayCustomEffectFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILampArrayCustomEffectFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ILampArrayCustomEffectFactory {
     type Vtable = ILampArrayCustomEffectFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x68b4774d_63e5_4af0_a58b_3e535b94e8c9);
@@ -260,6 +305,11 @@ pub struct ILampArrayCustomEffectFactory_Vtbl {
 #[doc = "*Required features: `\"Devices_Lights_Effects\"`*"]
 #[repr(transparent)]
 pub struct ILampArrayEffect(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILampArrayEffect {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl ILampArrayEffect {
     #[doc = "*Required features: `\"Devices_Lights_Effects\"`*"]
     pub fn ZIndex(&self) -> ::windows::core::Result<i32> {
@@ -315,11 +365,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for ILampArrayEffect {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for ILampArrayEffect {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -333,7 +378,6 @@ impl ::core::fmt::Debug for ILampArrayEffect {
 }
 unsafe impl ::windows::core::RuntimeType for ILampArrayEffect {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{11d45590-57fb-4546-b1ce-863107f740df}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -352,6 +396,11 @@ pub struct ILampArrayEffect_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ILampArrayEffectPlaylist(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILampArrayEffectPlaylist {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ILampArrayEffectPlaylist {
     type Vtable = ILampArrayEffectPlaylist_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x7de58bfe_6f61_4103_98c7_d6632f7b9169);
@@ -375,6 +424,11 @@ pub struct ILampArrayEffectPlaylist_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ILampArrayEffectPlaylistStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILampArrayEffectPlaylistStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ILampArrayEffectPlaylistStatics {
     type Vtable = ILampArrayEffectPlaylistStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xfb15235c_ea35_4c7f_a016_f3bfc6a6c47d);
@@ -399,6 +453,11 @@ pub struct ILampArrayEffectPlaylistStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ILampArraySolidEffect(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILampArraySolidEffect {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ILampArraySolidEffect {
     type Vtable = ILampArraySolidEffect_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x441f8213_43cc_4b33_80eb_c6ddde7dc8ed);
@@ -437,6 +496,11 @@ pub struct ILampArraySolidEffect_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ILampArraySolidEffectFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILampArraySolidEffectFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ILampArraySolidEffectFactory {
     type Vtable = ILampArraySolidEffectFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xf862a32c_5576_4341_961b_aee1f13cf9dd);
@@ -450,6 +514,11 @@ pub struct ILampArraySolidEffectFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct ILampArrayUpdateRequestedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for ILampArrayUpdateRequestedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for ILampArrayUpdateRequestedEventArgs {
     type Vtable = ILampArrayUpdateRequestedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x73560d6a_576a_48af_8539_67ffa0ab3516);
@@ -578,11 +647,6 @@ impl LampArrayBitmapEffect {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for LampArrayBitmapEffect {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for LampArrayBitmapEffect {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -596,7 +660,6 @@ impl ::core::fmt::Debug for LampArrayBitmapEffect {
 }
 unsafe impl ::windows::core::RuntimeType for LampArrayBitmapEffect {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Lights.Effects.LampArrayBitmapEffect;{3238e065-d877-4627-89e5-2a88f7052fa6})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -692,11 +755,6 @@ impl LampArrayBitmapRequestedEventArgs {
         unsafe { (::windows::core::Interface::vtable(this).UpdateBitmap)(::core::mem::transmute_copy(this), bitmap.into_param().abi()).ok() }
     }
 }
-impl ::core::clone::Clone for LampArrayBitmapRequestedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for LampArrayBitmapRequestedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -710,7 +768,6 @@ impl ::core::fmt::Debug for LampArrayBitmapRequestedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for LampArrayBitmapRequestedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Lights.Effects.LampArrayBitmapRequestedEventArgs;{c8b4af9e-fe63-4d51-babd-619defb454ba})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -910,11 +967,6 @@ impl LampArrayBlinkEffect {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for LampArrayBlinkEffect {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for LampArrayBlinkEffect {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -928,7 +980,6 @@ impl ::core::fmt::Debug for LampArrayBlinkEffect {
 }
 unsafe impl ::windows::core::RuntimeType for LampArrayBlinkEffect {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Lights.Effects.LampArrayBlinkEffect;{ebbf35f6-2fc5-4bb3-b3c3-6221a7680d13})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1092,11 +1143,6 @@ impl LampArrayColorRampEffect {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for LampArrayColorRampEffect {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for LampArrayColorRampEffect {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1110,7 +1156,6 @@ impl ::core::fmt::Debug for LampArrayColorRampEffect {
 }
 unsafe impl ::windows::core::RuntimeType for LampArrayColorRampEffect {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Lights.Effects.LampArrayColorRampEffect;{2b004437-40a7-432e-a0b9-0d570c2153ff})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1261,11 +1306,6 @@ impl LampArrayCustomEffect {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for LampArrayCustomEffect {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for LampArrayCustomEffect {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1279,7 +1319,6 @@ impl ::core::fmt::Debug for LampArrayCustomEffect {
 }
 unsafe impl ::windows::core::RuntimeType for LampArrayCustomEffect {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Lights.Effects.LampArrayCustomEffect;{ec579170-3c34-4876-818b-5765f78b0ee4})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1376,6 +1415,7 @@ impl ::core::default::Default for LampArrayEffectCompletionBehavior {
 }
 unsafe impl ::windows::core::Abi for LampArrayEffectCompletionBehavior {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for LampArrayEffectCompletionBehavior {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1384,7 +1424,6 @@ impl ::core::fmt::Debug for LampArrayEffectCompletionBehavior {
 }
 unsafe impl ::windows::core::RuntimeType for LampArrayEffectCompletionBehavior {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.Lights.Effects.LampArrayEffectCompletionBehavior;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1530,11 +1569,6 @@ impl LampArrayEffectPlaylist {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for LampArrayEffectPlaylist {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for LampArrayEffectPlaylist {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1548,7 +1582,6 @@ impl ::core::fmt::Debug for LampArrayEffectPlaylist {
 }
 unsafe impl ::windows::core::RuntimeType for LampArrayEffectPlaylist {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Lights.Effects.LampArrayEffectPlaylist;{7de58bfe-6f61-4103-98c7-d6632f7b9169})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1691,6 +1724,7 @@ impl ::core::default::Default for LampArrayEffectStartMode {
 }
 unsafe impl ::windows::core::Abi for LampArrayEffectStartMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for LampArrayEffectStartMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1699,7 +1733,6 @@ impl ::core::fmt::Debug for LampArrayEffectStartMode {
 }
 unsafe impl ::windows::core::RuntimeType for LampArrayEffectStartMode {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.Lights.Effects.LampArrayEffectStartMode;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1725,6 +1758,7 @@ impl ::core::default::Default for LampArrayRepetitionMode {
 }
 unsafe impl ::windows::core::Abi for LampArrayRepetitionMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for LampArrayRepetitionMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1733,7 +1767,6 @@ impl ::core::fmt::Debug for LampArrayRepetitionMode {
 }
 unsafe impl ::windows::core::RuntimeType for LampArrayRepetitionMode {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.Devices.Lights.Effects.LampArrayRepetitionMode;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1826,11 +1859,6 @@ impl LampArraySolidEffect {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for LampArraySolidEffect {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for LampArraySolidEffect {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1844,7 +1872,6 @@ impl ::core::fmt::Debug for LampArraySolidEffect {
 }
 unsafe impl ::windows::core::RuntimeType for LampArraySolidEffect {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Lights.Effects.LampArraySolidEffect;{441f8213-43cc-4b33-80eb-c6ddde7dc8ed})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1958,11 +1985,6 @@ impl LampArrayUpdateRequestedEventArgs {
         unsafe { (::windows::core::Interface::vtable(this).SetColorsForIndices)(::core::mem::transmute_copy(this), desiredcolors.len() as u32, ::core::mem::transmute(desiredcolors.as_ptr()), lampindexes.len() as u32, ::core::mem::transmute(lampindexes.as_ptr())).ok() }
     }
 }
-impl ::core::clone::Clone for LampArrayUpdateRequestedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for LampArrayUpdateRequestedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1976,7 +1998,6 @@ impl ::core::fmt::Debug for LampArrayUpdateRequestedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for LampArrayUpdateRequestedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.Devices.Lights.Effects.LampArrayUpdateRequestedEventArgs;{73560d6a-576a-48af-8539-67ffa0ab3516})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

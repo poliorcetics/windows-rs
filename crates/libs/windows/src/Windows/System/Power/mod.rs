@@ -130,6 +130,7 @@ impl ::core::default::Default for BatteryStatus {
 }
 unsafe impl ::windows::core::Abi for BatteryStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for BatteryStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -138,7 +139,6 @@ impl ::core::fmt::Debug for BatteryStatus {
 }
 unsafe impl ::windows::core::RuntimeType for BatteryStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.System.Power.BatteryStatus;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -165,6 +165,7 @@ impl ::core::default::Default for EnergySaverStatus {
 }
 unsafe impl ::windows::core::Abi for EnergySaverStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EnergySaverStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -173,7 +174,6 @@ impl ::core::fmt::Debug for EnergySaverStatus {
 }
 unsafe impl ::windows::core::RuntimeType for EnergySaverStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.System.Power.EnergySaverStatus;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -273,6 +273,12 @@ impl ::windows::core::RuntimeName for ForegroundEnergyManager {
 #[repr(transparent)]
 pub struct IBackgroundEnergyManagerStatics(::windows::core::IUnknown);
 #[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for IBackgroundEnergyManagerStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for IBackgroundEnergyManagerStatics {
     type Vtable = IBackgroundEnergyManagerStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb3161d95_1180_4376_96e1_4095568147ce);
@@ -336,6 +342,12 @@ pub struct IBackgroundEnergyManagerStatics_Vtbl {
 #[repr(transparent)]
 pub struct IForegroundEnergyManagerStatics(::windows::core::IUnknown);
 #[cfg(feature = "deprecated")]
+impl ::core::clone::Clone for IForegroundEnergyManagerStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
+#[cfg(feature = "deprecated")]
 unsafe impl ::windows::core::Interface for IForegroundEnergyManagerStatics {
     type Vtable = IForegroundEnergyManagerStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x9ff86872_e677_4814_9a20_5337ca732b98);
@@ -389,6 +401,11 @@ pub struct IForegroundEnergyManagerStatics_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPowerManagerStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPowerManagerStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPowerManagerStatics {
     type Vtable = IPowerManagerStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x1394825d_62ce_4364_98d5_aa28c7fbd15b);
@@ -581,6 +598,7 @@ impl ::core::default::Default for PowerSupplyStatus {
 }
 unsafe impl ::windows::core::Abi for PowerSupplyStatus {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for PowerSupplyStatus {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -589,7 +607,6 @@ impl ::core::fmt::Debug for PowerSupplyStatus {
 }
 unsafe impl ::windows::core::RuntimeType for PowerSupplyStatus {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.System.Power.PowerSupplyStatus;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }

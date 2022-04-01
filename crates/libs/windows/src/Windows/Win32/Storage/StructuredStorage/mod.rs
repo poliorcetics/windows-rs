@@ -25,6 +25,7 @@ impl ::core::fmt::Debug for JET_API_PTR {
 }
 unsafe impl ::windows::core::Abi for JET_API_PTR {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[repr(transparent)]
 #[derive(:: core :: cmp :: PartialEq, :: core :: cmp :: Eq)]
@@ -52,6 +53,7 @@ impl ::core::fmt::Debug for JET_HANDLE {
 }
 unsafe impl ::windows::core::Abi for JET_HANDLE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[repr(transparent)]
 #[derive(:: core :: cmp :: PartialEq, :: core :: cmp :: Eq)]
@@ -79,6 +81,7 @@ impl ::core::fmt::Debug for JET_INSTANCE {
 }
 unsafe impl ::windows::core::Abi for JET_INSTANCE {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[repr(transparent)]
 #[derive(:: core :: cmp :: PartialEq, :: core :: cmp :: Eq)]
@@ -106,6 +109,7 @@ impl ::core::fmt::Debug for JET_SESID {
 }
 unsafe impl ::windows::core::Abi for JET_SESID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[repr(transparent)]
 #[derive(:: core :: cmp :: PartialEq, :: core :: cmp :: Eq)]
@@ -133,6 +137,7 @@ impl ::core::fmt::Debug for JET_TABLEID {
 }
 unsafe impl ::windows::core::Abi for JET_TABLEID {
     type Abi = Self;
+    type DefaultType = Self;
 }
 #[cfg(feature = "implement")]
 ::core::include!("impl.rs");

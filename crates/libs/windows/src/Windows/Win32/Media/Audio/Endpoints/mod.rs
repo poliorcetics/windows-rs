@@ -15,6 +15,7 @@ impl ::core::clone::Clone for AUDIO_ENDPOINT_SHARED_CREATE_PARAMS {
 }
 unsafe impl ::windows::core::Abi for AUDIO_ENDPOINT_SHARED_CREATE_PARAMS {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::cmp::PartialEq for AUDIO_ENDPOINT_SHARED_CREATE_PARAMS {
     fn eq(&self, other: &Self) -> bool {
@@ -67,6 +68,7 @@ impl ::core::default::Default for EndpointConnectorType {
 }
 unsafe impl ::windows::core::Abi for EndpointConnectorType {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for EndpointConnectorType {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -76,6 +78,11 @@ impl ::core::fmt::Debug for EndpointConnectorType {
 #[doc = "*Required features: `\"Win32_Media_Audio_Endpoints\"`*"]
 #[repr(transparent)]
 pub struct IAudioEndpointFormatControl(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAudioEndpointFormatControl {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAudioEndpointFormatControl {
     #[doc = "*Required features: `\"Win32_Media_Audio_Endpoints\"`*"]
     pub unsafe fn ResetToDefault(&self, resetflags: u32) -> ::windows::core::Result<()> {
@@ -102,11 +109,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAudi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAudioEndpointFormatControl {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAudioEndpointFormatControl {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -131,6 +133,11 @@ pub struct IAudioEndpointFormatControl_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_Audio_Endpoints\"`*"]
 #[repr(transparent)]
 pub struct IAudioEndpointLastBufferControl(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAudioEndpointLastBufferControl {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAudioEndpointLastBufferControl {
     #[doc = "*Required features: `\"Win32_Media_Audio_Endpoints\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -161,11 +168,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IAudioEnd
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAudioEndpointLastBufferControl {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IAudioEndpointLastBufferControl {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IAudioEndpointLastBufferControl {
@@ -199,6 +201,11 @@ pub struct IAudioEndpointLastBufferControl_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_Audio_Endpoints\"`*"]
 #[repr(transparent)]
 pub struct IAudioEndpointOffloadStreamMeter(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAudioEndpointOffloadStreamMeter {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAudioEndpointOffloadStreamMeter {
     #[doc = "*Required features: `\"Win32_Media_Audio_Endpoints\"`*"]
     pub unsafe fn GetMeterChannelCount(&self) -> ::windows::core::Result<u32> {
@@ -231,11 +238,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAudi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAudioEndpointOffloadStreamMeter {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAudioEndpointOffloadStreamMeter {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -261,6 +263,11 @@ pub struct IAudioEndpointOffloadStreamMeter_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_Audio_Endpoints\"`*"]
 #[repr(transparent)]
 pub struct IAudioEndpointOffloadStreamMute(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAudioEndpointOffloadStreamMute {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAudioEndpointOffloadStreamMute {
     #[doc = "*Required features: `\"Win32_Media_Audio_Endpoints\"`*"]
     pub unsafe fn SetMute(&self, bmuted: u8) -> ::windows::core::Result<()> {
@@ -292,11 +299,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAudi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAudioEndpointOffloadStreamMute {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAudioEndpointOffloadStreamMute {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -322,6 +324,11 @@ pub struct IAudioEndpointOffloadStreamMute_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_Audio_Endpoints\"`*"]
 #[repr(transparent)]
 pub struct IAudioEndpointOffloadStreamVolume(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAudioEndpointOffloadStreamVolume {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAudioEndpointOffloadStreamVolume {
     #[doc = "*Required features: `\"Win32_Media_Audio_Endpoints\"`*"]
     pub unsafe fn GetVolumeChannelCount(&self) -> ::windows::core::Result<u32> {
@@ -359,11 +366,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAudi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAudioEndpointOffloadStreamVolume {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAudioEndpointOffloadStreamVolume {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -393,6 +395,11 @@ pub struct IAudioEndpointOffloadStreamVolume_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_Audio_Endpoints\"`*"]
 #[repr(transparent)]
 pub struct IAudioEndpointVolume(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAudioEndpointVolume {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAudioEndpointVolume {
     #[doc = "*Required features: `\"Win32_Media_Audio_Endpoints\"`*"]
     pub unsafe fn RegisterControlChangeNotify<'a, Param0: ::windows::core::IntoParam<'a, IAudioEndpointVolumeCallback>>(&self, pnotify: Param0) -> ::windows::core::Result<()> {
@@ -496,11 +503,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAudi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAudioEndpointVolume {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAudioEndpointVolume {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -548,6 +550,11 @@ pub struct IAudioEndpointVolume_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_Audio_Endpoints\"`*"]
 #[repr(transparent)]
 pub struct IAudioEndpointVolumeCallback(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAudioEndpointVolumeCallback {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAudioEndpointVolumeCallback {
     #[doc = "*Required features: `\"Win32_Media_Audio_Endpoints\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -573,11 +580,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IAudioEnd
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAudioEndpointVolumeCallback {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IAudioEndpointVolumeCallback {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IAudioEndpointVolumeCallback {
@@ -607,6 +609,11 @@ pub struct IAudioEndpointVolumeCallback_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_Audio_Endpoints\"`*"]
 #[repr(transparent)]
 pub struct IAudioEndpointVolumeEx(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAudioEndpointVolumeEx {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAudioEndpointVolumeEx {
     #[doc = "*Required features: `\"Win32_Media_Audio_Endpoints\"`*"]
     pub unsafe fn RegisterControlChangeNotify<'a, Param0: ::windows::core::IntoParam<'a, IAudioEndpointVolumeCallback>>(&self, pnotify: Param0) -> ::windows::core::Result<()> {
@@ -734,11 +741,6 @@ impl<'a> ::windows::core::IntoParam<'a, IAudioEndpointVolume> for &'a IAudioEndp
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAudioEndpointVolumeEx {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAudioEndpointVolumeEx {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -763,6 +765,11 @@ pub struct IAudioEndpointVolumeEx_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_Audio_Endpoints\"`*"]
 #[repr(transparent)]
 pub struct IAudioLfxControl(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAudioLfxControl {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAudioLfxControl {
     #[doc = "*Required features: `\"Win32_Media_Audio_Endpoints\"`, `\"Win32_Foundation\"`*"]
     #[cfg(feature = "Win32_Foundation")]
@@ -796,11 +803,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAudi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAudioLfxControl {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAudioLfxControl {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -832,6 +834,11 @@ pub struct IAudioLfxControl_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_Audio_Endpoints\"`*"]
 #[repr(transparent)]
 pub struct IAudioMeterInformation(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAudioMeterInformation {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAudioMeterInformation {
     #[doc = "*Required features: `\"Win32_Media_Audio_Endpoints\"`*"]
     pub unsafe fn GetPeakValue(&self) -> ::windows::core::Result<f32> {
@@ -873,11 +880,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IAudi
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAudioMeterInformation {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAudioMeterInformation {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -905,6 +907,11 @@ pub struct IAudioMeterInformation_Vtbl {
 #[doc = "*Required features: `\"Win32_Media_Audio_Endpoints\"`*"]
 #[repr(transparent)]
 pub struct IHardwareAudioEngineBase(::windows::core::IUnknown);
+impl ::core::clone::Clone for IHardwareAudioEngineBase {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IHardwareAudioEngineBase {
     #[doc = "*Required features: `\"Win32_Media_Audio_Endpoints\"`*"]
     pub unsafe fn GetAvailableOffloadConnectorCount<'a, Param0: ::windows::core::IntoParam<'a, ::windows::core::PCWSTR>>(&self, _pwstrdeviceid: Param0, _uconnectorid: u32) -> ::windows::core::Result<u32> {
@@ -950,11 +957,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for IHardware
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IUnknown> for &'a IHardwareAudioEngineBase {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IUnknown> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IHardwareAudioEngineBase {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IHardwareAudioEngineBase {

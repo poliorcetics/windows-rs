@@ -4,6 +4,11 @@ pub const CLSID_VideoFrameNativeFactory: ::windows::core::GUID = ::windows::core
 #[doc = "*Required features: `\"Win32_System_WinRT_Media\"`*"]
 #[repr(transparent)]
 pub struct IAudioFrameNative(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAudioFrameNative {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAudioFrameNative {
     #[doc = "*Required features: `\"Win32_System_WinRT_Media\"`*"]
     pub unsafe fn GetData<T: ::windows::core::Interface>(&self) -> ::windows::core::Result<T> {
@@ -51,11 +56,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAudioFrameNative {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAudioFrameNative {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -80,6 +80,11 @@ pub struct IAudioFrameNative_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT_Media\"`*"]
 #[repr(transparent)]
 pub struct IAudioFrameNativeFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IAudioFrameNativeFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IAudioFrameNativeFactory {
     #[doc = "*Required features: `\"Win32_System_WinRT_Media\"`, `\"Win32_Foundation\"`, `\"Win32_Media_MediaFoundation\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Media_MediaFoundation"))]
@@ -128,11 +133,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IAudioFrameNativeFactory {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IAudioFrameNativeFactory {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -160,6 +160,11 @@ pub struct IAudioFrameNativeFactory_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT_Media\"`*"]
 #[repr(transparent)]
 pub struct IVideoFrameNative(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVideoFrameNative {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IVideoFrameNative {
     #[doc = "*Required features: `\"Win32_System_WinRT_Media\"`*"]
     pub unsafe fn GetData<T: ::windows::core::Interface>(&self) -> ::windows::core::Result<T> {
@@ -212,11 +217,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a I
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
     }
 }
-impl ::core::clone::Clone for IVideoFrameNative {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for IVideoFrameNative {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -242,6 +242,11 @@ pub struct IVideoFrameNative_Vtbl {
 #[doc = "*Required features: `\"Win32_System_WinRT_Media\"`*"]
 #[repr(transparent)]
 pub struct IVideoFrameNativeFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IVideoFrameNativeFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 impl IVideoFrameNativeFactory {
     #[doc = "*Required features: `\"Win32_System_WinRT_Media\"`, `\"Win32_Foundation\"`, `\"Win32_Media_MediaFoundation\"`*"]
     #[cfg(all(feature = "Win32_Foundation", feature = "Win32_Media_MediaFoundation"))]
@@ -288,11 +293,6 @@ impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for IVide
 impl<'a> ::windows::core::IntoParam<'a, ::windows::core::IInspectable> for &'a IVideoFrameNativeFactory {
     fn into_param(self) -> ::windows::core::Param<'a, ::windows::core::IInspectable> {
         ::windows::core::Param::Borrowed(unsafe { ::core::mem::transmute(self) })
-    }
-}
-impl ::core::clone::Clone for IVideoFrameNativeFactory {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
     }
 }
 impl ::core::cmp::PartialEq for IVideoFrameNativeFactory {

@@ -52,11 +52,6 @@ impl FrameNavigationOptions {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for FrameNavigationOptions {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for FrameNavigationOptions {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -70,7 +65,6 @@ impl ::core::fmt::Debug for FrameNavigationOptions {
 }
 unsafe impl ::windows::core::RuntimeType for FrameNavigationOptions {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Navigation.FrameNavigationOptions;{b539ad2a-9fb7-520a-8f41-57a50c59cf92})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -127,6 +121,11 @@ unsafe impl ::core::marker::Sync for FrameNavigationOptions {}
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IFrameNavigationOptions(::windows::core::IUnknown);
+impl ::core::clone::Clone for IFrameNavigationOptions {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IFrameNavigationOptions {
     type Vtable = IFrameNavigationOptions_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb539ad2a_9fb7_520a_8f41_57a50c59cf92);
@@ -149,6 +148,11 @@ pub struct IFrameNavigationOptions_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IFrameNavigationOptionsFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IFrameNavigationOptionsFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IFrameNavigationOptionsFactory {
     type Vtable = IFrameNavigationOptionsFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xd4681e41_7e6d_5c7c_aca0_478681cc6fce);
@@ -162,6 +166,11 @@ pub struct IFrameNavigationOptionsFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct INavigatingCancelEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for INavigatingCancelEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for INavigatingCancelEventArgs {
     type Vtable = INavigatingCancelEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xfd1d67ae_eafb_4079_be80_6dc92a03aedf);
@@ -181,6 +190,11 @@ pub struct INavigatingCancelEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct INavigatingCancelEventArgs2(::windows::core::IUnknown);
+impl ::core::clone::Clone for INavigatingCancelEventArgs2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for INavigatingCancelEventArgs2 {
     type Vtable = INavigatingCancelEventArgs2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x5407b704_8147_4343_838f_dd1ee908c137);
@@ -198,6 +212,11 @@ pub struct INavigatingCancelEventArgs2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct INavigationEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for INavigationEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for INavigationEventArgs {
     type Vtable = INavigationEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xb6aa9834_6691_44d1_bdf7_58820c27b0d0);
@@ -225,6 +244,11 @@ pub struct INavigationEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct INavigationEventArgs2(::windows::core::IUnknown);
+impl ::core::clone::Clone for INavigationEventArgs2 {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for INavigationEventArgs2 {
     type Vtable = INavigationEventArgs2_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xdbff71d9_979a_4b2e_a49b_3bb17fdef574);
@@ -241,6 +265,11 @@ pub struct INavigationEventArgs2_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct INavigationFailedEventArgs(::windows::core::IUnknown);
+impl ::core::clone::Clone for INavigationFailedEventArgs {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for INavigationFailedEventArgs {
     type Vtable = INavigationFailedEventArgs_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x11c1dff7_36c2_4102_b2ef_0217a97289b3);
@@ -260,6 +289,11 @@ pub struct INavigationFailedEventArgs_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPageStackEntry(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPageStackEntry {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPageStackEntry {
     type Vtable = IPageStackEntry_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xef8814a6_9388_4aca_8572_405194069080);
@@ -281,6 +315,11 @@ pub struct IPageStackEntry_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPageStackEntryFactory(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPageStackEntryFactory {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPageStackEntryFactory {
     type Vtable = IPageStackEntryFactory_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0x4454048a_a8b9_4f78_9b84_1f51f58851ff);
@@ -297,6 +336,11 @@ pub struct IPageStackEntryFactory_Vtbl {
 #[doc(hidden)]
 #[repr(transparent)]
 pub struct IPageStackEntryStatics(::windows::core::IUnknown);
+impl ::core::clone::Clone for IPageStackEntryStatics {
+    fn clone(&self) -> Self {
+        Self(self.0.clone())
+    }
+}
 unsafe impl ::windows::core::Interface for IPageStackEntryStatics {
     type Vtable = IPageStackEntryStatics_Vtbl;
     const IID: ::windows::core::GUID = ::windows::core::GUID::from_u128(0xaceff8e3_246c_4033_9f01_01cb0da5254e);
@@ -359,11 +403,6 @@ impl<F: FnMut(&::core::option::Option<::windows::core::IInspectable>, &::core::o
         ((*this).invoke)(::core::mem::transmute(&sender), ::core::mem::transmute(&e)).into()
     }
 }
-impl ::core::clone::Clone for LoadCompletedEventHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for LoadCompletedEventHandler {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -381,7 +420,6 @@ unsafe impl ::windows::core::Interface for LoadCompletedEventHandler {
 }
 unsafe impl ::windows::core::RuntimeType for LoadCompletedEventHandler {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{aebaf785-43fc-4e2c-95c3-97ae84eabc8e}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -444,11 +482,6 @@ impl<F: FnMut(&::core::option::Option<::windows::core::IInspectable>, &::core::o
         ((*this).invoke)(::core::mem::transmute(&sender), ::core::mem::transmute(&e)).into()
     }
 }
-impl ::core::clone::Clone for NavigatedEventHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for NavigatedEventHandler {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -466,7 +499,6 @@ unsafe impl ::windows::core::Interface for NavigatedEventHandler {
 }
 unsafe impl ::windows::core::RuntimeType for NavigatedEventHandler {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{7bd1cf54-23cf-4cce-b2f5-4ce78d96896e}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -529,11 +561,6 @@ impl NavigatingCancelEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for NavigatingCancelEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for NavigatingCancelEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -547,7 +574,6 @@ impl ::core::fmt::Debug for NavigatingCancelEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for NavigatingCancelEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Navigation.NavigatingCancelEventArgs;{fd1d67ae-eafb-4079-be80-6dc92a03aedf})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -653,11 +679,6 @@ impl<F: FnMut(&::core::option::Option<::windows::core::IInspectable>, &::core::o
         ((*this).invoke)(::core::mem::transmute(&sender), ::core::mem::transmute(&e)).into()
     }
 }
-impl ::core::clone::Clone for NavigatingCancelEventHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for NavigatingCancelEventHandler {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -675,7 +696,6 @@ unsafe impl ::windows::core::Interface for NavigatingCancelEventHandler {
 }
 unsafe impl ::windows::core::RuntimeType for NavigatingCancelEventHandler {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{75d6a78f-a302-4489-9898-24ea49182910}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -708,6 +728,7 @@ impl ::core::default::Default for NavigationCacheMode {
 }
 unsafe impl ::windows::core::Abi for NavigationCacheMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NavigationCacheMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -716,7 +737,6 @@ impl ::core::fmt::Debug for NavigationCacheMode {
 }
 unsafe impl ::windows::core::RuntimeType for NavigationCacheMode {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Xaml.Navigation.NavigationCacheMode;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -783,11 +803,6 @@ impl NavigationEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for NavigationEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for NavigationEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -801,7 +816,6 @@ impl ::core::fmt::Debug for NavigationEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for NavigationEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Navigation.NavigationEventArgs;{b6aa9834-6691-44d1-bdf7-58820c27b0d0})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -890,11 +904,6 @@ impl NavigationFailedEventArgs {
         }
     }
 }
-impl ::core::clone::Clone for NavigationFailedEventArgs {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for NavigationFailedEventArgs {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -908,7 +917,6 @@ impl ::core::fmt::Debug for NavigationFailedEventArgs {
 }
 unsafe impl ::windows::core::RuntimeType for NavigationFailedEventArgs {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Navigation.NavigationFailedEventArgs;{11c1dff7-36c2-4102-b2ef-0217a97289b3})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1014,11 +1022,6 @@ impl<F: FnMut(&::core::option::Option<::windows::core::IInspectable>, &::core::o
         ((*this).invoke)(::core::mem::transmute(&sender), ::core::mem::transmute(&e)).into()
     }
 }
-impl ::core::clone::Clone for NavigationFailedEventHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for NavigationFailedEventHandler {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1036,7 +1039,6 @@ unsafe impl ::windows::core::Interface for NavigationFailedEventHandler {
 }
 unsafe impl ::windows::core::RuntimeType for NavigationFailedEventHandler {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{4dab4671-12b2-43c7-b892-9be2dcd3e88d}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1070,6 +1072,7 @@ impl ::core::default::Default for NavigationMode {
 }
 unsafe impl ::windows::core::Abi for NavigationMode {
     type Abi = Self;
+    type DefaultType = Self;
 }
 impl ::core::fmt::Debug for NavigationMode {
     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
@@ -1078,7 +1081,6 @@ impl ::core::fmt::Debug for NavigationMode {
 }
 unsafe impl ::windows::core::RuntimeType for NavigationMode {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"enum(Windows.UI.Xaml.Navigation.NavigationMode;i4)");
-    type DefaultType = Self;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         Ok(*from)
     }
@@ -1135,11 +1137,6 @@ impl<F: FnMut(&::core::option::Option<::windows::core::IInspectable>, &::core::o
         ((*this).invoke)(::core::mem::transmute(&sender), ::core::mem::transmute(&e)).into()
     }
 }
-impl ::core::clone::Clone for NavigationStoppedEventHandler {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for NavigationStoppedEventHandler {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1157,7 +1154,6 @@ unsafe impl ::windows::core::Interface for NavigationStoppedEventHandler {
 }
 unsafe impl ::windows::core::RuntimeType for NavigationStoppedEventHandler {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"{f0117ddb-12fa-4d8d-8b26-b383d09c2b3c}");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }
@@ -1224,11 +1220,6 @@ impl PageStackEntry {
         unsafe { SHARED.call(callback) }
     }
 }
-impl ::core::clone::Clone for PageStackEntry {
-    fn clone(&self) -> Self {
-        Self(self.0.clone())
-    }
-}
 impl ::core::cmp::PartialEq for PageStackEntry {
     fn eq(&self, other: &Self) -> bool {
         self.0 == other.0
@@ -1242,7 +1233,6 @@ impl ::core::fmt::Debug for PageStackEntry {
 }
 unsafe impl ::windows::core::RuntimeType for PageStackEntry {
     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(b"rc(Windows.UI.Xaml.Navigation.PageStackEntry;{ef8814a6-9388-4aca-8572-405194069080})");
-    type DefaultType = ::core::option::Option<Self>;
     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
         from.as_ref().cloned().ok_or(::windows::core::Error::OK)
     }

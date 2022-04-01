@@ -122,6 +122,7 @@ fn gen_windows_traits(def: &TypeDef, name: &TokenStream, cfg: &Cfg, gen: &Gen) -
             #features
             unsafe impl ::windows::core::Abi for #name {
                 type Abi = #abi;
+                type DefaultType = Self;
             }
         };
 
@@ -138,7 +139,6 @@ fn gen_windows_traits(def: &TypeDef, name: &TokenStream, cfg: &Cfg, gen: &Gen) -
                 #features
                 unsafe impl ::windows::core::RuntimeType for #name {
                     const SIGNATURE: ::windows::core::ConstBuffer = ::windows::core::ConstBuffer::from_slice(#signature);
-                    type DefaultType = Self;
                     fn from_default(from: &Self::DefaultType) -> ::windows::core::Result<Self> {
                         Ok(#clone)
                     }
